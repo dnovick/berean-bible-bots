@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch34-passage-exercise/](exercises/ch34-passage-exercise/README.md) | Passage exercise — identify and parse Hithpael verbs in 1 Kgs 8, Gen 20, Jos 3, Exo 19, Gen 22, 2 Sam 10 |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch34-vocab-deck.md](ch34-vocab-deck.md) | Markdown | 12-word vocabulary deck — 2 verbs + 10 nouns |
+| [ch34-vocab-deck.txt](ch34-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch34-vocab-deck-fd.txt](ch34-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 34*

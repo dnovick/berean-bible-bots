@@ -23,6 +23,9 @@
 | [ch28-morphology-deck.md](ch28-morphology-deck.md) | Markdown | 24-card morphology deck — Hophal strong forms across all conjugations for 3 roots |
 | [ch28-morphology-deck.txt](ch28-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (24 cards) |
 | [ch28-morphology-deck-fd.txt](ch28-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (24 cards) |
+| [ch28-vocab-deck.md](ch28-vocab-deck.md) | Markdown | 12-word vocabulary deck — 8 verbs + 4 nouns |
+| [ch28-vocab-deck.txt](ch28-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch28-vocab-deck-fd.txt](ch28-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
 
 ---
 

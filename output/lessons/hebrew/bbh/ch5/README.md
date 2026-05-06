@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch5-article-and-vav/](exercises/ch5-article-and-vav/README.md) | 25-item drill — identify the definite article, the conjunction ו, their specific forms, and translate each Hebrew phrase |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch5-vocab-deck.md](ch5-vocab-deck.md) | Markdown | Vocabulary deck — 17 nouns plus definite article and conjunction ו with OT frequency |
+| [ch5-vocab-deck.txt](ch5-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (19 cards) |
+| [ch5-vocab-deck-fd.txt](ch5-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (19 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*

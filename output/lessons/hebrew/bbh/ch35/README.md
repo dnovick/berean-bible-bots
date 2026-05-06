@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch35-passage-exercise/](exercises/ch35-passage-exercise/README.md) | "Spot the Hithpael" — parsing exercise from Gen 22, 18, Exo 20, Psa 95, Gen 35, 1 Sam 10, Gen 44, 2 Kgs 8 with weak-root emphasis |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch35-vocab-deck.md](ch35-vocab-deck.md) | Markdown | 12-word vocabulary deck — 1 verb + 10 nouns + 1 adjective |
+| [ch35-vocab-deck.txt](ch35-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch35-vocab-deck-fd.txt](ch35-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 35*

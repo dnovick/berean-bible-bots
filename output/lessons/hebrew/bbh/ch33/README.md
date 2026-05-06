@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch33-passage-exercise/](exercises/ch33-passage-exercise/README.md) | Passage exercise — identify and parse weak Pual verbs in context (Gen 4:18; 4:26; 46:22 · Lev 7:36; Num 3:9 · Lev 8:35; Num 22:6; Psa 72:17) |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch33-vocab-deck.md](ch33-vocab-deck.md) | Markdown | 12-word vocabulary deck — 5 verbs + 7 nouns |
+| [ch33-vocab-deck.txt](ch33-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch33-vocab-deck-fd.txt](ch33-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 33*

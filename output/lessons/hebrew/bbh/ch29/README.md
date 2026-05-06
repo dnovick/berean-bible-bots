@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch29-passage-exercise/](exercises/ch29-passage-exercise/README.md) | Passage exercise — identify and parse weak Hophal verbs in Joseph narrative, Tabernacle, and mixed passages |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch29-vocab-deck.md](ch29-vocab-deck.md) | Markdown | 12-word vocabulary deck — 11 nouns + 1 adjective |
+| [ch29-vocab-deck.txt](ch29-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch29-vocab-deck-fd.txt](ch29-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 29*

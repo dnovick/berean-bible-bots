@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch32-passage-exercise/](exercises/ch32-passage-exercise/README.md) | Passage exercise — identify and parse Pual Strong verbs in Torah and Prophets texts |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch32-vocab-deck.md](ch32-vocab-deck.md) | Markdown | 12-word vocabulary deck — 5 verbs + 7 nouns |
+| [ch32-vocab-deck.txt](ch32-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch32-vocab-deck-fd.txt](ch32-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 32*

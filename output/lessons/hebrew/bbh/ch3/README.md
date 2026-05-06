@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch3-syllable-division/](exercises/ch3-syllable-division/README.md) | 20-word syllable division drill — divide words, label syllable types, mark stress, identify Qamets Hatuf |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch3-vocab-deck.md](ch3-vocab-deck.md) | Markdown | Vocabulary deck — 20 common nouns (family, creation, society) with alternate forms and OT frequency |
+| [ch3-vocab-deck.txt](ch3-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (20 cards) |
+| [ch3-vocab-deck-fd.txt](ch3-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (20 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*

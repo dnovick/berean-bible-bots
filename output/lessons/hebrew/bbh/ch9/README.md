@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch9-suffix-parsing/](exercises/ch9-suffix-parsing/README.md) | 25-item parsing drill — identify base word, suffix, PGN, and translation for nouns and prepositions with pronominal suffixes |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch9-vocab-deck.md](ch9-vocab-deck.md) | Markdown | Vocabulary deck — 12 nouns and 8 particles/adverbs with OT frequency |
+| [ch9-vocab-deck.txt](ch9-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (20 cards) |
+| [ch9-vocab-deck-fd.txt](ch9-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (20 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 9*

@@ -23,6 +23,9 @@
 | [ch30-morphology-deck.md](ch30-morphology-deck.md) | Markdown | 24-card morphology deck — Piel Strong forms across all 8 conjugations for 4 roots |
 | [ch30-morphology-deck.txt](ch30-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (24 cards) |
 | [ch30-morphology-deck-fd.txt](ch30-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (24 cards) |
+| [ch30-vocab-deck.md](ch30-vocab-deck.md) | Markdown | 12-word vocabulary deck — 4 verbs + 8 nouns |
+| [ch30-vocab-deck.txt](ch30-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch30-vocab-deck-fd.txt](ch30-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
 
 ---
 

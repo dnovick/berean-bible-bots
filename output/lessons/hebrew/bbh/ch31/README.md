@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch31-passage-exercise/](exercises/ch31-passage-exercise/README.md) | Passage exercise — identify and parse Piel Weak verbs in context (Gen 2–3, Gen 6, Gen 18:19, Gen 16:6, Deu 8:2–3, Amos 3:7, Gen 50:16) |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch31-vocab-deck.md](ch31-vocab-deck.md) | Markdown | 12-word vocabulary deck — 12 nouns |
+| [ch31-vocab-deck.txt](ch31-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
+| [ch31-vocab-deck-fd.txt](ch31-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 31*

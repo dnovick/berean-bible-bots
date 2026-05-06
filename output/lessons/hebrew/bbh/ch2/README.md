@@ -14,6 +14,14 @@
 |---|---|
 | [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/README.md) | 25-item vowel identification drill — all five vowel classes, both sheva types, all three hatef shevas, matres lectionis, and dagesh forte |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch2-vocab-deck.md](ch2-vocab-deck.md) | Markdown | Vocabulary deck — 21 proper nouns (biblical names and places) with OT frequency |
+| [ch2-vocab-deck.txt](ch2-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (21 cards) |
+| [ch2-vocab-deck-fd.txt](ch2-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (21 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*

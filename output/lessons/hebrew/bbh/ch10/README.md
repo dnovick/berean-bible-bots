@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch10-construct-chain/](exercises/ch10-construct-chain/README.md) | 25-item drill — identify construct noun, absolute noun, definiteness, and translation for each chain |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch10-vocab-deck.md](ch10-vocab-deck.md) | Markdown | Vocabulary deck — 17 high-frequency nouns with OT frequency |
+| [ch10-vocab-deck.txt](ch10-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (17 cards) |
+| [ch10-vocab-deck-fd.txt](ch10-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (17 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*

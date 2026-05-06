@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch4-noun-parsing/](exercises/ch4-noun-parsing/README.md) | 25-item noun parsing drill — gender, number, state, lexical form, and gloss |
 
+### Flashcards
+
+| File | Format | Description |
+|---|---|---|
+| [ch4-vocab-deck.md](ch4-vocab-deck.md) | Markdown | Vocabulary deck — 20 high-frequency nouns with construct forms, plurals, and OT frequency |
+| [ch4-vocab-deck.txt](ch4-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (20 cards) |
+| [ch4-vocab-deck-fd.txt](ch4-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (20 cards) |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*

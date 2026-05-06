@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch12-verb-overview/](exercises/ch12-verb-overview/README.md) | 20-item conceptual overview — stem identification, active/passive/reflexive classification, and root recognition |
 
+### Flashcards
+
+| File | Description |
+|---|---|
+| [ch12-vocab-deck.md](ch12-vocab-deck.md) | Human-readable card list — 18 vocabulary words |
+| [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import file (File → Import) |
+| [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import file |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
