@@ -6,7 +6,7 @@
 
 ## Description
 
-A 15-verb parsing exercise drawn from Genesis 3, 6, and 21. Students read each highlighted Niphal form with its passage context, then parse conjugation, PGN, root, weak class (III-א / III-ה / I-guttural / I-נ / I-י / strong), and semantic function (Passive / Reflexive / Middle / Simple Action). Genesis 3 has reflexive and middle uses (III-ה and I-guttural roots); Genesis 6 has Niphal-only forms and passive (I-guttural); Genesis 21 has reflexive oath-swearing (I-י) and passive birth notices. Two bonus verbs from Gen 21:3 and 21:8 are included.
+A 15-verb parsing exercise drawn from Genesis 3, 6, and 21, with 3 distractor verbs (Part C) from the same passages. Students first answer "Is it Niphal?" for every highlighted verb before parsing conjugation, PGN, root, weak class, and semantic function (Passive / Reflexive / Middle / Simple Action). Distractors are Qal forms (וַתֵּרֶא, עָשָׂה, וַיִּגְדַּל) drawn from the identical corpus. Genesis 3 has reflexive and middle uses (III-ה and I-guttural roots); Genesis 6 has Niphal-only forms and passive (I-guttural); Genesis 21 has reflexive oath-swearing (I-י) and passive birth notices. Two bonus verbs from Gen 21:3 and 21:8 are included.
 
 ### Conjugation coverage
 
@@ -17,6 +17,7 @@ A 15-verb parsing exercise drawn from Genesis 3, 6, and 21. Students read each h
 | Imperfect | 2 | #10, #12 |
 | Participle | 1 | #2 |
 | Imperative | 1 | #11 |
+| Distractors | 3 | D1 (Qal Wayyiqtol 3fs), D2 (Qal Perfect 3ms), D3 (Qal Wayyiqtol 3ms) |
 
 ---
 

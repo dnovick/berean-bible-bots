@@ -6,9 +6,9 @@
 
 ## Description
 
-A 21-verb parsing exercise covering all eight Hiphil conjugations drawn from three OT passages: the flood narrative (Gen 6–8), the Abrahamic oath (Gen 22:17), and the conquest instruction (Deut 7:2). Two bonus verbs from Gen 6:1 and 6:10 are included.
+A 21-verb parsing exercise covering all eight Hiphil conjugations drawn from three OT passages: the flood narrative (Gen 6–8), the Abrahamic oath (Gen 22:17), and the conquest instruction (Deut 7:2). Two bonus verbs from Gen 6:1 and 6:10 are included. Three distractor verbs (D1–D3) are woven into the main passages: D1 (נִשְׁחָתָה, Niphal, Gen 6:12) appears alongside #1 to contrast Niphal vs. Hiphil; D2 (וּנְתָנָם, Qal) and D3 (תִכְרֹת, Qal) are from Deu 7:2 alongside #17–#19.
 
-Every verb is a confirmed Hiphil form. Students parse conjugation, person-gender-number, root, and semantic function (Causative / Declarative / Factitive / Simple action). An answer key is embedded in all three formats.
+Students first answer "Is it Hiphil?" for every highlighted verb before parsing conjugation, person-gender-number, root, and semantic function (Causative / Declarative / Factitive / Simple action). An answer key is embedded in all three formats.
 
 ### Conjugation coverage
 
@@ -22,6 +22,7 @@ Every verb is a confirmed Hiphil form. Students parse conjugation, person-gender
 | Weqatal | 2 | #4, #17 |
 | Inf. Absolute | 2 | #15, #18 |
 | Imperative | 1 | #12 |
+| Distractors | 3 | D1 (Niphal Weqatal 3fs), D2 (Qal Weqatal 3ms), D3 (Qal Imperfect 2ms) |
 
 ---
 

@@ -6,7 +6,7 @@
 
 ## Description
 
-A 15-verb parsing exercise drawn from the Joseph narrative (Gen 37–49) and the Sinai approach (Exo 19). Students parse conjugation, person-gender-number, root, and semantic function (Passive / Reflexive / Simple action). An answer key is embedded in all three formats. Roots are predominantly strong (מָצָא, שָׁבַע, נָצַב, אָסַף, מָכַר, שָׁמַע, שָׁמַר) with one middle/stative root (יָתַר).
+A 15-verb parsing exercise drawn from the Joseph narrative (Gen 37–49) and the Sinai approach (Exo 19), with 3 distractor verbs (Part C) from the same passages. Students first answer "Is it Niphal?" for every highlighted verb before parsing conjugation, person-gender-number, root, and semantic function (Passive / Reflexive / Simple action). Distractors are Qal forms (קָמָה, מָכְרוּ, יָכֹל) drawn from the identical corpus to reinforce Niphal recognition. An answer key is embedded in all three formats. Roots are predominantly strong (מָצָא, שָׁבַע, נָצַב, אָסַף, מָכַר, שָׁמַע, שָׁמַר) with one middle/stative root (יָתַר).
 
 ### Conjugation coverage
 
@@ -18,6 +18,7 @@ A 15-verb parsing exercise drawn from the Joseph narrative (Gen 37–49) and the
 | Perfect | 2 | #1, #7 |
 | Imperative | 3 | #9, #11, B2 |
 | Weqatal | 1 | B1 |
+| Distractors | 3 | D1 (Qal Perf 3fs), D2 (Qal Perf 3cp), D3 (Qal Perf 3ms) |
 
 ---
 

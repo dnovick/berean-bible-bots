@@ -27,7 +27,9 @@
   input.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
   .answer-row { display: none; background: #f0faf0; }
   .answer-row td { border-top: none; font-size: .88rem; color: #2a6e2a; padding: .3rem .5rem; }
+  .answer-row.wrong td { background: #fff0f0; color: #8b0000; }
   .answer-row td.answer-label { font-weight: bold; color: #1a5c1a; }
+  .answer-row.wrong td.answer-label { color: #8b0000; }
   button.reveal-btn {
     font-size: .78rem; padding: .15rem .5rem; cursor: pointer;
     background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a;
@@ -62,12 +64,12 @@
 <p class="subtitle">Genesis 3, 6, and 21 · The Garden, the Flood Prelude, and Beersheba</p>
 
 <div class="instructions">
-  <strong>Instructions:</strong> Every highlighted verb is a Niphal form. For each one:
+  <strong>Instructions:</strong> For each numbered verb, answer <strong>Is it Niphal? (Yes / No)</strong>. Then for every verb:
   <ol style="margin:.4rem 0 0">
     <li>Parse it — give <strong>conjugation</strong>, <strong>person-gender-number</strong>, and <strong>root</strong>.</li>
-    <li>State the <strong>semantic function</strong> (Passive / Reflexive / Middle / Simple action).</li>
+    <li>State the <strong>semantic function</strong> (Passive / Reflexive / Middle / Simple action — or "NOT Niphal" for distractors).</li>
   </ol>
-  Click <strong>▶ Answer</strong> on any row to reveal the correct parsing inline.
+  Distractors (D1–D3) are Qal verbs from the same passages. Click <strong>▶ Answer</strong> on any row to reveal the correct parsing inline.
 </div>
 
 <div class="controls">
@@ -83,10 +85,11 @@
   <div class="hebrew">וִֽהְיִיתֶם֙ כֵּֽאלֹהִ֔ים יֹדְעֵ֖י טוֹב וָרָ֑ע כִּ֣י יֹדֵ֔עַ אֱלֹהִ֕ים כִּ֗י בְּיֹ֛ום אֲכָלְכֶ֥ם מִמֶּ֖נּוּ וְנִפְקְח֖וּ עֵינֵיכֶ֑ם</div>
   <p class="english">"…for God knows that in the day you eat of it your eyes will [1] ____."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">1</td>
       <td class="verb-cell">וְנִפְקְחוּ</td>
+      <td><input class="parse-field" id="f1-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f1-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f1-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f1-root" placeholder="root"></td>
@@ -95,20 +98,35 @@
     </tr>
     <tr class="answer-row" id="r1">
       <td class="answer-label">✓</td>
-      <td colspan="6">Weqatal · 3cp · פָּקַח · <em>Middle</em> — "will be opened" (eyes open themselves)</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 3cp · פָּקַח | <em>Middle</em> — "will be opened" (eyes open themselves)</td>
     </tr>
   </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">3:6</span>
-  <div class="hebrew">וַתֵּ֣רֶא הָֽאִשָּׁ֡ה כִּ֣י טֹוב֩ הָעֵ֨ץ לְמַאֲכָ֜ל וְכִ֧י תַֽאֲוָה־ה֣וּא לָעֵינַ֗יִם וְנֶחְמָ֤ד הָעֵץ֙ לְהַשְׂכִּ֔יל</div>
-  <p class="english">"…and that the tree was desirable to make one wise."</p>
+  <div class="hebrew"><strong>וַתֵּ֣רֶא</strong> הָֽאִשָּׁ֡ה כִּ֣י טֹוב֩ הָעֵ֨ץ לְמַאֲכָ֜ל וְכִ֧י תַֽאֲוָה־ה֣וּא לָעֵינַ֗יִם <strong>וְנֶחְמָ֤ד</strong> הָעֵץ֙ לְהַשְׂכִּ֔יל</div>
+  <p class="english">"[D1] ____ the woman that the tree was good for food … and that the tree was desirable to make one wise [2] ____."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+    <tr>
+      <td class="num-cell">D1</td>
+      <td class="verb-cell">וַתֵּרֶא</td>
+      <td><input class="parse-field" id="fd1-nip" placeholder="Yes / No"></td>
+      <td><input class="parse-field" id="fd1-conj" placeholder="conjugation"></td>
+      <td><input class="parse-field" id="fd1-pgn" placeholder="PGN"></td>
+      <td><input class="parse-field" id="fd1-root" placeholder="root"></td>
+      <td><input class="parse-field" id="fd1-func" placeholder="function"></td>
+      <td><button class="reveal-btn" onclick="toggle('rd1')">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row wrong" id="rd1">
+      <td class="answer-label">✗</td>
+      <td colspan="7">✗ <strong>No — Qal</strong> | Wayyiqtol · 3fs · רָאָה | NOT Niphal — Qal: <em>she saw</em>; Qal wayyiqtol 3fs; no נ prefix</td>
+    </tr>
     <tr>
       <td class="num-cell">2</td>
       <td class="verb-cell">וְנֶחְמָד</td>
+      <td><input class="parse-field" id="f2-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f2-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f2-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f2-root" placeholder="root"></td>
@@ -117,7 +135,7 @@
     </tr>
     <tr class="answer-row" id="r2">
       <td class="answer-label">✓</td>
-      <td colspan="6">Participle ms · ms · חָמַד · <em>Passive</em> — "desirable" (substantival participle: "desired/desirable")</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Participle ms · ms · חָמַד | <em>Passive</em> — "desirable" (substantival participle: "desired/desirable")</td>
     </tr>
   </table>
 </div>
@@ -127,10 +145,11 @@
   <div class="hebrew">וַתִּפָּקַ֙חְנָה֙ עֵינֵ֣י שְׁנֵיהֶ֔ם</div>
   <p class="english">"Then the eyes of both of them [3] ____."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">3</td>
       <td class="verb-cell">וַתִּפָּקַחְנָה</td>
+      <td><input class="parse-field" id="f3-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f3-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f3-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f3-root" placeholder="root"></td>
@@ -139,7 +158,7 @@
     </tr>
     <tr class="answer-row" id="r3">
       <td class="answer-label">✓</td>
-      <td colspan="6">Wayyiqtol · 3fp · פָּקַח · <em>Middle</em> — "they were opened" (the eyes opened)</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3fp · פָּקַח | <em>Middle</em> — "they were opened" (the eyes opened)</td>
     </tr>
   </table>
 </div>
@@ -149,10 +168,11 @@
   <div class="hebrew">וָאִירָ֛א כִּֽי־עֵירֹ֥ם אָנֹ֖כִי וָאֵחָבֵֽא</div>
   <p class="english">"I was afraid, because I was naked, and [4] ____."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">4</td>
       <td class="verb-cell">וָאֵחָבֵא</td>
+      <td><input class="parse-field" id="f4-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f4-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f4-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f4-root" placeholder="root"></td>
@@ -161,7 +181,7 @@
     </tr>
     <tr class="answer-row" id="r4">
       <td class="answer-label">✓</td>
-      <td colspan="6">Wayyiqtol · 1cs · חָבָא · <em>Reflexive</em> — "I hid myself"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 1cs · חָבָא | <em>Reflexive</em> — "I hid myself"</td>
     </tr>
   </table>
 </div>
@@ -172,13 +192,14 @@
 
 <div class="passage-block">
   <span class="ref">6:6</span>
-  <div class="hebrew">וַיִּנָּ֣חֶם יְהוָ֔ה כִּֽי־עָשָׂ֥ה אֶת־הָאָדָ֖ם בָּאָ֑רֶץ</div>
-  <p class="english">"And the LORD [5] ____ that he had made man on the earth."</p>
+  <div class="hebrew"><strong>וַיִּנָּ֣חֶם</strong> יְהוָ֔ה כִּֽי־<strong>עָשָׂ֥ה</strong> אֶת־הָאָדָ֖ם בָּאָ֑רֶץ</div>
+  <p class="english">"And the LORD [5] ____ that he [D2] ____ man on the earth."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">5</td>
       <td class="verb-cell">וַיִּנָּחֶם</td>
+      <td><input class="parse-field" id="f5-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f5-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f5-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f5-root" placeholder="root"></td>
@@ -187,7 +208,21 @@
     </tr>
     <tr class="answer-row" id="r5">
       <td class="answer-label">✓</td>
-      <td colspan="6">Wayyiqtol · 3ms · נָחַם · <em>Simple Action (Niphal-only)</em> — "he regretted / relented"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3ms · נָחַם | <em>Simple Action (Niphal-only)</em> — "he regretted / relented"</td>
+    </tr>
+    <tr>
+      <td class="num-cell">D2</td>
+      <td class="verb-cell">עָשָׂה</td>
+      <td><input class="parse-field" id="fd2-nip" placeholder="Yes / No"></td>
+      <td><input class="parse-field" id="fd2-conj" placeholder="conjugation"></td>
+      <td><input class="parse-field" id="fd2-pgn" placeholder="PGN"></td>
+      <td><input class="parse-field" id="fd2-root" placeholder="root"></td>
+      <td><input class="parse-field" id="fd2-func" placeholder="function"></td>
+      <td><button class="reveal-btn" onclick="toggle('rd2')">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row wrong" id="rd2">
+      <td class="answer-label">✗</td>
+      <td colspan="7">✗ <strong>No — Qal</strong> | Perfect · 3ms · עָשָׂה | NOT Niphal — Qal: <em>he had made</em>; active Qal perfect; note III-ה root</td>
     </tr>
   </table>
 </div>
@@ -197,10 +232,11 @@
   <div class="hebrew">נִחַ֖מְתִּי כִּ֥י עֲשִׂיתִֽם</div>
   <p class="english">"I [6] ____ that I made them."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">6</td>
       <td class="verb-cell">נִחַמְתִּי</td>
+      <td><input class="parse-field" id="f6-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f6-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f6-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f6-root" placeholder="root"></td>
@@ -209,7 +245,7 @@
     </tr>
     <tr class="answer-row" id="r6">
       <td class="answer-label">✓</td>
-      <td colspan="6">Weqatal · 1cs · נָחַם · <em>Simple Action (Niphal-only)</em> — "I regret"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 1cs · נָחַם | <em>Simple Action (Niphal-only)</em> — "I regret"</td>
     </tr>
   </table>
 </div>
@@ -219,10 +255,11 @@
   <div class="hebrew">וַתִּשָּׁחֵ֥ת הָאָ֖רֶץ … וַתִּמָּלֵ֥א הָאָ֖רֶץ חָמָֽס</div>
   <p class="english">"The earth [7] ____ … and the earth [8] ____ with violence."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">7</td>
       <td class="verb-cell">וַתִּשָּׁחֵת</td>
+      <td><input class="parse-field" id="f7-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f7-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f7-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f7-root" placeholder="root"></td>
@@ -231,11 +268,12 @@
     </tr>
     <tr class="answer-row" id="r7">
       <td class="answer-label">✓</td>
-      <td colspan="6">Wayyiqtol · 3fs · שָׁחַת · <em>Passive</em> — "it was corrupted"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3fs · שָׁחַת | <em>Passive</em> — "it was corrupted"</td>
     </tr>
     <tr>
       <td class="num-cell">8</td>
       <td class="verb-cell">וַתִּמָּלֵא</td>
+      <td><input class="parse-field" id="f8-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f8-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f8-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f8-root" placeholder="root"></td>
@@ -244,7 +282,7 @@
     </tr>
     <tr class="answer-row" id="r8">
       <td class="answer-label">✓</td>
-      <td colspan="6">Wayyiqtol · 3fs · מָלֵא · <em>Passive</em> — "it was filled"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3fs · מָלֵא | <em>Passive</em> — "it was filled"</td>
     </tr>
   </table>
 </div>
@@ -254,10 +292,11 @@
   <div class="hebrew">וְהִנֵּ֥ה נִשְׁחָ֑תָה כִּֽי־הִשְׁחִ֧ית כָּל־בָּשָׂ֛ר</div>
   <p class="english">"and behold, it [9] ____, for all flesh had corrupted its way."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">9</td>
       <td class="verb-cell">נִשְׁחָתָה</td>
+      <td><input class="parse-field" id="f9-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f9-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f9-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f9-root" placeholder="root"></td>
@@ -266,7 +305,7 @@
     </tr>
     <tr class="answer-row" id="r9">
       <td class="answer-label">✓</td>
-      <td colspan="6">Weqatal · 3fs · שָׁחַת · <em>Passive</em> — "it was corrupt"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 3fs · שָׁחַת | <em>Passive</em> — "it was corrupt"</td>
     </tr>
   </table>
 </div>
@@ -276,10 +315,11 @@
   <div class="hebrew">וְאָסַפְתָּ֣ אֵלֶ֔יךָ וְהָיָ֥ה לְךָ֖ וְלָהֶ֥ם לְאָכְלָֽה יֵֽאָכֵ֔ל</div>
   <p class="english">"Gather it to yourself; it shall be food for you and for them — it shall [10] ____."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">10</td>
       <td class="verb-cell">יֵאָכֵל</td>
+      <td><input class="parse-field" id="f10-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f10-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f10-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f10-root" placeholder="root"></td>
@@ -288,7 +328,7 @@
     </tr>
     <tr class="answer-row" id="r10">
       <td class="answer-label">✓</td>
-      <td colspan="6">Imperfect · 3ms · אָכַל · <em>Passive</em> — "it shall be eaten"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Imperfect · 3ms · אָכַל | <em>Passive</em> — "it shall be eaten"</td>
     </tr>
   </table>
 </div>
@@ -302,10 +342,11 @@
   <div class="hebrew">הִשָּׁ֨בְעָ֜ה לִּ֗י בֵּאלֹהִ֛ים הֵ֖נָּה</div>
   <p class="english">"[11] ____ to me by God here."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">11</td>
       <td class="verb-cell">הִשָּׁבְעָה</td>
+      <td><input class="parse-field" id="f11-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f11-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f11-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f11-root" placeholder="root"></td>
@@ -314,7 +355,7 @@
     </tr>
     <tr class="answer-row" id="r11">
       <td class="answer-label">✓</td>
-      <td colspan="6">Imperative · 2ms · שָׁבַע · <em>Reflexive</em> — "Swear!" (bind yourself by oath)</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Imperative · 2ms · שָׁבַע | <em>Reflexive</em> — "Swear!" (bind yourself by oath)</td>
     </tr>
   </table>
 </div>
@@ -322,12 +363,13 @@
 <div class="passage-block">
   <span class="ref">21:24</span>
   <div class="hebrew">וַיֹּ֙אמֶר֙ אַבְרָהָ֔ם אָנֹכִ֖י אִשָּׁבֵֽעַ</div>
-  <p class="english">"And Abraham said, 'I [12] ____.' "</p>
+  <p class="english">"And Abraham said, 'I [12] ____.'"</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">12</td>
       <td class="verb-cell">אִשָּׁבֵעַ</td>
+      <td><input class="parse-field" id="f12-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f12-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f12-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f12-root" placeholder="root"></td>
@@ -336,7 +378,7 @@
     </tr>
     <tr class="answer-row" id="r12">
       <td class="answer-label">✓</td>
-      <td colspan="6">Imperfect · 1cs · שָׁבַע · <em>Reflexive</em> — "I will swear"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Imperfect · 1cs · שָׁבַע | <em>Reflexive</em> — "I will swear"</td>
     </tr>
   </table>
 </div>
@@ -346,10 +388,11 @@
   <div class="hebrew">כִּ֛י שָׁ֥ם נִשְׁבְּע֖וּ שְׁנֵיהֶֽם</div>
   <p class="english">"For there [13] ____ both of them."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">13</td>
       <td class="verb-cell">נִשְׁבְּעוּ</td>
+      <td><input class="parse-field" id="f13-nip" placeholder="Yes / No"></td>
       <td><input class="parse-field" id="f13-conj" placeholder="conjugation"></td>
       <td><input class="parse-field" id="f13-pgn" placeholder="PGN"></td>
       <td><input class="parse-field" id="f13-root" placeholder="root"></td>
@@ -358,7 +401,7 @@
     </tr>
     <tr class="answer-row" id="r13">
       <td class="answer-label">✓</td>
-      <td colspan="6">Weqatal · 3mp · שָׁבַע · <em>Reflexive</em> — "they swore" (bound themselves by oath)</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 3mp · שָׁבַע | <em>Reflexive</em> — "they swore" (bound themselves by oath)</td>
     </tr>
   </table>
 </div>
@@ -372,41 +415,57 @@
   <div class="hebrew">אֲשֶׁר־נּֽוֹלַד־לֹ֛ו</div>
   <p class="english">"who had been born to him"</p>
   <span class="ref" style="margin-top:.8rem">21:8</span>
-  <div class="hebrew">וַיִּגְדַּ֤ל הַיֶּ֙לֶד֙ וַיִּגָּמַ֑ל</div>
-  <p class="english">"And the child grew and was weaned."</p>
+  <div class="hebrew"><strong>וַיִּגְדַּ֤ל</strong> הַיֶּ֙לֶד֙ <strong>וַיִּגָּמַ֑ל</strong></div>
+  <p class="english">"And the child [D3] ____ and [B2] ____."</p>
   <table>
-    <tr><th class="num-cell">#</th><th>Verb</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Function</th><th></th></tr>
+    <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">B1</td>
       <td class="verb-cell">נּוֹלַד</td>
-      <td><input class="parse-field" id="fB1-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="fB1-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="fB1-root" placeholder="root"></td>
-      <td><input class="parse-field" id="fB1-func" placeholder="function"></td>
-      <td><button class="reveal-btn" onclick="toggle('rB1')">▶ Answer</button></td>
+      <td><input class="parse-field" id="fb1-nip" placeholder="Yes / No"></td>
+      <td><input class="parse-field" id="fb1-conj" placeholder="conjugation"></td>
+      <td><input class="parse-field" id="fb1-pgn" placeholder="PGN"></td>
+      <td><input class="parse-field" id="fb1-root" placeholder="root"></td>
+      <td><input class="parse-field" id="fb1-func" placeholder="function"></td>
+      <td><button class="reveal-btn" onclick="toggle('rb1')">▶ Answer</button></td>
     </tr>
-    <tr class="answer-row" id="rB1">
+    <tr class="answer-row" id="rb1">
       <td class="answer-label">✓</td>
-      <td colspan="6">Weqatal · 3ms · יָלַד · <em>Passive</em> — "who had been born"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 3ms · יָלַד | <em>Passive</em> — "who had been born"</td>
+    </tr>
+    <tr>
+      <td class="num-cell">D3</td>
+      <td class="verb-cell">וַיִּגְדַּל</td>
+      <td><input class="parse-field" id="fd3-nip" placeholder="Yes / No"></td>
+      <td><input class="parse-field" id="fd3-conj" placeholder="conjugation"></td>
+      <td><input class="parse-field" id="fd3-pgn" placeholder="PGN"></td>
+      <td><input class="parse-field" id="fd3-root" placeholder="root"></td>
+      <td><input class="parse-field" id="fd3-func" placeholder="function"></td>
+      <td><button class="reveal-btn" onclick="toggle('rd3')">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row wrong" id="rd3">
+      <td class="answer-label">✗</td>
+      <td colspan="7">✗ <strong>No — Qal</strong> | Wayyiqtol · 3ms · גָּדַל | NOT Niphal — Qal: <em>grew</em>; active Qal; contrast with B2 Niphal passive of different root in same verse</td>
     </tr>
     <tr>
       <td class="num-cell">B2</td>
       <td class="verb-cell">וַיִּגָּמַל</td>
-      <td><input class="parse-field" id="fB2-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="fB2-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="fB2-root" placeholder="root"></td>
-      <td><input class="parse-field" id="fB2-func" placeholder="function"></td>
-      <td><button class="reveal-btn" onclick="toggle('rB2')">▶ Answer</button></td>
+      <td><input class="parse-field" id="fb2-nip" placeholder="Yes / No"></td>
+      <td><input class="parse-field" id="fb2-conj" placeholder="conjugation"></td>
+      <td><input class="parse-field" id="fb2-pgn" placeholder="PGN"></td>
+      <td><input class="parse-field" id="fb2-root" placeholder="root"></td>
+      <td><input class="parse-field" id="fb2-func" placeholder="function"></td>
+      <td><button class="reveal-btn" onclick="toggle('rb2')">▶ Answer</button></td>
     </tr>
-    <tr class="answer-row" id="rB2">
+    <tr class="answer-row" id="rb2">
       <td class="answer-label">✓</td>
-      <td colspan="6">Wayyiqtol · 3ms · גָּמַל · <em>Passive</em> — "was weaned"</td>
+      <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3ms · גָּמַל | <em>Passive</em> — "was weaned"</td>
     </tr>
   </table>
 </div>
 
 <div class="score-box">
-  <strong>Score:</strong> 13 main + 2 bonus = 15 total. &nbsp;
+  <strong>Score:</strong> 13 main + 2 bonus = 15 total (distractors D1–D3 are unscored practice). &nbsp;
   13–15 = excellent &nbsp;|&nbsp; 9–12 = review the paradigm &nbsp;|&nbsp; below 9 = revisit §23.3–23.13
 </div>
 
@@ -418,11 +477,12 @@
 <h2>Conjugation Coverage</h2>
 <table class="coverage-table">
   <tr><th>Conjugation</th><th>Items</th></tr>
-  <tr><td>Wayyiqtol</td><td>#3, #5, #7, #8, B2</td></tr>
+  <tr><td>Wayyiqtol</td><td>#3, #5, #7, #8, B2, D1, D3</td></tr>
   <tr><td>Weqatal</td><td>#1, #6, #9, #13, B1</td></tr>
   <tr><td>Imperfect</td><td>#10, #12</td></tr>
   <tr><td>Participle</td><td>#2</td></tr>
   <tr><td>Imperative</td><td>#11</td></tr>
+  <tr><td>Perfect</td><td>D2</td></tr>
 </table>
 
 <div class="reflection">

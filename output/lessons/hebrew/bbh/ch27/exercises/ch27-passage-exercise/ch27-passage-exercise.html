@@ -28,6 +28,8 @@
   .answer-row { display: none; background: #f0faf0; }
   .answer-row td { border-top: none; font-size: .88rem; color: #2a6e2a; padding: .3rem .5rem; }
   .answer-row td.answer-label { font-weight: bold; color: #1a5c1a; }
+  .answer-row.wrong td { background: #fff0f0; color: #8b0000; }
+  .answer-row.wrong td.answer-label { color: #8b0000; }
   button.reveal-btn {
     font-size: .78rem; padding: .15rem .5rem; cursor: pointer;
     background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a;
@@ -57,12 +59,13 @@
 <p class="subtitle">Genesis, Exodus, Numbers, and Deuteronomy · Seven Weak Classes</p>
 
 <div class="instructions">
-  <strong>Instructions:</strong> Every highlighted verb is a Hiphil form. For each one:
+  <strong>Instructions:</strong> For each numbered verb, answer <strong>Is it Hiphil? (Yes / No)</strong>. Then for every verb:
   <ol style="margin:.4rem 0 0">
     <li>Parse it — give <strong>conjugation</strong>, <strong>person-gender-number</strong>, and <strong>root</strong>.</li>
     <li>State the <strong>weak class</strong> (I-guttural / III-ח/ע / III-א / III-ה / I-נ / I-י / Biconsonantal).</li>
     <li>Give a brief <strong>causative gloss</strong> in context.</li>
   </ol>
+  Parts A and B contain only Hiphil weak verbs. <strong>Part C</strong> contains three distractor verbs (Qal or Niphal) — answer "No" for those.
   Click <strong>▶ Answer</strong> on any row to reveal the correct parsing inline.
 </div>
 
@@ -80,8 +83,9 @@
 <p class="hebrew">וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם <strong>וַיַּקְרֵא</strong> לַחֹשֶׁךְ לַיְלָה</p>
 <p class="english">"and he <strong>called</strong> the darkness Night"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v1-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v1a"></td>
     <td><input class="parse-field" id="v1b"></td>
     <td><input class="parse-field" id="v1c"></td>
@@ -90,7 +94,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans1">
-    <td class="answer-label">Wayyiqtol</td><td>3ms</td><td>קָרָא</td><td>III-א</td>
+    <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>קָרָא</td><td>III-א</td>
     <td colspan="2">he called / proclaimed — tsere before silent final א; one of the most common forms in Genesis 1</td>
   </tr>
 </table>
@@ -102,8 +106,9 @@
 <p class="hebrew">וַהֲקִמֹתִי אֶת־בְּרִיתִי אִתְּךָ</p>
 <p class="english">"but I will establish my covenant with you"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v2-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v2a"></td>
     <td><input class="parse-field" id="v2b"></td>
     <td><input class="parse-field" id="v2c"></td>
@@ -112,7 +117,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans2">
-    <td class="answer-label">Weqatal</td><td>1cs</td><td>קוּם</td><td>Biconsonantal</td>
+    <td class="answer-label">Yes — Hiphil | Weqatal</td><td>1cs</td><td>קוּם</td><td>Biconsonantal</td>
     <td colspan="2">I will establish — וְ + הֵקִים pattern (hateph-patach under ה in weqatal form); holem-vav root medial</td>
   </tr>
 </table>
@@ -124,8 +129,9 @@
 <p class="hebrew"><strong>הֶעֱלָה</strong> נֹחַ עֹלֹת עַל הַמִּזְבֵּחַ</p>
 <p class="english">"Noah <strong>offered up</strong> burnt offerings on the altar"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v3-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v3a"></td>
     <td><input class="parse-field" id="v3b"></td>
     <td><input class="parse-field" id="v3c"></td>
@@ -134,7 +140,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans3">
-    <td class="answer-label">Perfect</td><td>3ms</td><td>עָלָה</td><td>III-ה + I-guttural</td>
+    <td class="answer-label">Yes — Hiphil | Perfect</td><td>3ms</td><td>עָלָה</td><td>III-ה + I-guttural</td>
     <td colspan="2">he offered up — qamets + ה ending; seghol under הֶ and hateph-seghol under ע from the I-guttural interaction</td>
   </tr>
 </table>
@@ -146,8 +152,9 @@
 <p class="hebrew">אֲנִי יְהוָה אֲשֶׁר <strong>הוֹצֵאתִיךָ</strong> מֵאוּר כַּשְׂדִּים</p>
 <p class="english">"I am the LORD who <strong>brought you out</strong> from Ur of the Chaldeans"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v4-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v4a"></td>
     <td><input class="parse-field" id="v4b"></td>
     <td><input class="parse-field" id="v4c"></td>
@@ -156,7 +163,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans4">
-    <td class="answer-label">Perfect</td><td>1cs + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
+    <td class="answer-label">Yes — Hiphil | Perfect</td><td>1cs + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
     <td colspan="2">I brought you out — הוֹ prefix (holem-vav) is the unmistakable I-י/ו Hiphil marker; tsere final shifts before suffix</td>
   </tr>
 </table>
@@ -168,8 +175,9 @@
 <p class="hebrew"><strong>וַיַּעַל</strong> שָׁם עֹלָה</p>
 <p class="english">"and he <strong>offered up</strong> a burnt offering there"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v5-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v5a"></td>
     <td><input class="parse-field" id="v5b"></td>
     <td><input class="parse-field" id="v5c"></td>
@@ -178,7 +186,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans5">
-    <td class="answer-label">Wayyiqtol</td><td>3ms</td><td>עָלָה</td><td>III-ה + I-guttural</td>
+    <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>עָלָה</td><td>III-ה + I-guttural</td>
     <td colspan="2">and he offered up — apocopated: ה dropped; short patach under R2 (ע); one of the clearest III-ה Hiphil wayyiqtol diagnostics</td>
   </tr>
 </table>
@@ -190,8 +198,9 @@
 <p class="hebrew"><strong>וַיַּפֵּל</strong> יְהוָה אֱלֹהִים תַּרְדֵּמָה עַל הָאָדָם</p>
 <p class="english">"the LORD God <strong>caused a deep sleep to fall</strong> upon the man"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v6-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v6a"></td>
     <td><input class="parse-field" id="v6b"></td>
     <td><input class="parse-field" id="v6c"></td>
@@ -200,7 +209,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans6">
-    <td class="answer-label">Wayyiqtol</td><td>3ms</td><td>נָפַל</td><td>I-נ</td>
+    <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>נָפַל</td><td>I-נ</td>
     <td colspan="2">and he cast — dagesh forte in R2 (פ) + tsere final; the patach prefix (וַיַּ) is standard; dagesh in R2 reveals I-נ</td>
   </tr>
 </table>
@@ -212,8 +221,9 @@
 <p class="hebrew">וְאוּלָם בַּעֲבוּר זֹאת <strong>הֶעֱמַדְתִּיךָ</strong></p>
 <p class="english">"but for this purpose I <strong>have raised you up</strong>"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v7-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v7a"></td>
     <td><input class="parse-field" id="v7b"></td>
     <td><input class="parse-field" id="v7c"></td>
@@ -222,7 +232,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans7">
-    <td class="answer-label">Perfect</td><td>1cs + 2ms suf.</td><td>עָמַד</td><td>I-guttural</td>
+    <td class="answer-label">Yes — Hiphil | Perfect</td><td>1cs + 2ms suf.</td><td>עָמַד</td><td>I-guttural</td>
     <td colspan="2">I raised you up / stationed you — seghol under הֶ; hateph-seghol under ע; suffix תִּיךָ appended to the perfect 1cs base</td>
   </tr>
 </table>
@@ -234,8 +244,9 @@
 <p class="hebrew">אֲנֹכִי יְהוָה אֱלֹהֶיךָ אֲשֶׁר <strong>הוֹצֵאתִיךָ</strong> מֵאֶרֶץ מִצְרַיִם</p>
 <p class="english">"I am the LORD your God, who <strong>brought you out</strong> of the land of Egypt"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v8-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v8a"></td>
     <td><input class="parse-field" id="v8b"></td>
     <td><input class="parse-field" id="v8c"></td>
@@ -244,7 +255,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans8">
-    <td class="answer-label">Perfect</td><td>1cs + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
+    <td class="answer-label">Yes — Hiphil | Perfect</td><td>1cs + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
     <td colspan="2">I brought you out — הוֹ prefix; the Exodus formula; same form as Gen 15:7</td>
   </tr>
 </table>
@@ -256,8 +267,9 @@
 <p class="hebrew">וַיֹּאמַר <strong>הַרְאֵנִי</strong> נָא אֶת־כְּבֹדֶךָ</p>
 <p class="english">"and he said, '<strong>Show me</strong> your glory, please'"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v9-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v9a"></td>
     <td><input class="parse-field" id="v9b"></td>
     <td><input class="parse-field" id="v9c"></td>
@@ -266,7 +278,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans9">
-    <td class="answer-label">Imperative</td><td>2ms + 1cs suf.</td><td>רָאָה</td><td>III-ה</td>
+    <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms + 1cs suf.</td><td>רָאָה</td><td>III-ה</td>
     <td colspan="2">show me — tsere + ה retained in the imperative (ה not apocopated); suffix נִי appended; Moses' request at Sinai</td>
   </tr>
 </table>
@@ -278,8 +290,9 @@
 <p class="hebrew"><strong>הָקֵם</strong> אֶת־מִשְׁכַּן אֹהֶל מוֹעֵד</p>
 <p class="english">"<strong>Set up</strong> the tabernacle of the tent of meeting"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v10-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v10a"></td>
     <td><input class="parse-field" id="v10b"></td>
     <td><input class="parse-field" id="v10c"></td>
@@ -288,7 +301,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans10">
-    <td class="answer-label">Imperative</td><td>2ms</td><td>קוּם</td><td>Biconsonantal</td>
+    <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>קוּם</td><td>Biconsonantal</td>
     <td colspan="2">set up / erect — הָ prefix (qamets) + tsere; the qamets under הָ distinguishes from the strong Hiphil imperative הַ (patach)</td>
   </tr>
 </table>
@@ -303,8 +316,9 @@
 <p class="hebrew"><strong>הַעֲמֵד</strong> אֹתוֹ לִפְנֵי אֶלְעָזָר הַכֹּהֵן</p>
 <p class="english">"<strong>Set</strong> him before Eleazar the priest"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v11-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v11a"></td>
     <td><input class="parse-field" id="v11b"></td>
     <td><input class="parse-field" id="v11c"></td>
@@ -313,7 +327,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans11">
-    <td class="answer-label">Imperative</td><td>2ms</td><td>עָמַד</td><td>I-guttural</td>
+    <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>עָמַד</td><td>I-guttural</td>
     <td colspan="2">set him / station him — הַ + composite shewa under ע + tsere; compare הָקֵם (biconsonantal) — both begin with הַ/הָ but the vowel under R1 differs</td>
   </tr>
 </table>
@@ -325,8 +339,9 @@
 <p class="hebrew">נָבִיא מִקִּרְבְּךָ <strong>יָקִים</strong> לְךָ יְהוָה אֱלֹהֶיךָ</p>
 <p class="english">"a prophet like me the LORD your God <strong>will raise up</strong> for you"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v12-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v12a"></td>
     <td><input class="parse-field" id="v12b"></td>
     <td><input class="parse-field" id="v12c"></td>
@@ -335,7 +350,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans12">
-    <td class="answer-label">Imperfect</td><td>3ms</td><td>קוּם</td><td>Biconsonantal</td>
+    <td class="answer-label">Yes — Hiphil | Imperfect</td><td>3ms</td><td>קוּם</td><td>Biconsonantal</td>
     <td colspan="2">he will raise up — qamets under prefix (יָ); the Deuteronomic messianic/prophetic promise formula</td>
   </tr>
 </table>
@@ -347,8 +362,9 @@
 <p class="hebrew"><strong>הַשְׁמַע</strong> אֶת־הָעָם אֶת־דִּבְרֵי</p>
 <p class="english">"<strong>Make the people hear</strong> these words"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v13-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v13a"></td>
     <td><input class="parse-field" id="v13b"></td>
     <td><input class="parse-field" id="v13c"></td>
@@ -357,7 +373,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans13">
-    <td class="answer-label">Imperative</td><td>2ms</td><td>שָׁמַע</td><td>III-ח/ע</td>
+    <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>שָׁמַע</td><td>III-ח/ע</td>
     <td colspan="2">make them hear — patach (not tsere) before final ע in the shortened imperative; הַ + patach before final guttural</td>
   </tr>
 </table>
@@ -369,8 +385,9 @@
 <p class="hebrew">אֲשֶׁר <strong>הוֹצִיאֲךָ</strong> מֵאֶרֶץ מִצְרַיִם</p>
 <p class="english">"who <strong>brought you out</strong> of the land of Egypt"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v14-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v14a"></td>
     <td><input class="parse-field" id="v14b"></td>
     <td><input class="parse-field" id="v14c"></td>
@@ -379,7 +396,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans14">
-    <td class="answer-label">Perfect</td><td>3ms + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
+    <td class="answer-label">Yes — Hiphil | Perfect</td><td>3ms + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
     <td colspan="2">he brought you out — הוֹ prefix; the Deuteronomic remembrance formula echoes Exo 20:2; suffix אֲךָ appended</td>
   </tr>
 </table>
@@ -391,8 +408,9 @@
 <p class="hebrew">הַ<strong>מּוֹצִיא</strong>ֲךָ מֵאֶרֶץ מִצְרַיִם</p>
 <p class="english">"<strong>the one who brought you out</strong> of the land of Egypt" (substantival participle with article)</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v15-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v15a"></td>
     <td><input class="parse-field" id="v15b"></td>
     <td><input class="parse-field" id="v15c"></td>
@@ -401,7 +419,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans15">
-    <td class="answer-label">Participle</td><td>ms</td><td>יָצָא</td><td>I-י</td>
+    <td class="answer-label">Yes — Hiphil | Participle</td><td>ms</td><td>יָצָא</td><td>I-י</td>
     <td colspan="2">the one who brings out — מוֹ prefix (holem-vav under מ) with article; contrast strong Hiphil participle מַ (patach)</td>
   </tr>
 </table>
@@ -413,8 +431,9 @@
 <p class="hebrew"><strong>וְהֵקִים</strong> אֶת־הַמִּשְׁכָּן כְּמִשְׁפָּטוֹ</p>
 <p class="english">"and <strong>he shall set up</strong> the tabernacle according to its ordinance"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v16-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v16a"></td>
     <td><input class="parse-field" id="v16b"></td>
     <td><input class="parse-field" id="v16c"></td>
@@ -423,7 +442,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans16">
-    <td class="answer-label">Weqatal</td><td>3ms</td><td>קוּם</td><td>Biconsonantal</td>
+    <td class="answer-label">Yes — Hiphil | Weqatal</td><td>3ms</td><td>קוּם</td><td>Biconsonantal</td>
     <td colspan="2">and he shall set up — וְ + הֵקִים pattern; sequential future; הֵ prefix visible</td>
   </tr>
 </table>
@@ -435,8 +454,9 @@
 <p class="hebrew"><strong>לְהַעֲלוֹת</strong> אֶתְכֶם מֵעֳנִי מִצְרַיִם</p>
 <p class="english">"<strong>to bring you up</strong> out of the affliction of Egypt"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v17-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v17a"></td>
     <td><input class="parse-field" id="v17b"></td>
     <td><input class="parse-field" id="v17c"></td>
@@ -445,7 +465,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans17">
-    <td class="answer-label">Inf. Construct</td><td>—</td><td>עָלָה</td><td>III-ה + I-guttural</td>
+    <td class="answer-label">Yes — Hiphil | Inf. Construct</td><td>—</td><td>עָלָה</td><td>III-ה + I-guttural</td>
     <td colspan="2">to bring up — ends in וֹת (holem-vav + tav); the strongest single diagnostic for III-ה Hiphil inf. construct</td>
   </tr>
 </table>
@@ -457,8 +477,9 @@
 <p class="hebrew">מֵעַתָּה <strong>אַשְׁמִיעֲכֶם</strong> חֲדָשׁוֹת</p>
 <p class="english">"from now on <strong>I announce to you</strong> new things"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="v18-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="v18a"></td>
     <td><input class="parse-field" id="v18b"></td>
     <td><input class="parse-field" id="v18c"></td>
@@ -467,7 +488,7 @@
     <td><button class="reveal-btn" onclick="toggle('ans18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ans18">
-    <td class="answer-label">Imperfect</td><td>1cs + 2mp suf.</td><td>שָׁמַע</td><td>III-ח/ע</td>
+    <td class="answer-label">Yes — Hiphil | Imperfect</td><td>1cs + 2mp suf.</td><td>שָׁמַע</td><td>III-ח/ע</td>
     <td colspan="2">I announce to you — imperfect 1cs + אֲכֶם suffix; patach furtive before ע is absorbed by the suffix, leaving plain patach under ע</td>
   </tr>
 </table>
@@ -482,8 +503,9 @@
 <p class="hebrew"><strong>וַיָּשֶׂם</strong> אֹתוֹ בְּגַן עֵדֶן</p>
 <p class="english">"and he <strong>placed</strong> him in the garden of Eden"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="vb1-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="vb1a"></td>
     <td><input class="parse-field" id="vb1b"></td>
     <td><input class="parse-field" id="vb1c"></td>
@@ -492,7 +514,7 @@
     <td><button class="reveal-btn" onclick="toggle('ansb1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ansb1">
-    <td class="answer-label">Wayyiqtol</td><td>3ms</td><td>שִׂים</td><td>Biconsonantal</td>
+    <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>שִׂים</td><td>Biconsonantal</td>
     <td colspan="2">and he placed / set — qamets under וַיָּ + apocopated seghol final (וַיָּשֶׂם); the short vowel final distinguishes from the perfect הֵשִׂים</td>
   </tr>
 </table>
@@ -504,8 +526,9 @@
 <p class="hebrew"><strong>הַגֶּשׁ</strong>־לִי וְאֹכְלָה מִצֵּיד בְּנִי</p>
 <p class="english">"<strong>Bring it near</strong> to me and I will eat of my son's game"</p>
 <table>
-  <tr><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
   <tr>
+    <td><input class="parse-field" id="vb2-hip" placeholder="Yes / No"></td>
     <td><input class="parse-field" id="vb2a"></td>
     <td><input class="parse-field" id="vb2b"></td>
     <td><input class="parse-field" id="vb2c"></td>
@@ -514,8 +537,84 @@
     <td><button class="reveal-btn" onclick="toggle('ansb2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="ansb2">
-    <td class="answer-label">Imperative</td><td>2ms</td><td>נָגַשׁ</td><td>I-נ</td>
+    <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>נָגַשׁ</td><td>I-נ</td>
     <td colspan="2">bring near — הַ + dagesh forte in R2 (ג) + tsere; dagesh in ג is the proof of the assimilated root נ (נגשׁ)</td>
+  </tr>
+</table>
+</div>
+
+<hr class="section-break">
+<h2>Part C — Distractor Check</h2>
+
+<div class="note-box">
+  These three verbs are <strong>not</strong> Hiphil — they are Qal or Niphal forms from stems already studied. Answer "No" for "Hiphil?" and complete the full parse.
+</div>
+
+<!-- Distractor D1 -->
+<div class="passage-block">
+<span class="ref">D1. Genesis 22:3</span>
+<p class="hebrew">וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר <strong>וַיֵּלֶךְ</strong> אֶל הַמָּקוֹם</p>
+<p class="english">"And Abraham rose early in the morning and <strong>went</strong> to the place."</p>
+<table>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Stem / Function</th><th></th></tr>
+  <tr>
+    <td><input class="parse-field" id="vd1-hip" placeholder="Yes / No"></td>
+    <td><input class="parse-field" id="vd1a"></td>
+    <td><input class="parse-field" id="vd1b"></td>
+    <td><input class="parse-field" id="vd1c"></td>
+    <td><input class="parse-field" id="vd1d"></td>
+    <td><input class="parse-field" id="vd1e"></td>
+    <td><button class="reveal-btn" onclick="toggle('ansd1')">&#9654; Answer</button></td>
+  </tr>
+  <tr class="answer-row wrong" id="ansd1">
+    <td class="answer-label">No — Qal</td><td>Wayyiqtol</td><td>3ms</td><td>הָלַךְ</td><td>I-guttural</td>
+    <td colspan="2">NOT Hiphil — Qal: <em>and he went</em>; no הִ/הַ prefix; plain Qal wayyiqtol of הָלַךְ</td>
+  </tr>
+</table>
+</div>
+
+<!-- Distractor D2 -->
+<div class="passage-block">
+<span class="ref">D2. Genesis 21:3</span>
+<p class="hebrew">וַיִּקְרָא אַבְרָהָם אֶת שֶׁם בְּנוֹ אֲשֶׁר <strong>נוֹלַד</strong> לוֹ</p>
+<p class="english">"And Abraham called the name of his son who <strong>was born</strong> to him."</p>
+<table>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Stem / Function</th><th></th></tr>
+  <tr>
+    <td><input class="parse-field" id="vd2-hip" placeholder="Yes / No"></td>
+    <td><input class="parse-field" id="vd2a"></td>
+    <td><input class="parse-field" id="vd2b"></td>
+    <td><input class="parse-field" id="vd2c"></td>
+    <td><input class="parse-field" id="vd2d"></td>
+    <td><input class="parse-field" id="vd2e"></td>
+    <td><button class="reveal-btn" onclick="toggle('ansd2')">&#9654; Answer</button></td>
+  </tr>
+  <tr class="answer-row wrong" id="ansd2">
+    <td class="answer-label">No — Niphal</td><td>Perfect</td><td>3ms</td><td>יָלַד</td><td>I-י</td>
+    <td colspan="2">NOT Hiphil — Niphal passive: <em>was born</em>; נוֹ- prefix = Niphal of I-י root (contrasts with Hiphil הוֹ- prefix)</td>
+  </tr>
+</table>
+</div>
+
+<!-- Distractor D3 -->
+<div class="passage-block">
+<span class="ref">D3. Genesis 2:17</span>
+<p class="hebrew">כִּי בְּיוֹם אֲכָלְךָ מִמֶּנּוּ מוֹת <strong>תָּמוּת</strong></p>
+<p class="english">"for in the day you eat of it you shall surely <strong>die</strong>."</p>
+<table>
+  <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Stem / Function</th><th></th></tr>
+  <tr>
+    <td><input class="parse-field" id="vd3-hip" placeholder="Yes / No"></td>
+    <td><input class="parse-field" id="vd3a"></td>
+    <td><input class="parse-field" id="vd3b"></td>
+    <td><input class="parse-field" id="vd3c"></td>
+    <td><input class="parse-field" id="vd3d"></td>
+    <td><input class="parse-field" id="vd3e"></td>
+    <td><button class="reveal-btn" onclick="toggle('ansd3')">&#9654; Answer</button></td>
+  </tr>
+  <tr class="answer-row wrong" id="ansd3">
+    <td class="answer-label">No — Qal</td><td>Imperfect</td><td>2ms</td><td>מוּת</td><td>Biconsonantal</td>
+    <td colspan="2">NOT Hiphil — Qal: <em>you will die</em>; תָּ- prefix = Qal imperfect 2ms; no הַ- prefix; plain Qal of the common biconsonantal מוּת</td>
   </tr>
 </table>
 </div>

@@ -8,10 +8,12 @@
 
 The flood narrative (Gen 6–8) is one of the most Hiphil-dense passages in the Pentateuch — God brings, establishes, causes rain, and brings out; Noah brings animals and offers up burnt offerings. Two supplementary passages from Genesis 22 and Deuteronomy 7 extend coverage to the infinitive absolute and additional conjugation patterns.
 
-**Every highlighted verb in this exercise is a Hiphil form. For each one:**
+**For each numbered verb, answer: Is it Hiphil? (Yes / No). Then for every verb:**
 
 1. Parse it — give the **conjugation**, **person-gender-number** (use `—` for non-finite forms), and **root**.
-2. State the **semantic function** (Causative / Declarative / Factitive / Simple action).
+2. State the **semantic function** (Causative / Declarative / Factitive / Simple action — or "NOT Hiphil" for distractors).
+
+Distractors (D1–D3) include Niphal and Qal verbs from the same passages. At ch26, students have learned Qal and Niphal — both can appear in Hiphil-dense passages and must be distinguished.
 
 An answer key is at the bottom.
 
@@ -19,13 +21,14 @@ An answer key is at the bottom.
 
 ## Passage A — Genesis 6:12–20
 
-‎**6:12** — וַיַּ֧רְא אֱלֹהִ֛ים אֶת־הָאָ֖רֶץ וְהִנֵּ֣ה נִשְׁחָ֑תָה כִּֽי־**הִשְׁחִ֧ית** כָּל־בָּשָׂ֛ר אֶת־דַּרְכּ֖וֹ עַל־הָאָֽרֶץ
+‎**6:12** — וַיַּ֧רְא אֱלֹהִ֛ים אֶת־הָאָ֖רֶץ וְהִנֵּ֣ה **נִשְׁחָ֑תָה** כִּֽי־**הִשְׁחִ֧ית** כָּל־בָּשָׂ֛ר אֶת־דַּרְכּ֖וֹ עַל־הָאָֽרֶץ
 
-*"And God saw the earth, and behold, it was corrupt; for all flesh had [1] \_\_\_\_ its way upon the earth."*
+*"And God saw the earth, and behold, it [D1] \_\_\_\_; for all flesh had [1] \_\_\_\_ its way upon the earth."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 1 | הִשְׁחִית | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| D1 | נִשְׁחָתָה | | | | | |
+| 1 | הִשְׁחִית | | | | | |
 
 ---
 
@@ -33,9 +36,9 @@ An answer key is at the bottom.
 
 *"Behold, I am [2] \_\_\_\_ them with the earth."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 2 | מַשְׁחִיתָם | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 2 | מַשְׁחִיתָם | | | | | |
 
 ---
 
@@ -43,9 +46,9 @@ An answer key is at the bottom.
 
 *"As for me, behold, I am [3] \_\_\_\_ the flood of waters upon the earth."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 3 | מֵבִיא | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 3 | מֵבִיא | | | | | |
 
 ---
 
@@ -53,9 +56,9 @@ An answer key is at the bottom.
 
 *"But I will [4] \_\_\_\_ my covenant with you."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 4 | וַהֲקִמֹתִי | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 4 | וַהֲקִמֹתִי | | | | | |
 
 ---
 
@@ -63,9 +66,9 @@ An answer key is at the bottom.
 
 *"Of every living thing of all flesh, you shall [5] \_\_\_\_ two of every kind into the ark."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 5 | תָּבִיא | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 5 | תָּבִיא | | | | | |
 
 ---
 
@@ -73,10 +76,10 @@ An answer key is at the bottom.
 
 *"to [6] \_\_\_\_ them alive with you … to [7] \_\_\_\_ them"*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 6 | לְהַחֲיֹת | | | | |
-| 7 | לְהַחֲיוֹת | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 6 | לְהַחֲיֹת | | | | | |
+| 7 | לְהַחֲיוֹת | | | | | |
 
 ---
 
@@ -86,9 +89,9 @@ An answer key is at the bottom.
 
 *"For in seven days I will [8] \_\_\_\_ rain on the earth forty days."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 8 | מַמְטִיר | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 8 | מַמְטִיר | | | | | |
 
 ---
 
@@ -98,9 +101,9 @@ An answer key is at the bottom.
 
 *"And God [9] \_\_\_\_ a wind over the earth."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 9 | וַיַּעֲבֵר | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 9 | וַיַּעֲבֵר | | | | | |
 
 ---
 
@@ -108,9 +111,9 @@ An answer key is at the bottom.
 
 *"And he [10] \_\_\_\_ her back to him into the ark."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 10 | וַיָּבֵא | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 10 | וַיָּבֵא | | | | | |
 
 ---
 
@@ -118,9 +121,9 @@ An answer key is at the bottom.
 
 *"And Noah [11] \_\_\_\_ the covering of the ark."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 11 | וַיָּסַר | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 11 | וַיָּסַר | | | | | |
 
 ---
 
@@ -128,9 +131,9 @@ An answer key is at the bottom.
 
 *"[12] \_\_\_\_ with you every living thing."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 12 | הַיְצֵא | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 12 | הַיְצֵא | | | | | |
 
 ---
 
@@ -138,9 +141,9 @@ An answer key is at the bottom.
 
 *"And he [13] \_\_\_\_ burnt offerings on the altar."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 13 | וַיַּעַל | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 13 | וַיַּעַל | | | | | |
 
 ---
 
@@ -148,9 +151,9 @@ An answer key is at the bottom.
 
 *"I will never again [14] \_\_\_\_ every living thing."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 14 | לְהַכֹּת | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 14 | לְהַכֹּת | | | | | |
 
 ---
 
@@ -162,26 +165,26 @@ An answer key is at the bottom.
 
 > **Watch out:** בָּרֵךְ and אֲבָרֶכְךָ are Piel forms of בָּרַךְ ("to bless") — not Hiphil. Parse only the two bolded verbs.
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 15 | וְהַרְבָּה | | | | |
-| 16 | אַרְבֶּה | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 15 | וְהַרְבָּה | | | | | |
+| 16 | אַרְבֶּה | | | | | |
 
 ---
 
 ## Passage E — Deuteronomy 7:2 (Weqatal + Emphatic Pair)
 
-‎**7:2** — וּנְתָנָ֞ם יְהוָ֤ה אֱלֹהֶ֙יךָ֙ לְפָנֶ֔יךָ **וְהִכִּיתָ֖ם** **הַכֵּ֣ה** **תַכֶּ֑ה** לֹא־תִכְרֹ֥ת לָהֶ֛ם בְּרִ֖ית
+‎**7:2** — **וּנְתָנָ֞ם** יְהוָ֤ה אֱלֹהֶ֙יךָ֙ לְפָנֶ֔יךָ **וְהִכִּיתָ֖ם** **הַכֵּ֣ה** **תַכֶּ֑ה** לֹא־**תִכְרֹ֥ת** לָהֶ֛ם בְּרִ֖ית
 
-*"When the LORD your God gives them over to you, you shall [17] \_\_\_\_ them — [18] \_\_\_\_ [19] \_\_\_\_ them — you shall make no covenant with them."*
+*"When the LORD your God [D2] \_\_\_\_ them over to you, you shall [17] \_\_\_\_ them — [18] \_\_\_\_ [19] \_\_\_\_ them — you shall [D3] \_\_\_\_ no covenant with them."*
 
-> **Watch out:** וּנְתָנָם is Qal perfect of נָתַן; תִכְרֹת is Qal imperfect of כָּרַת. Parse only the three bolded verbs.
-
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 17 | וְהִכִּיתָם | | | | |
-| 18 | הַכֵּה | | | | |
-| 19 | תַכֶּה | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| D2 | וּנְתָנָם | | | | | |
+| 17 | וְהִכִּיתָם | | | | | |
+| 18 | הַכֵּה | | | | | |
+| 19 | תַכֶּה | | | | | |
+| D3 | תִכְרֹת | | | | | |
 
 ---
 
@@ -195,44 +198,48 @@ An answer key is at the bottom.
 
 *"And Noah fathered three sons."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| B1 | הֵחֵל | | | | |
-| B2 | וַיּוֹלֶד | | | | |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| B1 | הֵחֵל | | | | | |
+| B2 | וַיּוֹלֶד | | | | | |
 
 ---
 
 ## Answer Key
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 1 | הִשְׁחִית | Perfect (qatal) | 3ms | שָׁחַת | Causative — *had corrupted* |
-| 2 | מַשְׁחִיתָם | Participle + 3mp suffix | ms | שָׁחַת | Causative — *destroying them* |
-| 3 | מֵבִיא | Participle | ms | בּוֹא | Causative — *bringing* |
-| 4 | וַהֲקִמֹתִי | Weqatal | 1cs | קוּם | Factitive — *I will establish* |
-| 5 | תָּבִיא | Imperfect | 2ms | בּוֹא | Causative — *you shall bring* |
-| 6 | לְהַחֲיֹת | Inf. Construct | — | חָיָה | Causative — *to keep alive* |
-| 7 | לְהַחֲיוֹת | Inf. Construct | — | חָיָה | Causative — *to keep alive* |
-| 8 | מַמְטִיר | Participle | ms | מָטַר | Causative/Denominative — *causing rain to fall* |
-| 9 | וַיַּעֲבֵר | Wayyiqtol | 3ms | עָבַר | Causative — *caused to pass over* |
-| 10 | וַיָּבֵא | Wayyiqtol | 3ms | בּוֹא | Causative — *brought* |
-| 11 | וַיָּסַר | Wayyiqtol | 3ms | סוּר | Causative — *removed* |
-| 12 | הַיְצֵא | Imperative | 2ms | יָצָא | Causative — *bring out!* |
-| 13 | וַיַּעַל | Wayyiqtol | 3ms | עָלָה | Causative — *offered up* |
-| 14 | לְהַכֹּת | Inf. Construct | — | נָכָה | Causative — *to strike down* |
-| 15 | וְהַרְבָּה | Inf. Absolute | — | רָבָה | Causative — emphatic modifier (*multiplying* / *surely*) |
-| 16 | אַרְבֶּה | Imperfect | 1cs | רָבָה | Causative — *I will multiply* |
-| 17 | וְהִכִּיתָם | Weqatal | 2ms | נָכָה | Causative — *and you shall strike them* |
-| 18 | הַכֵּה | Inf. Absolute | — | נָכָה | Causative — emphatic modifier (*striking* / *certainly*) |
-| 19 | תַכֶּה | Imperfect | 2ms | נָכָה | Causative — *you shall strike* |
-| B1 | הֵחֵל | Perfect (qatal) | 3ms | חָלַל | Causative — *began* (Hiphil of חָלַל = "to begin"; idiomatic use) |
-| B2 | וַיּוֹלֶד | Wayyiqtol | 3ms | יָלַד | Causative — *fathered / begat* |
+| # | Verb | Hiphil? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| D1 | נִשְׁחָתָה | No | Weqatal | 3fs | שָׁחַת | No (Niphal) — *was corrupt*; Niphal weqatal passive; נ assimilates: וְהִנֵּה נִשְׁחָתָה |
+| 1 | הִשְׁחִית | Yes | Perfect (qatal) | 3ms | שָׁחַת | Causative — *had corrupted* |
+| 2 | מַשְׁחִיתָם | Yes | Participle + 3mp suffix | ms | שָׁחַת | Causative — *destroying them* |
+| 3 | מֵבִיא | Yes | Participle | ms | בּוֹא | Causative — *bringing* |
+| 4 | וַהֲקִמֹתִי | Yes | Weqatal | 1cs | קוּם | Factitive — *I will establish* |
+| 5 | תָּבִיא | Yes | Imperfect | 2ms | בּוֹא | Causative — *you shall bring* |
+| 6 | לְהַחֲיֹת | Yes | Inf. Construct | — | חָיָה | Causative — *to keep alive* |
+| 7 | לְהַחֲיוֹת | Yes | Inf. Construct | — | חָיָה | Causative — *to keep alive* |
+| 8 | מַמְטִיר | Yes | Participle | ms | מָטַר | Causative/Denominative — *causing rain to fall* |
+| 9 | וַיַּעֲבֵר | Yes | Wayyiqtol | 3ms | עָבַר | Causative — *caused to pass over* |
+| 10 | וַיָּבֵא | Yes | Wayyiqtol | 3ms | בּוֹא | Causative — *brought* |
+| 11 | וַיָּסַר | Yes | Wayyiqtol | 3ms | סוּר | Causative — *removed* |
+| 12 | הַיְצֵא | Yes | Imperative | 2ms | יָצָא | Causative — *bring out!* |
+| 13 | וַיַּעַל | Yes | Wayyiqtol | 3ms | עָלָה | Causative — *offered up* |
+| 14 | לְהַכֹּת | Yes | Inf. Construct | — | נָכָה | Causative — *to strike down* |
+| 15 | וְהַרְבָּה | Yes | Inf. Absolute | — | רָבָה | Causative — emphatic modifier (*multiplying* / *surely*) |
+| 16 | אַרְבֶּה | Yes | Imperfect | 1cs | רָבָה | Causative — *I will multiply* |
+| D2 | וּנְתָנָם | No | Perfect + 3mp suffix | 3ms | נָתַן | No (Qal) — *gives them over*; Qal perfect of נָתַן with object suffix |
+| 17 | וְהִכִּיתָם | Yes | Weqatal | 2ms | נָכָה | Causative — *and you shall strike them* |
+| 18 | הַכֵּה | Yes | Inf. Absolute | — | נָכָה | Causative — emphatic modifier (*striking* / *certainly*) |
+| 19 | תַכֶּה | Yes | Imperfect | 2ms | נָכָה | Causative — *you shall strike* |
+| D3 | תִכְרֹת | No | Imperfect | 2ms | כָּרַת | No (Qal) — *you shall make* (covenant); plain Qal imperfect; no הִ prefix |
+| B1 | הֵחֵל | Yes | Perfect (qatal) | 3ms | חָלַל | Causative — *began* (Hiphil of חָלַל = "to begin"; idiomatic use) |
+| B2 | וַיּוֹלֶד | Yes | Wayyiqtol | 3ms | יָלַד | Causative — *fathered / begat* |
 
-> **Notes on two answer-key corrections from earlier versions:**
-> - #1 הִשְׁחִית and B1 הֵחֵל are both **Perfect (qatal)**, not Weqatal. Both follow כִּי with no waw prefix. Weqatal requires a waw-consecutive prefix; #4 וַהֲקִמֹתִי is the only true weqatal in Passage A–C (the patah under the waw there results from the following guttural הֲ, not from wayyiqtol morphology).
-> - #15–#16 and #18–#19 illustrate the **emphatic inf. absolute + imperfect** construction: the inf. absolute precedes the finite verb to intensify the action ("you shall *certainly* / *surely* strike them").
+> **Notes:**
+> - #1 הִשְׁחִית and B1 הֵחֵל are both **Perfect (qatal)**, not Weqatal. Both follow כִּי with no waw prefix.
+> - D1 נִשְׁחָתָה is Niphal (passive); #1 הִשְׁחִית is Hiphil (active causative) — same root שָׁחַת, different stems in the same verse.
+> - #15–#16 and #18–#19 illustrate the **emphatic inf. absolute + imperfect** construction.
 
-> **Score:** 19 main + 2 bonus = 21 total. 18–21 = excellent; 13–17 = review the paradigm; below 13 = revisit §26.3–26.13 before the next class.
+> **Score:** 19 main + 2 bonus = 21 total (distractors D1–D3 unscored). 18–21 = excellent; 13–17 = review the paradigm; below 13 = revisit §26.3–26.13 before the next class.
 
 ---
 

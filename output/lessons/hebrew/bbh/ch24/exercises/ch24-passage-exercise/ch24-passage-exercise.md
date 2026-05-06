@@ -8,10 +8,12 @@
 
 The passages below are drawn from the Joseph story (Genesis 37–50), one of the richest concentrations of Niphal verbs in the Torah. The narrative includes passive birth and sale notices, reflexive oath-swearing, and simple-action verbs with no Qal counterpart.
 
-**Every highlighted verb is a Niphal form. For each one:**
+**For each numbered verb, answer: Is it Niphal? (Yes / No). Then for every verb:**
 
 1. Parse it — give **conjugation**, **person-gender-number**, and **root**.
-2. State the **semantic function** (Passive / Reflexive / Simple action).
+2. State the **semantic function** (Passive / Reflexive / Simple action — or "NOT Niphal" for distractors).
+
+Distractors (D1–D3) are Qal verbs drawn from the same passages. Students learning to spot the Niphal must learn to distinguish it from the Qal active forms alongside it.
 
 An answer key is at the bottom.
 
@@ -19,23 +21,25 @@ An answer key is at the bottom.
 
 ## Passage A — Genesis 37:7, 36
 
-‎**37:7** — וְהִנֵּה קָ֣מָה אֲלֻמָּתִ֗י וְגַם **נִצָּ֑בָה**
+‎**37:7** — וְהִנֵּה **קָ֣מָה** אֲלֻמָּתִ֗י וְגַם **נִצָּ֑בָה**
 
-*"and behold, my sheaf arose and [1] \_\_\_\_."*
+*"and behold, my sheaf [D1] \_\_\_\_ and [1] \_\_\_\_."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 1 | נִצָּבָה | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| D1 | קָמָה | | | | | |
+| 1 | נִצָּבָה | | | | | |
 
 ---
 
-‎**37:36** — וְהַ֨מְּדָנִ֔ים **מָכְר֥וּ** אֹת֖וֹ … וַיִּמָּכֵ֤ר יוֹסֵף֙ אֶל־מִצְרָ֔יִם
+‎**37:36** — וְהַ֨מְּדָנִ֔ים **מָכְר֥וּ** אֹת֖וֹ … **וַיִּמָּכֵ֤ר** יוֹסֵף֙ אֶל־מִצְרָ֔יִם
 
-*"Now the Midianites had sold him … and Joseph [2] \_\_\_\_ into Egypt."*
+*"Now the Midianites [D2] \_\_\_\_ him … and Joseph [2] \_\_\_\_ into Egypt."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 2 | וַיִּמָּכֵר | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| D2 | מָכְרוּ | | | | | |
+| 2 | וַיִּמָּכֵר | | | | | |
 
 ---
 
@@ -45,9 +49,9 @@ An answer key is at the bottom.
 
 *"With whichever of your servants [3] \_\_\_\_ shall die."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 3 | יִמָּצֵא | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 3 | יִמָּצֵא | | | | | |
 
 ---
 
@@ -55,9 +59,9 @@ An answer key is at the bottom.
 
 *"And the cup [4] \_\_\_\_ in Benjamin's sack."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 4 | וַיִּמָּצֵא | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 4 | וַיִּמָּצֵא | | | | | |
 
 ---
 
@@ -69,21 +73,22 @@ An answer key is at the bottom.
 
 *"We have an aged father and a young child of his old age … and he alone [5] \_\_\_\_."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 5 | וַיִּוָּתֵר | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 5 | וַיִּוָּתֵר | | | | | |
 
 ---
 
 ## Passage C — Genesis 45:1, 16
 
-‎**45:1** — וְלֹא־יָכֹל֩ יוֹסֵ֨ף לְהִתְאַפֵּ֜ק לְכֹ֣ל הַ**נִּצָּבִ֣ים** עָלָ֗יו
+‎**45:1** — וְלֹא־**יָכֹל֩** יוֹסֵ֨ף לְהִתְאַפֵּ֜ק לְכֹ֣ל הַ**נִּצָּבִ֣ים** עָלָ֗יו
 
-*"Joseph could no longer control himself before all those [6] \_\_\_\_ near him."*
+*"Joseph [D3] \_\_\_\_ no longer control himself before all those [6] \_\_\_\_ near him."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 6 | הַנִּצָּבִים | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| D3 | יָכֹל | | | | | |
+| 6 | הַנִּצָּבִים | | | | | |
 
 ---
 
@@ -91,9 +96,9 @@ An answer key is at the bottom.
 
 *"And the report [7] \_\_\_\_ in Pharaoh's household, 'Joseph's brothers have come.'"*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 7 | נִשְׁמַע | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 7 | נִשְׁמַע | | | | | |
 
 ---
 
@@ -103,9 +108,9 @@ An answer key is at the bottom.
 
 *"And Joseph collected all the silver [8] \_\_\_\_ in the land of Egypt."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 8 | הַנִּמְצָא | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 8 | הַנִּמְצָא | | | | | |
 
 ---
 
@@ -113,10 +118,10 @@ An answer key is at the bottom.
 
 *"[9] \_\_\_\_ to me." And he [10] \_\_\_\_ to him."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 9 | הִשָּׁבְעָה | | | | |
-| 10 | וַיִּשָּׁבַע | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 9 | הִשָּׁבְעָה | | | | | |
+| 10 | וַיִּשָּׁבַע | | | | | |
 
 ---
 
@@ -126,9 +131,9 @@ An answer key is at the bottom.
 
 *"[11] \_\_\_\_ and I will tell you."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 11 | הֵאָסְפוּ | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 11 | הֵאָסְפוּ | | | | | |
 
 ---
 
@@ -136,9 +141,9 @@ An answer key is at the bottom.
 
 *"I am [12] \_\_\_\_ to my people."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 12 | נֶאֱסָף | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 12 | נֶאֱסָף | | | | | |
 
 ---
 
@@ -146,9 +151,9 @@ An answer key is at the bottom.
 
 *"and he was [13] \_\_\_\_ to his people."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 13 | וַיֵּאָסֶף | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 13 | וַיֵּאָסֶף | | | | | |
 
 ---
 
@@ -158,34 +163,37 @@ An answer key is at the bottom.
 
 *"And you shall take heed … Take heed for yourselves."*
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| B1 | וְהִשָּׁמַרְתֶּם | | | | |
-| B2 | הִשָּׁמְרוּ | | | | |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| B1 | וְהִשָּׁמַרְתֶּם | | | | | |
+| B2 | הִשָּׁמְרוּ | | | | | |
 
 ---
 
 ## Answer Key
 
-| # | Verb | Conjugation | PGN | Root | Function |
-|---|---|---|---|---|---|
-| 1 | נִצָּבָה | Perfect | 3fs | נָצַב | Reflexive — *it stood upright* (the sheaf stationed itself) |
-| 2 | וַיִּמָּכֵר | Wayyiqtol | 3ms | מָכַר | Passive — *he was sold* |
-| 3 | יִמָּצֵא | Imperfect | 3ms | מָצָא | Passive — *is found* |
-| 4 | וַיִּמָּצֵא | Wayyiqtol | 3ms | מָצָא | Passive — *was found* |
-| 5 | וַיִּוָּתֵר | Wayyiqtol | 3ms | יָתַר | Passive/Middle — *was left, remained* |
-| 6 | הַנִּצָּבִים | Participle | mp | נָצַב | Reflexive — *those standing* (having stationed themselves) |
-| 7 | נִשְׁמַע | Perfect | 3ms | שָׁמַע | Passive — *was heard* |
-| 8 | הַנִּמְצָא | Participle | ms | מָצָא | Passive — *that was found / which was found* |
-| 9 | הִשָּׁבְעָה | Imperative | 2ms | שָׁבַע | Reflexive — *swear!* (bind yourself by oath) |
-| 10 | וַיִּשָּׁבַע | Wayyiqtol | 3ms | שָׁבַע | Reflexive — *he swore* (bound himself by oath) |
-| 11 | הֵאָסְפוּ | Imperative | 2mp | אָסַף | Passive — *gather yourselves!* |
-| 12 | נֶאֱסָף | Participle | ms | אָסַף | Passive — *am about to be gathered* (gathered to one's fathers = die) |
-| 13 | וַיֵּאָסֶף | Wayyiqtol | 3ms | אָסַף | Passive — *was gathered* (died and joined his ancestors) |
-| B1 | וְהִשָּׁמַרְתֶּם | Weqatal | 2mp | שָׁמַר | Reflexive — *take heed for yourselves* |
-| B2 | הִשָּׁמְרוּ | Imperative | 2mp | שָׁמַר | Reflexive — *take heed!* (guard yourselves) |
+| # | Verb | Niphal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| D1 | קָמָה | No | Perfect | 3fs | קוּם | No (Qal) — *arose*; biconsonantal Qal perfect 3fs; no נ prefix or dagesh forte |
+| 1 | נִצָּבָה | Yes | Perfect | 3fs | נָצַב | Reflexive — *it stood upright* (the sheaf stationed itself) |
+| D2 | מָכְרוּ | No | Perfect | 3cp | מָכַר | No (Qal) — *had sold*; active Qal; contrast with #2 Niphal passive of the same root |
+| 2 | וַיִּמָּכֵר | Yes | Wayyiqtol | 3ms | מָכַר | Passive — *he was sold* |
+| 3 | יִמָּצֵא | Yes | Imperfect | 3ms | מָצָא | Passive — *is found* |
+| 4 | וַיִּמָּצֵא | Yes | Wayyiqtol | 3ms | מָצָא | Passive — *was found* |
+| 5 | וַיִּוָּתֵר | Yes | Wayyiqtol | 3ms | יָתַר | Passive/Middle — *was left, remained* |
+| D3 | יָכֹל | No | Perfect | 3ms | יָכֹל | No (Qal) — *was able / could*; Qal stative with no Niphal counterpart |
+| 6 | הַנִּצָּבִים | Yes | Participle | mp | נָצַב | Reflexive — *those standing* (having stationed themselves) |
+| 7 | נִשְׁמַע | Yes | Perfect | 3ms | שָׁמַע | Passive — *was heard* |
+| 8 | הַנִּמְצָא | Yes | Participle | ms | מָצָא | Passive — *that was found / which was found* |
+| 9 | הִשָּׁבְעָה | Yes | Imperative | 2ms | שָׁבַע | Reflexive — *swear!* (bind yourself by oath) |
+| 10 | וַיִּשָּׁבַע | Yes | Wayyiqtol | 3ms | שָׁבַע | Reflexive — *he swore* (bound himself by oath) |
+| 11 | הֵאָסְפוּ | Yes | Imperative | 2mp | אָסַף | Passive — *gather yourselves!* |
+| 12 | נֶאֱסָף | Yes | Participle | ms | אָסַף | Passive — *am about to be gathered* (gathered to one's fathers = die) |
+| 13 | וַיֵּאָסֶף | Yes | Wayyiqtol | 3ms | אָסַף | Passive — *was gathered* (died and joined his ancestors) |
+| B1 | וְהִשָּׁמַרְתֶּם | Yes | Weqatal | 2mp | שָׁמַר | Reflexive — *take heed for yourselves* |
+| B2 | הִשָּׁמְרוּ | Yes | Imperative | 2mp | שָׁמַר | Reflexive — *take heed!* (guard yourselves) |
 
-> **Score:** 13 main + 2 bonus = 15 total. 13–15 = excellent; 9–12 = review the paradigm; below 9 = revisit §24.3–24.13 before the next class.
+> **Score:** 13 main + 2 bonus = 15 total (distractors D1–D3 are unscored practice). 13–15 = excellent; 9–12 = review the paradigm; below 9 = revisit §24.3–24.13 before the next class.
 
 ---
 

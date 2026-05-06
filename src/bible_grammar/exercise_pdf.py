@@ -1145,8 +1145,11 @@ class PassageExercise(ExercisePDF):
 # ---------------------------------------------------------------------------
 class Ch26Exercise(PassageExercise):
     _instructions = (
-        'Every highlighted verb is a Hiphil form. For each one, fill in the Conjugation, '
-        'PGN, Root, and Function fields. The answer key begins on the page marked "Answer Key".'
+        'Most highlighted verbs are Hiphil forms. For each one, first answer '
+        'Is it Hiphil? (Yes / No). If Yes: fill in Conjugation, PGN, Root, and Function. '
+        'If No: identify the correct stem and parse fully. '
+        'Distractor verbs D1–D3 are not Hiphil — drawn from Qal and Niphal already studied. '
+        'The answer key begins on the page marked "Answer Key".'
     )
 
     def _render_passages(self, show_answers: bool):
@@ -1158,8 +1161,11 @@ class Ch26Exercise(PassageExercise):
         self.add_passage(PassageBlock(
             '6:12',
             'וַיַּרְא אֱלֹהִים אֶת־הָאָרֶץ וְהִנֵּה נִשְׁחָתָה כִּי־הִשְׁחִית כָּל־בָּשָׂר אֶת־דַּרְכּוֹ עַל־הָאָרֶץ',
-            '"And God saw the earth, and behold, it was corrupt; for all flesh had [1] ____ its way upon the earth."'))
-        self.add_verb_table([VerbEntry('1', 'הִשְׁחִית', 'Perfect (qatal)', '3ms', 'שָׁחַת', 'Causative — had corrupted')], show_answers=show_answers)
+            '"And God saw the earth, and behold, it [D1] ____; for all flesh had [1] ____ its way upon the earth."'))
+        self.add_verb_table([
+            VerbEntry('D1', 'נִשְׁחָתָה', 'Weqatal', '3fs', 'שָׁחַת', 'NOT Hiphil — Niphal passive: it was corrupt; נִ- prefix = Niphal, not הִ- Hiphil'),
+            VerbEntry('1', 'הִשְׁחִית', 'Perfect (qatal)', '3ms', 'שָׁחַת', 'Causative — had corrupted'),
+        ], show_answers=show_answers)
 
         self.add_passage(PassageBlock(
             '6:13',
@@ -1257,12 +1263,13 @@ class Ch26Exercise(PassageExercise):
         self.add_passage(PassageBlock(
             '7:2',
             'וּנְתָנָם יְהוָה אֱלֹהֶיךָ לְפָנֶיךָ וְהִכִּיתָם הַכֵּה תַכֶּה לֹא־תִכְרֹת לָהֶם בְּרִית',
-            '"When the LORD your God gives them over, you shall [17] ____ them — [18] ____ [19] ____ them — make no covenant with them."',
-            watchout='Watch out: וּנְתָנָם is Qal perfect of נָתַן; תִכְרֹת is Qal imperfect of כָּרַת. Parse only verbs 17–19.'))
+            '"When the LORD your God [D2] ____ them over, you shall [17] ____ them — [18] ____ [19] ____ them — [D3] ____ no covenant with them."'))
         self.add_verb_table([
-            VerbEntry('17', 'וְהִכִּיתָם', 'Weqatal',     '2ms', 'נָכָה', 'Causative — and you shall strike them'),
-            VerbEntry('18', 'הַכֵּה',    'Inf. Absolute', '—',  'נָכָה', 'Causative — emphatic modifier (certainly)'),
-            VerbEntry('19', 'תַכֶּה',    'Imperfect',   '2ms', 'נָכָה', 'Causative — you shall strike'),
+            VerbEntry('D2', 'וּנְתָנָם', 'Weqatal',      '3ms', 'נָתַן', 'NOT Hiphil — Qal: and he gives/gives over; וּ + Qal perfect/weqatal; no הִ- prefix'),
+            VerbEntry('17', 'וְהִכִּיתָם', 'Weqatal',    '2ms', 'נָכָה', 'Causative — and you shall strike them'),
+            VerbEntry('18', 'הַכֵּה',    'Inf. Absolute', '—', 'נָכָה', 'Causative — emphatic modifier (certainly)'),
+            VerbEntry('19', 'תַכֶּה',    'Imperfect',    '2ms', 'נָכָה', 'Causative — you shall strike'),
+            VerbEntry('D3', 'תִכְרֹת',  'Imperfect',    '2ms', 'כָּרַת', 'NOT Hiphil — Qal: you shall cut (covenant); plain Qal imperfect; no הַ- Hiphil prefix'),
         ], show_answers=show_answers)
 
         self.add_section_break()
@@ -1283,7 +1290,8 @@ class Ch26Exercise(PassageExercise):
         self.add_note(
             'Note: #1 (הִשְׁחִית) and B1 (הֵחֵל) are Perfect (qatal), not Weqatal — both follow כִּי '
             'with no waw prefix. #15–16 and #18–19 illustrate the emphatic inf. absolute + imperfect '
-            'construction: the inf. absolute intensifies the finite verb ("shall certainly strike").'
+            'construction: the inf. absolute intensifies the finite verb ("shall certainly strike"). '
+            'D1 (נִשְׁחָתָה) is Niphal of the same root as #1 — compare: Niphal נִ- vs. Hiphil הִ-.'
         )
         self.add_score(
             'Score: 19 main + 2 bonus = 21 total.  '
@@ -1301,6 +1309,7 @@ class Ch26Exercise(PassageExercise):
             ('Weqatal (2)',        '#4, #17'),
             ('Inf. Absolute (2)',  '#15, #18'),
             ('Imperative (1)',     '#12'),
+            ('Distractors (3)',    'D1 (Niphal Weqatal 3fs), D2 (Qal Weqatal 3ms), D3 (Qal Imperfect 2ms)'),
         ])
 
         # ── Reflection (only on question pages, not repeated in key) ──────────
@@ -1488,9 +1497,11 @@ def build_ch26_exercise(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 class Ch25Exercise(PassageExercise):
     _instructions = (
-        'Every highlighted verb is a Niphal form. For each one: '
-        '(1) parse conjugation, PGN, and root; '
-        '(2) state the semantic function (Passive / Reflexive / Middle / Simple Action). '
+        'Most highlighted verbs are Niphal forms. For each one, first answer '
+        'Is it Niphal? (Yes / No). If Yes: parse conjugation, PGN, and root, '
+        'then state the semantic function (Passive / Reflexive / Middle / Simple Action). '
+        'If No: identify the correct stem and parse fully. '
+        'Part C contains distractor verbs — not Niphal. '
         'Answer key begins on the page marked "Answer Key".'
     )
 
@@ -1586,6 +1597,30 @@ class Ch25Exercise(PassageExercise):
 
         self.add_section_break()
 
+        # ── Part C — Distractors ───────────────────────────────────────────────
+        self.add_section_heading('Part C — Distractor Check')
+        self.add_note(
+            'These three verbs come from the same passages. None are Niphal. '
+            'Answer "No" for Niphal? and complete the full parse.'
+        )
+
+        self.add_passage(PassageBlock('3:6',
+            'וַתֵּרֶא הָאִשָּׁה כִּי טוֹב הָעֵץ לְמַאֲכָל',
+            '"So when the woman [D1] ____ that the tree was good for food."'))
+        self.add_verb_table([VerbEntry('D1', 'וַתֵּרֶא', 'Wayyiqtol', '3fs', 'רָאָה', 'NOT Niphal — Qal: and she saw; III-ה Qal wayyiqtol; no נ-/תִ- Niphal marker')], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('6:6',
+            'כִּי עָשָׂה אֶת־הָאָדָם בָּאָרֶץ',
+            '"that he [D2] ____ mankind on the earth."'))
+        self.add_verb_table([VerbEntry('D2', 'עָשָׂה', 'Perfect', '3ms', 'עָשָׂה', 'NOT Niphal — Qal: he made/did; III-ה Qal perfect; contrast Niphal וַיִּנָּחֶם earlier in the verse')], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('21:8',
+            'וַיִּגְדַּל הַיֶּלֶד',
+            '"And [D3] ____ the child."'))
+        self.add_verb_table([VerbEntry('D3', 'וַיִּגְדַּל', 'Wayyiqtol', '3ms', 'גָּדַל', 'NOT Niphal — Qal: and he grew; plain Qal wayyiqtol; contrast Niphal וַיִּגָּמַל in same verse')], show_answers=show_answers)
+
+        self.add_section_break()
+
         self.add_note(
             'Items 5–6 (וַיִּנָּחֶם / נִחַמְתִּי) are both from נָחַם, a verb that occurs almost exclusively '
             'in the Niphal. Items 11–13 all parse as Reflexive from שָׁבַע — '
@@ -1603,6 +1638,7 @@ class Ch25Exercise(PassageExercise):
             ('Imperfect (2)', '#10, #12'),
             ('Participle (1)', '#2'),
             ('Imperative (1)', '#11'),
+            ('Distractors (3)', 'D1 (Qal Wayyiqtol 3fs), D2 (Qal Perfect 3ms), D3 (Qal Wayyiqtol 3ms)'),
         ])
 
         if not show_answers:
@@ -1636,9 +1672,11 @@ def build_ch25_exercise(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 class Ch24Exercise(PassageExercise):
     _instructions = (
-        'Every highlighted verb is a Niphal form. For each one: '
-        '(1) parse conjugation, PGN, and root; '
-        '(2) state the semantic function (Passive / Reflexive / Simple Action). '
+        'Most highlighted verbs are Niphal forms. For each one, first answer '
+        'Is it Niphal? (Yes / No). If Yes: parse conjugation, PGN, and root, '
+        'then state the semantic function (Passive / Reflexive / Simple Action). '
+        'If No: identify the correct stem and parse fully. '
+        'Part C contains distractor verbs — not Niphal. '
         'Answer key begins on the page marked "Answer Key".'
     )
 
@@ -1745,6 +1783,30 @@ class Ch24Exercise(PassageExercise):
 
         self.add_section_break()
 
+        # ── Part C — Distractors ───────────────────────────────────────────────
+        self.add_section_heading('Part C — Distractor Check')
+        self.add_note(
+            'These three verbs come from the same passages. None are Niphal. '
+            'Answer "No" for Niphal? and complete the full parse.'
+        )
+
+        self.add_passage(PassageBlock('37:7',
+            'וְהִנֵּה קָמָה אֲלֻמָּתִי',
+            '"and behold, my sheaf [D1] ____."'))
+        self.add_verb_table([VerbEntry('D1', 'קָמָה', 'Perfect', '3fs', 'קוּם', 'NOT Niphal — Qal: she/it arose (no נ- prefix; plain Qal of hollow verb)')], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('37:36',
+            'וְהַמְּדָנִים מָכְרוּ אֹתוֹ',
+            '"Now the Midianites [D2] ____ him."'))
+        self.add_verb_table([VerbEntry('D2', 'מָכְרוּ', 'Perfect', '3cp', 'מָכַר', 'NOT Niphal — Qal: they sold; no נִ- prefix; contrast with Niphal וַיִּמָּכֵר in same verse')], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('45:1',
+            'וְלֹא־יָכֹל יוֹסֵף לְהִתְאַפֵּק',
+            '"Joseph [D3] ____ no longer control himself."'))
+        self.add_verb_table([VerbEntry('D3', 'יָכֹל', 'Perfect', '3ms', 'יָכֹל', 'NOT Niphal — Qal: he was able; Qal-only verb; לֹא יָכֹל = could not')], show_answers=show_answers)
+
+        self.add_section_break()
+
         self.add_note(
             'Items 12–13 (נֶאֱסָף / וַיֵּאָסֶף) are both from אָסַף — the euphemism "gathered to '
             'one\'s people" means death. Items 9–10 both parse as Reflexive from שָׁבַע — '
@@ -1763,6 +1825,7 @@ class Ch24Exercise(PassageExercise):
             ('Perfect (2)',    '#1, #7'),
             ('Imperative (3)', '#9, #11, B2'),
             ('Weqatal (1)',    'B1'),
+            ('Distractors (3)', 'D1 (Qal Perf 3fs), D2 (Qal Perf 3cp), D3 (Qal Perf 3ms)'),
         ])
 
         if not show_answers:
@@ -2173,12 +2236,36 @@ class Ch27Exercise(ExercisePDF):
             '"from now on [18] ____ new things"'))
         self.add_verb_table([VerbEntry('18', 'אַשְׁמִיעֲכֶם', 'Imperfect', '1cs + 2mp', 'שָׁמַע', 'III-ח/ע — I announce to you')], show_answers=show_answers)
 
+        self.add_section_break()
+        self.add_section_heading('Part C — Distractor Check')
+        self.add_note(
+            'These three verbs are drawn from the same corpus. None are Hiphil. '
+            'Answer "No" for Hiphil? and complete the full parse.'
+        )
+
+        self.add_passage(PassageBlock('Gen 22:3',
+            'וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר וַיֵּלֶךְ אֶל הַמָּקוֹם',
+            '"And Abraham rose early in the morning and [D1] ____ to the place."'))
+        self.add_verb_table([VerbEntry('D1', 'וַיֵּלֶךְ', 'Wayyiqtol', '3ms', 'הָלַךְ', 'NOT Hiphil — Qal: and he went; no הִ/הַ prefix; plain Qal of הָלַךְ')], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 21:3',
+            'וַיִּקְרָא אַבְרָהָם אֶת שֶׁם בְּנוֹ אֲשֶׁר נוֹלַד לוֹ',
+            '"And Abraham called the name of his son who [D2] ____ to him."'))
+        self.add_verb_table([VerbEntry('D2', 'נוֹלַד', 'Perfect', '3ms', 'יָלַד', 'NOT Hiphil — Niphal passive: was born; נוֹ- prefix = Niphal of I-י root')], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 2:17',
+            'כִּי בְּיוֹם אֲכָלְךָ מִמֶּנּוּ מוֹת תָּמוּת',
+            '"for in the day you eat of it you shall surely [D3] ____."'))
+        self.add_verb_table([VerbEntry('D3', 'תָּמוּת', 'Imperfect', '2ms', 'מוּת', 'NOT Hiphil — Qal: you will die; תָּ- prefix = Qal imperfect 2ms; no הַ- Hiphil prefix')], show_answers=show_answers)
+
     def _build(self):
         self.add_instructions(
-            'Every highlighted verb is a Hiphil form. For each: (1) parse — conjugation, '
-            'person-gender-number, root; (2) state the weak class '
+            'Most highlighted verbs are Hiphil forms. For each: (1) Is it Hiphil? (Yes / No); '
+            '(2) parse — conjugation, person-gender-number, root; '
+            '(3) state the weak class '
             '(I-guttural / III-ch/ayin / III-aleph / III-he / Pe-Nun / Pe-Yod / Biconsonantal); '
-            '(3) give a brief causative gloss in context.'
+            '(4) give a brief causative gloss in context. '
+            'Part C contains distractor verbs — not Hiphil. Answer "No" and parse fully.'
         )
         self._render_passages(show_answers=False)
         self.add_section_heading('Answer Key')
