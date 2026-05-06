@@ -8,7 +8,7 @@
 
 | File | Description |
 |---|---|
-| [piel-pual-paradigms.md](piel-pual-paradigms.md) | Full PGN paradigm tables — Piel (דִּבֵּר model) and Pual (קֻדַּשׁ model) side-by-side with Qal reference column |
+| [piel-paradigms.md](piel-paradigms.md) | Full PGN paradigm tables — Piel (דִּבֵּר model) with Qal reference column |
 
 ### Exercises
 
@@ -20,9 +20,9 @@
 
 | File | Format | Description |
 |---|---|---|
-| [ch30-morphology-deck.md](ch30-morphology-deck.md) | Markdown | 32-card morphology deck — Piel Strong forms across all 8 conjugations for 4 roots |
-| [ch30-morphology-deck.txt](ch30-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (32 cards) |
-| [ch30-morphology-deck-fd.txt](ch30-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (32 cards) |
+| [ch30-morphology-deck.md](ch30-morphology-deck.md) | Markdown | 24-card morphology deck — Piel Strong forms across all 8 conjugations for 4 roots |
+| [ch30-morphology-deck.txt](ch30-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (24 cards) |
+| [ch30-morphology-deck-fd.txt](ch30-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (24 cards) |
 
 ---
 
@@ -30,50 +30,50 @@
 
 ## 1. Function
 
-The Piel is the **intensive-active** stem; the Pual is its **passive** counterpart.
+The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is covered in Chapter 32.
 
-| Function | Description | Piel Example | Pual Example |
-|---|---|---|---|
-| Intensive | Emphasizes forceful or thorough action | שִׁבֵּר — shattered (vs. Qal שָׁבַר broke) | שֻׁבַּר — was shattered |
-| Factitive | Makes an adjective or state into an action (causes something to *become*) | קִדֵּשׁ — consecrated (made holy) | קֻדַּשׁ — was consecrated |
-| Declarative | Declares or pronounces something to be in a state | טִמֵּא — declared unclean | — |
-| Denominative | Verb derived from a noun | דִּבֵּר — spoke (from דָּבָר word) | — |
-| Simple action | Some roots appear almost exclusively in Piel with no clear Qal intensification | בִּקֵּשׁ — sought; צִוָּה — commanded | — |
+| Function | Description | Example |
+|---|---|---|
+| Intensive | Emphasizes forceful or thorough action | שִׁבֵּר — shattered (vs. Qal שָׁבַר broke) |
+| Factitive | Makes an adjective or state into an action (causes something to *become*) | קִדֵּשׁ — consecrated (made holy) |
+| Declarative | Declares or pronounces something to be in a state | טִמֵּא — declared unclean |
+| Denominative | Verb derived from a noun | דִּבֵּר — spoke (from דָּבָר word) |
+| Simple action | Some roots appear almost exclusively in Piel with no clear Qal intensification | בִּקֵּשׁ — sought; צִוָּה — commanded |
 
-> **Key diagnostic:** The **Dagesh Forte in R2** (the middle root consonant) is the single most reliable Piel/Pual identifier across every conjugation. The Piel also carries a characteristic Tsere (ֵ) under R2 in the Perfect 3ms and Imperfect. The Pual is always identified by an **u-class vowel (Qibbuts ֻ or Shureq) under R1** plus Dagesh Forte in R2.
+> **Key diagnostic:** The **Dagesh Forte in R2** (the middle root consonant) is the single most reliable Piel identifier across every conjugation. The Piel carries a characteristic Tsere (ֵ) under R2 in the Perfect 3ms and Imperfect, and an i-class vowel (Hireq or Patach) under R1.
 
 ---
 
 ## 2. Form — Diagnostic Markers
 
-| Conjugation | Piel pattern | Pual pattern | Key |
-|---|---|---|---|
-| **Perfect 3ms** | ִ under R1 + **dagesh in R2** + Tsere (ֵ) under R2 | ֻ under R1 + **dagesh in R2** + Patach (ַ) under R2 | Dagesh in R2 |
-| **Imperfect 3ms** | Shewa under prefix (יְ) + Patach (ַ) under R1 + **dagesh** + Tsere | Shewa under prefix (יְ) + Qibbuts (ֻ) under R1 + **dagesh** | u-vowel under R1 |
-| **Wayyiqtol** | וַיְ prefix (Patach + shewa) | וַיְ prefix | Contrasts Qal (וַיִּ) and Hiphil (וַיַּ) |
-| **Imperative 2ms** | Patach (ַ) under R1 + **dagesh** + Tsere | — (no Pual imperative) | Passive cannot be commanded |
-| **Inf. Construct** | Patach (ַ) under R1 + **dagesh** + Tsere; identical to Imperative 2ms | rare | Context distinguishes from Imperative |
-| **Inf. Absolute** | Same form as Imperative/Inf. Construct | Same form as Perfect 3ms | Cognate construction: דַּבֵּר יְדַבֵּר |
-| **Participle ms** | מְ prefix + Patach (ַ) under R1 + **dagesh** + Tsere | מְ prefix + Qibbuts/Qamets (ֻ/ָ) under R1 + **dagesh** | מְ prefix shared with Hiphil; dagesh distinguishes |
+| Conjugation | Piel pattern | Key |
+|---|---|---|
+| **Perfect 3ms** | ִ under R1 + **dagesh in R2** + Tsere (ֵ) under R2 | Dagesh in R2 + Tsere |
+| **Imperfect 3ms** | Shewa under prefix (יְ) + Patach (ַ) under R1 + **dagesh** + Tsere | Shewa under prefix |
+| **Wayyiqtol** | וַיְ prefix (Patach + shewa) | Contrasts Qal (וַיִּ) and Hiphil (וַיַּ) |
+| **Imperative 2ms** | Patach (ַ) under R1 + **dagesh** + Tsere | Identical form to Inf. Construct |
+| **Inf. Construct** | Patach (ַ) under R1 + **dagesh** + Tsere; identical to Imperative 2ms | Context and prepositions distinguish |
+| **Inf. Absolute** | Same form as Imperative/Inf. Construct | Cognate construction: דַּבֵּר יְדַבֵּר |
+| **Participle ms** | מְ prefix + Patach (ַ) under R1 + **dagesh** + Tsere | מְ prefix + dagesh distinguishes from Hiphil |
 
 ---
 
 ## 3. Paradigm Tables
 
-| Conjugation | Piel 3ms | Pual 3ms | BBH § | Notes |
-|---|---|---|---|---|
-| [Perfect (Qatal)](piel-pual-paradigms.md#perfect-qatal) | דִּבֵּר | קֻדַּשׁ | 28.3 | Dagesh in R2; Tsere (Piel) vs. Patach (Pual) under R2 |
-| [Imperfect (Yiqtol)](piel-pual-paradigms.md#imperfect-yiqtol) | יְדַבֵּר | יְקֻדַּשׁ | 28.4 | Shewa under prefix; Patach (Piel) vs. Qibbuts (Pual) under R1 |
-| [Wayyiqtol](piel-pual-paradigms.md#wayyiqtol) | וַיְדַבֵּר | וַיְקֻדַּשׁ | — | וַיְ prefix (contrast Qal וַיִּ, Hiphil וַיַּ) |
-| [Weqatal](piel-pual-paradigms.md#weqatal) | וְדִבֶּר | וְקֻדַּשׁ | — | וְ + Perfect form |
-| [Imperative](piel-pual-paradigms.md#imperative) | דַּבֵּר | — | 28.5 | Pual has no Imperative |
-| [Inf. Construct](piel-pual-paradigms.md#infinitive-construct) | דַּבֵּר | rare | 28.6 | Identical form to Imperative 2ms |
-| [Inf. Absolute](piel-pual-paradigms.md#infinitive-absolute) | דַּבֵּר | קֻדַּשׁ | 28.7 | |
-| [Participle](piel-pual-paradigms.md#participle) | מְדַבֵּר | מְקֻדָּשׁ | 28.8 | מְ prefix + dagesh in R2 |
+| Conjugation | Piel 3ms | BBH § | Notes |
+|---|---|---|---|
+| [Perfect (Qatal)](piel-paradigms.md#perfect-qatal) | דִּבֵּר | 30.3 | Hireq under R1 + Dagesh in R2 + Tsere under R2 |
+| [Imperfect (Yiqtol)](piel-paradigms.md#imperfect-yiqtol) | יְדַבֵּר | 30.4 | Shewa under prefix; Patach under R1; Dagesh in R2 |
+| [Wayyiqtol](piel-paradigms.md#wayyiqtol) | וַיְדַבֵּר | — | וַיְ prefix (contrast Qal וַיִּ, Hiphil וַיַּ) |
+| [Weqatal](piel-paradigms.md#weqatal) | וְדִבֶּר | — | וְ + Perfect form |
+| [Imperative](piel-paradigms.md#imperative) | דַּבֵּר | 30.5 | Identical form to Inf. Construct |
+| [Inf. Construct](piel-paradigms.md#infinitive-construct) | דַּבֵּר | 30.6 | Identical form to Imperative 2ms |
+| [Inf. Absolute](piel-paradigms.md#infinitive-absolute) | דַּבֵּר | 30.7 | |
+| [Participle](piel-paradigms.md#participle-active) | מְדַבֵּר | 30.8 | מְ prefix + dagesh in R2 |
 
 ---
 
-## 4. Real Forms — דִּבֵּר (Piel) and קֻדַּשׁ (Pual)
+## 4. Real Forms — דִּבֵּר (Piel)
 
 **Root דבר — "to speak" (Piel denominative from דָּבָר, "word") — 1,090 OT occurrences**
 
@@ -88,16 +88,6 @@ The Piel is the **intensive-active** stem; the Pual is its **passive** counterpa
 | Participle ms | מְדַבֵּר | Gen 27:6 | Vprmsa | speaking |
 
 > **Denominative note:** דִּבֵּר is the paradigm Piel denominative — the verb "to speak" is formed from the noun דָּבָר ("word"). The root rarely appears in the Qal (only a few archaic forms). Nearly all 1,090 OT occurrences are Piel.
-
-**Root קדש — "to consecrate, make holy" (Piel factitive; Pual passive) — OT combined: Piel 92 × + Pual 5 ×**
-
-| Conjugation | Stem | Form | Reference | Gloss |
-|---|---|---|---|---|
-| Imperfect 1cs | Piel | אֲקַדֵּשׁ | Exo 29:44 | I will consecrate |
-| Wayyiqtol 3ms | Piel | וַיְקַדֵּשׁ | Gen 2:3 | and he set apart as holy |
-| Imperative 2ms | Piel | קַדֵּשׁ | Exo 13:2 | consecrate! |
-| Participle ms | Piel | מְקַדֵּשׁ | Exo 31:13 | [the LORD] who consecrates |
-| Participle mp | Pual | מְקֻדָּשִׁים | 2Ch 26:18 | [priests] who are consecrated |
 
 ---
 
@@ -152,7 +142,7 @@ The Piel is the **intensive-active** stem; the Pual is its **passive** counterpa
 **Infinitive Construct — Gen 17:22**
 וַיַּ֖עַל אֱלֹהִ֑ים מֵעַ֖ל אַבְרָהָֽם׃ [after finishing] דַּבֵּ֣ר אִתּ֔וֹ
 *"When he had finished speaking with him, God went up from Abraham."*
-→ דבר Piel+Inf.Construct; introduced by כְּ/בְּ or temporal clause; same form as Imperative.
+→ דבר Piel+Inf.Construct; introduced by temporal clause; same form as Imperative.
 
 **Participle — Gen 27:6**
 וְרִבְקָ֗ה אָמְרָה֙ אֶל־יַעֲקֹ֣ב בְּנָ֔הּ לֵאמֹ֖ר הִנֵּ֣ה שָׁמַ֔עְתִּי אֶת־אָבִ֖יךָ מְדַבֵּ֛ר אֶל־עֵשָׂ֥ו אָחִ֖יךָ
@@ -181,12 +171,7 @@ The Piel is the **intensive-active** stem; the Pual is its **passive** counterpa
 **Participle — Exo 31:13**
 אֲנִ֥י יְהוָ֖ה מְקַדִּשְׁכֶֽם׃
 *"I am the LORD who consecrates you."*
-→ קדש Piel+Participle+ms; mְ prefix + dagesh in R2 + tsere; predicate participle identifying God as agent who causes holiness.
-
-**Pual Participle — 2Ch 26:18**
-כִּ֣י לַכֹּהֲנִ֧ים בְּנֵֽי-אַהֲרֹ֛ן הַמְקֻדָּשִׁ֖ים לְהַקְטִ֣יר קְטֹ֑רֶת
-*"…for it belongs to the priests, the sons of Aaron, who are consecrated to burn incense."*
-→ קדש Pual+Participle+mp; מְקֻדָּשִׁים — those *made holy* by priestly ordination (passive of the Piel factitive).
+→ קדש Piel+Participle+ms; מְ prefix + dagesh in R2 + tsere; predicate participle identifying God as agent who causes holiness.
 
 ---
 
@@ -228,25 +213,6 @@ The Piel is the **intensive-active** stem; the Pual is its **passive** counterpa
 
 ---
 
-### Pual Passive
-
-**Pual Perfect — Exo 22:6 (גנב)**
-אִֽם־גֻּנַּ֖ב מֵעִ֥ם הָאִֽישׁ׃
-*"…if it was stolen from the man."*
-→ גנב Pual+Perfect+3ms; Qibbuts (ֻ) under R1 + dagesh forte in R2 + Patach under R2 — the three-marker Pual signature.
-
-**Pual Imperfect — Exo 34:34 (צוה)**
-אֵ֖ת אֲשֶׁ֥ר יְצֻוֶּֽה׃
-*"…whatever he was commanded."*
-→ צוה Pual+Imperfect+3ms; passive of the Piel צִוָּה (commanded). Shewa under prefix + Qibbuts under R1 + dagesh in R2.
-
-**Pual Imperfect — Num 35:33 (כפר)**
-כִּ֤י אִם֙ בְּדַ֣ם שֹׁפְכ֔וֹ לֹ֥א יְכֻפַּ֖ר לָאָ֑רֶץ
-*"…for the land cannot be atoned for except by the blood of the one who shed it."*
-→ כפר Pual+Imperfect+3ms; passive of the critical Piel כִּפֶּר (to make atonement); priestly/theological vocabulary.
-
----
-
 ## 7. Conjugation Distribution (OT-Wide)
 
 ### Piel (6,484 total tokens)
@@ -264,20 +230,7 @@ The Piel is the **intensive-active** stem; the Pual is its **passive** counterpa
 | Cohortative | 86 | 1.3% |
 | Jussive | 74 | 1.1% |
 
-> **Teaching note:** The Piel Perfect (25%) and Imperfect (20%) together account for nearly half of all Piel tokens. This contrasts sharply with the Qal, where Wayyiqtol is the most common narrative form. The relatively high Inf. Construct (11%) reflects the Piel's frequent use in legal/instructional prose with לְ + Inf. Construct constructions (especially in Leviticus and Numbers).
-
-### Pual (459 total tokens)
-
-| Conjugation | Count | % |
-|---|---|---|
-| Perfect (Qatal) | 159 | 59.1% |
-| Imperfect (Yiqtol) | 79 | 29.4% |
-| Weqatal | 23 | 8.6% |
-| Wayyiqtol | 6 | 2.2% |
-| Infinitive Construct | 1 | 0.4% |
-| Infinitive Absolute | 1 | 0.4% |
-
-> **Teaching note:** The Pual is heavily Perfect-dominant (59%) — passive states and completed passive actions are the norm. The Participle, Imperative, and most derived forms are entirely absent (passive verbs have no imperative and produce participles only in specific contexts). With only 459 total tokens, the Pual is rare; learn to recognize it rather than expecting to produce it.
+> **Teaching note:** The Piel Perfect (25%) and Imperfect (20%) together account for nearly half of all Piel tokens. This contrasts with the Qal, where Wayyiqtol is the most common narrative form. The relatively high Inf. Construct (11%) reflects the Piel's frequent use in legal/instructional prose with לְ + Inf. Construct constructions.
 
 ---
 
@@ -307,15 +260,14 @@ These roots appear almost exclusively in the Piel — there is no meaningful Qal
 
 ---
 
-## 9. Summary: Identifying Piel and Pual at a Glance
+## 9. Summary: Identifying the Piel at a Glance
 
 | Question | Answer |
 |---|---|
-| What is the **one universal marker** of Piel/Pual? | **Dagesh Forte in R2** (the middle root consonant) |
-| How do I distinguish Piel from Pual? | Piel has i-class vowel (Hireq/Tsere) under R1; Pual has **u-class vowel** (Qibbuts/Shureq) under R1 |
+| What is the **one universal marker** of the Piel? | **Dagesh Forte in R2** (the middle root consonant) |
+| How do I distinguish Piel from Pual? | Piel: i-class vowel (Hireq/Tsere) under R1 · Pual: **u-class vowel** (Qibbuts/Shureq) under R1 — see Ch32 |
 | How do I distinguish Piel Wayyiqtol from Qal? | Piel: **וַיְ** (patach + shewa); Qal: **וַיִּ** (patach + hireq + dagesh) |
 | How do I distinguish Piel Wayyiqtol from Hiphil? | Piel: **וַיְ**; Hiphil: **וַיַּ** (patach + patach + dagesh) |
-| Can the Pual take an Imperative? | **No** — passive verbs cannot be commanded |
 | Is the Piel Participle active or passive? | **Active** — מְדַבֵּר "speaking" |
-| Is the Pual Participle active or passive? | **Passive** — מְקֻדָּשׁ "consecrated" |
 | What form is Piel Inf. Construct identical to? | The **Piel Imperative 2ms** — context and prepositions distinguish them |
+| Where is the Pual (passive of Piel) covered? | **Chapter 32** |

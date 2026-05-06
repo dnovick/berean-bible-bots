@@ -2649,9 +2649,9 @@ def build_ch27_bg_drill_exercise(out_dir: str = None) -> str:
 
 
 # ---------------------------------------------------------------------------
-# Chapter 28 — "Spot the Piel/Pual" Passage Exercise
+# Chapter 30 — "Spot the Piel" Passage Exercise (Piel Strong)
 # ---------------------------------------------------------------------------
-class Ch28Exercise(ExercisePDF):
+class Ch30PielExercise(ExercisePDF):
 
     def _render_passages(self, show_answers: bool):
 
@@ -2706,36 +2706,37 @@ class Ch28Exercise(ExercisePDF):
         self.add_section_heading('Passage C — Numbers 22:6–8, 17 (with Qal distractors)')
 
         self.add_passage(PassageBlock('22:6',
-            'כִּ֣י יָדַ֗עְתִּי אֵ֤ת אֲשֶׁר־תְּבָרֵךְ֙ מְבֹרָ֔ךְ',
-            '"…I know that he whom you bless is blessed."'))
+            'לְכָה נָּא אָרָה לִּי אֶת הָעָם הַזֶּה כִּי יָדַעְתִּי אֵת אֲשֶׁר תְּבָרֵךְ מְבֹרָךְ וַאֲשֶׁר תָּאֹר יוּאָר',
+            '"Come now, curse this people for me… he whom you bless is blessed, and he whom you curse is cursed."'))
         self.add_verb_table([
-            VerbEntry('8', 'אָרָה', 'Qal Jussive', '1cs', 'אָרַר', 'NOT Piel — Qal jussive (curse); no dagesh in R2'),
-            VerbEntry('9', 'תְּבָרֵךְ', 'Imperfect', '2ms', 'בָּרַךְ', 'Intensive — Piel Imperfect; שְׁ prefix + Patach + tsere; R2=ר'),
-            VerbEntry('10', 'מְבֹרָךְ', 'Participle ms', 'ms', 'בָּרַךְ', 'Passive (Pual) — "blessed one"; מְ prefix + qibbuts/qamets under R1'),
+            VerbEntry('8',  'אָרָה',    'Qal Jussive', '1cs', 'אָרַר', 'NOT Piel — Qal jussive (curse); no dagesh in R2'),
+            VerbEntry('9',  'תְּבָרֵךְ', 'Imperfect',  '2ms', 'בָּרַךְ', 'Intensive (Piel) — שְׁ prefix + Patach + tsere; R2=ר rejects dagesh'),
+            VerbEntry('10', 'מְבֹרָךְ',  'Participle',  'ms',  'בָּרַךְ', 'Passive (Pual) — "blessed one"; מְ + qamets under R1; Pual of Piel bless (preview of Ch32)'),
+            VerbEntry('11', 'תָּאֹר',   'Qal Impf.',  '2ms', 'אָרַר', 'NOT Piel — Qal imperfect (curse); א is guttural, cannot take dagesh'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('22:8',
-            'יְדַבֵּ֥ר יְהוָ֖ה אֵלָ֑י וְדִבַּרְתִּ֖י אֲלֵיכֶֽם',
+            'יְדַבֵּר יְהוָה אֵלָי וְדִבַּרְתִּי אֲלֵיכֶם',
             '"The LORD will speak to me, and I will speak to you."'))
         self.add_verb_table([
-            VerbEntry('11', 'יְדַבֵּר', 'Imperfect', '3ms', 'דָּבַר', 'Denominative — יְ prefix + dagesh in בּ; standard Piel Imperfect'),
-            VerbEntry('12', 'וְדִבַּרְתִּי', 'Weqatal', '1cs', 'דָּבַר', 'Denominative — Weqatal; Hireq under R1 + dagesh + 1cs suffix תִּי'),
+            VerbEntry('12', 'יְדַבֵּר',    'Imperfect', '3ms', 'דָּבַר', 'Denominative — יְ prefix + dagesh in בּ; standard Piel Imperfect'),
+            VerbEntry('13', 'וְדִבַּרְתִּי', 'Weqatal',   '1cs', 'דָּבַר', 'Denominative — Weqatal; Hireq under R1 + dagesh + 1cs suffix תִּי'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('22:17',
-            'כִּֽי כַבֵּד֙ אֲכַבֶּדְךָ֣ מְאֹד',
-            '"For I will surely honor you greatly."'))
+            'כִּי כַבֵּד אֲכַבֶּדְךָ מְאֹד וּלְכָה נָּא קָבָה לִי אֶת הָעָם הַזֶּה',
+            '"For I will surely honor you greatly; come now, curse this people for me."'))
         self.add_verb_table([
-            VerbEntry('13', 'כַּבֵּד', 'Inf. Absolute', '—', 'כָּבֵד', 'Intensive (Piel Inf.Abs.) — cognate construction כַּבֵּד אֲכַבֶּד'),
-            VerbEntry('14', 'אֲכַבֶּדְךָ', 'Imperfect', '1cs', 'כָּבֵד', 'Factitive — אֲ prefix + dagesh in בּ; Piel of "heavy" = to honor'),
-            VerbEntry('15', 'קָבָה', 'Qal Impv.', '2ms', 'קָבַב', 'NOT Piel — Qal imperative (curse); no dagesh in R2'),
+            VerbEntry('14', 'כַּבֵּד',    'Inf. Absolute', '—',  'כָּבֵד', 'Intensive (Piel Inf.Abs.) — cognate construction כַּבֵּד אֲכַבֶּד'),
+            VerbEntry('15', 'אֲכַבֶּדְךָ', 'Imperfect',    '1cs', 'כָּבֵד', 'Factitive — אֲ prefix + dagesh in בּ; Piel of "heavy" = to honor'),
+            VerbEntry('16', 'קָבָה',      'Qal Impv.',    '2ms', 'קָבַב',  'NOT Piel — Qal imperative (curse geminate root); no dagesh in R2'),
         ], show_answers=show_answers)
 
 
     def _build(self):
         self.add_instructions(
-            'Each numbered verb is either Piel, Pual, or a Qal distractor. '
-            'For each one, fill in: Piel/Pual/No, Conjugation, PGN, Root, and Function. '
+            'Each numbered verb is either Piel, Pual (distractor), or a Qal distractor. '
+            'For each one, fill in: Piel? (Yes/No), Conjugation, PGN, Root, and Function. '
             'The answer key begins on the page marked "Answer Key".'
         )
         self._render_passages(show_answers=False)
@@ -2754,16 +2755,16 @@ class Ch28Exercise(ExercisePDF):
         self._render_passages(show_answers=True)
 
 
-def build_ch28_exercise(out_dir: str = None) -> str:
+def build_ch30_exercise(out_dir: str = None) -> str:
     if out_dir is None:
         here = os.path.dirname(os.path.abspath(__file__))
         out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
-                               'hebrew', 'bbh', 'ch28', 'exercises',
-                               'ch28-passage-exercise')
-    path = os.path.join(out_dir, 'ch28-passage-exercise.pdf')
-    ex = Ch28Exercise(
-        title='Chapter 28 — "Spot the Hophal" Passage Exercise',
-        subtitle='Genesis 22  ·  Exodus 5  ·  Numbers 35',
+                               'hebrew', 'bbh', 'ch30', 'exercises',
+                               'ch30-passage-exercise')
+    path = os.path.join(out_dir, 'ch30-passage-exercise.pdf')
+    ex = Ch30PielExercise(
+        title='Chapter 30 — "Spot the Piel" Passage Exercise',
+        subtitle='Gen 1  ·  Exo 19  ·  Num 22',
     )
     return ex.save(path)
 
@@ -2891,5 +2892,7 @@ if __name__ == '__main__':
     print(f'Saved: {p8}')
     p9 = build_ch27_weak_form_id_exercise()
     print(f'Saved: {p9}')
-    p10 = build_ch28_exercise()
+    p10 = build_ch28_hophal_exercise()
     print(f'Saved: {p10}')
+    p11 = build_ch30_exercise()
+    print(f'Saved: {p11}')

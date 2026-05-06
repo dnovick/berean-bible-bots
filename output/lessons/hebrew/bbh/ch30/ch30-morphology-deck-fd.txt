@@ -1,32 +1,24 @@
 דִּבֵּר (Gen 8:15)	Root: דָּבַר | Piel | Perfect 3ms | he spoke — denominative (from דָּבָר word)	BBH Chapter 30 — Piel Strong
-דִּבְּרָה (Gen 39:19)	Root: דָּבַר | Piel | Perfect 3fs | she spoke — Weqatal form in context	BBH Chapter 30 — Piel Strong
 דִּבַּרְתָּ (Exo 4:15)	Root: דָּבַר | Piel | Perfect 2ms | you spoke — 2ms suffix תָּ	BBH Chapter 30 — Piel Strong
 יְדַבֵּר (Num 22:8)	Root: דָּבַר | Piel | Imperfect 3ms | he will speak — יְ prefix + dagesh in R2	BBH Chapter 30 — Piel Strong
-תְּדַבֵּר (Gen 31:24)	Root: דָּבַר | Piel | Imperfect 2ms | you shall speak — תְּ prefix	BBH Chapter 30 — Piel Strong
 וַיְדַבֵּר (Gen 8:15)	Root: דָּבַר | Piel | Wayyiqtol 3ms | and he spoke — וַיְ prefix (contrast Qal וַיִּ)	BBH Chapter 30 — Piel Strong
-וְדִבַּרְתִּי (Num 22:8)	Root: דָּבַר | Piel | Weqatal 1cs | and I will speak — וְ + Perfect form	BBH Chapter 30 — Piel Strong
 דַּבֵּר (Gen 24:33)	Root: דָּבַר | Piel | Imperative 2ms | speak! — patach+dagesh+tsere; identical to Inf. Construct	BBH Chapter 30 — Piel Strong
-דַּבֵּר (Gen 17:22)	Root: דָּבַר | Piel | Infinitive Construct | to speak / when he finished speaking	BBH Chapter 30 — Piel Strong
-מְדַבֵּר (Gen 27:6)	Root: דָּבַר | Piel | Participle ms | speaking — מְ prefix marks Piel/Pual ptc.	BBH Chapter 30 — Piel Strong
+דַּבֵּר (Gen 17:22)	Root: דָּבַר | Piel | Infinitive Construct | to speak / when he finished speaking — prepositions distinguish from Imperative	BBH Chapter 30 — Piel Strong
+מְדַבֵּר (Gen 27:6)	Root: דָּבַר | Piel | Participle ms | speaking — מְ prefix marks Piel ptc.	BBH Chapter 30 — Piel Strong
 קִדֵּשׁ (Exo 29:27)	Root: קָדַשׁ | Piel | Perfect 3ms | he consecrated — factitive: made holy	BBH Chapter 30 — Piel Strong
-קִדַּשְׁתָּ (Exo 19:10)	Root: קָדַשׁ | Piel | Perfect 2ms | you consecrated — Weqatal in context	BBH Chapter 30 — Piel Strong
-יְקַדֵּשׁ (Exo 29:44)	Root: קָדַשׁ | Piel | Imperfect 3ms | he will consecrate — command to Moses	BBH Chapter 30 — Piel Strong
+קִדַּשְׁתָּ (Exo 19:10)	Root: קָדַשׁ | Piel | Perfect 2ms | you consecrated	BBH Chapter 30 — Piel Strong
+יְקַדֵּשׁ (Exo 29:44)	Root: קָדַשׁ | Piel | Imperfect 3ms | he will consecrate	BBH Chapter 30 — Piel Strong
 אֲקַדֵּשׁ (Exo 29:44)	Root: קָדַשׁ | Piel | Imperfect 1cs | I will consecrate — God speaking; אֲ prefix	BBH Chapter 30 — Piel Strong
 וַיְקַדֵּשׁ (Gen 2:3)	Root: קָדַשׁ | Piel | Wayyiqtol 3ms | and he set apart as holy — Gen 2:3	BBH Chapter 30 — Piel Strong
 קַדֵּשׁ (Exo 13:2)	Root: קָדַשׁ | Piel | Imperative 2ms | consecrate! — God's command to Moses	BBH Chapter 30 — Piel Strong
 מְקַדֵּשׁ (Exo 31:13)	Root: קָדַשׁ | Piel | Participle ms | [the LORD] who consecrates — predicate	BBH Chapter 30 — Piel Strong
-קֻדַּשׁ	Root: קָדַשׁ | Pual | Perfect 3ms | he was consecrated — Qibbuts + dagesh = Pual signature	BBH Chapter 30 — Piel Strong
-יְקֻדַּשׁ	Root: קָדַשׁ | Pual | Imperfect 3ms | he will be consecrated — u-vowel under R1	BBH Chapter 30 — Piel Strong
-מְקֻדָּשִׁים (2Ch 26:18)	Root: קָדַשׁ | Pual | Participle mp | [priests] who are consecrated — passive of Piel factitive	BBH Chapter 30 — Piel Strong
-בֵּרַכְתִּי (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 1cs | I will bless — R2=ר rejects dagesh; Tsere marks Piel	BBH Chapter 30 — Piel Strong
-יְבָרֵךְ (Gen 1:22)	Root: בָּרַךְ | Piel | Imperfect 3ms | he will bless — יְ prefix; tsere under ר	BBH Chapter 30 — Piel Strong
-וַיְבָרֶךְ (Gen 1:22)	Root: בָּרַךְ | Piel | Wayyiqtol 3ms | and he blessed — Gen 1:22; וַיְ prefix	BBH Chapter 30 — Piel Strong
+בֵּרַךְ (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 3ms | he blessed — intensive; R2=ר rejects dagesh; Tsere compensates	BBH Chapter 30 — Piel Strong
+בֵּרַכְתִּי (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 1cs | I will bless — God's promise to Sarah	BBH Chapter 30 — Piel Strong
+יְבָרֵךְ (Num 22:6)	Root: בָּרַךְ | Piel | Imperfect 3ms | he will bless — R2=ר rejects dagesh	BBH Chapter 30 — Piel Strong
+וַיְבָרֶךְ (Gen 1:22)	Root: בָּרַךְ | Piel | Wayyiqtol 3ms | and he blessed — first occurrence in OT; ר cannot take dagesh	BBH Chapter 30 — Piel Strong
 בָּרֵךְ (Gen 22:17)	Root: בָּרַךְ | Piel | Infinitive Absolute | blessing — cognate: בָּרֵךְ אֲבָרֶכְךָ	BBH Chapter 30 — Piel Strong
-מְבֹרָךְ (Num 22:6)	Root: בָּרַךְ | Pual | Participle ms | blessed (one) — passive; used by Balak of Balaam's power	BBH Chapter 30 — Piel Strong
 צִוָּה (Gen 3:11)	Root: צָוָה | Piel | Perfect 3ms | he commanded — simple action; 485× in OT	BBH Chapter 30 — Piel Strong
 צִוִּיתִי (Gen 3:11)	Root: צָוָה | Piel | Perfect 1cs | I commanded — God speaking	BBH Chapter 30 — Piel Strong
 יְצַוֶּה	Root: צָוָה | Piel | Imperfect 3ms | he will command	BBH Chapter 30 — Piel Strong
 וַיְצַו (Gen 2:16)	Root: צָוָה | Piel | Wayyiqtol 3ms | and he commanded — apocopated III-ה Wayyiqtol	BBH Chapter 30 — Piel Strong
-צֻוֵּה (Lev 8:35)	Root: צָוָה | Pual | Perfect 3ms | he was commanded — Qibbuts + dagesh forte in R2	BBH Chapter 30 — Piel Strong
-יְצֻוֶּה (Exo 34:34)	Root: צָוָה | Pual | Imperfect 3ms | he was commanded — passive of Piel צִוָּה	BBH Chapter 30 — Piel Strong
-כַּבֵּד אֲכַבֶּדְךָ (Num 22:17)	Root: כָּבֵד | Piel | Inf.Abs. + Impf.1cs | I will surely honor you — cognate absolute construction	BBH Chapter 30 — Piel Strong
+צַו	Root: צָוָה | Piel | Imperative 2ms | command!	BBH Chapter 30 — Piel Strong

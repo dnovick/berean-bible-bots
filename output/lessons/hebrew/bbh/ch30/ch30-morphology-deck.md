@@ -1,6 +1,6 @@
 # BBH Chapter 30 — Piel Strong Morphology Flashcards
 
-32 cards covering 4 roots across all conjugations of the Piel stem, plus key Pual forms.
+24 cards covering 4 roots across all Piel conjugations for strong verbs.
 
 **Roots:**
 - **דבר** (denominative) — to speak
@@ -10,22 +10,30 @@
 
 ---
 
+## Key Diagnostic Summary
+
+| Card Front | Expected Back |
+|---|---|
+| What is the ONE universal Piel marker? | Dagesh Forte in R2 (middle root consonant) |
+| Piel Perfect 3ms vowel pattern | Hireq under R1 + dagesh in R2 + Tsere under R2 |
+| Piel Imperfect prefix | Shewa (יְ, תְּ) — contrast Qal Hireq (יִ, תִּ) |
+| Piel Wayyiqtol prefix | **וַיְ** (patach + shewa) — contrast Qal **וַיִּ**, Hiphil **וַיַּ** |
+| Piel Participle prefix | **מְ** + Patach under R1 + dagesh in R2 |
+| Form identical to Piel Imperative 2ms? | Piel Infinitive Construct — prepositions signal the Inf. Const. |
+
+---
+
 ## Piel — דבר (to speak)
 
 | Front | Back |
 |---|---|
 | דִּבֵּר | דבר Piel+Perfect+3ms — "he spoke" — denominative (from דָּבָר, word) |
-| דִּבְּרָה | דבר Piel+Perfect+3fs — "she spoke" |
 | דִּבַּרְתָּ | דבר Piel+Perfect+2ms — "you spoke" |
-| יְדַבֵּר | דבר Piel+Imperfect+3ms — "he will speak" |
-| תְּדַבֵּר | דבר Piel+Imperfect+2ms — "you will speak" |
-| וַיְדַבֵּר | דבר Piel+Wayyiqtol+3ms — "and he spoke" — note וַיְ prefix (patach+shewa) |
-| וְדִבֶּר | דבר Piel+Weqatal+3ms — "and he will speak" |
-| דַּבֵּר | דבר Piel+Imperative+2ms — "speak!" |
-| דַּבְּרִי | דבר Piel+Imperative+2fs — "speak!" |
-| דַּבֵּר | דבר Piel+Inf.Construct — "to speak" — identical to Imperative 2ms |
-| דַּבֵּר | דבר Piel+Inf.Absolute — "speaking" — cognate construction דַּבֵּר יְדַבֵּר |
-| מְדַבֵּר | דבר Piel+Participle+ms — "speaking" — מְ prefix |
+| יְדַבֵּר | דבר Piel+Imperfect+3ms — "he will speak" — יְ prefix + patach + dagesh + tsere |
+| וַיְדַבֵּר | דבר Piel+Wayyiqtol+3ms — "and he spoke" — וַיְ prefix (patach+shewa) |
+| דַּבֵּר | דבר Piel+Imperative+2ms — "speak!" — identical form to Inf. Construct |
+| דַּבֵּר (+ לְ/בְּ) | דבר Piel+Infinitive Construct — "to speak" — prepositions distinguish from Imperative |
+| מְדַבֵּר | דבר Piel+Participle+ms — "speaking" — מְ prefix + patach + dagesh + tsere |
 
 ---
 
@@ -36,13 +44,10 @@
 | קִדֵּשׁ | קדש Piel+Perfect+3ms — "he consecrated" — factitive (made holy) |
 | קִדַּשְׁתָּ | קדש Piel+Perfect+2ms — "you consecrated" |
 | יְקַדֵּשׁ | קדש Piel+Imperfect+3ms — "he will consecrate" |
-| אֲקַדֵּשׁ | קדש Piel+Imperfect+1cs — "I will consecrate" |
-| וַיְקַדֵּשׁ | קדש Piel+Wayyiqtol+3ms — "and he consecrated" |
-| קַדֵּשׁ | קדש Piel+Imperative+2ms — "consecrate!" |
+| אֲקַדֵּשׁ | קדש Piel+Imperfect+1cs — "I will consecrate" — אֲ prefix (hateph-patach) |
+| וַיְקַדֵּשׁ | קדש Piel+Wayyiqtol+3ms — "and he consecrated" — Gen 2:3 |
+| קַדֵּשׁ | קדש Piel+Imperative+2ms — "consecrate!" — Exo 13:2 |
 | מְקַדֵּשׁ | קדש Piel+Participle+ms — "the one who consecrates" |
-| קֻדַּשׁ | קדש Pual+Perfect+3ms — "he was consecrated" — u-vowel under R1 marks Pual |
-| יְקֻדַּשׁ | קדש Pual+Imperfect+3ms — "he will be consecrated" |
-| מְקֻדָּשׁ | קדש Pual+Participle+ms — "consecrated, holy" — passive adjective |
 
 ---
 
@@ -50,12 +55,11 @@
 
 | Front | Back |
 |---|---|
-| בֵּרַךְ | ברך Piel+Perfect+3ms — "he blessed" — intensive; R2=ר rejects dagesh |
+| בֵּרַךְ | ברך Piel+Perfect+3ms — "he blessed" — intensive; R2=ר rejects dagesh; Tsere under prefix consonant compensates |
 | בֵּרַכְתִּי | ברך Piel+Perfect+1cs — "I blessed" |
-| יְבָרֵךְ | ברך Piel+Imperfect+3ms — "he will bless" |
-| וַיְבָרֶךְ | ברך Piel+Wayyiqtol+3ms — "and he blessed" — Gen 1:22, 28; 2:3 |
-| בָּרֵךְ | ברך Piel+Inf.Absolute — "blessing" — cognate: בָּרֵךְ אֲבָרֶכְךָ (Gen 22:17) |
-| מְבֹרָךְ | ברך Pual+Participle+ms — "blessed" (one who is blessed) — Num 22:6 |
+| יְבָרֵךְ | ברך Piel+Imperfect+3ms — "he will bless" — R2=ר rejects dagesh; tsere marks Piel |
+| וַיְבָרֶךְ | ברך Piel+Wayyiqtol+3ms — "and he blessed" — Gen 1:22; וַיְ prefix marks Piel; ר cannot take dagesh |
+| בָּרֵךְ | ברך Piel+Infinitive Absolute — cognate: בָּרֵךְ אֲבָרֶכְךָ "I will surely bless" (Gen 22:17) |
 
 ---
 
@@ -63,22 +67,8 @@
 
 | Front | Back |
 |---|---|
-| צִוָּה | צוה Piel+Perfect+3ms — "he commanded" — simple action/denominative |
+| צִוָּה | צוה Piel+Perfect+3ms — "he commanded" — simple action (no meaningful Qal); 485× in OT |
 | צִוִּיתִי | צוה Piel+Perfect+1cs — "I commanded" |
 | יְצַוֶּה | צוה Piel+Imperfect+3ms — "he will command" |
-| וַיְצַו | צוה Piel+Wayyiqtol+3ms — "and he commanded" — apocopated form |
+| וַיְצַו | צוה Piel+Wayyiqtol+3ms — "and he commanded" — apocopated Wayyiqtol (III-ה root loses final ה) |
 | צַו | צוה Piel+Imperative+2ms — "command!" |
-| צֻוֵּה | צוה Pual+Perfect+3ms — "he was commanded" — Pual passive |
-| יְצֻוֶּה | צוה Pual+Imperfect+3ms — "he will be commanded" |
-
----
-
-## Key Diagnostic Summary
-
-| Card Front | Expected Back |
-|---|---|
-| What is the ONE universal Piel/Pual marker? | Dagesh Forte in R2 (middle root consonant) |
-| How to distinguish Piel from Pual? | Piel: i-class vowel (ִ/ֵ) under R1 · Pual: u-class vowel (ֻ/וּ) under R1 |
-| Piel Wayyiqtol prefix? | וַיְ (patach + shewa) — contrast Qal וַיִּ and Hiphil וַיַּ |
-| Does the Pual have an Imperative? | No — passive verbs cannot be commanded |
-| What form is Piel Inf. Construct identical to? | Piel Imperative 2ms — context distinguishes |
