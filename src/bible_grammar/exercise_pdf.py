@@ -474,6 +474,129 @@ class ExercisePDF:
 
         self._y = y - 0.1 * inch
 
+    def add_generic_table(self, headers: list, rows: list,
+                          col_ratios: list = None,
+                          heb_cols: list = None,
+                          show_answers: bool = True,
+                          answer_rows: list = None):
+        """
+        Draw a generic parse table with arbitrary columns.
+
+        headers: column header strings
+        rows: list of row data (each row is a list of strings, same length as headers)
+        col_ratios: proportional widths (must sum to ~1.0); if None, equal widths
+        heb_cols: indices of columns that contain Hebrew text (right-aligned, ArialHebrew font)
+        show_answers: if True, draw green answer rows below each input row
+        answer_rows: if show_answers, the answer data (same shape as rows); if None, answers = rows
+        """
+        if col_ratios is None:
+            col_ratios = [1.0 / len(headers)] * len(headers)
+        if heb_cols is None:
+            heb_cols = []
+
+        w = self._usable_w()
+        cw = [r * w for r in col_ratios]
+        x0 = self.MARGIN_L
+
+        answer_data = answer_rows if answer_rows is not None else rows
+
+        needed = self.HEADER_H + len(rows) * (self.ROW_H + (self.ANSWER_H if show_answers else 0)) + 0.08 * inch
+        self._check_space(needed)
+
+        c = self._canvas
+
+        # Header row
+        y = self._y
+        c.setFillColor(C_HEADER_BG)
+        c.setStrokeColor(C_RULE)
+        c.setLineWidth(0.4)
+        c.rect(x0, y - self.HEADER_H, sum(cw), self.HEADER_H, fill=1, stroke=1)
+        cx = x0
+        c.setFont('Helvetica-Bold', self.LABEL_SIZE)
+        c.setFillColor(black)
+        for hdr, col_w in zip(headers, cw):
+            if hdr:
+                c.drawString(cx + 3, y - self.HEADER_H + 5, hdr)
+            cx += col_w
+        y -= self.HEADER_H
+
+        for row_idx, row in enumerate(rows):
+            self._check_space(self.ROW_H + (self.ANSWER_H if show_answers else 0))
+
+            # Input row
+            c.setStrokeColor(C_RULE)
+            c.setLineWidth(0.4)
+            c.rect(x0, y - self.ROW_H, sum(cw), self.ROW_H, fill=0, stroke=1)
+
+            cx = x0
+            for col_idx, (cell, col_w) in enumerate(zip(row, cw)):
+                if col_idx in heb_cols:
+                    # Hebrew column — display text (no field), right-aligned
+                    c.setFont('ArialHebrew', self.HEB_SIZE - 2)
+                    c.setFillColor(black)
+                    c.drawRightString(cx + col_w - 3, y - self.ROW_H + 7, _heb(cell))
+                elif col_idx == 0:
+                    # First column (usually item number) — display only
+                    c.setFont('Helvetica-Bold', self.LABEL_SIZE)
+                    c.setFillColor(HexColor('#666666'))
+                    c.drawCentredString(cx + col_w / 2, y - self.ROW_H + 8, str(cell))
+                else:
+                    # Input field
+                    fid = f'r{row_idx}-c{col_idx}-{self._field_idx}'
+                    self._field_idx += 1
+                    fx = cx + self.FIELD_PAD
+                    fy = y - self.ROW_H + self.FIELD_PAD
+                    fw2 = col_w - self.FIELD_PAD * 2
+                    fh = self.ROW_H - self.FIELD_PAD * 2
+                    c.setFillColor(C_FIELD_BG)
+                    c.setStrokeColor(HexColor('#bbbbbb'))
+                    c.setLineWidth(0.5)
+                    c.rect(fx, fy, fw2, fh, fill=1, stroke=1)
+                    c.acroForm.textfield(
+                        name=fid,
+                        tooltip=f'{headers[col_idx]} row {row_idx + 1}',
+                        x=fx, y=fy, width=fw2, height=fh,
+                        borderStyle='underlined',
+                        borderColor=HexColor('#bbbbbb'),
+                        fillColor=C_FIELD_BG,
+                        textColor=black,
+                        fontSize=self.LABEL_SIZE,
+                        fontName='Helvetica',
+                        value='',
+                        fieldFlags='',
+                    )
+                cx += col_w
+
+            y -= self.ROW_H
+
+            if show_answers and answer_data:
+                ans_row = answer_data[row_idx]
+                c.setFillColor(C_ANSWER_BG)
+                c.setStrokeColor(C_RULE)
+                c.setLineWidth(0.4)
+                c.rect(x0, y - self.ANSWER_H, sum(cw), self.ANSWER_H, fill=1, stroke=1)
+
+                cx = x0
+                for col_idx, (cell, col_w) in enumerate(zip(ans_row, cw)):
+                    if col_idx == 0:
+                        c.setFont('Helvetica-Bold', self.LABEL_SIZE)
+                        c.setFillColor(C_ANSWER_FG)
+                        c.drawCentredString(cx + col_w / 2, y - self.ANSWER_H + 6, '✓')
+                    elif col_idx in heb_cols:
+                        c.setFont('ArialHebrew', self.LABEL_SIZE)
+                        c.setFillColor(C_ANSWER_FG)
+                        c.drawRightString(cx + col_w - 3, y - self.ANSWER_H + 6, _heb(cell))
+                    else:
+                        c.setFont('Helvetica', self.LABEL_SIZE)
+                        c.setFillColor(C_ANSWER_FG)
+                        lines = simpleSplit(cell, 'Helvetica', self.LABEL_SIZE, col_w - 6)
+                        c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else cell)
+                    cx += col_w
+
+                y -= self.ANSWER_H
+
+        self._y = y - 0.1 * inch
+
     def add_note(self, text: str):
         """Draw a note/info box."""
         c = self._canvas
@@ -3748,7 +3871,3811 @@ def build_ch33_exercise(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+# ---------------------------------------------------------------------------
+# Ch1–Ch6 builders
+# ---------------------------------------------------------------------------
+
+class Ch1LetterRecognitionExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hebrew letter shown, provide: (1) Letter Name, '
+            '(2) Transliteration, (3) Sound, (4) Any special category '
+            '(guttural / begadkephat / sofit form / normal).\n'
+            'Items 1–22 cover all standard letters in canonical order. '
+            'Items 23–27 cover the five sofit (final) forms. '
+            'Items 28–30 show three begadkephat letters with dagesh lene.'
+        )
+        self.add_section_heading('Part A — Standard Letters (1–22)')
+        rows_a = [
+            ['1', 'א', '', '', '', ''],
+            ['2', 'ב', '', '', '', ''],
+            ['3', 'ג', '', '', '', ''],
+            ['4', 'ד', '', '', '', ''],
+            ['5', 'ה', '', '', '', ''],
+            ['6', 'ו', '', '', '', ''],
+            ['7', 'ז', '', '', '', ''],
+            ['8', 'ח', '', '', '', ''],
+            ['9', 'ט', '', '', '', ''],
+            ['10', 'י', '', '', '', ''],
+            ['11', 'כ', '', '', '', ''],
+            ['12', 'ל', '', '', '', ''],
+            ['13', 'מ', '', '', '', ''],
+            ['14', 'נ', '', '', '', ''],
+            ['15', 'ס', '', '', '', ''],
+            ['16', 'ע', '', '', '', ''],
+            ['17', 'פ', '', '', '', ''],
+            ['18', 'צ', '', '', '', ''],
+            ['19', 'ק', '', '', '', ''],
+            ['20', 'ר', '', '', '', ''],
+            ['21', 'שׁ', '', '', '', ''],
+            ['22', 'ת', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'א', 'Aleph', 'ʾ', 'Silent/glottal stop', 'Guttural; quiescent'],
+            ['2', 'ב', 'Beth', 'b / v', 'b (hard) or v (soft)', 'Begadkephat'],
+            ['3', 'ג', 'Gimel', 'g / gh', 'g (hard) or gh (soft)', 'Begadkephat'],
+            ['4', 'ד', 'Dalet', 'd / dh', 'd (hard) or dh (soft)', 'Begadkephat'],
+            ['5', 'ה', 'He', 'h', 'h', 'Guttural; quiescent word-finally'],
+            ['6', 'ו', 'Waw', 'w', 'w (consonantal)', 'Also mater lectionis'],
+            ['7', 'ז', 'Zayin', 'z', 'z', 'Normal'],
+            ['8', 'ח', 'Cheth', 'ḥ', 'ch as in German Bach', 'Guttural'],
+            ['9', 'ט', 'Teth', 'ṭ', 'emphatic t', 'Normal (emphatic)'],
+            ['10', 'י', 'Yod', 'y', 'y (consonantal)', 'Also mater lectionis'],
+            ['11', 'כ', 'Kaph', 'k / kh', 'k (hard) or kh (soft)', 'Begadkephat; has sofit form'],
+            ['12', 'ל', 'Lamed', 'l', 'l', 'Normal'],
+            ['13', 'מ', 'Mem', 'm', 'm', 'Normal; has sofit form'],
+            ['14', 'נ', 'Nun', 'n', 'n', 'Normal; has sofit form'],
+            ['15', 'ס', 'Samech', 's', 's', 'Normal'],
+            ['16', 'ע', 'Ayin', 'ʿ', 'Silent/pharyngeal', 'Guttural'],
+            ['17', 'פ', 'Pe', 'p / f', 'p (hard) or f (soft)', 'Begadkephat; has sofit form'],
+            ['18', 'צ', 'Tsade', 'ṣ', 'emphatic ts', 'Normal (emphatic); has sofit form'],
+            ['19', 'ק', 'Qoph', 'q', 'q (uvular k)', 'Normal'],
+            ['20', 'ר', 'Resh', 'r', 'r (uvular)', 'Behaves like guttural in some contexts'],
+            ['21', 'שׁ', 'Shin', 'š', 'sh as in sheep', 'Normal (shin dot on right)'],
+            ['22', 'ת', 'Taw', 't / th', 't (hard) or th (soft)', 'Begadkephat'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Letter', 'Name', 'Transliteration', 'Sound', 'Special Category'],
+            rows=rows_a,
+            col_ratios=[0.05, 0.08, 0.12, 0.12, 0.14, 0.49],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans_a,
+        )
+        self.add_section_heading('Part B — Final (Sofit) Forms (23–27)')
+        rows_b = [
+            ['23', 'ך', '', '', '', ''],
+            ['24', 'ם', '', '', '', ''],
+            ['25', 'ן', '', '', '', ''],
+            ['26', 'ף', '', '', '', ''],
+            ['27', 'ץ', '', '', '', ''],
+        ]
+        ans_b = [
+            ['23', 'ך', 'Kaph sofit', 'k / kh', 'k (hard) or kh (soft)', 'Sofit form of כ; occurs word-finally only'],
+            ['24', 'ם', 'Mem sofit', 'm', 'm', 'Sofit form of מ; occurs word-finally only'],
+            ['25', 'ן', 'Nun sofit', 'n', 'n', 'Sofit form of נ; occurs word-finally only'],
+            ['26', 'ף', 'Pe sofit', 'p / f', 'p (hard) or f (soft)', 'Sofit form of פ; occurs word-finally only'],
+            ['27', 'ץ', 'Tsade sofit', 'ṣ', 'emphatic ts', 'Sofit form of צ; occurs word-finally only'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Letter', 'Name', 'Transliteration', 'Sound', 'Special Category'],
+            rows=rows_b,
+            col_ratios=[0.05, 0.08, 0.12, 0.12, 0.14, 0.49],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans_b,
+        )
+        self.add_section_heading('Part C — Begadkephat with Dagesh Lene (28–30)')
+        rows_c = [
+            ['28', 'בּ', '', '', '', ''],
+            ['29', 'כּ', '', '', '', ''],
+            ['30', 'פּ', '', '', '', ''],
+        ]
+        ans_c = [
+            ['28', 'בּ', 'Beth (dagesh lene)', 'b', 'b as in boy — hard stop', 'Begadkephat — hard pronunciation'],
+            ['29', 'כּ', 'Kaph (dagesh lene)', 'k', 'k as in king — hard stop', 'Begadkephat — hard pronunciation'],
+            ['30', 'פּ', 'Pe (dagesh lene)', 'p', 'p as in pan — hard stop', 'Begadkephat — hard pronunciation'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Letter', 'Name', 'Transliteration', 'Sound', 'Special Category'],
+            rows=rows_c,
+            col_ratios=[0.05, 0.08, 0.12, 0.12, 0.14, 0.49],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans_c,
+        )
+
+
+def build_ch1_letter_recognition(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch1', 'exercises',
+                               'ch1-letter-recognition')
+    path = os.path.join(out_dir, 'ch1-letter-recognition.pdf')
+    ex = Ch1LetterRecognitionExercise(
+        title='Chapter 1 — Hebrew Letter Recognition Exercise',
+        subtitle='Hebrew Alphabet — Letter Identification',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch2VowelIdentificationExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hebrew form shown, identify: (1) Vowel Name, '
+            '(2) Vowel Class (A / E / I / O / U / Reduced), '
+            '(3) Quantity (Long / Short / Reduced), '
+            '(4) Notes (e.g., mater lectionis present, composite sheva, dagesh forte).\n'
+            'Items 1–5: A-class. 6–10: E-class. 11–13: I-class. '
+            '14–17: O-class. 18–19: U-class. 20–21: Simple Sheva. '
+            '22–24: Hatef Shevas. 25: Dagesh Forte.'
+        )
+        rows = [
+            ['1', 'מָ', '', '', '', ''],
+            ['2', 'מַ', '', '', '', ''],
+            ['3', 'מָ (closed, unaccented)', '', '', '', ''],
+            ['4', 'מֲ', '', '', '', ''],
+            ['5', 'דָּבָר', '', '', '', ''],
+            ['6', 'מֵ', '', '', '', ''],
+            ['7', 'מֶ', '', '', '', ''],
+            ['8', 'מֵי', '', '', '', ''],
+            ['9', 'מֱ', '', '', '', ''],
+            ['10', 'בֵּן', '', '', '', ''],
+            ['11', 'מִ', '', '', '', ''],
+            ['12', 'מִי', '', '', '', ''],
+            ['13', 'כִּי', '', '', '', ''],
+            ['14', 'מֹ', '', '', '', ''],
+            ['15', 'מוֹ', '', '', '', ''],
+            ['16', 'מָ (= Qamets Hatuf)', '', '', '', ''],
+            ['17', 'מֳ', '', '', '', ''],
+            ['18', 'מֻ', '', '', '', ''],
+            ['19', 'מוּ', '', '', '', ''],
+            ['20', 'מְ (word-initial)', '', '', '', ''],
+            ['21', 'מְ (word-final)', '', '', '', ''],
+            ['22', 'הֲ', '', '', '', ''],
+            ['23', 'הֱ', '', '', '', ''],
+            ['24', 'הֳ', '', '', '', ''],
+            ['25', 'מַּ (dagesh forte + patah)', '', '', '', ''],
+        ]
+        ans = [
+            ['1', 'מָ', 'Qamets', 'A', 'Long', 'Standard long A; T-bar shape below consonant'],
+            ['2', 'מַ', 'Patah', 'A', 'Short', 'Standard short A; horizontal bar below consonant'],
+            ['3', 'מָ (closed, unaccented)', 'Qamets Hatuf', 'O', 'Short', 'Same shape as Qamets; O-class in closed unaccented syllable'],
+            ['4', 'מֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva; A-class; used under gutturals'],
+            ['5', 'דָּבָר', 'Qamets × 2', 'A', 'Long', 'Both vowels Qamets (long A); Dagesh Forte in dalet'],
+            ['6', 'מֵ', 'Tsere', 'E', 'Long', 'Standard long E; two dots horizontally below consonant'],
+            ['7', 'מֶ', 'Seghol', 'E', 'Short', 'Standard short E; three dots (inverted triangle)'],
+            ['8', 'מֵי', 'Tsere Yod', 'E', 'Long', 'Tsere with yod mater lectionis; yod is quiescent'],
+            ['9', 'מֱ', 'Hatef Seghol', 'E', 'Reduced', 'Composite sheva; E-class; used under gutturals'],
+            ['10', 'בֵּן', 'Tsere', 'E', 'Long', 'Long E under bet; dagesh lene in bet; final nun closes'],
+            ['11', 'מִ', 'Hireq', 'I', 'Short', 'Standard short I; single dot below consonant'],
+            ['12', 'מִי', 'Hireq Yod', 'I', 'Long', 'Hireq with yod mater lectionis; yod is quiescent'],
+            ['13', 'כִּי', 'Hireq Yod', 'I', 'Long', 'Long I with yod mater; dagesh lene in kaph'],
+            ['14', 'מֹ', 'Holem', 'O', 'Long', 'Long O; single dot above the letter to the upper left'],
+            ['15', 'מוֹ', 'Holem Vav', 'O', 'Long', 'Holem with vav mater lectionis; vav is quiescent'],
+            ['16', 'מָ (= Qamets Hatuf)', 'Qamets Hatuf', 'O', 'Short', 'O-class, short; same glyph as Qamets; closed unaccented syllable'],
+            ['17', 'מֳ', 'Hatef Qamets', 'O', 'Reduced', 'Composite sheva; O-class; least common hatef sheva'],
+            ['18', 'מֻ', 'Qibbuts', 'U', 'Short', 'Short U; three diagonal dots below consonant'],
+            ['19', 'מוּ', 'Shureq', 'U', 'Long', 'Long U; vav with a dot in its center; vav is mater'],
+            ['20', 'מְ (word-initial)', 'Vocal Sheva', 'Reduced', 'Reduced', 'Vocal — word must begin with a vowel sound; /ə/'],
+            ['21', 'מְ (word-final)', 'Silent Sheva', '—', '—', 'Silent — marks the close of the final syllable'],
+            ['22', 'הֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva; most common hatef; under א and ע'],
+            ['23', 'הֱ', 'Hatef Seghol', 'E', 'Reduced', 'Composite sheva; E-class; less common than Hatef Patah'],
+            ['24', 'הֳ', 'Hatef Qamets', 'O', 'Reduced', 'Composite sheva; O-class; least common of the three'],
+            ['25', 'מַּ (dagesh forte + patah)', 'Patah', 'A', 'Short', 'Patah under mem; dot inside mem is Dagesh Forte'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Form', 'Vowel Name', 'Class', 'Quantity', 'Notes'],
+            rows=rows,
+            col_ratios=[0.05, 0.10, 0.14, 0.08, 0.10, 0.53],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch2_vowel_identification(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch2', 'exercises',
+                               'ch2-vowel-identification')
+    path = os.path.join(out_dir, 'ch2-vowel-identification.pdf')
+    ex = Ch2VowelIdentificationExercise(
+        title='Chapter 2 — Vowel Identification Exercise',
+        subtitle='Hebrew Vowels — Identification and Classification',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch3SyllableDivisionExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each word: (1) divide into syllables using hyphens, '
+            '(2) label each syllable O (open) or C (closed), '
+            '(3) mark the stressed syllable with an asterisk (*), '
+            '(4) note any Qamets Hatuf (write QH in that column, or — if none).'
+        )
+        rows = [
+            ['1', 'אֱלֹהִים', '', '', '', ''],
+            ['2', 'בְּרֵאשִׁית', '', '', '', ''],
+            ['3', 'הָאָרֶץ', '', '', '', ''],
+            ['4', 'שָׁמַיִם', '', '', '', ''],
+            ['5', 'יְרוּשָׁלַיִם', '', '', '', ''],
+            ['6', 'דָּבָר', '', '', '', ''],
+            ['7', 'מֶלֶךְ', '', '', '', ''],
+            ['8', 'בְּרִית', '', '', '', ''],
+            ['9', 'שָׁבַת', '', '', '', ''],
+            ['10', 'נָבִיא', '', '', '', ''],
+            ['11', 'אֲדֹנָי', '', '', '', ''],
+            ['12', 'יִשְׂרָאֵל', '', '', '', ''],
+            ['13', 'כֹּהֵן', '', '', '', ''],
+            ['14', 'מִשְׁפָּט', '', '', '', ''],
+            ['15', 'תּוֹרָה', '', '', '', ''],
+            ['16', 'שָׁלוֹם', '', '', '', ''],
+            ['17', 'חֶסֶד', '', '', '', ''],
+            ['18', 'קֹדֶשׁ', '', '', '', ''],
+            ['19', 'אֶרֶץ', '', '', '', ''],
+            ['20', 'עַם', '', '', '', ''],
+        ]
+        ans = [
+            ['1', 'אֱלֹהִים', 'אֱ-לֹ-הִים', 'O-O-C', 'הִים*', '—'],
+            ['2', 'בְּרֵאשִׁית', 'בְּ-רֵא-שִׁית', 'O-O-C', 'שִׁית*', '—'],
+            ['3', 'הָאָרֶץ', 'הָ-אָ-רֶץ', 'O-O-C', 'רֶץ*', '—'],
+            ['4', 'שָׁמַיִם', 'שָׁ-מַ-יִם', 'O-O-C', 'יִם*', '—'],
+            ['5', 'יְרוּשָׁלַיִם', 'יְ-רוּ-שָׁ-לַ-יִם', 'O-O-O-O-C', 'יִם*', '—'],
+            ['6', 'דָּבָר', 'דָּ-בָר', 'O-O', 'בָר*', '—'],
+            ['7', 'מֶלֶךְ', 'מֶ-לֶךְ', 'O-C', 'לֶךְ*', '—'],
+            ['8', 'בְּרִית', 'בְּ-רִית', 'O-C', 'רִית*', '—'],
+            ['9', 'שָׁבַת', 'שָׁ-בַת', 'O-C', 'בַת*', '—'],
+            ['10', 'נָבִיא', 'נָ-בִיא', 'O-O', 'בִיא*', '—'],
+            ['11', 'אֲדֹנָי', 'אֲ-דֹ-נָי', 'O-O-O', 'נָי*', '—'],
+            ['12', 'יִשְׂרָאֵל', 'יִשׂ-רָ-אֵל', 'C-O-C', 'אֵל*', '—'],
+            ['13', 'כֹּהֵן', 'כֹּ-הֵן', 'O-C', 'הֵן*', '—'],
+            ['14', 'מִשְׁפָּט', 'מִשׁ-פָּט', 'C-C', 'פָּט*', '—'],
+            ['15', 'תּוֹרָה', 'תּוֹ-רָה', 'O-O', 'רָה*', '—'],
+            ['16', 'שָׁלוֹם', 'שָׁ-לוֹם', 'O-C', 'לוֹם*', '—'],
+            ['17', 'חֶסֶד', 'חֶ-סֶד', 'O-C', 'סֶד*', '—'],
+            ['18', 'קֹדֶשׁ', 'קֹ-דֶשׁ', 'O-C', 'דֶשׁ*', '—'],
+            ['19', 'אֶרֶץ', 'אֶ-רֶץ', 'O-C', 'רֶץ*', '—'],
+            ['20', 'עַם', 'עַם', 'C', 'עַם*', '—'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Word', 'Syllable Division', 'Types (O/C)', 'Stress', 'Qamets Hatuf?'],
+            rows=rows,
+            col_ratios=[0.05, 0.12, 0.20, 0.14, 0.10, 0.39],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch3_syllable_division(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch3', 'exercises',
+                               'ch3-syllable-division')
+    path = os.path.join(out_dir, 'ch3-syllable-division.pdf')
+    ex = Ch3SyllableDivisionExercise(
+        title='Chapter 3 — Syllable Division Exercise',
+        subtitle='Hebrew Syllables — Open, Closed, Stress, Qamets Hatuf',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch4NounParsingExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, give: (1) Gender (m./f.), (2) Number (s./pl./du.), '
+            '(3) State (abs./cstr.), (4) Lexical Form (dictionary form), (5) Gloss.'
+        )
+        rows = [
+            ['1', 'מֶלֶךְ', '', '', '', '', ''],
+            ['2', 'מְלָכִים', '', '', '', '', ''],
+            ['3', 'מַלְכֵי', '', '', '', '', ''],
+            ['4', 'תּוֹרָה', '', '', '', '', ''],
+            ['5', 'תּוֹרוֹת', '', '', '', '', ''],
+            ['6', 'דְּבָרִים', '', '', '', '', ''],
+            ['7', 'דִּבְרֵי', '', '', '', '', ''],
+            ['8', 'בָּנִים', '', '', '', '', ''],
+            ['9', 'בָּנוֹת', '', '', '', '', ''],
+            ['10', 'אֲנָשִׁים', '', '', '', '', ''],
+            ['11', 'נָשִׁים', '', '', '', '', ''],
+            ['12', 'יָדַיִם', '', '', '', '', ''],
+            ['13', 'עֵינַיִם', '', '', '', '', ''],
+            ['14', 'עָרִים', '', '', '', '', ''],
+            ['15', 'בָּתִּים', '', '', '', '', ''],
+            ['16', 'יָמִים', '', '', '', '', ''],
+            ['17', 'נֶפֶשׁ', '', '', '', '', ''],
+            ['18', 'נְפָשׁוֹת', '', '', '', '', ''],
+            ['19', 'סְפָרִים', '', '', '', '', ''],
+            ['20', 'שָׁנָה', '', '', '', '', ''],
+            ['21', 'שָׁנָתַיִם', '', '', '', '', ''],
+            ['22', 'אֲרָצוֹת', '', '', '', '', ''],
+            ['23', 'בְּנֵי', '', '', '', '', ''],
+            ['24', 'מַלְכַּת', '', '', '', '', ''],
+            ['25', 'שְׁנַת', '', '', '', '', ''],
+        ]
+        ans = [
+            ['1', 'מֶלֶךְ', 'm.', 's.', 'abs.', 'מֶלֶךְ', 'king'],
+            ['2', 'מְלָכִים', 'm.', 'pl.', 'abs.', 'מֶלֶךְ', 'kings'],
+            ['3', 'מַלְכֵי', 'm.', 'pl.', 'cstr.', 'מֶלֶךְ', 'kings of'],
+            ['4', 'תּוֹרָה', 'f.', 's.', 'abs.', 'תּוֹרָה', 'law, instruction'],
+            ['5', 'תּוֹרוֹת', 'f.', 'pl.', 'abs./cstr.', 'תּוֹרָה', 'laws'],
+            ['6', 'דְּבָרִים', 'm.', 'pl.', 'abs.', 'דָּבָר', 'words, things'],
+            ['7', 'דִּבְרֵי', 'm.', 'pl.', 'cstr.', 'דָּבָר', 'words of'],
+            ['8', 'בָּנִים', 'm.', 'pl.', 'abs.', 'בֵּן', 'sons'],
+            ['9', 'בָּנוֹת', 'f.', 'pl.', 'abs.', 'בַּת', 'daughters'],
+            ['10', 'אֲנָשִׁים', 'm.', 'pl.', 'abs.', 'אִישׁ', 'men'],
+            ['11', 'נָשִׁים', 'f.', 'pl.', 'abs.', 'אִשָּׁה', 'women'],
+            ['12', 'יָדַיִם', 'f.', 'du.', 'abs.', 'יָד', 'two hands'],
+            ['13', 'עֵינַיִם', 'f.', 'du.', 'abs.', 'עַיִן', 'two eyes'],
+            ['14', 'עָרִים', 'f.', 'pl.', 'abs.', 'עִיר', 'cities'],
+            ['15', 'בָּתִּים', 'm.', 'pl.', 'abs.', 'בַּיִת', 'houses'],
+            ['16', 'יָמִים', 'm.', 'pl.', 'abs.', 'יוֹם', 'days'],
+            ['17', 'נֶפֶשׁ', 'f.', 's.', 'abs.', 'נֶפֶשׁ', 'soul, life'],
+            ['18', 'נְפָשׁוֹת', 'f.', 'pl.', 'abs.', 'נֶפֶשׁ', 'souls'],
+            ['19', 'סְפָרִים', 'm.', 'pl.', 'abs.', 'סֵפֶר', 'books'],
+            ['20', 'שָׁנָה', 'f.', 's.', 'abs.', 'שָׁנָה', 'year'],
+            ['21', 'שָׁנָתַיִם', 'f.', 'du.', 'abs.', 'שָׁנָה', 'two years'],
+            ['22', 'אֲרָצוֹת', 'f.', 'pl.', 'abs.', 'אֶרֶץ', 'lands, earth'],
+            ['23', 'בְּנֵי', 'm.', 'pl.', 'cstr.', 'בֵּן', 'sons of'],
+            ['24', 'מַלְכַּת', 'f.', 's.', 'cstr.', 'מַלְכָּה', 'queen of'],
+            ['25', 'שְׁנַת', 'f.', 's.', 'cstr.', 'שָׁנָה', 'year of'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Form', 'Gender', 'Number', 'State', 'Lexical Form', 'Gloss'],
+            rows=rows,
+            col_ratios=[0.05, 0.13, 0.08, 0.08, 0.08, 0.14, 0.44],
+            heb_cols=[1, 5],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch4_noun_parsing(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch4', 'exercises',
+                               'ch4-noun-parsing')
+    path = os.path.join(out_dir, 'ch4-noun-parsing.pdf')
+    ex = Ch4NounParsingExercise(
+        title='Chapter 4 — Noun Parsing Drill',
+        subtitle='Hebrew Nouns — Gender, Number, State, Lexical Form',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch5ArticleAndVavExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hebrew word or phrase: '
+            '(1) Article? — Yes/No; '
+            '(2) Article Form — if yes, what form? '
+            '(3) Conj. ו? — Yes/No; '
+            '(4) Conj. Form — if yes, what form? '
+            '(5) Translation.'
+        )
+        hdrs = ['#', 'Hebrew', 'Article?', 'Article Form', 'Conj. ו?', 'Conj. Form', 'Translation']
+        cr = [0.05, 0.12, 0.08, 0.16, 0.10, 0.12, 0.37]
+        hc = [1]
+
+        self.add_section_heading('Part A — Article Before Normal Consonants (1–8)')
+        rows_a = [
+            ['1', 'הַמֶּלֶךְ', '', '', '', '', ''],
+            ['2', 'הַבַּיִת', '', '', '', '', ''],
+            ['3', 'הַיּוֹם', '', '', '', '', ''],
+            ['4', 'הַדָּבָר', '', '', '', '', ''],
+            ['5', 'הַלַּיְלָה', '', '', '', '', ''],
+            ['6', 'הַבֵּן', '', '', '', '', ''],
+            ['7', 'הַסֵּפֶר', '', '', '', '', ''],
+            ['8', 'הַנָּבִיא', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'הַמֶּלֶךְ', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the king'],
+            ['2', 'הַבַּיִת', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the house'],
+            ['3', 'הַיּוֹם', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the day'],
+            ['4', 'הַדָּבָר', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the word / the thing'],
+            ['5', 'הַלַּיְלָה', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the night'],
+            ['6', 'הַבֵּן', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the son'],
+            ['7', 'הַסֵּפֶר', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the book / the scroll'],
+            ['8', 'הַנָּבִיא', 'Yes', 'הַ + dagesh forte', 'No', '—', 'the prophet'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Article Before Gutturals (9–13)')
+        rows_b = [
+            ['9', 'הָאִישׁ', '', '', '', '', ''],
+            ['10', 'הָאָרֶץ', '', '', '', '', ''],
+            ['11', 'הֶעָם', '', '', '', '', ''],
+            ['12', 'הָהָר', '', '', '', '', ''],
+            ['13', 'הָרוּחַ', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['9', 'הָאִישׁ', 'Yes', 'הָ (qamets; no dagesh)', 'No', '—', 'the man'],
+            ['10', 'הָאָרֶץ', 'Yes', 'הָ (qamets; no dagesh)', 'No', '—', 'the land / the earth'],
+            ['11', 'הֶעָם', 'Yes', 'הֶ (segol; no dagesh)', 'No', '—', 'the people'],
+            ['12', 'הָהָר', 'Yes', 'הָ (qamets; no dagesh)', 'No', '—', 'the mountain'],
+            ['13', 'הָרוּחַ', 'Yes', 'הָ (qamets; no dagesh)', 'No', '—', 'the spirit / the wind'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — Conjunction Only (14–18)')
+        rows_c = [
+            ['14', 'וְדָבָר', '', '', '', '', ''],
+            ['15', 'וּמֶלֶךְ', '', '', '', '', ''],
+            ['16', 'וּבֵן', '', '', '', '', ''],
+            ['17', 'וְאִישׁ', '', '', '', '', ''],
+            ['18', 'וָאֹמַר', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['14', 'וְדָבָר', 'No', '—', 'Yes', 'וְ (sheva)', 'and a word'],
+            ['15', 'וּמֶלֶךְ', 'No', '—', 'Yes', 'וּ (shureq)', 'and a king'],
+            ['16', 'וּבֵן', 'No', '—', 'Yes', 'וּ (shureq)', 'and a son'],
+            ['17', 'וְאִישׁ', 'No', '—', 'Yes', 'וְ (sheva)', 'and a man'],
+            ['18', 'וָאֹמַר', 'No', '—', 'Yes', 'וָ (qamets)', 'and I said / then I said'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Part D — Both Article and Conjunction (19–23)')
+        rows_d = [
+            ['19', 'וְהַמֶּלֶךְ', '', '', '', '', ''],
+            ['20', 'וְהָאָרֶץ', '', '', '', '', ''],
+            ['21', 'וְהָאִישׁ', '', '', '', '', ''],
+            ['22', 'וְהַיּוֹם', '', '', '', '', ''],
+            ['23', 'וְהֶעָם', '', '', '', '', ''],
+        ]
+        ans_d = [
+            ['19', 'וְהַמֶּלֶךְ', 'Yes', 'הַ + dagesh forte', 'Yes', 'וְ (sheva)', 'and the king'],
+            ['20', 'וְהָאָרֶץ', 'Yes', 'הָ (qamets; no dagesh)', 'Yes', 'וְ (sheva)', 'and the land / and the earth'],
+            ['21', 'וְהָאִישׁ', 'Yes', 'הָ (qamets; no dagesh)', 'Yes', 'וְ (sheva)', 'and the man'],
+            ['22', 'וְהַיּוֹם', 'Yes', 'הַ + dagesh forte', 'Yes', 'וְ (sheva)', 'and the day'],
+            ['23', 'וְהֶעָם', 'Yes', 'הֶ (segol; no dagesh)', 'Yes', 'וְ (sheva)', 'and the people'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+        self.add_section_heading('Part E — Neither (24–25)')
+        rows_e = [
+            ['24', 'מֶלֶךְ', '', '', '', '', ''],
+            ['25', 'דָּבָר', '', '', '', '', ''],
+        ]
+        ans_e = [
+            ['24', 'מֶלֶךְ', 'No', '—', 'No', '—', 'a king'],
+            ['25', 'דָּבָר', 'No', '—', 'No', '—', 'a word / a thing'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_e, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_e)
+
+
+def build_ch5_article_and_vav(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch5', 'exercises',
+                               'ch5-article-and-vav')
+    path = os.path.join(out_dir, 'ch5-article-and-vav.pdf')
+    ex = Ch5ArticleAndVavExercise(
+        title='Chapter 5 — Definite Article and Conjunction ו',
+        subtitle='BBH Chapter 5 · 25 items',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch6PrepositionParsingExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hebrew prepositional phrase: '
+            '(1) identify the preposition as it appears, '
+            '(2) give the base (dictionary) form of the preposition, '
+            '(3) describe any vowel change and explain why it occurred, '
+            '(4) identify the object noun, '
+            '(5) translate the phrase.'
+        )
+        hdrs = ['#', 'Hebrew', 'Preposition', 'Base Form', 'Change / Reason', 'Object', 'Translation']
+        cr = [0.05, 0.12, 0.10, 0.08, 0.22, 0.10, 0.33]
+        hc = [1]
+
+        self.add_section_heading('Part A — Inseparable Prepositions: Standard/Sheva Rules (1–8)')
+        rows_a = [
+            ['1', 'בְּדָבָר', '', '', '', '', ''],
+            ['2', 'לְמֶלֶךְ', '', '', '', '', ''],
+            ['3', 'כְּאִישׁ', '', '', '', '', ''],
+            ['4', 'בִּשְׁמוּאֵל', '', '', '', '', ''],
+            ['5', 'לִשְׁלֹמֹה', '', '', '', '', ''],
+            ['6', 'בֶּאֱמֶת', '', '', '', '', ''],
+            ['7', 'לֵאלֹהִים', '', '', '', '', ''],
+            ['8', 'כֶּחָכְמָה', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'בְּדָבָר', 'בְּ', 'בְּ', 'None — default sheva', 'דָּבָר', 'in a word'],
+            ['2', 'לְמֶלֶךְ', 'לְ', 'לְ', 'None — default sheva', 'מֶלֶךְ', 'to a king / for a king'],
+            ['3', 'כְּאִישׁ', 'כְּ', 'כְּ', 'None — default sheva', 'אִישׁ', 'like a man'],
+            ['4', 'בִּשְׁמוּאֵל', 'בִּ', 'בְּ', 'Sheva → hireq: two consecutive shevas', 'שְׁמוּאֵל', 'in/with Samuel'],
+            ['5', 'לִשְׁלֹמֹה', 'לִ', 'לְ', 'Sheva → hireq: two consecutive shevas', 'שְׁלֹמֹה', 'to Solomon'],
+            ['6', 'בֶּאֱמֶת', 'בֶּ', 'בְּ', 'Composite sheva: אֱ (hateph seghol) → prep takes seghol', 'אֱמֶת', 'in truth'],
+            ['7', 'לֵאלֹהִים', 'לֵ', 'לְ', 'Composite sheva matching + lengthening before א to tsere', 'אֱלֹהִים', 'to God'],
+            ['8', 'כֶּחָכְמָה', 'כֶּ', 'כְּ', 'Composite sheva matching; prep takes seghol by assimilation', 'חָכְמָה', 'like wisdom'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Inseparable Prepositions Fused with Article (9–16)')
+        rows_b = [
+            ['9', 'בַּמֶּלֶךְ', '', '', '', '', ''],
+            ['10', 'לַשָּׁמַיִם', '', '', '', '', ''],
+            ['11', 'כַּיּוֹם', '', '', '', '', ''],
+            ['12', 'בַּבַּיִת', '', '', '', '', ''],
+            ['13', 'לָהָר', '', '', '', '', ''],
+            ['14', 'בָּאָרֶץ', '', '', '', '', ''],
+            ['15', 'לָעָם', '', '', '', '', ''],
+            ['16', 'כָּהָאִישׁ', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['9', 'בַּמֶּלֶךְ', 'בַּ', 'בְּ', 'Article fusion: הַ drops; patach transfers; dagesh forte in מ', 'מֶלֶךְ', 'in the king'],
+            ['10', 'לַשָּׁמַיִם', 'לַ', 'לְ', 'Article fusion: הַ drops; patach transfers; dagesh forte in שׁ', 'שָּׁמַיִם', 'to the heavens'],
+            ['11', 'כַּיּוֹם', 'כַּ', 'כְּ', 'Article fusion: הַ drops; patach transfers; dagesh forte in י', 'יּוֹם', 'like the day'],
+            ['12', 'בַּבַּיִת', 'בַּ', 'בְּ', 'Article fusion: הַ drops; patach transfers; dagesh forte in ב', 'בַּיִת', 'in the house'],
+            ['13', 'לָהָר', 'לָ', 'לְ', 'Article fusion (guttural): ה rejects dagesh; patach lengthens → qamets', 'הָר', 'to the mountain'],
+            ['14', 'בָּאָרֶץ', 'בָּ', 'בְּ', 'Article fusion (guttural): א rejects dagesh; patach → qamets', 'אָרֶץ', 'in the earth / in the land'],
+            ['15', 'לָעָם', 'לָ', 'לְ', 'Article fusion (guttural): ע rejects dagesh; patach → qamets', 'עָם', 'to the people'],
+            ['16', 'כָּהָאִישׁ', 'כָּ', 'כְּ', 'Article fusion (guttural): א rejects dagesh; qamets under כָּ', 'אִישׁ', 'like the man'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — מִן: Independent, Prefixed, and Compensatory (17–21)')
+        rows_c = [
+            ['17', 'מִן הַמֶּלֶךְ', '', '', '', '', ''],
+            ['18', 'מִמֶּלֶךְ', '', '', '', '', ''],
+            ['19', 'מִיַּד', '', '', '', '', ''],
+            ['20', 'מֵהָאָרֶץ', '', '', '', '', ''],
+            ['21', 'מֵאֱלֹהִים', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['17', 'מִן הַמֶּלֶךְ', 'מִן', 'מִן', 'No change — independent before article', 'הַמֶּלֶךְ', 'from the king'],
+            ['18', 'מִמֶּלֶךְ', 'מִ', 'מִן', 'Nun assimilates; dagesh forte in מ', 'מֶלֶךְ', 'from a king'],
+            ['19', 'מִיַּד', 'מִ', 'מִן', 'Nun assimilates; dagesh forte in י', 'יָד', 'from the hand'],
+            ['20', 'מֵהָאָרֶץ', 'מֵ', 'מִן', 'Compensatory: ה (guttural) rejects dagesh; hireq → tsere', 'הָאָרֶץ', 'from the earth'],
+            ['21', 'מֵאֱלֹהִים', 'מֵ', 'מִן', 'Compensatory: א (guttural) rejects dagesh; hireq → tsere', 'אֱלֹהִים', 'from God'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Part D — Independent Prepositions (22–25)')
+        rows_d = [
+            ['22', 'אֶל הָעִיר', '', '', '', '', ''],
+            ['23', 'עַל הַשָּׁמַיִם', '', '', '', '', ''],
+            ['24', 'עִם הָעַם', '', '', '', '', ''],
+            ['25', 'אֵת הַמֶּלֶךְ', '', '', '', '', ''],
+        ]
+        ans_d = [
+            ['22', 'אֶל הָעִיר', 'אֶל', 'אֶל', 'None — independent preposition', 'הָעִיר', 'to the city'],
+            ['23', 'עַל הַשָּׁמַיִם', 'עַל', 'עַל', 'None — independent preposition', 'הַשָּׁמַיִם', 'upon the heavens'],
+            ['24', 'עִם הָעַם', 'עִם', 'עִם', 'None — independent preposition', 'הָעַם', 'with the people'],
+            ['25', 'אֵת הַמֶּלֶךְ', 'אֵת (DOM)', 'אֵת', 'None — direct object marker', 'הַמֶּלֶךְ', '[marks the king as definite direct object]'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+
+def build_ch6_preposition_parsing(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch6', 'exercises',
+                               'ch6-preposition-parsing')
+    path = os.path.join(out_dir, 'ch6-preposition-parsing.pdf')
+    ex = Ch6PrepositionParsingExercise(
+        title='Chapter 6 — Preposition Parsing Drill',
+        subtitle='Hebrew Prepositions — Inseparable, Article Fusion, מִן, Independent',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch7–Ch12 builders
+# ---------------------------------------------------------------------------
+
+class Ch7AdjectiveUsageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hebrew phrase: '
+            '(1) Use — Identify: Attributive (Def./Indef.) / Predicate / Substantival / Comparative / Superlative; '
+            '(2) Adjective — give the adjective form shown; '
+            '(3) Agreement — gender and number (ms/fs/mp/fp) and note whether it agrees; '
+            '(4) Translation.'
+        )
+        hdrs = ['#', 'Hebrew', 'Use', 'Adjective', 'Agreement', 'Translation']
+        cr = [0.05, 0.17, 0.15, 0.15, 0.22, 0.26]
+        hc = [1, 3]
+
+        self.add_section_heading('Part A — Attributive Adjectives (Definite) (1–5)')
+        rows_a = [
+            ['1', 'הַמֶּלֶךְ הַגָּדוֹל', '', '', '', ''],
+            ['2', 'הָאִשָּׁה הַטּוֹבָה', '', '', '', ''],
+            ['3', 'הָעִיר הַגְּדוֹלָה', '', '', '', ''],
+            ['4', 'הָאֲנָשִׁים הַגִּבּוֹרִים', '', '', '', ''],
+            ['5', 'הַדְּבָרִים הַטּוֹבִים', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'הַמֶּלֶךְ הַגָּדוֹל', 'Attributive (def.)', 'הַגָּדוֹל', 'ms; agrees with מֶלֶךְ (ms)', 'the great king'],
+            ['2', 'הָאִשָּׁה הַטּוֹבָה', 'Attributive (def.)', 'הַטּוֹבָה', 'fs; agrees with אִשָּׁה (fs)', 'the good woman'],
+            ['3', 'הָעִיר הַגְּדוֹלָה', 'Attributive (def.)', 'הַגְּדוֹלָה', 'fs; agrees with עִיר (fs)', 'the great city'],
+            ['4', 'הָאֲנָשִׁים הַגִּבּוֹרִים', 'Attributive (def.)', 'הַגִּבּוֹרִים', 'mp; agrees with אֲנָשִׁים (mp)', 'the mighty men'],
+            ['5', 'הַדְּבָרִים הַטּוֹבִים', 'Attributive (def.)', 'הַטּוֹבִים', 'mp; agrees with דְּבָרִים (mp)', 'the good words/things'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Attributive Adjectives (Indefinite) (6–10)')
+        rows_b = [
+            ['6', 'מֶלֶךְ גָּדוֹל', '', '', '', ''],
+            ['7', 'אִשָּׁה טוֹבָה', '', '', '', ''],
+            ['8', 'אֶרֶץ גְּדוֹלָה', '', '', '', ''],
+            ['9', 'עַם קָדוֹשׁ', '', '', '', ''],
+            ['10', 'דָּבָר חָדָשׁ', '', '', '', ''],
+        ]
+        ans_b = [
+            ['6', 'מֶלֶךְ גָּדוֹל', 'Attributive (indef.)', 'גָּדוֹל', 'ms; agrees with מֶלֶךְ (ms)', 'a great king'],
+            ['7', 'אִשָּׁה טוֹבָה', 'Attributive (indef.)', 'טוֹבָה', 'fs; agrees with אִשָּׁה (fs)', 'a good woman'],
+            ['8', 'אֶרֶץ גְּדוֹלָה', 'Attributive (indef.)', 'גְּדוֹלָה', 'fs; agrees with אֶרֶץ (fs)', 'a great land'],
+            ['9', 'עַם קָדוֹשׁ', 'Attributive (indef.)', 'קָדוֹשׁ', 'ms; agrees with עַם (ms)', 'a holy people'],
+            ['10', 'דָּבָר חָדָשׁ', 'Attributive (indef.)', 'חָדָשׁ', 'ms; agrees with דָּבָר (ms)', 'a new word/thing'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — Predicate Adjectives (11–18)')
+        rows_c = [
+            ['11', 'הַמֶּלֶךְ גָּדוֹל', '', '', '', ''],
+            ['12', 'גָּדוֹל הַמֶּלֶךְ', '', '', '', ''],
+            ['13', 'הָאִשָּׁה טוֹבָה', '', '', '', ''],
+            ['14', 'טוֹב הַדָּבָר', '', '', '', ''],
+            ['15', 'הָאָרֶץ טוֹבָה', '', '', '', ''],
+            ['16', 'הַגִּבּוֹרִים חֲזָקִים', '', '', '', ''],
+            ['17', 'יָשָׁר הַדֶּרֶךְ', '', '', '', ''],
+            ['18', 'כָּבֵד הַדָּבָר', '', '', '', ''],
+        ]
+        ans_c = [
+            ['11', 'הַמֶּלֶךְ גָּדוֹל', 'Predicate', 'גָּדוֹל', 'ms; agrees with מֶלֶךְ; no article', 'The king is great'],
+            ['12', 'גָּדוֹל הַמֶּלֶךְ', 'Predicate', 'גָּדוֹל', 'ms; adj-first word order; no article', 'The king is great'],
+            ['13', 'הָאִשָּׁה טוֹבָה', 'Predicate', 'טוֹבָה', 'fs; agrees with אִשָּׁה; no article', 'The woman is good'],
+            ['14', 'טוֹב הַדָּבָר', 'Predicate', 'טוֹב', 'ms; adj-first; no article', 'The word/matter is good'],
+            ['15', 'הָאָרֶץ טוֹבָה', 'Predicate', 'טוֹבָה', 'fs; agrees with אֶרֶץ; no article', 'The land is good'],
+            ['16', 'הַגִּבּוֹרִים חֲזָקִים', 'Predicate', 'חֲזָקִים', 'mp; agrees with גִּבּוֹרִים; no article', 'The warriors are strong'],
+            ['17', 'יָשָׁר הַדֶּרֶךְ', 'Predicate', 'יָשָׁר', 'ms; adj-first; no article', 'The way is straight/upright'],
+            ['18', 'כָּבֵד הַדָּבָר', 'Predicate', 'כָּבֵד', 'ms; adj-first (stative pattern); no article', 'The matter is heavy/serious'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Part D — Substantival Adjectives (19–22)')
+        rows_d = [
+            ['19', 'הַטּוֹב', '', '', '', ''],
+            ['20', 'הָרָע', '', '', '', ''],
+            ['21', 'הַקְּדֹשִׁים', '', '', '', ''],
+            ['22', 'רַבִּים', '', '', '', ''],
+        ]
+        ans_d = [
+            ['19', 'הַטּוֹב', 'Substantival', 'הַטּוֹב', 'ms with article', 'the good (one/thing)'],
+            ['20', 'הָרָע', 'Substantival', 'הָרָע', 'ms with article', 'the evil (one/thing)'],
+            ['21', 'הַקְּדֹשִׁים', 'Substantival', 'הַקְּדֹשִׁים', 'mp with article', 'the holy ones; the saints'],
+            ['22', 'רַבִּים', 'Substantival', 'רַבִּים', 'mp without article', 'many (people); a multitude'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+        self.add_section_heading('Part E — Comparative and Superlative (23–25)')
+        rows_e = [
+            ['23', 'טוֹב מִדְּבַשׁ', '', '', '', ''],
+            ['24', 'הַקָּטֹן', '', '', '', ''],
+            ['25', 'עָרוּם מִכֹּל חַיַּת הַשָּׂדֶה', '', '', '', ''],
+        ]
+        ans_e = [
+            ['23', 'טוֹב מִדְּבַשׁ', 'Comparative', 'טוֹב', 'ms; compared via מִן', 'better than honey'],
+            ['24', 'הַקָּטֹן', 'Superlative', 'הַקָּטֹן', 'ms with article; no head noun', 'the youngest; the smallest'],
+            ['25', 'עָרוּם מִכֹּל חַיַּת הַשָּׂדֶה', 'Comparative (superlative in context)', 'עָרוּם', 'ms; compared via מִכֹּל', 'more crafty than any beast of the field'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_e, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_e)
+
+
+def build_ch7_adjective_usage(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch7', 'exercises',
+                               'ch7-adjective-usage')
+    path = os.path.join(out_dir, 'ch7-adjective-usage.pdf')
+    ex = Ch7AdjectiveUsageExercise(
+        title='Chapter 7 — Adjective Usage Drill',
+        subtitle='Hebrew Adjectives — Attributive, Predicate, and Substantival Uses',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch8PronounIdentificationExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each item: (1) Identify the pronoun type '
+            '(Personal / Demonstrative / Relative / Interrogative), '
+            '(2) Isolate the pronoun, '
+            '(3) Parse it — give Person, Gender, Number (PGN) where applicable; '
+            'for Relative and Interrogative write "indecl.", '
+            '(4) Translate the full phrase.'
+        )
+        rows = [
+            ['1', 'אֲנִי יְהוָה אֱלֹהֵיכֶם', '', '', '', ''],
+            ['2', 'אַתָּה עַבְדִּי', '', '', '', ''],
+            ['3', 'הוּא הַכֹּהֵן', '', '', '', ''],
+            ['4', 'הִיא הַמַּלְכָּה', '', '', '', ''],
+            ['5', 'אֲנַחְנוּ עֲבָדֶיךָ', '', '', '', ''],
+            ['6', 'אַתֶּם עֵדַי', '', '', '', ''],
+            ['7', 'אָנֹכִי הָאִישׁ', '', '', '', ''],
+            ['8', 'הֵם הַכֹּהֲנִים', '', '', '', ''],
+            ['9', 'הָאִישׁ הַזֶּה', '', '', '', ''],
+            ['10', 'הָאִשָּׁה הַזֹּאת', '', '', '', ''],
+            ['11', 'הַדְּבָרִים הָאֵלֶּה', '', '', '', ''],
+            ['12', 'זֶה הָאִישׁ', '', '', '', ''],
+            ['13', 'זֹאת הָאָרֶץ', '', '', '', ''],
+            ['14', 'בַּיּוֹם הַהוּא', '', '', '', ''],
+            ['15', 'בָּעֵת הַהִיא', '', '', '', ''],
+            ['16', 'הָאִישׁ אֲשֶׁר בָּא', '', '', '', ''],
+            ['17', 'הָאִשָּׁה אֲשֶׁר רָאִיתִי', '', '', '', ''],
+            ['18', 'הָאָרֶץ אֲשֶׁר נָתַן יְהוָה לָנוּ', '', '', '', ''],
+            ['19', 'הָאִישׁ אֲשֶׁר עָבַד אֶת יְהוָה', '', '', '', ''],
+            ['20', 'הַמִּצְוָה אֲשֶׁר צִוִּיתִיךָ', '', '', '', ''],
+            ['21', 'הַדָּבָר אֲשֶׁר שָׁמַעְתָּ', '', '', '', ''],
+            ['22', 'מִי אַתָּה', '', '', '', ''],
+            ['23', 'מַה זֶּה', '', '', '', ''],
+            ['24', 'מִי הָאִישׁ הַזֶּה', '', '', '', ''],
+            ['25', 'מַה עָשִׂיתָ', '', '', '', ''],
+        ]
+        ans = [
+            ['1', 'אֲנִי יְהוָה אֱלֹהֵיכֶם', 'Personal', 'אֲנִי', '1cs', 'I am the LORD your God'],
+            ['2', 'אַתָּה עַבְדִּי', 'Personal', 'אַתָּה', '2ms', 'You are my servant'],
+            ['3', 'הוּא הַכֹּהֵן', 'Personal', 'הוּא', '3ms', 'He is the priest'],
+            ['4', 'הִיא הַמַּלְכָּה', 'Personal', 'הִיא', '3fs', 'She is the queen'],
+            ['5', 'אֲנַחְנוּ עֲבָדֶיךָ', 'Personal', 'אֲנַחְנוּ', '1cp', 'We are your servants'],
+            ['6', 'אַתֶּם עֵדַי', 'Personal', 'אַתֶּם', '2mp', 'You are my witnesses'],
+            ['7', 'אָנֹכִי הָאִישׁ', 'Personal', 'אָנֹכִי', '1cs', 'I am the man'],
+            ['8', 'הֵם הַכֹּהֲנִים', 'Personal', 'הֵם', '3mp', 'They are the priests'],
+            ['9', 'הָאִישׁ הַזֶּה', 'Demonstrative', 'הַזֶּה', 'ms (near)', 'this man'],
+            ['10', 'הָאִשָּׁה הַזֹּאת', 'Demonstrative', 'הַזֹּאת', 'fs (near)', 'this woman'],
+            ['11', 'הַדְּבָרִים הָאֵלֶּה', 'Demonstrative', 'הָאֵלֶּה', 'cp (near)', 'these words/things'],
+            ['12', 'זֶה הָאִישׁ', 'Demonstrative', 'זֶה', 'ms (near)', 'This is the man'],
+            ['13', 'זֹאת הָאָרֶץ', 'Demonstrative', 'זֹאת', 'fs (near)', 'This is the land'],
+            ['14', 'בַּיּוֹם הַהוּא', 'Demonstrative', 'הַהוּא', 'ms (far)', 'on that day'],
+            ['15', 'בָּעֵת הַהִיא', 'Demonstrative', 'הַהִיא', 'fs (far)', 'at that time'],
+            ['16', 'הָאִישׁ אֲשֶׁר בָּא', 'Relative', 'אֲשֶׁר', 'indecl.', 'the man who came'],
+            ['17', 'הָאִשָּׁה אֲשֶׁר רָאִיתִי', 'Relative', 'אֲשֶׁר', 'indecl.', 'the woman whom I saw'],
+            ['18', 'הָאָרֶץ אֲשֶׁר נָתַן יְהוָה לָנוּ', 'Relative', 'אֲשֶׁר', 'indecl.', 'the land that the LORD gave to us'],
+            ['19', 'הָאִישׁ אֲשֶׁר עָבַד אֶת יְהוָה', 'Relative', 'אֲשֶׁר', 'indecl.', 'the man who served the LORD'],
+            ['20', 'הַמִּצְוָה אֲשֶׁר צִוִּיתִיךָ', 'Relative', 'אֲשֶׁר', 'indecl.', 'the commandment that I commanded you'],
+            ['21', 'הַדָּבָר אֲשֶׁר שָׁמַעְתָּ', 'Relative', 'אֲשֶׁר', 'indecl.', 'the word/thing that you heard'],
+            ['22', 'מִי אַתָּה', 'Interrogative', 'מִי', 'indecl.', 'Who are you?'],
+            ['23', 'מַה זֶּה', 'Interrogative', 'מַה', 'indecl.', 'What is this?'],
+            ['24', 'מִי הָאִישׁ הַזֶּה', 'Interrogative', 'מִי', 'indecl.', 'Who is this man?'],
+            ['25', 'מַה עָשִׂיתָ', 'Interrogative', 'מַה', 'indecl.', 'What have you done?'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Hebrew', 'Pronoun Type', 'Pronoun', 'Parse (PGN)', 'Translation'],
+            rows=rows,
+            col_ratios=[0.05, 0.22, 0.14, 0.12, 0.10, 0.37],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch8_pronoun_identification(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch8', 'exercises',
+                               'ch8-pronoun-identification')
+    path = os.path.join(out_dir, 'ch8-pronoun-identification.pdf')
+    ex = Ch8PronounIdentificationExercise(
+        title='Chapter 8 — Pronoun Identification Drill',
+        subtitle='Personal, Demonstrative, Relative, and Interrogative Pronouns',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch9SuffixParsingExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hebrew form below: '
+            '(1) Base Word — identify the underlying noun, preposition, or particle; '
+            '(2) Suffix — write the suffix element only; '
+            '(3) Parse (PGN) — Person-Gender-Number of the suffix; '
+            '(4) Translation — full translation of the suffixed form.'
+        )
+        rows = [
+            ['1', 'סוּסוֹ', '', '', '', ''],
+            ['2', 'דְּבָרִי', '', '', '', ''],
+            ['3', 'מַלְכְּכֶם', '', '', '', ''],
+            ['4', 'אָחִיהָ', '', '', '', ''],
+            ['5', 'בֵּיתְךָ', '', '', '', ''],
+            ['6', 'עַמֵּנוּ', '', '', '', ''],
+            ['7', 'אֲדֹנֵיכֶם', '', '', '', ''],
+            ['8', 'בְּנָהּ', '', '', '', ''],
+            ['9', 'שְׁמֵיהֶם', '', '', '', ''],
+            ['10', 'אַרְצָם', '', '', '', ''],
+            ['11', 'לִי', '', '', '', ''],
+            ['12', 'לְךָ', '', '', '', ''],
+            ['13', 'לָהּ', '', '', '', ''],
+            ['14', 'לָנוּ', '', '', '', ''],
+            ['15', 'לָכֶם', '', '', '', ''],
+            ['16', 'בָּהּ', '', '', '', ''],
+            ['17', 'בָּם', '', '', '', ''],
+            ['18', 'עִמִּי', '', '', '', ''],
+            ['19', 'אֵלֶיךָ', '', '', '', ''],
+            ['20', 'עָלָיו', '', '', '', ''],
+            ['21', 'אֹתִי', '', '', '', ''],
+            ['22', 'אֹתוֹ', '', '', '', ''],
+            ['23', 'אֹתָהּ', '', '', '', ''],
+            ['24', 'אֹתָנוּ', '', '', '', ''],
+            ['25', 'אֹתָם', '', '', '', ''],
+        ]
+        ans = [
+            ['1', 'סוּסוֹ', 'סוּס (horse)', 'וֹ', '3ms', 'his horse'],
+            ['2', 'דְּבָרִי', 'דָּבָר (word)', 'ִי', '1cs', 'my word'],
+            ['3', 'מַלְכְּכֶם', 'מֶלֶךְ (king)', 'כֶם', '2mp', 'your (mp) king'],
+            ['4', 'אָחִיהָ', 'אָח (brother)', 'הָ', '3fs', 'her brother'],
+            ['5', 'בֵּיתְךָ', 'בַּיִת (house)', 'ְךָ', '2ms', 'your (ms) house'],
+            ['6', 'עַמֵּנוּ', 'עַם (people)', 'ֵנוּ', '1cp', 'our people'],
+            ['7', 'אֲדֹנֵיכֶם', 'אָדוֹן (lord/master)', 'ֵיכֶם', '2mp', 'your (mp) lord/masters'],
+            ['8', 'בְּנָהּ', 'בֵּן (son)', 'הָ', '3fs', 'her son'],
+            ['9', 'שְׁמֵיהֶם', 'שָׁמַיִם (heavens)', 'ֵיהֶם', '3mp', 'their (m) heavens'],
+            ['10', 'אַרְצָם', 'אֶרֶץ (land/earth)', 'ָם', '3mp', 'their (m) land'],
+            ['11', 'לִי', 'לְ (to/for)', 'ִי', '1cs', 'to/for me'],
+            ['12', 'לְךָ', 'לְ (to/for)', 'ְךָ', '2ms', 'to/for you (ms)'],
+            ['13', 'לָהּ', 'לְ (to/for)', 'הָ', '3fs', 'to/for her'],
+            ['14', 'לָנוּ', 'לְ (to/for)', 'ֵנוּ', '1cp', 'to/for us'],
+            ['15', 'לָכֶם', 'לְ (to/for)', 'כֶם', '2mp', 'to/for you (mp)'],
+            ['16', 'בָּהּ', 'בְּ (in/with)', 'הָ', '3fs', 'in/with her'],
+            ['17', 'בָּם', 'בְּ (in/with)', 'ָם', '3mp', 'in/with them (m)'],
+            ['18', 'עִמִּי', 'עִם (with)', 'ִי', '1cs', 'with me'],
+            ['19', 'אֵלֶיךָ', 'אֶל (to/toward)', 'ְךָ', '2ms', 'to/toward you (ms)'],
+            ['20', 'עָלָיו', 'עַל (upon/over)', 'ָיו', '3ms', 'upon/over him'],
+            ['21', 'אֹתִי', 'אֵת (DOM)', 'ִי', '1cs', 'me (direct object)'],
+            ['22', 'אֹתוֹ', 'אֵת (DOM)', 'וֹ', '3ms', 'him (direct object)'],
+            ['23', 'אֹתָהּ', 'אֵת (DOM)', 'הָ', '3fs', 'her (direct object)'],
+            ['24', 'אֹתָנוּ', 'אֵת (DOM)', 'ֵנוּ', '1cp', 'us (direct object)'],
+            ['25', 'אֹתָם', 'אֵת (DOM)', 'ָם', '3mp', 'them (m, direct object)'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Hebrew', 'Base Word', 'Suffix', 'Parse (PGN)', 'Translation'],
+            rows=rows,
+            col_ratios=[0.05, 0.12, 0.18, 0.10, 0.10, 0.45],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch9_suffix_parsing(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch9', 'exercises',
+                               'ch9-suffix-parsing')
+    path = os.path.join(out_dir, 'ch9-suffix-parsing.pdf')
+    ex = Ch9SuffixParsingExercise(
+        title='Chapter 9 — Hebrew Pronominal Suffix Parsing Drill',
+        subtitle='Pronominal Suffixes on Nouns, Prepositions, and the DOM',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch10ConstructChainExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each item: (1) identify the construct noun (nomen regens) and its form type, '
+            '(2) identify the absolute noun (nomen rectum), '
+            '(3) state whether the chain is definite or indefinite, '
+            '(4) translate into natural English.'
+        )
+        hdrs = ['#', 'Hebrew', 'Construct Noun', 'Absolute Noun', 'Definite?', 'Translation']
+        cr = [0.05, 0.20, 0.22, 0.18, 0.08, 0.27]
+        hc = [1]
+
+        self.add_section_heading('Part A — Simple 2-Link Chains (Indefinite) (1–8)')
+        rows_a = [
+            ['1', 'דְּבַר מֶלֶךְ', '', '', '', ''],
+            ['2', 'בֵּית אִישׁ', '', '', '', ''],
+            ['3', 'כְּבוֹד עָם', '', '', '', ''],
+            ['4', 'עֶבֶד מֶלֶךְ', '', '', '', ''],
+            ['5', 'בְּנֵי אָדָם', '', '', '', ''],
+            ['6', 'סֵפֶר תּוֹרָה', '', '', '', ''],
+            ['7', 'כֹּהֵן אֱלֹהִים', '', '', '', ''],
+            ['8', 'רוּחַ אָדָם', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'דְּבַר מֶלֶךְ', 'דְּבַר (ms cstr of דָּבָר)', 'מֶלֶךְ', 'No', 'a word of a king'],
+            ['2', 'בֵּית אִישׁ', 'בֵּית (ms cstr of בַּיִת)', 'אִישׁ', 'No', "a man's house"],
+            ['3', 'כְּבוֹד עָם', 'כְּבוֹד (ms cstr of כָּבוֹד)', 'עָם', 'No', 'glory of a people'],
+            ['4', 'עֶבֶד מֶלֶךְ', 'עֶבֶד (ms cstr; segolate, unchanged)', 'מֶלֶךְ', 'No', 'a servant of a king'],
+            ['5', 'בְּנֵי אָדָם', 'בְּנֵי (mp cstr of בֵּן; ִים → ֵי)', 'אָדָם', 'No', 'sons of man / humankind'],
+            ['6', 'סֵפֶר תּוֹרָה', 'סֵפֶר (ms cstr; segolate, unchanged)', 'תּוֹרָה', 'No', 'a book of the law'],
+            ['7', 'כֹּהֵן אֱלֹהִים', 'כֹּהֵן (ms cstr; unchanged)', 'אֱלֹהִים', 'No', 'a priest of God'],
+            ['8', 'רוּחַ אָדָם', 'רוּחַ (fs cstr of רוּחַ; unchanged)', 'אָדָם', 'No', 'the spirit of man'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Simple 2-Link Chains (Definite) (9–16)')
+        rows_b = [
+            ['9', 'דְּבַר יְהוָה', '', '', '', ''],
+            ['10', 'בֵּית יְהוָה', '', '', '', ''],
+            ['11', 'כְּבוֹד יְהוָה', '', '', '', ''],
+            ['12', 'שֵׁם יְהוָה', '', '', '', ''],
+            ['13', 'בֵּית הַמֶּלֶךְ', '', '', '', ''],
+            ['14', 'מֶלֶךְ יִשְׂרָאֵל', '', '', '', ''],
+            ['15', 'עִיר דָּוִד', '', '', '', ''],
+            ['16', 'בְּנֵי יִשְׂרָאֵל', '', '', '', ''],
+        ]
+        ans_b = [
+            ['9', 'דְּבַר יְהוָה', 'דְּבַר (ms cstr; propretonic reduction)', 'יְהוָה (proper)', 'Yes', 'the word of the LORD'],
+            ['10', 'בֵּית יְהוָה', 'בֵּית (ms cstr of בַּיִת)', 'יְהוָה (proper)', 'Yes', 'the house of the LORD'],
+            ['11', 'כְּבוֹד יְהוָה', 'כְּבוֹד (ms cstr of כָּבוֹד)', 'יְהוָה (proper)', 'Yes', 'the glory of the LORD'],
+            ['12', 'שֵׁם יְהוָה', 'שֵׁם (ms cstr; unchanged)', 'יְהוָה (proper)', 'Yes', 'the name of the LORD'],
+            ['13', 'בֵּית הַמֶּלֶךְ', 'בֵּית (ms cstr)', 'הַמֶּלֶךְ (definite art.)', 'Yes', "the king's house"],
+            ['14', 'מֶלֶךְ יִשְׂרָאֵל', 'מֶלֶךְ (ms cstr; segolate, unchanged)', 'יִשְׂרָאֵל (proper)', 'Yes', 'the king of Israel'],
+            ['15', 'עִיר דָּוִד', 'עִיר (fs cstr; unchanged)', 'דָּוִד (proper)', 'Yes', 'the city of David'],
+            ['16', 'בְּנֵי יִשְׂרָאֵל', 'בְּנֵי (mp cstr; ִים → ֵי)', 'יִשְׂרָאֵל (proper)', 'Yes', 'the sons/children of Israel'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — Extended 3-Link Chains (17–21)')
+        rows_c = [
+            ['17', 'דְּבַר תּוֹרַת יְהוָה', '', '', '', ''],
+            ['18', 'בֵּית אֱלֹהֵי יִשְׂרָאֵל', '', '', '', ''],
+            ['19', 'מֶלֶךְ מַלְכֵי הַמְּלָכִים', '', '', '', ''],
+            ['20', 'שֵׁם יְהוָה אֱלֹהֵינוּ', '', '', '', ''],
+            ['21', 'עֶבֶד עַבְדֵי הַמֶּלֶךְ', '', '', '', ''],
+        ]
+        ans_c = [
+            ['17', 'דְּבַר תּוֹרַת יְהוָה', 'דְּבַר, תּוֹרַת (both construct)', 'יְהוָה (proper)', 'Yes', 'the word of the law of the LORD'],
+            ['18', 'בֵּית אֱלֹהֵי יִשְׂרָאֵל', 'בֵּית, אֱלֹהֵי (both construct)', 'יִשְׂרָאֵל (proper)', 'Yes', 'the house of the God of Israel'],
+            ['19', 'מֶלֶךְ מַלְכֵי הַמְּלָכִים', 'מֶלֶךְ, מַלְכֵי (both construct)', 'הַמְּלָכִים (def. art.)', 'Yes', 'the king of kings of the kings'],
+            ['20', 'שֵׁם יְהוָה אֱלֹהֵינוּ', 'שֵׁם (construct)', 'יְהוָה אֱלֹהֵינוּ (proper + appositive)', 'Yes', 'the name of the LORD our God'],
+            ['21', 'עֶבֶד עַבְדֵי הַמֶּלֶךְ', 'עֶבֶד, עַבְדֵי (both construct)', 'הַמֶּלֶךְ (def. art.)', 'Yes', 'servant of the servants of the king'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Part D — Feminine Construct Nouns (22–25)')
+        rows_d = [
+            ['22', 'תּוֹרַת מֹשֶׁה', '', '', '', ''],
+            ['23', 'תּוֹרַת יְהוָה', '', '', '', ''],
+            ['24', 'מַלְכַּת שְׁבָא', '', '', '', ''],
+            ['25', 'בִּרְכַּת יְהוָה', '', '', '', ''],
+        ]
+        ans_d = [
+            ['22', 'תּוֹרַת מֹשֶׁה', 'תּוֹרַת (fs cstr; תּוֹרָה → תּוֹרַת)', 'מֹשֶׁה (proper)', 'Yes', 'the law/Torah of Moses'],
+            ['23', 'תּוֹרַת יְהוָה', 'תּוֹרַת (fs cstr)', 'יְהוָה (proper)', 'Yes', 'the law/Torah of the LORD'],
+            ['24', 'מַלְכַּת שְׁבָא', 'מַלְכַּת (fs cstr; מַלְכָּה → מַלְכַּת)', 'שְׁבָא (proper)', 'Yes', 'the queen of Sheba'],
+            ['25', 'בִּרְכַּת יְהוָה', 'בִּרְכַּת (fs cstr; בְּרָכָה → בִּרְכַּת)', 'יְהוָה (proper)', 'Yes', 'the blessing of the LORD'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+
+def build_ch10_construct_chain(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch10', 'exercises',
+                               'ch10-construct-chain')
+    path = os.path.join(out_dir, 'ch10-construct-chain.pdf')
+    ex = Ch10ConstructChainExercise(
+        title='Chapter 10 — Construct Chain Drill',
+        subtitle='BBH Chapter 10 — Hebrew Construct Chain',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch11NumberIdentificationExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hebrew number-noun phrase: '
+            '(1) identify the number word, '
+            '(2) give its numeric value, '
+            '(3) note the gender polarity situation (if applicable), '
+            '(4) provide a translation.\n'
+            'Gender Polarity: write "Yes — [noun gender] noun + [form used]" where polarity applies; '
+            '"N/A (tens)" for multiples of ten; "N/A (1–2)" for ones and twos; '
+            '"N/A (ordinal)" for ordinals.'
+        )
+        rows = [
+            ['1', 'שִׁבְעָה יָמִים', '', '', '', ''],
+            ['2', 'שָׁלֹשׁ נָשִׁים', '', '', '', ''],
+            ['3', 'אַרְבָּעִים שָׁנָה', '', '', '', ''],
+            ['4', 'שְׁנֵי אֲנָשִׁים', '', '', '', ''],
+            ['5', 'עֶשֶׂר עָרִים', '', '', '', ''],
+            ['6', 'חֲמִשָּׁה שְׁבָטִים', '', '', '', ''],
+            ['7', 'שְׁתַּיִם עֶשְׂרֵה שָׁנָה', '', '', '', ''],
+            ['8', 'שִׁשָּׁה בָּנִים', '', '', '', ''],
+            ['9', 'שְׁלֹשִׁים אִישׁ', '', '', '', ''],
+            ['10', 'תִּשְׁעָה אֲנָשִׁים', '', '', '', ''],
+            ['11', 'שְׁנֵים עָשָׂר שֵׁבֶט', '', '', '', ''],
+            ['12', 'אַרְבַּע בָּנוֹת', '', '', '', ''],
+            ['13', 'חֲמִשָּׁה עָשָׂר אִישׁ', '', '', '', ''],
+            ['14', 'שִׁבְעִים זָקֵן', '', '', '', ''],
+            ['15', 'שֵׁשׁ שָׁנִים', '', '', '', ''],
+            ['16', 'שְׁלֹשׁ עֶשְׂרֵה עִיר', '', '', '', ''],
+            ['17', 'בַּיּוֹם הַשְּׁבִיעִי', '', '', '', ''],
+            ['18', 'בַּחֹדֶשׁ הָרִאשׁוֹן', '', '', '', ''],
+            ['19', 'הַשַּׁעַר הַשֵּׁנִי', '', '', '', ''],
+            ['20', 'הַיּוֹם הָעֲשִׂירִי', '', '', '', ''],
+        ]
+        ans = [
+            ['1', 'שִׁבְעָה יָמִים', 'שִׁבְעָה', '7', 'Yes — masc. noun + ה-form', 'seven days'],
+            ['2', 'שָׁלֹשׁ נָשִׁים', 'שָׁלֹשׁ', '3', 'Yes — fem. noun + non-ה-form', 'three women'],
+            ['3', 'אַרְבָּעִים שָׁנָה', 'אַרְבָּעִים', '40', 'N/A (tens — no polarity)', 'forty years'],
+            ['4', 'שְׁנֵי אֲנָשִׁים', 'שְׁנֵי', '2', 'N/A (1–2 agree normally)', 'two men'],
+            ['5', 'עֶשֶׂר עָרִים', 'עֶשֶׂר', '10', 'Yes — fem. noun + non-ה-form', 'ten cities'],
+            ['6', 'חֲמִשָּׁה שְׁבָטִים', 'חֲמִשָּׁה', '5', 'Yes — masc. noun + ה-form', 'five tribes'],
+            ['7', 'שְׁתַּיִם עֶשְׂרֵה שָׁנָה', 'שְׁתַּיִם עֶשְׂרֵה', '12', 'N/A (teens — 12 uses dual form)', 'twelve years'],
+            ['8', 'שִׁשָּׁה בָּנִים', 'שִׁשָּׁה', '6', 'Yes — masc. noun + ה-form', 'six sons'],
+            ['9', 'שְׁלֹשִׁים אִישׁ', 'שְׁלֹשִׁים', '30', 'N/A (tens — invariable)', 'thirty men'],
+            ['10', 'תִּשְׁעָה אֲנָשִׁים', 'תִּשְׁעָה', '9', 'Yes — masc. noun + ה-form', 'nine men'],
+            ['11', 'שְׁנֵים עָשָׂר שֵׁבֶט', 'שְׁנֵים עָשָׂר', '12', 'N/A (teens with masc. noun)', 'twelve tribes'],
+            ['12', 'אַרְבַּע בָּנוֹת', 'אַרְבַּע', '4', 'Yes — fem. noun + non-ה-form', 'four daughters'],
+            ['13', 'חֲמִשָּׁה עָשָׂר אִישׁ', 'חֲמִשָּׁה עָשָׂר', '15', 'Yes (unit) — masc. noun + ה-form unit', 'fifteen men'],
+            ['14', 'שִׁבְעִים זָקֵן', 'שִׁבְעִים', '70', 'N/A (tens — invariable)', 'seventy elders'],
+            ['15', 'שֵׁשׁ שָׁנִים', 'שֵׁשׁ', '6', 'Yes — fem. noun + non-ה-form', 'six years'],
+            ['16', 'שְׁלֹשׁ עֶשְׂרֵה עִיר', 'שְׁלֹשׁ עֶשְׂרֵה', '13', 'Yes (unit) — fem. noun + non-ה-form unit', 'thirteen cities'],
+            ['17', 'בַּיּוֹם הַשְּׁבִיעִי', 'הַשְּׁבִיעִי', '7th', 'N/A (ordinal; agrees as adj.)', 'on the seventh day'],
+            ['18', 'בַּחֹדֶשׁ הָרִאשׁוֹן', 'הָרִאשׁוֹן', '1st', 'N/A (ordinal; agrees as adj.)', 'in the first month'],
+            ['19', 'הַשַּׁעַר הַשֵּׁנִי', 'הַשֵּׁנִי', '2nd', 'N/A (ordinal; agrees as adj.)', 'the second gate'],
+            ['20', 'הַיּוֹם הָעֲשִׂירִי', 'הָעֲשִׂירִי', '10th', 'N/A (ordinal; agrees as adj.)', 'the tenth day'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Hebrew Phrase', 'Number Word', 'Value', 'Gender Polarity?', 'Translation'],
+            rows=rows,
+            col_ratios=[0.05, 0.22, 0.16, 0.07, 0.18, 0.32],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch11_number_identification(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch11', 'exercises',
+                               'ch11-number-identification')
+    path = os.path.join(out_dir, 'ch11-number-identification.pdf')
+    ex = Ch11NumberIdentificationExercise(
+        title='Chapter 11 — Number Identification Drill',
+        subtitle='Hebrew Numbers — Cardinals, Teens, Tens, and Ordinals',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch12VerbOverviewExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'Part A: For each Hebrew verb form and its gloss, identify: '
+            '(1) the stem, (2) whether it expresses Active, Passive, or Reflexive meaning, '
+            '(3) the three-letter root.\n'
+            'Part B: For each English description of an action, identify which stem would be '
+            'used in Hebrew and explain briefly why.\n'
+            'Note: You do not need to parse conjugation or PGN yet.'
+        )
+        self.add_section_heading('Part A — Stem Identification (1–12)')
+        rows_a = [
+            ['1', 'שָׁמַר', '"he guarded"', '', '', ''],
+            ['2', 'כָּתַב', '"he wrote"', '', '', ''],
+            ['3', 'נָתַן', '"he gave"', '', '', ''],
+            ['4', 'הָלַךְ', '"he walked"', '', '', ''],
+            ['5', 'נִשְׁמַר', '"he was guarded / he kept himself"', '', '', ''],
+            ['6', 'נִכְתַּב', '"it was written"', '', '', ''],
+            ['7', 'הִשְׁמִיר', '"he caused to guard"', '', '', ''],
+            ['8', 'הוֹלִיךְ', '"he caused to walk / he led"', '', '', ''],
+            ['9', 'כִּתֵּב', '"he wrote (intensively / repeatedly)"', '', '', ''],
+            ['10', 'שִׁמֵּר', '"he kept carefully / he tended"', '', '', ''],
+            ['11', 'כֻּתַּב', '"it was written (intensive passive)"', '', '', ''],
+            ['12', 'הִתְהַלֵּךְ', '"he walked about / he walked to and fro"', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'שָׁמַר', '"he guarded"', 'Qal', 'Active', 'שמר'],
+            ['2', 'כָּתַב', '"he wrote"', 'Qal', 'Active', 'כתב'],
+            ['3', 'נָתַן', '"he gave"', 'Qal', 'Active', 'נתן'],
+            ['4', 'הָלַךְ', '"he walked"', 'Qal', 'Active', 'הלך'],
+            ['5', 'נִשְׁמַר', '"he was guarded / he kept himself"', 'Niphal', 'Passive/Reflexive', 'שמר'],
+            ['6', 'נִכְתַּב', '"it was written"', 'Niphal', 'Passive', 'כתב'],
+            ['7', 'הִשְׁמִיר', '"he caused to guard"', 'Hiphil', 'Active (causative)', 'שמר'],
+            ['8', 'הוֹלִיךְ', '"he caused to walk / he led"', 'Hiphil', 'Active (causative)', 'הלך'],
+            ['9', 'כִּתֵּב', '"he wrote (intensively)"', 'Piel', 'Active (intensive)', 'כתב'],
+            ['10', 'שִׁמֵּר', '"he kept carefully"', 'Piel', 'Active (intensive)', 'שמר'],
+            ['11', 'כֻּתַּב', '"it was written (intensive passive)"', 'Pual', 'Passive', 'כתב'],
+            ['12', 'הִתְהַלֵּךְ', '"he walked about / to and fro"', 'Hithpael', 'Reflexive', 'הלך'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Verb', 'Gloss', 'Stem', 'Active/Passive/Reflexive', 'Root'],
+            rows=rows_a,
+            col_ratios=[0.05, 0.12, 0.24, 0.12, 0.20, 0.27],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans_a,
+        )
+        self.add_section_heading('Part B — Meaning to Stem (1–8)')
+        rows_b = [
+            ['1', 'God caused Abraham to go out from Ur', '', ''],
+            ['2', 'The letter was written by the scribe (simple passive)', '', ''],
+            ['3', 'David walked around in his palace repeatedly', '', ''],
+            ['4', 'The king was caused to reign (someone put him on the throne)', '', ''],
+            ['5', 'She kept/guarded herself (simple reflexive)', '', ''],
+            ['6', 'He wrote intensively / inscribed over and over (intensive passive)', '', ''],
+            ['7', 'He killed himself thoroughly / destroyed himself (reflexive intensive)', '', ''],
+            ['8', 'Moses guarded (base meaning, simple active)', '', ''],
+        ]
+        ans_b = [
+            ['1', 'God caused Abraham to go out from Ur', 'Hiphil', 'Hiphil is causative active — subject causes another to perform the action.'],
+            ['2', 'The letter was written (simple passive)', 'Niphal', 'Niphal is the simple passive (and reflexive) of the Qal.'],
+            ['3', 'David walked around repeatedly', 'Hithpael', 'Hithpael is reflexive-intensive; הִתְהַלֵּךְ = "walk about/to and fro."'],
+            ['4', 'The king was caused to reign', 'Hophal', 'Hophal is the causative passive — passive counterpart of the Hiphil.'],
+            ['5', 'She kept/guarded herself (simple reflexive)', 'Niphal', 'Niphal doubles as reflexive for simple actions.'],
+            ['6', 'He wrote intensively / inscribed over and over (intensive passive)', 'Pual', 'Pual is the passive counterpart of the Piel (intensive passive).'],
+            ['7', 'He killed himself thoroughly (reflexive intensive)', 'Hithpael', 'Hithpael is reflexive and intensive — combines thoroughness with self-direction.'],
+            ['8', 'Moses guarded (simple active)', 'Qal', 'Qal is the base, simple active stem.'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Description', 'Stem', 'Explanation'],
+            rows=rows_b,
+            col_ratios=[0.05, 0.30, 0.12, 0.53],
+            heb_cols=[],
+            show_answers=True,
+            answer_rows=ans_b,
+        )
+
+
+def build_ch12_verb_overview(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch12', 'exercises',
+                               'ch12-verb-overview')
+    path = os.path.join(out_dir, 'ch12-verb-overview.pdf')
+    ex = Ch12VerbOverviewExercise(
+        title='Chapter 12 — Verb Overview Exercise',
+        subtitle='BBH Chapter 12 · 20 items',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch13–Ch15 builders
+# ---------------------------------------------------------------------------
+
+class Ch13ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, give: (a) Person, (b) Number, (c) Gender, '
+            '(d) Root (3ms lexical form).\n'
+            'Part C only: also identify the stative type '
+            '(B = tsere, C = holem).'
+        )
+        hdrs_ab = ['#', 'Form', 'Person', 'Number', 'Gender', 'Root']
+        cr_ab = [0.05, 0.16, 0.10, 0.10, 0.10, 0.49]
+        hc = [1]
+
+        self.add_section_heading('Part A — Clear Suffix Pattern (1–10)')
+        rows_a = [
+            ['1', 'שָׁמַרְתָּ', '', '', '', ''],
+            ['2', 'כָּתַבְתִּי', '', '', '', ''],
+            ['3', 'שָׁמְרוּ', '', '', '', ''],
+            ['4', 'פָּקַדְנוּ', '', '', '', ''],
+            ['5', 'מָשַׁלְתְּ', '', '', '', ''],
+            ['6', 'בָּחַרְתֶּם', '', '', '', ''],
+            ['7', 'זָכַרְתִּי', '', '', '', ''],
+            ['8', 'לָמַד', '', '', '', ''],
+            ['9', 'שָׁמַרְתֶּן', '', '', '', ''],
+            ['10', 'חָפַרְתָּ', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'שָׁמַרְתָּ', '2', 's', 'm', 'שמר'],
+            ['2', 'כָּתַבְתִּי', '1', 's', 'c', 'כתב'],
+            ['3', 'שָׁמְרוּ', '3', 'p', 'c', 'שמר'],
+            ['4', 'פָּקַדְנוּ', '1', 'p', 'c', 'פקד'],
+            ['5', 'מָשַׁלְתְּ', '2', 's', 'f', 'משל'],
+            ['6', 'בָּחַרְתֶּם', '2', 'p', 'm', 'בחר'],
+            ['7', 'זָכַרְתִּי', '1', 's', 'c', 'זכר'],
+            ['8', 'לָמַד', '3', 's', 'm', 'למד'],
+            ['9', 'שָׁמַרְתֶּן', '2', 'p', 'f', 'שמר'],
+            ['10', 'חָפַרְתָּ', '2', 's', 'm', 'חפר'],
+        ]
+        self.add_generic_table(headers=hdrs_ab, rows=rows_a, col_ratios=cr_ab, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Vowel Reduction Forms (11–20)')
+        rows_b = [
+            ['11', 'כָּתְבוּ', '', '', '', ''],
+            ['12', 'שְׁמַרְתֶּם', '', '', '', ''],
+            ['13', 'פָּקְדָה', '', '', '', ''],
+            ['14', 'בָּחְרוּ', '', '', '', ''],
+            ['15', 'מְשַׁלְתֶּן', '', '', '', ''],
+            ['16', 'זָכַר', '', '', '', ''],
+            ['17', 'חָפְרָה', '', '', '', ''],
+            ['18', 'לָמְדוּ', '', '', '', ''],
+            ['19', 'שְׁמַרְתֶּן', '', '', '', ''],
+            ['20', 'פָּקַדְתְּ', '', '', '', ''],
+        ]
+        ans_b = [
+            ['11', 'כָּתְבוּ', '3', 'p', 'c', 'כתב'],
+            ['12', 'שְׁמַרְתֶּם', '2', 'p', 'm', 'שמר'],
+            ['13', 'פָּקְדָה', '3', 's', 'f', 'פקד'],
+            ['14', 'בָּחְרוּ', '3', 'p', 'c', 'בחר'],
+            ['15', 'מְשַׁלְתֶּן', '2', 'p', 'f', 'משל'],
+            ['16', 'זָכַר', '3', 's', 'm', 'זכר'],
+            ['17', 'חָפְרָה', '3', 's', 'f', 'חפר'],
+            ['18', 'לָמְדוּ', '3', 'p', 'c', 'למד'],
+            ['19', 'שְׁמַרְתֶּן', '2', 'p', 'f', 'שמר'],
+            ['20', 'פָּקַדְתְּ', '2', 's', 'f', 'פקד'],
+        ]
+        self.add_generic_table(headers=hdrs_ab, rows=rows_b, col_ratios=cr_ab, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — Stative Roots (21–25)')
+        rows_c = [
+            ['21', 'כָּבַדְתָּ', '', '', '', '', ''],
+            ['22', 'גָּדְלָה', '', '', '', '', ''],
+            ['23', 'יָכֹלְתִּי', '', '', '', '', ''],
+            ['24', 'זָקַנְתֶּם', '', '', '', '', ''],
+            ['25', 'מָלְאָה', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['21', 'כָּבַדְתָּ', '2', 's', 'm', 'כָּבֵד', 'B (tsere)'],
+            ['22', 'גָּדְלָה', '3', 's', 'f', 'גָּדֵל', 'B (tsere)'],
+            ['23', 'יָכֹלְתִּי', '1', 's', 'c', 'יָכֹל', 'C (holem)'],
+            ['24', 'זָקַנְתֶּם', '2', 'p', 'm', 'זָקֵן', 'B (tsere)'],
+            ['25', 'מָלְאָה', '3', 's', 'f', 'מָלֵא', 'B (tsere) / III-א'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Form', 'Person', 'Number', 'Gender', 'Root (3ms)', 'Stative Type'],
+            rows=rows_c,
+            col_ratios=[0.05, 0.14, 0.09, 0.09, 0.09, 0.20, 0.34],
+            heb_cols=hc,
+            show_answers=True,
+            answer_rows=ans_c,
+        )
+
+
+def build_ch13_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch13', 'exercises',
+                               'ch13-parsing-drill')
+    path = os.path.join(out_dir, 'ch13-parsing-drill.pdf')
+    ex = Ch13ParsingDrillExercise(
+        title='Chapter 13 — Parsing Drill: Qal Perfect Strong Verbs',
+        subtitle='BBH Chapter 13',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch13PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'Parse each Qal Perfect verb. Give: '
+            '(a) Person, (b) Number, (c) Gender, (d) Root (3ms lexical form), '
+            '(e) Usage Type (Simple Past / Perfect of Experience / Stative / Prophetic Perfect).'
+        )
+        hdrs = ['#', 'Form', 'Person', 'Number', 'Gender', 'Root', 'Usage Type']
+        cr = [0.05, 0.16, 0.09, 0.09, 0.09, 0.14, 0.38]
+        hc = [1]
+
+        self.add_section_heading('Passage A — Genesis 1:1–5 (1–2)')
+        rows_a = [['1', 'בָּרָא', '', '', '', '', ''], ['2', 'הָיְתָה', '', '', '', '', '']]
+        ans_a = [
+            ['1', 'בָּרָא', '3', 's', 'm', 'ברא', 'Simple Past'],
+            ['2', 'הָיְתָה', '3', 's', 'f', 'היה', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Passage B — Genesis 2:15–17 (3–4)')
+        rows_b = [['3', 'אָכֹל', '', '', '', '', ''], ['4', 'אֲכָלְךָ', '', '', '', '', '']]
+        ans_b = [
+            ['3', 'אָכֹל', 'Inf. Abs.', '—', '—', 'אכל', 'Not a Perfect — Inf. Abs.'],
+            ['4', 'אֲכָלְךָ', '2', 's', 'm', 'אכל', 'Simple Past + 2ms suffix'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Passage C — Genesis 3:6–13 (5–7)')
+        rows_c = [
+            ['5', 'נָתַתָּה', '', '', '', '', ''],
+            ['6', 'נָתְנָה', '', '', '', '', ''],
+            ['7', 'עָשִׂית', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['5', 'נָתַתָּה', '2', 's', 'm', 'נתן', 'Simple Past'],
+            ['6', 'נָתְנָה', '3', 's', 'f', 'נתן', 'Simple Past'],
+            ['7', 'עָשִׂית', '2', 's', 'f', 'עשה', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Passage D — Genesis 4:1–10 (8–9)')
+        rows_d = [['8', 'יָדַע', '', '', '', '', ''], ['9', 'יָדַעְתִּי', '', '', '', '', '']]
+        ans_d = [
+            ['8', 'יָדַע', '3', 's', 'm', 'ידע', 'Simple Past'],
+            ['9', 'יָדַעְתִּי', '1', 's', 'c', 'ידע', 'Perfect of Experience'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+        self.add_section_heading('Passage E — Additional Forms (10–15)')
+        rows_e = [
+            ['10', 'כָּבֵד', '', '', '', '', ''],
+            ['11', 'שָׁמַעְנוּ', '', '', '', '', ''],
+            ['12', 'קָטַלְתֶּם', '', '', '', '', ''],
+            ['13', 'בָּרַכְתָּ', '', '', '', '', ''],
+            ['14', 'יָשַׁבְנוּ', '', '', '', '', ''],
+            ['15', 'קָרְאָה', '', '', '', '', ''],
+        ]
+        ans_e = [
+            ['10', 'כָּבֵד', '3', 's', 'm', 'כבד', 'Stative'],
+            ['11', 'שָׁמַעְנוּ', '1', 'p', 'c', 'שמע', 'Simple Past'],
+            ['12', 'קָטַלְתֶּם', '2', 'p', 'm', 'קטל', 'Simple Past'],
+            ['13', 'בָּרַכְתָּ', '2', 's', 'm', 'ברך', 'Simple Past'],
+            ['14', 'יָשַׁבְנוּ', '1', 'p', 'c', 'ישב', 'Simple Past'],
+            ['15', 'קָרְאָה', '3', 's', 'f', 'קרא', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_e, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_e)
+
+
+def build_ch13_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch13', 'exercises',
+                               'ch13-passage-exercise')
+    path = os.path.join(out_dir, 'ch13-passage-exercise.pdf')
+    ex = Ch13PassageExercise(
+        title='Chapter 13 — Passage Exercise: Qal Perfect Strong Verbs',
+        subtitle='BBH Chapter 13',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch14PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'Parse each highlighted Qal Perfect form. Give: '
+            '(a) Person, (b) Number, (c) Gender, (d) Root (3ms lexical form), '
+            '(e) Weak Class, (f) Usage Type.'
+        )
+        hdrs = ['#', 'Form', 'Person', 'Number', 'Gender', 'Root', 'Weak Class', 'Usage Type']
+        cr = [0.05, 0.13, 0.08, 0.08, 0.08, 0.12, 0.14, 0.32]
+        hc = [1]
+
+        self.add_section_heading('Passage A — Genesis 3:1–13 (1–4)')
+        rows_a = [
+            ['1', 'הָיָה', '', '', '', '', '', ''],
+            ['2', 'אָמַר', '', '', '', '', '', ''],
+            ['3', 'אָכַלְנוּ', '', '', '', '', '', ''],
+            ['4', 'עָשִׂית', '', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'הָיָה', '3', 's', 'm', 'היה', 'III-ה', 'Stative'],
+            ['2', 'אָמַר', '3', 's', 'm', 'אמר', 'I-gutt.', 'Simple Past'],
+            ['3', 'אָכַלְנוּ', '1', 'p', 'c', 'אכל', 'I-gutt.', 'Simple Past'],
+            ['4', 'עָשִׂית', '2', 's', 'f', 'עשה', 'III-ה', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Passage B — Genesis 6:9–22 (5–8)')
+        rows_b = [
+            ['5', 'הָיָה', '', '', '', '', '', ''],
+            ['6', 'בָּא', '', '', '', '', '', ''],
+            ['7', 'מָלְאָה', '', '', '', '', '', ''],
+            ['8', 'צִוָּה', '', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['5', 'הָיָה', '3', 's', 'm', 'היה', 'III-ה', 'Stative'],
+            ['6', 'בָּא', '3', 's', 'm', 'בוא', 'Biconsonantal', 'Simple Past'],
+            ['7', 'מָלְאָה', '3', 's', 'f', 'מלא', 'III-א', 'Simple Past'],
+            ['8', 'צִוָּה', '3', 's', 'm', 'צוה', 'III-ה', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Passage C — Genesis 22:1–12 (9–12)')
+        rows_c = [
+            ['9', 'נִסָּה', '', '', '', '', '', ''],
+            ['10', 'אָהַבְתָּ', '', '', '', '', '', ''],
+            ['11', 'יָדַעְתִּי', '', '', '', '', '', ''],
+            ['12', 'חָשַׂכְתָּ', '', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['9', 'נִסָּה', '3', 's', 'm', 'נסה', 'III-ה', 'Simple Past'],
+            ['10', 'אָהַבְתָּ', '2', 's', 'm', 'אהב', 'I-gutt.', 'Perf. of Experience'],
+            ['11', 'יָדַעְתִּי', '1', 's', 'c', 'ידע', 'I-י', 'Perf. of Experience'],
+            ['12', 'חָשַׂכְתָּ', '2', 's', 'm', 'חשך', 'III-gutt.', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Passage D — Exodus 1:17–21 (13–14)')
+        rows_d = [
+            ['13', 'עָשׂוּ', '', '', '', '', '', ''],
+            ['14', 'עֲשִׂיתֶן', '', '', '', '', '', ''],
+        ]
+        ans_d = [
+            ['13', 'עָשׂוּ', '3', 'p', 'c', 'עשה', 'III-ה', 'Simple Past'],
+            ['14', 'עֲשִׂיתֶן', '2', 'p', 'f', 'עשה', 'III-ה', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+        self.add_section_heading('Passage E — Additional Forms (15–20)')
+        rows_e = [
+            ['15', 'שָׁמַעְנוּ', '', '', '', '', '', ''],
+            ['16', 'בָּאוּ', '', '', '', '', '', ''],
+            ['17', 'קָמָה', '', '', '', '', '', ''],
+            ['18', 'יָלְדוּ', '', '', '', '', '', ''],
+            ['19', 'נָתְנָה', '', '', '', '', '', ''],
+            ['20', 'תַּמּוּ', '', '', '', '', '', ''],
+        ]
+        ans_e = [
+            ['15', 'שָׁמַעְנוּ', '1', 'p', 'c', 'שמע', 'III-gutt.', 'Simple Past'],
+            ['16', 'בָּאוּ', '3', 'p', 'c', 'בוא', 'Biconsonantal', 'Simple Past'],
+            ['17', 'קָמָה', '3', 's', 'f', 'קום', 'Biconsonantal', 'Simple Past'],
+            ['18', 'יָלְדוּ', '3', 'p', 'c', 'ילד', 'I-י', 'Simple Past'],
+            ['19', 'נָתְנָה', '3', 's', 'f', 'נתן', 'I-נ', 'Simple Past'],
+            ['20', 'תַּמּוּ', '3', 'p', 'c', 'תמם', 'Geminate', 'Simple Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_e, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_e)
+
+
+def build_ch14_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch14', 'exercises',
+                               'ch14-passage-exercise')
+    path = os.path.join(out_dir, 'ch14-passage-exercise.pdf')
+    ex = Ch14PassageExercise(
+        title='Chapter 14 — Passage Exercise: Qal Perfect Weak Verbs',
+        subtitle='BBH Chapter 14',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch14WeakFormIdExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, give: (a) Weak Class, (b) Person, (c) Number, '
+            '(d) Gender, (e) Root (3ms lexical form).'
+        )
+        hdrs = ['#', 'Form', 'Weak Class', 'Person', 'Number', 'Gender', 'Root']
+        cr = [0.05, 0.14, 0.15, 0.09, 0.09, 0.09, 0.39]
+        hc = [1]
+        groups = [
+            ('Group 1: III-ה (1–5)', [
+                ['1', 'עָשָׂה', '', '', '', '', ''],
+                ['2', 'רָאִיתָ', '', '', '', '', ''],
+                ['3', 'גָּלְתָה', '', '', '', '', ''],
+                ['4', 'עָשׂוּ', '', '', '', '', ''],
+                ['5', 'עֲלִיתֶם', '', '', '', '', ''],
+            ], [
+                ['1', 'עָשָׂה', 'III-ה', '3', 's', 'm', 'עשה'],
+                ['2', 'רָאִיתָ', 'III-ה', '2', 's', 'm', 'ראה'],
+                ['3', 'גָּלְתָה', 'III-ה', '3', 's', 'f', 'גלה'],
+                ['4', 'עָשׂוּ', 'III-ה', '3', 'p', 'c', 'עשה'],
+                ['5', 'עֲלִיתֶם', 'III-ה', '2', 'p', 'm', 'עלה'],
+            ]),
+            ('Group 2: III-א (6–10)', [
+                ['6', 'מָצָא', '', '', '', '', ''],
+                ['7', 'קָרְאָה', '', '', '', '', ''],
+                ['8', 'חָטָאתִי', '', '', '', '', ''],
+                ['9', 'מָצְאוּ', '', '', '', '', ''],
+                ['10', 'מְצָאתֶם', '', '', '', '', ''],
+            ], [
+                ['6', 'מָצָא', 'III-א', '3', 's', 'm', 'מצא'],
+                ['7', 'קָרְאָה', 'III-א', '3', 's', 'f', 'קרא'],
+                ['8', 'חָטָאתִי', 'III-א', '1', 's', 'c', 'חטא'],
+                ['9', 'מָצְאוּ', 'III-א', '3', 'p', 'c', 'מצא'],
+                ['10', 'מְצָאתֶם', 'III-א', '2', 'p', 'm', 'מצא'],
+            ]),
+            ('Group 3: III-gutt. Lamed-Guttural (11–15)', [
+                ['11', 'שָׁמַע', '', '', '', '', ''],
+                ['12', 'שָׁלַח', '', '', '', '', ''],
+                ['13', 'שָׁמַעְתִּי', '', '', '', '', ''],
+                ['14', 'שָׁמְעוּ', '', '', '', '', ''],
+                ['15', 'שְׁלַחְתֶּם', '', '', '', '', ''],
+            ], [
+                ['11', 'שָׁמַע', 'III-gutt.', '3', 's', 'm', 'שמע'],
+                ['12', 'שָׁלַח', 'III-gutt.', '3', 's', 'm', 'שלח'],
+                ['13', 'שָׁמַעְתִּי', 'III-gutt.', '1', 's', 'c', 'שמע'],
+                ['14', 'שָׁמְעוּ', 'III-gutt.', '3', 'p', 'c', 'שמע'],
+                ['15', 'שְׁלַחְתֶּם', 'III-gutt.', '2', 'p', 'm', 'שלח'],
+            ]),
+            ('Group 4: I-guttural / Pe-Guttural (16–20)', [
+                ['16', 'אָמַר', '', '', '', '', ''],
+                ['17', 'עָמַדְתָּ', '', '', '', '', ''],
+                ['18', 'אָמַרְתִּי', '', '', '', '', ''],
+                ['19', 'אֲמַרְתֶּם', '', '', '', '', ''],
+                ['20', 'עָמְדוּ', '', '', '', '', ''],
+            ], [
+                ['16', 'אָמַר', 'I-gutt.', '3', 's', 'm', 'אמר'],
+                ['17', 'עָמַדְתָּ', 'I-gutt.', '2', 's', 'm', 'עמד'],
+                ['18', 'אָמַרְתִּי', 'I-gutt.', '1', 's', 'c', 'אמר'],
+                ['19', 'אֲמַרְתֶּם', 'I-gutt.', '2', 'p', 'm', 'אמר'],
+                ['20', 'עָמְדוּ', 'I-gutt.', '3', 'p', 'c', 'עמד'],
+            ]),
+            ('Group 5: I-נ and I-י (21–25)', [
+                ['21', 'נָתַן', '', '', '', '', ''],
+                ['22', 'נָתְנָה', '', '', '', '', ''],
+                ['23', 'יָלַדְתָּ', '', '', '', '', ''],
+                ['24', 'יָלְדוּ', '', '', '', '', ''],
+                ['25', 'יָדַעְתִּי', '', '', '', '', ''],
+            ], [
+                ['21', 'נָתַן', 'I-נ', '3', 's', 'm', 'נתן'],
+                ['22', 'נָתְנָה', 'I-נ', '3', 's', 'f', 'נתן'],
+                ['23', 'יָלַדְתָּ', 'I-י', '2', 's', 'm', 'ילד'],
+                ['24', 'יָלְדוּ', 'I-י', '3', 'p', 'c', 'ילד'],
+                ['25', 'יָדַעְתִּי', 'I-י', '1', 's', 'c', 'ידע'],
+            ]),
+            ('Group 6: Biconsonantal (26–30)', [
+                ['26', 'קָם', '', '', '', '', ''],
+                ['27', 'שָׁבָה', '', '', '', '', ''],
+                ['28', 'בָּאתָ', '', '', '', '', ''],
+                ['29', 'קָמוּ', '', '', '', '', ''],
+                ['30', 'שַׁבְתֶּם', '', '', '', '', ''],
+            ], [
+                ['26', 'קָם', 'Biconsonantal', '3', 's', 'm', 'קום'],
+                ['27', 'שָׁבָה', 'Biconsonantal', '3', 's', 'f', 'שוב'],
+                ['28', 'בָּאתָ', 'Biconsonantal', '2', 's', 'm', 'בוא'],
+                ['29', 'קָמוּ', 'Biconsonantal', '3', 'p', 'c', 'קום'],
+                ['30', 'שַׁבְתֶּם', 'Biconsonantal', '2', 'p', 'm', 'שוב'],
+            ]),
+            ('Group 7: Geminate (31–35)', [
+                ['31', 'סָבַב', '', '', '', '', ''],
+                ['32', 'תַּמּוּ', '', '', '', '', ''],
+                ['33', 'סַבֹּתָ', '', '', '', '', ''],
+                ['34', 'תָּם', '', '', '', '', ''],
+                ['35', 'סָבָּה', '', '', '', '', ''],
+            ], [
+                ['31', 'סָבַב', 'Geminate', '3', 's', 'm', 'סבב'],
+                ['32', 'תַּמּוּ', 'Geminate', '3', 'p', 'c', 'תמם'],
+                ['33', 'סַבֹּתָ', 'Geminate', '2', 's', 'm', 'סבב'],
+                ['34', 'תָּם', 'Geminate', '3', 's', 'm', 'תמם'],
+                ['35', 'סָבָּה', 'Geminate', '3', 's', 'f', 'סבב'],
+            ]),
+        ]
+        for heading, rows, ans in groups:
+            self.add_section_heading(heading)
+            self.add_generic_table(headers=hdrs, rows=rows, col_ratios=cr, heb_cols=hc,
+                                   show_answers=True, answer_rows=ans)
+
+        self.add_section_heading('Part B — Mixed (36–40)')
+        rows_b = [
+            ['36', 'הָיִיתִי', '', '', '', '', ''],
+            ['37', 'נָפְלָה', '', '', '', '', ''],
+            ['38', 'מָת', '', '', '', '', ''],
+            ['39', 'בָּאנוּ', '', '', '', '', ''],
+            ['40', 'שָׁמְעָה', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['36', 'הָיִיתִי', 'III-ה', '1', 's', 'c', 'היה'],
+            ['37', 'נָפְלָה', 'I-נ', '3', 's', 'f', 'נפל'],
+            ['38', 'מָת', 'Biconsonantal', '3', 's', 'm', 'מות'],
+            ['39', 'בָּאנוּ', 'Biconsonantal', '1', 'p', 'c', 'בוא'],
+            ['40', 'שָׁמְעָה', 'III-gutt.', '3', 's', 'f', 'שמע'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+
+def build_ch14_weak_form_id(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch14', 'exercises',
+                               'ch14-weak-form-id')
+    path = os.path.join(out_dir, 'ch14-weak-form-id.pdf')
+    ex = Ch14WeakFormIdExercise(
+        title='Chapter 14 — Weak-Form Identification Drill: Qal Perfect Weak Verbs',
+        subtitle='BBH Chapter 14',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch15ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, give: (a) Person, (b) Number, (c) Gender, '
+            '(d) Root (3ms lexical form).\n'
+            'Part C: also identify whether the form is a Jussive or Cohortative.'
+        )
+        hdrs_ab = ['#', 'Form', 'Person', 'Number', 'Gender', 'Root']
+        cr_ab = [0.05, 0.16, 0.10, 0.10, 0.10, 0.49]
+        hc = [1]
+
+        self.add_section_heading('Part A — A-Class (Holem): Clear Prefix Pattern (1–10)')
+        rows_a = [
+            ['1', 'יִשְׁמֹר', '', '', '', ''],
+            ['2', 'תִּכְתְּבוּ', '', '', '', ''],
+            ['3', 'נִפְקֹד', '', '', '', ''],
+            ['4', 'תִּלְמְדִי', '', '', '', ''],
+            ['5', 'יִזְכְּרוּ', '', '', '', ''],
+            ['6', 'אֶשְׁמֹר', '', '', '', ''],
+            ['7', 'תִּמְשֹׁל', '', '', '', ''],
+            ['8', 'יִכְתְּבוּ', '', '', '', ''],
+            ['9', 'תִּשְׁמֹרְנָה', '', '', '', ''],
+            ['10', 'אֶבְחַר', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'יִשְׁמֹר', '3', 's', 'm', 'שמר'],
+            ['2', 'תִּכְתְּבוּ', '2', 'p', 'm', 'כתב'],
+            ['3', 'נִפְקֹד', '1', 'p', 'c', 'פקד'],
+            ['4', 'תִּלְמְדִי', '2', 's', 'f', 'למד'],
+            ['5', 'יִזְכְּרוּ', '3', 'p', 'm', 'זכר'],
+            ['6', 'אֶשְׁמֹר', '1', 's', 'c', 'שמר'],
+            ['7', 'תִּמְשֹׁל', '3/2', 's', 'f/m', 'משל'],
+            ['8', 'יִכְתְּבוּ', '3', 'p', 'm', 'כתב'],
+            ['9', 'תִּשְׁמֹרְנָה', '3/2', 'p', 'f', 'שמר'],
+            ['10', 'אֶבְחַר', '1', 's', 'c', 'בחר'],
+        ]
+        self.add_generic_table(headers=hdrs_ab, rows=rows_a, col_ratios=cr_ab, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — B-Class (Patach) and Disambiguation (11–20)')
+        rows_b = [
+            ['11', 'יִשְׁמַע', '', '', '', ''],
+            ['12', 'תִּשְׁמַע', '', '', '', ''],
+            ['13', 'תִּשְׁמְעִי', '', '', '', ''],
+            ['14', 'יִכְבַּד', '', '', '', ''],
+            ['15', 'תִּגְדַּל', '', '', '', ''],
+            ['16', 'יִכְבְּדוּ', '', '', '', ''],
+            ['17', 'תִּשְׁמַעְנָה', '', '', '', ''],
+            ['18', 'אֶשְׁמַע', '', '', '', ''],
+            ['19', 'נִשְׁמַע', '', '', '', ''],
+            ['20', 'יִגְדַּל', '', '', '', ''],
+        ]
+        ans_b = [
+            ['11', 'יִשְׁמַע', '3', 's', 'm', 'שמע'],
+            ['12', 'תִּשְׁמַע', '3/2', 's', 'f/m', 'שמע'],
+            ['13', 'תִּשְׁמְעִי', '2', 's', 'f', 'שמע'],
+            ['14', 'יִכְבַּד', '3', 's', 'm', 'כבד'],
+            ['15', 'תִּגְדַּל', '3/2', 's', 'f/m', 'גדל'],
+            ['16', 'יִכְבְּדוּ', '3', 'p', 'm', 'כבד'],
+            ['17', 'תִּשְׁמַעְנָה', '3/2', 'p', 'f', 'שמע'],
+            ['18', 'אֶשְׁמַע', '1', 's', 'c', 'שמע'],
+            ['19', 'נִשְׁמַע', '1', 'p', 'c', 'שמע'],
+            ['20', 'יִגְדַּל', '3', 's', 'm', 'גדל'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Form', 'Person', 'Number', 'Gender', 'Root', 'Notes'],
+            rows=[[r[0], r[1], r[2], r[3], r[4], r[5], ''] for r in rows_b],
+            col_ratios=[0.05, 0.14, 0.09, 0.09, 0.09, 0.16, 0.38],
+            heb_cols=hc,
+            show_answers=True,
+            answer_rows=[[r[0], r[1], r[2], r[3], r[4], r[5], ''] for r in ans_b],
+        )
+
+        self.add_section_heading('Part C — Jussive and Cohortative Forms (21–25)')
+        rows_c = [
+            ['21', 'יִשְׁמְרָה', '', '', '', '', ''],
+            ['22', 'נִשְׁמְרָה', '', '', '', '', ''],
+            ['23', 'יִשְׁמֹר', '', '', '', '', ''],
+            ['24', 'תִּשְׁמֹר', '', '', '', '', ''],
+            ['25', 'אֶשְׁמְרָה', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['21', 'יִשְׁמְרָה', '3', 's', 'm', 'שמר', 'Jussive/Energic'],
+            ['22', 'נִשְׁמְרָה', '1', 'p', 'c', 'שמר', 'Cohortative'],
+            ['23', 'יִשְׁמֹר', '3', 's', 'm', 'שמר', 'Jussive (= Imperfect for strong)'],
+            ['24', 'תִּשְׁמֹר', '3/2', 's', 'f/m', 'שמר', 'Jussive (= Imperfect for strong)'],
+            ['25', 'אֶשְׁמְרָה', '1', 's', 'c', 'שמר', 'Cohortative'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Form', 'Person', 'Number', 'Gender', 'Root', 'Form Type'],
+            rows=rows_c,
+            col_ratios=[0.05, 0.14, 0.09, 0.09, 0.09, 0.14, 0.40],
+            heb_cols=hc,
+            show_answers=True,
+            answer_rows=ans_c,
+        )
+
+
+def build_ch15_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch15', 'exercises',
+                               'ch15-parsing-drill')
+    path = os.path.join(out_dir, 'ch15-parsing-drill.pdf')
+    ex = Ch15ParsingDrillExercise(
+        title='Chapter 15 — Parsing Drill: Qal Imperfect Strong Verbs',
+        subtitle='BBH Chapter 15',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch15PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'Parse each highlighted Qal Imperfect form. Give: '
+            '(a) Person, (b) Number, (c) Gender, (d) Root (3ms lexical form), '
+            '(e) Usage Type.'
+        )
+        hdrs = ['#', 'Form', 'Person', 'Number', 'Gender', 'Root', 'Usage Type']
+        cr = [0.05, 0.16, 0.09, 0.09, 0.09, 0.14, 0.38]
+        hc = [1]
+
+        self.add_section_heading('Passage A — Exodus 3:1–12 (1–4)')
+        rows_a = [
+            ['1', 'אֵלֵךְ', '', '', '', '', ''],
+            ['2', 'אֶרְאֶה', '', '', '', '', ''],
+            ['3', 'תִקְרַב', '', '', '', '', ''],
+            ['4', 'אֶהְיֶה', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'אֵלֵךְ', '1', 's', 'c', 'הלך', 'Cohortative'],
+            ['2', 'אֶרְאֶה', '1', 's', 'c', 'ראה', 'Cohortative'],
+            ['3', 'תִקְרַב', '2', 's', 'm', 'קרב', 'Prohibition'],
+            ['4', 'אֶהְיֶה', '1', 's', 'c', 'היה', 'Simple Future'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Passage B — Exodus 3:13–20 (5–8)')
+        rows_b = [
+            ['5', 'אֵלֵךְ', '', '', '', '', ''],
+            ['6', 'אוֹצִיא', '', '', '', '', ''],
+            ['7', 'אֶשְׁלַח', '', '', '', '', ''],
+            ['8', 'יִשְׁמְעוּ', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['5', 'אֵלֵךְ', '1', 's', 'c', 'הלך', 'Modal'],
+            ['6', 'אוֹצִיא', '1', 's', 'c', 'יצא', 'Modal/Future (Hiphil)'],
+            ['7', 'אֶשְׁלַח', '1', 's', 'c', 'שלח', 'Simple Future'],
+            ['8', 'יִשְׁמְעוּ', '3', 'p', 'm', 'שמע', 'Simple Future'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Passage C — Exodus 20:13–17, Decalogue (9–13)')
+        rows_c = [
+            ['9', 'תִּרְצָח', '', '', '', '', ''],
+            ['10', 'תִנְאָף', '', '', '', '', ''],
+            ['11', 'תִּגְנֹב', '', '', '', '', ''],
+            ['12', 'תַעֲנֶה', '', '', '', '', ''],
+            ['13', 'תַחְמֹד', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['9', 'תִּרְצָח', '2', 's', 'm', 'רצח', 'Prohibition (לֹא)'],
+            ['10', 'תִנְאָף', '2', 's', 'm', 'נאף', 'Prohibition (לֹא)'],
+            ['11', 'תִּגְנֹב', '2', 's', 'm', 'גנב', 'Prohibition (לֹא)'],
+            ['12', 'תַעֲנֶה', '2', 's', 'm', 'ענה', 'Prohibition (לֹא)'],
+            ['13', 'תַחְמֹד', '2', 's', 'm', 'חמד', 'Prohibition (לֹא)'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Passage D — Genesis 1:3, 9, 11 (14–15)')
+        rows_d = [
+            ['14', 'יְהִי', '', '', '', '', ''],
+            ['15', 'יִקָּווּ', '', '', '', '', ''],
+        ]
+        ans_d = [
+            ['14', 'יְהִי', '3', 's', 'm', 'היה', 'Jussive'],
+            ['15', 'יִקָּווּ', '3', 'p', 'm', 'קוה', 'Jussive/Command (Niphal)'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+
+def build_ch15_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch15', 'exercises',
+                               'ch15-passage-exercise')
+    path = os.path.join(out_dir, 'ch15-passage-exercise.pdf')
+    ex = Ch15PassageExercise(
+        title='Chapter 15 — Passage Exercise: Qal Imperfect Strong Verbs',
+        subtitle='BBH Chapter 15',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch16–Ch18 builders
+# ---------------------------------------------------------------------------
+
+class Ch16PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'Parse each highlighted verb. Give: '
+            '(a) Person, (b) Number, (c) Gender, (d) Root (3ms lexical form), '
+            '(e) Weak Class, (f) Form Type (Imperfect / Wayyiqtol / Jussive), '
+            '(g) Usage Type.'
+        )
+        hdrs = ['#', 'Form', 'Person', 'Number', 'Gender', 'Root', 'Weak Class', 'Form Type', 'Usage Type']
+        cr = [0.05, 0.12, 0.07, 0.07, 0.07, 0.11, 0.12, 0.10, 0.29]
+        hc = [1]
+
+        self.add_section_heading('Passage A — III-ה and III-א (Gen 1:3–11; Gen 3:1) (1–4)')
+        rows_a = [
+            ['1', 'יְהִי', '', '', '', '', '', '', ''],
+            ['2', 'יַעֲשֶׂה', '', '', '', '', '', '', ''],
+            ['3', 'יִהְיוּ', '', '', '', '', '', '', ''],
+            ['4', 'תֹּאכְלוּ', '', '', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'יְהִי', '3', 's', 'm', 'היה', 'III-ה', 'Jussive', 'Volitional'],
+            ['2', 'יַעֲשֶׂה', '3', 's', 'm', 'עשה', 'III-ה + I-gutt.', 'Jussive', 'Volitional'],
+            ['3', 'יִהְיוּ', '3', 'p', 'm', 'היה', 'III-ה', 'Imperfect', 'Jussive/Volitional'],
+            ['4', 'תֹּאכְלוּ', '2', 'p', 'm', 'אכל', 'I-gutt. (א)', 'Imperfect', 'Prohibition (לֹא)'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Passage B — III-Guttural and I-Guttural (Gen 3–4; Exo 20) (5–8)')
+        rows_b = [
+            ['5', 'יֹאמַר', '', '', '', '', '', '', ''],
+            ['6', 'וַיִּשְׁמַע', '', '', '', '', '', '', ''],
+            ['7', 'תַּחְמֹד', '', '', '', '', '', '', ''],
+            ['8', 'וַיַּעֲמֹד', '', '', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['5', 'יֹאמַר', '3', 's', 'm', 'אמר', 'I-gutt. (א)', 'Imperfect', 'Simple Future'],
+            ['6', 'וַיִּשְׁמַע', '3', 's', 'm', 'שמע', 'III-gutt. (ע)', 'Wayyiqtol', 'Sequential Past'],
+            ['7', 'תַּחְמֹד', '2', 's', 'm', 'חמד', 'I-gutt. (ח)', 'Imperfect', 'Prohibition (לֹא)'],
+            ['8', 'וַיַּעֲמֹד', '3', 's', 'm', 'עמד', 'I-gutt. (ע)', 'Wayyiqtol', 'Sequential Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Passage C — I-נ and I-י (Gen 3–4; 9; Num 10) (9–12)')
+        rows_c = [
+            ['9', 'וַיִּתֵּן', '', '', '', '', '', '', ''],
+            ['10', 'וַיֵּדַע', '', '', '', '', '', '', ''],
+            ['11', 'יִתֵּן', '', '', '', '', '', '', ''],
+            ['12', 'וַיֵּצֵא', '', '', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['9', 'וַיִּתֵּן', '3', 's', 'm', 'נתן', 'I-נ', 'Wayyiqtol', 'Sequential Past'],
+            ['10', 'וַיֵּדַע', '3', 's', 'm', 'ידע', 'I-י', 'Wayyiqtol', 'Sequential Past'],
+            ['11', 'יִתֵּן', '3', 's', 'm', 'נתן', 'I-נ', 'Imperfect', 'Simple Future'],
+            ['12', 'וַיֵּצֵא', '3', 's', 'm', 'יצא', 'I-י', 'Wayyiqtol', 'Sequential Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Passage D — Biconsonantal and Geminate (Gen 19–22) (13–16)')
+        rows_d = [
+            ['13', 'וַיָּבֹאוּ', '', '', '', '', '', '', ''],
+            ['14', 'וַיָּקׇם', '', '', '', '', '', '', ''],
+            ['15', 'יָשׁוּב', '', '', '', '', '', '', ''],
+            ['16', 'וַיָּסׇּב', '', '', '', '', '', '', ''],
+        ]
+        ans_d = [
+            ['13', 'וַיָּבֹאוּ', '3', 'p', 'm', 'בוא', 'Biconsonantal', 'Wayyiqtol', 'Sequential Past'],
+            ['14', 'וַיָּקׇם', '3', 's', 'm', 'קום', 'Biconsonantal', 'Wayyiqtol', 'Sequential Past'],
+            ['15', 'יָשׁוּב', '3', 's', 'm', 'שוב', 'Biconsonantal', 'Imperfect', 'Simple Future'],
+            ['16', 'וַיָּסׇּב', '3', 's', 'm', 'סבב', 'Geminate', 'Wayyiqtol', 'Sequential Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+
+def build_ch16_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch16', 'exercises',
+                               'ch16-passage-exercise')
+    path = os.path.join(out_dir, 'ch16-passage-exercise.pdf')
+    ex = Ch16PassageExercise(
+        title='Chapter 16 — Passage Exercise: Qal Imperfect Weak Verbs',
+        subtitle='BBH Chapter 16',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch16WeakFormIdExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, identify: (a) Weak Class, (b) Person, (c) Number, '
+            '(d) Gender, (e) Root.\n'
+            'Part A: forms are grouped by class. Part B: forms are mixed — identify the class first.'
+        )
+        hdrs = ['#', 'Form', 'Weak Class', 'Person', 'Number', 'Gender', 'Root']
+        cr = [0.05, 0.14, 0.15, 0.09, 0.09, 0.09, 0.39]
+        hc = [1]
+        groups = [
+            ('Group 1: III-ה (Lamed-He) (1–5)', [
+                ['1', 'יִבְנֶה', '', '', '', '', ''],
+                ['2', 'תַּעֲשֶׂה', '', '', '', '', ''],
+                ['3', 'יִהְיֶה', '', '', '', '', ''],
+                ['4', 'תִּרְאֶה', '', '', '', '', ''],
+                ['5', 'יִבֶּן', '', '', '', '', ''],
+            ], [
+                ['1', 'יִבְנֶה', 'III-ה', '3', 's', 'm', 'בנה'],
+                ['2', 'תַּעֲשֶׂה', 'III-ה', '3/2', 's', 'f/m', 'עשה'],
+                ['3', 'יִהְיֶה', 'III-ה', '3', 's', 'm', 'היה'],
+                ['4', 'תִּרְאֶה', 'III-ה', '3/2', 's', 'f/m', 'ראה'],
+                ['5', 'יִבֶּן', 'III-ה', '3', 's', 'm', 'בנה'],
+            ]),
+            ('Group 2: III-א (Lamed-Aleph) (6–10)', [
+                ['6', 'יִמְצָא', '', '', '', '', ''],
+                ['7', 'תִּקְרָא', '', '', '', '', ''],
+                ['8', 'אֶמְצָא', '', '', '', '', ''],
+                ['9', 'יִמְצְאוּ', '', '', '', '', ''],
+                ['10', 'נִקְרָא', '', '', '', '', ''],
+            ], [
+                ['6', 'יִמְצָא', 'III-א', '3', 's', 'm', 'מצא'],
+                ['7', 'תִּקְרָא', 'III-א', '3/2', 's', 'f/m', 'קרא'],
+                ['8', 'אֶמְצָא', 'III-א', '1', 's', 'c', 'מצא'],
+                ['9', 'יִמְצְאוּ', 'III-א', '3', 'p', 'm', 'מצא'],
+                ['10', 'נִקְרָא', 'III-א', '1', 'p', 'c', 'קרא'],
+            ]),
+            ('Group 3: III-gutt. Lamed-Guttural (11–15)', [
+                ['11', 'יִשְׁלַח', '', '', '', '', ''],
+                ['12', 'תִּשְׁמַע', '', '', '', '', ''],
+                ['13', 'וַיִּשְׁמַע', '', '', '', '', ''],
+                ['14', 'יִשְׁלְחוּ', '', '', '', '', ''],
+                ['15', 'אֶשְׁמַע', '', '', '', '', ''],
+            ], [
+                ['11', 'יִשְׁלַח', 'III-gutt.', '3', 's', 'm', 'שלח'],
+                ['12', 'תִּשְׁמַע', 'III-gutt.', '3/2', 's', 'f/m', 'שמע'],
+                ['13', 'וַיִּשְׁמַע', 'III-gutt.', '3', 's', 'm', 'שמע'],
+                ['14', 'יִשְׁלְחוּ', 'III-gutt.', '3', 'p', 'm', 'שלח'],
+                ['15', 'אֶשְׁמַע', 'III-gutt.', '1', 's', 'c', 'שמע'],
+            ]),
+            ('Group 4: I-Guttural (Pe-Guttural) (16–20)', [
+                ['16', 'יַעֲמֹד', '', '', '', '', ''],
+                ['17', 'תַּחֲלֹם', '', '', '', '', ''],
+                ['18', 'יֹאמַר', '', '', '', '', ''],
+                ['19', 'תַּעַמְדוּ', '', '', '', '', ''],
+                ['20', 'נַעֲמֹד', '', '', '', '', ''],
+            ], [
+                ['16', 'יַעֲמֹד', 'I-gutt.', '3', 's', 'm', 'עמד'],
+                ['17', 'תַּחֲלֹם', 'I-gutt.', '3/2', 's', 'f/m', 'חלם'],
+                ['18', 'יֹאמַר', 'I-gutt. (א)', '3', 's', 'm', 'אמר'],
+                ['19', 'תַּעַמְדוּ', 'I-gutt.', '2', 'p', 'm', 'עמד'],
+                ['20', 'נַעֲמֹד', 'I-gutt.', '1', 'p', 'c', 'עמד'],
+            ]),
+            ('Group 5: I-נ (Pe-Nun) (21–25)', [
+                ['21', 'יִתֵּן', '', '', '', '', ''],
+                ['22', 'תִּתֵּן', '', '', '', '', ''],
+                ['23', 'וַיִּתֵּן', '', '', '', '', ''],
+                ['24', 'יִפֹּל', '', '', '', '', ''],
+                ['25', 'תִּתְּנוּ', '', '', '', '', ''],
+            ], [
+                ['21', 'יִתֵּן', 'I-נ', '3', 's', 'm', 'נתן'],
+                ['22', 'תִּתֵּן', 'I-נ', '3/2', 's', 'f/m', 'נתן'],
+                ['23', 'וַיִּתֵּן', 'I-נ', '3', 's', 'm', 'נתן'],
+                ['24', 'יִפֹּל', 'I-נ', '3', 's', 'm', 'נפל'],
+                ['25', 'תִּתְּנוּ', 'I-נ', '2', 'p', 'm', 'נתן'],
+            ]),
+            ('Group 6: I-י (Pe-Yod) (26–30)', [
+                ['26', 'יֵדַע', '', '', '', '', ''],
+                ['27', 'תֵּשֵׁב', '', '', '', '', ''],
+                ['28', 'וַיֵּלֶד', '', '', '', '', ''],
+                ['29', 'יֵצֵא', '', '', '', '', ''],
+                ['30', 'אֵלֵד', '', '', '', '', ''],
+            ], [
+                ['26', 'יֵדַע', 'I-י', '3', 's', 'm', 'ידע'],
+                ['27', 'תֵּשֵׁב', 'I-י', '3/2', 's', 'f/m', 'ישב'],
+                ['28', 'וַיֵּלֶד', 'I-י', '3', 's', 'm', 'ילד'],
+                ['29', 'יֵצֵא', 'I-י', '3', 's', 'm', 'יצא'],
+                ['30', 'אֵלֵד', 'I-י', '1', 's', 'c', 'ילד'],
+            ]),
+            ('Group 7: Biconsonantal (II-י/ו) (31–35)', [
+                ['31', 'יָקוּם', '', '', '', '', ''],
+                ['32', 'תָּבוֹא', '', '', '', '', ''],
+                ['33', 'וַיָּבֹא', '', '', '', '', ''],
+                ['34', 'יָמוּת', '', '', '', '', ''],
+                ['35', 'וַיָּקׇם', '', '', '', '', ''],
+            ], [
+                ['31', 'יָקוּם', 'Biconsonantal', '3', 's', 'm', 'קום'],
+                ['32', 'תָּבוֹא', 'Biconsonantal', '3/2', 's', 'f/m', 'בוא'],
+                ['33', 'וַיָּבֹא', 'Biconsonantal', '3', 's', 'm', 'בוא'],
+                ['34', 'יָמוּת', 'Biconsonantal', '3', 's', 'm', 'מות'],
+                ['35', 'וַיָּקׇם', 'Biconsonantal', '3', 's', 'm', 'קום'],
+            ]),
+            ('Group 8: Geminate (Ayin-Doubled) (36–40)', [
+                ['36', 'יָסֹב', '', '', '', '', ''],
+                ['37', 'יִסֹּב', '', '', '', '', ''],
+                ['38', 'וַיָּסׇּב', '', '', '', '', ''],
+                ['39', 'תָּסֹב', '', '', '', '', ''],
+                ['40', 'יִסֹּבּוּ', '', '', '', '', ''],
+            ], [
+                ['36', 'יָסֹב', 'Geminate', '3', 's', 'm', 'סבב'],
+                ['37', 'יִסֹּב', 'Geminate', '3', 's', 'm', 'סבב'],
+                ['38', 'וַיָּסׇּב', 'Geminate', '3', 's', 'm', 'סבב'],
+                ['39', 'תָּסֹב', 'Geminate', '3/2', 's', 'f/m', 'סבב'],
+                ['40', 'יִסֹּבּוּ', 'Geminate', '3', 'p', 'm', 'סבב'],
+            ]),
+        ]
+        for heading, rows, ans in groups:
+            self.add_section_heading(heading)
+            self.add_generic_table(headers=hdrs, rows=rows, col_ratios=cr, heb_cols=hc,
+                                   show_answers=True, answer_rows=ans)
+
+        self.add_section_heading('Part B — Mixed Forms (41–50)')
+        rows_b = [
+            ['41', 'וַיָּקׇם', '', '', '', '', ''],
+            ['42', 'יִבְנֶה', '', '', '', '', ''],
+            ['43', 'יִתֵּן', '', '', '', '', ''],
+            ['44', 'יַעֲשֶׂה', '', '', '', '', ''],
+            ['45', 'תֵּדַע', '', '', '', '', ''],
+            ['46', 'וַיִּשְׁמַע', '', '', '', '', ''],
+            ['47', 'יִמְצָא', '', '', '', '', ''],
+            ['48', 'וַיָּבֹאוּ', '', '', '', '', ''],
+            ['49', 'תִּתֵּן', '', '', '', '', ''],
+            ['50', 'יֵצֵא', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['41', 'וַיָּקׇם', 'Biconsonantal', '3', 's', 'm', 'קום'],
+            ['42', 'יִבְנֶה', 'III-ה', '3', 's', 'm', 'בנה'],
+            ['43', 'יִתֵּן', 'I-נ', '3', 's', 'm', 'נתן'],
+            ['44', 'יַעֲשֶׂה', 'III-ה', '3', 's', 'm', 'עשה'],
+            ['45', 'תֵּדַע', 'I-י', '3/2', 's', 'f/m', 'ידע'],
+            ['46', 'וַיִּשְׁמַע', 'III-gutt.', '3', 's', 'm', 'שמע'],
+            ['47', 'יִמְצָא', 'III-א', '3', 's', 'm', 'מצא'],
+            ['48', 'וַיָּבֹאוּ', 'Biconsonantal', '3', 'p', 'm', 'בוא'],
+            ['49', 'תִּתֵּן', 'I-נ', '3/2', 's', 'f/m', 'נתן'],
+            ['50', 'יֵצֵא', 'I-י', '3', 's', 'm', 'יצא'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+
+def build_ch16_weak_form_id(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch16', 'exercises',
+                               'ch16-weak-form-id')
+    path = os.path.join(out_dir, 'ch16-weak-form-id.pdf')
+    ex = Ch16WeakFormIdExercise(
+        title='Chapter 16 — Weak Form ID Drill: Qal Imperfect Weak Verbs',
+        subtitle='BBH Chapter 16',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch17ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, give: (a) Form Type (Wayyiqtol / Weqatal / Imperfect / Perfect), '
+            '(b) Person, (c) Number, (d) Gender, (e) Root (3ms lexical form).'
+        )
+        hdrs_a = ['#', 'Form', 'Form Type', 'Person', 'Number', 'Gender', 'Root']
+        cr_a = [0.05, 0.14, 0.14, 0.09, 0.09, 0.09, 0.40]
+        hdrs_b = ['#', 'Form', 'Form Type', 'Person', 'Number', 'Gender', 'Root', 'Weak Class']
+        cr_b = [0.05, 0.13, 0.12, 0.08, 0.08, 0.08, 0.14, 0.32]
+        hc = [1]
+
+        self.add_section_heading('Part A — Wayyiqtol: Strong and Common Weak Roots (1–10)')
+        rows_a = [
+            ['1', 'וַיֹּאמֶר', '', '', '', '', ''],
+            ['2', 'וַתֹּאמֶר', '', '', '', '', ''],
+            ['3', 'וַיֵּלֶךְ', '', '', '', '', ''],
+            ['4', 'וַיִּקְטֹל', '', '', '', '', ''],
+            ['5', 'וַיִּכְתְּבוּ', '', '', '', '', ''],
+            ['6', 'וַתִּשְׁמֹרְנָה', '', '', '', '', ''],
+            ['7', 'וָאֶקְטֹל', '', '', '', '', ''],
+            ['8', 'וַנִּקְטֹל', '', '', '', '', ''],
+            ['9', 'וַיִּתֵּן', '', '', '', '', ''],
+            ['10', 'וַיָּבֹא', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'וַיֹּאמֶר', 'Wayyiqtol', '3', 's', 'm', 'אמר'],
+            ['2', 'וַתֹּאמֶר', 'Wayyiqtol', '3', 's', 'f', 'אמר'],
+            ['3', 'וַיֵּלֶךְ', 'Wayyiqtol', '3', 's', 'm', 'הלך'],
+            ['4', 'וַיִּקְטֹל', 'Wayyiqtol', '3', 's', 'm', 'קטל'],
+            ['5', 'וַיִּכְתְּבוּ', 'Wayyiqtol', '3', 'p', 'm', 'כתב'],
+            ['6', 'וַתִּשְׁמֹרְנָה', 'Wayyiqtol', '3/2', 'p', 'f', 'שמר'],
+            ['7', 'וָאֶקְטֹל', 'Wayyiqtol', '1', 's', 'c', 'קטל'],
+            ['8', 'וַנִּקְטֹל', 'Wayyiqtol', '1', 'p', 'c', 'קטל'],
+            ['9', 'וַיִּתֵּן', 'Wayyiqtol', '3', 's', 'm', 'נתן'],
+            ['10', 'וַיָּבֹא', 'Wayyiqtol', '3', 's', 'm', 'בוא'],
+        ]
+        self.add_generic_table(headers=hdrs_a, rows=rows_a, col_ratios=cr_a, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Wayyiqtol: Weak Roots (11–20)')
+        rows_b = [
+            ['11', 'וַיַּרְא', '', '', '', '', '', ''],
+            ['12', 'וַיְהִי', '', '', '', '', '', ''],
+            ['13', 'וַיַּעַשׂ', '', '', '', '', '', ''],
+            ['14', 'וַיָּקׇם', '', '', '', '', '', ''],
+            ['15', 'וַיָּבֹאוּ', '', '', '', '', '', ''],
+            ['16', 'וַיָּסׇּב', '', '', '', '', '', ''],
+            ['17', 'וַיֵּדַע', '', '', '', '', '', ''],
+            ['18', 'וַיֵּצֵא', '', '', '', '', '', ''],
+            ['19', 'וַיִּבֶן', '', '', '', '', '', ''],
+            ['20', 'וַיָּשׇׁב', '', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['11', 'וַיַּרְא', 'Wayyiqtol', '3', 's', 'm', 'ראה', 'III-ה'],
+            ['12', 'וַיְהִי', 'Wayyiqtol', '3', 's', 'm', 'היה', 'III-ה'],
+            ['13', 'וַיַּעַשׂ', 'Wayyiqtol', '3', 's', 'm', 'עשה', 'III-ה + I-gutt.'],
+            ['14', 'וַיָּקׇם', 'Wayyiqtol', '3', 's', 'm', 'קום', 'Biconsonantal'],
+            ['15', 'וַיָּבֹאוּ', 'Wayyiqtol', '3', 'p', 'm', 'בוא', 'Biconsonantal'],
+            ['16', 'וַיָּסׇּב', 'Wayyiqtol', '3', 's', 'm', 'סבב', 'Geminate'],
+            ['17', 'וַיֵּדַע', 'Wayyiqtol', '3', 's', 'm', 'ידע', 'I-י'],
+            ['18', 'וַיֵּצֵא', 'Wayyiqtol', '3', 's', 'm', 'יצא', 'I-י + III-א'],
+            ['19', 'וַיִּבֶן', 'Wayyiqtol', '3', 's', 'm', 'בנה', 'III-ה'],
+            ['20', 'וַיָּשׇׁב', 'Wayyiqtol', '3', 's', 'm', 'שוב', 'Biconsonantal'],
+        ]
+        self.add_generic_table(headers=hdrs_b, rows=rows_b, col_ratios=cr_b, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — Weqatal and Disambiguation (21–30)')
+        rows_c = [
+            ['21', 'וְשָׁמַרְתָּ', '', '', '', '', ''],
+            ['22', 'וְאָהַבְתָּ', '', '', '', '', ''],
+            ['23', 'שָׁמַרְתָּ', '', '', '', '', ''],
+            ['24', 'וּשְׁמַרְתֶּם', '', '', '', '', ''],
+            ['25', 'וְנָתַתָּ', '', '', '', '', ''],
+            ['26', 'יִשְׁמֹר', '', '', '', '', ''],
+            ['27', 'וְשָׁמְרוּ', '', '', '', '', ''],
+            ['28', 'שָׁמְרוּ', '', '', '', '', ''],
+            ['29', 'וְעָשִׂיתָ', '', '', '', '', ''],
+            ['30', 'וָאֹמַר', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['21', 'וְשָׁמַרְתָּ', 'Weqatal', '2', 's', 'm', 'שמר'],
+            ['22', 'וְאָהַבְתָּ', 'Weqatal', '2', 's', 'm', 'אהב'],
+            ['23', 'שָׁמַרְתָּ', 'Perfect', '2', 's', 'm', 'שמר'],
+            ['24', 'וּשְׁמַרְתֶּם', 'Weqatal', '2', 'p', 'm', 'שמר'],
+            ['25', 'וְנָתַתָּ', 'Weqatal', '2', 's', 'm', 'נתן'],
+            ['26', 'יִשְׁמֹר', 'Imperfect', '3', 's', 'm', 'שמר'],
+            ['27', 'וְשָׁמְרוּ', 'Weqatal', '3', 'p', 'c', 'שמר'],
+            ['28', 'שָׁמְרוּ', 'Perfect', '3', 'p', 'c', 'שמר'],
+            ['29', 'וְעָשִׂיתָ', 'Weqatal', '2', 's', 'm', 'עשה'],
+            ['30', 'וָאֹמַר', 'Wayyiqtol', '1', 's', 'c', 'אמר'],
+        ]
+        self.add_generic_table(headers=hdrs_a, rows=rows_c, col_ratios=cr_a, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+
+def build_ch17_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch17', 'exercises',
+                               'ch17-parsing-drill')
+    path = os.path.join(out_dir, 'ch17-parsing-drill.pdf')
+    ex = Ch17ParsingDrillExercise(
+        title='Chapter 17 — Parsing Drill: Wayyiqtol and Weqatal',
+        subtitle='BBH Chapter 17',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch17PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each highlighted form, give: '
+            '(a) Form Type (Wayyiqtol / Weqatal / Imperfect / Perfect), '
+            '(b) Person, (c) Number, (d) Gender, (e) Root (3ms lexical form), '
+            '(f) Usage Note.'
+        )
+        hdrs = ['#', 'Form', 'Form Type', 'Person', 'Number', 'Gender', 'Root', 'Usage Note']
+        cr = [0.05, 0.14, 0.11, 0.08, 0.08, 0.08, 0.12, 0.34]
+        hc = [1]
+
+        self.add_section_heading('Passage A — Genesis 1:1–5 (Creation Narrative) (1–4)')
+        rows_a = [
+            ['1', 'בָּרָא', '', '', '', '', '', ''],
+            ['2', 'וַיְהִי', '', '', '', '', '', ''],
+            ['3', 'וַיַּרְא', '', '', '', '', '', ''],
+            ['4', 'וַיִּקְרָא', '', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'בָּרָא', 'Perfect', '3', 's', 'm', 'ברא', 'Simple Past'],
+            ['2', 'וַיְהִי', 'Wayyiqtol', '3', 's', 'm', 'היה', 'Sequential Past'],
+            ['3', 'וַיַּרְא', 'Wayyiqtol', '3', 's', 'm', 'ראה', 'Sequential Past'],
+            ['4', 'וַיִּקְרָא', 'Wayyiqtol', '3', 's', 'm', 'קרא', 'Sequential Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Passage B — Genesis 22:1–4 (Binding of Isaac) (5–8)')
+        rows_b = [
+            ['5', 'וַיְהִי', '', '', '', '', '', ''],
+            ['6', 'וַיַּשְׁכֵּם', '', '', '', '', '', ''],
+            ['7', 'וַיָּקׇם', '', '', '', '', '', ''],
+            ['8', 'וַיַּרְא', '', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['5', 'וַיְהִי', 'Wayyiqtol', '3', 's', 'm', 'היה', 'Sequential Past'],
+            ['6', 'וַיַּשְׁכֵּם', 'Wayyiqtol', '3', 's', 'm', 'שכם', 'Sequential Past'],
+            ['7', 'וַיָּקׇם', 'Wayyiqtol', '3', 's', 'm', 'קום', 'Sequential Past'],
+            ['8', 'וַיַּרְא', 'Wayyiqtol', '3', 's', 'm', 'ראה', 'Sequential Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Passage C — Deuteronomy 6:4–7 (The Shema) (9–11)')
+        rows_c = [
+            ['9', 'וְאָהַבְתָּ', '', '', '', '', '', ''],
+            ['10', 'וְשִׁנַּנְתָּם', '', '', '', '', '', ''],
+            ['11', 'וְדִבַּרְתָּ', '', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['9', 'וְאָהַבְתָּ', 'Weqatal', '2', 's', 'm', 'אהב', 'Sequential Future'],
+            ['10', 'וְשִׁנַּנְתָּם', 'Weqatal', '2', 's', 'm', 'שנן', 'Sequential Future'],
+            ['11', 'וְדִבַּרְתָּ', 'Weqatal', '2', 's', 'm', 'דבר', 'Sequential Future'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Passage D — Exodus 3:1–6 (Burning Bush) (12–16)')
+        rows_d = [
+            ['12', 'וַיֵּלֶךְ', '', '', '', '', '', ''],
+            ['13', 'וַיַּרְא', '', '', '', '', '', ''],
+            ['14', 'וַיֵּפֶן', '', '', '', '', '', ''],
+            ['15', 'וַיִּקְרָא', '', '', '', '', '', ''],
+            ['16', 'וַיֹּאמֶר', '', '', '', '', '', ''],
+        ]
+        ans_d = [
+            ['12', 'וַיֵּלֶךְ', 'Wayyiqtol', '3', 's', 'm', 'הלך', 'Sequential Past'],
+            ['13', 'וַיַּרְא', 'Wayyiqtol', '3', 's', 'm', 'ראה', 'Sequential Past'],
+            ['14', 'וַיֵּפֶן', 'Wayyiqtol', '3', 's', 'm', 'פנה', 'Sequential Past'],
+            ['15', 'וַיִּקְרָא', 'Wayyiqtol', '3', 's', 'm', 'קרא', 'Sequential Past'],
+            ['16', 'וַיֹּאמֶר', 'Wayyiqtol', '3', 's', 'm', 'אמר', 'Sequential Past'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+
+def build_ch17_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch17', 'exercises',
+                               'ch17-passage-exercise')
+    path = os.path.join(out_dir, 'ch17-passage-exercise.pdf')
+    ex = Ch17PassageExercise(
+        title='Chapter 17 — Passage Exercise: Wayyiqtol and Weqatal in Context',
+        subtitle='BBH Chapter 17',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch18ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, give: (a) Conjugation (Imperative / Imperfect / Jussive / Cohortative), '
+            '(b) Person, (c) Number, (d) Gender, (e) Root (lexical form).'
+        )
+        hdrs_a = ['#', 'Form', 'Conjugation', 'Person', 'Number', 'Gender', 'Root']
+        cr_a = [0.05, 0.11, 0.14, 0.09, 0.09, 0.09, 0.43]
+        hdrs_b = ['#', 'Form', 'Conjugation', 'Person', 'Number', 'Gender', 'Root', 'Weak Class']
+        cr_b = [0.05, 0.10, 0.12, 0.08, 0.08, 0.08, 0.13, 0.36]
+        hc = [1]
+
+        self.add_section_heading('Part A — Strong and Common Roots (1–10)')
+        rows_a = [
+            ['1', 'שְׁמֹר', '', '', '', '', ''],
+            ['2', 'שִׁמְרִי', '', '', '', '', ''],
+            ['3', 'שִׁמְרוּ', '', '', '', '', ''],
+            ['4', 'שְׁמֹרְנָה', '', '', '', '', ''],
+            ['5', 'שְׁמַע', '', '', '', '', ''],
+            ['6', 'שִׁמְעוּ', '', '', '', '', ''],
+            ['7', 'זְכֹר', '', '', '', '', ''],
+            ['8', 'חֲזַק', '', '', '', '', ''],
+            ['9', 'כְּתֹב', '', '', '', '', ''],
+            ['10', 'קְרָא', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'שְׁמֹר', 'Imperative', '2nd', 's', 'm', 'שמר'],
+            ['2', 'שִׁמְרִי', 'Imperative', '2nd', 's', 'f', 'שמר'],
+            ['3', 'שִׁמְרוּ', 'Imperative', '2nd', 'p', 'm', 'שמר'],
+            ['4', 'שְׁמֹרְנָה', 'Imperative', '2nd', 'p', 'f', 'שמר'],
+            ['5', 'שְׁמַע', 'Imperative', '2nd', 's', 'm', 'שמע'],
+            ['6', 'שִׁמְעוּ', 'Imperative', '2nd', 'p', 'm', 'שמע'],
+            ['7', 'זְכֹר', 'Imperative', '2nd', 's', 'm', 'זכר'],
+            ['8', 'חֲזַק', 'Imperative', '2nd', 's', 'm', 'חזק'],
+            ['9', 'כְּתֹב', 'Imperative', '2nd', 's', 'm', 'כתב'],
+            ['10', 'קְרָא', 'Imperative', '2nd', 's', 'm', 'קרא'],
+        ]
+        self.add_generic_table(headers=hdrs_a, rows=rows_a, col_ratios=cr_a, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Weak Root Imperatives (11–25)')
+        rows_b = [
+            ['11', 'לֵךְ', '', '', '', '', '', ''],
+            ['12', 'לְכוּ', '', '', '', '', '', ''],
+            ['13', 'עֲשֵׂה', '', '', '', '', '', ''],
+            ['14', 'עֲשׂוּ', '', '', '', '', '', ''],
+            ['15', 'רְאֵה', '', '', '', '', '', ''],
+            ['16', 'קוּם', '', '', '', '', '', ''],
+            ['17', 'קוּמִי', '', '', '', '', '', ''],
+            ['18', 'בֹּא', '', '', '', '', '', ''],
+            ['19', 'שׁוּב', '', '', '', '', '', ''],
+            ['20', 'שֵׁב', '', '', '', '', '', ''],
+            ['21', 'צֵא', '', '', '', '', '', ''],
+            ['22', 'תֵּן', '', '', '', '', '', ''],
+            ['23', 'תְּנוּ', '', '', '', '', '', ''],
+            ['24', 'אֱמֹר', '', '', '', '', '', ''],
+            ['25', 'קַח', '', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['11', 'לֵךְ', 'Imperative', '2nd', 's', 'm', 'הלך', 'I-י'],
+            ['12', 'לְכוּ', 'Imperative', '2nd', 'p', 'm', 'הלך', 'I-י'],
+            ['13', 'עֲשֵׂה', 'Imperative', '2nd', 's', 'm', 'עשה', 'III-ה + I-gutt.'],
+            ['14', 'עֲשׂוּ', 'Imperative', '2nd', 'p', 'm', 'עשה', 'III-ה + I-gutt.'],
+            ['15', 'רְאֵה', 'Imperative', '2nd', 's', 'm', 'ראה', 'III-ה'],
+            ['16', 'קוּם', 'Imperative', '2nd', 's', 'm', 'קום', 'Biconsonantal'],
+            ['17', 'קוּמִי', 'Imperative', '2nd', 's', 'f', 'קום', 'Biconsonantal'],
+            ['18', 'בֹּא', 'Imperative', '2nd', 's', 'm', 'בוא', 'Biconsonantal'],
+            ['19', 'שׁוּב', 'Imperative', '2nd', 's', 'm', 'שוב', 'Biconsonantal'],
+            ['20', 'שֵׁב', 'Imperative', '2nd', 's', 'm', 'ישב', 'I-י'],
+            ['21', 'צֵא', 'Imperative', '2nd', 's', 'm', 'יצא', 'I-י + III-א'],
+            ['22', 'תֵּן', 'Imperative', '2nd', 's', 'm', 'נתן', 'I-נ'],
+            ['23', 'תְּנוּ', 'Imperative', '2nd', 'p', 'm', 'נתן', 'I-נ'],
+            ['24', 'אֱמֹר', 'Imperative', '2nd', 's', 'm', 'אמר', 'I-gutt. (א)'],
+            ['25', 'קַח', 'Imperative', '2nd', 's', 'm', 'לקח', 'I-י'],
+        ]
+        self.add_generic_table(headers=hdrs_b, rows=rows_b, col_ratios=cr_b, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — Disambiguation: Imperative, Imperfect, or Jussive? (26–35)')
+        rows_c = [
+            ['26', 'שְׁמֹר', '', '', '', '', ''],
+            ['27', 'יִשְׁמֹר', '', '', '', '', ''],
+            ['28', 'אַל־יִשְׁמֹר', '', '', '', '', ''],
+            ['29', 'לְכוּ', '', '', '', '', ''],
+            ['30', 'יֵלְכוּ', '', '', '', '', ''],
+            ['31', 'עֲשֵׂה', '', '', '', '', ''],
+            ['32', 'יַעַשׂ', '', '', '', '', ''],
+            ['33', 'אַל־תַּעַשׂ', '', '', '', '', ''],
+            ['34', 'בֹּא', '', '', '', '', ''],
+            ['35', 'יָבֹא', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['26', 'שְׁמֹר', 'Imperative', '2nd', 's', 'm', 'שמר'],
+            ['27', 'יִשְׁמֹר', 'Imperfect', '3rd', 's', 'm', 'שמר'],
+            ['28', 'אַל־יִשְׁמֹר', 'Jussive', '3rd', 's', 'm', 'שמר'],
+            ['29', 'לְכוּ', 'Imperative', '2nd', 'p', 'm', 'הלך'],
+            ['30', 'יֵלְכוּ', 'Imperfect', '3rd', 'p', 'm', 'הלך'],
+            ['31', 'עֲשֵׂה', 'Imperative', '2nd', 's', 'm', 'עשה'],
+            ['32', 'יַעַשׂ', 'Jussive', '3rd', 's', 'm', 'עשה'],
+            ['33', 'אַל־תַּעַשׂ', 'Jussive', '2nd', 's', 'm', 'עשה'],
+            ['34', 'בֹּא', 'Imperative', '2nd', 's', 'm', 'בוא'],
+            ['35', 'יָבֹא', 'Imperfect', '3rd', 's', 'm', 'בוא'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Form', 'Form Type', 'Person', 'Number', 'Gender', 'Root'],
+            rows=rows_c,
+            col_ratios=[0.05, 0.14, 0.14, 0.09, 0.09, 0.09, 0.40],
+            heb_cols=hc,
+            show_answers=True,
+            answer_rows=ans_c,
+        )
+
+
+def build_ch18_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch18', 'exercises',
+                               'ch18-parsing-drill')
+    path = os.path.join(out_dir, 'ch18-parsing-drill.pdf')
+    ex = Ch18ParsingDrillExercise(
+        title='Chapter 18 — Parsing Drill: Qal Imperative',
+        subtitle='BBH Chapter 18',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+
+class Ch18PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each highlighted form, give: '
+            '(a) Form Type (Imperative / Imperfect / Jussive / Weqatal), '
+            '(b) Person, (c) Number, (d) Gender, (e) Root (lexical form), '
+            '(f) Usage Note.'
+        )
+        hdrs = ['#', 'Form', 'Form Type', 'Person', 'Number', 'Gender', 'Root', 'Usage Note']
+        cr = [0.05, 0.12, 0.11, 0.08, 0.08, 0.08, 0.13, 0.35]
+        hc = [1]
+
+        self.add_section_heading('Passage A — Genesis 12:1–3 (Call of Abraham) (1–3)')
+        rows_a = [
+            ['1', 'לֶךְ', '', '', '', '', '', ''],
+            ['2', 'עֲזֹב', '', '', '', '', '', ''],
+            ['3', 'וֶהְיֵה', '', '', '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'לֶךְ', 'Imperative', '2nd', 's', 'm', 'הלך', 'Direct Command'],
+            ['2', 'עֲזֹב', 'Imperative', '2nd', 's', 'm', 'עזב', 'Direct Command'],
+            ['3', 'וֶהְיֵה', 'Imperative', '2nd', 's', 'm', 'היה', 'Direct Command'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Passage B — Genesis 22:1–2 (Binding of Isaac) (4–6)')
+        rows_b = [
+            ['4', 'קַח', '', '', '', '', '', ''],
+            ['5', 'וְלֶךְ', '', '', '', '', '', ''],
+            ['6', 'וְהַעֲלֵהוּ', '', '', '', '', '', ''],
+        ]
+        ans_b = [
+            ['4', 'קַח', 'Imperative', '2nd', 's', 'm', 'לקח', 'Direct Command'],
+            ['5', 'וְלֶךְ', 'Imperative', '2nd', 's', 'm', 'הלך', 'Command Chain'],
+            ['6', 'וְהַעֲלֵהוּ', 'Imperative', '2nd', 's', 'm', 'עלה', 'Direct Command (Hiphil)'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Passage C — Deuteronomy 6:4–9 (The Shema) (7–10)')
+        rows_c = [
+            ['7', 'שְׁמַע', '', '', '', '', '', ''],
+            ['8', 'וְאָהַבְתָּ', '', '', '', '', '', ''],
+            ['9', 'וְשִׁנַּנְתָּם', '', '', '', '', '', ''],
+            ['10', 'וְדִבַּרְתָּ', '', '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['7', 'שְׁמַע', 'Imperative', '2nd', 's', 'm', 'שמע', 'Direct Command'],
+            ['8', 'וְאָהַבְתָּ', 'Weqatal', '2nd', 's', 'm', 'אהב', 'Command Chain'],
+            ['9', 'וְשִׁנַּנְתָּם', 'Weqatal', '2nd', 's', 'm', 'שנן', 'Command Chain'],
+            ['10', 'וְדִבַּרְתָּ', 'Weqatal', '2nd', 's', 'm', 'דבר', 'Command Chain'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Passage D — Genesis 1:28 + Exodus 3:4–5 (Divine Commands) (11–15)')
+        rows_d = [
+            ['11', 'פְּרוּ', '', '', '', '', '', ''],
+            ['12', 'רְבוּ', '', '', '', '', '', ''],
+            ['13', 'מִלְאוּ', '', '', '', '', '', ''],
+            ['14', 'אַל־תִּקְרַב', '', '', '', '', '', ''],
+            ['15', 'שַׁל נְעָלֶיךָ', '', '', '', '', '', ''],
+        ]
+        ans_d = [
+            ['11', 'פְּרוּ', 'Imperative', '2nd', 'p', 'm', 'פרה', 'Direct Command'],
+            ['12', 'רְבוּ', 'Imperative', '2nd', 'p', 'm', 'רבה', 'Direct Command'],
+            ['13', 'מִלְאוּ', 'Imperative', '2nd', 'p', 'm', 'מלא', 'Direct Command'],
+            ['14', 'אַל־תִּקְרַב', 'Jussive', '2nd', 's', 'm', 'קרב', 'Prohibition'],
+            ['15', 'שַׁל נְעָלֶיךָ', 'Imperative', '2nd', 's', 'm', 'שלף/של', 'Direct Command'],
+        ]
+        self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_d)
+
+        self.add_section_heading('Passage E — Numbers 13:17–18 (Scouting Canaan) (16)')
+        rows_e = [['16', 'עֲלוּ', '', '', '', '', '', '']]
+        ans_e = [['16', 'עֲלוּ', 'Imperative', '2nd', 'p', 'm', 'עלה', 'Direct Command']]
+        self.add_generic_table(headers=hdrs, rows=rows_e, col_ratios=cr, heb_cols=hc,
+                               show_answers=True, answer_rows=ans_e)
+
+
+def build_ch18_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch18', 'exercises',
+                               'ch18-passage-exercise')
+    path = os.path.join(out_dir, 'ch18-passage-exercise.pdf')
+    ex = Ch18PassageExercise(
+        title='Chapter 18 — Passage Exercise: Qal Imperative in Context',
+        subtitle='BBH Chapter 18',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch19 — Pronominal Suffixes on Verbs
+# ---------------------------------------------------------------------------
+
+class Ch19ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, give: (a) Base Verb — conjugation and PGN, '
+            '(b) Root, (c) Suffix PGN, (d) Full Gloss.'
+        )
+
+        # Part A — Perfect + Suffix (1–8)
+        hdrA = ['#', 'Form', 'Base Conjugation', 'Base PGN', 'Root',
+                'Suffix PGN', 'Full Gloss']
+        crA  = [0.05, 0.13, 0.14, 0.09, 0.10, 0.09, 0.40]
+        rowsA = [
+            ['1', 'שְׁמָרַ֥נִי', '', '', '', '', ''],
+            ['2', 'שְׁמָרוֹ',   '', '', '', '', ''],
+            ['3', 'שְׁמָרָ֥נוּ', '', '', '', '', ''],
+            ['4', 'שְׁמַרְתַּ֥נִי', '', '', '', '', ''],
+            ['5', 'שְׁמַרְתִּ֥יהוּ', '', '', '', '', ''],
+            ['6', 'שְׁלָחַ֥נִי', '', '', '', '', ''],
+            ['7', 'נְתָנַ֥נִי',  '', '', '', '', ''],
+            ['8', 'עֲזָבַ֥נִי',  '', '', '', '', ''],
+        ]
+        ansA = [
+            ['1', 'שְׁמָרַ֥נִי',  'Qal Perfect', '3ms', 'שמר', '1cs', 'he kept me'],
+            ['2', 'שְׁמָרוֹ',    'Qal Perfect', '3ms', 'שמר', '3ms', 'he kept him'],
+            ['3', 'שְׁמָרָ֥נוּ',  'Qal Perfect', '3ms', 'שמר', '1cp', 'he kept us'],
+            ['4', 'שְׁמַרְתַּ֥נִי','Qal Perfect', '2ms', 'שמר', '1cs', 'you kept me'],
+            ['5', 'שְׁמַרְתִּ֥יהוּ','Qal Perfect','1cs', 'שמר', '3ms', 'I kept him'],
+            ['6', 'שְׁלָחַ֥נִי',  'Qal Perfect', '3ms', 'שלח', '1cs', 'he sent me'],
+            ['7', 'נְתָנַ֥נִי',   'Qal Perfect', '3ms', 'נתן', '1cs', 'he gave me'],
+            ['8', 'עֲזָבַ֥נִי',   'Qal Perfect', '3ms', 'עזב', '1cs', 'he forsook me'],
+        ]
+        self.add_section_heading('Part A — Perfect + Suffix (1–8)')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part B — Imperfect + Suffix (Energic Nun) (9–15)
+        hdrB = ['#', 'Form', 'Base Conjugation', 'Base PGN', 'Root',
+                'Suffix PGN', 'Energic Nun?', 'Full Gloss']
+        crB  = [0.05, 0.12, 0.12, 0.09, 0.09, 0.09, 0.09, 0.35]
+        rowsB = [
+            ['9',  'יִשְׁמְרֵ֥נִי', '', '', '', '', '', ''],
+            ['10', 'יִשְׁמְרֶ֥נּוּ', '', '', '', '', '', ''],
+            ['11', 'יִשְׁמְרֵ֥נוּ', '', '', '', '', '', ''],
+            ['12', 'תִּשְׁמְרֵ֥נִי', '', '', '', '', '', ''],
+            ['13', 'יִמְצָאֵ֥נִי', '', '', '', '', '', ''],
+            ['14', 'יִשְׁלָחֶ֥נּוּ', '', '', '', '', '', ''],
+            ['15', 'יִרְאֶ֥נּוּ',   '', '', '', '', '', ''],
+        ]
+        ansB = [
+            ['9',  'יִשְׁמְרֵ֥נִי', 'Qal Imperfect', '3ms', 'שמר', '1cs', 'No',  'he will keep me'],
+            ['10', 'יִשְׁמְרֶ֥נּוּ', 'Qal Imperfect', '3ms', 'שמר', '3ms', 'Yes', 'he will keep him'],
+            ['11', 'יִשְׁמְרֵ֥נוּ', 'Qal Imperfect', '3ms', 'שמר', '1cp', 'No',  'he will keep us'],
+            ['12', 'תִּשְׁמְרֵ֥נִי', 'Qal Imperfect', '2ms/3fs', 'שמר', '1cs', 'No', 'you/she will keep me'],
+            ['13', 'יִמְצָאֵ֥נִי', 'Qal Imperfect', '3ms', 'מצא', '1cs', 'No',  'he will find me'],
+            ['14', 'יִשְׁלָחֶ֥נּוּ', 'Qal Imperfect', '3ms', 'שלח', '3ms', 'Yes', 'he will send him'],
+            ['15', 'יִרְאֶ֥נּוּ',   'Qal Imperfect', '3ms', 'ראה', '3ms', 'Yes', 'he will see him'],
+        ]
+        self.add_section_heading('Part B — Imperfect + Suffix / Energic Nun (9–15)')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part C — Imperative and Wayyiqtol + Suffix (16–20)
+        hdrC = ['#', 'Form', 'Base Conjugation', 'Base PGN', 'Root',
+                'Suffix PGN', 'Full Gloss']
+        rowsC = [
+            ['16', 'שָׁמְרֵ֥נִי',   '', '', '', '', ''],
+            ['17', 'וַיִּשְׁמְרֵ֥הוּ', '', '', '', '', ''],
+            ['18', 'וַיִּשְׁלָחֵ֥הוּ', '', '', '', '', ''],
+            ['19', 'וַיַּרְאֵ֥הוּ',  '', '', '', '', ''],
+            ['20', 'שַׁלְּחֵ֥נִי',   '', '', '', '', ''],
+        ]
+        ansC = [
+            ['16', 'שָׁמְרֵ֥נִי',   'Qal Imperative', '2ms', 'שמר', '1cs', 'Keep me!'],
+            ['17', 'וַיִּשְׁמְרֵ֥הוּ', 'Qal Wayyiqtol', '3ms', 'שמר', '3ms', 'and he kept him'],
+            ['18', 'וַיִּשְׁלָחֵ֥הוּ', 'Qal Wayyiqtol', '3ms', 'שלח', '3ms', 'and he sent him'],
+            ['19', 'וַיַּרְאֵ֥הוּ',  'Qal Wayyiqtol', '3ms', 'ראה', '3ms', 'and he showed/saw him'],
+            ['20', 'שַׁלְּחֵ֥נִי',   'Piel Imperative', '2ms', 'שלח', '1cs', 'Send me!'],
+        ]
+        self.add_section_heading('Part C — Imperative and Wayyiqtol + Suffix (16–20)')
+        self.add_generic_table(hdrC, rowsC, crA, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part D — Infinitive Construct + Suffix (21–25)
+        hdrD = ['#', 'Form', 'Base Conjugation', 'Root',
+                'Suffix PGN', 'Suffix Role', 'Full Gloss']
+        crD  = [0.05, 0.13, 0.14, 0.10, 0.09, 0.12, 0.37]
+        rowsD = [
+            ['21', 'בְּ/שָׁמְר/וֹ',   '', '', '', '', ''],
+            ['22', 'כִּ/שְׁמֹ֣עַ/וֹ', '', '', '', '', ''],
+            ['23', 'בְּ/רֹאֹת/וֹ',   '', '', '', '', ''],
+            ['24', 'לְ/אָהֳבָ֥/הּ',  '', '', '', '', ''],
+            ['25', 'כְּ/צֵאת/וֹ',    '', '', '', '', ''],
+        ]
+        ansD = [
+            ['21', 'בְּ/שָׁמְר/וֹ',   'Qal Inf.Const.', 'שמר', '3ms', 'Subject', 'when he kept / in his keeping'],
+            ['22', 'כִּ/שְׁמֹ֣עַ/וֹ', 'Qal Inf.Const.', 'שמע', '3ms', 'Subject', 'when he heard'],
+            ['23', 'בְּ/רֹאֹת/וֹ',   'Qal Inf.Const.', 'ראה', '3ms', 'Subject', 'when he saw'],
+            ['24', 'לְ/אָהֳבָ֥/הּ',  'Qal Inf.Const.', 'אהב', '3fs', 'Subject/Object', 'to love her'],
+            ['25', 'כְּ/צֵאת/וֹ',    'Qal Inf.Const.', 'יצא', '3ms', 'Subject', 'when he went out'],
+        ]
+        self.add_section_heading('Part D — Infinitive Construct + Suffix (21–25)')
+        self.add_generic_table(hdrD, rowsD, crD, heb_cols=[1],
+                               show_answers=False)
+
+        # Answer key
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part A')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1],
+                               show_answers=True, answer_rows=ansA)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part B')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=True, answer_rows=ansB)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part C')
+        self.add_generic_table(hdrC, rowsC, crA, heb_cols=[1],
+                               show_answers=True, answer_rows=ansC)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part D')
+        self.add_generic_table(hdrD, rowsD, crD, heb_cols=[1],
+                               show_answers=True, answer_rows=ansD)
+
+
+def build_ch19_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch19', 'exercises',
+                               'ch19-parsing-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch19-parsing-drill.pdf')
+    ex = Ch19ParsingDrillExercise(
+        title='Chapter 19 — Parsing Drill: Pronominal Suffixes on Verbs',
+        subtitle='BBH Chapter 19',
+    )
+    return ex.save(path)
+
+
+class Ch19PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each highlighted form: (a) Base Verb — conjugation and root, '
+            '(b) Suffix PGN, (c) Suffix Role (Object / Subject on Inf.Const.), '
+            '(d) Full Gloss.'
+        )
+        hdr = ['#', 'Form', 'Base Conj.', 'Root',
+               'Suffix PGN', 'Suffix Role', 'Full Gloss']
+        cr  = [0.05, 0.14, 0.14, 0.09, 0.09, 0.10, 0.39]
+
+        passages = [
+            ('Passage A — Genesis 28:13–15 (God\'s Promise to Jacob)', [
+                ['1', 'וּשְׁמַרְתִּיךָ',  '', '', '', '', ''],
+                ['2', 'וַהֲשִׁבֹתִיךָ',  '', '', '', '', ''],
+                ['3', 'אֶעֱזָבְךָ',      '', '', '', '', ''],
+            ], [
+                ['1', 'וּשְׁמַרְתִּיךָ',  'Qal Weqatal 1cs', 'שמר', '2ms', 'Object', 'and I will keep you'],
+                ['2', 'וַהֲשִׁבֹתִיךָ',  'Hiphil Weqatal 1cs', 'שוב', '2ms', 'Object', 'and I will bring you back'],
+                ['3', 'אֶעֱזָבְךָ',      'Qal Imperfect 1cs', 'עזב', '2ms', 'Object', 'I will forsake you'],
+            ]),
+            ('Passage B — Genesis 45:4–8 (Joseph Reveals Himself)', [
+                ['4', 'שְׁלָחַ֥נִי (first)', '', '', '', '', ''],
+                ['5', 'וַיִּשְׁלָחֵ֥נִי',   '', '', '', '', ''],
+                ['6', 'מְכַרְתֶּ֥ם אֹתִי',  '', '', '', '', ''],
+            ], [
+                ['4', 'שְׁלָחַ֥נִי',        'Qal Perfect 3ms', 'שלח', '1cs', 'Object', 'God sent me'],
+                ['5', 'וַיִּשְׁלָחֵ֥נִי',   'Qal Wayyiqtol 3ms', 'שלח', '1cs', 'Object', 'and God sent me'],
+                ['6', 'מְכַרְתֶּ֥ם אֹתִי',  'Qal Perfect 2mp', 'מכר', '—', '—', 'you sold me (אֹתִי separate)'],
+            ]),
+            ('Passage C — Psalm 23:1–4 (The LORD My Shepherd)', [
+                ['7',  'יַרְבִּיצֵ֑נִי', '', '', '', '', ''],
+                ['8',  'יְנַהֲלֵ֥נִי',  '', '', '', '', ''],
+                ['9',  'יַנְחֵ֥נִי',    '', '', '', '', ''],
+                ['10', 'יְנַחֲמֻ֑נִי',  '', '', '', '', ''],
+            ], [
+                ['7',  'יַרְבִּיצֵ֑נִי', 'Hiphil Imperfect 3ms', 'רבץ', '1cs', 'Object', 'he makes me lie down'],
+                ['8',  'יְנַהֲלֵ֥נִי',  'Piel Imperfect 3ms',   'נהל', '1cs', 'Object', 'he leads me'],
+                ['9',  'יַנְחֵ֥נִי',    'Hiphil Imperfect 3ms', 'נחה', '1cs', 'Object', 'he guides me'],
+                ['10', 'יְנַחֲמֻ֑נִי',  'Piel Imperfect 3mp',   'נחם', '1cs', 'Object', 'they comfort me'],
+            ]),
+            ('Passage D — Genesis 39:12–20 (Infinitive Construct + Suffix)', [
+                ['11', 'כִּשְׁמֹ֣עַ אֲדֹנָ֗יו', '', '', '', '', ''],
+                ['12', 'כְּרְאֹת/וֹ',            '', '', '', '', ''],
+                ['13', 'עָזַ֤ב בִּגְד/וֹ',        '', '', '', '', ''],
+                ['14', 'בִּהְיוֹת/וֹ',            '', '', '', '', ''],
+            ], [
+                ['11', 'כִּשְׁמֹ֣עַ',  'Qal Inf.Const.', 'שמע', '3ms (noun)', 'Subject', 'when his master heard'],
+                ['12', 'כְּרְאֹת/וֹ', 'Qal Inf.Const.', 'ראה', '3ms', 'Subject', 'when he saw'],
+                ['13', 'בִּגְד/וֹ',   'noun suffix',    'בֶּגֶד', '3ms', 'Possessive', 'his garment'],
+                ['14', 'בִּהְיוֹת/וֹ', 'Qal Inf.Const.', 'היה', '3ms', 'Subject', 'while he was there'],
+            ]),
+            ('Passage E — Psalm 16:1 + Deuteronomy 31:6', [
+                ['15', 'שָׁמְרֵ֥נִי',    '', '', '', '', ''],
+                ['16', 'יַעַזְבֶ֔/ךָּ', '', '', '', '', ''],
+            ], [
+                ['15', 'שָׁמְרֵ֥נִי',    'Qal Imperative 2ms', 'שמר', '1cs', 'Object', 'Keep me!'],
+                ['16', 'יַעַזְבֶ֔/ךָּ', 'Qal Imperfect 3ms',  'עזב', '2ms', 'Object', 'he will forsake you'],
+            ]),
+        ]
+
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+            self.add_section_break()
+
+
+def build_ch19_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch19', 'exercises',
+                               'ch19-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch19-passage-exercise.pdf')
+    ex = Ch19PassageExercise(
+        title='Chapter 19 — Passage Exercise: Pronominal Suffixes on Verbs in Context',
+        subtitle='BBH Chapter 19',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch20 — Qal Infinitive Construct
+# ---------------------------------------------------------------------------
+
+class Ch20ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form: (a) Identify as IC or another form (Imperative / '
+            'Imperfect / Perfect), (b) Root, (c) Root class, '
+            '(d) Preposition (if any), (e) Function (Purpose / Temporal / '
+            'Complementary / Quotative / From / Until).'
+        )
+
+        # Part A — Strong and B-class Roots (1–8)
+        hdrA = ['#', 'Form', 'IC or other?', 'Root', 'Root Class', 'Prep', 'Function']
+        crA  = [0.05, 0.13, 0.12, 0.10, 0.12, 0.08, 0.40]
+        rowsA = [
+            ['1', 'לִ/שְׁמֹר',  '', '', '', '', ''],
+            ['2', 'לִ/שְׁמֹ֣עַ', '', '', '', '', ''],
+            ['3', 'כִּ/שְׁמֹ֣עַ', '', '', '', '', ''],
+            ['4', 'בִּ/זְכֹר',   '', '', '', '', ''],
+            ['5', 'לִ/כְתֹב',   '', '', '', '', ''],
+            ['6', 'לֵ/אמֹר',    '', '', '', '', ''],
+            ['7', 'לֶ/אֱכֹל',   '', '', '', '', ''],
+            ['8', 'מֵ/עֲשׂוֹת', '', '', '', '', ''],
+        ]
+        ansA = [
+            ['1', 'לִ/שְׁמֹר',  'IC', 'שמר', 'Strong A',          'לְ', 'Purpose/Complementary'],
+            ['2', 'לִ/שְׁמֹ֣עַ', 'IC', 'שמע', 'Strong B (gutt.)', 'לְ', 'Purpose/Complementary'],
+            ['3', 'כִּ/שְׁמֹ֣עַ', 'IC', 'שמע', 'Strong B (gutt.)', 'כְּ', 'Temporal (when/as)'],
+            ['4', 'בִּ/זְכֹר',   'IC', 'זכר', 'Strong A',          'בְּ', 'Temporal (when)'],
+            ['5', 'לִ/כְתֹב',   'IC', 'כתב', 'Strong A',          'לְ', 'Purpose'],
+            ['6', 'לֵ/אמֹר',    'IC', 'אמר', 'I-aleph',           'לְ', 'Quotative'],
+            ['7', 'לֶ/אֱכֹל',   'IC', 'אכל', 'I-aleph',           'לְ', 'Purpose/Complementary'],
+            ['8', 'מֵ/עֲשׂוֹת', 'IC', 'עשה', 'III-ה + I-gutt.',   'מִן', 'From/cessation'],
+        ]
+        self.add_section_heading('Part A — Strong and B-class Roots (1–8)')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part B — III-ה and Biconsonantal (9–15): no "IC or other?" column
+        hdrB = ['#', 'Form', 'Root', 'Root Class', 'Prep', 'Function']
+        crB  = [0.05, 0.14, 0.10, 0.12, 0.08, 0.51]
+        rowsB = [
+            ['9',  'לִ/רְאוֹת', '', '', '', ''],
+            ['10', 'לַ/עֲשׂוֹת', '', '', '', ''],
+            ['11', 'הֱיוֹת',     '', '', '', ''],
+            ['12', 'לָ/בֹא',     '', '', '', ''],
+            ['13', 'לָ/שׁוּב',   '', '', '', ''],
+            ['14', 'לָ/מוּת',    '', '', '', ''],
+            ['15', 'בְּ/בֹא',    '', '', '', ''],
+        ]
+        ansB = [
+            ['9',  'לִ/רְאוֹת', 'ראה', 'III-ה',           'לְ', 'Purpose'],
+            ['10', 'לַ/עֲשׂוֹת', 'עשה', 'III-ה + I-gutt.', 'לְ', 'Purpose/Complementary'],
+            ['11', 'הֱיוֹת',     'היה', 'III-ה',           '—',  'Verbal noun/Complementary'],
+            ['12', 'לָ/בֹא',     'בוא', 'Biconsonantal',   'לְ', 'Purpose/Complementary'],
+            ['13', 'לָ/שׁוּב',   'שוב', 'Biconsonantal',   'לְ', 'Purpose/Complementary'],
+            ['14', 'לָ/מוּת',    'מות', 'Biconsonantal',   'לְ', 'Purpose'],
+            ['15', 'בְּ/בֹא',    'בוא', 'Biconsonantal',   'בְּ', 'Temporal (when)'],
+        ]
+        self.add_section_heading('Part B — III-ה and Biconsonantal (9–15)')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part C — I-י, I-נ, and Disambiguation (16–25)
+        hdrC = ['#', 'Form', 'IC or other?', 'Root', 'Root Class', 'Notes']
+        crC  = [0.05, 0.13, 0.12, 0.10, 0.12, 0.48]
+        rowsC = [
+            ['16', 'לֶ/כֶת',  '', '', '', ''],
+            ['17', 'לָ/שֶׁ/בֶת', '', '', '', ''],
+            ['18', 'צֵאת',    '', '', '', ''],
+            ['19', 'תֵּת',    '', '', '', ''],
+            ['20', 'לָ/דַ/עַת', '', '', '', ''],
+            ['21', 'שְׁמֹר',  '', '', '', ''],
+            ['22', 'שְׁמֹ֣עַ', '', '', '', ''],
+            ['23', 'לֶ/כֶת',  '', '', '', ''],
+            ['24', 'יִשְׁמֹר', '', '', '', ''],
+            ['25', 'שָׁמַר',  '', '', '', ''],
+        ]
+        ansC = [
+            ['16', 'לֶ/כֶת',  'IC', 'הלך', 'I-י', '"to go"; contracted form'],
+            ['17', 'לָ/שֶׁ/בֶת', 'IC', 'ישב', 'I-י', '"to dwell/sit"; yod drops'],
+            ['18', 'צֵאת',    'IC', 'יצא', 'I-י + III-א', '"going out"; bare IC with taw'],
+            ['19', 'תֵּת',    'IC', 'נתן', 'I-נ', '"to give"; both nuns drop'],
+            ['20', 'לָ/דַ/עַת', 'IC', 'ידע', 'I-י', '"to know"'],
+            ['21', 'שְׁמֹר',  'IC or Imper.', 'שמר', 'Strong A', 'Ambiguous — context determines'],
+            ['22', 'שְׁמֹ֣עַ', 'IC or Imper.', 'שמע', 'Strong B', 'Ambiguous — context determines'],
+            ['23', 'לֶ/כֶת',  'IC', 'הלך', 'I-י', 'Cannot be Imperative (which is לֵךְ)'],
+            ['24', 'יִשְׁמֹר', 'Imperfect', 'שמר', 'Strong A', 'יִ– prefix = Imperfect'],
+            ['25', 'שָׁמַר',  'Perfect', 'שמר', 'Strong A', 'Qamets + patach = Perfect 3ms'],
+        ]
+        self.add_section_heading('Part C — I-י, I-נ, and Disambiguation (16–25)')
+        self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
+                               show_answers=False)
+
+        # Answer key
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part A')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1],
+                               show_answers=True, answer_rows=ansA)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part B')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=True, answer_rows=ansB)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part C')
+        self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
+                               show_answers=True, answer_rows=ansC)
+
+
+def build_ch20_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch20', 'exercises',
+                               'ch20-parsing-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch20-parsing-drill.pdf')
+    ex = Ch20ParsingDrillExercise(
+        title='Chapter 20 — Parsing Drill: Qal Infinitive Construct',
+        subtitle='BBH Chapter 20',
+    )
+    return ex.save(path)
+
+
+class Ch20PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each highlighted IC form: (a) Root, (b) Root class, '
+            '(c) Preposition, (d) Function (Purpose / Temporal / '
+            'Complementary / Quotative / From / Epexegetical), (e) Gloss.'
+        )
+        hdr = ['#', 'Form', 'Root', 'Root Class', 'Prep', 'Function', 'Gloss']
+        cr  = [0.05, 0.14, 0.10, 0.12, 0.08, 0.14, 0.37]
+
+        passages = [
+            ('Passage 1 — Genesis 2:16–17 (The Garden Command)', [
+                ['1', 'לֵאמֹ֑ר', '', '', '', '', ''],
+            ], [
+                ['1', 'לֵאמֹ֑ר', 'אמר', 'I-aleph', 'לְ', 'Quotative', 'saying'],
+            ]),
+            ('Passage 2 — Genesis 11:5 (Babel)', [
+                ['2', 'לִרְאֹ֥ת', '', '', '', '', ''],
+            ], [
+                ['2', 'לִרְאֹ֥ת', 'ראה', 'III-ה', 'לְ', 'Purpose', 'to see'],
+            ]),
+            ('Passage 3 — Genesis 19:22 (Sodom)', [
+                ['3', 'לַעֲשׂ֣וֹת', '', '', '', '', ''],
+            ], [
+                ['3', 'לַעֲשׂ֣וֹת', 'עשה', 'III-ה + I-gutt.', 'לְ', 'Complementary', 'to do'],
+            ]),
+            ('Passage 4 — Genesis 37:18 (Joseph\'s Brothers)', [
+                ['4', 'לַהֲמִית֖וֹ', '', '', '', '', ''],
+            ], [
+                ['4', 'לַהֲמִית֖וֹ', 'מות', 'Biconsonantal (Hiphil IC)', 'לְ', 'Purpose', 'to kill him'],
+            ]),
+            ('Passage 5 — Genesis 39:18–19 (Potiphar\'s Wife)', [
+                ['5', 'כְשָׁמְע֣וֹ',  '', '', '', '', ''],
+                ['6', 'כִשְׁמֹ֨עַ',  '', '', '', '', ''],
+            ], [
+                ['5', 'כְשָׁמְע֣וֹ',  'שמע', 'Strong B (gutt.)', 'כְּ', 'Temporal (as/when)', 'as/when he heard'],
+                ['6', 'כִשְׁמֹ֨עַ',  'שמע', 'Strong B (gutt.)', 'כְּ', 'Temporal (when)', 'when he heard'],
+            ]),
+            ('Passage 6 — Exodus 3:8 (The Burning Bush)', [
+                ['7', 'לְהַצִּיל֣וֹ', '', '', '', '', ''],
+                ['8', 'לְהַעֲלֹת֤וֹ', '', '', '', '', ''],
+            ], [
+                ['7', 'לְהַצִּיל֣וֹ', 'נצל', 'Hiphil (I-gutt.)', 'לְ', 'Purpose', 'to deliver him'],
+                ['8', 'לְהַעֲלֹת֤וֹ', 'עלה', 'Hiphil (III-ה)',   'לְ', 'Purpose', 'to bring him up'],
+            ]),
+            ('Passage 7 — Exodus 19:1 (Arrival at Sinai)', [
+                ['9', 'לְצֵ֥את', '', '', '', '', ''],
+            ], [
+                ['9', 'לְצֵ֥את', 'יצא', 'I-י + III-א', 'לְ', 'Epexegetical/Temporal', 'after the going out of'],
+            ]),
+            ('Passage 8 — Deuteronomy 6:18 (Land Possession)', [
+                ['10', 'לְמַ֣עַן + יִיטַב', '', '', '', '', ''],
+            ], [
+                ['10', 'לְמַ֣עַן + יִיטַב', '—', '—', 'לְמַעַן', 'Purpose', 'NOT IC — purpose particle + finite verb'],
+            ]),
+            ('Passage 9 — Ecclesiastes 3:1–2 (A Time for Everything)', [
+                ['11', 'לָלֶ֖דֶת',  '', '', '', '', ''],
+                ['12', 'לָמ֑וּת',   '', '', '', '', ''],
+                ['13', 'לִנְטֹ֙עַ֙', '', '', '', '', ''],
+                ['14', 'לַעֲק֔וֹר', '', '', '', '', ''],
+            ], [
+                ['11', 'לָלֶ֖דֶת',  'ילד', 'I-י',               'לְ', 'Epexegetical', 'to be born'],
+                ['12', 'לָמ֑וּת',   'מות', 'Biconsonantal',      'לְ', 'Epexegetical', 'to die'],
+                ['13', 'לִנְטֹ֙עַ֙', 'נטע', 'Strong B (gutt. R3)','לְ', 'Epexegetical', 'to plant'],
+                ['14', 'לַעֲק֔וֹר', 'עקר', 'I-gutt.',            'לְ', 'Epexegetical', 'to uproot'],
+            ]),
+            ('Passage 10 — Genesis 45:4–5 (Joseph Reveals Himself)', [
+                ['15', 'לְמָכְרֵ֥נִי', '', '', '', '', ''],
+                ['16', 'לְמִחְיָ֔ה',  '', '', '', '', ''],
+            ], [
+                ['15', 'לְמָכְרֵ֥נִי', 'מכר', 'Strong A', 'לְ', 'Purpose', 'to sell me'],
+                ['16', 'לְמִחְיָ֔ה',  'חיה', 'III-ה',    'לְ', 'Purpose', 'for preservation of life'],
+            ]),
+        ]
+
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+            self.add_section_break()
+
+
+def build_ch20_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch20', 'exercises',
+                               'ch20-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch20-passage-exercise.pdf')
+    ex = Ch20PassageExercise(
+        title='Chapter 20 — Passage Exercise: Qal Infinitive Construct in Context',
+        subtitle='BBH Chapter 20',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch21 — Qal Infinitive Absolute
+# ---------------------------------------------------------------------------
+
+class Ch21ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form: (a) Identify as IA, IC, Imperative, Imperfect, or '
+            'Perfect — briefly explain how you know; (b) Root; (c) Root class; '
+            '(d) Function if IA (Emphatic / Imperatival / Manner / Progressive).'
+        )
+
+        # Part A — Emphatic Pairs (1–8)
+        hdrA = ['#', 'Form Pair', 'Which is IA?', 'Root', 'Root Class',
+                'Function', 'Gloss']
+        crA  = [0.05, 0.20, 0.12, 0.09, 0.12, 0.12, 0.30]
+        rowsA = [
+            ['1', 'מ֥וֹת — תָּמוּת',         '', '', '', '', ''],
+            ['2', 'אָכֹ֥ל — תֹּאכֵֽל',       '', '', '', '', ''],
+            ['3', 'שָׁמ֣וֹעַ — תִּשְׁמָע',   '', '', '', '', ''],
+            ['4', 'שָׁמ֣וֹר — תִּשְׁמְרוּן', '', '', '', '', ''],
+            ['5', 'רָאֹ֣ה — רָאִ֛יתִי',      '', '', '', '', ''],
+            ['6', 'טָרֹ֥ף — טֹרַ֖ף',         '', '', '', '', ''],
+            ['7', 'נָת֤וֹן — יִנָּתֵן',       '', '', '', '', ''],
+            ['8', 'אָבֹ֖ד — תֹּאבֵדוּן',     '', '', '', '', ''],
+        ]
+        ansA = [
+            ['1', 'מ֥וֹת — תָּמוּת',         'מ֥וֹת', 'מות', 'Biconsonantal', 'Emphatic', 'you shall surely die'],
+            ['2', 'אָכֹ֥ל — תֹּאכֵֽל',       'אָכֹ֥ל', 'אכל', 'I-aleph',     'Emphatic', 'you may freely eat'],
+            ['3', 'שָׁמ֣וֹעַ — תִּשְׁמָע',   'שָׁמ֣וֹעַ', 'שמע', 'Strong B (gutt.)', 'Emphatic', 'hear attentively'],
+            ['4', 'שָׁמ֣וֹר — תִּשְׁמְרוּן', 'שָׁמ֣וֹר', 'שמר', 'Strong A',   'Emphatic', 'carefully keep'],
+            ['5', 'רָאֹ֣ה — רָאִ֛יתִי',      'רָאֹ֣ה', 'ראה', 'III-ה',       'Emphatic', 'I have surely seen'],
+            ['6', 'טָרֹ֥ף — טֹרַ֖ף',         'טָרֹ֥ף', 'טרף', 'Strong A',    'Emphatic', 'he has surely been torn'],
+            ['7', 'נָת֤וֹן — יִנָּתֵן',       'נָת֤וֹן', 'נתן', 'I-נ',        'Emphatic', 'it shall certainly be given'],
+            ['8', 'אָבֹ֖ד — תֹּאבֵדוּן',     'אָבֹ֖ד', 'אבד', 'Strong A',    'Emphatic', 'you shall utterly perish'],
+        ]
+        self.add_section_heading('Part A — Emphatic Pairs: IA + Finite Verb (1–8)')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1, 2],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part B — Standalone IA Forms (9–14)
+        hdrB = ['#', 'Form', 'IA or other?', 'Root', 'Root Class', 'Function']
+        crB  = [0.05, 0.13, 0.13, 0.09, 0.12, 0.48]
+        rowsB = [
+            ['9',  'זָכ֕וֹר', '', '', '', ''],
+            ['10', 'שָׁמ֗וֹר', '', '', '', ''],
+            ['11', 'הָל֣וֹךְ', '', '', '', ''],
+            ['12', 'יָצוֹא֙', '', '', '', ''],
+            ['13', 'הָי֧וֹ',  '', '', '', ''],
+            ['14', 'גָּאֹ֖ל', '', '', '', ''],
+        ]
+        ansB = [
+            ['9',  'זָכ֕וֹר', 'IA', 'זכר', 'Strong A',    'Imperatival'],
+            ['10', 'שָׁמ֗וֹר', 'IA', 'שמר', 'Strong A',    'Imperatival'],
+            ['11', 'הָל֣וֹךְ', 'IA', 'הלך', 'I-י',         'Manner/Progressive'],
+            ['12', 'יָצוֹא֙', 'IA', 'יצא', 'I-י + III-א', 'Emphatic/Manner'],
+            ['13', 'הָי֧וֹ',  'IA', 'היה', 'III-ה',        'Emphatic/Verbal noun'],
+            ['14', 'גָּאֹ֖ל', 'IA', 'גאל', 'Strong A',     'Emphatic'],
+        ]
+        self.add_section_heading('Part B — Standalone IA Forms (9–14)')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part C — Discrimination (15–25)
+        hdrC = ['#', 'Form', 'Context given?', 'Identification', 'Root', 'Notes']
+        crC  = [0.05, 0.11, 0.18, 0.16, 0.09, 0.41]
+        rowsC = [
+            ['15', 'מ֥וֹת',    'preceded by לָ',          '', '', ''],
+            ['16', 'מ֥וֹת',    'followed by תָּמוּת',     '', '', ''],
+            ['17', 'שָׁמ֣וֹר', 'no context',               '', '', ''],
+            ['18', 'שְׁמֹר',   'no context',               '', '', ''],
+            ['19', 'שָׁמַ֣ר',  'no context',               '', '', ''],
+            ['20', 'יִשְׁמֹ֣ר', 'no context',              '', '', ''],
+            ['21', 'זָכ֕וֹר',  'imperatival context',      '', '', ''],
+            ['22', 'לִ/זְכֹר', 'preceded by כִּי',        '', '', ''],
+            ['23', 'לֶ/כֶת',   'no context',               '', '', ''],
+            ['24', 'הָל֣וֹךְ', 'followed by וָ/שׁ֑וֹב',  '', '', ''],
+            ['25', 'הָלַ֥ךְ',  'no context',               '', '', ''],
+        ]
+        ansC = [
+            ['15', 'מ֥וֹת',    'preceded by לָ',         'IC', 'מות', 'Preposition לָ marks IC; not IA'],
+            ['16', 'מ֥וֹת',    'followed by תָּמוּת',    'IA', 'מות', 'No prep; paired with finite verb = emphatic IA'],
+            ['17', 'שָׁמ֣וֹר', 'no context',              'IA', 'שמר', 'Qamets under R1 = IA; IC/Imper. would have shewa'],
+            ['18', 'שְׁמֹר',   'no context',              'IC or Imper.', 'שמר', 'Shewa under R1 = IC or Imperative 2ms; ambiguous'],
+            ['19', 'שָׁמַ֣ר',  'no context',              'Perfect 3ms', 'שמר', 'Qamets + patach = Qal Perfect 3ms'],
+            ['20', 'יִשְׁמֹ֣ר', 'no context',             'Imperfect 3ms', 'שמר', 'יִ prefix = Imperfect'],
+            ['21', 'זָכ֕וֹר',  'imperatival context',     'Imperatival IA', 'זכר', 'Qamets + holem-waw; stands alone as command'],
+            ['22', 'לִ/זְכֹר', 'preceded by כִּי',       'IC', 'זכר', 'לִ prefix = IC; shewa under ז'],
+            ['23', 'לֶ/כֶת',   'no context',              'IC', 'הלך', 'I-י contracted IC; IA would be הָל֣וֹךְ'],
+            ['24', 'הָל֣וֹךְ', 'followed by וָ/שׁ֑וֹב', 'IA (Manner)', 'הלך', 'Paired IAs describe progressive action'],
+            ['25', 'הָלַ֥ךְ',  'no context',              'Perfect 3ms', 'הלך', 'Qamets + patach; IA is הָל֣וֹךְ (holem-waw)'],
+        ]
+        self.add_section_heading('Part C — Discrimination: IA, IC, Imperative, Imperfect, or Perfect (15–25)')
+        self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
+                               show_answers=False)
+
+        # Answer key
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part A')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1, 2],
+                               show_answers=True, answer_rows=ansA)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part B')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=True, answer_rows=ansB)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part C')
+        self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
+                               show_answers=True, answer_rows=ansC)
+
+
+def build_ch21_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch21', 'exercises',
+                               'ch21-parsing-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch21-parsing-drill.pdf')
+    ex = Ch21ParsingDrillExercise(
+        title='Chapter 21 — Parsing Drill: Qal Infinitive Absolute',
+        subtitle='BBH Chapter 21',
+    )
+    return ex.save(path)
+
+
+class Ch21PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each highlighted IA form: (a) Root, (b) Root class, '
+            '(c) Function (Emphatic / Imperatival / Manner / Progressive), '
+            '(d) Full gloss of the construction.'
+        )
+        hdr = ['#', 'Form', 'Root', 'Root Class', 'Function', 'Gloss']
+        cr  = [0.05, 0.16, 0.09, 0.12, 0.14, 0.44]
+
+        passages = [
+            ('Passage 1 — Genesis 2:16–17 (Permission and Prohibition)', [
+                ['1', 'אָכֹ֥ל (in אָכֹ֥ל תֹּאכֵֽל)',  '', '', '', ''],
+                ['2', 'מ֥וֹת (in מ֥וֹת תָּמוּת)',       '', '', '', ''],
+            ], [
+                ['1', 'אָכֹ֥ל', 'אכל', 'I-aleph',     'Emphatic', 'you may freely eat'],
+                ['2', 'מ֥וֹת',  'מות', 'Biconsonantal', 'Emphatic', 'you shall surely die'],
+            ]),
+            ('Passage 2 — Exodus 3:7 (The Burning Bush)', [
+                ['3', 'רָאֹ֣ה (in רָאֹ֣ה רָאִ֛יתִי)', '', '', '', ''],
+            ], [
+                ['3', 'רָאֹ֣ה', 'ראה', 'III-ה', 'Emphatic', 'I have surely seen'],
+            ]),
+            ('Passage 3 — Exodus 20:8 and Deuteronomy 5:12 (Sabbath)', [
+                ['4', 'זָכ֕וֹר', '', '', '', ''],
+                ['5', 'שָׁמ֗וֹר', '', '', '', ''],
+            ], [
+                ['4', 'זָכ֕וֹר', 'זכר', 'Strong A', 'Imperatival', 'Remember!'],
+                ['5', 'שָׁמ֗וֹר', 'שמר', 'Strong A', 'Imperatival', 'Keep/Observe!'],
+            ]),
+            ('Passage 4 — Genesis 8:3, 5 (Flood Waters Recede)', [
+                ['6', 'הָל֣וֹךְ (Gen 8:3)',  '', '', '', ''],
+                ['7', 'וָ/שׁ֑וֹב',          '', '', '', ''],
+                ['8', 'הָל֣וֹךְ (Gen 8:5)',  '', '', '', ''],
+                ['9', 'וְ/חָס֔וֹר',         '', '', '', ''],
+            ], [
+                ['6', 'הָל֣וֹךְ', 'הלך', 'I-י',     'Manner/Progressive', 'going'],
+                ['7', 'וָ/שׁ֑וֹב', 'שוב', 'Biconsonantal', 'Manner',          'returning'],
+                ['8', 'הָל֣וֹךְ', 'הלך', 'I-י',     'Progressive',       'going'],
+                ['9', 'וְ/חָס֔וֹר', 'חסר', 'Strong A',    'Progressive',       'decreasing'],
+            ]),
+            ('Passage 5 — Genesis 26:13 (Isaac\'s Prosperity)', [
+                ['10', 'הָלוֹךְ֙',   '', '', '', ''],
+                ['11', 'וְ/גָדֵ֔ל', '', '', '', ''],
+            ], [
+                ['10', 'הָלוֹךְ֙',   'הלך', 'I-י',     'Progressive', 'going/growing'],
+                ['11', 'וְ/גָדֵ֔ל', 'גדל', 'Strong A', 'Progressive', 'growing greater'],
+            ]),
+            ('Passage 6 — Genesis 44:28 (Jacob on Joseph)', [
+                ['12', 'טָרֹ֥ף (in טָרֹ֥ף טֹרַ֖ף)', '', '', '', ''],
+            ], [
+                ['12', 'טָרֹ֥ף', 'טרף', 'Strong A', 'Emphatic', 'he has surely been torn'],
+            ]),
+            ('Passage 7 — Deuteronomy 6:17 (Covenant Obedience)', [
+                ['13', 'שָׁמ֣וֹר (in שָׁמ֣וֹר תִּשְׁמְר֗וּן)', '', '', '', ''],
+            ], [
+                ['13', 'שָׁמ֣וֹר', 'שמר', 'Strong A', 'Emphatic', 'diligently keep'],
+            ]),
+            ('Passage 8 — Deuteronomy 8:19 (Warning)', [
+                ['14', 'שָׁכֹ֤חַ (in שָׁכֹ֤חַ תִּשְׁכַּח֙)', '', '', '', ''],
+            ], [
+                ['14', 'שָׁכֹ֤חַ', 'שכח', 'Strong B (gutt. R3)', 'Emphatic', 'ever forget'],
+            ]),
+            ('Passage 9 — Numbers 15:35 (Death Penalty Formula)', [
+                ['15', 'מ֥וֹת (in מ֥וֹת יוּמַ֖ת)', '', '', '', ''],
+            ], [
+                ['15', 'מ֥וֹת', 'מות', 'Biconsonantal', 'Emphatic', 'shall surely be put to death'],
+            ]),
+        ]
+
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+            self.add_section_break()
+
+
+def build_ch21_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch21', 'exercises',
+                               'ch21-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch21-passage-exercise.pdf')
+    ex = Ch21PassageExercise(
+        title='Chapter 21 — Passage Exercise: Qal Infinitive Absolute in Context',
+        subtitle='BBH Chapter 21',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch22 — Qal Participle (Active and Passive)
+# ---------------------------------------------------------------------------
+
+class Ch22ParsingDrillExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form: (a) Active or Passive participle (or other form), '
+            '(b) Root, (c) Root class, (d) Gender and Number, '
+            '(e) Function (Attributive / Predicate / Substantive / '
+            'Progressive / Occupational / Resultant state).'
+        )
+
+        # Part A — Active Participle, Strong Roots (1–8)
+        hdrAC = ['#', 'Form', 'Act. or Pass.?', 'Root', 'Root Class',
+                 'Gender/Number', 'Function']
+        crAC  = [0.05, 0.14, 0.12, 0.09, 0.12, 0.12, 0.36]
+        rowsA = [
+            ['1', 'שֹׁמֵ֖ר',    '', '', '', '', ''],
+            ['2', 'שֹׁמֶ֫רֶת',  '', '', '', '', ''],
+            ['3', 'שֹׁמְרִ֖ים', '', '', '', '', ''],
+            ['4', 'הַ/שֹּׁמֵ֖ר', '', '', '', '', ''],
+            ['5', 'שֹׁמֵ֣עַ',   '', '', '', '', ''],
+            ['6', 'שֹׁמְעִ֖ים', '', '', '', '', ''],
+            ['7', 'עֹמֵ֖ד',     '', '', '', '', ''],
+            ['8', 'עֹבֵ֖ר',     '', '', '', '', ''],
+        ]
+        ansA = [
+            ['1', 'שֹׁמֵ֖ר',    'Active', 'שמר', 'Strong A',     'ms', 'Substantive/Predicate'],
+            ['2', 'שֹׁמֶ֫רֶת',  'Active', 'שמר', 'Strong A',     'fs', 'Attributive or Substantive'],
+            ['3', 'שֹׁמְרִ֖ים', 'Active', 'שמר', 'Strong A',     'mp', 'Substantive/Attributive'],
+            ['4', 'הַ/שֹּׁמֵ֖ר', 'Active', 'שמר', 'Strong A',    'ms', 'Substantive with def. article'],
+            ['5', 'שֹׁמֵ֣עַ',   'Active', 'שמע', 'Strong B (gutt.)', 'ms', 'Substantive/Predicate'],
+            ['6', 'שֹׁמְעִ֖ים', 'Active', 'שמע', 'Strong B',    'mp', 'Attributive/Substantive'],
+            ['7', 'עֹמֵ֖ד',     'Active', 'עמד', 'I-gutt.',      'ms', 'Predicate/Substantive'],
+            ['8', 'עֹבֵ֖ר',     'Active', 'עבר', 'Strong A',     'ms', 'Substantive'],
+        ]
+        self.add_section_heading('Part A — Active Participle, Strong Roots (1–8)')
+        self.add_generic_table(hdrAC, rowsA, crAC, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part B — Active Participle, Weak Roots (9–16): no Act./Pass. col
+        hdrB = ['#', 'Form', 'Root', 'Root Class', 'Gender/Number', 'Function']
+        crB  = [0.05, 0.14, 0.09, 0.14, 0.12, 0.46]
+        rowsB = [
+            ['9',  'עֹשֶׂ֖ה',   '', '', '', ''],
+            ['10', 'עֹשִׂ֖ים',  '', '', '', ''],
+            ['11', 'יוֹשֵׁ֖ב', '', '', '', ''],
+            ['12', 'בָ֖א',      '', '', '', ''],
+            ['13', 'מֵ֖ת',      '', '', '', ''],
+            ['14', 'נֹתֵ֥ן',    '', '', '', ''],
+            ['15', 'הוֹלֵ֣ךְ', '', '', '', ''],
+            ['16', 'גֹּאֵ֣ל',  '', '', '', ''],
+        ]
+        ansB = [
+            ['9',  'עֹשֶׂ֖ה',   'עשה', 'III-ה',    'ms', 'Substantive'],
+            ['10', 'עֹשִׂ֖ים',  'עשה', 'III-ה',    'mp', 'Substantive/Attributive'],
+            ['11', 'יוֹשֵׁ֖ב', 'ישב', 'I-י',       'ms', 'Occupational/Predicate'],
+            ['12', 'בָ֖א',      'בוא', 'Biconsonantal', 'ms', 'Substantive/Predicate'],
+            ['13', 'מֵ֖ת',      'מות', 'Biconsonantal', 'ms', 'Predicate/Substantive'],
+            ['14', 'נֹתֵ֥ן',    'נתן', 'I-נ',       'ms', 'Substantive'],
+            ['15', 'הוֹלֵ֣ךְ', 'הלך', 'I-י',       'ms', 'Predicate/Progressive'],
+            ['16', 'גֹּאֵ֣ל',  'גאל', 'Strong A',  'ms', 'Substantive'],
+        ]
+        self.add_section_heading('Part B — Active Participle, Weak Roots (9–16)')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part C — Passive Participle (17–23)
+        rowsC = [
+            ['17', 'בָּר֥וּךְ',   '', '', '', '', ''],
+            ['18', 'אָר֕וּר',    '', '', '', '', ''],
+            ['19', 'כָּת֥וּב',   '', '', '', '', ''],
+            ['20', 'בְּרוּכָ֥ה', '', '', '', '', ''],
+            ['21', 'כְּתוּבִ֥ים', '', '', '', '', ''],
+            ['22', 'נְטוּיָ֖ה',  '', '', '', '', ''],
+            ['23', 'בְּלוּלָ֥ה', '', '', '', '', ''],
+        ]
+        ansC = [
+            ['17', 'בָּר֥וּךְ',   'Passive', 'ברך', 'Strong A', 'ms', 'Predicate'],
+            ['18', 'אָר֕וּר',    'Passive', 'ארר', 'Geminate',  'ms', 'Predicate'],
+            ['19', 'כָּת֥וּב',   'Passive', 'כתב', 'Strong A', 'ms', 'Predicate/Attributive'],
+            ['20', 'בְּרוּכָ֥ה', 'Passive', 'ברך', 'Strong A', 'fs', 'Predicate/Attributive'],
+            ['21', 'כְּתוּבִ֥ים', 'Passive', 'כתב', 'Strong A', 'mp', 'Attributive'],
+            ['22', 'נְטוּיָ֖ה',  'Passive', 'נטה', 'III-ה',    'fs', 'Attributive'],
+            ['23', 'בְּלוּלָ֥ה', 'Passive', 'בלל', 'Geminate',  'fs', 'Attributive'],
+        ]
+        self.add_section_heading('Part C — Passive Participle (17–23)')
+        self.add_generic_table(hdrAC, rowsC, crAC, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part D — Discrimination (24–32)
+        hdrD = ['#', 'Form', 'Identification', 'Root', 'Notes']
+        crD  = [0.05, 0.12, 0.22, 0.09, 0.52]
+        rowsD = [
+            ['24', 'שֹׁמֵ֖ר',  '', '', ''],
+            ['25', 'שָׁמַ֣ר',  '', '', ''],
+            ['26', 'יִשְׁמֹ֣ר', '', '', ''],
+            ['27', 'שָׁמ֥וּר',  '', '', ''],
+            ['28', 'שְׁמֹר',   '', '', ''],
+            ['29', 'שָׁמ֣וֹר', '', '', ''],
+            ['30', 'בָ֖א',     '', '', ''],
+            ['31', 'לָ/בֹא',   '', '', ''],
+            ['32', 'יִ/יְשֵׁ֣ב', '', '', ''],
+        ]
+        ansD = [
+            ['24', 'שֹׁמֵ֖ר',  'Qal Active Ptc. ms',         'שמר', 'Holem-waw + tsere'],
+            ['25', 'שָׁמַ֣ר',  'Qal Perfect 3ms',             'שמר', 'Qamets + patach'],
+            ['26', 'יִשְׁמֹ֣ר', 'Qal Imperfect 3ms',          'שמר', 'יִ prefix'],
+            ['27', 'שָׁמ֥וּר',  'Qal Passive Ptc. ms',        'שמר', 'Qamets + shureq (qatûl)'],
+            ['28', 'שְׁמֹר',   'Qal IC or Imper. 2ms',        'שמר', 'Shewa + holem; ambiguous'],
+            ['29', 'שָׁמ֣וֹר', 'Qal IA',                      'שמר', 'Qamets + holem-waw'],
+            ['30', 'בָ֖א',     'Active Ptc. ms or Perfect 3ms','בוא', 'Biconsonantal; context decides'],
+            ['31', 'לָ/בֹא',   'Qal IC',                      'בוא', 'לָ prefix = IC'],
+            ['32', 'יִ/יְשֵׁ֣ב', 'Qal Imperfect 3ms',         'ישב', 'יִ prefix; ptc. would be יוֹשֵׁ֖ב'],
+        ]
+        self.add_section_heading('Part D — Discrimination (24–32)')
+        self.add_generic_table(hdrD, rowsD, crD, heb_cols=[1],
+                               show_answers=False)
+
+        # Answer key
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part A')
+        self.add_generic_table(hdrAC, rowsA, crAC, heb_cols=[1],
+                               show_answers=True, answer_rows=ansA)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part B')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=True, answer_rows=ansB)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part C')
+        self.add_generic_table(hdrAC, rowsC, crAC, heb_cols=[1],
+                               show_answers=True, answer_rows=ansC)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part D')
+        self.add_generic_table(hdrD, rowsD, crD, heb_cols=[1],
+                               show_answers=True, answer_rows=ansD)
+
+
+def build_ch22_parsing_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch22', 'exercises',
+                               'ch22-parsing-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch22-parsing-drill.pdf')
+    ex = Ch22ParsingDrillExercise(
+        title='Chapter 22 — Parsing Drill: Qal Participle (Active and Passive)',
+        subtitle='BBH Chapter 22',
+    )
+    return ex.save(path)
+
+
+class Ch22PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each highlighted participle: (a) Active or Passive, '
+            '(b) Root, (c) Root class, (d) Gender/Number, '
+            '(e) Syntactic function (Attributive / Predicate / Substantive / '
+            'Progressive / Occupational / Resultant state), (f) Gloss.'
+        )
+        hdr = ['#', 'Form', 'Act./Pass.', 'Root', 'Root Class',
+               'G/N', 'Function', 'Gloss']
+        cr  = [0.05, 0.13, 0.09, 0.08, 0.11, 0.06, 0.13, 0.35]
+
+        passages = [
+            ('Passage 1 — Genesis 3:14 and 4:11 (Curse Formulas)', [
+                ['1', 'אָר֤וּר (Gen 3:14)', '', '', '', '', '', ''],
+                ['2', 'אָר֤וּר (Gen 4:11)', '', '', '', '', '', ''],
+            ], [
+                ['1', 'אָר֤וּר', 'Passive', 'ארר', 'Geminate', 'ms', 'Predicate', 'you are cursed'],
+                ['2', 'אָר֤וּר', 'Passive', 'ארר', 'Geminate', 'ms', 'Predicate', 'cursed are you'],
+            ]),
+            ('Passage 2 — Genesis 14:19 and 24:27 (Blessing Formulas)', [
+                ['3', 'בָּר֤וּךְ (Gen 14:19)', '', '', '', '', '', ''],
+                ['4', 'בָּר֤וּךְ (Gen 24:27)', '', '', '', '', '', ''],
+            ], [
+                ['3', 'בָּר֤וּךְ', 'Passive', 'ברך', 'Strong A', 'ms', 'Predicate', 'blessed is Abram'],
+                ['4', 'בָּר֤וּךְ', 'Passive', 'ברך', 'Strong A', 'ms', 'Predicate', 'blessed is the LORD'],
+            ]),
+            ('Passage 3 — Genesis 18:1 (Abraham at the Tent)', [
+                ['5', 'יֹשֵׁ֤ב', '', '', '', '', '', ''],
+            ], [
+                ['5', 'יֹשֵׁ֤ב', 'Active', 'ישב', 'I-י', 'ms', 'Predicate (circumstantial)', 'sitting'],
+            ]),
+            ('Passage 4 — Genesis 4:9 (Am I My Brother\'s Keeper?)', [
+                ['6', 'שֹׁמֵ֥ר', '', '', '', '', '', ''],
+            ], [
+                ['6', 'שֹׁמֵ֥ר', 'Active', 'שמר', 'Strong A', 'ms', 'Substantive', 'keeper'],
+            ]),
+            ('Passage 5 — Exodus 3:2 (The Burning Bush)', [
+                ['7', 'בֹּעֵ֣ר', '', '', '', '', '', ''],
+            ], [
+                ['7', 'בֹּעֵ֣ר', 'Active', 'בער', 'Strong A', 'ms', 'Predicate (attributive)', 'burning'],
+            ]),
+            ('Passage 6 — Exodus 6:6 (Outstretched Arm)', [
+                ['8', 'נְטוּיָ֖ה', '', '', '', '', '', ''],
+            ], [
+                ['8', 'נְטוּיָ֖ה', 'Passive', 'נטה', 'III-ה', 'fs', 'Attributive', 'outstretched'],
+            ]),
+            ('Passage 7 — Deuteronomy 9:10 (Tablets Written by God)', [
+                ['9', 'כְּתֻבִ֣ים', '', '', '', '', '', ''],
+            ], [
+                ['9', 'כְּתֻבִ֣ים', 'Passive', 'כתב', 'Strong A', 'mp', 'Attributive', 'written'],
+            ]),
+            ('Passage 9 — Leviticus 2:4–5 (Grain Offering)', [
+                ['10', 'בְּלוּלֹ֥ת', '', '', '', '', '', ''],
+            ], [
+                ['10', 'בְּלוּלֹ֥ת', 'Passive', 'בלל', 'Geminate', 'fp', 'Attributive', 'mixed with oil'],
+            ]),
+            ('Passage 10 — Genesis 37:2 and Numbers 27:17 (Shepherd)', [
+                ['11', 'רֹעֶ֩ה (Gen 37:2)',  '', '', '', '', '', ''],
+                ['12', 'רֹעֶ֖ה (Num 27:17)', '', '', '', '', '', ''],
+            ], [
+                ['11', 'רֹעֶ֩ה', 'Active', 'רעה', 'III-ה', 'ms', 'Predicate (progressive)', 'was shepherding'],
+                ['12', 'רֹעֶ֖ה', 'Active', 'רעה', 'III-ה', 'ms', 'Substantive',             'shepherd'],
+            ]),
+            ('Passage 11 — Leviticus 25:25 (Kinsman-Redeemer)', [
+                ['13', 'גֹאֲל֔וֹ', '', '', '', '', '', ''],
+            ], [
+                ['13', 'גֹאֲל֔וֹ', 'Active', 'גאל', 'Strong A', 'ms + 3ms sfx', 'Substantive', 'his redeemer'],
+            ]),
+            ('Passage 12 — Numbers 14:14 (The LORD Among His People)', [
+                ['14', 'עֹמֵ֣ד', '', '', '', '', '', ''],
+            ], [
+                ['14', 'עֹמֵ֣ד', 'Active', 'עמד', 'Strong A', 'ms', 'Predicate', 'standing'],
+            ]),
+            ('Standalone Forms', [
+                ['15', 'נֹתֵ֥ן',    '', '', '', '', '', ''],
+                ['16', 'יוֹשְׁבֵ֣י', '', '', '', '', '', ''],
+            ], [
+                ['15', 'נֹתֵ֥ן',    'Active', 'נתן', 'I-נ', 'ms',        'Substantive', 'giver / one who gives'],
+                ['16', 'יוֹשְׁבֵ֣י', 'Active', 'ישב', 'I-י', 'mp const.', 'Attributive/Substantive', 'inhabitants of'],
+            ]),
+        ]
+
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+            self.add_section_break()
+
+
+def build_ch22_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch22', 'exercises',
+                               'ch22-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch22-passage-exercise.pdf')
+    ex = Ch22PassageExercise(
+        title='Chapter 22 — Passage Exercise: Qal Participle (Active and Passive) in Context',
+        subtitle='BBH Chapter 22',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Ch23 — Clause Analysis / Reading the Clause
+# ---------------------------------------------------------------------------
+
+class Ch23ClauseAnalysisExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each clause: (a) Clause type (Verbal VSO / Verbal — fronted / '
+            'Verbless / Waw-disjunctive / Circumstantial), '
+            '(b) Main verb and conjugation (if any), '
+            '(c) Fronted element (if any) and why, '
+            '(d) Full English gloss.'
+        )
+
+        # Part A — VSO Verbal Clauses (1–4)
+        hdrA = ['#', 'Hebrew', 'Clause Type', 'Verb & Conjugation',
+                'Subject', 'Object/Predicate', 'Gloss']
+        crA  = [0.05, 0.22, 0.12, 0.15, 0.10, 0.14, 0.22]
+        rowsA = [
+            ['1', 'וַיִּבְרָ֨א אֱלֹהִ֤ים אֶת‑הָ/אָדָ֙ם֙ (Gen 1:27)', '', '', '', '', ''],
+            ['2', 'וַיֹּ֤אמֶר יְהוָ֔ה אֶל‑מֹשֶׁ֖ה (Exo 3:7)',        '', '', '', '', ''],
+            ['3', 'שָׁמְע֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל (Deu 6:4)',              '', '', '', '', ''],
+            ['4', 'וַיַּ֥רְא אֱלֹהִ֖ים אֶת‑הָ/אוֹר֑ (Gen 1:4)',      '', '', '', '', ''],
+        ]
+        ansA = [
+            ['1', 'וַיִּבְרָ֨א אֱלֹהִ֤ים …', 'Verbal VSO', 'וַיִּבְרָ֨א (Wayyiqtol Qal 3ms)', 'אֱלֹהִ֤ים', 'אֶת‑הָ/אָדָ֙ם֙', 'And God created man'],
+            ['2', 'וַיֹּ֤אמֶר יְהוָ֔ה …',     'Verbal VSO', 'וַיֹּ֤אמֶר (Wayyiqtol Qal 3ms)', 'יְהוָ֔ה',    'אֶל‑מֹשֶׁ֖ה (PP)', 'And the LORD said to Moses'],
+            ['3', 'שָׁמְע֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל', 'Verbal VSO', 'שָׁמְע֖וּ (Qal Imper. 2mp)', '— (addressed)', '—', 'Hear, O Israel'],
+            ['4', 'וַיַּ֥רְא אֱלֹהִ֖ים …',    'Verbal VSO', 'וַיַּ֥רְא (Wayyiqtol Qal 3ms)',  'אֱלֹהִ֖ים', 'אֶת‑הָ/אוֹר֑', 'And God saw the light'],
+        ]
+        self.add_section_heading('Part A — Verbal Clauses: Default VSO (1–4)')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part B — Fronted Elements (5–8)
+        hdrB = ['#', 'Hebrew', 'What is fronted?', 'Type of element',
+                'Why fronted?', 'Gloss']
+        crB  = [0.05, 0.22, 0.14, 0.12, 0.22, 0.25]
+        rowsB = [
+            ['5', 'הַ/יּ֖וֹם יָלַ֥דְתִּי (Psa 2:7)',                   '', '', '', ''],
+            ['6', 'וְאֶל‑קַ֥יִן … לֹ֥א שָׁעָֽה (Gen 4:5)',          '', '', '', ''],
+            ['7', 'אֶת‑הָ/אָ֖רֶץ הַ/זֹּ֑את אֶתֵּ֥ן … (Gen 12:7)', '', '', '', ''],
+            ['8', 'בְּ/צֶ֥לֶם אֱלֹהִ֖ים בָּרָ֣א אֹת֑וֹ (Gen 1:27b)',  '', '', '', ''],
+        ]
+        ansB = [
+            ['5', 'הַ/יּ֖וֹם יָלַ֥דְתִּי',          'הַ/יּ֖וֹם',     'Temporal adverb', 'Emphatic: Today (not another day)', 'Today I have begotten you'],
+            ['6', 'וְאֶל‑קַ֥יִן … לֹ֥א שָׁעָֽה', 'אֶל‑קַ֥יִן', 'Prepositional phrase', 'Contrast: to Cain (vs. Abel)', 'But to Cain he did not pay attention'],
+            ['7', 'אֶת‑הָ/אָ֖רֶץ … אֶתֵּ֥ן',  'אֶת‑הָ/אָ֖רֶץ', 'Object', 'Emphasis on object: *This land* I will give', 'This land I will give to your offspring'],
+            ['8', 'בְּ/צֶ֥לֶם אֱלֹהִ֖ים …',        'בְּ/צֶ֥לֶם אֱלֹהִ֖ים', 'Prepositional phrase', 'Chiastic emphasis: the image is central', 'In the image of God he created him'],
+        ]
+        self.add_section_heading('Part B — Fronted Elements (5–8)')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part C — Verbless Clauses (9–12)
+        hdrC = ['#', 'Hebrew', 'Subject', 'Predicate', 'Implied Copula', 'Gloss']
+        crC  = [0.05, 0.26, 0.12, 0.14, 0.12, 0.31]
+        rowsC = [
+            ['9',  'יְהוָ֥ה אֱלֹהֵ֖ינוּ יְהוָ֥ה אֶחָֽד (Deu 6:4b)', '', '', '', ''],
+            ['10', 'טוֹב֙ הָ/אוֹר֑ (Gen 1:4)',                         '', '', '', ''],
+            ['11', 'אָנֹכִ֖י יְהוָ֣ה אֱלֹהֶ֑יךָ (Exo 20:2)',          '', '', '', ''],
+            ['12', 'הֲ/שֹׁמֵ֥ר אָחִ֖י אָנֹֽכִי (Gen 4:9)',            '', '', '', ''],
+        ]
+        ansC = [
+            ['9',  'יְהוָ֥ה אֱלֹהֵ֖ינוּ …', 'יְהוָ֥ה', 'אֱלֹהֵ֖ינוּ / אֶחָֽד', 'is', 'The LORD is our God; the LORD is one'],
+            ['10', 'טוֹב֙ הָ/אוֹר֑',         'הָ/אוֹר',  'טוֹב (pred. adj.)',   'was', 'The light was good'],
+            ['11', 'אָנֹכִ֖י יְהוָ֣ה …',     'אָנֹכִ֖י', 'יְהוָ֣ה אֱלֹהֶ֑יךָ', 'am',  'I am the LORD your God'],
+            ['12', 'הֲ/שֹׁמֵ֥ר אָחִ֖י אָנֹֽכִי', 'אָנֹכִי', 'שֹׁמֵ֥ר (pred. ptc.)', 'am', 'Am I my brother\'s keeper?'],
+        ]
+        self.add_section_heading('Part C — Verbless Clauses (9–12)')
+        self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part D — Waw-Disjunctive and Circumstantial (13–16)
+        hdrD = ['#', 'Hebrew', 'First element after וְ', 'Function',
+                'Relation to main narrative', 'Gloss']
+        crD  = [0.05, 0.24, 0.12, 0.11, 0.22, 0.26]
+        rowsD = [
+            ['13', 'וְהָ/אָ֗רֶץ הָיְתָ֥ה תֹ֙הוּ֙ (Gen 1:2)',           '', '', '', ''],
+            ['14', 'וְה֗וּא יֹשֵׁ֤ב פֶּֽתַח (Gen 18:1)',                '', '', '', ''],
+            ['15', 'וְהַ/נָּחָשׁ֙ הָיָ֣ה עָר֔וּם (Gen 3:1)',            '', '', '', ''],
+            ['16', 'וְהוּא֙ לֹ֣א יָדַ֔ע כִּ֥י יְהוָ֖ה עָזְבֽוֹ (Jdg 16:20)', '', '', '', ''],
+        ]
+        ansD = [
+            ['13', 'וְהָ/אָ֗רֶץ הָיְתָ֥ה …', 'הָ/אָ֗רֶץ (noun)', 'Background', 'Off-narrative; sets scene before creation', 'Now the earth was formless and empty'],
+            ['14', 'וְה֗וּא יֹשֵׁ֤ב …',       'הוּא + ptc.',        'Simultaneous circumstance', 'What Abraham was doing when LORD appeared', 'while he was sitting at the entrance'],
+            ['15', 'וְהַ/נָּחָשׁ֙ …',         'הַ/נָּחָשׁ (noun)', 'Background', 'Introduces serpent before dialogue', 'Now the serpent was more crafty'],
+            ['16', 'וְהוּא֙ לֹ֣א יָדַ֔ע …',   'הוּא (pronoun)',     'Contrast/irony', 'Contrasts Samson\'s action with his ignorance', 'but he did not know the LORD had left him'],
+        ]
+        self.add_section_heading('Part D — Waw-Disjunctive and Circumstantial (13–16)')
+        self.add_generic_table(hdrD, rowsD, crD, heb_cols=[1],
+                               show_answers=False)
+        self.add_section_break()
+
+        # Part E — Mixed Analysis (17–20)
+        hdrE = ['#', 'Hebrew', 'Clause Type', 'Special Feature', 'Gloss']
+        crE  = [0.05, 0.28, 0.14, 0.26, 0.27]
+        rowsE = [
+            ['17', 'בְּ/רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים … (Gen 1:1)',     '', '', ''],
+            ['18', 'הִנֵּ֥ה אָנֹכִ֖י שֹׁלֵ֥חַ מַלְאָ֖ךְ (Exo 23:20)', '', '', ''],
+            ['19', 'וְאָהַבְתָּ֙ אֵ֣ת יְהוָ֣ה אֱלֹהֶ֔יךָ (Deu 6:5)',  '', '', ''],
+            ['20', 'כִּ֣י אֵ֤ין אֱלֹהִים֙ זוּלָ֣תִי (Deu 32:39)',     '', '', ''],
+        ]
+        ansE = [
+            ['17', 'בְּ/רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים …', 'Verbal — PP fronted', 'Temporal PP בְּ/רֵאשִׁ֖ית fronted; VSO follows', 'In the beginning God created the heavens and the earth'],
+            ['18', 'הִנֵּ֥ה אָנֹכִ֖י שֹׁלֵ֥חַ …',       'Verbless / Presentative', 'הִנֵּה + pronoun + participle = vivid present', 'Behold, I am sending an angel before you'],
+            ['19', 'וְאָהַבְתָּ֙ אֵ֣ת יְהוָ֣ה …',       'Verbal — Weqatal',       'Weqatal continues imperatival chain from שְׁמַ֖ע', 'And you shall love the LORD your God'],
+            ['20', 'כִּ֣י אֵ֤ין אֱלֹהִים֙ …',            'Verbless / Existence',   'אֵין = non-existence particle; כִּי = emphatic', 'For there is no God besides me'],
+        ]
+        self.add_section_heading('Part E — Mixed Analysis (17–20)')
+        self.add_generic_table(hdrE, rowsE, crE, heb_cols=[1],
+                               show_answers=False)
+
+        # Answer key
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part A')
+        self.add_generic_table(hdrA, rowsA, crA, heb_cols=[1],
+                               show_answers=True, answer_rows=ansA)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part B')
+        self.add_generic_table(hdrB, rowsB, crB, heb_cols=[1],
+                               show_answers=True, answer_rows=ansB)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part C')
+        self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
+                               show_answers=True, answer_rows=ansC)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part D')
+        self.add_generic_table(hdrD, rowsD, crD, heb_cols=[1],
+                               show_answers=True, answer_rows=ansD)
+        self.add_section_break()
+        self.add_section_heading('Answer Key — Part E')
+        self.add_generic_table(hdrE, rowsE, crE, heb_cols=[1],
+                               show_answers=True, answer_rows=ansE)
+
+
+def build_ch23_clause_analysis(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch23', 'exercises',
+                               'ch23-clause-analysis')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch23-clause-analysis.pdf')
+    ex = Ch23ClauseAnalysisExercise(
+        title='Chapter 23 — Clause Analysis Drill',
+        subtitle='BBH Chapter 23',
+    )
+    return ex.save(path)
+
+
+class Ch23PassageExercise(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each highlighted clause: (a) identify the clause type, '
+            '(b) identify any fronted element and its rhetorical function, '
+            '(c) state the verb and its conjugation (if any), '
+            '(d) supply the English gloss.'
+        )
+        hdr = ['#', 'Clause', 'Clause Type', 'Fronted Element (if any)',
+               'Verb & Conjugation', 'Gloss']
+        cr  = [0.05, 0.24, 0.14, 0.18, 0.16, 0.23]
+
+        passages = [
+            ('Passage 1 — Genesis 1:1–4 (Creation Account)', [
+                ['1', 'בְּ/רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים … (Gen 1:1)', '', '', '', ''],
+                ['2', 'וְהָ/אָ֗רֶץ הָיְתָ֥ה תֹ֙הוּ֙ וָ/בֹ֔הוּ (Gen 1:2a)', '', '', '', ''],
+                ['3', 'וַיֹּ֤אמֶר אֱלֹהִ֙ים֙ (Gen 1:3)',                   '', '', '', ''],
+                ['4', 'כִּי‑טוֹב (Gen 1:4b)',                           '', '', '', ''],
+            ], [
+                ['1', 'בְּ/רֵאשִׁ֖ית בָּרָ֣א …',   'Verbal — PP fronted',         'בְּ/רֵאשִׁ֖ית (temporal PP)', 'בָּרָ֣א — Qal Perfect 3ms', 'In the beginning God created the heavens and the earth'],
+                ['2', 'וְהָ/אָ֗רֶץ הָיְתָ֥ה …',    'Waw-disjunctive (Background)', 'הָ/אָ֗רֶץ (noun)',          'הָיְתָ֥ה — Qal Perfect 3fs', 'Now the earth was formless and empty'],
+                ['3', 'וַיֹּ֤אמֶר אֱלֹהִ֙ים֙',    'Verbal VSO',                   'None',                        'וַיֹּ֤אמֶר — Wayyiqtol Qal 3ms', 'And God said'],
+                ['4', 'כִּי‑טוֹב',              'Verbless (כִּי embedded)',     'None',                        'None', 'that it was good'],
+            ]),
+            ('Passage 2 — Genesis 3:1–5 (The Serpent and Eve)', [
+                ['5', 'וְהַ/נָּחָשׁ֙ הָיָ֣ה עָר֔וּם (Gen 3:1a)', '', '', '', ''],
+                ['6', 'וַיֹּ֙אמֶר֙ אֶל‑הָ/אִשָּׁ֔ה (Gen 3:1b)', '', '', '', ''],
+                ['7', 'לֹ֥א מ֖וֹת תְּמֻתֽוּן (Gen 3:4)',           '', '', '', ''],
+            ], [
+                ['5', 'וְהַ/נָּחָשׁ֙ הָיָ֣ה …',    'Waw-disjunctive (Background)', 'הַ/נָּחָשׁ (noun)',         'הָיָ֣ה — Qal Perfect 3ms', 'Now the serpent was more crafty'],
+                ['6', 'וַיֹּ֙אמֶר֙ אֶל‑הָ/אִשָּׁ֔ה', 'Verbal VSO',            'None',                       'וַיֹּ֙אמֶר֙ — Wayyiqtol Qal 3ms', 'And he said to the woman'],
+                ['7', 'לֹ֥א מ֖וֹת תְּמֻתֽוּן',    'Verbal — IA fronted',          'מ֖וֹת (Inf. Absolute)',      'תְּמֻתֽוּן — Qal Imperfect 2mp', 'You will not surely die'],
+            ]),
+            ('Passage 3 — Deuteronomy 6:4–5 (The Shema)', [
+                ['8',  'שְׁמַ֖ע יִשְׂרָאֵ֑ל (Deu 6:4a)',                            '', '', '', ''],
+                ['9',  'יְהוָ֥ה אֱלֹהֵ֖ינוּ יְהוָ֥ה אֶחָֽד (Deu 6:4b)',           '', '', '', ''],
+                ['10', 'וְאָהַבְתָּ֙ אֵ֣ת יְהוָ֣ה אֱלֹהֶ֔יךָ (Deu 6:5)',         '', '', '', ''],
+            ], [
+                ['8',  'שְׁמַ֖ע יִשְׂרָאֵ֑ל',       'Verbal VSO',                  'None', 'שְׁמַ֖ע — Qal Imperative 2ms', 'Hear, O Israel'],
+                ['9',  'יְהוָ֥ה אֱלֹהֵ֖ינוּ …',     'Verbless (×2)',               'None', 'None', 'The LORD is our God; the LORD is one'],
+                ['10', 'וְאָהַבְתָּ֙ …',             'Verbal — Weqatal',            'None', 'וְאָהַבְתָּ֙ — Weqatal Qal 2ms', 'And you shall love the LORD your God'],
+            ]),
+            ('Passage 4 — Genesis 22:1–2 (The Binding of Isaac)', [
+                ['11', 'וְאַבְרָהָ֖ם זָקֵ֑ן',                           '', '', '', ''],
+                ['12', 'אֶת‑יִצְחָ֖ק אֲשֶׁ֣ר אָהַ֑בְתָּ (Gen 22:2b)', '', '', '', ''],
+            ], [
+                ['11', 'וְאַבְרָהָ֖ם זָקֵ֑ן',           'Waw-disjunctive (Background)', 'אַבְרָהָ֖ם (noun)', 'None (verbless)', 'Now Abraham was old'],
+                ['12', 'אֶת‑יִצְחָ֖ק אֲשֶׁ֣ר …', 'Verbal — Object fronted',       'אֶת‑יִצְחָ֖ק (direct obj.)', 'אָהַ֑בְתָּ — Qal Perfect 2ms', 'Isaac, whom you love'],
+            ]),
+            ('Passage 5 — Judges 16:20 / Genesis 4:9 / Exodus 20:2 (Mixed)', [
+                ['13', 'וְהוּא֙ לֹ֣א יָדַ֔ע … (Jdg 16:20)',     '', '', '', ''],
+                ['14', 'הֲ/שֹׁמֵ֥ר אָחִ֖י אָנֹֽכִי (Gen 4:9b)', '', '', '', ''],
+                ['15', 'אָנֹכִ֖י יְהוָ֣ה אֱלֹהֶ֑יךָ (Exo 20:2)', '', '', '', ''],
+            ], [
+                ['13', 'וְהוּא֙ לֹ֣א יָדַ֔ע …',     'Waw-disjunctive (Contrast)',   'הוּא (pronoun)',             'יָדַ֔ע — Qal Perfect 3ms', 'but he did not know the LORD had left him'],
+                ['14', 'הֲ/שֹׁמֵ֥ר אָחִ֖י אָנֹֽכִי', 'Verbless (interrogative)',    'שֹׁמֵ֥ר (pred. ptc.) + ה interrogative', 'None (verbless)', 'Am I my brother\'s keeper?'],
+                ['15', 'אָנֹכִ֖י יְהוָ֣ה אֱלֹהֶ֑יךָ', 'Verbless (identity)',        'None', 'None', 'I am the LORD your God'],
+            ]),
+        ]
+
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in passages:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+            self.add_section_break()
+
+
+def build_ch23_passage_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch23', 'exercises',
+                               'ch23-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch23-passage-exercise.pdf')
+    ex = Ch23PassageExercise(
+        title='Chapter 23 — Passage Exercise: Reading the Clause in Context',
+        subtitle='BBH Chapter 23',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
+    # Ch1–Ch23 exercises (new)
+    builders_ch1_23 = [
+        build_ch1_letter_recognition,
+        build_ch2_vowel_identification,
+        build_ch3_syllable_division,
+        build_ch4_noun_parsing,
+        build_ch5_article_and_vav,
+        build_ch6_preposition_parsing,
+        build_ch7_adjective_usage,
+        build_ch8_pronoun_identification,
+        build_ch9_suffix_parsing,
+        build_ch10_construct_chain,
+        build_ch11_number_identification,
+        build_ch12_verb_overview,
+        build_ch13_parsing_drill,
+        build_ch13_passage_exercise,
+        build_ch14_passage_exercise,
+        build_ch14_weak_form_id,
+        build_ch15_parsing_drill,
+        build_ch15_passage_exercise,
+        build_ch16_passage_exercise,
+        build_ch16_weak_form_id,
+        build_ch17_parsing_drill,
+        build_ch17_passage_exercise,
+        build_ch18_parsing_drill,
+        build_ch18_passage_exercise,
+        build_ch19_parsing_drill,
+        build_ch19_passage_exercise,
+        build_ch20_parsing_drill,
+        build_ch20_passage_exercise,
+        build_ch21_parsing_drill,
+        build_ch21_passage_exercise,
+        build_ch22_parsing_drill,
+        build_ch22_passage_exercise,
+        build_ch23_clause_analysis,
+        build_ch23_passage_exercise,
+    ]
+    for fn in builders_ch1_23:
+        try:
+            saved = fn()
+            print(f'Saved: {saved}')
+        except Exception as exc:
+            print(f'ERROR in {fn.__name__}: {exc}')
+
+    # Ch24+ exercises (existing)
     p0 = build_ch24_exercise()
     print(f'Saved: {p0}')
     p1 = build_ch24_contrast_exercise()
