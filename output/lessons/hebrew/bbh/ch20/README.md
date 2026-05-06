@@ -31,8 +31,9 @@
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
+*Data: MACULA Hebrew WLC (~4,029 Qal Infinitive Construct tokens OT-wide)*
 
-## 1. Function
+## 1. Function (BBH §20.2)
 
 The Infinitive Construct (IC) is a **verbal noun** — it has the properties of both a verb (it takes subjects, objects, and aspect) and a noun (it can be governed by prepositions). It never inflects for person, number, or gender on its own; those are expressed by suffixes (see Ch19).
 
@@ -51,7 +52,7 @@ The Infinitive Construct (IC) is a **verbal noun** — it has the properties of 
 
 ---
 
-## 2. Form — Diagnostic Markers
+## 2. Form — Diagnostic Markers (BBH §20.3–20.5)
 
 The Qal Infinitive Construct resembles the **Qal Imperative 2ms** in most strong roots:
 

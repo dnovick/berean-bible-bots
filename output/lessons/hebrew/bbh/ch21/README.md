@@ -31,8 +31,9 @@
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
+*Data: MACULA Hebrew WLC (~489 Qal Infinitive Absolute tokens OT-wide)*
 
-## 1. Function
+## 1. Function (BBH §21.2)
 
 The Infinitive Absolute (IA) is a **verbal noun** like the IC, but it behaves differently: it **cannot** be governed by prepositions or take pronominal suffixes. Its most distinctive feature is the **intensifying** or **emphasizing** role it plays when paired with a finite verb of the same root.
 
@@ -48,7 +49,7 @@ The Infinitive Absolute (IA) is a **verbal noun** like the IC, but it behaves di
 
 ---
 
-## 2. Form — Diagnostic Markers
+## 2. Form — Diagnostic Markers (BBH §21.3–21.5)
 
 The Qal IA differs slightly from the IC and Imperative:
 

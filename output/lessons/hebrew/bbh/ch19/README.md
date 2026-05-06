@@ -31,8 +31,9 @@
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
+*Data: MACULA Hebrew WLC — pronominal suffixes appear on ~46,419 total Qal verb tokens OT-wide*
 
-## 1. Function
+## 1. Function (BBH §19.2)
 
 Pronominal suffixes attached to verbs function as **direct object pronouns**. Instead of a separate word (e.g., אֹתוֹ, "him"), the pronoun is attached directly to the verb as a suffix.
 
@@ -48,7 +49,7 @@ Pronominal suffixes attached to verbs function as **direct object pronouns**. In
 
 ---
 
-## 2. The Suffix Set — Object Suffixes on Verbs
+## 2. The Suffix Set — Object Suffixes on Verbs (BBH §19.3)
 
 Two sets of object suffixes are used with verbs. The **Type 1** (light) suffixes attach to forms ending in a vowel; **Type 2** (heavy) suffixes with a linking vowel attach to consonant-final forms. In practice, the distinction depends on the conjugation:
 

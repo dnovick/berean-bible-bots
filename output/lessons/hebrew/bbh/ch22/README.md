@@ -31,8 +31,9 @@
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
+*Data: MACULA Hebrew WLC (~5,992 Qal Participle tokens OT-wide)*
 
-## 1. Function
+## 1. Function (BBH §22.2)
 
 The Participle is a **verbal adjective** — it has the properties of both a verb (it can take objects and express ongoing action) and an adjective (it agrees with a noun in gender and number, can appear in construct, and can function as a substantive). Unlike finite verbs, the participle does not express tense by itself; temporal meaning comes from context.
 
@@ -60,7 +61,7 @@ The Participle is a **verbal adjective** — it has the properties of both a ver
 
 ---
 
-## 2. Form — Diagnostic Markers
+## 2. Form — Diagnostic Markers (BBH §22.3–22.5)
 
 ### Active Participle
 
