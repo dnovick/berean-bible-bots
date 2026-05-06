@@ -2910,6 +2910,844 @@ def build_ch28_hophal_exercise(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+# ---------------------------------------------------------------------------
+# Chapter 34 — "Spot the Hithpael" Passage Exercise (Strong Verbs)
+# ---------------------------------------------------------------------------
+class Ch34HithpaelExercise(PassageExercise):
+    _instructions = (
+        'Each numbered verb belongs to one of the stems you have already studied '
+        '(Qal, Niphal, Hiphil, Hophal, Piel, Pual, or Hithpael). '
+        'Focus: strong roots in the Hithpael stem. '
+        'For each one, fill in: Hithpael? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'The answer key begins on the page marked "Answer Key".'
+    )
+
+    def _render_passages(self, show_answers: bool):
+
+        # ── Passage A ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage A — 1 Kings 8:28–30 · Genesis 20:7')
+
+        self.add_passage(PassageBlock('8:28',
+            'וְאֶל־הַתְּפִלָּה אֲשֶׁר עַבְדְּךָ מִתְפַּלֵּל לְפָנֶיךָ הַיּוֹם',
+            '"…and to the prayer that your servant is praying before you today."'))
+        self.add_verb_table([
+            VerbEntry('1', 'מִתְפַּלֵּל', 'Participle', 'ms', 'פלל',
+                      'Denominative — "praying"; מִתְ- prefix marks Hithpael participle; root פלל has no Qal in OT'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('8:30',
+            'אֲשֶׁר יִתְפַּלְּלוּ אֶל הַמָּקוֹם הַזֶּה',
+            '"…when they pray toward this place."'))
+        self.add_verb_table([
+            VerbEntry('2', 'יִתְפַּלְּלוּ', 'Imperfect', '3mp', 'פלל',
+                      'Denominative — "they pray"; יִתְ- prefix + dagesh forte in doubled ל ל (geminate root)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('20:7',
+            'כִּי נָבִיא הוּא וְיִתְפַּלֵּל בַּעַדְךָ',
+            '"…for he is a prophet, and he will pray for you."'))
+        self.add_verb_table([
+            VerbEntry('3', 'יִתְפַּלֵּל', 'Imperfect', '3ms', 'פלל',
+                      'Denominative — "he will pray"; יִתְ- prefix + patach under R1 + dagesh forte in ל ל'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('20:7',
+            'הִתְפַּלֵּל אֶל יְהוָה',
+            '"Pray to the LORD."'))
+        self.add_verb_table([
+            VerbEntry('4', 'הִתְפַּלֵּל', 'Imperative', '2ms', 'פלל',
+                      'Denominative — "Pray!"; הִתְ- prefix + patach under R1 + tsere + ל ל; same form as perfect 3ms in isolation'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Exo 29:36',
+            'וְטִהֲרוֹ לְכַפֵּר עָלָיו',
+            '"…and purify it to make atonement for it." [Piel distractor — no הִתְ prefix]'))
+        self.add_verb_table([
+            VerbEntry('5', 'וְטִהֲרוֹ', 'Weqatal', '3ms', 'טהר',
+                      'NOT Hithpael — Piel: Factitive "shall purify it"; Hireq under R1 + guttural ה (rejects dagesh); no הִתְ prefix'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage B ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage B — Joshua 3:5 · Exodus 19:22')
+
+        self.add_passage(PassageBlock('Jos 3:5',
+            'הִתְקַדְּשׁוּ כִּי מָחָר יַעֲשֶׂה יְהוָה בְּקִרְבְּכֶם נִפְלָאוֹת',
+            '"Consecrate yourselves, for tomorrow the LORD will do wonders among you."'))
+        self.add_verb_table([
+            VerbEntry('6', 'הִתְקַדְּשׁוּ', 'Imperative', '2mp', 'קדש',
+                      'Reflexive — "consecrate yourselves!"; הִתְ- prefix + patach + dagesh forte in R2 (דּ) + 2mp suffix וּ'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Exo 19:22',
+            'וְגַם הַכֹּהֲנִים הַנִּגָּשִׁים אֶל יְהוָה יִתְקַדָּשׁוּ פֶּן יִפְרֹץ בָּהֶם',
+            '"And also let the priests who come near to the LORD consecrate themselves, lest the LORD break out against them."'))
+        self.add_verb_table([
+            VerbEntry('7', 'יִתְקַדָּשׁוּ', 'Imperfect', '3mp', 'קדש',
+                      'Reflexive — "let them consecrate themselves"; יִתְ- prefix + patach + lengthened R2 vowel (qamets) + 3mp suffix וּ'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Lev 8:15',
+            'קֻדַּשׁ הַמִּזְבֵּחַ',
+            '"The altar was consecrated." [Pual distractor — u-class vowel under R1]'))
+        self.add_verb_table([
+            VerbEntry('8', 'קֻדַּשׁ', 'Perfect', '3ms', 'קדש',
+                      'NOT Hithpael — Pual Passive: "was consecrated"; Qibbuts (u-class) under R1 (קֻ) = Pual marker; no הִתְ prefix'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage C ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage C — Genesis 22:17–18 · 2 Samuel 10:12')
+
+        self.add_passage(PassageBlock('Gen 22:18',
+            'וְהִתְבָּרֲכוּ בְזַרְעֲךָ כֹּל גּוֹיֵי הָאָרֶץ',
+            '"…and in your offspring all the nations of the earth shall bless themselves."'))
+        self.add_verb_table([
+            VerbEntry('9', 'וְהִתְבָּרֲכוּ', 'Weqatal', '3cp', 'ברך',
+                      'Reflexive/Estimative — "shall bless themselves"; הִתְ- + R2=ר rejects dagesh (compensatory lengthening); 3cp suffix וּ'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('2 Sam 10:12',
+            'חֲזַק וְנִתְחַזְּקָה בְּעַד עַמֵּנוּ',
+            '"Be strong, and let us be courageous for our people."'))
+        self.add_verb_table([
+            VerbEntry('10', 'וְנִתְחַזְּקָה', 'Cohortative', '1cp', 'חזק',
+                      'Reflexive — "let us strengthen ourselves"; נִתְ- (cohortative Hithpael 1cp) + dagesh forte in R2 (זּ) + ה cohortative'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Prov 17:15',
+            'הִצְדִּיק אֶת הָרָשָׁע',
+            '"He declared the wicked righteous." [Hiphil distractor — הִ- with no תְ]'))
+        self.add_verb_table([
+            VerbEntry('11', 'הִצְדִּיק', 'Perfect', '3ms', 'צדק',
+                      'NOT Hithpael — Hiphil Declarative: "declared righteous"; הִ- prefix (no תְ) + Hireq-Yod under R2 = Hiphil pattern'),
+        ], show_answers=show_answers)
+
+
+def build_ch34_hithpael_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch34', 'exercises',
+                               'ch34-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch34-passage-exercise.pdf')
+    ex = Ch34HithpaelExercise(
+        title='Chapter 34 — "Spot the Hithpael" Passage Exercise',
+        subtitle='(Strong Verbs)  ·  1 Kgs 8  ·  Gen 20  ·  Jos 3  ·  Exo 19  ·  Gen 22  ·  2 Sam 10',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Chapter 35 — "Spot the Hithpael" Passage Exercise (Weak Verbs)
+# ---------------------------------------------------------------------------
+class Ch35HithpaelWeakExercise(PassageExercise):
+    _instructions = (
+        'Each numbered verb belongs to one of the stems you have already studied '
+        '(Qal, Niphal, Hiphil, Hophal, Piel, Pual, or Hithpael). '
+        'Focus: weak roots in the Hithpael stem — watch for metathesis (I-צ/ז/שׁ) and III-ה forms. '
+        'For each one, fill in: Hithpael? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'The answer key begins on the page marked "Answer Key".'
+    )
+
+    def _render_passages(self, show_answers: bool):
+
+        # ── Passage A ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage A — Gen 22:5 · Gen 18:2 · Exo 20:5 · Psa 95:6')
+
+        self.add_passage(PassageBlock('Gen 24:26',
+            'וַיִּשְׁתַּחוּ לַיהוָה',
+            '"And he bowed down before the LORD."'))
+        self.add_verb_table([
+            VerbEntry('1', 'וַיִּשְׁתַּחוּ', 'Wayyiqtol', '3ms', 'שחה',
+                      'Reflexive — "and he bowed down"; I-שׁ metathesis: הִתְ+שׁ → הִשְׁתַּ; III-ה short form (וּ ending in Wayyiqtol 3ms)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 22:5',
+            'וְנִשְׁתַּחֲוֶה וְנָשׁוּבָה אֲלֵיכֶם',
+            '"…and we will worship and we will come back to you."'))
+        self.add_verb_table([
+            VerbEntry('2', 'וְנִשְׁתַּחֲוֶה', 'Cohortative', '1cp', 'שחה',
+                      'Reflexive — "let us worship"; I-שׁ metathesis: הִתְ+שׁ → הִשְׁתַּ; cohortative prefix נ; III-ה ending ֶה'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 18:2',
+            'וַיִּשְׁתַּחוּ אָרְצָה',
+            '"And he bowed down to the ground."'))
+        self.add_verb_table([
+            VerbEntry('3', 'וַיִּשְׁתַּחוּ', 'Wayyiqtol', '3ms', 'שחה',
+                      'Reflexive — "and he bowed down"; Wayyiqtol: וַיִּ + שְׁתַּחוּ; I-שׁ metathesis; III-ה short form (וּ ending in Wayyiqtol 3ms)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Exo 20:5',
+            'לֹא תִשְׁתַּחְוֶה לָהֶם',
+            '"You shall not bow down to them."'))
+        self.add_verb_table([
+            VerbEntry('4', 'תִשְׁתַּחְוֶה', 'Imperfect', '2ms', 'שחה',
+                      'Reflexive — "you shall not bow down"; תִ- (2ms prefix) + שְׁתַּחְוֶה; I-שׁ metathesis; III-ה imperfect ending ֶה'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Psa 95:6',
+            'בֹּאוּ נִשְׁתַּחֲוֶה וְנִכְרָעָה נִבְרְכָה לִפְנֵי יְהוָה עֹשֵׂנוּ',
+            '"Come, let us bow down and kneel; let us kneel before the LORD our maker." [Qal distractor — נִבְרְכָה]'))
+        self.add_verb_table([
+            VerbEntry('5', 'נִבְרְכָה', 'Cohortative', '1cp', 'ברך',
+                      'NOT Hithpael — Qal: "let us kneel/bless"; נ = 1cp cohortative prefix (not הִתְ); no dagesh forte in R2'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage B ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage B — Genesis 35:7 · 1 Samuel 10:6, 11')
+
+        self.add_passage(PassageBlock('Gen 35:7',
+            'כִּי שָׁם נִגְלוּ אֵלָיו הָאֱלֹהִים',
+            '"…because there God had revealed himself to him." [Niphal distractor]'))
+        self.add_verb_table([
+            VerbEntry('6', 'נִגְלוּ', 'Perfect', '3cp', 'גלה',
+                      'NOT Hithpael — Niphal: "revealed themselves / were revealed"; נִ- prefix = Niphal; III-ה Niphal perfect 3cp (ה drops before וּ)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('1 Sam 10:6',
+            'וְהִתְנַבִּיתָ עִמָּם וְנֶהְפַּכְתָּ לְאִישׁ אַחֵר',
+            '"…and you will prophesy with them and be turned into another man."'))
+        self.add_verb_table([
+            VerbEntry('7', 'וְהִתְנַבִּיתָ', 'Weqatal', '2ms', 'נבא',
+                      'Denominative/Iterative — "you will prophesy"; I-נ (no assimilation in Hithpael); הִתְ- + נַ + בִּי + 2ms suffix תָ; III-א'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('1 Sam 10:11',
+            'וַיִּתְנַבְּאוּ עַד בּוֹא הַמִּנְחָה',
+            '"And they prophesied until the offering of the evening sacrifice."'))
+        self.add_verb_table([
+            VerbEntry('8', 'וַיִּתְנַבְּאוּ', 'Wayyiqtol', '3mp', 'נבא',
+                      'Denominative/Iterative — "and they prophesied"; יִתְ- prefix; I-נ (no assimilation); III-א with 3mp suffix אוּ'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage C ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage C — Genesis 44:16 · 2 Kings 8:29')
+
+        self.add_passage(PassageBlock('Gen 44:16',
+            'מַה נֹּאמַר לַאדֹנִי מַה נְּדַבֵּר וּמַה נִּצְטַדָּק',
+            '"What shall we say? What shall we speak? How can we justify ourselves?"'))
+        self.add_verb_table([
+            VerbEntry('9', 'נִצְטַדָּק', 'Imperfect', '1cp', 'צדק',
+                      'Reflexive/Estimative — "how can we justify ourselves?"; I-צ metathesis: הִתְצ → הִצְטַ (ת voices to ט); 1cp prefix נ'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('2 Kgs 8:29',
+            'וַיָּשָׁב יוֹרָם הַמֶּלֶךְ לְהִתְרַפֵּא בְיִזְרְעֶאל',
+            '"And King Joram returned to be healed in Jezreel."'))
+        self.add_verb_table([
+            VerbEntry('10', 'לְהִתְרַפֵּא', 'Inf. Construct', '—', 'רפא',
+                      'Reflexive — "to be healed / to seek healing"; הִתְ- prefix; III-א root; לְ-preposition marks infinitive construct'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('2 Kgs 8:29',
+            'כִּי הוּשַׁב הַמֶּלֶךְ',
+            '"…that the king had returned." [Hophal distractor — הוּ- prefix]'))
+        self.add_verb_table([
+            VerbEntry('11', 'הוּשַׁב', 'Perfect', '3ms', 'שוב',
+                      'NOT Hithpael — Hophal Passive: "was returned"; הוּ- prefix (u-class = Hophal); biconsonantal root שׁוּב; no הִתְ infix'),
+        ], show_answers=show_answers)
+
+
+def build_ch35_hithpael_weak_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch35', 'exercises',
+                               'ch35-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch35-passage-exercise.pdf')
+    ex = Ch35HithpaelWeakExercise(
+        title='Chapter 35 — "Spot the Hithpael" Passage Exercise',
+        subtitle='(Weak Verbs)  ·  Gen 22/18  ·  Exo 20  ·  Psa 95  ·  Gen 35/44  ·  1 Sam 10  ·  2 Kgs 8',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Chapter 29 — "Spot the Hophal Weak" Passage Exercise
+# ---------------------------------------------------------------------------
+class Ch29HophalWeakExercise(PassageExercise):
+    _instructions = (
+        'Each numbered verb belongs to one of the stems you have already studied '
+        '(Qal, Niphal, Hiphil, or Hophal). '
+        'Focus: weak roots in the Hophal stem. '
+        'For each one, fill in: Hophal? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'Key diagnostic: Hophal prefix vowel is always u-class (hu- Perfect, yu-/qu- Imperfect, mu- Participle). '
+        'The answer key begins on the page marked "Answer Key".'
+    )
+
+    def _render_passages(self, show_answers: bool):
+
+        # ── Passage A ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage A — Genesis 39:1 + 43:18 (Joseph narrative)')
+
+        self.add_passage(PassageBlock('Gen 39:1a',
+            'הוּרַד יוֹסֵף מִצְרָיְמָה וַיִּקְנֵהוּ פּוֹטִיפַר',
+            '"Now Joseph had been brought down to Egypt, and Potiphar bought him."'))
+        self.add_verb_table([
+            VerbEntry('1', 'הוּרַד', 'Perfect', '3ms', 'יָרַד',
+                      'Hophal — was brought down (I-yod; Hiphil horid = to bring down)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 39:1b',
+            'הוּבָא יוֹסֵף מִצְרָיְמָה',
+            '"Joseph was brought to Egypt."'))
+        self.add_verb_table([
+            VerbEntry('2', 'הוּבָא', 'Perfect', '3ms', 'בּוֹא',
+                      'Hophal — was brought (I-yod; Hiphil hebi = to bring)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 43:18a',
+            'עַל דְּבַר הַכֶּסֶף הַשָּׁב בְּאַמְתְּחֹתֵינוּ אֲנַחְנוּ מוּבָאִים',
+            '"because of the silver that was returned in our sacks, we are being brought in."'))
+        self.add_verb_table([
+            VerbEntry('3', 'הַשָּׁב', 'Participle', 'ms', 'שׁוּב',
+                      'Hophal Ptc. — (money) that was returned (biconsonantal; Hiphil heshiv)'),
+            VerbEntry('D1', 'מוּבָאִים', 'Participle', 'mp', 'בּוֹא',
+                      'Hophal Ptc. mp — being brought in (mu- prefix; same root as #2)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 43:18b',
+            'כִּי יוּבָא אִתָּנוּ אֶל בֵּיתוֹ',
+            '"because we are being brought into his house."'))
+        self.add_verb_table([
+            VerbEntry('4', 'יוּבָא', 'Imperfect', '3ms', 'בּוֹא',
+                      'Hophal — will be brought (yu- prefix = Hophal Impf.; I-yod)'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage B ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage B — Exodus 40:17 + Numbers 9:15-17 (Tabernacle)')
+
+        self.add_passage(PassageBlock('Exo 40:17',
+            'וַיְהִי בַּחֹדֶשׁ הָרִאשׁוֹן בַּשָּׁנָה הַשֵּׁנִית הוּקַם הַמִּשְׁכָּן',
+            '"In the first month of the second year — the tabernacle was set up."'))
+        self.add_verb_table([
+            VerbEntry('5', 'הוּקַם', 'Perfect', '3ms', 'קוּם',
+                      'Hophal — was set up (biconsonantal; Hiphil heqim = to set up/establish)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Num 9:15',
+            'וּבְיוֹם הָקִים אֶת הַמִּשְׁכָּן כִּסָּה הֶעָנָן אֶת הַמִּשְׁכָּן',
+            '"And on the day he set up the tabernacle, the cloud covered the tabernacle."'))
+        self.add_verb_table([
+            VerbEntry('D2', 'הָקִים', 'Perfect', '3ms', 'קוּם',
+                      'NOT Hophal — Hiphil active: "he set up" (ha- prefix, i-class; contrast huqam)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Num 9:17',
+            'בְּהֵעָלֹת הֶעָנָן מֵעַל הַמִּשְׁכָּן יִסְעוּ בְּנֵי יִשְׂרָאֵל',
+            '"Whenever the cloud lifted, the people of Israel set out."'))
+        self.add_verb_table([
+            VerbEntry('D3', 'יִסְעוּ', 'Qal Impf.', '3mp', 'נָסַע',
+                      'NOT Hophal — Qal Impf. 3mp (I-nun assimilation; yi- prefix, not yu-)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Num 9:15 context',
+            'וְאִם לֹא יֻקַּם הַמִּשְׁכָּן',
+            '"And if the tabernacle was not set up…"'))
+        self.add_verb_table([
+            VerbEntry('6', 'יֻקַּם', 'Imperfect', '3ms', 'קוּם',
+                      'Hophal — will be set up (Qibbuts yu variant; biconsonantal; same root as #5)'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage C ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage C — Genesis 43:12 + 38:25 + Exodus 14:5')
+
+        self.add_passage(PassageBlock('Gen 43:12',
+            'וְאֶת הַכֶּסֶף הַמּוּשָׁב בְּפִי אַמְתְּחֹתֵיכֶם הוּשַׁב תָּשִׁיבוּ',
+            '"and the money that was returned in the mouth of your sacks — bring it back."'))
+        self.add_verb_table([
+            VerbEntry('7', 'הוּשַׁב', 'Perfect', '3ms', 'שׁוּב',
+                      'Hophal — was returned/brought back (biconsonantal; Hiphil heshiv)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 38:25',
+            'הִוא מוּצֵאת וְהִיא שָׁלְחָה אֶל חָמִיהָ לֵאמֹר',
+            '"She was being brought out, and she sent word to her father-in-law, saying…"'))
+        self.add_verb_table([
+            VerbEntry('8', 'מוּצֵאת', 'Participle', 'fs', 'יָצָא',
+                      'Hophal Ptc. fs — being brought out (I-yod; mu- prefix; Hiphil hotzi)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 38:20',
+            'וַיִּשְׁלַח יְהוּדָה אֶת גְּדִי הָעִזִּים וְלֹא מְצָאָהּ',
+            '"And Judah sent the young goat, but he did not find her."'))
+        self.add_verb_table([
+            VerbEntry('D4', 'מְצָאָהּ', 'Qal Pf.', '3ms + 3fs', 'מָצָא',
+                      'NOT Hophal — Qal Pf. 3ms + 3fs obj. suffix (me = Qal, not Hophal mu-)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Exo 5 context',
+            'הוּצָא הַחוֹמֶר מֵהֶם',
+            '"The straw was taken away from them."'))
+        self.add_verb_table([
+            VerbEntry('9', 'הוּצָא', 'Perfect', '3ms', 'יָצָא',
+                      'Hophal — was brought out (I-yod; hu- prefix; Hiphil hotzi = to bring out)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Exo 14:5',
+            'הֻגַּד לְמֶלֶךְ מִצְרַיִם כִּי בָרַח הָעָם',
+            '"It was told to the king of Egypt that the people had fled."'))
+        self.add_verb_table([
+            VerbEntry('10', 'הֻגַּד', 'Perfect', '3ms', 'נָגַד',
+                      'Hophal — it was told (I-nun assimilation + Qibbuts; Hiphil higgid = to tell)'),
+        ], show_answers=show_answers)
+
+
+def build_ch29_hophal_weak_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch29', 'exercises',
+                               'ch29-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch29-passage-exercise.pdf')
+    ex = Ch29HophalWeakExercise(
+        title='Chapter 29 — "Spot the Hophal Weak" Passage Exercise',
+        subtitle='Genesis 39-43  /  Exodus 40 + Numbers 9  /  Genesis 38 + Exodus 14',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Chapter 31 — "Spot the Piel Weak" Passage Exercise
+# ---------------------------------------------------------------------------
+class Ch31PielWeakExercise(PassageExercise):
+    _instructions = (
+        'Each numbered verb belongs to one of the stems you have already studied '
+        '(Qal, Niphal, Hiphil, Hophal, or Piel). '
+        'Focus: weak roots in the Piel stem, especially III-he roots. '
+        'For each one, fill in: Piel? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'Distractor verbs D1-D3 are not Piel — drawn from Hiphil and Hophal. '
+        'The answer key begins on the page marked "Answer Key".'
+    )
+
+    def _render_passages(self, show_answers: bool):
+
+        # ── Passage A ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage A — Genesis 2:16; 3:11, 17 (Garden commands)')
+
+        self.add_passage(PassageBlock('Gen 2:16',
+            'וַיְצַו יְהוָה אֱלֹהִים עַל הָאָדָם לֵאמֹר',
+            '"And the LORD God commanded the man, saying…"'))
+        self.add_verb_table([
+            VerbEntry('1', 'וַיְצַו', 'Wayyiqtol', '3ms', 'צָוָה',
+                      'Denominative — "commanded"; III-he apocopated in Wayyiqtol: vayyetsav'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 3:11',
+            'הֲמִן הָעֵץ אֲשֶׁר צִוִּיתִיךָ לְבִלְתִּי אֲכָל מִמֶּנּוּ',
+            '"Have you eaten from the tree of which I commanded you not to eat?"'))
+        self.add_verb_table([
+            VerbEntry('2', 'צִוִּיתִיךָ', 'Perfect', '1cs + 2ms', 'צָוָה',
+                      'Denominative — "I commanded you"; Hireq + dagesh in R2 + 1cs + 2ms obj.'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 3:17',
+            'כִּי שָׁמַעְתָּ לְקוֹל אִשְׁתֶּךָ אֲשֶׁר צִוִּיתִיךָ לֵאמֹר',
+            '"because you listened to your wife about the tree which I commanded you…"'))
+        self.add_verb_table([
+            VerbEntry('3', 'צִוִּיתִיךָ', 'Perfect', '1cs + 2ms', 'צָוָה',
+                      'Denominative — same form as #2; God repeats in verdict speech'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage B ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage B — Genesis 6:18-20 + 18:19 + Exodus 1:17')
+
+        self.add_passage(PassageBlock('Gen 6:18-19',
+            'וַהֲקִמֹתִי אֶת בְּרִיתִי אִתָּךְ לְהַחֲיוֹת אִתָּךְ',
+            '"and I will establish my covenant with you, to keep alive with you…"'))
+        self.add_verb_table([
+            VerbEntry('D1', 'לְהַחֲיוֹת', 'Hiphil Inf.Const.', '—', 'חָיָה',
+                      'NOT Piel — Hiphil Inf. Const. (leha- prefix); "to keep alive" (causative)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 6:19',
+            'חִיָּה אֶת אֲשֶׁר בָּאָרֶץ',
+            '"Keep alive what is on the earth."'))
+        self.add_verb_table([
+            VerbEntry('4', 'חִיָּה', 'Perfect', '3ms', 'חָיָה',
+                      'Factitive — "kept alive"; III-he: Hireq + dagesh in R2 + qamets-he'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 18:19',
+            'לְמַעַן אֲשֶׁר יְצַוֶּה אֶת בָּנָיו וְאֶת בֵּיתוֹ אַחֲרָיו',
+            '"so that he will command his sons and his household after him…"'))
+        self.add_verb_table([
+            VerbEntry('5', 'יְצַוֶּה', 'Imperfect', '3ms', 'צָוָה',
+                      'Denominative — III-he Impf. 3ms: ye- prefix + patach + dagesh in R2 + tsere-he'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Exo 1:17',
+            'וַיְחַיּוּ אֶת יַלְדֵי הַנָּשִׁים הָעִבְרִיּוֹת',
+            '"and they kept alive the male children of the Hebrew women." (the midwives)'))
+        self.add_verb_table([
+            VerbEntry('6', 'וַיְחַיּוּ', 'Wayyiqtol', '3mp', 'חָיָה',
+                      'Factitive — III-he Wayyiqtol 3mp: vayyeh + cha + yod (dagesh in yod) + u suffix'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage C ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage C — Genesis 16:6 + Deuteronomy 8:2-3 (Humbling)')
+
+        self.add_passage(PassageBlock('Gen 16:6',
+            'עִנָּה אֹתָהּ שָׂרַי',
+            '"Sarai afflicted / humbled her."'))
+        self.add_verb_table([
+            VerbEntry('7', 'עִנָּה', 'Perfect', '3ms', 'עָנָה',
+                      'Factitive — "she afflicted/humbled"; III-he: Hireq + dagesh in R2 + qamets-he'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Deu 8:2',
+            'לְמַעַן עַנֹּתְךָ לְנַסֹּתְךָ',
+            '"to humble you and to test you…"'))
+        self.add_verb_table([
+            VerbEntry('8', 'עַנֹּתְךָ', 'Inf. Construct', '— + 2ms', 'עָנָה',
+                      'Factitive — III-he Inf. Const. + 2ms suffix: patach + dagesh in nun + tav'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Deu 8:3',
+            'לְמַעַן הוֹדִיעֲךָ כִּי לֹא עַל הַלֶּחֶם לְבַדּוֹ יִחְיֶה הָאָדָם',
+            '"in order to make you know that man does not live by bread alone."'))
+        self.add_verb_table([
+            VerbEntry('D2', 'הוֹדִיעֲךָ', 'Hiphil Inf.Const.', '— + 2ms', 'יָדַע',
+                      'NOT Piel — Hiphil Inf. Const. of I-yod root yada (ho- prefix); "to make known"'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Deu 8:2 parallel',
+            'יְעַנֶּה יְהוָה אֱלֹהֶיךָ אֹתְךָ בַּמִּדְבָּר',
+            '"The LORD your God will humble you in the wilderness."'))
+        self.add_verb_table([
+            VerbEntry('9', 'יְעַנֶּה', 'Imperfect', '3ms', 'עָנָה',
+                      'Factitive — III-he Impf. 3ms: ye- + patach + dagesh in nun + tsere-he ending'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage D ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage D — Amos 3:7 + Genesis 50:16 + Deuteronomy 8:1')
+
+        self.add_passage(PassageBlock('Amos 3:7',
+            'כִּי לֹא יַעֲשֶׂה אֲדֹנָי יְהוִה דָּבָר כִּי אִם גִּלָּה סוֹדוֹ אֶל עֲבָדָיו הַנְּבִיאִים',
+            '"For the Lord GOD does nothing without revealing his secret to his servants the prophets."'))
+        self.add_verb_table([
+            VerbEntry('10', 'גִּלָּה', 'Perfect', '3ms', 'גָּלָה',
+                      'Declarative/Intensive — "revealed"; III-he: Hireq + dagesh in lamed + qamets-he'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 50:16',
+            'וַיְצַוּוּ אֶל יוֹסֵף לֵאמֹר אָבִיךָ צִוָּה לִפְנֵי מוֹתוֹ',
+            '"They sent a command to Joseph, saying, Your father gave orders before his death…"'))
+        self.add_verb_table([
+            VerbEntry('11', 'וַיְצַוּוּ', 'Wayyiqtol', '3mp', 'צָוָה',
+                      'Denominative — Wayyiqtol 3mp of tsavah III-he; "they commanded"'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Deu 8:1',
+            'כָּל הַמִּצְוָה אֲשֶׁר אָנֹכִי מְצַוְּךָ הַיּוֹם תִּשְׁמְרוּן לַעֲשׂוֹת',
+            '"All the commandment that I am commanding you today, you shall be careful to do."'))
+        self.add_verb_table([
+            VerbEntry('12', 'מְצַוְּךָ', 'Participle', 'ms + 2ms', 'צָוָה',
+                      'Denominative — Piel Ptc. ms + 2ms suffix: me- + patach + dagesh in R2'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Gen 39:1 (review)',
+            'הוּבָא יוֹסֵף מִצְרָיְמָה',
+            '"Joseph was brought to Egypt." (Cross-stem review — compare Ch29)'))
+        self.add_verb_table([
+            VerbEntry('D3', 'הוּבָא', 'Hophal Pf.', '3ms', 'בּוֹא',
+                      'NOT Piel — Hophal Pf. 3ms (hu- prefix = u-class = Hophal passive); "was brought"'),
+        ], show_answers=show_answers)
+
+
+def build_ch31_piel_weak_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch31', 'exercises',
+                               'ch31-passage-exercise')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch31-passage-exercise.pdf')
+    ex = Ch31PielWeakExercise(
+        title='Chapter 31 — "Spot the Piel Weak" Passage Exercise',
+        subtitle='Gen 2-3, 6, 16, 18  /  Exo 1  /  Deu 8  /  Amos 3  /  Gen 50',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Chapter 32 — "Spot the Pual" Passage Exercise (Pual Strong)
+# ---------------------------------------------------------------------------
+class Ch32PualExercise(PassageExercise):
+    _instructions = (
+        'Each numbered verb belongs to one of the stems you have already studied '
+        '(Qal, Niphal, Hiphil, Hophal, or Piel/Pual). '
+        'For each one, fill in: Pual? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'The answer key begins on the page marked "Answer Key".'
+    )
+
+    def _render_passages(self, show_answers: bool):
+
+        # ── Passage A ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage A — Numbers 22:6, 12; 23:8, 20 (Balaam cycle)')
+
+        self.add_passage(PassageBlock('22:6',
+            'כִּי יָדַעְתִּי אֵת אֲשֶׁר תְּבָרֵךְ מְבֹרָךְ וַאֲשֶׁר תָּאֹר יוּאָר',
+            '"…for I know that he whom you bless is blessed, and he whom you curse is cursed."'))
+        self.add_verb_table([
+            VerbEntry('1', 'תְּבָרֵךְ', 'Imperfect',  '2ms', 'בָּרַךְ', 'NOT Pual — Piel Intensive: "you bless"; tsere under R2 = Piel active'),
+            VerbEntry('2', 'מְבֹרָךְ',  'Participle', 'ms',  'בָּרַךְ', 'Passive — Pual Ptc. ms; Qamets under R1 (compensatory for ר rejecting dagesh)'),
+            VerbEntry('3', 'יוּאָר',    'Imperfect',  '3ms', 'אָרַר',   'NOT Pual — Hophal: "shall be cursed"; יוּ prefix = u-class on preformative = Hophal Impf. marker'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('22:12',
+            'לֹא תֵלֵךְ עִמָּהֶם לֹא תָאֹר אֶת הָעָם כִּי בָרוּךְ הוּא',
+            '"You shall not go with them. You shall not curse the people, for they are blessed."'))
+        self.add_verb_table([
+            VerbEntry('4', 'תָאֹר',   'Imperfect', '2ms', 'אָרַר', 'NOT Pual — Qal: "you shall curse"; no u-class vowel under R1 with Dagesh in R2'),
+            VerbEntry('5', 'בָּרוּךְ', 'Participle', 'ms', 'בָּרַךְ', 'Passive — Pual Ptc. ms (substantival: "blessed one"); Qamets = compensatory for ר'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('23:8',
+            'מַה אֶקֹּב לֹא קַבֹּה אֵל וּמַה אֶזְעֹם לֹא זָעַם יְהוָה',
+            '"How shall I curse what God has not cursed, and how shall I denounce what the LORD has not denounced?"'))
+        self.add_verb_table([
+            VerbEntry('6', 'קַבֹּה', 'Qal Inf.Abs.', '—',  'קָבַב', 'NOT Pual — Qal Inf. Abs.; geminate root; no Qibbuts + R2 dagesh'),
+            VerbEntry('7', 'זָעַם',  'Perfect',      '3ms', 'זָעַם', 'NOT Pual — Qal Perf. 3ms; Qamets-Patach = Qal pattern; no u-class under R1'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('23:20',
+            'הִנֵּה בָרֵךְ לָקָחְתִּי וּבֵרַךְ וְלֹא אֲשִׁיבֶנָּה',
+            '"Behold, I have received a command to bless; he has blessed, and I cannot revoke it."'))
+        self.add_verb_table([
+            VerbEntry('8', 'בָרֵךְ', 'Inf. Absolute', '—', 'בָּרַךְ', 'NOT Pual — Piel Inf. Abs.: "to bless"; tsere under R2 = Piel active'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage B ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage B — Exodus 29:36–37 (Consecration of the Altar)')
+
+        self.add_passage(PassageBlock('29:36',
+            'וּמָשַׁחְתָּ אֹתוֹ לְקַדְּשׁוֹ',
+            '"…and you shall anoint it to consecrate it."'))
+        self.add_verb_table([
+            VerbEntry('9', 'וּמָשַׁחְתָּ', 'Weqatal', '2ms', 'מָשַׁח', 'NOT Pual — Qal Weqatal: "and you shall anoint"; no u-class under R1'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('29:37',
+            'שִׁבְעַת יָמִים תְּכַפֵּר עַל הַמִּזְבֵּחַ וְקִדַּשְׁתָּ אֹתוֹ וְהָיָה הַמִּזְבֵּחַ קֹדֶשׁ קָדָשִׁים כָּל הַנֹּגֵעַ בַּמִּזְבֵּחַ יִקְדָּשׁ',
+            '"Seven days you shall make atonement for the altar and consecrate it, and the altar shall be most holy; whatever touches the altar shall be consecrated."'))
+        self.add_verb_table([
+            VerbEntry('10', 'וְקִדַּשְׁתָּ', 'Weqatal',     '2ms', 'קָדַשׁ', 'NOT Pual — Piel Factitive: "and you shall consecrate"; Hireq under R1 (קִ) = Piel'),
+            VerbEntry('11', 'וְהָיָה',       'Weqatal',     '3ms', 'הָיָה',  'NOT Pual — Qal Weqatal: "and it shall be"; III-ה Qal'),
+            VerbEntry('12', 'יִקְדָּשׁ',      'Niphal Impf.', '3ms', 'קָדַשׁ', 'NOT Pual — Niphal passive/reflexive: "shall be consecrated"; יִ + dagesh in R1 = Niphal; compare Pual: יְקֻדַּשׁ'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage C ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage C — Exodus 14:4; Isaiah 43:23; Exodus 40:17 (Pual of כבד + Hophal distractor)')
+
+        self.add_passage(PassageBlock('Exo 14:4',
+            'וְכָבַדְתִּי בְּפַרְעֹה וּבְכָל חֵילוֹ',
+            '"And I will get glory through Pharaoh and all his host."'))
+        self.add_verb_table([
+            VerbEntry('13', 'וְכָבַדְתִּי', 'Weqatal', '1cs', 'כָּבֵד', 'NOT Pual — Niphal reflexive: "I will be glorified / get glory"; contracted Niphal prefix; no Qibbuts under R1'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Isa 43:23',
+            'לֹא כֻבַּדְתַּנִי בְּקָרְבָּנֶיךָ',
+            '"You have not honored me with your offerings."'))
+        self.add_verb_table([
+            VerbEntry('14', 'כֻּבַּדְתַּנִי', 'Perfect', '2ms', 'כָּבֵד', 'Passive — Pual: "you have not honored me"; Qibbuts under R1 (כֻ) + Dagesh in R2 (בּ) = Pual diagnostic'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Exo 40:17',
+            'הוּקַם הַמִּשְׁכָּן בְּיוֹם הַחֹדֶשׁ הָרִאשׁוֹן',
+            '"The tabernacle was set up on the first day of the first month."'))
+        self.add_verb_table([
+            VerbEntry('15', 'הוּקַם', 'Perfect', '3ms', 'קוּם', 'NOT Pual — Hophal: "was set up/raised"; הוּ prefix = Hophal Perf. marker; hollow root has no R2 for dagesh; contrast Pual: קֻטַּל pattern'),
+        ], show_answers=show_answers)
+
+        if not show_answers:
+            self.add_reflection([
+                'In Passage A, verbs 1 (Piel) and 2 (Pual) come from the same root ברך. The root has R2=ר, '
+                'which rejects Dagesh Forte. How does the Pual compensate for the missing dagesh, and why does '
+                'this make the Pual and Piel of ברך harder to distinguish than strong-root counterparts?',
+                'Verb 3 (יוּאָר, Hophal) and verb 14 (כֻּבַּדְתַּנִי, Pual) both express passive meaning. '
+                'What is the key visual feature that distinguishes a Hophal from a Pual? '
+                'What does each stem tell you about the corresponding active stem?',
+                'Verbs 10 (Piel Weqatal) and 12 (Niphal Impf.) from Exo 29:37 use the same root קדש. '
+                'The priest actively consecrates (Piel); then whatever touches becomes holy (Niphal). '
+                'How does this passage illustrate the Piel-as-cause / Niphal-as-resulting-state distinction?',
+            ])
+
+
+def build_ch32_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch32', 'exercises',
+                               'ch32-passage-exercise')
+    path = os.path.join(out_dir, 'ch32-passage-exercise.pdf')
+    ex = Ch32PualExercise(
+        title='Chapter 32 — "Spot the Pual" Passage Exercise',
+        subtitle='Num 22–23  ·  Exo 29  ·  Isa 43',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# Chapter 33 — "Spot the Pual" Passage Exercise (Pual Weak)
+# ---------------------------------------------------------------------------
+class Ch33PualWeakExercise(PassageExercise):
+    _instructions = (
+        'Each numbered verb belongs to one of the stems you have already studied '
+        '(Qal, Niphal, Hiphil, Hophal, Piel, or Pual). '
+        'For each one, fill in: Pual? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'For each Pual form, also identify the weak-root type (I-י, I-נ, III-ה, or R2=ר). '
+        'The answer key begins on the page marked "Answer Key".'
+    )
+
+    def _render_passages(self, show_answers: bool):
+
+        # ── Passage A ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage A — Genesis Genealogies (Gen 4:18; 4:26; 46:22; 6:1)')
+
+        self.add_passage(PassageBlock('4:18',
+            'וְעִירָד יָלַד אֶת מְחוּיָאֵל',
+            '"And Irad fathered Mehujael."'))
+        self.add_verb_table([
+            VerbEntry('1', 'יָלַד', 'Perfect', '3ms', 'יָלַד', 'NOT Pual — Qal: "fathered/begat" (active); Qal Perf 3ms vowel pattern; no Qibbuts under R1'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('4:26',
+            'אָז הוּחַל לִקְרֹא בְּשֵׁם יְהוָה',
+            '"At that time people began to call upon the name of the LORD."'))
+        self.add_verb_table([
+            VerbEntry('2', 'הוּחַל', 'Perfect', '3ms', 'חָלַל', 'NOT Pual — Hophal: "was begun"; הוּ prefix = Hophal Perf. marker; geminate root; no Qibbuts under R1'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('46:22',
+            'אֵלֶּה בְּנֵי רָחֵל אֲשֶׁר יֻלַּד לְיַעֲקֹב',
+            '"These are the sons of Rachel who were born to Jacob."'))
+        self.add_verb_table([
+            VerbEntry('3', 'יֻלַּד', 'Perfect', '3ms', 'יָלַד', 'Passive — Pual; I-י root: "was born/begotten"; Qibbuts under R1 (יֻ) + Dagesh in R2 (לּ); Piel = "to beget" → Pual = "to be born"'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('6:1',
+            'וַיִּוָּלְדוּ לָהֶם בָנִים',
+            '"And sons were born to them."'))
+        self.add_verb_table([
+            VerbEntry('4', 'וַיִּוָּלְדוּ', 'Wayyiqtol', '3mp', 'יָלַד', 'NOT Pual — Niphal Wayyiqtol 3mp: "were born"; יִוָּ = Niphal with I-י (yod assimilates with dagesh); compare Pual יֻלַּד: Qibbuts vs. Niphal יִ'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage B ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage B — Leviticus 7:36; Numbers 3:9 (I-נ root נתן)')
+
+        self.add_note('I-נ Pual: unlike Qal Imperfect where נ assimilates (יִתֵּן), '
+                      'in the Pual the נ stays as R1 and takes Qibbuts. '
+                      'Dagesh Forte falls on R2 (ת), not on an assimilated consonant.')
+
+        self.add_passage(PassageBlock('Lev 7:36',
+            'אֲשֶׁר צִוָּה יְהוָה לָתֵת לָהֶם',
+            '"…which the LORD commanded to give to them."'))
+        self.add_verb_table([
+            VerbEntry('5', 'צִוָּה', 'Perfect', '3ms', 'צָוָה', 'NOT Pual — Piel active: "commanded"; Hireq under R1 (צִ) = Piel i-class; Pual passive would be צֻוָּה'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Num 3:9',
+            'וְנָתַתָּ אֶת הַלְוִיִּם לְאַהֲרֹן וּלְבָנָיו נְתֻנִים נְתֻנִים הֵמָּה',
+            '"And you shall give the Levites to Aaron and his sons; they are given, given."'))
+        self.add_verb_table([
+            VerbEntry('6', 'וְנָתַתָּ',  'Weqatal',   '2ms', 'נָתַן', 'NOT Pual — Qal Weqatal: "and you shall give"; no u-class under R1'),
+            VerbEntry('7', 'נְתֻנִים',   'Participle', 'mp',  'נָתַן', 'Passive — Pual Ptc. mp; I-נ root: "given" (substantival); Qibbuts under תֻ; נ retained as R1 (does not assimilate in Pual)'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Num 3:9b',
+            'נֻתְּנוּ לִי הֵמָּה מִתּוֹךְ בְּנֵי יִשְׂרָאֵל',
+            '"They were given to me from among the people of Israel."'))
+        self.add_verb_table([
+            VerbEntry('8', 'נֻתְּנוּ', 'Perfect', '3cp', 'נָתַן', 'Passive — Pual; I-נ root: "were given"; Qibbuts under R1 (נֻ) + Dagesh in R2 (תּ) + 3cp suffix וּ'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage C ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage C — Leviticus 8:35; Numbers 22:6; Psalm 72:17 (III-ה and R2=ר)')
+
+        self.add_passage(PassageBlock('Lev 8:35',
+            'כַּאֲשֶׁר צֻוֵּיתִי אֲנִי כֵּן צֻוֵּיתֶם',
+            '"As I was commanded, so you were commanded."'))
+        self.add_verb_table([
+            VerbEntry('9',  'צֻוֵּיתִי', 'Perfect', '1cs', 'צָוָה', 'Passive — Pual; III-ה root: "I was commanded"; Qibbuts under R1 (צֻ) + Dagesh in R2 (וּ) + III-ה Perfect 1cs suffix יתִי'),
+            VerbEntry('10', 'צֻוֵּיתֶם', 'Perfect', '2mp', 'צָוָה', 'Passive — Pual; III-ה root: "you were commanded"; same Pual diagnostic; 2mp suffix יתֶם'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Num 22:6',
+            'כִּי יָדַעְתִּי אֵת אֲשֶׁר תְּבָרֵךְ מְבֹרָךְ וַאֲשֶׁר תָּאֹר יוּאָר',
+            '"…for I know that he whom you bless is blessed, and he whom you curse is cursed."'))
+        self.add_verb_table([
+            VerbEntry('11', 'תְּבָרֵךְ', 'Imperfect',  '2ms', 'בָּרַךְ', 'NOT Pual — Piel Intensive: "you bless" (active); tsere under R2; R2=ר rejects dagesh but this is Piel'),
+            VerbEntry('12', 'מְבֹרָךְ',  'Participle', 'ms',  'בָּרַךְ', 'Passive — Pual Ptc. ms; R2=ר (weak): Qamets under R1 (compensatory for ר rejecting dagesh)'),
+            VerbEntry('13', 'יוּאָר',    'Imperfect',  '3ms', 'אָרַר',   'NOT Pual — Hophal: "shall be cursed"; יוּ prefix = u-class on preformative = Hophal Impf. marker'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('Psa 72:17',
+            'יְבֹרַךְ שְׁמוֹ לְעוֹלָם יִתְנַהֵל לִפְנֵי שֶׁמֶשׁ שְׁמוֹ',
+            '"May his name be blessed forever; may his name endure before the sun."'))
+        self.add_verb_table([
+            VerbEntry('14', 'יְבֹרַךְ',   'Imperfect', '3ms', 'בָּרַךְ', 'Passive — Pual Impf.: "may his name be blessed"; R2=ר; Qamets under R1 (compensatory); jussive expressing prayer'),
+            VerbEntry('15', 'יִתְנַהֵל', 'Imperfect', '3ms', 'נָהַל',  'NOT Pual — Hithpael: "may endure/continue"; יִתְ prefix = Hithpael marker; no Qibbuts under R1'),
+        ], show_answers=show_answers)
+
+        if not show_answers:
+            self.add_reflection([
+                'Verb 3 (יֻלַּד, I-י Pual Perfect) and verb 4 (וַיִּוָּלְדוּ, Niphal Wayyiqtol) '
+                'both come from ילד and both express passive meaning. What visual feature most '
+                'immediately distinguishes the Pual from the Niphal in these I-י forms?',
+                'Verbs 7–8 (נְתֻנִים / נֻתְּנוּ, I-נ Pual) show that in the Pual, נ stays as R1 '
+                'and takes Qibbuts rather than assimilating as in the Qal Imperfect (יִתֵּן). '
+                'What grammatical principle causes the different behavior between stems?',
+                'Verbs 9–10 (צֻוֵּיתִי / צֻוֵּיתֶם, III-ה Pual) parallel verb 5 (צִוָּה, Piel active). '
+                'What single vowel under R1 most quickly identifies Piel vs. Pual? '
+                'How does this i/u distinction work in the strong paradigm (קִטֵּל vs. קֻטַּל)?',
+            ])
+
+
+def build_ch33_exercise(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'hebrew', 'bbh', 'ch33', 'exercises',
+                               'ch33-passage-exercise')
+    path = os.path.join(out_dir, 'ch33-passage-exercise.pdf')
+    ex = Ch33PualWeakExercise(
+        title='Chapter 33 — "Spot the Pual" Passage Exercise (Weak Roots)',
+        subtitle='Gen 4  ·  Lev 7–8  ·  Num 3, 22  ·  Psa 72',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     p0 = build_ch24_exercise()
     print(f'Saved: {p0}')
@@ -2935,3 +3773,15 @@ if __name__ == '__main__':
     print(f'Saved: {p10}')
     p11 = build_ch30_exercise()
     print(f'Saved: {p11}')
+    p12 = build_ch32_exercise()
+    print(f'Saved: {p12}')
+    p13 = build_ch33_exercise()
+    print(f'Saved: {p13}')
+    p12 = build_ch34_hithpael_exercise()
+    print(f'Saved: {p12}')
+    p13 = build_ch35_hithpael_weak_exercise()
+    print(f'Saved: {p13}')
+    p14 = build_ch29_hophal_weak_exercise()
+    print(f'Saved: {p14}')
+    p15 = build_ch31_piel_weak_exercise()
+    print(f'Saved: {p15}')

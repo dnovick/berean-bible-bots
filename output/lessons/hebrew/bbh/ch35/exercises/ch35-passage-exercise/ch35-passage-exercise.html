@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch35 — Spot the Hithpael Passage Exercise (Weak Verbs)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 900px; margin: 2em auto; padding: 0 1.5em; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
+  h2 { font-size: 1.15em; margin-top: 1.8em; color: #333; }
+  h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
+  .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
+  .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
+  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
+  td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
+  td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #aaa; background: transparent; font-size: 0.9em; padding: 1px 2px; font-family: inherit; }
+  input.parse-field:focus { outline: none; border-bottom: 2px solid #5b7dc8; }
+  .answer-row { display: none; background: #eaf5ea; }
+  .answer-row td { border-top: none; color: #2a6b2a; font-size: 0.88em; }
+  .answer-row.visible { display: table-row; }
+  .reveal-btn { font-size: 0.78em; padding: 2px 7px; background: #ddeeff; border: 1px solid #99b; border-radius: 3px; cursor: pointer; white-space: nowrap; }
+  .reveal-btn:hover { background: #c5deff; }
+  .controls { margin: 1em 0 1.5em; display: flex; gap: 0.6em; flex-wrap: wrap; }
+  .controls button { padding: 5px 14px; border: 1px solid #aaa; border-radius: 4px; background: #f0f0f0; cursor: pointer; font-size: 0.9em; }
+  .controls button:hover { background: #ddd; }
+  .note-box { background: #fffbe6; border: 1px solid #e0c84b; border-radius: 4px; padding: 0.7em 1em; margin: 1em 0; font-size: 0.9em; }
+  .answer-key { background: #f5f5f5; border: 1px solid #ccc; border-radius: 4px; padding: 1em 1.2em; margin-top: 2em; }
+  .answer-key h2 { margin-top: 0.3em; }
+  .answer-key table td:first-child { direction: rtl; unicode-bidi: embed; }
+  .reflection { margin-top: 1.5em; padding: 0.8em 1.2em; background: #f0f5ff; border-radius: 4px; border: 1px solid #b0c4e8; }
+  .reflection ol { margin: 0.4em 0; padding-left: 1.4em; }
+  .reflection li { margin-bottom: 0.5em; }
+  @media print {
+    .controls, .reveal-btn { display: none !important; }
+    .answer-row { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #999; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 35 — "Spot the Hithpael" Passage Exercise</h1>
+<p><strong>Stem:</strong> Hithpael (הִתְקַטֵּל) — Weak Verbs &nbsp;|&nbsp; <strong>Passages:</strong> Gen 22:5 · Gen 18:2 · Exo 20:5 · Psa 95:6 · Gen 35:7 · 1 Sam 10:6, 11 · Gen 44:16 · 2 Kgs 8:29</p>
+
+<p><strong>Instructions:</strong> For each bolded/numbered verb, fill in: (1) Is it Hithpael? (Yes/No) (2) Conjugation (3) PGN (4) Root (5) Stem/Function (note the weak class). Distractors are drawn from Qal, Niphal, and Hophal. Click <strong>▶ Answer</strong> to reveal the key for that row.</p>
+
+<div class="note-box"><strong>Weak-root Hithpael markers:</strong>
+  <ul style="margin:0.3em 0; padding-left:1.3em;">
+    <li><strong>I-שׁ/שׂ metathesis:</strong> הִתְ + שׁ → הִשְׁתַּ (ת and שׁ swap: הִשְׁתַּחֲוָה from שׁחה)</li>
+    <li><strong>I-צ metathesis:</strong> הִתְ + צ → הִצְתַּ → הִצְטַ (ת voices to ט: הִצְטַדֵּק from צדק)</li>
+    <li><strong>III-ה forms:</strong> Perfect הִתְגַּלָּה; Imperfect יִתְגַּלֶּה; Ptc מִתְגַּלֶּה</li>
+    <li><strong>I-נ:</strong> נ does NOT assimilate in Hithpael (unlike Niphal): הִתְנַבֵּא from נבא</li>
+  </ul>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<h2>Passage A — Genesis 22:5 · Genesis 18:2 · Exodus 20:5 · Psalm 95:6</h2>
+<h3>Context: Abraham prepares to worship; Lot's visitors; the second commandment; Psalm of praise.</h3>
+
+<div class="note-box"><strong>Root focus:</strong> Verbs 2–4 all come from שׁחה — a III-ה root with I-שׁ. The Hithpael shows metathesis in every conjugation: הִשְׁתַּחֲוָה (perfect), יִשְׁתַּחֲוֶה (imperfect), הִשְׁתַּחֲווּ (imperative), מִשְׁתַּחֲוֶה (participle).</div>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיִּשְׁתַּחוּ [1]</strong> לַיהוָה</div>
+<p class="translation">"And he bowed down before the LORD." (Gen 24:26)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r1">
+    <td>1</td><td>וַיִּשְׁתַּחוּ</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a1">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Wayyiqtol | 3ms | שחה | <em>Reflexive</em> — "and he bowed down"; I-שׁ metathesis (הִתְ + שׁ → הִשְׁתַּ); III-ה short form (וּ ending in Wayyiqtol 3ms).</td>
+  </tr>
+</table>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֹּ֣אמֶר אַבְרָהָ֗ם אֶל־נְעָרָ֡יו שְׁבוּ־לָכֶ֣ם פֹּ֣ה עִם־הַחֲמוֹר֒ וַאֲנִ֣י וְהַנַּ֔עַר נֵלְכָ֖ה עַד־כֹּ֑ה <strong>וְנִשְׁתַּחֲוֶ֔ה [2]</strong> וְנָשׁ֥וּבָה אֲלֵיכֶֽם׃</div>
+<p class="translation">"And Abraham said to his young men, 'Stay here with the donkey; I and the young man will go over there and worship [2], and we will come back to you.'" (Gen 22:5)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r2">
+    <td>2</td><td>וְנִשְׁתַּחֲוֶה</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a2">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Cohortative | 1cp | שחה | <em>Reflexive</em> "let us worship/bow down" — I-שׁ metathesis: הִתְ + שׁ → הִשְׁתַּ; cohortative prefix נ replaces הִ: וְנִשְׁתַּחֲוֶה. III-ה ending: imperfect/cohortative takes ֶה. The full expected form: יִתְשַׁחֲוֶה → הִשְׁתַּחֲוֶה → cohortative נִשְׁתַּחֲוֶה.</td>
+  </tr>
+</table>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיַּ֥רְא וַיָּ֖רָץ לִקְרָאתָ֑ם מִפֶּ֣תַח הָאֹ֔הֶל <strong>וַיִּשְׁתַּ֖חוּ [3]</strong> אָֽרְצָה׃</div>
+<p class="translation">"When he saw them, he ran from the tent door to meet them and bowed down [3] to the ground." (Gen 18:2)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r3">
+    <td>3</td><td>וַיִּשְׁתַּחוּ</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a3">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Wayyiqtol | 3ms | שחה | <em>Reflexive</em> "and he bowed down" — Wayyiqtol: וַיִּ + שְׁתַּחוּ; I-שׁ metathesis preserved; III-ה in Wayyiqtol 3ms = short form (no ה ending, final vowel וּ from 3ms apocopation + suffix). Compare: form וַיִּשְׁתַּחֲווּ (3mp) has different ending.</td>
+  </tr>
+</table>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">לֹֽא־<strong>תִשְׁתַּחְוֶ֥ה [4]</strong>־לָהֶ֖ם וְלֹ֣א תָעָבְדֵ֑ם כִּ֣י אָנֹכִ֞י יְהוָ֤ה אֱלֹהֶ֙יךָ֙</div>
+<p class="translation">"You shall not bow down [4] to them or serve them, for I the LORD your God…" (Exo 20:5)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r4">
+    <td>4</td><td>תִשְׁתַּחְוֶה</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a4">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperfect | 2ms | שחה | <em>Reflexive</em> "you shall not bow down" — תִ- (2ms prefix) + שְׁתַּחְוֶה; I-שׁ metathesis in imperfect; III-ה: ֶה ending in imperfect 2ms. This is the Decalogue's prohibition of idolatry — most frequent verb in the prohibition against bowing to idols.</td>
+  </tr>
+</table>
+
+<div class="note-box"><strong>Distractor alert — Qal:</strong> Psalm 95:6 has a Qal cohortative. Do not confuse the cohortative prefix נ with the Hithpael prefix הִתְ.</div>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">בֹּ֭אוּ נִשְׁתַּחֲוֶ֣ה וְנִכְרָ֑עָה <strong>נִבְרְכָ֥ה [5]</strong> לִֽפְנֵי־יְהוָ֥ה עֹשֵֽׂנוּ׃</div>
+<p class="translation">"Come, let us bow down and kneel; let us kneel [5] before the LORD our maker." (Psa 95:6)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r5">
+    <td>5</td><td>נִבְרְכָה</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a5">
+    <td colspan="8">✗ <strong>No — Qal</strong> | Cohortative | 1cp | ברך | <em>Qal</em> "let us kneel/bless" — נִ- is the 1cp cohortative prefix (נ + shewa), NOT a Hithpael or Niphal marker. Qal of ברך here = "to kneel" (cf. בֶּרֶךְ = knee). No הִתְ infix. No dagesh forte in R2.</td>
+  </tr>
+</table>
+
+<h2>Passage B — Genesis 35:7 · 1 Samuel 10:6, 11</h2>
+<h3>Context: Jacob at Bethel; Saul's prophetic transformation.</h3>
+
+<div class="note-box"><strong>Distractor alert — Niphal:</strong> Genesis 35:7 has a Niphal perfect, not Hithpael. Both can express reflexive/middle meaning — but the prefix is completely different.</div>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיִּבֶן֩ שָׁ֨ם מִזְבֵּ֜חַ וַיִּקְרָ֧א לַמָּק֛וֹם אֵ֥ל בֵּֽית־אֵ֖ל כִּ֣י שָׁ֣ם <strong>נִגְלֽוּ [6]</strong>־אֵלָ֑יו הָאֱלֹהִ֗ים בְּבָרְח֛וֹ מִפְּנֵ֥י אָחִֽיו׃</div>
+<p class="translation">"And there he built an altar and called the place El-bethel, because there God had revealed himself [6] to him when he fled from his brother." (Gen 35:7)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r6">
+    <td>6</td><td>נִגְלוּ</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a6">
+    <td colspan="8">✗ <strong>No — Niphal</strong> | Perfect | 3cp | גלה | <em>Niphal — Reflexive/Passive</em> "revealed themselves / were revealed" — נִ- prefix = Niphal, NOT Hithpael הִתְ-. Note: a Hithpael of גלה would be הִתְגַּלָּה (3ms) — the forms look completely different. III-ה Niphal perfect 3cp: נִגְלוּ (ה drops before 3cp suffix).</td>
+  </tr>
+</table>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְצָלְחָ֨ה עָלֶ֜יךָ ר֣וּחַ יְהוָ֗ה <strong>וְהִתְנַבִּ֙יתָ֙ [7]</strong> עִמָּ֔ם וְנֶהְפַּכְתָּ֖ לְאִ֥ישׁ אַחֵֽר׃</div>
+<p class="translation">"Then the Spirit of the LORD will rush upon you, and you will prophesy [7] with them and be turned into another man." (1 Sam 10:6)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r7">
+    <td>7</td><td>וְהִתְנַבִּיתָ</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a7">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Weqatal | 2ms | נבא | <em>Denominative/Iterative</em> "you will prophesy" — I-נ root: נ does NOT assimilate in Hithpael (contrast Niphal where נ of root follows נִ prefix). הִתְ- + נַ + בִּי + 2ms suffix תָ. III-א: א quiesces; hireq-yod before suffix. Weqatal = consequence of the Spirit's coming.</td>
+  </tr>
+</table>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיִּתְנַבְּאוּ [8]</strong> עַד בּ֥וֹא הַמִּנְחָֽה׃</div>
+<p class="translation">"And they prophesied [8] until the offering of the evening sacrifice." (1 Sam 10:11a)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r8">
+    <td>8</td><td>וַיִּתְנַבְּאוּ</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a8">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Wayyiqtol | 3mp | נבא | <em>Denominative/Iterative</em> "and they prophesied" — Wayyiqtol: וַיִּתְ- prefix (Hithpael Wayyiqtol) + נַבְּאוּ; I-נ (no assimilation); III-א with 3mp suffix וּ (א quiesces). Same root as #7 — weqatal perfect 2ms vs. wayyiqtol 3mp.</td>
+  </tr>
+</table>
+
+<h2>Passage C — Genesis 44:16 · 2 Kings 8:29</h2>
+<h3>Context: Judah's plea before Joseph; Joram's return for healing.</h3>
+
+<div class="note-box"><strong>Metathesis focus:</strong> Verb 9 shows I-צ metathesis — one of the rarest but most diagnostic weak-Hithpael patterns in the OT.</div>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֹּ֣אמֶר יְהוּדָ֗ה מַה־נֹּאמַ֤ר לַֽאדֹנִי֙ מַה־נְּדַבֵּ֔ר וּמַ֖ה <strong>נִּצְטַדָּ֑ק [9]</strong> הָאֱלֹהִ֗ים מָצָ֛א אֶת־עֲוֺ֥ן עֲבָדֶ֖יךָ</div>
+<p class="translation">"And Judah said, 'What shall we say to my lord? What shall we speak? How can we justify ourselves [9]? God has found out the iniquity of your servants.'" (Gen 44:16)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r9">
+    <td>9</td><td>נִצְטַדָּק</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a9">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperfect | 1cp | צדק | <em>Reflexive/Estimative</em> "how can we justify ourselves?" — I-צ metathesis: expected הִתְצַדֵּק → ת and צ swap → הִצְתַּדֵּק → ת voices to ט → הִצְטַדֵּק; with 1cp prefix נ: נִצְטַדָּק. Qamets under R2 (דָּ) = pause/long form. One of only a handful of I-צ Hithpael forms in the OT.</td>
+  </tr>
+</table>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיָּ֣שָׁב יֹורָ֣ם הַמֶּ֗לֶךְ <strong>לְהִתְרַפֵּ֥א [10]</strong> בְיִזְרְעֶ֖אל מִן־הַמַּכִּ֑ים</div>
+<p class="translation">"And King Joram returned to be healed [10] in Jezreel from the wounds…" (2 Kgs 8:29)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r10">
+    <td>10</td><td>לְהִתְרַפֵּא</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a10">
+    <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Inf. Construct | — | רפא | <em>Reflexive</em> "to be healed / to seek healing" — הִתְ- prefix + רַפֵּא; III-א root: א quiesces at end. Lamed-preposition לְ marks infinitive construct. Compare Piel רִפֵּא (to heal someone else) vs. Hithpael הִתְרַפֵּא (to heal oneself / be healed — reflexive or tolerative).</td>
+  </tr>
+</table>
+
+<div class="note-box"><strong>Distractor alert — Hophal:</strong> The next verb begins with הוּ- (u-class vowel after הּ). This is the Hophal prefix, NOT the Hithpael הִתְ- prefix.</div>
+
+<div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיְהִ֗י כִּשְׁמֹ֤עַ אֱלִישָׁע֙ כִּי <strong>הוּשַׁ֥ב [11]</strong> הַמֶּ֖לֶךְ</div>
+<p class="translation">"And when Elisha heard that the king had returned [11]…" (2 Kgs 8:29b)</p>
+
+<table>
+  <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
+  <tr id="r11">
+    <td>11</td><td>הוּשַׁב</td>
+    <td><input class="parse-field" placeholder="Yes / No"></td>
+    <td><input class="parse-field" placeholder="conjugation"></td>
+    <td><input class="parse-field" placeholder="PGN"></td>
+    <td><input class="parse-field" placeholder="root"></td>
+    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a11">
+    <td colspan="8">✗ <strong>No — Hophal</strong> | Perfect | 3ms | שוב | <em>Hophal — Passive</em> "was returned / had returned" — הוּ- prefix (u-class vowel = Hophal) + שַׁב; biconsonantal root שׁוּב. No תְ after הּ. Compare: Hithpael of שׁוּב would be הִתְשׁוֹבֵב (not common); Hophal הוּשַׁב = was caused to return.</td>
+  </tr>
+</table>
+
+<div class="reflection">
+  <strong>Reflection Questions</strong>
+  <ol>
+    <li>Verbs 2–4 all come from the root שׁחה (III-ה, with I-שׁ metathesis). In each form, identify: (a) where the metathesis appears, (b) what happened to the III-ה ending. How do the endings differ between perfect, imperfect, and cohortative?</li>
+    <li>Verb 9 (נִצְטַדָּק) shows I-צ metathesis. Write out the expected form before metathesis, then explain the phonological rule: why does the ת of הִתְ swap with the initial צ of the root, and why does ת become ט?</li>
+    <li>Compare verbs 7 and 8 (וְהִתְנַבִּיתָ and וַיִּתְנַבְּאוּ), both from נבא (I-נ). In Hithpael, why does the נ of the root <em>not</em> assimilate into the ת of the הִתְ prefix, even though it would assimilate in Niphal? (Hint: in Niphal the root-נ immediately follows the נ of the נִ prefix; in Hithpael, the ת stands between them.)</li>
+  </ol>
+</div>
+
+<div class="answer-key">
+  <h2>Quick Answer Key</h2>
+  <table>
+    <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th></tr>
+    <tr><td>1</td><td>וַיִּשְׁתַּחוּ</td><td>Yes</td><td>Wayyiqtol</td><td>3ms</td><td>שחה</td><td>Hithpael — Reflexive; I-שׁ metathesis; III-ה short form (וּ ending)</td></tr>
+    <tr><td>2</td><td>וְנִשְׁתַּחֲוֶה</td><td>Yes</td><td>Cohortative</td><td>1cp</td><td>שחה</td><td>Hithpael — Reflexive; I-שׁ metathesis, III-ה</td></tr>
+    <tr><td>3</td><td>וַיִּשְׁתַּחוּ</td><td>Yes</td><td>Wayyiqtol</td><td>3ms</td><td>שחה</td><td>Hithpael — Reflexive; I-שׁ metathesis, III-ה</td></tr>
+    <tr><td>4</td><td>תִשְׁתַּחְוֶה</td><td>Yes</td><td>Imperfect</td><td>2ms</td><td>שחה</td><td>Hithpael — Reflexive; I-שׁ metathesis, III-ה</td></tr>
+    <tr><td>5</td><td>נִבְרְכָה</td><td>No</td><td>Cohortative</td><td>1cp</td><td>ברך</td><td>Qal — "let us kneel"</td></tr>
+    <tr><td>6</td><td>נִגְלוּ</td><td>No</td><td>Perfect</td><td>3cp</td><td>גלה</td><td>Niphal — Reflexive/Passive</td></tr>
+    <tr><td>7</td><td>וְהִתְנַבִּיתָ</td><td>Yes</td><td>Weqatal</td><td>2ms</td><td>נבא</td><td>Hithpael — Denominative; I-נ (no assimilation), III-א</td></tr>
+    <tr><td>8</td><td>וַיִּתְנַבְּאוּ</td><td>Yes</td><td>Wayyiqtol</td><td>3mp</td><td>נבא</td><td>Hithpael — Denominative; I-נ (no assimilation), III-א</td></tr>
+    <tr><td>9</td><td>נִצְטַדָּק</td><td>Yes</td><td>Imperfect</td><td>1cp</td><td>צדק</td><td>Hithpael — Reflexive/Estimative; I-צ metathesis</td></tr>
+    <tr><td>10</td><td>לְהִתְרַפֵּא</td><td>Yes</td><td>Inf. Construct</td><td>—</td><td>רפא</td><td>Hithpael — Reflexive/Tolerative; III-א</td></tr>
+    <tr><td>11</td><td>הוּשַׁב</td><td>No</td><td>Perfect</td><td>3ms</td><td>שוב</td><td>Hophal — Passive</td></tr>
+  </table>
+</div>
+
+<script>
+function toggle(answerId, btn) {
+  var row = document.getElementById(answerId);
+  if (row.classList.contains('visible')) {
+    row.classList.remove('visible');
+    btn.textContent = '▶ Answer';
+  } else {
+    row.classList.add('visible');
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.classList.add('visible'); });
+  document.querySelectorAll('.reveal-btn').forEach(function(b) { b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.classList.remove('visible'); });
+  document.querySelectorAll('.reveal-btn').forEach(function(b) { b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+}
+</script>
+</body>
+</html>
