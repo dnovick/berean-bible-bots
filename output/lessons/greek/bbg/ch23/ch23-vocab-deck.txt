@@ -1,0 +1,13 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 23 — Vocabulary
+#tags column:3
+ἀπέρχομαι	verb — I depart — 117×	bbg-ch23-vocab bbg-ch23-verb
+ἄρχομαι	verb — I begin — 86×	bbg-ch23-vocab bbg-ch23-verb
+γράφω	verb — I write — 191×	bbg-ch23-vocab bbg-ch23-verb
+διό	conjunction — therefore, for this reason — 53×	bbg-ch23-vocab bbg-ch23-other
+δοξάζω	verb — I praise, honor, glorify — 61×	bbg-ch23-vocab bbg-ch23-verb
+δύναμις, -εως, ἡ	noun 3rd decl. f — power; miracle — 119×	bbg-ch23-vocab bbg-ch23-noun
+κηρύσσω	verb — I proclaim; preach — 61×	bbg-ch23-vocab bbg-ch23-verb
+πίνω	verb — I drink — 73×	bbg-ch23-vocab bbg-ch23-verb
