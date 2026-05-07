@@ -1,0 +1,12 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 34 — Vocabulary
+#tags column:3
+δίδωμι	verb — I give; entrust — 415×	bbg-ch34-vocab bbg-ch34-verb
+ἔθνος, -ους, τό	noun 3rd decl. n — nation (sg); the Gentiles (pl) — 162×	bbg-ch34-vocab bbg-ch34-noun
+λοιπός, -ή, -όν	adjective / noun / adverb — remaining; (the) rest; for the rest, henceforth — 55×	bbg-ch34-vocab bbg-ch34-adj
+Μωϋσῆς, -έως, ὁ	noun proper (irreg. decl.) — Moses — 80×	bbg-ch34-vocab bbg-ch34-noun
+παραδίδωμι	verb — I deliver, entrust; hand over — 119×	bbg-ch34-vocab bbg-ch34-verb
+πίπτω	verb — I fall — 90×	bbg-ch34-vocab bbg-ch34-verb
+ὑπάρχω	verb — I am; exist — 60×	bbg-ch34-vocab bbg-ch34-verb

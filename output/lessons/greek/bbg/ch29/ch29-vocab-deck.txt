@@ -1,0 +1,10 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 29 — Vocabulary
+#tags column:3
+δέχομαι	verb — I take, receive — 56×	bbg-ch29-vocab bbg-ch29-verb
+δοκέω	verb — I think, seem — 62×	bbg-ch29-vocab bbg-ch29-verb
+ἐσθίω	verb — I eat — 158×	bbg-ch29-vocab bbg-ch29-verb
+πέμπω	verb — I send — 79×	bbg-ch29-vocab bbg-ch29-verb
+φέρω	verb — I carry, bear, produce — 66×	bbg-ch29-vocab bbg-ch29-verb
