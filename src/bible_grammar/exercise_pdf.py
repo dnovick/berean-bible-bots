@@ -10912,6 +10912,79 @@ def build_bba_ch9_pronoun_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+class BbaCh10AdjectiveNumberDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, identify whether it is an adjective or number, '
+            'give the state/value and gender/number, and translate.'
+        )
+        hdrs = ['#', 'Form', 'Adj / Num', 'State / Value', 'G/N', 'Translation']
+        cr = [0.04, 0.22, 0.14, 0.16, 0.10, 0.34]
+        hc = [1]
+        rows = [
+            [1,  'רַב',                   '', '', '', ''],
+            [2,  'שִׁבְעָה יוֹמִין',      '', '', '', ''],
+            [3,  'חֵיוָה אָחֳרִי',        '', '', '', ''],
+            [4,  'צְלֵם חַד',             '', '', '', ''],
+            [5,  'מַלְכָּא רַבָּא',       '', '', '', ''],
+            [6,  'קַדְמָיָא',             '', '', '', ''],
+            [7,  'תְּרֵין שָׁנִין',       '', '', '', ''],
+            [8,  'חַכִּימִין רַבְרְבִין', '', '', '', ''],
+            [9,  'תְּלִיתַי',             '', '', '', ''],
+            [10, 'אֱלָהּ קַדִּישׁ',       '', '', '', ''],
+            [11, 'אַרְבְּעָה חֵיוָן',     '', '', '', ''],
+            [12, 'שַׂגִּיאָה',            '', '', '', ''],
+            [13, 'חֲמֵשׁ מְדִינָן',       '', '', '', ''],
+            [14, 'מַלְכוּ אָחֳרִי',       '', '', '', ''],
+            [15, 'שִׁבְעָה עִדָּנִין',    '', '', '', ''],
+            [16, 'יְקַר עִלָּאָה',        '', '', '', ''],
+            [17, 'תִּנְיָן',              '', '', '', ''],
+            [18, 'תְּמָנֵה גֻּבְרִין',    '', '', '', ''],
+            [19, 'אֱלָה שְׁמַיָּא חַיָּא','', '', '', ''],
+            [20, 'חַד מִן',              '', '', '', ''],
+        ]
+        ans = [
+            [1,  'רַב',                   'adjective',           'absolute',             'ms',      'great, large'],
+            [2,  'שִׁבְעָה יוֹמִין',      'number',              'cardinal 7',           'ms noun', 'seven days'],
+            [3,  'חֵיוָה אָחֳרִי',        'adjective',           'absolute',             'fs',      'another beast'],
+            [4,  'צְלֵם חַד',             'number / indef. art.','cardinal 1',           'ms',      'one statue / a statue'],
+            [5,  'מַלְכָּא רַבָּא',       'adjective',           'determined',           'ms',      'the great king'],
+            [6,  'קַדְמָיָא',             'adjective (ordinal)', 'determined',           'ms',      'the first'],
+            [7,  'תְּרֵין שָׁנִין',       'number',              'cardinal 2',           'fp noun', 'two years'],
+            [8,  'חַכִּימִין רַבְרְבִין', 'adjective',           'absolute',             'mp',      'great/mighty wise men'],
+            [9,  'תְּלִיתַי',             'adjective (ordinal)', 'absolute',             'ms',      'third'],
+            [10, 'אֱלָהּ קַדִּישׁ',       'adjective',           'absolute',             'ms',      'a holy God'],
+            [11, 'אַרְבְּעָה חֵיוָן',     'number',              'cardinal 4',           'fp noun', 'four beasts'],
+            [12, 'שַׂגִּיאָה',            'adjective',           'determined',           'fs',      'the great/much (one)'],
+            [13, 'חֲמֵשׁ מְדִינָן',       'number',              'cardinal 5',           'fp noun', 'five provinces'],
+            [14, 'מַלְכוּ אָחֳרִי',       'adjective',           'absolute',             'fs',      'another kingdom'],
+            [15, 'שִׁבְעָה עִדָּנִין',    'number',              'cardinal 7',           'mp noun', 'seven times / periods'],
+            [16, 'יְקַר עִלָּאָה',        'adjective',           'determined',           'ms',      'the highest honor'],
+            [17, 'תִּנְיָן',              'adjective (ordinal)', 'absolute',             'ms',      'second'],
+            [18, 'תְּמָנֵה גֻּבְרִין',    'number',              'cardinal 8',           'mp noun', 'eight men'],
+            [19, 'אֱלָה שְׁמַיָּא חַיָּא','adjective',           'absolute',             'ms',      'the living God of heaven'],
+            [20, 'חַד מִן',              'number',              'cardinal 1 (partitive)','—',       'one of...'],
+        ]
+        self.add_section_heading('Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, ans, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch10_adjective_number_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch10', 'exercises', 'ch10-adjective-number-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch10-adjective-number-drill.pdf')
+    ex = BbaCh10AdjectiveNumberDrillPDF(
+        title='BBA Chapter 10 — Adjective and Number Drill',
+        subtitle='Adjective States and Agreement · Cardinal and Ordinal Numbers',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -11047,6 +11120,7 @@ if __name__ == '__main__':
         build_bba_ch7_preposition_drill,
         build_bba_ch8_suffix_drill,
         build_bba_ch9_pronoun_drill,
+        build_bba_ch10_adjective_number_drill,
     ]
     for fn in bba_builders:
         try:
