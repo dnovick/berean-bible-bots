@@ -10766,6 +10766,79 @@ def build_bba_ch7_preposition_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+class BbaCh8SuffixDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, identify the base form (noun or preposition), '
+            'the pronominal suffix (person, gender, number), and give the English translation.'
+        )
+        hdrs = ['#', 'Form', 'Base Form', 'Suffix (PGN)', 'Translation']
+        cr = [0.04, 0.18, 0.26, 0.16, 0.36]
+        hc = [1]
+        rows = [
+            [1,  'מַלְכִּי',      '', '', ''],
+            [2,  'אֱלָהֲנָא',    '', '', ''],
+            [3,  'אַבוּהִי',      '', '', ''],
+            [4,  'עַלַיְכוֹן',   '', '', ''],
+            [5,  'בֵּיתֵהּ',      '', '', ''],
+            [6,  'לְמַלְכָּה',   '', '', ''],
+            [7,  'מִנִּי',        '', '', ''],
+            [8,  'עַבְדֵיהוֹן',  '', '', ''],
+            [9,  'אַנְפּוֹהִי',  '', '', ''],
+            [10, 'יְדֵהּ',        '', '', ''],
+            [11, 'עֲלֵיהוֹן',    '', '', ''],
+            [12, 'לְהוֹן',        '', '', ''],
+            [13, 'אֱלָהֵהּ',      '', '', ''],
+            [14, 'מַלְכוּתִי',   '', '', ''],
+            [15, 'עִמֵּהּ',        '', '', ''],
+            [16, 'רֵאשֵׁהּ',      '', '', ''],
+            [17, 'קֳדָמַי',       '', '', ''],
+            [18, 'שְׁמֵהּ',        '', '', ''],
+            [19, 'בָּנַיְכוֹן',  '', '', ''],
+            [20, 'מִנְּהוֹן',     '', '', ''],
+        ]
+        ans = [
+            [1,  'מַלְכִּי',      'מֶלֶךְ (king, ms)',          '1cs',  'my king'],
+            [2,  'אֱלָהֲנָא',    'אֱלָה (God, ms)',             '1cp',  'our God'],
+            [3,  'אַבוּהִי',      'אַב (father, ms)',             '3ms',  'his father'],
+            [4,  'עַלַיְכוֹן',   'עַל (upon, prep)',             '2mp',  'upon you (mp)'],
+            [5,  'בֵּיתֵהּ',      'בַּיִת (house, ms)',           '3ms',  'his house'],
+            [6,  'לְמַלְכָּה',   'לְ- (to/for, prep)',           '3fs',  'to/for her'],
+            [7,  'מִנִּי',        'מִן (from, prep)',             '1cs',  'from me'],
+            [8,  'עַבְדֵיהוֹן',  'עֶבֶד (servant, ms pl)',       '3mp',  'their servants'],
+            [9,  'אַנְפּוֹהִי',  'אַנְפִּין (face, mp)',         '3ms',  'his face'],
+            [10, 'יְדֵהּ',        'יַד (hand, fs)',               '3ms',  'his hand'],
+            [11, 'עֲלֵיהוֹן',    'עַל (upon, prep)',             '3mp',  'upon them'],
+            [12, 'לְהוֹן',        'לְ- (to/for, prep)',           '3mp',  'to/for them'],
+            [13, 'אֱלָהֵהּ',      'אֱלָה (God, ms)',             '3ms',  'his God'],
+            [14, 'מַלְכוּתִי',   'מַלְכוּ (kingdom, fs)',        '1cs',  'my kingdom'],
+            [15, 'עִמֵּהּ',        'עִם (with, prep)',            '3ms',  'with him'],
+            [16, 'רֵאשֵׁהּ',      'רֵאשׁ (head, ms)',            '3ms',  'his head'],
+            [17, 'קֳדָמַי',       'קֳדָם (before, prep)',         '1cs',  'before me'],
+            [18, 'שְׁמֵהּ',        'שֵׁם (name, ms)',             '3ms',  'his name'],
+            [19, 'בָּנַיְכוֹן',  'בַּר (son, pl. בָּנִין)',      '2mp',  'your (mp) sons'],
+            [20, 'מִנְּהוֹן',     'מִן (from, prep)',             '3mp',  'from them'],
+        ]
+        self.add_section_heading('Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, ans, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch8_suffix_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch8', 'exercises', 'ch8-suffix-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch8-suffix-drill.pdf')
+    ex = BbaCh8SuffixDrillPDF(
+        title='BBA Chapter 8 — Suffix Drill',
+        subtitle='Pronominal Suffixes on Nouns and Prepositions',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -10899,6 +10972,7 @@ if __name__ == '__main__':
         build_bba_ch5_determined_state_drill,
         build_bba_ch6_construct_chain_drill,
         build_bba_ch7_preposition_drill,
+        build_bba_ch8_suffix_drill,
     ]
     for fn in bba_builders:
         try:
