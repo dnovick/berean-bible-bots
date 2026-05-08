@@ -11520,6 +11520,90 @@ def build_bba_ch17_peal_participle_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+# BBA Ch18 — Peil and Ithpeel Stem Drill
+
+
+class BbaCh18PassiveStemsDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each numbered verb form drawn from Daniel or Ezra, '
+            'identify the Stem (Peil = simple passive of Peal, or Ithpeel = reflexive/passive of Peal), '
+            'the Conjugation (Perfect / Imperfect / Participle), '
+            'the Root (three root consonants, Peal perfect 3ms form), '
+            'and provide an English translation. '
+            'Peil perfect: hireq-yod on R2 (qetil pattern). '
+            'Ithpeel perfect: hit- or it- prefix. '
+            'Ithpeel imperfect: yit- before R1. '
+            'Ithpeel participle: mit- prefix. '
+            'Metathesis: sibilant R1 switches with taw (histt- / yisht-).'
+        )
+        hdrs = ['#', 'Form', 'Stem', 'Conjugation', 'Root', 'Translation']
+        cr = [0.04, 0.14, 0.10, 0.16, 0.10, 0.46]
+        hc = [1]
+        rows = [
+            [1,  'רְמִי',             '', '', '', ''],
+            [2,  'אִתְכְּנִישׁ',      '', '', '', ''],
+            [3,  'יִתְנְסַח',         '', '', '', ''],
+            [4,  'שְׁבִיק',           '', '', '', ''],
+            [5,  'הִשְׁתְּכַח',       '', '', '', ''],
+            [6,  'כְּתִיב',           '', '', '', ''],
+            [7,  'יִתְבְּנֵא',        '', '', '', ''],
+            [8,  'חֲבִיל',            '', '', '', ''],
+            [9,  'הִשְׁתַּנִּי',      '', '', '', ''],
+            [10, 'אִתְמְלִי',         '', '', '', ''],
+            [11, 'יִשְׁתַּנֵּא',      '', '', '', ''],
+            [12, 'סְגִיד',            '', '', '', ''],
+            [13, 'מִתְכַּנְּשִׁין',   '', '', '', ''],
+            [14, 'יִתְמְחֵא',         '', '', '', ''],
+            [15, 'קְטִילוּ',          '', '', '', ''],
+            [16, 'אִתְקְטִלְנָא',     '', '', '', ''],
+            [17, 'יִתְּבְנֵא',        '', '', '', ''],
+            [18, 'הִתְחַסְּנַת',      '', '', '', ''],
+            [19, 'יִתְחַסְּנוּן',     '', '', '', ''],
+            [20, 'הִשְׁתְּכַחַת',     '', '', '', ''],
+        ]
+        ans = [
+            [1,  'רְמִי',             'Peil',     'Perfect 3ms',    'רמה',  'he was thrown / was cast (III-he)'],
+            [2,  'אִתְכְּנִישׁ',      'Ithpeel',  'Perfect 3ms',    'כנשׁ', 'he was gathered / gathered together'],
+            [3,  'יִתְנְסַח',         'Ithpeel',  'Imperfect 3ms',  'נסח',  'it will be torn out / uprooted'],
+            [4,  'שְׁבִיק',           'Peil',     'Perfect 3ms',    'שׁבק', 'it was left / abandoned'],
+            [5,  'הִשְׁתְּכַח',       'Hithpeel', 'Perfect 3ms',    'שׁכח', 'it was found (metathesis: shin+taw swap)'],
+            [6,  'כְּתִיב',           'Peil',     'Perf 3ms / ptcp', 'כתב', 'it is written / was written'],
+            [7,  'יִתְבְּנֵא',        'Ithpeel',  'Imperfect 3ms',  'בנה',  'it will be built (III-he: -ea ending)'],
+            [8,  'חֲבִיל',            'Peil',     'Perfect 3ms',    'חבל',  'it was destroyed / ruined (guttural R1)'],
+            [9,  'הִשְׁתַּנִּי',      'Hithpeel', 'Perfect 3ms',    'שׁנה', 'it was changed (metathesis + III-he)'],
+            [10, 'אִתְמְלִי',         'Ithpeel',  'Perfect 3ms',    'מלא',  'it was filled (III-aleph root)'],
+            [11, 'יִשְׁתַּנֵּא',      'Ithpeel',  'Imperfect 3ms',  'שׁנה', 'it will be changed (metathesis)'],
+            [12, 'סְגִיד',            'Peil',     'Perfect 3ms',    'סגד',  'he was worshiped / bowed down to'],
+            [13, 'מִתְכַּנְּשִׁין',   'Ithpeel',  'Participle mp',  'כנשׁ', 'being gathered / gathering (mp)'],
+            [14, 'יִתְמְחֵא',         'Ithpeel',  'Imperfect 3ms',  'מחא',  'it will be struck / smitten'],
+            [15, 'קְטִילוּ',          'Peil',     'Perfect 3mp',    'קטל',  'they were killed'],
+            [16, 'אִתְקְטִלְנָא',     'Ithpeel',  'Perfect 1cp',    'קטל',  'we were killed / killed ourselves'],
+            [17, 'יִתְּבְנֵא',        'Ithpeel',  'Imperfect 3ms',  'בנה',  'it will be built (variant spelling)'],
+            [18, 'הִתְחַסְּנַת',      'Hithpeel', 'Perfect 3fs',    'חסן',  'she/it was strengthened / prevailed'],
+            [19, 'יִתְחַסְּנוּן',     'Ithpeel',  'Imperfect 3mp',  'חסן',  'they will be strengthened / prevail'],
+            [20, 'הִשְׁתְּכַחַת',     'Hithpeel', 'Perfect 2ms',    'שׁכח', 'you were found deficient (Dan. 5:27)'],
+        ]
+        self.add_section_heading('Peil and Ithpeel Stem Drill — Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, ans, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch18_passive_stems_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch18', 'exercises', 'ch18-passive-stems-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch18-passive-stems-drill.pdf')
+    ex = BbaCh18PassiveStemsDrillPDF(
+        title='BBA Chapter 18 — Peil and Ithpeel Stem Drill',
+        subtitle='Peil (Simple Passive) and Hithpeel/Ithpeel (Reflexive/Passive) · Daniel and Ezra',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -11663,6 +11747,7 @@ if __name__ == '__main__':
         build_bba_ch15_peal_imperative_drill,
         build_bba_ch16_peal_infinitive_drill,
         build_bba_ch17_peal_participle_drill,
+        build_bba_ch18_passive_stems_drill,
     ]
     for fn in bba_builders:
         try:
