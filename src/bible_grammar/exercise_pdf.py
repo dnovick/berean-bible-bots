@@ -10693,6 +10693,79 @@ def build_bba_ch6_construct_chain_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+class BbaCh7PrepositionDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Aramaic phrase, identify the preposition or conjunction, give its gloss, '
+            'identify the noun state, and translate the phrase.'
+        )
+        hdrs = ['#', 'Aramaic Phrase', 'Prep / Conj', 'Gloss', 'Noun State', 'Translation']
+        cr = [0.04, 0.22, 0.14, 0.16, 0.14, 0.30]
+        hc = [1]
+        rows = [
+            [1,  'קֳדָם מַלְכָּא',   '', '', '', ''],
+            [2,  'מִן שְׁמַיָּא',    '', '', '', ''],
+            [3,  'לְאַרְעָא',        '', '', '', ''],
+            [4,  'בְּמַלְכוּתָא',   '', '', '', ''],
+            [5,  'עַד עָלְמָא',      '', '', '', ''],
+            [6,  'עַל אַנְפּוֹהִי', '', '', '', ''],
+            [7,  'כְּאַבְנָא',       '', '', '', ''],
+            [8,  'לָהֵן מַלְכָּא',  '', '', '', ''],
+            [9,  'הֵן אִיתֵיכוֹן',  '', '', '', ''],
+            [10, 'אַחֲרֵי דְנָה',   '', '', '', ''],
+            [11, 'מִן גֻּבָּא',      '', '', '', ''],
+            [12, 'בְּאַרְעָא',       '', '', '', ''],
+            [13, 'כָּל-קֳבֵל דִּי', '', '', '', ''],
+            [14, 'אַף אֲנָה',        '', '', '', ''],
+            [15, 'עִם חַכִּימֵי',   '', '', '', ''],
+            [16, 'לְמַלְכָּא',       '', '', '', ''],
+            [17, 'עַד דִּי עָל',     '', '', '', ''],
+            [18, 'אֲרוּ צְלֵם',      '', '', '', ''],
+            [19, 'מִבָּבֶל',         '', '', '', ''],
+            [20, 'בְּמַלְכוּ',       '', '', '', ''],
+        ]
+        ans = [
+            [1,  'קֳדָם מַלְכָּא',   'קֳדָם',            'before, in the presence of', 'det. ms.',               'before the king'],
+            [2,  'מִן שְׁמַיָּא',    'מִן',              'from',                       'det. mp.',               'from the heavens'],
+            [3,  'לְאַרְעָא',        'לְ-',              'to, for',                    'det. fs.',               'to the earth'],
+            [4,  'בְּמַלְכוּתָא',   'בְּ-',             'in, with, by',               'det. fs.',               'in the kingdom'],
+            [5,  'עַד עָלְמָא',      'עַד',              'until, unto',                'det. ms.',               'unto eternity / forever'],
+            [6,  'עַל אַנְפּוֹהִי', 'עַל',              'upon, on',                   'det. + 3ms suffix',      'upon his face'],
+            [7,  'כְּאַבְנָא',       'כְּ-',             'as, like',                   'abs. ms.',               'like a stone'],
+            [8,  'לָהֵן מַלְכָּא',  'לָהֵן',            'therefore, but',             '— (introduces address)', 'therefore, O king'],
+            [9,  'הֵן אִיתֵיכוֹן',  'הֵן',              'if, whether',                '— (introduces clause)',  'if you are (ready)'],
+            [10, 'אַחֲרֵי דְנָה',   'אַחֲרֵי',          'after, behind',              'dem. pronoun',           'after this'],
+            [11, 'מִן גֻּבָּא',      'מִן',              'from, out of',               'det. ms.',               'out of the pit'],
+            [12, 'בְּאַרְעָא',       'בְּ-',             'in, on',                     'det. fs.',               'in/on the earth'],
+            [13, 'כָּל-קֳבֵל דִּי', 'כָּל-קֳבֵל דִּי',  'because, inasmuch as',       '— (introduces clause)',  'because / inasmuch as'],
+            [14, 'אַף אֲנָה',        'אַף',              'also, even',                 '— (pronoun)',            'even I / I also'],
+            [15, 'עִם חַכִּימֵי',   'עִם',              'with',                       'mp. cstr.',              'with the wise men of...'],
+            [16, 'לְמַלְכָּא',       'לְ-',              'to, for',                    'det. ms.',               'to the king'],
+            [17, 'עַד דִּי עָל',     'עַד דִּי',         'until (that)',               '— (introduces clause)',  'until he entered'],
+            [18, 'אֲרוּ צְלֵם',      'אֲרוּ',            'behold, lo',                 'abs. ms.',               'behold, a statue'],
+            [19, 'מִבָּבֶל',         'מִ- (מִן prefixed)', 'from',                     'proper noun',            'from Babylon'],
+            [20, 'בְּמַלְכוּ',       'בְּ-',             'in',                         'abs. fs.',               'in a kingdom'],
+        ]
+        self.add_section_heading('Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, ans, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch7_preposition_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch7', 'exercises', 'ch7-preposition-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch7-preposition-drill.pdf')
+    ex = BbaCh7PrepositionDrillPDF(
+        title='BBA Chapter 7 — Preposition Drill',
+        subtitle='Conjunctions and Prepositions · Identification and Translation',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -10825,6 +10898,7 @@ if __name__ == '__main__':
         build_bba_ch4_noun_identification,
         build_bba_ch5_determined_state_drill,
         build_bba_ch6_construct_chain_drill,
+        build_bba_ch7_preposition_drill,
     ]
     for fn in bba_builders:
         try:
