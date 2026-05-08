@@ -8042,10 +8042,8 @@ class BbgCh7GenDatParsingPDF(GreekExercisePDF):
             ['19', 'τοῦ ἱεροῦ',      'G', 'S', 'N', 'ἱερόν',        '"of the temple"'],
             ['20', 'τοῖς ἀδελφοῖς',  'D', 'P', 'M', 'ἀδελφός',      '"to/for the brothers"'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch7_gen_dat_parsing(out_dir: str = None) -> str:
@@ -8117,10 +8115,8 @@ class BbgCh8PrepositionParsingPDF(GreekExercisePDF):
             ['19', 'ἀντὶ πολλῶν',         'ἀντί', 'Gen', '"in place of / for many"'],
             ['20', 'ἐν ἀρχῇ',             'ἐν',   'Dat', '"in [the] beginning"'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch8_preposition_parsing(out_dir: str = None) -> str:
@@ -8191,10 +8187,8 @@ class BbgCh9AdjectiveParsingPDF(GreekExercisePDF):
             ['19', 'τῶν πιστῶν ἔργων',      'G', 'P', 'N', 'Attributive'],
             ['20', 'ὁ νόμος ἅγιος',         'N', 'S', 'M', 'Predicate ("the law is holy")'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch9_adjective_parsing(out_dir: str = None) -> str:
@@ -8265,10 +8259,8 @@ class BbgCh10ThirdDeclParsingPDF(GreekExercisePDF):
             ['19', 'πόλεις',        'N/A',   'P', 'F', 'πόλις',  '"cities"'],
             ['20', 'τὴν χάριτα',    'A',     'S', 'F', 'χάρις',  '"grace" (direct object)'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch10_third_decl_parsing(out_dir: str = None) -> str:
@@ -8329,10 +8321,8 @@ class BbgCh11PronounParsingPDF(GreekExercisePDF):
             ['19', 'ἡμῶν', '1st', 'Gen', 'Pl', '"our / of us"'],
             ['20', 'ἐμοί', '1st', 'Dat', 'Sg', '"to/for me" (emphatic)'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch11_pronoun_parsing(out_dir: str = None) -> str:
@@ -8404,10 +8394,8 @@ class BbgCh12AutosParsingPDF(GreekExercisePDF):
             ['19', 'τοῖς αὐτοῖς ἀδελφοῖς',   'D', 'P', 'M', 'SAME — "to the same brothers"'],
             ['20', 'πιστεύει εἰς αὐτήν',      'A', 'S', 'F', 'PP — "he believes in her/it"'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch12_autos_parsing(out_dir: str = None) -> str:
@@ -8478,10 +8466,8 @@ class BbgCh13DemonstrativeParsingPDF(GreekExercisePDF):
             ['19', 'τούτοις', 'τοῖς νόμοις τούτοις',     'M/N','D','P', 'οὗτος',   'A'],
             ['20', 'ἐκείνοις','ἐκείνοις τοῖς ἀνθρώποις', 'M/N','D','P', 'ἐκεῖνος', 'A'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch13_demonstrative_parsing(out_dir: str = None) -> str:
@@ -8553,10 +8539,8 @@ class BbgCh14RelativeParsingPDF(GreekExercisePDF):
             ['19', 'ὃ ποιεῖς, ποίησον τάχιον',      'N', 'A', 'S', '(none)',      '"What you do, do quickly" (John 13:27)'],
             ['20', 'ἡ ἀλήθεια ἣν ἀκούετε',         'F', 'A', 'S', 'ἡ ἀλήθεια',  '"the truth that you hear"'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch14_relative_parsing(out_dir: str = None) -> str:
@@ -8617,10 +8601,8 @@ class BbgCh16PresentActiveParsingPDF(GreekExercisePDF):
             ['19', 'πέμπω',      '1st', 'Sg', 'πέμπω',     'I am sending'],
             ['20', 'σῴζει',      '3rd', 'Sg', 'σῴζω',      'He/she saves'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch16_present_active_parsing(out_dir: str = None) -> str:
@@ -8681,10 +8663,8 @@ class BbgCh17ContractVerbParsingPDF(GreekExercisePDF):
             ['19', 'ζητεῖτε',   '2nd', 'Pl', 'ζητέω',  'ε+ε→ει', 'You (pl.) seek'],
             ['20', 'τιμῶ',      '1st', 'Sg', 'τιμάω',  'α+ω→ω',  'I honor'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch17_contract_verb_parsing(out_dir: str = None) -> str:
@@ -8755,10 +8735,8 @@ class BbgCh18MiddlePassiveParsingPDF(GreekExercisePDF):
             ['19', 'λύεται',      '(no agent)',        '3rd', 'Sg', 'λύω',          'Mid/Pass', 'He loosens/is being loosed'],
             ['20', 'ἀσπάζονται',  '(they greet)',      '3rd', 'Pl', 'ἀσπάζομαι',    'Deponent', 'They greet'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=[1, 2], show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=[1, 2], show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=[1, 2],
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch18_middle_passive_parsing(out_dir: str = None) -> str:
@@ -8819,10 +8797,8 @@ class BbgCh19FutureParsingPDF(GreekExercisePDF):
             ['19', 'λύσονται',   'Fut', 'Mid', '3rd', 'Pl', 'λύω',      'They will loose (for themselves)'],
             ['20', 'ὄψομαι',     'Fut', 'Mid', '1st', 'Sg', 'ὁράω',     'I will see (deponent)'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch19_future_parsing(out_dir: str = None) -> str:
@@ -8882,10 +8858,8 @@ class BbgCh20StemChangeDrillPDF(GreekExercisePDF):
             ['19', 'φέρω',    'φερ-/οἰ-/ἐνεγκ-', '4', 'Suppletive',               'οἴσω'],
             ['20', 'λέγω',    'λεγ-/ἐρ-/εἰπ-',  '4', 'Suppletive',                'ἐρῶ (liquid fut.)'],
         ]
-        self.add_section_heading('Drill Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Drill Table', use_greek=True)
 
 
 def build_bbg_ch20_stem_change_drill(out_dir: str = None) -> str:
@@ -8945,10 +8919,8 @@ class BbgCh21ImperfectParsingPDF(GreekExercisePDF):
             ['19', 'ἐξέβαλλον',   'Act',      '1/3rd','Sg/Pl','Syllabic (after ἐκ-)','ἐκβάλλω','They were casting out'],
             ['20', 'προσήρχοντο', 'Mid/Pass', '3rd',  'Pl',  'Temporal (after πρός-)','προσέρχομαι','They were coming to'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch21_imperfect_parsing(out_dir: str = None) -> str:
@@ -9009,10 +8981,8 @@ class BbgCh22SecondAoristParsingPDF(GreekExercisePDF):
             ['19', 'ἔσχον',     'Aor 2nd', 'Act', '1/3rd', 'Sg/Pl','ἔχω',      'They had'],
             ['20', 'ἔπιον',     'Aor 2nd', 'Act', '1/3rd', 'Sg/Pl','πίνω',     'They drank'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch22_second_aorist_parsing(out_dir: str = None) -> str:
@@ -9073,10 +9043,8 @@ class BbgCh23FirstAoristParsingPDF(GreekExercisePDF):
             ['19', 'ἐλύσατο',     'Aor 1st', 'Mid', '3rd', 'Sg', 'λύω',         'He loosed for himself'],
             ['20', 'ἦλθεν',       'Aor 2nd', 'Act', '3rd', 'Sg', 'ἔρχομαι',     'DISTRACTOR — suppletive 2nd aorist'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch23_first_aorist_parsing(out_dir: str = None) -> str:
@@ -9137,10 +9105,8 @@ class BbgCh24AoristFuturePassiveParsingPDF(GreekExercisePDF):
             ['19', 'ἔλυσεν',      'Aor', 'Act',  '3rd', 'Sg', 'λύω',          'DISTRACTOR — 1st aorist active'],
             ['20', 'ἐλύσατο',     'Aor', 'Mid',  '3rd', 'Sg', 'λύω',          'DISTRACTOR — 1st aorist middle'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch24_aorist_future_passive_parsing(out_dir: str = None) -> str:
@@ -9201,10 +9167,8 @@ class BbgCh25PerfectParsingPDF(GreekExercisePDF):
             ['19', 'ἔλυσεν',    'Aor',  'Act',      '3rd', 'Sg', 'ε- (augment)', 'λύω',     'DISTRACTOR — aorist, not perfect'],
             ['20', 'ἔγραψεν',   'Aor',  'Act',      '3rd', 'Sg', 'ε- (augment)', 'γράφω',   'DISTRACTOR — aorist, not perfect'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch25_perfect_parsing(out_dir: str = None) -> str:
@@ -9265,10 +9229,8 @@ class BbgCh27PresentParticipleParsingPDF(GreekExercisePDF):
             ['14', 'ἀγαπῶντες',     'Pres', 'Act',      'Nom', 'Pl', 'Masc', 'ἀγαπάω',      'Substantival', 'Blessed are those who love the Lord.'],
             ['15', 'ὤν',            'Pres', 'Act',      'Nom', 'Sg', 'Masc', 'εἰμί',        'Substantival', 'The one in the bosom of the Father has explained him.'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch27_present_participle_parsing(out_dir: str = None) -> str:
@@ -9329,10 +9291,8 @@ class BbgCh28AoristParticipleParsingPDF(GreekExercisePDF):
             ['14', 'βαπτισθεῖσιν',   'Aor', 'Pass', 'Dat', 'Pl', 'Masc', 'βαπτίζω',       '1st', 'Substantival', 'Joy was given to those who had been baptized.'],
             ['15', 'λαβόντες',       'Aor', 'Act',  'Nom', 'Pl', 'Masc', 'λαμβάνω',       '2nd', 'Substantival', 'All those who had taken the authority rejoiced.'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch28_aorist_participle_parsing(out_dir: str = None) -> str:
@@ -9394,10 +9354,8 @@ class BbgCh29AdjectivalParticipleParsingPDF(GreekExercisePDF):
             ['14', 'ἐρχόμενον',   'Pres', 'Mid',      'Acc', 'Sg', 'Masc', 'ἔρχομαι', 'Substantival', '—', 'He saw the one coming to him.'],
             ['15', 'σῳζομένοις',  'Pres', 'Mid/Pass', 'Dat', 'Pl', 'Masc', 'σῴζω',    'Substantival', '—', 'I send this one to those who are being saved.'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch29_adjectival_participle_parsing(out_dir: str = None) -> str:
@@ -9446,11 +9404,6 @@ class BbgCh30PerfectParticipleGenAbsPDF(GreekExercisePDF):
             ['7', 'πεπιστευμένοις','Perf','Mid/Pass',  'Dat', 'Pl', 'Masc', 'πιστεύω', 'To those who have been entrusted with the truth.'],
             ['8', 'γεγραμμέναι',  'Perf', 'Mid/Pass',  'Nom', 'Pl', 'Fem',  'γράφω',   'The commandments that were written.'],
         ]
-        self.add_section_heading('Part A — Perfect Participles')
-        self.add_greek_table(hdrs_a, rows_a, cr_a, greek_cols=gk_a, show_answers=False)
-        self.add_section_heading('Part A — Answer Key')
-        self.add_greek_table(hdrs_a, rows_a, cr_a, greek_cols=gk_a, show_answers=True, answer_rows=ans_a)
-
         # Part B
         hdrs_b = ['#', 'Gen. Noun', 'Gen. Ptc.', 'Ptc Tense', 'Voice', 'Case', 'Num', 'Lexical', 'Translation']
         cr_b = [0.03, 0.11, 0.13, 0.08, 0.07, 0.05, 0.05, 0.13, 0.35]
@@ -9473,10 +9426,10 @@ class BbgCh30PerfectParticipleGenAbsPDF(GreekExercisePDF):
             ['14', 'Ἡρῴδου','τεθνηκότος',   'Perf', 'Act', 'Gen', 'Sg', 'θνῄσκω',       'After Herod had died, an angel appeared in a dream to Joseph.'],
             ['15', 'αὐτοῦ', 'ὄντος',        'Pres', 'Act', 'Gen', 'Sg', 'εἰμί',         'While he was in Bethlehem, Magi came from the east.'],
         ]
-        self.add_section_heading('Part B — Genitive Absolutes')
-        self.add_greek_table(hdrs_b, rows_b, cr_b, greek_cols=gk_b, show_answers=False)
-        self.add_section_heading('Part B — Answer Key')
-        self.add_greek_table(hdrs_b, rows_b, cr_b, greek_cols=gk_b, show_answers=True, answer_rows=ans_b)
+        self.add_multi_part_drill([
+            {'title': 'Part A — Perfect Participles',  'headers': hdrs_a, 'rows': rows_a, 'answers': ans_a, 'col_ratios': cr_a, 'greek_cols': gk_a},
+            {'title': 'Part B — Genitive Absolutes',   'headers': hdrs_b, 'rows': rows_b, 'answers': ans_b, 'col_ratios': cr_b, 'greek_cols': gk_b},
+        ], use_greek=True)
 
 
 def build_bbg_ch30_perfect_participle_genabs(out_dir: str = None) -> str:
@@ -9548,10 +9501,8 @@ class BbgCh31SubjunctiveParsingPDF(GreekExercisePDF):
             ['19', 'εἰσέλθητε',   'Aor', 'Act',  '2nd', 'Pl', 'Subj', 'εἰσέρχομαι', 'Emphatic denial (οὐ μή)','You will certainly not enter the kingdom of heaven.'],
             ['20', 'παρέλθῃ',     'Aor', 'Act',  '3rd', 'Sg', 'Subj', 'παρέρχομαι', 'Emphatic denial (οὐ μή)','This generation will absolutely not pass away.'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch31_subjunctive_parsing(out_dir: str = None) -> str:
@@ -9623,10 +9574,8 @@ class BbgCh32InfinitiveParsingPDF(GreekExercisePDF):
             ['19', 'σπείρειν',    'Pres', 'Act',  'σπείρω',       'Temporal (ἐν τῷ)',           'While he was sowing, some seed fell along the path.'],
             ['20', 'κατεβαίνειν', 'Pres', 'Act',  'καταβαίνω',    'Temporal (ἐν τῷ)',           'As he was going down to Jericho, blind men were sitting there.'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch32_infinitive_parsing(out_dir: str = None) -> str:
@@ -9698,10 +9647,8 @@ class BbgCh33ImperativeParsingPDF(GreekExercisePDF):
             ['19', 'ἔστω',        'Pres', 'Act',  '3rd', 'Sg', 'εἰμί',      'Ongoing', 'But let your yes be yes.'],
             ['20', 'ἴσθι',        'Pres', 'Act',  '2nd', 'Sg', 'εἰμί',      'Ongoing', 'Be strengthened in grace.'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch33_imperative_parsing(out_dir: str = None) -> str:
@@ -9772,10 +9719,8 @@ class BbgCh34DidomiParsingPDF(GreekExercisePDF):
             ['19', 'δίδοταί',    'Pres', 'Pass', '3rd', 'Sg', 'δίδωμι',      'Everything that is given to me by my Father.'],
             ['20', 'παραδίδοται','Pres', 'Pass', '3rd', 'Sg', 'παραδίδωμι',  'What is being handed over to you? What authority do you have?'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch34_didomi_parsing(out_dir: str = None) -> str:
@@ -9840,11 +9785,6 @@ class BbgCh35ConditionalsdrillPDF(GreekExercisePDF):
             ['15', 'πάσχοιτε',   '4', 'Pres', 'Act', 'Opt', '2pl', '—',  'πάσχω',     'But even if you should suffer for righteousness, you are blessed.'],
             ['16', 'γένησθε',    '3', 'Aor',  'Mid', 'Subj','2pl', '—',  'γίνομαι',   'Who will harm you if you are zealous for what is good?'],
         ]
-        self.add_section_heading('Part A — Conditional Sentences')
-        self.add_greek_table(hdrs_a, rows_a, cr_a, greek_cols=gk_a, show_answers=False)
-        self.add_section_heading('Part A — Answer Key')
-        self.add_greek_table(hdrs_a, rows_a, cr_a, greek_cols=gk_a, show_answers=True, answer_rows=ans_a)
-
         # Part B
         hdrs_b = ['#', 'Form', 'Tense', 'Voice', 'Person/Case', 'Number/Gender', 'Mood/Type', 'Lexical', 'Translation']
         cr_b = [0.03, 0.10, 0.07, 0.07, 0.10, 0.12, 0.10, 0.11, 0.30]
@@ -9861,10 +9801,10 @@ class BbgCh35ConditionalsdrillPDF(GreekExercisePDF):
             ['19', 'διδόναι', 'Pres','Act', '—',   '—',  'Infinitive', 'δίδωμι', 'God has authority to give it.'],
             ['20', 'δούς',    'Aor', 'Act', 'Nom', 'Sg Masc','Participle','δίδωμι','The one who gave authority to the people.'],
         ]
-        self.add_section_heading('Part B — δίδωμι Non-Indicative')
-        self.add_greek_table(hdrs_b, rows_b, cr_b, greek_cols=gk_b, show_answers=False)
-        self.add_section_heading('Part B — Answer Key')
-        self.add_greek_table(hdrs_b, rows_b, cr_b, greek_cols=gk_b, show_answers=True, answer_rows=ans_b)
+        self.add_multi_part_drill([
+            {'title': 'Part A — Conditional Sentences',    'headers': hdrs_a, 'rows': rows_a, 'answers': ans_a, 'col_ratios': cr_a, 'greek_cols': gk_a},
+            {'title': 'Part B — δίδωμι Non-Indicative',   'headers': hdrs_b, 'rows': rows_b, 'answers': ans_b, 'col_ratios': cr_b, 'greek_cols': gk_b},
+        ], use_greek=True)
 
 
 def build_bbg_ch35_conditionals_drill(out_dir: str = None) -> str:
@@ -9936,10 +9876,8 @@ class BbgCh36MiVerbsParsingPDF(GreekExercisePDF):
             ['19', 'οἶδα',       'Perf',   'Act',  '1st', 'Sg', 'Ind',  'οἶδα',     '—', 'I know that the Messiah is coming.'],
             ['20', 'οἴδαμεν',    'Perf',   'Act',  '1st', 'Pl', 'Ind',  'οἶδα',     '—', 'We know that the Son of God has come.'],
         ]
-        self.add_section_heading('Parsing Table')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False)
-        self.add_section_heading('Answer Key')
-        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True, answer_rows=ans)
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, greek_cols=gk,
+                                       section_title='Parsing Table', use_greek=True)
 
 
 def build_bbg_ch36_mi_verbs_parsing(out_dir: str = None) -> str:
