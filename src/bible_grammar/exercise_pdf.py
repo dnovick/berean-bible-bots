@@ -11123,6 +11123,84 @@ def build_bba_ch12_verb_intro_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+class BbaCh13PealPerfectDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each numbered Peal perfect form drawn from Daniel or Ezra, '
+            'identify the Root (three root consonants), '
+            'the PGN (person, gender, number), '
+            'and provide an English translation. '
+            'All forms are Peal (G stem) perfect. '
+            'Verb types include strong roots and the major weak classes: '
+            'I-aleph, I-nun, hollow (II-waw), III-he, III-aleph, and I-yod.'
+        )
+        hdrs = ['#', 'Form', 'Root', 'PGN', 'Translation']
+        cr = [0.04, 0.16, 0.18, 0.18, 0.44]
+        hc = [1]
+        rows = [
+            [1,  'אֲמַר',       '', '', ''],
+            [2,  'כְּתַבוּ',     '', '', ''],
+            [3,  'שְׁלַחְתְּ',   '', '', ''],
+            [4,  'יְהַבְנָא',    '', '', ''],
+            [5,  'עֲבַד',        '', '', ''],
+            [6,  'שְׁמַעְתִּי',  '', '', ''],
+            [7,  'נְפַלַת',     '', '', ''],
+            [8,  'קָם',          '', '', ''],
+            [9,  'הֲוָת',        '', '', ''],
+            [10, 'זְכַרְתְּ',    '', '', ''],
+            [11, 'שְׁנֵא',       '', '', ''],
+            [12, 'סְגִדוּ',      '', '', ''],
+            [13, 'בְּנָה',       '', '', ''],
+            [14, 'אֲמַרוּ',      '', '', ''],
+            [15, 'כְּתָבֵת',     '', '', ''],
+            [16, 'יְהַבְתְּ',    '', '', ''],
+            [17, 'הֲוֵינָא',     '', '', ''],
+            [18, 'עֲבַדְתּוּן',  '', '', ''],
+            [19, 'קָמַת',        '', '', ''],
+            [20, 'בְּנַיְנָא',   '', '', ''],
+        ]
+        ans = [
+            [1,  'אֲמַר',       'אמר',  '3ms',  'he said'],
+            [2,  'כְּתַבוּ',     'כתב',  '3mp',  'they (m) wrote'],
+            [3,  'שְׁלַחְתְּ',   'שׁלח', '2ms',  'you (ms) sent'],
+            [4,  'יְהַבְנָא',    'יהב',  '1cp',  'we gave'],
+            [5,  'עֲבַד',        'עבד',  '3ms',  'he did / made'],
+            [6,  'שְׁמַעְתִּי',  'שׁמע', '2fs',  'you (fs) heard'],
+            [7,  'נְפַלַת',     'נפל',  '3fs',  'she/it fell'],
+            [8,  'קָם',          'קום',  '3ms',  'he arose / stood up'],
+            [9,  'הֲוָת',        'הוה',  '3fs',  'she/it was'],
+            [10, 'זְכַרְתְּ',    'זכר',  '2ms',  'you (ms) remembered'],
+            [11, 'שְׁנֵא',       'שׁנא', '3ms',  'it changed / was different'],
+            [12, 'סְגִדוּ',      'סגד',  '3mp',  'they (m) bowed down'],
+            [13, 'בְּנָה',       'בנה',  '3ms',  'he built'],
+            [14, 'אֲמַרוּ',      'אמר',  '3mp',  'they (m) said'],
+            [15, 'כְּתָבֵת',     'כתב',  '1cs',  'I wrote'],
+            [16, 'יְהַבְתְּ',    'יהב',  '2ms',  'you (ms) gave'],
+            [17, 'הֲוֵינָא',     'הוה',  '1cp',  'we were'],
+            [18, 'עֲבַדְתּוּן',  'עבד',  '2mp',  'you (mp) did / made'],
+            [19, 'קָמַת',        'קום',  '3fs',  'she/it arose'],
+            [20, 'בְּנַיְנָא',   'בנה',  '1cp',  'we built'],
+        ]
+        self.add_section_heading('Peal Perfect Parsing — Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, ans, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch13_peal_perfect_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch13', 'exercises', 'ch13-peal-perfect-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch13-peal-perfect-drill.pdf')
+    ex = BbaCh13PealPerfectDrillPDF(
+        title='BBA Chapter 13 — Peal Perfect Parsing Drill',
+        subtitle='Peal Perfect · Strong and Weak Roots · Daniel and Ezra',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -11261,6 +11339,7 @@ if __name__ == '__main__':
         build_bba_ch10_adjective_number_drill,
         build_bba_ch11_particle_drill,
         build_bba_ch12_verb_intro_drill,
+        build_bba_ch13_peal_perfect_drill,
     ]
     for fn in bba_builders:
         try:
