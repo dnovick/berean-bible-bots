@@ -1904,7 +1904,7 @@ Examples:
 Complete lesson packages for all chapters of *Basics of Biblical Hebrew* (Pratico & Van Pelt)
 and *Basics of Biblical Greek* (Mounce, 4th ed.) are in [`output/lessons/`](output/lessons/README.md).
 Each chapter contains a full lesson in `README.md`, paradigm reference files (where applicable),
-Anki decks, and interactive exercises.
+Anki and Flashcards Deluxe decks, and interactive exercises.
 
 | Textbook | Chapters | Index |
 |---|---|---|

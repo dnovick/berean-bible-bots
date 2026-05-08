@@ -1,8 +1,9 @@
 # Lesson Packages
 
 Complete lesson packages for biblical language textbooks. Each chapter contains a full
-lesson (`README.md`), paradigm reference files (where applicable), Anki vocabulary and
-morphology decks, and interactive exercises in `.md`, `.html`, and `.pdf` formats.
+lesson (`README.md`), paradigm reference files (where applicable), Anki and
+Flashcards Deluxe vocabulary and morphology decks, and interactive exercises in
+`.md`, `.html`, and `.pdf` formats.
 
 ---
 
