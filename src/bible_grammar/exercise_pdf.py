@@ -10448,6 +10448,251 @@ def build_bba_ch3_syllabification_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+# ---------------------------------------------------------------------------
+# BBA Ch4 — Noun Identification Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh4NounIdentificationPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Aramaic noun form: (1) Gender — m. or f., '
+            '(2) Number — s., pl., or du., '
+            '(3) State — abs., det., or cstr., '
+            '(4) Root / Lexical Form. All forms are in the absolute state.'
+        )
+        hdrs = ['#', 'Form', 'Gender', 'Number', 'State', 'Root / Lexical Form']
+        cr = [0.04, 0.14, 0.10, 0.10, 0.10, 0.52]
+        hc = [1]
+        rows = [
+            ['1',  'נוּר',       '', '', '', ''],
+            ['2',  'חֵיוָה',    '', '', '', ''],
+            ['3',  'רָזִין',     '', '', '', ''],
+            ['4',  'עִדָּן',     '', '', '', ''],
+            ['5',  'פְּשַׁר',    '', '', '', ''],
+            ['6',  'חֵיוָן',    '', '', '', ''],
+            ['7',  'זְמָן',      '', '', '', ''],
+            ['8',  'טְעֵמִין',   '', '', '', ''],
+            ['9',  'אַתּוּן',    '', '', '', ''],
+            ['10', 'שָׁלְטָן',   '', '', '', ''],
+            ['11', 'עִדָּנִין',  '', '', '', ''],
+            ['12', 'גֹּב',       '', '', '', ''],
+            ['13', 'פְּשָׁרִין', '', '', '', ''],
+            ['14', 'חֲסַף',      '', '', '', ''],
+            ['15', 'זְמָנִין',   '', '', '', ''],
+            ['16', 'רָז',         '', '', '', ''],
+            ['17', 'גּוֹא',       '', '', '', ''],
+            ['18', 'שָׁלְטָנִין','', '', '', ''],
+            ['19', 'טְעֵם',       '', '', '', ''],
+            ['20', 'נוּרִין',     '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'נוּר',       'm.', 's.',  'abs.', 'נוּר — fire'],
+            ['2',  'חֵיוָה',    'f.', 's.',  'abs.', 'חֵיוָה — animal, beast'],
+            ['3',  'רָזִין',     'm.', 'pl.', 'abs.', 'רָז — secrets, mysteries'],
+            ['4',  'עִדָּן',     'm.', 's.',  'abs.', 'עִדָּן — time, moment'],
+            ['5',  'פְּשַׁר',    'm.', 's.',  'abs.', 'פְּשַׁר — interpretation'],
+            ['6',  'חֵיוָן',    'f.', 'pl.', 'abs.', 'חֵיוָה — animals, beasts'],
+            ['7',  'זְמָן',      'm.', 's.',  'abs.', 'זְמָן — time, a fixed time'],
+            ['8',  'טְעֵמִין',   'm.', 'pl.', 'abs.', 'טְעֵם — commands, decrees'],
+            ['9',  'אַתּוּן',    'm.', 's.',  'abs.', 'אַתּוּן — furnace'],
+            ['10', 'שָׁלְטָן',   'm.', 's.',  'abs.', 'שָׁלְטָן — dominion'],
+            ['11', 'עִדָּנִין',  'm.', 'pl.', 'abs.', 'עִדָּן — times, moments'],
+            ['12', 'גֹּב',       'm.', 's.',  'abs.', 'גֹּב — pit, den'],
+            ['13', 'פְּשָׁרִין', 'm.', 'pl.', 'abs.', 'פְּשַׁר — interpretations'],
+            ['14', 'חֲסַף',      'm.', 's.',  'abs.', 'חֲסַף — clay, pottery'],
+            ['15', 'זְמָנִין',   'm.', 'pl.', 'abs.', 'זְמָן — times'],
+            ['16', 'רָז',         'm.', 's.',  'abs.', 'רָז — secret, mystery'],
+            ['17', 'גּוֹא',       'm.', 's.',  'abs.', 'גּוֹא — midst, middle'],
+            ['18', 'שָׁלְטָנִין','m.', 'pl.', 'abs.', 'שָׁלְטָן — dominions, powers'],
+            ['19', 'טְעֵם',       'm.', 's.',  'abs.', 'טְעֵם — understanding, command'],
+            ['20', 'נוּרִין',     'm.', 'pl.', 'abs.', 'נוּר — fires'],
+        ]
+        self.add_section_heading('Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch4_noun_identification(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch4', 'exercises', 'ch4-noun-identification')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch4-noun-identification.pdf')
+    ex = BbaCh4NounIdentificationPDF(
+        title='BBA Chapter 4 — Noun Identification Drill',
+        subtitle='Absolute State · Gender · Number · Root Form',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch5 — Determined State Forms Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh5DeterminedStateDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'Each item gives a noun in one state (absolute or determined). '
+            'Write it in the other state in the blank column. '
+            'Direction is shown in the Notes column. '
+            'Endings: ms ָא- · fs ָה-/ָתָא- · mp ִין-/ַיָּא- · fp ָן-/ָתָא-'
+        )
+        # Columns: #, Absolute Form, Determined Form, Gender/Number, Notes
+        # heb_cols = [1, 2]; col 1 or 2 may be blank (input field) depending on direction
+        # We'll use two separate tables split by direction, or just a single table
+        # treating both Hebrew cols as display-only when pre-filled, input when blank.
+        # Simpler: use separate rows, pre-fill given col via answer_rows mechanism.
+        hdrs = ['#', 'Absolute Form', 'Determined Form', 'Gender/Number', 'Notes']
+        cr = [0.04, 0.20, 0.20, 0.12, 0.44]
+        hc = [1, 2]
+
+        # For this exercise the "given" cell is pre-filled and "blank" cell is the input.
+        # We encode: rows have the given value in its col, blank in the other.
+        # answer_rows have both filled.
+        rows = [
+            ['1',  'אִילָן',    '',            'ms.', 'abs. → det.'],
+            ['2',  '',           'נוּרָא',      'ms.', 'det. → abs.'],
+            ['3',  'אֻמָּה',    '',            'fs.', 'abs. → det.'],
+            ['4',  '',           'חֵיוְתָא',   'fs.', 'det. → abs.'],
+            ['5',  'רָזִין',    '',            'mp.', 'abs. → det.'],
+            ['6',  '',           'עִדָּנָא',   'ms.', 'det. → abs.'],
+            ['7',  'מָאן',       '',            'ms.', 'abs. → det.'],
+            ['8',  '',           'אֻמְּמָתָא', 'fp.', 'det. → abs.'],
+            ['9',  'זְמָר',      '',            'ms.', 'abs. → det.'],
+            ['10', '',           'רָזַיָּא',   'mp.', 'det. → abs.'],
+            ['11', 'חֲמַר',     '',            'ms.', 'abs. → det.'],
+            ['12', '',           'אִילָנַיָּא','mp.', 'det. → abs.'],
+            ['13', 'חֵיוָן',   '',            'fp.', 'abs. → det.'],
+            ['14', '',           'אֱסָרָא',    'ms.', 'det. → abs.'],
+            ['15', 'יְקָר',      '',            'ms.', 'abs. → det.'],
+            ['16', '',           'מָאנַיָּא',  'mp.', 'det. → abs.'],
+            ['17', 'אֲתַר',     '',            'ms.', 'abs. → det.'],
+            ['18', '',           'גִּשְׁמָא',  'ms.', 'det. → abs.'],
+            ['19', 'זְמָנִין',  '',            'mp.', 'abs. → det.'],
+            ['20', '',           'זְמָרַיָּא', 'mp.', 'det. → abs.'],
+        ]
+        ans = [
+            ['1',  'אִילָן',    'אִילָנָא',    'ms.', 'Add ָא- — tree / the tree'],
+            ['2',  'נוּר',       'נוּרָא',      'ms.', 'Remove ָא- — fire (Ch4)'],
+            ['3',  'אֻמָּה',    'אֻמְּתָא',   'fs.', 'Replace ָה- with ָתָא-'],
+            ['4',  'חֵיוָה',   'חֵיוְתָא',   'fs.', 'Remove ָתָא-, restore ָה- (Ch4)'],
+            ['5',  'רָזִין',    'רָזַיָּא',    'mp.', 'Replace ִין- with ַיָּא- (Ch4)'],
+            ['6',  'עִדָּן',    'עִדָּנָא',   'ms.', 'Remove ָא- (Ch4)'],
+            ['7',  'מָאן',       'מָאנָא',      'ms.', 'Add ָא-'],
+            ['8',  'אֻמְּמָן',  'אֻמְּמָתָא', 'fp.', 'Remove ָתָא-, restore ָן-'],
+            ['9',  'זְמָר',      'זְמָרָא',     'ms.', 'Add ָא-'],
+            ['10', 'רָזִין',    'רָזַיָּא',    'mp.', 'Remove ַיָּא-, restore ִין- (Ch4)'],
+            ['11', 'חֲמַר',     'חַמְרָא',     'ms.', 'Add ָא-; vowel shift'],
+            ['12', 'אִילָנִין', 'אִילָנַיָּא', 'mp.', 'Remove ַיָּא-, restore ִין-'],
+            ['13', 'חֵיוָן',   'חֵיוָתָא',   'fp.', 'Replace ָן- with ָתָא- (Ch4)'],
+            ['14', 'אֱסָר',     'אֱסָרָא',     'ms.', 'Remove ָא-'],
+            ['15', 'יְקָר',      'יְקָרָא',     'ms.', 'Add ָא-'],
+            ['16', 'מָאנִין',   'מָאנַיָּא',   'mp.', 'Remove ַיָּא-, restore ִין-'],
+            ['17', 'אֲתַר',     'אֲתַרָא',     'ms.', 'Add ָא-'],
+            ['18', 'גְּשֵׁם',   'גִּשְׁמָא',  'ms.', 'Remove ָא-; vowel shift'],
+            ['19', 'זְמָנִין',  'זְמָנַיָּא',  'mp.', 'Replace ִין- with ַיָּא- (Ch4)'],
+            ['20', 'זְמָרִין',  'זְמָרַיָּא',  'mp.', 'Remove ַיָּא-, restore ִין-'],
+        ]
+        self.add_section_heading('Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch5_determined_state_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch5', 'exercises', 'ch5-determined-state-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch5-determined-state-drill.pdf')
+    ex = BbaCh5DeterminedStateDrillPDF(
+        title='BBA Chapter 5 — Determined State Forms Drill',
+        subtitle='Absolute ↔ Determined · All Four Gender/Number Patterns',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch6 — Construct Chain Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh6ConstructChainDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each item, write the construct form of the first noun and '
+            'give the English translation of the complete construct chain. '
+            'ms cstr. = abs. (unchanged) · fs: ָה- → ַת- · mp: ִין- → ֵי- · fp: ָן- → ָת-'
+        )
+        hdrs = ['#', 'Absolute Form', 'Construct Form', 'Genitive Noun', 'Translation']
+        cr = [0.04, 0.18, 0.18, 0.18, 0.42]
+        hc = [1, 2, 3]
+        rows = [
+            ['1',  'שָׁעָה (fs)',   '',  'חַד',          ''],
+            ['2',  'מָרֵא (ms)',    '',  'מַלְכִין',     ''],
+            ['3',  'פֻּם (ms)',     '',  'גֻּבָּא',      ''],
+            ['4',  'רוּם (ms)',     '',  'שְׁמַיָּא',    ''],
+            ['5',  'מַלְכָּה (fs)', '',  'מְדִינְתָא',   ''],
+            ['6',  'מְדוֹר (ms)',   '',  'חֵיוְתָא',    ''],
+            ['7',  'עֲנַף (ms)',    '',  'אִילָנָא',     ''],
+            ['8',  'רָזִין (mp)',   '',  'אֱלָהָא',      ''],
+            ['9',  'סוֹף (ms)',     '',  'כָּל־אַרְעָא', ''],
+            ['10', 'חֵיוָה (fs)',   '',  'בְּרָא',       ''],
+            ['11', 'פִּתְגָם (ms)', '',  'מַלְכָּא',     ''],
+            ['12', 'מְלָכִין (mp)', '',  'אַרְעָא',      ''],
+            ['13', 'רַעְיוֹן (ms)', '',  'לִבְבָהּ',     ''],
+            ['14', 'שָׁלוּ (fs)',   '',  'מַלְכָּא',     ''],
+            ['15', 'מְדִינָן (fp)', '',  'מַלְכוּתָא',   ''],
+            ['16', 'נוּר (ms)',     '',  'אַתּוּנָא',    ''],
+            ['17', 'אֻמָּה (fs)',   '',  'אַרְעָא',      ''],
+            ['18', 'רָז (ms)',      '',  'מַלְכָּא',     ''],
+            ['19', 'מְדוֹר (ms)',   '',  'שְׁמַיָּא',    ''],
+            ['20', 'שָׁעָן (fp)',   '',  'יוֹמָא',       ''],
+        ]
+        ans = [
+            ['1',  'שָׁעָה (fs)',   'שַׁעַת',   'חַד',          'one moment — fs ָה- → ַת-'],
+            ['2',  'מָרֵא (ms)',    'מָרֵא',    'מַלְכִין',     'Lord of kings — ms cstr. = abs.'],
+            ['3',  'פֻּם (ms)',     'פֻּם',     'גֻּבָּא',      'mouth of the den — ms cstr. = abs.'],
+            ['4',  'רוּם (ms)',     'רוּם',     'שְׁמַיָּא',    'height of the heavens'],
+            ['5',  'מַלְכָּה (fs)', 'מַלְכַּת', 'מְדִינְתָא',   'queen of the province — fs ָה- → ַת-'],
+            ['6',  'מְדוֹר (ms)',   'מְדוֹר',   'חֵיוְתָא',    'dwelling of the beast'],
+            ['7',  'עֲנַף (ms)',    'עֲנַף',    'אִילָנָא',     'branch of the tree'],
+            ['8',  'רָזִין (mp)',   'רָזֵי',    'אֱלָהָא',      'secrets of God — mp ִין- → ֵי-'],
+            ['9',  'סוֹף (ms)',     'סוֹף',     'כָּל־אַרְעָא', 'end of all the earth'],
+            ['10', 'חֵיוָה (fs)',   'חֵיוַת',   'בְּרָא',       'beast of the field — fs ָה- → ַת-'],
+            ['11', 'פִּתְגָם (ms)', 'פִּתְגָם', 'מַלְכָּא',     'decree of the king'],
+            ['12', 'מְלָכִין (mp)', 'מַלְכֵי',  'אַרְעָא',      'kings of the earth — mp ִין- → ֵי-'],
+            ['13', 'רַעְיוֹן (ms)', 'רַעְיוֹן', 'לִבְבָהּ',     'thought of her heart'],
+            ['14', 'שָׁלוּ (fs)',   'שָׁלוּ',   'מַלְכָּא',     "king's negligence — lamed-waw: cstr. = abs."],
+            ['15', 'מְדִינָן (fp)', 'מְדִינָת', 'מַלְכוּתָא',   'provinces of the kingdom — fp ָן- → ָת-'],
+            ['16', 'נוּר (ms)',     'נוּר',     'אַתּוּנָא',    'fire of the furnace'],
+            ['17', 'אֻמָּה (fs)',   'אֻמַּת',   'אַרְעָא',      'nation of the earth — fs ָה- → ַת-'],
+            ['18', 'רָז (ms)',      'רָז',      'מַלְכָּא',     'secret of the king'],
+            ['19', 'מְדוֹר (ms)',   'מְדוֹר',   'שְׁמַיָּא',    'dwelling of the heavens'],
+            ['20', 'שָׁעָן (fp)',   'שָׁעָת',   'יוֹמָא',       'hours of the day — fp ָן- → ָת-'],
+        ]
+        self.add_section_heading('Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch6_construct_chain_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch6', 'exercises', 'ch6-construct-chain-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch6-construct-chain-drill.pdf')
+    ex = BbaCh6ConstructChainDrillPDF(
+        title='BBA Chapter 6 — Construct Chain Drill',
+        subtitle='Construct State · All Four Gender/Number Patterns · Genitive Chains',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -10577,6 +10822,9 @@ if __name__ == '__main__':
         build_bba_ch1_letter_recognition,
         build_bba_ch2_vowel_identification,
         build_bba_ch3_syllabification_drill,
+        build_bba_ch4_noun_identification,
+        build_bba_ch5_determined_state_drill,
+        build_bba_ch6_construct_chain_drill,
     ]
     for fn in bba_builders:
         try:

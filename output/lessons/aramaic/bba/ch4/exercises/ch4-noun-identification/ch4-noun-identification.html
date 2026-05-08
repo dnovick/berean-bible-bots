@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BBA Ch4 — Noun Identification Drill</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 980px; margin: 2em auto; padding: 0 1em; }
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1.1em; margin-top: 1.5em; }
+  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
+  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
+  th { background: #e8e8e8; }
+  td.aram { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; min-width: 80px; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
+  .answer-row td { background: #e6ffe6; font-size: .85em; }
+  .answer-row { display: none; }
+  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
+  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
+  .global-btns { margin-bottom: 1em; }
+  @media print {
+    .btn, .global-btns { display: none; }
+    input.parse-field { border-bottom: 1px solid #555; }
+    .answer-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<h1>BBA Chapter 4 — Noun Identification Drill</h1>
+<p class="instructions"><strong>Instructions:</strong> For each Aramaic noun form: (1) Gender — m. or f., (2) Number — s., pl., or du., (3) State — abs., det., or cstr., (4) Root / Lexical Form — the dictionary entry this form derives from. All forms are in the <strong>absolute state</strong>.</p>
+<p class="instructions"><strong>Reminder — Aramaic absolute-state endings:</strong> Masculine singular: no ending · Feminine singular: ָה- · Masculine plural: ִין- · Feminine plural: ָן-</p>
+
+<div class="global-btns">
+  <button class="btn" onclick="showAll()">Show All Answers</button>
+  <button class="btn" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<script>
+var rows = [
+  [1,  "נוּר",       "m.", "s.",  "abs.", "נוּר",     "Masculine singular; no ending — fire"],
+  [2,  "חֵיוָה",    "f.", "s.",  "abs.", "חֵיוָה",   "Feminine singular ָה- — animal, beast"],
+  [3,  "רָזִין",     "m.", "pl.", "abs.", "רָז",      "Masculine plural ִין- — secrets, mysteries"],
+  [4,  "עִדָּן",     "m.", "s.",  "abs.", "עִדָּן",    "Masculine singular; no ending — time, moment"],
+  [5,  "פְּשַׁר",    "m.", "s.",  "abs.", "פְּשַׁר",   "Masculine singular; no ending — interpretation"],
+  [6,  "חֵיוָן",    "f.", "pl.", "abs.", "חֵיוָה",   "Feminine plural ָן- — animals, beasts"],
+  [7,  "זְמָן",      "m.", "s.",  "abs.", "זְמָן",     "Masculine singular; no ending — time, a fixed time"],
+  [8,  "טְעֵמִין",   "m.", "pl.", "abs.", "טְעֵם",    "Masculine plural ִין- — commands, decrees"],
+  [9,  "אַתּוּן",    "m.", "s.",  "abs.", "אַתּוּן",   "Masculine singular; no ending — furnace"],
+  [10, "שָׁלְטָן",   "m.", "s.",  "abs.", "שָׁלְטָן",  "Masculine singular; no ending — dominion"],
+  [11, "עִדָּנִין",  "m.", "pl.", "abs.", "עִדָּן",    "Masculine plural ִין- — times, moments"],
+  [12, "גֹּב",       "m.", "s.",  "abs.", "גֹּב",      "Masculine singular; no ending — pit, den"],
+  [13, "פְּשָׁרִין", "m.", "pl.", "abs.", "פְּשַׁר",   "Masculine plural ִין-; stem vowel patach → qamets"],
+  [14, "חֲסַף",      "m.", "s.",  "abs.", "חֲסַף",     "Masculine singular; guttural ח takes hateph patach — clay, pottery"],
+  [15, "זְמָנִין",   "m.", "pl.", "abs.", "זְמָן",     "Masculine plural ִין- — times"],
+  [16, "רָז",         "m.", "s.",  "abs.", "רָז",      "Masculine singular; no ending — secret, mystery"],
+  [17, "גּוֹא",       "m.", "s.",  "abs.", "גּוֹא",     "Masculine singular; no ending — midst, middle (also גּוֹ)"],
+  [18, "שָׁלְטָנִין","m.", "pl.", "abs.", "שָׁלְטָן",  "Masculine plural ִין- — dominions, powers"],
+  [19, "טְעֵם",       "m.", "s.",  "abs.", "טְעֵם",    "Masculine singular; no ending — understanding, command, decree"],
+  [20, "נוּרִין",     "m.", "pl.", "abs.", "נוּר",      "Masculine plural ִין- — fires"]
+];
+
+document.addEventListener("DOMContentLoaded", function() {
+  var t = document.createElement("table"); document.body.appendChild(t);
+  var thead = document.createElement("thead");
+  var hr = document.createElement("tr");
+  ["#","Form","Gender","Number","State","Root / Lexical Form",""].forEach(function(h){
+    var th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
+  });
+  thead.appendChild(hr); t.appendChild(thead);
+
+  var tbody = document.createElement("tbody");
+  rows.forEach(function(row) {
+    var num = row[0], aram = row[1];
+    var aGender = row[2], aNumber = row[3], aState = row[4], aRoot = row[5], aNotes = row[6];
+
+    var qrow = document.createElement("tr");
+    qrow.innerHTML =
+      '<td>' + num + '</td>' +
+      '<td class="aram">' + aram + '</td>' +
+      '<td><input class="parse-field" type="text" placeholder="gender"></td>' +
+      '<td><input class="parse-field" type="text" placeholder="number"></td>' +
+      '<td><input class="parse-field" type="text" placeholder="state"></td>' +
+      '<td><input class="parse-field" type="text" placeholder="root / lexical form"></td>' +
+      '<td><button class="btn btn-ans" onclick="toggle(\'a'+num+'\')">▶ Answer</button></td>';
+    tbody.appendChild(qrow);
+
+    var arow = document.createElement("tr");
+    arow.id = "a" + num; arow.className = "answer-row";
+    arow.innerHTML =
+      '<td></td>' +
+      '<td class="aram">' + aram + '</td>' +
+      '<td>' + aGender + '</td>' +
+      '<td>' + aNumber + '</td>' +
+      '<td>' + aState + '</td>' +
+      '<td>' + aRoot + '</td>' +
+      '<td style="font-size:.8em;color:#555;">' + aNotes + '</td>';
+    tbody.appendChild(arow);
+  });
+  t.appendChild(tbody);
+});
+
+function toggle(id) {
+  var el = document.getElementById(id);
+  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
+}
+function showAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; }); }
+function hideAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; }); }
+function clearAll() { document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; }); }
+</script>
+</body>
+</html>

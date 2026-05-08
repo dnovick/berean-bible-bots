@@ -1902,8 +1902,9 @@ Examples:
 
 ## Lesson Packages
 
-Complete lesson packages for all chapters of *Basics of Biblical Hebrew* (Pratico & Van Pelt)
-and *Basics of Biblical Greek* (Mounce, 4th ed.) are in [`output/lessons/`](output/lessons/README.md).
+Complete lesson packages for all chapters of *Basics of Biblical Hebrew* (Pratico & Van Pelt),
+*Basics of Biblical Greek* (Mounce, 4th ed.), and *Basics of Biblical Aramaic* (Van Pelt)
+are in [`output/lessons/`](output/lessons/README.md).
 Each chapter contains a full lesson in `README.md`, paradigm reference files (where applicable),
 Anki and Flashcards Deluxe decks, and interactive exercises.
 
@@ -1911,6 +1912,7 @@ Anki and Flashcards Deluxe decks, and interactive exercises.
 |---|---|---|
 | Basics of Biblical Hebrew (BBH) | Ch 1–35 | [output/lessons/hebrew/bbh/](output/lessons/hebrew/bbh/README.md) |
 | Basics of Biblical Greek (BBG) | Ch 1–36 | [output/lessons/greek/bbg/](output/lessons/greek/bbg/README.md) |
+| Basics of Biblical Aramaic (BBA) | Ch 1–22 | [output/lessons/aramaic/bba/](output/lessons/aramaic/bba/README.md) |
 
 ### Exercise Formats
 

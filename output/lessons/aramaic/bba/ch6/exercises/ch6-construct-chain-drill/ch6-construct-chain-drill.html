@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BBA Ch6 — Construct Chain Drill</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 980px; margin: 2em auto; padding: 0 1em; }
+  h1 { font-size: 1.3em; }
+  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
+  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
+  th { background: #e8e8e8; }
+  td.aram { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; min-width: 90px; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
+  .answer-row td { background: #e6ffe6; font-size: .85em; }
+  .answer-row { display: none; }
+  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
+  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
+  .global-btns { margin-bottom: 1em; }
+  @media print {
+    .btn, .global-btns { display: none; }
+    input.parse-field { border-bottom: 1px solid #555; }
+    .answer-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<h1>BBA Chapter 6 — Construct Chain Drill</h1>
+<p class="instructions"><strong>Instructions:</strong> For each item, write the construct form of the first noun and give the English translation of the complete chain.</p>
+<p class="instructions">
+  <strong>Endings:</strong>
+  ms cstr. = ms abs. (unchanged) ·
+  fs: ָה- → ַת- ·
+  mp: ִין- → ֵי- ·
+  fp: ָן- → ָת-
+</p>
+
+<div class="global-btns">
+  <button class="btn" onclick="showAll()">Show All Answers</button>
+  <button class="btn" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<script>
+// [num, absForm, genitiveNoun, cstrForm, translation, notes]
+var rows = [
+  [1,  "שָׁעָה (fs)",   "חַד",            "שַׁעַת",   "one moment",                  "fs ָה- → ַת-"],
+  [2,  "מָרֵא (ms)",    "מַלְכִין",        "מָרֵא",    "Lord of kings",               "ms cstr. = abs.; indefinite chain"],
+  [3,  "פֻּם (ms)",     "גֻּבָּא",         "פֻּם",     "the mouth of the den",        "ms cstr. = abs.; det. genitive → definite chain"],
+  [4,  "רוּם (ms)",     "שְׁמַיָּא",       "רוּם",     "the height of the heavens",   "ms cstr. = abs.; Dan. 4:8"],
+  [5,  "מַלְכָּה (fs)", "מְדִינְתָא",      "מַלְכַּת", "the queen of the province",   "fs ָה- → ַת-"],
+  [6,  "מְדוֹר (ms)",   "חֵיוְתָא",       "מְדוֹר",   "the dwelling of the beast",   "ms cstr. = abs."],
+  [7,  "עֲנַף (ms)",    "אִילָנָא",        "עֲנַף",    "the branch of the tree",      "ms cstr. = abs.; Dan. 4:9"],
+  [8,  "רָזִין (mp)",   "אֱלָהָא",         "רָזֵי",    "the secrets of God",          "mp ִין- → ֵי-; Dan. 2:28"],
+  [9,  "סוֹף (ms)",     "כָּל־אַרְעָא",    "סוֹף",     "the end of all the earth",    "ms cstr. = abs."],
+  [10, "חֵיוָה (fs)",   "בְּרָא",          "חֵיוַת",   "the beast of the field",      "fs ָה- → ַת-; Dan. 4:12"],
+  [11, "פִּתְגָם (ms)", "מַלְכָּא",        "פִּתְגָם", "the decree of the king",      "ms cstr. = abs."],
+  [12, "מְלָכִין (mp)", "אַרְעָא",         "מַלְכֵי",  "the kings of the earth",      "mp ִין- → ֵי-"],
+  [13, "רַעְיוֹן (ms)", "לִבְבָהּ",        "רַעְיוֹן", "the thought of her heart",    "ms cstr. = abs.; suffix makes chain definite"],
+  [14, "שָׁלוּ (fs)",   "מַלְכָּא",        "שָׁלוּ",   "the king's negligence",       "lamed-waw: cstr. = abs.; Ezra 4:22"],
+  [15, "מְדִינָן (fp)", "מַלְכוּתָא",      "מְדִינָת", "the provinces of the kingdom","fp ָן- → ָת-"],
+  [16, "נוּר (ms)",     "אַתּוּנָא",       "נוּר",     "the fire of the furnace",     "ms cstr. = abs.; Dan. 3"],
+  [17, "אֻמָּה (fs)",   "אַרְעָא",         "אֻמַּת",   "the nation of the earth",     "fs ָה- → ַת-; dagesh retained in מ"],
+  [18, "רָז (ms)",      "מַלְכָּא",        "רָז",      "the secret of the king",      "ms cstr. = abs."],
+  [19, "מְדוֹר (ms)",   "שְׁמַיָּא",       "מְדוֹר",   "the dwelling of the heavens", "ms cstr. = abs.; Dan. 4:23"],
+  [20, "שָׁעָן (fp)",   "יוֹמָא",          "שָׁעָת",   "the hours of the day",        "fp ָן- → ָת-"]
+];
+
+document.addEventListener("DOMContentLoaded", function() {
+  var t = document.createElement("table"); document.body.appendChild(t);
+  var thead = document.createElement("thead");
+  var hr = document.createElement("tr");
+  ["#","Absolute Form","Construct Form","Genitive Noun","Translation",""].forEach(function(h){
+    var th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
+  });
+  thead.appendChild(hr); t.appendChild(thead);
+
+  var tbody = document.createElement("tbody");
+  rows.forEach(function(row) {
+    var num = row[0], abs = row[1], gen = row[2], cstr = row[3], trans = row[4], notes = row[5];
+
+    var qrow = document.createElement("tr");
+    qrow.innerHTML =
+      '<td>' + num + '</td>' +
+      '<td class="aram">' + abs + '</td>' +
+      '<td><input class="parse-field" type="text" placeholder="construct form"></td>' +
+      '<td class="aram">' + gen + '</td>' +
+      '<td><input class="parse-field" type="text" placeholder="translation"></td>' +
+      '<td><button class="btn btn-ans" onclick="toggle(\'a'+num+'\')">▶ Answer</button></td>';
+    tbody.appendChild(qrow);
+
+    var arow = document.createElement("tr");
+    arow.id = "a" + num; arow.className = "answer-row";
+    arow.innerHTML =
+      '<td></td>' +
+      '<td class="aram">' + abs + '</td>' +
+      '<td class="aram">' + cstr + '</td>' +
+      '<td class="aram">' + gen + '</td>' +
+      '<td>' + trans + '</td>' +
+      '<td style="font-size:.8em;color:#555;">' + notes + '</td>';
+    tbody.appendChild(arow);
+  });
+  t.appendChild(tbody);
+});
+
+function toggle(id) {
+  var el = document.getElementById(id);
+  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
+}
+function showAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; }); }
+function hideAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; }); }
+function clearAll() { document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; }); }
+</script>
+</body>
+</html>
