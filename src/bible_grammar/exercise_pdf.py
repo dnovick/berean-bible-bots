@@ -11604,6 +11604,89 @@ def build_bba_ch18_passive_stems_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+class BbaCh19PaelStemDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each numbered Pael verb form drawn from Daniel or Ezra, '
+            'identify the Conjugation (Perfect / Imperfect / Imperative / Infinitive / Participle), '
+            'the Root (three root consonants, Peal perfect 3ms form), '
+            'the PGN (Person-Gender-Number; N/A for infinitive; active/passive for participle), '
+            'and provide an English translation. '
+            'Pael marker (all forms): dagesh forte in R2. '
+            'Perfect: patach + dagesh-tsere in R2; 3ms = qattel pattern. '
+            'Imperfect: ye- prefix (shewa, NOT hireq; contrast Peal yi-). '
+            'Infinitive: le- prefix + dagesh + qamets in R2 + -ah suffix. '
+            'Active participle: me- prefix + dagesh-tsere in R2. '
+            'Passive participle: me- prefix + dagesh-patach in R2. '
+            'III-he imperfect: ends in -ea; III-he participle: ends in -eh.'
+        )
+        hdrs = ['#', 'Form', 'Conjugation', 'Root', 'PGN', 'Translation']
+        cr = [0.04, 0.14, 0.17, 0.10, 0.12, 0.43]
+        hc = [1]
+        rows = [
+            [1,  'שַבַּח',             '', '', '', ''],
+            [2,  'יְשַבַּח', '', '', '', ''],
+            [3,  'מְשַבַּח', '', '', '', ''],
+            [4,  'שַבְּחֵת', '', '', '', ''],
+            [5,  'שַבַּחוּ', '', '', '', ''],
+            [6,  'בָּרֵךְ',        '', '', '', ''],
+            [7,  'יְבָרֵךְ',  '', '', '', ''],
+            [8,  'מְבָרֵךְ',  '', '', '', ''],
+            [9,  'חַוִּי',              '', '', '', ''],
+            [10, 'יְחַוֵּא',  '', '', '', ''],
+            [11, 'מְחַוֶּה',  '', '', '', ''],
+            [12, 'נְחַוֵּא',  '', '', '', ''],
+            [13, 'שַבַּחְנָא', '', '', '', ''],
+            [14, 'לְשַבָּחָה', '', '', '', ''],
+            [15, 'תְּשַבַּח', '', '', '', ''],
+            [16, 'קַבֵּל',               '', '', '', ''],
+            [17, 'יְקַבְּלוּן', '', '', '', ''],
+            [18, 'שַלַּח',               '', '', '', ''],
+            [19, 'מְקַטַּל',   '', '', '', ''],
+            [20, 'יְרַבֵּא',   '', '', '', ''],
+        ]
+        ans = [
+            [1,  'שַבַּח',             'Perfect',              'שבח', '3ms',          'he praised'],
+            [2,  'יְשַבַּח', 'Imperfect',            'שבח', '3ms',          'he will praise'],
+            [3,  'מְשַבַּח', 'Participle (active)',  'שבח', 'ms',           'praising'],
+            [4,  'שַבְּחֵת', 'Perfect',              'שבח', '1cs',          'I praised'],
+            [5,  'שַבַּחוּ', 'Perfect',              'שבח', '3mp',          'they praised'],
+            [6,  'בָּרֵךְ',        'Perfect',              'ברך', '3ms',          'he blessed'],
+            [7,  'יְבָרֵךְ',  'Imperfect',            'ברך', '3ms',          'he will bless'],
+            [8,  'מְבָרֵךְ',  'Participle (active)',  'ברך', 'ms',           'blessing'],
+            [9,  'חַוִּי',              'Perfect',              'חוה', '3ms (III-he)', 'he showed / declared'],
+            [10, 'יְחַוֵּא',  'Imperfect',            'חוה', '3ms (III-he)', 'he will declare / show'],
+            [11, 'מְחַוֶּה',  'Participle (active)',  'חוה', 'ms (III-he)',  'declaring / showing'],
+            [12, 'נְחַוֵּא',  'Imperfect',            'חוה', '1cp',          'we will declare / show'],
+            [13, 'שַבַּחְנָא', 'Perfect',   'שבח', '1cp',          'we praised'],
+            [14, 'לְשַבָּחָה', 'Infinitive', 'שבח', 'N/A',          'to praise'],
+            [15, 'תְּשַבַּח', 'Imperfect',       'שבח', '3fs / 2ms',    'she/you will praise'],
+            [16, 'קַבֵּל',               'Perfect',              'קבל', '3ms',          'he received / accepted'],
+            [17, 'יְקַבְּלוּן', 'Imperfect', 'קבל', '3mp', 'they will receive'],
+            [18, 'שַלַּח',               'Perfect',              'שלח', '3ms',          'he sent / dispatched'],
+            [19, 'מְקַטַּל',   'Participle (passive)', 'קטל', 'ms',           'being killed / the one killed'],
+            [20, 'יְרַבֵּא',   'Imperfect',            'רבה', '3ms (III-he)', 'he will make great / exalt'],
+        ]
+        self.add_section_heading('Pael Stem Drill — Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, ans, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch19_pael_stem_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch19', 'exercises', 'ch19-pael-stem-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch19-pael-stem-drill.pdf')
+    ex = BbaCh19PaelStemDrillPDF(
+        title='BBA Chapter 19 — Pael Stem Drill',
+        subtitle='Pael (D Stem — Intensive/Causative) · Daniel and Ezra',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -11748,6 +11831,7 @@ if __name__ == '__main__':
         build_bba_ch16_peal_infinitive_drill,
         build_bba_ch17_peal_participle_drill,
         build_bba_ch18_passive_stems_drill,
+        build_bba_ch19_pael_stem_drill,
     ]
     for fn in bba_builders:
         try:
