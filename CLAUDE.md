@@ -103,6 +103,52 @@ BBG lessons live under `output/lessons/greek/bbg/ch<N>/`.
 
 ---
 
+## BBA Chapter Map — Full Syllabus (Basics of Biblical Aramaic)
+
+### Aramaic Phonological System
+| Chapter | Topic |
+|---|---|
+| Ch1 | Alphabet |
+| Ch2 | Vowels |
+| Ch3 | Syllabification |
+
+### Aramaic Nominal System
+| Chapter | Topic |
+|---|---|
+| Ch4 | Nouns: Absolute State |
+| Ch5 | Nouns: Determined State |
+| Ch6 | Nouns: Construct State |
+| Ch7 | Conjunctions and Prepositions |
+| Ch8 | Pronominal Suffixes |
+| Ch9 | Pronouns |
+| Ch10 | Adjectives and Numbers |
+| Ch11 | Adverbs and Particles |
+
+### Aramaic Verbal System: Peal
+| Chapter | Topic |
+|---|---|
+| Ch12 | Introduction to Aramaic Verbs |
+| Ch13 | Peal Perfect |
+| Ch14 | Peal Imperfect |
+| Ch15 | Peal Imperative |
+| Ch16 | Peal Infinitive Construct |
+| Ch17 | Peal Participle |
+
+### Aramaic Verbal System: Derived Stems
+| Chapter | Topic |
+|---|---|
+| Ch18 | The Peil, Hithpeel, and Ithpeel Stems |
+| Ch19 | The Pael Stem |
+| Ch20 | The Hithpaal and Ithpaal Stems |
+| Ch21 | The Haphel Stem |
+| Ch22 | The Aphel, Shaphel, and Hophal Stems |
+
+Always verify chapter number against this table before generating any BBA lesson.
+
+BBA lessons live under `output/lessons/aramaic/bba/ch<N>/`.
+
+---
+
 ## Lesson Output Structure
 
 Lessons live under `output/lessons/hebrew/bbh/ch<N>/`. Every chapter directory contains:

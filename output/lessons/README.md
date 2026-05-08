@@ -18,3 +18,9 @@ Flashcards Deluxe vocabulary and morphology decks, and interactive exercises in
 | Textbook | Chapters | Directory |
 |---|---|---|
 | [Basics of Biblical Greek (Mounce, 4th ed.)](greek/bbg/README.md) | Ch 1–36 | `output/lessons/greek/bbg/` |
+
+## Biblical Aramaic
+
+| Textbook | Chapters | Directory |
+|---|---|---|
+| [Basics of Biblical Aramaic (Van Pelt)](aramaic/bba/README.md) | Ch 1–22 | `output/lessons/aramaic/bba/` |

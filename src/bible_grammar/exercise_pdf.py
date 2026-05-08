@@ -36,14 +36,30 @@ from bidi.algorithm import get_display
 # Fonts
 # ---------------------------------------------------------------------------
 _FONTS_REGISTERED = False
+UNICODE_TRANSLIT_FONT = None   # set to font name if Arial Unicode MS is available
 
 
 def _register_fonts():
-    global _FONTS_REGISTERED
+    global _FONTS_REGISTERED, UNICODE_TRANSLIT_FONT
     if _FONTS_REGISTERED:
         return
     pdfmetrics.registerFont(TTFont('ArialHebrew',     '/System/Library/Fonts/ArialHB.ttc', subfontIndex=2))
     pdfmetrics.registerFont(TTFont('ArialHebrewBold', '/System/Library/Fonts/ArialHB.ttc', subfontIndex=3))
+    # Try to register Arial Unicode MS for transliteration columns (Latin Extended, IPA).
+    # Typically installed with Microsoft Office at one of these paths.
+    _arial_unicode_candidates = [
+        '/Library/Fonts/Arial Unicode MS.ttf',
+        os.path.expanduser('~/Library/Fonts/Arial Unicode MS.ttf'),
+        '/Library/Fonts/Arial Unicode.ttf',
+    ]
+    for _path in _arial_unicode_candidates:
+        if os.path.exists(_path):
+            try:
+                pdfmetrics.registerFont(TTFont('ArialUnicode', _path))
+                UNICODE_TRANSLIT_FONT = 'ArialUnicode'
+            except Exception:
+                pass
+            break
     _FONTS_REGISTERED = True
 
 
@@ -477,6 +493,7 @@ class ExercisePDF:
     def add_generic_table(self, headers: list, rows: list,
                           col_ratios: list = None,
                           heb_cols: list = None,
+                          translit_cols: list = None,
                           show_answers: bool = True,
                           answer_rows: list = None):
         """
@@ -485,7 +502,9 @@ class ExercisePDF:
         headers: column header strings
         rows: list of row data (each row is a list of strings, same length as headers)
         col_ratios: proportional widths (must sum to ~1.0); if None, equal widths
-        heb_cols: indices of columns that contain Hebrew text (right-aligned, ArialHebrew font)
+        heb_cols: indices of columns that contain Hebrew/Aramaic text (right-aligned, ArialHebrew font)
+        translit_cols: indices of columns that contain transliteration (Latin Extended / IPA).
+                       Uses Arial Unicode MS if registered, otherwise falls back to Helvetica.
         show_answers: if True, draw green answer rows below each input row
         answer_rows: if show_answers, the answer data (same shape as rows); if None, answers = rows
         """
@@ -493,6 +512,9 @@ class ExercisePDF:
             col_ratios = [1.0 / len(headers)] * len(headers)
         if heb_cols is None:
             heb_cols = []
+        if translit_cols is None:
+            translit_cols = []
+        _tlit_font = UNICODE_TRANSLIT_FONT if UNICODE_TRANSLIT_FONT else 'Helvetica'
 
         w = self._usable_w()
         cw = [r * w for r in col_ratios]
@@ -531,7 +553,7 @@ class ExercisePDF:
             cx = x0
             for col_idx, (cell, col_w) in enumerate(zip(row, cw)):
                 if col_idx in heb_cols:
-                    # Hebrew column — display text (no field), right-aligned
+                    # Hebrew/Aramaic column — display text (no field), right-aligned
                     c.setFont('ArialHebrew', self.HEB_SIZE - 2)
                     c.setFillColor(black)
                     c.drawRightString(cx + col_w - 3, y - self.ROW_H + 7, _heb(cell))
@@ -540,6 +562,11 @@ class ExercisePDF:
                     c.setFont('Helvetica-Bold', self.LABEL_SIZE)
                     c.setFillColor(HexColor('#666666'))
                     c.drawCentredString(cx + col_w / 2, y - self.ROW_H + 8, str(cell))
+                elif col_idx in translit_cols and cell:
+                    # Transliteration column with content — display only (no field)
+                    c.setFont(_tlit_font, self.LABEL_SIZE)
+                    c.setFillColor(black)
+                    c.drawString(cx + 3, y - self.ROW_H + 8, cell)
                 else:
                     # Input field
                     fid = f'r{row_idx}-c{col_idx}-{self._field_idx}'
@@ -586,6 +613,11 @@ class ExercisePDF:
                         c.setFont('ArialHebrew', self.LABEL_SIZE)
                         c.setFillColor(C_ANSWER_FG)
                         c.drawRightString(cx + col_w - 3, y - self.ANSWER_H + 6, _heb(cell))
+                    elif col_idx in translit_cols:
+                        c.setFont(_tlit_font, self.LABEL_SIZE)
+                        c.setFillColor(C_ANSWER_FG)
+                        lines = simpleSplit(cell, _tlit_font, self.LABEL_SIZE, col_w - 6)
+                        c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else cell)
                     else:
                         c.setFont('Helvetica', self.LABEL_SIZE)
                         c.setFillColor(C_ANSWER_FG)
@@ -10132,6 +10164,290 @@ def build_bbg_ch36_mi_verbs_parsing(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+# ---------------------------------------------------------------------------
+# BBA Ch1 — Aramaic Letter Recognition
+# ---------------------------------------------------------------------------
+
+class BbaCh1LetterRecognitionPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Aramaic letter: (1) Letter Name, (2) Transliteration, '
+            '(3) Sound, (4) Special Category (Guttural/Emphatic/Bgdkpt/Normal), '
+            '(5) Corresponding Hebrew letter.'
+        )
+        hdrs = ['#', 'Letter', 'Name', 'Translit.', 'Sound', 'Category', 'Heb. Equiv.']
+        cr = [0.04, 0.07, 0.11, 0.10, 0.14, 0.15, 0.39]
+        hc = [1]
+        tc = [3]   # transliteration column
+        rows = [
+            ['1',  'א', '', '', '', '', ''], ['2',  'ב', '', '', '', '', ''],
+            ['3',  'ג', '', '', '', '', ''], ['4',  'ד', '', '', '', '', ''],
+            ['5',  'ה', '', '', '', '', ''], ['6',  'ו', '', '', '', '', ''],
+            ['7',  'ז', '', '', '', '', ''], ['8',  'ח', '', '', '', '', ''],
+            ['9',  'ט', '', '', '', '', ''], ['10', 'י', '', '', '', '', ''],
+            ['11', 'כ', '', '', '', '', ''], ['12', 'ל', '', '', '', '', ''],
+            ['13', 'מ', '', '', '', '', ''], ['14', 'נ', '', '', '', '', ''],
+            ['15', 'ס', '', '', '', '', ''], ['16', 'ע', '', '', '', '', ''],
+            ['17', 'פ', '', '', '', '', ''], ['18', 'צ', '', '', '', '', ''],
+            ['19', 'ק', '', '', '', '', ''], ['20', 'ר', '', '', '', '', ''],
+            ['21', 'שׁ','', '', '', '', ''], ['22', 'ת', '', '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'א', 'Aleph',  'ʾ',     'Silent (glottal)',       'Guttural',              'Same'],
+            ['2',  'ב', 'Beth',   'b / v', 'b (hard) / v (soft)',    'Bgdkpt',                'Same'],
+            ['3',  'ג', 'Gimel',  'g',     'g',                      'Bgdkpt',                'Same'],
+            ['4',  'ד', 'Dalet',  'd/dh',  'd (hard) / dh',          'Bgdkpt',                'Same'],
+            ['5',  'ה', 'He',     'h',     'h',                      'Guttural',              'Same (often quiescent)'],
+            ['6',  'ו', 'Waw',    'w',     'w',                      'Normal / vowel letter', 'Same'],
+            ['7',  'ז', 'Zayin',  'z',     'z',                      'Normal',                'Same'],
+            ['8',  'ח', 'Cheth',  'ḥ',     'ch (guttural)',           'Guttural',              'Same'],
+            ['9',  'ט', 'Teth',   'ṭ',     't (emphatic)',            'Emphatic',              'Same'],
+            ['10', 'י', 'Yod',    'y',     'y',                      'Normal / vowel letter', 'Same'],
+            ['11', 'כ', 'Kaph',   'k/kh',  'k (hard) / kh',          'Bgdkpt',                'Same'],
+            ['12', 'ל', 'Lamed',  'l',     'l',                      'Normal',                'Same'],
+            ['13', 'מ', 'Mem',    'm',     'm',                      'Normal',                'Same'],
+            ['14', 'נ', 'Nun',    'n',     'n',                      'Normal',                'Same'],
+            ['15', 'ס', 'Samech', 's',     's',                      'Normal',                'Same'],
+            ['16', 'ע', 'Ayin',   'ʿ',     'Silent (pharyngeal)',     'Guttural',              'Same'],
+            ['17', 'פ', 'Pe',     'p / f', 'p (hard) / f',           'Bgdkpt',                'Same'],
+            ['18', 'צ', 'Tsade',  'ṣ',     'ts (emphatic)',           'Emphatic',              'Same'],
+            ['19', 'ק', 'Qoph',   'q',     'q (uvular)',              'Emphatic',              'Same'],
+            ['20', 'ר', 'Resh',   'r',     'r',                      'Normal (resists Dagesh)', 'Same'],
+            ['21', 'שׁ','Shin',   'š',     'sh',                     'Normal',                'Same (Heb. שׁ often = Aram. תּ)'],
+            ['22', 'ת', 'Taw',    't',     't / th',                 'Bgdkpt',                'Same'],
+        ]
+        self.add_section_heading('All 22 Aramaic Letters')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch1_letter_recognition(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch1', 'exercises', 'ch1-letter-recognition')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch1-letter-recognition.pdf')
+    ex = BbaCh1LetterRecognitionPDF(
+        title='BBA Chapter 1 — Aramaic Letter Recognition',
+        subtitle='All 22 Letters · Gutturals · Emphatics · Bgdkpt · Hebrew Comparison',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch2 — Aramaic Vowel Identification
+# ---------------------------------------------------------------------------
+
+class BbaCh2VowelIdentificationPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each vowel form: (1) Vowel Name, (2) Class (Long/Short/Reduced), '
+            '(3) Transliteration, (4) Mater Lectionis? (Yes/No), (5) Notes.'
+        )
+        hdrs_abc = ['#', 'Form', 'Vowel Name', 'Class', 'Translit.', 'Mater?', 'Notes']
+        cr_abc = [0.04, 0.10, 0.14, 0.10, 0.08, 0.08, 0.46]
+        hc = [1]
+        tc_abc = [4]   # Translit. column
+
+        self.add_section_heading('Part A — Long Vowels (1–5)')
+        rows_a = [
+            ['1','בָּ','','','','',''], ['2','בֵּ','','','','',''],
+            ['3','בִּי','','','','',''], ['4','בּוֹ','','','','',''],
+            ['5','בּוּ','','','','',''],
+        ]
+        ans_a = [
+            ['1','בָּ', 'Qamets',     'Long',    'ā', 'No',        'Most common long vowel'],
+            ['2','בֵּ', 'Tsere',      'Long',    'ē', 'No (plain)','Often has Yod mater'],
+            ['3','בִּי','Hireq Gadol','Long',    'ī', 'Yes — Yod', 'Yod is the mater'],
+            ['4','בּוֹ','Holem',      'Long',    'ō', 'Yes — Waw', 'Waw above-right of consonant'],
+            ['5','בּוּ','Shuruq',     'Long',    'ū', 'Yes — Waw', 'Dot in middle of Waw'],
+        ]
+        self.add_generic_table(hdrs_abc, rows_a, col_ratios=cr_abc, heb_cols=hc, translit_cols=tc_abc, show_answers=False)
+        self.add_section_heading('Part A — Answer Key')
+        self.add_generic_table(hdrs_abc, rows_a, col_ratios=cr_abc, heb_cols=hc, translit_cols=tc_abc, show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Short Vowels (6–10)')
+        rows_b = [
+            ['6', 'בַּ','','','','',''], ['7','בֶּ','','','','',''],
+            ['8', 'בִּ','','','','',''], ['9','בָּ (closed unstr.)','','','','',''],
+            ['10','בֻּ','','','','',''],
+        ]
+        ans_b = [
+            ['6', 'בַּ', 'Patach',       'Short',   'a', 'No', 'Most common short vowel'],
+            ['7', 'בֶּ', 'Seghol',       'Short',   'e', 'No', 'Triangle of three dots'],
+            ['8', 'בִּ', 'Hireq Qatan',  'Short',   'i', 'No', 'No Yod mater'],
+            ['9', 'בָּ', 'Qamets Hatuph','Short',   'o', 'No', 'Same sign as Qamets; context determines'],
+            ['10','בֻּ', 'Qibbuts',      'Short',   'u', 'No', 'Three diagonal dots'],
+        ]
+        self.add_generic_table(hdrs_abc, rows_b, col_ratios=cr_abc, heb_cols=hc, translit_cols=tc_abc, show_answers=False)
+        self.add_section_heading('Part B — Answer Key')
+        self.add_generic_table(hdrs_abc, rows_b, col_ratios=cr_abc, heb_cols=hc, translit_cols=tc_abc, show_answers=True, answer_rows=ans_b)
+
+        hdrs_c = ['#', 'Form', 'Vowel Name', 'Class', 'Translit.', 'Notes']
+        cr_c = [0.04, 0.10, 0.16, 0.10, 0.08, 0.52]
+        tc_c = [4]
+        self.add_section_heading('Part C — Reduced Vowels (11–15)')
+        rows_c = [
+            ['11','בְּ (vocal)','','','',''], ['12','בְּ (silent)','','','',''],
+            ['13','אֲ','','','',''],          ['14','אֱ','','','',''],
+            ['15','אֳ','','','',''],
+        ]
+        ans_c = [
+            ['11','בְּ','Vocal Sheva',   'Reduced','ə', 'Brief neutral vowel; opens syllable'],
+            ['12','בְּ','Silent Sheva',  '—',      '—', 'Closes syllable; not pronounced'],
+            ['13','אֲ', 'Hateph Patach', 'Reduced','ă', 'Under gutturals; very brief "ah"'],
+            ['14','אֱ', 'Hateph Seghol', 'Reduced','ĕ', 'Under gutturals; very brief "eh"'],
+            ['15','אֳ', 'Hateph Qamets', 'Reduced','ŏ', 'Under gutturals; rare; very brief "oh"'],
+        ]
+        self.add_generic_table(hdrs_c, rows_c, col_ratios=cr_c, heb_cols=hc, translit_cols=tc_c, show_answers=False)
+        self.add_section_heading('Part C — Answer Key')
+        self.add_generic_table(hdrs_c, rows_c, col_ratios=cr_c, heb_cols=hc, translit_cols=tc_c, show_answers=True, answer_rows=ans_c)
+
+        hdrs_d = ['#', 'Form', 'Mater Letter', 'Vowel', 'Notes']
+        cr_d = [0.04, 0.14, 0.14, 0.10, 0.58]
+        tc_d = [3]   # Vowel column has macron characters
+        self.add_section_heading('Part D — Matres Lectionis (16–20)')
+        rows_d = [
+            ['16','מַלְכָּא','','',''], ['17','כְּתִיב','','',''],
+            ['18','שְׁלוֹ','','',''],  ['19','בּוּ','','',''],
+            ['20','אֱלָהָא','','',''],
+        ]
+        ans_d = [
+            ['16','מַלְכָּא','א (Aleph)','ā (final)','Determined state suffix; Aleph is mater'],
+            ['17','כְּתִיב', 'י (Yod)',  'ī',        'Yod after Hireq = long ī'],
+            ['18','שְׁלוֹ',  'ו (Waw)',  'ō',        'Waw after Holem dot = long ō'],
+            ['19','בּוּ',    'ו (Waw)',  'ū',        'Shuruq — dot in middle of Waw'],
+            ['20','אֱלָהָא','א (Aleph)','ā (final)','Determined state suffix again'],
+        ]
+        self.add_generic_table(hdrs_d, rows_d, col_ratios=cr_d, heb_cols=hc, translit_cols=tc_d, show_answers=False)
+        self.add_section_heading('Part D — Answer Key')
+        self.add_generic_table(hdrs_d, rows_d, col_ratios=cr_d, heb_cols=hc, translit_cols=tc_d, show_answers=True, answer_rows=ans_d)
+
+
+def build_bba_ch2_vowel_identification(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch2', 'exercises', 'ch2-vowel-identification')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch2-vowel-identification.pdf')
+    ex = BbaCh2VowelIdentificationPDF(
+        title='BBA Chapter 2 — Aramaic Vowel Identification',
+        subtitle='Long · Short · Reduced Vowels · Matres Lectionis',
+    )
+    return ex.save(path)
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch3 — Aramaic Syllabification Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh3SyllabificationDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each word: (1) divide into syllables using |, '
+            '(2) label each syllable O (open) or C (closed), '
+            '(3) mark stressed syllable with ′, '
+            '(4) note any special features (Dagesh Forte, quiescence, etc.).'
+        )
+        hdrs = ['#', 'Word', 'Translit.', 'Division', 'Types', 'Stress', 'Special Features']
+        cr = [0.04, 0.12, 0.14, 0.16, 0.10, 0.14, 0.30]
+        hc = [1]
+
+        self.add_section_heading('Part A — Basic Division (1–8)')
+        rows_a = [
+            ['1', 'מַלְכָּא',  'malkāʾ',        '', '', '', ''],
+            ['2', 'אֱלָהָא',   'ʾĕlāhāʾ',       '', '', '', ''],
+            ['3', 'בֵּית',     'bêt',            '', '', '', ''],
+            ['4', 'מַלְכִין',  'malkîn',         '', '', '', ''],
+            ['5', 'כְּתַב',    'kətab',          '', '', '', ''],
+            ['6', 'אֲבוּהִי',  'ʾăbûhî',         '', '', '', ''],
+            ['7', 'יְהוּד',    'yəhûd',          '', '', '', ''],
+            ['8', 'שְׁמַיָּא', 'šəmayyāʾ',       '', '', '', ''],
+        ]
+        ans_a = [
+            ['1', 'מַלְכָּא',  'malkāʾ',   'מַל | כָּא',          'C · C',        '′כָּא',   'Final א quiescent (det. state)'],
+            ['2', 'אֱלָהָא',   'ʾĕlāhāʾ',  'אֱ | לָ | הָא',        'O · O · C',    '′הָא',    'Hateph seghol; final א quiescent'],
+            ['3', 'בֵּית',     'bêt',       'בֵּית',                'C (monosyll.)', '′בֵּית',  'Waw is mater for Tsere'],
+            ['4', 'מַלְכִין',  'malkîn',    'מַל | כִין',           'C · C',        '′כִין',   'Yod is mater for Hireq Gadol'],
+            ['5', 'כְּתַב',    'kətab',     'כְּ | תַב',            'O · C',        '′תַב',    'Opening sheva = vocal'],
+            ['6', 'אֲבוּהִי',  'ʾăbûhî',    'אֲ | בוּ | הִי',       'O · O · O',    '′הִי',    'Hateph Patach; Waw = Shuruq; Yod = mater'],
+            ['7', 'יְהוּד',    'yəhûd',     'יְ | הוּד',            'O · C',        '′הוּד',   'Opening sheva = vocal; Waw = Shuruq'],
+            ['8', 'שְׁמַיָּא', 'šəmayyāʾ',  'שְׁ | מַי | יָא',      'O · C · C',    '′יָא',    'Dagesh Forte in Yod = doubled'],
+        ]
+        tc = [2]
+        self.add_generic_table(hdrs, rows_a, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=False)
+        self.add_section_heading('Part A — Answer Key')
+        self.add_generic_table(hdrs, rows_a, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=True, answer_rows=ans_a)
+
+        self.add_section_heading('Part B — Dagesh Forte Doubling (9–12)')
+        rows_b = [
+            ['9',  'שַׁבַּת',    'šabbat',   '', '', '', ''],
+            ['10', 'כַּסְּדִים', 'kaśśədîm', '', '', '', ''],
+            ['11', 'הַדַּבְרִין','haddabrîn', '', '', '', ''],
+            ['12', 'מִנַּי',     'minnay',   '', '', '', ''],
+        ]
+        ans_b = [
+            ['9',  'שַׁבַּת',    'šabbat',   'שַׁב | בַּת',  'C · C', '′בַּת', 'Dagesh Forte in Beth'],
+            ['10', 'כַּסְּדִים', 'kaśśədîm', 'כַּסּ | דִים', 'C · C', '′דִים', 'Dagesh Forte in Samech'],
+            ['11', 'הַדַּבְרִין','haddabrîn', 'הַד | דַבְ | רִין', 'C · C · C', '′רִין', 'Dagesh Forte in Dalet'],
+            ['12', 'מִנַּי',     'minnay',   'מִנ | נַי',   'C · O', '′נַי', 'Dagesh Forte in Nun (assimilation)'],
+        ]
+        self.add_generic_table(hdrs, rows_b, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=False)
+        self.add_section_heading('Part B — Answer Key')
+        self.add_generic_table(hdrs, rows_b, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=True, answer_rows=ans_b)
+
+        self.add_section_heading('Part C — Guttural and Quiescence Features (13–16)')
+        rows_c = [
+            ['13', 'אָמַר',   'ʾāmar',  '', '', '', ''],
+            ['14', 'חַכִּים', 'ḥakkîm', '', '', '', ''],
+            ['15', 'עִם',     'ʿim',    '', '', '', ''],
+            ['16', 'מַלְאַךְ','malʾak', '', '', '', ''],
+        ]
+        ans_c = [
+            ['13', 'אָמַר',   'ʾāmar',  'אָ | מַר',    'O · C',        '′מַר',   'Long Qamets in open syllable; Aleph opens word'],
+            ['14', 'חַכִּים', 'ḥakkîm', 'חַכּ | כִים', 'C · C',        '′כִים',  'Dagesh Forte in Kaph; Cheth = guttural'],
+            ['15', 'עִם',     'ʿim',    'עִם',          'C (monosyll.)', '′עִם',   'Ayin = guttural; short Hireq in closed syllable'],
+            ['16', 'מַלְאַךְ','malʾak', 'מַל | אַךְ',  'C · C',        '′אַךְ',  'Aleph in second syllable; takes Patach'],
+        ]
+        self.add_generic_table(hdrs, rows_c, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=False)
+        self.add_section_heading('Part C — Answer Key')
+        self.add_generic_table(hdrs, rows_c, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=True, answer_rows=ans_c)
+
+        self.add_section_heading('Part D — Accent and Vowel Reduction (17–20)')
+        rows_d = [
+            ['17', 'נְבוּכַדְנֶצַּר', 'nəbûḵadneṣṣar', '', '', '', ''],
+            ['18', 'מַלְכוּתָא',       'malkûtāʾ',       '', '', '', ''],
+            ['19', 'בְּיוֹם',          'bəyôm',          '', '', '', ''],
+            ['20', 'לְמַלְכָּא',       'ləmalkāʾ',       '', '', '', ''],
+        ]
+        ans_d = [
+            ['17', 'נְבוּכַדְנֶצַּר', 'nəbûḵadneṣṣar', 'נְ·בוּ·כַד·נֶצּ·צַר', 'O·O·C·C·C', '′צַר', 'Opening vocal sheva; Dagesh Forte in Tsade; propretonic reduction'],
+            ['18', 'מַלְכוּתָא',       'malkûtāʾ',       'מַל·כוּ·תָא',         'C·O·C',     '′תָא', 'Waw = Shuruq; final א quiescent'],
+            ['19', 'בְּיוֹם',          'bəyôm',          'בְּ·יוֹם',            'O·C',       '′יוֹם','Prefix בְּ = vocal sheva; Waw = Holem mater'],
+            ['20', 'לְמַלְכָּא',       'ləmalkāʾ',       'לְ·מַל·כָּא',         'O·C·C',     '′כָּא', 'Prefix לְ = vocal sheva; propretonic מַ stays short'],
+        ]
+        self.add_generic_table(hdrs, rows_d, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=False)
+        self.add_section_heading('Part D — Answer Key')
+        self.add_generic_table(hdrs, rows_d, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=True, answer_rows=ans_d)
+
+
+def build_bba_ch3_syllabification_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch3', 'exercises', 'ch3-syllabification-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch3-syllabification-drill.pdf')
+    ex = BbaCh3SyllabificationDrillPDF(
+        title='BBA Chapter 3 — Aramaic Syllabification Drill',
+        subtitle='Open/Closed Syllables · Dagesh Forte · Guttural Quiescence · Accent',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -10250,6 +10566,19 @@ if __name__ == '__main__':
         build_bbg_ch36_mi_verbs_parsing,
     ]
     for fn in bbg_builders:
+        try:
+            saved = fn()
+            print(f'Saved: {saved}')
+        except Exception as exc:
+            print(f'ERROR in {fn.__name__}: {exc}')
+
+    # BBA (Biblical Aramaic) exercises
+    bba_builders = [
+        build_bba_ch1_letter_recognition,
+        build_bba_ch2_vowel_identification,
+        build_bba_ch3_syllabification_drill,
+    ]
+    for fn in bba_builders:
         try:
             saved = fn()
             print(f'Saved: {saved}')

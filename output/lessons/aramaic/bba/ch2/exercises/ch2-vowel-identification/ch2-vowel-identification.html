@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BBA Ch2 — Aramaic Vowel Identification</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 960px; margin: 2em auto; padding: 0 1em; }
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1.1em; margin-top: 1.5em; }
+  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
+  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
+  th { background: #e8e8e8; }
+  td.form { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
+  .answer-row td { background: #e6ffe6; font-size: .85em; }
+  .answer-row { display: none; }
+  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
+  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
+  .global-btns { margin-bottom: 1em; }
+  @media print {
+    .btn, .global-btns { display: none; }
+    input.parse-field { border-bottom: 1px solid #555; }
+    .answer-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<h1>BBA Chapter 2 — Aramaic Vowel Identification</h1>
+<p class="instructions"><strong>Instructions:</strong> For each vowel form, provide: (1) Vowel Name, (2) Class (Long/Short/Reduced), (3) Transliteration, (4) Mater? (Yes/No), (5) Notes.</p>
+
+<div class="global-btns">
+  <button class="btn" onclick="showAll()">Show All Answers</button>
+  <button class="btn" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<h2>Part A — Long Vowels (1–5)</h2>
+<table id="tA"></table>
+
+<h2>Part B — Short Vowels (6–10)</h2>
+<table id="tB"></table>
+
+<h2>Part C — Reduced Vowels (11–15)</h2>
+<table id="tC"></table>
+
+<h2>Part D — Matres Lectionis Examples (16–20)</h2>
+<table id="tD"></table>
+
+<script>
+function buildTable(tableId, headers, rows, answers) {
+  var t = document.getElementById(tableId);
+  var thead = document.createElement("thead");
+  var hr = document.createElement("tr");
+  headers.forEach(function(h){ var th = document.createElement("th"); th.textContent = h; hr.appendChild(th); });
+  thead.appendChild(hr); t.appendChild(thead);
+  var tbody = document.createElement("tbody");
+
+  rows.forEach(function(row, idx) {
+    var num = row[0];
+    var qrow = document.createElement("tr");
+    // number cell
+    var ntd = document.createElement("td"); ntd.textContent = num; qrow.appendChild(ntd);
+    // form cell
+    var ftd = document.createElement("td"); ftd.className = "form"; ftd.innerHTML = row[1]; qrow.appendChild(ftd);
+    // input cells
+    for (var i = 2; i < row.length; i++) {
+      var td = document.createElement("td");
+      var inp = document.createElement("input"); inp.className = "parse-field"; inp.type = "text"; inp.placeholder = headers[i];
+      td.appendChild(inp); qrow.appendChild(td);
+    }
+    // button cell
+    var btd = document.createElement("td");
+    var btn = document.createElement("button"); btn.className = "btn btn-ans"; btn.textContent = "▶ Answer";
+    btn.setAttribute("onclick", "toggle('a"+num+"')");
+    btd.appendChild(btn); qrow.appendChild(btd);
+    tbody.appendChild(qrow);
+
+    // answer row
+    var arow = document.createElement("tr");
+    arow.id = "a" + num; arow.className = "answer-row";
+    var antd = document.createElement("td"); antd.textContent = ""; arow.appendChild(antd);
+    var aftd = document.createElement("td"); aftd.className = "form"; aftd.innerHTML = row[1]; arow.appendChild(aftd);
+    answers[idx].forEach(function(ans) {
+      var atd = document.createElement("td"); atd.textContent = ans; arow.appendChild(atd);
+    });
+    var abtd = document.createElement("td"); arow.appendChild(abtd);
+    tbody.appendChild(arow);
+  });
+  t.appendChild(tbody);
+}
+
+var hdrsABC = ["#","Form","Vowel Name","Class","Translit.","Mater?","Notes",""];
+var rowsA = [
+  [1, "בָּ","","","","",""],
+  [2, "בֵּ","","","","",""],
+  [3, "בִּי","","","","",""],
+  [4, "בּוֹ","","","","",""],
+  [5, "בּוּ","","","","",""]
+];
+var ansA = [
+  ["Qamets","Long","ā","No","Most common long vowel"],
+  ["Tsere","Long","ē","No (plain)","Often has Yod mater"],
+  ["Hireq Gadol","Long","ī","Yes — Yod","Yod is mater"],
+  ["Holem","Long","ō","Yes — Waw","Waw above-right"],
+  ["Shuruq","Long","ū","Yes — Waw","Dot in middle of Waw"]
+];
+buildTable("tA", hdrsABC, rowsA, ansA);
+
+var rowsB = [
+  [6, "בַּ","","","","",""],
+  [7, "בֶּ","","","","",""],
+  [8, "בִּ","","","","",""],
+  [9, "בָּ (closed unstressed)","","","","",""],
+  [10,"בֻּ","","","","",""]
+];
+var ansB = [
+  ["Patach","Short","a","No","Most common short vowel"],
+  ["Seghol","Short","e","No","Three dots, triangle"],
+  ["Hireq Qatan","Short","i","No","No Yod"],
+  ["Qamets Hatuph","Short","o","No","Same sign as Qamets; context distinguishes"],
+  ["Qibbuts","Short","u","No","Three diagonal dots"]
+];
+buildTable("tB", hdrsABC, rowsB, ansB);
+
+var hdrsC = ["#","Form","Vowel Name","Class","Translit.","Notes",""];
+var rowsC = [
+  [11,"בְּ (vocal)","","","",""],
+  [12,"בְּ (silent)","","","",""],
+  [13,"אֲ","","","",""],
+  [14,"אֱ","","","",""],
+  [15,"אֳ","","","",""]
+];
+var ansC = [
+  ["Vocal Sheva","Reduced","ə","Brief neutral vowel; opens syllable"],
+  ["Silent Sheva","—","—","Closes syllable; not pronounced"],
+  ["Hateph Patach","Reduced","ă","Under gutturals; very brief 'ah'"],
+  ["Hateph Seghol","Reduced","ĕ","Under gutturals; very brief 'eh'"],
+  ["Hateph Qamets","Reduced","ŏ","Under gutturals; rare"]
+];
+buildTable("tC", hdrsC, rowsC, ansC);
+
+var hdrsD = ["#","Form","Mater Letter","Vowel Represented","Notes",""];
+var rowsD = [
+  [16,"מַלְכָּא","","",""],
+  [17,"כְּתִיב","","",""],
+  [18,"שְׁלוֹ","","",""],
+  [19,"בּוּ","","",""],
+  [20,"אֱלָהָא","","",""]
+];
+var ansD = [
+  ["א (Aleph)","ā (final)","Determined state suffix; Aleph is mater"],
+  ["י (Yod)","ī","Yod after Hireq = long ī"],
+  ["ו (Waw)","ō","Waw after Holem dot = long ō"],
+  ["ו (Waw)","ū","Shuruq — dot in middle of Waw"],
+  ["א (Aleph)","ā (final)","Again the determined suffix"]
+];
+buildTable("tD", hdrsD, rowsD, ansD);
+
+function toggle(id) {
+  var el = document.getElementById(id);
+  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
+}
+function showAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; }); }
+function hideAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; }); }
+function clearAll() { document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; }); }
+</script>
+</body>
+</html>

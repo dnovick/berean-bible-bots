@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BBA Ch1 — Aramaic Letter Recognition</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 960px; margin: 2em auto; padding: 0 1em; }
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1.1em; margin-top: 1.5em; }
+  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
+  th { background: #e8e8e8; }
+  td.letter { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
+  .answer-row td { background: #e6ffe6; font-size: .85em; }
+  .answer-row { display: none; }
+  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
+  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
+  .global-btns { margin-bottom: 1em; }
+  @media print {
+    .btn, .global-btns { display: none; }
+    input.parse-field { border-bottom: 1px solid #555; }
+    .answer-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<h1>BBA Chapter 1 — Aramaic Letter Recognition</h1>
+<p class="instructions"><strong>Instructions:</strong> For each Aramaic letter, provide: (1) Letter Name, (2) Transliteration, (3) Sound, (4) Special Category (Guttural / Emphatic / Bgdkpt / Normal), (5) Corresponding Hebrew letter.</p>
+
+<div class="global-btns">
+  <button class="btn" onclick="showAll()">Show All Answers</button>
+  <button class="btn" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th><th>Letter</th><th>Name</th><th>Transliteration</th><th>Sound</th><th>Category</th><th>Heb. Equiv.</th><th></th>
+    </tr>
+  </thead>
+  <tbody id="table-body">
+  </tbody>
+</table>
+
+<script>
+var data = [
+  [1,  "א", "Aleph",  "ʾ",     "Silent (glottal)",       "Guttural", "Same"],
+  [2,  "ב", "Beth",   "b / v", "b (hard) / v (soft)",    "Bgdkpt",   "Same"],
+  [3,  "ג", "Gimel",  "g",     "g",                       "Bgdkpt",   "Same"],
+  [4,  "ד", "Dalet",  "d / dh","d (hard) / dh",           "Bgdkpt",   "Same"],
+  [5,  "ה", "He",     "h",     "h",                       "Guttural", "Same (often quiescent in Aram.)"],
+  [6,  "ו", "Waw",    "w",     "w",                       "Normal / vowel letter", "Same"],
+  [7,  "ז", "Zayin",  "z",     "z",                       "Normal",   "Same"],
+  [8,  "ח", "Cheth",  "ḥ",     "ch (guttural fricative)", "Guttural", "Same"],
+  [9,  "ט", "Teth",   "ṭ",     "t (emphatic)",            "Emphatic", "Same"],
+  [10, "י", "Yod",    "y",     "y",                       "Normal / vowel letter", "Same"],
+  [11, "כ", "Kaph",   "k / kh","k (hard) / kh",           "Bgdkpt",   "Same"],
+  [12, "ל", "Lamed",  "l",     "l",                       "Normal",   "Same"],
+  [13, "מ", "Mem",    "m",     "m",                       "Normal",   "Same"],
+  [14, "נ", "Nun",    "n",     "n",                       "Normal",   "Same"],
+  [15, "ס", "Samech", "s",     "s",                       "Normal",   "Same"],
+  [16, "ע", "Ayin",   "ʿ",     "Silent (pharyngeal)",     "Guttural", "Same"],
+  [17, "פ", "Pe",     "p / f", "p (hard) / f",            "Bgdkpt",   "Same"],
+  [18, "צ", "Tsade",  "ṣ",     "ts (emphatic)",           "Emphatic", "Same"],
+  [19, "ק", "Qoph",   "q",     "q (uvular)",              "Emphatic", "Same"],
+  [20, "ר", "Resh",   "r",     "r",                       "Normal (resists Dagesh)", "Same"],
+  [21, "שׁ","Shin",   "š",     "sh",                      "Normal",   "Same (note: Heb. שׁ often = Aram. תּ by sound shift)"],
+  [22, "ת", "Taw",    "t",     "t / th",                  "Bgdkpt",   "Same"]
+];
+
+var tbody = document.getElementById("table-body");
+data.forEach(function(row) {
+  var num = row[0], letter = row[1], name = row[2], translit = row[3], sound = row[4], cat = row[5], heb = row[6];
+  var qid = "q" + num;
+  var aid = "a" + num;
+
+  var qrow = document.createElement("tr");
+  qrow.id = qid;
+  qrow.innerHTML =
+    '<td>' + num + '</td>' +
+    '<td class="letter">' + letter + '</td>' +
+    '<td><input class="parse-field" type="text" placeholder="name"></td>' +
+    '<td><input class="parse-field" type="text" placeholder="translit."></td>' +
+    '<td><input class="parse-field" type="text" placeholder="sound"></td>' +
+    '<td><input class="parse-field" type="text" placeholder="category"></td>' +
+    '<td><input class="parse-field" type="text" placeholder="Heb. equiv."></td>' +
+    '<td><button class="btn btn-ans" onclick="toggle(' + num + ')">▶ Answer</button></td>';
+  tbody.appendChild(qrow);
+
+  var arow = document.createElement("tr");
+  arow.id = aid;
+  arow.className = "answer-row";
+  arow.innerHTML =
+    '<td></td>' +
+    '<td class="letter">' + letter + '</td>' +
+    '<td>' + name + '</td>' +
+    '<td>' + translit + '</td>' +
+    '<td>' + sound + '</td>' +
+    '<td>' + cat + '</td>' +
+    '<td>' + heb + '</td>' +
+    '<td></td>';
+  tbody.appendChild(arow);
+});
+
+function toggle(n) {
+  var el = document.getElementById("a" + n);
+  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
+}
+function showAll() {
+  document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; });
+}
+function hideAll() {
+  document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; });
+}
+function clearAll() {
+  document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; });
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>BBA Ch3 — Aramaic Syllabification Drill</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 980px; margin: 2em auto; padding: 0 1em; }
+  h1 { font-size: 1.3em; }
+  h2 { font-size: 1.1em; margin-top: 1.5em; }
+  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
+  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
+  th { background: #e8e8e8; }
+  td.aram { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; min-width: 80px; }
+  td.translit { font-style: italic; min-width: 100px; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
+  .answer-row td { background: #e6ffe6; font-size: .85em; }
+  .answer-row { display: none; }
+  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
+  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
+  .global-btns { margin-bottom: 1em; }
+  @media print {
+    .btn, .global-btns { display: none; }
+    input.parse-field { border-bottom: 1px solid #555; }
+    .answer-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+<h1>BBA Chapter 3 — Syllabification Drill</h1>
+<p class="instructions"><strong>Instructions:</strong> For each word: (1) divide into syllables using | , (2) label each syllable O (open) or C (closed), (3) mark the stressed syllable with ′, (4) note any special features.</p>
+
+<div class="global-btns">
+  <button class="btn" onclick="showAll()">Show All Answers</button>
+  <button class="btn" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<script>
+var sections = [
+  { title: "Part A — Basic Division (1–8)", id: "tA", rows: [
+    [1, "מַלְכָּא","malkāʾ", "מַל | כָּא","C · C","′כָּא (ultima)","Final א quiescent (det. state suffix)"],
+    [2, "אֱלָהָא","ʾĕlāhāʾ", "אֱ | לָ | הָא","O · O · C","′הָא (ultima)","Hateph seghol under Aleph; final א quiescent"],
+    [3, "בֵּית","bêt",        "בֵּית","C (monosyllable)","′בֵּית","Waw is mater for Tsere"],
+    [4, "מַלְכִין","malkîn",  "מַל | כִין","C · C","′כִין (ultima)","Yod is mater for Hireq Gadol"],
+    [5, "כְּתַב","kətab",     "כְּ | תַב","O · C","′תַב (ultima)","Opening sheva = vocal"],
+    [6, "אֲבוּהִי","ʾăbûhî",  "אֲ | בוּ | הִי","O · O · O","′הִי (ultima)","Hateph Patach; Waw = Shuruq; Yod = mater"],
+    [7, "יְהוּד","yəhûd",     "יְ | הוּד","O · C","′הוּד (ultima)","Opening sheva = vocal; Waw = Shuruq"],
+    [8, "שְׁמַיָּא","šəmayyāʾ","שְׁ | מַי | יָא","O · C · C","′יָא (ultima)","Dagesh Forte in Yod = doubled"]
+  ]},
+  { title: "Part B — Dagesh Forte Doubling (9–12)", id: "tB", rows: [
+    [9,  "שַׁבַּת","šabbat",     "שַׁב | בַּת","C · C","′בַּת (ultima)","Dagesh Forte in Beth"],
+    [10, "כַּסְּדִים","kaśśədîm","כַּסּ | דִים","C · C","′דִים (ultima)","Dagesh Forte in Samech"],
+    [11, "הַדַּבְרִין","haddabrîn","הַד | דַבְ | רִין","C · C · C","′רִין (ultima)","Dagesh Forte in Dalet"],
+    [12, "מִנַּי","minnay",     "מִנ | נַי","C · O","′נַי (ultima)","Dagesh Forte in Nun (assimilated Nun)"]
+  ]},
+  { title: "Part C — Guttural and Quiescence Features (13–16)", id: "tC", rows: [
+    [13, "אָמַר","ʾāmar",  "אָ | מַר","O · C","′מַר (ultima)","Long Qamets in open syllable; Aleph opens word"],
+    [14, "חַכִּים","ḥakkîm","חַכּ | כִים","C · C","′כִים (ultima)","Dagesh Forte in Kaph; Cheth = guttural"],
+    [15, "עִם","ʿim",      "עִם","C (monosyllable)","′עִם","Ayin = guttural; short Hireq in closed syllable"],
+    [16, "מַלְאַךְ","malʾak","מַל | אַךְ","C · C","′אַךְ (ultima)","Aleph takes Patach; not quiescent here"]
+  ]},
+  { title: "Part D — Accent and Vowel Reduction (17–20)", id: "tD", rows: [
+    [17, "נְבוּכַדְנֶצַּר","nəbûḵadneṣṣar","נְ·בוּ·כַד·נֶצּ·צַר","O·O·C·C·C","′צַר (ultima)","Opening vocal sheva; Dagesh Forte in Tsade; propretonic reduction"],
+    [18, "מַלְכוּתָא","malkûtāʾ",    "מַל·כוּ·תָא","C·O·C","′תָא (ultima)","Waw = Shuruq; final א quiescent"],
+    [19, "בְּיוֹם","bəyôm",           "בְּ·יוֹם","O·C","′יוֹם (ultima)","Prefix בְּ = vocal sheva; Waw = Holem mater"],
+    [20, "לְמַלְכָּא","ləmalkāʾ",     "לְ·מַל·כָּא","O·C·C","′כָּא (ultima)","Prefix לְ = vocal sheva; propretonic מַ stays short"]
+  ]}
+];
+
+document.addEventListener("DOMContentLoaded", function() {
+  sections.forEach(function(sec) {
+    var h2 = document.createElement("h2"); h2.textContent = sec.title; document.body.appendChild(h2);
+    var t = document.createElement("table"); t.id = sec.id; document.body.appendChild(t);
+
+    var thead = document.createElement("thead");
+    var hr = document.createElement("tr");
+    ["#","Word","Translit.","Syllable Division","Types (O/C)","Stress","Special Features",""].forEach(function(h){
+      var th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
+    });
+    thead.appendChild(hr); t.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+    sec.rows.forEach(function(row) {
+      var num = row[0], aram = row[1], translit = row[2];
+      var ansDiv = row[3], ansTypes = row[4], ansStress = row[5], ansFeatures = row[6];
+
+      var qrow = document.createElement("tr");
+      qrow.innerHTML =
+        '<td>' + num + '</td>' +
+        '<td class="aram">' + aram + '</td>' +
+        '<td class="translit">' + translit + '</td>' +
+        '<td><input class="parse-field" type="text" placeholder="divisions"></td>' +
+        '<td><input class="parse-field" type="text" placeholder="O/C"></td>' +
+        '<td><input class="parse-field" type="text" placeholder="stress"></td>' +
+        '<td><input class="parse-field" type="text" placeholder="special features"></td>' +
+        '<td><button class="btn btn-ans" onclick="toggle(\'a'+num+'\')">▶ Answer</button></td>';
+      tbody.appendChild(qrow);
+
+      var arow = document.createElement("tr");
+      arow.id = "a" + num; arow.className = "answer-row";
+      arow.innerHTML =
+        '<td></td>' +
+        '<td class="aram">' + aram + '</td>' +
+        '<td class="translit">' + translit + '</td>' +
+        '<td>' + ansDiv + '</td>' +
+        '<td>' + ansTypes + '</td>' +
+        '<td>' + ansStress + '</td>' +
+        '<td>' + ansFeatures + '</td>' +
+        '<td></td>';
+      tbody.appendChild(arow);
+    });
+    t.appendChild(tbody);
+  });
+});
+
+function toggle(id) {
+  var el = document.getElementById(id);
+  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
+}
+function showAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; }); }
+function hideAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; }); }
+function clearAll() { document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; }); }
+</script>
+</body>
+</html>
