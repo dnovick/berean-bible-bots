@@ -11439,6 +11439,87 @@ def build_bba_ch16_peal_infinitive_drill(out_dir: str = None) -> str:
     return ex.save(path)
 
 
+class BbaCh17PealParticipleDrillPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each numbered Peal participle form drawn from Daniel or Ezra, '
+            'identify whether it is Active (qatal pattern: qamets on R1, tsere on R2) '
+            'or Passive (qtil pattern: vocal shewa on R1, hireq-yod on R2), '
+            'give the Root (three root consonants, Peal perfect 3ms form), '
+            'the G/N (gender and number: ms / fs / mp / fp), '
+            'and provide an English translation. '
+            'Forms cover strong roots and the major weak classes: '
+            'hollow II-waw (qaam pattern), III-he (final he/aleph mater), '
+            'I-nun (nun retained), and I-aleph/guttural. '
+            'Both absolute and determined state forms are included.'
+        )
+        hdrs = ['#', 'Form', 'Act/Pass', 'Root', 'G/N', 'Translation']
+        cr = [0.04, 0.15, 0.12, 0.12, 0.08, 0.49]
+        hc = [1]
+        rows = [
+            [1,  'כָּתֵב',       '', '', '', ''],
+            [2,  'כְּתִיב',      '', '', '', ''],
+            [3,  'כָּתְבִין',    '', '', '', ''],
+            [4,  'כְּתִיבִין',   '', '', '', ''],
+            [5,  'קָאֵם',        '', '', '', ''],
+            [6,  'שְׁלִיח',      '', '', '', ''],
+            [7,  'כָּתְבָן',     '', '', '', ''],
+            [8,  'אֲסִיר',       '', '', '', ''],
+            [9,  'חָזֵה',        '', '', '', ''],
+            [10, 'רְשִׁים',      '', '', '', ''],
+            [11, 'כָּתְבָה',     '', '', '', ''],
+            [12, 'כְּתִיבָא',    '', '', '', ''],
+            [13, 'שָׁמֵעַ',      '', '', '', ''],
+            [14, 'שְׁלִיחִין',   '', '', '', ''],
+            [15, 'עָבְדִין',     '', '', '', ''],
+            [16, 'נָפֵל',        '', '', '', ''],
+            [17, 'אֲסִירָא',     '', '', '', ''],
+            [18, 'כָּתְבַיָּא',  '', '', '', ''],
+            [19, 'בָּנֵא',       '', '', '', ''],
+            [20, 'יְהִיב',       '', '', '', ''],
+        ]
+        ans = [
+            [1,  'כָּתֵב',       'Active',  'כתב',  'ms', 'writing / one who writes'],
+            [2,  'כְּתִיב',      'Passive', 'כתב',  'ms', 'written / it is written'],
+            [3,  'כָּתְבִין',    'Active',  'כתב',  'mp', 'writing (mp) / ones who write'],
+            [4,  'כְּתִיבִין',   'Passive', 'כתב',  'mp', 'written (mp) / those who are written'],
+            [5,  'קָאֵם',        'Active',  'קום',  'ms', 'standing / one who stands (hollow)'],
+            [6,  'שְׁלִיח',      'Passive', 'שׁלח', 'ms', 'sent / one who has been sent'],
+            [7,  'כָּתְבָן',     'Active',  'כתב',  'fp', 'writing (fp) / those (f) who write'],
+            [8,  'אֲסִיר',       'Passive', 'אסר',  'ms', 'bound / imprisoned'],
+            [9,  'חָזֵה',        'Active',  'חזה',  'ms', 'seeing / one who sees (III-he)'],
+            [10, 'רְשִׁים',      'Passive', 'רשׁם', 'ms', 'inscribed / signed / registered'],
+            [11, 'כָּתְבָה',     'Active',  'כתב',  'fs', 'writing (fs) / one (f) who writes'],
+            [12, 'כְּתִיבָא',    'Passive', 'כתב',  'ms', 'the written one (ms det.)'],
+            [13, 'שָׁמֵעַ',      'Active',  'שׁמע', 'ms', 'hearing / one who hears'],
+            [14, 'שְׁלִיחִין',   'Passive', 'שׁלח', 'mp', 'sent ones (mp) / envoys'],
+            [15, 'עָבְדִין',     'Active',  'עבד',  'mp', 'doing / serving (mp)'],
+            [16, 'נָפֵל',        'Active',  'נפל',  'ms', 'falling / one who falls (I-nun)'],
+            [17, 'אֲסִירָא',     'Passive', 'אסר',  'ms', 'the prisoner (ms det.)'],
+            [18, 'כָּתְבַיָּא',  'Active',  'כתב',  'mp', 'the writers (mp det.)'],
+            [19, 'בָּנֵא',       'Active',  'בנה',  'ms', 'building / one who builds (III-he)'],
+            [20, 'יְהִיב',       'Passive', 'יהב',  'ms', 'given / that which is given'],
+        ]
+        self.add_section_heading('Peal Participle Drill — Items 1–20')
+        self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, show_answers=False)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(hdrs, ans, col_ratios=cr, heb_cols=hc, show_answers=True, answer_rows=ans)
+
+
+def build_bba_ch17_peal_participle_drill(out_dir: str = None) -> str:
+    if out_dir is None:
+        here = os.path.dirname(os.path.abspath(__file__))
+        out_dir = os.path.join(here, '..', '..', 'output', 'lessons',
+                               'aramaic', 'bba', 'ch17', 'exercises', 'ch17-peal-participle-drill')
+    os.makedirs(out_dir, exist_ok=True)
+    path = os.path.join(out_dir, 'ch17-peal-participle-drill.pdf')
+    ex = BbaCh17PealParticipleDrillPDF(
+        title='BBA Chapter 17 — Peal Participle Drill',
+        subtitle='Peal Active and Passive Participles · Strong and Weak Roots · Daniel and Ezra',
+    )
+    return ex.save(path)
+
+
 if __name__ == '__main__':
     # Ch1–Ch23 exercises (new)
     builders_ch1_23 = [
@@ -11581,6 +11662,7 @@ if __name__ == '__main__':
         build_bba_ch14_peal_imperfect_drill,
         build_bba_ch15_peal_imperative_drill,
         build_bba_ch16_peal_infinitive_drill,
+        build_bba_ch17_peal_participle_drill,
     ]
     for fn in bba_builders:
         try:
