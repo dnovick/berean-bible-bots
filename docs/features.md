@@ -1,5 +1,50 @@
 # Features
 
+## Contents
+
+- [Query API](#query-api)
+- [Word Study](#word-study)
+- [Semantic Profile](#semantic-profile)
+- [Concordance](#concordance)
+- [Frequency Statistics](#frequency-statistics)
+- [Book Profiles](#book-profiles)
+- [Translation Equivalents (IBM Model 1)](#translation-equivalents-ibm-model-1)
+- [Collocation Statistics](#collocation-statistics)
+- [Morphological Distribution](#morphological-distribution)
+- [LXX Translation Consistency](#lxx-translation-consistency)
+- [NT Quotations](#nt-quotations)
+- [NT Quotation Word Alignment](#nt-quotation-word-alignment)
+- [Intertextuality Network](#intertextuality-network)
+- [NT Greek Syntax (MACULA)](#nt-greek-syntax-macula)
+- [OT Hebrew Syntax (MACULA)](#ot-hebrew-syntax-macula)
+- [Speaker Attribution](#speaker-attribution)
+- [Lexicon API](#lexicon-api)
+- [Christological Titles](#christological-titles)
+- [Syntactic Role Search](#syntactic-role-search)
+- [Object / Argument Search](#object--argument-search)
+- [LXX as a Queryable Corpus](#lxx-as-a-queryable-corpus)
+- [OT Speaker Attribution](#ot-speaker-attribution)
+- [Louw-Nida Domain Search](#louw-nida-domain-search)
+- [Cross-Testament Trajectory](#cross-testament-trajectory)
+- [Theological Term Reports](#theological-term-reports)
+- [Hebrew Poetry Analysis](#hebrew-poetry-analysis)
+- [Hebrew Verbal Syntax Analysis](#hebrew-verbal-syntax-analysis)
+- [Theological Term Map](#theological-term-map)
+- [Synonym Comparison](#synonym-comparison)
+- [Phrase & Proximity Search](#phrase--proximity-search)
+- [Divine Names Analysis](#divine-names-analysis)
+- [Genre Comparison](#genre-comparison)
+- [Hapax Legomena](#hapax-legomena)
+- [Parallel Passages](#parallel-passages)
+- [HTML & CSV Export](#html--csv-export)
+- [Charts](#charts)
+- [Hiphil (הִפְעִיל) Verb Morphology](#hiphil-הפעיל-verb-morphology)
+- [Hebrew Preposition Analysis](#hebrew-preposition-analysis)
+- [Greek Preposition Analysis](#greek-preposition-analysis)
+- [Slash Commands (Claude Code Skills)](#slash-commands-claude-code-skills)
+
+---
+
 ## Query API
 
 The `query()` function is the core access point for morphological data.
