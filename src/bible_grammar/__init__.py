@@ -195,6 +195,17 @@ from .hithpael import (
     hithpael_semantic_chart, hithpael_top_roots_chart,
     hithpael_report,
 )
+from .nt_noun_profile import (
+    nt_noun_data, nt_noun_case_profile, nt_noun_gender_profile, nt_noun_number_profile,
+    nt_noun_case_gender, nt_noun_top_lemmas, nt_noun_lemma_case,
+    nt_noun_book_distribution, nt_noun_genre_profile, nt_article_stats,
+    print_nt_noun_overview, print_nt_noun_case, print_nt_noun_gender,
+    print_nt_noun_case_gender, print_nt_noun_top_lemmas,
+    print_nt_noun_genre_profile, print_nt_noun_book_distribution, print_nt_article_stats,
+    nt_noun_case_chart, nt_noun_gender_chart, nt_noun_genre_heatmap,
+    nt_noun_case_gender_heatmap, nt_noun_book_chart,
+    CASE_ORDER, GENDER_ORDER,
+)
 from .nt_verb_profile import (
     nt_verb_data, nt_verb_tense_profile, nt_verb_voice_profile, nt_verb_mood_profile,
     nt_verb_tense_voice, nt_verb_tense_mood,

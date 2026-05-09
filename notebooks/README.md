@@ -51,6 +51,12 @@ the notebooks running in VS Code (5–10 minutes).
 
 ## New Testament (Greek)
 
+### Noun Morphology
+
+| Notebook | Description |
+|---|---|
+| [nt/nouns/nt_nouns.ipynb](nt/nouns/nt_nouns.ipynb) | GNT noun morphology: case/gender/number profiles, case × gender crosstab, article co-occurrence by case, top lemmas, genre comparison |
+
 ### Verb Morphology
 
 | Notebook | Description |

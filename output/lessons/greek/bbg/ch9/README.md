@@ -18,6 +18,12 @@
 | [ch9-vocab-deck.txt](ch9-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch9-vocab-deck-fd.txt](ch9-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [GNT Noun Morphology](../../../../../notebooks/nt/nouns/nt_nouns.ipynb) | Case/gender distribution — how adjectives match noun case, gender, number |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

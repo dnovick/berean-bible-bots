@@ -18,6 +18,12 @@
 | [ch6-vocab-deck.txt](ch6-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch6-vocab-deck-fd.txt](ch6-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [GNT Noun Morphology](../../../../../notebooks/nt/nouns/nt_nouns.ipynb) | Case/gender distribution, article co-occurrence, top lemmas (nominative and accusative cases) |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

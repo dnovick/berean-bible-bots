@@ -18,6 +18,12 @@
 | [ch10-vocab-deck.txt](ch10-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch10-vocab-deck-fd.txt](ch10-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [GNT Noun Morphology](../../../../../notebooks/nt/nouns/nt_nouns.ipynb) | Case/gender distribution across all three declensions |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

@@ -18,6 +18,12 @@
 | [ch7-vocab-deck.txt](ch7-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch7-vocab-deck-fd.txt](ch7-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [GNT Noun Morphology](../../../../../notebooks/nt/nouns/nt_nouns.ipynb) | Case/gender distribution — genitive and dative cases in context |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
