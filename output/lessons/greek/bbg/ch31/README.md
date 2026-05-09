@@ -23,6 +23,7 @@
 | Notebook | What it shows |
 |---|---|
 | [Concordance](../../../../../notebooks/both/lexicon/concordance.ipynb) | Find all subjunctive forms of any NT verb |
+| [Discourse Particles](../../../../../notebooks/nt/discourse/discourse_particles.ipynb) | ἵνα + subjunctive function classification (purpose/content/result); ὅτι function analysis |
 
 ---
 

@@ -72,7 +72,9 @@ the notebooks running in VS Code (5–10 minutes).
 
 ### Discourse
 
-*(No notebooks yet — add NT discourse particle analysis here when ready.)*
+| Notebook | Description |
+|---|---|
+| [nt/discourse/discourse_particles.ipynb](nt/discourse/discourse_particles.ipynb) | Greek discourse particles (καί, δέ, ὅτι, ἵνα, γάρ, οὖν, ἀλλά): frequency, genre comparison, ἵνα clause function classification (purpose/content/result), ὅτι function classification (recitative/causal/content) |
 
 ---
 
