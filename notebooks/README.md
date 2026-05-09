@@ -10,6 +10,12 @@ all backed by the MACULA Hebrew WLC and MACULA Greek Nestle1904 syntax trees.
 
 ## Old Testament (Hebrew)
 
+### Lexicon
+
+| Notebook | Description |
+|---|---|
+| [ot/lexicon/hapax_legomena.ipynb](ot/lexicon/hapax_legomena.ipynb) | Hapax legomena — words occurring once in the biblical text: OT and NT hapax counts by book, deep dives into Job (most OT hapaxes) and Leviticus (cultic vocabulary), NT hapaxes in Revelation, filtering by part of speech, rare words (max_count=3) |
+
 ### Verb Stems
 
 | Notebook | Description |
@@ -64,6 +70,8 @@ all backed by the MACULA Hebrew WLC and MACULA Greek Nestle1904 syntax trees.
 | [both/survey/data_exploration.ipynb](both/survey/data_exploration.ipynb) | Initial data exploration: corpus sizes, token distributions, available columns |
 | [both/survey/book_profiles.ipynb](both/survey/book_profiles.ipynb) | Per-book profiles: verb stem breakdown, tense distributions, genre classification |
 | [both/survey/christological_titles.ipynb](both/survey/christological_titles.ipynb) | Christological title frequency in the Gospels: unfiltered vs. speaker-filtered counts; title chart; I AM sayings; Son of Man sayings |
+| [both/survey/divine_names.ipynb](both/survey/divine_names.ipynb) | Divine names and christological titles: OT (YHWH/Elohim/Adonai/Yah/Shaddai/El) and NT (Theos/Kyrios/Iesous/Christos/Pater/Pneuma) frequency by book and canonical section, stacked bar charts, full report |
+| [both/survey/genre_compare.ipynb](both/survey/genre_compare.ipynb) | Genre comparison — morphological patterns by literary section: OT verb stem/conjugation/POS by Torah/Historical/Wisdom/Prophets; NT verb tense/voice/mood by Gospels/Pauline/General; heatmaps; full report |
 
 ### Lexicon
 
@@ -72,6 +80,8 @@ all backed by the MACULA Hebrew WLC and MACULA Greek Nestle1904 syntax trees.
 | [both/lexicon/word_study.ipynb](both/lexicon/word_study.ipynb) | Word study API: OT and NT concordance, semantic range, usage statistics |
 | [both/lexicon/concordance.ipynb](both/lexicon/concordance.ipynb) | Concordance generation for Hebrew and Greek words across both corpora |
 | [both/lexicon/language_analysis.ipynb](both/lexicon/language_analysis.ipynb) | Cross-language analysis: lexicon API (TBESH/TBESG), LXX consistency, domain search |
+| [both/lexicon/morph_distribution.ipynb](both/lexicon/morph_distribution.ipynb) | Morphological distribution — how a root's forms spread across books: Hebrew (dabar/amar/bara stem profiles), Greek (lego/pisteuo tense×voice, logos case distribution); stacked bar charts; print helper |
+| [both/lexicon/collocation_and_phrase.ipynb](both/lexicon/collocation_and_phrase.ipynb) | Collocations and phrase search: PMI/G² collocation statistics for ruach/hesed/logos/pistis; phrase search (dabar YHWH, kyrios Iesous); wildcard patterns; proximity search (ruach within 5 of Elohim) |
 
 ### Intertextuality
 
@@ -103,6 +113,7 @@ All notebooks use `sys.path.insert(0, '<depth>/src')` to locate the `bible_gramm
 | `notebooks/ot/verbs/` | `'../../../src'` |
 | `notebooks/ot/syntax/` | `'../../../src'` |
 | `notebooks/ot/speakers/` | `'../../../src'` |
+| `notebooks/ot/lexicon/` | `'../../../src'` |
 | `notebooks/nt/syntax/` | `'../../../src'` |
 | `notebooks/nt/discourse/` | `'../../../src'` |
 | `notebooks/both/survey/` | `'../../../src'` |
