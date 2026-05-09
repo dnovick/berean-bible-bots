@@ -111,6 +111,20 @@ from .qal import (
     qal_semantic_chart, qal_top_roots_chart,
     qal_report,
 )
+from .hophal import (
+    hophal_data, hophal_conjugation_profile, hophal_top_roots,
+    hophal_root_conjugation, hophal_book_distribution,
+    hophal_stem_comparison, hophal_dominant_roots,
+    hophal_semantic_categories,
+    print_hophal_overview, print_hophal_conjugation,
+    print_hophal_top_roots, print_hophal_root_conjugation,
+    print_hophal_book_distribution, print_hophal_dominant_roots,
+    print_hophal_semantic_categories,
+    hophal_conjugation_chart, hophal_book_chart,
+    hophal_stem_chart, hophal_root_heatmap,
+    hophal_semantic_chart, hophal_top_roots_chart,
+    hophal_report,
+)
 from .hiphil import (
     hiphil_data, hiphil_conjugation_profile, hiphil_top_roots,
     hiphil_root_conjugation, hiphil_book_distribution,

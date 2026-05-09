@@ -15,8 +15,9 @@ all backed by the MACULA Hebrew WLC and MACULA Greek Nestle1904 syntax trees.
 | Notebook | Description |
 |---|---|
 | [ot/verbs/qal.ipynb](ot/verbs/qal.ipynb) | Qal (קַל) — base stem (~68% of all OT verbs): conjugation profile (incl. participle passive), top roots, root×conjugation heatmap, book distribution, stem comparison, dominant roots, semantic categories, full report |
-| [ot/verbs/hiphil.ipynb](ot/verbs/hiphil.ipynb) | Hiphil (הִפְעִיל) — causative-active stem: conjugation profile, top roots, root×conjugation heatmap, book distribution, stem comparison, dominant roots, semantic categories, full report |
+| [ot/verbs/hiphil.ipynb](ot/verbs/hiphil.ipynb) | Hiphil (הִפְעִיל) — causative-active stem (BBH Ch26–27): conjugation profile, top roots, root×conjugation heatmap, book distribution, stem comparison, dominant roots, semantic categories, full report |
 | [ot/verbs/niphal.ipynb](ot/verbs/niphal.ipynb) | Niphal (נִפְעַל) — reflexive/passive stem: same nine-section structure as Hiphil; covers passive, reflexive, reciprocal, middle/stative, and tolerative functions |
+| [ot/verbs/hophal.ipynb](ot/verbs/hophal.ipynb) | Hophal (הָפְעַל) — causative-passive stem (BBH Ch28–29): passive of Hiphil; legal formulas (מוּת יוּמַת), physical transfer (was brought/led), speech reporting (was told); rarest of the seven stems (~419 tokens) |
 | [ot/verbs/piel.ipynb](ot/verbs/piel.ipynb) | Piel (פִּעֵל) — intensive-active stem: intensive, factitive, declarative, denominative functions; top root דִּבֵּר (speak) dominates |
 | [ot/verbs/pual.ipynb](ot/verbs/pual.ipynb) | Pual (פֻּעַל) — passive of Piel: passive intensive, factitive, declarative, and birth (יֻלַּד) functions |
 | [ot/verbs/hithpael.ipynb](ot/verbs/hithpael.ipynb) | Hithpael (הִתְפַּעֵל) — reflexive-intensive stem: reflexive, reciprocal, iterative/frequentative, denominative; top root הִתְפַּלֵּל (pray) |
