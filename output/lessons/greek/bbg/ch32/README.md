@@ -18,6 +18,12 @@
 | [ch32-vocab-deck.txt](ch32-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch32-vocab-deck-fd.txt](ch32-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Concordance](../../../../../notebooks/both/lexicon/concordance.ipynb) | Find all infinitive forms; collocations with key infinitive complements |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

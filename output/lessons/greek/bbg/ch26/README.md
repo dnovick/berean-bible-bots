@@ -12,6 +12,12 @@
 
 *No vocabulary introduced in this chapter.*
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Participial usage rates by genre |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

@@ -18,6 +18,12 @@
 | [ch31-vocab-deck.txt](ch31-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch31-vocab-deck-fd.txt](ch31-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Concordance](../../../../../notebooks/both/lexicon/concordance.ipynb) | Find all subjunctive forms of any NT verb |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

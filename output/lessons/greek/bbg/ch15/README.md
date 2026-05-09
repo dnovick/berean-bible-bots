@@ -12,6 +12,12 @@
 
 *No vocabulary introduced in this chapter.*
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Hebrew & Greek Verb Stem Overview](../../../../../notebooks/ot/verbs/stem_overview.ipynb) | Comparative stem statistics; Greek tense×voice heatmap |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

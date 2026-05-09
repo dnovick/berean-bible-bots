@@ -18,6 +18,12 @@
 | [ch27-vocab-deck.txt](ch27-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch27-vocab-deck-fd.txt](ch27-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Present participle distribution by genre and function |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

@@ -18,6 +18,12 @@
 | [ch21-vocab-deck.txt](ch21-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch21-vocab-deck-fd.txt](ch21-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Imperfect tense distribution in narrative vs epistolary genres |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

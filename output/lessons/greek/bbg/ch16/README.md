@@ -18,6 +18,12 @@
 | [ch16-vocab-deck.txt](ch16-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch16-vocab-deck-fd.txt](ch16-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Greek present tense distribution across Gospels / Pauline / General epistles |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

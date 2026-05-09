@@ -18,6 +18,12 @@
 | [ch14-vocab-deck.txt](ch14-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch14-vocab-deck-fd.txt](ch14-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [NT Syntactic Roles](../../../../../notebooks/nt/syntax/syntactic_roles_nt.ipynb) | Clause-level syntactic role analysis |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

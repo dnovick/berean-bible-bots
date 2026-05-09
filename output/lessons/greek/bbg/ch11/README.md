@@ -18,6 +18,12 @@
 | [ch11-vocab-deck.txt](ch11-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch11-vocab-deck-fd.txt](ch11-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Divine Names & Christological Titles](../../../../../notebooks/both/survey/divine_names.ipynb) | How θεός, κύριος, Ἰησοῦς, Χριστός, πατήρ, πνεῦμα distribute across the NT |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

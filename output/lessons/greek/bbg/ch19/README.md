@@ -18,6 +18,12 @@
 | [ch19-vocab-deck.txt](ch19-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch19-vocab-deck-fd.txt](ch19-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Future tense distribution and voice patterns across NT genres |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

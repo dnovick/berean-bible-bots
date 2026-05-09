@@ -18,6 +18,12 @@
 | [ch23-vocab-deck.txt](ch23-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch23-vocab-deck-fd.txt](ch23-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Aorist distribution and voice; most common aorist roots by genre |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

@@ -18,6 +18,12 @@
 | [ch35-vocab-deck.txt](ch35-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch35-vocab-deck-fd.txt](ch35-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Morphological Distribution](../../../../../notebooks/both/lexicon/morph_distribution.ipynb) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

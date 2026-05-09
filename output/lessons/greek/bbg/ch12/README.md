@@ -18,6 +18,12 @@
 | [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [NT Syntactic Roles](../../../../../notebooks/nt/syntax/syntactic_roles_nt.ipynb) | What God and Jesus do as subjects/objects across the NT |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

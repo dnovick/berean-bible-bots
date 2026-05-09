@@ -18,6 +18,12 @@
 | [ch28-vocab-deck.txt](ch28-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch28-vocab-deck-fd.txt](ch28-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Aorist participle distribution and temporal relationship to main verb |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

@@ -18,6 +18,12 @@
 | [ch25-vocab-deck.txt](ch25-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch25-vocab-deck-fd.txt](ch25-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Perfect tense distribution by genre; theologically important perfect forms |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

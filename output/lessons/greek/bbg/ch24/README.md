@@ -18,6 +18,12 @@
 | [ch24-vocab-deck.txt](ch24-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch24-vocab-deck-fd.txt](ch24-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Passive voice distribution by tense and NT genre |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

@@ -18,6 +18,12 @@
 | [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Greek Prepositions](../../../../../notebooks/nt/syntax/prepositions.ipynb) | Frequency, case binding, NT vs LXX comparison for all major prepositions |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

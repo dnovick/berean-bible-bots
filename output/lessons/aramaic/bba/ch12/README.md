@@ -22,6 +22,12 @@
 |---|---|
 | [exercises/ch12-verb-intro-drill/](exercises/ch12-verb-intro-drill/README.md) | Stem identification and root recognition drill from Daniel and Ezra |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Hebrew & Greek Verb Stem Overview](../../../../../notebooks/ot/verbs/stem_overview.ipynb) | Consolidated OT stem statistics including Aramaic verbal context |
+
 ---
 
 *Basics of Biblical Aramaic, Van Pelt*

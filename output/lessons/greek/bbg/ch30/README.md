@@ -18,6 +18,12 @@
 | [ch30-vocab-deck.txt](ch30-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch30-vocab-deck-fd.txt](ch30-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Perfect participle and genitive absolute distribution by genre |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

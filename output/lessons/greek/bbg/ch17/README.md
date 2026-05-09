@@ -18,6 +18,12 @@
 | [ch17-vocab-deck.txt](ch17-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch17-vocab-deck-fd.txt](ch17-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [Morphological Distribution](../../../../../notebooks/both/lexicon/morph_distribution.ipynb) | How a verb root's forms spread across tenses and books |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
