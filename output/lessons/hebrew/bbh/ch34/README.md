@@ -286,3 +286,11 @@ When **R1 is an emphatic or related consonant**, the תְ of the Hithpael prefix
 | What stem is the Hithpael the reflexive of? | **Piel** (intensive-active) |
 | Where is the Piel covered? | **Chapter 30** (strong); Chapter 31 (weak) |
 | Where is Hithpael Weak covered? | **Chapter 35** |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Hithpael Stem](../../../../../notebooks/ot/verbs/hithpael.ipynb) | Hithpael stem: complete morphological profile; reflexive, reciprocal, iterative categories |

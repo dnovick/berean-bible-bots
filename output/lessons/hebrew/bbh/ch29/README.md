@@ -373,3 +373,11 @@ The following weak-root Hophal lemmas are among the most common in the OT. Frequ
 ---
 
 *Sources: MACULA Hebrew WLC (Clear Bible, CC BY 4.0) · BBH = Pratico & Van Pelt, Basics of Biblical Hebrew, 3rd ed.*
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Hophal Stem](../../../../../notebooks/ot/verbs/hophal.ipynb) | Hophal stem: root×conjugation heatmap; weak root behavior in the causative-passive |

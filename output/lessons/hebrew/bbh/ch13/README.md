@@ -265,7 +265,9 @@ Qal examples of Prophetic Perfect are most common in the Prophets.
 
 ## 10. Links
 
-| Resource | URL |
+| Resource | Link |
 |---|---|
 | Anki (free flashcard app — Windows, Mac, iOS, Android) | [apps.ankiweb.net](https://apps.ankiweb.net) |
 | Morphology import file for this chapter | [ch13-morphology-deck.txt](ch13-morphology-deck.txt) |
+| Qal stem notebook | [ot/verbs/qal.ipynb](../../../../../notebooks/ot/verbs/qal.ipynb) |
+| Per-book language profiles | [both/survey/book_profiles.ipynb](../../../../../notebooks/both/survey/book_profiles.ipynb) |

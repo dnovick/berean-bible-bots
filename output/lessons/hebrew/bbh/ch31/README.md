@@ -387,3 +387,11 @@ The following weak-root Piel verbs are among the most common in the OT. All carr
 ---
 
 *Sources: MACULA Hebrew WLC (Clear Bible, CC BY 4.0) · BBH = Pratico & Van Pelt, Basics of Biblical Hebrew, 3rd ed.*
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Piel Stem](../../../../../notebooks/ot/verbs/piel.ipynb) | Piel stem: root×conjugation heatmap; weak root behavior in the intensive |

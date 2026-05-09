@@ -297,3 +297,11 @@ Some roots occur almost exclusively in the Hiphil — the Hiphil form *is* the s
 ---
 
 *Sources: MACULA Hebrew WLC (Clear Bible, CC BY 4.0) · BBH = Pratico & Van Pelt, Basics of Biblical Hebrew, 3rd ed.*
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Hiphil Stem](../../../../../notebooks/ot/verbs/hiphil.ipynb) | Hiphil stem: complete morphological profile, causative semantic categories, dominant roots |

@@ -330,3 +330,11 @@ The following are the twenty most frequently occurring Hebrew nouns in the Old T
 | Resource | Description |
 |---|---|
 | [Noun Parsing Drill](exercises/ch4-noun-parsing/README.md) | 25-item parsing drill — identify gender, number, state, lexical form, and gloss for a range of noun forms including segolates, duals, and irregular plurals. |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Morphological Distribution of Nouns](../../../../../notebooks/both/lexicon/morph_distribution.ipynb) | Morphological distribution of Hebrew nouns across books (case, state, gender) |

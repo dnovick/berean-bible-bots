@@ -284,3 +284,11 @@ prohibition — a categorical, ongoing prohibition, not a one-time command.
 |---|---|
 | Anki (free flashcard app — Windows, Mac, iOS, Android) | [apps.ankiweb.net](https://apps.ankiweb.net) |
 | Morphology import file for this chapter | [ch15-morphology-deck.txt](ch15-morphology-deck.txt) |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: conjugation profile showing Imperfect (yiqtol) distribution |

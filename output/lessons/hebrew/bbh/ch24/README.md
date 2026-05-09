@@ -375,3 +375,11 @@ These roots are rarely (or never) used in the Qal — the Niphal *is* their base
 ---
 
 *Sources: MACULA Hebrew WLC (Clear Bible, CC BY 4.0) · BBH = Pratico & Van Pelt, Basics of Biblical Hebrew, 3rd ed.*
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Niphal Stem](../../../../../notebooks/ot/verbs/niphal.ipynb) | Niphal stem: complete morphological profile, top roots, semantic categories (passive/reflexive/reciprocal) |

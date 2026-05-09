@@ -274,3 +274,11 @@ These roots appear almost exclusively in the Piel — there is no meaningful Qal
 | Is the Piel Participle active or passive? | **Active** — מְדַבֵּר "speaking" |
 | What form is Piel Inf. Construct identical to? | The **Piel Imperative 2ms** — context and prepositions distinguish them |
 | Where is the Pual (passive of Piel) covered? | **Chapter 32** |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Piel Stem](../../../../../notebooks/ot/verbs/piel.ipynb) | Piel stem: complete morphological profile, intensive/factitive/declarative categories |

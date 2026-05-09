@@ -244,3 +244,11 @@ Corpus: Genesis–Deuteronomy · 1,575 Qal verb + pronominal suffix tokens
 | וַ/יִּשְׁלָחֵ֥הוּ | שלח Qal Wayyiq. 3ms | + 3ms | "and he sent him" |
 | כִּ/שְׁמֹ֣עַ/וֹ | שמע Qal Inf.Const. | + 3ms (subj.) | "when he heard" |
 | בְּ/רֹאֹת/וֹ | ראה Qal Inf.Const. | + 3ms (subj.) | "when he saw" (III-ה) |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: full corpus data including suffixed verb forms |

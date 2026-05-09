@@ -333,3 +333,12 @@ Based on MACULA Hebrew morphology data for Qal wayyiqtol:
 | וָאֶ | Wayyiqtol 1cs | וָאֶקְטֹל |
 | וְ + perfect pattern | Weqatal | וְשָׁמַרְתָּ |
 | וְיִ / וְתִ (no dagesh in prefix) | Waw + Jussive or Imperfect | וְיִשְׁמֹר (purpose clause) |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: wayyiqtol is the single most common Qal form (~23% of all Qal tokens) |
+| [Verbal Syntax](../../../../../notebooks/ot/syntax/verbal_syntax.ipynb) | Wayyiqtol narrative chains and verb form profiles by genre |

@@ -248,3 +248,12 @@ Corpus: Genesis–Deuteronomy · 467 Qal Imperative tokens
 | תֵּן | נתן | 2ms | I-נ; both nuns drop |
 | אֱמֹר | אמר | 2ms | I-aleph; hateph |
 | שָׂא | נשא | 2ms | I-נ + I-aleph; very short |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: imperative distribution by book and root |
+| [OT Speaker Attribution](../../../../../notebooks/ot/speakers/speaker_attribution.ipynb) | OT speaker attribution: find who issues imperatives in each book |

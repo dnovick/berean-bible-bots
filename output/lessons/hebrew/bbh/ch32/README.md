@@ -244,3 +244,11 @@ Both the Pual and Hophal are passive stems. Both can produce Participles beginni
 | How to distinguish Pual from Hophal? | **Dagesh in R2:** Pual has it; Hophal does not (unless from root assimilation). Also: Hophal prefix carries the u-vowel; Pual u-vowel is on R1 itself |
 | Most common Pual form / formula? | **בָּרוּךְ** / **מְבֹרָךְ** — Pual Participle of ברך ("blessed"), the blessing formula throughout Torah (~55 Torah tokens) |
 | Where is the Piel (active counterpart) covered? | **Chapter 30** — Piel Strong Verbs |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Pual Stem](../../../../../notebooks/ot/verbs/pual.ipynb) | Pual stem: complete morphological profile, passive intensive/factitive/birth (יֻלַּד) categories |

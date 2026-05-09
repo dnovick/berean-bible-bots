@@ -298,3 +298,12 @@ Corpus: Genesis–Deuteronomy · 259 Qal passive participle tokens
 | כָּת֥וּב | כתב | Strong A · Pass. Ptc. ms | "written" | Qamets + shureq |
 | בְּלוּלָ֥ה | בלל | Geminate · Pass. Ptc. fs | "mixed" | Shewa + shureq + ָה; grain offerings |
 | נְטוּיָ֖ה | נטה | III-ה · Pass. Ptc. fs | "outstretched" | Shewa + shureq + יָה |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: active and passive participle distribution; dominant participial roots |
+| [Syntactic Roles OT](../../../../../notebooks/ot/speakers/syntactic_roles_ot.ipynb) | Syntactic roles: participles as subjects and predicates in OT prose |

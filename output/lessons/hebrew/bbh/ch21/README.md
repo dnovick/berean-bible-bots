@@ -244,3 +244,12 @@ Corpus: Genesis–Deuteronomy · 149 Qal IA tokens
 | שׁ֣וֹב | שוב | Biconsonantal IA | "returning" | Manner use; paired IA |
 | פָּקֹ֨ד | פקד | Strong A IA | "surely visit/punish" | Legal/prophetic contexts |
 | גָּאֹ֖ל | גאל | Strong A IA | "surely redeem" | Leviticus legal formulas |
+
+---
+
+## Explore Further
+
+| Notebook | What it shows |
+|---|---|
+| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: infinitive absolute distribution and paronomastic usage |
+| [Verbal Syntax](../../../../../notebooks/ot/syntax/verbal_syntax.ipynb) | Infinitive usage patterns (construct vs. absolute) by book and genre |
