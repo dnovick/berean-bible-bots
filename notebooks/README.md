@@ -98,10 +98,13 @@ the notebooks running in VS Code (5–10 minutes).
 
 ---
 
-## Developer / QA
+## Developer / Infrastructure
 
 | Notebook | Description |
 |---|---|
+| [dev/data_pipeline.ipynb](dev/data_pipeline.ipynb) | Data pipeline reference: ingesting STEPBible TAHOT/TAGNT TSV files (ingest.py), persisting to SQLite + Parquet (db.py), loading KJV/Vulgate translations (translations.py), building and querying IBM Model 1 word-level alignment (ibm_align.py) and verse-level co-occurrence alignment (alignment.py) |
+| [dev/export_and_profiles.ipynb](dev/export_and_profiles.ipynb) | Reporting and export reference: per-book language profiles (profiles.py) with word count, hapax, TTR, POS and verb breakdowns; CSV export (export_csv); high-level HTML exporters for word studies, genre comparisons, divine names, and semantic profiles (export.py); low-level export_html_page() for custom reports |
+| [dev/morphology_codes.ipynb](dev/morphology_codes.ipynb) | Morphology code reference: decoding STEPBible TAHOT grammar codes (HVqp3ms, HNcmsa, etc.) and TAGNT grammar codes (V-AAI-3S, N-NSF, etc.) into structured dicts; Hebrew stem/conjugation and Greek tense/voice/mood code tables; practical workflows for filtering the main DataFrame by morphological form |
 | [dev/test_lowfat_integrity.ipynb](dev/test_lowfat_integrity.ipynb) | Data integrity tests for the MACULA lowfat XML corpus: token counts, column completeness, subjref coverage |
 | [dev/advanced_analysis_retired.ipynb](dev/advanced_analysis_retired.ipynb) | Retired experimental analyses (kept for reference) |
 
