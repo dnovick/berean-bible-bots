@@ -330,6 +330,11 @@ from .ot_semantic_domains import (
     ot_domain_genre_chart, ot_domain_heatmap,
     COREDOMAIN_NAMES, LEXDOMAIN_TOP, THEOLOGY_COREDOMAINS,
 )
+from .stylometrics import (
+    msttr, book_style_profile, style_comparison,
+    print_style_profile, print_style_comparison,
+    style_radar_chart, style_heatmap,
+)
 from .formulaic import (
     HEBREW_FORMULAS, GREEK_FORMULAS,
     ot_formula_frequency, nt_formula_frequency,
