@@ -24,6 +24,7 @@
 | Exercise | Description |
 |---|---|
 | [exercises/ch13-peal-perfect-drill/](exercises/ch13-peal-perfect-drill/README.md) | 20-item Peal perfect parsing drill |
+| [exercises/ch13-peal-contrast/](exercises/ch13-peal-contrast/README.md) | Peal Perfect vs. Imperfect Contrast Drill — 20 items: classify conjugation, parse PGN, root, translate |
 
 ### Notebooks
 

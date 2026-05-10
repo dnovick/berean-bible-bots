@@ -16,6 +16,7 @@
 | Exercise | Description |
 |---|---|
 | [exercises/ch19-pael-stem-drill/](exercises/ch19-pael-stem-drill/README.md) | 20-item Pael stem parsing drill |
+| [exercises/ch19-pael-qal-contrast/](exercises/ch19-pael-qal-contrast/README.md) | Peal vs. Pael Contrast Drill — 20 items: classify by dagesh forte in R2, parse, note semantic shift |
 
 ### Notebooks
 

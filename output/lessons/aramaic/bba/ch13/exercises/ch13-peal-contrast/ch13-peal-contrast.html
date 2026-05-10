@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 13 — Peal Perfect vs. Peal Imperfect Contrast Drill</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
+  h2 { font-size: 1.1em; margin-top: 1.6em; }
+  p, li { line-height: 1.6; }
+  .subtitle { color: #555; font-style: italic; margin-top: 0.2em; }
+  .controls { margin: 1.2em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
+  button.ctrl {
+    padding: 0.4em 1em; font-size: 0.88em; cursor: pointer;
+    background: #f0f0f0; border: 1px solid #999; border-radius: 3px;
+  }
+  button.ctrl:hover { background: #ddd; }
+  table { border-collapse: collapse; width: 100%; margin-top: 0.8em; font-size: 0.92em; }
+  th { background: #3a3a5c; color: #fff; padding: 0.5em 0.6em; text-align: left; }
+  td { padding: 0.45em 0.6em; border-bottom: 1px solid #ddd; vertical-align: middle; }
+  tr:nth-child(even) td { background: #f8f8f8; }
+  .hebrew { direction: rtl; unicode-bidi: embed; font-size: 1.22em; line-height: 1.8; font-weight: bold; }
+  .root-ans { direction: rtl; unicode-bidi: embed; font-size: 1.1em; }
+  input.parse-field {
+    width: 100%; box-sizing: border-box; border: 1px solid #aaa;
+    border-radius: 2px; padding: 0.2em 0.3em; font-size: 0.88em;
+    font-family: Georgia, serif;
+  }
+  button.reveal-btn {
+    padding: 0.2em 0.6em; font-size: 0.82em; cursor: pointer;
+    background: #e8e8e8; border: 1px solid #999; border-radius: 3px;
+    white-space: nowrap;
+  }
+  button.reveal-btn:hover { background: #ccc; }
+  tr.answer-row td { background: #d4edda; font-size: 0.88em; color: #155724; }
+  tr.answer-row { display: none; }
+  tr.answer-row.visible { display: table-row; }
+  .answer-label { font-weight: bold; margin-right: 0.3em; }
+  .reflection { background: #f5f5e8; border-left: 4px solid #b8860b; padding: 0.8em 1.1em; margin: 1.4em 0; border-radius: 0 4px 4px 0; }
+  .reflection h3 { margin-top: 0; font-size: 1em; }
+  .note { background: #eef4fb; border-left: 4px solid #4a7ab5; padding: 0.6em 1em; margin: 1em 0; border-radius: 0 4px 4px 0; font-size: 0.9em; }
+  @media print {
+    button.ctrl, button.reveal-btn { display: none; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    tr.answer-row { display: none !important; }
+    .controls { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 13 — Peal Perfect vs. Peal Imperfect Contrast Drill</h1>
+<p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch13: Peal Perfect: Recognizing and Distinguishing Conjugations</p>
+
+<h2>Instructions</h2>
+<p>For each numbered Aramaic verbal form from Daniel or Ezra, enter: <strong>Conj</strong> (Pf = Perfect or Impf = Imperfect), <strong>Person</strong> (1/2/3), <strong>Gender</strong> (m/f/c), <strong>Number</strong> (s/pl), <strong>Root</strong> (3 consonants), and <strong>Translation</strong>. Click <strong>&#9654; Answer</strong> to reveal the answer row.</p>
+
+<div class="note">
+  <strong>Perfect (no prefix):</strong> 3ms bare form CvCaC; endings: 3fs <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">‑ַת</span>, 3mp <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">‑וּ</span>, 1cp <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">‑נָא</span>.
+  &nbsp;&nbsp;
+  <strong>Imperfect (with prefix):</strong> preformative yod/tav/nun/aleph before root; 3ms <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יִ‑</span> prefix + CvCvC; 3mp ends in <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">‑וּן</span>.
+  &nbsp;&nbsp;
+  <strong>1cp contrast:</strong> Perfect <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">‑נָא</span> at end; Imperfect <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">נִ‑</span> at start.
+</div>
+
+<div class="controls">
+  <button class="ctrl" onclick="showAll()">Show All Answers</button>
+  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table id="drill-table">
+  <thead>
+    <tr>
+      <th style="width:2.5em">#</th>
+      <th style="width:13%">Form</th>
+      <th style="width:10%">Conj (Pf/Impf)</th>
+      <th style="width:7%">Person</th>
+      <th style="width:7%">Gender</th>
+      <th style="width:7%">Number</th>
+      <th style="width:10%">Root</th>
+      <th style="width:25%">Translation</th>
+      <th style="width:5.5em"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- 1 -->
+    <tr id="q1">
+      <td>1</td>
+      <td><div class="hebrew">כְּתַב</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a1">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">כתב</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he wrote (CvCaC pattern; no prefix)</td>
+      <td></td>
+    </tr>
+
+    <!-- 2 -->
+    <tr id="q2">
+      <td>2</td>
+      <td><div class="hebrew">יִכְתֻּב</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a2">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">כתב</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will write (יִ‑ prefix + qibbuts under R2)</td>
+      <td></td>
+    </tr>
+
+    <!-- 3 -->
+    <tr id="q3">
+      <td>3</td>
+      <td><div class="hebrew">אֲמַר</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a3">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">אמר</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he said (I-aleph root; hateph-patach under aleph)</td>
+      <td></td>
+    </tr>
+
+    <!-- 4 -->
+    <tr id="q4">
+      <td>4</td>
+      <td><div class="hebrew">תֵּאמַר</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a4">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 2/3 fs &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">אמר</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> you (f.s.) will say / she will say (תְּ‑ prefix; I-aleph compensatory lengthening → tsere)</td>
+      <td></td>
+    </tr>
+
+    <!-- 5 -->
+    <tr id="q5">
+      <td>5</td>
+      <td><div class="hebrew">קְטַלַת</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a5">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3fs &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> she killed (‑ַת = 3fs Perfect ending)</td>
+      <td></td>
+    </tr>
+
+    <!-- 6 -->
+    <tr id="q6">
+      <td>6</td>
+      <td><div class="hebrew">יִקְטֻל</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a6">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will kill (יִ‑ prefix; qibbuts under R2 is the 3ms Impf marker)</td>
+      <td></td>
+    </tr>
+
+    <!-- 7 -->
+    <tr id="q7">
+      <td>7</td>
+      <td><div class="hebrew">שְׁמַעְנָא</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a7">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 1cp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁמע</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> we heard (‑נָא at the end = 1cp Perfect suffix)</td>
+      <td></td>
+    </tr>
+
+    <!-- 8 -->
+    <tr id="q8">
+      <td>8</td>
+      <td><div class="hebrew">נִשְׁמַע</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a8">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 1cp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁמע</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> we will hear (נִ‑ at the start = 1cp Imperfect preformative)</td>
+      <td></td>
+    </tr>
+
+    <!-- 9 -->
+    <tr id="q9">
+      <td>9</td>
+      <td><div class="hebrew">עֲבַד</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a9">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">עבד</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he made/did (guttural R1 ע takes hateph-patach: עֲ‑)</td>
+      <td></td>
+    </tr>
+
+    <!-- 10 -->
+    <tr id="q10">
+      <td>10</td>
+      <td><div class="hebrew">יַעְבֵּד</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a10">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">עבד</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will make/do (יַ‑ prefix with patach; guttural ע in R1)</td>
+      <td></td>
+    </tr>
+
+    <!-- 11 -->
+    <tr id="q11">
+      <td>11</td>
+      <td><div class="hebrew">קְטַלוּ</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a11">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they killed (‑וּ = 3mp Perfect ending; no prefix)</td>
+      <td></td>
+    </tr>
+
+    <!-- 12 -->
+    <tr id="q12">
+      <td>12</td>
+      <td><div class="hebrew">יִקְטְלוּן</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a12">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they will kill (יִ‑ prefix + ‑וּן = 3mp Imperfect ending)</td>
+      <td></td>
+    </tr>
+
+    <!-- 13 -->
+    <tr id="q13">
+      <td>13</td>
+      <td><div class="hebrew">יְדַעְתְּ</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a13">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 2ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">ידע</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> you knew (‑תְּ = 2ms Perfect suffix; I-yod root: yod dropped)</td>
+      <td></td>
+    </tr>
+
+    <!-- 14 -->
+    <tr id="q14">
+      <td>14</td>
+      <td><div class="hebrew">תִּנְדַּע</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a14">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 2ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">ידע</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> you will know (תִּ‑ prefix = 2ms Impf; nun assimilated into dagesh in R2 ד)</td>
+      <td></td>
+    </tr>
+
+    <!-- 15 -->
+    <tr id="q15">
+      <td>15</td>
+      <td><div class="hebrew">נְפַל</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a15',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a15">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">נפל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he fell (I-nun root; Perfect = no prefix; נְ is the root's first consonant)</td>
+      <td></td>
+    </tr>
+
+    <!-- 16 -->
+    <tr id="q16">
+      <td>16</td>
+      <td><div class="hebrew">יִּנְפֵּל</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a16',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a16">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">נפל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will fall (יִּ‑ prefix with dagesh = I-nun Impf; Aramaic retains nun unlike Hebrew יִפֹּל)</td>
+      <td></td>
+    </tr>
+
+    <!-- 17 -->
+    <tr id="q17">
+      <td>17</td>
+      <td><div class="hebrew">שָׁלַחְנָא</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a17',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a17">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 1cp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁלח</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> we sent (‑נָא at end = 1cp Perfect; no preformative)</td>
+      <td></td>
+    </tr>
+
+    <!-- 18 -->
+    <tr id="q18">
+      <td>18</td>
+      <td><div class="hebrew">יִשְׁלַח</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a18',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a18">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁלח</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will send (יִ‑ prefix = 3ms Imperfect preformative)</td>
+      <td></td>
+    </tr>
+
+    <!-- 19 -->
+    <tr id="q19">
+      <td>19</td>
+      <td><div class="hebrew">קְרָא</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a19',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a19">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קרא</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he called/read (III-aleph root: final aleph + qamets; no prefix = Perfect)</td>
+      <td></td>
+    </tr>
+
+    <!-- 20 -->
+    <tr id="q20">
+      <td>20</td>
+      <td><div class="hebrew">יִקְרֵא</div></td>
+      <td><input class="parse-field" placeholder="Pf/Impf…"></td>
+      <td><input class="parse-field" placeholder="1/2/3…"></td>
+      <td><input class="parse-field" placeholder="m/f/c…"></td>
+      <td><input class="parse-field" placeholder="s/pl…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a20',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a20">
+      <td></td>
+      <td colspan="7"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קרא</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will call/read (יִ‑ prefix + tsere before final aleph = III-aleph Imperfect)</td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="reflection">
+  <h3>Discussion Questions</h3>
+  <ol>
+    <li>The Aramaic Peal Perfect 3ms (e.g., <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">כְּתַב</span>) looks similar to the Hebrew Qal Perfect 3ms. What is the key vowel difference that distinguishes Aramaic Peal from Hebrew Qal in the 3ms?</li>
+    <li>Looking at items 7 and 8 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שְׁמַעְנָא</span> vs. <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">נִשְׁמַע</span>): both are 1cp. What is the diagnostic difference that tells you which is perfect and which is imperfect?</li>
+    <li>I-nun roots (like <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">נפל</span>, items 15–16): in the Peal Imperfect, does the nun assimilate? Compare item 16 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">יִּנְפֵּל</span>) with its Hebrew cognate (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">יִפֹּל</span>). What does this tell you about Aramaic vs. Hebrew treatment of I-nun in the Imperfect?</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id, btn) {
+  var row = document.getElementById(id);
+  if (row.classList.contains('visible')) {
+    row.classList.remove('visible');
+    btn.textContent = '▶ Answer';
+  } else {
+    row.classList.add('visible');
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('tr.answer-row').forEach(function(r) { r.classList.add('visible'); });
+  document.querySelectorAll('button.reveal-btn').forEach(function(b) { b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('tr.answer-row').forEach(function(r) { r.classList.remove('visible'); });
+  document.querySelectorAll('button.reveal-btn').forEach(function(b) { b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+}
+</script>
+
+</body>
+</html>

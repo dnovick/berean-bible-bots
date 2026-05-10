@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 20 — Hithpaal Semantic Function Sorting</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
+  h2 { font-size: 1.1em; margin-top: 1.6em; }
+  p, li { line-height: 1.6; }
+  .subtitle { color: #555; font-style: italic; margin-top: 0.2em; }
+  .controls { margin: 1.2em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
+  button.ctrl {
+    padding: 0.4em 1em; font-size: 0.88em; cursor: pointer;
+    background: #f0f0f0; border: 1px solid #999; border-radius: 3px;
+  }
+  button.ctrl:hover { background: #ddd; }
+  table { border-collapse: collapse; width: 100%; margin-top: 0.8em; font-size: 0.92em; }
+  th { background: #3a3a5c; color: #fff; padding: 0.5em 0.6em; text-align: left; }
+  td { padding: 0.45em 0.6em; border-bottom: 1px solid #ddd; vertical-align: middle; }
+  tr:nth-child(even) td { background: #f8f8f8; }
+  .hebrew { direction: rtl; unicode-bidi: embed; font-size: 1.22em; line-height: 1.8; font-weight: bold; }
+  .root-ans { direction: rtl; unicode-bidi: embed; font-size: 1.1em; }
+  input.parse-field {
+    width: 100%; box-sizing: border-box; border: 1px solid #aaa;
+    border-radius: 2px; padding: 0.2em 0.3em; font-size: 0.88em;
+    font-family: Georgia, serif;
+  }
+  button.reveal-btn {
+    padding: 0.2em 0.6em; font-size: 0.82em; cursor: pointer;
+    background: #e8e8e8; border: 1px solid #999; border-radius: 3px;
+    white-space: nowrap;
+  }
+  button.reveal-btn:hover { background: #ccc; }
+  tr.answer-row td { background: #d4edda; font-size: 0.88em; color: #155724; }
+  tr.answer-row { display: none; }
+  tr.answer-row.visible { display: table-row; }
+  .answer-label { font-weight: bold; margin-right: 0.3em; }
+  .reflection { background: #f5f5e8; border-left: 4px solid #b8860b; padding: 0.8em 1.1em; margin: 1.4em 0; border-radius: 0 4px 4px 0; }
+  .reflection h3 { margin-top: 0; font-size: 1em; }
+  .note { background: #eef4fb; border-left: 4px solid #4a7ab5; padding: 0.6em 1em; margin: 1em 0; border-radius: 0 4px 4px 0; font-size: 0.9em; }
+  .func-table { width: auto; margin: 0.8em 0; }
+  .func-table th { background: #555; font-size: 0.9em; }
+  .func-table td { font-size: 0.9em; }
+  @media print {
+    button.ctrl, button.reveal-btn { display: none; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    tr.answer-row { display: none !important; }
+    .controls { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 20 — Hithpaal Semantic Function Sorting</h1>
+<p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch20: Reflexive, Reciprocal, Iterative, and Estimative Uses</p>
+
+<h2>Instructions</h2>
+<p>For each numbered Hithpaal/Ithpaal form from Daniel or Ezra, classify its semantic <strong>Function</strong> (RF / RC / IT / ES), then parse fully (Conjugation, PGN, Root) and translate. Click <strong>&#9654; Answer</strong> to reveal the answer row.</p>
+
+<table class="func-table">
+  <thead><tr><th>Code</th><th>Name</th><th>Definition</th></tr></thead>
+  <tbody>
+    <tr><td><strong>RF</strong></td><td>Reflexive</td><td>Subject acts on itself</td></tr>
+    <tr><td><strong>RC</strong></td><td>Reciprocal</td><td>Plural subject acts on each other</td></tr>
+    <tr><td><strong>IT</strong></td><td>Iterative / Frequentative</td><td>Action repeated or ongoing</td></tr>
+    <tr><td><strong>ES</strong></td><td>Estimative / Tolerative</td><td>Subject reckoned as something, or permits an action</td></tr>
+  </tbody>
+</table>
+
+<div class="note">
+  <strong>Hithpaal Perfect:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הִתְ‑</span> prefix (metathesis with sibilant R1: <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הִשְׁתַּ‑</span>).
+  &nbsp;&nbsp;
+  <strong>Hithpaal Imperfect:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יִתְ‑</span> prefix (sibilant: <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יִשְׁתַּ‑</span>).
+  &nbsp;&nbsp;
+  <strong>Hithpaal Participle:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">מִתְ‑</span> prefix.
+</div>
+
+<div class="controls">
+  <button class="ctrl" onclick="showAll()">Show All Answers</button>
+  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table id="drill-table">
+  <thead>
+    <tr>
+      <th style="width:2.5em">#</th>
+      <th style="width:15%">Form</th>
+      <th style="width:11%">Function (RF/RC/IT/ES)</th>
+      <th style="width:12%">Conjugation</th>
+      <th style="width:9%">PGN</th>
+      <th style="width:10%">Root</th>
+      <th style="width:28%">Translation</th>
+      <th style="width:5.5em"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- 1 -->
+    <tr id="q1">
+      <td>1</td>
+      <td><div class="hebrew">הִשְׁתַּחֲוִי</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a1">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁחה</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he bowed himself down (metathesis: הִתְ + שׁ → הִשְׁתַּ‑)</td>
+      <td></td>
+    </tr>
+
+    <!-- 2 -->
+    <tr id="q2">
+      <td>2</td>
+      <td><div class="hebrew">יִשְׁתַּחֲווּן</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a2">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁחה</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they will bow themselves down (metathesis: יִתְ + שׁ → יִשְׁתַּ‑; ‑וּן = 3mp)</td>
+      <td></td>
+    </tr>
+
+    <!-- 3 -->
+    <tr id="q3">
+      <td>3</td>
+      <td><div class="hebrew">מִתְכַּנְּשִׁין</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a3">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> IT (Iterative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">PGN:</span> mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">כנשׁ</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> gathering repeatedly / assembling (ongoing; מִתְ‑ = Hithpaal ptcp)</td>
+      <td></td>
+    </tr>
+
+    <!-- 4 -->
+    <tr id="q4">
+      <td>4</td>
+      <td><div class="hebrew">הִתְחַשַּׁב</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a4">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> ES (Estimative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">חשׁב</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he was reckoned / he counted himself as (הִתְ‑ prefix; dagesh in shin)</td>
+      <td></td>
+    </tr>
+
+    <!-- 5 -->
+    <tr id="q5">
+      <td>5</td>
+      <td><div class="hebrew">יִתְחַבַּר</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a5">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">חבר</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will join himself / ally himself (יִתְ‑ Hithpaal Impf)</td>
+      <td></td>
+    </tr>
+
+    <!-- 6 -->
+    <tr id="q6">
+      <td>6</td>
+      <td><div class="hebrew">מִתְנַדְּבִין</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a6">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> IT (Iterative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">PGN:</span> mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">נדב</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> volunteering (repeatedly / continually; מִתְ‑ ptcp; ‑ִין = mp)</td>
+      <td></td>
+    </tr>
+
+    <!-- 7 -->
+    <tr id="q7">
+      <td>7</td>
+      <td><div class="hebrew">אִשְׁתַּדַּל</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a7">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁדל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he exerted himself (metathesis: אִתְ + שׁ → אִשְׁתַּ‑)</td>
+      <td></td>
+    </tr>
+
+    <!-- 8 -->
+    <tr id="q8">
+      <td>8</td>
+      <td><div class="hebrew">הִתְגְּזֵרַת</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a8">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3fs &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">גזר</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> it was decreed (reflexive: the decree issued of itself; ‑ַת = 3fs)</td>
+      <td></td>
+    </tr>
+
+    <!-- 9 -->
+    <tr id="q9">
+      <td>9</td>
+      <td><div class="hebrew">יִתְרָחֵץ</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a9">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">רחץ</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will wash himself (יִתְ‑ Hithpaal Impf; guttural ח)</td>
+      <td></td>
+    </tr>
+
+    <!-- 10 -->
+    <tr id="q10">
+      <td>10</td>
+      <td><div class="hebrew">מִתְבַּהֲלִין</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a10">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> IT (Iterative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">PGN:</span> mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">בהל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> being terrified (repeatedly / continually; מִתְ‑ ptcp; guttural ה in R2)</td>
+      <td></td>
+    </tr>
+
+    <!-- 11 -->
+    <tr id="q11">
+      <td>11</td>
+      <td><div class="hebrew">הִתְקְטַל</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a11">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he was slain (reflexive-passive use of Hithpaal)</td>
+      <td></td>
+    </tr>
+
+    <!-- 12 -->
+    <tr id="q12">
+      <td>12</td>
+      <td><div class="hebrew">יִשְׁתַּנּוּן</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a12">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁנה</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they will change themselves (metathesis; III-he root; dagesh in nun)</td>
+      <td></td>
+    </tr>
+
+    <!-- 13 -->
+    <tr id="q13">
+      <td>13</td>
+      <td><div class="hebrew">מִתְנַסּוֹ</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a13">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> IT (Iterative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">PGN:</span> ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">נסה</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> testing repeatedly / being tested continually (מִתְ‑ ptcp; III-he root)</td>
+      <td></td>
+    </tr>
+
+    <!-- 14 -->
+    <tr id="q14">
+      <td>14</td>
+      <td><div class="hebrew">אִתְחַשַּׁב</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a14">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> ES (Estimative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">חשׁב</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> it was reckoned as / counted (variant prefix אִתְ‑ instead of הִתְ‑)</td>
+      <td></td>
+    </tr>
+
+    <!-- 15 -->
+    <tr id="q15">
+      <td>15</td>
+      <td><div class="hebrew">הִתְבַּהֲלוּ</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a15',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a15">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">בהל</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they were terrified (reflexive: terror seized them; ‑וּ = 3mp Perf)</td>
+      <td></td>
+    </tr>
+
+    <!-- 16 -->
+    <tr id="q16">
+      <td>16</td>
+      <td><div class="hebrew">מִתְכַּנְּשִׁין</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a16',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a16">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> IT (Iterative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">PGN:</span> mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">כנשׁ</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> repeatedly assembling / coming together (ongoing participle)</td>
+      <td></td>
+    </tr>
+
+    <!-- 17 -->
+    <tr id="q17">
+      <td>17</td>
+      <td><div class="hebrew">יִשְׁתַּחֲוֵה</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a17',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a17">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁחה</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will bow himself down (metathesis; III-he ending ‑ēh)</td>
+      <td></td>
+    </tr>
+
+    <!-- 18 -->
+    <tr id="q18">
+      <td>18</td>
+      <td><div class="hebrew">הִשְׁתַּכַּח</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a18',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a18">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive-passive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁכח</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he was found (metathesis: הִתְ + שׁ → הִשְׁתַּ‑)</td>
+      <td></td>
+    </tr>
+
+    <!-- 19 -->
+    <tr id="q19">
+      <td>19</td>
+      <td><div class="hebrew">מִתְחַזֵּא</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a19',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a19">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> RF (Reflexive) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">PGN:</span> ms &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">חזה</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> appearing / seeming (מִתְ‑ ptcp; III-he: final ‑ēʾ)</td>
+      <td></td>
+    </tr>
+
+    <!-- 20 -->
+    <tr id="q20">
+      <td>20</td>
+      <td><div class="hebrew">יִתְכַּנְּשׁוּן</div></td>
+      <td><input class="parse-field" placeholder="RF/RC/IT/ES…"></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a20',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a20">
+      <td></td>
+      <td colspan="6"><span class="answer-label">Function:</span> IT (Iterative) &nbsp;|&nbsp; <span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">כנשׁ</span> &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they will assemble (repeatedly / as a process; ‑וּן = 3mp Impf)</td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="reflection">
+  <h3>Discussion Questions</h3>
+  <ol>
+    <li>Biblical Aramaic Hithpaal (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">הִתְ‑</span> prefix) corresponds to Hebrew Hithpael. Does Aramaic preserve the sibilant metathesis when R1 = <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שׁ</span>? Examine items 1, 2, 7, and 17. What do you observe?</li>
+    <li>Items 18 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">הִשְׁתַּכַּח</span> = "was found") and 4 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">הִתְחַשַּׁב</span> = "was reckoned") function like passives in translation. How is the Hithpaal being used passively here, and how does this differ from the Peil (true passive)?</li>
+    <li>The IT (Iterative) items (3, 6, 10, 13, 16, 20) are all participles. Is this a coincidence, or does the iterative function especially suit the Aramaic participle tense-aspect? Explain.</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id, btn) {
+  var row = document.getElementById(id);
+  if (row.classList.contains('visible')) {
+    row.classList.remove('visible');
+    btn.textContent = '▶ Answer';
+  } else {
+    row.classList.add('visible');
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('tr.answer-row').forEach(function(r) { r.classList.add('visible'); });
+  document.querySelectorAll('button.reveal-btn').forEach(function(b) { b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('tr.answer-row').forEach(function(r) { r.classList.remove('visible'); });
+  document.querySelectorAll('button.reveal-btn').forEach(function(b) { b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+}
+</script>
+
+</body>
+</html>

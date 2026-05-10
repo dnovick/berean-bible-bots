@@ -16,6 +16,7 @@
 | Exercise | Description |
 |---|---|
 | [exercises/ch18-passive-stems-drill/](exercises/ch18-passive-stems-drill/README.md) | 20-item Peil and Ithpeel stem identification drill |
+| [exercises/ch18-stem-contrast/](exercises/ch18-stem-contrast/README.md) | Peil vs. Ithpeel Stem Contrast Drill — 20 items: classify stem by CvCīC pattern vs. אִתְ/יִתְ prefix |
 
 ### Notebooks
 

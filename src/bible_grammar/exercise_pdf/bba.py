@@ -1679,3 +1679,372 @@ def build_bba_ch22_causative_passive_drill(out_dir: str = None) -> str:
     )
 
 
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch13 — Peal Perfect vs. Peal Imperfect Contrast Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh13PealContrastPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, classify as Peal Perfect or Peal Imperfect, '
+            'then give Person, Gender, Number, Root (three root consonants), and Translation. '
+            'Key diagnostic: Imperfect has a preformative prefix (y/t/n/aleph + vowel); '
+            'Perfect has no preformative.'
+        )
+        hdrs = ['#', 'Form', 'Conj (Pf/Impf)', 'Person', 'Gender', 'Number', 'Root', 'Translation']
+        cr = [0.04, 0.12, 0.10, 0.07, 0.07, 0.07, 0.10, 0.43]
+        hc = [1]
+        rows = [
+            ['1',  'כְּתַב',      '', '', '', '', '', ''],
+            ['2',  'יִכְתֻּב',    '', '', '', '', '', ''],
+            ['3',  'אֲמַר',       '', '', '', '', '', ''],
+            ['4',  'תֵּאמַר',     '', '', '', '', '', ''],
+            ['5',  'קְטַלַת',     '', '', '', '', '', ''],
+            ['6',  'יִקְטֻל',     '', '', '', '', '', ''],
+            ['7',  'שְׁמַעְנָא',  '', '', '', '', '', ''],
+            ['8',  'נִשְׁמַע',    '', '', '', '', '', ''],
+            ['9',  'עֲבַד',       '', '', '', '', '', ''],
+            ['10', 'יַעְבֵּד',    '', '', '', '', '', ''],
+            ['11', 'קְטַלוּ',     '', '', '', '', '', ''],
+            ['12', 'יִקְטְלוּן',  '', '', '', '', '', ''],
+            ['13', 'יְדַעְתְּ',   '', '', '', '', '', ''],
+            ['14', 'תִּנְדַּע',   '', '', '', '', '', ''],
+            ['15', 'נְפַל',       '', '', '', '', '', ''],
+            ['16', 'יִּנְפֵּל',   '', '', '', '', '', ''],
+            ['17', 'שָׁלַחְנָא',  '', '', '', '', '', ''],
+            ['18', 'יִשְׁלַח',    '', '', '', '', '', ''],
+            ['19', 'קְרָא',       '', '', '', '', '', ''],
+            ['20', 'יִקְרֵא',     '', '', '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'כְּתַב',     'Perfect',    '3', 'm', 's',  'כתב', 'he wrote'],
+            ['2',  'יִכְתֻּב',   'Imperfect',  '3', 'm', 's',  'כתב', 'he will write'],
+            ['3',  'אֲמַר',      'Perfect',    '3', 'm', 's',  'אמר', 'he said'],
+            ['4',  'תֵּאמַר',    'Imperfect',  '2/3','f','s',  'אמר', 'you (f.s.) will say / she will say'],
+            ['5',  'קְטַלַת',    'Perfect',    '3', 'f', 's',  'קטל', 'she killed'],
+            ['6',  'יִקְטֻל',    'Imperfect',  '3', 'm', 's',  'קטל', 'he will kill'],
+            ['7',  'שְׁמַעְנָא', 'Perfect',    '1', 'c', 'pl', 'שׁמע','we heard'],
+            ['8',  'נִשְׁמַע',   'Imperfect',  '1', 'c', 'pl', 'שׁמע','we will hear'],
+            ['9',  'עֲבַד',      'Perfect',    '3', 'm', 's',  'עבד', 'he made / did'],
+            ['10', 'יַעְבֵּד',   'Imperfect',  '3', 'm', 's',  'עבד', 'he will make / do'],
+            ['11', 'קְטַלוּ',    'Perfect',    '3', 'm', 'pl', 'קטל', 'they killed'],
+            ['12', 'יִקְטְלוּן', 'Imperfect',  '3', 'm', 'pl', 'קטל', 'they will kill'],
+            ['13', 'יְדַעְתְּ',  'Perfect',    '2', 'm', 's',  'ידע', 'you knew'],
+            ['14', 'תִּנְדַּע',  'Imperfect',  '2', 'm', 's',  'ידע', 'you will know'],
+            ['15', 'נְפַל',      'Perfect',    '3', 'm', 's',  'נפל', 'he fell'],
+            ['16', 'יִּנְפֵּל',  'Imperfect',  '3', 'm', 's',  'נפל', 'he will fall'],
+            ['17', 'שָׁלַחְנָא', 'Perfect',    '1', 'c', 'pl', 'שׁלח','we sent'],
+            ['18', 'יִשְׁלַח',   'Imperfect',  '3', 'm', 's',  'שׁלח','he will send'],
+            ['19', 'קְרָא',      'Perfect',    '3', 'm', 's',  'קרא', 'he called / read'],
+            ['20', 'יִקְרֵא',    'Imperfect',  '3', 'm', 's',  'קרא', 'he will call / read'],
+        ]
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc,
+                                        section_title='Peal Perfect vs. Imperfect Contrast — Items 1–20')
+
+
+def build_bba_ch13_peal_contrast(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        BbaCh13PealContrastPDF,
+        'BBA Chapter 13 — Peal Perfect vs. Peal Imperfect Contrast Drill',
+        'Peal Perfect and Imperfect · Daniel and Ezra · Contrast and Parse',
+        ['aramaic', 'bba', 'ch13', 'exercises', 'ch13-peal-contrast'],
+        'ch13-peal-contrast.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch18 — Peil vs. Ithpeel Stem Identification Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh18StemContrastPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, identify the stem (Peil or Ithpeel), '
+            'then give Conjugation, PGN, Root, and Translation. '
+            'Peil diagnostic: internal vowel pattern CvCīC (long i under R2), no prefix. '
+            'Ithpeel diagnostic: אִתְ prefix (perfect) or יִתְ prefix (imperfect).'
+        )
+        hdrs = ['#', 'Form', 'Stem (Peil/Ithpeel)', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr = [0.04, 0.14, 0.12, 0.12, 0.10, 0.12, 0.36]
+        hc = [1]
+        rows = [
+            ['1',  'כְּתִיב',      '', '', '', '', ''],
+            ['2',  'הִתְכְּתִיב',  '', '', '', '', ''],
+            ['3',  'קְטִיל',       '', '', '', '', ''],
+            ['4',  'אִתְקְטֵל',    '', '', '', '', ''],
+            ['5',  'שִׂים',        '', '', '', '', ''],
+            ['6',  'יִתְבְּנֵא',   '', '', '', '', ''],
+            ['7',  'יִתְכְּתִב',   '', '', '', '', ''],
+            ['8',  'שְׂכִיר',      '', '', '', '', ''],
+            ['9',  'אִתְעֲבִיד',   '', '', '', '', ''],
+            ['10', 'נְתִין',       '', '', '', '', ''],
+            ['11', 'יִתְיְהִב',    '', '', '', '', ''],
+            ['12', 'קְרִי',        '', '', '', '', ''],
+            ['13', 'אִתְאֲמַר',    '', '', '', '', ''],
+            ['14', 'נְבִיא',       '', '', '', '', ''],
+            ['15', 'יִתְנְסַח',    '', '', '', '', ''],
+            ['16', 'כְּפִית',      '', '', '', '', ''],
+            ['17', 'אִתְחֲזֵה',    '', '', '', '', ''],
+            ['18', 'עֲבִיד',       '', '', '', '', ''],
+            ['19', 'יִתְקְרֵא',    '', '', '', '', ''],
+            ['20', 'שְׁלִים',      '', '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'כְּתִיב',     'Peil',    'Perfect',     '3ms', 'כתב', 'it was written'],
+            ['2',  'הִתְכְּתִיב', 'Ithpeel', 'Perfect',     '3ms', 'כתב', 'it was inscribed / registered itself'],
+            ['3',  'קְטִיל',      'Peil',    'Perfect',     '3ms', 'קטל', 'he was killed'],
+            ['4',  'אִתְקְטֵל',   'Ithpeel', 'Perfect',     '3ms', 'קטל', 'he was killed (reflexive nuance)'],
+            ['5',  'שִׂים',       'Peil',    'Perfect',     '3ms', 'שׂים', 'it was placed / set'],
+            ['6',  'יִתְבְּנֵא',  'Ithpeel', 'Imperfect',   '3ms', 'בנה', 'it will be built'],
+            ['7',  'יִתְכְּתִב',  'Ithpeel', 'Imperfect',   '3ms', 'כתב', 'it will be written'],
+            ['8',  'שְׂכִיר',     'Peil',    'Perfect',     '3ms', 'שׂכר', 'he was hired'],
+            ['9',  'אִתְעֲבִיד',  'Ithpeel', 'Perfect',     '3ms', 'עבד', 'it was done / made'],
+            ['10', 'נְתִין',      'Peil',    'Perfect',     '3ms', 'נתן', 'it was given'],
+            ['11', 'יִתְיְהִב',   'Ithpeel', 'Imperfect',   '3ms', 'יהב', 'it will be given'],
+            ['12', 'קְרִי',       'Peil',    'Perfect',     '3ms', 'קרא', 'it was called / read'],
+            ['13', 'אִתְאֲמַר',   'Ithpeel', 'Perfect',     '3ms', 'אמר', 'it was said'],
+            ['14', 'נְבִיא',      'Peil',    'Perfect',     '3ms', 'נבא', 'he was prophesied / he is a prophet'],
+            ['15', 'יִתְנְסַח',   'Ithpeel', 'Imperfect',   '3ms', 'נסח', 'it will be pulled out / uprooted'],
+            ['16', 'כְּפִית',     'Peil',    'Perfect',     '3ms', 'כפת', 'he was bound'],
+            ['17', 'אִתְחֲזֵה',   'Ithpeel', 'Perfect',     '3ms', 'חזה', 'it was seen / it appeared'],
+            ['18', 'עֲבִיד',      'Peil',    'Perfect',     '3ms', 'עבד', 'it was made / done'],
+            ['19', 'יִתְקְרֵא',   'Ithpeel', 'Imperfect',   '3ms', 'קרא', 'it will be called'],
+            ['20', 'שְׁלִים',     'Peil',    'Perfect',     '3ms', 'שׁלם','it was completed / finished'],
+        ]
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc,
+                                        section_title='Peil vs. Ithpeel Identification Drill — Items 1–20')
+
+
+def build_bba_ch18_stem_contrast(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        BbaCh18StemContrastPDF,
+        'BBA Chapter 18 — Peil vs. Ithpeel Stem Identification Drill',
+        'Passive Peil vs. Reflexive/Passive Ithpeel · Daniel and Ezra',
+        ['aramaic', 'bba', 'ch18', 'exercises', 'ch18-stem-contrast'],
+        'ch18-stem-contrast.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch19 — Peal vs. Pael Contrast Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh19PaelPealContrastPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, identify the stem (Peal or Pael), '
+            'then give Conjugation, PGN, Root, and Translation. '
+            'Pael diagnostic: dagesh forte in R2 (doubling of the second root consonant). '
+            'Peal has no dagesh forte in R2.'
+        )
+        hdrs = ['#', 'Form', 'Stem (Peal/Pael)', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr = [0.04, 0.13, 0.11, 0.12, 0.10, 0.12, 0.38]
+        hc = [1]
+        rows = [
+            ['1',  'כְּתַב',      '', '', '', '', ''],
+            ['2',  'כַּתֵּב',     '', '', '', '', ''],
+            ['3',  'אֲמַר',       '', '', '', '', ''],
+            ['4',  'חַוִּי',      '', '', '', '', ''],
+            ['5',  'עֲבַד',       '', '', '', '', ''],
+            ['6',  'בַּטִּיל',    '', '', '', '', ''],
+            ['7',  'קְרָא',       '', '', '', '', ''],
+            ['8',  'קַדֵּשׁ',     '', '', '', '', ''],
+            ['9',  'יְדַע',       '', '', '', '', ''],
+            ['10', 'שַׁוִּי',     '', '', '', '', ''],
+            ['11', 'שְׁמַע',      '', '', '', '', ''],
+            ['12', 'רַבִּי',      '', '', '', '', ''],
+            ['13', 'נְפַל',       '', '', '', '', ''],
+            ['14', 'כַּבֵּד',     '', '', '', '', ''],
+            ['15', 'יִקְטֻל',     '', '', '', '', ''],
+            ['16', 'יְבַטֵּל',    '', '', '', '', ''],
+            ['17', 'אֲמַרְנָא',   '', '', '', '', ''],
+            ['18', 'מְשַׁבַּח',   '', '', '', '', ''],
+            ['19', 'שְׁלַח',      '', '', '', '', ''],
+            ['20', 'שַׁלַּח',     '', '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'כְּתַב',     'Peal', 'Perfect',    '3ms', 'כתב', 'he wrote'],
+            ['2',  'כַּתֵּב',    'Pael', 'Perfect',    '3ms', 'כתב', 'he wrote (intensively) / he recorded'],
+            ['3',  'אֲמַר',      'Peal', 'Perfect',    '3ms', 'אמר', 'he said'],
+            ['4',  'חַוִּי',     'Pael', 'Perfect',    '3ms', 'חוה', 'he declared / he showed'],
+            ['5',  'עֲבַד',      'Peal', 'Perfect',    '3ms', 'עבד', 'he made / did'],
+            ['6',  'בַּטִּיל',   'Pael', 'Perfect',    '3ms', 'בטל', 'he caused to cease / he stopped'],
+            ['7',  'קְרָא',      'Peal', 'Perfect',    '3ms', 'קרא', 'he called / read'],
+            ['8',  'קַדֵּשׁ',    'Pael', 'Perfect',    '3ms', 'קדשׁ','he sanctified / hallowed'],
+            ['9',  'יְדַע',      'Peal', 'Perfect',    '3ms', 'ידע', 'he knew'],
+            ['10', 'שַׁוִּי',    'Pael', 'Perfect',    '3ms', 'שׁוה','he made equal / he set'],
+            ['11', 'שְׁמַע',     'Peal', 'Perfect',    '3ms', 'שׁמע','he heard'],
+            ['12', 'רַבִּי',     'Pael', 'Perfect',    '3ms', 'רבה', 'he made great / he magnified'],
+            ['13', 'נְפַל',      'Peal', 'Perfect',    '3ms', 'נפל', 'he fell'],
+            ['14', 'כַּבֵּד',    'Pael', 'Perfect',    '3ms', 'כבד', 'he honored'],
+            ['15', 'יִקְטֻל',    'Peal', 'Imperfect',  '3ms', 'קטל', 'he will kill'],
+            ['16', 'יְבַטֵּל',   'Pael', 'Imperfect',  '3ms', 'בטל', 'he will cause to cease'],
+            ['17', 'אֲמַרְנָא',  'Peal', 'Perfect',    '1cp', 'אמר', 'we said'],
+            ['18', 'מְשַׁבַּח',  'Pael', 'Participle', 'ms',  'שׁבח','praising / who praises'],
+            ['19', 'שְׁלַח',     'Peal', 'Perfect',    '3ms', 'שׁלח','he sent'],
+            ['20', 'שַׁלַּח',    'Pael', 'Perfect',    '3ms', 'שׁלח','he sent away / he let go'],
+        ]
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc,
+                                        section_title='Peal vs. Pael Contrast Drill — Items 1–20')
+
+
+def build_bba_ch19_pael_peal_contrast(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        BbaCh19PaelPealContrastPDF,
+        'BBA Chapter 19 — Peal vs. Pael Contrast Drill',
+        'Simple Peal vs. Intensive/Factitive Pael · Daniel and Ezra',
+        ['aramaic', 'bba', 'ch19', 'exercises', 'ch19-pael-qal-contrast'],
+        'ch19-pael-qal-contrast.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch20 — Hithpaal Semantic Function Sorting
+# ---------------------------------------------------------------------------
+
+class BbaCh20HithpaalFunctionSortPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each Hithpaal/Ithpaal form, classify the semantic function: '
+            'RF (Reflexive), RC (Reciprocal), IT (Iterative/Frequentative), ES (Estimative). '
+            'Then give Conjugation, PGN, Root, and Translation.'
+        )
+        hdrs = ['#', 'Form', 'Function (RF/RC/IT/ES)', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr = [0.04, 0.14, 0.12, 0.12, 0.09, 0.12, 0.37]
+        hc = [1]
+        rows = [
+            ['1',  'הִשְׁתַּחֲוִי',    '', '', '', '', ''],
+            ['2',  'יִשְׁתַּחֲווּן',   '', '', '', '', ''],
+            ['3',  'מִתְכַּנְּשִׁין',  '', '', '', '', ''],
+            ['4',  'הִתְחַשַּׁב',     '', '', '', '', ''],
+            ['5',  'יִתְחַבַּר',      '', '', '', '', ''],
+            ['6',  'מִתְנַדְּבִין',   '', '', '', '', ''],
+            ['7',  'אִשְׁתַּדַּל',    '', '', '', '', ''],
+            ['8',  'הִתְגְּזֵרַת',   '', '', '', '', ''],
+            ['9',  'יִתְרָחֵץ',      '', '', '', '', ''],
+            ['10', 'מִתְבַּהֲלִין',   '', '', '', '', ''],
+            ['11', 'הִתְקְטַל',      '', '', '', '', ''],
+            ['12', 'יִשְׁתַּנּוּן',   '', '', '', '', ''],
+            ['13', 'מִתְנַסּוֹ',     '', '', '', '', ''],
+            ['14', 'אִתְחַשַּׁב',    '', '', '', '', ''],
+            ['15', 'הִתְבַּהֲלוּ',   '', '', '', '', ''],
+            ['16', 'מִתְכַּנְּשִׁין', '', '', '', '', ''],
+            ['17', 'יִשְׁתַּחֲוֵה',   '', '', '', '', ''],
+            ['18', 'הִשְׁתַּכַּח',   '', '', '', '', ''],
+            ['19', 'מִתְחַזֵּא',     '', '', '', '', ''],
+            ['20', 'יִתְכַּנְּשׁוּן', '', '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'הִשְׁתַּחֲוִי',   'RF', 'Perfect',    '3ms', 'שׁחה', 'he bowed himself down'],
+            ['2',  'יִשְׁתַּחֲווּן',  'RF', 'Imperfect',  '3mp', 'שׁחה', 'they will bow themselves down'],
+            ['3',  'מִתְכַּנְּשִׁין', 'IT', 'Participle', 'mp',  'כנשׁ', 'gathering repeatedly / assembling'],
+            ['4',  'הִתְחַשַּׁב',    'ES', 'Perfect',    '3ms', 'חשׁב', 'he was reckoned / counted himself'],
+            ['5',  'יִתְחַבַּר',     'RF', 'Imperfect',  '3ms', 'חבר', 'he will join himself / ally himself'],
+            ['6',  'מִתְנַדְּבִין',  'IT', 'Participle', 'mp',  'נדב', 'volunteering (repeatedly)'],
+            ['7',  'אִשְׁתַּדַּל',   'RF', 'Perfect',    '3ms', 'שׁדל', 'he exerted himself'],
+            ['8',  'הִתְגְּזֵרַת',  'RF', 'Perfect',    '3fs', 'גזר', 'it was decreed / cut off from itself'],
+            ['9',  'יִתְרָחֵץ',     'RF', 'Imperfect',  '3ms', 'רחץ', 'he will wash himself'],
+            ['10', 'מִתְבַּהֲלִין',  'IT', 'Participle', 'mp',  'בהל', 'being continually troubled / terrified'],
+            ['11', 'הִתְקְטַל',     'RF', 'Perfect',    '3ms', 'קטל', 'he was slain (reflexive pass.)'],
+            ['12', 'יִשְׁתַּנּוּן',  'RF', 'Imperfect',  '3mp', 'שׁנה', 'they will change themselves'],
+            ['13', 'מִתְנַסּוֹ',    'IT', 'Participle', 'ms',  'נסה', 'testing repeatedly'],
+            ['14', 'אִתְחַשַּׁב',   'ES', 'Perfect',    '3ms', 'חשׁב', 'it was reckoned as / counted'],
+            ['15', 'הִתְבַּהֲלוּ',  'RF', 'Perfect',    '3mp', 'בהל', 'they were terrified'],
+            ['16', 'מִתְכַּנְּשִׁין','IT', 'Participle', 'mp',  'כנשׁ', 'repeatedly assembling / coming together'],
+            ['17', 'יִשְׁתַּחֲוֵה',  'RF', 'Imperfect',  '3ms', 'שׁחה', 'he will bow himself down'],
+            ['18', 'הִשְׁתַּכַּח',  'RF', 'Perfect',    '3ms', 'שׁכח', 'he was found (reflexive passive)'],
+            ['19', 'מִתְחַזֵּא',    'RF', 'Participle', 'ms',  'חזה', 'appearing / seeming'],
+            ['20', 'יִתְכַּנְּשׁוּן','IT', 'Imperfect',  '3mp', 'כנשׁ', 'they will assemble (repeatedly)'],
+        ]
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc,
+                                        section_title='Hithpaal Function Sort — Items 1–20')
+
+
+def build_bba_ch20_hithpaal_function_sort(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        BbaCh20HithpaalFunctionSortPDF,
+        'BBA Chapter 20 — Hithpaal Semantic Function Sorting',
+        'Reflexive · Iterative · Estimative · Daniel and Ezra',
+        ['aramaic', 'bba', 'ch20', 'exercises', 'ch20-hithpaal-function-sort'],
+        'ch20-hithpaal-function-sort.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# BBA Ch21 — Haphel vs. Peal Contrast Drill
+# ---------------------------------------------------------------------------
+
+class BbaCh21HaphelPealContrastPDF(ExercisePDF):
+    def _build(self):
+        self.add_instructions(
+            'For each form, identify the stem (Peal or Haphel), '
+            'then give Conjugation, PGN, Root, and Translation. '
+            'Haphel diagnostic: הַ prefix (perfect); הוֹ prefix for I-yod/hollow roots; '
+            'יְהַ prefix (imperfect). Peal has no causative prefix.'
+        )
+        hdrs = ['#', 'Form', 'Stem (Peal/Haphel)', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr = [0.04, 0.13, 0.11, 0.12, 0.10, 0.12, 0.38]
+        hc = [1]
+        rows = [
+            ['1',  'עֲבַד',         '', '', '', '', ''],
+            ['2',  'הַעְבֵּד',      '', '', '', '', ''],
+            ['3',  'עָל',           '', '', '', '', ''],
+            ['4',  'הֵעַל',         '', '', '', '', ''],
+            ['5',  'נְפַל',         '', '', '', '', ''],
+            ['6',  'הַפֵּל',        '', '', '', '', ''],
+            ['7',  'יְדַע',         '', '', '', '', ''],
+            ['8',  'הוֹדַע',        '', '', '', '', ''],
+            ['9',  'קוּם',          '', '', '', '', ''],
+            ['10', 'הֲקֵים',        '', '', '', '', ''],
+            ['11', 'אֲזַל',         '', '', '', '', ''],
+            ['12', 'הַנְפֵּק',      '', '', '', '', ''],
+            ['13', 'שְׁלַח',        '', '', '', '', ''],
+            ['14', 'הַשְׁלֵט',      '', '', '', '', ''],
+            ['15', 'קְרָא',         '', '', '', '', ''],
+            ['16', 'יְהַחֲוֵה',     '', '', '', '', ''],
+            ['17', 'אֲמַר',         '', '', '', '', ''],
+            ['18', 'הֲקֵימוּ',      '', '', '', '', ''],
+            ['19', 'נְפַקְנָא',     '', '', '', '', ''],
+            ['20', 'הוֹדַעְנָּא',   '', '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'עֲבַד',        'Peal',   'Perfect',   '3ms', 'עבד', 'he did / made'],
+            ['2',  'הַעְבֵּד',     'Haphel', 'Perfect',   '3ms', 'עבד', 'he caused to do / he made (someone) do'],
+            ['3',  'עָל',          'Peal',   'Perfect',   '3ms', 'עלל', 'he entered'],
+            ['4',  'הֵעַל',        'Haphel', 'Perfect',   '3ms', 'עלל', 'he brought in / he made (someone) enter'],
+            ['5',  'נְפַל',        'Peal',   'Perfect',   '3ms', 'נפל', 'he fell'],
+            ['6',  'הַפֵּל',       'Haphel', 'Perfect',   '3ms', 'נפל', 'he caused to fall / he felled'],
+            ['7',  'יְדַע',        'Peal',   'Perfect',   '3ms', 'ידע', 'he knew'],
+            ['8',  'הוֹדַע',       'Haphel', 'Perfect',   '3ms', 'ידע', 'he made known / he informed'],
+            ['9',  'קוּם',         'Peal',   'Perfect',   '3ms', 'קום', 'he arose / stood'],
+            ['10', 'הֲקֵים',       'Haphel', 'Perfect',   '3ms', 'קום', 'he caused to stand / he set up'],
+            ['11', 'אֲזַל',        'Peal',   'Perfect',   '3ms', 'אזל', 'he went'],
+            ['12', 'הַנְפֵּק',     'Haphel', 'Perfect',   '3ms', 'נפק', 'he brought out / he caused to go out'],
+            ['13', 'שְׁלַח',       'Peal',   'Perfect',   '3ms', 'שׁלח','he sent'],
+            ['14', 'הַשְׁלֵט',     'Haphel', 'Perfect',   '3ms', 'שׁלט','he gave authority / he made to rule'],
+            ['15', 'קְרָא',        'Peal',   'Perfect',   '3ms', 'קרא', 'he called / read'],
+            ['16', 'יְהַחֲוֵה',    'Haphel', 'Imperfect', '3ms', 'חוה', 'he will declare / he will show'],
+            ['17', 'אֲמַר',        'Peal',   'Perfect',   '3ms', 'אמר', 'he said'],
+            ['18', 'הֲקֵימוּ',     'Haphel', 'Perfect',   '3mp', 'קום', 'they set up / they caused to stand'],
+            ['19', 'נְפַקְנָא',    'Peal',   'Perfect',   '1cp', 'נפק', 'we went out'],
+            ['20', 'הוֹדַעְנָּא',  'Haphel', 'Perfect',   '1cp', 'ידע', 'we made known / we informed'],
+        ]
+        self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc,
+                                        section_title='Haphel vs. Peal Contrast Drill — Items 1–20')
+
+
+def build_bba_ch21_haphel_peal_contrast(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        BbaCh21HaphelPealContrastPDF,
+        'BBA Chapter 21 — Haphel vs. Peal Contrast Drill',
+        'Causative Haphel vs. Simple Peal · Daniel and Ezra',
+        ['aramaic', 'bba', 'ch21', 'exercises', 'ch21-haphel-peal-contrast'],
+        'ch21-haphel-peal-contrast.pdf',
+        out_dir,
+    )
