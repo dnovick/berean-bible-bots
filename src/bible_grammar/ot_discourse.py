@@ -47,6 +47,8 @@ from typing import Sequence
 
 import pandas as pd
 
+from ._utils import ensure_chart_dir
+
 _CHART_DIR = Path('output') / 'charts' / 'ot' / 'discourse'
 
 # Wayyiqtol-initial scene-setting formulas (common episode openers)
@@ -58,9 +60,8 @@ DISJUNCTIVE_TYPES = {'qatal', 'yiqtol', 'participle active', 'nominal',
 # ── helpers ───────────────────────────────────────────────────────────────────
 
 def _load_ot_h() -> pd.DataFrame:
-    from ._utils import load_ot_data
-    df = load_ot_data()
-    return df[df['lang'] == 'H'].copy()
+    from ._utils import load_ot_h
+    return load_ot_h()
 
 
 def _book_df(book: str) -> pd.DataFrame:
@@ -333,7 +334,7 @@ def ot_discourse_density_chart(book: str) -> Path | None:
     wyy = ot_discourse_wayyiqtol_density(book)
     sp = ot_discourse_speech_density(book)
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'discourse_density_{book}.png'
 
     chapters = wyy['chapter'].tolist()
@@ -365,7 +366,7 @@ def ot_discourse_peak_chart(book: str) -> Path | None:
     if df.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'peak_score_{book}.png'
 
     fig, ax = plt.subplots(figsize=(max(8, len(df) * 0.5), 4))

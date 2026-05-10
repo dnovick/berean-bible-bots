@@ -56,6 +56,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from ._utils import ensure_chart_dir
+
 _CHART_DIR = Path('output') / 'charts' / 'formulaic'
 
 # ── curated formula registries ────────────────────────────────────────────────
@@ -188,14 +190,13 @@ _NT_BOOK_ORDER = [
 # ── helpers ───────────────────────────────────────────────────────────────────
 
 def _load_ot_h() -> pd.DataFrame:
-    from ._utils import load_ot_data
-    df = load_ot_data()
-    return df[df['lang'] == 'H'].copy()
+    from ._utils import load_ot_h
+    return load_ot_h()
 
 
 def _load_nt() -> pd.DataFrame:
-    from .syntax import load_syntax
-    return load_syntax()
+    from ._utils import load_nt
+    return load_nt()
 
 
 def _match_pattern(window: list[str], pattern: list[str]) -> bool:
@@ -542,7 +543,7 @@ def formula_book_chart(
     if df.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     safe = '_'.join(p[:8] for p in pat).replace('/', '_')
     out = _CHART_DIR / f'formula_books_{safe}_{lang}.png'
     pat_str = ' '.join(pat)
@@ -583,7 +584,7 @@ def formula_chapter_chart(
     # Count per chapter
     ch_counts = result.groupby('chapter').size().reset_index(name='count')
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'formula_{formula_key}_{book}.png'
     gloss = registry[formula_key]['gloss']
 

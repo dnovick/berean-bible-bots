@@ -49,6 +49,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from ._utils import ensure_chart_dir
+
 _CHART_DIR = Path('output') / 'charts' / 'ot' / 'participants'
 
 # Pre-identified participant lemmas for major OT figures
@@ -78,9 +80,8 @@ KNOWN_OT_PARTICIPANTS: dict[str, dict] = {
 # ── helpers ───────────────────────────────────────────────────────────────────
 
 def _load_ot_h() -> pd.DataFrame:
-    from ._utils import load_ot_data
-    df = load_ot_data()
-    return df[df['lang'] == 'H'].copy()
+    from ._utils import load_ot_h
+    return load_ot_h()
 
 
 def _resolve_lemma(participant: str) -> str:
@@ -387,7 +388,7 @@ def ot_participant_chain_chart(
     except ImportError:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'chain_{"_".join(participants[:4])}_{book}.png'
 
     # Collect chapter-level counts for each participant
@@ -438,7 +439,7 @@ def ot_entity_density_chart(
     if df.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'entity_density_{book}.png'
 
     # Pivot to chapter x entity

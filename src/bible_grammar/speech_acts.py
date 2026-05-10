@@ -54,6 +54,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from ._utils import ensure_chart_dir
+
 _CHART_DIR = Path('output') / 'charts' / 'speech_acts'
 
 SPEECH_ACT_TYPES = ['assertive', 'directive', 'commissive', 'expressive', 'declarative']
@@ -152,14 +154,13 @@ def _score_nt(verse_df: pd.DataFrame) -> str:
 # ── helpers ───────────────────────────────────────────────────────────────────
 
 def _load_ot_h() -> pd.DataFrame:
-    from ._utils import load_ot_data
-    df = load_ot_data()
-    return df[df['lang'] == 'H'].copy()
+    from ._utils import load_ot_h
+    return load_ot_h()
 
 
 def _load_nt() -> pd.DataFrame:
-    from .syntax import load_syntax
-    return load_syntax()
+    from ._utils import load_nt
+    return load_nt()
 
 
 # ── data functions ────────────────────────────────────────────────────────────
@@ -408,7 +409,7 @@ def speech_act_chart(
     if pivot.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     safe_spk = f'_{speaker}' if speaker else ''
     out = _CHART_DIR / f'speech_acts_{"_".join(books[:5])}{safe_spk}_{lang}.png'
 
@@ -454,7 +455,7 @@ def speech_act_heatmap(
     if pivot.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     safe_spk = f'_{speaker}' if speaker else ''
     out = _CHART_DIR / f'speech_act_heatmap_{"_".join(books[:6])}{safe_spk}_{lang}.png'
 

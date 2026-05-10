@@ -3,11 +3,13 @@
 from __future__ import annotations
 import re
 import unicodedata
+from pathlib import Path
 from typing import Optional
 
 import pandas as pd
 
 _ot_cache: Optional[pd.DataFrame] = None
+_nt_cache: Optional[pd.DataFrame] = None
 
 
 def load_ot_data() -> pd.DataFrame:
@@ -27,6 +29,28 @@ def load_ot_data() -> pd.DataFrame:
         )
         _ot_cache = raw
     return _ot_cache
+
+
+def load_ot_h() -> pd.DataFrame:
+    """Return the MACULA OT data filtered to Hebrew (lang == 'H')."""
+    return load_ot_data().pipe(lambda df: df[df['lang'] == 'H'].copy())
+
+
+def load_nt() -> pd.DataFrame:
+    """
+    Load the MACULA Greek NT syntax DataFrame, caching after the first call.
+    """
+    global _nt_cache
+    if _nt_cache is None:
+        from .syntax import load_syntax
+        _nt_cache = load_syntax()
+    return _nt_cache
+
+
+def ensure_chart_dir(path: Path) -> Path:
+    """Create *path* (and parents) if it doesn't exist; return *path*."""
+    path.mkdir(parents=True, exist_ok=True)
+    return path
 
 
 def strip_diacritics(text: str) -> str:

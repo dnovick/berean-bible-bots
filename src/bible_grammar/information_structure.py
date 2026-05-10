@@ -57,6 +57,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from ._utils import ensure_chart_dir
+
 _CHART_DIR = Path('output') / 'charts' / 'information_structure'
 
 # Hebrew connectives
@@ -80,14 +82,13 @@ _GK_SUBJ_PRONS = {'ἐγώ', 'σύ', 'αὐτός', 'ἡμεῖς', 'ὑμεῖ�
 # ── helpers ───────────────────────────────────────────────────────────────────
 
 def _load_ot_h() -> pd.DataFrame:
-    from ._utils import load_ot_data
-    df = load_ot_data()
-    return df[df['lang'] == 'H'].copy()
+    from ._utils import load_ot_h
+    return load_ot_h()
 
 
 def _load_nt() -> pd.DataFrame:
-    from .syntax import load_syntax
-    return load_syntax()
+    from ._utils import load_nt
+    return load_nt()
 
 
 def _book_df_h(book: str) -> pd.DataFrame:
@@ -321,7 +322,7 @@ def nt_clause_linking_chart(
     if df.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'nt_clause_linking_{"_".join(books[:6])}.png'
 
     metric_cols = ['de_per1k', 'gar_per1k', 'oun_per1k', 'men_per1k', 'alla_per1k']
@@ -373,7 +374,7 @@ def nt_information_heatmap(
         std = mat[col].std()
         mat[col] = (mat[col] - mat[col].mean()) / std if std > 0 else 0.0
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'nt_info_heatmap_{"_".join(books[:6])}.png'
 
     fig, ax = plt.subplots(figsize=(max(8, len(metrics) * 1.2), max(4, len(books) * 0.5)))
@@ -404,7 +405,7 @@ def ot_clause_linking_chart(
     if df.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f'ot_clause_linking_{"_".join(books[:6])}.png'
 
     metrics = ['parataxis_ratio', 'fronted_ratio', 'nominal_clause_pct']

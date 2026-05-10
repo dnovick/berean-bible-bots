@@ -53,6 +53,8 @@ from pathlib import Path
 
 import pandas as pd
 
+from ._utils import ensure_chart_dir
+
 _CHART_DIR = Path('output') / 'charts' / 'stylometrics'
 
 # Hebrew discourse particles tracked for density metric
@@ -70,14 +72,13 @@ _GK_FINITE_MOODS = {'indicative', 'subjunctive', 'imperative', 'optative'}
 # ── helpers ───────────────────────────────────────────────────────────────────
 
 def _load_ot_h() -> pd.DataFrame:
-    from ._utils import load_ot_data
-    df = load_ot_data()
-    return df[df['lang'] == 'H'].copy()
+    from ._utils import load_ot_h
+    return load_ot_h()
 
 
 def _load_nt() -> pd.DataFrame:
-    from .syntax import load_syntax
-    return load_syntax()
+    from ._utils import load_nt
+    return load_nt()
 
 
 def _book_tokens(book: str, lang: str) -> pd.DataFrame:
@@ -344,7 +345,7 @@ def style_radar_chart(
     n = len(metrics)
     angles = [i / n * 2 * np.pi for i in range(n)] + [0]
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     safe = '_'.join(books[:4])
     out = _CHART_DIR / f'radar_{safe}_{lang}.png'
 
@@ -393,7 +394,7 @@ def style_heatmap(
         std = mat[col].std()
         mat[col] = (mat[col] - mat[col].mean()) / std if std > 0 else 0.0
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     safe = '_'.join(books[:6])
     out = _CHART_DIR / f'heatmap_{safe}_{lang}.png'
 

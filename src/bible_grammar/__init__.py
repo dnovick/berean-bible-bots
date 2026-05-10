@@ -1,3 +1,4 @@
+# ── Core data access ──────────────────────────────────────────────────────────
 from .query import query, translation_query, lxx_query
 from .greek_prepositions import (
     greek_prep_frequency, greek_prep_by_book, greek_prep_distribution_table,
@@ -41,6 +42,7 @@ from .intertextuality import (intertextuality, print_intertextuality,
 from .christological_titles import (title_counts, print_title_counts,
                                     title_chart, title_verses, title_report,
                                     TITLE_REGISTRY)
+# ── Syntax trees & role search ────────────────────────────────────────────────
 from .syntax import (load_syntax, query_syntax, speech_verbs, referent_chain,
                      clause_roles, jesus_speaking_verses, MACULA_BOOK_MAP)
 from .syntax_ot import (load_syntax_ot, query_syntax_ot, lxx_alignment,
@@ -67,6 +69,7 @@ from .theological_reports import (run_theological_report, run_all_theological_re
                                   print_all_trajectories, theological_summary_table,
                                   print_theological_summary,
                                   THEOLOGICAL_TRAJECTORIES)
+# ── OT Hebrew poetry & verbal syntax ─────────────────────────────────────────
 from .poetry import (split_cola, verse_cola, verse_parallel_pairs,
                      book_word_pairs, parallelism_type,
                      book_parallelism_stats, compare_poetry_books,
@@ -97,6 +100,7 @@ from .verbal_syntax import (
     discourse_particles, print_discourse_particles,
     discourse_particle_summary, print_particle_summary,
 )
+# ── OT Hebrew verb stems ──────────────────────────────────────────────────────
 from .qal import (
     qal_data, qal_conjugation_profile, qal_top_roots,
     qal_root_conjugation, qal_book_distribution,
@@ -195,6 +199,7 @@ from .hithpael import (
     hithpael_semantic_chart, hithpael_top_roots_chart,
     hithpael_report,
 )
+# ── Biblical Aramaic ──────────────────────────────────────────────────────────
 from .aramaic_profile import (
     aramaic_data, aramaic_verb_data,
     aramaic_stem_profile, aramaic_conj_profile, aramaic_stem_conj,
@@ -214,6 +219,7 @@ from .aramaic_nominal import (
     print_aramaic_pron_profile, print_aramaic_prep_frequency,
     aramaic_noun_state_chart, aramaic_noun_state_book_chart, aramaic_prep_chart,
 )
+# ── OT Hebrew morphology & lexical analysis ───────────────────────────────────
 from .ot_noun_profile import (
     ot_noun_data, ot_adj_data,
     ot_noun_gender_profile, ot_noun_number_profile, ot_noun_state_profile,
@@ -227,6 +233,7 @@ from .ot_noun_profile import (
     OT_BOOK_GROUPS as OT_NOUN_BOOK_GROUPS, OT_BOOK_ORDER as OT_NOUN_BOOK_ORDER,
     STATE_ORDER as OT_NOUN_STATE_ORDER, GENDER_ORDER as OT_NOUN_GENDER_ORDER,
 )
+# ── NT Greek morphology & syntax ─────────────────────────────────────────────
 from .nt_participles import (
     nt_participle_data, nt_participle_tense_profile, nt_participle_voice_profile,
     nt_participle_tense_voice, nt_participle_role_profile,
@@ -330,6 +337,7 @@ from .ot_semantic_domains import (
     ot_domain_genre_chart, ot_domain_heatmap,
     COREDOMAIN_NAMES, LEXDOMAIN_TOP, THEOLOGY_COREDOMAINS,
 )
+# ── Stylistics, discourse & speech acts ──────────────────────────────────────
 from .speech_acts import (
     SPEECH_ACT_TYPES,
     ot_speech_act_data, ot_speech_act_profile,
@@ -391,6 +399,7 @@ from .nt_demonstratives import (
     nt_demo_genre_heatmap, nt_demo_book_chart,
     OUTOS, EKEINOS,
 )
+# ── Utilities & low-level helpers ────────────────────────────────────────────
 from .speaker import (is_jesus_speaking, jesus_speaking_verse_set,
                       filter_to_jesus_speech, ALLOWLIST_VERSES)
 from .lexicon import lookup, search_gloss, lex_entry, lemma_index

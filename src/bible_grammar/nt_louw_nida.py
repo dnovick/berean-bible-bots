@@ -56,6 +56,7 @@ from collections import Counter
 
 import pandas as pd
 
+from ._utils import ensure_chart_dir
 from .domain_search import DOMAIN_NAMES as LN_DOMAIN_NAMES  # re-export
 
 _CHART_DIR = Path('output') / 'charts' / 'nt' / 'louw_nida'
@@ -77,8 +78,8 @@ NT_BOOK_ORDER = (
 # ── helpers ───────────────────────────────────────────────────────────────────
 
 def _load_nt() -> pd.DataFrame:
-    from .syntax import load_syntax
-    return load_syntax()
+    from ._utils import load_nt
+    return load_nt()
 
 
 def _parse_ln(ln_str: str) -> list[str]:
@@ -415,7 +416,7 @@ def nt_ln_subdomain_chart(
         return None
 
     domain_name = LN_DOMAIN_NAMES.get(domain, str(domain))
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     suffix = f"_{book}" if isinstance(book, str) else ""
     out = _CHART_DIR / f"ln{domain}_subdomains{suffix}.png"
 
@@ -445,7 +446,7 @@ def nt_ln_book_chart(
     if df.empty:
         return None
 
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / f"ln{subdomain.replace('.', '_')}_books.png"
 
     fig, ax = plt.subplots(figsize=(10, 6))
@@ -489,7 +490,7 @@ def nt_ln_genre_heatmap(
         return None
 
     pivot = pd.DataFrame(data_rows).set_index('domain')
-    _CHART_DIR.mkdir(parents=True, exist_ok=True)
+    ensure_chart_dir(_CHART_DIR)
     out = _CHART_DIR / 'ln_domain_heatmap.png'
 
     fig, ax = plt.subplots(figsize=(max(10, len(books) * 0.9), max(5, len(domains) * 0.7)))
