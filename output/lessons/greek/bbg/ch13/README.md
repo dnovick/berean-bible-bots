@@ -18,6 +18,12 @@
 | [ch13-vocab-deck.txt](ch13-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch13-vocab-deck-fd.txt](ch13-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [NT Demonstrative Pronouns](../../../../../notebooks/nt/syntax/demonstratives.ipynb) | οὗτος vs. ἐκεῖνος frequency, attributive vs. substantival use, case/gender profiles, near/far genre comparison, John's use of ἐκεῖνος for the Paraclete |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*

@@ -18,6 +18,12 @@
 | [ch11-vocab-deck.txt](ch11-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch11-vocab-deck-fd.txt](ch11-vocab-deck-fd.txt) | Flashcards Deluxe import file |
 
+### Notebooks
+
+| Notebook | What it shows |
+|---|---|
+| [OT Number Morphology](../../../../../notebooks/ot/numbers/ot_numbers.ipynb) | Hebrew number token frequency, gender-polarity rule for cardinals 1–10, state distribution, book/genre distribution (Numbers, Chronicles, Ezekiel dominate), ad-hoc queries |
+
 ---
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 11*

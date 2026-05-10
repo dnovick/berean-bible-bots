@@ -25,6 +25,12 @@ the notebooks running in VS Code (5–10 minutes).
 |---|---|
 | [ot/nouns/ot_nouns.ipynb](ot/nouns/ot_nouns.ipynb) | Hebrew OT noun morphology: state (absolute/construct), gender (masculine/feminine), number, top lemmas, construct chain analysis, definite article usage by genre, book distribution |
 
+### Numbers
+
+| Notebook | Description |
+|---|---|
+| [ot/numbers/ot_numbers.ipynb](ot/numbers/ot_numbers.ipynb) | Hebrew OT number morphology: frequency of cardinals/ordinals, gender-polarity rule for cardinals 1–10, state distribution, book/genre distribution (Numbers, Chronicles, Ezekiel dominate census and chronological texts) |
+
 ### Aramaic
 
 | Notebook | Description |
@@ -84,6 +90,7 @@ the notebooks running in VS Code (5–10 minutes).
 | [nt/syntax/prepositions.ipynb](nt/syntax/prepositions.ipynb) | Greek preposition analysis: preposition distribution in the NT, governing constructions |
 | [nt/syntax/participles.ipynb](nt/syntax/participles.ipynb) | Greek participle usage: tense/voice profiles, tense × voice crosstab, syntactic role (adverbial/adjectival/substantival), genitive absolutes, perfect participles, genre comparison |
 | [nt/syntax/mood_usage.ipynb](nt/syntax/mood_usage.ipynb) | GNT mood distribution: subjunctive constructions (purpose/conditional/hortatory), infinitive constructions (complementary/articular/prepositional), imperative tense comparison, mood genre heatmap |
+| [nt/syntax/demonstratives.ipynb](nt/syntax/demonstratives.ipynb) | Greek demonstrative pronouns: οὗτος vs. ἐκεῖνος frequency, attributive/substantival use, case/gender profiles, near/far genre comparison, John's distinctive use of ἐκεῖνος for the Paraclete |
 
 ### Discourse
 

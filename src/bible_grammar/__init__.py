@@ -282,6 +282,30 @@ from .nt_moods import (
     nt_mood_chart, nt_subjunctive_chart, nt_imperative_chart, nt_mood_genre_heatmap,
     PURPOSE_PARTICLES, COND_PARTICLES, PROHIB_STRONGS,
 )
+from .ot_numbers import (
+    ot_number_data, ot_number_frequency, ot_top_number_lemmas,
+    ot_number_gender_profile, ot_number_state_profile,
+    ot_number_book_distribution, ot_number_genre_profile, ot_number_polarity_table,
+    print_ot_number_overview, print_ot_number_frequency,
+    print_ot_number_gender, print_ot_number_state,
+    print_ot_number_book_distribution, print_ot_number_genre_profile,
+    print_ot_number_polarity,
+    ot_number_frequency_chart, ot_number_genre_chart, ot_number_book_chart,
+    CARDINALS_1_10,
+)
+from .nt_demonstratives import (
+    nt_demo_data, nt_demo_frequency, nt_demo_case_profile,
+    nt_demo_gender_profile, nt_demo_use_profile,
+    nt_demo_book_distribution, nt_demo_genre_profile,
+    nt_demo_near_far_comparison, nt_demo_top_cooccurrences,
+    print_nt_demo_overview, print_nt_demo_frequency,
+    print_nt_demo_case, print_nt_demo_gender, print_nt_demo_use,
+    print_nt_demo_book_distribution, print_nt_demo_genre_profile,
+    print_nt_demo_near_far,
+    nt_demo_frequency_chart, nt_demo_case_chart,
+    nt_demo_genre_heatmap, nt_demo_book_chart,
+    OUTOS, EKEINOS,
+)
 from .speaker import (is_jesus_speaking, jesus_speaking_verse_set,
                       filter_to_jesus_speech, ALLOWLIST_VERSES)
 from .lexicon import lookup, search_gloss, lex_entry, lemma_index
