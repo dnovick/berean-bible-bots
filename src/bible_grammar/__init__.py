@@ -330,6 +330,13 @@ from .ot_semantic_domains import (
     ot_domain_genre_chart, ot_domain_heatmap,
     COREDOMAIN_NAMES, LEXDOMAIN_TOP, THEOLOGY_COREDOMAINS,
 )
+from .ot_participant import (
+    KNOWN_OT_PARTICIPANTS,
+    ot_participant_data, ot_participant_subject_verbs, ot_participant_object_verbs,
+    ot_participant_chain, ot_entity_density, ot_participant_compare,
+    print_ot_participant_profile, print_ot_participant_chain, print_ot_participant_compare,
+    ot_participant_chain_chart, ot_entity_density_chart,
+)
 from .stylometrics import (
     msttr, book_style_profile, style_comparison,
     print_style_profile, print_style_comparison,

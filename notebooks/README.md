@@ -74,6 +74,7 @@ the notebooks running in VS Code (5–10 minutes).
 |---|---|
 | [ot/speakers/speaker_attribution.ipynb](ot/speakers/speaker_attribution.ipynb) | OT speaker attribution: who speaks in each book, divine speech by book, YHWH speech verse refs, speaker report generation; discourse particle tagging (הִנֵּה, כִּי, לָכֵן, etc.) with cross-book כִּי comparison |
 | [ot/speakers/syntactic_roles_ot.ipynb](ot/speakers/syntactic_roles_ot.ipynb) | OT syntactic roles: loading OT syntax data (load_syntax_ot), wayyiqtol in Genesis, Aramaic sections; what YHWH+Elohim does (subject_verbs), what YHWH acts upon (object_verbs), who does bara (create), role charts and reports |
+| [ot/speakers/participant_tracking.ipynb](ot/speakers/participant_tracking.ipynb) | OT participant tracking and entity chains: 19 pre-identified participants (YHWH/Patriarchs/Moses/David/etc.), chapter-presence chains, patriarch comparison (Abraham/Isaac/Jacob/Joseph in Gen), Moses across Torah, David vs. Saul in 1 Sam, entity density heatmaps |
 
 ---
 
