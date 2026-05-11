@@ -241,7 +241,7 @@ def _ngram_counter(df: pd.DataFrame, n: int) -> Counter:
     return counter
 
 
-def _parse_pattern(pattern) -> list[str]:
+def _parse_pattern(pattern: str | list[str]) -> list[str]:
     if isinstance(pattern, str):
         return pattern.split()
     return list(pattern)
@@ -296,7 +296,7 @@ def nt_formula_frequency(
 
 
 def ot_formula_search(
-    pattern,
+    pattern: str | list[str],
     *,
     book: str | list[str] | None = None,
     context_words: int = 3,
@@ -317,7 +317,7 @@ def ot_formula_search(
 
 
 def nt_formula_search(
-    pattern,
+    pattern: str | list[str],
     *,
     book: str | list[str] | None = None,
     context_words: int = 3,
@@ -338,7 +338,7 @@ def nt_formula_search(
 
 
 def formula_book_distribution(
-    pattern,
+    pattern: str | list[str],
     *,
     lang: str = 'H',
 ) -> pd.DataFrame:
@@ -412,7 +412,7 @@ def nt_formula_profile() -> pd.DataFrame:
 # ── print functions ───────────────────────────────────────────────────────────
 
 def print_formula_concordance(
-    pattern,
+    pattern: str | list[str],
     *,
     lang: str = 'H',
     max_rows: int = 30,
@@ -440,7 +440,7 @@ def print_formula_concordance(
 
 
 def print_formula_book_distribution(
-    pattern,
+    pattern: str | list[str],
     *,
     lang: str = 'H',
 ) -> None:
@@ -529,7 +529,7 @@ def print_nt_top_ngrams(
 # ── chart functions ───────────────────────────────────────────────────────────
 
 def formula_book_chart(
-    pattern,
+    pattern: str | list[str],
     *,
     lang: str = 'H',
 ) -> Path | None:

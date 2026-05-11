@@ -9,11 +9,12 @@ from ._base import (
 from reportlab.lib.units import inch
 from reportlab.lib.colors import black
 from reportlab.lib.utils import simpleSplit
-import os
 
 # ---------------------------------------------------------------------------
 # Chapter 26 exercise
 # ---------------------------------------------------------------------------
+
+
 class Ch26Exercise(PassageExercise):
     _instructions = (
         'Most highlighted verbs are Hiphil forms. For each one, first answer '
@@ -201,6 +202,8 @@ class Ch26Exercise(PassageExercise):
 # ---------------------------------------------------------------------------
 # Chapter 26 — Qal–Hiphil Contrast Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch26ContrastExercise(ExercisePDF):
 
     _ENTRIES_A = [
@@ -270,6 +273,8 @@ def build_ch26_contrast_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 26 — Semantic Function Sorting
 # ---------------------------------------------------------------------------
+
+
 class Ch26FunctionSortExercise(ExercisePDF):
 
     _ENTRIES = [
@@ -410,6 +415,7 @@ _CH26_STEM_ANS = [
     ['24', 'נִשְׁמָר',   'Niphal', 'Participle',   'ms',  'שׁמר'],
 ]
 
+
 class Ch26StemIdDrill(ExercisePDF):
     _instructions = (
         'For each verb form, identify the stem (Qal / Niphal / Hiphil), '
@@ -444,6 +450,8 @@ def build_ch26_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 25 — "Spot the Niphal" Passage Exercise
 # ---------------------------------------------------------------------------
+
+
 class Ch25Exercise(PassageExercise):
     _instructions = (
         'Most highlighted verbs are Niphal forms. For each one, first answer '
@@ -616,6 +624,8 @@ def build_ch25_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 24 — "Spot the Niphal" Passage Exercise
 # ---------------------------------------------------------------------------
+
+
 class Ch24Exercise(PassageExercise):
     _instructions = (
         'Most highlighted verbs are Niphal forms. For each one, first answer '
@@ -801,6 +811,8 @@ def build_ch24_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 24 — Qal–Niphal Contrast Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch24ContrastExercise(ExercisePDF):
 
     _ENTRIES_A = [
@@ -869,6 +881,8 @@ def build_ch24_contrast_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 24 — Semantic Function Sorting
 # ---------------------------------------------------------------------------
+
+
 class Ch24FunctionSortExercise(ExercisePDF):
 
     _ENTRIES = [
@@ -1069,6 +1083,7 @@ def build_ch25_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 27 — Hiphil Weak Verbs
 # ---------------------------------------------------------------------------
+
 
 class Ch27Exercise(ExercisePDF):
     """Passage exercise — 18 Hiphil weak verbs from Gen, Exo, Num, Deu."""
@@ -1345,6 +1360,7 @@ def build_ch27_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 27 — Niphal–Hiphil Contrast Drill
 # ---------------------------------------------------------------------------
+
 
 class Ch27NHContrastExercise(ExercisePDF):
     """Niphal–Hiphil Contrast Drill — 20 items across both stems."""
@@ -1634,6 +1650,8 @@ def build_ch27_bg_drill_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 27 — Qal–Hiphil Contrast Drill (Weak Verbs)
 # ---------------------------------------------------------------------------
+
+
 class Ch27ContrastExercise(ExercisePDF):
 
     _ENTRIES_A = [
@@ -1706,6 +1724,8 @@ def build_ch27_contrast_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 27 — Semantic Function Sorting (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch27FunctionSortExercise(ExercisePDF):
 
     _ENTRIES = [
@@ -1831,6 +1851,7 @@ _CH27_STEM_ANS = [
     ['24', 'נוֹלָד',      'Niphal', 'Participle',      'ms',  'ילד'],
 ]
 
+
 class Ch27StemIdDrill(ExercisePDF):
     _instructions = (
         'For each verb form, identify the stem (Qal / Niphal / Hiphil), '
@@ -1866,6 +1887,8 @@ def build_ch27_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 30 — "Spot the Piel" Passage Exercise (Piel Strong)
 # ---------------------------------------------------------------------------
+
+
 class Ch30PielExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -1963,7 +1986,6 @@ class Ch30PielExercise(PassageExercise):
         ], show_answers=show_answers)
 
 
-
 def build_ch30_exercise(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch30PielExercise,
@@ -1978,6 +2000,8 @@ def build_ch30_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 28 — "Spot the Hophal" Passage Exercise (correct: Hophal Strong)
 # ---------------------------------------------------------------------------
+
+
 class Ch28HophalExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -2061,6 +2085,8 @@ def build_ch28_hophal_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 34 — "Spot the Hithpael" Passage Exercise (Strong Verbs)
 # ---------------------------------------------------------------------------
+
+
 class Ch34HithpaelExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -2188,6 +2214,8 @@ def build_ch34_hithpael_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 35 — "Spot the Hithpael" Passage Exercise (Weak Verbs)
 # ---------------------------------------------------------------------------
+
+
 class Ch35HithpaelWeakExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -2315,6 +2343,8 @@ def build_ch35_hithpael_weak_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 29 — "Spot the Hophal Weak" Passage Exercise
 # ---------------------------------------------------------------------------
+
+
 class Ch29HophalWeakExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -2461,6 +2491,8 @@ def build_ch29_hophal_weak_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 31 — "Spot the Piel Weak" Passage Exercise
 # ---------------------------------------------------------------------------
+
+
 class Ch31PielWeakExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -2626,6 +2658,8 @@ def build_ch31_piel_weak_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 32 — "Spot the Pual" Passage Exercise (Pual Strong)
 # ---------------------------------------------------------------------------
+
+
 class Ch32PualExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -2746,6 +2780,8 @@ def build_ch32_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 33 — "Spot the Pual" Passage Exercise (Pual Weak)
 # ---------------------------------------------------------------------------
+
+
 class Ch33PualWeakExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
@@ -2878,6 +2914,7 @@ def build_ch33_exercise(out_dir: Optional[str] = None) -> str:
 # Ch1–Ch6 builders
 # ---------------------------------------------------------------------------
 
+
 class Ch1LetterRecognitionExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -3002,6 +3039,7 @@ def build_ch1_letter_recognition(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch2VowelIdentificationExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -3090,6 +3128,7 @@ def build_ch2_vowel_identification(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch3SyllableDivisionExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -3164,6 +3203,7 @@ def build_ch3_syllable_division(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch4NounParsingExercise(ExercisePDF):
     def _build(self) -> None:
@@ -3247,6 +3287,7 @@ def build_ch4_noun_parsing(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch5ArticleAndVavExercise(ExercisePDF):
     def _build(self) -> None:
@@ -3366,6 +3407,7 @@ def build_ch5_article_and_vav(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch6PrepositionParsingExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -3477,6 +3519,7 @@ def build_ch6_preposition_parsing(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch7–Ch12 builders
 # ---------------------------------------------------------------------------
+
 
 class Ch7AdjectiveUsageExercise(ExercisePDF):
     def _build(self) -> None:
@@ -3595,6 +3638,7 @@ def build_ch7_adjective_usage(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch8PronounIdentificationExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -3682,6 +3726,7 @@ def build_ch8_pronoun_identification(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch9SuffixParsingExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -3767,6 +3812,7 @@ def build_ch9_suffix_parsing(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch10ConstructChainExercise(ExercisePDF):
     def _build(self) -> None:
@@ -3876,6 +3922,7 @@ def build_ch10_construct_chain(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch11NumberIdentificationExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -3954,6 +4001,7 @@ def build_ch11_number_identification(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch12VerbOverviewExercise(ExercisePDF):
     def _build(self) -> None:
@@ -4047,6 +4095,7 @@ def build_ch12_verb_overview(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch13–Ch15 builders
 # ---------------------------------------------------------------------------
+
 
 class Ch13ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
@@ -4154,6 +4203,7 @@ def build_ch13_parsing_drill(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch13PassageExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -4239,6 +4289,7 @@ def build_ch13_passage_exercise(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch14PassageExercise(ExercisePDF):
     def _build(self) -> None:
@@ -4344,6 +4395,7 @@ def build_ch14_passage_exercise(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch14WeakFormIdExercise(ExercisePDF):
     def _build(self) -> None:
@@ -4484,6 +4536,7 @@ def build_ch14_weak_form_id(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch15ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -4595,6 +4648,7 @@ def build_ch15_parsing_drill(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch15PassageExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -4683,6 +4737,7 @@ def build_ch15_passage_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch16–Ch18 builders
 # ---------------------------------------------------------------------------
+
 
 class Ch16PassageExercise(ExercisePDF):
     def _build(self) -> None:
@@ -4773,6 +4828,7 @@ def build_ch16_passage_exercise(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch16WeakFormIdExercise(ExercisePDF):
     def _build(self) -> None:
@@ -4937,6 +4993,7 @@ def build_ch16_weak_form_id(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch17ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -5047,6 +5104,7 @@ def build_ch17_parsing_drill(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch17PassageExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -5136,6 +5194,7 @@ def build_ch17_passage_exercise(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+
 
 class Ch18ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
@@ -5263,6 +5322,7 @@ def build_ch18_parsing_drill(out_dir: Optional[str] = None) -> str:
 
 # ---------------------------------------------------------------------------
 
+
 class Ch18PassageExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -5358,6 +5418,7 @@ def build_ch18_passage_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch19 — Pronominal Suffixes on Verbs
 # ---------------------------------------------------------------------------
+
 
 class Ch19ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
@@ -5586,6 +5647,7 @@ def build_ch19_passage_exercise(out_dir: Optional[str] = None) -> str:
 # Ch20 — Qal Infinitive Construct
 # ---------------------------------------------------------------------------
 
+
 class Ch20ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -5810,6 +5872,7 @@ def build_ch20_passage_exercise(out_dir: Optional[str] = None) -> str:
 # Ch21 — Qal Infinitive Absolute
 # ---------------------------------------------------------------------------
 
+
 class Ch21ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -6028,6 +6091,7 @@ def build_ch21_passage_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch22 — Qal Participle (Active and Passive)
 # ---------------------------------------------------------------------------
+
 
 class Ch22ParsingDrillExercise(ExercisePDF):
     def _build(self) -> None:
@@ -6290,6 +6354,7 @@ def build_ch22_passage_exercise(out_dir: Optional[str] = None) -> str:
 # Ch23 — Clause Analysis / Reading the Clause
 # ---------------------------------------------------------------------------
 
+
 class Ch23ClauseAnalysisExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
@@ -6525,6 +6590,7 @@ def build_ch23_passage_exercise(out_dir: Optional[str] = None) -> str:
 # Chapter 28 — Hophal Semantic Function Sorting
 # ---------------------------------------------------------------------------
 
+
 class Ch28FunctionSortExercise(ExercisePDF):
     _ENTRIES = [
         SortEntry('1',  'יֻּגַּד',   'Wayyiqtol 3ms',       'Gen 22:20',  '"it was told to Abraham"',                              'SR', 'נָגַד', 'Hophal of Hiphil "to tell"; information was reported'),
@@ -6593,6 +6659,7 @@ def build_ch28_function_sort_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 28 — Hiphil–Hophal Contrast Drill
 # ---------------------------------------------------------------------------
+
 
 class Ch28HophalHiphilContrastExercise(ExercisePDF):
 
@@ -6683,6 +6750,7 @@ def build_ch28_hophal_hiphil_contrast_exercise(out_dir: Optional[str] = None) ->
 # ---------------------------------------------------------------------------
 # Chapter 29 — Hophal Weak-Form Identification Drill
 # ---------------------------------------------------------------------------
+
 
 class Ch29WeakFormIdExercise(ExercisePDF):
 
@@ -6830,6 +6898,7 @@ def build_ch29_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
 # Chapter 30 — Piel Semantic Function Sorting
 # ---------------------------------------------------------------------------
 
+
 class Ch30FunctionSortExercise(ExercisePDF):
     _ENTRIES = [
         SortEntry('1',  'יְבָרֶךְ',     'Wayyiqtol 3ms',    'Gen 1:22',  '"God blessed them"',                              'SA', 'בָּרַךְ', 'Piel is the primary form; no intensified Qal counterpart'),
@@ -6898,6 +6967,7 @@ def build_ch30_function_sort_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 30 — Qal–Piel Contrast Drill
 # ---------------------------------------------------------------------------
+
 
 class Ch30QalPielContrastExercise(ExercisePDF):
 
@@ -7005,6 +7075,7 @@ def build_ch30_qal_piel_contrast_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 31 — Piel Weak-Form Identification Drill
 # ---------------------------------------------------------------------------
+
 
 class Ch31WeakFormIdExercise(ExercisePDF):
 
@@ -7150,6 +7221,7 @@ def build_ch31_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
 # Chapter 32 — Piel–Pual Contrast Drill
 # ---------------------------------------------------------------------------
 
+
 class Ch32PielPualContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -7259,6 +7331,7 @@ def build_ch32_piel_pual_contrast_exercise(out_dir: Optional[str] = None) -> str
 # ---------------------------------------------------------------------------
 # Chapter 33 — Pual Weak-Form Identification Drill
 # ---------------------------------------------------------------------------
+
 
 class Ch33WeakFormIdExercise(ExercisePDF):
 
@@ -7381,6 +7454,7 @@ def build_ch33_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
 # Chapter 34 — Hithpael Semantic Function Sorting
 # ---------------------------------------------------------------------------
 
+
 class Ch34FunctionSortExercise(ExercisePDF):
     _ENTRIES = [
         SortEntry('1',  'מִתְהַלֵּךְ',    'Participle ms',   'Gen 3:8',   '"walking about (in the garden)"',              'IT', 'הָלַךְ', 'Back-and-forth movement; not a single walk'),
@@ -7449,6 +7523,7 @@ def build_ch34_function_sort_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Chapter 35 — Hithpael Weak-Form Identification Drill
 # ---------------------------------------------------------------------------
+
 
 class Ch35WeakFormIdExercise(ExercisePDF):
 
@@ -7597,6 +7672,8 @@ def build_ch35_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch13 — Qal Perfect Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch13QalPerfectParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the correct Qal Perfect form for each PGN cell. '
@@ -7621,6 +7698,7 @@ class Ch13QalPerfectParadigmDrill(ExercisePDF):
                                        answer_heb_cols=[2],
                                        section_title='Qal Perfect — קטל')
 
+
 def build_ch13_qal_perfect_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch13QalPerfectParadigmDrill,
@@ -7634,6 +7712,8 @@ def build_ch13_qal_perfect_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch15 — Qal Imperfect Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch15QalImperfectParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the correct Qal Imperfect (yiqtol) form for each PGN. '
@@ -7656,6 +7736,7 @@ class Ch15QalImperfectParadigmDrill(ExercisePDF):
                                        answer_heb_cols=[2],
                                        section_title='Qal Imperfect — שמר')
 
+
 def build_ch15_qal_imperfect_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch15QalImperfectParadigmDrill,
@@ -7669,6 +7750,8 @@ def build_ch15_qal_imperfect_paradigm_drill(out_dir: Optional[str] = None) -> st
 # ---------------------------------------------------------------------------
 # Ch17 — Wayyiqtol Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch17WayyiqtolParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Wayyiqtol (waw-consecutive imperfect) form for each PGN. '
@@ -7691,6 +7774,7 @@ class Ch17WayyiqtolParadigmDrill(ExercisePDF):
                                        answer_heb_cols=[2],
                                        section_title='Wayyiqtol — קטל')
 
+
 def build_ch17_wayyiqtol_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch17WayyiqtolParadigmDrill,
@@ -7704,6 +7788,8 @@ def build_ch17_wayyiqtol_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch18 — Qal Imperative Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch18QalImperativeParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Qal Imperative form for each PGN. '
@@ -7723,6 +7809,7 @@ class Ch18QalImperativeParadigmDrill(ExercisePDF):
                                        answer_heb_cols=[2],
                                        section_title='Qal Imperative — שמר')
 
+
 def build_ch18_qal_imperative_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch18QalImperativeParadigmDrill,
@@ -7736,6 +7823,8 @@ def build_ch18_qal_imperative_paradigm_drill(out_dir: Optional[str] = None) -> s
 # ---------------------------------------------------------------------------
 # Ch19 — Verb + Pronominal Suffix Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch19VerbSuffixParadigmDrill(ExercisePDF):
     _instructions = (
         'Part A: Supply the Qal Perfect 3ms (שָׁמַר) with the given object suffix. '
@@ -7774,6 +7863,7 @@ class Ch19VerbSuffixParadigmDrill(ExercisePDF):
                                        section_title='Part B — Qal Imperfect 3ms + Suffix (יִשְׁמֹר)',
                                        answer_title='Part B — Answer Key')
 
+
 def build_ch19_verb_suffix_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch19VerbSuffixParadigmDrill,
@@ -7787,6 +7877,8 @@ def build_ch19_verb_suffix_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch20 — Qal Infinitive Construct Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch20QalICParadigmDrill(ExercisePDF):
     _instructions = (
         'Give the bare Infinitive Construct and the form with לְ for each root class.'
@@ -7817,6 +7909,7 @@ class Ch20QalICParadigmDrill(ExercisePDF):
                                        answer_heb_cols=[2, 3],
                                        section_title='Qal Infinitive Construct — Root Classes')
 
+
 def build_ch20_qal_ic_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch20QalICParadigmDrill,
@@ -7830,6 +7923,8 @@ def build_ch20_qal_ic_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch21 — Qal Infinitive Absolute Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch21QalIAParadigmDrill(ExercisePDF):
     _instructions = (
         'Give the Qal Infinitive Absolute for each root class. '
@@ -7861,6 +7956,7 @@ class Ch21QalIAParadigmDrill(ExercisePDF):
                                        heb_cols=[2], answer_heb_cols=[3],
                                        section_title='Qal Infinitive Absolute — Root Classes')
 
+
 def build_ch21_qal_ia_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch21QalIAParadigmDrill,
@@ -7874,6 +7970,8 @@ def build_ch21_qal_ia_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch22 — Qal Participle Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch22QalParticipleParadigmDrill(ExercisePDF):
     _instructions = (
         'Part A: Write the Qal Active Participle for the root שמר (4 forms). '
@@ -7905,6 +8003,7 @@ class Ch22QalParticipleParadigmDrill(ExercisePDF):
                                        section_title='Part B — Qal Passive Participle / Qatûl (שמר)',
                                        answer_title='Part B — Answer Key')
 
+
 def build_ch22_qal_participle_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch22QalParticipleParadigmDrill,
@@ -7918,6 +8017,8 @@ def build_ch22_qal_participle_paradigm_drill(out_dir: Optional[str] = None) -> s
 # ---------------------------------------------------------------------------
 # Ch24 — Niphal Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch24NiphalParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the complete Niphal paradigm for the root קטל. '
@@ -7979,6 +8080,7 @@ class Ch24NiphalParadigmDrill(ExercisePDF):
                                        section_title='Niphal — Inf. Construct · Inf. Absolute · Participle',
                                        answer_title='Inf./Participle — Answer Key')
 
+
 def build_ch24_niphal_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch24NiphalParadigmDrill,
@@ -7992,6 +8094,8 @@ def build_ch24_niphal_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch26 — Hiphil Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch26HiphilParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the complete Hiphil paradigm for the root קטל. '
@@ -8048,6 +8152,7 @@ class Ch26HiphilParadigmDrill(ExercisePDF):
                                        section_title='Hiphil — Inf. Construct · Inf. Absolute · Participle',
                                        answer_title='Inf./Participle — Answer Key')
 
+
 def build_ch26_hiphil_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch26HiphilParadigmDrill,
@@ -8061,6 +8166,8 @@ def build_ch26_hiphil_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch28 — Hophal Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch28HophalParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Hophal paradigm for the root מות. '
@@ -8111,6 +8218,7 @@ class Ch28HophalParadigmDrill(ExercisePDF):
                                        section_title='Hophal — Inf. Construct · Inf. Absolute · Participle',
                                        answer_title='Inf./Participle — Answer Key')
 
+
 def build_ch28_hophal_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch28HophalParadigmDrill,
@@ -8124,6 +8232,8 @@ def build_ch28_hophal_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch29 — Hophal Weak Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch29HophalWeakParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Hophal Weak forms. '
@@ -8165,6 +8275,7 @@ class Ch29HophalWeakParadigmDrill(ExercisePDF):
                                        section_title='Part B — Hophal Weak: בוא (biconsonantal, shureq)',
                                        answer_title='Part B — Answer Key')
 
+
 def build_ch29_hophal_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch29HophalWeakParadigmDrill,
@@ -8178,6 +8289,8 @@ def build_ch29_hophal_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch30 — Piel Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch30PielParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the complete Piel paradigm for the root דבר. '
@@ -8233,6 +8346,7 @@ class Ch30PielParadigmDrill(ExercisePDF):
                                        section_title='Piel — Inf. Construct · Inf. Absolute · Participle',
                                        answer_title='Inf./Participle — Answer Key')
 
+
 def build_ch30_piel_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch30PielParadigmDrill,
@@ -8246,6 +8360,8 @@ def build_ch30_piel_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch31 — Piel Weak Paradigm Drill (III-ה: גלה)
 # ---------------------------------------------------------------------------
+
+
 class Ch31PielWeakParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Piel Weak paradigm for the root גלה (III-ה: uncover/reveal). '
@@ -8285,6 +8401,7 @@ class Ch31PielWeakParadigmDrill(ExercisePDF):
                                            section_title=title_q,
                                            answer_title=f'{title_q} — Answer Key')
 
+
 def build_ch31_piel_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch31PielWeakParadigmDrill,
@@ -8298,6 +8415,8 @@ def build_ch31_piel_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch32 — Pual Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch32PualParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Pual (passive of Piel) paradigm for the root קטל. '
@@ -8335,6 +8454,7 @@ class Ch32PualParadigmDrill(ExercisePDF):
                                            section_title=title_q,
                                            answer_title=f'{title_q} — Answer Key')
 
+
 def build_ch32_pual_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch32PualParadigmDrill,
@@ -8348,6 +8468,8 @@ def build_ch32_pual_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch33 — Pual Weak Paradigm Drill (III-ה: בנה)
 # ---------------------------------------------------------------------------
+
+
 class Ch33PualWeakParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Pual Weak forms. '
@@ -8386,6 +8508,7 @@ class Ch33PualWeakParadigmDrill(ExercisePDF):
                                        section_title='Part B — Pual Strong: שאל (comparison)',
                                        answer_title='Part B — Answer Key')
 
+
 def build_ch33_pual_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch33PualWeakParadigmDrill,
@@ -8399,6 +8522,8 @@ def build_ch33_pual_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch32 — Pual Function Sort (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch32FunctionSortExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -8483,6 +8608,8 @@ def build_ch32_function_sort_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch32 — Qal–Piel–Pual Contrast Drill (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch32QalPielPualContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -8586,6 +8713,8 @@ def build_ch32_qal_piel_pual_contrast_exercise(out_dir: Optional[str] = None) ->
 # ---------------------------------------------------------------------------
 # Ch32 — Stem-ID Drill (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch32StemIdDrill(ExercisePDF):
     _instructions = (
         'For each of the 24 verb forms, identify the stem (Qal / Piel / Pual), '
@@ -8677,6 +8806,8 @@ def build_ch32_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch33 — Qal–Piel–Pual Contrast Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch33QalPielPualContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -8781,6 +8912,8 @@ def build_ch33_qal_piel_pual_contrast_exercise(out_dir: Optional[str] = None) ->
 # ---------------------------------------------------------------------------
 # Ch33 — Pual Function Sort (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch33FunctionSortExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -8863,6 +8996,8 @@ def build_ch33_function_sort_exercise(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch33 — Stem-ID Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch33StemIdDrill(ExercisePDF):
     _instructions = (
         'For each of the 24 verb forms, identify the stem (Qal / Piel / Pual), '
@@ -8955,6 +9090,8 @@ def build_ch33_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch34 — Hithpael Paradigm Drill
 # ---------------------------------------------------------------------------
+
+
 class Ch34HithpaelParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the complete Hithpael paradigm for the root קדשׁ. '
@@ -9008,6 +9145,7 @@ class Ch34HithpaelParadigmDrill(ExercisePDF):
                                        section_title='Hithpael — Inf. Construct · Participle',
                                        answer_title='Inf./Participle — Answer Key')
 
+
 def build_ch34_hithpael_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch34HithpaelParadigmDrill,
@@ -9021,6 +9159,8 @@ def build_ch34_hithpael_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch35 — Hithpael Weak Paradigm Drill (III-ה: גלה)
 # ---------------------------------------------------------------------------
+
+
 class Ch35HithpaelWeakParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the Hithpael Weak forms. '
@@ -9064,6 +9204,7 @@ class Ch35HithpaelWeakParadigmDrill(ExercisePDF):
                                        section_title='Part B — Hithpael Metathesis Examples',
                                        answer_title='Part B — Answer Key')
 
+
 def build_ch35_hithpael_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch35HithpaelWeakParadigmDrill,
@@ -9077,6 +9218,8 @@ def build_ch35_hithpael_weak_paradigm_drill(out_dir: Optional[str] = None) -> st
 # ---------------------------------------------------------------------------
 # Ch24 — Stem-ID Drill (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch24StemIdDrill(ExercisePDF):
     _instructions = (
         'For each Hebrew form, identify the stem (Qal or Niphal), '
@@ -9164,6 +9307,8 @@ def build_ch24_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch25 — Niphal Weak Paradigm Drill (III-ה: גלה; I-נ: נפל)
 # ---------------------------------------------------------------------------
+
+
 class Ch25NiphalWeakParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the correct Niphal form for each entry. '
@@ -9250,6 +9395,8 @@ def build_ch25_niphal_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch25 — Qal–Niphal Contrast Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch25QalNiphalContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -9342,6 +9489,8 @@ def build_ch25_qal_niphal_contrast(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch25 — Function Sort (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch25FunctionSortExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -9419,6 +9568,8 @@ def build_ch25_function_sort(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch25 — Stem-ID Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch25StemIdDrill(ExercisePDF):
     _instructions = (
         'For each Hebrew form, identify the stem (Qal or Niphal), '
@@ -9505,6 +9656,8 @@ def build_ch25_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch28 — Stem-ID Drill (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch28StemIdDrill(ExercisePDF):
     _instructions = (
         'This drill mixes 24 forms of strong roots (Qal, Niphal, Hiphil, Hophal). '
@@ -9598,6 +9751,8 @@ def build_ch28_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch29 — Function Sort (Hophal Weak: Hiphil meaning + Hophal translation)
 # ---------------------------------------------------------------------------
+
+
 class Ch29FunctionSortExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -9679,6 +9834,8 @@ def build_ch29_function_sort(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch29 — Qal–Hiphil–Hophal Contrast Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch29QalHiphilHophalContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -9765,6 +9922,8 @@ def build_ch29_qal_hiphil_hophal_contrast(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch29 — Stem-ID Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch29StemIdDrill(ExercisePDF):
     _instructions = (
         'This drill mixes 24 forms of weak roots (hollow and I-י), '
@@ -9859,6 +10018,8 @@ def build_ch29_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch30 — Stem-ID Drill (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch30StemIdDrill(ExercisePDF):
     _instructions = (
         'Below are 24 Hebrew verb forms from strong roots (קטל, דבר, שׁמר, כבד). '
@@ -9952,6 +10113,8 @@ def build_ch30_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch31 — Qal–Piel Contrast Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch31QalPielContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -10050,6 +10213,8 @@ def build_ch31_qal_piel_contrast(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch31 — Piel Function Sort (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch31FunctionSortExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -10128,6 +10293,8 @@ def build_ch31_function_sort(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch31 — Stem-ID Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch31StemIdDrill(ExercisePDF):
     _instructions = (
         'Below are 24 Hebrew verb forms from weak roots (ברך, גלה, צוה, חזק). '
@@ -10221,6 +10388,8 @@ def build_ch31_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch34 — Qal–Piel–Hithpael Contrast Drill (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch34QalPielHithpaelContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -10316,6 +10485,8 @@ def build_ch34_qal_piel_hithpael_contrast(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch34 — Stem-ID Drill (Strong Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch34StemIdDrill(ExercisePDF):
     _instructions = (
         'Identify the stem, conjugation, PGN, and root of each form below. '
@@ -10404,6 +10575,8 @@ def build_ch34_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch35 — Qal–Piel–Hithpael Contrast Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch35QalPielHithpaelContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -10497,6 +10670,8 @@ def build_ch35_qal_piel_hithpael_contrast(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch35 — Hithpael Function Sort (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch35FunctionSortExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -10575,6 +10750,8 @@ def build_ch35_function_sort(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 # Ch35 — Stem-ID Drill (Weak Roots)
 # ---------------------------------------------------------------------------
+
+
 class Ch35StemIdDrill(ExercisePDF):
     _instructions = (
         'Identify the stem, conjugation, PGN, and root of each form below. '

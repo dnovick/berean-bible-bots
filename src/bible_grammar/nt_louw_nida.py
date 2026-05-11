@@ -478,7 +478,7 @@ def nt_ln_genre_heatmap(
     data_rows = []
     for domain in domains:
         domain_name = LN_DOMAIN_NAMES.get(domain, str(domain))
-        row = {'domain': f"{domain}: {domain_name}"}
+        row: dict = {'domain': f"{domain}: {domain_name}"}
         for book in books:
             df_b = nt_ln_data(domain=domain, book=book)
             total_book = len(_load_nt()[_load_nt()['book'] == book])

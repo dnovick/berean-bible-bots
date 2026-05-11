@@ -260,7 +260,7 @@ def print_style_comparison(
     print(f"  {'Metric':<26}" + ''.join(f"  {b:>8}" for b in df.index))
     print('  ' + '-' * (26 + 10 * len(df)))
 
-    def _row(label, col):
+    def _row(label: str, col: str) -> None:
         if col not in df.columns:
             return
         line = f"  {label:<26}"

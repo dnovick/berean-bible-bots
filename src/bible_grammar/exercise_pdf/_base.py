@@ -1366,7 +1366,6 @@ class PassageExercise(ExercisePDF):
         self._render_passages(show_answers=True)
 
 
-
 def _build_exercise_pdf(klass: Any, title: str, subtitle: str,
                         path_parts: list, filename: str,
                         out_dir: Optional[str] = None) -> str:
@@ -1381,4 +1380,3 @@ def _build_exercise_pdf(klass: Any, title: str, subtitle: str,
         out_dir = os.path.join(here, '..', '..', '..', 'output', 'lessons', *path_parts)
     path = os.path.join(out_dir, filename)
     return klass(title=title, subtitle=subtitle).save(path)
-

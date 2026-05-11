@@ -39,6 +39,8 @@ hithpael_report(output_dir=None)          → Path   (full Markdown report)
 """
 
 from __future__ import annotations
+
+import pandas as pd
 import functools
 from pathlib import Path
 
@@ -109,7 +111,7 @@ hithpael_book_distribution       = _ANALYSIS.book_distribution
 hithpael_stem_comparison         = _ANALYSIS.stem_comparison
 
 
-def hithpael_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5) -> object:
+def hithpael_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5) -> pd.DataFrame:
     """Roots where the Hithpael accounts for ≥ min_pct of all occurrences."""
     return _ANALYSIS.dominant_roots(min_pct, min_tokens)
 

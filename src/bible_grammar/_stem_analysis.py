@@ -212,7 +212,7 @@ class StemAnalysis:
         if stem_val not in pivot.columns:
             return pd.DataFrame()
 
-        pivot['total'] = pivot.drop(columns=['lemma', '_lem']).sum(axis=1)  # type: ignore[arg-type]
+        pivot['total'] = pivot.drop(columns=['lemma', '_lem']).sum(axis=1)
         pivot['hif_pct'] = (pivot[stem_val] / pivot['total'] * 100).round(1)
         result = pivot[
             (pivot['hif_pct'] >= min_pct) &

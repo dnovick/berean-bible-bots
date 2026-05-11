@@ -176,7 +176,7 @@ def ot_participant_subject_verbs(
 
 def _heuristic_subject_verbs(
     participant: str,
-    book,
+    book: str | list[str] | None,
 ) -> pd.DataFrame:
     """
     Fallback: find verbs in same verse where participant lemma co-occurs.
@@ -420,7 +420,7 @@ def ot_participant_chain_chart(
         ax.bar(x + offset, counts, width, label=p, color=colors[idx % len(colors)])
 
     ax.set_xticks(x)
-    ax.set_xticklabels(chapters, fontsize=8)
+    ax.set_xticklabels([str(c) for c in chapters], fontsize=8)
     ax.set_xlabel('Chapter')
     ax.set_ylabel('Mentions')
     ax.set_title(f'Participant Presence by Chapter — {book}')

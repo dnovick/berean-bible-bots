@@ -1,10 +1,10 @@
 from typing import Optional
 from ._base import ExercisePDF, _build_exercise_pdf
-import os
 
 # ---------------------------------------------------------------------------
 # BBA Ch1 — Aramaic Letter Recognition
 # ---------------------------------------------------------------------------
+
 
 class BbaCh1LetterRecognitionPDF(ExercisePDF):
     def _build(self) -> None:
@@ -58,7 +58,6 @@ class BbaCh1LetterRecognitionPDF(ExercisePDF):
         self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=False)
         self.add_section_heading('Answer Key')
         self.add_generic_table(hdrs, rows, col_ratios=cr, heb_cols=hc, translit_cols=tc, show_answers=True, answer_rows=ans)
-
 
 
 def build_bba_ch1_letter_recognition(out_dir: Optional[str] = None) -> str:
@@ -1680,11 +1679,10 @@ def build_bba_ch22_causative_passive_drill(out_dir: Optional[str] = None) -> str
     )
 
 
-
-
 # ---------------------------------------------------------------------------
 # BBA Ch13 — Peal Perfect vs. Peal Imperfect Contrast Drill
 # ---------------------------------------------------------------------------
+
 
 class BbaCh13PealContrastPDF(ExercisePDF):
     def _build(self) -> None:

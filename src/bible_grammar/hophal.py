@@ -41,6 +41,8 @@ hophal_report(output_dir=None)          → Path   (full Markdown report)
 """
 
 from __future__ import annotations
+
+import pandas as pd
 import functools
 from pathlib import Path
 
@@ -108,7 +110,7 @@ hophal_book_distribution       = _ANALYSIS.book_distribution
 hophal_stem_comparison         = _ANALYSIS.stem_comparison
 
 
-def hophal_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5) -> object:
+def hophal_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5) -> pd.DataFrame:
     """Roots where the Hophal accounts for ≥ min_pct of all occurrences."""
     return _ANALYSIS.dominant_roots(min_pct, min_tokens)
 

@@ -1,7 +1,7 @@
 from typing import Optional
 from ._greek import GreekExercisePDF
 from ._base import _build_exercise_pdf
-import os
+
 
 class BbgCh3AlphabetDrillPDF(GreekExercisePDF):
     def _build(self) -> None:
@@ -973,7 +973,6 @@ class BbgCh18MiddlePassiveParsingPDF(GreekExercisePDF):
         )
         hdrs = ['#', 'Form', 'Context', 'Person', 'Number', 'Lexical form', 'Voice', 'Translation']
         cr = [0.04, 0.13, 0.15, 0.07, 0.07, 0.13, 0.11, 0.30]
-        gk = [1, 2]
         rows = [
             ['1',  'λύομαι',       '(no context)',            '', '', '', '', ''],
             ['2',  'λύῃ',          '(no context)',            '', '', '', '', ''],
@@ -2172,8 +2171,6 @@ def build_bbg_ch36_mi_verbs_parsing(out_dir: Optional[str] = None) -> str:
         'ch36-mi-verbs-parsing.pdf',
         out_dir,
     )
-
-
 
 
 # ---------------------------------------------------------------------------
