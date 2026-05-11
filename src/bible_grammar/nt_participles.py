@@ -401,7 +401,7 @@ def nt_participle_tense_chart(book: str | None = None) -> Path | None:
     scope = book or 'Whole GNT'
 
     fig, ax = plt.subplots(figsize=(9, 4))
-    colors = plt.cm.Greens([0.4 + 0.5 * i / max(len(df) - 1, 1) for i in range(len(df))])
+    colors = plt.cm.Greens([0.4 + 0.5 * i / max(len(df) - 1, 1) for i in range(len(df))])  # type: ignore[attr-defined]
     bars = ax.barh(df['form'], df['pct'], color=colors)
     for bar, val in zip(bars, df['pct']):
         ax.text(bar.get_width() + 0.3, bar.get_y() + bar.get_height() / 2,

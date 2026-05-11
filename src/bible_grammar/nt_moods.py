@@ -432,7 +432,7 @@ def nt_mood_chart(book: str | None = None) -> Path | None:
     scope = book or 'Whole GNT'
 
     fig, ax = plt.subplots(figsize=(9, 5))
-    colors = plt.cm.Blues([0.3 + 0.5 * i / max(len(df) - 1, 1) for i in range(len(df))])
+    colors = plt.cm.Blues([0.3 + 0.5 * i / max(len(df) - 1, 1) for i in range(len(df))])  # type: ignore[attr-defined]
     bars = ax.barh(df['form'], df['pct'], color=colors)
     for bar, val in zip(bars, df['pct']):
         ax.text(bar.get_width() + 0.3, bar.get_y() + bar.get_height() / 2,
@@ -464,7 +464,7 @@ def nt_subjunctive_chart(book: str | None = None) -> Path | None:
 
     fig, ax = plt.subplots(figsize=(9, 5))
     df_sorted = df.sort_values('count', ascending=True)
-    colors = plt.cm.Purples([0.3 + 0.6 * i / max(len(df_sorted) - 1, 1)
+    colors = plt.cm.Purples([0.3 + 0.6 * i / max(len(df_sorted) - 1, 1)  # type: ignore[attr-defined]
                              for i in range(len(df_sorted))])
     bars = ax.barh(df_sorted['construction'], df_sorted['count'], color=colors)
     for bar, val in zip(bars, df_sorted['count']):

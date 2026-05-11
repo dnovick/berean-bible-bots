@@ -297,7 +297,7 @@ def aramaic_stem_chart(book: str | None = None) -> Path | None:
     scope = book or 'Daniel + Ezra'
 
     fig, ax = plt.subplots(figsize=(9, 5))
-    colors = plt.cm.copper([0.2 + 0.6 * i / max(len(df) - 1, 1) for i in range(len(df))])
+    colors = plt.cm.copper([0.2 + 0.6 * i / max(len(df) - 1, 1) for i in range(len(df))])  # type: ignore[attr-defined]
     bars = ax.barh(df['form'], df['count'], color=colors)
     for bar, row in zip(bars, df.itertuples()):
         ax.text(bar.get_width() + 1, bar.get_y() + bar.get_height() / 2,
@@ -326,7 +326,7 @@ def aramaic_conj_chart(book: str | None = None) -> Path | None:
     scope = book or 'Daniel + Ezra'
 
     fig, ax = plt.subplots(figsize=(9, 4))
-    colors = plt.cm.YlOrBr([0.3 + 0.5 * i / max(len(df) - 1, 1) for i in range(len(df))])
+    colors = plt.cm.YlOrBr([0.3 + 0.5 * i / max(len(df) - 1, 1) for i in range(len(df))])  # type: ignore[attr-defined]
     bars = ax.barh(df['form'], df['pct'], color=colors)
     for bar, val in zip(bars, df['pct']):
         ax.text(bar.get_width() + 0.3, bar.get_y() + bar.get_height() / 2,
@@ -360,7 +360,7 @@ def aramaic_stem_book_chart() -> Path | None:
 
     fig, ax = plt.subplots(figsize=(9, 5))
     bottom = [0.0] * len(pct_ct.index)
-    colors = plt.cm.Set2(range(len(pct_ct.columns)))
+    colors = plt.cm.Set2(range(len(pct_ct.columns)))  # type: ignore[attr-defined]
 
     for j, stem in enumerate(pct_ct.columns):
         vals = pct_ct[stem].tolist()

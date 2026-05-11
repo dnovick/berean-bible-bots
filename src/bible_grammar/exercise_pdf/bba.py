@@ -1,3 +1,4 @@
+from typing import Optional
 from ._base import ExercisePDF, _build_exercise_pdf
 import os
 
@@ -6,7 +7,7 @@ import os
 # ---------------------------------------------------------------------------
 
 class BbaCh1LetterRecognitionPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each Aramaic letter: (1) Letter Name, (2) Transliteration, '
             '(3) Sound, (4) Special Category (Guttural/Emphatic/Bgdkpt/Normal), '
@@ -60,7 +61,7 @@ class BbaCh1LetterRecognitionPDF(ExercisePDF):
 
 
 
-def build_bba_ch1_letter_recognition(out_dir: str = None) -> str:
+def build_bba_ch1_letter_recognition(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh1LetterRecognitionPDF,
         'BBA Chapter 1 — Aramaic Letter Recognition',
@@ -76,7 +77,7 @@ def build_bba_ch1_letter_recognition(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh2VowelIdentificationPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each vowel form: (1) Vowel Name, (2) Class (Long/Short/Reduced), '
             '(3) Transliteration, (4) Mater Lectionis? (Yes/No), (5) Notes.'
@@ -164,7 +165,7 @@ class BbaCh2VowelIdentificationPDF(ExercisePDF):
         ], heb_cols=hc)
 
 
-def build_bba_ch2_vowel_identification(out_dir: str = None) -> str:
+def build_bba_ch2_vowel_identification(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh2VowelIdentificationPDF,
         'BBA Chapter 2 — Aramaic Vowel Identification',
@@ -180,7 +181,7 @@ def build_bba_ch2_vowel_identification(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh3SyllabificationDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each word: (1) divide into syllables using |, '
             '(2) label each syllable O (open) or C (closed), '
@@ -275,7 +276,7 @@ class BbaCh3SyllabificationDrillPDF(ExercisePDF):
         ], heb_cols=hc)
 
 
-def build_bba_ch3_syllabification_drill(out_dir: str = None) -> str:
+def build_bba_ch3_syllabification_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh3SyllabificationDrillPDF,
         'BBA Chapter 3 — Aramaic Syllabification Drill',
@@ -291,7 +292,7 @@ def build_bba_ch3_syllabification_drill(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh4NounIdentificationPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each Aramaic noun form: (1) Gender — m. or f., '
             '(2) Number — s., pl., or du., '
@@ -348,7 +349,7 @@ class BbaCh4NounIdentificationPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch4_noun_identification(out_dir: str = None) -> str:
+def build_bba_ch4_noun_identification(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh4NounIdentificationPDF,
         'BBA Chapter 4 — Noun Identification Drill',
@@ -364,7 +365,7 @@ def build_bba_ch4_noun_identification(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh5DeterminedStateDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Each item gives a noun in one state (absolute or determined). '
             'Write it in the other state in the blank column. '
@@ -430,7 +431,7 @@ class BbaCh5DeterminedStateDrillPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch5_determined_state_drill(out_dir: str = None) -> str:
+def build_bba_ch5_determined_state_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh5DeterminedStateDrillPDF,
         'BBA Chapter 5 — Determined State Forms Drill',
@@ -446,7 +447,7 @@ def build_bba_ch5_determined_state_drill(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh6ConstructChainDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each item, write the construct form of the first noun and '
             'give the English translation of the complete construct chain. '
@@ -502,7 +503,7 @@ class BbaCh6ConstructChainDrillPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch6_construct_chain_drill(out_dir: str = None) -> str:
+def build_bba_ch6_construct_chain_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh6ConstructChainDrillPDF,
         'BBA Chapter 6 — Construct Chain Drill',
@@ -514,7 +515,7 @@ def build_bba_ch6_construct_chain_drill(out_dir: str = None) -> str:
 
 
 class BbaCh7PrepositionDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each Aramaic phrase, identify the preposition or conjunction, give its gloss, '
             'identify the noun state, and translate the phrase.'
@@ -569,7 +570,7 @@ class BbaCh7PrepositionDrillPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch7_preposition_drill(out_dir: str = None) -> str:
+def build_bba_ch7_preposition_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh7PrepositionDrillPDF,
         'BBA Chapter 7 — Preposition Drill',
@@ -581,7 +582,7 @@ def build_bba_ch7_preposition_drill(out_dir: str = None) -> str:
 
 
 class BbaCh8SuffixDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, identify the base form (noun or preposition), '
             'the pronominal suffix (person, gender, number), and give the English translation.'
@@ -636,7 +637,7 @@ class BbaCh8SuffixDrillPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch8_suffix_drill(out_dir: str = None) -> str:
+def build_bba_ch8_suffix_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh8SuffixDrillPDF,
         'BBA Chapter 8 — Suffix Drill',
@@ -648,7 +649,7 @@ def build_bba_ch8_suffix_drill(out_dir: str = None) -> str:
 
 
 class BbaCh9PronounDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, identify the pronoun type, give the PGN where applicable, '
             'and give the English gloss or translation.'
@@ -703,7 +704,7 @@ class BbaCh9PronounDrillPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch9_pronoun_drill(out_dir: str = None) -> str:
+def build_bba_ch9_pronoun_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh9PronounDrillPDF,
         'BBA Chapter 9 — Pronoun Drill',
@@ -715,7 +716,7 @@ def build_bba_ch9_pronoun_drill(out_dir: str = None) -> str:
 
 
 class BbaCh10AdjectiveNumberDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, identify whether it is an adjective or number, '
             'give the state/value and gender/number, and translate.'
@@ -770,7 +771,7 @@ class BbaCh10AdjectiveNumberDrillPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch10_adjective_number_drill(out_dir: str = None) -> str:
+def build_bba_ch10_adjective_number_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh10AdjectiveNumberDrillPDF,
         'BBA Chapter 10 — Adjective and Number Drill',
@@ -782,7 +783,7 @@ def build_bba_ch10_adjective_number_drill(out_dir: str = None) -> str:
 
 
 class BbaCh11ParticleDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each phrase, identify the adverb or particle, give its category '
             '(time, place, manner, negation, discourse, causal/purpose), '
@@ -838,7 +839,7 @@ class BbaCh11ParticleDrillPDF(ExercisePDF):
         self.add_drill_with_answer_key(hdrs, rows, ans, col_ratios=cr, heb_cols=hc)
 
 
-def build_bba_ch11_particle_drill(out_dir: str = None) -> str:
+def build_bba_ch11_particle_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh11ParticleDrillPDF,
         'BBA Chapter 11 — Particle Drill',
@@ -851,7 +852,7 @@ def build_bba_ch11_particle_drill(out_dir: str = None) -> str:
 
 # BBA Ch12 — Stem Identification Drill
 class BbaCh12VerbIntroDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each underlined verb from Daniel or Ezra, identify the stem '
             '(Peal, Peil, Ithpeel, Pael, Ithpaal, Haphel, Hophal, Shaph\'el, or Ithhaph\'al), '
@@ -897,7 +898,7 @@ class BbaCh12VerbIntroDrillPDF(ExercisePDF):
                                         section_title='Verb Identification — Items 1–14')
 
 
-def build_bba_ch12_verb_intro_drill(out_dir: str = None) -> str:
+def build_bba_ch12_verb_intro_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh12VerbIntroDrillPDF,
         'BBA Chapter 12 — Stem Identification Drill',
@@ -909,7 +910,7 @@ def build_bba_ch12_verb_intro_drill(out_dir: str = None) -> str:
 
 
 class BbaCh13PealPerfectDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered Peal perfect form drawn from Daniel or Ezra, '
             'identify the Root (three root consonants), '
@@ -970,7 +971,7 @@ class BbaCh13PealPerfectDrillPDF(ExercisePDF):
                                         section_title='Peal Perfect Parsing — Items 1–20')
 
 
-def build_bba_ch13_peal_perfect_drill(out_dir: str = None) -> str:
+def build_bba_ch13_peal_perfect_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh13PealPerfectDrillPDF,
         'BBA Chapter 13 — Peal Perfect Parsing Drill',
@@ -982,7 +983,7 @@ def build_bba_ch13_peal_perfect_drill(out_dir: str = None) -> str:
 
 
 class BbaCh14PealImperfectDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered Peal imperfect form drawn from Daniel or Ezra, '
             'identify the Root (three root consonants, Peal perfect 3ms form), '
@@ -1043,7 +1044,7 @@ class BbaCh14PealImperfectDrillPDF(ExercisePDF):
                                         section_title='Peal Imperfect Parsing — Items 1–20')
 
 
-def build_bba_ch14_peal_imperfect_drill(out_dir: str = None) -> str:
+def build_bba_ch14_peal_imperfect_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh14PealImperfectDrillPDF,
         'BBA Chapter 14 — Peal Imperfect Parsing Drill',
@@ -1055,7 +1056,7 @@ def build_bba_ch14_peal_imperfect_drill(out_dir: str = None) -> str:
 
 
 class BbaCh15PealImperativeDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered Peal imperative form drawn from Daniel or Ezra, '
             'identify the Root (three root consonants, Peal perfect 3ms form), '
@@ -1117,7 +1118,7 @@ class BbaCh15PealImperativeDrillPDF(ExercisePDF):
                                         section_title='Peal Imperative Parsing — Items 1–20')
 
 
-def build_bba_ch15_peal_imperative_drill(out_dir: str = None) -> str:
+def build_bba_ch15_peal_imperative_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh15PealImperativeDrillPDF,
         'BBA Chapter 15 — Peal Imperative Parsing Drill',
@@ -1130,7 +1131,7 @@ def build_bba_ch15_peal_imperative_drill(out_dir: str = None) -> str:
 
 # BBA Ch16 — Peal Infinitive Construct Drill
 class BbaCh16PealInfinitiveDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered infinitive construct form drawn from Daniel or Ezra, '
             'identify the Root (three root consonants, Peal perfect 3ms form), '
@@ -1193,7 +1194,7 @@ class BbaCh16PealInfinitiveDrillPDF(ExercisePDF):
                                         section_title='Peal Infinitive Construct Drill — Items 1–20')
 
 
-def build_bba_ch16_peal_infinitive_drill(out_dir: str = None) -> str:
+def build_bba_ch16_peal_infinitive_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh16PealInfinitiveDrillPDF,
         'BBA Chapter 16 — Peal Infinitive Construct Drill',
@@ -1205,7 +1206,7 @@ def build_bba_ch16_peal_infinitive_drill(out_dir: str = None) -> str:
 
 
 class BbaCh17PealParticipleDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered Peal participle form drawn from Daniel or Ezra, '
             'identify whether it is Active (qatal pattern: qamets on R1, tsere on R2) '
@@ -1269,7 +1270,7 @@ class BbaCh17PealParticipleDrillPDF(ExercisePDF):
                                         section_title='Peal Participle Drill — Items 1–20')
 
 
-def build_bba_ch17_peal_participle_drill(out_dir: str = None) -> str:
+def build_bba_ch17_peal_participle_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh17PealParticipleDrillPDF,
         'BBA Chapter 17 — Peal Participle Drill',
@@ -1284,7 +1285,7 @@ def build_bba_ch17_peal_participle_drill(out_dir: str = None) -> str:
 
 
 class BbaCh18PassiveStemsDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered verb form drawn from Daniel or Ezra, '
             'identify the Stem (Peil = simple passive of Peal, or Ithpeel = reflexive/passive of Peal), '
@@ -1348,7 +1349,7 @@ class BbaCh18PassiveStemsDrillPDF(ExercisePDF):
                                         section_title='Peil and Ithpeel Stem Drill — Items 1–20')
 
 
-def build_bba_ch18_passive_stems_drill(out_dir: str = None) -> str:
+def build_bba_ch18_passive_stems_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh18PassiveStemsDrillPDF,
         'BBA Chapter 18 — Peil and Ithpeel Stem Drill',
@@ -1360,7 +1361,7 @@ def build_bba_ch18_passive_stems_drill(out_dir: str = None) -> str:
 
 
 class BbaCh19PaelStemDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered Pael verb form drawn from Daniel or Ezra, '
             'identify the Conjugation (Perfect / Imperfect / Imperative / Infinitive / Participle), '
@@ -1426,7 +1427,7 @@ class BbaCh19PaelStemDrillPDF(ExercisePDF):
                                         section_title='Pael Stem Drill — Items 1–20')
 
 
-def build_bba_ch19_pael_stem_drill(out_dir: str = None) -> str:
+def build_bba_ch19_pael_stem_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh19PaelStemDrillPDF,
         'BBA Chapter 19 — Pael Stem Drill',
@@ -1441,7 +1442,7 @@ def build_bba_ch19_pael_stem_drill(out_dir: str = None) -> str:
 
 
 class BbaCh20HithpaalDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered Hithpaal/Ithpaal verb form drawn from Daniel or Ezra, '
             'identify the Stem (Hithpaal — note metathesis if present), '
@@ -1507,7 +1508,7 @@ class BbaCh20HithpaalDrillPDF(ExercisePDF):
                                         section_title='Hithpaal / Ithpaal Stem Drill — Items 1–20')
 
 
-def build_bba_ch20_hithpaal_drill(out_dir: str = None) -> str:
+def build_bba_ch20_hithpaal_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh20HithpaalDrillPDF,
         'BBA Chapter 20 — Hithpaal / Ithpaal Stem Drill',
@@ -1519,7 +1520,7 @@ def build_bba_ch20_hithpaal_drill(out_dir: str = None) -> str:
 
 
 class BbaCh21HaphelStemDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each numbered Haphel verb form drawn from Daniel or Ezra, '
             'identify the Conjugation (Perfect / Imperfect / Imperative / Infinitive / Participle), '
@@ -1586,7 +1587,7 @@ class BbaCh21HaphelStemDrillPDF(ExercisePDF):
                                         section_title='Haphel Stem Drill — Items 1–20')
 
 
-def build_bba_ch21_haphel_stem_drill(out_dir: str = None) -> str:
+def build_bba_ch21_haphel_stem_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh21HaphelStemDrillPDF,
         'BBA Chapter 21 — Haphel Stem Drill',
@@ -1598,7 +1599,7 @@ def build_bba_ch21_haphel_stem_drill(out_dir: str = None) -> str:
 
 
 class BbaCh22CausativePassiveDrillPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Capstone review covering all nine Aramaic stems (BBA Ch12-22). '
             'For each numbered verb form from Daniel or Ezra, identify: '
@@ -1668,7 +1669,7 @@ class BbaCh22CausativePassiveDrillPDF(ExercisePDF):
                                         section_title='Capstone Review Drill — All Nine Stems — Items 1–20')
 
 
-def build_bba_ch22_causative_passive_drill(out_dir: str = None) -> str:
+def build_bba_ch22_causative_passive_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh22CausativePassiveDrillPDF,
         'BBA Chapter 22 — Causative & Passive Stems: Capstone Review',
@@ -1686,7 +1687,7 @@ def build_bba_ch22_causative_passive_drill(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh13PealContrastPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, classify as Peal Perfect or Peal Imperfect, '
             'then give Person, Gender, Number, Root (three root consonants), and Translation. '
@@ -1744,7 +1745,7 @@ class BbaCh13PealContrastPDF(ExercisePDF):
                                         section_title='Peal Perfect vs. Imperfect Contrast — Items 1–20')
 
 
-def build_bba_ch13_peal_contrast(out_dir: str = None) -> str:
+def build_bba_ch13_peal_contrast(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh13PealContrastPDF,
         'BBA Chapter 13 — Peal Perfect vs. Peal Imperfect Contrast Drill',
@@ -1760,7 +1761,7 @@ def build_bba_ch13_peal_contrast(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh18StemContrastPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, identify the stem (Peil or Ithpeel), '
             'then give Conjugation, PGN, Root, and Translation. '
@@ -1818,7 +1819,7 @@ class BbaCh18StemContrastPDF(ExercisePDF):
                                         section_title='Peil vs. Ithpeel Identification Drill — Items 1–20')
 
 
-def build_bba_ch18_stem_contrast(out_dir: str = None) -> str:
+def build_bba_ch18_stem_contrast(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh18StemContrastPDF,
         'BBA Chapter 18 — Peil vs. Ithpeel Stem Identification Drill',
@@ -1834,7 +1835,7 @@ def build_bba_ch18_stem_contrast(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh19PaelPealContrastPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, identify the stem (Peal or Pael), '
             'then give Conjugation, PGN, Root, and Translation. '
@@ -1892,7 +1893,7 @@ class BbaCh19PaelPealContrastPDF(ExercisePDF):
                                         section_title='Peal vs. Pael Contrast Drill — Items 1–20')
 
 
-def build_bba_ch19_pael_peal_contrast(out_dir: str = None) -> str:
+def build_bba_ch19_pael_peal_contrast(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh19PaelPealContrastPDF,
         'BBA Chapter 19 — Peal vs. Pael Contrast Drill',
@@ -1908,7 +1909,7 @@ def build_bba_ch19_pael_peal_contrast(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh20HithpaalFunctionSortPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each Hithpaal/Ithpaal form, classify the semantic function: '
             'RF (Reflexive), RC (Reciprocal), IT (Iterative/Frequentative), ES (Estimative). '
@@ -1965,7 +1966,7 @@ class BbaCh20HithpaalFunctionSortPDF(ExercisePDF):
                                         section_title='Hithpaal Function Sort — Items 1–20')
 
 
-def build_bba_ch20_hithpaal_function_sort(out_dir: str = None) -> str:
+def build_bba_ch20_hithpaal_function_sort(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh20HithpaalFunctionSortPDF,
         'BBA Chapter 20 — Hithpaal Semantic Function Sorting',
@@ -1981,7 +1982,7 @@ def build_bba_ch20_hithpaal_function_sort(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbaCh21HaphelPealContrastPDF(ExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, identify the stem (Peal or Haphel), '
             'then give Conjugation, PGN, Root, and Translation. '
@@ -2039,7 +2040,7 @@ class BbaCh21HaphelPealContrastPDF(ExercisePDF):
                                         section_title='Haphel vs. Peal Contrast Drill — Items 1–20')
 
 
-def build_bba_ch21_haphel_peal_contrast(out_dir: str = None) -> str:
+def build_bba_ch21_haphel_peal_contrast(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbaCh21HaphelPealContrastPDF,
         'BBA Chapter 21 — Haphel vs. Peal Contrast Drill',

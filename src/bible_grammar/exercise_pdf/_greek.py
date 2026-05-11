@@ -1,3 +1,4 @@
+from typing import Optional
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.units import inch
@@ -12,7 +13,7 @@ from ._base import ExercisePDF, _register_fonts, C_RULE, C_FIELD_BG
 _GREEK_FONT_REGISTERED = False
 
 
-def _register_greek_fonts():
+def _register_greek_fonts() -> None:
     """Register a TTF font with full Greek Unicode coverage."""
     global _GREEK_FONT_REGISTERED
     if _GREEK_FONT_REGISTERED:
@@ -60,10 +61,10 @@ class GreekExercisePDF(ExercisePDF):
         super().__init__(title, subtitle)
 
     def add_greek_table(self, headers: list, rows: list,
-                        col_ratios: list = None,
-                        greek_cols: list = None,
+                        col_ratios: Optional[list] = None,
+                        greek_cols: Optional[list] = None,
                         show_answers: bool = True,
-                        answer_rows: list = None):
+                        answer_rows: Optional[list] = None) -> None:
         """
         Draw a parse table with Greek text support.
         greek_cols: indices of columns that display Greek (rendered with GreekFont).

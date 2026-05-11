@@ -401,7 +401,7 @@ def aramaic_prep_chart(book: str | None = None) -> Path | None:
     df = df.sort_values('count')
 
     fig, ax = plt.subplots(figsize=(9, 5))
-    colors = plt.cm.copper([0.2 + 0.6 * i / max(len(df) - 1, 1) for i in range(len(df))])
+    colors = plt.cm.copper([0.2 + 0.6 * i / max(len(df) - 1, 1) for i in range(len(df))])  # type: ignore[attr-defined]
     bars = ax.barh(df['lemma'], df['count'], color=colors)
     for bar, row in zip(bars, df.itertuples()):
         ax.text(bar.get_width() + 1, bar.get_y() + bar.get_height() / 2,

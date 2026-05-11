@@ -1,9 +1,10 @@
+from typing import Optional
 from ._greek import GreekExercisePDF
 from ._base import _build_exercise_pdf
 import os
 
 class BbgCh3AlphabetDrillPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each Greek letter form shown, write: (a) the letter name and '
             '(b) its sound/pronunciation. '
@@ -86,7 +87,7 @@ class BbgCh3AlphabetDrillPDF(GreekExercisePDF):
                              show_answers=True, answer_rows=ans_b)
 
 
-def build_bbg_ch3_alphabet_drill(out_dir: str = None) -> str:
+def build_bbg_ch3_alphabet_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh3AlphabetDrillPDF,
         'BBG Chapter 3 — Greek Alphabet Drill',
@@ -102,7 +103,7 @@ def build_bbg_ch3_alphabet_drill(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh4SyllableDrillPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each Greek word: (a) divide into syllables using hyphens, '
             '(b) name the accented syllable position (ultima / penult / antepenult), '
@@ -165,7 +166,7 @@ class BbgCh4SyllableDrillPDF(GreekExercisePDF):
                              show_answers=True, answer_rows=ans_b)
 
 
-def build_bbg_ch4_syllable_drill(out_dir: str = None) -> str:
+def build_bbg_ch4_syllable_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh4SyllableDrillPDF,
         'BBG Chapter 4 — Syllabification Drill',
@@ -181,7 +182,7 @@ def build_bbg_ch4_syllable_drill(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh6NomAccParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, give: (a) Case, (b) Number, (c) Gender, '
             '(d) Lexical form (nom. sg.), (e) Function in a sentence '
@@ -255,7 +256,7 @@ class BbgCh6NomAccParsingPDF(GreekExercisePDF):
                              show_answers=True, answer_rows=ans_b)
 
 
-def build_bbg_ch6_nom_acc_parsing(out_dir: str = None) -> str:
+def build_bbg_ch6_nom_acc_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh6NomAccParsingPDF,
         'BBG Chapter 6 — Nominative and Accusative Parsing Drill',
@@ -271,7 +272,7 @@ def build_bbg_ch6_nom_acc_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh7GenDatParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each form, give: Case (G/D), Number (S/P), Gender (M/N), '
             'Lexical Form (nom. sg.), and a Translation Note. '
@@ -328,7 +329,7 @@ class BbgCh7GenDatParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch7_gen_dat_parsing(out_dir: str = None) -> str:
+def build_bbg_ch7_gen_dat_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh7GenDatParsingPDF,
         'BBG Chapter 7 — Genitive and Dative Parsing Drill',
@@ -344,7 +345,7 @@ def build_bbg_ch7_gen_dat_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh8PrepositionParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each prepositional phrase: (1) name the preposition, '
             '(2) identify the case it governs (Gen / Dat / Acc), '
@@ -401,7 +402,7 @@ class BbgCh8PrepositionParsingPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch8_preposition_parsing(out_dir: str = None) -> str:
+def build_bbg_ch8_preposition_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh8PrepositionParsingPDF,
         'BBG Chapter 8 — Preposition Parsing Drill',
@@ -417,7 +418,7 @@ def build_bbg_ch8_preposition_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh9AdjectiveParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each phrase, parse the adjective: Case (N/G/D/A), Number (S/P), '
             'Gender (M/F/N), and Position (Attributive / Predicate / Substantival).'
@@ -473,7 +474,7 @@ class BbgCh9AdjectiveParsingPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch9_adjective_parsing(out_dir: str = None) -> str:
+def build_bbg_ch9_adjective_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh9AdjectiveParsingPDF,
         'BBG Chapter 9 — Adjective Parsing Drill',
@@ -489,7 +490,7 @@ def build_bbg_ch9_adjective_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh10ThirdDeclParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse each form: Case (N/G/D/A), Number (S/P), Gender (M/F/N), '
             'Lexical Form, and Translation.'
@@ -545,7 +546,7 @@ class BbgCh10ThirdDeclParsingPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch10_third_decl_parsing(out_dir: str = None) -> str:
+def build_bbg_ch10_third_decl_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh10ThirdDeclParsingPDF,
         'BBG Chapter 10 — Third Declension Parsing Drill',
@@ -561,7 +562,7 @@ def build_bbg_ch10_third_decl_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh11PronounParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse each pronoun: Person (1st/2nd), Case (Nom/Gen/Dat/Acc), '
             'Number (Sg/Pl), and Translation.'
@@ -607,7 +608,7 @@ class BbgCh11PronounParsingPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch11_pronoun_parsing(out_dir: str = None) -> str:
+def build_bbg_ch11_pronoun_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh11PronounParsingPDF,
         'BBG Chapter 11 — Personal Pronoun Parsing Drill',
@@ -623,7 +624,7 @@ def build_bbg_ch11_pronoun_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh12AutosParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each item: (1) Case (N/G/D/A), (2) Number (S/P), (3) Gender (M/F/N), '
             '(4) Use — PP = Personal Pronoun, INT = Intensive Adjective (predicate position), '
@@ -680,7 +681,7 @@ class BbgCh12AutosParsingPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch12_autos_parsing(out_dir: str = None) -> str:
+def build_bbg_ch12_autos_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh12AutosParsingPDF,
         'BBG Chapter 12 — αὐτός Parsing and Use Identification',
@@ -696,7 +697,7 @@ def build_bbg_ch12_autos_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh13DemonstrativeParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each item: (1) parse the demonstrative — Gender, Case, Number, Lexical form; '
             '(2) identify use as Adjective (A) or Pronoun (P).'
@@ -752,7 +753,7 @@ class BbgCh13DemonstrativeParsingPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch13_demonstrative_parsing(out_dir: str = None) -> str:
+def build_bbg_ch13_demonstrative_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh13DemonstrativeParsingPDF,
         'BBG Chapter 13 — Demonstrative Parsing Drill',
@@ -768,7 +769,7 @@ def build_bbg_ch13_demonstrative_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh14RelativeParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each item: (1) Gender, (2) Case, (3) Number of the relative pronoun; '
             '(4) identify its Antecedent; (5) translate the clause. '
@@ -825,7 +826,7 @@ class BbgCh14RelativeParsingPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch14_relative_parsing(out_dir: str = None) -> str:
+def build_bbg_ch14_relative_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh14RelativeParsingPDF,
         'BBG Chapter 14 — Relative Pronoun Parsing Drill',
@@ -841,7 +842,7 @@ def build_bbg_ch14_relative_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh16PresentActiveParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'All verbs are Present Active Indicative. '
             'Provide: Person · Number · Lexical Form · Translation.'
@@ -887,7 +888,7 @@ class BbgCh16PresentActiveParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch16_present_active_parsing(out_dir: str = None) -> str:
+def build_bbg_ch16_present_active_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh16PresentActiveParsingPDF,
         'BBG Chapter 16 — Present Active Indicative Parsing Drill',
@@ -903,7 +904,7 @@ def build_bbg_ch16_present_active_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh17ContractVerbParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each contracted form: (1) Person, (2) Number, (3) Lexical form, '
             '(4) the two vowels that contracted (stem vowel + C.V.), (5) Translation.'
@@ -949,7 +950,7 @@ class BbgCh17ContractVerbParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch17_contract_verb_parsing(out_dir: str = None) -> str:
+def build_bbg_ch17_contract_verb_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh17ContractVerbParsingPDF,
         'BBG Chapter 17 — Contract Verb Parsing Drill',
@@ -965,7 +966,7 @@ def build_bbg_ch17_contract_verb_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh18MiddlePassiveParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each verb: (1) Person, (2) Number, (3) Lexical form, '
             '(4) Voice — Middle / Passive / Deponent, (5) Translation.'
@@ -1021,7 +1022,7 @@ class BbgCh18MiddlePassiveParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch18_middle_passive_parsing(out_dir: str = None) -> str:
+def build_bbg_ch18_middle_passive_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh18MiddlePassiveParsingPDF,
         'BBG Chapter 18 — Present Middle/Passive Indicative Parsing Drill',
@@ -1037,7 +1038,7 @@ def build_bbg_ch18_middle_passive_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh19FutureParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Provide: Tense · Voice · Person · Number · Lexical Form · Translation. '
             'Items 17–20 are future middle or deponent — identify voice correctly.'
@@ -1083,7 +1084,7 @@ class BbgCh19FutureParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch19_future_parsing(out_dir: str = None) -> str:
+def build_bbg_ch19_future_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh19FutureParsingPDF,
         'BBG Chapter 19 — Future Active and Middle Parsing Drill',
@@ -1099,7 +1100,7 @@ def build_bbg_ch19_future_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh20StemChangeDrillPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each verb, provide: Verbal Root · Pattern (2/3/4) · Pattern Subtype · Future Form.'
         )
@@ -1144,7 +1145,7 @@ class BbgCh20StemChangeDrillPDF(GreekExercisePDF):
                                        section_title='Drill Table', use_greek=True)
 
 
-def build_bbg_ch20_stem_change_drill(out_dir: str = None) -> str:
+def build_bbg_ch20_stem_change_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh20StemChangeDrillPDF,
         'BBG Chapter 20 — Verbal Root and Stem Change Drill',
@@ -1160,7 +1161,7 @@ def build_bbg_ch20_stem_change_drill(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh21ImperfectParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Provide: Tense · Voice · Person · Number · Augment Type · Lexical Form · Translation.'
         )
@@ -1205,7 +1206,7 @@ class BbgCh21ImperfectParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch21_imperfect_parsing(out_dir: str = None) -> str:
+def build_bbg_ch21_imperfect_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh21ImperfectParsingPDF,
         'BBG Chapter 21 — Imperfect Indicative Parsing Drill',
@@ -1221,7 +1222,7 @@ def build_bbg_ch21_imperfect_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh22SecondAoristParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Provide: Tense (Aor 2nd or Impf) · Voice · Person · Number · Lexical Form · Translation. '
             'Items 11 and 18 are imperfect distractors — identify them correctly!'
@@ -1267,7 +1268,7 @@ class BbgCh22SecondAoristParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch22_second_aorist_parsing(out_dir: str = None) -> str:
+def build_bbg_ch22_second_aorist_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh22SecondAoristParsingPDF,
         'BBG Chapter 22 — Second Aorist Parsing Drill',
@@ -1283,7 +1284,7 @@ def build_bbg_ch22_second_aorist_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh23FirstAoristParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Provide: Tense (1st Aor / 2nd Aor) · Voice · Person · Number · Lexical Form · Translation. '
             'Items 11 and 20 are second aorist distractors.'
@@ -1329,7 +1330,7 @@ class BbgCh23FirstAoristParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch23_first_aorist_parsing(out_dir: str = None) -> str:
+def build_bbg_ch23_first_aorist_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh23FirstAoristParsingPDF,
         'BBG Chapter 23 — First Aorist Parsing Drill',
@@ -1345,7 +1346,7 @@ def build_bbg_ch23_first_aorist_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh24AoristFuturePassiveParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Provide: Tense · Voice · Person · Number · Lexical Form · Translation. '
             'Items 19–20 are active/middle distractors — identify them correctly!'
@@ -1391,7 +1392,7 @@ class BbgCh24AoristFuturePassiveParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch24_aorist_future_passive_parsing(out_dir: str = None) -> str:
+def build_bbg_ch24_aorist_future_passive_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh24AoristFuturePassiveParsingPDF,
         'BBG Chapter 24 — Aorist and Future Passive Parsing Drill',
@@ -1407,7 +1408,7 @@ def build_bbg_ch24_aorist_future_passive_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh25PerfectParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Provide: Tense · Voice · Person · Number · Reduplication type · Lexical Form · Translation. '
             'Items 19–20 are aorist distractors — identify them correctly!'
@@ -1453,7 +1454,7 @@ class BbgCh25PerfectParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch25_perfect_parsing(out_dir: str = None) -> str:
+def build_bbg_ch25_perfect_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh25PerfectParsingPDF,
         'BBG Chapter 25 — Perfect Indicative Parsing Drill',
@@ -1469,7 +1470,7 @@ def build_bbg_ch25_perfect_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh27PresentParticipleParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the bolded participle (Tense · Voice · Case · Number · Gender · Lexical Form). '
             'Then identify the Use (Adverbial / Adjectival / Substantival) and provide a Translation.'
@@ -1515,7 +1516,7 @@ class BbgCh27PresentParticipleParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch27_present_participle_parsing(out_dir: str = None) -> str:
+def build_bbg_ch27_present_participle_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh27PresentParticipleParsingPDF,
         'BBG Chapter 27 — Present Participle Parsing Drill',
@@ -1531,7 +1532,7 @@ def build_bbg_ch27_present_participle_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh28AoristParticipleParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the bolded participle (Tense · Voice · Case · Number · Gender · Lexical Form). '
             'Identify 1st or 2nd Aorist, the Use (Adverbial / Adjectival / Substantival), and provide a Translation.'
@@ -1577,7 +1578,7 @@ class BbgCh28AoristParticipleParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch28_aorist_participle_parsing(out_dir: str = None) -> str:
+def build_bbg_ch28_aorist_participle_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh28AoristParticipleParsingPDF,
         'BBG Chapter 28 — Aorist Participle Parsing Drill',
@@ -1593,7 +1594,7 @@ def build_bbg_ch28_aorist_participle_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh29AdjectivalParticipleParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the underlined participle (Tense · Voice · Case · Number · Gender · Lexical Form). '
             'Identify the Use (Attributive / Substantival). If attributive, note the Position (1st or 2nd). '
@@ -1640,7 +1641,7 @@ class BbgCh29AdjectivalParticipleParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch29_adjectival_participle_parsing(out_dir: str = None) -> str:
+def build_bbg_ch29_adjectival_participle_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh29AdjectivalParticipleParsingPDF,
         'BBG Chapter 29 — Adjectival Participle Parsing Drill',
@@ -1656,7 +1657,7 @@ def build_bbg_ch29_adjectival_participle_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh30PerfectParticipleGenAbsPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Part A (1–8): Parse the perfect participle (Tense · Voice · Case · Number · Gender · Lexical) '
             'and translate. Part B (9–15): Identify the genitive absolute noun and participle, parse the '
@@ -1714,7 +1715,7 @@ class BbgCh30PerfectParticipleGenAbsPDF(GreekExercisePDF):
         ], use_greek=True)
 
 
-def build_bbg_ch30_perfect_participle_genabs(out_dir: str = None) -> str:
+def build_bbg_ch30_perfect_participle_genabs(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh30PerfectParticipleGenAbsPDF,
         'BBG Chapter 30 — Perfect Participles and Genitive Absolutes',
@@ -1730,7 +1731,7 @@ def build_bbg_ch30_perfect_participle_genabs(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh31SubjunctiveParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the underlined form (Tense · Voice · Person · Number · Mood · Lexical Form). '
             'Identify the Use (Purpose/ἵνα · 3rd class/ἐάν · Hortatory · Prohibition · Indefinite · Emphatic denial). '
@@ -1787,7 +1788,7 @@ class BbgCh31SubjunctiveParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch31_subjunctive_parsing(out_dir: str = None) -> str:
+def build_bbg_ch31_subjunctive_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh31SubjunctiveParsingPDF,
         'BBG Chapter 31 — Subjunctive Parsing Drill',
@@ -1803,7 +1804,7 @@ def build_bbg_ch31_subjunctive_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh32InfinitiveParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the bolded infinitive (Tense · Voice · Lexical Form). '
             'Identify the Use (Complementary · Articular/subject · Purpose · Result · Indirect discourse · Temporal). '
@@ -1860,7 +1861,7 @@ class BbgCh32InfinitiveParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch32_infinitive_parsing(out_dir: str = None) -> str:
+def build_bbg_ch32_infinitive_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh32InfinitiveParsingPDF,
         'BBG Chapter 32 — Infinitive Parsing Drill',
@@ -1876,7 +1877,7 @@ def build_bbg_ch32_infinitive_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh33ImperativeParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the bolded imperative (Tense · Voice · Person · Number · Lexical Form). '
             'Identify the Aspect (Ongoing / Simple / Stop). '
@@ -1933,7 +1934,7 @@ class BbgCh33ImperativeParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch33_imperative_parsing(out_dir: str = None) -> str:
+def build_bbg_ch33_imperative_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh33ImperativeParsingPDF,
         'BBG Chapter 33 — Imperative Parsing Drill',
@@ -1949,7 +1950,7 @@ def build_bbg_ch33_imperative_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh34DidomiParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the bolded form (Tense · Voice · Person · Number · Lexical Form). '
             'Provide a Translation. Watch for compound forms (παραδίδωμι, ἀποδίδωμι).'
@@ -2005,7 +2006,7 @@ class BbgCh34DidomiParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch34_didomi_parsing(out_dir: str = None) -> str:
+def build_bbg_ch34_didomi_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh34DidomiParsingPDF,
         'BBG Chapter 34 — δίδωμι Parsing Drill',
@@ -2021,7 +2022,7 @@ def build_bbg_ch34_didomi_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh35ConditionalsdrillPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Part A (1–16): Identify the Conditional Class (1/2/3/4) and parse the protasis verb '
             '(Tense · Voice · Mood · Person · Number · Lexical Form). Provide a Translation. '
@@ -2089,7 +2090,7 @@ class BbgCh35ConditionalsdrillPDF(GreekExercisePDF):
         ], use_greek=True)
 
 
-def build_bbg_ch35_conditionals_drill(out_dir: str = None) -> str:
+def build_bbg_ch35_conditionals_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh35ConditionalsdrillPDF,
         'BBG Chapter 35 — Conditionals and δίδωμι Non-Indicative',
@@ -2105,7 +2106,7 @@ def build_bbg_ch35_conditionals_drill(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh36MiVerbsParsingPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Parse the bolded form (Tense · Voice · Person · Number · Mood · Lexical Form). '
             'For ἵστημι forms, note Transitive (T) or Intransitive (I). '
@@ -2162,7 +2163,7 @@ class BbgCh36MiVerbsParsingPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch36_mi_verbs_parsing(out_dir: str = None) -> str:
+def build_bbg_ch36_mi_verbs_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh36MiVerbsParsingPDF,
         'BBG Chapter 36 — μι-Verb Parsing Drill',
@@ -2180,7 +2181,7 @@ def build_bbg_ch36_mi_verbs_parsing(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh22AoristContrastPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each aorist form: (1) classify as 1st or 2nd aorist, '
             '(2) give Person, (3) Number, (4) Lexical form, (5) Translation.'
@@ -2236,7 +2237,7 @@ class BbgCh22AoristContrastPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch22_aorist_contrast(out_dir: str = None) -> str:
+def build_bbg_ch22_aorist_contrast(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh22AoristContrastPDF,
         'BBG Chapter 22 — First vs. Second Aorist Contrast Drill',
@@ -2252,7 +2253,7 @@ def build_bbg_ch22_aorist_contrast(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh24PassiveFormationPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each passive form: (1) classify as Aorist Passive or Future Passive, '
             '(2) give Person, (3) Number, (4) Lexical form, (5) Translation.'
@@ -2308,7 +2309,7 @@ class BbgCh24PassiveFormationPDF(GreekExercisePDF):
                                        section_title='Parsing Table', use_greek=True)
 
 
-def build_bbg_ch24_passive_formation(out_dir: str = None) -> str:
+def build_bbg_ch24_passive_formation(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh24PassiveFormationPDF,
         'BBG Chapter 24 — Aorist and Future Passive Formation Drill',
@@ -2324,7 +2325,7 @@ def build_bbg_ch24_passive_formation(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh27ParticipleUseSortPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each participle phrase, classify the use as ADV (adverbial), '
             'ADJ (adjectival), or SUB (substantival). '
@@ -2382,7 +2383,7 @@ class BbgCh27ParticipleUseSortPDF(GreekExercisePDF):
                                        section_title='Classification Table', use_greek=True)
 
 
-def build_bbg_ch27_participle_use_sort(out_dir: str = None) -> str:
+def build_bbg_ch27_participle_use_sort(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh27ParticipleUseSortPDF,
         'BBG Chapter 27 — Participle Use Classification Drill',
@@ -2398,7 +2399,7 @@ def build_bbg_ch27_participle_use_sort(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh28ParticipleTenseContrastPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each adverbial participle clause, classify the temporal relation as '
             'CONTEMP (present participle = same time as main verb) or '
@@ -2456,7 +2457,7 @@ class BbgCh28ParticipleTenseContrastPDF(GreekExercisePDF):
                                        section_title='Classification Table', use_greek=True)
 
 
-def build_bbg_ch28_participle_tense_contrast(out_dir: str = None) -> str:
+def build_bbg_ch28_participle_tense_contrast(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh28ParticipleTenseContrastPDF,
         'BBG Chapter 28 — Present vs. Aorist Adverbial Participle Contrast',
@@ -2472,7 +2473,7 @@ def build_bbg_ch28_participle_tense_contrast(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh31SubjunctiveUseSortPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'Classify each subjunctive clause by use code: '
             'HO (Hortatory), PU (Purpose), CO (3rd-class Conditional), '
@@ -2530,7 +2531,7 @@ class BbgCh31SubjunctiveUseSortPDF(GreekExercisePDF):
                                        section_title='Classification Table', use_greek=True)
 
 
-def build_bbg_ch31_subjunctive_use_sort(out_dir: str = None) -> str:
+def build_bbg_ch31_subjunctive_use_sort(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh31SubjunctiveUseSortPDF,
         'BBG Chapter 31 — Subjunctive Use Classification Drill',
@@ -2546,7 +2547,7 @@ def build_bbg_ch31_subjunctive_use_sort(out_dir: str = None) -> str:
 # ---------------------------------------------------------------------------
 
 class BbgCh33ProhibitionDrillPDF(GreekExercisePDF):
-    def _build(self):
+    def _build(self) -> None:
         self.add_instructions(
             'For each prohibition, classify the pattern as '
             'STOP (μή + present imperative = stop an ongoing action) or '
@@ -2604,7 +2605,7 @@ class BbgCh33ProhibitionDrillPDF(GreekExercisePDF):
                                        section_title='Classification Table', use_greek=True)
 
 
-def build_bbg_ch33_prohibition_drill(out_dir: str = None) -> str:
+def build_bbg_ch33_prohibition_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh33ProhibitionDrillPDF,
         'BBG Chapter 33 — Prohibition Pattern Drill',
