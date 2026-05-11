@@ -8396,6 +8396,562 @@ def build_ch33_pual_weak_paradigm_drill(out_dir=None):
 
 
 # ---------------------------------------------------------------------------
+# Ch32 — Pual Function Sort (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch32FunctionSortExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'The Pual is always the passive of the Piel. '
+            'For each of the 20 Pual forms below: '
+            '(1) give the Piel active meaning; (2) translate the Pual passive form. '
+            'Answer key is on the last page.'
+        )
+        self.add_note(
+            'Pual diagnostic: Qibbuts (u-dot) under R1 + Dagesh Forte in R2. '
+            'When R2 is a guttural (r, kh, etc.), dagesh is rejected and the '
+            'preceding vowel lengthens: qibbuts -> holem (e.g., borakh not burrakk).'
+        )
+        hdr = ['#', 'Form', 'Root', 'Conjugation', 'Piel Active Meaning', 'Pual Passive Translation']
+        cr  = [0.04, 0.14, 0.09, 0.18, 0.27, 0.28]
+        rows = [
+            ['1',  'קֻטַּל',   'קטל',  'Perfect 3ms',   '', ''],
+            ['2',  'כֻּבַּד',   'כבד',  'Perfect 3ms',   '', ''],
+            ['3',  'בֹּרַךְ',   'ברך',  'Perfect 3ms',   '', ''],
+            ['4',  'שֻׁלַּח',   'שׁלח', 'Perfect 3ms',   '', ''],
+            ['5',  'דֻּבַּר',   'דבר',  'Perfect 3ms',   '', ''],
+            ['6',  'שֻׁמַּר',   'שׁמר', 'Perfect 3ms',   '', ''],
+            ['7',  'גֹּרַשׁ',   'גרשׁ', 'Perfect 3ms',   '', ''],
+            ['8',  'סֻפַּר',    'ספר',  'Perfect 3ms',   '', ''],
+            ['9',  'כֻּסָּה',   'כסה',  'Perfect 3ms',   '', ''],
+            ['10', 'יְקֻטַּל',  'קטל',  'Imperfect 3ms', '', ''],
+            ['11', 'יְבֹרַךְ',  'ברך',  'Imperfect 3ms', '', ''],
+            ['12', 'יְשֻׁלַּח', 'שׁלח', 'Imperfect 3ms', '', ''],
+            ['13', 'יְכֻבַּד',  'כבד',  'Imperfect 3ms', '', ''],
+            ['14', 'יְסֻפַּר',  'ספר',  'Imperfect 3ms', '', ''],
+            ['15', 'יְגֹרַשׁ',  'גרשׁ', 'Imperfect 3ms', '', ''],
+            ['16', 'מְקֻטָּל',  'קטל',  'Participle ms', '', ''],
+            ['17', 'מְבֹרָךְ',  'ברך',  'Participle ms', '', ''],
+            ['18', 'מְשֻׁלָּח', 'שׁלח', 'Participle ms', '', ''],
+            ['19', 'כֻּבְּדוּ', 'כבד',  'Perfect 3cp',   '', ''],
+            ['20', 'שֻׁלְּחוּ', 'שׁלח', 'Perfect 3cp',   '', ''],
+        ]
+        ans = [
+            ['1',  'קֻטַּל',   'קטל',  'Perfect 3ms',   'to kill (intensively)', 'he was killed'],
+            ['2',  'כֻּבַּד',   'כבד',  'Perfect 3ms',   'to honor',              'he was honored'],
+            ['3',  'בֹּרַךְ',   'ברך',  'Perfect 3ms',   'to bless',              'he was blessed'],
+            ['4',  'שֻׁלַּח',   'שׁלח', 'Perfect 3ms',   'to send away / release','he was sent away'],
+            ['5',  'דֻּבַּר',   'דבר',  'Perfect 3ms',   'to speak',              'it was spoken'],
+            ['6',  'שֻׁמַּר',   'שׁמר', 'Perfect 3ms',   'to guard / watch',      'he was guarded'],
+            ['7',  'גֹּרַשׁ',   'גרשׁ', 'Perfect 3ms',   'to drive out / expel',  'he was driven out'],
+            ['8',  'סֻפַּר',    'ספר',  'Perfect 3ms',   'to recount / tell',     'it was told / recounted'],
+            ['9',  'כֻּסָּה',   'כסה',  'Perfect 3ms',   'to cover',              'it was covered'],
+            ['10', 'יְקֻטַּל',  'קטל',  'Imperfect 3ms', 'to kill',               'he will be killed'],
+            ['11', 'יְבֹרַךְ',  'ברך',  'Imperfect 3ms', 'to bless',              'he will be blessed'],
+            ['12', 'יְשֻׁלַּח', 'שׁלח', 'Imperfect 3ms', 'to send / release',     'he will be sent'],
+            ['13', 'יְכֻבַּד',  'כבד',  'Imperfect 3ms', 'to honor',              'he will be honored'],
+            ['14', 'יְסֻפַּר',  'ספר',  'Imperfect 3ms', 'to recount / tell',     'it will be told'],
+            ['15', 'יְגֹרַשׁ',  'גרשׁ', 'Imperfect 3ms', 'to drive out',          'he will be driven out'],
+            ['16', 'מְקֻטָּל',  'קטל',  'Participle ms', 'to kill',               'one being killed'],
+            ['17', 'מְבֹרָךְ',  'ברך',  'Participle ms', 'to bless',              'one being blessed'],
+            ['18', 'מְשֻׁלָּח', 'שׁלח', 'Participle ms', 'to send / release',     'one being sent'],
+            ['19', 'כֻּבְּדוּ', 'כבד',  'Perfect 3cp',   'to honor',              'they were honored'],
+            ['20', 'שֻׁלְּחוּ', 'שׁלח', 'Perfect 3cp',   'to send away',          'they were sent away'],
+        ]
+        self.add_drill_with_answer_key(
+            hdr, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 2],
+            answer_heb_cols=[1, 2],
+            section_title='Pual Function Sort — 20 Strong-Root Forms',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch32_function_sort_exercise(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        Ch32FunctionSortExercise,
+        'Chapter 32 — Pual Function Sort',
+        'BBH Chapter 32 · Pual Strong Verbs',
+        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-function-sort'],
+        'ch32-function-sort.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch32 — Qal–Piel–Pual Contrast Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch32QalPielPualContrastExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'Each triplet shows the same root in Qal, Piel, and Pual (Perfect 3ms). '
+            'For each form: (1) identify the stem, (2) parse fully, (3) translate. '
+            'Focus on the R1 vowel: variable (Qal), hiriq/tsere (Piel), qibbuts/holem (Pual). '
+            'Answer key is on the last page.'
+        )
+        self.add_note(
+            'Stem contrast (Perfect 3ms): Qal = qamets or tsere under R1, no dagesh in R2.  '
+            'Piel = hiriq or tsere under R1 + dagesh forte in R2.  '
+            'Pual = qibbuts under R1 + dagesh forte in R2 '
+            '(holem when R2 is guttural and rejects dagesh).'
+        )
+        hdr = ['#', 'Form', 'Stem', 'Conjugation', 'PGN', 'Translation']
+        cr  = [0.04, 0.16, 0.12, 0.20, 0.10, 0.38]
+
+        triplets = [
+            ('Triplet 1 — Root: brk (bless)', [
+                ['1', 'בָּרַךְ', '', 'Perfect', '3ms', ''],
+                ['2', 'בֵּרַךְ', '', 'Perfect', '3ms', ''],
+                ['3', 'בֹּרַךְ', '', 'Perfect', '3ms', ''],
+            ], [
+                ['1', 'בָּרַךְ', 'Qal',  'Perfect', '3ms', 'he knelt'],
+                ['2', 'בֵּרַךְ', 'Piel', 'Perfect', '3ms', 'he blessed'],
+                ['3', 'בֹּרַךְ', 'Pual', 'Perfect', '3ms', 'he was blessed'],
+            ]),
+            ('Triplet 2 — Root: shlkh (send)', [
+                ['4', 'שָׁלַח', '', 'Perfect', '3ms', ''],
+                ['5', 'שִׁלַּח', '', 'Perfect', '3ms', ''],
+                ['6', 'שֻׁלַּח', '', 'Perfect', '3ms', ''],
+            ], [
+                ['4', 'שָׁלַח', 'Qal',  'Perfect', '3ms', 'he sent'],
+                ['5', 'שִׁלַּח', 'Piel', 'Perfect', '3ms', 'he sent away / released'],
+                ['6', 'שֻׁלַּח', 'Pual', 'Perfect', '3ms', 'he was sent away'],
+            ]),
+            ('Triplet 3 — Root: dbr (speak)', [
+                ['7',  'דָּבַר', '', 'Perfect', '3ms', ''],
+                ['8',  'דִּבֶּר', '', 'Perfect', '3ms', ''],
+                ['9',  'דֻּבַּר', '', 'Perfect', '3ms', ''],
+            ], [
+                ['7',  'דָּבַר', 'Qal',  'Perfect', '3ms', 'he spoke (rare)'],
+                ['8',  'דִּבֶּר', 'Piel', 'Perfect', '3ms', 'he spoke'],
+                ['9',  'דֻּבַּר', 'Pual', 'Perfect', '3ms', 'it was spoken'],
+            ]),
+            ('Triplet 4 — Root: kbd (honor)', [
+                ['10', 'כָּבֵד', '', 'Perfect', '3ms', ''],
+                ['11', 'כִּבֵּד', '', 'Perfect', '3ms', ''],
+                ['12', 'כֻּבַּד', '', 'Perfect', '3ms', ''],
+            ], [
+                ['10', 'כָּבֵד', 'Qal',  'Perfect', '3ms', 'he was heavy / honored (stative)'],
+                ['11', 'כִּבֵּד', 'Piel', 'Perfect', '3ms', 'he honored'],
+                ['12', 'כֻּבַּד', 'Pual', 'Perfect', '3ms', 'he was honored'],
+            ]),
+            ('Triplet 5 — Root: spr (count / tell)', [
+                ['13', 'סָפַר', '', 'Perfect', '3ms', ''],
+                ['14', 'סִפֵּר', '', 'Perfect', '3ms', ''],
+                ['15', 'סֻפַּר', '', 'Perfect', '3ms', ''],
+            ], [
+                ['13', 'סָפַר', 'Qal',  'Perfect', '3ms', 'he counted'],
+                ['14', 'סִפֵּר', 'Piel', 'Perfect', '3ms', 'he recounted / told'],
+                ['15', 'סֻפַּר', 'Pual', 'Perfect', '3ms', 'it was told / recounted'],
+            ]),
+        ]
+
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1], show_answers=False)
+            self.add_section_break()
+
+        self.add_reflection([
+            'Across all five triplets, the R1 vowel follows a pattern: qamets or tsere (Qal), '
+            'hiriq or tsere (Piel), qibbuts (Pual). Write this as a three-step diagnostic rule.',
+            'Root brk (triplets 1, 3): the resh (r) rejects dagesh forte in R2. '
+            'How does this affect the Piel vowel (tsere under b instead of hiriq)? '
+            'And the Pual vowel (holem instead of qibbuts)?',
+            'Root kbd (triplet 4): the Qal is stative (he was heavy). '
+            'What does the Piel add to make it factitive? '
+            'What grammatical role does the human recipient play in Piel vs. Pual?',
+        ])
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+
+
+def build_ch32_qal_piel_pual_contrast_exercise(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        Ch32QalPielPualContrastExercise,
+        'Chapter 32 — Qal–Piel–Pual Contrast Drill (Strong Roots)',
+        'BBH Chapter 32 · Pual Strong Verbs',
+        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-qal-piel-pual-contrast'],
+        'ch32-qal-piel-pual-contrast.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch32 — Stem-ID Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch32StemIdDrill(ExercisePDF):
+    _instructions = (
+        'For each of the 24 verb forms, identify the stem (Qal / Piel / Pual), '
+        'then parse fully (conjugation, PGN) and translate. '
+        'All forms are from strong roots. Answer key is on the last page.'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        self.add_note(
+            'Quick test: R1 has qibbuts (u-dot) or holem where guttural R2 blocks dagesh? -> Pual.  '
+            'R1 has hiriq/tsere with dagesh forte in R2? -> Piel.  '
+            'Plain vowel, no dagesh forte in R2? -> Qal.'
+        )
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr   = [0.04, 0.16, 0.11, 0.18, 0.10, 0.09, 0.32]
+        rows = [
+            ['1',  'דָּבַר',     '', '', '', 'דבר', ''],
+            ['2',  'דִּבֶּר',    '', '', '', 'דבר', ''],
+            ['3',  'דֻּבַּר',    '', '', '', 'דבר', ''],
+            ['4',  'שָׁלַח',     '', '', '', 'שׁלח', ''],
+            ['5',  'שִׁלַּח',    '', '', '', 'שׁלח', ''],
+            ['6',  'שֻׁלַּח',    '', '', '', 'שׁלח', ''],
+            ['7',  'כָּבֵד',     '', '', '', 'כבד', ''],
+            ['8',  'כִּבֵּד',    '', '', '', 'כבד', ''],
+            ['9',  'כֻּבַּד',    '', '', '', 'כבד', ''],
+            ['10', 'יְדַבֵּר',   '', '', '', 'דבר', ''],
+            ['11', 'יִדְבַּר',   '', '', '', 'דבר', ''],
+            ['12', 'יְדֻבַּר',   '', '', '', 'דבר', ''],
+            ['13', 'יְשַׁלַּח',  '', '', '', 'שׁלח', ''],
+            ['14', 'יִשְׁלַח',   '', '', '', 'שׁלח', ''],
+            ['15', 'יְשֻׁלַּח',  '', '', '', 'שׁלח', ''],
+            ['16', 'וַיְדַבֵּר', '', '', '', 'דבר', ''],
+            ['17', 'וַיִּדְבַּר','', '', '', 'דבר', ''],
+            ['18', 'וַיְדֻבַּר', '', '', '', 'דבר', ''],
+            ['19', 'דַּבֵּר',    '', '', '', 'דבר', ''],
+            ['20', 'דְּבַר',     '', '', '', 'דבר', ''],
+            ['21', 'מְדַבֵּר',   '', '', '', 'דבר', ''],
+            ['22', 'דֹּבֵר',     '', '', '', 'דבר', ''],
+            ['23', 'מְדֻבָּר',   '', '', '', 'דבר', ''],
+            ['24', 'סֻפַּר',     '', '', '', 'ספר', ''],
+        ]
+        ans = [
+            ['1',  'דָּבַר',     'Qal',  'Perfect',    '3ms', 'דבר', 'he spoke (rare)'],
+            ['2',  'דִּבֶּר',    'Piel', 'Perfect',    '3ms', 'דבר', 'he spoke'],
+            ['3',  'דֻּבַּר',    'Pual', 'Perfect',    '3ms', 'דבר', 'it was spoken'],
+            ['4',  'שָׁלַח',     'Qal',  'Perfect',    '3ms', 'שׁלח', 'he sent'],
+            ['5',  'שִׁלַּח',    'Piel', 'Perfect',    '3ms', 'שׁלח', 'he sent away / released'],
+            ['6',  'שֻׁלַּח',    'Pual', 'Perfect',    '3ms', 'שׁלח', 'he was sent away'],
+            ['7',  'כָּבֵד',     'Qal',  'Perfect',    '3ms', 'כבד', 'he was heavy / honored (stative)'],
+            ['8',  'כִּבֵּד',    'Piel', 'Perfect',    '3ms', 'כבד', 'he honored'],
+            ['9',  'כֻּבַּד',    'Pual', 'Perfect',    '3ms', 'כבד', 'he was honored'],
+            ['10', 'יְדַבֵּר',   'Piel', 'Imperfect',  '3ms', 'דבר', 'he will speak'],
+            ['11', 'יִדְבַּר',   'Qal',  'Imperfect',  '3ms', 'דבר', 'he will speak (rare)'],
+            ['12', 'יְדֻבַּר',   'Pual', 'Imperfect',  '3ms', 'דבר', 'it will be spoken'],
+            ['13', 'יְשַׁלַּח',  'Piel', 'Imperfect',  '3ms', 'שׁלח', 'he will send away'],
+            ['14', 'יִשְׁלַח',   'Qal',  'Imperfect',  '3ms', 'שׁלח', 'he will send'],
+            ['15', 'יְשֻׁלַּח',  'Pual', 'Imperfect',  '3ms', 'שׁלח', 'he will be sent'],
+            ['16', 'וַיְדַבֵּר', 'Piel', 'Wayyiqtol',  '3ms', 'דבר', 'and he spoke'],
+            ['17', 'וַיִּדְבַּר','Qal',  'Wayyiqtol',  '3ms', 'דבר', 'and he spoke (rare)'],
+            ['18', 'וַיְדֻבַּר', 'Pual', 'Wayyiqtol',  '3ms', 'דבר', 'and it was spoken'],
+            ['19', 'דַּבֵּר',    'Piel', 'Imperative', '2ms', 'דבר', 'speak!'],
+            ['20', 'דְּבַר',     'Qal',  'Imperative', '2ms', 'דבר', 'speak! (rare)'],
+            ['21', 'מְדַבֵּר',   'Piel', 'Participle', 'ms',  'דבר', 'speaking / one who speaks'],
+            ['22', 'דֹּבֵר',     'Qal',  'Participle', 'ms',  'דבר', 'speaking / one who speaks'],
+            ['23', 'מְדֻבָּר',   'Pual', 'Participle', 'ms',  'דבר', 'being spoken'],
+            ['24', 'סֻפַּר',     'Pual', 'Perfect',    '3ms', 'ספר', 'it was told / recounted'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 5],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Piel / Pual — Strong Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch32_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch32StemIdDrill,
+        'Chapter 32 — Qal / Piel / Pual Stem-ID Drill (Strong Roots)',
+        'BBH Chapter 32 · Pual Strong Verbs',
+        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-stem-id-drill'],
+        'ch32-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch33 — Qal–Piel–Pual Contrast Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch33QalPielPualContrastExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'Each triplet shows the same weak root in Qal, Piel, and Pual (Perfect 3ms). '
+            'For each form: (1) identify the stem, (2) parse fully, (3) translate. '
+            'Watch for III-he endings and guttural compensatory lengthening. '
+            'Answer key is on the last page.'
+        )
+        self.add_note(
+            'III-he Pual Perfect 3ms: qibbuts under R1 + dagesh in R2 + final qamets-heh.  '
+            'R2=r rejects dagesh: qibbuts lengthens to holem (borakh not burrakk).  '
+            'I-guttural R1: guttural takes qibbuts (Pual) or hiriq (Piel) but does not '
+            'change the stem vowel identity.'
+        )
+        hdr = ['#', 'Form', 'Stem', 'Conjugation', 'PGN', 'Translation']
+        cr  = [0.04, 0.16, 0.12, 0.20, 0.10, 0.38]
+
+        triplets = [
+            ('Triplet 1 — Root: glh (III-he)', [
+                ['1', 'גָּלָה', '', 'Perfect', '3ms', ''],
+                ['2', 'גִּלָּה', '', 'Perfect', '3ms', ''],
+                ['3', 'גֻּלָּה', '', 'Perfect', '3ms', ''],
+            ], [
+                ['1', 'גָּלָה', 'Qal',  'Perfect', '3ms', 'he went into exile / uncovered'],
+                ['2', 'גִּלָּה', 'Piel', 'Perfect', '3ms', 'he revealed / uncovered'],
+                ['3', 'גֻּלָּה', 'Pual', 'Perfect', '3ms', 'he was revealed / uncovered'],
+            ]),
+            ('Triplet 2 — Root: klh (III-he)', [
+                ['4', 'כָּלָה', '', 'Perfect', '3ms', ''],
+                ['5', 'כִּלָּה', '', 'Perfect', '3ms', ''],
+                ['6', 'כֻּלָּה', '', 'Perfect', '3ms', ''],
+            ], [
+                ['4', 'כָּלָה', 'Qal',  'Perfect', '3ms', 'he finished / ceased'],
+                ['5', 'כִּלָּה', 'Piel', 'Perfect', '3ms', 'he completed / finished off'],
+                ['6', 'כֻּלָּה', 'Pual', 'Perfect', '3ms', 'he was finished / consumed'],
+            ]),
+            ('Triplet 3 — Root: brk (R2=r)', [
+                ['7',  'בָּרַךְ', '', 'Perfect', '3ms', ''],
+                ['8',  'בֵּרַךְ', '', 'Perfect', '3ms', ''],
+                ['9',  'בֹּרַךְ', '', 'Perfect', '3ms', ''],
+            ], [
+                ['7',  'בָּרַךְ', 'Qal',  'Perfect', '3ms', 'he knelt'],
+                ['8',  'בֵּרַךְ', 'Piel', 'Perfect', '3ms', 'he blessed'],
+                ['9',  'בֹּרַךְ', 'Pual', 'Perfect', '3ms', 'he was blessed'],
+            ]),
+            ('Triplet 4 — Root: anh (III-he, I-guttural)', [
+                ['10', 'עָנָה', '', 'Perfect', '3ms', ''],
+                ['11', 'עִנָּה', '', 'Perfect', '3ms', ''],
+                ['12', 'עֻנָּה', '', 'Perfect', '3ms', ''],
+            ], [
+                ['10', 'עָנָה', 'Qal',  'Perfect', '3ms', 'he answered'],
+                ['11', 'עִנָּה', 'Piel', 'Perfect', '3ms', 'he afflicted / humbled'],
+                ['12', 'עֻנָּה', 'Pual', 'Perfect', '3ms', 'he was afflicted'],
+            ]),
+            ('Triplet 5 — Root: khyh (III-he)', [
+                ['13', 'חָיָה', '', 'Perfect', '3ms', ''],
+                ['14', 'חִיָּה', '', 'Perfect', '3ms', ''],
+                ['15', 'חֻיָּה', '', 'Perfect', '3ms', ''],
+            ], [
+                ['13', 'חָיָה', 'Qal',  'Perfect', '3ms', 'he lived'],
+                ['14', 'חִיָּה', 'Piel', 'Perfect', '3ms', 'he kept alive'],
+                ['15', 'חֻיָּה', 'Pual', 'Perfect', '3ms', 'he was kept alive'],
+            ]),
+        ]
+
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1], show_answers=False)
+            self.add_section_break()
+
+        self.add_reflection([
+            'Compare Triplet 1 (glh, III-he) and Triplet 3 (brk, R2=r). '
+            'Both are "weak" but in different ways. Describe the weak-root change '
+            'in each and how it affects the Pual form specifically.',
+            'Triplets 1, 2, 4, 5 all end in qamets-heh in the Pual Perfect 3ms. '
+            'What marks the difference between the Piel and Pual in these III-he forms '
+            'when R1 is not distinctive? (Hint: look at both R1 vowel and R2 dagesh.)',
+            'Root anh (triplet 4) is both III-he and I-guttural. '
+            'Did the I-guttural status change anything about the Pual form? '
+            'Why or why not?',
+        ])
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+
+
+def build_ch33_qal_piel_pual_contrast_exercise(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        Ch33QalPielPualContrastExercise,
+        'Chapter 33 — Qal–Piel–Pual Contrast Drill (Weak Roots)',
+        'BBH Chapter 33 · Pual Weak Verbs',
+        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-qal-piel-pual-contrast'],
+        'ch33-qal-piel-pual-contrast.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch33 — Pual Function Sort (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch33FunctionSortExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'The Pual is always the passive of the Piel. '
+            'For each of the 18 weak-root Pual forms below: '
+            '(1) give the Piel active meaning; (2) translate the Pual passive form. '
+            'Answer key is on the last page.'
+        )
+        self.add_note(
+            'III-he endings: Perfect 3ms ends in qamets-heh; Imperfect 3ms and Participle ms '
+            'end in tsere-heh.  '
+            'R2=r: qibbuts lengthens to holem (borakh, yevorakh, mevorakk).  '
+            'Perfect 3fs: qibbuts-R1 + shewa-R2 + tah suffix.  '
+            'Perfect 3cp: qibbuts-R1 + dagesh-R2 + vav suffix.'
+        )
+        hdr = ['#', 'Form', 'Root', 'Weak Type', 'Conjugation', 'Piel Active', 'Pual Passive']
+        cr  = [0.04, 0.13, 0.08, 0.13, 0.17, 0.22, 0.23]
+        rows = [
+            ['1',  'גֻּלָּה',   'גלה', 'III-he',       'Perfect 3ms',   '', ''],
+            ['2',  'כֻּלָּה',   'כלה', 'III-he',       'Perfect 3ms',   '', ''],
+            ['3',  'בֹּרַךְ',   'ברך', 'R2=r',         'Perfect 3ms',   '', ''],
+            ['4',  'עֻנָּה',    'ענה', 'III-he, I-gutt','Perfect 3ms',  '', ''],
+            ['5',  'חֻיָּה',    'חיה', 'III-he',       'Perfect 3ms',   '', ''],
+            ['6',  'יְגֻלֶּה',  'גלה', 'III-he',       'Imperfect 3ms', '', ''],
+            ['7',  'יְכֻלֶּה',  'כלה', 'III-he',       'Imperfect 3ms', '', ''],
+            ['8',  'יְבֹרַךְ',  'ברך', 'R2=r',         'Imperfect 3ms', '', ''],
+            ['9',  'יְעֻנֶּה',  'ענה', 'III-he, I-gutt','Imperfect 3ms','', ''],
+            ['10', 'יְחֻיֶּה',  'חיה', 'III-he',       'Imperfect 3ms', '', ''],
+            ['11', 'מְגֻלֶּה',  'גלה', 'III-he',       'Participle ms', '', ''],
+            ['12', 'מְכֻלֶּה',  'כלה', 'III-he',       'Participle ms', '', ''],
+            ['13', 'מְבֹרָךְ',  'ברך', 'R2=r',         'Participle ms', '', ''],
+            ['14', 'גֻּלְתָּה', 'גלה', 'III-he',       'Perfect 3fs',   '', ''],
+            ['15', 'בֹּרֲכוּ', 'ברך', 'R2=r',         'Perfect 3cp',   '', ''],
+            ['16', 'כֻּלּוּ',   'כלה', 'III-he',       'Perfect 3cp',   '', ''],
+            ['17', 'צֻוָּה',    'צוה', 'III-he',       'Perfect 3ms',   '', ''],
+            ['18', 'שֻׁנָּה',   'שׁנה', 'III-he',       'Perfect 3ms',   '', ''],
+        ]
+        ans = [
+            ['1',  'גֻּלָּה',   'גלה', 'III-he',       'Perfect 3ms',   'to reveal / uncover', 'it was revealed'],
+            ['2',  'כֻּלָּה',   'כלה', 'III-he',       'Perfect 3ms',   'to complete / destroy','it was finished / consumed'],
+            ['3',  'בֹּרַךְ',   'ברך', 'R2=r',         'Perfect 3ms',   'to bless',             'he was blessed'],
+            ['4',  'עֻנָּה',    'ענה', 'III-he, I-gutt','Perfect 3ms',  'to afflict / humble',  'he was afflicted'],
+            ['5',  'חֻיָּה',    'חיה', 'III-he',       'Perfect 3ms',   'to keep alive',        'he was kept alive'],
+            ['6',  'יְגֻלֶּה',  'גלה', 'III-he',       'Imperfect 3ms', 'to reveal',            'it will be revealed'],
+            ['7',  'יְכֻלֶּה',  'כלה', 'III-he',       'Imperfect 3ms', 'to complete / destroy','it will be finished'],
+            ['8',  'יְבֹרַךְ',  'ברך', 'R2=r',         'Imperfect 3ms', 'to bless',             'he will be blessed'],
+            ['9',  'יְעֻנֶּה',  'ענה', 'III-he, I-gutt','Imperfect 3ms','to afflict',           'he will be afflicted'],
+            ['10', 'יְחֻיֶּה',  'חיה', 'III-he',       'Imperfect 3ms', 'to keep alive',        'he will be kept alive'],
+            ['11', 'מְגֻלֶּה',  'גלה', 'III-he',       'Participle ms', 'to reveal',            'one being revealed'],
+            ['12', 'מְכֻלֶּה',  'כלה', 'III-he',       'Participle ms', 'to complete / destroy','one being consumed'],
+            ['13', 'מְבֹרָךְ',  'ברך', 'R2=r',         'Participle ms', 'to bless',             'one being blessed'],
+            ['14', 'גֻּלְתָּה', 'גלה', 'III-he',       'Perfect 3fs',   'to reveal',            'it was revealed (3fs)'],
+            ['15', 'בֹּרֲכוּ', 'ברך', 'R2=r',         'Perfect 3cp',   'to bless',             'they were blessed'],
+            ['16', 'כֻּלּוּ',   'כלה', 'III-he',       'Perfect 3cp',   'to complete / destroy','they were consumed / finished'],
+            ['17', 'צֻוָּה',    'צוה', 'III-he',       'Perfect 3ms',   'to command',           'he was commanded'],
+            ['18', 'שֻׁנָּה',   'שׁנה', 'III-he',       'Perfect 3ms',   'to change',            'it was changed'],
+        ]
+        self.add_drill_with_answer_key(
+            hdr, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 2],
+            answer_heb_cols=[1, 2],
+            section_title='Pual Function Sort — 18 Weak-Root Forms',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch33_function_sort_exercise(out_dir: str = None) -> str:
+    return _build_exercise_pdf(
+        Ch33FunctionSortExercise,
+        'Chapter 33 — Pual Function Sort (Weak Roots)',
+        'BBH Chapter 33 · Pual Weak Verbs',
+        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-function-sort'],
+        'ch33-function-sort.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch33 — Stem-ID Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch33StemIdDrill(ExercisePDF):
+    _instructions = (
+        'For each of the 24 verb forms, identify the stem (Qal / Piel / Pual), '
+        'then parse fully (conjugation, PGN) and translate. '
+        'All roots are weak (III-he or guttural). Answer key is on the last page.'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        self.add_note(
+            'III-he Pual Perfect 3ms: qibbuts-R1 + dagesh-R2 + qamets-heh.  '
+            'III-he Pual Imperfect 3ms: yeh prefix + qibbuts-R1 + dagesh-R2 + tsere-heh.  '
+            'III-he Pual Participle ms: mem prefix + qibbuts-R1 + dagesh-R2 + tsere-heh.  '
+            'R2=r: Piel -> tsere under R1; Pual -> holem under R1 (both without dagesh in r).'
+        )
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr   = [0.04, 0.16, 0.11, 0.18, 0.10, 0.09, 0.32]
+        rows = [
+            ['1',  'גָּלָה',    '', '', '',   'גלה', ''],
+            ['2',  'גִּלָּה',   '', '', '',   'גלה', ''],
+            ['3',  'גֻּלָּה',   '', '', '',   'גלה', ''],
+            ['4',  'בָּרַךְ',   '', '', '',   'ברך', ''],
+            ['5',  'בֵּרַךְ',   '', '', '',   'ברך', ''],
+            ['6',  'בֹּרַךְ',   '', '', '',   'ברך', ''],
+            ['7',  'כָּלָה',    '', '', '',   'כלה', ''],
+            ['8',  'כִּלָּה',   '', '', '',   'כלה', ''],
+            ['9',  'כֻּלָּה',   '', '', '',   'כלה', ''],
+            ['10', 'יְגַלֶּה',  '', '', '',   'גלה', ''],
+            ['11', 'יִגְלֶה',   '', '', '',   'גלה', ''],
+            ['12', 'יְגֻלֶּה',  '', '', '',   'גלה', ''],
+            ['13', 'יְבָרֵךְ',  '', '', '',   'ברך', ''],
+            ['14', 'יְבֹרַךְ',  '', '', '',   'ברך', ''],
+            ['15', 'יְכַלֶּה',  '', '', '',   'כלה', ''],
+            ['16', 'וַיְגַל',   '', '', '',   'גלה', ''],
+            ['17', 'וַיִּגֶּל', '', '', '',   'גלה', ''],
+            ['18', 'וַיְצַו',   '', '', '',   'צוה', ''],
+            ['19', 'גַּלֵּה',   '', '', '',   'גלה', ''],
+            ['20', 'גְּלֵה',    '', '', '',   'גלה', ''],
+            ['21', 'מְגַלֶּה',  '', '', '',   'גלה', ''],
+            ['22', 'גֹּלֶה',    '', '', '',   'גלה', ''],
+            ['23', 'מְגֻלֶּה',  '', '', '',   'גלה', ''],
+            ['24', 'צֻוָּה',    '', '', '',   'צוה', ''],
+        ]
+        ans = [
+            ['1',  'גָּלָה',    'Qal',  'Perfect',    '3ms', 'גלה', 'he went into exile / uncovered'],
+            ['2',  'גִּלָּה',   'Piel', 'Perfect',    '3ms', 'גלה', 'he revealed / uncovered'],
+            ['3',  'גֻּלָּה',   'Pual', 'Perfect',    '3ms', 'גלה', 'he was revealed / uncovered'],
+            ['4',  'בָּרַךְ',   'Qal',  'Perfect',    '3ms', 'ברך', 'he knelt'],
+            ['5',  'בֵּרַךְ',   'Piel', 'Perfect',    '3ms', 'ברך', 'he blessed'],
+            ['6',  'בֹּרַךְ',   'Pual', 'Perfect',    '3ms', 'ברך', 'he was blessed'],
+            ['7',  'כָּלָה',    'Qal',  'Perfect',    '3ms', 'כלה', 'he finished / ceased'],
+            ['8',  'כִּלָּה',   'Piel', 'Perfect',    '3ms', 'כלה', 'he completed / finished off'],
+            ['9',  'כֻּלָּה',   'Pual', 'Perfect',    '3ms', 'כלה', 'he was finished / consumed'],
+            ['10', 'יְגַלֶּה',  'Piel', 'Imperfect',  '3ms', 'גלה', 'he will reveal'],
+            ['11', 'יִגְלֶה',   'Qal',  'Imperfect',  '3ms', 'גלה', 'he will go into exile / uncover'],
+            ['12', 'יְגֻלֶּה',  'Pual', 'Imperfect',  '3ms', 'גלה', 'it will be revealed'],
+            ['13', 'יְבָרֵךְ',  'Piel', 'Imperfect',  '3ms', 'ברך', 'he will bless'],
+            ['14', 'יְבֹרַךְ',  'Pual', 'Imperfect',  '3ms', 'ברך', 'he will be blessed'],
+            ['15', 'יְכַלֶּה',  'Piel', 'Imperfect',  '3ms', 'כלה', 'he will complete / destroy'],
+            ['16', 'וַיְגַל',   'Piel', 'Wayyiqtol',  '3ms', 'גלה', 'and he revealed'],
+            ['17', 'וַיִּגֶּל', 'Qal',  'Wayyiqtol',  '3ms', 'גלה', 'and he went into exile'],
+            ['18', 'וַיְצַו',   'Piel', 'Wayyiqtol',  '3ms', 'צוה', 'and he commanded'],
+            ['19', 'גַּלֵּה',   'Piel', 'Imperative', '2ms', 'גלה', 'reveal!'],
+            ['20', 'גְּלֵה',    'Qal',  'Imperative', '2ms', 'גלה', 'go into exile! / uncover!'],
+            ['21', 'מְגַלֶּה',  'Piel', 'Participle', 'ms',  'גלה', 'revealing / one who reveals'],
+            ['22', 'גֹּלֶה',    'Qal',  'Participle', 'ms',  'גלה', 'going into exile / one who uncovers'],
+            ['23', 'מְגֻלֶּה',  'Pual', 'Participle', 'ms',  'גלה', 'being revealed / what is revealed'],
+            ['24', 'צֻוָּה',    'Pual', 'Perfect',    '3ms', 'צוה', 'he was commanded'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 5],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Piel / Pual — Weak Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch33_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch33StemIdDrill,
+        'Chapter 33 — Qal / Piel / Pual Stem-ID Drill (Weak Roots)',
+        'BBH Chapter 33 · Pual Weak Verbs',
+        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-stem-id-drill'],
+        'ch33-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
 # Ch34 — Hithpael Paradigm Drill
 # ---------------------------------------------------------------------------
 class Ch34HithpaelParadigmDrill(ExercisePDF):
@@ -8514,4 +9070,1589 @@ def build_ch35_hithpael_weak_paradigm_drill(out_dir=None):
         'BBH Chapter 35 · Hithpael Weak',
         ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-hithpael-weak-paradigm-drill'],
         'ch35-hithpael-weak-paradigm-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch24 — Stem-ID Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch24StemIdDrill(ExercisePDF):
+    _instructions = (
+        'For each Hebrew form, identify the stem (Qal or Niphal), '
+        'conjugation, PGN, and root. '
+        'Note: items 18 and 20 are הִשָּׁמֵר — Niphal Imperative 2ms and Niphal '
+        'Infinitive Absolute are identical in strong roots; both parsings are accepted.'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
+        cr   = [0.05, 0.18, 0.12, 0.22, 0.12, 0.31]
+        rows = [
+            ['1',  'קָטַל',       '', '', '',    ''],
+            ['2',  'נִקְטַל',     '', '', '',    ''],
+            ['3',  'שָׁמַר',      '', '', '',    ''],
+            ['4',  'נִשְׁמַר',    '', '', '',    ''],
+            ['5',  'מָכַר',       '', '', '',    ''],
+            ['6',  'נִמְכַּר',    '', '', '',    ''],
+            ['7',  'כָּרַת',      '', '', '',    ''],
+            ['8',  'נִכְרַת',     '', '', '',    ''],
+            ['9',  'יִשְׁמֹר',    '', '', '',    ''],
+            ['10', 'יִשָּׁמֵר',   '', '', '',    ''],
+            ['11', 'יִמָּכֵר',    '', '', '',    ''],
+            ['12', 'יִמְכֹּר',    '', '', '',    ''],
+            ['13', 'וַיִּשְׁמֹר', '', '', '',    ''],
+            ['14', 'וַיִּשָּׁמֵר','', '', '',    ''],
+            ['15', 'וַיִּמָּכֵר', '', '', '',    ''],
+            ['16', 'וַיִּמְכֹּר', '', '', '',    ''],
+            ['17', 'שְׁמֹר',      '', '', '',    ''],
+            ['18', 'הִשָּׁמֵר',   '', '', '',    ''],
+            ['19', 'שָׁמוֹר',     '', '', '',    ''],
+            ['20', 'הִשָּׁמֵר',   '', '', '',    ''],
+            ['21', 'הִנָּתֵן',    '', '', '',    ''],
+            ['22', 'נָתוֹן',      '', '', '',    ''],
+            ['23', 'שֹׁמֵר',      '', '', '',    ''],
+            ['24', 'נִשְׁמָר',    '', '', '',    ''],
+        ]
+        ans = [
+            ['1',  'קָטַל',       'Qal',    'Perfect',               '3ms', 'קטל'],
+            ['2',  'נִקְטַל',     'Niphal', 'Perfect',               '3ms', 'קטל'],
+            ['3',  'שָׁמַר',      'Qal',    'Perfect',               '3ms', 'שׁמר'],
+            ['4',  'נִשְׁמַר',    'Niphal', 'Perfect',               '3ms', 'שׁמר'],
+            ['5',  'מָכַר',       'Qal',    'Perfect',               '3ms', 'מכר'],
+            ['6',  'נִמְכַּר',    'Niphal', 'Perfect',               '3ms', 'מכר'],
+            ['7',  'כָּרַת',      'Qal',    'Perfect',               '3ms', 'כרת'],
+            ['8',  'נִכְרַת',     'Niphal', 'Perfect',               '3ms', 'כרת'],
+            ['9',  'יִשְׁמֹר',    'Qal',    'Imperfect',             '3ms', 'שׁמר'],
+            ['10', 'יִשָּׁמֵר',   'Niphal', 'Imperfect',             '3ms', 'שׁמר'],
+            ['11', 'יִמָּכֵר',    'Niphal', 'Imperfect',             '3ms', 'מכר'],
+            ['12', 'יִמְכֹּר',    'Qal',    'Imperfect',             '3ms', 'מכר'],
+            ['13', 'וַיִּשְׁמֹר', 'Qal',    'Wayyiqtol',             '3ms', 'שׁמר'],
+            ['14', 'וַיִּשָּׁמֵר','Niphal', 'Wayyiqtol',             '3ms', 'שׁמר'],
+            ['15', 'וַיִּמָּכֵר', 'Niphal', 'Wayyiqtol',             '3ms', 'מכר'],
+            ['16', 'וַיִּמְכֹּר', 'Qal',    'Wayyiqtol',             '3ms', 'מכר'],
+            ['17', 'שְׁמֹר',      'Qal',    'Imperative',            '2ms', 'שׁמר'],
+            ['18', 'הִשָּׁמֵר',   'Niphal', 'Imperative / Inf. Abs.','2ms / —', 'שׁמר'],
+            ['19', 'שָׁמוֹר',     'Qal',    'Inf. Absolute',         '—',   'שׁמר'],
+            ['20', 'הִשָּׁמֵר',   'Niphal', 'Inf. Abs. / Imperative','— / 2ms', 'שׁמר'],
+            ['21', 'הִנָּתֵן',    'Niphal', 'Inf. Absolute',         '—',   'נתן'],
+            ['22', 'נָתוֹן',      'Qal',    'Inf. Absolute',         '—',   'נתן'],
+            ['23', 'שֹׁמֵר',      'Qal',    'Participle',            'ms',  'שׁמר'],
+            ['24', 'נִשְׁמָר',    'Niphal', 'Participle',            'ms',  'שׁמר'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Niphal — Strong Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch24_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch24StemIdDrill,
+        'Chapter 24 — Qal / Niphal Stem-ID Drill (Strong Roots)',
+        'BBH Chapter 24 · Niphal Strong Verbs',
+        ['hebrew', 'bbh', 'ch24', 'exercises', 'ch24-stem-id-drill'],
+        'ch24-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch25 — Niphal Weak Paradigm Drill (III-ה: גלה; I-נ: נפל)
+# ---------------------------------------------------------------------------
+class Ch25NiphalWeakParadigmDrill(ExercisePDF):
+    _instructions = (
+        'Write the correct Niphal form for each entry. '
+        'Section A uses גלה (III-ה); Section B uses נפל (I-נ). '
+        'III-ה tip: watch for the ֶה endings in imperfect and participle. '
+        'I-נ tip: nun assimilates into dagesh forte in the Niphal imperfect (יִפָּל).'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        hdrs = ['#', 'PGN / Form', 'Niphal form']
+        cr   = [0.06, 0.34, 0.60]
+
+        rows_a = [
+            ['1',  'Perfect 3ms (גלה)',    ''],
+            ['2',  'Perfect 3fs (גלה)',    ''],
+            ['3',  'Perfect 3cp (גלה)',    ''],
+            ['4',  'Perfect 1cs (גלה)',    ''],
+            ['5',  'Imperfect 3ms (גלה)',  ''],
+            ['6',  'Imperfect 3fs (גלה)',  ''],
+            ['7',  'Imperfect 3mp (גלה)',  ''],
+            ['8',  'Imperfect 1cs (גלה)',  ''],
+            ['9',  'Imperative 2ms (גלה)', ''],
+            ['10', 'Inf. Construct (גלה)', ''],
+            ['11', 'Inf. Absolute (גלה)',  ''],
+            ['12', 'Participle ms (גלה)',  ''],
+            ['13', 'Participle fs (גלה)',  ''],
+        ]
+        ans_a = [
+            ['1',  'Perfect 3ms (גלה)',    'נִגְלָה'],
+            ['2',  'Perfect 3fs (גלה)',    'נִגְלְתָה'],
+            ['3',  'Perfect 3cp (גלה)',    'נִגְלוּ'],
+            ['4',  'Perfect 1cs (גלה)',    'נִגְלֵיתִי'],
+            ['5',  'Imperfect 3ms (גלה)',  'יִגָּלֶה'],
+            ['6',  'Imperfect 3fs (גלה)',  'תִּגָּלֶה'],
+            ['7',  'Imperfect 3mp (גלה)',  'יִגָּלוּ'],
+            ['8',  'Imperfect 1cs (גלה)',  'אֶגָּלֶה'],
+            ['9',  'Imperative 2ms (גלה)', 'הִגָּלֵה'],
+            ['10', 'Inf. Construct (גלה)', 'הִגָּלוֹת'],
+            ['11', 'Inf. Absolute (גלה)',  'הִגָּלֹה'],
+            ['12', 'Participle ms (גלה)',  'נִגְלֶה'],
+            ['13', 'Participle fs (גלה)',  'נִגְלֵית'],
+        ]
+        rows_b = [
+            ['14', 'Perfect 3ms (נפל)',    ''],
+            ['15', 'Perfect 3fs (נפל)',    ''],
+            ['16', 'Perfect 3cp (נפל)',    ''],
+            ['17', 'Imperfect 3ms (נפל)',  ''],
+            ['18', 'Imperfect 3fs (נפל)',  ''],
+            ['19', 'Imperfect 3mp (נפל)',  ''],
+            ['20', 'Imperative 2ms (נפל)', ''],
+            ['21', 'Participle ms (נפל)',  ''],
+        ]
+        ans_b = [
+            ['14', 'Perfect 3ms (נפל)',    'נִפַּל'],
+            ['15', 'Perfect 3fs (נפל)',    'נִפְּלָה'],
+            ['16', 'Perfect 3cp (נפל)',    'נִפְּלוּ'],
+            ['17', 'Imperfect 3ms (נפל)',  'יִפָּל'],
+            ['18', 'Imperfect 3fs (נפל)',  'תִּפָּל'],
+            ['19', 'Imperfect 3mp (נפל)',  'יִפְּלוּ'],
+            ['20', 'Imperative 2ms (נפל)', 'הִפָּלֵל'],
+            ['21', 'Participle ms (נפל)',  'נֹפֵל'],
+        ]
+        self.add_drill_with_answer_key(hdrs, rows_a, ans_a, col_ratios=cr,
+                                       answer_heb_cols=[2],
+                                       section_title='Section A — גלה (III-ה) Niphal',
+                                       answer_title='Section A — Answer Key')
+        self.add_drill_with_answer_key(hdrs, rows_b, ans_b, col_ratios=cr,
+                                       answer_heb_cols=[2],
+                                       section_title='Section B — נפל (I-נ) Niphal',
+                                       answer_title='Section B — Answer Key')
+
+
+def build_ch25_niphal_weak_paradigm_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch25NiphalWeakParadigmDrill,
+        'Chapter 25 — Niphal Weak Paradigm Drill',
+        'BBH Chapter 25 · Niphal Weak Verbs',
+        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-niphal-weak-paradigm-drill'],
+        'ch25-niphal-weak-paradigm-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch25 — Qal–Niphal Contrast Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch25QalNiphalContrastExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'Each item gives a weak root with its Qal meaning, a Niphal form, '
+            'conjugation, and reference. '
+            'For each: (1) translate the Niphal form; '
+            '(2) name the semantic function: Passive / Reflexive / Simple Action / Stative. '
+            '(3) explain in one sentence how the Niphal meaning follows from the Qal. '
+            'Answer key at the bottom.'
+        )
+
+        hdr_a = ['#', 'Root', 'Qal Meaning', 'Niphal Form', 'Conj', 'Ref']
+        cr_a  = [0.04, 0.08, 0.18, 0.14, 0.22, 0.34]
+        rows_a = [
+            ['1', 'נפל', 'to fall',           'יִפָּל',    'Imperfect 3ms', 'Gen 14:10'],
+            ['2', 'נגש', 'to approach',        'נִגַּשׁ',  'Perfect 3ms',   '—'],
+            ['3', 'נגד', 'to tell',            'הִגָּד',   'Inf. Absolute', '—'],
+            ['4', 'נגע', 'to touch',           'נִגַּע',   'Perfect 3ms',   '—'],
+            ['5', 'נכה', 'to strike',          'יִנָּכֶה', 'Imperfect 3ms', 'Exo 21:20'],
+        ]
+        rows_b = [
+            ['6',  'גלה', 'to uncover, reveal', 'נִגְלָה', 'Perfect 3ms',   'Gen 35:7'],
+            ['7',  'עלה', 'to go up, ascend',   'נַעֲלָה', 'Perfect 3ms',   '—'],
+            ['8',  'ראה', 'to see',             'נִרְאָה', 'Perfect 3ms',   'Gen 12:7'],
+            ['9',  'בנה', 'to build',           'יִבָּנֶה','Imperfect 3ms', '—'],
+            ['10', 'עשׂה', 'to do, make',       'נַעֲשָׂה','Perfect 3ms',   'Gen 20:9'],
+        ]
+        rows_c = [
+            ['11', 'קום', 'to rise, stand up',  'נָקוֹם',  'Perfect 3ms',   '—'],
+            ['12', 'כון', 'to be firm',          'נָכוֹן',  'Perfect 3ms',   'Psa 103:19'],
+            ['13', 'שׁים', 'to place, set',      'יִשָּׂם', 'Imperfect 3ms', '—'],
+            ['14', 'בוא', 'to come, go in',     'נָבוֹא',  'Perfect 1cp',   'Num 32:9'],
+            ['15', 'שׁוב', 'to return',          'נָשׁוּב', 'Perfect 3ms',   '—'],
+        ]
+
+        ans_a = [
+            ['1', 'Root', 'Qal Meaning', 'Niphal Form', 'Conj', 'he fell — Simple Action | I-נ Niphal imperfect: root nun assimilates → dagesh in פּ'],
+            ['2', '', '', '', '', 'he approached — Simple Action | Niphal of נגש carries the simple intransitive sense'],
+            ['3', '', '', '', '', 'to be told — Passive | הִגָּד is Niphal inf. absolute of נגד; הִ + dagesh in גּ'],
+            ['4', '', '', '', '', 'he was touched — Passive | subject receives the touch'],
+            ['5', '', '', '', '', 'he shall be struck — Passive | Exo 21:20 legal context; dagesh in כּ (assimilated nun)'],
+        ]
+        ans_b = [
+            ['6',  '', '', '', '', 'it was revealed — Passive or Reflexive | Gen 35:7: "God was revealed / revealed himself"'],
+            ['7',  '', '', '', '', 'he went up — Simple Action | Niphal of עלה overlaps with Qal; note patach-furtive'],
+            ['8',  '', '', '', '', 'he appeared — Passive/Reflexive | Gen 12:7: "the LORD appeared to Abram"'],
+            ['9',  '', '', '', '', 'it will be built — Passive | dagesh forte in בּ + ֶה ending'],
+            ['10', '', '', '', '', 'what has been done — Passive | Gen 20:9; patach-furtive before ה'],
+        ]
+        ans_c = [
+            ['11', '', '', '', '', 'it was established — Passive | Niphal of קום; hollow root preserves ō vowel'],
+            ['12', '', '', '', '', 'it is firm — Stative Niphal | Psa 103:19: "his throne is established"'],
+            ['13', '', '', '', '', 'it will be placed — Passive | Niphal imperfect of שׁים; dagesh in שּׂ'],
+            ['14', '', '', '', '', 'we went / came — Simple Action | Num 32:9; Niphal of בוא as simple intransitive'],
+            ['15', '', '', '', '', 'it was brought back — Passive or SA | Niphal of שׁוב; context determines'],
+        ]
+
+        self.add_section_heading('Part A — I-נ Roots')
+        self.add_generic_table(hdr_a, rows_a, cr_a, heb_cols=[3], show_answers=False)
+        self.add_section_break()
+        self.add_section_heading('Part B — III-ה Roots')
+        self.add_generic_table(hdr_a, rows_b, cr_a, heb_cols=[3], show_answers=False)
+        self.add_section_break()
+        self.add_section_heading('Part C — Hollow Roots')
+        self.add_generic_table(hdr_a, rows_c, cr_a, heb_cols=[3], show_answers=False)
+        self.add_section_break()
+
+        self.add_section_heading('Answer Key — Part A')
+        self.add_generic_table(hdr_a, rows_a, cr_a, heb_cols=[3],
+                               show_answers=True, answer_rows=ans_a)
+        self.add_section_heading('Answer Key — Part B')
+        self.add_generic_table(hdr_a, rows_b, cr_a, heb_cols=[3],
+                               show_answers=True, answer_rows=ans_b)
+        self.add_section_heading('Answer Key — Part C')
+        self.add_generic_table(hdr_a, rows_c, cr_a, heb_cols=[3],
+                               show_answers=True, answer_rows=ans_c)
+
+
+def build_ch25_qal_niphal_contrast(out_dir=None):
+    return _build_exercise_pdf(
+        Ch25QalNiphalContrastExercise,
+        'Chapter 25 — Qal–Niphal Contrast Drill (Weak Roots)',
+        'BBH Chapter 25 · Niphal Weak Verbs',
+        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-qal-niphal-contrast'],
+        'ch25-qal-niphal-contrast.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch25 — Function Sort (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch25FunctionSortExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'For each weak-root Niphal form, classify the semantic function: '
+            'P = Passive, R = Reflexive/Reciprocal, SA = Simple Action. '
+            'The gloss and reference provide context. Answer key at the bottom.'
+        )
+        hdrs = ['#', 'Hebrew', 'Conj', 'Ref', 'Gloss', 'Function (P/R/SA)']
+        cr   = [0.04, 0.13, 0.18, 0.12, 0.35, 0.18]
+        rows = [
+            ['1',  'נִגְלָה',       'Perfect 3ms',    'Gen 35:7',   '"God was revealed to him"',                       ''],
+            ['2',  'יִפָּל',        'Imperfect 3ms',  'Gen 14:10',  '"the kings fell into the tar pits"',              ''],
+            ['3',  'נִרְאָה',       'Perfect 3ms',    'Gen 12:7',   '"the LORD appeared to Abram"',                    ''],
+            ['4',  'יִבָּנֶה',      'Imperfect 3ms',  '—',          '"it will be built"',                              ''],
+            ['5',  'וַיִּגָּלֶה',   'Wayyiqtol 3ms',  '1 Sam 3:21', '"the LORD revealed himself again at Shiloh"',    ''],
+            ['6',  'נַעֲשָׂה',      'Perfect 3ms',    'Gen 20:9',   '"what has been done to me"',                      ''],
+            ['7',  'נָכוֹן',        'Perfect 3ms',    'Psa 103:19', '"his throne is established"',                     ''],
+            ['8',  'יִשָּׂם',       'Imperfect 3ms',  '—',          '"it will be placed"',                             ''],
+            ['9',  'יִגָּלֶה',      'Imperfect 3ms',  '—',          '"it will be revealed"',                           ''],
+            ['10', 'נִגַּשׁ',       'Perfect 3ms',    'Gen 44:18',  '"Judah drew near to him"',                        ''],
+            ['11', 'נַעֲלָה',       'Perfect 3ms',    '—',          '"he went up / ascended"',                         ''],
+            ['12', 'וַיִּנָּפֶל',   'Wayyiqtol 3ms',  '—',          '"he fell"',                                       ''],
+            ['13', 'הִגָּלוֹת',     'Inf. Construct', '—',          '"to be revealed"',                                ''],
+            ['14', 'נִגְלֵיתִי',    'Perfect 1cs',    '1 Sam 2:27', '"Did I not reveal myself?"',                      ''],
+            ['15', 'יִנָּכֶה',      'Imperfect 3ms',  'Exo 21:20',  '"he shall be struck / beaten"',                  ''],
+            ['16', 'נָשׁוּב',       'Perfect 3ms',    '—',          '"he/it returned / was brought back"',             ''],
+            ['17', 'תִּגָּלֶה',     'Imperfect 3fs',  'Isa 40:5',   '"the glory of the LORD will be revealed"',       ''],
+            ['18', 'נִגְלֶה',       'Participle ms',  '—',          '"being revealed / one who reveals himself"',     ''],
+            ['19', 'הִנָּגֵשׁ',     'Inf. Absolute',  '—',          '"to approach"',                                   ''],
+            ['20', 'נִרְאוּ',       'Perfect 3cp',    'Gen 1:9',    '"let the dry ground appear"',                     ''],
+        ]
+        ans = [
+            ['1',  'נִגְלָה',       'Perfect 3ms',    'Gen 35:7',   '"God was revealed to him"',       'P (or R)'],
+            ['2',  'יִפָּל',        'Imperfect 3ms',  'Gen 14:10',  '"the kings fell into the tar pits"', 'SA'],
+            ['3',  'נִרְאָה',       'Perfect 3ms',    'Gen 12:7',   '"the LORD appeared to Abram"',    'R (or P)'],
+            ['4',  'יִבָּנֶה',      'Imperfect 3ms',  '—',          '"it will be built"',              'P'],
+            ['5',  'וַיִּגָּלֶה',   'Wayyiqtol 3ms',  '1 Sam 3:21', '"the LORD revealed himself again"', 'R'],
+            ['6',  'נַעֲשָׂה',      'Perfect 3ms',    'Gen 20:9',   '"what has been done to me"',      'P'],
+            ['7',  'נָכוֹן',        'Perfect 3ms',    'Psa 103:19', '"his throne is established"',     'SA'],
+            ['8',  'יִשָּׂם',       'Imperfect 3ms',  '—',          '"it will be placed / set"',       'P'],
+            ['9',  'יִגָּלֶה',      'Imperfect 3ms',  '—',          '"it will be revealed"',           'P'],
+            ['10', 'נִגַּשׁ',       'Perfect 3ms',    'Gen 44:18',  '"Judah drew near to him"',        'SA'],
+            ['11', 'נַעֲלָה',       'Perfect 3ms',    '—',          '"went up / ascended"',            'SA'],
+            ['12', 'וַיִּנָּפֶל',   'Wayyiqtol 3ms',  '—',          '"he fell"',                       'SA'],
+            ['13', 'הִגָּלוֹת',     'Inf. Construct', '—',          '"to be revealed"',                'P'],
+            ['14', 'נִגְלֵיתִי',    'Perfect 1cs',    '1 Sam 2:27', '"Did I not reveal myself?"',      'R'],
+            ['15', 'יִנָּכֶה',      'Imperfect 3ms',  'Exo 21:20',  '"he shall be struck"',            'P'],
+            ['16', 'נָשׁוּב',       'Perfect 3ms',    '—',          '"he returned / was brought back"','SA or P'],
+            ['17', 'תִּגָּלֶה',     'Imperfect 3fs',  'Isa 40:5',   '"will be revealed"',              'P'],
+            ['18', 'נִגְלֶה',       'Participle ms',  '—',          '"being revealed / revealing himself"', 'R'],
+            ['19', 'הִנָּגֵשׁ',     'Inf. Absolute',  '—',          '"to approach"',                   'SA'],
+            ['20', 'נִרְאוּ',       'Perfect 3cp',    'Gen 1:9',    '"let the dry ground appear"',     'SA or R'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[1],
+            section_title='Niphal Function Sort — 20 Weak-Root Forms',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch25_function_sort(out_dir=None):
+    return _build_exercise_pdf(
+        Ch25FunctionSortExercise,
+        'Chapter 25 — Niphal Function Sort (Weak Roots)',
+        'BBH Chapter 25 · Niphal Weak Verbs',
+        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-function-sort'],
+        'ch25-function-sort.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch25 — Stem-ID Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch25StemIdDrill(ExercisePDF):
+    _instructions = (
+        'For each Hebrew form, identify the stem (Qal or Niphal), '
+        'conjugation, PGN, and root. '
+        'Roots used: גלה (III-ה), נפל (I-נ), שׁוב (hollow), ראה (III-ה guttural).'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
+        cr   = [0.05, 0.18, 0.12, 0.22, 0.12, 0.31]
+        rows = [
+            ['1',  'גָּלָה',      '', '', '', ''],
+            ['2',  'נִגְלָה',     '', '', '', ''],
+            ['3',  'נָפַל',       '', '', '', ''],
+            ['4',  'נִפַּל',      '', '', '', ''],
+            ['5',  'שָׁב',        '', '', '', ''],
+            ['6',  'נָשׁוּב',     '', '', '', ''],
+            ['7',  'רָאָה',       '', '', '', ''],
+            ['8',  'נִרְאָה',     '', '', '', ''],
+            ['9',  'יִגָּלֶה',    '', '', '', ''],
+            ['10', 'יִגְלֶה',     '', '', '', ''],
+            ['11', 'יִפֹּל',      '', '', '', ''],
+            ['12', 'יִפָּל',      '', '', '', ''],
+            ['13', 'יָשׁוּב',     '', '', '', ''],
+            ['14', 'יִשָּׁב',     '', '', '', ''],
+            ['15', 'וַיִּגֶּל',   '', '', '', ''],
+            ['16', 'וַיִּגָּל',   '', '', '', ''],
+            ['17', 'וַיִּפֹּל',   '', '', '', ''],
+            ['18', 'וַיִּפָּל',   '', '', '', ''],
+            ['19', 'גְּלֵה',      '', '', '', ''],
+            ['20', 'הִגָּלֵה',    '', '', '', ''],
+            ['21', 'גָּלֹה',      '', '', '', ''],
+            ['22', 'הִגָּלֹה',    '', '', '', ''],
+            ['23', 'גֹּלֶה',      '', '', '', ''],
+            ['24', 'נִגְלֶה',     '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'גָּלָה',      'Qal',    'Perfect',     '3ms', 'גלה'],
+            ['2',  'נִגְלָה',     'Niphal', 'Perfect',     '3ms', 'גלה'],
+            ['3',  'נָפַל',       'Qal',    'Perfect',     '3ms', 'נפל'],
+            ['4',  'נִפַּל',      'Niphal', 'Perfect',     '3ms', 'נפל'],
+            ['5',  'שָׁב',        'Qal',    'Perfect',     '3ms', 'שׁוב'],
+            ['6',  'נָשׁוּב',     'Niphal', 'Perfect',     '3ms', 'שׁוב'],
+            ['7',  'רָאָה',       'Qal',    'Perfect',     '3ms', 'ראה'],
+            ['8',  'נִרְאָה',     'Niphal', 'Perfect',     '3ms', 'ראה'],
+            ['9',  'יִגָּלֶה',    'Niphal', 'Imperfect',   '3ms', 'גלה'],
+            ['10', 'יִגְלֶה',     'Qal',    'Imperfect',   '3ms', 'גלה'],
+            ['11', 'יִפֹּל',      'Qal',    'Imperfect',   '3ms', 'נפל'],
+            ['12', 'יִפָּל',      'Niphal', 'Imperfect',   '3ms', 'נפל'],
+            ['13', 'יָשׁוּב',     'Qal',    'Imperfect',   '3ms', 'שׁוב'],
+            ['14', 'יִשָּׁב',     'Niphal', 'Imperfect',   '3ms', 'שׁוב'],
+            ['15', 'וַיִּגֶּל',   'Qal',    'Wayyiqtol',   '3ms', 'גלה'],
+            ['16', 'וַיִּגָּל',   'Niphal', 'Wayyiqtol',   '3ms', 'גלה'],
+            ['17', 'וַיִּפֹּל',   'Qal',    'Wayyiqtol',   '3ms', 'נפל'],
+            ['18', 'וַיִּפָּל',   'Niphal', 'Wayyiqtol',   '3ms', 'נפל'],
+            ['19', 'גְּלֵה',      'Qal',    'Imperative',  '2ms', 'גלה'],
+            ['20', 'הִגָּלֵה',    'Niphal', 'Imperative',  '2ms', 'גלה'],
+            ['21', 'גָּלֹה',      'Qal',    'Inf. Absolute','—',  'גלה'],
+            ['22', 'הִגָּלֹה',    'Niphal', 'Inf. Absolute','—',  'גלה'],
+            ['23', 'גֹּלֶה',      'Qal',    'Participle',  'ms',  'גלה'],
+            ['24', 'נִגְלֶה',     'Niphal', 'Participle',  'ms',  'גלה'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Niphal — Weak Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch25_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch25StemIdDrill,
+        'Chapter 25 — Qal / Niphal Stem-ID Drill (Weak Roots)',
+        'BBH Chapter 25 · Niphal Weak Verbs',
+        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-stem-id-drill'],
+        'ch25-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch28 — Stem-ID Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch28StemIdDrill(ExercisePDF):
+    _instructions = (
+        'This drill mixes 24 forms of strong roots (Qal, Niphal, Hiphil, Hophal). '
+        'For each item: (1) identify the stem, (2) parse conjugation and PGN, '
+        '(3) translate the form. '
+        'Roots used: קטל (paradigm), שׁמר (keep/guard), כבד (heavy/honored), שׁמד (destroy).'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        self.add_note(
+            'Hophal Perfect: הָ prefix (qamets-hatuf = o-class).  '
+            'Hophal Imperfect: יָ prefix.  '
+            'Hophal Participle: הָ/הָשׁ prefix with qamets.  '
+            'Hiphil: הִ prefix in Perfect; patach under prefix in Imperfect.'
+        )
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr   = [0.04, 0.16, 0.11, 0.18, 0.10, 0.09, 0.32]
+        rows = [
+            ['1',  'קָטַל',        '', '', '', 'קטל',  ''],
+            ['2',  'הִקְטִיל',     '', '', '', 'קטל',  ''],
+            ['3',  'נִקְטַל',      '', '', '', 'קטל',  ''],
+            ['4',  'הָקְטַל',      '', '', '', 'קטל',  ''],
+            ['5',  'שָׁמַר',       '', '', '', 'שׁמר', ''],
+            ['6',  'נִשְׁמַר',     '', '', '', 'שׁמר', ''],
+            ['7',  'יִשְׁמֹר',     '', '', '', 'שׁמר', ''],
+            ['8',  'יַשְׁמִיר',    '', '', '', 'שׁמר', ''],
+            ['9',  'יִשָּׁמֵר',    '', '', '', 'שׁמר', ''],
+            ['10', 'יָשְׁמַר',     '', '', '', 'שׁמר', ''],
+            ['11', 'וַיִּשְׁמֹר',  '', '', '', 'שׁמר', ''],
+            ['12', 'וַיַּשְׁמֵר',  '', '', '', 'שׁמר', ''],
+            ['13', 'וַיִּשָּׁמֵר', '', '', '', 'שׁמר', ''],
+            ['14', 'וַיָּשְׁמַר',  '', '', '', 'שׁמר', ''],
+            ['15', 'שְׁמֹר',       '', '', '', 'שׁמר', ''],
+            ['16', 'הַשְׁמֵר',     '', '', '', 'שׁמר', ''],
+            ['17', 'הִשָּׁמֵר',    '', '', '', 'שׁמר', ''],
+            ['18', 'הָשְׁמֵר',     '', '', '', 'שׁמר', ''],
+            ['19', 'שָׁמוֹר',      '', '', '', 'שׁמר', ''],
+            ['20', 'הַשְׁמֵר',     '', '', '', 'שׁמר', ''],
+            ['21', 'הִשָּׁמֵר',    '', '', '', 'שׁמר', ''],
+            ['22', 'שֹׁמֵר',       '', '', '', 'שׁמר', ''],
+            ['23', 'מַשְׁמִיר',    '', '', '', 'שׁמר', ''],
+            ['24', 'הָשְׁמָר',     '', '', '', 'שׁמר', ''],
+        ]
+        ans = [
+            ['1',  'קָטַל',        'Qal',    'Perfect',         '3ms', 'קטל',  'he killed'],
+            ['2',  'הִקְטִיל',     'Hiphil', 'Perfect',         '3ms', 'קטל',  'he caused to kill'],
+            ['3',  'נִקְטַל',      'Niphal', 'Perfect',         '3ms', 'קטל',  'he was killed'],
+            ['4',  'הָקְטַל',      'Hophal', 'Perfect',         '3ms', 'קטל',  'he was caused to be killed'],
+            ['5',  'שָׁמַר',       'Qal',    'Perfect',         '3ms', 'שׁמר', 'he kept / guarded'],
+            ['6',  'נִשְׁמַר',     'Niphal', 'Perfect',         '3ms', 'שׁמר', 'he was kept / guarded'],
+            ['7',  'יִשְׁמֹר',     'Qal',    'Imperfect',       '3ms', 'שׁמר', 'he will keep / guards'],
+            ['8',  'יַשְׁמִיר',    'Hiphil', 'Imperfect',       '3ms', 'שׁמר', 'he will cause to keep'],
+            ['9',  'יִשָּׁמֵר',    'Niphal', 'Imperfect',       '3ms', 'שׁמר', 'he will be kept / guards himself'],
+            ['10', 'יָשְׁמַר',     'Hophal', 'Imperfect',       '3ms', 'שׁמר', 'he will be made to keep'],
+            ['11', 'וַיִּשְׁמֹר',  'Qal',    'Wayyiqtol',       '3ms', 'שׁמר', 'and he kept / guarded'],
+            ['12', 'וַיַּשְׁמֵר',  'Hiphil', 'Wayyiqtol',       '3ms', 'שׁמר', 'and he caused to keep'],
+            ['13', 'וַיִּשָּׁמֵר', 'Niphal', 'Wayyiqtol',       '3ms', 'שׁמר', 'and he was kept / kept himself'],
+            ['14', 'וַיָּשְׁמַר',  'Hophal', 'Wayyiqtol',       '3ms', 'שׁמר', 'and he was made to keep'],
+            ['15', 'שְׁמֹר',       'Qal',    'Imperative',      '2ms', 'שׁמר', 'Keep! / Guard!'],
+            ['16', 'הַשְׁמֵר',     'Hiphil', 'Imperative',      '2ms', 'שׁמר', 'Cause to keep! (same as #20)'],
+            ['17', 'הִשָּׁמֵר',    'Niphal', 'Imperative',      '2ms', 'שׁמר', 'Guard yourself!'],
+            ['18', 'הָשְׁמֵר',     'Hophal', 'Inf. Construct',  '—',   'שׁמר', 'to be made to keep / to be guarded'],
+            ['19', 'שָׁמוֹר',      'Qal',    'Inf. Absolute',   '—',   'שׁמר', 'keeping / indeed keeping'],
+            ['20', 'הַשְׁמֵר',     'Hiphil', 'Inf. Absolute',   '—',   'שׁמר', 'causing to keep (same as #16)'],
+            ['21', 'הִשָּׁמֵר',    'Niphal', 'Inf. Absolute',   '—',   'שׁמר', 'being kept / indeed guarding oneself'],
+            ['22', 'שֹׁמֵר',       'Qal',    'Participle',      'ms',  'שׁמר', 'one who keeps / guardian'],
+            ['23', 'מַשְׁמִיר',    'Hiphil', 'Participle',      'ms',  'שׁמר', 'one who causes to keep'],
+            ['24', 'הָשְׁמָר',     'Hophal', 'Participle',      'ms',  'שׁמר', 'one who is being kept / guarded'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 5],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Niphal / Hiphil / Hophal — Strong Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch28_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch28StemIdDrill,
+        'Chapter 28 — Four-Stem ID Drill (Strong Roots)',
+        'BBH Chapter 28 · Hophal Strong Verbs',
+        ['hebrew', 'bbh', 'ch28', 'exercises', 'ch28-stem-id-drill'],
+        'ch28-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch29 — Function Sort (Hophal Weak: Hiphil meaning + Hophal translation)
+# ---------------------------------------------------------------------------
+class Ch29FunctionSortExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'The Hophal is always the passive of the Hiphil. '
+            'For each weak-root Hophal form: '
+            '(1) identify the Hiphil active meaning (what the Hiphil of this root means); '
+            '(2) translate the Hophal passive form in context. '
+            'Answer key at the bottom.'
+        )
+        self.add_note(
+            'I-י/Hollow Hophal: הוּ/יוּ prefix with shureq vowel (שׁוּרֶק) is the key marker.  '
+            'I-י: Hiphil uses הוֹ– prefix; Hophal uses הוּ– prefix.  '
+            'Hollow: Hiphil uses הֵ– + chiriq-yod; Hophal uses הוּ– + contracted stem.  '
+            'III-ה Hophal: הוּ prefix + ָה ending in Perfect 3ms.'
+        )
+        hdr = ['#', 'Hophal Form', 'Root', 'Weak Class', 'Conjugation', 'Hiphil Active Meaning', 'Hophal Translation']
+        cr  = [0.04, 0.12, 0.07, 0.10, 0.15, 0.26, 0.26]
+        rows = [
+            ['1',  'הוּבַל',    'יבל', 'I-י',    'Perfect 3ms',    '', ''],
+            ['2',  'הוּבְאוּ',  'בוא', 'Hollow', 'Perfect 3cp',    '', ''],
+            ['3',  'הוּרַד',    'ירד', 'I-י',    'Perfect 3ms',    '', ''],
+            ['4',  'הוּקַם',    'קום', 'Hollow', 'Perfect 3ms',    '', ''],
+            ['5',  'הוּשַׁב',   'שׁוב','Hollow', 'Perfect 3ms',    '', ''],
+            ['6',  'יוּבַל',    'יבל', 'I-י',    'Imperfect 3ms',  '', ''],
+            ['7',  'יוּבָא',    'בוא', 'Hollow', 'Imperfect 3ms',  '', ''],
+            ['8',  'יוּרַד',    'ירד', 'I-י',    'Imperfect 3ms',  '', ''],
+            ['9',  'יוּקַם',    'קום', 'Hollow', 'Imperfect 3ms',  '', ''],
+            ['10', 'יוּשַׁב',   'שׁוב','Hollow', 'Imperfect 3ms',  '', ''],
+            ['11', 'וַיּוּבַל', 'יבל', 'I-י',    'Wayyiqtol 3ms',  '', ''],
+            ['12', 'וַיּוּבָא', 'בוא', 'Hollow', 'Wayyiqtol 3ms',  '', ''],
+            ['13', 'וַיּוּרַד', 'ירד', 'I-י',    'Wayyiqtol 3ms',  '', ''],
+            ['14', 'הוּלַד',    'ילד', 'I-י',    'Perfect 3ms',    '', ''],
+            ['15', 'יוּלַד',    'ילד', 'I-י',    'Imperfect 3ms',  '', ''],
+            ['16', 'מוּבָא',    'בוא', 'Hollow', 'Participle ms',  '', ''],
+            ['17', 'מוּרָד',    'ירד', 'I-י',    'Participle ms',  '', ''],
+            ['18', 'הוּגְלָה',  'גלה', 'III-ה',  'Perfect 3ms',    '', ''],
+        ]
+        ans = [
+            ['1',  'הוּבַל',    'יבל', 'I-י',    'Perfect 3ms',    'Hiphil יָבַל: to lead/bring/carry',          'he was led / brought'],
+            ['2',  'הוּבְאוּ',  'בוא', 'Hollow', 'Perfect 3cp',    'Hiphil הֵבִיא: to bring (cause to come)',     'they were brought'],
+            ['3',  'הוּרַד',    'ירד', 'I-י',    'Perfect 3ms',    'Hiphil הוֹרִיד: to bring down (cause to descend)', 'he was brought down'],
+            ['4',  'הוּקַם',    'קום', 'Hollow', 'Perfect 3ms',    'Hiphil הֵקִים: to raise up / establish',     'the tabernacle was erected'],
+            ['5',  'הוּשַׁב',   'שׁוב','Hollow', 'Perfect 3ms',    'Hiphil הֵשִׁיב: to bring back / restore',    'the money was brought back'],
+            ['6',  'יוּבַל',    'יבל', 'I-י',    'Imperfect 3ms',  'Hiphil יָבַל: to lead/bring/carry',          'he will be led / brought'],
+            ['7',  'יוּבָא',    'בוא', 'Hollow', 'Imperfect 3ms',  'Hiphil הֵבִיא: to bring',                    'he will be brought'],
+            ['8',  'יוּרַד',    'ירד', 'I-י',    'Imperfect 3ms',  'Hiphil הוֹרִיד: to bring down',              'he will be brought down'],
+            ['9',  'יוּקַם',    'קום', 'Hollow', 'Imperfect 3ms',  'Hiphil הֵקִים: to raise up / establish',     'it will be raised up'],
+            ['10', 'יוּשַׁב',   'שׁוב','Hollow', 'Imperfect 3ms',  'Hiphil הֵשִׁיב: to bring back / restore',    'he will be brought back'],
+            ['11', 'וַיּוּבַל', 'יבל', 'I-י',    'Wayyiqtol 3ms',  'Hiphil יָבַל: to lead/bring',               'and he was led'],
+            ['12', 'וַיּוּבָא', 'בוא', 'Hollow', 'Wayyiqtol 3ms',  'Hiphil הֵבִיא: to bring',                    'and he was brought (Gen 39:1)'],
+            ['13', 'וַיּוּרַד', 'ירד', 'I-י',    'Wayyiqtol 3ms',  'Hiphil הוֹרִיד: to bring down',              'and he was brought down'],
+            ['14', 'הוּלַד',    'ילד', 'I-י',    'Perfect 3ms',    'Hiphil הוֹלִיד: to beget / cause to be born', 'he was born'],
+            ['15', 'יוּלַד',    'ילד', 'I-י',    'Imperfect 3ms',  'Hiphil הוֹלִיד: to beget / cause to be born', 'he will be born'],
+            ['16', 'מוּבָא',    'בוא', 'Hollow', 'Participle ms',  'Hiphil הֵבִיא: to bring',                    '(one) being brought in'],
+            ['17', 'מוּרָד',    'ירד', 'I-י',    'Participle ms',  'Hiphil הוֹרִיד: to bring down',              '(one) being brought down'],
+            ['18', 'הוּגְלָה',  'גלה', 'III-ה',  'Perfect 3ms',    'Hiphil הִגְלָה: to exile (cause to go into exile)', 'he/Israel was carried into exile'],
+        ]
+        self.add_drill_with_answer_key(
+            hdr, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 2],
+            answer_heb_cols=[1, 2],
+            section_title='Hophal Weak-Root Function Sort (18 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch29_function_sort(out_dir=None):
+    return _build_exercise_pdf(
+        Ch29FunctionSortExercise,
+        'Chapter 29 — Hophal Weak-Root Function Sort',
+        'BBH Chapter 29 · Hophal Weak Verbs',
+        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-function-sort'],
+        'ch29-function-sort.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch29 — Qal–Hiphil–Hophal Contrast Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch29QalHiphilHophalContrastExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'Five root triplets — each root in Qal, Hiphil, and Hophal Perfect 3ms. '
+            'For each form: (1) identify the stem, (2) parse conjugation and PGN, '
+            '(3) translate, observing how the meaning shifts. '
+            'Answer key at the bottom.'
+        )
+
+        hdr = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Translation']
+        cr  = [0.04, 0.16, 0.12, 0.20, 0.10, 0.38]
+
+        triplets = [
+            ('Part A — Root: בוא (Hollow: "to come / bring / be brought")', [
+                ['1', 'בָּא',     '', 'Perfect', '3ms', ''],
+                ['2', 'הֵבִיא',   '', 'Perfect', '3ms', ''],
+                ['3', 'הוּבָא',   '', 'Perfect', '3ms', ''],
+            ], [
+                ['1', 'בָּא',     'Qal',    'Perfect', '3ms', 'he came'],
+                ['2', 'הֵבִיא',   'Hiphil', 'Perfect', '3ms', 'he brought'],
+                ['3', 'הוּבָא',   'Hophal', 'Perfect', '3ms', 'he was brought'],
+            ]),
+            ('Part B — Root: ירד (I-י: "to go down / bring down / be brought down")', [
+                ['4', 'יָרַד',    '', 'Perfect', '3ms', ''],
+                ['5', 'הוֹרִיד',  '', 'Perfect', '3ms', ''],
+                ['6', 'הוּרַד',   '', 'Perfect', '3ms', ''],
+            ], [
+                ['4', 'יָרַד',    'Qal',    'Perfect', '3ms', 'he went down'],
+                ['5', 'הוֹרִיד',  'Hiphil', 'Perfect', '3ms', 'he brought down'],
+                ['6', 'הוּרַד',   'Hophal', 'Perfect', '3ms', 'he was brought down'],
+            ]),
+            ('Part C — Root: שׁוב (Hollow: "to return / bring back / be brought back")', [
+                ['7', 'שָׁב',     '', 'Perfect', '3ms', ''],
+                ['8', 'הֵשִׁיב',  '', 'Perfect', '3ms', ''],
+                ['9', 'הוּשַׁב',  '', 'Perfect', '3ms', ''],
+            ], [
+                ['7', 'שָׁב',     'Qal',    'Perfect', '3ms', 'he returned'],
+                ['8', 'הֵשִׁיב',  'Hiphil', 'Perfect', '3ms', 'he returned (it) / brought back'],
+                ['9', 'הוּשַׁב',  'Hophal', 'Perfect', '3ms', 'he was brought back'],
+            ]),
+            ('Part D — Root: קום (Hollow: "to arise / raise up / be raised up")', [
+                ['10', 'קָם',     '', 'Perfect', '3ms', ''],
+                ['11', 'הֵקִים',  '', 'Perfect', '3ms', ''],
+                ['12', 'הוּקַם',  '', 'Perfect', '3ms', ''],
+            ], [
+                ['10', 'קָם',     'Qal',    'Perfect', '3ms', 'he arose'],
+                ['11', 'הֵקִים',  'Hiphil', 'Perfect', '3ms', 'he established / raised up'],
+                ['12', 'הוּקַם',  'Hophal', 'Perfect', '3ms', 'he was raised up / established'],
+            ]),
+            ('Part E — Root: ילד (I-י: "to bear/father / beget / be born")', [
+                ['13', 'יָלַד',   '', 'Perfect', '3ms', ''],
+                ['14', 'הוֹלִיד', '', 'Perfect', '3ms', ''],
+                ['15', 'הוּלַד',  '', 'Perfect', '3ms', ''],
+            ], [
+                ['13', 'יָלַד',   'Qal',    'Perfect', '3ms', 'he fathered / bore'],
+                ['14', 'הוֹלִיד', 'Hiphil', 'Perfect', '3ms', 'he begat / caused to be born'],
+                ['15', 'הוּלַד',  'Hophal', 'Perfect', '3ms', 'he was born'],
+            ]),
+        ]
+
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1], show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+
+
+def build_ch29_qal_hiphil_hophal_contrast(out_dir=None):
+    return _build_exercise_pdf(
+        Ch29QalHiphilHophalContrastExercise,
+        'Chapter 29 — Qal–Hiphil–Hophal Contrast Drill (Weak Roots)',
+        'BBH Chapter 29 · Hophal Weak Verbs',
+        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-qal-hiphil-hophal-contrast'],
+        'ch29-qal-hiphil-hophal-contrast.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch29 — Stem-ID Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch29StemIdDrill(ExercisePDF):
+    _instructions = (
+        'This drill mixes 24 forms of weak roots (hollow and I-י), '
+        'from the four stems learned through Ch29: Qal, Niphal, Hiphil, Hophal. '
+        'For each item: (1) identify the stem, (2) parse conjugation and PGN, '
+        '(3) translate the form. '
+        'Roots: בוא (hollow), שׁוב (hollow), קום (hollow), ירד (I-י), ילד (I-י).'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        self.add_note(
+            'Key rule: In weak Hophal (hollow and I-י), '
+            'the characteristic vowel is שׁוּרֶק (וּ) in the prefix slot — '
+            'הוּ (Perfect/Inf.), יוּ (Imperfect), וַיּוּ (Wayyiqtol), מוּ (Participle). '
+            'Note on item 11: Niphal Imperfect 3ms of בוא → יִוָּבֵא.'
+        )
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root', 'Translation']
+        cr   = [0.04, 0.16, 0.11, 0.18, 0.10, 0.09, 0.32]
+        rows = [
+            ['1',  'בָּא',       '', '', '', 'בוא', ''],
+            ['2',  'הֵבִיא',     '', '', '', 'בוא', ''],
+            ['3',  'נָבוֹא',     '', '', '', 'בוא', ''],
+            ['4',  'הוּבָא',     '', '', '', 'בוא', ''],
+            ['5',  'שָׁב',       '', '', '', 'שׁוב', ''],
+            ['6',  'הֵשִׁיב',    '', '', '', 'שׁוב', ''],
+            ['7',  'יָרַד',      '', '', '', 'ירד', ''],
+            ['8',  'הוֹרִיד',    '', '', '', 'ירד', ''],
+            ['9',  'יָבוֹא',     '', '', '', 'בוא', ''],
+            ['10', 'יָבִיא',     '', '', '', 'בוא', ''],
+            ['11', 'יִוָּבֵא',   '', '', '', 'בוא', ''],
+            ['12', 'יוּבָא',     '', '', '', 'בוא', ''],
+            ['13', 'יָשׁוּב',    '', '', '', 'שׁוב', ''],
+            ['14', 'יָשִׁיב',    '', '', '', 'שׁוב', ''],
+            ['15', 'יוּשַׁב',    '', '', '', 'שׁוב', ''],
+            ['16', 'וַיָּבֹא',   '', '', '', 'בוא', ''],
+            ['17', 'וַיָּבֵא',   '', '', '', 'בוא', ''],
+            ['18', 'וַיּוּבָא',  '', '', '', 'בוא', ''],
+            ['19', 'קָם',        '', '', '', 'קום', ''],
+            ['20', 'הֵקִים',     '', '', '', 'קום', ''],
+            ['21', 'הוּקַם',     '', '', '', 'קום', ''],
+            ['22', 'יָלַד',      '', '', '', 'ילד', ''],
+            ['23', 'הוֹלִיד',    '', '', '', 'ילד', ''],
+            ['24', 'הוּלַד',     '', '', '', 'ילד', ''],
+        ]
+        ans = [
+            ['1',  'בָּא',       'Qal',    'Perfect',   '3ms', 'בוא', 'he came'],
+            ['2',  'הֵבִיא',     'Hiphil', 'Perfect',   '3ms', 'בוא', 'he brought'],
+            ['3',  'נָבוֹא',     'Niphal', 'Perfect',   '3ms', 'בוא', 'he came in / entered'],
+            ['4',  'הוּבָא',     'Hophal', 'Perfect',   '3ms', 'בוא', 'he was brought'],
+            ['5',  'שָׁב',       'Qal',    'Perfect',   '3ms', 'שׁוב', 'he returned'],
+            ['6',  'הֵשִׁיב',    'Hiphil', 'Perfect',   '3ms', 'שׁוב', 'he returned (it) / brought back'],
+            ['7',  'יָרַד',      'Qal',    'Perfect',   '3ms', 'ירד', 'he went down'],
+            ['8',  'הוֹרִיד',    'Hiphil', 'Perfect',   '3ms', 'ירד', 'he brought down'],
+            ['9',  'יָבוֹא',     'Qal',    'Imperfect', '3ms', 'בוא', 'he will come'],
+            ['10', 'יָבִיא',     'Hiphil', 'Imperfect', '3ms', 'בוא', 'he will bring'],
+            ['11', 'יִוָּבֵא',   'Niphal', 'Imperfect', '3ms', 'בוא', 'he will come in / be brought in'],
+            ['12', 'יוּבָא',     'Hophal', 'Imperfect', '3ms', 'בוא', 'he will be brought'],
+            ['13', 'יָשׁוּב',    'Qal',    'Imperfect', '3ms', 'שׁוב', 'he will return'],
+            ['14', 'יָשִׁיב',    'Hiphil', 'Imperfect', '3ms', 'שׁוב', 'he will bring back / restore'],
+            ['15', 'יוּשַׁב',    'Hophal', 'Imperfect', '3ms', 'שׁוב', 'he will be brought back'],
+            ['16', 'וַיָּבֹא',   'Qal',    'Wayyiqtol', '3ms', 'בוא', 'and he came'],
+            ['17', 'וַיָּבֵא',   'Hiphil', 'Wayyiqtol', '3ms', 'בוא', 'and he brought'],
+            ['18', 'וַיּוּבָא',  'Hophal', 'Wayyiqtol', '3ms', 'בוא', 'and he was brought'],
+            ['19', 'קָם',        'Qal',    'Perfect',   '3ms', 'קום', 'he arose'],
+            ['20', 'הֵקִים',     'Hiphil', 'Perfect',   '3ms', 'קום', 'he established / raised up'],
+            ['21', 'הוּקַם',     'Hophal', 'Perfect',   '3ms', 'קום', 'he was raised up / established'],
+            ['22', 'יָלַד',      'Qal',    'Perfect',   '3ms', 'ילד', 'he fathered / bore'],
+            ['23', 'הוֹלִיד',    'Hiphil', 'Perfect',   '3ms', 'ילד', 'he begat / caused to be born'],
+            ['24', 'הוּלַד',     'Hophal', 'Perfect',   '3ms', 'ילד', 'he was born'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 5],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Niphal / Hiphil / Hophal — Weak Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch29_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch29StemIdDrill,
+        'Chapter 29 — Four-Stem ID Drill (Weak Roots)',
+        'BBH Chapter 29 · Hophal Weak Verbs',
+        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-stem-id-drill'],
+        'ch29-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch30 — Stem-ID Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch30StemIdDrill(ExercisePDF):
+    _instructions = (
+        'Below are 24 Hebrew verb forms from strong roots (קטל, דבר, שׁמר, כבד). '
+        'For each form, identify: (1) Stem (Qal / Niphal / Hiphil / Hophal / Piel), '
+        '(2) Conjugation, (3) PGN, (4) Root. '
+        'Answer key at the bottom.'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        self.add_note(
+            'Piel: Dagesh forte in R2 + hiriq/tsere under prefix (shewa in imperfect).  '
+            'Qal: no prefix, basic vowel pattern.  '
+            'Niphal: נִ prefix in perfect; assimilated dagesh in imperfect.  '
+            'Hiphil: הִ/הַ prefix.  Hophal: הָ/הֻ prefix (o/u class).'
+        )
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
+        cr   = [0.05, 0.18, 0.12, 0.22, 0.12, 0.31]
+        rows = [
+            ['1',  'קָטַל',        '', '', '', ''],
+            ['2',  'קִטֵּל',       '', '', '', ''],
+            ['3',  'הִקְטִיל',     '', '', '', ''],
+            ['4',  'נִקְטַל',      '', '', '', ''],
+            ['5',  'דִּבֶּר',      '', '', '', ''],
+            ['6',  'דָּבַר',       '', '', '', ''],
+            ['7',  'יְדַבֵּר',     '', '', '', ''],
+            ['8',  'יִדְבַּר',     '', '', '', ''],
+            ['9',  'יַדְבִּיר',    '', '', '', ''],
+            ['10', 'יִדָּבֵר',     '', '', '', ''],
+            ['11', 'וַיְדַבֵּר',   '', '', '', ''],
+            ['12', 'וַיִּדְבַּר',  '', '', '', ''],
+            ['13', 'וַיַּדְבֵּר',  '', '', '', ''],
+            ['14', 'וַיִּדָּבֵר',  '', '', '', ''],
+            ['15', 'דַּבֵּר',      '', '', '', ''],
+            ['16', 'דְּבַר',       '', '', '', ''],
+            ['17', 'הַדְבֵּר',     '', '', '', ''],
+            ['18', 'הִדָּבֵר',     '', '', '', ''],
+            ['19', 'דַּבֵּר',      '', '', '', ''],
+            ['20', 'דָּבוֹר',      '', '', '', ''],
+            ['21', 'מְדַבֵּר',     '', '', '', ''],
+            ['22', 'דֹּבֵר',       '', '', '', ''],
+            ['23', 'מַדְבִּיר',    '', '', '', ''],
+            ['24', 'נִדְבָּר',     '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'קָטַל',        'Qal',    'Perfect',     '3ms', 'קטל'],
+            ['2',  'קִטֵּל',       'Piel',   'Perfect',     '3ms', 'קטל'],
+            ['3',  'הִקְטִיל',     'Hiphil', 'Perfect',     '3ms', 'קטל'],
+            ['4',  'נִקְטַל',      'Niphal', 'Perfect',     '3ms', 'קטל'],
+            ['5',  'דִּבֶּר',      'Piel',   'Perfect',     '3ms', 'דבר'],
+            ['6',  'דָּבַר',       'Qal',    'Perfect',     '3ms', 'דבר'],
+            ['7',  'יְדַבֵּר',     'Piel',   'Imperfect',   '3ms', 'דבר'],
+            ['8',  'יִדְבַּר',     'Qal',    'Imperfect',   '3ms', 'דבר'],
+            ['9',  'יַדְבִּיר',    'Hiphil', 'Imperfect',   '3ms', 'דבר'],
+            ['10', 'יִדָּבֵר',     'Niphal', 'Imperfect',   '3ms', 'דבר'],
+            ['11', 'וַיְדַבֵּר',   'Piel',   'Wayyiqtol',   '3ms', 'דבר'],
+            ['12', 'וַיִּדְבַּר',  'Qal',    'Wayyiqtol',   '3ms', 'דבר'],
+            ['13', 'וַיַּדְבֵּר',  'Hiphil', 'Wayyiqtol',   '3ms', 'דבר'],
+            ['14', 'וַיִּדָּבֵר',  'Niphal', 'Wayyiqtol',   '3ms', 'דבר'],
+            ['15', 'דַּבֵּר',      'Piel',   'Imperative',  '2ms', 'דבר'],
+            ['16', 'דְּבַר',       'Qal',    'Imperative',  '2ms', 'דבר'],
+            ['17', 'הַדְבֵּר',     'Hiphil', 'Imperative',  '2ms', 'דבר'],
+            ['18', 'הִדָּבֵר',     'Niphal', 'Imperative',  '2ms', 'דבר'],
+            ['19', 'דַּבֵּר',      'Piel',   'Inf. Absolute','—',  'דבר'],
+            ['20', 'דָּבוֹר',      'Qal',    'Inf. Absolute','—',  'דבר'],
+            ['21', 'מְדַבֵּר',     'Piel',   'Participle',  'ms',  'דבר'],
+            ['22', 'דֹּבֵר',       'Qal',    'Participle',  'ms',  'דבר'],
+            ['23', 'מַדְבִּיר',    'Hiphil', 'Participle',  'ms',  'דבר'],
+            ['24', 'נִדְבָּר',     'Niphal', 'Participle',  'ms',  'דבר'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Niphal / Hiphil / Piel — Strong Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch30_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch30StemIdDrill,
+        'Chapter 30 — Five-Stem ID Drill (Strong Roots)',
+        'BBH Chapter 30 · Piel Strong Verbs',
+        ['hebrew', 'bbh', 'ch30', 'exercises', 'ch30-stem-id-drill'],
+        'ch30-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch31 — Qal–Piel Contrast Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch31QalPielContrastExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'Below are 15 weak-root Piel forms in three parts by weak class. '
+            'For each: (1) translate the Piel form; '
+            '(2) name the semantic function: I (Intensive), F (Factitive), '
+            'D (Declarative), SA (Simple Action), or DN (Denominative); '
+            '(3) compare with the Qal gloss to see what the Piel adds. '
+            'Answer key at the bottom.'
+        )
+        self.add_note(
+            'I-Guttural: gutturals reject dagesh; Piel shows compensatory lengthening.  '
+            'III-ה: perfect 3ms ends in ָּה (qamets + dagesh-he) in Piel.  '
+            'I-י / Hollow: the first root consonant may assimilate or contract.'
+        )
+
+        hdr = ['#', 'Hebrew', 'Root', 'Qal Gloss', 'Conjugation', 'Ref', 'Translation', 'Function']
+        cr  = [0.04, 0.10, 0.08, 0.14, 0.14, 0.10, 0.22, 0.18]
+
+        rows_a = [
+            ['1',  'בֵּרַךְ', 'ברך', 'to kneel/bless',   'Perfect 3ms', 'Gen 1:28', '', ''],
+            ['2',  'אֵהֵב',   'אהב', 'to love',           'Perfect 3ms', '—',        '', ''],
+            ['3',  'חִזֵּק',  'חזק', 'to be strong',      'Perfect 3ms', 'Exo 4:21', '', ''],
+            ['4',  'עִזֵּב',  'עזב', 'to forsake',        'Perfect 3ms', '—',        '', ''],
+            ['5',  'עִנָּה',  'ענה', 'to answer/respond', 'Perfect 3ms', '—',        '', ''],
+        ]
+        rows_b = [
+            ['6',  'גִּלָּה', 'גלה', 'to uncover/exile',  'Perfect 3ms', 'Gen 35:7', '', ''],
+            ['7',  'בִּנָּה', 'בנה', 'to build',          'Perfect 3ms', '1 Kgs 6:2','', ''],
+            ['8',  'צִוָּה', 'צוה', '(no common Qal)',    'Perfect 3ms', 'Gen 2:16', '', ''],
+            ['9',  'קִנָּה', 'קנה', 'to acquire/buy',     'Perfect 3ms', '—',        '', ''],
+            ['10', 'כִּלָּה', 'כלה', 'to be finished',    'Perfect 3ms', 'Gen 2:2',  '', ''],
+        ]
+        rows_c = [
+            ['11', 'יִדֵּעַ', 'ידע', 'to know',           'Perfect 3ms', '—',        '', ''],
+            ['12', 'חִיָּה',  'חיה', 'to live/be alive',  'Perfect 3ms', 'Gen 47:25','', ''],
+            ['13', 'שִׁנָּה', 'שׁנה', 'to change/repeat', 'Perfect 3ms', '—',        '', ''],
+            ['14', 'שִׁלֵּם', 'שׁלם', 'to be complete',   'Perfect 3ms', 'Exo 22:2', '', ''],
+            ['15', 'כִּנָּה', 'כנה', '(noun: title)',      'Perfect 3ms', 'Isa 45:4', '', ''],
+        ]
+
+        ans_a = [
+            ['1',  'בֵּרַךְ', 'ברך', 'to kneel/bless',   'Perfect 3ms', 'Gen 1:28', 'he blessed',                        'I'],
+            ['2',  'אֵהֵב',   'אהב', 'to love',           'Perfect 3ms', '—',        'he loved intensively',              'I'],
+            ['3',  'חִזֵּק',  'חזק', 'to be strong',      'Perfect 3ms', 'Exo 4:21', 'he hardened / made strong',         'F'],
+            ['4',  'עִזֵּב',  'עזב', 'to forsake',        'Perfect 3ms', '—',        'he utterly forsook',                'I'],
+            ['5',  'עִנָּה',  'ענה', 'to answer/respond', 'Perfect 3ms', '—',        'he afflicted / humbled',            'F'],
+        ]
+        ans_b = [
+            ['6',  'גִּלָּה', 'גלה', 'to uncover/exile',  'Perfect 3ms', 'Gen 35:7', 'he revealed',                       'I'],
+            ['7',  'בִּנָּה', 'בנה', 'to build',          'Perfect 3ms', '1 Kgs 6:2','he built thoroughly',               'I'],
+            ['8',  'צִוָּה', 'צוה', '(no common Qal)',    'Perfect 3ms', 'Gen 2:16', 'he commanded',                      'SA'],
+            ['9',  'קִנָּה', 'קנה', 'to acquire/buy',     'Perfect 3ms', '—',        'he acquired thoroughly',            'I'],
+            ['10', 'כִּלָּה', 'כלה', 'to be finished',    'Perfect 3ms', 'Gen 2:2',  'he finished / completed',           'I or F'],
+        ]
+        ans_c = [
+            ['11', 'יִדֵּעַ', 'ידע', 'to know',           'Perfect 3ms', '—',        'he made known / declared',          'D or I'],
+            ['12', 'חִיָּה',  'חיה', 'to live/be alive',  'Perfect 3ms', 'Gen 47:25','he kept alive / preserved',         'F'],
+            ['13', 'שִׁנָּה', 'שׁנה', 'to change/repeat', 'Perfect 3ms', '—',        'he changed / altered',              'I'],
+            ['14', 'שִׁלֵּם', 'שׁלם', 'to be complete',   'Perfect 3ms', 'Exo 22:2', 'he made restitution / paid fully',  'I or F'],
+            ['15', 'כִּנָּה', 'כנה', '(noun: title)',      'Perfect 3ms', 'Isa 45:4', 'he gave a title / assigned a name', 'DN'],
+        ]
+
+        self.add_section_heading('Part A — I-Guttural Roots')
+        self.add_generic_table(hdr, rows_a, cr, heb_cols=[1, 2], show_answers=False)
+        self.add_section_break()
+        self.add_section_heading('Part B — III-ה Roots')
+        self.add_generic_table(hdr, rows_b, cr, heb_cols=[1, 2], show_answers=False)
+        self.add_section_break()
+        self.add_section_heading('Part C — I-י / Hollow Roots')
+        self.add_generic_table(hdr, rows_c, cr, heb_cols=[1, 2], show_answers=False)
+        self.add_section_break()
+
+        self.add_section_heading('Answer Key — Part A')
+        self.add_generic_table(hdr, rows_a, cr, heb_cols=[1, 2],
+                               show_answers=True, answer_rows=ans_a)
+        self.add_section_heading('Answer Key — Part B')
+        self.add_generic_table(hdr, rows_b, cr, heb_cols=[1, 2],
+                               show_answers=True, answer_rows=ans_b)
+        self.add_section_heading('Answer Key — Part C')
+        self.add_generic_table(hdr, rows_c, cr, heb_cols=[1, 2],
+                               show_answers=True, answer_rows=ans_c)
+
+
+def build_ch31_qal_piel_contrast(out_dir=None):
+    return _build_exercise_pdf(
+        Ch31QalPielContrastExercise,
+        'Chapter 31 — Qal–Piel Contrast Drill (Weak Roots)',
+        'BBH Chapter 31 · Piel Weak Verbs',
+        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-qal-piel-contrast'],
+        'ch31-qal-piel-contrast.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch31 — Piel Function Sort (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch31FunctionSortExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'For each Piel form below, classify the semantic function: '
+            'I (Intensive), F (Factitive), D (Declarative), DN (Denominative), SA (Simple Action). '
+            'Each item gives the Hebrew form, conjugation, root, reference, and contextual gloss. '
+            'Answer key at the bottom.'
+        )
+        hdrs = ['#', 'Hebrew Form', 'Conjugation', 'Root', 'Ref', 'Gloss', 'Function']
+        cr   = [0.04, 0.12, 0.16, 0.08, 0.10, 0.36, 0.14]
+        rows = [
+            ['1',  'בֵּרַךְ',    'Perfect 3ms',   'ברך',  'Gen 1:28',  '"God blessed them"',                      ''],
+            ['2',  'גִּלָּה',    'Perfect 3ms',   'גלה',  'Gen 35:7',  '"God revealed himself to him"',           ''],
+            ['3',  'חִזֵּק',     'Perfect 3ms',   'חזק',  'Exo 4:21',  '"I will harden his heart"',               ''],
+            ['4',  'כִּלָּה',    'Perfect 3ms',   'כלה',  'Gen 2:2',   '"God finished his work"',                 ''],
+            ['5',  'צִוָּה',     'Perfect 3ms',   'צוה',  'Gen 2:16',  '"the LORD commanded the man"',            ''],
+            ['6',  'בֵּרֲכוּ',   'Perfect 3cp',   'ברך',  '—',         '"they blessed"',                          ''],
+            ['7',  'יְבָרֵךְ',   'Imperfect 3ms', 'ברך',  'Psa 115:12','"the LORD will bless"',                   ''],
+            ['8',  'יְצַוֶּה',   'Imperfect 3ms', 'צוה',  '—',         '"he will command"',                       ''],
+            ['9',  'וַיְבָרֶךְ', 'Wayyiqtol 3ms', 'ברך',  'Gen 1:22',  '"God blessed them"',                      ''],
+            ['10', 'וַיְצַו',    'Wayyiqtol 3ms', 'צוה',  'Gen 3:11',  '"which I commanded you"',                 ''],
+            ['11', 'חִיָּה',     'Perfect 3ms',   'חיה',  'Gen 47:25', '"you have kept us alive"',                ''],
+            ['12', 'שִׁלֵּם',    'Perfect 3ms',   'שׁלם', 'Exo 22:2',  '"he shall make full restitution"',        ''],
+            ['13', 'עִנָּה',     'Perfect 3ms',   'ענה',  'Gen 15:13', '"they will afflict them"',                ''],
+            ['14', 'כִּנָּה',    'Perfect 3ms',   'כנה',  'Isa 45:4',  '"I gave you a title"',                    ''],
+            ['15', 'בִּקֵּשׁ',   'Perfect 3ms',   'בקש',  'Gen 37:15', '"what are you seeking?"',                 ''],
+            ['16', 'יְבַקֵּשׁ',  'Imperfect 3ms', 'בקש',  '—',         '"he will seek"',                          ''],
+            ['17', 'גִּלָּה',    'Perfect 3ms',   'גלה',  'Amo 3:7',   '"he reveals his secret to his servants"', ''],
+            ['18', 'שִׁנָּה',    'Perfect 3ms',   'שׁנה', '—',          '"he changed / altered"',                  ''],
+            ['19', 'חִזְּקוּ',   'Perfect 3cp',   'חזק',  '—',         '"they strengthened / encouraged"',        ''],
+            ['20', 'בִּנָּה',    'Perfect 3ms',   'בנה',  '1 Kgs 6:2', '"Solomon built the house"',               ''],
+        ]
+        ans = [
+            ['1',  'בֵּרַךְ',    'Perfect 3ms',   'ברך',  'Gen 1:28',   '"God blessed them"',                      'I'],
+            ['2',  'גִּלָּה',    'Perfect 3ms',   'גלה',  'Gen 35:7',   '"God revealed himself to him"',           'I'],
+            ['3',  'חִזֵּק',     'Perfect 3ms',   'חזק',  'Exo 4:21',   '"I will harden his heart"',               'F'],
+            ['4',  'כִּלָּה',    'Perfect 3ms',   'כלה',  'Gen 2:2',    '"God finished his work"',                 'I or F'],
+            ['5',  'צִוָּה',     'Perfect 3ms',   'צוה',  'Gen 2:16',   '"the LORD commanded the man"',            'SA'],
+            ['6',  'בֵּרֲכוּ',   'Perfect 3cp',   'ברך',  '—',          '"they blessed"',                          'I'],
+            ['7',  'יְבָרֵךְ',   'Imperfect 3ms', 'ברך',  'Psa 115:12', '"the LORD will bless"',                   'I'],
+            ['8',  'יְצַוֶּה',   'Imperfect 3ms', 'צוה',  '—',          '"he will command"',                       'SA'],
+            ['9',  'וַיְבָרֶךְ', 'Wayyiqtol 3ms', 'ברך',  'Gen 1:22',   '"God blessed them"',                      'I'],
+            ['10', 'וַיְצַו',    'Wayyiqtol 3ms', 'צוה',  'Gen 3:11',   '"which I commanded you"',                 'SA'],
+            ['11', 'חִיָּה',     'Perfect 3ms',   'חיה',  'Gen 47:25',  '"you have kept us alive"',                'F'],
+            ['12', 'שִׁלֵּם',    'Perfect 3ms',   'שׁלם', 'Exo 22:2',   '"he shall make full restitution"',        'I or F'],
+            ['13', 'עִנָּה',     'Perfect 3ms',   'ענה',  'Gen 15:13',  '"they will afflict them"',                'F'],
+            ['14', 'כִּנָּה',    'Perfect 3ms',   'כנה',  'Isa 45:4',   '"I gave you a title"',                    'DN'],
+            ['15', 'בִּקֵּשׁ',   'Perfect 3ms',   'בקש',  'Gen 37:15',  '"what are you seeking?"',                 'SA'],
+            ['16', 'יְבַקֵּשׁ',  'Imperfect 3ms', 'בקש',  '—',          '"he will seek"',                          'SA'],
+            ['17', 'גִּלָּה',    'Perfect 3ms',   'גלה',  'Amo 3:7',    '"he reveals his secret to his servants"', 'I'],
+            ['18', 'שִׁנָּה',    'Perfect 3ms',   'שׁנה', '—',           '"he changed / altered"',                  'I'],
+            ['19', 'חִזְּקוּ',   'Perfect 3cp',   'חזק',  '—',          '"they strengthened / encouraged"',        'F'],
+            ['20', 'בִּנָּה',    'Perfect 3ms',   'בנה',  '1 Kgs 6:2',  '"Solomon built the house"',               'I'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 3],
+            answer_heb_cols=[1, 3],
+            section_title='Piel Semantic Function Sort — 20 Weak-Root Forms',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch31_function_sort(out_dir=None):
+    return _build_exercise_pdf(
+        Ch31FunctionSortExercise,
+        'Chapter 31 — Piel Function Sort (Weak Roots)',
+        'BBH Chapter 31 · Piel Weak Verbs',
+        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-function-sort'],
+        'ch31-function-sort.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch31 — Stem-ID Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch31StemIdDrill(ExercisePDF):
+    _instructions = (
+        'Below are 24 Hebrew verb forms from weak roots (ברך, גלה, צוה, חזק). '
+        'For each form, identify: (1) Stem (Qal / Niphal / Hiphil / Piel), '
+        '(2) Conjugation, (3) PGN, (4) Root. '
+        'Answer key at the bottom.'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        self.add_note(
+            'I-Guttural Piel (ברך, חזק): guttural R1 cannot take dagesh; '
+            'watch for virtual doubling (longer vowel before R2).  '
+            'III-ה Piel (גלה, צוה): perfect 3ms ends in ָּה (qamets + dagesh-he).  '
+            'Qal III-ה perfect 3ms ends in ָה (no dagesh in ה).'
+        )
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
+        cr   = [0.05, 0.18, 0.12, 0.22, 0.12, 0.31]
+        rows = [
+            ['1',  'בֵּרַךְ',    '', '', '', ''],
+            ['2',  'בָּרַךְ',    '', '', '', ''],
+            ['3',  'גִּלָּה',    '', '', '', ''],
+            ['4',  'גָּלָה',     '', '', '', ''],
+            ['5',  'נִגְלָה',    '', '', '', ''],
+            ['6',  'הִגְלָה',    '', '', '', ''],
+            ['7',  'צִוָּה',     '', '', '', ''],
+            ['8',  'חִזֵּק',     '', '', '', ''],
+            ['9',  'חָזַק',      '', '', '', ''],
+            ['10', 'יְבָרֵךְ',   '', '', '', ''],
+            ['11', 'יְצַוֶּה',   '', '', '', ''],
+            ['12', 'יִגְלֶה',    '', '', '', ''],
+            ['13', 'יִגָּלֶה',   '', '', '', ''],
+            ['14', 'יְגַלֶּה',   '', '', '', ''],
+            ['15', 'יַגְלֶה',    '', '', '', ''],
+            ['16', 'וַיְבָרֶךְ', '', '', '', ''],
+            ['17', 'וַיְצַו',    '', '', '', ''],
+            ['18', 'וַיִּגֶּל',  '', '', '', ''],
+            ['19', 'בָּרֵךְ',    '', '', '', ''],
+            ['20', 'גַּל',       '', '', '', ''],
+            ['21', 'גַּלֵּה',    '', '', '', ''],
+            ['22', 'מְבָרֵךְ',   '', '', '', ''],
+            ['23', 'מְגַלֶּה',   '', '', '', ''],
+            ['24', 'גֹּלֶה',     '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'בֵּרַךְ',    'Piel',   'Perfect',     '3ms', 'ברך'],
+            ['2',  'בָּרַךְ',    'Qal',    'Perfect',     '3ms', 'ברך'],
+            ['3',  'גִּלָּה',    'Piel',   'Perfect',     '3ms', 'גלה'],
+            ['4',  'גָּלָה',     'Qal',    'Perfect',     '3ms', 'גלה'],
+            ['5',  'נִגְלָה',    'Niphal', 'Perfect',     '3ms', 'גלה'],
+            ['6',  'הִגְלָה',    'Hiphil', 'Perfect',     '3ms', 'גלה'],
+            ['7',  'צִוָּה',     'Piel',   'Perfect',     '3ms', 'צוה'],
+            ['8',  'חִזֵּק',     'Piel',   'Perfect',     '3ms', 'חזק'],
+            ['9',  'חָזַק',      'Qal',    'Perfect',     '3ms', 'חזק'],
+            ['10', 'יְבָרֵךְ',   'Piel',   'Imperfect',   '3ms', 'ברך'],
+            ['11', 'יְצַוֶּה',   'Piel',   'Imperfect',   '3ms', 'צוה'],
+            ['12', 'יִגְלֶה',    'Qal',    'Imperfect',   '3ms', 'גלה'],
+            ['13', 'יִגָּלֶה',   'Niphal', 'Imperfect',   '3ms', 'גלה'],
+            ['14', 'יְגַלֶּה',   'Piel',   'Imperfect',   '3ms', 'גלה'],
+            ['15', 'יַגְלֶה',    'Hiphil', 'Imperfect',   '3ms', 'גלה'],
+            ['16', 'וַיְבָרֶךְ', 'Piel',   'Wayyiqtol',   '3ms', 'ברך'],
+            ['17', 'וַיְצַו',    'Piel',   'Wayyiqtol',   '3ms', 'צוה'],
+            ['18', 'וַיִּגֶּל',  'Qal',    'Wayyiqtol',   '3ms', 'גלה'],
+            ['19', 'בָּרֵךְ',    'Piel',   'Imperative',  '2ms', 'ברך'],
+            ['20', 'גַּל',       'Qal',    'Imperative',  '2ms', 'גלה'],
+            ['21', 'גַּלֵּה',    'Piel',   'Imperative',  '2ms', 'גלה'],
+            ['22', 'מְבָרֵךְ',   'Piel',   'Participle',  'ms',  'ברך'],
+            ['23', 'מְגַלֶּה',   'Piel',   'Participle',  'ms',  'גלה'],
+            ['24', 'גֹּלֶה',     'Qal',    'Participle',  'ms',  'גלה'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Niphal / Hiphil / Piel — Weak Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch31_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch31StemIdDrill,
+        'Chapter 31 — Stem-ID Drill (Weak Roots)',
+        'BBH Chapter 31 · Piel Weak Verbs',
+        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-stem-id-drill'],
+        'ch31-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch34 — Qal–Piel–Hithpael Contrast Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch34QalPielHithpaelContrastExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'Five groups of three forms — each group shares a root in Qal, Piel, '
+            'and Hithpael Perfect 3ms. '
+            'For each: (1) identify the stem, (2) state the semantic function added, '
+            '(3) translate. '
+            'Note Group 3: root שׁמר has sibilant metathesis in the Hithpael '
+            '(הִתְ + שׁ → הִשְׁתְּ). '
+            'Answer key at the bottom.'
+        )
+        self.add_note(
+            'Hithpael: הִתְ prefix + Dagesh Forte in R2. '
+            'Piel: Dagesh Forte in R2, no prefix. '
+            'Qal: neither prefix nor dagesh in R2. '
+            'Sibilant metathesis: when R1 = שׁ/שׂ/ס/צ/ז, the ת of הִתְ swaps with R1.'
+        )
+
+        hdr = ['#', 'Hebrew', 'Stem', 'Function', 'Translation']
+        cr  = [0.05, 0.18, 0.14, 0.22, 0.41]
+
+        triplets = [
+            ('Group 1 — Root: קדשׁ (to be holy)', [
+                ['1', 'קָדַשׁ',      '', '', ''],
+                ['2', 'קִדֵּשׁ',     '', '', ''],
+                ['3', 'הִתְקַדֵּשׁ', '', '', ''],
+            ], [
+                ['1', 'קָדַשׁ',      'Qal',      'Basic / stative',   'he was holy / became holy'],
+                ['2', 'קִדֵּשׁ',     'Piel',     'Factitive',          'he consecrated / made holy'],
+                ['3', 'הִתְקַדֵּשׁ', 'Hithpael', 'Reflexive',          'he consecrated himself / made himself holy'],
+            ]),
+            ('Group 2 — Root: כבד (to be heavy/honored)', [
+                ['4', 'כָּבֵד',      '', '', ''],
+                ['5', 'כִּבֵּד',     '', '', ''],
+                ['6', 'הִתְכַּבֵּד', '', '', ''],
+            ], [
+                ['4', 'כָּבֵד',      'Qal',      'Basic / stative',   'he was heavy / honored'],
+                ['5', 'כִּבֵּד',     'Piel',     'Factitive',          'he honored'],
+                ['6', 'הִתְכַּבֵּד', 'Hithpael', 'Reflexive',          'he honored himself / gloried'],
+            ]),
+            ('Group 3 — Root: שׁמר (sibilant metathesis)', [
+                ['7', 'שָׁמַר',      '', '', ''],
+                ['8', 'שִׁמֵּר',     '', '', ''],
+                ['9', 'הִשְׁתַּמֵּר','', '', ''],
+            ], [
+                ['7', 'שָׁמַר',      'Qal',      'Basic',              'he kept / guarded'],
+                ['8', 'שִׁמֵּר',     'Piel',     'Intensive',          'he kept carefully / watched over'],
+                ['9', 'הִשְׁתַּמֵּר','Hithpael', 'Reflexive',          'he kept himself / was on guard (הִתְ + שׁ → הִשְׁתְּ)'],
+            ]),
+            ('Group 4 — Root: פלל (to judge/intervene)', [
+                ['10', 'פָּלַל',      '', '', ''],
+                ['11', 'פִּלֵּל',     '', '', ''],
+                ['12', 'הִתְפַּלֵּל', '', '', ''],
+            ], [
+                ['10', 'פָּלַל',      'Qal',      'Basic',              'he judged / intervened'],
+                ['11', 'פִּלֵּל',     'Piel',     'Intensive',          'he actively interceded'],
+                ['12', 'הִתְפַּלֵּל', 'Hithpael', 'Reflexive/Denom.',   'he prayed (pleaded his own case before God)'],
+            ]),
+            ('Group 5 — Root: ברך (to kneel/bless)', [
+                ['13', 'בָּרַךְ',     '', '', ''],
+                ['14', 'בֵּרַךְ',     '', '', ''],
+                ['15', 'הִתְבָּרֵךְ', '', '', ''],
+            ], [
+                ['13', 'בָּרַךְ',     'Qal',      'Basic',              'he knelt'],
+                ['14', 'בֵּרַךְ',     'Piel',     'Factitive',          'he blessed'],
+                ['15', 'הִתְבָּרֵךְ', 'Hithpael', 'Reflexive',          'he blessed himself / was blessed'],
+            ]),
+        ]
+
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1], show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in triplets:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+
+
+def build_ch34_qal_piel_hithpael_contrast(out_dir=None):
+    return _build_exercise_pdf(
+        Ch34QalPielHithpaelContrastExercise,
+        'Chapter 34 — Qal / Piel / Hithpael Contrast Drill (Strong Roots)',
+        'BBH Chapter 34 · Hithpael Strong Verbs',
+        ['hebrew', 'bbh', 'ch34', 'exercises', 'ch34-qal-piel-hithpael-contrast'],
+        'ch34-qal-piel-hithpael-contrast.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch34 — Stem-ID Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+class Ch34StemIdDrill(ExercisePDF):
+    _instructions = (
+        'Identify the stem, conjugation, PGN, and root of each form below. '
+        'Roots used: קדשׁ and דבר. '
+        'Stems covered: Qal, Niphal, Piel, Pual, Hiphil, Hithpael. '
+        'Note: items 3 and 20 share the same written form הִתְקַדֵּשׁ — '
+        'context determines whether it is Hithpael Perfect 3ms or Imperative 2ms.'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
+        cr   = [0.05, 0.18, 0.14, 0.22, 0.12, 0.29]
+        rows = [
+            ['1',  'קָדַשׁ',      '', '', '', ''],
+            ['2',  'קִדֵּשׁ',     '', '', '', ''],
+            ['3',  'הִתְקַדֵּשׁ', '', '', '', ''],
+            ['4',  'נִקְדַּשׁ',   '', '', '', ''],
+            ['5',  'הִקְדִּישׁ',  '', '', '', ''],
+            ['6',  'קֻדַּשׁ',     '', '', '', ''],
+            ['7',  'דִּבֶּר',     '', '', '', ''],
+            ['8',  'דָּבַר',      '', '', '', ''],
+            ['9',  'הִתְדַּבֵּר', '', '', '', ''],
+            ['10', 'יְקַדֵּשׁ',   '', '', '', ''],
+            ['11', 'יִקְדַּשׁ',   '', '', '', ''],
+            ['12', 'יִתְקַדֵּשׁ', '', '', '', ''],
+            ['13', 'יִקָּדֵשׁ',   '', '', '', ''],
+            ['14', 'יַקְדִּישׁ',  '', '', '', ''],
+            ['15', 'יְקֻדַּשׁ',   '', '', '', ''],
+            ['16', 'וַיְקַדֵּשׁ', '', '', '', ''],
+            ['17', 'וַיִּקְדַּשׁ','', '', '', ''],
+            ['18', 'וַיִּתְקַדֵּשׁ','','', '', ''],
+            ['19', 'קַדֵּשׁ',     '', '', '', ''],
+            ['20', 'הִתְקַדֵּשׁ', '', '', '', ''],
+            ['21', 'הִקָּדֵשׁ',   '', '', '', ''],
+            ['22', 'מְקַדֵּשׁ',   '', '', '', ''],
+            ['23', 'מִתְקַדֵּשׁ', '', '', '', ''],
+            ['24', 'מַקְדִּישׁ',  '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'קָדַשׁ',      'Qal',     'Perfect',    '3ms', 'קדשׁ'],
+            ['2',  'קִדֵּשׁ',     'Piel',    'Perfect',    '3ms', 'קדשׁ'],
+            ['3',  'הִתְקַדֵּשׁ', 'Hithpael','Perfect',    '3ms', 'קדשׁ'],
+            ['4',  'נִקְדַּשׁ',   'Niphal',  'Perfect',    '3ms', 'קדשׁ'],
+            ['5',  'הִקְדִּישׁ',  'Hiphil',  'Perfect',    '3ms', 'קדשׁ'],
+            ['6',  'קֻדַּשׁ',     'Pual',    'Perfect',    '3ms', 'קדשׁ'],
+            ['7',  'דִּבֶּר',     'Piel',    'Perfect',    '3ms', 'דבר'],
+            ['8',  'דָּבַר',      'Qal',     'Perfect',    '3ms', 'דבר'],
+            ['9',  'הִתְדַּבֵּר', 'Hithpael','Perfect',    '3ms', 'דבר'],
+            ['10', 'יְקַדֵּשׁ',   'Piel',    'Imperfect',  '3ms', 'קדשׁ'],
+            ['11', 'יִקְדַּשׁ',   'Qal',     'Imperfect',  '3ms', 'קדשׁ'],
+            ['12', 'יִתְקַדֵּשׁ', 'Hithpael','Imperfect',  '3ms', 'קדשׁ'],
+            ['13', 'יִקָּדֵשׁ',   'Niphal',  'Imperfect',  '3ms', 'קדשׁ'],
+            ['14', 'יַקְדִּישׁ',  'Hiphil',  'Imperfect',  '3ms', 'קדשׁ'],
+            ['15', 'יְקֻדַּשׁ',   'Pual',    'Imperfect',  '3ms', 'קדשׁ'],
+            ['16', 'וַיְקַדֵּשׁ', 'Piel',    'Wayyiqtol',  '3ms', 'קדשׁ'],
+            ['17', 'וַיִּקְדַּשׁ','Qal',     'Wayyiqtol',  '3ms', 'קדשׁ'],
+            ['18', 'וַיִּתְקַדֵּשׁ','Hithpael','Wayyiqtol', '3ms', 'קדשׁ'],
+            ['19', 'קַדֵּשׁ',     'Piel',    'Imperative', '2ms', 'קדשׁ'],
+            ['20', 'הִתְקַדֵּשׁ', 'Hithpael','Imperative', '2ms', 'קדשׁ'],
+            ['21', 'הִקָּדֵשׁ',   'Niphal',  'Imperative', '2ms', 'קדשׁ'],
+            ['22', 'מְקַדֵּשׁ',   'Piel',    'Participle', 'ms',  'קדשׁ'],
+            ['23', 'מִתְקַדֵּשׁ', 'Hithpael','Participle', 'ms',  'קדשׁ'],
+            ['24', 'מַקְדִּישׁ',  'Hiphil',  'Participle', 'ms',  'קדשׁ'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[1, 5],
+            section_title='All Major Stems — Strong Roots: קדשׁ / דבר (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch34_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch34StemIdDrill,
+        'Chapter 34 — Stem-ID Drill (Strong Roots)',
+        'BBH Chapter 34 · Hithpael Strong Verbs',
+        ['hebrew', 'bbh', 'ch34', 'exercises', 'ch34-stem-id-drill'],
+        'ch34-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch35 — Qal–Piel–Hithpael Contrast Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch35QalPielHithpaelContrastExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'Five groups of three forms — each group shows a weak root in '
+            'Qal, Piel, and Hithpael Perfect 3ms. '
+            'For each: (1) identify the stem, (2) identify the weak class, '
+            '(3) state how the weakness affects the form, (4) translate. '
+            'Answer key at the bottom.'
+        )
+        self.add_note(
+            'III-ה: perfect 3ms ends in ָ–ה; wayyiqtol apocopates (ה dropped).  '
+            'Sibilant (שׁ/שׂ/ס): הִתְ + שׁ → הִשְׁתְּ (ת and שׁ swap).  '
+            'Sibilant (צ): הִתְ + צ → ת assimilates to ט and swaps → הִצְטְ.  '
+            'Geminate (R2=R3): Dagesh Forte in R2/R3; compensatory lengthening.'
+        )
+
+        hdr = ['#', 'Hebrew', 'Stem', 'Weak Class', 'Weakness Effect', 'Translation']
+        cr  = [0.04, 0.16, 0.12, 0.14, 0.28, 0.26]
+
+        groups = [
+            ('Group 1 — Root: גלה (III-ה)', [
+                ['1', 'גָּלָה',       '', '', '', ''],
+                ['2', 'גִּלָּה',      '', '', '', ''],
+                ['3', 'הִתְגַּלָּה',  '', '', '', ''],
+            ], [
+                ['1', 'גָּלָה',       'Qal',      'III-ה', 'Perfect 3ms ends in ָ–ה; ה = weak R3',                         'he went into exile / uncovered'],
+                ['2', 'גִּלָּה',      'Piel',     'III-ה', 'Dagesh in R2 (לּ); R3-ה contracts to ָה',                      'he revealed'],
+                ['3', 'הִתְגַּלָּה',  'Hithpael', 'III-ה', 'הִתְ prefix + dagesh in R2 + ָה ending (R3-ה preserved)',        'he revealed himself'],
+            ]),
+            ('Group 2 — Root: שׁמר (sibilant metathesis)', [
+                ['4', 'שָׁמַר',       '', '', '', ''],
+                ['5', 'שִׁמֵּר',      '', '', '', ''],
+                ['6', 'הִשְׁתַּמֵּר', '', '', '', ''],
+            ], [
+                ['4', 'שָׁמַר',       'Qal',      'sibilant (R1=שׁ)', 'No effect in Qal; sibilant only affects Hithpael prefix', 'he kept / guarded'],
+                ['5', 'שִׁמֵּר',      'Piel',     'sibilant (R1=שׁ)', 'No effect in Piel',                                       'he kept carefully / watched over'],
+                ['6', 'הִשְׁתַּמֵּר', 'Hithpael', 'sibilant metathesis', 'הִתְ + שׁ → הִשְׁתְּ (ת and שׁ swap); dagesh in R2',   'he kept himself / was on guard'],
+            ]),
+            ('Group 3 — Root: צדק (sibilant צ with assimilation)', [
+                ['7', 'צָדַק',        '', '', '', ''],
+                ['8', 'צִדֵּק',       '', '', '', ''],
+                ['9', 'הִצְטַדֵּק',   '', '', '', ''],
+            ], [
+                ['7', 'צָדַק',        'Qal',      'sibilant (R1=צ)', 'No effect in Qal',                                              'he was righteous'],
+                ['8', 'צִדֵּק',       'Piel',     'sibilant (R1=צ)', 'No effect in Piel',                                             'he declared righteous / justified'],
+                ['9', 'הִצְטַדֵּק',   'Hithpael', 'sibilant metathesis + assimilation', 'הִתְ + צ → ת→ט + swaps with צ → הִצְטְ',   'he justified himself'],
+            ]),
+            ('Group 4 — Root: הלל (geminate: R2=R3=ל)', [
+                ['10', 'הָלַל',        '', '', '', ''],
+                ['11', 'הִלֵּל',       '', '', '', ''],
+                ['12', 'הִתְהַלֵּל',   '', '', '', ''],
+            ], [
+                ['10', 'הָלַל',        'Qal',      'geminate', 'Both ל radicals appear; no contraction in Qal perf. 3ms',        'he shone / praised'],
+                ['11', 'הִלֵּל',       'Piel',     'geminate', 'Dagesh Forte in R2=R3 (לּ); Tsere under R1',                     'he praised'],
+                ['12', 'הִתְהַלֵּל',   'Hithpael', 'geminate', 'הִתְ prefix + Dagesh Forte in R2/R3 (לּ)',                       'he boasted / praised himself'],
+            ]),
+            ('Group 5 — Root: ענה (III-ה: to answer/afflict)', [
+                ['13', 'עָנָה',         '', '', '', ''],
+                ['14', 'עִנָּה',        '', '', '', ''],
+                ['15', 'הִתְעַנָּה',    '', '', '', ''],
+            ], [
+                ['13', 'עָנָה',         'Qal',      'III-ה', 'Perfect 3ms ends in ָ–ה',                                          'he answered'],
+                ['14', 'עִנָּה',        'Piel',     'III-ה', 'Dagesh in R2 (נּ) + ָה ending',                                    'he afflicted'],
+                ['15', 'הִתְעַנָּה',    'Hithpael', 'III-ה', 'הִתְ prefix + dagesh in R2 + ָה ending (R3-ה preserved)',          'he afflicted himself / fasted'],
+            ]),
+        ]
+
+        for title, rows, ans in groups:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1], show_answers=False)
+            self.add_section_break()
+
+        self.add_section_heading('Answer Key')
+        for title, rows, ans in groups:
+            self.add_section_heading(title)
+            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
+                                   show_answers=True, answer_rows=ans)
+
+
+def build_ch35_qal_piel_hithpael_contrast(out_dir=None):
+    return _build_exercise_pdf(
+        Ch35QalPielHithpaelContrastExercise,
+        'Chapter 35 — Qal / Piel / Hithpael Contrast Drill (Weak Roots)',
+        'BBH Chapter 35 · Hithpael Weak Verbs',
+        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-qal-piel-hithpael-contrast'],
+        'ch35-qal-piel-hithpael-contrast.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch35 — Hithpael Function Sort (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch35FunctionSortExercise(ExercisePDF):
+
+    def _build(self):
+        self.add_instructions(
+            'For each weak-root Hithpael form, classify the semantic function: '
+            'R (Reflexive), Re (Reciprocal), I (Intensive/Iterative), SA (Simple Action). '
+            'Each item gives the Hebrew form, conjugation, root, reference, and gloss. '
+            'Answer key at the bottom.'
+        )
+        hdrs = ['#', 'Hebrew', 'Conjugation', 'Root', 'Ref', 'Gloss', 'Function']
+        cr   = [0.04, 0.14, 0.16, 0.08, 0.10, 0.34, 0.14]
+        rows = [
+            ['1',  'הִתְגַּלָּה',    'Perfect 3ms',   'גלה', 'Gen 35:7',   '"God revealed himself"',                     ''],
+            ['2',  'הִשְׁתַּחֲוָה',  'Perfect 3ms',   'שׁחה','Gen 22:5',   '"we will worship / bow down"',                ''],
+            ['3',  'הִתְהַלֵּל',    'Perfect 3ms',   'הלל', 'Jer 9:23',   '"let him not boast"',                         ''],
+            ['4',  'הִתְפַּלֵּל',   'Perfect 3ms',   'פלל', 'Gen 20:7',   '"he prayed"',                                 ''],
+            ['5',  'הִתְעַנָּה',    'Perfect 3ms',   'ענה', 'Ezr 8:21',   '"we afflicted ourselves / fasted"',           ''],
+            ['6',  'יִתְגַּלֶּה',   'Imperfect 3ms', 'גלה', '—',          '"he will reveal himself"',                    ''],
+            ['7',  'יִשְׁתַּחֲוֶה', 'Imperfect 3ms', 'שׁחה','—',          '"he will bow down"',                          ''],
+            ['8',  'יִתְהַלֵּל',   'Imperfect 3ms', 'הלל', 'Jer 9:23',   '"let him boast"',                             ''],
+            ['9',  'יִתְפַּלֵּל',  'Imperfect 3ms', 'פלל', '—',          '"he will pray"',                              ''],
+            ['10', 'וַיִּתְגַּל',   'Wayyiqtol 3ms', 'גלה', 'Gen 9:21',   '"he uncovered himself"',                      ''],
+            ['11', 'וַיִּשְׁתַּחוּ','Wayyiqtol 3ms', 'שׁחה','Gen 22:5',   '"and he bowed down"',                         ''],
+            ['12', 'וַיִּתְפַּלֵּל','Wayyiqtol 3ms', 'פלל', 'Gen 20:17',  '"Abraham prayed"',                            ''],
+            ['13', 'הִתְנַבֵּא',   'Perfect 3ms',   'נבא', '1 Sam 10:10','"he prophesied"',                             ''],
+            ['14', 'הִתְחַזֵּק',   'Perfect 3ms',   'חזק', '2 Sam 10:12','"take courage! / be strong!"',               ''],
+            ['15', 'הִתְנַחֵם',    'Perfect 3ms',   'נחם', 'Gen 24:67',  '"Isaac was comforted"',                       ''],
+            ['16', 'הִתְבָּרֵךְ',  'Perfect 3ms',   'ברך', 'Gen 22:18',  '"all nations will bless themselves"',         ''],
+            ['17', 'הִצְטַדֵּק',   'Perfect 3ms',   'צדק', '—',          '"he justified himself"',                      ''],
+            ['18', 'הִתְרַגֵּז',   'Perfect 3ms',   'רגז', '—',          '"he trembled / was agitated"',                ''],
+            ['19', 'הִתְחַנֵּן',   'Perfect 3ms',   'חנן', '—',          '"he pleaded for mercy / implored"',           ''],
+            ['20', 'הִתְנַהֵג',    'Perfect 3ms',   'נהג', '—',          '"he conducted himself / behaved"',            ''],
+        ]
+        ans = [
+            ['1',  'הִתְגַּלָּה',    'Perfect 3ms',   'גלה', 'Gen 35:7',    '"God revealed himself"',                     'R'],
+            ['2',  'הִשְׁתַּחֲוָה',  'Perfect 3ms',   'שׁחה','Gen 22:5',    '"we will worship / bow down"',                'R'],
+            ['3',  'הִתְהַלֵּל',    'Perfect 3ms',   'הלל', 'Jer 9:23',    '"let him not boast"',                         'R'],
+            ['4',  'הִתְפַּלֵּל',   'Perfect 3ms',   'פלל', 'Gen 20:7',    '"he prayed"',                                 'SA'],
+            ['5',  'הִתְעַנָּה',    'Perfect 3ms',   'ענה', 'Ezr 8:21',    '"we afflicted ourselves / fasted"',           'R'],
+            ['6',  'יִתְגַּלֶּה',   'Imperfect 3ms', 'גלה', '—',           '"he will reveal himself"',                    'R'],
+            ['7',  'יִשְׁתַּחֲוֶה', 'Imperfect 3ms', 'שׁחה','—',           '"he will bow down"',                          'R'],
+            ['8',  'יִתְהַלֵּל',   'Imperfect 3ms', 'הלל', 'Jer 9:23',    '"let him boast"',                             'R'],
+            ['9',  'יִתְפַּלֵּל',  'Imperfect 3ms', 'פלל', '—',           '"he will pray"',                              'SA'],
+            ['10', 'וַיִּתְגַּל',   'Wayyiqtol 3ms', 'גלה', 'Gen 9:21',    '"he uncovered himself"',                      'R'],
+            ['11', 'וַיִּשְׁתַּחוּ','Wayyiqtol 3ms', 'שׁחה','Gen 22:5',    '"and he bowed down"',                         'R'],
+            ['12', 'וַיִּתְפַּלֵּל','Wayyiqtol 3ms', 'פלל', 'Gen 20:17',   '"Abraham prayed"',                            'SA'],
+            ['13', 'הִתְנַבֵּא',   'Perfect 3ms',   'נבא', '1 Sam 10:10', '"he prophesied"',                             'SA'],
+            ['14', 'הִתְחַזֵּק',   'Perfect 3ms',   'חזק', '2 Sam 10:12', '"take courage! / be strong!"',               'R'],
+            ['15', 'הִתְנַחֵם',    'Perfect 3ms',   'נחם', 'Gen 24:67',   '"Isaac was comforted"',                       'R'],
+            ['16', 'הִתְבָּרֵךְ',  'Perfect 3ms',   'ברך', 'Gen 22:18',   '"all nations will bless themselves"',         'R'],
+            ['17', 'הִצְטַדֵּק',   'Perfect 3ms',   'צדק', '—',           '"he justified himself"',                      'R'],
+            ['18', 'הִתְרַגֵּז',   'Perfect 3ms',   'רגז', '—',           '"he trembled / was agitated"',                'I'],
+            ['19', 'הִתְחַנֵּן',   'Perfect 3ms',   'חנן', '—',           '"he pleaded for mercy / implored"',           'I'],
+            ['20', 'הִתְנַהֵג',    'Perfect 3ms',   'נהג', '—',           '"he conducted himself / behaved"',            'R'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1, 3],
+            answer_heb_cols=[1, 3],
+            section_title='Hithpael Semantic Function Sort — 20 Weak-Root Forms',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch35_function_sort(out_dir=None):
+    return _build_exercise_pdf(
+        Ch35FunctionSortExercise,
+        'Chapter 35 — Hithpael Function Sort (Weak Roots)',
+        'BBH Chapter 35 · Hithpael Weak Verbs',
+        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-function-sort'],
+        'ch35-function-sort.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+# Ch35 — Stem-ID Drill (Weak Roots)
+# ---------------------------------------------------------------------------
+class Ch35StemIdDrill(ExercisePDF):
+    _instructions = (
+        'Identify the stem, conjugation, PGN, and root of each form below. '
+        'Weak roots used: גלה (III-ה), הלל (geminate), ענה (III-ה). '
+        'Stems covered: Qal, Piel, Hithpael (8 items each, 24 total). '
+        'Key challenge: in wayyiqtol, the III-ה ending is dropped (apocopation).'
+    )
+
+    def _build(self):
+        self.add_instructions(self._instructions)
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
+        cr   = [0.05, 0.20, 0.14, 0.22, 0.12, 0.27]
+        rows = [
+            ['1',  'גָּלָה',        '', '', '', ''],
+            ['2',  'גִּלָּה',       '', '', '', ''],
+            ['3',  'הִתְגַּלָּה',   '', '', '', ''],
+            ['4',  'הָלַל',         '', '', '', ''],
+            ['5',  'הִלֵּל',        '', '', '', ''],
+            ['6',  'הִתְהַלֵּל',    '', '', '', ''],
+            ['7',  'עָנָה',         '', '', '', ''],
+            ['8',  'עִנָּה',        '', '', '', ''],
+            ['9',  'הִתְעַנָּה',    '', '', '', ''],
+            ['10', 'יְגַלֶּה',      '', '', '', ''],
+            ['11', 'יִגְלֶה',       '', '', '', ''],
+            ['12', 'יִתְגַּלֶּה',   '', '', '', ''],
+            ['13', 'יְהַלֵּל',      '', '', '', ''],
+            ['14', 'יִתְהַלֵּל',    '', '', '', ''],
+            ['15', 'יְעַנֶּה',      '', '', '', ''],
+            ['16', 'וַיְגַל',       '', '', '', ''],
+            ['17', 'וַיִּגֶּל',     '', '', '', ''],
+            ['18', 'וַיִּתְגַּל',   '', '', '', ''],
+            ['19', 'גַּלֵּה',       '', '', '', ''],
+            ['20', 'גְּלֵה',        '', '', '', ''],
+            ['21', 'הִתְגַּלֵּה',   '', '', '', ''],
+            ['22', 'מְגַלֶּה',      '', '', '', ''],
+            ['23', 'גֹּלֶה',        '', '', '', ''],
+            ['24', 'מִתְגַּלֶּה',   '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'גָּלָה',        'Qal',     'Perfect',    '3ms', 'גלה'],
+            ['2',  'גִּלָּה',       'Piel',    'Perfect',    '3ms', 'גלה'],
+            ['3',  'הִתְגַּלָּה',   'Hithpael','Perfect',    '3ms', 'גלה'],
+            ['4',  'הָלַל',         'Qal',     'Perfect',    '3ms', 'הלל'],
+            ['5',  'הִלֵּל',        'Piel',    'Perfect',    '3ms', 'הלל'],
+            ['6',  'הִתְהַלֵּל',    'Hithpael','Perfect',    '3ms', 'הלל'],
+            ['7',  'עָנָה',         'Qal',     'Perfect',    '3ms', 'ענה'],
+            ['8',  'עִנָּה',        'Piel',    'Perfect',    '3ms', 'ענה'],
+            ['9',  'הִתְעַנָּה',    'Hithpael','Perfect',    '3ms', 'ענה'],
+            ['10', 'יְגַלֶּה',      'Piel',    'Imperfect',  '3ms', 'גלה'],
+            ['11', 'יִגְלֶה',       'Qal',     'Imperfect',  '3ms', 'גלה'],
+            ['12', 'יִתְגַּלֶּה',   'Hithpael','Imperfect',  '3ms', 'גלה'],
+            ['13', 'יְהַלֵּל',      'Piel',    'Imperfect',  '3ms', 'הלל'],
+            ['14', 'יִתְהַלֵּל',    'Hithpael','Imperfect',  '3ms', 'הלל'],
+            ['15', 'יְעַנֶּה',      'Piel',    'Imperfect',  '3ms', 'ענה'],
+            ['16', 'וַיְגַל',       'Piel',    'Wayyiqtol',  '3ms', 'גלה'],
+            ['17', 'וַיִּגֶּל',     'Qal',     'Wayyiqtol',  '3ms', 'גלה'],
+            ['18', 'וַיִּתְגַּל',   'Hithpael','Wayyiqtol',  '3ms', 'גלה'],
+            ['19', 'גַּלֵּה',       'Piel',    'Imperative', '2ms', 'גלה'],
+            ['20', 'גְּלֵה',        'Qal',     'Imperative', '2ms', 'גלה'],
+            ['21', 'הִתְגַּלֵּה',   'Hithpael','Imperative', '2ms', 'גלה'],
+            ['22', 'מְגַלֶּה',      'Piel',    'Participle', 'ms',  'גלה'],
+            ['23', 'גֹּלֶה',        'Qal',     'Participle', 'ms',  'גלה'],
+            ['24', 'מִתְגַּלֶּה',   'Hithpael','Participle', 'ms',  'גלה'],
+        ]
+        self.add_drill_with_answer_key(
+            hdrs, rows, ans,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[1, 5],
+            section_title='Qal / Piel / Hithpael — Weak Roots (24 forms)',
+            answer_title='Answer Key',
+        )
+
+
+def build_ch35_stem_id_drill(out_dir=None):
+    return _build_exercise_pdf(
+        Ch35StemIdDrill,
+        'Chapter 35 — Stem-ID Drill (Weak Roots)',
+        'BBH Chapter 35 · Hithpael Weak Verbs',
+        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-stem-id-drill'],
+        'ch35-stem-id-drill.pdf', out_dir,
     )

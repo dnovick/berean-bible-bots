@@ -68,8 +68,14 @@ from .bbh import (
     build_ch31_weak_form_id_exercise,
     build_ch32_exercise,
     build_ch32_piel_pual_contrast_exercise,
+    build_ch32_function_sort_exercise,
+    build_ch32_qal_piel_pual_contrast_exercise,
+    build_ch32_stem_id_drill,
     build_ch33_exercise,
     build_ch33_weak_form_id_exercise,
+    build_ch33_qal_piel_pual_contrast_exercise,
+    build_ch33_function_sort_exercise,
+    build_ch33_stem_id_drill,
     build_ch34_hithpael_exercise,
     build_ch34_function_sort_exercise,
     build_ch35_hithpael_weak_exercise,
@@ -92,6 +98,24 @@ from .bbh import (
     build_ch33_pual_weak_paradigm_drill,
     build_ch34_hithpael_paradigm_drill,
     build_ch35_hithpael_weak_paradigm_drill,
+    build_ch24_stem_id_drill,
+    build_ch25_niphal_weak_paradigm_drill,
+    build_ch25_qal_niphal_contrast,
+    build_ch25_function_sort,
+    build_ch25_stem_id_drill,
+    build_ch28_stem_id_drill,
+    build_ch29_function_sort,
+    build_ch29_qal_hiphil_hophal_contrast,
+    build_ch29_stem_id_drill,
+    build_ch30_stem_id_drill,
+    build_ch31_qal_piel_contrast,
+    build_ch31_function_sort,
+    build_ch31_stem_id_drill,
+    build_ch34_qal_piel_hithpael_contrast,
+    build_ch34_stem_id_drill,
+    build_ch35_qal_piel_hithpael_contrast,
+    build_ch35_function_sort,
+    build_ch35_stem_id_drill,
 )
 from .bbg import (
     build_bbg_ch3_alphabet_drill,
@@ -259,10 +283,22 @@ p20 = build_ch32_exercise()
 print(f'Saved: {p20}')
 p21 = build_ch32_piel_pual_contrast_exercise()
 print(f'Saved: {p21}')
+p21b = build_ch32_function_sort_exercise()
+print(f'Saved: {p21b}')
+p21c = build_ch32_qal_piel_pual_contrast_exercise()
+print(f'Saved: {p21c}')
+p21d = build_ch32_stem_id_drill()
+print(f'Saved: {p21d}')
 p22 = build_ch33_exercise()
 print(f'Saved: {p22}')
 p23 = build_ch33_weak_form_id_exercise()
 print(f'Saved: {p23}')
+p23b = build_ch33_qal_piel_pual_contrast_exercise()
+print(f'Saved: {p23b}')
+p23c = build_ch33_function_sort_exercise()
+print(f'Saved: {p23c}')
+p23d = build_ch33_stem_id_drill()
+print(f'Saved: {p23d}')
 p24 = build_ch34_hithpael_exercise()
 print(f'Saved: {p24}')
 p25 = build_ch34_function_sort_exercise()
@@ -271,6 +307,34 @@ p26 = build_ch35_hithpael_weak_exercise()
 print(f'Saved: {p26}')
 p27 = build_ch35_weak_form_id_exercise()
 print(f'Saved: {p27}')
+
+# New stem-id, contrast, function-sort, and paradigm drills (Ch24–Ch35)
+new_builders = [
+    build_ch24_stem_id_drill,
+    build_ch25_niphal_weak_paradigm_drill,
+    build_ch25_qal_niphal_contrast,
+    build_ch25_function_sort,
+    build_ch25_stem_id_drill,
+    build_ch28_stem_id_drill,
+    build_ch29_function_sort,
+    build_ch29_qal_hiphil_hophal_contrast,
+    build_ch29_stem_id_drill,
+    build_ch30_stem_id_drill,
+    build_ch31_qal_piel_contrast,
+    build_ch31_function_sort,
+    build_ch31_stem_id_drill,
+    build_ch34_qal_piel_hithpael_contrast,
+    build_ch34_stem_id_drill,
+    build_ch35_qal_piel_hithpael_contrast,
+    build_ch35_function_sort,
+    build_ch35_stem_id_drill,
+]
+for fn in new_builders:
+    try:
+        saved = fn()
+        print(f'Saved: {saved}')
+    except Exception as exc:
+        print(f'ERROR in {fn.__name__}: {exc}')
 
 # Paradigm completion exercises (BBH Ch13–Ch35)
 paradigm_builders = [

@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 25 — Function Sort (Weak Roots)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1000px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
+  td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 4em; box-sizing: border-box; font-size: .9em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; text-align: center; }
+  .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .legend { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 25 — Function Sort (Weak Roots)</h1>
+<p class="subtitle">BBH Chapter 25 · Niphal Weak Verbs</p>
+
+<p>For each weak-root Niphal form, classify the semantic function using one code:</p>
+
+<div class="legend">
+  <strong>P</strong> = Passive — the subject receives the action<br>
+  <strong>R</strong> = Reflexive / Reciprocal — the subject acts on itself, or two parties act on each other<br>
+  <strong>SA</strong> = Simple Action — standard intransitive meaning; the Niphal is the normal form for this root
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Hebrew Form</th>
+    <th>Conj</th>
+    <th>Ref</th>
+    <th>Context / Gloss</th>
+    <th>Function</th>
+    <th></th>
+  </tr>
+
+  <!-- 1 -->
+  <tr>
+    <td>1</td>
+    <td><span class="heb">נִגְלָה</span></td>
+    <td>Perf. 3ms</td>
+    <td>Gen 35:7</td>
+    <td>"God was revealed to him"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="7"><strong>P (or R)</strong> — "was revealed." Passive in that God's presence is disclosed to Jacob; also analyzed as reflexive (he revealed himself). Both are acceptable.</td>
+  </tr>
+
+  <!-- 2 -->
+  <tr>
+    <td>2</td>
+    <td><span class="heb">יִפָּל</span></td>
+    <td>Imperf. 3ms</td>
+    <td>Gen 14:10</td>
+    <td>"the kings fell into the tar pits"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="7"><strong>SA</strong> — "he fell." The Niphal is the standard intransitive form of נפל; no passive sense (falling is not done to someone).</td>
+  </tr>
+
+  <!-- 3 -->
+  <tr>
+    <td>3</td>
+    <td><span class="heb">נִרְאָה</span></td>
+    <td>Perf. 3ms</td>
+    <td>Gen 12:7</td>
+    <td>"the LORD appeared to Abram"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="7"><strong>R (or P)</strong> — "appeared / revealed himself." The LORD makes himself visible; reflexive element is strong (he showed himself), though "was seen" (passive) is also grammatically valid.</td>
+  </tr>
+
+  <!-- 4 -->
+  <tr>
+    <td>4</td>
+    <td><span class="heb">יִבָּנֶה</span></td>
+    <td>Imperf. 3ms</td>
+    <td>—</td>
+    <td>"it will be built"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="7"><strong>P</strong> — "it will be built." The subject (house/city) receives the action. Niphal imperfect of בנה with <span class="heb">ֶה</span> ending (III-ה).</td>
+  </tr>
+
+  <!-- 5 -->
+  <tr>
+    <td>5</td>
+    <td><span class="heb">וַיִּגָּלֶה</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>1 Sam 3:21</td>
+    <td>"the LORD revealed himself again at Shiloh"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="7"><strong>R</strong> — "revealed himself." The LORD is both subject and agent of disclosure; classic reflexive Niphal in theophany contexts.</td>
+  </tr>
+
+  <!-- 6 -->
+  <tr>
+    <td>6</td>
+    <td><span class="heb">נַעֲשָׂה</span></td>
+    <td>Perf. 3ms</td>
+    <td>Gen 20:9</td>
+    <td>"what has been done to me"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="7"><strong>P</strong> — "what has been done." The subject (the offense/deed) was performed on the speaker by another agent. Guttural ע takes composite shewa.</td>
+  </tr>
+
+  <!-- 7 -->
+  <tr>
+    <td>7</td>
+    <td><span class="heb">נָכוֹן</span></td>
+    <td>Perf. 3ms</td>
+    <td>Psa 103:19</td>
+    <td>"his throne is established"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="7"><strong>SA</strong> — Stative Niphal. The Niphal of כון expresses a state of being firm, ready, or established — the standard meaning of this root in Niphal.</td>
+  </tr>
+
+  <!-- 8 -->
+  <tr>
+    <td>8</td>
+    <td><span class="heb">יִשָּׂם</span></td>
+    <td>Imperf. 3ms</td>
+    <td>—</td>
+    <td>"it will be placed"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="7"><strong>P</strong> — "it will be placed / set." Subject receives the action of placing. Note dagesh forte in <span class="heb">שּׂ</span>.</td>
+  </tr>
+
+  <!-- 9 -->
+  <tr>
+    <td>9</td>
+    <td><span class="heb">יִגָּלֶה</span></td>
+    <td>Imperf. 3ms</td>
+    <td>—</td>
+    <td>"it will be revealed"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="7"><strong>P</strong> — "it will be revealed." A secret, sin, or matter is uncovered by an external agent.</td>
+  </tr>
+
+  <!-- 10 -->
+  <tr>
+    <td>10</td>
+    <td><span class="heb">נִגַּשׁ</span></td>
+    <td>Perf. 3ms</td>
+    <td>Gen 44:18</td>
+    <td>"Judah drew near to him"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="7"><strong>SA</strong> — "drew near." Niphal of נגש is a simple intransitive motion toward someone; no passive nuance. Gen 44:18 records Judah approaching Joseph.</td>
+  </tr>
+
+  <!-- 11 -->
+  <tr>
+    <td>11</td>
+    <td><span class="heb">נַעֲלָה</span></td>
+    <td>Perf. 3ms</td>
+    <td>—</td>
+    <td>"he went up / ascended"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="7"><strong>SA</strong> — "went up." The Niphal of עלה overlaps with the Qal in simple intransitive movement. Guttural ע + III-ה combination gives the distinctive chateph-patach pattern.</td>
+  </tr>
+
+  <!-- 12 -->
+  <tr>
+    <td>12</td>
+    <td><span class="heb">וַיִּנָּפֶל</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>—</td>
+    <td>"he fell"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="7"><strong>SA</strong> — "he fell." Wayyiqtol form of יִפָּל; same analysis as #2. The Niphal is the standard form for נפל.</td>
+  </tr>
+
+  <!-- 13 -->
+  <tr>
+    <td>13</td>
+    <td><span class="heb">הִגָּלוֹת</span></td>
+    <td>Inf. Construct</td>
+    <td>—</td>
+    <td>"to be revealed"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="7"><strong>P</strong> — "to be revealed." Niphal infinitive construct; the verbal noun expresses the action of disclosure received by a subject.</td>
+  </tr>
+
+  <!-- 14 -->
+  <tr>
+    <td>14</td>
+    <td><span class="heb">נִגְלֵיתִי</span></td>
+    <td>Perf. 1cs</td>
+    <td>1 Sam 2:27</td>
+    <td>"Did I not reveal myself to the house of your father?"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="7"><strong>R</strong> — "Did I not reveal myself?" God (1cs) is both subject and object of the self-disclosure; unambiguously reflexive.</td>
+  </tr>
+
+  <!-- 15 -->
+  <tr>
+    <td>15</td>
+    <td><span class="heb">יִנָּכֶה</span></td>
+    <td>Imperf. 3ms</td>
+    <td>Exo 21:20</td>
+    <td>"he shall be struck / beaten"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="7"><strong>P</strong> — "he shall be struck." Exo 21:20 legal text; the servant receives the blow from the master. I-נ Niphal with dagesh forte in <span class="heb">כּ</span>.</td>
+  </tr>
+
+  <!-- 16 -->
+  <tr>
+    <td>16</td>
+    <td><span class="heb">נָשׁוּב</span></td>
+    <td>Perf. 3ms</td>
+    <td>—</td>
+    <td>"he/it returned / was brought back"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r16">
+    <td colspan="7"><strong>SA or P</strong> — Ambiguous: hollow Niphal of שׁוב can be simple intransitive (returned on its own) or passive (was brought back). Context determines which applies.</td>
+  </tr>
+
+  <!-- 17 -->
+  <tr>
+    <td>17</td>
+    <td><span class="heb">תִּגָּלֶה</span></td>
+    <td>Imperf. 3fs</td>
+    <td>Isa 40:5</td>
+    <td>"the glory of the LORD will be revealed"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r17">
+    <td colspan="7"><strong>P</strong> — "will be revealed." Isa 40:5; the glory of the LORD is disclosed/uncovered to all flesh. Feminine prefix <span class="heb">תּ</span> + <span class="heb">ֶה</span> ending.</td>
+  </tr>
+
+  <!-- 18 -->
+  <tr>
+    <td>18</td>
+    <td><span class="heb">נִגְלֶה</span></td>
+    <td>Participle ms</td>
+    <td>—</td>
+    <td>"being revealed / one who reveals himself"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r18">
+    <td colspan="7"><strong>R (or P)</strong> — Participle can be reflexive (one making himself known) or passive (one being revealed). The III-ה Niphal participle ends in <span class="heb">ֶה</span>.</td>
+  </tr>
+
+  <!-- 19 -->
+  <tr>
+    <td>19</td>
+    <td><span class="heb">הִנָּגֵשׁ</span></td>
+    <td>Inf. Absolute</td>
+    <td>—</td>
+    <td>"to approach"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r19">
+    <td colspan="7"><strong>SA</strong> — "to approach." Niphal infinitive absolute of נגש; simple intransitive movement. <span class="heb">הִ</span> prefix + dagesh forte in <span class="heb">נּ</span> (assimilated root nun).</td>
+  </tr>
+
+  <!-- 20 -->
+  <tr>
+    <td>20</td>
+    <td><span class="heb">נִרְאוּ</span></td>
+    <td>Perf. 3cp</td>
+    <td>Gen 1:9</td>
+    <td>"let the dry ground appear"</td>
+    <td><input class="parse-field" placeholder="P/R/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r20">
+    <td colspan="7"><strong>SA or R</strong> — Gen 1:9; "let the dry ground appear / show itself." The land comes into view; neither a clear external agent (not purely passive) nor a deliberate reflexive action. Simple Action or Reflexive are both defensible.</td>
+  </tr>
+
+</table>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+}
+</script>
+</body>
+</html>

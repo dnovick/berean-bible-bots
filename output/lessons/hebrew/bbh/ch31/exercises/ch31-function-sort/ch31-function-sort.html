@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 31 — Piel Semantic Function Sort (Weak Roots)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1000px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  input.ans-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .ref-table td, .ref-table th { font-size: .85em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.ans-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 31 — Piel Semantic Function Sort (Weak Roots)</h1>
+<p class="subtitle">BBH Chapter 31 · Piel Weak Verbs</p>
+
+<p>Classify each Piel verb as <strong>I</strong> (Intensive), <strong>F</strong> (Factitive), <strong>D</strong> (Declarative), <strong>SA</strong> (Simple Action), or <strong>DN</strong> (Denominative). All roots are weak. Type your answer in the Function column, then click <strong>▶ Answer</strong> to check.</p>
+
+<table class="ref-table">
+  <tr><th>Code</th><th>Function</th><th>Key diagnostic question</th></tr>
+  <tr><td><strong>I</strong></td><td>Intensive</td><td>Does the subject do the Qal action more forcefully, completely, or repeatedly?</td></tr>
+  <tr><td><strong>F</strong></td><td>Factitive</td><td>Does the subject cause an object to <em>enter</em> a state? (Stative Qal root.)</td></tr>
+  <tr><td><strong>D</strong></td><td>Declarative</td><td>Does the subject <em>pronounce or treat</em> something as being in a state?</td></tr>
+  <tr><td><strong>SA</strong></td><td>Simple Action</td><td>Is the Piel the standard form with no common Qal equivalent?</td></tr>
+  <tr><td><strong>DN</strong></td><td>Denominative</td><td>Is the Piel verb built on a <em>noun</em> and performs that noun's characteristic action?</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Tip:</strong> Stative root (to be X) + Piel = Piel <em>causes</em> X → <strong>Factitive</strong>.
+  Active root (to do X) + Piel = Piel does X more intensely → <strong>Intensive</strong>.
+  No common Qal → <strong>Simple Action</strong>.
+  Built on a noun → <strong>Denominative</strong>.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th><th>Hebrew Form</th><th>Conjugation</th><th>Root</th><th>Ref</th><th>Contextual Gloss</th><th>Function</th><th></th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">בֵּרַךְ</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">ברך</span></td>
+    <td>Gen 1:28</td>
+    <td>"God blessed them"</td>
+    <td><input class="ans-field" id="f1" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">ברך</span> (Qal: to kneel/bless — rare) · Piel = formal, intensive bestowal of divine favor; the standard OT word for blessing</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">גִּלָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">גלה</span></td>
+    <td>Gen 35:7</td>
+    <td>"God revealed himself to him"</td>
+    <td><input class="ans-field" id="f2" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">גלה</span> (Qal: to uncover / go into exile) · Piel = reveal completely, disclose thoroughly. III-ה root; dagesh in ל</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">חִזֵּק</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">חזק</span></td>
+    <td>Exo 4:21</td>
+    <td>"I will harden his heart"</td>
+    <td><input class="ans-field" id="f3" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="8"><strong>F — Factitive</strong> · Root: <span class="heb">חזק</span> (Qal: to be strong/hard — stative) · Piel = cause to enter the state of hardness; "he hardened [Pharaoh's heart]." Classic Factitive</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">כִּלָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">כלה</span></td>
+    <td>Gen 2:2</td>
+    <td>"God finished his work"</td>
+    <td><input class="ans-field" id="f4" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="8"><strong>I or F — Intensive / Factitive</strong> · Root: <span class="heb">כלה</span> (Qal: to be complete/finished — stative) · Factitive: cause to reach completion; Intensive: finish thoroughly. Either analysis is acceptable</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">צִוָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">צוה</span></td>
+    <td>Gen 2:16</td>
+    <td>"the LORD commanded the man"</td>
+    <td><input class="ans-field" id="f5" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">צוה</span> (no common Qal) · Commanding is the Piel's own basic function. III-ה root</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">בֵּרֲכוּ</span></td>
+    <td>Perfect 3cp</td>
+    <td><span class="heb">ברך</span></td>
+    <td>—</td>
+    <td>"they blessed"</td>
+    <td><input class="ans-field" id="f6" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">ברך</span> (same as #1) · Note hateph-patach under ר in 3cp form — I-guttural effect in conjugation. Function identical to #1</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">יְבָרֵךְ</span></td>
+    <td>Imperfect 3ms</td>
+    <td><span class="heb">ברך</span></td>
+    <td>Psa 115:12</td>
+    <td>"the LORD will bless"</td>
+    <td><input class="ans-field" id="f7" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">ברך</span> · Piel imperfect 3ms; shewa under יְ + qamets + tsere = Piel imperfect marker. Blessing = intensive/formal divine action</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">יְצַוֶּה</span></td>
+    <td>Imperfect 3ms</td>
+    <td><span class="heb">צוה</span></td>
+    <td>—</td>
+    <td>"he will command"</td>
+    <td><input class="ans-field" id="f8" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">צוה</span> (no common Qal) · Piel imperfect 3ms; note III-ה contraction with tsere-yod pattern. Function identical to #5</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">וַיְבָרֶךְ</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">ברך</span></td>
+    <td>Gen 1:22</td>
+    <td>"God blessed them"</td>
+    <td><input class="ans-field" id="f9" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">ברך</span> · Waw-consecutive + Piel imperfect; same function as #1 and #7</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">וַיְצַו</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">צוה</span></td>
+    <td>Gen 3:11</td>
+    <td>"which I commanded you"</td>
+    <td><input class="ans-field" id="f10" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">צוה</span> · Wayyiqtol 3ms; III-ה root contracts (ה drops in wayyiqtol). No Qal; commanding = Piel primary</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">חִיָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">חיה</span></td>
+    <td>Gen 47:25</td>
+    <td>"you have kept us alive"</td>
+    <td><input class="ans-field" id="f11" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="8"><strong>F — Factitive</strong> · Root: <span class="heb">חיה</span> (Qal: to live/be alive — stative) · Piel = cause to be alive = preserve, keep alive. Classic Factitive</td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">שִׁלֵּם</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">שׁלם</span></td>
+    <td>Exo 22:2</td>
+    <td>"he shall make full restitution"</td>
+    <td><input class="ans-field" id="f12" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="8"><strong>I or F — Intensive / Factitive</strong> · Root: <span class="heb">שׁלם</span> (Qal: to be complete/at peace — stative) · Factitive: cause completion (pay in full); Intensive: pay thoroughly. Legal "make restitution" = both analyses are valid</td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">עִנָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">ענה</span></td>
+    <td>Gen 15:13</td>
+    <td>"they will afflict them"</td>
+    <td><input class="ans-field" id="f13" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="8"><strong>F — Factitive</strong> · Root: <span class="heb">ענה</span> II (Qal: to be afflicted/humbled — stative; distinct from ענה I "answer") · Piel = cause to be in a state of affliction. I-guttural (ע) + III-ה</td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">כִּנָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">כנה</span></td>
+    <td>Isa 45:4</td>
+    <td>"I gave you a title"</td>
+    <td><input class="ans-field" id="f14" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="8"><strong>DN — Denominative</strong> · Root: <span class="heb">כנה</span> (noun: <span class="heb">כִּנּוּי</span> "title/surname/honorific") · To give someone a title or name. God assigns an honorific to Cyrus. Denominative = verb performs the noun's characteristic action</td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">בִּקֵּשׁ</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">בקש</span></td>
+    <td>Gen 37:15</td>
+    <td>"what are you seeking?"</td>
+    <td><input class="ans-field" id="f15" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">בקש</span> (no common Qal) · Seeking/searching is the Piel's primary function; strong root but no Qal counterpart in standard use</td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td><span class="heb">יְבַקֵּשׁ</span></td>
+    <td>Imperfect 3ms</td>
+    <td><span class="heb">בקש</span></td>
+    <td>—</td>
+    <td>"he will seek"</td>
+    <td><input class="ans-field" id="f16" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r16">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">בקש</span> · Piel imperfect 3ms; same analysis as #15</td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td><span class="heb">גִּלָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">גלה</span></td>
+    <td>Amo 3:7</td>
+    <td>"he reveals his secret to his servants"</td>
+    <td><input class="ans-field" id="f17" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r17">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">גלה</span> (same form as #2) · Different context: God discloses prophetic secrets to his prophets. Thorough, intentional revelation. Same analysis as #2</td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td><span class="heb">שִׁנָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">שׁנה</span></td>
+    <td>—</td>
+    <td>"he changed / altered"</td>
+    <td><input class="ans-field" id="f18" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r18">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">שׁנה</span> (Qal: to change/repeat) · Piel = alter thoroughly, change completely. III-ה root; dagesh in נ</td>
+  </tr>
+
+  <tr>
+    <td>19</td>
+    <td><span class="heb">חִזְּקוּ</span></td>
+    <td>Perfect 3cp</td>
+    <td><span class="heb">חזק</span></td>
+    <td>—</td>
+    <td>"they strengthened / encouraged"</td>
+    <td><input class="ans-field" id="f19" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r19">
+    <td colspan="8"><strong>F — Factitive</strong> · Root: <span class="heb">חזק</span> (Qal: to be strong — stative) · Piel 3cp = they caused [others] to be strong = they strengthened/encouraged. Same analysis as #3</td>
+  </tr>
+
+  <tr>
+    <td>20</td>
+    <td><span class="heb">בִּנָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">בנה</span></td>
+    <td>1 Kgs 6:2</td>
+    <td>"Solomon built the house"</td>
+    <td><input class="ans-field" id="f20" placeholder="I/F/D/SA/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r20">
+    <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">בנה</span> (Qal: to build) · Piel = build thoroughly, construct comprehensively. Used of Solomon's comprehensive temple-building program. III-ה root; dagesh in נ</td>
+  </tr>
+
+</table>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  const btn = row.previousElementSibling.querySelector('.reveal-btn');
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    btn.textContent = '▶ Answer';
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('input.ans-field').forEach(i => i.value = '');
+}
+</script>
+
+</body>
+</html>

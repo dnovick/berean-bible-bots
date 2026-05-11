@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 34 — Qal / Piel / Hithpael Contrast Drill (Strong Roots)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 960px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  h3 { font-size: 1em; margin-top: 1.6em; color: #333; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  input.ans-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .note { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: .6em 0; font-size: .85em; }
+  .ref-table td, .ref-table th { font-size: .85em; }
+  .group-header td { background: #e8eef6 !important; font-weight: bold; font-size: .88em; color: #2a4a6e; }
+  .discussion { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  ol.disc { margin: .4em 0 0 1.2em; padding: 0; }
+  ol.disc li { margin-bottom: .4em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.ans-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 34 — Qal / Piel / Hithpael Contrast Drill (Strong Roots)</h1>
+<p class="subtitle">BBH Chapter 34 · Hithpael Strong Verbs</p>
+
+<p>Each group of three shares the same root. For each form: (1) identify the <strong>stem</strong>, (2) describe the <strong>semantic function</strong>, (3) provide an English <strong>translation</strong>. Type your answers in the fields, then click <strong>▶ Answer</strong> to check.</p>
+
+<table class="ref-table">
+  <tr><th>Stem</th><th>Prefix</th><th>R2 Feature</th><th>Function</th></tr>
+  <tr><td><strong>Qal</strong></td><td>none</td><td>none</td><td>Basic action / stative</td></tr>
+  <tr><td><strong>Piel</strong></td><td>none</td><td>Dagesh Forte</td><td>Factitive / intensive</td></tr>
+  <tr><td><strong>Hithpael</strong></td><td><span class="heb">הִתְ–</span></td><td>Dagesh Forte</td><td>Reflexive / reciprocal</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Tip:</strong> Hithpael = <span class="heb">הִתְ</span> prefix + Dagesh in R2 + Patakh under R1 (perfect).
+  Piel = Dagesh in R2, no prefix, Tsere under R1.
+  Qal = neither Dagesh nor <span class="heb">הִתְ</span> prefix.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th><th>Hebrew</th><th>Stem</th><th>Function</th><th>Translation</th><th></th>
+  </tr>
+
+  <!-- Group 1: קדשׁ -->
+  <tr class="group-header">
+    <td colspan="6">Group 1 — Root: <span class="heb">קדשׁ</span> (to be holy)</td>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">קָדַשׁ</span></td>
+    <td><input class="ans-field" id="f1s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f1f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f1t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="6"><strong>Qal Perfect 3ms</strong> · <em>Stative:</em> subject is in the state of holiness · "he was holy / became holy"</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">קִדֵּשׁ</span></td>
+    <td><input class="ans-field" id="f2s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f2f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f2t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="6"><strong>Piel Perfect 3ms</strong> · <em>Factitive:</em> subject causes the object to become holy · "he consecrated / made holy"</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">הִתְקַדֵּשׁ</span></td>
+    <td><input class="ans-field" id="f3s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f3f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f3t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="6"><strong>Hithpael Perfect 3ms</strong> · <em>Reflexive:</em> subject consecrates itself · "he consecrated himself / made himself holy"</td>
+  </tr>
+
+  <!-- Group 2: כבד -->
+  <tr class="group-header">
+    <td colspan="6">Group 2 — Root: <span class="heb">כבד</span> (to be heavy / honored)</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">כָּבֵד</span></td>
+    <td><input class="ans-field" id="f4s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f4f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f4t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="6"><strong>Qal Perfect 3ms</strong> · <em>Stative:</em> subject is in the state of being heavy or honored · "he was heavy / was honored"</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">כִּבֵּד</span></td>
+    <td><input class="ans-field" id="f5s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f5f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f5t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="6"><strong>Piel Perfect 3ms</strong> · <em>Factitive:</em> subject treats another as weighty / causes another to be honored · "he honored"</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">הִתְכַּבֵּד</span></td>
+    <td><input class="ans-field" id="f6s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f6f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f6t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="6"><strong>Hithpael Perfect 3ms</strong> · <em>Reflexive:</em> subject honors or glorifies itself · "he honored himself / gloried"</td>
+  </tr>
+
+  <!-- Group 3: שׁמר -->
+  <tr class="group-header">
+    <td colspan="6">Group 3 — Root: <span class="heb">שׁמר</span> (to keep / guard) — sibilant metathesis: <span class="heb">הִתְ + שׁ → הִשְׁתְּ</span></td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">שָׁמַר</span></td>
+    <td><input class="ans-field" id="f7s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f7f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f7t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="6"><strong>Qal Perfect 3ms</strong> · <em>Basic:</em> subject keeps / guards an object · "he kept / guarded"</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">שִׁמֵּר</span></td>
+    <td><input class="ans-field" id="f8s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f8f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f8t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="6"><strong>Piel Perfect 3ms</strong> · <em>Intensive:</em> subject keeps carefully / watches over diligently · "he kept carefully / watched over"</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">הִשְׁתַּמֵּר</span></td>
+    <td><input class="ans-field" id="f9s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f9f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f9t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="6"><strong>Hithpael Perfect 3ms</strong> · <em>Reflexive:</em> subject guards itself · "he kept himself / was on guard" · Note: sibilant metathesis — <span class="heb">הִתְ + שׁ → הִשְׁתְּ</span> (ת and שׁ swap positions)</td>
+  </tr>
+
+  <!-- Group 4: פלל -->
+  <tr class="group-header">
+    <td colspan="6">Group 4 — Root: <span class="heb">פלל</span> (to judge / intervene)</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">פָּלַל</span></td>
+    <td><input class="ans-field" id="f10s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f10f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f10t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="6"><strong>Qal Perfect 3ms</strong> · <em>Basic:</em> subject judges or intervenes · "he judged / intervened"</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">פִּלֵּל</span></td>
+    <td><input class="ans-field" id="f11s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f11f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f11t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="6"><strong>Piel Perfect 3ms</strong> · <em>Intensive:</em> subject actively intercedes / judges · "he judged / interceded"</td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">הִתְפַּלֵּל</span></td>
+    <td><input class="ans-field" id="f12s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f12f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f12t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="6"><strong>Hithpael Perfect 3ms</strong> · <em>Reflexive/Denominative:</em> subject pleads its own case before God · "he prayed" · The Hithpael of פלל became the standard OT word for prayer</td>
+  </tr>
+
+  <!-- Group 5: ברך -->
+  <tr class="group-header">
+    <td colspan="6">Group 5 — Root: <span class="heb">ברך</span> (to kneel / bless)</td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">בָּרַךְ</span></td>
+    <td><input class="ans-field" id="f13s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f13f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f13t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="6"><strong>Qal Perfect 3ms</strong> · <em>Basic:</em> subject kneels · "he knelt"</td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">בֵּרַךְ</span></td>
+    <td><input class="ans-field" id="f14s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f14f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f14t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="6"><strong>Piel Perfect 3ms</strong> · <em>Factitive:</em> subject conveys blessing to another · "he blessed"</td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">הִתְבָּרֵךְ</span></td>
+    <td><input class="ans-field" id="f15s" placeholder="Stem"></td>
+    <td><input class="ans-field" id="f15f" placeholder="Function"></td>
+    <td><input class="ans-field" id="f15t" placeholder="Translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="6"><strong>Hithpael Perfect 3ms</strong> · <em>Reflexive:</em> subject receives or enacts blessing for/upon itself · "he blessed himself / was blessed" · This form appears in the Abrahamic promise formula (Gen 22:18); it can carry a passive nuance</td>
+  </tr>
+
+</table>
+
+<h2>Discussion Questions</h2>
+<div class="discussion">
+  <ol class="disc">
+    <li>The Piel and Hithpael of <span class="heb">קדשׁ</span> look similar: <span class="heb">קִדֵּשׁ</span> vs. <span class="heb">הִתְקַדֵּשׁ</span>. What two visual markers distinguish the Hithpael from the Piel in every strong-root form?</li>
+    <li>In Group 4, the Hithpael of <span class="heb">פלל</span> is commonly translated "to pray." How does the reflexive meaning ("to plead one's own case") illuminate the theology of prayer in the OT?</li>
+    <li>The Hithpael of <span class="heb">ברך</span> (<span class="heb">הִתְבָּרֵךְ</span>) is sometimes translated passively: "be blessed." What does this tell us about the overlap between the Hithpael's reflexive and passive functions?</li>
+    <li>Look at Group 3 and the metathesis form <span class="heb">הִשְׁתַּמֵּר</span>. Without the metathesis note, how would you have identified this as a Hithpael rather than a Hiphil or Niphal?</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  const btn = row.previousElementSibling.querySelector('.reveal-btn');
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    btn.textContent = '▶ Answer';
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('input.ans-field').forEach(i => i.value = '');
+}
+</script>
+</body>
+</html>

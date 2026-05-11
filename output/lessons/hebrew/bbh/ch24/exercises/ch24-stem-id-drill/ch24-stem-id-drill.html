@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 24 — Stem-ID Drill (Strong Roots)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 960px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
+  td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .85em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .note { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 24 — Stem-ID Drill (Strong Roots)</h1>
+<p class="subtitle">BBH Chapter 24 · Niphal Strong Verbs</p>
+
+<p>For each Hebrew form, identify: (1) <strong>Stem</strong> (Qal or Niphal), (2) <strong>Conjugation</strong>, (3) <strong>PGN</strong> (write <em>—</em> for non-finite), (4) <strong>Root</strong>.</p>
+
+<div class="note"><strong>Note on items 18 &amp; 20:</strong> <span class="heb">הִשָּׁמֵר</span> is ambiguous — Niphal Imperative 2ms and Niphal Inf. Absolute are identical in form. Both analyses are accepted.</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Hebrew</th>
+    <th>Stem</th>
+    <th>Conjugation</th>
+    <th>PGN</th>
+    <th>Root</th>
+    <th></th>
+  </tr>
+
+  <!-- 1 -->
+  <tr>
+    <td>1</td>
+    <td><span class="heb">קָטַל</span></td>
+    <td><input class="parse-field" id="f1a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f1b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f1c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f1d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="7"><strong>Qal</strong> · Perfect · 3ms · <span class="heb">קטל</span> — The paradigm root; Qal Perfect 3ms is the dictionary form.</td>
+  </tr>
+
+  <!-- 2 -->
+  <tr>
+    <td>2</td>
+    <td><span class="heb">נִקְטַל</span></td>
+    <td><input class="parse-field" id="f2a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f2b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f2c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f2d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="7"><strong>Niphal</strong> · Perfect · 3ms · <span class="heb">קטל</span> — נִ prefix + patach under second root letter is the Niphal Perfect 3ms signature.</td>
+  </tr>
+
+  <!-- 3 -->
+  <tr>
+    <td>3</td>
+    <td><span class="heb">שָׁמַר</span></td>
+    <td><input class="parse-field" id="f3a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f3b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f3c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f3d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="7"><strong>Qal</strong> · Perfect · 3ms · <span class="heb">שׁמר</span> — Qamets under first root letter, patach under second: standard Qal Perfect 3ms.</td>
+  </tr>
+
+  <!-- 4 -->
+  <tr>
+    <td>4</td>
+    <td><span class="heb">נִשְׁמַר</span></td>
+    <td><input class="parse-field" id="f4a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f4b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f4c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f4d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="7"><strong>Niphal</strong> · Perfect · 3ms · <span class="heb">שׁמר</span> — נִ prefix signals Niphal; shewa under shin because nun has closed the syllable before it.</td>
+  </tr>
+
+  <!-- 5 -->
+  <tr>
+    <td>5</td>
+    <td><span class="heb">מָכַר</span></td>
+    <td><input class="parse-field" id="f5a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f5b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f5c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f5d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="7"><strong>Qal</strong> · Perfect · 3ms · <span class="heb">מכר</span> — to sell.</td>
+  </tr>
+
+  <!-- 6 -->
+  <tr>
+    <td>6</td>
+    <td><span class="heb">נִמְכַּר</span></td>
+    <td><input class="parse-field" id="f6a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f6b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f6c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f6d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="7"><strong>Niphal</strong> · Perfect · 3ms · <span class="heb">מכר</span> — "he was sold"; dagesh forte in כּ is characteristic of some Niphal Perfect forms with certain roots.</td>
+  </tr>
+
+  <!-- 7 -->
+  <tr>
+    <td>7</td>
+    <td><span class="heb">כָּרַת</span></td>
+    <td><input class="parse-field" id="f7a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f7b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f7c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f7d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="7"><strong>Qal</strong> · Perfect · 3ms · <span class="heb">כרת</span> — to cut (a covenant).</td>
+  </tr>
+
+  <!-- 8 -->
+  <tr>
+    <td>8</td>
+    <td><span class="heb">נִכְרַת</span></td>
+    <td><input class="parse-field" id="f8a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f8b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f8c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f8d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="7"><strong>Niphal</strong> · Perfect · 3ms · <span class="heb">כרת</span> — "he/it was cut off"; common in legal formulas (כָּרֵת penalty).</td>
+  </tr>
+
+  <!-- 9 -->
+  <tr>
+    <td>9</td>
+    <td><span class="heb">יִשְׁמֹר</span></td>
+    <td><input class="parse-field" id="f9a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f9b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f9c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f9d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="7"><strong>Qal</strong> · Imperfect · 3ms · <span class="heb">שׁמר</span> — יִ prefix + shewa under first root letter + holem (ō) theme vowel = Qal Imperfect.</td>
+  </tr>
+
+  <!-- 10 -->
+  <tr>
+    <td>10</td>
+    <td><span class="heb">יִשָּׁמֵר</span></td>
+    <td><input class="parse-field" id="f10a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f10b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f10c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f10d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="7"><strong>Niphal</strong> · Imperfect · 3ms · <span class="heb">שׁמר</span> — dagesh forte in שּׁ (assimilated nun from נִ) + tsere (ē) theme vowel = Niphal Imperfect signature.</td>
+  </tr>
+
+  <!-- 11 -->
+  <tr>
+    <td>11</td>
+    <td><span class="heb">יִמָּכֵר</span></td>
+    <td><input class="parse-field" id="f11a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f11b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f11c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f11d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="7"><strong>Niphal</strong> · Imperfect · 3ms · <span class="heb">מכר</span> — dagesh forte in מּ + qamets + tsere = Niphal Imperfect. "he will be sold."</td>
+  </tr>
+
+  <!-- 12 -->
+  <tr>
+    <td>12</td>
+    <td><span class="heb">יִמְכֹּר</span></td>
+    <td><input class="parse-field" id="f12a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f12b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f12c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f12d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="7"><strong>Qal</strong> · Imperfect · 3ms · <span class="heb">מכר</span> — shewa under מ (no dagesh), holem theme vowel = Qal Imperfect. "he will sell."</td>
+  </tr>
+
+  <!-- 13 -->
+  <tr>
+    <td>13</td>
+    <td><span class="heb">וַיִּשְׁמֹר</span></td>
+    <td><input class="parse-field" id="f13a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f13b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f13c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f13d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="7"><strong>Qal</strong> · Wayyiqtol · 3ms · <span class="heb">שׁמר</span> — וַיִּ + shewa + holem = Qal Wayyiqtol (waw-consecutive + imperfect).</td>
+  </tr>
+
+  <!-- 14 -->
+  <tr>
+    <td>14</td>
+    <td><span class="heb">וַיִּשָּׁמֵר</span></td>
+    <td><input class="parse-field" id="f14a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f14b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f14c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f14d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="7"><strong>Niphal</strong> · Wayyiqtol · 3ms · <span class="heb">שׁמר</span> — וַיִּ + dagesh forte in שּׁ + tsere = Niphal Wayyiqtol. "and he guarded himself / was guarded."</td>
+  </tr>
+
+  <!-- 15 -->
+  <tr>
+    <td>15</td>
+    <td><span class="heb">וַיִּמָּכֵר</span></td>
+    <td><input class="parse-field" id="f15a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f15b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f15c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f15d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="7"><strong>Niphal</strong> · Wayyiqtol · 3ms · <span class="heb">מכר</span> — dagesh forte in מּ + tsere = Niphal Wayyiqtol. "and he was sold" (Gen 37:36).</td>
+  </tr>
+
+  <!-- 16 -->
+  <tr>
+    <td>16</td>
+    <td><span class="heb">וַיִּמְכֹּר</span></td>
+    <td><input class="parse-field" id="f16a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f16b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f16c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f16d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r16">
+    <td colspan="7"><strong>Qal</strong> · Wayyiqtol · 3ms · <span class="heb">מכר</span> — no dagesh in מ, holem theme vowel = Qal Wayyiqtol. "and he sold."</td>
+  </tr>
+
+  <!-- 17 -->
+  <tr>
+    <td>17</td>
+    <td><span class="heb">שְׁמֹר</span></td>
+    <td><input class="parse-field" id="f17a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f17b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f17c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f17d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r17">
+    <td colspan="7"><strong>Qal</strong> · Imperative · 2ms · <span class="heb">שׁמר</span> — shewa under first root letter, holem theme vowel; no prefix. "Keep! / Guard!"</td>
+  </tr>
+
+  <!-- 18 -->
+  <tr>
+    <td>18</td>
+    <td><span class="heb">הִשָּׁמֵר</span></td>
+    <td><input class="parse-field" id="f18a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f18b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f18c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f18d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r18">
+    <td colspan="7"><strong>Niphal</strong> · <em>Imperative 2ms <strong>or</strong> Inf. Absolute</em> · 2ms / — · <span class="heb">שׁמר</span> — הִ prefix + dagesh forte in שּׁ + tsere: these two Niphal forms are <em>identical</em>. Context determines which is intended. "Watch out! / Beware!" (Deut 6:12).</td>
+  </tr>
+
+  <!-- 19 -->
+  <tr>
+    <td>19</td>
+    <td><span class="heb">שָׁמוֹר</span></td>
+    <td><input class="parse-field" id="f19a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f19b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f19c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f19d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r19">
+    <td colspan="7"><strong>Qal</strong> · Inf. Absolute · — · <span class="heb">שׁמר</span> — Qamets under first root letter, ō (vav) vowel letter in second syllable = Qal Inf. Absolute pattern.</td>
+  </tr>
+
+  <!-- 20 -->
+  <tr>
+    <td>20</td>
+    <td><span class="heb">הִשָּׁמֵר</span></td>
+    <td><input class="parse-field" id="f20a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f20b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f20c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f20d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r20">
+    <td colspan="7"><strong>Niphal</strong> · <em>Inf. Absolute <strong>or</strong> Imperative 2ms</em> · — / 2ms · <span class="heb">שׁמר</span> — Same form as #18. Both analyses are correct; see context.</td>
+  </tr>
+
+  <!-- 21 -->
+  <tr>
+    <td>21</td>
+    <td><span class="heb">הִנָּתֵן</span></td>
+    <td><input class="parse-field" id="f21a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f21b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f21c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f21d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r21">
+    <td colspan="7"><strong>Niphal</strong> · Inf. Absolute · — · <span class="heb">נתן</span> — הִ prefix; the I-נ root's nun assimilates into the following נּ via dagesh forte. "to be given."</td>
+  </tr>
+
+  <!-- 22 -->
+  <tr>
+    <td>22</td>
+    <td><span class="heb">נָתוֹן</span></td>
+    <td><input class="parse-field" id="f22a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f22b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f22c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f22d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r22">
+    <td colspan="7"><strong>Qal</strong> · Inf. Absolute · — · <span class="heb">נתן</span> — Qamets under first root letter, ō (vav) vowel letter = Qal Inf. Absolute. "to give."</td>
+  </tr>
+
+  <!-- 23 -->
+  <tr>
+    <td>23</td>
+    <td><span class="heb">שֹׁמֵר</span></td>
+    <td><input class="parse-field" id="f23a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f23b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f23c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f23d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r23">
+    <td colspan="7"><strong>Qal</strong> · Participle · ms · <span class="heb">שׁמר</span> — Holem under first root letter, tsere under second = Qal Active Participle ms. "one who keeps / a guard."</td>
+  </tr>
+
+  <!-- 24 -->
+  <tr>
+    <td>24</td>
+    <td><span class="heb">נִשְׁמָר</span></td>
+    <td><input class="parse-field" id="f24a" placeholder="Stem…"></td>
+    <td><input class="parse-field" id="f24b" placeholder="Conjugation…"></td>
+    <td><input class="parse-field" id="f24c" placeholder="PGN…"></td>
+    <td><input class="parse-field" id="f24d" placeholder="Root…"></td>
+    <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r24">
+    <td colspan="7"><strong>Niphal</strong> · Participle · ms · <span class="heb">שׁמר</span> — נִ prefix + qamets under second root letter = Niphal Participle ms. "one being kept / guarded."</td>
+  </tr>
+
+</table>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+}
+</script>
+</body>
+</html>

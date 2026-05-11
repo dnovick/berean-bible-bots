@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 30 — Stem Identification Drill (Strong Roots)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1000px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .85em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .ref-table td, .ref-table th { font-size: .85em; }
+  .note { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 30 — Stem Identification Drill (Strong Roots)</h1>
+<p class="subtitle">BBH Chapter 30 · Piel Strong Verbs</p>
+
+<p>For each form, identify the <strong>Stem</strong> (Qal / Niphal / Hiphil / Hophal / Piel), <strong>Conjugation</strong>, <strong>PGN</strong> (where applicable), and <strong>Root</strong>. Type your answers in the fields, then click <strong>▶ Answer</strong> to check.</p>
+
+<table class="ref-table">
+  <tr><th>Stem</th><th>Key Marker</th></tr>
+  <tr><td><strong>Qal</strong></td><td>No prefix; basic a–a perfect / i-vowel imperfect; no dagesh in R2</td></tr>
+  <tr><td><strong>Niphal</strong></td><td>נִ prefix (perfect); assimilated נ → dagesh in R1 (imperfect/wayyiqtol)</td></tr>
+  <tr><td><strong>Hiphil</strong></td><td>הִ prefix (perfect); יַ / תַ / נַ / אַ (imperfect); chirik + yod vowel chain</td></tr>
+  <tr><td><strong>Hophal</strong></td><td>הָ / הֻ prefix; no dagesh; o/u vowel pattern</td></tr>
+  <tr><td><strong>Piel</strong></td><td>Dagesh forte in R2 + ִ–ֵ (perfect) / shewa–patach (imperfect)</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Quick check:</strong> See a dagesh in the <em>middle</em> consonant? → <strong>Piel</strong> (or Pual).
+  See <span class="heb">נִ</span> prefix or assimilated dagesh with qamets-tsere vowels? → <strong>Niphal</strong>.
+  See <span class="heb">הִ</span> + chirik–yod chain? → <strong>Hiphil</strong>.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">קָטַל</span></td>
+    <td><input class="parse-field" id="s1" placeholder="stem"></td>
+    <td><input class="parse-field" id="c1" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p1" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r1i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="7"><strong>Qal · Perfect · 3ms · קטל</strong> — Basic a–a vowel pattern; no prefix, no dagesh in ט</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">קִטֵּל</span></td>
+    <td><input class="parse-field" id="s2" placeholder="stem"></td>
+    <td><input class="parse-field" id="c2" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p2" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r2i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="7"><strong>Piel · Perfect · 3ms · קטל</strong> — Dagesh forte in ט (R2) + chirik–tsere vowels = Piel perfect marker</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">הִקְטִיל</span></td>
+    <td><input class="parse-field" id="s3" placeholder="stem"></td>
+    <td><input class="parse-field" id="c3" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p3" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r3i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="7"><strong>Hiphil · Perfect · 3ms · קטל</strong> — הִ prefix + chirik + yod (long ī vowel) = Hiphil perfect</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">נִקְטַל</span></td>
+    <td><input class="parse-field" id="s4" placeholder="stem"></td>
+    <td><input class="parse-field" id="c4" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p4" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r4i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="7"><strong>Niphal · Perfect · 3ms · קטל</strong> — נִ prefix visible in the 3ms perfect; the נ assimilates in imperfect/wayyiqtol forms</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">דִּבֶּר</span></td>
+    <td><input class="parse-field" id="s5" placeholder="stem"></td>
+    <td><input class="parse-field" id="c5" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p5" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r5i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="7"><strong>Piel · Perfect · 3ms · דבר</strong> — Dagesh in ב (R2) + chirik–segol; compare Qal #6 דָּבַר which has no dagesh</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">דָּבַר</span></td>
+    <td><input class="parse-field" id="s6" placeholder="stem"></td>
+    <td><input class="parse-field" id="c6" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p6" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r6i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="7"><strong>Qal · Perfect · 3ms · דבר</strong> — No dagesh in ב; qamets–patach = standard Qal perfect</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">יְדַבֵּר</span></td>
+    <td><input class="parse-field" id="s7" placeholder="stem"></td>
+    <td><input class="parse-field" id="c7" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p7" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r7i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="7"><strong>Piel · Imperfect · 3ms · דבר</strong> — Shewa under prefix יְ + dagesh in ב + tsere = Piel imperfect pattern</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">יִדְבַּר</span></td>
+    <td><input class="parse-field" id="s8" placeholder="stem"></td>
+    <td><input class="parse-field" id="c8" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p8" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r8i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="7"><strong>Qal · Imperfect · 3ms · דבר</strong> — Chirik under יִ; no dagesh in ב; patach under ב = Qal imperfect</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">יַדְבִּיר</span></td>
+    <td><input class="parse-field" id="s9" placeholder="stem"></td>
+    <td><input class="parse-field" id="c9" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p9" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r9i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="7"><strong>Hiphil · Imperfect · 3ms · דבר</strong> — Patach under יַ (Hiphil imperfect prefix) + chirik + yod</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">יִדָּבֵר</span></td>
+    <td><input class="parse-field" id="s10" placeholder="stem"></td>
+    <td><input class="parse-field" id="c10" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p10" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r10i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="7"><strong>Niphal · Imperfect · 3ms · דבר</strong> — Dagesh in ד (assimilated נ) + qamets–tsere = Niphal imperfect pattern</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">וַיְדַבֵּר</span></td>
+    <td><input class="parse-field" id="s11" placeholder="stem"></td>
+    <td><input class="parse-field" id="c11" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p11" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r11i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="7"><strong>Piel · Wayyiqtol · 3ms · דבר</strong> — Waw-consecutive + Piel imperfect; note shewa under יְ and dagesh in ב</td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">וַיִּדְבַּר</span></td>
+    <td><input class="parse-field" id="s12" placeholder="stem"></td>
+    <td><input class="parse-field" id="c12" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p12" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r12i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="7"><strong>Qal · Wayyiqtol · 3ms · דבר</strong> — Dagesh in יּ (wayyiqtol marker) + Qal imperfect pattern (no dagesh in ב)</td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">וַיַּדְבֵּר</span></td>
+    <td><input class="parse-field" id="s13" placeholder="stem"></td>
+    <td><input class="parse-field" id="c13" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p13" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r13i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="7"><strong>Hiphil · Wayyiqtol · 3ms · דבר</strong> — Waw + patach under יַ (Hiphil prefix) + tsere</td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">וַיִּדָּבֵר</span></td>
+    <td><input class="parse-field" id="s14" placeholder="stem"></td>
+    <td><input class="parse-field" id="c14" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p14" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r14i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="7"><strong>Niphal · Wayyiqtol · 3ms · דבר</strong> — Waw + dagesh in ד (assimilated נ) + qamets–tsere</td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">דַּבֵּר</span></td>
+    <td><input class="parse-field" id="s15" placeholder="stem"></td>
+    <td><input class="parse-field" id="c15" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p15" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r15i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="7"><strong>Piel · Imperative · 2ms · דבר</strong> — Patach + dagesh in ב + tsere; no prefix. <em>Note: identical to #19 (Piel Inf. Abs.); context distinguishes them.</em></td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td><span class="heb">דְּבַר</span></td>
+    <td><input class="parse-field" id="s16" placeholder="stem"></td>
+    <td><input class="parse-field" id="c16" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p16" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r16i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r16">
+    <td colspan="7"><strong>Qal · Imperative · 2ms · דבר</strong> — Shewa under ד, patach under ב; no dagesh in ב; no prefix</td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td><span class="heb">הַדְבֵּר</span></td>
+    <td><input class="parse-field" id="s17" placeholder="stem"></td>
+    <td><input class="parse-field" id="c17" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p17" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r17i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r17">
+    <td colspan="7"><strong>Hiphil · Imperative · 2ms · דבר</strong> — הַ prefix + Hiphil vowel chain (tsere)</td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td><span class="heb">הִדָּבֵר</span></td>
+    <td><input class="parse-field" id="s18" placeholder="stem"></td>
+    <td><input class="parse-field" id="c18" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p18" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r18i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r18">
+    <td colspan="7"><strong>Niphal · Imperative · 2ms · דבר</strong> — הִ + dagesh in ד (assimilated נ) + qamets–tsere = Niphal imperative</td>
+  </tr>
+
+  <tr>
+    <td>19</td>
+    <td><span class="heb">דַּבֵּר</span></td>
+    <td><input class="parse-field" id="s19" placeholder="stem"></td>
+    <td><input class="parse-field" id="c19" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p19" placeholder="PGN / —"></td>
+    <td><input class="parse-field" id="r19i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r19">
+    <td colspan="7"><strong>Piel · Infinitive Absolute · — · דבר</strong> — Identical to Piel Imperative 2ms (#15). Context determines function (Inf. Abs. intensifies a finite verb; Imperative issues a command).</td>
+  </tr>
+
+  <tr>
+    <td>20</td>
+    <td><span class="heb">דָּבוֹר</span></td>
+    <td><input class="parse-field" id="s20" placeholder="stem"></td>
+    <td><input class="parse-field" id="c20" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p20" placeholder="PGN / —"></td>
+    <td><input class="parse-field" id="r20i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r20">
+    <td colspan="7"><strong>Qal · Infinitive Absolute · — · דבר</strong> — Qamets + holem-waw = standard Qal Inf. Abs. pattern</td>
+  </tr>
+
+  <tr>
+    <td>21</td>
+    <td><span class="heb">מְדַבֵּר</span></td>
+    <td><input class="parse-field" id="s21" placeholder="stem"></td>
+    <td><input class="parse-field" id="c21" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p21" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r21i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r21">
+    <td colspan="7"><strong>Piel · Participle · ms · דבר</strong> — מְ prefix + dagesh in ב + tsere = Piel active participle</td>
+  </tr>
+
+  <tr>
+    <td>22</td>
+    <td><span class="heb">דֹּבֵר</span></td>
+    <td><input class="parse-field" id="s22" placeholder="stem"></td>
+    <td><input class="parse-field" id="c22" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p22" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r22i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r22">
+    <td colspan="7"><strong>Qal · Participle · ms · דבר</strong> — Holem + tsere; no מ prefix; no dagesh in ב = Qal active participle</td>
+  </tr>
+
+  <tr>
+    <td>23</td>
+    <td><span class="heb">מַדְבִּיר</span></td>
+    <td><input class="parse-field" id="s23" placeholder="stem"></td>
+    <td><input class="parse-field" id="c23" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p23" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r23i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r23">
+    <td colspan="7"><strong>Hiphil · Participle · ms · דבר</strong> — מַ prefix + chirik + yod = Hiphil participle pattern</td>
+  </tr>
+
+  <tr>
+    <td>24</td>
+    <td><span class="heb">נִדְבָּר</span></td>
+    <td><input class="parse-field" id="s24" placeholder="stem"></td>
+    <td><input class="parse-field" id="c24" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p24" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r24i" placeholder="root"></td>
+    <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r24">
+    <td colspan="7"><strong>Niphal · Participle · ms · דבר</strong> — נִ prefix + qamets = Niphal participle pattern</td>
+  </tr>
+
+</table>
+
+<div class="note">
+  <strong>Note on items 15 and 19:</strong> <span class="heb">דַּבֵּר</span> is spelled identically whether it is the Piel Imperative 2ms ("Speak!") or the Piel Infinitive Absolute. For strong roots these two forms always share the same spelling. Context — whether the form commands an action or adverbially intensifies a finite verb — is the only distinguishing factor.
+</div>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  const btn = row.previousElementSibling.querySelector('.reveal-btn');
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    btn.textContent = '▶ Answer';
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+}
+</script>
+
+</body>
+</html>

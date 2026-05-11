@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 29 — Stem-ID Drill (Weak Roots)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 980px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .note { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 29 — Stem-ID Drill (Weak Roots)</h1>
+<p class="subtitle">BBH Chapter 29 · Hophal Weak Verbs</p>
+
+<p>This drill mixes 24 forms of weak roots (hollow and I-י) across all four stems learned through Chapter 29: <strong>Qal, Niphal, Hiphil, Hophal</strong>. For each item: (1) identify the stem, (2) parse the conjugation and PGN, (3) translate. Click <strong>▶ Answer</strong> to reveal the answer row.</p>
+
+<div class="tip">
+  <strong>Weak Hophal key:</strong> In hollow and I-י roots, the Hophal is always marked by <span class="heb">וּ</span> (shureq) in the prefix slot:
+  Perfect: <span class="heb">הוּ</span> · Imperfect: <span class="heb">יוּ</span> · Wayyiqtol: <span class="heb">וַיּוּ</span> · Participle: <span class="heb">מוּ</span>.
+  Hiphil contrast: Perfect <span class="heb">הֵ/הוֹ</span> + chiriq-yod in stem · Imperfect: a-class prefix vowel + chiriq-yod.
+  Niphal of hollow roots: uses full Niphal prefix נִ in Perfect; dagesh-forte in Imperfect/Wayyiqtol.
+</div>
+
+<div class="note">
+  <strong>Item 11 note:</strong> The Niphal Imperfect 3ms of hollow root <span class="heb">בוא</span> uses <span class="heb">יִוָּבֵא</span> — the נ assimilates and the middle root ו is retained as a consonant with dagesh.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Hebrew Form</th>
+    <th>Stem</th>
+    <th>Conjugation</th>
+    <th>PGN</th>
+    <th>Root</th>
+    <th>Translation</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">בָּא</span></td>
+    <td><input class="parse-field" id="s1" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c1" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p1" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r1" placeholder="root"></td>
+    <td><input class="parse-field" id="t1" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a1">
+    <td colspan="8"><strong>Qal · Perfect · 3ms · בוא</strong> — he came · <em>Hollow root contracts; qamets under בּ = Qal Perfect 3ms. No prefix vowel marker.</em></td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">הֵבִיא</span></td>
+    <td><input class="parse-field" id="s2" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c2" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p2" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r2" placeholder="root"></td>
+    <td><input class="parse-field" id="t2" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a2">
+    <td colspan="8"><strong>Hiphil · Perfect · 3ms · בוא</strong> — he brought · <em>Hiphil hollow: הֵ prefix (tsere) + chiriq-yod in contracted stem.</em></td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">נָבוֹא</span></td>
+    <td><input class="parse-field" id="s3" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c3" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p3" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r3" placeholder="root"></td>
+    <td><input class="parse-field" id="t3" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a3">
+    <td colspan="8"><strong>Niphal · Perfect · 3ms · בוא</strong> — he entered / he came in (reflexive) · <em>Niphal hollow Perfect: נָ prefix (qamets) + full stem with holem-waw. The נִ lengthens to נָ before the hollow root's long vowel.</em></td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">הוּבָא</span></td>
+    <td><input class="parse-field" id="s4" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c4" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p4" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r4" placeholder="root"></td>
+    <td><input class="parse-field" id="t4" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a4">
+    <td colspan="8"><strong>Hophal · Perfect · 3ms · בוא</strong> — he was brought · <em>Hophal hollow: הוּ prefix (shureq) + long ā vowel in contracted stem. The שׁוּרֶק is the key marker.</em></td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">שָׁב</span></td>
+    <td><input class="parse-field" id="s5" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c5" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p5" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r5" placeholder="root"></td>
+    <td><input class="parse-field" id="t5" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a5">
+    <td colspan="8"><strong>Qal · Perfect · 3ms · שׁוב</strong> — he returned · <em>Hollow root שׁוב contracts; qamets under שׁ = Qal Perfect 3ms.</em></td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">הֵשִׁיב</span></td>
+    <td><input class="parse-field" id="s6" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c6" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p6" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r6" placeholder="root"></td>
+    <td><input class="parse-field" id="t6" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a6">
+    <td colspan="8"><strong>Hiphil · Perfect · 3ms · שׁוב</strong> — he returned (it) / brought back · <em>Hiphil hollow: הֵ prefix + chiriq-yod. Used of God restoring Israel or of returning objects.</em></td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">יָרַד</span></td>
+    <td><input class="parse-field" id="s7" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c7" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p7" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r7" placeholder="root"></td>
+    <td><input class="parse-field" id="t7" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a7">
+    <td colspan="8"><strong>Qal · Perfect · 3ms · ירד</strong> — he went down · <em>I-י root; Qal Perfect retains the initial י; base qamets-patach vowels.</em></td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">הוֹרִיד</span></td>
+    <td><input class="parse-field" id="s8" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c8" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p8" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r8" placeholder="root"></td>
+    <td><input class="parse-field" id="t8" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a8">
+    <td colspan="8"><strong>Hiphil · Perfect · 3ms · ירד</strong> — he brought down · <em>Hiphil I-י: הוֹ prefix (holem-waw compensating for dropped י) + chiriq-yod in stem. Contrast with Hophal הוּ prefix.</em></td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">יָבוֹא</span></td>
+    <td><input class="parse-field" id="s9" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c9" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p9" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r9" placeholder="root"></td>
+    <td><input class="parse-field" id="t9" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a9">
+    <td colspan="8"><strong>Qal · Imperfect · 3ms · בוא</strong> — he will come / he comes · <em>Qal Imperfect hollow: qamets under prefix יָ + holem-waw in stem. Long ā under prefix is characteristic of hollow Qal Imperfect.</em></td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">יָבִיא</span></td>
+    <td><input class="parse-field" id="s10" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c10" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p10" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r10" placeholder="root"></td>
+    <td><input class="parse-field" id="t10" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a10">
+    <td colspan="8"><strong>Hiphil · Imperfect · 3ms · בוא</strong> — he will bring · <em>Hiphil hollow Imperfect: a-class (qamets) under prefix יָ + chiriq-yod in contracted stem. Note: same qamets under prefix as Qal (#9), but chiriq-yod in stem distinguishes it as Hiphil.</em></td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">יִוָּבֵא</span></td>
+    <td><input class="parse-field" id="s11" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c11" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p11" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r11" placeholder="root"></td>
+    <td><input class="parse-field" id="t11" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a11">
+    <td colspan="8"><strong>Niphal · Imperfect · 3ms · בוא</strong> — he will come in / he will be brought in · <em>Niphal Imperfect of hollow root: נ assimilates (dagesh-forte in ו, written יִוָּ); tsere in stem marks Niphal Imperfect. This is an unusual form due to the hollow root interacting with Niphal assimilation.</em></td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">יוּבָא</span></td>
+    <td><input class="parse-field" id="s12" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c12" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p12" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r12" placeholder="root"></td>
+    <td><input class="parse-field" id="t12" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a12">
+    <td colspan="8"><strong>Hophal · Imperfect · 3ms · בוא</strong> — he will be brought · <em>Hophal Imperfect hollow: יוּ prefix (shureq) = definitive Hophal marker in weak roots. Long ā in contracted stem.</em></td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">יָשׁוּב</span></td>
+    <td><input class="parse-field" id="s13" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c13" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p13" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r13" placeholder="root"></td>
+    <td><input class="parse-field" id="t13" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a13">
+    <td colspan="8"><strong>Qal · Imperfect · 3ms · שׁוב</strong> — he will return / he returns · <em>Qal Imperfect hollow: qamets under prefix יָ + shureq-waw in stem (שׁוּב). The holem-waw/shureq in the stem identifies the root as שׁוב.</em></td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">יָשִׁיב</span></td>
+    <td><input class="parse-field" id="s14" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c14" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p14" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r14" placeholder="root"></td>
+    <td><input class="parse-field" id="t14" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a14">
+    <td colspan="8"><strong>Hiphil · Imperfect · 3ms · שׁוב</strong> — he will bring back / restore · <em>Hiphil hollow Imperfect: a-class under prefix יָ + chiriq-yod in contracted stem. Contrast Qal יָשׁוּב (shureq in stem) vs. Hiphil יָשִׁיב (chiriq-yod in stem).</em></td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">יוּשַׁב</span></td>
+    <td><input class="parse-field" id="s15" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c15" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p15" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r15" placeholder="root"></td>
+    <td><input class="parse-field" id="t15" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a15">
+    <td colspan="8"><strong>Hophal · Imperfect · 3ms · שׁוב</strong> — he will be brought back · <em>Hophal hollow Imperfect: יוּ prefix (shureq). Contrast with Qal יָשׁוּב (qamets under prefix) and Hiphil יָשִׁיב.</em></td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td><span class="heb">וַיָּבֹא</span></td>
+    <td><input class="parse-field" id="s16" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c16" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p16" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r16" placeholder="root"></td>
+    <td><input class="parse-field" id="t16" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a16">
+    <td colspan="8"><strong>Qal · Wayyiqtol · 3ms · בוא</strong> — and he came · <em>Qal Wayyiqtol hollow: וַ + dagesh-forte in prefix + qamets (וַיָּ) + contracted stem with holem. The holem in the stem = Qal.</em></td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td><span class="heb">וַיָּבֵא</span></td>
+    <td><input class="parse-field" id="s17" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c17" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p17" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r17" placeholder="root"></td>
+    <td><input class="parse-field" id="t17" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a17">
+    <td colspan="8"><strong>Hiphil · Wayyiqtol · 3ms · בוא</strong> — and he brought · <em>Hiphil Wayyiqtol hollow: וַיָּ prefix + tsere in contracted stem (instead of chiriq-yod, which shortens in Wayyiqtol). Compare Qal וַיָּבֹא (holem) vs. Hiphil וַיָּבֵא (tsere).</em></td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td><span class="heb">וַיּוּבָא</span></td>
+    <td><input class="parse-field" id="s18" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c18" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p18" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r18" placeholder="root"></td>
+    <td><input class="parse-field" id="t18" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a18">
+    <td colspan="8"><strong>Hophal · Wayyiqtol · 3ms · בוא</strong> — and he was brought · <em>Hophal Wayyiqtol hollow: וַיּוּ prefix — the characteristic שׁוּרֶק is retained even in Wayyiqtol. Long ā in contracted stem.</em></td>
+  </tr>
+
+  <tr>
+    <td>19</td>
+    <td><span class="heb">קָם</span></td>
+    <td><input class="parse-field" id="s19" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c19" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p19" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r19" placeholder="root"></td>
+    <td><input class="parse-field" id="t19" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a19">
+    <td colspan="8"><strong>Qal · Perfect · 3ms · קום</strong> — he arose · <em>Hollow root קום contracts to one syllable in Qal Perfect 3ms (קָם). Qamets under first consonant.</em></td>
+  </tr>
+
+  <tr>
+    <td>20</td>
+    <td><span class="heb">הֵקִים</span></td>
+    <td><input class="parse-field" id="s20" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c20" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p20" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r20" placeholder="root"></td>
+    <td><input class="parse-field" id="t20" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a20">
+    <td colspan="8"><strong>Hiphil · Perfect · 3ms · קום</strong> — he established / raised up · <em>Hiphil hollow: הֵ prefix (tsere) + chiriq-yod in contracted stem (הֵקִים). Frequently used of God establishing covenants, kings, and the tabernacle.</em></td>
+  </tr>
+
+  <tr>
+    <td>21</td>
+    <td><span class="heb">הוּקַם</span></td>
+    <td><input class="parse-field" id="s21" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c21" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p21" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r21" placeholder="root"></td>
+    <td><input class="parse-field" id="t21" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a21')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a21">
+    <td colspan="8"><strong>Hophal · Perfect · 3ms · קום</strong> — he was raised up / was established · <em>Hophal hollow: הוּ prefix (shureq) + contracted stem with patach. Exo 40:17: הוּקַם הַמִּשְׁכָּן — "the tabernacle was erected."</em></td>
+  </tr>
+
+  <tr>
+    <td>22</td>
+    <td><span class="heb">יָלַד</span></td>
+    <td><input class="parse-field" id="s22" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c22" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p22" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r22" placeholder="root"></td>
+    <td><input class="parse-field" id="t22" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a22')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a22">
+    <td colspan="8"><strong>Qal · Perfect · 3ms · ילד</strong> — he fathered / he bore · <em>I-י root; Qal Perfect retains initial י; base qamets-patach vowels. Common in genealogy narratives.</em></td>
+  </tr>
+
+  <tr>
+    <td>23</td>
+    <td><span class="heb">הוֹלִיד</span></td>
+    <td><input class="parse-field" id="s23" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c23" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p23" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r23" placeholder="root"></td>
+    <td><input class="parse-field" id="t23" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a23')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a23">
+    <td colspan="8"><strong>Hiphil · Perfect · 3ms · ילד</strong> — he begat / caused to be born · <em>Hiphil I-י: הוֹ prefix (holem-waw compensating for dropped י) + chiriq-yod. Formula of genealogy lists: "X הוֹלִיד Y."</em></td>
+  </tr>
+
+  <tr>
+    <td>24</td>
+    <td><span class="heb">הוּלַד</span></td>
+    <td><input class="parse-field" id="s24" placeholder="Qal/Niphal/Hiphil/Hophal"></td>
+    <td><input class="parse-field" id="c24" placeholder="conjugation"></td>
+    <td><input class="parse-field" id="p24" placeholder="PGN"></td>
+    <td><input class="parse-field" id="r24" placeholder="root"></td>
+    <td><input class="parse-field" id="t24" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a24')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a24">
+    <td colspan="8"><strong>Hophal · Perfect · 3ms · ילד</strong> — he was born · <em>Hophal I-י: הוּ prefix (shureq) + patach in stem. Compare Hiphil הוֹלִיד (holem-waw) vs. Hophal הוּלַד (shureq): o-class in both, but the precise vowel distinguishes the stems.</em></td>
+  </tr>
+
+</table>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<script>
+function toggle(id) {
+  var row = document.getElementById(id);
+  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.style.display = 'table-row'; });
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.style.display = 'none'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+}
+</script>
+
+</body>
+</html>

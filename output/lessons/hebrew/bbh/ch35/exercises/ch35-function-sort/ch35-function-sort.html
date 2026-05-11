@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 35 — Hithpael Semantic Function Sorting (Weak Roots)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 960px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  input.ans-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .ref-table td, .ref-table th { font-size: .85em; }
+  .discussion { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  ol.disc { margin: .4em 0 0 1.2em; padding: 0; }
+  ol.disc li { margin-bottom: .4em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.ans-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 35 — Hithpael Semantic Function Sorting (Weak Roots)</h1>
+<p class="subtitle">BBH Chapter 35 · Hithpael Weak Verbs</p>
+
+<p>Classify each Hithpael verb as <strong>R</strong> (Reflexive), <strong>Re</strong> (Reciprocal), <strong>I</strong> (Intensive/Iterative), or <strong>SA</strong> (Simple Action). All forms use weak roots. Type your answer, then click <strong>▶ Answer</strong> to check.</p>
+
+<table class="ref-table">
+  <tr>
+    <th>Code</th><th>Function</th><th>Diagnostic question</th>
+  </tr>
+  <tr><td><strong>R</strong></td><td>Reflexive</td><td>Is the subject doing the action <em>to or for itself</em>? (Subject = object)</td></tr>
+  <tr><td><strong>Re</strong></td><td>Reciprocal</td><td>Are multiple subjects acting <em>on one another mutually</em>?</td></tr>
+  <tr><td><strong>I</strong></td><td>Intensive/Iterative</td><td>Is the action <em>repeated, habitual, or intensified</em>?</td></tr>
+  <tr><td><strong>SA</strong></td><td>Simple Action</td><td>Is the Hithpael the <em>primary lexical form</em> with no Qal/Piel reflexive force visible?</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Tip:</strong> Subject acts on itself → <strong>Reflexive</strong>.
+  Subjects act on one another → <strong>Reciprocal</strong>.
+  Action repeated/intensified → <strong>Intensive</strong>.
+  Hithpael = the standard word for this meaning → <strong>Simple Action</strong>.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th><th>Hebrew</th><th>Conjugation</th><th>Root</th><th>Ref</th><th>Gloss</th><th>Function</th><th></th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">הִתְגַּלָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">גלה</span></td>
+    <td>Gen 35:7</td>
+    <td>"God revealed himself"</td>
+    <td><input class="ans-field" id="f1" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">גלה</span> (III-ה) · God revealed himself — subject is both agent and recipient; III-ה: perfect ends in Qamets + ה</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">הִשְׁתַּחֲוָה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">שׁחה</span></td>
+    <td>Gen 22:5</td>
+    <td>"we will worship / bow down"</td>
+    <td><input class="ans-field" id="f2" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">שׁחה</span> (sibilant metathesis + III-ה) · Bowing = acting on one's own body in submission; <span class="heb">הִתְ</span> + שׁ → <span class="heb">הִשְׁתְּ</span></td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">הִתְהַלֵּל</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">הלל</span></td>
+    <td>Jer 9:23</td>
+    <td>"let him not boast"</td>
+    <td><input class="ans-field" id="f3" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">הלל</span> (geminate) · Boasting = directing praise toward oneself; <span class="heb">הִתְ</span> prefix + Dagesh in R2/R3 (לּ)</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">הִתְפַּלֵּל</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">פלל</span></td>
+    <td>Gen 20:7</td>
+    <td>"he prayed"</td>
+    <td><input class="ans-field" id="f4" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">פלל</span> · Prayer became the fixed lexical meaning of this Hithpael; the original reflexive force ("plead one's own case") has lexicalized into a simple action term</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">הִתְעַנָּה</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">ענה</span></td>
+    <td>Ezr 8:21</td>
+    <td>"we afflicted ourselves / fasted"</td>
+    <td><input class="ans-field" id="f5" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">ענה</span> (III-ה) · "We afflicted ourselves" — the subject enacts deprivation upon itself (fasting, mourning); III-ה: <span class="heb">הִתְ</span> + Dagesh in R2 (נּ) + Qamets + ה</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">יִתְגַּלֶּה</span></td>
+    <td>Imperfect 3ms</td>
+    <td><span class="heb">גלה</span></td>
+    <td>—</td>
+    <td>"he will reveal himself / it will be revealed"</td>
+    <td><input class="ans-field" id="f6" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">גלה</span> (III-ה) · Subject is both agent and recipient; III-ה imperfect: Seghol + ה ending (יִתְגַּלֶּה)</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">יִשְׁתַּחֲוֶה</span></td>
+    <td>Imperfect 3ms</td>
+    <td><span class="heb">שׁחה</span></td>
+    <td>—</td>
+    <td>"he will bow down"</td>
+    <td><input class="ans-field" id="f7" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">שׁחה</span> (sibilant + III-ה) · Self-directed act of submission; imperfect: <span class="heb">יִשְׁתַּ–</span> prefix with III-ה ending (יִשְׁתַּחֲוֶה)</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">יִתְהַלֵּל</span></td>
+    <td>Imperfect 3ms</td>
+    <td><span class="heb">הלל</span></td>
+    <td>Jer 9:23</td>
+    <td>"let him boast"</td>
+    <td><input class="ans-field" id="f8" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">הלל</span> (geminate) · Subject directs praise to itself; <span class="heb">יִתְ–</span> prefix + Dagesh in R2/R3 (לּ)</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">יִתְפַּלֵּל</span></td>
+    <td>Imperfect 3ms</td>
+    <td><span class="heb">פלל</span></td>
+    <td>—</td>
+    <td>"he will pray"</td>
+    <td><input class="ans-field" id="f9" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">פלל</span> · Prayer as the standard lexicalized meaning of this Hithpael form</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">וַיִּתְגַּל</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">גלה</span></td>
+    <td>Gen 9:21</td>
+    <td>"he uncovered himself"</td>
+    <td><input class="ans-field" id="f10" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">גלה</span> (III-ה) · Noah acted upon his own body; wayyiqtol apocopation: ה dropped (וַיִּתְגַּל not *וַיִּתְגַּלֶּה)</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">וַיִּשְׁתַּחוּ</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">שׁחה</span></td>
+    <td>Gen 22:5</td>
+    <td>"and he bowed down"</td>
+    <td><input class="ans-field" id="f11" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">שׁחה</span> (sibilant + III-ה) · Self-directed prostration; wayyiqtol apocopation: ה dropped (וַיִּשְׁתַּחוּ)</td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">וַיִּתְפַּלֵּל</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">פלל</span></td>
+    <td>Gen 20:17</td>
+    <td>"Abraham prayed"</td>
+    <td><input class="ans-field" id="f12" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">פלל</span> · "Abraham prayed" — the primary meaning of this Hithpael; no reflexive force perceived by native readers</td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">הִתְנַבֵּא</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">נבא</span></td>
+    <td>1 Sam 10:10</td>
+    <td>"he prophesied"</td>
+    <td><input class="ans-field" id="f13" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="8"><strong>SA — Simple Action</strong> · Root: <span class="heb">נבא</span> (I-nun) · The Hithpael of <span class="heb">נבא</span> is the primary form for prophesying in Biblical Hebrew; I-nun: nun is retained in Hithpael (unlike Hiphil)</td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">הִתְחַזֵּק</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">חזק</span></td>
+    <td>2 Sam 10:12</td>
+    <td>"take courage! / be strong!"</td>
+    <td><input class="ans-field" id="f14" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="8"><strong>R — Reflexive</strong> (Estimative) · Root: <span class="heb">חזק</span> · "Strengthen yourself / take courage" — subject applies strength to itself; a reflexive-estimative: present yourself as strong</td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">הִתְנַחֵם</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">נחם</span></td>
+    <td>Gen 24:67</td>
+    <td>"Isaac was comforted"</td>
+    <td><input class="ans-field" id="f15" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="8"><strong>R — Reflexive</strong> (shading to passive-like) · Root: <span class="heb">נחם</span> · "Was comforted" — subject receives the state inwardly; the Hithpael's reflexive force shades into a passive-like reading here</td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td><span class="heb">הִתְבָּרֵךְ</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">ברך</span></td>
+    <td>Gen 22:18</td>
+    <td>"all nations will bless themselves"</td>
+    <td><input class="ans-field" id="f16" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r16">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">ברך</span> · Nations enacting blessing for/upon themselves; the Abrahamic promise formula (Gen 12:3; 22:18) — reflexive or passive-like reading are both debated</td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td><span class="heb">הִצְטַדֵּק</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">צדק</span></td>
+    <td>—</td>
+    <td>"he justified himself"</td>
+    <td><input class="ans-field" id="f17" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r17">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">צדק</span> (sibilant צ: <span class="heb">הִתְ</span> + צ → <span class="heb">הִצְטְ</span>) · Subject claims righteousness for itself; self-justification often carries a negative connotation in OT context</td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td><span class="heb">הִתְרַגֵּז</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">רגז</span></td>
+    <td>—</td>
+    <td>"he trembled / was agitated"</td>
+    <td><input class="ans-field" id="f18" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r18">
+    <td colspan="8"><strong>I — Intensive/Iterative</strong> · Root: <span class="heb">רגז</span> · Trembling = repeated, intense inner agitation; the body's ongoing shaking response captured by the Hithpael's iterative force</td>
+  </tr>
+
+  <tr>
+    <td>19</td>
+    <td><span class="heb">הִתְחַנֵּן</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">חנן</span></td>
+    <td>—</td>
+    <td>"he pleaded for mercy / implored"</td>
+    <td><input class="ans-field" id="f19" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r19">
+    <td colspan="8"><strong>I — Intensive/Iterative</strong> · Root: <span class="heb">חנן</span> (I-guttural) · Pleading = repeated, urgent supplication; the iterative force captures the intensity of the appeal for grace</td>
+  </tr>
+
+  <tr>
+    <td>20</td>
+    <td><span class="heb">הִתְנַהֵג</span></td>
+    <td>Perfect 3ms</td>
+    <td><span class="heb">נהג</span></td>
+    <td>—</td>
+    <td>"he conducted himself / behaved"</td>
+    <td><input class="ans-field" id="f20" placeholder="R/Re/I/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r20">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">נהג</span> · "Conducted himself" = directed his own behavior; subject governs itself — classic reflexive with subject as its own object</td>
+  </tr>
+
+</table>
+
+<h2>Discussion Questions</h2>
+<div class="discussion">
+  <ol class="disc">
+    <li>Items 2, 7, and 11 all use root <span class="heb">שׁחה</span>. The forms show sibilant metathesis (<span class="heb">הִשְׁתַּ–</span> / <span class="heb">יִשְׁתַּ–</span>) plus III-ה endings (apocopation in wayyiqtol). Why is bowing down classified as Reflexive? What is the subject doing "to itself"?</li>
+    <li>Items 4, 9, and 12 (root <span class="heb">פלל</span>) are all classified as Simple Action. How does this illustrate the lexicalization of the Hithpael, where the original reflexive force becomes conventionalized and disappears from view?</li>
+    <li>Item 15 (<span class="heb">הִתְנַחֵם</span>, "was comforted") vs. item 14 (<span class="heb">הִתְחַזֵּק</span>, "took courage"): both describe an inner state. What is the difference between "comforted himself" and "was comforted" as translations of <span class="heb">הִתְנַחֵם</span>? Which is more accurate?</li>
+    <li>Items 16 (<span class="heb">הִתְבָּרֵךְ</span>, Gen 22:18) and 17 (<span class="heb">הִצְטַדֵּק</span>) both involve the subject acting on itself. What is the theological difference between blessing oneself and justifying oneself? Why might the second carry a negative connotation in the OT?</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  const btn = row.previousElementSibling.querySelector('.reveal-btn');
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    btn.textContent = '▶ Answer';
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('input.ans-field').forEach(i => i.value = '');
+}
+</script>
+</body>
+</html>

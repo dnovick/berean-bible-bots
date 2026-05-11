@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 29 — Hophal Weak-Root Function Sort</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1040px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .note { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .ref-table th { background: #4a6a8e; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 29 — Hophal Weak-Root Function Sort</h1>
+<p class="subtitle">BBH Chapter 29 · Hophal Weak Verbs</p>
+
+<p>The <strong>Hophal is always the passive of the Hiphil</strong>. Every Hophal form expresses that its subject <em>undergoes being caused</em> to do or experience something. For each weak-root Hophal form below:</p>
+<ol>
+  <li><strong>Give the Hiphil active meaning</strong> — what the Hiphil of this root means (the active, causative form).</li>
+  <li><strong>Translate the Hophal passive form</strong> in context.</li>
+</ol>
+<p>Click <strong>▶ Answer</strong> to reveal the answer row.</p>
+
+<div class="tip">
+  <strong>Morphological key for weak Hophal:</strong>
+  <strong>I-י roots:</strong> Hophal uses <span class="heb">וּ</span> (shureq) as the characteristic prefix vowel: הוּ/יוּ/וַיּוּ/מוּ.
+  <strong>Hollow roots:</strong> Same וּ prefix vowel; the middle root letter contracts, producing a long vowel in the stem.
+  <strong>III-ה roots:</strong> Hophal Perfect 3ms ends in <span class="heb">ָה</span> rather than the strong patach.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Hophal Form</th>
+    <th>Root</th>
+    <th>Weak Class</th>
+    <th>Conjugation</th>
+    <th>Hiphil Active Meaning</th>
+    <th>Hophal Translation</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">הוּבַל</span></td>
+    <td><span class="heb">יבל</span></td>
+    <td>I-י</td>
+    <td>Perfect 3ms</td>
+    <td><input class="parse-field" id="h1" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t1" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a1">
+    <td colspan="8"><strong>Hiphil יָבַל</strong>: to lead, bring, carry (cause to go/come) → <strong>Hophal</strong>: he was led / he was brought · Root יבל is I-י; characteristic הוּ prefix marks Hophal.</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">הוּבְאוּ</span></td>
+    <td><span class="heb">בוא</span></td>
+    <td>Hollow</td>
+    <td>Perfect 3cp</td>
+    <td><input class="parse-field" id="h2" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t2" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a2">
+    <td colspan="8"><strong>Hiphil הֵבִיא</strong>: to bring (cause to come) → <strong>Hophal</strong>: they were brought (Gen 43:18) · Hollow root בוא; 3cp Perfect ending וּ added; the brothers were brought into Joseph's house.</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">הוּרַד</span></td>
+    <td><span class="heb">ירד</span></td>
+    <td>I-י</td>
+    <td>Perfect 3ms</td>
+    <td><input class="parse-field" id="h3" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t3" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a3">
+    <td colspan="8"><strong>Hiphil הוֹרִיד</strong>: to bring down (cause to descend) → <strong>Hophal</strong>: he was brought down (Gen 39:1) · Joseph was caused to descend to Egypt; I-י root ירד with הוּ prefix.</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">הוּקַם</span></td>
+    <td><span class="heb">קום</span></td>
+    <td>Hollow</td>
+    <td>Perfect 3ms</td>
+    <td><input class="parse-field" id="h4" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t4" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a4">
+    <td colspan="8"><strong>Hiphil הֵקִים</strong>: to raise up, erect, establish (cause to stand) → <strong>Hophal</strong>: the tabernacle was erected (Exo 40:17) · Hollow root קום; contracted stem with patach.</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">הוּשַׁב</span></td>
+    <td><span class="heb">שׁוב</span></td>
+    <td>Hollow</td>
+    <td>Perfect 3ms</td>
+    <td><input class="parse-field" id="h5" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t5" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a5">
+    <td colspan="8"><strong>Hiphil הֵשִׁיב</strong>: to bring back, restore (cause to return) → <strong>Hophal</strong>: the money was brought back (Gen 43:12) · Hollow root שׁוב; the silver was caused to return.</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">יוּבַל</span></td>
+    <td><span class="heb">יבל</span></td>
+    <td>I-י</td>
+    <td>Imperfect 3ms</td>
+    <td><input class="parse-field" id="h6" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t6" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a6">
+    <td colspan="8"><strong>Hiphil יָבַל</strong>: to lead, bring → <strong>Hophal</strong>: he will be led / he will be brought · Hophal Imperfect: יוּ prefix (shureq) is the characteristic marker in I-י and hollow roots.</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">יוּבָא</span></td>
+    <td><span class="heb">בוא</span></td>
+    <td>Hollow</td>
+    <td>Imperfect 3ms</td>
+    <td><input class="parse-field" id="h7" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t7" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a7">
+    <td colspan="8"><strong>Hiphil הֵבִיא</strong>: to bring → <strong>Hophal</strong>: he will be brought · Hollow root; long ā vowel in contracted stem; Hophal Imperfect 3ms יוּ prefix.</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">יוּרַד</span></td>
+    <td><span class="heb">ירד</span></td>
+    <td>I-י</td>
+    <td>Imperfect 3ms</td>
+    <td><input class="parse-field" id="h8" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t8" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a8">
+    <td colspan="8"><strong>Hiphil הוֹרִיד</strong>: to bring down → <strong>Hophal</strong>: he will be brought down · I-י root; Hophal Imperfect 3ms with יוּ prefix + patach in stem.</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">יוּקַם</span></td>
+    <td><span class="heb">קום</span></td>
+    <td>Hollow</td>
+    <td>Imperfect 3ms</td>
+    <td><input class="parse-field" id="h9" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t9" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a9">
+    <td colspan="8"><strong>Hiphil הֵקִים</strong>: to raise up, establish → <strong>Hophal</strong>: it will be raised up · Hollow root קום; contracted stem with patach; יוּ prefix.</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">יוּשַׁב</span></td>
+    <td><span class="heb">שׁוב</span></td>
+    <td>Hollow</td>
+    <td>Imperfect 3ms</td>
+    <td><input class="parse-field" id="h10" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t10" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a10">
+    <td colspan="8"><strong>Hiphil הֵשִׁיב</strong>: to bring back, restore → <strong>Hophal</strong>: he will be brought back / returned · Hollow root שׁוב; Hophal Imperfect 3ms.</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">וַיּוּבַל</span></td>
+    <td><span class="heb">יבל</span></td>
+    <td>I-י</td>
+    <td>Wayyiqtol 3ms</td>
+    <td><input class="parse-field" id="h11" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t11" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a11">
+    <td colspan="8"><strong>Hiphil יָבַל</strong>: to lead, bring → <strong>Hophal</strong>: and he was led · Wayyiqtol: וַיּוּ- prefix retains the characteristic וּ (shureq) of Hophal in I-י roots.</td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">וַיּוּבָא</span></td>
+    <td><span class="heb">בוא</span></td>
+    <td>Hollow</td>
+    <td>Wayyiqtol 3ms</td>
+    <td><input class="parse-field" id="h12" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t12" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a12">
+    <td colspan="8"><strong>Hiphil הֵבִיא</strong>: to bring → <strong>Hophal</strong>: and he was brought (Gen 39:1) · Hollow root; long ā in contracted stem; Joseph brought down to Egypt in the narrative.</td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">וַיּוּרַד</span></td>
+    <td><span class="heb">ירד</span></td>
+    <td>I-י</td>
+    <td>Wayyiqtol 3ms</td>
+    <td><input class="parse-field" id="h13" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t13" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a13">
+    <td colspan="8"><strong>Hiphil הוֹרִיד</strong>: to bring down → <strong>Hophal</strong>: and Joseph was brought down (Gen 39:1) · I-י root; Wayyiqtol retains וּ characteristic vowel in the prefix.</td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">הוּלַד</span></td>
+    <td><span class="heb">ילד</span></td>
+    <td>I-י</td>
+    <td>Perfect 3ms</td>
+    <td><input class="parse-field" id="h14" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t14" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a14">
+    <td colspan="8"><strong>Hiphil הוֹלִיד</strong>: to beget, cause to be born → <strong>Hophal</strong>: he was born · I-י root ילד; the Hiphil = to father/beget; the Hophal = to be born (the subject is caused to come into existence).</td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">יוּלַד</span></td>
+    <td><span class="heb">ילד</span></td>
+    <td>I-י</td>
+    <td>Imperfect 3ms</td>
+    <td><input class="parse-field" id="h15" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t15" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a15">
+    <td colspan="8"><strong>Hiphil הוֹלִיד</strong>: to beget, cause to be born → <strong>Hophal</strong>: he will be born · Hophal Imperfect of ילד; same semantic relationship as #14 but imperfective aspect.</td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td><span class="heb">מוּבָא</span></td>
+    <td><span class="heb">בוא</span></td>
+    <td>Hollow</td>
+    <td>Participle ms</td>
+    <td><input class="parse-field" id="h16" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t16" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a16">
+    <td colspan="8"><strong>Hiphil הֵבִיא</strong>: to bring → <strong>Hophal</strong>: (one) being brought / that which is being brought in · Hophal Participle: מוּ prefix (replacing מְ of strong Participle) + long ā stem vowel in hollow root.</td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td><span class="heb">מוּרָד</span></td>
+    <td><span class="heb">ירד</span></td>
+    <td>I-י</td>
+    <td>Participle ms</td>
+    <td><input class="parse-field" id="h17" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t17" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a17">
+    <td colspan="8"><strong>Hiphil הוֹרִיד</strong>: to bring down → <strong>Hophal</strong>: (one) being brought down · Hophal Participle of I-י root ירד: מוּ prefix + qamets in stem.</td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td><span class="heb">הוּגְלָה</span></td>
+    <td><span class="heb">גלה</span></td>
+    <td>III-ה</td>
+    <td>Perfect 3ms</td>
+    <td><input class="parse-field" id="h18" placeholder="Hiphil meaning…"></td>
+    <td><input class="parse-field" id="t18" placeholder="Hophal translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a18">
+    <td colspan="8"><strong>Hiphil הִגְלָה</strong>: to exile, carry into exile (cause to go into exile) → <strong>Hophal</strong>: Israel was carried away into exile (2 Kgs 17:23) · III-ה root גלה; Hophal Perfect 3ms ends in ָה instead of patach; the hiphil agent (Assyria) causes Israel to go into exile.</td>
+  </tr>
+
+</table>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<script>
+function toggle(id) {
+  var row = document.getElementById(id);
+  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.style.display = 'table-row'; });
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.style.display = 'none'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+}
+</script>
+
+</body>
+</html>
