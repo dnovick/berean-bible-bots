@@ -47,8 +47,6 @@ ot_patient_verbs_chart(patient_lemma, ...)     → Path | None
 
 from __future__ import annotations
 from pathlib import Path
-from collections import Counter
-
 import pandas as pd
 
 from ._utils import load_ot_data
@@ -290,7 +288,7 @@ def print_ot_frame_overview() -> None:
     has_a1 = has_frame[has_frame['frame'].str.contains('A1:', na=False)]
     w = 58
     print(f"\n{'═'*w}")
-    print(f"  Hebrew OT Predicate-Argument Structure (Frame Data)")
+    print("  Hebrew OT Predicate-Argument Structure (Frame Data)")
     print(f"{'═'*w}")
     print(f"  Total Hebrew tokens   : {len(df_h):>9,}")
     print(f"  Verb tokens with frame: {len(has_frame):>9,} ({len(has_frame)/len(df_h)*100:.1f}%)")

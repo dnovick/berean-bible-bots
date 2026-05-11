@@ -42,8 +42,6 @@ KNOWN_ENTITIES                                 → dict[str, str]
 
 from __future__ import annotations
 from pathlib import Path
-from collections import Counter
-
 import pandas as pd
 
 _CHART_DIR = Path('output') / 'charts' / 'nt' / 'coreference'
@@ -263,12 +261,14 @@ def print_nt_referent_overview() -> None:
     has_ref_pron = pron[pron['referent'].notna() & (pron['referent'] != '')]
     w = 58
     print(f"\n{'═'*w}")
-    print(f"  NT Coreference / Referent Coverage")
+    print("  NT Coreference / Referent Coverage")
     print(f"{'═'*w}")
     print(f"  Total NT tokens           : {len(df):>9,}")
-    print(f"  Tokens with referent link : {len(has_ref):>9,} ({len(has_ref)/len(df)*100:.1f}%)")
+    ref_pct = len(has_ref) / len(df) * 100
+    print(f"  Tokens with referent link : {len(has_ref):>9,} ({ref_pct:.1f}%)")
     print(f"  Pronoun tokens            : {len(pron):>9,}")
-    print(f"  Pronouns with referent    : {len(has_ref_pron):>9,} ({len(has_ref_pron)/len(pron)*100:.1f}%)")
+    pron_pct = len(has_ref_pron) / len(pron) * 100
+    print(f"  Pronouns with referent    : {len(has_ref_pron):>9,} ({pron_pct:.1f}%)")
     print()
 
 
@@ -277,7 +277,12 @@ def print_nt_referent_frequency(
     *,
     top_n: int = 20,
 ) -> None:
-    scope = f" ({book})" if isinstance(book, str) else " (all NT)" if book is None else f" ({', '.join(book)})"
+    if isinstance(book, str):
+        scope = f" ({book})"
+    elif book is None:
+        scope = " (all NT)"
+    else:
+        scope = f" ({', '.join(book)})"
     df = nt_referent_frequency(book=book, top_n=top_n)
     w = 72
     print(f"\n{'═'*w}")
@@ -316,7 +321,7 @@ def print_nt_entity_chain(
     print(f"  Total references: {len(df):,}")
     ch_counts = df['chapter'].value_counts().sort_index()
     print(f"  Chapter spread  : {df['chapter'].nunique()} chapters")
-    print(f"\n  Chapter distribution:")
+    print("\n  Chapter distribution:")
     for ch, cnt in ch_counts.items():
         bar = '█' * min(cnt, 40)
         print(f"    Ch {int(ch):>3}: {bar} {cnt}")

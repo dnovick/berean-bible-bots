@@ -107,9 +107,11 @@ hophal_root_conjugation        = _ANALYSIS.root_conjugation
 hophal_book_distribution       = _ANALYSIS.book_distribution
 hophal_stem_comparison         = _ANALYSIS.stem_comparison
 
-def hophal_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5):
+
+def hophal_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5) -> object:
     """Roots where the Hophal accounts for ≥ min_pct of all occurrences."""
     return _ANALYSIS.dominant_roots(min_pct, min_tokens)
+
 
 hophal_semantic_categories       = functools.partial(_ANALYSIS.semantic_categories, _hophal_semantic_fn)
 print_hophal_semantic_categories = functools.partial(_ANALYSIS.print_semantic_categories, _hophal_semantic_fn)

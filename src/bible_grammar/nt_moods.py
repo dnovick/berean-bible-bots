@@ -159,7 +159,7 @@ def nt_subjunctive_constructions(book: str | None = None) -> pd.DataFrame:
 
     results = []
     for _, row in subj.iterrows():
-        ch, vs, wn, bk = row['chapter'], row['verse'], row['word_num'], row['book']
+        ch, _, wn, bk = row['chapter'], row['verse'], row['word_num'], row['book']
         tense = str(row.get('tense', '')).lower()
         person = str(row.get('person', '')).lower()
 
@@ -219,7 +219,7 @@ def nt_infinitive_constructions(book: str | None = None) -> pd.DataFrame:
 
     results = []
     for _, row in inf.iterrows():
-        ch, vs, wn, bk = row['chapter'], row['verse'], row['word_num'], row['book']
+        ch, _, wn, bk = row['chapter'], row['verse'], row['word_num'], row['book']
         role = str(row.get('role', '')).lower()
 
         prev = df[
@@ -276,7 +276,6 @@ def nt_mood_genre_profile() -> pd.DataFrame:
     df = load_syntax()
     verbs = df[df['class_'] == 'verb'].copy()
     verbs['mood'] = verbs['mood'].str.lower()
-    non_ind_moods = ['subjunctive', 'optative', 'imperative', 'infinitive', 'participle']
     rows = []
     for genre, books in NT_BOOK_GROUPS.items():
         sub = verbs[verbs['book'].isin(books) & verbs['mood'].notna()]

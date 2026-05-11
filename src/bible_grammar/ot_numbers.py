@@ -213,7 +213,7 @@ def print_ot_number_overview() -> None:
     books = df['book'].nunique()
     top_book = df['book'].value_counts().index[0]
     top_count = df['book'].value_counts().iloc[0]
-    print(f"Hebrew Number Tokens (OT)")
+    print("Hebrew Number Tokens (OT)")
     print(f"  Total tokens : {total:,}")
     print(f"  Unique lemmas: {unique_lemmas}")
     print(f"  Books covered: {books}")

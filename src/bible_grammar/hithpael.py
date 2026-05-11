@@ -108,9 +108,11 @@ hithpael_root_conjugation        = _ANALYSIS.root_conjugation
 hithpael_book_distribution       = _ANALYSIS.book_distribution
 hithpael_stem_comparison         = _ANALYSIS.stem_comparison
 
-def hithpael_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5):
+
+def hithpael_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5) -> object:
     """Roots where the Hithpael accounts for ≥ min_pct of all occurrences."""
     return _ANALYSIS.dominant_roots(min_pct, min_tokens)
+
 
 hithpael_semantic_categories     = functools.partial(_ANALYSIS.semantic_categories, _hithpael_semantic_fn)
 print_hithpael_semantic_categories = functools.partial(_ANALYSIS.print_semantic_categories, _hithpael_semantic_fn)

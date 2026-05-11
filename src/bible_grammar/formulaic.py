@@ -464,7 +464,7 @@ def print_ot_formula_profile() -> None:
     df = ot_formula_profile()
     w = 70
     print(f"\n{'═'*w}")
-    print(f"  Hebrew Formula Profile (HEBREW_FORMULAS)")
+    print("  Hebrew Formula Profile (HEBREW_FORMULAS)")
     print(f"{'═'*w}")
     print(f"  {'Formula (gloss)':<36} {'Function':<22} {'Count':>6}")
     print('  ' + '-' * 67)
@@ -479,7 +479,7 @@ def print_nt_formula_profile() -> None:
     df = nt_formula_profile()
     w = 70
     print(f"\n{'═'*w}")
-    print(f"  Greek Formula Profile (GREEK_FORMULAS)")
+    print("  Greek Formula Profile (GREEK_FORMULAS)")
     print(f"{'═'*w}")
     print(f"  {'Formula (gloss)':<40} {'Function':<16} {'Count':>6}")
     print('  ' + '-' * 65)

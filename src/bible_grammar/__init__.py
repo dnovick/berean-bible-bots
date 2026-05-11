@@ -275,7 +275,7 @@ from .nt_verb_profile import (
     print_nt_verb_genre_profile, print_nt_verb_book_distribution,
     nt_verb_tense_chart, nt_verb_voice_chart, nt_verb_mood_chart,
     nt_verb_genre_heatmap, nt_verb_book_chart, nt_verb_tense_voice_heatmap,
-    NT_BOOK_GROUPS, TENSE_ORDER, VOICE_ORDER, MOOD_ORDER,
+    TENSE_ORDER, VOICE_ORDER, MOOD_ORDER,
 )
 from .nt_moods import (
     nt_mood_data, nt_mood_profile,

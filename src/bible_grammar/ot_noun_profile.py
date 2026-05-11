@@ -277,7 +277,8 @@ def print_ot_noun_overview() -> None:
     print('╚' + '═' * 78 + '╝')
     print()
     print(f"  Total Hebrew word tokens:   {total_words:>8,}")
-    print(f"  Hebrew noun tokens:         {total_nouns:>8,}  ({total_nouns/total_words*100:.1f}% of words)")
+    noun_pct = total_nouns / total_words * 100
+    print(f"  Hebrew noun tokens:         {total_nouns:>8,}  ({noun_pct:.1f}% of words)")
     print(f"  Unique noun lemmas:         {unique_lemmas:>8,}")
     print(f"  Definite article tokens:    {art_tokens:>8,}")
     print()

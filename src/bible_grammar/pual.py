@@ -102,9 +102,11 @@ pual_root_conjugation        = _ANALYSIS.root_conjugation
 pual_book_distribution       = _ANALYSIS.book_distribution
 pual_stem_comparison         = _ANALYSIS.stem_comparison
 
-def pual_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5):
+
+def pual_dominant_roots(min_pct: float = 70.0, min_tokens: int = 5) -> object:
     """Roots where the Pual accounts for ≥ min_pct of all occurrences."""
     return _ANALYSIS.dominant_roots(min_pct, min_tokens)
+
 
 pual_semantic_categories     = functools.partial(_ANALYSIS.semantic_categories, _pual_semantic_fn)
 print_pual_semantic_categories = functools.partial(_ANALYSIS.print_semantic_categories, _pual_semantic_fn)

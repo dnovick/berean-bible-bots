@@ -54,7 +54,7 @@ HINA_FUNCTIONS = {
     'purpose':   'purpose (ἵνα + subj. — expresses goal)',
     'content':   'content (ἵνα + subj. — what is commanded/desired)',
     'result':    'result (ecbatic ἵνα — denoting outcome)',
-    'epexegetic':'epexegetic (ἵνα + subj. — explains a noun or adjective)',
+    'epexegetic': 'epexegetic (ἵνα + subj. — explains a noun or adjective)',
 }
 
 HOTI_FUNCTIONS = {
@@ -185,7 +185,7 @@ def nt_hina_profile(book: str | None = None) -> pd.DataFrame:
                 func = 'content'
 
         results.append({'chapter': ch, 'verse': vs, 'function': func,
-                         'ref': f"{bk} {ch}:{vs}"})
+                        'ref': f"{bk} {ch}:{vs}"})
 
     out = pd.DataFrame(results)
     if out.empty:
@@ -270,7 +270,7 @@ def print_nt_particle_overview() -> None:
         if row['count'] == 0:
             continue
         bar = '█' * int(row['pct'] / 2)
-        print(f"  {row['display']:<8} {row['count']:>7,} {row['pct']:>9.1f}%  "
+        print(f"  {row['display']:<8} {row['count']:>7,} {row['pct']:>9.1f}%  {bar}  "
               f"{row['primary_function']}")
     print()
 
@@ -290,7 +290,7 @@ def print_nt_particle_frequency(book: str | None = None) -> None:
         if row['count'] == 0:
             continue
         bar = '█' * int(row['pct'] / 2)
-        print(f"  {row['display']:<8} {row['count']:>7,} {row['pct']:>6.1f}%  "
+        print(f"  {row['display']:<8} {row['count']:>7,} {row['pct']:>6.1f}%  {bar}  "
               f"{row['primary_function']}")
     print()
 

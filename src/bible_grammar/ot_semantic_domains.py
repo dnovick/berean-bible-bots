@@ -51,8 +51,6 @@ THEOLOGY_COREDOMAINS                               → dict[str, list[str]]
 
 from __future__ import annotations
 from pathlib import Path
-from typing import Sequence
-
 import pandas as pd
 
 from ._utils import load_ot_data
@@ -429,7 +427,7 @@ def print_ot_domain_overview() -> None:
     has_lex  = heb[(heb['lexdomain'].notna())  & (heb['lexdomain'] != '')]
     w = 58
     print(f"\n{'═'*w}")
-    print(f"  Hebrew OT Semantic Domain Coverage (SDBH / MARBLE)")
+    print("  Hebrew OT Semantic Domain Coverage (SDBH / MARBLE)")
     print(f"{'═'*w}")
     print(f"  Total Hebrew tokens : {len(heb):>10,}")
     print(f"  coredomain coverage : {len(has_core):>10,} ({len(has_core)/len(heb)*100:.1f}%)")
@@ -528,7 +526,7 @@ def print_ot_domain_comparison(
         print("No domain data found for the specified books.")
         return
     print(f"\nDomain Comparison: {', '.join(books)}")
-    print(f"  (% of each book's coredomain-tagged tokens)")
+    print("  (% of each book's coredomain-tagged tokens)")
     print()
     header = f"  {'Domain':<28}" + ''.join(f" {b:>7}" for b in df.columns)
     print(header)
@@ -663,7 +661,6 @@ def ot_domain_heatmap(
 ) -> Path | None:
     try:
         import matplotlib.pyplot as plt
-        import numpy as np
     except ImportError:
         return None
 

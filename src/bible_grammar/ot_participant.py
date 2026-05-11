@@ -273,7 +273,9 @@ def ot_entity_density(
                 })
     if not rows:
         return pd.DataFrame(columns=['chapter', 'entity', 'lemma', 'mention_count'])
-    return pd.DataFrame(rows).sort_values(['chapter', 'mention_count'], ascending=[True, False]).reset_index(drop=True)
+    return (pd.DataFrame(rows)
+            .sort_values(['chapter', 'mention_count'], ascending=[True, False])
+            .reset_index(drop=True))
 
 
 def ot_participant_compare(
@@ -290,7 +292,8 @@ def ot_participant_compare(
     for p in participants:
         data = ot_participant_data(p, book=book)
         if data.empty:
-            rows.append({'participant': p, 'total_mentions': 0, 'books_present': 0, 'top_book': None})
+            rows.append({'participant': p, 'total_mentions': 0,
+                         'books_present': 0, 'top_book': None})
             continue
         book_counts = data['book'].value_counts()
         rows.append({
@@ -333,7 +336,7 @@ def print_ot_participant_profile(
 
     subj = ot_participant_subject_verbs(participant, book=book, top_n=15)
     if not subj.empty:
-        print(f"\n  Top verbs in participant's verses (top 15)")
+        print("\n  Top verbs in participant's verses (top 15)")
         print(f"  {'Verb lemma':<20} {'Gloss':<22} {'Count':>6}")
         print('  ' + '-' * 52)
         for _, row in subj.iterrows():
@@ -372,7 +375,8 @@ def print_ot_participant_compare(
     print(f"  {'Participant':<14} {'Mentions':>9} {'Books':>6}  {'Top book'}")
     print('  ' + '-' * 46)
     for _, row in df.iterrows():
-        print(f"  {str(row['participant']):<14} {row['total_mentions']:>9,} {row['books_present']:>6}  {row['top_book']}")
+        print(f"  {str(row['participant']):<14} {row['total_mentions']:>9,} "
+              f"{row['books_present']:>6}  {row['top_book']}")
     print()
 
 

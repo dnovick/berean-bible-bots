@@ -228,11 +228,13 @@ def print_ot_information_profile(book: str) -> None:
     print(f"{'═'*w}")
     print(f"  Total tokens           : {p['total_tokens']:>8,}")
     print(f"  Total verses           : {p['total_verses']:>8,}")
-    print(f"  Parataxis ratio        : {p['parataxis_ratio']:>8.4f}  (wayyiqtol/waw-initial verses)")
-    print(f"  Hypotaxis subordinators: {p['hypotaxis_subordinators']:>8,}  ({p['hypotaxis_per1k']}/1k tokens)")
-    print(f"  Fronted elements       : {p['fronted_elements']:>8,}  (non-verb-initial clauses)")
+    print(f"  Parataxis ratio        : {p['parataxis_ratio']:>8.4f}  (wayyiqtol/waw-initial)")
+    print(f"  Hypotaxis subordinators: {p['hypotaxis_subordinators']:>8,}"
+          f"  ({p['hypotaxis_per1k']}/1k tokens)")
+    print(f"  Fronted elements       : {p['fronted_elements']:>8,}  (non-verb-initial)")
     print(f"  Fronted ratio          : {p['fronted_ratio']:>8.4f}")
-    print(f"  Nominal clauses        : {p['nominal_clause_count']:>8,}  ({p['nominal_clause_pct']}% of verses)")
+    print(f"  Nominal clauses        : {p['nominal_clause_count']:>8,}"
+          f"  ({p['nominal_clause_pct']}% of verses)")
     print(f"  Inf. construct/1k      : {p['inf_construct_per1k']:>8.2f}")
     print()
 
@@ -263,7 +265,7 @@ def print_ot_clause_linking_comparison(books: list[str]) -> None:
     df = ot_clause_linking_comparison(books)
     if df.empty:
         return
-    print(f"\nOT Clause-Linking Comparison")
+    print("\nOT Clause-Linking Comparison")
     metrics = ['parataxis_ratio', 'hypotaxis_per1k', 'fronted_ratio',
                'nominal_clause_pct', 'inf_construct_per1k']
     labels = ['Paratx ratio', 'Hypotx/1k', 'Fronted ratio', 'Nominal %', 'InfC/1k']
@@ -286,7 +288,7 @@ def print_nt_clause_linking_comparison(books: list[str]) -> None:
     df = nt_clause_linking_comparison(books)
     if df.empty:
         return
-    print(f"\nNT Clause-Linking Comparison")
+    print("\nNT Clause-Linking Comparison")
     metrics = ['de_per1k', 'gar_per1k', 'oun_per1k', 'kai_per1k',
                'alla_per1k', 'explicit_subj_pct', 'asyndeton_pct']
     labels = ['δέ/1k', 'γάρ/1k', 'οὖν/1k', 'καί/1k',

@@ -2,7 +2,6 @@ from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.units import inch
 from reportlab.lib.colors import HexColor, black, white
-import os
 
 from ._base import ExercisePDF, _register_fonts, C_RULE, C_FIELD_BG
 
@@ -41,7 +40,6 @@ def _register_greek_fonts():
     if not registered:
         # Last resort: use a built-in name alias (no Greek glyphs but PDF still generates)
         pdfmetrics.registerFont(TTFont.__new__(TTFont))  # skip — just use Helvetica alias
-        import reportlab.lib.fonts as rlf
         # Map 'GreekFont' to Helvetica as fallback
         try:
             pdfmetrics.registerFontFamily('GreekFont', normal='Helvetica',
@@ -178,4 +176,3 @@ class GreekExercisePDF(ExercisePDF):
 # ---------------------------------------------------------------------------
 # BBG Ch3 — Alphabet Drill PDF
 # ---------------------------------------------------------------------------
-

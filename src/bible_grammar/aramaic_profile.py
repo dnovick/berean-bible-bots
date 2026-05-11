@@ -245,7 +245,9 @@ def print_aramaic_stem_conj(stem: str | None = None) -> None:
         'infinitive construct': 'inf.c', 'imperative': 'impv',
     }
     cols = list(ct.columns)
-    header = f"  {'Stem':<14}" + ''.join(f"{abbrev.get(c,c[:7]):>9}" for c in cols) + f"  {'Total':>6}"
+    header = (f"  {'Stem':<14}"
+              + ''.join(f"{abbrev.get(c, c[:7]):>9}" for c in cols)
+              + f"  {'Total':>6}")
     print(header)
     print('  ' + '─' * 76)
     for s, row in ct.iterrows():

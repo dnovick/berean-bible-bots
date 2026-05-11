@@ -347,10 +347,11 @@ def print_nt_genitive_absolutes(book: str | None = None, n: int = 20) -> None:
         print()
         return
     for _, row in df.head(n).iterrows():
-        ref = f"{row.get('book','')} {row.get('chapter','')}:{row.get('verse','')}"
+        ref = f"{row.get('book', '')} {row.get('chapter', '')}:{row.get('verse', '')}"
         tense = str(row.get('tense', '')).lower()
         voice = str(row.get('voice', '')).lower()
-        print(f"  {ref:<12}  {row.get('text',''):<20}  {tense} {voice:<10}  {row.get('gloss','')}")
+        gloss = row.get('gloss', '')
+        print(f"  {ref:<12}  {row.get('text', ''):<20}  {tense} {voice:<10}  {gloss}")
     if len(df) > n:
         print(f"  … ({len(df) - n} more — use nt_genitive_absolutes() for full DataFrame)")
     print()

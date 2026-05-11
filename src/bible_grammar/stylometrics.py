@@ -375,7 +375,6 @@ def style_heatmap(
 ) -> Path | None:
     try:
         import matplotlib.pyplot as plt
-        import numpy as np
     except ImportError:
         return None
 

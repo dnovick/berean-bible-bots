@@ -43,8 +43,6 @@ ot_discourse_peak_chart(book)                 → Path | None
 
 from __future__ import annotations
 from pathlib import Path
-from typing import Sequence
-
 import pandas as pd
 
 from ._utils import ensure_chart_dir
@@ -297,7 +295,7 @@ def print_ot_speech_density(book: str) -> None:
 def print_ot_peak_score(book: str) -> None:
     df = ot_discourse_peak_score(book)
     print(f"\nNarrative Peak Scores by Chapter — {book}")
-    print(f"  (0.4×wayyiqtol + 0.3×speech + 0.3×TTR, all normalised 0–1)")
+    print("  (0.4×wayyiqtol + 0.3×speech + 0.3×TTR, all normalised 0–1)")
     print(f"  {'Ch':>4} {'Wyy%':>6} {'Sp%':>6} {'TTR':>6} {'Score':>7}")
     print('  ' + '-' * 36)
     for _, row in df.iterrows():
@@ -318,7 +316,8 @@ def print_ot_episode_boundaries(book: str) -> None:
     print(f"  {'Ref':<20} {'Ch':>4} {'Vs':>4}  Type")
     print('  ' + '-' * 55)
     for _, row in df.iterrows():
-        print(f"  {str(row['ref']):<20} {int(row['chapter']):>4} {int(row['verse']):>4}  {row['boundary_type']}")
+        print(f"  {str(row['ref']):<20} {int(row['chapter']):>4} "
+              f"{int(row['verse']):>4}  {row['boundary_type']}")
     print()
 
 

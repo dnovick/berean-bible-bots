@@ -131,7 +131,6 @@ def nt_ln_data(
     df = df[df['ln'].notna() & (df['ln'] != '')].copy()
 
     if domain is not None:
-        prefix = str(domain) + '.'
         df = df[df['ln'].str.contains(re.escape(str(domain)) + r'\.', na=False)]
 
     if subdomain is not None:
@@ -295,7 +294,7 @@ def print_nt_ln_overview() -> None:
             all_codes.add(_normalise_code(c))
     w = 62
     print(f"\n{'═'*w}")
-    print(f"  NT Louw-Nida Sub-Domain Coverage")
+    print("  NT Louw-Nida Sub-Domain Coverage")
     print(f"{'═'*w}")
     print(f"  Total NT tokens      : {len(df):>9,}")
     print(f"  Tokens with LN code  : {len(has_ln):>9,} ({len(has_ln)/len(df)*100:.1f}%)")
@@ -325,7 +324,8 @@ def print_nt_ln_subdomain_frequency(
     print(f"  {'Sub-domain':<12} {'Count':>7} {'%':>6}  {'Top lemma'}")
     print(f"  {'-'*11} {'-'*7} {'-'*6}  {'-'*18}")
     for _, row in df.iterrows():
-        print(f"  {row['subdomain']:<12} {row['count']:>7,} {row['pct']:>5.1f}%  {row['top_lemma']}")
+        print(f"  {row['subdomain']:<12} {row['count']:>7,} "
+              f"{row['pct']:>5.1f}%  {row['top_lemma']}")
     print()
 
 
@@ -469,7 +469,6 @@ def nt_ln_genre_heatmap(
     """
     try:
         import matplotlib.pyplot as plt
-        import numpy as np
     except ImportError:
         return None
 

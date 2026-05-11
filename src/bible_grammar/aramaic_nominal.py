@@ -231,7 +231,9 @@ def print_aramaic_nominal_overview() -> None:
     ct = aramaic_noun_state_by_book()
     for bk, row in ct.iterrows():
         total_bk = row.sum()
-        vals = '  '.join(f"{s}: {int(row.get(s,0)):>3}" for s in NOUN_STATE_ORDER if s in row.index)
+        vals = '  '.join(
+            f"{s}: {int(row.get(s, 0)):>3}" for s in NOUN_STATE_ORDER if s in row.index
+        )
         print(f"    {bk}  |  {vals}  |  total: {total_bk}")
     print()
 

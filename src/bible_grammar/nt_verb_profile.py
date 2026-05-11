@@ -65,6 +65,7 @@ _CHART_DIR = Path('output') / 'charts' / 'nt' / 'verbs'
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
+
 def nt_verb_data(book: str | None = None) -> pd.DataFrame:
     """All GNT verb tokens with morphological columns, optionally filtered to one book."""
     df = load_syntax()
@@ -432,7 +433,6 @@ def nt_verb_genre_heatmap() -> Path | None:
     """Heatmap of tense % by NT genre group."""
     try:
         import matplotlib.pyplot as plt
-        import numpy as np
     except ImportError:
         return None
 
