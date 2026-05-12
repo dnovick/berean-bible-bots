@@ -54,7 +54,7 @@ Built to answer questions like:
 
 ```bash
 # 1. Clone with submodules
-git clone --recurse-submodules <repo-url>
+git clone --recurse-submodules https://github.com/dnovick/berean-bible-bots.git
 cd berean-bible-bots
 
 # 2. One-command setup — creates a virtual environment, installs all dependencies,

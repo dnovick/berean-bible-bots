@@ -10,7 +10,7 @@
 
 ```bash
 # 1. Clone the repository with all submodules
-git clone --recurse-submodules <repo-url>
+git clone --recurse-submodules https://github.com/dnovick/berean-bible-bots.git
 cd berean-bible-bots
 
 # 2. One-command setup (virtual environment + dependencies + Jupyter kernel)
