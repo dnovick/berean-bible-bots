@@ -364,7 +364,8 @@ def nt_particle_frequency_chart(book: str | None = None) -> Path | None:
     scope = book or 'Whole GNT'
 
     fig, ax = plt.subplots(figsize=(9, 5))
-    colors = plt.cm.Purples([0.35 + 0.5 * i / max(len(df) - 1, 1) for i in range(len(df))])  # type: ignore[attr-defined]
+    n = max(len(df) - 1, 1)
+    colors = plt.cm.Purples([0.35 + 0.5 * i / n for i in range(len(df))])  # type: ignore[attr-defined]
     bars = ax.barh(df['display'], df['count'], color=colors)
     for bar, val in zip(bars, df['count']):
         ax.text(bar.get_width() + 10, bar.get_y() + bar.get_height() / 2,
