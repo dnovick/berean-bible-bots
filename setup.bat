@@ -8,7 +8,7 @@ echo.
 
 :: ── 1. Locate Python 3.11+ ──────────────────────────────────────────────────
 set PYTHON=
-for %%P in (python3.13 python3.12 python3.11 python3 python) do (
+for %%P in (python3.14 python3.13 python3.12 python3.11 python3 python) do (
     where %%P >nul 2>&1
     if not errorlevel 1 (
         for /f "tokens=*" %%V in ('%%P -c "import sys; print(sys.version_info >= (3,11))"') do (

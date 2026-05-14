@@ -9,7 +9,7 @@ echo ""
 
 # ── 1. Locate Python 3.11+ ────────────────────────────────────────────────────
 PYTHON=""
-for candidate in python3 python3.13 python3.12 python3.11; do
+for candidate in python3 python3.14 python3.13 python3.12 python3.11; do
     if command -v "$candidate" &>/dev/null; then
         ver=$("$candidate" -c "import sys; print(sys.version_info >= (3,11))" 2>/dev/null)
         if [ "$ver" = "True" ]; then
