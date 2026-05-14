@@ -26,3 +26,4 @@ Roots covered: ברך, שׁלח, דבר, כבד, ספר.
 |---|---|
 | `ch32-qal-piel-pual-contrast.md` | Static reference with answer key and notes |
 | `ch32-qal-piel-pual-contrast.html` | Interactive exercise with ▶ Answer buttons |
+| [ch32-qal-piel-pual-contrast.pdf](ch32-qal-piel-pual-contrast.pdf) | Printable — AcroForm fillable PDF with answer key |

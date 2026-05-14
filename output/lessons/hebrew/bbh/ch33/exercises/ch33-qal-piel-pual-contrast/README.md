@@ -24,3 +24,4 @@ A 15-item triplet drill showing the same weak root in Qal, Piel, and Pual side b
 |---|---|
 | `ch33-qal-piel-pual-contrast.md` | Static reference with answer key and notes |
 | `ch33-qal-piel-pual-contrast.html` | Interactive exercise with ▶ Answer buttons |
+| [ch33-qal-piel-pual-contrast.pdf](ch33-qal-piel-pual-contrast.pdf) | Printable — AcroForm fillable PDF with answer key |

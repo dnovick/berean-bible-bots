@@ -27,3 +27,4 @@ A 20-item parsing drill on Greek infinitives. Students parse each form (tense / 
 |---|---|---|
 | [ch32-infinitive-parsing.md](ch32-infinitive-parsing.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch32-infinitive-parsing.html](ch32-infinitive-parsing.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch32-infinitive-parsing.pdf](ch32-infinitive-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

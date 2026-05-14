@@ -32,8 +32,6 @@
   .reflect { background: #f4f0ff; border-left: 4px solid #9988cc; padding: .75rem 1rem; margin: 1.5rem 0; font-size: .92rem; }
   .reflect ol { margin: .4rem 0 0 1.2rem; padding: 0; }
   .reflect li { margin-bottom: .6rem; }
-  .section-head { background: #f0f4f8; font-style: italic; color: #444; font-size: .84rem; }
-  .section-head td { padding: .25rem .45rem; border: 1px solid #ccc; }
   @media print {
     .controls, button.rbtn { display: none; }
     input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
@@ -48,7 +46,7 @@
 
 <div class="instructions">
   <strong>Instructions:</strong> For each Hebrew form shown, identify: (1) Vowel Name, (2) Vowel Class (A / E / I / O / U / Reduced), (3) Quantity (Long / Short / Reduced), (4) Notes (mater lectionis, composite sheva, dagesh forte, etc.).<br>
-  <em>Items 1–5: A-class · 6–10: E-class · 11–13: I-class · 14–17: O-class · 18–19: U-class · 20–21: Simple Sheva · 22–24: Hatef Shevas · 25: Dagesh Forte</em>
+  The letter מ (mem) serves as the carrier consonant for most items.
 </div>
 
 <div class="controls">
@@ -68,9 +66,6 @@
     <th></th>
   </tr>
 
-  <!-- A-class -->
-  <tr class="section-head"><td colspan="7">A-class Vowels (1–5)</td></tr>
-
   <tr>
     <td class="num">1</td>
     <td class="heb">מָ</td>
@@ -88,7 +83,7 @@
 
   <tr>
     <td class="num">2</td>
-    <td class="heb">מַ</td>
+    <td class="heb">מֵ</td>
     <td><input class="f" id="2-name" placeholder="vowel name"></td>
     <td><input class="f" id="2-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="2-qty" placeholder="Long/Short/Reduced"></td>
@@ -97,13 +92,13 @@
   </tr>
   <tr class="ans-row" id="ans-2">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מַ</td>
-    <td colspan="5"><strong>Patah</strong> · A-class · Short · Horizontal bar below consonant; most common short A vowel</td>
+    <td class="ans-heb">מֵ</td>
+    <td colspan="5"><strong>Tsere</strong> · E-class · Long · Two horizontal dots below consonant; "ay" sound as in <em>they</em></td>
   </tr>
 
   <tr>
     <td class="num">3</td>
-    <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מָ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(closed, unaccented syllable)</span></td>
+    <td class="heb">מִ</td>
     <td><input class="f" id="3-name" placeholder="vowel name"></td>
     <td><input class="f" id="3-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="3-qty" placeholder="Long/Short/Reduced"></td>
@@ -112,13 +107,13 @@
   </tr>
   <tr class="ans-row" id="ans-3">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מָ</td>
-    <td colspan="5"><strong>Qamets Hatuf</strong> · O-class · Short · Same glyph as Qamets (long A) — context distinguishes them: closed + unaccented syllable → Qamets Hatuf (short O)</td>
+    <td class="ans-heb">מִ</td>
+    <td colspan="5"><strong>Hireq</strong> · I-class · Short · Single dot below consonant; "ee" sound</td>
   </tr>
 
   <tr>
     <td class="num">4</td>
-    <td class="heb">מֲ</td>
+    <td class="heb">מֹ</td>
     <td><input class="f" id="4-name" placeholder="vowel name"></td>
     <td><input class="f" id="4-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="4-qty" placeholder="Long/Short/Reduced"></td>
@@ -127,13 +122,13 @@
   </tr>
   <tr class="ans-row" id="ans-4">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֲ</td>
-    <td colspan="5"><strong>Hatef Patah</strong> · A-class · Reduced · Composite sheva; used under gutturals (א ה ח ע) instead of vocal sheva; most common hatef</td>
+    <td class="ans-heb">מֹ</td>
+    <td colspan="5"><strong>Holem</strong> · O-class · Long · Single dot above the letter to the upper left; "oh" sound</td>
   </tr>
 
   <tr>
     <td class="num">5</td>
-    <td class="heb">דָּבָר</td>
+    <td class="heb">מֻ</td>
     <td><input class="f" id="5-name" placeholder="vowel name"></td>
     <td><input class="f" id="5-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="5-qty" placeholder="Long/Short/Reduced"></td>
@@ -142,16 +137,13 @@
   </tr>
   <tr class="ans-row" id="ans-5">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">דָּבָר</td>
-    <td colspan="5"><strong>Qamets × 2</strong> · A-class · Long · Both vowels are Qamets (long A); word means "word/thing"; Dagesh Forte in dalet doubles it</td>
+    <td class="ans-heb">מֻ</td>
+    <td colspan="5"><strong>Qibbuts</strong> · U-class · Short · Three diagonal dots below consonant; short "oo" sound</td>
   </tr>
-
-  <!-- E-class -->
-  <tr class="section-head"><td colspan="7">E-class Vowels (6–10)</td></tr>
 
   <tr>
     <td class="num">6</td>
-    <td class="heb">מֵ</td>
+    <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מְ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(word-initial)</span></td>
     <td><input class="f" id="6-name" placeholder="vowel name"></td>
     <td><input class="f" id="6-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="6-qty" placeholder="Long/Short/Reduced"></td>
@@ -160,13 +152,13 @@
   </tr>
   <tr class="ans-row" id="ans-6">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֵ</td>
-    <td colspan="5"><strong>Tsere</strong> · E-class · Long · Two horizontal dots below consonant; "ay" sound as in <em>they</em></td>
+    <td class="ans-heb">מְ</td>
+    <td colspan="5"><strong>Vocal Sheva</strong> · Reduced · Reduced · Word-initial position → always vocal; pronounced as ultra-short murmur /ə/ (schwa)</td>
   </tr>
 
   <tr>
     <td class="num">7</td>
-    <td class="heb">מֶ</td>
+    <td class="heb">מַ</td>
     <td><input class="f" id="7-name" placeholder="vowel name"></td>
     <td><input class="f" id="7-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="7-qty" placeholder="Long/Short/Reduced"></td>
@@ -175,13 +167,13 @@
   </tr>
   <tr class="ans-row" id="ans-7">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֶ</td>
-    <td colspan="5"><strong>Seghol</strong> · E-class · Short · Three dots in inverted triangle below consonant; "eh" sound as in <em>bed</em></td>
+    <td class="ans-heb">מַ</td>
+    <td colspan="5"><strong>Patah</strong> · A-class · Short · Horizontal bar below consonant; most common short A vowel</td>
   </tr>
 
   <tr>
     <td class="num">8</td>
-    <td class="heb">מֵי</td>
+    <td class="heb">מֶ</td>
     <td><input class="f" id="8-name" placeholder="vowel name"></td>
     <td><input class="f" id="8-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="8-qty" placeholder="Long/Short/Reduced"></td>
@@ -190,13 +182,13 @@
   </tr>
   <tr class="ans-row" id="ans-8">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֵי</td>
-    <td colspan="5"><strong>Tsere Yod</strong> · E-class · Long · Tsere with yod mater lectionis; yod is quiescent (no consonantal sound)</td>
+    <td class="ans-heb">מֶ</td>
+    <td colspan="5"><strong>Seghol</strong> · E-class · Short · Three dots in inverted triangle below consonant; "eh" sound as in <em>bed</em></td>
   </tr>
 
   <tr>
     <td class="num">9</td>
-    <td class="heb">מֱ</td>
+    <td class="heb">מִי</td>
     <td><input class="f" id="9-name" placeholder="vowel name"></td>
     <td><input class="f" id="9-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="9-qty" placeholder="Long/Short/Reduced"></td>
@@ -205,13 +197,13 @@
   </tr>
   <tr class="ans-row" id="ans-9">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֱ</td>
-    <td colspan="5"><strong>Hatef Seghol</strong> · E-class · Reduced · Composite sheva; E-class; used under gutturals; less common than Hatef Patah</td>
+    <td class="ans-heb">מִי</td>
+    <td colspan="5"><strong>Hireq Yod</strong> · I-class · Long · Hireq with yod mater lectionis; yod is quiescent (no consonantal sound); long I vowel</td>
   </tr>
 
   <tr>
     <td class="num">10</td>
-    <td class="heb">בֵּן</td>
+    <td class="heb">מוֹ</td>
     <td><input class="f" id="10-name" placeholder="vowel name"></td>
     <td><input class="f" id="10-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="10-qty" placeholder="Long/Short/Reduced"></td>
@@ -220,16 +212,13 @@
   </tr>
   <tr class="ans-row" id="ans-10">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">בֵּן</td>
-    <td colspan="5"><strong>Tsere</strong> · E-class · Long · Long E under bet; Dagesh Lene in bet (begadkephat, word-initial); word means "son"</td>
+    <td class="ans-heb">מוֹ</td>
+    <td colspan="5"><strong>Holem Vav</strong> · O-class · Long · Holem with vav mater lectionis; vav is quiescent; same sound as plain holem</td>
   </tr>
-
-  <!-- I-class -->
-  <tr class="section-head"><td colspan="7">I-class Vowels (11–13)</td></tr>
 
   <tr>
     <td class="num">11</td>
-    <td class="heb">מִ</td>
+    <td class="heb">מוּ</td>
     <td><input class="f" id="11-name" placeholder="vowel name"></td>
     <td><input class="f" id="11-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="11-qty" placeholder="Long/Short/Reduced"></td>
@@ -238,13 +227,13 @@
   </tr>
   <tr class="ans-row" id="ans-11">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מִ</td>
-    <td colspan="5"><strong>Hireq</strong> · I-class · Short · Single dot below consonant; "ee" sound</td>
+    <td class="ans-heb">מוּ</td>
+    <td colspan="5"><strong>Shureq</strong> · U-class · Long · Vav with a dot in its center; vav is the mater lectionis; long "oo" sound</td>
   </tr>
 
   <tr>
     <td class="num">12</td>
-    <td class="heb">מִי</td>
+    <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מְ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(word-final)</span></td>
     <td><input class="f" id="12-name" placeholder="vowel name"></td>
     <td><input class="f" id="12-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="12-qty" placeholder="Long/Short/Reduced"></td>
@@ -253,13 +242,13 @@
   </tr>
   <tr class="ans-row" id="ans-12">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מִי</td>
-    <td colspan="5"><strong>Hireq Yod</strong> · I-class · Long · Hireq with yod mater lectionis; yod is quiescent; long I vowel</td>
+    <td class="ans-heb">מְ</td>
+    <td colspan="5"><strong>Silent Sheva</strong> · — · — · Word-final position → always silent; marks the close of the final syllable; no vowel sound produced</td>
   </tr>
 
   <tr>
     <td class="num">13</td>
-    <td class="heb">כִּי</td>
+    <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מָ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(closed, unaccented syllable)</span></td>
     <td><input class="f" id="13-name" placeholder="vowel name"></td>
     <td><input class="f" id="13-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="13-qty" placeholder="Long/Short/Reduced"></td>
@@ -268,16 +257,13 @@
   </tr>
   <tr class="ans-row" id="ans-13">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">כִּי</td>
-    <td colspan="5"><strong>Hireq Yod</strong> · I-class · Long · Long I with yod mater; Dagesh Lene in kaph (begadkephat, word-initial); word means "because/that/when"</td>
+    <td class="ans-heb">מָ</td>
+    <td colspan="5"><strong>Qamets Hatuf</strong> · O-class · Short · Same glyph as Qamets (long A) — context distinguishes them: closed + unaccented syllable → Qamets Hatuf (short O)</td>
   </tr>
-
-  <!-- O-class -->
-  <tr class="section-head"><td colspan="7">O-class Vowels (14–17)</td></tr>
 
   <tr>
     <td class="num">14</td>
-    <td class="heb">מֹ</td>
+    <td class="heb">מֵי</td>
     <td><input class="f" id="14-name" placeholder="vowel name"></td>
     <td><input class="f" id="14-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="14-qty" placeholder="Long/Short/Reduced"></td>
@@ -286,13 +272,13 @@
   </tr>
   <tr class="ans-row" id="ans-14">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֹ</td>
-    <td colspan="5"><strong>Holem</strong> · O-class · Long · Single dot above the letter to the upper left; "oh" sound</td>
+    <td class="ans-heb">מֵי</td>
+    <td colspan="5"><strong>Tsere Yod</strong> · E-class · Long · Tsere with yod mater lectionis; yod is quiescent (no consonantal sound)</td>
   </tr>
 
   <tr>
     <td class="num">15</td>
-    <td class="heb">מוֹ</td>
+    <td class="heb">כִּי</td>
     <td><input class="f" id="15-name" placeholder="vowel name"></td>
     <td><input class="f" id="15-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="15-qty" placeholder="Long/Short/Reduced"></td>
@@ -301,8 +287,8 @@
   </tr>
   <tr class="ans-row" id="ans-15">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מוֹ</td>
-    <td colspan="5"><strong>Holem Vav</strong> · O-class · Long · Holem with vav mater lectionis; vav is quiescent; same sound as plain holem</td>
+    <td class="ans-heb">כִּי</td>
+    <td colspan="5"><strong>Hireq Yod</strong> · I-class · Long · Long I with yod mater; Dagesh Lene in kaph (begadkephat, word-initial); word means "because/that/when"</td>
   </tr>
 
   <tr>
@@ -322,7 +308,7 @@
 
   <tr>
     <td class="num">17</td>
-    <td class="heb">מֳ</td>
+    <td class="heb">מֲ</td>
     <td><input class="f" id="17-name" placeholder="vowel name"></td>
     <td><input class="f" id="17-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="17-qty" placeholder="Long/Short/Reduced"></td>
@@ -331,16 +317,13 @@
   </tr>
   <tr class="ans-row" id="ans-17">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֳ</td>
-    <td colspan="5"><strong>Hatef Qamets</strong> · O-class · Reduced · Composite sheva; O-class; least common of the three hatef shevas; used under gutturals</td>
+    <td class="ans-heb">מֲ</td>
+    <td colspan="5"><strong>Hatef Patah</strong> · A-class · Reduced · Composite sheva; used under gutturals (א ה ח ע) instead of vocal sheva; most common hatef</td>
   </tr>
-
-  <!-- U-class -->
-  <tr class="section-head"><td colspan="7">U-class Vowels (18–19)</td></tr>
 
   <tr>
     <td class="num">18</td>
-    <td class="heb">מֻ</td>
+    <td class="heb">מֱ</td>
     <td><input class="f" id="18-name" placeholder="vowel name"></td>
     <td><input class="f" id="18-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="18-qty" placeholder="Long/Short/Reduced"></td>
@@ -349,13 +332,13 @@
   </tr>
   <tr class="ans-row" id="ans-18">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֻ</td>
-    <td colspan="5"><strong>Qibbuts</strong> · U-class · Short · Three diagonal dots below consonant; short "oo" sound</td>
+    <td class="ans-heb">מֱ</td>
+    <td colspan="5"><strong>Hatef Seghol</strong> · E-class · Reduced · Composite sheva; E-class; used under gutturals; less common than Hatef Patah</td>
   </tr>
 
   <tr>
     <td class="num">19</td>
-    <td class="heb">מוּ</td>
+    <td class="heb">מֳ</td>
     <td><input class="f" id="19-name" placeholder="vowel name"></td>
     <td><input class="f" id="19-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="19-qty" placeholder="Long/Short/Reduced"></td>
@@ -364,16 +347,13 @@
   </tr>
   <tr class="ans-row" id="ans-19">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מוּ</td>
-    <td colspan="5"><strong>Shureq</strong> · U-class · Long · Vav with a dot in its center; vav is the mater lectionis; long "oo" sound</td>
+    <td class="ans-heb">מֳ</td>
+    <td colspan="5"><strong>Hatef Qamets</strong> · O-class · Reduced · Composite sheva; O-class; least common of the three hatef shevas; used under gutturals</td>
   </tr>
-
-  <!-- Simple Sheva -->
-  <tr class="section-head"><td colspan="7">Simple Sheva (20–21)</td></tr>
 
   <tr>
     <td class="num">20</td>
-    <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מְ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(word-initial)</span></td>
+    <td class="heb">הֲ</td>
     <td><input class="f" id="20-name" placeholder="vowel name"></td>
     <td><input class="f" id="20-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="20-qty" placeholder="Long/Short/Reduced"></td>
@@ -382,13 +362,13 @@
   </tr>
   <tr class="ans-row" id="ans-20">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מְ</td>
-    <td colspan="5"><strong>Vocal Sheva</strong> · Reduced · Reduced · Word-initial position → always vocal; pronounced as ultra-short murmur /ə/ (schwa)</td>
+    <td class="ans-heb">הֲ</td>
+    <td colspan="5"><strong>Hatef Patah</strong> · A-class · Reduced · Composite sheva; most common hatef sheva; under gutturals (here ה) instead of vocal sheva</td>
   </tr>
 
   <tr>
     <td class="num">21</td>
-    <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מְ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(word-final)</span></td>
+    <td class="heb">הֱ</td>
     <td><input class="f" id="21-name" placeholder="vowel name"></td>
     <td><input class="f" id="21-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="21-qty" placeholder="Long/Short/Reduced"></td>
@@ -397,16 +377,13 @@
   </tr>
   <tr class="ans-row" id="ans-21">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מְ</td>
-    <td colspan="5"><strong>Silent Sheva</strong> · — · — · Word-final position → always silent; marks the close of the final syllable; no vowel sound produced</td>
+    <td class="ans-heb">הֱ</td>
+    <td colspan="5"><strong>Hatef Seghol</strong> · E-class · Reduced · Composite sheva; E-class; second most common hatef; used under gutturals</td>
   </tr>
-
-  <!-- Hatef Shevas -->
-  <tr class="section-head"><td colspan="7">Hatef (Composite) Shevas (22–24)</td></tr>
 
   <tr>
     <td class="num">22</td>
-    <td class="heb">הֲ</td>
+    <td class="heb">הֳ</td>
     <td><input class="f" id="22-name" placeholder="vowel name"></td>
     <td><input class="f" id="22-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="22-qty" placeholder="Long/Short/Reduced"></td>
@@ -415,13 +392,13 @@
   </tr>
   <tr class="ans-row" id="ans-22">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">הֲ</td>
-    <td colspan="5"><strong>Hatef Patah</strong> · A-class · Reduced · Composite sheva; most common hatef sheva; under gutturals (here ה) instead of vocal sheva</td>
+    <td class="ans-heb">הֳ</td>
+    <td colspan="5"><strong>Hatef Qamets</strong> · O-class · Reduced · Composite sheva; least common hatef sheva; O-class; used under gutturals</td>
   </tr>
 
   <tr>
     <td class="num">23</td>
-    <td class="heb">הֱ</td>
+    <td class="heb">דָּבָר</td>
     <td><input class="f" id="23-name" placeholder="vowel name"></td>
     <td><input class="f" id="23-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="23-qty" placeholder="Long/Short/Reduced"></td>
@@ -430,13 +407,13 @@
   </tr>
   <tr class="ans-row" id="ans-23">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">הֱ</td>
-    <td colspan="5"><strong>Hatef Seghol</strong> · E-class · Reduced · Composite sheva; E-class; second most common hatef; used under gutturals</td>
+    <td class="ans-heb">דָּבָר</td>
+    <td colspan="5"><strong>Qamets × 2</strong> · A-class · Long · Both vowels are Qamets (long A); word means "word/thing"; Dagesh Forte in dalet doubles it</td>
   </tr>
 
   <tr>
     <td class="num">24</td>
-    <td class="heb">הֳ</td>
+    <td class="heb">בֵּן</td>
     <td><input class="f" id="24-name" placeholder="vowel name"></td>
     <td><input class="f" id="24-cls" placeholder="A/E/I/O/U"></td>
     <td><input class="f" id="24-qty" placeholder="Long/Short/Reduced"></td>
@@ -445,12 +422,9 @@
   </tr>
   <tr class="ans-row" id="ans-24">
     <td class="ans-lbl">✓</td>
-    <td class="ans-heb">הֳ</td>
-    <td colspan="5"><strong>Hatef Qamets</strong> · O-class · Reduced · Composite sheva; least common hatef sheva; O-class; used under gutturals</td>
+    <td class="ans-heb">בֵּן</td>
+    <td colspan="5"><strong>Tsere</strong> · E-class · Long · Long E under bet; Dagesh Lene in bet (begadkephat, word-initial); word means "son"</td>
   </tr>
-
-  <!-- Dagesh Forte -->
-  <tr class="section-head"><td colspan="7">Dagesh Forte (25)</td></tr>
 
   <tr>
     <td class="num">25</td>

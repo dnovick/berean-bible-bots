@@ -24,3 +24,4 @@ Twenty aorist passive and future passive indicative forms drawn from GNT vocabul
 |---|---|---|
 | [ch24-aorist-future-passive-parsing.md](ch24-aorist-future-passive-parsing.md) | Markdown | Static drill with answer key |
 | [ch24-aorist-future-passive-parsing.html](ch24-aorist-future-passive-parsing.html) | HTML | Interactive self-contained drill |
+| [ch24-aorist-future-passive-parsing.pdf](ch24-aorist-future-passive-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

@@ -22,3 +22,4 @@ Parse each demonstrative form (giving gender, case, number, and the lexical form
 |---|---|---|
 | [ch13-demonstrative-parsing.md](ch13-demonstrative-parsing.md) | Markdown | Static drill with answer key |
 | [ch13-demonstrative-parsing.html](ch13-demonstrative-parsing.html) | HTML | Interactive self-contained drill |
+| [ch13-demonstrative-parsing.pdf](ch13-demonstrative-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

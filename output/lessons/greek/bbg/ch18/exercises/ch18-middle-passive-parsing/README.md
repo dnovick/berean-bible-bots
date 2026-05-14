@@ -23,3 +23,4 @@ Parse each present middle/passive indicative verb form (person, number, lexical 
 |---|---|---|
 | [ch18-middle-passive-parsing.md](ch18-middle-passive-parsing.md) | Markdown | Static drill with answer key |
 | [ch18-middle-passive-parsing.html](ch18-middle-passive-parsing.html) | HTML | Interactive self-contained drill |
+| [ch18-middle-passive-parsing.pdf](ch18-middle-passive-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

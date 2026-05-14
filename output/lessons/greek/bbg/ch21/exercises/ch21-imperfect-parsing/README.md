@@ -24,3 +24,4 @@ Twenty imperfect indicative forms. Students parse each form (tense, voice, mood,
 |---|---|---|
 | [ch21-imperfect-parsing.md](ch21-imperfect-parsing.md) | Markdown | Static drill with answer key |
 | [ch21-imperfect-parsing.html](ch21-imperfect-parsing.html) | HTML | Interactive self-contained drill |
+| [ch21-imperfect-parsing.pdf](ch21-imperfect-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

@@ -26,3 +26,4 @@ A 15-item parsing drill using present participle forms drawn from and modeled on
 |---|---|---|
 | [ch27-present-participle-parsing.md](ch27-present-participle-parsing.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch27-present-participle-parsing.html](ch27-present-participle-parsing.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch27-present-participle-parsing.pdf](ch27-present-participle-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

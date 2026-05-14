@@ -26,3 +26,4 @@ A 20-item parsing drill on the indicative forms of δίδωμι and its compound
 |---|---|---|
 | [ch34-didomi-parsing.md](ch34-didomi-parsing.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch34-didomi-parsing.html](ch34-didomi-parsing.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch34-didomi-parsing.pdf](ch34-didomi-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

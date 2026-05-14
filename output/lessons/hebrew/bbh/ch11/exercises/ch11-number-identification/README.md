@@ -16,3 +16,4 @@ For each of 20 Hebrew number-noun phrases: (1) identify the number word, (2) giv
 |---|---|---|
 | [ch11-number-identification.md](ch11-number-identification.md) | Markdown | Drill with full answer key and reflection questions |
 | [ch11-number-identification.html](ch11-number-identification.html) | HTML | Interactive — fillable fields per column, per-row reveal buttons, Show All / Hide All / Clear All |
+| [ch11-number-identification.pdf](ch11-number-identification.pdf) | Printable — AcroForm fillable PDF with answer key |

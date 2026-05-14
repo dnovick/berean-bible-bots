@@ -18,3 +18,4 @@ Students see 25 Hebrew forms — nouns, prepositions, and the direct object mark
 |---|---|
 | [ch9-suffix-parsing.md](ch9-suffix-parsing.md) | Reference copy — full exercise with static answer key and parsing notes at bottom |
 | [ch9-suffix-parsing.html](ch9-suffix-parsing.html) | Classroom/self-study — fillable input fields, per-item ▶ Answer reveal, Show All / Hide All / Clear All controls |
+| [ch9-suffix-parsing.pdf](ch9-suffix-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

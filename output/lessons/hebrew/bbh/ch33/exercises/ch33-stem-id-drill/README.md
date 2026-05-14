@@ -36,3 +36,4 @@ Primary root: גלה (items 1–3, 10–12, 16–17, 19–23). Secondary roots: 
 |---|---|
 | `ch33-stem-id-drill.md` | Static reference with answer key and parsing notes |
 | `ch33-stem-id-drill.html` | Interactive exercise with ▶ Answer buttons |
+| [ch33-stem-id-drill.pdf](ch33-stem-id-drill.pdf) | Printable — AcroForm fillable PDF with answer key |

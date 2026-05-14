@@ -26,3 +26,4 @@ A 20-item drill on Greek conditional sentences and non-indicative forms of δί�
 |---|---|---|
 | [ch35-conditionals-drill.md](ch35-conditionals-drill.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch35-conditionals-drill.html](ch35-conditionals-drill.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch35-conditionals-drill.pdf](ch35-conditionals-drill.pdf) | Printable — AcroForm fillable PDF with answer key |

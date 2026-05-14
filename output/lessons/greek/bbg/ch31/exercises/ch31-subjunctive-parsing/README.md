@@ -27,3 +27,4 @@ A 20-item parsing drill on the Greek subjunctive mood. Students parse each form 
 |---|---|---|
 | [ch31-subjunctive-parsing.md](ch31-subjunctive-parsing.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch31-subjunctive-parsing.html](ch31-subjunctive-parsing.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch31-subjunctive-parsing.pdf](ch31-subjunctive-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

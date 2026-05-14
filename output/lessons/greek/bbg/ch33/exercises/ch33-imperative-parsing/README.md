@@ -28,3 +28,4 @@ A 20-item parsing drill on the Greek imperative. Students parse each form (tense
 |---|---|---|
 | [ch33-imperative-parsing.md](ch33-imperative-parsing.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch33-imperative-parsing.html](ch33-imperative-parsing.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch33-imperative-parsing.pdf](ch33-imperative-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

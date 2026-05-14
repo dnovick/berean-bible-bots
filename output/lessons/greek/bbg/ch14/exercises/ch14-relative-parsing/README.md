@@ -23,3 +23,4 @@ For each item: (1) parse the relative pronoun (gender, case, number), (2) identi
 |---|---|---|
 | [ch14-relative-parsing.md](ch14-relative-parsing.md) | Markdown | Static drill with answer key |
 | [ch14-relative-parsing.html](ch14-relative-parsing.html) | HTML | Interactive self-contained drill |
+| [ch14-relative-parsing.pdf](ch14-relative-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

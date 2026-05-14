@@ -23,3 +23,4 @@ Roots used: שמר, כתב, נתן, הלך.
 |---|---|---|
 | [ch12-verb-overview.md](ch12-verb-overview.md) | Markdown | Exercise with full answer key and reflection questions |
 | [ch12-verb-overview.html](ch12-verb-overview.html) | HTML | Interactive — fillable fields, per-row reveal buttons, Show All / Hide All / Clear All |
+| [ch12-verb-overview.pdf](ch12-verb-overview.pdf) | Printable — AcroForm fillable PDF with answer key |

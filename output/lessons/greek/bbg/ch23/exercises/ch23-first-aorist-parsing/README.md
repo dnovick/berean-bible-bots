@@ -25,3 +25,4 @@ Twenty first aorist forms from common GNT verbs. Students parse each form (tense
 |---|---|---|
 | [ch23-first-aorist-parsing.md](ch23-first-aorist-parsing.md) | Markdown | Static drill with answer key |
 | [ch23-first-aorist-parsing.html](ch23-first-aorist-parsing.html) | HTML | Interactive self-contained drill |
+| [ch23-first-aorist-parsing.pdf](ch23-first-aorist-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

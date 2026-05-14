@@ -27,3 +27,4 @@ A 15-item parsing drill using aorist participle forms drawn from and modeled on 
 |---|---|---|
 | [ch28-aorist-participle-parsing.md](ch28-aorist-participle-parsing.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch28-aorist-participle-parsing.html](ch28-aorist-participle-parsing.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch28-aorist-participle-parsing.pdf](ch28-aorist-participle-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

@@ -33,3 +33,4 @@ Divide 20 Hebrew words into syllables, identify syllable types, mark stress, and
 |---|---|---|
 | [ch3-syllable-division.md](ch3-syllable-division.md) | Markdown | Exercise with full answer key and reflection questions |
 | [ch3-syllable-division.html](ch3-syllable-division.html) | HTML | Interactive — fillable fields with per-row answer reveal, Show All / Hide All / Clear All |
+| [ch3-syllable-division.pdf](ch3-syllable-division.pdf) | Printable — AcroForm fillable PDF with answer key |

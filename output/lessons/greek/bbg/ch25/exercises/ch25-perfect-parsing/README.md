@@ -24,3 +24,4 @@ Twenty perfect indicative forms from GNT vocabulary. Students parse each form (t
 |---|---|---|
 | [ch25-perfect-parsing.md](ch25-perfect-parsing.md) | Markdown | Static drill with answer key |
 | [ch25-perfect-parsing.html](ch25-perfect-parsing.html) | HTML | Interactive self-contained drill |
+| [ch25-perfect-parsing.pdf](ch25-perfect-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

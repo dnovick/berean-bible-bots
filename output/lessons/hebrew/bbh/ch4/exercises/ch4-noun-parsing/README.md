@@ -18,3 +18,4 @@ Identify the gender, number, state, lexical form, and gloss for each of 25 Hebre
 |---|---|---|
 | [ch4-noun-parsing.md](ch4-noun-parsing.md) | Markdown | Drill with full answer key and reflection questions |
 | [ch4-noun-parsing.html](ch4-noun-parsing.html) | HTML | Interactive — fillable fields, per-row answer reveal, Show All / Hide All / Clear All |
+| [ch4-noun-parsing.pdf](ch4-noun-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

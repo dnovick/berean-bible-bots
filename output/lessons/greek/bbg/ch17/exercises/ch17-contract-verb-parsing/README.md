@@ -22,3 +22,4 @@ Parse each contracted verb form (person, number, lexical form) and identify the 
 |---|---|---|
 | [ch17-contract-verb-parsing.md](ch17-contract-verb-parsing.md) | Markdown | Static drill with answer key |
 | [ch17-contract-verb-parsing.html](ch17-contract-verb-parsing.html) | HTML | Interactive self-contained drill |
+| [ch17-contract-verb-parsing.pdf](ch17-contract-verb-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

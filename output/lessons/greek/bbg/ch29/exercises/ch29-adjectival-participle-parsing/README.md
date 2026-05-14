@@ -25,3 +25,4 @@ A 15-item parsing drill focused on adjectival (attributive) and substantival use
 |---|---|---|
 | [ch29-adjectival-participle-parsing.md](ch29-adjectival-participle-parsing.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch29-adjectival-participle-parsing.html](ch29-adjectival-participle-parsing.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch29-adjectival-participle-parsing.pdf](ch29-adjectival-participle-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

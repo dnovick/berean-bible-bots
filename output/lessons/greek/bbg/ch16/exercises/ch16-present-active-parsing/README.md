@@ -22,3 +22,4 @@ Parse each present active indicative verb form (tense, voice, mood, person, numb
 |---|---|---|
 | [ch16-present-active-parsing.md](ch16-present-active-parsing.md) | Markdown | Static drill with answer key |
 | [ch16-present-active-parsing.html](ch16-present-active-parsing.html) | HTML | Interactive self-contained drill |
+| [ch16-present-active-parsing.pdf](ch16-present-active-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

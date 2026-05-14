@@ -25,3 +25,4 @@ A 15-item drill: items 1–8 parse perfect participle forms (active and middle/p
 |---|---|---|
 | [ch30-perfect-participle-genabs.md](ch30-perfect-participle-genabs.md) | Markdown | Reference copy — static answer key at bottom |
 | [ch30-perfect-participle-genabs.html](ch30-perfect-participle-genabs.html) | HTML | Interactive — fillable fields, ▶ Answer per row, Show/Hide/Clear All |
+| [ch30-perfect-participle-genabs.pdf](ch30-perfect-participle-genabs.pdf) | Printable — AcroForm fillable PDF with answer key |

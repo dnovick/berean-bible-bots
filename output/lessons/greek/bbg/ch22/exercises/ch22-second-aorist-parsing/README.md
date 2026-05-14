@@ -23,3 +23,4 @@ Twenty second aorist active and middle indicative forms from the GNT's most freq
 |---|---|---|
 | [ch22-second-aorist-parsing.md](ch22-second-aorist-parsing.md) | Markdown | Static drill with answer key |
 | [ch22-second-aorist-parsing.html](ch22-second-aorist-parsing.html) | HTML | Interactive self-contained drill |
+| [ch22-second-aorist-parsing.pdf](ch22-second-aorist-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

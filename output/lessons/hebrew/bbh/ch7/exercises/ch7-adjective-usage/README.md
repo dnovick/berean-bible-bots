@@ -31,3 +31,4 @@ Special features:
 |---|---|---|
 | [ch7-adjective-usage.md](ch7-adjective-usage.md) | Markdown | Drill with full answer key and reflection questions |
 | [ch7-adjective-usage.html](ch7-adjective-usage.html) | Interactive HTML | Fillable fields per item; ▶ Answer reveal per row; Show All / Hide All / Clear All controls; print stylesheet |
+| [ch7-adjective-usage.pdf](ch7-adjective-usage.pdf) | Printable — AcroForm fillable PDF with answer key |

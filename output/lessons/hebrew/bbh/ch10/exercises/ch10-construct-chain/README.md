@@ -17,3 +17,4 @@ For each Hebrew construct chain: (1) identify the construct noun and its form, (
 |---|---|---|
 | [ch10-construct-chain.md](ch10-construct-chain.md) | Markdown | Drill with full answer key |
 | [ch10-construct-chain.html](ch10-construct-chain.html) | HTML | Interactive — fillable fields, reveal buttons, Show/Hide/Clear All |
+| [ch10-construct-chain.pdf](ch10-construct-chain.pdf) | Printable — AcroForm fillable PDF with answer key |

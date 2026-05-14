@@ -17,3 +17,4 @@ Identify, parse, and translate 25 Hebrew pronouns drawn from real and realistic 
 |---|---|---|
 | [ch8-pronoun-identification.md](ch8-pronoun-identification.md) | Markdown | Drill with full answer key and reflection questions |
 | [ch8-pronoun-identification.html](ch8-pronoun-identification.html) | HTML | Interactive — fillable fields, per-row reveal buttons, Show All / Hide All / Clear All |
+| [ch8-pronoun-identification.pdf](ch8-pronoun-identification.pdf) | Printable — AcroForm fillable PDF with answer key |

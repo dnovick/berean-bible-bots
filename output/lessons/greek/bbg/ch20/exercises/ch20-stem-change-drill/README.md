@@ -24,3 +24,4 @@ Twenty verbs drawn from the GNT. For each present form, students identify (1) th
 |---|---|---|
 | [ch20-stem-change-drill.md](ch20-stem-change-drill.md) | Markdown | Static drill with answer key |
 | [ch20-stem-change-drill.html](ch20-stem-change-drill.html) | HTML | Interactive self-contained drill |
+| [ch20-stem-change-drill.pdf](ch20-stem-change-drill.pdf) | Printable — AcroForm fillable PDF with answer key |

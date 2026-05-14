@@ -25,3 +25,4 @@ Forms cover all three Pual conjugations encountered at this stage: perfect (3ms,
 |---|---|
 | `ch32-function-sort.md` | Static reference with answer key |
 | `ch32-function-sort.html` | Interactive exercise with ▶ Answer buttons |
+| [ch32-function-sort.pdf](ch32-function-sort.pdf) | Printable — AcroForm fillable PDF with answer key |

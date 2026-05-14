@@ -18,3 +18,4 @@ Identify the definite article and conjunction ו in Hebrew words and phrases, de
 |---|---|---|
 | [ch5-article-and-vav.md](ch5-article-and-vav.md) | Markdown | Drill with full answer key and reflection questions |
 | [ch5-article-and-vav.html](ch5-article-and-vav.html) | HTML | Interactive — fillable fields, per-row reveal buttons, Show All / Hide All / Clear All |
+| [ch5-article-and-vav.pdf](ch5-article-and-vav.pdf) | Printable — AcroForm fillable PDF with answer key |

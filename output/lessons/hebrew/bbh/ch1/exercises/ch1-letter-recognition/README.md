@@ -18,3 +18,4 @@
 |---|---|
 | [ch1-letter-recognition.md](ch1-letter-recognition.md) | Reference copy — static answer key at bottom |
 | [ch1-letter-recognition.html](ch1-letter-recognition.html) | Classroom use — fillable fields, per-letter ▶ Answer reveal, Show/Hide/Clear All controls |
+| [ch1-letter-recognition.pdf](ch1-letter-recognition.pdf) | Printable — AcroForm fillable PDF with answer key |

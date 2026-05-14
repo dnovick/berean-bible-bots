@@ -17,3 +17,4 @@
 |---|---|---|
 | [ch6-preposition-parsing.md](ch6-preposition-parsing.md) | Markdown | Drill with full answer key and reflection questions |
 | [ch6-preposition-parsing.html](ch6-preposition-parsing.html) | HTML | Interactive — input fields per column, per-row answer reveal, Show All / Hide All / Clear All |
+| [ch6-preposition-parsing.pdf](ch6-preposition-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |

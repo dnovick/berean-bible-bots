@@ -38,3 +38,4 @@ Forms span perfect (3ms, 3fs, 3cp), imperfect (3ms), and participle (ms). The va
 |---|---|
 | `ch33-function-sort.md` | Static reference with answer key and pattern notes |
 | `ch33-function-sort.html` | Interactive exercise with ▶ Answer buttons |
+| [ch33-function-sort.pdf](ch33-function-sort.pdf) | Printable — AcroForm fillable PDF with answer key |

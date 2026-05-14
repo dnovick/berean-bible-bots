@@ -24,3 +24,4 @@ Twenty future active and middle indicative forms drawn from common GNT verbs. St
 |---|---|---|
 | [ch19-future-parsing.md](ch19-future-parsing.md) | Markdown | Static drill with answer key |
 | [ch19-future-parsing.html](ch19-future-parsing.html) | HTML | Interactive self-contained drill |
+| [ch19-future-parsing.pdf](ch19-future-parsing.pdf) | Printable — AcroForm fillable PDF with answer key |
