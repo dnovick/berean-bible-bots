@@ -92,7 +92,58 @@ translation_query(translation='KJV', book_group='pauline', search='grace')
 
 # Latin Vulgate — first chapter of Romans
 translation_query(translation='VulgClementine', book='Rom', chapter=1)
+
+# Syriac Peshitta NT — John 1
+translation_query(translation='Peshitta', book='Jhn', chapter=1)
 ```
+
+---
+
+## Peshitta NT — Syriac Morphology
+
+Word-level Syriac morphology for all 27 NT books via the ETCBC/syrnt dataset (Text-Fabric).
+109,640 tokens with part of speech, gender, number, person, state, verbal stem, tense/aspect,
+and Sedra transliterated root and lemma.
+
+```python
+from bible_grammar.peshitta_query import query_peshitta
+
+df = query_peshitta()
+# Filter by verbal stem (peal, pael, aphel, ethpeel, ethpaal, ettaphal)
+peal_verbs = df[(df['sp'] == 'verb') & (df['vs'] == 'peal')]
+# Search by Sedra root
+write_root = df[df['root_sedra'] == 'CTB']   # CTB = write
+```
+
+Notebook: `notebooks/nt/peshitta/peshitta_morphology.ipynb`
+
+---
+
+## Targumim — Aramaic OT Translations
+
+Verse-level Aramaic text for the major Targumim, downloaded from Sefaria.
+
+| Targum | Books |
+|---|---|
+| Onkelos | Gen, Exo, Lev, Num, Deu |
+| Jonathan | Jos, Jdg, Isa, Jer, Ezk, Hos, Amo, Mic, Nah, Hab, Zec |
+| Psalms | Psa |
+
+**Setup:** `python scripts/fetch_targum_data.py` (one-time download, ~14,000 verses)
+
+```python
+from bible_grammar.targum_query import load_targum
+
+# All targumim
+tg = load_targum()
+# Filter
+onkelos = load_targum(targum='Onkelos')
+tj_isa = load_targum(targum='Jonathan', book_id='Isa')
+# Search for Memra (divine word hypostasis)
+memra = tg[tg['text'].str.contains('מֵימְרָא')]
+```
+
+Notebook: `notebooks/ot/targumim/targumim_overview.ipynb`
 
 ---
 

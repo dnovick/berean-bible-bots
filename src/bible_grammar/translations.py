@@ -14,6 +14,7 @@ _SCROLL_ROOT = _REPO_ROOT / "scrollmapper-data" / "sources"
 _SOURCES = {
     "KJV":            _SCROLL_ROOT / "en" / "KJV" / "KJV.json",
     "VulgClementine": _SCROLL_ROOT / "la" / "VulgClementine" / "VulgClementine.json",
+    "Peshitta":       _SCROLL_ROOT / "syr" / "Peshitta" / "Peshitta.json",
 }
 
 # scrollmapper uses full English book names; map them to our book_id codes
@@ -37,6 +38,13 @@ _NAME_TO_ID: dict[str, str] = {
     "Titus": "Tit", "Philemon": "Phm", "Hebrews": "Heb", "James": "Jas",
     "1 Peter": "1Pe", "2 Peter": "2Pe", "1 John": "1Jn", "2 John": "2Jn",
     "3 John": "3Jn", "Jude": "Jud", "Revelation": "Rev",
+    # Peshitta scrollmapper uses Roman numerals for NT books
+    "I Corinthians": "1Co", "II Corinthians": "2Co",
+    "I Thessalonians": "1Th", "II Thessalonians": "2Th",
+    "I Timothy": "1Ti", "II Timothy": "2Ti",
+    "I Peter": "1Pe", "II Peter": "2Pe",
+    "I John": "1Jn", "II John": "2Jn", "III John": "3Jn",
+    "Revelation of John": "Rev",
 }
 
 
@@ -53,23 +61,27 @@ def _load_json(path: Path, translation: str, language: str) -> list[dict]:
         for chapter in book["chapters"]:
             ch_num = int(chapter["chapter"])
             for verse in chapter["verses"]:
+                text = verse["text"].strip()
+                if not text:
+                    continue
                 rows.append({
                     "translation": translation,
                     "language": language,
                     "book_id": book_id,
                     "chapter": ch_num,
                     "verse": int(verse["verse"]),
-                    "text": verse["text"].strip(),
+                    "text": text,
                 })
     return rows
 
 
 def load_translations() -> pd.DataFrame:
-    """Load KJV and Vulgate Clementine into a single DataFrame."""
+    """Load KJV, Vulgate Clementine, and Peshitta NT into a single DataFrame."""
     all_rows: list[dict] = []
     configs = [
         ("KJV", "English"),
         ("VulgClementine", "Latin"),
+        ("Peshitta", "Syriac"),
     ]
     for key, lang in configs:
         path = _SOURCES[key]

@@ -3,7 +3,8 @@
 | Submodule | Contents | License |
 |---|---|---|
 | `stepbible-data/` | Hebrew OT (TAHOT, ~284k words) and Greek NT (TAGNT, ~142k words) with full morphological tagging; LXX Greek (TALXX); lexicons TBESH/TBESG; NT→OT cross-references | CC BY 4.0 — Tyndale House Cambridge |
-| `scrollmapper-data/` | KJV English (24,570 verses) and Latin Vulgate Clementine (24,909 verses) | MIT — scrollmapper |
+| `scrollmapper-data/` | KJV English (24,570 verses), Latin Vulgate Clementine (24,909 verses), and Syriac Peshitta NT (7,956 verses) | MIT — scrollmapper |
+| `syrnt/` | ETCBC Peshitta NT word-level morphology (109,640 words) — sp, gn, nu, ps, st, verbal stem (vs), tense/aspect (vt), Sedra root and lemma | MIT — ETCBC |
 | `macula-greek/` | MACULA Greek NT (Nestle1904, 137k words) with syntax trees, semantic roles (`role`), participant referents (`subjref`/`referent`), English glosses, and Louw-Nida semantic domains | CC BY 4.0 — Clear Bible / Tyndale House |
 | `macula-hebrew/` | MACULA Hebrew OT (WLC, 475k words) with syntax trees, semantic roles, LXX alignment per word (`greek`/`greekstrong`), stem, clause type (wayyiqtol/qatal/etc.), and Aramaic sections | CC BY 4.0 — Clear Bible |
 
@@ -41,4 +42,10 @@ transliteration, gloss, definition, and POS code for every Strong's number.
   zero-padding (H530 ↔ H0530) and variant suffixes (H1697A → H1697) are handled
   transparently.
 - **Word counts:** TAHOT ~284k words, TAGNT ~142k words, LXX ~480k words,
-  KJV 24,570 verses, Vulgate Clementine 24,909 verses.
+  KJV 24,570 verses, Vulgate Clementine 24,909 verses, Peshitta NT 7,956 verses.
+- **Peshitta NT morphology:** 109,640 Syriac words via ETCBC/syrnt (Text-Fabric).
+  Access via ``peshitta_query.query_peshitta()``.
+- **Targumim:** Verse-level Aramaic for Onkelos (Torah), Targum Jonathan (Former &
+  Latter Prophets), and Targum to Psalms. Downloaded from Sefaria — run
+  ``python scripts/fetch_targum_data.py`` to populate ``data/processed/targum.parquet``.
+  Access via ``targum_query.load_targum()``.

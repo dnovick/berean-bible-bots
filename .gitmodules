@@ -10,3 +10,6 @@
 [submodule "macula-hebrew"]
 	path = macula-hebrew
 	url = https://github.com/Clear-Bible/macula-hebrew.git
+[submodule "syrnt"]
+	path = syrnt
+	url = https://github.com/ETCBC/syrnt.git

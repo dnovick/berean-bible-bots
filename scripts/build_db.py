@@ -21,7 +21,7 @@ if __name__ == "__main__":
     print(f"  OT: {(df.source=='TAHOT').sum():,}  NT: {(df.source=='TAGNT').sum():,}")
     save(df)
 
-    print("\nLoading translations (KJV, Vulgate)...")
+    print("\nLoading translations (KJV, Vulgate, Peshitta NT)...")
     t1 = time.time()
     tr = load_translations()
     print(f"  {len(tr):,} verses loaded in {time.time()-t1:.1f}s")
