@@ -13,7 +13,7 @@
 
 A Python project for generating statistics, charts, and reports on the grammatical
 constructs of the biblical text — Hebrew and Aramaic Old Testament, Greek New Testament,
-Greek Septuagint (LXX), and English/Latin translations.
+Greek Septuagint (LXX), English/Latin translations, Syriac Peshitta NT, and Aramaic Targumim.
 
 The LXX (Septuagint) is the ancient Greek translation of the Hebrew scriptures, and plays
 a central role in this project: it bridges the Hebrew OT and Greek NT vocabulary, and is
@@ -34,6 +34,9 @@ Built to answer questions like:
 - *How does Paul's use of Χριστός (Christ) compare to the Gospels? Where does the title concentrate?*
 - *What OT passages does Isaiah 53 echo in the NT — and through which books?*
 - *How do verb conjugation patterns differ between narrative prose and wisdom poetry?*
+- *How does Targum Jonathan render Isaiah 53 — does it apply the Servant to Israel or a messianic figure?*
+- *Where does Targum Onkelos use "Memra" (divine word) in place of direct divine action?*
+- *What verbal stems appear in the Syriac Peshitta NT, and how does the Peal compare to derived stems?*
 
 ---
 
@@ -67,7 +70,10 @@ source .venv/bin/activate          # Mac / Linux
 # .venv\Scripts\activate           # Windows
 python scripts/build_db.py
 
-# 4. Open any notebook in notebooks/ in VS Code and select the "Berean Bible Bots" kernel
+# 4. Download Targum data from Sefaria (one-time, ~14,000 verses)
+python scripts/fetch_targum_data.py
+
+# 5. Open any notebook in notebooks/ in VS Code and select the "Berean Bible Bots" kernel
 ```
 
 See [notebooks/SETUP.md](notebooks/SETUP.md) for notebook setup details and
@@ -106,6 +112,8 @@ See [notebooks/SETUP.md](notebooks/SETUP.md) for notebook setup details and
 - **Formulaic Language** — prophetic formulas, doxological phrases, n-gram detection, blessing/curse patterns
 - **Biblical Aramaic Verb Morphology** — Peal/Haphel/Pael stems, Daniel vs. Ezra comparison
 - **Biblical Aramaic Nominal System** — determined state dominance, pronouns, prepositions
+- **Peshitta NT Morphology** — 109,640 Syriac words with sp, gn, nu, ps, state, verbal stem, tense/aspect, Sedra root/lemma
+- **Targumim** — Onkelos (Torah), Targum Jonathan (Prophets), Targum to Psalms; 14,339 verses searchable by keyword
 - **Lesson Packages** — BBH Ch1–35, BBG Ch1–36, BBA Ch1–22 with exercises and Anki decks
 
 For full API documentation and code examples, see [docs/features.md](docs/features.md).

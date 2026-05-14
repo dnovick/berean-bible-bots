@@ -1,10 +1,11 @@
 # Notebooks Index
 
 These notebooks demonstrate the full `bible_grammar` analysis toolkit across
-the Hebrew Old Testament, Greek New Testament, and Septuagint (LXX). They cover
-verb morphology, syntactic role search, speaker attribution, poetry analysis,
-lexicon lookups, intertextuality, cross-testament trajectories, and more —
-all backed by the MACULA Hebrew WLC and MACULA Greek Nestle1904 syntax trees.
+the Hebrew Old Testament, Greek New Testament, Septuagint (LXX), Syriac Peshitta NT,
+and Aramaic Targumim. They cover verb morphology, syntactic role search, speaker
+attribution, poetry analysis, lexicon lookups, intertextuality, cross-testament
+trajectories, and more — all backed by the MACULA Hebrew WLC and MACULA Greek
+Nestle1904 syntax trees, ETCBC/syrnt, and Sefaria Targum texts.
 
 **New here?** See [SETUP.md](SETUP.md) for step-by-step instructions to get
 the notebooks running in VS Code (5–10 minutes).
@@ -37,6 +38,12 @@ the notebooks running in VS Code (5–10 minutes).
 |---|---|
 | [ot/aramaic/aramaic_overview.ipynb](ot/aramaic/aramaic_overview.ipynb) | Biblical Aramaic morphology: token distribution (Daniel/Ezra), verb stem profiles (Peal/Pael/Haphel/Peil/Hithpeel), conjugation distribution, stem×conjugation crosstab, top roots, Daniel vs. Ezra comparison |
 | [ot/aramaic/aramaic_nominal.ipynb](ot/aramaic/aramaic_nominal.ipynb) | Biblical Aramaic nominal system: noun state (absolute/construct/determined), gender/number, top noun lemmas, pronoun types, preposition frequency, Daniel vs. Ezra comparison |
+
+### Targumim
+
+| Notebook | Description |
+|---|---|
+| [ot/targumim/targumim_overview.ipynb](ot/targumim/targumim_overview.ipynb) | Aramaic Targumim (Onkelos, Jonathan, Psalms): verse coverage by book, Onkelos Torah samples, Targum Jonathan Isaiah 53, Targum Psalms, Memra (divine word) search across all targumim, cross-reference comparison with MT/KJV |
 
 ### Semantic Domains
 
@@ -81,6 +88,12 @@ the notebooks running in VS Code (5–10 minutes).
 ---
 
 ## New Testament (Greek)
+
+### Peshitta NT (Syriac)
+
+| Notebook | Description |
+|---|---|
+| [nt/peshitta/peshitta_morphology.ipynb](nt/peshitta/peshitta_morphology.ipynb) | Syriac Peshitta NT word-level morphology (ETCBC/syrnt, 109,640 tokens): part-of-speech distribution, verbal stem profile (Peal/Pael/Aphel/Ethpeel/Ethpaal/Ettaphal), tense/aspect by stem, Sedra root search, word counts per book, verse lookup |
 
 ### Noun Morphology
 
@@ -175,8 +188,10 @@ All notebooks use `sys.path.insert(0, '<depth>/src')` to locate the `bible_gramm
 | `notebooks/ot/syntax/` | `'../../../src'` |
 | `notebooks/ot/speakers/` | `'../../../src'` |
 | `notebooks/ot/lexicon/` | `'../../../src'` |
+| `notebooks/ot/targumim/` | `'../../../src'` |
 | `notebooks/nt/syntax/` | `'../../../src'` |
 | `notebooks/nt/discourse/` | `'../../../src'` |
+| `notebooks/nt/peshitta/` | `'../../../src'` |
 | `notebooks/both/survey/` | `'../../../src'` |
 | `notebooks/both/lexicon/` | `'../../../src'` |
 | `notebooks/both/intertextuality/` | `'../../../src'` |
