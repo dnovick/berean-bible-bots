@@ -411,7 +411,7 @@ class StemAnalysis:
         df = df[df['count'] > 0].sort_values('pct')
 
         fig, ax = plt.subplots(figsize=(9, 5))
-        colors = plt.cm.Blues(  # type: ignore[attr-defined]
+        colors = plt.cm.Blues(
             [0.4 + 0.5 * (i / max(len(df) - 1, 1)) for i in range(len(df))]
         )
         bars = ax.barh(df['form'], df['pct'], color=colors)
@@ -596,7 +596,7 @@ class StemAnalysis:
         labels = [f"{row['root']}  ({row['top_gloss'][:16]})" for _, row in df.iterrows()]
 
         fig, ax = plt.subplots(figsize=(10, max(6, top_n * 0.45)))
-        colors = plt.cm.viridis(  # type: ignore[attr-defined]
+        colors = plt.cm.viridis(
             [0.2 + 0.6 * (i / max(len(df) - 1, 1)) for i in range(len(df))]
         )
         bars = ax.barh(labels, df['count'], color=colors)
@@ -632,7 +632,7 @@ class StemAnalysis:
         ]
 
         fig, ax = plt.subplots(figsize=(9, 7))
-        wedges, texts, autotexts = ax.pie(  # type: ignore[misc]
+        wedges, texts, autotexts = ax.pie(
             df['count'],
             labels=[f"{r['category']}\n({r['count']:,})" for _, r in df.iterrows()],
             autopct='%1.1f%%',

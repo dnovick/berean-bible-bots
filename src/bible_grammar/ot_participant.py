@@ -410,7 +410,7 @@ def ot_participant_chain_chart(
 
     chapters = sorted(all_chapters)
     x = np.arange(len(chapters))
-    colors = plt.cm.tab10.colors  # type: ignore[attr-defined]
+    colors = plt.cm.tab10.colors
 
     fig, ax = plt.subplots(figsize=(max(10, len(chapters) * 0.4), 5))
     width = 0.8 / len(series)

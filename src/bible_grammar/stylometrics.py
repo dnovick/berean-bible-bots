@@ -350,7 +350,7 @@ def style_radar_chart(
     out = _CHART_DIR / f'radar_{safe}_{lang}.png'
 
     fig, ax = plt.subplots(figsize=(8, 8), subplot_kw={'polar': True})
-    colors = plt.cm.tab10.colors  # type: ignore[attr-defined]
+    colors = plt.cm.tab10.colors
     for idx, (book, row) in enumerate(mat.iterrows()):
         vals = row[metrics].tolist() + [row[metrics[0]]]
         ax.plot(angles, vals, color=colors[idx % len(colors)], linewidth=2, label=book)
