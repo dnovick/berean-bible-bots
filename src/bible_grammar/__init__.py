@@ -1,6 +1,6 @@
 # ── Core data access ──────────────────────────────────────────────────────────
-from .query import query, translation_query, lxx_query
-from .greek_prepositions import (
+from .core.query import query, translation_query, lxx_query
+from .nt.greek_prepositions import (
     greek_prep_frequency, greek_prep_by_book, greek_prep_distribution_table,
     greek_prep_cases, greek_prep_collocates, compare_greek_preps, nt_lxx_compare,
     print_greek_prep_frequency, print_greek_prep_by_book, print_greek_prep_distribution,
@@ -8,69 +8,69 @@ from .greek_prepositions import (
     print_compare_greek_preps, print_nt_lxx_compare,
     NT_MAJOR_PREPS, LXX_MAJOR_PREPS, NT_BOOK_GROUPS, LXX_BOOK_GROUPS,
 )
-from .prepositions import (
+from .ot.prepositions import (
     prep_frequency, prep_by_book, prep_distribution_table,
     prep_collocates, prep_object_types, compare_preps,
     print_prep_frequency, print_prep_by_book, print_prep_distribution,
     print_prep_collocates, print_compare_preps,
     MAJOR_PREPS, PREP_GLOSS, BOOK_GROUPS,
 )
-from .stats import freq_table
-from .alignment import translation_equivalents, hebrew_sources
-from .ibm_align import translation_equivalents_w, hebrew_sources_w
-from .quotations import nt_quotations, verse_comparison, quotation_table, quotation_summary
-from .lxx_consistency import lxx_consistency, print_lxx_consistency, consistency_heatmap, batch_consistency  # noqa: E501
-from .concordance import concordance, lemma_frequency, top_lemmas
-from .profiles import book_profile, print_profile, save_profile_report, batch_profiles
-from .wordstudy import word_study, print_word_study, word_study_table, resolve_strongs
-from .parallel import parallel_passage, print_parallel, parallel_words
-from .hapax import hapax_legomena, hapax_table, hapax_summary
-from .termmap import term_map, print_term_map, term_map_table, THEOLOGICAL_TERMS
-from .phrase import phrase_search, print_phrase_results, proximity_search, print_proximity_results
-from .collocation import collocations, print_collocations, collocation_network
-from .morph_chart import morph_distribution, print_morph_distribution, morph_chart
-from .semantic_profile import semantic_profile, print_semantic_profile, save_semantic_profile
-from .synonym import compare_synonyms, print_synonym_comparison, synonym_table
-from .quotation_align import quotation_align, print_quotation_align, batch_align
-from .divine_names import (divine_name_table, divine_name_summary, divine_name_by_section,
+from .lexical.stats import freq_table
+from .core.alignment import translation_equivalents, hebrew_sources
+from .core.ibm_align import translation_equivalents_w, hebrew_sources_w
+from .intertextuality.quotations import nt_quotations, verse_comparison, quotation_table, quotation_summary
+from .intertextuality.lxx_consistency import lxx_consistency, print_lxx_consistency, consistency_heatmap, batch_consistency  # noqa: E501
+from .lexical.concordance import concordance, lemma_frequency, top_lemmas
+from .reporting.profiles import book_profile, print_profile, save_profile_report, batch_profiles
+from .lexical.wordstudy import word_study, print_word_study, word_study_table, resolve_strongs
+from .intertextuality.parallel import parallel_passage, print_parallel, parallel_words
+from .lexical.hapax import hapax_legomena, hapax_table, hapax_summary
+from .lexical.termmap import term_map, print_term_map, term_map_table, THEOLOGICAL_TERMS
+from .lexical.phrase import phrase_search, print_phrase_results, proximity_search, print_proximity_results
+from .lexical.collocation import collocations, print_collocations, collocation_network
+from .lexical.morph_chart import morph_distribution, print_morph_distribution, morph_chart
+from .lexical.semantic_profile import semantic_profile, print_semantic_profile, save_semantic_profile
+from .lexical.synonym import compare_synonyms, print_synonym_comparison, synonym_table
+from .intertextuality.quotation_align import quotation_align, print_quotation_align, batch_align
+from .names.divine_names import (divine_name_table, divine_name_summary, divine_name_by_section,
                            print_divine_names, divine_names_chart, divine_names_report,
                            OT_DIVINE_NAMES, NT_DIVINE_NAMES, LXX_DIVINE_NAMES)
-from .genre_compare import (genre_compare, print_genre_compare, genre_heatmap, genre_report,
+from .discourse.genre_compare import (genre_compare, print_genre_compare, genre_heatmap, genre_report,
                             OT_GENRES, NT_GENRES)
-from .intertextuality import (intertextuality, print_intertextuality,
+from .intertextuality.intertextuality import (intertextuality, print_intertextuality,
                               intertextuality_graph, intertextuality_report)
-from .christological_titles import (title_counts, print_title_counts,
+from .names.christological_titles import (title_counts, print_title_counts,
                                     title_chart, title_verses, title_report,
                                     TITLE_REGISTRY)
 # ── Syntax trees & role search ────────────────────────────────────────────────
-from .syntax import (load_syntax, query_syntax, speech_verbs, referent_chain,
+from .core.syntax import (load_syntax, query_syntax, speech_verbs, referent_chain,
                      clause_roles, jesus_speaking_verses, MACULA_BOOK_MAP)
-from .syntax_ot import (load_syntax_ot, query_syntax_ot, lxx_alignment,
+from .core.syntax_ot import (load_syntax_ot, query_syntax_ot, lxx_alignment,
                         clause_roles_ot, MACULA_OT_BOOK_MAP)
-from .role_search import (subject_verbs, verb_subjects, print_role_summary,
+from .names.role_search import (subject_verbs, verb_subjects, print_role_summary,
                           subject_objects, object_verbs, print_object_summary,
                           role_chart, divine_action_comparison, role_report,
                           GOD_OT, GOD_NT, JESUS_NT)
-from .lxx_query import (load_lxx_data, query_lxx, lxx_freq_table,
+from .core.lxx_query import (load_lxx_data, query_lxx, lxx_freq_table,
                         lxx_concordance, lxx_verb_stats, lxx_by_book,
                         print_lxx_query, LXX_BOOK_ORDER)
-from .ot_speaker import (speaker_verses, divine_speech_by_book, who_speaks,
+from .ot.ot_speaker import (speaker_verses, divine_speech_by_book, who_speaks,
                          divine_speech_verses, print_speaker_summary,
                          print_divine_speech_by_book, speaker_report,
                          GOD_OT_SPEECH, SPEECH_VERB_STRONGS)
-from .domain_search import (query_domain, top_domain_words, domain_profile,
+from .lexical.domain_search import (query_domain, top_domain_words, domain_profile,
                             domain_role_search, domain_comparison,
                             print_domain_summary, print_domain_role,
                             DOMAIN_NAMES, THEOLOGY_DOMAINS)
-from .trajectory import (word_trajectory, print_trajectory,
+from .lexical.trajectory import (word_trajectory, print_trajectory,
                          trajectory_chart, save_trajectory_report,
                          batch_trajectories)
-from .theological_reports import (run_theological_report, run_all_theological_reports,
+from .reporting.theological_reports import (run_theological_report, run_all_theological_reports,
                                   print_all_trajectories, theological_summary_table,
                                   print_theological_summary,
                                   THEOLOGICAL_TRAJECTORIES)
 # ── OT Hebrew poetry & verbal syntax ─────────────────────────────────────────
-from .poetry import (split_cola, verse_cola, verse_parallel_pairs,
+from .ot.poetry import (split_cola, verse_cola, verse_parallel_pairs,
                      book_word_pairs, parallelism_type,
                      book_parallelism_stats, compare_poetry_books,
                      print_verse_analysis, print_book_pairs,
@@ -101,7 +101,7 @@ from .verbal_syntax import (
     discourse_particle_summary, print_particle_summary,
 )
 # ── OT Hebrew verb stems ──────────────────────────────────────────────────────
-from .qal import (
+from .stems.qal import (
     qal_data, qal_conjugation_profile, qal_top_roots,
     qal_root_conjugation, qal_book_distribution,
     qal_stem_comparison, qal_dominant_roots,
@@ -115,7 +115,7 @@ from .qal import (
     qal_semantic_chart, qal_top_roots_chart,
     qal_report,
 )
-from .hophal import (
+from .stems.hophal import (
     hophal_data, hophal_conjugation_profile, hophal_top_roots,
     hophal_root_conjugation, hophal_book_distribution,
     hophal_stem_comparison, hophal_dominant_roots,
@@ -129,7 +129,7 @@ from .hophal import (
     hophal_semantic_chart, hophal_top_roots_chart,
     hophal_report,
 )
-from .hiphil import (
+from .stems.hiphil import (
     hiphil_data, hiphil_conjugation_profile, hiphil_top_roots,
     hiphil_root_conjugation, hiphil_book_distribution,
     hiphil_stem_comparison, hiphil_dominant_roots,
@@ -143,7 +143,7 @@ from .hiphil import (
     hiphil_semantic_chart, hiphil_top_roots_chart,
     hiphil_report,
 )
-from .niphal import (
+from .stems.niphal import (
     niphal_data, niphal_conjugation_profile, niphal_top_roots,
     niphal_root_conjugation, niphal_book_distribution,
     niphal_stem_comparison, niphal_dominant_roots,
@@ -157,7 +157,7 @@ from .niphal import (
     niphal_semantic_chart, niphal_top_roots_chart,
     niphal_report,
 )
-from .piel import (
+from .stems.piel import (
     piel_data, piel_conjugation_profile, piel_top_roots,
     piel_root_conjugation, piel_book_distribution,
     piel_stem_comparison, piel_dominant_roots,
@@ -171,7 +171,7 @@ from .piel import (
     piel_semantic_chart, piel_top_roots_chart,
     piel_report,
 )
-from .pual import (
+from .stems.pual import (
     pual_data, pual_conjugation_profile, pual_top_roots,
     pual_root_conjugation, pual_book_distribution,
     pual_stem_comparison, pual_dominant_roots,
@@ -185,7 +185,7 @@ from .pual import (
     pual_semantic_chart, pual_top_roots_chart,
     pual_report,
 )
-from .hithpael import (
+from .stems.hithpael import (
     hithpael_data, hithpael_conjugation_profile, hithpael_top_roots,
     hithpael_root_conjugation, hithpael_book_distribution,
     hithpael_stem_comparison, hithpael_dominant_roots,
@@ -200,7 +200,7 @@ from .hithpael import (
     hithpael_report,
 )
 # ── Biblical Aramaic ──────────────────────────────────────────────────────────
-from .aramaic_profile import (
+from .ot.aramaic_profile import (
     aramaic_data, aramaic_verb_data,
     aramaic_stem_profile, aramaic_conj_profile, aramaic_stem_conj,
     aramaic_top_roots, aramaic_book_distribution, aramaic_stem_by_book,
@@ -209,7 +209,7 @@ from .aramaic_profile import (
     aramaic_stem_chart, aramaic_conj_chart, aramaic_stem_book_chart,
     STEM_ORDER as ARAMAIC_STEM_ORDER, CONJ_ORDER as ARAMAIC_CONJ_ORDER,
 )
-from .aramaic_nominal import (
+from .ot.aramaic_nominal import (
     aramaic_noun_data, aramaic_pron_data, aramaic_prep_data, aramaic_adj_data,
     aramaic_noun_state_profile, aramaic_noun_gender_profile, aramaic_noun_number_profile,
     aramaic_noun_gender_state, aramaic_noun_top_lemmas, aramaic_noun_state_by_book,
@@ -220,7 +220,7 @@ from .aramaic_nominal import (
     aramaic_noun_state_chart, aramaic_noun_state_book_chart, aramaic_prep_chart,
 )
 # ── OT Hebrew morphology & lexical analysis ───────────────────────────────────
-from .ot_noun_profile import (
+from .ot.ot_noun_profile import (
     ot_noun_data, ot_adj_data,
     ot_noun_gender_profile, ot_noun_number_profile, ot_noun_state_profile,
     ot_noun_gender_state, ot_noun_top_lemmas, ot_noun_lemma_state,
@@ -234,7 +234,7 @@ from .ot_noun_profile import (
     STATE_ORDER as OT_NOUN_STATE_ORDER, GENDER_ORDER as OT_NOUN_GENDER_ORDER,
 )
 # ── NT Greek morphology & syntax ─────────────────────────────────────────────
-from .nt_participles import (
+from .nt.nt_participles import (
     nt_participle_data, nt_participle_tense_profile, nt_participle_voice_profile,
     nt_participle_tense_voice, nt_participle_role_profile,
     nt_participle_top_lemmas, nt_participle_book_distribution, nt_participle_genre_profile,
@@ -246,7 +246,7 @@ from .nt_participles import (
     print_nt_participle_book_distribution,
     nt_participle_tense_chart, nt_participle_genre_heatmap, nt_participle_book_chart,
 )
-from .nt_discourse import (
+from .nt.nt_discourse import (
     nt_particle_frequency, nt_particle_by_book, nt_particle_genre_profile,
     nt_hina_profile, nt_hoti_profile,
     print_nt_particle_overview, print_nt_particle_frequency,
@@ -254,7 +254,7 @@ from .nt_discourse import (
     nt_particle_frequency_chart, nt_particle_genre_heatmap, nt_particle_book_chart,
     PARTICLE_REGISTRY,
 )
-from .nt_noun_profile import (
+from .nt.nt_noun_profile import (
     nt_noun_data, nt_noun_case_profile, nt_noun_gender_profile, nt_noun_number_profile,
     nt_noun_case_gender, nt_noun_top_lemmas, nt_noun_lemma_case,
     nt_noun_book_distribution, nt_noun_genre_profile, nt_article_stats,
@@ -265,7 +265,7 @@ from .nt_noun_profile import (
     nt_noun_case_gender_heatmap, nt_noun_book_chart,
     CASE_ORDER, GENDER_ORDER,
 )
-from .nt_verb_profile import (
+from .nt.nt_verb_profile import (
     nt_verb_data, nt_verb_tense_profile, nt_verb_voice_profile, nt_verb_mood_profile,
     nt_verb_tense_voice, nt_verb_tense_mood,
     nt_verb_top_lemmas, nt_verb_lemma_tense,
@@ -277,7 +277,7 @@ from .nt_verb_profile import (
     nt_verb_genre_heatmap, nt_verb_book_chart, nt_verb_tense_voice_heatmap,
     TENSE_ORDER, VOICE_ORDER, MOOD_ORDER,
 )
-from .nt_moods import (
+from .nt.nt_moods import (
     nt_mood_data, nt_mood_profile,
     nt_subjunctive_profile, nt_infinitive_profile, nt_imperative_profile,
     nt_subjunctive_constructions, nt_infinitive_constructions,
@@ -289,7 +289,7 @@ from .nt_moods import (
     nt_mood_chart, nt_subjunctive_chart, nt_imperative_chart, nt_mood_genre_heatmap,
     PURPOSE_PARTICLES, COND_PARTICLES, PROHIB_STRONGS,
 )
-from .ot_numbers import (
+from .ot.ot_numbers import (
     ot_number_data, ot_number_frequency, ot_top_number_lemmas,
     ot_number_gender_profile, ot_number_state_profile,
     ot_number_book_distribution, ot_number_genre_profile, ot_number_polarity_table,
@@ -300,7 +300,7 @@ from .ot_numbers import (
     ot_number_frequency_chart, ot_number_genre_chart, ot_number_book_chart,
     CARDINALS_1_10,
 )
-from .nt_louw_nida import (
+from .nt.nt_louw_nida import (
     nt_ln_data, nt_ln_subdomain_frequency, nt_ln_top_lemmas,
     nt_ln_book_distribution, nt_ln_genre_profile,
     nt_ln_domain_breakdown, nt_ln_comparison,
@@ -310,7 +310,7 @@ from .nt_louw_nida import (
     nt_ln_subdomain_chart, nt_ln_book_chart, nt_ln_genre_heatmap,
     LN_DOMAIN_NAMES,
 )
-from .nt_coreference import (
+from .nt.nt_coreference import (
     nt_referent_data, nt_referent_frequency, nt_entity_chain,
     nt_pronoun_referents, nt_book_entity_density, nt_entity_chapter_distribution,
     print_nt_referent_overview, print_nt_referent_frequency,
@@ -318,14 +318,14 @@ from .nt_coreference import (
     nt_referent_book_chart, nt_entity_density_chart,
     KNOWN_ENTITIES,
 )
-from .ot_predicate_args import (
+from .ot.ot_predicate_args import (
     ot_frame_data, ot_agent_verbs, ot_patient_verbs,
     ot_verb_agents, ot_verb_patients, ot_frame_pairs,
     print_ot_frame_overview, print_ot_agent_verbs, print_ot_patient_verbs,
     print_ot_verb_agents, print_ot_verb_patients, print_ot_frame_pairs,
     ot_agent_verbs_chart, ot_patient_verbs_chart,
 )
-from .ot_semantic_domains import (
+from .ot.ot_semantic_domains import (
     ot_domain_data, ot_domain_frequency, ot_top_domain_lemmas,
     ot_domain_book_distribution, ot_domain_genre_profile,
     ot_domain_comparison, ot_coredomain_profile, ot_theology_profile,
@@ -338,7 +338,7 @@ from .ot_semantic_domains import (
     COREDOMAIN_NAMES, LEXDOMAIN_TOP, THEOLOGY_COREDOMAINS,
 )
 # ── Stylistics, discourse & speech acts ──────────────────────────────────────
-from .speech_acts import (
+from .discourse.speech_acts import (
     SPEECH_ACT_TYPES,
     ot_speech_act_data, ot_speech_act_profile,
     nt_speech_act_data, nt_speech_act_profile,
@@ -347,26 +347,26 @@ from .speech_acts import (
     print_speech_act_comparison,
     speech_act_chart, speech_act_heatmap,
 )
-from .information_structure import (
+from .discourse.information_structure import (
     ot_information_profile, nt_information_profile,
     ot_clause_linking_comparison, nt_clause_linking_comparison,
     print_ot_information_profile, print_nt_information_profile,
     print_ot_clause_linking_comparison, print_nt_clause_linking_comparison,
     nt_clause_linking_chart, nt_information_heatmap, ot_clause_linking_chart,
 )
-from .ot_participant import (
+from .ot.ot_participant import (
     KNOWN_OT_PARTICIPANTS,
     ot_participant_data, ot_participant_subject_verbs, ot_participant_object_verbs,
     ot_participant_chain, ot_entity_density, ot_participant_compare,
     print_ot_participant_profile, print_ot_participant_chain, print_ot_participant_compare,
     ot_participant_chain_chart, ot_entity_density_chart,
 )
-from .stylometrics import (
+from .discourse.stylometrics import (
     msttr, book_style_profile, style_comparison,
     print_style_profile, print_style_comparison,
     style_radar_chart, style_heatmap,
 )
-from .formulaic import (
+from .discourse.formulaic import (
     HEBREW_FORMULAS, GREEK_FORMULAS,
     ot_formula_frequency, nt_formula_frequency,
     ot_formula_search, nt_formula_search,
@@ -377,7 +377,7 @@ from .formulaic import (
     print_ot_top_ngrams, print_nt_top_ngrams,
     formula_book_chart, formula_chapter_chart,
 )
-from .ot_discourse import (
+from .ot.ot_discourse import (
     ot_discourse_wayyiqtol_density, ot_discourse_speech_density,
     ot_discourse_lexical_diversity, ot_discourse_peak_score,
     ot_discourse_episode_boundaries, ot_discourse_narrative_profile,
@@ -386,7 +386,7 @@ from .ot_discourse import (
     ot_discourse_density_chart, ot_discourse_peak_chart,
     SCENE_SETTING_LEMMAS,
 )
-from .nt_demonstratives import (
+from .nt.nt_demonstratives import (
     nt_demo_data, nt_demo_frequency, nt_demo_case_profile,
     nt_demo_gender_profile, nt_demo_use_profile,
     nt_demo_book_distribution, nt_demo_genre_profile,
@@ -400,10 +400,10 @@ from .nt_demonstratives import (
     OUTOS, EKEINOS,
 )
 # ── Utilities & low-level helpers ────────────────────────────────────────────
-from .speaker import (is_jesus_speaking, jesus_speaking_verse_set,
+from .discourse.speaker import (is_jesus_speaking, jesus_speaking_verse_set,
                       filter_to_jesus_speech, ALLOWLIST_VERSES)
-from .lexicon import lookup, search_gloss, lex_entry, lemma_index
-from .export import (export_csv, export_html_page,
+from .lexical.lexicon import lookup, search_gloss, lex_entry, lemma_index
+from .reporting.export import (export_csv, export_html_page,
                      export_word_study, export_semantic_profile,
                      export_genre_compare, export_divine_names, export_all)
-from . import charts
+from .reporting import charts

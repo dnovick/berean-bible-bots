@@ -5,7 +5,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.poetry import _jaccard
+from bible_grammar.ot.poetry import _jaccard
 
 
 class TestJaccard:

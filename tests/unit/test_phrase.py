@@ -7,7 +7,7 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.phrase import _norm_strongs, _query_strongs, _resolve_token
+from bible_grammar.lexical.phrase import _norm_strongs, _query_strongs, _resolve_token
 
 
 class TestNormStrongs:

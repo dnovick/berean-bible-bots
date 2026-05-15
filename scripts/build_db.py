@@ -2,11 +2,11 @@
 """Parse all source data and build the processed database."""
 import time
 
-from bible_grammar.ingest import load_all
-from bible_grammar.translations import load_translations
-from bible_grammar.lxx import load_lxx
-from bible_grammar.db import save, save_translations, save_lxx
-from bible_grammar.alignment import save_alignment, build_alignment
+from bible_grammar.core.ingest import load_all
+from bible_grammar.core.translations import load_translations
+from bible_grammar.core.lxx import load_lxx
+from bible_grammar.core.db import save, save_translations, save_lxx
+from bible_grammar.core.alignment import save_alignment, build_alignment
 
 if __name__ == "__main__":
     t0 = time.time()

@@ -3,8 +3,8 @@ import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 import pandas as pd
 from pathlib import Path
-from bible_grammar.ot_noun_profile import ot_noun_gender_profile
-from bible_grammar.nt_noun_profile import nt_noun_gender_profile
+from bible_grammar.ot.ot_noun_profile import ot_noun_gender_profile
+from bible_grammar.nt.nt_noun_profile import nt_noun_gender_profile
 
 REPORT = Path('output/reports/both/lexicon/nouns-by-gender-by-book.md')
 CHART_OT = Path('output/charts/ot/lexicon/nouns-by-gender-ot.png')

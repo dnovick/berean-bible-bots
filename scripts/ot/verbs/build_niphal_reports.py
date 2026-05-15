@@ -2,7 +2,7 @@
 import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 from pathlib import Path
-from bible_grammar.stats import niphal_perfects_by_book
+from bible_grammar.lexical.stats import niphal_perfects_by_book
 
 REPORT_ALL = Path('output/reports/ot/verbs/niphal-perfects-by-book.md')
 REPORT_TOP = Path('output/reports/ot/verbs/niphal-perfects-by-book-top20.md')

@@ -2,7 +2,7 @@
 import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 from pathlib import Path
-from bible_grammar.query import query
+from bible_grammar.core.query import query
 
 REPORT = Path('output/reports/nt/verbs/greek-aorist-passives-by-nt-book.md')
 CHART = Path('output/charts/nt/verbs/nt_aorist_passive_by_book.png')

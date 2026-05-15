@@ -1,5 +1,5 @@
 """Build syntactic role analysis for YHWH/Elohim in the OT."""
-from bible_grammar.role_search import role_report
+from bible_grammar.names.role_search import role_report
 
 # YHWH = H3068, Elohim = H430
 report_path = role_report(

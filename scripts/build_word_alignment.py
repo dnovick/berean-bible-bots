@@ -1,7 +1,7 @@
 """Build IBM Model 1 word-level Hebrew↔LXX alignment."""
 import time
 
-from bible_grammar.ibm_align import build_word_alignment
+from bible_grammar.core.ibm_align import build_word_alignment
 
 print("Building word-level Hebrew↔LXX alignment (IBM Model 1)...")
 t0 = time.time()

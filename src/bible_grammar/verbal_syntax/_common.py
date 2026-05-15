@@ -3,7 +3,7 @@ from __future__ import annotations
 
 import pandas as pd
 
-from .._utils import strip_diacritics as _strip_diacritics  # noqa: F401 (re-exported)
+from ..core._utils import strip_diacritics as _strip_diacritics  # noqa: F401 (re-exported)
 
 # MACULA `type_` values for verbs — canonical display names
 VERB_FORM_ORDER: list[str] = [
@@ -49,7 +49,7 @@ _PREP_DISPLAY: dict[str, str] = {
 
 
 def _load_macula() -> pd.DataFrame:
-    from .._utils import load_ot_data
+    from ..core._utils import load_ot_data
     return load_ot_data()
 
 

@@ -1,5 +1,5 @@
 """Build Isaiah 53 intertextuality network report and graph."""
-from bible_grammar.intertextuality import intertextuality_report
+from bible_grammar.intertextuality.intertextuality import intertextuality_report
 
 report_path = intertextuality_report(
     'Isa', chapter=53, min_votes=20,

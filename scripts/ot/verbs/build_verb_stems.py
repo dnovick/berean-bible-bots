@@ -2,7 +2,7 @@
 import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 from pathlib import Path
-from bible_grammar.stats import verb_stems_by_book
+from bible_grammar.lexical.stats import verb_stems_by_book
 
 CHARTS = Path('output/charts/ot/verbs')
 REPORTS = Path('output/reports/ot/verbs')

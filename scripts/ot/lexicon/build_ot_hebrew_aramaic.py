@@ -3,7 +3,7 @@ import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 import pandas as pd
 from pathlib import Path
-from bible_grammar.query import query
+from bible_grammar.core.query import query
 
 REPORT = Path('output/reports/ot/lexicon/ot-hebrew-aramaic-by-book.md')
 CHART = Path('output/charts/ot/lexicon/ot-hebrew-aramaic-by-book.png')

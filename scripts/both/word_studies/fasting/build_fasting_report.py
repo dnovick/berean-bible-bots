@@ -6,10 +6,10 @@ sys.path.insert(0, 'src')
 
 import pandas as pd  # noqa: E402
 from pathlib import Path  # noqa: E402
-from bible_grammar.syntax_ot import load_syntax_ot  # noqa: E402
-from bible_grammar.lxx_query import query_lxx  # noqa: E402
-from bible_grammar._utils import load_nt  # noqa: E402
-from bible_grammar.db import load_translations  # noqa: E402
+from bible_grammar.core.syntax_ot import load_syntax_ot  # noqa: E402
+from bible_grammar.core.lxx_query import query_lxx  # noqa: E402
+from bible_grammar.core._utils import load_nt  # noqa: E402
+from bible_grammar.core.db import load_translations  # noqa: E402
 
 
 def nfc(s: object) -> str:
@@ -99,7 +99,7 @@ _lxx_targets = {nfc('νηστεύω'), nfc('νηστεία')}
 lxx_fast = lxx[lxx['lemma'].apply(lambda x: nfc(x) in _lxx_targets)].copy()
 
 # Related ἀσιτ- terms (verb ἀσιτέω and adverb ἀσιτί; only in Deuterocanon/LXX pluses)
-from bible_grammar.lxx_query import query_lxx as _query_lxx_full  # noqa: E402
+from bible_grammar.core.lxx_query import query_lxx as _query_lxx_full  # noqa: E402
 lxx_full = _query_lxx_full(include_deuterocanon=True)
 _asit_targets = {nfc('ἀσιτέω'), nfc('ἀσιτί')}
 lxx_asit = lxx_full[lxx_full['lemma'].apply(lambda x: nfc(x) in _asit_targets)].copy()

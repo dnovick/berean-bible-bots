@@ -5,9 +5,9 @@ import matplotlib.patches as mpatches
 import pandas as pd
 from pathlib import Path
 from bidi.algorithm import get_display
-from bible_grammar.syntax_ot import load_syntax_ot
-from bible_grammar.lxx_query import query_lxx
-from bible_grammar.translations import load_translations
+from bible_grammar.core.syntax_ot import load_syntax_ot
+from bible_grammar.core.lxx_query import query_lxx
+from bible_grammar.core.translations import load_translations
 
 OUT = Path('output/reports/both/word_studies')
 OUT.mkdir(parents=True, exist_ok=True)

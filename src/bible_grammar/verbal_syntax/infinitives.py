@@ -2,7 +2,7 @@
 from __future__ import annotations
 
 from ._common import _load_macula, _filter_book, _strip_diacritics, _PREP_DISPLAY
-from ..prepositions import find_governing_prep
+from ..ot.prepositions import find_governing_prep
 
 
 def infinitive_usage(book: str) -> dict:

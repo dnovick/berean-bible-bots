@@ -9,7 +9,7 @@ from unittest.mock import patch
 
 import pandas as pd
 
-from bible_grammar._stem_analysis import StemConfig, StemAnalysis, _DEFAULT_CONJ_ORDER
+from bible_grammar.stems._stem_analysis import StemConfig, StemAnalysis, _DEFAULT_CONJ_ORDER
 
 
 class TestStemConfig:

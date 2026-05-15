@@ -3,7 +3,7 @@ import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 import pandas as pd
 from pathlib import Path
-from bible_grammar.stats import greek_verb_forms
+from bible_grammar.lexical.stats import greek_verb_forms
 
 REPORT_NT = Path('output/reports/nt/verbs/greek-nt-tense-voice-heatmap.md')
 REPORT_PAU = Path('output/reports/nt/verbs/greek-pauline-tense-voice-heatmap.md')
@@ -57,7 +57,7 @@ def _pivot_tense_voice(df):
     return pd.DataFrame(rows, index=tenses, columns=voices).fillna(0)
 
 
-from bible_grammar.query import query as raw_query  # noqa: E402
+from bible_grammar.core.query import query as raw_query  # noqa: E402
 nt_raw = raw_query(testament='NT', part_of_speech='verb')
 pau_raw = raw_query(testament='NT', part_of_speech='verb',
                     book=PAULINE[0])  # placeholder

@@ -1,5 +1,5 @@
 """Build OT book language profiles for Gen, Exo, Psa, Isa, Dan."""
-from bible_grammar.profiles import save_profile_report
+from bible_grammar.reporting.profiles import save_profile_report
 
 BOOKS = ['Gen', 'Exo', 'Psa', 'Isa', 'Dan']
 

@@ -2,7 +2,7 @@
 import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 from pathlib import Path
-from bible_grammar.hapax import hapax_summary
+from bible_grammar.lexical.hapax import hapax_summary
 
 REPORT = Path('output/reports/both/lexicon/hapax-legomena-by-book.md')
 CHART_OT = Path('output/charts/ot/lexicon/hapax-ot-by-book.png')

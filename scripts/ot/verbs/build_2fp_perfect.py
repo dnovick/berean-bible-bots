@@ -2,7 +2,7 @@
 import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 from pathlib import Path
-from bible_grammar.query import query
+from bible_grammar.core.query import query
 
 REPORT = Path('output/reports/ot/verbs/2fp-perfect-verbs.md')
 CHART = Path('output/charts/ot/verbs/2fp-perfect-by-book-stem-v3.png')

@@ -8,7 +8,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.stats import freq_table
+from bible_grammar.lexical.stats import freq_table
 
 
 class TestFreqTable:

@@ -8,9 +8,9 @@ import matplotlib.pyplot as plt  # noqa: E402
 import matplotlib.patches as mpatches  # noqa: E402
 from pathlib import Path  # noqa: E402
 from bidi.algorithm import get_display  # noqa: E402
-from bible_grammar.syntax_ot import load_syntax_ot  # noqa: E402
-from bible_grammar.lxx_query import query_lxx  # noqa: E402
-from bible_grammar._utils import load_nt  # noqa: E402
+from bible_grammar.core.syntax_ot import load_syntax_ot  # noqa: E402
+from bible_grammar.core.lxx_query import query_lxx  # noqa: E402
+from bible_grammar.core._utils import load_nt  # noqa: E402
 import unicodedata  # noqa: E402
 
 CHART_DIR = Path('output/charts/both/word_studies/fasting')

@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.reference import (
+from bible_grammar.core.reference import (
     book_info, all_book_ids, book_ids_for_group,
     BOOKS, TORAH, PROPHETS, WRITINGS, GOSPELS, PAULINE,
 )

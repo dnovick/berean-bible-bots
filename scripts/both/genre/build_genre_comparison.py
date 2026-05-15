@@ -1,5 +1,5 @@
 """Build genre comparison report: morphological patterns across literary sections."""
-from bible_grammar.genre_compare import genre_report
+from bible_grammar.discourse.genre_compare import genre_report
 
 report_path = genre_report(
     output_dir='output/reports/both/genre',

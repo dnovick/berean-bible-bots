@@ -2,7 +2,7 @@
 import matplotlib; matplotlib.use('Agg')  # noqa: E702
 import matplotlib.pyplot as plt
 from pathlib import Path
-from bible_grammar.nt_noun_profile import nt_noun_case_profile
+from bible_grammar.nt.nt_noun_profile import nt_noun_case_profile
 
 REPORT = Path('output/reports/nt/lexicon/nt-case-distribution-by-book.md')
 CHART = Path('output/charts/nt/lexicon/nt-case-distribution-by-book.png')

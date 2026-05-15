@@ -1,6 +1,6 @@
 """Build NT quotations of the OT overview report."""
 from pathlib import Path
-from bible_grammar.quotations import quotation_summary, nt_quotations
+from bible_grammar.intertextuality.quotations import quotation_summary, nt_quotations
 
 OUT = Path('output/reports/both/intertextuality')
 OUT.mkdir(parents=True, exist_ok=True)

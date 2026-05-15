@@ -6,7 +6,7 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.morphology import decode_hebrew, decode_greek, extract_greek_grammar
+from bible_grammar.core.morphology import decode_hebrew, decode_greek, extract_greek_grammar
 
 
 class TestDecodeHebrew:

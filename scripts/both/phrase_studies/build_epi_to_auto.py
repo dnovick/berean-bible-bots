@@ -6,9 +6,9 @@ import numpy as np
 import pandas as pd
 from pathlib import Path
 from bidi.algorithm import get_display
-from bible_grammar.lxx_query import query_lxx
-from bible_grammar.syntax_ot import load_syntax_ot
-from bible_grammar.syntax import load_syntax
+from bible_grammar.core.lxx_query import query_lxx
+from bible_grammar.core.syntax_ot import load_syntax_ot
+from bible_grammar.core.syntax import load_syntax
 
 
 def bidi_label(text: str) -> str:

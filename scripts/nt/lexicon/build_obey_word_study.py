@@ -1,7 +1,7 @@
 """Build Greek 'obey' word study: NT + LXX occurrences of obedience vocabulary."""
 from pathlib import Path
-from bible_grammar.wordstudy import word_study
-from bible_grammar.lxx_query import query_lxx
+from bible_grammar.lexical.wordstudy import word_study
+from bible_grammar.core.lxx_query import query_lxx
 
 REPORT = Path('output/reports/nt/lexicon/obey-greek-word-study.md')
 REPORT.parent.mkdir(parents=True, exist_ok=True)
