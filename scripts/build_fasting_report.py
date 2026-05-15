@@ -94,12 +94,28 @@ print(f"Aramaic OT CSV: {len(aram_df)} rows → {aram_out}")
 # LXX: νηστεύω (G3522) + νηστεία (G3521)
 # ============================================================
 
+# Core fasting terms: νηστεύω (G3522) / νηστεία (G3521)
 _lxx_targets = {nfc('νηστεύω'), nfc('νηστεία')}
 lxx_fast = lxx[lxx['lemma'].apply(lambda x: nfc(x) in _lxx_targets)].copy()
 
+# Related ἀσιτ- terms (verb ἀσιτέω and adverb ἀσιτί; only in Deuterocanon/LXX pluses)
+from bible_grammar.lxx_query import query_lxx as _query_lxx_full  # noqa: E402
+lxx_full = _query_lxx_full(include_deuterocanon=True)
+_asit_targets = {nfc('ἀσιτέω'), nfc('ἀσιτί')}
+lxx_asit = lxx_full[lxx_full['lemma'].apply(lambda x: nfc(x) in _asit_targets)].copy()
+
 lxx_rows = []
-for _, r in lxx_fast.iterrows():
+for _, r in pd.concat([lxx_fast, lxx_asit], ignore_index=True).iterrows():
     b, c, v = r['book_id'], int(r['chapter']), int(r['verse'])
+    lem = nfc(r['lemma'])
+    if lem == nfc('νηστεύω'):
+        pos = 'verb'
+    elif lem == nfc('νηστεία'):
+        pos = 'noun'
+    elif lem == nfc('ἀσιτέω'):
+        pos = 'verb'
+    else:
+        pos = 'adverb'
     lxx_rows.append({
         'ref': f"{b} {c}:{v}",
         'book': b,
@@ -108,7 +124,7 @@ for _, r in lxx_fast.iterrows():
         'greek': r['word'],
         'lemma': r['lemma'],
         'strong_g': r['strongs'],
-        'pos': 'verb' if r['lemma'] == 'νηστεύω' else 'noun',
+        'pos': pos,
         'morph': r['morph_code'],
         'kjv': kjv_text(b, c, v),
     })

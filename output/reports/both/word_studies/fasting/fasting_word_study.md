@@ -14,13 +14,15 @@
 | טְוָת (*tevat*) | **Aramaic** OT | H2908 | Adverb | 1 |
 | νηστεύω (*nēsteuō*) | LXX | G3522 | Verb | 23 |
 | νηστεία (*nēsteia*) | LXX | G3521 | Noun | 27 |
+| ἀσιτέω (*asitoō*) | LXX (incl. Deuterocanon) | — | Verb | 2 |
+| ἀσιτί (*asiti*) | LXX | — | Adverb | 1 |
 | νηστεύω (*nēsteuō*) | Greek NT | G3522 | Verb | 21 |
 | νηστεία (*nēsteia*) | Greek NT | G3521 | Noun | 8 |
 | νῆστις (*nēstis*) | Greek NT | G3523 | Adjective | 2 |
 | ἀσιτία (*asitia*) | Greek NT | G0776 | Noun | 1 |
 | ἄσιτος (*asitos*) | Greek NT | G0777 | Adjective | 1 |
 
-**Total Hebrew OT: 47 | Aramaic OT: 1 | LXX: 50 | Greek NT: 33**
+**Total Hebrew OT: 47 | Aramaic OT: 1 | LXX core: 50 + LXX ἀσιτ- family: 3 | Greek NT: 33**
 
 ---
 
@@ -166,6 +168,22 @@ The LXX totals (50) slightly exceed the Hebrew totals (47), likely due to: (1) L
 
 The two LXX Exodus occurrences of νηστεύω are notable — they likely correspond to **Exod 34:28** (Moses on Sinai "neither ate bread nor drank water for 40 days") which uses לֹא אָכַל in Hebrew but which the LXX may render with fasting vocabulary. This shows the LXX interpreting *implied* fasting with explicit fasting language.
 
+### 3.4 The ἀσιτ- Family in the LXX (3 occurrences)
+
+Alongside the core νηστεύω/νηστεία pair, the LXX uses a second, smaller word family built on the **α-privative + σῖτος** (food) root — "without food":
+
+| Reference | Word | Lemma | POS | Context |
+|---|---|---|---|---|
+| Est 4:16 | ἀσιτήσομεν | ἀσιτέω | Verb | Esther's command: "fast for me … do not eat or drink" — LXX renders צוּם with ἀσιτέω here rather than νηστεύω |
+| 1 Mac 3:17 | ἀσιτοῦντες | ἀσιτέω | Verb | Judas Maccabaeus's army — "fasting" before battle against Nicanor (Deuterocanon) |
+| Job 24:6 | ἀσιτὶ | ἀσιτί | Adverb | "The poor glean … [and the wicked harvest] without food" — describes involuntary food deprivation |
+
+**Key observations:**
+- The LXX translators had two options when rendering Hebrew fasting vocabulary: the standard νηστεύω/νηστεία pair and the ἀσιτ- family. Est 4:16 is the only case where they chose ἀσιτέω over νηστεύω for a deliberate religious fast.
+- ἀσιτέω is absent from the NT entirely — Paul opts for the noun ἀσιτία and adjective ἄσιτος instead (Acts 27:21, 27:33), perhaps because these felt more natural in his nautical context.
+- The LXX never uses ἀσιτία (noun) or ἄσιτος (adjective) — those specific forms are NT innovations, though the underlying root is attested in the LXX.
+- Job 24:6 uses ἀσιτί for involuntary deprivation among the poor — exactly paralleling Paul's use for the storm-stranded crew in Acts 27, suggesting a consistent register distinction: the ἀσιτ- family gravitates toward *unwanted* or *circumstantial* lack of food, while νηστεύω marks *intentional* religious practice.
+
 ---
 
 ## 4. Greek New Testament
@@ -208,6 +226,8 @@ The NT expands the fasting vocabulary slightly, using five lemmas:
 ### 4.3 The ἀσιτία / ἄσιτος Pair
 
 These two hapax-like terms (Acts 27:21, 27:33) describe **involuntary fasting** aboard the storm-battered ship to Rome. Paul uses the situation as a platform for exhortation. The Abbot-Smith lexicon notes νηστεία is the synonym for ἀσιτία, distinguishing volitional from circumstantial food deprivation.
+
+**LXX background of the ἀσιτ- root:** The ἀσιτ- family (α-privative + σῖτος, "food") does appear in the LXX, but only as the related verb **ἀσιτέω** (Est 4:16; 1 Mac 3:17) and adverb **ἀσιτί** (Job 24:6) — never as the noun ἀσιτία or adjective ἄσιτος that Paul uses. The LXX usage is consistent with Paul's register: ἀσιτέω in Est 4:16 is used alongside explicit fasting language as a near-synonym for "going without food," and ἀσιτί in Job 24:6 describes the poor who go hungry involuntarily — the same involuntary, circumstantial sense Paul invokes for the storm-tossed crew. See §3.4 for the full LXX analysis.
 
 ### 4.4 Key Passage Notes
 
@@ -269,7 +289,7 @@ The single Aramaic occurrence (Dan 6:18) stands apart. טְוָת is not used fo
 |---|---|---|
 | [fasting_hebrew_ot.csv](fasting_hebrew_ot.csv) | All 47 OT Hebrew occurrences — ref, Hebrew text, Strong's, POS, morph, stem, gloss, LXX alignment, KJV verse |
 | [fasting_aramaic_ot.csv](fasting_aramaic_ot.csv) | The single Aramaic occurrence (Dan 6:18 טְוָת H2908) — ref, text, morph, gloss, KJV verse |
-| [fasting_lxx.csv](fasting_lxx.csv) | All 50 LXX occurrences of νηστεύω / νηστεία — ref, Greek word, lemma, Strong's, POS, morph, KJV verse |
+| [fasting_lxx.csv](fasting_lxx.csv) | All 53 LXX occurrences — 50 core (νηστεύω / νηστεία) + 3 ἀσιτ- family (ἀσιτέω ×2, ἀσιτί ×1) — ref, Greek word, lemma, Strong's, POS, morph, KJV verse |
 | [fasting_greek_nt.csv](fasting_greek_nt.csv) | All 29 Greek NT occurrences of the five fasting lemmas — ref, Greek word, lemma, Strong's, POS, morph, tense/voice/mood, gloss, KJV verse |
 
 *Regenerate with:* `python3 scripts/build_fasting_report.py`
