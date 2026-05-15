@@ -118,6 +118,6 @@ See [notebooks/SETUP.md](notebooks/SETUP.md) for notebook setup details and
 - **Biblical Aramaic Nominal System** — determined state dominance, pronouns, prepositions
 - **Peshitta NT Morphology** — 109,640 Syriac words with sp, gn, nu, ps, state, verbal stem, tense/aspect, Sedra root/lemma
 - **Targumim** — Onkelos (Torah), Targum Jonathan (Prophets), Targum to Psalms; 14,339 verses searchable by keyword
-- **Lesson Packages** — BBH Ch1–35, BBG Ch1–36, BBA Ch1–22 with exercises and Anki decks
+- **Lesson Packages** — BBH Ch1–35, BBG Ch1–36, BBA Ch1–22 with exercises and Anki decks; pre-built student zip packages available in `output/student-packs/` (see [docs/lesson-packages.md](docs/lesson-packages.md))
 
 For full API documentation and code examples, see [docs/features.md](docs/features.md).
