@@ -9,6 +9,10 @@
 
 ## Definition
 
+*Build script: [scripts/ot/lexicon/build_h7307_ruach.py](../../../../scripts/ot/lexicon/build_h7307_ruach.py)*
+
+---
+
 : spirit1) wind, breath, mind, spirit1a) breath1b) wind1b1) of heaven1b2) quarter (of wind), side1b3) breath of air1b4) air, gas1b5) vain, empty thing1c) spirit (as that which breathes quickly in animation or agitation)1c1) spirit, animation, vivacity, vigour1c2) courage1c3) temper, anger1c4) impatience, patience1c5) spirit, disposition (as troubled, bitter, discontented)1c6) disposition (of various kinds), unaccountable or uncontrollable impulse1c7) prophetic spirit1d) spirit (of the living, breathing being in man and animals)1d1) as gift, preserved by God, God's spirit, departing at death, disembodied being1e) spirit (as seat of emotion)1e1) desire1e2) sorrow, trouble1f) spirit1f1) as seat or organ of mental acts1f2) rarely of the will1f3) as seat especially of moral character1g) Spirit of God, the third person of the triune God, the Holy Spirit, coequal, coeternal with the Father and the Son1g1) as inspiring ecstatic state of prophecy1g2) as impelling prophet to utter instruction or warning1g3) imparting warlike energy and executive and administrative power1g4) as endowing men with various gifts1g5) as energy of life1g6) as manifest in the Shekinah glory1g7) never referred to as a depersonalised force
 
 ## Distribution by Book

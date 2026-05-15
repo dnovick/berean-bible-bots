@@ -3,6 +3,10 @@
 **Source:** STEPBible TAHOT  
 **Scope:** Top 6 verb stems across all five books of the Torah (Pentateuch)
 
+*Build script: [scripts/ot/verbs/build_verb_stems.py](../../../../scripts/ot/verbs/build_verb_stems.py)*
+
+---
+
 ![Hebrew Verb Stems in Torah Books](../../../charts/ot/verbs/torah_verb_stems_grouped.png)
 
 ## Summary

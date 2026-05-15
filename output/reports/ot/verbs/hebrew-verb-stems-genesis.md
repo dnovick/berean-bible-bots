@@ -3,6 +3,10 @@
 **Source:** STEPBible TAHOT  
 **Scope:** All verb tokens in Genesis
 
+*Build script: [scripts/ot/verbs/build_verb_stems.py](../../../../scripts/ot/verbs/build_verb_stems.py)*
+
+---
+
 ![Hebrew Verb Stems in Genesis](../../../charts/ot/verbs/genesis_verb_stems.png)
 
 ## Summary

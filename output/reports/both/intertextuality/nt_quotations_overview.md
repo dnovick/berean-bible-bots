@@ -1,5 +1,9 @@
 # NT Quotations of the OT — Overview
 
+*Build script: [scripts/both/intertextuality/build_nt_quotations_overview.py](../../../../scripts/both/intertextuality/build_nt_quotations_overview.py)*
+
+---
+
 *Generated from OpenBible.info cross-reference data (CC-BY) via scrollmapper.*  
 *Vote scores reflect community consensus: higher = stronger connection.*
 

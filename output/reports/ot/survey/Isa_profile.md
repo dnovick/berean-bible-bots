@@ -2,6 +2,8 @@
 
 **Old Testament** | Canonical order: 23 | Chapters: 66
 
+*Build script: [scripts/ot/survey/build_book_profiles.py](../../../../scripts/ot/survey/build_book_profiles.py)*
+
 ---
 
 ## Summary Statistics

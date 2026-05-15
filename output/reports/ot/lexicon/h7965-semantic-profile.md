@@ -9,6 +9,10 @@
 
 ## Definition
 
+*Build script: [scripts/ot/lexicon/build_h7965_shalom.py](../../../../scripts/ot/lexicon/build_h7965_shalom.py)*
+
+---
+
 : peace1) completeness, soundness, welfare, peace1a) completeness (in number)1b) safety, soundness (in body)1c) welfare, health, prosperity1d) peace, quiet, tranquillity, contentment1e) peace, friendship1e1) of human relationships1e2) with God especially in covenant relationship1f) peace (from war)1g) peace (as adjective)
 
 ## Distribution by Book

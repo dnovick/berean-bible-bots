@@ -2,6 +2,10 @@
 
 **Total occurrences: 13**
 
+*Build script: [scripts/ot/verbs/build_2fp_perfect.py](../../../../scripts/ot/verbs/build_2fp_perfect.py)*
+
+---
+
 Includes: Perfect, Consecutive Perfect, and Weqatal (Consecutive Imperfect) forms.
 
 > **Note on tagging:** The TAHOT morphology data labels weqatal forms (waw + perfect vowel pattern)

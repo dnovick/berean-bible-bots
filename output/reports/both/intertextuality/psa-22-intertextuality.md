@@ -7,6 +7,10 @@
 
 ## Network Graph
 
+*Build script: [scripts/both/intertextuality/build_psa_22_intertextuality.py](../../../../scripts/both/intertextuality/build_psa_22_intertextuality.py)*
+
+---
+
 ![Psalms 22 intertextuality network](psa-22-intertextuality-graph.png)
 
 ## NT Book Coverage

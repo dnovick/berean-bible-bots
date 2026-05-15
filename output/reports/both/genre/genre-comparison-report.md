@@ -1,5 +1,9 @@
 # Genre Comparison: Morphological Patterns Across Literary Sections
 
+*Build script: [scripts/both/genre/build_genre_comparison.py](../../../../scripts/both/genre/build_genre_comparison.py)*
+
+---
+
 Analysis of how grammatical features distribute differently across the literary genres of the Hebrew OT and Greek NT, using STEPBible TAHOT/TAGNT morphological data.
 
 Values shown as percentage of the relevant token class within each genre.

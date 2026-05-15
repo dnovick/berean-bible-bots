@@ -1,5 +1,9 @@
 # Verb Morphology by Book
 
+*Build script: [scripts/ot/verbs/build_verb_morphology_by_book.py](../../../../scripts/ot/verbs/build_verb_morphology_by_book.py)*
+
+---
+
 Verb stem distribution for the Hebrew OT and verb tense/mood distribution for the Greek NT,
 shown as a percentage of all verbs in each book.
 

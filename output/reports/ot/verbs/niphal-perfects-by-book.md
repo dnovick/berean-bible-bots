@@ -4,6 +4,10 @@
 **Scope:** All Niphal Perfect verb forms across the Old Testament  
 **Total:** 2,601 Niphal Perfect verbs
 
+*Build script: [scripts/ot/verbs/build_niphal_reports.py](../../../../scripts/ot/verbs/build_niphal_reports.py)*
+
+---
+
 ![Niphal Perfect Verbs by OT Book](../../../charts/ot/verbs/niphal_perfects.png)
 
 ## Summary

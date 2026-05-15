@@ -1,5 +1,9 @@
 # Hebrew vs. Aramaic Word Distribution in the OT
 
+*Build script: [scripts/ot/lexicon/build_ot_hebrew_aramaic.py](../../../../scripts/ot/lexicon/build_ot_hebrew_aramaic.py)*
+
+---
+
 The Hebrew Bible contains two languages: **Biblical Hebrew** (the vast majority) and
 **Biblical Aramaic** (concentrated in Daniel and Ezra, with scattered loanwords elsewhere).
 The TAHOT morphology data tags each word with its language, enabling precise separation.

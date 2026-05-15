@@ -1,5 +1,9 @@
 # Greek NT Case Distribution by Book
 
+*Build script: [scripts/nt/lexicon/build_nt_case_distribution.py](../../../../scripts/nt/lexicon/build_nt_case_distribution.py)*
+
+---
+
 Case distribution for declined words (Nouns, Articles, Adjectives) in each NT book,
 shown as a percentage of all declined words in that book.
 

@@ -1,5 +1,9 @@
 # Christological Titles: Jesus's Self-Designations in the Gospels
 
+*Build script: [scripts/nt/names/build_christological_titles.py](../../../../scripts/nt/names/build_christological_titles.py)*
+
+---
+
 Frequency analysis of the major titles Jesus used to refer to Himself, counted by verse-level co-occurrence of the relevant Greek Strong's numbers across the four Gospels.
 
 > **Speaker attribution note:** The STEPBible TAGNT data does not tag speakers. Counts reflect all occurrences of each title pattern in a given verse, regardless of who is speaking. The **Confidence** column indicates how reliably each title reflects Jesus's own self-designation vs. others' usage.

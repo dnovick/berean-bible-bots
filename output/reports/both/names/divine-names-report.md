@@ -1,5 +1,9 @@
 # Divine Names and Christological Titles
 
+*Build script: [scripts/both/names/build_divine_names.py](../../../../scripts/both/names/build_divine_names.py)*
+
+---
+
 Analysis of the major divine names across the Hebrew OT, Septuagint (LXX), and Greek NT, drawn from STEPBible TAHOT/TAGNT/TALXX morphological data.
 
 ---

@@ -9,6 +9,10 @@
 
 ## Definition
 
+*Build script: [scripts/ot/lexicon/build_h1285_berit.py](../../../../scripts/ot/lexicon/build_h1285_berit.py)*
+
+---
+
 1) covenant, alliance, pledge1a) between men1a1) treaty, alliance, league (man to man)1a2) constitution, ordinance (monarch to subjects)1a3) agreement, pledge (man to man)1a4) alliance (of friendship)1a5) alliance (of marriage)1b) between God and man1b1) alliance (of friendship)1b2) covenant (divine ordinance with signs or pledges)2) (phrases)2a) covenant making2b) covenant keeping2c) covenant violation
 
 ## Distribution by Book

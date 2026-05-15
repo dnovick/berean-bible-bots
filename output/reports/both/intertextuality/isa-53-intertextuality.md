@@ -7,6 +7,10 @@
 
 ## Network Graph
 
+*Build script: [scripts/both/intertextuality/build_isa_53_intertextuality.py](../../../../scripts/both/intertextuality/build_isa_53_intertextuality.py)*
+
+---
+
 ![Isaiah 53 intertextuality network](isa-53-intertextuality-graph.png)
 
 ## NT Book Coverage

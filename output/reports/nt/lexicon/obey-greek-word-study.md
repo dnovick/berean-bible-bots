@@ -2,6 +2,10 @@
 
 ## Overview
 
+*Build script: [scripts/nt/lexicon/build_obey_word_study.py](../../../../scripts/nt/lexicon/build_obey_word_study.py)*
+
+---
+
 The KJV translates several distinct Greek words as "obey," "obeyed," or "obedience."
 This report documents every NT occurrence, the underlying Greek lemma and morphology,
 and then traces those same lemmas through the LXX to identify their Hebrew roots.

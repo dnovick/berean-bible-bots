@@ -2,6 +2,8 @@
 
 **New Testament** | Canonical order: 43 | Chapters: 21
 
+*Build script: [scripts/nt/survey/build_book_profiles.py](../../../../scripts/nt/survey/build_book_profiles.py)*
+
 ---
 
 ## Summary Statistics

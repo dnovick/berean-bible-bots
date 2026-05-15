@@ -1,5 +1,9 @@
 # Hebrew Verb Stem Distribution — Old Testament
 
+*Build script: [scripts/ot/verbs/build_verb_stems.py](../../../../scripts/ot/verbs/build_verb_stems.py)*
+
+---
+
 ![Hebrew Verb Stem Distribution](../../../charts/ot/verbs/ot-verb-stems-pie.png)
 
 ## Summary

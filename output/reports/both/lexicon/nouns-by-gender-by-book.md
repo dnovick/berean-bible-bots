@@ -1,5 +1,9 @@
 # Nouns by Gender, Per Book
 
+*Build script: [scripts/both/lexicon/build_nouns_by_gender.py](../../../../scripts/both/lexicon/build_nouns_by_gender.py)*
+
+---
+
 Noun gender distribution across every book of the Hebrew OT and Greek NT, shown as a
 percentage of all nouns in that book.
 

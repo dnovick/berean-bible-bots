@@ -2,6 +2,11 @@
 
 **Source:** STEPBible TAGNT  
 **Scope:** All verb tokens in the 13 Pauline epistles  
+
+*Build script: [scripts/nt/verbs/build_tense_voice_heatmaps.py](../../../../scripts/nt/verbs/build_tense_voice_heatmaps.py)*
+
+---
+
 (Romans, 1–2 Corinthians, Galatians, Ephesians, Philippians, Colossians,
 1–2 Thessalonians, 1–2 Timothy, Titus, Philemon)
 

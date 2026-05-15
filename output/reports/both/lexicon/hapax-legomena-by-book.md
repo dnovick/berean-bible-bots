@@ -1,5 +1,9 @@
 # Hapax Legomena by Biblical Book
 
+*Build script: [scripts/both/lexicon/build_hapax_legomena.py](../../../../scripts/both/lexicon/build_hapax_legomena.py)*
+
+---
+
 A **hapax legomenon** (plural: *hapax legomena*; Greek, "said only once") is a word whose lemma appears exactly once in a given corpus. In biblical studies, hapaxes are significant because their meaning must be inferred from context, cognate languages (Aramaic, Arabic, Akkadian), or ancient translations rather than from usage patterns elsewhere in the text.
 
 **Counting method:** Each Strong's lemma is counted once across the entire OT or NT. A word tagged H1234 that appears only once in the whole OT is a hapax regardless of which book it appears in. The count per book reflects how many of the corpus-wide hapaxes occur in that book.

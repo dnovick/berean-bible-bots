@@ -3,7 +3,7 @@
 
 *Generated 2026-05-15*
 
-*Build scripts: [scripts/build_fasting_charts.py](../../../../scripts/build_fasting_charts.py) · [scripts/build_fasting_report.py](../../../../scripts/build_fasting_report.py)*
+*Build scripts: [scripts/both/word_studies/fasting/build_fasting_charts.py](../../../../scripts/both/word_studies/fasting/build_fasting_charts.py) · [scripts/both/word_studies/fasting/build_fasting_report.py](../../../../scripts/both/word_studies/fasting/build_fasting_report.py)*
 
 ---
 

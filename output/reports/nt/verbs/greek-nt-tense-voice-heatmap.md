@@ -3,6 +3,10 @@
 **Source:** STEPBible TAGNT (Translators Amalgamated Greek NT)  
 **Scope:** All verb tokens across the entire New Testament
 
+*Build script: [scripts/nt/verbs/build_tense_voice_heatmaps.py](../../../../scripts/nt/verbs/build_tense_voice_heatmaps.py)*
+
+---
+
 ![Greek NT Tense × Voice Heatmap](../../../charts/nt/verbs/nt_tense_voice.png)
 
 ## Summary

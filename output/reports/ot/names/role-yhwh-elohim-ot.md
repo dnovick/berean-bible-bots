@@ -1,5 +1,9 @@
 # Syntactic Role Analysis: YHWH/Elohim [OT]
 
+*Build script: [scripts/ot/names/build_role_yhwh_elohim.py](../../../../scripts/ot/names/build_role_yhwh_elohim.py)*
+
+---
+
 Verbs whose grammatical subject is **YHWH/Elohim**, resolved via MACULA Hebrew `subjref` links.
 
 > **Method:** Each verb token in the MACULA syntax tree carries a `subjref` attribute pointing to its grammatical subject. This analysis finds all verb tokens where that subject resolves to the given Strong's number(s).
