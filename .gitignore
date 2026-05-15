@@ -16,3 +16,6 @@ __pycache__/
 
 # Output — exports are regenerated; charts are committed alongside reports
 output/exports/
+
+# Generated student zip packages
+output/student-packs/
