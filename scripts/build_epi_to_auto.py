@@ -1,17 +1,17 @@
 """Build ἐπὶ τὸ αὐτό report charts and CSV data."""
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.lxx_query import query_lxx
-from bible_grammar.syntax_ot import load_syntax_ot
-from bible_grammar.syntax import load_syntax
-import pandas as pd
-import matplotlib
+from bible_grammar.lxx_query import query_lxx  # noqa: E402
+from bible_grammar.syntax_ot import load_syntax_ot  # noqa: E402
+from bible_grammar.syntax import load_syntax  # noqa: E402
+import pandas as pd  # noqa: E402
+import matplotlib  # noqa: E402
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import numpy as np
-from pathlib import Path
-from bidi.algorithm import get_display
+import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.patches as mpatches  # noqa: E402
+import numpy as np  # noqa: E402
+from pathlib import Path  # noqa: E402
+from bidi.algorithm import get_display  # noqa: E402
 
 
 def bidi_label(text: str) -> str:
@@ -383,11 +383,11 @@ print(f"Chart 1 saved: {chart1_path}")
 # Normalize Hebrew source variants to display labels.
 # Keys must match the exact Unicode stored in LXX_DATA['heb_source'].
 yachdav = 'יַחְדָּו'  # יַחְדָּו with dagesh
-yachad  = 'יַחַד'                     # יַחַד
-echad   = 'אֶחָד'                     # אֶחָד
-achat   = 'אַחַת'                     # אַחַת
-levad   = 'לְ בַּד'              # לְ בַּד
-dash    = '—'                                               # —
+yachad = 'יַחַד'
+echad = 'אֶחָד'
+achat = 'אַחַת'
+levad = 'לְ בַּד'
+dash = '—'
 
 heb_norm = {
     yachad:                    f'{yachad} (yachad)',
@@ -409,8 +409,8 @@ for h in lxx_canon['heb_source']:
     source_counts[n] = source_counts.get(n, 0) + 1
 
 labels = sorted(source_counts.keys(), key=lambda x: -source_counts[x])
-vals = [source_counts[l] for l in labels]
-display_labels = [bidi_label(l) for l in labels]
+vals = [source_counts[lbl] for lbl in labels]
+display_labels = [bidi_label(lbl) for lbl in labels]
 
 fig2, ax3 = plt.subplots(figsize=(9, 4))
 bar_colors = ['#2b8cbe', '#7bccc4', '#f0a500', '#c2e699', '#aaaaaa']

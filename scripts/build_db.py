@@ -6,19 +6,19 @@ from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from bible_grammar.ingest import load_all
-from bible_grammar.translations import load_translations
-from bible_grammar.lxx import load_lxx
-from bible_grammar.db import save, save_translations, save_lxx
-from bible_grammar.alignment import save_alignment, build_alignment
+from bible_grammar.ingest import load_all  # noqa: E402
+from bible_grammar.translations import load_translations  # noqa: E402
+from bible_grammar.lxx import load_lxx  # noqa: E402
+from bible_grammar.db import save, save_translations, save_lxx  # noqa: E402
+from bible_grammar.alignment import save_alignment, build_alignment  # noqa: E402
 
 if __name__ == "__main__":
     t0 = time.time()
 
     print("Loading TAHOT + TAGNT (Hebrew/Greek morphology)...")
     df = load_all()
-    print(f"  {len(df):,} words loaded in {time.time()-t0:.1f}s")
-    print(f"  OT: {(df.source=='TAHOT').sum():,}  NT: {(df.source=='TAGNT').sum():,}")
+    print(f"  {len(df):,} words loaded in {time.time() - t0:.1f}s")
+    print(f"  OT: {(df.source == 'TAHOT').sum():,}  NT: {(df.source == 'TAGNT').sum():,}")
     save(df)
 
     print("\nLoading translations (KJV, Vulgate, Peshitta NT)...")
@@ -32,7 +32,7 @@ if __name__ == "__main__":
     lxx = load_lxx()
     print(f"  {len(lxx):,} words loaded in {time.time()-t2:.1f}s")
     canon = lxx[~lxx.is_deuterocanon]
-    deut  = lxx[lxx.is_deuterocanon]
+    deut = lxx[lxx.is_deuterocanon]
     print(f"  Canonical OT books: {len(canon):,}  Deuterocanonical: {len(deut):,}")
     save_lxx(lxx)
 

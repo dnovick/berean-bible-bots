@@ -3,8 +3,8 @@ import sys
 from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / "src"))
 
-from bible_grammar.ibm_align import build_word_alignment
-import time
+from bible_grammar.ibm_align import build_word_alignment  # noqa: E402
+import time  # noqa: E402
 
 print("Building word-level Hebrew↔LXX alignment (IBM Model 1)...")
 t0 = time.time()

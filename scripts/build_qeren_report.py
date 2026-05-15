@@ -1,17 +1,16 @@
 """Build קָרַן / קֶרֶן (qaran/qeren) word-study report, charts, and CSV data."""
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.syntax_ot import load_syntax_ot
-from bible_grammar.lxx_query import query_lxx
-from bible_grammar.translations import load_translations
-import pandas as pd
-import matplotlib
+from bible_grammar.syntax_ot import load_syntax_ot  # noqa: E402
+from bible_grammar.lxx_query import query_lxx  # noqa: E402
+from bible_grammar.translations import load_translations  # noqa: E402
+import pandas as pd  # noqa: E402
+import matplotlib  # noqa: E402
 matplotlib.use('Agg')
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-import numpy as np
-from pathlib import Path
-from bidi.algorithm import get_display
+import matplotlib.pyplot as plt  # noqa: E402
+import matplotlib.patches as mpatches  # noqa: E402
+from pathlib import Path  # noqa: E402
+from bidi.algorithm import get_display  # noqa: E402
 
 OUT = Path('output/reports/both/word_studies')
 OUT.mkdir(parents=True, exist_ok=True)
@@ -34,6 +33,7 @@ noun = ot[ot['strong_h'] == 'H7161'].copy()
 # Vulgate Psalms use LXX numbering (1 behind MT from Ps 10 onward).
 # The VulgClementine dataset here uses MT numbering, but only has
 # Psa, not 1Sa/2Sa/1Ki/2Ki/1Ch/2Ch (those books absent from dataset).
+
 
 def vul_text(book, ch, vs):
     r = vul[(vul['book_id'] == book) & (vul['chapter'] == ch) & (vul['verse'] == vs)]
@@ -154,7 +154,7 @@ gk_counts['δοξάζω (glorify)'] = 3   # Exo 34:29,30,35 verb
 
 fig2, ax3 = plt.subplots(figsize=(10, 4))
 lxx_labels = sorted(gk_counts.keys(), key=lambda x: -gk_counts[x])
-lxx_vals = [gk_counts[l] for l in lxx_labels]
+lxx_vals = [gk_counts[lbl] for lbl in lxx_labels]
 lxx_colors = ['#2b8cbe', '#7bccc4', '#f0a500', '#c2e699', '#d62728', '#aaaaaa']
 bars2 = ax3.bar(range(len(lxx_labels)), lxx_vals,
                 color=lxx_colors[:len(lxx_labels)], edgecolor='white', linewidth=0.5)
@@ -255,7 +255,7 @@ SEM_COLORS = {
 fig3, ax4 = plt.subplots(figsize=(9, 5))
 sem_labels = sem_counts.index.tolist()
 sem_vals = sem_counts.values.tolist()
-sem_clrs = [SEM_COLORS.get(l, '#aaaaaa') for l in sem_labels]
+sem_clrs = [SEM_COLORS.get(lbl, '#aaaaaa') for lbl in sem_labels]
 wedges3, texts3, autos3 = ax4.pie(
     sem_vals, labels=sem_labels, autopct='%1.0f%%',
     startangle=130, colors=sem_clrs,
