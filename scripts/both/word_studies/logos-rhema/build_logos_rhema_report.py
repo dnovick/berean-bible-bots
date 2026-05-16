@@ -703,6 +703,98 @@ def _build_report() -> None:
         '',
         '---',
         '',
+        '## Contents',
+        '',
+        '- [Overview](#overview)',
+        '- [Definitions and Semantic Range](#definitions-and-semantic-range)',
+        '- [NT Distribution](#nt-distribution)',
+        '- [LXX Distribution](#lxx-distribution)',
+        '- [Hebrew Source Words](#hebrew-source-words)',
+        '- [Verses Where Both Appear Together (NT)]'
+        '(#verses-where-both-appear-together-nt)',
+        '- [Synoptic Pericope Comparison](#synoptic-pericope-comparison)',
+        '- [Use with Reference to Written Scripture]'
+        '(#use-with-reference-to-written-scripture)',
+        '- [Theological Significance](#theological-significance)',
+        '- [Key Observations](#key-observations)',
+        '- [Data Files](#data-files)',
+        '',
+        '---',
+        '',
+        '## Key Observations',
+        '',
+        'The evidence across the LXX, NT, and synoptic parallels points to a consistent '
+        'but non-absolute distinction between the two terms. The following observations '
+        'summarise the findings from every section of this study.',
+        '',
+        '### 1. The core semantic difference is scale and abstraction',
+        '',
+        '**λόγος** gravitates toward *word as message* — the content of what is said, '
+        'considered as a transmissible, authoritative whole. **ῥῆμα** gravitates toward '
+        '*word as event* — the individual utterance in the moment it is spoken. This '
+        'maps roughly onto the distinction between a *teaching* and a *saying*, a '
+        '*doctrine* and a *declaration*.',
+        '',
+        '### 2. The LXX established the pattern, but not rigidly',
+        '',
+        'Both terms translate the same Hebrew word, דָּבָר (dābar, H1697), which accounts '
+        f'for {dabar_to_logos} λόγος and {dabar_to_rhema} ῥῆμα renderings in the canonical '
+        f'LXX ({dabar_logos_pct}% / {100 - dabar_logos_pct}%). '
+        'The genre breakdown shows the split is not random: '
+        'the Former Prophets (where דָּבָר frequently marks a specific royal decree or '
+        'prophetic oracle) favour ῥῆμα more than any other section, while Torah, Psalms, '
+        'and the Latter Prophets favour λόγος. The LXX translators were already sensitive '
+        'to the difference — but it was the NT writers who sharpened it.',
+        '',
+        '### 3. NT distribution confirms the tendency',
+        '',
+        f'λόγος ({logos_total_nt} NT occurrences, 24 books) is the dominant, '
+        f'general-purpose term. ῥῆμα ({rhema_total_nt} occurrences, 12 books) is '
+        'largely absent from the Pauline corpus — Paul\'s theological vocabulary '
+        'strongly prefers λόγος when speaking of the gospel, the word of God, or '
+        'scriptural authority. ῥῆμα concentrates in narrative contexts: Luke\'s '
+        'Gospel, Acts, and the Nativity and Passion accounts.',
+        '',
+        '### 4. When writers use ῥῆμα for scripture, they emphasise its spoken character',
+        '',
+        'λόγος is the standard term for the scriptures as an authoritative written deposit '
+        '(Jhn 10:35; Luk 3:4; Act 15:15; Rev 22:18–19). The three NT uses of ῥῆμα in '
+        'explicitly scriptural contexts (Mat/Luk 4:4; Act 28:25; 2Pe 3:2) each frame '
+        'the OT text as divine speech — what proceeds from God\'s mouth, what the Spirit '
+        'spoke through Isaiah, what the prophets *declared*. The choice of term is '
+        'theologically deliberate.',
+        '',
+        '### 5. The four verses where both appear together are the clearest evidence',
+        '',
+        'In Mat 12:36, Jhn 12:48, Act 10:44, and Heb 12:19, both terms appear in a '
+        'single sentence. In every case ῥῆμα marks the individual spoken moment and '
+        'λόγος marks the word considered as unified content or account. The pattern is '
+        'consistent across authors (Matthew, John, Luke, the author of Hebrews) and '
+        'across genres (dominical saying, Johannine discourse, narrative, homily).',
+        '',
+        '### 6. The synoptic parallels expose the distinction at the editorial level',
+        '',
+        'Where Matthew, Mark, and Luke report the same event, they agree on the same '
+        'term far more often than they diverge — which confirms the distinction was '
+        'felt as a real one, not arbitrary. The two genuine divergences are '
+        'structurally revealing: Matthew closes the Sermon on the Mount with '
+        'λόγους (the teaching as a body of content); Luke closes with ῥήματα '
+        '(the individual utterances). In the Tribute to Caesar, Luke alone adds '
+        'ῥήματος at the moment the specific words of Jesus elude the trap — '
+        'a precision Matthew and Mark do not attempt.',
+        '',
+        '### 7. The difference is a tendency, not a rule',
+        '',
+        'Luke uses ῥῆμα for the shepherds\' exclamation at Luk 2:15 ("let us go and '
+        'see this *thing*") where ῥῆμα clearly means *event* or *thing* rather than '
+        '*word* — the term\'s meaning bleeds into its Semitic equivalent דָּבָר, which '
+        'likewise spans "word" and "thing." Similarly, John uses λόγος and ῥῆμα for '
+        'the words of Jesus without sharp distinction in some passages. The distinction '
+        'is real and consistent enough to reward close reading, but it should not be '
+        'pressed into a rigid theological system.',
+        '',
+        '---',
+        '',
         '## Overview',
         '',
         'Both λόγος and ῥῆμα are translated "word" in the KJV, yet they carry distinct '
