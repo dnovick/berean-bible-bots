@@ -34,7 +34,7 @@ HITS_CSV = REPORT_DIR / 'window-hits.csv'
 CACHE_JSON = REPORT_DIR / 'window-hits-classified.json'
 
 BEDROCK_REGION = 'us-west-2'
-BEDROCK_MODEL = 'us.anthropic.claude-sonnet-4-5'
+BEDROCK_MODEL = 'us.anthropic.claude-sonnet-4-5-20250929-v1:0'
 
 # Context window: grab this many KJV verses before/after the target verse
 CONTEXT_VERSES = 3
