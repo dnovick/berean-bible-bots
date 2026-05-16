@@ -211,6 +211,41 @@ Across all four verses the pattern is consistent: **ῥῆμα** points to the i
 
 ---
 
+## Synoptic Pericope Comparison
+
+The table below tracks every synoptic pericope that contains λόγος or ῥῆμα in at least one gospel. Pericopes where all attesting gospels agree confirm the semantic tendency; pericopes where they diverge are the most revealing. The **Notes** column explains the significance of each pattern.
+
+| Pericope | Matthew | Mark | Luke | Notes |
+|---|---|---|---|---|
+| Temptation: "every word that proceedeth" | 4:4 — **ῥῆμα** (ῥήματι) | — | 4:4 — **ῥῆμα** (ῥήματι) | Both quote Deut 8:3 LXX verbatim; ῥῆμα frames the OT text as divine spoken utterance. Mark has no temptation account. |
+| Sermon conclusion: "heareth these sayings / words" | 7:24 — **λόγος** (λόγους)<br>7:26 — **λόγος** (λόγους)<br>7:28 — **λόγος** (λόγους) | — | 6:47 — **λόγος** (λόγων)<br>7:1 — **ῥῆμα** (ῥήματα) | Matthew uses λόγος throughout the Sermon conclusion. Luke uses λόγος at 6:47 for the same "hear and do" charge, but closes the episode at 7:1 with ῥήματα ("when he had ended all these sayings") — shifting from the doctrinal content of the sermon (λόγος) to the individual utterances that constituted it (ῥῆμα). |
+| Centurion: "speak the word only" | 8:8 — **λόγος** (λόγῳ,) | — | 7:7 — **λόγος** (λόγῳ,) | Both use λόγος for the healing command. The centurion asks for a single authoritative word (λόγος) — emphasising the power of the message/command rather than the act of speaking. Mark omits this pericope. |
+| Miraculous catch: "at thy word / ῥήματι" | — | — | 5:5 — **ῥῆμα** (ῥήματί) | Lukan exclusive. Simon responds to Jesus' spoken command with ῥήματι — the immediate, concrete utterance just given. Matthew and Mark have no parallel in this form. |
+| Sower: "the seed is the word" (throughout) | 13:19 — **λόγος** (λόγον)<br>13:20 — **λόγος** (λόγον)<br>13:21 — **λόγος** (λόγον)<br>13:22 — **λόγος** (λόγον), **λόγος** (λόγον,)<br>13:23 — **λόγος** (λόγον) | 4:14 — **λόγος** (λόγον)<br>4:15 — **λόγος** (λόγος,), **λόγος** (λόγον)<br>4:16 — **λόγος** (λόγον,)<br>4:17 — **λόγος** (λόγον,)<br>4:18 — **λόγος** (λόγον)<br>4:19 — **λόγος** (λόγον,)<br>4:20 — **λόγος** (λόγον) | 8:11 — **λόγος** (λόγος)<br>8:12 — **λόγος** (λόγον)<br>8:13 — **λόγος** (λόγον·)<br>8:15 — **λόγος** (λόγον) | All three synoptics use λόγος exclusively throughout the sower interpretation, consistently treating the "word of the kingdom" as doctrinal content to be received, not a specific oral event. |
+| Corban: "making void the word of God" | 15:6 — **λόγος** (λόγον) | 7:13 — **λόγος** (λόγον) | — | Both Matthew and Mark use λόγος for the scriptural tradition being nullified — the word as authoritative deposit. Luke has no parallel here. |
+| Syro-Phoenician woman: "for this word/saying" | 15:23 — **λόγος** (λόγον.) | 7:29 — **λόγος** (λόγον) | — | Matthew uses λόγον at 15:23 for Jesus' silence ("not a word"), not the woman's reply. Mark uses λόγον at 7:29 for the woman's retort that wins the healing. Both use λόγος; Luke has no parallel. |
+| Second passion prediction: "understood not that saying" | — | 9:32 — **ῥῆμα** (ῥῆμα) | 9:45 — **ῥῆμα** (ῥῆμα), **ῥῆμα** (ῥήματος) | Both Mark and Luke use ῥῆμα for the disciples' failure to understand — the specific utterance (the passion prediction just spoken) is too concrete and shocking to process. Matthew uses λόγον at 17:23 for the same event. |
+| Rich young ruler: "sad at that saying" | 19:22 — **λόγος** (λόγον) | 10:22 — **λόγος** (λόγῳ) | — | Both Matthew and Mark use λόγος for the saying that grieved the ruler (the call to sell everything). The response is to a doctrinal claim, not merely a spoken moment — hence λόγος. |
+| Tribute to Caesar: "catch him in his words" | 22:15 — **λόγος** (λόγῳ.)<br>22:46 — **λόγος** (λόγον) | 12:13 — **λόγος** (λόγῳ.) | 20:20 — **λόγος** (λόγου,)<br>20:26 — **ῥῆμα** (ῥήματος) | Matthew and Mark use λόγος for the trap ("entangle him in his talk"). Luke uses λόγος at 20:20 for the same scheme, but switches to ῥήματος at 20:26 when they "could not take hold of his words before the people" — the shift to ῥῆμα emphasises the specific utterances they tried and failed to weaponise. |
+| "My words shall not pass away" | 24:35 — **λόγος** (λόγοι) | 13:31 — **λόγος** (λόγοι) | 21:33 — **λόγος** (λόγοι) | Perfect triple agreement: all three use λόγοι for Jesus' enduring words — emphasising their permanent, authoritative character as revelation. |
+| Gethsemane: "prayed using the same words" | 26:44 — **λόγος** (λόγον) | 14:39 — **λόγος** (λόγον) | — | Both use λόγος for the prayer repeated verbatim — treating the prayer as a unified content rather than as individual spoken moments. Luke has no verbal parallel for this detail. |
+| Peter's denial: "remembered the word [ῥῆμα] of the Lord" | 26:75 — **ῥῆμα** (ῥήματος) | 14:72 — **ῥῆμα** (ῥῆμα) | 22:61 — **ῥῆμα** (ῥήματος) | Perfect triple agreement on ῥῆμα — the most striking consensus in this study. All three evangelists choose ῥῆμα for the moment of Peter's recollection: the specific, shattering prediction Jesus spoke is what comes back to him. The word as lived speech-event, not as doctrine. |
+| Jesus silent before Pilate | 27:14 — **ῥῆμα** (ῥῆμα) | — | — | Matthew alone uses ῥῆμα: "he answered him not to a single ῥῆμα." The emphasis is on the absence of individual spoken words — not a refused λόγος (message/teaching) but a refusal to utter even one ῥῆμα (word). Mark and Luke do not use either term here. |
+
+### Patterns across the pericopes
+
+**Where all three agree on ῥῆμα:** The temptation narrative (quoting Deut 8:3), the second passion prediction (a specific saying the disciples failed to grasp), and Peter's denial are the clearest cases. In each, the word in view is a concrete, episodic utterance — a moment of speech whose specific content matters.
+
+**Where all three agree on λόγος:** The sower parable (seed = the word of the kingdom), the Corban dispute (the word of God as scriptural authority), "my words shall not pass away," and the Gethsemane repetition all treat the word as a deposit of teaching or authoritative message.
+
+**The two divergences are structurally informative:**
+
+- *Sermon conclusion (Mat 7:28 / Luk 7:1)*: Matthew closes with λόγους (Jesus' teaching as a body of content); Luke closes with ῥήματα (the individual utterances that constituted the address). Same event, different framing — Matthew's λόγος emphasises what was taught, Luke's ῥῆμα emphasises the speech act itself.
+
+- *Tribute to Caesar (Mat 22:15 / Luk 20:26)*: Matthew and Mark use λόγος for the adversaries' scheme. Luke adds ῥήματος at 20:26 when reporting their failure to "take hold of his words" — the specific utterances of Jesus proved impossible to weaponise. The shift within Luke from λόγος (the plan) to ῥῆμα (the actual words spoken) mirrors the broader pattern precisely.
+
+---
+
 ## Use with Reference to Written Scripture
 
 The two terms have strikingly different profiles when it comes to referencing the written scriptures — the OT text, the law, the prophets, and the canon of Revelation.

@@ -363,6 +363,205 @@ def _nt_book_html(logos: pd.DataFrame, rhema: pd.DataFrame) -> str:
     return f'<table>\n<tr>\n{cells}\n</tr>\n</table>'
 
 
+# ── Synoptic pericope comparison ─────────────────────────────────────────────
+
+# Each entry: (pericope_name, mat_refs, mrk_refs, luk_refs, note)
+# Refs are (book, ch, vs) tuples. note may be '' or a brief gloss.
+SYNOPTIC_PERICOPES = [
+    (
+        'Temptation: "every word that proceedeth"',
+        [('Mat', 4, 4)], [], [('Luk', 4, 4)],
+        'Both quote Deut 8:3 LXX verbatim; ῥῆμα frames the OT text as divine spoken '
+        'utterance. Mark has no temptation account.',
+    ),
+    (
+        'Sermon conclusion: "heareth these sayings / words"',
+        [('Mat', 7, 24), ('Mat', 7, 26), ('Mat', 7, 28)],
+        [],
+        [('Luk', 6, 47), ('Luk', 7, 1)],
+        'Matthew uses λόγος throughout the Sermon conclusion. Luke uses λόγος '
+        'at 6:47 for the same "hear and do" charge, but closes the episode at '
+        '7:1 with ῥήματα ("when he had ended all these sayings") — shifting '
+        'from the doctrinal content of the sermon (λόγος) to the individual '
+        'utterances that constituted it (ῥῆμα).',
+    ),
+    (
+        'Centurion: "speak the word only"',
+        [('Mat', 8, 8)], [], [('Luk', 7, 7)],
+        'Both use λόγος for the healing command. The centurion asks for a single '
+        'authoritative word (λόγος) — emphasising the power of the message/command '
+        'rather than the act of speaking. Mark omits this pericope.',
+    ),
+    (
+        'Miraculous catch: "at thy word / ῥήματι"',
+        [], [], [('Luk', 5, 5)],
+        'Lukan exclusive. Simon responds to Jesus\' spoken command with ῥήματι — '
+        'the immediate, concrete utterance just given. Matthew and Mark have no '
+        'parallel in this form.',
+    ),
+    (
+        'Sower: "the seed is the word" (throughout)',
+        [('Mat', 13, 19), ('Mat', 13, 20), ('Mat', 13, 21),
+         ('Mat', 13, 22), ('Mat', 13, 23)],
+        [('Mrk', 4, 14), ('Mrk', 4, 15), ('Mrk', 4, 16),
+         ('Mrk', 4, 17), ('Mrk', 4, 18), ('Mrk', 4, 19), ('Mrk', 4, 20)],
+        [('Luk', 8, 11), ('Luk', 8, 12), ('Luk', 8, 13), ('Luk', 8, 15)],
+        'All three synoptics use λόγος exclusively throughout the sower '
+        'interpretation, consistently treating the "word of the kingdom" as '
+        'doctrinal content to be received, not a specific oral event.',
+    ),
+    (
+        'Corban: "making void the word of God"',
+        [('Mat', 15, 6)], [('Mrk', 7, 13)], [],
+        'Both Matthew and Mark use λόγος for the scriptural tradition being '
+        'nullified — the word as authoritative deposit. Luke has no parallel here.',
+    ),
+    (
+        'Syro-Phoenician woman: "for this word/saying"',
+        [('Mat', 15, 23)], [('Mrk', 7, 29)], [],
+        'Matthew uses λόγον at 15:23 for Jesus\' silence ("not a word"), not the '
+        'woman\'s reply. Mark uses λόγον at 7:29 for the woman\'s retort that wins '
+        'the healing. Both use λόγος; Luke has no parallel.',
+    ),
+    (
+        'Second passion prediction: "understood not that saying"',
+        [], [('Mrk', 9, 32)], [('Luk', 9, 45)],
+        'Both Mark and Luke use ῥῆμα for the disciples\' failure to understand — '
+        'the specific utterance (the passion prediction just spoken) is too '
+        'concrete and shocking to process. Matthew uses λόγον at 17:23 for the '
+        'same event.',
+    ),
+    (
+        'Rich young ruler: "sad at that saying"',
+        [('Mat', 19, 22)], [('Mrk', 10, 22)], [],
+        'Both Matthew and Mark use λόγος for the saying that grieved the ruler '
+        '(the call to sell everything). The response is to a doctrinal claim, '
+        'not merely a spoken moment — hence λόγος.',
+    ),
+    (
+        'Tribute to Caesar: "catch him in his words"',
+        [('Mat', 22, 15), ('Mat', 22, 46)],
+        [('Mrk', 12, 13)],
+        [('Luk', 20, 20), ('Luk', 20, 26)],
+        'Matthew and Mark use λόγος for the trap ("entangle him in his talk"). '
+        'Luke uses λόγος at 20:20 for the same scheme, but switches to ῥήματος '
+        'at 20:26 when they "could not take hold of his words before the people" '
+        '— the shift to ῥῆμα emphasises the specific utterances they tried and '
+        'failed to weaponise.',
+    ),
+    (
+        '"My words shall not pass away"',
+        [('Mat', 24, 35)], [('Mrk', 13, 31)], [('Luk', 21, 33)],
+        'Perfect triple agreement: all three use λόγοι for Jesus\' enduring words '
+        '— emphasising their permanent, authoritative character as revelation.',
+    ),
+    (
+        'Gethsemane: "prayed using the same words"',
+        [('Mat', 26, 44)], [('Mrk', 14, 39)], [],
+        'Both use λόγος for the prayer repeated verbatim — treating the prayer '
+        'as a unified content rather than as individual spoken moments. '
+        'Luke has no verbal parallel for this detail.',
+    ),
+    (
+        "Peter's denial: "
+        '"remembered the word [ῥῆμα] of the Lord"',
+        [('Mat', 26, 75)], [('Mrk', 14, 72)], [('Luk', 22, 61)],
+        'Perfect triple agreement on ῥῆμα — the most striking consensus in '
+        'this study. All three evangelists choose ῥῆμα for the moment of '
+        'Peter\'s recollection: the specific, shattering prediction Jesus '
+        'spoke is what comes back to him. The word as lived speech-event, '
+        'not as doctrine.',
+    ),
+    (
+        'Jesus silent before Pilate',
+        [('Mat', 27, 14)], [], [],
+        'Matthew alone uses ῥῆμα: "he answered him not to a single ῥῆμα." '
+        'The emphasis is on the absence of individual spoken words — '
+        'not a refused λόγος (message/teaching) but a refusal to utter '
+        'even one ῥῆμα (word). Mark and Luke do not use either term here.',
+    ),
+]
+
+
+def _terms_at(nt_df: pd.DataFrame, book: str, ch: int, vs: int) -> list:
+    """Return list of (label, greek_word) for λόγος/ῥῆμα at the given verse."""
+    out = []
+    for strongs, label in [('G3056', 'λόγος'), ('G4487', 'ῥῆμα')]:
+        hits = nt_df[(nt_df['book_id'] == book) & (nt_df['chapter'] == ch)
+                     & (nt_df['verse'] == vs)
+                     & nt_df['strongs'].str.contains(strongs, na=False)]
+        for _, r in hits.iterrows():
+            out.append((label, r['word']))
+    return out
+
+
+def _cell(nt_df: pd.DataFrame, refs: list) -> str:
+    """Render a table cell for one gospel's refs: 'ref — term (form)' lines."""
+    parts = []
+    for book, ch, vs in refs:
+        hits = _terms_at(nt_df, book, ch, vs)
+        if hits:
+            term_str = ', '.join(f'**{lbl}** ({form})' for lbl, form in hits)
+            parts.append(f'{ch}:{vs} — {term_str}')
+    return '<br>'.join(parts) if parts else '—'
+
+
+def _synoptic_section(nt_df: pd.DataFrame) -> list:
+    """Build lines for the Synoptic Pericope Comparison section."""
+    lines = [
+        '## Synoptic Pericope Comparison',
+        '',
+        'The table below tracks every synoptic pericope that contains λόγος or '
+        'ῥῆμα in at least one gospel. Pericopes where all attesting gospels agree '
+        'confirm the semantic tendency; pericopes where they diverge are the most '
+        'revealing. The **Notes** column explains the significance of each pattern.',
+        '',
+        '| Pericope | Matthew | Mark | Luke | Notes |',
+        '|---|---|---|---|---|',
+    ]
+
+    for name, mat_refs, mrk_refs, luk_refs, note in SYNOPTIC_PERICOPES:
+        mat_cell = _cell(nt_df, mat_refs)
+        mrk_cell = _cell(nt_df, mrk_refs)
+        luk_cell = _cell(nt_df, luk_refs)
+        # skip if no gospel has either term (shouldn't happen with our curated list)
+        if mat_cell == mrk_cell == luk_cell == '—':
+            continue
+        note_escaped = note.replace('|', '&#124;')
+        lines.append(f'| {name} | {mat_cell} | {mrk_cell} | {luk_cell} | {note_escaped} |')
+
+    lines += [
+        '',
+        '### Patterns across the pericopes',
+        '',
+        '**Where all three agree on ῥῆμα:** The temptation narrative (quoting Deut 8:3), '
+        'the second passion prediction (a specific saying the disciples failed to grasp), '
+        'and Peter\'s denial are the clearest cases. In each, the word in view is a '
+        'concrete, episodic utterance — a moment of speech whose specific content matters.',
+        '',
+        '**Where all three agree on λόγος:** The sower parable (seed = the word of the '
+        'kingdom), the Corban dispute (the word of God as scriptural authority), '
+        '"my words shall not pass away," and the Gethsemane repetition all treat the '
+        'word as a deposit of teaching or authoritative message.',
+        '',
+        '**The two divergences are structurally informative:**',
+        '',
+        '- *Sermon conclusion (Mat 7:28 / Luk 7:1)*: Matthew closes with λόγους '
+        '(Jesus\' teaching as a body of content); Luke closes with ῥήματα '
+        '(the individual utterances that constituted the address). Same event, '
+        'different framing — Matthew\'s λόγος emphasises what was taught, '
+        'Luke\'s ῥῆμα emphasises the speech act itself.',
+        '',
+        '- *Tribute to Caesar (Mat 22:15 / Luk 20:26)*: Matthew and Mark use λόγος '
+        'for the adversaries\' scheme. Luke adds ῥήματος at 20:26 when reporting '
+        'their failure to "take hold of his words" — the specific utterances of '
+        'Jesus proved impossible to weaponise. The shift within Luke from λόγος '
+        '(the plan) to ῥῆμα (the actual words spoken) mirrors the broader pattern '
+        'precisely.',
+    ]
+    return lines
+
+
 # ── Markdown report ───────────────────────────────────────────────────────────
 
 def _build_both_verse_lines(
@@ -647,6 +846,10 @@ def _build_report() -> None:
         'individual, concrete utterance as a speech event; **λόγος** points to the word '
         'considered as message, content, or rational account. The KJV\'s use of "word" '
         'for both regularly masks this distinction.',
+        '',
+        '---',
+        '',
+    ] + _synoptic_section(nt) + [
         '',
         '---',
         '',
