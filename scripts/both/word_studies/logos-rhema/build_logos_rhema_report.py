@@ -359,6 +359,20 @@ def _build_report() -> None:
     dabar_total = dabar_to_logos + dabar_to_rhema
     dabar_logos_pct = dabar_to_logos * 100 // dabar_total if dabar_total else 0
 
+    # Scripture collocations (verse-level)
+    logos_vset = set(zip(logos_nt['book_id'], logos_nt['chapter'], logos_nt['verse']))
+    rhema_vset = set(zip(rhema_nt['book_id'], rhema_nt['chapter'], rhema_nt['verse']))
+
+    def _vset(strongs_code: str) -> set:
+        rows = nt[nt['strongs'].str.contains(strongs_code, na=False)]
+        return set(zip(rows['book_id'], rows['chapter'], rows['verse']))
+
+    sc_theos = (len(logos_vset & _vset('G2316')), len(rhema_vset & _vset('G2316')))
+    sc_graphe = (len(logos_vset & _vset('G1124')), len(rhema_vset & _vset('G1124')))
+    sc_grapho = (len(logos_vset & _vset('G1125')), len(rhema_vset & _vset('G1125')))
+    sc_nomos = (len(logos_vset & _vset('G3551')), len(rhema_vset & _vset('G3551')))
+    sc_proph = (len(logos_vset & _vset('G4396')), len(rhema_vset & _vset('G4396')))
+
     # NT books where each appears
     logos_books = sorted(logos_nt['book_id'].unique(),
                          key=lambda b: NT_ORDER.index(b) if b in NT_ORDER else 99)
@@ -599,6 +613,113 @@ def _build_report() -> None:
         'individual, concrete utterance as a speech event; **λόγος** points to the word '
         'considered as message, content, or rational account. The KJV\'s use of "word" '
         'for both regularly masks this distinction.',
+        '',
+        '---',
+        '',
+        '## Use with Reference to Written Scripture',
+        '',
+        'The two terms have strikingly different profiles when it comes to referencing '
+        'the written scriptures — the OT text, the law, the prophets, and the canon '
+        'of Revelation.',
+        '',
+        '### Summary counts (NT)',
+        '',
+        '| Context | λόγος | ῥῆμα |',
+        '|---|---|---|',
+        f'| Same verse as θεός (God) | {sc_theos[0]} | {sc_theos[1]} |',
+        f'| Same verse as γραφή (scripture) | {sc_graphe[0]} | {sc_graphe[1]} |',
+        f'| Same verse as γράφω (written / it is written) | {sc_grapho[0]} | {sc_grapho[1]} |',
+        f'| Same verse as νόμος (law) | {sc_nomos[0]} | {sc_nomos[1]} |',
+        f'| Same verse as προφήτης (prophet) | {sc_proph[0]} | {sc_proph[1]} |',
+        '',
+        'λόγος is overwhelmingly the term used for scripture as a body of text or as '
+        'authoritative message. ῥῆμα is rare in explicitly scriptural contexts — and '
+        'where it appears, it consistently refers to the spoken or living *quality* of '
+        'the word, not to the written deposit.',
+        '',
+        '### λόγος and the written scriptures',
+        '',
+        '**λόγος is the standard term for the OT scriptures considered as authoritative '
+        'content:**',
+        '',
+        '- **Jhn 10:35** — "unto whom the *word* [λόγος] of God came, and the scripture '
+        'cannot be broken" — λόγος and γραφή are used in the same breath; the λόγος '
+        'is what the scripture *contains*',
+        '- **Jhn 15:25** — "that the *word* [λόγος] might be fulfilled that is written '
+        'in their law, They hated me without a cause" — λόγος as the OT text being fulfilled',
+        '- **Luk 3:4** — "as it is written in the book of the *words* [λόγοι] of Esaias '
+        'the prophet" — the book of Isaiah referred to as a collection of λόγοι',
+        '- **Luk 24:44** — "these are the *words* [λόγοι] which I spake unto you... that '
+        'all things must be fulfilled, which were written in the law of Moses, and in the '
+        'prophets, and in the psalms" — λόγοι used for the prophetic-scriptural content '
+        'of the whole OT',
+        '- **Act 15:15** — "to this agree the *words* [λόγοι] of the prophets; as it is '
+        'written" — the OT prophecies are λόγοι',
+        '- **Rev 22:18–19** — "the *words* [λόγοι] of the prophecy of this book" (×2) '
+        '— the Apocalypse itself is a collection of λόγοι',
+        '- **Heb 4:12** — "the *word* [λόγος] of God is quick and powerful" — the active, '
+        'judging quality of the scriptural word, using λόγος',
+        '',
+        '### ῥῆμα and the written scriptures',
+        '',
+        'ῥῆμα appears in only **two** NT verses that explicitly invoke the written OT:',
+        '',
+        '- **Mat 4:4 / Luk 4:4** — Jesus quoting Deuteronomy 8:3: "Man shall not live by '
+        'bread alone, but by every *word* [ῥῆμα] that proceedeth out of the mouth of God." '
+        'The source text (Deut 8:3 LXX) uses ῥῆμα. Jesus quotes scripture using ῥῆμα '
+        'deliberately — the emphasis falls on the *living utterance from God\'s mouth*, '
+        'not on the written text as a deposit. The OT scripture is being cited, but ῥῆμα '
+        'highlights its character as divine speech.',
+        '- **Act 28:25** — "Well spake the Holy Ghost by Esaias the prophet" — the one '
+        '*word/utterance* (ῥῆμα) Paul singles out is Isaiah 6:9–10. Here ῥῆμα frames '
+        'the OT oracle as a Spirit-spoken utterance, foregrounding its prophetic-pneumatic '
+        'origin.',
+        '- **2Pe 3:2** — "the *words* [ῥήματα] which were spoken before by the holy '
+        'prophets" — the OT prophetic corpus as *spoken* declarations, emphasizing the '
+        'oral/pneumatic dimension.',
+        '',
+        '### LXX: logos and rhema for the Decalogue and Torah',
+        '',
+        'The LXX itself shows the same tension when translating the Hebrew *dābar* '
+        'in legal-scriptural contexts:',
+        '',
+        '| Reference | Hebrew | LXX | Context |',
+        '|---|---|---|---|',
+        '| Exo 20:1 | כָּל-הַדְּבָרִים הָאֵלֶּה | **λόγους** | '
+        '"God spoke *all these words*" — the Decalogue introduction |',
+        '| Exo 34:28 | עֲשֶׂרֶת הַדְּבָרִים | **λόγους** / **ῥήματα** | '
+        '"the ten words" — the Decalogue (both terms appear in same verse) |',
+        '| Deu 4:13 | עֲשֶׂרֶת הַדְּבָרִים | **ῥήματα** | '
+        '"the ten words... written on two tablets of stone" — the Decalogue |',
+        '| Deu 5:22 | הַדְּבָרִים הָאֵלֶּה | **ῥήματα** | '
+        '"these words the LORD spoke to all your assembly" — the Decalogue |',
+        '| Deu 10:4 | עֲשֶׂרֶת הַדְּבָרִים | **λόγους** | '
+        '"the ten words... written according to the first writing" — the Decalogue |',
+        '| Deu 28:58 | דִּבְרֵי הַתּוֹרָה הַזֹּאת | **ῥήματα** | '
+        '"the words of this law" |',
+        '| Deu 31:24 | דִּבְרֵי הַתּוֹרָה | **λόγους** | '
+        '"the words of this law in a book" |',
+        '',
+        'The LXX translators show no consistent preference for one term over the other '
+        'when rendering the Decalogue — both appear, sometimes in adjacent references. '
+        'This confirms that in the OT/LXX context the two terms were closer in meaning '
+        'than they would become in NT theological usage.',
+        '',
+        '### Summary',
+        '',
+        '**λόγος** is the NT\'s default term for the scriptures as authoritative, '
+        'transmissible content: the books of the prophets, the words of the law, the '
+        'canon of Revelation. It is the word *as deposit, message, and text*.',
+        '',
+        '**ῥῆμα** in scriptural contexts consistently emphasizes the *oral and pneumatic* '
+        'character of the word — what *proceeds from the mouth of God*, what *the Spirit '
+        'spoke through Isaiah*, what the prophets *declared*. It points to scripture as '
+        'divine speech-event rather than written text.',
+        '',
+        'This is theologically significant: when NT writers want to emphasize the '
+        '*authority and permanence* of the scriptural text, they use λόγος. When they '
+        'want to emphasize its *living, Spirit-breathed, spoken* character, they reach '
+        'for ῥῆμα.',
         '',
         '---',
         '',
