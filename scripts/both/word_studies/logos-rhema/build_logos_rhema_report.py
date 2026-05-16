@@ -52,17 +52,19 @@ OT_ORDER = [b[0] for b in BOOKS if b[2] == 'OT']
 NT_GENRE = {
     'Mat': 'Gospel', 'Mrk': 'Gospel', 'Luk': 'Gospel', 'Jhn': 'Gospel',
     'Act': 'Acts',
-    'Rom': 'Epistle', '1Co': 'Epistle', '2Co': 'Epistle', 'Gal': 'Epistle',
-    'Eph': 'Epistle', 'Php': 'Epistle', 'Col': 'Epistle',
-    '1Th': 'Epistle', '2Th': 'Epistle', '1Ti': 'Epistle', '2Ti': 'Epistle',
-    'Tit': 'Epistle', 'Phm': 'Epistle',
-    'Heb': 'Epistle', 'Jas': 'General', '1Pe': 'General', '2Pe': 'General',
-    '1Jn': 'General', '2Jn': 'General', '3Jn': 'General', 'Jud': 'General',
+    'Rom': 'Pauline Epistles', '1Co': 'Pauline Epistles', '2Co': 'Pauline Epistles',
+    'Gal': 'Pauline Epistles', 'Eph': 'Pauline Epistles', 'Php': 'Pauline Epistles',
+    'Col': 'Pauline Epistles', '1Th': 'Pauline Epistles', '2Th': 'Pauline Epistles',
+    '1Ti': 'Pauline Epistles', '2Ti': 'Pauline Epistles', 'Tit': 'Pauline Epistles',
+    'Phm': 'Pauline Epistles',
+    'Heb': 'General Epistles', 'Jas': 'General Epistles', '1Pe': 'General Epistles',
+    '2Pe': 'General Epistles', '1Jn': 'General Epistles', '2Jn': 'General Epistles',
+    '3Jn': 'General Epistles', 'Jud': 'General Epistles',
     'Rev': 'Apocalyptic',
 }
 GENRE_COLORS = {
-    'Gospel': '#4292c6', 'Acts': '#2ca25f', 'Epistle': '#fd8d3c',
-    'General': '#9e9ac8', 'Apocalyptic': '#d62728',
+    'Gospel': '#4292c6', 'Acts': '#2ca25f', 'Pauline Epistles': '#fd8d3c',
+    'General Epistles': '#9e9ac8', 'Apocalyptic': '#d62728',
 }
 
 LOGOS_COLOR = '#2166ac'
@@ -253,7 +255,7 @@ def _chart_nt_genre_pie() -> None:
 
     logos_g = genre_counts(logos_nt)
     rhema_g = genre_counts(rhema_nt)
-    genres = ['Gospel', 'Acts', 'Epistle', 'General', 'Apocalyptic']
+    genres = ['Gospel', 'Acts', 'Pauline Epistles', 'General Epistles', 'Apocalyptic']
 
     fig, (ax1, ax2) = plt.subplots(1, 2, figsize=(12, 6))
     for ax, data, title in [
@@ -536,8 +538,8 @@ def _build_report() -> None:
         '',
         'λόγος is distributed across all NT genres with particular concentration in Acts '
         f'({len(logos_nt[logos_nt["book_id"] == "Act"])} occurrences) and the Gospels. '
-        'ῥῆμα is almost entirely absent from the Pauline epistles — its weight falls on '
-        'the Gospels (especially Luke), Acts, and a handful of general epistles.',
+        'ῥῆμα is almost entirely absent from the Pauline Epistles — its weight falls on '
+        'the Gospels (especially Luke), Acts, and the General Epistles.',
         '',
         '---',
         '',

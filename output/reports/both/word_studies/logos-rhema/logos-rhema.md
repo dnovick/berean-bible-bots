@@ -82,7 +82,7 @@ Books with **only ῥῆμα** (no λόγος): Jud
 
 ![NT genre distribution](../../../../charts/both/word_studies/logos-rhema/logos-rhema-nt-genre-pie.png)
 
-λόγος is distributed across all NT genres with particular concentration in Acts (65 occurrences) and the Gospels. ῥῆμα is almost entirely absent from the Pauline epistles — its weight falls on the Gospels (especially Luke), Acts, and a handful of general epistles.
+λόγος is distributed across all NT genres with particular concentration in Acts (65 occurrences) and the Gospels. ῥῆμα is almost entirely absent from the Pauline Epistles — its weight falls on the Gospels (especially Luke), Acts, and the General Epistles.
 
 ---
 
