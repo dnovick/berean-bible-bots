@@ -16,9 +16,9 @@ To regenerate: `python scripts/build_student_packs.py`
 
 | Package | Contents | Download |
 |---|---|---|
-| **BBH** | BBH Ch 1–35 · lessons · exercises · flashcards · OT charts | [BBH.zip](../../student-packs/BBH.zip) |
-| **BBG** | BBG Ch 1–36 · lessons · exercises · flashcards · NT + cross-testament charts | [BBG.zip](../../student-packs/BBG.zip) |
-| **BBA** | BBA Ch 1–22 · lessons · exercises · flashcards | [BBA.zip](../../student-packs/BBA.zip) |
+| **BBH** | BBH Ch 1–35 · lessons · exercises · flashcards · OT charts | [BBH.zip](../student-packs/BBH.zip) |
+| **BBG** | BBG Ch 1–36 · lessons · exercises · flashcards · NT + cross-testament charts | [BBG.zip](../student-packs/BBG.zip) |
+| **BBA** | BBA Ch 1–22 · lessons · exercises · flashcards | [BBA.zip](../student-packs/BBA.zip) |
 
 ---
 
