@@ -18,4 +18,4 @@ Write all 29 inflected forms of קדשׁ (Hithpael) from memory. Key: הִתְ p
 |---|---|---|
 | [ch34-hithpael-paradigm-drill.md](ch34-hithpael-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch34-hithpael-paradigm-drill.html](ch34-hithpael-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch34-hithpael-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch34-hithpael-paradigm-drill.pdf](ch34-hithpael-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

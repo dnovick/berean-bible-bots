@@ -18,4 +18,4 @@ Parse 15 Qal Imperfect verbs from Exodus 3–4 (the burning bush narrative) and 
 |---|---|---|
 | [ch15-passage-exercise.md](ch15-passage-exercise.md) | Markdown | Exercise with answer key |
 | ch15-passage-exercise.html | HTML | Interactive — fillable fields, reveal buttons |
-| ch15-passage-exercise.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch15-passage-exercise.pdf](ch15-passage-exercise.pdf) | PDF | AcroForm — printable with fillable fields |

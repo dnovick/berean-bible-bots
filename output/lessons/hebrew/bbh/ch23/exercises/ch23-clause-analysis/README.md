@@ -20,4 +20,4 @@ This 20-item drill covers all five clause types taught in BBH Chapter 23: Verbal
 |---|---|
 | [ch23-clause-analysis.md](ch23-clause-analysis.md) | Reference copy — static answer key at bottom |
 | [ch23-clause-analysis.html](ch23-clause-analysis.html) | Classroom use — fillable fields, per-clause ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch23-clause-analysis.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch23-clause-analysis.pdf](ch23-clause-analysis.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

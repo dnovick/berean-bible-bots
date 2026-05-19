@@ -14,4 +14,4 @@ Write all 10 inflected forms of שמר (Qal Imperfect, A-class holem theme) from
 |---|---|---|
 | [ch15-qal-imperfect-paradigm-drill.md](ch15-qal-imperfect-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch15-qal-imperfect-paradigm-drill.html](ch15-qal-imperfect-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch15-qal-imperfect-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch15-qal-imperfect-paradigm-drill.pdf](ch15-qal-imperfect-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

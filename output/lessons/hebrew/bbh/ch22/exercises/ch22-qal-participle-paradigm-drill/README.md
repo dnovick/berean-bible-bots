@@ -15,4 +15,4 @@ Write all 8 Qal Participle forms of שמר (active and passive) from memory.
 |---|---|---|
 | [ch22-qal-participle-paradigm-drill.md](ch22-qal-participle-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch22-qal-participle-paradigm-drill.html](ch22-qal-participle-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch22-qal-participle-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch22-qal-participle-paradigm-drill.pdf](ch22-qal-participle-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

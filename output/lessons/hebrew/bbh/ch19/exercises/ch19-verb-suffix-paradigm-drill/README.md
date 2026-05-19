@@ -15,4 +15,4 @@ Write 9 forms of שמר with object suffixes from memory (Perfect 3ms and Imperf
 |---|---|---|
 | [ch19-verb-suffix-paradigm-drill.md](ch19-verb-suffix-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch19-verb-suffix-paradigm-drill.html](ch19-verb-suffix-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch19-verb-suffix-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch19-verb-suffix-paradigm-drill.pdf](ch19-verb-suffix-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

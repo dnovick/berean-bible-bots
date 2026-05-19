@@ -14,4 +14,4 @@ Write all 10 Wayyiqtol (Waw-Consecutive Imperfect) forms of קטל from memory.
 |---|---|---|
 | [ch17-wayyiqtol-paradigm-drill.md](ch17-wayyiqtol-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch17-wayyiqtol-paradigm-drill.html](ch17-wayyiqtol-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch17-wayyiqtol-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch17-wayyiqtol-paradigm-drill.pdf](ch17-wayyiqtol-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

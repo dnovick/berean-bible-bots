@@ -14,4 +14,4 @@ A 20-item parsing drill covering 3rd-declension noun forms drawn from common GNT
 |---|---|
 | [ch10-third-decl-parsing.md](ch10-third-decl-parsing.md) | Reference copy — static answer key at bottom |
 | [ch10-third-decl-parsing.html](ch10-third-decl-parsing.html) | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch10-third-decl-parsing.pdf | Print/tablet use — AcroForm text fields |
+| [ch10-third-decl-parsing.pdf](ch10-third-decl-parsing.pdf) | Print/tablet use — AcroForm text fields |

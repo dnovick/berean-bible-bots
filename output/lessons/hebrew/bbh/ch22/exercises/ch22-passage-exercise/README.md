@@ -19,4 +19,4 @@ This passage exercise presents 15 highlighted participle forms drawn from eleven
 |---|---|
 | [ch22-passage-exercise.md](ch22-passage-exercise.md) | Reference copy — static answer key at bottom |
 | [ch22-passage-exercise.html](ch22-passage-exercise.html) | Classroom use — fillable fields, per-form ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch22-passage-exercise.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch22-passage-exercise.pdf](ch22-passage-exercise.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

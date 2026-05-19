@@ -17,4 +17,4 @@ A 20-item parsing drill covering 2nd-declension masculine and neuter nouns and t
 |---|---|
 | ch6-nom-acc-parsing.md | Reference copy — static answer key at bottom |
 | ch6-nom-acc-parsing.html | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch6-nom-acc-parsing.pdf | Print/tablet use — AcroForm text fields |
+| [ch6-nom-acc-parsing.pdf](ch6-nom-acc-parsing.pdf) | Print/tablet use — AcroForm text fields |

@@ -23,4 +23,4 @@ This drill covers all major Qal Imperative forms introduced in BBH Chapter 18. S
 |---|---|
 | [ch18-parsing-drill.md](ch18-parsing-drill.md) | Reference copy — static answer key at bottom |
 | [ch18-parsing-drill.html](ch18-parsing-drill.html) | Classroom use — fillable fields, per-verb ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch18-parsing-drill.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch18-parsing-drill.pdf](ch18-parsing-drill.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

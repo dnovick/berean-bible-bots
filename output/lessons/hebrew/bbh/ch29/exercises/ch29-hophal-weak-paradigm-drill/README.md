@@ -18,4 +18,4 @@ Write selected Hophal Weak forms. Part A uses נגד (I-נ, qibbuts pattern); Pa
 |---|---|---|
 | [ch29-hophal-weak-paradigm-drill.md](ch29-hophal-weak-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch29-hophal-weak-paradigm-drill.html](ch29-hophal-weak-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch29-hophal-weak-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch29-hophal-weak-paradigm-drill.pdf](ch29-hophal-weak-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

@@ -22,4 +22,4 @@ All target forms are weak-root Qal Perfects; a few strong forms are included as 
 |---|---|---|
 | [ch14-passage-exercise.md](ch14-passage-exercise.md) | Markdown | Exercise with answer key |
 | ch14-passage-exercise.html | HTML | Interactive — fillable fields, reveal buttons |
-| ch14-passage-exercise.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch14-passage-exercise.pdf](ch14-passage-exercise.pdf) | PDF | AcroForm — printable with fillable fields |

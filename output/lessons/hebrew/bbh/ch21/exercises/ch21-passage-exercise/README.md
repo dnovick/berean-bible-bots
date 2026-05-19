@@ -18,4 +18,4 @@ This passage exercise presents 15 highlighted IA forms drawn from eight OT passa
 |---|---|
 | [ch21-passage-exercise.md](ch21-passage-exercise.md) | Reference copy — static answer key at bottom |
 | [ch21-passage-exercise.html](ch21-passage-exercise.html) | Classroom use — fillable fields, per-verb ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch21-passage-exercise.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch21-passage-exercise.pdf](ch21-passage-exercise.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

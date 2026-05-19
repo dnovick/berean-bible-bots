@@ -19,4 +19,4 @@ Write all 30 inflected forms of קטל (Hiphil) from memory.
 |---|---|---|
 | [ch26-hiphil-paradigm-drill.md](ch26-hiphil-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch26-hiphil-paradigm-drill.html](ch26-hiphil-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch26-hiphil-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch26-hiphil-paradigm-drill.pdf](ch26-hiphil-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

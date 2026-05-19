@@ -18,4 +18,4 @@ Write all 26 inflected forms of מות (Hophal) from memory. No Imperative — p
 |---|---|---|
 | [ch28-hophal-paradigm-drill.md](ch28-hophal-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch28-hophal-paradigm-drill.html](ch28-hophal-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch28-hophal-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch28-hophal-paradigm-drill.pdf](ch28-hophal-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

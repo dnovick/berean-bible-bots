@@ -16,4 +16,4 @@ Identify the person, number, gender, and root for each of 25 Qal Imperfect forms
 |---|---|---|
 | [ch15-parsing-drill.md](ch15-parsing-drill.md) | Markdown | Drill with answer key |
 | ch15-parsing-drill.html | HTML | Interactive — fillable fields, reveal buttons |
-| ch15-parsing-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch15-parsing-drill.pdf](ch15-parsing-drill.pdf) | PDF | AcroForm — printable with fillable fields |

@@ -19,4 +19,4 @@ Write all 30 inflected forms of דבר (Piel) from memory. Key marker: dagesh fo
 |---|---|---|
 | [ch30-piel-paradigm-drill.md](ch30-piel-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch30-piel-paradigm-drill.html](ch30-piel-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch30-piel-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch30-piel-paradigm-drill.pdf](ch30-piel-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

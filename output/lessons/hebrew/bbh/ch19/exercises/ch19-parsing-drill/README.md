@@ -19,4 +19,4 @@ This drill covers all major pronominal suffix constructions on verbs introduced 
 |---|---|
 | [ch19-parsing-drill.md](ch19-parsing-drill.md) | Reference copy — static answer key at bottom |
 | [ch19-parsing-drill.html](ch19-parsing-drill.html) | Classroom use — fillable fields, per-verb ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch19-parsing-drill.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch19-parsing-drill.pdf](ch19-parsing-drill.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

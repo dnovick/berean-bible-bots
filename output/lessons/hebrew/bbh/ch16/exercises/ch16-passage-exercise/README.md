@@ -17,4 +17,4 @@ Parse weak-root Qal Imperfect and Wayyiqtol forms drawn from Genesis.
 |---|---|---|
 | [ch16-passage-exercise.md](ch16-passage-exercise.md) | Markdown | Exercise with answer key |
 | ch16-passage-exercise.html | HTML | Interactive — fillable fields, reveal buttons |
-| ch16-passage-exercise.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch16-passage-exercise.pdf](ch16-passage-exercise.pdf) | PDF | AcroForm — printable with fillable fields |

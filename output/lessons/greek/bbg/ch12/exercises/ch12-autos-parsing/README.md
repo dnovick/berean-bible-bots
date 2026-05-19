@@ -14,4 +14,4 @@ A 20-item drill covering αὐτός in all genders, cases, and numbers. Student
 |---|---|
 | [ch12-autos-parsing.md](ch12-autos-parsing.md) | Reference copy — static answer key at bottom |
 | [ch12-autos-parsing.html](ch12-autos-parsing.html) | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch12-autos-parsing.pdf | Print/tablet use — AcroForm text fields |
+| [ch12-autos-parsing.pdf](ch12-autos-parsing.pdf) | Print/tablet use — AcroForm text fields |

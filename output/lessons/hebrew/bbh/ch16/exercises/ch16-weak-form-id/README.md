@@ -15,4 +15,4 @@ Identify the weak class, PGN, and root for each of 40 Qal Imperfect forms.
 |---|---|---|
 | [ch16-weak-form-id.md](ch16-weak-form-id.md) | Markdown | Drill with answer key |
 | ch16-weak-form-id.html | HTML | Interactive — fillable fields, reveal buttons |
-| ch16-weak-form-id.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch16-weak-form-id.pdf](ch16-weak-form-id.pdf) | PDF | AcroForm — printable with fillable fields |

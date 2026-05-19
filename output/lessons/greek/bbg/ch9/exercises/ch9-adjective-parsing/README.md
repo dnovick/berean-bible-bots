@@ -14,4 +14,4 @@ A 20-item parsing drill covering 2-1-2 Greek adjectives in context. Students par
 |---|---|
 | [ch9-adjective-parsing.md](ch9-adjective-parsing.md) | Reference copy — static answer key at bottom |
 | [ch9-adjective-parsing.html](ch9-adjective-parsing.html) | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch9-adjective-parsing.pdf | Print/tablet use — AcroForm text fields |
+| [ch9-adjective-parsing.pdf](ch9-adjective-parsing.pdf) | Print/tablet use — AcroForm text fields |

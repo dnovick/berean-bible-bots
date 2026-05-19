@@ -22,4 +22,4 @@ This drill covers all major Wayyiqtol and Weqatal patterns introduced in BBH Cha
 |---|---|
 | [ch17-parsing-drill.md](ch17-parsing-drill.md) | Reference copy — static answer key at bottom |
 | [ch17-parsing-drill.html](ch17-parsing-drill.html) | Classroom use — fillable fields, per-verb ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch17-parsing-drill.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch17-parsing-drill.pdf](ch17-parsing-drill.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

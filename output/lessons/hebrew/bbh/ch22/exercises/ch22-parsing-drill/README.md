@@ -22,4 +22,4 @@ This 32-item parsing drill covers Qal active and passive participle forms across
 |---|---|
 | [ch22-parsing-drill.md](ch22-parsing-drill.md) | Reference copy — static answer key at bottom |
 | [ch22-parsing-drill.html](ch22-parsing-drill.html) | Classroom use — fillable fields, per-form ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch22-parsing-drill.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch22-parsing-drill.pdf](ch22-parsing-drill.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

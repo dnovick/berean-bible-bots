@@ -16,4 +16,4 @@ Identify the person, number, gender, and root (3ms lexical form) for each of 25 
 |---|---|---|
 | [ch13-parsing-drill.md](ch13-parsing-drill.md) | Markdown | Drill with answer key |
 | ch13-parsing-drill.html | HTML | Interactive — fillable fields, reveal buttons |
-| ch13-parsing-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch13-parsing-drill.pdf](ch13-parsing-drill.pdf) | PDF | AcroForm — printable with fillable fields |

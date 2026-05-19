@@ -14,4 +14,4 @@ A 20-item drill drawn from GNT prepositional phrases. Students identify the prep
 |---|---|
 | [ch8-preposition-parsing.md](ch8-preposition-parsing.md) | Reference copy — static answer key at bottom |
 | [ch8-preposition-parsing.html](ch8-preposition-parsing.html) | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch8-preposition-parsing.pdf | Print/tablet use — AcroForm text fields |
+| [ch8-preposition-parsing.pdf](ch8-preposition-parsing.pdf) | Print/tablet use — AcroForm text fields |

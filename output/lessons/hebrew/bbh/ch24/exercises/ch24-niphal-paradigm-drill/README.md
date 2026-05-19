@@ -19,4 +19,4 @@ Write all 30 inflected forms of קטל (Niphal) from memory.
 |---|---|---|
 | [ch24-niphal-paradigm-drill.md](ch24-niphal-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch24-niphal-paradigm-drill.html](ch24-niphal-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch24-niphal-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch24-niphal-paradigm-drill.pdf](ch24-niphal-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

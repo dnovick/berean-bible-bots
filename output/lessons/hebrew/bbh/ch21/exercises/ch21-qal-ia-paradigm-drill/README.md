@@ -15,4 +15,4 @@ Write the Qal Infinitive Absolute for 6 root classes from memory.
 |---|---|---|
 | [ch21-qal-ia-paradigm-drill.md](ch21-qal-ia-paradigm-drill.md) | Markdown | Paradigm with answer key and IA/IC contrast |
 | [ch21-qal-ia-paradigm-drill.html](ch21-qal-ia-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons, reference table |
-| ch21-qal-ia-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch21-qal-ia-paradigm-drill.pdf](ch21-qal-ia-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

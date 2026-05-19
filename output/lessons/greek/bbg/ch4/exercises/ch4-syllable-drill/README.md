@@ -17,4 +17,4 @@ A 20-item drill in which students divide Greek words into syllables, identify th
 |---|---|
 | ch4-syllable-drill.md | Reference copy — static answer key at bottom |
 | ch4-syllable-drill.html | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch4-syllable-drill.pdf | Print/tablet use — AcroForm text fields |
+| [ch4-syllable-drill.pdf](ch4-syllable-drill.pdf) | Print/tablet use — AcroForm text fields |

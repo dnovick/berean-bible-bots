@@ -18,4 +18,4 @@ Write selected Hithpael Weak forms. Part A uses גלה (III-ה); Part B demonstr
 |---|---|---|
 | [ch35-hithpael-weak-paradigm-drill.md](ch35-hithpael-weak-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch35-hithpael-weak-paradigm-drill.html](ch35-hithpael-weak-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch35-hithpael-weak-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch35-hithpael-weak-paradigm-drill.pdf](ch35-hithpael-weak-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

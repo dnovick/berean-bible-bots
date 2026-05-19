@@ -18,4 +18,4 @@ Write selected Pual Weak forms. Part A uses בנה (III-ה); Part B uses שאל 
 |---|---|---|
 | [ch33-pual-weak-paradigm-drill.md](ch33-pual-weak-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch33-pual-weak-paradigm-drill.html](ch33-pual-weak-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch33-pual-weak-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch33-pual-weak-paradigm-drill.pdf](ch33-pual-weak-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

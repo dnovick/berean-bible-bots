@@ -25,4 +25,4 @@ This 25-item parsing drill covers Qal IA forms across all major root classes in 
 |---|---|
 | [ch21-parsing-drill.md](ch21-parsing-drill.md) | Reference copy — static answer key at bottom |
 | [ch21-parsing-drill.html](ch21-parsing-drill.html) | Classroom use — fillable fields, per-form ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch21-parsing-drill.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch21-parsing-drill.pdf](ch21-parsing-drill.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

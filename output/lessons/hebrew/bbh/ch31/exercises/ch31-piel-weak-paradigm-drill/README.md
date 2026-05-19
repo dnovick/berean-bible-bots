@@ -17,4 +17,4 @@ Write selected Piel Weak forms for גלה (III-ה) from memory.
 |---|---|---|
 | [ch31-piel-weak-paradigm-drill.md](ch31-piel-weak-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch31-piel-weak-paradigm-drill.html](ch31-piel-weak-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch31-piel-weak-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch31-piel-weak-paradigm-drill.pdf](ch31-piel-weak-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

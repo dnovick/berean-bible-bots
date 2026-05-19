@@ -14,4 +14,4 @@ A 20-item parsing drill covering 1st and 2nd person pronoun forms. Students iden
 |---|---|
 | [ch11-pronoun-parsing.md](ch11-pronoun-parsing.md) | Reference copy — static answer key at bottom |
 | [ch11-pronoun-parsing.html](ch11-pronoun-parsing.html) | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch11-pronoun-parsing.pdf | Print/tablet use — AcroForm text fields |
+| [ch11-pronoun-parsing.pdf](ch11-pronoun-parsing.pdf) | Print/tablet use — AcroForm text fields |

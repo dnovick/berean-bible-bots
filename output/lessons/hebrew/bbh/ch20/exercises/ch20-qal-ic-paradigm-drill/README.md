@@ -14,4 +14,4 @@ Write the bare Infinitive Construct and the form with לְ for 6 root classes fr
 |---|---|---|
 | [ch20-qal-ic-paradigm-drill.md](ch20-qal-ic-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch20-qal-ic-paradigm-drill.html](ch20-qal-ic-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch20-qal-ic-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch20-qal-ic-paradigm-drill.pdf](ch20-qal-ic-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

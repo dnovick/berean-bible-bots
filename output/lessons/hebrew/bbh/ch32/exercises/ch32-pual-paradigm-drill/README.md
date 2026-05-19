@@ -16,4 +16,4 @@ Write selected Pual forms for the root קטל from memory. Key marker: qibbuts u
 |---|---|---|
 | [ch32-pual-paradigm-drill.md](ch32-pual-paradigm-drill.md) | Markdown | Paradigm with answer key |
 | [ch32-pual-paradigm-drill.html](ch32-pual-paradigm-drill.html) | HTML | Interactive — fillable fields, reveal buttons |
-| ch32-pual-paradigm-drill.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch32-pual-paradigm-drill.pdf](ch32-pual-paradigm-drill.pdf) | PDF | AcroForm — printable with fillable fields |

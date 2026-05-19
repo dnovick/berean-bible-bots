@@ -24,4 +24,4 @@ This 15-item passage exercise draws on five OT passages to practice clause analy
 |---|---|
 | [ch23-passage-exercise.md](ch23-passage-exercise.md) | Reference copy — static answer key at bottom |
 | [ch23-passage-exercise.html](ch23-passage-exercise.html) | Classroom use — fillable fields, per-clause ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch23-passage-exercise.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch23-passage-exercise.pdf](ch23-passage-exercise.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

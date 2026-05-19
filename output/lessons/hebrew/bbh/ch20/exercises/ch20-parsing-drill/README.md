@@ -24,4 +24,4 @@ This 25-item parsing drill covers Qal IC forms across all major root classes, or
 |---|---|
 | [ch20-parsing-drill.md](ch20-parsing-drill.md) | Reference copy — static answer key at bottom |
 | [ch20-parsing-drill.html](ch20-parsing-drill.html) | Classroom use — fillable fields, per-form ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch20-parsing-drill.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch20-parsing-drill.pdf](ch20-parsing-drill.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |

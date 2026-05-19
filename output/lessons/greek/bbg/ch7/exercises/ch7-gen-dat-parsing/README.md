@@ -14,4 +14,4 @@ A 20-item parsing drill covering 2nd-declension masculine and neuter noun forms 
 |---|---|
 | [ch7-gen-dat-parsing.md](ch7-gen-dat-parsing.md) | Reference copy — static answer key at bottom |
 | [ch7-gen-dat-parsing.html](ch7-gen-dat-parsing.html) | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch7-gen-dat-parsing.pdf | Print/tablet use — AcroForm text fields |
+| [ch7-gen-dat-parsing.pdf](ch7-gen-dat-parsing.pdf) | Print/tablet use — AcroForm text fields |

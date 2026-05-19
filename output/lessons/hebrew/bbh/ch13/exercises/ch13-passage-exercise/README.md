@@ -18,4 +18,4 @@ All target forms are Qal Perfect strong-root tokens (weak roots noted but not ye
 |---|---|---|
 | [ch13-passage-exercise.md](ch13-passage-exercise.md) | Markdown | Exercise with answer key |
 | ch13-passage-exercise.html | HTML | Interactive — fillable fields, reveal buttons |
-| ch13-passage-exercise.pdf | PDF | AcroForm — printable with fillable fields |
+| [ch13-passage-exercise.pdf](ch13-passage-exercise.pdf) | PDF | AcroForm — printable with fillable fields |

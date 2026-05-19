@@ -16,4 +16,4 @@ A 24-item drill covering all letters of the Greek alphabet. Students identify th
 |---|---|
 | ch3-alphabet-drill.md | Reference copy — static answer key at bottom |
 | ch3-alphabet-drill.html | Classroom use — fillable fields, per-item ▶ Answer reveal |
-| ch3-alphabet-drill.pdf | Print/tablet use — AcroForm text fields |
+| [ch3-alphabet-drill.pdf](ch3-alphabet-drill.pdf) | Print/tablet use — AcroForm text fields |

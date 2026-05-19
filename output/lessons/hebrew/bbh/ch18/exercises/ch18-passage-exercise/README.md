@@ -23,4 +23,4 @@ This passage exercise presents 16 highlighted verb forms drawn from five canonic
 |---|---|
 | [ch18-passage-exercise.md](ch18-passage-exercise.md) | Reference copy — static answer key at bottom |
 | [ch18-passage-exercise.html](ch18-passage-exercise.html) | Classroom use — fillable fields, per-verb ▶ Answer reveal, Show/Hide/Clear All controls |
-| ch18-passage-exercise.pdf | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch18-passage-exercise.pdf](ch18-passage-exercise.pdf) | Print or tablet use — AcroForm text fields, answer rows always visible |
