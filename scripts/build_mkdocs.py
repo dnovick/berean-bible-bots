@@ -189,13 +189,13 @@ def build_chapter(
             ex_dst = exercises_dst / ex_name
             ex_dst.mkdir(parents=True, exist_ok=True)
 
-            # Copy .md files
+            # Copy .md, .html, and .pdf files
             for md in ex_dir.glob("*.md"):
                 shutil.copy(md, ex_dst / md.name)
-
-            # Copy .html files directly (served as static assets via mkdocs)
             for html in ex_dir.glob("*.html"):
                 shutil.copy(html, ex_dst / html.name)
+            for pdf in ex_dir.glob("*.pdf"):
+                shutil.copy(pdf, ex_dst / pdf.name)
 
             # Build exercise page: embed HTML via iframe if .html exists,
             # else redirect to the .md
@@ -205,12 +205,25 @@ def build_chapter(
 
             if html_files:
                 html_name = html_files[0].name
-                # Write a wrapper .md that iframes the exercise HTML
+                stem = html_files[0].stem  # e.g. ch26-function-sort
+                md_name = f"{stem}.md"
+                pdf_name = f"{stem}.pdf"
+                has_md = (ex_dir / md_name).exists()
+                has_pdf = (ex_dir / pdf_name).exists()
+
+                # Build download links line (web-only — injected here, not in source)
+                download_parts = [f"[Full screen]({html_name}){{.md-button}}"]
+                if has_md:
+                    download_parts.append(f"[Answer key (MD)]({md_name}){{.md-button}}")
+                if has_pdf:
+                    download_parts.append(f"[Print (PDF)]({pdf_name}){{.md-button}}")
+                downloads_line = "  ".join(download_parts)
+
                 iframe_md = ex_dst / "index.md"
                 iframe_md.write_text(
                     f"# {ex_title}\n\n"
                     f"*Chapter {ch_num} — {title}*\n\n"
-                    f"[Open full screen]({html_name}){{.md-button}}\n\n"
+                    f"{downloads_line}\n\n"
                     f'<iframe src="{html_name}" '
                     f'style="width:100%;height:85vh;border:1px solid #ddd;'
                     f'border-radius:6px;" '

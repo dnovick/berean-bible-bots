@@ -38,6 +38,9 @@ extra_css:
 extra_javascript:
   - javascripts/home-link.js
 
+extra_files:
+  - "*.pdf"
+
 plugins:
   - search
   - mkdocstrings:
