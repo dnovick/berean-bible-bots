@@ -15,7 +15,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch22-causative-passive-drill/](exercises/ch22-causative-passive-drill/README.md) | 20-item capstone review drill — all 9 Aramaic stems |
+| [exercises/ch22-causative-passive-drill/](exercises/ch22-causative-passive-drill/index.md) | 20-item capstone review drill — all 9 Aramaic stems |
 
 ### Notebooks
 

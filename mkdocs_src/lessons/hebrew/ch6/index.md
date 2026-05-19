@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch6-preposition-parsing/](exercises/ch6-preposition-parsing/README.md) | 25-item prepositional phrase parsing drill — identify preposition, base form, vowel change, object, and translation |
+| [exercises/ch6-preposition-parsing/](exercises/ch6-preposition-parsing/index.md) | 25-item prepositional phrase parsing drill — identify preposition, base form, vowel change, object, and translation |
 
 ### Flashcards
 
@@ -243,4 +243,4 @@ Prepositions are among the most frequent items in the Hebrew OT. The figures bel
 
 | Resource | Description |
 |---|---|
-| [Preposition Parsing Drill](exercises/ch6-preposition-parsing/README.md) | 25 Hebrew prepositional phrases — identify the preposition, base form, vowel change and reason, object, and translation. Answer key included. |
+| [Preposition Parsing Drill](exercises/ch6-preposition-parsing/index.md) | 25 Hebrew prepositional phrases — identify the preposition, base form, vowel change and reason, object, and translation. Answer key included. |

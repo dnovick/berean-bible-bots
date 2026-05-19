@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch4-noun-identification/](exercises/ch4-noun-identification/README.md) | 20-item noun identification drill — gender, number, state, and root/lexical form |
+| [exercises/ch4-noun-identification/](exercises/ch4-noun-identification/index.md) | 20-item noun identification drill — gender, number, state, and root/lexical form |
 
 ### Notebooks
 
@@ -260,4 +260,4 @@ In Aramaic, all three states exist across all gender/number combinations, produc
 
 | Resource | Description |
 |---|---|
-| [Noun Identification Drill](exercises/ch4-noun-identification/README.md) | 20-item drill — identify gender, number, state, and root/lexical form for absolute-state noun forms drawn from Chapter 4 vocabulary |
+| [Noun Identification Drill](exercises/ch4-noun-identification/index.md) | 20-item drill — identify gender, number, state, and root/lexical form for absolute-state noun forms drawn from Chapter 4 vocabulary |

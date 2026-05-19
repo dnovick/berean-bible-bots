@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch4-noun-parsing/](exercises/ch4-noun-parsing/README.md) | 25-item noun parsing drill — gender, number, state, lexical form, and gloss |
+| [exercises/ch4-noun-parsing/](exercises/ch4-noun-parsing/index.md) | 25-item noun parsing drill — gender, number, state, lexical form, and gloss |
 
 ### Flashcards
 
@@ -336,4 +336,4 @@ The following are the twenty most frequently occurring Hebrew nouns in the Old T
 
 | Resource | Description |
 |---|---|
-| [Noun Parsing Drill](exercises/ch4-noun-parsing/README.md) | 25-item parsing drill — identify gender, number, state, lexical form, and gloss for a range of noun forms including segolates, duals, and irregular plurals. |
+| [Noun Parsing Drill](exercises/ch4-noun-parsing/index.md) | 25-item parsing drill — identify gender, number, state, lexical form, and gloss for a range of noun forms including segolates, duals, and irregular plurals. |

@@ -21,13 +21,13 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch27-passage-exercise/](exercises/ch27-passage-exercise/README.md) | Passage exercise — identify and parse weak Hiphil verbs in context |
-| [exercises/ch27-weak-form-id/](exercises/ch27-weak-form-id/README.md) | Weak form identification drill — classify Hiphil forms by root class |
-| [exercises/ch27-biconsig-drill/](exercises/ch27-biconsig-drill/README.md) | Biconsonantal and Geminate Hiphil drilling — distinguish the two near-identical classes |
-| [exercises/ch27-niphal-hiphil-contrast/](exercises/ch27-niphal-hiphil-contrast/README.md) | Niphal vs. Hiphil contrast — discriminate the two derived stems in form and meaning |
-| [exercises/ch27-function-sort/](exercises/ch27-function-sort/README.md) | Semantic function sorting — classify weak Hiphil verbs by function type (causative, declarative, factitive, simple) |
-| [exercises/ch27-qal-hiphil-contrast/](exercises/ch27-qal-hiphil-contrast/README.md) | Qal vs. Hiphil contrast drill (weak roots) — spot the difference in form and meaning |
-| [exercises/ch27-stem-id-drill/](exercises/ch27-stem-id-drill/README.md) | Stem identification drill — Qal/Niphal/Hiphil weak roots |
+| [exercises/ch27-passage-exercise/](exercises/ch27-passage-exercise/index.md) | Passage exercise — identify and parse weak Hiphil verbs in context |
+| [exercises/ch27-weak-form-id/](exercises/ch27-weak-form-id/index.md) | Weak form identification drill — classify Hiphil forms by root class |
+| [exercises/ch27-biconsig-drill/](exercises/ch27-biconsig-drill/index.md) | Biconsonantal and Geminate Hiphil drilling — distinguish the two near-identical classes |
+| [exercises/ch27-niphal-hiphil-contrast/](exercises/ch27-niphal-hiphil-contrast/index.md) | Niphal vs. Hiphil contrast — discriminate the two derived stems in form and meaning |
+| [exercises/ch27-function-sort/](exercises/ch27-function-sort/index.md) | Semantic function sorting — classify weak Hiphil verbs by function type (causative, declarative, factitive, simple) |
+| [exercises/ch27-qal-hiphil-contrast/](exercises/ch27-qal-hiphil-contrast/index.md) | Qal vs. Hiphil contrast drill (weak roots) — spot the difference in form and meaning |
+| [exercises/ch27-stem-id-drill/](exercises/ch27-stem-id-drill/index.md) | Stem identification drill — Qal/Niphal/Hiphil weak roots |
 
 ### Flashcards
 

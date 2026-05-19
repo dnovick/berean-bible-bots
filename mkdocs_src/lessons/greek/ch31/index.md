@@ -8,8 +8,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch31-subjunctive-parsing/](exercises/ch31-subjunctive-parsing/README.md) | 20-item drill: parse subjunctive forms, identify use (hortatory/purpose/conditional), translate |
-| [exercises/ch31-subjunctive-use-sort/](exercises/ch31-subjunctive-use-sort/README.md) | Subjunctive Use Classification Drill — 20 clauses: classify HO/PU/CO/IN/DE/FS, parse, translate |
+| [exercises/ch31-subjunctive-parsing/](exercises/ch31-subjunctive-parsing/index.md) | 20-item drill: parse subjunctive forms, identify use (hortatory/purpose/conditional), translate |
+| [exercises/ch31-subjunctive-use-sort/](exercises/ch31-subjunctive-use-sort/index.md) | Subjunctive Use Classification Drill — 20 clauses: classify HO/PU/CO/IN/DE/FS, parse, translate |
 
 ### Flashcards
 

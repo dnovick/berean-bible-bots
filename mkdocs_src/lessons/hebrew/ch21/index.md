@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch21-parsing-drill/](exercises/ch21-parsing-drill/README.md) | 25-item drill: Part A (emphatic pairs), Part B (standalone IA: imperatival and manner), Part C (discrimination: IA vs. IC vs. Imperative vs. Perfect vs. Imperfect) |
-| [exercises/ch21-passage-exercise/](exercises/ch21-passage-exercise/README.md) | 15-item passage exercise: Gen 2, Exo 3, Exo 20/Deu 5, Gen 8, Gen 26, Gen 44, Deu 6/8, Num 15 — all four IA functions in context |
-| [exercises/ch21-qal-ia-paradigm-drill/](exercises/ch21-qal-ia-paradigm-drill/README.md) | Paradigm drill — write the Qal Infinitive Absolute for 6 root classes from memory |
+| [exercises/ch21-parsing-drill/](exercises/ch21-parsing-drill/index.md) | 25-item drill: Part A (emphatic pairs), Part B (standalone IA: imperatival and manner), Part C (discrimination: IA vs. IC vs. Imperative vs. Perfect vs. Imperfect) |
+| [exercises/ch21-passage-exercise/](exercises/ch21-passage-exercise/index.md) | 15-item passage exercise: Gen 2, Exo 3, Exo 20/Deu 5, Gen 8, Gen 26, Gen 44, Deu 6/8, Num 15 — all four IA functions in context |
+| [exercises/ch21-qal-ia-paradigm-drill/](exercises/ch21-qal-ia-paradigm-drill/index.md) | Paradigm drill — write the Qal Infinitive Absolute for 6 root classes from memory |
 
 ### Flashcards
 

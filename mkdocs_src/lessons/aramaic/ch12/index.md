@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch12-verb-intro-drill/](exercises/ch12-verb-intro-drill/README.md) | Stem identification and root recognition drill from Daniel and Ezra |
+| [exercises/ch12-verb-intro-drill/](exercises/ch12-verb-intro-drill/index.md) | Stem identification and root recognition drill from Daniel and Ezra |
 
 ### Notebooks
 
@@ -466,4 +466,4 @@ The exercise for this chapter introduces the ten core vocabulary verbs in contex
 
 | Resource | Description |
 |---|---|
-| [Stem Identification Drill](exercises/ch12-verb-intro-drill/README.md) | Stem identification and root recognition drill from Daniel and Ezra |
+| [Stem Identification Drill](exercises/ch12-verb-intro-drill/index.md) | Stem identification and root recognition drill from Daniel and Ezra |

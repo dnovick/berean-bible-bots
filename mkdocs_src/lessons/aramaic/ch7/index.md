@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch7-preposition-drill/](exercises/ch7-preposition-drill/README.md) | 20-item preposition identification and translation drill |
+| [exercises/ch7-preposition-drill/](exercises/ch7-preposition-drill/index.md) | 20-item preposition identification and translation drill |
 
 ### Notebooks
 
@@ -446,4 +446,4 @@ The determined ending ָא is simply retained. The prefix is added before it. Th
 
 | Resource | Description |
 |---|---|
-| [Preposition Drill](exercises/ch7-preposition-drill/README.md) | 20-item drill — identify the preposition/conjunction and give its gloss, parse the noun phrase, and translate |
+| [Preposition Drill](exercises/ch7-preposition-drill/index.md) | 20-item drill — identify the preposition/conjunction and give its gloss, parse the noun phrase, and translate |

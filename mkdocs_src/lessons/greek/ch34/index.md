@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch34-didomi-parsing/](exercises/ch34-didomi-parsing/README.md) | 20-item drill: parse δίδωμι and its compounds in all indicative forms |
+| [exercises/ch34-didomi-parsing/](exercises/ch34-didomi-parsing/index.md) | 20-item drill: parse δίδωμι and its compounds in all indicative forms |
 
 ### Flashcards
 

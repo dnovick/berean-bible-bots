@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch11-pronoun-parsing/](exercises/ch11-pronoun-parsing/README.md) | 20-item parsing drill — person, case, and number for 1st/2nd person pronoun forms, plus translation |
+| [exercises/ch11-pronoun-parsing/](exercises/ch11-pronoun-parsing/index.md) | 20-item parsing drill — person, case, and number for 1st/2nd person pronoun forms, plus translation |
 
 ### Flashcards
 

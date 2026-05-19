@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch13-demonstrative-parsing/](exercises/ch13-demonstrative-parsing/README.md) | 20-item drill: parse demonstrative forms and identify adjective vs. pronoun use |
+| [exercises/ch13-demonstrative-parsing/](exercises/ch13-demonstrative-parsing/index.md) | 20-item drill: parse demonstrative forms and identify adjective vs. pronoun use |
 
 ### Flashcards
 

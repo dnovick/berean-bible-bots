@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch25-perfect-parsing/](exercises/ch25-perfect-parsing/README.md) | Perfect Indicative Parsing Drill — 20 forms to parse |
+| [exercises/ch25-perfect-parsing/](exercises/ch25-perfect-parsing/index.md) | Perfect Indicative Parsing Drill — 20 forms to parse |
 
 ### Flashcards
 

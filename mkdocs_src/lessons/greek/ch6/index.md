@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch6-nom-acc-parsing/](exercises/ch6-nom-acc-parsing/README.md) | 20-item parsing drill — identify case, number, gender, lexical form, and function for 2nd-declension nouns and articles |
+| [exercises/ch6-nom-acc-parsing/](exercises/ch6-nom-acc-parsing/index.md) | 20-item parsing drill — identify case, number, gender, lexical form, and function for 2nd-declension nouns and articles |
 
 ### Flashcards
 

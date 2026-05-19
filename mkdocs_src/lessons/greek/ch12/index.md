@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch12-autos-parsing/](exercises/ch12-autos-parsing/README.md) | 20-item drill — parse αὐτός forms and identify which of the three uses applies |
+| [exercises/ch12-autos-parsing/](exercises/ch12-autos-parsing/index.md) | 20-item drill — parse αὐτός forms and identify which of the three uses applies |
 
 ### Flashcards
 

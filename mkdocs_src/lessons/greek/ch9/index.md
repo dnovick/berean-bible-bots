@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch9-adjective-parsing/](exercises/ch9-adjective-parsing/README.md) | 20-item parsing drill — case, number, gender, and position (attributive/predicate/substantival) for adjective phrases |
+| [exercises/ch9-adjective-parsing/](exercises/ch9-adjective-parsing/index.md) | 20-item parsing drill — case, number, gender, and position (attributive/predicate/substantival) for adjective phrases |
 
 ### Flashcards
 

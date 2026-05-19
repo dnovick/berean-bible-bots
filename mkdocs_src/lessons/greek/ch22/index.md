@@ -8,8 +8,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch22-second-aorist-parsing/](exercises/ch22-second-aorist-parsing/README.md) | Second Aorist Parsing Drill — 20 forms to parse |
-| [exercises/ch22-aorist-contrast/](exercises/ch22-aorist-contrast/README.md) | First vs. Second Aorist Contrast Drill — 20 items: classify type, parse PGN, lexical form, translate |
+| [exercises/ch22-second-aorist-parsing/](exercises/ch22-second-aorist-parsing/index.md) | Second Aorist Parsing Drill — 20 forms to parse |
+| [exercises/ch22-aorist-contrast/](exercises/ch22-aorist-contrast/index.md) | First vs. Second Aorist Contrast Drill — 20 items: classify type, parse PGN, lexical form, translate |
 
 ### Flashcards
 

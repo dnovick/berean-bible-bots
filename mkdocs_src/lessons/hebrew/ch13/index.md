@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch13-parsing-drill/](exercises/ch13-parsing-drill/README.md) | 25-item parsing drill — identify PGN and root for each Qal Perfect form |
-| [exercises/ch13-passage-exercise/](exercises/ch13-passage-exercise/README.md) | 15 Qal Perfect verbs from early Genesis to parse (PGN + root) and identify usage type |
-| [exercises/ch13-qal-perfect-paradigm-drill/](exercises/ch13-qal-perfect-paradigm-drill/README.md) | Paradigm drill — write all 9 inflected Qal Perfect forms of קטל from memory |
+| [exercises/ch13-parsing-drill/](exercises/ch13-parsing-drill/index.md) | 25-item parsing drill — identify PGN and root for each Qal Perfect form |
+| [exercises/ch13-passage-exercise/](exercises/ch13-passage-exercise/index.md) | 15 Qal Perfect verbs from early Genesis to parse (PGN + root) and identify usage type |
+| [exercises/ch13-qal-perfect-paradigm-drill/](exercises/ch13-qal-perfect-paradigm-drill/index.md) | Paradigm drill — write all 9 inflected Qal Perfect forms of קטל from memory |
 
 ### Flashcards
 
@@ -266,8 +266,8 @@ Qal examples of Prophetic Perfect are most common in the Prophets.
 | Resource | Description |
 |---|---|
 | [Morphology Flashcard Deck](ch13-morphology-deck.md) | Qal Perfect forms across all 9 PGN cells for 3 high-frequency roots. Import into Anki for spaced-repetition drilling. |
-| [Passage Exercise — Genesis 1–4](exercises/ch13-passage-exercise/README.md) | 15 Qal Perfect verbs from early Genesis to parse (PGN + root) and identify usage type. Answer key included. |
-| [Parsing Drill](exercises/ch13-parsing-drill/README.md) | 25 pointed Hebrew forms — identify PGN and root for each Qal Perfect form. |
+| [Passage Exercise — Genesis 1–4](exercises/ch13-passage-exercise/index.md) | 15 Qal Perfect verbs from early Genesis to parse (PGN + root) and identify usage type. Answer key included. |
+| [Parsing Drill](exercises/ch13-parsing-drill/index.md) | 25 pointed Hebrew forms — identify PGN and root for each Qal Perfect form. |
 
 ---
 

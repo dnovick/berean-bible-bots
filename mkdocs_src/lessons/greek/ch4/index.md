@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch4-syllable-drill/](exercises/ch4-syllable-drill/README.md) | 20-item syllabification practice — divide Greek words into syllables and identify the accented syllable |
+| [exercises/ch4-syllable-drill/](exercises/ch4-syllable-drill/index.md) | 20-item syllabification practice — divide Greek words into syllables and identify the accented syllable |
 
 ### Flashcards
 

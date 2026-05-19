@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch8-pronoun-identification/](exercises/ch8-pronoun-identification/README.md) | 25-item identification drill — classify, parse, and translate Hebrew pronouns (Personal / Demonstrative / Relative / Interrogative) |
+| [exercises/ch8-pronoun-identification/](exercises/ch8-pronoun-identification/index.md) | 25-item identification drill — classify, parse, and translate Hebrew pronouns (Personal / Demonstrative / Relative / Interrogative) |
 
 ### Flashcards
 
@@ -250,4 +250,4 @@ Both מִי and מָה can also function as **exclamations**:
 
 | Resource | Description |
 |---|---|
-| [Pronoun Identification Drill](exercises/ch8-pronoun-identification/README.md) | 25-item drill — classify pronoun type, parse PGN (where applicable), and translate. |
+| [Pronoun Identification Drill](exercises/ch8-pronoun-identification/index.md) | 25-item drill — classify pronoun type, parse PGN (where applicable), and translate. |

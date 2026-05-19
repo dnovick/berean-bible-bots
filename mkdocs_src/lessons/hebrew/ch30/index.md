@@ -14,11 +14,11 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch30-passage-exercise/](exercises/ch30-passage-exercise/README.md) | Passage exercise — identify and parse Piel Strong verbs in Torah narrative |
-| [exercises/ch30-function-sort/](exercises/ch30-function-sort/README.md) | Semantic function sorting — classify 25 Piel forms as I / F / D / DN / SA |
-| [exercises/ch30-qal-piel-contrast/](exercises/ch30-qal-piel-contrast/README.md) | Qal vs. Piel contrast drill — parse 25 forms and identify stem, noting meaning shift |
-| [exercises/ch30-piel-paradigm-drill/](exercises/ch30-piel-paradigm-drill/README.md) | Paradigm drill — write all 30 inflected forms of דבר (Piel) from memory |
-| [exercises/ch30-stem-id-drill/](exercises/ch30-stem-id-drill/README.md) | Stem identification drill — Qal/Niphal/Piel strong roots |
+| [exercises/ch30-passage-exercise/](exercises/ch30-passage-exercise/index.md) | Passage exercise — identify and parse Piel Strong verbs in Torah narrative |
+| [exercises/ch30-function-sort/](exercises/ch30-function-sort/index.md) | Semantic function sorting — classify 25 Piel forms as I / F / D / DN / SA |
+| [exercises/ch30-qal-piel-contrast/](exercises/ch30-qal-piel-contrast/index.md) | Qal vs. Piel contrast drill — parse 25 forms and identify stem, noting meaning shift |
+| [exercises/ch30-piel-paradigm-drill/](exercises/ch30-piel-paradigm-drill/index.md) | Paradigm drill — write all 30 inflected forms of דבר (Piel) from memory |
+| [exercises/ch30-stem-id-drill/](exercises/ch30-stem-id-drill/index.md) | Stem identification drill — Qal/Niphal/Piel strong roots |
 
 ### Flashcards
 

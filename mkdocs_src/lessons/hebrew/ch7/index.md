@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch7-adjective-usage/](exercises/ch7-adjective-usage/README.md) | 25-item adjective usage drill — identify attributive / predicate / substantival use, parse gender and number agreement, translate |
+| [exercises/ch7-adjective-usage/](exercises/ch7-adjective-usage/index.md) | 25-item adjective usage drill — identify attributive / predicate / substantival use, parse gender and number agreement, translate |
 
 ### Flashcards
 
@@ -263,4 +263,4 @@ Hebrew uses one of two constructions for the superlative:
 
 | Resource | Description |
 |---|---|
-| [Adjective Usage Drill](exercises/ch7-adjective-usage/README.md) | 25-item exercise — identify use type, parse agreement, translate. Covers all three uses plus comparative/superlative. |
+| [Adjective Usage Drill](exercises/ch7-adjective-usage/index.md) | 25-item exercise — identify use type, parse agreement, translate. Covers all three uses plus comparative/superlative. |

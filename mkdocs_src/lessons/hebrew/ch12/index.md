@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch12-verb-overview/](exercises/ch12-verb-overview/README.md) | 20-item conceptual overview — stem identification, active/passive/reflexive classification, and root recognition |
+| [exercises/ch12-verb-overview/](exercises/ch12-verb-overview/index.md) | 20-item conceptual overview — stem identification, active/passive/reflexive classification, and root recognition |
 
 ### Flashcards
 

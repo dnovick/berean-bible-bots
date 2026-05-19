@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch10-third-decl-parsing/](exercises/ch10-third-decl-parsing/README.md) | 20-item parsing drill — declension, case, number, gender, and lexical form for 3rd-declension forms |
+| [exercises/ch10-third-decl-parsing/](exercises/ch10-third-decl-parsing/index.md) | 20-item parsing drill — declension, case, number, gender, and lexical form for 3rd-declension forms |
 
 ### Flashcards
 

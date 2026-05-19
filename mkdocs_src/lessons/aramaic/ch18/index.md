@@ -15,8 +15,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch18-passive-stems-drill/](exercises/ch18-passive-stems-drill/README.md) | 20-item Peil and Ithpeel stem identification drill |
-| [exercises/ch18-stem-contrast/](exercises/ch18-stem-contrast/README.md) | Peil vs. Ithpeel Stem Contrast Drill — 20 items: classify stem by CvCīC pattern vs. אִתְ/יִתְ prefix |
+| [exercises/ch18-passive-stems-drill/](exercises/ch18-passive-stems-drill/index.md) | 20-item Peil and Ithpeel stem identification drill |
+| [exercises/ch18-stem-contrast/](exercises/ch18-stem-contrast/index.md) | Peil vs. Ithpeel Stem Contrast Drill — 20 items: classify stem by CvCīC pattern vs. אִתְ/יִתְ prefix |
 
 ### Notebooks
 
@@ -530,4 +530,4 @@ The exercise for this chapter presents twenty verb forms from the Peil and Ithpe
 
 | Resource | Description |
 |---|---|
-| [Peil and Ithpeel Stem Drill](exercises/ch18-passive-stems-drill/README.md) | 20-item Peil and Ithpeel identification drill — stem, conjugation, root, translation |
+| [Peil and Ithpeel Stem Drill](exercises/ch18-passive-stems-drill/index.md) | 20-item Peil and Ithpeel identification drill — stem, conjugation, root, translation |

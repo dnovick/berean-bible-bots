@@ -23,7 +23,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch14-peal-imperfect-drill/](exercises/ch14-peal-imperfect-drill/README.md) | 20-item Peal imperfect parsing drill |
+| [exercises/ch14-peal-imperfect-drill/](exercises/ch14-peal-imperfect-drill/index.md) | 20-item Peal imperfect parsing drill |
 
 ### Notebooks
 
@@ -488,4 +488,4 @@ The exercise for this chapter presents twenty Peal imperfect verb forms drawn fr
 
 | Resource | Description |
 |---|---|
-| [Peal Imperfect Parsing Drill](exercises/ch14-peal-imperfect-drill/README.md) | 20-item Peal imperfect parsing drill — root identification, PGN, translation |
+| [Peal Imperfect Parsing Drill](exercises/ch14-peal-imperfect-drill/index.md) | 20-item Peal imperfect parsing drill — root identification, PGN, translation |

@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch5-article-and-vav/](exercises/ch5-article-and-vav/README.md) | 25-item drill — identify the definite article, the conjunction ו, their specific forms, and translate each Hebrew phrase |
+| [exercises/ch5-article-and-vav/](exercises/ch5-article-and-vav/index.md) | 25-item drill — identify the definite article, the conjunction ו, their specific forms, and translate each Hebrew phrase |
 
 ### Flashcards
 
@@ -246,4 +246,4 @@ The definite article and the conjunction ו are the two most frequent "words" (s
 
 | Resource | Description |
 |---|---|
-| [Article and Vav Drill](exercises/ch5-article-and-vav/README.md) | 25 Hebrew phrases — identify article presence/form and conjunction presence/form; translate each phrase |
+| [Article and Vav Drill](exercises/ch5-article-and-vav/index.md) | 25 Hebrew phrases — identify article presence/form and conjunction presence/form; translate each phrase |

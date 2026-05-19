@@ -149,10 +149,24 @@ def build_chapter(
     dst_dir = MKDOCS_SRC / "lessons" / lang / ch
     dst_dir.mkdir(parents=True, exist_ok=True)
 
-    # Copy README.md → index.md
+    # Copy README.md → index.md, rewriting exercise links to point at index.md
     readme = src_dir / "README.md"
     if readme.exists():
-        shutil.copy(readme, dst_dir / "index.md")
+        content = readme.read_text(encoding="utf-8")
+        # Rewrite  exercises/<name>/README.md  →  exercises/<name>/index.md
+        content = re.sub(
+            r"(exercises/[^)]+/)README\.md",
+            r"\1index.md",
+            content,
+        )
+        # Rewrite bare  exercises/<name>/  →  exercises/<name>/index.md
+        # (bare directory links with no explicit file)
+        content = re.sub(
+            r"\((exercises/[^)]+/)\)",
+            r"(\1index.md)",
+            content,
+        )
+        (dst_dir / "index.md").write_text(content, encoding="utf-8")
 
     # Copy paradigm / other .md files (not README, not deck files)
     for md in src_dir.glob("*.md"):

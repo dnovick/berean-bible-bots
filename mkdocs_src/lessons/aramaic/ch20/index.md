@@ -15,8 +15,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch20-hithpaal-drill/](exercises/ch20-hithpaal-drill/README.md) | 20-item Hithpaal/Ithpaal stem parsing drill |
-| [exercises/ch20-hithpaal-function-sort/](exercises/ch20-hithpaal-function-sort/README.md) | Hithpaal Semantic Function Sort — 20 items: classify RF / IT / ES, parse, translate |
+| [exercises/ch20-hithpaal-drill/](exercises/ch20-hithpaal-drill/index.md) | 20-item Hithpaal/Ithpaal stem parsing drill |
+| [exercises/ch20-hithpaal-function-sort/](exercises/ch20-hithpaal-function-sort/index.md) | Hithpaal Semantic Function Sort — 20 items: classify RF / IT / ES, parse, translate |
 
 ### Notebooks
 

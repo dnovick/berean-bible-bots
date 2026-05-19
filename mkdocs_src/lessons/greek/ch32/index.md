@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch32-infinitive-parsing/](exercises/ch32-infinitive-parsing/README.md) | 20-item drill: parse infinitives, identify their use, translate |
+| [exercises/ch32-infinitive-parsing/](exercises/ch32-infinitive-parsing/index.md) | 20-item drill: parse infinitives, identify their use, translate |
 
 ### Flashcards
 

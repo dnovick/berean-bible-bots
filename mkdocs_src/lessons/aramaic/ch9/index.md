@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch9-pronoun-drill/](exercises/ch9-pronoun-drill/README.md) | Pronoun identification and translation drill |
+| [exercises/ch9-pronoun-drill/](exercises/ch9-pronoun-drill/index.md) | Pronoun identification and translation drill |
 
 ### Notebooks
 
@@ -507,4 +507,4 @@ The pronoun drill exercise presents forms drawn from Daniel and Ezra. For each i
 
 | Resource | Description |
 |---|---|
-| [Pronoun Drill](exercises/ch9-pronoun-drill/README.md) | Pronoun identification and translation drill from Daniel and Ezra |
+| [Pronoun Drill](exercises/ch9-pronoun-drill/index.md) | Pronoun identification and translation drill from Daniel and Ezra |

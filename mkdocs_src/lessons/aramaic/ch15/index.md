@@ -23,7 +23,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch15-peal-imperative-drill/](exercises/ch15-peal-imperative-drill/README.md) | 20-item Peal imperative parsing drill |
+| [exercises/ch15-peal-imperative-drill/](exercises/ch15-peal-imperative-drill/index.md) | 20-item Peal imperative parsing drill |
 
 ### Notebooks
 
@@ -468,4 +468,4 @@ The exercise for this chapter presents twenty Peal imperative verb forms drawn f
 
 | Resource | Description |
 |---|---|
-| [Peal Imperative Parsing Drill](exercises/ch15-peal-imperative-drill/README.md) | 20-item Peal imperative parsing drill — root identification, PGN, translation |
+| [Peal Imperative Parsing Drill](exercises/ch15-peal-imperative-drill/index.md) | 20-item Peal imperative parsing drill — root identification, PGN, translation |

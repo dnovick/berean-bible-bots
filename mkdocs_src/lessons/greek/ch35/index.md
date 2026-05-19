@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch35-conditionals-drill/](exercises/ch35-conditionals-drill/README.md) | 20-item drill: identify conditional type, parse relevant verb forms, translate |
+| [exercises/ch35-conditionals-drill/](exercises/ch35-conditionals-drill/index.md) | 20-item drill: identify conditional type, parse relevant verb forms, translate |
 
 ### Flashcards
 

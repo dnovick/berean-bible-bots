@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch20-parsing-drill/](exercises/ch20-parsing-drill/README.md) | 25-item drill: Parts A/B (IC recognition by root class and preposition) and Part C (disambiguation vs. Imperative, Imperfect, Perfect) |
-| [exercises/ch20-passage-exercise/](exercises/ch20-passage-exercise/README.md) | 15-item passage exercise: Gen 2, Gen 11, Gen 19, Gen 37, Gen 39, Exo 3, Exo 19, Ecc 3, Gen 45 — full range of IC functions in context |
-| [exercises/ch20-qal-ic-paradigm-drill/](exercises/ch20-qal-ic-paradigm-drill/README.md) | Paradigm drill — write the Infinitive Construct and לְ form for 6 root classes |
+| [exercises/ch20-parsing-drill/](exercises/ch20-parsing-drill/index.md) | 25-item drill: Parts A/B (IC recognition by root class and preposition) and Part C (disambiguation vs. Imperative, Imperfect, Perfect) |
+| [exercises/ch20-passage-exercise/](exercises/ch20-passage-exercise/index.md) | 15-item passage exercise: Gen 2, Gen 11, Gen 19, Gen 37, Gen 39, Exo 3, Exo 19, Ecc 3, Gen 45 — full range of IC functions in context |
+| [exercises/ch20-qal-ic-paradigm-drill/](exercises/ch20-qal-ic-paradigm-drill/index.md) | Paradigm drill — write the Infinitive Construct and לְ form for 6 root classes |
 
 ### Flashcards
 

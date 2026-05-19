@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch23-first-aorist-parsing/](exercises/ch23-first-aorist-parsing/README.md) | First Aorist Parsing Drill — 20 forms to parse |
+| [exercises/ch23-first-aorist-parsing/](exercises/ch23-first-aorist-parsing/index.md) | First Aorist Parsing Drill — 20 forms to parse |
 
 ### Flashcards
 

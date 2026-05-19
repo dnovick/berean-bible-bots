@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/README.md) | 20-item vowel identification drill — vowel names, classes, length, and matres lectionis |
+| [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/index.md) | 20-item vowel identification drill — vowel names, classes, length, and matres lectionis |
 
 ---
 

@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch9-suffix-parsing/](exercises/ch9-suffix-parsing/README.md) | 25-item parsing drill — identify base word, suffix, PGN, and translation for nouns and prepositions with pronominal suffixes |
+| [exercises/ch9-suffix-parsing/](exercises/ch9-suffix-parsing/index.md) | 25-item parsing drill — identify base word, suffix, PGN, and translation for nouns and prepositions with pronominal suffixes |
 
 ### Flashcards
 

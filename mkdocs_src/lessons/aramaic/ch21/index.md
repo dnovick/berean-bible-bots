@@ -15,8 +15,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch21-haphel-stem-drill/](exercises/ch21-haphel-stem-drill/README.md) | 20-item Haphel stem parsing drill |
-| [exercises/ch21-haphel-peal-contrast/](exercises/ch21-haphel-peal-contrast/README.md) | Haphel vs. Peal Contrast Drill — 20 items: identify causative הַ/הוֹ prefix vs. simple Peal, parse, translate |
+| [exercises/ch21-haphel-stem-drill/](exercises/ch21-haphel-stem-drill/index.md) | 20-item Haphel stem parsing drill |
+| [exercises/ch21-haphel-peal-contrast/](exercises/ch21-haphel-peal-contrast/index.md) | Haphel vs. Peal Contrast Drill — 20 items: identify causative הַ/הוֹ prefix vs. simple Peal, parse, translate |
 
 ### Notebooks
 

@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch18-parsing-drill/](exercises/ch18-parsing-drill/README.md) | 35-item drill: strong and weak Qal Imperative parsing, plus Imperative/Imperfect/Jussive disambiguation |
-| [exercises/ch18-passage-exercise/](exercises/ch18-passage-exercise/README.md) | 16-item passage exercise: Gen 12, Gen 22, Deu 6, Gen 1/Exo 3, Num 13 — imperatives in narrative and law |
-| [exercises/ch18-qal-imperative-paradigm-drill/](exercises/ch18-qal-imperative-paradigm-drill/README.md) | Paradigm drill — write all 4 Qal Imperative forms of שמר from memory |
+| [exercises/ch18-parsing-drill/](exercises/ch18-parsing-drill/index.md) | 35-item drill: strong and weak Qal Imperative parsing, plus Imperative/Imperfect/Jussive disambiguation |
+| [exercises/ch18-passage-exercise/](exercises/ch18-passage-exercise/index.md) | 16-item passage exercise: Gen 12, Gen 22, Deu 6, Gen 1/Exo 3, Num 13 — imperatives in narrative and law |
+| [exercises/ch18-qal-imperative-paradigm-drill/](exercises/ch18-qal-imperative-paradigm-drill/index.md) | Paradigm drill — write all 4 Qal Imperative forms of שמר from memory |
 
 ### Flashcards
 

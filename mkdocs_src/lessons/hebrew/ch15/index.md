@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch15-parsing-drill/](exercises/ch15-parsing-drill/README.md) | 25 pointed forms — identify prefix, PGN, and root for each Qal Imperfect |
-| [exercises/ch15-passage-exercise/](exercises/ch15-passage-exercise/README.md) | 15 Qal Imperfect verbs from the burning bush narrative to parse (PGN + root) and identify usage type |
-| [exercises/ch15-qal-imperfect-paradigm-drill/](exercises/ch15-qal-imperfect-paradigm-drill/README.md) | Paradigm drill — write all 10 Qal Imperfect forms of שמר from memory |
+| [exercises/ch15-parsing-drill/](exercises/ch15-parsing-drill/index.md) | 25 pointed forms — identify prefix, PGN, and root for each Qal Imperfect |
+| [exercises/ch15-passage-exercise/](exercises/ch15-passage-exercise/index.md) | 15 Qal Imperfect verbs from the burning bush narrative to parse (PGN + root) and identify usage type |
+| [exercises/ch15-qal-imperfect-paradigm-drill/](exercises/ch15-qal-imperfect-paradigm-drill/index.md) | Paradigm drill — write all 10 Qal Imperfect forms of שמר from memory |
 
 ### Flashcards
 
@@ -280,8 +280,8 @@ prohibition — a categorical, ongoing prohibition, not a one-time command.
 | Resource | Description |
 |---|---|
 | [Morphology Flashcard Deck](ch15-morphology-deck.md) | Qal Imperfect forms across all 14 PGN cells for 3 high-frequency roots. |
-| [Passage Exercise — Exodus 3–4](exercises/ch15-passage-exercise/README.md) | 15 Qal Imperfect verbs from the burning bush narrative to parse (PGN + root) and identify usage type. |
-| [Parsing Drill](exercises/ch15-parsing-drill/README.md) | 25 pointed forms — identify prefix, PGN, and root for each Qal Imperfect. |
+| [Passage Exercise — Exodus 3–4](exercises/ch15-passage-exercise/index.md) | 15 Qal Imperfect verbs from the burning bush narrative to parse (PGN + root) and identify usage type. |
+| [Parsing Drill](exercises/ch15-parsing-drill/index.md) | 25 pointed forms — identify prefix, PGN, and root for each Qal Imperfect. |
 
 ---
 

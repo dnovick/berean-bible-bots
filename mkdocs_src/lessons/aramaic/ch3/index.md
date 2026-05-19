@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch3-syllabification-drill/](exercises/ch3-syllabification-drill/README.md) | 20-item syllable division and accent drill — open/closed syllables, stress rules, and vowel reduction patterns |
+| [exercises/ch3-syllabification-drill/](exercises/ch3-syllabification-drill/index.md) | 20-item syllable division and accent drill — open/closed syllables, stress rules, and vowel reduction patterns |
 
 ---
 

@@ -8,8 +8,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch23-clause-analysis/](exercises/ch23-clause-analysis/README.md) | 20-item clause analysis drill: Part A (VSO verbal), Part B (fronted elements), Part C (verbless), Part D (waw-disjunctive), Part E (mixed) |
-| [exercises/ch23-passage-exercise/](exercises/ch23-passage-exercise/README.md) | 15-item passage exercise: Gen 1:1–4, Gen 3:1–5, Deu 6:4–5, Gen 22:1–2, Jdg 16:20 / Gen 4:9 / Exo 20:2 — all five clause types in context |
+| [exercises/ch23-clause-analysis/](exercises/ch23-clause-analysis/index.md) | 20-item clause analysis drill: Part A (VSO verbal), Part B (fronted elements), Part C (verbless), Part D (waw-disjunctive), Part E (mixed) |
+| [exercises/ch23-passage-exercise/](exercises/ch23-passage-exercise/index.md) | 15-item passage exercise: Gen 1:1–4, Gen 3:1–5, Deu 6:4–5, Gen 22:1–2, Jdg 16:20 / Gen 4:9 / Exo 20:2 — all five clause types in context |
 
 ### Flashcards
 

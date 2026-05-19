@@ -14,11 +14,11 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch26-passage-exercise/](exercises/ch26-passage-exercise/README.md) | "Spot the Hiphil" — 16 verbs from the flood narrative to parse and classify by function type |
-| [exercises/ch26-function-sort/](exercises/ch26-function-sort/README.md) | Semantic function sorting — classify Hiphil verbs by function type (causative, declarative, factitive, simple) |
-| [exercises/ch26-qal-hiphil-contrast/](exercises/ch26-qal-hiphil-contrast/README.md) | Qal vs. Hiphil contrast — spot the difference in form and meaning |
-| [exercises/ch26-hiphil-paradigm-drill/](exercises/ch26-hiphil-paradigm-drill/README.md) | Paradigm drill — write all 30 inflected forms of קטל (Hiphil) from memory |
-| [exercises/ch26-stem-id-drill/](exercises/ch26-stem-id-drill/README.md) | Stem identification drill — 24 forms from Qal/Niphal/Hiphil; identify stem, conjugation, PGN, and root |
+| [exercises/ch26-passage-exercise/](exercises/ch26-passage-exercise/index.md) | "Spot the Hiphil" — 16 verbs from the flood narrative to parse and classify by function type |
+| [exercises/ch26-function-sort/](exercises/ch26-function-sort/index.md) | Semantic function sorting — classify Hiphil verbs by function type (causative, declarative, factitive, simple) |
+| [exercises/ch26-qal-hiphil-contrast/](exercises/ch26-qal-hiphil-contrast/index.md) | Qal vs. Hiphil contrast — spot the difference in form and meaning |
+| [exercises/ch26-hiphil-paradigm-drill/](exercises/ch26-hiphil-paradigm-drill/index.md) | Paradigm drill — write all 30 inflected forms of קטל (Hiphil) from memory |
+| [exercises/ch26-stem-id-drill/](exercises/ch26-stem-id-drill/index.md) | Stem identification drill — 24 forms from Qal/Niphal/Hiphil; identify stem, conjugation, PGN, and root |
 
 ### Flashcards
 

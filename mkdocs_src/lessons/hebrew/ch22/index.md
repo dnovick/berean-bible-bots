@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch22-parsing-drill/](exercises/ch22-parsing-drill/README.md) | 32-item drill: Part A (strong active ptc., all inflections), Part B (weak root active ptc.), Part C (passive ptc.), Part D (discrimination vs. Perfect, Imperfect, IC, IA) |
-| [exercises/ch22-passage-exercise/](exercises/ch22-passage-exercise/README.md) | 15-item passage exercise: Gen 3/4/14/18/37, Exo 3/6, Lev 2/25, Num 14/27, Deu 9 — all four participle functions across Torah |
-| [exercises/ch22-qal-participle-paradigm-drill/](exercises/ch22-qal-participle-paradigm-drill/README.md) | Paradigm drill — write all 8 Qal Participle forms of שמר (active and passive) from memory |
+| [exercises/ch22-parsing-drill/](exercises/ch22-parsing-drill/index.md) | 32-item drill: Part A (strong active ptc., all inflections), Part B (weak root active ptc.), Part C (passive ptc.), Part D (discrimination vs. Perfect, Imperfect, IC, IA) |
+| [exercises/ch22-passage-exercise/](exercises/ch22-passage-exercise/index.md) | 15-item passage exercise: Gen 3/4/14/18/37, Exo 3/6, Lev 2/25, Num 14/27, Deu 9 — all four participle functions across Torah |
+| [exercises/ch22-qal-participle-paradigm-drill/](exercises/ch22-qal-participle-paradigm-drill/index.md) | Paradigm drill — write all 8 Qal Participle forms of שמר (active and passive) from memory |
 
 ### Flashcards
 

@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/README.md) | 22-item letter identification drill — all Aramaic letters, gutturals, emphatics, and comparison with Hebrew equivalents |
+| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/index.md) | 22-item letter identification drill — all Aramaic letters, gutturals, emphatics, and comparison with Hebrew equivalents |
 
 ---
 

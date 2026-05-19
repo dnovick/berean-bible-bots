@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch19-parsing-drill/](exercises/ch19-parsing-drill/README.md) | 25-item drill: Perfect, Imperfect (energic nun), Wayyiqtol, Imperative, and Inf.Const. + suffix forms |
-| [exercises/ch19-passage-exercise/](exercises/ch19-passage-exercise/README.md) | 14-item passage exercise: Gen 28, Gen 45, Psa 23, Gen 39, Psa 16/Deu 31 — suffixes on verbs in context |
-| [exercises/ch19-verb-suffix-paradigm-drill/](exercises/ch19-verb-suffix-paradigm-drill/README.md) | Paradigm drill — write 9 forms of שמר with object suffixes from memory |
+| [exercises/ch19-parsing-drill/](exercises/ch19-parsing-drill/index.md) | 25-item drill: Perfect, Imperfect (energic nun), Wayyiqtol, Imperative, and Inf.Const. + suffix forms |
+| [exercises/ch19-passage-exercise/](exercises/ch19-passage-exercise/index.md) | 14-item passage exercise: Gen 28, Gen 45, Psa 23, Gen 39, Psa 16/Deu 31 — suffixes on verbs in context |
+| [exercises/ch19-verb-suffix-paradigm-drill/](exercises/ch19-verb-suffix-paradigm-drill/index.md) | Paradigm drill — write 9 forms of שמר with object suffixes from memory |
 
 ### Flashcards
 

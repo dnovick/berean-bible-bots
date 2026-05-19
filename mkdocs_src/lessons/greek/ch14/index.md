@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch14-relative-parsing/](exercises/ch14-relative-parsing/README.md) | 20-item drill: parse relative pronoun, identify antecedent, and translate relative clause |
+| [exercises/ch14-relative-parsing/](exercises/ch14-relative-parsing/index.md) | 20-item drill: parse relative pronoun, identify antecedent, and translate relative clause |
 
 ### Flashcards
 

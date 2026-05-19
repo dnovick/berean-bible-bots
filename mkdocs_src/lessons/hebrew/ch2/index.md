@@ -12,7 +12,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/README.md) | 25-item vowel identification drill — all five vowel classes, both sheva types, all three hatef shevas, matres lectionis, and dagesh forte |
+| [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/index.md) | 25-item vowel identification drill — all five vowel classes, both sheva types, all three hatef shevas, matres lectionis, and dagesh forte |
 
 ### Flashcards
 
@@ -292,4 +292,4 @@ A dot inside a Hebrew letter is called a **dagesh** (דָּגֵשׁ). However, t
 
 | Resource | Description |
 |---|---|
-| [Vowel Identification Exercise](exercises/ch2-vowel-identification/README.md) | 25-item identification drill — all five vowel classes, both sheva types, all three hatef shevas, matres lectionis, and dagesh forte. Includes HTML interactive version with per-item answer reveal. |
+| [Vowel Identification Exercise](exercises/ch2-vowel-identification/index.md) | 25-item identification drill — all five vowel classes, both sheva types, all three hatef shevas, matres lectionis, and dagesh forte. Includes HTML interactive version with per-item answer reveal. |

@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch10-construct-chain/](exercises/ch10-construct-chain/README.md) | 25-item drill — identify construct noun, absolute noun, definiteness, and translation for each chain |
+| [exercises/ch10-construct-chain/](exercises/ch10-construct-chain/index.md) | 25-item drill — identify construct noun, absolute noun, definiteness, and translation for each chain |
 
 ### Flashcards
 
@@ -220,4 +220,4 @@ These chains appear hundreds — or thousands — of times in the Hebrew Bible. 
 
 | Resource | Description |
 |---|---|
-| [Construct Chain Drill](exercises/ch10-construct-chain/README.md) | 25-item drill identifying construct noun, absolute noun, definiteness, and translation |
+| [Construct Chain Drill](exercises/ch10-construct-chain/index.md) | 25-item drill identifying construct noun, absolute noun, definiteness, and translation |

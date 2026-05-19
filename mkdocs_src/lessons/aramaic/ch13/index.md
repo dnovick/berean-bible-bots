@@ -23,8 +23,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch13-peal-perfect-drill/](exercises/ch13-peal-perfect-drill/README.md) | 20-item Peal perfect parsing drill |
-| [exercises/ch13-peal-contrast/](exercises/ch13-peal-contrast/README.md) | Peal Perfect vs. Imperfect Contrast Drill — 20 items: classify conjugation, parse PGN, root, translate |
+| [exercises/ch13-peal-perfect-drill/](exercises/ch13-peal-perfect-drill/index.md) | 20-item Peal perfect parsing drill |
+| [exercises/ch13-peal-contrast/](exercises/ch13-peal-contrast/index.md) | Peal Perfect vs. Imperfect Contrast Drill — 20 items: classify conjugation, parse PGN, root, translate |
 
 ### Notebooks
 
@@ -501,4 +501,4 @@ The exercise for this chapter presents twenty Peal perfect verb forms drawn from
 
 | Resource | Description |
 |---|---|
-| [Peal Perfect Parsing Drill](exercises/ch13-peal-perfect-drill/README.md) | 20-item Peal perfect parsing drill — root identification, PGN, translation |
+| [Peal Perfect Parsing Drill](exercises/ch13-peal-perfect-drill/index.md) | 20-item Peal perfect parsing drill — root identification, PGN, translation |

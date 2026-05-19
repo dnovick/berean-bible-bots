@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch21-imperfect-parsing/](exercises/ch21-imperfect-parsing/README.md) | Imperfect Parsing Drill — 20 forms to parse |
+| [exercises/ch21-imperfect-parsing/](exercises/ch21-imperfect-parsing/index.md) | Imperfect Parsing Drill — 20 forms to parse |
 
 ### Flashcards
 

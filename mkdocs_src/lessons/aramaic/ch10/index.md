@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch10-adjective-number-drill/](exercises/ch10-adjective-number-drill/README.md) | Adjective identification and number parsing drill from Daniel and Ezra |
+| [exercises/ch10-adjective-number-drill/](exercises/ch10-adjective-number-drill/index.md) | Adjective identification and number parsing drill from Daniel and Ezra |
 
 ### Notebooks
 
@@ -456,4 +456,4 @@ The exercise for this chapter presents adjectives and numbers drawn from Daniel 
 
 | Resource | Description |
 |---|---|
-| [Adjective and Number Drill](exercises/ch10-adjective-number-drill/README.md) | Adjective identification and number parsing drill from Daniel and Ezra |
+| [Adjective and Number Drill](exercises/ch10-adjective-number-drill/index.md) | Adjective identification and number parsing drill from Daniel and Ezra |

@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch36-mi-verbs-parsing/](exercises/ch36-mi-verbs-parsing/README.md) | 20-item drill: parse forms from ἵστημι, τίθημι, δείκνυμι, and related μι-verbs |
+| [exercises/ch36-mi-verbs-parsing/](exercises/ch36-mi-verbs-parsing/index.md) | 20-item drill: parse forms from ἵστημι, τίθημι, δείκνυμι, and related μι-verbs |
 
 ### Flashcards
 

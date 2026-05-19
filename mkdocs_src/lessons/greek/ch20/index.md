@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch20-stem-change-drill/](exercises/ch20-stem-change-drill/README.md) | Stem Change Drill — 20 items: identify root, pattern type, give future form |
+| [exercises/ch20-stem-change-drill/](exercises/ch20-stem-change-drill/index.md) | Stem Change Drill — 20 items: identify root, pattern type, give future form |
 
 ### Flashcards
 

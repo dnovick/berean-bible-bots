@@ -20,7 +20,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch5-determined-state-drill/](exercises/ch5-determined-state-drill/README.md) | 20-item drill — convert nouns between absolute and determined state across all four gender/number patterns |
+| [exercises/ch5-determined-state-drill/](exercises/ch5-determined-state-drill/index.md) | 20-item drill — convert nouns between absolute and determined state across all four gender/number patterns |
 
 ### Notebooks
 
@@ -296,4 +296,4 @@ This does not mean the determined state is random. Rather, in late Biblical Aram
 
 | Resource | Description |
 |---|---|
-| [Determined State Forms Drill](exercises/ch5-determined-state-drill/README.md) | 20-item conversion drill — given a noun in absolute state, produce the determined state (or vice versa), covering all four gender/number patterns |
+| [Determined State Forms Drill](exercises/ch5-determined-state-drill/index.md) | 20-item conversion drill — given a noun in absolute state, produce the determined state (or vice versa), covering all four gender/number patterns |

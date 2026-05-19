@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch19-future-parsing/](exercises/ch19-future-parsing/README.md) | Future Active/Middle Parsing Drill — 20 forms to parse |
+| [exercises/ch19-future-parsing/](exercises/ch19-future-parsing/index.md) | Future Active/Middle Parsing Drill — 20 forms to parse |
 
 ### Flashcards
 

@@ -16,7 +16,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch8-suffix-drill/](exercises/ch8-suffix-drill/README.md) | Pronominal suffix identification and translation drill |
+| [exercises/ch8-suffix-drill/](exercises/ch8-suffix-drill/index.md) | Pronominal suffix identification and translation drill |
 
 ### Notebooks
 
@@ -439,4 +439,4 @@ Work through the suffix drill exercise, which presents suffixed nouns and prepos
 
 | Resource | Description |
 |---|---|
-| [Suffix Drill](exercises/ch8-suffix-drill/README.md) | Pronominal suffix identification and translation drill |
+| [Suffix Drill](exercises/ch8-suffix-drill/index.md) | Pronominal suffix identification and translation drill |

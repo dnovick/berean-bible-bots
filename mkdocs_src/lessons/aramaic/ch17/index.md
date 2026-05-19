@@ -23,7 +23,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch17-peal-participle-drill/](exercises/ch17-peal-participle-drill/README.md) | 20-item Peal participle identification and translation drill — active/passive, root, G/N, translation |
+| [exercises/ch17-peal-participle-drill/](exercises/ch17-peal-participle-drill/index.md) | 20-item Peal participle identification and translation drill — active/passive, root, G/N, translation |
 
 ### Notebooks
 
@@ -555,4 +555,4 @@ The exercise for this chapter presents twenty Peal participle forms drawn from D
 
 | Resource | Description |
 |---|---|
-| [Peal Participle Drill](exercises/ch17-peal-participle-drill/README.md) | 20-item Peal participle identification drill — active/passive, root, G/N, translation |
+| [Peal Participle Drill](exercises/ch17-peal-participle-drill/index.md) | 20-item Peal participle identification drill — active/passive, root, G/N, translation |

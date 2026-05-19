@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch17-contract-verb-parsing/](exercises/ch17-contract-verb-parsing/README.md) | 20-item drill: parse contracted forms, identify uncontracted vowels, and give the lexical form |
+| [exercises/ch17-contract-verb-parsing/](exercises/ch17-contract-verb-parsing/index.md) | 20-item drill: parse contracted forms, identify uncontracted vowels, and give the lexical form |
 
 ### Flashcards
 

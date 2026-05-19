@@ -21,12 +21,12 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch25-passage-exercise/](exercises/ch25-passage-exercise/README.md) | "Spot the Niphal" — parsing exercise from Gen 3, 6, and 21 with weak-root emphasis; includes weak-class identification column |
-| [exercises/ch25-weak-form-id/](exercises/ch25-weak-form-id/README.md) | 40 forms across all eight classes in two parts: by class, then mixed |
-| [exercises/ch25-function-sort/](exercises/ch25-function-sort/README.md) | Semantic function sorting — classify weak Niphal verbs by function type (passive, reflexive, middle, tolerative) |
-| [exercises/ch25-niphal-weak-paradigm-drill/](exercises/ch25-niphal-weak-paradigm-drill/README.md) | Paradigm drill — write Niphal Weak forms across the major weak root classes |
-| [exercises/ch25-qal-niphal-contrast/](exercises/ch25-qal-niphal-contrast/README.md) | Qal vs. Niphal contrast drill (weak roots) — spot the difference in form and meaning |
-| [exercises/ch25-stem-id-drill/](exercises/ch25-stem-id-drill/README.md) | Stem identification drill — Qal vs. Niphal weak roots |
+| [exercises/ch25-passage-exercise/](exercises/ch25-passage-exercise/index.md) | "Spot the Niphal" — parsing exercise from Gen 3, 6, and 21 with weak-root emphasis; includes weak-class identification column |
+| [exercises/ch25-weak-form-id/](exercises/ch25-weak-form-id/index.md) | 40 forms across all eight classes in two parts: by class, then mixed |
+| [exercises/ch25-function-sort/](exercises/ch25-function-sort/index.md) | Semantic function sorting — classify weak Niphal verbs by function type (passive, reflexive, middle, tolerative) |
+| [exercises/ch25-niphal-weak-paradigm-drill/](exercises/ch25-niphal-weak-paradigm-drill/index.md) | Paradigm drill — write Niphal Weak forms across the major weak root classes |
+| [exercises/ch25-qal-niphal-contrast/](exercises/ch25-qal-niphal-contrast/index.md) | Qal vs. Niphal contrast drill (weak roots) — spot the difference in form and meaning |
+| [exercises/ch25-stem-id-drill/](exercises/ch25-stem-id-drill/index.md) | Stem identification drill — Qal vs. Niphal weak roots |
 
 ### Flashcards
 
@@ -414,5 +414,5 @@ Torah-frequency counts (Genesis–Deuteronomy) for the most common Niphal lemmas
 | Resource | Description |
 |---|---|
 | [Morphology Flashcard Deck](ch25-morphology-deck.md) | 40 cards across all eight weak classes. Import the `.txt` file into Anki for spaced-repetition drilling. |
-| [Passage Exercise](exercises/ch25-passage-exercise/README.md) | "Spot the Niphal" — parsing exercise from Gen 3, 6, and 21 with weak-root emphasis. Includes weak-class identification column. |
-| [Weak-Form Identification Drill](exercises/ch25-weak-form-id/README.md) | 40 forms across all eight classes in two parts: by class, then mixed. |
+| [Passage Exercise](exercises/ch25-passage-exercise/index.md) | "Spot the Niphal" — parsing exercise from Gen 3, 6, and 21 with weak-root emphasis. Includes weak-class identification column. |
+| [Weak-Form Identification Drill](exercises/ch25-weak-form-id/index.md) | 40 forms across all eight classes in two parts: by class, then mixed. |

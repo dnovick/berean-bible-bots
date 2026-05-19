@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch16-present-active-parsing/](exercises/ch16-present-active-parsing/README.md) | 20-item drill: parse present active indicative forms (tense/voice/mood/person/number/root) and translate |
+| [exercises/ch16-present-active-parsing/](exercises/ch16-present-active-parsing/index.md) | 20-item drill: parse present active indicative forms (tense/voice/mood/person/number/root) and translate |
 
 ### Flashcards
 

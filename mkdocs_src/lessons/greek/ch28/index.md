@@ -8,8 +8,8 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch28-aorist-participle-parsing/](exercises/ch28-aorist-participle-parsing/README.md) | "Spot the Aorist Participle" — 15-item passage drill: parse form, distinguish 1st/2nd aorist, identify use, translate |
-| [exercises/ch28-participle-tense-contrast/](exercises/ch28-participle-tense-contrast/README.md) | Present vs. Aorist Participle Contrast — 20 clauses: classify CONTEMP / ANTEC, parse, translate |
+| [exercises/ch28-aorist-participle-parsing/](exercises/ch28-aorist-participle-parsing/index.md) | "Spot the Aorist Participle" — 15-item passage drill: parse form, distinguish 1st/2nd aorist, identify use, translate |
+| [exercises/ch28-participle-tense-contrast/](exercises/ch28-participle-tense-contrast/index.md) | Present vs. Aorist Participle Contrast — 20 clauses: classify CONTEMP / ANTEC, parse, translate |
 
 ### Flashcards
 

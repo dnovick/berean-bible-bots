@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch18-middle-passive-parsing/](exercises/ch18-middle-passive-parsing/README.md) | 20-item drill: parse present middle/passive forms and identify likely voice from context |
+| [exercises/ch18-middle-passive-parsing/](exercises/ch18-middle-passive-parsing/index.md) | 20-item drill: parse present middle/passive forms and identify likely voice from context |
 
 ### Flashcards
 

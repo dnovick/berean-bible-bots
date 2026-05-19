@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch3-syllable-division/](exercises/ch3-syllable-division/README.md) | 20-word syllable division drill — divide words, label syllable types, mark stress, identify Qamets Hatuf |
+| [exercises/ch3-syllable-division/](exercises/ch3-syllable-division/index.md) | 20-word syllable division drill — divide words, label syllable types, mark stress, identify Qamets Hatuf |
 
 ### Flashcards
 
@@ -351,4 +351,4 @@ Combine syllables in order. In most academic traditions (Tiberian/Sephardic blen
 
 | Resource | Description |
 |---|---|
-| [Syllable Division Exercise](exercises/ch3-syllable-division/README.md) | 20 Hebrew words — divide syllables, label types (O/C), mark stress, identify any Qamets Hatuf. Answer key included. |
+| [Syllable Division Exercise](exercises/ch3-syllable-division/index.md) | 20 Hebrew words — divide syllables, label types (O/C), mark stress, identify any Qamets Hatuf. Answer key included. |

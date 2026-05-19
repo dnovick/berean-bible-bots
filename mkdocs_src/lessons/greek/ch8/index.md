@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch8-preposition-parsing/](exercises/ch8-preposition-parsing/README.md) | 20-item drill — identify preposition, case governed, and prepositional phrase translation |
+| [exercises/ch8-preposition-parsing/](exercises/ch8-preposition-parsing/index.md) | 20-item drill — identify preposition, case governed, and prepositional phrase translation |
 
 ### Flashcards
 

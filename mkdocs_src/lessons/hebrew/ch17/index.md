@@ -14,9 +14,9 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch17-parsing-drill/](exercises/ch17-parsing-drill/README.md) | 30-item drill: Wayyiqtol (strong + weak) parsing and Weqatal disambiguation |
-| [exercises/ch17-passage-exercise/](exercises/ch17-passage-exercise/README.md) | 16-item passage exercise: Gen 1, Gen 22, Deu 6 (Shema), Exo 3 — parse wayyiqtol/weqatal in context |
-| [exercises/ch17-wayyiqtol-paradigm-drill/](exercises/ch17-wayyiqtol-paradigm-drill/README.md) | Paradigm drill — write all 10 Wayyiqtol forms of קטל from memory |
+| [exercises/ch17-parsing-drill/](exercises/ch17-parsing-drill/index.md) | 30-item drill: Wayyiqtol (strong + weak) parsing and Weqatal disambiguation |
+| [exercises/ch17-passage-exercise/](exercises/ch17-passage-exercise/index.md) | 16-item passage exercise: Gen 1, Gen 22, Deu 6 (Shema), Exo 3 — parse wayyiqtol/weqatal in context |
+| [exercises/ch17-wayyiqtol-paradigm-drill/](exercises/ch17-wayyiqtol-paradigm-drill/index.md) | Paradigm drill — write all 10 Wayyiqtol forms of קטל from memory |
 
 ### Flashcards
 

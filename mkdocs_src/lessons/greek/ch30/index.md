@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch30-perfect-participle-genabs/](exercises/ch30-perfect-participle-genabs/README.md) | 15-item drill: parse perfect participles and identify/translate genitive absolute constructions |
+| [exercises/ch30-perfect-participle-genabs/](exercises/ch30-perfect-participle-genabs/index.md) | 15-item drill: parse perfect participles and identify/translate genitive absolute constructions |
 
 ### Flashcards
 

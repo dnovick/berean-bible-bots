@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch29-adjectival-participle-parsing/](exercises/ch29-adjectival-participle-parsing/README.md) | 15-item drill: parse adjectival participles, identify attributive vs. substantival use, translate |
+| [exercises/ch29-adjectival-participle-parsing/](exercises/ch29-adjectival-participle-parsing/index.md) | 15-item drill: parse adjectival participles, identify attributive vs. substantival use, translate |
 
 ### Flashcards
 

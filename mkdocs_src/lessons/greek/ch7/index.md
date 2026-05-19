@@ -8,7 +8,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch7-gen-dat-parsing/](exercises/ch7-gen-dat-parsing/README.md) | 20-item parsing drill — case, number, gender, and lexical form for 2nd-declension forms |
+| [exercises/ch7-gen-dat-parsing/](exercises/ch7-gen-dat-parsing/index.md) | 20-item parsing drill — case, number, gender, and lexical form for 2nd-declension forms |
 
 ### Flashcards
 

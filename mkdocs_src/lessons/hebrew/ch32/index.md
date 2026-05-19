@@ -8,12 +8,12 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch32-passage-exercise/](exercises/ch32-passage-exercise/README.md) | Passage exercise — identify and parse Pual Strong verbs in Torah and Prophets texts |
-| [exercises/ch32-piel-pual-contrast/](exercises/ch32-piel-pual-contrast/README.md) | Piel vs. Pual contrast drill — distinguish active and passive Piel-group forms across 25 items |
-| [exercises/ch32-function-sort/](exercises/ch32-function-sort/README.md) | Semantic function sorting — classify Pual verbs by function type (passive-intensive, passive-causative) |
-| [exercises/ch32-pual-paradigm-drill/](exercises/ch32-pual-paradigm-drill/README.md) | Paradigm drill — write selected Pual forms for קטל from memory |
-| [exercises/ch32-qal-piel-pual-contrast/](exercises/ch32-qal-piel-pual-contrast/README.md) | Qal–Piel–Pual contrast drill — three-way stem discrimination (strong roots) |
-| [exercises/ch32-stem-id-drill/](exercises/ch32-stem-id-drill/README.md) | Stem identification drill — Qal/Piel/Pual strong roots |
+| [exercises/ch32-passage-exercise/](exercises/ch32-passage-exercise/index.md) | Passage exercise — identify and parse Pual Strong verbs in Torah and Prophets texts |
+| [exercises/ch32-piel-pual-contrast/](exercises/ch32-piel-pual-contrast/index.md) | Piel vs. Pual contrast drill — distinguish active and passive Piel-group forms across 25 items |
+| [exercises/ch32-function-sort/](exercises/ch32-function-sort/index.md) | Semantic function sorting — classify Pual verbs by function type (passive-intensive, passive-causative) |
+| [exercises/ch32-pual-paradigm-drill/](exercises/ch32-pual-paradigm-drill/index.md) | Paradigm drill — write selected Pual forms for קטל from memory |
+| [exercises/ch32-qal-piel-pual-contrast/](exercises/ch32-qal-piel-pual-contrast/index.md) | Qal–Piel–Pual contrast drill — three-way stem discrimination (strong roots) |
+| [exercises/ch32-stem-id-drill/](exercises/ch32-stem-id-drill/index.md) | Stem identification drill — Qal/Piel/Pual strong roots |
 
 ### Flashcards
 

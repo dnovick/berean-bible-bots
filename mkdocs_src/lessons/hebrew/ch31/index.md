@@ -8,12 +8,12 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch31-passage-exercise/](exercises/ch31-passage-exercise/README.md) | Passage exercise — identify and parse Piel Weak verbs in context (Gen 2–3, Gen 6, Gen 18:19, Gen 16:6, Deu 8:2–3, Amos 3:7, Gen 50:16) |
-| [exercises/ch31-weak-form-id/](exercises/ch31-weak-form-id/README.md) | Weak-form identification drill — parse 20 weak Piel forms grouped by weak class (I-gutt, III-he, Geminate, I-nun) + 10 mixed |
-| [exercises/ch31-function-sort/](exercises/ch31-function-sort/README.md) | Semantic function sorting — Piel Weak verbs by function type |
-| [exercises/ch31-piel-weak-paradigm-drill/](exercises/ch31-piel-weak-paradigm-drill/README.md) | Paradigm drill — write selected Piel Weak forms for גלה (III-ה) from memory |
-| [exercises/ch31-qal-piel-contrast/](exercises/ch31-qal-piel-contrast/README.md) | Qal vs. Piel contrast drill (weak roots) |
-| [exercises/ch31-stem-id-drill/](exercises/ch31-stem-id-drill/README.md) | Stem identification drill — Qal/Niphal/Piel weak roots |
+| [exercises/ch31-passage-exercise/](exercises/ch31-passage-exercise/index.md) | Passage exercise — identify and parse Piel Weak verbs in context (Gen 2–3, Gen 6, Gen 18:19, Gen 16:6, Deu 8:2–3, Amos 3:7, Gen 50:16) |
+| [exercises/ch31-weak-form-id/](exercises/ch31-weak-form-id/index.md) | Weak-form identification drill — parse 20 weak Piel forms grouped by weak class (I-gutt, III-he, Geminate, I-nun) + 10 mixed |
+| [exercises/ch31-function-sort/](exercises/ch31-function-sort/index.md) | Semantic function sorting — Piel Weak verbs by function type |
+| [exercises/ch31-piel-weak-paradigm-drill/](exercises/ch31-piel-weak-paradigm-drill/index.md) | Paradigm drill — write selected Piel Weak forms for גלה (III-ה) from memory |
+| [exercises/ch31-qal-piel-contrast/](exercises/ch31-qal-piel-contrast/index.md) | Qal vs. Piel contrast drill (weak roots) |
+| [exercises/ch31-stem-id-drill/](exercises/ch31-stem-id-drill/index.md) | Stem identification drill — Qal/Niphal/Piel weak roots |
 
 ### Flashcards
 
