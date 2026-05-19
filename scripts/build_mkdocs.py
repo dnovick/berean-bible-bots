@@ -214,7 +214,7 @@ def build_chapter(
                 # Build download links line (web-only — injected here, not in source)
                 download_parts = [f"[Full screen]({html_name}){{.md-button}}"]
                 if has_md:
-                    download_parts.append(f"[Answer key (MD)]({md_name}){{.md-button}}")
+                    download_parts.append(f"[Markdown]({md_name}){{.md-button}}")
                 if has_pdf:
                     download_parts.append(f"[Print (PDF)]({pdf_name}){{.md-button}}")
                 downloads_line = "  ".join(download_parts)
