@@ -33,6 +33,9 @@ theme:
 extra_css:
   - stylesheets/extra.css
 
+extra_javascript:
+  - javascripts/home-link.js
+
 plugins:
   - search
   - mkdocstrings:
