@@ -43,6 +43,10 @@ extra_files:
 
 plugins:
   - search
+  - mkdocs-jupyter:
+      execute: false
+      include_source: false
+      ignore_h1_headers: false
   - mkdocstrings:
       handlers:
         python:

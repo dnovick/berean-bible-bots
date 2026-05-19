@@ -260,10 +260,163 @@ def build_course(lang: str, course: str, label: str, titles: dict[str, str]) -> 
     return [{label: nav_entries}]
 
 
+NOTEBOOK_SECTIONS = [
+    ("Old Testament (Hebrew)", [
+        ("Verb Stems", [
+            ("ot/verbs/stem_overview.ipynb", "Stem Overview"),
+            ("ot/verbs/qal.ipynb", "Qal"),
+            ("ot/verbs/niphal.ipynb", "Niphal"),
+            ("ot/verbs/hiphil.ipynb", "Hiphil"),
+            ("ot/verbs/hophal.ipynb", "Hophal"),
+            ("ot/verbs/piel.ipynb", "Piel"),
+            ("ot/verbs/pual.ipynb", "Pual"),
+            ("ot/verbs/hithpael.ipynb", "Hithpael"),
+        ]),
+        ("Noun Morphology", [
+            ("ot/nouns/ot_nouns.ipynb", "OT Nouns"),
+            ("ot/numbers/ot_numbers.ipynb", "OT Numbers"),
+        ]),
+        ("Syntax & Verbal Analysis", [
+            ("ot/syntax/verbal_syntax.ipynb", "Verbal Syntax"),
+            ("ot/syntax/poetry.ipynb", "Poetry"),
+            ("ot/syntax/predicate_argument.ipynb", "Predicate-Argument"),
+            ("ot/syntax/discourse_structure.ipynb", "Discourse Structure"),
+            ("ot/syntax/register_analysis.ipynb", "Register Analysis"),
+            ("ot/syntax/information_structure.ipynb", "Information Structure"),
+            ("ot/syntax/prepositions.ipynb", "Prepositions"),
+        ]),
+        ("Speaker & Role Analysis", [
+            ("ot/speakers/speaker_attribution.ipynb", "Speaker Attribution"),
+            ("ot/speakers/syntactic_roles_ot.ipynb", "Syntactic Roles"),
+            ("ot/speakers/participant_tracking.ipynb", "Participant Tracking"),
+            ("ot/speakers/speech_acts.ipynb", "Speech Acts"),
+        ]),
+        ("Lexicon", [
+            ("ot/lexicon/hapax_legomena.ipynb", "Hapax Legomena"),
+        ]),
+        ("Semantic Domains", [
+            ("ot/semantic_domains/ot_semantic_domains.ipynb", "Semantic Domains"),
+        ]),
+        ("Aramaic", [
+            ("ot/aramaic/aramaic_overview.ipynb", "Aramaic Overview"),
+            ("ot/aramaic/aramaic_nominal.ipynb", "Aramaic Nominal"),
+        ]),
+        ("Targumim", [
+            ("ot/targumim/targumim_overview.ipynb", "Targumim Overview"),
+        ]),
+    ]),
+    ("New Testament (Greek)", [
+        ("Verb Morphology", [
+            ("nt/verbs/nt_verbs.ipynb", "NT Verbs"),
+        ]),
+        ("Noun Morphology", [
+            ("nt/nouns/nt_nouns.ipynb", "NT Nouns"),
+        ]),
+        ("Syntax & Roles", [
+            ("nt/syntax/syntactic_roles_nt.ipynb", "Syntactic Roles"),
+            ("nt/syntax/participles.ipynb", "Participles"),
+            ("nt/syntax/mood_usage.ipynb", "Mood Usage"),
+            ("nt/syntax/demonstratives.ipynb", "Demonstratives"),
+            ("nt/syntax/coreference.ipynb", "Coreference"),
+            ("nt/syntax/style_analysis.ipynb", "Style Analysis"),
+            ("nt/syntax/information_structure.ipynb", "Information Structure"),
+            ("nt/syntax/speech_acts.ipynb", "Speech Acts"),
+            ("nt/syntax/louw_nida_domains.ipynb", "Louw-Nida Domains"),
+            ("nt/syntax/prepositions.ipynb", "Prepositions"),
+        ]),
+        ("Discourse", [
+            ("nt/discourse/discourse_particles.ipynb", "Discourse Particles"),
+        ]),
+        ("Peshitta NT (Syriac)", [
+            ("nt/peshitta/peshitta_morphology.ipynb", "Peshitta Morphology"),
+        ]),
+    ]),
+    ("Cross-Testament", [
+        ("Survey", [
+            ("both/survey/data_exploration.ipynb", "Data Exploration"),
+            ("both/survey/book_profiles.ipynb", "Book Profiles"),
+            ("both/survey/christological_titles.ipynb", "Christological Titles"),
+            ("both/survey/divine_names.ipynb", "Divine Names"),
+            ("both/survey/genre_compare.ipynb", "Genre Comparison"),
+        ]),
+        ("Lexicon", [
+            ("both/lexicon/word_study.ipynb", "Word Study"),
+            ("both/lexicon/concordance.ipynb", "Concordance"),
+            ("both/lexicon/language_analysis.ipynb", "Language Analysis"),
+            ("both/lexicon/morph_distribution.ipynb", "Morphological Distribution"),
+            ("both/lexicon/collocation_and_phrase.ipynb", "Collocation & Phrase"),
+            ("both/lexicon/formulaic_language.ipynb", "Formulaic Language"),
+        ]),
+        ("Intertextuality", [
+            ("both/intertextuality/lxx_analysis.ipynb", "LXX Analysis"),
+            ("both/intertextuality/theological_trajectories.ipynb", "Theological Trajectories"),
+            ("both/intertextuality/nt_quotations.ipynb", "NT Quotations"),
+            ("both/intertextuality/parallel_passage.ipynb", "Parallel Passages"),
+        ]),
+    ]),
+    ("Developer / Infrastructure", [
+        ("Reference", [
+            ("dev/data_pipeline.ipynb", "Data Pipeline"),
+            ("dev/export_and_profiles.ipynb", "Export & Profiles"),
+            ("dev/morphology_codes.ipynb", "Morphology Codes"),
+        ]),
+    ]),
+]
+
+
+def build_notebooks() -> list:
+    """Copy notebooks into mkdocs_src and return nav entries."""
+    nb_src = REPO / "notebooks"
+    nb_dst = MKDOCS_SRC / "notebooks"
+
+    # Clean and recreate
+    if nb_dst.exists():
+        shutil.rmtree(nb_dst)
+    nb_dst.mkdir(parents=True)
+
+    # Write index page
+    (nb_dst / "index.md").write_text(
+        "# Notebooks\n\n"
+        "Interactive analysis notebooks covering the full `bible_grammar` toolkit "
+        "— Hebrew OT, Greek NT, Septuagint, Peshitta, and Targumim.\n\n"
+        "Each notebook below is rendered statically with its outputs. "
+        "Interactive execution via Binder is coming soon (see [issue #49]"
+        "(https://github.com/dnovick/berean-bible-bots/issues/49)).\n\n"
+        "> **Note:** Charts and tables require the processed data files "
+        "(`data/processed/`) which are not in the repository. "
+        "Outputs shown here were generated locally.\n",
+        encoding="utf-8",
+    )
+
+    nav_entries: list = [{"Overview": "notebooks/index.md"}]
+
+    for corpus_label, sections in NOTEBOOK_SECTIONS:
+        corpus_entries: list = []
+        for section_label, notebooks in sections:
+            section_entries = []
+            for nb_rel, nb_title in notebooks:
+                src = nb_src / nb_rel
+                if not src.exists():
+                    continue
+                dst_path = nb_dst / nb_rel
+                dst_path.parent.mkdir(parents=True, exist_ok=True)
+                shutil.copy(src, dst_path)
+                section_entries.append(
+                    {nb_title: f"notebooks/{nb_rel}"}
+                )
+            if section_entries:
+                corpus_entries.append({section_label: section_entries})
+        if corpus_entries:
+            nav_entries.append({corpus_label: corpus_entries})
+
+    return [{"Notebooks": nav_entries}]
+
+
 def build_nav() -> list:
     nav: list = [{"Home": "index.md"}]
     for lang, course, label, titles in COURSES:
         nav.extend(build_course(lang, course, label, titles))
+    nav.extend(build_notebooks())
     nav.append({"API Reference": "reference/index.md"})
     return nav
 
