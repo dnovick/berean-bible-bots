@@ -15,6 +15,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
   input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
@@ -29,7 +30,8 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
+  input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 
@@ -83,7 +85,7 @@
     <td><span class="heb">בָּרַךְ</span></td>
     <td>Gen 1:22</td>
     <td>"God blessed them"</td>
-    <td><input class="parse-field" id="f1" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f1"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -97,7 +99,7 @@
     <td><span class="heb">קָדַשׁ</span></td>
     <td>Gen 2:3</td>
     <td>"he set it apart as holy"</td>
-    <td><input class="parse-field" id="f2" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f2"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -111,7 +113,7 @@
     <td><span class="heb">כָּלָה</span></td>
     <td>Gen 2:2</td>
     <td>"he finished all his work"</td>
-    <td><input class="parse-field" id="f3" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f3"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -125,7 +127,7 @@
     <td><span class="heb">שָׁחַת</span></td>
     <td>Gen 6:17</td>
     <td>"to destroy all flesh"</td>
-    <td><input class="parse-field" id="f4" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f4"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -139,7 +141,7 @@
     <td><span class="heb">צָוָה</span></td>
     <td>Gen 2:16</td>
     <td>"the LORD God commanded the man"</td>
-    <td><input class="parse-field" id="f5" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f5"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -153,7 +155,7 @@
     <td><span class="heb">גָּרַשׁ</span></td>
     <td>Gen 3:24</td>
     <td>"he drove out the man"</td>
-    <td><input class="parse-field" id="f6" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f6"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -167,7 +169,7 @@
     <td><span class="heb">חָיָה</span></td>
     <td>Gen 7:3</td>
     <td>"to keep offspring alive on the earth"</td>
-    <td><input class="parse-field" id="f7" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f7"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -181,7 +183,7 @@
     <td><span class="heb">שָׁלַח</span></td>
     <td>Gen 8:7</td>
     <td>"he sent out a raven"</td>
-    <td><input class="parse-field" id="f8" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f8"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -195,7 +197,7 @@
     <td><span class="heb">כָּסָה</span></td>
     <td>Gen 9:23</td>
     <td>"they covered their father's nakedness"</td>
-    <td><input class="parse-field" id="f9" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f9"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -209,7 +211,7 @@
     <td><span class="heb">דָּבַר</span></td>
     <td>Gen 8:15</td>
     <td>"God spoke to Noah"</td>
-    <td><input class="parse-field" id="f10" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f10"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -223,7 +225,7 @@
     <td><span class="heb">שָׁרַת</span></td>
     <td>Gen 39:4</td>
     <td>"he served him / ministered to him"</td>
-    <td><input class="parse-field" id="f11" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f11"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -237,7 +239,7 @@
     <td><span class="heb">גָּדַל</span></td>
     <td>Gen 12:2</td>
     <td>"I will make your name great"</td>
-    <td><input class="parse-field" id="f12" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f12"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -251,7 +253,7 @@
     <td><span class="heb">קָלַל</span></td>
     <td>Gen 12:3</td>
     <td>"the one who treats you lightly / curses you"</td>
-    <td><input class="parse-field" id="f13" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f13"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -265,7 +267,7 @@
     <td><span class="heb">נָגַע</span></td>
     <td>Gen 12:17</td>
     <td>"the LORD afflicted Pharaoh with plagues"</td>
-    <td><input class="parse-field" id="f14" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f14"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -279,7 +281,7 @@
     <td><span class="heb">קָדַשׁ</span></td>
     <td>Exo 19:10</td>
     <td>"you shall consecrate them today and tomorrow"</td>
-    <td><input class="parse-field" id="f15" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f15"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -293,7 +295,7 @@
     <td><span class="heb">כָּבַס</span></td>
     <td>Exo 19:10</td>
     <td>"they shall wash their garments"</td>
-    <td><input class="parse-field" id="f16" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f16"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r16">
@@ -307,7 +309,7 @@
     <td><span class="heb">הָלַל</span></td>
     <td>Gen 12:15</td>
     <td>"Pharaoh's officials praised her"</td>
-    <td><input class="parse-field" id="f17" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f17"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r17">
@@ -321,7 +323,7 @@
     <td><span class="heb">בָּקַשׁ</span></td>
     <td>Gen 37:15</td>
     <td>"what are you seeking?"</td>
-    <td><input class="parse-field" id="f18" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f18"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r18">
@@ -335,7 +337,7 @@
     <td><span class="heb">נָחַם</span></td>
     <td>Gen 37:35</td>
     <td>"he refused to be comforted"</td>
-    <td><input class="parse-field" id="f19" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f19"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r19">
@@ -349,7 +351,7 @@
     <td><span class="heb">צָוָה</span></td>
     <td>Gen 6:22</td>
     <td>"God had commanded him"</td>
-    <td><input class="parse-field" id="f20" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f20"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r20">
@@ -363,7 +365,7 @@
     <td><span class="heb">כָּפַר</span></td>
     <td>Lev 4:20</td>
     <td>"to make atonement for them"</td>
-    <td><input class="parse-field" id="f21" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f21"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r21">
@@ -377,7 +379,7 @@
     <td><span class="heb">חָלַל</span></td>
     <td>Lev 21:12</td>
     <td>"he shall not profane the sanctuary"</td>
-    <td><input class="parse-field" id="f22" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f22"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r22">
@@ -391,7 +393,7 @@
     <td><span class="heb">בָּקַשׁ</span></td>
     <td>Gen 43:30</td>
     <td>"he sought a place to weep"</td>
-    <td><input class="parse-field" id="f23" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f23"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r23">
@@ -405,7 +407,7 @@
     <td><span class="heb">נָחַם</span></td>
     <td>Gen 5:29</td>
     <td>"this one will comfort us"</td>
-    <td><input class="parse-field" id="f24" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f24"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r24">
@@ -419,7 +421,7 @@
     <td><span class="heb">הָלַל</span></td>
     <td>Psa 113:1</td>
     <td>"praise the name of the LORD"</td>
-    <td><input class="parse-field" id="f25" placeholder="I/F/D/SA/DN"></td>
+    <td><select class="parse-field" id="f25"><option value="">—</option><option>I</option><option>F</option><option>D</option><option>SA</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r25')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r25">
@@ -459,7 +461,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => i.value = '');
 }
 </script>
 

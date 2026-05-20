@@ -15,6 +15,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
   input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
@@ -29,7 +30,8 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
+  input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 
@@ -85,7 +87,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 22:20</td>
     <td>"it was told to Abraham"</td>
-    <td><input class="parse-field" id="f1" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f1"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -98,7 +100,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 24:33</td>
     <td>"food was set before him"</td>
-    <td><input class="parse-field" id="f2" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f2"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -111,7 +113,7 @@
     <td>Qatal 3ms</td>
     <td>Gen 39:1</td>
     <td>"he had been brought down to Egypt"</td>
-    <td><input class="parse-field" id="f3" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f3"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -124,7 +126,7 @@
     <td>Qatal 3fs</td>
     <td>Gen 33:11</td>
     <td>"it was brought to him"</td>
-    <td><input class="parse-field" id="f4" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f4"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -137,7 +139,7 @@
     <td>Qatal 3ms</td>
     <td>Gen 42:28</td>
     <td>"it has been returned into my sack"</td>
-    <td><input class="parse-field" id="f5" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f5"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -150,7 +152,7 @@
     <td>Qatal 3cp</td>
     <td>Gen 43:18</td>
     <td>"we were brought in"</td>
-    <td><input class="parse-field" id="f6" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f6"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -163,7 +165,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 38:13</td>
     <td>"it was told to Tamar"</td>
-    <td><input class="parse-field" id="f7" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f7"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -176,7 +178,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 38:24</td>
     <td>"it was told to Judah"</td>
-    <td><input class="parse-field" id="f8" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f8"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -189,7 +191,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 27:42</td>
     <td>"it was told to Rebekah"</td>
-    <td><input class="parse-field" id="f9" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f9"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -202,7 +204,7 @@
     <td>Yiqtol 3ms</td>
     <td>Gen 26:11</td>
     <td>"he shall be put to death"</td>
-    <td><input class="parse-field" id="f10" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f10"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -215,7 +217,7 @@
     <td>Yiqtol 3ms</td>
     <td>Exo 19:12</td>
     <td>"he shall be put to death"</td>
-    <td><input class="parse-field" id="f11" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f11"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -228,7 +230,7 @@
     <td>Yiqtol 3ms</td>
     <td>Exo 21:12</td>
     <td>"he must be put to death"</td>
-    <td><input class="parse-field" id="f12" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f12"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -241,7 +243,7 @@
     <td>Yiqtol 3ms</td>
     <td>Exo 21:15</td>
     <td>"he must be put to death"</td>
-    <td><input class="parse-field" id="f13" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f13"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -254,7 +256,7 @@
     <td>Wayyiqtol 3mp</td>
     <td>Exo 5:14</td>
     <td>"the Israelite overseers were beaten"</td>
-    <td><input class="parse-field" id="f14" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f14"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -267,7 +269,7 @@
     <td>Participle mp</td>
     <td>Exo 5:16</td>
     <td>"your servants are being beaten"</td>
-    <td><input class="parse-field" id="f15" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f15"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -280,7 +282,7 @@
     <td>Yiqtol 3ms</td>
     <td>Lev 4:35</td>
     <td>"it is to be removed"</td>
-    <td><input class="parse-field" id="f16" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f16"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r16">
@@ -293,7 +295,7 @@
     <td>Qatal 3ms</td>
     <td>Lev 4:31</td>
     <td>"it was removed"</td>
-    <td><input class="parse-field" id="f17" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f17"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r17">
@@ -306,7 +308,7 @@
     <td>Weqatal 3ms</td>
     <td>Lev 14:2</td>
     <td>"he will be brought to the priest"</td>
-    <td><input class="parse-field" id="f18" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f18"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r18">
@@ -319,7 +321,7 @@
     <td>Yiqtol 3ms</td>
     <td>Num 18:7</td>
     <td>"he shall be put to death"</td>
-    <td><input class="parse-field" id="f19" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f19"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r19">
@@ -332,7 +334,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Exo 14:5</td>
     <td>"it was told to the king of Egypt"</td>
-    <td><input class="parse-field" id="f20" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f20"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r20">
@@ -345,7 +347,7 @@
     <td>Qatal 3ms</td>
     <td>Exo 40:17</td>
     <td>"the tabernacle was set up"</td>
-    <td><input class="parse-field" id="f21" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f21"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r21">
@@ -358,7 +360,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Exo 10:8</td>
     <td>"Moses and Aaron were brought back"</td>
-    <td><input class="parse-field" id="f22" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f22"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r22">
@@ -371,7 +373,7 @@
     <td>Qatal 3ms</td>
     <td>Gen 4:26</td>
     <td>"it was begun (to call on the name of the LORD)"</td>
-    <td><input class="parse-field" id="f23" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f23"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r23">
@@ -384,7 +386,7 @@
     <td>Qatal 3ms</td>
     <td>Exo 26:30</td>
     <td>"you were shown the pattern (of the tabernacle)"</td>
-    <td><input class="parse-field" id="f24" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f24"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r24">
@@ -397,7 +399,7 @@
     <td>Hophal Inf. Construct</td>
     <td>Num 35:16</td>
     <td>"the murderer must be put to death"</td>
-    <td><input class="parse-field" id="f25" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><select class="parse-field" id="f25"><option value="">—</option><option>PT</option><option>LF</option><option>SR</option><option>SC</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r25')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r25">
@@ -437,7 +439,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => i.value = '');
 }
 </script>
 

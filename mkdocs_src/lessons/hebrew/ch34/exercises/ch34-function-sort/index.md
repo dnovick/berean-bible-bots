@@ -15,6 +15,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
   input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
@@ -29,7 +30,8 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
+  input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 
@@ -85,7 +87,7 @@
     <td><span class="heb">הָלַךְ</span></td>
     <td>Gen 3:8</td>
     <td>"walking about"</td>
-    <td><input class="parse-field" id="f1" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f1"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -99,7 +101,7 @@
     <td><span class="heb">חָבָא</span></td>
     <td>Gen 3:8</td>
     <td>"he hid himself"</td>
-    <td><input class="parse-field" id="f2" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f2"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -113,7 +115,7 @@
     <td><span class="heb">הָלַךְ</span></td>
     <td>Gen 5:22</td>
     <td>"he walked about"</td>
-    <td><input class="parse-field" id="f3" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f3"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -127,7 +129,7 @@
     <td><span class="heb">עָצַב</span></td>
     <td>Gen 6:6</td>
     <td>"he was grieved"</td>
-    <td><input class="parse-field" id="f4" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f4"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -141,7 +143,7 @@
     <td><span class="heb">גָּלָה</span></td>
     <td>Gen 9:21</td>
     <td>"he uncovered himself"</td>
-    <td><input class="parse-field" id="f5" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f5"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -155,7 +157,7 @@
     <td><span class="heb">הָלַךְ</span></td>
     <td>Gen 13:17</td>
     <td>"walk about!"</td>
-    <td><input class="parse-field" id="f6" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f6"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -169,7 +171,7 @@
     <td><span class="heb">עָנָה</span></td>
     <td>Gen 16:9</td>
     <td>"humble yourself!"</td>
-    <td><input class="parse-field" id="f7" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f7"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -183,7 +185,7 @@
     <td><span class="heb">הָלַךְ</span></td>
     <td>Gen 17:1</td>
     <td>"walk about before me"</td>
-    <td><input class="parse-field" id="f8" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f8"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -197,7 +199,7 @@
     <td><span class="heb">שָׁחָה</span></td>
     <td>Gen 18:2</td>
     <td>"he bowed down"</td>
-    <td><input class="parse-field" id="f9" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f9"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -211,7 +213,7 @@
     <td><span class="heb">שָׁחָה</span></td>
     <td>Gen 19:1</td>
     <td>"he bowed down"</td>
-    <td><input class="parse-field" id="f10" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f10"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -225,7 +227,7 @@
     <td><span class="heb">פָּלַל</span></td>
     <td>Gen 20:17</td>
     <td>"he prayed"</td>
-    <td><input class="parse-field" id="f11" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f11"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -239,7 +241,7 @@
     <td><span class="heb">בָּרַךְ</span></td>
     <td>Gen 22:18</td>
     <td>"they will bless themselves"</td>
-    <td><input class="parse-field" id="f12" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f12"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -253,7 +255,7 @@
     <td><span class="heb">הָלַךְ</span></td>
     <td>Gen 24:40</td>
     <td>"I have walked about"</td>
-    <td><input class="parse-field" id="f13" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f13"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -267,7 +269,7 @@
     <td><span class="heb">שָׁחָה</span></td>
     <td>Gen 24:26</td>
     <td>"he bowed down"</td>
-    <td><input class="parse-field" id="f14" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f14"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -281,7 +283,7 @@
     <td><span class="heb">עָשַׂק</span></td>
     <td>Gen 26:20</td>
     <td>"they quarreled"</td>
-    <td><input class="parse-field" id="f15" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f15"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -295,7 +297,7 @@
     <td><span class="heb">נָחַם</span></td>
     <td>Gen 27:42</td>
     <td>"is comforting himself"</td>
-    <td><input class="parse-field" id="f16" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f16"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r16">
@@ -309,7 +311,7 @@
     <td><span class="heb">נָכַל</span></td>
     <td>Gen 37:18</td>
     <td>"they plotted against"</td>
-    <td><input class="parse-field" id="f17" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f17"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r17">
@@ -323,7 +325,7 @@
     <td><span class="heb">אָבַל</span></td>
     <td>Gen 37:34</td>
     <td>"he mourned"</td>
-    <td><input class="parse-field" id="f18" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f18"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r18">
@@ -337,7 +339,7 @@
     <td><span class="heb">כָּסָה</span></td>
     <td>Gen 24:65</td>
     <td>"she covered herself"</td>
-    <td><input class="parse-field" id="f19" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f19"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r19">
@@ -351,7 +353,7 @@
     <td><span class="heb">שָׁחָה</span></td>
     <td>Gen 33:7</td>
     <td>"they bowed down"</td>
-    <td><input class="parse-field" id="f20" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f20"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r20">
@@ -365,7 +367,7 @@
     <td><span class="heb">נָהַל</span></td>
     <td>Gen 33:14</td>
     <td>"I will journey on slowly"</td>
-    <td><input class="parse-field" id="f21" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f21"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r21">
@@ -379,7 +381,7 @@
     <td><span class="heb">קָדַשׁ</span></td>
     <td>Exo 19:22</td>
     <td>"consecrate yourselves!"</td>
-    <td><input class="parse-field" id="f22" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f22"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r22">
@@ -393,7 +395,7 @@
     <td><span class="heb">חָזַק</span></td>
     <td>Exo 7:13</td>
     <td>"and his heart was strengthened"</td>
-    <td><input class="parse-field" id="f23" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f23"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r23">
@@ -407,7 +409,7 @@
     <td><span class="heb">הָלַל</span></td>
     <td>Ps 97:7</td>
     <td>"they glory in idols"</td>
-    <td><input class="parse-field" id="f24" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f24"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r24">
@@ -421,7 +423,7 @@
     <td><span class="heb">חָזַק</span></td>
     <td>Jos 1:6</td>
     <td>"be strong!"</td>
-    <td><input class="parse-field" id="f25" placeholder="R/RC/IT/ES/DN"></td>
+    <td><select class="parse-field" id="f25"><option value="">—</option><option>R</option><option>RC</option><option>IT</option><option>ES</option><option>DN</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r25')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r25">
@@ -461,7 +463,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => i.value = '');
 }
 </script>
 

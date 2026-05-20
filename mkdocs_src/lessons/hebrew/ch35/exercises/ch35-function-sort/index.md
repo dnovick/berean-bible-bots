@@ -15,6 +15,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
   input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
@@ -29,7 +30,8 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
+  input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 
@@ -83,7 +85,7 @@
     <td><span class="heb">גלה</span></td>
     <td>Gen 35:7</td>
     <td>"God revealed himself"</td>
-    <td><input class="parse-field" id="f1" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f1"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -97,7 +99,7 @@
     <td><span class="heb">שׁחה</span></td>
     <td>Gen 22:5</td>
     <td>"we will worship / bow down"</td>
-    <td><input class="parse-field" id="f2" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f2"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -111,7 +113,7 @@
     <td><span class="heb">הלל</span></td>
     <td>Jer 9:23</td>
     <td>"let him not boast"</td>
-    <td><input class="parse-field" id="f3" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f3"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -125,7 +127,7 @@
     <td><span class="heb">פלל</span></td>
     <td>Gen 20:7</td>
     <td>"he prayed"</td>
-    <td><input class="parse-field" id="f4" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f4"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -139,7 +141,7 @@
     <td><span class="heb">ענה</span></td>
     <td>Ezr 8:21</td>
     <td>"we afflicted ourselves / fasted"</td>
-    <td><input class="parse-field" id="f5" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f5"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -153,7 +155,7 @@
     <td><span class="heb">גלה</span></td>
     <td>—</td>
     <td>"he will reveal himself / it will be revealed"</td>
-    <td><input class="parse-field" id="f6" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f6"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -167,7 +169,7 @@
     <td><span class="heb">שׁחה</span></td>
     <td>—</td>
     <td>"he will bow down"</td>
-    <td><input class="parse-field" id="f7" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f7"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -181,7 +183,7 @@
     <td><span class="heb">הלל</span></td>
     <td>Jer 9:23</td>
     <td>"let him boast"</td>
-    <td><input class="parse-field" id="f8" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f8"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -195,7 +197,7 @@
     <td><span class="heb">פלל</span></td>
     <td>—</td>
     <td>"he will pray"</td>
-    <td><input class="parse-field" id="f9" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f9"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -209,7 +211,7 @@
     <td><span class="heb">גלה</span></td>
     <td>Gen 9:21</td>
     <td>"he uncovered himself"</td>
-    <td><input class="parse-field" id="f10" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f10"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -223,7 +225,7 @@
     <td><span class="heb">שׁחה</span></td>
     <td>Gen 22:5</td>
     <td>"and he bowed down"</td>
-    <td><input class="parse-field" id="f11" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f11"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -237,7 +239,7 @@
     <td><span class="heb">פלל</span></td>
     <td>Gen 20:17</td>
     <td>"Abraham prayed"</td>
-    <td><input class="parse-field" id="f12" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f12"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -251,7 +253,7 @@
     <td><span class="heb">נבא</span></td>
     <td>1 Sam 10:10</td>
     <td>"he prophesied"</td>
-    <td><input class="parse-field" id="f13" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f13"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -265,7 +267,7 @@
     <td><span class="heb">חזק</span></td>
     <td>2 Sam 10:12</td>
     <td>"take courage! / be strong!"</td>
-    <td><input class="parse-field" id="f14" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f14"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -279,7 +281,7 @@
     <td><span class="heb">נחם</span></td>
     <td>Gen 24:67</td>
     <td>"Isaac was comforted"</td>
-    <td><input class="parse-field" id="f15" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f15"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -293,7 +295,7 @@
     <td><span class="heb">ברך</span></td>
     <td>Gen 22:18</td>
     <td>"all nations will bless themselves"</td>
-    <td><input class="parse-field" id="f16" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f16"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r16">
@@ -307,7 +309,7 @@
     <td><span class="heb">צדק</span></td>
     <td>—</td>
     <td>"he justified himself"</td>
-    <td><input class="parse-field" id="f17" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f17"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r17">
@@ -321,7 +323,7 @@
     <td><span class="heb">רגז</span></td>
     <td>—</td>
     <td>"he trembled / was agitated"</td>
-    <td><input class="parse-field" id="f18" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f18"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r18">
@@ -335,7 +337,7 @@
     <td><span class="heb">חנן</span></td>
     <td>—</td>
     <td>"he pleaded for mercy / implored"</td>
-    <td><input class="parse-field" id="f19" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f19"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r19">
@@ -349,7 +351,7 @@
     <td><span class="heb">נהג</span></td>
     <td>—</td>
     <td>"he conducted himself / behaved"</td>
-    <td><input class="parse-field" id="f20" placeholder="R/Re/I/SA"></td>
+    <td><select class="parse-field" id="f20"><option value="">—</option><option>R</option><option>Re</option><option>I</option><option>SA</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r20">
@@ -389,7 +391,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => i.value = '');
 }
 </script>
 

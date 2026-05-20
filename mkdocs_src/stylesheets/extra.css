@@ -15,13 +15,37 @@
   unicode-bidi: embed;
 }
 
-/* Make iframes in exercise pages fill the viewport nicely */
-iframe {
-  display: block;
-  margin-top: 1rem;
+/* Add breathing room between the left nav and page content */
+.md-content {
+  padding-left: 1.5rem;
 }
 
 /* Full-screen button styling */
 .md-button {
   margin-bottom: 0.8rem;
 }
+
+/* Nav toggle button */
+#nav-toggle {
+  position: fixed;
+  top: 4rem;
+  left: 0;
+  z-index: 200;
+  width: 1.4rem;
+  height: 3rem;
+  background: var(--md-primary-fg-color);
+  color: var(--md-accent-fg-color);
+  border: none;
+  border-radius: 0 4px 4px 0;
+  cursor: pointer;
+  font-size: .85rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: .7;
+  transition: opacity .15s;
+}
+#nav-toggle:hover { opacity: 1; }
+
+body.nav-hidden .md-sidebar--primary { display: none; }
+body.nav-hidden .md-content { padding-left: 2.5rem; }

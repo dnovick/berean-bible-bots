@@ -13,6 +13,7 @@
   td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
+  select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
   input.parse-field { width: 4em; box-sizing: border-box; font-size: .9em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; text-align: center; }
   .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
   .answer-row { display: none; }
@@ -23,7 +24,8 @@
   .legend { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    select.parse-field { font-size: .88em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 70px; }
+  input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: none !important; }
   }
 </style>
@@ -359,7 +361,7 @@ function hideAll() {
   document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => i.value = '');
 }
 </script>
 </body>
