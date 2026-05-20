@@ -427,11 +427,142 @@ def build_notebooks() -> list:
     return [{"Notebooks": nav_entries}]
 
 
+# ── Reports ───────────────────────────────────────────────────────────────────
+
+# Section labels and their output/reports/ subdirectory names.
+# Each entry is (nav_label, subdir_under_reports).
+REPORT_SECTIONS = [
+    ("Old Testament (Hebrew)", "ot"),
+    ("New Testament (Greek)", "nt"),
+    ("Cross-Testament", "both"),
+]
+
+
+def _rewrite_chart_paths(content: str, depth: int) -> str:
+    """Rewrite ../../../charts/... relative paths to MkDocs-relative paths.
+
+    Reports reference charts as e.g. ../../../charts/nt/verbs/foo.png
+    (relative from output/reports/nt/verbs/).  In mkdocs_src the charts
+    live at reports/charts/nt/verbs/foo.png, so we replace the ../..
+    prefix with the correct relative path based on how deep the file is.
+    """
+    # Replace any number of ../ followed by charts/ with the right prefix
+    prefix = "../" * depth + "charts/"
+    return re.sub(r"(?:\.\./)+charts/", prefix, content)
+
+
+def _build_report_dir(
+    src_dir: Path,
+    dst_dir: Path,
+    depth: int,
+    nav_entries: list,
+    label: str,
+) -> None:
+    """Recursively copy one reports subdirectory into mkdocs_src/reports/."""
+    dst_dir.mkdir(parents=True, exist_ok=True)
+
+    # README.md → index.md (landing page for this dir)
+    readme = src_dir / "README.md"
+    if readme.exists():
+        content = readme.read_text(encoding="utf-8")
+        content = _rewrite_chart_paths(content, depth)
+        # Rewrite README.md links → index.md
+        content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
+        (dst_dir / "index.md").write_text(content, encoding="utf-8")
+
+    # Copy individual .md reports (not README)
+    md_files = sorted(f for f in src_dir.glob("*.md") if f.name != "README.md")
+    for md in md_files:
+        content = md.read_text(encoding="utf-8")
+        content = _rewrite_chart_paths(content, depth)
+        (dst_dir / md.name).write_text(content, encoding="utf-8")
+
+    # Copy non-md assets (.csv, .png, .pdf, etc.)
+    for f in src_dir.iterdir():
+        if f.is_file() and f.suffix not in (".md",):
+            shutil.copy(f, dst_dir / f.name)
+
+    # Recurse into subdirectories
+    for sub in sorted(d for d in src_dir.iterdir() if d.is_dir()):
+        sub_dst = dst_dir / sub.name
+        sub_entries: list = []
+        _build_report_dir(sub, sub_dst, depth + 1, sub_entries, sub.name)
+        if sub_entries:
+            # Use README title if available, else capitalise dir name
+            sub_label = sub.name.replace("-", " ").replace("_", " ").title()
+            nav_entries.append({sub_label: sub_entries})
+
+    # Add .md files (non-README) as nav entries
+    for md in md_files:
+        title = _md_title(dst_dir / md.name)
+        rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
+        nav_entries.append({title: rel})
+
+    # Add index.md as first entry if it exists
+    if readme.exists():
+        rel_index = str((dst_dir / "index.md").relative_to(MKDOCS_SRC))
+        nav_entries.insert(0, {"Overview": rel_index})
+
+
+def _md_title(path: Path) -> str:
+    """Extract the first # heading from a markdown file as its nav title."""
+    try:
+        for line in path.read_text(encoding="utf-8").splitlines():
+            if line.startswith("# "):
+                return line[2:].strip()
+    except OSError:
+        pass
+    return path.stem.replace("-", " ").replace("_", " ").title()
+
+
+def build_reports() -> list:
+    """Copy output/reports/ into mkdocs_src/reports/ and return nav entries."""
+    reports_src = REPO / "output" / "reports"
+    charts_src = REPO / "output" / "charts"
+    reports_dst = MKDOCS_SRC / "reports"
+
+    # Clean and recreate
+    if reports_dst.exists():
+        shutil.rmtree(reports_dst)
+    reports_dst.mkdir(parents=True)
+
+    # Copy charts tree alongside reports so relative paths resolve correctly.
+    # Remove any README.md files inside charts/ — they're not web pages.
+    charts_dst = reports_dst / "charts"
+    if charts_src.exists():
+        shutil.copytree(charts_src, charts_dst)
+        for readme in charts_dst.rglob("README.md"):
+            readme.unlink()
+
+    # Landing page = output/reports/README.md
+    top_readme = reports_src / "README.md"
+    if top_readme.exists():
+        content = top_readme.read_text(encoding="utf-8")
+        content = _rewrite_chart_paths(content, 1)
+        content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
+        (reports_dst / "index.md").write_text(content, encoding="utf-8")
+
+    nav_entries: list = [{"Overview": "reports/index.md"}]
+
+    for section_label, subdir in REPORT_SECTIONS:
+        src = reports_src / subdir
+        if not src.is_dir():
+            continue
+        dst = reports_dst / subdir
+        section_entries: list = []
+        _build_report_dir(src, dst, depth=1, nav_entries=section_entries, label=subdir)
+        if section_entries:
+            nav_entries.append({section_label: section_entries})
+
+    return [{"Reports": nav_entries}]
+
+
 def build_nav() -> list:
     nav: list = [{"Home": "index.md"}]
     for lang, course, label, titles in COURSES:
         nav.extend(build_course(lang, course, label, titles))
     nav.extend(build_notebooks())
+    nav.extend(build_reports())
     nav.append({"API Reference": "reference/index.md"})
     return nav
 
@@ -478,6 +609,11 @@ def main() -> None:
             ch_dir = lang_dir / ch
             if ch_dir.exists():
                 shutil.rmtree(ch_dir)
+
+    # Clean generated reports dir
+    reports_dir = MKDOCS_SRC / "reports"
+    if reports_dir.exists():
+        shutil.rmtree(reports_dir)
 
     build_api_reference()
     nav = build_nav()
