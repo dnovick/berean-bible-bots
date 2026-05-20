@@ -4,4 +4,386 @@
 
 [Full screen](ch16-present-active-parsing.html){.md-button}  [Markdown](ch16-present-active-parsing.md){.md-button}  [Print (PDF)](ch16-present-active-parsing.pdf){.md-button}
 
-<iframe src="ch16-present-active-parsing.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Present Active Parsing"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
+  p.instructions { font-style: italic; color: #555; }
+  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.9em; }
+  th { background: #276749; color: #fff; padding: 0.45em 0.6em; text-align: left; }
+  td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .greek { font-size: 1.15em; font-family: "New Athena Unicode", "Gentium Plus", "SBL Greek", serif; font-weight: bold; }
+  input.parse-field {
+    border: none; border-bottom: 1px solid #888; width: 100%; min-width: 55px;
+    background: transparent; font-size: 0.88em; padding: 2px 4px; box-sizing: border-box;
+  }
+  input.parse-field:focus { outline: none; border-bottom: 2px solid #276749; }
+  input.wide { min-width: 90px; }
+  .answer-row td { background: #c6f6d5 !important; color: #1a3c2e; font-size: 0.88em; }
+  .answer-row { display: none; }
+  .answer-row.visible { display: table-row; }
+  button.reveal-btn {
+    background: #276749; color: #fff; border: none; border-radius: 3px;
+    padding: 3px 10px; cursor: pointer; font-size: 0.82em; white-space: nowrap;
+  }
+  button.reveal-btn:hover { background: #1a4532; }
+  .controls { margin: 1em 0 1.5em 0; display: flex; gap: 0.7em; flex-wrap: wrap; }
+  .controls button {
+    background: #4a5568; color: #fff; border: none; border-radius: 4px;
+    padding: 0.5em 1.2em; cursor: pointer; font-size: 0.88em;
+  }
+  .controls button:hover { background: #2d3748; }
+  .note { background: #f0fff4; border-left: 4px solid #276749; padding: 0.6em 1em; margin: 1em 0; font-size: 0.9em; }
+  @media print {
+    .controls, button.reveal-btn { display: none !important; }
+    .answer-row { display: none !important; }
+    input.parse-field { border-bottom: 1px solid #000; background: transparent; }
+    body {  }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch16-present-active-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch16-present-active-parsing.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>BBG Chapter 16 — Present Active Indicative Parsing Drill</h1>
+<p class="instructions">Parse each verb: Tense · Voice · Mood · Person · Number · Lexical form · Translation. All forms are present active indicative. Click ▶ Answer to check your work.</p>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th>#</th>
+      <th>Form</th>
+      <th>Person</th>
+      <th>Number</th>
+      <th>Lexical form</th>
+      <th>Translation</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <tr class="question-row" data-id="1">
+      <td>1</td>
+      <td class="greek">λύω</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(1)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-1">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · λύω</strong> — "I am loosing / I loose"</td>
+    </tr>
+
+    <tr class="question-row" data-id="2">
+      <td>2</td>
+      <td class="greek">λύεις</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(2)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-2">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Singular · λύω</strong> — "You are loosing"</td>
+    </tr>
+
+    <tr class="question-row" data-id="3">
+      <td>3</td>
+      <td class="greek">λύει</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(3)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-3">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · λύω</strong> — "He/she/it is loosing"</td>
+    </tr>
+
+    <tr class="question-row" data-id="4">
+      <td>4</td>
+      <td class="greek">λύομεν</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(4)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-4">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Plural · λύω</strong> — "We are loosing / we loose"</td>
+    </tr>
+
+    <tr class="question-row" data-id="5">
+      <td>5</td>
+      <td class="greek">λύετε</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(5)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-5">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Plural · λύω</strong> — "You (pl.) are loosing"</td>
+    </tr>
+
+    <tr class="question-row" data-id="6">
+      <td>6</td>
+      <td class="greek">λύουσιν</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(6)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-6">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Plural · λύω</strong> — "They are loosing" (movable ν before vowel)</td>
+    </tr>
+
+    <tr class="question-row" data-id="7">
+      <td>7</td>
+      <td class="greek">πιστεύω</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(7)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-7">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · πιστεύω</strong> — "I believe / I am believing"</td>
+    </tr>
+
+    <tr class="question-row" data-id="8">
+      <td>8</td>
+      <td class="greek">γινώσκεις</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(8)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-8">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Singular · γινώσκω</strong> — "You know / you are knowing"</td>
+    </tr>
+
+    <tr class="question-row" data-id="9">
+      <td>9</td>
+      <td class="greek">ἀκούει</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(9)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-9">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · ἀκούω</strong> — "He/she hears"</td>
+    </tr>
+
+    <tr class="question-row" data-id="10">
+      <td>10</td>
+      <td class="greek">βλέπομεν</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(10)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-10">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Plural · βλέπω</strong> — "We see / we are seeing"</td>
+    </tr>
+
+    <tr class="question-row" data-id="11">
+      <td>11</td>
+      <td class="greek">λέγετε</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(11)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-11">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Plural · λέγω</strong> — "You (pl.) are saying / you say"</td>
+    </tr>
+
+    <tr class="question-row" data-id="12">
+      <td>12</td>
+      <td class="greek">γράφουσιν</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(12)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-12">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Plural · γράφω</strong> — "They are writing / they write"</td>
+    </tr>
+
+    <tr class="question-row" data-id="13">
+      <td>13</td>
+      <td class="greek">ἔχω</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(13)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-13">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · ἔχω</strong> — "I have"</td>
+    </tr>
+
+    <tr class="question-row" data-id="14">
+      <td>14</td>
+      <td class="greek">εὑρίσκεις</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(14)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-14">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Singular · εὑρίσκω</strong> — "You are finding / you find"</td>
+    </tr>
+
+    <tr class="question-row" data-id="15">
+      <td>15</td>
+      <td class="greek">λαμβάνει</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(15)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-15">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · λαμβάνω</strong> — "He/she takes / is taking"</td>
+    </tr>
+
+    <tr class="question-row" data-id="16">
+      <td>16</td>
+      <td class="greek">διδάσκομεν</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(16)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-16">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Plural · διδάσκω</strong> — "We are teaching / we teach"</td>
+    </tr>
+
+    <tr class="question-row" data-id="17">
+      <td>17</td>
+      <td class="greek">κρίνετε</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(17)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-17">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Plural · κρίνω</strong> — "You (pl.) are judging / you judge"</td>
+    </tr>
+
+    <tr class="question-row" data-id="18">
+      <td>18</td>
+      <td class="greek">ἄγουσιν</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(18)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-18">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Plural · ἄγω</strong> — "They are leading / they lead"</td>
+    </tr>
+
+    <tr class="question-row" data-id="19">
+      <td>19</td>
+      <td class="greek">πέμπω</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(19)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-19">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · πέμπω</strong> — "I am sending / I send"</td>
+    </tr>
+
+    <tr class="question-row" data-id="20">
+      <td>20</td>
+      <td class="greek">σῴζει</td>
+      <td><input class="parse-field" type="text" placeholder="person"></td>
+      <td><input class="parse-field" type="text" placeholder="number"></td>
+      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
+      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
+      <td><button class="reveal-btn" onclick="toggle(20)">▶ Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="ans-20">
+      <td></td>
+      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · σῴζω</strong> — "He/she saves / is saving"</td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="note">
+  <strong>All forms above:</strong> Present · Active · Indicative. The only thing that changes per row is person and number. Tense stem = lexical form minus the -ω. Connecting vowel: ο before μ/ν, ε elsewhere.
+</div>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById('ans-' + id);
+  const btn = document.querySelector('[data-id="' + id + '"] button.reveal-btn');
+  if (row.classList.contains('visible')) {
+    row.classList.remove('visible');
+    if (btn) btn.textContent = '▶ Answer';
+  } else {
+    row.classList.add('visible');
+    if (btn) btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.classList.add('visible'));
+  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.classList.remove('visible'));
+  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+}
+</script>
+

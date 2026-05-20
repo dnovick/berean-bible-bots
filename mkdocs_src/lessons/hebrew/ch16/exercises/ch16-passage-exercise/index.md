@@ -4,4 +4,235 @@
 
 [Full screen](ch16-passage-exercise.html){.md-button}  [Markdown](ch16-passage-exercise.md){.md-button}  [Print (PDF)](ch16-passage-exercise.pdf){.md-button}
 
-<iframe src="ch16-passage-exercise.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Passage Exercise"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  .passage { direction: rtl; unicode-bidi: embed; font-size: 1.18rem; line-height: 2.2; background: #fafaf6; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; margin: .8rem 0; }
+  .passage p { margin: .25rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .87rem; }
+  th { background: #e0e8f0; padding: .34rem .42rem; border: 1px solid #bbb; text-align: left; font-size: .8rem; }
+  td { padding: .24rem .35rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 1.8rem; }
+  td.heb { font-size: 1.08rem; direction: rtl; unicode-bidi: embed; font-weight: bold; width: 8rem; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .18rem .32rem; font-family: Georgia, serif; font-size: .83rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .83rem; color: #2a6e2a; padding: .22rem .35rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 1.8rem; text-align: center; }
+  .ans-heb { font-size: .98rem; direction: rtl; unicode-bidi: embed; }
+  button.rbtn { font-size: .73rem; padding: .11rem .42rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
+  @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; } .ans-row { display: none !important; } }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch16-passage-exercise.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch16-passage-exercise.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Ch16 Passage Exercise — Qal Imperfect Weak Verbs</h1>
+<p class="subtitle">BBH Chapter 16 · Genesis 1, 3–4 · Exodus 9, 20 · Isaiah 55 · 1 Kings 21</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> Parse each highlighted form. Give: (a) Person, (b) Number, (c) Gender, (d) Root (3ms lexical form), (e) Weak Class, (f) Form Type (Imperfect / Wayyiqtol / Jussive), (g) Usage Type.<br>
+  <em>Note: Wayyiqtol is the waw-consecutive imperfect used for sequential narration. Focus on the weak-class prefix pattern and form type.</em>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<!-- PASSAGE A -->
+<h2>Passage A — III-ה and I-Guttural (Genesis 1:3–11 and Genesis 3:1)</h2>
+<div class="passage">
+<p>וַיֹּ֥אמֶר אֱלֹהִ֖ים <strong>יְהִ֣י</strong> אֹ֑ור</p>
+<p>וַיֹּ֣אמֶר אֱלֹהִ֔ים <strong>יַעֲשֶׂ֥ה</strong> הָאָ֛רֶץ דֶּ֖שֶׁא</p>
+<p>וַיֹּ֣אמֶר אֱלֹהִ֔ים <strong>יִהְי֣וּ</strong> מְאֹרֹ֔ת</p>
+<p>לֹ֥א <strong>תֹּאכְל֖וּ</strong> מִכֹּ֥ל עֵֽץ</p>
+</div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
+  <tr>
+    <td class="num">1</td><td class="heb">יְהִ֣י</td>
+    <td><input class="parse-field" id="1-p" placeholder="1/2/3"></td><td><input class="parse-field" id="1-n" placeholder="s/p"></td><td><input class="parse-field" id="1-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="1-r" placeholder="root"></td><td><input class="parse-field" id="1-wc" placeholder="class"></td><td><input class="parse-field" id="1-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="1-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="ans-heb">יְהִ֣י</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">הָיָה</td><td>III-ה</td><td>Jussive</td><td colspan="2">Volitional — short jussive: final ה dropped; "Let there be light" — divine fiat</td></tr>
+  <tr>
+    <td class="num">2</td><td class="heb">יַעֲשֶׂ֥ה</td>
+    <td><input class="parse-field" id="2-p" placeholder="1/2/3"></td><td><input class="parse-field" id="2-n" placeholder="s/p"></td><td><input class="parse-field" id="2-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="2-r" placeholder="root"></td><td><input class="parse-field" id="2-wc" placeholder="class"></td><td><input class="parse-field" id="2-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="2-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="ans-heb">יַעֲשֶׂ֥ה</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">עָשָׂה</td><td>III-ה + I-gutt.</td><td>Jussive</td><td colspan="2">Volitional — III-ה long jussive (seghol-he); I-gutt. ע causes chateph prefix; "Let the earth produce"</td></tr>
+  <tr>
+    <td class="num">3</td><td class="heb">יִהְי֣וּ</td>
+    <td><input class="parse-field" id="3-p" placeholder="1/2/3"></td><td><input class="parse-field" id="3-n" placeholder="s/p"></td><td><input class="parse-field" id="3-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="3-r" placeholder="root"></td><td><input class="parse-field" id="3-wc" placeholder="class"></td><td><input class="parse-field" id="3-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="3-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="ans-heb">יִהְי֣וּ</td><td>3</td><td>p</td><td>m</td><td class="ans-heb">הָיָה</td><td>III-ה</td><td>Imperfect</td><td colspan="2">Jussive/Volitional — 3mp of הָיָה; וּ- suffix replaces ה; "Let there be lights"</td></tr>
+  <tr>
+    <td class="num">4</td><td class="heb">תֹּאכְל֖וּ</td>
+    <td><input class="parse-field" id="4-p" placeholder="1/2/3"></td><td><input class="parse-field" id="4-n" placeholder="s/p"></td><td><input class="parse-field" id="4-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="4-r" placeholder="root"></td><td><input class="parse-field" id="4-wc" placeholder="class"></td><td><input class="parse-field" id="4-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="4-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">תֹּאכְל֖וּ</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">אָכַל</td><td>I-gutt. (א)</td><td>Imperfect</td><td colspan="2">Prohibition (לֹא) — I-gutt. א takes holem (not hireq); "you shall not eat"</td></tr>
+</table>
+
+<hr class="sec">
+
+<!-- PASSAGE B -->
+<h2>Passage B — III-Guttural and I-Guttural (Genesis 3–4, Exodus 9, 20)</h2>
+<div class="passage">
+<p><strong>יֹאמַ֥ר</strong> אֱלֹהִ֖ים לָאֹ֑ור</p>
+<p><strong>וַיִּשְׁמַ֥ע</strong> יְהוָ֖ה</p>
+<p>לֹ֥א <strong>תַּחְמֹד֙</strong> בֵּ֣ית רֵעֶ֔ךָ</p>
+<p><strong>וַֽיַּעֲמֹ֥ד</strong> מֹשֶׁ֖ה לִפְנֵ֥י פַרְעֹֽה</p>
+</div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
+  <tr>
+    <td class="num">5</td><td class="heb">יֹאמַ֥ר</td>
+    <td><input class="parse-field" id="5-p" placeholder="1/2/3"></td><td><input class="parse-field" id="5-n" placeholder="s/p"></td><td><input class="parse-field" id="5-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="5-r" placeholder="root"></td><td><input class="parse-field" id="5-wc" placeholder="class"></td><td><input class="parse-field" id="5-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="5-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">יֹאמַ֥ר</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">אָמַר</td><td>I-gutt. (א)</td><td>Imperfect</td><td colspan="2">Simple Future — holem prefix; one of the most frequent forms in the OT; must be memorized</td></tr>
+  <tr>
+    <td class="num">6</td><td class="heb">וַיִּשְׁמַ֥ע</td>
+    <td><input class="parse-field" id="6-p" placeholder="1/2/3"></td><td><input class="parse-field" id="6-n" placeholder="s/p"></td><td><input class="parse-field" id="6-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="6-r" placeholder="root"></td><td><input class="parse-field" id="6-wc" placeholder="class"></td><td><input class="parse-field" id="6-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="6-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="ans-heb">וַיִּשְׁמַ֥ע</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">שָׁמַע</td><td>III-gutt. (ע)</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — short form (no patach furtive in wayyiqtol); "and the LORD heard"</td></tr>
+  <tr>
+    <td class="num">7</td><td class="heb">תַּחְמֹד֙</td>
+    <td><input class="parse-field" id="7-p" placeholder="1/2/3"></td><td><input class="parse-field" id="7-n" placeholder="s/p"></td><td><input class="parse-field" id="7-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="7-r" placeholder="root"></td><td><input class="parse-field" id="7-wc" placeholder="class"></td><td><input class="parse-field" id="7-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="7-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="ans-heb">תַּחְמֹד֙</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">חָמַד</td><td>I-gutt. (ח)</td><td>Imperfect</td><td colspan="2">Prohibition (לֹא) — chateph under ח causes patach prefix (not hireq); "you shall not covet" — Decalogue</td></tr>
+  <tr>
+    <td class="num">8</td><td class="heb">וַֽיַּעֲמֹ֥ד</td>
+    <td><input class="parse-field" id="8-p" placeholder="1/2/3"></td><td><input class="parse-field" id="8-n" placeholder="s/p"></td><td><input class="parse-field" id="8-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="8-r" placeholder="root"></td><td><input class="parse-field" id="8-wc" placeholder="class"></td><td><input class="parse-field" id="8-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="8-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">וַֽיַּעֲמֹ֥ד</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">עָמַד</td><td>I-gutt. (ע)</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — chateph-patach under ע; patach prefix יַעֲ–; "and Moses stood before Pharaoh"</td></tr>
+</table>
+
+<hr class="sec">
+
+<!-- PASSAGE C -->
+<h2>Passage C — I-נ and I-י (Genesis 3–4)</h2>
+<div class="passage">
+<p><strong>וַיִּתֵּ֨ן</strong> יְהוָ֧ה אֱלֹהִ֛ים לְאָדָ֖ם</p>
+<p><strong>וַיֵּ֤דַע</strong> קַ֙יִן֙ אֶת־אִשְׁתֹּ֔ו</p>
+<p><strong>יִתֵּ֥ן</strong> לְכֶ֖ם יְהוָ֥ה</p>
+<p><strong>וַיֵּ֥צֵא</strong> קַ֛יִן מִלִּפְנֵ֥י יְהוָ֖ה</p>
+</div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
+  <tr>
+    <td class="num">9</td><td class="heb">וַיִּתֵּ֨ן</td>
+    <td><input class="parse-field" id="9-p" placeholder="1/2/3"></td><td><input class="parse-field" id="9-n" placeholder="s/p"></td><td><input class="parse-field" id="9-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="9-r" placeholder="root"></td><td><input class="parse-field" id="9-wc" placeholder="class"></td><td><input class="parse-field" id="9-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="9-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="ans-heb">וַיִּתֵּ֨ן</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">נָתַן</td><td>I-נ</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — nun assimilated → dagesh forte in ת; tsere in root syllable</td></tr>
+  <tr>
+    <td class="num">10</td><td class="heb">וַיֵּ֤דַע</td>
+    <td><input class="parse-field" id="10-p" placeholder="1/2/3"></td><td><input class="parse-field" id="10-n" placeholder="s/p"></td><td><input class="parse-field" id="10-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="10-r" placeholder="root"></td><td><input class="parse-field" id="10-wc" placeholder="class"></td><td><input class="parse-field" id="10-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="10-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">וַיֵּ֤דַע</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">יָדַע</td><td>I-י</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — tsere prefix (יֵ–); yod at R1 contracts with prefix vowel</td></tr>
+  <tr>
+    <td class="num">11</td><td class="heb">יִתֵּ֥ן</td>
+    <td><input class="parse-field" id="11-p" placeholder="1/2/3"></td><td><input class="parse-field" id="11-n" placeholder="s/p"></td><td><input class="parse-field" id="11-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="11-r" placeholder="root"></td><td><input class="parse-field" id="11-wc" placeholder="class"></td><td><input class="parse-field" id="11-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="11-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">יִתֵּ֥ן</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">נָתַן</td><td>I-נ</td><td>Imperfect</td><td colspan="2">Simple Future — same assimilation pattern; dagesh forte in ת; tsere lengthens</td></tr>
+  <tr>
+    <td class="num">12</td><td class="heb">וַיֵּ֥צֵא</td>
+    <td><input class="parse-field" id="12-p" placeholder="1/2/3"></td><td><input class="parse-field" id="12-n" placeholder="s/p"></td><td><input class="parse-field" id="12-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="12-r" placeholder="root"></td><td><input class="parse-field" id="12-wc" placeholder="class"></td><td><input class="parse-field" id="12-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="12-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">וַיֵּ֥צֵא</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">יָצָא</td><td>I-י + III-א</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — tsere prefix; also III-א (aleph quiesces at R3) — compound weak class</td></tr>
+</table>
+
+<hr class="sec">
+
+<!-- PASSAGE D -->
+<h2>Passage D — Biconsonantal and Geminate (Genesis 19, 22 · Isaiah 55 · 1 Kings 21)</h2>
+<div class="passage">
+<p><strong>וַיָּבֹ֙אוּ֙</strong> שְׁנֵ֣י הַמַּלְאָכִ֔ים סְדֹ֖מָה</p>
+<p><strong>וַיָּ֣קׇם</strong> אַבְרָהָ֗ם בַּבֹּ֙קֶר֙</p>
+<p>לֹ֥א <strong>יָשׁ֖וּב</strong> אֵלַ֑י דְּבָרִ֖י</p>
+<p><strong>וַיָּ֤סׇּב</strong> הַמֶּ֙לֶך֙</p>
+</div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
+  <tr>
+    <td class="num">13</td><td class="heb">וַיָּבֹ֙אוּ֙</td>
+    <td><input class="parse-field" id="13-p" placeholder="1/2/3"></td><td><input class="parse-field" id="13-n" placeholder="s/p"></td><td><input class="parse-field" id="13-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="13-r" placeholder="root"></td><td><input class="parse-field" id="13-wc" placeholder="class"></td><td><input class="parse-field" id="13-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="13-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-13"><td class="ans-lbl">✓</td><td class="ans-heb">וַיָּבֹ֙אוּ֙</td><td>3</td><td>p</td><td>m</td><td class="ans-heb">בּוֹא</td><td>Biconsonantal</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — וַיָּ– prefix with qamets; 3mp -וּ suffix; "and the two angels came"</td></tr>
+  <tr>
+    <td class="num">14</td><td class="heb">וַיָּ֣קׇם</td>
+    <td><input class="parse-field" id="14-p" placeholder="1/2/3"></td><td><input class="parse-field" id="14-n" placeholder="s/p"></td><td><input class="parse-field" id="14-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="14-r" placeholder="root"></td><td><input class="parse-field" id="14-wc" placeholder="class"></td><td><input class="parse-field" id="14-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="14-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-14"><td class="ans-lbl">✓</td><td class="ans-heb">וַיָּ֣קׇם</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">קוּם</td><td>Biconsonantal</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — qamets under prefix; short form (qamets hatuf in root); "and Abraham arose"</td></tr>
+  <tr>
+    <td class="num">15</td><td class="heb">יָשׁ֖וּב</td>
+    <td><input class="parse-field" id="15-p" placeholder="1/2/3"></td><td><input class="parse-field" id="15-n" placeholder="s/p"></td><td><input class="parse-field" id="15-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="15-r" placeholder="root"></td><td><input class="parse-field" id="15-wc" placeholder="class"></td><td><input class="parse-field" id="15-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="15-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">יָשׁ֖וּב</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">שׁוּב</td><td>Biconsonantal</td><td>Imperfect</td><td colspan="2">Simple Future — qamets under prefix + shureq (ו) as middle vowel; "my word shall not return"</td></tr>
+  <tr>
+    <td class="num">16</td><td class="heb">וַיָּ֤סׇּב</td>
+    <td><input class="parse-field" id="16-p" placeholder="1/2/3"></td><td><input class="parse-field" id="16-n" placeholder="s/p"></td><td><input class="parse-field" id="16-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="16-r" placeholder="root"></td><td><input class="parse-field" id="16-wc" placeholder="class"></td><td><input class="parse-field" id="16-ft" placeholder="Impf/Wyyq/Juss"></td><td><input class="parse-field" id="16-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-16"><td class="ans-lbl">✓</td><td class="ans-heb">וַיָּ֤סׇּב</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">סָבַב</td><td>Geminate</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — qamets under prefix + dagesh forte in doubled root consonant ב; holem; "and the king turned"</td></tr>
+</table>
+
+<script>
+  const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];
+  function tog(id) { const r=document.getElementById('ans-'+id); const b=r.previousElementSibling.querySelector('button'); const v=r.style.display==='table-row'; r.style.display=v?'none':'table-row'; b.textContent=v?'▶ Answer':'▼ Hide'; b.classList.toggle('on',!v); }
+  function showAll() { ids.forEach(id=>{const r=document.getElementById('ans-'+id);const b=r.previousElementSibling.querySelector('button');r.style.display='table-row';b.textContent='▼ Hide';b.classList.add('on');}); }
+  function hideAll() { ids.forEach(id=>{const r=document.getElementById('ans-'+id);const b=r.previousElementSibling.querySelector('button');r.style.display='none';b.textContent='▶ Answer';b.classList.remove('on');}); }
+  function clearAll() { document.querySelectorAll('input.f').forEach(e=>e.value=''); }
+</script>
+

@@ -4,4 +4,464 @@
 
 [Full screen](ch34-function-sort.html){.md-button}  [Markdown](ch34-function-sort.md){.md-button}  [Print (PDF)](ch34-function-sort.pdf){.md-button}
 
-<iframe src="ch34-function-sort.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Function Sort"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .ref-table td, .ref-table th { font-size: .85em; }
+  .discussion { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  ol.disc { margin: .4em 0 0 1.2em; padding: 0; }
+  ol.disc li { margin-bottom: .4em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch34-function-sort.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch34-function-sort.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Chapter 34 — Hithpael Semantic Function Sorting</h1>
+<p class="subtitle">BBH Chapter 34 · Hithpael Strong Verbs</p>
+
+<p>Classify each Hithpael verb as <strong>R</strong> (Reflexive), <strong>RC</strong> (Reciprocal), <strong>IT</strong> (Iterative), <strong>ES</strong> (Estimative), or <strong>DN</strong> (Denominative). Type your answer in the Function column, then click <strong>▶ Answer</strong> to check.</p>
+
+<table class="ref-table">
+  <tr>
+    <th>Code</th><th>Function</th><th>Diagnostic question</th>
+  </tr>
+  <tr><td><strong>R</strong></td><td>Reflexive</td><td>Is the subject doing the action <em>to or for itself</em>? (Subject = object)</td></tr>
+  <tr><td><strong>RC</strong></td><td>Reciprocal</td><td>Are multiple subjects acting <em>on one another mutually</em>?</td></tr>
+  <tr><td><strong>IT</strong></td><td>Iterative/Frequentative</td><td>Is the action <em>repeated, habitual, or extended through time</em>?</td></tr>
+  <tr><td><strong>ES</strong></td><td>Estimative/Declarative</td><td>Is the subject <em>presenting or considering itself as being</em> in a state?</td></tr>
+  <tr><td><strong>DN</strong></td><td>Denominative</td><td>Is the verb derived from a <em>noun</em>, with the subject performing the noun's characteristic action?</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Tip:</strong> Subject acts on itself → <strong>Reflexive</strong>.
+  Subjects act on one another → <strong>Reciprocal</strong>.
+  Action repeated/habitual → <strong>Iterative</strong>.
+  Subject presents itself as X → <strong>Estimative</strong>.
+  Verb built from a noun → <strong>Denominative</strong>.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th><th>Hebrew</th><th>Conjugation</th><th>Root</th><th>Ref</th><th>Gloss</th><th>Function</th><th></th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">מִתְהַלֵּךְ</span></td>
+    <td>Participle ms</td>
+    <td><span class="heb">הָלַךְ</span></td>
+    <td>Gen 3:8</td>
+    <td>"walking about"</td>
+    <td><input class="parse-field" id="f1" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="8"><strong>IT — Iterative</strong> · Root: <span class="heb">הָלַךְ</span> · Walking back and forth — ongoing, habitual movement, not a single walk</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">וַיִּתְחַבֵּא</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">חָבָא</span></td>
+    <td>Gen 3:8</td>
+    <td>"he hid himself"</td>
+    <td><input class="parse-field" id="f2" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">חָבָא</span> · Adam hid himself — the subject is both agent and object of the hiding action</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">וַיִּתְהַלֵּךְ</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">הָלַךְ</span></td>
+    <td>Gen 5:22</td>
+    <td>"he walked about"</td>
+    <td><input class="parse-field" id="f3" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="8"><strong>IT — Iterative</strong> · Root: <span class="heb">הָלַךְ</span> · Enoch walked with God habitually over his lifetime — a pattern of conduct, not a single event</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">וַיִּתְעַצֵּב</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">עָצַב</span></td>
+    <td>Gen 6:6</td>
+    <td>"he was grieved"</td>
+    <td><input class="parse-field" id="f4" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">עָצַב</span> · God's grief is directed inward — subject experiencing the action within itself</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">וַיִּתְגַּל</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">גָּלָה</span></td>
+    <td>Gen 9:21</td>
+    <td>"he uncovered himself"</td>
+    <td><input class="parse-field" id="f5" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">גָּלָה</span> · Noah uncovered himself — acted upon his own body (III-he root: apocopated wayyiqtol, ה dropped)</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">הִתְהַלֵּךְ</span></td>
+    <td>Imperative 2ms</td>
+    <td><span class="heb">הָלַךְ</span></td>
+    <td>Gen 13:17</td>
+    <td>"walk about!"</td>
+    <td><input class="parse-field" id="f6" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="8"><strong>IT — Iterative</strong> · Root: <span class="heb">הָלַךְ</span> · Command to traverse the land repeatedly in all directions</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">הִתְעַנִּי</span></td>
+    <td>Imperative 2fs</td>
+    <td><span class="heb">עָנָה</span></td>
+    <td>Gen 16:9</td>
+    <td>"humble yourself!"</td>
+    <td><input class="parse-field" id="f7" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">עָנָה</span> · Return and humble yourself — the subject is commanded to submit herself</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">הִתְהַלֵּךְ</span></td>
+    <td>Imperative 2ms</td>
+    <td><span class="heb">הָלַךְ</span></td>
+    <td>Gen 17:1</td>
+    <td>"walk about before me"</td>
+    <td><input class="parse-field" id="f8" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="8"><strong>IT — Iterative</strong> · Root: <span class="heb">הָלַךְ</span> · "Walk before me" — ongoing conduct of life as a pattern of faithfulness</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">וַיִּשְׁתַּחוּ</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">שָׁחָה</span></td>
+    <td>Gen 18:2</td>
+    <td>"he bowed down"</td>
+    <td><input class="parse-field" id="f9" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">שָׁחָה</span> · Abraham prostrated himself — acted upon his own body in obeisance (metathesis + III-he form)</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">וַיִּשְׁתַּחוּ</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">שָׁחָה</span></td>
+    <td>Gen 19:1</td>
+    <td>"he bowed down"</td>
+    <td><input class="parse-field" id="f10" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">שָׁחָה</span> · Same form as #9; Lot bowed himself to the ground before the angelic visitors</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">וַיִּתְפַּלֵּל</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">פָּלַל</span></td>
+    <td>Gen 20:17</td>
+    <td>"he prayed"</td>
+    <td><input class="parse-field" id="f11" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="8"><strong>DN — Denominative</strong> · Root: <span class="heb">פָּלַל</span> · Performing the characteristic act of intercession — "to act as an intercessor/mediator" derived from a judicial/arbitration concept</td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">הִתְבָּרֲכוּ</span></td>
+    <td>Weqatal 3cp</td>
+    <td><span class="heb">בָּרַךְ</span></td>
+    <td>Gen 22:18</td>
+    <td>"they will bless themselves"</td>
+    <td><input class="parse-field" id="f12" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">בָּרַךְ</span> · Nations enacting blessing for themselves through Abraham's seed; the reflexive reading of this debated formula</td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">הִתְהַלַּכְתִּי</span></td>
+    <td>Qatal 1cs</td>
+    <td><span class="heb">הָלַךְ</span></td>
+    <td>Gen 24:40</td>
+    <td>"I have walked about"</td>
+    <td><input class="parse-field" id="f13" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="8"><strong>IT — Iterative</strong> · Root: <span class="heb">הָלַךְ</span> · Abraham's report of a lifetime pattern of walking before the LORD</td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">וַיִּשְׁתַּחוּ</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">שָׁחָה</span></td>
+    <td>Gen 24:26</td>
+    <td>"he bowed down"</td>
+    <td><input class="parse-field" id="f14" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">שָׁחָה</span> · Abraham's servant bowed himself down in gratitude to the LORD</td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">הִתְעַשְּׂקוּ</span></td>
+    <td>Qatal 3cp</td>
+    <td><span class="heb">עָשַׂק</span></td>
+    <td>Gen 26:20</td>
+    <td>"they quarreled"</td>
+    <td><input class="parse-field" id="f15" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="8"><strong>RC — Reciprocal</strong> · Root: <span class="heb">עָשַׂק</span> · Isaac's herdsmen and the local herdsmen quarreled with one another — mutual strife between two parties</td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td><span class="heb">מִתְנַחֵם</span></td>
+    <td>Participle ms</td>
+    <td><span class="heb">נָחַם</span></td>
+    <td>Gen 27:42</td>
+    <td>"is comforting himself"</td>
+    <td><input class="parse-field" id="f16" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r16">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">נָחַם</span> · Esau is consoling himself with plans of revenge — inward reflexive state</td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td><span class="heb">וַיִּתְנַכְּלוּ</span></td>
+    <td>Wayyiqtol 3mp</td>
+    <td><span class="heb">נָכַל</span></td>
+    <td>Gen 37:18</td>
+    <td>"they plotted against"</td>
+    <td><input class="parse-field" id="f17" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r17">
+    <td colspan="8"><strong>RC — Reciprocal</strong> · Root: <span class="heb">נָכַל</span> · Joseph's brothers conspired together against him — the plotting involves mutual coordination among multiple agents</td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td><span class="heb">וַיִּתְאַבֵּל</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">אָבַל</span></td>
+    <td>Gen 37:34</td>
+    <td>"he mourned"</td>
+    <td><input class="parse-field" id="f18" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r18">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">אָבַל</span> · Jacob mourned — inward grief directed toward himself, expressed outwardly through mourning rites</td>
+  </tr>
+
+  <tr>
+    <td>19</td>
+    <td><span class="heb">וַתִּתְכַּסֶּה</span></td>
+    <td>Wayyiqtol 3fs</td>
+    <td><span class="heb">כָּסָה</span></td>
+    <td>Gen 24:65</td>
+    <td>"she covered herself"</td>
+    <td><input class="parse-field" id="f19" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r19">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">כָּסָה</span> · Rebekah veiled herself — performed the action upon her own person at the approach of Isaac</td>
+  </tr>
+
+  <tr>
+    <td>20</td>
+    <td><span class="heb">וַיִּשְׁתַּחֲווּ</span></td>
+    <td>Wayyiqtol 3mp</td>
+    <td><span class="heb">שָׁחָה</span></td>
+    <td>Gen 33:7</td>
+    <td>"they bowed down"</td>
+    <td><input class="parse-field" id="f20" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r20">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">שָׁחָה</span> · Leah and her children each prostrated themselves — each one performed the action upon his/her own body</td>
+  </tr>
+
+  <tr>
+    <td>21</td>
+    <td><span class="heb">אֶתְנַהֲלָה</span></td>
+    <td>Cohortative 1cs</td>
+    <td><span class="heb">נָהַל</span></td>
+    <td>Gen 33:14</td>
+    <td>"I will journey on slowly"</td>
+    <td><input class="parse-field" id="f21" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r21">
+    <td colspan="8"><strong>IT — Iterative</strong> · Root: <span class="heb">נָהַל</span> · "I will lead along slowly" — gradual, ongoing movement at a measured pace through the journey</td>
+  </tr>
+
+  <tr>
+    <td>22</td>
+    <td><span class="heb">הִתְקַדְּשׁוּ</span></td>
+    <td>Imperative 2mp</td>
+    <td><span class="heb">קָדַשׁ</span></td>
+    <td>Exo 19:22</td>
+    <td>"consecrate yourselves!"</td>
+    <td><input class="parse-field" id="f22" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r22">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">קָדַשׁ</span> · The priests are commanded to prepare/purify their own persons — they apply holiness to themselves</td>
+  </tr>
+
+  <tr>
+    <td>23</td>
+    <td><span class="heb">וַיִּתְחַזֵּק</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td><span class="heb">חָזַק</span></td>
+    <td>Exo 7:13</td>
+    <td>"and his heart was strengthened"</td>
+    <td><input class="parse-field" id="f23" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r23">
+    <td colspan="8"><strong>R — Reflexive</strong> · Root: <span class="heb">חָזַק</span> · Pharaoh's heart strengthened itself — the heart is simultaneously agent and object of the hardening</td>
+  </tr>
+
+  <tr>
+    <td>24</td>
+    <td><span class="heb">יִתְהַלְּלוּ</span></td>
+    <td>Imperfect 3mp</td>
+    <td><span class="heb">הָלַל</span></td>
+    <td>Ps 97:7</td>
+    <td>"they glory in idols"</td>
+    <td><input class="parse-field" id="f24" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r24">
+    <td colspan="8"><strong>ES — Estimative</strong> · Root: <span class="heb">הָלַל</span> · They present themselves as glorious/praiseworthy before idols — the subject is performing/displaying a posture of glory</td>
+  </tr>
+
+  <tr>
+    <td>25</td>
+    <td><span class="heb">הִתְחַזְּקוּ</span></td>
+    <td>Imperative 2mp</td>
+    <td><span class="heb">חָזַק</span></td>
+    <td>Jos 1:6</td>
+    <td>"be strong!"</td>
+    <td><input class="parse-field" id="f25" placeholder="R/RC/IT/ES/DN"></td>
+    <td><button class="reveal-btn" onclick="toggle('r25')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r25">
+    <td colspan="8"><strong>ES — Estimative</strong> · Root: <span class="heb">חָזַק</span> · Present yourself as strong = show yourself to be strong; the Hithpael adds a performative/volitional nuance absent from Qal חָזַק</td>
+  </tr>
+
+</table>
+
+<h2>Discussion Questions</h2>
+<div class="discussion">
+  <ol class="disc">
+    <li>The Hithpael of <span class="heb">הָלַךְ</span> appears five times (items 1, 3, 6, 8, 13). Why is this classified as Iterative rather than Reflexive? What does the "walking about" context add that a single walk would not?</li>
+    <li>Item 12 (<span class="heb">הִתְבָּרֲכוּ</span>, Gen 22:18): this form can be translated "bless themselves" (Reflexive) or "be blessed" (passive-like). The same tension appears in Gen 12:3. What grammatical evidence would help decide between these interpretations?</li>
+    <li>Items 15 (<span class="heb">הִתְעַשְּׂקוּ</span>, quarreled) and 17 (<span class="heb">וַיִּתְנַכְּלוּ</span>, plotted): both involve conflict between parties. What makes one Reciprocal and the other more Reflexive/Collective? Does the context of Gen 26:20 vs. Gen 37:18 help?</li>
+    <li>Items 24–25 (Estimative): the ES function is the rarest Hithpael class. In what way does <span class="heb">הִתְחַזֵּק</span> ("present yourself as strong" → "be strong") differ from a plain Qal <span class="heb">חָזַק</span> ("be strong")? What does the Hithpael add pragmatically?</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  const btn = row.previousElementSibling.querySelector('.reveal-btn');
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    btn.textContent = '▶ Answer';
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+}
+</script>
+

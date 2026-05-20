@@ -4,4 +4,525 @@
 
 [Full screen](ch3-syllable-division.html){.md-button}  [Markdown](ch3-syllable-division.md){.md-button}  [Print (PDF)](ch3-syllable-division.pdf){.md-button}
 
-<iframe src="ch3-syllable-division.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Syllable Division"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 1.8em; font-weight: bold; width: 8rem; padding: .25rem .5rem; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.2em; }
+  .ans-div { font-family: Georgia, serif; font-size: .95rem; direction: rtl; unicode-bidi: embed; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
+  .reflection { background: #f4f4fc; border-left: 4px solid #88a; padding: .75rem 1rem; margin: 1.5rem 0; font-size: .91rem; }
+  .reflection ol { margin: .5rem 0 0 1.2rem; padding: 0; }
+  .reflection li { margin-bottom: .5rem; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    .ans-row { display: none !important; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch3-syllable-division.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch3-syllable-division.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Ch3 Syllable Division Exercise — Syllabification and Pronunciation</h1>
+<p class="subtitle">BBH Chapter 3 · 20 words</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each Hebrew word:
+  <ol style="margin:.4rem 0 0 1.2rem;padding:0;">
+    <li>Write the syllable division using hyphens (e.g., דָּ-בָר)</li>
+    <li>Label each syllable <strong>O</strong> (open) or <strong>C</strong> (closed) — e.g., O-C</li>
+    <li>Mark the stressed syllable with an asterisk (*) in the Stress column — write the stressed syllable</li>
+    <li>Note any <strong>Qamets Hatuf</strong> (short ŏ) — write QH, or — if none</li>
+  </ol>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Word</th>
+    <th>Syllable Division</th>
+    <th>Types (O/C)</th>
+    <th>Stress</th>
+    <th>Qamets Hatuf?</th>
+    <th></th>
+  </tr>
+
+  <!-- 1 -->
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">אֱלֹהִים</td>
+    <td><input class="parse-field" id="1-div" placeholder="e.g. אֱ-לֹ-הִים"></td>
+    <td><input class="parse-field" id="1-typ" placeholder="O-O-C"></td>
+    <td><input class="parse-field" id="1-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="1-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">אֱלֹהִים</td>
+    <td class="ans-div">אֱ-לֹ-הִים</td>
+    <td>O-O-C</td>
+    <td>הִים*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Hateph seghol (guttural); final mem closes syl. 3</td>
+  </tr>
+
+  <!-- 2 -->
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">בְּרֵאשִׁית</td>
+    <td><input class="parse-field" id="2-div" placeholder="division"></td>
+    <td><input class="parse-field" id="2-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="2-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="2-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">בְּרֵאשִׁית</td>
+    <td class="ans-div">בְּ-רֵא-שִׁית</td>
+    <td>O-O-C</td>
+    <td>שִׁית*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Vocal shewa (word-initial); aleph mater in syl. 2; yod mater in syl. 3; taw closes</td>
+  </tr>
+
+  <!-- 3 -->
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">הָאָרֶץ</td>
+    <td><input class="parse-field" id="3-div" placeholder="division"></td>
+    <td><input class="parse-field" id="3-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="3-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="3-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">הָאָרֶץ</td>
+    <td class="ans-div">הָ-אָ-רֶץ</td>
+    <td>O-O-C</td>
+    <td>רֶץ*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Article הָ open; aleph (guttural) opens syl. 2; both qamets = long ā (open syllables)</td>
+  </tr>
+
+  <!-- 4 -->
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">שָׁמַיִם</td>
+    <td><input class="parse-field" id="4-div" placeholder="division"></td>
+    <td><input class="parse-field" id="4-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="4-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="4-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">שָׁמַיִם</td>
+    <td class="ans-div">שָׁ-מַ-יִם</td>
+    <td>O-O-C</td>
+    <td>יִם*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">שָׁ open (long ā); מַ open (patach); yod opens syl. 3; final mem closes</td>
+  </tr>
+
+  <!-- 5 -->
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">יְרוּשָׁלַיִם</td>
+    <td><input class="parse-field" id="5-div" placeholder="division"></td>
+    <td><input class="parse-field" id="5-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="5-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="5-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">יְרוּשָׁלַיִם</td>
+    <td class="ans-div">יְ-רוּ-שָׁ-לַ-יִם</td>
+    <td>O-O-O-O-C</td>
+    <td>יִם*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Vocal shewa (word-initial); five syllables; waw mater (long û); final mem closes</td>
+  </tr>
+
+  <!-- 6 -->
+  <tr>
+    <td class="num">6</td>
+    <td class="heb">דָּבָר</td>
+    <td><input class="parse-field" id="6-div" placeholder="division"></td>
+    <td><input class="parse-field" id="6-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="6-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="6-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">דָּבָר</td>
+    <td class="ans-div">דָּ-בָר</td>
+    <td>O-O</td>
+    <td>בָר*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Both syllables open; both qamets = long ā; milra (stress on ultima)</td>
+  </tr>
+
+  <!-- 7 -->
+  <tr>
+    <td class="num">7</td>
+    <td class="heb">מֶלֶךְ</td>
+    <td><input class="parse-field" id="7-div" placeholder="division"></td>
+    <td><input class="parse-field" id="7-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="7-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="7-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">מֶלֶךְ</td>
+    <td class="ans-div">מֶ-לֶךְ</td>
+    <td>O-C</td>
+    <td>לֶךְ*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Syl. 1 open (seghol); syl. 2 closed by final kaph (silent shewa)</td>
+  </tr>
+
+  <!-- 8 -->
+  <tr>
+    <td class="num">8</td>
+    <td class="heb">בְּרִית</td>
+    <td><input class="parse-field" id="8-div" placeholder="division"></td>
+    <td><input class="parse-field" id="8-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="8-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="8-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">בְּרִית</td>
+    <td class="ans-div">בְּ-רִית</td>
+    <td>O-C</td>
+    <td>רִית*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Vocal shewa (word-initial bet); yod mater (long hireq); final taw closes</td>
+  </tr>
+
+  <!-- 9 -->
+  <tr>
+    <td class="num">9</td>
+    <td class="heb">שָׁבַת</td>
+    <td><input class="parse-field" id="9-div" placeholder="division"></td>
+    <td><input class="parse-field" id="9-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="9-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="9-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">שָׁבַת</td>
+    <td class="ans-div">שָׁ-בַת</td>
+    <td>O-C</td>
+    <td>בַת*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">שָׁ open (long ā); בַת closed by final taw; note: Dagesh Lene in bet (not Forte)</td>
+  </tr>
+
+  <!-- 10 -->
+  <tr>
+    <td class="num">10</td>
+    <td class="heb">נָבִיא</td>
+    <td><input class="parse-field" id="10-div" placeholder="division"></td>
+    <td><input class="parse-field" id="10-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="10-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="10-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">נָבִיא</td>
+    <td class="ans-div">נָ-בִיא</td>
+    <td>O-O</td>
+    <td>בִיא*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">נָ open; yod mater (long hireq); aleph quiesces word-finally; ultima is open</td>
+  </tr>
+
+  <!-- 11 -->
+  <tr>
+    <td class="num">11</td>
+    <td class="heb">אֲדֹנָי</td>
+    <td><input class="parse-field" id="11-div" placeholder="division"></td>
+    <td><input class="parse-field" id="11-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="11-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="11-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">אֲדֹנָי</td>
+    <td class="ans-div">אֲ-דֹ-נָי</td>
+    <td>O-O-O</td>
+    <td>נָי*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Hateph patach under aleph (guttural, not simple vocal shewa); all three syllables open</td>
+  </tr>
+
+  <!-- 12 -->
+  <tr>
+    <td class="num">12</td>
+    <td class="heb">יִשְׂרָאֵל</td>
+    <td><input class="parse-field" id="12-div" placeholder="division"></td>
+    <td><input class="parse-field" id="12-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="12-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="12-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">יִשְׂרָאֵל</td>
+    <td class="ans-div">יִשׂ-רָ-אֵל</td>
+    <td>C-O-C</td>
+    <td>אֵל*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Silent shewa under sin (closes syl. 1); רָ open; aleph quiescent in syl. 3; tsere-aleph mater; lamed closes</td>
+  </tr>
+
+  <!-- 13 -->
+  <tr>
+    <td class="num">13</td>
+    <td class="heb">כֹּהֵן</td>
+    <td><input class="parse-field" id="13-div" placeholder="division"></td>
+    <td><input class="parse-field" id="13-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="13-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="13-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-13">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">כֹּהֵן</td>
+    <td class="ans-div">כֹּ-הֵן</td>
+    <td>O-C</td>
+    <td>הֵן*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Holem on kaph (open); he opens syl. 2 with tsere; nun closes</td>
+  </tr>
+
+  <!-- 14 -->
+  <tr>
+    <td class="num">14</td>
+    <td class="heb">מִשְׁפָּט</td>
+    <td><input class="parse-field" id="14-div" placeholder="division"></td>
+    <td><input class="parse-field" id="14-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="14-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="14-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-14">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">מִשְׁפָּט</td>
+    <td class="ans-div">מִשׁ-פָּט</td>
+    <td>C-C</td>
+    <td>פָּט*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Silent shewa under shin (closes syl. 1); Dagesh Forte in pe; qamets long ā (accented); tet closes syl. 2</td>
+  </tr>
+
+  <!-- 15 -->
+  <tr>
+    <td class="num">15</td>
+    <td class="heb">תּוֹרָה</td>
+    <td><input class="parse-field" id="15-div" placeholder="division"></td>
+    <td><input class="parse-field" id="15-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="15-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="15-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-15">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">תּוֹרָה</td>
+    <td class="ans-div">תּוֹ-רָה</td>
+    <td>O-O</td>
+    <td>רָה*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Waw mater (long holem); he at word-end = vowel letter (no mappiq); both syllables open</td>
+  </tr>
+
+  <!-- 16 -->
+  <tr>
+    <td class="num">16</td>
+    <td class="heb">שָׁלוֹם</td>
+    <td><input class="parse-field" id="16-div" placeholder="division"></td>
+    <td><input class="parse-field" id="16-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="16-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="16-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-16">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">שָׁלוֹם</td>
+    <td class="ans-div">שָׁ-לוֹם</td>
+    <td>O-C</td>
+    <td>לוֹם*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">שָׁ open (long ā); waw mater (long holem); final mem closes syl. 2</td>
+  </tr>
+
+  <!-- 17 -->
+  <tr>
+    <td class="num">17</td>
+    <td class="heb">חֶסֶד</td>
+    <td><input class="parse-field" id="17-div" placeholder="division"></td>
+    <td><input class="parse-field" id="17-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="17-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="17-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-17">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">חֶסֶד</td>
+    <td class="ans-div">חֶ-סֶד</td>
+    <td>O-C</td>
+    <td>סֶד*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">חֶ open (seghol); סֶד closed by dalet; guttural (chet) opens syl. 1</td>
+  </tr>
+
+  <!-- 18 -->
+  <tr>
+    <td class="num">18</td>
+    <td class="heb">קֹדֶשׁ</td>
+    <td><input class="parse-field" id="18-div" placeholder="division"></td>
+    <td><input class="parse-field" id="18-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="18-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="18-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-18">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">קֹדֶשׁ</td>
+    <td class="ans-div">קֹ-דֶשׁ</td>
+    <td>O-C</td>
+    <td>דֶשׁ*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Holem on qoph (open); דֶשׁ closed by final shin</td>
+  </tr>
+
+  <!-- 19 -->
+  <tr>
+    <td class="num">19</td>
+    <td class="heb">אֶרֶץ</td>
+    <td><input class="parse-field" id="19-div" placeholder="division"></td>
+    <td><input class="parse-field" id="19-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="19-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="19-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-19">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">אֶרֶץ</td>
+    <td class="ans-div">אֶ-רֶץ</td>
+    <td>O-C</td>
+    <td>רֶץ*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Aleph (guttural) opens syl. 1 with seghol; רֶץ closed by final tsade</td>
+  </tr>
+
+  <!-- 20 -->
+  <tr>
+    <td class="num">20</td>
+    <td class="heb">עַם</td>
+    <td><input class="parse-field" id="20-div" placeholder="division"></td>
+    <td><input class="parse-field" id="20-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="20-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="20-qh" placeholder="QH or —"></td>
+    <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-20">
+    <td class="ans-lbl">✓</td>
+    <td class="heb" style="direction:rtl;unicode-bidi:embed;font-size:1.4em;">עַם</td>
+    <td class="ans-div">עַם</td>
+    <td>C</td>
+    <td>עַם*</td>
+    <td>—</td>
+    <td style="font-size:.82rem;color:#555;">Single closed syllable; ayin (guttural) opens; patach; final mem closes</td>
+  </tr>
+
+</table>
+
+<hr class="sec">
+
+<div class="reflection">
+  <h2 style="border:none;margin-top:0;">Reflection Questions</h2>
+  <ol>
+    <li>Look at words 6 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">דָּבָר</span>) and 7 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">מֶלֶךְ</span>). Both are common two-syllable nouns. What is the structural difference between them, and how does that difference affect the vowels you would expect in each syllable?</li>
+    <li>Word 14 is <span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">מִשְׁפָּט</span>. The dagesh in the פ is a Dagesh Forte, not a Dagesh Lene. How do you know? What does it tell you about the syllable boundary?</li>
+    <li>Words 11 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">אֲדֹנָי</span>) and 19 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">אֶרֶץ</span>) both begin with aleph. Why does אֲדֹנָי have a hateph patach while אֶרֶץ has a plain seghol? What does this tell you about the relationship between guttural behavior and syllable rules?</li>
+  </ol>
+</div>
+
+<script>
+  const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+  function tog(id) {
+    const r = document.getElementById('ans-'+id);
+    const b = r.previousElementSibling.querySelector('button');
+    const v = r.style.display === 'table-row';
+    r.style.display = v ? 'none' : 'table-row';
+    b.textContent = v ? '▶ Answer' : '▼ Hide';
+    b.classList.toggle('on', !v);
+  }
+  function showAll() {
+    ids.forEach(id => {
+      const r = document.getElementById('ans-'+id);
+      const b = r.previousElementSibling.querySelector('button');
+      r.style.display = 'table-row';
+      b.textContent = '▼ Hide';
+      b.classList.add('on');
+    });
+  }
+  function hideAll() {
+    ids.forEach(id => {
+      const r = document.getElementById('ans-'+id);
+      const b = r.previousElementSibling.querySelector('button');
+      r.style.display = 'none';
+      b.textContent = '▶ Answer';
+      b.classList.remove('on');
+    });
+  }
+  function clearAll() {
+    document.querySelectorAll('input.f').forEach(e => e.value = '');
+  }
+</script>
+

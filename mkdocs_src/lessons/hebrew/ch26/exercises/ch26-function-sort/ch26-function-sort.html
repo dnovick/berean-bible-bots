@@ -14,7 +14,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
-  input.ans-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
   button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
@@ -28,12 +28,19 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.ans-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 </style>
 </head>
 <body>
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch26-function-sort.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch26-function-sort.pdf">&#128209; PDF</a>
+</div>
+
 
 <h1>Chapter 26 — Semantic Function Sorting</h1>
 <p class="subtitle">BBH Chapter 26 · Hiphil Strong Verbs</p>
@@ -76,7 +83,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 2:19</td>
     <td>"he brought them to the man"</td>
-    <td><input class="ans-field" id="f1" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f1" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -89,7 +96,7 @@
     <td>Wayyiqtol 3fs</td>
     <td>Gen 1:12</td>
     <td>"the earth brought forth vegetation"</td>
-    <td><input class="ans-field" id="f2" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f2" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -102,7 +109,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 14:16</td>
     <td>"he brought back his brother Lot"</td>
-    <td><input class="ans-field" id="f3" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f3" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -115,7 +122,7 @@
     <td>Perfect 3ms</td>
     <td>Gen 2:6</td>
     <td>"a mist watered the whole surface"</td>
-    <td><input class="ans-field" id="f4" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f4" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -128,7 +135,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 5:3</td>
     <td>"Adam fathered a son"</td>
-    <td><input class="ans-field" id="f5" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f5" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -141,7 +148,7 @@
     <td>Imperative 2ms</td>
     <td>Gen 22:2</td>
     <td>"offer him as a burnt offering"</td>
-    <td><input class="ans-field" id="f6" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f6" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -154,7 +161,7 @@
     <td>Wayyiqtol 3fs</td>
     <td>Gen 24:18</td>
     <td>"she lowered her jar to give him a drink"</td>
-    <td><input class="ans-field" id="f7" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f7" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -167,7 +174,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 30:35</td>
     <td>"he removed the streaked goats"</td>
-    <td><input class="ans-field" id="f8" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f8" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -180,7 +187,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 9:22</td>
     <td>"Ham told his two brothers"</td>
-    <td><input class="ans-field" id="f9" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f9" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -193,7 +200,7 @@
     <td>Weqatal 3ms</td>
     <td>Gen 3:11</td>
     <td>"who told you that you were naked?"</td>
-    <td><input class="ans-field" id="f10" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f10" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -206,7 +213,7 @@
     <td>Wayyiqtol 3fs</td>
     <td>Gen 21:15</td>
     <td>"she threw the child under one of the bushes"</td>
-    <td><input class="ans-field" id="f11" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f11" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -219,7 +226,7 @@
     <td>Perfect 2ms</td>
     <td>Gen 40:14</td>
     <td>"mention me to Pharaoh"</td>
-    <td><input class="ans-field" id="f12" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f12" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -232,7 +239,7 @@
     <td>Participle ms</td>
     <td>Gen 41:9</td>
     <td>"I am bringing my faults to mind"</td>
-    <td><input class="ans-field" id="f13" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f13" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -245,7 +252,7 @@
     <td>Inf. Construct</td>
     <td>Gen 18:25</td>
     <td>"Far be it from you to put the righteous to death"</td>
-    <td><input class="ans-field" id="f14" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f14" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -258,7 +265,7 @@
     <td>Inf. Construct</td>
     <td>Gen 4:15</td>
     <td>"lest anyone who found him strike him"</td>
-    <td><input class="ans-field" id="f15" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f15" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -271,7 +278,7 @@
     <td>Perfect 1cs</td>
     <td>Lev 26:30</td>
     <td>"I will destroy your high places"</td>
-    <td><input class="ans-field" id="f16" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f16" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r16">
@@ -284,7 +291,7 @@
     <td>Imperfect 2mp</td>
     <td>Num 33:52</td>
     <td>"you shall demolish all their figured stones"</td>
-    <td><input class="ans-field" id="f17" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f17" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r17">
@@ -297,7 +304,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Exo 8:32</td>
     <td>"Pharaoh hardened his heart this time also"</td>
-    <td><input class="ans-field" id="f18" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f18" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r18">
@@ -310,7 +317,7 @@
     <td>Inf. Absolute</td>
     <td>Exo 8:15</td>
     <td>"he made his heart stubborn" (intensified)</td>
-    <td><input class="ans-field" id="f19" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f19" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r19">
@@ -323,7 +330,7 @@
     <td>Wayyiqtol 2ms</td>
     <td>Gen 19:19</td>
     <td>"you have shown great kindness to me"</td>
-    <td><input class="ans-field" id="f20" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f20" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r20">
@@ -336,7 +343,7 @@
     <td>Perfect 3cp</td>
     <td>Deu 25:1</td>
     <td>"they shall acquit the innocent and condemn the guilty"</td>
-    <td><input class="ans-field" id="f21" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f21" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r21">
@@ -349,7 +356,7 @@
     <td>Imperfect 3mp</td>
     <td>Exo 22:8</td>
     <td>"the judges shall declare him guilty"</td>
-    <td><input class="ans-field" id="f22" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f22" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r22">
@@ -362,7 +369,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 8:20</td>
     <td>"Noah offered burnt offerings on the altar"</td>
-    <td><input class="ans-field" id="f23" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f23" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r23">
@@ -375,7 +382,7 @@
     <td>Inf. Construct</td>
     <td>Gen 37:18</td>
     <td>"they conspired against him to kill him"</td>
-    <td><input class="ans-field" id="f24" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f24" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r24">
@@ -388,7 +395,7 @@
     <td>Participle ms</td>
     <td>Gen 7:4</td>
     <td>"I am about to send rain on the earth"</td>
-    <td><input class="ans-field" id="f25" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f25" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r25')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r25">
@@ -401,7 +408,7 @@
     <td>Wayyiqtol 3ms</td>
     <td>Gen 22:3</td>
     <td>"Abraham rose early in the morning"</td>
-    <td><input class="ans-field" id="f26" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f26" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r26')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r26">
@@ -414,7 +421,7 @@
     <td>Imperative 2mp</td>
     <td>Deu 32:1</td>
     <td>"give ear, O heavens, and I will speak"</td>
-    <td><input class="ans-field" id="f27" placeholder="C/F/D/SA/DN"></td>
+    <td><input class="parse-field" id="f27" placeholder="C/F/D/SA/DN"></td>
     <td><button class="reveal-btn" onclick="toggle('r27')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r27">
@@ -454,7 +461,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.ans-field').forEach(i => i.value = '');
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
 }
 </script>
 </body>

@@ -14,7 +14,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
-  input.ans-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
   button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
@@ -28,12 +28,19 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.ans-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 </style>
 </head>
 <body>
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch30-qal-piel-contrast.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch30-qal-piel-contrast.pdf">&#128209; PDF</a>
+</div>
+
 
 <h1>Chapter 30 — Qal–Piel Contrast Drill</h1>
 <p class="subtitle">BBH Chapter 30 · Piel Strong Verbs</p>
@@ -70,8 +77,8 @@
     <td>to break</td>
     <td><span class="heb">שִׁבֵּר</span> (Perfect 3ms)</td>
     <td>Exo 32:19</td>
-    <td><input class="ans-field" id="t1" placeholder="translation"></td>
-    <td><input class="ans-field" id="f1" placeholder="function"></td>
+    <td><input class="parse-field" id="t1" placeholder="translation"></td>
+    <td><input class="parse-field" id="f1" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -84,8 +91,8 @@
     <td>to cover</td>
     <td><span class="heb">יְכַסּוּ</span> (Wayyiqtol 3mp)</td>
     <td>Gen 9:23</td>
-    <td><input class="ans-field" id="t2" placeholder="translation"></td>
-    <td><input class="ans-field" id="f2" placeholder="function"></td>
+    <td><input class="parse-field" id="t2" placeholder="translation"></td>
+    <td><input class="parse-field" id="f2" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -98,8 +105,8 @@
     <td>to send</td>
     <td><span class="heb">יְשַׁלַּח</span> (Wayyiqtol 3ms)</td>
     <td>Gen 8:7</td>
-    <td><input class="ans-field" id="t3" placeholder="translation"></td>
-    <td><input class="ans-field" id="f3" placeholder="function"></td>
+    <td><input class="parse-field" id="t3" placeholder="translation"></td>
+    <td><input class="parse-field" id="f3" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -112,8 +119,8 @@
     <td>to drive out</td>
     <td><span class="heb">יְגָרֶשׁ</span> (Wayyiqtol 3ms)</td>
     <td>Gen 3:24</td>
-    <td><input class="ans-field" id="t4" placeholder="translation"></td>
-    <td><input class="ans-field" id="f4" placeholder="function"></td>
+    <td><input class="parse-field" id="t4" placeholder="translation"></td>
+    <td><input class="parse-field" id="f4" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -126,8 +133,8 @@
     <td>to ruin, be corrupt</td>
     <td><span class="heb">שַׁחֵת</span> (Inf. Construct)</td>
     <td>Gen 6:17</td>
-    <td><input class="ans-field" id="t5" placeholder="translation"></td>
-    <td><input class="ans-field" id="f5" placeholder="function"></td>
+    <td><input class="parse-field" id="t5" placeholder="translation"></td>
+    <td><input class="parse-field" id="f5" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -140,8 +147,8 @@
     <td>to touch, strike</td>
     <td><span class="heb">יְנַגַּע</span> (Wayyiqtol 3ms)</td>
     <td>Gen 12:17</td>
-    <td><input class="ans-field" id="t6" placeholder="translation"></td>
-    <td><input class="ans-field" id="f6" placeholder="function"></td>
+    <td><input class="parse-field" id="t6" placeholder="translation"></td>
+    <td><input class="parse-field" id="f6" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -154,8 +161,8 @@
     <td>to wash (garments)</td>
     <td><span class="heb">וְכִבְּסוּ</span> (Weqatal 3cp)</td>
     <td>Exo 19:10</td>
-    <td><input class="ans-field" id="t7" placeholder="translation"></td>
-    <td><input class="ans-field" id="f7" placeholder="function"></td>
+    <td><input class="parse-field" id="t7" placeholder="translation"></td>
+    <td><input class="parse-field" id="f7" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -182,8 +189,8 @@
     <td>to be holy</td>
     <td><span class="heb">יְקַדֵּשׁ</span> (Wayyiqtol 3ms)</td>
     <td>Gen 2:3</td>
-    <td><input class="ans-field" id="t8" placeholder="translation"></td>
-    <td><input class="ans-field" id="f8" placeholder="function"></td>
+    <td><input class="parse-field" id="t8" placeholder="translation"></td>
+    <td><input class="parse-field" id="f8" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -196,8 +203,8 @@
     <td>to be great</td>
     <td><span class="heb">אֲגַדְּלָה</span> (Yiqtol 1cs)</td>
     <td>Gen 12:2</td>
-    <td><input class="ans-field" id="t9" placeholder="translation"></td>
-    <td><input class="ans-field" id="f9" placeholder="function"></td>
+    <td><input class="parse-field" id="t9" placeholder="translation"></td>
+    <td><input class="parse-field" id="f9" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -210,8 +217,8 @@
     <td>to live, be alive</td>
     <td><span class="heb">חַיּוֹת</span> (Inf. Construct)</td>
     <td>Gen 7:3</td>
-    <td><input class="ans-field" id="t10" placeholder="translation"></td>
-    <td><input class="ans-field" id="f10" placeholder="function"></td>
+    <td><input class="parse-field" id="t10" placeholder="translation"></td>
+    <td><input class="parse-field" id="f10" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -224,8 +231,8 @@
     <td>to be profane, common</td>
     <td><span class="heb">יְחַלֵּל</span> (Wayyiqtol 3ms)</td>
     <td>Lev 21:12</td>
-    <td><input class="ans-field" id="t11" placeholder="translation"></td>
-    <td><input class="ans-field" id="f11" placeholder="function"></td>
+    <td><input class="parse-field" id="t11" placeholder="translation"></td>
+    <td><input class="parse-field" id="f11" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -238,8 +245,8 @@
     <td>to be complete, finished</td>
     <td><span class="heb">יְכַל</span> (Wayyiqtol 3ms)</td>
     <td>Gen 2:2</td>
-    <td><input class="ans-field" id="t12" placeholder="translation"></td>
-    <td><input class="ans-field" id="f12" placeholder="function"></td>
+    <td><input class="parse-field" id="t12" placeholder="translation"></td>
+    <td><input class="parse-field" id="f12" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -261,8 +268,8 @@
     <td>to be small, light, of little account</td>
     <td><span class="heb">מְקַלֵּל</span> (Participle ms)</td>
     <td>Gen 12:3</td>
-    <td><input class="ans-field" id="t13" placeholder="translation"></td>
-    <td><input class="ans-field" id="f13" placeholder="function"></td>
+    <td><input class="parse-field" id="t13" placeholder="translation"></td>
+    <td><input class="parse-field" id="f13" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -275,8 +282,8 @@
     <td>to cover, wipe</td>
     <td><span class="heb">לְכַפֵּר</span> (Inf. Construct)</td>
     <td>Lev 4:20</td>
-    <td><input class="ans-field" id="t14" placeholder="translation"></td>
-    <td><input class="ans-field" id="f14" placeholder="function"></td>
+    <td><input class="parse-field" id="t14" placeholder="translation"></td>
+    <td><input class="parse-field" id="f14" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -289,8 +296,8 @@
     <td>to kneel / bless (Qal rare)</td>
     <td><span class="heb">יְבָרֶךְ</span> (Wayyiqtol 3ms)</td>
     <td>Gen 1:22</td>
-    <td><input class="ans-field" id="t15" placeholder="translation"></td>
-    <td><input class="ans-field" id="f15" placeholder="function"></td>
+    <td><input class="parse-field" id="t15" placeholder="translation"></td>
+    <td><input class="parse-field" id="f15" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -303,8 +310,8 @@
     <td>to speak (Qal rare)</td>
     <td><span class="heb">יְדַבֵּר</span> (Wayyiqtol 3ms)</td>
     <td>Gen 8:15</td>
-    <td><input class="ans-field" id="t16" placeholder="translation"></td>
-    <td><input class="ans-field" id="f16" placeholder="function"></td>
+    <td><input class="parse-field" id="t16" placeholder="translation"></td>
+    <td><input class="parse-field" id="f16" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r16">
@@ -317,8 +324,8 @@
     <td>to shine, be bright (Qal rare)</td>
     <td><span class="heb">יְהַלֲלוּ</span> (Wayyiqtol 3mp)</td>
     <td>Gen 12:15</td>
-    <td><input class="ans-field" id="t17" placeholder="translation"></td>
-    <td><input class="ans-field" id="f17" placeholder="function"></td>
+    <td><input class="parse-field" id="t17" placeholder="translation"></td>
+    <td><input class="parse-field" id="f17" placeholder="function"></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r17">
@@ -356,7 +363,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.ans-field').forEach(i => i.value = '');
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
 }
 </script>
 </body>

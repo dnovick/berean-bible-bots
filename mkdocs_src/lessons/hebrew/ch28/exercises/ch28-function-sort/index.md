@@ -4,4 +4,440 @@
 
 [Full screen](ch28-function-sort.html){.md-button}  [Markdown](ch28-function-sort.md){.md-button}  [Print (PDF)](ch28-function-sort.pdf){.md-button}
 
-<iframe src="ch28-function-sort.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Function Sort"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .ref-table td, .ref-table th { font-size: .85em; }
+  .discussion { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  ol.disc { margin: .4em 0 0 1.2em; padding: 0; }
+  ol.disc li { margin-bottom: .4em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch28-function-sort.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch28-function-sort.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Chapter 28 — Hophal Semantic Function Sorting</h1>
+<p class="subtitle">BBH Chapter 28 · Hophal Strong Verbs</p>
+
+<p>The Hophal is the <strong>causative-passive</strong> stem — the passive of the Hiphil. Every Hophal expresses that the subject <em>undergoes</em> being caused to do or experience something. Classify each form below using one of the five function codes. Type your answer in the Function column, then click <strong>▶ Answer</strong> to check.</p>
+
+<table class="ref-table">
+  <tr>
+    <th>Code</th><th>Function</th><th>Description</th>
+  </tr>
+  <tr><td><strong>PT</strong></td><td>Physical Transfer</td><td>Subject was physically moved (brought, led, taken down)</td></tr>
+  <tr><td><strong>LF</strong></td><td>Legal Formula</td><td>Capital-penalty formula: <span class="heb">יוּמַת</span> "he shall be put to death"</td></tr>
+  <tr><td><strong>SR</strong></td><td>Speech Reporting</td><td>Information was reported/told (passive of Hiphil <span class="heb">נָגַד</span>)</td></tr>
+  <tr><td><strong>SC</strong></td><td>State Change</td><td>Subject was caused to enter a new state (returned, set up, removed)</td></tr>
+  <tr><td><strong>SA</strong></td><td>Simple Action</td><td>Hophal is the primary form; the Hiphil has no Qal to contrast</td></tr>
+</table>
+
+<div class="tip">
+  <strong>Tip:</strong> Ask what the corresponding Hiphil would mean, then flip it to passive.
+  Physical motion passivized → <strong>PT</strong>.
+  The formula <span class="heb">יוּמַת</span> → <strong>LF</strong>.
+  Passive of "to tell/report" → <strong>SR</strong>.
+  Caused to enter a state → <strong>SC</strong>.
+  No Qal/Hiphil contrast available → <strong>SA</strong>.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th><th>Hebrew Form</th><th>Conjugation</th><th>Ref</th><th>Contextual Gloss</th><th>Function</th><th></th>
+  </tr>
+
+  <tr>
+    <td>1</td>
+    <td><span class="heb">יֻּגַּד</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>Gen 22:20</td>
+    <td>"it was told to Abraham"</td>
+    <td><input class="parse-field" id="f1" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r1">
+    <td colspan="7"><strong>SR — Speech Reporting</strong> · Root: <span class="heb">נָגַד</span> · Information was reported to Abraham; Hophal of Hiphil "to tell/report"</td>
+  </tr>
+
+  <tr>
+    <td>2</td>
+    <td><span class="heb">יּוּשַׂם</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>Gen 24:33</td>
+    <td>"food was set before him"</td>
+    <td><input class="parse-field" id="f2" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r2">
+    <td colspan="7"><strong>SC — State Change</strong> · Root: <span class="heb">שִׂים</span> · Food was caused to be placed/set — entered the state of being present before him</td>
+  </tr>
+
+  <tr>
+    <td>3</td>
+    <td><span class="heb">הוּרַד</span></td>
+    <td>Qatal 3ms</td>
+    <td>Gen 39:1</td>
+    <td>"he had been brought down to Egypt"</td>
+    <td><input class="parse-field" id="f3" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r3">
+    <td colspan="7"><strong>PT — Physical Transfer</strong> · Root: <span class="heb">יָרַד</span> · Joseph was physically taken down to Egypt; Hiphil = to bring down</td>
+  </tr>
+
+  <tr>
+    <td>4</td>
+    <td><span class="heb">הֻבָּאת</span></td>
+    <td>Qatal 3fs</td>
+    <td>Gen 33:11</td>
+    <td>"it was brought to him"</td>
+    <td><input class="parse-field" id="f4" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r4">
+    <td colspan="7"><strong>PT — Physical Transfer</strong> · Root: <span class="heb">בּוֹא</span> · Jacob's gift was physically carried and brought to him; Hiphil = to bring</td>
+  </tr>
+
+  <tr>
+    <td>5</td>
+    <td><span class="heb">הוּשַׁב</span></td>
+    <td>Qatal 3ms</td>
+    <td>Gen 42:28</td>
+    <td>"it has been returned into my sack"</td>
+    <td><input class="parse-field" id="f5" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r5">
+    <td colspan="7"><strong>SC — State Change</strong> · Root: <span class="heb">שׁוּב</span> · The silver was caused to return — entered the state of being back in the sack</td>
+  </tr>
+
+  <tr>
+    <td>6</td>
+    <td><span class="heb">הוּבְאוּ</span></td>
+    <td>Qatal 3cp</td>
+    <td>Gen 43:18</td>
+    <td>"we were brought in"</td>
+    <td><input class="parse-field" id="f6" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r6">
+    <td colspan="7"><strong>PT — Physical Transfer</strong> · Root: <span class="heb">בּוֹא</span> · The brothers were physically brought into Joseph's house</td>
+  </tr>
+
+  <tr>
+    <td>7</td>
+    <td><span class="heb">יֻּגַּד</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>Gen 38:13</td>
+    <td>"it was told to Tamar"</td>
+    <td><input class="parse-field" id="f7" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r7">
+    <td colspan="7"><strong>SR — Speech Reporting</strong> · Root: <span class="heb">נָגַד</span> · News of Judah's journey was reported to Tamar</td>
+  </tr>
+
+  <tr>
+    <td>8</td>
+    <td><span class="heb">יֻּגַּד</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>Gen 38:24</td>
+    <td>"it was told to Judah"</td>
+    <td><input class="parse-field" id="f8" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r8">
+    <td colspan="7"><strong>SR — Speech Reporting</strong> · Root: <span class="heb">נָגַד</span> · News of Tamar's pregnancy was reported to Judah</td>
+  </tr>
+
+  <tr>
+    <td>9</td>
+    <td><span class="heb">יֻּגַּד</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>Gen 27:42</td>
+    <td>"it was told to Rebekah"</td>
+    <td><input class="parse-field" id="f9" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r9">
+    <td colspan="7"><strong>SR — Speech Reporting</strong> · Root: <span class="heb">נָגַד</span> · Esau's intention to kill Jacob was reported to Rebekah</td>
+  </tr>
+
+  <tr>
+    <td>10</td>
+    <td><span class="heb">יוּמַת</span></td>
+    <td>Yiqtol 3ms</td>
+    <td>Gen 26:11</td>
+    <td>"he shall be put to death"</td>
+    <td><input class="parse-field" id="f10" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r10">
+    <td colspan="7"><strong>LF — Legal Formula</strong> · Root: <span class="heb">מוּת</span> · Capital penalty formula: anyone who touches Isaac or Rebekah shall be put to death</td>
+  </tr>
+
+  <tr>
+    <td>11</td>
+    <td><span class="heb">יוּמַת</span></td>
+    <td>Yiqtol 3ms</td>
+    <td>Exo 19:12</td>
+    <td>"he shall be put to death"</td>
+    <td><input class="parse-field" id="f11" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r11">
+    <td colspan="7"><strong>LF — Legal Formula</strong> · Root: <span class="heb">מוּת</span> · Sinai boundary violation formula: anyone who touches the mountain shall be put to death</td>
+  </tr>
+
+  <tr>
+    <td>12</td>
+    <td><span class="heb">יוּמַת</span></td>
+    <td>Yiqtol 3ms</td>
+    <td>Exo 21:12</td>
+    <td>"he must be put to death"</td>
+    <td><input class="parse-field" id="f12" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r12">
+    <td colspan="7"><strong>LF — Legal Formula</strong> · Root: <span class="heb">מוּת</span> · Murder law: whoever strikes a man so that he dies must be put to death</td>
+  </tr>
+
+  <tr>
+    <td>13</td>
+    <td><span class="heb">יוּמַת</span></td>
+    <td>Yiqtol 3ms</td>
+    <td>Exo 21:15</td>
+    <td>"he must be put to death"</td>
+    <td><input class="parse-field" id="f13" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r13">
+    <td colspan="7"><strong>LF — Legal Formula</strong> · Root: <span class="heb">מוּת</span> · Violence against parents formula: the perpetrator must be put to death</td>
+  </tr>
+
+  <tr>
+    <td>14</td>
+    <td><span class="heb">יֻּכּוּ</span></td>
+    <td>Wayyiqtol 3mp</td>
+    <td>Exo 5:14</td>
+    <td>"the Israelite overseers were beaten"</td>
+    <td><input class="parse-field" id="f14" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r14">
+    <td colspan="7"><strong>SA — Simple Action</strong> · Root: <span class="heb">נָכָה</span> · The overseers were beaten; root נָכָה has no functional Qal — Hiphil is the standard form</td>
+  </tr>
+
+  <tr>
+    <td>15</td>
+    <td><span class="heb">מֻכִּים</span></td>
+    <td>Participle mp</td>
+    <td>Exo 5:16</td>
+    <td>"your servants are being beaten"</td>
+    <td><input class="parse-field" id="f15" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r15">
+    <td colspan="7"><strong>SA — Simple Action</strong> · Root: <span class="heb">נָכָה</span> · Participle: the servants are being beaten; same SA root as #14</td>
+  </tr>
+
+  <tr>
+    <td>16</td>
+    <td><span class="heb">יוּסַר</span></td>
+    <td>Yiqtol 3ms</td>
+    <td>Lev 4:35</td>
+    <td>"it is to be removed"</td>
+    <td><input class="parse-field" id="f16" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r16">
+    <td colspan="7"><strong>SC — State Change</strong> · Root: <span class="heb">סוּר</span> · The fat portions are prescribed to be removed — caused to enter the state of separation from the sacrifice</td>
+  </tr>
+
+  <tr>
+    <td>17</td>
+    <td><span class="heb">הוּסַר</span></td>
+    <td>Qatal 3ms</td>
+    <td>Lev 4:31</td>
+    <td>"it was removed"</td>
+    <td><input class="parse-field" id="f17" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r17">
+    <td colspan="7"><strong>SC — State Change</strong> · Root: <span class="heb">סוּר</span> · The fat was removed from the sacrifice — caused to depart and enter a separated state</td>
+  </tr>
+
+  <tr>
+    <td>18</td>
+    <td><span class="heb">הוּבָא</span></td>
+    <td>Weqatal 3ms</td>
+    <td>Lev 14:2</td>
+    <td>"he will be brought to the priest"</td>
+    <td><input class="parse-field" id="f18" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r18">
+    <td colspan="7"><strong>PT — Physical Transfer</strong> · Root: <span class="heb">בּוֹא</span> · The healed leper is physically brought to the priest; Hiphil = to bring</td>
+  </tr>
+
+  <tr>
+    <td>19</td>
+    <td><span class="heb">יוּמַת</span></td>
+    <td>Yiqtol 3ms</td>
+    <td>Num 18:7</td>
+    <td>"he shall be put to death"</td>
+    <td><input class="parse-field" id="f19" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r19">
+    <td colspan="7"><strong>LF — Legal Formula</strong> · Root: <span class="heb">מוּת</span> · Tabernacle-service intrusion formula: the unauthorized outsider shall be put to death</td>
+  </tr>
+
+  <tr>
+    <td>20</td>
+    <td><span class="heb">יֻּגַּד</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>Exo 14:5</td>
+    <td>"it was told to the king of Egypt"</td>
+    <td><input class="parse-field" id="f20" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r20">
+    <td colspan="7"><strong>SR — Speech Reporting</strong> · Root: <span class="heb">נָגַד</span> · The flight of Israel was reported to the king of Egypt</td>
+  </tr>
+
+  <tr>
+    <td>21</td>
+    <td><span class="heb">הוּקַם</span></td>
+    <td>Qatal 3ms</td>
+    <td>Exo 40:17</td>
+    <td>"the tabernacle was set up"</td>
+    <td><input class="parse-field" id="f21" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r21">
+    <td colspan="7"><strong>SC — State Change</strong> · Root: <span class="heb">קוּם</span> · The tabernacle was caused to stand — entered the state of being erected and established</td>
+  </tr>
+
+  <tr>
+    <td>22</td>
+    <td><span class="heb">יוּשַׁב</span></td>
+    <td>Wayyiqtol 3ms</td>
+    <td>Exo 10:8</td>
+    <td>"Moses and Aaron were brought back"</td>
+    <td><input class="parse-field" id="f22" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r22">
+    <td colspan="7"><strong>SC — State Change</strong> · Root: <span class="heb">שׁוּב</span> · Moses and Aaron were caused to return to Pharaoh — the resulting state of return is emphasized</td>
+  </tr>
+
+  <tr>
+    <td>23</td>
+    <td><span class="heb">הוּחַל</span></td>
+    <td>Qatal 3ms</td>
+    <td>Gen 4:26</td>
+    <td>"it was begun (to call on the name of the LORD)"</td>
+    <td><input class="parse-field" id="f23" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r23">
+    <td colspan="7"><strong>SC — State Change</strong> · Root: <span class="heb">חָלַל</span> · The practice of calling on YHWH's name was begun — caused to enter the state of having started</td>
+  </tr>
+
+  <tr>
+    <td>24</td>
+    <td><span class="heb">הוּגַּד</span></td>
+    <td>Qatal 3ms</td>
+    <td>Exo 26:30</td>
+    <td>"you were shown the pattern (of the tabernacle)"</td>
+    <td><input class="parse-field" id="f24" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r24">
+    <td colspan="7"><strong>SR — Speech Reporting</strong> · Root: <span class="heb">נָגַד</span> · The tabernacle pattern was reported/shown to Moses at Sinai; Hophal of Hiphil "to show/declare"</td>
+  </tr>
+
+  <tr>
+    <td>25</td>
+    <td><span class="heb">מוּמָת</span></td>
+    <td>Hophal Inf. Construct</td>
+    <td>Num 35:16</td>
+    <td>"the murderer must be put to death"</td>
+    <td><input class="parse-field" id="f25" placeholder="PT/LF/SR/SC/SA"></td>
+    <td><button class="reveal-btn" onclick="toggle('r25')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="r25">
+    <td colspan="7"><strong>LF — Legal Formula</strong> · Root: <span class="heb">מוּת</span> · Infinitive construct used nominally in the penalty clause: "the putting-to-death of the murderer is required"</td>
+  </tr>
+
+</table>
+
+<h2>Discussion Questions</h2>
+<div class="discussion">
+  <ol class="disc">
+    <li>The <span class="heb">יוּמַת</span> formula appears in items 10–13 and 19 (five occurrences). What does the repetition of this fixed Hophal form in the Mosaic law codes signal about the role of the Hophal in legal language? Why is the passive here more powerful than a simple active verb?</li>
+    <li>Items 1, 7, 8, 9, and 20 all come from the same root (<span class="heb">נָגַד</span>). The Hiphil of this root means "to tell/report." Why is this root almost always passive (Hophal) when the subject is <em>information</em> rather than a person? What does this reveal about the typical information-flow in biblical narrative?</li>
+    <li>Compare items 16 and 17 (both from Lev 4, root <span class="heb">סוּר</span>). Item 16 is a Yiqtol; item 17 is a Qatal. What does the difference in conjugation signal — is one describing a past removal and the other a prescribed future removal, or is there another aspect distinction at work?</li>
+    <li>Physical Transfer (PT) and State Change (SC) can overlap for some verbs. Items 5 (<span class="heb">הוּשַׁב</span>, "was returned") and 22 (<span class="heb">יוּשַׁב</span>, "was brought back") both involve motion but were assigned SC. Pick one and explain why the <em>resulting state</em> is more prominent than the physical movement itself. Then consider whether item 3 (<span class="heb">הוּרַד</span>) could be argued as SC rather than PT.</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  const btn = row.previousElementSibling.querySelector('.reveal-btn');
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    btn.textContent = '▶ Answer';
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+}
+</script>
+

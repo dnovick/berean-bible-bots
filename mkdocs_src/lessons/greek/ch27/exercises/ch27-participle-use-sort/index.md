@@ -4,4 +4,377 @@
 
 [Full screen](ch27-participle-use-sort.html){.md-button}  [Markdown](ch27-participle-use-sort.md){.md-button}  [Print (PDF)](ch27-participle-use-sort.pdf){.md-button}
 
-<iframe src="ch27-participle-use-sort.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Participle Use Sort"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
+  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
+  .subtitle { color: #555; font-style: italic; margin: .3em 0 1em; }
+  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin-bottom: 1.5em; font-size: .95em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
+  th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
+  td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
+  tr:nth-child(even) td { background: #f5f7fb; }
+  .greek { font-size: 1.15em; font-weight: bold; }
+  .parse-field { width: 95%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .92em; padding: 2px 0; }
+  .parse-field:focus { outline: none; border-bottom: 2px solid #3a5a8a; }
+  .answer-row { display: none; background: #e8f5e9 !important; }
+  .answer-row td { color: #2e7d32; font-style: italic; font-size: .9em; }
+  .btn-reveal { background: #3a5a8a; color: #fff; border: none; border-radius: 3px; padding: .25em .7em; cursor: pointer; font-size: .85em; white-space: nowrap; }
+  .btn-reveal:hover { background: #2c4470; }
+  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
+  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
+  .btn-ctrl:hover { background: #333; }
+  .item-num { font-weight: bold; min-width: 1.5em; }
+  @media print {
+    .btn-reveal, .controls { display: none !important; }
+    .answer-row { display: none !important; }
+    .parse-field { border-bottom: 1px solid #999; }
+    body {  }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch27-participle-use-sort.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch27-participle-use-sort.pdf">&#128209; PDF</a>
+</div>
+
+<h1>BBG Chapter 27 — Participle Use Classification Drill</h1>
+<p class="subtitle"><em>BBG Chapter 27 · Adverbial / Adjectival / Substantival Classification</em></p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each item, (1) classify the participle use as ADV (adverbial), ADJ (adjectival), or SUB (substantival),
+  (2) identify the key signal that determines the classification, and (3) provide an English translation of the phrase.
+  Click <strong>▶ Answer</strong> to reveal the answer for that row.
+</div>
+
+<div class="controls">
+  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
+  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+<thead>
+  <tr><th>#</th><th>Greek Phrase</th><th>Use (ADV/ADJ/SUB)</th><th>Key Signal</th><th>Translation</th><th></th></tr>
+</thead>
+<tbody>
+
+<tr class="question-row" data-id="1">
+  <td class="item-num">1</td>
+  <td class="greek">ἀκούων ταῦτα ἐξῆλθεν</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-1">
+  <td></td>
+  <td colspan="4">ADV · anarthrous, nom., modifies main verb action · Hearing these things, he went out</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="2">
+  <td class="item-num">2</td>
+  <td class="greek">ὁ πιστεύων εἰς αὐτόν</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-2">
+  <td></td>
+  <td colspan="4">SUB · articular (ὁ), no antecedent noun · The one who believes in him</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="3">
+  <td class="item-num">3</td>
+  <td class="greek">ὁ λόγος ὁ λαλούμενος</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-3">
+  <td></td>
+  <td colspan="4">ADJ · articular, modifies λόγος · The word that was spoken</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="4">
+  <td class="item-num">4</td>
+  <td class="greek">βλέπων τοὺς ὄχλους ἐσπλαγχνίσθη</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-4">
+  <td></td>
+  <td colspan="4">ADV · anarthrous, nom., temporal · Seeing the crowds, he had compassion</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="5">
+  <td class="item-num">5</td>
+  <td class="greek">οἱ πιστεύοντες σῴζονται</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-5">
+  <td></td>
+  <td colspan="4">SUB · articular (οἱ), no antecedent noun · Those who believe are being saved</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="6">
+  <td class="item-num">6</td>
+  <td class="greek">εἶδεν τοὺς ἀδελφοὺς τοὺς ἐρχομένους</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-6">
+  <td></td>
+  <td colspan="4">ADJ · articular, agrees with ἀδελφούς · He saw the brothers, the ones coming</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="7">
+  <td class="item-num">7</td>
+  <td class="greek">πορευόμενος εἶπεν αὐτοῖς</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-7">
+  <td></td>
+  <td colspan="4">ADV · anarthrous, nom., modal / temporal · While going, he said to them</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="8">
+  <td class="item-num">8</td>
+  <td class="greek">ὁ ἀγαπῶν τὸν θεόν</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-8">
+  <td></td>
+  <td colspan="4">SUB · articular (ὁ), standalone phrase · The one who loves God</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="9">
+  <td class="item-num">9</td>
+  <td class="greek">ἀνὴρ ὁ πιστεύων</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-9">
+  <td></td>
+  <td colspan="4">ADJ · articular, agrees with ἀνήρ · A man who believes / a believing man</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="10">
+  <td class="item-num">10</td>
+  <td class="greek">ἀπεκρίθη λέγων</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-10">
+  <td></td>
+  <td colspan="4">ADV · anarthrous, modal (manner) · He answered, saying</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="11">
+  <td class="item-num">11</td>
+  <td class="greek">τοὺς ἔχοντας νόσους</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-11">
+  <td></td>
+  <td colspan="4">SUB · articular (τοὺς), no antecedent noun · Those who had diseases</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="12">
+  <td class="item-num">12</td>
+  <td class="greek">γυνὴ ἡ ἀσθενοῦσα</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-12">
+  <td></td>
+  <td colspan="4">ADJ · articular, agrees with γυνή · A woman who was sick / a sick woman</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="13">
+  <td class="item-num">13</td>
+  <td class="greek">ἀκούσαντες δὲ ἐχάρησαν</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-13">
+  <td></td>
+  <td colspan="4">ADV · anarthrous, nom., temporal (aorist = antecedent action) · When / after they heard, they rejoiced</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="14">
+  <td class="item-num">14</td>
+  <td class="greek">οἱ ζητοῦντες τὴν ψυχήν</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-14">
+  <td></td>
+  <td colspan="4">SUB · articular (οἱ), standalone · Those who are seeking his life</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="15">
+  <td class="item-num">15</td>
+  <td class="greek">λόγον τὸν ῥηθέντα</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-15">
+  <td></td>
+  <td colspan="4">ADJ · articular, agrees with λόγον · The word that was spoken</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="16">
+  <td class="item-num">16</td>
+  <td class="greek">ταῦτα εἰπὼν ἀπῆλθεν</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-16">
+  <td></td>
+  <td colspan="4">ADV · anarthrous, nom., temporal (aorist ptc.) · Having said these things, he departed</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="17">
+  <td class="item-num">17</td>
+  <td class="greek">τὸ γεγεννημένον</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(17)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-17">
+  <td></td>
+  <td colspan="4">SUB · articular neuter, no antecedent · That which has been born</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="18">
+  <td class="item-num">18</td>
+  <td class="greek">διδάσκων ἐν τῇ συναγωγῇ</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(18)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-18">
+  <td></td>
+  <td colspan="4">ADV · anarthrous, nom., circumstantial · While teaching in the synagogue</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="19">
+  <td class="item-num">19</td>
+  <td class="greek">πᾶς ὁ πιστεύων</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(19)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-19">
+  <td></td>
+  <td colspan="4">SUB · articular (ὁ) with πᾶς · Everyone who believes</td>
+  <td></td>
+</tr>
+
+<tr class="question-row" data-id="20">
+  <td class="item-num">20</td>
+  <td class="greek">ἡ γυνὴ ἡ λεγομένη</td>
+  <td><input class="parse-field" placeholder="ADV/ADJ/SUB"></td>
+  <td><input class="parse-field" placeholder="key signal"></td>
+  <td><input class="parse-field" placeholder="translation"></td>
+  <td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-20">
+  <td></td>
+  <td colspan="4">ADJ · articular, agrees with γυνή · The woman called / the woman who is called</td>
+  <td></td>
+</tr>
+
+</tbody>
+</table>
+
+<h2>Discussion Questions</h2>
+<ol>
+  <li>What is the single most reliable formal signal that distinguishes a substantival participle from an adjectival participle? Give two examples from the exercise where you needed context (not just the article) to make the call.</li>
+  <li>Items 13 and 16 are aorist adverbial participles. Contrast their temporal relationship to the main verb with items 1, 4, 7, and 10 (present adverbial participles). What rule governs the time relationship of a Greek participle to its main verb?</li>
+  <li>Items 8 and 9 both feature ὁ + participle, yet #8 is substantival and #9 is adjectival. Explain the difference. Then rewrite item 9 in a way that would make the participle clearly substantival rather than adjectival.</li>
+</ol>
+
+<script>
+function toggleAnswer(id) {
+  const row = document.getElementById('ans-' + id);
+  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    if (btn) btn.textContent = '▶ Answer';
+  } else {
+    row.style.display = 'table-row';
+    if (btn) btn.textContent = '▼ Answer';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer');
+}
+function clearAll() {
+  document.querySelectorAll('.parse-field').forEach(f => f.value = '');
+}
+</script>
+

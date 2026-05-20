@@ -1,9 +1,9 @@
 """Build the MkDocs docs/ source tree from output/lessons/.
 
 Copies all lesson Markdown files into mkdocs_src/lessons/<lang>/<ch>/,
-generates per-chapter index pages that embed the interactive HTML exercises
-via iframes, and writes the nav structure to mkdocs_nav.yml for inclusion
-in mkdocs.yml.
+generates per-chapter index pages that inline the interactive HTML exercises
+directly (no iframe), and writes the nav structure to mkdocs_nav.yml for
+inclusion in mkdocs.yml.
 
 Run before `mkdocs build`:
     python scripts/build_mkdocs.py
@@ -16,6 +16,37 @@ from pathlib import Path
 REPO = Path(__file__).parent.parent
 LESSONS = REPO / "output" / "lessons"
 MKDOCS_SRC = REPO / "mkdocs_src"
+
+
+def _inline_exercise_html(html_path: Path) -> str:
+    """Extract <style> and <body> content from a self-contained exercise HTML
+    and return a string suitable for embedding directly in a MkDocs page.
+
+    The exercise HTML has its own body max-width/margin/padding — we strip those
+    so the MkDocs layout controls the page width.
+    """
+    text = html_path.read_text(encoding="utf-8")
+
+    # Extract <style> block
+    style_m = re.search(r"<style>(.*?)</style>", text, re.DOTALL | re.IGNORECASE)
+    style_content = style_m.group(1) if style_m else ""
+
+    # Strip body-level layout rules that conflict with MkDocs
+    style_content = re.sub(
+        r"body\s*\{[^}]*\}",
+        lambda m: re.sub(
+            r"(max-width|margin|padding)\s*:[^;]+;", "", m.group()
+        ),
+        style_content,
+        flags=re.DOTALL,
+    )
+
+    # Extract <body> content
+    body_m = re.search(r"<body[^>]*>(.*?)</body>", text, re.DOTALL | re.IGNORECASE)
+    body_content = body_m.group(1).strip() if body_m else text
+
+    return f"<style>\n{style_content}\n</style>\n\n{body_content}\n"
+
 
 BBH_TITLES = {
     "ch1": "Hebrew Alphabet",
@@ -219,15 +250,15 @@ def build_chapter(
                     download_parts.append(f"[Print (PDF)]({pdf_name}){{.md-button}}")
                 downloads_line = "  ".join(download_parts)
 
-                iframe_md = ex_dst / "index.md"
-                iframe_md.write_text(
+                # Inline the exercise HTML directly — no iframe
+                inlined = _inline_exercise_html(ex_dst / html_name)
+
+                exercise_md = ex_dst / "index.md"
+                exercise_md.write_text(
                     f"# {ex_title}\n\n"
                     f"*Chapter {ch_num} — {title}*\n\n"
                     f"{downloads_line}\n\n"
-                    f'<iframe src="{html_name}" '
-                    f'style="width:100%;height:85vh;border:1px solid #ddd;'
-                    f'border-radius:6px;" '
-                    f'title="{ex_title}"></iframe>\n',
+                    f"{inlined}\n",
                     encoding="utf-8",
                 )
                 exercise_entries.append(

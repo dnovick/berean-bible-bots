@@ -4,4 +4,250 @@
 
 [Full screen](ch14-passage-exercise.html){.md-button}  [Markdown](ch14-passage-exercise.md){.md-button}  [Print (PDF)](ch14-passage-exercise.pdf){.md-button}
 
-<iframe src="ch14-passage-exercise.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Passage Exercise"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  .passage { direction: rtl; unicode-bidi: embed; font-size: 1.2rem; line-height: 2.1; background: #fafaf6; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; margin: .8rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .9rem; }
+  th { background: #e0e8f0; padding: .38rem .5rem; border: 1px solid #bbb; text-align: left; font-size: .83rem; }
+  td { padding: .28rem .4rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
+  td.heb { font-size: 1.12rem; direction: rtl; unicode-bidi: embed; font-weight: bold; width: 8.5rem; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .2rem .38rem; font-family: Georgia, serif; font-size: .86rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .86rem; color: #2a6e2a; padding: .25rem .4rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2rem; text-align: center; }
+  .ans-heb { font-size: 1rem; direction: rtl; unicode-bidi: embed; }
+  button.rbtn { font-size: .75rem; padding: .13rem .46rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
+  @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; } .ans-row { display: none !important; } }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch14-passage-exercise.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch14-passage-exercise.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Ch14 Passage Exercise — Qal Perfect Weak Verbs</h1>
+<p class="subtitle">BBH Chapter 14 · Genesis, Exodus</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> Parse each highlighted Qal Perfect form. Give: (a) Person, (b) Number, (c) Gender, (d) Root (3ms lexical form), (e) Weak Class, (f) Usage Type.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<!-- PASSAGE A -->
+<h2>Passage A — Genesis 3:1–13</h2>
+<div class="passage">וְהַנָּחָ֗שׁ <strong>הָיָ֤ה</strong> עָרוּם — <strong>אָמַ֣ר</strong> אֱלֹהִ֔ים — <strong>אָכַ֑לְנוּ</strong> — מַה־זֹּ֣את <strong>עָשִׂ֑ית</strong> — <strong>הִשִּׁיאַ֖נִי</strong></div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
+  <tr>
+    <td class="num">1</td><td class="heb">הָיָ֤ה</td>
+    <td><input class="parse-field" id="1-p" placeholder="1/2/3"></td><td><input class="parse-field" id="1-n" placeholder="s/p"></td><td><input class="parse-field" id="1-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="1-r" placeholder="root"></td><td><input class="parse-field" id="1-wk" placeholder="class"></td><td><input class="parse-field" id="1-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="ans-heb">הָיָ֤ה</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">היה</td><td>III-ה</td><td colspan="2">Stative — "was" describing the serpent</td></tr>
+  <tr>
+    <td class="num">2</td><td class="heb">אָמַ֣ר</td>
+    <td><input class="parse-field" id="2-p" placeholder="1/2/3"></td><td><input class="parse-field" id="2-n" placeholder="s/p"></td><td><input class="parse-field" id="2-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="2-r" placeholder="root"></td><td><input class="parse-field" id="2-wk" placeholder="class"></td><td><input class="parse-field" id="2-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="ans-heb">אָמַ֣ר</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">אמר</td><td>I-guttural</td><td colspan="2">Simple Past — perfect qamets unchanged; ר at R3 also guttural</td></tr>
+  <tr>
+    <td class="num">3</td><td class="heb">אָכַ֑לְנוּ</td>
+    <td><input class="parse-field" id="3-p" placeholder="1/2/3"></td><td><input class="parse-field" id="3-n" placeholder="s/p"></td><td><input class="parse-field" id="3-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="3-r" placeholder="root"></td><td><input class="parse-field" id="3-wk" placeholder="class"></td><td><input class="parse-field" id="3-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="ans-heb">אָכַ֑לְנוּ</td><td>1</td><td>p</td><td>c</td><td class="ans-heb">אכל</td><td>I-guttural</td><td colspan="2">Simple Past — 1cp suffix נוּ-</td></tr>
+  <tr>
+    <td class="num">4</td><td class="heb">עָשִׂ֑ית</td>
+    <td><input class="parse-field" id="4-p" placeholder="1/2/3"></td><td><input class="parse-field" id="4-n" placeholder="s/p"></td><td><input class="parse-field" id="4-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="4-r" placeholder="root"></td><td><input class="parse-field" id="4-wk" placeholder="class"></td><td><input class="parse-field" id="4-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">עָשִׂ֑ית</td><td>2</td><td>s</td><td>f</td><td class="ans-heb">עשה</td><td>III-ה</td><td colspan="2">Simple Past — 2fs: hireq-yod + תְּ</td></tr>
+</table>
+
+<hr class="sec">
+
+<!-- PASSAGE B -->
+<h2>Passage B — Genesis 6:9–22</h2>
+<div class="passage">נֹ֗חַ … <strong>הָיָ֖ה</strong> בְּדֹרֹתָ֑יו — קֵ֛ץ כָּל־בָּשָׂ֖ר <strong>בָּ֣א</strong> לְפָנָ֑י — כִּי <strong>מָלְאָ֤ה</strong> הָאָ֙רֶץ֙ חָמָ֔ס — כְּכֹ֨ל אֲשֶׁ֧ר <strong>צִוָּ֛ה</strong> אֹתֹ֖ו אֱלֹהִ֥ים</div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
+  <tr>
+    <td class="num">5</td><td class="heb">הָיָ֖ה</td>
+    <td><input class="parse-field" id="5-p" placeholder="1/2/3"></td><td><input class="parse-field" id="5-n" placeholder="s/p"></td><td><input class="parse-field" id="5-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="5-r" placeholder="root"></td><td><input class="parse-field" id="5-wk" placeholder="class"></td><td><input class="parse-field" id="5-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">הָיָ֖ה</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">היה</td><td>III-ה</td><td colspan="2">Stative — same root as #1</td></tr>
+  <tr>
+    <td class="num">6</td><td class="heb">בָּ֣א</td>
+    <td><input class="parse-field" id="6-p" placeholder="1/2/3"></td><td><input class="parse-field" id="6-n" placeholder="s/p"></td><td><input class="parse-field" id="6-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="6-r" placeholder="root"></td><td><input class="parse-field" id="6-wk" placeholder="class"></td><td><input class="parse-field" id="6-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="ans-heb">בָּ֣א</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">בוא</td><td>Biconsonantal</td><td colspan="2">Simple Past — 3ms; only two root consonants visible</td></tr>
+  <tr>
+    <td class="num">7</td><td class="heb">מָלְאָ֤ה</td>
+    <td><input class="parse-field" id="7-p" placeholder="1/2/3"></td><td><input class="parse-field" id="7-n" placeholder="s/p"></td><td><input class="parse-field" id="7-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="7-r" placeholder="root"></td><td><input class="parse-field" id="7-wk" placeholder="class"></td><td><input class="parse-field" id="7-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="ans-heb">מָלְאָ֤ה</td><td>3</td><td>s</td><td>f</td><td class="ans-heb">מלא</td><td>III-א</td><td colspan="2">Simple Past — 3fs ָאָה- ending; silent aleph</td></tr>
+  <tr>
+    <td class="num">8</td><td class="heb">צִוָּ֛ה</td>
+    <td><input class="parse-field" id="8-p" placeholder="1/2/3"></td><td><input class="parse-field" id="8-n" placeholder="s/p"></td><td><input class="parse-field" id="8-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="8-r" placeholder="root"></td><td><input class="parse-field" id="8-wk" placeholder="class"></td><td><input class="parse-field" id="8-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">צִוָּ֛ה</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">צוה</td><td>III-ה</td><td colspan="2">Simple Past — Piel perfect 3ms (not Qal); noted for recognition</td></tr>
+</table>
+
+<hr class="sec">
+
+<!-- PASSAGE C -->
+<h2>Passage C — Genesis 22:1–12</h2>
+<div class="passage">וְהָאֱלֹהִ֖ים <strong>נִסָּ֣ה</strong> אֶת־אַבְרָהָ֑ם — אֲשֶׁ֙ר <strong>אָהַ֣בְתָּ</strong> — עַתָּ֣ה <strong>יָדַ֗עְתִּי</strong> — לֹ֣א <strong>חָשַׂ֤כְתָּ</strong> אֶת בִּנְךָ֙</div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
+  <tr>
+    <td class="num">9</td><td class="heb">נִסָּ֣ה</td>
+    <td><input class="parse-field" id="9-p" placeholder="1/2/3"></td><td><input class="parse-field" id="9-n" placeholder="s/p"></td><td><input class="parse-field" id="9-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="9-r" placeholder="root"></td><td><input class="parse-field" id="9-wk" placeholder="class"></td><td><input class="parse-field" id="9-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="ans-heb">נִסָּ֣ה</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">נסה</td><td>III-ה</td><td colspan="2">Simple Past — Piel perfect 3ms of נסה; III-ה pattern</td></tr>
+  <tr>
+    <td class="num">10</td><td class="heb">אָהַ֣בְתָּ</td>
+    <td><input class="parse-field" id="10-p" placeholder="1/2/3"></td><td><input class="parse-field" id="10-n" placeholder="s/p"></td><td><input class="parse-field" id="10-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="10-r" placeholder="root"></td><td><input class="parse-field" id="10-wk" placeholder="class"></td><td><input class="parse-field" id="10-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">אָהַ֣בְתָּ</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">אהב</td><td>I-guttural</td><td colspan="2">Perfect of Experience — "whom you love" (ongoing)</td></tr>
+  <tr>
+    <td class="num">11</td><td class="heb">יָדַ֗עְתִּי</td>
+    <td><input class="parse-field" id="11-p" placeholder="1/2/3"></td><td><input class="parse-field" id="11-n" placeholder="s/p"></td><td><input class="parse-field" id="11-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="11-r" placeholder="root"></td><td><input class="parse-field" id="11-wk" placeholder="class"></td><td><input class="parse-field" id="11-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">יָדַ֗עְתִּי</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">ידע</td><td>I-י</td><td colspan="2">Perfect of Experience — "Now I know": knowledge acquired through event</td></tr>
+  <tr>
+    <td class="num">12</td><td class="heb">חָשַׂ֤כְתָּ</td>
+    <td><input class="parse-field" id="12-p" placeholder="1/2/3"></td><td><input class="parse-field" id="12-n" placeholder="s/p"></td><td><input class="parse-field" id="12-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="12-r" placeholder="root"></td><td><input class="parse-field" id="12-wk" placeholder="class"></td><td><input class="parse-field" id="12-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">חָשַׂ֤כְתָּ</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">חשך</td><td>III-guttural</td><td colspan="2">Simple Past — "you have not withheld"</td></tr>
+</table>
+
+<hr class="sec">
+
+<!-- PASSAGE D -->
+<h2>Passage D — Exodus 1:17–21</h2>
+<div class="passage">וְלֹ֣א <strong>עָשׂ֔וּ</strong> כַּאֲשֶׁ֛ר דִּבֶּ֥ר … מֶ֣לֶךְ מִצְרָ֑יִם — מַדּ֙וּעַ֙ <strong>עֲשִׂיתֶ֣ן</strong> הַדָּבָ֣ר הַזֶּ֔ה</div>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
+  <tr>
+    <td class="num">13</td><td class="heb">עָשׂ֔וּ</td>
+    <td><input class="parse-field" id="13-p" placeholder="1/2/3"></td><td><input class="parse-field" id="13-n" placeholder="s/p"></td><td><input class="parse-field" id="13-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="13-r" placeholder="root"></td><td><input class="parse-field" id="13-wk" placeholder="class"></td><td><input class="parse-field" id="13-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-13"><td class="ans-lbl">✓</td><td class="ans-heb">עָשׂ֔וּ</td><td>3</td><td>p</td><td>c</td><td class="ans-heb">עשה</td><td>III-ה</td><td colspan="2">Simple Past — 3cp; final ה drops before וּ-</td></tr>
+  <tr>
+    <td class="num">14</td><td class="heb">עֲשִׂיתֶ֣ן</td>
+    <td><input class="parse-field" id="14-p" placeholder="1/2/3"></td><td><input class="parse-field" id="14-n" placeholder="s/p"></td><td><input class="parse-field" id="14-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="14-r" placeholder="root"></td><td><input class="parse-field" id="14-wk" placeholder="class"></td><td><input class="parse-field" id="14-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-14"><td class="ans-lbl">✓</td><td class="ans-heb">עֲשִׂיתֶ֣ן</td><td>2</td><td>p</td><td>f</td><td class="ans-heb">עשה</td><td>III-ה</td><td colspan="2">Simple Past — 2fp; hireq-yod + תֶּן-</td></tr>
+</table>
+
+<hr class="sec">
+
+<!-- PASSAGE E -->
+<h2>Passage E — Additional Forms</h2>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
+  <tr>
+    <td class="num">15</td><td class="heb">שָׁמַ֥עְנוּ</td>
+    <td><input class="parse-field" id="15-p" placeholder="1/2/3"></td><td><input class="parse-field" id="15-n" placeholder="s/p"></td><td><input class="parse-field" id="15-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="15-r" placeholder="root"></td><td><input class="parse-field" id="15-wk" placeholder="class"></td><td><input class="parse-field" id="15-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">שָׁמַ֥עְנוּ</td><td>1</td><td>p</td><td>c</td><td class="ans-heb">שמע</td><td>III-guttural</td><td colspan="2">Simple Past — 1cp; no patach furtive in closed syllable</td></tr>
+  <tr>
+    <td class="num">16</td><td class="heb">בָּ֫אוּ</td>
+    <td><input class="parse-field" id="16-p" placeholder="1/2/3"></td><td><input class="parse-field" id="16-n" placeholder="s/p"></td><td><input class="parse-field" id="16-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="16-r" placeholder="root"></td><td><input class="parse-field" id="16-wk" placeholder="class"></td><td><input class="parse-field" id="16-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-16"><td class="ans-lbl">✓</td><td class="ans-heb">בָּ֫אוּ</td><td>3</td><td>p</td><td>c</td><td class="ans-heb">בוא</td><td>Biconsonantal</td><td colspan="2">Simple Past — 3cp</td></tr>
+  <tr>
+    <td class="num">17</td><td class="heb">קָ֫מָה</td>
+    <td><input class="parse-field" id="17-p" placeholder="1/2/3"></td><td><input class="parse-field" id="17-n" placeholder="s/p"></td><td><input class="parse-field" id="17-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="17-r" placeholder="root"></td><td><input class="parse-field" id="17-wk" placeholder="class"></td><td><input class="parse-field" id="17-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-17"><td class="ans-lbl">✓</td><td class="ans-heb">קָ֫מָה</td><td>3</td><td>s</td><td>f</td><td class="ans-heb">קום</td><td>Biconsonantal</td><td colspan="2">Simple Past — 3fs ָה-</td></tr>
+  <tr>
+    <td class="num">18</td><td class="heb">יָלְדוּ</td>
+    <td><input class="parse-field" id="18-p" placeholder="1/2/3"></td><td><input class="parse-field" id="18-n" placeholder="s/p"></td><td><input class="parse-field" id="18-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="18-r" placeholder="root"></td><td><input class="parse-field" id="18-wk" placeholder="class"></td><td><input class="parse-field" id="18-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-18"><td class="ans-lbl">✓</td><td class="ans-heb">יָלְדוּ</td><td>3</td><td>p</td><td>c</td><td class="ans-heb">ילד</td><td>I-י</td><td colspan="2">Simple Past — 3cp; I-י regular in Perfect</td></tr>
+  <tr>
+    <td class="num">19</td><td class="heb">נָֽתְנָה</td>
+    <td><input class="parse-field" id="19-p" placeholder="1/2/3"></td><td><input class="parse-field" id="19-n" placeholder="s/p"></td><td><input class="parse-field" id="19-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="19-r" placeholder="root"></td><td><input class="parse-field" id="19-wk" placeholder="class"></td><td><input class="parse-field" id="19-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-19"><td class="ans-lbl">✓</td><td class="ans-heb">נָֽתְנָה</td><td>3</td><td>s</td><td>f</td><td class="ans-heb">נתן</td><td>I-נ</td><td colspan="2">Simple Past — 3fs; I-נ regular in Perfect</td></tr>
+  <tr>
+    <td class="num">20</td><td class="heb">תַּ֫מּוּ</td>
+    <td><input class="parse-field" id="20-p" placeholder="1/2/3"></td><td><input class="parse-field" id="20-n" placeholder="s/p"></td><td><input class="parse-field" id="20-g" placeholder="m/f/c"></td>
+    <td><input class="parse-field" id="20-r" placeholder="root"></td><td><input class="parse-field" id="20-wk" placeholder="class"></td><td><input class="parse-field" id="20-u" placeholder="usage"></td>
+    <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">תַּ֫מּוּ</td><td>3</td><td>p</td><td>c</td><td class="ans-heb">תמם</td><td>Geminate</td><td colspan="2">Simple Past — 3cp; dagesh forte in double mem</td></tr>
+</table>
+
+<script>
+  const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+  function tog(id) { const r=document.getElementById('ans-'+id); const b=r.previousElementSibling.querySelector('button'); const v=r.style.display==='table-row'; r.style.display=v?'none':'table-row'; b.textContent=v?'▶ Answer':'▼ Hide'; b.classList.toggle('on',!v); }
+  function showAll() { ids.forEach(id=>{const r=document.getElementById('ans-'+id);const b=r.previousElementSibling.querySelector('button');r.style.display='table-row';b.textContent='▼ Hide';b.classList.add('on');}); }
+  function hideAll() { ids.forEach(id=>{const r=document.getElementById('ans-'+id);const b=r.previousElementSibling.querySelector('button');r.style.display='none';b.textContent='▶ Answer';b.classList.remove('on');}); }
+  function clearAll() { document.querySelectorAll('input.f').forEach(e=>e.value=''); }
+</script>
+

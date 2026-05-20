@@ -4,4 +4,112 @@
 
 [Full screen](ch32-pual-paradigm-drill.html){.md-button}  [Markdown](ch32-pual-paradigm-drill.md){.md-button}  [Print (PDF)](ch32-pual-paradigm-drill.pdf){.md-button}
 
-<iframe src="ch32-pual-paradigm-drill.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Pual Paradigm Drill"></iframe>
+<style>
+
+body { font-family: Georgia, serif;    color: #222; line-height: 1.6; }
+h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
+.subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+.instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+.note { background: #fff8e8; border-left: 4px solid #e0a020; padding: .6rem 1rem; margin: .8rem 0; font-size: .9rem; color: #6b4c10; }
+table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+td.pgn { font-weight: bold; color: #333; width: 5rem; }
+td.heb-ans { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; font-family: 'Arial Hebrew', Arial, sans-serif; color: #2a6e2a; min-width: 7rem; }
+input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
+input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+.ans-row { display: none; background: #f0faf0; }
+.ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+.ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+.controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+.controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+.controls button:hover { background: #ddd; }
+.clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+.clr:hover { background: #ffd8d8 !important; }
+hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
+@media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch32-pual-paradigm-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch32-pual-paradigm-drill.pdf">&#128209; PDF</a>
+</div>
+
+<h1>Ch32 Pual Paradigm Drill</h1>
+<p class="subtitle">Root: קטל &nbsp;|&nbsp; Stem: Pual (passive of Piel)</p>
+<div class="instructions">Write the Pual (passive of Piel) paradigm for the root קטל. Key marker: qibbuts (ֻ) under R1 + dagesh forte in R2.</div>
+<div class="note"><strong>Note:</strong> No Imperative or Infinitive Absolute commonly cited for the Pual (passive stem).</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<h2>Part A — Perfect (5 forms)</h2>
+<table>
+<thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-a1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-a1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">קֻטַּל</td><td></td></tr>
+<tr><td class="num">2</td><td class="pgn">3fs</td><td><input class="parse-field" id="f-a2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a2')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-a2"><td class="ans-lbl">✓</td><td class="pgn">3fs</td><td class="heb-ans">קֻטְּלָה</td><td></td></tr>
+<tr><td class="num">3</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-a3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a3')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-a3"><td class="ans-lbl">✓</td><td class="pgn">2ms</td><td class="heb-ans">קֻטַּלְתָּ</td><td></td></tr>
+<tr><td class="num">4</td><td class="pgn">3cp</td><td><input class="parse-field" id="f-a4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a4')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-a4"><td class="ans-lbl">✓</td><td class="pgn">3cp</td><td class="heb-ans">קֻטְּלוּ</td><td></td></tr>
+<tr><td class="num">5</td><td class="pgn">1cs</td><td><input class="parse-field" id="f-a5" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a5')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-a5"><td class="ans-lbl">✓</td><td class="pgn">1cs</td><td class="heb-ans">קֻטַּלְתִּי</td><td></td></tr>
+</tbody>
+</table>
+
+<hr class="sec">
+
+<h2>Part B — Imperfect (5 forms)</h2>
+<table>
+<thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-b1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-b1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">יְקֻטַּל</td><td></td></tr>
+<tr><td class="num">2</td><td class="pgn">3fs</td><td><input class="parse-field" id="f-b2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b2')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-b2"><td class="ans-lbl">✓</td><td class="pgn">3fs</td><td class="heb-ans">תְּקֻטַּל</td><td></td></tr>
+<tr><td class="num">3</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-b3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b3')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-b3"><td class="ans-lbl">✓</td><td class="pgn">2ms</td><td class="heb-ans">תְּקֻטַּל</td><td></td></tr>
+<tr><td class="num">4</td><td class="pgn">3mp</td><td><input class="parse-field" id="f-b4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-b4"><td class="ans-lbl">✓</td><td class="pgn">3mp</td><td class="heb-ans">יְקֻטְּלוּ</td><td></td></tr>
+<tr><td class="num">5</td><td class="pgn">1cp</td><td><input class="parse-field" id="f-b5" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b5')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-b5"><td class="ans-lbl">✓</td><td class="pgn">1cp</td><td class="heb-ans">נְקֻטַּל</td><td></td></tr>
+</tbody>
+</table>
+
+<hr class="sec">
+
+<h2>Part C — Participle (4 forms)</h2>
+<table>
+<thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
+<tbody>
+<tr><td class="num">1</td><td class="pgn">ms</td><td><input class="parse-field" id="f-c1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-c1"><td class="ans-lbl">✓</td><td class="pgn">ms</td><td class="heb-ans">מְקֻטָּל</td><td></td></tr>
+<tr><td class="num">2</td><td class="pgn">fs</td><td><input class="parse-field" id="f-c2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c2')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-c2"><td class="ans-lbl">✓</td><td class="pgn">fs</td><td class="heb-ans">מְקֻטֶּלֶת</td><td></td></tr>
+<tr><td class="num">3</td><td class="pgn">mp</td><td><input class="parse-field" id="f-c3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c3')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-c3"><td class="ans-lbl">✓</td><td class="pgn">mp</td><td class="heb-ans">מְקֻטָּלִים</td><td></td></tr>
+<tr><td class="num">4</td><td class="pgn">fp</td><td><input class="parse-field" id="f-c4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c4')">▶ Answer</button></td></tr>
+<tr class="ans-row" id="ans-c4"><td class="ans-lbl">✓</td><td class="pgn">fp</td><td class="heb-ans">מְקֻטָּלוֹת</td><td></td></tr>
+</tbody>
+</table>
+
+<script>
+function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}
+function showAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='table-row');}
+function hideAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='none');}
+function clearAll(){document.querySelectorAll('input.f').forEach(i=>i.value='');}
+</script>
+

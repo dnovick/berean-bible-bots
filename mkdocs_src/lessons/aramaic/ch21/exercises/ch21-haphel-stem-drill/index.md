@@ -4,4 +4,457 @@
 
 [Full screen](ch21-haphel-stem-drill.html){.md-button}  [Markdown](ch21-haphel-stem-drill.md){.md-button}  [Print (PDF)](ch21-haphel-stem-drill.pdf){.md-button}
 
-<iframe src="ch21-haphel-stem-drill.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Haphel Stem Drill"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
+  h2 { font-size: 1.1em; margin-top: 1.6em; }
+  p, li { line-height: 1.6; }
+  .subtitle { color: #555; font-style: italic; margin-top: 0.2em; }
+  .controls { margin: 1.2em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
+  button.ctrl {
+    padding: 0.4em 1em; font-size: 0.88em; cursor: pointer;
+    background: #f0f0f0; border: 1px solid #999; border-radius: 3px;
+  }
+  button.ctrl:hover { background: #ddd; }
+  table { border-collapse: collapse; width: 100%; margin-top: 0.8em; font-size: 0.92em; }
+  th { background: #3a3a5c; color: #fff; padding: 0.5em 0.6em; text-align: left; }
+  td { padding: 0.45em 0.6em; border-bottom: 1px solid #ddd; vertical-align: middle; }
+  tr:nth-child(even) td { background: #f8f8f8; }
+  .hebrew { direction: rtl; unicode-bidi: embed; font-size: 1.22em; line-height: 1.8; font-weight: bold; }
+  .root-ans { direction: rtl; unicode-bidi: embed; font-size: 1.1em; }
+  input.parse-field {
+    width: 100%; box-sizing: border-box; border: 1px solid #aaa;
+    border-radius: 2px; padding: 0.2em 0.3em; font-size: 0.88em;
+    font-family: Georgia, serif;
+  }
+  button.reveal-btn {
+    padding: 0.2em 0.6em; font-size: 0.82em; cursor: pointer;
+    background: #e8e8e8; border: 1px solid #999; border-radius: 3px;
+    white-space: nowrap;
+  }
+  button.reveal-btn:hover { background: #ccc; }
+  tr.answer-row td { background: #d4edda; font-size: 0.88em; color: #155724; }
+  tr.answer-row { display: none; }
+  tr.answer-row.visible { display: table-row; }
+  .answer-label { font-weight: bold; margin-right: 0.3em; }
+  .reflection { background: #f5f5e8; border-left: 4px solid #b8860b; padding: 0.8em 1.1em; margin: 1.4em 0; border-radius: 0 4px 4px 0; }
+  .reflection h3 { margin-top: 0; font-size: 1em; }
+  .note { background: #eef4fb; border-left: 4px solid #4a7ab5; padding: 0.6em 1em; margin: 1em 0; border-radius: 0 4px 4px 0; font-size: 0.9em; }
+  @media print {
+    button.ctrl, button.reveal-btn { display: none; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    tr.answer-row { display: none !important; }
+    .controls { display: none; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch21-haphel-stem-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch21-haphel-stem-drill.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Chapter 21 — Haphel Stem Drill</h1>
+<p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch21: The Haphel Stem</p>
+
+<h2>Instructions</h2>
+<p>For each numbered Haphel verb form from Daniel or Ezra, enter: <strong>Conjugation</strong> (Perfect / Imperfect / Imperative / Infinitive / Participle), <strong>Root</strong> (3 consonants, Peal 3ms form), <strong>PGN</strong> (Person-Gender-Number, or N/A for infinitive; ms/mp/fs for participle), and <strong>Translation</strong>. All forms are Haphel (H stem — causative). Click <strong>&#9654; Answer</strong> to reveal the answer key row.</p>
+
+<div class="note">
+  <strong>Haphel perfect:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הַ-</span> prefix before R1; tsere in R2; no R2 dagesh.
+  &nbsp;&nbsp;
+  <strong>Haphel imperfect:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יְהַ-</span> (prefix + Haphel marker); tsere in R2.
+  &nbsp;&nbsp;
+  <strong>Haphel infinitive:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">לְהַ-</span> + qamets in R2 + <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">-ָה</span> ending.
+  &nbsp;&nbsp;
+  <strong>Haphel participle:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">מְהַ-</span> prefix; tsere in R2; no R2 dagesh (contrast Pael: R2 dagesh).
+  &nbsp;&nbsp;
+  <strong>I-yod roots (ידע):</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הַ + יְ → הוֹ-</span> (contraction to holem-waw).
+  &nbsp;&nbsp;
+  <strong>Hollow roots (קום):</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הַקִּים</span> pattern (compensatory dagesh in R3, not D-stem dagesh).
+  &nbsp;&nbsp;
+  <strong>"Bring" root (יתי/אתה):</strong> fixed stem <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הֵיתִי</span> (Haphel perfect 3ms).
+</div>
+
+<div class="controls">
+  <button class="ctrl" onclick="showAll()">Show All Answers</button>
+  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table id="drill-table">
+  <thead>
+    <tr>
+      <th style="width:2.5em">#</th>
+      <th style="width:14%">Form</th>
+      <th style="width:16%">Conjugation</th>
+      <th style="width:12%">Root</th>
+      <th style="width:13%">PGN</th>
+      <th style="width:32%">Translation</th>
+      <th style="width:5.5em"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+    <!-- 1 -->
+    <tr id="q1">
+      <td>1</td>
+      <td><div class="hebrew">הוֹדַע</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a1">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">ידע</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he made known / revealed (Dan. 2:23: הוֹדַעְתַּנִי "you made known to me"; הַ + I-yod יְ → הוֹ- contraction; Haphel causative of "to know" = "to make known")</td>
+      <td></td>
+    </tr>
+
+    <!-- 2 -->
+    <tr id="q2">
+      <td>2</td>
+      <td><div class="hebrew">הַקִּים</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a2">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קום</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he set up / established (Dan. 3:1: "he set it up in the plain of Dura"; hollow root II-waw קום; הַ- prefix + contracted stem → הַקִּים; dagesh in מ is compensatory from hollow root contraction, not D-stem doubling)</td>
+      <td></td>
+    </tr>
+
+    <!-- 3 -->
+    <tr id="q3">
+      <td>3</td>
+      <td><div class="hebrew">הֵיתִיוּ</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a3">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">יתי/אתה</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they brought (Dan. 5:2: "bring the golden vessels"; Haphel of "to come" = "to bring / cause to come"; base stem הֵיתִי + וּ 3mp suffix; memorize הֵיתִי as the Haphel 3ms perfect of this root)</td>
+      <td></td>
+    </tr>
+
+    <!-- 4 -->
+    <tr id="q4">
+      <td>4</td>
+      <td><div class="hebrew">יְהוֹדַע</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a4">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">ידע</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will make known / reveal (Dan. 2:29: יְהוֹדַעָךְ "he will make known to you"; יְ- imperfect prefix + הוֹ- Haphel + I-yod contraction + דַע; Haphel imperfect of ידע)</td>
+      <td></td>
+    </tr>
+
+    <!-- 5 -->
+    <tr id="q5">
+      <td>5</td>
+      <td><div class="hebrew">לְהוֹדָעָה</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a5">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Infinitive &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">ידע</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> N/A &nbsp;|&nbsp; <span class="answer-label">Trans:</span> to make known / to declare (Dan. 2:15; 4:3; לְ- + הוֹ- Haphel + I-yod contraction + דָ + עָה infinitive ending; qamets in R2 is the Haphel infinitive lengthening; -ָה is the standard Aramaic infinitive ending)</td>
+      <td></td>
+    </tr>
+
+    <!-- 6 -->
+    <tr id="q6">
+      <td>6</td>
+      <td><div class="hebrew">מְהוֹדֵעַ</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a6">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">ידע</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> making known / revealing (Dan. 2:28: גָּלֵא רָזִין מְהוֹדַע; מְ- participle prefix + הוֹ- Haphel + I-yod contraction + דֵעַ; III-aleph ending ַע on R3; Haphel participle of ידע)</td>
+      <td></td>
+    </tr>
+
+    <!-- 7 -->
+    <tr id="q7">
+      <td>7</td>
+      <td><div class="hebrew">הַשְׁלְטָךְ</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a7">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁלט</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms + 2ms obj. suffix &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he made you ruler over / he gave you dominion (Dan. 2:38: "all of them he has given into your hand and made you ruler over them"; הַ- Haphel perfect + שׁלט root + ָךְ 2ms object suffix; causative of שׁלט "to rule" = "to make ruler")</td>
+      <td></td>
+    </tr>
+
+    <!-- 8 -->
+    <tr id="q8">
+      <td>8</td>
+      <td><div class="hebrew">מְהַעְדֵּה</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a8">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">עדה</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> removing / deposing (Dan. 2:21: מְהַעְדֵּה מַלְכִין "removing kings"; מְ- participle prefix + הַ Haphel marker + עְדֵּה III-he root ending; causative of עדה "to pass" = "to cause to pass away / to remove")</td>
+      <td></td>
+    </tr>
+
+    <!-- 9 -->
+    <tr id="q9">
+      <td>9</td>
+      <td><div class="hebrew">מְהַשְׁנֵא</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a9">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁנה</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> changing / altering (Dan. 2:21: מְהַשְׁנֵא עִדָּנַיָּא "he changes times and seasons"; מְ- + הַ Haphel + שְׁנֵא III-aleph/III-he ending; Haphel causative of שׁנה "to be different/change" = "to cause to change / to alter")</td>
+      <td></td>
+    </tr>
+
+    <!-- 10 -->
+    <tr id="q10">
+      <td>10</td>
+      <td><div class="hebrew">הַקִּימוּ</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a10">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קום</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they set up / they established (Dan. 6:7: הַקִּימוּ כֻּלְּהוֹן "they all established [a royal decree]"; same hollow root הַקִּים- + וּ 3mp suffix; the compensatory dagesh in מ remains in all suffixed forms)</td>
+      <td></td>
+    </tr>
+
+    <!-- 11 -->
+    <tr id="q11">
+      <td>11</td>
+      <td><div class="hebrew">לְהַשְׁלָטָה</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a11">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Infinitive &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁלט</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> N/A &nbsp;|&nbsp; <span class="answer-label">Trans:</span> to give rule / to make ruler (לְ- prefix + הַ Haphel marker + שְׁ R1 + לָ R2 with qamets [infinitive lengthening] + טָה infinitive ending; Haphel infinitive structure: לְהַ + stem + qamets-R2 + -ָה)</td>
+      <td></td>
+    </tr>
+
+    <!-- 12 -->
+    <tr id="q12">
+      <td>12</td>
+      <td><div class="hebrew">יְהַשְׁלַח</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a12">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁלח</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he will send out / throw (יְ- imperfect prefix + הַ Haphel + שׁלח strong root; transparent יְהַ- structure visible here on a strong root; Haphel causative of שׁלח "to send" = "to cause to go out / to throw / to send away")</td>
+      <td></td>
+    </tr>
+
+    <!-- 13 -->
+    <tr id="q13">
+      <td>13</td>
+      <td><div class="hebrew">הֵיתִי</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a13">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">יתי/אתה</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he brought (Dan. 3:13; 5:13; Haphel 3ms perfect of the "come" root; הֵי- = Haphel prefix fused with the I-yod/I-aleph weak root; memorize הֵיתִי = Haphel perfect 3ms "he brought")</td>
+      <td></td>
+    </tr>
+
+    <!-- 14 -->
+    <tr id="q14">
+      <td>14</td>
+      <td><div class="hebrew">הוֹדַעְתְּ</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a14">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">ידע</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 2ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> you made known / you revealed (Dan. 2:23: הוֹדַעְתַּנִי "you have made known to me"; הוֹ- Haphel + I-yod contraction + דַע + תְּ 2ms perfect suffix; the ַ vowel shifts before the suffix consonant)</td>
+      <td></td>
+    </tr>
+
+    <!-- 15 -->
+    <tr id="q15">
+      <td>15</td>
+      <td><div class="hebrew">מְהָקֵם</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a15',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a15">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קום</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> setting up / establishing (Dan. 2:21: מְהָקֵם מַלְכִין "setting up kings"; מְ- participle prefix + הָ- Haphel (qamets variant with hollow root) + קֵם contracted hollow root stem; Haphel participle of קום)</td>
+      <td></td>
+    </tr>
+
+    <!-- 16 -->
+    <tr id="q16">
+      <td>16</td>
+      <td><div class="hebrew">הַקְטֵל</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a16',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a16">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect or Imperative &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms (perfect) / 2ms (imperative) &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he caused to kill (perfect) / cause to kill! (imperative) — model root form; הַ- prefix + שׁ֣R1 shewa + tsere-R2; the Haphel imperative 2ms is identical in form to perfect 3ms; context determines parsing</td>
+      <td></td>
+    </tr>
+
+    <!-- 17 -->
+    <tr id="q17">
+      <td>17</td>
+      <td><div class="hebrew">יְהֵיתוּן</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a17',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a17">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Imperfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">יתי/אתה</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3mp &nbsp;|&nbsp; <span class="answer-label">Trans:</span> they will bring (יְ- imperfect prefix + הֵי- Haphel stem of "come" root + תוּן 3mp imperfect suffix; Haphel imperfect of "to come" = "they will bring / they will cause to come")</td>
+      <td></td>
+    </tr>
+
+    <!-- 18 -->
+    <tr id="q18">
+      <td>18</td>
+      <td><div class="hebrew">הַשְׁלֵט</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a18',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a18">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Perfect &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">שׁלט</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> 3ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> he made [him] ruler / he gave dominion (הַ- Haphel prefix + שׁ R1 + tsere-לֵ R2 + ט R3; standard strong-root Haphel perfect 3ms pattern; causative of שׁלט "to rule" = "to cause to rule / to install as ruler")</td>
+      <td></td>
+    </tr>
+
+    <!-- 19 -->
+    <tr id="q19">
+      <td>19</td>
+      <td><div class="hebrew">לְהַקְטָלָה</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a19',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a19">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Infinitive &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> N/A &nbsp;|&nbsp; <span class="answer-label">Trans:</span> to cause to kill (model root form); לְ- prefix + הַ Haphel + קְ R1 shewa + טָ R2 qamets (infinitive lengthening) + לָה -ָה ending; structure: לְהַ + [R1 shewa] + [R2 qamets] + R3 + -ָה</td>
+      <td></td>
+    </tr>
+
+    <!-- 20 -->
+    <tr id="q20">
+      <td>20</td>
+      <td><div class="hebrew">מְהַקְטֵל</div></td>
+      <td><input class="parse-field" placeholder="conjugation…"></td>
+      <td><input class="parse-field" placeholder="root…"></td>
+      <td><input class="parse-field" placeholder="PGN…"></td>
+      <td><input class="parse-field" placeholder="translation…"></td>
+      <td><button class="reveal-btn" onclick="toggle('a20',this)">&#9654; Answer</button></td>
+    </tr>
+    <tr class="answer-row" id="a20">
+      <td></td>
+      <td colspan="5"><span class="answer-label">Conj:</span> Participle &nbsp;|&nbsp; <span class="answer-label">Root:</span> <span class="root-ans">קטל</span> &nbsp;|&nbsp; <span class="answer-label">PGN:</span> ms &nbsp;|&nbsp; <span class="answer-label">Trans:</span> causing to kill (model root form); מְ- participle prefix + הַ Haphel marker + קְ R1 shewa + טֵ R2 tsere + ל R3; no R2 dagesh (contrast Pael מְקַטֵּל which has dagesh in R2); the הַ in the stem is the decisive Haphel marker</td>
+      <td></td>
+    </tr>
+
+  </tbody>
+</table>
+
+<div class="reflection">
+  <h3>Reflection Questions</h3>
+  <ol>
+    <li>Items 1 (הוֹדַע) and 4 (יְהוֹדַע) both come from root ידע. (a) How does the Haphel prefix appear differently in the perfect vs. imperfect? (b) What phonological process produces the הוֹ- sequence?</li>
+    <li>Item 2 (הַקִּים) has dagesh forte in מ, yet this is Haphel, not Pael. Why does the dagesh appear? How does it differ in origin and function from the D-stem dagesh?</li>
+    <li>Item 6 (מְהוֹדֵעַ) and item 20 (מְהַקְטֵל) are both Haphel participles. (a) What prefix marks both as participles? (b) Why does the Haphel marker look different between the two?</li>
+    <li>Items 8 (מְהַעְדֵּה) and 9 (מְהַשְׁנֵא) are Haphel participles of III-he roots. What is the III-he participle ending? How would these forms look if the roots were strong?</li>
+    <li>Items 13 (הֵיתִי) and 3 (הֵיתִיוּ) are from the same root. Why does this Haphel form look so different from הוֹדַע or הַקִּים? What morphological elements can you identify in הֵיתִי?</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id, btn) {
+  var row = document.getElementById(id);
+  if (row.classList.contains('visible')) {
+    row.classList.remove('visible');
+    btn.textContent = '▶ Answer';
+  } else {
+    row.classList.add('visible');
+    btn.textContent = '▼ Hide';
+  }
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.classList.add('visible'); });
+  document.querySelectorAll('.reveal-btn').forEach(function(b) { b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(function(r) { r.classList.remove('visible'); });
+  document.querySelectorAll('.reveal-btn').forEach(function(b) { b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+}
+</script>
+

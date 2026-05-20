@@ -4,4 +4,112 @@
 
 [Full screen](ch11-particle-drill.html){.md-button}  [Markdown](ch11-particle-drill.md){.md-button}  [Print (PDF)](ch11-particle-drill.pdf){.md-button}
 
-<iframe src="ch11-particle-drill.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Particle Drill"></iframe>
+<style>
+
+  body { font-family: Arial, sans-serif;    }
+  h1 { font-size: 1.3em; }
+  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
+  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
+  th { background: #e8e8e8; }
+  td.aram { font-size: 1.4em; text-align: right; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; min-width: 120px; unicode-bidi: embed; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
+  .answer-row td { background: #e6ffe6; font-size: .85em; }
+  .answer-row { display: none; }
+  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
+  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
+  .global-btns { margin-bottom: 1em; }
+  @media print {
+    .btn, .global-btns { display: none; }
+    input.parse-field { border-bottom: 1px solid #555; }
+    .answer-row { display: none !important; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch11-particle-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch11-particle-drill.pdf">&#128209; PDF</a>
+</div>
+
+<h1>BBA Chapter 11 — Particle Drill</h1>
+<p class="instructions"><strong>Instructions:</strong> For each phrase, identify the adverb or particle, give its category (time, place, manner, negation, discourse marker, causal/purpose), and give the English gloss or translation.</p>
+
+<div class="global-btns">
+  <button class="btn" onclick="showAll()">Show All Answers</button>
+  <button class="btn" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<script>
+// [num, phrase, particle, category, gloss]
+var rows = [
+  [1,  "אֱדַיִן מַלְכָּא",  "אֱדַיִן",         "time / discourse marker",      "then; at that time — 'then the king...'"],
+  [2,  "לָא יָכְלִין",      "לָא",             "negation",                     "not — 'they are not able'"],
+  [3,  "כְּעַן אֱלָהּ",     "כְּעַן",          "time (present)",               "now — 'now, O God...'"],
+  [4,  "תַּמָּה מֶלֶךְ",    "תַּמָּה",         "place",                        "there — 'there (was) a king'"],
+  [5,  "יַתִּיר מִן",       "יַתִּיר",         "manner",                       "exceedingly, more than"],
+  [6,  "כֵּן אֲמַר",        "כֵּן",            "manner",                       "thus, so — 'thus he said'"],
+  [7,  "עֲדַיִן לָא",       "עֲדַיִן",         "time (continuity)",            "still, yet — 'not yet'"],
+  [8,  "הָכָא קָיְמִין",    "הָכָא",           "place",                        "here — 'standing here'"],
+  [9,  "לָהֵן מַלְכָּא",   "לָהֵן",           "discourse (consequence/contrast)","therefore / but — 'therefore, O king'"],
+  [10, "אַף אֲנָה",         "אַף",             "assertive",                    "also, even — 'even I / I also'"],
+  [11, "הֵן אִיתַי",        "הֵן",             "conditional/assertive",        "if; behold — 'if there is / behold, there is'"],
+  [12, "אֱדַיִן בֵּאדַיִן", "אֱדַיִן",         "time / discourse marker",      "then — sequential / narrative marker"],
+  [13, "בְּדִיל דִּי",      "בְּדִיל דִּי",     "causal/purpose",               "in order that, for the sake of, because"],
+  [14, "אַל תִּדְחַל",      "אַל",             "negation (prohibitive)",       "do not — 'do not fear'"],
+  [15, "שַׂגִּיא טָב",      "שַׂגִּיא",        "manner (adverb from adj.)",    "greatly, very — 'very good'"],
+  [16, "לָא עֲדַיִן",       "לָא + עֲדַיִן",   "negation + time (idiom)",      "not yet"],
+  [17, "אֲרוּ חֵיוָה",      "אֲרוּ",           "discourse (presentative)",     "behold, lo — 'behold, a beast'"],
+  [18, "כִּדְנָה אֲמַר",    "כִּדְנָה",        "manner",                       "thus, in this manner — 'thus he said'"],
+  [19, "כָּל-קֳבֵל דִּי",  "כָּל-קֳבֵל דִּי", "causal",                       "because, inasmuch as, therefore"],
+  [20, "הֵן...הֵן",         "הֵן...הֵן",        "conditional (correlative)",    "whether...or; if...then"]
+];
+
+document.addEventListener("DOMContentLoaded", function() {
+  var t = document.createElement("table"); document.body.appendChild(t);
+  var thead = document.createElement("thead");
+  var hr = document.createElement("tr");
+  ["#","Aramaic Phrase","Adverb / Particle","Category","Gloss / Translation",""].forEach(function(h){
+    var th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
+  });
+  thead.appendChild(hr); t.appendChild(thead);
+
+  var tbody = document.createElement("tbody");
+  rows.forEach(function(row) {
+    var num = row[0], phrase = row[1], part = row[2], cat = row[3], gloss = row[4];
+
+    var qrow = document.createElement("tr");
+    qrow.innerHTML =
+      '<td>' + num + '</td>' +
+      '<td class="aram">' + phrase + '</td>' +
+      '<td><input class="parse-field" type="text" placeholder="adverb / particle"></td>' +
+      '<td><input class="parse-field" type="text" placeholder="category"></td>' +
+      '<td><input class="parse-field" type="text" placeholder="gloss / translation"></td>' +
+      '<td><button class="btn btn-ans" onclick="toggle(\'a'+num+'\')">▶ Answer</button></td>';
+    tbody.appendChild(qrow);
+
+    var arow = document.createElement("tr");
+    arow.id = "a" + num; arow.className = "answer-row";
+    arow.innerHTML =
+      '<td></td>' +
+      '<td class="aram">' + phrase + '</td>' +
+      '<td>' + part + '</td>' +
+      '<td>' + cat + '</td>' +
+      '<td colspan="2">' + gloss + '</td>';
+    tbody.appendChild(arow);
+  });
+  t.appendChild(tbody);
+});
+
+function toggle(id) {
+  var el = document.getElementById(id);
+  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
+}
+function showAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; }); }
+function hideAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; }); }
+function clearAll() { document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; }); }
+</script>
+

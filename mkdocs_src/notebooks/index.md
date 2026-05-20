@@ -4,6 +4,11 @@ Interactive analysis notebooks covering the full `bible_grammar` toolkit — Heb
 
 Each notebook below is rendered statically with its outputs. Click the **Open in Colab** badge on any notebook page to run it interactively in Google Colab — no local installation required.
 
+!!! tip "New to Jupyter or this project?"
+    Start with the [**Getting Started**](tutorial/getting_started.ipynb) notebook —
+    it walks through running cells, filtering the dataset, and generating charts,
+    no prior Python experience needed.
+
 ## Running in Google Colab
 
 Click the **Open in Colab** badge at the top of any notebook page. On first run, execute the **Colab setup** cell (cell 2), which will:

@@ -1,0 +1,56 @@
+# New Testament Reports
+
+Studies of Greek grammar, vocabulary, and structure in the New Testament.
+
+← [Back to all reports](../index.md)
+
+---
+
+## Verb Morphology
+
+| Report | Description |
+|---|---|
+| [Greek NT Verb Tense × Voice Heatmap](verbs/greek-nt-tense-voice-heatmap.md) | How tense and voice combinations are distributed across every NT book |
+| [Greek Verb Tense × Voice — Pauline Letters](verbs/greek-pauline-tense-voice-heatmap.md) | The same heatmap filtered to Paul's letters |
+| [Greek Aorist Passive Verbs by NT Book](verbs/greek-aorist-passives-by-nt-book.md) | Count and distribution of aorist passive forms across the NT |
+
+---
+
+## Lexicon & Semantic Profiles
+
+| Report | Term | Description |
+|---|---|---|
+| [λόγος (G3056)](lexicon/g3056-semantic-profile.md) | *logos* — word, reason | Distribution, collocates, semantic range |
+| [Greek Words for "Obey" — NT and LXX](lexicon/obey-greek-word-study.md) | ὑπακούω, πειθαρχέω, etc. | Cross-term word study with LXX comparison |
+| [Greek NT Case Distribution by Book](lexicon/nt-case-distribution-by-book.md) | — | Nominative / genitive / dative / accusative proportions per book |
+| [2 Timothy 3:1–5 — Vice List Word Study](lexicon/2tim3-vice-list/index.md) | 22 terms | Etymology, OT/LXX background, NT distribution, and theological notes for every term in Paul's last-days vice catalogue |
+
+---
+
+## Divine Names & Christological Titles
+
+| Report | Description |
+|---|---|
+| [Christological Titles in the Gospels](names/christological-titles.md) | How often Jesus uses "Son of Man," "Son of God," "Lord," etc. in each Gospel |
+
+---
+
+## Discourse Analysis
+
+| Report | Description |
+|---|---|
+| [καί Semantic Function Analysis](discourse/kai-semantic-functions.md) | Classification of all 8,978 GNT καί tokens by function: additive, adjunctive, ascensive, temporal, correlative, adversative, explicative |
+
+---
+
+## Book Surveys (Language Profiles)
+
+Each profile covers the grammatical makeup of a NT book — verb tense/mood/voice, noun cases, vocabulary statistics.
+
+| Book | Report |
+|---|---|
+| Matthew | [Mat_profile.md](survey/Mat_profile.md) |
+| John | [Jhn_profile.md](survey/Jhn_profile.md) |
+| Romans | [Rom_profile.md](survey/Rom_profile.md) |
+| Hebrews | [Heb_profile.md](survey/Heb_profile.md) |
+| Revelation | [Rev_profile.md](survey/Rev_profile.md) |

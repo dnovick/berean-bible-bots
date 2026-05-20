@@ -4,4 +4,495 @@
 
 [Full screen](ch12-verb-overview.html){.md-button}  [Markdown](ch12-verb-overview.md){.md-button}  [Print (PDF)](ch12-verb-overview.pdf){.md-button}
 
-<iframe src="ch12-verb-overview.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Verb Overview"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; line-height: 1.65; }
+  h1 { font-size: 1.5rem; border-bottom: 2px solid #555; padding-bottom: .45rem; margin-bottom: .3rem; }
+  h2 { font-size: 1.08rem; margin-top: 2.2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .25rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3rem; margin-bottom: 1rem; font-size: .95rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .8rem 1.1rem; margin: 1.1rem 0 1.5rem; font-size: .93rem; }
+  .instructions p { margin: .3rem 0; }
+  table { border-collapse: collapse; width: 100%; margin: .5rem 0 .8rem; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .42rem .6rem; border: 1px solid #bbb; text-align: left; font-size: .85rem; }
+  td { padding: .32rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 1.8em; font-weight: bold; width: 8rem; text-align: right; padding: .2rem .5rem; }
+  td.gloss { font-style: italic; font-size: .9rem; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .24rem .42rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .answer-row { display: none; background: #f0faf0; }
+  .answer-row td { font-size: .87rem; color: #2a6e2a; padding: .3rem .5rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; text-align: center; width: 2rem; }
+  .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.5em; width: 8rem; text-align: right; }
+  .ans-stem { font-weight: bold; color: #1a5c1a; }
+  button.rbtn { font-size: .76rem; padding: .15rem .5rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .75rem; flex-wrap: wrap; margin: 1.1rem 0 1.6rem; }
+  .controls button { padding: .38rem .9rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2.2rem 0; }
+  .reflection { background: #f8f0e8; border-left: 4px solid #c8a060; padding: .85rem 1.1rem; margin: 1.5rem 0; font-size: .93rem; }
+  .reflection ol { margin: .5rem 0 0 1.2rem; padding: 0; }
+  .reflection li { margin-bottom: .7rem; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    .answer-row { display: none !important; }
+    body {   }
+    h1 { font-size: 1.2rem; }
+  }
+  select.parse-field { font-size: .9em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 80px; }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+<strong>Also available:</strong>
+<a href="ch12-verb-overview.md" style="margin-left:.5rem;">📄 Markdown</a>
+<span style="margin:0 .3rem;color:#aaa;">|</span>
+<a href="ch12-verb-overview.pdf">📑 PDF</a>
+</div>
+<h1>Ch12 Verb Overview Exercise</h1>
+<p class="subtitle">BBH Chapter 12 — Introduction to Hebrew Verbs  ·  20 items</p>
+<div class="instructions">
+<p><strong>Part A:</strong> For each Hebrew verb form and its gloss, identify (1) the stem, (2) whether it expresses
+  <em>Active</em>, <em>Passive</em>, or <em>Reflexive</em> meaning, and (3) the three-letter root.</p>
+<p><strong>Part B:</strong> For each English description of an action, identify which Hebrew stem would be used and
+  explain briefly why.</p>
+<p><em>Note: Conjugation and PGN parsing are not required here — those begin in Ch13. Focus on stems and roots.</em></p>
+</div>
+<div class="controls">
+<button onclick="showAll()">Show All Answers</button>
+<button onclick="hideAll()">Hide All Answers</button>
+<button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+<!-- ═══════════════════════════════════════════════ PART A ═════ -->
+<h2>Part A — Stem Identification (12 items)</h2>
+<table>
+<tr>
+<th>#</th>
+<th>Verb</th>
+<th>Gloss</th>
+<th>Stem</th>
+<th>Active / Passive / Reflexive</th>
+<th>Root</th>
+<th></th>
+</tr>
+<!-- 1 -->
+<tr>
+<td class="num">1</td>
+<td class="heb">שָׁמַר</td>
+<td class="gloss">"he guarded"</td>
+<td><select class="parse-field" id="a1-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a1-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a1-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a1">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">שָׁמַר</td>
+<td class="gloss">"he guarded"</td>
+<td class="ans-stem">Qal</td>
+<td>Active</td>
+<td class="ans-heb">שמר</td>
+<td></td>
+</tr>
+<!-- 2 -->
+<tr>
+<td class="num">2</td>
+<td class="heb">כָּתַב</td>
+<td class="gloss">"he wrote"</td>
+<td><select class="parse-field" id="a2-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a2-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a2-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a2')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a2">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">כָּתַב</td>
+<td class="gloss">"he wrote"</td>
+<td class="ans-stem">Qal</td>
+<td>Active</td>
+<td class="ans-heb">כתב</td>
+<td></td>
+</tr>
+<!-- 3 -->
+<tr>
+<td class="num">3</td>
+<td class="heb">נָתַן</td>
+<td class="gloss">"he gave"</td>
+<td><select class="parse-field" id="a3-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a3-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a3-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a3')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a3">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">נָתַן</td>
+<td class="gloss">"he gave"</td>
+<td class="ans-stem">Qal</td>
+<td>Active</td>
+<td class="ans-heb">נתן</td>
+<td>Weak: I-נ and III-נ, but Qal 3ms looks like a strong root here</td>
+</tr>
+<!-- 4 -->
+<tr>
+<td class="num">4</td>
+<td class="heb">הָלַךְ</td>
+<td class="gloss">"he walked"</td>
+<td><select class="parse-field" id="a4-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a4-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a4-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a4')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a4">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">הָלַךְ</td>
+<td class="gloss">"he walked"</td>
+<td class="ans-stem">Qal</td>
+<td>Active</td>
+<td class="ans-heb">הלך</td>
+<td>III-guttural (ך), but Qal 3ms is straightforward</td>
+</tr>
+<!-- 5 -->
+<tr>
+<td class="num">5</td>
+<td class="heb">נִשְׁמַר</td>
+<td class="gloss">"he was guarded / he kept himself"</td>
+<td><select class="parse-field" id="a5-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a5-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a5-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a5')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a5">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">נִשְׁמַר</td>
+<td class="gloss">"he was guarded / he kept himself"</td>
+<td class="ans-stem">Niphal</td>
+<td>Passive <em>or</em> Reflexive</td>
+<td class="ans-heb">שמר</td>
+<td>Niphal marker: נִ prefix before R1</td>
+</tr>
+<!-- 6 -->
+<tr>
+<td class="num">6</td>
+<td class="heb">נִכְתַּב</td>
+<td class="gloss">"it was written"</td>
+<td><select class="parse-field" id="a6-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a6-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a6-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a6')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a6">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">נִכְתַּב</td>
+<td class="gloss">"it was written"</td>
+<td class="ans-stem">Niphal</td>
+<td>Passive</td>
+<td class="ans-heb">כתב</td>
+<td>Niphal marker: נִ prefix</td>
+</tr>
+<!-- 7 -->
+<tr>
+<td class="num">7</td>
+<td class="heb">הִשְׁמִיר</td>
+<td class="gloss">"he caused to guard"</td>
+<td><select class="parse-field" id="a7-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a7-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a7-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a7')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a7">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">הִשְׁמִיר</td>
+<td class="gloss">"he caused to guard"</td>
+<td class="ans-stem">Hiphil</td>
+<td>Active (causative)</td>
+<td class="ans-heb">שמר</td>
+<td>Hiphil marker: הִ prefix + tsere/hireq under R2</td>
+</tr>
+<!-- 8 -->
+<tr>
+<td class="num">8</td>
+<td class="heb">הוֹלִיךְ</td>
+<td class="gloss">"he caused to walk / he led"</td>
+<td><select class="parse-field" id="a8-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a8-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a8-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a8')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a8">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">הוֹלִיךְ</td>
+<td class="gloss">"he caused to walk / he led"</td>
+<td class="ans-stem">Hiphil</td>
+<td>Active (causative)</td>
+<td class="ans-heb">הלך</td>
+<td>Hiphil of הלך; holem waw in prefix reflects I-ה weak pattern</td>
+</tr>
+<!-- 9 -->
+<tr>
+<td class="num">9</td>
+<td class="heb">כִּתֵּב</td>
+<td class="gloss">"he wrote intensively / repeatedly"</td>
+<td><select class="parse-field" id="a9-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a9-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a9-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a9')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a9">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">כִּתֵּב</td>
+<td class="gloss">"he wrote intensively / repeatedly"</td>
+<td class="ans-stem">Piel</td>
+<td>Active (intensive)</td>
+<td class="ans-heb">כתב</td>
+<td>Piel marker: daghesh forte in R2 (ת) + hireq under R1 + tsere under R2</td>
+</tr>
+<!-- 10 -->
+<tr>
+<td class="num">10</td>
+<td class="heb">שִׁמֵּר</td>
+<td class="gloss">"he kept carefully / he tended"</td>
+<td><select class="parse-field" id="a10-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a10-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a10-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a10')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a10">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">שִׁמֵּר</td>
+<td class="gloss">"he kept carefully / he tended"</td>
+<td class="ans-stem">Piel</td>
+<td>Active (intensive)</td>
+<td class="ans-heb">שמר</td>
+<td>Piel marker: daghesh forte in R2 (מ) + hireq under R1</td>
+</tr>
+<!-- 11 -->
+<tr>
+<td class="num">11</td>
+<td class="heb">כֻּתַּב</td>
+<td class="gloss">"it was written (intensive passive)"</td>
+<td><select class="parse-field" id="a11-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a11-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a11-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a11')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a11">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">כֻּתַּב</td>
+<td class="gloss">"it was written (intensive passive)"</td>
+<td class="ans-stem">Pual</td>
+<td>Passive</td>
+<td class="ans-heb">כתב</td>
+<td>Pual marker: daghesh forte in R2 + qibbuts (u-vowel) under R1</td>
+</tr>
+<!-- 12 -->
+<tr>
+<td class="num">12</td>
+<td class="heb">הִתְהַלֵּךְ</td>
+<td class="gloss">"he walked about / to and fro"</td>
+<td><select class="parse-field" id="a12-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="a12-apr" placeholder="Active / Passive / Reflexive"/></td>
+<td><input class="parse-field" id="a12-root" placeholder="root"/></td>
+<td><button class="rbtn" onclick="tog('a12')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-a12">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">הִתְהַלֵּךְ</td>
+<td class="gloss">"he walked about / to and fro"</td>
+<td class="ans-stem">Hithpael</td>
+<td>Reflexive</td>
+<td class="ans-heb">הלך</td>
+<td>Hithpael marker: הִתְ prefix; הִתְהַלֵּךְ occurs frequently in Genesis (e.g., Gen 5:24)</td>
+</tr>
+</table>
+<hr class="sec"/>
+<!-- ═══════════════════════════════════════════════ PART B ═════ -->
+<h2>Part B — Meaning to Stem (8 items)</h2>
+<table>
+<tr>
+<th>#</th>
+<th>Description</th>
+<th>Stem</th>
+<th>Explanation</th>
+<th></th>
+</tr>
+<!-- B1 -->
+<tr>
+<td class="num">1</td>
+<td>"God caused Abraham to go out from Ur"</td>
+<td><select class="parse-field" id="b1-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b1-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b1">
+<td class="ans-lbl">✓</td>
+<td>"God caused Abraham to go out from Ur"</td>
+<td class="ans-stem">Hiphil</td>
+<td>The Hiphil is the causative active stem — a subject causes someone else to perform the action (here, God causes Abraham to go out).</td>
+<td></td>
+</tr>
+<!-- B2 -->
+<tr>
+<td class="num">2</td>
+<td>"The letter was written by the scribe" (simple passive)</td>
+<td><select class="parse-field" id="b2-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b2-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b2')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b2">
+<td class="ans-lbl">✓</td>
+<td>"The letter was written by the scribe" (simple passive)</td>
+<td class="ans-stem">Niphal</td>
+<td>The Niphal is the simple passive (and reflexive) stem — the passive counterpart to the Qal.</td>
+<td></td>
+</tr>
+<!-- B3 -->
+<tr>
+<td class="num">3</td>
+<td>"David walked around in his palace repeatedly"</td>
+<td><select class="parse-field" id="b3-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b3-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b3')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b3">
+<td class="ans-lbl">✓</td>
+<td>"David walked around in his palace repeatedly"</td>
+<td class="ans-stem">Hithpael</td>
+<td>The Hithpael of הלך (הִתְהַלֵּךְ) means "to walk about / to move to and fro" — reflexive and intensive action.</td>
+<td></td>
+</tr>
+<!-- B4 -->
+<tr>
+<td class="num">4</td>
+<td>"The king was caused to reign (someone put him on the throne)"</td>
+<td><select class="parse-field" id="b4-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b4-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b4">
+<td class="ans-lbl">✓</td>
+<td>"The king was caused to reign (someone put him on the throne)"</td>
+<td class="ans-stem">Hophal</td>
+<td>The Hophal is the causative passive — the passive counterpart of the Hiphil. Someone caused the king to reign; the king received the causation.</td>
+<td></td>
+</tr>
+<!-- B5 -->
+<tr>
+<td class="num">5</td>
+<td>"She kept/guarded herself" (simple reflexive)</td>
+<td><select class="parse-field" id="b5-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b5-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b5')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b5">
+<td class="ans-lbl">✓</td>
+<td>"She kept/guarded herself" (simple reflexive)</td>
+<td class="ans-stem">Niphal</td>
+<td>The Niphal also serves as the simple reflexive when the subject acts on itself without intensive or thoroughgoing connotation.</td>
+<td></td>
+</tr>
+<!-- B6 -->
+<tr>
+<td class="num">6</td>
+<td>"He inscribed over and over" (intensive passive of writing)</td>
+<td><select class="parse-field" id="b6-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b6-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b6')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b6">
+<td class="ans-lbl">✓</td>
+<td>"He inscribed over and over" (intensive passive of writing)</td>
+<td class="ans-stem">Pual</td>
+<td>The Pual is the passive counterpart of the Piel. If Piel = intensive active writing, then Pual = intensive passive writing.</td>
+<td></td>
+</tr>
+<!-- B7 -->
+<tr>
+<td class="num">7</td>
+<td>"He killed himself thoroughly / destroyed himself" (reflexive intensive)</td>
+<td><select class="parse-field" id="b7-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b7-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b7')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b7">
+<td class="ans-lbl">✓</td>
+<td>"He killed himself thoroughly / destroyed himself" (reflexive intensive)</td>
+<td class="ans-stem">Hithpael</td>
+<td>The Hithpael combines reflexive force with the intensive/thorough quality of the Piel root. It is the reflexive intensive stem.</td>
+<td></td>
+</tr>
+<!-- B8 -->
+<tr>
+<td class="num">8</td>
+<td>"Moses guarded (simple active, base meaning)"</td>
+<td><select class="parse-field" id="b8-stem"><option value="">—</option><option value="Qal">Qal</option><option value="Niphal">Niphal</option><option value="Piel">Piel</option><option value="Pual">Pual</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option><option value="Hithpael">Hithpael</option></select></td>
+<td><input class="parse-field" id="b8-exp" placeholder="brief explanation"/></td>
+<td><button class="rbtn" onclick="tog('b8')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="ans-b8">
+<td class="ans-lbl">✓</td>
+<td>"Moses guarded (simple active, base meaning)"</td>
+<td class="ans-stem">Qal</td>
+<td>The Qal is the base, simple active stem — the unmodified root meaning with no intensification, causation, or reflexivity.</td>
+<td></td>
+</tr>
+</table>
+<hr class="sec"/>
+<!-- ═══════════════════════════════════════ REFLECTION ═════ -->
+<div class="reflection">
+<strong>Reflection Questions</strong>
+<ol>
+<li>The Niphal can be either <em>passive</em> or <em>reflexive</em>. What contextual clues
+        help you decide which meaning is intended? Think of an example from Genesis.</li>
+<li>Why do you think the <strong>Qal is the most frequent stem</strong> in the OT (roughly
+        half of all verb tokens), while the Pual and Hophal are comparatively rare?</li>
+<li>Consider the root הלך ("walk/go"). You see it in the Qal (הָלַךְ), Hiphil (הוֹלִיךְ),
+        and Hithpael (הִתְהַלֵּךְ). How does the stem change the meaning of the same root?
+        What does this tell you about how Hebrew builds meaning systematically?</li>
+</ol>
+</div>
+<script>
+  function tog(id) {
+    var row = document.getElementById('ans-' + id);
+    var btn = event.target;
+    if (row.style.display === 'table-row') {
+      row.style.display = 'none';
+      btn.textContent = '▶ Answer';
+      btn.classList.remove('on');
+    } else {
+      row.style.display = 'table-row';
+      btn.textContent = '▼ Hide';
+      btn.classList.add('on');
+    }
+  }
+
+  function showAll() {
+    document.querySelectorAll('.answer-row').forEach(function(r) {
+      r.style.display = 'table-row';
+    });
+    document.querySelectorAll('.rbtn').forEach(function(b) {
+      b.textContent = '▼ Hide';
+      b.classList.add('on');
+    });
+  }
+
+  function hideAll() {
+    document.querySelectorAll('.answer-row').forEach(function(r) {
+      r.style.display = 'none';
+    });
+    document.querySelectorAll('.rbtn').forEach(function(b) {
+      b.textContent = '▶ Answer';
+      b.classList.remove('on');
+    });
+  }
+
+  function clearAll() {
+    document.querySelectorAll('.parse-field').forEach(function(inp) {
+      inp.value = '';
+    });
+  }
+</script>
+

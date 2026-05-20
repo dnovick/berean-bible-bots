@@ -4,4 +4,180 @@
 
 [Full screen](ch22-qal-participle-paradigm-drill.html){.md-button}  [Markdown](ch22-qal-participle-paradigm-drill.md){.md-button}  [Print (PDF)](ch22-qal-participle-paradigm-drill.pdf){.md-button}
 
-<iframe src="ch22-qal-participle-paradigm-drill.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Qal Participle Paradigm Drill"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.pgn { font-weight: bold; color: #333; width: 5rem; }
+  td.heb-ans { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; font-family: 'Arial Hebrew', Arial, sans-serif; color: #2a6e2a; min-width: 7rem; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
+  @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch22-qal-participle-paradigm-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch22-qal-participle-paradigm-drill.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Ch22 Qal Participle Paradigm Drill</h1>
+<p class="subtitle">BBH Chapter 22 · 8 forms · Root: שמר · Active and Passive</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> Part A: Write the Qal Active Participle for שמר (4 forms: ms, fs, mp, fp).
+  Part B: Write the Qal Passive Participle (qatûl pattern) for שמר.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<h2>Part A — Qal Active Participle</h2>
+<table>
+  <tr><th>#</th><th>Form</th><th>Active Participle</th><th></th></tr>
+
+  <tr>
+    <td class="num">1</td>
+    <td class="pgn">ms</td>
+    <td><input class="parse-field" id="f-1" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">ms</td>
+    <td class="heb-ans">שֹׁמֵר</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">2</td>
+    <td class="pgn">fs</td>
+    <td><input class="parse-field" id="f-2" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">fs</td>
+    <td class="heb-ans">שֹׁמֶרֶת</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">3</td>
+    <td class="pgn">mp</td>
+    <td><input class="parse-field" id="f-3" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">mp</td>
+    <td class="heb-ans">שֹׁמְרִים</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">4</td>
+    <td class="pgn">fp</td>
+    <td><input class="parse-field" id="f-4" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">fp</td>
+    <td class="heb-ans">שֹׁמְרוֹת</td>
+    <td></td>
+  </tr>
+
+</table>
+
+<hr class="sec">
+
+<h2>Part B — Qal Passive Participle (qatûl pattern)</h2>
+<table>
+  <tr><th>#</th><th>Form</th><th>Passive Participle</th><th></th></tr>
+
+  <tr>
+    <td class="num">5</td>
+    <td class="pgn">ms</td>
+    <td><input class="parse-field" id="f-5" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">ms</td>
+    <td class="heb-ans">שָׁמוּר</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">6</td>
+    <td class="pgn">fs</td>
+    <td><input class="parse-field" id="f-6" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">fs</td>
+    <td class="heb-ans">שְׁמוּרָה</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">7</td>
+    <td class="pgn">mp</td>
+    <td><input class="parse-field" id="f-7" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">mp</td>
+    <td class="heb-ans">שְׁמוּרִים</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">8</td>
+    <td class="pgn">fp</td>
+    <td><input class="parse-field" id="f-8" placeholder="כתוב..."></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8">
+    <td class="ans-lbl">✓</td>
+    <td class="pgn">fp</td>
+    <td class="heb-ans">שְׁמוּרוֹת</td>
+    <td></td>
+  </tr>
+
+</table>
+
+<script>
+function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}
+function showAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='table-row');}
+function hideAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='none');}
+function clearAll(){document.querySelectorAll('input.f').forEach(i=>i.value='');}
+</script>
+

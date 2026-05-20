@@ -4,4 +4,274 @@
 
 [Full screen](ch31-weak-form-id.html){.md-button}  [Markdown](ch31-weak-form-id.md){.md-button}  [Print (PDF)](ch31-weak-form-id.pdf){.md-button}
 
-<iframe src="ch31-weak-form-id.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Weak Form Id"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
+  h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
+  h3 { font-size: 1em; margin-top: 1.5em; color: #555; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
+  tr:nth-child(even) td { background: #f7f7f7; }
+  .heb { font-size: 1.2em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .85em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .82em; }
+  .answer-row { display: none; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
+  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
+  .controls button:hover { background: #ddd; }
+  .legend { border: 1px solid #ccc; border-radius: 4px; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .legend table { margin: .3em 0; }
+  .legend th { background: #555; font-size: .82em; }
+  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .5em 1em; margin: 1em 0; font-size: .88em; }
+  .discussion { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  ol.disc { margin: .4em 0 0 1.2em; padding: 0; }
+  ol.disc li { margin-bottom: .5em; }
+  .section-label { background: #e8eef8; border-left: 4px solid #2a4a6e; padding: .3em .8em; font-weight: bold; font-size: .9em; margin: 1.5em 0 .5em; }
+  @media print {
+    button, .controls { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .answer-row { display: table-row !important; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch31-weak-form-id.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch31-weak-form-id.pdf">&#128209; PDF</a>
+</div>
+
+
+<h1>Chapter 31 — Piel Weak-Form Identification Drill</h1>
+<p class="subtitle">BBH Chapter 31 · Piel Weak Verbs</p>
+
+<p>For each form: (1) <strong>identify the weak class</strong>, (2) <strong>parse</strong> (conjugation + PGN), (3) <strong>identify the root</strong>.</p>
+
+<div class="legend">
+  <table>
+    <tr><th>Class</th><th>Key diagnostic signal in Piel</th></tr>
+    <tr><td><strong>III-he</strong></td><td>Final ה retained in perfect (כִּלָּה) and imperfect (יְכַלֶּה); dropped (apocopated) in wayyiqtol (יְכַל); וֹת in inf. construct</td></tr>
+    <tr><td><strong>I-guttural</strong></td><td>Hateph vowel under R1 instead of simple shewa; dagesh lene absent under prefix consonant; composite shewa visible before R1 guttural</td></tr>
+    <tr><td><strong>Geminate</strong></td><td>Root has R2=R3; the Piel dagesh forte doubles the already-doubled consonant; imperfect 3mp shows composite shewa before vocalic ending (יְהַלֲלוּ)</td></tr>
+    <tr><td><strong>I-nun</strong></td><td>Nun (R1) visible throughout — does NOT assimilate into dagesh in R2 (contrast Qal/Hiphil where nun assimilates); dagesh forte in R2 is the Piel stem marker, not an assimilation dagesh</td></tr>
+  </table>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<!-- PART A -->
+<h2>Part A — By Class</h2>
+
+<div class="section-label">Group 1 — III-he</div>
+<table>
+  <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
+
+  <tr><td>1</td><td><span class="heb">יְכַל</span></td><td>Gen 2:2</td>
+    <td><input class="parse-field" id="a1g"></td><td><input class="parse-field" id="a1p"></td><td><input class="parse-field" id="a1r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r1')">▶</button></td></tr>
+  <tr class="answer-row" id="r1"><td colspan="7"><strong>Wayyiqtol · 3ms · כָּלָה</strong> — and he finished; apocopated Piel III-he wayyiqtol: final ה dropped, short patach under R2 (כַ)</td></tr>
+
+  <tr><td>2</td><td><span class="heb">יְצַו</span></td><td>Gen 2:16</td>
+    <td><input class="parse-field" id="a2g"></td><td><input class="parse-field" id="a2p"></td><td><input class="parse-field" id="a2r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r2')">▶</button></td></tr>
+  <tr class="answer-row" id="r2"><td colspan="7"><strong>Wayyiqtol · 3ms · צָוָה</strong> — and he commanded; apocopated: ה dropped; patach under צ; R2=ו (vav takes dagesh forte)</td></tr>
+
+  <tr><td>3</td><td><span class="heb">צִוִּיתִי</span></td><td>Gen 3:11</td>
+    <td><input class="parse-field" id="a3g"></td><td><input class="parse-field" id="a3p"></td><td><input class="parse-field" id="a3r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r3')">▶</button></td></tr>
+  <tr class="answer-row" id="r3"><td colspan="7"><strong>Perfect · 1cs · צָוָה</strong> — I commanded; chiriq-yod vowel letter before תִּי suffix; dagesh forte in ו (R2); III-he perfect 1cs</td></tr>
+
+  <tr><td>4</td><td><span class="heb">יְחַיּוּ</span></td><td>Gen 12:12</td>
+    <td><input class="parse-field" id="a4g"></td><td><input class="parse-field" id="a4p"></td><td><input class="parse-field" id="a4p2"></td><td><input class="parse-field" id="a4r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r4')">▶</button></td></tr>
+  <tr class="answer-row" id="r4"><td colspan="8"><strong>Imperfect · 3mp · חָיָה</strong> — they will let live; shureq 3mp ending; dagesh forte in יּ (R2); III-he Piel imperfect 3mp</td></tr>
+
+  <tr><td>5</td><td><span class="heb">כִּלָּה</span></td><td>Gen 17:22</td>
+    <td><input class="parse-field" id="a5g"></td><td><input class="parse-field" id="a5p"></td><td><input class="parse-field" id="a5r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r5')">▶</button></td></tr>
+  <tr class="answer-row" id="r5"><td colspan="7"><strong>Perfect · 3ms · כָּלָה</strong> — he finished; qamets + ה ending; dagesh forte in ל (R2) — Piel perfect 3ms III-he</td></tr>
+</table>
+
+<div class="section-label">Group 2 — I-guttural</div>
+<table>
+  <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
+
+  <tr><td>6</td><td><span class="heb">עִנּוּ</span></td><td>Gen 15:13</td>
+    <td><input class="parse-field" id="a6g"></td><td><input class="parse-field" id="a6p"></td><td><input class="parse-field" id="a6r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r6')">▶</button></td></tr>
+  <tr class="answer-row" id="r6"><td colspan="7"><strong>Perfect · 3cp · עָנָה</strong> — they afflicted; hiriq under ע (R1); dagesh forte in נ (R2); shureq 3cp ending; I-guttural: ע rejects simple shewa and dagesh lene in preceding prefix</td></tr>
+
+  <tr><td>7</td><td><span class="heb">יְעַנֶּה</span></td><td>Exo 22:21</td>
+    <td><input class="parse-field" id="a7g"></td><td><input class="parse-field" id="a7p"></td><td><input class="parse-field" id="a7r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r7')">▶</button></td></tr>
+  <tr class="answer-row" id="r7"><td colspan="7"><strong>Imperfect · 3ms · עָנָה</strong> — he afflicts/will afflict; hateph-patach under ע (I-guttural); dagesh forte in נ; seghol + ה (III-he ending) — doubly weak: I-guttural + III-he</td></tr>
+
+  <tr><td>8</td><td><span class="heb">עַנּוֹת</span></td><td>Exo 10:3</td>
+    <td><input class="parse-field" id="a8g"></td><td><input class="parse-field" id="a8p"></td><td><input class="parse-field" id="a8r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r8')">▶</button></td></tr>
+  <tr class="answer-row" id="r8"><td colspan="7"><strong>Inf. Construct · — · עָנָה</strong> — to humble/afflict; patach under ע; dagesh forte in נ; וֹת ending = Piel inf. construct III-he</td></tr>
+
+  <tr><td>9</td><td><span class="heb">מְחַיֶּה</span></td><td>Neh 9:6</td>
+    <td><input class="parse-field" id="a9g"></td><td><input class="parse-field" id="a9p"></td><td><input class="parse-field" id="a9r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r9')">▶</button></td></tr>
+  <tr class="answer-row" id="r9"><td colspan="7"><strong>Participle · ms · חָיָה</strong> — one who gives life; מְ prefix + hateph-patach under ח (guttural R1) + dagesh forte in יּ + seghol + ה — Piel participle ms doubly weak (I-guttural + III-he)</td></tr>
+
+  <tr><td>10</td><td><span class="heb">תְּחַנֶּן</span></td><td>1 Kgs 8:33</td>
+    <td><input class="parse-field" id="a10g"></td><td><input class="parse-field" id="a10p"></td><td><input class="parse-field" id="a10r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r10')">▶</button></td></tr>
+  <tr class="answer-row" id="r10"><td colspan="7"><strong>Imperfect · 2ms/3fs · חָנַן</strong> — you implore/seek favor; תְּ prefix; hateph-patach under ח (I-guttural); dagesh forte in נ (R2); seghol final</td></tr>
+</table>
+
+<div class="section-label">Group 3 — Geminate</div>
+<table>
+  <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
+
+  <tr><td>11</td><td><span class="heb">הִלֵּל</span></td><td>Isa 14:12</td>
+    <td><input class="parse-field" id="a11g"></td><td><input class="parse-field" id="a11p"></td><td><input class="parse-field" id="a11r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r11')">▶</button></td></tr>
+  <tr class="answer-row" id="r11"><td colspan="7"><strong>Perfect · 3ms · הָלַל</strong> — he boasted/shone; hiriq under R1 (ה); dagesh forte in ל (R2=R3 doubled); tsere under R2 — Geminate Piel perfect 3ms</td></tr>
+
+  <tr><td>12</td><td><span class="heb">יְהַלֵּל</span></td><td>Prov 27:2</td>
+    <td><input class="parse-field" id="a12g"></td><td><input class="parse-field" id="a12p"></td><td><input class="parse-field" id="a12r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r12')">▶</button></td></tr>
+  <tr class="answer-row" id="r12"><td colspan="7"><strong>Imperfect · 3ms · הָלַל</strong> — let him praise; patach under prefix (יְ→יְ); hateph-patach under ה (I-guttural interaction); dagesh forte in ל; tsere final</td></tr>
+
+  <tr><td>13</td><td><span class="heb">יְהַלֲלוּ</span></td><td>Ps 22:24</td>
+    <td><input class="parse-field" id="a13g"></td><td><input class="parse-field" id="a13p"></td><td><input class="parse-field" id="a13r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r13')">▶</button></td></tr>
+  <tr class="answer-row" id="r13"><td colspan="7"><strong>Imperfect · 3mp · הָלַל</strong> — they will praise; dagesh forte in first ל; composite shewa under second ל before vocalic ending (shureq) — Geminate 3mp marker</td></tr>
+
+  <tr><td>14</td><td><span class="heb">הַלְלוּ</span></td><td>Ps 113:1</td>
+    <td><input class="parse-field" id="a14g"></td><td><input class="parse-field" id="a14p"></td><td><input class="parse-field" id="a14r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r14')">▶</button></td></tr>
+  <tr class="answer-row" id="r14"><td colspan="7"><strong>Imperative · 2mp · הָלַל</strong> — praise!; patach under ה + ל + shewa + ל + וּ; no prefix consonant in Piel imperative; Geminate root visible in doubled ל</td></tr>
+
+  <tr><td>15</td><td><span class="heb">מְהַלֵּל</span></td><td>Gen 12:15</td>
+    <td><input class="parse-field" id="a15g"></td><td><input class="parse-field" id="a15p"></td><td><input class="parse-field" id="a15r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r15')">▶</button></td></tr>
+  <tr class="answer-row" id="r15"><td colspan="7"><strong>Participle · ms · הָלַל</strong> — one who praises; מְ prefix + patach under ה + dagesh forte in ל + tsere — Piel participle ms Geminate</td></tr>
+</table>
+
+<div class="section-label">Group 4 — I-nun</div>
+<table>
+  <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
+
+  <tr><td>16</td><td><span class="heb">יְנַחֵם</span></td><td>Gen 5:29</td>
+    <td><input class="parse-field" id="a16g"></td><td><input class="parse-field" id="a16p"></td><td><input class="parse-field" id="a16r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r16')">▶</button></td></tr>
+  <tr class="answer-row" id="r16"><td colspan="7"><strong>Imperfect · 3ms · נָחַם</strong> — he will comfort; nun (R1) visible and retained; patach under נ; dagesh forte in ח (R2); tsere final — I-nun Piel imperfect: nun stays</td></tr>
+
+  <tr><td>17</td><td><span class="heb">יְנַחֲמוּ</span></td><td>Gen 37:35</td>
+    <td><input class="parse-field" id="a17g"></td><td><input class="parse-field" id="a17p"></td><td><input class="parse-field" id="a17r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r17')">▶</button></td></tr>
+  <tr class="answer-row" id="r17"><td colspan="7"><strong>Imperfect · 3mp · נָחַם</strong> — they comforted him; nun visible; composite shewa under ח (guttural) before vocalic ending; shureq 3mp</td></tr>
+
+  <tr><td>18</td><td><span class="heb">וַיְנַגַּע</span></td><td>Gen 12:17</td>
+    <td><input class="parse-field" id="a18g"></td><td><input class="parse-field" id="a18p"></td><td><input class="parse-field" id="a18r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r18')">▶</button></td></tr>
+  <tr class="answer-row" id="r18"><td colspan="7"><strong>Wayyiqtol · 3ms · נָגַע</strong> — and he struck/afflicted; nun visible; dagesh forte in ג (R2); patach under ג before final ע — guttural lowers the stem vowel in III-ח/ע pattern</td></tr>
+
+  <tr><td>19</td><td><span class="heb">נִסָּה</span></td><td>Gen 22:1</td>
+    <td><input class="parse-field" id="a19g"></td><td><input class="parse-field" id="a19p"></td><td><input class="parse-field" id="a19r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r19')">▶</button></td></tr>
+  <tr class="answer-row" id="r19"><td colspan="7"><strong>Perfect · 3ms · נָסָה</strong> — he tested; נ is R1 (not a prefix); dagesh forte in ס (R2); qamets + ה ending (III-he Piel perfect 3ms)</td></tr>
+
+  <tr><td>20</td><td><span class="heb">יְנַסֶּה</span></td><td>Deu 8:16</td>
+    <td><input class="parse-field" id="a20g"></td><td><input class="parse-field" id="a20p"></td><td><input class="parse-field" id="a20r"></td>
+    <td><button class="reveal-btn" onclick="toggle('r20')">▶</button></td></tr>
+  <tr class="answer-row" id="r20"><td colspan="7"><strong>Imperfect · 3ms · נָסָה</strong> — to test; nun visible (not assimilated); dagesh forte in ס; seghol + ה ending — I-nun Piel imperfect III-he root</td></tr>
+</table>
+
+<!-- PART B -->
+<h2>Part B — Mixed</h2>
+<p>Identify the weak class first, then parse fully.</p>
+
+<table>
+  <tr><th>#</th><th>Form</th><th>Reference</th><th>Weak class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
+
+  <tr><td>21</td><td><span class="heb">צִוָּה</span></td><td>Gen 6:22</td>
+    <td><input class="parse-field" id="b21c"></td><td><input class="parse-field" id="b21g"></td><td><input class="parse-field" id="b21p"></td><td><input class="parse-field" id="b21r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb21')">▶</button></td></tr>
+  <tr class="answer-row" id="rb21"><td colspan="8"><strong>III-he · Perfect · 3ms · צָוָה</strong> — he commanded; qamets + ה; dagesh forte in ו (R2); standard Piel III-he perfect 3ms</td></tr>
+
+  <tr><td>22</td><td><span class="heb">מְחַלֵּל</span></td><td>Exo 31:14</td>
+    <td><input class="parse-field" id="b22c"></td><td><input class="parse-field" id="b22g"></td><td><input class="parse-field" id="b22p"></td><td><input class="parse-field" id="b22r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb22')">▶</button></td></tr>
+  <tr class="answer-row" id="rb22"><td colspan="8"><strong>Geminate · Participle · ms · חָלַל</strong> — one who profanes; מְ prefix + composite shewa under ח (guttural) + dagesh forte in ל + tsere; root ח-ל-ל (R2=R3)</td></tr>
+
+  <tr><td>23</td><td><span class="heb">יְנַסֶּה</span></td><td>Deu 4:34</td>
+    <td><input class="parse-field" id="b23c"></td><td><input class="parse-field" id="b23g"></td><td><input class="parse-field" id="b23p"></td><td><input class="parse-field" id="b23r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb23')">▶</button></td></tr>
+  <tr class="answer-row" id="rb23"><td colspan="8"><strong>I-nun (also III-he) · Imperfect · 3ms · נָסָה</strong> — to test; nun visible; dagesh forte in ס; seghol + ה III-he ending</td></tr>
+
+  <tr><td>24</td><td><span class="heb">כִּלָּה</span></td><td>Gen 24:19</td>
+    <td><input class="parse-field" id="b24c"></td><td><input class="parse-field" id="b24g"></td><td><input class="parse-field" id="b24p"></td><td><input class="parse-field" id="b24r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb24')">▶</button></td></tr>
+  <tr class="answer-row" id="rb24"><td colspan="8"><strong>III-he · Perfect · 3ms · כָּלָה</strong> — he finished; qamets + ה; dagesh forte in ל (R2)</td></tr>
+
+  <tr><td>25</td><td><span class="heb">יְעַנּוּ</span></td><td>Gen 15:13</td>
+    <td><input class="parse-field" id="b25c"></td><td><input class="parse-field" id="b25g"></td><td><input class="parse-field" id="b25p"></td><td><input class="parse-field" id="b25r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb25')">▶</button></td></tr>
+  <tr class="answer-row" id="rb25"><td colspan="8"><strong>I-guttural (also III-he) · Imperfect · 3mp · עָנָה</strong> — they will afflict; composite shewa under ע; dagesh forte in נ; shureq 3mp ending; III-he root</td></tr>
+
+  <tr><td>26</td><td><span class="heb">יְהַלֵּל</span></td><td>Ps 69:31</td>
+    <td><input class="parse-field" id="b26c"></td><td><input class="parse-field" id="b26g"></td><td><input class="parse-field" id="b26p"></td><td><input class="parse-field" id="b26r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb26')">▶</button></td></tr>
+  <tr class="answer-row" id="rb26"><td colspan="8"><strong>Geminate · Imperfect · 3ms · הָלַל</strong> — he will praise; dagesh forte in ל; tsere final; I-guttural prefix interaction visible</td></tr>
+
+  <tr><td>27</td><td><span class="heb">יְכַלּוּ</span></td><td>Gen 2:1</td>
+    <td><input class="parse-field" id="b27c"></td><td><input class="parse-field" id="b27g"></td><td><input class="parse-field" id="b27p"></td><td><input class="parse-field" id="b27r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb27')">▶</button></td></tr>
+  <tr class="answer-row" id="rb27"><td colspan="8"><strong>III-he · Imperfect · 3mp · כָּלָה</strong> — they were finished/completed; dagesh forte in ל (R2); shureq 3mp ending; Piel imperfect 3mp III-he</td></tr>
+
+  <tr><td>28</td><td><span class="heb">נִחַם</span></td><td>Gen 6:7</td>
+    <td><input class="parse-field" id="b28c"></td><td><input class="parse-field" id="b28g"></td><td><input class="parse-field" id="b28p"></td><td><input class="parse-field" id="b28r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb28')">▶</button></td></tr>
+  <tr class="answer-row" id="rb28"><td colspan="8"><strong>I-nun · Perfect · 3ms · נָחַם</strong> — he relented/was comforted; hiriq under נ (R1); dagesh forte in ח (R2); patach final — Piel perfect 3ms I-nun</td></tr>
+
+  <tr><td>29</td><td><span class="heb">עִנָּה</span></td><td>Gen 16:6</td>
+    <td><input class="parse-field" id="b29c"></td><td><input class="parse-field" id="b29g"></td><td><input class="parse-field" id="b29p"></td><td><input class="parse-field" id="b29r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb29')">▶</button></td></tr>
+  <tr class="answer-row" id="rb29"><td colspan="8"><strong>I-guttural + III-he · Perfect · 3ms · עָנָה</strong> — he afflicted; hiriq under ע (I-guttural); dagesh forte in נ; qamets + ה (III-he perfect 3ms)</td></tr>
+
+  <tr><td>30</td><td><span class="heb">יְנַחֵל</span></td><td>Num 34:17</td>
+    <td><input class="parse-field" id="b30c"></td><td><input class="parse-field" id="b30g"></td><td><input class="parse-field" id="b30p"></td><td><input class="parse-field" id="b30r"></td>
+    <td><button class="reveal-btn" onclick="toggle('rb30')">▶</button></td></tr>
+  <tr class="answer-row" id="rb30"><td colspan="8"><strong>I-nun · Imperfect · 3ms · נָחַל</strong> — he will give as inheritance; nun (R1) visible and retained; dagesh forte in ח (R2); tsere final — I-nun Piel imperfect</td></tr>
+</table>
+
+<h2>Discussion Questions</h2>
+<div class="discussion">
+  <ol class="disc">
+    <li>Items 1–2 (<span class="heb">יְכַל</span>, <span class="heb">יְצַו</span>) are Piel wayyiqtol 3ms of III-he roots. The final ה is apocopated (dropped). How does this compare to what happens in the Piel perfect 3ms of the same roots (<span class="heb">כִּלָּה</span>, <span class="heb">צִוָּה</span>)? What form does the ה take in the perfect, and why is it dropped in the wayyiqtol?</li>
+    <li>Compare item 6 (<span class="heb">עִנּוּ</span>, I-guttural Piel perfect 3cp) with a normal Piel perfect 3cp like <span class="heb">שִׁלְּחוּ</span> (from שָׁלַח). In <span class="heb">שִׁלְּחוּ</span> the prefix consonant שׁ carries a dagesh lene. Why is no such dagesh found in <span class="heb">עִנּוּ</span>? What is it about the ע that prevents it?</li>
+    <li>Items 11–15 all come from the Geminate root הָלַל. What is the telltale structural feature that marks the Geminate Piel compared to a strong Piel? Specifically, where does the Piel's dagesh forte fall in a strong root (like <span class="heb">שִׁלֵּם</span> from שָׁלַם), and where does it fall in a Geminate root (like <span class="heb">הִלֵּל</span> from הָלַל)?</li>
+    <li>Items 16–20 (I-nun Piel) all retain the nun. In the Qal and Hiphil of the same roots, the nun typically assimilates into a dagesh forte in R2. Why does the Piel not follow this assimilation? What already occupies R2 in the Piel stem, and why does that prevent a second dagesh?</li>
+  </ol>
+</div>
+
+<script>
+function toggle(id) {
+  const row = document.getElementById(id);
+  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
+}
+function showAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
+}
+function hideAll() {
+  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
+}
+function clearAll() {
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+}
+</script>
+

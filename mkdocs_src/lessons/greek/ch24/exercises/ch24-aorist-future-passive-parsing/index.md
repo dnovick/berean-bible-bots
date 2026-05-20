@@ -4,4 +4,140 @@
 
 [Full screen](ch24-aorist-future-passive-parsing.html){.md-button}  [Markdown](ch24-aorist-future-passive-parsing.md){.md-button}  [Print (PDF)](ch24-aorist-future-passive-parsing.pdf){.md-button}
 
-<iframe src="ch24-aorist-future-passive-parsing.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Aorist Future Passive Parsing"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; }
+  p.subtitle { color: #555; font-style: italic; }
+  .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 0.5em 0.8em; margin: 0.8em 0; font-size: 0.9em; }
+  .controls { margin: 1em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
+  .controls button { padding: 0.4em 1em; font-size: 0.9em; cursor: pointer; border: 1px solid #888; border-radius: 4px; background: #f5f5f5; }
+  .controls button:hover { background: #e0e0e0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.88em; }
+  th { background: #3a5a8a; color: #fff; padding: 0.5em 0.4em; text-align: left; }
+  td { border: 1px solid #ccc; padding: 0.35em 0.4em; vertical-align: middle; }
+  tr:nth-child(even) td { background: #f8f8f8; }
+  .greek { font-size: 1.1em; font-weight: bold; }
+  input.parse-field {
+    width: 100%;
+    min-width: 70px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    font-size: 0.88em;
+    padding: 1px 2px;
+    box-sizing: border-box;
+  }
+  input.parse-field:focus { outline: none; border-bottom-color: #3a5a8a; }
+  .btn-answer { padding: 0.2em 0.5em; font-size: 0.78em; cursor: pointer; border: 1px solid #aaa; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .btn-answer:hover { background: #f0f0f0; }
+  tr.answer-row td { background: #d4edda !important; font-size: 0.85em; color: #155724; }
+  tr.answer-row { display: none; }
+  tr.answer-row.visible { display: table-row; }
+  tr.distractor td { background: #fff8e1 !important; }
+  .num-col { width: 2.5em; text-align: center; }
+  .form-col { width: 10em; }
+  @media print {
+    .controls, .btn-answer { display: none !important; }
+    input.parse-field { border-bottom: 1px solid #555; background: transparent; }
+    tr.answer-row { display: none !important; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch24-aorist-future-passive-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch24-aorist-future-passive-parsing.pdf">&#128209; PDF</a>
+</div>
+
+<h1>Ch24 — Aorist and Future Passive Parsing Drill</h1>
+<p class="subtitle">BBG Chapter 24 · Mounce 4th Edition — Parse each form: Tense · Voice · Mood · Person · Number · Lexical Form · Translation</p>
+<div class="note">&#9888; Items 19 and 20 are <strong>active/middle distractors</strong> — identify them by the presence of σ and the absence of θη.</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+<thead>
+  <tr>
+    <th class="num-col">#</th>
+    <th class="form-col">Form</th>
+    <th>Tense</th>
+    <th>Voice</th>
+    <th>Mood</th>
+    <th>Person</th>
+    <th>Number</th>
+    <th>Lexical Form</th>
+    <th>Translation</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody id="drillBody">
+</tbody>
+</table>
+
+<script>
+const items = [
+  { num:1,  form:"ἐλύθην",         tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"1st", number:"Singular", lexical:"λύω",           trans:"I was loosed",                     distractor:false },
+  { num:2,  form:"ἐλύθης",         tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"2nd", number:"Singular", lexical:"λύω",           trans:"You were loosed",                   distractor:false },
+  { num:3,  form:"ἐλύθη",          tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",           trans:"He/she/it was loosed",              distractor:false },
+  { num:4,  form:"ἐλύθημεν",       tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"1st", number:"Plural",   lexical:"λύω",           trans:"We were loosed",                    distractor:false },
+  { num:5,  form:"ἐλύθητε",        tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"2nd", number:"Plural",   lexical:"λύω",           trans:"You (pl) were loosed",              distractor:false },
+  { num:6,  form:"ἐλύθησαν",       tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Plural",   lexical:"λύω",           trans:"They were loosed",                  distractor:false },
+  { num:7,  form:"ἐβαπτίσθη",      tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"βαπτίζω",       trans:"He/she was baptized",               distractor:false },
+  { num:8,  form:"ἐσώθη",          tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"σῴζω",          trans:"He/she was saved",                  distractor:false },
+  { num:9,  form:"ἠγέρθη",         tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἐγείρω",        trans:"He/she was raised",                 distractor:false },
+  { num:10, form:"ἐγράφη",         tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"γράφω",         trans:"It was written (η variant)",        distractor:false },
+  { num:11, form:"ἐστράφη",        tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"στρέφω",        trans:"He/she was turned (η variant)",     distractor:false },
+  { num:12, form:"ἐβλήθη",         tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"βάλλω",         trans:"He/she/it was thrown",              distractor:false },
+  { num:13, form:"ἀπεκρίθη",       tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἀποκρίνομαι",  trans:"He/she answered (deponent)",        distractor:false },
+  { num:14, form:"ἐπορεύθη",       tense:"Aorist",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"πορεύομαι",     trans:"He/she went/traveled (deponent)",   distractor:false },
+  { num:15, form:"λυθήσομαι",      tense:"Future",  voice:"Passive",  mood:"Indicative", person:"1st", number:"Singular", lexical:"λύω",           trans:"I will be loosed",                  distractor:false },
+  { num:16, form:"λυθήσεται",      tense:"Future",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",           trans:"He/she/it will be loosed",          distractor:false },
+  { num:17, form:"σωθήσεται",      tense:"Future",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"σῴζω",          trans:"He/she will be saved",              distractor:false },
+  { num:18, form:"ἐγερθήσεται",    tense:"Future",  voice:"Passive",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἐγείρω",        trans:"He/she will be raised",             distractor:false },
+  { num:19, form:"ἔλυσεν",         tense:"Aorist",  voice:"Active",   mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",           trans:"He/she loosed (ACTIVE distractor)",  distractor:true  },
+  { num:20, form:"ἐλύσατο",        tense:"Aorist",  voice:"Middle",   mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",           trans:"He loosed for himself (MIDDLE distractor)", distractor:true },
+];
+
+const fieldKeys = ["tense","voice","mood","person","number","lexical","trans"];
+
+function buildTable() {
+  const tbody = document.getElementById("drillBody");
+  items.forEach(item => {
+    const inputRow = document.createElement("tr");
+    inputRow.id = "row-" + item.num;
+    if (item.distractor) inputRow.className = "distractor";
+    let cells = `<td class="num-col">${item.num}</td><td class="form-col greek">${item.form}</td>`;
+    fieldKeys.forEach(f => {
+      cells += `<td><input class="parse-field" type="text" aria-label="${f}"></td>`;
+    });
+    cells += `<td><button class="btn-answer" onclick="toggleAnswer(${item.num})">&#9658; Answer</button></td>`;
+    inputRow.innerHTML = cells;
+    tbody.appendChild(inputRow);
+
+    const ansRow = document.createElement("tr");
+    ansRow.id = "ans-" + item.num;
+    ansRow.className = "answer-row";
+    let ansCells = `<td class="num-col"></td><td class="form-col greek">${item.form}</td>`;
+    ansCells += `<td>${item.tense}</td><td>${item.voice}</td><td>${item.mood}</td>`;
+    ansCells += `<td>${item.person}</td><td>${item.number}</td>`;
+    ansCells += `<td>${item.lexical}</td><td>${item.trans}</td><td></td>`;
+    ansRow.innerHTML = ansCells;
+    tbody.appendChild(ansRow);
+  });
+}
+
+function toggleAnswer(num) { document.getElementById("ans-" + num).classList.toggle("visible"); }
+function showAll() { document.querySelectorAll(".answer-row").forEach(r => r.classList.add("visible")); }
+function hideAll() { document.querySelectorAll(".answer-row").forEach(r => r.classList.remove("visible")); }
+function clearAll() { document.querySelectorAll("input.parse-field").forEach(i => i.value = ""); }
+
+buildTable();
+</script>
+

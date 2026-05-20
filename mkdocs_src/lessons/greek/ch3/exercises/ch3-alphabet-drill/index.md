@@ -4,4 +4,182 @@
 
 [Full screen](ch3-alphabet-drill.html){.md-button}  [Markdown](ch3-alphabet-drill.md){.md-button}  [Print (PDF)](ch3-alphabet-drill.pdf){.md-button}
 
-<iframe src="ch3-alphabet-drill.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Alphabet Drill"></iframe>
+<style>
+
+body{font-family:Georgia,serif;color:#222}
+h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
+h2{font-size:1.15em;margin-top:2em;color:#444}
+p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
+table{border-collapse:collapse;width:100%;margin:.8em 0}
+th{background:#1a4a7a;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
+td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
+tr:nth-child(even){background:#f7f7f7}
+.greek{font-size:1.5em;font-weight:bold;text-align:center}
+input.parse-field{width:90%;border:none;border-bottom:1px solid #999;background:transparent;font-size:.88em;font-family:inherit;padding:1px 2px}
+input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
+.answer-row td{background:#e8f0fb;font-size:.85em}
+.answer-row{display:none}
+.toggle-btn{background:#1a4a7a;color:#fff;border:none;border-radius:3px;padding:2px 8px;cursor:pointer;font-size:.8em}
+.toggle-btn:hover{background:#0e2f52}
+.controls{margin:.8em 0 1.2em;display:flex;gap:.6em;flex-wrap:wrap}
+.ctrl-btn{background:#555;color:#fff;border:none;border-radius:4px;padding:.4em .9em;cursor:pointer;font-size:.85em}
+.ctrl-btn:hover{background:#333}
+.note-box{background:#fff8dc;border-left:4px solid #c8a800;padding:.6em .9em;margin:.8em 0;font-size:.9em}
+@media print{
+  .controls,.toggle-btn{display:none}
+  input.parse-field{border-bottom:1px solid #000;min-width:60px}
+  .answer-row{display:none!important}
+}
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch3-alphabet-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch3-alphabet-drill.pdf">&#128209; PDF</a>
+</div>
+
+<h1>Chapter 3 — Greek Alphabet Drill</h1>
+<p><em>For each letter form, write (a) the letter's name and (b) its sound/pronunciation. Click <strong>▶ Answer</strong> to reveal.</em></p>
+
+<div class="controls">
+  <button class="ctrl-btn" onclick="showAll()">Show All Answers</button>
+  <button class="ctrl-btn" onclick="hideAll()">Hide All Answers</button>
+  <button class="ctrl-btn" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<div class="note-box"><strong>Tips:</strong> ε is always short; ο is always short; η is always long; ω is always long. Final sigma (ς) is used only at the end of a word. Gamma before γ, κ, χ, or ξ is pronounced "ng."</div>
+
+<h2>Part A — The 24 Letters</h2>
+<p class="sub">Write the name and sound for each lowercase letter form.</p>
+<table>
+<tr><th>#</th><th style="width:8%">Form</th><th>Name</th><th>Sound / Pronunciation</th><th></th></tr>
+
+<tr><td>1</td><td class="greek">α</td><td><input class="parse-field" id="1-name"></td><td><input class="parse-field" id="1-snd"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a1"><td colspan="5"><strong>Alpha</strong> — "father" (long α) or "along" (short α); length varies</td></tr>
+
+<tr><td>2</td><td class="greek">β</td><td><input class="parse-field" id="2-name"></td><td><input class="parse-field" id="2-snd"></td><td><button class="toggle-btn" onclick="tog('a2')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a2"><td colspan="5"><strong>Beta</strong> — "b" as in "Bible"</td></tr>
+
+<tr><td>3</td><td class="greek">γ</td><td><input class="parse-field" id="3-name"></td><td><input class="parse-field" id="3-snd"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a3"><td colspan="5"><strong>Gamma</strong> — "g" as in "gone" (hard g); <em>but</em> before γ, κ, χ, ξ it sounds like "ng" in "sing" — e.g., ἄγγελος = "ang-ge-los"</td></tr>
+
+<tr><td>4</td><td class="greek">δ</td><td><input class="parse-field" id="4-name"></td><td><input class="parse-field" id="4-snd"></td><td><button class="toggle-btn" onclick="tog('a4')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a4"><td colspan="5"><strong>Delta</strong> — "d" as in "dog"</td></tr>
+
+<tr><td>5</td><td class="greek">ε</td><td><input class="parse-field" id="5-name"></td><td><input class="parse-field" id="5-snd"></td><td><button class="toggle-btn" onclick="tog('a5')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a5"><td colspan="5"><strong>Epsilon</strong> — short "e" as in "met" — <em>always short</em></td></tr>
+
+<tr><td>6</td><td class="greek">ζ</td><td><input class="parse-field" id="6-name"></td><td><input class="parse-field" id="6-snd"></td><td><button class="toggle-btn" onclick="tog('a6')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a6"><td colspan="5"><strong>Zeta</strong> — "z" as in "daze" (originally pronounced "sd"; Erasmian = "z")</td></tr>
+
+<tr><td>7</td><td class="greek">η</td><td><input class="parse-field" id="7-name"></td><td><input class="parse-field" id="7-snd"></td><td><button class="toggle-btn" onclick="tog('a7')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a7"><td colspan="5"><strong>Eta</strong> — long "e" as in "they" — <em>always long</em></td></tr>
+
+<tr><td>8</td><td class="greek">θ</td><td><input class="parse-field" id="8-name"></td><td><input class="parse-field" id="8-snd"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a8"><td colspan="5"><strong>Theta</strong> — "th" as in "thin" (aspirated dental)</td></tr>
+
+<tr><td>9</td><td class="greek">ι</td><td><input class="parse-field" id="9-name"></td><td><input class="parse-field" id="9-snd"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a9"><td colspan="5"><strong>Iota</strong> — long "ee" as in "intrigue" or short "i" as in "in"; length varies</td></tr>
+
+<tr><td>10</td><td class="greek">κ</td><td><input class="parse-field" id="10-name"></td><td><input class="parse-field" id="10-snd"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a10"><td colspan="5"><strong>Kappa</strong> — "k" as in "kitchen"</td></tr>
+
+<tr><td>11</td><td class="greek">λ</td><td><input class="parse-field" id="11-name"></td><td><input class="parse-field" id="11-snd"></td><td><button class="toggle-btn" onclick="tog('a11')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a11"><td colspan="5"><strong>Lambda</strong> — "l" as in "law" (liquid consonant)</td></tr>
+
+<tr><td>12</td><td class="greek">μ</td><td><input class="parse-field" id="12-name"></td><td><input class="parse-field" id="12-snd"></td><td><button class="toggle-btn" onclick="tog('a12')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a12"><td colspan="5"><strong>Mu</strong> — "m" as in "mother"</td></tr>
+
+<tr><td>13</td><td class="greek">ν</td><td><input class="parse-field" id="13-name"></td><td><input class="parse-field" id="13-snd"></td><td><button class="toggle-btn" onclick="tog('a13')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a13"><td colspan="5"><strong>Nu</strong> — "n" as in "new" · Do not confuse with υ (upsilon), which has a rounded bottom</td></tr>
+
+<tr><td>14</td><td class="greek">ξ</td><td><input class="parse-field" id="14-name"></td><td><input class="parse-field" id="14-snd"></td><td><button class="toggle-btn" onclick="tog('a14')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a14"><td colspan="5"><strong>Xi</strong> — "ks" as in "axiom" (double consonant: κ + σ)</td></tr>
+
+<tr><td>15</td><td class="greek">ο</td><td><input class="parse-field" id="15-name"></td><td><input class="parse-field" id="15-snd"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a15"><td colspan="5"><strong>Omicron</strong> — short "o" as in "off" — <em>always short</em></td></tr>
+
+<tr><td>16</td><td class="greek">π</td><td><input class="parse-field" id="16-name"></td><td><input class="parse-field" id="16-snd"></td><td><button class="toggle-btn" onclick="tog('a16')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a16"><td colspan="5"><strong>Pi</strong> — "p" as in "peach"</td></tr>
+
+<tr><td>17</td><td class="greek">ρ</td><td><input class="parse-field" id="17-name"></td><td><input class="parse-field" id="17-snd"></td><td><button class="toggle-btn" onclick="tog('a17')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a17"><td colspan="5"><strong>Rho</strong> — "r" as in "rod" (slightly trilled); initial ρ always takes rough breathing: ῥήμα = "rhēma"</td></tr>
+
+<tr><td>18</td><td class="greek">σ</td><td><input class="parse-field" id="18-name"></td><td><input class="parse-field" id="18-snd"></td><td><button class="toggle-btn" onclick="tog('a18')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a18"><td colspan="5"><strong>Sigma</strong> (medial form) — "s" as in "sun"; used at the beginning or middle of a word</td></tr>
+
+<tr><td>19</td><td class="greek">ς</td><td><input class="parse-field" id="19-name"></td><td><input class="parse-field" id="19-snd"></td><td><button class="toggle-btn" onclick="tog('a19')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a19"><td colspan="5"><strong>Sigma</strong> (final form) — same "s" sound; used <em>only at the end of a word</em>; same letter as σ, different written form</td></tr>
+
+<tr><td>20</td><td class="greek">τ</td><td><input class="parse-field" id="20-name"></td><td><input class="parse-field" id="20-snd"></td><td><button class="toggle-btn" onclick="tog('a20')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a20"><td colspan="5"><strong>Tau</strong> — "t" as in "talk"</td></tr>
+
+<tr><td>21</td><td class="greek">υ</td><td><input class="parse-field" id="21-name"></td><td><input class="parse-field" id="21-snd"></td><td><button class="toggle-btn" onclick="tog('a21')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a21"><td colspan="5"><strong>Upsilon</strong> — like French "tu" or German "über"; do not confuse with ν (nu), which is narrower and pointed at top</td></tr>
+
+<tr><td>22</td><td class="greek">φ</td><td><input class="parse-field" id="22-name"></td><td><input class="parse-field" id="22-snd"></td><td><button class="toggle-btn" onclick="tog('a22')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a22"><td colspan="5"><strong>Phi</strong> — "ph" as in "phone" (aspirated labial)</td></tr>
+
+<tr><td>23</td><td class="greek">χ</td><td><input class="parse-field" id="23-name"></td><td><input class="parse-field" id="23-snd"></td><td><button class="toggle-btn" onclick="tog('a23')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a23"><td colspan="5"><strong>Chi</strong> — breathy "ch" as in German "Bach" — not English "church" and not "x"; do not confuse with English x</td></tr>
+
+<tr><td>24</td><td class="greek">ψ</td><td><input class="parse-field" id="24-name"></td><td><input class="parse-field" id="24-snd"></td><td><button class="toggle-btn" onclick="tog('a24')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a24"><td colspan="5"><strong>Psi</strong> — "ps" as in "lips" (double consonant: π + σ)</td></tr>
+
+<tr><td>25</td><td class="greek">ω</td><td><input class="parse-field" id="25-name"></td><td><input class="parse-field" id="25-snd"></td><td><button class="toggle-btn" onclick="tog('a25')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="a25"><td colspan="5"><strong>Omega</strong> — long "o" as in "tone" — <em>always long</em>; do not confuse with English w (Greek has no w)</td></tr>
+</table>
+
+<h2>Part B — Uppercase Recognition</h2>
+<p class="sub">Write the lowercase form and the letter name for each uppercase letter.</p>
+<table>
+<tr><th>#</th><th style="width:8%">Uppercase</th><th>Lowercase</th><th>Name</th><th></th></tr>
+
+<tr><td>B1</td><td class="greek">Α</td><td><input class="parse-field" id="b1-lc"></td><td><input class="parse-field" id="b1-nm"></td><td><button class="toggle-btn" onclick="tog('ab1')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab1"><td colspan="5">α — Alpha</td></tr>
+
+<tr><td>B2</td><td class="greek">Γ</td><td><input class="parse-field" id="b2-lc"></td><td><input class="parse-field" id="b2-nm"></td><td><button class="toggle-btn" onclick="tog('ab2')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab2"><td colspan="5">γ — Gamma</td></tr>
+
+<tr><td>B3</td><td class="greek">Δ</td><td><input class="parse-field" id="b3-lc"></td><td><input class="parse-field" id="b3-nm"></td><td><button class="toggle-btn" onclick="tog('ab3')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab3"><td colspan="5">δ — Delta</td></tr>
+
+<tr><td>B4</td><td class="greek">Λ</td><td><input class="parse-field" id="b4-lc"></td><td><input class="parse-field" id="b4-nm"></td><td><button class="toggle-btn" onclick="tog('ab4')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab4"><td colspan="5">λ — Lambda</td></tr>
+
+<tr><td>B5</td><td class="greek">Ξ</td><td><input class="parse-field" id="b5-lc"></td><td><input class="parse-field" id="b5-nm"></td><td><button class="toggle-btn" onclick="tog('ab5')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab5"><td colspan="5">ξ — Xi</td></tr>
+
+<tr><td>B6</td><td class="greek">Π</td><td><input class="parse-field" id="b6-lc"></td><td><input class="parse-field" id="b6-nm"></td><td><button class="toggle-btn" onclick="tog('ab6')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab6"><td colspan="5">π — Pi</td></tr>
+
+<tr><td>B7</td><td class="greek">Σ</td><td><input class="parse-field" id="b7-lc"></td><td><input class="parse-field" id="b7-nm"></td><td><button class="toggle-btn" onclick="tog('ab7')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab7"><td colspan="5">σ / ς — Sigma (medial and final forms)</td></tr>
+
+<tr><td>B8</td><td class="greek">Φ</td><td><input class="parse-field" id="b8-lc"></td><td><input class="parse-field" id="b8-nm"></td><td><button class="toggle-btn" onclick="tog('ab8')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab8"><td colspan="5">φ — Phi</td></tr>
+
+<tr><td>B9</td><td class="greek">Χ</td><td><input class="parse-field" id="b9-lc"></td><td><input class="parse-field" id="b9-nm"></td><td><button class="toggle-btn" onclick="tog('ab9')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab9"><td colspan="5">χ — Chi</td></tr>
+
+<tr><td>B10</td><td class="greek">Ψ</td><td><input class="parse-field" id="b10-lc"></td><td><input class="parse-field" id="b10-nm"></td><td><button class="toggle-btn" onclick="tog('ab10')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab10"><td colspan="5">ψ — Psi</td></tr>
+
+<tr><td>B11</td><td class="greek">Ω</td><td><input class="parse-field" id="b11-lc"></td><td><input class="parse-field" id="b11-nm"></td><td><button class="toggle-btn" onclick="tog('ab11')">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ab11"><td colspan="5">ω — Omega</td></tr>
+</table>
+
+<script>
+function tog(id){
+  var r=document.getElementById(id);
+  var b=r.previousElementSibling.querySelector('.toggle-btn');
+  if(r.style.display==='table-row'){r.style.display='none';b.textContent='▶ Answer';}
+  else{r.style.display='table-row';b.textContent='▼ Hide';}
+}
+function showAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='table-row';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▼ Hide';});}
+function hideAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='none';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▶ Answer';});}
+function clearAll(){document.querySelectorAll('input.parse-field').forEach(function(i){i.value='';});}
+</script>
+

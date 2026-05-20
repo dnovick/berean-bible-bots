@@ -4,4 +4,208 @@
 
 [Full screen](ch31-subjunctive-parsing.html){.md-button}  [Markdown](ch31-subjunctive-parsing.md){.md-button}  [Print (PDF)](ch31-subjunctive-parsing.pdf){.md-button}
 
-<iframe src="ch31-subjunctive-parsing.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Subjunctive Parsing"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
+  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
+  .subtitle { color: #555; font-style: italic; }
+  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
+  th { background: #1a5276; color: #fff; padding: .4em .5em; text-align: left; }
+  td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
+  tr:nth-child(even) td { background: #eaf3fc; }
+  .greek { font-size: 1.08em; font-weight: bold; }
+  .parse-field { width: 93%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .87em; padding: 2px 0; }
+  .parse-field:focus { outline: none; border-bottom: 2px solid #1a5276; }
+  .answer-row { display: none; background: #d6eaf8 !important; }
+  .answer-row td { color: #1a3a5c; font-style: italic; font-size: .87em; }
+  .btn-reveal { background: #1a5276; color: #fff; border: none; border-radius: 3px; padding: .22em .6em; cursor: pointer; font-size: .82em; }
+  .btn-reveal:hover { background: #0d2d45; }
+  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
+  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
+  .btn-ctrl:hover { background: #333; }
+  @media print { .btn-reveal, .controls { display: none !important; } .answer-row { display: none !important; } .parse-field { border-bottom: 1px solid #999; } }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch31-subjunctive-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch31-subjunctive-parsing.pdf">&#128209; PDF</a>
+</div>
+
+<h1>BBG Chapter 31 — Subjunctive Parsing</h1>
+<p class="subtitle"><em>Basics of Biblical Greek Grammar, Mounce, 4th Edition</em></p>
+<div class="instructions">
+  Parse the underlined subjunctive (tense / voice / person / number / mood / lexical form), identify its use, and translate.
+</div>
+<div class="controls">
+  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
+  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
+  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<h2>Part A — Purpose Clauses with ἵνα (1–6)</h2>
+<table>
+<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
+<tbody>
+<tr class="question-row" data-id="1"><td><b>1</b></td><td class="greek">ἦλθεν ἵνα <u>σώσῃ</u> τὸν κόσμον.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-1"><td></td><td colspan="8">Aor · Act · 3rd · Sg · σῴζω · Purpose (ἵνα) · "He came in order to save the world."</td><td></td></tr>
+
+<tr class="question-row" data-id="2"><td><b>2</b></td><td class="greek">πέμψω αὐτὸν πρὸς ὑμᾶς ἵνα <u>παρακαλέσῃ</u> ὑμᾶς.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-2"><td></td><td colspan="8">Aor · Act · 3rd · Sg · παρακαλέω · Purpose (ἵνα) · "I will send him to you so that he might encourage you."</td><td></td></tr>
+
+<tr class="question-row" data-id="3"><td><b>3</b></td><td class="greek">ταῦτα γέγραπται ἵνα <u>πιστεύητε</u> ὅτι Ἰησοῦς ἐστιν ὁ Χριστός.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-3"><td></td><td colspan="8">Pres · Act · 2nd · Pl · πιστεύω · Purpose (ἵνα) · "These things were written so that you may believe that Jesus is the Christ." (cf. John 20:31)</td><td></td></tr>
+
+<tr class="question-row" data-id="4"><td><b>4</b></td><td class="greek">οὐκ ἦλθον ἵνα <u>κρίνω</u> τὸν κόσμον.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-4"><td></td><td colspan="8">Pres · Act · 1st · Sg · κρίνω · Purpose (ἵνα) · "I did not come in order to judge the world." (John 12:47)</td><td></td></tr>
+
+<tr class="question-row" data-id="5"><td><b>5</b></td><td class="greek">ἐδόθη αὐτοῖς ἵνα μὴ <u>ἀποκτείνωσιν</u> αὐτούς.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-5"><td></td><td colspan="8">Aor · Act · 3rd · Pl · ἀποκτείνω · Purpose negated (ἵνα μή) · "It was given to them so that they might not kill them."</td><td></td></tr>
+
+<tr class="question-row" data-id="6"><td><b>6</b></td><td class="greek">τοῦτο λέγω ἵνα χαρᾶτε καὶ ἡ χαρὰ ὑμῶν <u>πληρωθῇ</u>.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-6"><td></td><td colspan="8">Aor · Pass · 3rd · Sg · πληρόω · Purpose (ἵνα) · "I say this so that you may rejoice and your joy may be fulfilled." (cf. John 16:24)</td><td></td></tr>
+</tbody>
+</table>
+
+<h2>Part B — Third Class Conditionals with ἐάν (7–10)</h2>
+<table>
+<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
+<tbody>
+<tr class="question-row" data-id="7"><td><b>7</b></td><td class="greek">ἐὰν <u>ὁμολογῶμεν</u> τὰς ἁμαρτίας ἡμῶν, πιστός ἐστιν.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-7"><td></td><td colspan="8">Pres · Act · 1st · Pl · ὁμολογέω · 3rd class conditional (ἐάν) · "If we confess our sins, he is faithful." (1 John 1:9)</td><td></td></tr>
+
+<tr class="question-row" data-id="8"><td><b>8</b></td><td class="greek">ἐὰν <u>εἴπωμεν</u> ὅτι ἁμαρτίαν οὐκ ἔχομεν, ἑαυτοὺς πλανῶμεν.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-8"><td></td><td colspan="8">Aor · Act · 1st · Pl · λέγω · 3rd class conditional (ἐάν) · "If we say that we have no sin, we deceive ourselves." (1 John 1:8)</td><td></td></tr>
+
+<tr class="question-row" data-id="9"><td><b>9</b></td><td class="greek">ἐὰν τις <u>ἁμάρτῃ</u>, παράκλητον ἔχομεν πρὸς τὸν πατέρα.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-9"><td></td><td colspan="8">Aor · Act · 3rd · Sg · ἁμαρτάνω · 3rd class conditional (ἐάν) · "If anyone should sin, we have an advocate before the Father." (1 John 2:1)</td><td></td></tr>
+
+<tr class="question-row" data-id="10"><td><b>10</b></td><td class="greek">ἐὰν <u>πιστεύσῃς</u>, ὄψῃ τὴν δόξαν τοῦ θεοῦ.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-10"><td></td><td colspan="8">Aor · Act · 2nd · Sg · πιστεύω · 3rd class conditional (ἐάν) · "If you believe, you will see the glory of God." (John 11:40)</td><td></td></tr>
+</tbody>
+</table>
+
+<h2>Part C — Hortatory Subjunctive (11–13)</h2>
+<table>
+<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
+<tbody>
+<tr class="question-row" data-id="11"><td><b>11</b></td><td class="greek"><u>ἀγαπῶμεν</u> ἀλλήλους, ὅτι ἡ ἀγάπη ἐκ τοῦ θεοῦ ἐστίν.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-11"><td></td><td colspan="8">Pres · Act · 1st · Pl · ἀγαπάω · Hortatory · "Let us love one another, because love is from God." (1 John 4:7)</td><td></td></tr>
+
+<tr class="question-row" data-id="12"><td><b>12</b></td><td class="greek"><u>προσέλθωμεν</u> οὖν μετὰ παρρησίας τῷ θρόνῳ τῆς χάριτος.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-12"><td></td><td colspan="8">Aor · Act · 1st · Pl · προσέρχομαι · Hortatory · "Let us therefore approach the throne of grace with boldness." (Heb 4:16)</td><td></td></tr>
+
+<tr class="question-row" data-id="13"><td><b>13</b></td><td class="greek"><u>χαίρωμεν</u> καὶ ἀγαλλιῶμεν καὶ δῶμεν τὴν δόξαν αὐτῷ.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-13"><td></td><td colspan="8">Pres · Act · 1st · Pl · χαίρω · Hortatory · "Let us rejoice and exult and give glory to him." (Rev 19:7)</td><td></td></tr>
+</tbody>
+</table>
+
+<h2>Part D — Prohibition (14–16)</h2>
+<table>
+<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
+<tbody>
+<tr class="question-row" data-id="14"><td><b>14</b></td><td class="greek">μὴ <u>νομίσητε</u> ὅτι ἦλθον καταλῦσαι τὸν νόμον.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-14"><td></td><td colspan="8">Aor · Act · 2nd · Pl · νομίζω · Prohibition (μή + aor. subj.) · "Do not think that I came to abolish the Law." (Matt 5:17)</td><td></td></tr>
+
+<tr class="question-row" data-id="15"><td><b>15</b></td><td class="greek">μὴ <u>φοβηθῇς</u>, Μαριάμ· εὗρες γὰρ χάριν παρὰ τῷ θεῷ.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-15"><td></td><td colspan="8">Aor · Pass · 2nd · Sg · φοβέομαι · Prohibition (μή + aor. subj.) · "Do not be afraid, Mary; for you have found favor with God." (Luke 1:30)</td><td></td></tr>
+
+<tr class="question-row" data-id="16"><td><b>16</b></td><td class="greek">μὴ <u>κρίνητε</u>, ἵνα μὴ κριθῆτε.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-16"><td></td><td colspan="8">Pres · Act · 2nd · Pl · κρίνω · Prohibition (μή + pres. subj.) · "Do not judge, so that you may not be judged." (Matt 7:1)</td><td></td></tr>
+</tbody>
+</table>
+
+<h2>Part E — Indefinite and Emphatic Denial (17–20)</h2>
+<table>
+<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
+<tbody>
+<tr class="question-row" data-id="17"><td><b>17</b></td><td class="greek">ὃς ἂν <u>θέλῃ</u> μέγας γενέσθαι ἐν ὑμῖν, ἔσται ὑμῶν διάκονος.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(17)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-17"><td></td><td colspan="8">Pres · Act · 3rd · Sg · θέλω · Indefinite relative (ὃς ἄν) · "Whoever wishes to become great among you shall be your servant." (Mark 10:43)</td><td></td></tr>
+
+<tr class="question-row" data-id="18"><td><b>18</b></td><td class="greek">ὅταν δὲ <u>ἔλθῃ</u> ὁ υἱὸς τοῦ ἀνθρώπου, ἄρα εὑρήσει τὴν πίστιν;</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(18)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-18"><td></td><td colspan="8">Aor · Act · 3rd · Sg · ἔρχομαι · Indefinite temporal (ὅταν) · "But when the Son of Man comes, will he find faith on the earth?" (Luke 18:8)</td><td></td></tr>
+
+<tr class="question-row" data-id="19"><td><b>19</b></td><td class="greek">οὐ μὴ <u>εἰσέλθητε</u> εἰς τὴν βασιλείαν τῶν οὐρανῶν.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(19)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-19"><td></td><td colspan="8">Aor · Act · 2nd · Pl · εἰσέρχομαι · Emphatic denial (οὐ μή) · "You will certainly not enter the kingdom of heaven." (Matt 5:20)</td><td></td></tr>
+
+<tr class="question-row" data-id="20"><td><b>20</b></td><td class="greek">οὐ μὴ <u>παρέλθῃ</u> ἡ γενεὰ αὕτη ἕως ἂν πάντα ταῦτα γένηται.</td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
+  <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
+<tr class="answer-row" id="ans-20"><td></td><td colspan="8">Aor · Act · 3rd · Sg · παρέρχομαι · Emphatic denial (οὐ μή) · "This generation will absolutely not pass away until all these things happen." (Matt 24:34)</td><td></td></tr>
+</tbody>
+</table>
+
+<script>
+function toggleAnswer(id) {
+  const row = document.getElementById('ans-' + id);
+  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
+  if (row.style.display === 'table-row') { row.style.display = 'none'; if (btn) btn.textContent = '▶ Answer'; }
+  else { row.style.display = 'table-row'; if (btn) btn.textContent = '▼ Answer'; }
+}
+function showAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer'); }
+function hideAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer'); }
+function clearAll() { document.querySelectorAll('.parse-field').forEach(f => f.value = ''); }
+</script>
+

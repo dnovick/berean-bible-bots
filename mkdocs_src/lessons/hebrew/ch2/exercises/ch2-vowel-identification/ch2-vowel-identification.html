@@ -40,6 +40,13 @@
 </style>
 </head>
 <body>
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch2-vowel-identification.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch2-vowel-identification.pdf">&#128209; PDF</a>
+</div>
+
 
 <h1>Chapter 2 — Vowel Identification Exercise</h1>
 <p class="subtitle">BBH Chapter 2 · Hebrew Vowels · 25 items</p>
@@ -69,10 +76,10 @@
   <tr>
     <td class="num">1</td>
     <td class="heb">מָ</td>
-    <td><input class="f" id="1-name" placeholder="vowel name"></td>
-    <td><input class="f" id="1-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="1-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="1-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="1-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="1-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="1-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="1-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-1" onclick="toggle('ans-1',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-1">
@@ -84,10 +91,10 @@
   <tr>
     <td class="num">2</td>
     <td class="heb">מֵ</td>
-    <td><input class="f" id="2-name" placeholder="vowel name"></td>
-    <td><input class="f" id="2-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="2-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="2-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="2-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="2-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="2-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="2-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-2" onclick="toggle('ans-2',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-2">
@@ -99,10 +106,10 @@
   <tr>
     <td class="num">3</td>
     <td class="heb">מִ</td>
-    <td><input class="f" id="3-name" placeholder="vowel name"></td>
-    <td><input class="f" id="3-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="3-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="3-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="3-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="3-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="3-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="3-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-3" onclick="toggle('ans-3',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-3">
@@ -114,10 +121,10 @@
   <tr>
     <td class="num">4</td>
     <td class="heb">מֹ</td>
-    <td><input class="f" id="4-name" placeholder="vowel name"></td>
-    <td><input class="f" id="4-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="4-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="4-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="4-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="4-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="4-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="4-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-4" onclick="toggle('ans-4',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4">
@@ -129,10 +136,10 @@
   <tr>
     <td class="num">5</td>
     <td class="heb">מֻ</td>
-    <td><input class="f" id="5-name" placeholder="vowel name"></td>
-    <td><input class="f" id="5-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="5-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="5-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="5-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="5-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="5-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="5-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-5" onclick="toggle('ans-5',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-5">
@@ -144,10 +151,10 @@
   <tr>
     <td class="num">6</td>
     <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מְ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(word-initial)</span></td>
-    <td><input class="f" id="6-name" placeholder="vowel name"></td>
-    <td><input class="f" id="6-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="6-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="6-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="6-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="6-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="6-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="6-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-6" onclick="toggle('ans-6',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-6">
@@ -159,10 +166,10 @@
   <tr>
     <td class="num">7</td>
     <td class="heb">מַ</td>
-    <td><input class="f" id="7-name" placeholder="vowel name"></td>
-    <td><input class="f" id="7-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="7-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="7-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="7-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="7-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="7-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="7-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-7" onclick="toggle('ans-7',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-7">
@@ -174,10 +181,10 @@
   <tr>
     <td class="num">8</td>
     <td class="heb">מֶ</td>
-    <td><input class="f" id="8-name" placeholder="vowel name"></td>
-    <td><input class="f" id="8-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="8-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="8-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="8-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="8-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="8-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="8-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-8" onclick="toggle('ans-8',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8">
@@ -189,10 +196,10 @@
   <tr>
     <td class="num">9</td>
     <td class="heb">מִי</td>
-    <td><input class="f" id="9-name" placeholder="vowel name"></td>
-    <td><input class="f" id="9-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="9-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="9-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="9-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="9-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="9-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="9-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-9" onclick="toggle('ans-9',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-9">
@@ -204,10 +211,10 @@
   <tr>
     <td class="num">10</td>
     <td class="heb">מוֹ</td>
-    <td><input class="f" id="10-name" placeholder="vowel name"></td>
-    <td><input class="f" id="10-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="10-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="10-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="10-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="10-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="10-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="10-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-10" onclick="toggle('ans-10',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10">
@@ -219,10 +226,10 @@
   <tr>
     <td class="num">11</td>
     <td class="heb">מוּ</td>
-    <td><input class="f" id="11-name" placeholder="vowel name"></td>
-    <td><input class="f" id="11-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="11-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="11-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="11-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="11-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="11-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="11-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-11" onclick="toggle('ans-11',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-11">
@@ -234,10 +241,10 @@
   <tr>
     <td class="num">12</td>
     <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מְ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(word-final)</span></td>
-    <td><input class="f" id="12-name" placeholder="vowel name"></td>
-    <td><input class="f" id="12-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="12-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="12-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="12-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="12-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="12-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="12-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-12" onclick="toggle('ans-12',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-12">
@@ -249,10 +256,10 @@
   <tr>
     <td class="num">13</td>
     <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מָ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(closed, unaccented syllable)</span></td>
-    <td><input class="f" id="13-name" placeholder="vowel name"></td>
-    <td><input class="f" id="13-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="13-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="13-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="13-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="13-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="13-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="13-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-13" onclick="toggle('ans-13',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-13">
@@ -264,10 +271,10 @@
   <tr>
     <td class="num">14</td>
     <td class="heb">מֵי</td>
-    <td><input class="f" id="14-name" placeholder="vowel name"></td>
-    <td><input class="f" id="14-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="14-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="14-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="14-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="14-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="14-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="14-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-14" onclick="toggle('ans-14',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-14">
@@ -279,10 +286,10 @@
   <tr>
     <td class="num">15</td>
     <td class="heb">כִּי</td>
-    <td><input class="f" id="15-name" placeholder="vowel name"></td>
-    <td><input class="f" id="15-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="15-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="15-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="15-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="15-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="15-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="15-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-15" onclick="toggle('ans-15',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15">
@@ -294,10 +301,10 @@
   <tr>
     <td class="num">16</td>
     <td class="heb" style="font-size:1.0em; padding:.4rem .45rem;">מָ<br><span style="font-size:.75rem; font-style:italic; direction:ltr; unicode-bidi:embed;">(= Qamets Hatuf)</span></td>
-    <td><input class="f" id="16-name" placeholder="vowel name"></td>
-    <td><input class="f" id="16-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="16-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="16-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="16-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="16-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="16-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="16-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-16" onclick="toggle('ans-16',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-16">
@@ -309,10 +316,10 @@
   <tr>
     <td class="num">17</td>
     <td class="heb">מֲ</td>
-    <td><input class="f" id="17-name" placeholder="vowel name"></td>
-    <td><input class="f" id="17-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="17-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="17-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="17-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="17-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="17-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="17-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-17" onclick="toggle('ans-17',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-17">
@@ -324,10 +331,10 @@
   <tr>
     <td class="num">18</td>
     <td class="heb">מֱ</td>
-    <td><input class="f" id="18-name" placeholder="vowel name"></td>
-    <td><input class="f" id="18-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="18-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="18-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="18-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="18-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="18-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="18-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-18" onclick="toggle('ans-18',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-18">
@@ -339,10 +346,10 @@
   <tr>
     <td class="num">19</td>
     <td class="heb">מֳ</td>
-    <td><input class="f" id="19-name" placeholder="vowel name"></td>
-    <td><input class="f" id="19-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="19-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="19-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="19-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="19-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="19-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="19-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-19" onclick="toggle('ans-19',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-19">
@@ -354,10 +361,10 @@
   <tr>
     <td class="num">20</td>
     <td class="heb">הֲ</td>
-    <td><input class="f" id="20-name" placeholder="vowel name"></td>
-    <td><input class="f" id="20-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="20-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="20-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="20-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="20-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="20-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="20-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-20" onclick="toggle('ans-20',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20">
@@ -369,10 +376,10 @@
   <tr>
     <td class="num">21</td>
     <td class="heb">הֱ</td>
-    <td><input class="f" id="21-name" placeholder="vowel name"></td>
-    <td><input class="f" id="21-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="21-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="21-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="21-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="21-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="21-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="21-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-21" onclick="toggle('ans-21',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-21">
@@ -384,10 +391,10 @@
   <tr>
     <td class="num">22</td>
     <td class="heb">הֳ</td>
-    <td><input class="f" id="22-name" placeholder="vowel name"></td>
-    <td><input class="f" id="22-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="22-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="22-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="22-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="22-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="22-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="22-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-22" onclick="toggle('ans-22',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-22">
@@ -399,10 +406,10 @@
   <tr>
     <td class="num">23</td>
     <td class="heb">דָּבָר</td>
-    <td><input class="f" id="23-name" placeholder="vowel name"></td>
-    <td><input class="f" id="23-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="23-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="23-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="23-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="23-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="23-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="23-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-23" onclick="toggle('ans-23',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-23">
@@ -414,10 +421,10 @@
   <tr>
     <td class="num">24</td>
     <td class="heb">בֵּן</td>
-    <td><input class="f" id="24-name" placeholder="vowel name"></td>
-    <td><input class="f" id="24-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="24-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="24-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="24-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="24-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="24-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="24-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-24" onclick="toggle('ans-24',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-24">
@@ -429,10 +436,10 @@
   <tr>
     <td class="num">25</td>
     <td class="heb">מַּ</td>
-    <td><input class="f" id="25-name" placeholder="vowel name"></td>
-    <td><input class="f" id="25-cls" placeholder="A/E/I/O/U"></td>
-    <td><input class="f" id="25-qty" placeholder="Long/Short/Reduced"></td>
-    <td><input class="f" id="25-notes" placeholder="notes"></td>
+    <td><input class="parse-field" id="25-name" placeholder="vowel name"></td>
+    <td><input class="parse-field" id="25-cls" placeholder="A/E/I/O/U"></td>
+    <td><input class="parse-field" id="25-qty" placeholder="Long/Short/Reduced"></td>
+    <td><input class="parse-field" id="25-notes" placeholder="notes"></td>
     <td><button class="rbtn" id="btn-25" onclick="toggle('ans-25',this)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-25">

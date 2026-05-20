@@ -15,7 +15,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
-  input.ans-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
   button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
@@ -31,12 +31,19 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.ans-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 </style>
 </head>
 <body>
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch34-qal-piel-hithpael-contrast.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch34-qal-piel-hithpael-contrast.pdf">&#128209; PDF</a>
+</div>
+
 
 <h1>Chapter 34 — Qal / Piel / Hithpael Contrast Drill (Strong Roots)</h1>
 <p class="subtitle">BBH Chapter 34 · Hithpael Strong Verbs</p>
@@ -75,9 +82,9 @@
   <tr>
     <td>1</td>
     <td><span class="heb">קָדַשׁ</span></td>
-    <td><input class="ans-field" id="f1s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f1f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f1t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f1s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f1f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f1t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -87,9 +94,9 @@
   <tr>
     <td>2</td>
     <td><span class="heb">קִדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f2s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f2f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f2t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f2s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f2f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f2t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -99,9 +106,9 @@
   <tr>
     <td>3</td>
     <td><span class="heb">הִתְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f3s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f3f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f3t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f3s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f3f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f3t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -116,9 +123,9 @@
   <tr>
     <td>4</td>
     <td><span class="heb">כָּבֵד</span></td>
-    <td><input class="ans-field" id="f4s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f4f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f4t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f4s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f4f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f4t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -128,9 +135,9 @@
   <tr>
     <td>5</td>
     <td><span class="heb">כִּבֵּד</span></td>
-    <td><input class="ans-field" id="f5s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f5f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f5t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f5s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f5f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f5t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -140,9 +147,9 @@
   <tr>
     <td>6</td>
     <td><span class="heb">הִתְכַּבֵּד</span></td>
-    <td><input class="ans-field" id="f6s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f6f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f6t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f6s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f6f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f6t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -157,9 +164,9 @@
   <tr>
     <td>7</td>
     <td><span class="heb">שָׁמַר</span></td>
-    <td><input class="ans-field" id="f7s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f7f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f7t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f7s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f7f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f7t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -169,9 +176,9 @@
   <tr>
     <td>8</td>
     <td><span class="heb">שִׁמֵּר</span></td>
-    <td><input class="ans-field" id="f8s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f8f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f8t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f8s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f8f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f8t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -181,9 +188,9 @@
   <tr>
     <td>9</td>
     <td><span class="heb">הִשְׁתַּמֵּר</span></td>
-    <td><input class="ans-field" id="f9s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f9f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f9t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f9s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f9f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f9t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -198,9 +205,9 @@
   <tr>
     <td>10</td>
     <td><span class="heb">פָּלַל</span></td>
-    <td><input class="ans-field" id="f10s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f10f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f10t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f10s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f10f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f10t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -210,9 +217,9 @@
   <tr>
     <td>11</td>
     <td><span class="heb">פִּלֵּל</span></td>
-    <td><input class="ans-field" id="f11s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f11f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f11t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f11s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f11f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f11t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -222,9 +229,9 @@
   <tr>
     <td>12</td>
     <td><span class="heb">הִתְפַּלֵּל</span></td>
-    <td><input class="ans-field" id="f12s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f12f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f12t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f12s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f12f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f12t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -239,9 +246,9 @@
   <tr>
     <td>13</td>
     <td><span class="heb">בָּרַךְ</span></td>
-    <td><input class="ans-field" id="f13s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f13f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f13t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f13s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f13f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f13t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -251,9 +258,9 @@
   <tr>
     <td>14</td>
     <td><span class="heb">בֵּרַךְ</span></td>
-    <td><input class="ans-field" id="f14s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f14f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f14t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f14s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f14f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f14t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -263,9 +270,9 @@
   <tr>
     <td>15</td>
     <td><span class="heb">הִתְבָּרֵךְ</span></td>
-    <td><input class="ans-field" id="f15s" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f15f" placeholder="Function"></td>
-    <td><input class="ans-field" id="f15t" placeholder="Translation"></td>
+    <td><input class="parse-field" id="f15s" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f15f" placeholder="Function"></td>
+    <td><input class="parse-field" id="f15t" placeholder="Translation"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -305,7 +312,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.ans-field').forEach(i => i.value = '');
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
 }
 </script>
 </body>

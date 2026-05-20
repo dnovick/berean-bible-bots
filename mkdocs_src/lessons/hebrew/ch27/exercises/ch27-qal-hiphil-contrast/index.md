@@ -4,4 +4,245 @@
 
 [Full screen](ch27-qal-hiphil-contrast.html){.md-button}  [Markdown](ch27-qal-hiphil-contrast.md){.md-button}  [Print (PDF)](ch27-qal-hiphil-contrast.pdf){.md-button}
 
-<iframe src="ch27-qal-hiphil-contrast.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Qal Hiphil Contrast"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; margin-bottom: 0.2em; }
+  .subtitle { color: #555; font-style: italic; margin-bottom: 1.5em; }
+  h2 { font-size: 1.1em; margin-top: 2em; border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
+  .instructions { background: #f7f7f7; border-left: 4px solid #999; padding: 0.8em 1em; margin-bottom: 1.5em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; font-size: 0.92em; }
+  th { background: #444; color: #fff; padding: 6px 8px; text-align: left; }
+  td { border: 1px solid #ccc; padding: 5px 8px; vertical-align: middle; }
+  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
+  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: 0.95em; padding: 2px 0; }
+  .ans-row td { background: #e6f4ea; color: #1a5c1a; font-weight: bold; }
+  .ans-row { display: none; }
+  .ans-btn { font-size: 0.78em; padding: 2px 7px; cursor: pointer; margin-left: 4px; }
+  .controls { margin: 1em 0; }
+  .controls button { margin-right: 8px; padding: 5px 12px; cursor: pointer; }
+  .discussion { background: #fffbe6; border-left: 4px solid #c9a000; padding: 0.8em 1em; margin: 1.5em 0; }
+  .discussion ol { margin: 0.4em 0 0 1.2em; }
+  @media print {
+    .controls, .ans-btn { display: none !important; }
+    .ans-row { display: none !important; }
+    input.parse-field { border: none; border-bottom: 1px solid #555; }
+  }
+  select.parse-field { font-size: .9em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 80px; }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+<strong>Also available:</strong>
+<a href="ch27-qal-hiphil-contrast.md" style="margin-left:.5rem;">📄 Markdown</a>
+<span style="margin:0 .3rem;color:#aaa;">|</span>
+<a href="ch27-qal-hiphil-contrast.pdf">📑 PDF</a>
+</div>
+<h1>Chapter 27 — Qal–Hiphil Contrast Drill (Weak Verbs)</h1>
+<div class="subtitle">BBH Chapter 27 · Hiphil Weak Verbs</div>
+<div class="instructions">
+<strong>Instructions:</strong> For each item: (1) write an English translation of the Hiphil form; (2) name the semantic function (Causative / Factitive / Declarative / Simple Action); (3) explain in one sentence why the Hiphil meaning follows from the Qal. Click <strong>▶ Answer</strong> to reveal each row.
+</div>
+<div class="controls">
+<button onclick="showAll()">Show All Answers</button>
+<button onclick="hideAll()">Hide All Answers</button>
+<button onclick="clearAll()">Clear All Inputs</button>
+</div>
+<h2>Part A — I-י / I-נ Weak Roots</h2>
+<table id="tbl-a">
+<thead>
+<tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Conj</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
+</thead>
+<tbody>
+<tr class="q-row" data-id="a1">
+<td>1</td><td class="heb">יָדַע</td><td>to know</td><td class="heb">הוֹדִיעַ</td><td>Perfect 3ms</td><td>Deu 4:9</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('a1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-a1">
+<td>1</td><td class="heb">יָדַע</td><td>to know</td><td class="heb">הוֹדִיעַ</td><td>Perfect 3ms</td><td>Deu 4:9</td>
+<td>he made known / declared</td><td>Causative</td><td>Causing others to know; Qal = to know</td>
+</tr>
+<tr class="q-row" data-id="a2">
+<td>2</td><td class="heb">יָצָא</td><td>to go out</td><td class="heb">הוֹצִיא</td><td>Perfect 3ms</td><td>Gen 15:7</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('a2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-a2">
+<td>2</td><td class="heb">יָצָא</td><td>to go out</td><td class="heb">הוֹצִיא</td><td>Perfect 3ms</td><td>Gen 15:7</td>
+<td>he brought out</td><td>Causative</td><td>God caused Abram to exit Ur; Qal = go out</td>
+</tr>
+<tr class="q-row" data-id="a3">
+<td>3</td><td class="heb">יָשַׁב</td><td>to sit, dwell</td><td class="heb">הוֹשִׁיב</td><td>Wayyiqtol 3ms</td><td>Gen 47:11</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('a3')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-a3">
+<td>3</td><td class="heb">יָשַׁב</td><td>to sit, dwell</td><td class="heb">הוֹשִׁיב</td><td>Wayyiqtol 3ms</td><td>Gen 47:11</td>
+<td>he settled them (in the land)</td><td>Causative</td><td>Joseph caused his family to dwell; Qal = to sit/dwell</td>
+</tr>
+<tr class="q-row" data-id="a4">
+<td>4</td><td class="heb">נָפַל</td><td>to fall</td><td class="heb">הִפִּיל</td><td>Wayyiqtol 3ms</td><td>Gen 2:21</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('a4')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-a4">
+<td>4</td><td class="heb">נָפַל</td><td>to fall</td><td class="heb">הִפִּיל</td><td>Wayyiqtol 3ms</td><td>Gen 2:21</td>
+<td>he caused to fall / cast down</td><td>Causative</td><td>God caused deep sleep to fall on Adam; Qal = fall</td>
+</tr>
+<tr class="q-row" data-id="a5">
+<td>5</td><td class="heb">נָגַשׁ</td><td>to draw near</td><td class="heb">הִגִּישׁ</td><td>Wayyiqtol 3ms</td><td>Gen 43:31</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('a5')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-a5">
+<td>5</td><td class="heb">נָגַשׁ</td><td>to draw near</td><td class="heb">הִגִּישׁ</td><td>Wayyiqtol 3ms</td><td>Gen 43:31</td>
+<td>he set before them / brought near</td><td>Causative</td><td>Joseph caused food to be set before them; Qal = draw near</td>
+</tr>
+</tbody>
+</table>
+<h2>Part B — Hollow Roots (I/II-ו/י)</h2>
+<table id="tbl-b">
+<thead>
+<tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Conj</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
+</thead>
+<tbody>
+<tr class="q-row" data-id="b6">
+<td>6</td><td class="heb">בּוֹא</td><td>to come, go in</td><td class="heb">הֵבִיא</td><td>Perfect 3ms</td><td>Gen 43:17</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('b6')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-b6">
+<td>6</td><td class="heb">בּוֹא</td><td>to come, go in</td><td class="heb">הֵבִיא</td><td>Perfect 3ms</td><td>Gen 43:17</td>
+<td>he brought</td><td>Causative</td><td>Brothers were caused to come to Joseph's house; Qal = come</td>
+</tr>
+<tr class="q-row" data-id="b7">
+<td>7</td><td class="heb">שׁוּב</td><td>to return</td><td class="heb">הֵשִׁיב</td><td>Wayyiqtol 3ms</td><td>Gen 42:25</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('b7')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-b7">
+<td>7</td><td class="heb">שׁוּב</td><td>to return</td><td class="heb">הֵשִׁיב</td><td>Wayyiqtol 3ms</td><td>Gen 42:25</td>
+<td>he gave back / returned it</td><td>Causative</td><td>Joseph caused the silver to be returned; Qal = return</td>
+</tr>
+<tr class="q-row" data-id="b8">
+<td>8</td><td class="heb">קוּם</td><td>to rise, stand</td><td class="heb">הֵקִים</td><td>Wayyiqtol 3ms</td><td>Gen 6:18</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('b8')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-b8">
+<td>8</td><td class="heb">קוּם</td><td>to rise, stand</td><td class="heb">הֵקִים</td><td>Wayyiqtol 3ms</td><td>Gen 6:18</td>
+<td>he established / confirmed</td><td>Causative</td><td>God caused the covenant to stand; Qal = rise/stand</td>
+</tr>
+<tr class="q-row" data-id="b9">
+<td>9</td><td class="heb">מוּת</td><td>to die</td><td class="heb">יָמִית</td><td>Imperfect 3ms</td><td>Deu 17:12</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('b9')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-b9">
+<td>9</td><td class="heb">מוּת</td><td>to die</td><td class="heb">יָמִית</td><td>Imperfect 3ms</td><td>Deu 17:12</td>
+<td>he will put to death</td><td>Causative</td><td>Causing death; Qal = die</td>
+</tr>
+<tr class="q-row" data-id="b10">
+<td>10</td><td class="heb">שִׂים</td><td>to set, put</td><td class="heb">יָשִׂים</td><td>Imperfect 3ms</td><td>Gen 24:2</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('b10')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-b10">
+<td>10</td><td class="heb">שִׂים</td><td>to set, put</td><td class="heb">יָשִׂים</td><td>Imperfect 3ms</td><td>Gen 24:2</td>
+<td>he will put / place</td><td>Simple Action</td><td>Hiphil = primary usage for placing; Qal rare in same sense</td>
+</tr>
+</tbody>
+</table>
+<h2>Part C — III-ה Weak Roots</h2>
+<table id="tbl-c">
+<thead>
+<tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Conj</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
+</thead>
+<tbody>
+<tr class="q-row" data-id="c11">
+<td>11</td><td class="heb">עָלָה</td><td>to go up</td><td class="heb">הֶעֱלָה</td><td>Perfect 3ms</td><td>Gen 46:4</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('c11')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-c11">
+<td>11</td><td class="heb">עָלָה</td><td>to go up</td><td class="heb">הֶעֱלָה</td><td>Perfect 3ms</td><td>Gen 46:4</td>
+<td>he brought up</td><td>Causative</td><td>God caused Jacob to go up to Egypt; Qal = go up</td>
+</tr>
+<tr class="q-row" data-id="c12">
+<td>12</td><td class="heb">רָאָה</td><td>to see</td><td class="heb">הֶרְאָה</td><td>Perfect 3ms</td><td>Deu 34:1</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('c12')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-c12">
+<td>12</td><td class="heb">רָאָה</td><td>to see</td><td class="heb">הֶרְאָה</td><td>Perfect 3ms</td><td>Deu 34:1</td>
+<td>he showed</td><td>Causative</td><td>The LORD caused Moses to see the land; Qal = see</td>
+</tr>
+<tr class="q-row" data-id="c13">
+<td>13</td><td class="heb">נָטָה</td><td>to stretch out</td><td class="heb">הִטָּה</td><td>Wayyiqtol 3ms</td><td>Exo 10:13</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('c13')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-c13">
+<td>13</td><td class="heb">נָטָה</td><td>to stretch out</td><td class="heb">הִטָּה</td><td>Wayyiqtol 3ms</td><td>Exo 10:13</td>
+<td>he stretched out</td><td>Causative</td><td>Moses stretched out his staff; Qal = extend/stretch</td>
+</tr>
+<tr class="q-row" data-id="c14">
+<td>14</td><td class="heb">גָּלָה</td><td>to go into exile</td><td class="heb">הִגְלָה</td><td>Perfect 3ms</td><td>2 Kgs 17:6</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('c14')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-c14">
+<td>14</td><td class="heb">גָּלָה</td><td>to go into exile</td><td class="heb">הִגְלָה</td><td>Perfect 3ms</td><td>2 Kgs 17:6</td>
+<td>he exiled / sent into exile</td><td>Causative</td><td>King caused Israel to go into exile; Qal = go into exile</td>
+</tr>
+<tr class="q-row" data-id="c15">
+<td>15</td><td class="heb">הָיָה</td><td>to be</td><td class="heb">יֶהְיֶה</td><td>Imperfect 3ms</td><td>—</td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><select class="parse-field"><option value="">—</option><option value="Causative">Causative</option><option value="Simple Action">Simple Action</option></select></td>
+<td><button class="ans-btn" onclick="toggle('c15')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-c15">
+<td>15</td><td class="heb">הָיָה</td><td>to be</td><td class="heb">יֶהְיֶה</td><td>Imperfect 3ms</td><td>—</td>
+<td>it will be / come about</td><td>Simple Action</td><td>III-ה root; context determines; Qal = be/become</td>
+</tr>
+</tbody>
+</table>
+<div class="discussion">
+<strong>Discussion Questions:</strong>
+<ol>
+<li>In Part A, the I-י roots (יָדַע, יָצָא, יָשַׁב) all use הוֹ– as the Hiphil prefix. What happens to the initial י? Describe the contraction in one sentence.</li>
+<li>Items 8 (קוּם) and 9 (מוּת) are both hollow roots classified as Causative. Can a hollow root ever produce a Factitive or Declarative Hiphil? Give a reason for your answer.</li>
+<li>Compare עָלָה in Ch26's exercise and item 11 here. Both use the same root, but item 11 is a Perfect rather than an Imperative. Does the weak-root form change your ability to recognize it as Hiphil?</li>
+</ol>
+</div>
+<script>
+function toggle(id) {
+  var r = document.getElementById('ans-' + id);
+  r.style.display = (r.style.display === 'table-row') ? 'none' : 'table-row';
+}
+function showAll() {
+  document.querySelectorAll('.ans-row').forEach(function(r){ r.style.display = 'table-row'; });
+}
+function hideAll() {
+  document.querySelectorAll('.ans-row').forEach(function(r){ r.style.display = 'none'; });
+}
+function clearAll() {
+  document.querySelectorAll('.parse-field').forEach(function(i){ i.value = ''; });
+}
+</script>
+

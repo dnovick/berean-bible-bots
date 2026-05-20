@@ -4,4 +4,137 @@
 
 [Full screen](ch21-imperfect-parsing.html){.md-button}  [Markdown](ch21-imperfect-parsing.md){.md-button}  [Print (PDF)](ch21-imperfect-parsing.pdf){.md-button}
 
-<iframe src="ch21-imperfect-parsing.html" style="width:100%;height:85vh;border:1px solid #ddd;border-radius:6px;" title="Imperfect Parsing"></iframe>
+<style>
+
+  body { font-family: Georgia, serif;    color: #222; }
+  h1 { font-size: 1.4em; }
+  p.subtitle { color: #555; font-style: italic; }
+  .controls { margin: 1em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
+  .controls button { padding: 0.4em 1em; font-size: 0.9em; cursor: pointer; border: 1px solid #888; border-radius: 4px; background: #f5f5f5; }
+  .controls button:hover { background: #e0e0e0; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85em; }
+  th { background: #3a5a8a; color: #fff; padding: 0.5em 0.4em; text-align: left; }
+  td { border: 1px solid #ccc; padding: 0.3em 0.35em; vertical-align: middle; }
+  tr:nth-child(even) td { background: #f8f8f8; }
+  .greek { font-size: 1.1em; font-weight: bold; }
+  input.parse-field {
+    width: 100%;
+    min-width: 60px;
+    border: none;
+    border-bottom: 1px solid #999;
+    background: transparent;
+    font-size: 0.85em;
+    padding: 1px 2px;
+    box-sizing: border-box;
+  }
+  input.parse-field:focus { outline: none; border-bottom-color: #3a5a8a; }
+  .btn-answer { padding: 0.2em 0.5em; font-size: 0.78em; cursor: pointer; border: 1px solid #aaa; border-radius: 3px; background: #fff; white-space: nowrap; }
+  .btn-answer:hover { background: #f0f0f0; }
+  tr.answer-row td { background: #d4edda !important; font-size: 0.83em; color: #155724; }
+  tr.answer-row { display: none; }
+  tr.answer-row.visible { display: table-row; }
+  .num-col { width: 2.2em; text-align: center; }
+  .form-col { width: 9em; }
+  @media print {
+    .controls, .btn-answer { display: none !important; }
+    input.parse-field { border-bottom: 1px solid #555; background: transparent; }
+    tr.answer-row { display: none !important; }
+  }
+
+</style>
+
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch21-imperfect-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch21-imperfect-parsing.pdf">&#128209; PDF</a>
+</div>
+
+<h1>Ch21 — Imperfect Parsing Drill</h1>
+<p class="subtitle">BBG Chapter 21 · Mounce 4th Edition — Parse each form: Tense · Voice · Mood · Person · Number · Augment Type · Lexical Form · Translation</p>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+<thead>
+  <tr>
+    <th class="num-col">#</th>
+    <th class="form-col">Form</th>
+    <th>Tense</th>
+    <th>Voice</th>
+    <th>Mood</th>
+    <th>Person</th>
+    <th>Number</th>
+    <th>Augment Type</th>
+    <th>Lexical Form</th>
+    <th>Translation</th>
+    <th></th>
+  </tr>
+</thead>
+<tbody id="drillBody">
+</tbody>
+</table>
+
+<script>
+const items = [
+  { num:1,  form:"ἔλυον",       tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"1st", number:"Singular",         aug:"Syllabic (ε-)", lexical:"λύω",          trans:"I was loosing" },
+  { num:2,  form:"ἔλυες",       tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"2nd", number:"Singular",         aug:"Syllabic (ε-)", lexical:"λύω",          trans:"You were loosing" },
+  { num:3,  form:"ἔλυεν",       tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Singular",         aug:"Syllabic (ε-)", lexical:"λύω",          trans:"He/she/it was loosing" },
+  { num:4,  form:"ἐλύομεν",     tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"1st", number:"Plural",           aug:"Syllabic (ε-)", lexical:"λύω",          trans:"We were loosing" },
+  { num:5,  form:"ἐλύετε",      tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"2nd", number:"Plural",           aug:"Syllabic (ε-)", lexical:"λύω",          trans:"You (pl) were loosing" },
+  { num:6,  form:"ἔγραφον",     tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural (or 1sg)", aug:"Syllabic (ε-)", lexical:"γράφω",        trans:"They were writing" },
+  { num:7,  form:"ἐπίστευον",   tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural (or 1sg)", aug:"Syllabic (ε-)", lexical:"πιστεύω",      trans:"They were believing" },
+  { num:8,  form:"ἐδίδασκεν",   tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Singular",         aug:"Syllabic (ε-)", lexical:"διδάσκω",      trans:"He/she was teaching" },
+  { num:9,  form:"ἤκουον",      tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural (or 1sg)", aug:"Temporal (α→η)", lexical:"ἀκούω",       trans:"They were hearing" },
+  { num:10, form:"ἤλπιζον",     tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural (or 1sg)", aug:"Temporal (ε→η)", lexical:"ἐλπίζω",      trans:"They were hoping" },
+  { num:11, form:"ηὔξανον",     tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural (or 1sg)", aug:"Temporal (αυ→ηυ)", lexical:"αὐξάνω",    trans:"They were growing" },
+  { num:12, form:"ἠγάπων",      tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural (or 1sg)", aug:"Temporal (α→η)", lexical:"ἀγαπάω",      trans:"They were loving" },
+  { num:13, form:"ἐλυόμην",     tense:"Imperfect", voice:"Middle/Passive",mood:"Indicative", person:"1st", number:"Singular",         aug:"Syllabic (ε-)", lexical:"λύω",          trans:"I was loosing (for myself) / being loosed" },
+  { num:14, form:"ἐλύου",       tense:"Imperfect", voice:"Middle/Passive",mood:"Indicative", person:"2nd", number:"Singular",         aug:"Syllabic (ε-)", lexical:"λύω",          trans:"You were loosing (for yourself)" },
+  { num:15, form:"ἐλύετο",      tense:"Imperfect", voice:"Middle/Passive",mood:"Indicative", person:"3rd", number:"Singular",         aug:"Syllabic (ε-)", lexical:"λύω",          trans:"He/she was loosing (for himself/herself)" },
+  { num:16, form:"ἐλύοντο",     tense:"Imperfect", voice:"Middle/Passive",mood:"Indicative", person:"3rd", number:"Plural",           aug:"Syllabic (ε-)", lexical:"λύω",          trans:"They were loosing (for themselves)" },
+  { num:17, form:"ἦν",          tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Singular",         aug:"Temporal (εἰμί)", lexical:"εἰμί",       trans:"He/she/it was" },
+  { num:18, form:"ἦσαν",        tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural",           aug:"Temporal (εἰμί)", lexical:"εἰμί",       trans:"They were" },
+  { num:19, form:"ἐξέβαλλον",   tense:"Imperfect", voice:"Active",        mood:"Indicative", person:"3rd", number:"Plural (or 1sg)", aug:"Syllabic (after ἐκ-)", lexical:"ἐκβάλλω", trans:"They were casting out" },
+  { num:20, form:"προσήρχοντο", tense:"Imperfect", voice:"Middle/Passive",mood:"Indicative", person:"3rd", number:"Plural",           aug:"Temporal (after πρός-)", lexical:"προσέρχομαι", trans:"They were coming to / approaching" },
+];
+
+const fieldKeys = ["tense","voice","mood","person","number","aug","lexical","trans"];
+
+function buildTable() {
+  const tbody = document.getElementById("drillBody");
+  items.forEach(item => {
+    const inputRow = document.createElement("tr");
+    inputRow.id = "row-" + item.num;
+    let cells = `<td class="num-col">${item.num}</td><td class="form-col greek">${item.form}</td>`;
+    fieldKeys.forEach(f => {
+      cells += `<td><input class="parse-field" type="text" aria-label="${f}"></td>`;
+    });
+    cells += `<td><button class="btn-answer" onclick="toggleAnswer(${item.num})">&#9658; Answer</button></td>`;
+    inputRow.innerHTML = cells;
+    tbody.appendChild(inputRow);
+
+    const ansRow = document.createElement("tr");
+    ansRow.id = "ans-" + item.num;
+    ansRow.className = "answer-row";
+    let ansCells = `<td class="num-col"></td><td class="form-col greek">${item.form}</td>`;
+    ansCells += `<td>${item.tense}</td><td>${item.voice}</td><td>${item.mood}</td>`;
+    ansCells += `<td>${item.person}</td><td>${item.number}</td>`;
+    ansCells += `<td>${item.aug}</td><td>${item.lexical}</td><td>${item.trans}</td><td></td>`;
+    ansRow.innerHTML = ansCells;
+    tbody.appendChild(ansRow);
+  });
+}
+
+function toggleAnswer(num) { document.getElementById("ans-" + num).classList.toggle("visible"); }
+function showAll() { document.querySelectorAll(".answer-row").forEach(r => r.classList.add("visible")); }
+function hideAll() { document.querySelectorAll(".answer-row").forEach(r => r.classList.remove("visible")); }
+function clearAll() { document.querySelectorAll("input.parse-field").forEach(i => i.value = ""); }
+
+buildTable();
+</script>
+
