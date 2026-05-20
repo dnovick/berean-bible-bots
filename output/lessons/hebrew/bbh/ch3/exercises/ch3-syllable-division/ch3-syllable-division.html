@@ -41,6 +41,13 @@
 </style>
 </head>
 <body>
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch3-syllable-division.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch3-syllable-division.pdf">&#128209; PDF</a>
+</div>
+
 
 <h1>Ch3 Syllable Division Exercise — Syllabification and Pronunciation</h1>
 <p class="subtitle">BBH Chapter 3 · 20 words</p>
@@ -76,10 +83,10 @@
   <tr>
     <td class="num">1</td>
     <td class="heb">אֱלֹהִים</td>
-    <td><input class="f" id="1-div" placeholder="e.g. אֱ-לֹ-הִים"></td>
-    <td><input class="f" id="1-typ" placeholder="O-O-C"></td>
-    <td><input class="f" id="1-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="1-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="1-div" placeholder="e.g. אֱ-לֹ-הִים"></td>
+    <td><input class="parse-field" id="1-typ" placeholder="O-O-C"></td>
+    <td><input class="parse-field" id="1-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="1-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-1">
@@ -96,10 +103,10 @@
   <tr>
     <td class="num">2</td>
     <td class="heb">בְּרֵאשִׁית</td>
-    <td><input class="f" id="2-div" placeholder="division"></td>
-    <td><input class="f" id="2-typ" placeholder="types"></td>
-    <td><input class="f" id="2-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="2-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="2-div" placeholder="division"></td>
+    <td><input class="parse-field" id="2-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="2-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="2-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-2">
@@ -116,10 +123,10 @@
   <tr>
     <td class="num">3</td>
     <td class="heb">הָאָרֶץ</td>
-    <td><input class="f" id="3-div" placeholder="division"></td>
-    <td><input class="f" id="3-typ" placeholder="types"></td>
-    <td><input class="f" id="3-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="3-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="3-div" placeholder="division"></td>
+    <td><input class="parse-field" id="3-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="3-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="3-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-3">
@@ -136,10 +143,10 @@
   <tr>
     <td class="num">4</td>
     <td class="heb">שָׁמַיִם</td>
-    <td><input class="f" id="4-div" placeholder="division"></td>
-    <td><input class="f" id="4-typ" placeholder="types"></td>
-    <td><input class="f" id="4-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="4-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="4-div" placeholder="division"></td>
+    <td><input class="parse-field" id="4-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="4-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="4-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4">
@@ -156,10 +163,10 @@
   <tr>
     <td class="num">5</td>
     <td class="heb">יְרוּשָׁלַיִם</td>
-    <td><input class="f" id="5-div" placeholder="division"></td>
-    <td><input class="f" id="5-typ" placeholder="types"></td>
-    <td><input class="f" id="5-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="5-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="5-div" placeholder="division"></td>
+    <td><input class="parse-field" id="5-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="5-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="5-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-5">
@@ -176,10 +183,10 @@
   <tr>
     <td class="num">6</td>
     <td class="heb">דָּבָר</td>
-    <td><input class="f" id="6-div" placeholder="division"></td>
-    <td><input class="f" id="6-typ" placeholder="types"></td>
-    <td><input class="f" id="6-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="6-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="6-div" placeholder="division"></td>
+    <td><input class="parse-field" id="6-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="6-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="6-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-6">
@@ -196,10 +203,10 @@
   <tr>
     <td class="num">7</td>
     <td class="heb">מֶלֶךְ</td>
-    <td><input class="f" id="7-div" placeholder="division"></td>
-    <td><input class="f" id="7-typ" placeholder="types"></td>
-    <td><input class="f" id="7-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="7-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="7-div" placeholder="division"></td>
+    <td><input class="parse-field" id="7-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="7-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="7-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-7">
@@ -216,10 +223,10 @@
   <tr>
     <td class="num">8</td>
     <td class="heb">בְּרִית</td>
-    <td><input class="f" id="8-div" placeholder="division"></td>
-    <td><input class="f" id="8-typ" placeholder="types"></td>
-    <td><input class="f" id="8-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="8-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="8-div" placeholder="division"></td>
+    <td><input class="parse-field" id="8-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="8-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="8-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8">
@@ -236,10 +243,10 @@
   <tr>
     <td class="num">9</td>
     <td class="heb">שָׁבַת</td>
-    <td><input class="f" id="9-div" placeholder="division"></td>
-    <td><input class="f" id="9-typ" placeholder="types"></td>
-    <td><input class="f" id="9-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="9-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="9-div" placeholder="division"></td>
+    <td><input class="parse-field" id="9-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="9-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="9-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-9">
@@ -256,10 +263,10 @@
   <tr>
     <td class="num">10</td>
     <td class="heb">נָבִיא</td>
-    <td><input class="f" id="10-div" placeholder="division"></td>
-    <td><input class="f" id="10-typ" placeholder="types"></td>
-    <td><input class="f" id="10-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="10-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="10-div" placeholder="division"></td>
+    <td><input class="parse-field" id="10-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="10-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="10-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10">
@@ -276,10 +283,10 @@
   <tr>
     <td class="num">11</td>
     <td class="heb">אֲדֹנָי</td>
-    <td><input class="f" id="11-div" placeholder="division"></td>
-    <td><input class="f" id="11-typ" placeholder="types"></td>
-    <td><input class="f" id="11-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="11-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="11-div" placeholder="division"></td>
+    <td><input class="parse-field" id="11-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="11-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="11-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-11">
@@ -296,10 +303,10 @@
   <tr>
     <td class="num">12</td>
     <td class="heb">יִשְׂרָאֵל</td>
-    <td><input class="f" id="12-div" placeholder="division"></td>
-    <td><input class="f" id="12-typ" placeholder="types"></td>
-    <td><input class="f" id="12-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="12-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="12-div" placeholder="division"></td>
+    <td><input class="parse-field" id="12-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="12-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="12-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-12">
@@ -316,10 +323,10 @@
   <tr>
     <td class="num">13</td>
     <td class="heb">כֹּהֵן</td>
-    <td><input class="f" id="13-div" placeholder="division"></td>
-    <td><input class="f" id="13-typ" placeholder="types"></td>
-    <td><input class="f" id="13-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="13-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="13-div" placeholder="division"></td>
+    <td><input class="parse-field" id="13-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="13-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="13-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-13">
@@ -336,10 +343,10 @@
   <tr>
     <td class="num">14</td>
     <td class="heb">מִשְׁפָּט</td>
-    <td><input class="f" id="14-div" placeholder="division"></td>
-    <td><input class="f" id="14-typ" placeholder="types"></td>
-    <td><input class="f" id="14-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="14-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="14-div" placeholder="division"></td>
+    <td><input class="parse-field" id="14-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="14-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="14-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-14">
@@ -356,10 +363,10 @@
   <tr>
     <td class="num">15</td>
     <td class="heb">תּוֹרָה</td>
-    <td><input class="f" id="15-div" placeholder="division"></td>
-    <td><input class="f" id="15-typ" placeholder="types"></td>
-    <td><input class="f" id="15-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="15-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="15-div" placeholder="division"></td>
+    <td><input class="parse-field" id="15-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="15-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="15-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15">
@@ -376,10 +383,10 @@
   <tr>
     <td class="num">16</td>
     <td class="heb">שָׁלוֹם</td>
-    <td><input class="f" id="16-div" placeholder="division"></td>
-    <td><input class="f" id="16-typ" placeholder="types"></td>
-    <td><input class="f" id="16-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="16-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="16-div" placeholder="division"></td>
+    <td><input class="parse-field" id="16-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="16-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="16-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-16">
@@ -396,10 +403,10 @@
   <tr>
     <td class="num">17</td>
     <td class="heb">חֶסֶד</td>
-    <td><input class="f" id="17-div" placeholder="division"></td>
-    <td><input class="f" id="17-typ" placeholder="types"></td>
-    <td><input class="f" id="17-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="17-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="17-div" placeholder="division"></td>
+    <td><input class="parse-field" id="17-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="17-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="17-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-17">
@@ -416,10 +423,10 @@
   <tr>
     <td class="num">18</td>
     <td class="heb">קֹדֶשׁ</td>
-    <td><input class="f" id="18-div" placeholder="division"></td>
-    <td><input class="f" id="18-typ" placeholder="types"></td>
-    <td><input class="f" id="18-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="18-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="18-div" placeholder="division"></td>
+    <td><input class="parse-field" id="18-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="18-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="18-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-18">
@@ -436,10 +443,10 @@
   <tr>
     <td class="num">19</td>
     <td class="heb">אֶרֶץ</td>
-    <td><input class="f" id="19-div" placeholder="division"></td>
-    <td><input class="f" id="19-typ" placeholder="types"></td>
-    <td><input class="f" id="19-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="19-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="19-div" placeholder="division"></td>
+    <td><input class="parse-field" id="19-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="19-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="19-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-19">
@@ -456,10 +463,10 @@
   <tr>
     <td class="num">20</td>
     <td class="heb">עַם</td>
-    <td><input class="f" id="20-div" placeholder="division"></td>
-    <td><input class="f" id="20-typ" placeholder="types"></td>
-    <td><input class="f" id="20-str" placeholder="stressed syl."></td>
-    <td><input class="f" id="20-qh" placeholder="QH or —"></td>
+    <td><input class="parse-field" id="20-div" placeholder="division"></td>
+    <td><input class="parse-field" id="20-typ" placeholder="types"></td>
+    <td><input class="parse-field" id="20-str" placeholder="stressed syl."></td>
+    <td><input class="parse-field" id="20-qh" placeholder="QH or —"></td>
     <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20">

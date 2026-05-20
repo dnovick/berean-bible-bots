@@ -14,7 +14,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
-  input.ans-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
   button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
@@ -26,12 +26,19 @@
   .caution { background: #fff3e0; border-left: 4px solid #e67e00; padding: .5em 1em; margin: .8em 0; font-size: .85em; }
   @media print {
     button, .controls { display: none !important; }
-    input.ans-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 </style>
 </head>
 <body>
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch34-stem-id-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch34-stem-id-drill.pdf">&#128209; PDF</a>
+</div>
+
 
 <h1>Chapter 34 — Stem Identification Drill (Strong Roots)</h1>
 <p class="subtitle">BBH Chapter 34 · Hithpael Strong Verbs</p>
@@ -72,10 +79,10 @@
   <tr>
     <td>1</td>
     <td><span class="heb">קָדַשׁ</span></td>
-    <td><input class="ans-field" id="f1a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f1b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f1c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f1d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f1a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f1b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f1c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f1d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
@@ -85,10 +92,10 @@
   <tr>
     <td>2</td>
     <td><span class="heb">קִדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f2a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f2b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f2c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f2d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f2a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f2b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f2c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f2d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
@@ -98,10 +105,10 @@
   <tr>
     <td>3</td>
     <td><span class="heb">הִתְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f3a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f3b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f3c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f3d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f3a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f3b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f3c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f3d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
@@ -111,10 +118,10 @@
   <tr>
     <td>4</td>
     <td><span class="heb">נִקְדַּשׁ</span></td>
-    <td><input class="ans-field" id="f4a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f4b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f4c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f4d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f4a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f4b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f4c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f4d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
@@ -124,10 +131,10 @@
   <tr>
     <td>5</td>
     <td><span class="heb">הִקְדִּישׁ</span></td>
-    <td><input class="ans-field" id="f5a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f5b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f5c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f5d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f5a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f5b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f5c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f5d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
@@ -137,10 +144,10 @@
   <tr>
     <td>6</td>
     <td><span class="heb">קֻדַּשׁ</span></td>
-    <td><input class="ans-field" id="f6a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f6b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f6c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f6d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f6a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f6b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f6c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f6d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
@@ -150,10 +157,10 @@
   <tr>
     <td>7</td>
     <td><span class="heb">דִּבֶּר</span></td>
-    <td><input class="ans-field" id="f7a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f7b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f7c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f7d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f7a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f7b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f7c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f7d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
@@ -163,10 +170,10 @@
   <tr>
     <td>8</td>
     <td><span class="heb">דָּבַר</span></td>
-    <td><input class="ans-field" id="f8a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f8b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f8c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f8d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f8a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f8b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f8c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f8d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
@@ -176,10 +183,10 @@
   <tr>
     <td>9</td>
     <td><span class="heb">הִתְדַּבֵּר</span></td>
-    <td><input class="ans-field" id="f9a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f9b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f9c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f9d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f9a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f9b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f9c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f9d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
@@ -189,10 +196,10 @@
   <tr>
     <td>10</td>
     <td><span class="heb">יְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f10a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f10b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f10c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f10d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f10a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f10b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f10c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f10d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
@@ -202,10 +209,10 @@
   <tr>
     <td>11</td>
     <td><span class="heb">יִקְדַּשׁ</span></td>
-    <td><input class="ans-field" id="f11a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f11b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f11c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f11d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f11a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f11b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f11c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f11d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
@@ -215,10 +222,10 @@
   <tr>
     <td>12</td>
     <td><span class="heb">יִתְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f12a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f12b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f12c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f12d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f12a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f12b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f12c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f12d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
@@ -228,10 +235,10 @@
   <tr>
     <td>13</td>
     <td><span class="heb">יִקָּדֵשׁ</span></td>
-    <td><input class="ans-field" id="f13a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f13b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f13c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f13d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f13a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f13b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f13c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f13d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
@@ -241,10 +248,10 @@
   <tr>
     <td>14</td>
     <td><span class="heb">יַקְדִּישׁ</span></td>
-    <td><input class="ans-field" id="f14a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f14b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f14c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f14d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f14a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f14b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f14c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f14d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
@@ -254,10 +261,10 @@
   <tr>
     <td>15</td>
     <td><span class="heb">יְקֻדַּשׁ</span></td>
-    <td><input class="ans-field" id="f15a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f15b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f15c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f15d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f15a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f15b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f15c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f15d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r15">
@@ -267,10 +274,10 @@
   <tr>
     <td>16</td>
     <td><span class="heb">וַיְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f16a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f16b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f16c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f16d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f16a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f16b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f16c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f16d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r16">
@@ -280,10 +287,10 @@
   <tr>
     <td>17</td>
     <td><span class="heb">וַיִּקְדַּשׁ</span></td>
-    <td><input class="ans-field" id="f17a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f17b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f17c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f17d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f17a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f17b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f17c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f17d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r17">
@@ -293,10 +300,10 @@
   <tr>
     <td>18</td>
     <td><span class="heb">וַיִּתְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f18a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f18b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f18c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f18d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f18a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f18b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f18c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f18d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r18">
@@ -306,10 +313,10 @@
   <tr>
     <td>19</td>
     <td><span class="heb">קַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f19a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f19b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f19c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f19d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f19a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f19b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f19c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f19d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r19">
@@ -319,10 +326,10 @@
   <tr>
     <td>20</td>
     <td><span class="heb">הִתְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f20a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f20b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f20c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f20d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f20a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f20b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f20c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f20d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r20">
@@ -332,10 +339,10 @@
   <tr>
     <td>21</td>
     <td><span class="heb">הִקָּדֵשׁ</span></td>
-    <td><input class="ans-field" id="f21a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f21b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f21c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f21d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f21a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f21b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f21c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f21d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r21">
@@ -345,10 +352,10 @@
   <tr>
     <td>22</td>
     <td><span class="heb">מְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f22a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f22b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f22c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f22d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f22a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f22b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f22c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f22d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r22">
@@ -358,10 +365,10 @@
   <tr>
     <td>23</td>
     <td><span class="heb">מִתְקַדֵּשׁ</span></td>
-    <td><input class="ans-field" id="f23a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f23b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f23c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f23d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f23a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f23b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f23c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f23d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r23">
@@ -371,10 +378,10 @@
   <tr>
     <td>24</td>
     <td><span class="heb">מַקְדִּישׁ</span></td>
-    <td><input class="ans-field" id="f24a" placeholder="Stem"></td>
-    <td><input class="ans-field" id="f24b" placeholder="Conjugation"></td>
-    <td><input class="ans-field" id="f24c" placeholder="PGN"></td>
-    <td><input class="ans-field" id="f24d" placeholder="Root"></td>
+    <td><input class="parse-field" id="f24a" placeholder="Stem"></td>
+    <td><input class="parse-field" id="f24b" placeholder="Conjugation"></td>
+    <td><input class="parse-field" id="f24c" placeholder="PGN"></td>
+    <td><input class="parse-field" id="f24d" placeholder="Root"></td>
     <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r24">
@@ -404,7 +411,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.ans-field').forEach(i => i.value = '');
+  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
 }
 </script>
 </body>

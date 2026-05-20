@@ -50,6 +50,13 @@
 </style>
 </head>
 <body>
+<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
+  <strong>Also available:</strong>
+  <a href="ch11-number-identification.md" style="margin-left:.5rem;">&#128196; Markdown</a>
+  <span style="margin:0 .3rem;color:#aaa;">|</span>
+  <a href="ch11-number-identification.pdf">&#128209; PDF</a>
+</div>
+
 
 <h1>Ch11 Number Identification Drill — Hebrew Numbers</h1>
 <p class="subtitle">BBH Chapter 11 · 20 items</p>
@@ -83,9 +90,9 @@
     <td class="num">1</td>
     <td class="heb">שִׁבְעָה יָמִים</td>
     <td><input class="f-heb" id="1-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="1-v" placeholder="number"></td>
-    <td><input class="f" id="1-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="1-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="1-v" placeholder="number"></td>
+    <td><input class="parse-field" id="1-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="1-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-1">
@@ -103,9 +110,9 @@
     <td class="num">2</td>
     <td class="heb">שָׁלֹשׁ נָשִׁים</td>
     <td><input class="f-heb" id="2-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="2-v" placeholder="number"></td>
-    <td><input class="f" id="2-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="2-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="2-v" placeholder="number"></td>
+    <td><input class="parse-field" id="2-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="2-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-2">
@@ -123,9 +130,9 @@
     <td class="num">3</td>
     <td class="heb">אַרְבָּעִים שָׁנָה</td>
     <td><input class="f-heb" id="3-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="3-v" placeholder="number"></td>
-    <td><input class="f" id="3-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="3-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="3-v" placeholder="number"></td>
+    <td><input class="parse-field" id="3-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="3-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-3">
@@ -143,9 +150,9 @@
     <td class="num">4</td>
     <td class="heb">שְׁנֵי אֲנָשִׁים</td>
     <td><input class="f-heb" id="4-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="4-v" placeholder="number"></td>
-    <td><input class="f" id="4-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="4-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="4-v" placeholder="number"></td>
+    <td><input class="parse-field" id="4-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="4-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4">
@@ -163,9 +170,9 @@
     <td class="num">5</td>
     <td class="heb">עֶשֶׂר עָרִים</td>
     <td><input class="f-heb" id="5-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="5-v" placeholder="number"></td>
-    <td><input class="f" id="5-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="5-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="5-v" placeholder="number"></td>
+    <td><input class="parse-field" id="5-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="5-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-5">
@@ -183,9 +190,9 @@
     <td class="num">6</td>
     <td class="heb">חֲמִשָּׁה שְׁבָטִים</td>
     <td><input class="f-heb" id="6-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="6-v" placeholder="number"></td>
-    <td><input class="f" id="6-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="6-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="6-v" placeholder="number"></td>
+    <td><input class="parse-field" id="6-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="6-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-6">
@@ -203,9 +210,9 @@
     <td class="num">7</td>
     <td class="heb">שְׁתַּיִם עֶשְׂרֵה שָׁנָה</td>
     <td><input class="f-heb" id="7-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="7-v" placeholder="number"></td>
-    <td><input class="f" id="7-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="7-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="7-v" placeholder="number"></td>
+    <td><input class="parse-field" id="7-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="7-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-7">
@@ -223,9 +230,9 @@
     <td class="num">8</td>
     <td class="heb">שִׁשָּׁה בָּנִים</td>
     <td><input class="f-heb" id="8-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="8-v" placeholder="number"></td>
-    <td><input class="f" id="8-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="8-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="8-v" placeholder="number"></td>
+    <td><input class="parse-field" id="8-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="8-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8">
@@ -259,9 +266,9 @@
     <td class="num">9</td>
     <td class="heb">שְׁלֹשִׁים אִישׁ</td>
     <td><input class="f-heb" id="9-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="9-v" placeholder="number"></td>
-    <td><input class="f" id="9-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="9-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="9-v" placeholder="number"></td>
+    <td><input class="parse-field" id="9-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="9-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-9">
@@ -279,9 +286,9 @@
     <td class="num">10</td>
     <td class="heb">תִּשְׁעָה אֲנָשִׁים</td>
     <td><input class="f-heb" id="10-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="10-v" placeholder="number"></td>
-    <td><input class="f" id="10-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="10-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="10-v" placeholder="number"></td>
+    <td><input class="parse-field" id="10-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="10-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10">
@@ -299,9 +306,9 @@
     <td class="num">11</td>
     <td class="heb">שְׁנֵים עָשָׂר שֵׁבֶט</td>
     <td><input class="f-heb" id="11-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="11-v" placeholder="number"></td>
-    <td><input class="f" id="11-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="11-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="11-v" placeholder="number"></td>
+    <td><input class="parse-field" id="11-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="11-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-11">
@@ -319,9 +326,9 @@
     <td class="num">12</td>
     <td class="heb">אַרְבַּע בָּנוֹת</td>
     <td><input class="f-heb" id="12-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="12-v" placeholder="number"></td>
-    <td><input class="f" id="12-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="12-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="12-v" placeholder="number"></td>
+    <td><input class="parse-field" id="12-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="12-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-12">
@@ -339,9 +346,9 @@
     <td class="num">13</td>
     <td class="heb">חֲמִשָּׁה עָשָׂר אִישׁ</td>
     <td><input class="f-heb" id="13-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="13-v" placeholder="number"></td>
-    <td><input class="f" id="13-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="13-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="13-v" placeholder="number"></td>
+    <td><input class="parse-field" id="13-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="13-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-13">
@@ -359,9 +366,9 @@
     <td class="num">14</td>
     <td class="heb">שִׁבְעִים זָקֵן</td>
     <td><input class="f-heb" id="14-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="14-v" placeholder="number"></td>
-    <td><input class="f" id="14-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="14-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="14-v" placeholder="number"></td>
+    <td><input class="parse-field" id="14-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="14-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-14">
@@ -379,9 +386,9 @@
     <td class="num">15</td>
     <td class="heb">שֵׁשׁ שָׁנִים</td>
     <td><input class="f-heb" id="15-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="15-v" placeholder="number"></td>
-    <td><input class="f" id="15-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="15-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="15-v" placeholder="number"></td>
+    <td><input class="parse-field" id="15-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="15-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15">
@@ -399,9 +406,9 @@
     <td class="num">16</td>
     <td class="heb">שְׁלֹשׁ עֶשְׂרֵה עִיר</td>
     <td><input class="f-heb" id="16-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="16-v" placeholder="number"></td>
-    <td><input class="f" id="16-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="16-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="16-v" placeholder="number"></td>
+    <td><input class="parse-field" id="16-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="16-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-16">
@@ -435,9 +442,9 @@
     <td class="num">17</td>
     <td class="heb">בַּיּוֹם הַשְּׁבִיעִי</td>
     <td><input class="f-heb" id="17-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="17-v" placeholder="number"></td>
-    <td><input class="f" id="17-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="17-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="17-v" placeholder="number"></td>
+    <td><input class="parse-field" id="17-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="17-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-17">
@@ -455,9 +462,9 @@
     <td class="num">18</td>
     <td class="heb">בַּחֹדֶשׁ הָרִאשׁוֹן</td>
     <td><input class="f-heb" id="18-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="18-v" placeholder="number"></td>
-    <td><input class="f" id="18-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="18-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="18-v" placeholder="number"></td>
+    <td><input class="parse-field" id="18-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="18-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-18">
@@ -475,9 +482,9 @@
     <td class="num">19</td>
     <td class="heb">הַשַּׁעַר הַשֵּׁנִי</td>
     <td><input class="f-heb" id="19-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="19-v" placeholder="number"></td>
-    <td><input class="f" id="19-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="19-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="19-v" placeholder="number"></td>
+    <td><input class="parse-field" id="19-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="19-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-19">
@@ -495,9 +502,9 @@
     <td class="num">20</td>
     <td class="heb">הַיּוֹם הָעֲשִׂירִי</td>
     <td><input class="f-heb" id="20-nw" placeholder="Hebrew number word"></td>
-    <td><input class="f" id="20-v" placeholder="number"></td>
-    <td><input class="f" id="20-gp" placeholder="yes/N/A + explanation"></td>
-    <td><input class="f" id="20-tr" placeholder="English translation"></td>
+    <td><input class="parse-field" id="20-v" placeholder="number"></td>
+    <td><input class="parse-field" id="20-gp" placeholder="yes/N/A + explanation"></td>
+    <td><input class="parse-field" id="20-tr" placeholder="English translation"></td>
     <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20">
