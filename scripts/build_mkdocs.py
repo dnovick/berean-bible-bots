@@ -364,17 +364,44 @@ NOTEBOOK_SECTIONS = [
 ]
 
 
-BINDER_BASE = (
-    "https://mybinder.org/v2/gh/dnovick/berean-bible-bots/main"
-    "?urlpath=lab/tree/"
-)
+_NOTEBOOKS_INDEX = """\
+# Notebooks
 
+Interactive analysis notebooks covering the full `bible_grammar` toolkit \
+— Hebrew OT, Greek NT, Septuagint, Peshitta, and Targumim.
 
-def _binder_badge(nb_rel: str) -> str:
-    """Return a Binder launch badge markdown string for the given notebook path."""
-    url = f"{BINDER_BASE}notebooks/{nb_rel}"
-    badge = "https://mybinder.org/badge_logo.svg"
-    return f"[![Launch in Binder]({badge})]({url})"
+Each notebook below is rendered statically with its outputs. \
+Click the **Open in Colab** badge on any notebook page to run it interactively \
+in Google Colab — no local installation required.
+
+## Running in Google Colab
+
+Click the **Open in Colab** badge at the top of any notebook page. \
+On first run, execute the **Colab setup** cell (cell 2), which will:
+
+1. Clone the repository into `/content/berean-bible-bots`
+2. Install Python dependencies from `binder/requirements.txt`
+3. Download the processed data files (~295 MB) from `bereanbiblebots.com/data/`
+
+Subsequent cells run normally once the setup cell completes \
+(~2–3 minutes on first run; data is cached for the session).
+
+## Running Locally
+
+To execute notebooks on your own machine:
+
+```bash
+git clone https://github.com/dnovick/berean-bible-bots.git
+cd berean-bible-bots
+python -m venv .venv && source .venv/bin/activate
+pip install -r binder/requirements.txt
+# Download processed data (one-time, ~295 MB)
+bash binder/postBuild
+jupyter lab
+```
+
+Then open any notebook from the `notebooks/` directory.
+"""
 
 
 def build_notebooks() -> list:
@@ -387,20 +414,7 @@ def build_notebooks() -> list:
         shutil.rmtree(nb_dst)
     nb_dst.mkdir(parents=True)
 
-    # Write index page
-    binder_url = f"{BINDER_BASE}notebooks/"
-    (nb_dst / "index.md").write_text(
-        "# Notebooks\n\n"
-        "Interactive analysis notebooks covering the full `bible_grammar` toolkit "
-        "— Hebrew OT, Greek NT, Septuagint, Peshitta, and Targumim.\n\n"
-        "Each notebook below is rendered statically with its outputs. "
-        f"To run a notebook interactively, click the **Launch in Binder** badge "
-        f"on any notebook page, or launch the full environment:\n\n"
-        f"[![Launch in Binder](https://mybinder.org/badge_logo.svg)]({binder_url})\n\n"
-        "> **Note:** Binder sessions download the processed data files (~295 MB) "
-        "at startup via `binder/postBuild`, so the first launch takes a few minutes.\n",
-        encoding="utf-8",
-    )
+    (nb_dst / "index.md").write_text(_NOTEBOOKS_INDEX, encoding="utf-8")
 
     nav_entries: list = [{"Overview": "notebooks/index.md"}]
 

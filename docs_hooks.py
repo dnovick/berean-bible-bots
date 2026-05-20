@@ -1,4 +1,4 @@
-"""MkDocs hooks — Binder badges and SEO meta tags."""
+"""MkDocs hooks — Colab badges and SEO meta tags."""
 
 from __future__ import annotations
 
@@ -9,6 +9,17 @@ SITE_DESC = (
     "of Biblical Hebrew, Aramaic, and Greek."
 )
 OG_IMAGE = f"{SITE_URL}/assets/logo.png"
+
+GITHUB_REPO = "dnovick/berean-bible-bots"
+COLAB_BASE = f"https://colab.research.google.com/github/{GITHUB_REPO}/blob/main/"
+COLAB_BADGE_IMG = "https://colab.research.google.com/assets/colab-badge.svg"
+
+_COLAB_BADGE_HTML = (
+    '<p style="margin-bottom:1rem;">'
+    '<a href="{url}" target="_blank" rel="noopener">'
+    '<img src="' + COLAB_BADGE_IMG + '" alt="Open in Colab">'
+    "</a></p>\n"
+)
 
 _OG_TAGS = """\
   <meta property="og:type" content="website">
@@ -82,6 +93,20 @@ def on_post_page(output: str, page: object, **kwargs: object) -> str:
     )
 
     return output.replace("</head>", og + "</head>", 1)
+
+
+def on_page_content(html: str, page: object, **kwargs: object) -> str:
+    """Prepend a Colab launch badge to every notebook page."""
+    src = getattr(page, "file", None)
+    if src is None:
+        return html
+    path = str(src.src_uri)
+    if not path.startswith("notebooks/") or not path.endswith(".ipynb"):
+        return html
+
+    colab_url = f"{COLAB_BASE}{path}"
+    badge = _COLAB_BADGE_HTML.format(url=colab_url)
+    return badge + html
 
 
 def on_post_build(config: object, **kwargs: object) -> None:

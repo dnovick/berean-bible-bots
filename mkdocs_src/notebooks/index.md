@@ -2,7 +2,17 @@
 
 Interactive analysis notebooks covering the full `bible_grammar` toolkit — Hebrew OT, Greek NT, Septuagint, Peshitta, and Targumim.
 
-Each notebook below is rendered statically with its outputs. To run a notebook interactively, see [Running Notebooks Locally](#running-locally).
+Each notebook below is rendered statically with its outputs. Click the **Open in Colab** badge on any notebook page to run it interactively in Google Colab — no local installation required.
+
+## Running in Google Colab
+
+Click the **Open in Colab** badge at the top of any notebook page. On first run, execute the **Colab setup** cell (cell 2), which will:
+
+1. Clone the repository into `/content/berean-bible-bots`
+2. Install Python dependencies from `binder/requirements.txt`
+3. Download the processed data files (~295 MB) from `bereanbiblebots.com/data/`
+
+Subsequent cells run normally once the setup cell completes (~2–3 minutes on first run; data is cached for the session).
 
 ## Running Locally
 
