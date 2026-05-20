@@ -10,12 +10,21 @@
     text-align: center;
     padding: 4rem 1.5rem 3.5rem;
   }
-  .hero img {
+  .hero a.logo-link {
+    display: inline-block;
+    margin-bottom: 1.2rem;
+    line-height: 0;
+  }
+  .hero a.logo-link img {
     width: 90px;
     height: auto;
     border-radius: 50%;
     border: 3px solid var(--md-accent-fg-color);
-    margin-bottom: 1.2rem;
+    transition: opacity .15s, transform .15s;
+  }
+  .hero a.logo-link:hover img {
+    opacity: .85;
+    transform: scale(1.05);
   }
   .hero h1 {
     font-size: 2.2rem;
@@ -176,7 +185,7 @@
 </style>
 
 <div class="hero">
-  <img src="assets/logo.png" alt="Berean Bible Bots" />
+  <a href="about-the-logo/" class="logo-link" title="About the Logo"><img src="assets/logo.png" alt="Berean Bible Bots" /></a>
   <h1>Berean Bible Bots</h1>
   <p>Free exercises, flashcard decks, and reference materials for students of Biblical Hebrew, Aramaic, and Greek.</p>
   <div class="hero-verse">
