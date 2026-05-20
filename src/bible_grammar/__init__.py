@@ -249,10 +249,13 @@ from .nt.nt_participles import (
 from .nt.nt_discourse import (
     nt_particle_frequency, nt_particle_by_book, nt_particle_genre_profile,
     nt_hina_profile, nt_hoti_profile,
+    nt_kai_profile, nt_kai_by_book, nt_kai_instances,
     print_nt_particle_overview, print_nt_particle_frequency,
     print_nt_particle_genre_profile, print_nt_hina_profile, print_nt_hoti_profile,
+    print_nt_kai_profile,
     nt_particle_frequency_chart, nt_particle_genre_heatmap, nt_particle_book_chart,
-    PARTICLE_REGISTRY,
+    nt_kai_function_chart, nt_kai_book_heatmap,
+    PARTICLE_REGISTRY, KAI_FUNCTIONS,
 )
 from .nt.nt_noun_profile import (
     nt_noun_data, nt_noun_case_profile, nt_noun_gender_profile, nt_noun_number_profile,

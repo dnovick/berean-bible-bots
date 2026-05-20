@@ -13,16 +13,23 @@ nt_particle_genre_profile()              → DataFrame (particle % by genre grou
 nt_particle_function(particle, book=None)→ DataFrame (function classification)
 nt_hina_profile(book=None)               → DataFrame (ἵνα clause type counts)
 nt_hoti_profile(book=None)               → DataFrame (ὅτι function counts)
+nt_kai_profile(book=None)                → DataFrame (καί semantic function counts)
+nt_kai_by_book()                         → DataFrame (καί function counts per NT book)
+nt_kai_instances(function=None,          → DataFrame (individual καί tokens with context)
+                 book=None)
 
 print_nt_particle_overview()             → None
 print_nt_particle_frequency(book=None)   → None
 print_nt_particle_genre_profile()        → None
 print_nt_hina_profile(book=None)         → None
 print_nt_hoti_profile(book=None)         → None
+print_nt_kai_profile(book=None)          → None
 
 nt_particle_frequency_chart(book=None)   → Path | None
 nt_particle_genre_heatmap()              → Path | None
 nt_particle_book_chart(particle)         → Path | None
+nt_kai_function_chart(book=None)         → Path | None
+nt_kai_book_heatmap()                    → Path | None
 """
 
 from __future__ import annotations
@@ -248,6 +255,172 @@ def nt_hoti_profile(book: str | None = None) -> pd.DataFrame:
     return counts.sort_values('count', ascending=False).reset_index(drop=True)
 
 
+# ── καί semantic function classification ─────────────────────────────────────
+
+# Maps lower-cased MACULA gloss → canonical semantic function.
+# The gloss reflects individual translators' contextual judgments on each token,
+# providing a high-quality signal for function disambiguation.
+_KAI_GLOSS_MAP: dict[str, str] = {
+    # additive — plain coordination of clauses, phrases, or words
+    'and':          'additive',
+    'and [one]':    'additive',
+    'and [the]':    'additive',
+    'and [as]':     'additive',
+    'and [you say]': 'additive',
+    'and [some]':   'additive',
+    'and [to]':     'additive',
+    'and [that]':   'additive',
+    'and [having]': 'additive',
+    'and [itself]': 'additive',
+    'with':         'additive',
+    'including':    'additive',
+    'or':           'additive',
+    # temporal — sequential events ("and then")
+    'then':         'temporal',
+    'and then':     'temporal',
+    # ascensive — "even", "indeed", raises the stakes
+    'even':         'ascensive',
+    'also even':    'ascensive',
+    'for even':     'ascensive',
+    'and even':     'ascensive',
+    'indeed':       'ascensive',
+    'truly':        'ascensive',
+    # adjunctive — "also", adds a parallel element
+    'also':         'adjunctive',
+    'and also':     'adjunctive',
+    'also [is]':    'adjunctive',
+    'also [are]':   'adjunctive',
+    'also [does]':  'adjunctive',
+    'also [did]':   'adjunctive',
+    'also [have]':  'adjunctive',
+    'also [had been]': 'adjunctive',
+    'also [called]': 'adjunctive',
+    'also [some]':  'adjunctive',
+    '[so] also':    'adjunctive',
+    'as well':      'adjunctive',
+    'again':        'adjunctive',
+    # correlative — "both … and"
+    'both':         'correlative',
+    'both [the]':   'correlative',
+    # adversative — "but", "yet", "although"
+    'but':          'adversative',
+    'yet':          'adversative',
+    'and yet':      'adversative',
+    'although':     'adversative',
+    'however':      'adversative',
+    # explicative — "that" (introducing content clauses)
+    'that':         'explicative',
+    # other / uncertain
+    'for':          'other',
+    'only':         'other',
+    'other':        'other',
+    'nor':          'other',
+    'does observe': 'other',
+}
+
+KAI_FUNCTIONS: dict[str, str] = {
+    'additive':    'additive — coordinates clauses, phrases, or words (most common)',
+    'adjunctive':  'adjunctive — "also"; adds a parallel or supplementary element',
+    'temporal':    'temporal — "then"; indicates sequence in narrative',
+    'ascensive':   'ascensive — "even / indeed"; intensifies or raises the rhetorical register',
+    'correlative': 'correlative — "both … and"; pairs two elements symmetrically',
+    'adversative': 'adversative — "but / yet / although"; marks contrast or concession',
+    'explicative': 'explicative — "that"; introduces a content clause',
+    'other':       'other — miscellaneous / context-dependent uses',
+}
+
+
+def _classify_kai(gloss: str) -> str:
+    """Map a raw MACULA gloss to a καί semantic function label."""
+    key = gloss.strip().lower()
+    return _KAI_GLOSS_MAP.get(key, 'additive')
+
+
+def nt_kai_profile(book: str | None = None) -> pd.DataFrame:
+    """Semantic function profile for καί (G2532).
+
+    Classifies each token using the MACULA translator gloss, which captures
+    contextual usage (additive, adjunctive, temporal, ascensive, correlative,
+    adversative, explicative, other).
+
+    Returns columns: function, count, pct, description.
+    """
+    df = load_syntax()
+    if book:
+        df = df[df['book'] == book]
+    kai = df[df['strong'] == '2532'].copy()
+    kai['function'] = kai['gloss'].fillna('and').apply(_classify_kai)
+
+    counts = kai['function'].value_counts().reset_index()
+    counts.columns = ['function', 'count']
+    total = counts['count'].sum()
+    counts['pct'] = (counts['count'] / total * 100).round(1)
+    counts['description'] = counts['function'].map(KAI_FUNCTIONS).fillna('')
+    return counts.sort_values('count', ascending=False).reset_index(drop=True)
+
+
+def nt_kai_by_book() -> pd.DataFrame:
+    """καί semantic function counts per NT book.
+
+    Returns a crosstab: rows = NT books (canonical order),
+    columns = semantic function labels.
+    """
+    df = load_syntax()
+    kai = df[df['strong'] == '2532'].copy()
+    kai['function'] = kai['gloss'].fillna('and').apply(_classify_kai)
+
+    ct = pd.crosstab(kai['book'], kai['function'])
+    order_map = {b: i for i, b in enumerate(NT_BOOK_ORDER)}
+    ct['_ord'] = [order_map.get(b, 99) for b in ct.index]
+    ct = ct.sort_values('_ord').drop(columns='_ord')
+    func_order = [f for f in KAI_FUNCTIONS if f in ct.columns]
+    ct = ct[[f for f in func_order if f in ct.columns]]
+    return ct
+
+
+def nt_kai_instances(
+    function: str | None = None,
+    book: str | None = None,
+) -> pd.DataFrame:
+    """Individual καί tokens with reference and context.
+
+    Parameters
+    ----------
+    function : str | None
+        One of the KAI_FUNCTIONS keys (e.g. 'ascensive'). If None, returns all.
+    book : str | None
+        NT book name (e.g. 'Rom'). If None, returns all books.
+
+    Returns columns: ref, function, text, gloss, prev_word, next_word.
+    """
+    df = load_syntax()
+    if book:
+        df = df[df['book'] == book]
+    kai = df[df['strong'] == '2532'].copy()
+    kai['function'] = kai['gloss'].fillna('and').apply(_classify_kai)
+
+    if function:
+        kai = kai[kai['function'] == function]
+
+    # Build ref and fetch immediate neighbours
+    kai['ref'] = kai['book'] + ' ' + kai['chapter'].astype(str) + ':' + kai['verse'].astype(str)
+
+    # Lookup prev/next word text efficiently via shifted index within each verse
+    df_indexed = df.set_index(['book', 'chapter', 'verse', 'word_num'])
+
+    def _neighbour(row: pd.Series, offset: int) -> str:
+        try:
+            return str(df_indexed.loc[(row['book'], row['chapter'],
+                                       row['verse'], row['word_num'] + offset), 'text'])
+        except KeyError:
+            return ''
+
+    kai['prev_word'] = kai.apply(lambda r: _neighbour(r, -1), axis=1)
+    kai['next_word'] = kai.apply(lambda r: _neighbour(r, 1), axis=1)
+
+    return kai[['ref', 'function', 'text', 'gloss', 'prev_word', 'next_word']].reset_index(drop=True)
+
+
 # ── Print functions ───────────────────────────────────────────────────────────
 
 def print_nt_particle_overview() -> None:
@@ -350,6 +523,22 @@ def print_nt_hoti_profile(book: str | None = None) -> None:
     print()
 
 
+def print_nt_kai_profile(book: str | None = None) -> None:
+    """Print καί semantic function classification."""
+    df = nt_kai_profile(book)
+    scope = book or 'Whole GNT'
+    total = df['count'].sum()
+    print()
+    print('═' * 80)
+    print(f"  καί semantic function classification — {scope}  (total: {total:,})")
+    print('─' * 80)
+    for _, row in df.iterrows():
+        bar = '█' * int(row['pct'] / 2)
+        print(f"  {row['function']:<14} {row['count']:>6,}  {row['pct']:>5.1f}%  {bar}")
+        print(f"    {row['description']}")
+    print()
+
+
 # ── Chart functions ───────────────────────────────────────────────────────────
 
 def nt_particle_frequency_chart(book: str | None = None) -> Path | None:
@@ -441,6 +630,73 @@ def nt_particle_book_chart(particle_display: str = 'δέ') -> Path | None:
 
     safe = particle_display.replace('ά', 'a').replace('ή', 'h').replace('ό', 'o')
     out = _ensure_chart_dir() / f'nt_particle_{safe}_books.png'
+    fig.savefig(out, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    return out
+
+
+def nt_kai_function_chart(book: str | None = None) -> Path | None:
+    """Horizontal bar chart of καί semantic function distribution."""
+    try:
+        import matplotlib.pyplot as plt
+    except ImportError:
+        return None
+
+    df = nt_kai_profile(book)
+    df = df[df['count'] > 0].sort_values('count')
+    scope = book or 'Whole GNT'
+
+    fig, ax = plt.subplots(figsize=(9, 5))
+    n = max(len(df) - 1, 1)
+    colors = plt.cm.Blues([0.35 + 0.5 * i / n for i in range(len(df))])  # type: ignore[attr-defined]
+    bars = ax.barh(df['function'], df['count'], color=colors)
+    for bar, val, pct in zip(bars, df['count'], df['pct']):
+        ax.text(bar.get_width() + 10, bar.get_y() + bar.get_height() / 2,
+                f"{val:,}  ({pct}%)", va='center', fontsize=9)
+    ax.set_title(f"καί Semantic Function Distribution — {scope}", fontsize=13, fontweight='bold')
+    ax.set_xlabel("Token count")
+    ax.xaxis.grid(True, linestyle='--', alpha=0.5)
+    ax.set_axisbelow(True)
+    fig.tight_layout()
+
+    out = _ensure_chart_dir() / f'nt_kai_functions{"_" + book if book else ""}.png'
+    fig.savefig(out, dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    return out
+
+
+def nt_kai_book_heatmap() -> Path | None:
+    """Heatmap of καί function % per NT book."""
+    try:
+        import matplotlib.pyplot as plt
+    except ImportError:
+        return None
+
+    ct = nt_kai_by_book()
+    if ct.empty:
+        return None
+
+    totals = ct.sum(axis=1).replace(0, 1)
+    pct = ct.div(totals, axis=0) * 100
+
+    data = pct.values.astype(float)
+    fig, ax = plt.subplots(figsize=(14, 8))
+    im = ax.imshow(data, cmap='Blues', aspect='auto', vmin=0)
+    ax.set_xticks(range(len(pct.columns)))
+    ax.set_xticklabels(pct.columns.tolist(), fontsize=11, rotation=20, ha='right')
+    ax.set_yticks(range(len(pct.index)))
+    ax.set_yticklabels(pct.index.tolist(), fontsize=9)
+    for i in range(data.shape[0]):
+        for j in range(data.shape[1]):
+            val = data[i, j]
+            if val > 0.5:
+                ax.text(j, i, f"{val:.1f}", ha='center', va='center',
+                        fontsize=7, color='white' if val > data.max() * 0.6 else 'black')
+    plt.colorbar(im, ax=ax, label='% of book καί tokens')
+    ax.set_title("καί Semantic Function Distribution by NT Book", fontsize=13, fontweight='bold')
+    fig.tight_layout()
+
+    out = _ensure_chart_dir() / 'nt_kai_book_heatmap.png'
     fig.savefig(out, dpi=150, bbox_inches='tight')
     plt.close(fig)
     return out
