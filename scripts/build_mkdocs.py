@@ -380,8 +380,9 @@ Click the **Open in Colab** badge on any notebook page to run it interactively \
 in Google Colab — no local installation required.
 
 !!! tip "New to Jupyter or this project?"
-    Start with the [**Getting Started**](tutorial/getting_started.ipynb) notebook — it walks\
- through running cells, filtering the dataset, and generating charts, no prior Python experience needed.
+    Start with the [**Getting Started**](tutorial/getting_started.ipynb) notebook —
+    it walks through running cells, filtering the dataset, and generating charts,
+    no prior Python experience needed.
 
 ## Running in Google Colab
 
