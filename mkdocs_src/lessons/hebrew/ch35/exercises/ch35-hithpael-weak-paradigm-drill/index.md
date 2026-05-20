@@ -36,13 +36,6 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch35-hithpael-weak-paradigm-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch35-hithpael-weak-paradigm-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Ch35 Hithpael Weak Paradigm Drill</h1>
 <p class="subtitle">Root: גלה (Part A) / צדק (Part B) &nbsp;|&nbsp; Stem: Hithpael</p>
 <div class="instructions">Write the Hithpael Weak forms. Part A uses גלה (III-ה). Part B shows the metathesis rule: when R1 = ז, צ, שׁ, or שׂ, the הִתְ prefix undergoes metathesis (הִצְטַדֵּק).</div>

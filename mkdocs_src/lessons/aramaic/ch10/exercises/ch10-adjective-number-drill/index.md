@@ -27,13 +27,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch10-adjective-number-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch10-adjective-number-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>BBA Chapter 10 — Adjective and Number Drill</h1>
 <p class="instructions"><strong>Instructions:</strong> For each form, identify whether it is an adjective or number, give the state/value and gender/number, and translate.</p>
 

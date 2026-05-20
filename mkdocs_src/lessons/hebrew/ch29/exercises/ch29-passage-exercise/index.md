@@ -41,14 +41,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch29-passage-exercise.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch29-passage-exercise.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Chapter 29 — "Spot the Hophal Weak" Passage Exercise</h1>
 <p><strong>Stem:</strong> Hophal (הֻפְעַל) — Weak Verbs &nbsp;|&nbsp; <strong>Passages:</strong> Gen 39–43 (Joseph) · Exo 40 + Num 9 (Tabernacle) · Gen 38 + 43 (Second Egypt journey)</p>
 

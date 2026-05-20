@@ -34,13 +34,6 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch19-passage-exercise.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch19-passage-exercise.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Chapter 19 — Pronominal Suffixes on Verbs Passage Exercise</h1>
 <p><em>For each highlighted form: (a) Base conjugation and root, (b) Suffix PGN, (c) Suffix role (Object or Subject on Inf.Const.), (d) Full gloss. Click <strong>▶ Answer</strong> to reveal.</em></p>
 

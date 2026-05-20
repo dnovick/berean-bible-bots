@@ -28,13 +28,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch1-letter-recognition.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch1-letter-recognition.pdf">&#128209; PDF</a>
-</div>
-
 <h1>BBA Chapter 1 — Aramaic Letter Recognition</h1>
 <p class="instructions"><strong>Instructions:</strong> For each Aramaic letter, provide: (1) Letter Name, (2) Transliteration, (3) Sound, (4) Special Category (Guttural / Emphatic / Bgdkpt / Normal), (5) Corresponding Hebrew letter.</p>
 

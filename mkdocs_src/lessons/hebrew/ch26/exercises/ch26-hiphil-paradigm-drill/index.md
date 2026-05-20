@@ -34,13 +34,6 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch26-hiphil-paradigm-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch26-hiphil-paradigm-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Ch26 Hiphil Paradigm Drill</h1>
 <p class="subtitle">Root: קטל &nbsp;|&nbsp; Stem: Hiphil</p>
 <div class="instructions">Write the complete Hiphil paradigm for the root קטל. Work conjugation by conjugation from memory.</div>

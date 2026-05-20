@@ -35,13 +35,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch28-participle-tense-contrast.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch28-participle-tense-contrast.pdf">&#128209; PDF</a>
-</div>
-
 <h1>BBG Chapter 28 — Present vs. Aorist Adverbial Participle Contrast</h1>
 <p class="subtitle"><em>BBG Chapter 28 · Contemporaneous vs. Antecedent Action</em></p>
 

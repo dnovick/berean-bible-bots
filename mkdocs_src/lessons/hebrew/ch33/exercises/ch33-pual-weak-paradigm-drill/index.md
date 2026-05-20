@@ -35,13 +35,6 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch33-pual-weak-paradigm-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch33-pual-weak-paradigm-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Ch33 Pual Weak Paradigm Drill</h1>
 <p class="subtitle">Root: בנה (Part A) / שאל (Part B) &nbsp;|&nbsp; Stem: Pual</p>
 <div class="instructions">Write the Pual Weak forms. Part A uses בנה (III-ה). Part B uses שאל (strong Pual for comparison).</div>

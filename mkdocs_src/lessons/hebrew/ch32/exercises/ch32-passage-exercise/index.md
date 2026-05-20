@@ -41,14 +41,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch32-passage-exercise.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch32-passage-exercise.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Chapter 32 — "Spot the Pual" Passage Exercise</h1>
 <p><strong>Stem:</strong> Pual (פֻּעַל) — Strong Verbs &nbsp;|&nbsp; <strong>Passages:</strong> Num 22:6, 12; 23:8, 20 · Exo 29:36–37 · Exo 14:4 / Isa 43:23</p>
 

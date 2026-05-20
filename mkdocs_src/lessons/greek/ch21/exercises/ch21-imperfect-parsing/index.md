@@ -43,13 +43,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch21-imperfect-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch21-imperfect-parsing.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Ch21 — Imperfect Parsing Drill</h1>
 <p class="subtitle">BBG Chapter 21 · Mounce 4th Edition — Parse each form: Tense · Voice · Mood · Person · Number · Augment Type · Lexical Form · Translation</p>
 

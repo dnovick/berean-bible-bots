@@ -49,14 +49,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch6-preposition-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch6-preposition-parsing.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Ch6 Preposition Parsing Drill — Hebrew Prepositions</h1>
 <p class="subtitle">BBH Chapter 6 · 25 prepositional phrases</p>
 

@@ -34,14 +34,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch32-stem-id-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch32-stem-id-drill.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Chapter 32 — Stem-ID Drill (Strong Roots)</h1>
 <p class="subtitle">BBH Chapter 32 · Pual Strong Verbs</p>
 

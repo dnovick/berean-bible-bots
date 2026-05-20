@@ -37,14 +37,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch24-function-sort.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch24-function-sort.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Chapter 24 — Semantic Function Sorting</h1>
 <p class="subtitle">BBH Chapter 24 · Niphal Strong Verbs</p>
 

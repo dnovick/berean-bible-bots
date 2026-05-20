@@ -32,13 +32,6 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch19-parsing-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch19-parsing-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Chapter 19 — Pronominal Suffixes on Verbs Parsing Drill</h1>
 <p><em>For each form: (a) Base conjugation, (b) Base PGN, (c) Root, (d) Suffix PGN, (e) Full gloss. Click <strong>▶ Answer</strong> to reveal.</em></p>
 

@@ -36,14 +36,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch16-passage-exercise.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch16-passage-exercise.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Ch16 Passage Exercise — Qal Imperfect Weak Verbs</h1>
 <p class="subtitle">BBH Chapter 16 · Genesis 1, 3–4 · Exodus 9, 20 · Isaiah 55 · 1 Kings 21</p>
 

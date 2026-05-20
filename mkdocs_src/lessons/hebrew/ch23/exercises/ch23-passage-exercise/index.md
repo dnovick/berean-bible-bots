@@ -38,14 +38,6 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch23-passage-exercise.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch23-passage-exercise.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Ch23 — "Reading the Clause" Passage Exercise</h1>
 <p class="desc">For each highlighted clause: (a) identify the clause type, (b) identify any fronted element and its rhetorical function, (c) state the verb and its conjugation (if any), (d) supply the English gloss.</p>
 

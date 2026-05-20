@@ -35,13 +35,6 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch31-piel-weak-paradigm-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch31-piel-weak-paradigm-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Ch31 Piel Weak Paradigm Drill</h1>
 <p class="subtitle">Root: גלה (III-ה) &nbsp;|&nbsp; Stem: Piel</p>
 <div class="instructions">Write the Piel Weak paradigm for גלה (III-ה). Note: the final ה in the 3ms perfect is retained; it drops before vowel suffixes.</div>

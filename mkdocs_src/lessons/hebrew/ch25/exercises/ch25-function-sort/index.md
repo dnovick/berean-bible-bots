@@ -32,14 +32,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch25-function-sort.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch25-function-sort.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Chapter 25 — Function Sort (Weak Roots)</h1>
 <p class="subtitle">BBH Chapter 25 · Niphal Weak Verbs</p>
 

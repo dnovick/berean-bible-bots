@@ -29,13 +29,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch34-didomi-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch34-didomi-parsing.pdf">&#128209; PDF</a>
-</div>
-
 <h1>BBG Chapter 34 — δίδωμι Indicative Parsing</h1>
 <p class="subtitle"><em>Basics of Biblical Greek Grammar, Mounce, 4th Edition</em></p>
 <div class="instructions">

@@ -36,12 +36,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-<strong>Also available:</strong>
-<a href="ch15-parsing-drill.md" style="margin-left:.5rem;">📄 Markdown</a>
-<span style="margin:0 .3rem;color:#aaa;">|</span>
-<a href="ch15-parsing-drill.pdf">📑 PDF</a>
-</div>
 <h1>Ch15 Parsing Drill — Qal Imperfect Strong Verbs</h1>
 <p class="subtitle">BBH Chapter 15 · 25 forms</p>
 <div class="instructions">

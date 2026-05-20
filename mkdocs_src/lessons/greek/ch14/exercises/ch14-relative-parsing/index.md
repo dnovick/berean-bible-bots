@@ -44,14 +44,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch14-relative-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch14-relative-parsing.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>BBG Chapter 14 — Relative Pronoun Parsing Drill</h1>
 <p class="instructions">For each item: (1) parse the relative pronoun (gender, case, number), (2) identify its antecedent, and (3) translate the phrase. Click ▶ Answer to check your work.</p>
 

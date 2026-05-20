@@ -45,13 +45,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch23-first-aorist-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch23-first-aorist-parsing.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Ch23 — First Aorist Parsing Drill</h1>
 <p class="subtitle">BBG Chapter 23 · Mounce 4th Edition — Parse each form: Tense · Voice · Mood · Person · Number · Lexical Form · Translation</p>
 <div class="note">&#9888; Items 11 and 20 are <strong>second aorist distractors</strong> — identify them by the absence of σ and/or a different stem.</div>

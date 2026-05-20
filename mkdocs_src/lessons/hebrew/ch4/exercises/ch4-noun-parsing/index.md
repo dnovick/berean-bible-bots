@@ -43,12 +43,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-<strong>Also available:</strong>
-<a href="ch4-noun-parsing.md" style="margin-left:.5rem;">📄 Markdown</a>
-<span style="margin:0 .3rem;color:#aaa;">|</span>
-<a href="ch4-noun-parsing.pdf">📑 PDF</a>
-</div>
 <h1>Ch4 Noun Parsing Drill — Hebrew Nouns</h1>
 <p class="subtitle">BBH Chapter 4 · Hebrew Nouns · 25 forms</p>
 <div class="instructions">

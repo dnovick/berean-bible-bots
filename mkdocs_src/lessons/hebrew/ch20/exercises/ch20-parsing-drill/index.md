@@ -33,13 +33,6 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch20-parsing-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch20-parsing-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Chapter 20 — Qal Infinitive Construct Parsing Drill</h1>
 <p><em>For each form: (a) Identify as IC or another form (Imperative / Imperfect / Perfect), (b) Root, (c) Root class, (d) Preposition (if any), (e) Function (Purpose / Temporal-when / Temporal-as / Complementary / Quotative / Until / From). Click <strong>▶ Answer</strong> to reveal; click again to hide.</em></p>
 

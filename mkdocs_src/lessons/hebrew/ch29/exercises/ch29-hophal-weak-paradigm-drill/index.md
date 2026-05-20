@@ -36,13 +36,6 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch29-hophal-weak-paradigm-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch29-hophal-weak-paradigm-drill.pdf">&#128209; PDF</a>
-</div>
-
 <h1>Ch29 Hophal Weak Paradigm Drill</h1>
 <p class="subtitle">Root: נגד (Part A) / בוא (Part B) &nbsp;|&nbsp; Stem: Hophal</p>
 <div class="instructions">Write the Hophal Weak forms. Part A uses נגד (I-נ, qibbuts pattern). Part B uses בוא (biconsonantal, shureq pattern). Note how qibbuts vs. shureq marks strong vs. weak forms.</div>

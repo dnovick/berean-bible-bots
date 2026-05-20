@@ -33,14 +33,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch35-stem-id-drill.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch35-stem-id-drill.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Chapter 35 — Stem Identification Drill (Weak Roots)</h1>
 <p class="subtitle">BBH Chapter 35 · Hithpael Weak Verbs</p>
 

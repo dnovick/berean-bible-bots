@@ -31,14 +31,6 @@
 
 </style>
 
-<div class="download-links" style="margin:1rem 0 .5rem;font-size:.85rem;">
-  <strong>Also available:</strong>
-  <a href="ch11-pronoun-parsing.md" style="margin-left:.5rem;">&#128196; Markdown</a>
-  <span style="margin:0 .3rem;color:#aaa;">|</span>
-  <a href="ch11-pronoun-parsing.pdf">&#128209; PDF</a>
-</div>
-
-
 <h1>Chapter 11 — Personal Pronoun Parsing Drill</h1>
 <p class="subtitle">BBG Chapter 11 · First and Second Person Personal Pronouns</p>
 
