@@ -51,6 +51,8 @@ from .bbh import (
     build_ch26_stem_id_drill,
     build_ch27_exercise,
     build_ch27_weak_form_id_exercise,
+    build_ch27_nh_contrast_exercise,
+    build_ch27_bg_drill_exercise,
     build_ch27_contrast_exercise,
     build_ch27_function_sort_exercise,
     build_ch27_stem_id_drill,
@@ -251,6 +253,10 @@ p8 = build_ch27_exercise()
 print(f'Saved: {p8}')
 p9 = build_ch27_weak_form_id_exercise()
 print(f'Saved: {p9}')
+p9a1 = build_ch27_nh_contrast_exercise()
+print(f'Saved: {p9a1}')
+p9a2 = build_ch27_bg_drill_exercise()
+print(f'Saved: {p9a2}')
 p9b = build_ch27_contrast_exercise()
 print(f'Saved: {p9b}')
 p9c = build_ch27_function_sort_exercise()
