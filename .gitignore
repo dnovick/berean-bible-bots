@@ -10,9 +10,13 @@ __pycache__/
 
 # Jupyter
 .ipynb_checkpoints/
+.cache/
 
 # macOS
 .DS_Store
+
+# Claude Code agent worktrees
+.claude/worktrees/
 
 # Output — exports are regenerated; charts are committed alongside reports
 output/exports/

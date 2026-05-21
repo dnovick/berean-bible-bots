@@ -289,14 +289,14 @@ class ExercisePDF:
         self._check_space(1.0 * inch)
         c = self._canvas
         w = self._usable_w()
-        h = self._wrapped_height(text, 'Helvetica', self.BODY_SIZE, w - 0.2 * inch) + 0.2 * inch
+        h = self._wrapped_height(text, _mixed_font(), self.BODY_SIZE, w - 0.2 * inch) + 0.2 * inch
         # box
         c.setFillColor(HexColor('#f8f8f0'))
         c.setStrokeColor(HexColor('#bbbbbb'))
         c.setLineWidth(0.5)
         c.rect(self.MARGIN_L, self._y - h, w, h, fill=1, stroke=1)
         self._y -= 0.1 * inch
-        self._y = self._draw_wrapped(text, 'Helvetica', self.BODY_SIZE,
+        self._y = self._draw_wrapped(text, _mixed_font(), self.BODY_SIZE,
                                      self.MARGIN_L + 0.1 * inch, self._y,
                                      w - 0.2 * inch)
         self._y -= 0.15 * inch
@@ -397,7 +397,7 @@ class ExercisePDF:
                                       self.ENG_SIZE, w) + 2
         wo_h  = 0
         if block.watchout:
-            wo_h = self._wrapped_height(block.watchout, 'Helvetica',
+            wo_h = self._wrapped_height(block.watchout, _mixed_font(),
                                          self.SUBH_SIZE, w - 0.2*inch) + 0.18*inch
         needed = 0.18*inch + heb_h + eng_h + wo_h + 0.1*inch
         self._check_space(needed)
@@ -430,7 +430,7 @@ class ExercisePDF:
 
         # Watchout box
         if block.watchout:
-            wo_lines = simpleSplit(block.watchout, 'Helvetica', self.SUBH_SIZE,
+            wo_lines = simpleSplit(block.watchout, _mixed_font(), self.SUBH_SIZE,
                                    w - 0.2*inch)
             box_h = len(wo_lines) * (self.SUBH_SIZE + 2) + 0.14*inch
             c.setFillColor(C_WATCHOUT)
@@ -442,7 +442,7 @@ class ExercisePDF:
             c.line(self.MARGIN_L, self._y - box_h,
                    self.MARGIN_L, self._y)
             self._y -= 0.07*inch
-            c.setFont('Helvetica', self.SUBH_SIZE)
+            c.setFont(_mixed_font(), self.SUBH_SIZE)
             c.setFillColor(black)
             for line in wo_lines:
                 c.drawString(self.MARGIN_L + 0.1*inch, self._y, line)
@@ -718,7 +718,7 @@ class ExercisePDF:
         """Draw a note/info box."""
         c = self._canvas
         w = self._usable_w()
-        h = self._wrapped_height(text, 'Helvetica', self.LABEL_SIZE,
+        h = self._wrapped_height(text, _mixed_font(), self.LABEL_SIZE,
                                   w - 0.2*inch) + 0.18*inch
         self._check_space(h + 0.1*inch)
         c.setFillColor(C_NOTE_BG)
@@ -726,7 +726,7 @@ class ExercisePDF:
         c.setLineWidth(0.5)
         c.rect(self.MARGIN_L, self._y - h, w, h, fill=1, stroke=1)
         self._y -= 0.07*inch
-        self._y = self._draw_wrapped(text, 'Helvetica', self.LABEL_SIZE,
+        self._y = self._draw_wrapped(text, _mixed_font(), self.LABEL_SIZE,
                                      self.MARGIN_L + 0.1*inch, self._y,
                                      w - 0.2*inch, color=HexColor('#333333'))
         self._y -= 0.1*inch
@@ -1206,9 +1206,9 @@ class ExercisePDF:
                 c.setFont('ArialHebrew', self.LABEL_SIZE)
                 c.drawRightString(cx + cw[1] - 3, y - self.ANSWER_H + 6, _heb(e.heb))
                 cx += cw[1] + cw[2]
-                c.setFont('Helvetica', self.LABEL_SIZE)
+                c.setFont(_mixed_font(), self.LABEL_SIZE)
                 answer_text = f'{e.stem} · {e.conj} · {e.pgn} · {e.root_class} — {e.translation}'
-                lines = simpleSplit(answer_text, 'Helvetica', self.LABEL_SIZE, sum(cw[3:]) - 6)
+                lines = simpleSplit(answer_text, _mixed_font(), self.LABEL_SIZE, sum(cw[3:]) - 6)
                 c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else answer_text)
                 y -= self.ANSWER_H
 
@@ -1296,9 +1296,9 @@ class ExercisePDF:
                 c.setFont('ArialHebrew', self.LABEL_SIZE)
                 c.drawRightString(cx + cw[1] - 3, y - self.ANSWER_H + 6, _heb(e.heb))
                 cx += cw[1] + cw[2]
-                c.setFont('Helvetica', self.LABEL_SIZE)
+                c.setFont(_mixed_font(), self.LABEL_SIZE)
                 answer_text = f'{e.stem} · {e.conj} · {e.pgn} · {e.bg_class} · {e.root} — {e.translation}'
-                lines = simpleSplit(answer_text, 'Helvetica', self.LABEL_SIZE, sum(cw[3:]) - 6)
+                lines = simpleSplit(answer_text, _mixed_font(), self.LABEL_SIZE, sum(cw[3:]) - 6)
                 c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else answer_text)
                 y -= self.ANSWER_H
 
