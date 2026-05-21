@@ -15,6 +15,16 @@
   unicode-bidi: embed;
 }
 
+/* Wrap all MkDocs-rendered tables in a horizontal scroll container so wide
+   exercise tables (7–10 columns) never cause full-page overflow */
+.md-typeset table:not([class]) {
+  display: block;
+  overflow-x: auto;
+  max-width: 100%;
+  font-size: .78rem;
+}
+
+
 /* Add breathing room between the left nav and page content */
 .md-content {
   padding-left: 1.5rem;
