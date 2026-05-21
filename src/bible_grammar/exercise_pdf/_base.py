@@ -704,9 +704,9 @@ class ExercisePDF:
                         lines = simpleSplit(cell, _tlit_font, self.LABEL_SIZE, col_w - 6)
                         c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else cell)
                     else:
-                        c.setFont('Helvetica', self.LABEL_SIZE)
+                        c.setFont(_mixed_font(), self.LABEL_SIZE)
                         c.setFillColor(C_ANSWER_FG)
-                        lines = simpleSplit(cell, 'Helvetica', self.LABEL_SIZE, col_w - 6)
+                        lines = simpleSplit(cell, _mixed_font(), self.LABEL_SIZE, col_w - 6)
                         c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else cell)
                     cx += col_w
 
@@ -1313,13 +1313,13 @@ class ExercisePDF:
         c.drawString(self.MARGIN_L, self._y, 'Reflection Questions')
         self._y -= (self.HEAD_SIZE + 6)
         for i, q in enumerate(questions, 1):
-            needed = self._wrapped_height(q, 'Helvetica', self.BODY_SIZE,
+            needed = self._wrapped_height(q, _mixed_font(), self.BODY_SIZE,
                                            w - 0.3*inch) + 6
             self._check_space(needed)
             c.setFont('Helvetica-Bold', self.BODY_SIZE)
             c.setFillColor(black)
             c.drawString(self.MARGIN_L, self._y, f'{i}.')
-            self._y = self._draw_wrapped(q, 'Helvetica', self.BODY_SIZE,
+            self._y = self._draw_wrapped(q, _mixed_font(), self.BODY_SIZE,
                                           self.MARGIN_L + 0.2*inch, self._y,
                                           w - 0.3*inch)
             self._y -= 6
