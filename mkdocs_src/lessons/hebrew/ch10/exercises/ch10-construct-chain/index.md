@@ -11,7 +11,7 @@
   h2 { font-size: 1.05rem; margin-top: 2.2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .25rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; margin-bottom: .5rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse;  margin: .4rem 0 1rem; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0 1rem; font-size: .9rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .83rem; }
   td { padding: .32rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -83,6 +83,19 @@
     h1 { font-size: 1.2rem; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Ch10 Construct Chain Drill</h1>
@@ -102,7 +115,7 @@
 <!-- PART A -->
 <h2>Part A — Simple 2-Link Chains (Indefinite)</h2>
 <p style="font-size:.9rem; color:#555;">The absolute noun has no article and is not a proper noun. The whole chain is indefinite.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th>
     <th>Hebrew</th>
@@ -264,14 +277,14 @@
     <td>the spirit of man</td>
     <td></td>
   </tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
 <!-- PART B -->
 <h2>Part B — Simple 2-Link Chains (Definite)</h2>
 <p style="font-size:.9rem; color:#555;">The absolute noun has the definite article <strong>הַ</strong> or is a proper noun. The whole chain is definite.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th>
     <th>Hebrew</th>
@@ -433,14 +446,14 @@
     <td>the sons / children of Israel</td>
     <td></td>
   </tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
 <!-- PART C -->
 <h2>Part C — Extended 3-Link Chains</h2>
 <p style="font-size:.9rem; color:#555;">Each chain has three nouns. Identify all construct nouns (there will be two) and the single absolute noun.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th>
     <th>Hebrew</th>
@@ -545,14 +558,14 @@
     <td>servant of the servants of the king</td>
     <td></td>
   </tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
 <!-- PART D -->
 <h2>Part D — Feminine Construct Nouns (ַת ending)</h2>
 <p style="font-size:.9rem; color:#555;">Each chain uses a feminine singular noun in the construct state. Note the characteristic <strong>ָה → ַת</strong> change.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th>
     <th>Hebrew</th>
@@ -638,7 +651,7 @@
     <td>the blessing of the LORD</td>
     <td></td>
   </tr>
-</table></div>
+</table>
 
 <hr class="sec">
 

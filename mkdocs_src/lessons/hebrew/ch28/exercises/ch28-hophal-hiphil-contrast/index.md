@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
   td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -32,6 +32,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 28 — Hiphil–Hophal Contrast Drill</h1>
@@ -49,7 +62,7 @@
 <h2>Part A — Motion/Transfer Roots</h2>
 <p>These roots have Qal meanings describing motion or placement. The Hiphil causes motion; the Hophal passivizes it. All items in this part are <strong>Hophal</strong> — translate and explain what Hiphil action is being passivized.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Root</th><th>Hiphil Meaning</th><th>Hophal Form</th><th>Ref</th>
     <th>Translation</th><th>Stem / Conj.</th><th></th>
@@ -145,7 +158,7 @@
   <tr class="answer-row" id="r7">
     <td colspan="8"><strong>and they were brought back (to Pharaoh)</strong> — <em>Hophal Wayyiqtol 3ms</em> — Moses and Aaron were caused to return; same root as #3 but persons rather than an object</td>
   </tr>
-</table></div>
+</table>
 
 <!-- PART B -->
 <h2>Part B — Death Formula (<span class="heb">מוּת</span>)</h2>
@@ -157,7 +170,7 @@
   Hophal Qatal: <span class="heb">הוּ</span> (shureq under ה) — e.g. <span class="heb">הוּמַת</span>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Root</th><th>Form</th><th>Ref</th>
     <th>Stem</th><th>Conjugation</th><th>Translation</th><th></th>
@@ -214,13 +227,13 @@
   <tr class="answer-row" id="r11">
     <td colspan="8"><strong>Hophal</strong> — Qatal 3ms — <strong>he was put to death</strong> — The vowel <span class="heb">הוּ</span> identifies Hophal Qatal 3ms; Saul's sons were executed before the LORD</td>
   </tr>
-</table></div>
+</table>
 
 <!-- PART C -->
 <h2>Part C — Speech Reporting Root (<span class="heb">נָגַד</span>)</h2>
 <p>This root illustrates how the Hiphil and Hophal serve different narrative roles. The Hiphil has a <em>person</em> as subject; the Hophal has <em>information</em> as subject. Identify which is which and translate.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Root</th><th>Form</th><th>Ref</th>
     <th>Stem</th><th>Conjugation</th><th>Translation</th><th></th>
@@ -277,13 +290,13 @@
   <tr class="answer-row" id="r15">
     <td colspan="8"><strong>Hophal</strong> — Wayyiqtol 3ms — <strong>and it was told to the king of Egypt</strong> — The news (information) is the subject; same Hophal form as #13; the reporter is left unnamed</td>
   </tr>
-</table></div>
+</table>
 
 <!-- PART D -->
 <h2>Part D — Roots with No Common Qal (<span class="heb">נָכָה</span>)</h2>
 <p>This root has no standard Qal form in Biblical Hebrew. Both the Hiphil and Hophal serve as base forms. Identify the stem and translate.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Root</th><th>Form</th><th>Ref</th>
     <th>Stem</th><th>Conjugation</th><th>Translation</th><th></th>
@@ -327,7 +340,7 @@
   <tr class="answer-row" id="r18">
     <td colspan="8"><strong>Hophal</strong> — Participle mp — <strong>being beaten / they are being beaten</strong> — Israel's servants are currently receiving the blows; the mְ prefix and ּ pattern mark the Hophal participle</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

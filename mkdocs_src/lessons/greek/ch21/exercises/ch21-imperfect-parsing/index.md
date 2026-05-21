@@ -12,7 +12,7 @@
   .controls { margin: 1em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
   .controls button { padding: 0.4em 1em; font-size: 0.9em; cursor: pointer; border: 1px solid #888; border-radius: 4px; background: #f5f5f5; }
   .controls button:hover { background: #e0e0e0; }
-  table { border-collapse: collapse;  font-size: 0.85em; }
+  table { border-collapse: collapse; width: 100%; font-size: 0.85em; }
   th { background: #3a5a8a; color: #fff; padding: 0.5em 0.4em; text-align: left; }
   td { border: 1px solid #ccc; padding: 0.3em 0.35em; vertical-align: middle; }
   tr:nth-child(even) td { background: #f8f8f8; }
@@ -41,6 +41,19 @@
     tr.answer-row { display: none !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Ch21 — Imperfect Parsing Drill</h1>
@@ -52,7 +65,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead>
   <tr>
     <th class="num-col">#</th>
@@ -70,7 +83,7 @@
 </thead>
 <tbody id="drillBody">
 </tbody>
-</table></div>
+</table>
 
 <script>
 const items = [

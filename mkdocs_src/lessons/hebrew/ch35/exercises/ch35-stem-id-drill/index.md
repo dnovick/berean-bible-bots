@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -31,6 +31,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 35 — Stem Identification Drill (Weak Roots)</h1>
@@ -38,14 +51,14 @@
 
 <p>For each form, identify the <strong>stem</strong>, <strong>conjugation</strong>, <strong>PGN</strong>, and <strong>root</strong>. All forms use weak roots: <span class="heb">גלה</span> (III-ה), <span class="heb">הלל</span> (geminate), and <span class="heb">ענה</span> (III-ה). Type your answers, then click <strong>▶ Answer</strong> to check.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
+<table class="ref-table">
   <tr><th>Conjugation</th><th>III-ה Qal</th><th>III-ה Piel</th><th>III-ה Hithpael</th></tr>
   <tr><td>Perfect 3ms</td><td><span class="heb">גָּלָה</span> (Qamets+ה)</td><td><span class="heb">גִּלָּה</span> (Dagesh R2 + Qamets+ה)</td><td><span class="heb">הִתְגַּלָּה</span> (הִתְ + Dagesh + Qamets+ה)</td></tr>
   <tr><td>Imperfect 3ms</td><td><span class="heb">יִגְלֶה</span> (Seghol+ה)</td><td><span class="heb">יְגַלֶּה</span> (יְ prefix + Dagesh + Seghol+ה)</td><td><span class="heb">יִתְגַּלֶּה</span> (יִתְ + Dagesh + Seghol+ה)</td></tr>
   <tr><td>Wayyiqtol 3ms</td><td><span class="heb">וַיִּגֶּל</span> (apocopated)</td><td><span class="heb">וַיְגַל</span> (apocopated)</td><td><span class="heb">וַיִּתְגַּל</span> (apocopated)</td></tr>
   <tr><td>Imperative 2ms</td><td><span class="heb">גְּלֵה</span> (Tsere+ה)</td><td><span class="heb">גַּלֵּה</span> (Dagesh + Seghol+ה)</td><td><span class="heb">הִתְגַּלֵּה</span> (הִתְ + Dagesh + Tsere+ה)</td></tr>
   <tr><td>Participle ms</td><td><span class="heb">גֹּלֶה</span> (Holem R1)</td><td><span class="heb">מְגַלֶּה</span> (מְ prefix)</td><td><span class="heb">מִתְגַּלֶּה</span> (מִתְ prefix)</td></tr>
-</table></div>
+</table>
 
 <div class="tip">
   <strong>Wayyiqtol III-ה:</strong> All three stems apocopate — the ה is dropped. Distinguish by prefix:
@@ -62,7 +75,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th>
   </tr>
@@ -379,7 +392,7 @@
     <td colspan="7"><strong>Hithpael · Participle · ms · גלה</strong> — <span class="heb">מִתְ–</span> prefix (Hireq + ת) + Dagesh R2 (לּ); III-ה: Seghol + ה → Hithpael participle; <span class="heb">מִתְ</span> vs. Piel <span class="heb">מְ</span> is decisive</td>
   </tr>
 
-</table></div>
+</table>
 
 <script>
 function toggle(id) {

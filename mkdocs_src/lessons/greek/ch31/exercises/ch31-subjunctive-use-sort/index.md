@@ -14,7 +14,7 @@
   .code-table { border-collapse: collapse; width: auto; margin: .5em 0 1em; font-size: .9em; }
   .code-table th { background: #3a5a8a; color: #fff; padding: .3em .7em; text-align: left; }
   .code-table td { padding: .25em .7em; border-bottom: 1px solid #ddd; }
-  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .93em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
   th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
   td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #f5f7fb; }
@@ -36,6 +36,19 @@
     body {  }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>BBG Chapter 31 — Subjunctive Use Classification Drill</h1>
@@ -46,7 +59,7 @@
   (2) parse person and number of the subjunctive verb, (3) give the lexical form, and (4) translate.
   Click <strong>▶ Answer</strong> to reveal the answer for that row.
   <br><br>
-  <div style="overflow-x:auto;max-width:100%;"><table class="code-table">
+  <table class="code-table">
     <tr><th>Code</th><th>Use</th></tr>
     <tr><td><strong>HO</strong></td><td>Hortatory ("Let us …")</td></tr>
     <tr><td><strong>PU</strong></td><td>Purpose clause (ἵνα / ὅπως + subj.)</td></tr>
@@ -54,7 +67,7 @@
     <tr><td><strong>IN</strong></td><td>Indefinite relative (ὅς ἐάν / ὅπου ἐάν + subj.)</td></tr>
     <tr><td><strong>DE</strong></td><td>Deliberative ("What should we …?")</td></tr>
     <tr><td><strong>FS</strong></td><td>Fear statement (μή + subj. after φοβέομαι)</td></tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="controls">
@@ -63,7 +76,7 @@
   <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead>
   <tr><th>#</th><th>Greek Clause</th><th>Use Code</th><th>Person</th><th>Number</th><th>Lexical Form</th><th>Translation</th><th></th></tr>
 </thead>
@@ -390,7 +403,7 @@
 </tr>
 
 </tbody>
-</table></div>
+</table>
 
 <h2>Discussion Questions</h2>
 <ol>

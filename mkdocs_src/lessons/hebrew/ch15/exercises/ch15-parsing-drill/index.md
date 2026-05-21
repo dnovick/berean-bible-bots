@@ -12,7 +12,7 @@
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .note-box { background: #fff8e8; border-left: 3px solid #d4a017; padding: .5rem .9rem; margin: .6rem 0; font-size: .88rem; }
-  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .38rem .5rem; border: 1px solid #bbb; text-align: left; font-size: .83rem; }
   td { padding: .28rem .4rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -34,6 +34,19 @@
   @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; } .ans-row { display: none !important; } }
   select.parse-field { font-size: .9em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 80px; }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Ch15 Parsing Drill — Qal Imperfect Strong Verbs</h1>
@@ -49,7 +62,7 @@
 </div>
 <!-- PART A -->
 <h2>Part A — A-Class (Holem): Clear Prefix Pattern</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th></th></tr>
 <tr>
 <td class="num">1</td><td class="heb">יִשְׁמֹר</td>
@@ -111,11 +124,11 @@
 <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
 </tr>
 <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">אֶבְחַר</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">בחר</td><td>B-class patach under R2</td></tr>
-</table></div>
+</table>
 <hr class="sec"/>
 <!-- PART B -->
 <h2>Part B — B-Class (Patach) and Disambiguation</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Notes</th><th></th></tr>
 <tr>
 <td class="num">11</td><td class="heb">יִשְׁמַע</td>
@@ -177,12 +190,12 @@
 <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
 </tr>
 <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">יִגְדַּל</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">גדל</td><td colspan="2">Stative patach</td></tr>
-</table></div>
+</table>
 <hr class="sec"/>
 <!-- PART C -->
 <h2>Part C — Jussive and Cohortative Forms</h2>
 <div class="note-box">For most <strong>strong verbs</strong>, the Jussive 3ms is identical in form to the regular Imperfect 3ms — no shortening occurs. Only weak verbs (especially III-ה) show a distinct Jussive shape. Items 23–24 test this awareness.</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Form Type</th><th></th></tr>
 <tr>
 <td class="num">21</td><td class="heb">יִשְׁמְרָה</td>
@@ -219,7 +232,7 @@
 <td><button class="rbtn" onclick="tog(25)">▶ Answer</button></td>
 </tr>
 <tr class="ans-row" id="ans-25"><td class="ans-lbl">✓</td><td class="ans-heb">אֶשְׁמְרָה</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">שמר</td><td colspan="2">Cohortative — ָה- on 1cs; "Let me keep"</td></tr>
-</table></div>
+</table>
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
   function tog(id) { const r=document.getElementById('ans-'+id); const b=r.previousElementSibling.querySelector('button'); const v=r.style.display==='table-row'; r.style.display=v?'none':'table-row'; b.textContent=v?'▶ Answer':'▼ Hide'; b.classList.toggle('on',!v); }

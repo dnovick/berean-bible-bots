@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -33,6 +33,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 32 — Qal–Piel–Pual Contrast Drill (Strong Roots)</h1>
@@ -41,12 +54,12 @@
 <p>Each triplet shows the same root in Qal, Piel, and Pual. For each form: (1) identify the stem, (2) parse fully, (3) translate.</p>
 
 <div class="legend">
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th>Stem</th><th>R1 vowel (Perfect 3ms)</th><th>R2</th><th>Function</th></tr>
     <tr><td><strong>Qal</strong></td><td>Variable (patach/tsere/holem)</td><td>No extra dagesh</td><td>Simple active</td></tr>
     <tr><td><strong>Piel</strong></td><td>Hiriq (קִ) or tsere (קֵ)</td><td>Dagesh Forte</td><td>Intensive active</td></tr>
     <tr><td><strong>Pual</strong></td><td>Qibbuts (קֻ) or holem (קֹ) if R2 is guttural</td><td>Dagesh Forte</td><td>Passive of Piel</td></tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="tip"><strong>Key distinction:</strong> Piel and Pual both have dagesh forte in R2 — the R1 vowel is the tell. Hiriq/tsere = Piel (active). Qibbuts/holem = Pual (passive).</div>
@@ -59,7 +72,7 @@
 
 <!-- TRIPLET 1 -->
 <div class="section-label">Triplet 1 — Root: <span class="heb">ברך</span></div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">בָּרַךְ</span></td>
@@ -76,11 +89,11 @@
     <td><input class="parse-field" id="s3"></td><td><input class="parse-field" id="g3"></td><td><input class="parse-field" id="p3"></td><td><input class="parse-field" id="t3"></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r3"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was blessed"</strong> — holem under ב; ר rejects dagesh forte; holem is lengthening of qibbuts in guttural context</td></tr>
-</table></div>
+</table>
 
 <!-- TRIPLET 2 -->
 <div class="section-label">Triplet 2 — Root: <span class="heb">שׁלח</span></div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>4</td><td><span class="heb">שָׁלַח</span></td>
@@ -97,11 +110,11 @@
     <td><input class="parse-field" id="s6"></td><td><input class="parse-field" id="g6"></td><td><input class="parse-field" id="p6"></td><td><input class="parse-field" id="t6"></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r6"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was sent away"</strong> — qibbuts under שׁ + dagesh forte in ל; identical to Piel except R1 vowel</td></tr>
-</table></div>
+</table>
 
 <!-- TRIPLET 3 -->
 <div class="section-label">Triplet 3 — Root: <span class="heb">דבר</span></div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>7</td><td><span class="heb">דָּבַר</span></td>
@@ -118,11 +131,11 @@
     <td><input class="parse-field" id="s9"></td><td><input class="parse-field" id="g9"></td><td><input class="parse-field" id="p9"></td><td><input class="parse-field" id="t9"></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r9"><td colspan="7"><strong>Pual · Perfect · 3ms · "it was spoken"</strong> — qibbuts under ד + dagesh in ב + patach theme vowel</td></tr>
-</table></div>
+</table>
 
 <!-- TRIPLET 4 -->
 <div class="section-label">Triplet 4 — Root: <span class="heb">כבד</span></div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>10</td><td><span class="heb">כָּבֵד</span></td>
@@ -139,11 +152,11 @@
     <td><input class="parse-field" id="s12"></td><td><input class="parse-field" id="g12"></td><td><input class="parse-field" id="p12"></td><td><input class="parse-field" id="t12"></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r12"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was honored"</strong> — qibbuts under כ + dagesh forte in ב + patach; passive of Piel</td></tr>
-</table></div>
+</table>
 
 <!-- TRIPLET 5 -->
 <div class="section-label">Triplet 5 — Root: <span class="heb">ספר</span></div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>13</td><td><span class="heb">סָפַר</span></td>
@@ -160,7 +173,7 @@
     <td><input class="parse-field" id="s15"></td><td><input class="parse-field" id="g15"></td><td><input class="parse-field" id="p15"></td><td><input class="parse-field" id="t15"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="7"><strong>Pual · Perfect · 3ms · "it was told / recounted"</strong> — qibbuts under ס + dagesh forte in פ + patach; systematic: qamets (Qal) → hiriq (Piel) → qibbuts (Pual)</td></tr>
-</table></div>
+</table>
 
 <script>
 function toggle(id) {

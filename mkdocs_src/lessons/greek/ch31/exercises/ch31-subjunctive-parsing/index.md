@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
   .subtitle { color: #555; font-style: italic; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .88em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
   th { background: #1a5276; color: #fff; padding: .4em .5em; text-align: left; }
   td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #eaf3fc; }
@@ -27,6 +27,19 @@
   .btn-ctrl:hover { background: #333; }
   @media print { .btn-reveal, .controls { display: none !important; } .answer-row { display: none !important; } .parse-field { border-bottom: 1px solid #999; } }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>BBG Chapter 31 — Subjunctive Parsing</h1>
@@ -41,7 +54,7 @@
 </div>
 
 <h2>Part A — Purpose Clauses with ἵνα (1–6)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="1"><td><b>1</b></td><td class="greek">ἦλθεν ἵνα <u>σώσῃ</u> τὸν κόσμον.</td>
@@ -80,10 +93,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-6"><td></td><td colspan="8">Aor · Pass · 3rd · Sg · πληρόω · Purpose (ἵνα) · "I say this so that you may rejoice and your joy may be fulfilled." (cf. John 16:24)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part B — Third Class Conditionals with ἐάν (7–10)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="7"><td><b>7</b></td><td class="greek">ἐὰν <u>ὁμολογῶμεν</u> τὰς ἁμαρτίας ἡμῶν, πιστός ἐστιν.</td>
@@ -110,10 +123,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-10"><td></td><td colspan="8">Aor · Act · 2nd · Sg · πιστεύω · 3rd class conditional (ἐάν) · "If you believe, you will see the glory of God." (John 11:40)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part C — Hortatory Subjunctive (11–13)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="11"><td><b>11</b></td><td class="greek"><u>ἀγαπῶμεν</u> ἀλλήλους, ὅτι ἡ ἀγάπη ἐκ τοῦ θεοῦ ἐστίν.</td>
@@ -134,10 +147,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-13"><td></td><td colspan="8">Pres · Act · 1st · Pl · χαίρω · Hortatory · "Let us rejoice and exult and give glory to him." (Rev 19:7)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part D — Prohibition (14–16)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="14"><td><b>14</b></td><td class="greek">μὴ <u>νομίσητε</u> ὅτι ἦλθον καταλῦσαι τὸν νόμον.</td>
@@ -158,10 +171,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-16"><td></td><td colspan="8">Pres · Act · 2nd · Pl · κρίνω · Prohibition (μή + pres. subj.) · "Do not judge, so that you may not be judged." (Matt 7:1)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part E — Indefinite and Emphatic Denial (17–20)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="17"><td><b>17</b></td><td class="greek">ὃς ἂν <u>θέλῃ</u> μέγας γενέσθαι ἐν ὑμῖν, ἔσται ὑμῶν διάκονος.</td>
@@ -188,7 +201,7 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-20"><td></td><td colspan="8">Aor · Act · 3rd · Sg · παρέρχομαι · Emphatic denial (οὐ μή) · "This generation will absolutely not pass away until all these things happen." (Matt 24:34)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <script>
 function toggleAnswer(id) {

@@ -11,7 +11,7 @@
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.5em; color: #555; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -37,6 +37,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 32 — Piel–Pual Contrast Drill</h1>
@@ -47,13 +60,13 @@
 <strong>Part B:</strong> Mixed Piel / Pual / Hiphil / Hophal — identify stem, then parse fully.</p>
 
 <div class="legend">
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th>Stem</th><th>R1 vowel (perfect 3ms)</th><th>R2</th><th>Function</th></tr>
     <tr><td><strong>Piel</strong></td><td>Hiriq (קִ) or patach (קַ)</td><td>Dagesh Forte</td><td>Active</td></tr>
     <tr><td><strong>Pual</strong></td><td>Qibbuts (קֻ)</td><td>Dagesh Forte</td><td>Passive of Piel</td></tr>
     <tr><td><strong>Hiphil</strong></td><td>Hiriq under הִ</td><td>No extra dagesh</td><td>Active causative</td></tr>
     <tr><td><strong>Hophal</strong></td><td>Qibbuts/qamets-hateph under הֻ/הָ</td><td>No extra dagesh</td><td>Passive of Hiphil</td></tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="tip"><strong>Key:</strong> Pual and Hophal can both show qibbuts under their first visible consonant. The tell: in the <em>Pual</em> there is always a dagesh forte in R2 (the Piel stem marker); in the <em>Hophal</em> there is no such dagesh in R2.</div>
@@ -68,7 +81,7 @@
 <h2>Part A — Active/Passive Pairs</h2>
 
 <div class="section-label">Pair 1 — בָּרַךְ (to bless)</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">תְּבָרֵךְ</span></td><td>Num 22:6</td>
@@ -80,10 +93,10 @@
     <td><input class="parse-field" id="a2s"></td><td><input class="parse-field" id="a2g"></td><td><input class="parse-field" id="a2p"></td><td><input class="parse-field" id="a2t"></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶</button></td></tr>
   <tr class="answer-row" id="r2"><td colspan="8"><strong>Pual · Participle · ms · "is blessed"</strong> — Pual passive participle; qibbuts expected under ב (R1) but ר (R2) rejects dagesh forte → vowel compensatorily lengthened to qamets (ָ) under ר</td></tr>
-</table></div>
+</table>
 
 <div class="section-label">Pair 2 — קָדַשׁ (to be holy)</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>3</td><td><span class="heb">וְקִדַּשְׁתָּ</span></td><td>Exo 29:36</td>
@@ -95,10 +108,10 @@
     <td><input class="parse-field" id="a4s"></td><td><input class="parse-field" id="a4g"></td><td><input class="parse-field" id="a4p"></td><td><input class="parse-field" id="a4t"></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶</button></td></tr>
   <tr class="answer-row" id="r4"><td colspan="8"><strong>Pual · Imperfect · 3ms · "it will be consecrated"</strong> — qibbuts under ק + dagesh forte in ד — the classic Pual signature; passive of Piel</td></tr>
-</table></div>
+</table>
 
 <div class="section-label">Pair 3 — כָּסָה (to cover)</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>5</td><td><span class="heb">יְכַסֶּה</span></td><td>Exo 10:5</td>
@@ -110,10 +123,10 @@
     <td><input class="parse-field" id="a6s"></td><td><input class="parse-field" id="a6g"></td><td><input class="parse-field" id="a6p"></td><td><input class="parse-field" id="a6t"></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶</button></td></tr>
   <tr class="answer-row" id="r6"><td colspan="8"><strong>Pual · Imperfect · 3mp · "they were covered"</strong> — qibbuts under כ + dagesh forte in ס; III-he Pual 3mp: shureq ending; passive (the mountains were covered)</td></tr>
-</table></div>
+</table>
 
 <div class="section-label">Pair 4 — שָׁנַן (to sharpen / teach diligently)</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>7</td><td><span class="heb">שִׁנַּנְתָּם</span></td><td>Deu 6:7</td>
@@ -125,10 +138,10 @@
     <td><input class="parse-field" id="a8s"></td><td><input class="parse-field" id="a8g"></td><td><input class="parse-field" id="a8p"></td><td><input class="parse-field" id="a8t"></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶</button></td></tr>
   <tr class="answer-row" id="r8"><td colspan="8"><strong>Pual · Perfect · 3ms · "it has been sharpened/taught"</strong> — qibbuts under שׁ + dagesh forte in נ; Pual passive of Piel שִׁנֵּן; expected passive of Deu 6:7 command</td></tr>
-</table></div>
+</table>
 
 <div class="section-label">Pair 5 — יָלַד (to give birth / beget)</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>9</td><td><span class="heb">יּוֹלֶד</span></td><td>Gen 5:3</td>
@@ -140,13 +153,13 @@
     <td><input class="parse-field" id="a10s"></td><td><input class="parse-field" id="a10g"></td><td><input class="parse-field" id="a10p"></td><td><input class="parse-field" id="a10t"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶</button></td></tr>
   <tr class="answer-row" id="r10"><td colspan="8"><strong>Pual · Perfect · 3ms · "was born/begotten"</strong> — qibbuts under י + dagesh forte in ל; Pual passive; used in genealogies alongside the Hiphil active counterpart</td></tr>
-</table></div>
+</table>
 
 <!-- PART B -->
 <h2>Part B — Identification Drill</h2>
 <p>Identify the stem first (Piel / Pual / Hiphil / Hophal), then parse fully.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>11</td><td><span class="heb">מְבֹרָךְ</span></td><td>Num 22:6</td>
@@ -223,7 +236,7 @@
     <td><input class="parse-field" id="b25s"></td><td><input class="parse-field" id="b25g"></td><td><input class="parse-field" id="b25p"></td><td><input class="parse-field" id="b25r"></td>
     <td><button class="reveal-btn" onclick="toggle('rb25')">▶</button></td></tr>
   <tr class="answer-row" id="rb25"><td colspan="8"><strong>Pual · Perfect · 3ms · כָּסָה</strong> — it was covered; qibbuts under כ + dagesh forte in ס; III-he Pual perfect 3ms (qamets + ה ending); Song of the Sea: "the deep covered them"</td></tr>
-</table></div>
+</table>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

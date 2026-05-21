@@ -15,13 +15,21 @@
   unicode-bidi: embed;
 }
 
-/* Wrap all MkDocs-rendered tables in a horizontal scroll container so wide
-   exercise tables (7–10 columns) never cause full-page overflow */
+/* Make all MkDocs-rendered markdown tables (exercise .md pages) fill the
+   available width without horizontal scrolling */
 .md-typeset table:not([class]) {
-  display: block;
-  overflow-x: auto;
+  display: table;
+  table-layout: fixed;
+  width: 100%;
   max-width: 100%;
   font-size: .78rem;
+  overflow: visible;
+}
+.md-typeset table:not([class]) th,
+.md-typeset table:not([class]) td {
+  word-break: break-word;
+  overflow-wrap: break-word;
+  white-space: normal;
 }
 
 

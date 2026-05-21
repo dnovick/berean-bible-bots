@@ -12,7 +12,7 @@
   h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
   .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
   .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
-  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
@@ -38,6 +38,19 @@
     .answer-row { display: none !important; }
     input.parse-field { border: none; border-bottom: 1px solid #999; }
   }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -66,7 +79,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיִּוָּלֵ֤ד לַחֲנוֹךְ֙ אֶת־עִירָ֔ד וְעִירָ֕ד <strong>יָלַ֖ד [1]</strong> אֶת־מְחוּיָאֵ֑ל</div>
 <p class="translation">"And to Enoch was born Irad, and Irad fathered [1] Mehujael." (Gen 4:18)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>יָלַד</td>
@@ -80,12 +93,12 @@
   <tr class="answer-row" id="a1">
     <td colspan="8">✗ <strong>No — Qal</strong> | Perfect | 3ms | ילד | <em>Qal</em> — "fathered/begat" (active). Qal Perf 3ms vowel pattern (Qamets-Patach). No Qibbuts under R1 with Dagesh Forte in R2.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">אָ֣ז <strong>הוּחַ֔ל [2]</strong> לִקְרֹ֖א בְּשֵׁ֥ם יְהוָֽה׃</div>
 <p class="translation">"At that time people began [2] to call upon the name of the LORD." (Gen 4:26)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>הוּחַל</td>
@@ -99,12 +112,12 @@
   <tr class="answer-row" id="a2">
     <td colspan="8">✗ <strong>No — Hophal</strong> | Perfect | 3ms | חלל | <em>Hophal passive</em> — "was begun." The הוּ prefix (Shureq under הּ) = Hophal Perfect marker. Geminate root חלל. No Qibbuts under R1 with Dagesh in R2.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">אֵ֚לֶּה בְּנֵ֣י רָחֵ֔ל אֲשֶׁ֖ר <strong>יֻלַּ֥ד [3]</strong> לְיַעֲקֹֽב׃</div>
 <p class="translation">"These are the sons of Rachel who were born [3] to Jacob." (Gen 46:22)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>יֻלַּד</td>
@@ -118,12 +131,12 @@
   <tr class="answer-row" id="a3">
     <td colspan="8">✓ <strong>Yes — Pual</strong> | Perfect | 3ms | ילד | <em>Passive — I-י root</em>: "was born/begotten." Qibbuts under R1 (יֻ) + Dagesh Forte in R2 (לּ) = Pual. I-י: the initial י is simply R1 taking Qibbuts; no assimilation occurs in the Pual. Piel of ילד = "to beget" → Pual passive = "to be born."</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיִּוָּלְד֥וּ [4]</strong> לָהֶ֖ם בָנִ֑ים</div>
 <p class="translation">"And sons were born [4] to them." (Gen 6:1)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r4">
     <td>4</td><td>וַיִּוָּלְדוּ</td>
@@ -137,7 +150,7 @@
   <tr class="answer-row" id="a4">
     <td colspan="8">✗ <strong>No — Niphal</strong> | Wayyiqtol | 3mp | ילד | <em>Niphal passive</em> — "were born." The יִוָּ pattern = Niphal Wayyiqtol with I-י root (yod assimilates to following consonant with Dagesh). Contrast Pual יֻלַּד: no Qibbuts under R1 here.</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Passage B — Leviticus 7:36; Numbers 3:9</h2>
 <h3>Context: Priestly legislation — Pual passive of נתן (I-נ root) for what "was given."</h3>
@@ -147,7 +160,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">אֲשֶׁ֣ר <strong>צִוָּ֤ה [5]</strong> יְהוָה֙ לָתֵ֣ת לָהֶ֔ם בְּי֛וֹם מָשְׁח֥וֹ אֹתָ֖ם</div>
 <p class="translation">"…which the LORD commanded [5] to give to them on the day he anointed them." (Lev 7:36)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>צִוָּה</td>
@@ -161,12 +174,12 @@
   <tr class="answer-row" id="a5">
     <td colspan="8">✗ <strong>No — Piel</strong> | Perfect | 3ms | צוה | <em>Piel active</em> — "commanded." Hireq/i-class under R1 (צִ) = Piel marker; Dagesh in R2 (וּ) confirms Piel, not Pual. The Pual passive counterpart (צֻוָּה) would have Qibbuts (צֻ) under R1.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וְנָתַתָּ֥ [6]</strong> אֶת־הַלְוִיִּ֖ם לְאַהֲרֹ֣ן וּלְבָנָ֑יו <strong>נְתֻנִ֤ים [7]</strong> נְתֻנִים֙ הֵ֔מָּה</div>
 <p class="translation">"And you shall give [6] the Levites to Aaron and his sons; they are given [7], given." (Num 3:9)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>וְנָתַתָּ</td>
@@ -192,12 +205,12 @@
   <tr class="answer-row" id="a7">
     <td colspan="8">✓ <strong>Yes — Pual</strong> | Participle | mp | נתן | <em>Passive — I-נ root</em>: "given" (substantival use). Pual Ptc. mp: מְ prefix reduces to נְ (shewa), then Qibbuts under תֻ + Dagesh in נּ (R3 has doubled for plural pattern). The I-נ root retains נ as R1 in the Pual unlike Qal Imperfect.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>נֻתְּנ֧וּ [8]</strong> לִ֛י הֵ֖מָּה מִתּ֥וֹךְ בְּנֵֽי־יִשְׂרָאֵֽל׃</div>
 <p class="translation">"They were given [8] to me from among the people of Israel." (Num 3:9, continuation)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>נֻתְּנוּ</td>
@@ -211,7 +224,7 @@
   <tr class="answer-row" id="a8">
     <td colspan="8">✓ <strong>Yes — Pual</strong> | Perfect | 3cp | נתן | <em>Passive — I-נ root</em>: "were given." Qibbuts under R1 (נֻ) + Dagesh Forte in R2 (תּ) + 3cp suffix וּ. The נ of the I-נ root is R1 receiving Qibbuts — it does NOT assimilate in the Pual as it does in Qal Imperfect.</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Passage C — Leviticus 8:35; Numbers 22:6; Psalm 72:17</h2>
 <h3>Context: Pual of צוה (III-ה) and ברך (R2=ר compensatory lengthening).</h3>
@@ -219,7 +232,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וּפֶ֜תַח אֹ֤הֶל מוֹעֵד֙ תֵּֽשְׁב֔וּ יוֹמָ֖ם וָלַ֑יְלָה כַּאֲשֶׁ֨ר <strong>צֻוֵּ֧יתִי [9]</strong> אֲנִ֛י כֵּ֥ן <strong>צֻוֵּיתֶ֖ם [10]</strong></div>
 <p class="translation">"At the entrance of the tent of meeting you shall remain day and night, as I was commanded [9], so you were commanded [10]." (Lev 8:35)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>צֻוֵּיתִי</td>
@@ -245,14 +258,14 @@
   <tr class="answer-row" id="a10">
     <td colspan="8">✓ <strong>Yes — Pual</strong> | Perfect | 2mp | צוה | <em>Passive — III-ה root</em>: "you were commanded." Same Pual diagnostic: Qibbuts under R1 (צֻ) + Dagesh in R2 (וּ) + 2mp suffix יתֶם. This verse dramatically parallels Aaron's experience of being commanded with Israel's obligation.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="note-box"><strong>ברך in Pual — reminder from Ch32:</strong> Because R2 = ר rejects Dagesh Forte, the vowel under R1 compensatorily lengthens from expected Qibbuts to Qamets. This is a weak-root behavior (R2=ר) that appears in both Ch32 and Ch33.</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כִּ֣י יָדַ֗עְתִּי אֵ֤ת אֲשֶׁר־<strong>תְּבָרֵךְ [11]</strong> <strong>מְבֹרָ֔ךְ [12]</strong> וַאֲשֶׁ֥ר תָּאֹ֖ר <strong>יוּאָֽר [13]</strong></div>
 <p class="translation">"…for I know that he whom you bless [11] is blessed [12], and he whom you curse is cursed [13]." (Num 22:6)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r11">
     <td>11</td><td>תְּבָרֵךְ</td>
@@ -290,12 +303,12 @@
   <tr class="answer-row" id="a13">
     <td colspan="8">✗ <strong>No — Hophal</strong> | Imperfect | 3ms | ארר | <em>Hophal passive</em> — "shall be cursed." יוּ prefix (Shureq = u-class on the preformative consonant) = Hophal Imperfect. Contrast: Pual Imperfect would be יְבֹרַךְ-type pattern with Qibbuts/Qamets under R1.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>יְבֹרַ֥ךְ [14]</strong> שְׁמ֑וֹ לְעוֹלָ֑ם <strong>יִתְנַהֵ֥ל [15]</strong> לִפְנֵי־שֶׁ֗מֶשׁ שְׁמ֑וֹ</div>
 <p class="translation">"May his name be blessed [14] forever; may his name endure [15] before the sun." (Psa 72:17)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r14">
     <td>14</td><td>יְבֹרַךְ</td>
@@ -321,7 +334,7 @@
   <tr class="answer-row" id="a15">
     <td colspan="8">✗ <strong>No — Hithpael</strong> | Imperfect | 3ms | נהל | <em>Hithpael reflexive/iterative</em> — "may his name endure/continue." יִתְ prefix = Hithpael marker. Not Pual — no Qibbuts under R1 with Dagesh in R2.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="reflection">
   <strong>Reflection Questions</strong>
@@ -334,7 +347,7 @@
 
 <div class="answer-key">
   <h2>Quick Answer Key</h2>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th></tr>
     <tr><td>1</td><td>יָלַד</td><td>No</td><td>Perfect</td><td>3ms</td><td>ילד</td><td>Qal — fathered</td></tr>
     <tr><td>2</td><td>הוּחַל</td><td>No</td><td>Perfect</td><td>3ms</td><td>חלל</td><td>Hophal — was begun</td></tr>
@@ -351,7 +364,7 @@
     <tr><td>13</td><td>יוּאָר</td><td>No</td><td>Imperfect</td><td>3ms</td><td>ארר</td><td>Hophal — Passive: shall be cursed</td></tr>
     <tr><td>14</td><td>יְבֹרַךְ</td><td>Yes</td><td>Imperfect</td><td>3ms</td><td>ברך</td><td>Pual — Passive (R2=ר): may his name be blessed</td></tr>
     <tr><td>15</td><td>יִתְנַהֵל</td><td>No</td><td>Imperfect</td><td>3ms</td><td>נהל</td><td>Hithpael — Reflexive: may endure</td></tr>
-  </table></div>
+  </table>
 </div>
 
 <script>

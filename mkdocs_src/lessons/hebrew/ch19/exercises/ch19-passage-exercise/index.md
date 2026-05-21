@@ -9,7 +9,7 @@
 body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
-table{border-collapse:collapse;margin:.8em 0}
+table{border-collapse:collapse;width:100%;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -31,6 +31,19 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
   input.f{border-bottom:1px solid #000;min-width:55px}
   .answer-row{display:none!important}
 }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -59,7 +72,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Genesis 28:15</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Base Conj. + Root</th><th>Suffix PGN</th><th>Role</th><th>Full Gloss</th><th></th></tr>
 <tr><td>1</td><td class="hebrew">וּשְׁמַרְתִּיךָ</td><td><input class="parse-field" id="1-cr"></td><td><input class="parse-field" id="1-s"></td><td><input class="parse-field" id="1-role"></td><td><input class="parse-field" id="1-g"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a1"><td colspan="7">Qal Weqatal 1cs (שמר) · 2ms · Object · "and I will keep you" — God's promise; suffix replaces אֹתְךָ</td></tr>
@@ -69,7 +82,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>3</td><td class="hebrew">אֶעֱזָבְךָ</td><td><input class="parse-field" id="3-cr"></td><td><input class="parse-field" id="3-s"></td><td><input class="parse-field" id="3-role"></td><td><input class="parse-field" id="3-g"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a3"><td colspan="7">Qal Imperfect 1cs (עזב) · 2ms · Object · "I will forsake you" — with לֹא = "I will NOT forsake you"; I-aleph gutt.</td></tr>
-</table></div>
+</table>
 
 <h2>Passage B — Genesis 45:4–8 (Joseph Reveals Himself)</h2>
 <div class="passage">
@@ -81,14 +94,14 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Genesis 45:4–8</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Base Conj. + Root</th><th>Suffix PGN</th><th>Role</th><th>Full Gloss</th><th></th></tr>
 <tr><td>4</td><td class="hebrew">שְׁלָחַ֥נִי</td><td><input class="parse-field" id="4-cr"></td><td><input class="parse-field" id="4-s"></td><td><input class="parse-field" id="4-role"></td><td><input class="parse-field" id="4-g"></td><td><button class="toggle-btn" onclick="tog('b4')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="b4"><td colspan="7">Qal Perfect 3ms (שלח) · 1cs · Object · "God sent me" — Perfect + 1cs suffix; Joseph's theological reframing of his suffering</td></tr>
 
 <tr><td>5</td><td class="hebrew">וַיִּשְׁלָחֵ֥נִי</td><td><input class="parse-field" id="5-cr"></td><td><input class="parse-field" id="5-s"></td><td><input class="parse-field" id="5-role"></td><td><input class="parse-field" id="5-g"></td><td><button class="toggle-btn" onclick="tog('b5')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="b5"><td colspan="7">Qal Wayyiqtol 3ms (שלח) · 1cs · Object · "and God sent me" — Wayyiqtol = sequential narrative; note: same idea, different aspect (Perfect vs. Wayyiqtol)</td></tr>
-</table></div>
+</table>
 
 <h2>Passage C — Psalm 23:1–4 (The LORD My Shepherd)</h2>
 <div class="passage">
@@ -102,7 +115,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Psalm 23:2–4</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Base Conj. + Root</th><th>Suffix PGN</th><th>Role</th><th>Full Gloss</th><th></th></tr>
 <tr><td>6</td><td class="hebrew">יַרְבִּיצֵ֑נִי</td><td><input class="parse-field" id="6-cr"></td><td><input class="parse-field" id="6-s"></td><td><input class="parse-field" id="6-role"></td><td><input class="parse-field" id="6-g"></td><td><button class="toggle-btn" onclick="tog('c6')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="c6"><td colspan="7">Hiphil Imperfect 3ms (רבץ) · 1cs · Object · "he makes me lie down" — Hiphil causative + 1cs suffix; "in green pastures"</td></tr>
@@ -115,7 +128,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>9</td><td class="hebrew">יְנַחֲמֻ֑נִי</td><td><input class="parse-field" id="9-cr"></td><td><input class="parse-field" id="9-s"></td><td><input class="parse-field" id="9-role"></td><td><input class="parse-field" id="9-g"></td><td><button class="toggle-btn" onclick="tog('c9')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="c9"><td colspan="7">Piel Imperfect 3mp (נחם) · 1cs · Object · "they comfort me" — Piel + 1cs; 3mp because rod and staff are plural subject; "your rod and staff, they comfort me"</td></tr>
-</table></div>
+</table>
 
 <h2>Passage D — Genesis 39:12–20 (Infinitive Construct + Suffix)</h2>
 <div class="passage">
@@ -129,7 +142,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <div class="note-box">These forms use Inf.Const. + preposition + suffix. The suffix marks the <strong>subject</strong> of the infinitive clause, creating a temporal clause: "when X did…"</div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Base Conj. + Root</th><th>Suffix PGN</th><th>Role</th><th>Full Gloss</th><th></th></tr>
 <tr><td>10</td><td class="hebrew">כִּשְׁמֹ֣עַ אֲדֹנָ֗יו</td><td><input class="parse-field" id="10-cr"></td><td><input class="parse-field" id="10-s"></td><td><input class="parse-field" id="10-role"></td><td><input class="parse-field" id="10-g"></td><td><button class="toggle-btn" onclick="tog('d10')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="d10"><td colspan="7">Qal Inf.Const. (שמע) · Subject expressed by אֲדֹנָ֗יו (not verb suffix) · Subject · "when his master heard" — כְּ temporal; subject follows as a noun, not as a suffix here</td></tr>
@@ -139,7 +152,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>12</td><td class="hebrew">בִּ/הְיוֹת/וֹ</td><td><input class="parse-field" id="12-cr"></td><td><input class="parse-field" id="12-s"></td><td><input class="parse-field" id="12-role"></td><td><input class="parse-field" id="12-g"></td><td><button class="toggle-btn" onclick="tog('d12')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="d12"><td colspan="7">Qal Inf.Const. (היה) · 3ms · Subject · "while he was there" — בְּ + III-ה Inf.Const. + 3ms subject suffix; temporal durative clause</td></tr>
-</table></div>
+</table>
 
 <h2>Passage E — Psalm 16:1 + Deuteronomy 31:6</h2>
 <div class="passage">
@@ -154,14 +167,14 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Deuteronomy 31:6</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Base Conj. + Root</th><th>Suffix PGN</th><th>Role</th><th>Full Gloss</th><th></th></tr>
 <tr><td>13</td><td class="hebrew">שָׁמְרֵ֥נִי</td><td><input class="parse-field" id="13-cr"></td><td><input class="parse-field" id="13-s"></td><td><input class="parse-field" id="13-role"></td><td><input class="parse-field" id="13-g"></td><td><button class="toggle-btn" onclick="tog('e13')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="e13"><td colspan="7">Qal Imperative 2ms (שמר) · 1cs · Object · "Keep me!" — classic prayer address; Psa 16:1; imperative + 1cs suffix is the standard form for personal petition</td></tr>
 
 <tr><td>14</td><td class="hebrew">יַעַזְבֶ֔/ךָּ</td><td><input class="parse-field" id="14-cr"></td><td><input class="parse-field" id="14-s"></td><td><input class="parse-field" id="14-role"></td><td><input class="parse-field" id="14-g"></td><td><button class="toggle-btn" onclick="tog('e14')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="e14"><td colspan="7">Qal Imperfect 3ms (עזב) · 2ms · Object · "he will forsake you" — with לֹא = "he will not forsake you"; Moses's promise to Israel before the crossing; III-ה + I-gutt.</td></tr>
-</table></div>
+</table>
 
 <h2>Reflection Questions</h2>
 <ol>

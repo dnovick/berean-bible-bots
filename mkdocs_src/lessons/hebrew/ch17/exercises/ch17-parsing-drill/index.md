@@ -12,7 +12,7 @@
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .note-box { background: #fff8e8; border-left: 3px solid #d4a017; padding: .5rem .9rem; margin: .6rem 0; font-size: .88rem; }
-  table { border-collapse: collapse;  margin: .4rem 0; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .9rem; }
   th { background: #e0e8f0; padding: .38rem .5rem; border: 1px solid #bbb; text-align: left; font-size: .83rem; }
   td { padding: .28rem .4rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -33,6 +33,19 @@
   hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
   @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; } .ans-row { display: none !important; } }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Ch17 Parsing Drill — Wayyiqtol and Weqatal</h1>
@@ -52,7 +65,7 @@
 <!-- PART A -->
 <h2>Part A — Wayyiqtol: Strong and Common Weak Roots</h2>
 <div class="note-box">All forms in Part A are Wayyiqtol. Parse the PGN and identify the root.</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Form Type</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">1</td><td class="heb">וַיֹּאמֶר</td>
@@ -114,13 +127,13 @@
     <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">וַיָּבֹא</td><td>Wayyiqtol</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">בוא</td><td>Biconsonantal; qamets prefix; short form</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
 <!-- PART B -->
 <h2>Part B — Wayyiqtol with Weak Roots: III-ה, Biconsonantal, I-י</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Form Type</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th></th></tr>
   <tr>
     <td class="num">11</td><td class="heb">וַיַּרְא</td>
@@ -182,14 +195,14 @@
     <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">וַיָּשׇׁב</td><td>Wayyiqtol</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">שוב</td><td>Biconsonantal</td><td>Short form; qamets prefix + qamets hatuf in root</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
 <!-- PART C -->
 <h2>Part C — Weqatal and Disambiguation</h2>
 <div class="note-box">Identify whether each form is <strong>Wayyiqtol</strong>, <strong>Weqatal</strong>, <strong>Perfect</strong>, or <strong>Imperfect</strong>, then parse completely.</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Form Type</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">21</td><td class="heb">וְשָׁמַרְתָּ</td>
@@ -251,7 +264,7 @@
     <td><button class="rbtn" onclick="tog(30)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-30"><td class="ans-lbl">✓</td><td class="ans-heb">וָאֹמַר</td><td>Wayyiqtol</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">אמר</td><td>1cs; holem prefix of אמר; waw → וָ (qamets) before aleph</td></tr>
-</table></div>
+</table>
 
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30];

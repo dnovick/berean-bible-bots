@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
   .subtitle { color: #555; font-style: italic; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .88em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
   th { background: #1a237e; color: #fff; padding: .4em .5em; text-align: left; }
   td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #e8eaf6; }
@@ -26,6 +26,19 @@
   .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
   .btn-ctrl:hover { background: #333; }
   @media print { .btn-reveal, .controls { display: none !important; } .answer-row { display: none !important; } .parse-field { border-bottom: 1px solid #999; } }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -42,7 +55,7 @@
 </div>
 
 <h2>Part A — Class 1 Conditions (1–5)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="1"><td><b>1</b></td>
@@ -85,10 +98,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-5"><td></td><td colspan="4">Class 2 (mixed) · Pres · Act · Ind · 2pl · πιστεύω · Note: apodosis has ἄν = contrary-to-fact · "For if you believed Moses, you would believe me." (John 5:46)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part B — Class 2 Conditions (6–10)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="6"><td><b>6</b></td>
@@ -131,10 +144,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-10"><td></td><td colspan="4">Class 2 · Impf · Act · Ind · 3sg · εἰμί · "If my kingdom were of this world, my servants would be fighting." (John 18:36)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part C — Class 3 Conditions (11–14)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="11"><td><b>11</b></td>
@@ -169,10 +182,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-14"><td></td><td colspan="4">Class 3 · Aor · Act · Subj · 3sg · ἁμαρτάνω · "If anyone should sin, we have an advocate with the Father." (1 John 2:1)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part D — Classes 4 and Analysis (15–16)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="15"><td><b>15</b></td>
@@ -191,10 +204,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-16"><td></td><td colspan="4">Class 3 · Aor · Mid · Subj · 2pl · γίνομαι · "And who is going to harm you if you are zealous for what is good?" (1 Pet 3:13)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part E — Non-Indicative δίδωμι (17–20)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person/Case</th><th>Num/Gen</th><th>Mood/Type</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="17"><td><b>17</b></td><td class="greek">εἶπεν αὐτοῖς· <u>δότε</u> αὐτοῖς ὑμεῖς φαγεῖν.</td>
@@ -221,7 +234,7 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-20"><td></td><td colspan="7">Aor · Act · Nom · Sg (Masc) · Participle (substantival) · δίδωμι · "The one who gave authority to the people."</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <script>
 function toggleAnswer(id) {

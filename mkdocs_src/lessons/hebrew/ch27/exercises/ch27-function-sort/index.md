@@ -12,7 +12,7 @@
   h2 { font-size: 1.1em; margin-top: 2em; border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
   .instructions { background: #f7f7f7; border-left: 4px solid #999; padding: 0.8em 1em; margin-bottom: 0.8em; }
   .legend { background: #f0f4ff; border-left: 4px solid #4466aa; padding: 0.6em 1em; margin-bottom: 1.5em; font-size: 0.9em; }
-  table { border-collapse: collapse;  margin-bottom: 1.5em; font-size: 0.92em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; font-size: 0.92em; }
   th { background: #444; color: #fff; padding: 6px 8px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 8px; vertical-align: middle; }
   .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
@@ -31,6 +31,19 @@
   }
   select.parse-field { font-size: .9em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 80px; }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 27 — Semantic Function Sorting (Weak Roots)</h1>
@@ -46,7 +59,7 @@
 <button onclick="hideAll()">Hide All Answers</button>
 <button onclick="clearAll()">Clear All Inputs</button>
 </div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead>
 <tr><th>#</th><th>Hebrew Form</th><th>Conjugation</th><th>Ref</th><th>Contextual Gloss</th><th>Function</th><th></th></tr>
 </thead>
@@ -268,7 +281,7 @@
 <td><strong>C</strong> — כָּשַׁל: Qal = stumble; Hiphil = cause to stumble / make strength fail</td><td></td>
 </tr>
 </tbody>
-</table></div>
+</table>
 <div class="discussion">
 <strong>Discussion Questions:</strong>
 <ol>

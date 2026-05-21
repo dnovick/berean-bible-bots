@@ -12,7 +12,7 @@
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .passage { direction: rtl; unicode-bidi: embed; font-size: 1.2rem; line-height: 2.1; background: #fafaf6; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; margin: .8rem 0; }
-  table { border-collapse: collapse;  margin: .4rem 0; font-size: .9rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .9rem; }
   th { background: #e0e8f0; padding: .38rem .5rem; border: 1px solid #bbb; text-align: left; font-size: .83rem; }
   td { padding: .28rem .4rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -32,6 +32,19 @@
   .clr:hover { background: #ffd8d8 !important; }
   hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
   @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; } .ans-row { display: none !important; } }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -53,7 +66,7 @@
 <h2>Passage A — Exodus 3:1–12</h2>
 <div class="passage">וַיֹּ֥אמֶר <strong>אֵלֵ֖ךְ</strong> נָ֑א וְ<strong>אֶרְאֶ֗ה</strong> אֶת־הַמַּרְאֶ֤ה הַגָּדֹל֙ — לֹ֤א <strong>תִקְרַב</strong> הֲלֹ֑ם — כִּֽי <strong>אֶֽהְיֶ֣ה</strong> עִמָּ֔ך</div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">1</td><td class="heb">אֵלֵ֖ךְ</td>
@@ -83,7 +96,7 @@
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">אֶֽהְיֶ֣ה</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">היה</td><td colspan="2">Simple Future — III-ה + I-gutt.; "I will be with you" — God's promise</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
@@ -91,7 +104,7 @@
 <h2>Passage B — Exodus 3:13–20</h2>
 <div class="passage">מִי אָנֹ֨כִי כִּ֤י <strong>אֵלֵ֙ךְ֙</strong> אֶל פַּרְעֹ֔ה — וְכִי <strong>אֹוצִ֥יא</strong> אֶת בְּנֵ֖י יִשְׂרָאֵ֑ל — <strong>אֶשְׁלַ֤ח</strong> אֶת יָדִי֙ — <strong>וְיִשְׁמְע֖וּ</strong> לְקֹלֶֽךָ</div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">5</td><td class="heb">אֵלֵ֙ךְ֙</td>
@@ -121,7 +134,7 @@
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">יִשְׁמְע֖וּ</td><td>3</td><td>p</td><td>m</td><td class="ans-heb">שמע</td><td colspan="2">Simple Future — 3mp; B-class patach under R2</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
@@ -129,7 +142,7 @@
 <h2>Passage C — Exodus 20:13–17 (Decalogue)</h2>
 <div class="passage">לֹ֖א <strong>תִּרְצָֽח</strong>׃ לֹ֣א <strong>תִנְאָ֑ף</strong>׃ לֹ֣א <strong>תִּגְנֹֽב</strong>׃ לֹֽא <strong>תַעֲנֶ֥ה</strong> בְרֵעֲךָ֖ עֵ֥ד שָֽׁקֶר׃ לֹ֥א <strong>תַחְמֹ֖ד</strong> בֵּ֣ית רֵעֶ֑ךָ</div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">9</td><td class="heb">תִּרְצָֽח</td>
@@ -166,7 +179,7 @@
     <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-13"><td class="ans-lbl">✓</td><td class="ans-heb">תַחְמֹ֖ד</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">חמד</td><td colspan="2">Prohibition (לֹא) — A-class; standard prefix + holem</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
@@ -174,7 +187,7 @@
 <h2>Passage D — Genesis 1:3, 9, 11</h2>
 <div class="passage">וַיֹּ֥אמֶר אֱלֹהִ֖ים <strong>יְהִ֣י</strong> אֹ֑ור — <strong>יִקָּו֗וּ</strong> הַמַּ֙יִם֙</div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">14</td><td class="heb">יְהִ֣י</td>
@@ -190,7 +203,7 @@
     <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">יִקָּו֗וּ</td><td>3</td><td>p</td><td>m</td><td class="ans-heb">קוה</td><td colspan="2">Jussive — Niphal (not Qal); noted for cross-stem recognition; dagesh forte in kaf</td></tr>
-</table></div>
+</table>
 
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];

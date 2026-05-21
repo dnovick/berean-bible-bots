@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
   .subtitle { color: #555; font-style: italic; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .88em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
   th { background: #880e4f; color: #fff; padding: .4em .5em; text-align: left; }
   td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #fce4ec; }
@@ -27,6 +27,19 @@
   .btn-ctrl:hover { background: #333; }
   @media print { .btn-reveal, .controls { display: none !important; } .answer-row { display: none !important; } .parse-field { border-bottom: 1px solid #999; } }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>BBG Chapter 33 — Imperative Parsing</h1>
@@ -41,7 +54,7 @@
 </div>
 
 <h2>Part A — Present Active Imperative (1–5)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Aspect</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="1"><td><b>1</b></td><td class="greek"><u>ἀγαπᾶτε</u> τοὺς ἐχθροὺς ὑμῶν.</td>
@@ -74,10 +87,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-5"><td></td><td colspan="8">Pres · Act · 2nd · Pl · αἴρω · Ongoing · "Take my yoke upon you." (Matt 11:29)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part B — Present Middle/Passive Imperative (6–8)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Aspect</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="6"><td><b>6</b></td><td class="greek">μὴ <u>κλαίου</u>· ἰδοὺ ἐνίκησεν ὁ λέων.</td>
@@ -98,10 +111,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-8"><td></td><td colspan="8">Pres · Mid · 2nd · Sg · ἔρχομαι · Ongoing · "Come and see." (John 1:46)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part C — First Aorist Active Imperative (9–12)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Aspect</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="9"><td><b>9</b></td><td class="greek"><u>πορεύθητε</u> οὖν καὶ μαθητεύσατε πάντα τὰ ἔθνη.</td>
@@ -128,10 +141,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-12"><td></td><td colspan="8">Aor · Act · 2nd · Sg · πιστεύω · Simple · "Believe on the Lord Jesus." (Acts 16:31)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part D — Second Aorist Active Imperative (13–15)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Aspect</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="13"><td><b>13</b></td><td class="greek"><u>ἐλθέ</u> καὶ ἴδε.</td>
@@ -152,10 +165,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-15"><td></td><td colspan="8">Aor · Act · 2nd · Sg · λέγω · Simple · "Tell me by what authority you do these things." (Luke 20:2)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h2>Part E — Aorist Passive and Third Person Imperatives (16–20)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Aspect</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="16"><td><b>16</b></td><td class="greek"><u>λύθητι</u> ἀπὸ τοῦ δεσμοῦ τούτου.</td>
@@ -188,7 +201,7 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-20"><td></td><td colspan="8">Pres · Act · 2nd · Sg · εἰμί · Ongoing · "Be strengthened in grace." (2 Tim 2:1)</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <script>
 function toggleAnswer(id) {

@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
   td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -35,6 +35,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 24 — Semantic Function Sorting</h1>
@@ -43,13 +56,13 @@
 <p>Classify each Niphal form by its semantic function using the legend below.</p>
 
 <div class="legend">
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th>Code</th><th>Function</th></tr>
     <tr><td><strong>P</strong></td><td>Passive — subject receives the action</td></tr>
     <tr><td><strong>R</strong></td><td>Reflexive — subject acts on or for itself</td></tr>
     <tr><td><strong>RC</strong></td><td>Reciprocal — subjects act on one another</td></tr>
     <tr><td><strong>SA</strong></td><td>Simple Action — Niphal-only root; no distinct Qal meaning</td></tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="tip">
@@ -62,7 +75,7 @@
   <button onclick="resetAll()">Reset All Selections</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Hebrew Form</th><th>Conjugation</th><th>Reference</th><th>Gloss</th><th>Function</th><th></th></tr>
 
   <tr>
@@ -365,7 +378,7 @@
     <td colspan="7"><strong>P</strong> — Emphatic passive — the stolen item is certainly found; the doubling stresses the discovery</td>
   </tr>
 
-</table></div>
+</table>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

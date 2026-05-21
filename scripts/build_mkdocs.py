@@ -23,8 +23,8 @@ def _inline_exercise_html(html_path: Path) -> str:
     and return a string suitable for embedding directly in a MkDocs page.
 
     The exercise HTML has its own body max-width/margin/padding — we strip those
-    so the MkDocs layout controls the page width.  Tables are wrapped in a
-    horizontal scroll container so wide tables don't overflow the page.
+    so the MkDocs layout controls the page width.  Override rules are appended
+    to force tables to fill the available width without horizontal scrolling.
     """
     text = html_path.read_text(encoding="utf-8")
 
@@ -42,32 +42,29 @@ def _inline_exercise_html(html_path: Path) -> str:
         flags=re.DOTALL,
     )
 
-    # Remove width:100% from table rules — the scroll wrapper controls width
-    style_content = re.sub(
-        r"(table\s*\{[^}]*?)width\s*:\s*100%\s*;?",
-        r"\1",
-        style_content,
-        flags=re.DOTALL,
-    )
+    # Append override rules that make tables fit without horizontal scrolling:
+    # - table-layout:fixed + width:100% distributes columns across available space
+    # - font-size on th/td is capped to keep content compact on narrow content areas
+    # - white-space:normal lets button labels wrap rather than forcing column widths
+    # - explicit rem widths on td classes are removed so fixed layout can redistribute
+    style_content += """
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+"""
 
     # Extract <body> content
     body_m = re.search(r"<body[^>]*>(.*?)</body>", text, re.DOTALL | re.IGNORECASE)
     body_content = body_m.group(1).strip() if body_m else text
-
-    # Wrap each <table>…</table> in a horizontal-scroll div so wide tables
-    # scroll within the content area rather than overflowing the page
-    body_content = re.sub(
-        r"(<table\b)",
-        r'<div style="overflow-x:auto;max-width:100%;">\1',
-        body_content,
-        flags=re.IGNORECASE,
-    )
-    body_content = re.sub(
-        r"(</table>)",
-        r"\1</div>",
-        body_content,
-        flags=re.IGNORECASE,
-    )
 
     return f"<style>\n{style_content}\n</style>\n\n{body_content}\n"
 

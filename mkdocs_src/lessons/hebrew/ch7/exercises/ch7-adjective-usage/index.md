@@ -14,7 +14,7 @@
   .instructions ol { margin: 0.3em 0; padding-left: 1.4em; }
   .instructions li { margin-bottom: 0.2em; }
 
-  table { border-collapse: collapse;  margin: 0.5em 0 1em; font-size: 0.91em; }
+  table { border-collapse: collapse; width: 100%; margin: 0.5em 0 1em; font-size: 0.91em; }
   th { background: #e0e8f0; padding: 0.4em 0.6em; border: 1px solid #bbb; text-align: left; font-size: 0.85em; }
   td { padding: 0.3em 0.5em; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2em; }
@@ -99,6 +99,19 @@
   }
   select.parse-field { font-size: .9em; padding: 2px 4px; border: 1px solid #aaa; border-radius: 3px; min-width: 80px; }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Ch7 — Adjective Usage Drill</h1>
@@ -122,7 +135,7 @@
 <!-- ============================================================ -->
 <h2>Part A — Attributive Adjectives (Definite)</h2>
 <div class="note-box">Both noun and adjective carry the definite article הַ. This is the definitive signal for attributive definite use.</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Hebrew</th><th>Use</th><th>Adjective</th><th>Agreement</th><th>Translation</th><th></th></tr>
 <tr>
 <td class="num">1</td>
@@ -214,14 +227,14 @@
 <td>the good words / the good things</td>
 <td></td>
 </tr>
-</table></div>
+</table>
 <hr class="sec"/>
 <!-- ============================================================ -->
 <!-- PART B — Attributive Indefinite -->
 <!-- ============================================================ -->
 <h2>Part B — Attributive Adjectives (Indefinite)</h2>
 <div class="note-box">No article on noun or adjective. Adjective follows noun and agrees in gender and number.</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Hebrew</th><th>Use</th><th>Adjective</th><th>Agreement</th><th>Translation</th><th></th></tr>
 <tr>
 <td class="num">6</td>
@@ -313,14 +326,14 @@
 <td>a new word / a new thing</td>
 <td></td>
 </tr>
-</table></div>
+</table>
 <hr class="sec"/>
 <!-- ============================================================ -->
 <!-- PART C — Predicate Adjectives -->
 <!-- ============================================================ -->
 <h2>Part C — Predicate Adjectives</h2>
 <div class="note-box">The noun may be definite, but the adjective has <strong>no article</strong>. The adjective stands in the predicate position (before or after the noun). No verb "to be" is present — it is implied in translation as "is/are."</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Hebrew</th><th>Use</th><th>Adjective</th><th>Agreement</th><th>Translation</th><th></th></tr>
 <tr>
 <td class="num">11</td>
@@ -466,14 +479,14 @@
 <td>The matter is heavy / serious</td>
 <td></td>
 </tr>
-</table></div>
+</table>
 <hr class="sec"/>
 <!-- ============================================================ -->
 <!-- PART D — Substantival -->
 <!-- ============================================================ -->
 <h2>Part D — Substantival Adjectives</h2>
 <div class="note-box">The adjective stands alone as a noun — no explicit head noun. With the article: definite substantival. Without: indefinite substantival.</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Hebrew</th><th>Use</th><th>Adjective</th><th>Agreement</th><th>Translation</th><th></th></tr>
 <tr>
 <td class="num">19</td>
@@ -547,14 +560,14 @@
 <td>many (people); a multitude</td>
 <td></td>
 </tr>
-</table></div>
+</table>
 <hr class="sec"/>
 <!-- ============================================================ -->
 <!-- PART E — Comparative and Superlative -->
 <!-- ============================================================ -->
 <h2>Part E — Comparative and Superlative</h2>
 <div class="note-box">Comparative: adjective + מִן + noun being compared against. Superlative: definite adjective alone, or adjective + מִכֹּל / בְּכֹל.</div>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Hebrew</th><th>Use</th><th>Adjective</th><th>Agreement</th><th>Translation</th><th></th></tr>
 <tr>
 <td class="num">23</td>
@@ -610,7 +623,7 @@
 <td>more crafty than any beast of the field (Gen 3:1)</td>
 <td></td>
 </tr>
-</table></div>
+</table>
 <hr class="sec"/>
 <!-- ============================================================ -->
 <!-- REFLECTION -->

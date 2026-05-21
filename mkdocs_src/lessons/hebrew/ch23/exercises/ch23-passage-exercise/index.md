@@ -13,7 +13,7 @@ h3{font-size:1em;margin-top:1.4em;color:#2c5f2e}
 p.desc{font-style:italic;color:#555;margin:.3em 0 1em}
 .passage-block{background:#f9f6ee;border-left:4px solid #b8975a;padding:.7em 1em;margin-bottom:1em;font-size:1.05em}
 .passage-block p{margin:.3em 0}
-table{border-collapse:collapse;margin-bottom:1em;font-size:.9em}
+table{border-collapse:collapse;width:100%;margin-bottom:1em;font-size:.9em}
 th{background:#2c5f2e;color:#fff;padding:6px 8px;text-align:left}
 td{padding:5px 8px;border:1px solid #ccc;vertical-align:top}
 tr:nth-child(even) td{background:#f7f7f7}
@@ -35,6 +35,19 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
   input.f{border-bottom:1px solid #000;background:transparent}
   .answer-row{display:none!important}
 }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -58,7 +71,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="hebrew">וַיַּ֧רְא אֱלֹהִ֛ים אֶת-הָ/אוֹר֖ כִּי-טֽוֹב <small style="font-size:.8em;direction:ltr;unicode-bidi:embed">(Gen 1:4)</small></p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Clause</th><th>Clause Type</th><th>Fronted Element (if any)</th><th>Verb &amp; Conjugation</th><th>Gloss</th><th></th></tr>
 
 <tr>
@@ -112,7 +125,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="p1a4">
   <td colspan="7"><strong>Type:</strong> Verbless (כִּי embedded clause) &nbsp;|&nbsp; <strong>Fronted:</strong> טוֹב (predicate adjective before subject; subject implied from context) &nbsp;|&nbsp; <strong>Verb:</strong> None &nbsp;|&nbsp; <strong>Gloss:</strong> "that it was good" — כִּי = subordinating conjunction; implied copula "was"</td>
 </tr>
-</table></div>
+</table>
 
 <hr>
 <h2>Passage 2 — Genesis 3:1–5 (The Serpent and Eve)</h2>
@@ -123,7 +136,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="hebrew">לֹ֥א מ֖וֹת תְּמֻתֽוּן <small style="font-size:.8em;direction:ltr;unicode-bidi:embed">(Gen 3:4)</small></p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Clause</th><th>Clause Type</th><th>Fronted Element (if any)</th><th>Verb &amp; Conjugation</th><th>Gloss</th><th></th></tr>
 
 <tr>
@@ -164,7 +177,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="p2a7">
   <td colspan="7"><strong>Type:</strong> Verbal — IA fronted (emphatic) &nbsp;|&nbsp; <strong>Fronted:</strong> מ֖וֹת (Infinitive Absolute Qal of מוּת) — fronted before finite verb for emphatic negation &nbsp;|&nbsp; <strong>Verb:</strong> תְּמֻתֽוּן — Qal Imperfect 2mp &nbsp;|&nbsp; <strong>Gloss:</strong> "You will not surely die" — IA + Imperfect pair; emphatic negation</td>
 </tr>
-</table></div>
+</table>
 
 <hr>
 <h2>Passage 3 — Deuteronomy 6:4–5 (The Shema)</h2>
@@ -174,7 +187,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="hebrew">וְאָהַבְתָּ֙ אֵ֣ת יְהוָ֣ה אֱלֹהֶ֔יךָ בְּ/כָל-לְבָבְךָ֥ <small style="font-size:.8em;direction:ltr;unicode-bidi:embed">(Deu 6:5)</small></p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Clause</th><th>Clause Type</th><th>Fronted Element (if any)</th><th>Verb &amp; Conjugation</th><th>Gloss</th><th></th></tr>
 
 <tr>
@@ -215,7 +228,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="p3a10">
   <td colspan="7"><strong>Type:</strong> Verbal — Weqatal &nbsp;|&nbsp; <strong>Fronted:</strong> None &nbsp;|&nbsp; <strong>Verb:</strong> וְאָהַבְתָּ֙ — Weqatal Qal 2ms &nbsp;|&nbsp; <strong>Gloss:</strong> "And you shall love the LORD your God" — Weqatal carries imperatival force, continuing the command of שְׁמַ֖ע</td>
 </tr>
-</table></div>
+</table>
 
 <hr>
 <h2>Passage 4 — Genesis 22:1–2 (The Binding of Isaac)</h2>
@@ -226,7 +239,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="hebrew">אֶת-יִצְחָ֖ק אֲשֶׁ֣ר אָהַ֑בְתָּ <small style="font-size:.8em;direction:ltr;unicode-bidi:embed">(Gen 22:2b)</small></p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Clause</th><th>Clause Type</th><th>Fronted Element (if any)</th><th>Verb &amp; Conjugation</th><th>Gloss</th><th></th></tr>
 
 <tr>
@@ -254,7 +267,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="p4a12">
   <td colspan="7"><strong>Type:</strong> Verbal — Object fronted &nbsp;|&nbsp; <strong>Fronted:</strong> אֶת-יִצְחָ֖ק (direct object, אֵת-marked) — foregrounded for emotional emphasis &nbsp;|&nbsp; <strong>Verb:</strong> אָהַ֑בְתָּ — Qal Perfect 2ms &nbsp;|&nbsp; <strong>Gloss:</strong> "Isaac, whom you love"</td>
 </tr>
-</table></div>
+</table>
 
 <hr>
 <h2>Passage 5 — Mixed Clauses (Jdg 16:20 / Gen 4:9 / Exo 20:2)</h2>
@@ -265,7 +278,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="hebrew">אָנֹכִ֖י יְהוָ֣ה אֱלֹהֶ֑יךָ <small style="font-size:.8em;direction:ltr;unicode-bidi:embed">(Exo 20:2)</small></p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Clause</th><th>Clause Type</th><th>Fronted Element (if any)</th><th>Verb &amp; Conjugation</th><th>Gloss</th><th></th></tr>
 
 <tr>
@@ -306,7 +319,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="p5a15">
   <td colspan="7"><strong>Type:</strong> Verbless (identity) &nbsp;|&nbsp; <strong>Fronted:</strong> None &nbsp;|&nbsp; <strong>Verb:</strong> None &nbsp;|&nbsp; <strong>Gloss:</strong> "I am the LORD your God" — pronoun subject (אָנֹכִ֖י) + noun predicate (יְהוָ֣ה אֱלֹהֶ֑יךָ); divine self-identification formula</td>
 </tr>
-</table></div>
+</table>
 
 <hr>
 <div class="reflect">

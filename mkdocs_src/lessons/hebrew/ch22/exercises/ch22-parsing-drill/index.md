@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
 p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;margin:.8em 0}
+table{border-collapse:collapse;width:100%;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -31,6 +31,19 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
   .answer-row{display:none!important}
 }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 22 — Qal Participle Parsing Drill</h1>
@@ -46,7 +59,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <h2>Part A — Active Participle, Strong Roots</h2>
 <p class="sub">All forms are Qal active participles. Parse the root, class, gender/number, and function.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>Gender/Number</th><th>Function</th><th></th></tr>
 
 <tr><td>1</td><td class="hebrew">שֹׁמֵ֖ר</td><td><input class="parse-field" id="1-ap"></td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-cl"></td><td><input class="parse-field" id="1-gn"></td><td><input class="parse-field" id="1-fn"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -72,11 +85,11 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>8</td><td class="hebrew">עֹבֵ֖ר</td><td><input class="parse-field" id="8-ap"></td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-cl"></td><td><input class="parse-field" id="8-gn"></td><td><input class="parse-field" id="8-fn"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a8"><td colspan="8">Active · עבר · Strong A · ms · Substantive — "the one passing by"; common in narrative</td></tr>
-</table></div>
+</table>
 
 <h2>Part B — Active Participle, Weak Roots</h2>
 <p class="sub">Parse root, root class, gender/number, and function.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Gender/Number</th><th>Function</th><th></th></tr>
 
 <tr><td>9</td><td class="hebrew">עֹשֶֽׂה</td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-cl"></td><td><input class="parse-field" id="9-gn"></td><td><input class="parse-field" id="9-fn"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
@@ -102,11 +115,11 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>16</td><td class="hebrew">גֹּאֵ֣ל</td><td><input class="parse-field" id="16-r"></td><td><input class="parse-field" id="16-cl"></td><td><input class="parse-field" id="16-gn"></td><td><input class="parse-field" id="16-fn"></td><td><button class="toggle-btn" onclick="tog('a16')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a16"><td colspan="7">גאל · Strong A · ms · Substantive — "redeemer / kinsman-redeemer"; theological title; holem-waw + tsere</td></tr>
-</table></div>
+</table>
 
 <h2>Part C — Passive Participle</h2>
 <p class="sub">Parse each form: active or passive, root, class, gender/number, function.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>Gender/Number</th><th>Function</th><th></th></tr>
 
 <tr><td>17</td><td class="hebrew">בָּר֥וּךְ</td><td><input class="parse-field" id="17-ap"></td><td><input class="parse-field" id="17-r"></td><td><input class="parse-field" id="17-cl"></td><td><input class="parse-field" id="17-gn"></td><td><input class="parse-field" id="17-fn"></td><td><button class="toggle-btn" onclick="tog('a17')">▶ Answer</button></td></tr>
@@ -129,11 +142,11 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>23</td><td class="hebrew">בְּלוּלָ֥ה</td><td><input class="parse-field" id="23-ap"></td><td><input class="parse-field" id="23-r"></td><td><input class="parse-field" id="23-cl"></td><td><input class="parse-field" id="23-gn"></td><td><input class="parse-field" id="23-fn"></td><td><button class="toggle-btn" onclick="tog('a23')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a23"><td colspan="8">Passive · בלל · Geminate · fs · Attributive — "mixed with oil"; Lev/Num grain offering formula (38× Torah); shewa + shureq + ָה</td></tr>
-</table></div>
+</table>
 
 <h2>Part D — Discrimination</h2>
 <p class="sub">Identify each form: Qal active ptc., passive ptc., Perfect, Imperfect, IC, or IA.</p>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <tr><th>#</th><th>Form</th><th>Identification</th><th>Root</th><th>Notes</th><th></th></tr>
 
 <tr><td>24</td><td class="hebrew">שֹׁמֵ֖ר</td><td><input class="parse-field" id="24-id"></td><td><input class="parse-field" id="24-r"></td><td><input class="parse-field" id="24-nt"></td><td><button class="toggle-btn" onclick="tog('a24')">▶ Answer</button></td></tr>
@@ -162,7 +175,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>32</td><td class="hebrew">יִ/יְשֵׁ֣ב</td><td><input class="parse-field" id="32-id"></td><td><input class="parse-field" id="32-r"></td><td><input class="parse-field" id="32-nt"></td><td><button class="toggle-btn" onclick="tog('a32')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a32"><td colspan="6">Qal Imperfect 3ms · ישב · יִ prefix = Imperfect; active ptc. would be יוֹשֵׁ֖ב (yod + holem-waw)</td></tr>
-</table></div>
+</table>
 
 <script>
 function tog(id){

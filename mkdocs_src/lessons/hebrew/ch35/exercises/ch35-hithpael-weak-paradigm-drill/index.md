@@ -13,7 +13,7 @@ h3 { font-size: .97rem; margin-top: 1.4rem; color: #444; }
 .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
 .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
 .note { background: #fff8e8; border-left: 4px solid #e0a020; padding: .6rem 1rem; margin: .8rem 0; font-size: .9rem; color: #6b4c10; }
-table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
+table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
 th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
 td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
 td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -34,6 +34,19 @@ button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
 hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Ch35 Hithpael Weak Paradigm Drill</h1>
@@ -50,7 +63,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <h2>Part A — Root גלה (III-ה)</h2>
 
 <h3>A1 — Perfect (5 forms)</h3>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-a1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -64,10 +77,10 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">5</td><td class="pgn">3cp</td><td><input class="parse-field" id="f-a5" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a5')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a5"><td class="ans-lbl">✓</td><td class="pgn">3cp</td><td class="heb-ans">הִתְגַּלּוּ</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h3>A2 — Imperfect (4 forms)</h3>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-b1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
@@ -79,10 +92,10 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">4</td><td class="pgn">1cp</td><td><input class="parse-field" id="f-b4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b4"><td class="ans-lbl">✓</td><td class="pgn">1cp</td><td class="heb-ans">נִתְגַּלֶּה</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h3>A3 — Imperative (3 forms)</h3>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-c1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
@@ -92,10 +105,10 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">3</td><td class="pgn">2mp</td><td><input class="parse-field" id="f-c3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c3')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-c3"><td class="ans-lbl">✓</td><td class="pgn">2mp</td><td class="heb-ans">הִתְגַּלּוּ</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <h3>A4 — Participle (2 forms)</h3>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">ms</td><td><input class="parse-field" id="f-d1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('d1')">▶ Answer</button></td></tr>
@@ -103,20 +116,20 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">2</td><td class="pgn">mp</td><td><input class="parse-field" id="f-d2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('d2')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-d2"><td class="ans-lbl">✓</td><td class="pgn">mp</td><td class="heb-ans">מִתְגַּלִּים</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <hr class="sec">
 
 <h2>Part B — Metathesis: Root צדק (R1 = צ)</h2>
 
 <h3>B1 — Perfect (1 form, showing metathesis)</h3>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-e1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('e1')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-e1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">הִצְטַדֵּק</td><td></td></tr>
 </tbody>
-</table></div>
+</table>
 
 <script>
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}

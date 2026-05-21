@@ -10,7 +10,7 @@
   h1 { font-size: 1.3em; }
   h2 { font-size: 1.1em; margin-top: 1.5em; }
   p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
-  table { border-collapse: collapse;  margin-bottom: 1.5em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
   th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
   th { background: #e8e8e8; }
   td.form { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; }
@@ -26,6 +26,19 @@
     .answer-row { display: none !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>BBA Chapter 2 — Aramaic Vowel Identification</h1>
@@ -38,16 +51,16 @@
 </div>
 
 <h2>Part A — Long Vowels (1–5)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table id="tA"></table></div>
+<table id="tA"></table>
 
 <h2>Part B — Short Vowels (6–10)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table id="tB"></table></div>
+<table id="tB"></table>
 
 <h2>Part C — Reduced Vowels (11–15)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table id="tC"></table></div>
+<table id="tC"></table>
 
 <h2>Part D — Matres Lectionis Examples (16–20)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table id="tD"></table></div>
+<table id="tD"></table>
 
 <script>
 function buildTable(tableId, headers, rows, answers) {

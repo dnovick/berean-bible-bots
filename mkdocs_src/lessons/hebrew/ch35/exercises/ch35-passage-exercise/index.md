@@ -12,7 +12,7 @@
   h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
   .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
   .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
-  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
@@ -38,6 +38,19 @@
     .answer-row { display: none !important; }
     input.parse-field { border: none; border-bottom: 1px solid #999; }
   }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -69,7 +82,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיִּשְׁתַּחוּ [1]</strong> לַיהוָה</div>
 <p class="translation">"And he bowed down before the LORD." (Gen 24:26)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>וַיִּשְׁתַּחוּ</td>
@@ -83,12 +96,12 @@
   <tr class="answer-row" id="a1">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Wayyiqtol | 3ms | שחה | <em>Reflexive</em> — "and he bowed down"; I-שׁ metathesis (הִתְ + שׁ → הִשְׁתַּ); III-ה short form (וּ ending in Wayyiqtol 3ms).</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֹּ֣אמֶר אַבְרָהָ֗ם אֶל־נְעָרָ֡יו שְׁבוּ־לָכֶ֣ם פֹּ֣ה עִם־הַחֲמוֹר֒ וַאֲנִ֣י וְהַנַּ֔עַר נֵלְכָ֖ה עַד־כֹּ֑ה <strong>וְנִשְׁתַּחֲוֶ֔ה [2]</strong> וְנָשׁ֥וּבָה אֲלֵיכֶֽם׃</div>
 <p class="translation">"And Abraham said to his young men, 'Stay here with the donkey; I and the young man will go over there and worship [2], and we will come back to you.'" (Gen 22:5)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>וְנִשְׁתַּחֲוֶה</td>
@@ -102,12 +115,12 @@
   <tr class="answer-row" id="a2">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Cohortative | 1cp | שחה | <em>Reflexive</em> "let us worship/bow down" — I-שׁ metathesis: הִתְ + שׁ → הִשְׁתַּ; cohortative prefix נ replaces הִ: וְנִשְׁתַּחֲוֶה. III-ה ending: imperfect/cohortative takes ֶה. The full expected form: יִתְשַׁחֲוֶה → הִשְׁתַּחֲוֶה → cohortative נִשְׁתַּחֲוֶה.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיַּ֥רְא וַיָּ֖רָץ לִקְרָאתָ֑ם מִפֶּ֣תַח הָאֹ֔הֶל <strong>וַיִּשְׁתַּ֖חוּ [3]</strong> אָֽרְצָה׃</div>
 <p class="translation">"When he saw them, he ran from the tent door to meet them and bowed down [3] to the ground." (Gen 18:2)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>וַיִּשְׁתַּחוּ</td>
@@ -121,12 +134,12 @@
   <tr class="answer-row" id="a3">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Wayyiqtol | 3ms | שחה | <em>Reflexive</em> "and he bowed down" — Wayyiqtol: וַיִּ + שְׁתַּחוּ; I-שׁ metathesis preserved; III-ה in Wayyiqtol 3ms = short form (no ה ending, final vowel וּ from 3ms apocopation + suffix). Compare: form וַיִּשְׁתַּחֲווּ (3mp) has different ending.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">לֹֽא־<strong>תִשְׁתַּחְוֶ֥ה [4]</strong>־לָהֶ֖ם וְלֹ֣א תָעָבְדֵ֑ם כִּ֣י אָנֹכִ֞י יְהוָ֤ה אֱלֹהֶ֙יךָ֙</div>
 <p class="translation">"You shall not bow down [4] to them or serve them, for I the LORD your God…" (Exo 20:5)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r4">
     <td>4</td><td>תִשְׁתַּחְוֶה</td>
@@ -140,14 +153,14 @@
   <tr class="answer-row" id="a4">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperfect | 2ms | שחה | <em>Reflexive</em> "you shall not bow down" — תִ- (2ms prefix) + שְׁתַּחְוֶה; I-שׁ metathesis in imperfect; III-ה: ֶה ending in imperfect 2ms. This is the Decalogue's prohibition of idolatry — most frequent verb in the prohibition against bowing to idols.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="note-box"><strong>Distractor alert — Qal:</strong> Psalm 95:6 has a Qal cohortative. Do not confuse the cohortative prefix נ with the Hithpael prefix הִתְ.</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">בֹּ֭אוּ נִשְׁתַּחֲוֶ֣ה וְנִכְרָ֑עָה <strong>נִבְרְכָ֥ה [5]</strong> לִֽפְנֵי־יְהוָ֥ה עֹשֵֽׂנוּ׃</div>
 <p class="translation">"Come, let us bow down and kneel; let us kneel [5] before the LORD our maker." (Psa 95:6)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>נִבְרְכָה</td>
@@ -161,7 +174,7 @@
   <tr class="answer-row" id="a5">
     <td colspan="8">✗ <strong>No — Qal</strong> | Cohortative | 1cp | ברך | <em>Qal</em> "let us kneel/bless" — נִ- is the 1cp cohortative prefix (נ + shewa), NOT a Hithpael or Niphal marker. Qal of ברך here = "to kneel" (cf. בֶּרֶךְ = knee). No הִתְ infix. No dagesh forte in R2.</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Passage B — Genesis 35:7 · 1 Samuel 10:6, 11</h2>
 <h3>Context: Jacob at Bethel; Saul's prophetic transformation.</h3>
@@ -171,7 +184,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיִּבֶן֩ שָׁ֨ם מִזְבֵּ֜חַ וַיִּקְרָ֧א לַמָּק֛וֹם אֵ֥ל בֵּֽית־אֵ֖ל כִּ֣י שָׁ֣ם <strong>נִגְלֽוּ [6]</strong>־אֵלָ֑יו הָאֱלֹהִ֗ים בְּבָרְח֛וֹ מִפְּנֵ֥י אָחִֽיו׃</div>
 <p class="translation">"And there he built an altar and called the place El-bethel, because there God had revealed himself [6] to him when he fled from his brother." (Gen 35:7)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>נִגְלוּ</td>
@@ -185,12 +198,12 @@
   <tr class="answer-row" id="a6">
     <td colspan="8">✗ <strong>No — Niphal</strong> | Perfect | 3cp | גלה | <em>Niphal — Reflexive/Passive</em> "revealed themselves / were revealed" — נִ- prefix = Niphal, NOT Hithpael הִתְ-. Note: a Hithpael of גלה would be הִתְגַּלָּה (3ms) — the forms look completely different. III-ה Niphal perfect 3cp: נִגְלוּ (ה drops before 3cp suffix).</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְצָלְחָ֨ה עָלֶ֜יךָ ר֣וּחַ יְהוָ֗ה <strong>וְהִתְנַבִּ֙יתָ֙ [7]</strong> עִמָּ֔ם וְנֶהְפַּכְתָּ֖ לְאִ֥ישׁ אַחֵֽר׃</div>
 <p class="translation">"Then the Spirit of the LORD will rush upon you, and you will prophesy [7] with them and be turned into another man." (1 Sam 10:6)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r7">
     <td>7</td><td>וְהִתְנַבִּיתָ</td>
@@ -204,12 +217,12 @@
   <tr class="answer-row" id="a7">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Weqatal | 2ms | נבא | <em>Denominative/Iterative</em> "you will prophesy" — I-נ root: נ does NOT assimilate in Hithpael (contrast Niphal where נ of root follows נִ prefix). הִתְ- + נַ + בִּי + 2ms suffix תָ. III-א: א quiesces; hireq-yod before suffix. Weqatal = consequence of the Spirit's coming.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיִּתְנַבְּאוּ [8]</strong> עַד בּ֥וֹא הַמִּנְחָֽה׃</div>
 <p class="translation">"And they prophesied [8] until the offering of the evening sacrifice." (1 Sam 10:11a)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>וַיִּתְנַבְּאוּ</td>
@@ -223,7 +236,7 @@
   <tr class="answer-row" id="a8">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Wayyiqtol | 3mp | נבא | <em>Denominative/Iterative</em> "and they prophesied" — Wayyiqtol: וַיִּתְ- prefix (Hithpael Wayyiqtol) + נַבְּאוּ; I-נ (no assimilation); III-א with 3mp suffix וּ (א quiesces). Same root as #7 — weqatal perfect 2ms vs. wayyiqtol 3mp.</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Passage C — Genesis 44:16 · 2 Kings 8:29</h2>
 <h3>Context: Judah's plea before Joseph; Joram's return for healing.</h3>
@@ -233,7 +246,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֹּ֣אמֶר יְהוּדָ֗ה מַה־נֹּאמַ֤ר לַֽאדֹנִי֙ מַה־נְּדַבֵּ֔ר וּמַ֖ה <strong>נִּצְטַדָּ֑ק [9]</strong> הָאֱלֹהִ֗ים מָצָ֛א אֶת־עֲוֺ֥ן עֲבָדֶ֖יךָ</div>
 <p class="translation">"And Judah said, 'What shall we say to my lord? What shall we speak? How can we justify ourselves [9]? God has found out the iniquity of your servants.'" (Gen 44:16)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>נִצְטַדָּק</td>
@@ -247,12 +260,12 @@
   <tr class="answer-row" id="a9">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperfect | 1cp | צדק | <em>Reflexive/Estimative</em> "how can we justify ourselves?" — I-צ metathesis: expected הִתְצַדֵּק → ת and צ swap → הִצְתַּדֵּק → ת voices to ט → הִצְטַדֵּק; with 1cp prefix נ: נִצְטַדָּק. Qamets under R2 (דָּ) = pause/long form. One of only a handful of I-צ Hithpael forms in the OT.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיָּ֣שָׁב יֹורָ֣ם הַמֶּ֗לֶךְ <strong>לְהִתְרַפֵּ֥א [10]</strong> בְיִזְרְעֶ֖אל מִן־הַמַּכִּ֑ים</div>
 <p class="translation">"And King Joram returned to be healed [10] in Jezreel from the wounds…" (2 Kgs 8:29)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>לְהִתְרַפֵּא</td>
@@ -266,14 +279,14 @@
   <tr class="answer-row" id="a10">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Inf. Construct | — | רפא | <em>Reflexive</em> "to be healed / to seek healing" — הִתְ- prefix + רַפֵּא; III-א root: א quiesces at end. Lamed-preposition לְ marks infinitive construct. Compare Piel רִפֵּא (to heal someone else) vs. Hithpael הִתְרַפֵּא (to heal oneself / be healed — reflexive or tolerative).</td>
   </tr>
-</table></div>
+</table>
 
 <div class="note-box"><strong>Distractor alert — Hophal:</strong> The next verb begins with הוּ- (u-class vowel after הּ). This is the Hophal prefix, NOT the Hithpael הִתְ- prefix.</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיְהִ֗י כִּשְׁמֹ֤עַ אֱלִישָׁע֙ כִּי <strong>הוּשַׁ֥ב [11]</strong> הַמֶּ֖לֶךְ</div>
 <p class="translation">"And when Elisha heard that the king had returned [11]…" (2 Kgs 8:29b)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r11">
     <td>11</td><td>הוּשַׁב</td>
@@ -287,7 +300,7 @@
   <tr class="answer-row" id="a11">
     <td colspan="8">✗ <strong>No — Hophal</strong> | Perfect | 3ms | שוב | <em>Hophal — Passive</em> "was returned / had returned" — הוּ- prefix (u-class vowel = Hophal) + שַׁב; biconsonantal root שׁוּב. No תְ after הּ. Compare: Hithpael of שׁוּב would be הִתְשׁוֹבֵב (not common); Hophal הוּשַׁב = was caused to return.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="reflection">
   <strong>Reflection Questions</strong>
@@ -300,7 +313,7 @@
 
 <div class="answer-key">
   <h2>Quick Answer Key</h2>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th></tr>
     <tr><td>1</td><td>וַיִּשְׁתַּחוּ</td><td>Yes</td><td>Wayyiqtol</td><td>3ms</td><td>שחה</td><td>Hithpael — Reflexive; I-שׁ metathesis; III-ה short form (וּ ending)</td></tr>
     <tr><td>2</td><td>וְנִשְׁתַּחֲוֶה</td><td>Yes</td><td>Cohortative</td><td>1cp</td><td>שחה</td><td>Hithpael — Reflexive; I-שׁ metathesis, III-ה</td></tr>
@@ -313,7 +326,7 @@
     <tr><td>9</td><td>נִצְטַדָּק</td><td>Yes</td><td>Imperfect</td><td>1cp</td><td>צדק</td><td>Hithpael — Reflexive/Estimative; I-צ metathesis</td></tr>
     <tr><td>10</td><td>לְהִתְרַפֵּא</td><td>Yes</td><td>Inf. Construct</td><td>—</td><td>רפא</td><td>Hithpael — Reflexive/Tolerative; III-א</td></tr>
     <tr><td>11</td><td>הוּשַׁב</td><td>No</td><td>Perfect</td><td>3ms</td><td>שוב</td><td>Hophal — Passive</td></tr>
-  </table></div>
+  </table>
 </div>
 
 <script>

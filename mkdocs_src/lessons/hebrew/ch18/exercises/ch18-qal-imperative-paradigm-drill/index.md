@@ -11,7 +11,7 @@
   h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -32,6 +32,19 @@
   hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
   @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Ch18 Qal Imperative Paradigm Drill</h1>
@@ -48,7 +61,7 @@
   <button class="clr" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr>
 
   <tr>
@@ -103,7 +116,7 @@
     <td></td>
   </tr>
 
-</table></div>
+</table>
 
 <script>
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}

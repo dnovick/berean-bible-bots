@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -30,6 +30,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 31 — Stem Identification Drill (Weak Roots)</h1>
@@ -37,13 +50,13 @@
 
 <p>For each form, identify the <strong>Stem</strong> (Qal / Niphal / Hiphil / Piel), <strong>Conjugation</strong>, <strong>PGN</strong> (where applicable), and <strong>Root</strong>. Type your answers in the fields, then click <strong>▶ Answer</strong> to check.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
+<table class="ref-table">
   <tr><th>Stem</th><th>Key Marker</th></tr>
   <tr><td><strong>Qal</strong></td><td>No prefix; basic vowel pattern; no dagesh in R2; III-ה ends in ָה (qamets-he, no dagesh)</td></tr>
   <tr><td><strong>Niphal</strong></td><td>נִ prefix (perfect) or assimilated dagesh in R1 (imperfect); III-ה ends in ָה with chirik–qamets</td></tr>
   <tr><td><strong>Hiphil</strong></td><td>הִ prefix (perfect); יַ/תַ prefix (imperfect); III-ה lacks chirik-yod but keeps patach prefix</td></tr>
   <tr><td><strong>Piel</strong></td><td>Dagesh in R2 (or virtual doubling for gutturals); shewa prefix in imperfect; מְ prefix in participle; III-ה ends in ָּה (qamets + dagesh-he)</td></tr>
-</table></div>
+</table>
 
 <div class="tip">
   <strong>I-Guttural tip:</strong> Gutturals (ב, ח, ע, etc.) reject dagesh. For Piel, look instead for <em>compensatory lengthening</em> — the vowel before R2 is longer than expected (e.g., qamets instead of chirik, tsere instead of segol).
@@ -56,7 +69,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th>
   </tr>
@@ -373,7 +386,7 @@
     <td colspan="7"><strong>Qal · Participle · ms · גלה</strong> — Holem under ג; no מ prefix; segol + he = Qal active participle of III-ה root. Compare Piel #23 (מְגַלֶּה) which has the מְ prefix and dagesh in ל</td>
   </tr>
 
-</table></div>
+</table>
 
 <script>
 function toggle(id) {

@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.5em; color: #333; border-left: 4px solid #2a4a6e; padding-left: .6em; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -33,6 +33,19 @@
     input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -56,7 +69,7 @@
 
 <h3>Part A — Root: <span class="heb">בוא</span> (Hollow) — "to come / to bring / to be brought"</h3>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
@@ -96,11 +109,11 @@
   <tr class="answer-row" id="a3">
     <td colspan="7"><strong>Hophal · Perfect · 3ms</strong> — he was brought · <em>Hophal marker: הוּ prefix (shureq) = characteristic of all weak Hophal forms; long ā vowel in contracted hollow stem.</em></td>
   </tr>
-</table></div>
+</table>
 
 <h3>Part B — Root: <span class="heb">ירד</span> (I-י) — "to go down / to bring down / to be brought down"</h3>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
@@ -140,11 +153,11 @@
   <tr class="answer-row" id="a6">
     <td colspan="7"><strong>Hophal · Perfect · 3ms</strong> — he was brought down · <em>Hophal marker: הוּ prefix (shureq). Compare Hiphil הוֹ (holem-waw) vs. Hophal הוּ (shureq) — both are o-class but the Hophal uses the closer ū vowel.</em></td>
   </tr>
-</table></div>
+</table>
 
 <h3>Part C — Root: <span class="heb">שׁוב</span> (Hollow) — "to return / to bring back / to be brought back"</h3>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
@@ -184,11 +197,11 @@
   <tr class="answer-row" id="a9">
     <td colspan="7"><strong>Hophal · Perfect · 3ms</strong> — he was brought back · <em>Hophal hollow: הוּ prefix (shureq) + contracted stem with patach. Compare Hiphil הֵשִׁיב (tsere + chiriq-yod) vs. Hophal הוּשַׁב (shureq + patach).</em></td>
   </tr>
-</table></div>
+</table>
 
 <h3>Part D — Root: <span class="heb">קום</span> (Hollow) — "to arise / to raise up / to be raised up"</h3>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
@@ -228,11 +241,11 @@
   <tr class="answer-row" id="a12">
     <td colspan="7"><strong>Hophal · Perfect · 3ms</strong> — he was raised up / was established · <em>Hophal hollow: הוּ prefix (shureq) + contracted stem with patach. Exo 40:17: the tabernacle was erected (הוּקַם הַמִּשְׁכָּן).</em></td>
   </tr>
-</table></div>
+</table>
 
 <h3>Part E — Root: <span class="heb">ילד</span> (I-י) — "to bear/father / to beget / to be born"</h3>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
@@ -272,7 +285,7 @@
   <tr class="answer-row" id="a15">
     <td colspan="7"><strong>Hophal · Perfect · 3ms</strong> — he was born · <em>Hophal I-י: הוּ prefix (shureq). The implied agent is the parent (or God). Compare Hiphil הוֹ (holem-waw) vs. Hophal הוּ (shureq).</em></td>
   </tr>
-</table></div>
+</table>
 
 <div class="discussion">
   <strong>Discussion Questions</strong>

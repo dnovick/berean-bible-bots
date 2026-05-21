@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
   .subtitle { color: #555; font-style: italic; margin: .3em 0 1em; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin-bottom: 1.5em; font-size: .95em; }
-  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .93em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
   th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
   td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #f5f7fb; }
@@ -33,6 +33,19 @@
     body {  }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>BBG Chapter 27 — Spot the Present Participle</h1>
@@ -52,7 +65,7 @@
 
 <h2>Part A — Adverbial Participles (1–9)</h2>
 
-<div style="overflow-x:auto;max-width:100%;"><table id="tbl-a">
+<table id="tbl-a">
 <thead>
   <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
 </thead>
@@ -230,10 +243,10 @@
 </tr>
 
 </tbody>
-</table></div>
+</table>
 
 <h2>Part B — Adjectival Participles (10–12)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead>
   <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
 </thead>
@@ -297,10 +310,10 @@
 </tr>
 
 </tbody>
-</table></div>
+</table>
 
 <h2>Part C — Substantival and εἰμί (13–15)</h2>
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead>
   <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
 </thead>
@@ -364,7 +377,7 @@
 </tr>
 
 </tbody>
-</table></div>
+</table>
 
 <script>
 function toggleAnswer(id) {

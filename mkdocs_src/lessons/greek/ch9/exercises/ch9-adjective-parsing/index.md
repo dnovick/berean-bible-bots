@@ -9,7 +9,7 @@
   body { font-family: Georgia, serif;    color: #222; }
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -29,6 +29,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 9 — Adjective Parsing Drill</h1>
@@ -46,7 +59,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Greek Phrase</th><th>Case</th><th>Number</th><th>Gender</th><th>Position</th><th></th></tr>
 
   <tr>
@@ -249,7 +262,7 @@
   </tr>
   <tr class="answer-row" id="r20"><td colspan="7"><strong>N · S · M · Predicate</strong> — "The law is holy." (cf. Rom 7:12)</td></tr>
 
-</table></div>
+</table>
 
 <script>
 function toggle(id) {

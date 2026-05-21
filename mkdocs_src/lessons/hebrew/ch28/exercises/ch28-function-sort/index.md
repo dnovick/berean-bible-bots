@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -35,6 +35,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 28 — Hophal Semantic Function Sorting</h1>
@@ -42,7 +55,7 @@
 
 <p>The Hophal is the <strong>causative-passive</strong> stem — the passive of the Hiphil. Every Hophal expresses that the subject <em>undergoes</em> being caused to do or experience something. Classify each form below using one of the five function codes. Type your answer in the Function column, then click <strong>▶ Answer</strong> to check.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
+<table class="ref-table">
   <tr>
     <th>Code</th><th>Function</th><th>Description</th>
   </tr>
@@ -51,7 +64,7 @@
   <tr><td><strong>SR</strong></td><td>Speech Reporting</td><td>Information was reported/told (passive of Hiphil <span class="heb">נָגַד</span>)</td></tr>
   <tr><td><strong>SC</strong></td><td>State Change</td><td>Subject was caused to enter a new state (returned, set up, removed)</td></tr>
   <tr><td><strong>SA</strong></td><td>Simple Action</td><td>Hophal is the primary form; the Hiphil has no Qal to contrast</td></tr>
-</table></div>
+</table>
 
 <div class="tip">
   <strong>Tip:</strong> Ask what the corresponding Hiphil would mean, then flip it to passive.
@@ -68,7 +81,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Conjugation</th><th>Ref</th><th>Contextual Gloss</th><th>Function</th><th></th>
   </tr>
@@ -398,7 +411,7 @@
     <td colspan="7"><strong>LF — Legal Formula</strong> · Root: <span class="heb">מוּת</span> · Infinitive construct used nominally in the penalty clause: "the putting-to-death of the murderer is required"</td>
   </tr>
 
-</table></div>
+</table>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

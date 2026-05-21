@@ -16,7 +16,7 @@
   .hebrew { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; line-height: 2; margin: .3rem 0; }
   .english { color: #555; font-style: italic; margin: .2rem 0 .6rem; }
   .watchout { background: #fff8e1; border-left: 3px solid #f0a500; padding: .5rem .75rem; margin: .4rem 0; font-size: .9rem; }
-  table { border-collapse: collapse;  margin: .5rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .5rem 0; font-size: .92rem; }
   th { background: #e8e8e8; padding: .4rem .6rem; border: 1px solid #ccc; text-align: left; }
   td { padding: .35rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
   td.verb-cell { font-size: 1.1rem; direction: rtl; unicode-bidi: embed; font-weight: bold; }
@@ -60,6 +60,19 @@
     .answer-row { display: none !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 26 — "Spot the Hiphil" Passage Exercise</h1>
@@ -88,7 +101,7 @@
   <span class="ref">6:12</span>
   <div class="hebrew">וַיַּ֧רְא אֱלֹהִ֛ים אֶת־הָאָ֖רֶץ וְהִנֵּ֣ה <strong>נִשְׁחָ֑תָה</strong> כִּֽי־<strong>הִשְׁחִ֧ית</strong> כָּל־בָּשָׂ֛ר אֶת־דַּרְכּ֖וֹ עַל־הָאָֽרֶץ</div>
   <div class="english">"And God saw the earth, and behold, it [1] ____; for all flesh had [2] ____ its way upon the earth."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">1</td>
@@ -120,7 +133,7 @@
       <td class="answer-hebrew">הִשְׁחִית</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Perfect (qatal) 3ms | שָׁחַת | Causative — <em>had corrupted</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <!-- Verb 3 -->
@@ -128,7 +141,7 @@
   <span class="ref">6:13</span>
   <div class="hebrew">הִנְנִ֤י <strong>מַשְׁחִיתָם֙</strong> עִם־הָאָ֔רֶץ</div>
   <div class="english">"Behold, I am [3] ____ them with the earth."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">3</td>
@@ -145,7 +158,7 @@
       <td class="answer-hebrew">מַשְׁחִיתָם</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Participle + 3mp suffix ms | שָׁחַת | Causative — <em>destroying them</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <!-- Verb 4 -->
@@ -153,7 +166,7 @@
   <span class="ref">6:17</span>
   <div class="hebrew">וַאֲנִ֗י הִנְנִ֤י <strong>מֵבִיא֙</strong> אֶת־הַמַּבּ֣וּל מַ֔יִם עַל־הָאָ֖רֶץ</div>
   <div class="english">"As for me, behold, I am [4] ____ the flood of waters upon the earth."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">4</td>
@@ -170,7 +183,7 @@
       <td class="answer-hebrew">מֵבִיא</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Participle ms | בּוֹא | Causative — <em>bringing</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <!-- Verb 5 -->
@@ -178,7 +191,7 @@
   <span class="ref">6:18</span>
   <div class="hebrew">וַהֲקִמֹתִ֥י אֶת־בְּרִיתִ֖י אִתָּ֑ךְ</div>
   <div class="english">"But I will [5] ____ my covenant with you."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">5</td>
@@ -195,7 +208,7 @@
       <td class="answer-hebrew">וַהֲקִמֹתִי</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Weqatal 1cs | קוּם | Factitive — <em>I will establish</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <!-- Verb 6 -->
@@ -203,7 +216,7 @@
   <span class="ref">6:19</span>
   <div class="hebrew">מִכָּל־בָּשָׂר֙ שְׁנַ֣יִם מִכֹּ֔ל <strong>תָּבִ֥יא</strong> אֶל־הַתֵּבָ֖ה</div>
   <div class="english">"Of every living thing of all flesh, you shall [6] ____ two of every kind into the ark."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">6</td>
@@ -220,7 +233,7 @@
       <td class="answer-hebrew">תָּבִיא</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Imperfect 2ms | בּוֹא | Causative — <em>you shall bring</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <!-- Verbs 7–8 -->
@@ -228,7 +241,7 @@
   <span class="ref">6:19–20</span>
   <div class="hebrew">לְ<strong>הַחֲיֹת֙</strong> אִתָּֽךְ … לְ<strong>הַחֲיֽוֹת</strong></div>
   <div class="english">"to [7] ____ them alive with you … to [8] ____ them"</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">7</td>
@@ -260,7 +273,7 @@
       <td class="answer-hebrew">לְהַחֲיוֹת</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Inf. Construct — | חָיָה | Causative — <em>to keep alive</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -272,7 +285,7 @@
   <span class="ref">7:4</span>
   <div class="hebrew">כִּ֣י לְיָמִ֗ים ע֚וֹד שִׁבְעָ֔ה אָנֹכִ֥י <strong>מַמְטִ֣יר</strong> עַל־הָאָ֑רֶץ אַרְבָּעִ֣ים י֔וֹם</div>
   <div class="english">"For in seven days I will [9] ____ rain on the earth forty days."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">9</td>
@@ -289,7 +302,7 @@
       <td class="answer-hebrew">מַמְטִיר</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Participle ms | מָטַר | Causative/Denominative — <em>causing rain to fall</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -301,7 +314,7 @@
   <span class="ref">8:1</span>
   <div class="hebrew">וַיַּ֤עֲבֵר אֱלֹהִים֙ ר֣וּחַ עַל־הָאָ֔רֶץ</div>
   <div class="english">"And God [10] ____ a wind over the earth."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">10</td>
@@ -318,14 +331,14 @@
       <td class="answer-hebrew">וַיַּעֲבֵר</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | עָבַר | Causative — <em>caused to pass over</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">8:9</span>
   <div class="hebrew">וַיָּבֵ֥א אֹתָ֛הּ אֵלָ֖יו אֶל־הַתֵּבָ֑ה</div>
   <div class="english">"And he [11] ____ her back to him into the ark."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">11</td>
@@ -342,14 +355,14 @@
       <td class="answer-hebrew">וַיָּבֵא</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | בּוֹא | Causative — <em>brought</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">8:13</span>
   <div class="hebrew">וַיָּ֤סַר נֹ֙חַ֙ אֶת־מִכְסֵ֣ה הַתֵּבָ֔ה</div>
   <div class="english">"And Noah [12] ____ the covering of the ark."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">12</td>
@@ -366,14 +379,14 @@
       <td class="answer-hebrew">וַיָּסַר</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | סוּר | Causative — <em>removed</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">8:17</span>
   <div class="hebrew"><strong>הַיְצֵ֣א</strong> אִתָּ֗ךְ כָּל־הַחַיָּ֤ה</div>
   <div class="english">"[13] ____ with you every living thing."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">13</td>
@@ -390,14 +403,14 @@
       <td class="answer-hebrew">הַיְצֵא</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Imperative 2ms | יָצָא | Causative — <em>bring out!</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">8:20</span>
   <div class="hebrew">וַיַּ֥עַל עֹלֹ֖ת בַּמִּזְבֵּֽחַ</div>
   <div class="english">"And he [14] ____ burnt offerings on the altar."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">14</td>
@@ -414,14 +427,14 @@
       <td class="answer-hebrew">וַיַּעַל</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | עָלָה | Causative — <em>offered up</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">8:21</span>
   <div class="hebrew">לֹֽא־אֹ֠סִף לְ<strong>הַכֹּ֨ת</strong> אֶת־כָּל־חַ֜י</div>
   <div class="english">"I will never again [15] ____ every living thing."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">15</td>
@@ -438,7 +451,7 @@
       <td class="answer-hebrew">לְהַכֹּת</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Inf. Construct — | נָכָה | Causative — <em>to strike down</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -451,7 +464,7 @@
   <div class="hebrew">כִּי בָרֵ֣ךְ אֲבָרֶכְךָ֗ <strong>וְהַרְבָּ֨ה</strong> <strong>אַרְבֶּ֤ה</strong> אֶת־זַרְעֲךָ֙ כְּכוֹכְבֵ֣י הַשָּׁמַ֔יִם</div>
   <div class="english">"For I will surely bless you, and I will [16] ____ [17] ____ your offspring as the stars of heaven."</div>
   <div class="watchout">⚠ <strong>Watch out:</strong> בָּרֵךְ and אֲבָרֶכְךָ are Piel forms of בָּרַךְ ("to bless") — not Hiphil. Parse only the two bolded verbs.</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">16</td>
@@ -483,7 +496,7 @@
       <td class="answer-hebrew">אַרְבֶּה</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Imperfect 1cs | רָבָה | Causative — <em>I will multiply</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -495,7 +508,7 @@
   <span class="ref">7:2</span>
   <div class="hebrew"><strong>וּנְתָנָ֞ם</strong> יְהוָ֤ה אֱלֹהֶ֙יךָ֙ לְפָנֶ֔יךָ <strong>וְהִכִּיתָ֖ם</strong> <strong>הַכֵּ֣ה</strong> <strong>תַכֶּ֑ה</strong> לֹא־<strong>תִכְרֹ֥ת</strong> לָהֶ֛ם בְּרִ֖ית</div>
   <div class="english">"When the LORD your God [18] ____ them over to you, you shall [19] ____ them — [20] ____ [21] ____ them — you shall [22] ____ no covenant with them."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">18</td>
@@ -572,7 +585,7 @@
       <td class="answer-hebrew">תִכְרֹת</td>
       <td colspan="6">✗ <strong>No — Qal</strong> | Imperfect 2ms | כָּרַת | NOT Hiphil — Qal: <em>you shall make</em> (covenant); plain Qal imperfect; no הִ prefix</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -587,7 +600,7 @@
   <span class="ref" style="margin-top:.8rem">6:10</span>
   <div class="hebrew">וַיּ֥וֹלֶד נֹ֖חַ שְׁלֹשָׁ֣ה בָנִ֑ים</div>
   <div class="english">"And Noah fathered three sons."</div>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th style="width:2.5rem">#</th><th style="width:8rem">Verb</th><th style="width:6rem">Hiphil?</th><th>Conjugation</th><th style="width:6rem">PGN</th><th style="width:7rem">Root</th><th>Stem / Function</th><th style="width:5.5rem"></th></tr>
     <tr>
       <td class="num-cell">B1</td>
@@ -619,7 +632,7 @@
       <td class="answer-hebrew">וַיּוֹלֶד</td>
       <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | יָלַד | Causative — <em>fathered / begat</em></td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -638,7 +651,7 @@
 </div>
 
 <h2>Conjugation Coverage</h2>
-<div style="overflow-x:auto;max-width:100%;"><table class="coverage-table">
+<table class="coverage-table">
   <tr><th>Conjugation</th><th>Verbs</th></tr>
   <tr><td>Wayyiqtol (5)</td><td>#10, #11, #12, #14, B2</td></tr>
   <tr><td>Inf. Construct (3)</td><td>#7, #8, #15</td></tr>
@@ -649,7 +662,7 @@
   <tr><td>Inf. Absolute (2)</td><td>#16, #20</td></tr>
   <tr><td>Imperative (1)</td><td>#13</td></tr>
   <tr><td>Non-Hiphil (3)</td><td>#1 (Niphal Weqatal 3fs), #18 (Qal Weqatal 3ms), #22 (Qal Imperfect 2ms)</td></tr>
-</table></div>
+</table>
 
 <!-- ═══════════════════════════════════════════════════════ REFLECTION -->
 <div class="reflection">

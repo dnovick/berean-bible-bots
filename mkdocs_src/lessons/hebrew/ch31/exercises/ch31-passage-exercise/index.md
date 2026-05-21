@@ -12,7 +12,7 @@
   h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
   .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
   .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
-  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
@@ -39,6 +39,19 @@
     input.parse-field { border: none; border-bottom: 1px solid #999; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 31 — "Spot the Piel Weak" Passage Exercise</h1>
@@ -60,7 +73,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיְצַו [1]</strong> יְהוָה אֱלֹהִים עַל־הָאָדָם לֵאמֹר מִכֹּל עֵץ הַגָּן אָכֹל תֹּאכֵל</div>
 <p class="translation">"And the LORD God <strong>commanded</strong> the man, saying, 'You may freely eat from every tree of the garden…'" (Gen 2:16)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>וַיְצַו</td>
@@ -74,12 +87,12 @@
   <tr class="answer-row" id="a1">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Wayyiqtol | 3ms | צוה | <em>Denominative</em> — "and he commanded." III-ה root צוה: Piel Wayyiqtol 3ms apocopates (final ה drops): וַיְצַו. The וַיְ prefix + patach under צ = Piel Wayyiqtol pattern. Full Impf. would be יְצַוֶּה (see verb 5).</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">הֲמִן הָעֵץ אֲשֶׁר <strong>צִוִּיתִיךָ [2]</strong> לְבִלְתִּי אֲכָל מִמֶּנּוּ אָכָלְתָּ</div>
 <p class="translation">"'…Have you eaten from the tree of which <strong>I commanded you</strong> not to eat?'" (Gen 3:11)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>צִוִּיתִיךָ</td>
@@ -93,12 +106,12 @@
   <tr class="answer-row" id="a2">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Perfect | 1cs + 2ms obj. suffix | צוה | <em>Denominative</em> — "I commanded you." III-ה: Hireq under צ (R1) + dagesh forte in וּ (R2) + Pf. 1cs suffix תִּי + 2ms obj. suffix ךָ. The ו of the root contracts with the vowel pattern in the Perfect.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כִּי שָׁמַעְתָּ לְקוֹל אִשְׁתֶּךָ וַתֹּאכַל מִן הָעֵץ אֲשֶׁר <strong>צִוִּיתִיךָ [3]</strong> לֵאמֹר לֹא תֹאכַל מִמֶּנּוּ</div>
 <p class="translation">"'…because you listened to the voice of your wife and ate of the tree about which <strong>I commanded you</strong>…'" (Gen 3:17)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>צִוִּיתִיךָ</td>
@@ -112,7 +125,7 @@
   <tr class="answer-row" id="a3">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Perfect | 1cs + 2ms obj. suffix | צוה | <em>Denominative</em> — Same form as #2. God repeats the command formula in his verdict speech. Piel Pf. 1cs of צוה III-ה + 2ms suffix.</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Passage B — Genesis 6:18–20 + 18:19 + Exodus 1:17</h2>
 <h3>Context: God commands Noah; Abraham is chosen to command his household; the midwives keep alive.</h3>
@@ -122,7 +135,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַהֲקִמֹתִי אֶת בְּרִיתִי אִתָּךְ <strong>לְהַחֲיוֹת [4]</strong> אִתָּךְ</div>
 <p class="translation">"…and I will establish my covenant with you, <strong>to keep alive</strong> with you…" (Gen 6:18–19)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r4">
     <td>4</td><td>לְהַחֲיוֹת</td>
@@ -136,12 +149,12 @@
   <tr class="answer-row" id="a4">
     <td colspan="8">✗ <strong>No — Hiphil</strong> | Inf. Construct | — | חיה | <em>NOT Piel — Hiphil Inf. Const.</em>: "to keep alive" (causative). The לְהַ- prefix (preposition + הַ) marks Hiphil Inf. Construct. Piel Inf. Const. of same root would be לְחַיּוֹת (no הַ-). The Hiphil emphasizes causative agency.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>חִיָּה [5]</strong> אֶת אֲשֶׁר בָּאָרֶץ</div>
 <p class="translation">"<strong>Keep alive</strong> what is on the earth." (Gen 6:19 context)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>חִיָּה</td>
@@ -155,12 +168,12 @@
   <tr class="answer-row" id="a5">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Perfect | 3ms | חיה | <em>Factitive</em> — "kept alive." III-ה root חיה: Hireq under ח (R1) + dagesh forte in יּ (R2) + ָה (III-ה Pf. 3ms ending). The Piel of חיה = to preserve/keep alive (intensive/factitive of "to live").</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כִּי יְדַעְתִּיו לְמַעַן אֲשֶׁר <strong>יְצַוֶּה [6]</strong> אֶת בָּנָיו וְאֶת בֵּיתוֹ אַחֲרָיו</div>
 <p class="translation">"For I know him, so that he <strong>will command</strong> his sons and his household after him…" (Gen 18:19)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>יְצַוֶּה</td>
@@ -174,12 +187,12 @@
   <tr class="answer-row" id="a6">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Imperfect | 3ms | צוה | <em>Denominative</em> — "will command." III-ה Impf. 3ms: יְ prefix (shewa) + patach under צ + dagesh forte in וּ (R2) + tsere-He (ֶּה) ending. This is the full (non-apocopated) Piel Impf. 3ms of צוה.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיְחַיּוּ [7]</strong> אֶת יַלְדֵי הַנָּשִׁים הָעִבְרִיּוֹת</div>
 <p class="translation">"…and <strong>they kept alive</strong> the male children of the Hebrew women." (Exo 1:17)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r7">
     <td>7</td><td>וַיְחַיּוּ</td>
@@ -193,7 +206,7 @@
   <tr class="answer-row" id="a7">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Wayyiqtol | 3mp | חיה | <em>Factitive</em> — "they kept alive." III-ה Wayyiqtol 3mp: וַיְ + חַ + יּ (dagesh forte in yod = R2 doubled) + וּ (3mp suffix). The midwives' courageous act. Compare: Piel Wayyiqtol 3ms of same root would be וַיְחַי.</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Passage C — Genesis 16:6 + Deuteronomy 8:2–3</h2>
 <h3>Context: Hagar is afflicted; Israel is humbled in the wilderness.</h3>
@@ -201,7 +214,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>עִנָּה [8]</strong> אֹתָהּ שָׂרַי</div>
 <p class="translation">"Sarai <strong>afflicted / humbled</strong> her." (Gen 16:6)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>עִנָּה</td>
@@ -215,12 +228,12 @@
   <tr class="answer-row" id="a8">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Perfect | 3ms | ענה | <em>Factitive</em> — "she afflicted/humbled." III-ה root ענה: Hireq under ע (R1) + dagesh forte in נּ (R2) + ָה (Pf. 3ms ending). The Piel of ענה = to afflict, humble, oppress (factitive).</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְזָכַרְתָּ אֶת כָּל הַדֶּרֶךְ אֲשֶׁר הֹלִיכְךָ יְהוָה אֱלֹהֶיךָ לְמַעַן <strong>עַנֹּתְךָ [9]</strong> לְנַסֹּתְךָ</div>
 <p class="translation">"…to <strong>humble you</strong> and to test you…" (Deu 8:2)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>עַנֹּתְךָ</td>
@@ -234,12 +247,12 @@
   <tr class="answer-row" id="a9">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Inf. Construct | — + 2ms suffix | ענה | <em>Factitive</em> — "to humble you." Piel Inf. Const. of III-ה root ענה: לְעַנֹּתְךָ → עַנֹּתְךָ (with preposition לְ). Patach under ע + dagesh forte in נּ. The III-ה ending appears as ת in Inf. Const. with suffix.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיְעַנְּךָ וַיַּרְעִבֶךָ וַיַּאֲכִלְךָ אֶת הַמָּן לְמַעַן <strong>הוֹדִיעֲךָ [10]</strong> כִּי לֹא עַל הַלֶּחֶם לְבַדּוֹ יִחְיֶה הָאָדָם</div>
 <p class="translation">"…and he fed you manna <strong>in order to make you know</strong> that man does not live by bread alone." (Deu 8:3)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>הוֹדִיעֲךָ</td>
@@ -253,12 +266,12 @@
   <tr class="answer-row" id="a10">
     <td colspan="8">✗ <strong>No — Hiphil</strong> | Inf. Construct | — + 2ms suffix | ידע | <em>NOT Piel — Hiphil Inf. Const.</em>: "to make known / to cause you to know." The הוֹ- prefix (Holem-Vav) identifies Hiphil of I-י root ידע. Piel of ידע is extremely rare; Hiphil הוֹדִיעַ = to inform, make known (causative).</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>יְעַנֶּה [11]</strong> יְהוָה אֱלֹהֶיךָ אֹתְךָ בַּמִּדְבָּר</div>
 <p class="translation">"The LORD your God <strong>will humble</strong> you in the wilderness." (Deu 8:2 parallel)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r11">
     <td>11</td><td>יְעַנֶּה</td>
@@ -272,7 +285,7 @@
   <tr class="answer-row" id="a11">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Imperfect | 3ms | ענה | <em>Factitive</em> — "will humble." III-ה Impf. 3ms: יְ prefix (shewa) + patach under ע + dagesh forte in נּ (R2) + tsere-He (ֶּה) ending. Same root as verbs 8 and 9; the imperfect continuation of the same theological theme (wilderness humbling).</td>
   </tr>
-</table></div>
+</table>
 
 <h2>Passage D — Amos 3:7 + Genesis 50:16 + Deuteronomy 8:1 + Genesis 39:1</h2>
 <h3>Context: God reveals his secrets; Joseph's brothers send a command; Moses commands Israel.</h3>
@@ -280,7 +293,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כִּי לֹא יַעֲשֶׂה אֲדֹנָי יְהוִה דָּבָר כִּי אִם <strong>גִּלָּה [12]</strong> סוֹדוֹ אֶל עֲבָדָיו הַנְּבִיאִים</div>
 <p class="translation">"For the Lord GOD does nothing without <strong>revealing</strong> his secret to his servants the prophets." (Amos 3:7)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r12">
     <td>12</td><td>גִּלָּה</td>
@@ -294,12 +307,12 @@
   <tr class="answer-row" id="a12">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Perfect | 3ms | גלה | <em>Declarative/Intensive</em> — "revealed." III-ה root גלה: Hireq under ג (R1) + dagesh forte in לּ (R2) + ָה (Pf. 3ms ending). The Piel of גלה = to reveal, uncover, disclose (intensive of "to be revealed / go into exile").</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיְצַוּוּ [13]</strong> אֶל יוֹסֵף לֵאמֹר אָבִיךָ צִוָּה לִפְנֵי מוֹתוֹ לֵאמֹר</div>
 <p class="translation">"They <strong>sent a command</strong> to Joseph, saying, 'Your father gave orders before his death…'" (Gen 50:16)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r13">
     <td>13</td><td>וַיְצַוּוּ</td>
@@ -313,12 +326,12 @@
   <tr class="answer-row" id="a13">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Wayyiqtol | 3mp | צוה | <em>Denominative</em> — "they commanded/sent word." Piel Wayyiqtol 3mp of III-ה root צוה: וַיְ + צַ + וּ (3mp ending with ו retained from root before the plural suffix). Same root as verbs 1, 2, 3, 6, 14.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כָּל הַמִּצְוָה אֲשֶׁר אָנֹכִי <strong>מְצַוְּךָ [14]</strong> הַיּוֹם תִּשְׁמְרוּן לַעֲשׂוֹת</div>
 <p class="translation">"All the commandment that I <strong>am commanding you</strong> today, you shall be careful to do." (Deu 8:1)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r14">
     <td>14</td><td>מְצַוְּךָ</td>
@@ -332,14 +345,14 @@
   <tr class="answer-row" id="a14">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Participle | ms + 2ms obj. suffix | צוה | <em>Denominative</em> — "commanding you." Piel Ptc. ms of III-ה root צוה: מְ prefix + patach under צ + dagesh forte in וּ (R2) + 2ms suffix ךָ. The Participle here carries present/durative force: "I am (hereby) commanding you."</td>
   </tr>
-</table></div>
+</table>
 
 <div class="note-box"><strong>Cross-stem review — Hophal distractor:</strong> The next verb appeared in the Ch29 exercise. Here it serves as a reminder that הוּ prefix = Hophal (passive), not Piel (active/intensive).</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>הוּבָא [15]</strong> יוֹסֵף מִצְרָיְמָה</div>
 <p class="translation">"<strong>Joseph was brought</strong> to Egypt." (Gen 39:1)</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r15">
     <td>15</td><td>הוּבָא</td>
@@ -353,7 +366,7 @@
   <tr class="answer-row" id="a15">
     <td colspan="8">✗ <strong>No — Hophal</strong> | Perfect | 3ms | בוא | <em>NOT Piel — Hophal passive causative</em>: "was brought." The הוּ prefix (u-class Shureq) is the Hophal marker. Piel would require i-class vowel under R1 (בִּ-) + dagesh forte in R2 — impossible here since בוא is a I-י root not typically conjugated in the Piel.</td>
   </tr>
-</table></div>
+</table>
 
 <div class="reflection">
   <h2>Reflection Questions</h2>
@@ -366,7 +379,7 @@
 
 <div class="answer-key">
   <h2>Answer Key</h2>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th></tr>
     <tr><td>1</td><td>וַיְצַו</td><td>Yes</td><td>Wayyiqtol</td><td>3ms</td><td>צוה</td><td>Piel — Denominative; III-ה apocopated: וַיְצַו</td></tr>
     <tr><td>2</td><td>צִוִּיתִיךָ</td><td>Yes</td><td>Perfect</td><td>1cs + 2ms obj.</td><td>צוה</td><td>Piel — Denominative; "I commanded you"</td></tr>
@@ -383,6 +396,6 @@
     <tr><td>13</td><td>וַיְצַוּוּ</td><td>Yes</td><td>Wayyiqtol</td><td>3mp</td><td>צוה</td><td>Piel — Denominative; "they commanded/sent word"</td></tr>
     <tr><td>14</td><td>מְצַוְּךָ</td><td>Yes</td><td>Participle</td><td>ms + 2ms obj.</td><td>צוה</td><td>Piel — Denominative; "commanding you"</td></tr>
     <tr><td>15</td><td>הוּבָא</td><td>No</td><td>Perfect</td><td>3ms</td><td>בוא</td><td>NOT Piel — Hophal Pf. 3ms; "was brought" (הוּ prefix = u-class = Hophal)</td></tr>
-  </table></div>
+  </table>
 </div>
 

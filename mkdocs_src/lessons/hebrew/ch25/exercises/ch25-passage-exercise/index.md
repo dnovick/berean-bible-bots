@@ -15,7 +15,7 @@
   .ref { font-weight: bold; font-size: 1rem; color: #444; display: block; margin-bottom: .3rem; }
   .hebrew { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; line-height: 2; margin: .3rem 0; }
   .english { color: #555; font-style: italic; margin: .2rem 0 .6rem; }
-  table { border-collapse: collapse;  margin: .5rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .5rem 0; font-size: .92rem; }
   th { background: #e8e8e8; padding: .4rem .6rem; border: 1px solid #ccc; text-align: left; }
   td { padding: .35rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
   td.verb-cell { font-size: 1.1rem; direction: rtl; unicode-bidi: embed; font-weight: bold; }
@@ -58,6 +58,19 @@
     .answer-row { display: none !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 25 — "Spot the Niphal" Passage Exercise</h1>
@@ -84,7 +97,7 @@
   <span class="ref">3:5</span>
   <div class="hebrew">וִֽהְיִיתֶם֙ כֵּֽאלֹהִ֔ים יֹדְעֵ֖י טוֹב וָרָ֑ע כִּ֣י יֹדֵ֔עַ אֱלֹהִ֕ים כִּ֗י בְּיֹ֛ום אֲכָלְכֶ֥ם מִמֶּ֖נּוּ וְנִפְקְח֖וּ עֵינֵיכֶ֑ם</div>
   <p class="english">"…for God knows that in the day you eat of it your eyes will [1] ____."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">1</td>
@@ -100,14 +113,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 3cp · פָּקַח | <em>Middle</em> — "will be opened" (eyes open themselves)</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">3:6</span>
   <div class="hebrew"><strong>וַתֵּ֣רֶא</strong> הָֽאִשָּׁ֡ה כִּ֣י טֹוב֩ הָעֵ֨ץ לְמַאֲכָ֜ל וְכִ֧י תַֽאֲוָה־ה֣וּא לָעֵינַ֗יִם <strong>וְנֶחְמָ֤ד</strong> הָעֵץ֙ לְהַשְׂכִּ֔יל</div>
   <p class="english">"So when the woman [2] ____ that the tree was good for food … and the tree was [3] ____ to make one wise."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">2</td>
@@ -137,14 +150,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Participle ms · ms · חָמַד | <em>Passive</em> — "desirable" (substantival participle: "desired/desirable")</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">3:7</span>
   <div class="hebrew">וַתִּפָּקַ֙חְנָה֙ עֵינֵ֣י שְׁנֵיהֶ֔ם</div>
   <p class="english">"Then the eyes of both of them [4] ____."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">4</td>
@@ -160,14 +173,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3fp · פָּקַח | <em>Middle</em> — "they were opened" (the eyes opened)</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">3:10</span>
   <div class="hebrew">וָאִירָ֛א כִּֽי־עֵירֹ֥ם אָנֹ֖כִי וָאֵחָבֵֽא</div>
   <p class="english">"I was afraid, because I was naked, and [5] ____."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">5</td>
@@ -183,7 +196,7 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 1cs · חָבָא | <em>Reflexive</em> — "I hid myself"</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -194,7 +207,7 @@
   <span class="ref">6:6</span>
   <div class="hebrew"><strong>וַיִּנָּ֣חֶם</strong> יְהוָ֔ה כִּֽי־<strong>עָשָׂ֥ה</strong> אֶת־הָאָדָ֖ם בָּאָ֑רֶץ</div>
   <p class="english">"And the LORD [6] ____ that he [7] ____ man on the earth."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">6</td>
@@ -224,14 +237,14 @@
       <td class="answer-label">✗</td>
       <td colspan="7">✗ <strong>No — Qal</strong> | Perfect · 3ms · עָשָׂה | NOT Niphal — Qal: <em>he had made</em>; contrast with Niphal וַיִּנָּחֶם earlier in the verse</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">6:7</span>
   <div class="hebrew">נִחַ֖מְתִּי כִּ֥י עֲשִׂיתִֽם</div>
   <p class="english">"I [8] ____ that I made them."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">8</td>
@@ -247,14 +260,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 1cs · נָחַם | <em>Simple Action (Niphal-only)</em> — "I regret"</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">6:11</span>
   <div class="hebrew">וַתִּשָּׁחֵ֥ת הָאָ֖רֶץ … וַתִּמָּלֵ֥א הָאָ֖רֶץ חָמָֽס</div>
   <p class="english">"The earth [9] ____ … and the earth [10] ____ with violence."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">9</td>
@@ -284,14 +297,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3fs · מָלֵא | <em>Passive</em> — "it was filled"</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">6:12</span>
   <div class="hebrew">וְהִנֵּ֥ה נִשְׁחָ֑תָה כִּֽי־הִשְׁחִ֧ית כָּל־בָּשָׂ֛ר</div>
   <p class="english">"and behold, it [11] ____, for all flesh had corrupted its way."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">11</td>
@@ -307,14 +320,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 3fs · שָׁחַת | <em>Passive</em> — "it was corrupt"</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">6:21</span>
   <div class="hebrew">וְאָסַפְתָּ֣ אֵלֶ֔יךָ וְהָיָ֥ה לְךָ֖ וְלָהֶ֥ם לְאָכְלָֽה יֵֽאָכֵ֔ל</div>
   <p class="english">"Gather it to yourself; it shall be food for you and for them — it shall [12] ____."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">12</td>
@@ -330,7 +343,7 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Imperfect · 3ms · אָכַל | <em>Passive</em> — "it shall be eaten"</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -341,7 +354,7 @@
   <span class="ref">21:23</span>
   <div class="hebrew">הִשָּׁ֨בְעָ֜ה לִּ֗י בֵּאלֹהִ֛ים הֵ֖נָּה</div>
   <p class="english">"[13] ____ to me by God here."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">13</td>
@@ -357,14 +370,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Imperative · 2ms · שָׁבַע | <em>Reflexive</em> — "Swear!" (bind yourself by oath)</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">21:24</span>
   <div class="hebrew">וַיֹּ֙אמֶר֙ אַבְרָהָ֔ם אָנֹכִ֖י אִשָּׁבֵֽעַ</div>
   <p class="english">"And Abraham said, 'I [14] ____.'"</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">14</td>
@@ -380,14 +393,14 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Imperfect · 1cs · שָׁבַע | <em>Reflexive</em> — "I will swear"</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="passage-block">
   <span class="ref">21:31</span>
   <div class="hebrew">כִּ֛י שָׁ֥ם נִשְׁבְּע֖וּ שְׁנֵיהֶֽם</div>
   <p class="english">"For there [15] ____ both of them."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">15</td>
@@ -403,7 +416,7 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Weqatal · 3mp · שָׁבַע | <em>Reflexive</em> — "they swore" (bound themselves by oath)</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <hr class="section-break">
@@ -417,7 +430,7 @@
   <span class="ref" style="margin-top:.8rem">21:8</span>
   <div class="hebrew"><strong>וַיִּגְדַּ֤ל</strong> הַיֶּ֙לֶד֙ <strong>וַיִּגָּמַ֑ל</strong></div>
   <p class="english">"And the child [16] ____ and was weaned."</p>
-  <div style="overflow-x:auto;max-width:100%;"><table>
+  <table>
     <tr><th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
     <tr>
       <td class="num-cell">B1</td>
@@ -461,7 +474,7 @@
       <td class="answer-label">✓</td>
       <td colspan="7">✓ <strong>Yes — Niphal</strong> | Wayyiqtol · 3ms · גָּמַל | <em>Passive</em> — "was weaned"</td>
     </tr>
-  </table></div>
+  </table>
 </div>
 
 <div class="score-box">
@@ -475,7 +488,7 @@
 </div>
 
 <h2>Conjugation Coverage</h2>
-<div style="overflow-x:auto;max-width:100%;"><table class="coverage-table">
+<table class="coverage-table">
   <tr><th>Conjugation</th><th>Items</th></tr>
   <tr><td>Wayyiqtol (6)</td><td>#4, #5, #6, #9, #10, B2</td></tr>
   <tr><td>Weqatal (5)</td><td>#1, #8, #11, #15, B1</td></tr>
@@ -483,7 +496,7 @@
   <tr><td>Participle (1)</td><td>#3</td></tr>
   <tr><td>Imperative (1)</td><td>#13</td></tr>
   <tr><td>Non-Niphal (3)</td><td>#2 (Qal Wayyiqtol 3fs), #7 (Qal Perfect 3ms), #16 (Qal Wayyiqtol 3ms)</td></tr>
-</table></div>
+</table>
 
 <div class="reflection">
   <h2>Reflection Questions</h2>

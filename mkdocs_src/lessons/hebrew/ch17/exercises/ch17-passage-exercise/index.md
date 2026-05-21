@@ -13,7 +13,7 @@
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .passage { direction: rtl; unicode-bidi: embed; font-size: 1.18rem; line-height: 2.2; background: #fafaf6; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; margin: .8rem 0; }
   .passage p { margin: .25rem 0; }
-  table { border-collapse: collapse;  margin: .4rem 0; font-size: .87rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .87rem; }
   th { background: #e0e8f0; padding: .34rem .42rem; border: 1px solid #bbb; text-align: left; font-size: .8rem; }
   td { padding: .24rem .35rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 1.8rem; }
@@ -36,6 +36,19 @@
   .disc ol { margin: .4rem 0; padding-left: 1.4rem; }
   .disc li { margin-bottom: .6rem; }
   @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; } .ans-row { display: none !important; } }
+
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
 
 </style>
 
@@ -62,7 +75,7 @@
 <p><strong>וַיִּקְרָ֨א</strong> אֱלֹהִ֤ים לָאֹור֙ יֹ֔ום</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Form Type</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
   <tr>
     <td class="num">1</td><td class="heb">בָּרָ֣א</td>
@@ -88,7 +101,7 @@
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">וַיִּקְרָא</td><td>Wayyiqtol</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">קרא</td><td colspan="2">Sequential Past — III-א; aleph quiesces; "and God called the light Day"</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
@@ -101,7 +114,7 @@
 <p>וַיִּשָּׂ֨א אַבְרָהָ֜ם אֶת־עֵינָ֗יו <strong>וַיַּ֤רְא</strong> אֶת־הַמָּקֹום֙ מֵרָחֹֽק</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Form Type</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
   <tr>
     <td class="num">5</td><td class="heb">וַיְהִי</td>
@@ -127,7 +140,7 @@
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">וַיַּרְא</td><td>Wayyiqtol</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">ראה</td><td colspan="2">Sequential Past — III-ה short form; "and he saw the place from a distance"</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
@@ -140,7 +153,7 @@
 <p><strong>וְדִבַּרְתָּ֣</strong> בָּ֔ם בְּשִׁבְתְּךָ֥ בְבֵיתֶ֖ךָ</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Form Type</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
   <tr>
     <td class="num">9</td><td class="heb">וְאָהַבְתָּ</td>
@@ -160,7 +173,7 @@
     <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">וְדִבַּרְתָּ</td><td>Weqatal</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">דבר</td><td colspan="2">Sequential Future — Piel weqatal; "and you shall speak of them"; Deu 6:7 command chain</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 
@@ -173,7 +186,7 @@
 <p><strong>וַיִּקְרָ֨א</strong> אֵלָ֤יו אֱלֹהִים֙ — <strong>וַיֹּ֖אמֶר</strong> הִנֵּ֥נִי</p>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr><th>#</th><th>Form</th><th>Form Type</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
   <tr>
     <td class="num">12</td><td class="heb">וַיֵּלֶךְ</td>
@@ -205,7 +218,7 @@
     <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-16"><td class="ans-lbl">✓</td><td class="ans-heb">וַיֹּאמֶר</td><td>Wayyiqtol</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">אמר</td><td colspan="2">Sequential Past — I-aleph; holem prefix; most frequent wayyiqtol in the Bible; "and he said: Here I am"</td></tr>
-</table></div>
+</table>
 
 <hr class="sec">
 

@@ -9,7 +9,7 @@
   body { font-family: Georgia, serif;    color: #222; }
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
   p.instructions { font-style: italic; color: #555; }
-  table { border-collapse: collapse;  margin: 1.5em 0; font-size: 0.9em; }
+  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.9em; }
   th { background: #276749; color: #fff; padding: 0.45em 0.6em; text-align: left; }
   td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -42,6 +42,19 @@
     body {  }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>BBG Chapter 16 — Present Active Indicative Parsing Drill</h1>
@@ -53,7 +66,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <thead>
     <tr>
       <th>#</th>
@@ -348,7 +361,7 @@
     </tr>
 
   </tbody>
-</table></div>
+</table>
 
 <div class="note">
   <strong>All forms above:</strong> Present · Active · Indicative. The only thing that changes per row is person and number. Tense stem = lexical form minus the -ω. Connecting vowel: ο before μ/ν, ε elsewhere.

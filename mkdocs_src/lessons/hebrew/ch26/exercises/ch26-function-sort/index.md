@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse;  margin: 1em 0; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -35,6 +35,19 @@
     .answer-row { display: table-row !important; }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>Chapter 26 — Semantic Function Sorting</h1>
@@ -42,7 +55,7 @@
 
 <p>Classify each Hiphil verb as <strong>C</strong> (Causative), <strong>F</strong> (Factitive), <strong>D</strong> (Declarative), <strong>SA</strong> (Simple Action), or <strong>DN</strong> (Denominative). Type your answer in the Function column, then click <strong>▶ Answer</strong> to check.</p>
 
-<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
+<table class="ref-table">
   <tr>
     <th>Label</th><th>Function</th><th>Key diagnostic question</th>
   </tr>
@@ -51,7 +64,7 @@
   <tr><td><strong>D</strong></td><td>Declarative</td><td>Does the subject <em>declare or treat</em> something as being in a state?</td></tr>
   <tr><td><strong>SA</strong></td><td>Simple Action</td><td>Is the Hiphil the standard form of the verb with no Qal counterpart in normal usage?</td></tr>
   <tr><td><strong>DN</strong></td><td>Denominative</td><td>Is the Hiphil derived from a <em>noun</em>, performing an action related to that noun? <em>(not in BBH)</em></td></tr>
-</table></div>
+</table>
 
 <div class="tip">
   <strong>Tip:</strong> Motion verb (go → bring) → <strong>Causative</strong>.
@@ -67,7 +80,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Conjugation</th><th>Ref</th><th>Contextual Gloss</th><th>Function</th><th></th>
   </tr>
@@ -423,7 +436,7 @@
     <td colspan="7"><strong>DN — Denominative</strong> · Root: <span class="heb">אָזַן</span> · From noun <span class="heb">אֹזֶן</span> ("ear") — to ear = to give ear / listen attentively</td>
   </tr>
 
-</table></div>
+</table>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

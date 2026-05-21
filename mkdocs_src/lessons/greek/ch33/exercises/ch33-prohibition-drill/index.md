@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
   .subtitle { color: #555; font-style: italic; margin: .3em 0 1em; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin-bottom: 1.5em; font-size: .95em; }
-  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .93em; }
+  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
   th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
   td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #f5f7fb; }
@@ -33,6 +33,19 @@
     body {  }
   }
 
+/* ── inline-embed overrides ── */
+table { table-layout: fixed !important; width: 100% !important; }
+th, td { word-break: break-word; overflow-wrap: break-word; }
+th { font-size: .78rem !important; white-space: normal !important; }
+td { font-size: .82rem !important; }
+td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
+td.heb { font-size: 1.2em !important; width: auto !important; }
+button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
+button.tog { white-space: normal !important; font-size: .72rem !important;
+  padding: .1rem .3rem !important; }
+input.parse-field, input.f { font-size: .8rem !important; }
+select.parse-field { font-size: .8rem !important; }
+
 </style>
 
 <h1>BBG Chapter 33 — Prohibition Pattern Drill</h1>
@@ -51,7 +64,7 @@
   <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<div style="overflow-x:auto;max-width:100%;"><table>
+<table>
 <thead>
   <tr><th>#</th><th>Greek Sentence</th><th>Pattern (STOP/DONT)</th><th>Tense</th><th>Mood</th><th>Lexical Form</th><th>Translation</th><th></th></tr>
 </thead>
@@ -378,7 +391,7 @@
 </tr>
 
 </tbody>
-</table></div>
+</table>
 
 <h2>Discussion Questions</h2>
 <ol>
