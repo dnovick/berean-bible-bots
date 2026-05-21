@@ -1,5 +1,5 @@
 # ── Core data access ──────────────────────────────────────────────────────────
-from .core.query import query, translation_query, lxx_query
+from .core.query import query, reload, translation_query, lxx_query
 from .nt.greek_prepositions import (
     greek_prep_frequency, greek_prep_by_book, greek_prep_distribution_table,
     greek_prep_cases, greek_prep_collocates, compare_greek_preps, nt_lxx_compare,
