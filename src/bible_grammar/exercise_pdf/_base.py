@@ -51,6 +51,7 @@ def _register_fonts() -> None:
         '/Library/Fonts/Arial Unicode MS.ttf',
         os.path.expanduser('~/Library/Fonts/Arial Unicode MS.ttf'),
         '/Library/Fonts/Arial Unicode.ttf',
+        '/System/Library/Fonts/Supplemental/Arial Unicode.ttf',
     ]
     for _path in _arial_unicode_candidates:
         if os.path.exists(_path):
@@ -66,6 +67,19 @@ def _register_fonts() -> None:
 def _heb(text: str) -> str:
     """Apply bidi algorithm so ReportLab draws Hebrew glyphs left-to-right."""
     return get_display(text)
+
+
+def _mixed_font(bold: bool = False) -> str:
+    """Return the best available font for strings mixing Latin and Hebrew text.
+
+    Arial Unicode covers both scripts in one font, so Latin + Hebrew can coexist
+    in a single drawString call without glyph-block rendering artefacts.
+    Falls back to ArialHebrew when Arial Unicode is not available (Hebrew only
+    will still render; Latin will appear as glyphs from the Hebrew font).
+    """
+    if UNICODE_TRANSLIT_FONT:
+        return UNICODE_TRANSLIT_FONT
+    return 'ArialHebrewBold' if bold else 'ArialHebrew'
 
 
 # ---------------------------------------------------------------------------
@@ -933,9 +947,9 @@ class ExercisePDF:
             c.setFillColor(C_ANSWER_FG)
             c.drawString(cx + 3, self._y - row_h + 6, e.function)
             cx += cw[3]
-            c.setFont('Helvetica', self.LABEL_SIZE)
+            c.setFont(_mixed_font(), self.LABEL_SIZE)
             c.setFillColor(HexColor('#444444'))
-            lines = simpleSplit(e.answer_note, 'Helvetica', self.LABEL_SIZE, cw[4] - 6)
+            lines = simpleSplit(e.answer_note, _mixed_font(), self.LABEL_SIZE, cw[4] - 6)
             c.drawString(cx + 3, self._y - row_h + 6, lines[0] if lines else e.answer_note)
             self._y -= row_h
 
@@ -994,9 +1008,9 @@ class ExercisePDF:
             c.setFillColor(C_ANSWER_FG)
             c.drawCentredString(cx + cw[3]/2, self._y - row_h + 5, e.function)
             cx += cw[3]
-            c.setFont('Helvetica', self.LABEL_SIZE)
+            c.setFont(_mixed_font(), self.LABEL_SIZE)
             c.setFillColor(HexColor('#444444'))
-            lines = simpleSplit(e.explanation, 'Helvetica', self.LABEL_SIZE, cw[4] - 6)
+            lines = simpleSplit(e.explanation, _mixed_font(), self.LABEL_SIZE, cw[4] - 6)
             c.drawString(cx + 3, self._y - row_h + 5, lines[0] if lines else e.explanation)
             self._y -= row_h
 
@@ -1099,7 +1113,8 @@ class ExercisePDF:
                 c.setFillColor(C_ANSWER_FG)
                 c.drawString(cx + 3, y - self.ANSWER_H + 6, e.ref)
                 cx += cw[3]
-                lines = simpleSplit(e.explanation, 'Helvetica', self.LABEL_SIZE, cw[4] - 6)
+                lines = simpleSplit(e.explanation, _mixed_font(), self.LABEL_SIZE, cw[4] - 6)
+                c.setFont(_mixed_font(), self.LABEL_SIZE)
                 c.setFillColor(C_ANSWER_FG)
                 c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else e.explanation)
                 cx += cw[4]

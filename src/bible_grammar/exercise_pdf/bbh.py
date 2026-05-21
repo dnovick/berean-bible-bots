@@ -3,7 +3,7 @@ from ._base import (
     ExercisePDF, PassageExercise,
     VerbEntry, PassageBlock, ContrastEntry, NHEntry, BGEntry, SortEntry,
     _build_exercise_pdf,
-    _heb,
+    _heb, _mixed_font,
     C_RULE, C_ANSWER_BG, C_ANSWER_FG, C_HEADER_BG,
 )
 from reportlab.lib.units import inch
@@ -1446,9 +1446,9 @@ class Ch27NHContrastExercise(ExercisePDF):
             c.setFont('Helvetica-Bold', self.LABEL_SIZE)
             c.drawString(cx + 3, y - self.ANSWER_H + 6, e.stem)
             cx += cw[2]
-            c.setFont('Helvetica', self.LABEL_SIZE)
+            c.setFont(_mixed_font(), self.LABEL_SIZE)
             answer = f'{e.conj} · {e.pgn} · {e.root_class} — "{e.translation}" — {e.note}'
-            lines = simpleSplit(answer, 'Helvetica', self.LABEL_SIZE, cw[3] - 6)
+            lines = simpleSplit(answer, _mixed_font(), self.LABEL_SIZE, cw[3] - 6)
             c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else answer)
             y -= self.ANSWER_H
 
@@ -1595,9 +1595,9 @@ class Ch27BGDrillExercise(ExercisePDF):
             c.setFont('Helvetica-Bold', self.LABEL_SIZE)
             c.drawString(cx + 3, y - self.ANSWER_H + 6, e.stem)
             cx += cw[2]
-            c.setFont('Helvetica', self.LABEL_SIZE)
+            c.setFont(_mixed_font(), self.LABEL_SIZE)
             answer = f'{e.conj} · {e.pgn} · {e.bg_class} · {e.root} — "{e.translation}" — {e.note}'
-            lines = simpleSplit(answer, 'Helvetica', self.LABEL_SIZE, cw[3] - 6)
+            lines = simpleSplit(answer, _mixed_font(), self.LABEL_SIZE, cw[3] - 6)
             c.drawString(cx + 3, y - self.ANSWER_H + 6, lines[0] if lines else answer)
             y -= self.ANSWER_H
 
