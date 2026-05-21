@@ -2,137 +2,22 @@
 
 *Chapter 5 — Nouns: Determined State*
 
-[Full screen](ch5-determined-state-drill.html){.md-button}  [Markdown](ch5-determined-state-drill.md){.md-button}  [Print (PDF)](ch5-determined-state-drill.pdf){.md-button}
+20-item conversion drill covering the determined-state paradigm introduced in Chapter 5. Each item presents a noun in either the absolute or determined state; students write the noun in the opposite state. Items are drawn from Chapter 4 and Chapter 5 vocabulary and cover all four gender/number combinations.
 
-<style>
+## Coverage
 
-  body { font-family: Arial, sans-serif;    }
-  h1 { font-size: 1.3em; }
-  h2 { font-size: 1.1em; margin-top: 1.5em; }
-  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
-  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
-  th { background: #e8e8e8; }
-  td.aram { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; min-width: 90px; }
-  td.direction { font-size: .8em; color: #555; }
-  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
-  .answer-row td { background: #e6ffe6; font-size: .85em; }
-  .answer-row { display: none; }
-  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
-  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
-  .global-btns { margin-bottom: 1em; }
-  @media print {
-    .btn, .global-btns { display: none; }
-    input.parse-field { border-bottom: 1px solid #555; }
-    .answer-row { display: none !important; }
-  }
+| Category | Direction | Count |
+|---|---|---|
+| Masculine singular | abs. → det. | 5 |
+| Masculine singular | det. → abs. | 3 |
+| Masculine plural | abs. → det. | 2 |
+| Masculine plural | det. → abs. | 5 |
+| Feminine singular | abs. → det. | 1 |
+| Feminine singular | det. → abs. | 1 |
+| Feminine plural | abs. → det. | 1 |
+| Feminine plural | det. → abs. | 2 |
+| **Total** | | **20** |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Formats
 
-</style>
-
-<h1>BBA Chapter 5 — Determined State Forms Drill</h1>
-<p class="instructions"><strong>Instructions:</strong> Each item gives a noun in one state (absolute or determined). Write it in the other state in the blank column. Direction is shown in the Notes column.</p>
-<p class="instructions">
-  <strong>Endings:</strong>
-  ms: abs. (none) → det. ָא- ·
-  fs: abs. ָה- → det. ָתָא- ·
-  mp: abs. ִין- → det. ַיָּא- ·
-  fp: abs. ָן- → det. ָתָא-
-</p>
-
-<div class="global-btns">
-  <button class="btn" onclick="showAll()">Show All Answers</button>
-  <button class="btn" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<script>
-// [given_abs, given_det, ans_abs, ans_det, gn, notes]
-// given_* = pre-filled value (or "" if student fills in); ans_* = answer
-var rows = [
-  [1,  "אִילָן",   "",           "אִילָן",   "אִילָנָא",    "ms.",  "abs. → det.",   "Add ָא- — tree / the tree"],
-  [2,  "",          "נוּרָא",     "נוּר",     "נוּרָא",      "ms.",  "det. → abs.",   "Remove ָא- — fire / the fire (Ch4)"],
-  [3,  "אֻמָּה",   "",           "אֻמָּה",   "אֻמְּתָא",   "fs.",  "abs. → det.",   "Replace ָה- with ָתָא- — nation / the nation"],
-  [4,  "",          "חֵיוְתָא",  "חֵיוָה",  "חֵיוְתָא",  "fs.",  "det. → abs.",   "Remove ָתָא-, restore ָה- — beast / the beast (Ch4)"],
-  [5,  "רָזִין",   "",           "רָזִין",   "רָזַיָּא",   "mp.",  "abs. → det.",   "Replace ִין- with ַיָּא- — secrets / the secrets (Ch4)"],
-  [6,  "",          "עִדָּנָא",  "עִדָּן",   "עִדָּנָא",   "ms.",  "det. → abs.",   "Remove ָא- — time / the time (Ch4)"],
-  [7,  "מָאן",      "",           "מָאן",     "מָאנָא",      "ms.",  "abs. → det.",   "Add ָא- — vessel / the vessel"],
-  [8,  "",          "אֻמְּמָתָא","אֻמְּמָן", "אֻמְּמָתָא","fp.",  "det. → abs.",   "Remove ָתָא-, restore ָן- — nations / the nations"],
-  [9,  "זְמָר",     "",           "זְמָר",    "זְמָרָא",     "ms.",  "abs. → det.",   "Add ָא- — music / the music"],
-  [10, "",          "רָזַיָּא",  "רָזִין",   "רָזַיָּא",   "mp.",  "det. → abs.",   "Remove ַיָּא-, restore ִין- — secrets / the secrets (Ch4)"],
-  [11, "חֲמַר",    "",           "חֲמַר",    "חַמְרָא",     "ms.",  "abs. → det.",   "Add ָא-; vowel shift ḥămar → ḥamrāʾ — wine / the wine"],
-  [12, "",          "אִילָנַיָּא","אִילָנִין","אִילָנַיָּא","mp.",  "det. → abs.",   "Remove ַיָּא-, restore ִין- — trees / the trees"],
-  [13, "חֵיוָן",  "",           "חֵיוָן",  "חֵיוָתָא",  "fp.",  "abs. → det.",   "Replace ָן- with ָתָא- — beasts / the beasts (Ch4)"],
-  [14, "",          "אֱסָרָא",   "אֱסָר",    "אֱסָרָא",     "ms.",  "det. → abs.",   "Remove ָא- — prohibition / the prohibition"],
-  [15, "יְקָר",     "",           "יְקָר",    "יְקָרָא",     "ms.",  "abs. → det.",   "Add ָא- — honor / the honor"],
-  [16, "",          "מָאנַיָּא", "מָאנִין",  "מָאנַיָּא",  "mp.",  "det. → abs.",   "Remove ַיָּא-, restore ִין- — vessels / the vessels"],
-  [17, "אֲתַר",    "",           "אֲתַר",    "אֲתַרָא",     "ms.",  "abs. → det.",   "Add ָא- — place / the place"],
-  [18, "",          "גִּשְׁמָא", "גְּשֵׁם",  "גִּשְׁמָא",  "ms.",  "det. → abs.",   "Remove ָא-; vowel shift — body / the body"],
-  [19, "זְמָנִין", "",           "זְמָנִין", "זְמָנַיָּא", "mp.",  "abs. → det.",   "Replace ִין- with ַיָּא- — times / the times (Ch4)"],
-  [20, "",          "זְמָרַיָּא","זְמָרִין", "זְמָרַיָּא", "mp.",  "det. → abs.",   "Remove ַיָּא-, restore ִין- — instruments / the instruments"]
-];
-
-document.addEventListener("DOMContentLoaded", function() {
-  var t = document.createElement("table"); document.body.appendChild(t);
-  var thead = document.createElement("thead");
-  var hr = document.createElement("tr");
-  ["#","Absolute Form","Determined Form","Gender / Number","Notes",""].forEach(function(h){
-    var th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
-  });
-  thead.appendChild(hr); t.appendChild(thead);
-
-  var tbody = document.createElement("tbody");
-  rows.forEach(function(row) {
-    var num = row[0], givenAbs = row[1], givenDet = row[2];
-    var ansAbs = row[3], ansDet = row[4], gn = row[5], direction = row[6], notes = row[7];
-
-    var absCell = givenAbs
-      ? '<td class="aram">' + givenAbs + '</td>'
-      : '<td><input class="parse-field" type="text" placeholder="absolute form"></td>';
-    var detCell = givenDet
-      ? '<td class="aram">' + givenDet + '</td>'
-      : '<td><input class="parse-field" type="text" placeholder="determined form"></td>';
-
-    var qrow = document.createElement("tr");
-    qrow.innerHTML =
-      '<td>' + num + '</td>' +
-      absCell + detCell +
-      '<td>' + gn + '</td>' +
-      '<td class="direction">' + direction + '</td>' +
-      '<td><button class="btn btn-ans" onclick="toggle(\'a'+num+'\')">▶ Answer</button></td>';
-    tbody.appendChild(qrow);
-
-    var arow = document.createElement("tr");
-    arow.id = "a" + num; arow.className = "answer-row";
-    arow.innerHTML =
-      '<td></td>' +
-      '<td class="aram">' + ansAbs + '</td>' +
-      '<td class="aram">' + ansDet + '</td>' +
-      '<td>' + gn + '</td>' +
-      '<td colspan="2" style="font-size:.85em;">' + notes + '</td>';
-    tbody.appendChild(arow);
-  });
-  t.appendChild(tbody);
-});
-
-function toggle(id) {
-  var el = document.getElementById(id);
-  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
-}
-function showAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; }); }
-function hideAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; }); }
-function clearAll() { document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; }); }
-</script>
-
+[Full Screen (Interactive)](ch5-determined-state-drill.html){.md-button .md-button--primary}  [Print / PDF](ch5-determined-state-drill.pdf){.md-button}  [Markdown](ch5-determined-state-drill.md){.md-button}

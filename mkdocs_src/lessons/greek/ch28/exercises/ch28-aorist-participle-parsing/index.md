@@ -2,268 +2,30 @@
 
 *Chapter 28 — Perfective (Aorist) Adverbial Participles*
 
-[Full screen](ch28-aorist-participle-parsing.html){.md-button}  [Markdown](ch28-aorist-participle-parsing.md){.md-button}  [Print (PDF)](ch28-aorist-participle-parsing.pdf){.md-button}
+A 15-item parsing drill using aorist participle forms drawn from and modeled on GNT passages. Students parse each form (tense / voice / case / number / gender / lexical form), distinguish 1st from 2nd aorist, identify the use (adverbial, adjectival, or substantival), and translate. Items 1–9 are adverbial; items 10–12 are adjectival; items 13–15 are substantival or passive. An answer key is embedded in all formats.
 
-<style>
+## Coverage
 
-  body { font-family: Georgia, serif;    color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
-  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
-  .subtitle { color: #555; font-style: italic; margin: .3em 0 1em; }
-  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin-bottom: 1.5em; font-size: .95em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
-  th { background: #4a6741; color: #fff; padding: .45em .5em; text-align: left; }
-  td { padding: .4em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
-  tr:nth-child(even) td { background: #f5fbf4; }
-  .greek { font-size: 1.1em; font-weight: bold; }
-  .parse-field { width: 95%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .88em; padding: 2px 0; }
-  .parse-field:focus { outline: none; border-bottom: 2px solid #4a6741; }
-  .answer-row { display: none; background: #e8f5e9 !important; }
-  .answer-row td { color: #2e7d32; font-style: italic; font-size: .88em; }
-  .btn-reveal { background: #4a6741; color: #fff; border: none; border-radius: 3px; padding: .25em .6em; cursor: pointer; font-size: .82em; white-space: nowrap; }
-  .btn-reveal:hover { background: #354d30; }
-  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
-  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
-  .btn-ctrl:hover { background: #333; }
-  .item-num { font-weight: bold; min-width: 1.5em; }
-  @media print {
-    .btn-reveal, .controls { display: none !important; }
-    .answer-row { display: none !important; }
-    .parse-field { border-bottom: 1px solid #999; }
-    body {  }
-  }
+| Type | Count | Items |
+|---|---|---|
+| 1st Aorist Active — adverbial | 4 | #1, #2, #3, #4 |
+| 2nd Aorist Active — adverbial | 3 | #5, #6, #7 |
+| Aorist Passive — adverbial | 2 | #8, #9 |
+| Aorist Active — adjectival | 3 | #10, #11, #12 |
+| Aorist Passive — substantival | 2 | #13, #14 |
+| 2nd Aorist — substantival | 1 | #15 |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Sample Questions
 
-</style>
+**Q1.** 1 λύσας τοὺς δούλους εἰσῆλθεν εἰς τὴν οἰκίαν.
+> **A:** Aorist · Active · Nominative · Singular · Masculine · λύω · 1st · Adverbial (temporal) · "After loosing the slaves, he entered into the house."
 
-<h1>BBG Chapter 28 — Spot the Aorist Participle</h1>
-<p class="subtitle"><em>Basics of Biblical Greek Grammar, Mounce, 4th Edition</em></p>
+**Q2.** 2 ἀκούσας δὲ ὁ βασιλεὺς ἐταράχθη.
+> **A:** Aorist · Active · Nominative · Singular · Masculine · ἀκούω · 1st · Adverbial (temporal) · "But the king, having heard, was troubled."
 
-<div class="instructions">
-  <strong>Instructions:</strong> For each item, (1) parse the bolded form (tense / voice / case / number / gender / lexical form),
-  (2) identify 1st or 2nd aorist, (3) identify the use (adverbial, adjectival, or substantival), and (4) translate.
-</div>
+**Q3.** 3 πιστεύσαντες εἰς τὸν κύριον ἐβαπτίσθησαν.
+> **A:** Aorist · Active · Nominative · Plural · Masculine · πιστεύω · 1st · Adverbial (temporal) · "Having believed in the Lord, they were baptized."
 
-<div class="controls">
-  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
-</div>
+## Formats
 
-<h2>Part A — Adverbial Aorist Participles (1–9)</h2>
-<table>
-<thead>
-  <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>1st/2nd</th><th>Use</th><th>Translation</th><th></th></tr>
-</thead>
-<tbody>
-
-<tr class="question-row" data-id="1">
-  <td class="item-num">1</td>
-  <td class="greek"><u>λύσας</u> τοὺς δούλους εἰσῆλθεν εἰς τὴν οἰκίαν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-1"><td></td><td colspan="10">Aorist · Active · Nominative · Singular · Masculine · λύω · 1st · Adverbial (temporal) · "After loosing the slaves, he entered into the house."</td><td></td></tr>
-
-<tr class="question-row" data-id="2">
-  <td class="item-num">2</td>
-  <td class="greek"><u>ἀκούσας</u> δὲ ὁ βασιλεὺς ἐταράχθη.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-2"><td></td><td colspan="10">Aorist · Active · Nominative · Singular · Masculine · ἀκούω · 1st · Adverbial (temporal) · "But the king, having heard, was troubled."</td><td></td></tr>
-
-<tr class="question-row" data-id="3">
-  <td class="item-num">3</td>
-  <td class="greek"><u>πιστεύσαντες</u> εἰς τὸν κύριον ἐβαπτίσθησαν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-3"><td></td><td colspan="10">Aorist · Active · Nominative · Plural · Masculine · πιστεύω · 1st · Adverbial (temporal) · "Having believed in the Lord, they were baptized."</td><td></td></tr>
-
-<tr class="question-row" data-id="4">
-  <td class="item-num">4</td>
-  <td class="greek"><u>προσκαλεσάμενος</u> τοὺς μαθητὰς αὐτοῦ εἶπεν αὐτοῖς·</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-4"><td></td><td colspan="10">Aorist · Middle · Nominative · Singular · Masculine · προσκαλέομαι · 1st · Adverbial (temporal) · "Having summoned his disciples, he said to them:"</td><td></td></tr>
-
-<tr class="question-row" data-id="5">
-  <td class="item-num">5</td>
-  <td class="greek"><u>ἐλθὼν</u> πρὸς αὐτὸν ὁ ἑκατόνταρχος παρεκάλει αὐτόν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-5"><td></td><td colspan="10">Aorist · Active · Nominative · Singular · Masculine · ἔρχομαι · 2nd · Adverbial (temporal) · "Coming to him, the centurion was appealing to him."</td><td></td></tr>
-
-<tr class="question-row" data-id="6">
-  <td class="item-num">6</td>
-  <td class="greek"><u>λαβὼν</u> τοὺς πέντε ἄρτους εὐλόγησεν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-6"><td></td><td colspan="10">Aorist · Active · Nominative · Singular · Masculine · λαμβάνω · 2nd · Adverbial (temporal) · "Taking the five loaves, he blessed [them]."</td><td></td></tr>
-
-<tr class="question-row" data-id="7">
-  <td class="item-num">7</td>
-  <td class="greek"><u>ἰδὼν</u> δὲ τοὺς ὄχλους ἀνέβη εἰς τὸ ὄρος.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-7"><td></td><td colspan="10">Aorist · Active · Nominative · Singular · Masculine · ὁράω · 2nd · Adverbial (temporal) · "But seeing the crowds, he went up the mountain."</td><td></td></tr>
-
-<tr class="question-row" data-id="8">
-  <td class="item-num">8</td>
-  <td class="greek"><u>ἀποκριθεὶς</u> δὲ ὁ Πέτρος εἶπεν αὐτῷ·</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-8"><td></td><td colspan="10">Aorist · Passive · Nominative · Singular · Masculine · ἀποκρίνομαι · 1st · Adverbial (temporal/manner) · "And Peter, answering, said to him:"</td><td></td></tr>
-
-<tr class="question-row" data-id="9">
-  <td class="item-num">9</td>
-  <td class="greek"><u>βαπτισθεὶς</u> δὲ ὁ Ἰησοῦς εὐθὺς ἀνέβη ἀπὸ τοῦ ὕδατος.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-9"><td></td><td colspan="10">Aorist · Passive · Nominative · Singular · Masculine · βαπτίζω · 1st · Adverbial (temporal) · "And Jesus, having been baptized, immediately came up from the water."</td><td></td></tr>
-
-</tbody>
-</table>
-
-<h2>Part B — Adjectival Aorist Participles (10–12)</h2>
-<table>
-<thead>
-  <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>1st/2nd</th><th>Use</th><th>Translation</th><th></th></tr>
-</thead>
-<tbody>
-
-<tr class="question-row" data-id="10">
-  <td class="item-num">10</td>
-  <td class="greek">εἶπεν τοῖς μαθηταῖς τοῖς <u>πιστεύσασιν</u> εἰς αὐτόν·</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-10"><td></td><td colspan="10">Aorist · Active · Dative · Plural · Masculine · πιστεύω · 1st · Adjectival (attributive) · "He said to the disciples who had believed in him:"</td><td></td></tr>
-
-<tr class="question-row" data-id="11">
-  <td class="item-num">11</td>
-  <td class="greek">ὁ λόγος ὁ <u>σπαρείς</u> — τοῦτό ἐστιν ὁ λόγος.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-11"><td></td><td colspan="10">Aorist · Passive · Nominative · Singular · Masculine · σπείρω · 1st · Adjectival (attributive, 2nd pos.) · "The word that was sown — this is the word." (cf. Mark 4:15)</td><td></td></tr>
-
-<tr class="question-row" data-id="12">
-  <td class="item-num">12</td>
-  <td class="greek">ἐκεῖ εἶδεν ἄνδρα τὸν <u>ἐλθόντα</u> ἐκ Ἰουδαίας.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-12"><td></td><td colspan="10">Aorist · Active · Accusative · Singular · Masculine · ἔρχομαι · 2nd · Adjectival (attributive) · "There he saw a man, the one who had come from Judea."</td><td></td></tr>
-
-</tbody>
-</table>
-
-<h2>Part C — Substantival Aorist Participles (13–15)</h2>
-<table>
-<thead>
-  <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>1st/2nd</th><th>Use</th><th>Translation</th><th></th></tr>
-</thead>
-<tbody>
-
-<tr class="question-row" data-id="13">
-  <td class="item-num">13</td>
-  <td class="greek">μακάριοι οἱ <u>πιστεύσαντες</u> καὶ μὴ ἰδόντες.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-13"><td></td><td colspan="10">Aorist · Active · Nominative · Plural · Masculine · πιστεύω · 1st · Substantival · "Blessed are those who have believed and have not seen." (cf. John 20:29)</td><td></td></tr>
-
-<tr class="question-row" data-id="14">
-  <td class="item-num">14</td>
-  <td class="greek">ἐδόθη τοῖς <u>βαπτισθεῖσιν</u> χαρά.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-14"><td></td><td colspan="10">Aorist · Passive · Dative · Plural · Masculine · βαπτίζω · 1st · Substantival · "Joy was given to those who had been baptized."</td><td></td></tr>
-
-<tr class="question-row" data-id="15">
-  <td class="item-num">15</td>
-  <td class="greek">πάντες οἱ <u>λαβόντες</u> τὴν ἐξουσίαν ἐχάρησαν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-15"><td></td><td colspan="10">Aorist · Active · Nominative · Plural · Masculine · λαμβάνω · 2nd · Substantival · "All those who had taken the authority rejoiced."</td><td></td></tr>
-
-</tbody>
-</table>
-
-<script>
-function toggleAnswer(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
-  if (row.style.display === 'table-row') {
-    row.style.display = 'none';
-    if (btn) btn.textContent = '▶ Answer';
-  } else {
-    row.style.display = 'table-row';
-    if (btn) btn.textContent = '▼ Answer';
-  }
-}
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
-  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer');
-}
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
-  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer');
-}
-function clearAll() {
-  document.querySelectorAll('.parse-field').forEach(f => f.value = '');
-}
-</script>
-
+[Full Screen (Interactive)](ch28-aorist-participle-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch28-aorist-participle-parsing.pdf){.md-button}  [Markdown](ch28-aorist-participle-parsing.md){.md-button}

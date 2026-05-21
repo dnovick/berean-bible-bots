@@ -2,126 +2,25 @@
 
 *Chapter 18 — Qal Imperative*
 
-[Full screen](ch18-qal-imperative-paradigm-drill.html){.md-button}  [Markdown](ch18-qal-imperative-paradigm-drill.md){.md-button}  [Print (PDF)](ch18-qal-imperative-paradigm-drill.pdf){.md-button}
+Write all 4 Qal Imperative forms of שמר (A-class) from memory.
 
-<style>
+## Coverage
 
-  body { font-family: Georgia, serif;    color: #222; line-height: 1.6; }
-  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
-  h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
-  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
-  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
-  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
-  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
-  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
-  td.pgn { font-weight: bold; color: #333; width: 5rem; }
-  td.heb-ans { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; font-family: 'Arial Hebrew', Arial, sans-serif; color: #2a6e2a; min-width: 7rem; }
-  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
-  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
-  .ans-row { display: none; background: #f0faf0; }
-  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
-  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
-  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
-  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
-  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
-  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
-  .controls button:hover { background: #ddd; }
-  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
-  .clr:hover { background: #ffd8d8 !important; }
-  hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
-  @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
+| Part | Description | Items |
+|---|---|---|
+| Full paradigm | All 4 Qal Imperative PGN forms of שמר (2nd person only) | 4 |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Sample Questions
 
-</style>
+**Q1.** 1 2ms
+> **A:** ✓ 2ms שְׁמֹר
 
-<h1>Ch18 Qal Imperative Paradigm Drill</h1>
-<p class="subtitle">BBH Chapter 18 · 4 forms · Root: שמר (A-class) · 2nd person only</p>
+**Q2.** 2 2fs
+> **A:** ✓ 2fs שִׁמְרִי
 
-<div class="instructions">
-  <strong>Instructions:</strong> Write the Qal Imperative form for each PGN.
-  Root: שמר (A-class). Note: the Imperative has only 2nd-person forms.
-</div>
+**Q3.** 3 2mp
+> **A:** ✓ 2mp שִׁמְרוּ
 
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
-</div>
+## Formats
 
-<table>
-  <tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr>
-
-  <tr>
-    <td class="num">1</td>
-    <td class="pgn">2ms</td>
-    <td><input class="parse-field" id="f-1" placeholder="כתוב..."></td>
-    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-1">
-    <td class="ans-lbl">✓</td>
-    <td class="pgn">2ms</td>
-    <td class="heb-ans">שְׁמֹר</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td class="num">2</td>
-    <td class="pgn">2fs</td>
-    <td><input class="parse-field" id="f-2" placeholder="כתוב..."></td>
-    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-2">
-    <td class="ans-lbl">✓</td>
-    <td class="pgn">2fs</td>
-    <td class="heb-ans">שִׁמְרִי</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td class="num">3</td>
-    <td class="pgn">2mp</td>
-    <td><input class="parse-field" id="f-3" placeholder="כתוב..."></td>
-    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-3">
-    <td class="ans-lbl">✓</td>
-    <td class="pgn">2mp</td>
-    <td class="heb-ans">שִׁמְרוּ</td>
-    <td></td>
-  </tr>
-
-  <tr>
-    <td class="num">4</td>
-    <td class="pgn">2fp</td>
-    <td><input class="parse-field" id="f-4" placeholder="כתוב..."></td>
-    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-4">
-    <td class="ans-lbl">✓</td>
-    <td class="pgn">2fp</td>
-    <td class="heb-ans">שְׁמֹרְנָה</td>
-    <td></td>
-  </tr>
-
-</table>
-
-<script>
-function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}
-function showAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='table-row');}
-function hideAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='none');}
-function clearAll(){document.querySelectorAll('input.f').forEach(i=>i.value='');}
-</script>
-
+[Full Screen (Interactive)](ch18-qal-imperative-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch18-qal-imperative-paradigm-drill.pdf){.md-button}  [Markdown](ch18-qal-imperative-paradigm-drill.md){.md-button}

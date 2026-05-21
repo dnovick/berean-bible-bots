@@ -2,191 +2,27 @@
 
 *Chapter 21 — Qal Infinitive Absolute*
 
-[Full screen](ch21-passage-exercise.html){.md-button}  [Markdown](ch21-passage-exercise.md){.md-button}  [Print (PDF)](ch21-passage-exercise.pdf){.md-button}
+This passage exercise presents 15 highlighted IA forms drawn from eight OT passages spanning Genesis, Exodus, Leviticus, Numbers, and Deuteronomy. Passages were selected to cover all four major IA functions: emphatic pairs (Gen 2:16–17, Exo 3:7, Gen 44:28, Deu 6:17, Deu 8:19, Num 15:35), imperatival IA (Exo 20:8, Deu 5:12), and paired manner/progressive IAs (Gen 8:3, 8:5, 26:13). Students identify root, root class, function, and full gloss for each highlighted IA form.
 
-<style>
+## Coverage
 
-body{font-family:Georgia,serif;color:#222}
-h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
-h2{font-size:1.1em;margin-top:2em;color:#2c5f2e;border-bottom:1px solid #2c5f2e;padding-bottom:.2em}
-p.passage{font-size:1.1em;line-height:1.8;margin:.5em 0}
-p.trans{color:#555;font-style:italic;font-size:.95em;margin:.2em 0 .8em}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
-th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
-td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
-tr:nth-child(even){background:#f7f7f7}
-.hebrew{font-size:1.25em;direction:rtl;unicode-bidi:embed;font-weight:bold}
-.h-inline{font-size:1.15em;direction:rtl;unicode-bidi:embed}
-input.f{width:90%;border:none;border-bottom:1px solid #999;background:transparent;font-size:.88em;font-family:inherit;padding:1px 2px}
-input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
-.answer-row td{background:#e8f5e9;font-size:.85em}
-.answer-row{display:none}
-.toggle-btn{background:#2c5f2e;color:#fff;border:none;border-radius:3px;padding:2px 8px;cursor:pointer;font-size:.8em}
-.toggle-btn:hover{background:#1e4220}
-.controls{margin:.8em 0 1.2em;display:flex;gap:.6em;flex-wrap:wrap}
-.ctrl-btn{background:#555;color:#fff;border:none;border-radius:4px;padding:.4em .9em;cursor:pointer;font-size:.85em}
-.ctrl-btn:hover{background:#333}
-.note-box{background:#fff8dc;border-left:4px solid #c8a800;padding:.6em .9em;margin:.8em 0;font-size:.9em}
-.ref{font-size:.8em;color:#777;margin-bottom:.3em}
-hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
-@media print{
-  .controls,.toggle-btn{display:none}
-  input.f{border-bottom:1px solid #000;min-width:50px}
-  .answer-row{display:none!important}
-}
+| Function Type | Count | Forms |
+|---|---|---|
+| Emphatic (IA + finite verb) | 8 | אָכֹ֥ל, מ֥וֹת (×2), רָאֹ֣ה, טָרֹ֥ף, שָׁמ֣וֹר (Deu 6:17), שָׁכֹ֤חַ |
+| Imperatival IA | 2 | זָכ֕וֹר, שָׁמ֗וֹר |
+| Manner / Progressive | 5 | הָל֣וֹךְ (×3), וָ/שׁ֑וֹב, וְ/חָס֔וֹר, וְ/גָדֵ֔ל |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Sample Questions
 
-</style>
+**Q1.** 1 אָכֹ֥ל
+> **A:** אכל · I-aleph · Emphatic — "freely eat"; IA + Imperfect 2ms of same root = emphatic permission; qamets under aleph
 
-<h1>Chapter 21 — Qal Infinitive Absolute in Context</h1>
-<p><em>For each highlighted IA form: (a) Root, (b) Root class, (c) Function (Emphatic / Imperatival / Manner / Progressive / Serial), (d) Full gloss. Click <strong>▶ Answer</strong> to reveal.</em></p>
+**Q2.** 2 מ֥וֹת
+> **A:** מות · Biconsonantal · Emphatic — "surely die"; IA + Imperfect = certain death; no preposition before מ֥וֹת confirms IA (not IC)
 
-<div class="controls">
-  <button class="ctrl-btn" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl-btn" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl-btn" onclick="clearAll()">Clear All Inputs</button>
-</div>
+**Q3.** 3 רָאֹ֣ה
+> **A:** ראה · III-ה · Emphatic — "surely seen"; III-ה IA ends in ה (contrast IC: רְאוֹת); God's emphatic declaration of active concern at the burning bush
 
-<div class="note-box"><strong>Key patterns:</strong> Emphatic: IA + finite verb of same root (מ֥וֹת תָּמוּת). Imperatival: IA stands alone as command (זָכ֕וֹר). Manner/Progressive: two IAs paired with waw (הָל֣וֹךְ וְגָדֵ֔ל).</div>
+## Formats
 
-<h2>Passage 1 — Genesis 2:16–17 (Permission and Prohibition)</h2>
-<p class="ref">Gen 2:16–17</p>
-<p class="passage"><span class="h-inline">מִכֹּ֛ל עֵ֥ץ הַגָּ֖ן <strong>אָכֹ֥ל תֹּאכֵֽל</strong></span></p>
-<p class="trans">"…from every tree of the garden <strong>you may freely eat</strong>."</p>
-<p class="passage"><span class="h-inline">וּמֵעֵ֗ץ הַדַּ֤עַת … לֹ֥א תֹאכַ֖ל … <strong>מ֥וֹת תָּמוּת</strong></span></p>
-<p class="trans">"…but from the tree of the knowledge … you shall not eat … <strong>you shall surely die</strong>."</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>1</td><td class="hebrew">אָכֹ֥ל</td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-cl"></td><td><input class="parse-field" id="1-fn"></td><td><input class="parse-field" id="1-gl"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a1"><td colspan="7">אכל · I-aleph · Emphatic — "freely eat"; IA + Imperfect 2ms of same root = emphatic permission; qamets under aleph</td></tr>
-<tr><td>2</td><td class="hebrew">מ֥וֹת</td><td><input class="parse-field" id="2-r"></td><td><input class="parse-field" id="2-cl"></td><td><input class="parse-field" id="2-fn"></td><td><input class="parse-field" id="2-gl"></td><td><button class="toggle-btn" onclick="tog('a2')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a2"><td colspan="7">מות · Biconsonantal · Emphatic — "surely die"; IA + Imperfect = certain death; no preposition before מ֥וֹת confirms IA (not IC)</td></tr>
-</table>
-
-<hr>
-<h2>Passage 2 — Exodus 3:7 (The Burning Bush)</h2>
-<p class="ref">Exo 3:7</p>
-<p class="passage"><span class="h-inline"><strong>רָאֹ֣ה רָאִ֛יתִי</strong> אֶת-עֳנִ֥י עַמִּ֖י אֲשֶׁ֣ר בְּמִצְרָ֑יִם</span></p>
-<p class="trans">"<strong>I have surely seen</strong> the affliction of my people who are in Egypt…"</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>3</td><td class="hebrew">רָאֹ֣ה</td><td><input class="parse-field" id="3-r"></td><td><input class="parse-field" id="3-cl"></td><td><input class="parse-field" id="3-fn"></td><td><input class="parse-field" id="3-gl"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a3"><td colspan="7">ראה · III-ה · Emphatic — "surely seen"; III-ה IA ends in ה (contrast IC: רְאוֹת); God's emphatic declaration of active concern at the burning bush</td></tr>
-</table>
-
-<hr>
-<h2>Passage 3 — Exodus 20:8 / Deuteronomy 5:12 (The Sabbath Command)</h2>
-<p class="ref">Exo 20:8 / Deu 5:12</p>
-<p class="passage"><span class="h-inline"><strong>זָכ֕וֹר</strong> אֶת-יוֹם הַשַּׁבָּ֖ת לְקַדְּשֽׁוֹ</span></p>
-<p class="trans">"<strong>Remember</strong> the Sabbath day, to keep it holy." (Exo 20:8)</p>
-<p class="passage"><span class="h-inline"><strong>שָׁמ֗וֹר</strong> אֶת-יוֹם הַשַּׁבָּ֔ת לְקַדְּשׁ֑וֹ</span></p>
-<p class="trans">"<strong>Keep/Observe</strong> the Sabbath day, to keep it holy." (Deu 5:12)</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>4</td><td class="hebrew">זָכ֕וֹר</td><td><input class="parse-field" id="4-r"></td><td><input class="parse-field" id="4-cl"></td><td><input class="parse-field" id="4-fn"></td><td><input class="parse-field" id="4-gl"></td><td><button class="toggle-btn" onclick="tog('a4')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a4"><td colspan="7">זכר · Strong A · Imperatival — "Remember!"; IA stands as command; no paired finite verb; qamets + holem-waw</td></tr>
-<tr><td>5</td><td class="hebrew">שָׁמ֗וֹר</td><td><input class="parse-field" id="5-r"></td><td><input class="parse-field" id="5-cl"></td><td><input class="parse-field" id="5-fn"></td><td><input class="parse-field" id="5-gl"></td><td><button class="toggle-btn" onclick="tog('a5')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a5"><td colspan="7">שמר · Strong A · Imperatival — "Keep/Observe!"; same structure; Deu version of Sabbath command uses שמר instead of זכר</td></tr>
-</table>
-
-<hr>
-<h2>Passage 4 — Genesis 8:3, 5 (The Flood Waters Recede)</h2>
-<p class="ref">Gen 8:3 / Gen 8:5</p>
-<p class="passage"><span class="h-inline">וַיָּשֻׁ֧בוּ הַמַּ֛יִם מֵעַ֥ל הָאָ֖רֶץ <strong>הָל֣וֹךְ וָ/שׁ֑וֹב</strong></span></p>
-<p class="trans">"And the waters receded from the earth, <strong>going and returning</strong> steadily." (Gen 8:3)</p>
-<p class="passage"><span class="h-inline">וְהַמַּ֗יִם הָי֤וּ <strong>הָל֣וֹךְ וְ/חָס֔וֹר</strong></span></p>
-<p class="trans">"And the waters kept <strong>receding and decreasing</strong> steadily." (Gen 8:5)</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>6</td><td class="hebrew">הָל֣וֹךְ</td><td><input class="parse-field" id="6-r"></td><td><input class="parse-field" id="6-cl"></td><td><input class="parse-field" id="6-fn"></td><td><input class="parse-field" id="6-gl"></td><td><button class="toggle-btn" onclick="tog('a6')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a6"><td colspan="7">הלך · I-י · Manner/Progressive — "going"; I-י IA retains full form; paired with שׁוֹב = "going and returning" (steady recession)</td></tr>
-<tr><td>7</td><td class="hebrew">וָ/שׁ֑וֹב</td><td><input class="parse-field" id="7-r"></td><td><input class="parse-field" id="7-cl"></td><td><input class="parse-field" id="7-fn"></td><td><input class="parse-field" id="7-gl"></td><td><button class="toggle-btn" onclick="tog('a7')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a7"><td colspan="7">שוב · Biconsonantal · Manner — "returning"; second IA in the pair; full shureq; together with הָל֣וֹךְ = progressive motion</td></tr>
-<tr><td>8</td><td class="hebrew">הָל֣וֹךְ (Gen 8:5)</td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-cl"></td><td><input class="parse-field" id="8-fn"></td><td><input class="parse-field" id="8-gl"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a8"><td colspan="7">הלך · I-י · Progressive — same form; introduces second IA pair in v.5</td></tr>
-<tr><td>9</td><td class="hebrew">וְ/חָס֔וֹר</td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-cl"></td><td><input class="parse-field" id="9-fn"></td><td><input class="parse-field" id="9-gl"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a9"><td colspan="7">חסר · Strong A · Progressive — "decreasing"; IA of חסר; holem on R2; paired with הָל֣וֹךְ</td></tr>
-</table>
-
-<hr>
-<h2>Passage 5 — Genesis 26:13 (Isaac's Prosperity)</h2>
-<p class="ref">Gen 26:13</p>
-<p class="passage"><span class="h-inline">וַיִּגְדַּ֣ל הָאִ֔ישׁ <strong>הָלוֹךְ֙ וְ/גָדֵ֔ל</strong> עַ֥ד כִּֽי-גָדַ֖ל מְאֹֽד</span></p>
-<p class="trans">"The man grew <strong>greater and greater</strong> until he became very wealthy."</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>10</td><td class="hebrew">הָלוֹךְ֙</td><td><input class="parse-field" id="10-r"></td><td><input class="parse-field" id="10-cl"></td><td><input class="parse-field" id="10-fn"></td><td><input class="parse-field" id="10-gl"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a10"><td colspan="7">הלך · I-י · Progressive — "going"; introduces the progressive growth idiom</td></tr>
-<tr><td>11</td><td class="hebrew">וְ/גָדֵ֔ל</td><td><input class="parse-field" id="11-r"></td><td><input class="parse-field" id="11-cl"></td><td><input class="parse-field" id="11-fn"></td><td><input class="parse-field" id="11-gl"></td><td><button class="toggle-btn" onclick="tog('a11')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a11"><td colspan="7">גדל · Strong A · Progressive — "growing/becoming great"; IA paired with הָלוֹךְ = "growing greater and greater" (iterative idiom)</td></tr>
-</table>
-
-<hr>
-<h2>Passage 6 — Genesis 44:28 (Jacob on Joseph)</h2>
-<p class="ref">Gen 44:28</p>
-<p class="passage"><span class="h-inline">וָ/אֹמַ֑ר אַ֚ךְ <strong>טָרֹ֥ף טֹרַ֖ף</strong></span></p>
-<p class="trans">"…and I said, 'Surely <strong>he has been torn to pieces</strong>…'"</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>12</td><td class="hebrew">טָרֹ֥ף</td><td><input class="parse-field" id="12-r"></td><td><input class="parse-field" id="12-cl"></td><td><input class="parse-field" id="12-fn"></td><td><input class="parse-field" id="12-gl"></td><td><button class="toggle-btn" onclick="tog('a12')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a12"><td colspan="7">טרף · Strong A · Emphatic — "surely been torn"; IA + Passive Perfect of same root; Jacob's certainty about Joseph (dramatic irony — Joseph is alive)</td></tr>
-</table>
-
-<hr>
-<h2>Passage 7 — Deuteronomy 6:17 and 8:19</h2>
-<p class="ref">Deu 6:17 / Deu 8:19</p>
-<p class="passage"><span class="h-inline"><strong>שָׁמ֣וֹר תִּשְׁמְר֗וּן</strong> אֶת-מִצְוֹ֤ת יְהוָה֙ אֱלֹהֵיכֶ֔ם</span></p>
-<p class="trans">"You shall <strong>diligently keep</strong> the commandments of the LORD your God." (Deu 6:17)</p>
-<p class="passage"><span class="h-inline">וְהָיָ֗ה אִם-<strong>שָׁכֹ֤חַ תִּשְׁכַּח֙</strong> אֶת-יְהוָ֣ה אֱלֹהֶ֔יךָ</span></p>
-<p class="trans">"And if you <strong>ever forget</strong> the LORD your God…" (Deu 8:19)</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>13</td><td class="hebrew">שָׁמ֣וֹר</td><td><input class="parse-field" id="13-r"></td><td><input class="parse-field" id="13-cl"></td><td><input class="parse-field" id="13-fn"></td><td><input class="parse-field" id="13-gl"></td><td><button class="toggle-btn" onclick="tog('a13')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a13"><td colspan="7">שמר · Strong A · Emphatic — "diligently keep"; IA + Imperfect 2mp; Deuteronomic covenant-obedience formula</td></tr>
-<tr><td>14</td><td class="hebrew">שָׁכֹ֤חַ</td><td><input class="parse-field" id="14-r"></td><td><input class="parse-field" id="14-cl"></td><td><input class="parse-field" id="14-fn"></td><td><input class="parse-field" id="14-gl"></td><td><button class="toggle-btn" onclick="tog('a14')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a14"><td colspan="7">שכח · Strong B (gutt. R3) · Emphatic — "ever forget"; IA + Imperfect in conditional clause; qamets + holem + patach before ח</td></tr>
-</table>
-
-<hr>
-<h2>Passage 8 — Numbers 15:35 (Death Penalty Formula)</h2>
-<p class="ref">Num 15:35</p>
-<p class="passage"><span class="h-inline"><strong>מ֥וֹת יוּמַ֖ת</strong> הָאִ֑ישׁ</span></p>
-<p class="trans">"The man shall <strong>surely be put to death</strong>…"</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
-<tr><td>15</td><td class="hebrew">מ֥וֹת</td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-cl"></td><td><input class="parse-field" id="15-fn"></td><td><input class="parse-field" id="15-gl"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a15"><td colspan="7">מות · Biconsonantal · Emphatic — "surely be put to death"; IA + Hophal Imperfect (יוּמַת); the same biconsonantal IA as Gen 2:17, now paired with a passive finite verb</td></tr>
-</table>
-
-<hr>
-<h2>Reflection Questions</h2>
-<ol>
-<li>Genesis 2:16–17 uses the identical IA + finite-verb structure for both the permission (אָכֹ֥ל תֹּאכֵֽל, "freely eat") and the prohibition/consequence (מ֥וֹת תָּמוּת, "surely die"). What does this parallel structure communicate about how Hebrew uses the IA to signal certainty in both positive and negative contexts?</li>
-<li>The Sabbath commandment appears in two versions: Exodus 20:8 uses זָכ֕וֹר ("remember") and Deuteronomy 5:12 uses שָׁמ֗וֹר ("keep/observe"). Both are imperatival IAs. Compare these with the Deuteronomic legal formula שָׁמ֣וֹר תִּשְׁמְר֗וּן (Deu 6:17). What are the differences in construction and emphasis?</li>
-<li>The flood narrative strings together pairs of IAs (הָל֣וֹךְ וָשׁ֑וֹב, הָל֣וֹךְ וְחָס֔וֹר in Gen 8, הָלוֹךְ וְגָדֵ֔ל in Gen 26:13). How does this "paired IA" pattern differ semantically from using two finite verbs? What literary effect does the repetition of הָל֣וֹךְ create?</li>
-</ol>
-
-<script>
-function tog(id){
-  var r=document.getElementById(id);
-  var b=r.previousElementSibling.querySelector('.toggle-btn');
-  if(r.style.display==='table-row'){r.style.display='none';b.textContent='▶ Answer';}
-  else{r.style.display='table-row';b.textContent='▼ Hide';}
-}
-function showAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='table-row';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▼ Hide';});}
-function hideAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='none';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▶ Answer';});}
-function clearAll(){document.querySelectorAll('input.f').forEach(function(i){i.value='';});}
-</script>
-
+[Full Screen (Interactive)](ch21-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch21-passage-exercise.pdf){.md-button}  [Markdown](ch21-passage-exercise.md){.md-button}

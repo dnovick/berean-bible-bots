@@ -2,249 +2,29 @@
 
 *Chapter 35 — Nonindicative of δίδωμι and Conditional Sentences*
 
-[Full screen](ch35-conditionals-drill.html){.md-button}  [Markdown](ch35-conditionals-drill.md){.md-button}  [Print (PDF)](ch35-conditionals-drill.pdf){.md-button}
+A 20-item drill on Greek conditional sentences and non-indicative forms of δίδωμι. Items 1–16 present conditional sentences: students identify the class (1–4), parse the key verb form in the protasis, and translate. Items 17–20 parse non-indicative δίδωμι forms (subjunctive, imperative, infinitive, participle). An answer key is embedded in all formats.
 
-<style>
+## Coverage
 
-  body { font-family: Georgia, serif;    color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
-  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
-  .subtitle { color: #555; font-style: italic; }
-  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
-  th { background: #1a237e; color: #fff; padding: .4em .5em; text-align: left; }
-  td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
-  tr:nth-child(even) td { background: #e8eaf6; }
-  .greek { font-size: 1.08em; font-weight: bold; }
-  .parse-field { width: 93%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .87em; padding: 2px 0; }
-  .parse-field:focus { outline: none; border-bottom: 2px solid #1a237e; }
-  .answer-row { display: none; background: #c5cae9 !important; }
-  .answer-row td { color: #1a237e; font-style: italic; font-size: .87em; }
-  .btn-reveal { background: #1a237e; color: #fff; border: none; border-radius: 3px; padding: .22em .6em; cursor: pointer; font-size: .82em; }
-  .btn-reveal:hover { background: #0d1160; }
-  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
-  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
-  .btn-ctrl:hover { background: #333; }
-  @media print { .btn-reveal, .controls { display: none !important; } .answer-row { display: none !important; } .parse-field { border-bottom: 1px solid #999; } }
+| Type | Count | Items |
+|---|---|---|
+| Class 1 — Simple condition (εἰ + indicative) | 5 | #1–#5 |
+| Class 2 — Contrary-to-fact (εἰ + past indicative + ἄν) | 5 | #6–#10 |
+| Class 3 — More probable (ἐάν + subjunctive) | 4 | #11–#14 |
+| Class 4 — Less probable (εἰ + optative) | 2 | #15–#16 |
+| Non-indicative δίδωμι forms | 4 | #17–#20 |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Sample Questions
 
-</style>
+**Q1.** 1 εἰ υἱὸς εἶ τοῦ θεοῦ, εἰπὲ ἵνα οἱ λίθοι οὗτοι ἄρτοι γένωνται.
+> **A:** Class 1 · Pres · Act · Ind · 2sg · εἰμί · "If you are the Son of God, tell these stones to become bread." (Matt 4:3)
 
-<h1>BBG Chapter 35 — Conditional Sentences Drill</h1>
-<p class="subtitle"><em>Basics of Biblical Greek Grammar, Mounce, 4th Edition</em></p>
-<div class="instructions">
-  <strong>Part A (1–16):</strong> Identify the conditional class, parse the key verb in the protasis, and translate.<br>
-  <strong>Part B (17–20):</strong> Parse the underlined non-indicative δίδωμι form and translate.
-</div>
-<div class="controls">
-  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
-</div>
+**Q2.** 2 εἰ ἐν δακτύλῳ θεοῦ ἐκβάλλω τὰ δαιμόνια, ἄρα ἔφθασεν ἐφ᾽ ὑμᾶς ἡ βασιλεία τοῦ θεοῦ.
+> **A:** Class 1 · Pres · Act · Ind · 1sg · ἐκβάλλω · "If I by the finger of God cast out demons, then the kingdom of God has come upon you." (Luke 11:20)
 
-<h2>Part A — Class 1 Conditions (1–5)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="1"><td><b>1</b></td>
-  <td class="greek">εἰ υἱὸς εἶ τοῦ θεοῦ, εἰπὲ ἵνα οἱ λίθοι οὗτοι ἄρτοι γένωνται.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-1"><td></td><td colspan="4">Class 1 · Pres · Act · Ind · 2sg · εἰμί · "If you are the Son of God, tell these stones to become bread." (Matt 4:3)</td><td></td></tr>
+**Q3.** 3 εἰ ὁ θεὸς δίκαιός ἐστιν, κρινεῖ τὸν κόσμον.
+> **A:** Class 1 · Pres · Act · Ind · 3sg · εἰμί · "If God is righteous, he will judge the world."
 
-<tr class="question-row" data-id="2"><td><b>2</b></td>
-  <td class="greek">εἰ ἐν δακτύλῳ θεοῦ ἐκβάλλω τὰ δαιμόνια, ἄρα ἔφθασεν ἐφ᾽ ὑμᾶς ἡ βασιλεία τοῦ θεοῦ.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-2"><td></td><td colspan="4">Class 1 · Pres · Act · Ind · 1sg · ἐκβάλλω · "If I by the finger of God cast out demons, then the kingdom of God has come upon you." (Luke 11:20)</td><td></td></tr>
+## Formats
 
-<tr class="question-row" data-id="3"><td><b>3</b></td>
-  <td class="greek">εἰ ὁ θεὸς δίκαιός ἐστιν, κρινεῖ τὸν κόσμον.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-3"><td></td><td colspan="4">Class 1 · Pres · Act · Ind · 3sg · εἰμί · "If God is righteous, he will judge the world."</td><td></td></tr>
-
-<tr class="question-row" data-id="4"><td><b>4</b></td>
-  <td class="greek">εἰ ἀγαπᾶτέ με, τὰς ἐντολὰς τὰς ἐμὰς τηρήσετε.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-4"><td></td><td colspan="4">Class 1 · Pres · Act · Ind · 2pl · ἀγαπάω · "If you love me, you will keep my commandments." (John 14:15)</td><td></td></tr>
-
-<tr class="question-row" data-id="5"><td><b>5</b></td>
-  <td class="greek">εἰ γὰρ πιστεύετε Μωϋσεῖ, ἐπιστεύετε ἂν ἐμοί.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-5"><td></td><td colspan="4">Class 2 (mixed) · Pres · Act · Ind · 2pl · πιστεύω · Note: apodosis has ἄν = contrary-to-fact · "For if you believed Moses, you would believe me." (John 5:46)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part B — Class 2 Conditions (6–10)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="6"><td><b>6</b></td>
-  <td class="greek">εἰ ἦτε τέκνα τοῦ Ἀβραάμ, τὰ ἔργα τοῦ Ἀβραὰμ ἐποιεῖτε ἄν.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-6"><td></td><td colspan="4">Class 2 · Impf · Act · Ind · 2pl · εἰμί · "If you were children of Abraham [you are not], you would be doing the works of Abraham." (John 8:39)</td><td></td></tr>
-
-<tr class="question-row" data-id="7"><td><b>7</b></td>
-  <td class="greek">εἰ ἐγνώκειτέ με, καὶ τὸν πατέρα μου ἐγνώκειτε ἄν.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-7"><td></td><td colspan="4">Class 2 · Pluperf · Act · Ind · 2pl · γινώσκω · "If you had known me, you would also have known my Father." (John 8:19)</td><td></td></tr>
-
-<tr class="question-row" data-id="8"><td><b>8</b></td>
-  <td class="greek">εἰ ἐκ τοῦ κόσμου ἦτε, ὁ κόσμος ἂν τὸ ἴδιον ἐφίλει.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-8"><td></td><td colspan="4">Class 2 · Impf · Act · Ind · 2pl · εἰμί · "If you were of the world, the world would love its own." (John 15:19)</td><td></td></tr>
-
-<tr class="question-row" data-id="9"><td><b>9</b></td>
-  <td class="greek">εἰ μὴ ἦλθον καὶ ἐλάλησα αὐτοῖς, ἁμαρτίαν οὐκ εἴχοσαν ἄν.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-9"><td></td><td colspan="4">Class 2 · Aor · Act · Ind · 1sg · ἔρχομαι · "If I had not come and spoken to them, they would not have sin." (John 15:22)</td><td></td></tr>
-
-<tr class="question-row" data-id="10"><td><b>10</b></td>
-  <td class="greek">εἰ ἐκ τούτου ἦν ἡ βασιλεία μου, οἱ ὑπηρέται ἂν οἱ ἐμοὶ ἠγωνίζοντο.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-10"><td></td><td colspan="4">Class 2 · Impf · Act · Ind · 3sg · εἰμί · "If my kingdom were of this world, my servants would be fighting." (John 18:36)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part C — Class 3 Conditions (11–14)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="11"><td><b>11</b></td>
-  <td class="greek">ἐὰν ὁμολογῶμεν τὰς ἁμαρτίας ἡμῶν, πιστός ἐστιν καὶ δίκαιος.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-11"><td></td><td colspan="4">Class 3 · Pres · Act · Subj · 1pl · ὁμολογέω · "If we confess our sins, he is faithful and just." (1 John 1:9)</td><td></td></tr>
-
-<tr class="question-row" data-id="12"><td><b>12</b></td>
-  <td class="greek">ἐὰν εἴπωμεν ὅτι ἁμαρτίαν οὐκ ἔχομεν, ἑαυτοὺς πλανῶμεν.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-12"><td></td><td colspan="4">Class 3 · Aor · Act · Subj · 1pl · λέγω · "If we say that we have no sin, we deceive ourselves." (1 John 1:8)</td><td></td></tr>
-
-<tr class="question-row" data-id="13"><td><b>13</b></td>
-  <td class="greek">ἐὰν πιστεύσῃς, ὄψῃ τὴν δόξαν τοῦ θεοῦ.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-13"><td></td><td colspan="4">Class 3 · Aor · Act · Subj · 2sg · πιστεύω · "If you believe, you will see the glory of God." (John 11:40)</td><td></td></tr>
-
-<tr class="question-row" data-id="14"><td><b>14</b></td>
-  <td class="greek">ἐὰν τις ἁμάρτῃ, παράκλητον ἔχομεν πρὸς τὸν πατέρα.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-14"><td></td><td colspan="4">Class 3 · Aor · Act · Subj · 3sg · ἁμαρτάνω · "If anyone should sin, we have an advocate with the Father." (1 John 2:1)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part D — Classes 4 and Analysis (15–16)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Class</th><th>Protasis Verb (T·V·Mood·P·N·Lex)</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="15"><td><b>15</b></td>
-  <td class="greek">εἰ καὶ πάσχοιτε διὰ δικαιοσύνην, μακάριοι.</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-15"><td></td><td colspan="4">Class 4 · Pres · Act · Opt · 2pl · πάσχω · "But even if you should suffer for righteousness, you are blessed." (1 Pet 3:14)</td><td></td></tr>
-
-<tr class="question-row" data-id="16"><td><b>16</b></td>
-  <td class="greek">τίς δὲ ὁ κακώσων ὑμᾶς ἐὰν τοῦ ἀγαθοῦ ζηλωταὶ γένησθε;</td>
-  <td><input class="parse-field" placeholder="class"></td>
-  <td><input class="parse-field" placeholder="T · V · Mood · P · N · Lexical"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-16"><td></td><td colspan="4">Class 3 · Aor · Mid · Subj · 2pl · γίνομαι · "And who is going to harm you if you are zealous for what is good?" (1 Pet 3:13)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part E — Non-Indicative δίδωμι (17–20)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person/Case</th><th>Num/Gen</th><th>Mood/Type</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="17"><td><b>17</b></td><td class="greek">εἶπεν αὐτοῖς· <u>δότε</u> αὐτοῖς ὑμεῖς φαγεῖν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(17)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-17"><td></td><td colspan="7">Aor · Act · 2nd · Pl · Imperative · δίδωμι · "He said to them: you give them something to eat." (Mark 6:37)</td><td></td></tr>
-
-<tr class="question-row" data-id="18"><td><b>18</b></td><td class="greek">ἵνα <u>δῷ</u> αὐτοῖς ζωὴν αἰώνιον.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(18)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-18"><td></td><td colspan="7">Aor · Act · 3rd · Sg · Subjunctive · δίδωμι · "So that he might give them eternal life." (cf. John 17:2)</td><td></td></tr>
-
-<tr class="question-row" data-id="19"><td><b>19</b></td><td class="greek">ὁ θεὸς ἐξουσίαν τοῦ <u>διδόναι</u> αὐτήν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(19)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-19"><td></td><td colspan="7">Pres · Act · — · — · Infinitive · δίδωμι · "God has authority to give it."</td><td></td></tr>
-
-<tr class="question-row" data-id="20"><td><b>20</b></td><td class="greek">ὁ <u>δούς</u> ἐξουσίαν τοῖς ἀνθρώποις.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-20"><td></td><td colspan="7">Aor · Act · Nom · Sg (Masc) · Participle (substantival) · δίδωμι · "The one who gave authority to the people."</td><td></td></tr>
-</tbody>
-</table>
-
-<script>
-function toggleAnswer(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
-  if (row.style.display === 'table-row') { row.style.display = 'none'; if (btn) btn.textContent = '▶ Answer'; }
-  else { row.style.display = 'table-row'; if (btn) btn.textContent = '▼ Answer'; }
-}
-function showAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer'); }
-function hideAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer'); }
-function clearAll() { document.querySelectorAll('.parse-field').forEach(f => f.value = ''); }
-</script>
-
+[Full Screen (Interactive)](ch35-conditionals-drill.html){.md-button .md-button--primary}  [Print / PDF](ch35-conditionals-drill.pdf){.md-button}  [Markdown](ch35-conditionals-drill.md){.md-button}

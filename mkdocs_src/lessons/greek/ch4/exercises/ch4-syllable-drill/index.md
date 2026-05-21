@@ -2,142 +2,26 @@
 
 *Chapter 4 — Punctuation and Syllabification*
 
-[Full screen](ch4-syllable-drill.html){.md-button}  [Markdown](ch4-syllable-drill.md){.md-button}  [Print (PDF)](ch4-syllable-drill.pdf){.md-button}
+A 20-item drill in which students divide Greek words into syllables, identify the accent position by name (ultima, penult, or antepenult), and name the accent type (acute, grave, or circumflex). Words are drawn from high-frequency NT vocabulary. The drill reinforces the three syllabification rules and the accent placement rules from Ch4.
 
-<style>
+## Coverage
 
-body{font-family:Georgia,serif;color:#222}
-h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
-h2{font-size:1.15em;margin-top:2em;color:#444}
-p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
-th{background:#1a4a7a;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
-td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
-tr:nth-child(even){background:#f7f7f7}
-.greek{font-size:1.3em;font-weight:bold}
-input.parse-field{width:90%;border:none;border-bottom:1px solid #999;background:transparent;font-size:.88em;font-family:inherit;padding:1px 2px}
-input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
-.answer-row td{background:#e8f0fb;font-size:.85em}
-.answer-row{display:none}
-.toggle-btn{background:#1a4a7a;color:#fff;border:none;border-radius:3px;padding:2px 8px;cursor:pointer;font-size:.8em}
-.toggle-btn:hover{background:#0e2f52}
-.controls{margin:.8em 0 1.2em;display:flex;gap:.6em;flex-wrap:wrap}
-.ctrl-btn{background:#555;color:#fff;border:none;border-radius:4px;padding:.4em .9em;cursor:pointer;font-size:.85em}
-.ctrl-btn:hover{background:#333}
-.note-box{background:#fff8dc;border-left:4px solid #c8a800;padding:.6em .9em;margin:.8em 0;font-size:.9em}
-@media print{
-  .controls,.toggle-btn{display:none}
-  input.parse-field{border-bottom:1px solid #000;min-width:60px}
-  .answer-row{display:none!important}
-}
+| Item | Form | Answer |
+|---|---|---|
+| 1–10 | 2–3 syllable NT words | Syllable division + accent name + accent type |
+| 11–20 | 3–5 syllable NT words | Syllable division + accent name + accent type |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Sample Questions
 
-</style>
+**Q1.** 1 θεός
+> **A:** θε-ός · Ultima · Acute (oxytone)
 
-<h1>Chapter 4 — Greek Syllabification Drill</h1>
-<p><em>For each word: (a) divide into syllables using hyphens, (b) name the accented syllable position (ultima / penult / antepenult), (c) name the accent type (acute / grave / circumflex). Click <strong>▶ Answer</strong> to reveal.</em></p>
+**Q2.** 2 λόγος
+> **A:** λό-γος · Penult · Acute (paroxytone)
 
-<div class="controls">
-  <button class="ctrl-btn" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl-btn" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl-btn" onclick="clearAll()">Clear All Inputs</button>
-</div>
+**Q3.** 3 κύριος
+> **A:** κύ-ρι-ος · Antepenult · Acute (proparoxytone)
 
-<div class="note-box"><strong>Syllable rules reminder:</strong> (1) One vowel/diphthong per syllable. (2) A single consonant between vowels goes with the following syllable. (3) When two consonants appear between vowels, divide so the second syllable begins with a cluster that can start a Greek word. Ultima = last syllable · Penult = second to last · Antepenult = third to last.</div>
+## Formats
 
-<h2>Part A — Two and Three Syllable Words</h2>
-<p class="sub">Divide, identify the accent position, and name the accent type.</p>
-<table>
-<tr><th>#</th><th>Word</th><th>Syllable Division</th><th>Accent Position</th><th>Accent Type</th><th></th></tr>
-
-<tr><td>1</td><td class="greek">θεός</td><td><input class="parse-field" id="1-div"></td><td><input class="parse-field" id="1-pos"></td><td><input class="parse-field" id="1-type"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a1"><td colspan="6">θε-ός · Ultima · Acute (oxytone)</td></tr>
-
-<tr><td>2</td><td class="greek">λόγος</td><td><input class="parse-field" id="2-div"></td><td><input class="parse-field" id="2-pos"></td><td><input class="parse-field" id="2-type"></td><td><button class="toggle-btn" onclick="tog('a2')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a2"><td colspan="6">λό-γος · Penult · Acute (paroxytone)</td></tr>
-
-<tr><td>3</td><td class="greek">κύριος</td><td><input class="parse-field" id="3-div"></td><td><input class="parse-field" id="3-pos"></td><td><input class="parse-field" id="3-type"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a3"><td colspan="6">κύ-ρι-ος · Antepenult · Acute (proparoxytone)</td></tr>
-
-<tr><td>4</td><td class="greek">πνεῦμα</td><td><input class="parse-field" id="4-div"></td><td><input class="parse-field" id="4-pos"></td><td><input class="parse-field" id="4-type"></td><td><button class="toggle-btn" onclick="tog('a4')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a4"><td colspan="6">πνεῦ-μα · Penult · Circumflex (properispomenon) — long diphthong εῦ</td></tr>
-
-<tr><td>5</td><td class="greek">σάρξ</td><td><input class="parse-field" id="5-div"></td><td><input class="parse-field" id="5-pos"></td><td><input class="parse-field" id="5-type"></td><td><button class="toggle-btn" onclick="tog('a5')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a5"><td colspan="6">σάρξ (one syllable) · Only syllable / Ultima · Acute — single syllable words always accent the ultima</td></tr>
-
-<tr><td>6</td><td class="greek">νόμος</td><td><input class="parse-field" id="6-div"></td><td><input class="parse-field" id="6-pos"></td><td><input class="parse-field" id="6-type"></td><td><button class="toggle-btn" onclick="tog('a6')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a6"><td colspan="6">νό-μος · Penult · Acute (paroxytone)</td></tr>
-
-<tr><td>7</td><td class="greek">ἀγάπη</td><td><input class="parse-field" id="7-div"></td><td><input class="parse-field" id="7-pos"></td><td><input class="parse-field" id="7-type"></td><td><button class="toggle-btn" onclick="tog('a7')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a7"><td colspan="6">ἀ-γά-πη · Penult · Acute (paroxytone)</td></tr>
-
-<tr><td>8</td><td class="greek">ζωή</td><td><input class="parse-field" id="8-div"></td><td><input class="parse-field" id="8-pos"></td><td><input class="parse-field" id="8-type"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a8"><td colspan="6">ζω-ή · Ultima · Acute (oxytone)</td></tr>
-
-<tr><td>9</td><td class="greek">πίστις</td><td><input class="parse-field" id="9-div"></td><td><input class="parse-field" id="9-pos"></td><td><input class="parse-field" id="9-type"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a9"><td colspan="6">πίσ-τις · Penult · Acute (paroxytone) — στ keeps τ with the following syllable; σ closes the penult</td></tr>
-
-<tr><td>10</td><td class="greek">εἰρήνη</td><td><input class="parse-field" id="10-div"></td><td><input class="parse-field" id="10-pos"></td><td><input class="parse-field" id="10-type"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a10"><td colspan="6">εἰ-ρή-νη · Penult · Circumflex (properispomenon) — long η in penult carries the circumflex</td></tr>
-</table>
-
-<h2>Part B — Three to Five Syllable Words</h2>
-<p class="sub">Longer words — apply syllabification rules carefully to consonant clusters.</p>
-<table>
-<tr><th>#</th><th>Word</th><th>Syllable Division</th><th>Accent Position</th><th>Accent Type</th><th></th></tr>
-
-<tr><td>11</td><td class="greek">ἄνθρωπος</td><td><input class="parse-field" id="11-div"></td><td><input class="parse-field" id="11-pos"></td><td><input class="parse-field" id="11-type"></td><td><button class="toggle-btn" onclick="tog('a11')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a11"><td colspan="6">ἄν-θρω-πος · Antepenult · Acute — θρ can begin a word, so ν closes the first syllable</td></tr>
-
-<tr><td>12</td><td class="greek">ἀπόστολος</td><td><input class="parse-field" id="12-div"></td><td><input class="parse-field" id="12-pos"></td><td><input class="parse-field" id="12-type"></td><td><button class="toggle-btn" onclick="tog('a12')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a12"><td colspan="6">ἀ-πόσ-το-λος · Penult · Acute (paroxytone) — στ splits: σ closes second syllable; τ begins third</td></tr>
-
-<tr><td>13</td><td class="greek">εὐαγγέλιον</td><td><input class="parse-field" id="13-div"></td><td><input class="parse-field" id="13-pos"></td><td><input class="parse-field" id="13-type"></td><td><button class="toggle-btn" onclick="tog('a13')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a13"><td colspan="6">εὐ-αγ-γέ-λι-ον · Antepenult · Acute — γγ splits: first γ closes second syllable; second γ begins third</td></tr>
-
-<tr><td>14</td><td class="greek">βασιλεία</td><td><input class="parse-field" id="14-div"></td><td><input class="parse-field" id="14-pos"></td><td><input class="parse-field" id="14-type"></td><td><button class="toggle-btn" onclick="tog('a14')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a14"><td colspan="6">βα-σι-λεί-α · Penult · Circumflex (properispomenon) — diphthong εί is long; circumflex on penult</td></tr>
-
-<tr><td>15</td><td class="greek">ἁμαρτία</td><td><input class="parse-field" id="15-div"></td><td><input class="parse-field" id="15-pos"></td><td><input class="parse-field" id="15-type"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a15"><td colspan="6">ἁ-μαρ-τί-α · Penult · Acute (paroxytone) — ρτ splits; note rough breathing on initial α</td></tr>
-
-<tr><td>16</td><td class="greek">ἐκκλησία</td><td><input class="parse-field" id="16-div"></td><td><input class="parse-field" id="16-pos"></td><td><input class="parse-field" id="16-type"></td><td><button class="toggle-btn" onclick="tog('a16')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a16"><td colspan="6">ἐκ-κλη-σί-α · Penult · Acute (paroxytone) — κκλ: first κ closes first syllable; κλ begins second (κλ can begin a word)</td></tr>
-
-<tr><td>17</td><td class="greek">ἀδελφός</td><td><input class="parse-field" id="17-div"></td><td><input class="parse-field" id="17-pos"></td><td><input class="parse-field" id="17-type"></td><td><button class="toggle-btn" onclick="tog('a17')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a17"><td colspan="6">ἀ-δελ-φός · Ultima · Acute (oxytone) — λφ splits; φ begins last syllable</td></tr>
-
-<tr><td>18</td><td class="greek">προφήτης</td><td><input class="parse-field" id="18-div"></td><td><input class="parse-field" id="18-pos"></td><td><input class="parse-field" id="18-type"></td><td><button class="toggle-btn" onclick="tog('a18')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a18"><td colspan="6">προ-φή-της · Penult · Circumflex (properispomenon) — long η in penult; circumflex on penult</td></tr>
-
-<tr><td>19</td><td class="greek">παραβολή</td><td><input class="parse-field" id="19-div"></td><td><input class="parse-field" id="19-pos"></td><td><input class="parse-field" id="19-type"></td><td><button class="toggle-btn" onclick="tog('a19')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a19"><td colspan="6">πα-ρα-βο-λή · Ultima · Acute (oxytone) — 4 syllables; accent on ultima</td></tr>
-
-<tr><td>20</td><td class="greek">ἀποκάλυψις</td><td><input class="parse-field" id="20-div"></td><td><input class="parse-field" id="20-pos"></td><td><input class="parse-field" id="20-type"></td><td><button class="toggle-btn" onclick="tog('a20')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a20"><td colspan="6">ἀ-πο-κά-λυ-ψις · Antepenult · Acute (proparoxytone) — 5 syllables; ψ is a double consonant (π+σ) and stays with its vowel</td></tr>
-</table>
-
-<script>
-function tog(id){
-  var r=document.getElementById(id);
-  var b=r.previousElementSibling.querySelector('.toggle-btn');
-  if(r.style.display==='table-row'){r.style.display='none';b.textContent='▶ Answer';}
-  else{r.style.display='table-row';b.textContent='▼ Hide';}
-}
-function showAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='table-row';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▼ Hide';});}
-function hideAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='none';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▶ Answer';});}
-function clearAll(){document.querySelectorAll('input.parse-field').forEach(function(i){i.value='';});}
-</script>
-
+[Full Screen (Interactive)](ch4-syllable-drill.html){.md-button .md-button--primary}  [Print / PDF](ch4-syllable-drill.pdf){.md-button}  [Markdown](ch4-syllable-drill.md){.md-button}

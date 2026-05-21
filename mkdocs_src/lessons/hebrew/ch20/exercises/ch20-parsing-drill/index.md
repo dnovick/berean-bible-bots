@@ -2,162 +2,33 @@
 
 *Chapter 20 — Qal Infinitive Construct*
 
-[Full screen](ch20-parsing-drill.html){.md-button}  [Markdown](ch20-parsing-drill.md){.md-button}  [Print (PDF)](ch20-parsing-drill.pdf){.md-button}
+This 25-item parsing drill covers Qal IC forms across all major root classes, organized in three parts. Part A presents strong and B-class roots (including I-aleph and III-ה) with a preposition, asking students to identify the root, root class, preposition, and function. Part B covers III-ה and biconsonantal roots similarly. Part C focuses on I-י and I-נ contracted forms plus disambiguation — students must distinguish IC from surface-identical Imperative, Imperfect, and Perfect forms using morphological and contextual cues.
 
-<style>
+## Coverage
 
-body{font-family:Georgia,serif;color:#222}
-h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
-h2{font-size:1.15em;margin-top:2em;color:#444}
-p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
-th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
-td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
-tr:nth-child(even){background:#f7f7f7}
-.hebrew{font-size:1.3em;direction:rtl;unicode-bidi:embed}
-input.f{width:90%;border:none;border-bottom:1px solid #999;background:transparent;font-size:.88em;font-family:inherit;padding:1px 2px}
-input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
-.answer-row td{background:#e8f5e9;font-size:.85em}
-.answer-row{display:none}
-.toggle-btn{background:#2c5f2e;color:#fff;border:none;border-radius:3px;padding:2px 8px;cursor:pointer;font-size:.8em}
-.toggle-btn:hover{background:#1e4220}
-.controls{margin:.8em 0 1.2em;display:flex;gap:.6em;flex-wrap:wrap}
-.ctrl-btn{background:#555;color:#fff;border:none;border-radius:4px;padding:.4em .9em;cursor:pointer;font-size:.85em}
-.ctrl-btn:hover{background:#333}
-.note-box{background:#fff8dc;border-left:4px solid #c8a800;padding:.6em .9em;margin:.8em 0;font-size:.9em}
-@media print{
-  .controls,.toggle-btn{display:none}
-  input.f{border-bottom:1px solid #000;min-width:50px}
-  .answer-row{display:none!important}
-}
+| Root Class | Count | Forms |
+|---|---|---|
+| Strong A | 5 | לִ/שְׁמֹר, בִּ/זְכֹר, לִ/כְתֹב, שְׁמֹר (ambig.), שָׁמַר |
+| Strong B (gutt.) | 3 | לִ/שְׁמֹ֣עַ, כִּ/שְׁמֹ֣עַ, שְׁמֹ֣עַ (ambig.) |
+| I-aleph | 2 | לֵ/אמֹר, לֶ/אֱכֹל |
+| III-ה + I-gutt. | 1 | מֵ/עֲשׂוֹת |
+| III-ה | 3 | לִ/רְאוֹת, לַ/עֲשׂוֹת, הֱיוֹת |
+| Biconsonantal | 4 | לָ/בֹא, לָ/שׁוּב, לָ/מוּת, בְּ/בֹא |
+| I-י | 5 | לֶ/כֶת (×2), לָ/שֶׁ/בֶת, צֵאת, לָ/דַ/עַת |
+| I-נ | 1 | תֵּת |
+| Imperfect (disambiguation) | 1 | יִשְׁמֹר |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Sample Questions
 
-</style>
+**Q1.** 1 לִ/שְׁמֹר
+> **A:** IC · שמר · Strong A · לְ · Purpose/Complementary — Most common IC pattern; shewa + holem
 
-<h1>Chapter 20 — Qal Infinitive Construct Parsing Drill</h1>
-<p><em>For each form: (a) Identify as IC or another form (Imperative / Imperfect / Perfect), (b) Root, (c) Root class, (d) Preposition (if any), (e) Function (Purpose / Temporal-when / Temporal-as / Complementary / Quotative / Until / From). Click <strong>▶ Answer</strong> to reveal; click again to hide.</em></p>
+**Q2.** 2 לִ/שְׁמֹ֣עַ
+> **A:** IC · שמע · Strong B (gutt. R3) · לְ · Purpose/Complementary — Patach at R3 (ע)
 
-<div class="controls">
-  <button class="ctrl-btn" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl-btn" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl-btn" onclick="clearAll()">Clear All Inputs</button>
-</div>
+**Q3.** 3 כִּ/שְׁמֹ֣עַ
+> **A:** IC · שמע · Strong B (gutt.) · כְּ · Temporal (when/as) — "when/as he heard"; כְּ + IC = temporal
 
-<h2>Part A — Strong and B-class Roots</h2>
-<p class="sub">All forms are Qal IC. Identify root, class, preposition, and function.</p>
-<table>
-<tr><th>#</th><th>Form</th><th>IC or other?</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
+## Formats
 
-<tr><td>1</td><td class="hebrew">לִ/שְׁמֹר</td><td><input class="parse-field" id="1-ic"></td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-cl"></td><td><input class="parse-field" id="1-p"></td><td><input class="parse-field" id="1-fn"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a1"><td colspan="8">IC · שמר · Strong A · לְ · Purpose/Complementary — Most common IC pattern; shewa + holem</td></tr>
-
-<tr><td>2</td><td class="hebrew">לִ/שְׁמֹ֣עַ</td><td><input class="parse-field" id="2-ic"></td><td><input class="parse-field" id="2-r"></td><td><input class="parse-field" id="2-cl"></td><td><input class="parse-field" id="2-p"></td><td><input class="parse-field" id="2-fn"></td><td><button class="toggle-btn" onclick="tog('a2')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a2"><td colspan="8">IC · שמע · Strong B (gutt. R3) · לְ · Purpose/Complementary — Patach at R3 (ע)</td></tr>
-
-<tr><td>3</td><td class="hebrew">כִּ/שְׁמֹ֣עַ</td><td><input class="parse-field" id="3-ic"></td><td><input class="parse-field" id="3-r"></td><td><input class="parse-field" id="3-cl"></td><td><input class="parse-field" id="3-p"></td><td><input class="parse-field" id="3-fn"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a3"><td colspan="8">IC · שמע · Strong B (gutt.) · כְּ · Temporal (when/as) — "when/as he heard"; כְּ + IC = temporal</td></tr>
-
-<tr><td>4</td><td class="hebrew">בִּ/זְכֹר</td><td><input class="parse-field" id="4-ic"></td><td><input class="parse-field" id="4-r"></td><td><input class="parse-field" id="4-cl"></td><td><input class="parse-field" id="4-p"></td><td><input class="parse-field" id="4-fn"></td><td><button class="toggle-btn" onclick="tog('a4')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a4"><td colspan="8">IC · זכר · Strong A · בְּ · Temporal (when) — "when/while he remembered"</td></tr>
-
-<tr><td>5</td><td class="hebrew">לִ/כְתֹב</td><td><input class="parse-field" id="5-ic"></td><td><input class="parse-field" id="5-r"></td><td><input class="parse-field" id="5-cl"></td><td><input class="parse-field" id="5-p"></td><td><input class="parse-field" id="5-fn"></td><td><button class="toggle-btn" onclick="tog('a5')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a5"><td colspan="8">IC · כתב · Strong A · לְ · Purpose — "to write"</td></tr>
-
-<tr><td>6</td><td class="hebrew">לֵ/אמֹר</td><td><input class="parse-field" id="6-ic"></td><td><input class="parse-field" id="6-r"></td><td><input class="parse-field" id="6-cl"></td><td><input class="parse-field" id="6-p"></td><td><input class="parse-field" id="6-fn"></td><td><button class="toggle-btn" onclick="tog('a6')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a6"><td colspan="8">IC · אמר · I-aleph · לְ · Quotative — ~2,600× OT; follows verbs of speech; "saying"</td></tr>
-
-<tr><td>7</td><td class="hebrew">לֶ/אֱכֹל</td><td><input class="parse-field" id="7-ic"></td><td><input class="parse-field" id="7-r"></td><td><input class="parse-field" id="7-cl"></td><td><input class="parse-field" id="7-p"></td><td><input class="parse-field" id="7-fn"></td><td><button class="toggle-btn" onclick="tog('a7')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a7"><td colspan="8">IC · אכל · I-aleph · לְ · Purpose/Complementary — "to eat"; hateph under aleph; ל + chateph = seghol</td></tr>
-
-<tr><td>8</td><td class="hebrew">מֵ/עֲשׂוֹת</td><td><input class="parse-field" id="8-ic"></td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-cl"></td><td><input class="parse-field" id="8-p"></td><td><input class="parse-field" id="8-fn"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a8"><td colspan="8">IC · עשה · III-ה + I-gutt. · מִן · From/cessation — "from doing"; וֹת ending</td></tr>
-</table>
-
-<h2>Part B — III-ה and Biconsonantal</h2>
-<p class="sub">All forms are Qal IC. Identify root, class, preposition, and function.</p>
-<table>
-<tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
-
-<tr><td>9</td><td class="hebrew">לִ/רְאוֹת</td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-cl"></td><td><input class="parse-field" id="9-p"></td><td><input class="parse-field" id="9-fn"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a9"><td colspan="7">ראה · III-ה · לְ · Purpose — "to see"; וֹת ending; tsere often: לִרְאֹת</td></tr>
-
-<tr><td>10</td><td class="hebrew">לַ/עֲשׂוֹת</td><td><input class="parse-field" id="10-r"></td><td><input class="parse-field" id="10-cl"></td><td><input class="parse-field" id="10-p"></td><td><input class="parse-field" id="10-fn"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a10"><td colspan="7">עשה · III-ה + I-gutt. · לְ · Purpose/Complementary — Chateph under ע; וֹת ending</td></tr>
-
-<tr><td>11</td><td class="hebrew">הֱיוֹת</td><td><input class="parse-field" id="11-r"></td><td><input class="parse-field" id="11-cl"></td><td><input class="parse-field" id="11-p"></td><td><input class="parse-field" id="11-fn"></td><td><button class="toggle-btn" onclick="tog('a11')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a11"><td colspan="7">היה · III-ה · — (bare) · Verbal noun/Complementary — "being / to be"; hateph-seghol under ה</td></tr>
-
-<tr><td>12</td><td class="hebrew">לָ/בֹא</td><td><input class="parse-field" id="12-r"></td><td><input class="parse-field" id="12-cl"></td><td><input class="parse-field" id="12-p"></td><td><input class="parse-field" id="12-fn"></td><td><button class="toggle-btn" onclick="tog('a12')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a12"><td colspan="7">בוא · Biconsonantal · לְ · Purpose/Complementary — "to come/enter"; holem-waw; ל takes qamets</td></tr>
-
-<tr><td>13</td><td class="hebrew">לָ/שׁוּב</td><td><input class="parse-field" id="13-r"></td><td><input class="parse-field" id="13-cl"></td><td><input class="parse-field" id="13-p"></td><td><input class="parse-field" id="13-fn"></td><td><button class="toggle-btn" onclick="tog('a13')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a13"><td colspan="7">שוב · Biconsonantal · לְ · Purpose/Complementary — "to return"; full shureq</td></tr>
-
-<tr><td>14</td><td class="hebrew">לָ/מוּת</td><td><input class="parse-field" id="14-r"></td><td><input class="parse-field" id="14-cl"></td><td><input class="parse-field" id="14-p"></td><td><input class="parse-field" id="14-fn"></td><td><button class="toggle-btn" onclick="tog('a14')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a14"><td colspan="7">מות · Biconsonantal · לְ · Purpose — "to die"; full shureq</td></tr>
-
-<tr><td>15</td><td class="hebrew">בְּ/בֹא</td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-cl"></td><td><input class="parse-field" id="15-p"></td><td><input class="parse-field" id="15-fn"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a15"><td colspan="7">בוא · Biconsonantal · בְּ · Temporal (when) — "when he/she came"; בְּ + IC temporal clause</td></tr>
-</table>
-
-<h2>Part C — I-י, I-נ, and Disambiguation</h2>
-<p class="sub">Some forms may be IC; others may be Imperative, Imperfect, or Perfect. Identify each correctly.</p>
-<div class="note-box"><strong>Key rule:</strong> Strong A-class: IC = Imperative 2ms in surface form — context alone distinguishes. I-י IC ends in <span class="hebrew">ת</span> (taw) — no Imperative has this ending.</div>
-<table>
-<tr><th>#</th><th>Form</th><th>IC or other?</th><th>Root</th><th>Root Class</th><th>Notes</th><th></th></tr>
-
-<tr><td>16</td><td class="hebrew">לֶ/כֶת</td><td><input class="parse-field" id="16-ic"></td><td><input class="parse-field" id="16-r"></td><td><input class="parse-field" id="16-cl"></td><td><input class="parse-field" id="16-nt"></td><td><button class="toggle-btn" onclick="tog('a16')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a16"><td colspan="7">IC · הלך · I-י — "to go"; contracted form; seghol-taw; ל fused into form</td></tr>
-
-<tr><td>17</td><td class="hebrew">לָ/שֶׁ/בֶת</td><td><input class="parse-field" id="17-ic"></td><td><input class="parse-field" id="17-r"></td><td><input class="parse-field" id="17-cl"></td><td><input class="parse-field" id="17-nt"></td><td><button class="toggle-btn" onclick="tog('a17')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a17"><td colspan="7">IC · ישב · I-י — "to dwell/sit"; seghol-taw; yod drops; לָ prefix</td></tr>
-
-<tr><td>18</td><td class="hebrew">צֵאת</td><td><input class="parse-field" id="18-ic"></td><td><input class="parse-field" id="18-r"></td><td><input class="parse-field" id="18-cl"></td><td><input class="parse-field" id="18-nt"></td><td><button class="toggle-btn" onclick="tog('a18')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a18"><td colspan="7">IC · יצא · I-י + III-א — "going out"; bare IC with taw ending; aleph quiesces; tsere diagnostic</td></tr>
-
-<tr><td>19</td><td class="hebrew">תֵּת</td><td><input class="parse-field" id="19-ic"></td><td><input class="parse-field" id="19-r"></td><td><input class="parse-field" id="19-cl"></td><td><input class="parse-field" id="19-nt"></td><td><button class="toggle-btn" onclick="tog('a19')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a19"><td colspan="7">IC · נתן · I-נ — "to give"; both nuns drop; very short form; tsere on taw</td></tr>
-
-<tr><td>20</td><td class="hebrew">לָ/דַ/עַת</td><td><input class="parse-field" id="20-ic"></td><td><input class="parse-field" id="20-r"></td><td><input class="parse-field" id="20-cl"></td><td><input class="parse-field" id="20-nt"></td><td><button class="toggle-btn" onclick="tog('a20')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a20"><td colspan="7">IC · ידע · I-י — "to know"; patach + ayin + taw; dagesh forte in dalet</td></tr>
-
-<tr><td>21</td><td class="hebrew">שְׁמֹר</td><td><input class="parse-field" id="21-ic"></td><td><input class="parse-field" id="21-r"></td><td><input class="parse-field" id="21-cl"></td><td><input class="parse-field" id="21-nt"></td><td><button class="toggle-btn" onclick="tog('a21')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a21"><td colspan="7">Ambiguous · שמר · Strong A — IC or Imperative 2ms; if follows preposition = IC; if command = Imper.</td></tr>
-
-<tr><td>22</td><td class="hebrew">שְׁמֹ֣עַ</td><td><input class="parse-field" id="22-ic"></td><td><input class="parse-field" id="22-r"></td><td><input class="parse-field" id="22-cl"></td><td><input class="parse-field" id="22-nt"></td><td><button class="toggle-btn" onclick="tog('a22')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a22"><td colspan="7">Ambiguous · שמע · Strong B (gutt.) — IC or Imperative 2ms; same form; context distinguishes</td></tr>
-
-<tr><td>23</td><td class="hebrew">לֶ/כֶת</td><td><input class="parse-field" id="23-ic"></td><td><input class="parse-field" id="23-r"></td><td><input class="parse-field" id="23-cl"></td><td><input class="parse-field" id="23-nt"></td><td><button class="toggle-btn" onclick="tog('a23')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a23"><td colspan="7">IC · הלך · I-י — Cannot be Imperative (Imper. is לֵךְ/לֶךְ without taw); taw = IC diagnostic</td></tr>
-
-<tr><td>24</td><td class="hebrew">יִשְׁמֹר</td><td><input class="parse-field" id="24-ic"></td><td><input class="parse-field" id="24-r"></td><td><input class="parse-field" id="24-cl"></td><td><input class="parse-field" id="24-nt"></td><td><button class="toggle-btn" onclick="tog('a24')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a24"><td colspan="7">Imperfect · שמר · Strong A — יִ– prefix = Imperfect; not IC (IC has no prefix)</td></tr>
-
-<tr><td>25</td><td class="hebrew">שָׁמַר</td><td><input class="parse-field" id="25-ic"></td><td><input class="parse-field" id="25-r"></td><td><input class="parse-field" id="25-cl"></td><td><input class="parse-field" id="25-nt"></td><td><button class="toggle-btn" onclick="tog('a25')">▶ Answer</button></td></tr>
-<tr class="answer-row" id="a25"><td colspan="7">Perfect 3ms · שמר · Strong A — Qamets + patach = Perfect 3ms; not IC</td></tr>
-</table>
-
-<script>
-function tog(id){
-  var r=document.getElementById(id);
-  var b=r.previousElementSibling.querySelector('.toggle-btn');
-  if(r.style.display==='table-row'){r.style.display='none';b.textContent='▶ Answer';}
-  else{r.style.display='table-row';b.textContent='▼ Hide';}
-}
-function showAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='table-row';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▼ Hide';});}
-function hideAll(){document.querySelectorAll('.answer-row').forEach(function(r){r.style.display='none';});document.querySelectorAll('.toggle-btn').forEach(function(b){b.textContent='▶ Answer';});}
-function clearAll(){document.querySelectorAll('input.f').forEach(function(i){i.value='';});}
-</script>
-
+[Full Screen (Interactive)](ch20-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch20-parsing-drill.pdf){.md-button}  [Markdown](ch20-parsing-drill.md){.md-button}

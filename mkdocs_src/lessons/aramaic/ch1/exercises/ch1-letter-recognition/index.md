@@ -2,136 +2,15 @@
 
 *Chapter 1 — Alphabet*
 
-[Full screen](ch1-letter-recognition.html){.md-button}  [Markdown](ch1-letter-recognition.md){.md-button}  [Print (PDF)](ch1-letter-recognition.pdf){.md-button}
+22-item identification drill covering all Aramaic letters in canonical order. Students identify the letter name, transliteration, sound, special category (guttural / emphatic / bgdkpt / normal), and the corresponding Hebrew letter.
 
-<style>
+## Coverage
 
-  body { font-family: Arial, sans-serif;    }
-  h1 { font-size: 1.3em; }
-  h2 { font-size: 1.1em; margin-top: 1.5em; }
-  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
-  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
-  th { background: #e8e8e8; }
-  td.letter { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; }
-  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
-  .answer-row td { background: #e6ffe6; font-size: .85em; }
-  .answer-row { display: none; }
-  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
-  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
-  .global-btns { margin-bottom: 1em; }
-  @media print {
-    .btn, .global-btns { display: none; }
-    input.parse-field { border-bottom: 1px solid #555; }
-    .answer-row { display: none !important; }
-  }
+| Category | Count |
+|---|---|
+| Standard letters | 22 |
+| **Total** | **22** |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Formats
 
-</style>
-
-<h1>BBA Chapter 1 — Aramaic Letter Recognition</h1>
-<p class="instructions"><strong>Instructions:</strong> For each Aramaic letter, provide: (1) Letter Name, (2) Transliteration, (3) Sound, (4) Special Category (Guttural / Emphatic / Bgdkpt / Normal), (5) Corresponding Hebrew letter.</p>
-
-<div class="global-btns">
-  <button class="btn" onclick="showAll()">Show All Answers</button>
-  <button class="btn" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>#</th><th>Letter</th><th>Name</th><th>Transliteration</th><th>Sound</th><th>Category</th><th>Heb. Equiv.</th><th></th>
-    </tr>
-  </thead>
-  <tbody id="table-body">
-  </tbody>
-</table>
-
-<script>
-var data = [
-  [1,  "א", "Aleph",  "ʾ",     "Silent (glottal)",       "Guttural", "Same"],
-  [2,  "ב", "Beth",   "b / v", "b (hard) / v (soft)",    "Bgdkpt",   "Same"],
-  [3,  "ג", "Gimel",  "g",     "g",                       "Bgdkpt",   "Same"],
-  [4,  "ד", "Dalet",  "d / dh","d (hard) / dh",           "Bgdkpt",   "Same"],
-  [5,  "ה", "He",     "h",     "h",                       "Guttural", "Same (often quiescent in Aram.)"],
-  [6,  "ו", "Waw",    "w",     "w",                       "Normal / vowel letter", "Same"],
-  [7,  "ז", "Zayin",  "z",     "z",                       "Normal",   "Same"],
-  [8,  "ח", "Cheth",  "ḥ",     "ch (guttural fricative)", "Guttural", "Same"],
-  [9,  "ט", "Teth",   "ṭ",     "t (emphatic)",            "Emphatic", "Same"],
-  [10, "י", "Yod",    "y",     "y",                       "Normal / vowel letter", "Same"],
-  [11, "כ", "Kaph",   "k / kh","k (hard) / kh",           "Bgdkpt",   "Same"],
-  [12, "ל", "Lamed",  "l",     "l",                       "Normal",   "Same"],
-  [13, "מ", "Mem",    "m",     "m",                       "Normal",   "Same"],
-  [14, "נ", "Nun",    "n",     "n",                       "Normal",   "Same"],
-  [15, "ס", "Samech", "s",     "s",                       "Normal",   "Same"],
-  [16, "ע", "Ayin",   "ʿ",     "Silent (pharyngeal)",     "Guttural", "Same"],
-  [17, "פ", "Pe",     "p / f", "p (hard) / f",            "Bgdkpt",   "Same"],
-  [18, "צ", "Tsade",  "ṣ",     "ts (emphatic)",           "Emphatic", "Same"],
-  [19, "ק", "Qoph",   "q",     "q (uvular)",              "Emphatic", "Same"],
-  [20, "ר", "Resh",   "r",     "r",                       "Normal (resists Dagesh)", "Same"],
-  [21, "שׁ","Shin",   "š",     "sh",                      "Normal",   "Same (note: Heb. שׁ often = Aram. תּ by sound shift)"],
-  [22, "ת", "Taw",    "t",     "t / th",                  "Bgdkpt",   "Same"]
-];
-
-var tbody = document.getElementById("table-body");
-data.forEach(function(row) {
-  var num = row[0], letter = row[1], name = row[2], translit = row[3], sound = row[4], cat = row[5], heb = row[6];
-  var qid = "q" + num;
-  var aid = "a" + num;
-
-  var qrow = document.createElement("tr");
-  qrow.id = qid;
-  qrow.innerHTML =
-    '<td>' + num + '</td>' +
-    '<td class="letter">' + letter + '</td>' +
-    '<td><input class="parse-field" type="text" placeholder="name"></td>' +
-    '<td><input class="parse-field" type="text" placeholder="translit."></td>' +
-    '<td><input class="parse-field" type="text" placeholder="sound"></td>' +
-    '<td><input class="parse-field" type="text" placeholder="category"></td>' +
-    '<td><input class="parse-field" type="text" placeholder="Heb. equiv."></td>' +
-    '<td><button class="btn btn-ans" onclick="toggle(' + num + ')">▶ Answer</button></td>';
-  tbody.appendChild(qrow);
-
-  var arow = document.createElement("tr");
-  arow.id = aid;
-  arow.className = "answer-row";
-  arow.innerHTML =
-    '<td></td>' +
-    '<td class="letter">' + letter + '</td>' +
-    '<td>' + name + '</td>' +
-    '<td>' + translit + '</td>' +
-    '<td>' + sound + '</td>' +
-    '<td>' + cat + '</td>' +
-    '<td>' + heb + '</td>' +
-    '<td></td>';
-  tbody.appendChild(arow);
-});
-
-function toggle(n) {
-  var el = document.getElementById("a" + n);
-  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
-}
-function showAll() {
-  document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; });
-}
-function hideAll() {
-  document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; });
-}
-function clearAll() {
-  document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; });
-}
-</script>
-
+[Full Screen (Interactive)](ch1-letter-recognition.html){.md-button .md-button--primary}  [Print / PDF](ch1-letter-recognition.pdf){.md-button}  [Markdown](ch1-letter-recognition.md){.md-button}

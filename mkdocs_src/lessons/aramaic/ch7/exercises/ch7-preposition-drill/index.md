@@ -2,122 +2,15 @@
 
 *Chapter 7 — Conjunctions and Prepositions*
 
-[Full screen](ch7-preposition-drill.html){.md-button}  [Markdown](ch7-preposition-drill.md){.md-button}  [Print (PDF)](ch7-preposition-drill.pdf){.md-button}
+A 20-item drill covering conjunctions and prepositions from BBA Chapter 7 (*Basics of Biblical Aramaic*, Van Pelt). Each item presents an Aramaic phrase from Daniel or Ezra; the student identifies the preposition or conjunction, gives its gloss, identifies the state of the following noun, and translates the phrase.
 
-<style>
+## Coverage
 
-  body { font-family: Arial, sans-serif;    }
-  h1 { font-size: 1.3em; }
-  p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
-  th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
-  th { background: #e8e8e8; }
-  td.aram { font-size: 1.4em; text-align: right; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; min-width: 120px; unicode-bidi: embed; }
-  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #999; font-size: .9em; }
-  .answer-row td { background: #e6ffe6; font-size: .85em; }
-  .answer-row { display: none; }
-  .btn { padding: .25em .6em; margin: .2em; cursor: pointer; font-size: .85em; }
-  .btn-ans { background: #e0e0e0; border: 1px solid #aaa; border-radius: 3px; }
-  .global-btns { margin-bottom: 1em; }
-  @media print {
-    .btn, .global-btns { display: none; }
-    input.parse-field { border-bottom: 1px solid #555; }
-    .answer-row { display: none !important; }
-  }
+| Prepositions / Conjunctions Covered |
+|---|
+| קֳדָם, מִן, לְ-, בְּ-, עַד, עַל, כְּ-, לָהֵן, הֵן, אַחֲרֵי |
+| כָּל-קֳבֵל דִּי, אַף, עִם, עַד דִּי, אֲרוּ, מִ- (prefixed מִן) |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Formats
 
-</style>
-
-<h1>BBA Chapter 7 — Preposition Drill</h1>
-<p class="instructions"><strong>Instructions:</strong> For each phrase, identify the preposition or conjunction, give its gloss, identify the noun state, and translate the phrase.</p>
-
-<div class="global-btns">
-  <button class="btn" onclick="showAll()">Show All Answers</button>
-  <button class="btn" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn" onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<script>
-// [num, aramPhrase, prep, gloss, nounState, translation]
-var rows = [
-  [1,  "קֳדָם מַלְכָּא",    "קֳדָם",           "before, in the presence of", "det. ms.",               "before the king"],
-  [2,  "מִן שְׁמַיָּא",     "מִן",             "from",                       "det. mp.",               "from the heavens"],
-  [3,  "לְאַרְעָא",         "לְ-",             "to, for",                    "det. fs.",               "to the earth"],
-  [4,  "בְּמַלְכוּתָא",    "בְּ-",            "in, with, by",               "det. fs.",               "in the kingdom"],
-  [5,  "עַד עָלְמָא",       "עַד",             "until, unto",                "det. ms.",               "unto eternity / forever"],
-  [6,  "עַל אַנְפּוֹהִי",  "עַל",             "upon, on",                   "det. + 3ms suffix",      "upon his face"],
-  [7,  "כְּאַבְנָא",        "כְּ-",            "as, like",                   "abs. ms.",               "like a stone"],
-  [8,  "לָהֵן מַלְכָּא",   "לָהֵן",           "therefore, but",             "— (introduces address)", "therefore, O king"],
-  [9,  "הֵן אִיתֵיכוֹן",   "הֵן",             "if, whether",                "— (introduces clause)",  "if you are (ready)"],
-  [10, "אַחֲרֵי דְנָה",    "אַחֲרֵי",         "after, behind",              "dem. pronoun",           "after this"],
-  [11, "מִן גֻּבָּא",       "מִן",             "from, out of",               "det. ms.",               "out of the pit"],
-  [12, "בְּאַרְעָא",        "בְּ-",            "in, on",                     "det. fs.",               "in/on the earth"],
-  [13, "כָּל-קֳבֵל דִּי",  "כָּל-קֳבֵל דִּי", "because, inasmuch as",       "— (introduces clause)",  "because / inasmuch as"],
-  [14, "אַף אֲנָה",         "אַף",             "also, even",                 "— (pronoun)",            "even I / I also"],
-  [15, "עִם חַכִּימֵי",    "עִם",             "with",                       "mp. cstr.",              "with the wise men of..."],
-  [16, "לְמַלְכָּא",        "לְ-",             "to, for",                    "det. ms.",               "to the king"],
-  [17, "עַד דִּי עָל",      "עַד דִּי",        "until (that)",               "— (introduces clause)",  "until he entered"],
-  [18, "אֲרוּ צְלֵם",       "אֲרוּ",           "behold, lo",                 "abs. ms.",               "behold, a statue"],
-  [19, "מִבָּבֶל",          "מִ- (מִן prefixed)","from",                    "proper noun",            "from Babylon"],
-  [20, "בְּמַלְכוּ",        "בְּ-",            "in",                         "abs. fs.",               "in a kingdom"]
-];
-
-document.addEventListener("DOMContentLoaded", function() {
-  var t = document.createElement("table"); document.body.appendChild(t);
-  var thead = document.createElement("thead");
-  var hr = document.createElement("tr");
-  ["#","Aramaic Phrase","Prep / Conj","Gloss","Noun State","Translation",""].forEach(function(h){
-    var th = document.createElement("th"); th.textContent = h; hr.appendChild(th);
-  });
-  thead.appendChild(hr); t.appendChild(thead);
-
-  var tbody = document.createElement("tbody");
-  rows.forEach(function(row) {
-    var num = row[0], phrase = row[1], prep = row[2], gloss = row[3], state = row[4], trans = row[5];
-
-    var qrow = document.createElement("tr");
-    qrow.innerHTML =
-      '<td>' + num + '</td>' +
-      '<td class="aram">' + phrase + '</td>' +
-      '<td><input class="parse-field" type="text" placeholder="prep / conj"></td>' +
-      '<td><input class="parse-field" type="text" placeholder="gloss"></td>' +
-      '<td><input class="parse-field" type="text" placeholder="noun state"></td>' +
-      '<td><input class="parse-field" type="text" placeholder="translation"></td>' +
-      '<td><button class="btn btn-ans" onclick="toggle(\'a'+num+'\')">▶ Answer</button></td>';
-    tbody.appendChild(qrow);
-
-    var arow = document.createElement("tr");
-    arow.id = "a" + num; arow.className = "answer-row";
-    arow.innerHTML =
-      '<td></td>' +
-      '<td class="aram">' + phrase + '</td>' +
-      '<td>' + prep + '</td>' +
-      '<td>' + gloss + '</td>' +
-      '<td>' + state + '</td>' +
-      '<td colspan="2">' + trans + '</td>';
-    tbody.appendChild(arow);
-  });
-  t.appendChild(tbody);
-});
-
-function toggle(id) {
-  var el = document.getElementById(id);
-  el.style.display = (el.style.display === "table-row") ? "none" : "table-row";
-}
-function showAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="table-row"; }); }
-function hideAll() { document.querySelectorAll(".answer-row").forEach(function(r){ r.style.display="none"; }); }
-function clearAll() { document.querySelectorAll("input.parse-field").forEach(function(i){ i.value=""; }); }
-</script>
-
+[Full Screen (Interactive)](ch7-preposition-drill.html){.md-button .md-button--primary}  [Print / PDF](ch7-preposition-drill.pdf){.md-button}  [Markdown](ch7-preposition-drill.md){.md-button}

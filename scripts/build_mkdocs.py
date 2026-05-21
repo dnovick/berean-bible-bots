@@ -18,55 +18,182 @@ LESSONS = REPO / "output" / "lessons"
 MKDOCS_SRC = REPO / "mkdocs_src"
 
 
-def _inline_exercise_html(html_path: Path) -> str:
-    """Extract <style> and <body> content from a self-contained exercise HTML
-    and return a string suitable for embedding directly in a MkDocs page.
+def _strip_tags(html: str) -> str:
+    """Remove all HTML tags and collapse whitespace."""
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html)).strip()
 
-    The exercise HTML has its own body max-width/margin/padding — we strip those
-    so the MkDocs layout controls the page width.  Override rules are appended
-    to force tables to fill the available width without horizontal scrolling.
+
+def _readme_description(readme_path: Path) -> str:
+    """Extract the description paragraph(s) from an exercise README.md.
+
+    Returns the text between the first heading and the first ## section,
+    skipping the subtitle italic line and the --- rule.
     """
+    if not readme_path.exists():
+        return ""
+    text = readme_path.read_text(encoding="utf-8")
+    # Drop the h1 title line
+    text = re.sub(r"^#[^#][^\n]*\n", "", text).strip()
+    # Drop a leading italic subtitle (*…*)
+    text = re.sub(r"^\*[^\n]*\*\n+", "", text).strip()
+    # Drop a leading ---
+    text = re.sub(r"^---\n+", "", text).strip()
+    # Drop ## Description heading if present
+    text = re.sub(r"^## Description\n+", "", text, flags=re.IGNORECASE).strip()
+    # Take only up to the next ## section or ---
+    m = re.search(r"\n##|^---", text, re.MULTILINE)
+    desc = text[: m.start()].strip() if m else text.strip()
+    # Drop any remaining markdown headings
+    desc = re.sub(r"^#{1,3}[^\n]*\n", "", desc, flags=re.MULTILINE).strip()
+    # Drop bold metadata lines like **Chapter:** … **Type:** … **Items:** …
+    desc = re.sub(r"^\*\*\w[^*]*:\*\*[^\n]*\n?", "", desc, flags=re.MULTILINE).strip()
+    return desc
+
+
+def _readme_coverage_table(readme_path: Path) -> str:
+    """Extract the first markdown table from the README as a fenced block."""
+    if not readme_path.exists():
+        return ""
+    text = readme_path.read_text(encoding="utf-8")
+    lines = text.splitlines()
+    table_lines: list[str] = []
+    in_table = False
+    for line in lines:
+        if line.startswith("|"):
+            in_table = True
+            table_lines.append(line)
+        elif in_table:
+            break
+    return "\n".join(table_lines) if table_lines else ""
+
+
+def _sample_qas(html_path: Path, n: int = 3) -> list[tuple[str, str]]:
+    """Extract up to n (question, answer) text pairs from an exercise HTML.
+
+    Handles two patterns:
+    - Static rows: pairs of a data row followed by an .ans-row / .answer-row
+    - JS data array: const items = [ { form, tense, …, trans }, … ]
+    """
+    if not html_path.exists():
+        return []
     text = html_path.read_text(encoding="utf-8")
 
-    # Extract <style> block
-    style_m = re.search(r"<style>(.*?)</style>", text, re.DOTALL | re.IGNORECASE)
-    style_content = style_m.group(1) if style_m else ""
+    # ── JS items[] pattern (Greek parsing drills) ──────────────────────────
+    items_m = re.search(r"const items\s*=\s*\[(.*?)\];", text, re.DOTALL)
+    if items_m:
+        pairs: list[tuple[str, str]] = []
+        for obj in re.finditer(r"\{([^}]+)\}", items_m.group(1)):
+            fields: dict[str, str] = {}
+            for kv in re.finditer(r'(\w+)\s*:\s*"([^"]*)"', obj.group(1)):
+                fields[kv.group(1)] = kv.group(2)
+            if "form" not in fields:
+                continue
+            q = fields.get("form", "")
+            answer_parts = []
+            for k in ("tense", "voice", "mood", "person", "number",
+                      "aug", "lexical", "trans"):
+                if k in fields:
+                    answer_parts.append(fields[k])
+            a = " · ".join(answer_parts)
+            if q and a:
+                pairs.append((q, a))
+            if len(pairs) >= n:
+                break
+        return pairs
 
-    # Strip body-level layout rules that conflict with MkDocs
-    style_content = re.sub(
-        r"body\s*\{[^}]*\}",
-        lambda m: re.sub(
-            r"(max-width|margin|padding)\s*:[^;]+;", "", m.group()
-        ),
-        style_content,
-        flags=re.DOTALL,
+    # ── Static HTML row pattern ─────────────────────────────────────────────
+    # Find each question row that is immediately followed by an answer row.
+    # Question rows contain an input/select (no answer text yet).
+    # Answer rows have class ans-row or answer-row.
+    ans_pattern = re.compile(
+        r'<tr[^>]*class="[^"]*(?:ans-row|answer-row)[^"]*"[^>]*>(.*?)</tr>',
+        re.DOTALL | re.IGNORECASE,
     )
+    # Split on answer rows to find their preceding question rows
+    parts = ans_pattern.split(text)
+    # parts alternates: [pre_html, ans_content, pre_html, ans_content, …]
+    pairs = []
+    for i in range(1, len(parts), 2):
+        ans_html = parts[i]
+        pre_html = parts[i - 1]
+        # The question row is the last <tr> before this answer row
+        q_rows = re.findall(r"<tr[^>]*>(.*?)</tr>", pre_html, re.DOTALL)
+        if not q_rows:
+            continue
+        q_text = _strip_tags(q_rows[-1])
+        a_text = _strip_tags(ans_html)
+        # Skip header rows (no digits in question)
+        if not re.search(r"\d", q_text):
+            continue
+        # Clean up — remove placeholder text and button labels
+        q_text = re.sub(
+            r"(▶ Answer|▼ Hide|כתוב\.\.\.|parse\.\.\.|—)", "", q_text
+        ).strip()
+        q_text = re.sub(r"\s+", " ", q_text).strip()
+        a_text = re.sub(r"\s+", " ", a_text).strip()
+        if q_text and a_text:
+            pairs.append((q_text, a_text))
+        if len(pairs) >= n:
+            break
+    return pairs
 
-    # Append override rules that make tables fit without horizontal scrolling:
-    # - table-layout:fixed + width:100% distributes columns across available space
-    # - font-size on th/td is capped to keep content compact on narrow content areas
-    # - white-space:normal lets button labels wrap rather than forcing column widths
-    # - explicit rem widths on td classes are removed so fixed layout can redistribute
-    style_content += """
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
-"""
 
-    # Extract <body> content
-    body_m = re.search(r"<body[^>]*>(.*?)</body>", text, re.DOTALL | re.IGNORECASE)
-    body_content = body_m.group(1).strip() if body_m else text
+def _build_exercise_page(
+    ex_src: Path,
+    ex_dst: Path,
+    ex_title: str,
+    ch_num: int,
+    ch_title: str,
+    html_name: str,
+    md_name: str,
+    pdf_name: str,
+    has_md: bool,
+    has_pdf: bool,
+) -> str:
+    """Build a clean exercise landing page: description, coverage table,
+    sample Q&A, and download buttons.  Returns the page markdown string.
+    """
+    readme = ex_src / "README.md"
+    html_path = ex_src / html_name
 
-    return f"<style>\n{style_content}\n</style>\n\n{body_content}\n"
+    description = _readme_description(readme)
+    coverage = _readme_coverage_table(readme)
+    samples = _sample_qas(html_path, n=3)
+
+    lines: list[str] = [
+        f"# {ex_title}",
+        "",
+        f"*Chapter {ch_num} — {ch_title}*",
+        "",
+    ]
+
+    # ── Description ─────────────────────────────────────────────────────────
+    if description:
+        lines += [description, ""]
+
+    # ── Coverage table ───────────────────────────────────────────────────────
+    if coverage:
+        lines += ["## Coverage", "", coverage, ""]
+
+    # ── Sample questions ─────────────────────────────────────────────────────
+    if samples:
+        lines += ["## Sample Questions", ""]
+        for i, (q, a) in enumerate(samples, 1):
+            lines.append(f"**Q{i}.** {q}")
+            lines.append(f"> **A:** {a}")
+            lines.append("")
+
+    # ── Download buttons ─────────────────────────────────────────────────────
+    lines += ["## Formats", ""]
+    btn_parts = [f"[Full Screen (Interactive)]({html_name}){{.md-button .md-button--primary}}"]
+    if has_pdf:
+        btn_parts.append(f"[Print / PDF]({pdf_name}){{.md-button}}")
+    if has_md:
+        btn_parts.append(f"[Markdown]({md_name}){{.md-button}}")
+    lines.append("  ".join(btn_parts))
+    lines.append("")
+
+    return "\n".join(lines)
 
 
 BBH_TITLES = {
@@ -263,25 +390,20 @@ def build_chapter(
                 has_md = (ex_dir / md_name).exists()
                 has_pdf = (ex_dir / pdf_name).exists()
 
-                # Build download links line (web-only — injected here, not in source)
-                download_parts = [f"[Full screen]({html_name}){{.md-button}}"]
-                if has_md:
-                    download_parts.append(f"[Markdown]({md_name}){{.md-button}}")
-                if has_pdf:
-                    download_parts.append(f"[Print (PDF)]({pdf_name}){{.md-button}}")
-                downloads_line = "  ".join(download_parts)
-
-                # Inline the exercise HTML directly — no iframe
-                inlined = _inline_exercise_html(ex_dst / html_name)
-
-                exercise_md = ex_dst / "index.md"
-                exercise_md.write_text(
-                    f"# {ex_title}\n\n"
-                    f"*Chapter {ch_num} — {title}*\n\n"
-                    f"{downloads_line}\n\n"
-                    f"{inlined}\n",
-                    encoding="utf-8",
+                page_content = _build_exercise_page(
+                    ex_src=ex_dir,
+                    ex_dst=ex_dst,
+                    ex_title=ex_title,
+                    ch_num=ch_num,
+                    ch_title=title,
+                    html_name=html_name,
+                    md_name=md_name,
+                    pdf_name=pdf_name,
+                    has_md=has_md,
+                    has_pdf=has_pdf,
                 )
+                exercise_md = ex_dst / "index.md"
+                exercise_md.write_text(page_content, encoding="utf-8")
                 exercise_entries.append(
                     {ex_title: f"lessons/{lang}/{ch}/exercises/{ex_name}/index.md"}
                 )

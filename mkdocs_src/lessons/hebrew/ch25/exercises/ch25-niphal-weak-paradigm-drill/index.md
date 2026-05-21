@@ -2,284 +2,35 @@
 
 *Chapter 25 — Niphal Weak*
 
-[Full screen](ch25-niphal-weak-paradigm-drill.html){.md-button}  [Markdown](ch25-niphal-weak-paradigm-drill.md){.md-button}  [Print (PDF)](ch25-niphal-weak-paradigm-drill.pdf){.md-button}
+*BBH Chapter 25 · Niphal Weak Verbs*
 
-<style>
+A productive paradigm drill in two sections. Section A covers the III-ה root גלה (to uncover/reveal) through all Niphal conjugations: perfect (5 PGN forms), imperfect (4 PGN forms), imperative, infinitive construct, infinitive absolute, and participle (ms and fs). Section B covers the I-נ root נפל (to fall) through perfect (3 forms), imperfect (3 forms), imperative, and participle. Students write forms from memory, reinforcing the characteristic dagesh forte patterns of each weak class in the Niphal stem.
 
-  body { font-family: Georgia, serif;    color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
-  h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
-  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
-  td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
-  input.parse-field { width: 100%; box-sizing: border-box; font-size: .9em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
-  .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
-  .answer-row { display: none; }
-  button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
-  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
-  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
-  .controls button:hover { background: #ddd; }
-  .note { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
-  @media print {
-    button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
-    .answer-row { display: none !important; }
-  }
+| File | Format |
+|---|---|
+| [ch25-niphal-weak-paradigm-drill.md](ch25-niphal-weak-paradigm-drill.md) | Static reference with answer key |
+| [ch25-niphal-weak-paradigm-drill.html](ch25-niphal-weak-paradigm-drill.html) | Interactive (fillable, ▶ Answer per row) |
+| [ch25-niphal-weak-paradigm-drill.pdf](ch25-niphal-weak-paradigm-drill.pdf) | Fillable PDF |
 
-/* ── inline-embed overrides ── */
-table { table-layout: fixed !important; width: 100% !important; }
-th, td { word-break: break-word; overflow-wrap: break-word; }
-th { font-size: .78rem !important; white-space: normal !important; }
-td { font-size: .82rem !important; }
-td.num, td.num-cell, td.ans-lbl { width: 1.8rem !important; }
-td.heb { font-size: 1.2em !important; width: auto !important; }
-button.rbtn, button.reveal-btn, button.btn-answer, button.btn-reveal,
-button.tog { white-space: normal !important; font-size: .72rem !important;
-  padding: .1rem .3rem !important; }
-input.parse-field, input.f { font-size: .8rem !important; }
-select.parse-field { font-size: .8rem !important; }
+## Coverage
 
-</style>
+| File | Format |
+|---|---|
+| [ch25-niphal-weak-paradigm-drill.md](ch25-niphal-weak-paradigm-drill.md) | Static reference with answer key |
+| [ch25-niphal-weak-paradigm-drill.html](ch25-niphal-weak-paradigm-drill.html) | Interactive (fillable, ▶ Answer per row) |
+| [ch25-niphal-weak-paradigm-drill.pdf](ch25-niphal-weak-paradigm-drill.pdf) | Fillable PDF |
 
-<h1>Chapter 25 — Niphal Weak Paradigm Drill</h1>
-<p class="subtitle">BBH Chapter 25 · Niphal Weak Verbs</p>
+## Sample Questions
 
-<p>Write the correct Niphal form for each slot. Work from memory first, then click <strong>▶ Answer</strong> to check.</p>
+**Q1.** Perfect 3ms
+> **A:** נִגְלָה — Final ָה is the III-ה ending in the Niphal perfect.
 
-<div class="note">
-  <strong>III-ה tip:</strong> The final ה behaves like a vowel letter throughout the paradigm. Watch for the distinctive <span class="heb">ֶה</span> endings in the imperfect and participle.<br>
-  <strong>I-נ tip:</strong> The root nun assimilates into the following consonant via dagesh forte in the Niphal imperfect (<span class="heb">יִפָּל</span>). In the perfect, the nun remains: <span class="heb">נִפַּל</span>.
-</div>
+**Q2.** Perfect 3fs
+> **A:** נִגְלְתָה — Feminine ָה suffix added to the stem.
 
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
+**Q3.** Perfect 3cp
+> **A:** נִגְלוּ — 3cp וּ suffix.
 
-<!-- SECTION A -->
-<h2>Section A — <span class="heb">גלה</span> (III-ה) Niphal</h2>
-<p>Root: <span class="heb">גלה</span> — Qal meaning: to uncover, reveal, go into exile</p>
+## Formats
 
-<table>
-  <tr><th>Form</th><th>Your Answer</th><th></th></tr>
-
-  <tr>
-    <td>Perfect 3ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a1')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a1">
-    <td colspan="3"><span class="heb">נִגְלָה</span> — Final <span class="heb">ָה</span> is the III-ה ending in the Niphal perfect.</td>
-  </tr>
-
-  <tr>
-    <td>Perfect 3fs</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a2')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a2">
-    <td colspan="3"><span class="heb">נִגְלְתָה</span> — Feminine <span class="heb">ָה</span> suffix added to the stem.</td>
-  </tr>
-
-  <tr>
-    <td>Perfect 3cp</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a3')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a3">
-    <td colspan="3"><span class="heb">נִגְלוּ</span> — 3cp <span class="heb">וּ</span> suffix.</td>
-  </tr>
-
-  <tr>
-    <td>Perfect 1cs</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a4">
-    <td colspan="3"><span class="heb">נִגְלֵיתִי</span> — 1cs <span class="heb">תִי</span> suffix; <span class="heb">ֵי</span> appears before consonantal suffixes with III-ה roots.</td>
-  </tr>
-
-  <tr>
-    <td>Imperfect 3ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a5">
-    <td colspan="3"><span class="heb">יִגָּלֶה</span> — Dagesh forte in <span class="heb">גּ</span> (assimilated nun from Niphal) + <span class="heb">ֶה</span> ending.</td>
-  </tr>
-
-  <tr>
-    <td>Imperfect 3fs</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a6">
-    <td colspan="3"><span class="heb">תִּגָּלֶה</span> — Feminine prefix <span class="heb">תּ</span>.</td>
-  </tr>
-
-  <tr>
-    <td>Imperfect 3mp</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a7">
-    <td colspan="3"><span class="heb">יִגָּלוּ</span> — 3mp <span class="heb">וּ</span> suffix; the final ה of the root drops before the suffix.</td>
-  </tr>
-
-  <tr>
-    <td>Imperfect 1cs</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a8">
-    <td colspan="3"><span class="heb">אֶגָּלֶה</span> — 1cs prefix <span class="heb">א</span> with seghol.</td>
-  </tr>
-
-  <tr>
-    <td>Imperative 2ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a9">
-    <td colspan="3"><span class="heb">הִגָּלֵה</span> — <span class="heb">הִ</span> prefix + dagesh forte in <span class="heb">גּ</span> + <span class="heb">ֵה</span> ending.</td>
-  </tr>
-
-  <tr>
-    <td>Inf. Construct</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a10">
-    <td colspan="3"><span class="heb">הִגָּלוֹת</span> — <span class="heb">הִ</span> prefix + <span class="heb">וֹת</span> suffix; Niphal inf. construct uses this distinctive form.</td>
-  </tr>
-
-  <tr>
-    <td>Inf. Absolute</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a11">
-    <td colspan="3"><span class="heb">הִגָּלֹה</span> — <span class="heb">הִ</span> prefix + dagesh forte + <span class="heb">ֹה</span> ending.</td>
-  </tr>
-
-  <tr>
-    <td>Participle ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a12">
-    <td colspan="3"><span class="heb">נִגְלֶה</span> — <span class="heb">נִ</span> prefix + <span class="heb">ֶה</span> ending (III-ה Niphal participle).</td>
-  </tr>
-
-  <tr>
-    <td>Participle fs</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="a13">
-    <td colspan="3"><span class="heb">נִגְלֵית</span> — Feminine <span class="heb">ית</span> ending.</td>
-  </tr>
-
-</table>
-
-<!-- SECTION B -->
-<h2>Section B — <span class="heb">נפל</span> (I-נ) Niphal</h2>
-<p>Root: <span class="heb">נפל</span> — Qal meaning: to fall</p>
-
-<table>
-  <tr><th>Form</th><th>Your Answer</th><th></th></tr>
-
-  <tr>
-    <td>Perfect 3ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b1')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b1">
-    <td colspan="3"><span class="heb">נִפַּל</span> — <span class="heb">נִ</span> prefix; dagesh forte in <span class="heb">פּ</span>. The root nun does NOT assimilate in the perfect — it remains as the <span class="heb">נִ</span> prefix.</td>
-  </tr>
-
-  <tr>
-    <td>Perfect 3fs</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b2')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b2">
-    <td colspan="3"><span class="heb">נִפְּלָה</span> — 3fs <span class="heb">ָה</span> suffix; shewa under <span class="heb">פ</span> before the suffix.</td>
-  </tr>
-
-  <tr>
-    <td>Perfect 3cp</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b3')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b3">
-    <td colspan="3"><span class="heb">נִפְּלוּ</span> — 3cp <span class="heb">וּ</span> suffix.</td>
-  </tr>
-
-  <tr>
-    <td>Imperfect 3ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b4')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b4">
-    <td colspan="3"><span class="heb">יִפָּל</span> — The root nun assimilates into <span class="heb">פּ</span> via dagesh forte: <span class="heb">יִ</span> + <span class="heb">פָּ</span> + <span class="heb">ל</span>. "he will fall."</td>
-  </tr>
-
-  <tr>
-    <td>Imperfect 3fs</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b5')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b5">
-    <td colspan="3"><span class="heb">תִּפָּל</span> — Feminine prefix <span class="heb">תּ</span> with the same assimilation pattern.</td>
-  </tr>
-
-  <tr>
-    <td>Imperfect 3mp</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b6')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b6">
-    <td colspan="3"><span class="heb">יִפְּלוּ</span> — 3mp <span class="heb">וּ</span> suffix; shewa under <span class="heb">פ</span>.</td>
-  </tr>
-
-  <tr>
-    <td>Imperative 2ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b7')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b7">
-    <td colspan="3"><span class="heb">הִפָּלֵל</span> — <span class="heb">הִ</span> prefix + dagesh forte in <span class="heb">פּ</span> + <span class="heb">ֵל</span> ending.</td>
-  </tr>
-
-  <tr>
-    <td>Participle ms</td>
-    <td><input class="parse-field" placeholder="write the form…"></td>
-    <td><button class="reveal-btn" onclick="toggle('b8')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="b8">
-    <td colspan="3"><span class="heb">נֹפֵל</span> — Unusual: I-נ Niphal participle takes <span class="heb">נֹ</span> (holem) under the first root letter (the root nun is written out, not assimilated). "one who falls / falling."</td>
-  </tr>
-
-</table>
-
-<script>
-function toggle(id) {
-  const row = document.getElementById(id);
-  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
-}
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
-}
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
-}
-function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
-}
-</script>
-
+[Full Screen (Interactive)](ch25-niphal-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch25-niphal-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch25-niphal-weak-paradigm-drill.md){.md-button}

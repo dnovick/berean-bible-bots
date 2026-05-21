@@ -15,20 +15,17 @@
   unicode-bidi: embed;
 }
 
-/* Make all MkDocs-rendered markdown tables (exercise .md pages) fill the
-   available width without horizontal scrolling */
+/* Markdown exercise pages: wrap tables in a horizontal scroll container
+   so wide tables scroll rather than overflowing the page */
 .md-typeset table:not([class]) {
-  display: table;
-  table-layout: fixed;
-  width: 100%;
+  display: block;
+  overflow-x: auto;
   max-width: 100%;
   font-size: .78rem;
-  overflow: visible;
+  white-space: nowrap;
 }
 .md-typeset table:not([class]) th,
 .md-typeset table:not([class]) td {
-  word-break: break-word;
-  overflow-wrap: break-word;
   white-space: normal;
 }
 
