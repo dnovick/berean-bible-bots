@@ -12,7 +12,7 @@
   h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
   .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
   .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
-  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
@@ -60,7 +60,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וּפָנִ֗יתָ אֶל־תְּפִלַּ֤ת עַבְדְּךָ֙ וְאֶל־תְּחִנָּת֔וֹ יְהוָ֖ה אֱלֹהָ֑י לִשְׁמֹ֤עַ אֶל־הָרִנָּה֙ וְאֶל־הַתְּפִלָּ֔ה אֲשֶׁ֧ר עַבְדְּךָ֛ <strong>מִתְפַּלֵּ֥ל [1]</strong> לְפָנֶ֖יךָ הַיּֽוֹם׃</div>
 <p class="translation">"Turn to the prayer of your servant and to his supplication, O LORD my God, to listen to the cry and the prayer that your servant is praying [1] before you today." (1 Kgs 8:28)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>מִתְפַּלֵּל</td>
@@ -74,12 +74,12 @@
   <tr class="answer-row" id="a1">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Participle | ms | פלל | <em>Denominative</em> — "praying"; מִתְ- prefix marks Hithpael participle. Root פלל has no Qal stem in OT; Hithpael is its only active form, denominative from תְּפִלָּה (prayer).</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְשָׁמַעְתָּ֗ אֶל־תְּחִנַּ֤ת עַבְדְּךָ֙ וְעַמְּךָ֣ יִשְׂרָאֵ֔ל אֲשֶׁ֥ר <strong>יִתְפַּלְּל֖וּ [2]</strong> אֶל־הַמָּק֣וֹם הַזֶּ֑ה</div>
 <p class="translation">"…and listen to the supplication of your servant and of your people Israel when they pray [2] toward this place." (1 Kgs 8:30)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>יִתְפַּלְּלוּ</td>
@@ -93,12 +93,12 @@
   <tr class="answer-row" id="a2">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperfect | 3mp | פלל | <em>Denominative</em> — "they pray"; יִתְ- prefix + i-class vowel under R1 + dagesh forte in doubled ל (R2=R3 geminate: יִתְפַּלְּלוּ). The geminate doubling of ל ל is the hallmark of this root.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְעַתָּ֗ה הָשֵׁ֤ב אֵֽשֶׁת־הָאִישׁ֙ כִּֽי־נָבִ֣יא ה֔וּא וְ<strong>יִתְפַּלֵּ֥ל [3]</strong>־בַּעַדְךָ֖ וֶחְיֵ֑ה</div>
 <p class="translation">"Now then, return the man's wife, for he is a prophet, and he will pray [3] for you, and you will live." (Gen 20:7)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>יִתְפַּלֵּל</td>
@@ -112,12 +112,12 @@
   <tr class="answer-row" id="a3">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperfect | 3ms | פלל | <em>Denominative</em> — "he will pray"; יִתְ- prefix + patach under R1 (פַּ) + tsere + geminate ל ל; same root as #1–2 in imperfect 3ms.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>הִתְפַּלֵּ֥ל [4]</strong> אֶל־יְהוָֽה׃</div>
 <p class="translation">"Pray [4] to the LORD." (Gen 20:7b)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r4">
     <td>4</td><td>הִתְפַּלֵּל</td>
@@ -131,14 +131,14 @@
   <tr class="answer-row" id="a4">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperative | 2ms | פלל | <em>Denominative</em> — "Pray!"; הִתְ- prefix + patach under R1 + tsere + ל ל. Hithpael imperative looks exactly like the perfect 3ms (same form as #1 in some contexts) — context distinguishes them.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="note-box"><strong>Distractor alert — Piel:</strong> The next verb is a Piel, NOT a Hithpael. Look carefully at what is (and is not) on the prefix.</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְ<strong>טִהֲר֥וֹ [5]</strong> לְכַפֵּ֖ר עָלָֽיו׃</div>
 <p class="translation">"…and purify [5] it to make atonement for it." (Exo 29:36)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>וְטִהֲרוֹ</td>
@@ -152,7 +152,7 @@
   <tr class="answer-row" id="a5">
     <td colspan="8">✗ <strong>No — Piel</strong> | Weqatal | 3ms + 3ms suffix | טהר | <em>Piel — Factitive</em> — "he shall purify it"; Piel pattern: Hireq under R1 (טִ) + R2 guttural ה rejects dagesh (compensatory lengthening: patach → qamets). No הִתְ prefix = NOT Hithpael.</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage B — Joshua 3:5 · Exodus 19:22</h2>
 <h3>Context: Israel prepares to cross the Jordan; priests prepare to approach the LORD.</h3>
@@ -160,7 +160,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֹּ֣אמֶר יְהוֹשֻׁ֔עַ אֶל־הָעָ֖ם <strong>הִתְקַדְּשׁ֑וּ [6]</strong> כִּ֣י מָחָ֔ר יַעֲשֶׂ֧ה יְהוָ֛ה בְּקִרְבְּכֶ֖ם נִפְלָאֽוֹת׃</div>
 <p class="translation">"And Joshua said to the people, 'Consecrate yourselves [6], for tomorrow the LORD will do wonders among you.'" (Jos 3:5)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>הִתְקַדְּשׁוּ</td>
@@ -174,12 +174,12 @@
   <tr class="answer-row" id="a6">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperative | 2mp | קדש | <em>Reflexive</em> — "consecrate yourselves!"; הִתְ- prefix + patach under R1 (קַ) + dagesh forte in R2 (דּ) + shewa + שׁ + 2mp suffix וּ. Reflexive: they bring themselves to a state of holiness.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְגַ֣ם הַכֹּהֲנִ֗ים הַנִּגָּשִׁ֛ים אֶל־יְהוָ֥ה <strong>יִתְקַדָּ֖שׁוּ [7]</strong> פֶּן־יִפְרֹ֥ץ בָּהֶֽם׃</div>
 <p class="translation">"And also let the priests who come near to the LORD consecrate themselves [7], lest the LORD break out against them." (Exo 19:22)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r7">
     <td>7</td><td>יִתְקַדָּשׁוּ</td>
@@ -193,14 +193,14 @@
   <tr class="answer-row" id="a7">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Imperfect | 3mp | קדש | <em>Reflexive</em> — "let them consecrate themselves"; יִתְ- prefix + patach under R1 (קַ) + qamets under R2 (דָּ, lengthened in pause/stressed form) + שׁ + 3mp suffix וּ. Same root as #6 — compare imperative vs. imperfect prefix.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="note-box"><strong>Distractor alert — Pual:</strong> The next verb looks like it could be Piel or Hithpael, but it is neither. The u-class vowel under R1 is the giveaway.</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>קֻדַּ֥שׁ [8]</strong> הַמִּזְבֵּ֖חַ</div>
 <p class="translation">"The altar was consecrated [8]." (Lev 8:15)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>קֻדַּשׁ</td>
@@ -214,7 +214,7 @@
   <tr class="answer-row" id="a8">
     <td colspan="8">✗ <strong>No — Pual</strong> | Perfect | 3ms | קדש | <em>Pual — Passive</em> — "was consecrated"; Qibbuts (u-class vowel) under R1 (קֻ) + dagesh forte in R2 (דּ) = Pual passive. No הִתְ prefix. Compare: Hithpael reflexive הִתְקַדֵּשׁ vs. Pual passive קֻדַּשׁ — same root, opposite in agency.</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage C — Genesis 22:17–18 · 2 Samuel 10:12</h2>
 <h3>Context: the Abrahamic oath of blessing; Joab's battle speech.</h3>
@@ -222,7 +222,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וְ<strong>הִתְבָּרֲכ֣וּ [9]</strong> בְזַרְעֲךָ֔ כֹּ֖ל גּוֹיֵ֣י הָאָ֑רֶץ עֵ֕קֶב אֲשֶׁ֥ר שָׁמַ֖עְתָּ בְּקֹלִֽי׃</div>
 <p class="translation">"…and in your offspring all the nations of the earth shall bless themselves [9], because you have obeyed my voice." (Gen 22:18)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>וְהִתְבָּרֲכוּ</td>
@@ -236,12 +236,12 @@
   <tr class="answer-row" id="a9">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Weqatal | 3cp | ברך | <em>Reflexive/Estimative</em> — "shall bless themselves" or "shall invoke blessing on themselves"; הִתְ- prefix + R2=ר rejects dagesh (compensatory lengthening: patach → qamets הִתְבָּ) + chateph-patach under R3 (guttural ר does not take dagesh but ר is not guttural — R1=ב rejects? No: R2=ר rejects dagesh, vowel compensates). 3cp suffix וּ. Weqatal = result/consequence of the promise.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">חֲזַ֤ק וְ<strong>נִתְחַזְּקָ֙ה [10]</strong>֙ בְּעַ֣ד עַמֵּ֔נוּ וּבְעַ֖ד עָרֵ֣י אֱלֹהֵ֑ינוּ וַיהוָ֖ה יַעֲשֶׂ֥ה הַטּ֛וֹב בְּעֵינָֽיו׃</div>
 <p class="translation">"Be strong, and let us be courageous [10] for our people and for the cities of our God; and may the LORD do what is good in his sight." (2 Sam 10:12)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>וְנִתְחַזְּקָה</td>
@@ -255,14 +255,14 @@
   <tr class="answer-row" id="a10">
     <td colspan="8">✓ <strong>Yes — Hithpael</strong> | Cohortative | 1cp | חזק | <em>Reflexive</em> — "let us strengthen ourselves / be courageous"; נִתְ- prefix is the Hithpael cohortative form (נ + יִתְ contracted); + patach under R1 (חַ) + dagesh forte in R2 (זּ) + qamets + ה cohortative ending. Compare Hiphil of חזק = הֶחֱזִיק (causative "to strengthen someone else").</td>
   </tr>
-</table>
+</table></div>
 
 <div class="note-box"><strong>Distractor alert — Hiphil:</strong> The next verb begins with הִ- but has NO תְ after it. That tells you immediately it is NOT Hithpael.</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>הִצְדִּ֥יק [11]</strong> אֶת־הָרָשָׁ֖ע</div>
 <p class="translation">"He declared the wicked righteous [11]." (Prov 17:15, excerpt)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r11">
     <td>11</td><td>הִצְדִּיק</td>
@@ -276,7 +276,7 @@
   <tr class="answer-row" id="a11">
     <td colspan="8">✗ <strong>No — Hiphil</strong> | Perfect | 3ms | צדק | <em>Hiphil — Declarative</em> — "declared righteous / justified"; הִ- prefix (no תְ) + Hireq-Yod under R2 (דִּי) = classic Hiphil perfect pattern. Contrast with Hithpael הִצְטַדֵּק (Ch35 — I-צ metathesis form of "justify oneself").</td>
   </tr>
-</table>
+</table></div>
 
 <div class="reflection">
   <strong>Reflection Questions</strong>
@@ -289,7 +289,7 @@
 
 <div class="answer-key">
   <h2>Quick Answer Key</h2>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>#</th><th>Verb</th><th>Hithpael?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th></tr>
     <tr><td>1</td><td>מִתְפַּלֵּל</td><td>Yes</td><td>Participle</td><td>ms</td><td>פלל</td><td>Hithpael — Denominative</td></tr>
     <tr><td>2</td><td>יִתְפַּלְּלוּ</td><td>Yes</td><td>Imperfect</td><td>3mp</td><td>פלל</td><td>Hithpael — Denominative</td></tr>
@@ -302,7 +302,7 @@
     <tr><td>9</td><td>וְהִתְבָּרֲכוּ</td><td>Yes</td><td>Weqatal</td><td>3cp</td><td>ברך</td><td>Hithpael — Reflexive/Estimative</td></tr>
     <tr><td>10</td><td>וְנִתְחַזְּקָה</td><td>Yes</td><td>Cohortative</td><td>1cp</td><td>חזק</td><td>Hithpael — Reflexive</td></tr>
     <tr><td>11</td><td>הִצְדִּיק</td><td>No</td><td>Perfect</td><td>3ms</td><td>צדק</td><td>Hiphil — Declarative</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <script>

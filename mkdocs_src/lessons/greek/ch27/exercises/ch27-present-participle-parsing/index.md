@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
   .subtitle { color: #555; font-style: italic; margin: .3em 0 1em; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin-bottom: 1.5em; font-size: .95em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
+  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .93em; }
   th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
   td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #f5f7fb; }
@@ -52,7 +52,7 @@
 
 <h2>Part A — Adverbial Participles (1–9)</h2>
 
-<table id="tbl-a">
+<div style="overflow-x:auto;max-width:100%;"><table id="tbl-a">
 <thead>
   <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
 </thead>
@@ -230,10 +230,10 @@
 </tr>
 
 </tbody>
-</table>
+</table></div>
 
 <h2>Part B — Adjectival Participles (10–12)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead>
   <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
 </thead>
@@ -297,10 +297,10 @@
 </tr>
 
 </tbody>
-</table>
+</table></div>
 
 <h2>Part C — Substantival and εἰμί (13–15)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead>
   <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
 </thead>
@@ -364,7 +364,7 @@
 </tr>
 
 </tbody>
-</table>
+</table></div>
 
 <script>
 function toggleAnswer(id) {

@@ -13,7 +13,7 @@
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .passage { direction: rtl; unicode-bidi: embed; font-size: 1.18rem; line-height: 2.2; background: #fafaf6; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; margin: .8rem 0; }
   .passage p { margin: .25rem 0; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .87rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .87rem; }
   th { background: #e0e8f0; padding: .34rem .42rem; border: 1px solid #bbb; text-align: left; font-size: .8rem; }
   td { padding: .24rem .35rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 1.8rem; }
@@ -59,7 +59,7 @@
 <p>לֹ֥א <strong>תֹּאכְל֖וּ</strong> מִכֹּ֥ל עֵֽץ</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">1</td><td class="heb">יְהִ֣י</td>
@@ -89,7 +89,7 @@
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">תֹּאכְל֖וּ</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">אָכַל</td><td>I-gutt. (א)</td><td>Imperfect</td><td colspan="2">Prohibition (לֹא) — I-gutt. א takes holem (not hireq); "you shall not eat"</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -102,7 +102,7 @@
 <p><strong>וַֽיַּעֲמֹ֥ד</strong> מֹשֶׁ֖ה לִפְנֵ֥י פַרְעֹֽה</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">5</td><td class="heb">יֹאמַ֥ר</td>
@@ -132,7 +132,7 @@
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">וַֽיַּעֲמֹ֥ד</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">עָמַד</td><td>I-gutt. (ע)</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — chateph-patach under ע; patach prefix יַעֲ–; "and Moses stood before Pharaoh"</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -145,7 +145,7 @@
 <p><strong>וַיֵּ֥צֵא</strong> קַ֛יִן מִלִּפְנֵ֥י יְהוָ֖ה</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">9</td><td class="heb">וַיִּתֵּ֨ן</td>
@@ -175,7 +175,7 @@
     <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">וַיֵּ֥צֵא</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">יָצָא</td><td>I-י + III-א</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — tsere prefix; also III-א (aleph quiesces at R3) — compound weak class</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -188,7 +188,7 @@
 <p><strong>וַיָּ֤סׇּב</strong> הַמֶּ֙לֶך֙</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Form Type</th><th>Usage Type</th><th></th></tr>
   <tr>
     <td class="num">13</td><td class="heb">וַיָּבֹ֙אוּ֙</td>
@@ -218,7 +218,7 @@
     <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-16"><td class="ans-lbl">✓</td><td class="ans-heb">וַיָּ֤סׇּב</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">סָבַב</td><td>Geminate</td><td>Wayyiqtol</td><td colspan="2">Sequential Past — qamets under prefix + dagesh forte in doubled root consonant ב; holem; "and the king turned"</td></tr>
-</table>
+</table></div>
 
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16];

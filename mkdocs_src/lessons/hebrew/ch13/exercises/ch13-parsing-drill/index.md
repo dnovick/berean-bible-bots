@@ -11,7 +11,7 @@
   h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -48,7 +48,7 @@
 </div>
 <!-- PART A -->
 <h2>Part A — Clear Suffix Pattern</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th></th></tr>
 <tr><td class="num">1</td><td class="heb">שָׁמַרְתָּ</td><td><select class="parse-field" id="1-p"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></td><td><select class="parse-field" id="1-n"><option value="">—</option><option value="s">s</option><option value="p">p</option><option value="du">du</option></select></td><td><select class="parse-field" id="1-g"><option value="">—</option><option value="m">m</option><option value="f">f</option><option value="c">c</option></select></td><td><input class="parse-field" id="1-r" placeholder="root"/></td><td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="ans-heb">שָׁמַרְתָּ</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">שמר</td><td></td></tr>
@@ -70,11 +70,11 @@
 <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="ans-heb">שָׁמַרְתֶּן</td><td>2</td><td>p</td><td>f</td><td class="ans-heb">שמר</td><td>2fp suffix תֶּן-</td></tr>
 <tr><td class="num">10</td><td class="heb">חָפַרְתָּ</td><td><select class="parse-field" id="10-p"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></td><td><select class="parse-field" id="10-n"><option value="">—</option><option value="s">s</option><option value="p">p</option><option value="du">du</option></select></td><td><select class="parse-field" id="10-g"><option value="">—</option><option value="m">m</option><option value="f">f</option><option value="c">c</option></select></td><td><input class="parse-field" id="10-r" placeholder="root"/></td><td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">חָפַרְתָּ</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">חפר</td><td></td></tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- PART B -->
 <h2>Part B — Vowel Reduction Forms</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Notes</th><th></th></tr>
 <tr><td class="num">11</td><td class="heb">כָּתְבוּ</td><td><select class="parse-field" id="11-p"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></td><td><select class="parse-field" id="11-n"><option value="">—</option><option value="s">s</option><option value="p">p</option><option value="du">du</option></select></td><td><select class="parse-field" id="11-g"><option value="">—</option><option value="m">m</option><option value="f">f</option><option value="c">c</option></select></td><td><input class="parse-field" id="11-r" placeholder="root"/></td><td></td><td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">כָּתְבוּ</td><td>3</td><td>p</td><td>c</td><td class="ans-heb">כתב</td><td colspan="2">R1 qamets → shewa before vocalic suffix</td></tr>
@@ -96,12 +96,12 @@
 <tr class="ans-row" id="ans-19"><td class="ans-lbl">✓</td><td class="ans-heb">שְׁמַרְתֶּן</td><td>2</td><td>p</td><td>f</td><td class="ans-heb">שמר</td><td colspan="2">2fp</td></tr>
 <tr><td class="num">20</td><td class="heb">פָּקַדְתְּ</td><td><select class="parse-field" id="20-p"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></td><td><select class="parse-field" id="20-n"><option value="">—</option><option value="s">s</option><option value="p">p</option><option value="du">du</option></select></td><td><select class="parse-field" id="20-g"><option value="">—</option><option value="m">m</option><option value="f">f</option><option value="c">c</option></select></td><td><input class="parse-field" id="20-r" placeholder="root"/></td><td></td><td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">פָּקַדְתְּ</td><td>2</td><td>s</td><td>f</td><td class="ans-heb">פקד</td><td colspan="2">2fs; shewa under tav</td></tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- PART C -->
 <h2>Part C — Stative Roots</h2>
 <p style="font-size:.9rem;color:#444">Give person/number/gender AND identify the Stative Type (B = tsere under R2 in 3ms, C = holem under R2). Give the 3ms dictionary form as the root.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root (3ms)</th><th>Stative Type</th><th></th></tr>
 <tr><td class="num">21</td><td class="heb">כָּבַדְתָּ</td><td><select class="parse-field" id="21-p"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></td><td><select class="parse-field" id="21-n"><option value="">—</option><option value="s">s</option><option value="p">p</option><option value="du">du</option></select></td><td><select class="parse-field" id="21-g"><option value="">—</option><option value="m">m</option><option value="f">f</option><option value="c">c</option></select></td><td><input class="parse-field" id="21-r" placeholder="root 3ms"/></td><td><input class="parse-field" id="21-t" placeholder="B or C"/></td><td><button class="rbtn" onclick="tog(21)">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-21"><td class="ans-lbl">✓</td><td class="ans-heb">כָּבַדְתָּ</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">כָּבֵד</td><td colspan="2">B (tsere) — tsere → patach before suffix</td></tr>
@@ -113,7 +113,7 @@
 <tr class="ans-row" id="ans-24"><td class="ans-lbl">✓</td><td class="ans-heb">זָקַנְתֶּם</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">זָקֵן</td><td colspan="2">B (tsere) — tsere → patach before 2mp suffix</td></tr>
 <tr><td class="num">25</td><td class="heb">מָלְאָה</td><td><select class="parse-field" id="25-p"><option value="">—</option><option value="1">1</option><option value="2">2</option><option value="3">3</option></select></td><td><select class="parse-field" id="25-n"><option value="">—</option><option value="s">s</option><option value="p">p</option><option value="du">du</option></select></td><td><select class="parse-field" id="25-g"><option value="">—</option><option value="m">m</option><option value="f">f</option><option value="c">c</option></select></td><td><input class="parse-field" id="25-r" placeholder="root 3ms"/></td><td><input class="parse-field" id="25-t" placeholder="B or C"/></td><td><button class="rbtn" onclick="tog(25)">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-25"><td class="ans-lbl">✓</td><td class="ans-heb">מָלְאָה</td><td>3</td><td>s</td><td>f</td><td class="ans-heb">מָלֵא</td><td colspan="2">B (tsere) / III-א — also weak; tsere in 3ms; aleph quiesces</td></tr>
-</table>
+</table></div>
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25];
   function tog(id) {

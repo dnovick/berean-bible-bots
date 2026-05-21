@@ -12,7 +12,7 @@
   h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
   .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
   .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
-  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
@@ -58,7 +58,7 @@
 <div class="hebrew">וַיְהִ֗י אַֽחֲרֵי֙ הַדְּבָרִ֣ים הָאֵ֔לֶּה <strong>וַיֻּגַּ֥ד [1]</strong> לְאַבְרָהָ֖ם לֵאמֹ֑ר הִנֵּ֤ה יָלְדָה֙ מִלְכָּ֔ה</div>
 <p class="translation">"Now after these things <strong>it was told</strong> to Abraham, saying, 'Behold, Milcah also has borne children…'"</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>וַיֻּגַּד</td>
@@ -72,7 +72,7 @@
   <tr class="answer-row" id="a1">
     <td colspan="8">✓ <strong>Hophal</strong> | Wayyiqtol | 3ms | נגד | Hiphil הִגִּיד = "to tell, declare, report" → Hophal = "it was reported." Qibbuts (ֻ) under the prefix consonant is an alternate Hophal vowel alongside Shureq. The Dagesh forte in the gimel (גּ) comes from the Hiphil doubling pattern.</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage B — Exodus 5:14–16</h2>
 <h3>Context: Pharaoh beats the Israelite foremen for not meeting brick quotas.</h3>
@@ -80,7 +80,7 @@
 <div class="hebrew"><strong>וַיֻּכּ֗וּ [2]</strong> שֹׁטְרֵי֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁר־שָׂ֣מוּ עֲלֵהֶ֔ם נֹגְשֵׂ֥י פַרְעֹ֖ה</div>
 <p class="translation">"And <strong>the overseers of the people of Israel were beaten</strong>, whom Pharaoh's taskmasters had set over them."</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>וַיֻּכּוּ</td>
@@ -94,14 +94,14 @@
   <tr class="answer-row" id="a2">
     <td colspan="8">✓ <strong>Hophal</strong> | Wayyiqtol | 3mp | נכה | Hiphil הִכָּה = "to strike, beat, kill" → Hophal = "were struck/beaten." The root נכה is I-נ: the nun assimilates into the next consonant (here into כ, giving dagesh: יֻּכּוּ). Qibbuts under prefix = Hophal marker.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="note-box"><strong>Parsing challenge — Passage B:</strong> Verb 3 (נִתָּן) is a Niphal Participle, not a Hophal. Both are passive forms. The נ prefix (vs. מ prefix) distinguishes Niphal from Hophal. Verb 4 (מֻכִּים) is the Hophal — the מֻ prefix + u-class vowel marks it.</div>
 
 <div class="hebrew">לָ֚מָּה תַעֲשֶׂ֣ה כֹ֔ה לַעֲבָדֶ֑יךָ׃ תֶּ֗בֶן אֵ֤ין <strong>נִתָּן֙ [3]</strong> לַעֲבָדֶ֔יךָ וּלְבֵנִ֛ים אֹמְרִ֥ים לָ֖נוּ עֲשׂ֑וּ וְהִנֵּ֧ה <strong>עֲבָדֶ֛יךָ מֻכִּ֖ים [4]</strong></div>
 <p class="translation">"'…No straw <strong>is given</strong> to your servants, yet they say "Make bricks!" And behold, <strong>your servants are being beaten</strong>…'"</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>נִתָּן</td>
@@ -127,7 +127,7 @@
   <tr class="answer-row" id="a4">
     <td colspan="8">✓ <strong>Hophal</strong> | Participle | mp | נכה | Hiphil הִכָּה = "to strike, beat." מֻ prefix (Qibbuts) + כּ (dagesh from assimilation of נ) + י-stem. The Hophal Participle prefix מֻ/מוּ + u-class vowel is the key. This passive participle is used predicately: "your servants are [ones being] struck."</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage C — Numbers 35:16–18, 30–31</h2>
 <h3>Context: The death penalty statutes for homicide.</h3>
@@ -137,7 +137,7 @@
 <div class="hebrew">וְאִם֩ בִּכְלִ֨י בַרְזֶ֧ל הִכָּ֛הוּ וַיָּמֹ֖ת מֽוֹת־<strong>יוּמַ֖ת [5]</strong> הָרֹצֵֽחַ׃</div>
 <p class="translation">"If he struck him with an iron object, so that he died — the murderer <strong>shall surely be put to death</strong>."</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>יוּמַת</td>
@@ -151,12 +151,12 @@
   <tr class="answer-row" id="a5">
     <td colspan="8">✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Hiphil הֵמִית = "to put to death, cause to die." יוּמַת: יוּ prefix (Shureq) + מַת (Patach under R2). This is the most common Hophal form in the OT (99×), used almost exclusively in capital punishment formulas. The preceding מוֹת is the Qal Inf. Absolute (not Hophal).</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew">וְאִם֩ בְּאֶ֨בֶן יָ֜ד אֲשֶׁר־<strong>יָמ֤וּת [6]</strong> בָּהּ֙ הִכָּ֔הוּ וַיָּמֹ֖ת מֽוֹת־<strong>יוּמַ֖ת [7]</strong> הָרֹצֵֽחַ׃ וְאִ֨ם בִּכְלִי֩ עֵ֨ץ יָ֜ד אֲשֶׁר־<strong>יָמ֤וּת [8]</strong> בָּהּ֙ הִכָּ֔הוּ וַיָּמֹ֖ת מֽוֹת־<strong>יוּמַ֖ת [9]</strong> הָרֹצֵֽחַ׃</div>
 <p class="translation">"If with a stone that could cause death he struck him and he died — the murderer <strong>shall be put to death</strong> [7]. And if with a wooden instrument that could cause death he struck him and he died — the murderer <strong>shall be put to death</strong> [9]."</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>יָמוּת</td>
@@ -206,12 +206,12 @@
   <tr class="answer-row" id="a9">
     <td colspan="8">✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verbs 5 and 7.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew">עַל־פִּ֣י עֵדִים֮ <strong>יֵרָצֵ֣חַ [10]</strong> הָרֹצֵחַ֒ … כִּי־מ֖וֹת <strong>יוּמָֽת [11]</strong>׃</div>
 <p class="translation">"On the testimony of witnesses the murderer <strong>shall be put to death</strong> [10]… for <strong>he shall surely be put to death</strong> [11]."</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>יֵרָצֵחַ</td>
@@ -237,7 +237,7 @@
   <tr class="answer-row" id="a11">
     <td colspan="8">✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verbs 5, 7, 9. יוּ prefix = Hophal.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="reflection">
   <strong>Reflection Questions</strong>
@@ -250,7 +250,7 @@
 
 <div class="answer-key">
   <h2>Quick Answer Key</h2>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th></tr>
     <tr><td>1</td><td>וַיֻּגַּד</td><td>Yes</td><td>Wayyiqtol</td><td>3ms</td><td>נגד</td><td>to tell, declare</td></tr>
     <tr><td>2</td><td>וַיֻּכּוּ</td><td>Yes</td><td>Wayyiqtol</td><td>3mp</td><td>נכה</td><td>to strike, beat</td></tr>
@@ -263,7 +263,7 @@
     <tr><td>9</td><td>יוּמַת</td><td>Yes</td><td>Imperfect</td><td>3ms</td><td>מות</td><td>to put to death</td></tr>
     <tr><td>10</td><td>יֵרָצֵחַ</td><td>No (Niphal)</td><td>Imperfect</td><td>3ms</td><td>רצח</td><td>—</td></tr>
     <tr><td>11</td><td>יוּמַת</td><td>Yes</td><td>Imperfect</td><td>3ms</td><td>מות</td><td>to put to death</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <script>

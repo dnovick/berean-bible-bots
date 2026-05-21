@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -46,7 +46,7 @@ Note: When R2 is a guttural (ר, ח, ע, etc.), dagesh forte is rejected and the
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Form</th><th>Root</th><th>Conjugation</th><th>Piel Active Meaning</th><th>Pual Passive Translation</th><th></th>
   </tr>
@@ -211,7 +211,7 @@ Note: When R2 is a guttural (ר, ח, ע, etc.), dagesh forte is rejected and the
   </tr>
   <tr class="answer-row" id="r20"><td colspan="7"><strong>Piel active:</strong> to send away &nbsp;|&nbsp; <strong>Pual passive:</strong> they were sent away &nbsp;·&nbsp; <em>3cp suffix וּ; shewa under ל before vocalic suffix</em></td></tr>
 
-</table>
+</table></div>
 
 <div class="note">
   <strong>Pattern summary:</strong><br>

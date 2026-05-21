@@ -17,7 +17,7 @@
     background: #f0f0f0; border: 1px solid #999; border-radius: 3px;
   }
   button.ctrl:hover { background: #ddd; }
-  table { border-collapse: collapse; width: 100%; margin-top: 0.8em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin-top: 0.8em; font-size: 0.92em; }
   th { background: #3a3a5c; color: #fff; padding: 0.5em 0.6em; text-align: left; }
   td { padding: 0.45em 0.6em; border-bottom: 1px solid #ddd; vertical-align: middle; }
   tr:nth-child(even) td { background: #f8f8f8; }
@@ -61,7 +61,7 @@
   <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table id="drill-table">
+<div style="overflow-x:auto;max-width:100%;"><table id="drill-table">
   <thead>
     <tr>
       <th style="width:2.5em">#</th>
@@ -375,7 +375,7 @@
     </tr>
 
   </tbody>
-</table>
+</table></div>
 
 <div class="reflection">
   <h3>Reflection Questions</h3>

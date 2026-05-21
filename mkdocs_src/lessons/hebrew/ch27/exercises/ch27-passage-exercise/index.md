@@ -15,7 +15,7 @@
   .ref { font-weight: bold; font-size: 1rem; color: #444; display: block; margin-bottom: .3rem; }
   .hebrew { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; line-height: 2; margin: .3rem 0; }
   .english { color: #555; font-style: italic; margin: .2rem 0 .6rem; }
-  table { border-collapse: collapse; width: 100%; margin: .5rem 0; font-size: .92rem; }
+  table { border-collapse: collapse;  margin: .5rem 0; font-size: .92rem; }
   th { background: #e8e8e8; padding: .4rem .6rem; border: 1px solid #ccc; text-align: left; }
   td { padding: .35rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
   td.verb-cell { font-size: 1.1rem; direction: rtl; unicode-bidi: embed; font-weight: bold; }
@@ -79,7 +79,7 @@
 <span class="ref">1. Genesis 1:5 (adapted)</span>
 <p class="hebrew">וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם <strong>וַיַּקְרֵא</strong> לַחֹשֶׁךְ לַיְלָה</p>
 <p class="english">"and he <strong>called</strong> the darkness Night"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v1-hip" placeholder="Yes / No"/></td>
@@ -94,14 +94,14 @@
 <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>קָרָא</td><td>III-א</td>
 <td colspan="2">he called / proclaimed — tsere before silent final א; one of the most common forms in Genesis 1</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 2 -->
 <div class="passage-block">
 <span class="ref">2. Genesis 6:18</span>
 <p class="hebrew">וַהֲקִמֹתִי אֶת־בְּרִיתִי אִתְּךָ</p>
 <p class="english">"but I will establish my covenant with you"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v2-hip" placeholder="Yes / No"/></td>
@@ -116,14 +116,14 @@
 <td class="answer-label">Yes — Hiphil | Weqatal</td><td>1cs</td><td>קוּם</td><td>Biconsonantal</td>
 <td colspan="2">I will establish — וְ + הֵקִים pattern (hateph-patach under ה in weqatal form); holem-vav root medial</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 3 -->
 <div class="passage-block">
 <span class="ref">3. Genesis 8:20</span>
 <p class="hebrew"><strong>הֶעֱלָה</strong> נֹחַ עֹלֹת עַל הַמִּזְבֵּחַ</p>
 <p class="english">"Noah <strong>offered up</strong> burnt offerings on the altar"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v3-hip" placeholder="Yes / No"/></td>
@@ -138,14 +138,14 @@
 <td class="answer-label">Yes — Hiphil | Perfect</td><td>3ms</td><td>עָלָה</td><td>III-ה + I-guttural</td>
 <td colspan="2">he offered up — qamets + ה ending; seghol under הֶ and hateph-seghol under ע from the I-guttural interaction</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 4 -->
 <div class="passage-block">
 <span class="ref">4. Genesis 15:7</span>
 <p class="hebrew">אֲנִי יְהוָה אֲשֶׁר <strong>הוֹצֵאתִיךָ</strong> מֵאוּר כַּשְׂדִּים</p>
 <p class="english">"I am the LORD who <strong>brought you out</strong> from Ur of the Chaldeans"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v4-hip" placeholder="Yes / No"/></td>
@@ -160,14 +160,14 @@
 <td class="answer-label">Yes — Hiphil | Perfect</td><td>1cs + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
 <td colspan="2">I brought you out — הוֹ prefix (holem-vav) is the unmistakable I-י/ו Hiphil marker; tsere final shifts before suffix</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 5 -->
 <div class="passage-block">
 <span class="ref">5. Genesis 22:2</span>
 <p class="hebrew"><strong>וַיַּעַל</strong> שָׁם עֹלָה</p>
 <p class="english">"and he <strong>offered up</strong> a burnt offering there"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v5-hip" placeholder="Yes / No"/></td>
@@ -182,14 +182,14 @@
 <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>עָלָה</td><td>III-ה + I-guttural</td>
 <td colspan="2">and he offered up — apocopated: ה dropped; short patach under R2 (ע); one of the clearest III-ה Hiphil wayyiqtol diagnostics</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 6 -->
 <div class="passage-block">
 <span class="ref">6. Genesis 2:21</span>
 <p class="hebrew"><strong>וַיַּפֵּל</strong> יְהוָה אֱלֹהִים תַּרְדֵּמָה עַל הָאָדָם</p>
 <p class="english">"the LORD God <strong>caused a deep sleep to fall</strong> upon the man"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v6-hip" placeholder="Yes / No"/></td>
@@ -204,14 +204,14 @@
 <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>נָפַל</td><td>I-נ</td>
 <td colspan="2">and he cast — dagesh forte in R2 (פ) + tsere final; the patach prefix (וַיַּ) is standard; dagesh in R2 reveals I-נ</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 7 -->
 <div class="passage-block">
 <span class="ref">7. Exodus 9:16</span>
 <p class="hebrew">וְאוּלָם בַּעֲבוּר זֹאת <strong>הֶעֱמַדְתִּיךָ</strong></p>
 <p class="english">"but for this purpose I <strong>have raised you up</strong>"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v7-hip" placeholder="Yes / No"/></td>
@@ -226,14 +226,14 @@
 <td class="answer-label">Yes — Hiphil | Perfect</td><td>1cs + 2ms suf.</td><td>עָמַד</td><td>I-guttural</td>
 <td colspan="2">I raised you up / stationed you — seghol under הֶ; hateph-seghol under ע; suffix תִּיךָ appended to the perfect 1cs base</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 8 -->
 <div class="passage-block">
 <span class="ref">8. Exodus 20:2</span>
 <p class="hebrew">אֲנֹכִי יְהוָה אֱלֹהֶיךָ אֲשֶׁר <strong>הוֹצֵאתִיךָ</strong> מֵאֶרֶץ מִצְרַיִם</p>
 <p class="english">"I am the LORD your God, who <strong>brought you out</strong> of the land of Egypt"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v8-hip" placeholder="Yes / No"/></td>
@@ -248,14 +248,14 @@
 <td class="answer-label">Yes — Hiphil | Perfect</td><td>1cs + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
 <td colspan="2">I brought you out — הוֹ prefix; the Exodus formula; same form as Gen 15:7</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 9 -->
 <div class="passage-block">
 <span class="ref">9. Exodus 33:18</span>
 <p class="hebrew">וַיֹּאמַר <strong>הַרְאֵנִי</strong> נָא אֶת־כְּבֹדֶךָ</p>
 <p class="english">"and he said, '<strong>Show me</strong> your glory, please'"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v9-hip" placeholder="Yes / No"/></td>
@@ -270,14 +270,14 @@
 <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms + 1cs suf.</td><td>רָאָה</td><td>III-ה</td>
 <td colspan="2">show me — tsere + ה retained in the imperative (ה not apocopated); suffix נִי appended; Moses' request at Sinai</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 10 -->
 <div class="passage-block">
 <span class="ref">10. Exodus 40:2</span>
 <p class="hebrew"><strong>הָקֵם</strong> אֶת־מִשְׁכַּן אֹהֶל מוֹעֵד</p>
 <p class="english">"<strong>Set up</strong> the tabernacle of the tent of meeting"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v10-hip" placeholder="Yes / No"/></td>
@@ -292,7 +292,7 @@
 <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>קוּם</td><td>Biconsonantal</td>
 <td colspan="2">set up / erect — הָ prefix (qamets) + tsere; the qamets under הָ distinguishes from the strong Hiphil imperative הַ (patach)</td>
 </tr>
-</table>
+</table></div>
 </div>
 <hr class="section-break"/>
 <h2>Part B — Numbers and Deuteronomy (items 11–18)</h2>
@@ -301,7 +301,7 @@
 <span class="ref">11. Numbers 27:19</span>
 <p class="hebrew"><strong>הַעֲמֵד</strong> אֹתוֹ לִפְנֵי אֶלְעָזָר הַכֹּהֵן</p>
 <p class="english">"<strong>Set</strong> him before Eleazar the priest"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v11-hip" placeholder="Yes / No"/></td>
@@ -316,14 +316,14 @@
 <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>עָמַד</td><td>I-guttural</td>
 <td colspan="2">set him / station him — הַ + composite shewa under ע + tsere; compare הָקֵם (biconsonantal) — both begin with הַ/הָ but the vowel under R1 differs</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 12 -->
 <div class="passage-block">
 <span class="ref">12. Deuteronomy 18:15</span>
 <p class="hebrew">נָבִיא מִקִּרְבְּךָ <strong>יָקִים</strong> לְךָ יְהוָה אֱלֹהֶיךָ</p>
 <p class="english">"a prophet like me the LORD your God <strong>will raise up</strong> for you"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v12-hip" placeholder="Yes / No"/></td>
@@ -338,14 +338,14 @@
 <td class="answer-label">Yes — Hiphil | Imperfect</td><td>3ms</td><td>קוּם</td><td>Biconsonantal</td>
 <td colspan="2">he will raise up — qamets under prefix (יָ); the Deuteronomic messianic/prophetic promise formula</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 13 -->
 <div class="passage-block">
 <span class="ref">13. Deuteronomy 4:10</span>
 <p class="hebrew"><strong>הַשְׁמַע</strong> אֶת־הָעָם אֶת־דִּבְרֵי</p>
 <p class="english">"<strong>Make the people hear</strong> these words"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v13-hip" placeholder="Yes / No"/></td>
@@ -360,14 +360,14 @@
 <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>שָׁמַע</td><td>III-ח/ע</td>
 <td colspan="2">make them hear — patach (not tsere) before final ע in the shortened imperative; הַ + patach before final guttural</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 14 -->
 <div class="passage-block">
 <span class="ref">14. Deuteronomy 8:14</span>
 <p class="hebrew">אֲשֶׁר <strong>הוֹצִיאֲךָ</strong> מֵאֶרֶץ מִצְרַיִם</p>
 <p class="english">"who <strong>brought you out</strong> of the land of Egypt"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v14-hip" placeholder="Yes / No"/></td>
@@ -382,14 +382,14 @@
 <td class="answer-label">Yes — Hiphil | Perfect</td><td>3ms + 2ms suf.</td><td>יָצָא</td><td>I-י</td>
 <td colspan="2">he brought you out — הוֹ prefix; the Deuteronomic remembrance formula echoes Exo 20:2; suffix אֲךָ appended</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 15 -->
 <div class="passage-block">
 <span class="ref">15. Deuteronomy 8:14 (same verse)</span>
 <p class="hebrew">הַ<strong>מּוֹצִיא</strong>ֲךָ מֵאֶרֶץ מִצְרַיִם</p>
 <p class="english">"<strong>the one who brought you out</strong> of the land of Egypt" (substantival participle with article)</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v15-hip" placeholder="Yes / No"/></td>
@@ -404,14 +404,14 @@
 <td class="answer-label">Yes — Hiphil | Participle</td><td>ms</td><td>יָצָא</td><td>I-י</td>
 <td colspan="2">the one who brings out — מוֹ prefix (holem-vav under מ) with article; contrast strong Hiphil participle מַ (patach)</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 16 -->
 <div class="passage-block">
 <span class="ref">16. Numbers 1:51 (adapted)</span>
 <p class="hebrew"><strong>וְהֵקִים</strong> אֶת־הַמִּשְׁכָּן כְּמִשְׁפָּטוֹ</p>
 <p class="english">"and <strong>he shall set up</strong> the tabernacle according to its ordinance"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v16-hip" placeholder="Yes / No"/></td>
@@ -426,14 +426,14 @@
 <td class="answer-label">Yes — Hiphil | Weqatal</td><td>3ms</td><td>קוּם</td><td>Biconsonantal</td>
 <td colspan="2">and he shall set up — וְ + הֵקִים pattern; sequential future; הֵ prefix visible</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 17 -->
 <div class="passage-block">
 <span class="ref">17. Exodus 3:17</span>
 <p class="hebrew"><strong>לְהַעֲלוֹת</strong> אֶתְכֶם מֵעֳנִי מִצְרַיִם</p>
 <p class="english">"<strong>to bring you up</strong> out of the affliction of Egypt"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v17-hip" placeholder="Yes / No"/></td>
@@ -448,14 +448,14 @@
 <td class="answer-label">Yes — Hiphil | Inf. Construct</td><td>—</td><td>עָלָה</td><td>III-ה + I-guttural</td>
 <td colspan="2">to bring up — ends in וֹת (holem-vav + tav); the strongest single diagnostic for III-ה Hiphil inf. construct</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Item 18 -->
 <div class="passage-block">
 <span class="ref">18. Isaiah 48:6 (adapted)</span>
 <p class="hebrew">מֵעַתָּה <strong>אַשְׁמִיעֲכֶם</strong> חֲדָשׁוֹת</p>
 <p class="english">"from now on <strong>I announce to you</strong> new things"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="v18-hip" placeholder="Yes / No"/></td>
@@ -470,7 +470,7 @@
 <td class="answer-label">Yes — Hiphil | Imperfect</td><td>1cs + 2mp suf.</td><td>שָׁמַע</td><td>III-ח/ע</td>
 <td colspan="2">I announce to you — imperfect 1cs + אֲכֶם suffix; patach furtive before ע is absorbed by the suffix, leaving plain patach under ע</td>
 </tr>
-</table>
+</table></div>
 </div>
 <hr class="section-break"/>
 <h2>Bonus Items</h2>
@@ -479,7 +479,7 @@
 <span class="ref">B1. Genesis 2:15 (adapted)</span>
 <p class="hebrew"><strong>וַיָּשֶׂם</strong> אֹתוֹ בְּגַן עֵדֶן</p>
 <p class="english">"and he <strong>placed</strong> him in the garden of Eden"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="vb1-hip" placeholder="Yes / No"/></td>
@@ -494,14 +494,14 @@
 <td class="answer-label">Yes — Hiphil | Wayyiqtol</td><td>3ms</td><td>שִׂים</td><td>Biconsonantal</td>
 <td colspan="2">and he placed / set — qamets under וַיָּ + apocopated seghol final (וַיָּשֶׂם); the short vowel final distinguishes from the perfect הֵשִׂים</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Bonus 2 -->
 <div class="passage-block">
 <span class="ref">B2. Genesis 27:25</span>
 <p class="hebrew"><strong>הַגֶּשׁ</strong>־לִי וְאֹכְלָה מִצֵּיד בְּנִי</p>
 <p class="english">"<strong>Bring it near</strong> to me and I will eat of my son's game"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Causative gloss</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="vb2-hip" placeholder="Yes / No"/></td>
@@ -516,7 +516,7 @@
 <td class="answer-label">Yes — Hiphil | Imperative</td><td>2ms</td><td>נָגַשׁ</td><td>I-נ</td>
 <td colspan="2">bring near — הַ + dagesh forte in R2 (ג) + tsere; dagesh in ג is the proof of the assimilated root נ (נגשׁ)</td>
 </tr>
-</table>
+</table></div>
 </div>
 <hr class="section-break"/>
 <h2>Part C — Distractor Check</h2>
@@ -528,7 +528,7 @@
 <span class="ref">19. Genesis 22:3</span>
 <p class="hebrew">וַיַּשְׁכֵּם אַבְרָהָם בַּבֹּקֶר <strong>וַיֵּלֶךְ</strong> אֶל הַמָּקוֹם</p>
 <p class="english">"And Abraham rose early in the morning and <strong>went</strong> to the place."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Stem / Function</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="vd1-hip" placeholder="Yes / No"/></td>
@@ -543,14 +543,14 @@
 <td class="answer-label">No — Qal</td><td>Wayyiqtol</td><td>3ms</td><td>הָלַךְ</td><td>I-guttural</td>
 <td colspan="2">NOT Hiphil — Qal: <em>and he went</em>; no הִ/הַ prefix; plain Qal wayyiqtol of הָלַךְ</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Verb 20 -->
 <div class="passage-block">
 <span class="ref">20. Genesis 21:3</span>
 <p class="hebrew">וַיִּקְרָא אַבְרָהָם אֶת שֶׁם בְּנוֹ אֲשֶׁר <strong>נוֹלַד</strong> לוֹ</p>
 <p class="english">"And Abraham called the name of his son who <strong>was born</strong> to him."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Stem / Function</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="vd2-hip" placeholder="Yes / No"/></td>
@@ -565,14 +565,14 @@
 <td class="answer-label">No — Niphal</td><td>Perfect</td><td>3ms</td><td>יָלַד</td><td>I-י</td>
 <td colspan="2">NOT Hiphil — Niphal passive: <em>was born</em>; נוֹ- prefix = Niphal of I-י root (contrasts with Hiphil הוֹ- prefix)</td>
 </tr>
-</table>
+</table></div>
 </div>
 <!-- Verb 21 -->
 <div class="passage-block">
 <span class="ref">21. Genesis 2:17</span>
 <p class="hebrew">כִּי בְּיוֹם אֲכָלְךָ מִמֶּנּוּ מוֹת <strong>תָּמוּת</strong></p>
 <p class="english">"for in the day you eat of it you shall surely <strong>die</strong>."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>Hiphil?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Weak class</th><th>Stem / Function</th><th></th></tr>
 <tr>
 <td><input class="parse-field" id="vd3-hip" placeholder="Yes / No"/></td>
@@ -587,7 +587,7 @@
 <td class="answer-label">No — Qal</td><td>Imperfect</td><td>2ms</td><td>מוּת</td><td>Biconsonantal</td>
 <td colspan="2">NOT Hiphil — Qal: <em>you will die</em>; תָּ- prefix = Qal imperfect 2ms; no הַ- prefix; plain Qal of the common biconsonantal מוּת</td>
 </tr>
-</table>
+</table></div>
 </div>
 <script>
 function toggle(id) {

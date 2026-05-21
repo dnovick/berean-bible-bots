@@ -11,7 +11,7 @@
   .subtitle { color: #555; font-style: italic; margin-bottom: 1.5em; }
   h2 { font-size: 1.1em; margin-top: 2em; border-bottom: 1px solid #ccc; padding-bottom: 0.3em; }
   .instructions { background: #f7f7f7; border-left: 4px solid #999; padding: 0.8em 1em; margin-bottom: 1.5em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin-bottom: 1.5em; font-size: 0.92em; }
   th { background: #444; color: #fff; padding: 6px 8px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 8px; vertical-align: middle; }
   .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
@@ -43,7 +43,7 @@
 <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 <h2>Part A — I-י / I-נ Weak Roots</h2>
-<table id="tbl-a">
+<div style="overflow-x:auto;max-width:100%;"><table id="tbl-a">
 <thead>
 <tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Conj</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
 </thead>
@@ -99,9 +99,9 @@
 <td>he set before them / brought near</td><td>Causative</td><td>Joseph caused food to be set before them; Qal = draw near</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Part B — Hollow Roots (I/II-ו/י)</h2>
-<table id="tbl-b">
+<div style="overflow-x:auto;max-width:100%;"><table id="tbl-b">
 <thead>
 <tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Conj</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
 </thead>
@@ -157,9 +157,9 @@
 <td>he will put / place</td><td>Simple Action</td><td>Hiphil = primary usage for placing; Qal rare in same sense</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <h2>Part C — III-ה Weak Roots</h2>
-<table id="tbl-c">
+<div style="overflow-x:auto;max-width:100%;"><table id="tbl-c">
 <thead>
 <tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Conj</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
 </thead>
@@ -215,7 +215,7 @@
 <td>it will be / come about</td><td>Simple Action</td><td>III-ה root; context determines; Qal = be/become</td>
 </tr>
 </tbody>
-</table>
+</table></div>
 <div class="discussion">
 <strong>Discussion Questions:</strong>
 <ol>

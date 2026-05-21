@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -41,12 +41,12 @@
 <p>Each triplet shows the same weak root in Qal, Piel, and Pual. For each form: (1) identify the stem, (2) parse fully, (3) translate.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Stem</th><th>R1 vowel (Perfect 3ms)</th><th>R2 / End</th><th>Function</th></tr>
     <tr><td><strong>Qal</strong></td><td>Variable (qamets, etc.)</td><td>Normal for weak type</td><td>Simple active</td></tr>
     <tr><td><strong>Piel</strong></td><td>Hiriq (or tsere)</td><td>Dagesh Forte in R2</td><td>Intensive active</td></tr>
     <tr><td><strong>Pual</strong></td><td>Qibbuts (or holem if R2 guttural)</td><td>Dagesh Forte in R2</td><td>Passive of Piel</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="tip">
@@ -62,7 +62,7 @@
 
 <!-- TRIPLET 1 -->
 <div class="section-label">Triplet 1 — Root: <span class="heb">גלה</span> (III-ה)</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">גָּלָה</span></td>
@@ -79,11 +79,11 @@
     <td><input class="parse-field" id="s3"></td><td><input class="parse-field" id="g3"></td><td><input class="parse-field" id="p3"></td><td><input class="parse-field" id="t3"></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r3"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was revealed / uncovered"</strong> — qibbuts under ג + dagesh forte in ל + final ָה; III-ה Pual pattern</td></tr>
-</table>
+</table></div>
 
 <!-- TRIPLET 2 -->
 <div class="section-label">Triplet 2 — Root: <span class="heb">כלה</span> (III-ה)</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>4</td><td><span class="heb">כָּלָה</span></td>
@@ -100,11 +100,11 @@
     <td><input class="parse-field" id="s6"></td><td><input class="parse-field" id="g6"></td><td><input class="parse-field" id="p6"></td><td><input class="parse-field" id="t6"></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r6"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was finished / consumed"</strong> — qibbuts under כ + dagesh in ל + final ָה; passive of Piel</td></tr>
-</table>
+</table></div>
 
 <!-- TRIPLET 3 -->
 <div class="section-label">Triplet 3 — Root: <span class="heb">ברך</span> (R2 = ר rejects dagesh)</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>7</td><td><span class="heb">בָּרַךְ</span></td>
@@ -121,11 +121,11 @@
     <td><input class="parse-field" id="s9"></td><td><input class="parse-field" id="g9"></td><td><input class="parse-field" id="p9"></td><td><input class="parse-field" id="t9"></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r9"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was blessed"</strong> — holem under ב (Pual qibbuts lengthened; ר rejects dagesh forte in R2) + patach</td></tr>
-</table>
+</table></div>
 
 <!-- TRIPLET 4 -->
 <div class="section-label">Triplet 4 — Root: <span class="heb">ענה</span> (III-ה, I-Guttural ע)</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>10</td><td><span class="heb">עָנָה</span></td>
@@ -142,11 +142,11 @@
     <td><input class="parse-field" id="s12"></td><td><input class="parse-field" id="g12"></td><td><input class="parse-field" id="p12"></td><td><input class="parse-field" id="t12"></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r12"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was afflicted"</strong> — qibbuts under ע + dagesh forte in ן + final ָה; ע takes qibbuts (gutturals prefer a-class but qibbuts appears here)</td></tr>
-</table>
+</table></div>
 
 <!-- TRIPLET 5 -->
 <div class="section-label">Triplet 5 — Root: <span class="heb">חיה</span> (III-ה)</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th></tr>
 
   <tr><td>13</td><td><span class="heb">חָיָה</span></td>
@@ -163,7 +163,7 @@
     <td><input class="parse-field" id="s15"></td><td><input class="parse-field" id="g15"></td><td><input class="parse-field" id="p15"></td><td><input class="parse-field" id="t15"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="7"><strong>Pual · Perfect · 3ms · "he was kept alive"</strong> — qibbuts under ח + dagesh forte in י + final ָה; Pual of III-ה; passive of Piel חִיָּה</td></tr>
-</table>
+</table></div>
 
 <script>
 function toggle(id) {

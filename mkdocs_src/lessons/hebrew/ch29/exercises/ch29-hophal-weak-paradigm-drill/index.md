@@ -13,7 +13,7 @@ h3 { font-size: .97rem; margin-top: 1.4rem; color: #444; }
 .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
 .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
 .note { background: #fff8e8; border-left: 4px solid #e0a020; padding: .6rem 1rem; margin: .8rem 0; font-size: .9rem; color: #6b4c10; }
-table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
 th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
 td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
 td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -50,7 +50,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <h2>Part A — Root נגד (I-נ, qibbuts pattern)</h2>
 
 <h3>A1 — Perfect (selected, 4 forms)</h3>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-a1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -62,10 +62,10 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">4</td><td class="pgn">1cs</td><td><input class="parse-field" id="f-a4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a4')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a4"><td class="ans-lbl">✓</td><td class="pgn">1cs</td><td class="heb-ans">הֻגַּדְתִּי</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h3>A2 — Imperfect (selected, 4 forms)</h3>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-b1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
@@ -77,10 +77,10 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">4</td><td class="pgn">1cp</td><td><input class="parse-field" id="f-b4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b4"><td class="ans-lbl">✓</td><td class="pgn">1cp</td><td class="heb-ans">נֻגַּד</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h3>A3 — Participle (2 forms)</h3>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">ms</td><td><input class="parse-field" id="f-c1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
@@ -88,29 +88,29 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">2</td><td class="pgn">mp</td><td><input class="parse-field" id="f-c2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c2')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-c2"><td class="ans-lbl">✓</td><td class="pgn">mp</td><td class="heb-ans">מֻגָּדִים</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <h2>Part B — Root בוא (biconsonantal, shureq pattern)</h2>
 
 <h3>B1 — Imperfect (1 form)</h3>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-d1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('d1')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-d1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">יוּבָא</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h3>B2 — Participle (1 form)</h3>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">ms</td><td><input class="parse-field" id="f-e1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('e1')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-e1"><td class="ans-lbl">✓</td><td class="pgn">ms</td><td class="heb-ans">מוּבָא</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <script>
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}

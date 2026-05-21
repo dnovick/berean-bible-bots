@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -38,14 +38,14 @@
 
 <p>For each form, identify the <strong>Stem</strong> (Qal / Niphal / Hiphil / Hophal / Piel), <strong>Conjugation</strong>, <strong>PGN</strong> (where applicable), and <strong>Root</strong>. Type your answers in the fields, then click <strong>▶ Answer</strong> to check.</p>
 
-<table class="ref-table">
+<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
   <tr><th>Stem</th><th>Key Marker</th></tr>
   <tr><td><strong>Qal</strong></td><td>No prefix; basic a–a perfect / i-vowel imperfect; no dagesh in R2</td></tr>
   <tr><td><strong>Niphal</strong></td><td>נִ prefix (perfect); assimilated נ → dagesh in R1 (imperfect/wayyiqtol)</td></tr>
   <tr><td><strong>Hiphil</strong></td><td>הִ prefix (perfect); יַ / תַ / נַ / אַ (imperfect); chirik + yod vowel chain</td></tr>
   <tr><td><strong>Hophal</strong></td><td>הָ / הֻ prefix; no dagesh; o/u vowel pattern</td></tr>
   <tr><td><strong>Piel</strong></td><td>Dagesh forte in R2 + ִ–ֵ (perfect) / shewa–patach (imperfect)</td></tr>
-</table>
+</table></div>
 
 <div class="tip">
   <strong>Quick check:</strong> See a dagesh in the <em>middle</em> consonant? → <strong>Piel</strong> (or Pual).
@@ -59,7 +59,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th>
   </tr>
@@ -376,7 +376,7 @@
     <td colspan="7"><strong>Niphal · Participle · ms · דבר</strong> — נִ prefix + qamets = Niphal participle pattern</td>
   </tr>
 
-</table>
+</table></div>
 
 <div class="note">
   <strong>Note on items 15 and 19:</strong> <span class="heb">דַּבֵּר</span> is spelled identically whether it is the Piel Imperative 2ms ("Speak!") or the Piel Infinitive Absolute. For strong roots these two forms always share the same spelling. Context — whether the form commands an action or adverbially intensifies a finite verb — is the only distinguishing factor.

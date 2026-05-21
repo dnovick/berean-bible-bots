@@ -11,7 +11,7 @@ h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.1em;margin-top:2em;color:#2c5f2e;border-bottom:1px solid #2c5f2e;padding-bottom:.2em}
 p.passage{font-size:1.1em;line-height:1.8;margin:.5em 0}
 p.trans{color:#555;font-style:italic;font-size:.95em;margin:.2em 0 .8em}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -54,13 +54,13 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="trans">"<strong>Cursed are you</strong> more than all livestock." (Gen 3:14)</p>
 <p class="passage"><span class="h-inline">וְעַתָּ֖ה <strong>אָר֤וּר אָ֙תָּה֙</strong> מִן-הָ֣אֲדָמָ֔ה</span></p>
 <p class="trans">"And now, <strong>cursed are you</strong> from the ground…" (Gen 4:11)</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>1</td><td class="hebrew">אָר֤וּר</td><td><input class="parse-field" id="1-ap"></td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-cl"></td><td><input class="parse-field" id="1-gn"></td><td><input class="parse-field" id="1-fn"></td><td><input class="parse-field" id="1-gl"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a1"><td colspan="9">Passive · ארר · Geminate · ms · Predicate — "you are cursed"; qamets + shureq (qatûl); predicate of אַתָּה in verbless clause</td></tr>
 <tr><td>2</td><td class="hebrew">אָר֤וּר (4:11)</td><td><input class="parse-field" id="2-ap"></td><td><input class="parse-field" id="2-r"></td><td><input class="parse-field" id="2-cl"></td><td><input class="parse-field" id="2-gn"></td><td><input class="parse-field" id="2-fn"></td><td><input class="parse-field" id="2-gl"></td><td><button class="toggle-btn" onclick="tog('a2')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a2"><td colspan="9">Passive · ארר · Geminate · ms · Predicate — identical form and function; curse formula applied to Cain</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 2 — Genesis 14:19 / 24:27 (Blessing Formulas)</h2>
@@ -69,79 +69,79 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="trans">"<strong>Blessed be Abram</strong> by God Most High." (Gen 14:19)</p>
 <p class="passage"><span class="h-inline"><strong>בָּר֤וּךְ יְהוָה֙</strong> אֱלֹהֵ֣י אֲדֹנִ֣י אַבְרָהָ֔ם</span></p>
 <p class="trans">"<strong>Blessed be the LORD</strong>, the God of my master Abraham." (Gen 24:27)</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>3</td><td class="hebrew">בָּר֤וּךְ</td><td><input class="parse-field" id="3-ap"></td><td><input class="parse-field" id="3-r"></td><td><input class="parse-field" id="3-cl"></td><td><input class="parse-field" id="3-gn"></td><td><input class="parse-field" id="3-fn"></td><td><input class="parse-field" id="3-gl"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a3"><td colspan="9">Passive · ברך · Strong A · ms · Predicate — "blessed is Abram"; blessing formula</td></tr>
 <tr><td>4</td><td class="hebrew">בָּר֤וּךְ (24:27)</td><td><input class="parse-field" id="4-ap"></td><td><input class="parse-field" id="4-r"></td><td><input class="parse-field" id="4-cl"></td><td><input class="parse-field" id="4-gn"></td><td><input class="parse-field" id="4-fn"></td><td><input class="parse-field" id="4-gl"></td><td><button class="toggle-btn" onclick="tog('a4')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a4"><td colspan="9">Passive · ברך · Strong A · ms · Predicate — "blessed is the LORD"; same form applied to God; fixed blessing formula</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 3 — Genesis 18:1 (Abraham at the Tent)</h2>
 <p class="ref">Gen 18:1</p>
 <p class="passage"><span class="h-inline">וְהוּא <strong>יֹשֵׁ֤ב</strong> פֶּֽתַח-הָאֹ֙הֶל֙ כְּחֹ֣ם הַיּ֔וֹם</span></p>
 <p class="trans">"…while he was <strong>sitting</strong> at the entrance of the tent in the heat of the day."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>5</td><td class="hebrew">יֹשֵׁ֤ב</td><td><input class="parse-field" id="5-ap"></td><td><input class="parse-field" id="5-r"></td><td><input class="parse-field" id="5-cl"></td><td><input class="parse-field" id="5-gn"></td><td><input class="parse-field" id="5-fn"></td><td><input class="parse-field" id="5-gl"></td><td><button class="toggle-btn" onclick="tog('a5')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a5"><td colspan="9">Active · ישב · I-י · ms · Predicate (circumstantial) — "sitting"; describes Abraham's ongoing posture; circumstantial clause</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 4 — Genesis 4:9 (Am I My Brother's Keeper?)</h2>
 <p class="ref">Gen 4:9</p>
 <p class="passage"><span class="h-inline">הֲ<strong>שֹׁמֵ֥ר</strong> אָחִ֖י אָנֹֽכִי</span></p>
 <p class="trans">"Am I my brother's <strong>keeper</strong>?"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>6</td><td class="hebrew">שֹׁמֵ֥ר</td><td><input class="parse-field" id="6-ap"></td><td><input class="parse-field" id="6-r"></td><td><input class="parse-field" id="6-cl"></td><td><input class="parse-field" id="6-gn"></td><td><input class="parse-field" id="6-fn"></td><td><input class="parse-field" id="6-gl"></td><td><button class="toggle-btn" onclick="tog('a6')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a6"><td colspan="9">Active · שמר · Strong A · ms · Substantive — "keeper"; used as a noun; predicate of אָנֹכִי in verbless question</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 5 — Exodus 3:2 (The Burning Bush)</h2>
 <p class="ref">Exo 3:2</p>
 <p class="passage"><span class="h-inline">וְהִנֵּ֤ה הַסְּנֶה֙ <strong>בֹּעֵ֣ר</strong> בָּאֵ֔שׁ וְהַסְּנֶ֖ה אֵינֶ֥נּוּ אֻכָּֽל</span></p>
 <p class="trans">"…behold, the bush was <strong>burning</strong> with fire, yet the bush was not consumed."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>7</td><td class="hebrew">בֹּעֵ֣ר</td><td><input class="parse-field" id="7-ap"></td><td><input class="parse-field" id="7-r"></td><td><input class="parse-field" id="7-cl"></td><td><input class="parse-field" id="7-gn"></td><td><input class="parse-field" id="7-fn"></td><td><input class="parse-field" id="7-gl"></td><td><button class="toggle-btn" onclick="tog('a7')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a7"><td colspan="9">Active · בער · Strong A · ms · Predicate/Progressive — "burning"; describes ongoing state of the bush; introduced by וְהִנֵּה</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 6 — Exodus 6:6 (Outstretched Arm Formula)</h2>
 <p class="ref">Exo 6:6</p>
 <p class="passage"><span class="h-inline">בִּ/זְר֥וֹעַ <strong>נְטוּיָ֖ה</strong></span></p>
 <p class="trans">"…with an <strong>outstretched</strong> arm."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>8</td><td class="hebrew">נְטוּיָ֖ה</td><td><input class="parse-field" id="8-ap"></td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-cl"></td><td><input class="parse-field" id="8-gn"></td><td><input class="parse-field" id="8-fn"></td><td><input class="parse-field" id="8-gl"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a8"><td colspan="9">Passive · נטה · III-ה · fs · Attributive — "outstretched"; agrees with זְרוֹעַ (arm, fs); fixed formula 15+ times in Torah; shewa + shureq + יָה</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 7 — Deuteronomy 9:10 (Tablets Written by God)</h2>
 <p class="ref">Deu 9:10</p>
 <p class="passage"><span class="h-inline">אֶת-שְׁנֵ֛י לוּחֹ֥ת הָאֲבָנִ֖ים <strong>כְּתֻבִ֣ים</strong> בְּאֶצְבַּ֣ע אֱלֹהִ֑ים</span></p>
 <p class="trans">"…the two stone tablets <strong>written</strong> with the finger of God."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>9</td><td class="hebrew">כְּתֻבִ֣ים</td><td><input class="parse-field" id="9-ap"></td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-cl"></td><td><input class="parse-field" id="9-gn"></td><td><input class="parse-field" id="9-fn"></td><td><input class="parse-field" id="9-gl"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a9"><td colspan="9">Passive · כתב · Strong A · mp · Attributive — "written"; agrees with לוּחֹת (tablets, mp); shewa + shureq + ִים</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 8 — Leviticus 2:4–5 (Grain Offering)</h2>
 <p class="ref">Lev 2:4–5</p>
 <p class="passage"><span class="h-inline">חַלּ֥וֹת מַצּ֛וֹת <strong>בְּלוּלֹ֥ת</strong> בַּשֶּׁ֖מֶן</span></p>
 <p class="trans">"…unleavened loaves <strong>mixed</strong> with oil."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>10</td><td class="hebrew">בְּלוּלֹ֥ת</td><td><input class="parse-field" id="10-ap"></td><td><input class="parse-field" id="10-r"></td><td><input class="parse-field" id="10-cl"></td><td><input class="parse-field" id="10-gn"></td><td><input class="parse-field" id="10-fn"></td><td><input class="parse-field" id="10-gl"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a10"><td colspan="9">Passive · בלל · Geminate · fp · Attributive — "mixed with oil"; agrees with חַלּוֹת (loaves, fp); most common passive ptc. in Torah (38×); shewa + shureq + וֹת</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 9 — Genesis 37:2 / Numbers 27:17 (Shepherd)</h2>
@@ -150,24 +150,24 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="trans">"Now Joseph was <strong>shepherding</strong> his brothers…" (Gen 37:2)</p>
 <p class="passage"><span class="h-inline">לֹא-תִהְיֶ֞ה עֲדַ֤ת יְהוָה֙ כַּצֹּ֣אן אֲשֶׁ֥ר אֵֽין-לָהֶ֖ם <strong>רֹעֶ֖ה</strong></span></p>
 <p class="trans">"…that the congregation of the LORD may not be as sheep that have no <strong>shepherd</strong>." (Num 27:17)</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>11</td><td class="hebrew">רֹעֶ֩ה (Gen 37:2)</td><td><input class="parse-field" id="11-ap"></td><td><input class="parse-field" id="11-r"></td><td><input class="parse-field" id="11-cl"></td><td><input class="parse-field" id="11-gn"></td><td><input class="parse-field" id="11-fn"></td><td><input class="parse-field" id="11-gl"></td><td><button class="toggle-btn" onclick="tog('a11')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a11"><td colspan="9">Active · רעה · III-ה · ms · Predicate/Progressive — "was shepherding"; describes Joseph's occupation; III-ה (holem-waw + seghol + ה)</td></tr>
 <tr><td>12</td><td class="hebrew">רֹעֶ֖ה (Num 27:17)</td><td><input class="parse-field" id="12-ap"></td><td><input class="parse-field" id="12-r"></td><td><input class="parse-field" id="12-cl"></td><td><input class="parse-field" id="12-gn"></td><td><input class="parse-field" id="12-fn"></td><td><input class="parse-field" id="12-gl"></td><td><button class="toggle-btn" onclick="tog('a12')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a12"><td colspan="9">Active · רעה · III-ה · ms · Substantive — "shepherd"; used as a noun; same form as Gen 37:2 but different syntactic function</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 10 — Leviticus 25:25 (Kinsman-Redeemer)</h2>
 <p class="ref">Lev 25:25</p>
 <p class="passage"><span class="h-inline">וּבָ֤א <strong>גֹאֲל֔וֹ</strong> הַקָּרֹ֥ב אֵלָ֖יו</span></p>
 <p class="trans">"…then his <strong>redeemer</strong>, the one near to him, shall come…"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>13</td><td class="hebrew">גֹאֲל֔וֹ</td><td><input class="parse-field" id="13-ap"></td><td><input class="parse-field" id="13-r"></td><td><input class="parse-field" id="13-cl"></td><td><input class="parse-field" id="13-gn"></td><td><input class="parse-field" id="13-fn"></td><td><input class="parse-field" id="13-gl"></td><td><button class="toggle-btn" onclick="tog('a13')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a13"><td colspan="9">Active · גאל · Strong A · ms + 3ms suffix · Substantive — "his redeemer"; ptc. used as title + possessive suffix; kinsman-redeemer institution; holem-waw + tsere</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 11 — Numbers 14:14 / Numbers 2:17 (Standing Cloud / Inhabitants)</h2>
@@ -176,13 +176,13 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="trans">"…and your cloud <strong>stands</strong> over them." (Num 14:14)</p>
 <p class="passage"><span class="h-inline">שָֽׁמְע֗וּ … אֶל-<strong>יֹשְׁבֵ֣י</strong> הָאָ֣רֶץ הַזֹּ֑את</span></p>
 <p class="trans">"…they have heard … from the <strong>inhabitants of</strong> this land." (Num 14:14)</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Act./Pass.</th><th>Root</th><th>Root Class</th><th>G/N</th><th>Function</th><th>Gloss</th><th></th></tr>
 <tr><td>14</td><td class="hebrew">עֹמֵ֣ד</td><td><input class="parse-field" id="14-ap"></td><td><input class="parse-field" id="14-r"></td><td><input class="parse-field" id="14-cl"></td><td><input class="parse-field" id="14-gn"></td><td><input class="parse-field" id="14-fn"></td><td><input class="parse-field" id="14-gl"></td><td><button class="toggle-btn" onclick="tog('a14')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a14"><td colspan="9">Active · עמד · Strong A · ms · Predicate — "standing"; describes the cloud's ongoing position; I-gutt. (ע) with chateph</td></tr>
 <tr><td>15</td><td class="hebrew">יֹשְׁבֵ֣י</td><td><input class="parse-field" id="15-ap"></td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-cl"></td><td><input class="parse-field" id="15-gn"></td><td><input class="parse-field" id="15-fn"></td><td><input class="parse-field" id="15-gl"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a15"><td colspan="9">Active · ישב · I-י · mp construct · Substantive — "inhabitants of"; mp construct form (tsere-yod); I-י ptc. (yod + holem-waw in ms, shewa in construct)</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Reflection Questions</h2>

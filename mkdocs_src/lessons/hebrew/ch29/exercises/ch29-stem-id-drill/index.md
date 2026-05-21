@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -54,7 +54,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th>
     <th>Hebrew Form</th>
@@ -402,7 +402,7 @@
     <td colspan="8"><strong>Hophal · Perfect · 3ms · ילד</strong> — he was born · <em>Hophal I-י: הוּ prefix (shureq) + patach in stem. Compare Hiphil הוֹלִיד (holem-waw) vs. Hophal הוּלַד (shureq): o-class in both, but the precise vowel distinguishes the stems.</em></td>
   </tr>
 
-</table>
+</table></div>
 
 <div class="controls">
   <button onclick="showAll()">Show All Answers</button>

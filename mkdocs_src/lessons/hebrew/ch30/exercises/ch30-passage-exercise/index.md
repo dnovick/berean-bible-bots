@@ -12,7 +12,7 @@
   h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
   .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
   .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
-  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
@@ -60,7 +60,7 @@
 <div class="hebrew">וַיְבָ֧רֶךְ <strong>[1]</strong> אֹתָ֛ם אֱלֹהִ֖ים לֵאמֹ֑ר פְּר֥וּ וּרְב֛וּ וּמִלְא֥וּ אֶת־הַמַּ֖יִם בַּיַּמִּ֑ים</div>
 <p class="translation">"And God blessed them, saying, 'Be fruitful and multiply and fill the waters in the seas…'" (Gen 1:22)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>וַיְבָרֶךְ</td>
@@ -74,12 +74,12 @@
   <tr class="answer-row" id="a1">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Wayyiqtol | 3ms | ברך | <em>Intensive</em> — God's blessing on the creatures; וַיְ prefix (patach+shewa) = Piel/Hophal Wayyiqtol. R2=ר rejects dagesh; Piel identified by vowel pattern.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew">וַיְבָ֣רֶךְ <strong>[2]</strong> אֹתָ֖ם אֱלֹהִ֑ים וַיֹּ֨אמֶר לָהֶ֜ם אֱלֹהִ֗ים פְּר֥וּ וּרְב֛וּ</div>
 <p class="translation">"And God blessed them. And God said to them, 'Be fruitful and multiply…'" (Gen 1:28)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>וַיְבָרֶךְ</td>
@@ -93,7 +93,7 @@
   <tr class="answer-row" id="a2">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Wayyiqtol | 3ms | ברך | <em>Intensive</em> — Same form as #1; God's intensive blessing on humanity.</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage B — Exodus 19:10–14</h2>
 <h3>Context: The LORD prepares Israel for the theophany at Sinai.</h3>
@@ -101,7 +101,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֹּ֨אמֶר יְהוָ֤ה אֶל־מֹשֶׁה֙ לֵ֣ךְ אֶל־הָעָ֔ם <strong>וְקִדַּשְׁתָּ֥ [3]</strong> אֹתָ֛ם הַיּ֥וֹם וּמָחָ֑ר <strong>וְכִבְּס֖וּ [4]</strong> שִׂמְלֹתָֽם׃</div>
 <p class="translation">"And the LORD said to Moses, 'Go to the people and consecrate them today and tomorrow, and let them wash their garments.'" (Exo 19:10)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>וְקִדַּשְׁתָּ</td>
@@ -127,12 +127,12 @@
   <tr class="answer-row" id="a4">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Weqatal | 3cp | כבס | <em>Intensive</em> — "they shall wash their garments." כבס appears almost exclusively in the Piel; dagesh forte in ב (R2) confirms it.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֵּ֤רֶד מֹשֶׁה֙ מִן־הָהָ֔ר אֶל־הָעָ֑ם <strong>וַיְקַדֵּ֖שׁ [5]</strong> אֶת־הָעָ֑ם <strong>וַיְכַבְּס֖וּ [6]</strong> שִׂמְלֹתָֽם׃</div>
 <p class="translation">"And Moses went down from the mountain to the people and consecrated the people, and they washed their garments." (Exo 19:14)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>וַיְקַדֵּשׁ</td>
@@ -158,12 +158,12 @@
   <tr class="answer-row" id="a6">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Wayyiqtol | 3mp | כבס | <em>Intensive</em> — The people execute the command (v.4). Piel Wayyiqtol 3mp: וַיְ + Piel imperfect stem.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וַיְדַבֵּ֥ר [7]</strong> מֹשֶׁ֖ה אֶל־הָעָ֑ם</div>
 <p class="translation">"And Moses spoke to the people." (Exo 19:25)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r7">
     <td>7</td><td>וַיְדַבֵּר</td>
@@ -177,14 +177,14 @@
   <tr class="answer-row" id="a7">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Wayyiqtol | 3ms | דבר | <em>Denominative</em> — "spoke" from the noun דָּבָר (word). 1,090× in the Piel OT-wide; the paradigm Piel denominative.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="note-box"><strong>Distractor alert — Niphal:</strong> Exo 19:13 gives us a Niphal Imperfect from a root you know.</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כָּל־הַנֹּגֵ֤עַ בָּהָר֙ מוֹת <strong>יִסָּקֵ֣ל [8]</strong> — אִם בְּהֵמָ֖ה אִם אִ֑ישׁ לֹ֥א יִחְיֶֽה׃</div>
 <p class="translation">"Anyone who touches the mountain shall be put to death — whether beast or man, he shall not live; he shall be stoned." (Exo 19:13)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>יִסָּקֵל</td>
@@ -198,7 +198,7 @@
   <tr class="answer-row" id="a8">
     <td colspan="8">✗ <strong>No — Niphal</strong> | Imperfect | 3ms | סקל | <em>Niphal passive</em> — "shall be stoned." The נִ- prefix contracts with the preformative: יִ + dagesh forte in סּ. No dagesh in R2 (ק), so this is NOT Piel.</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage C — Numbers 22:6–8, 17–18</h2>
 <h3>Context: Balak asks Balaam to curse Israel; Balaam responds.</h3>
@@ -208,7 +208,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">לְכָה־נָּ֣א <strong>אָרָה [9]</strong>־לִּי֮ אֶת־הָעָ֣ם הַזֶּה֒ כִּ֣י יָדַ֗עְתִּי אֵ֤ת אֲשֶׁר־<strong>תְּבָרֵךְ֙ [10]</strong> מְבֹרָ֔ךְ [Ch32 — not numbered] וַאֲשֶׁ֥ר תָּאֹ֖ר <strong>יוּאָֽר [11]</strong>׃</div>
 <p class="translation">"Come now, curse [9] this people for me … I know that he whom you bless [10] is blessed [Ch32], and he whom you curse shall be cursed [11]." (Num 22:6)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>אָרָה</td>
@@ -246,12 +246,12 @@
   <tr class="answer-row" id="a11">
     <td colspan="8">✗ <strong>No — Hophal</strong> | Imperfect | 3ms | ארר | <em>Hophal passive</em> — "shall be cursed." The יוּ prefix (Shureq = u-class vowel under prefix) = Hophal Imperfect marker. Compare: Piel prefix = יְ (shewa), Hophal = יוּ (Shureq).</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וַיֹּ֤אמֶר <strong>יְדַבֵּ֥ר [12]</strong> יְהוָ֖ה אֵלָ֑י <strong>וְדִבַּרְתִּ֖י [13]</strong> אֲלֵיכֶֽם׃</div>
 <p class="translation">"And he said, 'The LORD will speak to me, and I will speak to you.'" (Num 22:8)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r12">
     <td>12</td><td>יְדַבֵּר</td>
@@ -277,12 +277,12 @@
   <tr class="answer-row" id="a13">
     <td colspan="8">✓ <strong>Yes — Piel</strong> | Weqatal | 1cs | דבר | <em>Denominative</em> — וְ + Perfect form: Hireq under R1 + dagesh in R2 (בּ) + 1cs suffix תִּי. Future/consequential Weqatal.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כִּֽי <strong>כַבֵּד֙ [14]</strong> <strong>אֲכַבֶּדְךָ֣ [15]</strong> מְאֹ֔ד וְכֹ֛ל אֲשֶׁר־תֹּאמַ֥ר אֵלַ֖י אֶעֱשֶׂ֑ה וּלְכָ֣ה נָּ֗א <strong>קָֽבָה [16]</strong>־לִ֖י אֵ֥ת הָעָ֛ם הַזֶּֽה׃</div>
 <p class="translation">"'For I will certainly honor you greatly, and whatever you say to me I will do; come now, curse this people for me.'" (Num 22:17)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r14">
     <td>14</td><td>כַבֵּד</td>
@@ -320,7 +320,7 @@
   <tr class="answer-row" id="a16">
     <td colspan="8">✗ <strong>No — Qal</strong> | Imperative | 2ms | קבב | <em>Qal</em> — Qal imperative (curse, geminate root). No dagesh in R2. Balak's cursing vocabulary is Qal, not Piel.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="reflection">
   <strong>Reflection Questions</strong>
@@ -333,7 +333,7 @@
 
 <div class="answer-key">
   <h2>Quick Answer Key</h2>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>#</th><th>Verb</th><th>Piel?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th></tr>
     <tr><td>1</td><td>וַיְבָרֶךְ</td><td>Yes</td><td>Wayyiqtol</td><td>3ms</td><td>ברך</td><td>Piel — Intensive</td></tr>
     <tr><td>2</td><td>וַיְבָרֶךְ</td><td>Yes</td><td>Wayyiqtol</td><td>3ms</td><td>ברך</td><td>Piel — Intensive</td></tr>
@@ -351,7 +351,7 @@
     <tr><td>14</td><td>כַּבֵּד</td><td>Yes</td><td>Inf. Absolute</td><td>—</td><td>כבד</td><td>Piel — Intensive</td></tr>
     <tr><td>15</td><td>אֲכַבֶּדְךָ</td><td>Yes</td><td>Imperfect</td><td>1cs</td><td>כבד</td><td>Piel — Intensive</td></tr>
     <tr><td>16</td><td>קָבָה</td><td>No</td><td>Imperative</td><td>2ms</td><td>קבב</td><td>Qal</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <script>

@@ -12,7 +12,7 @@
   h3 { font-size: 1em; margin-top: 1.2em; color: #555; font-style: italic; }
   .hebrew { font-size: 1.4em; direction: rtl; unicode-bidi: embed; line-height: 2; margin: 0.6em 0; padding: 0.5em 0.8em; background: #f9f6ef; border-left: 3px solid #c8a84b; border-radius: 3px; }
   .translation { font-style: italic; color: #444; margin: 0.3em 0 0.8em; }
-  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
@@ -60,7 +60,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">כִּ֣י יָדַ֗עְתִּי אֵ֤ת אֲשֶׁר־<strong>תְּבָרֵךְ [1]</strong> <strong>מְבֹרָ֔ךְ [2]</strong> וַאֲשֶׁ֥ר תָּאֹ֖ר <strong>יוּאָֽר [3]</strong>׃</div>
 <p class="translation">"…for I know that he whom you bless [1] is blessed [2], and he whom you curse is cursed [3]." (Num 22:6)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>תְּבָרֵךְ</td>
@@ -98,12 +98,12 @@
   <tr class="answer-row" id="a3">
     <td colspan="8">✗ <strong>No — Hophal</strong> | Imperfect | 3ms | ארר | <em>Hophal passive</em> — "shall be cursed." The יוּ prefix (Shureq = u-class vowel under the preformative) is the Hophal Imperfect marker. Contrast Pual: Qibbuts is under R1, not the prefix consonant.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">לֹ֥א תֵלֵ֖ךְ עִמָּהֶ֑ם לֹ֥א <strong>תָאֹ֖ר [4]</strong> אֶת־הָעָ֑ם כִּ֥י <strong>בָר֖וּךְ [5]</strong> הֽוּא׃</div>
 <p class="translation">"You shall not go with them. You shall not curse [4] the people, for they are blessed [5]." (Num 22:12)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r4">
     <td>4</td><td>תָאֹר</td>
@@ -129,12 +129,12 @@
   <tr class="answer-row" id="a5">
     <td colspan="8">✓ <strong>Yes — Pual</strong> | Participle | ms | ברך | <em>Passive</em> — "blessed" (substantival: "he is a blessed one"). Pual Ptc. ms without מְ prefix in attributive position: בָּ = Qamets for compensatory lengthening (ר rejects dagesh).</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">מַה־אֶקֹּ֕ב לֹ֥א <strong>קַבֹּ֖ה [6]</strong> אֵ֑ל וּמַה־אֶזְעֹ֕ם לֹ֥א <strong>זָעַ֖ם [7]</strong> יְהוָֽה׃</div>
 <p class="translation">"How shall I curse what God has not cursed [6], and how shall I denounce what the LORD has not denounced [7]?" (Num 23:8)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>קַבֹּה</td>
@@ -160,12 +160,12 @@
   <tr class="answer-row" id="a7">
     <td colspan="8">✗ <strong>No — Qal</strong> | Perfect | 3ms | זעם | <em>Qal</em> — "has been indignant / has denounced." Qal Perfect 3ms vowel pattern: Qamets-Patach; no u-class vowel under R1 with Dagesh Forte in R2.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">הִנֵּ֥ה <strong>בָרֵ֖ךְ [8]</strong> לָקָ֑חְתִּי וּבֵרַ֖ךְ וְלֹ֥א אֲשִׁיבֶֽנָּה׃</div>
 <p class="translation">"Behold, I have received a command to bless [8]; he has blessed, and I cannot revoke it." (Num 23:20)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>בָרֵךְ</td>
@@ -179,7 +179,7 @@
   <tr class="answer-row" id="a8">
     <td colspan="8">✗ <strong>No — Piel</strong> | Inf. Absolute | — | ברך | <em>Intensive</em> — Piel Inf. Abs. used with לָקַח in a cognate-like construction ("I have been commanded to bless"). Tsere under R2 confirms Piel active, not Pual passive.</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage B — Exodus 29:36–37</h2>
 <h3>Context: Instructions for the consecration of the altar and tabernacle furnishings.</h3>
@@ -189,7 +189,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">וּפַ֣ר חַטָּ֔את תַּעֲשֶׂ֥ה לַיּ֖וֹם עַל־הַכִּפֻּרִ֑ים וְחִטֵּאתָ֙ עַל־הַמִּזְבֵּ֔חַ בְּכַפֶּרְךָ֖ עָלָ֑יו <strong>וּמָשַׁחְתָּ֥ [9]</strong> אֹת֖וֹ לְקַדְּשֽׁוֹ׃</div>
 <p class="translation">"And a bull sin-offering you shall make each day for atonement, and you shall purify the altar when you make atonement for it, and you shall anoint [9] it to consecrate it." (Exo 29:36)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>וּמָשַׁחְתָּ</td>
@@ -203,12 +203,12 @@
   <tr class="answer-row" id="a9">
     <td colspan="8">✗ <strong>No — Qal</strong> | Weqatal | 2ms | משח | <em>Qal</em> — "and you shall anoint." Qal Weqatal; no u-class vowel under R1 with Dagesh Forte in R2.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">שִׁבְעַ֣ת יָמִ֔ים תְּכַפֵּ֥ר עַל־הַמִּזְבֵּ֖חַ <strong>וְקִדַּשְׁתָּ֣ [10]</strong> אֹת֑וֹ <strong>וְהָיָ֤ה [11]</strong> הַמִּזְבֵּ֙חַ֙ קֹ֣דֶשׁ קָֽדָשִׁ֔ים כָּל־הַנֹּגֵ֥עַ בַּמִּזְבֵּ֖חַ <strong>יִקְדָּשׁ [12]</strong>׃</div>
 <p class="translation">"Seven days you shall make atonement for the altar and consecrate [10] it, and the altar shall be [11] most holy. Whatever touches the altar shall be consecrated [12]." (Exo 29:37)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>וְקִדַּשְׁתָּ</td>
@@ -246,7 +246,7 @@
   <tr class="answer-row" id="a12">
     <td colspan="8">✗ <strong>No — Niphal</strong> | Imperfect | 3ms | קדש | <em>Niphal passive/reflexive</em> — "shall become holy / be consecrated." יִ prefix + Dagesh Forte in R1 (קּ) = Niphal contraction of נִ-. Compare: Pual would be יְקֻדַּשׁ (Shewa under prefix + Qibbuts under R1 + Dagesh in R2).</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Passage C — Exodus 14:4; Isaiah 43:23; Numbers 9:15</h2>
 <h3>Context: Pual of כבד ("be honored") and Hophal distractor הוּקַם.</h3>
@@ -254,7 +254,7 @@
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>וְכָבַדְתִּ֤י [13]</strong> בְּפַרְעֹה֙ וּבְכָל־חֵיל֔וֹ וְיָדְע֥וּ מִצְרַ֖יִם כִּי־אֲנִ֣י יְהוָ֑ה׃</div>
 <p class="translation">"And I will get glory [13] through Pharaoh and all his host, and the Egyptians shall know that I am the LORD." (Exo 14:4)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r13">
     <td>13</td><td>וְכָבַדְתִּי</td>
@@ -268,12 +268,12 @@
   <tr class="answer-row" id="a13">
     <td colspan="8">✗ <strong>No — Niphal</strong> | Weqatal | 1cs | כבד | <em>Niphal reflexive/passive</em> — "I will be glorified / get glory." The וְנִכְבַּד form has contracted prefix; Niphal of כבד. No Qibbuts under R1 — this is not Pual.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">לֹ֥א <strong>כֻבַּדְתַּ֖נִי [14]</strong> בְּקָרְבָּנֶ֑יךָ וְעָמַלְתַּ֥נִי בִּלְבוֹנָתֶֽךָ׃</div>
 <p class="translation">"You have not honored me [14] with your offerings, or wearied me with your frankincense." (Isa 43:23)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r14">
     <td>14</td><td>כֻּבַּדְתַּנִי</td>
@@ -287,14 +287,14 @@
   <tr class="answer-row" id="a14">
     <td colspan="8">✓ <strong>Yes — Pual</strong> | Perfect | 2ms+1cs obj. | כבד | <em>Passive</em> — "you have not honored me." Qibbuts under R1 (כֻ) + Dagesh Forte in R2 (בּ) = Pual diagnostic. The 1cs object suffix נִי is added to the Pual Perfect 2ms base.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="note-box"><strong>Distractor alert — Hophal:</strong> The next verb has a u-class vowel but is NOT Pual. Can you identify the difference?</div>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed"><strong>הוּקַ֥ם [15]</strong> הַמִּשְׁכָּ֖ן בְּי֣וֹם הַחֹ֑דֶשׁ הָרִאשֽׁוֹן׃</div>
 <p class="translation">"The tabernacle was set up [15] on the first day of the first month." (Exo 40:17)</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r15">
     <td>15</td><td>הוּקַם</td>
@@ -308,7 +308,7 @@
   <tr class="answer-row" id="a15">
     <td colspan="8">✗ <strong>No — Hophal</strong> | Perfect | 3ms | קום | <em>Hophal passive</em> — "was set up/raised." The הוּ prefix (Shureq under הּ) is the Hophal Perfect marker. No Dagesh Forte in R2 because this is a biconsonantal (hollow) root with no R2 to receive dagesh. Contrast Pual Perfect: קֻטַּל pattern.</td>
   </tr>
-</table>
+</table></div>
 
 <div class="reflection">
   <strong>Reflection Questions</strong>
@@ -321,7 +321,7 @@
 
 <div class="answer-key">
   <h2>Quick Answer Key</h2>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th></tr>
     <tr><td>1</td><td>תְּבָרֵךְ</td><td>No</td><td>Imperfect</td><td>2ms</td><td>ברך</td><td>Piel — Intensive</td></tr>
     <tr><td>2</td><td>מְבֹרָךְ</td><td>Yes</td><td>Participle</td><td>ms</td><td>ברך</td><td>Pual — Passive (compensatory Qamets)</td></tr>
@@ -338,7 +338,7 @@
     <tr><td>13</td><td>וְכָבַדְתִּי</td><td>No</td><td>Weqatal</td><td>1cs</td><td>כבד</td><td>Niphal — Reflexive/Passive</td></tr>
     <tr><td>14</td><td>כֻּבַּדְתַּנִי</td><td>Yes</td><td>Perfect</td><td>2ms</td><td>כבד</td><td>Pual — Passive</td></tr>
     <tr><td>15</td><td>הוּקַם</td><td>No</td><td>Perfect</td><td>3ms</td><td>קום</td><td>Hophal — Passive</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <script>

@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -42,14 +42,14 @@
 
 <div class="tip">
 <strong>Key diagnostic:</strong> Biconsonantal and Geminate forms are vocally identical in Niphal and Hiphil.
-<table class="diag-table" style="margin:.6em 0 0 0;">
+<div style="overflow-x:auto;max-width:100%;"><table class="diag-table" style="margin:.6em 0 0 0;">
   <tr><th>Feature</th><th>Biconsonantal (II-י/ו)</th><th>Geminate (R2=R3)</th></tr>
   <tr><td>Root</td><td>R1-ו/י-R3 (e.g. קוּם, שׁוּב)</td><td>R1-R2-R2 (e.g. סָבַב, שָׁלַל)</td></tr>
   <tr><td>Niphal perfect 3ms</td><td>נָקִים (נָ qamets)</td><td>נָסַב (נָ qamets) — identical</td></tr>
   <tr><td>Hiphil perfect 3ms</td><td>הֵקִים (הֵ tsere)</td><td>הֵסֵב (הֵ tsere) — identical</td></tr>
   <tr><td>Hiphil imperfect 3ms</td><td>יָקִים (יָ qamets)</td><td>יָסֵב (יָ qamets) — identical</td></tr>
   <tr><td><strong>Distinguisher</strong></td><td>Medial vowel letter ו/י in stem</td><td>Dagesh forte in R2 when doubled</td></tr>
-</table>
+</table></div>
 </div>
 
 <div class="controls">
@@ -61,7 +61,7 @@
 <!-- PART A -->
 <h2>Part A — Niphal: Biconsonantal vs. Geminate</h2>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Context</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Class</th><th>Root</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">נָכוֹן</span></td><td>Gen 41:32</td><td>"the thing is ___ by God"</td>
@@ -103,14 +103,14 @@
     <td><input class="parse-field" id="a8s"></td><td><input class="parse-field" id="a8c"></td><td><input class="parse-field" id="a8p"></td><td><input class="parse-field" id="a8k"></td><td><input class="parse-field" id="a8r"></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶</button></td></tr>
   <tr class="answer-row" id="r8"><td colspan="10"><strong>Niphal · Infinitive Construct · — · Geminate · תָּמַם</strong> — "to be completed / finished"; נָ prefix + holem = Niphal Geminate inf. construct; root תָּמַם has R2=R3=מ</td></tr>
-</table>
+</table></div>
 
 <div class="tip"><strong>Key diagnostic — Part A (Niphal):</strong> Both Biconsonantal and Geminate use נָ (qamets) in the perfect/participle. In the imperfect both use יִ with dagesh. The dagesh in Biconsonantal (יִכּוֹן) is the Niphal pattern; in Geminate (יִסֹּב) it represents doubled R2=R3. The only reliable distinguisher is root structure: Biconsonantal medial = ו/י; Geminate medial = same consonant as R3.</div>
 
 <!-- PART B -->
 <h2>Part B — Hiphil: Biconsonantal vs. Geminate</h2>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Context</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Class</th><th>Root</th><th></th></tr>
 
   <tr><td>9</td><td><span class="heb">הֵקִים</span></td><td>Gen 6:18</td><td>"I will ___ my covenant with you"</td>
@@ -152,7 +152,7 @@
     <td><input class="parse-field" id="b16s"></td><td><input class="parse-field" id="b16c"></td><td><input class="parse-field" id="b16p"></td><td><input class="parse-field" id="b16k"></td><td><input class="parse-field" id="b16r"></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶</button></td></tr>
   <tr class="answer-row" id="r16"><td colspan="10"><strong>Hiphil · Participle · ms · Geminate · סָבַב</strong> — "going around / surrounding"; מֵ prefix (tsere) = Hiphil participle; no medial vowel letter, tsere stem vowel = Geminate contracted form; compare Biconsonantal מֵקִים</td></tr>
-</table>
+</table></div>
 
 <div class="tip"><strong>Key diagnostic — Part B (Hiphil):</strong> Hiphil Biconsonantal and Geminate are vocally identical across all conjugations: הֵ perfect, יָ imperfect, הָ imperative, מֵ participle. The only distinguisher is root structure — whether the medial position contains a vowel letter (ו/י = Biconsonantal) or a repeated consonant (= Geminate). Context usually confirms the meaning once the root is identified.</div>
 
@@ -160,7 +160,7 @@
 <h2>Part C — Mixed: Stem and Class Both Unknown</h2>
 <p>Identify stem (Niphal or Hiphil) <em>and</em> class (Biconsonantal or Geminate) from the form and context alone.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Context</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Class</th><th>Root</th><th></th></tr>
 
   <tr><td>17</td><td><span class="heb">נָמֹוג</span></td><td>Isa 14:31</td><td>"all Philistia ___"</td>
@@ -202,7 +202,7 @@
     <td><input class="parse-field" id="c24s"></td><td><input class="parse-field" id="c24c"></td><td><input class="parse-field" id="c24p"></td><td><input class="parse-field" id="c24k"></td><td><input class="parse-field" id="c24r"></td>
     <td><button class="reveal-btn" onclick="toggle('r24')">▶</button></td></tr>
   <tr class="answer-row" id="r24"><td colspan="10"><strong>Qal · Imperfect · 3ms · Biconsonantal · שׁוּב</strong> — "returned / went around searching"; holem vowel in stem (יָשֹׁב) vs. shureq in יָשׁוּב; both are Qal Biconsonantal but with different vowel grades; neither is Niphal or Hiphil — no נ/הֵ/הָ prefix marker</td></tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

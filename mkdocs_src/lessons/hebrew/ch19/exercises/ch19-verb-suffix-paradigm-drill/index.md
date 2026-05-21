@@ -11,7 +11,7 @@
   h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -49,7 +49,7 @@
 </div>
 
 <h2>Part A — Qal Perfect 3ms + Object Suffix</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Suffix</th><th>Form</th><th></th></tr>
 
   <tr>
@@ -130,12 +130,12 @@
     <td></td>
   </tr>
 
-</table>
+</table></div>
 
 <hr class="sec">
 
 <h2>Part B — Qal Imperfect 3ms + Object Suffix</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Suffix</th><th>Form</th><th></th></tr>
 
   <tr>
@@ -177,7 +177,7 @@
     <td></td>
   </tr>
 
-</table>
+</table></div>
 
 <script>
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}

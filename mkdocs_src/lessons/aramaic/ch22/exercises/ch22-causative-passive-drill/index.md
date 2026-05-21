@@ -17,7 +17,7 @@
     background: #f0f0f0; border: 1px solid #999; border-radius: 3px;
   }
   button.ctrl:hover { background: #ddd; }
-  table { border-collapse: collapse; width: 100%; margin-top: 0.8em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin-top: 0.8em; font-size: 0.92em; }
   th { background: #3a3a5c; color: #fff; padding: 0.5em 0.6em; text-align: left; }
   td { padding: 0.45em 0.6em; border-bottom: 1px solid #ddd; vertical-align: middle; }
   tr:nth-child(even) td { background: #f8f8f8; }
@@ -61,7 +61,7 @@
 
 <div class="note">
   <strong>All Nine Stem Diagnostics:</strong>
-  <table class="diag-table">
+  <div style="overflow-x:auto;max-width:100%;"><table class="diag-table">
     <thead><tr><th>Prefix / Marker</th><th>R2 Dagesh?</th><th>Stem</th></tr></thead>
     <tbody>
       <tr><td>No prefix; standard root vowels</td><td>no</td><td><strong>Peal</strong></td></tr>
@@ -74,7 +74,7 @@
       <tr><td><span style="direction:rtl;unicode-bidi:embed;">שַׁ-/שֵׁ-</span> prefix</td><td>no</td><td><strong>Shaphel</strong></td></tr>
       <tr><td><span style="direction:rtl;unicode-bidi:embed;">הֻ-</span> (heh + qibbuts = u-vowel)</td><td>no</td><td><strong>Hophal</strong></td></tr>
     </tbody>
-  </table>
+  </table></div>
 </div>
 
 <div class="controls">
@@ -83,7 +83,7 @@
   <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table id="drill-table">
+<div style="overflow-x:auto;max-width:100%;"><table id="drill-table">
   <thead>
     <tr>
       <th style="width:2.2em">#</th>
@@ -439,7 +439,7 @@
     </tr>
 
   </tbody>
-</table>
+</table></div>
 
 <div class="reflection">
   <h3>Reflection Questions</h3>

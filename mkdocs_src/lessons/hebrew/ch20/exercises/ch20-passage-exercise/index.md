@@ -12,7 +12,7 @@ h2{font-size:1.1em;margin-top:2em;color:#2c5f2e;border-bottom:1px solid #2c5f2e;
 h3{font-size:1em;color:#444;margin-top:1.2em}
 p.passage{font-size:1.1em;line-height:1.8;margin:.5em 0}
 p.trans{color:#555;font-style:italic;font-size:.95em;margin:.2em 0 .8em}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -51,44 +51,44 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="ref">Gen 2:16–17</p>
 <p class="passage"><span class="h-inline">וַיְצַ֞ו יְהוָ֧ה אֱלֹהִ֛ים עַל-הָאָדָ֖ם <strong>לֵאמֹ֑ר</strong> מִכֹּ֛ל עֵ֥ץ הַגָּ֖ן אָכֹ֥ל תֹּאכֵֽל</span></p>
 <p class="trans">"And the LORD God commanded the man, <strong>saying</strong>: 'From every tree of the garden you may surely eat…'"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>1</td><td class="hebrew">לֵאמֹ֑ר</td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-cl"></td><td><input class="parse-field" id="1-p"></td><td><input class="parse-field" id="1-fn"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a1"><td colspan="7">אמר · I-aleph · לְ · Quotative — "saying"; tsere under ל (ל + hateph-seghol = tsere); introduces direct speech; ~2,600× OT</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 2 — Genesis 11:5 (Babel)</h2>
 <p class="ref">Gen 11:5</p>
 <p class="passage"><span class="h-inline">וַיֵּ֣רֶד יְהוָ֔ה <strong>לִרְאֹ֥ת</strong> אֶת-הָעִ֖יר וְאֶת-הַמִּגְדָּ֑ל</span></p>
 <p class="trans">"And the LORD came down <strong>to see</strong> the city and the tower…"</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>2</td><td class="hebrew">לִרְאֹ֥ת</td><td><input class="parse-field" id="2-r"></td><td><input class="parse-field" id="2-cl"></td><td><input class="parse-field" id="2-p"></td><td><input class="parse-field" id="2-fn"></td><td><button class="toggle-btn" onclick="tog('a2')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a2"><td colspan="7">ראה · III-ה · לְ · Purpose — "to see"; holem-taw spelling; לִ + IC marks purpose of God's descent to Babel</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 3 — Genesis 19:22 (Sodom)</h2>
 <p class="ref">Gen 19:22</p>
 <p class="passage"><span class="h-inline">כִּ֣י לֹ֤א אוּכַל֙ <strong>לַעֲשׂ֣וֹת</strong> דָּבָ֔ר עַ֥ד בֹּאֲךָ֖ שָֽׁמָּה</span></p>
 <p class="trans">"For I am not able <strong>to do</strong> anything until you arrive there."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>3</td><td class="hebrew">לַעֲשׂ֣וֹת</td><td><input class="parse-field" id="3-r"></td><td><input class="parse-field" id="3-cl"></td><td><input class="parse-field" id="3-p"></td><td><input class="parse-field" id="3-fn"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a3"><td colspan="7">עשה · III-ה + I-gutt. · לְ · Complementary — "to do"; completes יכל ("able to"); chateph-patach under ע; וֹת ending</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 4 — Genesis 37:18 (Joseph's Brothers)</h2>
 <p class="ref">Gen 37:18</p>
 <p class="passage"><span class="h-inline">וַיִּֽתְנַכְּל֣וּ אֹת֔וֹ <strong>לַהֲמִית֖וֹ</strong></span></p>
 <p class="trans">"…they conspired against him <strong>to kill him</strong>."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>4</td><td class="hebrew">לַהֲמִית֖וֹ</td><td><input class="parse-field" id="4-r"></td><td><input class="parse-field" id="4-cl"></td><td><input class="parse-field" id="4-p"></td><td><input class="parse-field" id="4-fn"></td><td><button class="toggle-btn" onclick="tog('a4')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a4"><td colspan="7">מות · Biconsonantal (Hiphil IC) · לְ · Purpose — "to kill him"; Hiphil IC + 3ms obj. suffix; purpose of brothers' conspiracy</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 5 — Genesis 39:18–19 (Potiphar's Wife)</h2>
@@ -97,13 +97,13 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="trans">"And <strong>as/when he heard</strong> my voice, he left his garment beside me…"</p>
 <p class="passage"><span class="h-inline">וַיְהִי֩ <strong>כִשְׁמֹ֨עַ</strong> אֲדֹנָ֜יו אֶת-דִּבְרֵ֣י אִשְׁתּ֗וֹ … וַיִּ֥חַר אַפּֽוֹ</span></p>
 <p class="trans">"And <strong>when</strong> his master heard the words of his wife … his anger burned."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>5</td><td class="hebrew">כְשָׁמְע֣וֹ</td><td><input class="parse-field" id="5-r"></td><td><input class="parse-field" id="5-cl"></td><td><input class="parse-field" id="5-p"></td><td><input class="parse-field" id="5-fn"></td><td><button class="toggle-btn" onclick="tog('a5')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a5"><td colspan="7">שמע · Strong B (gutt. R3) · כְּ · Temporal (as/when) — IC + 3ms subject suffix; "as he heard"; שָׁמְעוֹ = IC construct + subject suffix (shewa shifts to qamets under stress)</td></tr>
 <tr><td>6</td><td class="hebrew">כִשְׁמֹ֨עַ</td><td><input class="parse-field" id="6-r"></td><td><input class="parse-field" id="6-cl"></td><td><input class="parse-field" id="6-p"></td><td><input class="parse-field" id="6-fn"></td><td><button class="toggle-btn" onclick="tog('a6')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a6"><td colspan="7">שמע · Strong B (gutt. R3) · כְּ · Temporal (when) — bare IC (no suffix); patach at gutt. R3; standard temporal clause</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 6 — Exodus 3:8 (The Burning Bush)</h2>
@@ -111,31 +111,31 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <p class="passage"><span class="h-inline">וָאֵרֵ֞ד <strong>לְהַצִּיל֣וֹ</strong> מִיַּ֣ד מִצְרַ֗יִם וּ<strong>לְהַעֲלֹת֤וֹ</strong> מִן-הָאָ֙רֶץ֙ הַהִ֔וא</span></p>
 <p class="trans">"And I came down <strong>to deliver him</strong> from the hand of Egypt and <strong>to bring him up</strong> from that land…"</p>
 <div class="note-box"><strong>Note:</strong> Both forms are Hiphil IC (causative stem), not Qal — included to develop recognition of Hiphil IC patterns, which use a הַ– prefix.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>7</td><td class="hebrew">לְהַצִּיל֣וֹ</td><td><input class="parse-field" id="7-r"></td><td><input class="parse-field" id="7-cl"></td><td><input class="parse-field" id="7-p"></td><td><input class="parse-field" id="7-fn"></td><td><button class="toggle-btn" onclick="tog('a7')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a7"><td colspan="7">נצל · Hiphil IC (I-gutt.) · לְ · Purpose — "to deliver him"; הַ– prefix marks Hiphil; + 3ms obj. suffix; God's stated purpose</td></tr>
 <tr><td>8</td><td class="hebrew">לְהַעֲלֹת֤וֹ</td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-cl"></td><td><input class="parse-field" id="8-p"></td><td><input class="parse-field" id="8-fn"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a8"><td colspan="7">עלה · Hiphil IC (III-ה + I-gutt.) · לְ · Purpose — "to bring him up"; parallel purpose clause; + 3ms obj. suffix</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 7 — Exodus 19:1 (Arrival at Sinai)</h2>
 <p class="ref">Exo 19:1</p>
 <p class="passage"><span class="h-inline">בַּחֹ֙דֶשׁ֙ הַשְּׁלִישִׁ֔י <strong>לְצֵ֥את</strong> בְּנֵי-יִשְׂרָאֵ֖ל מֵאֶ֣רֶץ מִצְרָ֑יִם … בָּ֖אוּ מִדְבַּ֥ר סִינָֽי</span></p>
 <p class="trans">"In the third month <strong>after the going out</strong> of the children of Israel from the land of Egypt … they came into the wilderness of Sinai."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>9</td><td class="hebrew">לְצֵ֥את</td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-cl"></td><td><input class="parse-field" id="9-p"></td><td><input class="parse-field" id="9-fn"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a9"><td colspan="7">יצא · I-י + III-א · לְ · Epexegetical/Temporal — "the going out of"; I-י IC form (צֵאת = tsere + aleph + taw); follows temporal noun "month" — counts from the Exodus event</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 8 — Ecclesiastes 3:1–2 (A Time for Everything)</h2>
 <p class="ref">Ecc 3:1–2</p>
 <p class="passage"><span class="h-inline">עֵ֥ת <strong>לָלֶ֖דֶת</strong> וְעֵ֣ת <strong>לָמ֑וּת</strong> עֵ֤ת <strong>לִנְטֹ֙עַ֙</strong> וְעֵ֣ת <strong>לַעֲק֔וֹר</strong> נָטֽוּעַ</span></p>
 <p class="trans">"A time <strong>to be born</strong>, and a time <strong>to die</strong>; a time <strong>to plant</strong>, and a time <strong>to uproot</strong> what is planted."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>10</td><td class="hebrew">לָלֶ֖דֶת</td><td><input class="parse-field" id="10-r"></td><td><input class="parse-field" id="10-cl"></td><td><input class="parse-field" id="10-p"></td><td><input class="parse-field" id="10-fn"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a10"><td colspan="7">ילד · I-י · לְ · Epexegetical — "to bear/give birth"; seghol-dalet-taw IC; לָ prefix; follows עֵת = "a time to…"</td></tr>
@@ -145,20 +145,20 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="a12"><td colspan="7">נטע · Strong B (gutt. R3) · לְ · Epexegetical — "to plant"; gutt. patach at R3 (ע); hireq under ל</td></tr>
 <tr><td>13</td><td class="hebrew">לַעֲק֔וֹר</td><td><input class="parse-field" id="13-r"></td><td><input class="parse-field" id="13-cl"></td><td><input class="parse-field" id="13-p"></td><td><input class="parse-field" id="13-fn"></td><td><button class="toggle-btn" onclick="tog('a13')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a13"><td colspan="7">עקר · I-gutt. · לְ · Epexegetical — "to uproot"; chateph-patach under ע; all four IC forms in Ecc 3:2 share epexegetical function after עֵת</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Passage 9 — Genesis 45:4–5 (Joseph Reveals Himself)</h2>
 <p class="ref">Gen 45:4–5</p>
 <p class="passage"><span class="h-inline">… וְאַתָּ֖ה <strong>לְמָכְרֵ֥נִי</strong> הֵ֖נָּה׃ וְעַתָּ֣ה׀ אַל-תֵּֽעָצְב֗וּ … כִּ֣י <strong>לְמִחְיָ֔ה</strong> שְׁלָחַ֥נִי אֱלֹהִ֖ים לִפְנֵיכֶֽם</span></p>
 <p class="trans">"…and you [sold me] <strong>to sell me</strong> here; but now do not be distressed … because God sent me before you <strong>for preservation of life</strong>."</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 <tr><td>14</td><td class="hebrew">לְמָכְרֵ֥נִי</td><td><input class="parse-field" id="14-r"></td><td><input class="parse-field" id="14-cl"></td><td><input class="parse-field" id="14-p"></td><td><input class="parse-field" id="14-fn"></td><td><button class="toggle-btn" onclick="tog('a14')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a14"><td colspan="7">מכר · Strong A · לְ · Purpose — "to sell me"; IC + 1cs obj. suffix; states the brothers' purpose — God's purpose (next item) contrasts with it</td></tr>
 <tr><td>15</td><td class="hebrew">לְמִחְיָ֔ה</td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-cl"></td><td><input class="parse-field" id="15-p"></td><td><input class="parse-field" id="15-fn"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a15"><td colspan="7">חיה · III-ה · לְ · Purpose (abstract noun) — "for preservation of life"; IC used as verbal noun; Joseph's theological reframing — human evil / divine purpose</td></tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Reflection Questions</h2>

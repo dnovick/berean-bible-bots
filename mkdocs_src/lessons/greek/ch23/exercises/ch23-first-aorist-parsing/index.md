@@ -13,7 +13,7 @@
   .controls { margin: 1em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
   .controls button { padding: 0.4em 1em; font-size: 0.9em; cursor: pointer; border: 1px solid #888; border-radius: 4px; background: #f5f5f5; }
   .controls button:hover { background: #e0e0e0; }
-  table { border-collapse: collapse; width: 100%; font-size: 0.88em; }
+  table { border-collapse: collapse;  font-size: 0.88em; }
   th { background: #3a5a8a; color: #fff; padding: 0.5em 0.4em; text-align: left; }
   td { border: 1px solid #ccc; padding: 0.35em 0.4em; vertical-align: middle; }
   tr:nth-child(even) td { background: #f8f8f8; }
@@ -55,7 +55,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead>
   <tr>
     <th class="num-col">#</th>
@@ -72,7 +72,7 @@
 </thead>
 <tbody id="drillBody">
 </tbody>
-</table>
+</table></div>
 
 <script>
 const items = [

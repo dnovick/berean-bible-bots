@@ -11,7 +11,7 @@
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.5em; color: #555; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -45,7 +45,7 @@
 <p>For each form: (1) <strong>identify the weak class</strong> (Part B only), (2) <strong>parse</strong> (conjugation + PGN), (3) <strong>identify the root</strong>.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Class</th><th>Key diagnostic signal</th></tr>
     <tr><td><strong>III-he</strong></td><td>Qamets + ה (perfect 3ms); ה dropped in wayyiqtol (apocopation); seghol + ה (imperfect/participle 3fs)</td></tr>
     <tr><td><strong>I-guttural</strong></td><td>Hateph vowel (composite shewa) under R1 throughout; no simple shewa under guttural</td></tr>
@@ -53,7 +53,7 @@
     <tr><td><strong>I-nun</strong></td><td>Nun retained in Hithpael prefix <span class="heb">הִתְנַ / מִתְנַ / וַיִּתְנַ</span>; contrast Hiphil where nun assimilates</td></tr>
     <tr><td><strong>Geminate</strong></td><td>Contracted stem with long vowel (often holem-vav); dagesh forte may be absent due to geminate contraction</td></tr>
     <tr><td><strong>Strong</strong></td><td>Standard <span class="heb">הִתְ</span> prefix + Dagesh Forte in R2; no weak consonant modifications</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="controls">
@@ -66,7 +66,7 @@
 <h2>Part A — By Class</h2>
 
 <div class="section-label">Group 1 — III-he</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">וַיִּתְגַּל</span></td><td>Gen 9:21</td>
@@ -93,10 +93,10 @@
     <td><input class="parse-field" id="a5g"></td><td><input class="parse-field" id="a5p"></td><td><input class="parse-field" id="a5r"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶</button></td></tr>
   <tr class="answer-row" id="r5"><td colspan="7"><strong>Wayyiqtol · 3fs · כָּסָה</strong> — she covered herself; prefix <span class="heb">וַתִּתְ</span> (3fs wayyiqtol); seghol-he ending; ה retained in 3fs wayyiqtol (no apocopation in feminine)</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 2 — I-guttural</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>6</td><td><span class="heb">מִתְהַלֵּךְ</span></td><td>Gen 3:8</td>
@@ -123,10 +123,10 @@
     <td><input class="parse-field" id="a10g"></td><td><input class="parse-field" id="a10p"></td><td><input class="parse-field" id="a10r"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶</button></td></tr>
   <tr class="answer-row" id="r10"><td colspan="7"><strong>Participle · ms · חָזַק</strong> — one who is strengthening himself; composite shewa under ח (I-guttural); <span class="heb">מִתְ</span> prefix; tsere under R2 (ז)</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 3 — Sibilant Metathesis</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>11</td><td><span class="heb">וַיִּשְׁתַּחוּ</span></td><td>Gen 19:1</td>
@@ -153,10 +153,10 @@
     <td><input class="parse-field" id="a15g"></td><td><input class="parse-field" id="a15p"></td><td><input class="parse-field" id="a15r"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="7"><strong>Wayyiqtol · 3ms · שָׁמֵם</strong> — he was appalled / stunned; metathesis prefix <span class="heb">וַיִּשְׁתּ</span>; Geminate root <span class="heb">שׁ-מ-מ</span>; holem-vav from contracted geminate stem</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 4 — I-nun</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>16</td><td><span class="heb">מִתְנַחֵם</span></td><td>Gen 27:42</td>
@@ -183,13 +183,13 @@
     <td><input class="parse-field" id="a20g"></td><td><input class="parse-field" id="a20p"></td><td><input class="parse-field" id="a20r"></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶</button></td></tr>
   <tr class="answer-row" id="r20"><td colspan="7"><strong>Participle · mp · נָדַב</strong> — those who volunteer / offer willingly; prefix <span class="heb">מִתְנַ</span>; nun retained; dagesh in R2 (ד); <span class="heb">ִים</span> plural ending</td></tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Mixed</h2>
 <p>Identify the weak class first, then parse fully.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Weak class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>21</td><td><span class="heb">וַיִּשְׁתַּחוּ</span></td><td>Gen 24:26</td>
@@ -241,7 +241,7 @@
     <td><input class="parse-field" id="b30c"></td><td><input class="parse-field" id="b30g"></td><td><input class="parse-field" id="b30p"></td><td><input class="parse-field" id="b30r"></td>
     <td><button class="reveal-btn" onclick="toggle('rb30')">▶</button></td></tr>
   <tr class="answer-row" id="rb30"><td colspan="8"><strong>Geminate (reduplicated / Pilpel-like) · Wayyiqtol · 3ms · גָּלַל</strong> — he rolled; quadriliteral reduplication: root <span class="heb">ג-ל-ל</span> reduplicated as <span class="heb">גלגל</span>; standard <span class="heb">וַיִּתְ</span> prefix; no dagesh forte (root letters themselves supply the doubling)</td></tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

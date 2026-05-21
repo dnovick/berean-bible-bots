@@ -9,7 +9,7 @@
   body { font-family: Georgia, serif;    color: #222; }
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
   p.instructions { font-style: italic; color: #555; }
-  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin: 1.5em 0; font-size: 0.92em; }
   th { background: #2c5282; color: #fff; padding: 0.45em 0.6em; text-align: left; }
   td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -52,7 +52,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <thead>
     <tr>
       <th>#</th>
@@ -389,7 +389,7 @@
     </tr>
 
   </tbody>
-</table>
+</table></div>
 
 <div class="note">
   <strong>Reminder:</strong> A demonstrative functioning as an <strong>adjective</strong> always appears in <strong>predicate position</strong> — either before or after the article-noun group, never sandwiched between them. A demonstrative functioning as a <strong>pronoun</strong> stands alone without a noun it directly modifies.

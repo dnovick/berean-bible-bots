@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.05em; margin-top: 2em; color: #333; border-bottom: 1px solid #ccc; padding-bottom: .3em; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -37,14 +37,14 @@
 
 <p>For each Piel form below, (1) <strong>translate</strong> it and (2) <strong>classify its function</strong> as I, F, D, SA, or DN. Compare with the Qal gloss to see what the Piel adds. Click <strong>▶ Answer</strong> to check.</p>
 
-<table class="ref-table">
+<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
   <tr><th>Code</th><th>Function</th><th>Diagnostic</th></tr>
   <tr><td><strong>I</strong></td><td>Intensive</td><td>Piel does the Qal action more forcefully, thoroughly, or repeatedly</td></tr>
   <tr><td><strong>F</strong></td><td>Factitive</td><td>Piel causes an object to enter a state (stative Qal root)</td></tr>
   <tr><td><strong>D</strong></td><td>Declarative</td><td>Piel pronounces/treats something as being in a state</td></tr>
   <tr><td><strong>SA</strong></td><td>Simple Action</td><td>No productive Qal; Piel is the primary form</td></tr>
   <tr><td><strong>DN</strong></td><td>Denominative</td><td>Verb built on a noun; performs the noun's characteristic action</td></tr>
-</table>
+</table></div>
 
 <div class="tip">
   <strong>Weak root reminder:</strong>
@@ -61,7 +61,7 @@
 
 <h2>Part A — I-Guttural Roots</h2>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Root</th><th>Qal Gloss</th><th>Reference</th><th>Translation</th><th>Function</th><th></th>
   </tr>
@@ -136,11 +136,11 @@
     <td colspan="8"><strong>he afflicted / humbled · F — Factitive</strong> · This root ענה II (distinct from ענה I "answer") = stative "be bowed down/afflicted." Piel = cause to be in that state. ע guttural + III-ה contraction: note the ּה at the end.</td>
   </tr>
 
-</table>
+</table></div>
 
 <h2>Part B — III-ה Roots</h2>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Root</th><th>Qal Gloss</th><th>Reference</th><th>Translation</th><th>Function</th><th></th>
   </tr>
@@ -215,11 +215,11 @@
     <td colspan="8"><strong>he finished / completed · I (or F) — Intensive / Factitive</strong> · Qal = stative "be finished." Piel = bring to completion. Can be analyzed as Factitive (cause to be complete) or Intensive (finish thoroughly). Either analysis is acceptable.</td>
   </tr>
 
-</table>
+</table></div>
 
 <h2>Part C — I-י / Hollow Roots</h2>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Root</th><th>Qal Gloss</th><th>Reference</th><th>Translation</th><th>Function</th><th></th>
   </tr>
@@ -294,7 +294,7 @@
     <td colspan="8"><strong>he gave a title / assigned an honorific name · DN — Denominative</strong> · Derived from the noun כִּנּוּי ("title, surname, honorific"). The Piel performs the noun's characteristic action: to give or assign a name/title. God says to Cyrus: "I gave you a title though you did not know me."</td>
   </tr>
 
-</table>
+</table></div>
 
 <script>
 function toggle(id) {

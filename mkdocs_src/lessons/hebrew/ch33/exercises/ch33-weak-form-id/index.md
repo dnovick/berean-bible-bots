@@ -11,7 +11,7 @@
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.5em; color: #555; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -45,13 +45,13 @@
 <p>For each form: (1) <strong>identify the weak class</strong>, (2) <strong>parse</strong> (conjugation + PGN), (3) <strong>identify the root</strong>.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Class</th><th>Key diagnostic signal in Pual</th></tr>
     <tr><td><strong>III-he</strong></td><td>Pual qibbuts + dagesh in R2 preserved; III-he endings: qamets + ה (perfect 3ms); shureq (וּ) in 3mp; ה drops in apocopated forms</td></tr>
     <tr><td><strong>I-nun</strong></td><td>Nun (R1) assimilates into dagesh forte in R2 in the Pual — contrast Piel where nun stays; the dagesh in R2 serves double duty: Pual stem marker + assimilated nun</td></tr>
     <tr><td><strong>I-guttural</strong></td><td>Guttural R1 (א/ה/ח/ע) may reject simple shewa; holem (אֹ) or qamets (ָ) can appear through compensatory lengthening; dagesh forte in R2 retained when possible</td></tr>
     <tr><td><strong>Geminate</strong></td><td>R2=R3; Pual dagesh forte in R2 doubles the already-doubled consonant; pattern mirrors Piel Geminate; composite shewa before vocalic endings</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="tip"><strong>Key distinction:</strong> In I-nun roots, the Piel retains the nun (יְנַחֵם — nun visible) but the Pual assimilates the nun into the dagesh in R2 (נֻכָּה — nun gone, dagesh in כ has double duty). The Pual follows the same assimilation rule as Qal/Hiphil.</div>
@@ -66,7 +66,7 @@
 <h2>Part A — By Class</h2>
 
 <div class="section-label">Group 1 — III-he</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">יְכֻלּוּ</span></td><td>Gen 2:1</td>
@@ -93,10 +93,10 @@
     <td><input class="parse-field" id="a5g"></td><td><input class="parse-field" id="a5p"></td><td><input class="parse-field" id="a5r"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶</button></td></tr>
   <tr class="answer-row" id="r5"><td colspan="7"><strong>Perfect · 3fs · כָּלָה</strong> — it was devastated/finished; qibbuts under כ + dagesh forte in ל; III-he Pual perfect 3fs: qamets + ה ending (same as 3ms for III-he roots — context/gender of subject determines)</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 2 — I-nun</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>6</td><td><span class="heb">נֻכָּה</span></td><td>Exo 9:31</td>
@@ -118,10 +118,10 @@
     <td><input class="parse-field" id="a9g"></td><td><input class="parse-field" id="a9p"></td><td><input class="parse-field" id="a9r"></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶</button></td></tr>
   <tr class="answer-row" id="r9"><td colspan="7"><strong>Imperfect · 3ms · נָכָה</strong> — let him be struck down; nun assimilated → dagesh forte in כ; qibbuts under יּ prefix; III-he Pual imperfect; David's command to expose Uriah in battle</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 3 — I-guttural</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>10</td><td><span class="heb">עֻבַּד</span></td><td>Dan 3:12</td>
@@ -138,10 +138,10 @@
     <td><input class="parse-field" id="a12g"></td><td><input class="parse-field" id="a12p"></td><td><input class="parse-field" id="a12r"></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶</button></td></tr>
   <tr class="answer-row" id="r12"><td colspan="7"><strong>Hophal · Perfect · 3ms · מוּת</strong> — he must be put to death; qibbuts under הֻ (Hophal prefix); I-nun/biconsonantal: מ of מוּת is not standard R1 in Hophal; Hophal (not Pual): הֻ prefix identifies it as Hophal passive; compare Pual which has qibbuts under root R1 directly</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 4 — Geminate</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>13</td><td><span class="heb">מְהֻלָּל</span></td><td>Ps 18:4</td>
@@ -158,13 +158,13 @@
     <td><input class="parse-field" id="a15g"></td><td><input class="parse-field" id="a15p"></td><td><input class="parse-field" id="a15r"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="7"><strong>Imperfect · 3ms · אָשַׁר</strong> — he will be called blessed/happy; qibbuts under א (I-aleph accepts qibbuts); dagesh forte in שׁ (R2); patach final — Pual imperfect; "Happy is he who considers the poor"</td></tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Mixed</h2>
 <p>Identify the weak class first, then parse fully.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Weak class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>16</td><td><span class="heb">נֻכָּה</span></td><td>Exo 9:31</td>
@@ -216,7 +216,7 @@
     <td><input class="parse-field" id="b25c"></td><td><input class="parse-field" id="b25g"></td><td><input class="parse-field" id="b25p"></td><td><input class="parse-field" id="b25r"></td>
     <td><button class="reveal-btn" onclick="toggle('rb25')">▶</button></td></tr>
   <tr class="answer-row" id="rb25"><td colspan="8"><strong>III-he · Perfect · 3ms · כָּסָה</strong> — it was covered; qibbuts under כ + dagesh forte in ס; III-he qamets + ה ending</td></tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

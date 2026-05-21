@@ -13,7 +13,7 @@
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .hint { background: #fff8e8; border-left: 3px solid #d4a017; padding: .35rem .75rem; margin: .4rem 0 .6rem; font-size: .86rem; color: #5a3e00; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .89rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .89rem; }
   th { background: #e0e8f0; padding: .36rem .45rem; border: 1px solid #bbb; text-align: left; font-size: .82rem; }
   td { padding: .26rem .38rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -59,7 +59,7 @@
 <!-- GROUP 1 -->
 <h3>Group 1: III-ה (Lamed-He)</h3>
 <div class="hint">Diagnostic: long form ends in -ֶה (seghol + he); short Jussive drops the ה.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">1</td><td class="heb">יִבְנֶה</td>
@@ -91,12 +91,12 @@
     <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">יִבֶּן</td><td>III-ה</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">בָּנָה</td><td>Short Jussive — ה dropped, vowel shortens to seghol</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 2 -->
 <h3>Group 2: III-א (Lamed-Aleph)</h3>
 <div class="hint">Diagnostic: form ends in silent א; preceding vowel is often qamets.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">6</td><td class="heb">יִמְצָא</td>
@@ -128,12 +128,12 @@
     <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">נִקְרָא</td><td>III-א</td><td>1</td><td>p</td><td>c</td><td class="ans-heb">קָרָא</td><td>1cp nun prefix; qamets-aleph ending</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 3 -->
 <h3>Group 3: III-ח/ע (Lamed-Guttural)</h3>
 <div class="hint">Diagnostic: long 3ms/3fs ends in patach furtive before ח or ע; short/wayyiqtol: closed syllable, no furtive.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">11</td><td class="heb">יִשְׁלַחַ</td>
@@ -165,12 +165,12 @@
     <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">אֶשְׁמַע</td><td>III-ע</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">שָׁמַע</td><td>1cs; B-class patach; guttural at R3 closes syllable</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 4 -->
 <h3>Group 4: I-Guttural (Pe-Guttural)</h3>
 <div class="hint">Diagnostic: patach under prefix consonant (not hireq); chateph-patach under R1 guttural.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">16</td><td class="heb">יַעֲמֹד</td>
@@ -202,12 +202,12 @@
     <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">נַעֲמֹד</td><td>I-gutt.</td><td>1</td><td>p</td><td>c</td><td class="ans-heb">עָמַד</td><td>1cp nun prefix + patach/chateph pattern</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 5 -->
 <h3>Group 5: I-נ (Pe-Nun)</h3>
 <div class="hint">Diagnostic: unexpected dagesh forte in R2 (nun assimilated); tsere or holem in root.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">21</td><td class="heb">יִתֵּן</td>
@@ -239,12 +239,12 @@
     <td><button class="rbtn" onclick="tog(25)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-25"><td class="ans-lbl">✓</td><td class="ans-heb">תִּתְּנוּ</td><td>I-נ</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">נָתַן</td><td>Dagesh in ת; reduced vowel before plural suffix</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 6 -->
 <h3>Group 6: I-י (Pe-Yod)</h3>
 <div class="hint">Diagnostic: tsere under the prefix consonant instead of hireq; R1 yod absent from the form.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">26</td><td class="heb">יֵדַע</td>
@@ -276,12 +276,12 @@
     <td><button class="rbtn" onclick="tog(30)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-30"><td class="ans-lbl">✓</td><td class="ans-heb">אֵלֵד</td><td>I-י</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">יָלַד</td><td>1cs; aleph prefix takes tsere (not seghol)</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 7 -->
 <h3>Group 7: Biconsonantal (II-י/ו)</h3>
 <div class="hint">Diagnostic: qamets under prefix consonant; no R2 consonant visible; ו or י as middle element.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">31</td><td class="heb">יָקוּם</td>
@@ -313,12 +313,12 @@
     <td><button class="rbtn" onclick="tog(35)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-35"><td class="ans-lbl">✓</td><td class="ans-heb">וַיָּקׇם</td><td>Biconsonantal</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">קוּם</td><td>Wayyiqtol; short form — qamets hatuf in root syllable</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 8 -->
 <h3>Group 8: Geminate (Ayin-Doubled)</h3>
 <div class="hint">Diagnostic: dagesh forte in R2 (= R3); or short contracted form with qamets prefix. Root knowledge needed to distinguish from Biconsonantal.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">36</td><td class="heb">יָסֹב</td>
@@ -350,14 +350,14 @@
     <td><button class="rbtn" onclick="tog(40)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-40"><td class="ans-lbl">✓</td><td class="ans-heb">יִסֹּבּוּ</td><td>Geminate</td><td>3</td><td>p</td><td>m</td><td class="ans-heb">סָבַב</td><td>3mp; dagesh forte in ב; -וּ suffix</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART B -->
 <h2>Part B — Mixed Forms</h2>
 <div class="hint">Identify the weak class first, then parse the form completely.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">41</td><td class="heb">וַיָּקׇם</td>
@@ -419,7 +419,7 @@
     <td><button class="rbtn" onclick="tog(50)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-50"><td class="ans-lbl">✓</td><td class="ans-heb">יֵצֵא</td><td>I-י</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">יָצָא</td><td>Tsere prefix; I-י (+ III-א at R3)</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 

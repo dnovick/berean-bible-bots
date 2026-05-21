@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
   .subtitle { color: #555; font-style: italic; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
+  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .88em; }
   th { background: #4e342e; color: #fff; padding: .4em .5em; text-align: left; }
   td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #fbe9e7; }
@@ -41,7 +41,7 @@
 </div>
 
 <h2>Part A — Present Active (1–5)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="1"><td><b>1</b></td><td class="greek">ἐγὼ <u>δίδωμι</u> αὐτοῖς ζωὴν αἰώνιον.</td>
@@ -74,10 +74,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-5"><td></td><td colspan="7">Pres · Pass · 3rd · Sg · δίδωμι · "Everything that is given to me by my Father."</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part B — Imperfect Active (6–8)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="6"><td><b>6</b></td><td class="greek">καὶ <u>ἐδίδου</u> αὐτοῖς ἐξουσίαν πνευμάτων ἀκαθάρτων.</td>
@@ -98,10 +98,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-8"><td></td><td colspan="7">Impf · Pass · 3rd · Sg · παραδίδωμι · "On the night in which he was being betrayed, he took bread." (1 Cor 11:23)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part C — Aorist Active (9–13)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="9"><td><b>9</b></td><td class="greek">οὕτως γὰρ ἠγάπησεν ὁ θεὸς τὸν κόσμον, ὥστε τὸν υἱὸν τὸν μονογενῆ <u>ἔδωκεν</u>.</td>
@@ -134,10 +134,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-13"><td></td><td colspan="7">Aor · Pass · 3rd · Sg · δίδωμι · "Authority to judge was given to him."</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part D — Aorist Passive (14–17)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="14"><td><b>14</b></td><td class="greek"><u>ἐδόθησαν</u> αὐτῇ δύο πτέρυγες τοῦ ἀετοῦ τοῦ μεγάλου.</td>
@@ -164,10 +164,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(17)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-17"><td></td><td colspan="7">Aor · Pass · 3rd · Sg · παραδίδωμι · "Who was handed over on account of our transgressions." (Rom 4:25)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part E — Middle/Passive and Miscellaneous (18–20)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="18"><td><b>18</b></td><td class="greek">τί σοι <u>παραδίδοται</u>; τίνα ἐξουσίαν ἔχεις;</td>
@@ -188,7 +188,7 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-20"><td></td><td colspan="7">Aor · Act · 1st · Sg · παραδίδωμι · "For I received from the Lord what I also handed over to you." (1 Cor 11:23)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <script>
 function toggleAnswer(id) {

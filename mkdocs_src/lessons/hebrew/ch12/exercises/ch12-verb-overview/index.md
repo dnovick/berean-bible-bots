@@ -12,7 +12,7 @@
   .subtitle { color: #666; font-style: italic; margin-top: -.3rem; margin-bottom: 1rem; font-size: .95rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .8rem 1.1rem; margin: 1.1rem 0 1.5rem; font-size: .93rem; }
   .instructions p { margin: .3rem 0; }
-  table { border-collapse: collapse; width: 100%; margin: .5rem 0 .8rem; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .5rem 0 .8rem; font-size: .91rem; }
   th { background: #e0e8f0; padding: .42rem .6rem; border: 1px solid #bbb; text-align: left; font-size: .85rem; }
   td { padding: .32rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -63,7 +63,7 @@
 </div>
 <!-- ═══════════════════════════════════════════════ PART A ═════ -->
 <h2>Part A — Stem Identification (12 items)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr>
 <th>#</th>
 <th>Verb</th>
@@ -301,11 +301,11 @@
 <td class="ans-heb">הלך</td>
 <td>Hithpael marker: הִתְ prefix; הִתְהַלֵּךְ occurs frequently in Genesis (e.g., Gen 5:24)</td>
 </tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- ═══════════════════════════════════════════════ PART B ═════ -->
 <h2>Part B — Meaning to Stem (8 items)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr>
 <th>#</th>
 <th>Description</th>
@@ -433,7 +433,7 @@
 <td>The Qal is the base, simple active stem — the unmodified root meaning with no intensification, causation, or reflexivity.</td>
 <td></td>
 </tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- ═══════════════════════════════════════ REFLECTION ═════ -->
 <div class="reflection">

@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.6em; color: #333; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -43,12 +43,12 @@
 
 <p>Each group of three shares the same root. For each form: (1) identify the <strong>stem</strong>, (2) describe the <strong>semantic function</strong>, (3) provide an English <strong>translation</strong>. Type your answers in the fields, then click <strong>▶ Answer</strong> to check.</p>
 
-<table class="ref-table">
+<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
   <tr><th>Stem</th><th>Prefix</th><th>R2 Feature</th><th>Function</th></tr>
   <tr><td><strong>Qal</strong></td><td>none</td><td>none</td><td>Basic action / stative</td></tr>
   <tr><td><strong>Piel</strong></td><td>none</td><td>Dagesh Forte</td><td>Factitive / intensive</td></tr>
   <tr><td><strong>Hithpael</strong></td><td><span class="heb">הִתְ–</span></td><td>Dagesh Forte</td><td>Reflexive / reciprocal</td></tr>
-</table>
+</table></div>
 
 <div class="tip">
   <strong>Tip:</strong> Hithpael = <span class="heb">הִתְ</span> prefix + Dagesh in R2 + Patakh under R1 (perfect).
@@ -62,7 +62,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Stem</th><th>Function</th><th>Translation</th><th></th>
   </tr>
@@ -272,7 +272,7 @@
     <td colspan="6"><strong>Hithpael Perfect 3ms</strong> · <em>Reflexive:</em> subject receives or enacts blessing for/upon itself · "he blessed himself / was blessed" · This form appears in the Abrahamic promise formula (Gen 22:18); it can carry a passive nuance</td>
   </tr>
 
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

@@ -9,7 +9,7 @@
   body { font-family: Georgia, serif;    color: #222; }
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
   p.instructions { font-style: italic; color: #555; }
-  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.9em; }
+  table { border-collapse: collapse;  margin: 1.5em 0; font-size: 0.9em; }
   th { background: #553c9a; color: #fff; padding: 0.45em 0.6em; text-align: left; }
   td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -55,7 +55,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <thead>
     <tr>
       <th>#</th>
@@ -392,7 +392,7 @@
     </tr>
 
   </tbody>
-</table>
+</table></div>
 
 <div class="note">
   <strong>Deponent rule:</strong> If the lexical form ends in <strong>-ομαι</strong>, the verb is deponent — parse as Middle/Passive but translate with an active English meaning. Never translate a deponent passively unless context demands it.<br><br>

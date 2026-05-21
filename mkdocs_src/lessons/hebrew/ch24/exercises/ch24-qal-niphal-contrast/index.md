@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
   td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -49,7 +49,7 @@
 <h2>Part A — Transitive Roots (Qal acts on an object)</h2>
 <p>These roots take a direct object in the Qal. The Niphal turns the object into the subject — the classic passive pattern.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Niphal Form</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
   <tr>
     <td>1</td><td><span class="heb">מָכַר</span></td><td>to sell</td>
@@ -131,13 +131,13 @@
   <tr class="answer-row" id="r8">
     <td colspan="8"><strong>take heed for yourselves!</strong> — <em>Reflexive</em> — Guard yourself; the subject directs the keeping action back on itself; Qal "to guard something" → Niphal "to guard oneself / take heed"</td>
   </tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Stative / Intransitive Roots</h2>
 <p>These roots describe states. Their Niphal expresses the subject coming into or remaining in a state, or placing itself in a position.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Root</th><th>Qal Meaning</th><th>Niphal Form</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
   <tr>
     <td>9</td><td><span class="heb">נָצַב</span></td><td>to be stationed, stand</td>
@@ -169,13 +169,13 @@
   <tr class="answer-row" id="r11">
     <td colspan="8"><strong>not one of them remained</strong> — <em>Middle</em> — The soldiers were in the state of having been left; stative/middle nuance</td>
   </tr>
-</table>
+</table></div>
 
 <!-- PART C -->
 <h2>Part C — Roots with No Standard Qal</h2>
 <p>These roots occur almost exclusively in the Niphal. The Niphal form <em>is</em> the standard lexical entry.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Root</th><th>Qal Situation</th><th>Niphal Form</th><th>Ref</th><th>Translation</th><th>Function</th><th></th></tr>
   <tr>
     <td>12</td><td><span class="heb">לָחַם</span></td><td>no standard Qal</td>
@@ -207,7 +207,7 @@
   <tr class="answer-row" id="r14">
     <td colspan="8"><strong>swear to me!</strong> — <em>Reflexive</em> — The subject binds himself by oath; שָׁבַע Niphal = to bind oneself by oath; reflexive force is clear</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

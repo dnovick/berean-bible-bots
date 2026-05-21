@@ -9,7 +9,7 @@
 body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -47,7 +47,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 </div>
 
 <h2>Part A — Perfect + Suffix</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Base Conj.</th><th>Base PGN</th><th>Root</th><th>Suffix PGN</th><th>Full Gloss</th><th></th></tr>
 
 <tr><td>1</td><td class="hebrew">שְׁמָרַ֥נִי</td><td><input class="parse-field" id="1-c"></td><td><input class="parse-field" id="1-p"></td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-s"></td><td><input class="parse-field" id="1-g"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -73,12 +73,12 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>8</td><td class="hebrew">עֲזָבַ֥נִי</td><td><input class="parse-field" id="8-c"></td><td><input class="parse-field" id="8-p"></td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-s"></td><td><input class="parse-field" id="8-g"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a8"><td colspan="8">Qal Perfect · 3ms · עזב · 1cs · "he forsook me" — Psa 22:2; "My God, my God, why have you forsaken me?" — also Isa 49:14</td></tr>
-</table>
+</table></div>
 
 <h2>Part B — Imperfect + Suffix (Energic Nun)</h2>
 <div class="note-box"><strong>Energic nun:</strong> The imperfect uses a doubled nun (נּ with dagesh) before 3ms suffix: יִשְׁמְרֶ֥<strong>נּ</strong>וּ = he will keep <em>him</em>. Without dagesh: יִשְׁמְרֵ֥<strong>נ</strong>וּ = he will keep <em>us</em>.</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Base Conj.</th><th>Base PGN</th><th>Root</th><th>Suffix PGN</th><th>Energic Nun?</th><th>Full Gloss</th><th></th></tr>
 
 <tr><td>9</td><td class="hebrew">יִשְׁמְרֵ֥נִי</td><td><input class="parse-field" id="9-c"></td><td><input class="parse-field" id="9-p"></td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-s"></td><td><input class="parse-field" id="9-e"></td><td><input class="parse-field" id="9-g"></td><td><button class="toggle-btn" onclick="tog('b9')">▶ Answer</button></td></tr>
@@ -101,10 +101,10 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>15</td><td class="hebrew">יִרְאֶ֥נּוּ</td><td><input class="parse-field" id="15-c"></td><td><input class="parse-field" id="15-p"></td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-s"></td><td><input class="parse-field" id="15-e"></td><td><input class="parse-field" id="15-g"></td><td><button class="toggle-btn" onclick="tog('b15')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="b15"><td colspan="9">Qal Imperfect · 3ms · ראה · 3ms · Yes · "he will see him" — III-ה; ה drops; energic nun (נּ) + 3ms suffix</td></tr>
-</table>
+</table></div>
 
 <h2>Part C — Imperative and Wayyiqtol + Suffix</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Base Conj.</th><th>Base PGN</th><th>Root</th><th>Suffix PGN</th><th>Full Gloss</th><th></th></tr>
 
 <tr><td>16</td><td class="hebrew">שָׁמְרֵ֥נִי</td><td><input class="parse-field" id="16-c"></td><td><input class="parse-field" id="16-p"></td><td><input class="parse-field" id="16-r"></td><td><input class="parse-field" id="16-s"></td><td><input class="parse-field" id="16-g"></td><td><button class="toggle-btn" onclick="tog('c16')">▶ Answer</button></td></tr>
@@ -121,12 +121,12 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>20</td><td class="hebrew">שַׁלְּחֵ֥נִי</td><td><input class="parse-field" id="20-c"></td><td><input class="parse-field" id="20-p"></td><td><input class="parse-field" id="20-r"></td><td><input class="parse-field" id="20-s"></td><td><input class="parse-field" id="20-g"></td><td><button class="toggle-btn" onclick="tog('c20')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="c20"><td colspan="8">Piel Imperative · 2ms · שלח · 1cs · "Send me!" — Isa 6:8 Isaiah's response; Piel intensive + 1cs suffix</td></tr>
-</table>
+</table></div>
 
 <h2>Part D — Infinitive Construct + Suffix</h2>
 <div class="note-box"><strong>Critical rule:</strong> Suffix on the Infinitive Construct = <strong>subject</strong> of the action, NOT direct object. כְּ/שָׁמְר/וֹ = "when <em>he</em> kept" (he is the subject/actor). This is the opposite of the verb suffix rule.</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Base Conj.</th><th>Root</th><th>Suffix PGN</th><th>Suffix Role</th><th>Full Gloss</th><th></th></tr>
 
 <tr><td>21</td><td class="hebrew">בְּ/שָׁמְר/וֹ</td><td><input class="parse-field" id="21-c"></td><td><input class="parse-field" id="21-r"></td><td><input class="parse-field" id="21-s"></td><td><input class="parse-field" id="21-role"></td><td><input class="parse-field" id="21-g"></td><td><button class="toggle-btn" onclick="tog('d21')">▶ Answer</button></td></tr>
@@ -143,7 +143,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>25</td><td class="hebrew">כְּ/צֵאת/וֹ</td><td><input class="parse-field" id="25-c"></td><td><input class="parse-field" id="25-r"></td><td><input class="parse-field" id="25-s"></td><td><input class="parse-field" id="25-role"></td><td><input class="parse-field" id="25-g"></td><td><button class="toggle-btn" onclick="tog('d25')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="d25"><td colspan="8">Qal Inf.Const. · יצא · 3ms · Subject · "when he went out" — I-י Inf.Const. (צֵאת) + כְּ + 3ms; "as he went out"</td></tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

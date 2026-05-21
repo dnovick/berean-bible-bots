@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
   td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -51,7 +51,7 @@
 <h2>Section A — <span class="heb">גלה</span> (III-ה) Niphal</h2>
 <p>Root: <span class="heb">גלה</span> — Qal meaning: to uncover, reveal, go into exile</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>Form</th><th>Your Answer</th><th></th></tr>
 
   <tr>
@@ -171,13 +171,13 @@
     <td colspan="3"><span class="heb">נִגְלֵית</span> — Feminine <span class="heb">ית</span> ending.</td>
   </tr>
 
-</table>
+</table></div>
 
 <!-- SECTION B -->
 <h2>Section B — <span class="heb">נפל</span> (I-נ) Niphal</h2>
 <p>Root: <span class="heb">נפל</span> — Qal meaning: to fall</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>Form</th><th>Your Answer</th><th></th></tr>
 
   <tr>
@@ -252,7 +252,7 @@
     <td colspan="3"><span class="heb">נֹפֵל</span> — Unusual: I-נ Niphal participle takes <span class="heb">נֹ</span> (holem) under the first root letter (the root nun is written out, not assimilated). "one who falls / falling."</td>
   </tr>
 
-</table>
+</table></div>
 
 <script>
 function toggle(id) {

@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -49,7 +49,7 @@
 <h2>Part A — Roots with Contrasting Niphal and Hiphil Meanings</h2>
 <p>The same root produces distinct meanings depending on the stem. Niphal: passive or reflexive. Hiphil: causative.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Context</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root / Class</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">נִשְׁמַע</span></td><td>Est 1:20</td><td>"the decree ___ throughout all the kingdom"</td>
@@ -91,7 +91,7 @@
     <td><input class="parse-field" id="a8s"></td><td><input class="parse-field" id="a8c"></td><td><input class="parse-field" id="a8p"></td><td><input class="parse-field" id="a8r"></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶</button></td></tr>
   <tr class="answer-row" id="r8"><td colspan="9"><strong>Hiphil · Perfect · 3ms · נָגַשׁ · I-נ</strong> — "brought near"; הִ prefix + dagesh in ג (R2) = Hiphil I-נ perfect; contrast with Niphal וַיִּגַּשׁ (no הִ)</td></tr>
-</table>
+</table></div>
 
 <div class="tip"><strong>Key diagnostic — Parts A:</strong> Niphal perfect = נִ prefix (or נֶ with gutturals). Hiphil perfect = הִ prefix (or הֶ with I-gutturals, הוֹ with I-י, הֵ with Biconsonantal/Geminate). Both stems may show dagesh forte in a following consonant, but only Niphal uses it for assimilation from נ; Hiphil uses it for I-נ root assimilation.</div>
 
@@ -99,7 +99,7 @@
 <h2>Part B — Shared Roots, Weak-Class Focus</h2>
 <p>These forms involve weak roots that appear in both Niphal and Hiphil. Focus on the prefix vowels that distinguish the stems.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Context</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root / Class</th><th></th></tr>
 
   <tr><td>9</td><td><span class="heb">נוֹלַד</span></td><td>Gen 21:3</td><td>"a son ___ to Abraham"</td>
@@ -136,7 +136,7 @@
     <td><input class="parse-field" id="b15s"></td><td><input class="parse-field" id="b15c"></td><td><input class="parse-field" id="b15p"></td><td><input class="parse-field" id="b15r"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="9"><strong>Niphal · Perfect · 3ms · כּוּן · Biconsonantal</strong> — "is established / firm"; נָ prefix (qamets) = Niphal Biconsonantal perfect; context confirms meaning (the doubling of Pharaoh's dream = it is settled)</td></tr>
-</table>
+</table></div>
 
 <div class="tip"><strong>Key diagnostic — Part B (I-י):</strong> Niphal perfect/participle = נוֹ prefix. Hiphil perfect = הוֹ prefix. Niphal imperfect/wayyiqtol = יִוָּ / וַיִּוָּ cluster (dagesh in ו). Hiphil imperfect/wayyiqtol = יוֹ / וַיּוֹ (holem-vav, no dagesh in ו). <strong>Biconsonantal:</strong> Niphal perfect = נָ (qamets). Hiphil perfect = הֵ (tsere).</div>
 
@@ -144,7 +144,7 @@
 <h2>Part C — Mixed Review</h2>
 <p>Forms from any class; identify the stem first, then parse fully.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Context</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root / Class</th><th></th></tr>
 
   <tr><td>16</td><td><span class="heb">וַיַּעַל</span></td><td>Gen 22:2</td><td>"and he ___ him as a burnt offering"</td>
@@ -171,7 +171,7 @@
     <td><input class="parse-field" id="c20s"></td><td><input class="parse-field" id="c20c"></td><td><input class="parse-field" id="c20p"></td><td><input class="parse-field" id="c20r"></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶</button></td></tr>
   <tr class="answer-row" id="r20"><td colspan="9"><strong>Niphal · Imperative · 2ms · רָאָה · III-ה</strong> — "show yourself!"; הֵ prefix (ר causes compensatory lengthening from הִ) + final ֵה retained (imperative does not apocopate) = Niphal III-ה imperative</td></tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

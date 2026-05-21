@@ -12,7 +12,7 @@ h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid
 .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
 .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
 .note { background: #fff8e8; border-left: 4px solid #e0a020; padding: .6rem 1rem; margin: .8rem 0; font-size: .9rem; color: #6b4c10; }
-table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
 th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
 td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
 td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -47,7 +47,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 </div>
 
 <h2>Part A — Perfect (9 forms)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-a1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -69,12 +69,12 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">9</td><td class="pgn">1cp</td><td><input class="parse-field" id="f-a9" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a9')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a9"><td class="ans-lbl">✓</td><td class="pgn">1cp</td><td class="heb-ans">הוּמַתְנוּ</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <h2>Part B — Imperfect (10 forms)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-b1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
@@ -98,12 +98,12 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">10</td><td class="pgn">1cp</td><td><input class="parse-field" id="f-b10" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b10')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b10"><td class="ans-lbl">✓</td><td class="pgn">1cp</td><td class="heb-ans">נוּמַת</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <h2>Part C — Infinitive Construct (2 forms)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Description</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">Base</td><td><input class="parse-field" id="f-c1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
@@ -111,23 +111,23 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">2</td><td class="pgn">With לְ</td><td><input class="parse-field" id="f-c2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c2')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-c2"><td class="ans-lbl">✓</td><td class="pgn">With לְ</td><td class="heb-ans">לְהוּמַת</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <h2>Part D — Infinitive Absolute (1 form)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Description</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">Inf. Absolute</td><td><input class="parse-field" id="f-d1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('d1')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-d1"><td class="ans-lbl">✓</td><td class="pgn">Inf. Absolute</td><td class="heb-ans">הוּמֵת</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <h2>Part E — Participle (4 forms)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
 <tr><td class="num">1</td><td class="pgn">ms</td><td><input class="parse-field" id="f-e1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('e1')">▶ Answer</button></td></tr>
@@ -139,7 +139,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <tr><td class="num">4</td><td class="pgn">fp</td><td><input class="parse-field" id="f-e4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('e4')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-e4"><td class="ans-lbl">✓</td><td class="pgn">fp</td><td class="heb-ans">מוּמָתוֹת</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <script>
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}

@@ -11,7 +11,7 @@
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.5em; color: #555; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -45,7 +45,7 @@
 <p>For each form: (1) <strong>identify the weak class</strong>, (2) <strong>parse</strong> (conjugation + PGN), (3) <strong>identify the root</strong>.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Class</th><th>Key diagnostic signal</th></tr>
     <tr><td><strong>I-yod/vav</strong></td><td>שׁוּרֶק prefix (הוּ / יוּ / מוּ); R1 yod/vav quiesces and disappears</td></tr>
     <tr><td><strong>Biconsonantal (hollow)</strong></td><td>שׁוּרֶק prefix (הוּ / יוּ) — same as I-yod; medial root vowel is the key to distinguishing: hollow root has vav/yod as R2</td></tr>
@@ -53,7 +53,7 @@
     <tr><td><strong>III-he</strong></td><td>קִבּוּץ prefix (הֻ) + qamets-he ending (perfect 3ms); וּ plural (perfect 3cp); seghol-he (imperfect/participle)</td></tr>
     <tr><td><strong>I-guttural</strong></td><td>קִבּוּץ or שׁוּרֶק prefix; composite shewa (hateph vowel) under R1 guttural throughout</td></tr>
     <tr><td><strong>Geminate</strong></td><td>שׁוּרֶק or קִבּוּץ prefix; dagesh forte in final root consonant (R2=R3 contraction); root has identical R2 and R3</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="tip">
@@ -70,7 +70,7 @@
 <h2>Part A — By Class</h2>
 
 <div class="section-label">Group 1 — I-yod / I-vav</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">הוּרַד</span></td><td>Gen 39:1</td>
@@ -97,10 +97,10 @@
     <td><input class="parse-field" id="a5g"></td><td><input class="parse-field" id="a5p"></td><td><input class="parse-field" id="a5r"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶</button></td></tr>
   <tr class="answer-row" id="r5"><td colspan="7"><strong>Participle · mp · בּוֹא</strong> — being brought; מוּ prefix (שׁוּרֶק under מ) is the I-yod/vav Hophal participle marker; ים plural</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 2 — Biconsonantal (Hollow)</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>6</td><td><span class="heb">הוּקַם</span></td><td>Exo 40:17</td>
@@ -127,10 +127,10 @@
     <td><input class="parse-field" id="a10g"></td><td><input class="parse-field" id="a10p"></td><td><input class="parse-field" id="a10r"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶</button></td></tr>
   <tr class="answer-row" id="r10"><td colspan="7"><strong>Wayyiqtol · 3ms · שִׂים</strong> — and food was set before him; יּוּ prefix (wayyiqtol) — dagesh in יּ + שׁוּרֶק; hollow/biconsonantal root שִׂים</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 3 — I-nun</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>11</td><td><span class="heb">וַיֻּגַּד</span></td><td>Gen 22:20</td>
@@ -157,10 +157,10 @@
     <td><input class="parse-field" id="a15g"></td><td><input class="parse-field" id="a15p"></td><td><input class="parse-field" id="a15r"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="7"><strong>Imperfect · 3ms · נָקַם</strong> — he will be avenged; קִבּוּץ + dagesh in R2 (קּ) — I-nun: נ of נָקַם has assimilated; "Cain will be avenged sevenfold"</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 4 — III-he</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>16</td><td><span class="heb">הֻגְלָה</span></td><td>Amos 1:5</td>
@@ -187,10 +187,10 @@
     <td><input class="parse-field" id="a20g"></td><td><input class="parse-field" id="a20p"></td><td><input class="parse-field" id="a20r"></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶</button></td></tr>
   <tr class="answer-row" id="r20"><td colspan="7"><strong>Perfect · 3ms · יָלַד</strong> — every son who is born; קִבּוּץ under הֻ + dagesh in R2 (לּ); root יָלַד is I-yod; the dagesh assimilates the yod's behavior in Hophal</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 5 — I-guttural</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>21</td><td><span class="heb">הוּחַל</span></td><td>Gen 4:26</td>
@@ -217,10 +217,10 @@
     <td><input class="parse-field" id="a25g"></td><td><input class="parse-field" id="a25p"></td><td><input class="parse-field" id="a25r"></td>
     <td><button class="reveal-btn" onclick="toggle('r25')">▶</button></td></tr>
   <tr class="answer-row" id="r25"><td colspan="7"><strong>Imperfect · 3ms · חָטָא</strong> — he will be cleansed/pardoned; I-guttural: hateph-seghol under ח; III-aleph: silent final א; "the priest shall make atonement and he will be forgiven"</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 6 — Geminate</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>26</td><td><span class="heb">הוּסַב</span></td><td>2 Sam 3:12</td>
@@ -247,13 +247,13 @@
     <td><input class="parse-field" id="a30g"></td><td><input class="parse-field" id="a30p"></td><td><input class="parse-field" id="a30r"></td>
     <td><button class="reveal-btn" onclick="toggle('r30')">▶</button></td></tr>
   <tr class="answer-row" id="r30"><td colspan="7"><strong>Imperfect · 3ms · כָּלַל</strong> — it will be completed/able to be done; קִבּוּץ + dagesh in R2 (כּ) — geminate root כ-ל-ל; "we are well able to overcome it"</td></tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Mixed</h2>
 <p>Identify the weak class first, then parse fully.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Weak class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>31</td><td><span class="heb">הוּבָא</span></td><td>Gen 33:11</td>
@@ -305,7 +305,7 @@
     <td><input class="parse-field" id="b40c"></td><td><input class="parse-field" id="b40g"></td><td><input class="parse-field" id="b40p"></td><td><input class="parse-field" id="b40r"></td>
     <td><button class="reveal-btn" onclick="toggle('rb40')">▶</button></td></tr>
   <tr class="answer-row" id="rb40"><td colspan="8"><strong>Geminate · Perfect · 3ms · סָבַב</strong> — it turned/went around; הוּ prefix; root ס-ב-ב has R2=R3 (geminate) — this is the only reliable distinguisher from biconsonantal הוּסַר (root סוּר: hollow, not geminate)</td></tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

@@ -14,7 +14,7 @@
   .code-table { border-collapse: collapse; width: auto; margin: .5em 0 1em; font-size: .9em; }
   .code-table th { background: #3a5a8a; color: #fff; padding: .3em .7em; text-align: left; }
   .code-table td { padding: .25em .7em; border-bottom: 1px solid #ddd; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
+  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .93em; }
   th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
   td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #f5f7fb; }
@@ -46,7 +46,7 @@
   (2) parse person and number of the subjunctive verb, (3) give the lexical form, and (4) translate.
   Click <strong>▶ Answer</strong> to reveal the answer for that row.
   <br><br>
-  <table class="code-table">
+  <div style="overflow-x:auto;max-width:100%;"><table class="code-table">
     <tr><th>Code</th><th>Use</th></tr>
     <tr><td><strong>HO</strong></td><td>Hortatory ("Let us …")</td></tr>
     <tr><td><strong>PU</strong></td><td>Purpose clause (ἵνα / ὅπως + subj.)</td></tr>
@@ -54,7 +54,7 @@
     <tr><td><strong>IN</strong></td><td>Indefinite relative (ὅς ἐάν / ὅπου ἐάν + subj.)</td></tr>
     <tr><td><strong>DE</strong></td><td>Deliberative ("What should we …?")</td></tr>
     <tr><td><strong>FS</strong></td><td>Fear statement (μή + subj. after φοβέομαι)</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="controls">
@@ -63,7 +63,7 @@
   <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead>
   <tr><th>#</th><th>Greek Clause</th><th>Use Code</th><th>Person</th><th>Number</th><th>Lexical Form</th><th>Translation</th><th></th></tr>
 </thead>
@@ -390,7 +390,7 @@
 </tr>
 
 </tbody>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <ol>

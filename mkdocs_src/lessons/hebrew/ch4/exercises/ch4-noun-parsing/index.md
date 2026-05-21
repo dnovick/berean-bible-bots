@@ -10,7 +10,7 @@
   h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -54,7 +54,7 @@
 <button onclick="hideAll()">Hide All Answers</button>
 <button class="clr" onclick="clearAll()">Clear All Inputs</button>
 </div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <colgroup>
 <col style="width:2.2rem"/>
 <col style="width:9rem"/>
@@ -550,7 +550,7 @@
 <td>year of</td>
 <td class="ans-note">Construct sg. fem.; both vowels reduce (qamets → shewa, qamets → patach)</td>
 </tr>
-</table>
+</table></div>
 <div class="reflect">
 <strong>Reflection Questions</strong>
 <ol>

@@ -11,7 +11,7 @@
   h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -103,7 +103,7 @@
 <!-- PART A -->
 <h2>Part A — Article Before Normal Consonants</h2>
 <p class="note">Default article form: הַ (patah) + dagesh forte in the following consonant.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th>
     <th>Article?</th><th>Article Form</th>
@@ -286,14 +286,14 @@
     <td>the prophet</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART B -->
 <h2>Part B — Article Before Gutturals</h2>
 <p class="note">Gutturals (א ה ח ע) and ר cannot take dagesh forte. The article vowel shifts to הֶ (segol) or הָ (qamets).</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th>
     <th>Article?</th><th>Article Form</th>
@@ -410,14 +410,14 @@
     <td>the spirit / the wind / the breath</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART C -->
 <h2>Part C — Conjunction ו Only</h2>
 <p class="note">No definite article present. Identify the specific form of the conjunction.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th>
     <th>Article?</th><th>Article Form</th>
@@ -534,14 +534,14 @@
     <td>and I said / then I said</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART D -->
 <h2>Part D — Both Article and Conjunction ו</h2>
 <p class="note">Each item has both the conjunction ו prefix and the definite article. Identify each separately.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th>
     <th>Article?</th><th>Article Form</th>
@@ -658,14 +658,14 @@
     <td>and the people</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART E -->
 <h2>Part E — Neither Article Nor Conjunction (Contrast)</h2>
 <p class="note">These bare nouns have no prefixed article or conjunction. Translate as indefinite.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th>
     <th>Article?</th><th>Article Form</th>
@@ -716,7 +716,7 @@
     <td>a word / a thing</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 

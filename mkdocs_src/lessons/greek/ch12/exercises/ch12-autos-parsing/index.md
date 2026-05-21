@@ -9,7 +9,7 @@
   body { font-family: Georgia, serif;    color: #222; }
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -40,12 +40,12 @@
 <p>For each item, parse αὐτός: <strong>Case</strong> (N/G/D/A), <strong>Number</strong> (S/P), <strong>Gender</strong> (M/F/N), and <strong>Use</strong> (PP / INT / SAME).</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Code</th><th>Use</th><th>Position clue</th></tr>
     <tr><td><strong>PP</strong></td><td>Personal Pronoun — "him/her/it/them"</td><td>Oblique case; αὐτός stands alone (no article before it modifying a noun)</td></tr>
     <tr><td><strong>INT</strong></td><td>Intensive Adjective — "himself/herself"</td><td>Predicate position: αὐτός near article-noun but NO article directly before αὐτός</td></tr>
     <tr><td><strong>SAME</strong></td><td>Identical Adjective — "the same"</td><td>Attributive position: article DIRECTLY before αὐτός</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="tip">
@@ -58,7 +58,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Greek Phrase</th><th>Case</th><th>Number</th><th>Gender</th><th>Use (PP/INT/SAME)</th><th></th></tr>
 
   <tr>
@@ -261,7 +261,7 @@
   </tr>
   <tr class="answer-row" id="r20"><td colspan="7"><strong>A · S · F · PP</strong> — "he believes in <strong>her/it</strong>"</td></tr>
 
-</table>
+</table></div>
 
 <script>
 function toggle(id) {

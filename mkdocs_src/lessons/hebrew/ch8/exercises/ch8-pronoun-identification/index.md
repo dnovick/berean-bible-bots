@@ -11,7 +11,7 @@
   h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -99,7 +99,7 @@
 
 <!-- ITEMS 1–8: Independent Personal Pronouns -->
 <h2>Items 1–8 — Independent Personal Pronouns</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Hebrew</th><th>Pronoun Type</th><th>Pronoun</th><th>Parse (PGN)</th><th>Translation</th><th></th></tr>
 
   <tr>
@@ -253,13 +253,13 @@
     <td>"They are the priests"</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- ITEMS 9–15: Demonstrative Pronouns -->
 <h2>Items 9–15 — Demonstrative Pronouns</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Hebrew</th><th>Pronoun Type</th><th>Pronoun</th><th>Parse (PGN)</th><th>Translation</th><th></th></tr>
 
   <tr>
@@ -394,13 +394,13 @@
     <td>"at that time"</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- ITEMS 16–21: Relative Pronoun אֲשֶׁר -->
 <h2>Items 16–21 — Relative Pronoun אֲשֶׁר</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Hebrew</th><th>Pronoun Type</th><th>Pronoun</th><th>Parse (PGN)</th><th>Translation</th><th></th></tr>
 
   <tr>
@@ -516,13 +516,13 @@
     <td>"the word/thing that you heard"</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- ITEMS 22–25: Interrogative Pronouns -->
 <h2>Items 22–25 — Interrogative Pronouns (מִי / מַה)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Hebrew</th><th>Pronoun Type</th><th>Pronoun</th><th>Parse (PGN)</th><th>Translation</th><th></th></tr>
 
   <tr>
@@ -600,7 +600,7 @@
     <td>"What have you done?"</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 

@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
   .subtitle { color: #555; font-style: italic; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
+  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .88em; }
   th { background: #263238; color: #fff; padding: .4em .5em; text-align: left; }
   td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #eceff1; }
@@ -41,7 +41,7 @@
 </div>
 
 <h2>Part A — ἵστημι (1–6)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Trans/Intrans</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="1"><td><b>1</b></td><td class="greek"><u>ἔστησεν</u> αὐτὸ ἐν μέσῳ αὐτῶν.</td>
@@ -80,10 +80,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-6"><td></td><td colspan="8">Perf · Act · 2nd · Pl · Ind · ἵστημι · Intransitive (= are standing) · "Why are you standing looking into heaven?" (Acts 1:11)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part B — τίθημι (7–10)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="7"><td><b>7</b></td><td class="greek"><u>τίθησιν</u> αὐτὴν ἐπὶ τὴν λυχνίαν.</td>
@@ -110,10 +110,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-10"><td></td><td colspan="7">Aor · Act · 2nd · Sg · Imper · τίθημι · "Put your hand on her." (Mark 5:23)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part C — δείκνυμι (11–13)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="11"><td><b>11</b></td><td class="greek"><u>δεῖξόν</u> μοι τὴν πίστιν σου χωρὶς τῶν ἔργων.</td>
@@ -134,10 +134,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-13"><td></td><td colspan="7">Pres · Act · 3rd · Pl · Ind · δείκνυμι · "They showed him the coin of the poll tax." (Matt 22:19)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part D — ἀφίημι (14–16)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="14"><td><b>14</b></td><td class="greek"><u>ἀφίεμεν</u> τοῖς ὀφειλέταις ἡμῶν.</td>
@@ -158,10 +158,10 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-16"><td></td><td colspan="7">Aor · Act · 2nd · Sg · Imper · ἀφίημι · "Forgive us our debts." (Matt 6:12)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part E — ἀπόλλυμι and οἶδα (17–20)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Person</th><th>Num</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="17"><td><b>17</b></td><td class="greek"><u>ἀπολλύμεθα</u>· οὐ μέλει σοι ὅτι ἀπολλύμεθα;</td>
@@ -188,7 +188,7 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-20"><td></td><td colspan="7">Perf (pres. meaning) · Act · 1st · Pl · Ind · οἶδα · "We know that the Son of God has come." (1 John 5:20)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <script>
 function toggleAnswer(id) {

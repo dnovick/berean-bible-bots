@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
   .subtitle { color: #555; font-style: italic; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
+  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .88em; }
   th { background: #7a4020; color: #fff; padding: .4em .5em; text-align: left; }
   td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #fdf5ef; }
@@ -46,7 +46,7 @@
 </div>
 
 <h2>Part A — Perfect Participles (1–8)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="1"><td><b>1</b></td><td class="greek">ὁ <u>λελυκώς</u> τοὺς δούλους ἀπῆλθεν.</td>
@@ -97,10 +97,10 @@
   <td><input class="parse-field"></td><td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-8"><td></td><td colspan="8">Perf · Mid/Pass · Nom · Pl · Fem · γράφω · "The commandments that were written."</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part B — Genitive Absolute Constructions (9–15)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Gen. Noun</th><th>Gen. Participle</th><th>Ptc Parse (T·V·C·N·G·Lex)</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="9"><td><b>9</b></td>
@@ -166,7 +166,7 @@
   <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ans-15"><td></td><td colspan="5">Gen. noun: αὐτοῦ · Gen. ptc: ὄντος · Pres · Act · Gen · Sg · Masc · εἰμί · "While he was in Bethlehem, Magi came from the east."</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <script>
 function toggleAnswer(id) {

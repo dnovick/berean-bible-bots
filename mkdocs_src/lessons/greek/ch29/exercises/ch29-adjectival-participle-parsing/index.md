@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
   .subtitle { color: #555; font-style: italic; }
   .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .95em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
+  table { border-collapse: collapse;  margin-bottom: 1em; font-size: .88em; }
   th { background: #6a3d8a; color: #fff; padding: .4em .5em; text-align: left; }
   td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
   tr:nth-child(even) td { background: #f8f5fc; }
@@ -46,7 +46,7 @@
 </div>
 
 <h2>Part A — Attributive, 1st Position (1–5)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Position</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="1">
@@ -94,10 +94,10 @@
 </tr>
 <tr class="answer-row" id="ans-5"><td></td><td colspan="10">Aor · Act · Gen · Sg · Masc · πιστεύω · Attributive · 1st pos. · "He spoke to them about the crowd that had believed."</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part B — Attributive, 2nd Position (6–8)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Position</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="6">
@@ -127,10 +127,10 @@
 </tr>
 <tr class="answer-row" id="ans-8"><td></td><td colspan="10">Perf · Pass · Dat · Pl · Masc · γράφω · Attributive · 2nd pos. · "They believed the words that were written."</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part C — Substantival, Nominative (9–12)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="9">
@@ -169,10 +169,10 @@
 </tr>
 <tr class="answer-row" id="ans-12"><td></td><td colspan="9">Pres · Act · Nom · Pl · Masc · ἀγαπάω · Substantival · "For those who love God all things work together for good." (cf. Rom 8:28)</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <h2>Part D — Substantival, Non-Nominative (13–15)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
 <tbody>
 <tr class="question-row" data-id="13">
@@ -202,7 +202,7 @@
 </tr>
 <tr class="answer-row" id="ans-15"><td></td><td colspan="9">Pres · Mid/Pass · Dat · Pl · Masc · σῴζω · Substantival · "I send this one to those who are being saved."</td><td></td></tr>
 </tbody>
-</table>
+</table></div>
 
 <script>
 function toggleAnswer(id) {

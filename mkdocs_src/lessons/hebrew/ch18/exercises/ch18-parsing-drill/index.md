@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
 h3{font-size:1em;color:#555;margin-top:1.5em}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -44,7 +44,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <h2>Part A — Strong and Common Roots</h2>
 <p><em>All forms are Qal Imperative. Parse the PGN and identify the root.</em></p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Conjugation</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th></th></tr>
 <tr><td>1</td><td class="hebrew">שְׁמֹר</td><td><input class="parse-field" id="1-c"></td><td><input class="parse-field" id="1-p"></td><td><input class="parse-field" id="1-n"></td><td><input class="parse-field" id="1-g"></td><td><input class="parse-field" id="1-r"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a1"><td colspan="8">Imperative · 2nd · Singular · Masculine · שמר — Strong A-class; shewa + holem; "Guard!"</td></tr>
@@ -75,10 +75,10 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>10</td><td class="hebrew">קְרָא</td><td><input class="parse-field" id="10-c"></td><td><input class="parse-field" id="10-p"></td><td><input class="parse-field" id="10-n"></td><td><input class="parse-field" id="10-g"></td><td><input class="parse-field" id="10-r"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a10"><td colspan="8">Imperative · 2nd · Singular · Masculine · קרא — III-א; qamets before quiescent aleph; "Call / Read!"</td></tr>
-</table>
+</table></div>
 
 <h2>Part B — Weak Root Imperatives</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Conjugation</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Weak Class</th><th></th></tr>
 <tr><td>11</td><td class="hebrew">לֵךְ</td><td><input class="parse-field" id="11-c"></td><td><input class="parse-field" id="11-p"></td><td><input class="parse-field" id="11-n"></td><td><input class="parse-field" id="11-g"></td><td><input class="parse-field" id="11-r"></td><td><input class="parse-field" id="11-w"></td><td><button class="toggle-btn" onclick="tog('b11')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="b11"><td colspan="9">Imperative · 2nd · Singular · Masculine · הלך · I-י — Extremely short; tsere; ה of הלך absent; "Go!"</td></tr>
@@ -124,13 +124,13 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>25</td><td class="hebrew">קַח</td><td><input class="parse-field" id="25-c"></td><td><input class="parse-field" id="25-p"></td><td><input class="parse-field" id="25-n"></td><td><input class="parse-field" id="25-g"></td><td><input class="parse-field" id="25-r"></td><td><input class="parse-field" id="25-w"></td><td><button class="toggle-btn" onclick="tog('b25')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="b25"><td colspan="9">Imperative · 2nd · Singular · Masculine · לקח · I-י — Short form; from יִקַּח; "Take!"</td></tr>
-</table>
+</table></div>
 
 <h2>Part C — Disambiguation: Imperative, Imperfect, or Jussive?</h2>
 
 <div class="note-box"><strong>Key rule:</strong> Positive commands use the <strong>Imperative</strong> (no prefix). Negative commands <em>never</em> use the Imperative — they use <strong>אַל + Jussive</strong> (immediate prohibition) or <strong>לֹא + Imperfect</strong> (permanent prohibition).</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Form Type</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th></th></tr>
 <tr><td>26</td><td class="hebrew">שְׁמֹר</td><td><input class="parse-field" id="26-t"></td><td><input class="parse-field" id="26-p"></td><td><input class="parse-field" id="26-n"></td><td><input class="parse-field" id="26-g"></td><td><input class="parse-field" id="26-r"></td><td><button class="toggle-btn" onclick="tog('c26')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="c26"><td colspan="8">Imperative · 2nd · Singular · Masculine · שמר — No prefix; direct positive command</td></tr>
@@ -161,7 +161,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>35</td><td class="hebrew">יָבֹא</td><td><input class="parse-field" id="35-t"></td><td><input class="parse-field" id="35-p"></td><td><input class="parse-field" id="35-n"></td><td><input class="parse-field" id="35-g"></td><td><input class="parse-field" id="35-r"></td><td><button class="toggle-btn" onclick="tog('c35')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="c35"><td colspan="8">Imperfect · 3rd · Singular · Masculine · בוא — יָ– prefix; biconsonantal imperfect; "he will come"</td></tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

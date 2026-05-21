@@ -13,7 +13,7 @@
   p { margin: 0.5em 0; }
   .hebrew-item { font-size: 1.8em; direction: rtl; unicode-bidi: embed; font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif; }
   .hebrew-small { font-size: 1.3em; direction: rtl; unicode-bidi: embed; font-family: "SBL Hebrew", "Ezra SIL", "Times New Roman", serif; }
-  table { border-collapse: collapse; width: 100%; margin: 0.8em 0 1.2em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin: 0.8em 0 1.2em; font-size: 0.92em; }
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td.num { width: 3%; text-align: center; font-weight: bold; color: #555; }
@@ -63,7 +63,7 @@
 
 <div class="section-label">Items 1–10 &nbsp;·&nbsp; Nouns with Pronominal Suffixes</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th>
     <th>Hebrew</th>
@@ -213,7 +213,7 @@
   <tr class="answer-row" id="a10">
     <td colspan="7">✓ <strong>Base:</strong> אֶרֶץ (land/earth, fs) &nbsp;|&nbsp; <strong>Suffix:</strong> ָם &nbsp;|&nbsp; <strong>Parse:</strong> 3mp &nbsp;|&nbsp; <strong>Translation:</strong> their (m) land &nbsp;·&nbsp; <em>אֶרֶץ reduces to אַרְצ- before Type 1 suffixes. The 3mp suffix ָם is the short form (alongside the fuller form הֶם). Context distinguishes ָם (suffix) from ָם elsewhere.</em></td>
   </tr>
-</table>
+</table></div>
 
 <!-- ============================================================ -->
 <!-- SECTION 2: Prepositions with Suffixes (#11–20) -->
@@ -223,7 +223,7 @@
 
 <div class="note-box"><strong>Note:</strong> Prepositions typically take Type 2 (plural-style) suffix forms. Each preposition has its own vowel pattern before the suffix attaches — learn each paradigm individually. The identity of the suffix element itself (וֹ, ִי, ְךָ, etc.) remains constant across prepositions.</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th>
     <th>Hebrew</th>
@@ -373,7 +373,7 @@
   <tr class="answer-row" id="a20">
     <td colspan="7">✓ <strong>Base:</strong> עַל (upon/over/concerning) &nbsp;|&nbsp; <strong>Suffix:</strong> ָיו &nbsp;|&nbsp; <strong>Parse:</strong> 3ms &nbsp;|&nbsp; <strong>Translation:</strong> upon/over him (or: on it) &nbsp;·&nbsp; <em>עַל + 3ms = עָלָיו. The Type 2 3ms suffix is ָיו (Qamets + yod + vav). The base עַל → עָלָי- before this suffix. עָלָיו is extremely common in narrative and legal texts.</em></td>
   </tr>
-</table>
+</table></div>
 
 <!-- ============================================================ -->
 <!-- SECTION 3: Direct Object Marker with Suffixes (#21–25) -->
@@ -383,7 +383,7 @@
 
 <div class="note-box"><strong>Note:</strong> When the direct object marker אֵת takes suffixes, the vowel shifts from Tsere (ֵ) to Holem (ֹ): אֹת- appears before most suffixes. This suffixed form expresses the pronoun as a direct object ("me, you, him, her, us, them"). The Holem is your diagnostic clue.</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th>
     <th>Hebrew</th>
@@ -463,7 +463,7 @@
   <tr class="answer-row" id="a25">
     <td colspan="7">✓ <strong>Base:</strong> אֵת (DOM) &nbsp;|&nbsp; <strong>Suffix:</strong> ָם &nbsp;|&nbsp; <strong>Parse:</strong> 3mp &nbsp;|&nbsp; <strong>Translation:</strong> them (m, as direct object) &nbsp;·&nbsp; <em>אֵת + 3mp = אֹתָם. Short 3mp suffix ָם on the Holem base. E.g., וַיִּבְרָא אֱלֹהִים אֹתָם (Gen 1:27) — "and God created them."</em></td>
   </tr>
-</table>
+</table></div>
 
 <!-- ============================================================ -->
 <!-- Parsing Notes -->

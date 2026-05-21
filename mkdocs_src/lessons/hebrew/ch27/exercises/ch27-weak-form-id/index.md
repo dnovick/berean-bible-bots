@@ -11,7 +11,7 @@
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.5em; color: #555; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -45,7 +45,7 @@
 <p>For each form: (1) <strong>identify the weak class</strong>, (2) <strong>parse</strong> (conjugation + PGN), (3) <strong>identify the root</strong>.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Class</th><th>Key diagnostic signal</th></tr>
     <tr><td><strong>I-guttural</strong></td><td>הֶ prefix (perfect); composite shewa under R1; no dagesh in R1 throughout</td></tr>
     <tr><td><strong>III-ח/ע</strong></td><td>Patach furtive before final ח/ע (open syllable); patach (not tsere) in wayyiqtol/imperative before final guttural</td></tr>
@@ -55,7 +55,7 @@
     <tr><td><strong>I-י</strong></td><td>הוֹ prefix (perfect/imperative/inf.); יוֹ/תּוֹ/אוֹ/נוֹ prefix (imperfect); וַיּוֹ (wayyiqtol); מוֹ (participle)</td></tr>
     <tr><td><strong>Biconsonantal</strong></td><td>הֵ prefix (perfect); qamets under prefix consonant (imperfect/wayyiqtol); הָ prefix (imperative/inf. construct); מֵ prefix (participle ms)</td></tr>
     <tr><td><strong>Geminate</strong></td><td>הֵ prefix (perfect); qamets under prefix (imperfect/wayyiqtol); הָ prefix (imperative/inf. construct); מֵ prefix (participle) — nearly identical to Biconsonantal; root identification (R2=R3) is the only reliable distinguisher</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="controls">
@@ -68,7 +68,7 @@
 <h2>Part A — By Class</h2>
 
 <div class="section-label">Group 1 — I-guttural</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">הֶעֱמִיד</span></td><td>1 Kgs 7:21</td>
@@ -95,10 +95,10 @@
     <td><input class="parse-field" id="a5g"></td><td><input class="parse-field" id="a5p"></td><td><input class="parse-field" id="a5r"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶</button></td></tr>
   <tr class="answer-row" id="r5"><td colspan="7"><strong>Participle · ms · עָמַד</strong> — one who stations; מַ + composite shewa under ע + chiriq</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 2 — III-ח/ע</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>6</td><td><span class="heb">הִשְׁמִיעַ</span></td><td>Isa 48:6</td>
@@ -125,10 +125,10 @@
     <td><input class="parse-field" id="a10g"></td><td><input class="parse-field" id="a10p"></td><td><input class="parse-field" id="a10r"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶</button></td></tr>
   <tr class="answer-row" id="r10"><td colspan="7"><strong>Participle · ms · שָׁמַע</strong> — one who announces; מַ + chiriq-yod + patach furtive before final ע</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 3 — III-א</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>11</td><td><span class="heb">הִמְצִיא</span></td><td>Neh 9:15</td>
@@ -155,10 +155,10 @@
     <td><input class="parse-field" id="a15g"></td><td><input class="parse-field" id="a15p"></td><td><input class="parse-field" id="a15r"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="7"><strong>Participle · ms · קָרָא</strong> — one who reads aloud; מַ + chiriq-yod + silent final א</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 4 — III-ה</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>16</td><td><span class="heb">הֶעֱלָה</span></td><td>Gen 8:20</td>
@@ -185,10 +185,10 @@
     <td><input class="parse-field" id="a20g"></td><td><input class="parse-field" id="a20p"></td><td><input class="parse-field" id="a20r"></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶</button></td></tr>
   <tr class="answer-row" id="r20"><td colspan="7"><strong>Inf. Construct · — · עָלָה</strong> — to bring up; ends in וֹת — the most reliable III-ה Hiphil inf. construct marker</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 5 — I-נ</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>21</td><td><span class="heb">הִפִּיל</span></td><td>Gen 2:21</td>
@@ -215,10 +215,10 @@
     <td><input class="parse-field" id="a25g"></td><td><input class="parse-field" id="a25p"></td><td><input class="parse-field" id="a25r"></td>
     <td><button class="reveal-btn" onclick="toggle('r25')">▶</button></td></tr>
   <tr class="answer-row" id="r25"><td colspan="7"><strong>Participle · ms · נָגַשׁ</strong> — one who brings near; מַ + dagesh in R2 + chiriq</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 6 — I-י</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>26</td><td><span class="heb">הוֹצִיא</span></td><td>Gen 15:7</td>
@@ -245,10 +245,10 @@
     <td><input class="parse-field" id="a30g"></td><td><input class="parse-field" id="a30p"></td><td><input class="parse-field" id="a30r"></td>
     <td><button class="reveal-btn" onclick="toggle('r30')">▶</button></td></tr>
   <tr class="answer-row" id="r30"><td colspan="7"><strong>Participle · ms · יָצָא</strong> — the one who brings out; מוֹ prefix (holem-vav under מ) — not מַ of the strong Hiphil</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 7 — Biconsonantal</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>31</td><td><span class="heb">הֵקִים</span></td><td>Gen 6:18</td>
@@ -275,10 +275,10 @@
     <td><input class="parse-field" id="a35g"></td><td><input class="parse-field" id="a35p"></td><td><input class="parse-field" id="a35r"></td>
     <td><button class="reveal-btn" onclick="toggle('r35')">▶</button></td></tr>
   <tr class="answer-row" id="r35"><td colspan="7"><strong>Participle · ms · קוּם</strong> — one who raises up; מֵ prefix (tsere) — not מַ (patach) of the strong/most-weak-class Hiphil participle</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 8 — Geminate</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>36</td><td><span class="heb">הֵסֵב</span></td><td>1 Kgs 21:4</td>
@@ -305,13 +305,13 @@
     <td><input class="parse-field" id="a40g"></td><td><input class="parse-field" id="a40p"></td><td><input class="parse-field" id="a40r"></td>
     <td><button class="reveal-btn" onclick="toggle('r40')">▶</button></td></tr>
   <tr class="answer-row" id="r40"><td colspan="7"><strong>Participle · ms · סָבַב</strong> — one who surrounds; מֵ prefix (tsere) — same as Biconsonantal מֵקִים; Geminate class requires root knowledge</td></tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Mixed</h2>
 <p>Identify the weak class first, then parse fully.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Weak class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>41</td><td><span class="heb">וַיַּשְׁמַע</span></td><td>1 Sam 15:14</td>
@@ -363,7 +363,7 @@
     <td><input class="parse-field" id="b50c"></td><td><input class="parse-field" id="b50g"></td><td><input class="parse-field" id="b50p"></td><td><input class="parse-field" id="b50r"></td>
     <td><button class="reveal-btn" onclick="toggle('rb50')">▶</button></td></tr>
   <tr class="answer-row" id="rb50"><td colspan="8"><strong>Biconsonantal · Wayyiqtol · 1cs · קוּם</strong> — and I established; וָאָ prefix (1cs wayyiqtol) + qamets + chiriq-yod medial; "I also established my covenant with them"</td></tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

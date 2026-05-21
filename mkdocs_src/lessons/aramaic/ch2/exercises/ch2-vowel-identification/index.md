@@ -10,7 +10,7 @@
   h1 { font-size: 1.3em; }
   h2 { font-size: 1.1em; margin-top: 1.5em; }
   p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
+  table { border-collapse: collapse;  margin-bottom: 1.5em; }
   th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
   th { background: #e8e8e8; }
   td.form { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; }
@@ -38,16 +38,16 @@
 </div>
 
 <h2>Part A — Long Vowels (1–5)</h2>
-<table id="tA"></table>
+<div style="overflow-x:auto;max-width:100%;"><table id="tA"></table></div>
 
 <h2>Part B — Short Vowels (6–10)</h2>
-<table id="tB"></table>
+<div style="overflow-x:auto;max-width:100%;"><table id="tB"></table></div>
 
 <h2>Part C — Reduced Vowels (11–15)</h2>
-<table id="tC"></table>
+<div style="overflow-x:auto;max-width:100%;"><table id="tC"></table></div>
 
 <h2>Part D — Matres Lectionis Examples (16–20)</h2>
-<table id="tD"></table>
+<div style="overflow-x:auto;max-width:100%;"><table id="tD"></table></div>
 
 <script>
 function buildTable(tableId, headers, rows, answers) {

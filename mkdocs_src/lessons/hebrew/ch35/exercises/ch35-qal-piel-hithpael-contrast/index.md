@@ -11,7 +11,7 @@
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.6em; color: #333; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -42,13 +42,13 @@
 
 <p>Each group of three shares the same weak root. For each form: (1) identify the <strong>stem</strong>, (2) identify the <strong>weak class</strong>, (3) describe how the weakness affects the form, (4) translate. Type your answers, then click <strong>▶ Answer</strong> to check.</p>
 
-<table class="ref-table">
+<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
   <tr><th>Weak Class</th><th>Signal</th><th>Hithpael effect</th></tr>
   <tr><td>III-ה</td><td>Perfect 3ms ends ָ–ה; wayyiqtol drops ה</td><td><span class="heb">הִתְ</span> prefix + Qamets + ה at end</td></tr>
   <tr><td>Sibilant שׁ/שׂ/ס</td><td>R1 is a sibilant</td><td><span class="heb">הִתְ</span> + שׁ → <span class="heb">הִשְׁתְּ</span> (ת and שׁ swap)</td></tr>
   <tr><td>Sibilant צ</td><td>R1 is צ</td><td><span class="heb">הִתְ</span> + צ → <span class="heb">הִצְטְ</span> (ת → ט, then swap)</td></tr>
   <tr><td>Geminate</td><td>R2 = R3</td><td><span class="heb">הִתְ</span> prefix + Dagesh in R2/R3 retained</td></tr>
-</table>
+</table></div>
 
 <div class="tip">
   <strong>Tip:</strong>
@@ -63,7 +63,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Stem</th><th>Weak Class</th><th>Weakness Effect</th><th>Translation</th><th></th>
   </tr>
@@ -288,7 +288,7 @@
     <td colspan="7"><strong>Hithpael · Perfect 3ms</strong> · III-ה · <span class="heb">הִתְ</span> prefix + Dagesh in R2 (נּ) + Qamets + ה at end; no metathesis (ע is a guttural, not a sibilant) · "he afflicted himself / fasted"</td>
   </tr>
 
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

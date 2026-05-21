@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -40,12 +40,12 @@
 <p>For each of the 24 forms, identify the stem (Qal / Piel / Pual), parse fully, and translate.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Stem</th><th>Perfect 3ms</th><th>Imperfect 3ms</th><th>Participle ms</th></tr>
     <tr><td><strong>Qal</strong></td><td>qamets–patach (דָּבַר)</td><td>hiriq + shewa (יִדְבַּר)</td><td>holem + tsere (דֹּבֵר)</td></tr>
     <tr><td><strong>Piel</strong></td><td>hiriq + dagesh in R2 (דִּבֶּר)</td><td>shewa + patach + dagesh (יְדַבֵּר)</td><td>מְ + patach + dagesh (מְדַבֵּר)</td></tr>
     <tr><td><strong>Pual</strong></td><td>qibbuts + dagesh in R2 (דֻּבַּר)</td><td>shewa + qibbuts + dagesh (יְדֻבַּר)</td><td>מְ + qibbuts + qamets (מְדֻבָּר)</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="tip"><strong>Quick test:</strong> Does R1 have qibbuts (ֻ) or holem where a guttural R2 blocks dagesh? → Pual. Does R1 have hiriq/tsere with dagesh forte in R2? → Piel. Plain vowel, no dagesh forte in R2? → Qal.</div>
@@ -56,7 +56,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Translation</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">דָּבַר</span></td>
@@ -179,7 +179,7 @@
     <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r24"><td colspan="8"><strong>Pual · Perfect · 3ms · ספר · "it was told / recounted"</strong> — qibbuts under ס + dagesh forte in פ + patach; confirm pattern from new root</td></tr>
 
-</table>
+</table></div>
 
 <script>
 function toggle(id) {

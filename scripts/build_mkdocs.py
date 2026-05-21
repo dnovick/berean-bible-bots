@@ -23,7 +23,8 @@ def _inline_exercise_html(html_path: Path) -> str:
     and return a string suitable for embedding directly in a MkDocs page.
 
     The exercise HTML has its own body max-width/margin/padding — we strip those
-    so the MkDocs layout controls the page width.
+    so the MkDocs layout controls the page width.  Tables are wrapped in a
+    horizontal scroll container so wide tables don't overflow the page.
     """
     text = html_path.read_text(encoding="utf-8")
 
@@ -41,9 +42,32 @@ def _inline_exercise_html(html_path: Path) -> str:
         flags=re.DOTALL,
     )
 
+    # Remove width:100% from table rules — the scroll wrapper controls width
+    style_content = re.sub(
+        r"(table\s*\{[^}]*?)width\s*:\s*100%\s*;?",
+        r"\1",
+        style_content,
+        flags=re.DOTALL,
+    )
+
     # Extract <body> content
     body_m = re.search(r"<body[^>]*>(.*?)</body>", text, re.DOTALL | re.IGNORECASE)
     body_content = body_m.group(1).strip() if body_m else text
+
+    # Wrap each <table>…</table> in a horizontal-scroll div so wide tables
+    # scroll within the content area rather than overflowing the page
+    body_content = re.sub(
+        r"(<table\b)",
+        r'<div style="overflow-x:auto;max-width:100%;">\1',
+        body_content,
+        flags=re.IGNORECASE,
+    )
+    body_content = re.sub(
+        r"(</table>)",
+        r"\1</div>",
+        body_content,
+        flags=re.IGNORECASE,
+    )
 
     return f"<style>\n{style_content}\n</style>\n\n{body_content}\n"
 

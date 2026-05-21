@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -59,7 +59,7 @@
 <h2>Part A — Intensive Roots</h2>
 <p>The Qal describes a basic action. The Piel performs it more forcefully, completely, or repeatedly.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Root</th><th>Qal Meaning</th><th>Piel Form</th><th>Ref</th><th>Translation</th><th>Function</th><th></th>
   </tr>
@@ -161,7 +161,7 @@
   <tr class="answer-row" id="r7">
     <td colspan="8"><strong>Intensive</strong> · they shall wash (their garments) thoroughly · Ritual preparation requires complete, thorough laundering; the Piel is the standard form for washing garments in a cultic context</td>
   </tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Stative Roots (Factitive)</h2>
@@ -171,7 +171,7 @@
   <strong>Factitive vs. Intensive:</strong> Ask "does the Piel cause an object to <em>be in</em> a state?" (Factitive) or "does it do the Qal action more intensely?" (Intensive). Stative roots (to be holy, great, alive) almost always yield Factitive Piels.
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Root</th><th>Qal Meaning</th><th>Piel Form</th><th>Ref</th><th>Translation</th><th>Function</th><th></th>
   </tr>
@@ -245,12 +245,12 @@
   <tr class="answer-row" id="r12">
     <td colspan="8"><strong>Factitive</strong> · he finished / completed (all his work) · Qal = to be complete; Piel = cause the work to enter the state of completion; God brought his creative work to its finished state</td>
   </tr>
-</table>
+</table></div>
 
 <!-- PART C -->
 <h2>Part C — Declarative, Denominative, and Simple Action</h2>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Root</th><th>Qal Meaning</th><th>Piel Form</th><th>Ref</th><th>Translation</th><th>Function</th><th></th>
   </tr>
@@ -324,7 +324,7 @@
   <tr class="answer-row" id="r17">
     <td colspan="8"><strong>Simple Action</strong> · they praised (her) · Praising is the Piel's standard function; the Qal "shine/be bright" is semantically remote and rarely used; "Intense shining" does not explain "to praise"</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

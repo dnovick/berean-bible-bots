@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
 p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -46,7 +46,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <h2>Part A — Emphatic Pairs (IA + Finite Verb)</h2>
 <p class="sub">Both members of each pair are given. Identify the IA, name the root, root class, and function.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form Pair</th><th>Which is IA?</th><th>Root</th><th>Root Class</th><th>Function</th><th>Gloss</th><th></th></tr>
 
 <tr><td>1</td><td class="hebrew">מ֥וֹת — תָּמוּת</td><td><input class="parse-field" id="1-ia"></td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-cl"></td><td><input class="parse-field" id="1-fn"></td><td><input class="parse-field" id="1-gl"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -72,11 +72,11 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>8</td><td class="hebrew">אָבֹ֖ד — תֹּאבֵדוּן</td><td><input class="parse-field" id="8-ia"></td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-cl"></td><td><input class="parse-field" id="8-fn"></td><td><input class="parse-field" id="8-gl"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a8"><td colspan="8">IA = אָבֹ֖ד · אבד · Strong A · Emphatic — "you shall utterly perish"; Deuteronomy threat formula; qamets + holem</td></tr>
-</table>
+</table></div>
 
 <h2>Part B — Standalone IA Forms</h2>
 <p class="sub">No paired finite verb given. Identify as IA, give root, root class, and function.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>IA or other?</th><th>Root</th><th>Root Class</th><th>Function</th><th></th></tr>
 
 <tr><td>9</td><td class="hebrew">זָכ֕וֹר</td><td><input class="parse-field" id="9-id"></td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-cl"></td><td><input class="parse-field" id="9-fn"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
@@ -96,11 +96,11 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>14</td><td class="hebrew">גָּאֹ֖ל</td><td><input class="parse-field" id="14-id"></td><td><input class="parse-field" id="14-r"></td><td><input class="parse-field" id="14-cl"></td><td><input class="parse-field" id="14-fn"></td><td><button class="toggle-btn" onclick="tog('a14')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a14"><td colspan="7">IA · גאל · Strong A · Emphatic — "surely redeem"; Leviticus legal formula; qamets + holem</td></tr>
-</table>
+</table></div>
 
 <h2>Part C — Discrimination: IA, IC, Imperative, Imperfect, or Perfect</h2>
 <p class="sub">Identify each form correctly. Note any context clues given.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Context</th><th>Identification</th><th>Root</th><th>Notes</th><th></th></tr>
 
 <tr><td>15</td><td class="hebrew">מ֥וֹת</td><td>preceded by לָ</td><td><input class="parse-field" id="15-id"></td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-nt"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
@@ -135,7 +135,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>25</td><td class="hebrew">הָלַ֥ךְ</td><td>no context</td><td><input class="parse-field" id="25-id"></td><td><input class="parse-field" id="25-r"></td><td><input class="parse-field" id="25-nt"></td><td><button class="toggle-btn" onclick="tog('a25')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a25"><td colspan="7">Perfect 3ms · הלך · Qamets + patach = Perfect 3ms; IA is הָל֣וֹךְ (holem-waw, not patach final)</td></tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
 p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -44,7 +44,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <h2>Part A — Strong and B-class Roots</h2>
 <p class="sub">All forms are Qal IC. Identify root, class, preposition, and function.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>IC or other?</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 
 <tr><td>1</td><td class="hebrew">לִ/שְׁמֹר</td><td><input class="parse-field" id="1-ic"></td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-cl"></td><td><input class="parse-field" id="1-p"></td><td><input class="parse-field" id="1-fn"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -70,11 +70,11 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>8</td><td class="hebrew">מֵ/עֲשׂוֹת</td><td><input class="parse-field" id="8-ic"></td><td><input class="parse-field" id="8-r"></td><td><input class="parse-field" id="8-cl"></td><td><input class="parse-field" id="8-p"></td><td><input class="parse-field" id="8-fn"></td><td><button class="toggle-btn" onclick="tog('a8')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a8"><td colspan="8">IC · עשה · III-ה + I-gutt. · מִן · From/cessation — "from doing"; וֹת ending</td></tr>
-</table>
+</table></div>
 
 <h2>Part B — III-ה and Biconsonantal</h2>
 <p class="sub">All forms are Qal IC. Identify root, class, preposition, and function.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Root</th><th>Root Class</th><th>Prep</th><th>Function</th><th></th></tr>
 
 <tr><td>9</td><td class="hebrew">לִ/רְאוֹת</td><td><input class="parse-field" id="9-r"></td><td><input class="parse-field" id="9-cl"></td><td><input class="parse-field" id="9-p"></td><td><input class="parse-field" id="9-fn"></td><td><button class="toggle-btn" onclick="tog('a9')">▶ Answer</button></td></tr>
@@ -97,12 +97,12 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>15</td><td class="hebrew">בְּ/בֹא</td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-cl"></td><td><input class="parse-field" id="15-p"></td><td><input class="parse-field" id="15-fn"></td><td><button class="toggle-btn" onclick="tog('a15')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a15"><td colspan="7">בוא · Biconsonantal · בְּ · Temporal (when) — "when he/she came"; בְּ + IC temporal clause</td></tr>
-</table>
+</table></div>
 
 <h2>Part C — I-י, I-נ, and Disambiguation</h2>
 <p class="sub">Some forms may be IC; others may be Imperative, Imperfect, or Perfect. Identify each correctly.</p>
 <div class="note-box"><strong>Key rule:</strong> Strong A-class: IC = Imperative 2ms in surface form — context alone distinguishes. I-י IC ends in <span class="hebrew">ת</span> (taw) — no Imperative has this ending.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>IC or other?</th><th>Root</th><th>Root Class</th><th>Notes</th><th></th></tr>
 
 <tr><td>16</td><td class="hebrew">לֶ/כֶת</td><td><input class="parse-field" id="16-ic"></td><td><input class="parse-field" id="16-r"></td><td><input class="parse-field" id="16-cl"></td><td><input class="parse-field" id="16-nt"></td><td><button class="toggle-btn" onclick="tog('a16')">▶ Answer</button></td></tr>
@@ -134,7 +134,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>25</td><td class="hebrew">שָׁמַר</td><td><input class="parse-field" id="25-ic"></td><td><input class="parse-field" id="25-r"></td><td><input class="parse-field" id="25-cl"></td><td><input class="parse-field" id="25-nt"></td><td><button class="toggle-btn" onclick="tog('a25')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a25"><td colspan="7">Perfect 3ms · שמר · Strong A — Qamets + patach = Perfect 3ms; not IC</td></tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

@@ -13,7 +13,7 @@
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .hint { background: #fff8e8; border-left: 3px solid #d4a017; padding: .35rem .75rem; margin: .4rem 0 .6rem; font-size: .86rem; color: #5a3e00; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .89rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .89rem; }
   th { background: #e0e8f0; padding: .36rem .45rem; border: 1px solid #bbb; text-align: left; font-size: .82rem; }
   td { padding: .26rem .38rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -57,7 +57,7 @@
 <h2>Part A — By Weak Class</h2>
 <h3>Group 1: III-ה</h3>
 <div class="hint">Diagnostic: 3ms ends in ָה- (vowel letter, not suffix); hireq-yod before 2ms/1cs suffix.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">1</td><td class="heb">עָשָׂה</td>
@@ -89,12 +89,12 @@
     <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">עֲלִיתֶם</td><td>III-ה</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">עלה</td><td>Hireq-yod before 2mp תֶּם-</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 2 -->
 <h3>Group 2: III-א</h3>
 <div class="hint">Diagnostic: silent aleph at R3; qamets before א in 3ms; 3cp ends in ָאוּ-.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">6</td><td class="heb">מָצָא</td>
@@ -126,12 +126,12 @@
     <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">מְצָאתֶם</td><td>III-א</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">מצא</td><td>III-א 2mp</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 3 -->
 <h3>Group 3: III-ח/ע (Lamed-Guttural)</h3>
 <div class="hint">Diagnostic: patach furtive before final ח or ע in 3ms/3fs (word-final open syllable only).</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">11</td><td class="heb">שָׁמַעַ</td>
@@ -163,12 +163,12 @@
     <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">שְׁלַחְתֶּם</td><td>III-gutt.</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">שלח</td><td>2mp</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 4 -->
 <h3>Group 4: I-Guttural (Pe-Guttural)</h3>
 <div class="hint">Diagnostic: R1 is ה/ח/ע/א — reduces to chateph before vocalic suffixes. Nearly identical to strong verb in Perfect.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">16</td><td class="heb">אָמַר</td>
@@ -200,12 +200,12 @@
     <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">עָמְדוּ</td><td>I-gutt.</td><td>3</td><td>p</td><td>c</td><td class="ans-heb">עמד</td><td>3cp; R1 reduces</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 5 -->
 <h3>Group 5: I-נ and I-י</h3>
 <div class="hint">Diagnostic: both are largely regular in the Perfect (unlike the Imperfect). I-נ: watch for R3 assimilation dagesh in נָתַן. I-י: regular suffix pattern.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">21</td><td class="heb">נָתַן</td>
@@ -237,12 +237,12 @@
     <td><button class="rbtn" onclick="tog(25)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-25"><td class="ans-lbl">✓</td><td class="ans-heb">יָדַעְתִּי</td><td>I-י</td><td>1</td><td>s</td><td>c</td><td class="ans-heb">ידע</td><td>I-י regular; 1cs</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 6 -->
 <h3>Group 6: Biconsonantal</h3>
 <div class="hint">Diagnostic: short monosyllabic 3ms (קָם, שָׁב); patach in suffix forms (שַׁבְתֶּם).</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">26</td><td class="heb">קָם</td>
@@ -274,12 +274,12 @@
     <td><button class="rbtn" onclick="tog(30)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-30"><td class="ans-lbl">✓</td><td class="ans-heb">שַׁבְתֶּם</td><td>Biconsonantal</td><td>2</td><td>p</td><td>m</td><td class="ans-heb">שוב</td><td>2mp</td></tr>
-</table>
+</table></div>
 
 <!-- GROUP 7 -->
 <h3>Group 7: Geminate</h3>
 <div class="hint">Diagnostic: dagesh forte in R2 (R2 = R3); monosyllabic 3ms like Biconsonantal, but two identical root consonants distinguish it.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">31</td><td class="heb">סָבַב</td>
@@ -311,14 +311,14 @@
     <td><button class="rbtn" onclick="tog(35)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-35"><td class="ans-lbl">✓</td><td class="ans-heb">סָבָּה</td><td>Geminate</td><td>3</td><td>s</td><td>f</td><td class="ans-heb">סבב</td><td>3fs; dagesh forte in final bet</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART B -->
 <h2>Part B — Mixed Forms</h2>
 <div class="hint">Identify the Weak Class first, then parse completely.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Weak Class</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th></th></tr>
   <tr>
     <td class="num">36</td><td class="heb">הָיִיתִי</td>
@@ -350,7 +350,7 @@
     <td><button class="rbtn" onclick="tog(40)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-40"><td class="ans-lbl">✓</td><td class="ans-heb">שָׁמְעָה</td><td>III-gutt.</td><td>3</td><td>s</td><td>f</td><td class="ans-heb">שמע</td><td>3fs; no patach furtive in closed syllable</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 

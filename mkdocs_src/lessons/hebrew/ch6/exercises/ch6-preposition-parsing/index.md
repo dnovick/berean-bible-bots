@@ -54,14 +54,14 @@
 
 <div class="instructions">
   <strong>Instructions:</strong> For each Hebrew prepositional phrase, fill in all five columns, then click <em>▶ Answer</em> to check.
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Column</th><th>What to supply</th></tr>
     <tr><td><strong>Preposition</strong></td><td>The preposition as it actually appears in this phrase (with pointing)</td></tr>
     <tr><td><strong>Base Form</strong></td><td>The citation/dictionary form of the preposition</td></tr>
     <tr><td><strong>Change / Reason</strong></td><td>What vowel changed (if any) and the grammatical reason</td></tr>
     <tr><td><strong>Object</strong></td><td>The noun governed by the preposition</td></tr>
     <tr><td><strong>Translation</strong></td><td>Full idiomatic English translation</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="controls">
@@ -76,7 +76,7 @@
 <h2>Part A — Inseparable Prepositions: Standard and Sheva Rules</h2>
 <p class="part-note">Items 1–8 · Default sheva, two-sheva rule, composite sheva matching</p>
 
-<table class="drill">
+<div style="overflow-x:auto;max-width:100%;"><table class="drill">
   <tr>
     <th>#</th><th>Hebrew</th><th>Preposition</th><th>Base Form</th><th>Change / Reason</th><th>Object</th><th>Translation</th><th></th>
   </tr>
@@ -256,7 +256,7 @@
     <td>like wisdom</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -266,7 +266,7 @@
 <h2>Part B — Inseparable Prepositions Fused with the Definite Article</h2>
 <p class="part-note">Items 9–16 · Normal consonants (patach + dagesh forte) and gutturals (qamets, no dagesh)</p>
 
-<table class="drill">
+<div style="overflow-x:auto;max-width:100%;"><table class="drill">
   <tr>
     <th>#</th><th>Hebrew</th><th>Preposition</th><th>Base Form</th><th>Change / Reason</th><th>Object</th><th>Translation</th><th></th>
   </tr>
@@ -446,7 +446,7 @@
     <td>like the man</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -456,7 +456,7 @@
 <h2>Part C — מִן: Independent, Prefixed, and Compensatory Forms</h2>
 <p class="part-note">Items 17–21 · Independent form · Nun assimilation · Compensatory lengthening before gutturals</p>
 
-<table class="drill">
+<div style="overflow-x:auto;max-width:100%;"><table class="drill">
   <tr>
     <th>#</th><th>Hebrew</th><th>Preposition</th><th>Base Form</th><th>Change / Reason</th><th>Object</th><th>Translation</th><th></th>
   </tr>
@@ -570,7 +570,7 @@
     <td>from God</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -580,7 +580,7 @@
 <h2>Part D — Independent Prepositions and the Direct Object Marker</h2>
 <p class="part-note">Items 22–25 · אֶל · עַל · עִם · אֵת (DOM)</p>
 
-<table class="drill">
+<div style="overflow-x:auto;max-width:100%;"><table class="drill">
   <tr>
     <th>#</th><th>Hebrew</th><th>Preposition</th><th>Base Form</th><th>Change / Reason</th><th>Object</th><th>Translation</th><th></th>
   </tr>
@@ -672,7 +672,7 @@
     <td>[marks "the king" as the definite direct object — untranslated in English]</td>
     <td></td>
   </tr>
-</table>
+</table></div>
 
 <hr class="sec">
 

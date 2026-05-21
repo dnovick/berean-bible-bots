@@ -10,7 +10,7 @@
   h1 { font-size: 1.3em; }
   h2 { font-size: 1.1em; margin-top: 1.5em; }
   p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; }
+  table { border-collapse: collapse;  margin-bottom: 1.5em; }
   th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
   th { background: #e8e8e8; }
   td.aram { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; direction: rtl; min-width: 80px; }

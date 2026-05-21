@@ -13,7 +13,7 @@
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .93rem; }
   .passage { direction: rtl; unicode-bidi: embed; font-size: 1.2rem; line-height: 2; background: #fafaf6; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; margin: .8rem 0; }
   .note-box { background: #fff8e8; border-left: 3px solid #d4a017; padding: .5rem .9rem; margin: .6rem 0; font-size: .88rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .85rem; }
   td { padding: .32rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -52,7 +52,7 @@
 <!-- PASSAGE A -->
 <h2>Passage A — Genesis 1:1–5</h2>
 <div class="passage">בְּרֵאשִׁ֖ית <strong>בָּרָ֣א</strong> אֱלֹהִ֑ים אֵ֥ת הַשָּׁמַ֖יִם וְאֵ֥ת הָאָֽרֶץ׃ וְהָאָ֗רֶץ <strong>הָיְתָ֥ה</strong> תֹ֙הוּ֙ וָבֹ֔הוּ</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Usage Type</th><th></th></tr>
 <tr>
 <td class="num">1</td><td class="heb">בָּרָ֣א</td>
@@ -82,13 +82,13 @@
 <td>3</td><td>s</td><td>f</td><td class="ans-heb">היה</td>
 <td colspan="2">Simple Past — III-ה weak; 3fs ending ָה-</td>
 </tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- PASSAGE B -->
 <h2>Passage B — Genesis 2:15–17</h2>
 <div class="passage">מִכֹּ֥ל עֵֽץ־הַגָּ֖ן <strong>אָכֹ֥ל תֹּאכֵֽל</strong>׃ כִּ֗י בְּיֹ֛ום <strong>אֲכָלְךָ֥</strong> מִמֶּ֖נּוּ מֹ֥ות <strong>תָּמֽוּת</strong>׃</div>
 <div class="note-box">Form #3 (אָכֹ֥ל) is included as a recognition test — it is <em>not</em> a Perfect verb.</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Usage Type</th><th></th></tr>
 <tr>
 <td class="num">3</td><td class="heb">אָכֹ֥ל</td>
@@ -118,12 +118,12 @@
 <td>2</td><td>s</td><td>m</td><td class="ans-heb">אכל</td>
 <td colspan="2">Simple Past — Perfect with 2ms pronominal suffix</td>
 </tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- PASSAGE C -->
 <h2>Passage C — Genesis 3:6–13</h2>
 <div class="passage">הָֽאִשָּׁה֙ אֲשֶׁ֣ר <strong>נָתַ֣תָּה</strong> עִמָּדִ֔י הִ֛וא <strong>נָֽתְנָה</strong>־לִּ֥י מִן־הָעֵ֖ץ׃ מַה־זֹּ֣את <strong>עָשִׂ֑ית</strong> הַנָּחָ֥שׁ <strong>הִשִּׁיאַ֖נִי</strong></div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Usage Type</th><th></th></tr>
 <tr>
 <td class="num">5</td><td class="heb">נָתַ֣תָּה</td>
@@ -167,12 +167,12 @@
 <td>2</td><td>s</td><td>f</td><td class="ans-heb">עשה</td>
 <td colspan="2">Simple Past — III-ה weak; 2fs suffix תְּ-</td>
 </tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- PASSAGE D -->
 <h2>Passage D — Genesis 4:1–10</h2>
 <div class="passage">וְהָ֣אָדָ֔ם <strong>יָדַ֖ע</strong> אֶת־חַוָּ֣ה אִשְׁתֹּ֑ו׃ לֹ֣א <strong>יָדַ֔עְתִּי</strong></div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Usage Type</th><th></th></tr>
 <tr>
 <td class="num">8</td><td class="heb">יָדַ֖ע</td>
@@ -202,11 +202,11 @@
 <td>1</td><td>s</td><td>c</td><td class="ans-heb">ידע</td>
 <td colspan="2">Perfect of Experience — Cain claims not to know; existential knowledge in question</td>
 </tr>
-</table>
+</table></div>
 <hr class="sec"/>
 <!-- PASSAGE E -->
 <h2>Passage E — Additional Forms for Analysis</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Gender</th><th>Root</th><th>Usage Type</th><th></th></tr>
 <tr>
 <td class="num">10</td><td class="heb">כָּבֵד</td>
@@ -268,7 +268,7 @@
 <td class="ans-lbl">✓</td><td class="ans-heb">קָרְאָ֤ה</td><td>3</td><td>s</td><td>f</td><td class="ans-heb">קרא</td>
 <td colspan="2">Simple Past — III-א weak; 3fs ָה-</td>
 </tr>
-</table>
+</table></div>
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
   function tog(id) {

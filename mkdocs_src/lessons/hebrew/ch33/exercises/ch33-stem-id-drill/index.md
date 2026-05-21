@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -40,12 +40,12 @@
 <p>For each of the 24 forms, identify the stem (Qal / Piel / Pual), parse fully, and translate. All roots are weak.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Stem</th><th>III-ה Perfect 3ms</th><th>III-ה Imperfect 3ms</th><th>Participle ms</th></tr>
     <tr><td><strong>Qal</strong></td><td>qamets–ָה (גָּלָה)</td><td>יִ prefix + ֶה (יִגְלֶה)</td><td>active (גֹּלֶה)</td></tr>
     <tr><td><strong>Piel</strong></td><td>hiriq + dagesh + ָּה (גִּלָּה)</td><td>יְ + patach + dagesh + ֶּה (יְגַלֶּה)</td><td>מְ + patach + dagesh (מְגַלֶּה)</td></tr>
     <tr><td><strong>Pual</strong></td><td>qibbuts + dagesh + ָּה (גֻּלָּה)</td><td>יְ + qibbuts + dagesh + ֶּה (יְגֻלֶּה)</td><td>מְ + qibbuts + dagesh (מְגֻלֶּה)</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="tip"><strong>Key pairs:</strong>
@@ -59,7 +59,7 @@ Piel imperfect יְבָרֵךְ (tsere under ב) vs Pual imperfect יְבֹרַ�
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Translation</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">גָּלָה</span></td>
@@ -182,7 +182,7 @@ Piel imperfect יְבָרֵךְ (tsere under ב) vs Pual imperfect יְבֹרַ�
     <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td></tr>
   <tr class="answer-row" id="r24"><td colspan="8"><strong>Pual · Perfect · 3ms · צוה · "he was commanded"</strong> — qibbuts under צ + dagesh in ו + final ָּה; III-ה Pual; very common in OT (Numbers, Deut, etc.)</td></tr>
 
-</table>
+</table></div>
 
 <script>
 function toggle(id) {

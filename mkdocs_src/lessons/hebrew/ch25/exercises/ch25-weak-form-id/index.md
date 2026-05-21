@@ -11,7 +11,7 @@
   h2 { font-size: 1.15em; margin-top: 2em; color: #444; }
   h3 { font-size: 1em; margin-top: 1.5em; color: #555; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .85em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -45,7 +45,7 @@
 <p>For each form: (1) <strong>identify the weak class</strong>, (2) <strong>parse</strong> (conjugation + PGN), (3) <strong>identify the root</strong>.</p>
 
 <div class="legend">
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr><th>Class</th><th>Key diagnostic signal</th></tr>
     <tr><td><strong>III-א</strong></td><td>Silent final א; form looks nearly identical to the strong root</td></tr>
     <tr><td><strong>III-ה</strong></td><td>Final ָה (perfect) / ֶה (imperfect/participle) / וֹת (inf. construct) / apocopated wayyiqtol</td></tr>
@@ -55,7 +55,7 @@
     <tr><td><strong>I-י</strong></td><td>נוֹ prefix (perfect/weqatal/participle); יִוָּ / הִוָּ prefix (imperfect/wayyiqtol/imperative/inf.)</td></tr>
     <tr><td><strong>Biconsonantal</strong></td><td><strong>נָ prefix</strong> (<em>qamets</em>) in perfect and participle ms; dagesh forte in R1 + contracted root in imperfect/wayyiqtol/imperative/inf.</td></tr>
     <tr><td><strong>Geminate</strong></td><td><strong>נָ prefix</strong> (<em>qamets</em>) in perfect and participle ms (same as Biconsonantal!); <em>dagesh forte</em> in R2/R3 + <em>holem</em> in imperfect/wayyiqtol/imperative; perfect = participle</td></tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="controls">
@@ -68,7 +68,7 @@
 <h2>Part A — By Class</h2>
 
 <div class="section-label">Group 1 — III-א</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>1</td><td><span class="heb">נִמְצָא</span></td><td>Gen 44:12</td><td>silent final א; identical in pointing to participle ms</td>
@@ -95,10 +95,10 @@
     <td><input class="parse-field" id="a5c"></td><td><input class="parse-field" id="a5g"></td><td><input class="parse-field" id="a5p"></td><td><input class="parse-field" id="a5r"></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶</button></td></tr>
   <tr class="answer-row" id="r5"><td colspan="9"><strong>III-א · Participle · ms · מָצָא</strong> — "that which was found [in the land of Egypt]"; article + Niphal participle functioning as a noun</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 2 — III-ה</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>6</td><td><span class="heb">נִגְלָה</span></td><td>Isa 40:5</td><td>final ָה — it is the root ending, not the 3fs suffix</td>
@@ -125,10 +125,10 @@
     <td><input class="parse-field" id="a10c"></td><td><input class="parse-field" id="a10g"></td><td><input class="parse-field" id="a10p"></td><td><input class="parse-field" id="a10r"></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶</button></td></tr>
   <tr class="answer-row" id="r10"><td colspan="9"><strong>III-ה · Wayyiqtol · 3ms · רָאָה</strong> — "and the LORD appeared to Abram"; doubly weak: III-ה + ר compensatory lengthening</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 3 — I-guttural</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>11</td><td><span class="heb">נֶאֱמַר</span></td><td>Exo 5:13</td><td>נֶ prefix + composite shewa (hateph-seghol) under א</td>
@@ -155,10 +155,10 @@
     <td><input class="parse-field" id="a15c"></td><td><input class="parse-field" id="a15g"></td><td><input class="parse-field" id="a15p"></td><td><input class="parse-field" id="a15r"></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶</button></td></tr>
   <tr class="answer-row" id="r15"><td colspan="9"><strong>I-guttural · Participle · ms · אָמַן</strong> — "he is the faithful God who keeps covenant"; used here as a predicate adjective</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 4 — I-נ</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>16</td><td><span class="heb">נִגַּשׁ</span></td><td>Gen 44:18</td><td>נִ prefix; dagesh forte in ג (R2); נ of root invisible</td>
@@ -185,10 +185,10 @@
     <td><input class="parse-field" id="a20c"></td><td><input class="parse-field" id="a20g"></td><td><input class="parse-field" id="a20p"></td><td><input class="parse-field" id="a20r"></td>
     <td><button class="reveal-btn" onclick="toggle('r20')">▶</button></td></tr>
   <tr class="answer-row" id="r20"><td colspan="9"><strong>I-נ · Wayyiqtol · 3ms · נָצַל</strong> — "and Jacob was delivered / passed over [Peniel]"; the Peniel narrative; passive Niphal of נָצַל</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 5 — I-י</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>21</td><td><span class="heb">נוֹלַד</span></td><td>Gen 21:3</td><td>נוֹ prefix + patach under R2 — perfect/weqatal pattern</td>
@@ -215,10 +215,10 @@
     <td><input class="parse-field" id="a25c"></td><td><input class="parse-field" id="a25g"></td><td><input class="parse-field" id="a25p"></td><td><input class="parse-field" id="a25r"></td>
     <td><button class="reveal-btn" onclick="toggle('r25')">▶</button></td></tr>
   <tr class="answer-row" id="r25"><td colspan="9"><strong>I-י · Participle · ms · יָלַד</strong> — "a son shall be born to the house of David"; prophetic oracle; נוֹלָד (qamets) = participle; cf. נוֹלַד (patach) = perfect</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 6 — III-ח/ע</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>26</td><td><span class="heb">נִשְׁמַע</span></td><td>Est 1:20</td><td>patach furtive beneath final ע in open stressed syllable</td>
@@ -245,10 +245,10 @@
     <td><input class="parse-field" id="a30c"></td><td><input class="parse-field" id="a30g"></td><td><input class="parse-field" id="a30p"></td><td><input class="parse-field" id="a30r"></td>
     <td><button class="reveal-btn" onclick="toggle('r30')">▶</button></td></tr>
   <tr class="answer-row" id="r30"><td colspan="9"><strong>III-ח/ע · Participle · ms · שָׁמַע</strong> — "the end of the matter; all has been heard"; substantival participle closing Ecclesiastes; qamets under R2 + furtive before ע</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 7 — Biconsonantal</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>31</td><td><span class="heb">נָכוֹן</span></td><td>Gen 41:32</td><td><strong>נָ prefix</strong> (qamets under נ) + medial וֹ — perfect 3ms of biconsonantal</td>
@@ -275,10 +275,10 @@
     <td><input class="parse-field" id="a35c"></td><td><input class="parse-field" id="a35g"></td><td><input class="parse-field" id="a35p"></td><td><input class="parse-field" id="a35r"></td>
     <td><button class="reveal-btn" onclick="toggle('r35')">▶</button></td></tr>
   <tr class="answer-row" id="r35"><td colspan="9"><strong>Biconsonantal · Imperative · 2ms · קוּם</strong> — "be established! / rise up!"; הִ + dagesh forte in R1 + contracted root; same shape as inf. construct — context identifies</td></tr>
-</table>
+</table></div>
 
 <div class="section-label">Group 8 — Geminate (Ayin-Doubled)</div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Diagnostic Signal</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>36</td><td><span class="heb">נָסַב</span></td><td>Josh 15:3</td><td><strong>נָ prefix</strong> (qamets) — same as Biconsonantal; root is ס-ב-ב (three consonants, R2=R3) not hollow</td>
@@ -305,13 +305,13 @@
     <td><input class="parse-field" id="a40c"></td><td><input class="parse-field" id="a40g"></td><td><input class="parse-field" id="a40p"></td><td><input class="parse-field" id="a40r"></td>
     <td><button class="reveal-btn" onclick="toggle('r40')">▶</button></td></tr>
   <tr class="answer-row" id="r40"><td colspan="9"><strong>Geminate · Participle · ms · סָבַב</strong> — "I go around your altar, O LORD"; נָ prefix identical to perfect 3ms — the perfect/participle ambiguity is the same challenge as the Biconsonantal class</td></tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Mixed (All Eight Classes)</h2>
 <p>No diagnostic hints — identify the class first, then parse.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Reference</th><th>Class</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 
   <tr><td>41</td><td><span class="heb">תֵרָאֶה</span></td><td>Gen 1:9</td>
@@ -373,7 +373,7 @@
     <td><input class="parse-field" id="b12c"></td><td><input class="parse-field" id="b12g"></td><td><input class="parse-field" id="b12p"></td><td><input class="parse-field" id="b12r"></td>
     <td><button class="reveal-btn" onclick="toggle('rb12')">▶</button></td></tr>
   <tr class="answer-row" id="rb12"><td colspan="8"><strong>I-guttural · Imperfect · 3mp · עָמַד</strong> — "they shall stand before Eleazar the priest"; יֵ prefix (no dagesh in ע) + 3mp ending</td></tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

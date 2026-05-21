@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
 p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#1a4a7a;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -46,7 +46,7 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <h2>Part A — Masculine Nouns and Article</h2>
 <p class="sub">Parse each form and state its function in a sentence.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Function</th><th></th></tr>
 
 <tr><td>1</td><td class="greek">λόγος</td><td><input class="parse-field" id="1-cs"></td><td><input class="parse-field" id="1-nb"></td><td><input class="parse-field" id="1-gn"></td><td><input class="parse-field" id="1-lx"></td><td><input class="parse-field" id="1-fn"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -78,11 +78,11 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <tr><td>10</td><td class="greek">κύριοι</td><td><input class="parse-field" id="10-cs"></td><td><input class="parse-field" id="10-nb"></td><td><input class="parse-field" id="10-gn"></td><td><input class="parse-field" id="10-lx"></td><td><input class="parse-field" id="10-fn"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a10"><td colspan="8">Nominative · Plural · Masculine · κύριος · Subject — "lords/masters" as doers of action</td></tr>
-</table>
+</table></div>
 
 <h2>Part B — Neuter Nouns, Article, and Mixed</h2>
 <p class="sub">Remember: neuter nominative = neuter accusative. Context decides function.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Function / Notes</th><th></th></tr>
 
 <tr><td>11</td><td class="greek">ἔργον</td><td><input class="parse-field" id="11-cs"></td><td><input class="parse-field" id="11-nb"></td><td><input class="parse-field" id="11-gn"></td><td><input class="parse-field" id="11-lx"></td><td><input class="parse-field" id="11-fn"></td><td><button class="toggle-btn" onclick="tog('a11')">▶ Answer</button></td></tr>
@@ -114,11 +114,11 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <tr><td>20</td><td class="greek">ἔργα</td><td><input class="parse-field" id="20-cs"></td><td><input class="parse-field" id="20-nb"></td><td><input class="parse-field" id="20-gn"></td><td><input class="parse-field" id="20-lx"></td><td><input class="parse-field" id="20-fn"></td><td><button class="toggle-btn" onclick="tog('a20')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a20"><td colspan="8">Nom. or Acc. · Plural · Neuter · ἔργον · Subject or direct object — same form as #12; reinforces that neuter plural -α is ambiguous without context</td></tr>
-</table>
+</table></div>
 
 <h2>Part C — Context Sentences</h2>
 <p class="sub">Parse the bold form and translate the whole sentence.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Sentence</th><th>Bold Form: Parse</th><th>Translation</th><th></th></tr>
 
 <tr><td>C1</td><td>ὁ θεὸς ἀγαπᾷ <strong>τὸν κόσμον</strong></td><td><input class="parse-field" id="c1-parse" style="width:98%"></td><td><input class="parse-field" id="c1-trans" style="width:98%"></td><td><button class="toggle-btn" onclick="tog('ac1')">▶ Answer</button></td></tr>
@@ -129,7 +129,7 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <tr><td>C3</td><td>βλέπω <strong>τὰ ἔργα</strong></td><td><input class="parse-field" id="c3-parse" style="width:98%"></td><td><input class="parse-field" id="c3-trans" style="width:98%"></td><td><button class="toggle-btn" onclick="tog('ac3')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ac3"><td colspan="5">τὰ ἔργα: Accusative plural neuter — article + noun, direct object of βλέπω · Translation: "I see the works/deeds"</td></tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

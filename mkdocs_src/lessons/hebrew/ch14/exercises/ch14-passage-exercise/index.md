@@ -12,7 +12,7 @@
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   .passage { direction: rtl; unicode-bidi: embed; font-size: 1.2rem; line-height: 2.1; background: #fafaf6; border: 1px solid #ddd; border-radius: 4px; padding: .6rem 1rem; margin: .8rem 0; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .9rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .9rem; }
   th { background: #e0e8f0; padding: .38rem .5rem; border: 1px solid #bbb; text-align: left; font-size: .83rem; }
   td { padding: .28rem .4rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
@@ -52,7 +52,7 @@
 <h2>Passage A — Genesis 3:1–13</h2>
 <div class="passage">וְהַנָּחָ֗שׁ <strong>הָיָ֤ה</strong> עָרוּם — <strong>אָמַ֣ר</strong> אֱלֹהִ֔ים — <strong>אָכַ֑לְנוּ</strong> — מַה־זֹּ֣את <strong>עָשִׂ֑ית</strong> — <strong>הִשִּׁיאַ֖נִי</strong></div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
   <tr>
     <td class="num">1</td><td class="heb">הָיָ֤ה</td>
@@ -82,7 +82,7 @@
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">עָשִׂ֑ית</td><td>2</td><td>s</td><td>f</td><td class="ans-heb">עשה</td><td>III-ה</td><td colspan="2">Simple Past — 2fs: hireq-yod + תְּ</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -90,7 +90,7 @@
 <h2>Passage B — Genesis 6:9–22</h2>
 <div class="passage">נֹ֗חַ … <strong>הָיָ֖ה</strong> בְּדֹרֹתָ֑יו — קֵ֛ץ כָּל־בָּשָׂ֖ר <strong>בָּ֣א</strong> לְפָנָ֑י — כִּי <strong>מָלְאָ֤ה</strong> הָאָ֙רֶץ֙ חָמָ֔ס — כְּכֹ֨ל אֲשֶׁ֧ר <strong>צִוָּ֛ה</strong> אֹתֹ֖ו אֱלֹהִ֥ים</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
   <tr>
     <td class="num">5</td><td class="heb">הָיָ֖ה</td>
@@ -120,7 +120,7 @@
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">צִוָּ֛ה</td><td>3</td><td>s</td><td>m</td><td class="ans-heb">צוה</td><td>III-ה</td><td colspan="2">Simple Past — Piel perfect 3ms (not Qal); noted for recognition</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -128,7 +128,7 @@
 <h2>Passage C — Genesis 22:1–12</h2>
 <div class="passage">וְהָאֱלֹהִ֖ים <strong>נִסָּ֣ה</strong> אֶת־אַבְרָהָ֑ם — אֲשֶׁ֙ר <strong>אָהַ֣בְתָּ</strong> — עַתָּ֣ה <strong>יָדַ֗עְתִּי</strong> — לֹ֣א <strong>חָשַׂ֤כְתָּ</strong> אֶת בִּנְךָ֙</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
   <tr>
     <td class="num">9</td><td class="heb">נִסָּ֣ה</td>
@@ -158,7 +158,7 @@
     <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">חָשַׂ֤כְתָּ</td><td>2</td><td>s</td><td>m</td><td class="ans-heb">חשך</td><td>III-guttural</td><td colspan="2">Simple Past — "you have not withheld"</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
@@ -166,7 +166,7 @@
 <h2>Passage D — Exodus 1:17–21</h2>
 <div class="passage">וְלֹ֣א <strong>עָשׂ֔וּ</strong> כַּאֲשֶׁ֛ר דִּבֶּ֥ר … מֶ֣לֶךְ מִצְרָ֑יִם — מַדּ֙וּעַ֙ <strong>עֲשִׂיתֶ֣ן</strong> הַדָּבָ֣ר הַזֶּ֔ה</div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
   <tr>
     <td class="num">13</td><td class="heb">עָשׂ֔וּ</td>
@@ -182,14 +182,14 @@
     <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-14"><td class="ans-lbl">✓</td><td class="ans-heb">עֲשִׂיתֶ֣ן</td><td>2</td><td>p</td><td>f</td><td class="ans-heb">עשה</td><td>III-ה</td><td colspan="2">Simple Past — 2fp; hireq-yod + תֶּן-</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PASSAGE E -->
 <h2>Passage E — Additional Forms</h2>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Form</th><th>Pers.</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Weak Class</th><th>Usage</th><th></th></tr>
   <tr>
     <td class="num">15</td><td class="heb">שָׁמַ֥עְנוּ</td>
@@ -233,7 +233,7 @@
     <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">תַּ֫מּוּ</td><td>3</td><td>p</td><td>c</td><td class="ans-heb">תמם</td><td>Geminate</td><td colspan="2">Simple Past — 3cp; dagesh forte in double mem</td></tr>
-</table>
+</table></div>
 
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];

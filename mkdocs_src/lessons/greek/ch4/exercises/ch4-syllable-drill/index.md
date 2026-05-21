@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
 p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#1a4a7a;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -46,7 +46,7 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <h2>Part A — Two and Three Syllable Words</h2>
 <p class="sub">Divide, identify the accent position, and name the accent type.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Word</th><th>Syllable Division</th><th>Accent Position</th><th>Accent Type</th><th></th></tr>
 
 <tr><td>1</td><td class="greek">θεός</td><td><input class="parse-field" id="1-div"></td><td><input class="parse-field" id="1-pos"></td><td><input class="parse-field" id="1-type"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -78,11 +78,11 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <tr><td>10</td><td class="greek">εἰρήνη</td><td><input class="parse-field" id="10-div"></td><td><input class="parse-field" id="10-pos"></td><td><input class="parse-field" id="10-type"></td><td><button class="toggle-btn" onclick="tog('a10')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a10"><td colspan="6">εἰ-ρή-νη · Penult · Circumflex (properispomenon) — long η in penult carries the circumflex</td></tr>
-</table>
+</table></div>
 
 <h2>Part B — Three to Five Syllable Words</h2>
 <p class="sub">Longer words — apply syllabification rules carefully to consonant clusters.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Word</th><th>Syllable Division</th><th>Accent Position</th><th>Accent Type</th><th></th></tr>
 
 <tr><td>11</td><td class="greek">ἄνθρωπος</td><td><input class="parse-field" id="11-div"></td><td><input class="parse-field" id="11-pos"></td><td><input class="parse-field" id="11-type"></td><td><button class="toggle-btn" onclick="tog('a11')">▶ Answer</button></td></tr>
@@ -114,7 +114,7 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <tr><td>20</td><td class="greek">ἀποκάλυψις</td><td><input class="parse-field" id="20-div"></td><td><input class="parse-field" id="20-pos"></td><td><input class="parse-field" id="20-type"></td><td><button class="toggle-btn" onclick="tog('a20')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a20"><td colspan="6">ἀ-πο-κά-λυ-ψις · Antepenult · Acute (proparoxytone) — 5 syllables; ψ is a double consonant (π+σ) and stays with its vowel</td></tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

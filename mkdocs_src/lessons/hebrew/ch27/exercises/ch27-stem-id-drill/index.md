@@ -11,7 +11,7 @@
   .subtitle { color: #555; font-style: italic; margin-bottom: 1.5em; }
   .instructions { background: #f7f7f7; border-left: 4px solid #999; padding: 0.8em 1em; margin-bottom: 1.5em; }
   .note { background: #f0f4ff; border-left: 4px solid #4466aa; padding: 0.5em 1em; margin: 0.8em 0; font-size: 0.9em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1.5em; font-size: 0.92em; }
+  table { border-collapse: collapse;  margin-bottom: 1.5em; font-size: 0.92em; }
   th { background: #444; color: #fff; padding: 6px 8px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 8px; vertical-align: middle; }
   .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
@@ -41,7 +41,7 @@
 <button onclick="hideAll()">Hide All Answers</button>
 <button onclick="clearAll()">Clear All Inputs</button>
 </div>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <thead>
 <tr><th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
 </thead>
@@ -239,7 +239,7 @@
 </tr>
 <tr class="ans-row" id="ans-24"><td>24</td><td class="heb">נוֹלָד</td><td>Niphal</td><td>Participle</td><td>ms</td><td class="heb">ילד</td><td>נוֹ– prefix: I-י Niphal Participle ms</td></tr>
 </tbody>
-</table>
+</table></div>
 <script>
 function toggle(id) {
   var r = document.getElementById('ans-' + id);

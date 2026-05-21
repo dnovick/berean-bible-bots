@@ -10,7 +10,7 @@
   h1 { font-size: 1.3em; }
   h2 { font-size: 1.1em; margin-top: 1.5em; }
   p.instructions { background: #f5f5f5; border-left: 4px solid #888; padding: .6em 1em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; }
+  table { border-collapse: collapse;  margin-bottom: 1em; }
   th, td { border: 1px solid #ccc; padding: .35em .5em; text-align: left; vertical-align: top; }
   th { background: #e8e8e8; }
   td.letter { font-size: 1.4em; text-align: center; font-family: "SBL Hebrew", "Ezra SIL", serif; }
@@ -37,7 +37,7 @@
   <button class="btn" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <thead>
     <tr>
       <th>#</th><th>Letter</th><th>Name</th><th>Transliteration</th><th>Sound</th><th>Category</th><th>Heb. Equiv.</th><th></th>
@@ -45,7 +45,7 @@
   </thead>
   <tbody id="table-body">
   </tbody>
-</table>
+</table></div>
 
 <script>
 var data = [

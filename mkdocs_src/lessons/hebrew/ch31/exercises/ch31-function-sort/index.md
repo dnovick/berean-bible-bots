@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -39,14 +39,14 @@
 
 <p>Classify each Piel verb as <strong>I</strong> (Intensive), <strong>F</strong> (Factitive), <strong>D</strong> (Declarative), <strong>SA</strong> (Simple Action), or <strong>DN</strong> (Denominative). All roots are weak. Type your answer in the Function column, then click <strong>▶ Answer</strong> to check.</p>
 
-<table class="ref-table">
+<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
   <tr><th>Code</th><th>Function</th><th>Key diagnostic question</th></tr>
   <tr><td><strong>I</strong></td><td>Intensive</td><td>Does the subject do the Qal action more forcefully, completely, or repeatedly?</td></tr>
   <tr><td><strong>F</strong></td><td>Factitive</td><td>Does the subject cause an object to <em>enter</em> a state? (Stative Qal root.)</td></tr>
   <tr><td><strong>D</strong></td><td>Declarative</td><td>Does the subject <em>pronounce or treat</em> something as being in a state?</td></tr>
   <tr><td><strong>SA</strong></td><td>Simple Action</td><td>Is the Piel the standard form with no common Qal equivalent?</td></tr>
   <tr><td><strong>DN</strong></td><td>Denominative</td><td>Is the Piel verb built on a <em>noun</em> and performs that noun's characteristic action?</td></tr>
-</table>
+</table></div>
 
 <div class="tip">
   <strong>Tip:</strong> Stative root (to be X) + Piel = Piel <em>causes</em> X → <strong>Factitive</strong>.
@@ -61,7 +61,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Conjugation</th><th>Root</th><th>Ref</th><th>Contextual Gloss</th><th>Function</th><th></th>
   </tr>
@@ -346,7 +346,7 @@
     <td colspan="8"><strong>I — Intensive</strong> · Root: <span class="heb">בנה</span> (Qal: to build) · Piel = build thoroughly, construct comprehensively. Used of Solomon's comprehensive temple-building program. III-ה root; dagesh in נ</td>
   </tr>
 
-</table>
+</table></div>
 
 <script>
 function toggle(id) {

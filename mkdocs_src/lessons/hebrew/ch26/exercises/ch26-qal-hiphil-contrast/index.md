@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
   td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -49,7 +49,7 @@
 <h2>Part A — Motion Verbs (Causative)</h2>
 <p>These roots describe motion in the Qal. The Hiphil makes someone <em>else</em> do the moving.</p>
 
-<table id="tA">
+<div style="overflow-x:auto;max-width:100%;"><table id="tA">
   <tr>
     <th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Ref</th>
     <th>Translation</th><th>Function</th><th></th>
@@ -158,7 +158,7 @@
   <tr class="answer-row" id="r8">
     <td colspan="8"><strong>it watered</strong> — <em>Causative</em> — the mist caused the ground to receive water; Qal "to drink" → Hiphil "to give to drink / water"</td>
   </tr>
-</table>
+</table></div>
 
 <!-- PART B -->
 <h2>Part B — Stative Verbs (Factitive and Declarative)</h2>
@@ -172,7 +172,7 @@
   </ul>
 </div>
 
-<table id="tB">
+<div style="overflow-x:auto;max-width:100%;"><table id="tB">
   <tr>
     <th>#</th><th>Root</th><th>Qal Meaning</th><th>Hiphil Form</th><th>Ref</th>
     <th>Translation</th><th>Function</th><th></th>
@@ -216,13 +216,13 @@
   <tr class="answer-row" id="r11">
     <td colspan="8"><strong>they condemned (the guilty) / declared wicked</strong> — <em>Declarative</em> — a legal verdict declaring someone to be in the state of guilt (Deu 25:1 contrasts this with acquitting the innocent)</td>
   </tr>
-</table>
+</table></div>
 
 <!-- PART C -->
 <h2>Part C — Verbs with No Common Qal</h2>
 <p>Some roots are attested almost exclusively in the Hiphil. The Hiphil is their "base" form in terms of usage frequency.</p>
 
-<table id="tC">
+<div style="overflow-x:auto;max-width:100%;"><table id="tC">
   <tr>
     <th>#</th><th>Root</th><th>Qal Situation</th><th>Hiphil Form</th><th>Ref</th>
     <th>Translation</th><th>Function</th><th></th>
@@ -266,7 +266,7 @@
   <tr class="answer-row" id="r14">
     <td colspan="8"><strong>he told / reported</strong> — <em>Simple Action</em> — the Hiphil is the standard form; the root idea is "to place before / face" someone; Hiphil = to put information before someone</td>
   </tr>
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

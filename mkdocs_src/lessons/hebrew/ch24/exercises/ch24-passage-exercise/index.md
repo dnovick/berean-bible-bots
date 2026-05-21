@@ -15,7 +15,7 @@
   .ref { font-weight: bold; font-size: 1rem; color: #444; display: block; margin-bottom: .3rem; }
   .hebrew { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; line-height: 2; margin: .3rem 0; }
   .english { color: #555; font-style: italic; margin: .2rem 0 .6rem; }
-  table { border-collapse: collapse; width: 100%; margin: .5rem 0; font-size: .92rem; }
+  table { border-collapse: collapse;  margin: .5rem 0; font-size: .92rem; }
   th { background: #e8e8e8; padding: .4rem .6rem; border: 1px solid #ccc; text-align: left; }
   td { padding: .35rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
   td.verb-cell { font-size: 1.1rem; direction: rtl; unicode-bidi: embed; font-weight: bold; }
@@ -82,7 +82,7 @@
   <span class="ref">37:7</span>
   <div class="hebrew">וְהִנֵּה <strong>קָ֣מָה</strong> אֲלֻמָּתִ֗י וְגַם <strong>נִצָּ֑בָה</strong></div>
   <div class="english">"and behold, my sheaf [1] ____ and [2] ____."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -116,14 +116,14 @@
       <td class="verb-cell">נִצָּבָה</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Perfect 3fs | נָצַב | Reflexive — <em>it stood upright</em> (the sheaf stationed itself)</td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="passage-block">
   <span class="ref">37:36</span>
   <div class="hebrew">וְהַ֨מְּדָנִ֔ים <strong>מָכְר֥וּ</strong> אֹת֖וֹ … <strong>וַיִּמָּכֵ֤ר</strong> יוֹסֵף֙ אֶל־מִצְרָ֔יִם</div>
   <div class="english">"Now the Midianites [3] ____ him … and Joseph [4] ____ into Egypt."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -157,7 +157,7 @@
       <td class="verb-cell">וַיִּמָּכֵר</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Wayyiqtol 3ms | מָכַר | Passive — <em>he was sold</em></td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <hr class="section-break">
@@ -167,7 +167,7 @@
   <span class="ref">44:9</span>
   <div class="hebrew">אֲשֶׁ֨ר <strong>יִמָּצֵ֥א</strong> אִתּ֛וֹ מֵעֲבָדֶ֖יךָ וָמֵ֑ת</div>
   <div class="english">"With whichever of your servants [5] ____ [the cup] shall die."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -186,14 +186,14 @@
       <td class="verb-cell">יִמָּצֵא</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Imperfect 3ms | מָצָא | Passive — <em>is found</em></td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="passage-block">
   <span class="ref">44:12</span>
   <div class="hebrew"><strong>וַיִּמָּצֵא֙</strong> הַגָּבִ֔יעַ בְּאַמְתַּ֖חַת בִּנְיָמִֽן</div>
   <div class="english">"And the cup [6] ____ in Benjamin's sack."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -212,14 +212,14 @@
       <td class="verb-cell">וַיִּמָּצֵא</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Wayyiqtol 3ms | מָצָא | Passive — <em>was found</em></td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="passage-block">
   <span class="ref">44:20</span>
   <div class="hebrew">יֶ֣שׁ לָ֜נוּ אָ֣ב זָקֵ֗ן וְיֶ֤לֶד זְקֻנִים֙ קָטָ֔ן וְאָחִ֥יו מֵ֖ת <strong>וַיִּוָּתֵ֣ר</strong> ה֑וּא</div>
   <div class="english">"We have an aged father and a young child of his old age … and he alone [7] ____."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -238,7 +238,7 @@
       <td class="verb-cell">וַיִּוָּתֵר</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Wayyiqtol 3ms | יָתַר | Passive/Middle — <em>was left, remained</em></td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <hr class="section-break">
@@ -248,7 +248,7 @@
   <span class="ref">45:1</span>
   <div class="hebrew">וְלֹא־<strong>יָכֹל֩</strong> יוֹסֵ֨ף לְהִתְאַפֵּ֜ק לְכֹ֣ל <strong>הַנִּצָּבִ֣ים</strong> עָלָ֗יו</div>
   <div class="english">"Joseph [8] ____ no longer control himself before all those [9] ____ near him."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -282,14 +282,14 @@
       <td class="verb-cell">הַנִּצָּבִים</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Participle mp | נָצַב | Reflexive — <em>those standing</em> (having stationed themselves)</td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="passage-block">
   <span class="ref">45:16</span>
   <div class="hebrew">וְהַקֹּ֣ל <strong>נִשְׁמַ֗ע</strong> בֵּ֤ית פַּרְעֹה֙ לֵאמֹ֔ר בָּ֥אוּ אֲחֵֽי־יוֹסֵ֖ף</div>
   <div class="english">"And the report [10] ____ in Pharaoh's household, 'Joseph's brothers have come.'"</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -308,7 +308,7 @@
       <td class="verb-cell">נִשְׁמַע</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Perfect 3ms | שָׁמַע | Passive — <em>was heard</em></td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <hr class="section-break">
@@ -318,7 +318,7 @@
   <span class="ref">47:14</span>
   <div class="hebrew">וַיְלַקֵּ֨ט יוֹסֵ֜ף אֶת־כָּל־הַכֶּ֗סֶף <strong>הַנִּמְצָ֤א</strong> בְאֶֽרֶץ־מִצְרַ֙יִם֙</div>
   <div class="english">"And Joseph collected all the silver [11] ____ in the land of Egypt."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -337,14 +337,14 @@
       <td class="verb-cell">הַנִּמְצָא</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Participle ms | מָצָא | Passive — <em>that was found / which was found</em></td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="passage-block">
   <span class="ref">47:31</span>
   <div class="hebrew"><strong>הִשָּׁ֣בְעָה</strong> לִ֔י <strong>וַיִּשָּׁבַ֖ע</strong> ל֑וֹ</div>
   <div class="english">"[12] ____ to me." And he [13] ____ to him."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -378,7 +378,7 @@
       <td class="verb-cell">וַיִּשָּׁבַע</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Wayyiqtol 3ms | שָׁבַע | Reflexive — <em>he swore</em> (bound himself by oath)</td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <hr class="section-break">
@@ -388,7 +388,7 @@
   <span class="ref">49:1</span>
   <div class="hebrew"><strong>הֵאָֽסְפוּ֙</strong> וְאַגִּ֣ידָה לָכֶ֔ם</div>
   <div class="english">"[14] ____ and I will tell you."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -407,14 +407,14 @@
       <td class="verb-cell">הֵאָסְפוּ</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Imperative 2mp | אָסַף | Passive — <em>gather yourselves!</em></td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="passage-block">
   <span class="ref">49:29</span>
   <div class="hebrew">אֲנִ֖י <strong>נֶאֱסָ֣ף</strong> אֶל־עַמִּ֑י</div>
   <div class="english">"I am [15] ____ to my people."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -433,14 +433,14 @@
       <td class="verb-cell">נֶאֱסָף</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Participle ms | אָסַף | Passive — <em>am about to be gathered</em> (euphemism for dying)</td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="passage-block">
   <span class="ref">49:33</span>
   <div class="hebrew"><strong>וַיֵּאָ֥סֶף</strong> אֶל־עַמָּיו֙</div>
   <div class="english">"and he was [16] ____ to his people."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -459,7 +459,7 @@
       <td class="verb-cell">וַיֵּאָסֶף</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Wayyiqtol 3ms | אָסַף | Passive — <em>was gathered</em> (died and joined his ancestors)</td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <hr class="section-break">
@@ -469,7 +469,7 @@
   <span class="ref">19:12</span>
   <div class="hebrew"><strong>וְהִשָּׁמַרְתֶּ֥ם</strong> … <strong>הִשָּׁמְר֥וּ</strong> לָכֶ֛ם</div>
   <div class="english">"And you shall [B1] ____ … [B2] ____ for yourselves."</div>
-  <table>
+  <div style="overflow-x:auto;max-width:100%;"><table>
     <tr>
       <th class="num-cell">#</th><th>Verb</th><th>Niphal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th>
     </tr>
@@ -503,7 +503,7 @@
       <td class="verb-cell">הִשָּׁמְרוּ</td>
       <td colspan="6">✓ <strong>Yes — Niphal</strong> | Imperative 2mp | שָׁמַר | Reflexive — <em>take heed!</em> (guard yourselves)</td>
     </tr>
-  </table>
+  </table></div>
 </div>
 
 <div class="score-box">

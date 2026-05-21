@@ -10,7 +10,7 @@
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  table { border-collapse: collapse;  margin: 1em 0; }
   th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
@@ -42,7 +42,7 @@
 
 <p>Classify each Hithpael verb as <strong>R</strong> (Reflexive), <strong>RC</strong> (Reciprocal), <strong>IT</strong> (Iterative), <strong>ES</strong> (Estimative), or <strong>DN</strong> (Denominative). Type your answer in the Function column, then click <strong>▶ Answer</strong> to check.</p>
 
-<table class="ref-table">
+<div style="overflow-x:auto;max-width:100%;"><table class="ref-table">
   <tr>
     <th>Code</th><th>Function</th><th>Diagnostic question</th>
   </tr>
@@ -51,7 +51,7 @@
   <tr><td><strong>IT</strong></td><td>Iterative/Frequentative</td><td>Is the action <em>repeated, habitual, or extended through time</em>?</td></tr>
   <tr><td><strong>ES</strong></td><td>Estimative/Declarative</td><td>Is the subject <em>presenting or considering itself as being</em> in a state?</td></tr>
   <tr><td><strong>DN</strong></td><td>Denominative</td><td>Is the verb derived from a <em>noun</em>, with the subject performing the noun's characteristic action?</td></tr>
-</table>
+</table></div>
 
 <div class="tip">
   <strong>Tip:</strong> Subject acts on itself → <strong>Reflexive</strong>.
@@ -67,7 +67,7 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr>
     <th>#</th><th>Hebrew</th><th>Conjugation</th><th>Root</th><th>Ref</th><th>Gloss</th><th>Function</th><th></th>
   </tr>
@@ -422,7 +422,7 @@
     <td colspan="8"><strong>ES — Estimative</strong> · Root: <span class="heb">חָזַק</span> · Present yourself as strong = show yourself to be strong; the Hithpael adds a performative/volitional nuance absent from Qal חָזַק</td>
   </tr>
 
-</table>
+</table></div>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">

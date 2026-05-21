@@ -11,7 +11,7 @@
   h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  table { border-collapse: collapse;  margin: .4rem 0; font-size: .91rem; }
   th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
@@ -57,7 +57,7 @@
 
 <!-- PART A -->
 <h2>Part A — Standard Letters (1–22)</h2>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Letter</th><th>Name</th><th>Transliteration</th><th>Sound</th><th>Special Category</th><th></th></tr>
 
   <tr><td class="num">1</td><td class="heb">א</td><td><input class="parse-field" id="1-name" placeholder="letter name"></td><td><input class="parse-field" id="1-trans" placeholder="transliteration"></td><td><input class="parse-field" id="1-sound" placeholder="sound"></td><td><input class="parse-field" id="1-cat" placeholder="category"></td><td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
@@ -125,14 +125,14 @@
 
   <tr><td class="num">22</td><td class="heb">ת</td><td><input class="parse-field" id="22-name" placeholder="letter name"></td><td><input class="parse-field" id="22-trans" placeholder="transliteration"></td><td><input class="parse-field" id="22-sound" placeholder="sound"></td><td><input class="parse-field" id="22-cat" placeholder="category"></td><td><button class="rbtn" onclick="tog(22)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-22"><td class="ans-lbl">✓</td><td class="ans-heb">ת</td><td colspan="5">Taw · t / th · t (hard) or th as in the (soft) · <strong>Begadkephat</strong></td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART B -->
 <h2>Part B — Final (Sofit) Forms (23–27)</h2>
 <p style="font-size:.9rem;color:#444">Each of these letters appears only at the end of a word. Identify the letter, give its name (include "sofit"), its transliteration, sound, and note it as a sofit form.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Letter</th><th>Name</th><th>Transliteration</th><th>Sound</th><th>Special Category</th><th></th></tr>
 
   <tr><td class="num">23</td><td class="heb">ך</td><td><input class="parse-field" id="23-name" placeholder="letter name"></td><td><input class="parse-field" id="23-trans" placeholder="transliteration"></td><td><input class="parse-field" id="23-sound" placeholder="sound"></td><td><input class="parse-field" id="23-cat" placeholder="category"></td><td><button class="rbtn" onclick="tog(23)">▶ Answer</button></td></tr>
@@ -149,14 +149,14 @@
 
   <tr><td class="num">27</td><td class="heb">ץ</td><td><input class="parse-field" id="27-name" placeholder="letter name"></td><td><input class="parse-field" id="27-trans" placeholder="transliteration"></td><td><input class="parse-field" id="27-sound" placeholder="sound"></td><td><input class="parse-field" id="27-cat" placeholder="category"></td><td><button class="rbtn" onclick="tog(27)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-27"><td class="ans-lbl">✓</td><td class="ans-heb">ץ</td><td colspan="5">Tsade sofit · ṣ · emphatic ts · <strong>Sofit form</strong> of צ — word-final only; long descending tail</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 
 <!-- PART C -->
 <h2>Part C — Begadkephat Letters with Dagesh Lene (28–30)</h2>
 <p style="font-size:.9rem;color:#444">Each letter below carries a dagesh lene (dot inside). Identify the letter name, transliteration, sound (hard pronunciation), and note it as begadkephat with dagesh lene.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
   <tr><th>#</th><th>Letter</th><th>Name</th><th>Transliteration</th><th>Sound</th><th>Special Category</th><th></th></tr>
 
   <tr><td class="num">28</td><td class="heb">בּ</td><td><input class="parse-field" id="28-name" placeholder="letter name"></td><td><input class="parse-field" id="28-trans" placeholder="transliteration"></td><td><input class="parse-field" id="28-sound" placeholder="sound"></td><td><input class="parse-field" id="28-cat" placeholder="category"></td><td><button class="rbtn" onclick="tog(28)">▶ Answer</button></td></tr>
@@ -167,7 +167,7 @@
 
   <tr><td class="num">30</td><td class="heb">פּ</td><td><input class="parse-field" id="30-name" placeholder="letter name"></td><td><input class="parse-field" id="30-trans" placeholder="transliteration"></td><td><input class="parse-field" id="30-sound" placeholder="sound"></td><td><input class="parse-field" id="30-cat" placeholder="category"></td><td><button class="rbtn" onclick="tog(30)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-30"><td class="ans-lbl">✓</td><td class="ans-heb">פּ</td><td colspan="5">Pe (with dagesh lene) · p · p as in pan — hard stop · <strong>Begadkephat</strong> — dagesh lene = hard pronunciation</td></tr>
-</table>
+</table></div>
 
 <hr class="sec">
 

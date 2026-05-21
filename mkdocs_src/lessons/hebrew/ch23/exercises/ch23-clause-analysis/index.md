@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;margin-bottom:.3em}
 h2{font-size:1.1em;margin-top:1.8em;border-bottom:1px solid #ccc;padding-bottom:.3em}
 p.desc{font-style:italic;color:#555;margin:.3em 0 1em}
-table{border-collapse:collapse;width:100%;margin-bottom:1em;font-size:.92em}
+table{border-collapse:collapse;margin-bottom:1em;font-size:.92em}
 th{background:#2c5f2e;color:#fff;padding:6px 8px;text-align:left}
 td{padding:5px 8px;border:1px solid #ccc;vertical-align:top}
 tr:nth-child(even) td{background:#f7f7f7}
@@ -45,7 +45,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <h2>Part A — Verbal Clauses: Default VSO</h2>
 <p class="desc">Identify subject, verb, and object in their expected positions.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Hebrew</th><th>Clause Type</th><th>Verb &amp; Conjugation</th><th>Subject</th><th>Object/Predicate</th><th>Gloss</th><th></th></tr>
 
 <tr id="qa1">
@@ -103,13 +103,13 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="ans4">
   <td colspan="8"><strong>Type:</strong> Verbal VSO &nbsp;|&nbsp; <strong>Verb:</strong> וַיַּ֥רְא — Wayyiqtol Qal 3ms &nbsp;|&nbsp; <strong>Subject:</strong> אֱלֹהִ֖ים &nbsp;|&nbsp; <strong>Object:</strong> אֶת-הָאוֹר֑ &nbsp;|&nbsp; <strong>Gloss:</strong> "And God saw the light"</td>
 </tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Part B — Fronted Elements</h2>
 <p class="desc">Identify the fronted element, its type, and the rhetorical function of the fronting.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Hebrew</th><th>What is fronted?</th><th>Type of element</th><th>Why fronted?</th><th>Gloss</th><th></th></tr>
 
 <tr id="qb5">
@@ -163,13 +163,13 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="ans8">
   <td colspan="7"><strong>Fronted:</strong> בְּצֶ֥לֶם אֱלֹהִ֖ים &nbsp;|&nbsp; <strong>Type:</strong> Prepositional phrase &nbsp;|&nbsp; <strong>Why:</strong> Chiastic emphasis — "in God's image" is the central theological point of the verse &nbsp;|&nbsp; <strong>Gloss:</strong> "In the image of God he created him"</td>
 </tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Part C — Verbless Clauses</h2>
 <p class="desc">Identify the subject and predicate. State the implied copula (is/was/were).</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Hebrew</th><th>Subject</th><th>Predicate</th><th>Implied copula</th><th>Gloss</th><th></th></tr>
 
 <tr id="qc9">
@@ -223,13 +223,13 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="ans12">
   <td colspan="7"><strong>Subject:</strong> אָנֹכִי &nbsp;|&nbsp; <strong>Predicate:</strong> שֹׁמֵ֥ר (predicate participle) &nbsp;|&nbsp; <strong>Copula:</strong> am &nbsp;|&nbsp; <strong>Gloss:</strong> "Am I my brother's keeper?" — interrogative verbless clause; ה interrogative prefix</td>
 </tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Part D — Waw-Disjunctive and Circumstantial Clauses</h2>
 <p class="desc">Identify the function of each clause: Background / Contrast / Simultaneous circumstance.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Hebrew</th><th>First element after וְ</th><th>Function</th><th>Relation to main narrative</th><th>Gloss</th><th></th></tr>
 
 <tr id="qd13">
@@ -283,13 +283,13 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="ans16">
   <td colspan="7"><strong>First element:</strong> הוּא (pronoun) &nbsp;|&nbsp; <strong>Function:</strong> Contrast/irony &nbsp;|&nbsp; <strong>Relation:</strong> Contrasts Samson's action with the devastating fact of his ignorance &nbsp;|&nbsp; <strong>Gloss:</strong> "but he did not know that the LORD had left him"</td>
 </tr>
-</table>
+</table></div>
 
 <hr>
 <h2>Part E — Mixed Analysis</h2>
 <p class="desc">Identify clause type and describe any special features.</p>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Hebrew</th><th>Clause type</th><th>Special feature</th><th>Gloss</th><th></th></tr>
 
 <tr id="qe17">
@@ -339,7 +339,7 @@ hr{border:none;border-top:1px solid #ddd;margin:1.5em 0}
 <tr class="answer-row" id="ans20">
   <td colspan="6"><strong>Type:</strong> Verbless / Existence &nbsp;|&nbsp; <strong>Special feature:</strong> אֵין = non-existence particle; subject אֱלֹהִים + predicate זוּלָתִי ("besides me"); כִּי = emphatic ("for/indeed") &nbsp;|&nbsp; <strong>Gloss:</strong> "For there is no God besides me"</td>
 </tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

@@ -10,7 +10,7 @@ body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
 p.sub{font-style:italic;margin:.3em 0 .7em;font-size:.9em;color:#555}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#1a4a7a;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -46,7 +46,7 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <h2>Part A — The 24 Letters</h2>
 <p class="sub">Write the name and sound for each lowercase letter form.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th style="width:8%">Form</th><th>Name</th><th>Sound / Pronunciation</th><th></th></tr>
 
 <tr><td>1</td><td class="greek">α</td><td><input class="parse-field" id="1-name"></td><td><input class="parse-field" id="1-snd"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
@@ -123,11 +123,11 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <tr><td>25</td><td class="greek">ω</td><td><input class="parse-field" id="25-name"></td><td><input class="parse-field" id="25-snd"></td><td><button class="toggle-btn" onclick="tog('a25')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a25"><td colspan="5"><strong>Omega</strong> — long "o" as in "tone" — <em>always long</em>; do not confuse with English w (Greek has no w)</td></tr>
-</table>
+</table></div>
 
 <h2>Part B — Uppercase Recognition</h2>
 <p class="sub">Write the lowercase form and the letter name for each uppercase letter.</p>
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th style="width:8%">Uppercase</th><th>Lowercase</th><th>Name</th><th></th></tr>
 
 <tr><td>B1</td><td class="greek">Α</td><td><input class="parse-field" id="b1-lc"></td><td><input class="parse-field" id="b1-nm"></td><td><button class="toggle-btn" onclick="tog('ab1')">▶ Answer</button></td></tr>
@@ -162,7 +162,7 @@ input.parse-field:focus{outline:none;border-bottom:2px solid #1a4a7a}
 
 <tr><td>B11</td><td class="greek">Ω</td><td><input class="parse-field" id="b11-lc"></td><td><input class="parse-field" id="b11-nm"></td><td><button class="toggle-btn" onclick="tog('ab11')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="ab11"><td colspan="5">ω — Omega</td></tr>
-</table>
+</table></div>
 
 <script>
 function tog(id){

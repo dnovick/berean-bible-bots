@@ -9,7 +9,7 @@
 body{font-family:Georgia,serif;color:#222}
 h1{font-size:1.4em;border-bottom:2px solid #333;padding-bottom:.3em}
 h2{font-size:1.15em;margin-top:2em;color:#444}
-table{border-collapse:collapse;width:100%;margin:.8em 0}
+table{border-collapse:collapse;margin:.8em 0}
 th{background:#2c5f2e;color:#fff;padding:.45em .6em;text-align:left;font-size:.85em}
 td{padding:.35em .6em;border:1px solid #ccc;font-size:.9em;vertical-align:top}
 tr:nth-child(even){background:#f7f7f7}
@@ -56,7 +56,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Genesis 12:1–2</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Form Type</th><th>Person</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
 <tr><td>1</td><td class="hebrew">לֶךְ</td><td><input class="parse-field" id="1-t"></td><td><input class="parse-field" id="1-p"></td><td><input class="parse-field" id="1-n"></td><td><input class="parse-field" id="1-g"></td><td><input class="parse-field" id="1-r"></td><td><input class="parse-field" id="1-u"></td><td><button class="toggle-btn" onclick="tog('a1')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a1"><td colspan="9">Imperative · 2nd · s · m · הלך · Direct Command — I-י short form; ה of הלך absent; "Go!" — God's foundational call to Abraham</td></tr>
@@ -66,7 +66,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>3</td><td class="hebrew">וֶהְיֵה</td><td><input class="parse-field" id="3-t"></td><td><input class="parse-field" id="3-p"></td><td><input class="parse-field" id="3-n"></td><td><input class="parse-field" id="3-g"></td><td><input class="parse-field" id="3-r"></td><td><input class="parse-field" id="3-u"></td><td><button class="toggle-btn" onclick="tog('a3')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="a3"><td colspan="9">Imperative · 2nd · s · m · היה · Direct Command — III-ה; וְ + Imperative (imperative chain, not Weqatal); "and be a blessing" — the purpose of the command</td></tr>
-</table>
+</table></div>
 
 <h2>Passage B — Genesis 22:1–2 (The Binding of Isaac)</h2>
 <div class="passage">
@@ -79,7 +79,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Genesis 22:2</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Form Type</th><th>Person</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
 <tr><td>4</td><td class="hebrew">קַח</td><td><input class="parse-field" id="4-t"></td><td><input class="parse-field" id="4-p"></td><td><input class="parse-field" id="4-n"></td><td><input class="parse-field" id="4-g"></td><td><input class="parse-field" id="4-r"></td><td><input class="parse-field" id="4-u"></td><td><button class="toggle-btn" onclick="tog('b4')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="b4"><td colspan="9">Imperative · 2nd · s · m · לקח · Direct Command — I-י short form; נָא adds urgency/entreaty; "Take now your son"</td></tr>
@@ -89,7 +89,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>6</td><td class="hebrew">וְהַעֲלֵהוּ</td><td><input class="parse-field" id="6-t"></td><td><input class="parse-field" id="6-p"></td><td><input class="parse-field" id="6-n"></td><td><input class="parse-field" id="6-g"></td><td><input class="parse-field" id="6-r"></td><td><input class="parse-field" id="6-u"></td><td><button class="toggle-btn" onclick="tog('b6')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="b6"><td colspan="9">Imperative · 2nd · s · m · עלה · Command Chain — HIPHIL Imperative 2ms + 3ms suffix (-הוּ); "offer him up" — not Qal; note the הַ– causative prefix marks Hiphil</td></tr>
-</table>
+</table></div>
 
 <h2>Passage C — Deuteronomy 6:4–7 (The Shema)</h2>
 <div class="passage">
@@ -102,7 +102,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Deuteronomy 6:4–7</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Form Type</th><th>Person</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
 <tr><td>7</td><td class="hebrew">שְׁמַע</td><td><input class="parse-field" id="7-t"></td><td><input class="parse-field" id="7-p"></td><td><input class="parse-field" id="7-n"></td><td><input class="parse-field" id="7-g"></td><td><input class="parse-field" id="7-r"></td><td><input class="parse-field" id="7-u"></td><td><button class="toggle-btn" onclick="tog('c7')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="c7"><td colspan="9">Imperative · 2nd · s · m · שמע · Direct Command — B-class; patach (gutt. R3); the Shema imperative — launches the Deu 6 command chain</td></tr>
@@ -115,7 +115,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>10</td><td class="hebrew">וְדִבַּרְתָּ</td><td><input class="parse-field" id="10-t"></td><td><input class="parse-field" id="10-p"></td><td><input class="parse-field" id="10-n"></td><td><input class="parse-field" id="10-g"></td><td><input class="parse-field" id="10-r"></td><td><input class="parse-field" id="10-u"></td><td><button class="toggle-btn" onclick="tog('c10')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="c10"><td colspan="9">Weqatal · 2nd · s · m · דבר · Command Chain — Piel Weqatal; "and you shall speak of them"; extends obligation to all contexts of daily life</td></tr>
-</table>
+</table></div>
 
 <h2>Passage D — Genesis 1:28 + Exodus 3:5 (Creation Mandate and Holy Ground)</h2>
 <div class="passage">
@@ -129,7 +129,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 </div>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Form Type</th><th>Person</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
 <tr><td>11</td><td class="hebrew">פְּרוּ</td><td><input class="parse-field" id="11-t"></td><td><input class="parse-field" id="11-p"></td><td><input class="parse-field" id="11-n"></td><td><input class="parse-field" id="11-g"></td><td><input class="parse-field" id="11-r"></td><td><input class="parse-field" id="11-u"></td><td><button class="toggle-btn" onclick="tog('d11')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="d11"><td colspan="9">Imperative · 2nd · p · m · פרה · Direct Command — III-ה 2mp; ה drops before -וּ; creation mandate "Be fruitful!"</td></tr>
@@ -145,7 +145,7 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 
 <tr><td>15</td><td class="hebrew">שַׁל נְעָלֶיךָ</td><td><input class="parse-field" id="15-t"></td><td><input class="parse-field" id="15-p"></td><td><input class="parse-field" id="15-n"></td><td><input class="parse-field" id="15-g"></td><td><input class="parse-field" id="15-r"></td><td><input class="parse-field" id="15-u"></td><td><button class="toggle-btn" onclick="tog('d15')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="d15"><td colspan="9">Imperative · 2nd · s · m · שלף (or של) · Direct Command — Imperative 2ms; "Remove your sandals!" — standing on holy ground; positive command resumes after the prohibition</td></tr>
-</table>
+</table></div>
 
 <h2>Passage E — Numbers 13:17–18 (Scouting Canaan)</h2>
 <div class="passage">
@@ -155,11 +155,11 @@ input.f:focus{outline:none;border-bottom:2px solid #2c5f2e}
 <p class="ref">Numbers 13:17</p>
 </div>
 
-<table>
+<div style="overflow-x:auto;max-width:100%;"><table>
 <tr><th>#</th><th>Form</th><th>Form Type</th><th>Person</th><th>Num.</th><th>Gen.</th><th>Root</th><th>Usage Note</th><th></th></tr>
 <tr><td>16</td><td class="hebrew">עֲלוּ</td><td><input class="parse-field" id="16-t"></td><td><input class="parse-field" id="16-p"></td><td><input class="parse-field" id="16-n"></td><td><input class="parse-field" id="16-g"></td><td><input class="parse-field" id="16-r"></td><td><input class="parse-field" id="16-u"></td><td><button class="toggle-btn" onclick="tog('e16')">▶ Answer</button></td></tr>
 <tr class="answer-row" id="e16"><td colspan="9">Imperative · 2nd · p · m · עלה · Direct Command — III-ה + I-gutt. 2mp; ה drops before -וּ; Moses's command to the scouts to go up into the Negev</td></tr>
-</table>
+</table></div>
 
 <h2>Reflection Questions</h2>
 <ol>
