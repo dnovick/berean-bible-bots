@@ -2,6 +2,8 @@
 
 *Chapter 17 — Waw-Consecutive*
 
+[Full Screen (Interactive)](ch17-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch17-parsing-drill.pdf){.md-button}  [Markdown](ch17-parsing-drill.md){.md-button}
+
 This drill covers all major Wayyiqtol and Weqatal patterns introduced in BBH Chapter 17. Students parse 30 forms across three parts: Part A focuses on strong and common weak Wayyiqtol forms, Part B targets weak-root Wayyiqtol forms (III-ה, Biconsonantal, Geminate, I-י, I-נ), and Part C requires disambiguating Weqatal from Perfect and Imperfect forms using the presence and type of waw prefix.
 
 ## Coverage
@@ -26,7 +28,3 @@ This drill covers all major Wayyiqtol and Weqatal patterns introduced in BBH Cha
 
 **Q3.** 3 וַיֵּלֶךְ
 > **A:** ✓ וַיֵּלֶךְ Wayyiqtol 3 s m הלך I-י: tsere prefix; root ה absent; behaves as I-י
-
-## Formats
-
-[Full Screen (Interactive)](ch17-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch17-parsing-drill.pdf){.md-button}  [Markdown](ch17-parsing-drill.md){.md-button}

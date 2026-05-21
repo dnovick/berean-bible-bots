@@ -2,6 +2,8 @@
 
 *Chapter 22 — Second Aorist Active and Middle Indicative*
 
+[Full Screen (Interactive)](ch22-second-aorist-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch22-second-aorist-parsing.pdf){.md-button}  [Markdown](ch22-second-aorist-parsing.md){.md-button}
+
 ## Coverage
 
 | Form Type | Items |
@@ -21,7 +23,3 @@
 
 **Q3.** ἔλαβεν
 > **A:** Aorist (2nd) · Active · Indicative · 3rd · Singular · λαμβάνω · He/she/it took
-
-## Formats
-
-[Full Screen (Interactive)](ch22-second-aorist-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch22-second-aorist-parsing.pdf){.md-button}  [Markdown](ch22-second-aorist-parsing.md){.md-button}

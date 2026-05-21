@@ -2,6 +2,8 @@
 
 *Chapter 25 — Niphal Weak*
 
+[Full Screen (Interactive)](ch25-niphal-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch25-niphal-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch25-niphal-weak-paradigm-drill.md){.md-button}
+
 *BBH Chapter 25 · Niphal Weak Verbs*
 
 A productive paradigm drill in two sections. Section A covers the III-ה root גלה (to uncover/reveal) through all Niphal conjugations: perfect (5 PGN forms), imperfect (4 PGN forms), imperative, infinitive construct, infinitive absolute, and participle (ms and fs). Section B covers the I-נ root נפל (to fall) through perfect (3 forms), imperfect (3 forms), imperative, and participle. Students write forms from memory, reinforcing the characteristic dagesh forte patterns of each weak class in the Niphal stem.
@@ -30,7 +32,3 @@ A productive paradigm drill in two sections. Section A covers the III-ה root ג
 
 **Q3.** Perfect 3cp
 > **A:** נִגְלוּ — 3cp וּ suffix.
-
-## Formats
-
-[Full Screen (Interactive)](ch25-niphal-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch25-niphal-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch25-niphal-weak-paradigm-drill.md){.md-button}

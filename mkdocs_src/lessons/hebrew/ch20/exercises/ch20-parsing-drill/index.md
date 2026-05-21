@@ -2,6 +2,8 @@
 
 *Chapter 20 — Qal Infinitive Construct*
 
+[Full Screen (Interactive)](ch20-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch20-parsing-drill.pdf){.md-button}  [Markdown](ch20-parsing-drill.md){.md-button}
+
 This 25-item parsing drill covers Qal IC forms across all major root classes, organized in three parts. Part A presents strong and B-class roots (including I-aleph and III-ה) with a preposition, asking students to identify the root, root class, preposition, and function. Part B covers III-ה and biconsonantal roots similarly. Part C focuses on I-י and I-נ contracted forms plus disambiguation — students must distinguish IC from surface-identical Imperative, Imperfect, and Perfect forms using morphological and contextual cues.
 
 ## Coverage
@@ -28,7 +30,3 @@ This 25-item parsing drill covers Qal IC forms across all major root classes, or
 
 **Q3.** 3 כִּ/שְׁמֹ֣עַ
 > **A:** IC · שמע · Strong B (gutt.) · כְּ · Temporal (when/as) — "when/as he heard"; כְּ + IC = temporal
-
-## Formats
-
-[Full Screen (Interactive)](ch20-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch20-parsing-drill.pdf){.md-button}  [Markdown](ch20-parsing-drill.md){.md-button}

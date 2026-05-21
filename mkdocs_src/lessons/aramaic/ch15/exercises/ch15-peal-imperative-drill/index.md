@@ -2,6 +2,8 @@
 
 *Chapter 15 — Peal Imperative*
 
+[Full Screen (Interactive)](ch15-peal-imperative-drill.html){.md-button .md-button--primary}  [Print / PDF](ch15-peal-imperative-drill.pdf){.md-button}  [Markdown](ch15-peal-imperative-drill.md){.md-button}
+
 This exercise presents twenty Peal imperative verb forms drawn from the Biblical Aramaic corpus (Daniel and Ezra) and the standard imperative paradigm. For each form, students identify the three-letter root, give the full PGN (person, gender, number), and translate the form as a command. The drill covers all four persons of the imperative paradigm (2ms, 2fs, 2mp, 2fp) and includes both strong roots and the major weak-root classes introduced in BBA Chapter 15. Items 17–20 are negative imperative constructions (אַל + jussive; לָא + imperfect).
 
 ## Coverage
@@ -24,7 +26,3 @@ This exercise presents twenty Peal imperative verb forms drawn from the Biblical
 
 **Q3.** 3 כְּתֻב &#9654; Answer
 > **A:** Root: כתב &nbsp;|&nbsp; PGN: 2ms &nbsp;|&nbsp; Translation: Write!
-
-## Formats
-
-[Full Screen (Interactive)](ch15-peal-imperative-drill.html){.md-button .md-button--primary}  [Print / PDF](ch15-peal-imperative-drill.pdf){.md-button}  [Markdown](ch15-peal-imperative-drill.md){.md-button}

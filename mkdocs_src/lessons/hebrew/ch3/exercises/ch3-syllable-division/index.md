@@ -2,6 +2,8 @@
 
 *Chapter 3 — Syllabification and Pronunciation*
 
+[Full Screen (Interactive)](ch3-syllable-division.html){.md-button .md-button--primary}  [Print / PDF](ch3-syllable-division.pdf){.md-button}  [Markdown](ch3-syllable-division.md){.md-button}
+
 Divide 20 Hebrew words into syllables, identify syllable types, mark stress, and identify any Qamets Hatuf.
 
 ## Coverage
@@ -28,7 +30,3 @@ Divide 20 Hebrew words into syllables, identify syllable types, mark stress, and
 
 **Q3.** 3 הָאָרֶץ
 > **A:** ✓ הָאָרֶץ הָ-אָ-רֶץ O-O-C רֶץ* — Article הָ open; aleph (guttural) opens syl. 2; both qamets = long ā (open syllables)
-
-## Formats
-
-[Full Screen (Interactive)](ch3-syllable-division.html){.md-button .md-button--primary}  [Print / PDF](ch3-syllable-division.pdf){.md-button}  [Markdown](ch3-syllable-division.md){.md-button}

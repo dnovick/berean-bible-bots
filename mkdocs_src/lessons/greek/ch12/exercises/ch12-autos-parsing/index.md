@@ -2,6 +2,8 @@
 
 *Chapter 12 — αὐτός*
 
+[Full Screen (Interactive)](ch12-autos-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch12-autos-parsing.pdf){.md-button}  [Markdown](ch12-autos-parsing.md){.md-button}
+
 A 20-item drill covering αὐτός in all genders, cases, and numbers. Students parse each form (case, number, gender) and then identify which of the three uses applies: (1) Personal Pronoun, (2) Intensive Adjective, or (3) Identical Adjective. Items include contextual phrases showing αὐτός in all three positions, with the article pattern making the use determinable from the phrase alone.
 
 ## Coverage
@@ -22,7 +24,3 @@ A 20-item drill covering αὐτός in all genders, cases, and numbers. Student
 
 **Q3.** 3 ὁ αὐτὸς λόγος &#9658; Answer
 > **A:** N · S · M · SAME — "the same word" — article before αὐτός
-
-## Formats
-
-[Full Screen (Interactive)](ch12-autos-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch12-autos-parsing.pdf){.md-button}  [Markdown](ch12-autos-parsing.md){.md-button}

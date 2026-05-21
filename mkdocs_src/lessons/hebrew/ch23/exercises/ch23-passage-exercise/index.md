@@ -2,6 +2,8 @@
 
 *Chapter 23 — Sentence Syntax*
 
+[Full Screen (Interactive)](ch23-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch23-passage-exercise.pdf){.md-button}  [Markdown](ch23-passage-exercise.md){.md-button}
+
 This 15-item passage exercise draws on five OT passages to practice clause analysis in context: the Creation account (Gen 1:1–4), the serpent dialogue (Gen 3:1–5), the Shema (Deu 6:4–5), the binding of Isaac (Gen 22:1–2), and a mixed set from Jdg 16:20, Gen 4:9, and Exo 20:2. Students identify clause type, any fronted element and its rhetorical function, the main verb and its conjugation, and provide a full English gloss. Three reflection questions connect clause syntax to narrative and theological significance.
 
 ## Coverage
@@ -28,7 +30,3 @@ This 15-item passage exercise draws on five OT passages to practice clause analy
 
 **Q3.** 3 וַיֹּ֤אמֶר אֱלֹהִ֙ים֙ (Gen 1:3)
 > **A:** Type: Verbal VSO &nbsp;|&nbsp; Fronted: None &nbsp;|&nbsp; Verb: וַיֹּ֤אמֶר — Wayyiqtol Qal 3ms &nbsp;|&nbsp; Gloss: "And God said"
-
-## Formats
-
-[Full Screen (Interactive)](ch23-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch23-passage-exercise.pdf){.md-button}  [Markdown](ch23-passage-exercise.md){.md-button}

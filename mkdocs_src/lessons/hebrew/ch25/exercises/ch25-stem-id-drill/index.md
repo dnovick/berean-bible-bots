@@ -2,6 +2,8 @@
 
 *Chapter 25 — Niphal Weak*
 
+[Full Screen (Interactive)](ch25-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch25-stem-id-drill.pdf){.md-button}  [Markdown](ch25-stem-id-drill.md){.md-button}
+
 *BBH Chapter 25 · Niphal Weak Verbs*
 
 A 24-item drill mixing Qal and Niphal forms of weak roots, interleaved Q/N/Q/N. Students identify stem (Qal or Niphal), conjugation, PGN, and root for each form. Covers Perfect, Imperfect, Wayyiqtol, Imperative, Inf. Absolute, and Participle using the III-ה root גלה (with ראה for the perfect section), the I-נ root נפל, and the hollow root שׁוב. The minimal-pair contrasts between Qal and Niphal for weak roots are emphasized (e.g., יִגְלֶה vs. יִגָּלֶה; יִפֹּל vs. יִפָּל; וַיִּגֶּל vs. וַיִּגָּל).
@@ -30,7 +32,3 @@ A 24-item drill mixing Qal and Niphal forms of weak roots, interleaved Q/N/Q/N. 
 
 **Q3.** 3 נָפַל
 > **A:** Qal · Perfect · 3ms · נפל — Qamets–patach vowel pattern without any dagesh forte = Qal. "he fell."
-
-## Formats
-
-[Full Screen (Interactive)](ch25-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch25-stem-id-drill.pdf){.md-button}  [Markdown](ch25-stem-id-drill.md){.md-button}

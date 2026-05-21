@@ -2,6 +2,8 @@
 
 *Chapter 7 — Genitive and Dative*
 
+[Full Screen (Interactive)](ch7-gen-dat-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch7-gen-dat-parsing.pdf){.md-button}  [Markdown](ch7-gen-dat-parsing.md){.md-button}
+
 A 20-item parsing drill covering 2nd-declension masculine and neuter noun forms drawn from the GNT vocabulary. Students identify the case, number, gender, lexical form, and a brief translation note for each form. Items include both articulate (with the definite article) and anarthrous forms, and cover genitive singular, genitive plural, dative singular, and dative plural across masculine and neuter nouns.
 
 ## Coverage
@@ -22,7 +24,3 @@ A 20-item parsing drill covering 2nd-declension masculine and neuter noun forms 
 
 **Q3.** 3 λόγων &#9658; Answer
 > **A:** G · P · M · λόγος — "of words"
-
-## Formats
-
-[Full Screen (Interactive)](ch7-gen-dat-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch7-gen-dat-parsing.pdf){.md-button}  [Markdown](ch7-gen-dat-parsing.md){.md-button}

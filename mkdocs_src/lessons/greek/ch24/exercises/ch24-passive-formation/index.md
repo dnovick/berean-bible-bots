@@ -2,6 +2,8 @@
 
 *Chapter 24 — Aorist and Future Passive Indicative*
 
+[Full Screen (Interactive)](ch24-passive-formation.html){.md-button .md-button--primary}  [Print / PDF](ch24-passive-formation.pdf){.md-button}  [Markdown](ch24-passive-formation.md){.md-button}
+
 A 20-item formation drill presenting a mix of aorist passive and future passive indicative forms. Students classify each form as aorist passive or future passive, parse person and number, supply the lexical form, and translate. The exercise includes 10 aorist passives and 10 future passives, with particular attention to verbs with irregular passive stems (ἐγείρω, λαμβάνω, ἀποστέλλω, εὑρίσκω). Paired items (e.g., #13/#14, #15/#16, #17/#18) isolate the single morphological feature distinguishing the two tenses. An answer key is embedded in all three formats.
 
 ## Coverage
@@ -21,7 +23,3 @@ A 20-item formation drill presenting a mix of aorist passive and future passive 
 
 **Q3.** 3 ἐβλήθη
 > **A:** Aorist · 3rd · Sg · βάλλω · He / it was thrown
-
-## Formats
-
-[Full Screen (Interactive)](ch24-passive-formation.html){.md-button .md-button--primary}  [Print / PDF](ch24-passive-formation.pdf){.md-button}  [Markdown](ch24-passive-formation.md){.md-button}

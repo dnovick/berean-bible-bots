@@ -2,6 +2,8 @@
 
 *Chapter 6 — Nominative and Accusative; Article*
 
+[Full Screen (Interactive)](ch6-nom-acc-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch6-nom-acc-parsing.pdf){.md-button}  [Markdown](ch6-nom-acc-parsing.md){.md-button}
+
 A 20-item parsing drill covering 2nd-declension masculine and neuter nouns and the definite article. Students identify case, number, gender, lexical form, and syntactic function (subject, direct object, predicate nominative, or article modifying a noun). All forms are drawn from the nominative and accusative cases as introduced in Ch6.
 
 ## Coverage
@@ -21,7 +23,3 @@ A 20-item parsing drill covering 2nd-declension masculine and neuter nouns and t
 
 **Q3.** 3 λόγοι
 > **A:** Nominative · Plural · Masculine · λόγος · Subject
-
-## Formats
-
-[Full Screen (Interactive)](ch6-nom-acc-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch6-nom-acc-parsing.pdf){.md-button}  [Markdown](ch6-nom-acc-parsing.md){.md-button}

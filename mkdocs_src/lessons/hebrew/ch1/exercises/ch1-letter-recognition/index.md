@@ -2,6 +2,8 @@
 
 *Chapter 1 — Hebrew Alphabet*
 
+[Full Screen (Interactive)](ch1-letter-recognition.html){.md-button .md-button--primary}  [Print / PDF](ch1-letter-recognition.pdf){.md-button}  [Markdown](ch1-letter-recognition.md){.md-button}
+
 30-item identification drill covering all 22 Hebrew letters, the 5 final (sofit) forms, and 3 begadkephat letters with dagesh lene. Students identify the letter name, transliteration, sound, and any special category for each item.
 
 ## Coverage
@@ -23,7 +25,3 @@
 
 **Q3.** 3 ג
 > **A:** ✓ ג Gimel · g / gh · g (hard) or gh (soft) · Begadkephat (soft rarely distinguished today)
-
-## Formats
-
-[Full Screen (Interactive)](ch1-letter-recognition.html){.md-button .md-button--primary}  [Print / PDF](ch1-letter-recognition.pdf){.md-button}  [Markdown](ch1-letter-recognition.md){.md-button}

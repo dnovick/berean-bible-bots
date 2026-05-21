@@ -2,6 +2,8 @@
 
 *Chapter 32 — Pual Strong*
 
+[Full Screen (Interactive)](ch32-qal-piel-pual-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch32-qal-piel-pual-contrast.pdf){.md-button}  [Markdown](ch32-qal-piel-pual-contrast.md){.md-button}
+
 *BBH Chapter 32 · Pual Strong Verbs*
 
 ## Coverage
@@ -24,7 +26,3 @@
 
 **Q3.** 3 בֹּרַךְ
 > **A:** Pual · Perfect · 3ms · "he was blessed" — holem under ב; ר rejects dagesh forte; holem is lengthening of qibbuts in guttural context
-
-## Formats
-
-[Full Screen (Interactive)](ch32-qal-piel-pual-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch32-qal-piel-pual-contrast.pdf){.md-button}  [Markdown](ch32-qal-piel-pual-contrast.md){.md-button}

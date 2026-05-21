@@ -2,6 +2,8 @@
 
 *Chapter 27 — Hiphil Weak*
 
+[Full Screen (Interactive)](ch27-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch27-function-sort.pdf){.md-button}  [Markdown](ch27-function-sort.md){.md-button}
+
 *BBH Chapter 27 · Hiphil Weak Verbs*
 
 24 weak-root Hiphil forms drawn from the OT. Students classify each form as C (Causative), F (Factitive), D (Declarative), SA (Simple Action), or DN (Denominative). All roots come from the weak classes covered in Ch27 (I-י, I-נ, Hollow, III-ה, Biconsonantal, Geminate).
@@ -30,7 +32,3 @@
 
 **Q3.** 3 הוֹדִיעַ Perfect 3ms Deu 4:9 "make them known to your children and grandchildren" Causative Simple Action
 > **A:** 3 הוֹדִיעַ Perfect 3ms Deu 4:9 "make them known to your children and grandchildren" C — יָדַע: Qal = know; Hiphil = cause to know / make known
-
-## Formats
-
-[Full Screen (Interactive)](ch27-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch27-function-sort.pdf){.md-button}  [Markdown](ch27-function-sort.md){.md-button}

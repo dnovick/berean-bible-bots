@@ -2,6 +2,8 @@
 
 *Chapter 20 — The Hithpaal and Ithpaal Stems*
 
+[Full Screen (Interactive)](ch20-hithpaal-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch20-hithpaal-function-sort.pdf){.md-button}  [Markdown](ch20-hithpaal-function-sort.md){.md-button}
+
 This exercise presents twenty Hithpaal/Ithpaal verbal forms drawn from Daniel and Ezra. Rather than a straightforward parsing drill, students must classify the **semantic function** of each Hithpaal form — Reflexive (RF), Reciprocal (RC), Iterative/Frequentative (IT), or Estimative/Tolerative (ES) — before parsing fully (conjugation, PGN, root) and translating. This classification drill builds the analytical skill of reading beyond morphology to recognize the semantic role the Hithpaal plays in context. The exercise also reinforces sibilant metathesis (הִשְׁתַּ‑ / יִשְׁתַּ‑) across multiple items (1, 2, 7, 12, 17, 18) and covers III-he roots (items 1, 2, 12, 13, 17, 19), guttural R2 (items 6, 9, 10), and I-nun (item 6).
 
 ## Coverage
@@ -23,7 +25,3 @@ This exercise presents twenty Hithpaal/Ithpaal verbal forms drawn from Daniel an
 
 **Q3.** 3 מִתְכַּנְּשִׁין &#9654; Answer
 > **A:** Function: IT (Iterative) &nbsp;|&nbsp; Conj: Participle &nbsp;|&nbsp; PGN: mp &nbsp;|&nbsp; Root: כנשׁ &nbsp;|&nbsp; Trans: gathering repeatedly / assembling (ongoing; מִתְ‑ = Hithpaal ptcp)
-
-## Formats
-
-[Full Screen (Interactive)](ch20-hithpaal-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch20-hithpaal-function-sort.pdf){.md-button}  [Markdown](ch20-hithpaal-function-sort.md){.md-button}

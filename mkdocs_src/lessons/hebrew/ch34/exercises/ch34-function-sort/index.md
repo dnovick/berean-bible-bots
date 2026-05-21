@@ -2,6 +2,8 @@
 
 *Chapter 34 — Hithpael Strong*
 
+[Full Screen (Interactive)](ch34-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch34-function-sort.pdf){.md-button}  [Markdown](ch34-function-sort.md){.md-button}
+
 A 25-item classification exercise drawn from Genesis, Exodus, Joshua, and Psalms. Students read a Hithpael form with its conjugation, root, reference, and contextual gloss, then classify it as Reflexive (R), Reciprocal (RC), Iterative (IT), Estimative (ES), or Denominative (DN). The exercise emphasizes the dominant Reflexive function while ensuring students encounter all five categories, including the rarer Estimative and Denominative classes. Four discussion questions focus on the most analytically challenging items: the repeated Iterative use of הָלַךְ, the exegetically contested הִתְבָּרֲכוּ formula, the distinction between Reciprocal and Collective plotting, and the pragmatic force of the Estimative Hithpael.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 25-item classification exercise drawn from Genesis, Exodus, Joshua, and Psalms
 
 **Q3.** 3 וַיִּתְהַלֵּךְ Wayyiqtol 3ms הָלַךְ Gen 5:22 "he walked about" R RC IT ES DN
 > **A:** IT — Iterative · Root: הָלַךְ · Enoch walked with God habitually over his lifetime — a pattern of conduct, not a single event
-
-## Formats
-
-[Full Screen (Interactive)](ch34-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch34-function-sort.pdf){.md-button}  [Markdown](ch34-function-sort.md){.md-button}

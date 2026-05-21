@@ -2,6 +2,8 @@
 
 *Chapter 33 — Imperative*
 
+[Full Screen (Interactive)](ch33-imperative-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch33-imperative-parsing.pdf){.md-button}  [Markdown](ch33-imperative-parsing.md){.md-button}
+
 A 20-item parsing drill on the Greek imperative. Students parse each form (tense / voice / person / number / mood / lexical form), note aspect implications, and translate. Items cover present and aorist imperatives (active, middle/passive), 2nd and 3rd person forms, prohibitions, and the imperative of εἰμί. An answer key is embedded in all formats.
 
 ## Coverage
@@ -26,7 +28,3 @@ A 20-item parsing drill on the Greek imperative. Students parse each form (tense
 
 **Q3.** 3 χαίρετε ἐν κυρίῳ πάντοτε.
 > **A:** Pres · Act · 2nd · Pl · χαίρω · Ongoing · "Rejoice in the Lord always." (Phil 4:4)
-
-## Formats
-
-[Full Screen (Interactive)](ch33-imperative-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch33-imperative-parsing.pdf){.md-button}  [Markdown](ch33-imperative-parsing.md){.md-button}

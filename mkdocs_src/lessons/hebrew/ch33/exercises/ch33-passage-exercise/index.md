@@ -2,6 +2,8 @@
 
 *Chapter 33 — Pual Weak*
 
+[Full Screen (Interactive)](ch33-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch33-passage-exercise.pdf){.md-button}  [Markdown](ch33-passage-exercise.md){.md-button}
+
 Students identify and parse Pual Weak verbs across three passage sets: Genesis genealogies (Gen 4:18, 4:26; 46:22) featuring the I-י root ילד, priestly legislation (Lev 7:36; Num 3:9) featuring the I-נ root נתן, and instructions/oracles (Lev 8:35; Num 22:6; Psa 72:17) featuring the III-ה root צוה and the ברך root with R2=ר compensatory lengthening. The exercise presents 15 verbs: 7 Pual targets and 8 distractors drawn from Qal, Niphal, Piel, Hithpael, and Hophal. Students indicate whether each verb is Pual, parse Conjugation/PGN/Root, supply the Stem/Function, and identify the weak-root type for each Pual target.
 
 ## Coverage
@@ -31,7 +33,3 @@ Students identify and parse Pual Weak verbs across three passage sets: Genesis g
 
 **Q3.** 3 יֻלַּד
 > **A:** ✓ Yes — Pual | Perfect | 3ms | ילד | Passive — I-י root : "was born/begotten." Qibbuts under R1 (יֻ) + Dagesh Forte in R2 (לּ) = Pual. I-י: the initial י is simply R1 taking Qibbuts; no assimilation occurs in the Pual. Piel of ילד = "to beget" → Pual passive = "to be born."
-
-## Formats
-
-[Full Screen (Interactive)](ch33-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch33-passage-exercise.pdf){.md-button}  [Markdown](ch33-passage-exercise.md){.md-button}

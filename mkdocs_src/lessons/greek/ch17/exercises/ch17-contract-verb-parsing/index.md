@@ -2,6 +2,8 @@
 
 *Chapter 17 — Contract Verbs*
 
+[Full Screen (Interactive)](ch17-contract-verb-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch17-contract-verb-parsing.pdf){.md-button}  [Markdown](ch17-contract-verb-parsing.md){.md-button}
+
 ## Coverage
 
 | Contract class | Representative verb | Forms drilled |
@@ -20,7 +22,3 @@
 
 **Q3.** 3 ἀγαπᾷ α
 > **A:** 3rd · Sg · ἀγαπάω | α + ει → ᾷ | "He/she loves"
-
-## Formats
-
-[Full Screen (Interactive)](ch17-contract-verb-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch17-contract-verb-parsing.pdf){.md-button}  [Markdown](ch17-contract-verb-parsing.md){.md-button}

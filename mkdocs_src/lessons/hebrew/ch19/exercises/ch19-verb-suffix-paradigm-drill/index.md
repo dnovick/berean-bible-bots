@@ -2,6 +2,8 @@
 
 *Chapter 19 — Qal Pronominal Suffixes on Verbs*
 
+[Full Screen (Interactive)](ch19-verb-suffix-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch19-verb-suffix-paradigm-drill.pdf){.md-button}  [Markdown](ch19-verb-suffix-paradigm-drill.md){.md-button}
+
 Write 9 forms of שמר with object suffixes from memory (Perfect 3ms and Imperfect 3ms).
 
 ## Coverage
@@ -21,7 +23,3 @@ Write 9 forms of שמר with object suffixes from memory (Perfect 3ms and Imperf
 
 **Q3.** 3 + 3ms (him)
 > **A:** ✓ + 3ms (him) שְׁמָרוֹ
-
-## Formats
-
-[Full Screen (Interactive)](ch19-verb-suffix-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch19-verb-suffix-paradigm-drill.pdf){.md-button}  [Markdown](ch19-verb-suffix-paradigm-drill.md){.md-button}

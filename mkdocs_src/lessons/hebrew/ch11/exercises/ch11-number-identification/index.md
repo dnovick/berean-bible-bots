@@ -2,6 +2,8 @@
 
 *Chapter 11 — Hebrew Numbers*
 
+[Full Screen (Interactive)](ch11-number-identification.html){.md-button .md-button--primary}  [Print / PDF](ch11-number-identification.pdf){.md-button}  [Markdown](ch11-number-identification.md){.md-button}
+
 For each of 20 Hebrew number-noun phrases: (1) identify the number word, (2) give its numeric value, (3) describe the gender polarity situation (if applicable), (4) translate into English.
 
 ## Coverage
@@ -22,7 +24,3 @@ For each of 20 Hebrew number-noun phrases: (1) identify the number word, (2) giv
 
 **Q3.** 3 אַרְבָּעִים שָׁנָה
 > **A:** ✓ אַרְבָּעִים שָׁנָה אַרְבָּעִים 40 N/A — tens are invariable (no polarity) forty years
-
-## Formats
-
-[Full Screen (Interactive)](ch11-number-identification.html){.md-button .md-button--primary}  [Print / PDF](ch11-number-identification.pdf){.md-button}  [Markdown](ch11-number-identification.md){.md-button}

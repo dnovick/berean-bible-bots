@@ -2,6 +2,8 @@
 
 *Chapter 29 — Hophal Weak*
 
+[Full Screen (Interactive)](ch29-hophal-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch29-hophal-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch29-hophal-weak-paradigm-drill.md){.md-button}
+
 Write selected Hophal Weak forms. Part A uses נגד (I-נ, qibbuts pattern); Part B uses בוא (biconsonantal, shureq pattern).
 
 ## Coverage
@@ -24,7 +26,3 @@ Write selected Hophal Weak forms. Part A uses נגד (I-נ, qibbuts pattern); Pa
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms הֻגַּדְתָּ
-
-## Formats
-
-[Full Screen (Interactive)](ch29-hophal-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch29-hophal-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch29-hophal-weak-paradigm-drill.md){.md-button}

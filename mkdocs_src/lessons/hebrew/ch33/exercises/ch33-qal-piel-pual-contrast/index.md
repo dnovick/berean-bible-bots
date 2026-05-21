@@ -2,6 +2,8 @@
 
 *Chapter 33 — Pual Weak*
 
+[Full Screen (Interactive)](ch33-qal-piel-pual-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch33-qal-piel-pual-contrast.pdf){.md-button}  [Markdown](ch33-qal-piel-pual-contrast.md){.md-button}
+
 *BBH Chapter 33 · Pual Weak Verbs*
 
 ## Coverage
@@ -24,7 +26,3 @@
 
 **Q3.** 3 גֻּלָּה
 > **A:** Pual · Perfect · 3ms · "he was revealed / uncovered" — qibbuts under ג + dagesh forte in ל + final ָה; III-ה Pual pattern
-
-## Formats
-
-[Full Screen (Interactive)](ch33-qal-piel-pual-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch33-qal-piel-pual-contrast.pdf){.md-button}  [Markdown](ch33-qal-piel-pual-contrast.md){.md-button}

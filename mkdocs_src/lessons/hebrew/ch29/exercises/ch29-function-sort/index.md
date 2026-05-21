@@ -2,6 +2,8 @@
 
 *Chapter 29 — Hophal Weak*
 
+[Full Screen (Interactive)](ch29-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch29-function-sort.pdf){.md-button}  [Markdown](ch29-function-sort.md){.md-button}
+
 *BBH Chapter 29 · Hophal Weak Verbs*
 
 An 18-item exercise using weak-root Hophal forms (I-י, Hollow, and III-ה roots). Rather than a simple P/SA classification (since all Hophal forms are passive), this exercise asks students to (1) identify the Hiphil active meaning for each root, and (2) translate the Hophal passive form in context. The exercise reinforces the core principle that every Hophal form is the causative-passive of its corresponding Hiphil, and builds facility with weak-root morphological patterns (characteristic וּ prefix vowel for I-י and hollow roots; III-ה ending in the Perfect).
@@ -30,7 +32,3 @@ An 18-item exercise using weak-root Hophal forms (I-י, Hollow, and III-ה roots
 
 **Q3.** 3 הוּרַד ירד I-י Perfect 3ms
 > **A:** Hiphil הוֹרִיד : to bring down (cause to descend) → Hophal : he was brought down (Gen 39:1) · Joseph was caused to descend to Egypt; I-י root ירד with הוּ prefix.
-
-## Formats
-
-[Full Screen (Interactive)](ch29-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch29-function-sort.pdf){.md-button}  [Markdown](ch29-function-sort.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 32 — Infinitive*
 
+[Full Screen (Interactive)](ch32-infinitive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch32-infinitive-parsing.pdf){.md-button}  [Markdown](ch32-infinitive-parsing.md){.md-button}
+
 A 20-item parsing drill on Greek infinitives. Students parse each form (tense / voice / lexical form), identify the use (complementary, articular/noun, purpose, result, indirect discourse, temporal), and translate. Items are drawn from GNT-style sentences. An answer key is embedded in all formats.
 
 ## Coverage
@@ -25,7 +27,3 @@ A 20-item parsing drill on Greek infinitives. Students parse each form (tense / 
 
 **Q3.** 3 ἤρξατο διδάσκειν αὐτοὺς πολλά.
 > **A:** Pres · Act · διδάσκω · Complementary · "He began to teach them many things."
-
-## Formats
-
-[Full Screen (Interactive)](ch32-infinitive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch32-infinitive-parsing.pdf){.md-button}  [Markdown](ch32-infinitive-parsing.md){.md-button}

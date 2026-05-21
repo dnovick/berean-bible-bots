@@ -2,6 +2,8 @@
 
 *Chapter 8 — Hebrew Pronouns*
 
+[Full Screen (Interactive)](ch8-pronoun-identification.html){.md-button .md-button--primary}  [Print / PDF](ch8-pronoun-identification.pdf){.md-button}  [Markdown](ch8-pronoun-identification.md){.md-button}
+
 Identify, parse, and translate 25 Hebrew pronouns drawn from real and realistic biblical Hebrew phrases. Students classify each pronoun by type (Personal / Demonstrative / Relative / Interrogative), isolate the pronoun, parse it (PGN where applicable), and translate the full phrase.
 
 ## Coverage
@@ -23,7 +25,3 @@ Identify, parse, and translate 25 Hebrew pronouns drawn from real and realistic 
 
 **Q3.** 3 הוּא הַכֹּהֵן &#9654; Answer
 > **A:** &#10003; הוּא Personal הוּא 3ms "He is the priest"
-
-## Formats
-
-[Full Screen (Interactive)](ch8-pronoun-identification.html){.md-button .md-button--primary}  [Print / PDF](ch8-pronoun-identification.pdf){.md-button}  [Markdown](ch8-pronoun-identification.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 24 — Niphal Strong*
 
+[Full Screen (Interactive)](ch24-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch24-stem-id-drill.pdf){.md-button}  [Markdown](ch24-stem-id-drill.md){.md-button}
+
 *BBH Chapter 24 · Niphal Strong Verbs*
 
 A 24-item drill mixing Qal and Niphal forms of strong roots, interleaved Q/N/Q/N. Students identify stem (Qal or Niphal), conjugation, PGN, and root for each form. Covers Perfect, Imperfect, Wayyiqtol, Imperative, Inf. Absolute, and Participle using the roots שׁמר, מכר, כרת, נתן, and the paradigm root קטל. Items 18 and 20 feature the ambiguous form הִשָּׁמֵר (Niphal Imperative = Niphal Inf. Absolute), which is explicitly flagged.
@@ -30,7 +32,3 @@ A 24-item drill mixing Qal and Niphal forms of strong roots, interleaved Q/N/Q/N
 
 **Q3.** 3 שָׁמַר
 > **A:** Qal · Perfect · 3ms · שׁמר — Qamets under first root letter, patach under second: standard Qal Perfect 3ms.
-
-## Formats
-
-[Full Screen (Interactive)](ch24-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch24-stem-id-drill.pdf){.md-button}  [Markdown](ch24-stem-id-drill.md){.md-button}

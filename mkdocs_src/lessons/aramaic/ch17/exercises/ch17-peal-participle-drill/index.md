@@ -2,6 +2,8 @@
 
 *Chapter 17 — Peal Participle*
 
+[Full Screen (Interactive)](ch17-peal-participle-drill.html){.md-button .md-button--primary}  [Print / PDF](ch17-peal-participle-drill.pdf){.md-button}  [Markdown](ch17-peal-participle-drill.md){.md-button}
+
 This exercise presents twenty Peal participle forms drawn from the Biblical Aramaic corpus (Daniel and Ezra) and the standard participle paradigm. For each form, students identify (1) whether the participle is **active** (qāṭēl pattern) or **passive** (qəṭīl pattern), (2) the three-letter root, (3) the gender and number (ms / fs / mp / fp), and (4) translate the form. The drill covers strong roots, all major weak-root classes introduced in BBA Chapter 17, both absolute and determined states, and all four gender-number slots of the paradigm.
 
 ## Coverage
@@ -23,7 +25,3 @@ This exercise presents twenty Peal participle forms drawn from the Biblical Aram
 
 **Q3.** 3 כָּתְבִין &#9654; Answer
 > **A:** Act/Pass: Active &nbsp;|&nbsp; Root: כתב &nbsp;|&nbsp; G/N: mp &nbsp;|&nbsp; Translation: writing (mp) / ones who write
-
-## Formats
-
-[Full Screen (Interactive)](ch17-peal-participle-drill.html){.md-button .md-button--primary}  [Print / PDF](ch17-peal-participle-drill.pdf){.md-button}  [Markdown](ch17-peal-participle-drill.md){.md-button}

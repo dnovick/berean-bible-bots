@@ -2,6 +2,8 @@
 
 *Chapter 24 — Niphal Strong*
 
+[Full Screen (Interactive)](ch24-qal-niphal-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch24-qal-niphal-contrast.pdf){.md-button}  [Markdown](ch24-qal-niphal-contrast.md){.md-button}
+
 A 14-root exercise in three parts. Students are given a root with its Qal meaning and an attested Niphal form from the OT, then asked to translate the Niphal form, name its semantic function (Passive / Reflexive / Simple action), and explain in one sentence how the Niphal meaning relates to the Qal. Part A covers transitive roots (מָכַר, מָצָא, שָׁמַע, אָסַף, כָּרַת, נָתַן, אָכַל, שָׁמַר); Part B covers stative/intransitive roots (נָצַב, יָתַר, שָׁאַר); Part C covers roots with no standard Qal (לָחַם, נָחַם, שָׁבַע).
 
 ## Coverage
@@ -23,7 +25,3 @@ A 14-root exercise in three parts. Students are given a root with its Qal meanin
 
 **Q3.** 3 שָׁמַע to hear נִשְׁמַע (Perfect 3ms) Gen 45:16
 > **A:** was heard (in Pharaoh's house) — Passive — The report receives the hearing; Qal "to hear" → Niphal "to be heard / become audible"
-
-## Formats
-
-[Full Screen (Interactive)](ch24-qal-niphal-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch24-qal-niphal-contrast.pdf){.md-button}  [Markdown](ch24-qal-niphal-contrast.md){.md-button}

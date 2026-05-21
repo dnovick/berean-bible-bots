@@ -2,6 +2,8 @@
 
 *Chapter 22 — Qal Participle*
 
+[Full Screen (Interactive)](ch22-qal-participle-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch22-qal-participle-paradigm-drill.pdf){.md-button}  [Markdown](ch22-qal-participle-paradigm-drill.md){.md-button}
+
 Write all 8 Qal Participle forms of שמר (active and passive) from memory.
 
 ## Coverage
@@ -21,7 +23,3 @@ Write all 8 Qal Participle forms of שמר (active and passive) from memory.
 
 **Q3.** 3 mp
 > **A:** ✓ mp שֹׁמְרִים
-
-## Formats
-
-[Full Screen (Interactive)](ch22-qal-participle-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch22-qal-participle-paradigm-drill.pdf){.md-button}  [Markdown](ch22-qal-participle-paradigm-drill.md){.md-button}

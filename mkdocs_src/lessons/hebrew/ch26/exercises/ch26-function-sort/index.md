@@ -2,6 +2,8 @@
 
 *Chapter 26 — Hiphil Strong*
 
+[Full Screen (Interactive)](ch26-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch26-function-sort.pdf){.md-button}  [Markdown](ch26-function-sort.md){.md-button}
+
 A 27-item classification exercise drawn entirely from Genesis, Exodus, Leviticus, Numbers, and Deuteronomy. Students read a Hiphil form with its reference and contextual gloss, then classify it as Causative (C), Factitive (F), Declarative (D), Simple Action (SA), or Denominative (DN). Roots span all five function types and include several ambiguous cases (e.g. זָכַר Hiphil as Causative rather than Simple Action) that reward careful reasoning. Four discussion questions connect specific items to the broader grammar.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 27-item classification exercise drawn entirely from Genesis, Exodus, Leviticus
 
 **Q3.** 3 וַיָּשֶׁב Wayyiqtol 3ms Gen 14:16 "he brought back his brother Lot" C F D SA DN
 > **A:** C — Causative · Root: שׁוּב (Qal: to return) · Abraham caused Lot to return
-
-## Formats
-
-[Full Screen (Interactive)](ch26-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch26-function-sort.pdf){.md-button}  [Markdown](ch26-function-sort.md){.md-button}

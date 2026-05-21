@@ -2,6 +2,8 @@
 
 *Chapter 24 — Niphal Strong*
 
+[Full Screen (Interactive)](ch24-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch24-function-sort.pdf){.md-button}  [Markdown](ch24-function-sort.md){.md-button}
+
 A 25-item classification exercise drawn entirely from Genesis, Exodus, and Numbers. Students read a Niphal form with its reference and contextual gloss, then classify it as Passive (P), Reflexive (R), Reciprocal (RC), or Simple Action (SA). Roots span all four function types and include several cases that reward careful reasoning (e.g., whether הֵאָסְפוּ is passive or reflexive, whether נִשְׁבְּעוּ is reflexive or reciprocal). Four discussion questions connect specific items to the broader grammar.
 
 ## Coverage
@@ -23,7 +25,3 @@ A 25-item classification exercise drawn entirely from Genesis, Exodus, and Numbe
 
 **Q3.** 3 וַיִּנָּחֶם Wayyiqtol 3ms Gen 6:6 "the LORD regretted" P R RC SA
 > **A:** SA — נָחַם Niphal-only: no standard Qal; "to regret/relent" is the base meaning
-
-## Formats
-
-[Full Screen (Interactive)](ch24-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch24-function-sort.pdf){.md-button}  [Markdown](ch24-function-sort.md){.md-button}

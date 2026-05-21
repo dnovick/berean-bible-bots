@@ -2,6 +2,8 @@
 
 *Chapter 32 — Pual Strong*
 
+[Full Screen (Interactive)](ch32-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch32-function-sort.pdf){.md-button}  [Markdown](ch32-function-sort.md){.md-button}
+
 *BBH Chapter 32 · Pual Strong Verbs*
 
 ## Coverage
@@ -23,7 +25,3 @@
 
 **Q3.** 3 בֹּרַךְ ברך Perfect 3ms
 > **A:** Piel active: to bless &nbsp;|&nbsp; Pual passive: he was blessed &nbsp;·&nbsp; ר rejects dagesh; qibbuts lengthens to holem → בֹּרַךְ
-
-## Formats
-
-[Full Screen (Interactive)](ch32-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch32-function-sort.pdf){.md-button}  [Markdown](ch32-function-sort.md){.md-button}

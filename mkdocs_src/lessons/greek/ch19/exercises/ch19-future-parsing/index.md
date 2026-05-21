@@ -2,6 +2,8 @@
 
 *Chapter 19 — Future Active and Middle Indicative*
 
+[Full Screen (Interactive)](ch19-future-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch19-future-parsing.pdf){.md-button}  [Markdown](ch19-future-parsing.md){.md-button}
+
 ## Coverage
 
 | Form Type | Items |
@@ -22,7 +24,3 @@
 
 **Q3.** λύσει
 > **A:** Future · Active · Indicative · 3rd · Singular · λύω · He/she/it will loose
-
-## Formats
-
-[Full Screen (Interactive)](ch19-future-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch19-future-parsing.pdf){.md-button}  [Markdown](ch19-future-parsing.md){.md-button}

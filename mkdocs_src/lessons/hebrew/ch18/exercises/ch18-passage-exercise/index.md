@@ -2,6 +2,8 @@
 
 *Chapter 18 — Qal Imperative*
 
+[Full Screen (Interactive)](ch18-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch18-passage-exercise.pdf){.md-button}  [Markdown](ch18-passage-exercise.md){.md-button}
+
 This passage exercise presents 16 highlighted verb forms drawn from five canonical passages: Genesis 12:1–3 (the Call of Abraham), Genesis 22:1–2 (the Binding of Isaac), Deuteronomy 6:4–7 (the Shema), Genesis 1:28 and Exodus 3:5 (creation mandate and holy ground), and Numbers 13:17 (scouting Canaan). Students identify each form as Imperative, Weqatal, or Jussive, parse its PGN, identify the root, and note its usage (Direct Command, Command Chain, Prohibition, etc.). Form 14 (אַל־תִּקְרַב) deliberately tests the prohibition rule — Hebrew never uses the Imperative for negative commands.
 
 ## Coverage
@@ -27,7 +29,3 @@ This passage exercise presents 16 highlighted verb forms drawn from five canonic
 
 **Q3.** 3 וֶהְיֵה
 > **A:** Imperative · 2nd · s · m · היה · Direct Command — III-ה; וְ + Imperative (imperative chain, not Weqatal); "and be a blessing" — the purpose of the command
-
-## Formats
-
-[Full Screen (Interactive)](ch18-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch18-passage-exercise.pdf){.md-button}  [Markdown](ch18-passage-exercise.md){.md-button}

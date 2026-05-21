@@ -2,6 +2,8 @@
 
 *Chapter 21 — Qal Infinitive Absolute*
 
+[Full Screen (Interactive)](ch21-qal-ia-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch21-qal-ia-paradigm-drill.pdf){.md-button}  [Markdown](ch21-qal-ia-paradigm-drill.md){.md-button}
+
 Write the Qal Infinitive Absolute for 6 root classes from memory.
 
 ## Coverage
@@ -21,7 +23,3 @@ Write the Qal Infinitive Absolute for 6 root classes from memory.
 
 **Q3.** 3 Biconsonantal מות
 > **A:** ✓ Biconsonantal מות מוֹת
-
-## Formats
-
-[Full Screen (Interactive)](ch21-qal-ia-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch21-qal-ia-paradigm-drill.pdf){.md-button}  [Markdown](ch21-qal-ia-paradigm-drill.md){.md-button}

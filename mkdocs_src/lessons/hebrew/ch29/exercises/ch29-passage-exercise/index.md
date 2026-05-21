@@ -2,6 +2,8 @@
 
 *Chapter 29 — Hophal Weak*
 
+[Full Screen (Interactive)](ch29-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch29-passage-exercise.pdf){.md-button}  [Markdown](ch29-passage-exercise.md){.md-button}
+
 Students identify and parse Hophal weak-root verbs across three passages: the Joseph narrative (Genesis 39–43, featuring I-י roots בוא and ירד and biconsonantal שוב), the tabernacle texts (Exodus 40:17 and Numbers 9:15–17, featuring biconsonantal קום), and a mixed passage from Genesis 38 and 43 plus Exodus 14 (I-י root יצא and I-נ root נגד). The exercise presents 14 numbered verbs: 10 Hophal weak targets (including Perfects, Imperfects, and Participles) plus 4 distractors from Qal weak and Hiphil weak. Students indicate whether each verb is Hophal, then parse Conjugation/PGN/Root and supply the Stem/Function with the corresponding Hiphil meaning.
 
 ## Coverage
@@ -24,7 +26,3 @@ Students identify and parse Hophal weak-root verbs across three passages: the Jo
 
 **Q3.** 3 הַשָּׁב
 > **A:** ✓ Yes — Hophal | Participle | ms | שוב | Hophal passive causative — "the (money) that was returned." Hophal Ptc. of biconsonantal root שוב: מוּשָׁב but here with definite article הַ. The שָּׁב (dagesh forte in שׁ) reflects the biconsonantal pattern; Hiphil הֵשִׁיב (to return/bring back) → Hophal = was returned.
-
-## Formats
-
-[Full Screen (Interactive)](ch29-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch29-passage-exercise.pdf){.md-button}  [Markdown](ch29-passage-exercise.md){.md-button}

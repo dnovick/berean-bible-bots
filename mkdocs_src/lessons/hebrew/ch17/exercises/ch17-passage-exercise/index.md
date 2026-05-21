@@ -2,6 +2,8 @@
 
 *Chapter 17 — Waw-Consecutive*
 
+[Full Screen (Interactive)](ch17-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch17-passage-exercise.pdf){.md-button}  [Markdown](ch17-passage-exercise.md){.md-button}
+
 This passage exercise presents 16 highlighted verb forms drawn from four canonical OT passages: Genesis 1:1–5 (creation narrative), Genesis 22:1–4 (Binding of Isaac), Deuteronomy 6:4–7 (The Shema), and Exodus 3:1–6 (Moses and the Burning Bush). Students identify each form as Wayyiqtol or Weqatal, parse its PGN, identify the root, and note its narrative or discourse function (Sequential Past, Sequential Future, etc.). The first form in Passage A (בָּרָא, a Qal Perfect) is included deliberately to test disambiguation.
 
 ## Coverage
@@ -26,7 +28,3 @@ This passage exercise presents 16 highlighted verb forms drawn from four canonic
 
 **Q3.** 3 וַיַּ֧רְא
 > **A:** ✓ וַיַּ֧רְא Wayyiqtol 3 s m ראה Sequential Past — III-ה short form: ה dropped; "and God saw that it was good"
-
-## Formats
-
-[Full Screen (Interactive)](ch17-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch17-passage-exercise.pdf){.md-button}  [Markdown](ch17-passage-exercise.md){.md-button}

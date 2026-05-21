@@ -2,6 +2,8 @@
 
 *Chapter 27 — Imperfective (Present) Adverbial Participles*
 
+[Full Screen (Interactive)](ch27-present-participle-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch27-present-participle-parsing.pdf){.md-button}  [Markdown](ch27-present-participle-parsing.md){.md-button}
+
 A 15-item parsing drill using present participle forms drawn from and modeled on GNT passages. Students parse each form (tense / voice / case / number / gender / lexical form), identify the use (adverbial, adjectival, or substantival), and provide a translation. Items 1–10 are clear adverbial or adjectival uses; items 11–15 include substantival participles and the participle of εἰμί. An answer key is embedded in all three formats.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 15-item parsing drill using present participle forms drawn from and modeled on
 
 **Q3.** 3 πορευόμενοι κηρύσσετε λέγοντες ὅτι ἐγγίζει ἡ βασιλεία τῶν οὐρανῶν.
 > **A:** Present · Middle · Nominative · Plural · Masculine · πορεύομαι · Adverbial (temporal/manner) · "As you go, preach saying that the kingdom of heaven is near."
-
-## Formats
-
-[Full Screen (Interactive)](ch27-present-participle-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch27-present-participle-parsing.pdf){.md-button}  [Markdown](ch27-present-participle-parsing.md){.md-button}

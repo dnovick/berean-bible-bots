@@ -2,6 +2,8 @@
 
 *Chapter 35 — Hithpael Weak*
 
+[Full Screen (Interactive)](ch35-qal-piel-hithpael-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch35-qal-piel-hithpael-contrast.pdf){.md-button}  [Markdown](ch35-qal-piel-hithpael-contrast.md){.md-button}
+
 A 15-item triplet drill using five weak roots (גלה, שׁמר, צדק, הלל, ענה). Each group presents the Qal, Piel, and Hithpael Perfect 3ms of the same root, requiring students to identify the stem, the weak class, how the weakness modifies the expected form, and the translation. The exercise covers all four Ch35 weak categories: III-ה (Groups 1 and 5), sibilant שׁ metathesis (Group 2), sibilant צ with dental assimilation (Group 3), and geminate (Group 4). Four discussion questions probe the diagnostic logic, comparative analysis of III-ה Piel forms, and the theological significance of key forms (הִצְטַדֵּק, הִתְהַלֵּל).
 
 ## Coverage
@@ -24,7 +26,3 @@ A 15-item triplet drill using five weak roots (גלה, שׁמר, צדק, הלל,
 
 **Q3.** 3 הִתְגַּלָּה
 > **A:** Hithpael · Perfect 3ms · III-ה · הִתְ prefix + Dagesh in R2 + Qamets + ה at end (R3-ה preserved in Hithpael perfect) · "he revealed himself"
-
-## Formats
-
-[Full Screen (Interactive)](ch35-qal-piel-hithpael-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch35-qal-piel-hithpael-contrast.pdf){.md-button}  [Markdown](ch35-qal-piel-hithpael-contrast.md){.md-button}

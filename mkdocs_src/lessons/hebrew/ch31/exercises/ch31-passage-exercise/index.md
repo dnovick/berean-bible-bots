@@ -2,6 +2,8 @@
 
 *Chapter 31 — Piel Weak*
 
+[Full Screen (Interactive)](ch31-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch31-passage-exercise.pdf){.md-button}  [Markdown](ch31-passage-exercise.md){.md-button}
+
 Students identify and parse Piel weak-root verbs across four thematic passages: the garden command (Genesis 2–3, featuring III-ה root צוה), the life-preservation narratives (Genesis 6, 18, and Exodus 1:17, featuring III-ה roots חיה and צוה), the wilderness humbling (Deuteronomy 8:1–3, featuring III-ה root ענה), and the revelation/command cluster (Amos 3:7, Genesis 50, and Deuteronomy 8:1, featuring III-ה roots גלה and צוה). The exercise presents 15 numbered verbs: 12 Piel weak targets spanning all major conjugations, plus 3 distractors (2 Hiphil weak, 1 Hophal) that share root classes or lexemes with the target verbs. Students indicate whether each verb is Piel, then parse Conjugation/PGN/Root and identify the semantic Function.
 
 ## Coverage
@@ -26,7 +28,3 @@ Students identify and parse Piel weak-root verbs across four thematic passages: 
 
 **Q3.** 3 צִוִּיתִיךָ
 > **A:** ✓ Yes — Piel | Perfect | 1cs + 2ms obj. suffix | צוה | Denominative — Same form as #2. God repeats the command formula in his verdict speech. Piel Pf. 1cs of צוה III-ה + 2ms suffix.
-
-## Formats
-
-[Full Screen (Interactive)](ch31-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch31-passage-exercise.pdf){.md-button}  [Markdown](ch31-passage-exercise.md){.md-button}

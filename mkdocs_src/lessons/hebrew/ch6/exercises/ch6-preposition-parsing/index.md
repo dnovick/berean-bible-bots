@@ -2,6 +2,8 @@
 
 *Chapter 6 — Hebrew Prepositions*
 
+[Full Screen (Interactive)](ch6-preposition-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch6-preposition-parsing.pdf){.md-button}  [Markdown](ch6-preposition-parsing.md){.md-button}
+
 25 Hebrew prepositional phrases. For each phrase: identify the preposition as it appears, give the base/dictionary form, explain any vowel change, identify the object noun, and translate the phrase.
 
 ## Coverage
@@ -23,7 +25,3 @@
 
 **Q3.** 3 כְּאִישׁ
 > **A:** ✓ כְּאִישׁ כְּ כְּ None — default sheva; א is quiescent here אִישׁ like a man
-
-## Formats
-
-[Full Screen (Interactive)](ch6-preposition-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch6-preposition-parsing.pdf){.md-button}  [Markdown](ch6-preposition-parsing.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 13 — Qal Perfect Strong Verbs*
 
+[Full Screen (Interactive)](ch13-qal-perfect-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch13-qal-perfect-paradigm-drill.pdf){.md-button}  [Markdown](ch13-qal-perfect-paradigm-drill.md){.md-button}
+
 Write all 9 inflected forms of קטל (Qal Perfect, Type-A fientive) from memory.
 
 ## Coverage
@@ -20,7 +22,3 @@ Write all 9 inflected forms of קטל (Qal Perfect, Type-A fientive) from memory
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms קָטַלְתָּ
-
-## Formats
-
-[Full Screen (Interactive)](ch13-qal-perfect-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch13-qal-perfect-paradigm-drill.pdf){.md-button}  [Markdown](ch13-qal-perfect-paradigm-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 28 — Hophal Strong*
 
+[Full Screen (Interactive)](ch28-hophal-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch28-hophal-paradigm-drill.pdf){.md-button}  [Markdown](ch28-hophal-paradigm-drill.md){.md-button}
+
 Write all 26 inflected forms of מות (Hophal) from memory. No Imperative — passives cannot be commanded.
 
 ## Coverage
@@ -24,7 +26,3 @@ Write all 26 inflected forms of מות (Hophal) from memory. No Imperative — p
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms הוּמַתָּ
-
-## Formats
-
-[Full Screen (Interactive)](ch28-hophal-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch28-hophal-paradigm-drill.pdf){.md-button}  [Markdown](ch28-hophal-paradigm-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 31 — Piel Weak*
 
+[Full Screen (Interactive)](ch31-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch31-weak-form-id.pdf){.md-button}  [Markdown](ch31-weak-form-id.md){.md-button}
+
 A 30-item identification and parsing exercise covering four Piel weak classes (III-he, I-guttural, Geminate, I-nun). Part A (items 1–20) groups forms by class — five items per class — so students can build class-by-class recognition before mixing. Part B (items 21–30) presents forms from multiple classes in random order; students must identify the weak class first, then parse. Answer keys for both parts include the diagnostic marker that reveals the weak class. Four discussion questions focus on the distinctive behavior of each class within the Piel stem.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 30-item identification and parsing exercise covering four Piel weak classes (I
 
 **Q3.** 3 צִוִּיתִי Gen 3:11 ▶
 > **A:** Perfect · 1cs · צָוָה — I commanded; chiriq-yod vowel letter before תִּי suffix; dagesh forte in ו (R2); III-he perfect 1cs
-
-## Formats
-
-[Full Screen (Interactive)](ch31-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch31-weak-form-id.pdf){.md-button}  [Markdown](ch31-weak-form-id.md){.md-button}

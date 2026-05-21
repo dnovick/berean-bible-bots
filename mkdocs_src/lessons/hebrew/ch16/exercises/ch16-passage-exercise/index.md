@@ -2,6 +2,8 @@
 
 *Chapter 16 — Qal Imperfect Weak Verbs*
 
+[Full Screen (Interactive)](ch16-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch16-passage-exercise.pdf){.md-button}  [Markdown](ch16-passage-exercise.md){.md-button}
+
 Parse weak-root Qal Imperfect and Wayyiqtol forms drawn from Genesis.
 
 ## Coverage
@@ -23,7 +25,3 @@ Parse weak-root Qal Imperfect and Wayyiqtol forms drawn from Genesis.
 
 **Q3.** 3 יִהְי֣וּ
 > **A:** ✓ יִהְי֣וּ 3 p m הָיָה III-ה Imperfect Jussive/Volitional — 3mp of הָיָה; וּ- suffix replaces ה; "Let there be lights"
-
-## Formats
-
-[Full Screen (Interactive)](ch16-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch16-passage-exercise.pdf){.md-button}  [Markdown](ch16-passage-exercise.md){.md-button}

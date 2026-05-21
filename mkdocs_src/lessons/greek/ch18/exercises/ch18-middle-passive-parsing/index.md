@@ -2,6 +2,8 @@
 
 *Chapter 18 — Present Middle/Passive Indicative*
 
+[Full Screen (Interactive)](ch18-middle-passive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch18-middle-passive-parsing.pdf){.md-button}  [Markdown](ch18-middle-passive-parsing.md){.md-button}
+
 ## Coverage
 
 | Feature | Forms drilled |
@@ -21,7 +23,3 @@
 
 **Q3.** 3 λύεται ὑπὸ τοῦ κυρίου
 > **A:** 3rd · Sg · λύω | Passive | "He/she is being loosed" — ὑπό + genitive agent confirms passive voice
-
-## Formats
-
-[Full Screen (Interactive)](ch18-middle-passive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch18-middle-passive-parsing.pdf){.md-button}  [Markdown](ch18-middle-passive-parsing.md){.md-button}

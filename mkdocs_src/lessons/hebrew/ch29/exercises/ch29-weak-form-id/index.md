@@ -2,6 +2,8 @@
 
 *Chapter 29 — Hophal Weak*
 
+[Full Screen (Interactive)](ch29-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch29-weak-form-id.pdf){.md-button}  [Markdown](ch29-weak-form-id.md){.md-button}
+
 A 40-item identification and parsing exercise covering six Hophal weak classes (I-yod/vav, Biconsonantal/hollow, I-nun, III-he, I-guttural, Geminate). Part A (items 1–30) groups forms by class — five items per class — so students can build class-by-class recognition before mixing. Part B (items 31–40) presents forms from multiple classes in random order; students must identify the weak class first, then parse. Answer keys for both parts include the diagnostic marker that reveals the weak class. Five discussion questions focus on the key distinction between classes that share the שׁוּרֶק prefix vowel (I-yod/vav and Biconsonantal) and on the I-nun assimilation pattern.
 
 ## Coverage
@@ -26,7 +28,3 @@ A 40-item identification and parsing exercise covering six Hophal weak classes (
 
 **Q3.** 3 הוּבָא Lev 4:4 ▶
 > **A:** Perfect · 3ms · בּוֹא — it was brought; הוּ prefix; root בּוֹא is I-vav (hollow); III-aleph: silent final א
-
-## Formats
-
-[Full Screen (Interactive)](ch29-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch29-weak-form-id.pdf){.md-button}  [Markdown](ch29-weak-form-id.md){.md-button}

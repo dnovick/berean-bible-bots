@@ -2,6 +2,8 @@
 
 *Chapter 25 — Niphal Weak*
 
+[Full Screen (Interactive)](ch25-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch25-function-sort.pdf){.md-button}  [Markdown](ch25-function-sort.md){.md-button}
+
 *BBH Chapter 25 · Niphal Weak Verbs*
 
 A 20-item drill using weak-root Niphal forms exclusively (I-נ, III-ה, hollow, and guttural roots). Students classify each form as Passive (P), Reflexive/Reciprocal (R), or Simple Action (SA) based on the provided gloss and reference. Several items are intentionally ambiguous (e.g., items 1, 3, 16, 18, 20) to train students in the Niphal's inherent semantic flexibility. Roots include: גלה, ראה, עשׂה, בנה, נפל, נגש, נגד, נגע, נכה, עלה, כון, שׁים, שׁוב.
@@ -26,7 +28,3 @@ A 20-item drill using weak-root Niphal forms exclusively (I-נ, III-ה, hollow, 
 
 **Q3.** 3 נִרְאָה Perf. 3ms Gen 12:7 "the LORD appeared to Abram"
 > **A:** R (or P) — "appeared / revealed himself." The LORD makes himself visible; reflexive element is strong (he showed himself), though "was seen" (passive) is also grammatically valid.
-
-## Formats
-
-[Full Screen (Interactive)](ch25-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch25-function-sort.pdf){.md-button}  [Markdown](ch25-function-sort.md){.md-button}

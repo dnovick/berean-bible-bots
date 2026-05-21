@@ -2,6 +2,8 @@
 
 *Chapter 33 — Pual Weak*
 
+[Full Screen (Interactive)](ch33-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch33-function-sort.pdf){.md-button}  [Markdown](ch33-function-sort.md){.md-button}
+
 *BBH Chapter 33 · Pual Weak Verbs*
 
 ## Coverage
@@ -24,7 +26,3 @@
 
 **Q3.** 3 בֹּרַךְ ברך R2 = ר Perfect 3ms
 > **A:** Piel active: to bless &nbsp;|&nbsp; Pual passive: he was blessed &nbsp;·&nbsp; Holem under ב (qibbuts lengthened; ר rejects dagesh) + patach under ר
-
-## Formats
-
-[Full Screen (Interactive)](ch33-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch33-function-sort.pdf){.md-button}  [Markdown](ch33-function-sort.md){.md-button}

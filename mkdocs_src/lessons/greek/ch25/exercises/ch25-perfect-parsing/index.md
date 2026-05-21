@@ -2,6 +2,8 @@
 
 *Chapter 25 — Perfect Indicative*
 
+[Full Screen (Interactive)](ch25-perfect-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch25-perfect-parsing.pdf){.md-button}  [Markdown](ch25-perfect-parsing.md){.md-button}
+
 ## Coverage
 
 | Form Type | Items |
@@ -22,7 +24,3 @@
 
 **Q3.** λέλυκεν
 > **A:** Perfect · Active · Indicative · 3rd · Singular · λύω · He/she has loosed
-
-## Formats
-
-[Full Screen (Interactive)](ch25-perfect-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch25-perfect-parsing.pdf){.md-button}  [Markdown](ch25-perfect-parsing.md){.md-button}

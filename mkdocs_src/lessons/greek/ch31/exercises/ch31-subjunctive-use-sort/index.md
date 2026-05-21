@@ -2,6 +2,8 @@
 
 *Chapter 31 — Subjunctive*
 
+[Full Screen (Interactive)](ch31-subjunctive-use-sort.html){.md-button .md-button--primary}  [Print / PDF](ch31-subjunctive-use-sort.pdf){.md-button}  [Markdown](ch31-subjunctive-use-sort.md){.md-button}
+
 A 20-item use-classification drill presenting subjunctive clauses drawn from or modeled on GNT passages. Students assign a use code (HO, PU, CO, IN, DE, or FS), parse person and number of the subjunctive verb, supply the lexical form, and translate. The exercise covers all six major uses introduced in BBG Ch31, with purpose clauses most heavily represented (5 items) and a single fear-statement item (μή + subj. after φοβέομαι) to challenge students on ambiguous μή uses. Discussion questions probe hortatory person, the epistemic force of 3rd-class conditionals, and the fear-clause construction. An answer key is embedded in all three formats.
 
 ## Coverage
@@ -25,7 +27,3 @@ A 20-item use-classification drill presenting subjunctive clauses drawn from or 
 
 **Q3.** 3 ἐὰν εἴπω ὑμῖν
 > **A:** CO · 1st · Sg · λέγω · If I say to you
-
-## Formats
-
-[Full Screen (Interactive)](ch31-subjunctive-use-sort.html){.md-button .md-button--primary}  [Print / PDF](ch31-subjunctive-use-sort.pdf){.md-button}  [Markdown](ch31-subjunctive-use-sort.md){.md-button}

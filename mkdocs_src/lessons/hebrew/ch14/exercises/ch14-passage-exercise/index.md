@@ -2,6 +2,8 @@
 
 *Chapter 14 — Qal Perfect Weak Verbs*
 
+[Full Screen (Interactive)](ch14-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch14-passage-exercise.pdf){.md-button}  [Markdown](ch14-passage-exercise.md){.md-button}
+
 Parse Qal Perfect weak-root verbs from Genesis 1–4 and Exodus 1–2.
 All target forms are weak-root Qal Perfects; a few strong forms are included as distractors.
 
@@ -28,7 +30,3 @@ All target forms are weak-root Qal Perfects; a few strong forms are included as 
 
 **Q3.** 3 אָכַ֑לְנוּ
 > **A:** ✓ אָכַ֑לְנוּ 1 p c אכל I-guttural Simple Past — 1cp suffix נוּ-
-
-## Formats
-
-[Full Screen (Interactive)](ch14-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch14-passage-exercise.pdf){.md-button}  [Markdown](ch14-passage-exercise.md){.md-button}

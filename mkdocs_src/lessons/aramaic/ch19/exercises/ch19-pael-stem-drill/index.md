@@ -2,6 +2,8 @@
 
 *Chapter 19 — The Pael Stem*
 
+[Full Screen (Interactive)](ch19-pael-stem-drill.html){.md-button .md-button--primary}  [Print / PDF](ch19-pael-stem-drill.pdf){.md-button}  [Markdown](ch19-pael-stem-drill.md){.md-button}
+
 A 20-item parsing drill covering all conjugations of the **Pael stem** (D stem) using verbs from Daniel and Ezra. Students identify conjugation, root, PGN, and translation for each form.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 20-item parsing drill covering all conjugations of the **Pael stem** (D stem) 
 
 **Q3.** 3 מְשַׁבַּח &#9654; Answer
 > **A:** Conj: Participle (active) &nbsp;|&nbsp; Root: שׁבח &nbsp;|&nbsp; PGN: ms &nbsp;|&nbsp; Trans: praising (מְ- prefix + dagesh-tsere in ב = Pael active participle; Dan. 2:23)
-
-## Formats
-
-[Full Screen (Interactive)](ch19-pael-stem-drill.html){.md-button .md-button--primary}  [Print / PDF](ch19-pael-stem-drill.pdf){.md-button}  [Markdown](ch19-pael-stem-drill.md){.md-button}

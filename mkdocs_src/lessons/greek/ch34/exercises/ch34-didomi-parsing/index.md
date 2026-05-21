@@ -2,6 +2,8 @@
 
 *Chapter 34 — Indicative of δίδωμι*
 
+[Full Screen (Interactive)](ch34-didomi-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch34-didomi-parsing.pdf){.md-button}  [Markdown](ch34-didomi-parsing.md){.md-button}
+
 A 20-item parsing drill on the indicative forms of δίδωμι and its compounds (especially παραδίδωμι). Students parse each form (tense / voice / person / number / mood / lexical form) and translate. Items cover all indicative tenses (present, imperfect, aorist, perfect passive). An answer key is embedded in all formats.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 20-item parsing drill on the indicative forms of δίδωμι and its compound
 
 **Q3.** 3 ἡμεῖς δίδομεν δόξαν τῷ θεῷ.
 > **A:** Pres · Act · 1st · Pl · δίδωμι · "We give glory to God."
-
-## Formats
-
-[Full Screen (Interactive)](ch34-didomi-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch34-didomi-parsing.pdf){.md-button}  [Markdown](ch34-didomi-parsing.md){.md-button}

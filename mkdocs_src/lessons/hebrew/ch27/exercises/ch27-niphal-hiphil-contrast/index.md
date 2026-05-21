@@ -2,6 +2,8 @@
 
 *Chapter 27 — Hiphil Weak*
 
+[Full Screen (Interactive)](ch27-niphal-hiphil-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch27-niphal-hiphil-contrast.pdf){.md-button}  [Markdown](ch27-niphal-hiphil-contrast.md){.md-button}
+
 A 20-item drill focused on distinguishing Niphal from Hiphil forms in weak roots. Each item asks students to identify the stem, parse the conjugation and PGN, give the root and weak class, and translate in context. Forms are drawn from attested OT passages only.
 
 The exercise is organized in three parts:
@@ -32,7 +34,3 @@ The exercise is organized in three parts:
 
 **Q3.** 3 יִמָּצֵא Gen 44:10 "he with whom it is ___ shall be my servant" ▶
 > **A:** Niphal · Imperfect · 3ms · מָצָא · III-א — "is found"; יִמָּ — yiqtol prefix + dagesh in מ (Niphal assimilation) + tsere + silent final א
-
-## Formats
-
-[Full Screen (Interactive)](ch27-niphal-hiphil-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch27-niphal-hiphil-contrast.pdf){.md-button}  [Markdown](ch27-niphal-hiphil-contrast.md){.md-button}

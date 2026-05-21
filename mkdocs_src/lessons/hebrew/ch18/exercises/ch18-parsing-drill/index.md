@@ -2,6 +2,8 @@
 
 *Chapter 18 — Qal Imperative*
 
+[Full Screen (Interactive)](ch18-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch18-parsing-drill.pdf){.md-button}  [Markdown](ch18-parsing-drill.md){.md-button}
+
 This drill covers all major Qal Imperative forms introduced in BBH Chapter 18. Students parse 35 forms across three parts: Part A focuses on strong roots (A-class and B-class), Part B targets weak-root imperatives across seven root classes (I-י, III-ה, Biconsonantal, I-נ, I-aleph), and Part C requires disambiguating Imperative from Imperfect and Jussive forms — including negative command constructions with אַל.
 
 ## Coverage
@@ -27,7 +29,3 @@ This drill covers all major Qal Imperative forms introduced in BBH Chapter 18. S
 
 **Q3.** 3 שִׁמְרוּ
 > **A:** Imperative · 2nd · Plural · Masculine · שמר — + וּ suffix (shureq)
-
-## Formats
-
-[Full Screen (Interactive)](ch18-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch18-parsing-drill.pdf){.md-button}  [Markdown](ch18-parsing-drill.md){.md-button}

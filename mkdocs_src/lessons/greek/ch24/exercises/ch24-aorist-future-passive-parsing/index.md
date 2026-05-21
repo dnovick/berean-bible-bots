@@ -2,6 +2,8 @@
 
 *Chapter 24 — Aorist and Future Passive Indicative*
 
+[Full Screen (Interactive)](ch24-aorist-future-passive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch24-aorist-future-passive-parsing.pdf){.md-button}  [Markdown](ch24-aorist-future-passive-parsing.md){.md-button}
+
 ## Coverage
 
 | Form Type | Items |
@@ -22,7 +24,3 @@
 
 **Q3.** ἐλύθη
 > **A:** Aorist · Passive · Indicative · 3rd · Singular · λύω · He/she/it was loosed
-
-## Formats
-
-[Full Screen (Interactive)](ch24-aorist-future-passive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch24-aorist-future-passive-parsing.pdf){.md-button}  [Markdown](ch24-aorist-future-passive-parsing.md){.md-button}

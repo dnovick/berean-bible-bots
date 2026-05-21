@@ -2,6 +2,8 @@
 
 *Chapter 27 — Hiphil Weak*
 
+[Full Screen (Interactive)](ch27-qal-hiphil-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch27-qal-hiphil-contrast.pdf){.md-button}  [Markdown](ch27-qal-hiphil-contrast.md){.md-button}
+
 *BBH Chapter 27 · Hiphil Weak Verbs*
 
 15 weak-root Hiphil forms from the OT, organized in three parts by weak class:
@@ -35,7 +37,3 @@ For each item students supply: (1) an English translation of the Hiphil form, (2
 
 **Q3.** 3 יָשַׁב to sit, dwell הוֹשִׁיב Wayyiqtol 3ms Gen 47:11 Causative Simple Action
 > **A:** 3 יָשַׁב to sit, dwell הוֹשִׁיב Wayyiqtol 3ms Gen 47:11 he settled them (in the land) Causative Joseph caused his family to dwell; Qal = to sit/dwell
-
-## Formats
-
-[Full Screen (Interactive)](ch27-qal-hiphil-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch27-qal-hiphil-contrast.pdf){.md-button}  [Markdown](ch27-qal-hiphil-contrast.md){.md-button}

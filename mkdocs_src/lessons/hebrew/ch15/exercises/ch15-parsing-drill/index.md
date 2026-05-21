@@ -2,6 +2,8 @@
 
 *Chapter 15 — Qal Imperfect Strong Verbs*
 
+[Full Screen (Interactive)](ch15-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch15-parsing-drill.pdf){.md-button}  [Markdown](ch15-parsing-drill.md){.md-button}
+
 Identify the person, number, gender, and root for each of 25 Qal Imperfect forms.
 
 ## Coverage
@@ -22,7 +24,3 @@ Identify the person, number, gender, and root for each of 25 Qal Imperfect forms
 
 **Q3.** 3 נִפְקֹד 1 2 3 s p du m f c
 > **A:** ✓ נִפְקֹד 1 p c פקד
-
-## Formats
-
-[Full Screen (Interactive)](ch15-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch15-parsing-drill.pdf){.md-button}  [Markdown](ch15-parsing-drill.md){.md-button}

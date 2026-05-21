@@ -2,6 +2,8 @@
 
 *Chapter 21 — Imperfect Indicative*
 
+[Full Screen (Interactive)](ch21-imperfect-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch21-imperfect-parsing.pdf){.md-button}  [Markdown](ch21-imperfect-parsing.md){.md-button}
+
 ## Coverage
 
 | Form Type | Items |
@@ -22,7 +24,3 @@
 
 **Q3.** ἔλυεν
 > **A:** Imperfect · Active · Indicative · 3rd · Singular · Syllabic (ε-) · λύω · He/she/it was loosing
-
-## Formats
-
-[Full Screen (Interactive)](ch21-imperfect-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch21-imperfect-parsing.pdf){.md-button}  [Markdown](ch21-imperfect-parsing.md){.md-button}

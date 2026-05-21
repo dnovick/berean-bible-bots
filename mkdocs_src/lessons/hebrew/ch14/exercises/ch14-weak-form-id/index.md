@@ -2,6 +2,8 @@
 
 *Chapter 14 — Qal Perfect Weak Verbs*
 
+[Full Screen (Interactive)](ch14-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch14-weak-form-id.pdf){.md-button}  [Markdown](ch14-weak-form-id.md){.md-button}
+
 Identify the weak class, PGN, and root for 40 Qal Perfect forms across all eight weak classes.
 
 ## Coverage
@@ -27,7 +29,3 @@ Identify the weak class, PGN, and root for 40 Qal Perfect forms across all eight
 
 **Q3.** 3 גָּלְתָה
 > **A:** ✓ גָּלְתָה III-ה 3 s f גלה 3fs ending תָה- (not ָה-)
-
-## Formats
-
-[Full Screen (Interactive)](ch14-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch14-weak-form-id.pdf){.md-button}  [Markdown](ch14-weak-form-id.md){.md-button}

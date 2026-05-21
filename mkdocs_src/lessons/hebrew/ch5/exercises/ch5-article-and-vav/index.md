@@ -2,6 +2,8 @@
 
 *Chapter 5 — Definite Article and Conjunction ו*
 
+[Full Screen (Interactive)](ch5-article-and-vav.html){.md-button .md-button--primary}  [Print / PDF](ch5-article-and-vav.pdf){.md-button}  [Markdown](ch5-article-and-vav.md){.md-button}
+
 Identify the definite article and conjunction ו in Hebrew words and phrases, determine the specific form of each, and translate.
 
 ## Coverage
@@ -24,7 +26,3 @@ Identify the definite article and conjunction ו in Hebrew words and phrases, de
 
 **Q3.** 3 הַיּוֹם
 > **A:** ✓ הַיּוֹם Yes הַ + dagesh forte No — the day
-
-## Formats
-
-[Full Screen (Interactive)](ch5-article-and-vav.html){.md-button .md-button--primary}  [Print / PDF](ch5-article-and-vav.pdf){.md-button}  [Markdown](ch5-article-and-vav.md){.md-button}

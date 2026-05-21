@@ -2,6 +2,8 @@
 
 *Chapter 9 — Pronouns*
 
+[Full Screen (Interactive)](ch9-pronoun-drill.html){.md-button .md-button--primary}  [Print / PDF](ch9-pronoun-drill.pdf){.md-button}  [Markdown](ch9-pronoun-drill.md){.md-button}
+
 A 20-item drill covering pronouns from BBA Chapter 9 (*Basics of Biblical Aramaic*, Van Pelt). Each item presents an Aramaic pronoun or pronoun phrase; the student identifies the type, PGN (where applicable), and gives the English gloss.
 
 ## Coverage
@@ -14,7 +16,3 @@ A 20-item drill covering pronouns from BBA Chapter 9 (*Basics of Biblical Aramai
 | Existential particles (אִיתַי, לֵית) with suffixes |
 | Indefinite pronouns (כֹּל, מִנְדַּעַם) |
 | Compound forms (כִּדְנָה, מַן דִּי) |
-
-## Formats
-
-[Full Screen (Interactive)](ch9-pronoun-drill.html){.md-button .md-button--primary}  [Print / PDF](ch9-pronoun-drill.pdf){.md-button}  [Markdown](ch9-pronoun-drill.md){.md-button}

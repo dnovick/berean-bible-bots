@@ -2,6 +2,8 @@
 
 *Chapter 13 — Qal Perfect Strong Verbs*
 
+[Full Screen (Interactive)](ch13-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch13-parsing-drill.pdf){.md-button}  [Markdown](ch13-parsing-drill.md){.md-button}
+
 Identify the person, number, gender, and root (3ms lexical form) for each of 25 Qal Perfect forms.
 
 ## Coverage
@@ -22,7 +24,3 @@ Identify the person, number, gender, and root (3ms lexical form) for each of 25 
 
 **Q3.** 3 שָׁמְרוּ 1 2 3 s p du m f c
 > **A:** ✓ שָׁמְרוּ 3 p c שמר
-
-## Formats
-
-[Full Screen (Interactive)](ch13-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch13-parsing-drill.pdf){.md-button}  [Markdown](ch13-parsing-drill.md){.md-button}

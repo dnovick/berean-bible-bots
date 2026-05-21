@@ -2,6 +2,8 @@
 
 *Chapter 11 — First and Second Person Personal Pronouns*
 
+[Full Screen (Interactive)](ch11-pronoun-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch11-pronoun-parsing.pdf){.md-button}  [Markdown](ch11-pronoun-parsing.md){.md-button}
+
 A 20-item parsing drill covering 1st and 2nd person pronoun forms. Students identify the person (1st/2nd), case (Nom/Gen/Dat/Acc), number (Sg/Pl), and provide an English translation of the form. Items include both emphatic (accented) and unemphatic (enclitic) forms, and cover all four cases in both singular and plural for each person.
 
 ## Coverage
@@ -22,7 +24,3 @@ A 20-item parsing drill covering 1st and 2nd person pronoun forms. Students iden
 
 **Q3.** 3 σύ &#9658; Answer
 > **A:** 2nd · Nom · Sg — "you" (emphatic subject)
-
-## Formats
-
-[Full Screen (Interactive)](ch11-pronoun-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch11-pronoun-parsing.pdf){.md-button}  [Markdown](ch11-pronoun-parsing.md){.md-button}

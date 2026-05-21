@@ -2,6 +2,8 @@
 
 *Chapter 28 — Perfective (Aorist) Adverbial Participles*
 
+[Full Screen (Interactive)](ch28-aorist-participle-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch28-aorist-participle-parsing.pdf){.md-button}  [Markdown](ch28-aorist-participle-parsing.md){.md-button}
+
 A 15-item parsing drill using aorist participle forms drawn from and modeled on GNT passages. Students parse each form (tense / voice / case / number / gender / lexical form), distinguish 1st from 2nd aorist, identify the use (adverbial, adjectival, or substantival), and translate. Items 1–9 are adverbial; items 10–12 are adjectival; items 13–15 are substantival or passive. An answer key is embedded in all formats.
 
 ## Coverage
@@ -25,7 +27,3 @@ A 15-item parsing drill using aorist participle forms drawn from and modeled on 
 
 **Q3.** 3 πιστεύσαντες εἰς τὸν κύριον ἐβαπτίσθησαν.
 > **A:** Aorist · Active · Nominative · Plural · Masculine · πιστεύω · 1st · Adverbial (temporal) · "Having believed in the Lord, they were baptized."
-
-## Formats
-
-[Full Screen (Interactive)](ch28-aorist-participle-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch28-aorist-participle-parsing.pdf){.md-button}  [Markdown](ch28-aorist-participle-parsing.md){.md-button}

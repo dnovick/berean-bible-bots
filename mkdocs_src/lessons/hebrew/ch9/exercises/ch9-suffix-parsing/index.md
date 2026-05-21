@@ -2,6 +2,8 @@
 
 *Chapter 9 — Hebrew Pronominal Suffixes*
 
+[Full Screen (Interactive)](ch9-suffix-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch9-suffix-parsing.pdf){.md-button}  [Markdown](ch9-suffix-parsing.md){.md-button}
+
 Students see 25 Hebrew forms — nouns, prepositions, and the direct object marker with pronominal suffixes — and must identify the base word, isolate the suffix, parse the suffix (PGN), and provide a full translation. The exercise builds the foundational pattern-recognition skill needed for reading Biblical Hebrew prose: strip the suffix, identify the base, read the whole form.
 
 ## Coverage
@@ -22,7 +24,3 @@ Students see 25 Hebrew forms — nouns, prepositions, and the direct object mark
 
 **Q3.** 3 מַלְכְּכֶם
 > **A:** ✓ Base: מֶלֶךְ (king, ms) &nbsp;|&nbsp; Suffix: כֶם &nbsp;|&nbsp; Parse: 2mp &nbsp;|&nbsp; Translation: your (mp) king &nbsp;·&nbsp; מֶלֶךְ reduces to מַלְכּ- before Type 1 suffixes. Note the Dagesh Forte in the כּ before the suffix.
-
-## Formats
-
-[Full Screen (Interactive)](ch9-suffix-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch9-suffix-parsing.pdf){.md-button}  [Markdown](ch9-suffix-parsing.md){.md-button}

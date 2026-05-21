@@ -2,6 +2,8 @@
 
 *Chapter 7 — Hebrew Adjectives*
 
+[Full Screen (Interactive)](ch7-adjective-usage.html){.md-button .md-button--primary}  [Print / PDF](ch7-adjective-usage.pdf){.md-button}  [Markdown](ch7-adjective-usage.md){.md-button}
+
 Students examine 25 Hebrew noun-adjective phrases and identify: (1) the type of adjective use (Attributive Definite / Attributive Indefinite / Predicate / Substantival / Comparative / Superlative), (2) the adjective form, (3) gender and number agreement, and (4) an English translation. The exercise builds the key diagnostic skill of BBH Chapter 7: distinguishing attributive from predicate use by the presence or absence of the article on the adjective.
 
 ## Coverage
@@ -24,7 +26,3 @@ Students examine 25 Hebrew noun-adjective phrases and identify: (1) the type of 
 
 **Q3.** 3 הָעִיר הַגְּדוֹלָה Attributive (def.) Attributive (indef.) Predicate Substantival Comparative Superlative
 > **A:** ✓ הַגְּדוֹלָה Attributive (def.) הַגְּדוֹלָה fs — matches עִיר (fs; feminine despite lacking ָה ending) the great city
-
-## Formats
-
-[Full Screen (Interactive)](ch7-adjective-usage.html){.md-button .md-button--primary}  [Print / PDF](ch7-adjective-usage.pdf){.md-button}  [Markdown](ch7-adjective-usage.md){.md-button}

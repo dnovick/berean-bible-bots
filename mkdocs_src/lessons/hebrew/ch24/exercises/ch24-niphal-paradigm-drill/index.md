@@ -2,6 +2,8 @@
 
 *Chapter 24 — Niphal Strong*
 
+[Full Screen (Interactive)](ch24-niphal-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch24-niphal-paradigm-drill.pdf){.md-button}  [Markdown](ch24-niphal-paradigm-drill.md){.md-button}
+
 Write all 30 inflected forms of קטל (Niphal) from memory.
 
 ## Coverage
@@ -25,7 +27,3 @@ Write all 30 inflected forms of קטל (Niphal) from memory.
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms נִקְטַלְתָּ
-
-## Formats
-
-[Full Screen (Interactive)](ch24-niphal-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch24-niphal-paradigm-drill.pdf){.md-button}  [Markdown](ch24-niphal-paradigm-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 27 — Hiphil Weak*
 
+[Full Screen (Interactive)](ch27-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch27-passage-exercise.pdf){.md-button}  [Markdown](ch27-passage-exercise.md){.md-button}
+
 An 18-verb parsing exercise (plus 2 bonus items) drawn from Genesis, Exodus, Numbers, and Deuteronomy, with 3 distractor verbs in Part C. Students first answer "Is it Hiphil?" for every highlighted verb before parsing conjugation, PGN, root, weak class (I-guttural / III-ח/ע / III-א / III-ה / I-נ / I-י / Biconsonantal), and providing a causative gloss. Part C distractors (D1=וַיֵּלֶךְ Qal, D2=נוֹלַד Niphal, D3=תָּמוּת Qal) are drawn from the same corpus to reinforce Hiphil recognition against previously-learned stems. The exercise emphasizes the six most frequent weak classes; the bonus items reinforce I-נ and Biconsonantal patterns.
 
 ## Coverage
@@ -26,7 +28,3 @@ An 18-verb parsing exercise (plus 2 bonus items) drawn from Genesis, Exodus, Num
 
 **Q3.** Perfect Imperfect Wayyiqtol Imperative Inf. Construct Inf. Absolute Participle 1cs 2ms 2fs 3ms 3fs 1cp 2mp 2fp 3mp 3fp ms fs mp fp
 > **A:** Yes — Hiphil | Perfect 3ms עָלָה III-ה + I-guttural he offered up — qamets + ה ending; seghol under הֶ and hateph-seghol under ע from the I-guttural interaction
-
-## Formats
-
-[Full Screen (Interactive)](ch27-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch27-passage-exercise.pdf){.md-button}  [Markdown](ch27-passage-exercise.md){.md-button}

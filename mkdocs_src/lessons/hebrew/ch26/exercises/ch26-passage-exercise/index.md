@@ -2,6 +2,8 @@
 
 *Chapter 26 — Hiphil Strong*
 
+[Full Screen (Interactive)](ch26-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch26-passage-exercise.pdf){.md-button}  [Markdown](ch26-passage-exercise.md){.md-button}
+
 A 21-verb parsing exercise covering all eight Hiphil conjugations drawn from three OT passages: the flood narrative (Gen 6–8), the Abrahamic oath (Gen 22:17), and the conquest instruction (Deut 7:2). Two bonus verbs from Gen 6:1 and 6:10 are included. Three distractor verbs (D1–D3) are woven into the main passages: D1 (נִשְׁחָתָה, Niphal, Gen 6:12) appears alongside #1 to contrast Niphal vs. Hiphil; D2 (וּנְתָנָם, Qal) and D3 (תִכְרֹת, Qal) are from Deu 7:2 alongside #17–#19.
 
 Students first answer "Is it Hiphil?" for every highlighted verb before parsing conjugation, person-gender-number, root, and semantic function (Causative / Declarative / Factitive / Simple action). An answer key is embedded in all three formats.
@@ -30,7 +32,3 @@ Students first answer "Is it Hiphil?" for every highlighted verb before parsing 
 
 **Q3.** 3 מַשְׁחִיתָם
 > **A:** ✓ מַשְׁחִיתָם ✓ Yes — Hiphil | Participle + 3mp suffix ms | שָׁחַת | Causative — destroying them
-
-## Formats
-
-[Full Screen (Interactive)](ch26-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch26-passage-exercise.pdf){.md-button}  [Markdown](ch26-passage-exercise.md){.md-button}

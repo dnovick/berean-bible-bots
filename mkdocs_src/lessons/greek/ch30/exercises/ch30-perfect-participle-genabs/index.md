@@ -2,6 +2,8 @@
 
 *Chapter 30 — Combinative (Perfect) Participles and Genitive Absolutes*
 
+[Full Screen (Interactive)](ch30-perfect-participle-genabs.html){.md-button .md-button--primary}  [Print / PDF](ch30-perfect-participle-genabs.pdf){.md-button}  [Markdown](ch30-perfect-participle-genabs.md){.md-button}
+
 A 15-item drill: items 1–8 parse perfect participle forms (active and middle/passive); items 9–15 identify and translate genitive absolute constructions. Students identify reduplication, parse fully, and translate. An answer key is embedded in all formats.
 
 ## Coverage
@@ -23,7 +25,3 @@ A 15-item drill: items 1–8 parse perfect participle forms (active and middle/p
 
 **Q3.** 3 ἡ γεγραφυῖα γυνὴ ἐν τῷ βιβλίῳ.
 > **A:** Perf · Act · Nom · Sg · Fem · γράφω · "The woman who had written in the book."
-
-## Formats
-
-[Full Screen (Interactive)](ch30-perfect-participle-genabs.html){.md-button .md-button--primary}  [Print / PDF](ch30-perfect-participle-genabs.pdf){.md-button}  [Markdown](ch30-perfect-participle-genabs.md){.md-button}

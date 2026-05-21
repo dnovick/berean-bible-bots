@@ -2,6 +2,8 @@
 
 *Chapter 32 — Pual Strong*
 
+[Full Screen (Interactive)](ch32-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch32-stem-id-drill.pdf){.md-button}  [Markdown](ch32-stem-id-drill.md){.md-button}
+
 *BBH Chapter 32 · Pual Strong Verbs*
 
 ## Coverage
@@ -25,7 +27,3 @@
 
 **Q3.** 3 דֻּבַּר
 > **A:** Pual · Perfect · 3ms · דבר · "it was spoken" — qibbuts under ד + dagesh forte in ב + patach theme vowel
-
-## Formats
-
-[Full Screen (Interactive)](ch32-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch32-stem-id-drill.pdf){.md-button}  [Markdown](ch32-stem-id-drill.md){.md-button}

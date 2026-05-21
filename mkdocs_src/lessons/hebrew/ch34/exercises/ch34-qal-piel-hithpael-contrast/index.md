@@ -2,6 +2,8 @@
 
 *Chapter 34 — Hithpael Strong*
 
+[Full Screen (Interactive)](ch34-qal-piel-hithpael-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch34-qal-piel-hithpael-contrast.pdf){.md-button}  [Markdown](ch34-qal-piel-hithpael-contrast.md){.md-button}
+
 A 15-item triplet drill using five strong roots (קדשׁ, כבד, שׁמר, פלל, ברך). Each group presents the Qal, Piel, and Hithpael Perfect 3ms of the same root. Students identify the stem, describe its semantic function, and translate. The exercise builds recognition of the three-way contrast that defines Ch34: basic/stative action (Qal) vs. factitive/intensive (Piel) vs. reflexive (Hithpael). Group 3 (שׁמר) introduces sibilant metathesis (הִתְ + שׁ → הִשְׁתְּ), and Group 4 (פלל) highlights the Hithpael's denominative/reflexive force in the OT word for prayer.
 
 ## Coverage
@@ -22,7 +24,3 @@ A 15-item triplet drill using five strong roots (קדשׁ, כבד, שׁמר, פ�
 
 **Q3.** 3 הִתְקַדֵּשׁ
 > **A:** Hithpael Perfect 3ms · Reflexive: subject consecrates itself · "he consecrated himself / made himself holy"
-
-## Formats
-
-[Full Screen (Interactive)](ch34-qal-piel-hithpael-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch34-qal-piel-hithpael-contrast.pdf){.md-button}  [Markdown](ch34-qal-piel-hithpael-contrast.md){.md-button}

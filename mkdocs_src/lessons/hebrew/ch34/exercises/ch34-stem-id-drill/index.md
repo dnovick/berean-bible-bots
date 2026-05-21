@@ -2,6 +2,8 @@
 
 *Chapter 34 — Hithpael Strong*
 
+[Full Screen (Interactive)](ch34-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch34-stem-id-drill.pdf){.md-button}  [Markdown](ch34-stem-id-drill.md){.md-button}
+
 A 24-item drill covering all major conjugations of two roots (קדשׁ and דבר) across six stems: Qal, Niphal, Piel, Pual, Hiphil, and Hithpael. Items are interleaved by conjugation group (perfect, imperfect, wayyiqtol, imperative, participle) so students practice switching between stem identifications within the same conjugation category. The drill highlights three key diagnostic pairs: Piel vs. Hithpael (both have Dagesh in R2; prefix distinguishes them), Hiphil vs. Hithpael (different prefix vowels and consonants), and Niphal vs. Hithpael (niqtal pattern vs. hitqattel). Items 3 and 20 share the same written form (הִתְקַדֵּשׁ), demonstrating that Hithpael Perfect 3ms and Imperative 2ms are identical for strong roots.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 24-item drill covering all major conjugations of two roots (קדשׁ and דב�
 
 **Q3.** 3 הִתְקַדֵּשׁ
 > **A:** Hithpael · Perfect 3ms OR Imperative 2ms · קדשׁ — הִתְ prefix + Dagesh in R2 → Hithpael; both parsings are identical in writing for strong roots
-
-## Formats
-
-[Full Screen (Interactive)](ch34-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch34-stem-id-drill.pdf){.md-button}  [Markdown](ch34-stem-id-drill.md){.md-button}

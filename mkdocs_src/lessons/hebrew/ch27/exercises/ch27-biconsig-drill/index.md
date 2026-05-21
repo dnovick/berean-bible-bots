@@ -2,6 +2,8 @@
 
 *Chapter 27 — Hiphil Weak*
 
+[Full Screen (Interactive)](ch27-biconsig-drill.html){.md-button .md-button--primary}  [Print / PDF](ch27-biconsig-drill.pdf){.md-button}  [Markdown](ch27-biconsig-drill.md){.md-button}
+
 A 24-item drill focused on distinguishing Biconsonantal (II-י/ו) from Geminate (R2=R3) roots in Niphal and Hiphil contexts. The two classes are vocally identical in all conjugations of both stems — the only reliable distinguisher is root knowledge. Each item asks students to identify the stem, parse the conjugation and PGN, classify as Biconsonantal or Geminate, give the root, and translate.
 
 The exercise is organized in three parts:
@@ -26,7 +28,3 @@ The exercise is organized in three parts:
 
 **Q3.** 3 יִכּוֹן Psa 93:2 "your throne ___ from of old" ▶
 > **A:** Niphal · Imperfect · 3ms · Biconsonantal · כּוּן — "is established"; יִ prefix + dagesh in כּ (Niphal pattern) + holem-vav = Biconsonantal; the dagesh here is Niphal's assimilation pattern, not R2=R3 doubling
-
-## Formats
-
-[Full Screen (Interactive)](ch27-biconsig-drill.html){.md-button .md-button--primary}  [Print / PDF](ch27-biconsig-drill.pdf){.md-button}  [Markdown](ch27-biconsig-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 26 — Hiphil Strong*
 
+[Full Screen (Interactive)](ch26-hiphil-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch26-hiphil-paradigm-drill.pdf){.md-button}  [Markdown](ch26-hiphil-paradigm-drill.md){.md-button}
+
 Write all 30 inflected forms of קטל (Hiphil) from memory.
 
 ## Coverage
@@ -25,7 +27,3 @@ Write all 30 inflected forms of קטל (Hiphil) from memory.
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms הִקְטַלְתָּ
-
-## Formats
-
-[Full Screen (Interactive)](ch26-hiphil-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch26-hiphil-paradigm-drill.pdf){.md-button}  [Markdown](ch26-hiphil-paradigm-drill.md){.md-button}

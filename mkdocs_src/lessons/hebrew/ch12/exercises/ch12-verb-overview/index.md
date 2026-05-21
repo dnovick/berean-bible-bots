@@ -2,6 +2,8 @@
 
 *Chapter 12 — Introduction to Hebrew Verbs*
 
+[Full Screen (Interactive)](ch12-verb-overview.html){.md-button .md-button--primary}  [Print / PDF](ch12-verb-overview.pdf){.md-button}  [Markdown](ch12-verb-overview.md){.md-button}
+
 Conceptual introduction to the Hebrew verbal system. Students identify stems, active/passive/reflexive
 voice, and roots — without full parsing, since conjugations have not yet been introduced.
 
@@ -22,7 +24,3 @@ voice, and roots — without full parsing, since conjugations have not yet been 
 
 **Q3.** 3 נָתַן "he gave" Qal Niphal Piel Pual Hiphil Hophal Hithpael
 > **A:** ✓ נָתַן "he gave" Qal Active נתן Weak: I-נ and III-נ, but Qal 3ms looks like a strong root here
-
-## Formats
-
-[Full Screen (Interactive)](ch12-verb-overview.html){.md-button .md-button--primary}  [Print / PDF](ch12-verb-overview.pdf){.md-button}  [Markdown](ch12-verb-overview.md){.md-button}

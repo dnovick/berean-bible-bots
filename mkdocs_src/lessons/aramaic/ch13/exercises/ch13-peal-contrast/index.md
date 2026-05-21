@@ -2,6 +2,8 @@
 
 *Chapter 13 — Peal Perfect*
 
+[Full Screen (Interactive)](ch13-peal-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch13-peal-contrast.pdf){.md-button}  [Markdown](ch13-peal-contrast.md){.md-button}
+
 This exercise presents twenty Aramaic verbal forms drawn from Daniel and Ezra representing both the **Peal Perfect** and the **Peal Imperfect** in mixed order. For each form, students identify (1) the **conjugation** (Perfect or Imperfect), (2) the full **PGN** (person, gender, number), (3) the **root** (three consonants), and (4) the **translation**. The drill is designed as a contrast exercise so that students learn from the very start of the Peal verbal system how to distinguish the Perfect from the Imperfect — a distinction that becomes critical when reading Daniel or Ezra. Although Ch13 introduces only the Perfect, this preview of Imperfect forms equips students with the key diagnostic patterns before Ch14.
 
 ## Coverage
@@ -21,7 +23,3 @@ This exercise presents twenty Aramaic verbal forms drawn from Daniel and Ezra re
 
 **Q3.** 3 אֲמַר &#9654; Answer
 > **A:** Conj: Perfect &nbsp;|&nbsp; PGN: 3ms &nbsp;|&nbsp; Root: אמר &nbsp;|&nbsp; Trans: he said (I-aleph root; hateph-patach under aleph)
-
-## Formats
-
-[Full Screen (Interactive)](ch13-peal-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch13-peal-contrast.pdf){.md-button}  [Markdown](ch13-peal-contrast.md){.md-button}

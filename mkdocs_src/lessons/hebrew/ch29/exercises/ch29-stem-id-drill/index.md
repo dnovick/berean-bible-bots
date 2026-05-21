@@ -2,6 +2,8 @@
 
 *Chapter 29 — Hophal Weak*
 
+[Full Screen (Interactive)](ch29-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch29-stem-id-drill.pdf){.md-button}  [Markdown](ch29-stem-id-drill.md){.md-button}
+
 *BBH Chapter 29 · Hophal Weak Verbs*
 
 A 24-item identification drill mixing Qal, Niphal, Hiphil, and Hophal forms of hollow (בוא, שׁוב, קום) and I-י (ירד, ילד) roots, interleaved across multiple conjugations (Perfect, Imperfect, Wayyiqtol). Students identify the stem, parse the conjugation and PGN, and translate. The drill emphasizes the diagnostic שׁוּרֶק (וּ) prefix vowel that marks the Hophal in all weak verb paradigms, contrasting it against the Hiphil's characteristic הוֹ/הֵ prefix and chiriq-yod vowel pattern. Item 11 uses the Niphal Imperfect 3ms of hollow root בוא (יִוָּבֵא).
@@ -30,7 +32,3 @@ A 24-item identification drill mixing Qal, Niphal, Hiphil, and Hophal forms of h
 
 **Q3.** 3 נָבוֹא
 > **A:** Niphal · Perfect · 3ms · בוא — he entered / he came in (reflexive) · Niphal hollow Perfect: נָ prefix (qamets) + full stem with holem-waw. The נִ lengthens to נָ before the hollow root's long vowel.
-
-## Formats
-
-[Full Screen (Interactive)](ch29-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch29-stem-id-drill.pdf){.md-button}  [Markdown](ch29-stem-id-drill.md){.md-button}

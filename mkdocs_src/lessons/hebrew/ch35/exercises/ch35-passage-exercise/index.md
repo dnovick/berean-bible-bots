@@ -2,6 +2,8 @@
 
 *Chapter 35 — Hithpael Weak*
 
+[Full Screen (Interactive)](ch35-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch35-passage-exercise.pdf){.md-button}  [Markdown](ch35-passage-exercise.md){.md-button}
+
 Students identify and parse Hithpael weak-root verbs across passages from Genesis 22, Genesis 18, Exodus 20, Psalm 95, Genesis 35, 1 Samuel 10, Genesis 44, and 2 Kings 8. The exercise presents 10 numbered verbs: 7 Hithpael targets (weak roots) and 3 distractors from Qal, Niphal, and Hophal. The dominant root is שׁחה (III-ה, I-שׁ) appearing in three conjugations (cohortative, wayyiqtol, imperfect), requiring students to track both the I-שׁ metathesis and the III-ה endings across forms. One I-צ metathesis example (נִצְטַדָּק, Gen 44:16) and two I-נ examples (הִתְנַבִּיתָ and וַיִּתְנַבְּאוּ) round out the weak-root coverage.
 
 ## Coverage
@@ -25,7 +27,3 @@ Students identify and parse Hithpael weak-root verbs across passages from Genesi
 
 **Q3.** 3 וַיִּשְׁתַּחוּ
 > **A:** ✓ Yes — Hithpael | Wayyiqtol | 3ms | שחה | Reflexive "and he bowed down" — Wayyiqtol: וַיִּ + שְׁתַּחוּ; I-שׁ metathesis preserved; III-ה in Wayyiqtol 3ms = short form (no ה ending, final vowel וּ from 3ms apocopation + suffix). Compare: form וַיִּשְׁתַּחֲווּ (3mp) has different ending.
-
-## Formats
-
-[Full Screen (Interactive)](ch35-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch35-passage-exercise.pdf){.md-button}  [Markdown](ch35-passage-exercise.md){.md-button}

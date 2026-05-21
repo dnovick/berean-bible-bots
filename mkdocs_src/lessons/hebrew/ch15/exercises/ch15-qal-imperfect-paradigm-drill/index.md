@@ -2,6 +2,8 @@
 
 *Chapter 15 — Qal Imperfect Strong Verbs*
 
+[Full Screen (Interactive)](ch15-qal-imperfect-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch15-qal-imperfect-paradigm-drill.pdf){.md-button}  [Markdown](ch15-qal-imperfect-paradigm-drill.md){.md-button}
+
 Write all 10 inflected forms of שמר (Qal Imperfect, A-class holem theme) from memory.
 
 ## Coverage
@@ -20,7 +22,3 @@ Write all 10 inflected forms of שמר (Qal Imperfect, A-class holem theme) from
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms תִּשְׁמֹר
-
-## Formats
-
-[Full Screen (Interactive)](ch15-qal-imperfect-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch15-qal-imperfect-paradigm-drill.pdf){.md-button}  [Markdown](ch15-qal-imperfect-paradigm-drill.md){.md-button}

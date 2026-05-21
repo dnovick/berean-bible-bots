@@ -2,6 +2,8 @@
 
 *Chapter 31 — Subjunctive*
 
+[Full Screen (Interactive)](ch31-subjunctive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch31-subjunctive-parsing.pdf){.md-button}  [Markdown](ch31-subjunctive-parsing.md){.md-button}
+
 A 20-item parsing drill on the Greek subjunctive mood. Students parse each form (tense / voice / person / number / mood / lexical form), identify the use (hortatory, purpose, conditional, prohibition, emphatic denial, indefinite), and translate. Items are drawn from GNT-style sentences with the characteristic subjunctive constructions. An answer key is embedded in all formats.
 
 ## Coverage
@@ -25,7 +27,3 @@ A 20-item parsing drill on the Greek subjunctive mood. Students parse each form 
 
 **Q3.** 3 ταῦτα γέγραπται ἵνα πιστεύητε ὅτι Ἰησοῦς ἐστιν ὁ Χριστός.
 > **A:** Pres · Act · 2nd · Pl · πιστεύω · Purpose (ἵνα) · "These things were written so that you may believe that Jesus is the Christ." (cf. John 20:31)
-
-## Formats
-
-[Full Screen (Interactive)](ch31-subjunctive-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch31-subjunctive-parsing.pdf){.md-button}  [Markdown](ch31-subjunctive-parsing.md){.md-button}

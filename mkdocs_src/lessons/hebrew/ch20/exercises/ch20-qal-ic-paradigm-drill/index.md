@@ -2,6 +2,8 @@
 
 *Chapter 20 — Qal Infinitive Construct*
 
+[Full Screen (Interactive)](ch20-qal-ic-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch20-qal-ic-paradigm-drill.pdf){.md-button}  [Markdown](ch20-qal-ic-paradigm-drill.md){.md-button}
+
 Write the bare Infinitive Construct and the form with לְ for 6 root classes from memory.
 
 ## Coverage
@@ -20,7 +22,3 @@ Write the bare Infinitive Construct and the form with לְ for 6 root classes fr
 
 **Q3.** 3 Biconsonantal שוב
 > **A:** ✓ Biconsonantal שוב שׁוּב לָשׁוּב
-
-## Formats
-
-[Full Screen (Interactive)](ch20-qal-ic-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch20-qal-ic-paradigm-drill.pdf){.md-button}  [Markdown](ch20-qal-ic-paradigm-drill.md){.md-button}

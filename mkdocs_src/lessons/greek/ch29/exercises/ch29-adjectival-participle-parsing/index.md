@@ -2,6 +2,8 @@
 
 *Chapter 29 — Adjectival Participles*
 
+[Full Screen (Interactive)](ch29-adjectival-participle-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch29-adjectival-participle-parsing.pdf){.md-button}  [Markdown](ch29-adjectival-participle-parsing.md){.md-button}
+
 A 15-item parsing drill focused on adjectival (attributive) and substantival uses of the participle. Students parse each form, identify the use (attributive vs. substantival), note whether the participle is adjectival or substantival, and translate. Items use GNT-style phrases covering all case/gender/number combinations and multiple tenses. An answer key is embedded in all formats.
 
 ## Coverage
@@ -23,7 +25,3 @@ A 15-item parsing drill focused on adjectival (attributive) and substantival use
 
 **Q3.** 3 εἶδεν τὴν κλαίουσαν γυναῖκα.
 > **A:** Pres · Act · Acc · Sg · Fem · κλαίω · Attributive · 1st pos. · "He saw the weeping woman."
-
-## Formats
-
-[Full Screen (Interactive)](ch29-adjectival-participle-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch29-adjectival-participle-parsing.pdf){.md-button}  [Markdown](ch29-adjectival-participle-parsing.md){.md-button}

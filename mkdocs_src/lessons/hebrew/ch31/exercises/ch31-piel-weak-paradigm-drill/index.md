@@ -2,6 +2,8 @@
 
 *Chapter 31 — Piel Weak*
 
+[Full Screen (Interactive)](ch31-piel-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch31-piel-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch31-piel-weak-paradigm-drill.md){.md-button}
+
 Write selected Piel Weak forms for גלה (III-ה) from memory.
 
 ## Coverage
@@ -23,7 +25,3 @@ Write selected Piel Weak forms for גלה (III-ה) from memory.
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms גִּלִּיתָ
-
-## Formats
-
-[Full Screen (Interactive)](ch31-piel-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch31-piel-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch31-piel-weak-paradigm-drill.md){.md-button}

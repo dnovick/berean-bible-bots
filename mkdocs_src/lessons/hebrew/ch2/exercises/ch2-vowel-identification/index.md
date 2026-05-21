@@ -2,6 +2,8 @@
 
 *Chapter 2 — Hebrew Vowels*
 
+[Full Screen (Interactive)](ch2-vowel-identification.html){.md-button .md-button--primary}  [Print / PDF](ch2-vowel-identification.pdf){.md-button}  [Markdown](ch2-vowel-identification.md){.md-button}
+
 25-item drill covering all five Hebrew vowel classes, both types of simple sheva (vocal and silent), all three hatef (composite) shevas, matres lectionis, and dagesh forte. Students identify the vowel name, class, quantity, and any special features for each form. Items are presented in mixed order across all categories.
 
 ## Coverage
@@ -28,7 +30,3 @@
 
 **Q3.** 3 מִ
 > **A:** ✓ מִ Hireq · I-class · Short · Single dot below consonant; "ee" sound
-
-## Formats
-
-[Full Screen (Interactive)](ch2-vowel-identification.html){.md-button .md-button--primary}  [Print / PDF](ch2-vowel-identification.pdf){.md-button}  [Markdown](ch2-vowel-identification.md){.md-button}

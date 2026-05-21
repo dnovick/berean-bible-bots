@@ -2,6 +2,8 @@
 
 *Chapter 20 — The Hithpaal and Ithpaal Stems*
 
+[Full Screen (Interactive)](ch20-hithpaal-drill.html){.md-button .md-button--primary}  [Print / PDF](ch20-hithpaal-drill.pdf){.md-button}  [Markdown](ch20-hithpaal-drill.md){.md-button}
+
 A 20-item parsing drill covering the **Hithpaal (Ithpaal)** stem (Dt stem — reflexive/passive of the Pael) using verbs from Daniel and Ezra. Students identify stem (noting metathesis where applicable), conjugation, root, PGN, and translation for each form.
 
 ## Coverage
@@ -23,7 +25,3 @@ A 20-item parsing drill covering the **Hithpaal (Ithpaal)** stem (Dt stem — re
 
 **Q3.** 3 יִתְחַבַּל &#9654; Answer
 > **A:** Stem: Hithpaal &nbsp;|&nbsp; Conj: Imperfect &nbsp;|&nbsp; Root: חבל &nbsp;|&nbsp; PGN: 3ms &nbsp;|&nbsp; Trans: it will be destroyed / harmed (Dan. 6:23: no wound was found on Daniel; יִתְ- = Hithpaal imperfect prefix; dagesh forte in ב (R2))
-
-## Formats
-
-[Full Screen (Interactive)](ch20-hithpaal-drill.html){.md-button .md-button--primary}  [Print / PDF](ch20-hithpaal-drill.pdf){.md-button}  [Markdown](ch20-hithpaal-drill.md){.md-button}

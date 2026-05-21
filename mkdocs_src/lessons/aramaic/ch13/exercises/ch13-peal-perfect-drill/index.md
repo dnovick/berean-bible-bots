@@ -2,6 +2,8 @@
 
 *Chapter 13 — Peal Perfect*
 
+[Full Screen (Interactive)](ch13-peal-perfect-drill.html){.md-button .md-button--primary}  [Print / PDF](ch13-peal-perfect-drill.pdf){.md-button}  [Markdown](ch13-peal-perfect-drill.md){.md-button}
+
 This exercise presents twenty Peal perfect verb forms drawn from the Biblical Aramaic corpus (Daniel and Ezra). For each form, students identify the three-letter root, give the full PGN (person, gender, number), and translate the form. The drill covers all ten persons of the perfect paradigm and includes both strong roots and the major weak-root classes introduced in BBA Chapter 13.
 
 ## Coverage
@@ -27,7 +29,3 @@ This exercise presents twenty Peal perfect verb forms drawn from the Biblical Ar
 
 **Q3.** 3 שְׁלַחְתְּ &#9654; Answer
 > **A:** Root: שׁלח &nbsp;|&nbsp; PGN: 2ms &nbsp;|&nbsp; Translation: you (ms) sent
-
-## Formats
-
-[Full Screen (Interactive)](ch13-peal-perfect-drill.html){.md-button .md-button--primary}  [Print / PDF](ch13-peal-perfect-drill.pdf){.md-button}  [Markdown](ch13-peal-perfect-drill.md){.md-button}

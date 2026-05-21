@@ -2,6 +2,8 @@
 
 *Chapter 16 — Qal Imperfect Weak Verbs*
 
+[Full Screen (Interactive)](ch16-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch16-weak-form-id.pdf){.md-button}  [Markdown](ch16-weak-form-id.md){.md-button}
+
 Identify the weak class, PGN, and root for each of 40 Qal Imperfect forms.
 
 ## Coverage
@@ -21,7 +23,3 @@ Identify the weak class, PGN, and root for each of 40 Qal Imperfect forms.
 
 **Q3.** 3 יִהְיֶה
 > **A:** ✓ יִהְיֶה III-ה 3 s m הָיָה Most common III-ה Imperfect
-
-## Formats
-
-[Full Screen (Interactive)](ch16-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch16-weak-form-id.pdf){.md-button}  [Markdown](ch16-weak-form-id.md){.md-button}

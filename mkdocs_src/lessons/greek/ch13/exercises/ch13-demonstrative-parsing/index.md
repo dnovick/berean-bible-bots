@@ -2,6 +2,8 @@
 
 *Chapter 13 — Demonstrative Pronouns/Adjectives*
 
+[Full Screen (Interactive)](ch13-demonstrative-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch13-demonstrative-parsing.pdf){.md-button}  [Markdown](ch13-demonstrative-parsing.md){.md-button}
+
 ## Coverage
 
 | Demonstrative | Forms drilled |
@@ -20,7 +22,3 @@
 
 **Q3.** 3 ταύτης ἐκ τῆς γενεᾶς ταύτης
 > **A:** Feminine · Genitive · Singular · οὗτος · A — Post-positive predicate position: article + noun + demonstrative
-
-## Formats
-
-[Full Screen (Interactive)](ch13-demonstrative-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch13-demonstrative-parsing.pdf){.md-button}  [Markdown](ch13-demonstrative-parsing.md){.md-button}

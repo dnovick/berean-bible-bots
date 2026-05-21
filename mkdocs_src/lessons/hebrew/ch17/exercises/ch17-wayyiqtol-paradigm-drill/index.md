@@ -2,6 +2,8 @@
 
 *Chapter 17 — Waw-Consecutive*
 
+[Full Screen (Interactive)](ch17-wayyiqtol-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch17-wayyiqtol-paradigm-drill.pdf){.md-button}  [Markdown](ch17-wayyiqtol-paradigm-drill.md){.md-button}
+
 Write all 10 Wayyiqtol (Waw-Consecutive Imperfect) forms of קטל from memory.
 
 ## Coverage
@@ -20,7 +22,3 @@ Write all 10 Wayyiqtol (Waw-Consecutive Imperfect) forms of קטל from memory.
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms וַתִּקְטֹל
-
-## Formats
-
-[Full Screen (Interactive)](ch17-wayyiqtol-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch17-wayyiqtol-paradigm-drill.pdf){.md-button}  [Markdown](ch17-wayyiqtol-paradigm-drill.md){.md-button}

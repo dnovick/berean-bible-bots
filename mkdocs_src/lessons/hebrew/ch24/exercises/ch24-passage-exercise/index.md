@@ -2,6 +2,8 @@
 
 *Chapter 24 — Niphal Strong*
 
+[Full Screen (Interactive)](ch24-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch24-passage-exercise.pdf){.md-button}  [Markdown](ch24-passage-exercise.md){.md-button}
+
 A 15-verb parsing exercise drawn from the Joseph narrative (Gen 37–49) and the Sinai approach (Exo 19), with 3 distractor verbs (Part C) from the same passages. Students first answer "Is it Niphal?" for every highlighted verb before parsing conjugation, person-gender-number, root, and semantic function (Passive / Reflexive / Simple action). Distractors are Qal forms (קָמָה, מָכְרוּ, יָכֹל) drawn from the identical corpus to reinforce Niphal recognition. An answer key is embedded in all three formats. Roots are predominantly strong (מָצָא, שָׁבַע, נָצַב, אָסַף, מָכַר, שָׁמַע, שָׁמַר) with one middle/stative root (יָתַר).
 
 ## Coverage
@@ -26,7 +28,3 @@ A 15-verb parsing exercise drawn from the Joseph narrative (Gen 37–49) and the
 
 **Q3.** 3 מָכְרוּ
 > **A:** ✗ מָכְרוּ ✗ No — Qal | Perfect 3cp | מָכַר | NOT Niphal — Qal: had sold ; active Qal; contrast with #4 Niphal passive of the same root
-
-## Formats
-
-[Full Screen (Interactive)](ch24-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch24-passage-exercise.pdf){.md-button}  [Markdown](ch24-passage-exercise.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 31 — Piel Weak*
 
+[Full Screen (Interactive)](ch31-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch31-function-sort.pdf){.md-button}  [Markdown](ch31-function-sort.md){.md-button}
+
 *BBH Chapter 31 · Piel Weak Verbs*
 
 A 20-item semantic function sort using weak-root Piel forms only. Students classify each verb as Intensive (I), Factitive (F), Declarative (D), Simple Action (SA), or Denominative (DN). Items span I-Guttural roots (ברך, חזק, ענה), III-ה roots (גלה, צוה, כלה, בנה, שׁנה), and strong roots that are common Piel verbs (בקש). Verbs are drawn from attested OT texts (Genesis 1–47, Exodus, Psalms, Amos, Isaiah). Two items (4 and 12) have dual-acceptable analyses (I or F) and the answer key explains both.
@@ -30,7 +32,3 @@ A 20-item semantic function sort using weak-root Piel forms only. Students class
 
 **Q3.** 3 חִזֵּק Perfect 3ms חזק Exo 4:21 "I will harden his heart" I F D SA DN
 > **A:** F — Factitive · Root: חזק (Qal: to be strong/hard — stative) · Piel = cause to enter the state of hardness; "he hardened [Pharaoh's heart]." Classic Factitive
-
-## Formats
-
-[Full Screen (Interactive)](ch31-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch31-function-sort.pdf){.md-button}  [Markdown](ch31-function-sort.md){.md-button}

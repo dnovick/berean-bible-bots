@@ -2,6 +2,8 @@
 
 *Chapter 34 — Hithpael Strong*
 
+[Full Screen (Interactive)](ch34-hithpael-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch34-hithpael-paradigm-drill.pdf){.md-button}  [Markdown](ch34-hithpael-paradigm-drill.md){.md-button}
+
 Write all 29 inflected forms of קדשׁ (Hithpael) from memory. Key: הִתְ prefix throughout; מִתְ in participle.
 
 ## Coverage
@@ -24,7 +26,3 @@ Write all 29 inflected forms of קדשׁ (Hithpael) from memory. Key: הִתְ p
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms הִתְקַדַּשְׁתָּ
-
-## Formats
-
-[Full Screen (Interactive)](ch34-hithpael-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch34-hithpael-paradigm-drill.pdf){.md-button}  [Markdown](ch34-hithpael-paradigm-drill.md){.md-button}

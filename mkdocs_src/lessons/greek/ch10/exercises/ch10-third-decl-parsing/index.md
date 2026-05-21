@@ -2,6 +2,8 @@
 
 *Chapter 10 — Third Declension*
 
+[Full Screen (Interactive)](ch10-third-decl-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch10-third-decl-parsing.pdf){.md-button}  [Markdown](ch10-third-decl-parsing.md){.md-button}
+
 A 20-item parsing drill covering 3rd-declension noun forms drawn from common GNT vocabulary. Students identify the case, number, gender, and lexical form for each form. Items include consonant-stem nouns (velar, dental, liquid), neuter -μα nouns, and i-stem nouns. The definite article is included on most items to aid in case identification; some items are anarthrous to increase challenge.
 
 ## Coverage
@@ -22,7 +24,3 @@ A 20-item parsing drill covering 3rd-declension noun forms drawn from common GNT
 
 **Q3.** 3 σώματα &#9658; Answer
 > **A:** N or A · P · N · σῶμα — "bodies" (neut. nom./acc. pl. identical)
-
-## Formats
-
-[Full Screen (Interactive)](ch10-third-decl-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch10-third-decl-parsing.pdf){.md-button}  [Markdown](ch10-third-decl-parsing.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 18 — Qal Imperative*
 
+[Full Screen (Interactive)](ch18-qal-imperative-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch18-qal-imperative-paradigm-drill.pdf){.md-button}  [Markdown](ch18-qal-imperative-paradigm-drill.md){.md-button}
+
 Write all 4 Qal Imperative forms of שמר (A-class) from memory.
 
 ## Coverage
@@ -20,7 +22,3 @@ Write all 4 Qal Imperative forms of שמר (A-class) from memory.
 
 **Q3.** 3 2mp
 > **A:** ✓ 2mp שִׁמְרוּ
-
-## Formats
-
-[Full Screen (Interactive)](ch18-qal-imperative-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch18-qal-imperative-paradigm-drill.pdf){.md-button}  [Markdown](ch18-qal-imperative-paradigm-drill.md){.md-button}

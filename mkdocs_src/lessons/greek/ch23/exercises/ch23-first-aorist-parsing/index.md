@@ -2,6 +2,8 @@
 
 *Chapter 23 — First Aorist Active and Middle Indicative*
 
+[Full Screen (Interactive)](ch23-first-aorist-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch23-first-aorist-parsing.pdf){.md-button}  [Markdown](ch23-first-aorist-parsing.md){.md-button}
+
 ## Coverage
 
 | Form Type | Items |
@@ -23,7 +25,3 @@
 
 **Q3.** ἔλυσεν
 > **A:** Aorist 1st · Active · Indicative · 3rd · Singular · λύω · He/she/it loosed
-
-## Formats
-
-[Full Screen (Interactive)](ch23-first-aorist-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch23-first-aorist-parsing.pdf){.md-button}  [Markdown](ch23-first-aorist-parsing.md){.md-button}

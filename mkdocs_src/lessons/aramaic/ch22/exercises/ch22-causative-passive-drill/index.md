@@ -2,6 +2,8 @@
 
 *Chapter 22 — The Aphel, Shaphel, and Hophal Stems*
 
+[Full Screen (Interactive)](ch22-causative-passive-drill.html){.md-button .md-button--primary}  [Print / PDF](ch22-causative-passive-drill.pdf){.md-button}  [Markdown](ch22-causative-passive-drill.md){.md-button}
+
 A **20-item capstone review drill** covering all **nine Aramaic stems** introduced across the BBA curriculum (Chapters 12–22). Students identify the stem, conjugation, root, PGN, and translation for each verb form drawn from Daniel or Ezra. The drill emphasizes the three stems introduced in Chapter 22 (Aphel, Shaphel, Hophal) while reviewing all prior stems to consolidate the full verbal system.
 
 ## Coverage
@@ -28,7 +30,3 @@ A **20-item capstone review drill** covering all **nine Aramaic stems** introduc
 
 **Q3.** 3 אַחֲוִי &#9654; Answer
 > **A:** Stem: Aphel &nbsp;|&nbsp; Conj: Perfect &nbsp;|&nbsp; Root: חזה &nbsp;|&nbsp; PGN: 3ms &nbsp;|&nbsp; Trans: he showed / he declared (Dan. 5:12; 7:16; אַ- = Aphel causative prefix [aleph + patach]; alternate causative to Haphel; root חזה "to see" → Aphel "to cause to see / to show / to declare"; III-he root with -ִי ending in 3ms perfect)
-
-## Formats
-
-[Full Screen (Interactive)](ch22-causative-passive-drill.html){.md-button .md-button--primary}  [Print / PDF](ch22-causative-passive-drill.pdf){.md-button}  [Markdown](ch22-causative-passive-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 4 — Hebrew Nouns*
 
+[Full Screen (Interactive)](ch4-noun-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch4-noun-parsing.pdf){.md-button}  [Markdown](ch4-noun-parsing.md){.md-button}
+
 Identify the gender, number, state, lexical form, and gloss for each of 25 Hebrew noun forms.
 
 ## Coverage
@@ -24,7 +26,3 @@ Identify the gender, number, state, lexical form, and gloss for each of 25 Hebre
 
 **Q3.** 3 מַלְכֵי m. f. c. s. pl. du. abs. cstr. abs. or cstr.
 > **A:** ✓ מַלְכֵי m. pl. cstr. מֶלֶךְ kings of Construct pl.; ים‑ → ֵי
-
-## Formats
-
-[Full Screen (Interactive)](ch4-noun-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch4-noun-parsing.pdf){.md-button}  [Markdown](ch4-noun-parsing.md){.md-button}

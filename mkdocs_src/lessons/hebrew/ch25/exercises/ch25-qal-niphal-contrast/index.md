@@ -2,6 +2,8 @@
 
 *Chapter 25 — Niphal Weak*
 
+[Full Screen (Interactive)](ch25-qal-niphal-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch25-qal-niphal-contrast.pdf){.md-button}  [Markdown](ch25-qal-niphal-contrast.md){.md-button}
+
 *BBH Chapter 25 · Niphal Weak Verbs*
 
 A 15-item exercise in three parts organized by weak-root class. Students are given a root with its Qal meaning and an attested Niphal form, then asked to translate the Niphal, name its semantic function (Passive / Reflexive / Simple Action / Stative Niphal), and explain how the Niphal meaning relates to the Qal. Part A covers I-נ roots (נפל, נגש, נגד, נגע, נכה); Part B covers III-ה roots (גלה, עלה, ראה, בנה, עשׂה); Part C covers hollow roots (קום, כון, שׁים, בוא, שׁוב).
@@ -25,7 +27,3 @@ A 15-item exercise in three parts organized by weak-root class. Students are giv
 
 **Q3.** 3 נגד to tell, declare הִגָּד Inf. Absolute
 > **A:** to be told / being declared — Passive — הִגָּד is the Niphal inf. absolute of נגד; הִ prefix + dagesh forte in גּ (assimilated root nun).
-
-## Formats
-
-[Full Screen (Interactive)](ch25-qal-niphal-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch25-qal-niphal-contrast.pdf){.md-button}  [Markdown](ch25-qal-niphal-contrast.md){.md-button}

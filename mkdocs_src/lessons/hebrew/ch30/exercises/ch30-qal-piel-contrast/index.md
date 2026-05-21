@@ -2,6 +2,8 @@
 
 *Chapter 30 — Piel Strong*
 
+[Full Screen (Interactive)](ch30-qal-piel-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch30-qal-piel-contrast.pdf){.md-button}  [Markdown](ch30-qal-piel-contrast.md){.md-button}
+
 A 17-item Qal-to-Piel contrast exercise organized in three parts: Part A (7 items) covers Intensive roots where the Piel performs the Qal action more forcefully or completely; Part B (5 items) covers Factitive roots where the Piel causes an object to enter the stative state described by the Qal; Part C (5 items) covers Declarative, Denominative, and Simple Action roots where the intensification model breaks down. All forms are drawn from attested OT texts (Genesis 1–43, Exodus 19, 32, Leviticus 4 and 21). Students translate each Piel, name the function, and check their answer; three discussion questions press on the Intensive-vs.-Factitive distinction, the grammatical object that Factitive verbs require, and why the three non-Intensive categories cannot be explained by intensification.
 
 ## Coverage
@@ -22,7 +24,3 @@ A 17-item Qal-to-Piel contrast exercise organized in three parts: Part A (7 item
 
 **Q3.** 3 שָׁלַח to send יְשַׁלַּח (Wayyiqtol 3ms) Gen 8:7
 > **A:** Intensive · he sent out / released (the raven) · The Piel = let go completely, dispatch definitively; the bird is released from its confinement on the ark
-
-## Formats
-
-[Full Screen (Interactive)](ch30-qal-piel-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch30-qal-piel-contrast.pdf){.md-button}  [Markdown](ch30-qal-piel-contrast.md){.md-button}

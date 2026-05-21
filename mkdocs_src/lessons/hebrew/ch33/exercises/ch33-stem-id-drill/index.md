@@ -2,6 +2,8 @@
 
 *Chapter 33 — Pual Weak*
 
+[Full Screen (Interactive)](ch33-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch33-stem-id-drill.pdf){.md-button}  [Markdown](ch33-stem-id-drill.md){.md-button}
+
 *BBH Chapter 33 · Pual Weak Verbs*
 
 ## Coverage
@@ -25,7 +27,3 @@
 
 **Q3.** 3 גֻּלָּה
 > **A:** Pual · Perfect · 3ms · גלה · "he was revealed / uncovered" — qibbuts under ג + dagesh forte in ל + final ָּה; distinguish from Piel by qibbuts vs hiriq
-
-## Formats
-
-[Full Screen (Interactive)](ch33-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch33-stem-id-drill.pdf){.md-button}  [Markdown](ch33-stem-id-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 25 — Niphal Weak*
 
+[Full Screen (Interactive)](ch25-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch25-passage-exercise.pdf){.md-button}  [Markdown](ch25-passage-exercise.md){.md-button}
+
 A 15-verb parsing exercise drawn from Genesis 3, 6, and 21, with 3 distractor verbs (Part C) from the same passages. Students first answer "Is it Niphal?" for every highlighted verb before parsing conjugation, PGN, root, weak class, and semantic function (Passive / Reflexive / Middle / Simple Action). Distractors are Qal forms (וַתֵּרֶא, עָשָׂה, וַיִּגְדַּל) drawn from the identical corpus. Genesis 3 has reflexive and middle uses (III-ה and I-guttural roots); Genesis 6 has Niphal-only forms and passive (I-guttural); Genesis 21 has reflexive oath-swearing (I-י) and passive birth notices. Two bonus verbs from Gen 21:3 and 21:8 are included.
 
 ## Coverage
@@ -25,7 +27,3 @@ A 15-verb parsing exercise drawn from Genesis 3, 6, and 21, with 3 distractor ve
 
 **Q3.** 3 וְנֶחְמָד
 > **A:** ✓ ✓ Yes — Niphal | Participle ms · ms · חָמַד | Passive — "desirable" (substantival participle: "desired/desirable")
-
-## Formats
-
-[Full Screen (Interactive)](ch25-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch25-passage-exercise.pdf){.md-button}  [Markdown](ch25-passage-exercise.md){.md-button}

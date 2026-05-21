@@ -2,6 +2,8 @@
 
 *Chapter 16 — Present Active Indicative*
 
+[Full Screen (Interactive)](ch16-present-active-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch16-present-active-parsing.pdf){.md-button}  [Markdown](ch16-present-active-parsing.md){.md-button}
+
 ## Coverage
 
 | Feature | Forms drilled |
@@ -20,7 +22,3 @@
 
 **Q3.** 3 λύει
 > **A:** Pres. Act. Ind. · 3rd · Singular · λύω — "He/she/it is loosing"
-
-## Formats
-
-[Full Screen (Interactive)](ch16-present-active-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch16-present-active-parsing.pdf){.md-button}  [Markdown](ch16-present-active-parsing.md){.md-button}

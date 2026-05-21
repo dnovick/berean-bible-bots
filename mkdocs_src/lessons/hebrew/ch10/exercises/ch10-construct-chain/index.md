@@ -2,6 +2,8 @@
 
 *Chapter 10 — Hebrew Construct Chain*
 
+[Full Screen (Interactive)](ch10-construct-chain.html){.md-button .md-button--primary}  [Print / PDF](ch10-construct-chain.pdf){.md-button}  [Markdown](ch10-construct-chain.md){.md-button}
+
 For each Hebrew construct chain: (1) identify the construct noun and its form, (2) identify the absolute noun, (3) determine whether the chain is definite or indefinite, (4) translate.
 
 ## Coverage
@@ -23,7 +25,3 @@ For each Hebrew construct chain: (1) identify the construct noun and its form, (
 
 **Q3.** 3 כְּבוֹד עָם
 > **A:** ✓ כְּבוֹד עָם כְּבוֹד (ms cstr of כָּבוֹד) עָם No glory of a people
-
-## Formats
-
-[Full Screen (Interactive)](ch10-construct-chain.html){.md-button .md-button--primary}  [Print / PDF](ch10-construct-chain.pdf){.md-button}  [Markdown](ch10-construct-chain.md){.md-button}

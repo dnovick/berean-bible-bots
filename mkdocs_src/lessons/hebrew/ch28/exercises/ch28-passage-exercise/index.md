@@ -2,6 +2,8 @@
 
 *Chapter 28 — Hophal Strong*
 
+[Full Screen (Interactive)](ch28-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch28-passage-exercise.pdf){.md-button}  [Markdown](ch28-passage-exercise.md){.md-button}
+
 Students identify and parse Hophal (passive causative) verbs across three passages: Genesis 22:20 (narrative report formula), Exodus 5:14–16 (oppression of Israel), and Numbers 35:16–18, 30–31 (death penalty statutes). The exercise includes 7 Hophal verbs and 4 distractors (2 Niphal, 2 Qal) that resemble Hophal forms. Students identify the stem, parse Conjugation/PGN/Root, and supply the corresponding Hiphil meaning (since Hophal = passive of Hiphil).
 
 ## Coverage
@@ -24,7 +26,3 @@ Students identify and parse Hophal (passive causative) verbs across three passag
 
 **Q3.** 3 נִתָּן
 > **A:** ✗ No — Niphal | Participle ms | ms | נתן | Niphal passive (not Hophal). The נִ prefix distinguishes it. נִתָּן = "is given" (Niphal of נתן "to give"); this is the Niphal passivizing the Qal, not the Hiphil causative. No u-class vowel under prefix — that confirms it is NOT Hophal.
-
-## Formats
-
-[Full Screen (Interactive)](ch28-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch28-passage-exercise.pdf){.md-button}  [Markdown](ch28-passage-exercise.md){.md-button}

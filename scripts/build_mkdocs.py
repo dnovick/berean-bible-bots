@@ -160,10 +160,20 @@ def _build_exercise_page(
     coverage = _readme_coverage_table(readme)
     samples = _sample_qas(html_path, n=3)
 
+    # ── Download buttons ─────────────────────────────────────────────────────
+    btn_parts = [f"[Full Screen (Interactive)]({html_name}){{.md-button .md-button--primary}}"]
+    if has_pdf:
+        btn_parts.append(f"[Print / PDF]({pdf_name}){{.md-button}}")
+    if has_md:
+        btn_parts.append(f"[Markdown]({md_name}){{.md-button}}")
+    buttons_line = "  ".join(btn_parts)
+
     lines: list[str] = [
         f"# {ex_title}",
         "",
         f"*Chapter {ch_num} — {ch_title}*",
+        "",
+        buttons_line,
         "",
     ]
 
@@ -182,16 +192,6 @@ def _build_exercise_page(
             lines.append(f"**Q{i}.** {q}")
             lines.append(f"> **A:** {a}")
             lines.append("")
-
-    # ── Download buttons ─────────────────────────────────────────────────────
-    lines += ["## Formats", ""]
-    btn_parts = [f"[Full Screen (Interactive)]({html_name}){{.md-button .md-button--primary}}"]
-    if has_pdf:
-        btn_parts.append(f"[Print / PDF]({pdf_name}){{.md-button}}")
-    if has_md:
-        btn_parts.append(f"[Markdown]({md_name}){{.md-button}}")
-    lines.append("  ".join(btn_parts))
-    lines.append("")
 
     return "\n".join(lines)
 

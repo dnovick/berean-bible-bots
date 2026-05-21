@@ -2,6 +2,8 @@
 
 *Chapter 26 — Hiphil Strong*
 
+[Full Screen (Interactive)](ch26-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch26-stem-id-drill.pdf){.md-button}  [Markdown](ch26-stem-id-drill.md){.md-button}
+
 *BBH Chapter 26 · Hiphil Strong Verbs*
 
 24-item drill using strong roots (שׁמר, כבד, כתב, and the paradigm root קטל). Forms are interleaved across all three stems in sets of three, covering every conjugation type: Perfect, Imperfect, Wayyiqtol, Imperative, Inf. Absolute, and Participle. Students identify the stem, conjugation, PGN, and root for each form.
@@ -30,7 +32,3 @@
 
 **Q3.** 3 נִקְטַל Qal Niphal Piel Pual Hiphil Hophal Hithpael Perfect Imperfect Wayyiqtol Imperative Inf. Construct Inf. Absolute Participle 1cs 2ms 2fs 3ms 3fs 1cp 2mp 2fp 3mp 3fp ms fs mp fp
 > **A:** 3 נִקְטַל Niphal Perfect 3ms קטל
-
-## Formats
-
-[Full Screen (Interactive)](ch26-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch26-stem-id-drill.pdf){.md-button}  [Markdown](ch26-stem-id-drill.md){.md-button}

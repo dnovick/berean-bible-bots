@@ -2,6 +2,8 @@
 
 *Chapter 35 — Hithpael Weak*
 
+[Full Screen (Interactive)](ch35-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch35-weak-form-id.pdf){.md-button}  [Markdown](ch35-weak-form-id.md){.md-button}
+
 A 30-item identification and parsing exercise covering the four main Hithpael weak classes (III-he, I-guttural, Sibilant Metathesis, I-nun) plus Geminate and Strong forms. Part A (items 1–20) groups forms by class — five items per class — so students can build class-by-class recognition of the Hithpael's distinctive prefix patterns, especially the sibilant metathesis rule where the Hithpael ת swaps position with a sibilant R1, producing הִשְׁתַּ / וַיִּשְׁתַּ instead of the expected הִתְ / וַיִּתְ. Part B (items 21–30) presents forms from multiple classes in random order; students must identify the weak class first, then parse. Answer keys for both parts include the diagnostic marker for each form, and five discussion questions target the most challenging identification problems.
 
 ## Coverage
@@ -25,7 +27,3 @@ A 30-item identification and parsing exercise covering the four main Hithpael we
 
 **Q3.** 3 וַיִּשְׁתַּחוּ Gen 18:2 ▶
 > **A:** Wayyiqtol · 3ms · שָׁחָה — he bowed down; both weak classes at work: sibilant metathesis ( שׁ + ת swapped → וַיִּשְׁתַּ ) AND III-he apocopation ( ה dropped)
-
-## Formats
-
-[Full Screen (Interactive)](ch35-weak-form-id.html){.md-button .md-button--primary}  [Print / PDF](ch35-weak-form-id.pdf){.md-button}  [Markdown](ch35-weak-form-id.md){.md-button}

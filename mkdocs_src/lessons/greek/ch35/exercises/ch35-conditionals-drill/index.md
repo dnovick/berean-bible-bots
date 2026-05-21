@@ -2,6 +2,8 @@
 
 *Chapter 35 — Nonindicative of δίδωμι and Conditional Sentences*
 
+[Full Screen (Interactive)](ch35-conditionals-drill.html){.md-button .md-button--primary}  [Print / PDF](ch35-conditionals-drill.pdf){.md-button}  [Markdown](ch35-conditionals-drill.md){.md-button}
+
 A 20-item drill on Greek conditional sentences and non-indicative forms of δίδωμι. Items 1–16 present conditional sentences: students identify the class (1–4), parse the key verb form in the protasis, and translate. Items 17–20 parse non-indicative δίδωμι forms (subjunctive, imperative, infinitive, participle). An answer key is embedded in all formats.
 
 ## Coverage
@@ -24,7 +26,3 @@ A 20-item drill on Greek conditional sentences and non-indicative forms of δί�
 
 **Q3.** 3 εἰ ὁ θεὸς δίκαιός ἐστιν, κρινεῖ τὸν κόσμον.
 > **A:** Class 1 · Pres · Act · Ind · 3sg · εἰμί · "If God is righteous, he will judge the world."
-
-## Formats
-
-[Full Screen (Interactive)](ch35-conditionals-drill.html){.md-button .md-button--primary}  [Print / PDF](ch35-conditionals-drill.pdf){.md-button}  [Markdown](ch35-conditionals-drill.md){.md-button}

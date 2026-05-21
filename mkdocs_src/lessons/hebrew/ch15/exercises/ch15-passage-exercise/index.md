@@ -2,6 +2,8 @@
 
 *Chapter 15 — Qal Imperfect Strong Verbs*
 
+[Full Screen (Interactive)](ch15-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch15-passage-exercise.pdf){.md-button}  [Markdown](ch15-passage-exercise.md){.md-button}
+
 Parse 15 Qal Imperfect verbs from Exodus 3–4 (the burning bush narrative) and Exodus 20
 (the Decalogue). All target forms emphasize the prefix pattern; weak roots are noted.
 
@@ -24,7 +26,3 @@ Parse 15 Qal Imperfect verbs from Exodus 3–4 (the burning bush narrative) and 
 
 **Q3.** 3 תִקְרַב
 > **A:** ✓ תִקְרַב 2 s m קרב Prohibition (לֹא) — B-class patach under R2; "do not come near"
-
-## Formats
-
-[Full Screen (Interactive)](ch15-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch15-passage-exercise.pdf){.md-button}  [Markdown](ch15-passage-exercise.md){.md-button}

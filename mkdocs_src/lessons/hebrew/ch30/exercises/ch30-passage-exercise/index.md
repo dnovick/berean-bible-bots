@@ -2,6 +2,8 @@
 
 *Chapter 30 — Piel Strong*
 
+[Full Screen (Interactive)](ch30-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch30-passage-exercise.pdf){.md-button}  [Markdown](ch30-passage-exercise.md){.md-button}
+
 Students identify and parse Piel Strong verbs across three Torah passages: Genesis 1:22, 28 (God's blessing of creation), Exodus 19:10–14 (preparation for Sinai theophany), and Numbers 22:6–8, 17–18 (Balak and Balaam). The exercise presents 16 verbs: 12 Piel, 1 Pual distractor (preview of Ch32), and 3 Qal distractors that lack Dagesh Forte in R2. Students indicate whether each verb is Piel, then parse Conjugation/PGN/Root and supply the semantic Function type.
 
 ## Coverage
@@ -25,7 +27,3 @@ Students identify and parse Piel Strong verbs across three Torah passages: Genes
 
 **Q3.** 3 וְקִדַּשְׁתָּ
 > **A:** ✓ Yes — Piel | Weqatal | 2ms | קדש | Factitive — "you shall consecrate them" = cause them to become holy. Weqatal carries consequential/instructional modal force.
-
-## Formats
-
-[Full Screen (Interactive)](ch30-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch30-passage-exercise.pdf){.md-button}  [Markdown](ch30-passage-exercise.md){.md-button}

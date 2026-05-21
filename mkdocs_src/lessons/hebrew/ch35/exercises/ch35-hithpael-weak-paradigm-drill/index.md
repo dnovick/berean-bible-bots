@@ -2,6 +2,8 @@
 
 *Chapter 35 — Hithpael Weak*
 
+[Full Screen (Interactive)](ch35-hithpael-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch35-hithpael-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch35-hithpael-weak-paradigm-drill.md){.md-button}
+
 Write selected Hithpael Weak forms. Part A uses גלה (III-ה); Part B demonstrates the metathesis rule with צדק (R1 = צ).
 
 ## Coverage
@@ -24,7 +26,3 @@ Write selected Hithpael Weak forms. Part A uses גלה (III-ה); Part B demonstr
 
 **Q3.** 3 2ms
 > **A:** ✓ 2ms הִתְגַּלִּיתָ
-
-## Formats
-
-[Full Screen (Interactive)](ch35-hithpael-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch35-hithpael-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch35-hithpael-weak-paradigm-drill.md){.md-button}

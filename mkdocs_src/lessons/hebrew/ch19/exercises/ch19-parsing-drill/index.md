@@ -2,6 +2,8 @@
 
 *Chapter 19 — Qal Pronominal Suffixes on Verbs*
 
+[Full Screen (Interactive)](ch19-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch19-parsing-drill.pdf){.md-button}  [Markdown](ch19-parsing-drill.md){.md-button}
+
 This drill covers all major pronominal suffix constructions on verbs introduced in BBH Chapter 19. Students parse 25 forms across four parts: Part A (Perfect + suffix), Part B (Imperfect + suffix, including energic nun identification), Part C (Imperative and Wayyiqtol + suffix), and Part D (Infinitive Construct + suffix, where the critical distinction is that the suffix marks the subject, not the object of the action).
 
 ## Coverage
@@ -23,7 +25,3 @@ This drill covers all major pronominal suffix constructions on verbs introduced 
 
 **Q3.** 3 שְׁמָרָ֥נוּ
 > **A:** Qal Perfect · 3ms · שמר · 1cp · "he kept us" — qamets connecting vowel before נוּ
-
-## Formats
-
-[Full Screen (Interactive)](ch19-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch19-parsing-drill.pdf){.md-button}  [Markdown](ch19-parsing-drill.md){.md-button}

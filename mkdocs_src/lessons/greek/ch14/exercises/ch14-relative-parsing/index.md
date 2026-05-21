@@ -2,6 +2,8 @@
 
 *Chapter 14 — Relative Pronoun*
 
+[Full Screen (Interactive)](ch14-relative-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch14-relative-parsing.pdf){.md-button}  [Markdown](ch14-relative-parsing.md){.md-button}
+
 ## Coverage
 
 | Feature | Forms drilled |
@@ -21,7 +23,3 @@
 
 **Q3.** 3 τὸ τέκνον ὃ εἶχεν ὃ
 > **A:** Neuter · Accusative · Singular | Antecedent: τὸ τέκνον | "the child that he had" — direct object of εἶχεν
-
-## Formats
-
-[Full Screen (Interactive)](ch14-relative-parsing.html){.md-button .md-button--primary}  [Print / PDF](ch14-relative-parsing.pdf){.md-button}  [Markdown](ch14-relative-parsing.md){.md-button}

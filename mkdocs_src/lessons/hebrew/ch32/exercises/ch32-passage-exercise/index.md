@@ -2,6 +2,8 @@
 
 *Chapter 32 — Pual Strong*
 
+[Full Screen (Interactive)](ch32-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch32-passage-exercise.pdf){.md-button}  [Markdown](ch32-passage-exercise.md){.md-button}
+
 Students identify and parse Pual Strong verbs across three Torah/Prophets passages: Numbers 22:6, 12; 23:8, 20 (the Balaam cycle, richest Pual concentration in Torah for ברך), Exodus 29:36–37 (consecration of the altar), and Exodus 14:4 / Isaiah 43:23 (Pual of כבד). The exercise presents 15 verbs: 3 Pual targets and 12 distractors drawn from Qal, Niphal, Piel, and Hophal. Students indicate whether each verb is Pual, then parse Conjugation/PGN/Root and supply the Stem/Function. A key diagnostic skill is distinguishing Pual (Qibbuts under R1 + Dagesh in R2) from the visually similar Piel (Hireq/i-class under R1) and Hophal (u-class on the prefix consonant, not R1).
 
 ## Coverage
@@ -25,7 +27,3 @@ Students identify and parse Pual Strong verbs across three Torah/Prophets passag
 
 **Q3.** 3 יוּאָר
 > **A:** ✗ No — Hophal | Imperfect | 3ms | ארר | Hophal passive — "shall be cursed." The יוּ prefix (Shureq = u-class vowel under the preformative) is the Hophal Imperfect marker. Contrast Pual: Qibbuts is under R1, not the prefix consonant.
-
-## Formats
-
-[Full Screen (Interactive)](ch32-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch32-passage-exercise.pdf){.md-button}  [Markdown](ch32-passage-exercise.md){.md-button}

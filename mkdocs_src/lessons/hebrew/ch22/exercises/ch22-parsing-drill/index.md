@@ -2,6 +2,8 @@
 
 *Chapter 22 — Qal Participle*
 
+[Full Screen (Interactive)](ch22-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch22-parsing-drill.pdf){.md-button}  [Markdown](ch22-parsing-drill.md){.md-button}
+
 This 32-item parsing drill covers Qal active and passive participle forms across all major root classes in four parts. Part A presents strong-root active participles in all four inflected forms (ms, fs, mp, construct). Part B covers weak-root active participles (III-ה, Biconsonantal, I-י, I-נ, I-aleph). Part C introduces the passive participle (qatûl pattern) in all attested forms. Part D requires discrimination among active participle, passive participle, Perfect, Imperfect, IC, and IA — using vowel patterns (holem-waw/tsere vs. qamets/shureq) and context clues.
 
 ## Coverage
@@ -26,7 +28,3 @@ This 32-item parsing drill covers Qal active and passive participle forms across
 
 **Q3.** 3 שֹׁמְרִ֖ים
 > **A:** Active · שמר · Strong A · mp · Substantive/Attributive — "keepers"; shewa on R2 in plural
-
-## Formats
-
-[Full Screen (Interactive)](ch22-parsing-drill.html){.md-button .md-button--primary}  [Print / PDF](ch22-parsing-drill.pdf){.md-button}  [Markdown](ch22-parsing-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 28 — Perfective (Aorist) Adverbial Participles*
 
+[Full Screen (Interactive)](ch28-participle-tense-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch28-participle-tense-contrast.pdf){.md-button}  [Markdown](ch28-participle-tense-contrast.md){.md-button}
+
 A 20-item contrast drill presenting adverbial participial clauses from or modeled on GNT passages. Students classify the temporal relation as CONTEMP (present participle = same time as main verb) or ANTEC (aorist participle = prior to main verb), parse tense and voice, supply the lexical form, and translate. The exercise includes 10 present and 10 aorist adverbial participles, including two aorist passive deponents (ἀποκρίνομαι, ἐγείρω) that require contextual disambiguation. Discussion questions address deponent passives, the limits of the contemporaneous/antecedent rule, and the nuance of matching participle tense to context. An answer key is embedded in all three formats.
 
 ## Coverage
@@ -21,7 +23,3 @@ A 20-item contrast drill presenting adverbial participial clauses from or modele
 
 **Q3.** 3 ἀκούσαντες ἐχάρησαν
 > **A:** ANTEC · Aorist · Active · ἀκούω · When / after they heard, they rejoiced
-
-## Formats
-
-[Full Screen (Interactive)](ch28-participle-tense-contrast.html){.md-button .md-button--primary}  [Print / PDF](ch28-participle-tense-contrast.pdf){.md-button}  [Markdown](ch28-participle-tense-contrast.md){.md-button}

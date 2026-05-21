@@ -2,6 +2,8 @@
 
 *Chapter 30 — Piel Strong*
 
+[Full Screen (Interactive)](ch30-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch30-stem-id-drill.pdf){.md-button}  [Markdown](ch30-stem-id-drill.md){.md-button}
+
 *BBH Chapter 30 · Piel Strong Verbs*
 
 A 24-item drill requiring students to identify the stem (Qal, Niphal, Hiphil, Hophal, or Piel), conjugation, PGN, and root for each Hebrew verb form. All forms are built from strong roots (קטל, דבר). Items 1–4 use the paradigm root קטל to isolate stem markers in the Perfect; items 5–24 work through all major conjugations (Perfect, Imperfect, Wayyiqtol, Imperative, Infinitive Absolute, Participle) on the root דבר. Special attention is called to items 15 and 19, where the Piel Imperative 2ms and Piel Infinitive Absolute are identical in form.
@@ -30,7 +32,3 @@ A 24-item drill requiring students to identify the stem (Qal, Niphal, Hiphil, Ho
 
 **Q3.** 3 הִקְטִיל
 > **A:** Hiphil · Perfect · 3ms · קטל — הִ prefix + chirik + yod (long ī vowel) = Hiphil perfect
-
-## Formats
-
-[Full Screen (Interactive)](ch30-stem-id-drill.html){.md-button .md-button--primary}  [Print / PDF](ch30-stem-id-drill.pdf){.md-button}  [Markdown](ch30-stem-id-drill.md){.md-button}

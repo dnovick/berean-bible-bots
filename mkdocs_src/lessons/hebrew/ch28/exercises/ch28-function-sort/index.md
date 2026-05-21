@@ -2,6 +2,8 @@
 
 *Chapter 28 — Hophal Strong*
 
+[Full Screen (Interactive)](ch28-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch28-function-sort.pdf){.md-button}  [Markdown](ch28-function-sort.md){.md-button}
+
 Classify 25 attested Hophal forms from Genesis, Exodus, Leviticus, and Numbers by semantic function (Physical Transfer / Legal Formula / Speech Reporting / State Change / Simple Action). Builds on BBH Chapter 28 (Hophal Strong Verbs).
 
 ## Coverage
@@ -24,7 +26,3 @@ Classify 25 attested Hophal forms from Genesis, Exodus, Leviticus, and Numbers b
 
 **Q3.** 3 הוּרַד Qatal 3ms Gen 39:1 "he had been brought down to Egypt" PT LF SR SC SA
 > **A:** PT — Physical Transfer · Root: יָרַד · Joseph was physically taken down to Egypt; Hiphil = to bring down
-
-## Formats
-
-[Full Screen (Interactive)](ch28-function-sort.html){.md-button .md-button--primary}  [Print / PDF](ch28-function-sort.pdf){.md-button}  [Markdown](ch28-function-sort.md){.md-button}

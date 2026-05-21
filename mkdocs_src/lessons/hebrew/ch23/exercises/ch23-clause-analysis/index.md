@@ -2,6 +2,8 @@
 
 *Chapter 23 — Sentence Syntax*
 
+[Full Screen (Interactive)](ch23-clause-analysis.html){.md-button .md-button--primary}  [Print / PDF](ch23-clause-analysis.pdf){.md-button}  [Markdown](ch23-clause-analysis.md){.md-button}
+
 This 20-item drill covers all five clause types taught in BBH Chapter 23: Verbal VSO, Verbal with fronted element, Verbless, Waw-disjunctive, and mixed. Students identify clause type, main verb and conjugation, fronted element and its rhetorical function, and provide a full English gloss. Items are drawn from Genesis, Exodus, Deuteronomy, Psalms, and Judges, emphasizing high-frequency clauses from Torah narrative and poetry.
 
 ## Coverage
@@ -24,7 +26,3 @@ This 20-item drill covers all five clause types taught in BBH Chapter 23: Verbal
 
 **Q3.** 3 שָׁמְע֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל (Deu 6:4 opening)
 > **A:** Type: Verbal VSO &nbsp;|&nbsp; Verb: שָׁמְע֖וּ — Qal Imperative 2mp &nbsp;|&nbsp; Subject: — (addressed; בְּנֵי יִשְׂרָאֵל is vocative) &nbsp;|&nbsp; Object: — &nbsp;|&nbsp; Gloss: "Hear, O Israel" (Imperative + subject vocative)
-
-## Formats
-
-[Full Screen (Interactive)](ch23-clause-analysis.html){.md-button .md-button--primary}  [Print / PDF](ch23-clause-analysis.pdf){.md-button}  [Markdown](ch23-clause-analysis.md){.md-button}

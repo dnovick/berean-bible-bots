@@ -2,6 +2,8 @@
 
 *Chapter 27 — Imperfective (Present) Adverbial Participles*
 
+[Full Screen (Interactive)](ch27-participle-use-sort.html){.md-button .md-button--primary}  [Print / PDF](ch27-participle-use-sort.pdf){.md-button}  [Markdown](ch27-participle-use-sort.md){.md-button}
+
 A 20-item classification drill presenting participial phrases drawn from and modeled on GNT usage. Students classify each participle as ADV (adverbial/circumstantial), ADJ (adjectival/attributive), or SUB (substantival), identify the key formal signal (presence/absence of article, anaphoric article pattern, no antecedent noun), and translate. Items include both present and aorist participles. Discussion questions probe the boundary between adjectival and substantival uses and the temporal force of aorist vs. present adverbial participles. An answer key is embedded in all three formats.
 
 ## Coverage
@@ -22,7 +24,3 @@ A 20-item classification drill presenting participial phrases drawn from and mod
 
 **Q3.** 3 ὁ λόγος ὁ λαλούμενος
 > **A:** ADJ · articular, modifies λόγος · The word that was spoken
-
-## Formats
-
-[Full Screen (Interactive)](ch27-participle-use-sort.html){.md-button .md-button--primary}  [Print / PDF](ch27-participle-use-sort.pdf){.md-button}  [Markdown](ch27-participle-use-sort.md){.md-button}

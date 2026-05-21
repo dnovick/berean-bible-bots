@@ -2,6 +2,8 @@
 
 *Chapter 21 — Qal Infinitive Absolute*
 
+[Full Screen (Interactive)](ch21-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch21-passage-exercise.pdf){.md-button}  [Markdown](ch21-passage-exercise.md){.md-button}
+
 This passage exercise presents 15 highlighted IA forms drawn from eight OT passages spanning Genesis, Exodus, Leviticus, Numbers, and Deuteronomy. Passages were selected to cover all four major IA functions: emphatic pairs (Gen 2:16–17, Exo 3:7, Gen 44:28, Deu 6:17, Deu 8:19, Num 15:35), imperatival IA (Exo 20:8, Deu 5:12), and paired manner/progressive IAs (Gen 8:3, 8:5, 26:13). Students identify root, root class, function, and full gloss for each highlighted IA form.
 
 ## Coverage
@@ -22,7 +24,3 @@ This passage exercise presents 15 highlighted IA forms drawn from eight OT passa
 
 **Q3.** 3 רָאֹ֣ה
 > **A:** ראה · III-ה · Emphatic — "surely seen"; III-ה IA ends in ה (contrast IC: רְאוֹת); God's emphatic declaration of active concern at the burning bush
-
-## Formats
-
-[Full Screen (Interactive)](ch21-passage-exercise.html){.md-button .md-button--primary}  [Print / PDF](ch21-passage-exercise.pdf){.md-button}  [Markdown](ch21-passage-exercise.md){.md-button}

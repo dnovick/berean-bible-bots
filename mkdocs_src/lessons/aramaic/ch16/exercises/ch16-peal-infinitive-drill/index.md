@@ -2,6 +2,8 @@
 
 *Chapter 16 — Peal Infinitive Construct*
 
+[Full Screen (Interactive)](ch16-peal-infinitive-drill.html){.md-button .md-button--primary}  [Print / PDF](ch16-peal-infinitive-drill.pdf){.md-button}  [Markdown](ch16-peal-infinitive-drill.md){.md-button}
+
 This exercise presents twenty Peal infinitive construct forms drawn from the Biblical Aramaic corpus (Daniel and Ezra) and the standard infinitive paradigm. For each form, students identify the three-letter root, identify any attached prefix (לְ, כְּ, בְּ, or none) and explain what it adds semantically (purpose/complement, temporal "when," bare verbal noun), and translate the full infinitive phrase. The drill covers strong roots, all major weak-root classes introduced in BBA Chapter 16, and includes three Haphel infinitives (items 18–20) as a preview of Ch21.
 
 ## Coverage
@@ -23,7 +25,3 @@ This exercise presents twenty Peal infinitive construct forms drawn from the Bib
 
 **Q3.** 3 לְמֵיקַם &#9654; Answer
 > **A:** Root: קום &nbsp;|&nbsp; Prefix: לְ — purpose / complement ("to"); מֵי = hollow (II-waw) pattern &nbsp;|&nbsp; Translation: to arise / to stand up
-
-## Formats
-
-[Full Screen (Interactive)](ch16-peal-infinitive-drill.html){.md-button .md-button--primary}  [Print / PDF](ch16-peal-infinitive-drill.pdf){.md-button}  [Markdown](ch16-peal-infinitive-drill.md){.md-button}

@@ -2,6 +2,8 @@
 
 *Chapter 33 — Pual Weak*
 
+[Full Screen (Interactive)](ch33-pual-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch33-pual-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch33-pual-weak-paradigm-drill.md){.md-button}
+
 Write selected Pual Weak forms. Part A uses בנה (III-ה); Part B uses שאל (strong Pual for comparison).
 
 ## Coverage
@@ -24,7 +26,3 @@ Write selected Pual Weak forms. Part A uses בנה (III-ה); Part B uses שאל 
 
 **Q3.** 3 3cp
 > **A:** ✓ 3cp בֻּנּוּ
-
-## Formats
-
-[Full Screen (Interactive)](ch33-pual-weak-paradigm-drill.html){.md-button .md-button--primary}  [Print / PDF](ch33-pual-weak-paradigm-drill.pdf){.md-button}  [Markdown](ch33-pual-weak-paradigm-drill.md){.md-button}
