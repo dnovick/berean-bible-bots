@@ -69,7 +69,7 @@ The analysis covers 11 Strong's lemma groups spanning the main Greek word famili
 
 The two charts below are displayed together for easy comparison. The *shape* of the distribution is similar under both metrics, but the *scale* reveals different things: the word metric captures how intensively a book uses sin vocabulary; the verse metric captures how *broadly* across the book the topic is addressed.
 
-![Two-metric comparison — word frequency and verse coverage by NT book](nt-sin-vocabulary-metrics-comparison.png)
+![Two-metric comparison — word frequency and verse coverage by NT book](../nt-sin-vocabulary-metrics-comparison.png)
 
 **Notable divergences between the two metrics:**
 
@@ -91,13 +91,13 @@ This metric measures how *intensively* sin vocabulary is used relative to a book
 
 ### By Book — Word Frequency
 
-![Sin vocabulary word frequency by NT book](nt-sin-vocabulary-by-book.png)
+![Sin vocabulary word frequency by NT book](../nt-sin-vocabulary-by-book.png)
 
 ### Word Group Heatmap
 
 This heatmap breaks the total sin vocabulary into five word-group clusters and shows occurrences per 1,000 words for each book × group cell.
 
-![Sin vocabulary word group heatmap by NT book](nt-sin-vocabulary-heatmap.png)
+![Sin vocabulary word group heatmap by NT book](../nt-sin-vocabulary-heatmap.png)
 
 Key patterns:
 - **ἁμαρτία** (the hamartia cluster) dominates across all sections — it is the NT's primary term for sin
@@ -108,7 +108,7 @@ Key patterns:
 
 ### By Corpus Section — Word Frequency
 
-![Sin vocabulary word density by NT corpus section](nt-sin-vocabulary-by-section.png)
+![Sin vocabulary word density by NT corpus section](../nt-sin-vocabulary-by-section.png)
 
 | Corpus Section | Total Words | Sin-Vocab Words | Word Frequency |
 |----------------|:-----------:|:---------------:|:--------------:|
@@ -126,11 +126,11 @@ This metric measures how *broadly* sin vocabulary is distributed across a book's
 
 ### By Book — Verse Coverage
 
-![Sin vocabulary verse coverage by NT book](nt-sin-vocabulary-verses-by-book.png)
+![Sin vocabulary verse coverage by NT book](../nt-sin-vocabulary-verses-by-book.png)
 
 ### By Corpus Section — Verse Coverage
 
-![Sin vocabulary verse coverage by NT corpus section](nt-sin-vocabulary-verses-by-section.png)
+![Sin vocabulary verse coverage by NT corpus section](../nt-sin-vocabulary-verses-by-section.png)
 
 | Corpus Section | Total Verses | Sin-Vocab Verses | Verse Coverage |
 |----------------|:------------:|:----------------:|:--------------:|
