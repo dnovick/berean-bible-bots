@@ -163,7 +163,7 @@ fig.savefig(OUT_DIR / 'nt-sin-vocabulary-by-section.png', dpi=150, bbox_inches='
 plt.close()
 print('Saved: nt-sin-vocabulary-by-section.png')
 
-# ── CSV export ────────────────────────────────────────────────────────────────
+# ── CSV export (word metric) ──────────────────────────────────────────────────
 csv_path = OUT_DIR / 'nt-sin-vocabulary-by-book.csv'
 export = stats.copy()
 export.index = [LABELS[b] for b in NT_BOOK_ORDER]
@@ -172,5 +172,119 @@ export.columns = ['total_words', 'sin_vocab_words', 'pct_frequency']
 export['pct_frequency'] = export['pct_frequency'].round(4)
 export.to_csv(csv_path)
 print(f'Saved: {csv_path}')
+
+# ── Verse-level stats ─────────────────────────────────────────────────────────
+total_verses = df.groupby('book_id')[['chapter', 'verse']].apply(
+    lambda x: x.drop_duplicates().shape[0]).rename('total_verses')
+sin_verses = df[sin_mask].groupby('book_id')[['chapter', 'verse']].apply(
+    lambda x: x.drop_duplicates().shape[0]).rename('sin_verses')
+vstats = pd.concat([total_verses, sin_verses], axis=1).fillna(0)
+vstats['pct'] = vstats['sin_verses'] / vstats['total_verses'] * 100
+vstats = vstats.reindex(NT_BOOK_ORDER)
+
+# ── Chart 4: Verse % by book ──────────────────────────────────────────────────
+vpcts = vstats['pct'].values
+
+fig, ax = plt.subplots(figsize=(15, 6))
+vbars = ax.bar(x, vpcts, color=colors, width=0.7, edgecolor='white', linewidth=0.5)
+for bar, val in zip(vbars, vpcts):
+    if val >= 0.5:
+        ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.2,
+                f'{val:.1f}%', ha='center', va='bottom', fontsize=6.5, color='#333')
+ax.set_xticks(x)
+ax.set_xticklabels([LABELS[b] for b in NT_BOOK_ORDER], rotation=45, ha='right', fontsize=8.5)
+ax.set_ylabel('Verses containing ≥1 sin-vocabulary word (% of book verses)', fontsize=10)
+ax.set_title(
+    'Sin Vocabulary — % of Verses Affected, by NT Book\n'
+    '(verses containing ≥1 occurrence of the sin-vocabulary cluster)',
+    fontsize=11, pad=12,
+)
+ax.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f%%'))
+ax.set_ylim(0, vpcts.max() * 1.18)
+ax.grid(axis='y', linestyle='--', alpha=0.4)
+ax.spines[['top', 'right']].set_visible(False)
+ax.legend(handles=legend_elements, fontsize=9, loc='upper right')
+for xv in [4.5, 17.5]:
+    ax.axvline(xv, color='#aaa', linewidth=0.8, linestyle=':')
+plt.tight_layout()
+fig.savefig(OUT_DIR / 'nt-sin-vocabulary-verses-by-book.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Saved: nt-sin-vocabulary-verses-by-book.png')
+
+# ── Chart 5: Section comparison (verse metric) ───────────────────────────────
+verse_sec_avgs = {}
+for sec_label, books in SECTIONS.items():
+    s = vstats.loc[books]
+    verse_sec_avgs[sec_label] = s['sin_verses'].sum() / s['total_verses'].sum() * 100
+
+fig, ax = plt.subplots(figsize=(7, 4.5))
+vbars2 = ax.bar(list(verse_sec_avgs.keys()), list(verse_sec_avgs.values()),
+                color=SEC_COLORS, width=0.5, edgecolor='white')
+for bar, val in zip(vbars2, verse_sec_avgs.values()):
+    ax.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.1,
+            f'{val:.1f}%', ha='center', va='bottom', fontsize=10, fontweight='bold')
+ax.set_ylabel('Verses with ≥1 sin-vocabulary word (% of section verses)', fontsize=10)
+ax.set_title('Sin Vocabulary — % Verses Affected by NT Corpus Section', fontsize=11)
+ax.set_ylim(0, max(verse_sec_avgs.values()) * 1.25)
+ax.grid(axis='y', linestyle='--', alpha=0.4)
+ax.spines[['top', 'right']].set_visible(False)
+plt.tight_layout()
+fig.savefig(OUT_DIR / 'nt-sin-vocabulary-verses-by-section.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Saved: nt-sin-vocabulary-verses-by-section.png')
+
+# ── Chart 6: Two-metric stacked comparison ───────────────────────────────────
+fig, axes = plt.subplots(2, 1, figsize=(15, 10), sharex=True)
+
+ax1 = axes[0]
+b1 = ax1.bar(x, pcts, color=colors, width=0.7, edgecolor='white', linewidth=0.5)
+for bar, val in zip(b1, pcts):
+    if val >= 0.05:
+        ax1.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.01,
+                 f'{val:.1f}%', ha='center', va='bottom', fontsize=6, color='#333')
+ax1.set_ylabel('Sin words as % of\ntotal book words', fontsize=9)
+ax1.set_title('Metric 1: Sin-vocabulary words ÷ total words per book', fontsize=10, loc='left')
+ax1.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.1f%%'))
+ax1.set_ylim(0, pcts.max() * 1.2)
+ax1.grid(axis='y', linestyle='--', alpha=0.4)
+ax1.spines[['top', 'right']].set_visible(False)
+for xv in [4.5, 17.5]:
+    ax1.axvline(xv, color='#aaa', linewidth=0.8, linestyle=':')
+
+ax2 = axes[1]
+b2 = ax2.bar(x, vpcts, color=colors, width=0.7, edgecolor='white', linewidth=0.5)
+for bar, val in zip(b2, vpcts):
+    if val >= 0.5:
+        ax2.text(bar.get_x() + bar.get_width() / 2, bar.get_height() + 0.1,
+                 f'{val:.1f}%', ha='center', va='bottom', fontsize=6, color='#333')
+ax2.set_ylabel('Verses with ≥1 sin word\nas % of total book verses', fontsize=9)
+ax2.set_title(
+    'Metric 2: Verses containing ≥1 sin-vocabulary word ÷ total verses per book',
+    fontsize=10, loc='left',
+)
+ax2.yaxis.set_major_formatter(mticker.FormatStrFormatter('%.0f%%'))
+ax2.set_ylim(0, vpcts.max() * 1.2)
+ax2.grid(axis='y', linestyle='--', alpha=0.4)
+ax2.spines[['top', 'right']].set_visible(False)
+ax2.set_xticks(x)
+ax2.set_xticklabels([LABELS[b] for b in NT_BOOK_ORDER], rotation=45, ha='right', fontsize=8.5)
+for xv in [4.5, 17.5]:
+    ax2.axvline(xv, color='#aaa', linewidth=0.8, linestyle=':')
+
+fig.legend(handles=legend_elements, fontsize=9, loc='upper right', bbox_to_anchor=(0.98, 0.98))
+fig.suptitle('NT Sin Vocabulary — Two Metrics Compared', fontsize=13, fontweight='bold', y=1.01)
+plt.tight_layout()
+fig.savefig(OUT_DIR / 'nt-sin-vocabulary-metrics-comparison.png', dpi=150, bbox_inches='tight')
+plt.close()
+print('Saved: nt-sin-vocabulary-metrics-comparison.png')
+
+# ── CSV export (verse metric) ─────────────────────────────────────────────────
+vcsv = vstats.copy()
+vcsv.index = [LABELS[b] for b in NT_BOOK_ORDER]
+vcsv.index.name = 'book'
+vcsv.columns = ['total_verses', 'sin_vocab_verses', 'pct_verse_coverage']
+vcsv['pct_verse_coverage'] = vcsv['pct_verse_coverage'].round(4)
+vcsv.to_csv(OUT_DIR / 'nt-sin-vocabulary-by-verse.csv')
+print(f'Saved: {OUT_DIR}/nt-sin-vocabulary-by-verse.csv')
 
 print('\nDone.')
