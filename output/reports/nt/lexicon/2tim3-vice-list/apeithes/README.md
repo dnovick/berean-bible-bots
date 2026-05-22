@@ -46,7 +46,7 @@ Corresponds to Hebrew מֶרִי (rebellion, defiance; Num 17:25; Isa 30:9) and 
 
 ## NT Distribution
 
-![NT distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/apeithes-nt.png)
+![NT distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/apeithes-nt.png)
 
 ---
 

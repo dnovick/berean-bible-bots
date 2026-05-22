@@ -43,7 +43,7 @@ Compound: διά (through, across) + βάλλω (to throw). Literally "one who t
 
 Hebrew שָׂטָן (H7854): adversary, accuser. The three main OT passages are Job 1–2 (the heavenly accuser), Zec 3:1–2 (accusing Joshua the high priest), and 1Ch 21:1 (inciting David). The LXX transliterates as Σατάν or translates as διάβολος.
 
-![LXX distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/diabolos-lxx.png)
+![LXX distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/diabolos-lxx.png)
 
 | Reference | LXX form |
 |---|---|
@@ -72,7 +72,7 @@ Hebrew שָׂטָן (H7854): adversary, accuser. The three main OT passages are 
 
 ## NT Distribution
 
-![NT distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/diabolos-nt.png)
+![NT distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/diabolos-nt.png)
 
 ---
 
