@@ -2,7 +2,8 @@
 
 **Corpus:** Greek New Testament (TAGNT)  
 **Method:** Strong's-based lemma grouping across 11 sin-vocabulary stems  
-**Two metrics:** (1) sin-vocabulary words as % of total words; (2) verses containing ≥1 sin-vocabulary word as % of total verses
+**Two metrics:** (1) sin-vocabulary words as % of total words; (2) verses containing ≥1 sin-vocabulary word as % of total verses  
+<!-- Build script: scripts/nt/lexicon/build_sin_vocabulary_report.py (repo link omitted from web) -->
 
 ---
 
