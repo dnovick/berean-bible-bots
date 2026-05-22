@@ -36,8 +36,8 @@
 - **The Pauline and General Epistles converge at nearly identical word-density averages** (0.44% and 0.42%).
 
 ### Verse Coverage (Metric 2)
-- **Romans still ranks second (14.9%)** but the verse metric reveals that nearly 1 in 7 verses in Romans touches the sin-vocabulary cluster — a far more striking picture than the word metric alone suggests.
-- **1 John edges ahead of Romans at 15.2%**: more than 1 in 6 verses explicitly uses sin-vocabulary language, confirming its unique preoccupation with the topic.
+- **1 John has the highest verse coverage in the NT (15.2%)**: more than 1 in 6 verses explicitly uses sin-vocabulary language, confirming its unique preoccupation with the topic.
+- **Romans ranks second (14.9%)** but the verse metric reveals that nearly 1 in 7 verses touches the sin-vocabulary cluster — a far more striking picture than the word metric alone suggests.
 - **2 Thessalonians rises sharply (10.6%)** under the verse metric — its verses on the "man of lawlessness" (2:3–12) are long on ἀνομία vocabulary but not numerous, so the verse metric captures them better than word density.
 - **The General Epistles (6.4%) now clearly outpace the Pauline Epistles (5.5%)** in verse coverage, while the two sections were nearly tied on the word metric. This suggests the General Epistles address sin in more verses but with less concentrated vocabulary per verse.
 - **The Gospels remain the lowest section (2.4%)** under both metrics — sin vocabulary appears in roughly 1 in 40 Gospel verses.
