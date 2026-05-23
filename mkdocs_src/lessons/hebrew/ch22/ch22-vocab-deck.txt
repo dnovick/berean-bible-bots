@@ -1,0 +1,18 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 22 — Vocabulary
+#tags column:3
+בּוֹשׁ	verb — (Q) to be ashamed; (Hi) put to shame — 125×	bbh-ch22-vocab bbh-ch22-verb
+גָּדַל	verb — (Q) to grow up, be(come) great, strong, wealthy, important; (Pi) bring up (children), make great, extol; (Hi) make great, magnify, do great things — 117×	bbh-ch22-vocab bbh-ch22-verb
+חָשַׁב	verb — (Q) to think, consider, devise, plan, value, reckon; (Ni) be reckoned, accounted, considered (as); (Pi) think, consider, devise, plan — 124×	bbh-ch22-vocab bbh-ch22-verb
+יָטַב	verb — (Q) to be well with, go well with, be pleasing (to); (Hi) make things go well for, do good to, deal well with, treat kindly — 117×	bbh-ch22-vocab bbh-ch22-verb
+לָכַד	verb — (Q) to take, capture, catch, seize; (Ni) be caught, captured — 121×	bbh-ch22-vocab bbh-ch22-verb
+קָבַץ	verb — (Q) to collect, gather, assemble; (Ni) be gathered, assembled; (Pi) gather together, assemble — 127×	bbh-ch22-vocab bbh-ch22-verb
+קָבַר	verb — (Q) to bury; (Ni) be buried — 133×	bbh-ch22-vocab bbh-ch22-verb
+שָׁכַן	verb — (Q) to settle (down), abide, reside, dwell, inhabit; (Pi) abide, dwell — 130×	bbh-ch22-vocab bbh-ch22-verb
+שָׁפַךְ	verb — (Q) to pour (out), spill, shed (blood) — 117×	bbh-ch22-vocab bbh-ch22-verb
+אֲרוֹן	noun (cs) — ark, chest, coffin; אֲרוֹן הַבְּרִית "the ark of the covenant" — 202×	bbh-ch22-vocab bbh-ch22-noun
+חֹק	noun (ms) — statute, appointed time, portion; (mp) חֻקִּים — 131×	bbh-ch22-vocab bbh-ch22-noun
+חֻקָּה	noun (fs) — statute, ordinance — 104×	bbh-ch22-vocab bbh-ch22-noun
+מִשְׁכָּן	noun (ms) — dwelling place, tabernacle; (mp) מִשְׁכָּנוֹת — 139×	bbh-ch22-vocab bbh-ch22-noun

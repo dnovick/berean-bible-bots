@@ -1,0 +1,35 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 12 — Vocabulary
+#tags column:3
+אבד	verb — (Peal) to perish; (Haphel) to slay, destroy; (Hophal) to be destroyed	bba-ch12-vocab bba-ch12-verb
+אכל	verb — (Peal) to feed on, feed, consume, devastate	bba-ch12-vocab bba-ch12-verb
+אמר	verb — (Peal) to say, speak, tell	bba-ch12-vocab bba-ch12-verb
+בנה	verb — (Peal) to build; (Hithpeel) to be built	bba-ch12-vocab bba-ch12-verb
+בּרךְ	verb — (Peal) to bless; (Pael) to bless, praise	bba-ch12-vocab bba-ch12-verb
+גלה	verb — (Peal) to reveal; (Haphel) to lead off into exile	bba-ch12-vocab bba-ch12-verb
+הלך	verb — (Peal) to walk (about); (Haphel) to walk (about)	bba-ch12-vocab bba-ch12-verb
+חזה	verb — (Peal) to see, perceive	bba-ch12-vocab bba-ch12-verb
+חיה	verb — (Peal) to live; (Haphel) to let live, restore to life	bba-ch12-vocab bba-ch12-verb
+ידע	verb — (Peal) to know, learn, understand; (Haphel) to make known	bba-ch12-vocab bba-ch12-verb
+יכל	verb — (Peal) to be able, prevail against, defeat	bba-ch12-vocab bba-ch12-verb
+כּתב	verb — (Peal) to write	bba-ch12-vocab bba-ch12-verb
+נפל	verb — (Peal) to fall	bba-ch12-vocab bba-ch12-verb
+נתן	verb — (Peal) to give, pay	bba-ch12-vocab bba-ch12-verb
+ענה	verb — (Peal) to answer, begin talking	bba-ch12-vocab bba-ch12-verb
+קום	verb — (Peal) to rise, stand, endure; (Pael) to establish; (Haphel) to set up, found, appoint, establish; (Hophal) to be set up	bba-ch12-vocab bba-ch12-verb
+קרא	verb — (Peal) to call, shout, read; (Hithpeal) to be called	bba-ch12-vocab bba-ch12-verb
+קרב	verb — (Peal) to approach; (Pael) to offer; (Haphel) to bring near, allow to enter	bba-ch12-vocab bba-ch12-verb
+רבה	verb — (Peal) to become great, grow up, become long; (Pael) to make great, make high	bba-ch12-vocab bba-ch12-verb
+רום	verb — (Peal) to rise up, be arrogant; (Polel) to praise; (Hithpolal) to rise up; (Haphel) to elevate, raise	bba-ch12-vocab bba-ch12-verb
+שׂים	verb — (Peal) to put, place, set, lay; (Hithpeel) to be put, be turned into, be given	bba-ch12-vocab bba-ch12-verb
+שׁאל	verb — (Peal) to ask, require	bba-ch12-vocab bba-ch12-verb
+שׁלח	verb — (Peal) to send; to stretch out	bba-ch12-vocab bba-ch12-verb
+שׁמע	verb — (Peal) to hear; (Hithpael) to obey	bba-ch12-vocab bba-ch12-verb
+שׁתה	verb — (Peal) to drink	bba-ch12-vocab bba-ch12-verb
+הוה	verb — (Peal) to be, happen, exist [Heb. הָיָה]	bba-ch12-vocab bba-ch12-verb
+יתב	verb — (Peal) to sit, be seated, dwell, reside; (Haphel) to allow to dwell [Heb. יָשַׁב]	bba-ch12-vocab bba-ch12-verb
+תּוב	verb — (Peal) to return, come back; (Haphel) to give back, bring back [Heb. שׁוּב]	bba-ch12-vocab bba-ch12-verb
+עבד	verb — (Peal) to do, make; (Hithpeel) to be made, be performed, be turned [Heb. עָבַד = work, serve]	bba-ch12-vocab bba-ch12-verb
+שׁכח	verb — (Hithpeel) to be found; (Haphel) to find, get [Heb. שָׁכַח = to forget]	bba-ch12-vocab bba-ch12-verb

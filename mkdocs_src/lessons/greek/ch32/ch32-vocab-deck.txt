@@ -1,0 +1,7 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 32 — Vocabulary
+#tags column:3
+δίκαιος, -αία, -αιον	adjective — right, just, righteous — 79×	bbg-ch32-vocab bbg-ch32-adj
+μέλλω	verb — I am about to — 109×	bbg-ch32-vocab bbg-ch32-verb

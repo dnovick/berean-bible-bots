@@ -1,0 +1,25 @@
+יִשְׁמֹר	Root: שָׁמַר | Imperfect 3ms | he will guard | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+תִּשְׁמֹר	Root: שָׁמַר | Imperfect 3/2ms | he/you will guard | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+תִּשְׁמְרִי	Root: שָׁמַר | Imperfect 2fs | you (f) will guard | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+אֶשְׁמֹר	Root: שָׁמַר | Imperfect 1cs | I will guard | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִשְׁמְרוּ	Root: שָׁמַר | Imperfect 3mp | they will guard | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+נִשְׁמֹר	Root: שָׁמַר | Imperfect 1cp | we will guard | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+תִּשְׁמֹרְנָה	Root: שָׁמַר | Imperfect 3/2fp | they/you (fp) will guard | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִכְתֹּב	Root: כָּתַב | Imperfect 3ms | he will write | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִקְטֹל	Root: קָטַל | Imperfect 3ms | he will kill | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִשְׁמַע	Root: שָׁמַע | Imperfect 3ms | he will hear | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+תִּשְׁמַע	Root: שָׁמַע | Imperfect 3/2ms | he/you will hear | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִשְׁמְעוּ	Root: שָׁמַע | Imperfect 3mp | they will hear | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִכְבַּד	Root: כָּבֵד | Imperfect 3ms | he will be honored | Stative	BBH Chapter 15 — Qal Imperfect Strong
+יִגְדַּל	Root: גָּדֵל | Imperfect 3ms | he will be great | Stative	BBH Chapter 15 — Qal Imperfect Strong
+יְהִ֣י (Gen 1:3)	Root: הָיָה | Jussive 3ms | let there be | Jussive	BBH Chapter 15 — Qal Imperfect Strong
+יִשְׁלַח	Root: שָׁלַח | Imperfect 3ms | he will send | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִזְכֹּר	Root: זָכַר | Imperfect 3ms | he will remember | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+יִשְׁמֹר	Root: שָׁמַר | Jussive 3ms | let him guard | Jussive	BBH Chapter 15 — Qal Imperfect Strong
+יִבְנֶ֫ה	Root: בָּנָה | Imperfect 3ms | he will build | Simple future	BBH Chapter 15 — Qal Imperfect Strong
+תִּרְצַח (Exo 20:13)	Root: רָצַח | Imperfect 2ms | you shall not murder | Prohibition (לֹא)	BBH Chapter 15 — Qal Imperfect Strong
+תִּגְנֹב (Exo 20:15)	Root: גָּנַב | Imperfect 2ms | you shall not steal | Prohibition (לֹא)	BBH Chapter 15 — Qal Imperfect Strong
+נִשְׁמְרָה	Root: שָׁמַר | Cohortative 1cp | let us guard! | Cohortative	BBH Chapter 15 — Qal Imperfect Strong
+אֶשְׁמְרָה	Root: שָׁמַר | Cohortative 1cs | let me guard! | Cohortative	BBH Chapter 15 — Qal Imperfect Strong
+אַל תִּקְרַב (Exo 3:5)	Root: קָרַב | Imperfect 2ms | do not come near! | Prohibition (אַל)	BBH Chapter 15 — Qal Imperfect Strong
+לֹא תַחְמֹד (Exo 20:17)	Root: חָמַד | Imperfect 2ms | you shall not covet | Prohibition (לֹא)	BBH Chapter 15 — Qal Imperfect Strong

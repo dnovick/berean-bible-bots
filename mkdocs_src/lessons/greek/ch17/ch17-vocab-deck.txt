@@ -1,0 +1,16 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 17 — Vocabulary
+#tags column:3
+ἀγαπάω	verb — I love, cherish — 143×	bbg-ch17-vocab bbg-ch17-verb
+δαιμόνιον, -ου, τό	noun 2nd decl. n — demon — 63×	bbg-ch17-vocab bbg-ch17-noun
+ζητέω	verb — I seek, desire, try to obtain — 117×	bbg-ch17-vocab bbg-ch17-verb
+καλέω	verb — I call, name, invite — 148×	bbg-ch17-vocab bbg-ch17-verb
+λαλέω	verb — I speak, say — 296×	bbg-ch17-vocab bbg-ch17-verb
+οἶδα	verb — I know, understand — 318×	bbg-ch17-vocab bbg-ch17-verb
+ὅταν	conjunction — whenever — 123×	bbg-ch17-vocab bbg-ch17-other
+πλείων, πλεῖον	adjective — larger, more — 54×	bbg-ch17-vocab bbg-ch17-adj
+πληρόω	verb — I fill, complete, fulfill — 86×	bbg-ch17-vocab bbg-ch17-verb
+ποιέω	verb — I do, make — 568×	bbg-ch17-vocab bbg-ch17-verb
+τηρέω	verb — I keep, guard, observe — 70×	bbg-ch17-vocab bbg-ch17-verb

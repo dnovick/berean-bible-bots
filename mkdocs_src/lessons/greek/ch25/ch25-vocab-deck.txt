@@ -1,0 +1,8 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 25 — Vocabulary
+#tags column:3
+αἰτέω	verb — I ask; demand — 70×	bbg-ch25-vocab bbg-ch25-verb
+μᾶλλον	adverb — more, rather — 81×	bbg-ch25-vocab bbg-ch25-other
+μαρτυρέω	verb — I bear witness, testify — 76×	bbg-ch25-vocab bbg-ch25-verb

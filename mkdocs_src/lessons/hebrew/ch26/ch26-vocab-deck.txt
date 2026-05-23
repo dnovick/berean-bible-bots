@@ -1,0 +1,20 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 26 — Vocabulary
+#tags column:3
+בָּקַשׁ	verb — (Pi) to seek, search for, look for, discover, demand, require; (Pu) be sought — 225×	bbh-ch26-vocab bbh-ch26-verb
+דָּבַר	verb — (Q) to speak (rare in Q); (Pi) speak — 1,136×	bbh-ch26-vocab bbh-ch26-verb
+הָלַל	verb — (Pi) to praise, sing hallelujah; (Pu) be praised, praiseworthy; (Hith) boast — 146×	bbh-ch26-vocab bbh-ch26-verb
+כָּסָה	verb — (Q) to cover, conceal, hide; (Pi) cover (up), conceal, clothe — 153×	bbh-ch26-vocab bbh-ch26-verb
+מָהַר	verb — (Pi) to hasten, hurry, go or come quickly — 81×	bbh-ch26-vocab bbh-ch26-verb
+נָבָא	verb — (Ni) to prophesy, be in a state of prophetic ecstasy; (Hith) speak or behave as a prophet — 115×	bbh-ch26-vocab bbh-ch26-verb
+סָגַר	verb — (Q) to shut (in), close; (Hi) deliver up, hand over, surrender, give up — 91×	bbh-ch26-vocab bbh-ch26-verb
+צָוָה	verb — (Pi) to command, give an order, charge; (Pu) be ordered, receive a command — 496×	bbh-ch26-vocab bbh-ch26-verb
+קָטַר	verb — (Pi) to make a sacrifice go up in smoke, offer by burning; (Hi) cause a sacrifice to go up in smoke — 115×	bbh-ch26-vocab bbh-ch26-verb
+שִׁיר	verb — (Q) to sing (of); (Q ptc) singer — 88× [cf. Ch25: שִׁיר noun "song" 78×]	bbh-ch26-vocab bbh-ch26-verb
+שָׁרַת	verb — (Pi) to minister, serve — 98×	bbh-ch26-vocab bbh-ch26-verb
+מִצְוָה	noun (fs) — commandment; fp מִצְוֹת; מִצְוֹת יְהוָה = "the commandments of the LORD" — 184×	bbh-ch26-vocab bbh-ch26-noun
+טָהוֹר	adjective — clean, pure — 96×	bbh-ch26-vocab bbh-ch26-adj
+טָמֵא	adjective — unclean — 88×	bbh-ch26-vocab bbh-ch26-adj
+עָנִי	adjective — poor, humble, afflicted — 80×	bbh-ch26-vocab bbh-ch26-adj

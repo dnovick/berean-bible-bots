@@ -1,0 +1,13 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 17 — Vocabulary
+#tags column:3
+קטל	verb — (Peal) to kill; (Hithpeel) to be killed; (Pael) to kill; (Hithpaal) to be killed	bba-ch17-vocab bba-ch17-verb
+רשׁם	verb — (Peal) to write, inscribe	bba-ch17-vocab bba-ch17-verb
+שׁבח	verb — (Pael) to praise	bba-ch17-vocab bba-ch17-verb
+שׁבק	verb — (Peal) to leave behind, leave alone; (Hithpeel) to be left, pass on to	bba-ch17-vocab bba-ch17-verb
+שֵׁיזִב	verb — (Shaphel) to rescue, save, deliver	bba-ch17-vocab bba-ch17-verb
+שׁלט	verb — (Peal) to rule over, have power over, make oneself master of; (Haphel) to make someone ruler	bba-ch17-vocab bba-ch17-verb
+שׁרה	verb — (Peal) to destroy, dwell; (Pael) to begin, commence; (Hithpaal) to be loosened, shake, shudder	bba-ch17-vocab bba-ch17-verb
+תּקף	verb — (Peal) to be/become strong; to grow hard, become arrogant; (Pael) to become strong, enforce	bba-ch17-vocab bba-ch17-verb

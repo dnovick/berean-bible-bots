@@ -1,0 +1,20 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 35 — Vocabulary
+#tags column:3
+ἁγιάζω	verb — I consecrate, sanctify — 28×	bbg-ch35-vocab bbg-ch35-verb
+ἁμαρτάνω	verb — I sin — 43×	bbg-ch35-vocab bbg-ch35-verb
+ἁμαρτωλός, -όν	adjective / noun — sinful; sinner — 47×	bbg-ch35-vocab bbg-ch35-adj
+ἀνάστασις, -εως, ἡ	noun 3rd decl. f — resurrection — 42×	bbg-ch35-vocab bbg-ch35-noun
+ἀπαγγέλλω	verb — I report; tell — 45×	bbg-ch35-vocab bbg-ch35-verb
+διακονέω	verb — I serve — 37×	bbg-ch35-vocab bbg-ch35-verb
+διακονία, -ας, ἡ	noun 1st decl. f — service — 34×	bbg-ch35-vocab bbg-ch35-noun
+δικαιόω	verb — I justify; vindicate — 39×	bbg-ch35-vocab bbg-ch35-verb
+θλῖψις, -εως, ἡ	noun 3rd decl. f — affliction, tribulation — 45×	bbg-ch35-vocab bbg-ch35-noun
+ἱλαστήριον, -ου, τό	noun 2nd decl. n — propitiation, expiation, place of atonement — 2×	bbg-ch35-vocab bbg-ch35-noun
+σταυρόω	verb — I crucify — 46×	bbg-ch35-vocab bbg-ch35-verb
+σωτήρ, -ῆρος, ὁ	noun 3rd decl. m — savior; deliverer — 24×	bbg-ch35-vocab bbg-ch35-noun
+σωτηρία, -ας, ἡ	noun 1st decl. f — salvation; deliverance — 46×	bbg-ch35-vocab bbg-ch35-noun
+φανερόω	verb — I reveal, make known — 49×	bbg-ch35-vocab bbg-ch35-verb
+φόβος, -ου, ὁ	noun 2nd decl. m — fear; reverence — 47×	bbg-ch35-vocab bbg-ch35-noun

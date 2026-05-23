@@ -1,0 +1,32 @@
+שָׁמ֣וֹר	Qal IA · שמר · Strong A · "surely keep" — qamets R1 + holem-waw R2; contrast IC שְׁמֹר (shewa R1)	BBH Chapter 21 — Qal Infinitive Absolute
+זָכ֕וֹר	Qal IA · זכר · Strong A · Imperatival — "Remember!" (Exo 20:8); no paired finite verb; IA as stand-alone command	BBH Chapter 21 — Qal Infinitive Absolute
+אָבֹ֖ד	Qal IA · אבד · Strong A · Emphatic — "utterly perish"; Deuteronomy threat formula	BBH Chapter 21 — Qal Infinitive Absolute
+גָּאֹ֖ל	Qal IA · גאל · Strong A · Emphatic — "surely redeem"; Leviticus legal formula	BBH Chapter 21 — Qal Infinitive Absolute
+שָׁמ֣וֹעַ	Qal IA · שמע · Strong B (gutt. R3) · Emphatic — "hear attentively"; qamets + holem-waw + patach before ע	BBH Chapter 21 — Qal Infinitive Absolute
+שָׁכֹ֤חַ	Qal IA · שכח · Strong B (gutt. R3) · Emphatic — "ever forget" (Deu 8:19); patach before ח at R3	BBH Chapter 21 — Qal Infinitive Absolute
+שָׁמ֣וֹר vs. שָׁמ֣וֹעַ	IA contrast: שמר (A-class) = שָׁמ֣וֹר; שמע (B-class gutt.) = שָׁמ֣וֹעַ — B-class adds patach before gutt. R3	BBH Chapter 21 — Qal Infinitive Absolute
+רָאֹ֣ה	Qal IA · ראה · III-ה · Emphatic — "surely seen" (Exo 3:7); ה retained in IA; contrast IC: רְאוֹת (holem-waw + taw)	BBH Chapter 21 — Qal Infinitive Absolute
+עָשׂ֑וֹה	Qal IA · עשה · III-ה + I-gutt. · Emphatic — "surely do"; ה retained; chateph under ע	BBH Chapter 21 — Qal Infinitive Absolute
+הָי֧וֹ	Qal IA · היה · III-ה · Emphatic — "surely be"; ה retained; contrast IC: הֱיוֹת	BBH Chapter 21 — Qal Infinitive Absolute
+III-ה IA (רָאֹ֣ה) vs. IC (רְאוֹת)	III-ה IA ends in ה; IC ends in וֹת — the ה/וֹת distinction is the clearest III-ה IA vs. IC diagnostic	BBH Chapter 21 — Qal Infinitive Absolute
+מ֥וֹת	Qal IA · מות · Biconsonantal · Emphatic — most common IA in OT (49×); identical to bare IC; context distinguishes	BBH Chapter 21 — Qal Infinitive Absolute
+מ֥וֹת תָּמוּת	Emphatic IA construction · מות · "you shall surely die" — IA + Imperfect 2ms; death-penalty formula (Gen 2:17)	BBH Chapter 21 — Qal Infinitive Absolute
+שׁ֣וֹב	Qal IA · שוב · Biconsonantal · Manner — "returning"; full shureq; paired with הָל֣וֹךְ	BBH Chapter 21 — Qal Infinitive Absolute
+Biconsonantal IA = bare IC	Biconsonantal IA and IC are identical forms (מ֥וֹת, שׁ֣וֹב); context distinguishes: IA never follows a preposition	BBH Chapter 21 — Qal Infinitive Absolute
+הָל֣וֹךְ	Qal IA · הלך · I-yod · Manner/Progressive — "going"; retains full yod-shape; contrast IC: לֶ/כֶת	BBH Chapter 21 — Qal Infinitive Absolute
+הָל֣וֹךְ וָ/שׁ֑וֹב	Paired IA idiom · הלך + שוב · Manner — "going and returning" (Gen 8:3); progressive/iterative motion	BBH Chapter 21 — Qal Infinitive Absolute
+הָלוֹךְ֙ וְ/גָדֵ֔ל	Paired IA idiom · הלך + גדל · Progressive — "growing greater and greater" (Gen 26:13)	BBH Chapter 21 — Qal Infinitive Absolute
+יָצוֹא֙	Qal IA · יצא · I-yod + III-aleph · Emphatic — "going out"; I-yod IA retains yod-shape; contrast IC: צֵאת	BBH Chapter 21 — Qal Infinitive Absolute
+יָדֹ֣עַ	Qal IA · ידע · I-yod (gutt. R3) · Emphatic — "surely know"; qamets + holem + patach before ע	BBH Chapter 21 — Qal Infinitive Absolute
+נָת֤וֹן	Qal IA · נתן · I-nun · Emphatic — "surely give"; both nuns retained; contrast IC: תֵּת (both nuns drop)	BBH Chapter 21 — Qal Infinitive Absolute
+I-nun IA (נָת֤וֹן) vs. IC (תֵּת)	Most dramatic IA/IC contrast: IA = נָת֤וֹן (both nuns visible); IC = תֵּת (both nuns drop)	BBH Chapter 21 — Qal Infinitive Absolute
+אָכֹ֥ל	Qal IA · אכל · I-aleph · Emphatic — "freely eat" (Gen 2:16); qamets under aleph; contrast IC: אֱכֹל (hateph)	BBH Chapter 21 — Qal Infinitive Absolute
+אָכֹ֥ל תֹּאכֵֽל	Emphatic IA construction · אכל · "you may freely eat" (Gen 2:16) — permission formula; same structure as מ֥וֹת תָּמוּת	BBH Chapter 21 — Qal Infinitive Absolute
+I-aleph IA (אָכֹ֥ל) vs. IC (אֱכֹל)	IA = qamets under aleph; IC = hateph-seghol — vowel under aleph is the diagnostic	BBH Chapter 21 — Qal Infinitive Absolute
+שָׁמ֣וֹר (in isolation)	Qal IA of שמר — qamets under R1; distinguish from IC/Imper. שְׁמֹר (shewa) and Perfect שָׁמַ֣ר (qamets + patach)	BBH Chapter 21 — Qal Infinitive Absolute
+שָׁמַ֣ר vs. שָׁמ֣וֹר	Qal Perfect 3ms vs. Qal IA: שָׁמַ֣ר = qamets + patach; שָׁמ֣וֹר = qamets + holem-waw — R2 vowel distinguishes	BBH Chapter 21 — Qal Infinitive Absolute
+זָכ֕וֹר (imperatival) vs. שָׁמ֣וֹר תִּשְׁמְר֗וּן (emphatic)	Imperatival IA = stand-alone command; Emphatic IA = IA + finite verb of same root — two distinct functions of the IA	BBH Chapter 21 — Qal Infinitive Absolute
+מ֥וֹת preceded by לָ = IC	Preposition before מ֥וֹת = IC ("to die"); no preposition + paired finite verb = IA ("shall surely die")	BBH Chapter 21 — Qal Infinitive Absolute
+רָאֹ֣ה רָאִ֛יתִי	Emphatic IA construction · ראה · III-ה · "I have surely seen" (Exo 3:7) — IA + Perfect 1cs; burning bush	BBH Chapter 21 — Qal Infinitive Absolute
+טָרֹ֥ף טֹרַ֖ף	Emphatic IA construction · טרף · Strong A · "surely been torn" (Gen 44:28) — IA + Passive Perfect; dramatic irony	BBH Chapter 21 — Qal Infinitive Absolute
+שָׁמ֗וֹר אֶת-יוֹם הַשַּׁבָּת	Imperatival IA (Deu 5:12) · שמר · "Keep the Sabbath!"; compare Exo 20:8 זָכ֕וֹר — same construction, different root	BBH Chapter 21 — Qal Infinitive Absolute

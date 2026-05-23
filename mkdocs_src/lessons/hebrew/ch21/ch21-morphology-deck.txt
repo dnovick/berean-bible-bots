@@ -1,0 +1,38 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 21 — Qal Infinitive Absolute
+#tags column:3
+
+שָׁמ֣וֹר	Qal IA · שמר · Strong A · "surely keep" — qamets R1 + holem-waw R2; contrast IC שְׁמֹר (shewa R1)	ia Strong-A bbh-ch21
+זָכ֕וֹר	Qal IA · זכר · Strong A · Imperatival — "Remember!" (Exo 20:8); no paired finite verb; IA as stand-alone command	ia Strong-A ia-imperatival bbh-ch21
+אָבֹ֖ד	Qal IA · אבד · Strong A · Emphatic — "utterly perish"; Deuteronomy threat formula	ia Strong-A ia-emphatic bbh-ch21
+גָּאֹ֖ל	Qal IA · גאל · Strong A · Emphatic — "surely redeem"; Leviticus legal formula	ia Strong-A ia-emphatic bbh-ch21
+שָׁמ֣וֹעַ	Qal IA · שמע · Strong B (gutt. R3) · Emphatic — "hear attentively"; qamets + holem-waw + patach before ע	ia Strong-B ia-emphatic bbh-ch21
+שָׁכֹ֤חַ	Qal IA · שכח · Strong B (gutt. R3) · Emphatic — "ever forget" (Deu 8:19); patach before ח at R3	ia Strong-B ia-emphatic bbh-ch21
+שָׁמ֣וֹר vs. שָׁמ֣וֹעַ	IA contrast: שמר (A-class) = שָׁמ֣וֹר; שמע (B-class gutt.) = שָׁמ֣וֹעַ — B-class adds patach before gutt. R3	ia Strong-A Strong-B ia-contrast bbh-ch21
+רָאֹ֣ה	Qal IA · ראה · III-ה · Emphatic — "surely seen" (Exo 3:7); ה retained in IA; contrast IC: רְאוֹת (holem-waw + taw)	ia III-he ia-emphatic bbh-ch21
+עָשׂ֑וֹה	Qal IA · עשה · III-ה + I-gutt. · Emphatic — "surely do"; ה retained; chateph under ע	ia III-he I-gutt ia-emphatic bbh-ch21
+הָי֧וֹ	Qal IA · היה · III-ה · Emphatic — "surely be"; ה retained; contrast IC: הֱיוֹת	ia III-he ia-emphatic bbh-ch21
+III-ה IA (רָאֹ֣ה) vs. IC (רְאוֹת)	III-ה IA ends in ה; IC ends in וֹת — the ה/וֹת distinction is the clearest III-ה IA vs. IC diagnostic	ia III-he ia-contrast bbh-ch21
+מ֥וֹת	Qal IA · מות · Biconsonantal · Emphatic — most common IA in OT (49×); identical to bare IC; context distinguishes	ia biconsonantal ia-emphatic bbh-ch21
+מ֥וֹת תָּמוּת	Emphatic IA construction · מות · "you shall surely die" — IA + Imperfect 2ms; death-penalty formula (Gen 2:17)	ia biconsonantal ia-emphatic bbh-ch21
+שׁ֣וֹב	Qal IA · שוב · Biconsonantal · Manner — "returning"; full shureq; paired with הָל֣וֹךְ	ia biconsonantal ia-manner bbh-ch21
+Biconsonantal IA = bare IC	Biconsonantal IA and IC are identical forms (מ֥וֹת, שׁ֣וֹב); context distinguishes: IA never follows a preposition	ia biconsonantal ia-contrast bbh-ch21
+הָל֣וֹךְ	Qal IA · הלך · I-yod · Manner/Progressive — "going"; retains full yod-shape; contrast IC: לֶ/כֶת	ia I-yod ia-manner bbh-ch21
+הָל֣וֹךְ וָ/שׁ֑וֹב	Paired IA idiom · הלך + שוב · Manner — "going and returning" (Gen 8:3); progressive/iterative motion	ia I-yod biconsonantal ia-manner bbh-ch21
+הָלוֹךְ֙ וְ/גָדֵ֔ל	Paired IA idiom · הלך + גדל · Progressive — "growing greater and greater" (Gen 26:13)	ia I-yod ia-progressive bbh-ch21
+יָצוֹא֙	Qal IA · יצא · I-yod + III-aleph · Emphatic — "going out"; I-yod IA retains yod-shape; contrast IC: צֵאת	ia I-yod ia-emphatic bbh-ch21
+יָדֹ֣עַ	Qal IA · ידע · I-yod (gutt. R3) · Emphatic — "surely know"; qamets + holem + patach before ע	ia I-yod ia-emphatic bbh-ch21
+נָת֤וֹן	Qal IA · נתן · I-nun · Emphatic — "surely give"; both nuns retained; contrast IC: תֵּת (both nuns drop)	ia I-nun ia-emphatic bbh-ch21
+I-nun IA (נָת֤וֹן) vs. IC (תֵּת)	Most dramatic IA/IC contrast: IA = נָת֤וֹן (both nuns visible); IC = תֵּת (both nuns drop)	ia I-nun ia-contrast bbh-ch21
+אָכֹ֥ל	Qal IA · אכל · I-aleph · Emphatic — "freely eat" (Gen 2:16); qamets under aleph; contrast IC: אֱכֹל (hateph)	ia I-aleph ia-emphatic bbh-ch21
+אָכֹ֥ל תֹּאכֵֽל	Emphatic IA construction · אכל · "you may freely eat" (Gen 2:16) — permission formula; same structure as מ֥וֹת תָּמוּת	ia I-aleph ia-emphatic bbh-ch21
+I-aleph IA (אָכֹ֥ל) vs. IC (אֱכֹל)	IA = qamets under aleph; IC = hateph-seghol — vowel under aleph is the diagnostic	ia I-aleph ia-contrast bbh-ch21
+שָׁמ֣וֹר (in isolation)	Qal IA of שמר — qamets under R1; distinguish from IC/Imper. שְׁמֹר (shewa) and Perfect שָׁמַ֣ר (qamets + patach)	ia Strong-A ia-disambiguation bbh-ch21
+שָׁמַ֣ר vs. שָׁמ֣וֹר	Qal Perfect 3ms vs. Qal IA: שָׁמַ֣ר = qamets + patach; שָׁמ֣וֹר = qamets + holem-waw — R2 vowel distinguishes	ia Strong-A ia-disambiguation bbh-ch21
+זָכ֕וֹר (imperatival) vs. שָׁמ֣וֹר תִּשְׁמְר֗וּן (emphatic)	Imperatival IA = stand-alone command; Emphatic IA = IA + finite verb of same root — two distinct functions of the IA	ia Strong-A ia-imperatival ia-emphatic bbh-ch21
+מ֥וֹת preceded by לָ = IC	Preposition before מ֥וֹת = IC ("to die"); no preposition + paired finite verb = IA ("shall surely die")	ia biconsonantal ia-disambiguation bbh-ch21
+רָאֹ֣ה רָאִ֛יתִי	Emphatic IA construction · ראה · III-ה · "I have surely seen" (Exo 3:7) — IA + Perfect 1cs; burning bush	ia III-he ia-emphatic bbh-ch21
+טָרֹ֥ף טֹרַ֖ף	Emphatic IA construction · טרף · Strong A · "surely been torn" (Gen 44:28) — IA + Passive Perfect; dramatic irony	ia Strong-A ia-emphatic bbh-ch21
+שָׁמ֗וֹר אֶת-יוֹם הַשַּׁבָּת	Imperatival IA (Deu 5:12) · שמר · "Keep the Sabbath!"; compare Exo 20:8 זָכ֕וֹר — same construction, different root	ia Strong-A ia-imperatival bbh-ch21

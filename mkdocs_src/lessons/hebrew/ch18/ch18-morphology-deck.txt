@@ -1,0 +1,38 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 18 — Qal Imperative
+#tags column:3
+
+שְׁמֹר	שמר · Qal Imperative · 2ms · "Guard!" · Strong A-class; shewa + holem	imperative-strong bbh-ch18
+שִׁמְרִי	שמר · Qal Imperative · 2fs · "Guard! (f)" · + ִי suffix	imperative-strong bbh-ch18
+שִׁמְרוּ	שמר · Qal Imperative · 2mp · "Guard! (pl.)" · + וּ suffix	imperative-strong bbh-ch18
+שְׁמֹרְנָה	שמר · Qal Imperative · 2fp · "Guard! (f.pl.)" · + נָה suffix	imperative-strong bbh-ch18
+זְכֹר	זכר · Qal Imperative · 2ms · "Remember!" · Frequent in Deuteronomy	imperative-strong bbh-ch18
+כְּתֹב	כתב · Qal Imperative · 2ms · "Write!" · Strong A-class paradigm	imperative-strong bbh-ch18
+קְרָא	קרא · Qal Imperative · 2ms · "Call / Read!" · III-א; qamets before quiescent aleph	imperative-strong bbh-ch18
+שְׁמַע	שמע · Qal Imperative · 2ms · "Hear!" · B-class; gutt. R3 forces patach; Deu 6:4	imperative-B-class bbh-ch18
+שִׁמְעוּ	שמע · Qal Imperative · 2mp · "Hear! (pl.)" · B-class + וּ	imperative-B-class bbh-ch18
+חֲזַק	חזק · Qal Imperative · 2ms · "Be strong!" · I-gutt. chateph; B-class patach	imperative-B-class bbh-ch18
+עֲשֵׂה	עשה · Qal Imperative · 2ms · "Do / Make!" · III-ה + I-gutt.; ה retained in 2ms	imperative-III-he bbh-ch18
+עֲשׂוּ	עשה · Qal Imperative · 2mp · "Do! (pl.)" · ה drops before -וּ	imperative-III-he bbh-ch18
+רְאֵה	ראה · Qal Imperative · 2ms · "See!" · III-ה; tsere before retained ה	imperative-III-he bbh-ch18
+רְאִי	ראה · Qal Imperative · 2fs · "See! (f)" · ה drops; + ִי	imperative-III-he bbh-ch18
+קוּם	קום · Qal Imperative · 2ms · "Arise!" · Biconsonantal; full shureq retained	imperative-biconsonantal bbh-ch18
+קוּמִי	קום · Qal Imperative · 2fs · "Arise! (f)" · + ִי	imperative-biconsonantal bbh-ch18
+קוּמוּ	קום · Qal Imperative · 2mp · "Arise! (pl.)" · + וּ	imperative-biconsonantal bbh-ch18
+בֹּא	בוא · Qal Imperative · 2ms · "Come!" · Biconsonantal; aleph quiesces	imperative-biconsonantal bbh-ch18
+בֹּאוּ	בוא · Qal Imperative · 2mp · "Come! (pl.)" · + וּ	imperative-biconsonantal bbh-ch18
+שׁוּב	שוב · Qal Imperative · 2ms · "Return!" · Biconsonantal; full shureq	imperative-biconsonantal bbh-ch18
+לֵךְ	הלך · Qal Imperative · 2ms · "Go!" · I-י; tsere; ה of הלך absent; extremely short	imperative-I-yod bbh-ch18
+לְכוּ	הלך · Qal Imperative · 2mp · "Go! (pl.)" · I-י + וּ; shewa under ל	imperative-I-yod bbh-ch18
+שֵׁב	ישב · Qal Imperative · 2ms · "Sit / Dwell!" · I-י short form; tsere	imperative-I-yod bbh-ch18
+צֵא	יצא · Qal Imperative · 2ms · "Go out!" · I-י + III-א; tsere; aleph quiesces	imperative-I-yod bbh-ch18
+תֵּן	נתן · Qal Imperative · 2ms · "Give!" · I-נ; both nuns drop; very short	imperative-I-nun bbh-ch18
+תְּנוּ	נתן · Qal Imperative · 2mp · "Give! (pl.)" · + וּ	imperative-I-nun bbh-ch18
+קַח	לקח · Qal Imperative · 2ms · "Take!" · I-י short form; most common Torah imperative	imperative-I-yod bbh-ch18
+קְחוּ	לקח · Qal Imperative · 2mp · "Take! (pl.)" · + וּ	imperative-I-yod bbh-ch18
+אֱמֹר	אמר · Qal Imperative · 2ms · "Say!" · I-aleph; hateph-seghol under aleph	imperative-I-aleph bbh-ch18
+אִמְרוּ	אמר · Qal Imperative · 2mp · "Say! (pl.)" · + וּ	imperative-I-aleph bbh-ch18
+שָׂא	נשא · Qal Imperative · 2ms · "Lift / Carry!" · I-נ + I-aleph; very short	imperative-I-nun bbh-ch18
+אַל־תִּקְרַב	קרב · אַל + Jussive · 2ms · "Do not come near!" · Negative command = Jussive NOT Imperative	imperative-contrast bbh-ch18

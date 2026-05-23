@@ -1,0 +1,30 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 15 — Qal Imperfect Strong
+#tags column:3
+יִשְׁמֹר	Root: שָׁמַר | Imperfect 3ms | he will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+תִּשְׁמֹר	Root: שָׁמַר | Imperfect 3/2ms | he/you will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+תִּשְׁמְרִי	Root: שָׁמַר | Imperfect 2fs | you (f) will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+אֶשְׁמֹר	Root: שָׁמַר | Imperfect 1cs | I will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+יִשְׁמְרוּ	Root: שָׁמַר | Imperfect 3mp | they will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+נִשְׁמֹר	Root: שָׁמַר | Imperfect 1cp | we will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+תִּשְׁמֹרְנָה	Root: שָׁמַר | Imperfect 3/2fp | they/you (fp) will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+יִכְתֹּב	Root: כָּתַב | Imperfect 3ms | he will write | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+יִקְטֹל	Root: קָטַל | Imperfect 3ms | he will kill | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+יִשְׁמַע	Root: שָׁמַע | Imperfect 3ms | he will hear | Simple future	qal-imperfect-b-class usage-simple-future bbh-ch15
+תִּשְׁמַע	Root: שָׁמַע | Imperfect 3/2ms | he/you will hear | Simple future	qal-imperfect-b-class usage-simple-future bbh-ch15
+יִשְׁמְעוּ	Root: שָׁמַע | Imperfect 3mp | they will hear | Simple future	qal-imperfect-b-class usage-simple-future bbh-ch15
+יִכְבַּד	Root: כָּבֵד | Imperfect 3ms | he will be honored | Stative	qal-imperfect-stative usage-stative bbh-ch15
+יִגְדַּל	Root: גָּדֵל | Imperfect 3ms | he will be great | Stative	qal-imperfect-stative usage-stative bbh-ch15
+יְהִ֣י (Gen 1:3)	Root: הָיָה | Jussive 3ms | let there be | Jussive	qal-jussive usage-jussive bbh-ch15
+יִשְׁלַח	Root: שָׁלַח | Imperfect 3ms | he will send | Simple future	qal-imperfect-b-class usage-simple-future bbh-ch15
+יִזְכֹּר	Root: זָכַר | Imperfect 3ms | he will remember | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
+יִשְׁמֹר	Root: שָׁמַר | Jussive 3ms | let him guard | Jussive	qal-jussive usage-jussive bbh-ch15
+יִבְנֶ֫ה	Root: בָּנָה | Imperfect 3ms | he will build | Simple future	qal-imperfect-lamed-he usage-simple-future bbh-ch15
+תִּרְצַח (Exo 20:13)	Root: רָצַח | Imperfect 2ms | you shall not murder | Prohibition (לֹא)	qal-imperfect-a-class usage-prohibition bbh-ch15
+תִּגְנֹב (Exo 20:15)	Root: גָּנַב | Imperfect 2ms | you shall not steal | Prohibition (לֹא)	qal-imperfect-a-class usage-prohibition bbh-ch15
+נִשְׁמְרָה	Root: שָׁמַר | Cohortative 1cp | let us guard! | Cohortative	qal-cohortative usage-cohortative bbh-ch15
+אֶשְׁמְרָה	Root: שָׁמַר | Cohortative 1cs | let me guard! | Cohortative	qal-cohortative usage-cohortative bbh-ch15
+אַל תִּקְרַב (Exo 3:5)	Root: קָרַב | Imperfect 2ms | do not come near! | Prohibition (אַל)	qal-imperfect-b-class usage-prohibition bbh-ch15
+לֹא תַחְמֹד (Exo 20:17)	Root: חָמַד | Imperfect 2ms | you shall not covet | Prohibition (לֹא)	qal-imperfect-a-class usage-prohibition bbh-ch15

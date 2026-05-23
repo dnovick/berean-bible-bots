@@ -1,0 +1,15 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 19 — Vocabulary
+#tags column:3
+βασιλεύς, -έως, ὁ	noun 3rd decl. m — king — 115×	bbg-ch19-vocab bbg-ch19-noun
+γεννάω	verb — I beget, give birth to; produce — 97×	bbg-ch19-vocab bbg-ch19-verb
+ζάω	verb — I live — 140×	bbg-ch19-vocab bbg-ch19-verb
+Ἰουδαία, -ας, ἡ	noun 1st decl. f proper — Judea — 43×	bbg-ch19-vocab bbg-ch19-noun
+Ἰουδαῖος, -αία, -αῖον	adjective / noun — Jewish; Jew — 195×	bbg-ch19-vocab bbg-ch19-adj
+Ἰσραήλ, ὁ	noun (indeclinable) proper — Israel — 68×	bbg-ch19-vocab bbg-ch19-noun
+καρπός, -οῦ, ὁ	noun 2nd decl. m — fruit, crop; result — 67×	bbg-ch19-vocab bbg-ch19-noun
+μείζων, -ον	adjective — greater — 46×	bbg-ch19-vocab bbg-ch19-adj
+ὅλος, -η, -ον	adjective — whole, complete; entirely — 109×	bbg-ch19-vocab bbg-ch19-adj
+προσκυνέω	verb — I worship — 60×	bbg-ch19-vocab bbg-ch19-verb

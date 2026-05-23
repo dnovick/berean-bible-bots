@@ -1,0 +1,40 @@
+הֶעֱמִיד (1 Kgs 7:21)	Root: עָמַד | I-guttural | Perfect 3ms | he set up	BBH Chapter 27 — Hiphil Weak
+וַיַּעֲמֵד (Gen 43:9)	Root: עָמַד | I-guttural | Wayyiqtol 3ms | and he set before	BBH Chapter 27 — Hiphil Weak
+יַעֲמִיד (Psa 107:29)	Root: עָמַד | I-guttural | Imperfect 3ms | he causes to stand still	BBH Chapter 27 — Hiphil Weak
+הַעֲמֵד (Num 27:19)	Root: עָמַד | I-guttural | Imperative 2ms | set him before	BBH Chapter 27 — Hiphil Weak
+מַעֲמִיד (Neh 4:7)	Root: עָמַד | I-guttural | Participle ms | one who stations	BBH Chapter 27 — Hiphil Weak
+הִשְׁמִיעַ (Isa 48:6)	Root: שָׁמַע | III-ח/ע | Perfect 3ms | he caused to hear	BBH Chapter 27 — Hiphil Weak
+וַיַּשְׁמַע (1 Sam 15:14)	Root: שָׁמַע | III-ח/ע | Wayyiqtol 3ms | and he made heard	BBH Chapter 27 — Hiphil Weak
+יַשְׁמִיעַ (Isa 42:2)	Root: שָׁמַע | III-ח/ע | Imperfect 3ms | he will cause to hear	BBH Chapter 27 — Hiphil Weak
+הַשְׁמַע (Deu 4:10)	Root: שָׁמַע | III-ח/ע | Imperative 2ms | make them hear	BBH Chapter 27 — Hiphil Weak
+מַשְׁמִיעַ (Isa 41:26)	Root: שָׁמַע | III-ח/ע | Participle ms | one who announces	BBH Chapter 27 — Hiphil Weak
+הִמְצִיא (Neh 9:15)	Root: מָצָא | III-א | Perfect 3ms | he provided / caused to find	BBH Chapter 27 — Hiphil Weak
+וַיַּמְצֵא (2 Chr 2:13)	Root: מָצָא | III-א | Wayyiqtol 3ms | and he provided	BBH Chapter 27 — Hiphil Weak
+יַמְצִיא (Pro 8:35)	Root: מָצָא | III-א | Imperfect 3ms | he will cause to find	BBH Chapter 27 — Hiphil Weak
+וַיַּקְרֵא (Gen 1:5)	Root: קָרָא | III-א | Wayyiqtol 3ms | and he called	BBH Chapter 27 — Hiphil Weak
+מַקְרִיא (Neh 8:3)	Root: קָרָא | III-א | Participle ms | one who reads aloud	BBH Chapter 27 — Hiphil Weak
+הֶעֱלָה (Gen 8:20)	Root: עָלָה | III-ה | Perfect 3ms | he offered up	BBH Chapter 27 — Hiphil Weak
+וַיַּעַל (Gen 22:2)	Root: עָלָה | III-ה | Wayyiqtol 3ms | and he went up	BBH Chapter 27 — Hiphil Weak
+יַעֲלֶה (Lev 14:20)	Root: עָלָה | III-ה | Imperfect 3ms | he shall offer up	BBH Chapter 27 — Hiphil Weak
+הַרְאֵה (Exo 33:18)	Root: רָאָה | III-ה | Imperative 2ms | show me	BBH Chapter 27 — Hiphil Weak
+מַרְאֶה (Gen 2:9)	Root: רָאָה | III-ה | Participle ms | pleasing to the sight	BBH Chapter 27 — Hiphil Weak
+הִפִּיל (Gen 2:21)	Root: נָפַל | I-נ | Perfect 3ms | he cast / caused to fall	BBH Chapter 27 — Hiphil Weak
+וַיַּפֵּל (Gen 2:21)	Root: נָפַל | I-נ | Wayyiqtol 3ms | and he cast	BBH Chapter 27 — Hiphil Weak
+יַפִּיל (Pro 19:15)	Root: נָפַל | I-נ | Imperfect 3ms | causes to fall	BBH Chapter 27 — Hiphil Weak
+הַגֵּשׁ (Gen 27:25)	Root: נָגַשׁ | I-נ | Imperative 2ms | bring near	BBH Chapter 27 — Hiphil Weak
+מַגִּישׁ (Mal 1:7)	Root: נָגַשׁ | I-נ | Participle ms | one who brings near	BBH Chapter 27 — Hiphil Weak
+הוֹצִיא (Gen 15:7)	Root: יָצָא | I-י | Perfect 3ms | I brought you out	BBH Chapter 27 — Hiphil Weak
+וַיּוֹצֵא (Gen 1:12)	Root: יָצָא | I-י | Wayyiqtol 3ms | and it brought forth	BBH Chapter 27 — Hiphil Weak
+יוֹצִיא (Exo 6:7)	Root: יָצָא | I-י | Imperfect 3ms | he will bring out	BBH Chapter 27 — Hiphil Weak
+הוֹרִיד (Gen 39:1)	Root: יָרַד | I-י | Perfect 3ms | he brought down	BBH Chapter 27 — Hiphil Weak
+מוֹצִיא (Deu 8:14)	Root: יָצָא | I-י | Participle ms | the one who brings out	BBH Chapter 27 — Hiphil Weak
+הֵקִים (Gen 6:18)	Root: קוּם | Biconsonantal | Perfect 3ms | he established	BBH Chapter 27 — Hiphil Weak
+וַיָּקֶם (Gen 23:20)	Root: קוּם | Biconsonantal | Wayyiqtol 3ms | and it was confirmed	BBH Chapter 27 — Hiphil Weak
+יָקִים (Deu 18:15)	Root: קוּם | Biconsonantal | Imperfect 3ms | he will raise up	BBH Chapter 27 — Hiphil Weak
+הָקֵם (Exo 40:2)	Root: קוּם | Biconsonantal | Imperative 2ms | set up	BBH Chapter 27 — Hiphil Weak
+מֵקִים (1 Sam 2:8)	Root: קוּם | Biconsonantal | Participle ms | one who raises up	BBH Chapter 27 — Hiphil Weak
+הֵסֵב (1 Kgs 21:4)	Root: סָבַב | Geminate | Perfect 3ms | he turned his face	BBH Chapter 27 — Hiphil Weak
+וַיָּסֶב (Josh 6:14)	Root: סָבַב | Geminate | Wayyiqtol 3ms | and they marched around	BBH Chapter 27 — Hiphil Weak
+יָסֵב (Isa 44:20)	Root: סָבַב | Geminate | Imperfect 3ms | it leads astray	BBH Chapter 27 — Hiphil Weak
+הָסֵב (2 Sam 2:22)	Root: סָבַב | Geminate | Imperative 2ms | turn aside!	BBH Chapter 27 — Hiphil Weak
+מֵסֵב (expected form)	Root: סָבַב | Geminate | Participle ms | one who turns/surrounds	BBH Chapter 27 — Hiphil Weak

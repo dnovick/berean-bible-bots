@@ -1,0 +1,13 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 24 — Vocabulary
+#tags column:3
+ἄγω	verb — I lead, bring, arrest — 67×	bbg-ch24-vocab bbg-ch24-verb
+αἷμα, -ατος, τό	noun 3rd decl. n — blood — 97×	bbg-ch24-vocab bbg-ch24-noun
+ἕκαστος, -η, -ον	adjective — each, every — 82×	bbg-ch24-vocab bbg-ch24-adj
+ἱμάτιον, -ου, τό	noun 2nd decl. n — garment, cloak — 60×	bbg-ch24-vocab bbg-ch24-noun
+ὄρος, ὄρους, τό	noun 3rd decl. n — mountain, hill — 63×	bbg-ch24-vocab bbg-ch24-noun
+ὑπάγω	verb — I depart — 79×	bbg-ch24-vocab bbg-ch24-verb
+φοβέομαι	verb — I fear — 95×	bbg-ch24-vocab bbg-ch24-verb
+χαίρω	verb — I rejoice — 74×	bbg-ch24-vocab bbg-ch24-verb

@@ -1,0 +1,20 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 16 — Vocabulary
+#tags column:3
+גָּאַל	verb — (Q) to redeem, act as kinsman (perform the responsibilities of the next-of-kin), avenge — 104×	bbh-ch16-vocab bbh-ch16-verb
+חָטָא	verb — (Q) to miss (a goal or mark), sin, commit a sin; (Pi) make a sin offering; (Hi) cause to sin — 240×	bbh-ch16-vocab bbh-ch16-verb
+יָסַף	verb — (Q) to add, continue (to do something again); (Hi) add, increase, do again and again — 213×	bbh-ch16-vocab bbh-ch16-verb
+יָרַשׁ	verb — (Q) to inherit, take possession of, dispossess, impoverish; (Hi) cause to possess or inherit, dispossess — 232×	bbh-ch16-vocab bbh-ch16-verb
+כָּפַר	verb — (Pi) to cover (over), atone (for), make atonement — 102×	bbh-ch16-vocab bbh-ch16-verb
+נָטָה	verb — (Q) to spread out, stretch out, extend, pitch (a tent), turn, bend; (Hi) turn, incline, stretch out, spread out — 216×	bbh-ch16-vocab bbh-ch16-verb
+עָזַב	verb — (Q) to leave, leave behind, forsake, abandon, set free — 214×	bbh-ch16-vocab bbh-ch16-verb
+קָרַב	verb — (Q) to approach, draw near, come near; (Hi) bring (near), present, offer a sacrifice or offering — 280×	bbh-ch16-vocab bbh-ch16-verb
+רָבָה	verb — (Q) to be(come) numerous, great, increase; (Hi) make many, make great, multiply, increase — 229×	bbh-ch16-vocab bbh-ch16-verb
+שָׁתָה	verb — (Q) to drink — 217×	bbh-ch16-vocab bbh-ch16-verb
+כַּף	noun (fs) — hand, palm, sole of the foot — 195×	bbh-ch16-vocab bbh-ch16-noun
+פֶּה	noun (ms) — mouth, opening; (ms cstr) פִּי — 498×	bbh-ch16-vocab bbh-ch16-noun
+רֵעַ	noun (ms) — friend, companion, neighbor — 188×	bbh-ch16-vocab bbh-ch16-noun
+נֶגֶד	preposition — opposite, in front of — 151×	bbh-ch16-vocab bbh-ch16-other
+שָׁם	adverb — there, then, at that time — 835×	bbh-ch16-vocab bbh-ch16-other
