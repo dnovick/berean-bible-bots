@@ -347,13 +347,15 @@ def build_chapter(
         )
         (dst_dir / "index.md").write_text(content, encoding="utf-8")
 
-    # Copy paradigm / other .md files (not README, not deck files)
+    # Copy paradigm / other .md files (not README)
     for md in src_dir.glob("*.md"):
         if md.name == "README.md":
             continue
-        if "-deck" in md.name:
-            continue
         shutil.copy(md, dst_dir / md.name)
+
+    # Copy deck text files (Anki .txt and Flashcards Deluxe -fd.txt)
+    for txt in src_dir.glob("*.txt"):
+        shutil.copy(txt, dst_dir / txt.name)
 
     # Copy exercises
     exercises_src = src_dir / "exercises"
