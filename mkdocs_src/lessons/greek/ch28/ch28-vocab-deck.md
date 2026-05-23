@@ -1,4 +1,4 @@
-# Chapter 28 — Vocabulary Flashcard Deck
+# Chapter 28 — Vocabulary Deck
 
 *8 words from BBG Chapter 28. Frequency counts are NT-wide occurrences.*
 *Import `ch28-vocab-deck.txt` directly into Anki (File → Import).*

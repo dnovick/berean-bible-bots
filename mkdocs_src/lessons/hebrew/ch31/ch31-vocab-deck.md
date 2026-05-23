@@ -1,4 +1,4 @@
-# Chapter 31 — Vocabulary Flashcard Deck
+# Chapter 31 — Vocabulary Deck
 
 *12 words from BBH Chapter 31. Frequency counts are OT-wide occurrences.*
 *Import `ch31-vocab-deck.txt` directly into Anki (File → Import).*

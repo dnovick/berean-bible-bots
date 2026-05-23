@@ -1,4 +1,4 @@
-# Chapter 33 — Vocabulary Flashcard Deck
+# Chapter 33 — Vocabulary Deck
 
 *3 words from BBG Chapter 33. Frequency counts are NT-wide occurrences.*
 *Import `ch33-vocab-deck.txt` directly into Anki (File → Import).*

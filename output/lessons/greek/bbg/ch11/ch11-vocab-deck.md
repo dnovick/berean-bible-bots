@@ -1,4 +1,4 @@
-# Chapter 11 — Vocabulary Flashcard Deck
+# Chapter 11 — Vocabulary Deck
 
 *21 words from BBG Chapter 11. Frequency counts are NT-wide occurrences.*
 *Import `ch11-vocab-deck.txt` directly into Anki (File → Import).*

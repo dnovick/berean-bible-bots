@@ -1,4 +1,4 @@
-# Chapter 6 — Vocabulary Flashcard Deck
+# Chapter 6 — Vocabulary Deck
 
 *13 words from BBA Chapter 6 (Nouns: Construct State).*
 *Import `ch6-vocab-deck.txt` directly into Anki (File → Import).*

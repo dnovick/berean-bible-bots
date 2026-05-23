@@ -1,4 +1,4 @@
-# Chapter 3 — Vocabulary Flashcard Deck
+# Chapter 3 — Vocabulary Deck
 
 *20 words from BBH Chapter 3. Frequency counts are OT-wide occurrences.*
 *Import `ch3-vocab-deck.txt` directly into Anki (File → Import).*

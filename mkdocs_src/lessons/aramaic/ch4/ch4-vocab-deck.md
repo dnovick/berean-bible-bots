@@ -1,4 +1,4 @@
-# Chapter 4 — Vocabulary Flashcard Deck
+# Chapter 4 — Vocabulary Deck
 
 *13 words from BBA Chapter 4 (Nouns: Absolute State).*
 *Import `ch4-vocab-deck.txt` directly into Anki (File → Import).*

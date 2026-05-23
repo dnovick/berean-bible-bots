@@ -1,4 +1,4 @@
-# Chapter 12 — Vocabulary Flashcard Deck
+# Chapter 12 — Vocabulary Deck
 
 *30 verbal roots from BBA Chapter 12 (Introduction to Aramaic Verbs).*
 *Import `ch12-vocab-deck.txt` directly into Anki (File → Import).*

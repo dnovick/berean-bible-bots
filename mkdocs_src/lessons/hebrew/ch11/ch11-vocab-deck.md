@@ -1,4 +1,4 @@
-# Chapter 11 — Vocabulary Flashcard Deck
+# Chapter 11 — Vocabulary Deck
 
 *20 words from BBH Chapter 11. Frequency counts are OT-wide occurrences.*
 *Import `ch11-vocab-deck.txt` directly into Anki (File → Import).*
