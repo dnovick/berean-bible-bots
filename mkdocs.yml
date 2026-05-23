@@ -38,6 +38,7 @@ extra_css:
 extra_javascript:
   - javascripts/home-link.js
   - javascripts/nav-toggle.js
+  - javascripts/sortable-tables.js
 
 extra_files:
   - "*.pdf"
