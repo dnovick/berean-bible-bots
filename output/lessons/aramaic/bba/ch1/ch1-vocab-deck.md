@@ -1,4 +1,4 @@
-# Chapter 1 — Vocabulary Flashcard Deck
+# Chapter 1 — Vocabulary Deck
 
 *53 words from BBA Chapters 1–3 (phonological system). Covers common nouns, proper nouns, and gentilic nouns introduced across the phonological chapters.*
 *Import `ch1-vocab-deck.txt` directly into Anki (File → Import).*

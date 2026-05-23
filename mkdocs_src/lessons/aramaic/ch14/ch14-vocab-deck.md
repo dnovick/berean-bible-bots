@@ -1,4 +1,4 @@
-# Chapter 14 — Vocabulary Flashcard Deck
+# Chapter 14 — Vocabulary Deck
 
 *10 verbal roots from BBA Chapter 14 (Peal Imperfect).*
 *Import `ch14-vocab-deck.txt` directly into Anki (File → Import).*

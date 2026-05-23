@@ -1,4 +1,4 @@
-# Chapter 8 — Vocabulary Flashcard Deck
+# Chapter 8 — Vocabulary Deck
 
 *20 words from BBH Chapter 8. Frequency counts are OT-wide occurrences.*
 *Import `ch8-vocab-deck.txt` directly into Anki (File → Import).*

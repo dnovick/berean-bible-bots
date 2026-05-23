@@ -1,4 +1,4 @@
-# Chapter 2 — Vocabulary Flashcard Deck
+# Chapter 2 — Vocabulary Deck
 
 *21 words from BBA Chapter 2 (Vowels).*
 *Import `ch2-vocab-deck.txt` directly into Anki (File → Import).*

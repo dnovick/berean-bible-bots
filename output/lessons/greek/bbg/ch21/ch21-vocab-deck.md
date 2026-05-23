@@ -1,4 +1,4 @@
-# Chapter 21 — Vocabulary Flashcard Deck
+# Chapter 21 — Vocabulary Deck
 
 *9 words from BBG Chapter 21. Frequency counts are NT-wide occurrences.*
 *Import `ch21-vocab-deck.txt` directly into Anki (File → Import).*

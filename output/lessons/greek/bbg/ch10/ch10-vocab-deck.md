@@ -1,4 +1,4 @@
-# Chapter 10 — Vocabulary Flashcard Deck
+# Chapter 10 — Vocabulary Deck
 
 *13 words from BBG Chapter 10. Frequency counts are NT-wide occurrences.*
 *Import `ch10-vocab-deck.txt` directly into Anki (File → Import).*

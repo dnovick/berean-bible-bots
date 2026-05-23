@@ -1,4 +1,4 @@
-# Chapter 24 — Vocabulary Flashcard Deck
+# Chapter 24 — Vocabulary Deck
 
 *8 words from BBG Chapter 24. Frequency counts are NT-wide occurrences.*
 *Import `ch24-vocab-deck.txt` directly into Anki (File → Import).*

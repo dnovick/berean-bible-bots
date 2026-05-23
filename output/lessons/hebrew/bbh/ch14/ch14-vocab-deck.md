@@ -1,4 +1,4 @@
-# Chapter 14 — Vocabulary Flashcard Deck
+# Chapter 14 — Vocabulary Deck
 
 *18 words from BBH Chapter 14. Frequency counts are OT-wide occurrences.*
 *Import `ch14-vocab-deck.txt` directly into Anki (File → Import).*

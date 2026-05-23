@@ -1,4 +1,4 @@
-# Chapter 20 — Vocabulary Flashcard Deck
+# Chapter 20 — Vocabulary Deck
 
 *16 words from BBG Chapter 20. Frequency counts are NT-wide occurrences.*
 *Import `ch20-vocab-deck.txt` directly into Anki (File → Import).*

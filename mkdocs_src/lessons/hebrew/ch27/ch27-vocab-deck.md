@@ -1,4 +1,4 @@
-# Chapter 27 — Vocabulary Flashcard Deck
+# Chapter 27 — Vocabulary Deck
 
 *12 words from BBH Chapter 27. Frequency counts are OT-wide occurrences.*
 *Import `ch27-vocab-deck.txt` directly into Anki (File → Import).*

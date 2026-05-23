@@ -1,4 +1,4 @@
-# Chapter 17 — Vocabulary Flashcard Deck
+# Chapter 17 — Vocabulary Deck
 
 *8 verbal roots from BBA Chapter 17 (Peal Participle).*
 *Import `ch17-vocab-deck.txt` directly into Anki (File → Import).*

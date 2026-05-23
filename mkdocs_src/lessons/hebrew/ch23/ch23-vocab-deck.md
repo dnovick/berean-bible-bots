@@ -1,4 +1,4 @@
-# Chapter 23 — Vocabulary Flashcard Deck
+# Chapter 23 — Vocabulary Deck
 
 *13 words from BBH Chapter 23. Frequency counts are OT-wide occurrences.*
 *Import `ch23-vocab-deck.txt` directly into Anki (File → Import).*

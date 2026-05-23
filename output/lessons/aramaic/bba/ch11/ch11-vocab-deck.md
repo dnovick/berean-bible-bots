@@ -1,4 +1,4 @@
-# Chapter 11 — Vocabulary Flashcard Deck
+# Chapter 11 — Vocabulary Deck
 
 *13 words from BBA Chapter 11 (Adverbs and Particles): adverbs, particles, and interjections.*
 *Import `ch11-vocab-deck.txt` directly into Anki (File → Import).*

@@ -1,4 +1,4 @@
-# Chapter 7 — Vocabulary Flashcard Deck
+# Chapter 7 — Vocabulary Deck
 
 *15 words from BBA Chapter 7 (Conjunctions and Prepositions).*
 *Import `ch7-vocab-deck.txt` directly into Anki (File → Import).*

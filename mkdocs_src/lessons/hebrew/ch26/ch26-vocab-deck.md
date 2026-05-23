@@ -1,4 +1,4 @@
-# Chapter 26 — Vocabulary Flashcard Deck
+# Chapter 26 — Vocabulary Deck
 
 *15 words from BBH Chapter 26. Frequency counts are OT-wide occurrences.*
 *Import `ch26-vocab-deck.txt` directly into Anki (File → Import).*

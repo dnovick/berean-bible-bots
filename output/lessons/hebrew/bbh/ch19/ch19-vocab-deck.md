@@ -1,4 +1,4 @@
-# Chapter 19 — Vocabulary Flashcard Deck
+# Chapter 19 — Vocabulary Deck
 
 *14 words from BBH Chapter 19. Frequency counts are OT-wide occurrences.*
 *Import `ch19-vocab-deck.txt` directly into Anki (File → Import).*

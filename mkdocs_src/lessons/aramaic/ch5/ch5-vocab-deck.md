@@ -1,4 +1,4 @@
-# Chapter 5 — Vocabulary Flashcard Deck
+# Chapter 5 — Vocabulary Deck
 
 *13 words from BBA Chapter 5 (Nouns: Determined State).*
 *Import `ch5-vocab-deck.txt` directly into Anki (File → Import).*

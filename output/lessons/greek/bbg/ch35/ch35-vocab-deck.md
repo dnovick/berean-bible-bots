@@ -1,4 +1,4 @@
-# Chapter 35 — Vocabulary Flashcard Deck
+# Chapter 35 — Vocabulary Deck
 
 *15 words from BBG Chapter 35. Frequency counts are NT-wide occurrences.*
 *Import `ch35-vocab-deck.txt` directly into Anki (File → Import).*

@@ -1,4 +1,4 @@
-# Chapter 18 — Vocabulary Flashcard Deck
+# Chapter 18 — Vocabulary Deck
 
 *10 words from BBG Chapter 18. Frequency counts are NT-wide occurrences.*
 *Import `ch18-vocab-deck.txt` directly into Anki (File → Import).*

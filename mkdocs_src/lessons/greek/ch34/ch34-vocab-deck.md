@@ -1,4 +1,4 @@
-# Chapter 34 — Vocabulary Flashcard Deck
+# Chapter 34 — Vocabulary Deck
 
 *7 words from BBG Chapter 34. Frequency counts are NT-wide occurrences.*
 *Import `ch34-vocab-deck.txt` directly into Anki (File → Import).*
