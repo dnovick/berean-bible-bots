@@ -1,13 +1,20 @@
 // Sortable tables for Berean Bible Bots reports.
 // Clicking a column header sorts by that column; clicking again reverses.
-// Uses Intl.Collator with script-detected locales so Hebrew/Aramaic and
-// Greek sort in their own alphabetical order, not Unicode code-point order.
-// Bible-book columns are detected automatically and sort in KJV canonical order.
+//
+// Exclusions (never sorted):
+//   - Any page whose URL contains "/lessons/"  (paradigm & conjugation tables)
+//   - Any <table data-no-sort> in the HTML
+//   - 2-column key-value tables where the second header is "Value" or "Description"
+//
+// Sort types (auto-detected per column):
+//   - Book columns  → KJV canonical order (Genesis … Revelation)
+//   - Numeric       → numeric ascending/descending
+//   - Text          → Intl.Collator with script-detected locale
+//                     (Hebrew/Aramaic → 'he', Greek → 'el', else 'en')
 (function () {
     'use strict';
 
-    // KJV canonical order — every abbreviation and full name used in reports.
-    // The key is lowercased for case-insensitive lookup.
+    // ── KJV canonical order lookup ────────────────────────────────────────────
     const BOOK_ORDER = (function () {
         const books = [
             // OT
@@ -81,51 +88,55 @@
         ];
         const map = {};
         books.forEach(function (aliases, idx) {
-            aliases.forEach(function (name) {
-                map[name.toLowerCase()] = idx;
-            });
+            aliases.forEach(function (name) { map[name.toLowerCase()] = idx; });
         });
         return map;
     }());
 
-    // Extract a bare book name from a cell value like "Gen 1:1" or "Isa 28:10, 13".
-    // Returns the first whitespace-delimited token, lowercased.
+    // Extract leading book-name token from values like "Isa 28:10, 13" or "1 Sam 7:17".
     function bookKey(text) {
-        // Handle "1 Sam", "2 Kgs" etc. — leading digit + space + word
         const m = text.trim().match(/^(\d\s+\S+|\S+)/);
         return m ? m[0].toLowerCase() : text.toLowerCase();
     }
 
     function isBookColumn(samples) {
         if (!samples.length) return false;
-        const hits = samples.filter(v => BOOK_ORDER[bookKey(v)] !== undefined);
+        const hits = samples.filter(function (v) {
+            return BOOK_ORDER[bookKey(v)] !== undefined;
+        });
         return hits.length / samples.length >= 0.6;
     }
 
-    // Return the canonical order index for a cell value, or Infinity for unknowns.
     function bookRank(text) {
-        const key = bookKey(text);
-        const rank = BOOK_ORDER[key];
+        const rank = BOOK_ORDER[bookKey(text)];
         return rank !== undefined ? rank : Infinity;
     }
 
-    // Return the best locale for sorting based on the Unicode scripts present.
+    // ── Locale detection ──────────────────────────────────────────────────────
     function detectLocale(sample) {
-        if (/[֐-׿יִ-ﭏ]/.test(sample)) return 'he';
+        if (/[א-תיִ-פֿ]/.test(sample)) return 'he';
         if (/[Ͱ-Ͽἀ-῿]/.test(sample)) return 'el';
         return 'en';
     }
 
-    function cellText(cell) {
-        return (cell ? cell.textContent.trim() : '');
-    }
+    // ── Helpers ───────────────────────────────────────────────────────────────
+    function cellText(cell) { return cell ? cell.textContent.trim() : ''; }
 
     function isNumericSample(values) {
         return values.length > 0 && values.every(function (v) {
-            return v === '' || !isNaN(v.replace(/[,%]/g, ''));
+            return v === '' || !isNaN(v.replace(/[,% ]/g, ''));
         });
     }
 
+    // A 2-column table whose second header is "Value" or "Description" is a
+    // key-value glossary — row order is meaningful, don't sort it.
+    function isKeyValueTable(headers) {
+        if (headers.length !== 2) return false;
+        const h1 = headers[1].textContent.trim().toLowerCase();
+        return h1 === 'value' || h1 === 'description';
+    }
+
+    // ── Core sort ─────────────────────────────────────────────────────────────
     function sortTable(table, colIdx, ascending) {
         const tbody = table.querySelector('tbody');
         if (!tbody) return;
@@ -137,7 +148,6 @@
             .slice(0, 10);
 
         const headerText = cellText(table.querySelectorAll('thead th')[colIdx]);
-        const allText = headerText + samples.join('');
 
         let compare;
         if (isBookColumn(samples)) {
@@ -148,12 +158,14 @@
             };
         } else if (isNumericSample(samples)) {
             compare = function (a, b) {
-                const na = parseFloat(cellText(a.cells[colIdx]).replace(/[,%]/g, '')) || 0;
-                const nb = parseFloat(cellText(b.cells[colIdx]).replace(/[,%]/g, '')) || 0;
+                const na = parseFloat(cellText(a.cells[colIdx]).replace(/[,% ]/g, '')) || 0;
+                const nb = parseFloat(cellText(b.cells[colIdx]).replace(/[,% ]/g, '')) || 0;
                 return ascending ? na - nb : nb - na;
             };
         } else {
-            const locale = detectLocale(allText);
+            // Detect locale from header + first few data cells so Hebrew/Greek
+            // data under an English column header still sorts correctly.
+            const locale = detectLocale(headerText + samples.join(''));
             const collator = new Intl.Collator(locale, { sensitivity: 'base', numeric: false });
             compare = function (a, b) {
                 const va = cellText(a.cells[colIdx]);
@@ -166,10 +178,18 @@
         rows.forEach(function (r) { tbody.appendChild(r); });
     }
 
+    // ── Initialise one table ──────────────────────────────────────────────────
     function initSortableTable(table) {
+        // Manual opt-out via attribute
+        if (table.hasAttribute('data-no-sort')) return;
+
         const headers = Array.from(table.querySelectorAll('thead th'));
         if (!headers.length) return;
-        if (table.dataset.sortable) return;
+        if (table.dataset.sortable) return; // guard against double-init (SPA)
+
+        // Skip key-value glossary tables
+        if (isKeyValueTable(headers)) return;
+
         table.dataset.sortable = '1';
 
         headers.forEach(function (th, idx) {
@@ -177,7 +197,7 @@
             const ind = document.createElement('span');
             ind.className = 'sort-ind';
             ind.setAttribute('aria-hidden', 'true');
-            ind.textContent = '⇅'; // ⇅
+            ind.textContent = '⇅';
             th.appendChild(ind);
 
             th.addEventListener('click', function () {
@@ -193,19 +213,23 @@
                 th.dataset.sortDir = ascending ? 'asc' : 'desc';
                 th.classList.add(ascending ? 'sort-asc' : 'sort-desc');
                 const s = th.querySelector('.sort-ind');
-                if (s) s.textContent = ascending ? '▲' : '▼'; // ▲ ▼
+                if (s) s.textContent = ascending ? '▲' : '▼';
 
                 sortTable(table, idx, ascending);
             });
         });
     }
 
+    // ── Entry point ───────────────────────────────────────────────────────────
     function initAll() {
+        // Never sort tables on lesson pages — conjugation/paradigm row order
+        // is grammatically meaningful and must not be rearranged.
+        if (window.location.pathname.includes('/lessons/')) return;
+
         document.querySelectorAll('.md-typeset table').forEach(initSortableTable);
     }
 
-    // MkDocs Material's instant navigation does not fire DOMContentLoaded on
-    // subsequent pages; subscribe to its document$ observable when available.
+    // MkDocs Material instant navigation fires document$ instead of DOMContentLoaded.
     if (typeof document$ !== 'undefined') {
         document$.subscribe(initAll);
     } else {
