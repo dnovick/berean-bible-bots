@@ -2,11 +2,114 @@
 // Clicking a column header sorts by that column; clicking again reverses.
 // Uses Intl.Collator with script-detected locales so Hebrew/Aramaic and
 // Greek sort in their own alphabetical order, not Unicode code-point order.
+// Bible-book columns are detected automatically and sort in KJV canonical order.
 (function () {
     'use strict';
 
-    // Return the best locale for sorting based on the Unicode scripts present
-    // in a sample string.  Hebrew block covers Aramaic (same script).
+    // KJV canonical order — every abbreviation and full name used in reports.
+    // The key is lowercased for case-insensitive lookup.
+    const BOOK_ORDER = (function () {
+        const books = [
+            // OT
+            ['Gen', 'Genesis'],
+            ['Exo', 'Exod', 'Exodus'],
+            ['Lev', 'Leviticus'],
+            ['Num', 'Numbers'],
+            ['Deu', 'Deut', 'Deuteronomy'],
+            ['Jos', 'Josh', 'Joshua'],
+            ['Jdg', 'Judg', 'Judges'],
+            ['Rut', 'Ruth'],
+            ['1Sa', '1 Sam', '1 Samuel'],
+            ['2Sa', '2 Sam', '2 Samuel'],
+            ['1Ki', '1 Kgs', '1 Kings'],
+            ['2Ki', '2 Kgs', '2 Kings'],
+            ['1Ch', '1 Chr', '1 Chronicles'],
+            ['2Ch', '2 Chr', '2 Chronicles'],
+            ['Ezr', 'Ezra'],
+            ['Neh', 'Nehemiah'],
+            ['Est', 'Esth', 'Esther'],
+            ['Job'],
+            ['Psa', 'Ps', 'Psalms', 'Psalm'],
+            ['Pro', 'Prov', 'Proverbs'],
+            ['Ecc', 'Eccl', 'Ecclesiastes'],
+            ['Sol', 'Song', 'Song of Solomon', 'Song of Songs'],
+            ['Isa', 'Isaiah'],
+            ['Jer', 'Jeremiah'],
+            ['Lam', 'Lamentations'],
+            ['Ezk', 'Ezek', 'Ezekiel'],
+            ['Dan', 'Daniel'],
+            ['Hos', 'Hosea'],
+            ['Joe', 'Joel'],
+            ['Amo', 'Amos'],
+            ['Oba', 'Obad', 'Obadiah'],
+            ['Jon', 'Jonah'],
+            ['Mic', 'Micah'],
+            ['Nah', 'Nahum'],
+            ['Hab', 'Habakkuk'],
+            ['Zep', 'Zeph', 'Zephaniah'],
+            ['Hag', 'Haggai'],
+            ['Zec', 'Zech', 'Zechariah'],
+            ['Mal', 'Malachi'],
+            // NT
+            ['Mat', 'Matt', 'Matthew'],
+            ['Mrk', 'Mark'],
+            ['Luk', 'Luke'],
+            ['Jhn', 'John'],
+            ['Act', 'Acts'],
+            ['Rom', 'Romans'],
+            ['1Co', '1 Cor', '1 Corinthians'],
+            ['2Co', '2 Cor', '2 Corinthians'],
+            ['Gal', 'Galatians'],
+            ['Eph', 'Ephesians'],
+            ['Php', 'Phil', 'Philippians'],
+            ['Col', 'Colossians'],
+            ['1Th', '1 Thess', '1 Thessalonians'],
+            ['2Th', '2 Thess', '2 Thessalonians'],
+            ['1Ti', '1 Tim', '1 Timothy'],
+            ['2Ti', '2 Tim', '2 Timothy'],
+            ['Tit', 'Titus'],
+            ['Phm', 'Philemon'],
+            ['Heb', 'Hebrews'],
+            ['Jas', 'James'],
+            ['1Pe', '1 Pet', '1 Peter'],
+            ['2Pe', '2 Pet', '2 Peter'],
+            ['1Jn', '1 John'],
+            ['2Jn', '2 John'],
+            ['3Jn', '3 John'],
+            ['Jud', 'Jude'],
+            ['Rev', 'Revelation'],
+        ];
+        const map = {};
+        books.forEach(function (aliases, idx) {
+            aliases.forEach(function (name) {
+                map[name.toLowerCase()] = idx;
+            });
+        });
+        return map;
+    }());
+
+    // Extract a bare book name from a cell value like "Gen 1:1" or "Isa 28:10, 13".
+    // Returns the first whitespace-delimited token, lowercased.
+    function bookKey(text) {
+        // Handle "1 Sam", "2 Kgs" etc. — leading digit + space + word
+        const m = text.trim().match(/^(\d\s+\S+|\S+)/);
+        return m ? m[0].toLowerCase() : text.toLowerCase();
+    }
+
+    function isBookColumn(samples) {
+        if (!samples.length) return false;
+        const hits = samples.filter(v => BOOK_ORDER[bookKey(v)] !== undefined);
+        return hits.length / samples.length >= 0.6;
+    }
+
+    // Return the canonical order index for a cell value, or Infinity for unknowns.
+    function bookRank(text) {
+        const key = bookKey(text);
+        const rank = BOOK_ORDER[key];
+        return rank !== undefined ? rank : Infinity;
+    }
+
+    // Return the best locale for sorting based on the Unicode scripts present.
     function detectLocale(sample) {
         if (/[֐-׿יִ-ﭏ]/.test(sample)) return 'he';
         if (/[Ͱ-Ͽἀ-῿]/.test(sample)) return 'el';
@@ -18,7 +121,9 @@
     }
 
     function isNumericSample(values) {
-        return values.length > 0 && values.every(v => v === '' || !isNaN(v.replace(/[,%]/g, '')));
+        return values.length > 0 && values.every(function (v) {
+            return v === '' || !isNaN(v.replace(/[,%]/g, ''));
+        });
     }
 
     function sortTable(table, colIdx, ascending) {
@@ -26,39 +131,48 @@
         if (!tbody) return;
         const rows = Array.from(tbody.querySelectorAll('tr'));
 
-        // Sample up to 10 non-empty values to characterise the column
         const samples = rows
-            .map(r => cellText(r.cells[colIdx]))
+            .map(function (r) { return cellText(r.cells[colIdx]); })
             .filter(Boolean)
             .slice(0, 10);
 
-        const numeric = isNumericSample(samples);
         const headerText = cellText(table.querySelectorAll('thead th')[colIdx]);
-        const locale = detectLocale(headerText + samples.join(''));
-        const collator = new Intl.Collator(locale, { sensitivity: 'base', numeric: false });
+        const allText = headerText + samples.join('');
 
-        rows.sort((a, b) => {
-            const va = cellText(a.cells[colIdx]);
-            const vb = cellText(b.cells[colIdx]);
-            if (numeric) {
-                const na = parseFloat(va.replace(/[,%]/g, '')) || 0;
-                const nb = parseFloat(vb.replace(/[,%]/g, '')) || 0;
+        let compare;
+        if (isBookColumn(samples)) {
+            compare = function (a, b) {
+                const ra = bookRank(cellText(a.cells[colIdx]));
+                const rb = bookRank(cellText(b.cells[colIdx]));
+                return ascending ? ra - rb : rb - ra;
+            };
+        } else if (isNumericSample(samples)) {
+            compare = function (a, b) {
+                const na = parseFloat(cellText(a.cells[colIdx]).replace(/[,%]/g, '')) || 0;
+                const nb = parseFloat(cellText(b.cells[colIdx]).replace(/[,%]/g, '')) || 0;
                 return ascending ? na - nb : nb - na;
-            }
-            return ascending ? collator.compare(va, vb) : collator.compare(vb, va);
-        });
+            };
+        } else {
+            const locale = detectLocale(allText);
+            const collator = new Intl.Collator(locale, { sensitivity: 'base', numeric: false });
+            compare = function (a, b) {
+                const va = cellText(a.cells[colIdx]);
+                const vb = cellText(b.cells[colIdx]);
+                return ascending ? collator.compare(va, vb) : collator.compare(vb, va);
+            };
+        }
 
-        rows.forEach(r => tbody.appendChild(r));
+        rows.sort(compare);
+        rows.forEach(function (r) { tbody.appendChild(r); });
     }
 
     function initSortableTable(table) {
         const headers = Array.from(table.querySelectorAll('thead th'));
         if (!headers.length) return;
-        // Guard against double-initialisation on SPA navigations
         if (table.dataset.sortable) return;
         table.dataset.sortable = '1';
 
-        headers.forEach((th, idx) => {
+        headers.forEach(function (th, idx) {
             th.classList.add('sortable-col');
             const ind = document.createElement('span');
             ind.className = 'sort-ind';
@@ -67,11 +181,9 @@
             th.appendChild(ind);
 
             th.addEventListener('click', function () {
-                const currentDir = th.dataset.sortDir || '';
-                const ascending = currentDir !== 'asc';
+                const ascending = th.dataset.sortDir !== 'asc';
 
-                // Reset every header in this table
-                headers.forEach((h, i) => {
+                headers.forEach(function (h) {
                     h.dataset.sortDir = '';
                     h.classList.remove('sort-asc', 'sort-desc');
                     const s = h.querySelector('.sort-ind');
