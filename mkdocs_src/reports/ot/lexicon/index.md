@@ -13,3 +13,4 @@ Detailed studies of individual Hebrew words — distribution, meaning, and cross
 | [בְּרִית (H1285) — Semantic Profile](h1285-semantic-profile.md) | *berith* — covenant | Distribution, collocates, semantic range |
 | [חֶ֫סֶד (H2617) — Cross-Testament Trajectory](trajectory-h2617.md) | *hesed* — steadfast love, kindness | How the concept travels from OT to LXX to NT |
 | [Hebrew vs. Aramaic Distribution in the OT](ot-hebrew-aramaic-by-book.md) | — | Which OT books contain Aramaic, and how much |
+| [שָׁם...שָׁם — Distributive Repetition Idiom](sham-distributive/sham-distributive-report.md) | *sham* — "there" (H8033) | Isaiah 28:10/13: why שָׁם is repeated and why translators say "here a little, there a little" |
