@@ -9,6 +9,26 @@
   --md-accent-fg-color--transparent: #c9a94a1a;
 }
 
+/* Sortable table headers */
+.md-typeset table th.sortable-col {
+  cursor: pointer;
+  user-select: none;
+  white-space: nowrap;
+}
+.md-typeset table th.sortable-col:hover {
+  background: var(--md-accent-fg-color--transparent);
+}
+.md-typeset table th .sort-ind {
+  margin-left: .35em;
+  font-size: .8em;
+  opacity: .5;
+}
+.md-typeset table th.sort-asc .sort-ind,
+.md-typeset table th.sort-desc .sort-ind {
+  opacity: 1;
+  color: var(--md-accent-fg-color);
+}
+
 /* Keep Hebrew/Aramaic RTL text rendering cleanly */
 .md-content table td,
 .md-content table th {
