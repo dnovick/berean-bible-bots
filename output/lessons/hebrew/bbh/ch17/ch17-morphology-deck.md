@@ -1,4 +1,4 @@
-# Ch17 Morphology Deck — Wayyiqtol and Weqatal
+# Chapter 17 — Wayyiqtol and Weqatal Morphology Deck
 
 *BBH Chapter 17 · 32 cards*
 

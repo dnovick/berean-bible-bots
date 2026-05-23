@@ -1,0 +1,24 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 7 — Vocabulary
+#tags column:3
+קֹ֫דֶשׁ	noun ms — holiness, something that is holy — 470×	bbh-ch7-vocab bbh-ch7-noun
+רָעָה	noun fs — evil, wickedness, calamity, disaster — 354×	bbh-ch7-vocab bbh-ch7-noun
+גָּדוֹל	adjective — great, big, large — 527×	bbh-ch7-vocab bbh-ch7-adj
+זָקֵן	adjective — old; (as noun) elder, old man — 180×	bbh-ch7-vocab bbh-ch7-adj
+זָר	adjective — foreign, strange — 70×	bbh-ch7-vocab bbh-ch7-adj
+חַי	adjective — living, alive; pl חַיִּים — 254×	bbh-ch7-vocab bbh-ch7-adj
+חָכָם	adjective — wise, skillful, experienced — 138×	bbh-ch7-vocab bbh-ch7-adj
+טוֹב	adjective — good, pleasant — 530×	bbh-ch7-vocab bbh-ch7-adj
+יָשָׁר	adjective — upright, just — 119×	bbh-ch7-vocab bbh-ch7-adj
+מְעַט	adjective — little, few — 101×	bbh-ch7-vocab bbh-ch7-adj
+צַדִּיק	adjective — righteous, just, innocent — 206×	bbh-ch7-vocab bbh-ch7-adj
+קָדוֹשׁ	adjective — holy, set apart — 117×	bbh-ch7-vocab bbh-ch7-adj
+קָטֹן	adjective — small, young, insignificant; fs קְטַנָּה — 74×	bbh-ch7-vocab bbh-ch7-adj
+קָרוֹב	adjective — near, close — 75×	bbh-ch7-vocab bbh-ch7-adj
+רַב	adjective — great, many; mp רַבִּים — 419×	bbh-ch7-vocab bbh-ch7-adj
+רָחוֹק	adjective — distant, remote, far away — 84×	bbh-ch7-vocab bbh-ch7-adj
+רַע	adjective — bad, evil, wicked, worthless (also רָע) — 312×	bbh-ch7-vocab bbh-ch7-adj
+רָשָׁע	adjective — wicked, guilty — 264×	bbh-ch7-vocab bbh-ch7-adj
+מְאֹד	adverb — very, exceedingly — 300×	bbh-ch7-vocab bbh-ch7-other

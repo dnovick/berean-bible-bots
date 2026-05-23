@@ -1,0 +1,18 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 13 — Vocabulary
+#tags column:3
+γυνή, γυναικός, ἡ	noun 3rd decl. f — woman; wife — 215×	bbg-ch13-vocab bbg-ch13-noun
+δικαιοσύνη, -ης, ἡ	noun 1st decl. f — righteousness — 92×	bbg-ch13-vocab bbg-ch13-noun
+δώδεκα	numeral (indeclinable) — twelve — 75×	bbg-ch13-vocab bbg-ch13-numeral
+ἑαυτοῦ, -ῆς, -οῦ	pronoun (reflexive) — himself/herself/itself; themselves — 319×	bbg-ch13-vocab bbg-ch13-pronoun
+ἐκεῖνος, -η, -ο	pronoun / adjective — that man/woman/thing (sg); those (pl) — 265×	bbg-ch13-vocab bbg-ch13-pronoun
+ἤ	conjunction — or; than — 343×	bbg-ch13-vocab bbg-ch13-other
+κἀγώ	pronoun / conjunction (crasis) — and I, but I — 76×	bbg-ch13-vocab bbg-ch13-pronoun
+μακάριος, -ία, -ιον	adjective — blessed, happy — 50×	bbg-ch13-vocab bbg-ch13-adj
+μέγας, μεγάλη, μέγα	adjective — large; great — 243×	bbg-ch13-vocab bbg-ch13-adj
+πόλις, -εως, ἡ	noun 3rd decl. f — city, town — 163×	bbg-ch13-vocab bbg-ch13-noun
+πολύς, πολλή, πολύ	adjective — sg: much; pl: many; adv: often — 416×	bbg-ch13-vocab bbg-ch13-adj
+πῶς	adverb (interrogative) — how? — 118×	bbg-ch13-vocab bbg-ch13-other
+σημεῖον, -ου, τό	noun 2nd decl. n — sign, miracle — 77×	bbg-ch13-vocab bbg-ch13-noun

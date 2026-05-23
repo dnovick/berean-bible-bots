@@ -1,0 +1,29 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 3 — Vocabulary
+#tags column:3
+אַרְיוֹךְ	proper noun — Arioch	bba-ch3-vocab bba-ch3-proper
+אַרְתַּחְשַׁשְׂתָּא	proper noun — Artaxerxes	bba-ch3-vocab bba-ch3-proper
+בָּבֶל	proper noun — Babylon	bba-ch3-vocab bba-ch3-proper
+שְׁתַר בּוֹזְנַי	proper noun — Shethar-Bozenai	bba-ch3-vocab bba-ch3-proper
+בֵּלְטְשַׁאצַּר	proper noun — Belteshazzar	bba-ch3-vocab bba-ch3-proper
+בֵּלְשַׁאצַּר	proper noun — Belshazzar	bba-ch3-vocab bba-ch3-proper
+דָּנִיֵּאל	proper noun — Daniel	bba-ch3-vocab bba-ch3-proper
+דָּרְיָוֶשׁ	proper noun — Darius	bba-ch3-vocab bba-ch3-proper
+יְהוּד	proper noun — Judah, Judea	bba-ch3-vocab bba-ch3-proper
+יְרוּשְׁלֶם	proper noun — Jerusalem	bba-ch3-vocab bba-ch3-proper
+יִשְׂרָאֵל	proper noun — Israel	bba-ch3-vocab bba-ch3-proper
+כּוֹרֶשׁ	proper noun — Cyrus	bba-ch3-vocab bba-ch3-proper
+מֵישַׁךְ	proper noun — Meshach	bba-ch3-vocab bba-ch3-proper
+נְבוּכַדְנֶצַּר	proper noun — Nebuchadnezzar	bba-ch3-vocab bba-ch3-proper
+עֲבֵד נְגוֹ	proper noun — Abed-Nego	bba-ch3-vocab bba-ch3-proper
+פָּרָס	proper noun — Persia; the Persians (collectively)	bba-ch3-vocab bba-ch3-proper
+רְחוּם	proper noun — Rehum	bba-ch3-vocab bba-ch3-proper
+שַׁדְרַךְ	proper noun — Shadrach	bba-ch3-vocab bba-ch3-proper
+שִׁמְשַׁי	proper noun — Shimshai	bba-ch3-vocab bba-ch3-proper
+תַּתְּנַי	proper noun — Tattenai	bba-ch3-vocab bba-ch3-proper
+כַּשְׂדָּי	gentilic noun — Chaldean; (noun) astrologer; also spelled כַּסְדָּי	bba-ch3-vocab bba-ch3-gentilic
+יְהוּדָי	gentilic noun — Judean; Jew	bba-ch3-vocab bba-ch3-gentilic
+מַָדַי	gentilic noun — Media; the Medes (collectively)	bba-ch3-vocab bba-ch3-gentilic
+לֵוָי	gentilic noun — Levite	bba-ch3-vocab bba-ch3-gentilic

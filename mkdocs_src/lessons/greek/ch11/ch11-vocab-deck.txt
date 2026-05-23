@@ -1,0 +1,26 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 11 — Vocabulary
+#tags column:3
+ἀδελφός, -οῦ, ὁ	noun 2nd decl. m — brother — 343×	bbg-ch11-vocab bbg-ch11-noun
+ἄν	particle — contingency particle (untranslatable; makes statements indefinite) — 166×	bbg-ch11-vocab bbg-ch11-other
+ἀνήρ, ἀνδρός, ὁ	noun 3rd decl. m — male, husband; man — 216×	bbg-ch11-vocab bbg-ch11-noun
+ἐκκλησία, -ας, ἡ	noun 1st decl. f — a church, (the) Church; assembly, congregation — 114×	bbg-ch11-vocab bbg-ch11-noun
+ἐλπίς, -ίδος, ἡ	noun 3rd decl. f — hope, expectation — 53×	bbg-ch11-vocab bbg-ch11-noun
+ἔξω	adverb / preposition (+ gen) — without; outside — 63×	bbg-ch11-vocab bbg-ch11-prep
+ἐπί (ἐπʼ, ἐφʼ)	preposition — gen: on, over, when; dat: on the basis of, at; acc: on, to, against — 890×	bbg-ch11-vocab bbg-ch11-prep
+ἡμεῖς	pronoun — we — 863×	bbg-ch11-vocab bbg-ch11-pronoun
+θέλημα, θελήματος, τό	noun 3rd decl. n — will, desire — 62×	bbg-ch11-vocab bbg-ch11-noun
+ἴδε	interjection — See! Behold! — 29×	bbg-ch11-vocab bbg-ch11-other
+ἰδού	interjection — See! Behold! — 200×	bbg-ch11-vocab bbg-ch11-other
+καλός, -ή, -όν	adjective — good; beautiful — 101×	bbg-ch11-vocab bbg-ch11-adj
+μήτηρ, μητρός, ἡ	noun 3rd decl. f — mother — 83×	bbg-ch11-vocab bbg-ch11-noun
+οὐδέ	conjunction — and not, not even; neither, nor — 143×	bbg-ch11-vocab bbg-ch11-other
+πατήρ, πατρός, ὁ	noun 3rd decl. m — father — 413×	bbg-ch11-vocab bbg-ch11-noun
+πίστις, πίστεως, ἡ	noun 3rd decl. f — faith, belief; trust; teaching — 243×	bbg-ch11-vocab bbg-ch11-noun
+ὕδωρ, ὕδατος, τό	noun 3rd decl. n — water — 76×	bbg-ch11-vocab bbg-ch11-noun
+ὑμεῖς	pronoun — you (plural) — 1,840×	bbg-ch11-vocab bbg-ch11-pronoun
+φῶς, φωτός, τό	noun 3rd decl. n — light — 73×	bbg-ch11-vocab bbg-ch11-noun
+χάρις, χάριτος, ἡ	noun 3rd decl. f — grace, favor, kindness — 155×	bbg-ch11-vocab bbg-ch11-noun
+ὧδε	adverb — here — 61×	bbg-ch11-vocab bbg-ch11-other

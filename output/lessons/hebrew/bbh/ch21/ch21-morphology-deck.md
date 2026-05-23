@@ -1,4 +1,4 @@
-# Ch21 Morphology Deck — Qal Infinitive Absolute
+# Chapter 21 — Qal Infinitive Absolute Morphology Deck
 
 *32 cards · 7 root class groupings + disambiguation · covers all IA patterns, IC/IA contrasts, and functional uses.*
 

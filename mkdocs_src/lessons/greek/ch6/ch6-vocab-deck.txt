@@ -1,0 +1,18 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 6 — Vocabulary
+#tags column:3
+ἀγάπη, -ης, ἡ	noun 1st decl. f — love — 116×	bbg-ch6-vocab bbg-ch6-noun
+ἄλλος, -η, -ο	adjective — other, another — 155×	bbg-ch6-vocab bbg-ch6-adj
+αὐτός, -ή, -ό	pronoun — he, she, it (sg); they (pl) — 5,597×	bbg-ch6-vocab bbg-ch6-pronoun
+βασιλεία, -ας, ἡ	noun 1st decl. f — kingdom — 162×	bbg-ch6-vocab bbg-ch6-noun
+δέ	conjunction (postpositive) — but; and — 2,791×	bbg-ch6-vocab bbg-ch6-other
+ἐν	preposition (+ dative) — in; on; among — 2,752×	bbg-ch6-vocab bbg-ch6-other
+ἔργον, -ου, τό	noun 2nd decl. n — work; deed, action — 169×	bbg-ch6-vocab bbg-ch6-noun
+καιρός, -οῦ, ὁ	noun 2nd decl. m — (appointed) time, season — 85×	bbg-ch6-vocab bbg-ch6-noun
+νῦν	adverb / noun — now; the present — 147×	bbg-ch6-vocab bbg-ch6-other
+ὁ, ἡ, τό	article — the — 19,865×	bbg-ch6-vocab bbg-ch6-article
+ὅτι	conjunction — that; since; because — 1,294×	bbg-ch6-vocab bbg-ch6-other
+οὐ (οὐκ, οὐχ)	negative particle — not — 1,624×	bbg-ch6-vocab bbg-ch6-other
+ὥρα, -ας, ἡ	noun 1st decl. f — hour; occasion, moment — 106×	bbg-ch6-vocab bbg-ch6-noun

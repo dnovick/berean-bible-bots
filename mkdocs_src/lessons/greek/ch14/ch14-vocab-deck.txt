@@ -1,0 +1,23 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 14 — Vocabulary
+#tags column:3
+ἀλήθεια, -ας, ἡ	noun 1st decl. f — truth — 109×	bbg-ch14-vocab bbg-ch14-noun
+εἰρήνη, -ης, ἡ	noun 1st decl. f — peace — 92×	bbg-ch14-vocab bbg-ch14-noun
+ἐνώπιον	preposition (+ gen) — before — 94×	bbg-ch14-vocab bbg-ch14-prep
+ἐπαγγελία, -ας, ἡ	noun 1st decl. f — promise — 52×	bbg-ch14-vocab bbg-ch14-noun
+ἑπτά	numeral (indeclinable) — seven — 88×	bbg-ch14-vocab bbg-ch14-numeral
+θρόνος, -ου, ὁ	noun 2nd decl. m — throne — 62×	bbg-ch14-vocab bbg-ch14-noun
+Ἰερουσαλήμ, ἡ	noun (indeclinable) proper — Jerusalem — 77×	bbg-ch14-vocab bbg-ch14-noun
+κατά (κατʼ, καθʼ)	preposition — gen: down from, against; acc: according to, throughout, during — 473×	bbg-ch14-vocab bbg-ch14-prep
+κεφαλή, -ῆς, ἡ	noun 1st decl. f — head — 75×	bbg-ch14-vocab bbg-ch14-noun
+ὁδός, -οῦ, ἡ	noun 2nd decl. f — way, road; journey; conduct — 101×	bbg-ch14-vocab bbg-ch14-noun
+ὅς, ἥ, ὅ	pronoun (relative) — who (whom), which — 1,399×	bbg-ch14-vocab bbg-ch14-pronoun
+ὅτε	conjunction — when — 103×	bbg-ch14-vocab bbg-ch14-other
+οὕτως	adverb — thus, so; in this manner — 208×	bbg-ch14-vocab bbg-ch14-other
+πλοῖον, -ου, τό	noun 2nd decl. n — ship, boat — 67×	bbg-ch14-vocab bbg-ch14-noun
+ῥῆμα, -ατος, τό	noun 3rd decl. n — word, saying — 68×	bbg-ch14-vocab bbg-ch14-noun
+τέ	conjunction (postpositive) — and (so), so — 215×	bbg-ch14-vocab bbg-ch14-other
+χείρ, χειρός, ἡ	noun 3rd decl. f — hand — 177×	bbg-ch14-vocab bbg-ch14-noun
+ψυχή, -ῆς, ἡ	noun 1st decl. f — life; soul; self — 103×	bbg-ch14-vocab bbg-ch14-noun

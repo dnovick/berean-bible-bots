@@ -1,0 +1,20 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 12 — Vocabulary
+#tags column:3
+αἰών, -ῶνος, ὁ	noun 3rd decl. m — age, eternity — 122×	bbg-ch12-vocab bbg-ch12-noun
+διδάσκαλος, -ου, ὁ	noun 2nd decl. m — teacher — 59×	bbg-ch12-vocab bbg-ch12-noun
+εὐθύς	adverb — immediately — 51×	bbg-ch12-vocab bbg-ch12-other
+ἕως	conjunction / preposition (+ gen) — until; as far as — 146×	bbg-ch12-vocab bbg-ch12-prep
+μαθητής, -οῦ, ὁ	noun 1st decl. m — disciple — 261×	bbg-ch12-vocab bbg-ch12-noun
+μέν	particle (postpositive) — on the one hand; indeed — 179×	bbg-ch12-vocab bbg-ch12-other
+μηδείς, μηδεμία, μηδέν	pronoun / adjective — no one, nothing — 90×	bbg-ch12-vocab bbg-ch12-adj
+μόνος, -η, -ον	adjective — alone, only — 114×	bbg-ch12-vocab bbg-ch12-adj
+ὅπως	conjunction — how; (in order) that — 53×	bbg-ch12-vocab bbg-ch12-other
+ὅσος, -η, -ον	pronoun / adjective — as great as, as many as — 110×	bbg-ch12-vocab bbg-ch12-adj
+οὖν	conjunction (postpositive) — therefore, accordingly; then — 498×	bbg-ch12-vocab bbg-ch12-other
+ὀφθαλμός, -οῦ, ὁ	noun 2nd decl. m — eye, sight — 100×	bbg-ch12-vocab bbg-ch12-noun
+πάλιν	adverb — again — 141×	bbg-ch12-vocab bbg-ch12-other
+πούς, ποδός, ὁ	noun 3rd decl. m — foot — 93×	bbg-ch12-vocab bbg-ch12-noun
+ὑπέρ	preposition — gen: in behalf of; acc: above — 150×	bbg-ch12-vocab bbg-ch12-prep

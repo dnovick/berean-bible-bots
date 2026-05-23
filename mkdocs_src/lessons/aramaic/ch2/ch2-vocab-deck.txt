@@ -1,0 +1,25 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 2 — Vocabulary
+#tags column:3
+אֱנָשׁ	noun ms — man, mankind, person; (collective) people	bba-ch2-vocab bba-ch2-noun
+אָע	noun ms — wood, tree, beam	bba-ch2-vocab bba-ch2-noun
+אֲרַע	noun fs — earth, land; also spelled אֲרַק	bba-ch2-vocab bba-ch2-noun
+בַּר	noun ms — son; (mp construct) בְּנֵי	bba-ch2-vocab bba-ch2-noun
+בַּר	noun ms — field, countryside	bba-ch2-vocab bba-ch2-noun
+גָּלוּ	noun fs — deportation, exile	bba-ch2-vocab bba-ch2-noun
+דְּהַב	noun ms — gold	bba-ch2-vocab bba-ch2-noun
+דָּר	noun ms — generation	bba-ch2-vocab bba-ch2-noun
+חֱזוּ	noun ms — vision, apparition	bba-ch2-vocab bba-ch2-noun
+לֵילֵי	noun ms — night	bba-ch2-vocab bba-ch2-noun
+לִשָּׁן	noun ms — tongue, language	bba-ch2-vocab bba-ch2-noun
+מַלְכוּ	noun fs — kingdom, kingship, sovereignty, reign, realm; (fs construct) מַלְכוּת	bba-ch2-vocab bba-ch2-noun
+מַנְדַּע	noun ms — understanding, knowledge	bba-ch2-vocab bba-ch2-noun
+נְחָשׁ	noun ms — copper, bronze	bba-ch2-vocab bba-ch2-noun
+עֲבִידָה	noun fs — work, service, administration	bba-ch2-vocab bba-ch2-noun
+פַּרְזֶל	noun ms — iron	bba-ch2-vocab bba-ch2-noun
+קָל	noun ms — voice, sound	bba-ch2-vocab bba-ch2-noun
+קִרְיָה	noun fs — village, town	bba-ch2-vocab bba-ch2-noun
+שׁוּר	noun ms — wall	bba-ch2-vocab bba-ch2-noun
+תּוֹר	noun ms — ox, bull	bba-ch2-vocab bba-ch2-noun

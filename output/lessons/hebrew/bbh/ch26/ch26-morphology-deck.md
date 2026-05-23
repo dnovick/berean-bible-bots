@@ -1,4 +1,4 @@
-# Chapter 26 — Hiphil Anki Flashcard Deck
+# Chapter 26 — Hiphil Morphology Deck
 
 *32 cards covering all 8 conjugation forms across the top Hiphil roots.*
 *Import into Anki: copy the table into a spreadsheet, save as CSV, import with Front/Back/Tags fields.*

@@ -1,4 +1,4 @@
-# BBH Chapter 30 — Piel Strong Morphology Flashcards
+# Chapter 30 — Piel Strong Morphology Deck
 
 24 cards covering 4 roots across all Piel conjugations for strong verbs.
 

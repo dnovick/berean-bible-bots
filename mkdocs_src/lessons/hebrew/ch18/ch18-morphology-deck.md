@@ -1,4 +1,4 @@
-# Ch18 Morphology Deck — Qal Imperative
+# Chapter 18 — Qal Imperative Morphology Deck
 
 *BBH Chapter 18 · 32 cards*
 

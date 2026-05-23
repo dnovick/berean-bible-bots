@@ -1,4 +1,4 @@
-# Ch19 Morphology Deck — Pronominal Suffixes on Verbs
+# Chapter 19 — Pronominal Suffixes on Verbs Morphology Deck
 
 *BBH Chapter 19 · 32 cards*
 

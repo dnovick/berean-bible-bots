@@ -1,4 +1,4 @@
-# BBA Chapter 16 — Vocabulary Flashcard Deck
+# Chapter 16 — Vocabulary Flashcard Deck
 
 *10 verbal roots from BBA Chapter 16 (Peal Infinitive Construct).*
 *Import `ch16-vocab-deck.txt` directly into Anki (File → Import).*

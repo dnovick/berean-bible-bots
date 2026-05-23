@@ -1,0 +1,18 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 11 — Vocabulary
+#tags column:3
+אֶדַ֫יִן	adverb — then	bba-ch11-vocab bba-ch11-adverb
+אָסְפַּרְנָא	adverb — completely, exactly, diligently	bba-ch11-vocab bba-ch11-adverb
+כֵּן	adverb — thus, so	bba-ch11-vocab bba-ch11-adverb
+כְּנֵמָא	adverb — thus, so	bba-ch11-vocab bba-ch11-adverb
+כְּעַן	adverb — now	bba-ch11-vocab bba-ch11-adverb
+כְּעֶ֫נֶת	adverb — now	bba-ch11-vocab bba-ch11-adverb
+תַּמָּה	adverb — there	bba-ch11-vocab bba-ch11-adverb
+אִיתַי	particle — there is, there are	bba-ch11-vocab bba-ch11-particle
+אַל	particle — no, not (negative with jussive/imperative)	bba-ch11-vocab bba-ch11-particle
+הֲ	particle — interrogative particle	bba-ch11-vocab bba-ch11-particle
+לָא	particle — no, not	bba-ch11-vocab bba-ch11-particle
+אֲלוּ	interjection — look! behold!	bba-ch11-vocab bba-ch11-interjection
+אֲרוּ	interjection — look! behold!	bba-ch11-vocab bba-ch11-interjection

@@ -1,0 +1,17 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 4 — Vocabulary
+#tags column:3
+אַתּוּן	noun ms — furnace	bba-ch4-vocab bba-ch4-noun
+גֹּב	noun ms — pit, den; also spelled גּוֹב and גֻּב	bba-ch4-vocab bba-ch4-noun
+גּוֹא	noun ms — midst, middle; also spelled גּוֹ	bba-ch4-vocab bba-ch4-noun
+זְמָן	noun ms — time, a fixed time, turn	bba-ch4-vocab bba-ch4-noun
+חֵיוָה	noun fs — animal, beast	bba-ch4-vocab bba-ch4-noun
+חֲסַף	noun ms — clay, pottery	bba-ch4-vocab bba-ch4-noun
+טְעֵם	noun ms — understanding, command, decree, advice, report	bba-ch4-vocab bba-ch4-noun
+נוּר	noun ms — fire	bba-ch4-vocab bba-ch4-noun
+עִדָּן	noun ms — time, moment	bba-ch4-vocab bba-ch4-noun
+פְּשַׁר	noun ms — interpretation	bba-ch4-vocab bba-ch4-noun
+רָז	noun ms — secret, mystery	bba-ch4-vocab bba-ch4-noun
+שָׁלְטָן	noun ms — dominion, powers	bba-ch4-vocab bba-ch4-noun
