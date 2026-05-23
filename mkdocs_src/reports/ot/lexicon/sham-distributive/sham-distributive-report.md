@@ -101,12 +101,14 @@ The most common pattern. שָׁם is repeated because two or more actions happen
 
 **Ezekiel 20:28** (4× שָׁם) — Israel's apostasy in the promised land:
 > וַיִּזְבְּחוּ **שָׁם** אֶת זִבְחֵיהֶם וַיִּתְּנוּ **שָׁם** כַּעַס קָרְבָּנָם וַיָּשִׂימוּ **שָׁם** רֵיחַ נִיחוֹחֵיהֶם וַיַּסִּיכוּ **שָׁם** אֶת נִסְכֵּיהֶם
+>
 > "They sacrificed **there** their sacrifices; they presented **there** their offensive offerings; they set **there** their pleasing aromas; and they poured out **there** their drink offerings."
 
 Each שָׁם pins a new act of idolatry to the same place. This is anaphoric, not distributive — all four point to the same referent.
 
 **Isaiah 13:21** (3× שָׁם) — Babylon's desolation:
 > וְרָבְצוּ **שָׁם** צִיִּים ... וְשָׁכְנוּ **שָׁם** בְּנוֹת יַעֲנָה ... וּשְׂעִירִים יְרַקְּדוּ **שָׁם**
+>
 > "Desert creatures shall lie down **there** ... ostriches shall dwell **there** ... wild goats shall dance **there**."
 
 ---
@@ -114,6 +116,7 @@ Each שָׁם pins a new act of idolatry to the same place. This is anaphoric, n
 ### Category 2 — Structural/Elegiac (repeated as a solemn refrain)
 **Genesis 49:31** (3× שָׁם) — Jacob's burial instructions:
 > **שָׁמָּה** קָבְרוּ אֶת אַבְרָהָם ... **שָׁמָּה** קָבְרוּ אֶת יִצְחָק ... וְ**שָׁמָּה** קָבַרְתִּי אֶת לֵאָה
+>
 > "**There** they buried Abraham and Sarah ... **there** they buried Isaac and Rebekah ... and **there** I buried Leah."
 
 The triple שָׁם creates a liturgical, elegiac rhythm. Each "there" marks a new patriarch or matriarch, but all point to the same cave at Machpelah.
@@ -123,6 +126,7 @@ The triple שָׁם creates a liturgical, elegiac rhythm. Each "there" marks a n
 ### Category 3 — Rhetorical hammer (pounding home inevitability)
 **Jeremiah 42:16** (3× שָׁם):
 > הַחֶרֶב ... **שָׁם** תַּשִּׂיג אֶתְכֶם ... וְהָרָעָב ... **שָׁם** יִדְבַּק אַחֲרֵיכֶם ... וְ**שָׁם** תָּמֻתוּ
+>
 > "The sword ... will overtake you **there** ... the famine ... will follow hard after you **there** ... and **there** you will die."
 
 The repeated שָׁם is not distributive — it is a rhetorical drum-beat, hammering home that Egypt is no refuge. Each "there" makes the doom more inescapable.
@@ -139,6 +143,7 @@ None of the other 90 verses share the *exact* configuration of Isaiah 28: **זְ
 ### מִזֶּה...מִזֶּה — Exodus 26:13
 The tabernacle curtain instructions:
 > וְהָאַמָּה **מִזֶּה** וְהָאַמָּה **מִזֶּה** בָּעֹדֵף ... יִהְיֶה סָרוּחַ עַל צִדֵּי הַמִּשְׁכָּן **מִזֶּה וּמִזֶּה**
+>
 > "A cubit on **this side** and a cubit on **this side** in the surplus ... it shall hang over the sides of the tabernacle on **this side and that side** to cover it." (ESV: "on this side and that side")
 
 This is the closest structural parallel to Isaiah 28. מִזֶּה is literally "from this" — the same demonstrative repeated, not alternated with "from that" (מִזֶּה...מִזֶּה rather than מִזֶּה...מִשָּׁם). The meaning is unmistakably distributive — the overhang extends in both directions — and translators must supply "that side" in English even though Hebrew says "this side" twice.
@@ -146,6 +151,7 @@ This is the closest structural parallel to Isaiah 28. מִזֶּה is literally 
 ### זֶה...זֶה — Isaiah 44:5
 The eschatological ingathering:
 > **זֶה** יֹאמַר לַיהוָה אָנִי וְ**זֶה** יִקְרָא בְשֵׁם יַעֲקֹב וְ**זֶה** יִכְתֹּב יָדוֹ לַיהוָה
+>
 > "**This one** will say 'I belong to the LORD'; **another** will call himself by the name of Jacob; **yet another** will write on his hand 'The LORD's.'"
 
 Three repetitions of זֶה, each meaning a *different* person. English requires "this one...another...yet another" to convey what Hebrew expresses by repeating the same word. The ESV translates all three differently to make the distribution legible in English, though Hebrew uses one word throughout.
@@ -153,6 +159,7 @@ Three repetitions of זֶה, each meaning a *different* person. English requires
 ### כָּזֹה וְכָזֶה — 2 Samuel 11:25
 David to Joab's messenger after Uriah's death:
 > כִּי **כָזֹה וְכָזֶה** תֹּאכַל הֶחָרֶב
+>
 > "for **like this and like that** the sword devours" (lit.)
 > "for the sword devours now one and now another" (NASB)
 > "the sword devours one as well as another" (ESV)
@@ -169,6 +176,7 @@ The singsong phrase of Isaiah 28:10/13 operates on two levels simultaneously:
 
 **Level 2 — Ironic fulfillment (v. 11).** The very next verse turns the taunt into a threat:
 > כִּי בְּלַעֲגֵי שָׂפָה וּבְלָשׁוֹן אַחֶרֶת יְדַבֵּר אֶל הָעָם הַזֶּה
+>
 > "For by people of strange lips and with a foreign tongue the LORD will speak to this people."
 
 The babble they dismissed as incomprehensible instruction becomes a prophecy: they will hear truly incomprehensible speech — Assyrian. The צַו לָצַו that they ridiculed as stammering will be replaced by speech they literally cannot understand. Paul quotes this verse in 1 Corinthians 14:21 in his discussion of tongues, connecting the Assyrian judgment motif to the sign-function of uninterpreted glossolalia.
