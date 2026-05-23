@@ -1,4 +1,4 @@
-# Chapter 27 — Hiphil Weak Verbs Anki Flashcard Deck
+# Chapter 27 — Hiphil Weak Verbs Morphology Deck
 
 *40 cards covering all eight weak classes (I-guttural, III-ח/ע, III-א, III-ה, I-נ, I-י, Biconsonantal, Geminate) across key conjugations.*
 *Import `ch27-morphology-deck.txt` directly into Anki (File → Import).*

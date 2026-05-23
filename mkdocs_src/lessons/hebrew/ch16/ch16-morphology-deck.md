@@ -1,4 +1,4 @@
-# Chapter 16 — Qal Imperfect Weak Verbs Anki Flashcard Deck
+# Chapter 16 — Qal Imperfect Weak Verbs Morphology Deck
 
 *~40 cards covering all eight weak classes in the Qal Imperfect, Wayyiqtol, and Jussive.*
 *Import `ch16-morphology-deck.txt` directly into Anki (File → Import).*

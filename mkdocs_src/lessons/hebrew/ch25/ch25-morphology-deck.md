@@ -1,4 +1,4 @@
-# Chapter 25 — Niphal Weak Verbs Anki Flashcard Deck
+# Chapter 25 — Niphal Weak Verbs Morphology Deck
 
 *40 cards covering all eight weak classes (III-א, III-ה, III-ח/ע, I-guttural, I-נ, I-י, Biconsonantal, Geminate) across key conjugations.*
 *Import `ch25-morphology-deck.txt` directly into Anki (File → Import).*

@@ -1,0 +1,17 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 5 — Vocabulary
+#tags column:3
+אִילָן	noun ms — tree	bba-ch5-vocab bba-ch5-noun
+אֻמָּה	noun fs — nation	bba-ch5-vocab bba-ch5-noun
+אֱסָר	noun ms — prohibition, injunction	bba-ch5-vocab bba-ch5-noun
+אֲתַר	noun ms — place, location	bba-ch5-vocab bba-ch5-noun
+גְּשֵׁם	noun ms — body	bba-ch5-vocab bba-ch5-noun
+הַמְנִיךְ	noun ms — chain; Kethiv הַמְונִךְ	bba-ch5-vocab bba-ch5-noun
+זִיו	noun ms — radiance, brightness, countenance	bba-ch5-vocab bba-ch5-noun
+זְמָר	noun ms — stringed music, musical instruments	bba-ch5-vocab bba-ch5-noun
+זַן	noun ms — kind, sort	bba-ch5-vocab bba-ch5-noun
+חֲמַר	noun ms — wine	bba-ch5-vocab bba-ch5-noun
+יְקָר	noun ms — dignity, honor	bba-ch5-vocab bba-ch5-noun
+מָאן	noun ms — vessel	bba-ch5-vocab bba-ch5-noun

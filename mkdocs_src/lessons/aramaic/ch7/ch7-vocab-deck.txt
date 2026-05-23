@@ -1,0 +1,20 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 7 — Vocabulary
+#tags column:3
+אַף	conjunction — also	bba-ch7-vocab bba-ch7-conjunction
+בְּרַם	conjunction — except, yet, but, however	bba-ch7-vocab bba-ch7-conjunction
+הֵן	conjunction — if, whether	bba-ch7-vocab bba-ch7-conjunction
+וְ	conjunction — and, and also, but, or, for, then, so	bba-ch7-vocab bba-ch7-conjunction
+לָהֵן I	conjunction — therefore (occurs 3×)	bba-ch7-vocab bba-ch7-conjunction
+לָהֵן II	conjunction — except; (adversative) but, yet	bba-ch7-vocab bba-ch7-conjunction
+בְּ	preposition — in, on, through, by means of, with, from	bba-ch7-vocab bba-ch7-preposition
+כְּ	preposition — like, as, corresponding to, about	bba-ch7-vocab bba-ch7-preposition
+לְ	preposition — to, for, as, near; also marks verbal object (untranslated)	bba-ch7-vocab bba-ch7-preposition
+מִן	preposition — from, out of; (temporal) since	bba-ch7-vocab bba-ch7-preposition
+עַד	preposition — up to, even to, until, during, within	bba-ch7-vocab bba-ch7-preposition
+עַל	preposition — on, upon, about, over, above	bba-ch7-vocab bba-ch7-preposition
+עִם	preposition — with, together with	bba-ch7-vocab bba-ch7-preposition
+קֳדָם	preposition — before, in front of, in the presence of	bba-ch7-vocab bba-ch7-preposition
+תְּחוֹת	preposition — under	bba-ch7-vocab bba-ch7-preposition

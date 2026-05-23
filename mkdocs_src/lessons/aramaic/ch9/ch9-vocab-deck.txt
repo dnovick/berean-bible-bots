@@ -1,0 +1,22 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 9 — Vocabulary
+#tags column:3
+אֲנָה	pronoun — I (1cs)	bba-ch9-vocab bba-ch9-pronoun
+אֲנַ֫חְנָה	pronoun — we (1cp)	bba-ch9-vocab bba-ch9-pronoun
+אַנְתְּ / אַנְתָּה	pronoun — you (2ms)	bba-ch9-vocab bba-ch9-pronoun
+הוּא	pronoun — he, it (3ms)	bba-ch9-vocab bba-ch9-pronoun
+הִיא	pronoun — she, it (3fs)	bba-ch9-vocab bba-ch9-pronoun
+הִמּוֹ / הִמּוֹן / אִנּוּן	pronoun — they (3mp)	bba-ch9-vocab bba-ch9-pronoun
+דְּנָה	demonstrative pronoun — this (ms)	bba-ch9-vocab bba-ch9-pronoun
+דָּא	demonstrative pronoun — this (fs)	bba-ch9-vocab bba-ch9-pronoun
+אִלֵּין / אֵ֫לֶּה / אֵל	demonstrative pronoun — these (cp)	bba-ch9-vocab bba-ch9-pronoun
+דֵּךְ	demonstrative pronoun — that (ms)	bba-ch9-vocab bba-ch9-pronoun
+דָּךְ	demonstrative pronoun — that (fs)	bba-ch9-vocab bba-ch9-pronoun
+אִלֵּךְ	demonstrative pronoun — those (cp)	bba-ch9-vocab bba-ch9-pronoun
+מָה	interrogative pronoun — what?; לְמָה why?; כְּמָה how?; מָה דִי whatever	bba-ch9-vocab bba-ch9-pronoun
+מַן	interrogative pronoun — who?; מַן דִּי whoever	bba-ch9-vocab bba-ch9-pronoun
+כִּדְנָה	idiom — thus	bba-ch9-vocab bba-ch9-idiom
+כָּל־קֳבֵל דְּנָה	idiom — therefore, because of this, for this reason	bba-ch9-vocab bba-ch9-idiom
+עַל־דְּנָה	idiom — therefore, on account of this, concerning this	bba-ch9-vocab bba-ch9-idiom

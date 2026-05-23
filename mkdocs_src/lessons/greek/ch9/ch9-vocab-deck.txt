@@ -1,0 +1,23 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 9 — Vocabulary
+#tags column:3
+ἀγαθός, -ή, -όν	adjective — good, useful — 102×	bbg-ch9-vocab bbg-ch9-adj
+ἀγαπητός, -ή, -όν	adjective — beloved — 61×	bbg-ch9-vocab bbg-ch9-adj
+ἅγιος, -ία, -ιον	adjective / noun — holy; (pl noun) saints — 233×	bbg-ch9-vocab bbg-ch9-adj
+αἰώνιος, -ον	adjective — eternal — 71×	bbg-ch9-vocab bbg-ch9-adj
+ἀλλήλων	pronoun (reciprocal, gen pl) — one another — 100×	bbg-ch9-vocab bbg-ch9-pronoun
+ἀπεκρίθη	verb form (3sg aorist passive) — he/she/it answered	bbg-ch9-vocab bbg-ch9-verb
+δοῦλος, -ου, ὁ	noun 2nd decl. m — slave; servant — 126×	bbg-ch9-vocab bbg-ch9-noun
+ἐάν	conjunction — if; when — 349×	bbg-ch9-vocab bbg-ch9-adj
+ἐμός, ἐμή, ἐμόν	adjective (possessive) — my, mine — 76×	bbg-ch9-vocab bbg-ch9-adj
+ἐντολή, -ῆς, ἡ	noun 1st decl. f — commandment — 67×	bbg-ch9-vocab bbg-ch9-noun
+καθώς	adverb / conjunction — as, even as — 182×	bbg-ch9-vocab bbg-ch9-adj
+κακός, -ή, -όν	adjective — bad, evil — 50×	bbg-ch9-vocab bbg-ch9-adj
+μου (ἐμοῦ)	pronoun (gen sg of ἐγώ) — my	bbg-ch9-vocab bbg-ch9-pronoun
+νεκρός, -ά, -όν	adjective / noun — dead; dead body, corpse — 128×	bbg-ch9-vocab bbg-ch9-adj
+πιστός, -ή, -όν	adjective — faithful, believing — 67×	bbg-ch9-vocab bbg-ch9-adj
+πονηρός, -ά, -όν	adjective — evil, bad — 78×	bbg-ch9-vocab bbg-ch9-adj
+πρῶτος, -η, -ον	adjective — first; earlier — 155×	bbg-ch9-vocab bbg-ch9-adj
+τρίτος, -η, -ον	adjective — third — 56×	bbg-ch9-vocab bbg-ch9-adj

@@ -1,0 +1,26 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 10 — Vocabulary
+#tags column:3
+אָחֳרָן	adjective — other, another	bba-ch10-vocab bba-ch10-adj
+חַי	adjective — living, alive; (noun) life	bba-ch10-vocab bba-ch10-adj
+יַצִּיב	adjective — certain, true, reliable, exact	bba-ch10-vocab bba-ch10-adj
+יַתִּיר	adjective — extraordinary; (adverb) exceedingly	bba-ch10-vocab bba-ch10-adj
+עִלָּי	adjective — superior, highest	bba-ch10-vocab bba-ch10-adj
+עֶלְיוֹן	adjective — the Most High	bba-ch10-vocab bba-ch10-adj
+קַדִּישׁ	adjective — holy	bba-ch10-vocab bba-ch10-adj
+רַב	adjective — great	bba-ch10-vocab bba-ch10-adj
+שַׂגִּיא	adjective — great, much, many; (adverb) exceedingly, greatly	bba-ch10-vocab bba-ch10-adj
+שַׁלִּיט	adjective — mighty, powerful	bba-ch10-vocab bba-ch10-adj
+תַּקִּיף	adjective — strong, mighty	bba-ch10-vocab bba-ch10-adj
+חַד	cardinal number — one	bba-ch10-vocab bba-ch10-number
+תְּרֵין	cardinal number — two; (fs) תַּרְתֵּין	bba-ch10-vocab bba-ch10-number
+תְּלָת	cardinal number — three	bba-ch10-vocab bba-ch10-number
+אַרְבַּע	cardinal number — four	bba-ch10-vocab bba-ch10-number
+עֲשַׂר	cardinal number — ten	bba-ch10-vocab bba-ch10-number
+שִׁתִּין	cardinal number — sixty	bba-ch10-vocab bba-ch10-number
+שְׁבַע	cardinal number — seven	bba-ch10-vocab bba-ch10-number
+מְאָה	cardinal number — one hundred	bba-ch10-vocab bba-ch10-number
+אֲלַף	cardinal number — one thousand	bba-ch10-vocab bba-ch10-number
+רְבִיעָי	ordinal number — fourth	bba-ch10-vocab bba-ch10-number

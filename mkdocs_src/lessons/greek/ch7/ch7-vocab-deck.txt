@@ -1,0 +1,20 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 7 — Vocabulary
+#tags column:3
+ἁμαρτία, -ας, ἡ	noun 1st decl. f — sin — 173×	bbg-ch7-vocab bbg-ch7-noun
+ἀρχή, -ῆς, ἡ	noun 1st decl. f — beginning; ruler — 55×	bbg-ch7-vocab bbg-ch7-noun
+γάρ	conjunction (postpositive) — for; then — 1,041×	bbg-ch7-vocab bbg-ch7-other
+εἶπεν	verb form (3sg aorist) — he/she/it said — 613×	bbg-ch7-vocab bbg-ch7-verb
+εἰς	preposition (+ accusative) — into; in — 1,767×	bbg-ch7-vocab bbg-ch7-other
+ἐξουσία, -ας, ἡ	noun 1st decl. f — authority, power — 102×	bbg-ch7-vocab bbg-ch7-noun
+εὐαγγέλιον, -ου, τό	noun 2nd decl. n — good news, Gospel — 76×	bbg-ch7-vocab bbg-ch7-noun
+Ἰησοῦς, -οῦ, ὁ	proper noun m — Jesus, Joshua — 917×	bbg-ch7-vocab bbg-ch7-proper
+κύριος, -ου, ὁ	noun 2nd decl. m — Lord; lord, master, sir — 716×	bbg-ch7-vocab bbg-ch7-noun
+μή	negative particle — not, lest — 1,042×	bbg-ch7-vocab bbg-ch7-other
+οὐρανός, -οῦ, ὁ	noun 2nd decl. m — heaven; sky — 273×	bbg-ch7-vocab bbg-ch7-noun
+οὗτος, αὕτη, τοῦτο	pronoun / adjective — this (one) (sg); these (pl) — 1,387×	bbg-ch7-vocab bbg-ch7-pronoun
+σύ	pronoun — you (singular) — 1,067×	bbg-ch7-vocab bbg-ch7-pronoun
+υἱός, -οῦ, ὁ	noun 2nd decl. m — son; descendant — 377×	bbg-ch7-vocab bbg-ch7-noun
+ὥστε	conjunction — therefore, so that — 83×	bbg-ch7-vocab bbg-ch7-other

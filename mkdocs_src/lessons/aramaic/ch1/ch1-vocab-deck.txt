@@ -1,0 +1,55 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 1 — Vocabulary
+#tags column:3
+אָב	noun ms — father, ancestor	bba-ch1-vocab bba-ch1-noun
+אֶ֫בֶן	noun fs — stone	bba-ch1-vocab bba-ch1-noun
+אֱלָהּ	noun ms — God, a god; pl אֱלָהִין	bba-ch1-vocab bba-ch1-noun
+אַמָּה	noun fs — cubit	bba-ch1-vocab bba-ch1-noun
+אַרְיֵה	noun ms — lion	bba-ch1-vocab bba-ch1-noun
+בַּ֫יִת	noun ms — house, temple	bba-ch1-vocab bba-ch1-noun
+גְּבַר	noun ms — man	bba-ch1-vocab bba-ch1-noun
+דִּין	noun ms — judgment, justice	bba-ch1-vocab bba-ch1-noun
+דָּת	noun fs — law, command, decree	bba-ch1-vocab bba-ch1-noun
+הֵיכַל	noun ms — palace, temple	bba-ch1-vocab bba-ch1-noun
+חַ֫יִל	noun ms — strength, army	bba-ch1-vocab bba-ch1-noun
+חַכִּים	adj ms — wise, wise man	bba-ch1-vocab bba-ch1-adj
+חָכְמָה	noun fs — wisdom	bba-ch1-vocab bba-ch1-noun
+חֵ֫לֶם	noun ms — dream	bba-ch1-vocab bba-ch1-noun
+חֲנֻכָּה	noun fs — dedication	bba-ch1-vocab bba-ch1-noun
+טַל	noun ms — dew	bba-ch1-vocab bba-ch1-noun
+יַד	noun fs — hand, paw; might, power	bba-ch1-vocab bba-ch1-noun
+יוֹם	noun ms — day	bba-ch1-vocab bba-ch1-noun
+כָּהֵן	noun ms — priest	bba-ch1-vocab bba-ch1-noun
+כֹּל	noun ms — all, every, whole	bba-ch1-vocab bba-ch1-noun
+כְּסַף	noun ms — silver	bba-ch1-vocab bba-ch1-noun
+כְּתָב	noun ms — writing, inscription, document, instruction, rule	bba-ch1-vocab bba-ch1-noun
+לְבַב	noun ms — heart; also spelled לֵב	bba-ch1-vocab bba-ch1-noun
+מְדִינָה	noun fs — province, city	bba-ch1-vocab bba-ch1-noun
+מִלָּה	noun fs — word, matter, affair	bba-ch1-vocab bba-ch1-noun
+מֶ֫לֶךְ	noun ms — king	bba-ch1-vocab bba-ch1-noun
+מִשְׁכַּב	noun ms — bed	bba-ch1-vocab bba-ch1-noun
+נְבִיא	noun ms — prophet	bba-ch1-vocab bba-ch1-noun
+נְהַר	noun ms — stream, river	bba-ch1-vocab bba-ch1-noun
+סְפַר	noun ms — book	bba-ch1-vocab bba-ch1-noun
+סָפַר	noun ms — scribe	bba-ch1-vocab bba-ch1-noun
+עֲבֵד	noun ms — servant, slave	bba-ch1-vocab bba-ch1-noun
+עֲבַר	noun ms — opposite, beyond	bba-ch1-vocab bba-ch1-noun
+עַ֫יִן	noun fs — eye	bba-ch1-vocab bba-ch1-noun
+עָלַם	noun ms — eternity, forever	bba-ch1-vocab bba-ch1-noun
+עַם	noun ms — people, nation	bba-ch1-vocab bba-ch1-noun
+עֲשַׂב	noun ms — plants, grass, herbage	bba-ch1-vocab bba-ch1-noun
+פֶּחָה	noun ms — governor	bba-ch1-vocab bba-ch1-noun
+צְלֵם	noun ms — statue, image	bba-ch1-vocab bba-ch1-noun
+צִפַּר	noun fs — bird	bba-ch1-vocab bba-ch1-noun
+קֶ֫רֶן	noun fs — horn (of animal); musical instrument	bba-ch1-vocab bba-ch1-noun
+רֵאשׁ	noun ms — head, top, chief	bba-ch1-vocab bba-ch1-noun
+רְגַל	noun fs — foot	bba-ch1-vocab bba-ch1-noun
+רוּחַ	noun fs — wind, spirit, mind	bba-ch1-vocab bba-ch1-noun
+שְׁאָר	noun ms — rest, remains, remainder, remnant	bba-ch1-vocab bba-ch1-noun
+שְׁלָם	noun ms — peace, welfare, health, greetings!	bba-ch1-vocab bba-ch1-noun
+שֻׁם	noun ms — name	bba-ch1-vocab bba-ch1-noun
+שְׁמַ֫יִן	noun md — heaven, sky	bba-ch1-vocab bba-ch1-noun
+שֵׁן	noun fs — tooth	bba-ch1-vocab bba-ch1-noun
+שְׁנָה	noun fs — year	bba-ch1-vocab bba-ch1-noun

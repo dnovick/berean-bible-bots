@@ -1,0 +1,20 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 8 — Vocabulary
+#tags column:3
+אֲחַשְׁדַּרְפַּן	noun ms — satrap	bba-ch8-vocab bba-ch8-noun
+אָשַׁף	noun ms — enchanter, sorcerer	bba-ch8-vocab bba-ch8-noun
+בְּעֵל־טְעֵם	noun ms — commander, owner, lord	bba-ch8-vocab bba-ch8-noun
+הַדָּבַר	noun ms — high-ranking official, counselor	bba-ch8-vocab bba-ch8-noun
+חַרְטֹם	noun ms — magician	bba-ch8-vocab bba-ch8-noun
+כְּנָת	noun ms — associate, colleague; (mp) כְּנָוָת	bba-ch8-vocab bba-ch8-noun
+סְגַן	noun ms — prefect, governor, official	bba-ch8-vocab bba-ch8-noun
+סְרַךְ	noun ms — high official, administrator	bba-ch8-vocab bba-ch8-noun
+רַבְרְבָן	noun ms — lord, noble	bba-ch8-vocab bba-ch8-noun
+שָׂב	noun ms — elder	bba-ch8-vocab bba-ch8-noun
+מַשְׁרוֹקִי	noun ms — pipe, musical instrument	bba-ch8-vocab bba-ch8-noun
+סוּמְפֹּנְיָה	noun fs — pipe, bagpipe, double-barreled flute	bba-ch8-vocab bba-ch8-noun
+פְּסַנְטֵרִין	noun ms — stringed instrument, harp	bba-ch8-vocab bba-ch8-noun
+קַיתְרוֹס	noun ms — musical instrument, zither; also spelled קַתְרוֹס	bba-ch8-vocab bba-ch8-noun
+שַׂבְּכָא	noun fs — stringed musical instrument, trigon, harp; also spelled סַבְּכָא	bba-ch8-vocab bba-ch8-noun

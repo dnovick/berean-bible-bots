@@ -1,4 +1,4 @@
-# BBH Chapter 28 — Hophal Strong Morphology Flashcards
+# Chapter 28 — Hophal Strong Morphology Deck
 
 24 cards covering 3 roots across all Hophal conjugations, emphasizing the Hiphil/Hophal relationship.
 

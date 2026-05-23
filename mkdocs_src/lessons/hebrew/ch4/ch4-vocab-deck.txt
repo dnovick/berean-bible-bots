@@ -1,0 +1,25 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 4 — Vocabulary
+#tags column:3
+גּוֹי	noun ms — nation, people; pl גּוֹיִם — 567×	bbh-ch4-vocab bbh-ch4-noun
+דֶּ֫רֶךְ	noun cs — way, road, journey — 712×	bbh-ch4-vocab bbh-ch4-noun
+הַר	noun ms — mountain, hill, hill country; pl הָרִים — 558×	bbh-ch4-vocab bbh-ch4-noun
+כֹּהֵן	noun ms — priest — 750×	bbh-ch4-vocab bbh-ch4-noun
+לֵב	noun ms — heart, mind, will; pl לִבּוֹת (also לֵבָב) — 854×	bbh-ch4-vocab bbh-ch4-noun
+מַ֫יִם	noun md — water; cstr מֵי — 585×	bbh-ch4-vocab bbh-ch4-noun
+מֶ֫לֶךְ	noun ms — king, ruler — 2,530×	bbh-ch4-vocab bbh-ch4-noun
+נָבִיא	noun ms — prophet — 317×	bbh-ch4-vocab bbh-ch4-noun
+נֶ֫פֶשׁ	noun fs — soul, life, person, neck, throat — 757×	bbh-ch4-vocab bbh-ch4-noun
+סוּס	noun ms — horse — 138×	bbh-ch4-vocab bbh-ch4-noun
+סֵ֫פֶר	noun ms — book, scroll, document; סֵפֶר הַתּוֹרָה "the book of the law" — 191×	bbh-ch4-vocab bbh-ch4-noun
+עֶ֫בֶד	noun ms — slave, servant — 803×	bbh-ch4-vocab bbh-ch4-noun
+עַ֫יִן	noun cs — eye, spring — 900×	bbh-ch4-vocab bbh-ch4-noun
+עִיר	noun fs — city, town; pl עָרִים — 1,088×	bbh-ch4-vocab bbh-ch4-noun
+צָבָא	noun cs — host, army, war, service; pl צְבָאוֹת; יְהוָה צְבָאוֹת "LORD of Hosts" — 487×	bbh-ch4-vocab bbh-ch4-noun
+קוֹל	noun ms — voice, sound, noise (also קֹל) — 505×	bbh-ch4-vocab bbh-ch4-noun
+רֹאשׁ	noun ms — head, top, chief; pl רָאשִׁים — 600×	bbh-ch4-vocab bbh-ch4-noun
+שֵׁם	noun ms — name, reputation — 864×	bbh-ch4-vocab bbh-ch4-noun
+שָׁנָה	noun fs — year; pl שָׁנִים — 878×	bbh-ch4-vocab bbh-ch4-noun
+תּוֹרָה	noun fs — law, instruction, teaching — 223×	bbh-ch4-vocab bbh-ch4-noun

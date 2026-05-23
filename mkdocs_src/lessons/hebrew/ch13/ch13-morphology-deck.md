@@ -1,4 +1,4 @@
-# Chapter 13 — Qal Perfect Anki Flashcard Deck
+# Chapter 13 — Qal Perfect Morphology Deck
 
 *~30 cards covering the Qal Perfect paradigm: fientive, stative-e, and stative-o roots.*
 *Import `ch13-morphology-deck.txt` directly into Anki (File → Import).*

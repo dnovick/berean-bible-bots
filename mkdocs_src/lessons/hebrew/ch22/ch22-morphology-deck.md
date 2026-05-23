@@ -1,4 +1,4 @@
-# Ch22 Morphology Deck — Qal Participle (Active and Passive)
+# Chapter 22 — Qal Participle Morphology Deck
 
 *32 cards · Active participle by root class (Groups 1–5) + Passive participle (Group 6) + Disambiguation (Group 7).*
 

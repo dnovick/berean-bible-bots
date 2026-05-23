@@ -1,0 +1,17 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 6 — Vocabulary
+#tags column:3
+דִּי	particle — (relative) that, which, who, what; (genitive) of	bba-ch6-vocab bba-ch6-particle
+מְדוֹר	noun ms — abode, dwelling	bba-ch6-vocab bba-ch6-noun
+מָרֵא	noun ms — lord	bba-ch6-vocab bba-ch6-noun
+סוֹף	noun ms — end	bba-ch6-vocab bba-ch6-noun
+עֲנַף	noun ms — bough, branch	bba-ch6-vocab bba-ch6-noun
+פֻּם	noun ms — entrance, opening, mouth	bba-ch6-vocab bba-ch6-noun
+פִּתְגָם	noun ms — decree, answer, word	bba-ch6-vocab bba-ch6-noun
+רְבוּ	noun fs — greatness	bba-ch6-vocab bba-ch6-noun
+רוּם	noun ms — height, highest point	bba-ch6-vocab bba-ch6-noun
+רַעְיוֹן	noun ms — thought	bba-ch6-vocab bba-ch6-noun
+שָׁלוּ	noun fs — negligence	bba-ch6-vocab bba-ch6-noun
+שָׁעָה	noun fs — moment, short time	bba-ch6-vocab bba-ch6-noun

@@ -1,0 +1,25 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 4 — Vocabulary
+#tags column:3
+ἄγγελος, -ου, ὁ	noun 2nd decl. m — angel; messenger — 175×	bbg-ch4-vocab bbg-ch4-noun
+ἀμήν	adverb — verily, truly, amen, so let it be — 128×	bbg-ch4-vocab bbg-ch4-other
+ἄνθρωπος, -ου, ὁ	noun 2nd decl. m — man; person, human being; people, mankind — 550×	bbg-ch4-vocab bbg-ch4-noun
+ἀπόστολος, -ου, ὁ	noun 2nd decl. m — apostle; envoy, messenger — 81×	bbg-ch4-vocab bbg-ch4-noun
+γραφή, -ῆς, ἡ	noun 1st decl. f — writing; Scripture — 50×	bbg-ch4-vocab bbg-ch4-noun
+δόξα, -ης, ἡ	noun 1st decl. f — glory, majesty, fame — 166×	bbg-ch4-vocab bbg-ch4-noun
+ἐγώ	pronoun — I — 1,800×	bbg-ch4-vocab bbg-ch4-other
+ἔσχατος, -η, -ον	adjective — last — 52×	bbg-ch4-vocab bbg-ch4-adj
+ζωή, -ῆς, ἡ	noun 1st decl. f — life — 135×	bbg-ch4-vocab bbg-ch4-noun
+θεός, -οῦ, ὁ	noun 2nd decl. m — God, god — 1,317×	bbg-ch4-vocab bbg-ch4-noun
+καί	conjunction — and; even, also; namely — 9,162×	bbg-ch4-vocab bbg-ch4-other
+καρδία, -ας, ἡ	noun 1st decl. f — heart; inner self — 156×	bbg-ch4-vocab bbg-ch4-noun
+κόσμος, -ου, ὁ	noun 2nd decl. m — world, universe; mankind — 186×	bbg-ch4-vocab bbg-ch4-noun
+λόγος, -ου, ὁ	noun 2nd decl. m — word, Word; statement, message — 330×	bbg-ch4-vocab bbg-ch4-noun
+πνεῦμα, -ατος, τό	noun 3rd decl. n — spirit, Spirit; wind, breath; inner life — 379×	bbg-ch4-vocab bbg-ch4-noun
+προφήτης, -ου, ὁ	noun 1st decl. m — prophet — 144×	bbg-ch4-vocab bbg-ch4-noun
+σάββατον, -ου, τό	noun 2nd decl. n — Sabbath; week — 68×	bbg-ch4-vocab bbg-ch4-noun
+φωνή, -ῆς, ἡ	noun 1st decl. f — sound, noise; voice — 139×	bbg-ch4-vocab bbg-ch4-noun
+Χριστός, -οῦ, ὁ	noun 2nd decl. m — Christ, Messiah; Anointed One — 529×	bbg-ch4-vocab bbg-ch4-noun
+Γαλιλαία, -ας, ἡ	proper noun f — Galilee — 61×	bbg-ch4-vocab bbg-ch4-proper

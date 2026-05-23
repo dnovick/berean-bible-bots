@@ -1,4 +1,4 @@
-# Chapter 24 — Niphal Anki Flashcard Deck
+# Chapter 24 — Niphal Morphology Deck
 
 *28 cards covering all 8 conjugation forms across key Niphal roots.*
 *Import `ch24-morphology-deck.txt` directly into Anki (File → Import).*
