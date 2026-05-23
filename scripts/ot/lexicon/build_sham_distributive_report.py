@@ -6,6 +6,7 @@ matplotlib.use('Agg')  # noqa: E402
 import matplotlib.pyplot as plt  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
+from bidi.algorithm import get_display  # noqa: E402
 from matplotlib.patches import Patch  # noqa: E402
 from pathlib import Path  # noqa: E402
 
@@ -74,9 +75,9 @@ fig, ax = plt.subplots(figsize=(16, 5))
 bars = ax.bar(x, pvals, color=colors, width=0.7, edgecolor='white', linewidth=0.4)
 ax.set_xticks(x)
 ax.set_xticklabels([LABELS[b] for b in OT_BOOKS], rotation=45, ha='right', fontsize=7)
-ax.set_ylabel('שָׁם occurrences per 1,000 words', fontsize=10)
+ax.set_ylabel(get_display('Occurrences of שָׁם per 1,000 words'), fontsize=10)
 ax.set_title(
-    'Frequency of שָׁם (H8033) Across the OT\n(occurrences per 1,000 words per book)',
+    get_display('Frequency of שָׁם (H8033) Across the OT') + '\n(occurrences per 1,000 words per book)',
     fontsize=11, pad=10,
 )
 ax.grid(axis='y', linestyle='--', alpha=0.4)
@@ -101,8 +102,8 @@ fig, ax = plt.subplots(figsize=(14, 4.5))
 rbars = ax.bar(x, rep_stats.values, color=colors, width=0.7, edgecolor='white', linewidth=0.4)
 ax.set_xticks(x)
 ax.set_xticklabels([LABELS[b] for b in OT_BOOKS], rotation=45, ha='right', fontsize=7)
-ax.set_ylabel('Verses with ≥2 occurrences of שָׁם', fontsize=10)
-ax.set_title('Verses Containing Repeated שָׁם (≥2 occurrences) by OT Book', fontsize=11, pad=10)
+ax.set_ylabel(get_display('Verses with ≥2 occurrences of שָׁם'), fontsize=10)
+ax.set_title(get_display('Verses Containing Repeated שָׁם (≥2 occurrences) by OT Book'), fontsize=11, pad=10)
 ax.grid(axis='y', linestyle='--', alpha=0.4)
 ax.spines[['top', 'right']].set_visible(False)
 ax.legend(handles=legend_elements, fontsize=8, loc='upper right')
