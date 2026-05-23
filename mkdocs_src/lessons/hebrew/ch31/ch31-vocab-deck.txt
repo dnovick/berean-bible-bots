@@ -1,0 +1,17 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 31 — Vocabulary
+#tags column:3
+אָ֫וֶן	noun ms — iniquity, wickedness, evildoer — 81×	bbh-ch31-vocab bbh-ch31-noun
+אוֹצָר	noun ms — treasure, treasury, storehouse — 79×	bbh-ch31-vocab bbh-ch31-noun
+אוֹת	noun cs — sign, mark, pledge; cp אֹתוֹת — 79×	bbh-ch31-vocab bbh-ch31-noun
+גּוֹרָל	noun ms — lot, portion, allotment — 77×	bbh-ch31-vocab bbh-ch31-noun
+חוֹמָה	noun fs — wall — 133×	bbh-ch31-vocab bbh-ch31-noun
+יְשׁוּעָה	noun fs — salvation, help, deliverance — 78×	bbh-ch31-vocab bbh-ch31-noun
+מִקְנֶה	noun ms — cattle, livestock, property — 76×	bbh-ch31-vocab bbh-ch31-noun
+מִשְׁמֶ֫רֶת	noun fs — watch, guard, responsibility — 78×	bbh-ch31-vocab bbh-ch31-noun
+נֶ֫גַע	noun ms — plague, affliction — 78×	bbh-ch31-vocab bbh-ch31-noun
+צַר	noun ms — adversary, enemy — 72×	bbh-ch31-vocab bbh-ch31-noun
+קָרְבָּן	noun ms — gift, offering — 80×	bbh-ch31-vocab bbh-ch31-noun
+שֶׁ֫קֶל	noun ms — shekel, measurement of weight — 88×	bbh-ch31-vocab bbh-ch31-noun

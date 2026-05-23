@@ -1,0 +1,38 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 19 — Pronominal Suffixes on Verbs
+#tags column:3
+
+שְׁמָרַ֥נִי	שמר Qal Perf. 3ms + 1cs · "he kept me" · Connecting vowel qamets before נִי	suffix-perfect bbh-ch19
+שְׁמָרוֹ	שמר Qal Perf. 3ms + 3ms · "he kept him" · Short form וֹ (holem-waw)	suffix-perfect bbh-ch19
+שְׁמָרָ֥נוּ	שמר Qal Perf. 3ms + 1cp · "he kept us" · Qamets before נוּ	suffix-perfect bbh-ch19
+שְׁמַרְתַּ֥נִי	שמר Qal Perf. 2ms + 1cs · "you kept me" · 2ms form + 1cs suffix	suffix-perfect bbh-ch19
+שְׁמַרְתִּ֥יהוּ	שמר Qal Perf. 1cs + 3ms · "I kept him" · 1cs ending (תִּי) + 3ms suffix	suffix-perfect bbh-ch19
+שְׁלָחַ֥נִי	שלח Qal Perf. 3ms + 1cs · "he sent me" · Gen 45:5; God sent Joseph	suffix-perfect bbh-ch19
+עֲזָבַ֥נִי	עזב Qal Perf. 3ms + 1cs · "he forsook me" · Psa 22:2 lament	suffix-perfect bbh-ch19
+יִשְׁמְרֵ֥נִי	שמר Qal Impf. 3ms + 1cs · "he will keep me" · Tsere linking vowel	suffix-imperfect bbh-ch19
+יִשְׁמְרֶ֥נּוּ	שמר Qal Impf. 3ms + 3ms · "he will keep him" · Energic nun (נּ dagesh) before 3ms suffix	suffix-imperfect suffix-energic-nun bbh-ch19
+יִשְׁמְרֵ֥נוּ	שמר Qal Impf. 3ms + 1cp · "he will keep us" · No energic nun before 1cp נוּ	suffix-imperfect bbh-ch19
+יִמְצָאֵ֥נִי	מצא Qal Impf. 3ms + 1cs · "he will find me" · III-א; aleph quiesces	suffix-imperfect bbh-ch19
+יִשְׁלָחֶ֥נּוּ	שלח Qal Impf. 3ms + 3ms · "he will send him" · Energic nun + 3ms	suffix-imperfect suffix-energic-nun bbh-ch19
+יִרְאֶ֥נּוּ	ראה Qal Impf. 3ms + 3ms · "he will see him" · III-ה + energic nun + 3ms	suffix-imperfect suffix-energic-nun bbh-ch19
+וַיִּשְׁמְרֵ֥הוּ	שמר Qal Wayyiq. 3ms + 3ms · "and he kept him" · Narrative; tsere + הוּ	suffix-wayyiqtol bbh-ch19
+וַיִּשְׁלָחֵ֥הוּ	שלח Qal Wayyiq. 3ms + 3ms · "and he sent him" · Frequent in Genesis	suffix-wayyiqtol bbh-ch19
+וַיַּרְאֵ֥הוּ	ראה Qal Wayyiq. 3ms + 3ms · "and he showed him" · III-ה + 3ms suffix	suffix-wayyiqtol bbh-ch19
+וַיִּשְׁמְרֵ֥נִי	שמר Qal Wayyiq. 3ms + 1cs · "and he kept me"	suffix-wayyiqtol bbh-ch19
+שָׁמְרֵ֥נִי	שמר Qal Imper. 2ms + 1cs · "Keep me!" · Psa 16:1; standard prayer address	suffix-imperative bbh-ch19
+שָׁמְרֵ֥הוּ	שמר Qal Imper. 2ms + 3ms · "Keep him!"	suffix-imperative bbh-ch19
+שַׁלְּחֵ֥נִי	שלח Piel Imper. 2ms + 1cs · "Send me!" · Isa 6:8; Isaiah's call response	suffix-imperative bbh-ch19
+שִׁמְר֥וּנִי	שמר Qal Imper. 2mp + 1cs · "Keep me! (pl.)"	suffix-imperative bbh-ch19
+בְּ/שָׁמְר/וֹ	שמר Qal Inf.Const. + בְּ + 3ms SUBJECT · "when he kept" · Suffix = subject, not object	suffix-inf-construct bbh-ch19
+כִּ/שְׁמֹ֣עַ/וֹ	שמע Qal Inf.Const. + כְּ + 3ms SUBJECT · "when he heard" · Most common narrative temporal formula	suffix-inf-construct bbh-ch19
+בְּ/רֹאֹת/וֹ	ראה Qal Inf.Const. + בְּ + 3ms SUBJECT · "when he saw" · III-ה Inf.Const. + 3ms	suffix-inf-construct bbh-ch19
+כְּ/צֵאת/וֹ	יצא Qal Inf.Const. + כְּ + 3ms SUBJECT · "when he went out" · I-י Inf.Const. (צֵאת) + 3ms	suffix-inf-construct bbh-ch19
+בִּ/הְיוֹת/וֹ	היה Qal Inf.Const. + בְּ + 3ms SUBJECT · "while he was" · III-ה + 3ms; temporal durative	suffix-inf-construct bbh-ch19
+נִי (on verb)	1cs object suffix · "me" · Most common verb suffix	suffix-forms bbh-ch19
+ךָ (on verb)	2ms object suffix · "you (ms)"	suffix-forms bbh-ch19
+הוּ / וֹ (on verb)	3ms object suffix · "him / it" · Short form וֹ very common	suffix-forms bbh-ch19
+נוּ (on verb)	1cp object suffix · "us" · Shureq + nun	suffix-forms bbh-ch19
+נּוּ (dagesh in impf.)	Energic nun + 3ms suffix · "him" · Distinguishes from 1cp נוּ — look for dagesh in nun	suffix-forms suffix-energic-nun bbh-ch19
+הָ (on verb)	3fs object suffix · "her / it (f)" · Final he with qamets	suffix-forms bbh-ch19

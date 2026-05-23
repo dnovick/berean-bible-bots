@@ -1,0 +1,18 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 23 — Vocabulary
+#tags column:3
+בֶּגֶד	noun (ms) — clothes, garment, covering — 216×	bbh-ch23-vocab bbh-ch23-noun
+בְּהֵמָה	noun (fs) — animal(s), beast(s), cattle — 190×	bbh-ch23-vocab bbh-ch23-noun
+בְּכוֹר	noun (ms) — firstborn, oldest offspring — 120×	bbh-ch23-vocab bbh-ch23-noun
+חָכְמָה	noun (fs) — wisdom, skill — 153×	bbh-ch23-vocab bbh-ch23-noun
+חֵמָה	noun (fs) — wrath, heat, poison — 125×	bbh-ch23-vocab bbh-ch23-noun
+חָצֵר	noun (cs) — courtyard, village, settlement; (cp) חֲצֵרִים and חֲצֵרוֹת — 192×	bbh-ch23-vocab bbh-ch23-noun
+כֹּחַ	noun (ms) — strength, power — 126×	bbh-ch23-vocab bbh-ch23-noun
+נְחֹשֶׁת	noun (fs) — copper, bronze — 139×	bbh-ch23-vocab bbh-ch23-noun
+נָשִׂיא	noun (ms) — chief, leader, prince — 130×	bbh-ch23-vocab bbh-ch23-noun
+עֶצֶם	noun (fs) — bone, skeleton — 126×	bbh-ch23-vocab bbh-ch23-noun
+עֶרֶב	noun (ms) — evening, sunset — 134×	bbh-ch23-vocab bbh-ch23-noun
+קָהָל	noun (ms) — assembly, community, crowd — 123×	bbh-ch23-vocab bbh-ch23-noun
+שֶׁמֶן	noun (ms) — oil, fat — 193×	bbh-ch23-vocab bbh-ch23-noun

@@ -1,0 +1,30 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 30 — Piel Strong
+#tags column:3
+
+דִּבֵּר	דבר Piel+Perfect+3ms — "he spoke" — denominative (from דָּבָר, word); Hireq+R1, dagesh in R2, Tsere under R2	piel-perfect denominative bbh-ch30
+דִּבַּרְתָּ	דבר Piel+Perfect+2ms — "you spoke" — 2ms suffix תָּ; dagesh in R2	piel-perfect denominative bbh-ch30
+יְדַבֵּר	דבר Piel+Imperfect+3ms — "he will speak" — יְ prefix (shewa) + patach + dagesh + tsere	piel-imperfect denominative bbh-ch30
+וַיְדַבֵּר	דבר Piel+Wayyiqtol+3ms — "and he spoke" — וַיְ prefix (patach+shewa); contrast Qal וַיִּ	piel-wayyiqtol denominative bbh-ch30
+דַּבֵּר	דבר Piel+Imperative+2ms — "speak!" — patach + dagesh + tsere; identical to Inf. Construct	piel-imperative denominative bbh-ch30
+דַּבֵּר (+ לְ/בְּ/כְּ)	דבר Piel+Infinitive Construct — "to speak / in speaking" — identical form to Imperative 2ms; prepositions distinguish	piel-inf-construct denominative bbh-ch30
+מְדַבֵּר	דבר Piel+Participle+ms active — "speaking" — מְ prefix + patach + dagesh + tsere	piel-participle denominative bbh-ch30
+קִדֵּשׁ	קדש Piel+Perfect+3ms — "he consecrated" — factitive (made holy); Hireq + dagesh + Tsere	piel-perfect factitive bbh-ch30
+קִדַּשְׁתָּ	קדש Piel+Perfect+2ms — "you consecrated" — 2ms suffix; dagesh in R2	piel-perfect factitive bbh-ch30
+יְקַדֵּשׁ	קדש Piel+Imperfect+3ms — "he will consecrate" — יְ prefix + patach + dagesh + tsere	piel-imperfect factitive bbh-ch30
+אֲקַדֵּשׁ	קדש Piel+Imperfect+1cs — "I will consecrate" — אֲ prefix (hateph-patach); Exo 29:44	piel-imperfect factitive bbh-ch30
+וַיְקַדֵּשׁ	קדש Piel+Wayyiqtol+3ms — "and he consecrated" — וַיְ prefix; Gen 2:3	piel-wayyiqtol factitive bbh-ch30
+קַדֵּשׁ	קדש Piel+Imperative+2ms — "consecrate!" — patach + dagesh + tsere; Exo 13:2	piel-imperative factitive bbh-ch30
+מְקַדֵּשׁ	קדש Piel+Participle+ms — "the one who consecrates" — מְ prefix + patach + dagesh + tsere	piel-participle factitive bbh-ch30
+בֵּרַךְ	ברך Piel+Perfect+3ms — "he blessed" — intensive; R2=ר rejects dagesh; Tsere under prefix consonant compensates	piel-perfect intensive bbh-ch30
+בֵּרַכְתִּי	ברך Piel+Perfect+1cs — "I blessed"	piel-perfect intensive bbh-ch30
+יְבָרֵךְ	ברך Piel+Imperfect+3ms — "he will bless" — יְ prefix; R2=ר rejects dagesh; tsere marks Piel	piel-imperfect intensive bbh-ch30
+וַיְבָרֶךְ	ברך Piel+Wayyiqtol+3ms — "and he blessed" — Gen 1:22; וַיְ prefix marks Piel; ר cannot take dagesh	piel-wayyiqtol intensive bbh-ch30
+בָּרֵךְ	ברך Piel+Infinitive Absolute — cognate: בָּרֵךְ אֲבָרֶכְךָ "I will surely bless" (Gen 22:17)	piel-inf-absolute intensive bbh-ch30
+צִוָּה	צוה Piel+Perfect+3ms — "he commanded" — simple action (no meaningful Qal); 485× in OT	piel-perfect simple-action bbh-ch30
+צִוִּיתִי	צוה Piel+Perfect+1cs — "I commanded" — God speaking	piel-perfect simple-action bbh-ch30
+יְצַוֶּה	צוה Piel+Imperfect+3ms — "he will command"	piel-imperfect simple-action bbh-ch30
+וַיְצַו	צוה Piel+Wayyiqtol+3ms — "and he commanded" — apocopated III-ה Wayyiqtol	piel-wayyiqtol simple-action bbh-ch30
+צַו	צוה Piel+Imperative+2ms — "command!"	piel-imperative simple-action bbh-ch30

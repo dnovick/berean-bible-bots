@@ -1,0 +1,40 @@
+יִמְצָא	Root: מָצָא | Imperfect 3ms | he will find | III-א	BBH Chapter 16 — Qal Imperfect Weak
+תִּקְרָא	Root: קָרָא | Imperfect 3/2ms | he/you will call | III-א	BBH Chapter 16 — Qal Imperfect Weak
+יִבְנֶ֫ה	Root: בָּנָה | Imperfect 3ms | he will build | III-ה	BBH Chapter 16 — Qal Imperfect Weak
+יִ֫בֶן	Root: בָּנָה | Jussive 3ms | let him build | III-ה Jussive	BBH Chapter 16 — Qal Imperfect Weak
+וַיִּ֫בֶן (Gen 2:22)	Root: בָּנָה | Wayyiqtol 3ms | and he built | III-ה	BBH Chapter 16 — Qal Imperfect Weak
+יַעֲשֶׂ֫ה	Root: עָשָׂה | Imperfect 3ms | he will make | III-ה	BBH Chapter 16 — Qal Imperfect Weak
+וַיַּ֫עַשׂ (Gen 1:7)	Root: עָשָׂה | Wayyiqtol 3ms | and he made | III-ה	BBH Chapter 16 — Qal Imperfect Weak
+יִהְיֶ֫ה	Root: הָיָה | Imperfect 3ms | he will be | III-ה	BBH Chapter 16 — Qal Imperfect Weak
+יְהִ֫י (Gen 1:3)	Root: הָיָה | Jussive 3ms | let there be | III-ה Jussive	BBH Chapter 16 — Qal Imperfect Weak
+יִשְׁלַ֫חַ	Root: שָׁלַח | Imperfect 3ms | he will send | III-ח	BBH Chapter 16 — Qal Imperfect Weak
+וַיִּשְׁלַח	Root: שָׁלַח | Wayyiqtol 3ms | and he sent | III-ח	BBH Chapter 16 — Qal Imperfect Weak
+יִשְׁמַ֫עַ	Root: שָׁמַע | Imperfect 3ms | he will hear | III-ע	BBH Chapter 16 — Qal Imperfect Weak
+וַיִּשְׁמַע	Root: שָׁמַע | Wayyiqtol 3ms | and he heard | III-ע	BBH Chapter 16 — Qal Imperfect Weak
+יַעֲמֹד	Root: עָמַד | Imperfect 3ms | he will stand | I-guttural	BBH Chapter 16 — Qal Imperfect Weak
+וַיַּעֲמֹד	Root: עָמַד | Wayyiqtol 3ms | and he stood | I-guttural	BBH Chapter 16 — Qal Imperfect Weak
+יֹאמַר (Gen 1:3)	Root: אָמַר | Imperfect 3ms | he will say | I-guttural (א)	BBH Chapter 16 — Qal Imperfect Weak
+וַיֹּ֥אמֶר (Gen 1:3)	Root: אָמַר | Wayyiqtol 3ms | and he said | I-guttural (א)	BBH Chapter 16 — Qal Imperfect Weak
+יִתֵּן	Root: נָתַן | Imperfect 3ms | he will give | I-נ	BBH Chapter 16 — Qal Imperfect Weak
+וַיִּתֵּן	Root: נָתַן | Wayyiqtol 3ms | and he gave | I-נ	BBH Chapter 16 — Qal Imperfect Weak
+תִּתֵּן (Gen 4:12)	Root: נָתַן | Imperfect 3fs | she will yield | I-נ	BBH Chapter 16 — Qal Imperfect Weak
+יִפֹּל	Root: נָפַל | Imperfect 3ms | he will fall | I-נ	BBH Chapter 16 — Qal Imperfect Weak
+וַיִּפֹּל	Root: נָפַל | Wayyiqtol 3ms | and he fell | I-נ	BBH Chapter 16 — Qal Imperfect Weak
+יֵדַע	Root: יָדַע | Imperfect 3ms | he will know | I-י	BBH Chapter 16 — Qal Imperfect Weak
+וַיֵּ֤דַע (Gen 4:17)	Root: יָדַע | Wayyiqtol 3ms | and he knew | I-י	BBH Chapter 16 — Qal Imperfect Weak
+יֵשֵׁב	Root: יָשַׁב | Imperfect 3ms | he will sit/dwell | I-י	BBH Chapter 16 — Qal Imperfect Weak
+יֵצֵא	Root: יָצָא | Imperfect 3ms | he will go out | I-י	BBH Chapter 16 — Qal Imperfect Weak
+וַיֵּ֥צֵא (Gen 4:16)	Root: יָצָא | Wayyiqtol 3ms | and he went out | I-י	BBH Chapter 16 — Qal Imperfect Weak
+יָקוּם	Root: קוּם | Imperfect 3ms | he will arise | Biconsonantal	BBH Chapter 16 — Qal Imperfect Weak
+וַיָּ֫קׇם (Gen 22:3)	Root: קוּם | Wayyiqtol 3ms | and he arose | Biconsonantal	BBH Chapter 16 — Qal Imperfect Weak
+יָבוֹא	Root: בּוֹא | Imperfect 3ms | he will come | Biconsonantal	BBH Chapter 16 — Qal Imperfect Weak
+וַיָּ֫בֹא	Root: בּוֹא | Wayyiqtol 3ms | and he came | Biconsonantal	BBH Chapter 16 — Qal Imperfect Weak
+וַיָּבֹ֙אוּ֙ (Gen 19:1)	Root: בּוֹא | Wayyiqtol 3mp | and they came | Biconsonantal	BBH Chapter 16 — Qal Imperfect Weak
+יָשׁוּב	Root: שׁוּב | Imperfect 3ms | he will return | Biconsonantal	BBH Chapter 16 — Qal Imperfect Weak
+יָמוּת	Root: מוּת | Imperfect 3ms | he will die | Biconsonantal	BBH Chapter 16 — Qal Imperfect Weak
+יָסֹב	Root: סָבַב | Imperfect 3ms | he will surround | Geminate	BBH Chapter 16 — Qal Imperfect Weak
+יִסֹּב	Root: סָבַב | Imperfect 3ms | he will surround | Geminate	BBH Chapter 16 — Qal Imperfect Weak
+וַיָּ֫סׇּב	Root: סָבַב | Wayyiqtol 3ms | and he turned | Geminate	BBH Chapter 16 — Qal Imperfect Weak
+יִתֵּן (Num 10:29)	Root: נָתַן | Imperfect 3ms | he will give | I-נ	BBH Chapter 16 — Qal Imperfect Weak
+יֵלֵד	Root: יָלַד | Imperfect 3ms | he will beget | I-י	BBH Chapter 16 — Qal Imperfect Weak
+וַיֵּלֶד	Root: יָלַד | Wayyiqtol 3ms | and he begot | I-י	BBH Chapter 16 — Qal Imperfect Weak

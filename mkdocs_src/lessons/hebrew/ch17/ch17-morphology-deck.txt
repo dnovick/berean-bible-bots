@@ -1,0 +1,38 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 17 — Wayyiqtol and Weqatal
+#tags column:3
+
+וַיֹּאמֶר	אמר · Wayyiqtol · 3ms · "and he said" · Most frequent OT verb form; I-aleph holem prefix	wayyiqtol-strong bbh-ch17
+וַתֹּאמֶר	אמר · Wayyiqtol · 3fs · "and she said" · תּ prefix marks 3fs	wayyiqtol-strong bbh-ch17
+וַיֹּאמְרוּ	אמר · Wayyiqtol · 3mp · "and they said" · Plural narrative speech formula	wayyiqtol-strong bbh-ch17
+וַיִּקְטֹל	קטל · Wayyiqtol · 3ms · "and he killed" · Strong paradigm model; dagesh forte in יּ	wayyiqtol-strong bbh-ch17
+וָאֶקְטֹל	קטל · Wayyiqtol · 1cs · "and I killed" · Waw → וָ before aleph; no dagesh possible	wayyiqtol-strong bbh-ch17
+וַנִּקְטֹל	קטל · Wayyiqtol · 1cp · "and we killed" · Nun prefix with dagesh forte	wayyiqtol-strong bbh-ch17
+וַיִּכְתְּבוּ	כתב · Wayyiqtol · 3mp · "and they wrote" · Shureq suffix; dagesh in יּ	wayyiqtol-strong bbh-ch17
+וַתִּשְׁמֹרְנָה	שמר · Wayyiqtol · 3/2fp · "and they/you kept (f)" · נָה suffix for 3/2fp	wayyiqtol-strong bbh-ch17
+וַיְהִי	היה · Wayyiqtol · 3ms · "and it was / came to pass" · III-ה short form; most common episode opener	wayyiqtol-III-he bbh-ch17
+וַיַּרְא	ראה · Wayyiqtol · 3ms · "and he saw" · III-ה short form; ה dropped; frequent in narrative	wayyiqtol-III-he bbh-ch17
+וַיַּעַשׂ	עשה · Wayyiqtol · 3ms · "and he did/made" · III-ה + I-gutt.; short form; patach prefix	wayyiqtol-III-he bbh-ch17
+וַיִּבֶן	בנה · Wayyiqtol · 3ms · "and he built" · III-ה short form; ה dropped; dagesh in נּ	wayyiqtol-III-he bbh-ch17
+וַיֵּפֶן	פנה · Wayyiqtol · 3ms · "and he turned" · III-ה short form; seghol under נ	wayyiqtol-III-he bbh-ch17
+וַיָּקׇם	קום · Wayyiqtol · 3ms · "and he arose" · Biconsonantal short form; qamets hatuf in root	wayyiqtol-biconsonantal bbh-ch17
+וַיָּבֹא	בוא · Wayyiqtol · 3ms · "and he came" · Biconsonantal; qamets prefix	wayyiqtol-biconsonantal bbh-ch17
+וַיָּבֹאוּ	בוא · Wayyiqtol · 3mp · "and they came" · 3mp with -וּ suffix	wayyiqtol-biconsonantal bbh-ch17
+וַיָּשׇׁב	שוב · Wayyiqtol · 3ms · "and he returned" · Biconsonantal short form	wayyiqtol-biconsonantal bbh-ch17
+וַיָּסׇּב	סבב · Wayyiqtol · 3ms · "and he turned around" · Geminate; dagesh forte in ב (R2=R3)	wayyiqtol-geminate bbh-ch17
+וַיֵּלֶךְ	הלך · Wayyiqtol · 3ms · "and he went" · I-י: tsere prefix (יֵ–); ה absent	wayyiqtol-I-yod bbh-ch17
+וַיֵּדַע	ידע · Wayyiqtol · 3ms · "and he knew" · I-י: tsere prefix; yod at R1 contracted	wayyiqtol-I-yod bbh-ch17
+וַיֵּצֵא	יצא · Wayyiqtol · 3ms · "and he went out" · I-י + III-א; tsere prefix	wayyiqtol-I-yod bbh-ch17
+וַיִּתֵּן	נתן · Wayyiqtol · 3ms · "and he gave" · I-נ: nun assimilated; dagesh forte in תּ	wayyiqtol-I-nun bbh-ch17
+וַיֵּשֶׁב	ישב · Wayyiqtol · 3ms · "and he sat/dwelt" · I-י: tsere prefix; seghol in root	wayyiqtol-I-yod bbh-ch17
+וְשָׁמַרְתָּ	שמר · Weqatal · 2ms · "and you shall keep" · Follows imperfect/command; stress on -tā	weqatal-strong bbh-ch17
+וְאָהַבְתָּ	אהב · Weqatal · 2ms · "and you shall love" · Deu 6:5; classic command chain	weqatal-strong bbh-ch17
+וּשְׁמַרְתֶּם	שמר · Weqatal · 2mp · "and you (pl.) shall keep" · Waw → וּ before shewa; 2mp	weqatal-strong bbh-ch17
+וְשָׁמְרוּ	שמר · Weqatal · 3cp · "and they shall keep" · Future chain; identical to perfect without context	weqatal-strong bbh-ch17
+וְנָתַתָּ	נתן · Weqatal · 2ms · "and you shall give" · I-נ regular in perfect/weqatal	weqatal-strong bbh-ch17
+וְעָשִׂיתָ	עשה · Weqatal · 2ms · "and you shall do" · III-ה perfect 2ms + וְ; hireq-yod before suffix	weqatal-weak bbh-ch17
+וְשִׁנַּנְתָּם	שנן · Piel Weqatal · 2ms · "and you shall teach diligently" · Deu 6:7; Piel form in command chain	weqatal-piel bbh-ch17
+וְדִבַּרְתָּ	דבר · Piel Weqatal · 2ms · "and you shall speak" · Deu 6:7; Piel weqatal	weqatal-piel bbh-ch17
+וְהָיָה	היה · Weqatal · 3ms · "and it shall be" · III-ה; common prophetic/legal opener	weqatal-weak bbh-ch17

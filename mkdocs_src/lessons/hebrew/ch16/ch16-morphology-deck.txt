@@ -1,0 +1,45 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 16 — Qal Imperfect Weak
+#tags column:3
+יִמְצָא	Root: מָצָא | Imperfect 3ms | he will find | III-א	qal-imperfect-lamed-aleph bbh-ch16
+תִּקְרָא	Root: קָרָא | Imperfect 3/2ms | he/you will call | III-א	qal-imperfect-lamed-aleph bbh-ch16
+יִבְנֶ֫ה	Root: בָּנָה | Imperfect 3ms | he will build | III-ה	qal-imperfect-lamed-he bbh-ch16
+יִ֫בֶן	Root: בָּנָה | Jussive 3ms | let him build | III-ה Jussive	qal-jussive-lamed-he bbh-ch16
+וַיִּ֫בֶן (Gen 2:22)	Root: בָּנָה | Wayyiqtol 3ms | and he built | III-ה	qal-wayyiqtol-lamed-he bbh-ch16
+יַעֲשֶׂ֫ה	Root: עָשָׂה | Imperfect 3ms | he will make | III-ה	qal-imperfect-lamed-he bbh-ch16
+וַיַּ֫עַשׂ (Gen 1:7)	Root: עָשָׂה | Wayyiqtol 3ms | and he made | III-ה	qal-wayyiqtol-lamed-he bbh-ch16
+יִהְיֶ֫ה	Root: הָיָה | Imperfect 3ms | he will be | III-ה	qal-imperfect-lamed-he bbh-ch16
+יְהִ֫י (Gen 1:3)	Root: הָיָה | Jussive 3ms | let there be | III-ה Jussive	qal-jussive-lamed-he bbh-ch16
+יִשְׁלַ֫חַ	Root: שָׁלַח | Imperfect 3ms | he will send | III-ח	qal-imperfect-lamed-guttural bbh-ch16
+וַיִּשְׁלַח	Root: שָׁלַח | Wayyiqtol 3ms | and he sent | III-ח	qal-wayyiqtol-lamed-guttural bbh-ch16
+יִשְׁמַ֫עַ	Root: שָׁמַע | Imperfect 3ms | he will hear | III-ע	qal-imperfect-lamed-guttural bbh-ch16
+וַיִּשְׁמַע	Root: שָׁמַע | Wayyiqtol 3ms | and he heard | III-ע	qal-wayyiqtol-lamed-guttural bbh-ch16
+יַעֲמֹד	Root: עָמַד | Imperfect 3ms | he will stand | I-guttural	qal-imperfect-pe-guttural bbh-ch16
+וַיַּעֲמֹד	Root: עָמַד | Wayyiqtol 3ms | and he stood | I-guttural	qal-wayyiqtol-pe-guttural bbh-ch16
+יֹאמַר (Gen 1:3)	Root: אָמַר | Imperfect 3ms | he will say | I-guttural (א)	qal-imperfect-pe-guttural bbh-ch16
+וַיֹּ֥אמֶר (Gen 1:3)	Root: אָמַר | Wayyiqtol 3ms | and he said | I-guttural (א)	qal-wayyiqtol-pe-guttural bbh-ch16
+יִתֵּן	Root: נָתַן | Imperfect 3ms | he will give | I-נ	qal-imperfect-pe-nun bbh-ch16
+וַיִּתֵּן	Root: נָתַן | Wayyiqtol 3ms | and he gave | I-נ	qal-wayyiqtol-pe-nun bbh-ch16
+תִּתֵּן (Gen 4:12)	Root: נָתַן | Imperfect 3fs | she will yield | I-נ	qal-imperfect-pe-nun bbh-ch16
+יִפֹּל	Root: נָפַל | Imperfect 3ms | he will fall | I-נ	qal-imperfect-pe-nun bbh-ch16
+וַיִּפֹּל	Root: נָפַל | Wayyiqtol 3ms | and he fell | I-נ	qal-wayyiqtol-pe-nun bbh-ch16
+יֵדַע	Root: יָדַע | Imperfect 3ms | he will know | I-י	qal-imperfect-pe-yod bbh-ch16
+וַיֵּ֤דַע (Gen 4:17)	Root: יָדַע | Wayyiqtol 3ms | and he knew | I-י	qal-wayyiqtol-pe-yod bbh-ch16
+יֵשֵׁב	Root: יָשַׁב | Imperfect 3ms | he will sit/dwell | I-י	qal-imperfect-pe-yod bbh-ch16
+יֵצֵא	Root: יָצָא | Imperfect 3ms | he will go out | I-י	qal-imperfect-pe-yod bbh-ch16
+וַיֵּ֥צֵא (Gen 4:16)	Root: יָצָא | Wayyiqtol 3ms | and he went out | I-י	qal-wayyiqtol-pe-yod bbh-ch16
+יָקוּם	Root: קוּם | Imperfect 3ms | he will arise | Biconsonantal	qal-imperfect-biconsonantal bbh-ch16
+וַיָּ֫קׇם (Gen 22:3)	Root: קוּם | Wayyiqtol 3ms | and he arose | Biconsonantal	qal-wayyiqtol-biconsonantal bbh-ch16
+יָבוֹא	Root: בּוֹא | Imperfect 3ms | he will come | Biconsonantal	qal-imperfect-biconsonantal bbh-ch16
+וַיָּ֫בֹא	Root: בּוֹא | Wayyiqtol 3ms | and he came | Biconsonantal	qal-wayyiqtol-biconsonantal bbh-ch16
+וַיָּבֹ֙אוּ֙ (Gen 19:1)	Root: בּוֹא | Wayyiqtol 3mp | and they came | Biconsonantal	qal-wayyiqtol-biconsonantal bbh-ch16
+יָשׁוּב	Root: שׁוּב | Imperfect 3ms | he will return | Biconsonantal	qal-imperfect-biconsonantal bbh-ch16
+יָמוּת	Root: מוּת | Imperfect 3ms | he will die | Biconsonantal	qal-imperfect-biconsonantal bbh-ch16
+יָסֹב	Root: סָבַב | Imperfect 3ms | he will surround | Geminate	qal-imperfect-geminate bbh-ch16
+יִסֹּב	Root: סָבַב | Imperfect 3ms | he will surround | Geminate	qal-imperfect-geminate bbh-ch16
+וַיָּ֫סׇּב	Root: סָבַב | Wayyiqtol 3ms | and he turned | Geminate	qal-wayyiqtol-geminate bbh-ch16
+יִתֵּן (Num 10:29)	Root: נָתַן | Imperfect 3ms | he will give | I-נ	qal-imperfect-pe-nun bbh-ch16
+יֵלֵד	Root: יָלַד | Imperfect 3ms | he will beget | I-י	qal-imperfect-pe-yod bbh-ch16
+וַיֵּלֶד	Root: יָלַד | Wayyiqtol 3ms | and he begot | I-י	qal-wayyiqtol-pe-yod bbh-ch16

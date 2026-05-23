@@ -1,0 +1,15 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 18 — Vocabulary
+#tags column:3
+ἀποκρίνομαι	verb — I answer — 231×	bbg-ch18-vocab bbg-ch18-verb
+δεῖ	verb (impersonal) — it is necessary — 101×	bbg-ch18-vocab bbg-ch18-verb
+δύναμαι	verb — I am able, am powerful — 210×	bbg-ch18-vocab bbg-ch18-verb
+ἔρχομαι	verb — I come; go — 632×	bbg-ch18-vocab bbg-ch18-verb
+νύξ, νυκτός, ἡ	noun 3rd decl. f — night — 61×	bbg-ch18-vocab bbg-ch18-noun
+ὅστις, ἥτις, ὅτι	pronoun (relative indefinite) — whoever, whichever, whatever — 152×	bbg-ch18-vocab bbg-ch18-pronoun
+πορεύομαι	verb — I go, proceed; live — 153×	bbg-ch18-vocab bbg-ch18-verb
+συνάγω	verb — I gather together, bring together; lead — 59×	bbg-ch18-vocab bbg-ch18-verb
+τόπος, -ου, ὁ	noun 2nd decl. m — place; location — 94×	bbg-ch18-vocab bbg-ch18-noun
+ὡς	conjunction / particle — as, like; that; approximately; when, after — 504×	bbg-ch18-vocab bbg-ch18-other

@@ -1,0 +1,19 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 19 — Vocabulary
+#tags column:3
+בָּטַח	verb — (Q) to trust, rely upon — 118×	bbh-ch19-vocab bbh-ch19-verb
+בָּכָה	verb — (Q) to weep (in grief or joy), weep (for) — 114×	bbh-ch19-vocab bbh-ch19-verb
+לָבַשׁ	verb — (Q) to put on a garment, clothe, be clothed; (Hi) clothe — 112×	bbh-ch19-vocab bbh-ch19-verb
+שָׂרַף	verb — (Q) to burn (completely), destroy; (Ni) be burned — 117×	bbh-ch19-vocab bbh-ch19-verb
+שָׁלֵם	verb — (Q) to be complete, finished; (Pi) complete, finish, make whole, restore, reward; (Hi) bring to completion, consummate — 116×	bbh-ch19-vocab bbh-ch19-verb
+דּוֹר	noun (ms) — generation; also spelled דֹּר; (mp) דֹּרוֹת and דֹּרֹת — 167×	bbh-ch19-vocab bbh-ch19-noun
+זֶרַע	noun (ms) — seed, offspring, descendants — 229×	bbh-ch19-vocab bbh-ch19-noun
+חוּץ	noun (ms) — outside, street; (mp) חוּצוֹת; (with מִן) מִחוּץ from outside, outside — 164×	bbh-ch19-vocab bbh-ch19-noun
+מְלָאכָה	noun (fs) — work, occupation, service — 167×	bbh-ch19-vocab bbh-ch19-noun
+עָוֹן	noun (ms) — transgression, iniquity, guilt, punishment (of sin); (mp) עֲוֹנוֹת — 233×	bbh-ch19-vocab bbh-ch19-noun
+פַּר	noun (ms) — bull, ox, steer — 133×	bbh-ch19-vocab bbh-ch19-noun
+פֶּתַח	noun (ms) — opening, entrance, doorway — 164×	bbh-ch19-vocab bbh-ch19-noun
+רֹב	noun (ms) — multitude, abundance, greatness — 150×	bbh-ch19-vocab bbh-ch19-noun
+שָׂפָה	noun (fs) — lip, language, edge, shore — 178×	bbh-ch19-vocab bbh-ch19-noun

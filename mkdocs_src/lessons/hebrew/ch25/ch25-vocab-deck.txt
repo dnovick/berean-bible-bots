@@ -1,0 +1,19 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 25 — Vocabulary
+#tags column:3
+הָפַךְ	verb — (Q) to turn, overturn, overthrow, destroy; (Ni) be destroyed, turned into, changed — 95×	bbh-ch25-vocab bbh-ch25-verb
+חָרָה	verb — (Q) to be(come) hot, burn with anger, become angry — 93×	bbh-ch25-vocab bbh-ch25-verb
+רָעַע	verb — (Q) to be bad, evil, or displeasing; (Hi) do evil, do wickedly, harm, treat badly — 98×	bbh-ch25-vocab bbh-ch25-verb
+שָׂבַע	verb — (Q) to be satisfied, have one's fill (of), eat or drink one's fill; (Hi) satisfy — 97×	bbh-ch25-vocab bbh-ch25-verb
+שָׁכַח	verb — (Q) to forget; (Ni) be forgotten — 102×	bbh-ch25-vocab bbh-ch25-verb
+שָׁמֵם	verb — (Q) to be deserted, uninhabited; (Ni) be made desolate; (Hi) make deserted — 92×	bbh-ch25-vocab bbh-ch25-verb
+זָכָר	noun (ms) — male, man — 82×	bbh-ch25-vocab bbh-ch25-noun
+חֹ֫שֶׁךְ	noun (ms) — darkness — 80×	bbh-ch25-vocab bbh-ch25-noun
+כְּסִיל	noun (ms) — fool, shameless person — 70×	bbh-ch25-vocab bbh-ch25-noun
+מִגְרָשׁ	noun (ms) — open land, pasture — 114×	bbh-ch25-vocab bbh-ch25-noun
+מַמְלָכָה	noun (fs) — kingdom, dominion, reign — 117×	bbh-ch25-vocab bbh-ch25-noun
+נָהָר	noun (ms) — river, stream (mp: נְהָרוֹת / נְהָרִים) — 119×	bbh-ch25-vocab bbh-ch25-noun
+צֶ֫דֶק	noun (ms) — righteousness, equity — 123×	bbh-ch25-vocab bbh-ch25-noun
+שִׁיר	noun (ms) — song — 78×	bbh-ch25-vocab bbh-ch25-noun

@@ -1,0 +1,32 @@
+שְׁמֹר	Qal IC (bare) · שמר · Strong A · "to keep/guard" — identical to Imperative 2ms; context distinguishes	BBH Chapter 20 — Qal Infinitive Construct
+לִ/שְׁמֹר	Qal IC + לְ · שמר · Strong A · "to keep/in order to keep" — hireq under ל; purpose/complementary	BBH Chapter 20 — Qal Infinitive Construct
+בִּ/שְׁמֹר	Qal IC + בְּ · שמר · Strong A · "when he kept" — temporal clause (when/while)	BBH Chapter 20 — Qal Infinitive Construct
+כִּ/שְׁמֹר	Qal IC + כְּ · שמר · Strong A · "as/when he kept" — temporal clause (as/when)	BBH Chapter 20 — Qal Infinitive Construct
+שְׁמֹ֣עַ	Qal IC (bare) · שמע · Strong B (gutt. R3) · "to hear" — patach before ע; holem on R2	BBH Chapter 20 — Qal Infinitive Construct
+לִ/שְׁמֹ֣עַ	Qal IC + לְ · שמע · Strong B · "to hear" — hireq under ל; gutt. patach at R3	BBH Chapter 20 — Qal Infinitive Construct
+כִּ/שְׁמֹ֣עַ	Qal IC + כְּ · שמע · Strong B · "when/as he heard" — temporal formula; classic OT narrative pattern	BBH Chapter 20 — Qal Infinitive Construct
+מֵ/שְׁמֹ֣עַ	Qal IC + מִן · שמע · Strong B · "from hearing / after hearing" — מִ + IC = from/cessation	BBH Chapter 20 — Qal Infinitive Construct
+רְאוֹת	Qal IC (bare) · ראה · III-ה · "seeing / to see" — וֹת ending (holem-waw + taw) diagnostic	BBH Chapter 20 — Qal Infinitive Construct
+לִ/רְאוֹת	Qal IC + לְ · ראה · III-ה · "to see" — purpose; וֹת ending	BBH Chapter 20 — Qal Infinitive Construct
+עֲשׂוֹת	Qal IC (bare) · עשה · III-ה + I-gutt. · "doing / to do" — chateph under ע; וֹת ending	BBH Chapter 20 — Qal Infinitive Construct
+לַ/עֲשׂוֹת	Qal IC + לְ · עשה · III-ה + I-gutt. · "to do/make" — chateph forces qamets under ל	BBH Chapter 20 — Qal Infinitive Construct
+הֱיוֹת	Qal IC (bare) · היה · III-ה · "being / to be" — hateph-seghol under ה; bare IC without preposition	BBH Chapter 20 — Qal Infinitive Construct
+בֹּא	Qal IC (bare) · בוא · Biconsonantal · "coming / to come" — full long vowel; aleph quiesces	BBH Chapter 20 — Qal Infinitive Construct
+לָ/בֹא	Qal IC + לְ · בוא · Biconsonantal · "to come/enter" — לָ (qamets) before biconsonantal IC	BBH Chapter 20 — Qal Infinitive Construct
+שׁוּב	Qal IC (bare) · שוב · Biconsonantal · "returning / to return" — full shureq	BBH Chapter 20 — Qal Infinitive Construct
+לָ/שׁוּב	Qal IC + לְ · שוב · Biconsonantal · "to return" — לָ prefix; full shureq	BBH Chapter 20 — Qal Infinitive Construct
+לָ/מוּת	Qal IC + לְ · מות · Biconsonantal · "to die" — full shureq; לָ prefix	BBH Chapter 20 — Qal Infinitive Construct
+לֶ/כֶת	Qal IC · הלך · I-yod · "to go" — contracted; seghol-taw; original ל fused; no separate bare form	BBH Chapter 20 — Qal Infinitive Construct
+שֶׁ/בֶת	Qal IC (bare) · ישב · I-yod · "dwelling / to dwell" — seghol-bet-taw; yod drops	BBH Chapter 20 — Qal Infinitive Construct
+לָ/שֶׁ/בֶת	Qal IC + לְ · ישב · I-yod · "to sit/dwell" — seghol-taw; לָ prefix	BBH Chapter 20 — Qal Infinitive Construct
+צֵאת	Qal IC (bare) · יצא · I-yod + III-aleph · "going out / to go out" — tsere + aleph + taw; aleph quiesces	BBH Chapter 20 — Qal Infinitive Construct
+לָ/דַ/עַת	Qal IC + לְ · ידע · I-yod · "to know" — patach-ayin-taw; dagesh in ד; לָ prefix	BBH Chapter 20 — Qal Infinitive Construct
+תֵּת	Qal IC (bare) · נתן · I-nun · "to give" — both nuns drop; very short form; tsere on taw	BBH Chapter 20 — Qal Infinitive Construct
+לָ/תֵת	Qal IC + לְ · נתן · I-nun · "to give" — לָ prefix; both nuns dropped; 6x Torah	BBH Chapter 20 — Qal Infinitive Construct
+נְסֹ֣עַ	Qal IC (bare) · נסע · I-nun · "to set out" — nun RETAINED (contrast נתן); gutt. patach at R3	BBH Chapter 20 — Qal Infinitive Construct
+לֵ/אמֹר	Qal IC + לְ · אמר · I-aleph · "saying" — quotative; tsere under ל; hateph-seghol under א; ~2600x OT	BBH Chapter 20 — Qal Infinitive Construct
+אֱמֹר	Qal IC (bare) · אמר · I-aleph · "to say/saying" — hateph-seghol under aleph	BBH Chapter 20 — Qal Infinitive Construct
+לֶ/אֱכֹל	Qal IC + לְ · אכל · I-aleph · "to eat" — seghol under ל + hateph; complementary/purpose	BBH Chapter 20 — Qal Infinitive Construct
+מֵ/עֲשׂוֹת	Qal IC + מִן · עשה · III-ה + I-gutt. · "from doing / after doing" — מֵ + IC = cessation/from	BBH Chapter 20 — Qal Infinitive Construct
+שְׁמֹר (without context)	Ambiguous: IC or Imperative 2ms of שמר — if follows preposition = IC; if command to 2nd person = Imperative	BBH Chapter 20 — Qal Infinitive Construct
+לֶ/כֶת vs. לֵ֥ךְ	לֶ/כֶת = IC of הלך ("to go"); לֵ֥ךְ = Imperative 2ms ("Go!") — IC ends in taw; Imperative does not	BBH Chapter 20 — Qal Infinitive Construct

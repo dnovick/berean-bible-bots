@@ -1,0 +1,19 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 18 — Vocabulary
+#tags column:3
+בָּחַר	verb — (Q) to choose, test, examine — 172×	bbh-ch18-vocab bbh-ch18-verb
+בִּין	verb — (Q) to understand, perceive, consider, give heed to; (Ni) be discerning, have understanding; (Hi) understand, teach; (Hith) show oneself perceptive — 171×	bbh-ch18-vocab bbh-ch18-verb
+דָּרַשׁ	verb — (Q) to seek, inquire (of or about), investigate, require, demand — 165×	bbh-ch18-vocab bbh-ch18-verb
+הָרַג	verb — (Q) to kill, slay — 167×	bbh-ch18-vocab bbh-ch18-verb
+חָפֵץ	verb — (Q) to delight in, take pleasure in, desire, be willing — 74×	bbh-ch18-vocab bbh-ch18-verb
+קָדַשׁ	verb — (Q) to be holy, set apart or consecrated; (Ni) be honored or treated as holy; (Pi) set apart, consecrate or dedicate as holy; (Hi) consecrate, dedicate or declare as holy; (Hith) show or keep oneself holy — 171×	bbh-ch18-vocab bbh-ch18-verb
+רָעָה	verb — (Q) to pasture, tend (flocks), graze, shepherd, feed — 167×	bbh-ch18-vocab bbh-ch18-verb
+שָׁאַל	verb — (Q) to ask (of), inquire (of), request, demand — 176×	bbh-ch18-vocab bbh-ch18-verb
+בַּעַל	noun (ms) — owner, master, husband; (divine title) Baal — 161×	bbh-ch18-vocab bbh-ch18-noun
+שֵׁבֶט	noun (ms) — rod, staff, scepter, tribe; שִׁבְטֵי יִשְׂרָאֵל "the tribes of Israel" — 190×	bbh-ch18-vocab bbh-ch18-noun
+שָׁלוֹם	noun (ms) — peace, welfare, wholeness — 237×	bbh-ch18-vocab bbh-ch18-noun
+בַּעַד	preposition — behind, through — 104×	bbh-ch18-vocab bbh-ch18-other
+יַעַן	conjunction — on account of, because; 33× with אֲשֶׁר as יַעַן אֲשֶׁר — 100×	bbh-ch18-vocab bbh-ch18-other
+נָא	particle — (emphatic) please, now, surely — 405×	bbh-ch18-vocab bbh-ch18-other

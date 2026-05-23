@@ -1,0 +1,40 @@
+נִמְצָא (Gen 44:12)	Root: מָצָא | III-א | Perfect 3ms | it was found	BBH Chapter 25 — Niphal Weak
+וַיִּמָּצֵא (Gen 44:12)	Root: מָצָא | III-א | Wayyiqtol 3ms | and it was found	BBH Chapter 25 — Niphal Weak
+יִמָּצֵא (Gen 44:10)	Root: מָצָא | III-א | Imperfect 3ms | let it be found	BBH Chapter 25 — Niphal Weak
+הִמָּצֵא יִמָּצֵא (Exo 22:3)	Root: מָצָא | III-א | Inf. Abs. + Impf. | is actually found (emphatic)	BBH Chapter 25 — Niphal Weak
+הַנִּמְצָא (Gen 47:14)	Root: מָצָא | III-א | Participle ms | that which was found	BBH Chapter 25 — Niphal Weak
+נִגְלָה (Isa 40:5)	Root: גָּלָה | III-ה | Perfect 3ms | it was revealed	BBH Chapter 25 — Niphal Weak
+וַיִּגָּל (Isa 53:1)	Root: גָּלָה | III-ה | Wayyiqtol 3ms | and it was revealed	BBH Chapter 25 — Niphal Weak
+יִגָּלֶה (Isa 53:1)	Root: גָּלָה | III-ה | Imperfect 3ms | it will be revealed	BBH Chapter 25 — Niphal Weak
+וַיֵּרָא (Gen 12:7)	Root: רָאָה | III-ה | Wayyiqtol 3ms | and he appeared	BBH Chapter 25 — Niphal Weak
+תֵרָאֶה (Gen 1:9)	Root: רָאָה | III-ה | Imperfect 3fs | let it appear	BBH Chapter 25 — Niphal Weak
+לְהֵרָאוֹת (Exo 34:24)	Root: רָאָה | III-ה | Inf. Construct | to appear	BBH Chapter 25 — Niphal Weak
+נִרְאֶה (Gen 12:7)	Root: רָאָה | III-ה | Participle ms | the one who appeared	BBH Chapter 25 — Niphal Weak
+נֶאֱמַר (Exo 5:13)	Root: אָמַר | I-guttural | Perfect 3ms | it was said	BBH Chapter 25 — Niphal Weak
+וַיֵּאָמֵר (Gen 10:9)	Root: אָמַר | I-guttural | Wayyiqtol 3ms | and it was said	BBH Chapter 25 — Niphal Weak
+יֵאָמֵר (Num 21:14)	Root: אָמַר | I-guttural | Imperfect 3ms | it is said	BBH Chapter 25 — Niphal Weak
+נֶאֱמָן (Deu 7:9)	Root: אָמַן | I-guttural | Participle ms | faithful, trustworthy	BBH Chapter 25 — Niphal Weak
+נִגַּשׁ (Gen 44:18)	Root: נָגַשׁ | I-נ | Perfect 3ms | he drew near	BBH Chapter 25 — Niphal Weak
+וַיִּגַּשׁ (Gen 44:18)	Root: נָגַשׁ | I-נ | Wayyiqtol 3ms | and he drew near	BBH Chapter 25 — Niphal Weak
+נִצַּלְתֶּם (Exo 12:27)	Root: נָצַל | I-נ | Perfect 2mp | you were delivered	BBH Chapter 25 — Niphal Weak
+הִנָּצֵל (Prov 6:3)	Root: נָצַל | I-נ | Imperative 2ms | deliver yourself!	BBH Chapter 25 — Niphal Weak
+נוֹלַד (Gen 21:3)	Root: יָלַד | I-י | Perfect 3ms | he was born	BBH Chapter 25 — Niphal Weak
+וַיִּוָּלֵד (Gen 4:18)	Root: יָלַד | I-י | Wayyiqtol 3ms | and he was born	BBH Chapter 25 — Niphal Weak
+יִוָּלֵד (Gen 17:17)	Root: יָלַד | I-י | Imperfect 3ms | shall a child be born	BBH Chapter 25 — Niphal Weak
+בְּהִוָּלֶד (Gen 21:5)	Root: יָלַד | I-י | Inf. Construct | when he was born	BBH Chapter 25 — Niphal Weak
+נוֹלָד (1 Kgs 13:2)	Root: יָלַד | I-י | Participle ms | one who will be born	BBH Chapter 25 — Niphal Weak
+נִשְׁמַע (Est 1:20)	Root: שָׁמַע | III-ח/ע | Perfect 3ms | it was heard	BBH Chapter 25 — Niphal Weak
+וַיִּשָּׁמַע (Gen 45:2)	Root: שָׁמַע | III-ח/ע | Wayyiqtol 3ms | and it was heard	BBH Chapter 25 — Niphal Weak
+יִשָּׁמַע (Exo 28:35)	Root: שָׁמַע | III-ח/ע | Imperfect 3ms | it shall be heard	BBH Chapter 25 — Niphal Weak
+הִשָּׁמַע (Deu 4:32)	Root: שָׁמַע | III-ח/ע | Imperative/Inf. Construct | hear / to be heard	BBH Chapter 25 — Niphal Weak
+נִשְׁמָע (Ecc 12:13)	Root: שָׁמַע | III-ח/ע | Participle ms | that which is heard	BBH Chapter 25 — Niphal Weak
+נָכוֹן (Gen 41:32)	Root: כּוּן | Biconsonantal | Perfect 3ms | it is established / certain	BBH Chapter 25 — Niphal Weak
+נָכוֹן (Psa 57:8)	Root: כּוּן | Biconsonantal | Participle ms | steadfast, firm	BBH Chapter 25 — Niphal Weak
+יִכּוֹן (Psa 93:2)	Root: כּוּן | Biconsonantal | Imperfect 3ms | it is established	BBH Chapter 25 — Niphal Weak
+נָשׁוּב (expected form)	Root: שׁוּב | Biconsonantal | Perfect 3ms | it was turned / restored	BBH Chapter 25 — Niphal Weak
+וַיִּקּוֹם (expected form)	Root: קוּם | Biconsonantal | Wayyiqtol 3ms | and it was established	BBH Chapter 25 — Niphal Weak
+נָסַב (Josh 15:3)	Root: סָבַב | Geminate | Perfect 3ms | it went around	BBH Chapter 25 — Niphal Weak
+וַיִּסֹּב (1 Sam 7:16)	Root: סָבַב | Geminate | Wayyiqtol 3ms | and he went on circuit	BBH Chapter 25 — Niphal Weak
+יִסֹּב (Josh 19:34)	Root: סָבַב | Geminate | Imperfect 3ms | it turns/goes around	BBH Chapter 25 — Niphal Weak
+הִסֹּב (2 Sam 18:30)	Root: סָבַב | Geminate | Imperative 2ms | turn aside!	BBH Chapter 25 — Niphal Weak
+נָסַב (Psa 26:6)	Root: סָבַב | Geminate | Participle ms | going around (identical to perfect 3ms)	BBH Chapter 25 — Niphal Weak

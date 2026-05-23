@@ -1,0 +1,19 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 21 — Vocabulary
+#tags column:3
+זָבַח	verb — (Q) to slaughter (for sacrifice), sacrifice; (Pi) offer sacrifice, sacrifice — 134×	bbh-ch21-vocab bbh-ch21-verb
+חָנָה	verb — (Q) to decline, camp, encamp, pitch camp, lay siege to — 143×	bbh-ch21-vocab bbh-ch21-verb
+נוּחַ	verb — (Q) to rest, settle down, repose; (Hi) cause to rest, secure rest, set, leave (behind or untouched) — 140×	bbh-ch21-vocab bbh-ch21-verb
+נָסַע	verb — (Q) to pull (out or up), set out, start out, depart, journey — 146×	bbh-ch21-vocab bbh-ch21-verb
+פָּנָה	verb — (Q) to turn (toward, from, to the side, away) — 134×	bbh-ch21-vocab bbh-ch21-verb
+פָּתַח	verb — (Q) to open (up); (Ni) be opened, loosened, set free; (Pi) let loose, loosen — 136×	bbh-ch21-vocab bbh-ch21-verb
+רָדַף	verb — (Q) to pursue, follow after, chase, persecute — 144×	bbh-ch21-vocab bbh-ch21-verb
+שָׂנֵא	verb — (Q) to hate; (Pi ptc) enemy — 148×	bbh-ch21-vocab bbh-ch21-verb
+שָׁאַר	verb — (Ni) to remain, be left over, survive; (Hi) leave (someone or something) remaining — 133×	bbh-ch21-vocab bbh-ch21-verb
+מוֹעֵד	noun (ms) — appointed time (of feast), meeting place, assembly — 223×	bbh-ch21-vocab bbh-ch21-noun
+מַחֲנֶה	noun (cs) — camp, army; (cp) מַחֲנוֹת and מַחֲנִים — 215×	bbh-ch21-vocab bbh-ch21-noun
+מַלְאָךְ	noun (ms) — messenger, angel — 213×	bbh-ch21-vocab bbh-ch21-noun
+מִנְחָה	noun (fs) — gift, offering, tribute — 211×	bbh-ch21-vocab bbh-ch21-noun
+נַחֲלָה	noun (fs) — inheritance, property, possession — 222×	bbh-ch21-vocab bbh-ch21-noun

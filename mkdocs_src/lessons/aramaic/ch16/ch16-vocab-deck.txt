@@ -1,0 +1,15 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 16 — Vocabulary
+#tags column:3
+אסר	verb — (Peal) to be bound; (Pael) to bind	bba-ch16-vocab bba-ch16-verb
+מחא	verb — (Peal) to strike; (Pael) to strike; (Hithpeel) to be impaled	bba-ch16-vocab bba-ch16-verb
+מלל	verb — (Pael) to speak	bba-ch16-vocab bba-ch16-verb
+מנה	verb — (Peal) to count; (Pael) to install, appoint	bba-ch16-vocab bba-ch16-verb
+נדב	verb — (Hithpaal) to be agreeable, willing; to give freely	bba-ch16-vocab bba-ch16-verb
+נזק	verb — (Peal) to come to grief, suffer loss; (Haphel) to damage	bba-ch16-vocab bba-ch16-verb
+נחת	verb — (Peal) to come down; (Haphel) to deposit; (Hophal) to be deposed, deposited	bba-ch16-vocab bba-ch16-verb
+ערב	verb — (Pael) to mix; (Hithpaal) to mingle	bba-ch16-vocab bba-ch16-verb
+צבע	verb — (Pael) to moisten, wet; (Hithpeel) to become moist, drenched	bba-ch16-vocab bba-ch16-verb
+צלח	verb — (Haphel) to cause someone to prosper, make progress	bba-ch16-vocab bba-ch16-verb

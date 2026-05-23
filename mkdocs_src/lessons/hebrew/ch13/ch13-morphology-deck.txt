@@ -1,0 +1,33 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 13 — Qal Perfect
+#tags column:3
+בָּרָא (Gen 1:1)	Root: בָּרָא | Perfect 3ms | he created | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+שָׁמַר	Root: שָׁמַר | Perfect 3ms | he kept/guarded | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+כָּתַב	Root: כָּתַב | Perfect 3ms | he wrote | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+קָטַלְתָּ	Root: קָטַל | Perfect 2ms | you killed | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+קָטַלְתְּ	Root: קָטַל | Perfect 2fs | you (f) killed | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+קָטַלְתִּי	Root: קָטַל | Perfect 1cs | I killed | Perfect of experience	qal-perfect-fientive usage-experience bbh-ch13
+קָטְלָה	Root: קָטַל | Perfect 3fs | she killed | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+קָטְלוּ	Root: קָטַל | Perfect 3cp | they killed | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+קְטַלְתֶּם	Root: קָטַל | Perfect 2mp | you (mp) killed | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+קָטַלְנוּ	Root: קָטַל | Perfect 1cp | we killed | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+כָּבֵד	Root: כָּבֵד | Perfect 3ms | he was heavy/honored | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+כָּבְדָה	Root: כָּבֵד | Perfect 3fs | she was heavy | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+כָּבַדְתָּ	Root: כָּבֵד | Perfect 2ms | you were heavy | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+גָּדֵל	Root: גָּדֵל | Perfect 3ms | he was great/large | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+זָקֵן	Root: זָקֵן | Perfect 3ms | he was old | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+מָלֵא	Root: מָלֵא | Perfect 3ms | it was full | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+יָרֵא	Root: יָרֵא | Perfect 3ms | he feared | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+קָטֹן	Root: קָטֹן | Perfect 3ms | he was small | Stative	qal-perfect-stative-o usage-stative bbh-ch13
+יָכֹל	Root: יָכֹל | Perfect 3ms | he was able | Stative	qal-perfect-stative-o usage-stative bbh-ch13
+אָהֵב	Root: אָהֵב | Perfect 3ms | he loved | Stative	qal-perfect-stative-e usage-stative bbh-ch13
+שָׁמַרְתִּי	Root: שָׁמַר | Perfect 1cs | I have kept | Perfect of experience	qal-perfect-fientive usage-experience bbh-ch13
+נָתַן (Gen 1:29)	Root: נָתַן | Perfect 3ms | he gave | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+רָאָה (Gen 1:4)	Root: רָאָה | Perfect 3ms | he saw | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+עָשָׂה (Gen 1:31)	Root: עָשָׂה | Perfect 3ms | he made | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+שָׁמַעְתָּ (Gen 3:17)	Root: שָׁמַע | Perfect 2ms | you listened | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
+נָתַ֫תִּי (Gen 1:29)	Root: נָתַן | Perfect 1cs | I have given | Perfect of experience	qal-perfect-fientive usage-experience bbh-ch13
+בָּרַכְתִּי (Gen 12:3)	Root: בָּרַך | Perfect 1cs | I will bless | Prophetic perfect	qal-perfect-fientive usage-prophetic bbh-ch13
+עָשִׂיתָ (Gen 3:13)	Root: עָשָׂה | Perfect 2ms | you have done | Perfect of experience	qal-perfect-fientive usage-experience bbh-ch13

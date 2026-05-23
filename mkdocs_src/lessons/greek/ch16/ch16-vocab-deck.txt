@@ -1,0 +1,17 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 16 — Vocabulary
+#tags column:3
+ἀκούω	verb — I hear; learn, obey; understand — 428×	bbg-ch16-vocab bbg-ch16-verb
+βλέπω	verb — I see, look at — 132×	bbg-ch16-vocab bbg-ch16-verb
+ἔχω	verb — I have, hold — 708×	bbg-ch16-vocab bbg-ch16-verb
+λέγω	verb — I say, speak — 2,353×	bbg-ch16-vocab bbg-ch16-verb
+λύω	verb — I loose, untie, destroy — 42×	bbg-ch16-vocab bbg-ch16-verb
+νόμος, -ου, ὁ	noun 2nd decl. m — law; principle — 194×	bbg-ch16-vocab bbg-ch16-noun
+ὅπου	adverb — where — 82×	bbg-ch16-vocab bbg-ch16-other
+πιστεύω	verb — I believe, have faith (in), trust — 241×	bbg-ch16-vocab bbg-ch16-verb
+πρόσωπον, -ου, τό	noun 2nd decl. n — face; appearance — 76×	bbg-ch16-vocab bbg-ch16-noun
+τότε	adverb — then; thereafter — 160×	bbg-ch16-vocab bbg-ch16-other
+τυφλός, -ή, -όν	adjective — blind — 50×	bbg-ch16-vocab bbg-ch16-adj
+χαρά, -ᾶς, ἡ	noun 1st decl. f — joy, delight — 59×	bbg-ch16-vocab bbg-ch16-noun

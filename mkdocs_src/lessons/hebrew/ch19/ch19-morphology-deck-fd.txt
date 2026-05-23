@@ -1,0 +1,32 @@
+שְׁמָרַ֥נִי	שמר Qal Perf. 3ms + 1cs · "he kept me" · Connecting vowel qamets before נִי	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שְׁמָרוֹ	שמר Qal Perf. 3ms + 3ms · "he kept him" · Short form וֹ (holem-waw)	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שְׁמָרָ֥נוּ	שמר Qal Perf. 3ms + 1cp · "he kept us" · Qamets before נוּ	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שְׁמַרְתַּ֥נִי	שמר Qal Perf. 2ms + 1cs · "you kept me" · 2ms form + 1cs suffix	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שְׁמַרְתִּ֥יהוּ	שמר Qal Perf. 1cs + 3ms · "I kept him" · 1cs ending (תִּי) + 3ms suffix	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שְׁלָחַ֥נִי	שלח Qal Perf. 3ms + 1cs · "he sent me" · Gen 45:5; God sent Joseph	BBH Chapter 19 — Pronominal Suffixes on Verbs
+עֲזָבַ֥נִי	עזב Qal Perf. 3ms + 1cs · "he forsook me" · Psa 22:2 lament	BBH Chapter 19 — Pronominal Suffixes on Verbs
+יִשְׁמְרֵ֥נִי	שמר Qal Impf. 3ms + 1cs · "he will keep me" · Tsere linking vowel	BBH Chapter 19 — Pronominal Suffixes on Verbs
+יִשְׁמְרֶ֥נּוּ	שמר Qal Impf. 3ms + 3ms · "he will keep him" · Energic nun (נּ dagesh) before 3ms suffix	BBH Chapter 19 — Pronominal Suffixes on Verbs
+יִשְׁמְרֵ֥נוּ	שמר Qal Impf. 3ms + 1cp · "he will keep us" · No energic nun before 1cp נוּ	BBH Chapter 19 — Pronominal Suffixes on Verbs
+יִמְצָאֵ֥נִי	מצא Qal Impf. 3ms + 1cs · "he will find me" · III-א; aleph quiesces	BBH Chapter 19 — Pronominal Suffixes on Verbs
+יִשְׁלָחֶ֥נּוּ	שלח Qal Impf. 3ms + 3ms · "he will send him" · Energic nun + 3ms	BBH Chapter 19 — Pronominal Suffixes on Verbs
+יִרְאֶ֥נּוּ	ראה Qal Impf. 3ms + 3ms · "he will see him" · III-ה + energic nun + 3ms	BBH Chapter 19 — Pronominal Suffixes on Verbs
+וַיִּשְׁמְרֵ֥הוּ	שמר Qal Wayyiq. 3ms + 3ms · "and he kept him" · Narrative; tsere + הוּ	BBH Chapter 19 — Pronominal Suffixes on Verbs
+וַיִּשְׁלָחֵ֥הוּ	שלח Qal Wayyiq. 3ms + 3ms · "and he sent him" · Frequent in Genesis	BBH Chapter 19 — Pronominal Suffixes on Verbs
+וַיַּרְאֵ֥הוּ	ראה Qal Wayyiq. 3ms + 3ms · "and he showed him" · III-ה + 3ms suffix	BBH Chapter 19 — Pronominal Suffixes on Verbs
+וַיִּשְׁמְרֵ֥נִי	שמר Qal Wayyiq. 3ms + 1cs · "and he kept me"	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שָׁמְרֵ֥נִי	שמר Qal Imper. 2ms + 1cs · "Keep me!" · Psa 16:1; standard prayer address	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שָׁמְרֵ֥הוּ	שמר Qal Imper. 2ms + 3ms · "Keep him!"	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שַׁלְּחֵ֥נִי	שלח Piel Imper. 2ms + 1cs · "Send me!" · Isa 6:8; Isaiah's call response	BBH Chapter 19 — Pronominal Suffixes on Verbs
+שִׁמְר֥וּנִי	שמר Qal Imper. 2mp + 1cs · "Keep me! (pl.)"	BBH Chapter 19 — Pronominal Suffixes on Verbs
+בְּ/שָׁמְר/וֹ	שמר Qal Inf.Const. + בְּ + 3ms SUBJECT · "when he kept" · Suffix = subject, not object	BBH Chapter 19 — Pronominal Suffixes on Verbs
+כִּ/שְׁמֹ֣עַ/וֹ	שמע Qal Inf.Const. + כְּ + 3ms SUBJECT · "when he heard" · Most common narrative temporal formula	BBH Chapter 19 — Pronominal Suffixes on Verbs
+בְּ/רֹאֹת/וֹ	ראה Qal Inf.Const. + בְּ + 3ms SUBJECT · "when he saw" · III-ה Inf.Const. + 3ms	BBH Chapter 19 — Pronominal Suffixes on Verbs
+כְּ/צֵאת/וֹ	יצא Qal Inf.Const. + כְּ + 3ms SUBJECT · "when he went out" · I-י Inf.Const. (צֵאת) + 3ms	BBH Chapter 19 — Pronominal Suffixes on Verbs
+בִּ/הְיוֹת/וֹ	היה Qal Inf.Const. + בְּ + 3ms SUBJECT · "while he was" · III-ה + 3ms; temporal durative	BBH Chapter 19 — Pronominal Suffixes on Verbs
+נִי (on verb)	1cs object suffix · "me" · Most common verb suffix	BBH Chapter 19 — Pronominal Suffixes on Verbs
+ךָ (on verb)	2ms object suffix · "you (ms)"	BBH Chapter 19 — Pronominal Suffixes on Verbs
+הוּ / וֹ (on verb)	3ms object suffix · "him / it" · Short form וֹ very common	BBH Chapter 19 — Pronominal Suffixes on Verbs
+נוּ (on verb)	1cp object suffix · "us" · Shureq + nun	BBH Chapter 19 — Pronominal Suffixes on Verbs
+נּוּ (dagesh in impf.)	Energic nun + 3ms suffix · "him" · Distinguishes from 1cp נוּ — look for dagesh in nun	BBH Chapter 19 — Pronominal Suffixes on Verbs
+הָ (on verb)	3fs object suffix · "her / it (f)" · Final he with qamets	BBH Chapter 19 — Pronominal Suffixes on Verbs

@@ -1,0 +1,30 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 28 — Hophal Strong
+#tags column:3
+
+יוּמַת	מות Hophal+Imperfect+3ms — "he shall be put to death" — most common Hophal form (99×); death penalty formula; יוּ prefix (Shureq) is universal Hophal Imperfect marker	hophal-imperfect bbh-ch28
+יוּמְתוּ	מות Hophal+Imperfect+3mp — "they shall be put to death" — יוּ prefix + 3mp ending; Num 35 death penalty	hophal-imperfect bbh-ch28
+הוּמַת	מות Hophal+Perfect+3ms — "he has been put to death" — הוּ prefix (he + Shureq) = definitive Hophal Perfect marker; Deu 21:22	hophal-perfect bbh-ch28
+הוּמְתָה	מות Hophal+Perfect+3fs — "she was put to death" — הוּ prefix + 3fs suffix	hophal-perfect bbh-ch28
+וַתּוּמַת	מות Hophal+Wayyiqtol+3fs — "and she was put to death" — וַתּ + Hophal Imperfect stem; 2Ki 11:16	hophal-wayyiqtol bbh-ch28
+מוּמָת	מות Hophal+Participle+ms — "one to be put to death" — מוּ prefix + Qamets under R2; 1Sa 19:11	hophal-participle bbh-ch28
+הוּמֵת	מות Hophal+Inf.Absolute — Tsere under R2 (contrast Perfect Patach הוּמַת); very rare (6× OT)	hophal-inf-absolute bbh-ch28
+מוֹת יוּמַת	מות Qal Inf.Abs. + Hophal Imperfect — "shall surely be put to death" — cognate absolute construction intensifying the legal command	hophal-imperfect bbh-ch28
+הֻגַּד	נגד Hophal+Perfect+3ms — "it was told" — הֻ (Qibbuts) = alternate Hophal prefix vowel alongside הוּ (Shureq); Deu 17:4	hophal-perfect bbh-ch28
+וַיֻּגַּד	נגד Hophal+Wayyiqtol+3ms — "and it was told" — standard narrative report formula; Gen 22:20; 27:42; 31:22; 38:13	hophal-wayyiqtol bbh-ch28
+יֻגַּד	נגד Hophal+Imperfect+3ms — "it will be told" — Qibbuts (ֻ) under prefix; contrast הִגִּיד (Hiphil active)	hophal-imperfect bbh-ch28
+וְהֻגַּד	נגד Hophal+Weqatal+3ms — "and it will be told" — וְ + Hophal Perfect; Jos 9:24	hophal-weqatal bbh-ch28
+הוּבָא	בוא Hophal+Perfect+3ms — "it was brought/put" — הוּ prefix; Exo 27:7; Lev 13:2	hophal-perfect bbh-ch28
+יוּבָא	בוא Hophal+Imperfect+3ms — "it shall be brought in" — יוּ prefix; Lev 6:23 (burnt offering)	hophal-imperfect bbh-ch28
+הֻבָּאת	בוא Hophal+Weqatal+3fs — "it was brought" — הֻ prefix (Qibbuts variant); Gen 33:11	hophal-weqatal bbh-ch28
+מוּבָאִים	בוא Hophal+Participle+mp — "those being brought" — מוּ prefix + Qibbuts/Shureq; Gen 43:18	hophal-participle bbh-ch28
+הֵמִית vs. יוּמַת	Hiphil הֵמִית = "he put to death" (active causative) · Hophal יוּמַת = "was put to death" (passive causative) — the Hophal always passivizes the Hiphil	hophal-vs-hiphil bbh-ch28
+הִגִּיד vs. הֻגַּד	Hiphil הִגִּיד = "he told/declared" (הִ prefix) · Hophal הֻגַּד = "it was told" (הֻ prefix) — prefix vowel shift: Hireq→Qibbuts/Shureq	hophal-vs-hiphil bbh-ch28
+הֵבִיא vs. הוּבָא	Hiphil הֵבִיא = "he brought" · Hophal הוּבָא = "it was brought" — passive causative of the Hiphil of biconsonantal root בוא	hophal-vs-hiphil bbh-ch28
+הִכָּה vs. מֻכִּים	Hiphil הִכָּה = "he struck/killed" · Hophal מֻכִּים = "those being struck" — Hophal Participle mp with מֻ prefix	hophal-vs-hiphil bbh-ch28
+What is the ONE universal Hophal marker?	u-class vowel (Shureq וּ or Qibbuts ֻ) under the prefix consonant — applies to Perfect (הוּ), Imperfect (יוּ), Wayyiqtol (וַיּוּ), and Participle (מוּ/מֻ)	hophal-diagnostic bbh-ch28
+Hophal vs. Pual Participle — how to distinguish?	Both have מ prefix + u-class vowel under R1. Key: Pual Participle has DAGESH FORTE in R2 (passive of Piel intensive). Hophal Participle does NOT (passive of Hiphil causative).	hophal-diagnostic bbh-ch28
+Why does Hophal have no Imperative?	Passive verbs cannot be commanded — the Hophal expresses "caused to undergo an action," not an act one initiates	hophal-diagnostic bbh-ch28
+Most common Hophal form in the OT?	יוּמַת (99 tokens) — "shall be put to death" — Hophal Imperfect 3ms of מות, used in the death penalty formula מוֹת יוּמַת	hophal-diagnostic bbh-ch28

@@ -1,0 +1,15 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 13 — Vocabulary
+#tags column:3
+אתה	verb — (Peal) to come; (Haphel) to bring; (Hophal) to be brought	bba-ch13-vocab bba-ch13-verb
+בּעא	verb — (Peal) to seek, request; to be about to; (Pael) to call upon, search eagerly	bba-ch13-vocab bba-ch13-verb
+דּור	verb — (Peal) to live, dwell	bba-ch13-vocab bba-ch13-verb
+חוה	verb — (Pael) to show, make known; (Haphel) to make known, interpret	bba-ch13-vocab bba-ch13-verb
+יהב	verb — (Peal) to give; (Hithpeel) to be given	bba-ch13-vocab bba-ch13-verb
+נפק	verb — (Peal) to go out, come forth, be issued; (Haphel) to take out	bba-ch13-vocab bba-ch13-verb
+סגד	verb — (Peal) to pay homage, bow down in worship	bba-ch13-vocab bba-ch13-verb
+עלל	verb — (Peal) to go in, enter; (Haphel) to bring in; (Hophal) to be brought in	bba-ch13-vocab bba-ch13-verb
+רמה	verb — (Peal) to throw, place, impose; (Hithpeel) to be thrown	bba-ch13-vocab bba-ch13-verb
+שׁנה	verb — (Peal) to be different, be changed; (Pael) to change, violate an order; (Ithpaal) to be changed; (Haphel) to alter, violate	bba-ch13-vocab bba-ch13-verb

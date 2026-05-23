@@ -1,0 +1,15 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBA Chapter 14 — Vocabulary
+#tags column:3
+בהל	verb — (Pael) to frighten, terrify; (Hithpeel) to hurry; (Hithpaal) to be frightened, be terrified	bba-ch14-vocab bba-ch14-verb
+דּקק	verb — (Peal) to be crushed into pieces; (Haphel) to crush	bba-ch14-vocab bba-ch14-verb
+יקד	verb — (Peal) to burn	bba-ch14-vocab bba-ch14-verb
+כּלל	verb — (Shaphel) to finish; (Hishtaphel) to be finished	bba-ch14-vocab bba-ch14-verb
+מטא	verb — (Peal) to reach to, attain to, come upon; to occur, happen	bba-ch14-vocab bba-ch14-verb
+סלק	verb — (Peal) to go up, come up; (Haphel) to take up; (Hophal) to be lifted up	bba-ch14-vocab bba-ch14-verb
+עדה	verb — (Peal) to pass away, take away, revoke; (Haphel) to take away	bba-ch14-vocab bba-ch14-verb
+פּלח	verb — (Peal) to serve	bba-ch14-vocab bba-ch14-verb
+צבה	verb — (Peal) to desire, wish for, like	bba-ch14-vocab bba-ch14-verb
+שׁפל	verb — (Haphel) to humiliate, humble	bba-ch14-vocab bba-ch14-verb

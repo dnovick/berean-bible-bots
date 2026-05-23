@@ -1,0 +1,32 @@
+וַיֹּאמֶר	אמר · Wayyiqtol · 3ms · "and he said" · Most frequent OT verb form; I-aleph holem prefix	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַתֹּאמֶר	אמר · Wayyiqtol · 3fs · "and she said" · תּ prefix marks 3fs	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיֹּאמְרוּ	אמר · Wayyiqtol · 3mp · "and they said" · Plural narrative speech formula	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיִּקְטֹל	קטל · Wayyiqtol · 3ms · "and he killed" · Strong paradigm model; dagesh forte in יּ	BBH Chapter 17 — Wayyiqtol and Weqatal
+וָאֶקְטֹל	קטל · Wayyiqtol · 1cs · "and I killed" · Waw → וָ before aleph; no dagesh possible	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַנִּקְטֹל	קטל · Wayyiqtol · 1cp · "and we killed" · Nun prefix with dagesh forte	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיִּכְתְּבוּ	כתב · Wayyiqtol · 3mp · "and they wrote" · Shureq suffix; dagesh in יּ	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַתִּשְׁמֹרְנָה	שמר · Wayyiqtol · 3/2fp · "and they/you kept (f)" · נָה suffix for 3/2fp	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיְהִי	היה · Wayyiqtol · 3ms · "and it was / came to pass" · III-ה short form; most common episode opener	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיַּרְא	ראה · Wayyiqtol · 3ms · "and he saw" · III-ה short form; ה dropped; frequent in narrative	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיַּעַשׂ	עשה · Wayyiqtol · 3ms · "and he did/made" · III-ה + I-gutt.; short form; patach prefix	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיִּבֶן	בנה · Wayyiqtol · 3ms · "and he built" · III-ה short form; ה dropped; dagesh in נּ	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיֵּפֶן	פנה · Wayyiqtol · 3ms · "and he turned" · III-ה short form; seghol under נ	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיָּקׇם	קום · Wayyiqtol · 3ms · "and he arose" · Biconsonantal short form; qamets hatuf in root	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיָּבֹא	בוא · Wayyiqtol · 3ms · "and he came" · Biconsonantal; qamets prefix	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיָּבֹאוּ	בוא · Wayyiqtol · 3mp · "and they came" · 3mp with -וּ suffix	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיָּשׇׁב	שוב · Wayyiqtol · 3ms · "and he returned" · Biconsonantal short form	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיָּסׇּב	סבב · Wayyiqtol · 3ms · "and he turned around" · Geminate; dagesh forte in ב (R2=R3)	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיֵּלֶךְ	הלך · Wayyiqtol · 3ms · "and he went" · I-י: tsere prefix (יֵ–); ה absent	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיֵּדַע	ידע · Wayyiqtol · 3ms · "and he knew" · I-י: tsere prefix; yod at R1 contracted	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיֵּצֵא	יצא · Wayyiqtol · 3ms · "and he went out" · I-י + III-א; tsere prefix	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיִּתֵּן	נתן · Wayyiqtol · 3ms · "and he gave" · I-נ: nun assimilated; dagesh forte in תּ	BBH Chapter 17 — Wayyiqtol and Weqatal
+וַיֵּשֶׁב	ישב · Wayyiqtol · 3ms · "and he sat/dwelt" · I-י: tsere prefix; seghol in root	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְשָׁמַרְתָּ	שמר · Weqatal · 2ms · "and you shall keep" · Follows imperfect/command; stress on -tā	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְאָהַבְתָּ	אהב · Weqatal · 2ms · "and you shall love" · Deu 6:5; classic command chain	BBH Chapter 17 — Wayyiqtol and Weqatal
+וּשְׁמַרְתֶּם	שמר · Weqatal · 2mp · "and you (pl.) shall keep" · Waw → וּ before shewa; 2mp	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְשָׁמְרוּ	שמר · Weqatal · 3cp · "and they shall keep" · Future chain; identical to perfect without context	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְנָתַתָּ	נתן · Weqatal · 2ms · "and you shall give" · I-נ regular in perfect/weqatal	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְעָשִׂיתָ	עשה · Weqatal · 2ms · "and you shall do" · III-ה perfect 2ms + וְ; hireq-yod before suffix	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְשִׁנַּנְתָּם	שנן · Piel Weqatal · 2ms · "and you shall teach diligently" · Deu 6:7; Piel form in command chain	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְדִבַּרְתָּ	דבר · Piel Weqatal · 2ms · "and you shall speak" · Deu 6:7; Piel weqatal	BBH Chapter 17 — Wayyiqtol and Weqatal
+וְהָיָה	היה · Weqatal · 3ms · "and it shall be" · III-ה; common prophetic/legal opener	BBH Chapter 17 — Wayyiqtol and Weqatal

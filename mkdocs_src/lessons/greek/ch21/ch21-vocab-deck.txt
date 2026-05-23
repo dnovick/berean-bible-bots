@@ -1,0 +1,14 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 21 — Vocabulary
+#tags column:3
+ἀκολουθέω	verb — I follow; accompany — 90×	bbg-ch21-vocab bbg-ch21-verb
+διδάσκω	verb — I teach — 97×	bbg-ch21-vocab bbg-ch21-verb
+ἐπερωτάω	verb — I ask (for) — 56×	bbg-ch21-vocab bbg-ch21-verb
+ἐρωτάω	verb — I ask; request — 63×	bbg-ch21-vocab bbg-ch21-verb
+θέλω	verb — I wish, desire; enjoy — 208×	bbg-ch21-vocab bbg-ch21-verb
+περιπατέω	verb — I walk (around); live — 95×	bbg-ch21-vocab bbg-ch21-verb
+συναγωγή, -ῆς, ἡ	noun 1st decl. f — synagogue; meeting — 56×	bbg-ch21-vocab bbg-ch21-noun
+Φαρισαῖος, -ου, ὁ	noun 2nd decl. m proper — Pharisee — 98×	bbg-ch21-vocab bbg-ch21-noun
+χρόνος, -ου, ὁ	noun 2nd decl. m — time — 54×	bbg-ch21-vocab bbg-ch21-noun

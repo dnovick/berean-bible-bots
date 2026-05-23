@@ -1,0 +1,14 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 36 — Vocabulary
+#tags column:3
+ἀνίστημι	verb — intrans: I rise, get up; trans: I raise — 108×	bbg-ch36-vocab bbg-ch36-verb
+ἀνοίγω	verb — I open — 77×	bbg-ch36-vocab bbg-ch36-verb
+ἀφίημι	verb — I let go, leave, permit; forgive — 143×	bbg-ch36-vocab bbg-ch36-verb
+δείκνυμι	verb — I show, explain — 30×	bbg-ch36-vocab bbg-ch36-verb
+ἴδιος, -ία, -ιον	adjective — one's own — 114×	bbg-ch36-vocab bbg-ch36-adj
+ἵστημι	verb — intrans: I stand; trans: I cause to stand — 154×	bbg-ch36-vocab bbg-ch36-verb
+μέσος, -η, -ον	adjective — middle, in the midst — 58×	bbg-ch36-vocab bbg-ch36-adj
+τίθημι	verb — I put, place — 100×	bbg-ch36-vocab bbg-ch36-verb
+φημί	verb — I say, affirm — 66×	bbg-ch36-vocab bbg-ch36-verb

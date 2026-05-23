@@ -1,0 +1,21 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 20 — Vocabulary
+#tags column:3
+αἴρω	verb — I raise, take up, take away — 101×	bbg-ch20-vocab bbg-ch20-verb
+ἀποκτείνω	verb — I kill — 74×	bbg-ch20-vocab bbg-ch20-verb
+ἀποστέλλω	verb — I send (away) — 132×	bbg-ch20-vocab bbg-ch20-verb
+βαπτίζω	verb — I baptize; dip, immerse — 77×	bbg-ch20-vocab bbg-ch20-verb
+γινώσκω	verb — I know, come to know, realize, learn — 222×	bbg-ch20-vocab bbg-ch20-verb
+γλῶσσα, -ης, ἡ	noun 1st decl. f — tongue, language — 50×	bbg-ch20-vocab bbg-ch20-noun
+ἐγείρω	verb — I raise up, wake — 144×	bbg-ch20-vocab bbg-ch20-verb
+ἐκβάλλω	verb — I cast out, send out — 81×	bbg-ch20-vocab bbg-ch20-verb
+ἐκεῖ	adverb — there, in that place — 105×	bbg-ch20-vocab bbg-ch20-other
+κρίνω	verb — I judge, decide, prefer — 114×	bbg-ch20-vocab bbg-ch20-verb
+λαός, -οῦ, ὁ	noun 2nd decl. m — people, crowd — 142×	bbg-ch20-vocab bbg-ch20-noun
+μένω	verb — I remain, live — 118×	bbg-ch20-vocab bbg-ch20-verb
+ὁράω	verb — I see, notice, experience — 454×	bbg-ch20-vocab bbg-ch20-verb
+σοφία, -ας, ἡ	noun 1st decl. f — wisdom — 51×	bbg-ch20-vocab bbg-ch20-noun
+στόμα, -ατος, τό	noun 3rd decl. n — mouth — 78×	bbg-ch20-vocab bbg-ch20-noun
+σῴζω	verb — I save, deliver, rescue — 106×	bbg-ch20-vocab bbg-ch20-verb

@@ -1,0 +1,24 @@
+יוּמַת (Gen 26:11)	Root: מוּת | Hophal | Imperfect 3ms | shall be put to death — most common Hophal form; יוּ prefix (Shureq)	BBH Chapter 28 — Hophal Strong
+יוּמַת (Num 35:16)	Root: מוּת | Hophal | Imperfect 3ms | capital punishment formula; מוֹת יוּמַת = "shall surely be put to death"	BBH Chapter 28 — Hophal Strong
+הוּמַת (Deu 21:22)	Root: מוּת | Hophal | Perfect 3ms | he has been put to death — הוּ prefix (he + Shureq) marks Hophal Perfect	BBH Chapter 28 — Hophal Strong
+הוּמְתָה	Root: מוּת | Hophal | Perfect 3fs | she was put to death — 3fs suffix ָה	BBH Chapter 28 — Hophal Strong
+וַתּוּמַת (2Ki 11:16)	Root: מוּת | Hophal | Wayyiqtol 3fs | and she was put to death — Athaliah executed; וַתּ + Shureq prefix	BBH Chapter 28 — Hophal Strong
+מוּמָת (1Sa 19:11)	Root: מוּת | Hophal | Participle ms | one who is to be put to death — מוּ prefix + Qamets under R2	BBH Chapter 28 — Hophal Strong
+הוּמֵת	Root: מוּת | Hophal | Inf. Absolute | Tsere under R2 distinguishes from Perfect Patach (הוּמַת); rare (6× OT)	BBH Chapter 28 — Hophal Strong
+הֻגַּד (Deu 17:4)	Root: נָגַד | Hophal | Perfect 3ms | it was told — הֻ prefix (Qibbuts) = alternate Hophal prefix; Hiphil הִגִּיד → Hophal הֻגַּד	BBH Chapter 28 — Hophal Strong
+וַיֻּגַּד (Gen 22:20)	Root: נָגַד | Hophal | Wayyiqtol 3ms | and it was told — standard narrative report formula after major events	BBH Chapter 28 — Hophal Strong
+וַיֻּגַּד (Gen 27:42)	Root: נָגַד | Hophal | Wayyiqtol 3ms | and it was told [to Rebekah] — same formula; repeated in patriarchal narratives	BBH Chapter 28 — Hophal Strong
+יֻגַּד	Root: נָגַד | Hophal | Imperfect 3ms | it will be told — Qibbuts (ֻ) under prefix; alternate Hophal Imperfect vowel	BBH Chapter 28 — Hophal Strong
+הוּבָא (Exo 27:7)	Root: בּוֹא | Hophal | Perfect 3ms | it was brought/put — הוּ prefix; tabernacle instructions	BBH Chapter 28 — Hophal Strong
+יוּבָא (Lev 6:23)	Root: בּוֹא | Hophal | Imperfect 3ms | it shall be brought in — grain offering law; יוּ prefix	BBH Chapter 28 — Hophal Strong
+הֻבָּאת (Gen 33:11)	Root: בּוֹא | Hophal | Weqatal 3fs | it was brought — Jacob's gift to Esau; הֻ prefix (Qibbuts variant)	BBH Chapter 28 — Hophal Strong
+מוּבָאִים (Gen 43:18)	Root: בּוֹא | Hophal | Participle mp | [are.being] brought — brothers fear being brought to Joseph; מוּ prefix	BBH Chapter 28 — Hophal Strong
+וַיֻּכּוּ (Exo 5:14)	Root: נָכָה | Hophal | Wayyiqtol 3mp | and they were beaten — Israelite foremen; Pe-Nun assimilation: נ→כּ (dagesh)	BBH Chapter 28 — Hophal Strong
+מֻכִּים (Exo 5:16)	Root: נָכָה | Hophal | Participle mp | being beaten/struck — מֻ prefix + assimilation dagesh; Hiphil הִכָּה = to strike	BBH Chapter 28 — Hophal Strong
+הֵמִית vs. יוּמַת	Hiphil הֵמִית = "put to death" (active causative) · Hophal יוּמַת = "was put to death" (passive causative) — prefix Hireq→Shureq shift	BBH Chapter 28 — Hophal Strong
+הִגִּיד vs. וַיֻּגַּד	Hiphil הִגִּיד = "he told/declared" · Hophal וַיֻּגַּד = "it was told" — active Hiphil passivized by Hophal; הִ→ יֻ in Wayyiqtol	BBH Chapter 28 — Hophal Strong
+הֵבִיא vs. הוּבָא	Hiphil הֵבִיא = "he brought" · Hophal הוּבָא = "it was brought" — biconsonantal root בוא; prefix הֵ→הוּ	BBH Chapter 28 — Hophal Strong
+הִכָּה vs. מֻכִּים	Hiphil הִכָּה = "he struck/killed" · Hophal מֻכִּים = "those being struck" — Participle mp; מֻ prefix	BBH Chapter 28 — Hophal Strong
+Hophal Participle vs. Pual Participle	Both: מ prefix + u-class vowel. KEY DIFFERENCE: Pual has DAGESH in R2 (passive of Piel) · Hophal has NO dagesh (passive of Hiphil). Ex: מְקֻדָּשׁ (Pual) vs. מוּמָת (Hophal)	BBH Chapter 28 — Hophal Strong
+Why no Hophal Imperative?	Passive verbs cannot be commanded. The Hophal = passive causative; one cannot command someone to "be caused to do something."	BBH Chapter 28 — Hophal Strong
+Most common single Hophal form?	יוּמַת (99 tokens) — Hophal Imperfect 3ms of מות — capital punishment formula; in every OT death-penalty law	BBH Chapter 28 — Hophal Strong

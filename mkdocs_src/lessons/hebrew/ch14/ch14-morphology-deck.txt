@@ -1,0 +1,40 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 14 — Qal Perfect Weak
+#tags column:3
+מָצָא (Exo 2:15)	Root: מָצָא | Perfect 3ms | he found | III-א	qal-perfect-lamed-aleph bbh-ch14
+מָצְאָה (Gen 8:9)	Root: מָצָא | Perfect 3fs | she found | III-א	qal-perfect-lamed-aleph bbh-ch14
+קָרָאתָ	Root: קָרָא | Perfect 2ms | you called | III-א	qal-perfect-lamed-aleph bbh-ch14
+קָרְאוּ	Root: קָרָא | Perfect 3cp | they called | III-א	qal-perfect-lamed-aleph bbh-ch14
+עָשָׂה (Gen 1:31)	Root: עָשָׂה | Perfect 3ms | he made | III-ה	qal-perfect-lamed-he bbh-ch14
+עָשְׂתָה	Root: עָשָׂה | Perfect 3fs | she made | III-ה	qal-perfect-lamed-he bbh-ch14
+עָשִׂיתָ (Gen 3:13)	Root: עָשָׂה | Perfect 2ms | you made | III-ה	qal-perfect-lamed-he bbh-ch14
+עָשׂוּ	Root: עָשָׂה | Perfect 3cp | they made | III-ה	qal-perfect-lamed-he bbh-ch14
+הָיָה (Gen 1:2)	Root: הָיָה | Perfect 3ms | he was | III-ה	qal-perfect-lamed-he bbh-ch14
+הָיְתָה (Gen 1:2)	Root: הָיָה | Perfect 3fs | she/it was | III-ה	qal-perfect-lamed-he bbh-ch14
+הָיוּ	Root: הָיָה | Perfect 3cp | they were | III-ה	qal-perfect-lamed-he bbh-ch14
+שָׁלַ֫חַ	Root: שָׁלַח | Perfect 3ms | he sent | III-ח	qal-perfect-lamed-guttural bbh-ch14
+שָׁמַ֫עַ (Gen 3:17)	Root: שָׁמַע | Perfect 3ms | he heard | III-ע	qal-perfect-lamed-guttural bbh-ch14
+שָׁמַעְתָּ (Gen 3:17)	Root: שָׁמַע | Perfect 2ms | you heard | III-ע	qal-perfect-lamed-guttural bbh-ch14
+עָמַד	Root: עָמַד | Perfect 3ms | he stood | I-guttural	qal-perfect-pe-guttural bbh-ch14
+אָמַר (Gen 1:3)	Root: אָמַר | Perfect 3ms | he said | I-guttural	qal-perfect-pe-guttural bbh-ch14
+עֲמַדְתֶּם	Root: עָמַד | Perfect 2mp | you (mp) stood | I-guttural	qal-perfect-pe-guttural bbh-ch14
+נָתַן (Gen 1:29)	Root: נָתַן | Perfect 3ms | he gave | I-נ	qal-perfect-pe-nun bbh-ch14
+נָתַתָּ (Gen 3:12)	Root: נָתַן | Perfect 2ms | you gave | I-נ	qal-perfect-pe-nun bbh-ch14
+נָתַתִּי (Gen 1:29)	Root: נָתַן | Perfect 1cs | I gave | I-נ	qal-perfect-pe-nun bbh-ch14
+נָפַלְתִּי	Root: נָפַל | Perfect 1cs | I fell | I-נ	qal-perfect-pe-nun bbh-ch14
+יָלַד (Gen 4:18)	Root: יָלַד | Perfect 3ms | he fathered | I-י	qal-perfect-pe-yod bbh-ch14
+יָדַעְתִּי (Gen 22:12)	Root: יָדַע | Perfect 1cs | I know | I-י	qal-perfect-pe-yod bbh-ch14
+יְלַדְתֶּם	Root: יָלַד | Perfect 2mp | you (mp) fathered | I-י	qal-perfect-pe-yod bbh-ch14
+קָם (Gen 22:3)	Root: קוּם | Perfect 3ms | he arose | Biconsonantal	qal-perfect-biconsonantal bbh-ch14
+קָמָה	Root: קוּם | Perfect 3fs | she arose | Biconsonantal	qal-perfect-biconsonantal bbh-ch14
+קַמְתָּ	Root: קוּם | Perfect 2ms | you arose | Biconsonantal	qal-perfect-biconsonantal bbh-ch14
+בָּא (Gen 6:13)	Root: בּוֹא | Perfect 3ms | he came | Biconsonantal	qal-perfect-biconsonantal bbh-ch14
+שָׁב (Gen 14:17)	Root: שׁוּב | Perfect 3ms | he returned | Biconsonantal	qal-perfect-biconsonantal bbh-ch14
+שָׁבוּ	Root: שׁוּב | Perfect 3cp | they returned | Biconsonantal	qal-perfect-biconsonantal bbh-ch14
+סָבַב	Root: סָבַב | Perfect 3ms | he surrounded | Geminate	qal-perfect-geminate bbh-ch14
+סָבְבָה	Root: סָבַב | Perfect 3fs | she surrounded | Geminate	qal-perfect-geminate bbh-ch14
+סַבֹּתָ	Root: סָבַב | Perfect 2ms | you surrounded | Geminate	qal-perfect-geminate bbh-ch14
+תָּמַם (Deut 2:15)	Root: תָּמַם | Perfect 3ms | he was finished | Geminate	qal-perfect-geminate bbh-ch14
+תָּמְמוּ (Deut 2:15)	Root: תָּמַם | Perfect 3cp | they were finished | Geminate	qal-perfect-geminate bbh-ch14
