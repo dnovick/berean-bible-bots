@@ -4,6 +4,8 @@ Studies of Greek grammar, vocabulary, and structure in the New Testament.
 
 ← [Back to all reports](../README.md)
 
+> **Text tradition:** Greek text follows the Byzantine / Textus Receptus tradition (STEPBible TAGNT). English translations use the **KJV** unless otherwise noted.
+
 ---
 
 ## Verb Morphology
