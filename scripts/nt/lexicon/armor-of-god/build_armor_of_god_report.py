@@ -360,7 +360,7 @@ The armor passage is therefore not an appendix. It is a call to *wear* what Paul
         'Chapters with higher counts reflect where Paul most developed that theme.'
     )
     sections.append('')
-    sections.append('![Armor of God key terms across Ephesians 1–5](../armor-of-god-heatmap.png)')
+    sections.append('![Armor of God key terms across Ephesians 1–5](armor-of-god-heatmap.png)')
     sections.append('')
     sections.append('---')
     sections.append('')

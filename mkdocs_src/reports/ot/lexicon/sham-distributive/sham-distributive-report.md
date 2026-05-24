@@ -3,7 +3,7 @@
 **Focus passage:** Isaiah 28:10, 13  
 **Corpus:** Hebrew Old Testament (OSHB)  
 **Topic:** The use of repeated שָׁם ("there") as a distributive idiom, and its broader pattern in Biblical Hebrew  
-<!-- Build script: scripts/ot/lexicon/build_sham_distributive_report.py (repo link omitted from web) -->
+**Build script:** [`scripts/ot/lexicon/build_sham_distributive_report.py`](../../../../scripts/ot/lexicon/build_sham_distributive_report.py)
 
 ---
 
@@ -90,9 +90,9 @@ In each case, Hebrew uses *the same deictic word twice* where English instinctiv
 
 שָׁם (H8033) occurs **832 times** in the OT. Of these, **90 verses** contain the word twice or more in a single verse. The charts below show the distribution.
 
-![Frequency of שָׁם per 1,000 words by OT book](../sham-frequency-by-book.png)
+![Frequency of שָׁם per 1,000 words by OT book](../../../charts/ot/word_studies/sham-distributive/sham-frequency-by-book.png)
 
-![Verses with repeated שָׁם by OT book](../sham-repeated-by-book.png)
+![Verses with repeated שָׁם by OT book](../../../charts/ot/word_studies/sham-distributive/sham-repeated-by-book.png)
 
 The 90 repeated-שָׁם verses fall into three functional categories:
 

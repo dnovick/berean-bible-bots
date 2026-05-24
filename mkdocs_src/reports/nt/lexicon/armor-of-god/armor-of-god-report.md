@@ -245,7 +245,7 @@ Earlier in Ephesians, before it becomes a piece of armor in 18:
 
 The chart below shows the word-count occurrences of each armor term across Ephesians chapters 1–5 (chapter 6 excluded). Chapters with higher counts reflect where Paul most developed that theme.
 
-![Armor of God key terms across Ephesians 1–5](../armor-of-god-heatmap.png)
+![Armor of God key terms across Ephesians 1–5](armor-of-god-heatmap.png)
 
 ---
 
