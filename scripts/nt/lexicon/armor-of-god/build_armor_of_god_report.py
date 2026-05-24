@@ -118,36 +118,36 @@ def build_heatmap() -> Path:
 
 EPH_6_PASSAGE = {
     10: ("Τοῦ λοιποῦ, ἀδελφοί μου, ἐνδυναμοῦσθε ἐν κυρίῳ καὶ ἐν τῷ κράτει τῆς ἰσχύος αὐτοῦ.",
-         "Finally, be strong in the Lord and in the strength of his might."),
+         "Finally, my brethren, be strong in the Lord, and in the power of his might."),
     11: ("ἐνδύσασθε τὴν πανοπλίαν τοῦ θεοῦ πρὸς τὸ δύνασθαι ὑμᾶς στῆναι πρὸς τὰς μεθοδείας τοῦ διαβόλου·",
-         "Put on the whole armor of God, that you may be able to stand against the schemes of the devil."),
+         "Put on the whole armour of God, that ye may be able to stand against the wiles of the devil."),
     12: (
         "ὅτι οὐκ ἔστιν ἡμῖν ἡ πάλη πρὸς αἷμα καὶ σάρκα ἀλλὰ πρὸς τὰς ἀρχάς, πρὸς τὰς ἐξουσίας, πρὸς τοὺς κοσμοκράτορας τοῦ σκότους τοῦ αἰῶνος τούτου, πρὸς τὰ πνευματικὰ τῆς πονηρίας ἐν τοῖς ἐπουρανίοις.",  # noqa: E501
-        "For we do not wrestle against flesh and blood, but against the rulers, against the authorities, against the cosmic powers over this present darkness, against the spiritual forces of evil in the heavenly places.",  # noqa: E501
+        "For we wrestle not against flesh and blood, but against principalities, against powers, against the rulers of the darkness of this world, against spiritual wickedness in high places.",  # noqa: E501
     ),
     13: (
         "διὰ τοῦτο ἀναλάβετε τὴν πανοπλίαν τοῦ θεοῦ, ἵνα δυνηθῆτε ἀντιστῆναι ἐν τῇ ἡμέρᾳ τῇ πονηρᾷ καὶ ἅπαντα κατεργασάμενοι στῆναι.",  # noqa: E501
-        "Therefore take up the whole armor of God, that you may be able to withstand in the evil day, and having done all, to stand firm.",
+        "Wherefore take unto you the whole armour of God, that ye may be able to withstand in the evil day, and having done all, to stand.",
     ),
     14: (
         "στῆτε οὖν περιζωσάμενοι τὴν ὀσφὺν ὑμῶν ἐν ἀληθείᾳ καὶ ἐνδυσάμενοι τὸν θώρακα τῆς δικαιοσύνης",
-        "Stand therefore, having fastened on the belt of truth, and having put on the breastplate of righteousness,",
+        "Stand therefore, having your loins girt about with truth, and having on the breastplate of righteousness;",
     ),
     15: (
         "καὶ ὑποδησάμενοι τοὺς πόδας ἐν ἑτοιμασίᾳ τοῦ εὐαγγελίου τῆς εἰρήνης·",
-        "and, as shoes for your feet, having put on the readiness given by the gospel of peace.",
+        "And your feet shod with the preparation of the gospel of peace;",
     ),
     16: (
         "ἐν πᾶσιν ἀναλαβόντες τὸν θυρεὸν τῆς πίστεως, ἐν ᾧ δυνήσεσθε πάντα τὰ βέλη τοῦ πονηροῦ τὰ πεπυρωμένα σβέσαι·",  # noqa: E501
-        "In all circumstances take up the shield of faith, with which you can extinguish all the flaming darts of the evil one;",
+        "Above all, taking the shield of faith, wherewith ye shall be able to quench all the fiery darts of the wicked.",
     ),
     17: (
         "καὶ τὴν περικεφαλαίαν τοῦ σωτηρίου δέξασθε καὶ τὴν μάχαιραν τοῦ πνεύματος, ὅ ἐστιν ῥῆμα θεοῦ·",
-        "and take the helmet of salvation, and the sword of the Spirit, which is the word of God,",
+        "And take the helmet of salvation, and the sword of the Spirit, which is the word of God:",
     ),
     18: (
         "διὰ πάσης προσευχῆς καὶ δεήσεως προσευχόμενοι ἐν παντὶ καιρῷ ἐν πνεύματι, καὶ εἰς αὐτὸ τοῦτο ἀγρυπνοῦντες ἐν πάσῃ προσκαρτερήσει καὶ δεήσει περὶ πάντων τῶν ἁγίων",  # noqa: E501
-        "praying at all times in the Spirit, with all prayer and supplication. To that end, keep alert with all perseverance, making supplication for all the saints,",  # noqa: E501
+        "Praying always with all prayer and supplication in the Spirit, and watching thereunto with all perseverance and supplication for all saints;",  # noqa: E501
     ),
 }
 
