@@ -583,7 +583,8 @@ if __name__ == '__main__':
     print('Building per-book charts...')
     for prep, slug in [('ἐπί', 'epi'), ('παρά', 'para'), ('διά', 'dia'),
                        ('κατά', 'kata'), ('μετά', 'meta'), ('περί', 'peri'),
-                       ('ὑπό', 'hypo'), ('ὑπέρ', 'hyper')]:
+                       ('ὑπό', 'hypo'), ('ὑπέρ', 'hyper'),
+                       ('πρός', 'pros'), ('ἀνά', 'ana')]:
         build_book_chart(prep, slug)
 
     print('Building report...')
