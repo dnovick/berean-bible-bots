@@ -35,6 +35,7 @@ Maps how OT passages are echoed or quoted in the NT, using alignment data.
 | Report | Anchor Text |
 |---|---|
 | [NT Quotations of the OT — Overview](intertextuality/nt_quotations_overview.md) | Whole Bible |
+| [NT OT Quotation Source — LXX vs MT by Book](intertextuality/nt-ot-source-alignment.md) | Whole NT |
 | [Isaiah Intertextuality Network](intertextuality/isa-intertextuality.md) | Isaiah (full book) |
 | [Isaiah 53 Intertextuality Network](intertextuality/isa-53-intertextuality.md) | Isaiah 53 |
 | [Psalms 22 Intertextuality Network](intertextuality/psa-22-intertextuality.md) | Psalms 22 |
