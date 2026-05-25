@@ -38,6 +38,14 @@ Studies of Greek grammar, vocabulary, and structure in the New Testament.
 
 ---
 
+## Prepositions
+
+| Report | Description |
+|---|---|
+| [Greek NT Prepositions — Case Binding Statistics](prepositions/nt-prep-cases.md) | All NT prepositions that govern multiple cases, with case-distribution statistics, per-book counts, and semantic notes on how meaning shifts with case |
+
+---
+
 ## Discourse Analysis
 
 | Report | Description |
