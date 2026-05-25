@@ -7,20 +7,20 @@
 
 ## Contents
 
-1. [Overview — All NT Prepositions](#overview--all-nt-prepositions)
-2. [Multi-Case Prepositions — Case Distribution Heatmap](#multi-case-prepositions--case-distribution-heatmap)
+1. [Overview — All NT Prepositions](#overview-all-nt-prepositions)
+2. [Multi-Case Prepositions — Case Distribution Heatmap](#multi-case-prepositions-case-distribution-heatmap)
 3. [Detailed Analysis by Preposition](#detailed-analysis-by-preposition)
-   - [ἐπί (epi)](#ἐπι-epi)
-   - [παρά (para)](#παρα-para)
-   - [διά (dia)](#δια-dia)
-   - [κατά (kata)](#κατα-kata)
-   - [μετά (meta)](#μετα-meta)
-   - [περί (peri)](#περι-peri)
-   - [ὑπό (hypo)](#ὑπο-hypo)
-   - [ὑπέρ (hyper)](#ὑπερ-hyper)
-   - [πρός (pros)](#προς-pros)
-   - [ἀνά (ana)](#ἀνα-ana)
-4. [Single-Case Prepositions — Reference Table](#single-case-prepositions--reference-table)
+   - [ἐπί (epi)](#epi-on-upon-over-at-against-on-the-basis-of)
+   - [παρά (para)](#para-beside-from-with-contrary-to)
+   - [διά (dia)](#dia-through-by-means-of-because-of-on-account-of)
+   - [κατά (kata)](#kata-according-to-against-throughout-down-from)
+   - [μετά (meta)](#meta-with-association-after-sequence)
+   - [περί (peri)](#peri-concerning-about-around-for)
+   - [ὑπό (hypo)](#hypo-under-by-agent)
+   - [ὑπέρ (hyper)](#hyper-on-behalf-of-above-beyond-more-than)
+   - [πρός (pros)](#pros-to-toward-with-against)
+   - [ἀνά (ana)](#ana-up-each-among)
+4. [Single-Case Prepositions — Reference Table](#single-case-prepositions-reference-table)
 5. [Grammar Notes](#grammar-notes)
 
 ---

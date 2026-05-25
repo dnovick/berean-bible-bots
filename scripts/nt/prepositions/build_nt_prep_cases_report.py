@@ -16,6 +16,7 @@ Outputs:
 
 from __future__ import annotations
 from pathlib import Path
+import re
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt  # noqa: E402
@@ -28,6 +29,22 @@ from bible_grammar import (  # noqa: E402
 )
 
 OUT = Path('output/reports/nt/prepositions')
+
+
+def _slug(heading: str) -> str:
+    """Replicate the anchor ID that MkDocs Material generates for a heading.
+
+    Rules (matches Python-Markdown toc + Material slugify):
+    - Strip all non-ASCII characters (Greek letters, em-dashes, etc.)
+    - Lower-case
+    - Replace runs of non-alphanumeric chars with a single hyphen
+    - Strip leading/trailing hyphens
+    """
+    ascii_only = heading.encode('ascii', errors='ignore').decode()
+    slug = re.sub(r'[^a-z0-9]+', '-', ascii_only.lower()).strip('-')
+    return slug
+
+
 OUT.mkdir(parents=True, exist_ok=True)
 
 # ── Preposition metadata ───────────────────────────────────────────────────────
@@ -350,21 +367,21 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
         '',
         '## Contents',
         '',
-        '1. [Overview — All NT Prepositions](#overview--all-nt-prepositions)',
+        '1. [Overview — All NT Prepositions](#overview-all-nt-prepositions)',
         '2. [Multi-Case Prepositions — Case Distribution Heatmap]'
-        '(#multi-case-prepositions--case-distribution-heatmap)',
+        '(#multi-case-prepositions-case-distribution-heatmap)',
         '3. [Detailed Analysis by Preposition]'
         '(#detailed-analysis-by-preposition)',
     ]
     for prep in MULTI_CASE:
         meta = PREP_META[prep]
         slug = meta['transliteration']
-        anchor = prep.replace("ύ", "υ").replace("ό", "ο").replace("έ", "ε")
-        anchor = anchor.replace("ά", "α").replace("ί", "ι").lower()
-        lines.append(f'   - [{prep} ({slug})](#{anchor}-{slug})')
+        gloss = meta['gloss']
+        heading = f'{prep} ({slug}) — {gloss}'
+        lines.append(f'   - [{prep} ({slug})](#{_slug(heading)})')
     lines += [
         '4. [Single-Case Prepositions — Reference Table]'
-        '(#single-case-prepositions--reference-table)',
+        '(#single-case-prepositions-reference-table)',
         '5. [Grammar Notes](#grammar-notes)',
         '',
         '---',
