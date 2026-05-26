@@ -373,10 +373,9 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
     ]
     for prep in MULTI_CASE:
         meta = PREP_META[prep]
-        slug = meta['transliteration']
         gloss = meta['gloss']
-        heading = f'{prep} ({slug}) — {gloss}'
-        lines.append(f'   - [{prep} ({slug})](#{_slug(heading)})')
+        heading = f'{prep} — {gloss}'
+        lines.append(f'   - [{prep}](#{_slug(heading)})')
     lines += [
         '4. [Single-Case Prepositions — Reference Table]'
         '(#single-case-prepositions-reference-table)',
@@ -419,7 +418,9 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
         count = frow['count']
         pct = frow['pct']
         meta = PREP_META.get(lemma, {})
-        gloss = meta.get('gloss', frow.get('gloss', '—')).split(',')[0]
+        raw_gloss = meta.get('gloss', frow.get('gloss', '—')).split(',')[0]
+        # Strip any embedded transliteration prefix (e.g. "en — in/among" → "in/among")
+        gloss = raw_gloss.split(' — ')[-1] if ' — ' in raw_gloss else raw_gloss
         sub = all_cases[(all_cases['lemma'] == lemma) &
                         (~all_cases['case_binding'].isin(['(none / unclear)']))]
         n_cases = sub['case_binding'].nunique()
@@ -460,7 +461,7 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
         total = sub['count'].sum()
 
         lines += [
-            f'### {prep} ({slug}) — {meta["gloss"]}',
+            f'### {prep} — {meta["gloss"]}',
             '',
             f'**Strong\'s:** {meta["strongs"]} | '
             f'**Total NT occurrences:** {total:,}',

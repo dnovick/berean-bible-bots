@@ -10,16 +10,16 @@
 1. [Overview — All NT Prepositions](#overview-all-nt-prepositions)
 2. [Multi-Case Prepositions — Case Distribution Heatmap](#multi-case-prepositions-case-distribution-heatmap)
 3. [Detailed Analysis by Preposition](#detailed-analysis-by-preposition)
-   - [ἐπί (epi)](#epi-on-upon-over-at-against-on-the-basis-of)
-   - [παρά (para)](#para-beside-from-with-contrary-to)
-   - [διά (dia)](#dia-through-by-means-of-because-of-on-account-of)
-   - [κατά (kata)](#kata-according-to-against-throughout-down-from)
-   - [μετά (meta)](#meta-with-association-after-sequence)
-   - [περί (peri)](#peri-concerning-about-around-for)
-   - [ὑπό (hypo)](#hypo-under-by-agent)
-   - [ὑπέρ (hyper)](#hyper-on-behalf-of-above-beyond-more-than)
-   - [πρός (pros)](#pros-to-toward-with-against)
-   - [ἀνά (ana)](#ana-up-each-among)
+   - [ἐπί](#on-upon-over-at-against-on-the-basis-of)
+   - [παρά](#beside-from-with-contrary-to)
+   - [διά](#through-by-means-of-because-of-on-account-of)
+   - [κατά](#according-to-against-throughout-down-from)
+   - [μετά](#with-association-after-sequence)
+   - [περί](#concerning-about-around-for)
+   - [ὑπό](#under-by-agent)
+   - [ὑπέρ](#on-behalf-of-above-beyond-more-than)
+   - [πρός](#to-toward-with-against)
+   - [ἀνά](#up-each-among)
 4. [Single-Case Prepositions — Reference Table](#single-case-prepositions-reference-table)
 5. [Grammar Notes](#grammar-notes)
 
@@ -43,26 +43,26 @@ Total preposition occurrences in the NT (TAGNT). Multi-case prepositions are mar
 
 | Preposition | Gloss | NT Count | % of all preps | Cases |
 |---|---|---|---|---|
-| ✦ἐν | en — in/among | 2,743 | 25.1% | Dative / Genitive |
-| ✦εἰς | eis — into/for | 1,766 | 16.2% | Accusative / Genitive |
-| ✦ἐκ | ek — out of/from | 913 | 8.4% | Genitive / Accusative |
+| ✦ἐν | in/among | 2,743 | 25.1% | Dative / Genitive |
+| ✦εἰς | into/for | 1,766 | 16.2% | Accusative / Genitive |
+| ✦ἐκ | out of/from | 913 | 8.4% | Genitive / Accusative |
 | ✦ἐπί | on | 886 | 8.1% | Accusative / Genitive / Dative |
 | ✦πρός | to | 700 | 6.4% | Accusative / Dative / Genitive |
 | ✦διά | through | 667 | 6.1% | Genitive / Accusative |
-| ✦ἀπό | apo — from/away from | 647 | 5.9% | Genitive / Nominative |
+| ✦ἀπό | from/away from | 647 | 5.9% | Genitive / Nominative |
 | ✦κατά | according to | 472 | 4.3% | Accusative / Genitive / Nominative |
 | ✦μετά | with (association) | 470 | 4.3% | Genitive / Accusative |
 | ✦περί | concerning | 333 | 3.1% | Genitive / Accusative |
 | ✦ὑπό | under | 219 | 2.0% | Genitive / Accusative |
 | ✦παρά | beside | 192 | 1.8% | Genitive / Accusative / Dative |
 | ✦ὑπέρ | on behalf of | 150 | 1.4% | Genitive / Accusative / Nominative |
-| σύν | syn — with/together | 128 | 1.2% | Dative |
-| ἕως | heos — until/as far as | 108 | 1.0% | Genitive |
-| ἐνώπιον | enopion — before/in the presence of | 94 | 0.9% | Genitive |
-| πρό | pro — before | 47 | 0.4% | Genitive |
-| ἔμπροσθεν | emprosthen — before/in front of | 44 | 0.4% | Genitive |
-| ἄχρι | achri — until/as far as | 43 | 0.4% | Genitive |
-| ✦χωρίς | choris — apart from/without | 40 | 0.4% | Genitive / Nominative |
+| σύν | with/together | 128 | 1.2% | Dative |
+| ἕως | until/as far as | 108 | 1.0% | Genitive |
+| ἐνώπιον | before/in the presence of | 94 | 0.9% | Genitive |
+| πρό | before | 47 | 0.4% | Genitive |
+| ἔμπροσθεν | before/in front of | 44 | 0.4% | Genitive |
+| ἄχρι | until/as far as | 43 | 0.4% | Genitive |
+| ✦χωρίς | apart from/without | 40 | 0.4% | Genitive / Nominative |
 | ὀπίσω |  | 26 | 0.2% | Genitive |
 | ἕνεκα |  | 26 | 0.2% | Genitive |
 | ἀντί |  | 22 | 0.2% | Genitive |
@@ -88,7 +88,7 @@ Each cell shows what percentage of that preposition's NT occurrences use that ca
 
 ## Detailed Analysis by Preposition
 
-### ἐπί (epi) — on, upon, over, at, against, on the basis of
+### ἐπί — on, upon, over, at, against, on the basis of
 
 **Strong's:** G1909 | **Total NT occurrences:** 873
 
@@ -102,7 +102,7 @@ Each cell shows what percentage of that preposition's NT occurrences use that ca
 
 The most complex NT preposition: all three oblique cases occur with distinct meaning streams. Genitive stresses surface contact or temporal setting; dative stresses rest at a location or ground/basis; accusative stresses direction of motion or extent. The overlap is real — context and lexical semantics of the governing verb often determine sense more than case alone.
 
-### παρά (para) — beside, from, with, contrary to
+### παρά — beside, from, with, contrary to
 
 **Strong's:** G3844 | **Total NT occurrences:** 190
 
@@ -116,7 +116,7 @@ The most complex NT preposition: all three oblique cases occur with distinct mea
 
 παρά with the genitive expresses source or origin ("from the side of"). The dative is locative ("at the side of", "in the presence of"). The accusative covers motion alongside something or extension beyond it, and in legal/ethical contexts "contrary to" (e.g. Rom 1:26 παρὰ φύσιν, "contrary to nature"). Roughly equal distribution across all three cases makes this the most evenly spread multi-case prep in the NT.
 
-### διά (dia) — through, by means of, because of, on account of
+### διά — through, by means of, because of, on account of
 
 **Strong's:** G1223 | **Total NT occurrences:** 657
 
@@ -129,7 +129,7 @@ The most complex NT preposition: all three oblique cases occur with distinct mea
 
 The case split is semantically sharp: genitive = means/channel ("through which something passes"), accusative = cause/reason ("on account of which something happens"). E.g. Eph 2:8 διὰ πίστεως (gen.) = "through faith" (the channel); Rom 4:25 διὰ τὰ παραπτώματα (acc.) = "on account of our trespasses" (cause). Genitive accounts for ~57 % of NT uses, accusative ~41 %.
 
-### κατά (kata) — according to, against, throughout, down from
+### κατά — according to, against, throughout, down from
 
 **Strong's:** G2596 | **Total NT occurrences:** 461
 
@@ -143,7 +143,7 @@ The case split is semantically sharp: genitive = means/channel ("through which s
 
 Genitive carries the original spatial sense ("down from") and the hostile extension ("against": κατὰ τοῦ προφήτου). Accusative (the large majority, ~82 %) has largely shed the spatial sense and functions as a norm marker: κατὰ σάρκα ("according to the flesh"), κατὰ νόμον ("in accordance with the law"). The distribution is highly skewed toward accusative in NT epistolary style.
 
-### μετά (meta) — with (association), after (sequence)
+### μετά — with (association), after (sequence)
 
 **Strong's:** G3326 | **Total NT occurrences:** 443
 
@@ -156,7 +156,7 @@ Genitive carries the original spatial sense ("down from") and the hostile extens
 
 The case split is clean and consistent: genitive = accompaniment/association ("with"), accusative = sequence ("after"). E.g. μετὰ τοῦ Ἰησοῦ (gen.) = "with Jesus"; μετὰ τρεῖς ἡμέρας (acc.) = "after three days". Genitive predominates (~77 %) since much NT prose describes fellowship, discipleship, and community.
 
-### περί (peri) — concerning, about, around, for
+### περί — concerning, about, around, for
 
 **Strong's:** G4012 | **Total NT occurrences:** 314
 
@@ -169,7 +169,7 @@ The case split is clean and consistent: genitive = accompaniment/association ("w
 
 The dominant use (~83 %) is genitive with the sense "concerning, about" — the standard NT idiom for discourse topic (γράφω περί τινος, "I write concerning something"). The substitutionary sense (e.g. περὶ ἁμαρτίας, "for sin/as a sin offering") is important theologically in Hebrews and 1 John. Accusative is spatial ("around") and appears relatively rarely outside the Gospels and Acts.
 
-### ὑπό (hypo) — under, by (agent)
+### ὑπό — under, by (agent)
 
 **Strong's:** G5259 | **Total NT occurrences:** 219
 
@@ -182,7 +182,7 @@ The dominant use (~83 %) is genitive with the sense "concerning, about" — the 
 
 Genitive is the standard marker of the agent in passive constructions (ὑπό + genitive = "by someone/something"). Accusative expresses spatial position ("under") or subordinate status. In the NT, genitive dominates (~77 %) due to the high frequency of theological passive constructions ("raised by God", "taught by the Spirit").
 
-### ὑπέρ (hyper) — on behalf of, above, beyond, more than
+### ὑπέρ — on behalf of, above, beyond, more than
 
 **Strong's:** G5228 | **Total NT occurrences:** 147
 
@@ -196,7 +196,7 @@ Genitive is the standard marker of the agent in passive constructions (ὑπό +
 
 The genitive is the theologically freighted case: ὑπέρ + genitive expresses the substitutionary and intercessory senses central to NT soteriology (Χριστὸς ἀπέθανεν ὑπὲρ ἡμῶν, "Christ died for us", Rom 5:8). Accusative is used spatially and comparatively and appears much less frequently (~12 %).
 
-### πρός (pros) — to, toward, with, against
+### πρός — to, toward, with, against
 
 **Strong's:** G4314 | **Total NT occurrences:** 695
 
@@ -210,7 +210,7 @@ The genitive is the theologically freighted case: ὑπέρ + genitive expresses
 
 In the NT, πρός is almost exclusively accusative (~98 %). The dative and genitive uses are vestigial — a handful of instances each, reflecting literary archaism. The accusative sense covers both literal motion toward ("go to Jerusalem") and figurative direction ("pray toward God", "face to face with").
 
-### ἀνά (ana) — up, each, among
+### ἀνά — up, each, among
 
 **Strong's:** G0303 | **Total NT occurrences:** 10
 
