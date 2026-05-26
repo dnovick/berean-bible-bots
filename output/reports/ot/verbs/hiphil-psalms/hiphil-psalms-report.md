@@ -23,9 +23,9 @@
 - **Overall Psalms Hiphil rate: 3.0 per 100 words.** 65 chapters exceed this baseline.
 - **Most Hiphil-dense chapter: Psalm 75** (11.5 per 100 words, 10 tokens in 87 words).
 - **Top 5 densest chapters:** Ps 75 (11.5%), Ps 113 (10.0%), Ps 92 (7.1%), Ps 14 (6.8%), Ps 142 (6.7%).
-- **Most common Hiphil root:** H3034 ("give thanks") — 38 tokens.
-- **Top 5 roots:** H3034 "give thanks" (38), H5046 "will declare" (20), H3467 "will save" (16), H5027 "attention" (15), H5186 "incline" (15).
-- **Theologically notable:** the Hiphil of הוֹדָה (H3034, "give thanks") is the most frequent root — the very verb behind the תּוֹדָה (todah) thanksgiving genre that dominates Psalms.
+- **Most common Hiphil root:** הֹדוֹת ("give thanks") — 38 tokens.
+- **Top 5 roots:** הֹדוֹת "give thanks" (38), הִגִּיד "will declare" (20), הוֹשִׁיעַ "will save" (16), הִבִּיט "attention" (15), נָטָה "incline" (15).
+- **Theologically notable:** the Hiphil of הֹדוֹת ("give thanks") is the most frequent root — the very verb behind the תּוֹדָה (todah) thanksgiving genre that dominates Psalms.
 
 ---
 
@@ -87,41 +87,41 @@ Each cell is one psalm. The number is Hiphil verbs per 100 words. Darker = more 
 
 ![Top Hiphil roots in Psalms](hiphil-psalms-top-roots-bar.png)
 
-| Rank | Root (Strongs) | Gloss | Hiphil tokens |
+| Rank | Root | Gloss | Hiphil tokens |
 |---|---|---|---|
-| 1 | H3034 | give thanks | 38 |
-| 2 | H5046 | will declare | 20 |
-| 3 | H3467 | will save | 16 |
-| 4 | H5027 | attention | 15 |
-| 5 | H5186 | incline | 15 |
-| 6 | H7489A | evil-doers | 14 |
-| 7 | H5641 | hide | 13 |
-| 8 | H0215 | make shine | 13 |
-| 9 | H5221 | he struck down | 12 |
-| 10 | H5337 | [is] a deliverer | 11 |
-| 11 | H7311A | lifts up | 11 |
-| 12 | H7919A | [one who] acts prudently | 10 |
-| 13 | H7321 | shout for joy | 9 |
-| 14 | H3318H | [he is] bringing out | 8 |
-| 15 | H3045 | make known | 8 |
-| 16 | H1431 | has made great | 8 |
-| 17 | H3559H | establish | 8 |
-| 18 | H7725G | will bring back | 7 |
-| 19 | H0539 | believed | 7 |
-| 20 | H4784 | they rebelled | 6 |
-| 21 | H7337 | they have opened wide | 6 |
-| 22 | H7993 | throw | 6 |
-| 23 | H7725K | repay | 6 |
-| 24 | H2142 | will bring to remembrance | 6 |
-| 25 | H6692A | may people blossom | 5 |
+| 1 | הֹדוֹת | give thanks | 38 |
+| 2 | הִגִּיד | will declare | 20 |
+| 3 | הוֹשִׁיעַ | will save | 16 |
+| 4 | הִבִּיט | attention | 15 |
+| 5 | נָטָה | incline | 15 |
+| 6 | רַע | evil-doers | 14 |
+| 7 | הִסְתִּיר | hide | 13 |
+| 8 | אוֹר | make shine | 13 |
+| 9 | הִכָּה | he struck down | 12 |
+| 10 | הִצִּיל | [is] a deliverer | 11 |
+| 11 | הֵרִים | lifts up | 11 |
+| 12 | שָׂכַל | [one who] acts prudently | 10 |
+| 13 | נָרִיעָה | shout for joy | 9 |
+| 14 | הוֹצִיא | [he is] bringing out | 8 |
+| 15 | יָדַע | make known | 8 |
+| 16 | גָדַל | has made great | 8 |
+| 17 | הֵכִין | establish | 8 |
+| 18 | שָׁב | will bring back | 7 |
+| 19 | הֶאֱמִין | believed | 7 |
+| 20 | מָרָה | they rebelled | 6 |
+| 21 | רָחַב | they have opened wide | 6 |
+| 22 | הִשְׁלִיךְ | throw | 6 |
+| 23 | הֵשִׁיב | repay | 6 |
+| 24 | זָכַר | will bring to remembrance | 6 |
+| 25 | צָץ | may people blossom | 5 |
 
 **Notes on the top roots:**
 
-- **H3034 (הוֹדָה, give thanks):** The Hiphil of this root is the standard Psalms verb for corporate and individual praise — "I will give thanks to the LORD." Its 38 occurrences top the list by a wide margin.
-- **H5046 (נָגַד, declare/proclaim):** The Hiphil expresses the act of making something known, particularly God's works and righteousness before the congregation.
-- **H3467 (יָשַׁע, save):** The Hiphil expresses deliverance by God — the root behind יֵשׁוּעַ/יְשׁוּעָה (salvation). Central to the lament and praise genres alike.
-- **H5027 (נָבַט, look/pay attention):** Hiphil "cause to look," often used in petition ("look upon me") or accusation.
-- **H5186 (נָטָה, incline/stretch out):** Hiphil "incline (the ear)" — one of the most common Psalms petition idioms.
+- **הֹדוֹת (give thanks):** The Hiphil of this root is the standard Psalms verb for corporate and individual praise — "I will give thanks to the LORD." Its 38 occurrences top the list by a wide margin.
+- **הִגִּיד (declare/proclaim):** The Hiphil expresses the act of making something known, particularly God's works and righteousness before the congregation.
+- **הוֹשִׁיעַ (save):** The Hiphil expresses deliverance by God — the root behind יֵשׁוּעַ/יְשׁוּעָה (salvation). Central to the lament and praise genres alike.
+- **הִבִּיט (look/pay attention):** Hiphil "cause to look," often used in petition ("look upon me") or accusation.
+- **נָטָה (incline/stretch out):** Hiphil "incline (the ear)" — one of the most common Psalms petition idioms.
 
 ---
 

@@ -20,6 +20,7 @@ import matplotlib.pyplot as plt  # noqa: E402
 import matplotlib.ticker as mticker  # noqa: E402
 import numpy as np  # noqa: E402
 import pandas as pd  # noqa: E402
+from bidi.algorithm import get_display  # noqa: E402
 
 from bible_grammar import query  # noqa: E402
 
@@ -46,6 +47,49 @@ def extract_root_strongs(s: str) -> str:
     return re.sub(r'[{}]', '', str(s).split('/')[0])
 
 
+def strip_cantillation(w: str) -> str:
+    """Remove Hebrew cantillation marks (U+0591–U+05AF) from a word."""
+    return ''.join(ch for ch in w if not (0x0591 <= ord(ch) <= 0x05AF))
+
+
+def clean_word(w: str) -> str:
+    """Strip prefixes (e.g. 'and/ '), maqqef, and cantillation from a Hebrew word form."""
+    if '/' in w:
+        w = w.split('/')[-1]
+    w = re.sub(r'[\\].*', '', w)
+    w = re.sub(r'[׃־]', '', w)
+    return strip_cantillation(w).strip()
+
+
+def get_lemma(root: str) -> str:
+    """Return the best available Hebrew dictionary form for a root Strong's number."""
+    subset = df[df['root_strongs'] == root]
+    for stem, conj, person, gender, number in [
+        ('Qal', 'Perfect', '3rd', 'Masculine', 'Singular'),
+        ('Hiphil', 'Perfect', '3rd', 'Masculine', 'Singular'),
+        ('Hiphil', 'Infinitive construct', '', '', ''),
+    ]:
+        filt = subset[subset['stem'] == stem]
+        if conj:
+            filt = filt[filt['conjugation'] == conj]
+        if person:
+            filt = filt[filt['person'] == person]
+        if gender:
+            filt = filt[filt['gender'] == gender]
+        if number:
+            filt = filt[filt['number'] == number]
+        no_pref = filt[~filt['word'].str.contains('/', na=False)]
+        if len(no_pref):
+            return clean_word(no_pref['word'].mode()[0])
+        if len(filt):
+            return clean_word(filt['word'].mode()[0])
+    no_pref = subset[~subset['word'].str.contains('/', na=False)]
+    if len(no_pref):
+        return clean_word(no_pref['word'].iloc[0])
+    return root
+
+
+df['root_strongs'] = df['strongs'].apply(extract_root_strongs)
 psa_hiphil = psa_hiphil.copy()
 psa_hiphil['root_strongs'] = psa_hiphil['strongs'].apply(extract_root_strongs)
 
@@ -85,6 +129,7 @@ root_df = (
     .reset_index()
 )
 root_df = root_df[root_df['root_strongs'] != ''].copy()
+root_df['lemma'] = root_df['root_strongs'].apply(get_lemma)
 
 # ── 3. Chart: density bar (top 30 chapters by hiphil_per_100w) ───────────────
 
@@ -118,7 +163,10 @@ def build_density_bar() -> Path:
 def build_roots_bar() -> Path:
     top = root_df.head(20).copy()
     top = top.iloc[::-1]  # flip so highest is at top
-    labels = [f'{row.root_strongs} — {row.gloss}' for _, row in top.iterrows()]
+    labels = [
+        get_display(f'{row.lemma} — {row.gloss}')
+        for _, row in top.iterrows()
+    ]
 
     fig, ax = plt.subplots(figsize=(10, 7))
     y = np.arange(len(top))
@@ -251,14 +299,14 @@ def build_report() -> Path:
         '- **Top 5 densest chapters:** ' +
         ', '.join(f'Ps {int(r.chapter)} ({r.hiphil_per_100w:.1f}%)'
                   for _, r in top5_density.iterrows()) + '.',
-        f'- **Most common Hiphil root:** {top5_roots.iloc[0].root_strongs}'
+        f'- **Most common Hiphil root:** {top5_roots.iloc[0].lemma}'
         f' ("{top5_roots.iloc[0].gloss}") — {int(top5_roots.iloc[0]["count"])} tokens.',
         '- **Top 5 roots:** ' +
         ', '.join(
-            f'{r.root_strongs} "{r.gloss}" ({int(r["count"])})'
+            f'{r.lemma} "{r.gloss}" ({int(r["count"])})'
             for _, r in top5_roots.iterrows()
         ) + '.',
-        '- **Theologically notable:** the Hiphil of הוֹדָה (H3034, "give thanks")'
+        '- **Theologically notable:** the Hiphil of הֹדוֹת ("give thanks")'
         ' is the most frequent root — the very verb behind the תּוֹדָה (todah)'
         ' thanksgiving genre that dominates Psalms.',
         '',
@@ -335,29 +383,29 @@ def build_report() -> Path:
         '',
         '![Top Hiphil roots in Psalms](hiphil-psalms-top-roots-bar.png)',
         '',
-        '| Rank | Root (Strongs) | Gloss | Hiphil tokens |',
+        '| Rank | Root | Gloss | Hiphil tokens |',
         '|---|---|---|---|',
     ]
     for rank, (_, row) in enumerate(root_df.head(25).iterrows(), 1):
         lines.append(
-            f'| {rank} | {row.root_strongs} | {row.gloss} | {int(row["count"])} |'
+            f'| {rank} | {row.lemma} | {row.gloss} | {int(row["count"])} |'
         )
     lines += [
         '',
         '**Notes on the top roots:**',
         '',
-        '- **H3034 (הוֹדָה, give thanks):** The Hiphil of this root is the'
+        '- **הֹדוֹת (give thanks):** The Hiphil of this root is the'
         ' standard Psalms verb for corporate and individual praise — "I will give'
         ' thanks to the LORD." Its 38 occurrences top the list by a wide margin.',
-        '- **H5046 (נָגַד, declare/proclaim):** The Hiphil expresses the act of'
+        '- **הִגִּיד (declare/proclaim):** The Hiphil expresses the act of'
         ' making something known, particularly God\'s works and righteousness'
         ' before the congregation.',
-        '- **H3467 (יָשַׁע, save):** The Hiphil expresses deliverance by God —'
+        '- **הוֹשִׁיעַ (save):** The Hiphil expresses deliverance by God —'
         ' the root behind יֵשׁוּעַ/יְשׁוּעָה (salvation). Central to the'
         ' lament and praise genres alike.',
-        '- **H5027 (נָבַט, look/pay attention):** Hiphil "cause to look," often'
+        '- **הִבִּיט (look/pay attention):** Hiphil "cause to look," often'
         ' used in petition ("look upon me") or accusation.',
-        '- **H5186 (נָטָה, incline/stretch out):** Hiphil "incline (the ear)"'
+        '- **נָטָה (incline/stretch out):** Hiphil "incline (the ear)"'
         ' — one of the most common Psalms petition idioms.',
         '',
         '---',
