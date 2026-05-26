@@ -2,6 +2,8 @@
 
 ← [Back to NT reports](../index.md)
 
+Studies of how Greek connectives, particles, and other discourse-level features function across the New Testament — how clauses are linked, how argument structure is signaled, and how meaning is built above the sentence level.
+
 ---
 
 | Report | Description |
