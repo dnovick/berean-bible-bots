@@ -24,7 +24,7 @@
 - **Most Hiphil-dense chapter: Psalm 75** (11.5 per 100 words, 10 tokens in 87 words).
 - **Top 5 densest chapters:** Ps 75 (11.5%), Ps 113 (10.0%), Ps 92 (7.1%), Ps 14 (6.8%), Ps 142 (6.7%).
 - **Most common Hiphil root:** הֹדוֹת ("give thanks") — 38 tokens.
-- **Top 5 roots:** הֹדוֹת "give thanks" (38), שָׁב "will bring back" (21), הִגִּיד "will declare" (20), הוֹשִׁיעַ "will save" (16), הִבִּיט "attention" (15).
+- **Top 5 roots:** הֹדוֹת "give thanks" (38), שָׁב "turn/repay" (21), הִגִּיד "declare" (20), הוֹשִׁיעַ "save" (16), הִבִּיט "pay attention/look" (15).
 - **Theologically notable:** the Hiphil of הֹדוֹת ("give thanks") is the most frequent root — the very verb behind the תּוֹדָה (todah) thanksgiving genre that dominates Psalms.
 
 ---
@@ -90,29 +90,29 @@ Each cell is one psalm. The number is Hiphil verbs per 100 words. Darker = more 
 | Rank | Root | Gloss | Hiphil tokens |
 |---|---|---|---|
 | 1 | הֹדוֹת | give thanks | 38 |
-| 2 | שָׁב | will bring back | 21 |
-| 3 | הִגִּיד | will declare | 20 |
-| 4 | הוֹשִׁיעַ | will save | 16 |
-| 5 | הִבִּיט | attention | 15 |
+| 2 | שָׁב | turn/repay | 21 |
+| 3 | הִגִּיד | declare | 20 |
+| 4 | הוֹשִׁיעַ | save | 16 |
+| 5 | הִבִּיט | pay attention/look | 15 |
 | 6 | נָטָה | incline | 15 |
-| 7 | הֵכִין | establish | 14 |
+| 7 | הֵכִין | prepared/establish | 14 |
 | 8 | רַע | evil-doers | 14 |
 | 9 | אוֹר | make shine | 13 |
 | 10 | הִסְתִּיר | hide | 13 |
-| 11 | הִכָּה | he struck down | 12 |
-| 12 | הִצִּיל | [is] a deliverer | 11 |
-| 13 | הֵרִים | lifts up | 11 |
-| 14 | שָׂכַל | [one who] acts prudently | 10 |
-| 15 | נָרִיעָה | shout for joy | 9 |
-| 16 | יָצָא | he brought out | 9 |
-| 17 | גָדַל | has made great | 8 |
-| 18 | יָדַע | make known | 8 |
-| 19 | יָסַף | will repeat | 8 |
+| 11 | הִכָּה | struck | 12 |
+| 12 | הִצִּיל | deliverer/delivered | 11 |
+| 13 | הֵרִים | lifts/raised | 11 |
+| 14 | שָׂכַל | act/acts | 10 |
+| 15 | נָרִיעָה | shout | 9 |
+| 16 | יָצָא | brought/bring out | 9 |
+| 17 | גָדַל | made/magnified | 8 |
+| 18 | יָדַע | make known/made | 8 |
+| 19 | יָסַף | repeat/add | 8 |
 | 20 | הֶאֱמִין | believed | 7 |
-| 21 | זָכַר | will bring to remembrance | 6 |
-| 22 | מָרָה | they rebelled | 6 |
-| 23 | הִשְׁלִיךְ | throw | 6 |
-| 24 | רָחַב | they have opened wide | 6 |
+| 21 | זָכַר | bring remembrance/make remembrance | 6 |
+| 22 | מָרָה | rebelled | 6 |
+| 23 | הִשְׁלִיךְ | throw/us | 6 |
+| 24 | רָחַב | made/enlarged | 6 |
 | 25 | נָפַל | make fall | 5 |
 
 **Notes on the top roots:**
