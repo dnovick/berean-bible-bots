@@ -102,28 +102,38 @@ Earlier in Ephesians, before it becomes a piece of armor in 14:
 
 **Eph 1:13**
 > τὸν λόγον τῆς ἀληθείας
+>
 > *"the word of truth"*
-> Truth is the very substance of the gospel by which believers were sealed
+
+Truth is the very substance of the gospel by which believers were sealed
 
 **Eph 4:21**
 > καθώς ἐστιν ἀλήθεια ἐν τῷ Ἰησοῦ
-> *"truth is in Jesus"*
-> Christ himself is the embodiment of truth — the foundation of the belt
+>
+> *"as the truth is in Jesus"*
+
+Christ himself is the embodiment of truth — the foundation of the belt
 
 **Eph 4:24**
 > τὴν κατὰ θεὸν κτισθέντα ἐν δικαιοσύνῃ καὶ ὁσιότητι τῆς ἀληθείας
-> *"created after the likeness of God in true righteousness and holiness"*
-> Truth and righteousness appear together — the same pairing as in 6:14
+>
+> *"created in righteousness and true holiness"*
+
+Truth and righteousness appear together — the same pairing as in 6:14
 
 **Eph 4:25**
 > λαλεῖτε ἀλήθειαν
-> *"speak truth"*
-> Believers are called to live out the truth they have girded on
+>
+> *"speak every man truth with his neighbour"*
+
+Believers are called to live out the truth they have girded on
 
 **Eph 5:9**
 > ἐν … ἀληθείᾳ
-> *"in … truth"*
-> The fruit of light includes truth — a quality of the new life in Christ
+>
+> *"in all goodness and righteousness and truth"*
+
+The fruit of light includes truth — a quality of the new life in Christ
 
 ### Breastplate of Righteousness (δικαιοσύνη, G1343)
 
@@ -131,13 +141,17 @@ Earlier in Ephesians, before it becomes a piece of armor in 14:
 
 **Eph 4:24**
 > ἐν δικαιοσύνῃ καὶ ὁσιότητι τῆς ἀληθείας
-> *"in true righteousness and holiness"*
-> The new self is created in righteousness — what the breastplate protects
+>
+> *"in righteousness and true holiness"*
+
+The new self is created in righteousness — what the breastplate protects
 
 **Eph 5:9**
 > ἐν … δικαιοσύνῃ
-> *"in … righteousness"*
-> Righteousness is a characteristic of walking as children of light
+>
+> *"in … righteousness and truth"*
+
+Righteousness is a characteristic of walking as children of light
 
 ### Shoes — Gospel of Peace (εὐαγγέλιον G2098 + εἰρήνη G1515)
 
@@ -145,38 +159,52 @@ Earlier in Ephesians, before it becomes a piece of armor in 15:
 
 **Eph 1:13**
 > τὸν λόγον τῆς ἀληθείας, τὸ εὐαγγέλιον τῆς σωτηρίας ὑμῶν
+>
 > *"the word of truth, the gospel of your salvation"*
-> The gospel is the instrument of salvation and sealing with the Spirit
+
+The gospel is the instrument of salvation and sealing with the Spirit
 
 **Eph 3:6**
 > συγκληρονόμα … διὰ τοῦ εὐαγγελίου
-> *"fellow heirs … through the gospel"*
-> The gospel unites Jew and Gentile — the peace the shoes proclaim
+>
+> *"fellowheirs … by the gospel"*
+
+The gospel unites Jew and Gentile — the peace the shoes proclaim
 
 **Eph 1:2**
 > χάρις ὑμῖν καὶ εἰρήνη
-> *"grace to you and peace"*
-> Peace is Paul's opening benediction for the whole letter
+>
+> *"Grace be to you, and peace"*
+
+Peace is Paul's opening benediction for the whole letter
 
 **Eph 2:14**
 > αὐτὸς γάρ ἐστιν ἡ εἰρήνη ἡμῶν
-> *"he himself is our peace"*
-> Christ IS peace — the profoundest grounding of the shoes of peace
+>
+> *"he is our peace"*
+
+Christ IS peace — the profoundest grounding of the shoes of peace
 
 **Eph 2:15**
 > ἵνα τοὺς δύο κτίσῃ ἐν αὑτῷ εἰς ἕνα καινὸν ἄνθρωπον, ποιῶν εἰρήνην
-> *"that he might create in himself one new man in place of the two, so making peace"*
-> Christ made peace between Jew and Gentile through the cross
+>
+> *"to make in himself of twain one new man, so making peace"*
+
+Christ made peace between Jew and Gentile through the cross
 
 **Eph 2:17**
 > εὐηγγελίσατο εἰρήνην … καὶ εἰρήνην
-> *"he preached peace … and peace"*
-> The gospel IS the preaching of peace — shoes and gospel belong together
+>
+> *"came and preached peace … and peace"*
+
+The gospel IS the preaching of peace — shoes and gospel belong together
 
 **Eph 4:3**
 > τὸν σύνδεσμον τῆς εἰρήνης
+>
 > *"the bond of peace"*
-> Peace must be maintained among believers — a calling before a weapon
+
+Peace must be maintained among believers — a calling before a weapon
 
 ### Shield of Faith (πίστις, G4102)
 
@@ -184,33 +212,45 @@ Earlier in Ephesians, before it becomes a piece of armor in 16:
 
 **Eph 1:15**
 > τὴν καθ᾽ ὑμᾶς πίστιν
-> *"the faith that is among you"*
-> Paul gives thanks for the Ephesians' faith — the shield that already works
+>
+> *"your faith in the Lord Jesus"*
+
+Paul gives thanks for the Ephesians' faith — the shield that already works
 
 **Eph 2:8**
 > διὰ πίστεως … σεσῳσμένοι
-> *"through faith … you have been saved"*
-> The most famous faith verse in Ephesians — salvation itself came by this shield
+>
+> *"by grace are ye saved through faith"*
+
+The most famous faith verse in Ephesians — salvation itself came by this shield
 
 **Eph 3:12**
 > διὰ τῆς πίστεως αὐτοῦ
-> *"through faith in him"*
-> Access to God comes through faith — the same shield used in prayer (6:18)
+>
+> *"by the faith of him"*
+
+Access to God comes through faith — the same shield used in prayer (6:18)
 
 **Eph 3:17**
 > κατοικῆσαι τὸν Χριστὸν διὰ τῆς πίστεως
-> *"Christ dwells in your hearts through faith"*
-> Faith is the ground of Christ's indwelling — the shield is not external armor only
+>
+> *"that Christ may dwell in your hearts by faith"*
+
+Faith is the ground of Christ's indwelling — the shield is not external armor only
 
 **Eph 4:5**
 > μία πίστις
+>
 > *"one faith"*
-> One faith belongs to the whole body — the shield is shared
+
+One faith belongs to the whole body — the shield is shared
 
 **Eph 4:13**
 > εἰς τὴν ἑνότητα τῆς πίστεως
-> *"to the unity of the faith"*
-> The goal of maturity is unified faith — the fully-equipped body
+>
+> *"in the unity of the faith"*
+
+The goal of maturity is unified faith — the fully-equipped body
 
 ### Helmet of Salvation (σωτηρία, G4991)
 
@@ -218,8 +258,10 @@ Earlier in Ephesians, before it becomes a piece of armor in 17:
 
 **Eph 1:13**
 > τὸ εὐαγγέλιον τῆς σωτηρίας ὑμῶν
+>
 > *"the gospel of your salvation"*
-> Salvation is the content of the gospel — what the helmet announces
+
+Salvation is the content of the gospel — what the helmet announces
 
 ### Sword — Word of God (ῥῆμα θεοῦ, G4487)
 
@@ -227,8 +269,10 @@ Earlier in Ephesians, before it becomes a piece of armor in 17:
 
 **Eph 5:26**
 > ἐν ῥήματι
+>
 > *"by the word"*
-> Christ sanctifies the church through the word (ῥῆμα) — the same term as the sword
+
+Christ sanctifies the church through the word (ῥῆμα) — the same term as the sword
 
 ### Prayer (προσευχή, G4335)
 
@@ -236,8 +280,10 @@ Earlier in Ephesians, before it becomes a piece of armor in 18:
 
 **Eph 1:16**
 > μνείαν ποιούμενος ἐπὶ τῶν προσευχῶν μου
+>
 > *"making mention of you in my prayers"*
-> Paul himself models the unceasing prayer he calls for in 6:18
+
+Paul himself models the unceasing prayer he calls for in 6:18
 
 ---
 
