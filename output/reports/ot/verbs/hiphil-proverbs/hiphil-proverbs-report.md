@@ -23,8 +23,8 @@
 - **Overall Proverbs Hiphil rate: 3.4 per 100 words.** 12 chapters exceed this baseline.
 - **Most Hiphil-dense chapter: Proverbs 17** (7.9 per 100 words, 18 tokens in 227 words).
 - **Top 5 densest chapters:** Pr 17 (7.9%), Pr 28 (7.9%), Pr 4 (6.0%), Pr 19 (5.7%), Pr 10 (5.1%).
-- **Most common Hiphil root:** שָׁב ("will repay") — 14 tokens.
-- **Top 5 roots:** שָׁב "will repay" (14), שָׂכַל "[who] acts prudently" (13), יָסַף "adds" (13), הֵבִין "understanding" (11), הֹכִיחַ "[one who] reproves" (10).
+- **Most common Hiphil root:** שָׁב ("bring/repay") — 14 tokens.
+- **Top 5 roots:** שָׁב "bring/repay" (14), שָׂכַל "acts/insight" (13), יָסַף "adds/add" (13), הֵבִין "understand/understanding" (11), הֹכִיחַ "reproves/reprove" (10).
 - **Theologically notable:** the Hiphil of שׁוּב ("return/restore") is the most frequent root — encompassing restoration, repayment, and moral reversal, themes woven throughout Proverbs' view of consequences.
 
 ---
@@ -89,31 +89,31 @@ Each cell is one chapter. The number is Hiphil verbs per 100 words. Darker = mor
 
 | Rank | Root | Gloss | Hiphil tokens |
 |---|---|---|---|
-| 1 | שָׁב | will repay | 14 |
-| 2 | שָׂכַל | [who] acts prudently | 13 |
-| 3 | יָסַף | adds | 13 |
-| 4 | הֵבִין | understanding | 11 |
-| 5 | הֹכִיחַ | [one who] reproves | 10 |
-| 6 | נָטָה | incline | 7 |
-| 7 | הִצִּיל | delivers | 6 |
-| 8 | הִקְשִׁיב | be attentive | 6 |
-| 9 | הֹבִישׁ | [who] acts shamefully | 6 |
-| 10 | הַעֲשִׁיר | gain riches | 5 |
-| 11 | הִרְבָּה | [one who] increases | 5 |
-| 12 | יָצָא | brings forth | 5 |
-| 13 | הֵיטִיב | makes good | 5 |
-| 14 | תָּפֵק | he obtained | 4 |
-| 15 | הֵכִין | they prepared | 4 |
-| 16 | רַע | evil-doer | 4 |
-| 17 | חָלַק | makes smooth | 4 |
-| 18 | חָזַק | [one who] takes hold | 4 |
-| 19 | הֶאֱרִיךְ | will prolong | 3 |
-| 20 | נָפַל | makes fall | 3 |
-| 21 | אַבִּיעָה | pours forth | 3 |
-| 22 | רָחַק | far away | 3 |
-| 23 | הִכָּה | more than/ striking | 3 |
+| 1 | שָׁב | bring/repay | 14 |
+| 2 | שָׂכַל | acts/insight | 13 |
+| 3 | יָסַף | adds/add | 13 |
+| 4 | הֵבִין | understand/understanding | 11 |
+| 5 | הֹכִיחַ | reproves/reprove | 10 |
+| 6 | נָטָה | incline/turn aside | 7 |
+| 7 | הִצִּיל | delivers/deliver | 6 |
+| 8 | הִקְשִׁיב | attentive | 6 |
+| 9 | הֹבִישׁ | acts | 6 |
+| 10 | הַעֲשִׁיר | gain | 5 |
+| 11 | הִרְבָּה | increase/make great | 5 |
+| 12 | יָצָא | brings | 5 |
+| 13 | הֵיטִיב | makes/doing | 5 |
+| 14 | תָּפֵק | obtains/obtained | 4 |
+| 15 | הֵכִין | prepares/directs | 4 |
+| 16 | רַע | harm/evil-doer | 4 |
+| 17 | חָלַק | makes/than | 4 |
+| 18 | חָזַק | take hold/takes | 4 |
+| 19 | הֶאֱרִיךְ | makes/last | 3 |
+| 20 | נָפַל | cast/made | 3 |
+| 21 | אַבִּיעָה | pours/pour | 3 |
+| 22 | רָחַק | put far/make far | 3 |
+| 23 | הִכָּה | strike/than | 3 |
 | 24 | מֵלִיץ | mocks | 3 |
-| 25 | סָר | [one who] turns aside | 3 |
+| 25 | סָר | remove/turn aside | 3 |
 
 **Notes on the top roots:**
 

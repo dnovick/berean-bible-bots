@@ -114,12 +114,46 @@ ch_df = ch_df.reset_index()
 # ── 2. Top roots ──────────────────────────────────────────────────────────────
 
 
+FUNC_WORDS = {
+    'and', 'or', 'so', 'but', 'for', 'thus', 'now', 'then', 'also', 'even',
+    'not', 'never', 'he', 'she', 'it', 'they', 'you', 'i', 'we', 'one',
+    'who', 'what', 'that', 'me', 'him', 'her', 'them', 'my', 'his', 'its',
+    'their', 'your', 'our', 'will', 'shall', 'has', 'have', 'had', 'was',
+    'were', 'is', 'are', 'am', 'be', 'been', 'let', 'may', 'can', 'could',
+    'would', 'do', 'did', 'does', 'a', 'an', 'the', 'to', 'certainly',
+    'surely', 'again', 'back', 'already', 'still', 'yet', 'more',
+}
+_KEEP_NEXT = {
+    'give', 'make', 'bring', 'put', 'set', 'take', 'call', 'come', 'go',
+    'turn', 'pay', 'lay',
+}
+
+
 def clean_gloss(series: pd.Series) -> str:
-    for g in series.mode():
-        g = re.sub(r'^(and|the|to|I|he|you|they|[a-z]{1,3})[/ ]+', '', str(g))
-        if len(g) > 2:
-            return g.lower()
-    return str(series.iloc[0]).lower()
+    """Extract the most representative English gloss from a series of translations."""
+    from collections import Counter
+    phrases = []
+    for s in series:
+        s = re.sub(r'\[[^\]]*\]', '', str(s))
+        s = re.sub(r'[<>!?]', '', s)
+        tokens = [t.strip('.,') for t in re.split(r'[\s/;]+', s.lower())]
+        content = [t for t in tokens if t and t not in FUNC_WORDS and len(t) > 1]
+        if not content:
+            continue
+        if content[0] in _KEEP_NEXT and len(content) > 1:
+            phrases.append(f'{content[0]} {content[1]}')
+        else:
+            phrases.append(content[0])
+    if not phrases:
+        return str(series.iloc[0]).lower()
+    c = Counter(phrases)
+    top = c.most_common(3)
+    result = top[0][0]
+    if (len(top) > 1
+            and top[1][1] >= top[0][1] * 0.5
+            and top[1][0].split()[0] != result.split()[0]):
+        result = f'{result}/{top[1][0]}'
+    return result
 
 
 root_df = (
