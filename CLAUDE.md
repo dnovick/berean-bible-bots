@@ -197,3 +197,40 @@ The `.html` exercise file is self-contained (no external dependencies):
 - Hebrew text: `direction:rtl; unicode-bidi:embed` — never put a verse range and Hebrew on the same line (RTL reordering renders it backwards)
 - `@media print` block hides buttons, makes inputs show as underlines
 - All answers, styles, and scripts embedded inline
+
+---
+
+## Git Workflow
+
+- **All changes go on a feature branch + PR.** Never push directly to main — branch protection is enabled.
+- **Merge with:** `gh pr merge <n> --squash --admin` then `git checkout main && git pull`.
+- **Before every commit:** run `python -m flake8 src/` and `python -m mypy src/ --ignore-missing-imports`. Fix all errors before committing.
+- **After non-trivial changes:** commit and push automatically — do not ask first.
+- **GitHub issues:** always create with `--assignee dnovick`.
+
+---
+
+## NT Text Tradition
+
+- **Greek text:** Byzantine / Textus Receptus (STEPBible TAGNT).
+- **English translation:** KJV by default.
+- Deviations (e.g. NA28 text, ESV translation) must be labeled inline at the point of citation.
+
+---
+
+## Language Display Rules
+
+- **No transliterations.** Never include transliteration columns or inline transliterations for Hebrew, Aramaic, or Greek in any report, table, lesson, chart, or flashcard deck.
+- **Tables:** always render as GitHub-flavored Markdown, never ASCII art or terminal `print()` output.
+- **Matplotlib bidi:** pass the entire mixed-direction string to `get_display()` from `python-bidi` — never split out the Hebrew fragment, apply `get_display()` to it alone, and concatenate. Start title strings with LTR text.
+
+---
+
+## Report Standards
+
+- **Build script required:** every report must have a `scripts/build_<term>_report.py` that generates all charts, CSVs, and the report file. Never produce a report without a reproducible build script.
+- **CSV exports:** every report script must export the underlying data as CSV alongside the report.
+- **README indexes:** every output directory (`reports/`, `charts/`, sub-categories) must have a `README.md` with a table of contents and links to all files.
+- **Output subdirectory:** every word/phrase study lives in its own named subdirectory (e.g. `reports/both/word_studies/<term>/`), never flat in the parent folder.
+- **Notebooks:** when adding new features, update relevant Jupyter notebooks to demonstrate them.
+- **Long report structure:** any report with more than ~5 `##` sections must open with a `## Contents` TOC (anchor links to every `##` section) followed immediately by a `## Key Observations` summary — before the body sections.
