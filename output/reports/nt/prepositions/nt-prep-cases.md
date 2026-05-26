@@ -229,14 +229,14 @@ In classical Greek ἀνά took accusative (up along), genitive (upon), and dati
 
 These prepositions govern only one case in NT usage. They are included for completeness.
 
-| Preposition | Transliteration | Case | Gloss | NT Count |
-|---|---|---|---|---|
-| ἐν | en | Dative | in, among, by, with | 2,743 |
-| εἰς | eis | Accusative | into, to, for, toward | 1,766 |
-| ἐκ | ek | Genitive | out of, from | 913 |
-| ἀπό | apo | Genitive | from, away from, since | 647 |
-| σύν | syn | Dative | with, together with | 128 |
-| πρό | pro | Genitive | before (spatial/temporal) | 47 |
+| Preposition | Case | Gloss | NT Count |
+|---|---|---|---|
+| ἐν | Dative | in, among, by, with | 2,743 |
+| εἰς | Accusative | into, to, for, toward | 1,766 |
+| ἐκ | Genitive | out of, from | 913 |
+| ἀπό | Genitive | from, away from, since | 647 |
+| σύν | Dative | with, together with | 128 |
+| πρό | Genitive | before (spatial/temporal) | 47 |
 
 ---
 

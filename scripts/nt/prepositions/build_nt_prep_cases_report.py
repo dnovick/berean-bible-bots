@@ -491,22 +491,22 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
         'These prepositions govern only one case in NT usage. '
         'They are included for completeness.',
         '',
-        '| Preposition | Transliteration | Case | Gloss | NT Count |',
-        '|---|---|---|---|---|',
+        '| Preposition | Case | Gloss | NT Count |',
+        '|---|---|---|---|',
     ]
 
     SINGLE_META = {
-        'ἐν':  ('en',  'Dative',      'in, among, by, with'),
-        'εἰς': ('eis', 'Accusative',   'into, to, for, toward'),
-        'ἐκ':  ('ek',  'Genitive',     'out of, from'),
-        'ἀπό': ('apo', 'Genitive',     'from, away from, since'),
-        'σύν': ('syn', 'Dative',       'with, together with'),
-        'πρό': ('pro', 'Genitive',     'before (spatial/temporal)'),
+        'ἐν':  ('Dative',      'in, among, by, with'),
+        'εἰς': ('Accusative',  'into, to, for, toward'),
+        'ἐκ':  ('Genitive',    'out of, from'),
+        'ἀπό': ('Genitive',    'from, away from, since'),
+        'σύν': ('Dative',      'with, together with'),
+        'πρό': ('Genitive',    'before (spatial/temporal)'),
     }
-    for lemma, (translit, case, gloss) in SINGLE_META.items():
+    for lemma, (case, gloss) in SINGLE_META.items():
         sub = freq[freq['lemma'] == lemma]
         count = int(sub['count'].iloc[0]) if not sub.empty else 0
-        lines.append(f'| {lemma} | {translit} | {case} | {gloss} | {count:,} |')
+        lines.append(f'| {lemma} | {case} | {gloss} | {count:,} |')
 
     lines += [
         '',
