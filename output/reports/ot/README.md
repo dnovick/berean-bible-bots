@@ -22,6 +22,7 @@ Analyses of how verb forms are distributed across books, stems, and conjugations
 | [Niphal Perfect Verbs — Top 20 Books](verbs/niphal-perfects-by-book-top20.md) | The 20 books with the highest Niphal perfect counts |
 | [2nd Person Feminine Plural Perfect Verbs](verbs/2fp-perfect-verbs.md) | The rare 2fp perfect form — all 13 OT occurrences |
 | [Hiphil Density in Psalms](verbs/hiphil-psalms/hiphil-psalms-report.md) | Which Psalms chapters are most Hiphil-dense, and the top verb roots appearing in the Hiphil |
+| [Hiphil Density in Proverbs](verbs/hiphil-proverbs/hiphil-proverbs-report.md) | Which Proverbs chapters are most Hiphil-dense, and the top verb roots appearing in the Hiphil |
 
 ---
 
