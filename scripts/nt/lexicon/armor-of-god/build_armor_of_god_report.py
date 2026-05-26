@@ -169,21 +169,21 @@ EARLIER_REFS = {
     'G0225': [  # truth
         ('1:13', 'τὸν λόγον τῆς ἀληθείας', 'the word of truth',
          'Truth is the very substance of the gospel by which believers were sealed'),
-        ('4:21', 'καθώς ἐστιν ἀλήθεια ἐν τῷ Ἰησοῦ', 'truth is in Jesus',
+        ('4:21', 'καθώς ἐστιν ἀλήθεια ἐν τῷ Ἰησοῦ', 'as the truth is in Jesus',
          'Christ himself is the embodiment of truth — the foundation of the belt'),
         ('4:24', 'τὴν κατὰ θεὸν κτισθέντα ἐν δικαιοσύνῃ καὶ ὁσιότητι τῆς ἀληθείας',
-         'created after the likeness of God in true righteousness and holiness',
+         'created in righteousness and true holiness',
          'Truth and righteousness appear together — the same pairing as in 6:14'),
-        ('4:25', 'λαλεῖτε ἀλήθειαν', 'speak truth',
+        ('4:25', 'λαλεῖτε ἀλήθειαν', 'speak every man truth with his neighbour',
          'Believers are called to live out the truth they have girded on'),
-        ('5:9', 'ἐν … ἀληθείᾳ', 'in … truth',
+        ('5:9', 'ἐν … ἀληθείᾳ', 'in all goodness and righteousness and truth',
          'The fruit of light includes truth — a quality of the new life in Christ'),
     ],
     'G1343': [  # righteousness
         ('4:24', 'ἐν δικαιοσύνῃ καὶ ὁσιότητι τῆς ἀληθείας',
-         'in true righteousness and holiness',
+         'in righteousness and true holiness',
          'The new self is created in righteousness — what the breastplate protects'),
-        ('5:9', 'ἐν … δικαιοσύνῃ', 'in … righteousness',
+        ('5:9', 'ἐν … δικαιοσύνῃ', 'in … righteousness and truth',
          'Righteousness is a characteristic of walking as children of light'),
     ],
     'G2098': [  # gospel
@@ -191,35 +191,36 @@ EARLIER_REFS = {
          'the word of truth, the gospel of your salvation',
          'The gospel is the instrument of salvation and sealing with the Spirit'),
         ('3:6', 'συγκληρονόμα … διὰ τοῦ εὐαγγελίου',
-         'fellow heirs … through the gospel',
+         'fellowheirs … by the gospel',
          'The gospel unites Jew and Gentile — the peace the shoes proclaim'),
     ],
     'G1515': [  # peace
-        ('1:2', 'χάρις ὑμῖν καὶ εἰρήνη', 'grace to you and peace',
+        ('1:2', 'χάρις ὑμῖν καὶ εἰρήνη', 'Grace be to you, and peace',
          'Peace is Paul\'s opening benediction for the whole letter'),
-        ('2:14', 'αὐτὸς γάρ ἐστιν ἡ εἰρήνη ἡμῶν', 'he himself is our peace',
+        ('2:14', 'αὐτὸς γάρ ἐστιν ἡ εἰρήνη ἡμῶν', 'he is our peace',
          'Christ IS peace — the profoundest grounding of the shoes of peace'),
         ('2:15', 'ἵνα τοὺς δύο κτίσῃ ἐν αὑτῷ εἰς ἕνα καινὸν ἄνθρωπον, ποιῶν εἰρήνην',
-         'that he might create in himself one new man in place of the two, so making peace',
+         'to make in himself of twain one new man, so making peace',
          'Christ made peace between Jew and Gentile through the cross'),
-        ('2:17', 'εὐηγγελίσατο εἰρήνην … καὶ εἰρήνην', 'he preached peace … and peace',
+        ('2:17', 'εὐηγγελίσατο εἰρήνην … καὶ εἰρήνην',
+         'came and preached peace … and peace',
          'The gospel IS the preaching of peace — shoes and gospel belong together'),
         ('4:3', 'τὸν σύνδεσμον τῆς εἰρήνης', 'the bond of peace',
          'Peace must be maintained among believers — a calling before a weapon'),
     ],
     'G4102': [  # faith
-        ('1:15', 'τὴν καθ᾽ ὑμᾶς πίστιν', 'the faith that is among you',
+        ('1:15', 'τὴν καθ᾽ ὑμᾶς πίστιν', 'your faith in the Lord Jesus',
          'Paul gives thanks for the Ephesians\' faith — the shield that already works'),
-        ('2:8', 'διὰ πίστεως … σεσῳσμένοι', 'through faith … you have been saved',
+        ('2:8', 'διὰ πίστεως … σεσῳσμένοι', 'by grace are ye saved through faith',
          'The most famous faith verse in Ephesians — salvation itself came by this shield'),
-        ('3:12', 'διὰ τῆς πίστεως αὐτοῦ', 'through faith in him',
+        ('3:12', 'διὰ τῆς πίστεως αὐτοῦ', 'by the faith of him',
          'Access to God comes through faith — the same shield used in prayer (6:18)'),
         ('3:17', 'κατοικῆσαι τὸν Χριστὸν διὰ τῆς πίστεως',
-         'Christ dwells in your hearts through faith',
+         'that Christ may dwell in your hearts by faith',
          "Faith is the ground of Christ's indwelling — the shield is not external armor only"),
         ('4:5', 'μία πίστις', 'one faith',
          'One faith belongs to the whole body — the shield is shared'),
-        ('4:13', 'εἰς τὴν ἑνότητα τῆς πίστεως', 'to the unity of the faith',
+        ('4:13', 'εἰς τὴν ἑνότητα τῆς πίστεως', 'in the unity of the faith',
          'The goal of maturity is unified faith — the fully-equipped body'),
     ],
     'G4991': [  # salvation
@@ -259,8 +260,10 @@ def piece_section(piece_label: str, strongs_prefixes: list, ch6_verse: int) -> s
     for prefix, (ref, greek, trans, sig) in all_refs:
         lines.append(f'**Eph {ref}**')
         lines.append(f'> {greek}')
+        lines.append('>')
         lines.append(f'> *"{trans}"*')
-        lines.append(f'> {sig}')
+        lines.append('')
+        lines.append(sig)
         lines.append('')
 
     return '\n'.join(lines)
