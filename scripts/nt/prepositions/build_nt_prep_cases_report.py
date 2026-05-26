@@ -32,17 +32,15 @@ OUT = Path('output/reports/nt/prepositions')
 
 
 def _slug(heading: str) -> str:
-    """Replicate the anchor ID that MkDocs Material generates for a heading.
+    """Replicate MkDocs Material's heading anchor generation.
 
-    Rules (matches Python-Markdown toc + Material slugify):
-    - Strip all non-ASCII characters (Greek letters, em-dashes, etc.)
-    - Lower-case
-    - Replace runs of non-alphanumeric chars with a single hyphen
-    - Strip leading/trailing hyphens
+    Strip non-ASCII, remove punctuation other than hyphens, lowercase,
+    collapse whitespace/hyphens to a single hyphen, strip leading/trailing.
     """
     ascii_only = heading.encode('ascii', errors='ignore').decode()
-    slug = re.sub(r'[^a-z0-9]+', '-', ascii_only.lower()).strip('-')
-    return slug
+    no_punct = re.sub(r'[^a-zA-Z0-9\s-]', '', ascii_only)
+    slug = re.sub(r'\s+', '-', no_punct.lower())
+    return re.sub(r'-{2,}', '-', slug).strip('-')
 
 
 OUT.mkdir(parents=True, exist_ok=True)
@@ -412,8 +410,8 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
         'Total preposition occurrences in the NT (TAGNT). '
         'Multi-case prepositions are marked ✦.',
         '',
-        '| Preposition | Transliteration | Gloss | NT Count | % of all preps | Cases |',
-        '|---|---|---|---|---|---|',
+        '| Preposition | Gloss | NT Count | % of all preps | Cases |',
+        '|---|---|---|---|---|',
     ]
 
     for _, frow in freq.iterrows():
@@ -421,7 +419,6 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
         count = frow['count']
         pct = frow['pct']
         meta = PREP_META.get(lemma, {})
-        translit = meta.get('transliteration', '—')
         gloss = meta.get('gloss', frow.get('gloss', '—')).split(',')[0]
         sub = all_cases[(all_cases['lemma'] == lemma) &
                         (~all_cases['case_binding'].isin(['(none / unclear)']))]
@@ -433,7 +430,7 @@ def build_report(all_cases: pd.DataFrame, freq: pd.DataFrame) -> None:  # noqa: 
             case_str = sub['case_binding'].iloc[0] if not sub.empty else '—'
             marker = ''
         lines.append(
-            f'| {marker}{lemma} | {translit} | {gloss} | {count:,} | {pct:.1f}% | {case_str} |'
+            f'| {marker}{lemma} | {gloss} | {count:,} | {pct:.1f}% | {case_str} |'
         )
 
     lines += [
