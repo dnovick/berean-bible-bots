@@ -2,9 +2,10 @@
 
 Generates:
   output/reports/nt/lexicon/armor-of-god/armor-of-god-report.md
-  output/charts/nt/lexicon/armor-of-god/armor-of-god-heatmap.png
+  output/reports/nt/lexicon/armor-of-god/armor-of-god-heatmap.png
 """
 
+import re
 import matplotlib
 matplotlib.use('Agg')  # noqa: E402
 
@@ -17,9 +18,20 @@ from bible_grammar import query  # noqa: E402
 
 REPO = Path(__file__).resolve().parents[4]
 REPORT_DIR = REPO / 'output' / 'reports' / 'nt' / 'lexicon' / 'armor-of-god'
-CHART_DIR = REPO / 'output' / 'charts' / 'nt' / 'lexicon' / 'armor-of-god'
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
-CHART_DIR.mkdir(parents=True, exist_ok=True)
+
+
+def _slug(heading: str) -> str:
+    """Replicate MkDocs Material's heading anchor generation.
+
+    Strip non-ASCII, remove punctuation other than hyphens, lowercase,
+    collapse whitespace/hyphens to a single hyphen, strip leading/trailing.
+    """
+    ascii_only = heading.encode('ascii', errors='ignore').decode()
+    no_punct = re.sub(r'[^a-zA-Z0-9\s-]', '', ascii_only)
+    slug = re.sub(r'\s+', '-', no_punct.lower())
+    return re.sub(r'-{2,}', '-', slug).strip('-')
+
 
 # ── Data ──────────────────────────────────────────────────────────────────────
 
@@ -107,7 +119,7 @@ def build_heatmap() -> Path:
     )
     fig.colorbar(im, ax=ax, shrink=0.6, label='Occurrences')
     plt.tight_layout()
-    out = CHART_DIR / 'armor-of-god-heatmap.png'
+    out = REPORT_DIR / 'armor-of-god-heatmap.png'
     fig.savefig(out, dpi=150, bbox_inches='tight')
     plt.close(fig)
     print(f'Saved {out}')
@@ -258,7 +270,34 @@ def build_report(heatmap_path: Path) -> Path:
     sections = []
 
     # ── Header ────────────────────────────────────────────────────────────────
-    sections.append('''\
+    PIECE_HEADINGS = [
+        'Belt of Truth (ἀλήθεια, G0225)',
+        'Breastplate of Righteousness (δικαιοσύνη, G1343)',
+        'Shoes — Gospel of Peace (εὐαγγέλιον G2098 + εἰρήνη G1515)',
+        'Shield of Faith (πίστις, G4102)',
+        'Helmet of Salvation (σωτηρία, G4991)',
+        'Sword — Word of God (ῥῆμα θεοῦ, G4487)',
+        'Prayer (προσευχή, G4335)',
+    ]
+    # Short display labels for the TOC sub-links
+    PIECE_LABELS = [
+        'Belt of Truth', 'Breastplate of Righteousness',
+        'Shoes — Gospel of Peace', 'Shield of Faith',
+        'Helmet of Salvation', 'Sword — Word of God', 'Prayer',
+    ]
+
+    h_obs = 'The Exegetical Observation'
+    h_text = 'Ephesians 6:10–18 — Text and Translation'
+    h_armor = 'The Armor Pieces and Their Earlier Occurrences'
+    h_heatmap = 'Frequency Heatmap'
+    h_summary = 'Summary Table'
+
+    toc_piece_lines = '\n'.join(
+        f'   - [{label}](#{_slug(heading)})'
+        for label, heading in zip(PIECE_LABELS, PIECE_HEADINGS)
+    )
+
+    sections.append(f'''\
 # The Armor of God — Ephesians 6:10–18 in Its Letter Context
 
 **Focus passage:** Ephesians 6:10–18
@@ -270,18 +309,12 @@ def build_report(heatmap_path: Path) -> Path:
 
 ## Contents
 
-1. [The Exegetical Observation](#the-exegetical-observation)
-2. [Ephesians 6:10–18 — Text and Translation](#ephesians-610-18-text-and-translation)
-3. [The Armor Pieces and Their Earlier Occurrences](#the-armor-pieces-and-their-earlier-occurrences)
-   - [Belt of Truth](#belt-of-truth-ἀλήθεια-g0225)
-   - [Breastplate of Righteousness](#breastplate-of-righteousness-δικαιοσύνη-g1343)
-   - [Shoes — Gospel of Peace](#shoes--gospel-of-peace-εὐαγγέλιον-g2098--εἰρήνη-g1515)
-   - [Shield of Faith](#shield-of-faith-πίστις-g4102)
-   - [Helmet of Salvation](#helmet-of-salvation-σωτηρία-g4991)
-   - [Sword — Word of God](#sword--word-of-god-ῥῆμα-θεοῦ-g4487)
-   - [Prayer](#prayer-προσευχή-g4335)
-4. [Frequency Heatmap](#frequency-heatmap)
-5. [Summary Table](#summary-table)
+1. [The Exegetical Observation](#{_slug(h_obs)})
+2. [Ephesians 6:10–18 — Text and Translation](#{_slug(h_text)})
+3. [The Armor Pieces and Their Earlier Occurrences](#{_slug(h_armor)})
+{toc_piece_lines}
+4. [Frequency Heatmap](#{_slug(h_heatmap)})
+5. [Summary Table](#{_slug(h_summary)})
 
 ---
 
@@ -335,15 +368,11 @@ The armor passage is therefore not an appendix. It is a call to *wear* what Paul
     )
     sections.append('')
 
-    PIECE_DETAILS = [
-        ('Belt of Truth (ἀλήθεια, G0225)',             ['G0225'],         14),
-        ('Breastplate of Righteousness (δικαιοσύνη, G1343)', ['G1343'],  14),
-        ('Shoes — Gospel of Peace (εὐαγγέλιον G2098 + εἰρήνη G1515)', ['G2098', 'G1515'], 15),
-        ('Shield of Faith (πίστις, G4102)',             ['G4102'],         16),
-        ('Helmet of Salvation (σωτηρία, G4991)',        ['G4991'],         17),
-        ('Sword — Word of God (ῥῆμα θεοῦ, G4487)',    ['G4487'],         17),
-        ('Prayer (προσευχή, G4335)',                    ['G4335'],         18),
-    ]
+    PIECE_DETAILS = list(zip(
+        PIECE_HEADINGS,
+        [['G0225'], ['G1343'], ['G2098', 'G1515'], ['G4102'], ['G4991'], ['G4487'], ['G4335']],
+        [14, 14, 15, 16, 17, 17, 18],
+    ))
 
     for piece_label, prefixes, ch6_v in PIECE_DETAILS:
         sections.append(piece_section(piece_label, prefixes, ch6_v))

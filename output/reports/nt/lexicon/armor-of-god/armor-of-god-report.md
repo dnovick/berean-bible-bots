@@ -10,15 +10,15 @@
 ## Contents
 
 1. [The Exegetical Observation](#the-exegetical-observation)
-2. [Ephesians 6:10–18 — Text and Translation](#ephesians-610-18-text-and-translation)
+2. [Ephesians 6:10–18 — Text and Translation](#ephesians-61018-text-and-translation)
 3. [The Armor Pieces and Their Earlier Occurrences](#the-armor-pieces-and-their-earlier-occurrences)
-   - [Belt of Truth](#belt-of-truth-ἀλήθεια-g0225)
-   - [Breastplate of Righteousness](#breastplate-of-righteousness-δικαιοσύνη-g1343)
-   - [Shoes — Gospel of Peace](#shoes--gospel-of-peace-εὐαγγέλιον-g2098--εἰρήνη-g1515)
-   - [Shield of Faith](#shield-of-faith-πίστις-g4102)
-   - [Helmet of Salvation](#helmet-of-salvation-σωτηρία-g4991)
-   - [Sword — Word of God](#sword--word-of-god-ῥῆμα-θεοῦ-g4487)
-   - [Prayer](#prayer-προσευχή-g4335)
+   - [Belt of Truth](#belt-of-truth-g0225)
+   - [Breastplate of Righteousness](#breastplate-of-righteousness-g1343)
+   - [Shoes — Gospel of Peace](#shoes-gospel-of-peace-g2098-g1515)
+   - [Shield of Faith](#shield-of-faith-g4102)
+   - [Helmet of Salvation](#helmet-of-salvation-g4991)
+   - [Sword — Word of God](#sword-word-of-god-g4487)
+   - [Prayer](#prayer-g4335)
 4. [Frequency Heatmap](#frequency-heatmap)
 5. [Summary Table](#summary-table)
 

@@ -41,38 +41,38 @@
 
 Total preposition occurrences in the NT (TAGNT). Multi-case prepositions are marked ✦.
 
-| Preposition | Transliteration | Gloss | NT Count | % of all preps | Cases |
-|---|---|---|---|---|---|
-| ✦ἐν | — | en — in/among | 2,743 | 25.1% | Dative / Genitive |
-| ✦εἰς | — | eis — into/for | 1,766 | 16.2% | Accusative / Genitive |
-| ✦ἐκ | — | ek — out of/from | 913 | 8.4% | Genitive / Accusative |
-| ✦ἐπί | epi | on | 886 | 8.1% | Accusative / Genitive / Dative |
-| ✦πρός | pros | to | 700 | 6.4% | Accusative / Dative / Genitive |
-| ✦διά | dia | through | 667 | 6.1% | Genitive / Accusative |
-| ✦ἀπό | — | apo — from/away from | 647 | 5.9% | Genitive / Nominative |
-| ✦κατά | kata | according to | 472 | 4.3% | Accusative / Genitive / Nominative |
-| ✦μετά | meta | with (association) | 470 | 4.3% | Genitive / Accusative |
-| ✦περί | peri | concerning | 333 | 3.1% | Genitive / Accusative |
-| ✦ὑπό | hypo | under | 219 | 2.0% | Genitive / Accusative |
-| ✦παρά | para | beside | 192 | 1.8% | Genitive / Accusative / Dative |
-| ✦ὑπέρ | hyper | on behalf of | 150 | 1.4% | Genitive / Accusative / Nominative |
-| σύν | — | syn — with/together | 128 | 1.2% | Dative |
-| ἕως | — | heos — until/as far as | 108 | 1.0% | Genitive |
-| ἐνώπιον | — | enopion — before/in the presence of | 94 | 0.9% | Genitive |
-| πρό | — | pro — before | 47 | 0.4% | Genitive |
-| ἔμπροσθεν | — | emprosthen — before/in front of | 44 | 0.4% | Genitive |
-| ἄχρι | — | achri — until/as far as | 43 | 0.4% | Genitive |
-| ✦χωρίς | — | choris — apart from/without | 40 | 0.4% | Genitive / Nominative |
-| ὀπίσω | — |  | 26 | 0.2% | Genitive |
-| ἕνεκα | — |  | 26 | 0.2% | Genitive |
-| ἀντί | — |  | 22 | 0.2% | Genitive |
-| ἔξω | — |  | 19 | 0.2% | Genitive |
-| ἐπάνω | — |  | 17 | 0.2% | Genitive |
-| μέχρι | — |  | 16 | 0.1% | Genitive |
-| πέραν | — |  | 13 | 0.1% | Genitive |
-| ✦ἀνά | ana | up | 13 | 0.1% | Accusative / Nominative |
-| ἐγγύς | — |  | 13 | 0.1% | Genitive |
-| ὑποκάτω | — |  | 11 | 0.1% | Genitive |
+| Preposition | Gloss | NT Count | % of all preps | Cases |
+|---|---|---|---|---|
+| ✦ἐν | en — in/among | 2,743 | 25.1% | Dative / Genitive |
+| ✦εἰς | eis — into/for | 1,766 | 16.2% | Accusative / Genitive |
+| ✦ἐκ | ek — out of/from | 913 | 8.4% | Genitive / Accusative |
+| ✦ἐπί | on | 886 | 8.1% | Accusative / Genitive / Dative |
+| ✦πρός | to | 700 | 6.4% | Accusative / Dative / Genitive |
+| ✦διά | through | 667 | 6.1% | Genitive / Accusative |
+| ✦ἀπό | apo — from/away from | 647 | 5.9% | Genitive / Nominative |
+| ✦κατά | according to | 472 | 4.3% | Accusative / Genitive / Nominative |
+| ✦μετά | with (association) | 470 | 4.3% | Genitive / Accusative |
+| ✦περί | concerning | 333 | 3.1% | Genitive / Accusative |
+| ✦ὑπό | under | 219 | 2.0% | Genitive / Accusative |
+| ✦παρά | beside | 192 | 1.8% | Genitive / Accusative / Dative |
+| ✦ὑπέρ | on behalf of | 150 | 1.4% | Genitive / Accusative / Nominative |
+| σύν | syn — with/together | 128 | 1.2% | Dative |
+| ἕως | heos — until/as far as | 108 | 1.0% | Genitive |
+| ἐνώπιον | enopion — before/in the presence of | 94 | 0.9% | Genitive |
+| πρό | pro — before | 47 | 0.4% | Genitive |
+| ἔμπροσθεν | emprosthen — before/in front of | 44 | 0.4% | Genitive |
+| ἄχρι | achri — until/as far as | 43 | 0.4% | Genitive |
+| ✦χωρίς | choris — apart from/without | 40 | 0.4% | Genitive / Nominative |
+| ὀπίσω |  | 26 | 0.2% | Genitive |
+| ἕνεκα |  | 26 | 0.2% | Genitive |
+| ἀντί |  | 22 | 0.2% | Genitive |
+| ἔξω |  | 19 | 0.2% | Genitive |
+| ἐπάνω |  | 17 | 0.2% | Genitive |
+| μέχρι |  | 16 | 0.1% | Genitive |
+| πέραν |  | 13 | 0.1% | Genitive |
+| ✦ἀνά | up | 13 | 0.1% | Accusative / Nominative |
+| ἐγγύς |  | 13 | 0.1% | Genitive |
+| ὑποκάτω |  | 11 | 0.1% | Genitive |
 
 ✦ = governs multiple cases
 
