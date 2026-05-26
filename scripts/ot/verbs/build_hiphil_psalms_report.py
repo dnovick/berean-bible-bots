@@ -37,14 +37,18 @@ BASELINE = len(psa_hiphil) / len(all_psa) * 100  # overall Psalms Hiphil rate
 
 
 def extract_root_strongs(s: str) -> str:
-    """Pull the H-number root from a MACULA strongs string like 'H9002/{H3034}'."""
+    """Pull the H-number root from a MACULA strongs string like 'H9002/{H3034}'.
+
+    Strips trailing letter suffixes (e.g. H7725M -> H7725) because MACULA uses
+    sub-lexeme letters for contextual distinctions within the same root entry.
+    """
     if pd.isna(s):
         return ''
-    m = re.search(r'\{(H\d+[A-Z]?)\}', str(s))
+    m = re.search(r'\{(H\d+)[A-Z]?\}', str(s))
     if m:
         return m.group(1)
-    # Fallback: first segment stripped of braces
-    return re.sub(r'[{}]', '', str(s).split('/')[0])
+    raw = re.sub(r'[{}]', '', str(s).split('/')[0])
+    return re.sub(r'[A-Z]+$', '', raw)
 
 
 def strip_cantillation(w: str) -> str:
@@ -397,6 +401,10 @@ def build_report() -> Path:
         '- **הֹדוֹת (give thanks):** The Hiphil of this root is the'
         ' standard Psalms verb for corporate and individual praise — "I will give'
         ' thanks to the LORD." Its 38 occurrences top the list by a wide margin.',
+        '- **שׁוּב (return/restore/repay):** The Hiphil expresses causative'
+        ' return — "bring back," "restore," "repay." Its breadth of meaning'
+        ' (petition, justice, deliverance) makes it the second most frequent'
+        ' Hiphil root across Psalms.',
         '- **הִגִּיד (declare/proclaim):** The Hiphil expresses the act of'
         ' making something known, particularly God\'s works and righteousness'
         ' before the congregation.',
@@ -405,8 +413,6 @@ def build_report() -> Path:
         ' lament and praise genres alike.',
         '- **הִבִּיט (look/pay attention):** Hiphil "cause to look," often'
         ' used in petition ("look upon me") or accusation.',
-        '- **נָטָה (incline/stretch out):** Hiphil "incline (the ear)"'
-        ' — one of the most common Psalms petition idioms.',
         '',
         '---',
         '',

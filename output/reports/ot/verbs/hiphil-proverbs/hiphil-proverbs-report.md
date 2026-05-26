@@ -23,9 +23,9 @@
 - **Overall Proverbs Hiphil rate: 3.4 per 100 words.** 12 chapters exceed this baseline.
 - **Most Hiphil-dense chapter: Proverbs 17** (7.9 per 100 words, 18 tokens in 227 words).
 - **Top 5 densest chapters:** Pr 17 (7.9%), Pr 28 (7.9%), Pr 4 (6.0%), Pr 19 (5.7%), Pr 10 (5.1%).
-- **Most common Hiphil root:** שָׂכַל ("[who] acts prudently") — 13 tokens.
-- **Top 5 roots:** שָׂכַל "[who] acts prudently" (13), יָסַף "adds" (11), הֵבִין "understanding" (11), הֹכִיחַ "[one who] reproves" (10), נָטָה "incline" (7).
-- **Theologically notable:** the Hiphil of שָׂכַל ("act wisely/prudently") is the most frequent root — a causative frame deeply embedded in the wisdom tradition: to make wise, to give insight, to cause understanding.
+- **Most common Hiphil root:** שָׁב ("will repay") — 14 tokens.
+- **Top 5 roots:** שָׁב "will repay" (14), שָׂכַל "[who] acts prudently" (13), יָסַף "adds" (13), הֵבִין "understanding" (11), הֹכִיחַ "[one who] reproves" (10).
+- **Theologically notable:** the Hiphil of שׁוּב ("return/restore") is the most frequent root — encompassing restoration, repayment, and moral reversal, themes woven throughout Proverbs' view of consequences.
 
 ---
 
@@ -89,39 +89,39 @@ Each cell is one chapter. The number is Hiphil verbs per 100 words. Darker = mor
 
 | Rank | Root | Gloss | Hiphil tokens |
 |---|---|---|---|
-| 1 | שָׂכַל | [who] acts prudently | 13 |
-| 2 | יָסַף | adds | 11 |
-| 3 | הֵבִין | understanding | 11 |
-| 4 | הֹכִיחַ | [one who] reproves | 10 |
-| 5 | נָטָה | incline | 7 |
-| 6 | הֹבִישׁ | [who] acts shamefully | 6 |
-| 7 | הִקְשִׁיב | be attentive | 6 |
-| 8 | הִצִּיל | delivers | 6 |
-| 9 | הַעֲשִׁיר | gain riches | 5 |
-| 10 | הֵיטִיב | makes good | 5 |
-| 11 | הָשִׁיב | [one who] bring back | 5 |
-| 12 | הִרְבָּה | [one who] increases | 5 |
-| 13 | חָלַק | makes smooth | 4 |
-| 14 | רַע | evil-doer | 4 |
-| 15 | הֶֽחֱזִיק | [one who] takes hold | 4 |
-| 16 | תָּפֵק | he obtained | 4 |
-| 17 | שָׁב | [one who] returns | 3 |
-| 18 | יָצָא | brings forth | 3 |
-| 19 | אַבִּיעָה | pours forth | 3 |
-| 20 | שָׁב | he will turn back | 3 |
-| 21 | רָחַק | far away | 3 |
-| 22 | מֵלִיץ | mocks | 3 |
-| 23 | הֵכִין | they prepared | 3 |
-| 24 | הִפְרִיד | [is] separating | 3 |
-| 25 | הִכָּה | more than/ striking | 3 |
+| 1 | שָׁב | will repay | 14 |
+| 2 | שָׂכַל | [who] acts prudently | 13 |
+| 3 | יָסַף | adds | 13 |
+| 4 | הֵבִין | understanding | 11 |
+| 5 | הֹכִיחַ | [one who] reproves | 10 |
+| 6 | נָטָה | incline | 7 |
+| 7 | הִצִּיל | delivers | 6 |
+| 8 | הִקְשִׁיב | be attentive | 6 |
+| 9 | הֹבִישׁ | [who] acts shamefully | 6 |
+| 10 | הַעֲשִׁיר | gain riches | 5 |
+| 11 | הִרְבָּה | [one who] increases | 5 |
+| 12 | יָצָא | brings forth | 5 |
+| 13 | הֵיטִיב | makes good | 5 |
+| 14 | תָּפֵק | he obtained | 4 |
+| 15 | הֵכִין | they prepared | 4 |
+| 16 | רַע | evil-doer | 4 |
+| 17 | חָלַק | makes smooth | 4 |
+| 18 | חָזַק | [one who] takes hold | 4 |
+| 19 | הֶאֱרִיךְ | will prolong | 3 |
+| 20 | נָפַל | makes fall | 3 |
+| 21 | אַבִּיעָה | pours forth | 3 |
+| 22 | רָחַק | far away | 3 |
+| 23 | הִכָּה | more than/ striking | 3 |
+| 24 | מֵלִיץ | mocks | 3 |
+| 25 | סָר | [one who] turns aside | 3 |
 
 **Notes on the top roots:**
 
+- **שׁוּב (return/restore/repay):** The Hiphil expresses causative return — "bring back," "restore," "repay." Its breadth spans relational restoration, divine discipline, and moral consequence, making it the most frequent Hiphil root in Proverbs.
 - **שָׂכַל (act wisely/prudently):** The Hiphil expresses the causative of insight — to make someone wise, to instruct with understanding. The signature verb of the wisdom tradition.
 - **יָסַף (add/increase):** The Hiphil "cause to add" appears repeatedly in Proverbs in contexts of gaining wisdom, words, and days — "the wise will increase learning" (Pr 1:5).
 - **הֵבִין (understand/discern):** The Hiphil expresses causing someone to understand — the teacher's goal in wisdom instruction.
 - **הֹכִיחַ (rebuke/reprove):** The Hiphil "cause to be reproved" is the verb of correction, appearing in the famous Proverbs sayings about accepting discipline and reproof.
-- **נָטָה (incline):** Hiphil "incline (the heart/ear)" — a common wisdom petition idiom, asking the student to attend to instruction.
 
 ---
 

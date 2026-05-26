@@ -38,13 +38,18 @@ N_CHAPTERS = all_pro['chapter'].nunique()
 
 
 def extract_root_strongs(s: str) -> str:
-    """Pull the H-number root from a MACULA strongs string like 'H9002/{H3034}'."""
+    """Pull the H-number root from a MACULA strongs string like 'H9002/{H3034}'.
+
+    Strips trailing letter suffixes (e.g. H7725M -> H7725) because MACULA uses
+    sub-lexeme letters for contextual distinctions within the same root entry.
+    """
     if pd.isna(s):
         return ''
-    m = re.search(r'\{(H\d+[A-Z]?)\}', str(s))
+    m = re.search(r'\{(H\d+)[A-Z]?\}', str(s))
     if m:
         return m.group(1)
-    return re.sub(r'[{}]', '', str(s).split('/')[0])
+    raw = re.sub(r'[{}]', '', str(s).split('/')[0])
+    return re.sub(r'[A-Z]+$', '', raw)
 
 
 def strip_cantillation(w: str) -> str:
@@ -313,9 +318,9 @@ def build_report() -> Path:
             f'{r.lemma} "{r.gloss}" ({int(r["count"])})'
             for _, r in top5_roots.iterrows()
         ) + '.',
-        '- **Theologically notable:** the Hiphil of שָׂכַל ("act wisely/prudently")'
-        ' is the most frequent root — a causative frame deeply embedded in the'
-        ' wisdom tradition: to make wise, to give insight, to cause understanding.',
+        '- **Theologically notable:** the Hiphil of שׁוּב ("return/restore")'
+        ' is the most frequent root — encompassing restoration, repayment, and'
+        ' moral reversal, themes woven throughout Proverbs\' view of consequences.',
         '',
         '---',
         '',
@@ -401,6 +406,10 @@ def build_report() -> Path:
         '',
         '**Notes on the top roots:**',
         '',
+        '- **שׁוּב (return/restore/repay):** The Hiphil expresses causative'
+        ' return — "bring back," "restore," "repay." Its breadth spans'
+        ' relational restoration, divine discipline, and moral consequence,'
+        ' making it the most frequent Hiphil root in Proverbs.',
         '- **שָׂכַל (act wisely/prudently):** The Hiphil expresses the'
         ' causative of insight — to make someone wise, to instruct with'
         ' understanding. The signature verb of the wisdom tradition.',
@@ -412,9 +421,6 @@ def build_report() -> Path:
         '- **הֹכִיחַ (rebuke/reprove):** The Hiphil "cause to be reproved"'
         ' is the verb of correction, appearing in the famous Proverbs sayings'
         ' about accepting discipline and reproof.',
-        '- **נָטָה (incline):** Hiphil "incline (the heart/ear)" — a'
-        ' common wisdom petition idiom, asking the student to attend to'
-        ' instruction.',
         '',
         '---',
         '',
