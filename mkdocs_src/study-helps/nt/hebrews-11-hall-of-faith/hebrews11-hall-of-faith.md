@@ -2,35 +2,35 @@
 
 **Text:** KJV · **Passage:** Hebrews 11:1–38
 
-The author of Hebrews opens the chapter by stating that "the elders obtained a good report" through faith (v. 2), then surveys the patriarchs and heroes of Israel as examples of what faith looks like in practice. Each entry below notes the person, the verse(s) that describe them, and what they did or endured "by faith."
+The author of Hebrews opens the chapter by stating that "the elders obtained a good report" through faith (v. 2), then surveys the patriarchs and heroes of Israel as examples of what faith looks like in practice. Each entry below notes the person, the verse(s) that describe them, and what they did or endured "by faith." **Verbal actions are bolded.**
 
 ---
 
 | Verse(s) | Person | What they did by faith |
 |---|---|---|
-| 4 | Abel | Offered unto God a more excellent sacrifice than Cain, and obtained witness that he was righteous, God testifying of his gifts. |
-| 5 | Enoch | Was translated that he should not see death, and was not found because God had translated him; for before his translation he had this testimony, that he pleased God. |
-| 7 | Noah | Being warned of God of things not seen as yet, moved with fear, prepared an ark to the saving of his house; by the which he condemned the world and became heir of the righteousness which is by faith. |
-| 8–10 | Abraham | Obeyed when he was called to go out into a place which he should after receive for an inheritance; went out, not knowing whither he went. Sojourned in the land of promise as in a strange country, looking for a city which hath foundations, whose builder and maker is God. |
-| 11 | Sarah | Received strength to conceive seed and was delivered of a child when she was past age, because she judged him faithful who had promised. |
-| 17–19 | Abraham | Offered up Isaac when he was tried; accounted that God was able to raise him up even from the dead, from whence also he received him in a figure. |
-| 20 | Isaac | Blessed Jacob and Esau concerning things to come. |
-| 21 | Jacob | Blessed both the sons of Joseph when he was a dying, and worshipped, leaning upon the top of his staff. |
-| 22 | Joseph | When he died, made mention of the departing of the children of Israel and gave commandment concerning his bones. |
-| 23 | Moses' parents | Hid Moses three months after he was born, because they saw he was a proper child; and they were not afraid of the king's commandment. |
-| 24–26 | Moses | Refused to be called the son of Pharaoh's daughter, choosing rather to suffer affliction with the people of God than to enjoy the pleasures of sin for a season; esteeming the reproach of Christ greater riches than the treasures in Egypt. |
-| 27 | Moses | Forsook Egypt, not fearing the wrath of the king; endured as seeing him who is invisible. |
-| 28 | Moses | Kept the passover and the sprinkling of blood, lest he that destroyed the firstborn should touch them. |
-| 29 | Israel | Passed through the Red sea as by dry land; which the Egyptians assaying to do were drowned. |
-| 30 | Israel | Compassed the walls of Jericho seven days; and the walls fell down. |
-| 31 | Rahab | Perished not with them that believed not, when she had received the spies with peace. |
-| 32–38 | Gideon, Barak, Samson, Jephthah, David, Samuel, and the prophets | Subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions, quenched the violence of fire, escaped the edge of the sword, out of weakness were made strong, waxed valiant in fight, turned to flight the armies of the aliens. Women received their dead raised to life again; others were tortured, not accepting deliverance; some had trial of cruel mockings and scourgings, of bonds and imprisonment; were stoned, sawn asunder, slain with the sword; wandered about in sheepskins and goatskins, being destitute, afflicted, tormented. |
+| 4 | Abel | **Offered unto God a more excellent sacrifice than Cain**, and obtained witness that he was righteous, God testifying of his gifts. |
+| 5 | Enoch | **Was translated** that he should not see death, and was not found because God had translated him; for before his translation he had this testimony, that **he pleased God**. |
+| 7 | Noah | Being warned of God of things not seen as yet, moved with fear, **prepared an ark** to the saving of his house; by the which he condemned the world and became heir of the righteousness which is by faith. |
+| 8–10 | Abraham | **Obeyed when he was called to go out** into a place which he should after receive for an inheritance; **went out**, not knowing whither he went. Sojourned in the land of promise as in a strange country, looking for a city which hath foundations, whose builder and maker is God. |
+| 11 | Sarah | **Received strength to conceive seed** and **was delivered of a child** when she was past age, because she judged him faithful who had promised. |
+| 17–19 | Abraham | **Offered up Isaac** when he was tried; accounted that God was able to raise him up even from the dead, from whence also he received him in a figure. |
+| 20 | Isaac | **Blessed Jacob and Esau** concerning things to come. |
+| 21 | Jacob | **Blessed both the sons of Joseph** when he was a dying, and **worshipped**, leaning upon the top of his staff. |
+| 22 | Joseph | **Made mention** of the departing of the children of Israel, and **gave commandment** concerning his bones. |
+| 23 | Moses' parents | **Hid Moses** three months after he was born, because they saw he was a proper child; and they were not afraid of the king's commandment. |
+| 24–26 | Moses | **Refused to be called** the son of Pharaoh's daughter, **choosing rather to suffer affliction** with the people of God than to enjoy the pleasures of sin for a season; esteeming the reproach of Christ greater riches than the treasures in Egypt. |
+| 27 | Moses | **Forsook Egypt**, not fearing the wrath of the king; **endured** as seeing him who is invisible. |
+| 28 | Moses | **Kept the passover and the sprinkling of blood**, lest he that destroyed the firstborn should touch them. |
+| 29 | Israel | **Passed through the Red Sea as by dry land**; which the Egyptians assaying to do were drowned. |
+| 30 | Israel | Compassed the walls of Jericho seven days; and **the walls fell down**. |
+| 31 | Rahab | **Received the spies with peace**, and perished not with them that believed not. |
+| 32–38 | Gideon, Barak, Samson, Jephthah, David, Samuel, and the prophets | **Subdued kingdoms, wrought righteousness, obtained promises, stopped the mouths of lions, quenched the violence of fire, escaped the edge of the sword**; others were tortured, not accepting deliverance; some had trial of cruel mockings and scourgings, of bonds and imprisonment; were stoned, sawn asunder, slain with the sword; wandered about in sheepskins and goatskins, being destitute, afflicted, tormented. |
 
 ---
 
 ## Downloadable Chart
 
-Right-click the image below and choose **Save image as…** to download a high-resolution PNG suitable for printing or sharing.
+Right-click the image below and choose **Save image as…** to download a high-resolution PNG suitable for printing or sharing. Verbal actions appear in bold dark blue; supporting context in gray.
 
 ![Hebrews 11 Hall of Faith chart](hebrews11-hall-of-faith-chart.png)
 
