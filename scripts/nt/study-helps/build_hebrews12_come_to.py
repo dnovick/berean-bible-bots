@@ -18,17 +18,17 @@ import matplotlib.pyplot as plt  # noqa: E402
 REPORT_DIR = Path('output/study-helps/nt/hebrews-12-come-to')
 REPORT_DIR.mkdir(parents=True, exist_ok=True)
 
-# (verse, greek_dative_phrase, head_lemma, strongs, kjv, note)
-# Greek phrase: the dative expression as it appears in the text (TAGNT/TR).
-# Head lemma: lemma of the primary dative noun(s); genitives that depend on
-#   them are noted parenthetically where helpful.
-ENTRIES: list[tuple[str, str, str, str, str, str]] = [
+# (verse, greek_dative_phrase, head_lemma, strongs, kjv, short_note, full_note)
+# short_note: ≤12 words for the markdown table.
+# full_note: full prose used in the PNG chart.
+ENTRIES: list[tuple[str, str, str, str, str, str, str]] = [
     (
         '22',
         'ὄρει Σιών',
         'ὄρος / Σιών',
         'G3735 / G4622',
         'mount Sion',
+        'Heavenly counterpart to earthly Sinai (vv. 18–20).',
         'The heavenly dwelling of God; contrasted with earthly Mt. Sinai'
         ' (vv. 18–20), where Israel could not draw near.',
     ),
@@ -38,6 +38,7 @@ ENTRIES: list[tuple[str, str, str, str, str, str]] = [
         'πόλις / Ἰερουσαλήμ',
         'G4172 / G2419',
         'the city of the living God,\nthe heavenly Jerusalem',
+        'Ἰερουσαλήμ ἐπουρανίῳ in apposition to πόλει (Heb 11:10).',
         'Ἰερουσαλήμ ἐπουρανίῳ stands in apposition to πόλει. The city'
         ' Abraham sought, "whose builder and maker is God" (Heb 11:10).',
     ),
@@ -47,6 +48,7 @@ ENTRIES: list[tuple[str, str, str, str, str, str]] = [
         'μυριάς',
         'G3461',
         'an innumerable company of angels',
+        'μυριάς = ten thousand; the uncountable angelic host.',
         'μυριάς = ten thousand; used for an uncountable multitude. The'
         ' angelic host that surrounds the throne of God.',
     ),
@@ -56,6 +58,7 @@ ENTRIES: list[tuple[str, str, str, str, str, str]] = [
         'ἐκκλησία / πρωτότοκος',
         'G1577 / G4416',
         'the general assembly and church\nof the firstborn, written in heaven',
+        'Firstborn heirs enrolled in heaven (cf. Luke 10:20).',
         'ἐκκλησία = assembly/congregation. πρωτότοκοι bears the rights of'
         ' the firstborn (cf. Rom 8:29); their names are enrolled in heaven'
         ' (Luke 10:20).',
@@ -66,6 +69,7 @@ ENTRIES: list[tuple[str, str, str, str, str, str]] = [
         'κριτής / θεός',
         'G2923 / G2316',
         'God the Judge of all',
+        'θεῷ in apposition to κριτῇ — God himself is the Judge.',
         'θεῷ stands in apposition to κριτῇ — both dative, identifying the'
         ' universal Judge as God himself.',
     ),
@@ -75,6 +79,7 @@ ENTRIES: list[tuple[str, str, str, str, str, str]] = [
         'πνεῦμα / δίκαιος',
         'G4151 / G1342',
         'the spirits of just men made perfect',
+        'OT saints perfected through Christ (Heb 11:40).',
         'τετελειωμένων (perf. pass. ptc. of τελειόω) = those brought to'
         ' completion/maturity. The OT saints now perfected through Christ'
         ' (Heb 11:40).',
@@ -85,6 +90,7 @@ ENTRIES: list[tuple[str, str, str, str, str, str]] = [
         'μεσίτης / Ἰησοῦς',
         'G3316 / G2424',
         'Jesus the mediator of the new covenant',
+        'Sole mediator between God and man (1 Tim 2:5).',
         'μεσίτης = one who stands between two parties. Jesus is the sole'
         ' mediator of the new covenant (1 Tim 2:5; Heb 8:6; 9:15).',
     ),
@@ -94,6 +100,7 @@ ENTRIES: list[tuple[str, str, str, str, str, str]] = [
         'αἷμα / ῥαντισμός',
         'G0129 / G4473',
         'the blood of sprinkling',
+        'Speaks better things than Abel\'s blood (forgiveness, not vengeance).',
         'Alludes to OT sprinkling rites (Exod 24:8; Lev 14); speaks "better'
         ' things than Abel" — Abel\'s blood cried for vengeance, Christ\'s'
         ' for forgiveness.',
@@ -111,7 +118,7 @@ def build_chart() -> Path:
     HEADER_H = 0.40
 
     rows = []
-    for verse, greek, lemma, strongs, kjv, note in ENTRIES:
+    for verse, greek, lemma, strongs, kjv, _short_note, note in ENTRIES:
         g_w = textwrap.fill(greek, GREEK_WRAP)
         l_w = textwrap.fill(lemma, LEMMA_WRAP)
         s_w = textwrap.fill(strongs, LEMMA_WRAP)
@@ -248,8 +255,9 @@ def build_report() -> Path:
         ' active indicative, emphasizing a completed approach with present'
         ' effect. What follows is a series of eight dative objects — the'
         ' realities believers have already come to under the new covenant.'
-        ' Each is listed below with its Greek form, head lemma(ta), Strongs'
-        ' number(s), KJV rendering, and a brief explanatory note.',
+        ' Each is listed below with its Greek form, head lemma(ta),'
+        ' KJV rendering, and a brief explanatory note.'
+        ' The downloadable chart below also includes Strongs numbers.',
         '',
         '---',
         '',
@@ -257,11 +265,11 @@ def build_report() -> Path:
         '|---|---|---|---|---|',
     ]
 
-    for verse, greek, lemma, _strongs, kjv, note in ENTRIES:
+    for verse, greek, lemma, _strongs, kjv, short_note, _full_note in ENTRIES:
         greek_cell = greek.replace('\n', ' ')
         lemma_cell = lemma
         kjv_cell = kjv.replace('\n', ' ')
-        note_cell = note.replace('|', '\\|')
+        note_cell = short_note.replace('|', '\\|')
         lines.append(
             f'| {verse} | {greek_cell} | {lemma_cell} |'
             f' {kjv_cell} | {note_cell} |'
