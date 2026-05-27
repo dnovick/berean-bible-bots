@@ -253,17 +253,17 @@ def build_report() -> Path:
         '',
         '---',
         '',
-        '| Verse | Greek (dative) | Lemma | Strongs | KJV | Note |',
-        '|---|---|---|---|---|---|',
+        '| Verse | Greek (dative) | Lemma | KJV | Note |',
+        '|---|---|---|---|---|',
     ]
 
-    for verse, greek, lemma, strongs, kjv, note in ENTRIES:
+    for verse, greek, lemma, _strongs, kjv, note in ENTRIES:
         greek_cell = greek.replace('\n', ' ')
         lemma_cell = lemma
         kjv_cell = kjv.replace('\n', ' ')
         note_cell = note.replace('|', '\\|')
         lines.append(
-            f'| {verse} | {greek_cell} | {lemma_cell} | {strongs} |'
+            f'| {verse} | {greek_cell} | {lemma_cell} |'
             f' {kjv_cell} | {note_cell} |'
         )
 
