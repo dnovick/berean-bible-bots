@@ -757,12 +757,48 @@ def build_reports() -> list:
     return [{"Reports": nav_entries}]
 
 
+STUDY_HELPS_SECTIONS = [
+    ("New Testament", "nt"),
+]
+
+
+def build_study_helps() -> list:
+    """Copy output/study-helps/ into mkdocs_src/study-helps/ and return nav entries."""
+    src_root = REPO / "output" / "study-helps"
+    dst_root = MKDOCS_SRC / "study-helps"
+
+    if dst_root.exists():
+        shutil.rmtree(dst_root)
+    dst_root.mkdir(parents=True)
+
+    top_readme = src_root / "README.md"
+    if top_readme.exists():
+        content = top_readme.read_text(encoding="utf-8")
+        content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
+        (dst_root / "index.md").write_text(content, encoding="utf-8")
+
+    nav_entries: list = [{"Overview": "study-helps/index.md"}]
+
+    for section_label, subdir in STUDY_HELPS_SECTIONS:
+        src = src_root / subdir
+        if not src.is_dir():
+            continue
+        dst = dst_root / subdir
+        section_entries: list = []
+        _build_report_dir(src, dst, depth=1, nav_entries=section_entries, label=subdir)
+        if section_entries:
+            nav_entries.append({section_label: section_entries})
+
+    return [{"Study Helps": nav_entries}]
+
+
 def build_nav() -> list:
     nav: list = [{"Home": "index.md"}]
     for lang, course, label, titles in COURSES:
         nav.extend(build_course(lang, course, label, titles))
     nav.extend(build_notebooks())
     nav.extend(build_reports())
+    nav.extend(build_study_helps())
     nav.append({"API Reference": "reference/index.md"})
     return nav
 
@@ -810,10 +846,11 @@ def main() -> None:
             if ch_dir.exists():
                 shutil.rmtree(ch_dir)
 
-    # Clean generated reports dir
-    reports_dir = MKDOCS_SRC / "reports"
-    if reports_dir.exists():
-        shutil.rmtree(reports_dir)
+    # Clean generated reports and study-helps dirs
+    for clean_dir in ("reports", "study-helps"):
+        d = MKDOCS_SRC / clean_dir
+        if d.exists():
+            shutil.rmtree(d)
 
     build_api_reference()
     nav = build_nav()
