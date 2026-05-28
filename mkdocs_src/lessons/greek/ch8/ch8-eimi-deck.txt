@@ -1,0 +1,17 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 8 — εἰμί Present
+#tags column:3
+εἰμί	verb εἰμί | pres. ind. 1sg | I am | enclitic	bbg-ch8-eimi eimi-recognize eimi-1st eimi-sg
+εἶ	verb εἰμί | pres. ind. 2sg | you are | accented (non-enclitic)	bbg-ch8-eimi eimi-recognize eimi-2nd eimi-sg
+ἐστίν (ἐστί)	verb εἰμί | pres. ind. 3sg | he / she / it is | enclitic; -ν before vowel or pause	bbg-ch8-eimi eimi-recognize eimi-3rd eimi-sg
+ἐσμέν	verb εἰμί | pres. ind. 1pl | we are | enclitic	bbg-ch8-eimi eimi-recognize eimi-1st eimi-pl
+ἐστέ	verb εἰμί | pres. ind. 2pl | you (pl) are | enclitic	bbg-ch8-eimi eimi-recognize eimi-2nd eimi-pl
+εἰσίν (εἰσί)	verb εἰμί | pres. ind. 3pl | they are | enclitic; -ν before vowel or pause	bbg-ch8-eimi eimi-recognize eimi-3rd eimi-pl
+εἰμί — pres. ind. 1sg	εἰμί	bbg-ch8-eimi eimi-reverse eimi-1st eimi-sg
+εἰμί — pres. ind. 2sg	εἶ	bbg-ch8-eimi eimi-reverse eimi-2nd eimi-sg
+εἰμί — pres. ind. 3sg	ἐστίν	bbg-ch8-eimi eimi-reverse eimi-3rd eimi-sg
+εἰμί — pres. ind. 1pl	ἐσμέν	bbg-ch8-eimi eimi-reverse eimi-1st eimi-pl
+εἰμί — pres. ind. 2pl	ἐστέ	bbg-ch8-eimi eimi-reverse eimi-2nd eimi-pl
+εἰμί — pres. ind. 3pl	εἰσίν	bbg-ch8-eimi eimi-reverse eimi-3rd eimi-pl

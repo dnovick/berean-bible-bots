@@ -17,6 +17,9 @@
 | [ch8-vocab-deck.md](ch8-vocab-deck.md) | Human-readable card list — 20 vocabulary words |
 | [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe import file |
+| [ch8-eimi-deck.md](ch8-eimi-deck.md) | Human-readable card list — 12 cards: all present indicative forms of εἰμί (recognize + produce) |
+| [ch8-eimi-deck.txt](ch8-eimi-deck.txt) | Anki import file (File → Import) |
+| [ch8-eimi-deck-fd.txt](ch8-eimi-deck-fd.txt) | Flashcards Deluxe import file |
 
 ### Notebooks
 
