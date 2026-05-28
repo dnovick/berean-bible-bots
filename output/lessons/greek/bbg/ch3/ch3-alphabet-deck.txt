@@ -1,0 +1,29 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 3 — Greek Alphabet
+#tags column:3
+α (Α)	Alpha | a | "father" (long) / "along" (short)	bbg-ch3-alphabet letter-vowel vowel-either-length
+β (Β)	Beta | b | "Bible"	bbg-ch3-alphabet letter-consonant letter-labial
+γ (Γ)	Gamma | g | "gone" (hard g); before γ/κ/χ/ξ = nasal "ng"	bbg-ch3-alphabet letter-consonant letter-velar
+δ (Δ)	Delta | d | "dog"	bbg-ch3-alphabet letter-consonant letter-dental
+ε (Ε)	Epsilon | e | "met" (always short)	bbg-ch3-alphabet letter-vowel vowel-always-short
+ζ (Ζ)	Zeta | z | "daze" (double consonant: s+d or z)	bbg-ch3-alphabet letter-consonant letter-double
+η (Η)	Eta | ē | "they" (always long)	bbg-ch3-alphabet letter-vowel vowel-always-long
+θ (Θ)	Theta | th | "thin"	bbg-ch3-alphabet letter-consonant letter-dental
+ι (Ι)	Iota | i | "intrigue" (long) / "in" (short)	bbg-ch3-alphabet letter-vowel vowel-either-length
+κ (Κ)	Kappa | k | "kitchen"	bbg-ch3-alphabet letter-consonant letter-velar
+λ (Λ)	Lambda | l | "law"	bbg-ch3-alphabet letter-consonant letter-liquid
+μ (Μ)	Mu | m | "mother"	bbg-ch3-alphabet letter-consonant letter-nasal
+ν (Ν)	Nu | n | "new"	bbg-ch3-alphabet letter-consonant letter-nasal
+ξ (Ξ)	Xi | x | "axiom" (double consonant: k+s)	bbg-ch3-alphabet letter-consonant letter-double
+ο (Ο)	Omicron | o | "off" (always short)	bbg-ch3-alphabet letter-vowel vowel-always-short
+π (Π)	Pi | p | "peach"	bbg-ch3-alphabet letter-consonant letter-labial
+ρ (Ρ)	Rho | r | "rod" (slightly trilled; initial ῥ = "rh")	bbg-ch3-alphabet letter-consonant letter-liquid
+σ / ς (Σ)	Sigma | s | "sun" (σ = initial/medial; ς = word-final only)	bbg-ch3-alphabet letter-consonant letter-sibilant
+τ (Τ)	Tau | t | "talk"	bbg-ch3-alphabet letter-consonant letter-dental
+υ (Υ)	Upsilon | u / y | French "tu" / German "über"	bbg-ch3-alphabet letter-vowel vowel-either-length
+φ (Φ)	Phi | ph | "phone"	bbg-ch3-alphabet letter-consonant letter-labial
+χ (Χ)	Chi | ch | German "Bach" (breathy k — never English "ch")	bbg-ch3-alphabet letter-consonant letter-velar
+ψ (Ψ)	Psi | ps | "lips" (double consonant: p+s)	bbg-ch3-alphabet letter-consonant letter-double
+ω (Ω)	Omega | ō | "tone" (always long)	bbg-ch3-alphabet letter-vowel vowel-always-long

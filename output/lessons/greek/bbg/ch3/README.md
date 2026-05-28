@@ -10,6 +10,14 @@
 |---|---|
 | [exercises/ch3-alphabet-drill/](exercises/ch3-alphabet-drill/README.md) | 24-item letter identification drill — recognize letter name and sound from written form |
 
+### Flashcards
+
+| File | Description |
+|---|---|
+| [ch3-alphabet-deck.md](ch3-alphabet-deck.md) | Human-readable card list — 24 cards: every letter with name, transliteration, and pronunciation |
+| [ch3-alphabet-deck.txt](ch3-alphabet-deck.txt) | Anki import file (File → Import) |
+| [ch3-alphabet-deck-fd.txt](ch3-alphabet-deck-fd.txt) | Flashcards Deluxe import file |
+
 ---
 
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
