@@ -96,12 +96,22 @@ def on_post_page(output: str, page: object, **kwargs: object) -> str:
 
 
 def on_page_content(html: str, page: object, **kwargs: object) -> str:
-    """Prepend a Colab launch badge to every notebook page."""
+    """Prepend a Colab launch badge to every notebook page and exclude from search."""
     src = getattr(page, "file", None)
     if src is None:
         return html
     path = str(src.src_uri)
-    if not path.startswith("notebooks/") or not path.endswith(".ipynb"):
+    if not path.startswith("notebooks/"):
+        return html
+
+    # Exclude all notebooks/ pages (both .ipynb and index.md) from search.
+    meta = getattr(page, "meta", None)
+    if isinstance(meta, dict):
+        meta.setdefault("search", {})
+        if isinstance(meta["search"], dict):
+            meta["search"]["exclude"] = True
+
+    if not path.endswith(".ipynb"):
         return html
 
     colab_url = f"{COLAB_BASE}{path}"
