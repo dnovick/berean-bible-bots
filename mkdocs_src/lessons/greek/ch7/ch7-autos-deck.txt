@@ -1,0 +1,22 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 7 — αὐτός
+#tags column:3
+αὐτός	pronoun — masc nom sg — he	bbg-ch7-autos autos-masc autos-nom autos-sg
+αὐτοῦ	pronoun — masc/neut gen sg — of him/it	bbg-ch7-autos autos-masc autos-neut autos-gen autos-sg
+αὐτῷ	pronoun — masc/neut dat sg — to/for/with him/it	bbg-ch7-autos autos-masc autos-neut autos-dat autos-sg
+αὐτόν	pronoun — masc acc sg — him	bbg-ch7-autos autos-masc autos-acc autos-sg
+αὐτοί	pronoun — masc nom pl — they (m)	bbg-ch7-autos autos-masc autos-nom autos-pl
+αὐτῶν	pronoun — masc/fem/neut gen pl — of them	bbg-ch7-autos autos-masc autos-fem autos-neut autos-gen autos-pl
+αὐτοῖς	pronoun — masc/neut dat pl — to/for/with them (m/n)	bbg-ch7-autos autos-masc autos-neut autos-dat autos-pl
+αὐτούς	pronoun — masc acc pl — them (m)	bbg-ch7-autos autos-masc autos-acc autos-pl
+αὐτή	pronoun — fem nom sg — she	bbg-ch7-autos autos-fem autos-nom autos-sg
+αὐτῆς	pronoun — fem gen sg — of her	bbg-ch7-autos autos-fem autos-gen autos-sg
+αὐτῇ	pronoun — fem dat sg — to/for/with her	bbg-ch7-autos autos-fem autos-dat autos-sg
+αὐτήν	pronoun — fem acc sg — her	bbg-ch7-autos autos-fem autos-acc autos-sg
+αὐταί	pronoun — fem nom pl — they (f)	bbg-ch7-autos autos-fem autos-nom autos-pl
+αὐταῖς	pronoun — fem dat pl — to/for/with them (f)	bbg-ch7-autos autos-fem autos-dat autos-pl
+αὐτάς	pronoun — fem acc pl — them (f)	bbg-ch7-autos autos-fem autos-acc autos-pl
+αὐτό	pronoun — neut nom/acc sg — it	bbg-ch7-autos autos-neut autos-nom autos-acc autos-sg
+αὐτά	pronoun — neut nom/acc pl — they/them (n)	bbg-ch7-autos autos-neut autos-nom autos-acc autos-pl
