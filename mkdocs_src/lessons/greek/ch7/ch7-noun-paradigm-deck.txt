@@ -1,0 +1,35 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 7 — Noun Paradigms
+#tags column:3
+λόγος	Lemma: λόγος, -ου, ὁ | 2nd decl. m | nom sg | the word	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-nom noun-sg
+λόγου	Lemma: λόγος, -ου, ὁ | 2nd decl. m | gen sg | of the word	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-gen noun-sg
+λόγῳ	Lemma: λόγος, -ου, ὁ | 2nd decl. m | dat sg | to/for/with the word	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-dat noun-sg
+λόγον	Lemma: λόγος, -ου, ὁ | 2nd decl. m | acc sg | the word (obj)	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-acc noun-sg
+λόγε	Lemma: λόγος, -ου, ὁ | 2nd decl. m | voc sg | O word!	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-voc noun-sg
+λόγοι	Lemma: λόγος, -ου, ὁ | 2nd decl. m | nom/voc pl | the words	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-nom noun-voc noun-pl
+λόγων	Lemma: λόγος, -ου, ὁ | 2nd decl. m | gen pl | of the words	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-gen noun-pl
+λόγοις	Lemma: λόγος, -ου, ὁ | 2nd decl. m | dat pl | to/for/with the words	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-dat noun-pl
+λόγους	Lemma: λόγος, -ου, ὁ | 2nd decl. m | acc pl | the words (obj)	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-acc noun-pl
+γραφή	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | nom/voc sg | the scripture	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-nom noun-voc noun-sg
+γραφῆς	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | gen sg | of the scripture	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-gen noun-sg
+γραφῇ	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | dat sg | to/for/with the scripture	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-dat noun-sg
+γραφήν	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | acc sg | the scripture (obj)	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-acc noun-sg
+γραφαί	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | nom/voc pl | the scriptures	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-nom noun-voc noun-pl
+γραφῶν	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | gen pl | of the scriptures	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-gen noun-pl
+γραφαῖς	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | dat pl | to/for/with the scriptures	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-dat noun-pl
+γραφάς	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | acc pl | the scriptures (obj)	bbg-ch7-noun-paradigm noun-graphe decl-1st-eta noun-acc noun-pl
+ὥρα	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | nom/voc sg | the hour	bbg-ch7-noun-paradigm noun-hora decl-1st-alpha noun-nom noun-voc noun-sg
+ὥρας	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | gen sg OR acc pl | of the hour / the hours (obj)	bbg-ch7-noun-paradigm noun-hora decl-1st-alpha noun-gen noun-acc noun-sg noun-pl
+ὥρᾳ	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | dat sg | to/for/with the hour	bbg-ch7-noun-paradigm noun-hora decl-1st-alpha noun-dat noun-sg
+ὥραν	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | acc sg | the hour (obj)	bbg-ch7-noun-paradigm noun-hora decl-1st-alpha noun-acc noun-sg
+ὧραι	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | nom/voc pl | the hours	bbg-ch7-noun-paradigm noun-hora decl-1st-alpha noun-nom noun-voc noun-pl
+ὡρῶν	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | gen pl | of the hours	bbg-ch7-noun-paradigm noun-hora decl-1st-alpha noun-gen noun-pl
+ὥραις	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | dat pl | to/for/with the hours	bbg-ch7-noun-paradigm noun-hora decl-1st-alpha noun-dat noun-pl
+ἔργον	Lemma: ἔργον, -ου, τό | 2nd decl. n | nom/acc/voc sg | the work	bbg-ch7-noun-paradigm noun-ergon decl-2nd-neut noun-nom noun-acc noun-voc noun-sg
+ἔργου	Lemma: ἔργον, -ου, τό | 2nd decl. n | gen sg | of the work	bbg-ch7-noun-paradigm noun-ergon decl-2nd-neut noun-gen noun-sg
+ἔργῳ	Lemma: ἔργον, -ου, τό | 2nd decl. n | dat sg | to/for/with the work	bbg-ch7-noun-paradigm noun-ergon decl-2nd-neut noun-dat noun-sg
+ἔργα	Lemma: ἔργον, -ου, τό | 2nd decl. n | nom/acc/voc pl | the works	bbg-ch7-noun-paradigm noun-ergon decl-2nd-neut noun-nom noun-acc noun-voc noun-pl
+ἔργων	Lemma: ἔργον, -ου, τό | 2nd decl. n | gen pl | of the works	bbg-ch7-noun-paradigm noun-ergon decl-2nd-neut noun-gen noun-pl
+ἔργοις	Lemma: ἔργον, -ου, τό | 2nd decl. n | dat pl | to/for/with the works	bbg-ch7-noun-paradigm noun-ergon decl-2nd-neut noun-dat noun-pl

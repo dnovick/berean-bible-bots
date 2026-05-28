@@ -1,0 +1,30 @@
+λόγος	Lemma: λόγος, -ου, ὁ | 2nd decl. m | nom sg | the word	BBG Chapter 7 — Noun Paradigms
+λόγου	Lemma: λόγος, -ου, ὁ | 2nd decl. m | gen sg | of the word	BBG Chapter 7 — Noun Paradigms
+λόγῳ	Lemma: λόγος, -ου, ὁ | 2nd decl. m | dat sg | to/for/with the word	BBG Chapter 7 — Noun Paradigms
+λόγον	Lemma: λόγος, -ου, ὁ | 2nd decl. m | acc sg | the word (obj)	BBG Chapter 7 — Noun Paradigms
+λόγε	Lemma: λόγος, -ου, ὁ | 2nd decl. m | voc sg | O word!	BBG Chapter 7 — Noun Paradigms
+λόγοι	Lemma: λόγος, -ου, ὁ | 2nd decl. m | nom/voc pl | the words	BBG Chapter 7 — Noun Paradigms
+λόγων	Lemma: λόγος, -ου, ὁ | 2nd decl. m | gen pl | of the words	BBG Chapter 7 — Noun Paradigms
+λόγοις	Lemma: λόγος, -ου, ὁ | 2nd decl. m | dat pl | to/for/with the words	BBG Chapter 7 — Noun Paradigms
+λόγους	Lemma: λόγος, -ου, ὁ | 2nd decl. m | acc pl | the words (obj)	BBG Chapter 7 — Noun Paradigms
+γραφή	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | nom/voc sg | the scripture	BBG Chapter 7 — Noun Paradigms
+γραφῆς	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | gen sg | of the scripture	BBG Chapter 7 — Noun Paradigms
+γραφῇ	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | dat sg | to/for/with the scripture	BBG Chapter 7 — Noun Paradigms
+γραφήν	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | acc sg | the scripture (obj)	BBG Chapter 7 — Noun Paradigms
+γραφαί	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | nom/voc pl | the scriptures	BBG Chapter 7 — Noun Paradigms
+γραφῶν	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | gen pl | of the scriptures	BBG Chapter 7 — Noun Paradigms
+γραφαῖς	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | dat pl | to/for/with the scriptures	BBG Chapter 7 — Noun Paradigms
+γραφάς	Lemma: γραφή, -ῆς, ἡ | 1st decl. f (-η stem) | acc pl | the scriptures (obj)	BBG Chapter 7 — Noun Paradigms
+ὥρα	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | nom/voc sg | the hour	BBG Chapter 7 — Noun Paradigms
+ὥρας	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | gen sg OR acc pl | of the hour / the hours (obj)	BBG Chapter 7 — Noun Paradigms
+ὥρᾳ	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | dat sg | to/for/with the hour	BBG Chapter 7 — Noun Paradigms
+ὥραν	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | acc sg | the hour (obj)	BBG Chapter 7 — Noun Paradigms
+ὧραι	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | nom/voc pl | the hours	BBG Chapter 7 — Noun Paradigms
+ὡρῶν	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | gen pl | of the hours	BBG Chapter 7 — Noun Paradigms
+ὥραις	Lemma: ὥρα, -ας, ἡ | 1st decl. f (-α stem) | dat pl | to/for/with the hours	BBG Chapter 7 — Noun Paradigms
+ἔργον	Lemma: ἔργον, -ου, τό | 2nd decl. n | nom/acc/voc sg | the work	BBG Chapter 7 — Noun Paradigms
+ἔργου	Lemma: ἔργον, -ου, τό | 2nd decl. n | gen sg | of the work	BBG Chapter 7 — Noun Paradigms
+ἔργῳ	Lemma: ἔργον, -ου, τό | 2nd decl. n | dat sg | to/for/with the work	BBG Chapter 7 — Noun Paradigms
+ἔργα	Lemma: ἔργον, -ου, τό | 2nd decl. n | nom/acc/voc pl | the works	BBG Chapter 7 — Noun Paradigms
+ἔργων	Lemma: ἔργον, -ου, τό | 2nd decl. n | gen pl | of the works	BBG Chapter 7 — Noun Paradigms
+ἔργοις	Lemma: ἔργον, -ου, τό | 2nd decl. n | dat pl | to/for/with the works	BBG Chapter 7 — Noun Paradigms
