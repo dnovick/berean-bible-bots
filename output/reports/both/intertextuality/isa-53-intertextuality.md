@@ -41,6 +41,8 @@ The table below uses the following tiers (following the categories used by schol
 
 ## All Citations
 
+> **Note on the text columns:** The *OT Text* and *NT Text* columns show a **word-by-word interlinear gloss** drawn from the STEPBible TAHOT (Hebrew OT) and TAGNT (Greek NT) datasets. Each word's gloss is concatenated in order, so the result reads like a literal word-for-word rendering rather than a polished translation. For smooth reading, consult a Bible in the Verse-by-Verse Detail section below or look up the reference directly.
+
 | OT Verse | NT Verse | Score | OT Text | NT Text |
 |---|---|---:|---|---|
 | Isaiah 53:4 | 1 Peter 2:24 | 127 | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | Who the sins of us Himself bore in the body of Him on the tree so that <the> to ... |
