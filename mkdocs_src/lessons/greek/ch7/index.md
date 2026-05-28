@@ -23,6 +23,9 @@
 | [ch7-noun-paradigm-deck.md](ch7-noun-paradigm-deck.md) | Human-readable card list — 30 cards: full inflection of λόγος, γραφή, ὥρα, ἔργον |
 | [ch7-noun-paradigm-deck.txt](ch7-noun-paradigm-deck.txt) | Anki import file (File → Import) |
 | [ch7-noun-paradigm-deck-fd.txt](ch7-noun-paradigm-deck-fd.txt) | Flashcards Deluxe import file |
+| [ch7-autos-deck.md](ch7-autos-deck.md) | Human-readable card list — 17 cards: all forms of αὐτός (he, she, it / himself / the same) |
+| [ch7-autos-deck.txt](ch7-autos-deck.txt) | Anki import file (File → Import) |
+| [ch7-autos-deck-fd.txt](ch7-autos-deck-fd.txt) | Flashcards Deluxe import file |
 
 ### Notebooks
 
