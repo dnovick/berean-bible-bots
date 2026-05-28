@@ -534,16 +534,15 @@ def intertextuality_report(
         lines += [
             "## All Citations",
             "",
-            "| OT Verse | NT Verse | Confidence | Tier | OT Text | NT Text |",
-            "|---|---|---:|---|---|---|",
+            "| OT Verse | NT Verse | Score | OT Text | NT Text |",
+            "|---|---|---:|---|---|",
         ]
         for _, row in df.iterrows():
             ot_txt = (row['ot_text'][:80] + '...') if len(row['ot_text']) > 80 else row['ot_text']
             nt_txt = (row['nt_text'][:80] + '...') if len(row['nt_text']) > 80 else row['nt_text']
-            tier = _confidence_tier(row['votes'])
             lines.append(
                 f"| {row['ot_ref']} | {row['nt_ref']} | {row['votes']} "
-                f"| {tier} | {ot_txt} | {nt_txt} |"
+                f"| {ot_txt} | {nt_txt} |"
             )
         lines.append("")
 
