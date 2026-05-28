@@ -112,6 +112,20 @@
         return rank !== undefined ? rank : Infinity;
     }
 
+    // Full canonical sort key including chapter and verse.
+    // Encodes as book * 1_000_000 + chapter * 1_000 + verse so that
+    // "Luke 22:37" < "Luke 24:46" and "Isaiah 53:2" < "Isaiah 53:10".
+    function bookVerseKey(text) {
+        const m = text.trim().match(/^(\d\s+\S+|\S+)\s+(\d+):(\d+)/);
+        if (m) {
+            const rank = BOOK_ORDER[m[1].toLowerCase()];
+            if (rank !== undefined) {
+                return rank * 1000000 + parseInt(m[2], 10) * 1000 + parseInt(m[3], 10);
+            }
+        }
+        return bookRank(text) * 1000000;
+    }
+
     // ── Locale detection ──────────────────────────────────────────────────────
     function detectLocale(sample) {
         if (/[א-תיִ-פֿ]/.test(sample)) return 'he';
@@ -152,8 +166,8 @@
         let compare;
         if (isBookColumn(samples)) {
             compare = function (a, b) {
-                const ra = bookRank(cellText(a.cells[colIdx]));
-                const rb = bookRank(cellText(b.cells[colIdx]));
+                const ra = bookVerseKey(cellText(a.cells[colIdx]));
+                const rb = bookVerseKey(cellText(b.cells[colIdx]));
                 return ascending ? ra - rb : rb - ra;
             };
         } else if (isNumericSample(samples)) {
