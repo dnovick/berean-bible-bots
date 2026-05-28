@@ -45,7 +45,9 @@ hooks:
   - docs_hooks.py
 
 plugins:
-  - search
+  - search:
+      exclude:
+        - notebooks/**
   - mkdocs-jupyter:
       execute: false
       include_source: false
