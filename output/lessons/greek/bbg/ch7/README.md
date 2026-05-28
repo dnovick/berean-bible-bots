@@ -17,6 +17,12 @@
 | [ch7-vocab-deck.md](ch7-vocab-deck.md) | Human-readable card list — 15 vocabulary words |
 | [ch7-vocab-deck.txt](ch7-vocab-deck.txt) | Anki import file (File → Import) |
 | [ch7-vocab-deck-fd.txt](ch7-vocab-deck-fd.txt) | Flashcards Deluxe import file |
+| [ch7-article-deck.md](ch7-article-deck.md) | Human-readable card list — 17 cards: complete definite article paradigm (all genders, cases, numbers) |
+| [ch7-article-deck.txt](ch7-article-deck.txt) | Anki import file (File → Import) |
+| [ch7-article-deck-fd.txt](ch7-article-deck-fd.txt) | Flashcards Deluxe import file |
+| [ch7-noun-paradigm-deck.md](ch7-noun-paradigm-deck.md) | Human-readable card list — 30 cards: full inflection of λόγος, γραφή, ὥρα, ἔργον |
+| [ch7-noun-paradigm-deck.txt](ch7-noun-paradigm-deck.txt) | Anki import file (File → Import) |
+| [ch7-noun-paradigm-deck-fd.txt](ch7-noun-paradigm-deck-fd.txt) | Flashcards Deluxe import file |
 
 ### Notebooks
 
