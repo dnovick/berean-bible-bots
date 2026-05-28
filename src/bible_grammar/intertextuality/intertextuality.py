@@ -216,6 +216,37 @@ def print_intertextuality(
     print()
 
 
+# ── Confidence tier ───────────────────────────────────────────────────────────
+
+def _confidence_tier(votes: int) -> str:
+    """Classify a vote score into a scholarly confidence tier."""
+    if votes >= 100:
+        return 'Quote'
+    if votes >= 50:
+        return 'Allusion'
+    return 'Echo'
+
+
+def _short_nt_label(ref: str) -> str:
+    """Abbreviate NT reference: 'Matthew 8:17' → 'Matt 8:17'."""
+    abbrevs = {
+        'Matthew': 'Matt', 'Mark': 'Mark', 'Luke': 'Luke', 'John': 'John',
+        'Acts': 'Acts', 'Romans': 'Rom', '1 Corinthians': '1 Cor',
+        '2 Corinthians': '2 Cor', 'Galatians': 'Gal', 'Ephesians': 'Eph',
+        'Philippians': 'Phil', 'Colossians': 'Col',
+        '1 Thessalonians': '1 Thess', '2 Thessalonians': '2 Thess',
+        '1 Timothy': '1 Tim', '2 Timothy': '2 Tim', 'Titus': 'Titus',
+        'Philemon': 'Phlm', 'Hebrews': 'Heb', 'James': 'Jas',
+        '1 Peter': '1 Pet', '2 Peter': '2 Pet', '1 John': '1 John',
+        '2 John': '2 John', '3 John': '3 John', 'Jude': 'Jude',
+        'Revelation': 'Rev',
+    }
+    for full, short in abbrevs.items():
+        if ref.startswith(full + ' '):
+            return short + ref[len(full):]
+    return ref
+
+
 # ── Network graph ─────────────────────────────────────────────────────────────
 
 def intertextuality_graph(
@@ -225,16 +256,20 @@ def intertextuality_graph(
     verse: int | None = None,
     min_votes: int = 20,
     output_path: str | None = None,
-    figsize: tuple = (14, 9),
-    layout: str = 'spring',   # 'spring' | 'bipartite' | 'shell'
+    figsize: tuple = (16, 10),
+    layout: str = 'bipartite',
 ) -> str:
     """
     Render the OT→NT quotation network as a PNG.
 
     Node types:
-      • OT verses  — square markers, blue
+      • OT verses  — square markers, blue; labelled with verse number only
+                     when chapter scope (e.g. "v.5"), full ref otherwise
       • NT books   — circle markers, coral (book-level aggregation)
       • NT verses  — circle markers, orange (if verse/chapter scope)
+
+    Labels are drawn *outside* the nodes (left of OT, right of NT) so
+    node size no longer limits readability.
 
     Edge weight proportional to vote score.
 
@@ -272,20 +307,11 @@ def intertextuality_graph(
 
     G = nx.DiGraph()
 
-    # Decide granularity: verse-level nodes for chapter/verse scope,
-    # chapter-level for book scope
     book_scope = (chapter is None and verse is None)
-    (chapter is not None and verse is None)
-
-    df['votes'].max()
 
     for _, row in df.iterrows():
         ot_node = row['ot_ref']
-        # NT node: book for full-book scope, verse otherwise
-        if book_scope:
-            nt_node = _book_name(row['nt_book'])
-        else:
-            nt_node = row['nt_ref']
+        nt_node = _book_name(row['nt_book']) if book_scope else row['nt_ref']
 
         if not G.has_node(ot_node):
             G.add_node(ot_node, kind='ot',
@@ -293,32 +319,34 @@ def intertextuality_graph(
         if not G.has_node(nt_node):
             G.add_node(nt_node, kind='nt')
 
-        # Accumulate weight for multi-verse book-scope
         if G.has_edge(ot_node, nt_node):
             G[ot_node][nt_node]['weight'] += row['votes']
             G[ot_node][nt_node]['count'] += 1
         else:
             G.add_edge(ot_node, nt_node, weight=row['votes'], count=1)
 
-    # Layout
     ot_nodes = [n for n, d in G.nodes(data=True) if d.get('kind') == 'ot']
     nt_nodes = [n for n, d in G.nodes(data=True) if d.get('kind') == 'nt']
 
-    if layout == 'bipartite' or True:  # bipartite always looks cleanest
-        pos = {}
-        ot_sorted = sorted(ot_nodes, key=lambda n: (
-            G.nodes[n].get('chapter', 0), G.nodes[n].get('verse', 0)))
-        nt_sorted = sorted(nt_nodes, key=lambda n: _nt_book_order(
-            # recover book_id from display name
-            next((row['nt_book'] for _, row in df.iterrows()
-                  if _book_name(row['nt_book']) == n or row['nt_ref'] == n), n)
-        ))
-        for i, n in enumerate(ot_sorted):
-            pos[n] = (0, -i * (10 / max(len(ot_sorted), 1)))
-        for i, n in enumerate(nt_sorted):
-            pos[n] = (2, -i * (10 / max(len(nt_sorted), 1)))
+    # Bipartite layout — OT left column, NT right column
+    pos = {}
+    ot_sorted = sorted(ot_nodes, key=lambda n: (
+        G.nodes[n].get('chapter', 0), G.nodes[n].get('verse', 0)))
+    nt_sorted = sorted(nt_nodes, key=lambda n: _nt_book_order(
+        next((row['nt_book'] for _, row in df.iterrows()
+              if _book_name(row['nt_book']) == n or row['nt_ref'] == n), n)
+    ))
+    n_ot = max(len(ot_sorted), 1)
+    n_nt = max(len(nt_sorted), 1)
+    for i, n in enumerate(ot_sorted):
+        pos[n] = (0.0, -i * (10 / n_ot))
+    for i, n in enumerate(nt_sorted):
+        pos[n] = (2.0, -i * (10 / n_nt))
 
-    fig, ax = plt.subplots(figsize=figsize)
+    # Auto-scale figure height so rows aren't cramped
+    n_rows = max(n_ot, n_nt)
+    fig_h = max(figsize[1], n_rows * 0.55)
+    fig, ax = plt.subplots(figsize=(figsize[0], fig_h))
 
     # Edge widths and colours
     edges = list(G.edges(data=True))
@@ -327,44 +355,56 @@ def intertextuality_graph(
     edge_widths = [0.5 + 3.5 * (w / max_w) for w in weights]
     edge_alpha = [0.3 + 0.5 * (w / max_w) for w in weights]
 
+    NODE_SIZE = 400
     for (u, v, d), lw, alpha in zip(edges, edge_widths, edge_alpha):
         nx.draw_networkx_edges(G, pos, edgelist=[(u, v)], ax=ax,
                                width=lw, alpha=alpha,
                                edge_color='#0f3460', arrows=True,
                                arrowstyle='->', arrowsize=12,
                                connectionstyle='arc3,rad=0.05',
-                               node_size=800)
-
-    # OT nodes
-    ot_sizes = []
-    for n in ot_nodes:
-        out_w = sum(d['weight'] for _, _, d in G.out_edges(n, data=True))
-        ot_sizes.append(200 + min(out_w * 2, 1200))
+                               node_size=NODE_SIZE)
 
     nx.draw_networkx_nodes(G, pos, nodelist=ot_nodes, ax=ax,
-                           node_color='#4C72B0', node_size=ot_sizes,
+                           node_color='#4C72B0', node_size=NODE_SIZE,
                            node_shape='s', alpha=0.9)
-
-    # NT nodes
-    nt_sizes = []
-    for n in nt_nodes:
-        in_w = sum(d['weight'] for _, _, d in G.in_edges(n, data=True))
-        nt_sizes.append(300 + min(in_w * 2, 1400))
-
     nx.draw_networkx_nodes(G, pos, nodelist=nt_nodes, ax=ax,
-                           node_color='#DD6B48', node_size=nt_sizes,
+                           node_color='#DD6B48', node_size=NODE_SIZE,
                            node_shape='o', alpha=0.9)
 
-    # Labels
-    label_dict = {n: n for n in G.nodes()}
-    nx.draw_networkx_labels(G, pos, labels=label_dict, ax=ax,
-                            font_size=7.5, font_color='white', font_weight='bold')
+    # External labels — left of OT nodes, right of NT nodes
+    LABEL_OFFSET = 0.18
+    for n in ot_sorted:
+        x, y = pos[n]
+        if chapter is not None:
+            label = f"v.{G.nodes[n].get('verse', n)}"
+        else:
+            label = n
+        ax.text(x - LABEL_OFFSET, y, label,
+                ha='right', va='center', fontsize=9,
+                fontweight='bold', color='#1A3A5C')
+    for n in nt_sorted:
+        x, y = pos[n]
+        label = _short_nt_label(n)
+        ax.text(x + LABEL_OFFSET, y, label,
+                ha='left', va='center', fontsize=9, color='#8B3A22')
+
+    # Edge vote labels (confidence tier on high-confidence edges)
+    for u, v, d in edges:
+        tier = _confidence_tier(d['weight'])
+        if tier == 'Quote':
+            mx = (pos[u][0] + pos[v][0]) / 2
+            my = (pos[u][1] + pos[v][1]) / 2
+            ax.text(mx, my, tier, ha='center', va='center', fontsize=6.5,
+                    color='#555555', style='italic',
+                    bbox=dict(boxstyle='round,pad=0.15', fc='white', ec='none', alpha=0.7))
 
     # Legend
     ot_patch = mpatches.Patch(color='#4C72B0', label='OT verse (■)')
-    nt_patch = mpatches.Patch(color='#DD6B48', label='NT ' +
-                              ('book' if book_scope else 'verse') + ' (●)')
-    ax.legend(handles=[ot_patch, nt_patch], loc='lower right', fontsize=9)
+    nt_kind = 'book' if book_scope else 'verse'
+    nt_patch = mpatches.Patch(color='#DD6B48', label=f'NT {nt_kind} (●)')
+    quote_line = mpatches.Patch(color='none', label='Edge width ~ confidence score')
+    ax.legend(handles=[ot_patch, nt_patch, quote_line],
+              loc='lower right', fontsize=8.5, framealpha=0.9)
 
     total_links = len(df)
     ax.set_title(
@@ -372,9 +412,10 @@ def intertextuality_graph(
         f'{total_links} citation{"s" if total_links != 1 else ""}  ·  '
         f'{len(ot_nodes)} OT verse{"s" if len(ot_nodes) != 1 else ""}  →  '
         f'{len(nt_nodes)} NT {"books" if book_scope else "verses"}  '
-        f'(min votes: {min_votes})',
+        f'(confidence threshold: {min_votes})',
         fontsize=10, fontweight='bold', pad=12,
     )
+    ax.set_xlim(-1.8, 3.8)
     ax.axis('off')
     plt.tight_layout()
     plt.savefig(output_path, dpi=150, bbox_inches='tight')
@@ -432,8 +473,26 @@ def intertextuality_report(
         "",
         f"**OT anchor:** {anchor_full}  ",
         f"**NT citations:** {len(df):,}  ",
-        f"**Min confidence votes:** {min_votes}  ",
+        f"**Confidence threshold:** {min_votes}  ",
         f"**NT books covered:** {df['nt_book'].nunique() if not df.empty else 0}  ",
+        "",
+        "## About the Confidence Score",
+        "",
+        "Each OT→NT link is drawn from the"
+        " [scrollmapper / OpenBible.info](https://www.openbible.info/labs/cross-references/)"
+        " cross-reference dataset (CC-BY). The **confidence score** is a community-curated"
+        " integer: every time a scholar or student marks a link as valid, the score"
+        " increments; down-votes decrement it. A higher score therefore reflects"
+        " broader scholarly consensus that the NT author is drawing on the OT passage.",
+        "",
+        "The table below uses the following tiers (following the categories used by"
+        " scholars such as Beale & Carson, *Commentary on the NT Use of the OT*):",
+        "",
+        "| Tier | Score | Meaning |",
+        "|---|---:|---|",
+        "| Quote | ≥ 100 | Direct verbal quotation — high certainty |",
+        "| Allusion | 50–99 | Clear conceptual borrowing, shared vocabulary |",
+        "| Echo | 20–49 | Probable intertextual link, less explicit |",
         "",
     ]
 
@@ -462,26 +521,29 @@ def intertextuality_report(
         lines += [
             "## NT Book Coverage",
             "",
-            "| NT Book | Citations | Total Vote Score |",
+            "| NT Book | Citations | Total Confidence |",
             "|---|---:|---:|",
         ]
         for _, row in nt_counts.iterrows():
-            lines.append(f"| {row['nt_book_name']} | {row['citations']} | {row['total_votes']:,} |")
+            lines.append(
+                f"| {row['nt_book_name']} | {row['citations']} | {row['total_votes']:,} |"
+            )
         lines.append("")
 
         # Full citation table
         lines += [
             "## All Citations",
             "",
-            "| OT Verse | NT Verse | Votes | OT Text | NT Text |",
-            "|---|---|---:|---|---|",
+            "| OT Verse | NT Verse | Confidence | Tier | OT Text | NT Text |",
+            "|---|---|---:|---|---|---|",
         ]
         for _, row in df.iterrows():
             ot_txt = (row['ot_text'][:80] + '...') if len(row['ot_text']) > 80 else row['ot_text']
             nt_txt = (row['nt_text'][:80] + '...') if len(row['nt_text']) > 80 else row['nt_text']
+            tier = _confidence_tier(row['votes'])
             lines.append(
                 f"| {row['ot_ref']} | {row['nt_ref']} | {row['votes']} "
-                f"| {ot_txt} | {nt_txt} |"
+                f"| {tier} | {ot_txt} | {nt_txt} |"
             )
         lines.append("")
 
@@ -498,9 +560,10 @@ def intertextuality_report(
                     "",
                 ]
                 for _, row in sub.iterrows():
+                    tier = _confidence_tier(row['votes'])
                     nt_txt = row['nt_text']
                     lines += [
-                        f"**[{row['nt_ref']}]** (votes: {row['votes']})  ",
+                        f"**[{row['nt_ref']}]** ({tier}, confidence: {row['votes']})  ",
                         f"> {nt_txt}" if nt_txt else "",
                         "",
                     ]
@@ -509,7 +572,8 @@ def intertextuality_report(
         "---",
         "",
         "_Cross-reference data: scrollmapper / OpenBible.info (CC-BY). "
-        "Vote scores reflect community confidence in each link. "
+        "Confidence scores reflect community consensus on each OT→NT link "
+        "(Quote ≥ 100 · Allusion 50–99 · Echo 20–49). "
         "Text: KJV (STEPBible TAHOT/TAGNT CC BY 4.0, Tyndale House Cambridge)._",
     ]
 
