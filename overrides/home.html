@@ -131,11 +131,16 @@
     grid-template-columns: repeat(3, 1fr);
     gap: 1.2rem;
   }
+  @media (max-width: 1000px) {
+    .card-grid[style] { grid-template-columns: repeat(2, 1fr) !important; }
+  }
   @media (max-width: 760px) {
     .card-grid { grid-template-columns: 1fr 1fr; }
+    .card-grid[style] { grid-template-columns: 1fr 1fr !important; }
   }
   @media (max-width: 480px) {
     .card-grid { grid-template-columns: 1fr; }
+    .card-grid[style] { grid-template-columns: 1fr !important; }
   }
   .course-card {
     background: var(--md-default-bg-color);
@@ -210,7 +215,7 @@
 <div class="hero">
   <a href="about-the-logo/" class="logo-link" title="About the Logo"><img src="assets/logo.png" alt="Berean Bible Bots" /></a>
   <h1>Berean Bible Bots</h1>
-  <p>Exercises, flashcard decks, and paradigm references for students of Biblical Hebrew, Aramaic, and Greek — plus statistical reports, Jupyter notebooks, and grammatical analysis tools for exploring patterns across the biblical text.</p>
+  <p>Exercises, flashcard decks, and paradigm references for students of Biblical Hebrew, Aramaic, and Greek — plus grammatical reports, study helps, Jupyter notebooks, and analysis tools for exploring patterns across the biblical text.</p>
   <div class="hero-verse">
     <span class="greek">σπούδασον σεαυτὸν δόκιμον παραστῆσαι τῷ θεῷ, ἐργάτην ἀνεπαίσχυντον, ὀρθοτομοῦντα τὸν λόγον τῆς ἀληθείας.</span>
     "Do your best to present yourself to God as one approved, a worker who has no need to be ashamed, rightly handling the word of truth."
@@ -283,11 +288,16 @@
     <h2 class="audience-heading">For Researchers &amp; Developers</h2>
 
     <div class="home-section">
-      <div class="card-grid">
+      <div class="card-grid" style="grid-template-columns: repeat(4, 1fr);">
         <a class="course-card" href="reports/">
-          <h4>Statistical Reports</h4>
-          <p>50+ reports on Hebrew, Aramaic, LXX, and Greek NT — verb morphology, semantic profiles, intertextuality, book surveys, divine names, and more.</p>
+          <h4>Reports</h4>
+          <p>50+ grammatical and analytical reports on Hebrew, Aramaic, LXX, and Greek NT — verb morphology, semantic profiles, intertextuality, book surveys, divine names, and more.</p>
           <span class="badge badge-alt">Browse reports</span>
+        </a>
+        <a class="course-card" href="study-helps/">
+          <h4>Study Helps</h4>
+          <p>Quick-reference tables and curated notes for Bible study — passage breakdowns, dative inventories, and downloadable charts for teaching and personal use.</p>
+          <span class="badge badge-alt">Browse study helps</span>
         </a>
         <a class="course-card" href="notebooks/">
           <h4>Jupyter Notebooks</h4>
