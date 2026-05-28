@@ -41,34 +41,34 @@ The table below uses the following tiers (following the categories used by schol
 
 ## All Citations
 
-| OT Verse | NT Verse | Confidence | Tier | OT Text | NT Text |
-|---|---|---:|---|---|---|
-| Isaiah 53:4 | 1 Peter 2:24 | 127 | Quote | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | Who the sins of us Himself bore in the body of Him on the tree so that <the> to ... |
-| Isaiah 53:6 | 1 Peter 2:25 | 119 | Quote | all of/ us like <the>/ sheep we have gone astray each to/ own way/ his we have t... | You were for like sheep going astray but you have returned now to the Shepherd a... |
-| Isaiah 53:4 | Matthew 8:17 | 86 | Allusion | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | so that it may be fulfilled that having been spoken through Isaiah the prophet s... |
-| Isaiah 53:7 | Acts 8:32 | 68 | Allusion | he was oppressed and/ he [was] afflicted and/ not he opened mouth/ his like <the... | <the> Now the passage of the Scripture which he was reading was this: As a sheep... |
-| Isaiah 53:6 | Romans 5:8 | 67 | Allusion | all of/ us like <the>/ sheep we have gone astray each to/ own way/ his we have t... | Demonstrates however the His own love to us <the> God, that still sinners when b... |
-| Isaiah 53:7 | John 1:29 | 49 | Echo | he was oppressed and/ he [was] afflicted and/ not he opened mouth/ his like <the... | On the next day he sees <the> John <the> Jesus coming to him and says; Behold th... |
-| Isaiah 53:4 | 2 Corinthians 5:21 | 44 | Echo | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | The [One] for not having known sin for us sin He made, so that we ourselves may ... |
-| Isaiah 53:10 | Matthew 27:46 | 36 | Echo | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | About then the ninth hour cried out <the> Jesus in a voice loud saying; Eli Eli,... |
-| Isaiah 53:2 | John 1:11 | 31 | Echo | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | To <the> [His] own He came, and <the> [His] own Him not received. |
-| Isaiah 53:4 | Hebrews 4:15 | 30 | Echo | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | Not for have we a high priest not being able to sympathize with the weaknesses o... |
-| Isaiah 53:6 | 1 John 1:8 | 30 | Echo | all of/ us like <the>/ sheep we have gone astray each to/ own way/ his we have t... | If we shall say that sin not we have, ourselves we deceive and the truth not is ... |
-| Isaiah 53:1 | John 12:38 | 28 | Echo | who? has he believed <to>/ report/ our and/ [the] arm of Yahweh to whom? has it ... | so that the word of Isaiah the prophet may be fulfilled that said: Lord, who has... |
-| Isaiah 53:2 | Luke 24:46 | 27 | Echo | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | And He said to them that Thus it has been written and thus it was necessary for ... |
-| Isaiah 53:12 | Luke 22:37 | 26 | Echo | <to>/ therefore I will allot a portion to/ him among the/ many [people] and/ wit... | I say for to you that still this which [was] written it behooves to be accomplis... |
-| Isaiah 53:12 | Luke 23:34 | 26 | Echo | <to>/ therefore I will allot a portion to/ him among the/ many [people] and/ wit... | <the> And Jesus was saying; Father, do forgive them; not for they know what they... |
-| Isaiah 53:10 | John 19:30 | 25 | Echo | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | When then took the sour wine <the> Jesus He said; It has been finished. And havi... |
-| Isaiah 53:11 | John 1:29 | 24 | Echo | from/ [the] labor of self/ his he will see he will be satisfied by/ knowledge/ h... | On the next day he sees <the> John <the> Jesus coming to him and says; Behold th... |
-| Isaiah 53:7 | 1 Peter 2:23 | 24 | Echo | he was oppressed and/ he [was] afflicted and/ not he opened mouth/ his like <the... | Who being reviled not was not reviling back suffering not was threatening He was... |
-| Isaiah 53:10 | John 12:24 | 24 | Echo | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | Amen Amen I say to you; only unless the grain <the> of wheat having fallen into ... |
-| Isaiah 53:2 | Philippians 2:7 | 23 | Echo | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | but Himself emptied [the] form of a servant having taken, in [the] likeness of m... |
-| Isaiah 53:12 | Colossians 2:15 | 22 | Echo | <to>/ therefore I will allot a portion to/ him among the/ many [people] and/ wit... | Having disarmed the rulers and the authorities He disgraced [them] in public, ha... |
-| Isaiah 53:10 | 2 Peter 1:17 | 22 | Echo | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | Having received for from God [the] Father honor and glory a voice was brought to... |
-| Isaiah 53:1 | 1 Corinthians 15:3 | 22 | Echo | who? has he believed <to>/ report/ our and/ [the] arm of Yahweh to whom? has it ... | I delivered for to you in [the] foremost what also I received that Christ died f... |
-| Isaiah 53:11 | 1 Peter 2:24 | 21 | Echo | from/ [the] labor of self/ his he will see he will be satisfied by/ knowledge/ h... | Who the sins of us Himself bore in the body of Him on the tree so that <the> to ... |
-| Isaiah 53:9 | 2 Corinthians 5:21 | 21 | Echo | and/ someone assigned with wicked [people] grave/ his and/ with a rich [person] ... | The [One] for not having known sin for us sin He made, so that we ourselves may ... |
-| Isaiah 53:2 | John 1:14 | 20 | Echo | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | And the Word flesh became and He dwelt among us, and we beheld the glory of Him,... |
+| OT Verse | NT Verse | Score | OT Text | NT Text |
+|---|---|---:|---|---|
+| Isaiah 53:4 | 1 Peter 2:24 | 127 | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | Who the sins of us Himself bore in the body of Him on the tree so that <the> to ... |
+| Isaiah 53:6 | 1 Peter 2:25 | 119 | all of/ us like <the>/ sheep we have gone astray each to/ own way/ his we have t... | You were for like sheep going astray but you have returned now to the Shepherd a... |
+| Isaiah 53:4 | Matthew 8:17 | 86 | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | so that it may be fulfilled that having been spoken through Isaiah the prophet s... |
+| Isaiah 53:7 | Acts 8:32 | 68 | he was oppressed and/ he [was] afflicted and/ not he opened mouth/ his like <the... | <the> Now the passage of the Scripture which he was reading was this: As a sheep... |
+| Isaiah 53:6 | Romans 5:8 | 67 | all of/ us like <the>/ sheep we have gone astray each to/ own way/ his we have t... | Demonstrates however the His own love to us <the> God, that still sinners when b... |
+| Isaiah 53:7 | John 1:29 | 49 | he was oppressed and/ he [was] afflicted and/ not he opened mouth/ his like <the... | On the next day he sees <the> John <the> Jesus coming to him and says; Behold th... |
+| Isaiah 53:4 | 2 Corinthians 5:21 | 44 | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | The [One] for not having known sin for us sin He made, so that we ourselves may ... |
+| Isaiah 53:10 | Matthew 27:46 | 36 | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | About then the ninth hour cried out <the> Jesus in a voice loud saying; Eli Eli,... |
+| Isaiah 53:2 | John 1:11 | 31 | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | To <the> [His] own He came, and <the> [His] own Him not received. |
+| Isaiah 53:4 | Hebrews 4:15 | 30 | nevertheless sicknesses/ our he he bore and/ pains/ our he carried/ them and/ we... | Not for have we a high priest not being able to sympathize with the weaknesses o... |
+| Isaiah 53:6 | 1 John 1:8 | 30 | all of/ us like <the>/ sheep we have gone astray each to/ own way/ his we have t... | If we shall say that sin not we have, ourselves we deceive and the truth not is ... |
+| Isaiah 53:1 | John 12:38 | 28 | who? has he believed <to>/ report/ our and/ [the] arm of Yahweh to whom? has it ... | so that the word of Isaiah the prophet may be fulfilled that said: Lord, who has... |
+| Isaiah 53:2 | Luke 24:46 | 27 | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | And He said to them that Thus it has been written and thus it was necessary for ... |
+| Isaiah 53:12 | Luke 22:37 | 26 | <to>/ therefore I will allot a portion to/ him among the/ many [people] and/ wit... | I say for to you that still this which [was] written it behooves to be accomplis... |
+| Isaiah 53:12 | Luke 23:34 | 26 | <to>/ therefore I will allot a portion to/ him among the/ many [people] and/ wit... | <the> And Jesus was saying; Father, do forgive them; not for they know what they... |
+| Isaiah 53:10 | John 19:30 | 25 | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | When then took the sour wine <the> Jesus He said; It has been finished. And havi... |
+| Isaiah 53:11 | John 1:29 | 24 | from/ [the] labor of self/ his he will see he will be satisfied by/ knowledge/ h... | On the next day he sees <the> John <the> Jesus coming to him and says; Behold th... |
+| Isaiah 53:7 | 1 Peter 2:23 | 24 | he was oppressed and/ he [was] afflicted and/ not he opened mouth/ his like <the... | Who being reviled not was not reviling back suffering not was threatening He was... |
+| Isaiah 53:10 | John 12:24 | 24 | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | Amen Amen I say to you; only unless the grain <the> of wheat having fallen into ... |
+| Isaiah 53:2 | Philippians 2:7 | 23 | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | but Himself emptied [the] form of a servant having taken, in [the] likeness of m... |
+| Isaiah 53:12 | Colossians 2:15 | 22 | <to>/ therefore I will allot a portion to/ him among the/ many [people] and/ wit... | Having disarmed the rulers and the authorities He disgraced [them] in public, ha... |
+| Isaiah 53:10 | 2 Peter 1:17 | 22 | and/ Yahweh he desired to crush/ him he made [him] sick if it will make a guilt ... | Having received for from God [the] Father honor and glory a voice was brought to... |
+| Isaiah 53:1 | 1 Corinthians 15:3 | 22 | who? has he believed <to>/ report/ our and/ [the] arm of Yahweh to whom? has it ... | I delivered for to you in [the] foremost what also I received that Christ died f... |
+| Isaiah 53:11 | 1 Peter 2:24 | 21 | from/ [the] labor of self/ his he will see he will be satisfied by/ knowledge/ h... | Who the sins of us Himself bore in the body of Him on the tree so that <the> to ... |
+| Isaiah 53:9 | 2 Corinthians 5:21 | 21 | and/ someone assigned with wicked [people] grave/ his and/ with a rich [person] ... | The [One] for not having known sin for us sin He made, so that we ourselves may ... |
+| Isaiah 53:2 | John 1:14 | 20 | and/ he grew up like <the>/ shoot <to>/ before/ him and/ like <the>/ root from/ ... | And the Word flesh became and He dwelt among us, and we beheld the glory of Him,... |
 
 ## Verse-by-Verse Detail
 
