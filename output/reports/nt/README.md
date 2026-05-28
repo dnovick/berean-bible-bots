@@ -12,6 +12,7 @@ Studies of Greek grammar, vocabulary, and structure in the New Testament.
 
 | Report | Description |
 |---|---|
+| [NT Greek Verb Tense Distribution](verbs/tense-distribution/nt-tense-distribution.md) | Tense rates per 100 verses for all 27 books, with author and genre comparisons, heatmap, scatter, and stacked bar charts |
 | [Greek NT Verb Tense × Voice Heatmap](verbs/greek-nt-tense-voice-heatmap.md) | How tense and voice combinations are distributed across every NT book |
 | [Greek Verb Tense × Voice — Pauline Letters](verbs/greek-pauline-tense-voice-heatmap.md) | The same heatmap filtered to Paul's letters |
 | [Greek Aorist Passive Verbs by NT Book](verbs/greek-aorist-passives-by-nt-book.md) | Count and distribution of aorist passive forms across the NT |
