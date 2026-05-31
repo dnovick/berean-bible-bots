@@ -81,13 +81,13 @@ The root meaning is physical pressure or constriction (from θλίβω, to press
 
 | Reference | KJV |
 |---|---|
-| John 16:33 | These things I have spoken to you so that in Me myself peace you may have. In the world tribulation you have; But take c… |
-| Acts 14:22 | strengthening the souls of the disciples, exhorting [them] to continue in the faith and that through many tribulations i… |
-| Romans 5:3 | Not only [so] now, but also we glory in <the> tribulations knowing that <the> tribulation perseverance produces, |
-| Romans 8:35 | Who us will separate from the love <the> of Christ? Tribulation or distress or persecution or famine or nakedness or dan… |
-| 2 Cor 1:4 | who is comforting us in all the tribulation of us for <the> to be able us to comfort those in every tribulation through … |
-| 1 Thess 3:3 | <the> no one [is] to be moved by <the> tribulations these; Yourselves for you know that for this we are destined; |
-| Revelation 7:14 | And I have said to him; lord of mine, you yourself know. And he said to me; These are the [ones] coming out of the tribu… |
+| John 16:33 | These things I have spoken unto you, that in me ye might have peace. In the world ye shall have tribulation: but be of g… |
+| Acts 14:22 | Confirming the souls of the disciples, and exhorting them to continue in the faith, and that we must through much tribul… |
+| Romans 5:3 | And not only so, but we glory in tribulations also: knowing that tribulation worketh patience; |
+| Romans 8:35 | Who shall separate us from the love of Christ? shall tribulation, or distress, or persecution, or famine, or nakedness, … |
+| 2 Cor 1:4 | Who comforteth us in all our tribulation, that we may be able to comfort them which are in any trouble, by the comfort w… |
+| 1 Thess 3:3 | That no man should be moved by these afflictions: for yourselves know that we are appointed thereunto. |
+| Revelation 7:14 | And I said unto him, Sir, thou knowest. And he said to me, These are they which came out of great tribulation, and have … |
 
 ---
 
@@ -104,15 +104,15 @@ The root meaning is physical pressure or constriction (from θλίβω, to press
 
 | Reference | KJV |
 |---|---|
-| Luke 24:26 | Surely these things it was necessary for to suffer the Christ and to enter into the glory of Him? |
-| Acts 17:3 | opening and setting forth that the Christ it was being necessary to have suffered and to have risen out from [the] dead … |
-| Romans 8:17 | If now children, also heirs; heirs indeed of God joint-heirs however of Christ; if indeed we suffer with [Him] so that a… |
-| 2 Cor 1:5 | because even as abound the sufferings of the Christ toward us, thus so through <the> Christ abounds also the comfort of … |
-| Philippians 1:29 | For to you it has been granted <the> concerning Christ, not only <the> in Him to believe, but also <the> concerning Him … |
-| Philippians 3:10 | <the> to know Him and the power of the resurrection of Him and the fellowship of the sufferings of Him being conformed t… |
-| 1 Peter 2:21 | To this hereunto for you have been called, because also Christ suffered for for you, you leaving an example that you may… |
-| 1 Peter 4:1 | Christ therefore having suffered for of us in [the] flesh also you yourselves the same mind do arm yourselves with, beca… |
-| Hebrews 5:8 | though being a Son, He learned from [the] things He suffered <the> obedience, |
+| Luke 24:26 | Ought not Christ to have suffered these things, and to enter into his glory? |
+| Acts 17:3 | Opening and alleging, that Christ must needs have suffered, and risen again from the dead; and that this Jesus, whom I p… |
+| Romans 8:17 | And if children, then heirs; heirs of God, and joint-heirs with Christ; if so be that we suffer with him, that we may be… |
+| 2 Cor 1:5 | For as the sufferings of Christ abound in us, so our consolation also aboundeth by Christ. |
+| Philippians 1:29 | For unto you it is given in the behalf of Christ, not only to believe on him, but also to suffer for his sake; |
+| Philippians 3:10 | That I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable unt… |
+| 1 Peter 2:21 | For even hereunto were ye called: because Christ also suffered for us, leaving us an example, that ye should follow his … |
+| 1 Peter 4:1 | Forasmuch then as Christ hath suffered for us in the flesh, arm yourselves likewise with the same mind: for he that hath… |
+| Hebrews 5:8 | Though he were a Son, yet learned he obedience by the things which he suffered; |
 
 ---
 
@@ -127,12 +127,12 @@ The root meaning is physical pressure or constriction (from θλίβω, to press
 
 | Reference | KJV |
 |---|---|
-| Matthew 5:10 | Blessed [are] those persecuted on account of righteousness, for theirs is the kingdom of the heavens. |
-| Matthew 13:21 | no he has now root in himself but temporary is. when is coming however tribulation or persecution on account of the word… |
-| Romans 8:35 | Who us will separate from the love <the> of Christ? Tribulation or distress or persecution or famine or nakedness or dan… |
-| 2 Cor 12:10 | Therefore I take pleasure in weaknesses, in insults, in hardships, in persecutions and difficulties for Christ; when for… |
-| 2 Tim 3:12 | Also all now those desiring piously to live in Christ Jesus will be persecuted. |
-| Hebrews 10:33 | this indeed by revilings both and by tribulations being made a spectacle, this however partners of those thus passing th… |
+| Matthew 5:10 | Blessed are they which are persecuted for righteousness’ sake: for theirs is the kingdom of heaven. |
+| Matthew 13:21 | Yet hath he not root in himself, but dureth for a while: for when tribulation or persecution ariseth because of the word… |
+| Romans 8:35 | Who shall separate us from the love of Christ? shall tribulation, or distress, or persecution, or famine, or nakedness, … |
+| 2 Cor 12:10 | Therefore I take pleasure in infirmities, in reproaches, in necessities, in persecutions, in distresses for Christ’s sak… |
+| 2 Tim 3:12 | Yea, and all that will live godly in Christ Jesus shall suffer persecution. |
+| Hebrews 10:33 | Partly, whilst ye were made a gazingstock both by reproaches and afflictions; and partly, whilst ye became companions of… |
 
 ---
 
@@ -145,12 +145,12 @@ The root meaning is physical pressure or constriction (from θλίβω, to press
 
 | Reference | KJV |
 |---|---|
-| Romans 5:3 | Not only [so] now, but also we glory in <the> tribulations knowing that <the> tribulation perseverance produces, |
-| Romans 5:4 | <the> And perseverance character, <the> and character hope; |
-| Hebrews 10:36 | Of endurance for You have need, so that the will <the> of God having done you may receive the promise. |
-| Hebrews 12:1 | Therefore also we ourselves such a great having encompassing us a cloud of witnesses, weight having laid aside every and… |
-| James 1:3 | knowing that the testing of your <the> faith produces endurance; |
-| Revelation 13:10 | If anyone into captivity gathers into captivity he goes, If anyone with [the] sword is to be killed, it is necessary for… |
+| Romans 5:3 | And not only so, but we glory in tribulations also: knowing that tribulation worketh patience; |
+| Romans 5:4 | And patience, experience; and experience, hope: |
+| Hebrews 10:36 | For ye have need of patience, that, after ye have done the will of God, ye might receive the promise. |
+| Hebrews 12:1 | Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the … |
+| James 1:3 | Knowing this, that the trying of your faith worketh patience. |
+| Revelation 13:10 | He that leadeth into captivity shall go into captivity: he that killeth with the sword must be killed with the sword. He… |
 
 ---
 
@@ -163,12 +163,12 @@ The root meaning is physical pressure or constriction (from θλίβω, to press
 
 | Reference | KJV |
 |---|---|
-| James 1:2 | All joy do esteem [it], brothers of mine, when trials you may fall into various, |
-| James 1:12 | Blessed [is the] man who endures trial, because approved having been he will receive the crown <the> of life that He has… |
-| 1 Peter 1:6 | in which you greatly rejoice for a little while at present, if being necessary it is, having been put to grief by variou… |
-| 1 Peter 1:7 | so that the proven genuineness of your <the> faith more precious than gold which is perishing through fire though being … |
-| Romans 5:4 | <the> And perseverance character, <the> and character hope; |
-| 2 Cor 8:2 | that in much proof of tribulation the excess of the joy of them and <the> of deep poverty of them abounded into the rich… |
+| James 1:2 | My brethren, count it all joy when ye fall into divers temptations; |
+| James 1:12 | Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which the Lord ha… |
+| 1 Peter 1:6 | Wherein ye greatly rejoice, though now for a season, if need be, ye are in heaviness through manifold temptations: |
+| 1 Peter 1:7 | That the trial of your faith, being much more precious than of gold that perisheth, though it be tried with fire, might … |
+| Romans 5:4 | And patience, experience; and experience, hope: |
+| 2 Cor 8:2 | How that in a great trial of affliction the abundance of their joy and their deep poverty abounded unto the riches of th… |
 
 ---
 
@@ -180,14 +180,14 @@ The NT is unanimous that Christ's sufferings were not merely biographical events
 
 | Reference | KJV |
 |---|---|
-| Luke 24:26 | Surely these things it was necessary for to suffer the Christ and to enter into the glory of Him? |
-| Luke 24:46 | And He said to them that Thus it has been written and thus it was necessary for Was to suffer the Christ and to rise out… |
-| Acts 17:3 | opening and setting forth that the Christ it was being necessary to have suffered and to have risen out from [the] dead … |
-| Acts 3:18 | <the> But God who foretold through [the] mouth of all the prophets [the] suffering [of] the Christ of Him He has fulfill… |
-| Hebrews 2:10 | It was fitting for to Him, for whom [are] <the> all things and through whom [are] <the> all things, many sons to glory h… |
-| Hebrews 5:8 | though being a Son, He learned from [the] things He suffered <the> obedience, |
-| 1 Peter 1:11 | inquiring into what or what manner of time was signifying the in them Spirit of Christ testifying beforehand <the> unto … |
-| 1 Peter 2:21 | To this hereunto for you have been called, because also Christ suffered for for you, you leaving an example that you may… |
+| Luke 24:26 | Ought not Christ to have suffered these things, and to enter into his glory? |
+| Luke 24:46 | And said unto them, Thus it is written, and thus it behoved Christ to suffer, and to rise from the dead the third day: |
+| Acts 17:3 | Opening and alleging, that Christ must needs have suffered, and risen again from the dead; and that this Jesus, whom I p… |
+| Acts 3:18 | But those things, which God before had shewed by the mouth of all his prophets, that Christ should suffer, he hath so fu… |
+| Hebrews 2:10 | For it became him, for whom are all things, and by whom are all things, in bringing many sons unto glory, to make the ca… |
+| Hebrews 5:8 | Though he were a Son, yet learned he obedience by the things which he suffered; |
+| 1 Peter 1:11 | Searching what, or what manner of time the Spirit of Christ which was in them did signify, when it testified beforehand … |
+| 1 Peter 2:21 | For even hereunto were ye called: because Christ also suffered for us, leaving us an example, that ye should follow his … |
 
 > **Note:** Luke 24:26 ("Ought not Christ to have suffered these things, and to enter into his glory?") uses ἔδει — the imperfect of necessity. This is not regret but divine necessity: the suffering was the appointed path to the glory. The identical structure (suffering → glory) is then applied to believers in Rom 8:17, 1 Pet 5:10, and Rev 7:14.
 
@@ -237,49 +237,49 @@ The NT is explicit that God's purposes in the suffering of believers are product
 
 | Reference | KJV |
 |---|---|
-| Romans 5:3 | Not only [so] now, but also we glory in <the> tribulations knowing that <the> tribulation perseverance produces, |
-| Romans 8:17 | If now children, also heirs; heirs indeed of God joint-heirs however of Christ; if indeed we suffer with [Him] so that a… |
-| Romans 8:18 | I reckon for that not comparable the sufferings of the present time [are] to the coming glory to be revealed to us. |
-| 2 Cor 1:5 | because even as abound the sufferings of the Christ toward us, thus so through <the> Christ abounds also the comfort of … |
-| 2 Cor 4:17 | The for momentary lightness the affliction of us far surpassing to excessiveness an eternal weight of glory is producing… |
-| 2 Cor 12:9 | And He has said to me; Suffices you the grace of Mine; the for power of mine in weakness is finished. Most gladly theref… |
-| Philippians 1:29 | For to you it has been granted <the> concerning Christ, not only <the> in Him to believe, but also <the> concerning Him … |
-| Philippians 3:10 | <the> to know Him and the power of the resurrection of Him and the fellowship of the sufferings of Him being conformed t… |
-| Colossians 1:24 | Now I rejoice in the sufferings of mine for you and I am filling up that which is lacking of the tribulations <the> of C… |
-| 2 Tim 3:12 | Also all now those desiring piously to live in Christ Jesus will be persecuted. |
+| Romans 5:3 | And not only so, but we glory in tribulations also: knowing that tribulation worketh patience; |
+| Romans 8:17 | And if children, then heirs; heirs of God, and joint-heirs with Christ; if so be that we suffer with him, that we may be… |
+| Romans 8:18 | For I reckon that the sufferings of this present time are not worthy to be compared with the glory which shall be reveal… |
+| 2 Cor 1:5 | For as the sufferings of Christ abound in us, so our consolation also aboundeth by Christ. |
+| 2 Cor 4:17 | For our light affliction, which is but for a moment, worketh for us a far more exceeding and eternal weight of glory; |
+| 2 Cor 12:9 | And he said unto me, My grace is sufficient for thee: for my strength is made perfect in weakness. Most gladly therefore… |
+| Philippians 1:29 | For unto you it is given in the behalf of Christ, not only to believe on him, but also to suffer for his sake; |
+| Philippians 3:10 | That I may know him, and the power of his resurrection, and the fellowship of his sufferings, being made conformable unt… |
+| Colossians 1:24 | Who now rejoice in my sufferings for you, and fill up that which is behind of the afflictions of Christ in my flesh for … |
+| 2 Tim 3:12 | Yea, and all that will live godly in Christ Jesus shall suffer persecution. |
 
 ### Hebrews
 
 | Reference | KJV |
 |---|---|
-| Hebrews 2:10 | It was fitting for to Him, for whom [are] <the> all things and through whom [are] <the> all things, many sons to glory h… |
-| Hebrews 5:8 | though being a Son, He learned from [the] things He suffered <the> obedience, |
-| Hebrews 10:36 | Of endurance for You have need, so that the will <the> of God having done you may receive the promise. |
-| Hebrews 12:1 | Therefore also we ourselves such a great having encompassing us a cloud of witnesses, weight having laid aside every and… |
-| Hebrews 12:10 | <the> Indeed for during a few days according to which is seeming good to them they were disciplining [us], [He] however … |
-| Hebrews 12:11 | All now discipline for indeed those being present not it seems of joy to be but of grief, afterward however [the] fruit … |
+| Hebrews 2:10 | For it became him, for whom are all things, and by whom are all things, in bringing many sons unto glory, to make the ca… |
+| Hebrews 5:8 | Though he were a Son, yet learned he obedience by the things which he suffered; |
+| Hebrews 10:36 | For ye have need of patience, that, after ye have done the will of God, ye might receive the promise. |
+| Hebrews 12:1 | Wherefore seeing we also are compassed about with so great a cloud of witnesses, let us lay aside every weight, and the … |
+| Hebrews 12:10 | For they verily for a few days chastened us after their own pleasure; but he for our profit, that we might be partakers … |
+| Hebrews 12:11 | Now no chastening for the present seemeth to be joyous, but grievous: nevertheless afterward it yieldeth the peaceable f… |
 
 ### 1 Peter
 
 | Reference | KJV |
 |---|---|
-| 1 Peter 1:6 | in which you greatly rejoice for a little while at present, if being necessary it is, having been put to grief by variou… |
-| 1 Peter 1:7 | so that the proven genuineness of your <the> faith more precious than gold which is perishing through fire though being … |
-| 1 Peter 2:21 | To this hereunto for you have been called, because also Christ suffered for for you, you leaving an example that you may… |
-| 1 Peter 3:17 | [It is] better for doing good if one would desire the will <the> of God, to suffer than doing evil; |
-| 1 Peter 4:1 | Christ therefore having suffered for of us in [the] flesh also you yourselves the same mind do arm yourselves with, beca… |
-| 1 Peter 4:13 | But as you have shared in the <the> of Christ sufferings do rejoice, so that also in the revelation of the glory of Him … |
-| 1 Peter 4:16 | if however as a Christian, not he should be ashamed, he should glorify however <the> God in <the> name this. |
-| 1 Peter 5:10 | The now God of all grace the [one] having called you to the eternal of Him glory in Christ Jesus a little while [of you]… |
+| 1 Peter 1:6 | Wherein ye greatly rejoice, though now for a season, if need be, ye are in heaviness through manifold temptations: |
+| 1 Peter 1:7 | That the trial of your faith, being much more precious than of gold that perisheth, though it be tried with fire, might … |
+| 1 Peter 2:21 | For even hereunto were ye called: because Christ also suffered for us, leaving us an example, that ye should follow his … |
+| 1 Peter 3:17 | For it is better, if the will of God be so, that ye suffer for well doing, than for evil doing. |
+| 1 Peter 4:1 | Forasmuch then as Christ hath suffered for us in the flesh, arm yourselves likewise with the same mind: for he that hath… |
+| 1 Peter 4:13 | But rejoice, inasmuch as ye are partakers of Christ’s sufferings; that, when his glory shall be revealed, ye may be glad… |
+| 1 Peter 4:16 | Yet if any man suffer as a Christian, let him not be ashamed; but let him glorify God on this behalf. |
+| 1 Peter 5:10 | But the God of all grace, who hath called us unto his eternal glory by Christ Jesus, after that ye have suffered a while… |
 
 ### James
 
 | Reference | KJV |
 |---|---|
-| James 1:2 | All joy do esteem [it], brothers of mine, when trials you may fall into various, |
-| James 1:3 | knowing that the testing of your <the> faith produces endurance; |
-| James 1:4 | <the> And endurance work [its] perfect should have, so that you may be perfect and complete in nothing lacking. |
-| James 1:12 | Blessed [is the] man who endures trial, because approved having been he will receive the crown <the> of life that He has… |
+| James 1:2 | My brethren, count it all joy when ye fall into divers temptations; |
+| James 1:3 | Knowing this, that the trying of your faith worketh patience. |
+| James 1:4 | But let patience have her perfect work, that ye may be perfect and entire, wanting nothing. |
+| James 1:12 | Blessed is the man that endureth temptation: for when he is tried, he shall receive the crown of life, which the Lord ha… |
 
 ---
 
