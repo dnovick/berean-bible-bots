@@ -42,6 +42,14 @@ Maps how OT passages are echoed or quoted in the NT, using alignment data.
 
 ---
 
+## Messianic Prophecy
+
+| Report | Description |
+|---|---|
+| [First-Coming Messianic Prophecy Density](messianic-prophecy/messianic-prophecy-density.md) | Distribution of NT-cited messianic prophecies across OT books — count, density per 100 verses, stacked by category (Lineage, Birth, Ministry, Passion, Death, Resurrection) |
+
+---
+
 ## Genre Comparison
 
 | Report | Description |
