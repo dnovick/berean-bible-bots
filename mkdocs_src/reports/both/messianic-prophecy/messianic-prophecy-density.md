@@ -9,7 +9,7 @@
 - [Key Observations](#key-observations)
 - [Density by Book — Charts](#density-by-book--charts)
 - [Density Table](#density-table)
-- [Full Prophecy List](#full-prophecy-list)
+- [Full Prophecy and Type List](#full-prophecy-and-type-list)
 
 ---
 
@@ -17,18 +17,23 @@
 
 This study charts the distribution of **first-coming messianic prophecies** across the Old Testament. "First coming" covers the full arc of Christ's earthly ministry: his lineage and identity, birth and early life, ministry and mission, triumphal entry and passion, death and burial, and resurrection and exaltation.
 
-The dataset is drawn from prophecies **explicitly cited or applied to Jesus in the NT** — not a general list of typological or thematic correspondences, but references where an NT author names a specific OT text as fulfilled in Christ. Each prophecy is classified into one of six thematic categories.
+The dataset is drawn from two sources:
 
-**Total prophecies charted:** 83  
-**OT books represented:** 13
+1. **Direct prophecies** — OT passages where an NT author explicitly names the text as fulfilled in Christ's first coming (e.g. Matt 1:22–23 citing Isa 7:14; Acts 2:27–31 citing Psa 16:10).
+2. **NT-applied types** — OT institutions or events where an NT author explicitly identifies the OT element as a type or pattern of Christ (e.g. Jesus himself identifying Jonah's three days, Matt 12:40; Paul calling Christ "our passover," 1 Cor 5:7; Hebrews identifying the high-priestly ritual as a type of Christ's atoning work, Heb 9:11–12).
 
-> **Methodological note:** Prophecy counts are intentionally conservative — only passages where an NT author cites or applies the OT text to Christ's first coming are included. Widely accepted typological correspondences (e.g. the Passover lamb, Jonah's three days) that are not explicitly cited are excluded. This keeps the dataset anchored to NT exegesis rather than scholarly inference.
+Each entry is classified into one of six thematic categories.
+
+**Total prophecies and types charted:** 93  
+**OT books represented:** 16
+
+> **Methodological note:** Both categories are anchored to NT exegesis — no entry relies solely on scholarly inference or thematic analogy. Every entry has a specific NT text that names, cites, or applies the OT passage to Christ's first coming.
 
 ---
 
 ## Key Observations
 
-- **Isaiah (27 prophecies)** has the most first-coming prophecies in absolute terms. This reflects the book's breadth — lament Psalms (Psa 22, 69) prefigure the passion in detail; the royal Psalms (Psa 2, 110) ground the resurrection and exaltation. The NT cites the Psalms more than any other OT book.
+- **Isaiah (28 prophecies)** has the most first-coming prophecies in absolute terms. This reflects the book's breadth — lament Psalms (Psa 22, 69) prefigure the passion in detail; the royal Psalms (Psa 2, 110) ground the resurrection and exaltation. The NT cites the Psalms more than any other OT book.
 
 - **Malachi (density: 5.5 per 100 verses)** has the highest prophecy density. Its brevity combined with concentrated messianic content — especially Malachi 3:1 and 4:5 (the forerunner) — makes it the densest prophetic book per verse.
 
@@ -38,7 +43,9 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 
 - **Zechariah** is remarkable for its density of passion and entry prophecies: the king on a donkey (9:9), thirty pieces of silver (11:12–13), striking the shepherd (13:7), and looking on the one they pierced (12:10) — all explicitly cited in the passion narratives.
 
-- **The Torah** contributes foundational prophecies (Gen 3:15; 49:10; Num 24:17) but at low density — consistent with the progressive pattern of revelation.
+- **The Torah** contributes both foundational prophecies (Gen 3:15; 49:10; Num 24:17) and the densest concentration of NT-applied types: the Passover lamb (Exo 12; 1 Cor 5:7; 1 Pet 1:19), the bronze serpent (Num 21:9; John 3:14–15), the Day of Atonement ritual (Lev 16; Heb 9), the firstfruits offering (Lev 23; 1 Cor 15:20), and Melchizedek (Gen 14; Heb 7). The Law is lower in direct predictive prophecy but remarkably high in typological prefiguration.
+
+- **Jonah** now appears for the first time: Jesus himself named Jonah's three days as the sign of the Son of Man (Matt 12:39–40) — making it one of the most dominically authenticated typological connections in the Gospels.
 
 ---
 
@@ -54,15 +61,18 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 
 | Book | Total | Density (per 100 vv) | Lin & Id | Birth | Ministry | Passion | Death | Res & Ex |
 |---|---:|---:|---:|---:|---:|---:|---:|---:|
-| Genesis | 4 | 0.3 | 4 | 0 | 0 | 0 | 0 | 0 |
-| Numbers | 1 | 0.1 | 1 | 0 | 0 | 0 | 0 | 0 |
+| Genesis | 5 | 0.3 | 5 | 0 | 0 | 0 | 0 | 0 |
+| Exodus | 2 | 0.2 | 1 | 0 | 0 | 0 | 1 | 0 |
+| Leviticus | 3 | 0.3 | 0 | 0 | 0 | 0 | 2 | 1 |
+| Numbers | 2 | 0.2 | 1 | 0 | 1 | 0 | 0 | 0 |
 | 2 Samuel | 3 | 0.4 | 3 | 0 | 0 | 0 | 0 | 0 |
 | Psalms | 26 | 1.0 | 5 | 0 | 5 | 5 | 6 | 5 |
-| Isaiah | 27 | 2.1 | 3 | 3 | 9 | 4 | 6 | 2 |
-| Jeremiah | 3 | 0.2 | 2 | 1 | 0 | 0 | 0 | 0 |
+| Isaiah | 28 | 2.2 | 3 | 3 | 9 | 4 | 7 | 2 |
+| Jeremiah | 4 | 0.3 | 2 | 1 | 0 | 0 | 0 | 1 |
 | Daniel | 3 | 0.8 | 0 | 0 | 1 | 0 | 0 | 2 |
 | Hosea | 1 | 0.5 | 0 | 1 | 0 | 0 | 0 | 0 |
 | Amos | 1 | 0.7 | 0 | 0 | 0 | 0 | 1 | 0 |
+| Jonah | 1 | 2.1 | 0 | 0 | 1 | 0 | 0 | 0 |
 | Micah | 2 | 1.9 | 1 | 1 | 0 | 0 | 0 | 0 |
 | Habakkuk | 1 | 1.8 | 0 | 0 | 0 | 0 | 0 | 1 |
 | Zechariah | 8 | 3.8 | 2 | 0 | 3 | 1 | 1 | 1 |
@@ -70,7 +80,7 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 
 ---
 
-## Full Prophecy List
+## Full Prophecy and Type List
 
 ### Lineage & Identity
 
@@ -78,6 +88,7 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 |---|---|
 | Gen 3:15 | Offspring of woman crushing serpent — Gal 4:4; Rev 12 |
 | Gen 12:3 | All nations blessed in Abraham's seed — Acts 3:25; Gal 3:16 |
+| Gen 14:18 | Melchizedek: priest of God Most High, type of Christ's eternal priesthood — Heb 7:1–3, 15–17 |
 | Gen 17:19 | Through Isaac — Luke 3:34; Gal 4:28 |
 | Gen 49:10 | Scepter from Judah — Matt 1:2–3; Heb 7:14; Rev 5:5 |
 | Num 24:17 | Star out of Jacob — Matt 2:2; Rev 22:16 |
@@ -97,6 +108,7 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 | Mic 5:2 | Ruler from Bethlehem; goings forth from everlasting — Matt 2:6 |
 | Zec 3:8 | "My servant the Branch" — John 10:11; Rev 5:5 |
 | Zec 6:12 | The man whose name is Branch — John 10:11 |
+| Exo 12:46 | Passover lamb: no bone broken — John 19:36; 1 Cor 5:7 ("Christ our passover") |
 
 ### Birth & Early Life
 
@@ -115,6 +127,8 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 
 | OT Reference | NT Fulfillment / Application |
 |---|---|
+| Num 21:9 | Bronze serpent lifted up: type of crucifixion and healing — John 3:14–15 |
+| Jon 1:17 | Jonah three days in the fish: sign of death and resurrection — Matt 12:39–40; 16:4; Luke 11:29–30 |
 | Psa 40:7-8 | "I come to do your will" — Heb 10:7 |
 | Psa 78:2 | Teaching in parables — Matt 13:35 |
 | Isa 42:1 | Servant; Spirit upon him — Matt 12:18–21 |
@@ -153,6 +167,10 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 
 | OT Reference | NT Fulfillment / Application |
 |---|---|
+| Exo 12:3 | Passover lamb slain: Christ as sacrificial Lamb — 1 Cor 5:7; 1 Pet 1:19; John 1:29 |
+| Lev 16:15 | High priest enters Most Holy with blood: type of Christ's atoning sacrifice — Heb 9:7, 11–12, 24–26 |
+| Lev 17:11 | "Life of the flesh is in the blood": ground of atonement — Heb 9:22 |
+| Isa 52:14 | His appearance marred more than any man — Matt 27:27–30; John 19:1–3 |
 | Psa 22:1 | "My God, my God, why hast thou forsaken me" — Matt 27:46; Mark 15:34 |
 | Psa 22:16 | Hands and feet pierced — John 20:25; Luke 24:39 |
 | Psa 22:17 | Can count all my bones; stare and gloat — John 19:36 |
@@ -172,6 +190,8 @@ The dataset is drawn from prophecies **explicitly cited or applied to Jesus in t
 
 | OT Reference | NT Fulfillment / Application |
 |---|---|
+| Lev 23:10 | Firstfruits offering: type of Christ's resurrection as firstfruits — 1 Cor 15:20, 23 |
+| Jer 31:31 | New covenant promised — Luke 22:20; Heb 8:8–12; 9:15; 10:16–17 |
 | Psa 16:10 | "Not leave my soul in Sheol; not see corruption" — Acts 2:27, 31; 13:35 |
 | Psa 16:11 | "Path of life; fullness of joy" — Acts 2:28 |
 | Psa 2:8 | Nations given as inheritance — Rom 4:13; Rev 2:27; 12:5 |

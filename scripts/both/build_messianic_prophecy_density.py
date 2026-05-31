@@ -61,6 +61,8 @@ PROPHECIES: list[tuple[str, str, int, int, str, str]] = [
      'Offspring of woman crushing serpent — Gal 4:4; Rev 12'),
     ('Gen 12:3',    'Gen', 12,  3, 'Lineage & Identity',
      'All nations blessed in Abraham\'s seed — Acts 3:25; Gal 3:16'),
+    ('Gen 14:18',   'Gen', 14, 18, 'Lineage & Identity',
+     'Melchizedek: priest of God Most High, type of Christ\'s eternal priesthood — Heb 7:1–3, 15–17'),
     ('Gen 17:19',   'Gen', 17, 19, 'Lineage & Identity',
      'Through Isaac — Luke 3:34; Gal 4:28'),
     ('Gen 49:10',   'Gen', 49, 10, 'Lineage & Identity',
@@ -99,6 +101,10 @@ PROPHECIES: list[tuple[str, str, int, int, str, str]] = [
      '"My servant the Branch" — John 10:11; Rev 5:5'),
     ('Zec 6:12',    'Zec',  6, 12, 'Lineage & Identity',
      'The man whose name is Branch — John 10:11'),
+    ('Exo 12:46',   'Exo', 12, 46, 'Lineage & Identity',
+     'Passover lamb: no bone broken — John 19:36; 1 Cor 5:7 ("Christ our passover")'),
+    ('Num 21:9',    'Num', 21,  9, 'Ministry & Mission',
+     'Bronze serpent lifted up: type of crucifixion and healing — John 3:14–15'),
     # ── Birth & Early Life ────────────────────────────────────────────────────
     ('Isa 7:14',    'Isa',  7, 14, 'Birth & Early Life',
      'Virgin conceives, bears Immanuel — Matt 1:22–23'),
@@ -117,6 +123,8 @@ PROPHECIES: list[tuple[str, str, int, int, str, str]] = [
     ('Isa 9:1-2',   'Isa',  9,  1, 'Birth & Early Life',
      'Light to Galilee, land of shadow — Matt 4:14–16'),
     # ── Ministry & Mission ────────────────────────────────────────────────────
+    ('Jon 1:17',    'Jon',  1, 17, 'Ministry & Mission',
+     'Jonah three days in the fish: sign of death and resurrection — Matt 12:39–40; 16:4; Luke 11:29–30'),
     ('Psa 40:7-8',  'Psa', 40,  7, 'Ministry & Mission',
      '"I come to do your will" — Heb 10:7'),
     ('Psa 78:2',    'Psa', 78,  2, 'Ministry & Mission',
@@ -175,6 +183,14 @@ PROPHECIES: list[tuple[str, str, int, int, str, str]] = [
     ('Isa 53:12',   'Isa', 53, 12, 'Entry & Passion',
      'Numbered with transgressors — Luke 22:37; Mark 15:28'),
     # ── Death & Burial ────────────────────────────────────────────────────────
+    ('Exo 12:3',    'Exo', 12,  3, 'Death & Burial',
+     'Passover lamb slain: Christ as sacrificial Lamb — 1 Cor 5:7; 1 Pet 1:19; John 1:29'),
+    ('Lev 16:15',   'Lev', 16, 15, 'Death & Burial',
+     'High priest enters Most Holy with blood: type of Christ\'s atoning sacrifice — Heb 9:7, 11–12, 24–26'),
+    ('Lev 17:11',   'Lev', 17, 11, 'Death & Burial',
+     '"Life of the flesh is in the blood": ground of atonement — Heb 9:22'),
+    ('Isa 52:14',   'Isa', 52, 14, 'Death & Burial',
+     'His appearance marred more than any man — Matt 27:27–30; John 19:1–3'),
     ('Psa 22:1',    'Psa', 22,  1, 'Death & Burial',
      '"My God, my God, why hast thou forsaken me" — Matt 27:46; Mark 15:34'),
     ('Psa 22:16',   'Psa', 22, 16, 'Death & Burial',
@@ -204,6 +220,10 @@ PROPHECIES: list[tuple[str, str, int, int, str, str]] = [
     ('Amos 8:9',    'Amo',  8,  9, 'Death & Burial',
      'Sun goes dark at noon — Matt 27:45; Luke 23:44'),
     # ── Resurrection & Exaltation ─────────────────────────────────────────────
+    ('Lev 23:10',   'Lev', 23, 10, 'Resurrection & Exaltation',
+     'Firstfruits offering: type of Christ\'s resurrection as firstfruits — 1 Cor 15:20, 23'),
+    ('Jer 31:31',   'Jer', 31, 31, 'Resurrection & Exaltation',
+     'New covenant promised — Luke 22:20; Heb 8:8–12; 9:15; 10:16–17'),
     ('Psa 16:10',   'Psa', 16, 10, 'Resurrection & Exaltation',
      '"Not leave my soul in Sheol; not see corruption" — Acts 2:27, 31; 13:35'),
     ('Psa 16:11',   'Psa', 16, 11, 'Resurrection & Exaltation',
@@ -373,7 +393,7 @@ def build_report(summary: pd.DataFrame) -> Path:
         '- [Key Observations](#key-observations)',
         '- [Density by Book — Charts](#density-by-book--charts)',
         '- [Density Table](#density-table)',
-        '- [Full Prophecy List](#full-prophecy-list)',
+        '- [Full Prophecy and Type List](#full-prophecy-and-type-list)',
         '',
         '---',
         '',
@@ -385,21 +405,27 @@ def build_report(summary: pd.DataFrame) -> Path:
         ' ministry and mission, triumphal entry and passion, death and burial,'
         ' and resurrection and exaltation.',
         '',
-        'The dataset is drawn from prophecies **explicitly cited or applied'
-        ' to Jesus in the NT** — not a general list of typological or thematic'
-        ' correspondences, but references where an NT author names a specific OT text'
-        ' as fulfilled in Christ. Each prophecy is classified into one of six'
-        ' thematic categories.',
+        'The dataset is drawn from two sources:',
         '',
-        f'**Total prophecies charted:** {total}  ',
+        '1. **Direct prophecies** — OT passages where an NT author explicitly'
+        ' names the text as fulfilled in Christ\'s first coming (e.g. Matt 1:22–23'
+        ' citing Isa 7:14; Acts 2:27–31 citing Psa 16:10).',
+        '2. **NT-applied types** — OT institutions or events where an NT author'
+        ' explicitly identifies the OT element as a type or pattern of Christ'
+        ' (e.g. Jesus himself identifying Jonah\'s three days, Matt 12:40;'
+        ' Paul calling Christ "our passover," 1 Cor 5:7;'
+        ' Hebrews identifying the high-priestly ritual as a type of Christ\'s'
+        ' atoning work, Heb 9:11–12).',
+        '',
+        'Each entry is classified into one of six thematic categories.',
+        '',
+        f'**Total prophecies and types charted:** {total}  ',
         f'**OT books represented:** {books_with}',
         '',
-        '> **Methodological note:** Prophecy counts are intentionally conservative —'
-        ' only passages where an NT author cites or applies the OT text to Christ\'s'
-        ' first coming are included. Widely accepted typological correspondences'
-        ' (e.g. the Passover lamb, Jonah\'s three days) that are not explicitly'
-        ' cited are excluded. This keeps the dataset anchored to NT exegesis rather'
-        ' than scholarly inference.',
+        '> **Methodological note:** Both categories are anchored to NT exegesis —'
+        ' no entry relies solely on scholarly inference or thematic analogy.'
+        ' Every entry has a specific NT text that names, cites, or applies the'
+        ' OT passage to Christ\'s first coming.',
         '',
         '---',
         '',
@@ -432,9 +458,18 @@ def build_report(summary: pd.DataFrame) -> Path:
         ' (11:12–13), striking the shepherd (13:7), and looking on the one'
         ' they pierced (12:10) — all explicitly cited in the passion narratives.',
         '',
-        '- **The Torah** contributes foundational prophecies (Gen 3:15; 49:10;'
-        ' Num 24:17) but at low density — consistent with the progressive'
-        ' pattern of revelation.',
+        '- **The Torah** contributes both foundational prophecies (Gen 3:15; 49:10;'
+        ' Num 24:17) and the densest concentration of NT-applied types: the'
+        ' Passover lamb (Exo 12; 1 Cor 5:7; 1 Pet 1:19), the bronze serpent'
+        ' (Num 21:9; John 3:14–15), the Day of Atonement ritual (Lev 16; Heb 9),'
+        ' the firstfruits offering (Lev 23; 1 Cor 15:20), and Melchizedek'
+        ' (Gen 14; Heb 7). The Law is lower in direct predictive prophecy'
+        ' but remarkably high in typological prefiguration.',
+        '',
+        '- **Jonah** now appears for the first time: Jesus himself named'
+        ' Jonah\'s three days as the sign of the Son of Man'
+        ' (Matt 12:39–40) — making it one of the most dominically authenticated'
+        ' typological connections in the Gospels.',
         '',
         '---',
         '',
@@ -467,7 +502,7 @@ def build_report(summary: pd.DataFrame) -> Path:
         '',
         '---',
         '',
-        '## Full Prophecy List',
+        '## Full Prophecy and Type List',
         '',
     ]
 
