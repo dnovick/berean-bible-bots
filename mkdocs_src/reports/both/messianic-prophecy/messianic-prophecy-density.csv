@@ -1,6 +1,7 @@
 ot_ref,book_id,chapter,verse,category,nt_fulfillment,book_name
 Gen 3:15,Gen,3,15,Lineage & Identity,Offspring of woman crushing serpent — Gal 4:4; Rev 12,Genesis
 Gen 12:3,Gen,12,3,Lineage & Identity,All nations blessed in Abraham's seed — Acts 3:25; Gal 3:16,Genesis
+Gen 14:18,Gen,14,18,Lineage & Identity,"Melchizedek: priest of God Most High, type of Christ's eternal priesthood — Heb 7:1–3, 15–17",Genesis
 Gen 17:19,Gen,17,19,Lineage & Identity,Through Isaac — Luke 3:34; Gal 4:28,Genesis
 Gen 49:10,Gen,49,10,Lineage & Identity,Scepter from Judah — Matt 1:2–3; Heb 7:14; Rev 5:5,Genesis
 Num 24:17,Num,24,17,Lineage & Identity,Star out of Jacob — Matt 2:2; Rev 22:16,Numbers
@@ -20,6 +21,8 @@ Jer 33:15,Jer,33,15,Lineage & Identity,Branch of righteousness for David — Luk
 Mic 5:2,Mic,5,2,Lineage & Identity,Ruler from Bethlehem; goings forth from everlasting — Matt 2:6,Micah
 Zec 3:8,Zec,3,8,Lineage & Identity,"""My servant the Branch"" — John 10:11; Rev 5:5",Zechariah
 Zec 6:12,Zec,6,12,Lineage & Identity,The man whose name is Branch — John 10:11,Zechariah
+Exo 12:46,Exo,12,46,Lineage & Identity,"Passover lamb: no bone broken — John 19:36; 1 Cor 5:7 (""Christ our passover"")",Exodus
+Num 21:9,Num,21,9,Ministry & Mission,Bronze serpent lifted up: type of crucifixion and healing — John 3:14–15,Numbers
 Isa 7:14,Isa,7,14,Birth & Early Life,"Virgin conceives, bears Immanuel — Matt 1:22–23",Isaiah
 Mic 5:2,Mic,5,2,Birth & Early Life,Born in Bethlehem — Matt 2:6; Luke 2:4–7,Micah
 Hos 11:1,Hos,11,1,Birth & Early Life,"""Out of Egypt I called my son"" — Matt 2:15",Hosea
@@ -28,6 +31,7 @@ Isa 40:3,Isa,40,3,Birth & Early Life,"Voice in wilderness, prepare the way — M
 Mal 3:1,Mal,3,1,Birth & Early Life,Messenger to prepare the way — Matt 11:10; Mark 1:2; Luke 7:27,Malachi
 Mal 4:5,Mal,4,5,Birth & Early Life,Elijah to come before — Matt 11:14; 17:10–12; Luke 1:17,Malachi
 Isa 9:1-2,Isa,9,1,Birth & Early Life,"Light to Galilee, land of shadow — Matt 4:14–16",Isaiah
+Jon 1:17,Jon,1,17,Ministry & Mission,Jonah three days in the fish: sign of death and resurrection — Matt 12:39–40; 16:4; Luke 11:29–30,Jonah
 Psa 40:7-8,Psa,40,7,Ministry & Mission,"""I come to do your will"" — Heb 10:7",Psalms
 Psa 78:2,Psa,78,2,Ministry & Mission,Teaching in parables — Matt 13:35,Psalms
 Isa 42:1,Isa,42,1,Ministry & Mission,Servant; Spirit upon him — Matt 12:18–21,Isaiah
@@ -56,6 +60,10 @@ Isa 53:7,Isa,53,7,Entry & Passion,Led as lamb to slaughter; did not open mouth �
 Psa 69:21,Psa,69,21,Entry & Passion,"Gall for food; vinegar to drink — Matt 27:34, 48; John 19:29",Psalms
 Psa 109:4,Psa,109,4,Entry & Passion,Prayed for those who accuse — Luke 23:34,Psalms
 Isa 53:12,Isa,53,12,Entry & Passion,Numbered with transgressors — Luke 22:37; Mark 15:28,Isaiah
+Exo 12:3,Exo,12,3,Death & Burial,Passover lamb slain: Christ as sacrificial Lamb — 1 Cor 5:7; 1 Pet 1:19; John 1:29,Exodus
+Lev 16:15,Lev,16,15,Death & Burial,"High priest enters Most Holy with blood: type of Christ's atoning sacrifice — Heb 9:7, 11–12, 24–26",Leviticus
+Lev 17:11,Lev,17,11,Death & Burial,"""Life of the flesh is in the blood"": ground of atonement — Heb 9:22",Leviticus
+Isa 52:14,Isa,52,14,Death & Burial,His appearance marred more than any man — Matt 27:27–30; John 19:1–3,Isaiah
 Psa 22:1,Psa,22,1,Death & Burial,"""My God, my God, why hast thou forsaken me"" — Matt 27:46; Mark 15:34",Psalms
 Psa 22:16,Psa,22,16,Death & Burial,Hands and feet pierced — John 20:25; Luke 24:39,Psalms
 Psa 22:17,Psa,22,17,Death & Burial,Can count all my bones; stare and gloat — John 19:36,Psalms
@@ -70,6 +78,8 @@ Isa 53:10,Isa,53,10,Death & Burial,It pleased the LORD to bruise him — Acts 2:
 Isa 53:11,Isa,53,11,Death & Burial,By his knowledge my righteous servant shall justify many — Rom 5:19,Isaiah
 Psa 69:4,Psa,69,4,Death & Burial,Hated without cause — John 15:25,Psalms
 Amos 8:9,Amo,8,9,Death & Burial,Sun goes dark at noon — Matt 27:45; Luke 23:44,Amos
+Lev 23:10,Lev,23,10,Resurrection & Exaltation,"Firstfruits offering: type of Christ's resurrection as firstfruits — 1 Cor 15:20, 23",Leviticus
+Jer 31:31,Jer,31,31,Resurrection & Exaltation,New covenant promised — Luke 22:20; Heb 8:8–12; 9:15; 10:16–17,Jeremiah
 Psa 16:10,Psa,16,10,Resurrection & Exaltation,"""Not leave my soul in Sheol; not see corruption"" — Acts 2:27, 31; 13:35",Psalms
 Psa 16:11,Psa,16,11,Resurrection & Exaltation,"""Path of life; fullness of joy"" — Acts 2:28",Psalms
 Psa 2:8,Psa,2,8,Resurrection & Exaltation,Nations given as inheritance — Rom 4:13; Rev 2:27; 12:5,Psalms
