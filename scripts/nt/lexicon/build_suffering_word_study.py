@@ -110,14 +110,24 @@ def verse_ref(book: str, ch: int, vs: int) -> str:
     return f'{NT_BOOK_NAMES.get(book, book)} {ch}:{vs}'
 
 
-def kjv_text(df: pd.DataFrame, book: str, ch: int, vs: int) -> str:
-    rows = df[(df['book_id'] == book) & (df['chapter'] == ch) &
-              (df['verse'] == vs) & (df['source'] == 'TAGNT')]
-    text = ' '.join(
-        str(t).strip().rstrip('¶').strip()
-        for t in rows['translation'].dropna()
-        if str(t).strip()
-    )
+_kjv: pd.DataFrame | None = None
+
+
+def _get_kjv() -> pd.DataFrame:
+    global _kjv
+    if _kjv is None:
+        trans = _db.load_translations()
+        _kjv = trans[trans['translation'] == 'KJV']
+    return _kjv
+
+
+def kjv_text(book: str, ch: int, vs: int) -> str:
+    kjv = _get_kjv()
+    rows = kjv[(kjv['book_id'] == book) & (kjv['chapter'] == ch) &
+               (kjv['verse'] == vs)]
+    if not len(rows):
+        return ''
+    text = str(rows['text'].values[0]).strip()
     return (text[:120] + '…') if len(text) > 120 else text
 
 
@@ -381,7 +391,7 @@ def build_report(df: pd.DataFrame) -> Path:
         ('Rom', 8, 35), ('2Co', 1, 4), ('1Th', 3, 3), ('Rev', 7, 14),
     ]
     for bk, ch, vs in key_refs_thlipsis:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines.append('')
 
     lines += [
@@ -415,7 +425,7 @@ def build_report(df: pd.DataFrame) -> Path:
         ('1Pe', 2, 21), ('1Pe', 4, 1), ('Heb', 5, 8),
     ]
     for bk, ch, vs in key_refs_pascho:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines.append('')
 
     lines += [
@@ -443,7 +453,7 @@ def build_report(df: pd.DataFrame) -> Path:
         ('2Co', 12, 10), ('2Ti', 3, 12), ('Heb', 10, 33),
     ]
     for bk, ch, vs in key_refs_diogmos:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines.append('')
 
     lines += [
@@ -470,7 +480,7 @@ def build_report(df: pd.DataFrame) -> Path:
         ('Heb', 12, 1), ('Jas', 1, 3), ('Rev', 13, 10),
     ]
     for bk, ch, vs in key_refs_hypomone:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines.append('')
 
     lines += [
@@ -497,7 +507,7 @@ def build_report(df: pd.DataFrame) -> Path:
         ('1Pe', 1, 7), ('Rom', 5, 4), ('2Co', 8, 2),
     ]
     for bk, ch, vs in key_refs_peirasmos:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines.append('')
 
     lines += [
@@ -520,7 +530,7 @@ def build_report(df: pd.DataFrame) -> Path:
         ('1Pe', 1, 11), ('1Pe', 2, 21),
     ]
     for bk, ch, vs in key_refs_christ:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines += [
         '',
         '> **Note:** Luke 24:26 ("Ought not Christ to have suffered these things,'
@@ -601,14 +611,14 @@ def build_report(df: pd.DataFrame) -> Path:
         ('2Ti', 3, 12),
     ]
     for bk, ch, vs in paul_refs:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines += ['', '### Hebrews', '', '| Reference | KJV |', '|---|---|']
     heb_refs = [
         ('Heb', 2, 10), ('Heb', 5, 8), ('Heb', 10, 36),
         ('Heb', 12, 1), ('Heb', 12, 10), ('Heb', 12, 11),
     ]
     for bk, ch, vs in heb_refs:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines += ['', '### 1 Peter', '', '| Reference | KJV |', '|---|---|']
     pet_refs = [
         ('1Pe', 1, 6), ('1Pe', 1, 7), ('1Pe', 2, 21),
@@ -616,11 +626,11 @@ def build_report(df: pd.DataFrame) -> Path:
         ('1Pe', 4, 16), ('1Pe', 5, 10),
     ]
     for bk, ch, vs in pet_refs:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines += ['', '### James', '', '| Reference | KJV |', '|---|---|']
     jas_refs = [('Jas', 1, 2), ('Jas', 1, 3), ('Jas', 1, 4), ('Jas', 1, 12)]
     for bk, ch, vs in jas_refs:
-        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(df, bk, ch, vs)} |')
+        lines.append(f'| {verse_ref(bk, ch, vs)} | {kjv_text(bk, ch, vs)} |')
     lines += [
         '',
         '---',
