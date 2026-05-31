@@ -725,7 +725,7 @@ def _window_table_lines(df: pd.DataFrame, kjv_df: pd.DataFrame,
             if verdict == 'no':
                 continue
             verdict_md = '✓ yes' if verdict == 'yes' else '? uncertain'
-            reasoning = entry['reasoning'].replace('|', '&#124;')[:80]
+            reasoning = entry['reasoning'].replace('|', '&#124;')
         book, ch, vs = r['book'], r['chapter'], r['verse']
         kjv_row = kjv_df[(kjv_df['book_id'] == book) &
                          (kjv_df['chapter'] == ch) &
@@ -1231,6 +1231,20 @@ def _build_report() -> None:
         '**ῥῆμα — contextual scripture proximity hits**',
         '',
     ] + _window_table_lines(window_df, kjv, 'ῥῆμα', classification_cache) + [
+        '',
+        '> **Note — 1 Peter 1:23 and 1:25: λόγος and ῥῆμα for the same referent.**'
+        ' These two verses are two of the most instructive data points in the entire'
+        ' study. In v. 23 Peter says believers are born again "by the word [λόγου]'
+        ' of God, which liveth and abideth for ever." Two verses later (v. 25) he'
+        ' quotes Isa 40:8 — "the word [ῥῆμα] of the Lord endureth for ever"'
+        ' — and identifies it as "the word which by the gospel is preached unto you."'
+        ' Peter applies both terms to the same entity: the preached gospel anchored'
+        ' in the OT prophetic word. This is one of the clearest NT passages showing'
+        ' that the two terms are not always semantically distinct — here λόγος'
+        ' emphasizes the word *as permanent deposit* (the living, abiding message),'
+        ' while ῥῆμα picks up the Isaianic *spoken oracle* ("the word of the LORD")'
+        ' and its ongoing proclamation. The difference is one of aspect and echo,'
+        ' not of referent.',
         '',
         '### Summary',
         '',
