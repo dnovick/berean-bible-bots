@@ -13,8 +13,8 @@
 | [hiphil-weak-lamed-guttural-paradigms.md](hiphil-weak-lamed-guttural-paradigms.md) | III-ח/ע (Lamed-Guttural) paradigms — roots שָׁלַח and שָׁמַע, all 8 conjugations with strong comparison |
 | [hiphil-weak-lamed-aleph-paradigms.md](hiphil-weak-lamed-aleph-paradigms.md) | III-א (Lamed-Aleph) paradigms — roots מָצָא and קָרָא, all 8 conjugations with strong comparison |
 | [hiphil-weak-lamed-he-paradigms.md](hiphil-weak-lamed-he-paradigms.md) | III-ה (Lamed-He) paradigms — roots עָלָה and רָאָה, all 8 conjugations with strong comparison |
-| [hiphil-weak-pe-paradigms.md — I-נ](hiphil-weak-pe-paradigms.md#part-1-i-נ-pe-nun-hiphil) | I-נ (Pe-Nun) paradigms — roots נָגַשׁ and נָפַל, all 8 conjugations with strong comparison |
-| [hiphil-weak-pe-paradigms.md — I-י](hiphil-weak-pe-paradigms.md#part-2-i-י-pe-yodvav-hiphil) | I-י (Pe-Yod) paradigms — roots יָרַד and יָצָא, all 8 conjugations with strong comparison |
+| [hiphil-weak-pe-nun-paradigms.md](hiphil-weak-pe-nun-paradigms.md) | I-נ (Pe-Nun) paradigms — roots נָגַשׁ and נָפַל, all 8 conjugations with strong comparison |
+| [hiphil-weak-pe-yod-paradigms.md](hiphil-weak-pe-yod-paradigms.md) | I-י (Pe-Yod) paradigms — roots יָרַד and יָצָא, all 8 conjugations with strong comparison |
 | [hiphil-weak-biconsonantal-paradigms.md](hiphil-weak-biconsonantal-paradigms.md) | Biconsonantal (II-י/ו) paradigms — roots קוּם and שִׂים, all 8 conjugations with strong comparison |
 | [hiphil-weak-geminate-paradigms.md](hiphil-weak-geminate-paradigms.md) | Geminate (II=III) paradigms — roots סָבַב and שָׁלַל, all 8 conjugations with Biconsonantal comparison |
 
@@ -251,7 +251,7 @@ In the strong Hiphil, the prefix הִ/יַ/הַ is added directly to R1. When R1
 | Inf. Absolute | הַקְטֵל | הַגֵּשׁ | הַפֵּל |
 | Participle | מַקְטִיל | מַגִּישׁ | מַפִּיל |
 
-→ Full PGN tables: [hiphil-weak-pe-paradigms.md](hiphil-weak-pe-paradigms.md)
+→ Full PGN tables: [hiphil-weak-pe-nun-paradigms.md](hiphil-weak-pe-nun-paradigms.md)
 
 ### Key Corpus Examples
 
@@ -290,7 +290,7 @@ A small subset of I-י roots that do not have a historical I-ו variant use a di
 | Inf. Absolute | הַקְטֵל | הוֹרֵד | הוֹצֵא |
 | Participle | מַקְטִיל | מוֹרִיד | מוֹצִיא |
 
-→ Full PGN tables: [hiphil-weak-pe-paradigms.md](hiphil-weak-pe-paradigms.md)
+→ Full PGN tables: [hiphil-weak-pe-yod-paradigms.md](hiphil-weak-pe-yod-paradigms.md)
 
 ### Key Corpus Examples
 
