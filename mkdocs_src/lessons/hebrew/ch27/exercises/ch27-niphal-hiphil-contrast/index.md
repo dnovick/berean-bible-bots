@@ -26,11 +26,11 @@ The exercise is organized in three parts:
 
 ## Sample Questions
 
-**Q1.** 1 נִשְׁמַע Est 1:20 "the decree ___ throughout all the kingdom" ▶
-> **A:** Niphal · Perfect · 3ms · שָׁמַע · III-ח/ע — "was heard"; נִ prefix + patach furtive before final ע = Niphal III-ח/ע perfect
+**Q1.** 1 נִשְׁמַע Est 1:20 "the decree ___ throughout all the kingdom" Niphal Hiphil Qal Hophal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp I-guttural III-ח/ע III-א III-ה I-נ I-י Biconsonantal Geminate &#9654;
+> **A:** נִשְׁמַע Est 1:20 Niphal Perfect 3ms שָׁמַע III-ח/ע נִ prefix + patach furtive before final ע = Niphal III-ח/ע perfect
 
-**Q2.** 2 הִשְׁמִיעַ Isa 48:6 "I ___ you new things from this time" ▶
-> **A:** Hiphil · Perfect · 3ms · שָׁמַע · III-ח/ע — "I caused you to hear / announced"; הִ prefix + chiriq-yod + patach furtive before ע = Hiphil III-ח/ע perfect
+**Q2.** 2 הִשְׁמִיעַ 1 Kgs 15:22 "Asa ___ this throughout all Judah" Niphal Hiphil Qal Hophal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp I-guttural III-ח/ע III-א III-ה I-נ I-י Biconsonantal Geminate &#9654;
+> **A:** הִשְׁמִיעַ 1 Kgs 15:22 Hiphil Perfect 3ms שָׁמַע III-ח/ע הִ prefix + chiriq-yod + patach furtive before ע = Hiphil III-ח/ע perfect
 
-**Q3.** 3 יִמָּצֵא Gen 44:10 "he with whom it is ___ shall be my servant" ▶
-> **A:** Niphal · Imperfect · 3ms · מָצָא · III-א — "is found"; יִמָּ — yiqtol prefix + dagesh in מ (Niphal assimilation) + tsere + silent final א
+**Q3.** 3 יִמָּצֵא Gen 44:10 "only the one with whom it is found ___ my slave" Niphal Hiphil Qal Hophal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp I-guttural III-ח/ע III-א III-ה I-נ I-י Biconsonantal Geminate &#9654;
+> **A:** יִמָּצֵא Gen 44:10 Niphal Imperfect 3ms מָצָא III-א יִמָּ cluster + tsere + silent final א = Niphal III-א imperfect
