@@ -33,8 +33,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: infinitive absolute distribution and paronomastic usage |
-| [Verbal Syntax](../../../../../notebooks/ot/syntax/verbal_syntax.ipynb) | Infinitive usage patterns (construct vs. absolute) by book and genre |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: infinitive absolute distribution and paronomastic usage |
+| [Verbal Syntax](../../../notebooks/ot/syntax/verbal_syntax/) | Infinitive usage patterns (construct vs. absolute) by book and genre |
 
 ---
 

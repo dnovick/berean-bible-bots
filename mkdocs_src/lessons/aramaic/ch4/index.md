@@ -26,7 +26,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Aramaic Nominal Morphology](../../../../../notebooks/ot/aramaic/aramaic_nominal.ipynb) | Aramaic noun state distribution; absolute vs. determined vs. construct — Daniel and Ezra |
+| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Aramaic noun state distribution; absolute vs. determined vs. construct — Daniel and Ezra |
 
 ---
 

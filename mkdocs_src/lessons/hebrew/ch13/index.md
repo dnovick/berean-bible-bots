@@ -33,8 +33,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [ot/verbs/qal.ipynb](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem notebook |
-| [both/survey/book_profiles.ipynb](../../../../../notebooks/both/survey/book_profiles.ipynb) | Per-book language profiles |
+| [ot/verbs/qal.ipynb](../../../notebooks/ot/verbs/qal/) | Qal stem notebook |
+| [both/survey/book_profiles.ipynb](../../../notebooks/both/survey/book_profiles/) | Per-book language profiles |
 
 ---
 

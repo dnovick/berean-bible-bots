@@ -33,7 +33,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: conjugation profile showing Imperfect (yiqtol) distribution |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: conjugation profile showing Imperfect (yiqtol) distribution |
 
 ---
 

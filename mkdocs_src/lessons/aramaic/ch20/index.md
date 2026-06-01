@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Hithpaal and Ithpaal stem profiles |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Hithpaal and Ithpaal stem profiles |
 
 ---
 

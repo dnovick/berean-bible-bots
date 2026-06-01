@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [OT Verb Stem Overview](../../../../../notebooks/ot/verbs/stem_overview.ipynb) | OT verb stem totals and distribution across Torah, Prophets, and Writings |
+| [OT Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | OT verb stem totals and distribution across Torah, Prophets, and Writings |
 
 ---
 

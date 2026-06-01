@@ -26,7 +26,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hithpael Stem](../../../../../notebooks/ot/verbs/hithpael.ipynb) | Hithpael stem: complete morphological profile; reflexive, reciprocal, iterative categories |
+| [Hithpael Stem](../../../notebooks/ot/verbs/hithpael/) | Hithpael stem: complete morphological profile; reflexive, reciprocal, iterative categories |
 
 ---
 

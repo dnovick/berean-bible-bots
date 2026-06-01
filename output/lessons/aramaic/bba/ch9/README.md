@@ -26,7 +26,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Aramaic Nominal Morphology](../../../../../notebooks/ot/aramaic/aramaic_nominal.ipynb) | Personal pronoun frequency; pronoun type breakdown (personal/demonstrative/interrogative) in Daniel/Ezra |
+| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Personal pronoun frequency; pronoun type breakdown (personal/demonstrative/interrogative) in Daniel/Ezra |
 
 ---
 

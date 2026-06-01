@@ -26,7 +26,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Aramaic Nominal Morphology](../../../../../notebooks/ot/aramaic/aramaic_nominal.ipynb) | Complete word class distribution including adverbs/particles across Daniel and Ezra |
+| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Complete word class distribution including adverbs/particles across Daniel and Ezra |
 
 ---
 

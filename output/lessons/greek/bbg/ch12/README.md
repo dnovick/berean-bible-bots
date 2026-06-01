@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [NT Syntactic Roles](../../../../../notebooks/nt/syntax/syntactic_roles_nt.ipynb) | What God and Jesus do as subjects/objects across the NT |
+| [NT Syntactic Roles](../../../notebooks/nt/syntax/syntactic_roles_nt/) | What God and Jesus do as subjects/objects across the NT |
 
 ---
 

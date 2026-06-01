@@ -39,7 +39,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: root×conjugation heatmap showing which weak roots favor the Perfect |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: root×conjugation heatmap showing which weak roots favor the Perfect |
 
 ---
 

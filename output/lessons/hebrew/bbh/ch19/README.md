@@ -33,7 +33,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: full corpus data including suffixed verb forms |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: full corpus data including suffixed verb forms |
 
 ---
 

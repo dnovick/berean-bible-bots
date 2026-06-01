@@ -30,7 +30,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Peal stem profile; qatal conjugation distribution; top Peal roots |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal stem profile; qatal conjugation distribution; top Peal roots |
 
 ---
 

@@ -23,8 +23,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Verbal Syntax](../../../../../notebooks/ot/syntax/verbal_syntax.ipynb) | Clause type profiles: disjunctive clauses, conditional clauses, relative clauses, aspect comparison |
-| [Syntactic Roles OT](../../../../../notebooks/ot/speakers/syntactic_roles_ot.ipynb) | Syntactic role search: who does what to whom in the OT |
+| [Verbal Syntax](../../../notebooks/ot/syntax/verbal_syntax/) | Clause type profiles: disjunctive clauses, conditional clauses, relative clauses, aspect comparison |
+| [Syntactic Roles OT](../../../notebooks/ot/speakers/syntactic_roles_ot/) | Syntactic role search: who does what to whom in the OT |
 
 ---
 

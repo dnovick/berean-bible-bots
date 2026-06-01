@@ -33,9 +33,9 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: infinitive construct distribution and top roots |
-| [Verbal Syntax](../../../../../notebooks/ot/syntax/verbal_syntax.ipynb) | Infinitive construct usage and governing preposition analysis |
-| [Hebrew Prepositions](../../../../../notebooks/ot/syntax/prepositions.ipynb) | Governing prepositions on infinitive constructs (לְ, בְּ, כְּ, מִן) |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: infinitive construct distribution and top roots |
+| [Verbal Syntax](../../../notebooks/ot/syntax/verbal_syntax/) | Infinitive construct usage and governing preposition analysis |
+| [Hebrew Prepositions](../../../notebooks/ot/syntax/prepositions/) | Governing prepositions on infinitive constructs (לְ, בְּ, כְּ, מִן) |
 
 ---
 

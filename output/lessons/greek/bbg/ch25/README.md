@@ -22,8 +22,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [GNT Verb Morphology](../../../../../notebooks/nt/verbs/nt_verbs.ipynb) | Perfect tense profile; pluperfect; theological perfects |
-| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Perfect tense distribution by genre; theologically important perfect forms |
+| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Perfect tense profile; pluperfect; theological perfects |
+| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Perfect tense distribution by genre; theologically important perfect forms |
 
 ---
 

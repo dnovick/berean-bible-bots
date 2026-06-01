@@ -35,7 +35,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Niphal Stem](../../../../../notebooks/ot/verbs/niphal.ipynb) | Niphal stem: complete morphological profile, top roots, semantic categories (passive/reflexive/reciprocal) |
+| [Niphal Stem](../../../notebooks/ot/verbs/niphal/) | Niphal stem: complete morphological profile, top roots, semantic categories (passive/reflexive/reciprocal) |
 
 ---
 

@@ -29,7 +29,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Peal imperfect profile; yiqtol distribution by root |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal imperfect profile; yiqtol distribution by root |
 
 ---
 

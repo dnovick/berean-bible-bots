@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [OT Noun Morphology](../../../../../notebooks/ot/nouns/ot_nouns.ipynb) | Definite article usage by genre; noun state and gender distribution across the OT |
+| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Definite article usage by genre; noun state and gender distribution across the OT |
 
 ---
 

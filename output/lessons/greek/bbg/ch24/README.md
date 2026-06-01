@@ -23,8 +23,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [GNT Verb Morphology](../../../../../notebooks/nt/verbs/nt_verbs.ipynb) | Passive voice counts by tense; divine passive context |
-| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Passive voice distribution by tense and NT genre |
+| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Passive voice counts by tense; divine passive context |
+| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Passive voice distribution by tense and NT genre |
 
 ---
 

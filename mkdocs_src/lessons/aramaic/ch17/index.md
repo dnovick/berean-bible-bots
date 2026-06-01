@@ -29,7 +29,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Participle distribution; active vs. passive participle counts |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Participle distribution; active vs. passive participle counts |
 
 ---
 

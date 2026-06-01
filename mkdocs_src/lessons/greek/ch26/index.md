@@ -16,8 +16,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Greek Participles](../../../../../notebooks/nt/syntax/participles.ipynb) | Participle tense/voice profiles, adverbial vs adjectival role distribution |
-| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Participial usage rates by genre |
+| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Participle tense/voice profiles, adverbial vs adjectival role distribution |
+| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Participial usage rates by genre |
 
 ---
 

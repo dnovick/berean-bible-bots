@@ -22,8 +22,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [GNT Verb Morphology](../../../../../notebooks/nt/verbs/nt_verbs.ipynb) | Future tense count and voice breakdown |
-| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Future tense distribution and voice patterns across NT genres |
+| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Future tense count and voice breakdown |
+| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Future tense distribution and voice patterns across NT genres |
 
 ---
 

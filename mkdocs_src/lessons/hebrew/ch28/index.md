@@ -35,7 +35,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hophal Stem](../../../../../notebooks/ot/verbs/hophal.ipynb) | Hophal stem: complete morphological profile; legal formulas (מוּת יוּמַת), motion and speech |
+| [Hophal Stem](../../../notebooks/ot/verbs/hophal/) | Hophal stem: complete morphological profile; legal formulas (מוּת יוּמַת), motion and speech |
 
 ---
 

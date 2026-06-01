@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [GNT Noun Morphology](../../../../../notebooks/nt/nouns/nt_nouns.ipynb) | Case/gender distribution, article co-occurrence, top lemmas (nominative and accusative cases) |
+| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution, article co-occurrence, top lemmas (nominative and accusative cases) |
 
 ---
 

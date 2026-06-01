@@ -27,7 +27,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Piel Stem](../../../../../notebooks/ot/verbs/piel.ipynb) | Piel stem: root×conjugation heatmap; weak root behavior in the intensive |
+| [Piel Stem](../../../notebooks/ot/verbs/piel/) | Piel stem: root×conjugation heatmap; weak root behavior in the intensive |
 
 ---
 

@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Haphel stem profile; causative roots in Daniel/Ezra |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Haphel stem profile; causative roots in Daniel/Ezra |
 
 ---
 

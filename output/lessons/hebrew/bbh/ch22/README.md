@@ -33,8 +33,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: active and passive participle distribution; dominant participial roots |
-| [Syntactic Roles OT](../../../../../notebooks/ot/speakers/syntactic_roles_ot.ipynb) | Syntactic roles: participles as subjects and predicates in OT prose |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: active and passive participle distribution; dominant participial roots |
+| [Syntactic Roles OT](../../../notebooks/ot/speakers/syntactic_roles_ot/) | Syntactic roles: participles as subjects and predicates in OT prose |
 
 ---
 

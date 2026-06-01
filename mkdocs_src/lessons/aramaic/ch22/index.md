@@ -21,7 +21,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Aphel, Shaphel, and Hophal stem profiles |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Aphel, Shaphel, and Hophal stem profiles |
 
 ---
 

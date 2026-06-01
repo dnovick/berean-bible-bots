@@ -23,9 +23,9 @@
 
 | Notebook | What it shows |
 |---|---|
-| [NT Mood Usage](../../../../../notebooks/nt/syntax/mood_usage.ipynb) | Subjunctive distribution, construction types (purpose/conditional/hortatory), genre comparison |
-| [Concordance](../../../../../notebooks/both/lexicon/concordance.ipynb) | Find all subjunctive forms of any NT verb |
-| [Discourse Particles](../../../../../notebooks/nt/discourse/discourse_particles.ipynb) | ἵνα + subjunctive function classification (purpose/content/result); ὅτι function analysis |
+| [NT Mood Usage](../../../notebooks/nt/syntax/mood_usage/) | Subjunctive distribution, construction types (purpose/conditional/hortatory), genre comparison |
+| [Concordance](../../../notebooks/both/lexicon/concordance/) | Find all subjunctive forms of any NT verb |
+| [Discourse Particles](../../../notebooks/nt/discourse/discourse_particles/) | ἵνα + subjunctive function classification (purpose/content/result); ὅτι function analysis |
 
 ---
 

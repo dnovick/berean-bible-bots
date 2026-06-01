@@ -26,7 +26,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Aramaic Nominal Morphology](../../../../../notebooks/ot/aramaic/aramaic_nominal.ipynb) | Top Aramaic prepositions by frequency — לְ, בְּ, מִן, עַל distribution across Daniel and Ezra |
+| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Top Aramaic prepositions by frequency — לְ, בְּ, מִן, עַל distribution across Daniel and Ezra |
 
 ---
 

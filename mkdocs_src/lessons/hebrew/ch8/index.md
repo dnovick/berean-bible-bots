@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [OT Noun Morphology](../../../../../notebooks/ot/nouns/ot_nouns.ipynb) | Pronoun frequency by type (personal/demonstrative/interrogative) in the Hebrew OT corpus |
+| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Pronoun frequency by type (personal/demonstrative/interrogative) in the Hebrew OT corpus |
 
 ---
 

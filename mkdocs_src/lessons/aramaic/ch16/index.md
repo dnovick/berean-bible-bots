@@ -29,7 +29,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Infinitive construct frequency; Peal infinitives in Daniel/Ezra |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Infinitive construct frequency; Peal infinitives in Daniel/Ezra |
 
 ---
 

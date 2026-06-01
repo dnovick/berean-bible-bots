@@ -43,7 +43,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Niphal Stem](../../../../../notebooks/ot/verbs/niphal.ipynb) | Niphal stem: root×conjugation heatmap showing weak root patterns |
+| [Niphal Stem](../../../notebooks/ot/verbs/niphal/) | Niphal stem: root×conjugation heatmap showing weak root patterns |
 
 ---
 

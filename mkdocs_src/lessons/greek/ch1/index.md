@@ -12,7 +12,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Per-Book Language Profiles](../../../../../notebooks/both/survey/book_profiles.ipynb) | NT book-by-book tense/voice/mood distributions |
+| [Per-Book Language Profiles](../../../notebooks/both/survey/book_profiles/) | NT book-by-book tense/voice/mood distributions |
 
 ---
 

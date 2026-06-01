@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Peil, Hithpeel, Ithpeel stem profiles and top roots |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peil, Hithpeel, Ithpeel stem profiles and top roots |
 
 ---
 

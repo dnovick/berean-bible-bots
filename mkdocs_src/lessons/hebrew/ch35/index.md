@@ -27,7 +27,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hithpael Stem](../../../../../notebooks/ot/verbs/hithpael.ipynb) | Hithpael stem: root×conjugation heatmap; weak root behavior in the reflexive-intensive |
+| [Hithpael Stem](../../../notebooks/ot/verbs/hithpael/) | Hithpael stem: root×conjugation heatmap; weak root behavior in the reflexive-intensive |
 
 ---
 
