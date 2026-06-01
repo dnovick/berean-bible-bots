@@ -703,9 +703,18 @@ def _build_report_dir(
         rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
         nav_entries.append({title: rel})
 
-    # Add index.md as first entry if it exists
-    if readme.exists():
+    # Add index.md as first nav entry — either from README (already written above)
+    # or from a bare index.md in the source (no README present)
+    index_src = src_dir / "index.md"
+    if readme.exists() or index_src.exists():
+        if not readme.exists() and index_src.exists():
+            # No README: copy index.md directly (already in md_files if not skipped,
+            # but it won't be since _skip only excludes index.md when readme exists)
+            pass  # already copied above via md_files
         rel_index = str((dst_dir / "index.md").relative_to(MKDOCS_SRC))
+        # Remove any existing "Overview" entry to avoid duplication, then insert
+        nav_entries[:] = [e for e in nav_entries if list(e.keys())[0] != "Overview"
+                          and list(e.values())[0] != rel_index]
         nav_entries.insert(0, {"Overview": rel_index})
 
 

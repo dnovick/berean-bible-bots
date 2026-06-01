@@ -546,7 +546,6 @@ def build_index() -> None:
         '- [The Passage](#the-passage)',
         '- [Key Observations](#key-observations)',
         '- [Term Catalogue](#term-catalogue)',
-        '- [Term Pages](#term-pages)',
         '',
         '---',
         '',
@@ -607,8 +606,8 @@ def build_index() -> None:
         '',
         '## Term Catalogue',
         '',
-        '| Term | Strongs | Translit. | Gloss | NT occ | LXX occ (canonical) |',
-        '|---|---|---|---|---|---|',
+        '| Term | Strongs | Gloss | NT occ | LXX occ (canonical) |',
+        '|---|---|---|---|---|',
     ]
 
     for term in TERMS:
@@ -620,25 +619,11 @@ def build_index() -> None:
         lines.append(
             f'| [{term["greek"]}]({slug}/README.md) '
             f'| {term["strongs"]} '
-            f'| {term["translit"]} '
             f'| {term["gloss"]} '
             f'| {nt_ct} '
             f'| {lxx_ct} |'
         )
 
-    lines += [
-        '',
-        '---',
-        '',
-        '## Term Pages',
-        '',
-    ]
-    for term in TERMS:
-        slug = term['slug']
-        lines.append(
-            f'- [{term["greek"]} ({term["strongs"]}) — {term["gloss"]}]'
-            f'({slug}/README.md)'
-        )
     lines += [
         '',
         '---',

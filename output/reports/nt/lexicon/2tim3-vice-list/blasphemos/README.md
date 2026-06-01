@@ -46,7 +46,7 @@ Corresponds to Hebrew גִּדֵּף (to blaspheme, revile; Num 15:30; 2Ki 19:6)
 
 ## NT Distribution
 
-![NT distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/blasphemos-nt.png)
+![NT distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/blasphemos-nt.png)
 
 ---
 

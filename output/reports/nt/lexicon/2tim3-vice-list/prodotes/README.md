@@ -46,7 +46,7 @@ Hebrew בֹּגֵד (treacherous one, traitor; Psa 119:158; Isa 24:16; Hab 1:13)
 
 ## NT Distribution
 
-![NT distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/prodotes-nt.png)
+![NT distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/prodotes-nt.png)
 
 ---
 
