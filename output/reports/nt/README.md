@@ -30,6 +30,7 @@ Studies of Greek grammar, vocabulary, and structure in the New Testament.
 | [The Armor of God — Eph 6:10–18 in Its Letter Context](lexicon/armor-of-god/armor-of-god-report.md) | ἀλήθεια, δικαιοσύνη, εἰρήνη, πίστις, σωτηρία, ῥῆμα, προσευχή | Each armor piece traced back to where Paul first introduced it in Ephesians 1–5 |
 | [Anoint / Anointing — Cross-Corpus Word Study](lexicon/anoint-word-study/anoint-word-study.md) | ἀλείφω, χρίω, χριστός, μύρον, māšaḥ, māšîaḥ | NT, LXX, and Biblical Hebrew anoint vocabulary with cross-corpus connections tracing "Messiah" → "Christ" |
 | [Suffering in the Life of the Believer — NT Word Study](lexicon/suffering-word-study/suffering-word-study.md) | θλῖψις, πάσχω, πάθημα, ὑπομονή, διωγμός | Vocabulary, distribution, and theology of NT suffering — Christ as pattern and ground; suffering–glory axis |
+| [1 Peter 2:1 — "Lay Aside" Vice List](lexicon/1pet2-vice-list/1pet2-vice-list.md) | κακία, δόλος, ὑπόκρισις, φθόνος, καταλαλιά | NT, LXX, and Hebrew background for all five vices Peter commands believers to put off |
 
 ---
 
