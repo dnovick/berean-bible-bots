@@ -7,8 +7,6 @@
 
 ---
 
-# Part 1 — I-נ (Pe-Nun) Hiphil
-
 In the Hiphil, I-נ roots show *assimilation* of the root נ (R1) into R2 in the conjugations where the Hiphil prefix brings the נ into contact with R2. This occurs in the imperfect, wayyiqtol, imperative, and infinitive construct. In the perfect and participle, the הִ/מַ prefix insulates R1, so no assimilation occurs — the נ is visible.
 
 ---
@@ -188,6 +186,3 @@ Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
 | Inf. Construct | הַקְטִיל | הַגִּישׁ | *Patach* under הַ distinguishes from perfect |
 | Inf. Absolute | הַקְטֵל | הַגֵּשׁ | Same as imperative 2ms |
 | Participle | מַקְטִיל | מַגִּישׁ | מַ + *dagesh* in R2 + *chiriq-yod* |
-
----
-
