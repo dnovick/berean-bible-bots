@@ -9,7 +9,6 @@
 - [The Passage](#the-passage)
 - [Key Observations](#key-observations)
 - [Term Catalogue](#term-catalogue)
-- [Term Pages](#term-pages)
 
 ---
 
@@ -49,23 +48,13 @@ Though the rarest term (2 NT occurrences), the καταλαλ- word-group appear
 
 ## Term Catalogue
 
-| Term | Strongs | Translit. | Gloss | NT occ | LXX occ (canonical) |
-|---|---|---|---|---|---|
-| [κακία](kakia/README.md) | G2549 | kakia | malice, evil, wickedness | 11 | 110 |
-| [δόλος](dolos/README.md) | G1388 | dolos | deceit, guile, treachery | 11 | 34 |
-| [ὑπόκρισις](hypokrisis/README.md) | G5272 | hypokrisis | hypocrisy, dissimulation, play-acting | 6 | 0 |
-| [φθόνος](phthonos/README.md) | G5355 | phthonos | envy, jealousy (malicious) | 9 | 0 |
-| [καταλαλιά](katalalia/README.md) | G2636 | katalalia | slander, evil speaking, defamation | 2 | 0 |
-
----
-
-## Term Pages
-
-- [κακία (G2549) — malice, evil, wickedness](kakia/README.md)
-- [δόλος (G1388) — deceit, guile, treachery](dolos/README.md)
-- [ὑπόκρισις (G5272) — hypocrisy, dissimulation, play-acting](hypokrisis/README.md)
-- [φθόνος (G5355) — envy, jealousy (malicious)](phthonos/README.md)
-- [καταλαλιά (G2636) — slander, evil speaking, defamation](katalalia/README.md)
+| Term | Strongs | Gloss | NT occ | LXX occ (canonical) |
+|---|---|---|---|---|
+| [κακία](kakia/README.md) | G2549 | malice, evil, wickedness | 11 | 110 |
+| [δόλος](dolos/README.md) | G1388 | deceit, guile, treachery | 11 | 34 |
+| [ὑπόκρισις](hypokrisis/README.md) | G5272 | hypocrisy, dissimulation, play-acting | 6 | 0 |
+| [φθόνος](phthonos/README.md) | G5355 | envy, jealousy (malicious) | 9 | 0 |
+| [καταλαλιά](katalalia/README.md) | G2636 | slander, evil speaking, defamation | 2 | 0 |
 
 ---
 

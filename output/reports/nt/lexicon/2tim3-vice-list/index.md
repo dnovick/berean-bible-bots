@@ -10,7 +10,6 @@
 - [Key Observations](#key-observations)
 - [Term Catalogue](#term-catalogue)
 - [Structural Analysis](#structural-analysis)
-- [Term Pages](#term-pages)
 
 ---
 
@@ -63,30 +62,30 @@ Translated "false accusers" (KJV), διάβολος is the standard NT term for 
 
 ★ = NT hapax legomenon
 
-| Verse | Term | Strongs | Translit. | Gloss | NT occ | LXX occ |
-|---|---|---|---|---|---|---|
-| 3:1 | [χαλεπός](chalepos/README.md) | G5467 | chalepos | harsh, fierce, dangerous | 2 | 1 |
-| 3:2 | [φίλαυτος](philautos/README.md) | G5367 | philautos | self-loving | 1 ★ | — |
-| 3:2 | [φιλάργυρος](philargyros/README.md) | G5366 | philargyros | money-loving, covetous | 2 | — |
-| 3:2 | [ἀλαζών](alazon/README.md) | G0213 | alazon | boastful, swaggering braggart | 2 | — |
-| 3:2 | [ὑπερήφανος](hyperephanos/README.md) | G5244 | hyperephanos | proud, arrogant, showing oneself above others | 5 | 21 |
-| 3:2 | [βλάσφημος](blasphemos/README.md) | G0989 | blasphemos | blasphemous, slanderous, abusive in speech | 5 | — |
-| 3:2 | [ἀπειθής](apeithes/README.md) | G0545 | apeithes | disobedient, unpersuadable | 6 | — |
-| 3:2 | [ἀχάριστος](acharistos/README.md) | G0884 | acharistos | ungrateful, unthankful | 2 | — |
-| 3:2 | [ἀνόσιος](anosios/README.md) | G0462 | anosios | unholy, impious | 2 | — |
-| 3:3 | [ἄστοργος](astorgos/README.md) | G0794 | astorgos | without natural affection, unloving | 2 | — |
-| 3:3 | [ἄσπονδος](aspondos/README.md) | G0786 | aspondos | irreconcilable, implacable | 2 | — |
-| 3:3 | [διάβολος](diabolos/README.md) | G1228 | diabolos | slanderer; the Devil | 38 | 20 |
-| 3:3 | [ἀκρατής](akrates/README.md) | G0193 | akrates | without self-control, intemperate | 1 ★ | — |
-| 3:3 | [ἀνήμερος](anemeros/README.md) | G0434 | anemeros | savage, fierce, untamed | 1 ★ | — |
-| 3:3 | [ἀφιλάγαθος](aphilagathos/README.md) | G0865 | aphilagathos | not loving good, hostile to goodness | 1 ★ | — |
-| 3:4 | [προδότης](prodotes/README.md) | G4273 | prodotes | traitor, betrayer | 3 | — |
-| 3:4 | [προπετής](propetes/README.md) | G4312 | propetes | rash, reckless, headlong | 2 | 2 |
-| 3:4 | [τυφόω](typhoo/README.md) | G5187 | typhoo | to be puffed up with conceit, to be blinded by pride | 3 | — |
-| 3:4 | [φιλήδονος](philedonos/README.md) | G5369 | philedonos | pleasure-loving | 1 ★ | — |
-| 3:4 | [φιλόθεος](philotheos/README.md) | G5377 | philotheos | God-loving | 1 ★ | — |
-| 3:5 | [μόρφωσις](morphosis/README.md) | G3446 | morphosis | outward form, semblance, shape | 2 | — |
-| 3:5 | [εὐσέβεια](eusebeia/README.md) | G2150 | eusebeia | godliness, piety, reverence | 15 | 4 |
+| Verse | Term | Strongs | Gloss | NT occ | LXX occ |
+|---|---|---|---|---|---|
+| 3:1 | [χαλεπός](chalepos/README.md) | G5467 | harsh, fierce, dangerous | 2 | 1 |
+| 3:2 | [φίλαυτος](philautos/README.md) | G5367 | self-loving | 1 ★ | — |
+| 3:2 | [φιλάργυρος](philargyros/README.md) | G5366 | money-loving, covetous | 2 | — |
+| 3:2 | [ἀλαζών](alazon/README.md) | G0213 | boastful, swaggering braggart | 2 | — |
+| 3:2 | [ὑπερήφανος](hyperephanos/README.md) | G5244 | proud, arrogant, showing oneself above others | 5 | 21 |
+| 3:2 | [βλάσφημος](blasphemos/README.md) | G0989 | blasphemous, slanderous, abusive in speech | 5 | — |
+| 3:2 | [ἀπειθής](apeithes/README.md) | G0545 | disobedient, unpersuadable | 6 | — |
+| 3:2 | [ἀχάριστος](acharistos/README.md) | G0884 | ungrateful, unthankful | 2 | — |
+| 3:2 | [ἀνόσιος](anosios/README.md) | G0462 | unholy, impious | 2 | — |
+| 3:3 | [ἄστοργος](astorgos/README.md) | G0794 | without natural affection, unloving | 2 | — |
+| 3:3 | [ἄσπονδος](aspondos/README.md) | G0786 | irreconcilable, implacable | 2 | — |
+| 3:3 | [διάβολος](diabolos/README.md) | G1228 | slanderer; the Devil | 38 | 20 |
+| 3:3 | [ἀκρατής](akrates/README.md) | G0193 | without self-control, intemperate | 1 ★ | — |
+| 3:3 | [ἀνήμερος](anemeros/README.md) | G0434 | savage, fierce, untamed | 1 ★ | — |
+| 3:3 | [ἀφιλάγαθος](aphilagathos/README.md) | G0865 | not loving good, hostile to goodness | 1 ★ | — |
+| 3:4 | [προδότης](prodotes/README.md) | G4273 | traitor, betrayer | 3 | — |
+| 3:4 | [προπετής](propetes/README.md) | G4312 | rash, reckless, headlong | 2 | 2 |
+| 3:4 | [τυφόω](typhoo/README.md) | G5187 | to be puffed up with conceit, to be blinded by pride | 3 | — |
+| 3:4 | [φιλήδονος](philedonos/README.md) | G5369 | pleasure-loving | 1 ★ | — |
+| 3:4 | [φιλόθεος](philotheos/README.md) | G5377 | God-loving | 1 ★ | — |
+| 3:5 | [μόρφωσις](morphosis/README.md) | G3446 | outward form, semblance, shape | 2 | — |
+| 3:5 | [εὐσέβεια](eusebeia/README.md) | G2150 | godliness, piety, reverence | 15 | 4 |
 
 ---
 
@@ -113,30 +112,3 @@ The 22 terms (including χαλεπός in v.1 and εὐσέβεια/μόρφωσ
 χαλεπός (sets the tone) · μόρφωσις εὐσεβείας (the devastating conclusion)
 
 ---
-
-## Term Pages
-
-Each term has a dedicated page with etymology, semantic range, OT/LXX background, NT distribution, and a full occurrence table.
-
-- [χαλεπός (G5467) — harsh, fierce, dangerous](chalepos/README.md)
-- [φίλαυτος (G5367) — self-loving](philautos/README.md)
-- [φιλάργυρος (G5366) — money-loving, covetous](philargyros/README.md)
-- [ἀλαζών (G0213) — boastful, swaggering braggart](alazon/README.md)
-- [ὑπερήφανος (G5244) — proud, arrogant, showing oneself above others](hyperephanos/README.md)
-- [βλάσφημος (G0989) — blasphemous, slanderous, abusive in speech](blasphemos/README.md)
-- [ἀπειθής (G0545) — disobedient, unpersuadable](apeithes/README.md)
-- [ἀχάριστος (G0884) — ungrateful, unthankful](acharistos/README.md)
-- [ἀνόσιος (G0462) — unholy, impious](anosios/README.md)
-- [ἄστοργος (G0794) — without natural affection, unloving](astorgos/README.md)
-- [ἄσπονδος (G0786) — irreconcilable, implacable](aspondos/README.md)
-- [διάβολος (G1228) — slanderer; the Devil](diabolos/README.md)
-- [ἀκρατής (G0193) — without self-control, intemperate](akrates/README.md)
-- [ἀνήμερος (G0434) — savage, fierce, untamed](anemeros/README.md)
-- [ἀφιλάγαθος (G0865) — not loving good, hostile to goodness](aphilagathos/README.md)
-- [προδότης (G4273) — traitor, betrayer](prodotes/README.md)
-- [προπετής (G4312) — rash, reckless, headlong](propetes/README.md)
-- [τυφόω (G5187) — to be puffed up with conceit, to be blinded by pride](typhoo/README.md)
-- [φιλήδονος (G5369) — pleasure-loving](philedonos/README.md)
-- [φιλόθεος (G5377) — God-loving](philotheos/README.md)
-- [μόρφωσις (G3446) — outward form, semblance, shape](morphosis/README.md)
-- [εὐσέβεια (G2150) — godliness, piety, reverence](eusebeia/README.md)

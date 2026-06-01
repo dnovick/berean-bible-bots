@@ -43,7 +43,7 @@ Five NT occurrences across five books; 40 LXX occurrences across 12 books — on
 
 Primary Hebrew equivalents: גָּאֶה / גָּאוֹן (pride, haughtiness; Psa 10:2; Pro 8:13; Isa 2:12), and זֵד (presumptuous, arrogant; Psa 119:21,51,69). Pride is one of the seven things the LORD hates (Pro 6:17).
 
-![LXX distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/hyperephanos-lxx.png)
+![LXX distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/hyperephanos-lxx.png)
 
 | Reference | LXX form |
 |---|---|
@@ -73,7 +73,7 @@ Primary Hebrew equivalents: גָּאֶה / גָּאוֹן (pride, haughtiness; P
 
 ## NT Distribution
 
-![NT distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/hyperephanos-nt.png)
+![NT distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/hyperephanos-nt.png)
 
 ---
 

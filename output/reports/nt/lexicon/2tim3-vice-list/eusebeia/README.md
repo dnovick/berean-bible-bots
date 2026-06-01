@@ -54,7 +54,7 @@ Hebrew יִרְאַת יְהוָה (fear of the LORD — the comprehensive term 
 
 ## NT Distribution
 
-![NT distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/eusebeia-nt.png)
+![NT distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/eusebeia-nt.png)
 
 ---
 

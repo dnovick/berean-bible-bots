@@ -813,7 +813,7 @@ def _build_index() -> None:
         hapax = ' ★' if nt_occ == 1 else ''
         table_rows.append(
             f'| 3:{t["verse"]} | [{t["greek"]}]({t["slug"]}/README.md) '
-            f'| {t["strongs"]} | {t["translit"]} | {t["gloss"]} '
+            f'| {t["strongs"]} | {t["gloss"]} '
             f'| {nt_occ}{hapax} | {lxx_occ or "—"} |'
         )
 
@@ -833,7 +833,6 @@ def _build_index() -> None:
         '- [Key Observations](#key-observations)',
         '- [Term Catalogue](#term-catalogue)',
         '- [Structural Analysis](#structural-analysis)',
-        '- [Term Pages](#term-pages)',
         '',
         '---',
         '',
@@ -920,8 +919,8 @@ def _build_index() -> None:
         '',
         '★ = NT hapax legomenon',
         '',
-        '| Verse | Term | Strongs | Translit. | Gloss | NT occ | LXX occ |',
-        '|---|---|---|---|---|---|---|',
+        '| Verse | Term | Strongs | Gloss | NT occ | LXX occ |',
+        '|---|---|---|---|---|---|',
     ] + table_rows + [
         '',
         '---',
@@ -951,15 +950,7 @@ def _build_index() -> None:
         '',
         '---',
         '',
-        '## Term Pages',
-        '',
-        'Each term has a dedicated page with etymology, semantic range, '
-        'OT/LXX background, NT distribution, and a full occurrence table.',
-        '',
-    ] + [
-        f'- [{t["greek"]} ({t["strongs"]}) — {t["gloss"]}]({t["slug"]}/README.md)'
-        for t in TERMS
-    ] + ['']
+    ]
 
     path = REPORT_DIR / 'index.md'
     path.write_text('\n'.join(lines), encoding='utf-8')

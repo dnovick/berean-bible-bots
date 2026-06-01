@@ -46,7 +46,7 @@ Hebrew גָּבַהּ (to be high, exalted; in moral sense, to be haughty; Pro 1
 
 ## NT Distribution
 
-![NT distribution](../../../../../charts/nt/lexicon/2tim3-vice-list/typhoo-nt.png)
+![NT distribution](../../../../../../charts/nt/lexicon/2tim3-vice-list/typhoo-nt.png)
 
 ---
 
