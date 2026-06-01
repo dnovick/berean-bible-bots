@@ -1251,7 +1251,7 @@ class Ch27WeakFormIdExercise(ExercisePDF):
         SortEntry('37', 'וַיָּסֶב',      'Wayyiqtol',    'Josh 6:14',  '"and they marched around"', 'Geminate', 'סָבַב', 'qamets prefix + apocopated seghol — same pattern as Biconsonantal וַיָּקֶם'),
         SortEntry('38', 'יָסֵב',         'Imperfect',    'Isa 44:20',  '"it leads astray"',         'Geminate', 'סָבַב', 'qamets under prefix (יָ) — same as Biconsonantal יָקִים; root knowledge required'),
         SortEntry('39', 'הָסֵב',         'Imperative',   '2 Sam 2:22', '"turn aside!"',             'Geminate', 'סָבַב', 'הָ prefix (qamets) — same as Biconsonantal הָקֵם; only root distinguishes'),
-        SortEntry('40', 'מֵסֵב',         'Participle',   '(expected)', '"one who surrounds"',       'Geminate', 'סָבַב', 'מֵ prefix (tsere) — same as Biconsonantal מֵקִים; Geminate class requires root knowledge'),
+        SortEntry('40', 'מֵסֵב',         'Participle',   'Jer 21:4',   '"surrounding"',             'Geminate', 'סָבַב', 'מֵ prefix (tsere) — same as Biconsonantal מֵקִים; Geminate class requires root knowledge'),
     ]
 
     _PART_B = [
@@ -1488,12 +1488,12 @@ class Ch27BGDrillExercise(ExercisePDF):
         BGEntry('13', 'הָקֵם',     'Deut 27:26', '"\'___ the words of this law\'"',              'Hiphil', 'Imperative',  '2ms',    'Biconsonantal', 'קוּם',  'raise up! / confirm!',        'הָ prefix (qamets) = Hiphil imperative; Biconsonantal: no R2=R3 doubling'),
         BGEntry('14', 'הָסֵב',     '2 Sam 2:22', '"___ from following me"',                      'Hiphil', 'Imperative',  '2ms',    'Geminate',      'סָבַב', 'turn aside!',                 'הָ prefix (qamets) = Hiphil imperative; same vowels as Biconsonantal; root R2=R3=ב'),
         BGEntry('15', 'מֵקִים',    '1 Sam 2:8',  '"He ___ the poor from the dust"',              'Hiphil', 'Participle',  'ms',     'Biconsonantal', 'קוּם',  'one who raises up',           'מֵ prefix (tsere) = Hiphil participle; medial ו retained = Biconsonantal'),
-        BGEntry('16', 'מֵסֵב',     'Ezek 41:7',  '"the structure ___ upward"',                   'Hiphil', 'Participle',  'ms',     'Geminate',      'סָבַב', 'going around / surrounding',  'מֵ prefix (tsere) = Hiphil participle; no medial vowel letter = Geminate'),
+        BGEntry('16', 'מֵסֵב',     'Jer 21:4',   '"I am turning around the weapons ___"',         'Hiphil', 'Participle',  'ms',     'Geminate',      'סָבַב', 'turning / surrounding',       'מֵ prefix (tsere) = Hiphil participle; no medial vowel letter = Geminate'),
     ]
 
     _PART_C = [
         BGEntry('17', 'נָמֹוג',    'Isa 14:31',  '"all Philistia ___"',                          'Niphal', 'Perfect',     '3ms',    'Biconsonantal', 'מוּג',  'melted / dissolved',          'נָ prefix + medial ו = Niphal Biconsonantal; root מוּג = to melt'),
-        BGEntry('18', 'הֵמַס',     'Josh 2:11',  '"the LORD ___ our hearts"',                    'Hiphil', 'Perfect',     '3ms',    'Geminate',      'מסס',   'caused to melt',              'הֵ prefix (tsere) = Hiphil; R2=R3=ס = Geminate; patach under contracted stem'),
+        BGEntry('18', 'הֵמַסּוּ',  'Deu 1:28',   '"our brothers ___ our hearts"',                'Hiphil', 'Perfect',     '3cp',    'Geminate',      'מסס',   'caused to melt',              'הֵ prefix (tsere) = Hiphil; R2=R3=ס = Geminate; dagesh forte marks doubled R3'),
         BGEntry('19', 'יָרֻם',     'Isa 52:13',  '"my servant shall be high and ___ up"',        'Niphal', 'Imperfect',   '3ms',    'Biconsonantal', 'רוּם',  'will be exalted / lifted up', 'יָ prefix + qibbutz under R2 (passive) = Niphal Biconsonantal; contrast Hiphil יָרִים'),
         BGEntry('20', 'יָרֹם',     'Psa 99:2',   '"great is the LORD, ___ above all peoples"',   'Niphal', 'Imperfect',   '3ms',    'Biconsonantal', 'רוּם',  'is exalted / high',           'יָ prefix + holem under R2 = Niphal Biconsonantal; compare Hiphil יָרִים (chiriq)'),
         BGEntry('21', 'הֵרִים',    'Gen 14:22',  '"I have ___ my hand to the LORD"',             'Hiphil', 'Perfect',     '3ms',    'Biconsonantal', 'רוּם',  'lifted up / swore an oath',   'הֵ prefix (tsere) + chiriq-yod = Hiphil Biconsonantal perfect; causative sense'),
