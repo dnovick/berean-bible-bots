@@ -1060,29 +1060,29 @@ class Ch27Exercise(ExercisePDF):
 
         self.add_section_heading('Part A — Genesis and Exodus (items 1–10)')
 
-        self.add_passage(PassageBlock('Gen 1:5',
-            'וַיִּקְרָא אֱלֹהִים לָאוֹר יוֹם וַיַּקְרֵא לַחֹשֶׁךְ לָיְלָה',
-            '"and he [1] ____ the darkness Night"'))
-        self.add_verb_table([VerbEntry('1', 'וַיַּקְרֵא', 'Wayyiqtol', '3ms', 'קָרָא', 'III-א — he called / proclaimed')], show_answers=show_answers)
+        self.add_passage(PassageBlock('1 Kgs 14:16',
+            'יַחֲטִיא אֶת־יִשְׂרָאֵל וַאֲשֶׁר הֶחֱטִיא',
+            '"because of his sins which he [1] ____ Israel"'))
+        self.add_verb_table([VerbEntry('1', 'הֶחֱטִיא', 'Perfect', '3ms', 'חָטָא', 'III-א — he caused to sin')], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Gen 6:18',
             'וַהֲקִמֹתִי אֶת־בְּרִיתִי אִתְּךָ',
             '"but I [2] ____ my covenant with you"'))
         self.add_verb_table([VerbEntry('2', 'וַהֲקִמֹתִי', 'Weqatal', '1cs', 'קוּם', 'Biconsonantal — I will establish')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Gen 8:20',
-            'הֶעֱלָה נֹחַ עֹלֹת עַל הַמִּזְבֵּחַ',
-            '"Noah [3] ____ burnt offerings on the altar"'))
-        self.add_verb_table([VerbEntry('3', 'הֶעֱלָה', 'Perfect', '3ms', 'עָלָה', 'III-ה + I-guttural — he offered up')], show_answers=show_answers)
+        self.add_passage(PassageBlock('1 Sam 12:6',
+            'יְהוָה אֲשֶׁר הֶעֱלָה אֶת־מֹשֶׁה וְאֶת־אַהֲרֹן',
+            '"the LORD who [3] ____ Moses and Aaron"'))
+        self.add_verb_table([VerbEntry('3', 'הֶעֱלָה', 'Perfect', '3ms', 'עָלָה', 'III-ה + I-guttural — he brought up')], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Gen 15:7',
             'אֲנִי יְהוָה אֲשֶׁר הוֹצֵאתִיךָ מֵאוּר כַּשְׂדִּים',
             '"I am the LORD who [4] ____ from Ur of the Chaldeans"'))
         self.add_verb_table([VerbEntry('4', 'הוֹצֵאתִיךָ', 'Perfect', '1cs + 2ms', 'יָצָא', 'I-י — I brought you out')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Gen 22:2',
-            'וַיַּעַל שָׁם עֹלָה',
-            '"and he [5] ____ a burnt offering there"'))
+        self.add_passage(PassageBlock('Gen 8:20',
+            'וַיַּעַל עֹלֹת עַל הַמִּזְבֵּחַ',
+            '"and he [5] ____ burnt offerings on the altar"'))
         self.add_verb_table([VerbEntry('5', 'וַיַּעַל', 'Wayyiqtol', '3ms', 'עָלָה', 'III-ה — he offered up (apocopated)')], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Gen 2:21',
@@ -1105,32 +1105,32 @@ class Ch27Exercise(ExercisePDF):
             '"and he said, [9] ____ your glory, please"'))
         self.add_verb_table([VerbEntry('9', 'הַרְאֵנִי', 'Imperative', '2ms + 1cs', 'רָאָה', 'III-ה — show me')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Exo 40:2',
-            'הָקֵם אֶת־מִשְׁכַּן אֹהֶל מוֹעֵד',
-            '"[10] ____ the tabernacle of the tent of meeting"'))
-        self.add_verb_table([VerbEntry('10', 'הָקֵם', 'Imperative', '2ms', 'קוּם', 'Biconsonantal — set up / erect')], show_answers=show_answers)
+        self.add_passage(PassageBlock('2 Sam 7:25',
+            'הָקֵם עַד־עוֹלָם אֶת־הַדָּבָר אֲשֶׁר דִּבַּרְתָּ',
+            '"[10] ____ forever the word that you have spoken"'))
+        self.add_verb_table([VerbEntry('10', 'הָקֵם', 'Imperative', '2ms', 'קוּם', 'Biconsonantal — confirm / establish')], show_answers=show_answers)
 
         self.add_section_break()
         self.add_section_heading('Part B — Numbers and Deuteronomy (items 11–18)')
 
-        self.add_passage(PassageBlock('Num 27:19',
-            'הַעֲמֵד אֹתוֹ לִפְנֵי אֶלְעָזָר הַכֹּהֵן',
-            '"[11] ____ him before Eleazar the priest"'))
-        self.add_verb_table([VerbEntry('11', 'הַעֲמֵד', 'Imperative', '2ms', 'עָמַד', 'I-guttural — set him / station him')], show_answers=show_answers)
+        self.add_passage(PassageBlock('Isa 21:6',
+            'הַעֲמֵד הַמְּצַפֶּה אֲשֶׁר יִרְאֶה יַגִּיד',
+            '"[11] ____ a watchman; let him announce what he sees"'))
+        self.add_verb_table([VerbEntry('11', 'הַעֲמֵד', 'Imperative', '2ms', 'עָמַד', 'I-guttural — post / station a watchman')], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Deu 18:15',
             'נָבִיא מִקִּרְבְּךָ יָקִים לְךָ יְהוָה אֱלֹהֶיךָ',
             '"a prophet like me the LORD [12] ____ for you"'))
         self.add_verb_table([VerbEntry('12', 'יָקִים', 'Imperfect', '3ms', 'קוּם', 'Biconsonantal — will raise up')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Deu 4:10',
-            'הַשְׁמַע אֶת־הָעָם אֶת־דִּבְרֵי',
-            '"[13] ____ the people these words"'))
-        self.add_verb_table([VerbEntry('13', 'הַשְׁמַע', 'Imperative', '2ms', 'שָׁמַע', 'III-ח/ע — make them hear')], show_answers=show_answers)
+        self.add_passage(PassageBlock('Isa 48:20',
+            'הַשְׁמִיעוּ זֹאת הַגִּידוּהָ עַד קְצֵה הָאָרֶץ',
+            '"[13] ____ this; declare it to the ends of the earth"'))
+        self.add_verb_table([VerbEntry('13', 'הַשְׁמִיעוּ', 'Imperative', '2mp', 'שָׁמַע', 'III-ח/ע — cause this to be heard')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Deu 8:14',
-            'אֲשֶׁר הוֹצִיאֲךָ מֵאֶרֶץ מִצְרַיִם',
-            '"who [14] ____ of the land of Egypt"'))
+        self.add_passage(PassageBlock('Deu 16:1',
+            'כִּי בְּחֹדֶשׁ הָאָבִיב הוֹצִיאֲךָ יְהוָה אֱלֹהֶיךָ מִמִּצְרַיִם',
+            '"for in the month of Abib the LORD [14] ____ of Egypt"'))
         self.add_verb_table([VerbEntry('14', 'הוֹצִיאֲךָ', 'Perfect', '3ms + 2ms', 'יָצָא', 'I-י — he brought you out')], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Deu 8:14',
@@ -1138,20 +1138,20 @@ class Ch27Exercise(ExercisePDF):
             '"[15] ____ of the land of Egypt (substantival participle)"'))
         self.add_verb_table([VerbEntry('15', 'הַמּוֹצִיאֲךָ', 'Participle', 'ms', 'יָצָא', 'I-י — the one who brought you out')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Num 1:51',
-            'וְהֵקִים אֶת־הַמִּשְׁכָּן',
-            '"and [16] ____ the tabernacle"'))
-        self.add_verb_table([VerbEntry('16', 'וְהֵקִים', 'Weqatal', '3ms', 'קוּם', 'Biconsonantal — he shall set up')], show_answers=show_answers)
+        self.add_passage(PassageBlock('Num 30:14',
+            'אִם הַחֲרֵשׁ יַחֲרִישׁ לָהּ אִישָׁהּ וְהֵקִים אֶת כָּל נְדָרֶיהָ',
+            '"if her husband says nothing … he [16] ____ all her vows"'))
+        self.add_verb_table([VerbEntry('16', 'וְהֵקִים', 'Weqatal', '3ms', 'קוּם', 'Biconsonantal — he confirms / establishes')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Exo 3:17',
-            'לְהַעֲלוֹת אֶתְכֶם מֵעֳנִי מִצְרַיִם',
-            '"[17] ____ you out of the affliction of Egypt"'))
-        self.add_verb_table([VerbEntry('17', 'לְהַעֲלוֹת', 'Inf. Construct', '—', 'עָלָה', 'III-ה + I-guttural — to bring up')], show_answers=show_answers)
+        self.add_passage(PassageBlock('1 Sam 10:8',
+            'וְאַחַר כֵּן תָּבוֹא אֵלַי לְהַעֲלוֹת עֹלָה',
+            '"after that you will come to me [17] ____ a burnt offering"'))
+        self.add_verb_table([VerbEntry('17', 'לְהַעֲלוֹת', 'Inf. Construct', '—', 'עָלָה', 'III-ה + I-guttural — to offer up')], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('Isa 48:6',
-            'מֵעַתָּה אַשְׁמִיעֲכֶם חֲדָשׁוֹת',
-            '"from now on [18] ____ new things"'))
-        self.add_verb_table([VerbEntry('18', 'אַשְׁמִיעֲכֶם', 'Imperfect', '1cs + 2mp', 'שָׁמַע', 'III-ח/ע — I announce to you')], show_answers=show_answers)
+        self.add_passage(PassageBlock('Isa 42:9',
+            'חֲדָשׁוֹת אֲנִי מַגִּיד בְּטֶרֶם תִּצְמַחְנָה אַשְׁמִיע אֶתְכֶם',
+            '"new things I declare; before they arise I [18] ____ them to you"'))
+        self.add_verb_table([VerbEntry('18', 'אַשְׁמִיע', 'Imperfect', '1cs', 'שָׁמַע', 'III-ח/ע — I cause you to hear / announce')], show_answers=show_answers)
 
         self.add_section_break()
         self.add_section_heading('Part C — Distractor Check')

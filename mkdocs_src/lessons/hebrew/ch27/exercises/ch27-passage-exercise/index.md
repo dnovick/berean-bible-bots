@@ -20,11 +20,11 @@ An 18-verb parsing exercise (plus 2 bonus items) drawn from Genesis, Exodus, Num
 
 ## Sample Questions
 
-**Q1.** Perfect Imperfect Wayyiqtol Imperative Inf. Construct Inf. Absolute Participle 1cs 2ms 2fs 3ms 3fs 1cp 2mp 2fp 3mp 3fp ms fs mp fp
-> **A:** Yes — Hiphil | Wayyiqtol 3ms קָרָא III-א he called / proclaimed — tsere before silent final א; one of the most common forms in Genesis 1
+**Q1.** Yes No # noqa: E501
+> **A:** Yes Perfect 3ms חָטָא III-א he caused to sin
 
-**Q2.** Perfect Imperfect Wayyiqtol Imperative Inf. Construct Inf. Absolute Participle 1cs 2ms 2fs 3ms 3fs 1cp 2mp 2fp 3mp 3fp ms fs mp fp
-> **A:** Yes — Hiphil | Weqatal 1cs קוּם Biconsonantal I will establish — וְ + הֵקִים pattern (hateph-patach under ה in weqatal form); holem-vav root medial
+**Q2.** Yes No # noqa: E501
+> **A:** Yes Weqatal 1cs קוּם Biconsonantal I will establish
 
-**Q3.** Perfect Imperfect Wayyiqtol Imperative Inf. Construct Inf. Absolute Participle 1cs 2ms 2fs 3ms 3fs 1cp 2mp 2fp 3mp 3fp ms fs mp fp
-> **A:** Yes — Hiphil | Perfect 3ms עָלָה III-ה + I-guttural he offered up — qamets + ה ending; seghol under הֶ and hateph-seghol under ע from the I-guttural interaction
+**Q3.** Yes No # noqa: E501
+> **A:** Yes Perfect 3ms עָלָה III-ה + I-guttural he brought up
