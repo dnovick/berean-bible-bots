@@ -22,11 +22,11 @@ A 50-item identification and parsing exercise covering all eight Hiphil weak cla
 
 ## Sample Questions
 
-**Q1.** 1 הֶעֱמִיד 1 Kgs 7:21 ▶
-> **A:** Perfect · 3ms · עָמַד — he set up; seghol under הֶ + hateph-seghol under ע are the twin I-guttural markers
+**Q1.** 1 הֶעֱמִיד 1 Chr 6:31 Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp &#9654;
+> **A:** הֶעֱמִיד 1 Chr 6:31 Perfect 3ms עָמַד seghol under הֶ + hateph-seghol under ע are the twin I-guttural markers
 
-**Q2.** 2 וַיַּעֲמֵד 2 Chr 4:4 ▶
-> **A:** Wayyiqtol · 3ms · עָמַד — and he set it; patach prefix (standard Hiphil) + hateph-patach under ע + tsere final
+**Q2.** 2 וַיַּעֲמֵד 2 Chr 8:14 Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp &#9654;
+> **A:** וַיַּעֲמֵד 2 Chr 8:14 Wayyiqtol 3ms עָמַד patach prefix + composite shewa under ע + tsere final
 
-**Q3.** 3 יַעֲמִיד Psa 107:29 ▶
-> **A:** Imperfect · 3ms · עָמַד — he causes to stand still; patach prefix + composite shewa under ע; no dagesh in R1
+**Q3.** 3 יַעֲמִיד Pro 29:4 Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp &#9654;
+> **A:** יַעֲמִיד Pro 29:4 Imperfect 3ms עָמַד patach prefix + composite shewa; no dagesh in ע (guttural rule)

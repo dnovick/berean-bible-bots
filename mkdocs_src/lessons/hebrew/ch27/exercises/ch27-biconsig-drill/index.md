@@ -20,11 +20,11 @@ The exercise is organized in three parts:
 
 ## Sample Questions
 
-**Q1.** 1 נָכוֹן Gen 41:32 "the thing is ___ by God" ▶
-> **A:** Niphal · Perfect/Participle · 3ms/ms · Biconsonantal · כּוּן — "is established / firm"; נָ prefix (qamets) = Niphal Biconsonantal; medial ו vowel letter identifies Biconsonantal, not Geminate
+**Q1.** 1 נָכוֹן Gen 41:32 "the thing is ___ by God" Hiphil Hophal Niphal Qal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp I-guttural III-ח/ע III-א III-ה I-נ I-י Biconsonantal Geminate &#9654;
+> **A:** נָכוֹן Gen 41:32 Niphal Perfect/Participle 3ms / ms Biconsonantal כּוּן נָ prefix (qamets) = Niphal; medial ו vowel letter identifies Biconsonantal, not Geminate
 
-**Q2.** 2 נָסַב 1 Kgs 7:24 "the gourds ___ it, ten to a cubit" ▶
-> **A:** Niphal · Perfect · 3ms · Geminate · סָבַב — "encircled / went around"; נָ prefix (qamets) = Niphal; R2=R3=ב identifies Geminate; compare Biconsonantal נָכוֹן (medial ו) vs. Geminate נָסַב (no medial vowel letter)
+**Q2.** 2 נָסַב 1 Kgs 7:24 "the gourds ___ it, ten to a cubit" Hiphil Hophal Niphal Qal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp I-guttural III-ח/ע III-א III-ה I-נ I-י Biconsonantal Geminate &#9654;
+> **A:** נָסַב 1 Kgs 7:24 Niphal Perfect 3ms Geminate סָבַב נָ prefix (qamets) = Niphal; R2=R3=ב identifies Geminate; compare Biconsonantal נָכוֹן
 
-**Q3.** 3 יִכּוֹן Psa 93:2 "your throne ___ from of old" ▶
-> **A:** Niphal · Imperfect · 3ms · Biconsonantal · כּוּן — "is established"; יִ prefix + dagesh in כּ (Niphal pattern) + holem-vav = Biconsonantal; the dagesh here is Niphal's assimilation pattern, not R2=R3 doubling
+**Q3.** 3 יִכּוֹן Psa 93:2 "your throne ___ from of old" Hiphil Hophal Niphal Qal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 1cs 1cp 2ms 2fs 2mp 2fp 3ms 3fs 3mp 3cp ms fs mp fp I-guttural III-ח/ע III-א III-ה I-נ I-י Biconsonantal Geminate &#9654;
+> **A:** יִכּוֹן Psa 93:2 Niphal Imperfect 3ms Biconsonantal כּוּן יִ prefix + dagesh in כּ (Niphal imperfect) + contracted holem-vav root = Biconsonantal
