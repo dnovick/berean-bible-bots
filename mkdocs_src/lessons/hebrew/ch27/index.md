@@ -57,16 +57,16 @@
 
 ## 1. The Eight Weak Classes — Overview
 
-| Class | Label | Representative roots | What changes | Affected conjugations |
-|---|---|---|---|---|
-| I-guttural (Pe-Guttural) | `pe-guttural` | עָמַד, עָזַר | Guttural rejects dagesh; *hiriq* → *tsere* under prefix; hateph-seghol under guttural | Imperfect, wayyiqtol, imperative, inf. construct |
-| III-ח/ע (Lamed-Guttural) | `lamed-guttural` | שָׁלַח, שָׁמַע | Guttural triggers *patach furtive* before final guttural; *a*-class vowels before final ח/ע | Perfect, imperfect, participle |
-| III-א (Lamed-Aleph) | `lamed-aleph` | מָצָא, קָרָא | Final א quiesces; preceding vowel lengthens compensatorily | Perfect 3ms/3fs, imperfect, participle |
-| III-ה (Lamed-He) | `lamed-he` | עָלָה, רָאָה | Final ה is a vowel letter; endings contract; wayyiqtol apocopates | All conjugations |
-| I-נ (Pe-Nun) | `pe-nun` | נָגַשׁ, נָפַל | Root נ assimilates into R2 with dagesh forte | Imperfect, wayyiqtol, imperative, inf. construct |
-| I-י (Pe-Yod) | `pe-yod` | יָרַד, יָצָא | I-י/ו roots: הוֹרִיד sub-pattern; prefix vowel *tsere* | All conjugations |
-| Biconsonantal (II-י/ו) | `biconsonantal` | קוּם, שִׂים | Two-consonant root with medial vowel letter; prefix pattern הֵקִים / הֵשִׂים | All conjugations |
-| Geminate (II=III, Ayin-Doubled) | `geminate` | סָבַב, שָׁלַל | R2 = R3; forms nearly identical to Biconsonantal: הֵסֵב / יָסֵב / וַיָּסֶב | All conjugations |
+| Class | Representative roots | What changes | Affected conjugations |
+|---|---|---|---|
+| [I-guttural (Pe-Guttural)](#2-i-guttural-pe-guttural-verbs) | עָמַד, עָזַר | Guttural rejects dagesh; *hiriq* → *tsere* under prefix; hateph-seghol under guttural | Imperfect, wayyiqtol, imperative, inf. construct |
+| [III-ח/ע (Lamed-Guttural)](#3-iii-lamed-guttural-verbs) | שָׁלַח, שָׁמַע | Guttural triggers *patach furtive* before final guttural; *a*-class vowels before final ח/ע | Perfect, imperfect, participle |
+| [III-א (Lamed-Aleph)](#4-iii-lamed-aleph-verbs) | מָצָא, קָרָא | Final א quiesces; preceding vowel lengthens compensatorily | Perfect 3ms/3fs, imperfect, participle |
+| [III-ה (Lamed-He)](#5-iii-lamed-he-verbs) | עָלָה, רָאָה | Final ה is a vowel letter; endings contract; wayyiqtol apocopates | All conjugations |
+| [I-נ (Pe-Nun)](#6-i-pe-nun-verbs) | נָגַשׁ, נָפַל | Root נ assimilates into R2 with dagesh forte | Imperfect, wayyiqtol, imperative, inf. construct |
+| [I-י (Pe-Yod)](#7-i-pe-yod-verbs) | יָרַד, יָצָא | I-י/ו roots: הוֹרִיד sub-pattern; prefix vowel *tsere* | All conjugations |
+| [Biconsonantal (II-י/ו)](#8-biconsonantal-ii-verbs) | קוּם, שִׂים | Two-consonant root with medial vowel letter; prefix pattern הֵקִים / הֵשִׂים | All conjugations |
+| [Geminate (II=III, Ayin-Doubled)](#9-geminate-ayin-doubled-iiiii-verbs) | סָבַב, שָׁלַל | R2 = R3; forms nearly identical to Biconsonantal: הֵסֵב / יָסֵב / וַיָּסֶב | All conjugations |
 
 > **Key principle:** None of these classes requires learning a new stem. Every change follows from
 > a standard phonological rule — quiescence, compensatory lengthening, assimilation, or patach
