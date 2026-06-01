@@ -58,7 +58,7 @@ An answer key is at the bottom.
 | 13 | הָקֵם | Deut 27:26 | "\'\_\_\_\_ the words of this law\'" |
 | 14 | הָסֵב | 2 Sam 2:22 | "\_\_\_\_ from following me" |
 | 15 | מֵקִים | 1 Sam 2:8 | "He \_\_\_\_ the poor from the dust" |
-| 16 | מֵסֵב | Ezek 41:7 | "the structure surrounding the house \_\_\_\_ upward" |
+| 16 | מֵסֵב | Jer 21:4 | "turning around the weapons of war \_\_\_\_" |
 
 ---
 
@@ -67,7 +67,7 @@ An answer key is at the bottom.
 | # | Form | Reference | Context |
 |---|---|---|---|
 | 17 | נָמֹוג | Isa 14:31 | "all Philistia \_\_\_\_" |
-| 18 | הֵמִיס | Josh 2:11 | "the LORD \_\_\_\_ our hearts" |
+| 18 | הֵמַסּוּ | Deu 1:28 | "our brothers \_\_\_\_ our hearts" |
 | 19 | יָרֻם | Isa 52:13 | "my servant shall be high and \_\_\_\_ up" |
 | 20 | יָרֹם | Psa 99:2 | "great is the LORD, and \_\_\_\_ above all peoples" |
 | 21 | הֵרִים | Gen 14:22 | "I have \_\_\_\_ my hand to the LORD" |
@@ -118,7 +118,7 @@ An answer key is at the bottom.
 | # | Form | Stem | Conj | PGN | Weak class | Root | Translation |
 |---|---|---|---|---|---|---|---|
 | 17 | נָמֹוג | Niphal | Perfect | 3ms | Biconsonantal | מוּג | melted / dissolved |
-| 18 | הֵמִיס | Hiphil | Perfect | 3ms | Biconsonantal | מסס / מוּס | caused to melt |
+| 18 | הֵמַסּוּ | Hiphil | Perfect | 3cp | Geminate | מסס | they caused to melt |
 | 19 | יָרֻם | Hiphil | Imperfect | 3ms | Biconsonantal | רוּם | will be exalted |
 | 20 | יָרֹם | Niphal | Imperfect | 3ms | Biconsonantal | רוּם | is exalted / high |
 | 21 | הֵרִים | Hiphil | Perfect | 3ms | Biconsonantal | רוּם | lifted up |
