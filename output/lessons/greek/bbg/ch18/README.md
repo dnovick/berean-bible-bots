@@ -22,8 +22,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [GNT Verb Morphology](../../../../../notebooks/nt/verbs/nt_verbs.ipynb) | Voice distribution; tense × voice crosstab |
-| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Greek middle/passive voice patterns by genre |
+| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Voice distribution; tense × voice crosstab |
+| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Greek middle/passive voice patterns by genre |
 
 ---
 

@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hebrew Prepositions](../../../../../notebooks/ot/syntax/prepositions.ipynb) | Hebrew preposition frequency and infinitive-construct governing analysis |
+| [Hebrew Prepositions](../../../notebooks/ot/syntax/prepositions/) | Hebrew preposition frequency and infinitive-construct governing analysis |
 
 ---
 

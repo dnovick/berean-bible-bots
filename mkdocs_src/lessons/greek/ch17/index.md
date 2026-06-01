@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Morphological Distribution](../../../../../notebooks/both/lexicon/morph_distribution.ipynb) | How a verb root's forms spread across tenses and books |
+| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How a verb root's forms spread across tenses and books |
 
 ---
 

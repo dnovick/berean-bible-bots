@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [OT Noun Morphology](../../../../../notebooks/ot/nouns/ot_nouns.ipynb) | Top noun lemmas showing which most commonly take pronominal suffixes (construct-heavy lemmas) |
+| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Top noun lemmas showing which most commonly take pronominal suffixes (construct-heavy lemmas) |
 
 ---
 

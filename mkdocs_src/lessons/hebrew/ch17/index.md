@@ -33,8 +33,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: wayyiqtol is the single most common Qal form (~23% of all Qal tokens) |
-| [Verbal Syntax](../../../../../notebooks/ot/syntax/verbal_syntax.ipynb) | Wayyiqtol narrative chains and verb form profiles by genre |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: wayyiqtol is the single most common Qal form (~23% of all Qal tokens) |
+| [Verbal Syntax](../../../notebooks/ot/syntax/verbal_syntax/) | Wayyiqtol narrative chains and verb form profiles by genre |
 
 ---
 

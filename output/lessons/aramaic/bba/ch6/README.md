@@ -26,7 +26,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Aramaic Nominal Morphology](../../../../../notebooks/ot/aramaic/aramaic_nominal.ipynb) | Construct state frequency; gender × state crosstab; top Aramaic nouns in construct |
+| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Construct state frequency; gender × state crosstab; top Aramaic nouns in construct |
 
 ---
 

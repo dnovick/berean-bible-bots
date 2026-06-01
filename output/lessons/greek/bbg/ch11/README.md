@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Divine Names & Christological Titles](../../../../../notebooks/both/survey/divine_names.ipynb) | How θεός, κύριος, Ἰησοῦς, Χριστός, πατήρ, πνεῦμα distribute across the NT |
+| [Divine Names & Christological Titles](../../../notebooks/both/survey/divine_names/) | How θεός, κύριος, Ἰησοῦς, Χριστός, πατήρ, πνεῦμα distribute across the NT |
 
 ---
 

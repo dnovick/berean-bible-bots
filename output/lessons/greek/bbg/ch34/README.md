@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Morphological Distribution](../../../../../notebooks/both/lexicon/morph_distribution.ipynb) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
+| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
 
 ---
 

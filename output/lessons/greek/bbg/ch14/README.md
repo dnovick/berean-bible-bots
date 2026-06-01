@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [NT Syntactic Roles](../../../../../notebooks/nt/syntax/syntactic_roles_nt.ipynb) | Clause-level syntactic role analysis |
+| [NT Syntactic Roles](../../../notebooks/nt/syntax/syntactic_roles_nt/) | Clause-level syntactic role analysis |
 
 ---
 

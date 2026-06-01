@@ -33,8 +33,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Qal Stem](../../../../../notebooks/ot/verbs/qal.ipynb) | Qal stem: imperative distribution by book and root |
-| [OT Speaker Attribution](../../../../../notebooks/ot/speakers/speaker_attribution.ipynb) | OT speaker attribution: find who issues imperatives in each book |
+| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: imperative distribution by book and root |
+| [OT Speaker Attribution](../../../notebooks/ot/speakers/speaker_attribution/) | OT speaker attribution: find who issues imperatives in each book |
 
 ---
 

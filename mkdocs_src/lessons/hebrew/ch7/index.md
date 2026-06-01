@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [OT Noun Morphology](../../../../../notebooks/ot/nouns/ot_nouns.ipynb) | Noun gender distribution across the OT; adjective-noun agreement patterns by book |
+| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Noun gender distribution across the OT; adjective-noun agreement patterns by book |
 
 ---
 

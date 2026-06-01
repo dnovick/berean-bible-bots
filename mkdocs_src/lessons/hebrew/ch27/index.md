@@ -44,7 +44,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hiphil Stem](../../../../../notebooks/ot/verbs/hiphil.ipynb) | Hiphil stem: root×conjugation heatmap, weak root behavior in the causative |
+| [Hiphil Stem](../../../notebooks/ot/verbs/hiphil/) | Hiphil stem: root×conjugation heatmap, weak root behavior in the causative |
 
 ---
 

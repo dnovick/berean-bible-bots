@@ -29,11 +29,11 @@ For each item students supply: (1) an English translation of the Hiphil form, (2
 
 ## Sample Questions
 
-**Q1.** 1 יָדַע to know הוֹדִיעַ Perfect 3ms Deu 4:9 Causative Simple Action
+**Q1.** 1 יָדַע to know הוֹדִיעַ Perfect 3ms Deu 4:9 Causative Factitive Declarative Simple Action
 > **A:** 1 יָדַע to know הוֹדִיעַ Perfect 3ms Deu 4:9 he made known / declared Causative Causing others to know; Qal = to know
 
-**Q2.** 2 יָצָא to go out הוֹצִיא Perfect 3ms Gen 15:7 Causative Simple Action
+**Q2.** 2 יָצָא to go out הוֹצִיא Perfect 3ms Gen 15:7 Causative Factitive Declarative Simple Action
 > **A:** 2 יָצָא to go out הוֹצִיא Perfect 3ms Gen 15:7 he brought out Causative God caused Abram to exit Ur; Qal = go out
 
-**Q3.** 3 יָשַׁב to sit, dwell הוֹשִׁיב Wayyiqtol 3ms Gen 47:11 Causative Simple Action
+**Q3.** 3 יָשַׁב to sit, dwell הוֹשִׁיב Wayyiqtol 3ms Gen 47:11 Causative Factitive Declarative Simple Action
 > **A:** 3 יָשַׁב to sit, dwell הוֹשִׁיב Wayyiqtol 3ms Gen 47:11 he settled them (in the land) Causative Joseph caused his family to dwell; Qal = to sit/dwell

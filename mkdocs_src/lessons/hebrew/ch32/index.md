@@ -27,7 +27,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Pual Stem](../../../../../notebooks/ot/verbs/pual.ipynb) | Pual stem: complete morphological profile, passive intensive/factitive/birth (יֻלַּד) categories |
+| [Pual Stem](../../../notebooks/ot/verbs/pual/) | Pual stem: complete morphological profile, passive intensive/factitive/birth (יֻלַּד) categories |
 
 ---
 

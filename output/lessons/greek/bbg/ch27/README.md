@@ -23,8 +23,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Greek Participles](../../../../../notebooks/nt/syntax/participles.ipynb) | Present participle frequency; adverbial role count; genre comparison |
-| [Genre Comparison](../../../../../notebooks/both/survey/genre_compare.ipynb) | Present participle distribution by genre and function |
+| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Present participle frequency; adverbial role count; genre comparison |
+| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Present participle distribution by genre and function |
 
 ---
 

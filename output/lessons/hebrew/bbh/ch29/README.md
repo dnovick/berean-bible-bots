@@ -27,7 +27,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hophal Stem](../../../../../notebooks/ot/verbs/hophal.ipynb) | Hophal stem: root×conjugation heatmap; weak root behavior in the causative-passive |
+| [Hophal Stem](../../../notebooks/ot/verbs/hophal/) | Hophal stem: root×conjugation heatmap; weak root behavior in the causative-passive |
 
 ---
 

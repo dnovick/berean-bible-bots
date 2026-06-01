@@ -26,8 +26,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hebrew & Greek Verb Stem Overview](../../../../../notebooks/ot/verbs/stem_overview.ipynb) | Consolidated OT stem statistics including Aramaic verbal context |
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Aramaic verb stem profiles (Peal/Pael/Haphel), conjugation distribution, top roots |
+| [Hebrew & Greek Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | Consolidated OT stem statistics including Aramaic verbal context |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Aramaic verb stem profiles (Peal/Pael/Haphel), conjugation distribution, top roots |
 
 ---
 

@@ -35,7 +35,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Piel Stem](../../../../../notebooks/ot/verbs/piel.ipynb) | Piel stem: complete morphological profile, intensive/factitive/declarative categories |
+| [Piel Stem](../../../notebooks/ot/verbs/piel/) | Piel stem: complete morphological profile, intensive/factitive/declarative categories |
 
 ---
 

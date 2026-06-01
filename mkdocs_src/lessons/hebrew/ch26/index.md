@@ -35,7 +35,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Hiphil Stem](../../../../../notebooks/ot/verbs/hiphil.ipynb) | Hiphil stem: complete morphological profile, causative semantic categories, dominant roots |
+| [Hiphil Stem](../../../notebooks/ot/verbs/hiphil/) | Hiphil stem: complete morphological profile, causative semantic categories, dominant roots |
 
 ---
 

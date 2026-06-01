@@ -27,7 +27,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Pual Stem](../../../../../notebooks/ot/verbs/pual.ipynb) | Pual stem: root×conjugation heatmap; weak root behavior in the passive intensive |
+| [Pual Stem](../../../notebooks/ot/verbs/pual/) | Pual stem: root×conjugation heatmap; weak root behavior in the passive intensive |
 
 ---
 

@@ -26,7 +26,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Aramaic Nominal Morphology](../../../../../notebooks/ot/aramaic/aramaic_nominal.ipynb) | Determined state frequency vs. absolute/construct; Daniel vs. Ezra comparison; top nouns in each state |
+| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Determined state frequency vs. absolute/construct; Daniel vs. Ezra comparison; top nouns in each state |
 
 ---
 

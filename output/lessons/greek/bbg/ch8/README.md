@@ -25,8 +25,8 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Greek Prepositions](../../../../../notebooks/nt/syntax/prepositions.ipynb) | Frequency, case binding, NT vs LXX comparison for all major prepositions |
-| [Discourse Particles](../../../../../notebooks/nt/discourse/discourse_particles.ipynb) | γάρ, οὖν, ἀλλά distribution — contrasting with prepositions in sentence structure |
+| [Greek Prepositions](../../../notebooks/nt/syntax/prepositions/) | Frequency, case binding, NT vs LXX comparison for all major prepositions |
+| [Discourse Particles](../../../notebooks/nt/discourse/discourse_particles/) | γάρ, οὖν, ἀλλά distribution — contrasting with prepositions in sentence structure |
 
 ---
 

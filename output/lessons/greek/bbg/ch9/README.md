@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [GNT Noun Morphology](../../../../../notebooks/nt/nouns/nt_nouns.ipynb) | Case/gender distribution — how adjectives match noun case, gender, number |
+| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution — how adjectives match noun case, gender, number |
 
 ---
 

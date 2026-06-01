@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Biblical Aramaic Overview](../../../../../notebooks/ot/aramaic/aramaic_overview.ipynb) | Pael stem profile; top roots and conjugation distribution |
+| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Pael stem profile; top roots and conjugation distribution |
 
 ---
 

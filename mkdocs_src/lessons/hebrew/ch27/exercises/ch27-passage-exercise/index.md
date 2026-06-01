@@ -20,11 +20,11 @@ An 18-verb parsing exercise (plus 2 bonus items) drawn from Genesis, Exodus, Num
 
 ## Sample Questions
 
-**Q1.** Yes No # noqa: E501
+**Q1.** Yes No # noqa: E501 Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Participle # noqa: E501 3ms 3ms + 2ms suffix 2ms 2ms + 1cs suffix 2mp 1cs 1cs + 2ms suffix ms + article + 2ms suffix ms # noqa: E501 I-guttural III-ח/ע III-א III-ה III-ה + I-guttural III-ה (apocopated) I-נ I-י Biconsonantal Biconsonantal (Qal) I-ה (Qal) I-י (Niphal) # noqa: E501
 > **A:** Yes Perfect 3ms חָטָא III-א he caused to sin
 
-**Q2.** Yes No # noqa: E501
+**Q2.** Yes No # noqa: E501 Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Participle # noqa: E501 3ms 3ms + 2ms suffix 2ms 2ms + 1cs suffix 2mp 1cs 1cs + 2ms suffix ms + article + 2ms suffix ms # noqa: E501 I-guttural III-ח/ע III-א III-ה III-ה + I-guttural III-ה (apocopated) I-נ I-י Biconsonantal Biconsonantal (Qal) I-ה (Qal) I-י (Niphal) # noqa: E501
 > **A:** Yes Weqatal 1cs קוּם Biconsonantal I will establish
 
-**Q3.** Yes No # noqa: E501
+**Q3.** Yes No # noqa: E501 Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Participle # noqa: E501 3ms 3ms + 2ms suffix 2ms 2ms + 1cs suffix 2mp 1cs 1cs + 2ms suffix ms + article + 2ms suffix ms # noqa: E501 I-guttural III-ח/ע III-א III-ה III-ה + I-guttural III-ה (apocopated) I-נ I-י Biconsonantal Biconsonantal (Qal) I-ה (Qal) I-י (Niphal) # noqa: E501
 > **A:** Yes Perfect 3ms עָלָה III-ה + I-guttural he brought up

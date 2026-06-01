@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [Aramaic Nominal Morphology](../../../../../notebooks/ot/aramaic/aramaic_nominal.ipynb) | Pronoun type distribution; pronominal suffix frequency and patterns in Daniel/Ezra |
+| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Pronoun type distribution; pronominal suffix frequency and patterns in Daniel/Ezra |
 
 ---
 

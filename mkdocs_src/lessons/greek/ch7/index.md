@@ -31,7 +31,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [GNT Noun Morphology](../../../../../notebooks/nt/nouns/nt_nouns.ipynb) | Case/gender distribution — genitive and dative cases in context |
+| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution — genitive and dative cases in context |
 
 ---
 

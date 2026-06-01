@@ -22,7 +22,7 @@
 
 | Notebook | What it shows |
 |---|---|
-| [NT Demonstrative Pronouns](../../../../../notebooks/nt/syntax/demonstratives.ipynb) | οὗτος vs. ἐκεῖνος frequency, attributive vs. substantival use, case/gender profiles, near/far genre comparison, John's use of ἐκεῖνος for the Paraclete |
+| [NT Demonstrative Pronouns](../../../notebooks/nt/syntax/demonstratives/) | οὗτος vs. ἐκεῖνος frequency, attributive vs. substantival use, case/gender profiles, near/far genre comparison, John's use of ἐκεῖνος for the Paraclete |
 
 ---
 
