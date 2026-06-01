@@ -7,7 +7,7 @@
 
 ---
 
-In the Hiphil, I-נ roots show *assimilation* of the root נ (R1) into R2 in the conjugations where the Hiphil prefix brings the נ into contact with R2. This occurs in the imperfect, wayyiqtol, imperative, and infinitive construct. In the perfect and participle, the הִ/מַ prefix insulates R1, so no assimilation occurs — the נ is visible.
+In the Hiphil, I-נ roots show *assimilation* of the root נ (R1) into R2 throughout the **entire paradigm** — perfect, imperfect, wayyiqtol, imperative, infinitives, and participle alike. The Hiphil prefix (הִ, יַ, מַ, הַ) brings the נ into direct contact with R2, and the נ assimilates completely, leaving *dagesh forte* in R2 as its only trace. The root's first consonant is never visible in any Hiphil form.
 
 ---
 
@@ -15,9 +15,7 @@ In the Hiphil, I-נ roots show *assimilation* of the root נ (R1) into R2 in the
 
 ### The Pattern
 
-The perfect prefix הִ precedes R1 directly. With R1 = נ, the נ is NOT assimilated in the perfect: the full root is visible. The characteristic *chiriq-yod* appears in the penultimate syllable: הִגִּישׁ / הִפִּיל — wait, in the perfect the נ IS assimilated because it stands between the הִ prefix and R2 (the dagesh-prone position). The נ assimilates into R2 with *dagesh forte* across the full perfect paradigm.
-
-> **Clarification:** I-נ assimilation occurs throughout the Hiphil, including the perfect. The הִ prefix + נ + R2 cluster causes the נ to assimilate into R2: הִנְגִּישׁ → הִגִּישׁ. The *dagesh forte* in R2 is therefore the defining marker in every conjugation.
+The Hiphil perfect prefix הִ stands immediately before R1 (= נ). The נ assimilates into R2, leaving *dagesh forte* in R2: הִ + נ + גשׁ → הִגִּישׁ. The characteristic Hiphil *chiriq-yod* appears in the 3ms/3fs/3cp forms; in the 2ms/1cs the vowel shortens before the suffixes, as in the strong root.
 
 | Person | Strong (קטל) | I-נ (נגשׁ) | I-נ (נפל) |
 |---|---|---|---|
@@ -31,7 +29,7 @@ The perfect prefix הִ precedes R1 directly. With R1 = נ, the נ is NOT assimi
 | 1cs | הִקְטַלְתִּי | הִגַּשְׁתִּי | הִפַּלְתִּי |
 | 1cp | הִקְטַלְנוּ | הִגַּשְׁנוּ | הִפַּלְנוּ |
 
-> **Key:** *Dagesh forte* in R2 throughout the entire Hiphil paradigm — נ has fully assimilated. If you see הִגִּישׁ and wonder why R2 has dagesh, the root is נגשׁ.
+> **Key:** *Dagesh forte* in R2 throughout the entire perfect — the only remaining trace of the assimilated נ.
 
 **Attested passages:**
 - הִגִּישׁ (Amos 9:13) — "the one who plows shall overtake the reaper"
@@ -44,7 +42,7 @@ The perfect prefix הִ precedes R1 directly. With R1 = נ, the נ is NOT assimi
 
 ### The Pattern
 
-The prefix יַ + נ + R2 sequence assimilates the נ into R2. Same as the perfect: *dagesh forte* in R2. No trace of the root נ in the spelling.
+The imperfect prefix (יַ, תַּ, אַ, נַ) stands before the assimilated נ. The נ assimilates into R2 exactly as in the perfect, leaving *dagesh forte* in R2. The standard Hiphil *chiriq-yod* appears in the penultimate syllable.
 
 | Person | Strong (קטל) | I-נ (נגשׁ) | I-נ (נפל) |
 |---|---|---|---|
@@ -57,7 +55,7 @@ The prefix יַ + נ + R2 sequence assimilates the נ into R2. Same as the perfe
 | 1cs | אַקְטִיל | אַגִּישׁ | אַפִּיל |
 | 1cp | נַקְטִיל | נַגִּישׁ | נַפִּיל |
 
-> **Key:** *Patach* prefix (יַ) + *dagesh forte* in R2 + *chiriq-yod* — clean three-marker pattern.
+> **Key:** *Patach* prefix vowel + *dagesh forte* in R2 + *chiriq-yod*.
 
 **Attested passages:**
 - יַפִּיל (Pro 19:15) — "slothfulness casts into a deep sleep"
@@ -69,7 +67,7 @@ The prefix יַ + נ + R2 sequence assimilates the נ into R2. Same as the perfe
 
 ### The Pattern
 
-Standard Hiphil wayyiqtol pattern with *dagesh forte* in R2.
+The wayyiqtol follows the same assimilation: *dagesh forte* in R2. The standard Hiphil wayyiqtol *tsere* appears in the final syllable of 3ms/3fs forms.
 
 | Person | Strong (קטל) | I-נ (נגשׁ) | I-נ (נפל) |
 |---|---|---|---|
@@ -79,7 +77,7 @@ Standard Hiphil wayyiqtol pattern with *dagesh forte* in R2.
 | 2ms | וַתַּקְטֵל | וַתַּגֵּשׁ | וַתַּפֵּל |
 | 1cs | וָאַקְטֵל | וָאַגֵּשׁ | וָאַפֵּל |
 
-> **Key:** וַיַּ prefix + *dagesh forte* in R2 + *tsere* final — the dagesh is the proof of I-נ.
+> **Key:** וַיַּ prefix + *dagesh forte* in R2 + *tsere* final.
 
 **Attested passages:**
 - וַיַּגֵּשׁ (Gen 18:23) — "Abraham drew near and said"
@@ -91,7 +89,7 @@ Standard Hiphil wayyiqtol pattern with *dagesh forte* in R2.
 
 ### The Pattern
 
-Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
+Weqatal = וְ + perfect. *Dagesh forte* in R2 throughout, identical to the perfect pattern.
 
 | Person | Strong (קטל) | I-נ (נפל) |
 |---|---|---|
@@ -105,7 +103,7 @@ Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
 
 ### The Pattern
 
-הַ prefix + *dagesh forte* in R2 + *tsere* (2ms).
+The Hiphil imperative prefix הַ precedes the assimilated נ: *dagesh forte* in R2. The 2ms ends in *tsere*; longer forms take *chiriq-yod*.
 
 | Form | Strong (קטל) | I-נ (נגשׁ) | I-נ (נפל) |
 |---|---|---|---|
@@ -126,14 +124,14 @@ Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
 
 ### The Pattern
 
-הַ prefix + *dagesh forte* in R2 + *chiriq-yod* final.
+The Hiphil infinitive construct prefix הַ precedes the assimilated נ: *dagesh forte* in R2, followed by *chiriq-yod*. The form looks identical to the imperfect 3ms; the prefix vowel (*patach* הַ) and prepositional context distinguish it from the perfect 3ms (הִגִּישׁ, which has *hiriq* הִ).
 
 | Form | Strong (קטל) | I-נ (נגשׁ) | I-נ (נפל) |
 |---|---|---|---|
 | Base | הַקְטִיל | הַגִּישׁ | הַפִּיל |
 | With לְ | לְהַקְטִיל | לְהַגִּישׁ | לְהַפִּיל |
 
-> **Key:** Identical to the perfect 3ms in vocalization (הַגִּישׁ vs. הִגִּישׁ) — distinguished only by the prefix vowel (*patach* הַ in inf. construct, *hiriq* הִ in perfect).
+> **Key:** *Patach* under הַ + *dagesh forte* in R2 + *chiriq-yod*. Distinguished from the perfect 3ms only by the prefix vowel: הַ (*patach*) vs. הִ (*hiriq*).
 
 **Attested passages:**
 - לְהַגִּישׁ (Mal 1:7) — "by offering polluted food on my altar"
@@ -145,7 +143,7 @@ Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
 
 ### The Pattern
 
-הַ prefix + *dagesh forte* in R2 + *tsere* final.
+The Hiphil infinitive absolute takes *dagesh forte* in R2 and ends in *tsere*.
 
 | Form | Strong (קטל) | I-נ (נפל) |
 |---|---|---|
@@ -157,7 +155,7 @@ Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
 
 ### The Pattern
 
-מַ prefix + *dagesh forte* in R2 + *chiriq-yod*.
+The Hiphil participle prefix מַ precedes the assimilated נ: *dagesh forte* in R2, followed by *chiriq-yod* in the ms form. The assimilation is present in the participle just as in every other conjugation.
 
 | Form | Strong (קטל) | I-נ (נגשׁ) | I-נ (נפל) |
 |---|---|---|---|
@@ -166,11 +164,10 @@ Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
 | mp | מַקְטִילִים | מַגִּישִׁים | מַפִּילִים |
 | fp | מַקְטִילוֹת | מַגִּישׁוֹת | מַפִּילוֹת |
 
-> **Key:** מַ + *dagesh forte* in R2 — always reveals I-נ assimilation.
+> **Key:** מַ + *dagesh forte* in R2 + *chiriq-yod* (ms).
 
 **Attested passages:**
-- מַגִּישׁ (Mal 1:7) — "you are defiling [the altar] when you say the table of the LORD may be despised"
-- מַפִּיל (†) — expected; attested in liturgical/poetic texts
+- מַגִּישׁ (Mal 2:12) — "one who brings an offering to the LORD of hosts"
 
 ---
 
@@ -178,11 +175,11 @@ Weqatal = וְ + perfect. Dagesh forte in R2 throughout.
 
 | Conjugation | Strong (קטל) | I-נ (נגשׁ) | Key feature |
 |---|---|---|---|
-| Perfect | הִקְטִיל | הִגִּישׁ | *Dagesh forte* in R2; נ invisible |
-| Imperfect | יַקְטִיל | יַגִּישׁ | *Patach* prefix + *dagesh* in R2 |
+| Perfect | הִקְטִיל | הִגִּישׁ | *Hiriq* הִ prefix + *dagesh* in R2 |
+| Imperfect | יַקְטִיל | יַגִּישׁ | *Patach* prefix + *dagesh* in R2 + *chiriq-yod* |
 | Wayyiqtol | וַיַּקְטֵל | וַיַּגֵּשׁ | *Dagesh* in R2 + *tsere* final |
 | Weqatal | וְהִקְטִיל | וְהִגִּישׁ | Same as perfect |
-| Imperative | הַקְטֵל | הַגֵּשׁ | *Dagesh* in R2 + *tsere* (2ms) |
-| Inf. Construct | הַקְטִיל | הַגִּישׁ | *Patach* under הַ distinguishes from perfect |
-| Inf. Absolute | הַקְטֵל | הַגֵּשׁ | Same as imperative 2ms |
-| Participle | מַקְטִיל | מַגִּישׁ | מַ + *dagesh* in R2 + *chiriq-yod* |
+| Imperative | הַקְטֵל | הַגֵּשׁ | *Patach* הַ prefix + *dagesh* in R2 + *tsere* (2ms) |
+| Inf. Construct | הַקְטִיל | הַגִּישׁ | *Patach* הַ (vs. *hiriq* הִ in perfect) + *dagesh* in R2 |
+| Inf. Absolute | הַקְטֵל | הַגֵּשׁ | *Dagesh* in R2 + *tsere* |
+| Participle | מַקְטִיל | מַגִּישׁ | מַ prefix + *dagesh* in R2 + *chiriq-yod* |
