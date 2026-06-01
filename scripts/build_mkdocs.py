@@ -670,11 +670,16 @@ def _build_report_dir(
         content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
         (dst_dir / "index.md").write_text(content, encoding="utf-8")
 
-    # Copy individual .md reports (not README)
-    md_files = sorted(f for f in src_dir.glob("*.md") if f.name != "README.md")
+    # Copy individual .md reports (not README, and not index.md when README exists
+    # — README is already written as index.md above, so including index.md here
+    # would both overwrite it and create a duplicate nav entry)
+    _skip = {"README.md"} | ({"index.md"} if readme.exists() else set())
+    md_files = sorted(f for f in src_dir.glob("*.md") if f.name not in _skip)
     for md in md_files:
         content = md.read_text(encoding="utf-8")
         content = _rewrite_chart_paths(content, depth)
+        # Rewrite README.md links → index.md in all copied files
+        content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
         (dst_dir / md.name).write_text(content, encoding="utf-8")
 
     # Copy non-md assets (.csv, .png, .pdf, etc.)
