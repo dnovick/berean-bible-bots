@@ -144,140 +144,136 @@ CLASSES = ['I-guttural', 'III-ח/ע', 'III-א', 'III-ה',
 # ── Exercise 1: Biconsig Drill ────────────────────────────────────────────────
 
 # (n, form, ref, ctx,  stem, conj, pgn, weak_class, root, note)
+# Items interleaved: stem and class alternate so students must evaluate each form
+# independently. Sequence: N/B, H/B, N/G, H/G, N/B(new), H/G(new), N/B, H/B,
+# N/G, H/G, N/B(new), H/B(new), N/B, H/B, N/G, H/G, N/B, Hophal/B,
+# N/G, H/B, N/B, H/G, Q/B, Q/B
 _BG_DATA = [
-    # Part A — Niphal: Biconsonantal vs. Geminate
-    ('1', 'נָכוֹן', 'Gen 41:32', 'the thing is ___ by God',
+    ('1',  'נָכוֹן',   'Gen 41:32',   'the thing is ___ by God',
      'Niphal', 'Perfect/Participle', '3ms / ms', 'Biconsonantal', 'כּוּן',
      'נָ prefix (qamets) = Niphal; medial ו vowel letter identifies Biconsonantal, not Geminate'),
-    ('2', 'נָסַב', '1 Kgs 7:24', 'the gourds ___ it, ten to a cubit',
-     'Niphal', 'Perfect', '3ms', 'Geminate', 'סָבַב',
-     'נָ prefix (qamets) = Niphal; R2=R3=ב identifies Geminate; compare Biconsonantal נָכוֹן'),
-    ('3', 'יִכּוֹן', 'Psa 93:2', 'your throne ___ from of old',
-     'Niphal', 'Imperfect', '3ms', 'Biconsonantal', 'כּוּן',
-     'יִ prefix + dagesh in כּ (Niphal imperfect) + contracted holem-vav root = Biconsonantal'),
-    ('4', 'יִסֹּב', 'Num 21:4', 'they traveled ___ Mount Edom',
-     'Niphal', 'Imperfect', '3ms', 'Geminate', 'סָבַב',
-     'יִ prefix + dagesh in סּ (R2=R3 doubled) + holem in contracted root = Geminate'),
-    ('5', 'הֵכּוֹן', 'Psa 57:8', 'my heart is ___, O God',
-     'Niphal', 'Perfect', '3ms', 'Biconsonantal', 'כּוּן',
-     'הֵ prefix (tsere) + dagesh + contracted holem-vav = Niphal Biconsonantal perfect'),
-    ('6', 'נָסֹב', 'Josh 15:3', 'the border ___ from the south',
-     'Niphal', 'Perfect', '3ms', 'Geminate', 'סָבַב',
-     'נָ prefix (qamets) = Niphal; holem in root shows contraction of R2=R3 = Geminate'),
-    ('7', 'הִסֹּב', '2 Sam 18:30', 'the king said, ___ and stand here',
-     'Niphal', 'Imperative', '2ms', 'Geminate', 'סָבַב',
-     'הִ prefix + dagesh forte in ב (R2=R3) = Niphal Geminate imperative'),
-    ('8', 'תִּכּוֹן', 'Psa 5:3', 'in the morning I ___ my prayer',
-     'Niphal', 'Imperfect', '2ms / 3fs', 'Biconsonantal', 'כּוּן',
-     'תִּ prefix + dagesh in כּ + holem-vav = Niphal Biconsonantal imperfect'),
-    # Part B — Hiphil: Biconsonantal vs. Geminate
-    ('9', 'הֵקִים', 'Gen 6:18', 'I will ___ my covenant with you',
+    ('2',  'הֵקִים',   'Gen 6:18',    'I will ___ my covenant with you',
      'Hiphil', 'Perfect', '3ms', 'Biconsonantal', 'קוּם',
      'הֵ prefix (tsere) = Hiphil; chiriq-yod in stem = Biconsonantal; no R2=R3'),
-    ('10', 'הֵסֵב', '2 Kgs 16:18', 'he ___ the king\'s entry',
+    ('3',  'נָסַב',   '1 Kgs 7:24',  'the gourds ___ it, ten to a cubit',
+     'Niphal', 'Perfect', '3ms', 'Geminate', 'סָבַב',
+     'נָ prefix (qamets) = Niphal; R2=R3=ב identifies Geminate; compare Biconsonantal נָכוֹן'),
+    ('4',  'הֵסֵב',   '2 Kgs 16:18', 'he ___ the king\'s entry',
      'Hiphil', 'Perfect', '3ms', 'Geminate', 'סָבַב',
      'הֵ prefix (tsere) = Hiphil; tsere in contracted stem, R2=R3=ב = Geminate'),
-    ('11', 'יָקִים', 'Deu 18:15', 'the LORD your God will ___ up a prophet',
-     'Hiphil', 'Imperfect', '3ms', 'Biconsonantal', 'קוּם',
-     'יָ prefix (qamets) = Hiphil Biconsonantal imperfect; chiriq-yod medial vowel letter'),
-    ('12', 'יָסֵב', 'Eccl 1:6', 'the wind ___ to the south',
-     'Hiphil', 'Imperfect', '3ms', 'Geminate', 'סָבַב',
-     'יָ prefix (qamets) = Hiphil; tsere in contracted root; R2=R3=ב = Geminate'),
-    ('13', 'הָקֵם', 'Deu 27:26', '"___ the words of this law"',
-     'Hiphil', 'Imperative', '2ms', 'Biconsonantal', 'קוּם',
-     'הָ prefix (qamets) = Hiphil Biconsonantal imperative; tsere final; chiriq in stem'),
-    ('14', 'הָסֵב', '2 Sam 2:22', '___ from following me',
-     'Hiphil', 'Imperative', '2ms', 'Geminate', 'סָבַב',
-     'הָ prefix (qamets) = Hiphil; tsere in contracted R2=R3 stem = Geminate'),
-    ('15', 'מֵקִים', '1 Sam 2:8', 'He ___ the poor from the dust',
-     'Hiphil', 'Participle', 'ms', 'Biconsonantal', 'קוּם',
-     'מֵ prefix (tsere) = Hiphil participle; chiriq-yod medial vowel letter = Biconsonantal'),
-    ('16', 'מֵסֵב', 'Jer 21:4', 'turning around the weapons of war ___',
-     'Hiphil', 'Participle', 'ms', 'Geminate', 'סָבַב',
-     'מֵ prefix (tsere) = Hiphil participle; tsere in contracted R2=R3 = Geminate'),
-    # Part C — Mixed
-    ('17', 'נָמֹוג', 'Isa 14:31', 'all Philistia ___',
+    ('5',  'נָמֹוג',  'Isa 14:31',   'all Philistia ___',
      'Niphal', 'Perfect', '3ms', 'Biconsonantal', 'מוּג',
-     'נָ prefix + medial ו = Niphal Biconsonantal; root מוּג = to melt'),
-    ('18', 'הֵמַסּוּ', 'Deu 1:28', 'our brothers ___ our hearts',
+     'נָ prefix + medial ו = Niphal Biconsonantal; root מוּג = to melt; same pattern as נָכוֹן'),
+    ('6',  'הֵמַסּוּ', 'Deu 1:28',    'our brothers ___ our hearts',
      'Hiphil', 'Perfect', '3cp', 'Geminate', 'מסס',
      'הֵ prefix (tsere) = Hiphil; R2=R3=ס with dagesh forte = Geminate'),
-    ('19', 'יָרֻם', 'Isa 52:13', 'my servant shall be high and ___ up',
+    ('7',  'יִכּוֹן',  'Psa 93:2',    'your throne ___ from of old',
+     'Niphal', 'Imperfect', '3ms', 'Biconsonantal', 'כּוּן',
+     'יִ prefix + dagesh in כּ (Niphal imperfect) + contracted holem-vav root = Biconsonantal'),
+    ('8',  'יָקִים',   'Deu 18:15',   'the LORD your God will ___ up a prophet',
+     'Hiphil', 'Imperfect', '3ms', 'Biconsonantal', 'קוּם',
+     'יָ prefix (qamets) = Hiphil Biconsonantal imperfect; chiriq-yod medial vowel letter'),
+    ('9',  'יִסֹּב',   'Num 21:4',    'they traveled ___ Mount Edom',
+     'Niphal', 'Imperfect', '3ms', 'Geminate', 'סָבַב',
+     'יִ prefix + dagesh in סּ (R2=R3 doubled) + holem in contracted root = Geminate'),
+    ('10', 'יָסֵב',    'Eccl 1:6',    'the wind ___ to the south',
+     'Hiphil', 'Imperfect', '3ms', 'Geminate', 'סָבַב',
+     'יָ prefix (qamets) = Hiphil; tsere in contracted root; R2=R3=ב = Geminate'),
+    ('11', 'יָרֻם',    'Isa 52:13',   'my servant shall be high and ___ up',
      'Niphal', 'Imperfect', '3ms', 'Biconsonantal', 'רוּם',
      'יָ prefix + qibbutz under R2 (passive vowel) = Niphal Biconsonantal; contrast Hiphil יָרִים'),
-    ('20', 'יָרֹם', 'Psa 99:2', 'great is the LORD, and ___ above all peoples',
-     'Niphal', 'Imperfect', '3ms', 'Biconsonantal', 'רוּם',
-     'יָ prefix + holem under R2 = Niphal Biconsonantal; compare Hiphil יָרִים (chiriq)'),
-    ('21', 'הֵרִים', 'Gen 14:22', 'I have ___ my hand to the LORD',
+    ('12', 'הֵרִים',   'Gen 14:22',   'I have ___ my hand to the LORD',
      'Hiphil', 'Perfect', '3ms', 'Biconsonantal', 'רוּם',
      'הֵ prefix (tsere) + chiriq-yod = Hiphil Biconsonantal perfect; causative — lifted up'),
-    ('22', 'הוּרַם', 'Lev 4:10', 'just as it is ___ from the ox of peace offerings',
+    ('13', 'הֵכּוֹן',  'Psa 57:8',    'my heart is ___, O God',
+     'Niphal', 'Perfect', '3ms', 'Biconsonantal', 'כּוּן',
+     'הֵ prefix (tsere) + dagesh + contracted holem-vav = Niphal Biconsonantal perfect'),
+    ('14', 'הָקֵם',    'Deu 27:26',   '"___ the words of this law"',
+     'Hiphil', 'Imperative', '2ms', 'Biconsonantal', 'קוּם',
+     'הָ prefix (qamets) = Hiphil Biconsonantal imperative; tsere final; chiriq in stem'),
+    ('15', 'נָסֹב',    'Josh 15:3',   'the border ___ from the south',
+     'Niphal', 'Perfect', '3ms', 'Geminate', 'סָבַב',
+     'נָ prefix (qamets) = Niphal; holem in root shows contraction of R2=R3 = Geminate'),
+    ('16', 'הָסֵב',    '2 Sam 2:22',  '___ from following me',
+     'Hiphil', 'Imperative', '2ms', 'Geminate', 'סָבַב',
+     'הָ prefix (qamets) = Hiphil; tsere in contracted R2=R3 stem = Geminate'),
+    ('17', 'יָרֹם',    'Psa 99:2',    'great is the LORD, and ___ above all peoples',
+     'Niphal', 'Imperfect', '3ms', 'Biconsonantal', 'רוּם',
+     'יָ prefix + holem under R2 = Niphal Biconsonantal; compare Hiphil יָרִים (chiriq)'),
+    ('18', 'הוּרַם',   'Lev 4:10',    'just as it is ___ from the ox of peace offerings',
      'Hophal', 'Perfect', '3ms', 'Biconsonantal', 'רוּם',
      'הוּ prefix (holem-vav) = Hophal (passive of Hiphil), not Niphal or Hiphil'),
-    ('23', 'יָשׁוּב', 'Hos 14:8', 'they ___ in the shade',
+    ('19', 'הִסֹּב',   '2 Sam 18:30', 'the king said, ___ and stand here',
+     'Niphal', 'Imperative', '2ms', 'Geminate', 'סָבַב',
+     'הִ prefix + dagesh forte in ב (R2=R3) = Niphal Geminate imperative'),
+    ('20', 'מֵקִים',   '1 Sam 2:8',   'He ___ the poor from the dust',
+     'Hiphil', 'Participle', 'ms', 'Biconsonantal', 'קוּם',
+     'מֵ prefix (tsere) = Hiphil participle; chiriq-yod medial vowel letter = Biconsonantal'),
+    ('21', 'תִּכּוֹן',  'Psa 5:3',     'in the morning I ___ my prayer',
+     'Niphal', 'Imperfect', '2ms / 3fs', 'Biconsonantal', 'כּוּן',
+     'תִּ prefix + dagesh in כּ + holem-vav = Niphal Biconsonantal imperfect'),
+    ('22', 'מֵסֵב',    'Jer 21:4',    'turning around the weapons of war ___',
+     'Hiphil', 'Participle', 'ms', 'Geminate', 'סָבַב',
+     'מֵ prefix (tsere) = Hiphil participle; tsere in contracted R2=R3 = Geminate'),
+    ('23', 'יָשׁוּב',  'Hos 14:8',    'they ___ in the shade',
      'Qal', 'Imperfect', '3ms', 'Biconsonantal', 'שׁוּב',
      'Qal Biconsonantal — no Niphal נ or Hiphil הֵ/מֵ marker; medial ו retained'),
-    ('24', 'יָשֹׁב', 'Lam 1:11', 'all her people ___ to find bread',
+    ('24', 'יָשֹׁב',   'Lam 1:11',    'all her people ___ to find bread',
      'Qal', 'Imperfect', '3ms', 'Biconsonantal', 'שׁוּב',
      'Qal Biconsonantal; holem vowel grade vs. shureq in יָשׁוּב — both Qal, not Niphal/Hiphil'),
 ]
 
-_BG_SECTIONS = [
-    ('Part A — Niphal: Biconsonantal vs. Geminate', range(1, 9)),
-    ('Part B — Hiphil: Biconsonantal vs. Geminate', range(9, 17)),
-    ('Part C — Mixed: Stem and Class Both Unknown', range(17, 25)),
-]
-
 _BG_DISC = [
-    'Items 1 (<span class="heb">נָכוֹן</span>) and 2 (<span class="heb">נָסַב</span>) '
+    'Items 1 (<span class="heb">נָכוֹן</span>) and 3 (<span class="heb">נָסַב</span>) '
     'have the same prefix vowel (נָ, qamets) and nearly identical shapes. What is the only '
     'reliable way to know that <span class="heb">נָכוֹן</span> is Biconsonantal (root '
     '<span class="heb">כּוּן</span>) and <span class="heb">נָסַב</span> is Geminate '
     '(root <span class="heb">סָבַב</span>)?',
 
-    'Items 9 (<span class="heb">הֵקִים</span>) and 10 (<span class="heb">הֵסֵב</span>) '
+    'Items 2 (<span class="heb">הֵקִים</span>) and 4 (<span class="heb">הֵסֵב</span>) '
     'both have הֵ prefix (tsere). One retains a medial vowel letter and the other does not. '
     'Explain in one sentence how that difference reveals the class.',
 
-    'Part C includes roots מוּג, רוּם, and שׁוּב — none covered directly in the drill. '
-    'How do you apply the Biconsonantal/Geminate diagnostic to an unfamiliar root? '
-    'What is the one question you must ask?',
+    'Items 8 (<span class="heb">יָקִים</span>, Hiphil) and 11 '
+    '(<span class="heb">יָרֻם</span>, Niphal) both begin with יָ (qamets). '
+    'What vowel under R2 distinguishes the Hiphil from the Niphal in these imperfect forms?',
 
-    'Items 22 (<span class="heb">הוּרַם</span>) is Hophal, not Niphal or Hiphil. '
-    'What prefix vowel distinguishes Hophal from Hiphil in the perfect?',
+    'Item 18 (<span class="heb">הוּרַם</span>) is Hophal, not Niphal or Hiphil. '
+    'What prefix vowel distinguishes Hophal from Hiphil in the perfect? '
+    'How does it differ from the Niphal הֵ prefix seen in item 13?',
+
+    'Items 23–24 (<span class="heb">יָשׁוּב</span> / <span class="heb">יָשֹׁב</span>) '
+    'are both Qal. Neither has the standard Niphal or Hiphil prefix markers. '
+    'What is the only vowel difference between them, and what does it tell you '
+    'about the stem?',
 ]
 
 
-def _bg_table_section(rows: list, section_range: range, ans: dict, id_prefix: str = '') -> str:
+def _bg_table(rows: list) -> str:
+    # 9 columns, no Context — fits comfortably at 960px without overflow
     out = (
-        '<table><thead><tr>'
-        '<th style="width:3%">#</th>'
-        '<th style="width:11%">Form</th>'
-        '<th style="width:12%">Reference</th>'
-        '<th style="width:22%">Context</th>'
-        '<th style="width:10%">Stem</th>'
-        '<th style="width:13%">Conjugation</th>'
+        '<table style="table-layout:auto"><thead><tr>'
+        '<th style="width:3%;white-space:nowrap">#</th>'
+        '<th style="width:13%">Form</th>'
+        '<th style="width:11%">Reference</th>'
+        '<th style="width:11%">Stem</th>'
+        '<th style="width:14%">Conjugation</th>'
         '<th style="width:8%">PGN</th>'
-        '<th style="width:11%">Weak Class</th>'
+        '<th style="width:12%">Weak Class</th>'
         '<th style="width:8%">Root</th>'
         '<th style="width:2%"></th>'
         '</tr></thead><tbody>'
     )
-    stems_used = list({r[4] for r in rows if int(r[0]) in section_range})
-    stems_sel = sorted(set(STEMS) | set(stems_used))
-
     for row in rows:
         n, form, ref, ctx, stem, conj, pgn, wclass, root, note = row
-        if int(n) not in section_range:
-            continue
-        rid = f'{id_prefix}{n}'
+        rid = f'bg{n}'
         out += (
             f'<tr>'
             f'<td>{n}</td>'
-            f'<td><span class="heb">{form}</span></td>'
-            f'<td>{ref}</td>'
-            f'<td>"{ctx}"</td>'
-            f'<td>{_sel(stems_sel)}</td>'
+            f'<td><span class="heb">{form}</span>'
+            f'<br><small style="color:#666">{ref}</small></td>'
+            f'<td style="display:none">{ref}</td>'
+            f'<td>{_sel(STEMS)}</td>'
             f'<td>{_sel(CONJS)}</td>'
             f'<td>{_sel(PGNS)}</td>'
             f'<td>{_sel(CLASSES)}</td>'
@@ -287,14 +283,13 @@ def _bg_table_section(rows: list, section_range: range, ans: dict, id_prefix: st
             f'<tr class="ans-row" id="{rid}">'
             f'<td></td>'
             f'<td><span class="heb">{form}</span></td>'
-            f'<td>{ref}</td>'
-            f'<td></td>'
+            f'<td style="display:none"></td>'
             f'<td><strong>{stem}</strong></td>'
             f'<td><strong>{conj}</strong></td>'
             f'<td><strong>{pgn}</strong></td>'
             f'<td><strong>{wclass}</strong></td>'
             f'<td style="direction:rtl;unicode-bidi:embed;"><strong>{root}</strong></td>'
-            f'<td><em style="color:#555;font-size:.8em;">{note}</em></td>'
+            f'<td><em style="color:#666;font-size:.8em">{note}</em></td>'
             f'</tr>'
         )
     out += '</tbody></table>'
@@ -302,10 +297,17 @@ def _bg_table_section(rows: list, section_range: range, ans: dict, id_prefix: st
 
 
 def build_bg_html() -> Path:
-    body = ''
-    for section_title, section_range in _BG_SECTIONS:
-        body += f'<h2>{section_title}</h2>'
-        body += _bg_table_section(_BG_DATA, section_range, {}, '')
+    body = (
+        '<div class="note">'
+        'All 24 forms are drawn from Biconsonantal and Geminate roots across '
+        'all four stems (Niphal, Hiphil, Hophal, Qal). For each form: '
+        'identify the <strong>stem</strong>, <strong>conjugation</strong>, '
+        '<strong>PGN</strong>, <strong>weak class</strong> '
+        '(Biconsonantal or Geminate), and <strong>root</strong>.'
+        '</div>'
+        '<h2>Mixed Drill — 24 Items</h2>'
+    )
+    body += _bg_table(_BG_DATA)
     body += '<h2>Discussion Questions</h2><ol class="disc-q">'
     for q in _BG_DISC:
         body += f'<li>{q}</li>'
@@ -331,26 +333,24 @@ def build_bg_md() -> Path:
         '',
         '## Instructions',
         '',
-        'For each form: identify the **stem** (Niphal / Hiphil / Qal / Hophal), '
+        'For each form: identify the **stem** (Niphal / Hiphil / Hophal / Qal), '
         '**conjugation**, **PGN**, **weak class** (Biconsonantal or Geminate), and **root**.',
         '',
+        '## Mixed Drill — 24 Items',
+        '',
+        '| # | Form | Reference | Stem | Conj | PGN | Class | Root |',
+        '|---|---|---|---|---|---|---|---|',
     ]
-    for section_title, section_range in _BG_SECTIONS:
-        lines += [f'## {section_title}', '',
-                  '| # | Form | Reference | Context | Stem | Conj | PGN | Class | Root |',
-                  '|---|---|---|---|---|---|---|---|---|']
-        for row in _BG_DATA:
-            n, form, ref, ctx, *_ = row
-            if int(n) in section_range:
-                lines.append(f'| {n} | {form} | {ref} | "{ctx}" | | | | | |')
-        lines.append('')
-
-    lines += ['---', '', '## Answer Key', '',
+    for n, form, ref, ctx, *_ in _BG_DATA:
+        lines.append(f'| {n} | {form} | {ref} | | | | | |')
+    lines += ['', '---', '', '## Answer Key', '',
               '| # | Form | Stem | Conjugation | PGN | Weak Class | Root | Note |',
               '|---|---|---|---|---|---|---|---|']
     for n, form, ref, ctx, stem, conj, pgn, wclass, root, note in _BG_DATA:
         note_short = note[:70] + '…' if len(note) > 70 else note
-        lines.append(f'| {n} | {form} | {stem} | {conj} | {pgn} | {wclass} | {root} | {note_short} |')
+        lines.append(
+            f'| {n} | {form} | {stem} | {conj} | {pgn} | {wclass} | {root} | {note_short} |'
+        )
     lines.append('')
 
     out = OUT_ROOT / 'ch27-biconsig-drill' / 'ch27-biconsig-drill.md'
