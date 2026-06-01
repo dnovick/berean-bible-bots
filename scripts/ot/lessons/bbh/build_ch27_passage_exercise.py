@@ -293,10 +293,10 @@ def _item_html(num: str, form: str, ref: str, heb: str, kjv: str,
     <tbody>
       <tr class="input-row">
         <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>  # noqa: E501
-        <td><input class="parse-field" type="text"></td>
-        <td><input class="parse-field" type="text"></td>
+        <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Participle">Participle</option></select></td>  # noqa: E501
+        <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3ms + 2ms suffix">3ms + 2ms suffix</option><option value="2ms">2ms</option><option value="2ms + 1cs suffix">2ms + 1cs suffix</option><option value="2mp">2mp</option><option value="1cs">1cs</option><option value="1cs + 2ms suffix">1cs + 2ms suffix</option><option value="ms + article + 2ms suffix">ms + article + 2ms suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>  # noqa: E501
         <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
-        <td><input class="parse-field" type="text"></td>
+        <td><select class="parse-field"><option value=""></option><option value="I-guttural">I-guttural</option><option value="III-ח/ע">III-ח/ע</option><option value="III-א">III-א</option><option value="III-ה">III-ה</option><option value="III-ה + I-guttural">III-ה + I-guttural</option><option value="III-ה (apocopated)">III-ה (apocopated)</option><option value="I-נ">I-נ</option><option value="I-י">I-י</option><option value="Biconsonantal">Biconsonantal</option><option value="Biconsonantal (Qal)">Biconsonantal (Qal)</option><option value="I-ה (Qal)">I-ה (Qal)</option><option value="I-י (Niphal)">I-י (Niphal)</option></select></td>  # noqa: E501
         <td><input class="parse-field" type="text"></td>
       </tr>
       {ans_html}
