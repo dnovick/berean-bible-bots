@@ -27,3 +27,4 @@ mkdocs_nav.yml
 
 # Generated student zip packages — committed so students can download from GitHub
 # output/student-packs/
+.idea/
