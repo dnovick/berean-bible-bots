@@ -693,8 +693,13 @@ def _build_report_dir(
         sub_entries: list = []
         _build_report_dir(sub, sub_dst, depth + 1, sub_entries, sub.name)
         if sub_entries:
-            # Use README title if available, else capitalise dir name
-            sub_label = sub.name.replace("-", " ").replace("_", " ").title()
+            # Use README H1 title if available, else capitalise dir name
+            sub_readme = sub / "README.md"
+            if sub_readme.exists():
+                sub_label = _md_title(sub_dst / "index.md") or \
+                    sub.name.replace("-", " ").replace("_", " ").title()
+            else:
+                sub_label = sub.name.replace("-", " ").replace("_", " ").title()
             nav_entries.append({sub_label: sub_entries})
 
     # Add .md files (non-README) as nav entries

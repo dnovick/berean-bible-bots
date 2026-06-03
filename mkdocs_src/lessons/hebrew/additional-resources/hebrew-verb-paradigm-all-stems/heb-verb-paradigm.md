@@ -1,4 +1,4 @@
-# Hebrew Strong Verb Paradigm — All Stems (S. Blair)
+# Hebrew Verb Paradigm — All Stems
 
 *195 cards covering all 7 stems × all conjugations using the paradigm root קטל.*
 
