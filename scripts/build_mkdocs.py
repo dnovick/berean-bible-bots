@@ -422,20 +422,6 @@ def build_chapter(
     return [{f"Ch{ch_num} — {title}": ch_nav}]
 
 
-def build_course(lang: str, course: str, label: str, titles: dict[str, str]) -> list:
-    """Build all chapters for a course. Returns nav entries."""
-    nav_entries = []
-    nav_entries.append({"Overview": f"lessons/{lang}/index.md"})
-    for ch in sorted_chapters(titles):
-        ch_num = int(ch[2:])
-        title = titles[ch]
-        src = LESSONS / lang / course / ch
-        if not src.is_dir():
-            continue
-        nav_entries.extend(build_chapter(lang, course, ch, title, ch_num))
-    return [{label: nav_entries}]
-
-
 NOTEBOOK_SECTIONS = [
     ("Getting Started", [
         ("Introduction", [
@@ -811,9 +797,9 @@ def build_study_helps() -> list:
     return [{"Study Helps": nav_entries}]
 
 
-def build_additional_resources() -> list:
+def build_additional_resources_nav() -> list:
     """Copy output/lessons/hebrew/bbh/additional-resources/ into mkdocs_src
-    and return nav entries."""
+    and return nav entries for embedding inside the BBH course section."""
     src = LESSONS / "hebrew" / "bbh" / "additional-resources"
     dst = MKDOCS_SRC / "lessons" / "hebrew" / "additional-resources"
     if not src.exists():
@@ -823,7 +809,24 @@ def build_additional_resources() -> list:
     nav_entries: list = []
     _build_report_dir(src, dst, depth=3, nav_entries=nav_entries,
                       label="Additional Resources")
-    return [{"Additional Resources (BBH)": nav_entries}] if nav_entries else []
+    return [{"Additional Resources": nav_entries}] if nav_entries else []
+
+
+def build_course(lang: str, course: str, label: str, titles: dict[str, str]) -> list:
+    """Build all chapters for a course. Returns nav entries."""
+    nav_entries = []
+    nav_entries.append({"Overview": f"lessons/{lang}/index.md"})
+    for ch in sorted_chapters(titles):
+        ch_num = int(ch[2:])
+        title = titles[ch]
+        src = LESSONS / lang / course / ch
+        if not src.is_dir():
+            continue
+        nav_entries.extend(build_chapter(lang, course, ch, title, ch_num))
+    # Append Additional Resources at the end of BBH only
+    if lang == "hebrew" and course == "bbh":
+        nav_entries.extend(build_additional_resources_nav())
+    return [{label: nav_entries}]
 
 
 def build_nav() -> list:
@@ -833,7 +836,6 @@ def build_nav() -> list:
     nav.extend(build_notebooks())
     nav.extend(build_reports())
     nav.extend(build_study_helps())
-    nav.extend(build_additional_resources())
     nav.append({"API Reference": "reference/index.md"})
     return nav
 
@@ -886,9 +888,14 @@ def main() -> None:
         d = MKDOCS_SRC / clean_dir
         if d.exists():
             shutil.rmtree(d)
+    # additional-resources now lives inside lessons/hebrew/ (part of BBH section)
     ar = MKDOCS_SRC / "lessons" / "hebrew" / "additional-resources"
     if ar.exists():
         shutil.rmtree(ar)
+    # Clean old top-level location if it exists from previous build
+    old_ar = MKDOCS_SRC / "lessons" / "additional-resources"
+    if old_ar.exists():
+        shutil.rmtree(old_ar)
 
     build_api_reference()
     nav = build_nav()
