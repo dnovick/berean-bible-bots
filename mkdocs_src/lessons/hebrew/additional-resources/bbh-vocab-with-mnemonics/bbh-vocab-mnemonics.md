@@ -1,4 +1,4 @@
-# BBH Vocabulary — Ch2–35 (S. Blair)
+# BBH Vocabulary with Mnemonics — Ch2–35
 
 *527 words keyed to BBH chapters 2–35, with Arabic roots and NT-style frequency counts.*
 

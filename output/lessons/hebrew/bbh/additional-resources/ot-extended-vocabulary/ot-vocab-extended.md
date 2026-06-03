@@ -1,4 +1,4 @@
-# Extended OT Vocabulary — Freq 30–69 (S. Blair)
+# OT Extended Vocabulary — Freq 30–69
 
 *473 Hebrew words with OT frequency 30–69, beyond the BBH chapter wordlists.*
 

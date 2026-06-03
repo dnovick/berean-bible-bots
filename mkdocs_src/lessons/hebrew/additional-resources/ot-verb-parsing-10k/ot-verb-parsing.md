@@ -1,4 +1,4 @@
-# OT Hebrew Verb Parsing — 10,399 Forms (S. Blair)
+# OT Hebrew Verb Parsing — 10,399 Forms
 
 *Attested OT verb forms with full parsing: stem, conjugation, PGN, gloss, and inflection frequency. First 500 shown; see .txt for full set.*
 
