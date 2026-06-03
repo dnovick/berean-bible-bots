@@ -806,6 +806,21 @@ def build_study_helps() -> list:
     return [{"Study Helps": nav_entries}]
 
 
+def build_additional_resources() -> list:
+    """Copy output/lessons/hebrew/bbh/additional-resources/ into mkdocs_src
+    and return nav entries."""
+    src = LESSONS / "hebrew" / "bbh" / "additional-resources"
+    dst = MKDOCS_SRC / "lessons" / "hebrew" / "additional-resources"
+    if not src.exists():
+        return []
+
+    dst.mkdir(parents=True, exist_ok=True)
+    nav_entries: list = []
+    _build_report_dir(src, dst, depth=3, nav_entries=nav_entries,
+                      label="Additional Resources")
+    return [{"Additional Resources (BBH)": nav_entries}] if nav_entries else []
+
+
 def build_nav() -> list:
     nav: list = [{"Home": "index.md"}]
     for lang, course, label, titles in COURSES:
@@ -813,6 +828,7 @@ def build_nav() -> list:
     nav.extend(build_notebooks())
     nav.extend(build_reports())
     nav.extend(build_study_helps())
+    nav.extend(build_additional_resources())
     nav.append({"API Reference": "reference/index.md"})
     return nav
 
@@ -860,11 +876,14 @@ def main() -> None:
             if ch_dir.exists():
                 shutil.rmtree(ch_dir)
 
-    # Clean generated reports and study-helps dirs
+    # Clean generated reports, study-helps, and additional-resources dirs
     for clean_dir in ("reports", "study-helps"):
         d = MKDOCS_SRC / clean_dir
         if d.exists():
             shutil.rmtree(d)
+    ar = MKDOCS_SRC / "lessons" / "hebrew" / "additional-resources"
+    if ar.exists():
+        shutil.rmtree(ar)
 
     build_api_reference()
     nav = build_nav()

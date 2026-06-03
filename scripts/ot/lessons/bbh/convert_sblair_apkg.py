@@ -20,7 +20,7 @@ import sqlite3
 from pathlib import Path
 
 APKG_DIR = Path('temp')
-OUT_ROOT = Path('output/lessons/hebrew/bbh/sblair')
+OUT_ROOT = Path('output/lessons/hebrew/bbh/additional-resources')
 OUT_ROOT.mkdir(parents=True, exist_ok=True)
 
 
@@ -80,7 +80,7 @@ def write_fd(path: Path, deck: str, rows: list[tuple[str, str]]) -> None:
 
 def convert_vocab_ch() -> None:
     print('\n=== Deck 1a: BBH Vocab by Chapter ===')
-    out = OUT_ROOT / 'sblair-vocab'
+    out = OUT_ROOT / 'bbh-vocab-with-mnemonics'
     out.mkdir(exist_ok=True)
 
     con = sqlite3.connect(
@@ -89,11 +89,11 @@ def convert_vocab_ch() -> None:
     words: list[tuple] = []
     for row in con.execute('SELECT flds FROM notes'):
         f = row[0].split('\x1f')
-        num  = clean(f[0]) if len(f) > 0 else ''
-        heb  = clean(f[1]) if len(f) > 1 else ''
-        eng  = clean(f[2]) if len(f) > 2 else ''
+        num  = clean(f[0]) if len(f) > 0 else ''  # noqa: E221
+        heb  = clean(f[1]) if len(f) > 1 else ''  # noqa: E221
+        eng  = clean(f[2]) if len(f) > 2 else ''  # noqa: E221
         freq = clean(f[4]) if len(f) > 4 else ''
-        ch   = clean(f[5]) if len(f) > 5 else ''
+        ch   = clean(f[5]) if len(f) > 5 else ''  # noqa: E221
         root = clean(f[6]) if len(f) > 6 else ''
         if not ch:
             continue
@@ -108,7 +108,7 @@ def convert_vocab_ch() -> None:
     md_rows = [[w[2], w[3], w[5] or '—', w[4], f'Ch {w[6]}']
                for w in words]
     write_md(
-        out / 'sblair-vocab.md',
+        out / 'bbh-vocab-mnemonics.md',
         'BBH Vocabulary — Ch2–35 (S. Blair Deck)',
         '527 words keyed to BBH chapters 2–35, with Arabic roots and NT-style frequency counts.',
         ['Hebrew', 'Gloss', 'Root', 'Frequency', 'Chapter'],
@@ -127,14 +127,14 @@ def convert_vocab_ch() -> None:
             back += f' | {freq}×'
         tags = f'sblair-vocab bbh-ch{ch_n}'
         anki_rows.append((heb, back, tags))
-    write_anki(out / 'sblair-vocab.txt',
-               'BBH Vocabulary Ch2–35 (S. Blair)', anki_rows)
+    write_anki(out / 'bbh-vocab-mnemonics.txt',
+               'BBH Vocabulary Ch2–35 with Mnemonics', anki_rows)
 
     # FD
     fd_rows = [(heb, eng + (f' ({root})' if root else '') + (f' — {freq}×' if freq else ''))
                for _, _, heb, eng, freq, root, _ in words]
-    write_fd(out / 'sblair-vocab-fd.txt',
-             'BBH Vocabulary Ch2–35 (S. Blair)', fd_rows)
+    write_fd(out / 'bbh-vocab-mnemonics-fd.txt',
+             'BBH Vocabulary Ch2–35 with Mnemonics', fd_rows)
 
     print(f'  {len(words)} words across Ch2–35')
 
@@ -143,7 +143,7 @@ def convert_vocab_ch() -> None:
 
 def convert_vocab_extra() -> None:
     print('\n=== Deck 1b: Extended OT Vocab (freq 30–69) ===')
-    out = OUT_ROOT / 'sblair-vocab-extra'
+    out = OUT_ROOT / 'ot-extended-vocabulary'
     out.mkdir(exist_ok=True)
 
     con = sqlite3.connect(
@@ -152,11 +152,11 @@ def convert_vocab_extra() -> None:
     words: list[tuple] = []
     for row in con.execute('SELECT flds FROM notes'):
         f = row[0].split('\x1f')
-        num  = clean(f[0]) if len(f) > 0 else ''
-        heb  = clean(f[1]) if len(f) > 1 else ''
-        eng  = clean(f[2]) if len(f) > 2 else ''
+        num  = clean(f[0]) if len(f) > 0 else ''  # noqa: E221
+        heb  = clean(f[1]) if len(f) > 1 else ''  # noqa: E221
+        eng  = clean(f[2]) if len(f) > 2 else ''  # noqa: E221
         freq = clean(f[4]) if len(f) > 4 else ''
-        ch   = clean(f[5]) if len(f) > 5 else ''
+        ch   = clean(f[5]) if len(f) > 5 else ''  # noqa: E221
         root = clean(f[6]) if len(f) > 6 else ''
         if ch:
             continue
@@ -169,7 +169,7 @@ def convert_vocab_extra() -> None:
     md_rows = [[w[1], w[2], w[4] or '—', w[3]]
                for w in words]
     write_md(
-        out / 'sblair-vocab-extra.md',
+        out / 'ot-vocab-extended.md',
         'Extended OT Vocabulary — Freq 30–69 (S. Blair Deck)',
         '473 Hebrew words with OT frequency 30–69, beyond the BBH chapter wordlists.',
         ['Hebrew', 'Gloss', 'Root', 'Frequency'],
@@ -184,13 +184,13 @@ def convert_vocab_extra() -> None:
         if freq:
             back += f' | {freq}×'
         anki_rows.append((heb, back, 'sblair-vocab-extra'))
-    write_anki(out / 'sblair-vocab-extra.txt',
-               'Extended OT Vocab Freq 30–69 (S. Blair)', anki_rows)
+    write_anki(out / 'ot-vocab-extended.txt',
+               'OT Extended Vocabulary (Freq 30–69)', anki_rows)
 
     fd_rows = [(heb, eng + (f' ({root})' if root else '') + (f' — {freq}×' if freq else ''))
                for _, heb, eng, freq, root in words]
-    write_fd(out / 'sblair-vocab-extra-fd.txt',
-             'Extended OT Vocab Freq 30–69 (S. Blair)', fd_rows)
+    write_fd(out / 'ot-vocab-extended-fd.txt',
+             'OT Extended Vocabulary (Freq 30–69)', fd_rows)
 
     print(f'  {len(words)} words')
 
@@ -199,7 +199,7 @@ def convert_vocab_extra() -> None:
 
 def convert_paradigm() -> None:
     print('\n=== Deck 2: Strong Verb Paradigm (S. Blair) ===')
-    out = OUT_ROOT / 'sblair-paradigm'
+    out = OUT_ROOT / 'hebrew-verb-paradigm-all-stems'
     out.mkdir(exist_ok=True)
 
     con = sqlite3.connect(
@@ -214,7 +214,7 @@ def convert_paradigm() -> None:
         form = clean(f[0]) if len(f) > 0 else ''
         stem = clean(f[1]) if len(f) > 1 else ''
         conj = clean(f[2]) if len(f) > 2 else ''
-        pgn  = clean(f[3]) if len(f) > 3 else ''
+        pgn  = clean(f[3]) if len(f) > 3 else ''  # noqa: E221
         root = clean(f[4]) if len(f) > 4 else ''
         cards.append((form, stem, conj, pgn, root))
     con.close()
@@ -234,7 +234,7 @@ def convert_paradigm() -> None:
 
     md_rows = [[c[0], c[1], c[2], c[3] or '—', c[4]] for c in cards]
     write_md(
-        out / 'sblair-paradigm.md',
+        out / 'heb-verb-paradigm.md',
         'Hebrew Strong Verb Paradigm — All Stems (S. Blair Deck)',
         '195 cards covering all 7 stems × all conjugations using the paradigm root קטל.',
         ['Form', 'Stem', 'Conjugation', 'PGN', 'Root'],
@@ -250,15 +250,15 @@ def convert_paradigm() -> None:
         slug = stem.lower().replace(' ', '-').replace('\'', '')
         tags = f'sblair-paradigm stem-{slug}'
         anki_rows.append((form, back, tags))
-    write_anki(out / 'sblair-paradigm.txt',
-               'Hebrew Strong Verb Paradigm (S. Blair)', anki_rows)
+    write_anki(out / 'heb-verb-paradigm.txt',
+               'Hebrew Strong Verb Paradigm — All Stems', anki_rows)
 
     fd_rows = []
     for form, stem, conj, pgn, root in cards:
         back = f'{stem} — {conj}' + (f' {pgn}' if pgn else '')
         fd_rows.append((form, back))
-    write_fd(out / 'sblair-paradigm-fd.txt',
-             'Hebrew Strong Verb Paradigm (S. Blair)', fd_rows)
+    write_fd(out / 'heb-verb-paradigm-fd.txt',
+             'Hebrew Strong Verb Paradigm — All Stems', fd_rows)
 
     print(f'  {len(cards)} paradigm cards')
 
@@ -267,7 +267,7 @@ def convert_paradigm() -> None:
 
 def convert_parsing() -> None:
     print('\n=== Deck 3: OT Verb Parsing (S. Blair) ===')
-    out = OUT_ROOT / 'sblair-parsing'
+    out = OUT_ROOT / 'ot-verb-parsing-10k'
     out.mkdir(exist_ok=True)
 
     con = sqlite3.connect(
@@ -294,18 +294,18 @@ def convert_parsing() -> None:
     cards: list[tuple] = []
     for row in con.execute('SELECT flds FROM notes'):
         f = row[0].split('\x1f')
-        form   = clean(f[0]) if len(f) > 0 else ''
-        root   = clean(f[1]) if len(f) > 1 else ''
-        stem   = STEM_MAP.get(clean(f[2]) if len(f) > 2 else '', clean(f[2]))
-        conj   = CONJ_MAP.get(clean(f[3]) if len(f) > 3 else '', clean(f[3]))
+        form   = clean(f[0]) if len(f) > 0 else ''  # noqa: E221
+        root   = clean(f[1]) if len(f) > 1 else ''  # noqa: E221
+        stem   = STEM_MAP.get(clean(f[2]) if len(f) > 2 else '', clean(f[2]))  # noqa: E221
+        conj   = CONJ_MAP.get(clean(f[3]) if len(f) > 3 else '', clean(f[3]))  # noqa: E221
         person = clean(f[4]) if len(f) > 4 else ''
         gender = clean(f[5]) if len(f) > 5 else ''
         number = clean(f[6]) if len(f) > 6 else ''
-        psfx   = clean(f[7]) if len(f) > 7 else ''
-        gloss  = clean(f[9]) if len(f) > 9 else ''
+        psfx   = clean(f[7]) if len(f) > 7 else ''  # noqa: E221
+        gloss  = clean(f[9]) if len(f) > 9 else ''  # noqa: E221
         freq_i = clean(f[11]) if len(f) > 11 else ''
         freq_v = clean(f[12]) if len(f) > 12 else ''
-        verse  = clean(f[13]) if len(f) > 13 else ''
+        verse  = clean(f[13]) if len(f) > 13 else ''  # noqa: E221
 
         # Build PGN string
         pgn_parts = [p for p in [person, gender, number] if p]
@@ -324,7 +324,7 @@ def convert_parsing() -> None:
         md_rows.append([form, root, parse_str, gloss, freq_i or '—'])
 
     write_md(
-        out / 'sblair-parsing.md',
+        out / 'ot-verb-parsing.md',
         'OT Hebrew Verb Parsing — 10,399 Forms (S. Blair Deck)',
         'Attested OT verb forms with full parsing: stem, conjugation, PGN, '
         'gloss, and inflection frequency. First 500 shown; see .txt for full set.',
@@ -350,8 +350,8 @@ def convert_parsing() -> None:
         tags = f'sblair-parsing stem-{slug} conj-{cslug}'
         anki_rows.append((form, back, tags))
 
-    write_anki(out / 'sblair-parsing.txt',
-               'OT Hebrew Verb Parsing (S. Blair)', anki_rows)
+    write_anki(out / 'ot-verb-parsing.txt',
+               'OT Hebrew Verb Parsing — 10,399 Forms', anki_rows)
 
     # Full FD file
     fd_rows = []
@@ -359,8 +359,8 @@ def convert_parsing() -> None:
         parse = f'{stem} {conj} {pgn}'.strip()
         back = f'{parse} | {root}: {gloss}' if gloss else f'{parse} | root {root}'
         fd_rows.append((form, back))
-    write_fd(out / 'sblair-parsing-fd.txt',
-             'OT Hebrew Verb Parsing (S. Blair)', fd_rows)
+    write_fd(out / 'ot-verb-parsing-fd.txt',
+             'OT Hebrew Verb Parsing — 10,399 Forms', fd_rows)
 
     print(f'  {len(cards)} parsing cards written')
 
