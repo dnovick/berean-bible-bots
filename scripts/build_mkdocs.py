@@ -688,11 +688,14 @@ def _build_report_dir(
                 sub_label = sub.name.replace("-", " ").replace("_", " ").title()
             nav_entries.append({sub_label: sub_entries})
 
-    # Add .md files (non-README) as nav entries
-    for md in md_files:
-        title = _md_title(dst_dir / md.name)
-        rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
-        nav_entries.append({title: rel})
+    # Add .md files (non-README) as nav entries — only when there is no README.
+    # When a README exists its Overview page already links to the other .md files,
+    # so adding them to the nav would create redundant entries below Overview.
+    if not readme.exists():
+        for md in md_files:
+            title = _md_title(dst_dir / md.name)
+            rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
+            nav_entries.append({title: rel})
 
     # Add index.md as first nav entry — either from README (already written above)
     # or from a bare index.md in the source (no README present)
