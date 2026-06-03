@@ -15,11 +15,11 @@ A 20-item parsing drill covering 2nd-declension masculine and neuter nouns and t
 
 ## Sample Questions
 
-**Q1.** 1 λόγος Acc. Nom. Nom./Acc. Pl. Sg. Masc. Neut. &#9654;
+**Q1.** 1 λόγος Acc. Nom. Nom./Acc. Pl. Sg. Fem. Masc. Neut. &#9654;
 > **A:** 1 λόγος Nom. Sg. Masc. λόγος Subject / pred. nom.
 
-**Q2.** 2 λόγον Acc. Nom. Nom./Acc. Pl. Sg. Masc. Neut. &#9654;
+**Q2.** 2 λόγον Acc. Nom. Nom./Acc. Pl. Sg. Fem. Masc. Neut. &#9654;
 > **A:** 2 λόγον Acc. Sg. Masc. λόγος Direct object
 
-**Q3.** 3 λόγοι Acc. Nom. Nom./Acc. Pl. Sg. Masc. Neut. &#9654;
+**Q3.** 3 λόγοι Acc. Nom. Nom./Acc. Pl. Sg. Fem. Masc. Neut. &#9654;
 > **A:** 3 λόγοι Nom. Pl. Masc. λόγος Subject

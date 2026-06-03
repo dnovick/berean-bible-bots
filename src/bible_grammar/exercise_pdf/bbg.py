@@ -243,10 +243,37 @@ class BbgCh6NomAccParsingPDF(GreekExercisePDF):
             ['20', 'ἔργα',        'Nom./Acc.', 'Pl.', 'Neut.', 'ἔργον',       'Subj. or dir. obj.'],
         ]
 
+        rows_c = [
+            ['21', 'ἀγάπη',        '', '', '', '', ''],
+            ['22', 'ἀγάπην',       '', '', '', '', ''],
+            ['23', 'ὥρα',          '', '', '', '', ''],
+            ['24', 'ὥρας',         '', '', '', '', ''],
+            ['25', 'βασιλεία',     '', '', '', '', ''],
+            ['26', 'βασιλεῖαι',    '', '', '', '', ''],
+            ['27', 'βασιλείας',    '', '', '', '', ''],
+            ['28', 'ἡ',            '', '', '', '', ''],
+            ['29', 'τήν',          '', '', '', '', ''],
+            ['30', 'αἱ',           '', '', '', '', ''],
+        ]
+        ans_c = [
+            ['21', 'ἀγάπη',     'Nom.',      'Sg.', 'Fem.', 'ἀγάπη',    'Subject / pred. nom.'],
+            ['22', 'ἀγάπην',    'Acc.',      'Sg.', 'Fem.', 'ἀγάπη',    'Direct object'],
+            ['23', 'ὥρα',       'Nom.',      'Sg.', 'Fem.', 'ὥρα',      'Subject / pred. nom.'],
+            ['24', 'ὥρας',      'Acc.',      'Pl.', 'Fem.', 'ὥρα',      'Direct object (pl.)'],
+            ['25', 'βασιλεία',  'Nom.',      'Sg.', 'Fem.', 'βασιλεία', 'Subject / pred. nom.'],
+            ['26', 'βασιλεῖαι', 'Nom.',      'Pl.', 'Fem.', 'βασιλεία', 'Subject'],
+            ['27', 'βασιλείας', 'Acc.',      'Pl.', 'Fem.', 'βασιλεία', 'Direct object'],
+            ['28', 'ἡ',         'Nom.',      'Sg.', 'Fem.', 'ὁ (art.)', 'Article — fem. sg. nom.'],
+            ['29', 'τήν',       'Acc.',      'Sg.', 'Fem.', 'ὁ (art.)', 'Article — fem. sg. acc.'],
+            ['30', 'αἱ',        'Nom.',      'Pl.', 'Fem.', 'ὁ (art.)', 'Article — fem. pl. nom.'],
+        ]
+
         self.add_section_heading('Part A — Masculine Nouns and Article')
         self.add_greek_table(hdrs, rows_a, cr, greek_cols=gk, show_answers=False)
         self.add_section_heading('Part B — Neuter Nouns, Article, and Mixed')
         self.add_greek_table(hdrs, rows_b, cr, greek_cols=gk, show_answers=False)
+        self.add_section_heading('Part C — Feminine Nouns (1st Declension) and Article')
+        self.add_greek_table(hdrs, rows_c, cr, greek_cols=gk, show_answers=False)
 
         self.add_section_heading('Answer Key — Part A')
         self.add_greek_table(hdrs, rows_a, cr, greek_cols=gk,
@@ -254,13 +281,16 @@ class BbgCh6NomAccParsingPDF(GreekExercisePDF):
         self.add_section_heading('Answer Key — Part B')
         self.add_greek_table(hdrs, rows_b, cr, greek_cols=gk,
                              show_answers=True, answer_rows=ans_b)
+        self.add_section_heading('Answer Key — Part C')
+        self.add_greek_table(hdrs, rows_c, cr, greek_cols=gk,
+                             show_answers=True, answer_rows=ans_c)
 
 
 def build_bbg_ch6_nom_acc_parsing(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         BbgCh6NomAccParsingPDF,
         'BBG Chapter 6 — Nominative and Accusative Parsing Drill',
-        '2nd Declension Nouns and Definite Article',
+        '2nd Declension Masculine and Neuter, 1st Declension Feminine, and Article',
         ['greek', 'bbg', 'ch6', 'exercises', 'ch6-nom-acc-parsing'],
         'ch6-nom-acc-parsing.pdf',
         out_dir,
