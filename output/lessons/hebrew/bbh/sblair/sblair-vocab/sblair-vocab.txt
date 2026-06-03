@@ -1,0 +1,532 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Vocabulary Ch2–35 (S. Blair)
+#tags column:3
+יהוה	Yahweh, the Lord | 6829×	sblair-vocab bbh-ch2
+יִשְׂרָאֵל	Israel | 2507×	sblair-vocab bbh-ch2
+דָּוִד	David | 1075×	sblair-vocab bbh-ch2
+יְהוּדָ֑ה	Judah | 820×	sblair-vocab bbh-ch2
+מֹשֶׁה	Moses | 766×	sblair-vocab bbh-ch2
+מִצְרַיִם	Egypt | 682×	sblair-vocab bbh-ch2
+יְרוּשָׁלִַ֫ם	Jerusalem | 643×	sblair-vocab bbh-ch2
+שָׁאוּל	Saul | 406×	sblair-vocab bbh-ch2
+יַעֲקֹב	Jacob | 349×	sblair-vocab bbh-ch2
+אַהֲרֹן	Aaron | 347×	sblair-vocab bbh-ch2
+שְׁלֹמֹה	Solomon | 293×	sblair-vocab bbh-ch2
+פַּרְעֹה	Pharaoh | 274×	sblair-vocab bbh-ch2
+יְהוֹשׁוּעַ	Joshua | 218×	sblair-vocab bbh-ch2
+יוֹסֵף	Joseph | 213×	sblair-vocab bbh-ch2
+אַבְרָהָם	Abraham | 175×	sblair-vocab bbh-ch2
+צִיּוֹן	Zion | 154×	sblair-vocab bbh-ch2
+יִרְמְיָהוּ	Jeremiah | 147×	sblair-vocab bbh-ch2
+שְׁמוּאֵל	Samuel | 140×	sblair-vocab bbh-ch2
+יִצְחָק	Isaac | 108×	sblair-vocab bbh-ch2
+עֵשָׂו	Esau | root: ע - ש - ה--"to do," "to make," or "to complete." (This implies that when Esau was born, he didn't look like a smooth, hairless newborn. He emerged from the womb robust, rugged, and hairy—as if he was already "fully made" or "completely developed" like an adult.) | 97×	sblair-vocab bbh-ch2
+כְנָעַן	Canaan | 93×	sblair-vocab bbh-ch2
+בֵּן	son | root: ב-נ-ה / ב-נ-י--This is one of the most beautiful shared roots. It means "to build." | 4889×	sblair-vocab bbh-ch3
+אֱלֹהִים	God, gods | root: א-ל-ה-- | 2603×	sblair-vocab bbh-ch3
+אֶ֫רֶץ	(fs) land, earth, ground, soil | root: א - ר - צ (A-R-Tz)--"land", "earth", or "country" | 2504×	sblair-vocab bbh-ch3
+יוֹם	day | root: י - ו - מ (Y-W-M)--day, time, and sunlight | 2268×	sblair-vocab bbh-ch3
+אִישׁ	man, person, husband | root: א - י - ש (A-Y-Sh)--mankind, fire, or being/existence | 2179×	sblair-vocab bbh-ch3
+בַּ֫יִת	house, household | root: ב - י - ת (B-Y-T)--domesticate, tame, housebreak, train | 2034×	sblair-vocab bbh-ch3
+דָּבָר	word, speech, thing, matter | root: ד - ב - ר (D-B-R). Meaning: To speak, to arrange, or the back/rear. | 1442×	sblair-vocab bbh-ch3
+אָב	father, ancestor | 1210×	sblair-vocab bbh-ch3
+אִשָּׁה	woman, wife | 782×	sblair-vocab bbh-ch3
+אָדוֹן	lord, master | 759×	sblair-vocab bbh-ch3
+אָח	brother | 629×	sblair-vocab bbh-ch3
+בַּת	daughter | 584×	sblair-vocab bbh-ch3
+אָדָם	man, mankind, humankind | root: א ־ ד ־ ם--"red," "ruddy," or "of the ground,"&nbsp;organic layer of the earth. | 548×	sblair-vocab bbh-ch3
+נַ֫עַר	boy, youth, servant | 240×	sblair-vocab bbh-ch3
+אֵל	God, god | 237×	sblair-vocab bbh-ch3
+לַיְלָה	(ms) night | 227×	sblair-vocab bbh-ch3
+אֲדָמָה	ground, land, earth | 222×	sblair-vocab bbh-ch3
+אֵם	(fs) mother | 220×	sblair-vocab bbh-ch3
+אָחוֹת	sister | 119×	sblair-vocab bbh-ch3
+נַעֲרָה	young girl, newly married woman, maidservant | 76×	sblair-vocab bbh-ch3
+מֶ֫לֶךְ	king, ruler | root: מ-ל-ך-- to rule | 2518×	sblair-vocab bbh-ch4
+עִיר	(fs) city, town | 1092×	sblair-vocab bbh-ch4
+עַ֫יִן	(cs) eye, spring | root: ע־י־ן-- | 886×	sblair-vocab bbh-ch4
+שָׁנָה	year | 874×	sblair-vocab bbh-ch4
+שֵׁם	name, reputation | 864×	sblair-vocab bbh-ch4
+לֵב	heart; mind, thinking, feelings, will; or&nbsp;לֵבָב | 851×	sblair-vocab bbh-ch4
+עֶ֫בֶד	slave, servant | 802×	sblair-vocab bbh-ch4
+נֶ֫פֶשׁ	(fs) throat, neck, soul, life, person | 754×	sblair-vocab bbh-ch4
+כֹּהֵן	priest | 752×	sblair-vocab bbh-ch4
+דֶּ֫רֶךְ	way, road, journey | 706×	sblair-vocab bbh-ch4
+רֹאשׁ	head, top, chief | root: ר ־ א ־ שׁ--"headship," "primacy," or "the topmost/first part of something." | 599×	sblair-vocab bbh-ch4
+מַ֫יִם	water | root: The Biconsonantal Core: מ־י --fluidity, wateriness, or a vast gathering of moistureThe word מַ֫יִם (mayim) is a unique primary vocabulary word in Semitic linguistics. Because it is an ancient, elemental noun (dating back to the very dawn of Proto-Semitic), it does not derive from a standard, active three-letter verbal root.&nbsp; | 580×	sblair-vocab bbh-ch4
+גּוֹי	nation, people | root: ג - ו - י (G-V-Y) or ג - ו - א (G-V-A)--"the interior," "the belly," "a valley," or "a gathered body/mass." | 556×	sblair-vocab bbh-ch4
+הַר	mountain, hill, hill country | root: ה ־ ר ־ ר (H-R-R)--To loom tall, to swell, or to become prominent. | 559×	sblair-vocab bbh-ch4
+קוֹל	voice, sound, noise | root: Hebrew Root: ק - ו - ל (Q-V-L)--The fundamental Proto-Semitic meaning of this root is "vocal utterance," "sound generation," or "the act of speaking / calling out." | 505×	sblair-vocab bbh-ch4
+צָבָא	(cs) host, army, war, service | root: צ ־ ב ־ א --"gathering, organizing, assembling, or going forth for a specific duty." | 486×	sblair-vocab bbh-ch4
+נָבִיא	prophet | 325×	sblair-vocab bbh-ch4
+תּוֹרָה	law, instruction, teaching | root: י־ר־ה--To throw, shoot an arrow, point a finger, or aim straight | 223×	sblair-vocab bbh-ch4
+סֵ֫פֶר	document,letter, book, scroll | 191×	sblair-vocab bbh-ch4
+סוּס	horse | 138×	sblair-vocab bbh-ch4
+וְ	and (conjunction), or (disjunctive), but, also | root: &nbsp;ו&nbsp;(Vav) | 51035×	sblair-vocab bbh-ch5
+הַ	the (definite article) | 30359×	sblair-vocab bbh-ch5
+עוֹלָם	everlastingness, long time, forever, eternity | root: ע ־ ל ־ מ --"To hide," "to conceal," or "to keep secret", shut one's eyes to, overlook, disregard, ignore | 440×	sblair-vocab bbh-ch5
+מִשְׁפָּט	judgment, justice, decision, ordinance, law, custom | 421×	sblair-vocab bbh-ch5
+שַׂר	ruler, prince, army commander | 420×	sblair-vocab bbh-ch5
+שָׁמַ֫יִם	heaven, sky | 421×	sblair-vocab bbh-ch5
+חֶ֫רֶב	(fs) sword | 411×	sblair-vocab bbh-ch5
+כֶּ֫סֶף	silver, money | 403×	sblair-vocab bbh-ch5
+מִזְבֵּח	altar | 400×	sblair-vocab bbh-ch5
+מָקוֹם	place, location | 401×	sblair-vocab bbh-ch5
+יָם	sea | 392×	sblair-vocab bbh-ch5
+זָהָב	gold | 387×	sblair-vocab bbh-ch5
+רוּחַ	(cs) spirit, wind, breath | 378×	sblair-vocab bbh-ch5
+אֵשׁ	(cs) fire | 376×	sblair-vocab bbh-ch5
+נְאֻם	utterance, declaration, revelation | 376×	sblair-vocab bbh-ch5
+שַׁ֫עַר	gate | 373×	sblair-vocab bbh-ch5
+יֶ֫לֶד	child, boy, youth | 89×	sblair-vocab bbh-ch5
+עָנָן	clouds | root: ע־נ־ן (ʿ-N-N)--covering, clouding over, or producing a shadow. | 87×	sblair-vocab bbh-ch5
+הֵיכָל	temple, palace | 80×	sblair-vocab bbh-ch5
+לְ	of, to, towards, for | 18687×	sblair-vocab bbh-ch6
+בְּ	in, among, at, with, by, against, on account of | 15722×	sblair-vocab bbh-ch6
+אֵת	not translated (marks definite direct object) | 10898×	sblair-vocab bbh-ch6
+מִן	(away) from, out of | root: To memorize מִן (Hebrew) and مِنْ (Arabic), just remember they are identical twins. They both mean "from" or "of." | 7717×	sblair-vocab bbh-ch6
+עַל	upon, on, above, over, on account of, according to | root: ע-ל-ה--"to go up" or "to be high." | 5777×	sblair-vocab bbh-ch6
+אֶל	to, into, towards | root: א-ל-י--reaching or stretching toward a goal. | 5464×	sblair-vocab bbh-ch6
+כֹּל	all, the whole, every, each (of) | root: כ-ל-ל--"to be complete," "to be whole," or "to encompass." | 5408×	sblair-vocab bbh-ch6
+כְּ	as, like, in accordance with, at,&nbsp;according to | root: This is a shared Semitic prefix. In both languages, it is a single letter attached to the front of a word. | 2471×	sblair-vocab bbh-ch6
+פָּנִים	face, front; לִפְנֵי before, in front of | root: פ - נ - ה (P-N-H) --&nbsp;To turn, to face, or to clear a way | 2044×	sblair-vocab bbh-ch6
+עַד	unto, as far as, to; until | 1264×	sblair-vocab bbh-ch6
+עִם	with | root: Like most basic prepositions, im does not have a three-letter triconsonantal root. It is an ancient, two-letter (biconsonantal) particle ע־ם (ʿ-M) that carries the core Semitic concept of conjunction, community, or gathering together. | 1093×	sblair-vocab bbh-ch6
+אֵת	(together, along) with, beside | 931×	sblair-vocab bbh-ch6
+אַחֲרֵי	after, behind | 619×	sblair-vocab bbh-ch6
+תַּ֫חַת	under, below, instead of | root: תחת (T-Ch-T—&nbsp;Both root lexicons carry the foundational meaning of&nbsp;lowering,&nbsp;being below, or&nbsp;occupying the space at the base | 512×	sblair-vocab bbh-ch6
+בֵּין	between | 403×	sblair-vocab bbh-ch6
+בְּתוֹךְ	in the midst (middle) of, inside | 319×	sblair-vocab bbh-ch6
+לְמַ֫עַן	for the sake of, on account of, in order that | 272×	sblair-vocab bbh-ch6
+מַ֫עַל	above, upward, on top of | 140×	sblair-vocab bbh-ch6
+עֵ֫בֶר	side, edge | 90×	sblair-vocab bbh-ch6
+טוֹב	good, pleasant | 262×	sblair-vocab bbh-ch7
+גָּדוֹל	great, great one | root: ג־ד־ל (G-D-L)--growth, twisting together to become strong, or becoming large. | 528×	sblair-vocab bbh-ch7
+קֹדֶש	holiness, holy thing | 469×	sblair-vocab bbh-ch7
+רַב	much, many, great, mighty | 424×	sblair-vocab bbh-ch7
+רָעָה	evil, wickedness, disaster | root: (Opt-#1) ר־ע־ע (R-ʿ-ʿ)--This is a geminate root (the last two letters are the same).--To be bad, broken, spoiled, or physically/morally dysfunctional.&nbsp;(Opt-#2)&nbsp;ר־ע־ה (R-ʿ-H)--This is a weak root where the final He changes or drops during conjugation.&nbsp;To pasture, graze, or companion with. | 315×	sblair-vocab bbh-ch7
+רַע	bad, evil | 312×	sblair-vocab bbh-ch7
+מְאֹד	very, greatly, exceedingly | 299×	sblair-vocab bbh-ch7
+רָשָׁע	wicked, guilty | root: ר־ש־ע--To be wicked, to act criminally, or to be declared guilty in a legal context. | 264×	sblair-vocab bbh-ch7
+חַי	living, alive | 249×	sblair-vocab bbh-ch7
+צַדִּיק	righteous, just, innocent | 206×	sblair-vocab bbh-ch7
+זָקֵן	old; elder, old man | 180×	sblair-vocab bbh-ch7
+חָכָם	wise, competent, skillful | 138×	sblair-vocab bbh-ch7
+יָשָׁר	right, pleasing, upright, just | 119×	sblair-vocab bbh-ch7
+קָדוֹשׁ	(adj) holy, set apart | 117×	sblair-vocab bbh-ch7
+מְעַט	little, few | 101×	sblair-vocab bbh-ch7
+רָחוֹק	(adj) distant, remote | 85×	sblair-vocab bbh-ch7
+קָרוֹב	near, close | 75×	sblair-vocab bbh-ch7
+קָטֹן	small, little, insignificant, young | 74×	sblair-vocab bbh-ch7
+זוּר	(Q) to be strange, foreign | 77×	sblair-vocab bbh-ch7
+אֲשֶׁר	particle of relation; which, that, who | root: א-ש-ר--march, walk, lead, go straight, advance, guide, progress, move forward | 5495×	sblair-vocab bbh-ch8
+כִּי	for, because, that; so that; if, when; but rather, except; (emphatic) surely, indeed | root: כ-י | 4488×	sblair-vocab bbh-ch8
+הוּא	he, it; that | root: ה-ו-ה (H-W-H).&nbsp;Meaning:&nbsp;To be, to become, or to exist.&nbsp;[1] | 1386×	sblair-vocab bbh-ch8
+זֶה	this | 1173×	sblair-vocab bbh-ch8
+אֲנִי	I | 871×	sblair-vocab bbh-ch8
+אַתָּה	you 2ms | 744×	sblair-vocab bbh-ch8
+אֵ֫לֶּה	these | 755×	sblair-vocab bbh-ch8
+הֲ	interrogative particle; starting a question | 746×	sblair-vocab bbh-ch8
+זֹאת	this | 600×	sblair-vocab bbh-ch8
+מָה	what? | 492×	sblair-vocab bbh-ch8
+הֵם	they; those | root: Unlike verbs and nouns, pronouns in Semitic languages are fundamental grammatical building blocks that do not originate from a traditional three-letter verbal root. Instead, they derive from ancient Proto-Semitic pronominal bases. [1]Hebrew Base: ה - מ (H-M) / Ancient pronominal element.Arabic Base: ه - م (H-M) / Ancient pronominal element.The Direct Cognate: הֵם (Hem - Hebrew) \(\leftrightarrow \) هُمْ (Hum - Arabic). [1]Usage: Both words mean exactly the same thing ("they"). For example, to say "They are students" you would say Hem studentim in Hebrew and Hum ṭullāb in Arabic.The Suffix Cousin: When attached to the end of nouns to mean "their" (e.g., "their house"), the Hebrew suffix is ־הֶם (-hem) and the Arabic suffix is ־הُمْ (-hum) | 521×	sblair-vocab bbh-ch8
+הִיא	she, it; that (3fs pronoun) | 484×	sblair-vocab bbh-ch8
+מִי	who? | root: interrogative pronouns (question words) like mi and man do not have a three-letter triconsonantal root. They are ancient, raw grammatical particles that date back to Proto-Semitic. | 423×	sblair-vocab bbh-ch8
+אָנֹכִי	I (1cs pronoun) | 359×	sblair-vocab bbh-ch8
+אַתֶּם	you (2mp pronoun) | 283×	sblair-vocab bbh-ch8
+לָ֫מָּה	why? | 178×	sblair-vocab bbh-ch8
+אַחֵר	(adj) other, another | 166×	sblair-vocab bbh-ch8
+שֶׁ	(prefixed rel pron) who, which, that | 143×	sblair-vocab bbh-ch8
+אֲנָחְנוּ	we (1cp pronoun) | 121×	sblair-vocab bbh-ch8
+מַדּוּעַ	why? | 72×	sblair-vocab bbh-ch8
+עַם	people | root: ע - מ - מ (A-M-M)--&nbsp;To encompass, to include, or to be widespread. | 1869×	sblair-vocab bbh-ch9
+הִנֵּה	behold, (t)here is | 1057×	sblair-vocab bbh-ch9
+אַ֫יִן	not, there is not, are not, nothing | 790×	sblair-vocab bbh-ch9
+גַּם	also, even | root: ג-מ-מ (G-M-M) | 771×	sblair-vocab bbh-ch9
+לֶ֫חֶם	bread, food | 340×	sblair-vocab bbh-ch9
+סָבִיב	around, about; vicinity | 335×	sblair-vocab bbh-ch9
+עֵץ	tree, wood | 330×	sblair-vocab bbh-ch9
+כְּלִי	vessel, utensil, weapon, object | 324×	sblair-vocab bbh-ch9
+אוֹ	or | 320×	sblair-vocab bbh-ch9
+מִלְחָמָה	war, battle, conflict | root: ל - ח - מ--to solder, fuse, join, link, repair | 318×	sblair-vocab bbh-ch9
+מִשְׁפָּחָה	clan, family | 304×	sblair-vocab bbh-ch9
+חַטָּאת	sin, sin offering | root: ח־ט־א--to miss the mark | 298×	sblair-vocab bbh-ch9
+אַף	nostril, nose; anger | 277×	sblair-vocab bbh-ch9
+בֹּ֫קֶר	morning | 213×	sblair-vocab bbh-ch9
+כָּבוֹד	glory, splendor, honor, wealth | 200×	sblair-vocab bbh-ch9
+בָּקָר	cattle, herd | 183×	sblair-vocab bbh-ch9
+לְבַד	alone, by oneself | 161×	sblair-vocab bbh-ch9
+יֵשׁ	(particle of existence) there is, there are | 138×	sblair-vocab bbh-ch9
+הֵן	behold, if | 107×	sblair-vocab bbh-ch9
+בְּרָכָה	blessing, gift | 71×	sblair-vocab bbh-ch9
+יָד	(fs) hand | root: י - ד (Y-D). Meaning: Hand, strength, or handle. | 1634×	sblair-vocab bbh-ch10
+שָׂדֶה	field, open field | root: &nbsp; &nbsp;ש ־ ד ־ י /&nbsp;ש - ד - ה&nbsp;--&nbsp;"something spread out flat, leveled, or vast."; produce nourishment, produce crops for sustenance | 320×	sblair-vocab bbh-ch10
+עֵת	(cs) time, point of time | 296×	sblair-vocab bbh-ch10
+בְּרִית	covenant | 287×	sblair-vocab bbh-ch10
+עֹלָה	burnt offering (sacrifice entirely consumed by fire) | 286×	sblair-vocab bbh-ch10
+אֹיֵב	enemy | 285×	sblair-vocab bbh-ch10
+חֹ֫דֶשׁ	month, new moon | 283×	sblair-vocab bbh-ch10
+אֶ֫בֶן	(fs) stone | 276×	sblair-vocab bbh-ch10
+צֹאן	(cs) flock(s) | 274×	sblair-vocab bbh-ch10
+בָּשָׂר	flesh, meat | 270×	sblair-vocab bbh-ch10
+מִדְבָּר	wilderness, desert | 269×	sblair-vocab bbh-ch10
+מַטֶּה	(ms) staff, rod, tribe | 252×	sblair-vocab bbh-ch10
+גְּבוּל	border, boundary, territory (within boundary) | 240×	sblair-vocab bbh-ch10
+רֶ֫גֶל	(fs) foot | 251×	sblair-vocab bbh-ch10
+חֶ֫סֶד	loyalty, faithfulness, kindness, love, mercy | 249×	sblair-vocab bbh-ch10
+חַ֫יִל	power, strength, wealth, army | 267×	sblair-vocab bbh-ch10
+מָ֫וֶת	death, dying | 153×	sblair-vocab bbh-ch10
+אֶחָד	one | 970×	sblair-vocab bbh-ch11
+שְׁנַ֫יִם	two | 768×	sblair-vocab bbh-ch11
+שָׁלֹשׁ	three | 606×	sblair-vocab bbh-ch11
+מֵאָה	hundred | 581×	sblair-vocab bbh-ch11
+חָמֵשׁ	five | 505×	sblair-vocab bbh-ch11
+אֶ֫לֶף	thousand | root: א־ל־ף--To tame, learn, associate with, or crowd/cluster together smoothly. | 496×	sblair-vocab bbh-ch11
+עֶשֶׂר	ten | 491×	sblair-vocab bbh-ch11
+שֶׁ֫בַע	seven | 484×	sblair-vocab bbh-ch11
+אַרְבַּע	four | 459×	sblair-vocab bbh-ch11
+עָשָׂר	ten | 337×	sblair-vocab bbh-ch11
+שֵׁשׁ	six | 274×	sblair-vocab bbh-ch11
+אַמָּה	cubit, forearm | 249×	sblair-vocab bbh-ch11
+רִאשׁוֹן	first, former | 182×	sblair-vocab bbh-ch11
+שֵׁנִי	second | 156×	sblair-vocab bbh-ch11
+שְׁמֹנֶה	eight | root: ש־מ־ן--grow fat,&nbsp;Fatness, abundance, oils, or super-saturation | 147×	sblair-vocab bbh-ch11
+חֲצִי	half, middle | 125×	sblair-vocab bbh-ch11
+שְׁלִישִׁי	third | 108×	sblair-vocab bbh-ch11
+רֹחַב	width, breadth, expanse | 101×	sblair-vocab bbh-ch11
+שְׁבִיעִי	seventh | 98×	sblair-vocab bbh-ch11
+אֹ֫רֶךְ	length | 95×	sblair-vocab bbh-ch11
+תֵּשַׁע	nine | 78×	sblair-vocab bbh-ch11
+אָמַר	(Q) to say; (Ni) be said, called | root: א-מ-ר --to say&nbsp; | 5311×	sblair-vocab bbh-ch12
+לֹא	no(t) | root: ל-א-ה | 5196×	sblair-vocab bbh-ch12
+הָיָה	(Q) to be, become, happen; (Ni) be done, come to pass, occur | root: ה-י-ה--to be | 3548×	sblair-vocab bbh-ch12
+עשׂה	(Q) to do, make, create; (Ni) be done, made | root: ע-ש-ׂה--To Do / Make, produce, turn into, affect, cause | 2628×	sblair-vocab bbh-ch12
+נָתַן	(Q) to give, put, place, set; (Ni) be given | root: נ - ת - נ (N-T-N)--"to give" or "to place." | 2015×	sblair-vocab bbh-ch12
+הָלַךְ	(Q) to go, walk; (Pi) go, walk; (Hith) walk about, move to and fro | root: ה - ל - כ (H-L-K). Meaning: To go, walk, or proceed | 1549×	sblair-vocab bbh-ch12
+רָאָה	(Q) to see, look at, perceive, understand; (Ni) appear, be seen; (Hi) cause someone to see | root: ר-א-ה (Resh - Aleph - Hei). &nbsp;"to see, look at, or observe" | 1304×	sblair-vocab bbh-ch12
+שׁמע	(Q) to hear, listen to, understand, obey; (Ni) be heard; (Hi) proclaim | 1159×	sblair-vocab bbh-ch12
+ישׁב	(Q) to sit (down), remain dwell, inhabit; (Hi) cause to sit or dwell | 1085×	sblair-vocab bbh-ch12
+יצא	(Q) to go out, come out; (Hi) cause to go or come out, lead out, bring out, draw (sword) | 1067×	sblair-vocab bbh-ch12
+אִם	if, when כִּי אִם but, rather, except | root: א-ם-ם (Aleph-Mem-Mem)&nbsp;mothering, foundation, leading, or joining/gathering. | 1071×	sblair-vocab bbh-ch12
+אָכַל	(Q) to eat, consume; destroy, devour (Ni) be eaten, consumed; (Hi) feed | root: א־ל־ף / א־כ־ל--Consumption, feeding, or complete destruction by fire/decay. | 816×	sblair-vocab bbh-ch12
+אַל	not | 725×	sblair-vocab bbh-ch12
+עַתָּה	now, after all, now then, at last, then | 433×	sblair-vocab bbh-ch12
+אַךְ	only, surely, nevertheless | 161×	sblair-vocab bbh-ch12
+נגשׁ	(Q) to draw near, approach; (Ni) draw near; (Hi) bring (near), present | 125×	sblair-vocab bbh-ch12
+תָּמִיד	continually | 104×	sblair-vocab bbh-ch12
+בַּל	not | root: בּ־ל־ה--To waste away, wear out, decay, or fail. | 73×	sblair-vocab bbh-ch12
+ידע	(Q) to know, know sexually; (Ni) be(come) known, reveal oneself; (Hi) make known, inform | 948×	sblair-vocab bbh-ch13
+שׁלח	(Q) to send, stretch out; (Pi) send, stretch out, send away, expel; (Pu) be sent away (off) | 847×	sblair-vocab bbh-ch13
+כֵּן	so, thus, such | 567×	sblair-vocab bbh-ch13
+כֹּה	so, thus, here | 582×	sblair-vocab bbh-ch13
+עוֹד	still, yet (another), as long as, again | 491×	sblair-vocab bbh-ch13
+שׁמר	(Q) to keep, watch (over), guard, observe, preserve, protect, take care of; (Ni) to on one’s guard, keep oneself/abstain, be kept/preserved | 468×	sblair-vocab bbh-ch13
+מצא	(Q) to find (out); (Ni) be found | 457×	sblair-vocab bbh-ch13
+מלך	(Q) to be(come) king or queen, reign; (Hi) make someone king or queen | 347×	sblair-vocab bbh-ch13
+בָּרַךְ	(Q Pass ptc) blessed; (Pi) bless, praise | 327×	sblair-vocab bbh-ch13
+פָּקַד	(Q) to visit, attend (to), number, appoint; (Ni) be visited, looked for, missed, appointed; (Hi) appoint, place | 304×	sblair-vocab bbh-ch13
+חָזָק	(Q) to be(come) strong, have courage; (Pi) make strong, strengthen; (Hi) make strong, strengthen, take hold of; (Hith) strengthen oneself, find one’s strength, show oneself strong | 290×	sblair-vocab bbh-ch13
+מָלֵא	(Q) to be full, fill (up); (Ni) be filled (with), have one’s fill; (Pi) fill, fulfill, ordain as priest | 252×	sblair-vocab bbh-ch13
+זכר	(Q) to remember; (Ni) be remembered; (Hi) remind | 235×	sblair-vocab bbh-ch13
+כָתַב	(Q) to write (upon), register, record; (Ni) be written | 225×	sblair-vocab bbh-ch13
+שָׁכַב	(Q) to lie down, have sexual relations (with) | root: שׁ-כ-ב --to lie, lay down, recline, rest, fall, sleep, lodge | 213×	sblair-vocab bbh-ch13
+כבד	(Q) to be heavy, honored; (Ni) be respected, honored; (Pi) honor; (Hi) make heavy, harden (heart), make unresponsive (ears) | 114×	sblair-vocab bbh-ch13
+בּוֹא	(Q) to come to, come upon, go in (Hi) bring (in), come (in); (Hoph) be brought | root: ב-ו-א -- to come, arrive, enter, go/lead in, bring, come to pass | 2565×	sblair-vocab bbh-ch14
+שׁוּב	(Q) to turn back, return; (Hi) cause to return, bring back | 1069×	sblair-vocab bbh-ch14
+לקח	(Q) to take; seize, capture (Ni) be taken away, captured | 965×	sblair-vocab bbh-ch14
+עָלָה	(Q) to go up, ascend; (Ni) be taken up; (Hi) bring or lead up or out, offer up (sacrifice) | 894×	sblair-vocab bbh-ch14
+מוּת	(Q) to die; (Hi) kill, put to death; (Hoph) be killed | 841×	sblair-vocab bbh-ch14
+קרא	(Q) to call, summon, proclaim, read aloud, give a name to; (Ni) be called, summoned, proclaimed | 735×	sblair-vocab bbh-ch14
+נשׂא	(Q) to lift, carry, raise, bear, take (away); (Ni) be carried, lifted up, exalted; (Pi) lift up, exalt; (Hith) lift oneself up, exalt oneself | 659×	sblair-vocab bbh-ch14
+קוּם	(Q) to arise, get up, stand (up); (Hi) set up, put up, cause to arise, establish | 629×	sblair-vocab bbh-ch14
+שִׂים	(Q) to set (up), put, place | root: ש-י-ם (S-Y-M)--fundamental core meaning is "placement" or "establishment." | 586×	sblair-vocab bbh-ch14
+עָבַר	(Q) to pass over, pass through, pass by, cross; (Hi) cause to pass over, bring over, cause or allow to pass (through) | root: Hebrew Root: ע - ב - ר (ʿ-B-R)--shared root is "to cross over," "to pass through," "to transition," or "to travel from one side to the other." | 547×	sblair-vocab bbh-ch14
+עָמַד	(Q) to stand (up), take one’s stand; (Hi) cause to stand, station | root: Hebrew Root: ע - מ - ד (ʿ-M-D)--meaning of this root is "to support," "to stay upright," "to base," or "to place a pillar."While Hebrew emphasizes the action of standing upright, Arabic historically emphasizes the structural support that keeps something upright.Because the two languages branched out over millennia, they use this identical root for slightly different branches of the same core idea:The Structural Cognate: عَمَدَ (ʿAmada - Arabic). In Arabic, this verb means "to support" or "to prop up." It gives birth to the highly common Arabic noun عَمُود (ʿAmūd), which means "pillar," "column," or "pole." (Hebrew uses the exact same word: עַמּוּד - Amúd - for a pillar or a page column!).The Modern Spoken Arabic Verb (To Stand): To express the physical act of "standing up" or "stopping," Arabic speakers usually use the verbs وَقَفَ (Waqafa) or قَامَ (Qāma). | 523×	sblair-vocab bbh-ch14
+ילד	(Q) to bear (children), give birth to; (Ni) be born; (Pi) assist in delivery; (Pu) be born; (Hi) become the father of, beget | 495×	sblair-vocab bbh-ch14
+נָפַל	(Q) to fall, fall upon; (Hi) cause to fall, bring to ruin | root: נ ־ פ ־ ל -- to fall, fall down/away/apart, throw/cast/throw down, turn/drop out, desert | 434×	sblair-vocab bbh-ch14
+ירד	(Q) to go down, descend; (Hi) bring down, take down, lead down | 379×	sblair-vocab bbh-ch14
+בנה	(Q) to build, rebuild; (Ni) be built | 373×	sblair-vocab bbh-ch14
+יָרֵא	(Q) to fear, be afraid, revere; (Ni) be feared, revered | 378×	sblair-vocab bbh-ch14
+רַק	only, except, however | 109×	sblair-vocab bbh-ch14
+פֹּה	here | root: considered a monosyllabic particle. It does not have a three-letter root (shoresh). Instead, it is built from a two-letter phonetic foundation: The Linguistic Meaning: In ancient Semitic languages, the letter פ served as a demonstrative element (essentially acting like a spoken gesture of pointing your finger). | 82×	sblair-vocab bbh-ch14
+עָנָה	(Q) to answer, reply; (Ni) be answered | 316×	sblair-vocab bbh-ch15
+סוּר	(Q) to turn (aside), depart; (Hi) remove, take away, get rid of | root: ס־ו־ר--To turn aside, depart, remove, or deviate. | 298×	sblair-vocab bbh-ch15
+כָּרַת	(Q) to cut (off, down); (Ni) be cut off (down); (Hi) cut off, destroy | 289×	sblair-vocab bbh-ch15
+עָבַד	(Q) to work, serve, labor | 289×	sblair-vocab bbh-ch15
+חָיָה	(Q) to live, remain alive, revive, recover; (Pi) let live, revive; (Hi) let live, keep alive, revive | 283×	sblair-vocab bbh-ch15
+יָכֹל	(Q) to be able, capable of, endure, prevail | root: י-כ-ל -- to be able, can. may | 193×	sblair-vocab bbh-ch15
+אֹ֫זֶן	(fs) ear | 188×	sblair-vocab bbh-ch15
+אַ֫יִל	ram, ruler | 182×	sblair-vocab bbh-ch15
+זֶ֫בַח	sacrifice | 162×	sblair-vocab bbh-ch15
+גִּבּוֹר	mighty, valiant, heroic; (n) hero | 160×	sblair-vocab bbh-ch15
+צְדָקָה	righteousness, righteous act, justice | 159×	sblair-vocab bbh-ch15
+צָפוֹן	(fs) north, northern | 153×	sblair-vocab bbh-ch15
+אָז	then, since, before | 141×	sblair-vocab bbh-ch15
+חַיִּים	life, lifetime | root: ח - י - י--"to live," "to exist," or "to be vibrant/alive." | 140×	sblair-vocab bbh-ch15
+אַף	also, indeed, even | 133×	sblair-vocab bbh-ch15
+פֶּן	lest, otherwise | root: is a primitive grammatical conjunction (a conjunction of warning), it does not originate from a traditional three-letter action verb root (shoresh). | 133×	sblair-vocab bbh-ch15
+שָׁם	(to) there, then | 834×	sblair-vocab bbh-ch16
+פֶּה	mouth, opening | 500×	sblair-vocab bbh-ch16
+קָרַב	(Q) to draw near, approach; (Hi) bring near, offer, present | 280×	sblair-vocab bbh-ch16
+חֵטְא	(Q) to sin, miss; (Pi) cleanse from sin, make a sin offering; (Hi) cause to sin | 240×	sblair-vocab bbh-ch16
+יָרַשׁ	(Q) to take possession of, inherit, dispossess; (Hi) cause to possess or inherit, dispossess | 232×	sblair-vocab bbh-ch16
+&nbsp;רַבָּה	(Q) to be(come) numerous, multiply, increase; (Hi) make many, multiply, increase | 229×	sblair-vocab bbh-ch16
+שׁתה	(Q) to drink | 217×	sblair-vocab bbh-ch16
+נטה	(Q) to stretch out, extend, spread out, pitch (a tent), turn, bend, incline; (Hi) stretch out, spread out, turn, incline | 216×	sblair-vocab bbh-ch16
+עזב	(Q) to leave, abandon, forsake, set free | 214×	sblair-vocab bbh-ch16
+יסף	(Q) to add, increase, continue; (Hi) add, increase, do again | 213×	sblair-vocab bbh-ch16
+כַּף	(fs) hand, palm | 192×	sblair-vocab bbh-ch16
+רֵעַ	friend, neighbor, fellow | 188×	sblair-vocab bbh-ch16
+נֶ֫גֶד	in front of, opposite, before | 151×	sblair-vocab bbh-ch16
+גאל	(Q) to redeem | 104×	sblair-vocab bbh-ch16
+כפר	(Pi) to cover (over), atone | 102×	sblair-vocab bbh-ch16
+דָּם	blood; bloodshed, bloodguilt | 360×	sblair-vocab bbh-ch17
+אֹ֫הֶל	tent | 348×	sblair-vocab bbh-ch17
+אָהַב	(Q) to love; (Pi ptc) lover | 217×	sblair-vocab bbh-ch17
+כלה	(Q) to be complete, finished, come to an end, spent, exhausted; (Pi) complete, finish, end | 207×	sblair-vocab bbh-ch17
+שׁפט	(Q) to judge, decide (between), settle a dispute; (Ni) plead, dispute, enter into judgment or controversy | 204×	sblair-vocab bbh-ch17
+אסף	(Q) to gather (in), remove; (Ni) be gathered, taken away, gather | 200×	sblair-vocab bbh-ch17
+רום	(Q) to be high, lifted up, exalted, rise, arise; (Hi) lift up, raise, exalt, take away; (Hoph) be exalted; (Polel) lift up, raise, exalt, raise (children) | 197×	sblair-vocab bbh-ch17
+גלה	(Q) to uncover, reveal; (Ni) be uncovered, reveal oneself, be revealed; (Pi) uncover, reveal, disclose; (Hi) take into exile | 187×	sblair-vocab bbh-ch17
+אבד	(Q) to perish, vanish, be lost, stray; (Pi) cause to perish, destroy; (Hi) destroy, kill | 185×	sblair-vocab bbh-ch17
+כִּסֵּא	throne; seat, chair | 135×	sblair-vocab bbh-ch17
+מִסְפָּר	number | 134×	sblair-vocab bbh-ch17
+שֶׁ֫מֶשׁ	(cs) sun | 134×	sblair-vocab bbh-ch17
+אֱמֶת	reliability, trustworthiness, truth, faithfulness | 127×	sblair-vocab bbh-ch17
+טהר	(Q) to be (regarded as) pure; (Pi) purify, cleanse, declare clean; (Hith) purify/ cleanse oneself | 94×	sblair-vocab bbh-ch17
+נָא	please, now | 405×	sblair-vocab bbh-ch18
+שָׁלוֹם	peace, welfare, wholeness | 237×	sblair-vocab bbh-ch18
+שֵׁ֫בֶט	tribe, rod, staff, scepter | 190×	sblair-vocab bbh-ch18
+שׁאל	(Q) to ask, inquire, require, demand | 176×	sblair-vocab bbh-ch18
+בחר	(Q) to choose, test, discern | 172×	sblair-vocab bbh-ch18
+בין	(Q) to understand, perceive, consider; (Ni) be intelligent, discerning; (Hi) discern, understand, cause to understand (teach); (Hith) consider, examine, understand | 171×	sblair-vocab bbh-ch18
+קדשׁ	(Q) to be holy, set apart; (Ni) be honored or treated as holy; (Pi) set apart, consecrate or dedicate as holy; (Hi) consecrate, dedicate or declare as holy; (Hith) show or keep oneself holy | 171×	sblair-vocab bbh-ch18
+הרג	(Q) to kill, slay | 167×	sblair-vocab bbh-ch18
+רעה	(Q) to pasture, tend, feed, shepherd | 167×	sblair-vocab bbh-ch18
+דרשׁ	(Q) to seek, inquire, investigate, require, demand | 165×	sblair-vocab bbh-ch18
+בַּ֫עַל	owner, master, husband, Baal | 161×	sblair-vocab bbh-ch18
+בַּעַד	(prep) behind, through | 104×	sblair-vocab bbh-ch18
+יַ֫עַן	because, since, on account of | 100×	sblair-vocab bbh-ch18
+חָפֵץ	(Q) to desire, delight in, be willing | 74×	sblair-vocab bbh-ch18
+עָוֹן	transgression, iniquity, sin, fault, guilt (from iniquity), punishment (for iniquity) | 233×	sblair-vocab bbh-ch19
+זֶ֫רַע	seed, (fig. offspring) | 229×	sblair-vocab bbh-ch19
+שָׂפָה	lip, language, edge, shore | 178×	sblair-vocab bbh-ch19
+דּוֹר	generation; also spelled דֹּר | 167×	sblair-vocab bbh-ch19
+מְלָאכָה	work, occupation, service | 167×	sblair-vocab bbh-ch19
+חוּץ	outside, street | 164×	sblair-vocab bbh-ch19
+פֶּ֫תַח	opening, entrance, doorway | 164×	sblair-vocab bbh-ch19
+רֹב	abundance, multitude,&nbsp;greatness | 150×	sblair-vocab bbh-ch19
+פַּר	bull | 133×	sblair-vocab bbh-ch19
+בטח	(Q) to trust | 118×	sblair-vocab bbh-ch19
+שׂרף	(Q) to burn, consume, destroy; (Ni) be burned | 117×	sblair-vocab bbh-ch19
+שׁלם	(Q) to be complete, finished; (Pi) repay, restitute, complete, finish, make whole, restore; (Hi) make peace with, bring to completion, consummate | 116×	sblair-vocab bbh-ch19
+בכה	(Q) to weep | 114×	sblair-vocab bbh-ch19
+לבשׁ	(Q) to dress (oneself), clothe, be clothed; (Hi) dress, clothe | 112×	sblair-vocab bbh-ch19
+מַעֲשֶׂה	(ms) work, deed, action | 235×	sblair-vocab bbh-ch20
+קֶ֫רֶב	inner part, organs, body; self;&nbsp; בְּקֶרֶב as prep., in (the midst of), through (the midst of), within, among | 227×	sblair-vocab bbh-ch20
+עֵדָה	congregation, assembly | 171×	sblair-vocab bbh-ch20
+סבב	(Q) to turn (about), go around, surround; (Ni) turn; (Hi) cause to go around, lead around | 163×	sblair-vocab bbh-ch20
+טמא	(Q) to be(come) impure, unclean; (Ni) defile oneself; (Pi) defile, declare unclean; (Hith) defile oneself | 162×	sblair-vocab bbh-ch20
+נוּס	(Q) to flee, escape | 160×	sblair-vocab bbh-ch20
+שׂמח	(Q) to rejoice; (Pi) cause to rejoice, make someone happy | 156×	sblair-vocab bbh-ch20
+נגע	(Q) to touch, strike, reach (arrive at); (Hi) reach, (cause to) touch | 150×	sblair-vocab bbh-ch20
+שׁבר	(Q) to break (up); (Ni) be broken, destroyed; (Pi) shatter, break | 148×	sblair-vocab bbh-ch20
+עֲבֹדָה	work, labor, service, worship | 145×	sblair-vocab bbh-ch20
+יַ֫יִן	wine | 141×	sblair-vocab bbh-ch20
+קרא	(Q) to meet, encounter, touch, happen | 136×	sblair-vocab bbh-ch20
+בִּלְתִּי	(negates inf cstr) not, except | 112×	sblair-vocab bbh-ch20
+ספר	(Q) to count; (Pi) count, recount, make known | 107×	sblair-vocab bbh-ch20
+יַחְדָּו	together | 98×	sblair-vocab bbh-ch20
+מוֹעֵד	meeting, assembly, appointed time | 223×	sblair-vocab bbh-ch21
+נַחֲלָה	inheritance, possession, property | 222×	sblair-vocab bbh-ch21
+מַחֲנֶה	(cs) camp, army | 215×	sblair-vocab bbh-ch21
+מַלְאָךְ	messenger, angel | 213×	sblair-vocab bbh-ch21
+מִנְחָה	gift, offering, tribute | 211×	sblair-vocab bbh-ch21
+שׂנא	(Q) to hate; (Pi ptc) enemy | 148×	sblair-vocab bbh-ch21
+נסע	(Q) to pull (out or up), travel, journey | 146×	sblair-vocab bbh-ch21
+רדף	(Q) to pursue, chase, follow | 144×	sblair-vocab bbh-ch21
+חנה	(Q) to encamp, decline (of day) | 143×	sblair-vocab bbh-ch21
+נוּחַ	(Q) to rest, settle down; (Hi) a) cause to rest; b) place, set, leave (behind or untouched) | 140×	sblair-vocab bbh-ch21
+פתח	(Q) to open (up); (Ni) be opened, loosened, set free; (Pi) let loose, loosen | 136×	sblair-vocab bbh-ch21
+זבח	(Q) to offer, slaughter, sacrifice; (Pi) offer sacrifice, sacrifice | 134×	sblair-vocab bbh-ch21
+פנה	(Q) to turn (away, back) | 134×	sblair-vocab bbh-ch21
+שׁאר	(Ni) to remain, be left over, escape, survive; (Hi) leave over, spare, leave behind | 133×	sblair-vocab bbh-ch21
+אֲרוֹן	(cs) ark, chest, coffin | 202×	sblair-vocab bbh-ch22
+מִשְׁכָּן	dwelling place, tabernacle | 139×	sblair-vocab bbh-ch22
+קבר	(Q) to bury; (Ni) be buried | 133×	sblair-vocab bbh-ch22
+חֹק	statute, appointed time, portion | 131×	sblair-vocab bbh-ch22
+שׁכן	(Q) to dwell, live (among); (Pi) cause to dwell | 130×	sblair-vocab bbh-ch22
+קבץ	(Q) to collect, gather, assemble; (Ni) be gathered; (Pi) gather together, assemble | 127×	sblair-vocab bbh-ch22
+בּוֹשׁ	(Q) to be ashamed; (Hi) put to shame | 125×	sblair-vocab bbh-ch22
+חשׁב	(Q) to think, consider, devise, plan, value; (Ni) be thought of (as), reckoned, accounted, considered (as); (Pi) think, consider, devise, plan | 124×	sblair-vocab bbh-ch22
+לכד	(Q) to capture, seize, catch, take (by lot) (Ni) be caught, captured | 121×	sblair-vocab bbh-ch22
+גדל	(Q) to be(come) great, grow up; (Pi) bring up (children), make great, exalt; (Hi) increase, enlarge, magnify | 117×	sblair-vocab bbh-ch22
+יטב	(Q) to be well with, go well with/for, be pleasing (to); (Hi) do good to, benefit, deal well with | 117×	sblair-vocab bbh-ch22
+שׁפך	(Q) to pour (out), shed (blood), spill | 117×	sblair-vocab bbh-ch22
+חֻקָּה	statute, ordinance | 104×	sblair-vocab bbh-ch22
+בֶּ֫גֶד	garment, cloth | 216×	sblair-vocab bbh-ch23
+שֶׁ֫מֶן	oil, fat | 193×	sblair-vocab bbh-ch23
+חָצֵר	(cs) court, enclosure, settlement, village | 192×	sblair-vocab bbh-ch23
+בְּהֵמָה	animal(s), beast(s), cattle | 190×	sblair-vocab bbh-ch23
+חָכְמָה	wisdom, skill | 153×	sblair-vocab bbh-ch23
+נְחֹ֫שֶׁת	copper, bronze | 139×	sblair-vocab bbh-ch23
+עֶ֫רֶב	evening, sunset | 134×	sblair-vocab bbh-ch23
+נָשִׂיא	&nbsp;prince, chief, leader | 130×	sblair-vocab bbh-ch23
+כֹּחַ	strength, power | 126×	sblair-vocab bbh-ch23
+עֶ֫צֶם	(fs) bone, skeleton | 126×	sblair-vocab bbh-ch23
+חֵמָה	wrath, heat, poison | 125×	sblair-vocab bbh-ch23
+קָהָל	assembly, company, congregation | 123×	sblair-vocab bbh-ch23
+בְּכוֹר	firstborn, oldest offspring | 120×	sblair-vocab bbh-ch23
+נִכָּה	(Hi) to strike, beat, strike dead, destroy; (Hoph) be beaten, struck fatally | root: Hebrew Root: נ - כ - ה (N-K-H)--meaning of this root is "to strike," "to wound," "to hit," or "to diminish by striking."Think of chipping away at a block of stone by hitting it—you are both striking it and deducting pieces from it. This explains how the biblical meaning ("to smite") evolved into the modern business meaning ("to deduct"). | 502×	sblair-vocab bbh-ch24
+כּוּן	(Ni) to be firm, stand firm, be established, be ready, determined; (Hi) prepare, make ready, make firm, establish; (Polel) establish | 219×	sblair-vocab bbh-ch24
+נצל	(Ni) to be delivered, deliver oneself, escape; (Hi) take/snatch away, deliver from, save, rescue | 213×	sblair-vocab bbh-ch24
+ישׁע	(Ni) to be saved, victorious; (Hi) deliver, save, bring victory to | 205×	sblair-vocab bbh-ch24
+לחם	(Q, Ni) to fight | 171×	sblair-vocab bbh-ch24
+שׁחת	(Pi, Hi) to destroy, ruin, spill, annihilate | 152×	sblair-vocab bbh-ch24
+נחם	(Ni) to regret, be sorry, have compassion; (Pi) comfort, console | 108×	sblair-vocab bbh-ch24
+יתר	(Ni) to be left, remain; (Hi) leave over, leave behind | 105×	sblair-vocab bbh-ch24
+רוּץ	(Q) to run | 104×	sblair-vocab bbh-ch24
+אמן	(Ni) to be trustworthy, faithful, reliable; (Hi) believe (in), trust | 97×	sblair-vocab bbh-ch24
+מלט	(Ni) to escape, flee, slip away; (Pi) deliver, save, leave undisturbed | 94×	sblair-vocab bbh-ch24
+שׁמד	(Ni) to be destroyed, exterminated; (Hi) destroy, exterminate | 90×	sblair-vocab bbh-ch24
+סתר	(Ni) to be hidden, hide oneself; (Hi) hide, conceal | 82×	sblair-vocab bbh-ch24
+נצב	(Ni) to stand, position oneself, present; (Hi) cause to stand, set (up), place, establish | 74×	sblair-vocab bbh-ch24
+צֶ֫דֶק	righteousness | 123×	sblair-vocab bbh-ch25
+נָהָר	river, stream | 119×	sblair-vocab bbh-ch25
+מַמְלָכָה	kingdom, dominion, reign | 117×	sblair-vocab bbh-ch25
+מִגְרָשׁ	open land (outside city walls), commonly used as pasture | 114×	sblair-vocab bbh-ch25
+שׁכח	(Q) to forget; (Ni) be forgotten | 102×	sblair-vocab bbh-ch25
+רעע	(Q) to be bad, displeasing; (Hi) do evil, act wickedly, harm, treat badly | 98×	sblair-vocab bbh-ch25
+שׂבע	(Q) to be satisfied, have one’s fill (of); (Hi) satisfy | 97×	sblair-vocab bbh-ch25
+הפך	(Q) to turn, overturn, overthrow, destroy; (Ni) turn oneself, be destroyed, turned into, changed | 95×	sblair-vocab bbh-ch25
+חרה	(Q) to kindle/burn with anger, be hot | 93×	sblair-vocab bbh-ch25
+שׁמם	(Q) to be desolate, deserted, uninhabited; (Ni) be desolate, made uninhabited, deserted; (Hi) make deserted or desolated | 92×	sblair-vocab bbh-ch25
+זָכָר	male, man | 82×	sblair-vocab bbh-ch25
+חֹ֫שֶׁךְ	darkness | 80×	sblair-vocab bbh-ch25
+שִׁיר	song | 78×	sblair-vocab bbh-ch25
+כְּסִיל	fool | 70×	sblair-vocab bbh-ch25
+דבר	(Pi) to speak | 1140×	sblair-vocab bbh-ch26
+צוה	(Pi) to command; (Pu) be told, commanded, instructed | 494×	sblair-vocab bbh-ch26
+בָּקַּשׁ	(Pi) to seek, search for, demand, require | 225×	sblair-vocab bbh-ch26
+מִצְוָה	commandment | 184×	sblair-vocab bbh-ch26
+כסה	(Q) to cover, conceal; (Pi) cover (up), conceal, clothe | 153×	sblair-vocab bbh-ch26
+הלל	(Pi) to praise, boast; (Pu) be praised, praiseworthy; (Hith) boast | 146×	sblair-vocab bbh-ch26
+נבא	(Ni) to prophesy; (Hith) prophesy | 115×	sblair-vocab bbh-ch26
+קטר	(Pi) to offer/ burn in smoke; (Hi) burn/ offer (in smoke) | 115×	sblair-vocab bbh-ch26
+שׁרת	(Pi) to minister, attend to, serve | 98×	sblair-vocab bbh-ch26
+טָהוֹר	pure, clean | 95×	sblair-vocab bbh-ch26
+סגר	(Q) to shut, close; (Hi) shut away, close up, deliver (up) | 91×	sblair-vocab bbh-ch26
+טָמֵא	unclean | 88×	sblair-vocab bbh-ch26
+שׁיר	(Q & Polel) to sing (of); (Q and Polel ptc) singer | 88×	sblair-vocab bbh-ch26
+מהר	(Pi) to hasten, hurry, go or come quickly | 81×	sblair-vocab bbh-ch26
+עָנִי	poor, needy, afflicted, humble | 80×	sblair-vocab bbh-ch26
+שֶׁ֫קֶר	lie, falsehood, deception | 113×	sblair-vocab bbh-ch27
+עַמּוּד	pillar, column, tent pole | 112×	sblair-vocab bbh-ch27
+כָּנָף	(fs) wing, edge | 111×	sblair-vocab bbh-ch27
+למד	(Q) to learn; (Pi) teach | 87×	sblair-vocab bbh-ch27
+קנה	(Q) to buy, purchase, get, acquire | 85×	sblair-vocab bbh-ch27
+גוּר	(Q) to sojourn, dwell as foreigner | 82×	sblair-vocab bbh-ch27
+עזר	(Q) to help, assist | 82×	sblair-vocab bbh-ch27
+קלל	(Q, Ni) to be insignificant, lightly esteemed (Pi) declare cursed; (Hi) make light, treat with contempt | 82×	sblair-vocab bbh-ch27
+משׁל	(Q) to rule, have dominion/charge | 81×	sblair-vocab bbh-ch27
+שׁחט	(Q) to slaughter | 81×	sblair-vocab bbh-ch27
+יעץ	(Q) to advise, counsel, devise; (Ni) take counsel together | 80×	sblair-vocab bbh-ch27
+מכר	(Q) to sell, deliver over; (Ni) be sold, sell oneself (into slavery) | 80×	sblair-vocab bbh-ch27
+יָמִין	(fs) right hand, south | 141×	sblair-vocab bbh-ch28
+פַּ֫עַם	(fs) foot, pace, time | 118×	sblair-vocab bbh-ch28
+עָפָר	dust, (dry) earth, soil | 110×	sblair-vocab bbh-ch28
+מַרְאֶה	appearance, sight, appearance, vision | 103×	sblair-vocab bbh-ch28
+עוּר	(Q) to be awake, rouse (oneself); (Hi) rouse, wake up, stir up | 80×	sblair-vocab bbh-ch28
+חנן	(Q) to be gracious to, show favor to; (Hith) make supplication, implore favor | 77×	sblair-vocab bbh-ch28
+חלה	(Q) to be(come) weak, sick, faint; (Ni) be exhausted, made weak; (Pi) appease, flatter | 75×	sblair-vocab bbh-ch28
+ערך	(Q) to arrange, set in order, array | 75×	sblair-vocab bbh-ch28
+מאס	(Q) to reject, spurn, despise | 74×	sblair-vocab bbh-ch28
+אסר	(Q) to tie, bind, imprison | 73×	sblair-vocab bbh-ch28
+זעק	(Q) to cry (out) (for help) | 73×	sblair-vocab bbh-ch28
+רחץ	(Q) to wash (off or away) | 72×	sblair-vocab bbh-ch28
+נַ֫חַל	stream, brook, wadi | 137×	sblair-vocab bbh-ch29
+עוֹר	skin, hide, leather | 99×	sblair-vocab bbh-ch29
+יֶ֫תֶר	rest, remainder, remnant, excess | 96×	sblair-vocab bbh-ch29
+חַיָּה	beast(s), animal(s), living being(s) | 96×	sblair-vocab bbh-ch29
+חֲמוֹר	donkey | 96×	sblair-vocab bbh-ch29
+שִׂמְחָה	joy, gladness, mirth | 94×	sblair-vocab bbh-ch29
+פֶּ֫שַׁע	sin, transgression, rebellion | 93×	sblair-vocab bbh-ch29
+גֵּר	sojourner | 92×	sblair-vocab bbh-ch29
+חֵ֫לֶב	fat; best, choice part | 92×	sblair-vocab bbh-ch29
+קָצֶה	end, border, outskirts | 92×	sblair-vocab bbh-ch29
+תָּמִים	complete, blameless, without blemish, perfect | 91×	sblair-vocab bbh-ch29
+עֹז	strength, might, power | 76×	sblair-vocab bbh-ch29
+נָגַד	(Hi) to tell, declare, announce, report, make known; (Hoph) be told, announced, reported | 371×	sblair-vocab bbh-ch30
+שׁבע	(Ni) to swear (an oath); (Hi) cause to take an oath, urgently admonish | 186×	sblair-vocab bbh-ch30
+חלל	(Ni) to be defiled, profaned, defile oneself; (Pi) profane, pollute, defile; (Hi) a) let something be profaned, b) begin | 135×	sblair-vocab bbh-ch30
+שׁלך	(Hi) to throw, cast; (Hoph) be thrown, cast | 125×	sblair-vocab bbh-ch30
+כֶּ֫רֶם	vineyard | 94×	sblair-vocab bbh-ch30
+זְרוֹעַ	arm, forearm | 91×	sblair-vocab bbh-ch30
+כְּרוּב	cherub | 91×	sblair-vocab bbh-ch30
+מַלְכוּת	kingdom, royalty, reign | 91×	sblair-vocab bbh-ch30
+דֶּ֫לֶת	door, gate | 88×	sblair-vocab bbh-ch30
+דַּ֫עַת	knowledge, understanding | 88×	sblair-vocab bbh-ch30
+עֵצָה	counsel, advice, plan | 88×	sblair-vocab bbh-ch30
+הָמוֹן	tumult, commotion, noise, multitude, crowd, abundance | 85×	sblair-vocab bbh-ch30
+חוֹמָה	wall | 133×	sblair-vocab bbh-ch31
+שֶׁ֫קֶל	shekel, particular weight | 88×	sblair-vocab bbh-ch31
+אָ֫וֶן	trouble, sorrow, wickedness, iniquity | 80×	sblair-vocab bbh-ch31
+קָרְבָּן	gift, offering | 80×	sblair-vocab bbh-ch31
+אוֹצָר	treasure, treasury, storehouse | 79×	sblair-vocab bbh-ch31
+אוֹת	sign | 79×	sblair-vocab bbh-ch31
+יְשׁוּעָה	salvation, deliverance | 78×	sblair-vocab bbh-ch31
+מִשְׁמֶ֫רֶת	watch, guard, duty | 78×	sblair-vocab bbh-ch31
+נֶ֫גַע	plague, affliction | 78×	sblair-vocab bbh-ch31
+גּוֹרָל	lot | 77×	sblair-vocab bbh-ch31
+מִקְנֶה	cattle, livestock, property | 76×	sblair-vocab bbh-ch31
+צַר	enemy | 70×	sblair-vocab bbh-ch31
+ידה	(Hi) to praise, thank, confess; (Hith) confess | 111×	sblair-vocab bbh-ch32
+שֶׁ֫לֶם	peace offering | 87×	sblair-vocab bbh-ch32
+פֵּאָה	corner, side, edge | 86×	sblair-vocab bbh-ch32
+שׁית	(Q) to set, put, place | 86×	sblair-vocab bbh-ch32
+קֶ֫רֶן	(fs) horn | 76×	sblair-vocab bbh-ch32
+קֶ֫שֶׁת	bow, weapon | 76×	sblair-vocab bbh-ch32
+שָׁלָל	spoil, plunder, prey | 75×	sblair-vocab bbh-ch32
+אֶ֫רֶז	cedar | 73×	sblair-vocab bbh-ch32
+צוּר	rock, boulder | 73×	sblair-vocab bbh-ch32
+ריב	(Q) to strive, contend, quarrel, conduct a legal case | 72×	sblair-vocab bbh-ch32
+פלא	(Ni) to be extraordinary, wonderful, too difficult; (Hi) do wonderful deeds | 71×	sblair-vocab bbh-ch32
+נבט	(Hi) to look, behold | 70×	sblair-vocab bbh-ch32
+שַׁבָּת	(cs) Sabbath, day or period of rest | 111×	sblair-vocab bbh-ch33
+ענה	(Q) to be afflicted, humbled; (Pi) afflict, oppress, mistreat | 79×	sblair-vocab bbh-ch33
+רכב	(Q) to ride, mount; (Hi) cause to ride | 78×	sblair-vocab bbh-ch33
+מִזְרָח	east, sunrise | 74×	sblair-vocab bbh-ch33
+סֶ֫לָה	Selah, musical term | 74×	sblair-vocab bbh-ch33
+הֶ֫בֶל	vanity, worthlessness, breath | 73×	sblair-vocab bbh-ch33
+חֶרְפָּה	reproach, taunt, disgrace, shame | 73×	sblair-vocab bbh-ch33
+בֶּ֫טֶן	(fs) womb, belly, stomach | 72×	sblair-vocab bbh-ch33
+גִּבְעָה	hill | 72×	sblair-vocab bbh-ch33
+לין	(Q) to lodge, spend the night | 71×	sblair-vocab bbh-ch33
+שׁבת	(Q) to stop, cease, rest, observe Sabbath; (Hi) cause to cease, remove, put away | 71×	sblair-vocab bbh-ch33
+משׁח	(Q) to anoint, smear | 70×	sblair-vocab bbh-ch33
+אוֹר	(cs) light, daylight, sunshine | 120×	sblair-vocab bbh-ch34
+רֶ֫כֶב	chariot(s) | 120×	sblair-vocab bbh-ch34
+פְּרִי	fruit, offspring | 119×	sblair-vocab bbh-ch34
+תּוֹעֵבָה	abomination | 118×	sblair-vocab bbh-ch34
+לָשׁוֹן	(cs) tongue, language | 117×	sblair-vocab bbh-ch34
+פלל	(Hith) to pray, intercede | 84×	sblair-vocab bbh-ch34
+מִקְדָּשׁ	sanctuary, sacred place | 75×	sblair-vocab bbh-ch34
+עֵז	(fs) she-goat, goat’s hair | 74×	sblair-vocab bbh-ch34
+קִיר	wall | 73×	sblair-vocab bbh-ch34
+שׁוֹפָר	ram’s horn, trumpet | 72×	sblair-vocab bbh-ch34
+עוֹף	bird(s), flying things, insects | 71×	sblair-vocab bbh-ch34
+תקע	(Q) to drive or thrust (sword), pitch (tent), blow (trumpet), clap | 70×	sblair-vocab bbh-ch34
+חוה	(Hishtaphel) to bow down, worship | 173×	sblair-vocab bbh-ch35
+כֶּ֫בֶשׂ	lamb, sheep | 107×	sblair-vocab bbh-ch35
+בָּמָה	high place, sacred hill | 103×	sblair-vocab bbh-ch35
+רָעָב	famine, hunger | 101×	sblair-vocab bbh-ch35
+חָלָל	(adj) pierced, slain, defiled | 95×	sblair-vocab bbh-ch35
+שׁוֹר	ox, bull | 79×	sblair-vocab bbh-ch35
+תְּפִלָּה	prayer | 77×	sblair-vocab bbh-ch35
+בַּרְזֶל	iron | 76×	sblair-vocab bbh-ch35
+תְּרוּמָה	offering, contribution | 76×	sblair-vocab bbh-ch35
+שֻׁלְחָן	table | 71×	sblair-vocab bbh-ch35
+עֵ֫מֶק	lowland, plain; valley | 70×	sblair-vocab bbh-ch35
+צָרָה	distress, anxiety, trouble, anguish | 70×	sblair-vocab bbh-ch35

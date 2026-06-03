@@ -1,0 +1,200 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:Hebrew Strong Verb Paradigm (S. Blair)
+#tags column:3
+קָטַ֫לְנוּ	Qal | Perfect | 1cp | root: קטל	sblair-paradigm stem-qal
+קָטַ֫לְתִּי	Qal | Perfect | 1cs | root: קטל	sblair-paradigm stem-qal
+קְטַלְתֶּן	Qal | Perfect | 2fp | root: קטל	sblair-paradigm stem-qal
+קָטַלְתְּ	Qal | Perfect | 2fs | root: קטל	sblair-paradigm stem-qal
+קְטַלְתֶּם	Qal | Perfect | 2mp | root: קטל	sblair-paradigm stem-qal
+קָטַ֫לְתָּ	Qal | Perfect | 2ms | root: קטל	sblair-paradigm stem-qal
+קָֽטְלוּ	Qal | Perfect | 3cp | root: קטל	sblair-paradigm stem-qal
+קָֽטְלָה	Qal | Perfect | 3fs | root: קטל	sblair-paradigm stem-qal
+קָטַל	Qal | Perfect | 3ms | root: קטל	sblair-paradigm stem-qal
+נִקְטֹל	Qal | Imperfect | 1cp | root: קטל	sblair-paradigm stem-qal
+אֶקְטֹל	Qal | Imperfect | 1cs | root: קטל	sblair-paradigm stem-qal
+תִּקְטְלִי	Qal | Imperfect | 2fs | root: קטל	sblair-paradigm stem-qal
+תִּקְטְלוּ	Qal | Imperfect | 2mp | root: קטל	sblair-paradigm stem-qal
+תִּקְטֹ֫לְנָה	Qal | Imperfect | 3fp/2fp | root: קטל	sblair-paradigm stem-qal
+תִּקְטֹל	Qal | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-qal
+יִקְטְלוּ	Qal | Imperfect | 3mp | root: קטל	sblair-paradigm stem-qal
+יִקְטֹל	Qal | Imperfect | 3ms | root: קטל	sblair-paradigm stem-qal
+קְטֹ֫לְנָה	Qal | Imperative | 2fp | root: קטל	sblair-paradigm stem-qal
+קִטְלִי	Qal | Imperative | 2fs | root: קטל	sblair-paradigm stem-qal
+קִטְלוּ	Qal | Imperative | 2mp | root: קטל	sblair-paradigm stem-qal
+קְטֹל	Qal | Imperative or Infinitive Construct | 2ms | root: קטל	sblair-paradigm stem-qal
+קָטוֹל	Qal | Infinitive Absolute | root: קטל	sblair-paradigm stem-qal
+קֹטְלוֹת	Qal | Participle Active | fp | root: קטל	sblair-paradigm stem-qal
+קְטוּלוֹת	Qal | Participle Passive | fp | root: קטל	sblair-paradigm stem-qal
+קֹטֶ֫לֶת	Qal | Participle Active | fs | root: קטל	sblair-paradigm stem-qal
+קְטוּלָה	Qal | Participle Passive | fs | root: קטל	sblair-paradigm stem-qal
+קֹטְלִים	Qal | Participle Active | mp | root: קטל	sblair-paradigm stem-qal
+קְטוּלִים	Qal | Participle Passive | mp | root: קטל	sblair-paradigm stem-qal
+קֹטֵל	Qal | Participle Active | ms | root: קטל	sblair-paradigm stem-qal
+קָטוּל	Qal | Participle Passive | ms | root: קטל	sblair-paradigm stem-qal
+נִקְטַ֫לְנוּ	Niphal | Perfect | 1cp | root: קטל	sblair-paradigm stem-niphal
+נִקְטַ֫לְתִּי	Niphal | Perfect | 1cs | root: קטל	sblair-paradigm stem-niphal
+נִקְטַלְתֶּן	Niphal | Perfect | 2fp | root: קטל	sblair-paradigm stem-niphal
+נִקְטַלְתְּ	Niphal | Perfect | 2fs | root: קטל	sblair-paradigm stem-niphal
+נִקְטַלְתֶּם	Niphal | Perfect | 2mp | root: קטל	sblair-paradigm stem-niphal
+נִקְטַ֫לְתָּ	Niphal | Perfect | 2ms | root: קטל	sblair-paradigm stem-niphal
+נִקְטְלוּ	Niphal | Perfect | 3cp | root: קטל	sblair-paradigm stem-niphal
+נִקְטְלָה	Niphal | Perfect | 3fs | root: קטל	sblair-paradigm stem-niphal
+נִקְטַל	Niphal | Perfect | 3ms | root: קטל	sblair-paradigm stem-niphal
+נִקָּטֵל	Niphal | Imperfect | 1cp | root: קטל	sblair-paradigm stem-niphal
+נַקְטִיל	Niphal | Imperfect | 1cp | root: קטל	sblair-paradigm stem-niphal
+אֶקָּטֵל	Niphal | Imperfect | 1cs | root: קטל	sblair-paradigm stem-niphal
+אַקְטִיל	Niphal | Imperfect | 1cs | root: קטל	sblair-paradigm stem-niphal
+תִּקָּֽטְלִי	Niphal | Imperfect | 2fs | root: קטל	sblair-paradigm stem-niphal
+תַּקְטִ֫ילי	Niphal | Imperfect | 2fs | root: קטל	sblair-paradigm stem-niphal
+תִּקָּֽטְלוּ	Niphal | Imperfect | 2mp | root: קטל	sblair-paradigm stem-niphal
+תַּקְטִ֫ילוּ	Niphal | Imperfect | 2mp | root: קטל	sblair-paradigm stem-niphal
+תִּקָּטַ֫לְנָה	Niphal | Imperfect | 3fp/2fp | root: קטל	sblair-paradigm stem-niphal
+תַּקְטֵ֫לְנָה	Niphal | Imperfect | 3fp/2fp | root: קטל	sblair-paradigm stem-niphal
+תִּקָּטֵל	Niphal | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-niphal
+תַּקְטִיל	Niphal | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-niphal
+יִקָּֽטְלוּ	Niphal | Imperfect | 3mp | root: קטל	sblair-paradigm stem-niphal
+יַקְטִ֫ילוּ	Niphal | Imperfect | 3mp | root: קטל	sblair-paradigm stem-niphal
+יִקָּטֵל	Niphal | Imperfect | 3ms | root: קטל	sblair-paradigm stem-niphal
+הִקָּטַ֫לְנָה	Niphal | Imperative | 2fp | root: קטל	sblair-paradigm stem-niphal
+הִקָּֽטְלִי	Niphal | Imperative | 2fs | root: קטל	sblair-paradigm stem-niphal
+הִקָּֽטְלוּ	Niphal | Imperative | 2mp | root: קטל	sblair-paradigm stem-niphal
+הִקָּטֵל	Niphal | Imperative or Infinitive Construct | 2ms | root: קטל	sblair-paradigm stem-niphal
+נִקְטוֹל	Niphal | Infinitive Absolute | root: קטל	sblair-paradigm stem-niphal
+הִקָּטוֹל	Niphal | Infinitive Absolute | root: קטל	sblair-paradigm stem-niphal
+נִקְטָלוֹת	Niphal | Participle | fp | root: קטל	sblair-paradigm stem-niphal
+נִקְטָלָה	Niphal | Participle | fs | root: קטל	sblair-paradigm stem-niphal
+נִקְטָלִים	Niphal | Participle | mp | root: קטל	sblair-paradigm stem-niphal
+נִקְטָל	Niphal | Participle | ms | root: קטל	sblair-paradigm stem-niphal
+קִטַּ֫לְנוּ	Piel | Perfect | 1cp | root: קטל	sblair-paradigm stem-piel
+קִטַּ֫לְתִּי	Piel | Perfect | 1cs | root: קטל	sblair-paradigm stem-piel
+קִטַּלְתֶּן	Piel | Perfect | 2fp | root: קטל	sblair-paradigm stem-piel
+קִטַּלְתְּ	Piel | Perfect | 2fs | root: קטל	sblair-paradigm stem-piel
+קִטַּלְתֶּם	Piel | Perfect | 2mp | root: קטל	sblair-paradigm stem-piel
+קִטַּ֫לְתָּ	Piel | Perfect | 2ms | root: קטל	sblair-paradigm stem-piel
+קִטְּלוּ	Piel | Perfect | 3cp | root: קטל	sblair-paradigm stem-piel
+קִטְּלָה	Piel | Perfect | 3fs | root: קטל	sblair-paradigm stem-piel
+קִטֵּל	Piel | Perfect | 3ms | root: קטל	sblair-paradigm stem-piel
+נְקַטֵּל	Piel | Imperfect | 1cp | root: קטל	sblair-paradigm stem-piel
+אֲקַטֵּל	Piel | Imperfect | 1cs | root: קטל	sblair-paradigm stem-piel
+תְּקַטְּלִי	Piel | Imperfect | 2fs | root: קטל	sblair-paradigm stem-piel
+תְּקַטְּלוּ	Piel | Imperfect | 2mp | root: קטל	sblair-paradigm stem-piel
+תְּקַטֵּ֫לְנָה	Piel | Imperfect | 3fp/2fp | root: קטל	sblair-paradigm stem-piel
+תְּקַטֵּל	Piel | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-piel
+יְקַטְּלוּ	Piel | Imperfect | 3mp | root: קטל	sblair-paradigm stem-piel
+יְקַטֵּל	Piel | Imperfect | 3ms | root: קטל	sblair-paradigm stem-piel
+קַטֵּ֫לְנָה	Piel | Imperative | 2fp | root: קטל	sblair-paradigm stem-piel
+קַטְּלִי	Piel | Imperative | 2fs | root: קטל	sblair-paradigm stem-piel
+קַטְּלוּ	Piel | Imperative | 2mp | root: קטל	sblair-paradigm stem-piel
+קַטֵּל	Piel | Imperative or Infinitive Construct or Infinitive Absolute | 2ms | root: קטל	sblair-paradigm stem-piel
+קַטּוֹל	Piel | Infinitive Absolute | root: קטל	sblair-paradigm stem-piel
+מְקַטְּלוֹת	Piel | Participle | fp | root: קטל	sblair-paradigm stem-piel
+מְקַטֶּ֫לֶת	Piel | Participle | fs | root: קטל	sblair-paradigm stem-piel
+מְקַטְּלִים	Piel | Participle | mp | root: קטל	sblair-paradigm stem-piel
+מְקַטֵּל	Piel | Participle | ms | root: קטל	sblair-paradigm stem-piel
+קֻטַּ֫לְנוּ	Pual | Perfect | 1cp | root: קטל	sblair-paradigm stem-pual
+קֻטַּ֫לְתִּי	Pual | Perfect | 1cs | root: קטל	sblair-paradigm stem-pual
+קֻטַּלְתֶּן	Pual | Perfect | 2fp | root: קטל	sblair-paradigm stem-pual
+קֻטַּלְתְּ	Pual | Perfect | 2fs | root: קטל	sblair-paradigm stem-pual
+קֻטַּלְתֶּם	Pual | Perfect | 2mp | root: קטל	sblair-paradigm stem-pual
+קֻטַּ֫לְתָּ	Pual | Perfect | 2ms | root: קטל	sblair-paradigm stem-pual
+קֻטְּלוּ	Pual | Perfect | 3cp | root: קטל	sblair-paradigm stem-pual
+קֻטְּלָה	Pual | Perfect | 3fs | root: קטל	sblair-paradigm stem-pual
+קֻטַּל	Pual | Perfect | 3ms | root: קטל	sblair-paradigm stem-pual
+נְקֻטַּל	Pual | Imperfect | 1cp | root: קטל	sblair-paradigm stem-pual
+אֲקֻטַּל	Pual | Imperfect | 1cs | root: קטל	sblair-paradigm stem-pual
+תְּקֻטְּלִי	Pual | Imperfect | 2fs | root: קטל	sblair-paradigm stem-pual
+תְּקֻטְּלוּ	Pual | Imperfect | 2mp | root: קטל	sblair-paradigm stem-pual
+תְּקֻטַּ֫לְנָה	Pual | Imperfect | 3fp/2fp | root: קטל	sblair-paradigm stem-pual
+תְּקֻטַּל	Pual | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-pual
+יְקֻטְּלוּ	Pual | Imperfect | 3mp | root: קטל	sblair-paradigm stem-pual
+יְקֻטַּל	Pual | Imperfect | 3ms | root: קטל	sblair-paradigm stem-pual
+מְקֻטָּלוֹת	Pual | Participle | fp | root: קטל	sblair-paradigm stem-pual
+מְקֻטֶּ֫לֶת	Pual | Participle | fs | root: קטל	sblair-paradigm stem-pual
+מְקֻטָּלִים	Pual | Participle | mp | root: קטל	sblair-paradigm stem-pual
+מְקֻטָּל	Pual | Participle | ms | root: קטל	sblair-paradigm stem-pual
+הִקְטַ֫לְנוּ	Hiphil | Perfect | 1cp | root: קטל	sblair-paradigm stem-hiphil
+הִקְטַ֫לְתִּי	Hiphil | Perfect | 1cs | root: קטל	sblair-paradigm stem-hiphil
+הִקְטַלְתֶּן	Hiphil | Perfect | 2fp | root: קטל	sblair-paradigm stem-hiphil
+הִקְטַלְתְּ	Hiphil | Perfect | 2fs | root: קטל	sblair-paradigm stem-hiphil
+הִקְטַלְתֶּם	Hiphil | Perfect | 2mp | root: קטל	sblair-paradigm stem-hiphil
+הִקְטַ֫לְתָּ	Hiphil | Perfect | 2ms | root: קטל	sblair-paradigm stem-hiphil
+הִקְטִ֫ילוּ	Hiphil | Perfect | 3cp | root: קטל	sblair-paradigm stem-hiphil
+הִקְטִ֫ילָה	Hiphil | Perfect | 3fs | root: קטל	sblair-paradigm stem-hiphil
+הִקְטִיל	Hiphil | Perfect | 3ms | root: קטל	sblair-paradigm stem-hiphil
+יַקְטִיל	Hiphil | Imperfect | 3ms | root: קטל	sblair-paradigm stem-hiphil
+הַקְטֵ֫לְנָה	Hiphil | Imperative | 2fp | root: קטל	sblair-paradigm stem-hiphil
+הַקְטִ֫ילִי	Hiphil | Imperative | 2fs | root: קטל	sblair-paradigm stem-hiphil
+הַקְטִ֫ילוּ	Hiphil | Imperative | 2mp | root: קטל	sblair-paradigm stem-hiphil
+הַקְטֵל	Hiphil | Imperative / Infinitive Absolute | 2ms | root: קטל	sblair-paradigm stem-hiphil
+הַקְטִיל	Hiphil | Infinitive Construct | root: קטל	sblair-paradigm stem-hiphil
+מַקְטִילוֹת	Hiphil | Participle | fp | root: קטל	sblair-paradigm stem-hiphil
+מַקְטֶ֫לֶת	Hiphil | Participle | fs | root: קטל	sblair-paradigm stem-hiphil
+מַקְטִילִים	Hiphil | Participle | mp | root: קטל	sblair-paradigm stem-hiphil
+מַקְטִיל	Hiphil | Participle | ms | root: קטל	sblair-paradigm stem-hiphil
+הֻקְטַ֫לְנוּ	Hophal | Perfect | 1cp | root: קטל	sblair-paradigm stem-hophal
+הָקְטַ֫לְנוּ	Hophal | Perfect | 1cp | root: קטל	sblair-paradigm stem-hophal
+הֻקְטַ֫לְתִּי	Hophal | Perfect | 1cs | root: קטל	sblair-paradigm stem-hophal
+הָקְטַ֫לְתִּי	Hophal | Perfect | 1cs | root: קטל	sblair-paradigm stem-hophal
+הֻקְטַלְתֶּן	Hophal | Perfect | 2fp | root: קטל	sblair-paradigm stem-hophal
+הָקְטַלְתֶּן	Hophal | Perfect | 2fp | root: קטל	sblair-paradigm stem-hophal
+הֻקְטַלְתְּ	Hophal | Perfect | 2fs | root: קטל	sblair-paradigm stem-hophal
+הָקְטַלְתְּ	Hophal | Perfect | 2fs | root: קטל	sblair-paradigm stem-hophal
+הֻקְטַלְתֶּם	Hophal | Perfect | 2mp | root: קטל	sblair-paradigm stem-hophal
+הָקְטַלְתֶּם	Hophal | Perfect | 2mp | root: קטל	sblair-paradigm stem-hophal
+הֻקְטַ֫לְתָּ	Hophal | Perfect | 2ms | root: קטל	sblair-paradigm stem-hophal
+הָקְטַ֫לְתָּ	Hophal | Perfect | 2ms | root: קטל	sblair-paradigm stem-hophal
+הֻקְטְלוּ	Hophal | Perfect | 3cp | root: קטל	sblair-paradigm stem-hophal
+הָקְטְלוּ	Hophal | Perfect | 3cp | root: קטל	sblair-paradigm stem-hophal
+הֻקְטְלָה	Hophal | Perfect | 3fs | root: קטל	sblair-paradigm stem-hophal
+הָקְטְלָה	Hophal | Perfect | 3fs | root: קטל	sblair-paradigm stem-hophal
+הֻקְטַל	Hophal | Perfect | 3ms | root: קטל	sblair-paradigm stem-hophal
+הָקְטַל	Hophal | Perfect | 3ms | root: קטל	sblair-paradigm stem-hophal
+נֻקְטַל	Hophal | Imperfect | 1cp | root: קטל	sblair-paradigm stem-hophal
+נָקְטַל	Hophal | Imperfect | 1cp | root: קטל	sblair-paradigm stem-hophal
+אֻקְטַל	Hophal | Imperfect | 1cs | root: קטל	sblair-paradigm stem-hophal
+אָקְטַל	Hophal | Imperfect | 1cs | root: קטל	sblair-paradigm stem-hophal
+תֻּקְטְלִי	Hophal | Imperfect | 2fs | root: קטל	sblair-paradigm stem-hophal
+תָּקְטְלִי	Hophal | Imperfect | 2fs | root: קטל	sblair-paradigm stem-hophal
+תֻּקְטְלוּ	Hophal | Imperfect | 2mp | root: קטל	sblair-paradigm stem-hophal
+תָּקְטְלוּ	Hophal | Imperfect | 2mp | root: קטל	sblair-paradigm stem-hophal
+תֻּקְטַ֫לְנָה	Hophal | Imperfect | 3fp/2fp | root: קטל	sblair-paradigm stem-hophal
+תָּקְטַ֫לְנָה	Hophal | Imperfect | 3fp/2fp | root: קטל	sblair-paradigm stem-hophal
+תֻּקְטַל	Hophal | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-hophal
+תָּקְטַל	Hophal | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-hophal
+יֻקְטְלוּ	Hophal | Imperfect | 3mp | root: קטל	sblair-paradigm stem-hophal
+יָקְטְלוּ	Hophal | Imperfect | 3mp | root: קטל	sblair-paradigm stem-hophal
+יֻקְטַל	Hophal | Imperfect | 3ms | root: קטל	sblair-paradigm stem-hophal
+יָקְטַל	Hophal | Imperfect | 3ms | root: קטל	sblair-paradigm stem-hophal
+מֻקְטָלוֹת	Hophal | Participle | fp | root: קטל	sblair-paradigm stem-hophal
+מָקְטָלוֹת	Hophal | Participle | fp | root: קטל	sblair-paradigm stem-hophal
+מֻקְטֶ֫לֶת	Hophal | Participle | fs | root: קטל	sblair-paradigm stem-hophal
+מָקְטֶ֫לֶת	Hophal | Participle | fs | root: קטל	sblair-paradigm stem-hophal
+מֻקְטָלִים	Hophal | Participle | mp | root: קטל	sblair-paradigm stem-hophal
+מָקְטָלִים	Hophal | Participle | mp | root: קטל	sblair-paradigm stem-hophal
+מֻקְטָל	Hophal | Participle | ms | root: קטל	sblair-paradigm stem-hophal
+מָקְטָל	Hophal | Participle | ms | root: קטל	sblair-paradigm stem-hophal
+הִתְקַטַּ֫לְנוּ	Hithpael | Perfect | 1cp | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטַּ֫לְתִּי	Hithpael | Perfect | 1cs | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטַּלְתֶּן	Hithpael | Perfect | 2fp | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטַּלְתְּ	Hithpael | Perfect | 2fs | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטַּלְתֶּם	Hithpael | Perfect | 2mp | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטַּ֫לְתָּ	Hithpael | Perfect | 2ms | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטְּלוּ	Hithpael | Perfect 3cp/ Imperative 2fp | 3cp | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטְּלָה	Hithpael | Perfect | 3fs | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטֵּל	Hithpael | Perfect 3ms or Imperative 2ms or Infinitive Construct/Absolute | 3ms | root: קטל	sblair-paradigm stem-hithpael
+נִתְקַטֵּל	Hithpael | Imperfect | 1cp | root: קטל	sblair-paradigm stem-hithpael
+אֶתְקַטֵּל	Hithpael | Imperfect | 1cs | root: קטל	sblair-paradigm stem-hithpael
+תִּתְקַטְּלִי	Hithpael | Imperfect | 2fs | root: קטל	sblair-paradigm stem-hithpael
+תִּתְקַטְּלוּ	Hithpael | Imperfect | 2mp | root: קטל	sblair-paradigm stem-hithpael
+תִּתְקַטֵּ֫לְנָה	Hithpael | Imperfect | 3fp/2mp | root: קטל	sblair-paradigm stem-hithpael
+תִּתְקַטֵּל	Hithpael | Imperfect | 3fs/2ms | root: קטל	sblair-paradigm stem-hithpael
+יִתְקַטְּלוּ	Hithpael | Imperfect | 3mp | root: קטל	sblair-paradigm stem-hithpael
+יִתְקַטֵּל	Hithpael | Imperfect | 3ms | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטֵּ֫לְנָה	Hithpael | Imperative | 2fp | root: קטל	sblair-paradigm stem-hithpael
+הִתְקַטְּלִי	Hithpael | Imperative | 2fs | root: קטל	sblair-paradigm stem-hithpael
+מִתְקַטְּלוֹת	Hithpael | Participle | fp | root: קטל	sblair-paradigm stem-hithpael
+מִתְקַטֶּ֫לֶת	Hithpael | Participle | fs | root: קטל	sblair-paradigm stem-hithpael
+מִתְקַטְּלִים	Hithpael | Participle | mp | root: קטל	sblair-paradigm stem-hithpael
+מִתְקַטֵּל	Hithpael | Participle | ms | root: קטל	sblair-paradigm stem-hithpael
