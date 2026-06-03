@@ -16,11 +16,11 @@
 
 ## Sample Questions
 
-**Q1.** λύσω
-> **A:** Future · Active · Indicative · 1st · Singular · λύω · I will loose
+**Q1.** 1 λύσω Act Mid 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 λύσω Fut Act 1st Sg λύω I will loose
 
-**Q2.** λύσεις
-> **A:** Future · Active · Indicative · 2nd · Singular · λύω · You will loose
+**Q2.** 2 λύσεις Act Mid 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 λύσεις Fut Act 2nd Sg λύω You will loose
 
-**Q3.** λύσει
-> **A:** Future · Active · Indicative · 3rd · Singular · λύω · He/she/it will loose
+**Q3.** 3 λύσει Act Mid 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 λύσει Fut Act 3rd Sg λύω He/she will loose

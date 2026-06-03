@@ -19,11 +19,11 @@ A 20-item parsing drill on Greek infinitives. Students parse each form (tense / 
 
 ## Sample Questions
 
-**Q1.** 1 θέλω λύειν τοὺς δούλους.
-> **A:** Pres · Act · λύω · Complementary · "I want to loose the slaves."
+**Q1.** 1 λύειν Aor Perf Pres Act Pass Articular (subject) Articular purpose (τοῦ) Articular temporal (ἐν τῷ) Complementary Indirect discourse Purpose (εἰς τό) Purpose (πρός τό) Purpose (τοῦ) Result Result (ὥστε) Temporal (ἐν τῷ) &#9654;
+> **A:** 1 λύειν Pres Act λύω Complementary I want to loose the slaves.
 
-**Q2.** 2 οὐκ εἰμὶ ἱκανὸς λῦσαι τὸν ἱμάντα τοῦ ὑποδήματος αὐτοῦ.
-> **A:** Aor · Act · λύω · Complementary · "I am not worthy to loose the strap of his sandal." (cf. Mark 1:7)
+**Q2.** 2 λῦσαι Aor Perf Pres Act Pass Articular (subject) Articular purpose (τοῦ) Articular temporal (ἐν τῷ) Complementary Indirect discourse Purpose (εἰς τό) Purpose (πρός τό) Purpose (τοῦ) Result Result (ὥστε) Temporal (ἐν τῷ) &#9654;
+> **A:** 2 λῦσαι Aor Act λύω Complementary I am not worthy to loose the strap of his sandal.
 
-**Q3.** 3 ἤρξατο διδάσκειν αὐτοὺς πολλά.
-> **A:** Pres · Act · διδάσκω · Complementary · "He began to teach them many things."
+**Q3.** 3 διδάσκειν Aor Perf Pres Act Pass Articular (subject) Articular purpose (τοῦ) Articular temporal (ἐν τῷ) Complementary Indirect discourse Purpose (εἰς τό) Purpose (πρός τό) Purpose (τοῦ) Result Result (ὥστε) Temporal (ἐν τῷ) &#9654;
+> **A:** 3 διδάσκειν Pres Act διδάσκω Complementary He began to teach them many things.

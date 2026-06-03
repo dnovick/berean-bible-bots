@@ -9,6 +9,7 @@
 | Exercise | Description |
 |---|---|
 | [exercises/ch7-gen-dat-parsing/](exercises/ch7-gen-dat-parsing/README.md) | 20-item parsing drill — case, number, gender, and lexical form for 2nd-declension forms |
+| [exercises/ch7-article-id/](exercises/ch7-article-id/README.md) | 20-item definite article identification drill — case, number, and gender from GNT context |
 
 ### Flashcards
 

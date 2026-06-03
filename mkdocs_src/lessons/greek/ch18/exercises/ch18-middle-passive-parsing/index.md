@@ -15,11 +15,11 @@
 
 ## Sample Questions
 
-**Q1.** 1 λύομαι (no context)
-> **A:** 1st · Sg · λύω | Middle or Passive | "I am loosing for myself" (M) / "I am being loosed" (P) — paradigm form; ambiguous without context
+**Q1.** 1 λύομαι 1st 2nd 3rd Pl Sg Deponent Mid/Pass Passive &#9654;
+> **A:** 1 λύομαι (no context) 1st Sg λύω Mid/Pass I am loosing/being loosed
 
-**Q2.** 2 λύῃ (no context)
-> **A:** 2nd · Sg · λύω | Middle/Passive | "You are loosing for yourself / you are being loosed" — -σαι → -ῃ by contraction
+**Q2.** 2 λύῃ 1st 2nd 3rd Pl Sg Deponent Mid/Pass Passive &#9654;
+> **A:** 2 λύῃ (no context) 2nd Sg λύω Mid/Pass You are loosing/being loosed
 
-**Q3.** 3 λύεται ὑπὸ τοῦ κυρίου
-> **A:** 3rd · Sg · λύω | Passive | "He/she is being loosed" — ὑπό + genitive agent confirms passive voice
+**Q3.** 3 λύεται 1st 2nd 3rd Pl Sg Deponent Mid/Pass Passive &#9654;
+> **A:** 3 λύεται ὑπὸ τοῦ κυρίου 3rd Sg λύω Passive He/she is being loosed

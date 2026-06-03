@@ -15,11 +15,11 @@
 
 ## Sample Questions
 
-**Q1.** ἔλαβον
-> **A:** Aorist (2nd) · Active · Indicative · 1st · Singular · λαμβάνω · I took/received
+**Q1.** 1 ἔλαβον Aor 2nd IMPF Act Mid 1/3rd 1st 2nd 3rd Pl Sg Sg/Pl &#9654;
+> **A:** 1 ἔλαβον Aor 2nd Act 1st Sg λαμβάνω I took/received
 
-**Q2.** ἔλαβες
-> **A:** Aorist (2nd) · Active · Indicative · 2nd · Singular · λαμβάνω · You took/received
+**Q2.** 2 ἔλαβες Aor 2nd IMPF Act Mid 1/3rd 1st 2nd 3rd Pl Sg Sg/Pl &#9654;
+> **A:** 2 ἔλαβες Aor 2nd Act 2nd Sg λαμβάνω You took/received
 
-**Q3.** ἔλαβεν
-> **A:** Aorist (2nd) · Active · Indicative · 3rd · Singular · λαμβάνω · He/she/it took
+**Q3.** 3 ἔλαβεν Aor 2nd IMPF Act Mid 1/3rd 1st 2nd 3rd Pl Sg Sg/Pl &#9654;
+> **A:** 3 ἔλαβεν Aor 2nd Act 3rd Sg λαμβάνω He/she took/received

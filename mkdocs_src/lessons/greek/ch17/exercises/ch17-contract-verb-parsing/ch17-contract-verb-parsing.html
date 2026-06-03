@@ -1,412 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ch17 Contract Verb Parsing Drill — BBG</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
-  p.instructions { font-style: italic; color: #555; }
-  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.9em; }
-  th { background: #744210; color: #fff; padding: 0.45em 0.6em; text-align: left; }
-  td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .greek { font-size: 1.15em; font-family: "New Athena Unicode", "Gentium Plus", "SBL Greek", serif; font-weight: bold; }
-  input.parse-field {
-    border: none; border-bottom: 1px solid #888; width: 100%; min-width: 55px;
-    background: transparent; font-size: 0.88em; padding: 2px 4px; box-sizing: border-box;
-  }
-  input.parse-field:focus { outline: none; border-bottom: 2px solid #744210; }
-  input.wide { min-width: 90px; }
-  input.contract { min-width: 100px; }
-  .answer-row td { background: #fefce8 !important; color: #713f12; font-size: 0.88em; border-left: 3px solid #d97706; }
-  .answer-row { display: none; }
-  .answer-row.visible { display: table-row; }
-  button.reveal-btn {
-    background: #744210; color: #fff; border: none; border-radius: 3px;
-    padding: 3px 10px; cursor: pointer; font-size: 0.82em; white-space: nowrap;
-  }
-  button.reveal-btn:hover { background: #431407; }
-  .controls { margin: 1em 0 1.5em 0; display: flex; gap: 0.7em; flex-wrap: wrap; }
-  .controls button {
-    background: #4a5568; color: #fff; border: none; border-radius: 4px;
-    padding: 0.5em 1.2em; cursor: pointer; font-size: 0.88em;
-  }
-  .controls button:hover { background: #2d3748; }
-  .note { background: #fffbea; border-left: 4px solid #d69e2e; padding: 0.6em 1em; margin: 1em 0; font-size: 0.9em; }
-  .class-label { font-size: 0.78em; background: #744210; color: #fff; padding: 1px 5px; border-radius: 2px; margin-left: 4px; }
-  .class-alpha { background: #2c5282; }
-  .class-epsilon { background: #276749; }
-  .class-omicron { background: #744210; }
-  @media print {
-    .controls, button.reveal-btn { display: none !important; }
-    .answer-row { display: none !important; }
-    input.parse-field { border-bottom: 1px solid #000; background: transparent; }
-    body { margin: 1em; }
-  }
-</style>
-</head>
-<body>
-
-
-<h1>BBG Chapter 17 — Contract Verb Parsing Drill</h1>
-<p class="instructions">For each contracted form: (1) give person and number, (2) give the lexical form (-αω/-εω/-οω), (3) identify the two vowels that contracted (e.g. "ε + ο"), and (4) translate. All forms are present active indicative. Click ▶ Answer to check.</p>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Form</th>
-      <th>Person</th>
-      <th>Number</th>
-      <th>Lexical form</th>
-      <th>Vowels contracted</th>
-      <th>Translation</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr class="question-row" data-id="1">
-      <td>1</td>
-      <td class="greek">ἀγαπῶ <span class="class-label class-alpha">α</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="e.g. α + ω"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(1)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-1">
-      <td></td>
-      <td colspan="7"><strong>1st · Sg · ἀγαπάω</strong> | α + ω → ω | "I love"</td>
-    </tr>
-
-    <tr class="question-row" data-id="2">
-      <td>2</td>
-      <td class="greek">ἀγαπᾷς <span class="class-label class-alpha">α</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="e.g. α + ει"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(2)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-2">
-      <td></td>
-      <td colspan="7"><strong>2nd · Sg · ἀγαπάω</strong> | α + ει → ᾳ (subscript iota) | "You love"</td>
-    </tr>
-
-    <tr class="question-row" data-id="3">
-      <td>3</td>
-      <td class="greek">ἀγαπᾷ <span class="class-label class-alpha">α</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(3)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-3">
-      <td></td>
-      <td colspan="7"><strong>3rd · Sg · ἀγαπάω</strong> | α + ει → ᾷ | "He/she loves"</td>
-    </tr>
-
-    <tr class="question-row" data-id="4">
-      <td>4</td>
-      <td class="greek">ἀγαπῶμεν <span class="class-label class-alpha">α</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(4)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-4">
-      <td></td>
-      <td colspan="7"><strong>1st · Pl · ἀγαπάω</strong> | α + ο → ω | "We love"</td>
-    </tr>
-
-    <tr class="question-row" data-id="5">
-      <td>5</td>
-      <td class="greek">ἀγαπᾶτε <span class="class-label class-alpha">α</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(5)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-5">
-      <td></td>
-      <td colspan="7"><strong>2nd · Pl · ἀγαπάω</strong> | α + ε → α (lengthened) | "You (pl.) love"</td>
-    </tr>
-
-    <tr class="question-row" data-id="6">
-      <td>6</td>
-      <td class="greek">ἀγαπῶσιν <span class="class-label class-alpha">α</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(6)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-6">
-      <td></td>
-      <td colspan="7"><strong>3rd · Pl · ἀγαπάω</strong> | α + ου → ω | "They love"</td>
-    </tr>
-
-    <tr class="question-row" data-id="7">
-      <td>7</td>
-      <td class="greek">ποιῶ <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(7)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-7">
-      <td></td>
-      <td colspan="7"><strong>1st · Sg · ποιέω</strong> | ε + ω → ω | "I do / I make"</td>
-    </tr>
-
-    <tr class="question-row" data-id="8">
-      <td>8</td>
-      <td class="greek">ποιεῖς <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(8)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-8">
-      <td></td>
-      <td colspan="7"><strong>2nd · Sg · ποιέω</strong> | ε + ε → ει (spurious diphthong) | "You do / you make"</td>
-    </tr>
-
-    <tr class="question-row" data-id="9">
-      <td>9</td>
-      <td class="greek">ποιεῖ <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(9)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-9">
-      <td></td>
-      <td colspan="7"><strong>3rd · Sg · ποιέω</strong> | ε + ει → ει | "He/she does / makes"</td>
-    </tr>
-
-    <tr class="question-row" data-id="10">
-      <td>10</td>
-      <td class="greek">ποιοῦμεν <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(10)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-10">
-      <td></td>
-      <td colspan="7"><strong>1st · Pl · ποιέω</strong> | ε + ο → ου | "We do / we make"</td>
-    </tr>
-
-    <tr class="question-row" data-id="11">
-      <td>11</td>
-      <td class="greek">ποιεῖτε <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(11)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-11">
-      <td></td>
-      <td colspan="7"><strong>2nd · Pl · ποιέω</strong> | ε + ε → ει | "You (pl.) do / make"</td>
-    </tr>
-
-    <tr class="question-row" data-id="12">
-      <td>12</td>
-      <td class="greek">ποιοῦσιν <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(12)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-12">
-      <td></td>
-      <td colspan="7"><strong>3rd · Pl · ποιέω</strong> | ε + ου → ου | "They do / they make"</td>
-    </tr>
-
-    <tr class="question-row" data-id="13">
-      <td>13</td>
-      <td class="greek">πληρῶ <span class="class-label class-omicron">ο</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(13)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-13">
-      <td></td>
-      <td colspan="7"><strong>1st · Sg · πληρόω</strong> | ο + ω → ω | "I fill / I fulfill"</td>
-    </tr>
-
-    <tr class="question-row" data-id="14">
-      <td>14</td>
-      <td class="greek">πληροῖς <span class="class-label class-omicron">ο</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(14)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-14">
-      <td></td>
-      <td colspan="7"><strong>2nd · Sg · πληρόω</strong> | ο + ει → οι | "You fill"</td>
-    </tr>
-
-    <tr class="question-row" data-id="15">
-      <td>15</td>
-      <td class="greek">πληροῖ <span class="class-label class-omicron">ο</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(15)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-15">
-      <td></td>
-      <td colspan="7"><strong>3rd · Sg · πληρόω</strong> | ο + ει → οι | "He/she fills / fulfills"</td>
-    </tr>
-
-    <tr class="question-row" data-id="16">
-      <td>16</td>
-      <td class="greek">πληροῦμεν <span class="class-label class-omicron">ο</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(16)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-16">
-      <td></td>
-      <td colspan="7"><strong>1st · Pl · πληρόω</strong> | ο + ο → ου | "We fill / we fulfill"</td>
-    </tr>
-
-    <tr class="question-row" data-id="17">
-      <td>17</td>
-      <td class="greek">πληροῦτε <span class="class-label class-omicron">ο</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(17)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-17">
-      <td></td>
-      <td colspan="7"><strong>2nd · Pl · πληρόω</strong> | ο + ε → ου | "You (pl.) fill / fulfill"</td>
-    </tr>
-
-    <tr class="question-row" data-id="18">
-      <td>18</td>
-      <td class="greek">λαλεῖς <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(18)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-18">
-      <td></td>
-      <td colspan="7"><strong>2nd · Sg · λαλέω</strong> | ε + ε → ει | "You speak"</td>
-    </tr>
-
-    <tr class="question-row" data-id="19">
-      <td>19</td>
-      <td class="greek">ζητεῖτε <span class="class-label class-epsilon">ε</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(19)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-19">
-      <td></td>
-      <td colspan="7"><strong>2nd · Pl · ζητέω</strong> | ε + ε → ει | "You (pl.) seek" (Matt 6:33)</td>
-    </tr>
-
-    <tr class="question-row" data-id="20">
-      <td>20</td>
-      <td class="greek">τιμῶ <span class="class-label class-alpha">α</span></td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field contract" type="text" placeholder="vowels contracted"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(20)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-20">
-      <td></td>
-      <td colspan="7"><strong>1st · Sg · τιμάω</strong> | α + ω → ω | "I honor"</td>
-    </tr>
-
-  </tbody>
-</table>
-
-<div class="note">
-  <strong>Quick contraction reference:</strong>
-  ε+ε=ει &nbsp;|&nbsp; ε+ο=ου &nbsp;|&nbsp; ε+ω=ω &nbsp;|&nbsp;
-  α+ε=α &nbsp;|&nbsp; α+ο=ω &nbsp;|&nbsp; α+ει=ᾳ &nbsp;|&nbsp;
-  ο+ε=ου &nbsp;|&nbsp; ο+ο=ου &nbsp;|&nbsp; ο+ει=οι
-</div>
-
-<script>
-function toggle(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] button.reveal-btn');
-  if (row.classList.contains('visible')) {
-    row.classList.remove('visible');
-    if (btn) btn.textContent = '▶ Answer';
-  } else {
-    row.classList.add('visible');
-    if (btn) btn.textContent = '▼ Hide';
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 17 — Contract Verb Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 17 — Contract Verb Parsing Drill</h1><p class="subtitle">BBG Chapter 17 · Contract Verbs</p><div class="instructions">For each contracted form: (1) Person, (2) Number, (3) Lexical form, (4) the two vowels that contracted (stem vowel + C.V.), (5) Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Parsing Table</h2><table><thead><tr><th>#</th><th>Contracted form</th><th>Person</th><th>Number</th><th>Lexical form</th><th>Contraction</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">ἀγαπῶ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">ἀγαπῶ</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>α+ω→ω</strong></td><td><strong>I love</strong></td><td></td></tr><tr><td>2</td><td class="greek">ἀγαπᾷς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">ἀγαπᾷς</td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>α+ει→ᾳ</strong></td><td><strong>You love</strong></td><td></td></tr><tr><td>3</td><td class="greek">ἀγαπᾷ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">ἀγαπᾷ</td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>α+ει→ᾳ</strong></td><td><strong>He/she loves</strong></td><td></td></tr><tr><td>4</td><td class="greek">ἀγαπῶμεν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">ἀγαπῶμεν</td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>α+ο→ω</strong></td><td><strong>We love</strong></td><td></td></tr><tr><td>5</td><td class="greek">ἀγαπᾶτε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">ἀγαπᾶτε</td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>α+ε→ᾱ</strong></td><td><strong>You (pl.) love</strong></td><td></td></tr><tr><td>6</td><td class="greek">ἀγαπῶσιν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">ἀγαπῶσιν</td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>α+ου→ω</strong></td><td><strong>They love</strong></td><td></td></tr><tr><td>7</td><td class="greek">ποιῶ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">ποιῶ</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>ποιέω</strong></td><td><strong>ε+ω→ω</strong></td><td><strong>I do/make</strong></td><td></td></tr><tr><td>8</td><td class="greek">ποιεῖς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">ποιεῖς</td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>ποιέω</strong></td><td><strong>ε+ε→ει</strong></td><td><strong>You do/make</strong></td><td></td></tr><tr><td>9</td><td class="greek">ποιεῖ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">ποιεῖ</td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ποιέω</strong></td><td><strong>ε+ει→ει</strong></td><td><strong>He/she does/makes</strong></td><td></td></tr><tr><td>10</td><td class="greek">ποιοῦμεν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">ποιοῦμεν</td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>ποιέω</strong></td><td><strong>ε+ο→ου</strong></td><td><strong>We do/make</strong></td><td></td></tr><tr><td>11</td><td class="greek">ποιεῖτε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">ποιεῖτε</td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>ποιέω</strong></td><td><strong>ε+ε→ει</strong></td><td><strong>You (pl.) do/make</strong></td><td></td></tr><tr><td>12</td><td class="greek">ποιοῦσιν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ποιοῦσιν</td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>ποιέω</strong></td><td><strong>ε+ου→ου</strong></td><td><strong>They do/make</strong></td><td></td></tr><tr><td>13</td><td class="greek">πληρῶ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">πληρῶ</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>πληρόω</strong></td><td><strong>ο+ω→ω</strong></td><td><strong>I fill/fulfill</strong></td><td></td></tr><tr><td>14</td><td class="greek">πληροῖς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">πληροῖς</td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>πληρόω</strong></td><td><strong>ο+ει→οι</strong></td><td><strong>You fill</strong></td><td></td></tr><tr><td>15</td><td class="greek">πληροῖ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">πληροῖ</td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>πληρόω</strong></td><td><strong>ο+ει→οι</strong></td><td><strong>He/she fills</strong></td><td></td></tr><tr><td>16</td><td class="greek">πληροῦμεν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">πληροῦμεν</td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>πληρόω</strong></td><td><strong>ο+ο→ου</strong></td><td><strong>We fill</strong></td><td></td></tr><tr><td>17</td><td class="greek">πληροῦτε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">πληροῦτε</td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>πληρόω</strong></td><td><strong>ο+ε→ου</strong></td><td><strong>You (pl.) fill</strong></td><td></td></tr><tr><td>18</td><td class="greek">λαλεῖς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">λαλεῖς</td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>λαλέω</strong></td><td><strong>ε+ε→ει</strong></td><td><strong>You speak</strong></td><td></td></tr><tr><td>19</td><td class="greek">ζητεῖτε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">ζητεῖτε</td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>ζητέω</strong></td><td><strong>ε+ε→ει</strong></td><td><strong>You (pl.) seek</strong></td><td></td></tr><tr><td>20</td><td class="greek">τιμῶ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">τιμῶ</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>τιμάω</strong></td><td><strong>α+ω→ω</strong></td><td><strong>I honor</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.add('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.remove('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

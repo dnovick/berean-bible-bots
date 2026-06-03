@@ -20,11 +20,11 @@ A 20-item parsing drill on the Greek imperative. Students parse each form (tense
 
 ## Sample Questions
 
-**Q1.** 1 ἀγαπᾶτε τοὺς ἐχθροὺς ὑμῶν.
-> **A:** Pres · Act · 2nd · Pl · ἀγαπάω · Ongoing · "Love your enemies." (Matt 5:44)
+**Q1.** 1 ἀγαπᾶτε Aor Pres Act Mid Pass 2nd 3rd Pl Sg Ongoing Simple Simple (prohib.) Stop (ongoing prohib.) &#9654;
+> **A:** 1 ἀγαπᾶτε Pres Act 2nd Pl ἀγαπάω Ongoing Love your enemies.
 
-**Q2.** 2 μετανοεῖτε καὶ πιστεύετε ἐν τῷ εὐαγγελίῳ.
-> **A:** Pres · Act · 2nd · Pl · μετανοέω · Ongoing · "Repent and believe in the gospel." (Mark 1:15)
+**Q2.** 2 μετανοεῖτε Aor Pres Act Mid Pass 2nd 3rd Pl Sg Ongoing Simple Simple (prohib.) Stop (ongoing prohib.) &#9654;
+> **A:** 2 μετανοεῖτε Pres Act 2nd Pl μετανοέω Ongoing Repent and believe in the gospel.
 
-**Q3.** 3 χαίρετε ἐν κυρίῳ πάντοτε.
-> **A:** Pres · Act · 2nd · Pl · χαίρω · Ongoing · "Rejoice in the Lord always." (Phil 4:4)
+**Q3.** 3 χαίρετε Aor Pres Act Mid Pass 2nd 3rd Pl Sg Ongoing Simple Simple (prohib.) Stop (ongoing prohib.) &#9654;
+> **A:** 3 χαίρετε Pres Act 2nd Pl χαίρω Ongoing Rejoice in the Lord always.

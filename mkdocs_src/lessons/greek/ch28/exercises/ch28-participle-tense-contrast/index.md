@@ -15,11 +15,11 @@ A 20-item contrast drill presenting adverbial participial clauses from or modele
 
 ## Sample Questions
 
-**Q1.** 1 ταῦτα εἰπὼν ἀπῆλθεν
-> **A:** ANTEC · Aorist · Active · λέγω · Having said these things, he departed
+**Q1.** 1 ταῦτα εἰπὼν ἀπῆλθεν ANTEC CONTEMP Aorist Pres Active Middle Pass (dep.) &#9654;
+> **A:** 1 ταῦτα εἰπὼν ἀπῆλθεν ANTEC Aorist Active λέγω Having said these things, he departed
 
-**Q2.** 2 πορευόμενος κηρύσσει
-> **A:** CONTEMP · Present · Middle · πορεύομαι · While going, he preaches
+**Q2.** 2 πορευόμενος κηρύσσει ANTEC CONTEMP Aorist Pres Active Middle Pass (dep.) &#9654;
+> **A:** 2 πορευόμενος κηρύσσει CONTEMP Pres Middle πορεύομαι While going, he preaches
 
-**Q3.** 3 ἀκούσαντες ἐχάρησαν
-> **A:** ANTEC · Aorist · Active · ἀκούω · When / after they heard, they rejoiced
+**Q3.** 3 ἀκούσαντες ἐχάρησαν ANTEC CONTEMP Aorist Pres Active Middle Pass (dep.) &#9654;
+> **A:** 3 ἀκούσαντες ἐχάρησαν ANTEC Aorist Active ἀκούω When they heard, they rejoiced

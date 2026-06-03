@@ -1,219 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BBG Ch29 — Adjectival Participle Parsing</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 960px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
-  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
-  .subtitle { color: #555; font-style: italic; }
-  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .95em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
-  th { background: #6a3d8a; color: #fff; padding: .4em .5em; text-align: left; }
-  td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
-  tr:nth-child(even) td { background: #f8f5fc; }
-  .greek { font-size: 1.1em; font-weight: bold; }
-  .parse-field { width: 94%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .87em; padding: 2px 0; }
-  .parse-field:focus { outline: none; border-bottom: 2px solid #6a3d8a; }
-  .answer-row { display: none; background: #ede7f6 !important; }
-  .answer-row td { color: #4a148c; font-style: italic; font-size: .87em; }
-  .btn-reveal { background: #6a3d8a; color: #fff; border: none; border-radius: 3px; padding: .22em .6em; cursor: pointer; font-size: .82em; white-space: nowrap; }
-  .btn-reveal:hover { background: #4a1d6a; }
-  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
-  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
-  .btn-ctrl:hover { background: #333; }
-  @media print {
-    .btn-reveal, .controls { display: none !important; }
-    .answer-row { display: none !important; }
-    .parse-field { border-bottom: 1px solid #999; }
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 29 — Adjectival Participle Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 29 — Adjectival Participle Parsing Drill</h1><p class="subtitle">BBG Chapter 29 · Adjectival Participles</p><div class="instructions">Parse the underlined participle (Tense · Voice · Case · Number · Gender · Lexical Form). Identify the Use (Attributive / Substantival). If attributive, note the Position (1st or 2nd). Provide a Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Parsing Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical</th><th>Use</th><th>Notes</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">πιστεύων</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">πιστεύων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>πιστεύω</strong></td><td><strong>Attributive</strong></td><td><strong>1st pos.</strong></td><td><strong>The believing man is being saved.</strong></td><td></td></tr><tr><td>2</td><td class="greek">ἀγαπῶντας</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">ἀγαπῶντας</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Acc</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>Attributive</strong></td><td><strong>1st pos.</strong></td><td><strong>Let us love the brothers who love us.</strong></td><td></td></tr><tr><td>3</td><td class="greek">κλαίουσαν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">κλαίουσαν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Acc</strong></td><td><strong>Sg</strong></td><td><strong>Fem</strong></td><td><strong>κλαίω</strong></td><td><strong>Attributive</strong></td><td><strong>1st pos.</strong></td><td><strong>He saw the weeping woman.</strong></td><td></td></tr><tr><td>4</td><td class="greek">ἐρχομένῳ</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">ἐρχομένῳ</td><td><strong>Pres</strong></td><td><strong>Mid</strong></td><td><strong>Dat</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>ἔρχομαι</strong></td><td><strong>Attributive</strong></td><td><strong>1st pos.</strong></td><td><strong>In the coming age.</strong></td><td></td></tr><tr><td>5</td><td class="greek">πιστεύσαντος</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">πιστεύσαντος</td><td><strong>Aor</strong></td><td><strong>Act</strong></td><td><strong>Gen</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>πιστεύω</strong></td><td><strong>Attributive</strong></td><td><strong>1st pos.</strong></td><td><strong>He spoke about the crowd that had believed.</strong></td><td></td></tr><tr><td>6</td><td class="greek">λύων</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">λύων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>λύω</strong></td><td><strong>Attributive</strong></td><td><strong>2nd pos.</strong></td><td><strong>The man who is loosing the slaves.</strong></td><td></td></tr><tr><td>7</td><td class="greek">κεκλημένῳ</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">κεκλημένῳ</td><td><strong>Perf</strong></td><td><strong>Pass</strong></td><td><strong>Dat</strong></td><td><strong>Sg</strong></td><td><strong>Neut</strong></td><td><strong>καλέω</strong></td><td><strong>Attributive</strong></td><td><strong>2nd pos.</strong></td><td><strong>To the child called Jesus.</strong></td><td></td></tr><tr><td>8</td><td class="greek">γεγραμμένοις</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">γεγραμμένοις</td><td><strong>Perf</strong></td><td><strong>Pass</strong></td><td><strong>Dat</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>γράφω</strong></td><td><strong>Attributive</strong></td><td><strong>2nd pos.</strong></td><td><strong>They believed the words that were written.</strong></td><td></td></tr><tr><td>9</td><td class="greek">πιστεύων</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">πιστεύων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>πιστεύω</strong></td><td><strong>Substantival</strong></td><td><strong>—</strong></td><td><strong>The one who believes in him is not judged.</strong></td><td></td></tr><tr><td>10</td><td class="greek">κλαίοντες</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">κλαίοντες</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>κλαίω</strong></td><td><strong>Substantival</strong></td><td><strong>—</strong></td><td><strong>Blessed are the poor — also blessed are those who weep.</strong></td><td></td></tr><tr><td>11</td><td class="greek">νικῶν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">νικῶν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>νικάω</strong></td><td><strong>Substantival</strong></td><td><strong>—</strong></td><td><strong>The one who conquers will inherit these things.</strong></td><td></td></tr><tr><td>12</td><td class="greek">ἀγαπῶντες</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ἀγαπῶντες</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>Substantival</strong></td><td><strong>—</strong></td><td><strong>For those who love God all things work for good.</strong></td><td></td></tr><tr><td>13</td><td class="greek">πιστεύουσιν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">πιστεύουσιν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Dat</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>πιστεύω</strong></td><td><strong>Substantival</strong></td><td><strong>—</strong></td><td><strong>He says to those who believe in him.</strong></td><td></td></tr><tr><td>14</td><td class="greek">ἐρχόμενον</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">ἐρχόμενον</td><td><strong>Pres</strong></td><td><strong>Mid</strong></td><td><strong>Acc</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>ἔρχομαι</strong></td><td><strong>Substantival</strong></td><td><strong>—</strong></td><td><strong>He saw the one coming to him.</strong></td><td></td></tr><tr><td>15</td><td class="greek">σῳζομένοις</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option><option value="Pass">Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><select class="pf"><option value=""></option><option value="Fem">Fem</option><option value="Masc">Masc</option><option value="Neut">Neut</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Attributive">Attributive</option><option value="Substantival">Substantival</option></select></td><td><select class="pf"><option value=""></option><option value="1st pos.">1st pos.</option><option value="2nd pos.">2nd pos.</option><option value="—">—</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">σῳζομένοις</td><td><strong>Pres</strong></td><td><strong>Mid/Pass</strong></td><td><strong>Dat</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>σῴζω</strong></td><td><strong>Substantival</strong></td><td><strong>—</strong></td><td><strong>I send this one to those who are being saved.</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
-</style>
-</head>
-<body>
-
-<h1>BBG Chapter 29 — Adjectival Participle Parsing</h1>
-<p class="subtitle"><em>Basics of Biblical Greek Grammar, Mounce, 4th Edition</em></p>
-<div class="instructions">
-  <strong>Instructions:</strong> Parse the underlined participle (tense / voice / case / number / gender / lexical form),
-  identify the use (attributive or substantival), and if attributive note the position (1st or 2nd). Then translate.
-</div>
-<div class="controls">
-  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<h2>Part A — Attributive, 1st Position (1–5)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Position</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="1">
-  <td><b>1</b></td><td class="greek">ὁ <u>πιστεύων</u> ἄνθρωπος σῴζεται.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-1"><td></td><td colspan="10">Pres · Act · Nom · Sg · Masc · πιστεύω · Attributive · 1st pos. · "The believing man is being saved."</td><td></td></tr>
-
-<tr class="question-row" data-id="2">
-  <td><b>2</b></td><td class="greek">ἀγαπῶμεν τοὺς <u>ἀγαπῶντας</u> ἡμᾶς ἀδελφούς.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-2"><td></td><td colspan="10">Pres · Act · Acc · Pl · Masc · ἀγαπάω · Attributive · 1st pos. · "Let us love the brothers who love us."</td><td></td></tr>
-
-<tr class="question-row" data-id="3">
-  <td><b>3</b></td><td class="greek">εἶδεν τὴν <u>κλαίουσαν</u> γυναῖκα.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-3"><td></td><td colspan="10">Pres · Act · Acc · Sg · Fem · κλαίω · Attributive · 1st pos. · "He saw the weeping woman."</td><td></td></tr>
-
-<tr class="question-row" data-id="4">
-  <td><b>4</b></td><td class="greek">ἐν τῷ <u>ἐρχομένῳ</u> αἰῶνι.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-4"><td></td><td colspan="10">Pres · Mid · Dat · Sg · Masc · ἔρχομαι · Attributive · 1st pos. · "In the coming age."</td><td></td></tr>
-
-<tr class="question-row" data-id="5">
-  <td><b>5</b></td><td class="greek">εἶπεν αὐτοῖς περὶ τοῦ <u>πιστεύσαντος</u> ὄχλου.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-5"><td></td><td colspan="10">Aor · Act · Gen · Sg · Masc · πιστεύω · Attributive · 1st pos. · "He spoke to them about the crowd that had believed."</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part B — Attributive, 2nd Position (6–8)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Position</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="6">
-  <td><b>6</b></td><td class="greek">ὁ ἄνθρωπος ὁ <u>λύων</u> τοὺς δούλους ἐστίν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-6"><td></td><td colspan="10">Pres · Act · Nom · Sg · Masc · λύω · Attributive · 2nd pos. · "The man who is loosing the slaves."</td><td></td></tr>
-
-<tr class="question-row" data-id="7">
-  <td><b>7</b></td><td class="greek">τῷ παιδίῳ τῷ <u>κεκλημένῳ</u> Ἰησοῦς.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-7"><td></td><td colspan="10">Perf · Pass · Dat · Sg · Neut · καλέω · Attributive · 2nd pos. · "To the child called Jesus."</td><td></td></tr>
-
-<tr class="question-row" data-id="8">
-  <td><b>8</b></td><td class="greek">ἐπίστευσαν τοῖς λόγοις τοῖς <u>γεγραμμένοις</u>.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-8"><td></td><td colspan="10">Perf · Pass · Dat · Pl · Masc · γράφω · Attributive · 2nd pos. · "They believed the words that were written."</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part C — Substantival, Nominative (9–12)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="9">
-  <td><b>9</b></td><td class="greek">ὁ <u>πιστεύων</u> εἰς αὐτὸν οὐ κρίνεται.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-9"><td></td><td colspan="9">Pres · Act · Nom · Sg · Masc · πιστεύω · Substantival · "The one who believes in him is not judged." (John 3:18)</td><td></td></tr>
-
-<tr class="question-row" data-id="10">
-  <td><b>10</b></td><td class="greek">μακάριοι καὶ οἱ <u>κλαίοντες</u>.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-10"><td></td><td colspan="9">Pres · Act · Nom · Pl · Masc · κλαίω · Substantival · "Blessed also are those who weep."</td><td></td></tr>
-
-<tr class="question-row" data-id="11">
-  <td><b>11</b></td><td class="greek">ὁ <u>νικῶν</u> κληρονομήσει ταῦτα.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-11"><td></td><td colspan="9">Pres · Act · Nom · Sg · Masc · νικάω · Substantival · "The one who conquers will inherit these things." (Rev 21:7)</td><td></td></tr>
-
-<tr class="question-row" data-id="12">
-  <td><b>12</b></td><td class="greek">οἱ <u>ἀγαπῶντες</u> τὸν θεὸν πάντα συνεργεῖ εἰς ἀγαθόν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-12"><td></td><td colspan="9">Pres · Act · Nom · Pl · Masc · ἀγαπάω · Substantival · "For those who love God all things work together for good." (cf. Rom 8:28)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part D — Substantival, Non-Nominative (13–15)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Num</th><th>Gen</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="13">
-  <td><b>13</b></td><td class="greek">λέγει τοῖς <u>πιστεύουσιν</u> εἰς αὐτόν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-13"><td></td><td colspan="9">Pres · Act · Dat · Pl · Masc · πιστεύω · Substantival · "He says to those who believe in him."</td><td></td></tr>
-
-<tr class="question-row" data-id="14">
-  <td><b>14</b></td><td class="greek">εἶδεν τὸν <u>ἐρχόμενον</u> πρὸς αὐτόν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-14"><td></td><td colspan="9">Pres · Mid · Acc · Sg · Masc · ἔρχομαι · Substantival · "He saw the one coming to him."</td><td></td></tr>
-
-<tr class="question-row" data-id="15">
-  <td><b>15</b></td><td class="greek">ἀποστέλλω τοῦτον τοῖς <u>σῳζομένοις</u>.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-15"><td></td><td colspan="9">Pres · Mid/Pass · Dat · Pl · Masc · σῴζω · Substantival · "I send this one to those who are being saved."</td><td></td></tr>
-</tbody>
-</table>
-
-<script>
-function toggleAnswer(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
-  if (row.style.display === 'table-row') { row.style.display = 'none'; if (btn) btn.textContent = '▶ Answer'; }
-  else { row.style.display = 'table-row'; if (btn) btn.textContent = '▼ Answer'; }
 }
-function showAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer'); }
-function hideAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer'); }
-function clearAll() { document.querySelectorAll('.parse-field').forEach(f => f.value = ''); }
-</script>
-</body>
-</html>
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
+}
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
+}
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
+}
+</script></body></html>

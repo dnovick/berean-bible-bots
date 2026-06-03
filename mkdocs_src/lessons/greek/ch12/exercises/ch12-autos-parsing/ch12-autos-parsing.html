@@ -1,283 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 12 — αὐτός Parsing and Use Identification Drill</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 980px; margin: 2em auto; padding: 0 1.5em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
-  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
-  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .9em; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .gk { font-size: 1.15em; }
-  .parse-field { width: 90%; font-size: .85em; border: 1px solid #aaa; border-radius: 3px; padding: 2px 4px; }
-  .parse-field-lg { width: 97%; font-size: .85em; border: 1px solid #aaa; border-radius: 3px; padding: 2px 4px; }
-  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
-  .answer-row { display: none; }
-  button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
-  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
-  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
-  .controls button:hover { background: #ddd; }
-  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
-  .legend { border: 1px solid #ccc; border-radius: 4px; padding: .6em 1em; margin: 1em 0; font-size: .9em; display: inline-block; }
-  .legend table { margin: .3em 0; }
-  .legend th { background: #555; }
-  @media print {
-    button, .controls { display: none !important; }
-    .parse-field, .parse-field-lg { border: none; border-bottom: 1px solid #000; background: transparent; }
-    .answer-row { display: table-row !important; }
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 12 — αὐτός Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 12 — αὐτός Parsing Drill</h1><p class="subtitle">BBG Chapter 12 · αὐτός</p><div class="instructions">For each item: (1) Case (N/G/D/A), (2) Number (S/P), (3) Gender (M/F/N), (4) Use — PP = Personal Pronoun, INT = Intensive Adjective (predicate position), SAME = Identical Adjective (attributive position, article before αὐτός).</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Drill Table</h2><table><thead><tr><th>#</th><th>Greek Phrase</th><th>Case</th><th>Number</th><th>Gender</th><th>Use</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">λέγει αὐτῷ</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">λέγει αὐτῷ</td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>PP — "he says to him"</strong></td><td></td></tr><tr><td>2</td><td class="greek">αὐτὸς ὁ κύριος</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">αὐτὸς ὁ κύριος</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>INT — "the Lord himself"</strong></td><td></td></tr><tr><td>3</td><td class="greek">ὁ αὐτὸς λόγος</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">ὁ αὐτὸς λόγος</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>SAME — "the same word"</strong></td><td></td></tr><tr><td>4</td><td class="greek">βλέπω αὐτόν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">βλέπω αὐτόν</td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>PP — "I see him"</strong></td><td></td></tr><tr><td>5</td><td class="greek">αὐτὴ ἡ γυνή</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">αὐτὴ ἡ γυνή</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>INT — "the woman herself"</strong></td><td></td></tr><tr><td>6</td><td class="greek">ἐν τῷ αὐτῷ τόπῳ</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">ἐν τῷ αὐτῷ τόπῳ</td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>SAME — "in the same place"</strong></td><td></td></tr><tr><td>7</td><td class="greek">ἔδωκεν αὐτοῖς</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">ἔδωκεν αὐτοῖς</td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>M</strong></td><td><strong>PP — "he gave to them"</strong></td><td></td></tr><tr><td>8</td><td class="greek">αὐτοὶ οἱ μαθηταί</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">αὐτοὶ οἱ μαθηταί</td><td><strong>N</strong></td><td><strong>P</strong></td><td><strong>M</strong></td><td><strong>INT — "the disciples themselves"</strong></td><td></td></tr><tr><td>9</td><td class="greek">τὸ αὐτὸ πνεῦμα</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">τὸ αὐτὸ πνεῦμα</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>N</strong></td><td><strong>SAME — "the same spirit"</strong></td><td></td></tr><tr><td>10</td><td class="greek">ἤκουσαν αὐτῆς</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">ἤκουσαν αὐτῆς</td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>PP — "they heard her"</strong></td><td></td></tr><tr><td>11</td><td class="greek">αὐτὸς Ἰησοῦς</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">αὐτὸς Ἰησοῦς</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>INT — "Jesus himself"</strong></td><td></td></tr><tr><td>12</td><td class="greek">ἡ αὐτὴ ἐντολή</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ἡ αὐτὴ ἐντολή</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>SAME — "the same commandment"</strong></td><td></td></tr><tr><td>13</td><td class="greek">ἀπέστειλεν αὐτούς</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">ἀπέστειλεν αὐτούς</td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>M</strong></td><td><strong>PP — "he sent them"</strong></td><td></td></tr><tr><td>14</td><td class="greek">ὁ λόγος αὐτοῦ</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">ὁ λόγος αὐτοῦ</td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>PP — "his word"</strong></td><td></td></tr><tr><td>15</td><td class="greek">αὐτὴ εἶπεν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">αὐτὴ εἶπεν</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>INT — "she herself said"</strong></td><td></td></tr><tr><td>16</td><td class="greek">τῆς αὐτῆς χάριτος</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">τῆς αὐτῆς χάριτος</td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>SAME — "of the same grace"</strong></td><td></td></tr><tr><td>17</td><td class="greek">εἶδεν αὐτά</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">εἶδεν αὐτά</td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>N</strong></td><td><strong>PP — "he saw them"</strong></td><td></td></tr><tr><td>18</td><td class="greek">αὐτοὶ ἐλάλησαν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">αὐτοὶ ἐλάλησαν</td><td><strong>N</strong></td><td><strong>P</strong></td><td><strong>M</strong></td><td><strong>INT — "they themselves spoke"</strong></td><td></td></tr><tr><td>19</td><td class="greek">τοῖς αὐτοῖς ἀδελφοῖς</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">τοῖς αὐτοῖς ἀδελφοῖς</td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>M</strong></td><td><strong>SAME — "to the same brothers"</strong></td><td></td></tr><tr><td>20</td><td class="greek">πιστεύει εἰς αὐτήν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">πιστεύει εἰς αὐτήν</td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>PP — "he believes in her/it"</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
-</style>
-</head>
-<body>
-
-
-<h1>Chapter 12 — αὐτός Parsing and Use Identification Drill</h1>
-<p class="subtitle">BBG Chapter 12 · αὐτός</p>
-
-<p>For each item, parse αὐτός: <strong>Case</strong> (N/G/D/A), <strong>Number</strong> (S/P), <strong>Gender</strong> (M/F/N), and <strong>Use</strong> (PP / INT / SAME).</p>
-
-<div class="legend">
-  <table>
-    <tr><th>Code</th><th>Use</th><th>Position clue</th></tr>
-    <tr><td><strong>PP</strong></td><td>Personal Pronoun — "him/her/it/them"</td><td>Oblique case; αὐτός stands alone (no article before it modifying a noun)</td></tr>
-    <tr><td><strong>INT</strong></td><td>Intensive Adjective — "himself/herself"</td><td>Predicate position: αὐτός near article-noun but NO article directly before αὐτός</td></tr>
-    <tr><td><strong>SAME</strong></td><td>Identical Adjective — "the same"</td><td>Attributive position: article DIRECTLY before αὐτός</td></tr>
-  </table>
-</div>
-
-<div class="tip">
-  <strong>Decision rule:</strong> (1) Is there an article directly before αὐτός? → <strong>SAME</strong>. (2) Is αὐτός next to an article-noun phrase but with no article directly before it? → <strong>INT</strong>. (3) Otherwise (oblique, standing alone) → <strong>PP</strong>.
-</div>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <tr><th>#</th><th>Greek Phrase</th><th>Case</th><th>Number</th><th>Gender</th><th>Use (PP/INT/SAME)</th><th></th></tr>
-
-  <tr>
-    <td>1</td><td class="gk">λέγει αὐτῷ</td>
-    <td><input class="parse-field" id="c1" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n1" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g1" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u1" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r1')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r1"><td colspan="7"><strong>D · S · M · PP</strong> — "he says to <strong>him</strong>"</td></tr>
-
-  <tr>
-    <td>2</td><td class="gk">αὐτὸς ὁ κύριος</td>
-    <td><input class="parse-field" id="c2" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n2" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g2" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u2" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r2')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r2"><td colspan="7"><strong>N · S · M · INT</strong> — "the Lord <strong>himself</strong>" — predicate position</td></tr>
-
-  <tr>
-    <td>3</td><td class="gk">ὁ αὐτὸς λόγος</td>
-    <td><input class="parse-field" id="c3" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n3" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g3" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u3" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r3')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r3"><td colspan="7"><strong>N · S · M · SAME</strong> — "the <strong>same</strong> word" — article before αὐτός</td></tr>
-
-  <tr>
-    <td>4</td><td class="gk">βλέπω αὐτόν</td>
-    <td><input class="parse-field" id="c4" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n4" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g4" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u4" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r4')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r4"><td colspan="7"><strong>A · S · M · PP</strong> — "I see <strong>him</strong>"</td></tr>
-
-  <tr>
-    <td>5</td><td class="gk">αὐτὴ ἡ γυνή</td>
-    <td><input class="parse-field" id="c5" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n5" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g5" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u5" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r5')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r5"><td colspan="7"><strong>N · S · F · INT</strong> — "the woman <strong>herself</strong>"</td></tr>
-
-  <tr>
-    <td>6</td><td class="gk">ἐν τῷ αὐτῷ τόπῳ</td>
-    <td><input class="parse-field" id="c6" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n6" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g6" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u6" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r6')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r6"><td colspan="7"><strong>D · S · M · SAME</strong> — "in the <strong>same</strong> place"</td></tr>
-
-  <tr>
-    <td>7</td><td class="gk">ἔδωκεν αὐτοῖς</td>
-    <td><input class="parse-field" id="c7" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n7" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g7" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u7" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r7')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r7"><td colspan="7"><strong>D · P · M · PP</strong> — "he gave to <strong>them</strong>"</td></tr>
-
-  <tr>
-    <td>8</td><td class="gk">αὐτοὶ οἱ μαθηταί</td>
-    <td><input class="parse-field" id="c8" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n8" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g8" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u8" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r8')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r8"><td colspan="7"><strong>N · P · M · INT</strong> — "the disciples <strong>themselves</strong>"</td></tr>
-
-  <tr>
-    <td>9</td><td class="gk">τὸ αὐτὸ πνεῦμα</td>
-    <td><input class="parse-field" id="c9" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n9" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g9" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u9" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r9')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r9"><td colspan="7"><strong>N · S · N · SAME</strong> — "the <strong>same</strong> spirit"</td></tr>
-
-  <tr>
-    <td>10</td><td class="gk">ἤκουσαν αὐτῆς</td>
-    <td><input class="parse-field" id="c10" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n10" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g10" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u10" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r10')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r10"><td colspan="7"><strong>G · S · F · PP</strong> — "they heard <strong>her</strong>"</td></tr>
-
-  <tr>
-    <td>11</td><td class="gk">αὐτὸς Ἰησοῦς</td>
-    <td><input class="parse-field" id="c11" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n11" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g11" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u11" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r11')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r11"><td colspan="7"><strong>N · S · M · INT</strong> — "<strong>Jesus himself</strong>" (predicate position; cf. John 4:2)</td></tr>
-
-  <tr>
-    <td>12</td><td class="gk">ἡ αὐτὴ ἐντολή</td>
-    <td><input class="parse-field" id="c12" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n12" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g12" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u12" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r12')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r12"><td colspan="7"><strong>N · S · F · SAME</strong> — "the <strong>same</strong> commandment"</td></tr>
-
-  <tr>
-    <td>13</td><td class="gk">ἀπέστειλεν αὐτούς</td>
-    <td><input class="parse-field" id="c13" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n13" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g13" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u13" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r13')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r13"><td colspan="7"><strong>A · P · M · PP</strong> — "he sent <strong>them</strong>"</td></tr>
-
-  <tr>
-    <td>14</td><td class="gk">ὁ λόγος αὐτοῦ</td>
-    <td><input class="parse-field" id="c14" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n14" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g14" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u14" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r14')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r14"><td colspan="7"><strong>G · S · M · PP</strong> — "<strong>his</strong> word" (genitive of possession)</td></tr>
-
-  <tr>
-    <td>15</td><td class="gk">αὐτὴ εἶπεν</td>
-    <td><input class="parse-field" id="c15" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n15" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g15" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u15" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r15')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r15"><td colspan="7"><strong>N · S · F · INT</strong> — "<strong>she herself</strong> said" (emphatic subject)</td></tr>
-
-  <tr>
-    <td>16</td><td class="gk">τῆς αὐτῆς χάριτος</td>
-    <td><input class="parse-field" id="c16" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n16" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g16" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u16" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r16')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r16"><td colspan="7"><strong>G · S · F · SAME</strong> — "of the <strong>same</strong> grace"</td></tr>
-
-  <tr>
-    <td>17</td><td class="gk">εἶδεν αὐτά</td>
-    <td><input class="parse-field" id="c17" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n17" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g17" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u17" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r17')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r17"><td colspan="7"><strong>A · P · N · PP</strong> — "he saw <strong>them</strong>"</td></tr>
-
-  <tr>
-    <td>18</td><td class="gk">αὐτοὶ ἐλάλησαν</td>
-    <td><input class="parse-field" id="c18" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n18" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g18" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u18" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r18')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r18"><td colspan="7"><strong>N · P · M · INT</strong> — "<strong>they themselves</strong> spoke" (emphatic subject)</td></tr>
-
-  <tr>
-    <td>19</td><td class="gk">τοῖς αὐτοῖς ἀδελφοῖς</td>
-    <td><input class="parse-field" id="c19" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n19" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g19" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u19" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r19')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r19"><td colspan="7"><strong>D · P · M · SAME</strong> — "to the <strong>same</strong> brothers"</td></tr>
-
-  <tr>
-    <td>20</td><td class="gk">πιστεύει εἰς αὐτήν</td>
-    <td><input class="parse-field" id="c20" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n20" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g20" placeholder="M/F/N"></td>
-    <td><input class="parse-field-lg" id="u20" placeholder="PP / INT / SAME"></td>
-    <td><button class="reveal-btn" onclick="toggle('r20')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r20"><td colspan="7"><strong>A · S · F · PP</strong> — "he believes in <strong>her/it</strong>"</td></tr>
-
-</table>
-
-<script>
-function toggle(id) {
-  var row = document.getElementById(id);
-  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(function(r){ r.style.display='table-row'; });
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(function(r){ r.style.display='none'; });
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('.parse-field, .parse-field-lg').forEach(function(i){ i.value=''; });
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

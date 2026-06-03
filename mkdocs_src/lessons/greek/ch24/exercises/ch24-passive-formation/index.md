@@ -15,11 +15,11 @@ A 20-item formation drill presenting a mix of aorist passive and future passive 
 
 ## Sample Questions
 
-**Q1.** 1 ἐλύθην
-> **A:** Aorist · 1st · Sg · λύω · I was loosed
+**Q1.** 1 ἐλύθην Aorist Future 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 ἐλύθην Aorist 1st Sg λύω I was loosed
 
-**Q2.** 2 λυθήσομαι
-> **A:** Future · 1st · Sg · λύω · I will be loosed
+**Q2.** 2 λυθήσομαι Aorist Future 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 λυθήσομαι Future 1st Sg λύω I will be loosed
 
-**Q3.** 3 ἐβλήθη
-> **A:** Aorist · 3rd · Sg · βάλλω · He / it was thrown
+**Q3.** 3 ἐβλήθη Aorist Future 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 ἐβλήθη Aorist 3rd Sg βάλλω He / it was thrown

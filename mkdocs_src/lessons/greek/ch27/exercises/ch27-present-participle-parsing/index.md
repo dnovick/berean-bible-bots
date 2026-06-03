@@ -18,11 +18,11 @@ A 15-item parsing drill using present participle forms drawn from and modeled on
 
 ## Sample Questions
 
-**Q1.** 1 καὶ λύων τοὺς δούλους εἶπεν αὐτοῖς.
-> **A:** Present · Active · Nominative · Singular · Masculine · λύω · Adverbial (temporal/manner) · "And while loosing the slaves, he said to them."
+**Q1.** 1 λύων Act Mid Mid/Pass Acc Dat Gen Nom Pl Sg Adjectival Adv Gen. Abs. Adverbial Substantival &#9654;
+> **A:** 1 λύων Pres Act Nom Sg Masc λύω Adverbial While loosing the slaves, he said to them.
 
-**Q2.** 2 ἀκούων δὲ ὁ Ἰησοῦς ἀπεκρίθη αὐτοῖς.
-> **A:** Present · Active · Nominative · Singular · Masculine · ἀκούω · Adverbial (temporal) · "But Jesus, hearing this, answered them."
+**Q2.** 2 ἀκούων Act Mid Mid/Pass Acc Dat Gen Nom Pl Sg Adjectival Adv Gen. Abs. Adverbial Substantival &#9654;
+> **A:** 2 ἀκούων Pres Act Nom Sg Masc ἀκούω Adverbial But Jesus, hearing [this], answered them.
 
-**Q3.** 3 πορευόμενοι κηρύσσετε λέγοντες ὅτι ἐγγίζει ἡ βασιλεία τῶν οὐρανῶν.
-> **A:** Present · Middle · Nominative · Plural · Masculine · πορεύομαι · Adverbial (temporal/manner) · "As you go, preach saying that the kingdom of heaven is near."
+**Q3.** 3 πορευόμενοι Act Mid Mid/Pass Acc Dat Gen Nom Pl Sg Adjectival Adv Gen. Abs. Adverbial Substantival &#9654;
+> **A:** 3 πορευόμενοι Pres Mid Nom Pl Masc πορεύομαι Adverbial As you go, preach saying the kingdom is near.

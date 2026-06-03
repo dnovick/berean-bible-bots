@@ -1,205 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BBG Ch32 — Infinitive Parsing</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 960px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
-  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; }
-  .subtitle { color: #555; font-style: italic; }
-  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin: 1em 0 1.5em; font-size: .93em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .88em; }
-  th { background: #2e7d32; color: #fff; padding: .4em .5em; text-align: left; }
-  td { padding: .38em .5em; vertical-align: top; border-bottom: 1px solid #ddd; }
-  tr:nth-child(even) td { background: #f1f8f1; }
-  .greek { font-size: 1.08em; font-weight: bold; }
-  .parse-field { width: 93%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .87em; padding: 2px 0; }
-  .parse-field:focus { outline: none; border-bottom: 2px solid #2e7d32; }
-  .answer-row { display: none; background: #e8f5e9 !important; }
-  .answer-row td { color: #1b5e20; font-style: italic; font-size: .87em; }
-  .btn-reveal { background: #2e7d32; color: #fff; border: none; border-radius: 3px; padding: .22em .6em; cursor: pointer; font-size: .82em; }
-  .btn-reveal:hover { background: #1b5e20; }
-  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
-  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
-  .btn-ctrl:hover { background: #333; }
-  @media print { .btn-reveal, .controls { display: none !important; } .answer-row { display: none !important; } .parse-field { border-bottom: 1px solid #999; } }
-</style>
-</head>
-<body>
-
-<h1>BBG Chapter 32 — Infinitive Parsing</h1>
-<p class="subtitle"><em>Basics of Biblical Greek Grammar, Mounce, 4th Edition</em></p>
-<div class="instructions">
-  Parse the underlined infinitive (tense / voice / lexical form), identify the use, and translate.
-</div>
-<div class="controls">
-  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<h2>Part A — Complementary (1–5)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="1"><td><b>1</b></td><td class="greek">θέλω <u>λύειν</u> τοὺς δούλους.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-1"><td></td><td colspan="6">Pres · Act · λύω · Complementary · "I want to loose the slaves."</td><td></td></tr>
-
-<tr class="question-row" data-id="2"><td><b>2</b></td><td class="greek">οὐκ εἰμὶ ἱκανὸς <u>λῦσαι</u> τὸν ἱμάντα τοῦ ὑποδήματος αὐτοῦ.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-2"><td></td><td colspan="6">Aor · Act · λύω · Complementary · "I am not worthy to loose the strap of his sandal." (cf. Mark 1:7)</td><td></td></tr>
-
-<tr class="question-row" data-id="3"><td><b>3</b></td><td class="greek">ἤρξατο <u>διδάσκειν</u> αὐτοὺς πολλά.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-3"><td></td><td colspan="6">Pres · Act · διδάσκω · Complementary · "He began to teach them many things."</td><td></td></tr>
-
-<tr class="question-row" data-id="4"><td><b>4</b></td><td class="greek">δύνασαι <u>ποιεῖν</u> τοῦτο;</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-4"><td></td><td colspan="6">Pres · Act · ποιέω · Complementary · "Are you able to do this?"</td><td></td></tr>
-
-<tr class="question-row" data-id="5"><td><b>5</b></td><td class="greek">μέλλει γὰρ Ἡρῴδης <u>ζητεῖν</u> τὸ παιδίον.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-5"><td></td><td colspan="6">Pres · Act · ζητέω · Complementary · "For Herod is about to seek the child." (cf. Matt 2:13)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part B — Articular Infinitives (6–8)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="6"><td><b>6</b></td><td class="greek">τὸ <u>ζῆν</u> ἐμοὶ Χριστὸς καὶ τὸ ἀποθανεῖν κέρδος.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-6"><td></td><td colspan="6">Pres · Act · ζάω · Articular (subject) · "For me to live is Christ and to die is gain." (Phil 1:21)</td><td></td></tr>
-
-<tr class="question-row" data-id="7"><td><b>7</b></td><td class="greek">ἐξῆλθεν ὁ σπείρων τοῦ <u>σπεῖραι</u>.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-7"><td></td><td colspan="6">Aor · Act · σπείρω · Articular — purpose (τοῦ) · "The sower went out to sow." (Matt 13:3)</td><td></td></tr>
-
-<tr class="question-row" data-id="8"><td><b>8</b></td><td class="greek">ἐν τῷ <u>εἶναι</u> αὐτὸν ἐν τόπῳ τινί.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-8"><td></td><td colspan="6">Pres · Act · εἰμί · Articular — temporal (ἐν τῷ) · "While he was in a certain place." (Luke 11:1)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part C — Purpose (9–12)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="9"><td><b>9</b></td><td class="greek">εἰσῆλθεν εἰς τὸ <u>σπεῖραι</u> τὸν λόγον.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-9"><td></td><td colspan="6">Aor · Act · σπείρω · Purpose (εἰς τό) · "He went in to sow the word."</td><td></td></tr>
-
-<tr class="question-row" data-id="10"><td><b>10</b></td><td class="greek">πρὸς τὸ <u>θεαθῆναι</u> αὐτοῖς.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-10"><td></td><td colspan="6">Aor · Pass · θεάομαι · Purpose (πρός τό) · "So as to be seen by them." (Matt 6:1)</td><td></td></tr>
-
-<tr class="question-row" data-id="11"><td><b>11</b></td><td class="greek">ἦλθεν εἰς τὸ <u>βαπτισθῆναι</u> ὑπ᾽ αὐτοῦ.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-11"><td></td><td colspan="6">Aor · Pass · βαπτίζω · Purpose (εἰς τό) · "He came to be baptized by him." (cf. Matt 3:13)</td><td></td></tr>
-
-<tr class="question-row" data-id="12"><td><b>12</b></td><td class="greek">τοῦ <u>γνῶναι</u> αὐτὸν καὶ τὴν δύναμιν τῆς ἀναστάσεως αὐτοῦ.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-12"><td></td><td colspan="6">Aor · Act · γινώσκω · Purpose (τοῦ) · "To know him and the power of his resurrection." (Phil 3:10)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part D — Result (13–15)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="13"><td><b>13</b></td><td class="greek">ὥστε τοὺς ὄχλους <u>θαυμάζειν</u>.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-13"><td></td><td colspan="6">Pres · Act · θαυμάζω · Result (ὥστε) · "So that the crowds marveled." (Matt 15:31)</td><td></td></tr>
-
-<tr class="question-row" data-id="14"><td><b>14</b></td><td class="greek">ὥστε μηκέτι αὐτὸν δύνασθαι εἰς πόλιν <u>εἰσελθεῖν</u>.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-14"><td></td><td colspan="6">Aor · Act · εἰσέρχομαι · Complementary within result clause (ὥστε) · "So that he was no longer able to enter a city." (cf. Mark 2:2)</td><td></td></tr>
-
-<tr class="question-row" data-id="15"><td><b>15</b></td><td class="greek">ὥστε τὸ πλοῖον <u>καλύπτεσθαι</u> ὑπὸ τῶν κυμάτων.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-15"><td></td><td colspan="6">Pres · Pass · καλύπτω · Result (ὥστε) · "So that the boat was being covered by the waves." (Matt 8:24)</td><td></td></tr>
-</tbody>
-</table>
-
-<h2>Part E — Indirect Discourse and Temporal (16–20)</h2>
-<table>
-<thead><tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr></thead>
-<tbody>
-<tr class="question-row" data-id="16"><td><b>16</b></td><td class="greek">νομίζουσιν αὐτὸν <u>εἶναι</u> ἐν τῇ συνοδίᾳ.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-16"><td></td><td colspan="6">Pres · Act · εἰμί · Indirect discourse · "They suppose him to be in the traveling company." (Luke 2:44)</td><td></td></tr>
-
-<tr class="question-row" data-id="17"><td><b>17</b></td><td class="greek">λέγουσιν αὐτὸν <u>ἐγηγέρθαι</u> ἐκ νεκρῶν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(17)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-17"><td></td><td colspan="6">Perf · Pass · ἐγείρω · Indirect discourse · "They say that he has been raised from the dead." (cf. Matt 28:7)</td><td></td></tr>
-
-<tr class="question-row" data-id="18"><td><b>18</b></td><td class="greek">πιστεύομεν τὸν Ἰησοῦν <u>ἀποθανεῖν</u> καὶ ἀναστῆναι.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(18)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-18"><td></td><td colspan="6">Aor · Act · ἀποθνῄσκω · Indirect discourse · "We believe that Jesus died and rose again." (1 Thess 4:14)</td><td></td></tr>
-
-<tr class="question-row" data-id="19"><td><b>19</b></td><td class="greek">ἐν τῷ <u>σπείρειν</u> αὐτόν, ἃ μὲν ἔπεσεν παρὰ τὴν ὁδόν.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(19)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-19"><td></td><td colspan="6">Pres · Act · σπείρω · Temporal (ἐν τῷ) · "While he was sowing, some fell along the path." (Matt 13:4)</td><td></td></tr>
-
-<tr class="question-row" data-id="20"><td><b>20</b></td><td class="greek">ἐν τῷ <u>κατεβαίνειν</u> αὐτὸν εἰς τὴν Ἰεριχώ, τυφλοί τινες ἐκάθηντο.</td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><input class="parse-field"></td><td><input class="parse-field"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td></tr>
-<tr class="answer-row" id="ans-20"><td></td><td colspan="6">Pres · Act · καταβαίνω · Temporal (ἐν τῷ) · "As he was going down to Jericho, some blind men were sitting there."</td><td></td></tr>
-</tbody>
-</table>
-
-<script>
-function toggleAnswer(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
-  if (row.style.display === 'table-row') { row.style.display = 'none'; if (btn) btn.textContent = '▶ Answer'; }
-  else { row.style.display = 'table-row'; if (btn) btn.textContent = '▼ Answer'; }
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 32 — Infinitive Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 32 — Infinitive Parsing Drill</h1><p class="subtitle">BBG Chapter 32 · Infinitive</p><div class="instructions">Parse the bolded infinitive (Tense · Voice · Lexical Form). Identify the Use (Complementary · Articular/subject · Purpose · Result · Indirect discourse · Temporal). Provide a Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Parsing Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Tense</th><th>Voice</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">λύειν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">λύειν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>λύω</strong></td><td><strong>Complementary</strong></td><td><strong>I want to loose the slaves.</strong></td><td></td></tr><tr><td>2</td><td class="greek">λῦσαι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">λῦσαι</td><td><strong>Aor</strong></td><td><strong>Act</strong></td><td><strong>λύω</strong></td><td><strong>Complementary</strong></td><td><strong>I am not worthy to loose the strap of his sandal.</strong></td><td></td></tr><tr><td>3</td><td class="greek">διδάσκειν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">διδάσκειν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>διδάσκω</strong></td><td><strong>Complementary</strong></td><td><strong>He began to teach them many things.</strong></td><td></td></tr><tr><td>4</td><td class="greek">ποιεῖν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">ποιεῖν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>ποιέω</strong></td><td><strong>Complementary</strong></td><td><strong>Are you able to do this?</strong></td><td></td></tr><tr><td>5</td><td class="greek">ζητεῖν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">ζητεῖν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>ζητέω</strong></td><td><strong>Complementary</strong></td><td><strong>Herod is about to seek the child to destroy him.</strong></td><td></td></tr><tr><td>6</td><td class="greek">ζῆν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">ζῆν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>ζάω</strong></td><td><strong>Articular (subject)</strong></td><td><strong>For me to live is Christ and to die is gain.</strong></td><td></td></tr><tr><td>7</td><td class="greek">σπεῖραι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">σπεῖραι</td><td><strong>Aor</strong></td><td><strong>Act</strong></td><td><strong>σπείρω</strong></td><td><strong>Articular — purpose (τοῦ)</strong></td><td><strong>The sower went out to sow.</strong></td><td></td></tr><tr><td>8</td><td class="greek">εἶναι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">εἶναι</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>εἰμί</strong></td><td><strong>Articular — temporal (ἐν τῷ)</strong></td><td><strong>While he was in a certain place.</strong></td><td></td></tr><tr><td>9</td><td class="greek">σπεῖραι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">σπεῖραι</td><td><strong>Aor</strong></td><td><strong>Act</strong></td><td><strong>σπείρω</strong></td><td><strong>Purpose (εἰς τό)</strong></td><td><strong>He went in to sow the word.</strong></td><td></td></tr><tr><td>10</td><td class="greek">θεαθῆναι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">θεαθῆναι</td><td><strong>Aor</strong></td><td><strong>Pass</strong></td><td><strong>θεάομαι</strong></td><td><strong>Purpose (πρός τό)</strong></td><td><strong>So as to be seen by them.</strong></td><td></td></tr><tr><td>11</td><td class="greek">βαπτισθῆναι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">βαπτισθῆναι</td><td><strong>Aor</strong></td><td><strong>Pass</strong></td><td><strong>βαπτίζω</strong></td><td><strong>Purpose (εἰς τό)</strong></td><td><strong>He came to be baptized by him.</strong></td><td></td></tr><tr><td>12</td><td class="greek">γνῶναι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">γνῶναι</td><td><strong>Aor</strong></td><td><strong>Act</strong></td><td><strong>γινώσκω</strong></td><td><strong>Purpose (τοῦ)</strong></td><td><strong>To know him and the power of his resurrection.</strong></td><td></td></tr><tr><td>13</td><td class="greek">θαυμάζειν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">θαυμάζειν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>θαυμάζω</strong></td><td><strong>Result (ὥστε)</strong></td><td><strong>So that the crowds marveled.</strong></td><td></td></tr><tr><td>14</td><td class="greek">εἰσελθεῖν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">εἰσελθεῖν</td><td><strong>Aor</strong></td><td><strong>Act</strong></td><td><strong>εἰσέρχομαι</strong></td><td><strong>Result</strong></td><td><strong>So that he was no longer able to enter a city.</strong></td><td></td></tr><tr><td>15</td><td class="greek">καλύπτεσθαι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">καλύπτεσθαι</td><td><strong>Pres</strong></td><td><strong>Pass</strong></td><td><strong>καλύπτω</strong></td><td><strong>Result (ὥστε)</strong></td><td><strong>So that the boat was being covered by the waves.</strong></td><td></td></tr><tr><td>16</td><td class="greek">εἶναι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">εἶναι</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>εἰμί</strong></td><td><strong>Indirect discourse</strong></td><td><strong>They suppose him to be in the traveling company.</strong></td><td></td></tr><tr><td>17</td><td class="greek">ἐγηγέρθαι</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">ἐγηγέρθαι</td><td><strong>Perf</strong></td><td><strong>Pass</strong></td><td><strong>ἐγείρω</strong></td><td><strong>Indirect discourse</strong></td><td><strong>They say that he has been raised from the dead.</strong></td><td></td></tr><tr><td>18</td><td class="greek">ἀποθανεῖν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">ἀποθανεῖν</td><td><strong>Aor</strong></td><td><strong>Act</strong></td><td><strong>ἀποθνῄσκω</strong></td><td><strong>Indirect discourse</strong></td><td><strong>We believe that Jesus died and rose again.</strong></td><td></td></tr><tr><td>19</td><td class="greek">σπείρειν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">σπείρειν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>σπείρω</strong></td><td><strong>Temporal (ἐν τῷ)</strong></td><td><strong>While he was sowing, some seed fell along the path.</strong></td><td></td></tr><tr><td>20</td><td class="greek">κατεβαίνειν</td><td><select class="pf"><option value=""></option><option value="Aor">Aor</option><option value="Perf">Perf</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Pass">Pass</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Articular (subject)">Articular (subject)</option><option value="Articular — purpose (τοῦ)">Articular — purpose (τοῦ)</option><option value="Articular — temporal (ἐν τῷ)">Articular — temporal (ἐν τῷ)</option><option value="Complementary">Complementary</option><option value="Indirect discourse">Indirect discourse</option><option value="Purpose (εἰς τό)">Purpose (εἰς τό)</option><option value="Purpose (πρός τό)">Purpose (πρός τό)</option><option value="Purpose (τοῦ)">Purpose (τοῦ)</option><option value="Result">Result</option><option value="Result (ὥστε)">Result (ὥστε)</option><option value="Temporal (ἐν τῷ)">Temporal (ἐν τῷ)</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">κατεβαίνειν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>καταβαίνω</strong></td><td><strong>Temporal (ἐν τῷ)</strong></td><td><strong>As he was going down to Jericho, blind men were sitting there.</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
+  }
 }
-function showAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer'); }
-function hideAll() { document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none'); document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer'); }
-function clearAll() { document.querySelectorAll('.parse-field').forEach(f => f.value = ''); }
-</script>
-</body>
-</html>
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
+}
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
+}
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
+}
+</script></body></html>

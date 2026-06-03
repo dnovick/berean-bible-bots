@@ -16,11 +16,11 @@ A 20-item classification drill presenting participial phrases drawn from and mod
 
 ## Sample Questions
 
-**Q1.** 1 ἀκούων ταῦτα ἐξῆλθεν
-> **A:** ADV · anarthrous, nom., modifies main verb action · Hearing these things, he went out
+**Q1.** 1 ἀκούων ταῦτα ἐξῆλθεν ADJ ADV SUB &#9654;
+> **A:** 1 ἀκούων ταῦτα ἐξῆλθεν ADV Anarthrous, nom., modifies main verb action Hearing these things, he went out
 
-**Q2.** 2 ὁ πιστεύων εἰς αὐτόν
-> **A:** SUB · articular (ὁ), no antecedent noun · The one who believes in him
+**Q2.** 2 ὁ πιστεύων εἰς αὐτόν ADJ ADV SUB &#9654;
+> **A:** 2 ὁ πιστεύων εἰς αὐτόν SUB Articular (ὁ), no antecedent noun The one who believes in him
 
-**Q3.** 3 ὁ λόγος ὁ λαλούμενος
-> **A:** ADJ · articular, modifies λόγος · The word that was spoken
+**Q3.** 3 ὁ λόγος ὁ λαλούμενος ADJ ADV SUB &#9654;
+> **A:** 3 ὁ λόγος ὁ λαλούμενος ADJ Articular, modifies λόγος The word that was spoken

@@ -14,11 +14,11 @@
 
 ## Sample Questions
 
-**Q1.** 1 λύω
-> **A:** Pres. Act. Ind. · 1st · Singular · λύω — "I am loosing / I loose"
+**Q1.** 1 λύω 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 λύω 1st Sg λύω I am loosing / I loose
 
-**Q2.** 2 λύεις
-> **A:** Pres. Act. Ind. · 2nd · Singular · λύω — "You are loosing"
+**Q2.** 2 λύεις 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 λύεις 2nd Sg λύω You are loosing
 
-**Q3.** 3 λύει
-> **A:** Pres. Act. Ind. · 3rd · Singular · λύω — "He/she/it is loosing"
+**Q3.** 3 λύει 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 λύει 3rd Sg λύω He/she/it is loosing

@@ -1,394 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BBG Ch27 — Spot the Present Participle</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 900px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
-  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
-  .subtitle { color: #555; font-style: italic; margin: .3em 0 1em; }
-  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin-bottom: 1.5em; font-size: .95em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
-  th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
-  td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
-  tr:nth-child(even) td { background: #f5f7fb; }
-  .greek { font-size: 1.15em; font-weight: bold; }
-  .parse-field { width: 95%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .92em; padding: 2px 0; }
-  .parse-field:focus { outline: none; border-bottom: 2px solid #3a5a8a; }
-  .answer-row { display: none; background: #e8f5e9 !important; }
-  .answer-row td { color: #2e7d32; font-style: italic; font-size: .9em; }
-  .btn-reveal { background: #3a5a8a; color: #fff; border: none; border-radius: 3px; padding: .25em .7em; cursor: pointer; font-size: .85em; white-space: nowrap; }
-  .btn-reveal:hover { background: #2c4470; }
-  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
-  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
-  .btn-ctrl:hover { background: #333; }
-  .item-num { font-weight: bold; min-width: 1.5em; }
-  @media print {
-    .btn-reveal, .controls { display: none !important; }
-    .answer-row { display: none !important; }
-    .parse-field { border-bottom: 1px solid #999; }
-    body { margin: 1em; }
-  }
-</style>
-</head>
-<body>
-
-<h1>BBG Chapter 27 — Spot the Present Participle</h1>
-<p class="subtitle"><em>Basics of Biblical Greek Grammar, Mounce, 4th Edition</em></p>
-
-<div class="instructions">
-  <strong>Instructions:</strong> For each item, (1) parse the bolded form (tense / voice / case / number / gender / lexical form),
-  (2) identify the use (adverbial, adjectival, or substantival), and (3) translate the phrase or sentence.
-  Click <strong>▶ Answer</strong> to reveal the answer for that row.
-</div>
-
-<div class="controls">
-  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<h2>Part A — Adverbial Participles (1–9)</h2>
-
-<table id="tbl-a">
-<thead>
-  <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
-</thead>
-<tbody>
-
-<tr class="question-row" data-id="1">
-  <td class="item-num">1</td>
-  <td class="greek">καὶ <u>λύων</u> τοὺς δούλους εἶπεν αὐτοῖς.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-1">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Singular · Masculine · λύω · Adverbial (temporal/manner) · "And while loosing the slaves, he said to them."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="2">
-  <td class="item-num">2</td>
-  <td class="greek"><u>ἀκούων</u> δὲ ὁ Ἰησοῦς ἀπεκρίθη αὐτοῖς.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-2">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Singular · Masculine · ἀκούω · Adverbial (temporal) · "But Jesus, hearing this, answered them."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="3">
-  <td class="item-num">3</td>
-  <td class="greek"><u>πορευόμενοι</u> κηρύσσετε λέγοντες ὅτι ἐγγίζει ἡ βασιλεία τῶν οὐρανῶν.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-3">
-  <td></td>
-  <td colspan="9">Present · Middle · Nominative · Plural · Masculine · πορεύομαι · Adverbial (temporal/manner) · "As you go, preach saying that the kingdom of heaven is near."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="4">
-  <td class="item-num">4</td>
-  <td class="greek"><u>προσευχόμενος</u> μὴ βατταλογήσητε.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-4">
-  <td></td>
-  <td colspan="9">Present · Middle · Nominative · Singular · Masculine · προσεύχομαι · Adverbial (temporal) · "When praying, do not babble."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="5">
-  <td class="item-num">5</td>
-  <td class="greek">ὁ δὲ ἀποκριθεὶς εἶπεν· <u>ἀγαπῶν</u> τὸν θεὸν πάντα δύναται.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-5">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Singular · Masculine · ἀγαπάω · Adverbial (manner/condition) · "He answering said: one loving God is able to do all things."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="6">
-  <td class="item-num">6</td>
-  <td class="greek"><u>βλέπων</u> τοὺς ὄχλους ἐσπλαγχνίσθη περὶ αὐτῶν.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-6">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Singular · Masculine · βλέπω · Adverbial (temporal) · "Seeing the crowds, he was moved with compassion for them."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="7">
-  <td class="item-num">7</td>
-  <td class="greek"><u>ἐρχόμενος</u> πρὸς αὐτὸν ὁ Πέτρος εἶπεν·</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-7">
-  <td></td>
-  <td colspan="9">Present · Middle · Nominative · Singular · Masculine · ἔρχομαι · Adverbial (temporal) · "Peter, coming to him, said:"</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="8">
-  <td class="item-num">8</td>
-  <td class="greek"><u>λεγόμενος</u> Χριστός — οὗτός ἐστιν ὁ υἱὸς τοῦ θεοῦ.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-8">
-  <td></td>
-  <td colspan="9">Present · Middle/Passive · Nominative · Singular · Masculine · λέγω · Adjectival (attributive) · "The one called Christ — he is the Son of God."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="9">
-  <td class="item-num">9</td>
-  <td class="greek">ταῦτα <u>λαλοῦντος</u> αὐτοῦ, πολλοὶ ἐπίστευσαν εἰς αὐτόν.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-9">
-  <td></td>
-  <td colspan="9">Present · Active · Genitive · Singular · Masculine · λαλέω · Adverbial — Genitive Absolute · "While he was saying these things, many believed in him."</td>
-  <td></td>
-</tr>
-
-</tbody>
-</table>
-
-<h2>Part B — Adjectival Participles (10–12)</h2>
-<table>
-<thead>
-  <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
-</thead>
-<tbody>
-
-<tr class="question-row" data-id="10">
-  <td class="item-num">10</td>
-  <td class="greek">ὁ <u>πιστεύων</u> ἄνθρωπος σῴζεται.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-10">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Singular · Masculine · πιστεύω · Adjectival (attributive) · "The believing man is being saved."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="11">
-  <td class="item-num">11</td>
-  <td class="greek">εἶδεν τοὺς ἀδελφοὺς τοὺς <u>ἐρχομένους</u> πρὸς αὐτόν.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-11">
-  <td></td>
-  <td colspan="9">Present · Middle · Accusative · Plural · Masculine · ἔρχομαι · Adjectival (attributive, 2nd position) · "He saw the brothers, those coming to him."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="12">
-  <td class="item-num">12</td>
-  <td class="greek">ἐν τῷ οἴκῳ τῷ <u>λεγομένῳ</u> Βηθεσδά.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-12">
-  <td></td>
-  <td colspan="9">Present · Middle/Passive · Dative · Singular · Masculine · λέγω · Adjectival (attributive, 2nd position) · "In the house called Bethesda."</td>
-  <td></td>
-</tr>
-
-</tbody>
-</table>
-
-<h2>Part C — Substantival and εἰμί (13–15)</h2>
-<table>
-<thead>
-  <tr><th>#</th><th>Greek Text</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Use</th><th>Translation</th><th></th></tr>
-</thead>
-<tbody>
-
-<tr class="question-row" data-id="13">
-  <td class="item-num">13</td>
-  <td class="greek">ὁ <u>πιστεύων</u> εἰς αὐτὸν οὐ κρίνεται.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-13">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Singular · Masculine · πιστεύω · Substantival · "The one who believes in him is not judged." (cf. John 3:18)</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="14">
-  <td class="item-num">14</td>
-  <td class="greek">εὐλογημένοι οἱ <u>ἀγαπῶντες</u> τὸν κύριον.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-14">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Plural · Masculine · ἀγαπάω · Substantival · "Blessed are those who love the Lord."</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="15">
-  <td class="item-num">15</td>
-  <td class="greek">ὁ <u>ὢν</u> ἐν τῷ κόλπῳ τοῦ πατρός, ἐκεῖνος ἐξηγήσατο.</td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="case"></td>
-  <td><input class="parse-field" placeholder="number"></td>
-  <td><input class="parse-field" placeholder="gender"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="use"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-15">
-  <td></td>
-  <td colspan="9">Present · Active · Nominative · Singular · Masculine · εἰμί · Substantival · "The one who is in the bosom of the Father — that one has explained [him]." (John 1:18)</td>
-  <td></td>
-</tr>
-
-</tbody>
-</table>
-
-<script>
-function toggleAnswer(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
-  if (row.style.display === 'table-row') {
-    row.style.display = 'none';
-    if (btn) btn.textContent = '▶ Answer';
-  } else {
-    row.style.display = 'table-row';
-    if (btn) btn.textContent = '▼ Answer';
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 27 — Present Adverbial Participle Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 27 — Present Adverbial Participle Parsing Drill</h1><p class="subtitle">BBG Chapter 27 · Imperfective (Present) Adverbial Participles</p><div class="instructions">Parse the bolded participle (Tense · Voice · Case · Number · Gender · Lexical Form). Then identify the Use (Adverbial / Adjectival / Substantival) and provide a Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Parsing Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Tense</th><th>Voice</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical</th><th>Use</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">λύων</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">λύων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>λύω</strong></td><td><strong>Adverbial</strong></td><td><strong>While loosing the slaves, he said to them.</strong></td><td></td></tr><tr><td>2</td><td class="greek">ἀκούων</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">ἀκούων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>ἀκούω</strong></td><td><strong>Adverbial</strong></td><td><strong>But Jesus, hearing [this], answered them.</strong></td><td></td></tr><tr><td>3</td><td class="greek">πορευόμενοι</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">πορευόμενοι</td><td><strong>Pres</strong></td><td><strong>Mid</strong></td><td><strong>Nom</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>πορεύομαι</strong></td><td><strong>Adverbial</strong></td><td><strong>As you go, preach saying the kingdom is near.</strong></td><td></td></tr><tr><td>4</td><td class="greek">προσευχόμενος</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">προσευχόμενος</td><td><strong>Pres</strong></td><td><strong>Mid</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>προσεύχομαι</strong></td><td><strong>Adverbial</strong></td><td><strong>When praying, do not babble.</strong></td><td></td></tr><tr><td>5</td><td class="greek">ἀγαπῶν</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">ἀγαπῶν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>Adverbial</strong></td><td><strong>The one who loves God can do all things.</strong></td><td></td></tr><tr><td>6</td><td class="greek">βλέπων</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">βλέπων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>βλέπω</strong></td><td><strong>Adverbial</strong></td><td><strong>Seeing the crowds, he was moved with compassion.</strong></td><td></td></tr><tr><td>7</td><td class="greek">ἐρχόμενος</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">ἐρχόμενος</td><td><strong>Pres</strong></td><td><strong>Mid</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>ἔρχομαι</strong></td><td><strong>Adverbial</strong></td><td><strong>Peter, coming to him, said:</strong></td><td></td></tr><tr><td>8</td><td class="greek">λεγόμενος</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">λεγόμενος</td><td><strong>Pres</strong></td><td><strong>Mid/Pass</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>λέγω</strong></td><td><strong>Adjectival</strong></td><td><strong>The one called Christ — he is the Son of God.</strong></td><td></td></tr><tr><td>9</td><td class="greek">λαλοῦντος</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">λαλοῦντος</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Gen</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>λαλέω</strong></td><td><strong>Adv — Gen. Abs.</strong></td><td><strong>While he was saying these things, many believed.</strong></td><td></td></tr><tr><td>10</td><td class="greek">πιστεύων</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">πιστεύων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>πιστεύω</strong></td><td><strong>Adjectival</strong></td><td><strong>The believing man is being saved.</strong></td><td></td></tr><tr><td>11</td><td class="greek">ἐρχομένους</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">ἐρχομένους</td><td><strong>Pres</strong></td><td><strong>Mid</strong></td><td><strong>Acc</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>ἔρχομαι</strong></td><td><strong>Adjectival</strong></td><td><strong>He saw the brothers, the ones coming to him.</strong></td><td></td></tr><tr><td>12</td><td class="greek">λεγομένῳ</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">λεγομένῳ</td><td><strong>Pres</strong></td><td><strong>Mid/Pass</strong></td><td><strong>Dat</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>λέγω</strong></td><td><strong>Adjectival</strong></td><td><strong>In the house called Bethesda.</strong></td><td></td></tr><tr><td>13</td><td class="greek">πιστεύων</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">πιστεύων</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>πιστεύω</strong></td><td><strong>Substantival</strong></td><td><strong>The one who believes in him is not judged.</strong></td><td></td></tr><tr><td>14</td><td class="greek">ἀγαπῶντες</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">ἀγαπῶντες</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Pl</strong></td><td><strong>Masc</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>Substantival</strong></td><td><strong>Blessed are those who love the Lord.</strong></td><td></td></tr><tr><td>15</td><td class="greek">ὤν</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option><option value="Mid/Pass">Mid/Pass</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Adjectival">Adjectival</option><option value="Adv — Gen. Abs.">Adv — Gen. Abs.</option><option value="Adverbial">Adverbial</option><option value="Substantival">Substantival</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">ὤν</td><td><strong>Pres</strong></td><td><strong>Act</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>Masc</strong></td><td><strong>εἰμί</strong></td><td><strong>Substantival</strong></td><td><strong>The one in the bosom of the Father has explained him.</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
-  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer');
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
-  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer');
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('.parse-field').forEach(f => f.value = '');
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

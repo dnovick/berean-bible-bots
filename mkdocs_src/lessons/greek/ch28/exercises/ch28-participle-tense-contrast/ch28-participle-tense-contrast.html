@@ -1,415 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>BBG Ch28 — Present vs. Aorist Adverbial Participle Contrast</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 960px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #333; padding-bottom: .3em; }
-  h2 { font-size: 1.1em; margin-top: 1.8em; border-bottom: 1px solid #aaa; padding-bottom: .2em; }
-  .subtitle { color: #555; font-style: italic; margin: .3em 0 1em; }
-  .instructions { background: #f9f9f0; border-left: 3px solid #c8a000; padding: .7em 1em; margin-bottom: 1.5em; font-size: .95em; }
-  table { border-collapse: collapse; width: 100%; margin-bottom: 1em; font-size: .93em; }
-  th { background: #3a5a8a; color: #fff; padding: .45em .6em; text-align: left; }
-  td { padding: .4em .6em; vertical-align: top; border-bottom: 1px solid #ddd; }
-  tr:nth-child(even) td { background: #f5f7fb; }
-  .greek { font-size: 1.15em; font-weight: bold; }
-  .parse-field { width: 95%; border: none; border-bottom: 1px solid #888; background: transparent; font-family: inherit; font-size: .92em; padding: 2px 0; }
-  .parse-field:focus { outline: none; border-bottom: 2px solid #3a5a8a; }
-  .answer-row { display: none; background: #e8f5e9 !important; }
-  .answer-row td { color: #2e7d32; font-style: italic; font-size: .9em; }
-  .btn-reveal { background: #3a5a8a; color: #fff; border: none; border-radius: 3px; padding: .25em .7em; cursor: pointer; font-size: .85em; white-space: nowrap; }
-  .btn-reveal:hover { background: #2c4470; }
-  .controls { margin: 1em 0 1.5em; display: flex; gap: .7em; flex-wrap: wrap; }
-  .btn-ctrl { background: #555; color: #fff; border: none; border-radius: 4px; padding: .4em 1em; cursor: pointer; font-size: .9em; }
-  .btn-ctrl:hover { background: #333; }
-  .item-num { font-weight: bold; min-width: 1.5em; }
-  @media print {
-    .btn-reveal, .controls { display: none !important; }
-    .answer-row { display: none !important; }
-    .parse-field { border-bottom: 1px solid #999; }
-    body { margin: 1em; }
-  }
-</style>
-</head>
-<body>
-
-<h1>BBG Chapter 28 — Present vs. Aorist Adverbial Participle Contrast</h1>
-<p class="subtitle"><em>BBG Chapter 28 · Contemporaneous vs. Antecedent Action</em></p>
-
-<div class="instructions">
-  <strong>Instructions:</strong> For each item, (1) classify the temporal relation as CONTEMP (present participle = same time as main verb)
-  or ANTEC (aorist participle = prior to main verb), (2) give the tense and voice of the participle,
-  (3) give the lexical form, and (4) translate.
-  Click <strong>▶ Answer</strong> to reveal the answer for that row.
-</div>
-
-<div class="controls">
-  <button class="btn-ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="btn-ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="btn-ctrl" onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-<thead>
-  <tr><th>#</th><th>Participle Clause</th><th>Relation (CONTEMP/ANTEC)</th><th>Tense</th><th>Voice</th><th>Lexical Form</th><th>Translation</th><th></th></tr>
-</thead>
-<tbody>
-
-<tr class="question-row" data-id="1">
-  <td class="item-num">1</td>
-  <td class="greek">ταῦτα εἰπὼν ἀπῆλθεν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(1)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-1">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · λέγω · Having said these things, he departed</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="2">
-  <td class="item-num">2</td>
-  <td class="greek">πορευόμενος κηρύσσει</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(2)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-2">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Middle · πορεύομαι · While going, he preaches</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="3">
-  <td class="item-num">3</td>
-  <td class="greek">ἀκούσαντες ἐχάρησαν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(3)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-3">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · ἀκούω · When / after they heard, they rejoiced</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="4">
-  <td class="item-num">4</td>
-  <td class="greek">βλέπων τοὺς ὄχλους ἐσπλαγχνίσθη</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(4)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-4">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Active · βλέπω · While seeing the crowds, he had compassion</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="5">
-  <td class="item-num">5</td>
-  <td class="greek">ἐλθόντες εἶδον</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(5)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-5">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · ἔρχομαι · After coming, they saw</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="6">
-  <td class="item-num">6</td>
-  <td class="greek">προσευχόμενος μὴ βατταλογήσητε</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(6)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-6">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Middle · προσεύχομαι · While praying, do not babble</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="7">
-  <td class="item-num">7</td>
-  <td class="greek">εἰσελθὼν εἰς τὴν συναγωγήν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(7)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-7">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · εἰσέρχομαι · After entering the synagogue</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="8">
-  <td class="item-num">8</td>
-  <td class="greek">λαλῶν ταῦτα εἶπεν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(8)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-8">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Active · λαλέω · While saying these things, he said (more)</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="9">
-  <td class="item-num">9</td>
-  <td class="greek">πιστεύσαντες ἐβαπτίσθησαν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(9)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-9">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · πιστεύω · After / when they believed, they were baptized</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="10">
-  <td class="item-num">10</td>
-  <td class="greek">ἀποκριθεὶς εἶπεν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(10)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-10">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Pass. (deponent) · ἀποκρίνομαι · Having answered, he said</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="11">
-  <td class="item-num">11</td>
-  <td class="greek">διδάσκων ἐν τῇ συναγωγῇ ἐξεπλήσσοντο</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(11)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-11">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Active · διδάσκω · While he was teaching in the synagogue, they were amazed</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="12">
-  <td class="item-num">12</td>
-  <td class="greek">ἐγερθεὶς παρέλαβεν τὸ παιδίον</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(12)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-12">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Pass. (deponent) · ἐγείρω · Having gotten up, he took the child</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="13">
-  <td class="item-num">13</td>
-  <td class="greek">ἀναβλέψας εἰς τὸν οὐρανὸν εὐλόγησεν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(13)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-13">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · ἀναβλέπω · Having looked up to heaven, he blessed</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="14">
-  <td class="item-num">14</td>
-  <td class="greek">κλαίων ἐξῆλθεν ἔξω</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(14)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-14">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Active · κλαίω · Weeping, he went outside</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="15">
-  <td class="item-num">15</td>
-  <td class="greek">εὑρόντες αὐτόν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(15)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-15">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · εὑρίσκω · After / when they found him</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="16">
-  <td class="item-num">16</td>
-  <td class="greek">ἐρχόμενος πρὸς αὐτόν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(16)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-16">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Middle · ἔρχομαι · While coming to him</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="17">
-  <td class="item-num">17</td>
-  <td class="greek">λαβὼν τοὺς πέντε ἄρτους ηὐλόγησεν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(17)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-17">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · λαμβάνω · Having taken the five loaves, he blessed</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="18">
-  <td class="item-num">18</td>
-  <td class="greek">ἐσθίων μετ᾽ αὐτῶν παρήγγειλεν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(18)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-18">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Active · ἐσθίω · While eating with them, he commanded</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="19">
-  <td class="item-num">19</td>
-  <td class="greek">ἀναστὰς ἐπορεύθη</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(19)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-19">
-  <td></td>
-  <td colspan="6">ANTEC · Aorist · Active · ἀνίστημι · Having risen, he went</td>
-  <td></td>
-</tr>
-
-<tr class="question-row" data-id="20">
-  <td class="item-num">20</td>
-  <td class="greek">χαίροντες ὑπέστρεψαν</td>
-  <td><input class="parse-field" placeholder="CONTEMP/ANTEC"></td>
-  <td><input class="parse-field" placeholder="tense"></td>
-  <td><input class="parse-field" placeholder="voice"></td>
-  <td><input class="parse-field" placeholder="lexical form"></td>
-  <td><input class="parse-field" placeholder="translation"></td>
-  <td><button class="btn-reveal" onclick="toggleAnswer(20)">▶ Answer</button></td>
-</tr>
-<tr class="answer-row" id="ans-20">
-  <td></td>
-  <td colspan="6">CONTEMP · Present · Active · χαίρω · Rejoicing, they returned</td>
-  <td></td>
-</tr>
-
-</tbody>
-</table>
-
-<h2>Discussion Questions</h2>
-<ol>
-  <li>Items 10 and 12 use aorist <strong>passive</strong> participles for what are grammatically deponent verbs (ἀποκρίνομαι, ἐγείρω used as deponent). How do you know these are not true passive uses? What contextual signal tells you?</li>
-  <li>Present adverbial participles can be translated with "while," "as," or just "-ing." Aorist participles get "after," "when," or "having." Test items 3 and 9: could item 3 be translated as "while hearing"? What is lost if you do?</li>
-  <li>Item 8 (λαλῶν ταῦτα εἶπεν) seems paradoxical — the main verb is also a speech verb (εἶπεν). What does the present participle λαλῶν contribute that the aorist εἰπών would not?</li>
-</ol>
-
-<script>
-function toggleAnswer(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] .btn-reveal');
-  if (row.style.display === 'table-row') {
-    row.style.display = 'none';
-    if (btn) btn.textContent = '▶ Answer';
-  } else {
-    row.style.display = 'table-row';
-    if (btn) btn.textContent = '▼ Answer';
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 28 — Participle Tense Contrast Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 28 — Participle Tense Contrast Drill</h1><p class="subtitle">BBG Chapter 28 · Present vs. Aorist Participle Aspect</p><div class="instructions">For each adverbial participle clause, classify the temporal relation as CONTEMP (present participle = same time as main verb) or ANTEC (aorist participle = prior to main verb). Then give Tense, Voice, Lexical form, and Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Classification Table</h2><table><thead><tr><th>#</th><th>Participle Clause</th><th>Relation</th><th>Tense</th><th>Voice</th><th>Lexical Form</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">ταῦτα εἰπὼν ἀπῆλθεν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">ταῦτα εἰπὼν ἀπῆλθεν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>λέγω</strong></td><td><strong>Having said these things, he departed</strong></td><td></td></tr><tr><td>2</td><td class="greek">πορευόμενος κηρύσσει</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">πορευόμενος κηρύσσει</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Middle</strong></td><td><strong>πορεύομαι</strong></td><td><strong>While going, he preaches</strong></td><td></td></tr><tr><td>3</td><td class="greek">ἀκούσαντες ἐχάρησαν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">ἀκούσαντες ἐχάρησαν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>ἀκούω</strong></td><td><strong>When they heard, they rejoiced</strong></td><td></td></tr><tr><td>4</td><td class="greek">βλέπων τοὺς ὄχλους ἐσπλαγχνίσθη</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">βλέπων τοὺς ὄχλους ἐσπλαγχνίσθη</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Active</strong></td><td><strong>βλέπω</strong></td><td><strong>While seeing the crowds, he had compassion</strong></td><td></td></tr><tr><td>5</td><td class="greek">ἐλθόντες εἶδον</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">ἐλθόντες εἶδον</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>ἔρχομαι</strong></td><td><strong>After coming, they saw</strong></td><td></td></tr><tr><td>6</td><td class="greek">προσευχόμενος μὴ βατταλογήσητε</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">προσευχόμενος μὴ βατταλογήσητε</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Middle</strong></td><td><strong>προσεύχομαι</strong></td><td><strong>While praying, do not babble</strong></td><td></td></tr><tr><td>7</td><td class="greek">εἰσελθὼν εἰς τὴν συναγωγήν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">εἰσελθὼν εἰς τὴν συναγωγήν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>εἰσέρχομαι</strong></td><td><strong>After entering the synagogue</strong></td><td></td></tr><tr><td>8</td><td class="greek">λαλῶν ταῦτα εἶπεν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">λαλῶν ταῦτα εἶπεν</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Active</strong></td><td><strong>λαλέω</strong></td><td><strong>While saying these things, he said (more)</strong></td><td></td></tr><tr><td>9</td><td class="greek">πιστεύσαντες ἐβαπτίσθησαν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">πιστεύσαντες ἐβαπτίσθησαν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>πιστεύω</strong></td><td><strong>When they believed, they were baptized</strong></td><td></td></tr><tr><td>10</td><td class="greek">ἀποκριθεὶς εἶπεν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">ἀποκριθεὶς εἶπεν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Pass (dep.)</strong></td><td><strong>ἀποκρίνομαι</strong></td><td><strong>Having answered, he said</strong></td><td></td></tr><tr><td>11</td><td class="greek">διδάσκων ἐν τῇ συναγωγῇ ἐξεπλήσσοντο</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">διδάσκων ἐν τῇ συναγωγῇ ἐξεπλήσσοντο</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Active</strong></td><td><strong>διδάσκω</strong></td><td><strong>While he was teaching, they were amazed</strong></td><td></td></tr><tr><td>12</td><td class="greek">ἐγερθεὶς παρέλαβεν τὸ παιδίον</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ἐγερθεὶς παρέλαβεν τὸ παιδίον</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Pass (dep.)</strong></td><td><strong>ἐγείρω</strong></td><td><strong>Having gotten up, he took the child</strong></td><td></td></tr><tr><td>13</td><td class="greek">ἀναβλέψας εἰς τὸν οὐρανὸν εὐλόγησεν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">ἀναβλέψας εἰς τὸν οὐρανὸν εὐλόγησεν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>ἀναβλέπω</strong></td><td><strong>Having looked up to heaven, he blessed</strong></td><td></td></tr><tr><td>14</td><td class="greek">κλαίων ἐξῆλθεν ἔξω</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">κλαίων ἐξῆλθεν ἔξω</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Active</strong></td><td><strong>κλαίω</strong></td><td><strong>Weeping, he went outside</strong></td><td></td></tr><tr><td>15</td><td class="greek">εὑρόντες αὐτόν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">εὑρόντες αὐτόν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>εὑρίσκω</strong></td><td><strong>After / when they found him</strong></td><td></td></tr><tr><td>16</td><td class="greek">ἐρχόμενος πρὸς αὐτόν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">ἐρχόμενος πρὸς αὐτόν</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Middle</strong></td><td><strong>ἔρχομαι</strong></td><td><strong>While coming to him</strong></td><td></td></tr><tr><td>17</td><td class="greek">λαβὼν τοὺς πέντε ἄρτους ηὐλόγησεν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">λαβὼν τοὺς πέντε ἄρτους ηὐλόγησεν</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>λαμβάνω</strong></td><td><strong>Having taken the five loaves, he blessed</strong></td><td></td></tr><tr><td>18</td><td class="greek">ἐσθίων μετ᾽ αὐτῶν παρήγγειλεν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">ἐσθίων μετ᾽ αὐτῶν παρήγγειλεν</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Active</strong></td><td><strong>ἐσθίω</strong></td><td><strong>While eating with them, he commanded</strong></td><td></td></tr><tr><td>19</td><td class="greek">ἀναστὰς ἐπορεύθη</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">ἀναστὰς ἐπορεύθη</td><td><strong>ANTEC</strong></td><td><strong>Aorist</strong></td><td><strong>Active</strong></td><td><strong>ἀνίστημι</strong></td><td><strong>Having risen, he went</strong></td><td></td></tr><tr><td>20</td><td class="greek">χαίροντες ὑπέστρεψαν</td><td><select class="pf"><option value=""></option><option value="ANTEC">ANTEC</option><option value="CONTEMP">CONTEMP</option></select></td><td><select class="pf"><option value=""></option><option value="Aorist">Aorist</option><option value="Pres">Pres</option></select></td><td><select class="pf"><option value=""></option><option value="Active">Active</option><option value="Middle">Middle</option><option value="Pass (dep.)">Pass (dep.)</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">χαίροντες ὑπέστρεψαν</td><td><strong>CONTEMP</strong></td><td><strong>Pres</strong></td><td><strong>Active</strong></td><td><strong>χαίρω</strong></td><td><strong>Rejoicing, they returned</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'table-row');
-  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▼ Answer');
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.style.display = 'none');
-  document.querySelectorAll('.btn-reveal').forEach(b => b.textContent = '▶ Answer');
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('.parse-field').forEach(f => f.value = '');
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

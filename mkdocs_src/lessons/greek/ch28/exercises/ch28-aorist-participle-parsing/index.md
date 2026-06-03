@@ -19,11 +19,11 @@ A 15-item parsing drill using aorist participle forms drawn from and modeled on 
 
 ## Sample Questions
 
-**Q1.** 1 λύσας τοὺς δούλους εἰσῆλθεν εἰς τὴν οἰκίαν.
-> **A:** Aorist · Active · Nominative · Singular · Masculine · λύω · 1st · Adverbial (temporal) · "After loosing the slaves, he entered into the house."
+**Q1.** 1 λύσας Act Mid Pass Acc Dat Nom Pl Sg 1st 2nd Adjectival Adverbial Substantival &#9654;
+> **A:** 1 λύσας Aor Act Nom Sg Masc λύω 1st Adverbial After loosing the slaves, he entered the house.
 
-**Q2.** 2 ἀκούσας δὲ ὁ βασιλεὺς ἐταράχθη.
-> **A:** Aorist · Active · Nominative · Singular · Masculine · ἀκούω · 1st · Adverbial (temporal) · "But the king, having heard, was troubled."
+**Q2.** 2 ἀκούσας Act Mid Pass Acc Dat Nom Pl Sg 1st 2nd Adjectival Adverbial Substantival &#9654;
+> **A:** 2 ἀκούσας Aor Act Nom Sg Masc ἀκούω 1st Adverbial But the king, having heard, was troubled.
 
-**Q3.** 3 πιστεύσαντες εἰς τὸν κύριον ἐβαπτίσθησαν.
-> **A:** Aorist · Active · Nominative · Plural · Masculine · πιστεύω · 1st · Adverbial (temporal) · "Having believed in the Lord, they were baptized."
+**Q3.** 3 πιστεύσαντες Act Mid Pass Acc Dat Nom Pl Sg 1st 2nd Adjectival Adverbial Substantival &#9654;
+> **A:** 3 πιστεύσαντες Aor Act Nom Pl Masc πιστεύω 1st Adverbial Having believed in the Lord, they were baptized.

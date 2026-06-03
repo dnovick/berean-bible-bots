@@ -17,11 +17,11 @@ A 15-item parsing drill focused on adjectival (attributive) and substantival use
 
 ## Sample Questions
 
-**Q1.** 1 ὁ πιστεύων ἄνθρωπος σῴζεται.
-> **A:** Pres · Act · Nom · Sg · Masc · πιστεύω · Attributive · 1st pos. · "The believing man is being saved."
+**Q1.** 1 πιστεύων Aor Perf Pres Act Mid Mid/Pass Pass Acc Dat Gen Nom Pl Sg Fem Masc Neut Attributive Substantival 1st pos. 2nd pos. &#9654;
+> **A:** 1 πιστεύων Pres Act Nom Sg Masc πιστεύω Attributive 1st pos. The believing man is being saved.
 
-**Q2.** 2 ἀγαπῶμεν τοὺς ἀγαπῶντας ἡμᾶς ἀδελφούς.
-> **A:** Pres · Act · Acc · Pl · Masc · ἀγαπάω · Attributive · 1st pos. · "Let us love the brothers who love us."
+**Q2.** 2 ἀγαπῶντας Aor Perf Pres Act Mid Mid/Pass Pass Acc Dat Gen Nom Pl Sg Fem Masc Neut Attributive Substantival 1st pos. 2nd pos. &#9654;
+> **A:** 2 ἀγαπῶντας Pres Act Acc Pl Masc ἀγαπάω Attributive 1st pos. Let us love the brothers who love us.
 
-**Q3.** 3 εἶδεν τὴν κλαίουσαν γυναῖκα.
-> **A:** Pres · Act · Acc · Sg · Fem · κλαίω · Attributive · 1st pos. · "He saw the weeping woman."
+**Q3.** 3 κλαίουσαν Aor Perf Pres Act Mid Mid/Pass Pass Acc Dat Gen Nom Pl Sg Fem Masc Neut Attributive Substantival 1st pos. 2nd pos. &#9654;
+> **A:** 3 κλαίουσαν Pres Act Acc Sg Fem κλαίω Attributive 1st pos. He saw the weeping woman.

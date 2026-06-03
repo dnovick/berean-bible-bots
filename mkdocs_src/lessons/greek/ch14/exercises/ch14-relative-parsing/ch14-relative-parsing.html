@@ -1,425 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ch14 Relative Pronoun Parsing Drill — BBG</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 1200px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
-  p.instructions { font-style: italic; color: #555; }
-  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.9em; }
-  th { background: #2c5282; color: #fff; padding: 0.45em 0.6em; text-align: left; }
-  td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .greek { font-size: 1.1em; font-family: "New Athena Unicode", "Gentium Plus", "SBL Greek", serif; }
-  input.parse-field {
-    border: none; border-bottom: 1px solid #888; width: 100%; min-width: 55px;
-    background: transparent; font-size: 0.88em; padding: 2px 4px; box-sizing: border-box;
-  }
-  input.parse-field:focus { outline: none; border-bottom: 2px solid #2c5282; }
-  input.wide { min-width: 110px; }
-  .answer-row td { background: #d4edda !important; color: #155724; font-size: 0.88em; }
-  .answer-row { display: none; }
-  .answer-row.visible { display: table-row; }
-  button.reveal-btn {
-    background: #2c5282; color: #fff; border: none; border-radius: 3px;
-    padding: 3px 10px; cursor: pointer; font-size: 0.82em; white-space: nowrap;
-  }
-  button.reveal-btn:hover { background: #1a365d; }
-  .controls { margin: 1em 0 1.5em 0; display: flex; gap: 0.7em; flex-wrap: wrap; }
-  .controls button {
-    background: #4a5568; color: #fff; border: none; border-radius: 4px;
-    padding: 0.5em 1.2em; cursor: pointer; font-size: 0.88em;
-  }
-  .controls button:hover { background: #2d3748; }
-  .note { background: #fffbea; border-left: 4px solid #d69e2e; padding: 0.6em 1em; margin: 1em 0; font-size: 0.9em; }
-  @media print {
-    .controls, button.reveal-btn { display: none !important; }
-    .answer-row { display: none !important; }
-    input.parse-field { border-bottom: 1px solid #000; background: transparent; }
-    body { margin: 1em; }
-  }
-</style>
-</head>
-<body>
-
-
-<h1>BBG Chapter 14 — Relative Pronoun Parsing Drill</h1>
-<p class="instructions">For each item: (1) parse the relative pronoun (gender, case, number), (2) identify its antecedent, and (3) translate the phrase. Click ▶ Answer to check your work.</p>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Phrase / Clause</th>
-      <th>Rel. pron.</th>
-      <th>Gender</th>
-      <th>Case</th>
-      <th>Number</th>
-      <th>Antecedent</th>
-      <th>Translation</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr class="question-row" data-id="1">
-      <td>1</td>
-      <td class="greek">ὁ ἄνθρωπος <strong>ὃν</strong> εἶδον</td>
-      <td class="greek">ὃν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(1)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-1">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Accusative · Singular</strong> | Antecedent: ὁ ἄνθρωπος | "the man <em>whom</em> I saw" — direct object of εἶδον</td>
-    </tr>
-
-    <tr class="question-row" data-id="2">
-      <td>2</td>
-      <td class="greek">ἡ γυνή <strong>ἣν</strong> ἀγαπᾷς</td>
-      <td class="greek">ἣν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(2)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-2">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Accusative · Singular</strong> | Antecedent: ἡ γυνή | "the woman <em>whom</em> you love" — direct object of ἀγαπᾷς</td>
-    </tr>
-
-    <tr class="question-row" data-id="3">
-      <td>3</td>
-      <td class="greek">τὸ τέκνον <strong>ὃ</strong> εἶχεν</td>
-      <td class="greek">ὃ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(3)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-3">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Accusative · Singular</strong> | Antecedent: τὸ τέκνον | "the child <em>that</em> he had" — direct object of εἶχεν</td>
-    </tr>
-
-    <tr class="question-row" data-id="4">
-      <td>4</td>
-      <td class="greek">οἱ μαθηταί <strong>οἳ</strong> ἤκουσαν</td>
-      <td class="greek">οἳ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(4)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-4">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Nominative · Plural</strong> | Antecedent: οἱ μαθηταί | "the disciples <em>who</em> heard" — subject of ἤκουσαν</td>
-    </tr>
-
-    <tr class="question-row" data-id="5">
-      <td>5</td>
-      <td class="greek">ἡ ὥρα <strong>ἐν ᾗ</strong> ἀκούσουσιν</td>
-      <td class="greek">ᾗ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(5)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-5">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Dative · Singular</strong> | Antecedent: ἡ ὥρα | "the hour <em>in which</em> they will hear" — dative object of ἐν (John 5:28)</td>
-    </tr>
-
-    <tr class="question-row" data-id="6">
-      <td>6</td>
-      <td class="greek">ὁ λόγος <strong>οὗ</strong> ἤκουσας</td>
-      <td class="greek">οὗ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(6)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-6">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Genitive · Singular</strong> | Antecedent: ὁ λόγος | "the word <em>that</em> you heard" — genitive of content</td>
-    </tr>
-
-    <tr class="question-row" data-id="7">
-      <td>7</td>
-      <td class="greek">τὰ ἔργα <strong>ἃ</strong> ποιεῖ</td>
-      <td class="greek">ἃ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(7)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-7">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Accusative · Plural</strong> | Antecedent: τὰ ἔργα | "the works <em>that</em> he does" — direct object of ποιεῖ</td>
-    </tr>
-
-    <tr class="question-row" data-id="8">
-      <td>8</td>
-      <td class="greek">ὁ ἄγγελος <strong>ᾧ</strong> ἐλάλησεν</td>
-      <td class="greek">ᾧ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(8)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-8">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Dative · Singular</strong> | Antecedent: ὁ ἄγγελος | "the angel <em>to whom</em> he spoke" — indirect object of ἐλάλησεν</td>
-    </tr>
-
-    <tr class="question-row" data-id="9">
-      <td>9</td>
-      <td class="greek">αἱ γυναῖκες <strong>αἷς</strong> εἶπεν</td>
-      <td class="greek">αἷς</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(9)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-9">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Dative · Plural</strong> | Antecedent: αἱ γυναῖκες | "the women <em>to whom</em> he said (it)" — indirect object of εἶπεν</td>
-    </tr>
-
-    <tr class="question-row" data-id="10">
-      <td>10</td>
-      <td class="greek">ὁ πατήρ <strong>οὗ</strong> ὁ υἱός ἐστιν</td>
-      <td class="greek">οὗ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(10)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-10">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Genitive · Singular</strong> | Antecedent: ὁ πατήρ | "the father <em>whose</em> son he is" — genitive of possession</td>
-    </tr>
-
-    <tr class="question-row" data-id="11">
-      <td>11</td>
-      <td class="greek">τὸ ῥῆμα <strong>ὃ</strong> εἶπεν αὐτοῖς</td>
-      <td class="greek">ὃ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(11)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-11">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Accusative · Singular</strong> | Antecedent: τὸ ῥῆμα | "the word <em>that</em> he said to them" — direct object of εἶπεν</td>
-    </tr>
-
-    <tr class="question-row" data-id="12">
-      <td>12</td>
-      <td class="greek">πᾶς <strong>ὃς</strong> πιστεύει εἰς αὐτόν</td>
-      <td class="greek">ὃς</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(12)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-12">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Nominative · Singular</strong> | Antecedent: πᾶς | "everyone <em>who</em> believes in him" — subject of πιστεύει; indefinite/universal sense</td>
-    </tr>
-
-    <tr class="question-row" data-id="13">
-      <td>13</td>
-      <td class="greek">ἡ βασιλεία <strong>ἧς</strong> οὐκ ἔσται τέλος</td>
-      <td class="greek">ἧς</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(13)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-13">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Genitive · Singular</strong> | Antecedent: ἡ βασιλεία | "the kingdom <em>of which</em> there will be no end" — genitive of relation (Luke 1:33)</td>
-    </tr>
-
-    <tr class="question-row" data-id="14">
-      <td>14</td>
-      <td class="greek">οἱ νόμοι <strong>οἷς</strong> πιστεύετε</td>
-      <td class="greek">οἷς</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(14)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-14">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Dative · Plural</strong> | Antecedent: οἱ νόμοι | "the laws <em>in which</em> / <em>that</em> you believe" — dative with πιστεύετε</td>
-    </tr>
-
-    <tr class="question-row" data-id="15">
-      <td>15</td>
-      <td class="greek">τὰ τέκνα <strong>ὧν</strong> ὁ πατήρ ἐστιν</td>
-      <td class="greek">ὧν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(15)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-15">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Genitive · Plural</strong> | Antecedent: τὰ τέκνα | "the children <em>whose</em> father he is" — genitive of possession</td>
-    </tr>
-
-    <tr class="question-row" data-id="16">
-      <td>16</td>
-      <td class="greek">ὁ τόπος <strong>εἰς ὃν</strong> πορεύεται</td>
-      <td class="greek">ὃν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(16)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-16">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Accusative · Singular</strong> | Antecedent: ὁ τόπος | "the place <em>to which</em> he is going" — object of εἰς</td>
-    </tr>
-
-    <tr class="question-row" data-id="17">
-      <td>17</td>
-      <td class="greek">ἡ ἡμέρα <strong>ἐν ᾗ</strong> ἦλθεν</td>
-      <td class="greek">ᾗ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(17)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-17">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Dative · Singular</strong> | Antecedent: ἡ ἡμέρα | "the day <em>on which</em> he came" — dative of time with ἐν</td>
-    </tr>
-
-    <tr class="question-row" data-id="18">
-      <td>18</td>
-      <td class="greek">οἱ ἄνθρωποι <strong>οὓς</strong> ἀπέστειλεν</td>
-      <td class="greek">οὓς</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(18)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-18">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Accusative · Plural</strong> | Antecedent: οἱ ἄνθρωποι | "the men <em>whom</em> he sent" — direct object of ἀπέστειλεν</td>
-    </tr>
-
-    <tr class="question-row" data-id="19">
-      <td>19</td>
-      <td class="greek"><strong>ὃ</strong> ποιεῖς, ποίησον τάχιον</td>
-      <td class="greek">ὃ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(19)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-19">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Accusative · Singular</strong> | Antecedent: none (noun clause) | "<em>What</em> you are doing, do quickly" — noun clause as object; John 13:27</td>
-    </tr>
-
-    <tr class="question-row" data-id="20">
-      <td>20</td>
-      <td class="greek">ἡ ἀλήθεια <strong>ἣν</strong> ἀκούετε</td>
-      <td class="greek">ἣν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="antecedent"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(20)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-20">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Accusative · Singular</strong> | Antecedent: ἡ ἀλήθεια | "the truth <em>that</em> you hear" — direct object of ἀκούετε</td>
-    </tr>
-
-  </tbody>
-</table>
-
-<div class="note">
-  <strong>Key Rule:</strong> The relative pronoun agrees with its <strong>antecedent in gender and number</strong>. Its <strong>case</strong> is determined by its function inside the relative clause — not by the case of the antecedent.
-</div>
-
-<script>
-function toggle(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] button.reveal-btn');
-  if (row.classList.contains('visible')) {
-    row.classList.remove('visible');
-    if (btn) btn.textContent = '▶ Answer';
-  } else {
-    row.classList.add('visible');
-    if (btn) btn.textContent = '▼ Hide';
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 14 — Relative Pronoun Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 14 — Relative Pronoun Parsing Drill</h1><p class="subtitle">BBG Chapter 14 · Relative Pronoun</p><div class="instructions">For each item: (1) Gender, (2) Case, (3) Number of the relative pronoun; (4) identify its Antecedent; (5) translate the clause. Remember: gender/number from antecedent; case from function in relative clause.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Drill Table</h2><table><thead><tr><th>#</th><th>Phrase/Clause</th><th>Gender</th><th>Case</th><th>Number</th><th>Antecedent</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">ὁ ἄνθρωπος ὃν εἶδον</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">ὁ ἄνθρωπος ὃν εἶδον</td><td><strong>M</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>ὁ ἄνθρωπος</strong></td><td><strong>"the man whom I saw"</strong></td><td></td></tr><tr><td>2</td><td class="greek">ἡ γυνή ἣν ἀγαπᾷς</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">ἡ γυνή ἣν ἀγαπᾷς</td><td><strong>F</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>ἡ γυνή</strong></td><td><strong>"the woman whom you love"</strong></td><td></td></tr><tr><td>3</td><td class="greek">τὸ τέκνον ὃ εἶχεν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">τὸ τέκνον ὃ εἶχεν</td><td><strong>N</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>τὸ τέκνον</strong></td><td><strong>"the child that he had"</strong></td><td></td></tr><tr><td>4</td><td class="greek">οἱ μαθηταί οἳ ἤκουσαν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">οἱ μαθηταί οἳ ἤκουσαν</td><td><strong>M</strong></td><td><strong>N</strong></td><td><strong>P</strong></td><td><strong>οἱ μαθηταί</strong></td><td><strong>"the disciples who heard"</strong></td><td></td></tr><tr><td>5</td><td class="greek">ἡ ὥρα ἐν ᾗ ἀκούσουσιν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">ἡ ὥρα ἐν ᾗ ἀκούσουσιν</td><td><strong>F</strong></td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>ἡ ὥρα</strong></td><td><strong>"the hour in which they will hear"</strong></td><td></td></tr><tr><td>6</td><td class="greek">ὁ λόγος οὗ ἤκουσας</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">ὁ λόγος οὗ ἤκουσας</td><td><strong>M</strong></td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>ὁ λόγος</strong></td><td><strong>"the word of which you heard"</strong></td><td></td></tr><tr><td>7</td><td class="greek">τὰ ἔργα ἃ ποιεῖ</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">τὰ ἔργα ἃ ποιεῖ</td><td><strong>N</strong></td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>τὰ ἔργα</strong></td><td><strong>"the works that he does"</strong></td><td></td></tr><tr><td>8</td><td class="greek">ὁ ἄγγελος ᾧ ἐλάλησεν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">ὁ ἄγγελος ᾧ ἐλάλησεν</td><td><strong>M</strong></td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>ὁ ἄγγελος</strong></td><td><strong>"the angel to whom he spoke"</strong></td><td></td></tr><tr><td>9</td><td class="greek">αἱ γυναῖκες αἷς εἶπεν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">αἱ γυναῖκες αἷς εἶπεν</td><td><strong>F</strong></td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>αἱ γυναῖκες</strong></td><td><strong>"the women to whom he said"</strong></td><td></td></tr><tr><td>10</td><td class="greek">ὁ πατήρ οὗ ὁ υἱός ἐστιν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">ὁ πατήρ οὗ ὁ υἱός ἐστιν</td><td><strong>M</strong></td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>ὁ πατήρ</strong></td><td><strong>"the father whose son he is"</strong></td><td></td></tr><tr><td>11</td><td class="greek">τὸ ῥῆμα ὃ εἶπεν αὐτοῖς</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">τὸ ῥῆμα ὃ εἶπεν αὐτοῖς</td><td><strong>N</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>τὸ ῥῆμα</strong></td><td><strong>"the word that he said to them"</strong></td><td></td></tr><tr><td>12</td><td class="greek">πᾶς ὃς πιστεύει εἰς αὐτόν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">πᾶς ὃς πιστεύει εἰς αὐτόν</td><td><strong>M</strong></td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>πᾶς</strong></td><td><strong>"everyone who believes in him"</strong></td><td></td></tr><tr><td>13</td><td class="greek">ἡ βασιλεία ἧς οὐκ ἔσται τέλος</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">ἡ βασιλεία ἧς οὐκ ἔσται τέλος</td><td><strong>F</strong></td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>ἡ βασιλεία</strong></td><td><strong>"the kingdom of which there is no end"</strong></td><td></td></tr><tr><td>14</td><td class="greek">οἱ νόμοι οἷς πιστεύετε</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">οἱ νόμοι οἷς πιστεύετε</td><td><strong>M</strong></td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>οἱ νόμοι</strong></td><td><strong>"the laws in which you believe"</strong></td><td></td></tr><tr><td>15</td><td class="greek">τὰ τέκνα ὧν ὁ πατήρ ἐστιν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">τὰ τέκνα ὧν ὁ πατήρ ἐστιν</td><td><strong>N</strong></td><td><strong>G</strong></td><td><strong>P</strong></td><td><strong>τὰ τέκνα</strong></td><td><strong>"the children whose father he is"</strong></td><td></td></tr><tr><td>16</td><td class="greek">ὁ τόπος εἰς ὃν πορεύεται</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">ὁ τόπος εἰς ὃν πορεύεται</td><td><strong>M</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>ὁ τόπος</strong></td><td><strong>"the place to which he is going"</strong></td><td></td></tr><tr><td>17</td><td class="greek">ἡ ἡμέρα ἐν ᾗ ἦλθεν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">ἡ ἡμέρα ἐν ᾗ ἦλθεν</td><td><strong>F</strong></td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>ἡ ἡμέρα</strong></td><td><strong>"the day on which he came"</strong></td><td></td></tr><tr><td>18</td><td class="greek">οἱ ἄνθρωποι οὓς ἀπέστειλεν</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">οἱ ἄνθρωποι οὓς ἀπέστειλεν</td><td><strong>M</strong></td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>οἱ ἄνθρωποι</strong></td><td><strong>"the men whom he sent"</strong></td><td></td></tr><tr><td>19</td><td class="greek">ὃ ποιεῖς, ποίησον τάχιον</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">ὃ ποιεῖς, ποίησον τάχιον</td><td><strong>N</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>(none)</strong></td><td><strong>"What you do, do quickly" (John 13:27)</strong></td><td></td></tr><tr><td>20</td><td class="greek">ἡ ἀλήθεια ἣν ἀκούετε</td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">ἡ ἀλήθεια ἣν ἀκούετε</td><td><strong>F</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>ἡ ἀλήθεια</strong></td><td><strong>"the truth that you hear"</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.add('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.remove('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

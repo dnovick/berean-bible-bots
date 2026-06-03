@@ -1,136 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Ch23 — First Aorist Parsing Drill</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; }
-  p.subtitle { color: #555; font-style: italic; }
-  .note { background: #fff3cd; border-left: 4px solid #ffc107; padding: 0.5em 0.8em; margin: 0.8em 0; font-size: 0.9em; }
-  .controls { margin: 1em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
-  .controls button { padding: 0.4em 1em; font-size: 0.9em; cursor: pointer; border: 1px solid #888; border-radius: 4px; background: #f5f5f5; }
-  .controls button:hover { background: #e0e0e0; }
-  table { border-collapse: collapse; width: 100%; font-size: 0.88em; }
-  th { background: #3a5a8a; color: #fff; padding: 0.5em 0.4em; text-align: left; }
-  td { border: 1px solid #ccc; padding: 0.35em 0.4em; vertical-align: middle; }
-  tr:nth-child(even) td { background: #f8f8f8; }
-  .greek { font-size: 1.1em; font-weight: bold; }
-  input.parse-field {
-    width: 100%;
-    min-width: 70px;
-    border: none;
-    border-bottom: 1px solid #999;
-    background: transparent;
-    font-size: 0.88em;
-    padding: 1px 2px;
-    box-sizing: border-box;
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 23 — First Aorist Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 23 — First Aorist Parsing Drill</h1><p class="subtitle">BBG Chapter 23 · First Aorist Active and Middle Indicative</p><div class="instructions">Provide: Tense (1st Aor / 2nd Aor) · Voice · Person · Number · Lexical Form · Translation. Items 11 and 20 are second aorist distractors.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Parsing Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Tense</th><th>Voice</th><th>Person</th><th>Number</th><th>Lexical Form</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">ἔλυσα</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">ἔλυσα</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>I loosed</strong></td><td></td></tr><tr><td>2</td><td class="greek">ἔλυσας</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">ἔλυσας</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>You loosed</strong></td><td></td></tr><tr><td>3</td><td class="greek">ἔλυσεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">ἔλυσεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>He/she loosed</strong></td><td></td></tr><tr><td>4</td><td class="greek">ἐλύσαμεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">ἐλύσαμεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>We loosed</strong></td><td></td></tr><tr><td>5</td><td class="greek">ἐλύσατε</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">ἐλύσατε</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>You (pl) loosed</strong></td><td></td></tr><tr><td>6</td><td class="greek">ἔλυσαν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">ἔλυσαν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>They loosed</strong></td><td></td></tr><tr><td>7</td><td class="greek">ἐπίστευσεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">ἐπίστευσεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>πιστεύω</strong></td><td><strong>He/she believed</strong></td><td></td></tr><tr><td>8</td><td class="greek">ἔγραψα</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">ἔγραψα</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>γράφω</strong></td><td><strong>I wrote (φ+σ→ψ)</strong></td><td></td></tr><tr><td>9</td><td class="greek">ἐκήρυξεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">ἐκήρυξεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>κηρύσσω</strong></td><td><strong>He proclaimed (κ+σ→ξ)</strong></td><td></td></tr><tr><td>10</td><td class="greek">ἔσωσεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">ἔσωσεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>σῴζω</strong></td><td><strong>He saved (δ+σ→σ)</strong></td><td></td></tr><tr><td>11</td><td class="greek">ἔβαλεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">ἔβαλεν</td><td><strong>Aor 2nd</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>βάλλω</strong></td><td><strong>DISTRACTOR — 2nd aorist (no σ)</strong></td><td></td></tr><tr><td>12</td><td class="greek">ἔμεινα</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ἔμεινα</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>μένω</strong></td><td><strong>I remained (liquid: ε→ει)</strong></td><td></td></tr><tr><td>13</td><td class="greek">ἤγειρεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">ἤγειρεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἐγείρω</strong></td><td><strong>He raised (liquid aorist)</strong></td><td></td></tr><tr><td>14</td><td class="greek">ἀπέστειλεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">ἀπέστειλεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἀποστέλλω</strong></td><td><strong>He sent (liquid: λλ→λ)</strong></td><td></td></tr><tr><td>15</td><td class="greek">ἠγάπησεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">ἠγάπησεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>He loved (contract α→η)</strong></td><td></td></tr><tr><td>16</td><td class="greek">ἐποίησεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">ἐποίησεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ποιέω</strong></td><td><strong>He did/made (contract ε→η)</strong></td><td></td></tr><tr><td>17</td><td class="greek">ἐπλήρωσεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">ἐπλήρωσεν</td><td><strong>Aor 1st</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>πληρόω</strong></td><td><strong>He fulfilled (contract ο→ω)</strong></td><td></td></tr><tr><td>18</td><td class="greek">ἐλυσάμην</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">ἐλυσάμην</td><td><strong>Aor 1st</strong></td><td><strong>Mid</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>I loosed for myself</strong></td><td></td></tr><tr><td>19</td><td class="greek">ἐλύσατο</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">ἐλύσατο</td><td><strong>Aor 1st</strong></td><td><strong>Mid</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>He loosed for himself</strong></td><td></td></tr><tr><td>20</td><td class="greek">ἦλθεν</td><td><select class="pf"><option value=""></option><option value="Aor 1st">Aor 1st</option><option value="Aor 2nd">Aor 2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">ἦλθεν</td><td><strong>Aor 2nd</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἔρχομαι</strong></td><td><strong>DISTRACTOR — suppletive 2nd aorist</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
-  input.parse-field:focus { outline: none; border-bottom-color: #3a5a8a; }
-  .btn-answer { padding: 0.2em 0.5em; font-size: 0.78em; cursor: pointer; border: 1px solid #aaa; border-radius: 3px; background: #fff; white-space: nowrap; }
-  .btn-answer:hover { background: #f0f0f0; }
-  tr.answer-row td { background: #d4edda !important; font-size: 0.85em; color: #155724; }
-  tr.answer-row { display: none; }
-  tr.answer-row.visible { display: table-row; }
-  tr.distractor td { background: #fff8e1 !important; }
-  .num-col { width: 2.5em; text-align: center; }
-  .form-col { width: 9em; }
-  @media print {
-    .controls, .btn-answer { display: none !important; }
-    input.parse-field { border-bottom: 1px solid #555; background: transparent; }
-    tr.answer-row { display: none !important; }
-  }
-</style>
-</head>
-<body>
-
-<h1>Ch23 — First Aorist Parsing Drill</h1>
-<p class="subtitle">BBG Chapter 23 · Mounce 4th Edition — Parse each form: Tense · Voice · Mood · Person · Number · Lexical Form · Translation</p>
-<div class="note">&#9888; Items 11 and 20 are <strong>second aorist distractors</strong> — identify them by the absence of σ and/or a different stem.</div>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-<thead>
-  <tr>
-    <th class="num-col">#</th>
-    <th class="form-col">Form</th>
-    <th>Tense</th>
-    <th>Voice</th>
-    <th>Mood</th>
-    <th>Person</th>
-    <th>Number</th>
-    <th>Lexical Form</th>
-    <th>Translation</th>
-    <th></th>
-  </tr>
-</thead>
-<tbody id="drillBody">
-</tbody>
-</table>
-
-<script>
-const items = [
-  { num:1,  form:"ἔλυσα",       tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"1st", number:"Singular", lexical:"λύω",         trans:"I loosed",                          distractor:false },
-  { num:2,  form:"ἔλυσας",      tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"2nd", number:"Singular", lexical:"λύω",         trans:"You loosed",                        distractor:false },
-  { num:3,  form:"ἔλυσεν",      tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",         trans:"He/she/it loosed",                  distractor:false },
-  { num:4,  form:"ἐλύσαμεν",    tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"1st", number:"Plural",   lexical:"λύω",         trans:"We loosed",                         distractor:false },
-  { num:5,  form:"ἐλύσατε",     tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"2nd", number:"Plural",   lexical:"λύω",         trans:"You (pl) loosed",                   distractor:false },
-  { num:6,  form:"ἔλυσαν",      tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Plural",   lexical:"λύω",         trans:"They loosed",                       distractor:false },
-  { num:7,  form:"ἐπίστευσεν",  tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"πιστεύω",     trans:"He/she believed",                   distractor:false },
-  { num:8,  form:"ἔγραψα",      tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"1st", number:"Singular", lexical:"γράφω",       trans:"I wrote (φ+σ→ψ)",                   distractor:false },
-  { num:9,  form:"ἐκήρυξεν",    tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"κηρύσσω",     trans:"He proclaimed (κ+σ→ξ)",             distractor:false },
-  { num:10, form:"ἔσωσεν",      tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"σῴζω",        trans:"He/she saved (δ+σ→σ)",              distractor:false },
-  { num:11, form:"ἔβαλεν",      tense:"Aorist 2nd",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"βάλλω",       trans:"He threw (2nd aor. distractor)",     distractor:true  },
-  { num:12, form:"ἔμεινα",      tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"1st", number:"Singular", lexical:"μένω",        trans:"I remained (liquid: ε→ει)",         distractor:false },
-  { num:13, form:"ἤγειρεν",     tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἐγείρω",      trans:"He/she raised (liquid aorist)",     distractor:false },
-  { num:14, form:"ἀπέστειλεν",  tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἀποστέλλω",  trans:"He sent (liquid: ε→ει; λλ→λ)",     distractor:false },
-  { num:15, form:"ἠγάπησεν",    tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἀγαπάω",      trans:"He loved (contract α→η)",           distractor:false },
-  { num:16, form:"ἐποίησεν",    tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ποιέω",       trans:"He did/made (contract ε→η)",        distractor:false },
-  { num:17, form:"ἐπλήρωσεν",   tense:"Aorist 1st",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"πληρόω",      trans:"He fulfilled (contract ο→ω)",       distractor:false },
-  { num:18, form:"ἐλυσάμην",    tense:"Aorist 1st",  voice:"Middle",  mood:"Indicative", person:"1st", number:"Singular", lexical:"λύω",         trans:"I loosed for myself",               distractor:false },
-  { num:19, form:"ἐλύσατο",     tense:"Aorist 1st",  voice:"Middle",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",         trans:"He loosed for himself",             distractor:false },
-  { num:20, form:"ἦλθεν",       tense:"Aorist 2nd",  voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἔρχομαι",     trans:"He came (2nd aor. distractor)",      distractor:true  },
-];
-
-const fieldKeys = ["tense","voice","mood","person","number","lexical","trans"];
-
-function buildTable() {
-  const tbody = document.getElementById("drillBody");
-  items.forEach(item => {
-    const inputRow = document.createElement("tr");
-    inputRow.id = "row-" + item.num;
-    if (item.distractor) inputRow.className = "distractor";
-    let cells = `<td class="num-col">${item.num}</td><td class="form-col greek">${item.form}</td>`;
-    fieldKeys.forEach(f => {
-      cells += `<td><input class="parse-field" type="text" aria-label="${f}"></td>`;
-    });
-    cells += `<td><button class="btn-answer" onclick="toggleAnswer(${item.num})">&#9658; Answer</button></td>`;
-    inputRow.innerHTML = cells;
-    tbody.appendChild(inputRow);
-
-    const ansRow = document.createElement("tr");
-    ansRow.id = "ans-" + item.num;
-    ansRow.className = "answer-row";
-    let ansCells = `<td class="num-col"></td><td class="form-col greek">${item.form}</td>`;
-    ansCells += `<td>${item.tense}</td><td>${item.voice}</td><td>${item.mood}</td>`;
-    ansCells += `<td>${item.person}</td><td>${item.number}</td>`;
-    ansCells += `<td>${item.lexical}</td><td>${item.trans}</td><td></td>`;
-    ansRow.innerHTML = ansCells;
-    tbody.appendChild(ansRow);
+}
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
+}
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
+}
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
   });
 }
-
-function toggleAnswer(num) { document.getElementById("ans-" + num).classList.toggle("visible"); }
-function showAll() { document.querySelectorAll(".answer-row").forEach(r => r.classList.add("visible")); }
-function hideAll() { document.querySelectorAll(".answer-row").forEach(r => r.classList.remove("visible")); }
-function clearAll() { document.querySelectorAll("input.parse-field").forEach(i => i.value = ""); }
-
-buildTable();
-</script>
-</body>
-</html>
+</script></body></html>

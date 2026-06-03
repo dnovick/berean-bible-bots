@@ -1,424 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ch13 Demonstrative Parsing Drill — BBG</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
-  p.instructions { font-style: italic; color: #555; }
-  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.92em; }
-  th { background: #2c5282; color: #fff; padding: 0.45em 0.6em; text-align: left; }
-  td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .greek { font-size: 1.1em; font-family: "New Athena Unicode", "Gentium Plus", "SBL Greek", serif; }
-  input.parse-field {
-    border: none; border-bottom: 1px solid #888; width: 100%; min-width: 60px;
-    background: transparent; font-size: 0.9em; padding: 2px 4px; box-sizing: border-box;
-  }
-  input.parse-field:focus { outline: none; border-bottom: 2px solid #2c5282; }
-  .answer-row td { background: #d4edda !important; color: #155724; font-size: 0.88em; }
-  .answer-row { display: none; }
-  .answer-row.visible { display: table-row; }
-  button.reveal-btn {
-    background: #2c5282; color: #fff; border: none; border-radius: 3px;
-    padding: 3px 10px; cursor: pointer; font-size: 0.82em; white-space: nowrap;
-  }
-  button.reveal-btn:hover { background: #1a365d; }
-  .controls { margin: 1em 0 1.5em 0; display: flex; gap: 0.7em; flex-wrap: wrap; }
-  .controls button {
-    background: #4a5568; color: #fff; border: none; border-radius: 4px;
-    padding: 0.5em 1.2em; cursor: pointer; font-size: 0.88em;
-  }
-  .controls button:hover { background: #2d3748; }
-  .note { background: #fffbea; border-left: 4px solid #d69e2e; padding: 0.6em 1em; margin: 1em 0; font-size: 0.9em; }
-  @media print {
-    .controls, button.reveal-btn { display: none !important; }
-    .answer-row { display: none !important; }
-    input.parse-field { border-bottom: 1px solid #000; background: transparent; }
-    body { margin: 1em; }
-  }
-</style>
-</head>
-<body>
-
-
-<h1>BBG Chapter 13 — Demonstrative Parsing Drill</h1>
-<p class="instructions">For each item: (1) parse the demonstrative (gender, case, number, lexical form) and (2) identify its use as <strong>A</strong> (adjective, predicate position) or <strong>P</strong> (pronoun, substantival). Click ▶ Answer to check your work.</p>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Form</th>
-      <th>Context phrase</th>
-      <th>Gender</th>
-      <th>Case</th>
-      <th>Number</th>
-      <th>Lexical form</th>
-      <th>Use (A/P)</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr class="question-row" data-id="1">
-      <td>1</td>
-      <td class="greek">οὗτος</td>
-      <td class="greek">οὗτος ὁ ἄνθρωπος</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(1)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-1">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Nominative · Singular · οὗτος · A</strong> — Predicate position: demonstrative + article + noun</td>
-    </tr>
-
-    <tr class="question-row" data-id="2">
-      <td>2</td>
-      <td class="greek">τοῦτο</td>
-      <td class="greek">λέγω ὑμῖν τοῦτο</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(2)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-2">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Accusative · Singular · οὗτος · P</strong> — Stands alone as direct object; "this thing"</td>
-    </tr>
-
-    <tr class="question-row" data-id="3">
-      <td>3</td>
-      <td class="greek">ταύτης</td>
-      <td class="greek">ἐκ τῆς γενεᾶς ταύτης</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(3)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-3">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Genitive · Singular · οὗτος · A</strong> — Post-positive predicate position: article + noun + demonstrative</td>
-    </tr>
-
-    <tr class="question-row" data-id="4">
-      <td>4</td>
-      <td class="greek">τούτους</td>
-      <td class="greek">τοὺς νόμους τούτους</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(4)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-4">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Accusative · Plural · οὗτος · A</strong> — Post-positive predicate position: article + noun + demonstrative</td>
-    </tr>
-
-    <tr class="question-row" data-id="5">
-      <td>5</td>
-      <td class="greek">αὕτη</td>
-      <td class="greek">αὕτη ἐστὶν ἡ ἐντολή</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(5)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-5">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Nominative · Singular · οὗτος · P</strong> — Subject pronoun in predicate nominative construction; "This is the commandment"</td>
-    </tr>
-
-    <tr class="question-row" data-id="6">
-      <td>6</td>
-      <td class="greek">ταῦτα</td>
-      <td class="greek">ταῦτα εἶπεν Ἰησοῦς</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(6)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-6">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Accusative · Plural · οὗτος · P</strong> — Direct object pronoun; "these things"</td>
-    </tr>
-
-    <tr class="question-row" data-id="7">
-      <td>7</td>
-      <td class="greek">τούτῳ</td>
-      <td class="greek">ἐν τούτῳ τῷ τόπῳ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(7)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-7">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Dative · Singular · οὗτος · A</strong> — Predicate position: demonstrative + article + noun</td>
-    </tr>
-
-    <tr class="question-row" data-id="8">
-      <td>8</td>
-      <td class="greek">τούτων</td>
-      <td class="greek">ἡ ἀρχὴ τούτων</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(8)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-8">
-      <td></td>
-      <td colspan="8"><strong>Masc./Neut. · Genitive · Plural · οὗτος · P</strong> — Genitive of the whole; pronoun standing alone; "of these things/ones"</td>
-    </tr>
-
-    <tr class="question-row" data-id="9">
-      <td>9</td>
-      <td class="greek">αὗται</td>
-      <td class="greek">αὗται αἱ γυναῖκες</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(9)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-9">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Nominative · Plural · οὗτος · A</strong> — Predicate position: demonstrative + article + noun</td>
-    </tr>
-
-    <tr class="question-row" data-id="10">
-      <td>10</td>
-      <td class="greek">τοῦτον</td>
-      <td class="greek">τοῦτον τὸν ἄνδρα εἶδον</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(10)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-10">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Accusative · Singular · οὗτος · A</strong> — Predicate position: demonstrative + article + noun</td>
-    </tr>
-
-    <tr class="question-row" data-id="11">
-      <td>11</td>
-      <td class="greek">ἐκεῖνος</td>
-      <td class="greek">ἐκεῖνος ὑμᾶς διδάξει</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(11)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-11">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Nominative · Singular · ἐκεῖνος · P</strong> — Subject pronoun; "that one (the Holy Spirit) will teach you" (John 14:26)</td>
-    </tr>
-
-    <tr class="question-row" data-id="12">
-      <td>12</td>
-      <td class="greek">ἐκείνην</td>
-      <td class="greek">ἐν ἐκείνῃ τῇ ὥρᾳ / ἐκείνην τὴν ἡμέραν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(12)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-12">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Accusative · Singular · ἐκεῖνος · A</strong> — Predicate position modifying ἡμέραν; "that day"</td>
-    </tr>
-
-    <tr class="question-row" data-id="13">
-      <td>13</td>
-      <td class="greek">ἐκεῖνο</td>
-      <td class="greek">ἐκεῖνο τὸ ἔργον ἦν καλόν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(13)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-13">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Nominative · Singular · ἐκεῖνος · A</strong> — Predicate position: demonstrative + article + noun; "That work was good"</td>
-    </tr>
-
-    <tr class="question-row" data-id="14">
-      <td>14</td>
-      <td class="greek">ἐκείνης</td>
-      <td class="greek">ἡ βασιλεία ἐκείνης</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(14)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-14">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Genitive · Singular · ἐκεῖνος · A</strong> — Post-positive predicate position: article + noun + demonstrative</td>
-    </tr>
-
-    <tr class="question-row" data-id="15">
-      <td>15</td>
-      <td class="greek">ἐκεῖνοι</td>
-      <td class="greek">ἐκεῖνοι οἱ μαθηταί</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(15)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-15">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Nominative · Plural · ἐκεῖνος · A</strong> — Predicate position: demonstrative + article + noun; "those disciples"</td>
-    </tr>
-
-    <tr class="question-row" data-id="16">
-      <td>16</td>
-      <td class="greek">ἐκείνων</td>
-      <td class="greek">ἀπὸ τῶν ἡμερῶν ἐκείνων</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(16)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-16">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Genitive · Plural · ἐκεῖνος · A</strong> — Post-positive predicate position: article + noun + demonstrative; "from those days"</td>
-    </tr>
-
-    <tr class="question-row" data-id="17">
-      <td>17</td>
-      <td class="greek">ἐκεῖνα</td>
-      <td class="greek">ἐκεῖνα ἤκουσαν</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(17)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-17">
-      <td></td>
-      <td colspan="8"><strong>Neuter · Accusative · Plural · ἐκεῖνος · P</strong> — Stands alone as direct object; "those things"</td>
-    </tr>
-
-    <tr class="question-row" data-id="18">
-      <td>18</td>
-      <td class="greek">ἐκείνῃ</td>
-      <td class="greek">ἐν ἐκείνῃ τῇ ἡμέρᾳ</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(18)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-18">
-      <td></td>
-      <td colspan="8"><strong>Feminine · Dative · Singular · ἐκεῖνος · A</strong> — Predicate position: demonstrative + article + noun; "in that day"</td>
-    </tr>
-
-    <tr class="question-row" data-id="19">
-      <td>19</td>
-      <td class="greek">τούτοις</td>
-      <td class="greek">τοῖς νόμοις τούτοις</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(19)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-19">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Dative · Plural · οὗτος · A</strong> — Post-positive predicate position: article + noun + demonstrative; "to these laws"</td>
-    </tr>
-
-    <tr class="question-row" data-id="20">
-      <td>20</td>
-      <td class="greek">ἐκείνοις</td>
-      <td class="greek">ἐκείνοις τοῖς ἀνθρώποις</td>
-      <td><input class="parse-field" type="text" placeholder="gender"></td>
-      <td><input class="parse-field" type="text" placeholder="case"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field" type="text" placeholder="A or P"></td>
-      <td><button class="reveal-btn" onclick="toggle(20)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-20">
-      <td></td>
-      <td colspan="8"><strong>Masculine · Dative · Plural · ἐκεῖνος · A</strong> — Predicate position: demonstrative + article + noun; "to those men"</td>
-    </tr>
-
-  </tbody>
-</table>
-
-<div class="note">
-  <strong>Reminder:</strong> A demonstrative functioning as an <strong>adjective</strong> always appears in <strong>predicate position</strong> — either before or after the article-noun group, never sandwiched between them. A demonstrative functioning as a <strong>pronoun</strong> stands alone without a noun it directly modifies.
-</div>
-
-<script>
-function toggle(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] button.reveal-btn');
-  if (row.classList.contains('visible')) {
-    row.classList.remove('visible');
-    if (btn) btn.textContent = '▶ Answer';
-  } else {
-    row.classList.add('visible');
-    if (btn) btn.textContent = '▼ Hide';
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 13 — Demonstrative Pronoun Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 13 — Demonstrative Pronoun Parsing Drill</h1><p class="subtitle">BBG Chapter 13 · Demonstrative Pronouns/Adjectives</p><div class="instructions">For each item: (1) parse the demonstrative — Gender, Case, Number, Lexical form; (2) identify use as Adjective (A) or Pronoun (P).</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Drill Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Context phrase</th><th>Gender</th><th>Case</th><th>Number</th><th>Lexical</th><th>Use</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">οὗτος</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">οὗτος</td><td style="direction:rtl;unicode-bidi:embed;"><strong>οὗτος ὁ ἄνθρωπος</strong></td><td><strong>M</strong></td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>οὗτος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>2</td><td class="greek">τοῦτο</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">τοῦτο</td><td style="direction:rtl;unicode-bidi:embed;"><strong>λέγω ὑμῖν τοῦτο</strong></td><td><strong>N</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>οὗτος</strong></td><td><strong>P</strong></td><td></td></tr><tr><td>3</td><td class="greek">ταύτης</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">ταύτης</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐκ τῆς γενεᾶς ταύτης</strong></td><td><strong>F</strong></td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>οὗτος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>4</td><td class="greek">τούτους</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">τούτους</td><td style="direction:rtl;unicode-bidi:embed;"><strong>τοὺς νόμους τούτους</strong></td><td><strong>M</strong></td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>οὗτος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>5</td><td class="greek">αὕτη</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">αὕτη</td><td style="direction:rtl;unicode-bidi:embed;"><strong>αὕτη ἐστὶν ἡ ἐντολή</strong></td><td><strong>F</strong></td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>οὗτος</strong></td><td><strong>P</strong></td><td></td></tr><tr><td>6</td><td class="greek">ταῦτα</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">ταῦτα</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ταῦτα εἶπεν Ἰησοῦς</strong></td><td><strong>N</strong></td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>οὗτος</strong></td><td><strong>P</strong></td><td></td></tr><tr><td>7</td><td class="greek">τούτῳ</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">τούτῳ</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐν τούτῳ τῷ τόπῳ</strong></td><td><strong>M</strong></td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>οὗτος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>8</td><td class="greek">τούτων</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">τούτων</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἡ ἀρχὴ τούτων</strong></td><td><strong>M/N</strong></td><td><strong>G</strong></td><td><strong>P</strong></td><td><strong>οὗτος</strong></td><td><strong>P</strong></td><td></td></tr><tr><td>9</td><td class="greek">αὗται</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">αὗται</td><td style="direction:rtl;unicode-bidi:embed;"><strong>αὗται αἱ γυναῖκες</strong></td><td><strong>F</strong></td><td><strong>N</strong></td><td><strong>P</strong></td><td><strong>οὗτος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>10</td><td class="greek">τοῦτον</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">τοῦτον</td><td style="direction:rtl;unicode-bidi:embed;"><strong>τοῦτον τὸν ἄνδρα εἶδον</strong></td><td><strong>M</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>οὗτος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>11</td><td class="greek">ἐκεῖνος</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">ἐκεῖνος</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐκεῖνος ὑμᾶς διδάξει</strong></td><td><strong>M</strong></td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>P</strong></td><td></td></tr><tr><td>12</td><td class="greek">ἐκείνην</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ἐκείνην</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐν ἐκείνῃ τῇ ὥρᾳ</strong></td><td><strong>F</strong></td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>13</td><td class="greek">ἐκεῖνο</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">ἐκεῖνο</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐκεῖνο τὸ ἔργον ἦν καλόν</strong></td><td><strong>N</strong></td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>14</td><td class="greek">ἐκείνης</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">ἐκείνης</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἡ βασιλεία ἐκείνης</strong></td><td><strong>F</strong></td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>15</td><td class="greek">ἐκεῖνοι</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">ἐκεῖνοι</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐκεῖνοι οἱ μαθηταί</strong></td><td><strong>M</strong></td><td><strong>N</strong></td><td><strong>P</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>16</td><td class="greek">ἐκείνων</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">ἐκείνων</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἀπὸ τῶν ἡμερῶν ἐκείνων</strong></td><td><strong>M/N</strong></td><td><strong>G</strong></td><td><strong>P</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>17</td><td class="greek">ἐκεῖνα</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">ἐκεῖνα</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐκεῖνα ἤκουσαν</strong></td><td><strong>N</strong></td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>P</strong></td><td></td></tr><tr><td>18</td><td class="greek">ἐκείνῃ</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">ἐκείνῃ</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐν ἐκείνῃ τῇ ἡμέρᾳ</strong></td><td><strong>F</strong></td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>19</td><td class="greek">τούτοις</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">τούτοις</td><td style="direction:rtl;unicode-bidi:embed;"><strong>τοῖς νόμοις τούτοις</strong></td><td><strong>M/N</strong></td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>οὗτος</strong></td><td><strong>A</strong></td><td></td></tr><tr><td>20</td><td class="greek">ἐκείνοις</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="M/N">M/N</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="P">P</option></select></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">ἐκείνοις</td><td style="direction:rtl;unicode-bidi:embed;"><strong>ἐκείνοις τοῖς ἀνθρώποις</strong></td><td><strong>M/N</strong></td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>ἐκεῖνος</strong></td><td><strong>A</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.add('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.remove('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>
