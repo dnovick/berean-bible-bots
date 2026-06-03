@@ -38,6 +38,7 @@ Strong Hiphil perfect 3ms: הִקְטִיל. Geminate Hiphil perfect 3ms: **הֵ
 | 2ms | הִקְטַלְתָּ | הֲסִבּוֹתָ | הֲשִׁלּוֹתָ |
 | 2fs | הִקְטַלְתְּ | הֲסִבּוֹת | הֲשִׁלּוֹת |
 | 2mp | הִקְטַלְתֶּם | הֲסִבּוֹתֶם | הֲשִׁלּוֹתֶם |
+| 2fp | הִקְטַלְתֶּן | הֲסִבּוֹתֶן | הֲשִׁלּוֹתֶן |
 | 1cs | הִקְטַלְתִּי | הֲסִבּוֹתִי | הֲשִׁלּוֹתִי |
 | 1cp | הִקְטַלְנוּ | הֲסִבּוֹנוּ | הֲשִׁלּוֹנוּ |
 
@@ -61,7 +62,11 @@ Strong Hiphil imperfect: יַקְטִיל. Geminate Hiphil imperfect: **יָסֵ
 | 3ms | יַקְטִיל | יָסֵב | יָשֵׁל |
 | 3fs | תַּקְטִיל | תָּסֵב | תָּשֵׁל |
 | 3mp | יַקְטִילוּ | יָסֵבּוּ | יָשֵׁלּוּ |
+| 3fp | תַּקְטֵלְנָה | תָּסֵבְּנָה | תָּשֵׁלְּנָה |
 | 2ms | תַּקְטִיל | תָּסֵב | תָּשֵׁל |
+| 2fs | תַּקְטִילִי | תָּסֵבִּי | תָּשֵׁלִּי |
+| 2mp | תַּקְטִילוּ | תָּסֵבּוּ | תָּשֵׁלּוּ |
+| 2fp | תַּקְטֵלְנָה | תָּסֵבְּנָה | תָּשֵׁלְּנָה |
 | 1cs | אַקְטִיל | אָסֵב | אָשֵׁל |
 | 1cp | נַקְטִיל | נָסֵב | נָשֵׁל |
 
@@ -84,6 +89,13 @@ Geminate Hiphil wayyiqtol: **וַיָּסֶב** — *qamets* + *seghol* in the s
 | 3ms | וַיַּקְטֵל | וַיָּסֶב |
 | 3fs | וַתַּקְטֵל | וַתָּסֶב |
 | 3mp | וַיַּקְטִילוּ | וַיָּסֵבּוּ |
+| 3fp | וַתַּקְטֵלְנָה | וַתָּסֵבְּנָה |
+| 2ms | וַתַּקְטֵל | וַתָּסֶב |
+| 2fs | וַתַּקְטִילִי | וַתָּסֵבִּי |
+| 2mp | וַתַּקְטִילוּ | וַתָּסֵבּוּ |
+| 2fp | וַתַּקְטֵלְנָה | וַתָּסֵבְּנָה |
+| 1cs | וָאַקְטֵל | וָאָסֶב |
+| 1cp | וַנַּקְטֵל | וַנָּסֶב |
 
 > **Key:** וַיָּ prefix (*qamets*) + contracted root + *seghol* final. Same visual pattern as וַיָּקֶם (Biconsonantal).
 
@@ -102,6 +114,14 @@ Weqatal of Geminate Hiphil uses the same base as the perfect.
 | Person | Strong (קטל) | Geminate (סבב) |
 |---|---|---|
 | 3ms | וְהִקְטִיל | וְהֵסֵב |
+| 3fs | וְהִקְטִילָה | וְהֵסֵבָּה |
+| 3cp | וְהִקְטִילוּ | וְהֵסֵבּוּ |
+| 2ms | וְהִקְטַלְתָּ | וַהֲסִבּוֹתָ |
+| 2fs | וְהִקְטַלְתְּ | וַהֲסִבּוֹת |
+| 2mp | וְהִקְטַלְתֶּם | וַהֲסִבּוֹתֶם |
+| 2fp | וְהִקְטַלְתֶּן | וַהֲסִבּוֹתֶן |
+| 1cs | וְהִקְטַלְתִּי | וַהֲסִבּוֹתִי |
+| 1cp | וְהִקְטַלְנוּ | וַהֲסִבּוֹנוּ |
 
 > **Note:** The weqatal maintains the הֵ prefix (*tsere*) of the perfect. The doubled R2 may take *dagesh forte* when a suffix follows.
 
@@ -118,6 +138,7 @@ Strong Hiphil imperative 2ms: הַקְטֵל. Geminate Hiphil imperative: **הָ
 | 2ms | הַקְטֵל | הָסֵב | הָשֵׁל |
 | 2fs | הַקְטִילִי | הָסֵבִּי | הָשֵׁלִּי |
 | 2mp | הַקְטֵלוּ | הָסֵבּוּ | הָשֵׁלּוּ |
+| 2fp | הַקְטֵלְנָה | הָסֵבְּנָה | הָשֵׁלְּנָה |
 
 > **Key:** הָ prefix (*qamets*) — same as Biconsonantal הָקֵם. Contrast with the strong Hiphil הַקְטֵל (*patach*).
 
@@ -135,7 +156,9 @@ Strong Hiphil inf. construct: הַקְטִיל. Geminate Hiphil inf. construct: 
 
 | Form | Strong (קטל) | Geminate (סבב) |
 |---|---|---|
-| Inf. Construct | הַקְטִיל | הָסֵב |
+| Base | הַקְטִיל | הָסֵב |
+| With לְ | לְהַקְטִיל | לְהָסֵב |
+| With בְּ | בְּהַקְטִיל | בְּהָסֵב |
 
 > **Note:** The inf. construct is identical to the 2ms imperative (הָסֵב). Verbal prepositions (לְ/בְּ) typically accompany the inf. construct, distinguishing it from the imperative.
 
@@ -164,6 +187,7 @@ Strong Hiphil participle ms: מַקְטִיל. Geminate Hiphil participle ms: **
 | ms | מַקְטִיל | מֵסֵב | מֵשֵׁל |
 | mp | מַקְטִילִים | מְסַבִּים | מְשַׁלְּלִים |
 | fs | מַקְטִילָה | מְסַבָּה | מְשַׁלֶּלֶת |
+| fp | מַקְטִילוֹת | מְסַבּוֹת | מְשַׁלְּלוֹת |
 
 > **Key:** מֵ prefix (*tsere*) — same as Biconsonantal מֵקִים. Contrast with the strong Hiphil מַ prefix (*patach*).
 
