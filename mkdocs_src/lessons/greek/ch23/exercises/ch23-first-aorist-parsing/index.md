@@ -17,11 +17,11 @@
 
 ## Sample Questions
 
-**Q1.** ἔλυσα
-> **A:** Aorist 1st · Active · Indicative · 1st · Singular · λύω · I loosed
+**Q1.** 1 ἔλυσα Aor 1st Aor 2nd Act Mid 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 ἔλυσα Aor 1st Act 1st Sg λύω I loosed
 
-**Q2.** ἔλυσας
-> **A:** Aorist 1st · Active · Indicative · 2nd · Singular · λύω · You loosed
+**Q2.** 2 ἔλυσας Aor 1st Aor 2nd Act Mid 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 ἔλυσας Aor 1st Act 2nd Sg λύω You loosed
 
-**Q3.** ἔλυσεν
-> **A:** Aorist 1st · Active · Indicative · 3rd · Singular · λύω · He/she/it loosed
+**Q3.** 3 ἔλυσεν Aor 1st Aor 2nd Act Mid 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 ἔλυσεν Aor 1st Act 3rd Sg λύω He/she loosed

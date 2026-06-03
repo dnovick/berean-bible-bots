@@ -16,11 +16,11 @@
 
 ## Sample Questions
 
-**Q1.** ἐλύθην
-> **A:** Aorist · Passive · Indicative · 1st · Singular · λύω · I was loosed
+**Q1.** 1 ἐλύθην Aor Fut Act Mid Pass 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 ἐλύθην Aor Pass 1st Sg λύω I was loosed
 
-**Q2.** ἐλύθης
-> **A:** Aorist · Passive · Indicative · 2nd · Singular · λύω · You were loosed
+**Q2.** 2 ἐλύθης Aor Fut Act Mid Pass 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 ἐλύθης Aor Pass 2nd Sg λύω You were loosed
 
-**Q3.** ἐλύθη
-> **A:** Aorist · Passive · Indicative · 3rd · Singular · λύω · He/she/it was loosed
+**Q3.** 3 ἐλύθη Aor Fut Act Mid Pass 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 ἐλύθη Aor Pass 3rd Sg λύω He/she was loosed

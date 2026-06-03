@@ -341,6 +341,86 @@ def build_bbg_ch7_gen_dat_parsing(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+# BBG Ch7 — Definite Article Identification Exercise
+# ---------------------------------------------------------------------------
+
+
+class BbgCh7ArticleIdPDF(GreekExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each highlighted article form taken from the GNT, identify: '
+            '(a) Case, (b) Number, (c) Gender. '
+            'Each item shows the article in context with its noun. '
+            'All five cases (Nom, Gen, Dat, Acc) and all three genders are represented.'
+        )
+        hdrs = ['#', 'Article', 'GNT Context', 'Case', 'Number', 'Gender']
+        cr = [0.04, 0.08, 0.44, 0.13, 0.13, 0.13]
+        gk = [1]
+
+        rows = [
+            ['1',  'ὁ',      'ὁ λόγος ἦν πρὸς τὸν θεόν (Jhn 1:1)',            '', '', ''],
+            ['2',  'τοῦ',    'τοῦ πατρός μου (Jhn 5:43)',                        '', '', ''],
+            ['3',  'τὸν',    'ἠγάπησεν ὁ θεὸς τὸν κόσμον (Jhn 3:16)',           '', '', ''],
+            ['4',  'τῷ',     'ἐν τῷ κόσμῳ ἦν (Jhn 1:10)',                        '', '', ''],
+            ['5',  'ἡ',      'ἡ γυνὴ αὕτη εἶπεν (Jhn 4:39)',                     '', '', ''],
+            ['6',  'τῆς',    'ἡ δωρεὰ τῆς χάριτος (Rom 5:15)',                   '', '', ''],
+            ['7',  'τὴν',    'ἀγαπᾶτε τὴν ἐκκλησίαν (Eph 5:25)',                '', '', ''],
+            ['8',  'τῇ',     'πιστεύοντας ἐν τῇ ἐκκλησίᾳ (Acts 13:1)',           '', '', ''],
+            ['9',  'τό',     'τό εὐαγγέλιον τοῦ θεοῦ (Rom 1:1)',                 '', '', ''],
+            ['10', 'τοῦ',    'ἐκ τοῦ στόματος αὐτοῦ (Rev 1:16)',                 '', '', ''],
+            ['11', 'τῷ',     'ἐν τῷ ὀνόματι αὐτοῦ (Jhn 1:12)',                   '', '', ''],
+            ['12', 'τό',     'τό αἷμα αὐτοῦ (1 Jhn 1:7)',                        '', '', ''],
+            ['13', 'οἱ',     'οἱ μαθηταί ἠγάπων αὐτόν (Jhn 21:20)',              '', '', ''],
+            ['14', 'τῶν',    'ἀπὸ τῶν ἁμαρτιῶν ἡμῶν (Rev 1:5)',                  '', '', ''],
+            ['15', 'τοῖς',   'λέγει τοῖς ἀδελφοῖς (Jhn 20:17)',                   '', '', ''],
+            ['16', 'τοὺς',   'βλέπει τοὺς μαθητάς (Jhn 20:20)',                   '', '', ''],
+            ['17', 'αἱ',     'αἱ ἐντολαὶ αὐτοῦ (1 Jhn 5:3)',                     '', '', ''],
+            ['18', 'τῶν',    'ἡ ἀγάπη τῶν ἀδελφῶν (1 Th 4:9)',                   '', '', ''],
+            ['19', 'ταῖς',   'πορεύεσθε ταῖς ἐκκλησίαις (Rev 2:7)',               '', '', ''],
+            ['20', 'τάς',    'φυλάξαι τάς ἐντολάς (1 Tim 6:14)',                  '', '', ''],
+        ]
+        ans = [
+            ['1',  'ὁ',    'Jhn 1:1',  'Nom.', 'Sg.', 'Masc.'],
+            ['2',  'τοῦ',  'Jhn 5:43', 'Gen.', 'Sg.', 'Masc.'],
+            ['3',  'τὸν',  'Jhn 3:16', 'Acc.', 'Sg.', 'Masc.'],
+            ['4',  'τῷ',   'Jhn 1:10', 'Dat.', 'Sg.', 'Masc.'],
+            ['5',  'ἡ',    'Jhn 4:39', 'Nom.', 'Sg.', 'Fem.'],
+            ['6',  'τῆς',  'Rom 5:15', 'Gen.', 'Sg.', 'Fem.'],
+            ['7',  'τὴν',  'Eph 5:25', 'Acc.', 'Sg.', 'Fem.'],
+            ['8',  'τῇ',   'Acts 13:1','Dat.', 'Sg.', 'Fem.'],
+            ['9',  'τό',   'Rom 1:1',  'Nom./Acc.', 'Sg.', 'Neut.'],
+            ['10', 'τοῦ',  'Rev 1:16', 'Gen.', 'Sg.', 'Neut.'],
+            ['11', 'τῷ',   'Jhn 1:12', 'Dat.', 'Sg.', 'Neut.'],
+            ['12', 'τό',   '1 Jhn 1:7','Nom./Acc.', 'Sg.', 'Neut.'],
+            ['13', 'οἱ',   'Jhn 21:20','Nom.', 'Pl.', 'Masc.'],
+            ['14', 'τῶν',  'Rev 1:5',  'Gen.', 'Pl.', 'Masc./Neut.'],
+            ['15', 'τοῖς', 'Jhn 20:17','Dat.', 'Pl.', 'Masc./Neut.'],
+            ['16', 'τοὺς', 'Jhn 20:20','Acc.', 'Pl.', 'Masc.'],
+            ['17', 'αἱ',   '1 Jhn 5:3','Nom.', 'Pl.', 'Fem.'],
+            ['18', 'τῶν',  '1 Th 4:9', 'Gen.', 'Pl.', 'Fem.'],
+            ['19', 'ταῖς', 'Rev 2:7',  'Dat.', 'Pl.', 'Fem.'],
+            ['20', 'τάς',  '1 Tim 6:14','Acc.', 'Pl.', 'Fem.'],
+        ]
+
+        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=False,
+                             answer_rows=ans)
+        self.add_section_heading('Answer Key')
+        self.add_greek_table(hdrs, rows, cr, greek_cols=gk, show_answers=True,
+                             answer_rows=ans)
+
+
+def build_bbg_ch7_article_id(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        BbgCh7ArticleIdPDF,
+        'BBG Chapter 7 — Definite Article Identification Exercise',
+        'Case, Number, and Gender from GNT Context',
+        ['greek', 'bbg', 'ch7', 'exercises', 'ch7-article-id'],
+        'ch7-article-id.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
 # BBG Ch8 — Preposition Parsing Drill
 # ---------------------------------------------------------------------------
 

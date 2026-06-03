@@ -15,11 +15,11 @@ A 20-item drill in which students divide Greek words into syllables, identify th
 
 ## Sample Questions
 
-**Q1.** 1 θεός
-> **A:** θε-ός · Ultima · Acute (oxytone)
+**Q1.** 1 θεός Antepenult Penult Ultima Acute Circumflex &#9654;
+> **A:** 1 θεός θε-ός Ultima Acute
 
-**Q2.** 2 λόγος
-> **A:** λό-γος · Penult · Acute (paroxytone)
+**Q2.** 2 λόγος Antepenult Penult Ultima Acute Circumflex &#9654;
+> **A:** 2 λόγος λό-γος Penult Acute
 
-**Q3.** 3 κύριος
-> **A:** κύ-ρι-ος · Antepenult · Acute (proparoxytone)
+**Q3.** 3 κύριος Antepenult Penult Ultima Acute Circumflex &#9654;
+> **A:** 3 κύριος κύ-ρι-ος Antepenult Acute

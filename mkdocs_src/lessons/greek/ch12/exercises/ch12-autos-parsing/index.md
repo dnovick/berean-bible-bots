@@ -16,11 +16,11 @@ A 20-item drill covering αὐτός in all genders, cases, and numbers. Student
 
 ## Sample Questions
 
-**Q1.** 1 λέγει αὐτῷ &#9658; Answer
-> **A:** D · S · M · PP — "he says to him "
+**Q1.** 1 λέγει αὐτῷ A D G N P S F M N &#9654;
+> **A:** 1 λέγει αὐτῷ D S M PP — "he says to him"
 
-**Q2.** 2 αὐτὸς ὁ κύριος &#9658; Answer
-> **A:** N · S · M · INT — "the Lord himself " — predicate position
+**Q2.** 2 αὐτὸς ὁ κύριος A D G N P S F M N &#9654;
+> **A:** 2 αὐτὸς ὁ κύριος N S M INT — "the Lord himself"
 
-**Q3.** 3 ὁ αὐτὸς λόγος &#9658; Answer
-> **A:** N · S · M · SAME — "the same word" — article before αὐτός
+**Q3.** 3 ὁ αὐτὸς λόγος A D G N P S F M N &#9654;
+> **A:** 3 ὁ αὐτὸς λόγος N S M SAME — "the same word"

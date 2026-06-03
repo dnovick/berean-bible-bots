@@ -1,383 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ch16 Present Active Indicative Parsing Drill — BBG</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: 0.3em; }
-  p.instructions { font-style: italic; color: #555; }
-  table { border-collapse: collapse; width: 100%; margin: 1.5em 0; font-size: 0.9em; }
-  th { background: #276749; color: #fff; padding: 0.45em 0.6em; text-align: left; }
-  td { padding: 0.35em 0.6em; border-bottom: 1px solid #ddd; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .greek { font-size: 1.15em; font-family: "New Athena Unicode", "Gentium Plus", "SBL Greek", serif; font-weight: bold; }
-  input.parse-field {
-    border: none; border-bottom: 1px solid #888; width: 100%; min-width: 55px;
-    background: transparent; font-size: 0.88em; padding: 2px 4px; box-sizing: border-box;
-  }
-  input.parse-field:focus { outline: none; border-bottom: 2px solid #276749; }
-  input.wide { min-width: 90px; }
-  .answer-row td { background: #c6f6d5 !important; color: #1a3c2e; font-size: 0.88em; }
-  .answer-row { display: none; }
-  .answer-row.visible { display: table-row; }
-  button.reveal-btn {
-    background: #276749; color: #fff; border: none; border-radius: 3px;
-    padding: 3px 10px; cursor: pointer; font-size: 0.82em; white-space: nowrap;
-  }
-  button.reveal-btn:hover { background: #1a4532; }
-  .controls { margin: 1em 0 1.5em 0; display: flex; gap: 0.7em; flex-wrap: wrap; }
-  .controls button {
-    background: #4a5568; color: #fff; border: none; border-radius: 4px;
-    padding: 0.5em 1.2em; cursor: pointer; font-size: 0.88em;
-  }
-  .controls button:hover { background: #2d3748; }
-  .note { background: #f0fff4; border-left: 4px solid #276749; padding: 0.6em 1em; margin: 1em 0; font-size: 0.9em; }
-  @media print {
-    .controls, button.reveal-btn { display: none !important; }
-    .answer-row { display: none !important; }
-    input.parse-field { border-bottom: 1px solid #000; background: transparent; }
-    body { margin: 1em; }
-  }
-</style>
-</head>
-<body>
-
-
-<h1>BBG Chapter 16 — Present Active Indicative Parsing Drill</h1>
-<p class="instructions">Parse each verb: Tense · Voice · Mood · Person · Number · Lexical form · Translation. All forms are present active indicative. Click ▶ Answer to check your work.</p>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <thead>
-    <tr>
-      <th>#</th>
-      <th>Form</th>
-      <th>Person</th>
-      <th>Number</th>
-      <th>Lexical form</th>
-      <th>Translation</th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <tr class="question-row" data-id="1">
-      <td>1</td>
-      <td class="greek">λύω</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(1)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-1">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · λύω</strong> — "I am loosing / I loose"</td>
-    </tr>
-
-    <tr class="question-row" data-id="2">
-      <td>2</td>
-      <td class="greek">λύεις</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(2)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-2">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Singular · λύω</strong> — "You are loosing"</td>
-    </tr>
-
-    <tr class="question-row" data-id="3">
-      <td>3</td>
-      <td class="greek">λύει</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(3)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-3">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · λύω</strong> — "He/she/it is loosing"</td>
-    </tr>
-
-    <tr class="question-row" data-id="4">
-      <td>4</td>
-      <td class="greek">λύομεν</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(4)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-4">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Plural · λύω</strong> — "We are loosing / we loose"</td>
-    </tr>
-
-    <tr class="question-row" data-id="5">
-      <td>5</td>
-      <td class="greek">λύετε</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(5)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-5">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Plural · λύω</strong> — "You (pl.) are loosing"</td>
-    </tr>
-
-    <tr class="question-row" data-id="6">
-      <td>6</td>
-      <td class="greek">λύουσιν</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(6)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-6">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Plural · λύω</strong> — "They are loosing" (movable ν before vowel)</td>
-    </tr>
-
-    <tr class="question-row" data-id="7">
-      <td>7</td>
-      <td class="greek">πιστεύω</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(7)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-7">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · πιστεύω</strong> — "I believe / I am believing"</td>
-    </tr>
-
-    <tr class="question-row" data-id="8">
-      <td>8</td>
-      <td class="greek">γινώσκεις</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(8)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-8">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Singular · γινώσκω</strong> — "You know / you are knowing"</td>
-    </tr>
-
-    <tr class="question-row" data-id="9">
-      <td>9</td>
-      <td class="greek">ἀκούει</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(9)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-9">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · ἀκούω</strong> — "He/she hears"</td>
-    </tr>
-
-    <tr class="question-row" data-id="10">
-      <td>10</td>
-      <td class="greek">βλέπομεν</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(10)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-10">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Plural · βλέπω</strong> — "We see / we are seeing"</td>
-    </tr>
-
-    <tr class="question-row" data-id="11">
-      <td>11</td>
-      <td class="greek">λέγετε</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(11)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-11">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Plural · λέγω</strong> — "You (pl.) are saying / you say"</td>
-    </tr>
-
-    <tr class="question-row" data-id="12">
-      <td>12</td>
-      <td class="greek">γράφουσιν</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(12)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-12">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Plural · γράφω</strong> — "They are writing / they write"</td>
-    </tr>
-
-    <tr class="question-row" data-id="13">
-      <td>13</td>
-      <td class="greek">ἔχω</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(13)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-13">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · ἔχω</strong> — "I have"</td>
-    </tr>
-
-    <tr class="question-row" data-id="14">
-      <td>14</td>
-      <td class="greek">εὑρίσκεις</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(14)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-14">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Singular · εὑρίσκω</strong> — "You are finding / you find"</td>
-    </tr>
-
-    <tr class="question-row" data-id="15">
-      <td>15</td>
-      <td class="greek">λαμβάνει</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(15)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-15">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · λαμβάνω</strong> — "He/she takes / is taking"</td>
-    </tr>
-
-    <tr class="question-row" data-id="16">
-      <td>16</td>
-      <td class="greek">διδάσκομεν</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(16)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-16">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Plural · διδάσκω</strong> — "We are teaching / we teach"</td>
-    </tr>
-
-    <tr class="question-row" data-id="17">
-      <td>17</td>
-      <td class="greek">κρίνετε</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(17)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-17">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 2nd · Plural · κρίνω</strong> — "You (pl.) are judging / you judge"</td>
-    </tr>
-
-    <tr class="question-row" data-id="18">
-      <td>18</td>
-      <td class="greek">ἄγουσιν</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(18)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-18">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Plural · ἄγω</strong> — "They are leading / they lead"</td>
-    </tr>
-
-    <tr class="question-row" data-id="19">
-      <td>19</td>
-      <td class="greek">πέμπω</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(19)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-19">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 1st · Singular · πέμπω</strong> — "I am sending / I send"</td>
-    </tr>
-
-    <tr class="question-row" data-id="20">
-      <td>20</td>
-      <td class="greek">σῴζει</td>
-      <td><input class="parse-field" type="text" placeholder="person"></td>
-      <td><input class="parse-field" type="text" placeholder="number"></td>
-      <td><input class="parse-field wide" type="text" placeholder="lexical form"></td>
-      <td><input class="parse-field wide" type="text" placeholder="translation"></td>
-      <td><button class="reveal-btn" onclick="toggle(20)">▶ Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="ans-20">
-      <td></td>
-      <td colspan="6"><strong>Pres. Act. Ind. · 3rd · Singular · σῴζω</strong> — "He/she saves / is saving"</td>
-    </tr>
-
-  </tbody>
-</table>
-
-<div class="note">
-  <strong>All forms above:</strong> Present · Active · Indicative. The only thing that changes per row is person and number. Tense stem = lexical form minus the -ω. Connecting vowel: ο before μ/ν, ε elsewhere.
-</div>
-
-<script>
-function toggle(id) {
-  const row = document.getElementById('ans-' + id);
-  const btn = document.querySelector('[data-id="' + id + '"] button.reveal-btn');
-  if (row.classList.contains('visible')) {
-    row.classList.remove('visible');
-    if (btn) btn.textContent = '▶ Answer';
-  } else {
-    row.classList.add('visible');
-    if (btn) btn.textContent = '▼ Hide';
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 16 — Present Active Indicative Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 16 — Present Active Indicative Parsing Drill</h1><p class="subtitle">BBG Chapter 16 · Present Active Indicative</p><div class="instructions">All verbs are Present Active Indicative. Provide: Person · Number · Lexical Form · Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Parsing Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Person</th><th>Number</th><th>Lexical Form</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">λύω</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">λύω</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>I am loosing / I loose</strong></td><td></td></tr><tr><td>2</td><td class="greek">λύεις</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">λύεις</td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>You are loosing</strong></td><td></td></tr><tr><td>3</td><td class="greek">λύει</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">λύει</td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>He/she/it is loosing</strong></td><td></td></tr><tr><td>4</td><td class="greek">λύομεν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">λύομεν</td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>We are loosing</strong></td><td></td></tr><tr><td>5</td><td class="greek">λύετε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">λύετε</td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>You (pl.) are loosing</strong></td><td></td></tr><tr><td>6</td><td class="greek">λύουσιν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">λύουσιν</td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>They are loosing</strong></td><td></td></tr><tr><td>7</td><td class="greek">πιστεύω</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">πιστεύω</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>πιστεύω</strong></td><td><strong>I believe</strong></td><td></td></tr><tr><td>8</td><td class="greek">γινώσκεις</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">γινώσκεις</td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>γινώσκω</strong></td><td><strong>You know</strong></td><td></td></tr><tr><td>9</td><td class="greek">ἀκούει</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">ἀκούει</td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἀκούω</strong></td><td><strong>He/she hears</strong></td><td></td></tr><tr><td>10</td><td class="greek">βλέπομεν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">βλέπομεν</td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>βλέπω</strong></td><td><strong>We see</strong></td><td></td></tr><tr><td>11</td><td class="greek">λέγετε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">λέγετε</td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>λέγω</strong></td><td><strong>You (pl.) are saying</strong></td><td></td></tr><tr><td>12</td><td class="greek">γράφουσιν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">γράφουσιν</td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>γράφω</strong></td><td><strong>They are writing</strong></td><td></td></tr><tr><td>13</td><td class="greek">ἔχω</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">ἔχω</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>ἔχω</strong></td><td><strong>I have</strong></td><td></td></tr><tr><td>14</td><td class="greek">εὑρίσκεις</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">εὑρίσκεις</td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>εὑρίσκω</strong></td><td><strong>You are finding</strong></td><td></td></tr><tr><td>15</td><td class="greek">λαμβάνει</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">λαμβάνει</td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>λαμβάνω</strong></td><td><strong>He/she takes</strong></td><td></td></tr><tr><td>16</td><td class="greek">διδάσκομεν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">διδάσκομεν</td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>διδάσκω</strong></td><td><strong>We are teaching</strong></td><td></td></tr><tr><td>17</td><td class="greek">κρίνετε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">κρίνετε</td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>κρίνω</strong></td><td><strong>You (pl.) are judging</strong></td><td></td></tr><tr><td>18</td><td class="greek">ἄγουσιν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">ἄγουσιν</td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>ἄγω</strong></td><td><strong>They are leading</strong></td><td></td></tr><tr><td>19</td><td class="greek">πέμπω</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">πέμπω</td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>πέμπω</strong></td><td><strong>I am sending</strong></td><td></td></tr><tr><td>20</td><td class="greek">σῴζει</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">σῴζει</td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>σῴζω</strong></td><td><strong>He/she saves</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.add('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▼ Hide');
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(r => r.classList.remove('visible'));
-  document.querySelectorAll('button.reveal-btn').forEach(b => b.textContent = '▶ Answer');
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

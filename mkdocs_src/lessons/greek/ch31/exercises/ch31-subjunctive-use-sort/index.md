@@ -19,11 +19,11 @@ A 20-item use-classification drill presenting subjunctive clauses drawn from or 
 
 ## Sample Questions
 
-**Q1.** 1 ἀγαπῶμεν ἀλλήλους
-> **A:** HO · 1st · Pl · ἀγαπάω · Let us love one another
+**Q1.** 1 ἀγαπῶμεν ἀλλήλους CO DE FS HO IN PU 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 ἀγαπῶμεν ἀλλήλους HO 1st Pl ἀγαπάω Let us love one another
 
-**Q2.** 2 ἵνα πιστεύσητε
-> **A:** PU · 2nd · Pl · πιστεύω · In order that you may believe
+**Q2.** 2 ἵνα πιστεύσητε CO DE FS HO IN PU 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 ἵνα πιστεύσητε PU 2nd Pl πιστεύω In order that you may believe
 
-**Q3.** 3 ἐὰν εἴπω ὑμῖν
-> **A:** CO · 1st · Sg · λέγω · If I say to you
+**Q3.** 3 ἐὰν εἴπω ὑμῖν CO DE FS HO IN PU 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 ἐὰν εἴπω ὑμῖν CO 1st Sg λέγω If I say to you

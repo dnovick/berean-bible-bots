@@ -14,11 +14,11 @@
 
 ## Sample Questions
 
-**Q1.** 1 οὗτος οὗτος ὁ ἄνθρωπος
-> **A:** Masculine · Nominative · Singular · οὗτος · A — Predicate position: demonstrative + article + noun
+**Q1.** 1 οὗτος F M M/N N A D G N P S A P &#9654;
+> **A:** 1 οὗτος οὗτος ὁ ἄνθρωπος M N S οὗτος A
 
-**Q2.** 2 τοῦτο λέγω ὑμῖν τοῦτο
-> **A:** Neuter · Accusative · Singular · οὗτος · P — Stands alone as direct object; "this thing"
+**Q2.** 2 τοῦτο F M M/N N A D G N P S A P &#9654;
+> **A:** 2 τοῦτο λέγω ὑμῖν τοῦτο N A S οὗτος P
 
-**Q3.** 3 ταύτης ἐκ τῆς γενεᾶς ταύτης
-> **A:** Feminine · Genitive · Singular · οὗτος · A — Post-positive predicate position: article + noun + demonstrative
+**Q3.** 3 ταύτης F M M/N N A D G N P S A P &#9654;
+> **A:** 3 ταύτης ἐκ τῆς γενεᾶς ταύτης F G S οὗτος A

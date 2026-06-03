@@ -1,291 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 10 — Third Declension Parsing Drill</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 980px; margin: 2em auto; padding: 0 1.5em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
-  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
-  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .9em; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .gk { font-size: 1.15em; }
-  .parse-field { width: 90%; font-size: .85em; border: 1px solid #aaa; border-radius: 3px; padding: 2px 4px; }
-  .parse-field-lg { width: 97%; font-size: .85em; border: 1px solid #aaa; border-radius: 3px; padding: 2px 4px; }
-  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
-  .answer-row { display: none; }
-  button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
-  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
-  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
-  .controls button:hover { background: #ddd; }
-  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
-  @media print {
-    button, .controls { display: none !important; }
-    .parse-field, .parse-field-lg { border: none; border-bottom: 1px solid #000; background: transparent; }
-    .answer-row { display: table-row !important; }
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 10 — Third Declension Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 10 — Third Declension Parsing Drill</h1><p class="subtitle">BBG Chapter 10 · Third Declension</p><div class="instructions">Parse each form: Case (N/G/D/A), Number (S/P), Gender (M/F/N), Lexical Form, and Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Drill Table</h2><table><thead><tr><th>#</th><th>Greek Form</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">τοῦ πνεύματος</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">τοῦ πνεύματος</td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>N</strong></td><td><strong>πνεῦμα</strong></td><td><strong>"of the spirit"</strong></td><td></td></tr><tr><td>2</td><td class="greek">τῇ χάριτι</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">τῇ χάριτι</td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>χάρις</strong></td><td><strong>"to/by grace"</strong></td><td></td></tr><tr><td>3</td><td class="greek">σώματα</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">σώματα</td><td><strong>N/A</strong></td><td><strong>P</strong></td><td><strong>N</strong></td><td><strong>σῶμα</strong></td><td><strong>"bodies"</strong></td><td></td></tr><tr><td>4</td><td class="greek">τοὺς αἰῶνας</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">τοὺς αἰῶνας</td><td><strong>A</strong></td><td><strong>P</strong></td><td><strong>M</strong></td><td><strong>αἰών</strong></td><td><strong>"the ages"</strong></td><td></td></tr><tr><td>5</td><td class="greek">τῆς σαρκός</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">τῆς σαρκός</td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>σάρξ</strong></td><td><strong>"of the flesh"</strong></td><td></td></tr><tr><td>6</td><td class="greek">τῷ ὀνόματι</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">τῷ ὀνόματι</td><td><strong>D</strong></td><td><strong>S</strong></td><td><strong>N</strong></td><td><strong>ὄνομα</strong></td><td><strong>"in/by the name"</strong></td><td></td></tr><tr><td>7</td><td class="greek">πνεύματα</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">πνεύματα</td><td><strong>N/A</strong></td><td><strong>P</strong></td><td><strong>N</strong></td><td><strong>πνεῦμα</strong></td><td><strong>"spirits"</strong></td><td></td></tr><tr><td>8</td><td class="greek">αἰῶσιν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">αἰῶσιν</td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>M</strong></td><td><strong>αἰών</strong></td><td><strong>"to/in the ages"</strong></td><td></td></tr><tr><td>9</td><td class="greek">τὴν πόλιν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">τὴν πόλιν</td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>πόλις</strong></td><td><strong>"the city"</strong></td><td></td></tr><tr><td>10</td><td class="greek">χαρίτων</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">χαρίτων</td><td><strong>G</strong></td><td><strong>P</strong></td><td><strong>F</strong></td><td><strong>χάρις</strong></td><td><strong>"of graces"</strong></td><td></td></tr><tr><td>11</td><td class="greek">τοῦ σώματος</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">τοῦ σώματος</td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>N</strong></td><td><strong>σῶμα</strong></td><td><strong>"of the body"</strong></td><td></td></tr><tr><td>12</td><td class="greek">ταῖς σαρξίν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ταῖς σαρξίν</td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>F</strong></td><td><strong>σάρξ</strong></td><td><strong>"in/to the flesh"</strong></td><td></td></tr><tr><td>13</td><td class="greek">τὰ ὀνόματα</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">τὰ ὀνόματα</td><td><strong>N/A</strong></td><td><strong>P</strong></td><td><strong>N</strong></td><td><strong>ὄνομα</strong></td><td><strong>"the names"</strong></td><td></td></tr><tr><td>14</td><td class="greek">τῆς πόλεως</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">τῆς πόλεως</td><td><strong>G</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>πόλις</strong></td><td><strong>"of the city"</strong></td><td></td></tr><tr><td>15</td><td class="greek">χάριτα</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">χάριτα</td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>χάρις</strong></td><td><strong>"grace" (direct object)</strong></td><td></td></tr><tr><td>16</td><td class="greek">τῶν πνευμάτων</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">τῶν πνευμάτων</td><td><strong>G</strong></td><td><strong>P</strong></td><td><strong>N</strong></td><td><strong>πνεῦμα</strong></td><td><strong>"of the spirits"</strong></td><td></td></tr><tr><td>17</td><td class="greek">αἰών</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">αἰών</td><td><strong>N</strong></td><td><strong>S</strong></td><td><strong>M</strong></td><td><strong>αἰών</strong></td><td><strong>"age / eternity"</strong></td><td></td></tr><tr><td>18</td><td class="greek">τοῖς σώμασιν</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">τοῖς σώμασιν</td><td><strong>D</strong></td><td><strong>P</strong></td><td><strong>N</strong></td><td><strong>σῶμα</strong></td><td><strong>"in/to the bodies"</strong></td><td></td></tr><tr><td>19</td><td class="greek">πόλεις</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">πόλεις</td><td><strong>N/A</strong></td><td><strong>P</strong></td><td><strong>F</strong></td><td><strong>πόλις</strong></td><td><strong>"cities"</strong></td><td></td></tr><tr><td>20</td><td class="greek">τὴν χάριτα</td><td><select class="pf"><option value=""></option><option value="A">A</option><option value="D">D</option><option value="G">G</option><option value="N">N</option><option value="N/A">N/A</option></select></td><td><select class="pf"><option value=""></option><option value="P">P</option><option value="S">S</option></select></td><td><select class="pf"><option value=""></option><option value="F">F</option><option value="M">M</option><option value="N">N</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">τὴν χάριτα</td><td><strong>A</strong></td><td><strong>S</strong></td><td><strong>F</strong></td><td><strong>χάρις</strong></td><td><strong>"grace" (direct object)</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
-</style>
-</head>
-<body>
-
-
-<h1>Chapter 10 — Third Declension Parsing Drill</h1>
-<p class="subtitle">BBG Chapter 10 · Third Declension</p>
-
-<p>Parse each form: <strong>Case</strong> (N/G/D/A), <strong>Number</strong> (S/P), <strong>Gender</strong> (M/F/N), <strong>Lexical Form</strong>, and <strong>Translation</strong>.</p>
-
-<div class="tip">
-  <strong>Tip:</strong> Find the stem by removing -ος from the genitive singular. Key endings: Gen Sg = -ος; Dat Sg = -ι; Nom/Acc Pl (neut.) = -α; Dat Pl = -σι(ν). The article disambiguates when forms are identical.
-</div>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <tr><th>#</th><th>Greek Form</th><th>Case</th><th>Number</th><th>Gender</th><th>Lexical Form</th><th>Translation</th><th></th></tr>
-
-  <tr>
-    <td>1</td><td class="gk">τοῦ πνεύματος</td>
-    <td><input class="parse-field" id="c1" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n1" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g1" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l1" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t1" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r1')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r1"><td colspan="8"><strong>G · S · N · πνεῦμα</strong> — "of the spirit"</td></tr>
-
-  <tr>
-    <td>2</td><td class="gk">τῇ χάριτι</td>
-    <td><input class="parse-field" id="c2" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n2" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g2" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l2" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t2" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r2')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r2"><td colspan="8"><strong>D · S · F · χάρις</strong> — "to/by grace"</td></tr>
-
-  <tr>
-    <td>3</td><td class="gk">σώματα</td>
-    <td><input class="parse-field" id="c3" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n3" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g3" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l3" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t3" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r3')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r3"><td colspan="8"><strong>N or A · P · N · σῶμα</strong> — "bodies" (neut. nom./acc. pl. identical)</td></tr>
-
-  <tr>
-    <td>4</td><td class="gk">τοὺς αἰῶνας</td>
-    <td><input class="parse-field" id="c4" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n4" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g4" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l4" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t4" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r4')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r4"><td colspan="8"><strong>A · P · M · αἰών</strong> — "the ages"</td></tr>
-
-  <tr>
-    <td>5</td><td class="gk">τῆς σαρκός</td>
-    <td><input class="parse-field" id="c5" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n5" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g5" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l5" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t5" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r5')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r5"><td colspan="8"><strong>G · S · F · σάρξ</strong> — "of the flesh"</td></tr>
-
-  <tr>
-    <td>6</td><td class="gk">τῷ ὀνόματι</td>
-    <td><input class="parse-field" id="c6" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n6" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g6" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l6" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t6" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r6')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r6"><td colspan="8"><strong>D · S · N · ὄνομα</strong> — "in/by the name"</td></tr>
-
-  <tr>
-    <td>7</td><td class="gk">πνεύματα</td>
-    <td><input class="parse-field" id="c7" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n7" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g7" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l7" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t7" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r7')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r7"><td colspan="8"><strong>N or A · P · N · πνεῦμα</strong> — "spirits"</td></tr>
-
-  <tr>
-    <td>8</td><td class="gk">αἰῶσιν</td>
-    <td><input class="parse-field" id="c8" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n8" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g8" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l8" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t8" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r8')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r8"><td colspan="8"><strong>D · P · M · αἰών</strong> — "to/in the ages"</td></tr>
-
-  <tr>
-    <td>9</td><td class="gk">τὴν πόλιν</td>
-    <td><input class="parse-field" id="c9" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n9" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g9" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l9" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t9" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r9')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r9"><td colspan="8"><strong>A · S · F · πόλις</strong> — "the city"</td></tr>
-
-  <tr>
-    <td>10</td><td class="gk">χαρίτων</td>
-    <td><input class="parse-field" id="c10" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n10" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g10" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l10" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t10" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r10')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r10"><td colspan="8"><strong>G · P · F · χάρις</strong> — "of graces"</td></tr>
-
-  <tr>
-    <td>11</td><td class="gk">τοῦ σώματος</td>
-    <td><input class="parse-field" id="c11" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n11" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g11" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l11" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t11" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r11')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r11"><td colspan="8"><strong>G · S · N · σῶμα</strong> — "of the body"</td></tr>
-
-  <tr>
-    <td>12</td><td class="gk">ταῖς σαρξίν</td>
-    <td><input class="parse-field" id="c12" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n12" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g12" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l12" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t12" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r12')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r12"><td colspan="8"><strong>D · P · F · σάρξ</strong> — "in/to the flesh"</td></tr>
-
-  <tr>
-    <td>13</td><td class="gk">τὰ ὀνόματα</td>
-    <td><input class="parse-field" id="c13" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n13" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g13" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l13" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t13" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r13')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r13"><td colspan="8"><strong>N or A · P · N · ὄνομα</strong> — "the names"</td></tr>
-
-  <tr>
-    <td>14</td><td class="gk">τῆς πόλεως</td>
-    <td><input class="parse-field" id="c14" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n14" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g14" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l14" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t14" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r14')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r14"><td colspan="8"><strong>G · S · F · πόλις</strong> — "of the city" (i-stem; gen = -εως)</td></tr>
-
-  <tr>
-    <td>15</td><td class="gk">χάριτα</td>
-    <td><input class="parse-field" id="c15" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n15" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g15" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l15" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t15" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r15')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r15"><td colspan="8"><strong>A · S · F · χάρις</strong> — "grace" (direct object)</td></tr>
-
-  <tr>
-    <td>16</td><td class="gk">τῶν πνευμάτων</td>
-    <td><input class="parse-field" id="c16" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n16" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g16" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l16" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t16" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r16')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r16"><td colspan="8"><strong>G · P · N · πνεῦμα</strong> — "of the spirits"</td></tr>
-
-  <tr>
-    <td>17</td><td class="gk">αἰών</td>
-    <td><input class="parse-field" id="c17" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n17" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g17" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l17" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t17" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r17')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r17"><td colspan="8"><strong>N · S · M · αἰών</strong> — "age / eternity"</td></tr>
-
-  <tr>
-    <td>18</td><td class="gk">τοῖς σώμασιν</td>
-    <td><input class="parse-field" id="c18" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n18" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g18" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l18" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t18" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r18')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r18"><td colspan="8"><strong>D · P · N · σῶμα</strong> — "in/with the bodies"</td></tr>
-
-  <tr>
-    <td>19</td><td class="gk">πόλεις</td>
-    <td><input class="parse-field" id="c19" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n19" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g19" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l19" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t19" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r19')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r19"><td colspan="8"><strong>N or A · P · F · πόλις</strong> — "cities"</td></tr>
-
-  <tr>
-    <td>20</td><td class="gk">τὴν χάριτα</td>
-    <td><input class="parse-field" id="c20" placeholder="N/G/D/A"></td>
-    <td><input class="parse-field" id="n20" placeholder="S/P"></td>
-    <td><input class="parse-field" id="g20" placeholder="M/F/N"></td>
-    <td><input class="parse-field" id="l20" placeholder="lexical form"></td>
-    <td><input class="parse-field-lg" id="t20" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r20')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r20"><td colspan="8"><strong>A · S · F · χάρις</strong> — "grace" (direct object, with article)</td></tr>
-
-</table>
-
-<script>
-function toggle(id) {
-  var row = document.getElementById(id);
-  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(function(r){ r.style.display='table-row'; });
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(function(r){ r.style.display='none'; });
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('.parse-field, .parse-field-lg').forEach(function(i){ i.value=''; });
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

@@ -1,141 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<title>Ch19 — Future Active/Middle Parsing Drill</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
-  h1 { font-size: 1.4em; }
-  p.subtitle { color: #555; font-style: italic; }
-  .controls { margin: 1em 0; display: flex; gap: 0.6em; flex-wrap: wrap; }
-  .controls button { padding: 0.4em 1em; font-size: 0.9em; cursor: pointer; border: 1px solid #888; border-radius: 4px; background: #f5f5f5; }
-  .controls button:hover { background: #e0e0e0; }
-  table { border-collapse: collapse; width: 100%; font-size: 0.88em; }
-  th { background: #3a5a8a; color: #fff; padding: 0.5em 0.4em; text-align: left; }
-  td { border: 1px solid #ccc; padding: 0.35em 0.4em; vertical-align: middle; }
-  tr:nth-child(even) td { background: #f8f8f8; }
-  .greek { font-size: 1.1em; font-weight: bold; }
-  input.parse-field {
-    width: 100%;
-    min-width: 80px;
-    border: none;
-    border-bottom: 1px solid #999;
-    background: transparent;
-    font-size: 0.88em;
-    padding: 1px 2px;
-    box-sizing: border-box;
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 19 — Future Active and Middle Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 19 — Future Active and Middle Parsing Drill</h1><p class="subtitle">BBG Chapter 19 · Future Active and Middle Indicative</p><div class="instructions">Provide: Tense · Voice · Person · Number · Lexical Form · Translation. Items 17–20 are future middle or deponent — identify voice correctly.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Parsing Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Tense</th><th>Voice</th><th>Person</th><th>Number</th><th>Lexical Form</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">λύσω</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">λύσω</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>I will loose</strong></td><td></td></tr><tr><td>2</td><td class="greek">λύσεις</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">λύσεις</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>You will loose</strong></td><td></td></tr><tr><td>3</td><td class="greek">λύσει</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">λύσει</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>He/she will loose</strong></td><td></td></tr><tr><td>4</td><td class="greek">λύσομεν</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">λύσομεν</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>We will loose</strong></td><td></td></tr><tr><td>5</td><td class="greek">λύσετε</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">λύσετε</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>You (pl) will loose</strong></td><td></td></tr><tr><td>6</td><td class="greek">λύσουσιν</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">λύσουσιν</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>They will loose</strong></td><td></td></tr><tr><td>7</td><td class="greek">γράψω</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">γράψω</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>γράφω</strong></td><td><strong>I will write</strong></td><td></td></tr><tr><td>8</td><td class="greek">ἄξει</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">ἄξει</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἄγω</strong></td><td><strong>He/she will lead</strong></td><td></td></tr><tr><td>9</td><td class="greek">πείσομεν</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">πείσομεν</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>πείθω</strong></td><td><strong>We will persuade</strong></td><td></td></tr><tr><td>10</td><td class="greek">βλέψετε</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">βλέψετε</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>2nd</strong></td><td><strong>Pl</strong></td><td><strong>βλέπω</strong></td><td><strong>You (pl) will see</strong></td><td></td></tr><tr><td>11</td><td class="greek">ἀγαπήσω</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">ἀγαπήσω</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>ἀγαπάω</strong></td><td><strong>I will love</strong></td><td></td></tr><tr><td>12</td><td class="greek">ποιήσει</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ποιήσει</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ποιέω</strong></td><td><strong>He/she will do/make</strong></td><td></td></tr><tr><td>13</td><td class="greek">πληρώσομεν</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">πληρώσομεν</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Pl</strong></td><td><strong>πληρόω</strong></td><td><strong>We will fulfill</strong></td><td></td></tr><tr><td>14</td><td class="greek">μενῶ</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">μενῶ</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>μένω</strong></td><td><strong>I will remain</strong></td><td></td></tr><tr><td>15</td><td class="greek">μενεῖς</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">μενεῖς</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>2nd</strong></td><td><strong>Sg</strong></td><td><strong>μένω</strong></td><td><strong>You will remain</strong></td><td></td></tr><tr><td>16</td><td class="greek">ἐγερεῖ</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">ἐγερεῖ</td><td><strong>Fut</strong></td><td><strong>Act</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>ἐγείρω</strong></td><td><strong>He/she will raise</strong></td><td></td></tr><tr><td>17</td><td class="greek">λύσομαι</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">λύσομαι</td><td><strong>Fut</strong></td><td><strong>Mid</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>I will loose (for myself)</strong></td><td></td></tr><tr><td>18</td><td class="greek">λύσεται</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">λύσεται</td><td><strong>Fut</strong></td><td><strong>Mid</strong></td><td><strong>3rd</strong></td><td><strong>Sg</strong></td><td><strong>λύω</strong></td><td><strong>He/she will loose (for himself)</strong></td><td></td></tr><tr><td>19</td><td class="greek">λύσονται</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">λύσονται</td><td><strong>Fut</strong></td><td><strong>Mid</strong></td><td><strong>3rd</strong></td><td><strong>Pl</strong></td><td><strong>λύω</strong></td><td><strong>They will loose (for themselves)</strong></td><td></td></tr><tr><td>20</td><td class="greek">ὄψομαι</td><td><input class="pf" type="text"></td><td><select class="pf"><option value=""></option><option value="Act">Act</option><option value="Mid">Mid</option></select></td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option><option value="3rd">3rd</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">ὄψομαι</td><td><strong>Fut</strong></td><td><strong>Mid</strong></td><td><strong>1st</strong></td><td><strong>Sg</strong></td><td><strong>ὁράω</strong></td><td><strong>I will see (deponent)</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
-  input.parse-field:focus { outline: none; border-bottom-color: #3a5a8a; }
-  .btn-answer { padding: 0.2em 0.5em; font-size: 0.78em; cursor: pointer; border: 1px solid #aaa; border-radius: 3px; background: #fff; white-space: nowrap; }
-  .btn-answer:hover { background: #f0f0f0; }
-  tr.answer-row td { background: #d4edda !important; font-size: 0.85em; color: #155724; }
-  tr.answer-row { display: none; }
-  tr.answer-row.visible { display: table-row; }
-  .num-col { width: 2.5em; text-align: center; }
-  .form-col { width: 8em; }
-  @media print {
-    .controls, .btn-answer { display: none !important; }
-    input.parse-field { border-bottom: 1px solid #555; background: transparent; }
-    tr.answer-row { display: none !important; }
-  }
-</style>
-</head>
-<body>
-
-<h1>Ch19 — Future Active/Middle Parsing Drill</h1>
-<p class="subtitle">BBG Chapter 19 · Mounce 4th Edition — Parse each form: Tense · Voice · Mood · Person · Number · Lexical Form · Translation</p>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-<thead>
-  <tr>
-    <th class="num-col">#</th>
-    <th class="form-col">Form</th>
-    <th>Tense</th>
-    <th>Voice</th>
-    <th>Mood</th>
-    <th>Person</th>
-    <th>Number</th>
-    <th>Lexical Form</th>
-    <th>Translation</th>
-    <th></th>
-  </tr>
-</thead>
-<tbody id="drillBody">
-</tbody>
-</table>
-
-<script>
-const items = [
-  { num: 1,  form: "λύσω",       tense:"Future", voice:"Active",  mood:"Indicative", person:"1st", number:"Singular", lexical:"λύω",    trans:"I will loose" },
-  { num: 2,  form: "λύσεις",     tense:"Future", voice:"Active",  mood:"Indicative", person:"2nd", number:"Singular", lexical:"λύω",    trans:"You will loose" },
-  { num: 3,  form: "λύσει",      tense:"Future", voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",    trans:"He/she/it will loose" },
-  { num: 4,  form: "λύσομεν",    tense:"Future", voice:"Active",  mood:"Indicative", person:"1st", number:"Plural",   lexical:"λύω",    trans:"We will loose" },
-  { num: 5,  form: "λύσετε",     tense:"Future", voice:"Active",  mood:"Indicative", person:"2nd", number:"Plural",   lexical:"λύω",    trans:"You (pl) will loose" },
-  { num: 6,  form: "λύσουσιν",   tense:"Future", voice:"Active",  mood:"Indicative", person:"3rd", number:"Plural",   lexical:"λύω",    trans:"They will loose" },
-  { num: 7,  form: "γράψω",      tense:"Future", voice:"Active",  mood:"Indicative", person:"1st", number:"Singular", lexical:"γράφω",  trans:"I will write" },
-  { num: 8,  form: "ἄξει",       tense:"Future", voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἄγω",    trans:"He/she/it will lead" },
-  { num: 9,  form: "πείσομεν",   tense:"Future", voice:"Active",  mood:"Indicative", person:"1st", number:"Plural",   lexical:"πείθω",  trans:"We will persuade" },
-  { num: 10, form: "βλέψετε",    tense:"Future", voice:"Active",  mood:"Indicative", person:"2nd", number:"Plural",   lexical:"βλέπω",  trans:"You (pl) will see" },
-  { num: 11, form: "ἀγαπήσω",    tense:"Future", voice:"Active",  mood:"Indicative", person:"1st", number:"Singular", lexical:"ἀγαπάω", trans:"I will love" },
-  { num: 12, form: "ποιήσει",    tense:"Future", voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ποιέω",  trans:"He/she/it will do/make" },
-  { num: 13, form: "πληρώσομεν", tense:"Future", voice:"Active",  mood:"Indicative", person:"1st", number:"Plural",   lexical:"πληρόω", trans:"We will fill/fulfill" },
-  { num: 14, form: "μενῶ",       tense:"Future", voice:"Active",  mood:"Indicative", person:"1st", number:"Singular", lexical:"μένω",   trans:"I will remain (liquid future)" },
-  { num: 15, form: "μενεῖς",     tense:"Future", voice:"Active",  mood:"Indicative", person:"2nd", number:"Singular", lexical:"μένω",   trans:"You will remain (liquid future)" },
-  { num: 16, form: "ἐγερεῖ",     tense:"Future", voice:"Active",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"ἐγείρω", trans:"He/she/it will raise (liquid future)" },
-  { num: 17, form: "λύσομαι",    tense:"Future", voice:"Middle",  mood:"Indicative", person:"1st", number:"Singular", lexical:"λύω",    trans:"I will loose (for myself)" },
-  { num: 18, form: "λύσεται",    tense:"Future", voice:"Middle",  mood:"Indicative", person:"3rd", number:"Singular", lexical:"λύω",    trans:"He/she will loose (for himself/herself)" },
-  { num: 19, form: "λύσονται",   tense:"Future", voice:"Middle",  mood:"Indicative", person:"3rd", number:"Plural",   lexical:"λύω",    trans:"They will loose (for themselves)" },
-  { num: 20, form: "ὄψομαι",     tense:"Future", voice:"Middle",  mood:"Indicative", person:"1st", number:"Singular", lexical:"ὁράω",   trans:"I will see (deponent)" },
-];
-
-const fields = ["tense","voice","mood","person","number","lexical","trans"];
-
-function buildTable() {
-  const tbody = document.getElementById("drillBody");
-  items.forEach(item => {
-    const inputRow = document.createElement("tr");
-    inputRow.id = "row-" + item.num;
-    let cells = `<td class="num-col">${item.num}</td><td class="form-col greek">${item.form}</td>`;
-    fields.forEach(f => {
-      cells += `<td><input class="parse-field" type="text" aria-label="${f}"></td>`;
-    });
-    cells += `<td><button class="btn-answer" onclick="toggleAnswer(${item.num})">&#9658; Answer</button></td>`;
-    inputRow.innerHTML = cells;
-    tbody.appendChild(inputRow);
-
-    const ansRow = document.createElement("tr");
-    ansRow.id = "ans-" + item.num;
-    ansRow.className = "answer-row";
-    let ansCells = `<td class="num-col"></td><td class="form-col greek">${item.form}</td>`;
-    ansCells += `<td>${item.tense}</td><td>${item.voice}</td><td>${item.mood}</td>`;
-    ansCells += `<td>${item.person}</td><td>${item.number}</td>`;
-    ansCells += `<td>${item.lexical}</td><td>${item.trans}</td><td></td>`;
-    ansRow.innerHTML = ansCells;
-    tbody.appendChild(ansRow);
+}
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
+}
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
+}
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
   });
 }
-
-function toggleAnswer(num) {
-  const row = document.getElementById("ans-" + num);
-  row.classList.toggle("visible");
-}
-function showAll() {
-  document.querySelectorAll(".answer-row").forEach(r => r.classList.add("visible"));
-}
-function hideAll() {
-  document.querySelectorAll(".answer-row").forEach(r => r.classList.remove("visible"));
-}
-function clearAll() {
-  document.querySelectorAll("input.parse-field").forEach(i => i.value = "");
-}
-
-buildTable();
-</script>
-</body>
-</html>
+</script></body></html>

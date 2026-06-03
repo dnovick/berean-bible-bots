@@ -19,11 +19,11 @@ A 20-item parsing drill on the Greek subjunctive mood. Students parse each form 
 
 ## Sample Questions
 
-**Q1.** 1 ἦλθεν ἵνα σώσῃ τὸν κόσμον.
-> **A:** Aor · Act · 3rd · Sg · σῴζω · Purpose (ἵνα) · "He came in order to save the world."
+**Q1.** 1 σώσῃ Aor Pres Act Pass 1st 2nd 3rd Pl Sg 3rd class (ἐάν) Emphatic denial (οὐ μή) Hortatory Indefinite (ὃς ἄν) Indefinite (ὅταν) Prohibition (μή+aor) Prohibition (μή+pres) Purpose (ἵνα) Purpose (ἵνα) neg. &#9654;
+> **A:** 1 σώσῃ Aor Act 3rd Sg Subj σῴζω Purpose (ἵνα) He came in order to save the world.
 
-**Q2.** 2 πέμψω αὐτὸν πρὸς ὑμᾶς ἵνα παρακαλέσῃ ὑμᾶς.
-> **A:** Aor · Act · 3rd · Sg · παρακαλέω · Purpose (ἵνα) · "I will send him to you so that he might encourage you."
+**Q2.** 2 παρακαλέσῃ Aor Pres Act Pass 1st 2nd 3rd Pl Sg 3rd class (ἐάν) Emphatic denial (οὐ μή) Hortatory Indefinite (ὃς ἄν) Indefinite (ὅταν) Prohibition (μή+aor) Prohibition (μή+pres) Purpose (ἵνα) Purpose (ἵνα) neg. &#9654;
+> **A:** 2 παρακαλέσῃ Aor Act 3rd Sg Subj παρακαλέω Purpose (ἵνα) I will send him to you so that he might encourage you.
 
-**Q3.** 3 ταῦτα γέγραπται ἵνα πιστεύητε ὅτι Ἰησοῦς ἐστιν ὁ Χριστός.
-> **A:** Pres · Act · 2nd · Pl · πιστεύω · Purpose (ἵνα) · "These things were written so that you may believe that Jesus is the Christ." (cf. John 20:31)
+**Q3.** 3 πιστεύητε Aor Pres Act Pass 1st 2nd 3rd Pl Sg 3rd class (ἐάν) Emphatic denial (οὐ μή) Hortatory Indefinite (ὃς ἄν) Indefinite (ὅταν) Prohibition (μή+aor) Prohibition (μή+pres) Purpose (ἵνα) Purpose (ἵνα) neg. &#9654;
+> **A:** 3 πιστεύητε Pres Act 2nd Pl Subj πιστεύω Purpose (ἵνα) These things were written so that you may believe Jesus is the Christ.

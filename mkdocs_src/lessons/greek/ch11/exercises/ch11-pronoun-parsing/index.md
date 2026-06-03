@@ -16,11 +16,11 @@ A 20-item parsing drill covering 1st and 2nd person pronoun forms. Students iden
 
 ## Sample Questions
 
-**Q1.** 1 ἐγώ &#9658; Answer
-> **A:** 1st · Nom · Sg — "I" (emphatic subject)
+**Q1.** 1 ἐγώ 1st 2nd Acc Dat Gen Nom Pl Sg &#9654;
+> **A:** 1 ἐγώ 1st Nom Sg "I" (emphatic subject)
 
-**Q2.** 2 μου &#9658; Answer
-> **A:** 1st · Gen · Sg — "my" / "of me" (enclitic)
+**Q2.** 2 μου 1st 2nd Acc Dat Gen Nom Pl Sg &#9654;
+> **A:** 2 μου 1st Gen Sg "my / of me" (enclitic)
 
-**Q3.** 3 σύ &#9658; Answer
-> **A:** 2nd · Nom · Sg — "you" (emphatic subject)
+**Q3.** 3 σύ 1st 2nd Acc Dat Gen Nom Pl Sg &#9654;
+> **A:** 3 σύ 2nd Nom Sg "you" (emphatic subject)

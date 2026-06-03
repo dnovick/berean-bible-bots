@@ -16,11 +16,11 @@ A 20-item parsing drill covering 2nd-declension masculine and neuter noun forms 
 
 ## Sample Questions
 
-**Q1.** 1 τοῦ θεοῦ &#9658; Answer
-> **A:** G · S · M · θεός — "of God" / "God's"
+**Q1.** 1 τοῦ θεοῦ D G P S M N &#9654;
+> **A:** 1 τοῦ θεοῦ G S M θεός "of God" / "God's"
 
-**Q2.** 2 τῷ κυρίῳ &#9658; Answer
-> **A:** D · S · M · κύριος — "to/for the Lord"
+**Q2.** 2 τῷ κυρίῳ D G P S M N &#9654;
+> **A:** 2 τῷ κυρίῳ D S M κύριος "to/for the Lord"
 
-**Q3.** 3 λόγων &#9658; Answer
-> **A:** G · P · M · λόγος — "of words"
+**Q3.** 3 λόγων D G P S M N &#9654;
+> **A:** 3 λόγων G P M λόγος "of words"

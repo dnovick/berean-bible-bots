@@ -15,11 +15,11 @@
 
 ## Sample Questions
 
-**Q1.** 1 ὁ ἄνθρωπος ὃν εἶδον ὃν
-> **A:** Masculine · Accusative · Singular | Antecedent: ὁ ἄνθρωπος | "the man whom I saw" — direct object of εἶδον
+**Q1.** 1 ὁ ἄνθρωπος ὃν εἶδον F M N A D G N P S &#9654;
+> **A:** 1 ὁ ἄνθρωπος ὃν εἶδον M A S ὁ ἄνθρωπος "the man whom I saw"
 
-**Q2.** 2 ἡ γυνή ἣν ἀγαπᾷς ἣν
-> **A:** Feminine · Accusative · Singular | Antecedent: ἡ γυνή | "the woman whom you love" — direct object of ἀγαπᾷς
+**Q2.** 2 ἡ γυνή ἣν ἀγαπᾷς F M N A D G N P S &#9654;
+> **A:** 2 ἡ γυνή ἣν ἀγαπᾷς F A S ἡ γυνή "the woman whom you love"
 
-**Q3.** 3 τὸ τέκνον ὃ εἶχεν ὃ
-> **A:** Neuter · Accusative · Singular | Antecedent: τὸ τέκνον | "the child that he had" — direct object of εἶχεν
+**Q3.** 3 τὸ τέκνον ὃ εἶχεν F M N A D G N P S &#9654;
+> **A:** 3 τὸ τέκνον ὃ εἶχεν N A S τὸ τέκνον "the child that he had"

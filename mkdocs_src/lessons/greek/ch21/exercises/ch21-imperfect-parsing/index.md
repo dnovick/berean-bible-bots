@@ -16,11 +16,11 @@
 
 ## Sample Questions
 
-**Q1.** ἔλυον
-> **A:** Imperfect · Active · Indicative · 1st · Singular · Syllabic (ε-) · λύω · I was loosing
+**Q1.** 1 ἔλυον Act Mid/Pass 1/3rd 1st 2nd 3rd Pl Sg Sg/Pl Syllabic (after ἐκ-) Syllabic (ε-) Temporal (after πρός-) Temporal (αυ→ηυ) Temporal (α→η) Temporal (εἰμί) Temporal (ε→η) &#9654;
+> **A:** 1 ἔλυον Act 1/3rd Sg/Pl Syllabic (ε-) λύω I was loosing / they were loosing
 
-**Q2.** ἔλυες
-> **A:** Imperfect · Active · Indicative · 2nd · Singular · Syllabic (ε-) · λύω · You were loosing
+**Q2.** 2 ἔλυες Act Mid/Pass 1/3rd 1st 2nd 3rd Pl Sg Sg/Pl Syllabic (after ἐκ-) Syllabic (ε-) Temporal (after πρός-) Temporal (αυ→ηυ) Temporal (α→η) Temporal (εἰμί) Temporal (ε→η) &#9654;
+> **A:** 2 ἔλυες Act 2nd Sg Syllabic (ε-) λύω You were loosing
 
-**Q3.** ἔλυεν
-> **A:** Imperfect · Active · Indicative · 3rd · Singular · Syllabic (ε-) · λύω · He/she/it was loosing
+**Q3.** 3 ἔλυεν Act Mid/Pass 1/3rd 1st 2nd 3rd Pl Sg Sg/Pl Syllabic (after ἐκ-) Syllabic (ε-) Temporal (after πρός-) Temporal (αυ→ηυ) Temporal (α→η) Temporal (εἰμί) Temporal (ε→η) &#9654;
+> **A:** 3 ἔλυεν Act 3rd Sg Syllabic (ε-) λύω He/she was loosing

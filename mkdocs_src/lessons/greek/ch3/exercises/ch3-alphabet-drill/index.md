@@ -14,11 +14,11 @@ A 24-item drill covering all letters of the Greek alphabet. Students identify th
 
 ## Sample Questions
 
-**Q1.** 1 α
-> **A:** Alpha — "father" (long α) or "along" (short α); length varies
+**Q1.** 1 α &#9654;
+> **A:** 1 α Alpha "father" (long) / "along" (short)
 
-**Q2.** 2 β
-> **A:** Beta — "b" as in "Bible"
+**Q2.** 2 β &#9654;
+> **A:** 2 β Beta "b" as in "Bible"
 
-**Q3.** 3 γ
-> **A:** Gamma — "g" as in "gone" (hard g); but before γ, κ, χ, ξ it sounds like "ng" in "sing" — e.g., ἄγγελος = "ang-ge-los"
+**Q3.** 3 γ &#9654;
+> **A:** 3 γ Gamma "g" as in "gone"; "ng" before γ κ χ ξ

@@ -1,271 +1,49 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 11 — Personal Pronoun Parsing Drill</title>
-<style>
-  body { font-family: Georgia, serif; max-width: 900px; margin: 2em auto; padding: 0 1.5em; color: #222; }
-  h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
-  .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
-  td { border: 1px solid #ccc; padding: .4em .6em; font-size: .9em; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .gk { font-size: 1.15em; }
-  .parse-field { width: 92%; font-size: .85em; border: 1px solid #aaa; border-radius: 3px; padding: 2px 4px; }
-  .parse-field-lg { width: 97%; font-size: .85em; border: 1px solid #aaa; border-radius: 3px; padding: 2px 4px; }
-  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
-  .answer-row { display: none; }
-  button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
-  .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
-  .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
-  .controls button:hover { background: #ddd; }
-  .tip { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
-  @media print {
-    button, .controls { display: none !important; }
-    .parse-field, .parse-field-lg { border: none; border-bottom: 1px solid #000; background: transparent; }
-    .answer-row { display: table-row !important; }
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Chapter 11 — Personal Pronoun Parsing Drill</title><style>
+body{font-family:Georgia,serif;max-width:1000px;margin:2rem auto;padding:0 1rem;font-size:.92rem}
+h1{font-size:1.3rem}h2{font-size:1rem;margin-top:1.6rem;border-bottom:1px solid #ccc;padding-bottom:.25rem}
+.subtitle{color:#555;font-style:italic;margin-top:-.4rem}
+.greek{font-size:1.05em}
+table{width:100%;border-collapse:collapse;margin:.5rem 0}
+th,td{border:1px solid #ccc;padding:.3rem .4rem;font-size:.86rem;vertical-align:middle}
+th{background:#f0f0f0;font-weight:bold;white-space:nowrap}
+select.pf,input.pf{width:100%;box-sizing:border-box;border:none;
+font-family:inherit;font-size:.86rem;background:#fafafa;padding:2px}
+select.pf:focus,input.pf:focus{outline:1px solid #888;background:#fff}
+.ans-row{display:none}
+.ans-row td{background:#e8f5e9!important;color:#1b5e20;font-size:.82rem}
+.rev-btn{margin-top:.2rem;padding:.15rem .5rem;font-size:.8rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.rev-btn:hover{background:#e0e0e0}
+.controls{margin:.8rem 0;display:flex;gap:.5rem;flex-wrap:wrap}
+.controls button{padding:.25rem .7rem;font-size:.82rem;cursor:pointer;
+border:1px solid #999;background:#f5f5f5;border-radius:3px}
+.controls button:hover{background:#e0e0e0}
+.instructions{background:#f9f9f9;border-left:3px solid #1a4a7a;padding:.5rem .7rem;
+margin:.8rem 0;font-size:.88rem}
+@media print{.controls,.rev-btn{display:none}
+.pf{border-bottom:1px solid #333;background:transparent}
+.ans-row{display:none!important}}
+</style></head><body><h1>Chapter 11 — Personal Pronoun Parsing Drill</h1><p class="subtitle">BBG Chapter 11 · First and Second Person Pronouns</p><div class="instructions">Parse each pronoun: Person (1st/2nd), Case (Nom/Gen/Dat/Acc), Number (Sg/Pl), and Translation.</div><div class="controls"><button onclick="showAll()">Show All Answers</button><button onclick="hideAll()">Hide All Answers</button><button onclick="clearAll()">Clear All Inputs</button></div><h2>Drill Table</h2><table><thead><tr><th>#</th><th>Form</th><th>Person</th><th>Case</th><th>Number</th><th>Translation</th><th></th></tr></thead><tbody><tr><td>1</td><td class="greek">ἐγώ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r1" onclick="toggle('s0r1')">&#9654;</button></td></tr><tr class="ans-row" id="s0r1"><td>1</td><td class="greek">ἐγώ</td><td><strong>1st</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>"I" (emphatic subject)</strong></td><td></td></tr><tr><td>2</td><td class="greek">μου</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r2" onclick="toggle('s0r2')">&#9654;</button></td></tr><tr class="ans-row" id="s0r2"><td>2</td><td class="greek">μου</td><td><strong>1st</strong></td><td><strong>Gen</strong></td><td><strong>Sg</strong></td><td><strong>"my / of me" (enclitic)</strong></td><td></td></tr><tr><td>3</td><td class="greek">σύ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r3" onclick="toggle('s0r3')">&#9654;</button></td></tr><tr class="ans-row" id="s0r3"><td>3</td><td class="greek">σύ</td><td><strong>2nd</strong></td><td><strong>Nom</strong></td><td><strong>Sg</strong></td><td><strong>"you" (emphatic subject)</strong></td><td></td></tr><tr><td>4</td><td class="greek">ἡμεῖς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r4" onclick="toggle('s0r4')">&#9654;</button></td></tr><tr class="ans-row" id="s0r4"><td>4</td><td class="greek">ἡμεῖς</td><td><strong>1st</strong></td><td><strong>Nom</strong></td><td><strong>Pl</strong></td><td><strong>"we"</strong></td><td></td></tr><tr><td>5</td><td class="greek">ὑμῶν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r5" onclick="toggle('s0r5')">&#9654;</button></td></tr><tr class="ans-row" id="s0r5"><td>5</td><td class="greek">ὑμῶν</td><td><strong>2nd</strong></td><td><strong>Gen</strong></td><td><strong>Pl</strong></td><td><strong>"your (pl.) / of you"</strong></td><td></td></tr><tr><td>6</td><td class="greek">μοι</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r6" onclick="toggle('s0r6')">&#9654;</button></td></tr><tr class="ans-row" id="s0r6"><td>6</td><td class="greek">μοι</td><td><strong>1st</strong></td><td><strong>Dat</strong></td><td><strong>Sg</strong></td><td><strong>"to/for me" (enclitic)</strong></td><td></td></tr><tr><td>7</td><td class="greek">σοί</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r7" onclick="toggle('s0r7')">&#9654;</button></td></tr><tr class="ans-row" id="s0r7"><td>7</td><td class="greek">σοί</td><td><strong>2nd</strong></td><td><strong>Dat</strong></td><td><strong>Sg</strong></td><td><strong>"to/for you" (emphatic)</strong></td><td></td></tr><tr><td>8</td><td class="greek">ἡμᾶς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r8" onclick="toggle('s0r8')">&#9654;</button></td></tr><tr class="ans-row" id="s0r8"><td>8</td><td class="greek">ἡμᾶς</td><td><strong>1st</strong></td><td><strong>Acc</strong></td><td><strong>Pl</strong></td><td><strong>"us"</strong></td><td></td></tr><tr><td>9</td><td class="greek">σε</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r9" onclick="toggle('s0r9')">&#9654;</button></td></tr><tr class="ans-row" id="s0r9"><td>9</td><td class="greek">σε</td><td><strong>2nd</strong></td><td><strong>Acc</strong></td><td><strong>Sg</strong></td><td><strong>"you" (enclitic)</strong></td><td></td></tr><tr><td>10</td><td class="greek">ἐμέ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r10" onclick="toggle('s0r10')">&#9654;</button></td></tr><tr class="ans-row" id="s0r10"><td>10</td><td class="greek">ἐμέ</td><td><strong>1st</strong></td><td><strong>Acc</strong></td><td><strong>Sg</strong></td><td><strong>"me" (emphatic)</strong></td><td></td></tr><tr><td>11</td><td class="greek">ὑμεῖς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r11" onclick="toggle('s0r11')">&#9654;</button></td></tr><tr class="ans-row" id="s0r11"><td>11</td><td class="greek">ὑμεῖς</td><td><strong>2nd</strong></td><td><strong>Nom</strong></td><td><strong>Pl</strong></td><td><strong>"you (pl.)"</strong></td><td></td></tr><tr><td>12</td><td class="greek">ἡμῖν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r12" onclick="toggle('s0r12')">&#9654;</button></td></tr><tr class="ans-row" id="s0r12"><td>12</td><td class="greek">ἡμῖν</td><td><strong>1st</strong></td><td><strong>Dat</strong></td><td><strong>Pl</strong></td><td><strong>"to/for us"</strong></td><td></td></tr><tr><td>13</td><td class="greek">σου</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r13" onclick="toggle('s0r13')">&#9654;</button></td></tr><tr class="ans-row" id="s0r13"><td>13</td><td class="greek">σου</td><td><strong>2nd</strong></td><td><strong>Gen</strong></td><td><strong>Sg</strong></td><td><strong>"your / of you" (enclitic)</strong></td><td></td></tr><tr><td>14</td><td class="greek">ὑμᾶς</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r14" onclick="toggle('s0r14')">&#9654;</button></td></tr><tr class="ans-row" id="s0r14"><td>14</td><td class="greek">ὑμᾶς</td><td><strong>2nd</strong></td><td><strong>Acc</strong></td><td><strong>Pl</strong></td><td><strong>"you (pl.)"</strong></td><td></td></tr><tr><td>15</td><td class="greek">ἐμοῦ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r15" onclick="toggle('s0r15')">&#9654;</button></td></tr><tr class="ans-row" id="s0r15"><td>15</td><td class="greek">ἐμοῦ</td><td><strong>1st</strong></td><td><strong>Gen</strong></td><td><strong>Sg</strong></td><td><strong>"my / of me" (emphatic)</strong></td><td></td></tr><tr><td>16</td><td class="greek">ὑμῖν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r16" onclick="toggle('s0r16')">&#9654;</button></td></tr><tr class="ans-row" id="s0r16"><td>16</td><td class="greek">ὑμῖν</td><td><strong>2nd</strong></td><td><strong>Dat</strong></td><td><strong>Pl</strong></td><td><strong>"to/for you (pl.)"</strong></td><td></td></tr><tr><td>17</td><td class="greek">με</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r17" onclick="toggle('s0r17')">&#9654;</button></td></tr><tr class="ans-row" id="s0r17"><td>17</td><td class="greek">με</td><td><strong>1st</strong></td><td><strong>Acc</strong></td><td><strong>Sg</strong></td><td><strong>"me" (enclitic)</strong></td><td></td></tr><tr><td>18</td><td class="greek">σοῦ</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r18" onclick="toggle('s0r18')">&#9654;</button></td></tr><tr class="ans-row" id="s0r18"><td>18</td><td class="greek">σοῦ</td><td><strong>2nd</strong></td><td><strong>Gen</strong></td><td><strong>Sg</strong></td><td><strong>"your / of you" (emphatic)</strong></td><td></td></tr><tr><td>19</td><td class="greek">ἡμῶν</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r19" onclick="toggle('s0r19')">&#9654;</button></td></tr><tr class="ans-row" id="s0r19"><td>19</td><td class="greek">ἡμῶν</td><td><strong>1st</strong></td><td><strong>Gen</strong></td><td><strong>Pl</strong></td><td><strong>"our / of us"</strong></td><td></td></tr><tr><td>20</td><td class="greek">ἐμοί</td><td><select class="pf"><option value=""></option><option value="1st">1st</option><option value="2nd">2nd</option></select></td><td><select class="pf"><option value=""></option><option value="Acc">Acc</option><option value="Dat">Dat</option><option value="Gen">Gen</option><option value="Nom">Nom</option></select></td><td><select class="pf"><option value=""></option><option value="Pl">Pl</option><option value="Sg">Sg</option></select></td><td><input class="pf" type="text"></td><td><button class="rev-btn" id="bs0r20" onclick="toggle('s0r20')">&#9654;</button></td></tr><tr class="ans-row" id="s0r20"><td>20</td><td class="greek">ἐμοί</td><td><strong>1st</strong></td><td><strong>Dat</strong></td><td><strong>Sg</strong></td><td><strong>"to/for me" (emphatic)</strong></td><td></td></tr></tbody></table><script>
+function toggle(id){
+  var r=document.getElementById(id);
+  var btn=document.getElementById('b'+id);
+  if(r.style.display==='table-row'){
+    r.style.display='none'; if(btn)btn.textContent='▶';
+  }else{
+    r.style.display='table-row'; if(btn)btn.textContent='▼';
   }
-</style>
-</head>
-<body>
-
-
-<h1>Chapter 11 — Personal Pronoun Parsing Drill</h1>
-<p class="subtitle">BBG Chapter 11 · First and Second Person Personal Pronouns</p>
-
-<p>Parse each pronoun: <strong>Person</strong> (1st/2nd), <strong>Case</strong> (Nom/Gen/Dat/Acc), <strong>Number</strong> (Sg/Pl), and <strong>Translation</strong>.</p>
-
-<div class="tip">
-  <strong>Reminder:</strong> 1st person singular: ἐγώ / ἐμοῦ (μου) / ἐμοί (μοι) / ἐμέ (με). Plural: ἡμεῖς / ἡμῶν / ἡμῖν / ἡμᾶς. 2nd person singular: σύ / σοῦ (σου) / σοί (σοι) / σέ (σε). Plural: ὑμεῖς / ὑμῶν / ὑμῖν / ὑμᾶς. Accented forms are emphatic; unaccented (enclitic) are unemphatic.
-</div>
-
-<div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
-</div>
-
-<table>
-  <tr><th>#</th><th>Greek Form</th><th>Person</th><th>Case</th><th>Number</th><th>Translation</th><th></th></tr>
-
-  <tr>
-    <td>1</td><td class="gk">ἐγώ</td>
-    <td><input class="parse-field" id="p1" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c1" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n1" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t1" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r1')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r1"><td colspan="7"><strong>1st · Nom · Sg</strong> — "I" (emphatic subject)</td></tr>
-
-  <tr>
-    <td>2</td><td class="gk">μου</td>
-    <td><input class="parse-field" id="p2" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c2" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n2" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t2" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r2')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r2"><td colspan="7"><strong>1st · Gen · Sg</strong> — "my" / "of me" (enclitic)</td></tr>
-
-  <tr>
-    <td>3</td><td class="gk">σύ</td>
-    <td><input class="parse-field" id="p3" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c3" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n3" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t3" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r3')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r3"><td colspan="7"><strong>2nd · Nom · Sg</strong> — "you" (emphatic subject)</td></tr>
-
-  <tr>
-    <td>4</td><td class="gk">ἡμεῖς</td>
-    <td><input class="parse-field" id="p4" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c4" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n4" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t4" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r4')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r4"><td colspan="7"><strong>1st · Nom · Pl</strong> — "we"</td></tr>
-
-  <tr>
-    <td>5</td><td class="gk">ὑμῶν</td>
-    <td><input class="parse-field" id="p5" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c5" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n5" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t5" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r5')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r5"><td colspan="7"><strong>2nd · Gen · Pl</strong> — "your (pl.)" / "of you (pl.)"</td></tr>
-
-  <tr>
-    <td>6</td><td class="gk">μοι</td>
-    <td><input class="parse-field" id="p6" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c6" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n6" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t6" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r6')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r6"><td colspan="7"><strong>1st · Dat · Sg</strong> — "to/for me" (enclitic)</td></tr>
-
-  <tr>
-    <td>7</td><td class="gk">σοί</td>
-    <td><input class="parse-field" id="p7" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c7" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n7" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t7" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r7')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r7"><td colspan="7"><strong>2nd · Dat · Sg</strong> — "to/for you" (emphatic)</td></tr>
-
-  <tr>
-    <td>8</td><td class="gk">ἡμᾶς</td>
-    <td><input class="parse-field" id="p8" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c8" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n8" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t8" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r8')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r8"><td colspan="7"><strong>1st · Acc · Pl</strong> — "us"</td></tr>
-
-  <tr>
-    <td>9</td><td class="gk">σε</td>
-    <td><input class="parse-field" id="p9" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c9" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n9" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t9" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r9')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r9"><td colspan="7"><strong>2nd · Acc · Sg</strong> — "you" (enclitic)</td></tr>
-
-  <tr>
-    <td>10</td><td class="gk">ἐμέ</td>
-    <td><input class="parse-field" id="p10" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c10" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n10" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t10" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r10')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r10"><td colspan="7"><strong>1st · Acc · Sg</strong> — "me" (emphatic)</td></tr>
-
-  <tr>
-    <td>11</td><td class="gk">ὑμεῖς</td>
-    <td><input class="parse-field" id="p11" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c11" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n11" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t11" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r11')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r11"><td colspan="7"><strong>2nd · Nom · Pl</strong> — "you (pl.)"</td></tr>
-
-  <tr>
-    <td>12</td><td class="gk">ἡμῖν</td>
-    <td><input class="parse-field" id="p12" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c12" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n12" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t12" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r12')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r12"><td colspan="7"><strong>1st · Dat · Pl</strong> — "to/for us"</td></tr>
-
-  <tr>
-    <td>13</td><td class="gk">σου</td>
-    <td><input class="parse-field" id="p13" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c13" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n13" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t13" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r13')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r13"><td colspan="7"><strong>2nd · Gen · Sg</strong> — "your" / "of you" (enclitic)</td></tr>
-
-  <tr>
-    <td>14</td><td class="gk">ὑμᾶς</td>
-    <td><input class="parse-field" id="p14" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c14" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n14" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t14" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r14')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r14"><td colspan="7"><strong>2nd · Acc · Pl</strong> — "you (pl.)"</td></tr>
-
-  <tr>
-    <td>15</td><td class="gk">ἐμοῦ</td>
-    <td><input class="parse-field" id="p15" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c15" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n15" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t15" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r15')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r15"><td colspan="7"><strong>1st · Gen · Sg</strong> — "my" / "of me" (emphatic)</td></tr>
-
-  <tr>
-    <td>16</td><td class="gk">ὑμῖν</td>
-    <td><input class="parse-field" id="p16" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c16" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n16" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t16" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r16')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r16"><td colspan="7"><strong>2nd · Dat · Pl</strong> — "to/for you (pl.)"</td></tr>
-
-  <tr>
-    <td>17</td><td class="gk">με</td>
-    <td><input class="parse-field" id="p17" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c17" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n17" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t17" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r17')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r17"><td colspan="7"><strong>1st · Acc · Sg</strong> — "me" (enclitic)</td></tr>
-
-  <tr>
-    <td>18</td><td class="gk">σοῦ</td>
-    <td><input class="parse-field" id="p18" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c18" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n18" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t18" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r18')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r18"><td colspan="7"><strong>2nd · Gen · Sg</strong> — "your" / "of you" (emphatic)</td></tr>
-
-  <tr>
-    <td>19</td><td class="gk">ἡμῶν</td>
-    <td><input class="parse-field" id="p19" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c19" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n19" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t19" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r19')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r19"><td colspan="7"><strong>1st · Gen · Pl</strong> — "our" / "of us"</td></tr>
-
-  <tr>
-    <td>20</td><td class="gk">ἐμοί</td>
-    <td><input class="parse-field" id="p20" placeholder="1st/2nd"></td>
-    <td><input class="parse-field" id="c20" placeholder="Nom/Gen/Dat/Acc"></td>
-    <td><input class="parse-field" id="n20" placeholder="Sg/Pl"></td>
-    <td><input class="parse-field-lg" id="t20" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('r20')">&#9658; Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r20"><td colspan="7"><strong>1st · Dat · Sg</strong> — "to/for me" (emphatic)</td></tr>
-
-</table>
-
-<script>
-function toggle(id) {
-  var row = document.getElementById(id);
-  row.style.display = (row.style.display === 'table-row') ? 'none' : 'table-row';
 }
-function showAll() {
-  document.querySelectorAll('.answer-row').forEach(function(r){ r.style.display='table-row'; });
+function showAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='table-row';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▼';});
 }
-function hideAll() {
-  document.querySelectorAll('.answer-row').forEach(function(r){ r.style.display='none'; });
+function hideAll(){
+  document.querySelectorAll('.ans-row').forEach(function(r){r.style.display='none';});
+  document.querySelectorAll('.rev-btn').forEach(function(b){b.textContent='▶';});
 }
-function clearAll() {
-  document.querySelectorAll('.parse-field, .parse-field-lg').forEach(function(i){ i.value=''; });
+function clearAll(){
+  document.querySelectorAll('.pf').forEach(function(f){
+    if(f.tagName==='SELECT')f.value='';else f.value='';
+  });
 }
-</script>
-</body>
-</html>
+</script></body></html>

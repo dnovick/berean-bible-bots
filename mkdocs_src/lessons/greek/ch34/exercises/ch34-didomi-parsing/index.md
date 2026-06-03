@@ -18,11 +18,11 @@ A 20-item parsing drill on the indicative forms of δίδωμι and its compound
 
 ## Sample Questions
 
-**Q1.** 1 ἐγὼ δίδωμι αὐτοῖς ζωὴν αἰώνιον.
-> **A:** Pres · Act · 1st · Sg · δίδωμι · "I give them eternal life." (John 10:28)
+**Q1.** 1 ἔδωκεν Aor Impf Pres Act Pass 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 ἔδωκεν Aor Act 3rd Sg δίδωμι God so loved the world that he gave his only Son.
 
-**Q2.** 2 ὁ πατήρ μου δίδωσίν ὑμῖν τὸν ἄρτον ἐκ τοῦ οὐρανοῦ.
-> **A:** Pres · Act · 3rd · Sg · δίδωμι · "My Father gives you the bread from heaven." (John 6:32)
+**Q2.** 2 δίδωμι Aor Impf Pres Act Pass 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 δίδωμι Pres Act 1st Sg δίδωμι I give them eternal life.
 
-**Q3.** 3 ἡμεῖς δίδομεν δόξαν τῷ θεῷ.
-> **A:** Pres · Act · 1st · Pl · δίδωμι · "We give glory to God."
+**Q3.** 3 δίδωσίν Aor Impf Pres Act Pass 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 δίδωσίν Pres Act 3rd Sg δίδωμι My Father gives you the bread from heaven.

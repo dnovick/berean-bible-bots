@@ -15,11 +15,11 @@ A 20-item pattern drill presenting prohibition sentences drawn from or modeled o
 
 ## Sample Questions
 
-**Q1.** 1 μὴ κλαίετε
-> **A:** STOP · Present · Imperative · κλαίω · Stop weeping
+**Q1.** 1 μὴ κλαίετε DONT STOP Aor Pres Imperative Subjunctive &#9654;
+> **A:** 1 μὴ κλαίετε STOP Pres Imperative κλαίω Stop weeping
 
-**Q2.** 2 μὴ φοβηθῇς
-> **A:** DONT · Aorist · Subjunctive · φοβέομαι · Do not be afraid (don't start)
+**Q2.** 2 μὴ φοβηθῇς DONT STOP Aor Pres Imperative Subjunctive &#9654;
+> **A:** 2 μὴ φοβηθῇς DONT Aor Subjunctive φοβέομαι Do not be afraid
 
-**Q3.** 3 μὴ νομίζετε ὅτι ἦλθον
-> **A:** STOP · Present · Imperative · νομίζω · Do not think (stop thinking) that I came
+**Q3.** 3 μὴ νομίζετε ὅτι ἦλθον DONT STOP Aor Pres Imperative Subjunctive &#9654;
+> **A:** 3 μὴ νομίζετε ὅτι ἦλθον STOP Pres Imperative νομίζω Stop thinking that I came

@@ -16,11 +16,11 @@ A 20-item drill drawn from GNT prepositional phrases. Students identify the prep
 
 ## Sample Questions
 
-**Q1.** 1 ἐν τῷ κόσμῳ &#9658; Answer
-> **A:** ἐν · Dat — "in the world"
+**Q1.** 1 ἐν τῷ κόσμῳ Acc Dat Gen &#9654;
+> **A:** 1 ἐν τῷ κόσμῳ ἐν Dat "in the world"
 
-**Q2.** 2 εἰς τὴν βασιλείαν &#9658; Answer
-> **A:** εἰς · Acc — "into the kingdom"
+**Q2.** 2 εἰς τὴν βασιλείαν Acc Dat Gen &#9654;
+> **A:** 2 εἰς τὴν βασιλείαν εἰς Acc "into the kingdom"
 
-**Q3.** 3 ἐκ τοῦ οὐρανοῦ &#9658; Answer
-> **A:** ἐκ · Gen — "out of heaven"
+**Q3.** 3 ἐκ τοῦ οὐρανοῦ Acc Dat Gen &#9654;
+> **A:** 3 ἐκ τοῦ οὐρανοῦ ἐκ Gen "out of heaven"

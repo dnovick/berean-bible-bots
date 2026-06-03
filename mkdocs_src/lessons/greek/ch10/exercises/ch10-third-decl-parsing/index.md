@@ -16,11 +16,11 @@ A 20-item parsing drill covering 3rd-declension noun forms drawn from common GNT
 
 ## Sample Questions
 
-**Q1.** 1 τοῦ πνεύματος &#9658; Answer
-> **A:** G · S · N · πνεῦμα — "of the spirit"
+**Q1.** 1 τοῦ πνεύματος A D G N N/A P S F M N &#9654;
+> **A:** 1 τοῦ πνεύματος G S N πνεῦμα "of the spirit"
 
-**Q2.** 2 τῇ χάριτι &#9658; Answer
-> **A:** D · S · F · χάρις — "to/by grace"
+**Q2.** 2 τῇ χάριτι A D G N N/A P S F M N &#9654;
+> **A:** 2 τῇ χάριτι D S F χάρις "to/by grace"
 
-**Q3.** 3 σώματα &#9658; Answer
-> **A:** N or A · P · N · σῶμα — "bodies" (neut. nom./acc. pl. identical)
+**Q3.** 3 σώματα A D G N N/A P S F M N &#9654;
+> **A:** 3 σώματα N/A P N σῶμα "bodies"

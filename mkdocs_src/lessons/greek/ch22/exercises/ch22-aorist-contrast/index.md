@@ -15,11 +15,11 @@ A 20-item contrast drill presenting a mix of 1st and 2nd aorist active indicativ
 
 ## Sample Questions
 
-**Q1.** 1 ἔλυσα
-> **A:** 1st · 1st · Sg · λύω · I loosed / I released
+**Q1.** 1 ἔλυσα 1st 2nd 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 1 ἔλυσα 1st 1st Sg λύω I loosed / I released
 
-**Q2.** 2 εἶπον
-> **A:** 2nd · 1st · Sg · λέγω · I said
+**Q2.** 2 εἶπον 1st 2nd 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 2 εἶπον 2nd 1st Sg λέγω I said
 
-**Q3.** 3 ἦλθεν
-> **A:** 2nd · 3rd · Sg · ἔρχομαι · He came
+**Q3.** 3 ἦλθεν 1st 2nd 1st 2nd 3rd Pl Sg &#9654;
+> **A:** 3 ἦλθεν 2nd 3rd Sg ἔρχομαι He came
