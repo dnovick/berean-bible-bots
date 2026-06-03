@@ -3,6 +3,8 @@
 Supplementary flashcard decks for Biblical Hebrew students working through
 Pratico & Van Pelt's *Basics of Biblical Hebrew*.
 
+> **With thanks to Scott Blair**, whose generously shared Anki decks form the basis of all four resources on this page.
+
 Each deck is provided in three formats:
 **MD** (human-readable reference with answer key) ·
 **Anki** (.txt, File → Import) ·
