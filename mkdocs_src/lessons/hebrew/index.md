@@ -43,3 +43,17 @@
 | [Ch33 — Pual Weak](ch33/index.md) | Pual Weak |
 | [Ch34 — Hithpael Strong](ch34/index.md) | Hithpael Strong |
 | [Ch35 — Hithpael Weak](ch35/index.md) | Hithpael Weak |
+
+---
+
+## Additional Resources
+
+Supplementary flashcard decks that go beyond the chapter-by-chapter material.
+Each deck is provided in three formats: MD (reference), Anki (.txt), and Flashcards Deluxe (-fd.txt).
+
+| Resource | Cards | Description |
+|---|---:|---|
+| [BBH Vocabulary with Mnemonics](additional-resources/bbh-vocab-with-mnemonics/index.md) | 527 | Ch2–35 vocabulary with Arabic root comparisons and mnemonic hooks, tagged by chapter |
+| [OT Extended Vocabulary](additional-resources/ot-extended-vocabulary/index.md) | 473 | Hebrew words occurring 30–69× in the OT, beyond the BBH wordlists |
+| [Hebrew Verb Paradigm — All Stems](additional-resources/hebrew-verb-paradigm-all-stems/index.md) | 195 | Strong verb (קטל) across all 7 stems × all conjugations |
+| [OT Verb Parsing — 10,000 Forms](additional-resources/ot-verb-parsing-10k/index.md) | 10,399 | Attested OT verb forms with full parsing; 1,332 unique roots |
