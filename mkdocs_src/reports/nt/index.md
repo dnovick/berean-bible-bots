@@ -32,6 +32,7 @@ Studies of Greek grammar, vocabulary, and structure in the New Testament.
 | [Anoint / Anointing — Cross-Corpus Word Study](lexicon/anoint-word-study/anoint-word-study.md) | ἀλείφω, χρίω, χριστός, μύρον, māšaḥ, māšîaḥ | NT, LXX, and Biblical Hebrew anoint vocabulary with cross-corpus connections tracing "Messiah" → "Christ" |
 | [Suffering in the Life of the Believer — NT Word Study](lexicon/suffering-word-study/suffering-word-study.md) | θλῖψις, πάσχω, πάθημα, ὑπομονή, διωγμός | Vocabulary, distribution, and theology of NT suffering — Christ as pattern and ground; suffering–glory axis |
 | [1 Peter 2:1 — "Lay Aside" Vice List](lexicon/1pet2-vice-list/index.md) | κακία, δόλος, ὑπόκρισις, φθόνος, καταλαλιά | NT, LXX, and Hebrew background for all five vices Peter commands believers to put off — one page per term |
+| [Phil 2:1 — Community Virtues Word Study](lexicon/phil2-community-virtues/phil2-community-virtues.md) | παράκλησις, παραμύθιον, κοινωνία, σπλάγχνα, οἰκτιρμός | NT, LXX, and Hebrew background for Paul's five community-life terms |
 
 ---
 
