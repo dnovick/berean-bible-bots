@@ -26,6 +26,7 @@ Studies of Greek grammar, vocabulary, and structure in the New Testament.
 | [λόγος (G3056)](lexicon/g3056-semantic-profile.md) | *logos* — word, reason | Distribution, collocates, semantic range |
 | [Greek Words for "Obey" — NT and LXX](lexicon/obey-greek-word-study.md) | ὑπακούω, πειθαρχέω, etc. | Cross-term word study with LXX comparison |
 | [Greek NT Case Distribution by Book](lexicon/nt-case-distribution-by-book.md) | — | Nominative / genitive / dative / accusative proportions per book |
+| [Greek Personal Pronouns — NT and LXX](lexicon/greek-pronouns/greek-pronouns-report.md) | ἐγώ, σύ, αὐτός, ἡμεῖς, ὑμεῖς, ἑαυτοῦ | Full paradigms, NT/LXX distributions, case breakdowns, and key passages |
 | [2 Timothy 3:1–5 — Vice List Word Study](lexicon/2tim3-vice-list/index.md) | 22 terms | Etymology, OT/LXX background, NT distribution, and theological notes for every term in Paul's last-days vice catalogue |
 | [The Armor of God — Eph 6:10–18 in Its Letter Context](lexicon/armor-of-god/armor-of-god-report.md) | ἀλήθεια, δικαιοσύνη, εἰρήνη, πίστις, σωτηρία, ῥῆμα, προσευχή | Each armor piece traced back to where Paul first introduced it in Ephesians 1–5 |
 | [Anoint / Anointing — Cross-Corpus Word Study](lexicon/anoint-word-study/anoint-word-study.md) | ἀλείφω, χρίω, χριστός, μύρον, māšaḥ, māšîaḥ | NT, LXX, and Biblical Hebrew anoint vocabulary with cross-corpus connections tracing "Messiah" → "Christ" |
