@@ -679,14 +679,26 @@ def _build_report_dir(
         sub_entries: list = []
         _build_report_dir(sub, sub_dst, depth + 1, sub_entries, sub.name)
         if sub_entries:
-            # Use README H1 title if available, else capitalise dir name
-            sub_readme = sub / "README.md"
-            if sub_readme.exists():
-                sub_label = _md_title(sub_dst / "index.md") or \
-                    sub.name.replace("-", " ").replace("_", " ").title()
+            # If the subdirectory produced exactly one direct link whose title
+            # is NOT "Overview" (i.e. it's a real report link, not a landing-page
+            # placeholder), promote it to the parent level without a wrapper group.
+            # This avoids the "expand section → click link" two-click pattern.
+            sole = (
+                len(sub_entries) == 1 and
+                isinstance(list(sub_entries[0].values())[0], str) and
+                list(sub_entries[0].keys())[0] != "Overview"
+            )
+            if sole:
+                nav_entries.append(sub_entries[0])
             else:
-                sub_label = sub.name.replace("-", " ").replace("_", " ").title()
-            nav_entries.append({sub_label: sub_entries})
+                # Use README H1 title if available, else capitalise dir name
+                sub_readme = sub / "README.md"
+                if sub_readme.exists():
+                    sub_label = _md_title(sub_dst / "index.md") or \
+                        sub.name.replace("-", " ").replace("_", " ").title()
+                else:
+                    sub_label = sub.name.replace("-", " ").replace("_", " ").title()
+                nav_entries.append({sub_label: sub_entries})
 
     # Determine whether to add nav entries for .md files and/or an Overview.
     #
@@ -698,10 +710,19 @@ def _build_report_dir(
     #   Add an Overview entry (the README-as-index) and suppress the .md files
     #   (they are linked from the Overview page).
     index_src = src_dir / "index.md"
+    # A directory is "single-destination" when it produces exactly one meaningful
+    # nav link: either (a) README + one report .md file, or (b) README alone with
+    # no other .md files and no sub-entries (the README IS the only content).
+    # In both cases we want to link directly rather than wrap in a section.
     is_single_file_report = (
         readme.exists() and
         len(md_files) == 1 and
-        not any(True for _ in nav_entries)  # no sub-entries accumulated yet
+        not any(True for _ in nav_entries)
+    )
+    is_readme_only = (
+        readme.exists() and
+        len(md_files) == 0 and
+        not any(True for _ in nav_entries)
     )
 
     if not readme.exists():
@@ -711,17 +732,23 @@ def _build_report_dir(
             rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
             nav_entries.append({title: rel})
     elif is_single_file_report:
-        # Case 2: README + single report — skip Overview, link report directly
-        # Use the README H1 as the nav title for the report
+        # Case 2: README + single report .md — skip Overview, link report directly
         readme_title = _md_title(dst_dir / "index.md") or label
         md = md_files[0]
         rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
         nav_entries.append({readme_title: rel})
-    # Case 3 (README + multiple files or subdirs): nav_entries already has
+    elif is_readme_only:
+        # Case 3: README-only directory (e.g. a vice-list term page) —
+        # the README index IS the single destination; link to it directly.
+        readme_title = _md_title(dst_dir / "index.md") or label
+        rel = str((dst_dir / "index.md").relative_to(MKDOCS_SRC))
+        nav_entries.append({readme_title: rel})
+    # Case 4 (README + multiple files or subdirs): nav_entries already has
     # sub-dir entries; fall through to add Overview below.
 
-    # Add index.md as first nav entry when not in single-file-report mode
-    if not is_single_file_report and (readme.exists() or index_src.exists()):
+    # Add index.md as first nav entry for Case 4 only
+    if not is_single_file_report and not is_readme_only and (
+            readme.exists() or index_src.exists()):
         if not readme.exists() and index_src.exists():
             pass  # already copied above via md_files
         rel_index = str((dst_dir / "index.md").relative_to(MKDOCS_SRC))
