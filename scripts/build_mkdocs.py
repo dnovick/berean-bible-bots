@@ -647,24 +647,15 @@ def _build_report_dir(
     """Recursively copy one reports subdirectory into mkdocs_src/reports/."""
     dst_dir.mkdir(parents=True, exist_ok=True)
 
-    # README.md → index.md (landing page for this dir)
     readme = src_dir / "README.md"
-    if readme.exists():
-        content = readme.read_text(encoding="utf-8")
-        content = _rewrite_chart_paths(content, depth)
-        # Rewrite README.md links → index.md
-        content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
-        (dst_dir / "index.md").write_text(content, encoding="utf-8")
 
-    # Copy individual .md reports (not README, and not index.md when README exists
-    # — README is already written as index.md above, so including index.md here
-    # would both overwrite it and create a duplicate nav entry)
+    # Copy individual .md reports (not README; skip index.md when README exists
+    # since README will be written as index.md for multi-content dirs)
     _skip = {"README.md"} | ({"index.md"} if readme.exists() else set())
     md_files = sorted(f for f in src_dir.glob("*.md") if f.name not in _skip)
     for md in md_files:
         content = md.read_text(encoding="utf-8")
         content = _rewrite_chart_paths(content, depth)
-        # Rewrite README.md links → index.md in all copied files
         content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
         (dst_dir / md.name).write_text(content, encoding="utf-8")
 
@@ -704,16 +695,15 @@ def _build_report_dir(
     #
     # Case 1 — No README: add each .md file as its own nav entry.
     # Case 2 — README + exactly one report .md + no subdirectory entries:
-    #   Skip the Overview (it adds a click with no value); instead, promote
-    #   the single report file directly, using the README's H1 as its label.
-    # Case 3 — README + multiple .md files or subdirectory entries:
-    #   Add an Overview entry (the README-as-index) and suppress the .md files
+    #   Skip the Overview entirely — no index.md is written for this dir.
+    #   The report .md IS the sole page; its own H1 becomes the nav label.
+    #   This prevents search engines from indexing a thin landing page.
+    # Case 3 — README alone (no other .md, no sub-entries):
+    #   The README index IS the single destination; link to it directly.
+    # Case 4 — README + multiple .md files or subdirectory entries:
+    #   Write README as index.md, add an Overview entry, suppress bare .md files
     #   (they are linked from the Overview page).
     index_src = src_dir / "index.md"
-    # A directory is "single-destination" when it produces exactly one meaningful
-    # nav link: either (a) README + one report .md file, or (b) README alone with
-    # no other .md files and no sub-entries (the README IS the only content).
-    # In both cases we want to link directly rather than wrap in a section.
     is_single_file_report = (
         readme.exists() and
         len(md_files) == 1 and
@@ -725,6 +715,14 @@ def _build_report_dir(
         not any(True for _ in nav_entries)
     )
 
+    # Write README → index.md only for dirs that need a landing page (Cases 3 & 4).
+    # Single-file report dirs (Case 2) get no index.md so no defunct page exists.
+    if readme.exists() and not is_single_file_report:
+        content = readme.read_text(encoding="utf-8")
+        content = _rewrite_chart_paths(content, depth)
+        content = re.sub(r"\(([^)]+/)README\.md\)", r"(\1index.md)", content)
+        (dst_dir / "index.md").write_text(content, encoding="utf-8")
+
     if not readme.exists():
         # Case 1: no README — add all .md files directly
         for md in md_files:
@@ -732,14 +730,12 @@ def _build_report_dir(
             rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
             nav_entries.append({title: rel})
     elif is_single_file_report:
-        # Case 2: README + single report .md — skip Overview, link report directly
-        readme_title = _md_title(dst_dir / "index.md") or label
-        md = md_files[0]
-        rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
-        nav_entries.append({readme_title: rel})
+        # Case 2: README + single report .md — link report directly using its H1
+        report_title = _md_title(dst_dir / md_files[0].name) or label
+        rel = str((dst_dir / md_files[0].name).relative_to(MKDOCS_SRC))
+        nav_entries.append({report_title: rel})
     elif is_readme_only:
-        # Case 3: README-only directory (e.g. a vice-list term page) —
-        # the README index IS the single destination; link to it directly.
+        # Case 3: README-only directory — the README index IS the single destination
         readme_title = _md_title(dst_dir / "index.md") or label
         rel = str((dst_dir / "index.md").relative_to(MKDOCS_SRC))
         nav_entries.append({readme_title: rel})
