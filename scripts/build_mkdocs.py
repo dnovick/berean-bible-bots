@@ -739,8 +739,15 @@ def _build_report_dir(
         readme_title = _md_title(dst_dir / "index.md") or label
         rel = str((dst_dir / "index.md").relative_to(MKDOCS_SRC))
         nav_entries.append({readme_title: rel})
-    # Case 4 (README + multiple files or subdirs): nav_entries already has
-    # sub-dir entries; fall through to add Overview below.
+    else:
+        # Case 4: README + multiple .md files and/or subdirectory entries.
+        # Sub-dir entries are already in nav_entries. Also add each flat .md
+        # file so every report is reachable directly from the nav (not just
+        # via the Overview landing page).
+        for md in md_files:
+            title = _md_title(dst_dir / md.name)
+            rel = str((dst_dir / md.name).relative_to(MKDOCS_SRC))
+            nav_entries.append({title: rel})
 
     # Add index.md as first nav entry for Case 4 only
     if not is_single_file_report and not is_readme_only and (
