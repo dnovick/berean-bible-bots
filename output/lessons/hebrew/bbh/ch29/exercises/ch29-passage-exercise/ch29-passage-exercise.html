@@ -15,8 +15,8 @@
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
-  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #aaa; background: transparent; font-size: 0.9em; padding: 1px 2px; font-family: inherit; }
-  input.parse-field:focus { outline: none; border-bottom: 2px solid #5b7dc8; }
+  .parse-field { width: 95%; border: none; border-bottom: 1px solid #aaa; background: transparent; font-size: 0.9em; padding: 1px 2px; font-family: inherit; }
+  .parse-field:focus { outline: none; border-bottom: 2px solid #5b7dc8; }
   .answer-row { display: none; background: #eaf5ea; }
   .answer-row td { border-top: none; color: #2a6b2a; font-size: 0.88em; }
   .answer-row.visible { display: table-row; }
@@ -35,7 +35,13 @@
   @media print {
     .controls, .reveal-btn { display: none !important; }
     .answer-row { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #999; }
+    .parse-field { border: none; border-bottom: 1px solid #999; }
+  }
+
+  .hiphil-select {
+    width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px;
+    padding: .25rem .4rem; font-family: Georgia, serif; font-size: .88rem;
+    background: #fafff8;
   }
 </style>
 <script>
@@ -58,7 +64,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(function(b) { b.textContent = '▶ Answer'; });
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(function(f) { f.value = ''; });
+  document.querySelectorAll('.parse-field').forEach(function(f) { f.value = ''; });
 }
 </script>
 </head>
@@ -88,11 +94,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>הוּרַד</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a1">
@@ -107,11 +113,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>הוּבָא</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a2">
@@ -128,11 +134,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>הַשָּׁב</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a3">
@@ -140,11 +146,11 @@ function clearAll() {
   </tr>
   <tr id="r4">
     <td>4</td><td>מוּבָאִים</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a4">
@@ -159,11 +165,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>יוּבָא</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a5">
@@ -181,11 +187,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>הוּקַם</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a6">
@@ -202,11 +208,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r7">
     <td>7</td><td>הָקִים</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a7">
@@ -221,11 +227,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>יִסְעוּ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a8">
@@ -240,11 +246,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>יֻקַּם</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a9">
@@ -262,11 +268,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>הוּשַׁב</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a10">
@@ -281,11 +287,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r11">
     <td>11</td><td>מוּצֵאת</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a11">
@@ -300,11 +306,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r12">
     <td>12</td><td>מְצָאָהּ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a12',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a12">
@@ -319,11 +325,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r13">
     <td>13</td><td>הוּצָא</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a13',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a13">
@@ -338,11 +344,11 @@ function clearAll() {
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r14">
     <td>14</td><td>הֻגַּד</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Passive">Passive</option><option value="NOT Hophal — Qal">NOT Hophal — Qal</option><option value="NOT Hophal — Hiphil">NOT Hophal — Hiphil</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a14',this)">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a14">
