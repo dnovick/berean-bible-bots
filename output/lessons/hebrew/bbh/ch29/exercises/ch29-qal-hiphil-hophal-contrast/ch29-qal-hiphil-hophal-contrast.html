@@ -15,7 +15,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; }
-  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #e6f4ea !important; color: #1a5c1a; font-size: .85em; }
   .answer-row { display: none; }
   button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
@@ -29,7 +29,7 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 </style>
@@ -64,9 +64,9 @@
   <tr>
     <td>1</td>
     <td><span class="heb">בָּא</span></td>
-    <td><input class="parse-field" id="s1" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c1" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p1" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s1"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c1"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p1"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t1" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a1')">▶ Answer</button></td>
   </tr>
@@ -76,9 +76,9 @@
   <tr>
     <td>2</td>
     <td><span class="heb">הֵבִיא</span></td>
-    <td><input class="parse-field" id="s2" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c2" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p2" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s2"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c2"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p2"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t2" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a2')">▶ Answer</button></td>
   </tr>
@@ -88,9 +88,9 @@
   <tr>
     <td>3</td>
     <td><span class="heb">הוּבָא</span></td>
-    <td><input class="parse-field" id="s3" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c3" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p3" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s3"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c3"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p3"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t3" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a3')">▶ Answer</button></td>
   </tr>
@@ -108,9 +108,9 @@
   <tr>
     <td>4</td>
     <td><span class="heb">יָרַד</span></td>
-    <td><input class="parse-field" id="s4" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c4" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p4" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s4"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c4"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p4"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t4" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
   </tr>
@@ -120,9 +120,9 @@
   <tr>
     <td>5</td>
     <td><span class="heb">הוֹרִיד</span></td>
-    <td><input class="parse-field" id="s5" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c5" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p5" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s5"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c5"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p5"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t5" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
   </tr>
@@ -132,9 +132,9 @@
   <tr>
     <td>6</td>
     <td><span class="heb">הוּרַד</span></td>
-    <td><input class="parse-field" id="s6" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c6" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p6" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s6"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c6"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p6"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t6" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
   </tr>
@@ -152,9 +152,9 @@
   <tr>
     <td>7</td>
     <td><span class="heb">שָׁב</span></td>
-    <td><input class="parse-field" id="s7" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c7" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p7" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s7"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c7"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p7"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t7" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
   </tr>
@@ -164,9 +164,9 @@
   <tr>
     <td>8</td>
     <td><span class="heb">הֵשִׁיב</span></td>
-    <td><input class="parse-field" id="s8" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c8" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p8" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s8"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c8"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p8"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t8" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
   </tr>
@@ -176,9 +176,9 @@
   <tr>
     <td>9</td>
     <td><span class="heb">הוּשַׁב</span></td>
-    <td><input class="parse-field" id="s9" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c9" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p9" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s9"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c9"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p9"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t9" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
   </tr>
@@ -196,9 +196,9 @@
   <tr>
     <td>10</td>
     <td><span class="heb">קָם</span></td>
-    <td><input class="parse-field" id="s10" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c10" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p10" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s10"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c10"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p10"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t10" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
   </tr>
@@ -208,9 +208,9 @@
   <tr>
     <td>11</td>
     <td><span class="heb">הֵקִים</span></td>
-    <td><input class="parse-field" id="s11" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c11" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p11" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s11"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c11"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p11"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t11" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
   </tr>
@@ -220,9 +220,9 @@
   <tr>
     <td>12</td>
     <td><span class="heb">הוּקַם</span></td>
-    <td><input class="parse-field" id="s12" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c12" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p12" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s12"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c12"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p12"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t12" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
   </tr>
@@ -240,9 +240,9 @@
   <tr>
     <td>13</td>
     <td><span class="heb">יָלַד</span></td>
-    <td><input class="parse-field" id="s13" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c13" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p13" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s13"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c13"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p13"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t13" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
   </tr>
@@ -252,9 +252,9 @@
   <tr>
     <td>14</td>
     <td><span class="heb">הוֹלִיד</span></td>
-    <td><input class="parse-field" id="s14" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c14" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p14" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s14"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c14"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p14"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t14" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a14')">▶ Answer</button></td>
   </tr>
@@ -264,9 +264,9 @@
   <tr>
     <td>15</td>
     <td><span class="heb">הוּלַד</span></td>
-    <td><input class="parse-field" id="s15" placeholder="Qal/Hiphil/Hophal"></td>
-    <td><input class="parse-field" id="c15" placeholder="conjugation"></td>
-    <td><input class="parse-field" id="p15" placeholder="PGN"></td>
+    <td><select class="parse-field" id="s15"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c15"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p15"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
     <td><input class="parse-field" id="t15" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a15')">▶ Answer</button></td>
   </tr>
@@ -303,7 +303,7 @@ function hideAll() {
   document.querySelectorAll('.answer-row').forEach(function(r) { r.style.display = 'none'; });
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+  document.querySelectorAll('.parse-field').forEach(function(i) { i.value = ''; });
 }
 </script>
 
