@@ -65,17 +65,29 @@ def _nt_book_order(book_id: str) -> int:
     return info.get('canonical_order', 999) if info else 999
 
 
+_KJV_DF: 'pd.DataFrame | None' = None
+
+
+def _kjv_df() -> 'pd.DataFrame':
+    """Load and cache the KJV translations parquet."""
+    global _KJV_DF
+    if _KJV_DF is None:
+        import pandas as pd
+        from pathlib import Path
+        p = Path(__file__).parent.parent.parent.parent / 'data' / 'processed' / 'translations.parquet'
+        _KJV_DF = pd.read_parquet(p)
+    return _KJV_DF
+
+
 def _get_kjv_verse(book_id: str, chapter: int, verse: int) -> str:
     """Fetch a KJV verse text, returning empty string if unavailable."""
     try:
-        from ..core import db as _db
-        df = _db.load()
-        rows = df[(df['book_id'] == book_id) & (df['chapter'] == chapter) &
-                  (df['verse'] == verse) & (df['source'].isin({'TAHOT', 'TAGNT'}))]
+        df = _kjv_df()
+        rows = df[(df['translation'] == 'KJV') & (df['book_id'] == book_id) &
+                  (df['chapter'] == chapter) & (df['verse'] == verse)]
         if rows.empty:
             return ''
-        trans = rows['translation'].dropna()
-        return ' '.join(str(t).strip().rstrip('¶').strip() for t in trans if str(t).strip())
+        return str(rows.iloc[0]['text']).strip()
     except Exception:
         return ''
 
