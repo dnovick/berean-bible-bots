@@ -262,6 +262,7 @@ def render_session_page(course: dict[str, Any], session: dict[str, Any]) -> str:
     focus = session.get("focus", "")
     date_str = format_date(session.get("date"))
     chapter = session.get("chapter")
+    resources = session.get("resources") or []
     notes = (session.get("notes") or "").strip()
 
     lines = [
@@ -277,6 +278,15 @@ def render_session_page(course: dict[str, Any], session: dict[str, Any]) -> str:
 
     if chapter:
         lines += ["## Textbook Chapter", "", chapter_link_md(textbook, chapter), ""]
+
+    if resources:
+        lines += ["## Additional Resources", ""]
+        for resource in resources:
+            title = resource.get("title", "")
+            url = resource.get("url", "")
+            if title and url:
+                lines.append(f"- [{title}]({url})")
+        lines.append("")
 
     if notes:
         lines += ["## Notes", "", notes, ""]
