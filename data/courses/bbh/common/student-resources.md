@@ -48,39 +48,9 @@ You need a tool that supports:
 
 ---
 
-## Quick-Start: STEP Bible
+## Recommended Resources
 
-**Class recommendation for free users: [STEP Bible](https://www.stepbible.org)**
-
-STEP Bible runs in any browser, requires no installation, and uses the Open Scriptures Hebrew Bible (OSHB) — the same morphological tagging used in academic and seminary contexts.
-
-### Getting Started
-
-1. Go to **[stepbible.org](https://www.stepbible.org)**
-2. In the passage box, type a reference (e.g., `Gen 1:1`) and press Enter
-3. Select a Hebrew text — choose **OSMHB** (Open Scriptures Morphological Hebrew Bible) for full
-   morphology, or **THOT** for an interlinear display
-4. Click any Hebrew word to see its lemma, morphology code, and gloss in the right panel
-5. Click the **lemma link** in the right panel to search for all occurrences of that root across the OT
-
-### Morphology Search
-
-To search by grammatical form (e.g., all Niphal perfect verbs):
-
-1. Click the **Search** tab at the top
-2. Select **Hebrew** as the language
-3. Use the morphology filter — for example, `verb=Niphal+perfect` finds every Niphal perfect verb in the OT
-4. Results show verse, Hebrew text, and parsing for each hit
-
----
-
-## Quick-Start: Logos Morphology Search
-
-If you have Logos with a Hebrew OT resource (Foundations package or higher):
-
-1. Open **[Logos](https://www.logos.com)** and navigate to the **Bible** panel
-2. Select a Hebrew text (e.g., BHS or NASB95 with Hebrew)
-3. Hover over any Hebrew word — a pop-up shows the lemma, parsing, and gloss
-4. To search by form: open **Tools → Bible Word Study** and type a lemma, or use **Logos Search**
-   with a morph syntax query (e.g., `{Verb Niphal Perfect}`)
-5. Results appear in the search panel with full verse context and frequency statistics
+| Book | Notes |
+|------|-------|
+| **[Exegetical Fallacies](https://www.amazon.com/dp/0801021979)** — D.A. Carson | A clear survey of common errors in biblical interpretation — logical, linguistic, and theological. Invaluable for learning to handle the text accurately. |
+| **[Figures of Speech Used in the Bible](https://www.amazon.com/dp/0801010551)** — E.W. Bullinger | The definitive reference catalog of biblical figures of speech with thousands of examples from the original languages. A lifetime reference work. |
