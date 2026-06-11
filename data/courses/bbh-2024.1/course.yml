@@ -1,0 +1,17 @@
+id: bbh-2024.1
+name: "Biblical Hebrew 1"
+textbook: "Basics of Biblical Hebrew"
+edition: "3rd"
+instructors:
+  - "David Novick"
+description: "Biblical Hebrew - Year 1"
+
+# One entry per class session.
+# chapter: BBH chapter number (integer), or omit if no chapter (review, intro, etc.)
+# Links to lesson pages on the site are generated automatically from chapter.
+sessions:
+  - number: 1
+    date: "2026-06-15"
+    focus: "Hophal Strong Verbs"
+    chapter: 28
+    notes: ""
