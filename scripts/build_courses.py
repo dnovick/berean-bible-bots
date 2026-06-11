@@ -1,14 +1,24 @@
 #!/usr/bin/env python3
 """
-Generate MkDocs course pages from data/courses/*/course.yml.
+Generate MkDocs course pages from data/courses/.
 
 Usage
 -----
     python scripts/build_courses.py
 
-Each course directory must contain a course.yml with the schema documented in
-data/courses/bbh-2024.1/course.yml. Running this script regenerates all pages
-under mkdocs_src/courses/ and updates the Courses block in mkdocs_nav.yml.
+Directory layout
+----------------
+    data/courses/<id>/
+        course.yml          # course metadata only (name, textbook, instructors, …)
+        session-01/
+            session.yml     # date, focus, chapter, agenda, sections, notes
+            <content>.md    # optional freeform .md files referenced by sections
+        session-02/
+            session.yml
+        …
+
+Running this script regenerates all pages under mkdocs_src/courses/ and
+updates the Courses block in mkdocs_nav.yml.
 """
 
 from __future__ import annotations
@@ -90,20 +100,31 @@ _TEXTBOOK_META: dict[str, dict[str, Any]] = {
 # ── Data loading ──────────────────────────────────────────────────────────────
 
 def load_course(course_dir: Path) -> dict[str, Any]:
-    """Load and normalize a course from its course.yml."""
+    """Load a course from course.yml + session-NN/session.yml subdirectories."""
     with open(course_dir / "course.yml") as f:
         data: dict[str, Any] = yaml.safe_load(f)
-    data.setdefault("sessions", [])
     data.setdefault("instructors", [])
     data.setdefault("description", "")
     data.setdefault("edition", "")
-    # Normalize session numbers: assign sequentially by date if missing
-    sessions = sorted(
-        data["sessions"],
-        key=lambda s: str(s.get("date", "") or ""),
-    )
-    for i, session in enumerate(sessions, 1):
-        session.setdefault("number", i)
+
+    sessions: list[dict[str, Any]] = []
+    for session_dir in sorted(
+        d for d in course_dir.iterdir()
+        if d.is_dir() and d.name.startswith("session-")
+    ):
+        yml = session_dir / "session.yml"
+        if not yml.exists():
+            continue
+        with open(yml) as f:
+            session: dict[str, Any] = yaml.safe_load(f) or {}
+        # Derive number from directory name: session-01 → 1
+        try:
+            session["number"] = int(session_dir.name.split("-", 1)[1])
+        except (IndexError, ValueError):
+            session["number"] = len(sessions) + 1
+        session["_dir"] = session_dir.name
+        sessions.append(session)
+
     data["sessions"] = sessions
     return data
 
@@ -157,7 +178,7 @@ def chapter_link_md(textbook: str, chapter_num: int) -> str:
 
 
 def session_slug(session: dict[str, Any]) -> str:
-    return f"session-{session['number']:02d}"
+    return session.get("_dir") or f"session-{session['number']:02d}"
 
 
 def session_filename(session: dict[str, Any]) -> str:
