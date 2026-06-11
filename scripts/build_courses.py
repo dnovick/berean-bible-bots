@@ -238,35 +238,25 @@ def session_title(session: dict[str, Any]) -> str:
 # ── Page renderers ────────────────────────────────────────────────────────────
 
 def render_courses_index(courses: list[dict[str, Any]]) -> str:
-    """Render mkdocs_src/courses/index.md — overview table of all courses."""
+    """Render mkdocs_src/courses/index.md — one entry per language group."""
     lines = [
         "# Courses",
         "",
-        "Syllabi for Biblical Hebrew, Greek, and Aramaic classes.",
+        "Select a language to see its courses and resources.",
         "",
     ]
 
-    by_textbook: dict[str, list[dict[str, Any]]] = {}
+    seen_groups: list[str] = []
     for course in courses:
-        tb = course.get("textbook", "Other")
-        by_textbook.setdefault(tb, []).append(course)
+        group = course_group(course)
+        if group not in seen_groups:
+            seen_groups.append(group)
 
-    for textbook, tb_courses in by_textbook.items():
-        lines += [f"## {textbook}", ""]
-        lines += [
-            "| Course | Description | Instructor(s) | Sessions |",
-            "|---|---|---|---|",
-        ]
-        for course in tb_courses:
-            cid = course["id"]
-            group = course_group(course)
-            desc = course.get("description", "")
-            instructors = ", ".join(course.get("instructors", []))
-            count = len(course.get("sessions", []))
-            link = f"[{cid}]({group}/{cid}/index.md)"
-            lines.append(f"| {link} | {desc} | {instructors} | {count} |")
-        lines.append("")
+    for group in seen_groups:
+        label = _GROUP_LABELS.get(group, group.upper())
+        lines.append(f"- [{label}]({group}/index.md)")
 
+    lines.append("")
     return "\n".join(lines)
 
 
