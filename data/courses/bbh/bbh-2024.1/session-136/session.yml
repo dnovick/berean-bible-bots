@@ -18,14 +18,16 @@
 # instructor: name of the lead teacher for this session (optional, omit if blank)
 # notes:      plain-text instructor notes (not rendered on the page when blank)
 
-date: "2026-07-23"
-focus: "BBH 1 - Hebrew Alphabet"
-instructor: "Preston Brown"
-
+date: "2026-08-24"
+focus: "Hithpael Strong Verbs"
+instructor: "David Novick"
+chapter: 34
 agenda:
-  - title: BBH.1 - The Hebrew Alphabet
+  - title: "Hithpael Strong Verbs - BBH 34"
+  - title: "References"
 sections:
-#  - heading: "BBH.1 - The Hebrew Alphabet"
-#    file: "bbh.1.md"
-
+  - heading: "Hithpael Strong Verbs - BBH 34"
+    file: "hithpael-strong-verbs.md"
+  - heading: "References"
+    file: "references.md"
 notes: ""

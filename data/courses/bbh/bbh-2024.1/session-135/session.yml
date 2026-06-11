@@ -18,14 +18,17 @@
 # instructor: name of the lead teacher for this session (optional, omit if blank)
 # notes:      plain-text instructor notes (not rendered on the page when blank)
 
-date: "2026-07-23"
-focus: "BBH 1 - Hebrew Alphabet"
-instructor: "Preston Brown"
-
+date: "2026-08-10"
+focus: "Pual Weak Verbs"
+instructor: "David Novick"
+chapter: 33
 agenda:
-  - title: BBH.1 - The Hebrew Alphabet
+  - title: "BBB Updates"
+  - title: "Pual Weak Verbs - BBH 33"
+  - title: "References"
 sections:
-#  - heading: "BBH.1 - The Hebrew Alphabet"
-#    file: "bbh.1.md"
-
+  - heading: "Pual Weak Verbs - BBH 33"
+    file: "pual-weak-verbs.md"
+  - heading: "References"
+    file: "references.md"
 notes: ""

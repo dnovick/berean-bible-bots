@@ -18,14 +18,16 @@
 # instructor: name of the lead teacher for this session (optional, omit if blank)
 # notes:      plain-text instructor notes (not rendered on the page when blank)
 
-date: "2026-07-23"
-focus: "BBH 1 - Hebrew Alphabet"
-instructor: "Preston Brown"
-
+date: "2026-07-13"
+focus: "Piel Weak Verbs"
+instructor: "David Novick"
+chapter: 31
 agenda:
-  - title: BBH.1 - The Hebrew Alphabet
+  - title: "Piel Weak Verbs - BBH 31"
+  - title: "References"
 sections:
-#  - heading: "BBH.1 - The Hebrew Alphabet"
-#    file: "bbh.1.md"
-
+  - heading: "Piel Weak Verbs - BBH 31"
+    file: "piel-weak-verbs.md"
+  - heading: "References"
+    file: "references.md"
 notes: ""
