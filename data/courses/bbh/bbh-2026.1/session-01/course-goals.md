@@ -21,7 +21,6 @@
 ### Preston Brown
 
 - TBD
-- 
 
 ### David Novick
 - To be of some small help to you in your journey to please Christ as you, 
@@ -43,4 +42,3 @@ with His help, "study" (gk. σπουδάζω – strive) to "...rightly divide t
 
 - Achieve a greater appreciation for and understanding of the text.
 - Strengthen ability to correctly communicate Biblical truth in preaching and teaching.
-- 
