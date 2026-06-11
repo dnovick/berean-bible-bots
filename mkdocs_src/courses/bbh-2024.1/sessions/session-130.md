@@ -6,3 +6,15 @@
 ## Textbook Chapter
 
 [BBH Ch28 — Hophal Strong](/lessons/hebrew/ch28/)
+
+## Agenda
+
+1. [BBB Updates](#bbb-updates)
+1. [Hophal Strong Verbs - BBH 28](#hophal-strong-verbs-bbh-28)
+1. [References](#references)
+
+## BBB Updates
+
+## Hophal Strong Verbs - BBH 28
+
+## References

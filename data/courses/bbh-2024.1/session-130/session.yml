@@ -21,6 +21,15 @@
 date: "2026-06-15"
 focus: "Hophal Strong Verbs"
 chapter: 28
-agenda: []
-sections: []
+agenda:
+  - title: "BBB Updates"
+  - title: "Hophal Strong Verbs - BBH 28"
+  - title: "References"
+sections:
+  - heading: "BBB Updates"
+    file: "bbb-updates.md"
+  - heading: "Hophal Strong Verbs - BBH 28"
+    file: "hophal-strong-verbs.md"
+  - heading: "References"
+    file: "references.md"
 notes: ""
