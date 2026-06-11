@@ -7,13 +7,29 @@ instructors:
   - "David Novick"
 description: "Biblical Hebrew - Year 1"
 
-# One entry per class session.
-# chapter: BBH chapter number (integer), or omit if no chapter (review, intro, etc.)
-# Links to the lesson page on the site are generated automatically from chapter.
-# resources: optional list of {title, url} links shown on the session page.
+# Session schema:
+#
+#   number:   integer (auto-assigned by date order if omitted)
+#   date:     YYYY-MM-DD
+#   focus:    short description shown in the course session table
+#   chapter:  BBH chapter number (integer) — used in the session table column;
+#             also renders as a "Textbook Chapter" link at the top of the session page.
+#             Omit for review/intro sessions with no primary chapter.
+#
+#   agenda:   ordered list of session agenda items
+#     - title:  item label (required)
+#       url:    optional link (internal path or external URL)
+#
+#   sections: freeform content blocks, each rendered as ## Heading + markdown body
+#     - heading: section title
+#       content: markdown text (use | for multi-line)
+#
+#   notes:    plain-text instructor notes (not shown on the page when blank)
+
 sessions:
   - number: 1
     date: "2026-07-02"
     focus: "Introduction"
-    resources: []
+    agenda: []
+    sections: []
     notes: ""
