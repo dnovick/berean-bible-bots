@@ -18,14 +18,12 @@
 # instructor: name of the lead teacher for this session (optional, omit if blank)
 # notes:      plain-text instructor notes (not rendered on the page when blank)
 
-date: "2026-07-16"
-focus: "BBH 1 - Hebrew Alphabet"
-instructor: "Preston Brown"
+date: "2026-07-30"
+focus: "BBH 2 - Hebrew Vowels"
+chapter: 2
+instructor: Preston Brown
 
 agenda:
-  - title: BBH.1 - The Hebrew Alphabet
 sections:
-#  - heading: "BBH.1 - The Hebrew Alphabet"
-#    file: "bbh.1.md"
 
 notes: ""
