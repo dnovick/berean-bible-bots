@@ -33,6 +33,11 @@ sessions:
   - number: 1
     date: "2026-07-02"
     focus: "Introduction"
-    agenda: []
+    agenda:
+      - title: "Setting the Stage — David Novick"
+      - title: "Course Goals"
+      - title: "Course Text"
+      - title: "Course Resources"
+      - title: "Expectations"
     sections: []
     notes: ""
