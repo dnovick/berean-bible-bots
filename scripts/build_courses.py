@@ -424,7 +424,7 @@ def render_session_page(
     lines.append("")
 
     if chapter:
-        lines += ["## Textbook Chapter", "", chapter_link_md(textbook, chapter), ""]
+        lines += ["## Lesson Content", "", chapter_link_md(textbook, chapter), ""]
 
     if agenda:
         lines += ["## Agenda", ""]
