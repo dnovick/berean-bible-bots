@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'output/lessons/**'
+      - 'output/reports/**'
       - 'output/student-packs/**'
       - 'mkdocs_src/**'
       - 'mkdocs.yml'
