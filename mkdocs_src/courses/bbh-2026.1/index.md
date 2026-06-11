@@ -7,6 +7,6 @@ Biblical Hebrew - Year 1
 
 ## Sessions
 
-| Session | Date | Focus | Chapter |
-|---|---|---|---|
-| [1](sessions/session-01.md) | Jul 2, 2026 | Introduction | — |
+| Session | Date |
+|---|---|
+| [1 — Introduction](sessions/session-01.md) | Jul 2, 2026 |

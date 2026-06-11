@@ -234,18 +234,16 @@ def render_course_page(course: dict[str, Any]) -> str:
     lines += [
         "## Sessions",
         "",
-        "| Session | Date | Focus | Chapter |",
-        "|---|---|---|---|",
+        "| Session | Date |",
+        "|---|---|",
     ]
 
     for session in sessions:
         num = session.get("number", "")
         date_str = format_date(session.get("date"))
         focus = session.get("focus", "")
-        chapter = session.get("chapter")
-        chapter_cell = chapter_link_md(textbook, chapter) if chapter else "—"
-        sess_link = f"[{num}](sessions/{session_filename(session)})"
-        lines.append(f"| {sess_link} | {date_str} | {focus} | {chapter_cell} |")
+        sess_link = f"[{num} — {focus}](sessions/{session_filename(session)})"
+        lines.append(f"| {sess_link} | {date_str} |")
 
     lines.append("")
     return "\n".join(lines)
