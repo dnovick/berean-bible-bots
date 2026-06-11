@@ -19,6 +19,7 @@
 ## Instructor Goals
 
 ### Preston Brown
+
 - TBD
 - 
 
@@ -31,7 +32,7 @@ with His help, "study" (gk. σπουδάζω – strive) to "...rightly divide t
   - Please remember that our understanding of the text is ultimately reliant on the 
     Lord "...opening the eyes of our understanding, that we might understand the scriptures." — Luke 24:45.
   - Please come prepared. Read the lesson material and syllabus before class.
-  - Please pratice outside of class.
+  - Please practice the material outside class.
   - Please participate. Ask questions. Take part in class discussions and exercises.
   - If I say something you believe to be factual incorrect, please bring it to my attention, ASAP.
   - If something isn't working well for you in class, please bring it to our attention.
@@ -42,4 +43,4 @@ with His help, "study" (gk. σπουδάζω – strive) to "...rightly divide t
 
 - Achieve a greater appreciation for and understanding of the text.
 - Strengthen ability to correctly communicate Biblical truth in preaching and teaching.
--
+- 
