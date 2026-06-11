@@ -11,7 +11,9 @@ on:
       - 'mkdocs.yml'
       - 'mkdocs_nav.yml'
       - 'overrides/**'
+      - 'data/courses/**'
       - 'scripts/build_mkdocs.py'
+      - 'scripts/build_courses.py'
       - 'docs_hooks.py'
       - 'notebooks/**'
       - 'binder/**'
@@ -36,6 +38,9 @@ jobs:
             mkdocstrings==1.0.4 \
             mkdocstrings-python==2.0.3 \
             mkdocs-jupyter==0.25.1
+
+      - name: Build course pages
+        run: python scripts/build_courses.py
 
       - name: Build MkDocs source tree
         run: python scripts/build_mkdocs.py
