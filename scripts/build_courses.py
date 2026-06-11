@@ -251,17 +251,34 @@ def render_course_page(course: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def render_session_page(course: dict[str, Any], session: dict[str, Any]) -> str:
+def _section_content(section: dict[str, Any], course_dir: Path) -> str:
+    """Return the body text for a section: inline content or file contents."""
+    if section.get("file"):
+        file_path = course_dir / section["file"]
+        if file_path.exists():
+            return file_path.read_text(encoding="utf-8").strip()
+        return f"*(file not found: `{section['file']}`)*"
+    return (section.get("content") or "").strip()
+
+
+def render_session_page(
+    course: dict[str, Any],
+    session: dict[str, Any],
+    course_dir: Path | None = None,
+) -> str:
     """Render mkdocs_src/courses/<id>/sessions/session-NN.md."""
     cid = course["id"]
     name = course.get("name", cid)
     textbook = course.get("textbook", "")
+    if course_dir is None:
+        course_dir = _COURSES_DATA_DIR / cid
 
     num = session.get("number", "")
     focus = session.get("focus", "")
     date_str = format_date(session.get("date"))
     chapter = session.get("chapter")
-    resources = session.get("resources") or []
+    agenda = session.get("agenda") or []
+    sections = session.get("sections") or []
     notes = (session.get("notes") or "").strip()
 
     lines = [
@@ -278,14 +295,22 @@ def render_session_page(course: dict[str, Any], session: dict[str, Any]) -> str:
     if chapter:
         lines += ["## Textbook Chapter", "", chapter_link_md(textbook, chapter), ""]
 
-    if resources:
-        lines += ["## Additional Resources", ""]
-        for resource in resources:
-            title = resource.get("title", "")
-            url = resource.get("url", "")
-            if title and url:
-                lines.append(f"- [{title}]({url})")
+    if agenda:
+        lines += ["## Agenda", ""]
+        for item in agenda:
+            title = item.get("title", "")
+            url = item.get("url", "")
+            entry = f"[{title}]({url})" if url else title
+            lines.append(f"1. {entry}")
         lines.append("")
+
+    for section in sections:
+        heading = section.get("heading", "")
+        body = _section_content(section, course_dir)
+        if heading:
+            lines += [f"## {heading}", ""]
+        if body:
+            lines += [body, ""]
 
     if notes:
         lines += ["## Notes", "", notes, ""]
@@ -375,9 +400,10 @@ def main() -> None:
         cp.write_text(render_course_page(course))
         print(f"  Wrote {cp.relative_to(_REPO_ROOT)}")
 
+        course_dir = _COURSES_DATA_DIR / cid
         for session in course.get("sessions", []):
             sp = sessions_out / session_filename(session)
-            sp.write_text(render_session_page(course, session))
+            sp.write_text(render_session_page(course, session, course_dir))
             print(f"  Wrote {sp.relative_to(_REPO_ROOT)}")
 
     update_nav(courses)
