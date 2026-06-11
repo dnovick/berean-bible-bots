@@ -8,10 +8,12 @@ description: "Biblical Hebrew - Year 1"
 
 # One entry per class session.
 # chapter: BBH chapter number (integer), or omit if no chapter (review, intro, etc.)
-# Links to lesson pages on the site are generated automatically from chapter.
+# Links to the lesson page on the site are generated automatically from chapter.
+# resources: optional list of {title, url} links shown on the session page.
 sessions:
   - number: 1
     date: "2026-06-15"
     focus: "Hophal Strong Verbs"
     chapter: 28
+    resources: []
     notes: ""
