@@ -7,37 +7,5 @@ instructors:
   - "David Novick"
 description: "Biblical Hebrew - Year 1"
 
-# Session schema:
-#
-#   number:   integer (auto-assigned by date order if omitted)
-#   date:     YYYY-MM-DD
-#   focus:    short description shown in the course session table
-#   chapter:  BBH chapter number (integer) — used in the session table column;
-#             also renders as a "Textbook Chapter" link at the top of the session page.
-#             Omit for review/intro sessions with no primary chapter.
-#
-#   agenda:   ordered list of session agenda items
-#     - title:  item label (required)
-#       url:    optional link (internal path or external URL)
-#
-#   sections: freeform content blocks, each rendered as ## Heading + markdown body
-#     - heading: section title
-#       content: inline markdown text (use | for multi-line)
-#       file:    path to a .md file relative to the session subdirectory
-#                e.g. "something-to-think-about.md" resolves to
-#                data/courses/bbh-2026.1/session-01/something-to-think-about.md
-#
-#   notes:    plain-text instructor notes (not shown on the page when blank)
-
-sessions:
-  - number: 1
-    date: "2026-07-02"
-    focus: "Introduction"
-    agenda:
-      - title: "Setting the Stage — David Novick"
-      - title: "Course Goals"
-      - title: "Course Text"
-      - title: "Course Resources"
-      - title: "Expectations"
-    sections: []
-    notes: ""
+# Sessions live in session-NN/ subdirectories, each with a session.yml.
+# See session-01/session.yml for the session schema.

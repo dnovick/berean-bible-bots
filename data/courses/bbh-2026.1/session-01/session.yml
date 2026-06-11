@@ -1,0 +1,29 @@
+# Session schema
+#
+# date:     YYYY-MM-DD
+# focus:    short description shown in the course session table
+# chapter:  BBH chapter number (integer) — renders as a "Textbook Chapter" link
+#           on the session page and is used in the course session table.
+#           Omit for review/intro sessions with no primary chapter.
+#
+# agenda:   ordered list of session agenda items
+#   - title:  item label (required)
+#     url:    optional link (internal path or external URL)
+#
+# sections: freeform content blocks, each rendered as ## Heading + markdown body
+#   - heading: section title
+#     content: inline markdown text (use | for multi-line)
+#     file:    .md filename in this session directory (e.g. "background.md")
+#
+# notes:    plain-text instructor notes (not rendered on the page when blank)
+
+date: "2026-07-02"
+focus: "Introduction"
+agenda:
+  - title: "Setting the Stage — David Novick"
+  - title: "Course Goals"
+  - title: "Course Text"
+  - title: "Course Resources"
+  - title: "Expectations"
+sections: []
+notes: ""

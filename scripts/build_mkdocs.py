@@ -901,10 +901,22 @@ def build_courses_nav() -> list:
             continue
         with open(yml) as f:
             data = _yaml.safe_load(f)
-        data.setdefault("sessions", [])
-        sessions = sorted(data["sessions"], key=lambda s: str(s.get("date", "") or ""))
-        for i, s in enumerate(sessions, 1):
-            s.setdefault("number", i)
+        sessions: list[dict] = []
+        for session_dir in sorted(
+            d for d in course_dir.iterdir()
+            if d.is_dir() and d.name.startswith("session-")
+        ):
+            syml = session_dir / "session.yml"
+            if not syml.exists():
+                continue
+            with open(syml) as f:
+                session = _yaml.safe_load(f) or {}
+            try:
+                session["number"] = int(session_dir.name.split("-", 1)[1])
+            except (IndexError, ValueError):
+                session["number"] = len(sessions) + 1
+            session["_dir"] = session_dir.name
+            sessions.append(session)
         data["sessions"] = sessions
         courses.append(data)
 
@@ -928,7 +940,7 @@ def build_courses_nav() -> list:
                 for session in sessions:
                     num = session.get("number", "")
                     focus = session.get("focus", "")
-                    fname = f"session-{num:02d}.md"
+                    fname = f"{session.get('_dir', f'session-{num:02d}')}.md"
                     session_entries.append(
                         {f"Session {num} — {focus}": f"courses/{cid}/sessions/{fname}"}
                     )
