@@ -5,6 +5,8 @@
 - Biblical Hebrew Morphology
   - Biblical Hebrew Nouns
   - Biblical Hebrew Verbs
+- Practicing Reading the Old Testament in Hebrew
+- Building Biblical Hebrew Vocabulary
 
 ## Course Non-Goals
 - Mishnaic, Later Religious, and Modern Hebrew

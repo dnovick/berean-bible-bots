@@ -5,7 +5,13 @@ edition: "3rd"
 instructors:
   - "Preston Brown"
   - "David Novick"
-description: "Biblical Hebrew - Year 1"
+description: >
+  Introduces the Biblical Hebrew language from the ground up. Students learn
+  the Hebrew alphabet (consonants and vowels), core morphology including nouns
+  and verbs across the major conjugations, and develop the vocabulary and
+  reading skills needed to engage the Old Testament in its original language.
+  Primary textbook: *Basics of Biblical Hebrew Grammar* — Pratico & Van Pelt,
+  3rd ed. (Zondervan).
 
 # Sessions live in session-NN/ subdirectories, each with a session.yml.
 # See session-01/session.yml for the session schema.
