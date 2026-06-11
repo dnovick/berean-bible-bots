@@ -8,17 +8,9 @@
 1. [Setting the Stage](#setting-the-stage)
 1. [Course Goals](session-01/course-goals.md)
 1. [Course Logistics](session-01/course-logistics.md)
-1. [Course Text](#course-text)
-1. [Course Resources](#course-resources)
-1. [Expectations](#expectations)
 
 ## Setting the Stage
 
 - Why Study Hebrew? — From BBH
 - The first three rules of Biblical Interpretation
-
-## Course Text
-
-## Course Resources
-
-## Expectations
+- [Student Resources](/courses/bbh/common/student-resources/) — textbook, software recommendations, and quick-start guides
