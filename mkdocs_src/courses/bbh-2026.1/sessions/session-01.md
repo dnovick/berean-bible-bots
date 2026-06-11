@@ -6,11 +6,11 @@
 
 ## Agenda
 
-1. Setting the Stage — David Novick
-1. Course Goals
-1. Course Text
-1. Course Resources
-1. Expectations
+1. [Setting the Stage — David Novick](#setting-the-stage-david-novick)
+1. [Course Goals](#course-goals)
+1. [Course Text](#course-text)
+1. [Course Resources](#course-resources)
+1. [Expectations](#expectations)
 
 ## Setting the Stage — David Novick
 

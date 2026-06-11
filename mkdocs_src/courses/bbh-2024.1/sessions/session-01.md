@@ -1,4 +1,4 @@
-# Session 1 — Hophal Strong Verbs
+# Session 130 — Hophal Strong Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2024.1](../index.md)  
 **Date:** Jun 15, 2026  
