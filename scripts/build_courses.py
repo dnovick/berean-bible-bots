@@ -192,11 +192,10 @@ def render_courses_index(courses: list[dict[str, Any]]) -> str:
         ]
         for course in tb_courses:
             cid = course["id"]
-            name = course.get("name", cid)
             desc = course.get("description", "")
             instructors = ", ".join(course.get("instructors", []))
             count = len(course.get("sessions", []))
-            link = f"[{name} — {cid}]({cid}/index.md)"
+            link = f"[{cid}]({cid}/index.md)"
             lines.append(f"| {link} | {desc} | {instructors} | {count} |")
         lines.append("")
 
