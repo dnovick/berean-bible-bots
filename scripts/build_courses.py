@@ -102,7 +102,7 @@ _TEXTBOOK_META: dict[str, dict[str, Any]] = {
 
 # Maps textbook short name (lowercase) → human-readable group label
 _GROUP_LABELS: dict[str, str] = {
-    "bbh": "Biblical Hebrew",
+    "bbh": "Biblical Hebrew - Year 1",
     "bbg": "Biblical Greek",
     "bba": "Biblical Aramaic",
 }

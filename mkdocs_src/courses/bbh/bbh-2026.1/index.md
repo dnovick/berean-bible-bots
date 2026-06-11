@@ -10,3 +10,4 @@ Biblical Hebrew - Year 1
 | Session | Date |
 |---|---|
 | [1 — Introduction](sessions/session-01.md) | Jul 2, 2026 |
+| [2 — BBH 1 - Hebrew Alphabet](sessions/session-02.md) | Jul 16, 2026 |
