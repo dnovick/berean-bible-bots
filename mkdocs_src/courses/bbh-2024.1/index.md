@@ -7,6 +7,6 @@ Biblical Hebrew - Year 1
 
 ## Sessions
 
-| Session | Date | Focus | Chapter |
-|---|---|---|---|
-| [1](sessions/session-01.md) | Jun 15, 2026 | Hophal Strong Verbs | [BBH Ch28 — Hophal Strong](/lessons/hebrew/ch28/) |
+| Session | Date |
+|---|---|
+| [1 — Hophal Strong Verbs](sessions/session-01.md) | Jun 15, 2026 |
