@@ -117,6 +117,7 @@ def load_course(course_dir: Path) -> dict[str, Any]:
     data.setdefault("instructors", [])
     data.setdefault("description", "")
     data.setdefault("edition", "")
+    data["_course_dir"] = course_dir  # preserve actual path for session file resolution
 
     sessions: list[dict[str, Any]] = []
     for session_dir in sorted(
@@ -563,7 +564,7 @@ def main() -> None:
             cp.write_text(render_course_page(course))
             print(f"  Wrote {cp.relative_to(_REPO_ROOT)}")
 
-            course_dir = _COURSES_DATA_DIR / cid
+            course_dir = course.get("_course_dir") or _COURSES_DATA_DIR / cid
             for session in course.get("sessions", []):
                 sp = sessions_out / session_filename(session)
                 page_md, subpages = render_session_page(course, session, course_dir)
