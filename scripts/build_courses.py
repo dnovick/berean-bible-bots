@@ -337,20 +337,18 @@ def _build_nav_block(courses: list[dict[str, Any]]) -> str:
         short = _TEXTBOOK_META.get(tb, {}).get("short", tb)
         by_short.setdefault(short, []).append(course)
 
-    for short, tb_courses in by_short.items():
-        lines.append(f"  - {short}:")
+    for tb_courses in by_short.values():
         for course in tb_courses:
             cid = course["id"]
-            name = course.get("name", cid)
-            lines.append(f"    - {name} — {cid}:")
-            lines.append(f"      - Overview: courses/{cid}/index.md")
+            lines.append(f"  - {cid}:")
+            lines.append(f"    - Overview: courses/{cid}/index.md")
             sessions = course.get("sessions", [])
             if sessions:
-                lines.append("      - Sessions:")
+                lines.append("    - Sessions:")
                 for session in sessions:
                     title = session_title(session)
                     fname = session_filename(session)
-                    lines.append(f"        - '{title}': courses/{cid}/sessions/{fname}")
+                    lines.append(f"      - '{title}': courses/{cid}/sessions/{fname}")
 
     lines.append(_NAV_END)
     return "\n".join(lines)
