@@ -666,7 +666,7 @@ nav:
 # <COURSES>
 - Courses:
   - Overview: courses/index.md
-  - Biblical Hebrew:
+  - Biblical Hebrew - Year 1:
     - Overview: courses/bbh/index.md
     - Student Resources: courses/bbh/common/student-resources.md
     - bbh-2024.1:
@@ -677,6 +677,7 @@ nav:
       - Overview: courses/bbh/bbh-2026.1/index.md
       - Sessions:
         - 'Session 1 — Introduction': courses/bbh/bbh-2026.1/sessions/session-01.md
+        - 'Session 2 — BBH 1 - Hebrew Alphabet': courses/bbh/bbh-2026.1/sessions/session-02.md
 # </COURSES>
 - Study Helps:
   - Overview: study-helps/index.md

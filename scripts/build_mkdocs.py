@@ -933,7 +933,7 @@ def build_courses_nav() -> list:
         return []
 
     group_labels = {
-        "bbh": "Biblical Hebrew",
+        "bbh": "Biblical Hebrew - Year 1",
         "bbg": "Biblical Greek",
         "bba": "Biblical Aramaic",
     }
