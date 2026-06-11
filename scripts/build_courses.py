@@ -300,6 +300,7 @@ def render_session_page(
     num = session.get("number", "")
     focus = session.get("focus", "")
     date_str = format_date(session.get("date"))
+    instructor = (session.get("instructor") or "").strip()
     chapter = session.get("chapter")
     agenda = session.get("agenda") or []
     sections = session.get("sections") or []
@@ -313,6 +314,8 @@ def render_session_page(
 
     if date_str:
         lines.append(f"**Date:** {date_str}  ")
+    if instructor:
+        lines.append(f"**Instructor:** {instructor}  ")
 
     lines.append("")
 
