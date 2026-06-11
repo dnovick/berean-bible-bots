@@ -918,11 +918,9 @@ def build_courses_nav() -> list:
         by_short.setdefault(short, []).append(course)
 
     nav_entries: list = [{"Overview": "courses/index.md"}]
-    for short, tb_courses in by_short.items():
-        short_entries = []
+    for tb_courses in by_short.values():
         for course in tb_courses:
             cid = course["id"]
-            name = course.get("name", cid)
             course_entries: list = [{"Overview": f"courses/{cid}/index.md"}]
             sessions = course.get("sessions", [])
             if sessions:
@@ -935,8 +933,7 @@ def build_courses_nav() -> list:
                         {f"Session {num} — {focus}": f"courses/{cid}/sessions/{fname}"}
                     )
                 course_entries.append({"Sessions": session_entries})
-            short_entries.append({f"{name} — {cid}": course_entries})
-        nav_entries.append({short: short_entries})
+            nav_entries.append({cid: course_entries})
 
     return [{"Courses": nav_entries}]
 
