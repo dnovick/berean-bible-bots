@@ -272,9 +272,11 @@ def render_courses_index(courses: list[dict[str, Any]]) -> str:
 def render_group_page(group: str, courses: list[dict[str, Any]]) -> str:
     """Render mkdocs_src/courses/<group>/index.md — group landing page."""
     label = _GROUP_LABELS.get(group, group.upper())
-    lines = [
-        f"# {label}",
-        "",
+    description = courses[0].get("description", "") if courses else ""
+    lines = [f"# {label}", ""]
+    if description:
+        lines += [description, ""]
+    lines += [
         "## Resources",
         "",
         "- [Student Resources](common/student-resources.md) — "
@@ -313,13 +315,9 @@ def render_course_page(course: dict[str, Any]) -> str:
     textbook = course.get("textbook", "")
     edition = course.get("edition", "")
     instructors = course.get("instructors", [])
-    description = course.get("description", "")
     sessions = course.get("sessions", [])
 
     lines = [f"# {name} — {cid}", ""]
-
-    if description:
-        lines += [description, ""]
 
     tb_display = textbook
     if edition:
