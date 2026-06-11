@@ -1,7 +1,5 @@
 # Course Goals
 
-# Course Goals
-
 ## Course Outline
 - Biblical Hebrew Alphabet - Consonants and Vowels
 - Biblical Hebrew Morphology

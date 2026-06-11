@@ -1,8 +1,5 @@
 # Course Logistics
 
-# Course Logistics
-
-
 | Item        | Details                                     |
 |-------------|---------------------------------------------|
 | Day of week | Alternate Thursdays, beginning July 2, 2026 |
