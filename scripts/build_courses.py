@@ -100,6 +100,13 @@ _TEXTBOOK_META: dict[str, dict[str, Any]] = {
     },
 }
 
+# Maps textbook short name (lowercase) → human-readable group label
+_GROUP_LABELS: dict[str, str] = {
+    "bbh": "Biblical Hebrew",
+    "bbg": "Biblical Greek",
+    "bba": "Biblical Aramaic",
+}
+
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
@@ -145,6 +152,13 @@ def load_all_courses() -> list[dict[str, Any]]:
 
 
 # ── Slug / anchor helpers ────────────────────────────────────────────────────
+
+def course_group(course: dict[str, Any]) -> str:
+    """Return the URL group prefix for a course (e.g. 'bbh', 'bbg', 'bba')."""
+    tb = course.get("textbook", "")
+    short = _TEXTBOOK_META.get(tb, {}).get("short", "")
+    return short.lower() if short else "other"
+
 
 def heading_anchor(heading: str) -> str:
     """Return a MkDocs-compatible anchor ID for a heading string."""
@@ -245,14 +259,53 @@ def render_courses_index(courses: list[dict[str, Any]]) -> str:
         ]
         for course in tb_courses:
             cid = course["id"]
+            group = course_group(course)
             desc = course.get("description", "")
             instructors = ", ".join(course.get("instructors", []))
             count = len(course.get("sessions", []))
-            link = f"[{cid}]({cid}/index.md)"
+            link = f"[{cid}]({group}/{cid}/index.md)"
             lines.append(f"| {link} | {desc} | {instructors} | {count} |")
         lines.append("")
 
     return "\n".join(lines)
+
+
+def render_group_page(group: str, courses: list[dict[str, Any]]) -> str:
+    """Render mkdocs_src/courses/<group>/index.md — group landing page."""
+    label = _GROUP_LABELS.get(group, group.upper())
+    lines = [
+        f"# {label} Courses",
+        "",
+        "## Resources",
+        "",
+        "- [Student Resources](common/student-resources.md) — "
+        "Textbook acquisition and Bible software guide",
+        "",
+        "## Courses",
+        "",
+        "| Course | Description | Instructor(s) | Sessions |",
+        "|---|---|---|---|",
+    ]
+    for course in courses:
+        cid = course["id"]
+        desc = course.get("description", "")
+        instructors = ", ".join(course.get("instructors", []))
+        count = len(course.get("sessions", []))
+        link = f"[{cid}]({cid}/index.md)"
+        lines.append(f"| {link} | {desc} | {instructors} | {count} |")
+    lines.append("")
+    return "\n".join(lines)
+
+
+def _copy_common_resources(group: str, common_out: Path) -> None:
+    """Copy data/courses/<group>/common/*.md into mkdocs_src/courses/<group>/common/."""
+    common_data = _COURSES_DATA_DIR / group / "common"
+    if not common_data.is_dir():
+        return
+    for src in sorted(common_data.glob("*.md")):
+        dst = common_out / src.name
+        dst.write_text(src.read_text(encoding="utf-8"))
+        print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
 
 
 def render_course_page(course: dict[str, Any]) -> str:
@@ -357,7 +410,7 @@ def render_session_page(
                 section_urls[heading] = f"#{anchor}"
         else:
             cslug = content_slug(section)
-            section_urls[heading] = f"{sess_slug}/{cslug}/"
+            section_urls[heading] = f"{sess_slug}/{cslug}.md"
             subpages[f"{cslug}.md"] = f"# {heading}\n\n{body}\n"
 
     # ── Build page ──────────────────────────────────────────────────────────────
@@ -414,24 +467,30 @@ def _build_nav_block(courses: list[dict[str, Any]]) -> str:
         "  - Overview: courses/index.md",
     ]
 
-    by_short: dict[str, list[dict[str, Any]]] = {}
+    by_group: dict[str, list[dict[str, Any]]] = {}
     for course in courses:
-        tb = course.get("textbook", "Other")
-        short = _TEXTBOOK_META.get(tb, {}).get("short", tb)
-        by_short.setdefault(short, []).append(course)
+        by_group.setdefault(course_group(course), []).append(course)
 
-    for tb_courses in by_short.values():
-        for course in tb_courses:
+    for group, group_courses in by_group.items():
+        label = _GROUP_LABELS.get(group, group.upper())
+        lines.append(f"  - {label}:")
+        lines.append(f"    - Overview: courses/{group}/index.md")
+        lines.append(
+            f"    - Student Resources: courses/{group}/common/student-resources.md"
+        )
+        for course in group_courses:
             cid = course["id"]
-            lines.append(f"  - {cid}:")
-            lines.append(f"    - Overview: courses/{cid}/index.md")
+            lines.append(f"    - {cid}:")
+            lines.append(f"      - Overview: courses/{group}/{cid}/index.md")
             sessions = course.get("sessions", [])
             if sessions:
-                lines.append("    - Sessions:")
+                lines.append("      - Sessions:")
                 for session in sessions:
                     title = session_title(session)
                     fname = session_filename(session)
-                    lines.append(f"      - '{title}': courses/{cid}/sessions/{fname}")
+                    lines.append(
+                        f"        - '{title}': courses/{group}/{cid}/sessions/{fname}"
+                    )
 
     lines.append(_NAV_END)
     return "\n".join(lines)
@@ -464,40 +523,62 @@ def update_nav(courses: list[dict[str, Any]]) -> None:
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 def main() -> None:
+    import shutil
+
     courses = load_all_courses()
     print(f"Found {len(courses)} course(s): {[c['id'] for c in courses]}")
 
-    _COURSES_SITE_DIR.mkdir(parents=True, exist_ok=True)
+    # Wipe and recreate so stale files (old non-grouped paths) don't linger.
+    if _COURSES_SITE_DIR.exists():
+        shutil.rmtree(_COURSES_SITE_DIR)
+    _COURSES_SITE_DIR.mkdir(parents=True)
 
     idx = _COURSES_SITE_DIR / "index.md"
     idx.write_text(render_courses_index(courses))
     print(f"  Wrote {idx.relative_to(_REPO_ROOT)}")
 
+    # Group courses and generate group landing + common resource pages.
+    by_group: dict[str, list[dict[str, Any]]] = {}
     for course in courses:
-        cid = course["id"]
-        course_out = _COURSES_SITE_DIR / cid
-        sessions_out = course_out / "sessions"
-        course_out.mkdir(parents=True, exist_ok=True)
-        sessions_out.mkdir(parents=True, exist_ok=True)
+        by_group.setdefault(course_group(course), []).append(course)
 
-        cp = course_out / "index.md"
-        cp.write_text(render_course_page(course))
-        print(f"  Wrote {cp.relative_to(_REPO_ROOT)}")
+    for group, group_courses in by_group.items():
+        group_out = _COURSES_SITE_DIR / group
+        common_out = group_out / "common"
+        group_out.mkdir(parents=True, exist_ok=True)
+        common_out.mkdir(parents=True, exist_ok=True)
 
-        course_dir = _COURSES_DATA_DIR / cid
-        for session in course.get("sessions", []):
-            sp = sessions_out / session_filename(session)
-            page_md, subpages = render_session_page(course, session, course_dir)
-            sp.write_text(page_md)
-            print(f"  Wrote {sp.relative_to(_REPO_ROOT)}")
+        gp = group_out / "index.md"
+        gp.write_text(render_group_page(group, group_courses))
+        print(f"  Wrote {gp.relative_to(_REPO_ROOT)}")
 
-            if subpages:
-                subpage_dir = sessions_out / session_slug(session)
-                subpage_dir.mkdir(parents=True, exist_ok=True)
-                for fname, content in subpages.items():
-                    subpage_path = subpage_dir / fname
-                    subpage_path.write_text(content)
-                    print(f"  Wrote {subpage_path.relative_to(_REPO_ROOT)}")
+        _copy_common_resources(group, common_out)
+
+        for course in group_courses:
+            cid = course["id"]
+            course_out = group_out / cid
+            sessions_out = course_out / "sessions"
+            course_out.mkdir(parents=True, exist_ok=True)
+            sessions_out.mkdir(parents=True, exist_ok=True)
+
+            cp = course_out / "index.md"
+            cp.write_text(render_course_page(course))
+            print(f"  Wrote {cp.relative_to(_REPO_ROOT)}")
+
+            course_dir = _COURSES_DATA_DIR / cid
+            for session in course.get("sessions", []):
+                sp = sessions_out / session_filename(session)
+                page_md, subpages = render_session_page(course, session, course_dir)
+                sp.write_text(page_md)
+                print(f"  Wrote {sp.relative_to(_REPO_ROOT)}")
+
+                if subpages:
+                    subpage_dir = sessions_out / session_slug(session)
+                    subpage_dir.mkdir(parents=True, exist_ok=True)
+                    for fname, content in subpages.items():
+                        subpage_path = subpage_dir / fname
+                        subpage_path.write_text(content)
+                        print(f"  Wrote {subpage_path.relative_to(_REPO_ROOT)}")
 
     update_nav(courses)
     print("Done.")
