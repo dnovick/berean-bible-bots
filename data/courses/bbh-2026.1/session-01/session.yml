@@ -25,5 +25,15 @@ agenda:
   - title: "Course Text"
   - title: "Course Resources"
   - title: "Expectations"
-sections: []
+sections:
+  - heading: "Setting the Stage — David Novick"
+    file: "setting-the-stage.md"
+  - heading: "Course Goals"
+    file: "course-goals.md"
+  - heading: "Course Text"
+    file: "course-text.md"
+  - heading: "Course Resources"
+    file: "course-resources.md"
+  - heading: "Expectations"
+    file: "expectations.md"
 notes: ""
