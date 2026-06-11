@@ -2,7 +2,6 @@
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
 **Date:** Jul 2, 2026  
-**Instructor:** David Novick  
 
 ## Agenda
 
