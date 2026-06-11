@@ -881,12 +881,73 @@ def build_course(lang: str, course: str, label: str, titles: dict[str, str]) -> 
     return [{label: nav_entries}]
 
 
+def build_courses_nav() -> list:
+    """Read data/courses/ YAMLs and return nav entries for the Courses section."""
+    import yaml as _yaml
+    courses_data_dir = REPO / "data" / "courses"
+    if not courses_data_dir.is_dir():
+        return []
+
+    textbook_short = {
+        "Basics of Biblical Hebrew": "BBH",
+        "Basics of Biblical Greek": "BBG",
+        "Basics of Biblical Aramaic": "BBA",
+    }
+
+    courses = []
+    for course_dir in sorted(courses_data_dir.iterdir()):
+        yml = course_dir / "course.yml"
+        if not course_dir.is_dir() or not yml.exists():
+            continue
+        with open(yml) as f:
+            data = _yaml.safe_load(f)
+        data.setdefault("sessions", [])
+        sessions = sorted(data["sessions"], key=lambda s: str(s.get("date", "") or ""))
+        for i, s in enumerate(sessions, 1):
+            s.setdefault("number", i)
+        data["sessions"] = sessions
+        courses.append(data)
+
+    if not courses:
+        return []
+
+    by_short: dict = {}
+    for course in courses:
+        tb = course.get("textbook", "Other")
+        short = textbook_short.get(tb, tb)
+        by_short.setdefault(short, []).append(course)
+
+    nav_entries: list = [{"Overview": "courses/index.md"}]
+    for short, tb_courses in by_short.items():
+        short_entries = []
+        for course in tb_courses:
+            cid = course["id"]
+            name = course.get("name", cid)
+            course_entries: list = [{"Overview": f"courses/{cid}/index.md"}]
+            sessions = course.get("sessions", [])
+            if sessions:
+                session_entries = []
+                for session in sessions:
+                    num = session.get("number", "")
+                    focus = session.get("focus", "")
+                    fname = f"session-{num:02d}.md"
+                    session_entries.append(
+                        {f"Session {num} — {focus}": f"courses/{cid}/sessions/{fname}"}
+                    )
+                course_entries.append({"Sessions": session_entries})
+            short_entries.append({f"{name} — {cid}": course_entries})
+        nav_entries.append({short: short_entries})
+
+    return [{"Courses": nav_entries}]
+
+
 def build_nav() -> list:
     nav: list = [{"Home": "index.md"}]
     for lang, course, label, titles in COURSES:
         nav.extend(build_course(lang, course, label, titles))
     nav.extend(build_notebooks())
     nav.extend(build_reports())
+    nav.extend(build_courses_nav())
     nav.extend(build_study_helps())
     nav.append({"API Reference": "reference/index.md"})
     return nav
