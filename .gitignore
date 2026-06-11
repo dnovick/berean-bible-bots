@@ -25,6 +25,9 @@ output/exports/
 mkdocs_out/
 mkdocs_nav.yml
 
+# Generated course pages — built from data/courses/ by scripts/build_courses.py
+mkdocs_src/courses/
+
 # Generated student zip packages — committed so students can download from GitHub
 # output/student-packs/
 .idea/
