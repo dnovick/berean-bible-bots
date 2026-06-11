@@ -401,7 +401,7 @@ def render_session_page(
         else:
             cslug = content_slug(section)
             section_urls[heading] = f"{sess_slug}/{cslug}.md"
-            subpages[f"{cslug}.md"] = f"# {heading}\n\n{body}\n"
+            subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
 
     # ── Build page ──────────────────────────────────────────────────────────────
     lines = [
