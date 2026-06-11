@@ -251,10 +251,14 @@ def render_course_page(course: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def _section_content(section: dict[str, Any], course_dir: Path) -> str:
-    """Return the body text for a section: inline content or file contents."""
+def _section_content(section: dict[str, Any], session_dir: Path) -> str:
+    """Return the body text for a section: inline content or file contents.
+
+    File paths are relative to the per-session data directory
+    (e.g. data/courses/bbh-2026.1/session-01/).
+    """
     if section.get("file"):
-        file_path = course_dir / section["file"]
+        file_path = session_dir / section["file"]
         if file_path.exists():
             return file_path.read_text(encoding="utf-8").strip()
         return f"*(file not found: `{section['file']}`)*"
@@ -272,6 +276,7 @@ def render_session_page(
     textbook = course.get("textbook", "")
     if course_dir is None:
         course_dir = _COURSES_DATA_DIR / cid
+    session_dir = course_dir / session_slug(session)
 
     num = session.get("number", "")
     focus = session.get("focus", "")
@@ -306,7 +311,7 @@ def render_session_page(
 
     for section in sections:
         heading = section.get("heading", "")
-        body = _section_content(section, course_dir)
+        body = _section_content(section, session_dir)
         if heading:
             lines += [f"## {heading}", ""]
         if body:

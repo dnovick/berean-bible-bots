@@ -22,7 +22,10 @@ description: "Biblical Hebrew - Year 1"
 #
 #   sections: freeform content blocks, each rendered as ## Heading + markdown body
 #     - heading: section title
-#       content: markdown text (use | for multi-line)
+#       content: inline markdown text (use | for multi-line)
+#       file:    path to a .md file relative to the session subdirectory
+#                e.g. "something-to-think-about.md" resolves to
+#                data/courses/bbh-2026.1/session-01/something-to-think-about.md
 #
 #   notes:    plain-text instructor notes (not shown on the page when blank)
 
