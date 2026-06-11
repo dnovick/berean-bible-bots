@@ -15,7 +15,8 @@
 #     content: inline markdown text (use | for multi-line)
 #     file:    .md filename in this session directory (e.g. "background.md")
 #
-# notes:    plain-text instructor notes (not rendered on the page when blank)
+# instructor: name of the lead teacher for this session (optional, omit if blank)
+# notes:      plain-text instructor notes (not rendered on the page when blank)
 
 date: "2026-06-15"
 focus: "Hophal Strong Verbs"
