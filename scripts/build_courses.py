@@ -273,7 +273,7 @@ def render_group_page(group: str, courses: list[dict[str, Any]]) -> str:
     """Render mkdocs_src/courses/<group>/index.md — group landing page."""
     label = _GROUP_LABELS.get(group, group.upper())
     lines = [
-        f"# {label} Courses",
+        f"# {label}",
         "",
         "## Resources",
         "",
@@ -282,16 +282,15 @@ def render_group_page(group: str, courses: list[dict[str, Any]]) -> str:
         "",
         "## Courses",
         "",
-        "| Course | Description | Instructor(s) | Sessions |",
-        "|---|---|---|---|",
+        "| Course | Instructor(s) | Sessions |",
+        "|---|---|---|",
     ]
     for course in courses:
         cid = course["id"]
-        desc = course.get("description", "")
         instructors = ", ".join(course.get("instructors", []))
         count = len(course.get("sessions", []))
         link = f"[{cid}]({cid}/index.md)"
-        lines.append(f"| {link} | {desc} | {instructors} | {count} |")
+        lines.append(f"| {link} | {instructors} | {count} |")
     lines.append("")
     return "\n".join(lines)
 
