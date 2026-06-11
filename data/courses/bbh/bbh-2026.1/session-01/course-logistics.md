@@ -23,3 +23,5 @@
 - Introduction of new material from BBH.
 - Exercises and Flashcards
 - Reading and Recognition
+- Discussion
+- Q&A
