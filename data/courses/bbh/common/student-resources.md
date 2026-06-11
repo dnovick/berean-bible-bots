@@ -52,5 +52,5 @@ You need a tool that supports:
 
 | Book | Notes |
 |------|-------|
-| **[Exegetical Fallacies](https://www.amazon.com/dp/0801021979)** — D.A. Carson | A clear survey of common errors in biblical interpretation — logical, linguistic, and theological. Invaluable for learning to handle the text accurately. |
+| **[Exegetical Fallacies](https://a.co/d/0a2vyrt3)** — D.A. Carson | A clear survey of common errors in biblical interpretation — logical, linguistic, and theological. Invaluable for learning to handle the text accurately. |
 | **[Figures of Speech Used in the Bible](https://www.amazon.com/dp/0801010551)** — E.W. Bullinger | The definitive reference catalog of biblical figures of speech with thousands of examples from the original languages. A lifetime reference work. |
