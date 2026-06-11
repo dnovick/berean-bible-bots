@@ -9,4 +9,4 @@ Biblical Hebrew - Year 1
 
 | Session | Date |
 |---|---|
-| [1 — Hophal Strong Verbs](sessions/session-01.md) | Jun 15, 2026 |
+| [130 — Hophal Strong Verbs](sessions/session-01.md) | Jun 15, 2026 |

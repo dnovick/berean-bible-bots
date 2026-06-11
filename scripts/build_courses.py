@@ -38,6 +38,10 @@ _NAV_PATH = _REPO_ROOT / "mkdocs_nav.yml"
 _NAV_START = "# <COURSES>"
 _NAV_END = "# </COURSES>"
 
+# Content at or below this character count renders inline on the session page;
+# anything larger is written as its own sub-page.
+INLINE_THRESHOLD = 600
+
 # ── Textbook metadata ─────────────────────────────────────────────────────────
 
 _BBH_CHAPTERS: dict[int, str] = {
@@ -117,11 +121,13 @@ def load_course(course_dir: Path) -> dict[str, Any]:
             continue
         with open(yml) as f:
             session: dict[str, Any] = yaml.safe_load(f) or {}
-        # Derive number from directory name: session-01 → 1
-        try:
-            session["number"] = int(session_dir.name.split("-", 1)[1])
-        except (IndexError, ValueError):
-            session["number"] = len(sessions) + 1
+        # Derive number from directory name: session-01 → 1.
+        # A 'number:' key in session.yml overrides the derived value.
+        if "number" not in session:
+            try:
+                session["number"] = int(session_dir.name.split("-", 1)[1])
+            except (IndexError, ValueError):
+                session["number"] = len(sessions) + 1
         session["_dir"] = session_dir.name
         sessions.append(session)
 
@@ -136,6 +142,32 @@ def load_all_courses() -> list[dict[str, Any]]:
         if course_dir.is_dir() and (course_dir / "course.yml").exists():
             courses.append(load_course(course_dir))
     return courses
+
+
+# ── Slug / anchor helpers ────────────────────────────────────────────────────
+
+def heading_anchor(heading: str) -> str:
+    """Return a MkDocs-compatible anchor ID for a heading string."""
+    slug = heading.lower()
+    slug = re.sub(r"[^\w\s-]", "", slug)
+    slug = re.sub(r"[\s_]+", "-", slug.strip())
+    slug = re.sub(r"-+", "-", slug)
+    return slug.strip("-")
+
+
+def content_slug(section: dict[str, Any]) -> str:
+    """Return a URL slug for a section's standalone sub-page."""
+    if section.get("file"):
+        return Path(section["file"]).stem
+    return heading_anchor(section.get("heading", "section"))
+
+
+def _strip_leading_h1(text: str) -> str:
+    """Remove a leading '# …' H1 line when rendering content inline."""
+    lines_list = text.splitlines()
+    if lines_list and lines_list[0].startswith("# "):
+        return "\n".join(lines_list[1:]).lstrip("\n")
+    return text
 
 
 # ── Formatting helpers ────────────────────────────────────────────────────────
@@ -288,14 +320,20 @@ def render_session_page(
     course: dict[str, Any],
     session: dict[str, Any],
     course_dir: Path | None = None,
-) -> str:
-    """Render mkdocs_src/courses/<id>/sessions/session-NN.md."""
+) -> tuple[str, dict[str, str]]:
+    """Render mkdocs_src/courses/<id>/sessions/session-NN.md.
+
+    Returns (page_markdown, subpages) where subpages maps filename → content
+    for sections whose content exceeds INLINE_THRESHOLD.  The caller is
+    responsible for writing those files under sessions/<session-slug>/.
+    """
     cid = course["id"]
     name = course.get("name", cid)
     textbook = course.get("textbook", "")
     if course_dir is None:
         course_dir = _COURSES_DATA_DIR / cid
-    session_dir = course_dir / session_slug(session)
+    sess_slug = session_slug(session)
+    session_dir = course_dir / sess_slug
 
     num = session.get("number", "")
     focus = session.get("focus", "")
@@ -306,6 +344,23 @@ def render_session_page(
     sections = session.get("sections") or []
     notes = (session.get("notes") or "").strip()
 
+    # ── First pass: classify each section, build heading → URL map ─────────────
+    section_urls: dict[str, str] = {}
+    subpages: dict[str, str] = {}
+
+    for section in sections:
+        heading = section.get("heading", "")
+        body = _section_content(section, session_dir)
+        if len(body) <= INLINE_THRESHOLD:
+            anchor = heading_anchor(heading)
+            if anchor:
+                section_urls[heading] = f"#{anchor}"
+        else:
+            cslug = content_slug(section)
+            section_urls[heading] = f"{sess_slug}/{cslug}/"
+            subpages[f"{cslug}.md"] = f"# {heading}\n\n{body}\n"
+
+    # ── Build page ──────────────────────────────────────────────────────────────
     lines = [
         f"# Session {num} — {focus}",
         "",
@@ -326,23 +381,27 @@ def render_session_page(
         lines += ["## Agenda", ""]
         for item in agenda:
             title = item.get("title", "")
-            url = item.get("url", "")
+            # Explicit url: in YAML always wins; otherwise auto-match to section
+            url = item.get("url", "") or section_urls.get(title, "")
             entry = f"[{title}]({url})" if url else title
             lines.append(f"1. {entry}")
         lines.append("")
 
+    # Render only inline sections; subpages are written by the caller
     for section in sections:
         heading = section.get("heading", "")
         body = _section_content(section, session_dir)
-        if heading:
-            lines += [f"## {heading}", ""]
-        if body:
-            lines += [body, ""]
+        if len(body) <= INLINE_THRESHOLD:
+            if heading:
+                lines += [f"## {heading}", ""]
+            inline_body = _strip_leading_h1(body)
+            if inline_body:
+                lines += [inline_body, ""]
 
     if notes:
         lines += ["## Notes", "", notes, ""]
 
-    return "\n".join(lines)
+    return "\n".join(lines), subpages
 
 
 # ── Nav management ────────────────────────────────────────────────────────────
@@ -428,8 +487,17 @@ def main() -> None:
         course_dir = _COURSES_DATA_DIR / cid
         for session in course.get("sessions", []):
             sp = sessions_out / session_filename(session)
-            sp.write_text(render_session_page(course, session, course_dir))
+            page_md, subpages = render_session_page(course, session, course_dir)
+            sp.write_text(page_md)
             print(f"  Wrote {sp.relative_to(_REPO_ROOT)}")
+
+            if subpages:
+                subpage_dir = sessions_out / session_slug(session)
+                subpage_dir.mkdir(parents=True, exist_ok=True)
+                for fname, content in subpages.items():
+                    subpage_path = subpage_dir / fname
+                    subpage_path.write_text(content)
+                    print(f"  Wrote {subpage_path.relative_to(_REPO_ROOT)}")
 
     update_nav(courses)
     print("Done.")
