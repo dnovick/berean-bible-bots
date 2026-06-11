@@ -15,6 +15,13 @@
 
 ## BBB Updates
 
+Given that we are starting a new class, I'd like to EOL our use of Notion. 
+Moving forward, we will use the BBB website courses area: https://www.bereanbiblebots.com/courses.
+
 ## Hophal Strong Verbs - BBH 28
 
+https://bereanbiblebots.com/lessons/hebrew/ch28/
+
 ## References
+
+- https://bereanbiblebots.com/lessons/hebrew/ch26/hiphil-paradigms/

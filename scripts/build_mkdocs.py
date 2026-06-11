@@ -923,17 +923,28 @@ def build_courses_nav() -> list:
     if not courses:
         return []
 
-    by_short: dict = {}
+    group_labels = {
+        "bbh": "Biblical Hebrew",
+        "bbg": "Biblical Greek",
+        "bba": "Biblical Aramaic",
+    }
+
+    by_group: dict = {}
     for course in courses:
         tb = course.get("textbook", "Other")
-        short = textbook_short.get(tb, tb)
-        by_short.setdefault(short, []).append(course)
+        short = textbook_short.get(tb, "other").lower()
+        by_group.setdefault(short, []).append(course)
 
     nav_entries: list = [{"Overview": "courses/index.md"}]
-    for tb_courses in by_short.values():
-        for course in tb_courses:
+    for group, group_courses in by_group.items():
+        label = group_labels.get(group, group.upper())
+        group_entries: list = [
+            {"Overview": f"courses/{group}/index.md"},
+            {"Student Resources": f"courses/{group}/common/student-resources.md"},
+        ]
+        for course in group_courses:
             cid = course["id"]
-            course_entries: list = [{"Overview": f"courses/{cid}/index.md"}]
+            course_entries: list = [{"Overview": f"courses/{group}/{cid}/index.md"}]
             sessions = course.get("sessions", [])
             if sessions:
                 session_entries = []
@@ -942,10 +953,12 @@ def build_courses_nav() -> list:
                     focus = session.get("focus", "")
                     fname = f"{session.get('_dir', f'session-{num:02d}')}.md"
                     session_entries.append(
-                        {f"Session {num} — {focus}": f"courses/{cid}/sessions/{fname}"}
+                        {f"Session {num} — {focus}":
+                         f"courses/{group}/{cid}/sessions/{fname}"}
                     )
                 course_entries.append({"Sessions": session_entries})
-            nav_entries.append({cid: course_entries})
+            group_entries.append({cid: course_entries})
+        nav_entries.append({label: group_entries})
 
     return [{"Courses": nav_entries}]
 
