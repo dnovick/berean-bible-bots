@@ -143,11 +143,19 @@ def load_course(course_dir: Path) -> dict[str, Any]:
 
 
 def load_all_courses() -> list[dict[str, Any]]:
-    """Load all courses from data/courses/, sorted by id."""
+    """Load all courses from data/courses/<group>/<id>/, sorted by group then id."""
     courses = []
-    for course_dir in sorted(_COURSES_DATA_DIR.iterdir()):
-        if course_dir.is_dir() and (course_dir / "course.yml").exists():
-            courses.append(load_course(course_dir))
+    for entry in sorted(_COURSES_DATA_DIR.iterdir()):
+        if not entry.is_dir():
+            continue
+        if (entry / "course.yml").exists():
+            # Ungrouped legacy course directly under data/courses/
+            courses.append(load_course(entry))
+        else:
+            # Group directory — scan one level deeper for course dirs
+            for course_dir in sorted(entry.iterdir()):
+                if course_dir.is_dir() and (course_dir / "course.yml").exists():
+                    courses.append(load_course(course_dir))
     return courses
 
 

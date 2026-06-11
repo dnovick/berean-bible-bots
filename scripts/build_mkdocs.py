@@ -894,11 +894,8 @@ def build_courses_nav() -> list:
         "Basics of Biblical Aramaic": "BBA",
     }
 
-    courses = []
-    for course_dir in sorted(courses_data_dir.iterdir()):
+    def _load_course(course_dir: Path) -> dict:
         yml = course_dir / "course.yml"
-        if not course_dir.is_dir() or not yml.exists():
-            continue
         with open(yml) as f:
             data = _yaml.safe_load(f)
         sessions: list[dict] = []
@@ -911,14 +908,26 @@ def build_courses_nav() -> list:
                 continue
             with open(syml) as f:
                 session = _yaml.safe_load(f) or {}
-            try:
-                session["number"] = int(session_dir.name.split("-", 1)[1])
-            except (IndexError, ValueError):
-                session["number"] = len(sessions) + 1
+            if "number" not in session:
+                try:
+                    session["number"] = int(session_dir.name.split("-", 1)[1])
+                except (IndexError, ValueError):
+                    session["number"] = len(sessions) + 1
             session["_dir"] = session_dir.name
             sessions.append(session)
         data["sessions"] = sessions
-        courses.append(data)
+        return data
+
+    courses = []
+    for entry in sorted(courses_data_dir.iterdir()):
+        if not entry.is_dir():
+            continue
+        if (entry / "course.yml").exists():
+            courses.append(_load_course(entry))
+        else:
+            for course_dir in sorted(entry.iterdir()):
+                if course_dir.is_dir() and (course_dir / "course.yml").exists():
+                    courses.append(_load_course(course_dir))
 
     if not courses:
         return []
