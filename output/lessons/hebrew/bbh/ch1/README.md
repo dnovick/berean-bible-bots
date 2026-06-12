@@ -12,7 +12,7 @@
 
 | Exercise | Description |
 |---|---|
-| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/README.md) | 30-item letter identification drill — all 22 base letters, 5 sofit forms, 3 begadkephat letters with dagesh lene |
+| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/README.md) | 33-item letter identification drill — all 22 base letters, 5 sofit forms, 6 begadkephat letters with dagesh lene; mixed order |
 
 ### Flashcards
 
