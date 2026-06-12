@@ -43,5 +43,17 @@ with His help, "study" (gk. σπουδάζω – strive) to "...rightly divide t
   
 ## Student Goals
 
-- Achieve a greater appreciation for and understanding of the text.
-- Strengthen ability to correctly communicate Biblical truth in preaching and teaching.
+  - Develop the ability to **read and understand the Old Testament more closely** in its original Hebrew, 
+gaining direct access to the language in which it was written.
+  - **Grow in appreciation** for the richness, depth, nuance, and literary beauty of Scripture, 
+including features such as wordplay, rhythm, and layered meanings that are often difficult to capture in translation.
+  - **Strengthen sound exegetical and hermeneutical practices**, enabling more careful interpretation of the 
+biblical text and helping to avoid common interpretive errors.
+  - **Deepen personal study and devotion** by engaging Scripture more attentively, 
+allowing the text to speak on its own terms and drawing nearer to its original context and message.
+  - **Improve the ability to communicate biblical truth** clearly and accurately through teaching, 
+preaching, discipleship, small-group study, and everyday conversations.
+  - **Better serve the church** by helping others understand, apply, and delight in God's Word
+through insights gained from the original language.
+  - **Cultivate a lifelong foundation for continued growth** in biblical scholarship, faithful interpretation, 
+and ministry effectiveness.
