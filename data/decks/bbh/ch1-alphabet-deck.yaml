@@ -1,0 +1,148 @@
+# BBH Chapter 1 — Alphabet Flashcard Deck
+#
+# Edit this file to change card content, then run:
+#   python scripts/build_bbh_decks.py
+# to regenerate all output formats (.md, .txt, -fd.txt).
+#
+# Card format:
+#   front: Hebrew character(s) shown on the card front
+#   back:  Full answer shown on the card back (name + transliteration + sound)
+#   tags:  List of Anki tags for filtering (added to the deck-level tag)
+#
+# Groups are rendered as sections in the .md file.
+# All tags are prefixed with "bbh-ch1" automatically.
+
+deck:
+  id: ch1-alphabet
+  title: "BBH Chapter 1 — Hebrew Alphabet"
+  anki_deck: "BBH Chapter 1 — Alphabet"
+  description: "Hebrew consonants: letter → name and pronunciation. 34 cards."
+  tags_prefix: bbh-ch1
+
+groups:
+
+  - name: "The 22 Consonants (canonical order)"
+    description: >
+      One card per letter in aleph-bet order. Begadkephat letters appear here
+      in their soft (no-dagesh) form; hard (dagesh) forms are in the next group.
+      Shin and Sin are listed as two separate entries.
+    tag: consonant
+    cards:
+      - front: "א"
+        back: "Aleph — ʾ — silent (glottal stop); guttural letter"
+        tags: [guttural]
+      - front: "ב"
+        back: "Beth, soft form (Vet) — v — /v/ as in 'vine'"
+        tags: [begadkephat, soft-form]
+      - front: "ג"
+        back: "Gimel, soft form (Ghimel) — g/gh — /g/ as in 'go' (soft rarely distinguished today)"
+        tags: [begadkephat, soft-form]
+      - front: "ד"
+        back: "Dalet, soft form (Dhalet) — d/dh — /d/ as in 'day' (soft /dh/ as in 'the', rare today)"
+        tags: [begadkephat, soft-form]
+      - front: "ה"
+        back: "He — h — /h/ as in 'hay'; often quiescent at end of syllable; guttural"
+        tags: [guttural]
+      - front: "ו"
+        back: "Vav — v/w — /v/ or /w/ (consonantal); also functions as a vowel letter"
+        tags: []
+      - front: "ז"
+        back: "Zayin — z — /z/ as in 'zoo'"
+        tags: []
+      - front: "ח"
+        back: "Chet — ḥ — guttural fricative /kh/ as in 'Bach'; guttural letter"
+        tags: [guttural]
+      - front: "ט"
+        back: "Tet — ṭ — emphatic /t/ (no English equivalent; like 't' but emphatic)"
+        tags: []
+      - front: "י"
+        back: "Yod — y — /y/ as in 'yes' (consonantal); also functions as a vowel letter"
+        tags: []
+      - front: "כ"
+        back: "Kaph, soft form (Khaf) — kh — /kh/ as in 'Bach'"
+        tags: [begadkephat, soft-form]
+      - front: "ל"
+        back: "Lamed — l — /l/ as in 'lamp'"
+        tags: []
+      - front: "מ"
+        back: "Mem — m — /m/ as in 'man'"
+        tags: []
+      - front: "נ"
+        back: "Nun — n — /n/ as in 'now'"
+        tags: []
+      - front: "ס"
+        back: "Samekh — s — /s/ as in 'sun'"
+        tags: []
+      - front: "ע"
+        back: "Ayin — ʿ — silent pharyngeal stop; guttural; distinct from Aleph"
+        tags: [guttural]
+      - front: "פ"
+        back: "Pe, soft form (Fe) — f — /f/ as in 'fan'"
+        tags: [begadkephat, soft-form]
+      - front: "צ"
+        back: "Tsade — ṣ — emphatic /ts/ as in 'ca-ts'"
+        tags: []
+      - front: "ק"
+        back: "Qof — q — uvular /q/ (deeper than /k/, no English equivalent)"
+        tags: []
+      - front: "ר"
+        back: "Resh — r — uvular /r/; resists Dagesh Forte; sometimes grouped with gutturals"
+        tags: []
+      - front: "שׁ"
+        back: "Shin — š — /sh/ as in 'shoe' (right dot = shin dot)"
+        tags: [shin-sin]
+      - front: "שׂ"
+        back: "Sin — ś — /s/ as in 'sun' (left dot = sin dot)"
+        tags: [shin-sin]
+      - front: "ת"
+        back: "Tav, soft form (Thav) — t/th — /t/ as in 'top' (soft /th/ as in 'the', rare today)"
+        tags: [begadkephat, soft-form]
+
+  - name: "Begadkephat — Hard Forms (with Dagesh Lene)"
+    description: >
+      The six begadkephat letters (ב ג ד כ פ ת) each receive a dagesh lene
+      when they begin a word or follow a closed syllable. The dagesh produces
+      the hard (stop) pronunciation.
+    tag: begadkephat
+    cards:
+      - front: "בּ"
+        back: "Beth, hard form (Bet) — b — /b/ as in 'boy' · dagesh lene present"
+        tags: [hard-form]
+      - front: "גּ"
+        back: "Gimel, hard form — g — /g/ as in 'go' · dagesh lene present"
+        tags: [hard-form]
+      - front: "דּ"
+        back: "Dalet, hard form — d — /d/ as in 'day' · dagesh lene present"
+        tags: [hard-form]
+      - front: "כּ"
+        back: "Kaph, hard form (Kaf) — k — /k/ as in 'king' · dagesh lene present"
+        tags: [hard-form]
+      - front: "פּ"
+        back: "Pe, hard form — p — /p/ as in 'pan' · dagesh lene present"
+        tags: [hard-form]
+      - front: "תּ"
+        back: "Tav, hard form — t — /t/ as in 'top' · dagesh lene present"
+        tags: [hard-form]
+
+  - name: "Final (Sofit) Forms"
+    description: >
+      Five consonants have a special shape when they appear as the last letter
+      of a word. These are called sofit (סוֹפִית, 'final') forms. The mnemonic
+      for the five letters is כַּמְנַפַּץ (kamnafats).
+    tag: sofit
+    cards:
+      - front: "ך"
+        back: "Kaph Sofit — k/kh — final form of כ (soft) / כּ (hard)"
+        tags: []
+      - front: "ם"
+        back: "Mem Sofit — m — final form of מ (closed square shape)"
+        tags: []
+      - front: "ן"
+        back: "Nun Sofit — n — final form of נ (long descending stroke)"
+        tags: []
+      - front: "ף"
+        back: "Pe Sofit — f — final form of פ/פּ (open form with descending tail)"
+        tags: []
+      - front: "ץ"
+        back: "Tsade Sofit — ṣ — final form of צ (long descending tail)"
+        tags: []

@@ -1,0 +1,40 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 1 — Alphabet
+#tags column:3
+
+א	Aleph — ʾ — silent (glottal stop); guttural letter	bbh-ch1 bbh-ch1-consonant bbh-ch1-guttural
+ב	Beth, soft form (Vet) — v — /v/ as in 'vine'	bbh-ch1 bbh-ch1-consonant bbh-ch1-begadkephat bbh-ch1-soft-form
+ג	Gimel, soft form (Ghimel) — g/gh — /g/ as in 'go' (soft rarely distinguished today)	bbh-ch1 bbh-ch1-consonant bbh-ch1-begadkephat bbh-ch1-soft-form
+ד	Dalet, soft form (Dhalet) — d/dh — /d/ as in 'day' (soft /dh/ as in 'the', rare today)	bbh-ch1 bbh-ch1-consonant bbh-ch1-begadkephat bbh-ch1-soft-form
+ה	He — h — /h/ as in 'hay'; often quiescent at end of syllable; guttural	bbh-ch1 bbh-ch1-consonant bbh-ch1-guttural
+ו	Vav — v/w — /v/ or /w/ (consonantal); also functions as a vowel letter	bbh-ch1 bbh-ch1-consonant
+ז	Zayin — z — /z/ as in 'zoo'	bbh-ch1 bbh-ch1-consonant
+ח	Chet — ḥ — guttural fricative /kh/ as in 'Bach'; guttural letter	bbh-ch1 bbh-ch1-consonant bbh-ch1-guttural
+ט	Tet — ṭ — emphatic /t/ (no English equivalent; like 't' but emphatic)	bbh-ch1 bbh-ch1-consonant
+י	Yod — y — /y/ as in 'yes' (consonantal); also functions as a vowel letter	bbh-ch1 bbh-ch1-consonant
+כ	Kaph, soft form (Khaf) — kh — /kh/ as in 'Bach'	bbh-ch1 bbh-ch1-consonant bbh-ch1-begadkephat bbh-ch1-soft-form
+ל	Lamed — l — /l/ as in 'lamp'	bbh-ch1 bbh-ch1-consonant
+מ	Mem — m — /m/ as in 'man'	bbh-ch1 bbh-ch1-consonant
+נ	Nun — n — /n/ as in 'now'	bbh-ch1 bbh-ch1-consonant
+ס	Samekh — s — /s/ as in 'sun'	bbh-ch1 bbh-ch1-consonant
+ע	Ayin — ʿ — silent pharyngeal stop; guttural; distinct from Aleph	bbh-ch1 bbh-ch1-consonant bbh-ch1-guttural
+פ	Pe, soft form (Fe) — f — /f/ as in 'fan'	bbh-ch1 bbh-ch1-consonant bbh-ch1-begadkephat bbh-ch1-soft-form
+צ	Tsade — ṣ — emphatic /ts/ as in 'ca-ts'	bbh-ch1 bbh-ch1-consonant
+ק	Qof — q — uvular /q/ (deeper than /k/, no English equivalent)	bbh-ch1 bbh-ch1-consonant
+ר	Resh — r — uvular /r/; resists Dagesh Forte; sometimes grouped with gutturals	bbh-ch1 bbh-ch1-consonant
+שׁ	Shin — š — /sh/ as in 'shoe' (right dot = shin dot)	bbh-ch1 bbh-ch1-consonant bbh-ch1-shin-sin
+שׂ	Sin — ś — /s/ as in 'sun' (left dot = sin dot)	bbh-ch1 bbh-ch1-consonant bbh-ch1-shin-sin
+ת	Tav, soft form (Thav) — t/th — /t/ as in 'top' (soft /th/ as in 'the', rare today)	bbh-ch1 bbh-ch1-consonant bbh-ch1-begadkephat bbh-ch1-soft-form
+בּ	Beth, hard form (Bet) — b — /b/ as in 'boy' · dagesh lene present	bbh-ch1 bbh-ch1-begadkephat bbh-ch1-hard-form
+גּ	Gimel, hard form — g — /g/ as in 'go' · dagesh lene present	bbh-ch1 bbh-ch1-begadkephat bbh-ch1-hard-form
+דּ	Dalet, hard form — d — /d/ as in 'day' · dagesh lene present	bbh-ch1 bbh-ch1-begadkephat bbh-ch1-hard-form
+כּ	Kaph, hard form (Kaf) — k — /k/ as in 'king' · dagesh lene present	bbh-ch1 bbh-ch1-begadkephat bbh-ch1-hard-form
+פּ	Pe, hard form — p — /p/ as in 'pan' · dagesh lene present	bbh-ch1 bbh-ch1-begadkephat bbh-ch1-hard-form
+תּ	Tav, hard form — t — /t/ as in 'top' · dagesh lene present	bbh-ch1 bbh-ch1-begadkephat bbh-ch1-hard-form
+ך	Kaph Sofit — k/kh — final form of כ (soft) / כּ (hard)	bbh-ch1 bbh-ch1-sofit
+ם	Mem Sofit — m — final form of מ (closed square shape)	bbh-ch1 bbh-ch1-sofit
+ן	Nun Sofit — n — final form of נ (long descending stroke)	bbh-ch1 bbh-ch1-sofit
+ף	Pe Sofit — f — final form of פ/פּ (open form with descending tail)	bbh-ch1 bbh-ch1-sofit
+ץ	Tsade Sofit — ṣ — final form of צ (long descending tail)	bbh-ch1 bbh-ch1-sofit

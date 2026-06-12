@@ -1,0 +1,24 @@
+בָּ	bā — Qamets (long ā) — like 'a' in 'father'	BBH Chapter 2 — Vowels
+נָ	nā — Qamets (long ā) — like 'a' in 'father'	BBH Chapter 2 — Vowels
+מֵ	mē — Tsere (long ē) — like 'a' in 'they'	BBH Chapter 2 — Vowels
+לֵ	lē — Tsere (long ē) — like 'a' in 'they'	BBH Chapter 2 — Vowels
+נִי	nī — Hireq-Yod (long ī) — like 'ee' in 'machine'	BBH Chapter 2 — Vowels
+לִי	lī — Hireq-Yod (long ī) — like 'ee' in 'machine'	BBH Chapter 2 — Vowels
+נֹ	nō — Holem (long ō) — like 'o' in 'go'	BBH Chapter 2 — Vowels
+מֹ	mō — Holem (long ō) — like 'o' in 'go'	BBH Chapter 2 — Vowels
+לוּ	lū — Shureq (long ū) — like 'oo' in 'rule'	BBH Chapter 2 — Vowels
+נוּ	nū — Shureq (long ū) — like 'oo' in 'rule'	BBH Chapter 2 — Vowels
+מַ	ma — Patach (short a) — like 'a' in 'bat'	BBH Chapter 2 — Vowels
+סַ	sa — Patach (short a) — like 'a' in 'bat'	BBH Chapter 2 — Vowels
+זֶ	ze — Seghol (short e) — like 'e' in 'bed'	BBH Chapter 2 — Vowels
+נֶ	ne — Seghol (short e) — like 'e' in 'bed'	BBH Chapter 2 — Vowels
+זִ	zi — Hireq (short i) — like 'i' in 'bit'	BBH Chapter 2 — Vowels
+לִ	li — Hireq (short i) — like 'i' in 'bit'	BBH Chapter 2 — Vowels
+כׇּל	kol — Qamets Hatuf (short o) — like 'o' in 'off' · same symbol as Qamets but in a closed, unaccented syllable	BBH Chapter 2 — Vowels
+לֻ	lu — Qibbuts (short u) — like 'u' in 'put'	BBH Chapter 2 — Vowels
+נֻ	nu — Qibbuts (short u) — like 'u' in 'put'	BBH Chapter 2 — Vowels
+לְ	lə — Vocal Shewa (reduced) — brief schwa, like 'a' in 'alone'	BBH Chapter 2 — Vowels
+בְּ	bə — Vocal Shewa (reduced) — brief schwa, like 'a' in 'alone'	BBH Chapter 2 — Vowels
+אֲ	ǎ — Hateph-Patach (reduced a) — very brief 'a'; used under guttural letters	BBH Chapter 2 — Vowels
+אֱ	ě — Hateph-Seghol (reduced e) — very brief 'e'; used under guttural letters	BBH Chapter 2 — Vowels
+אֳ	ǒ — Hateph-Qamets (reduced o) — very brief 'o'; used under guttural letters	BBH Chapter 2 — Vowels
