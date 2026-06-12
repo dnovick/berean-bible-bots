@@ -1,0 +1,37 @@
+name: Issue Notification
+
+# Sends an email to the repo owner when anyone other than dnovick
+# opens or edits an issue.
+
+on:
+  issues:
+    types: [opened, edited]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    if: github.actor != 'dnovick'
+
+    steps:
+      - name: Send notification email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: ${{ secrets.NOTIFY_SMTP_HOST }}
+          server_port: ${{ secrets.NOTIFY_SMTP_PORT }}
+          secure: true
+          username: ${{ secrets.NOTIFY_SMTP_USERNAME }}
+          password: ${{ secrets.NOTIFY_SMTP_PASSWORD }}
+          to: davenovick@hotmail.com
+          from: ${{ secrets.NOTIFY_SMTP_USERNAME }}
+          subject: "[berean-bible-bots] Issue #${{ github.event.issue.number }} ${{ github.event.action }} by ${{ github.actor }}: ${{ github.event.issue.title }}"
+          body: |
+            ${{ github.actor }} ${{ github.event.action }} an issue in berean-bible-bots.
+
+            ──────────────────────────────────────────
+            Issue #${{ github.event.issue.number }}: ${{ github.event.issue.title }}
+            ──────────────────────────────────────────
+
+            ${{ github.event.issue.body }}
+
+            ──────────────────────────────────────────
+            View on GitHub: ${{ github.event.issue.html_url }}
