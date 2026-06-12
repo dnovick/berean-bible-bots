@@ -21,7 +21,7 @@
 #   ə = reduced (Shewa)
 
 deck:
-  id: ch2-vowels
+  id: ch2-vowels-deck
   title: "BBH Chapter 2 — Hebrew Vowels"
   anki_deck: "BBH Chapter 2 — Vowels"
   description: "Open-syllable reading drill for all Hebrew vowels. 28 cards."

@@ -1,7 +1,7 @@
 # BBH Chapter 1 — Hebrew Alphabet
 
 *Hebrew consonants: letter → name and pronunciation. 34 cards.*  
-*Import `ch1-alphabet.txt` directly into Anki (File → Import).*
+*Import `ch1-alphabet-deck.txt` directly into Anki (File → Import).*
 
 ---
 
@@ -9,7 +9,7 @@
 
 - **Front of card:** Hebrew character or syllable
 - **Back of card:** Name / transliteration / pronunciation
-- **Edit source:** `data/decks/bbh/ch1-alphabet.yaml`
+- **Edit source:** `data/decks/bbh/ch1-alphabet-deck.yaml`
 - **Rebuild:** `python scripts/build_bbh_decks.py`
 
 ---

@@ -21,6 +21,9 @@
 | [ch2-vocab-deck.md](ch2-vocab-deck.md) | Markdown | Vocabulary deck — 21 proper nouns (biblical names and places) with OT frequency |
 | [ch2-vocab-deck.txt](ch2-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (21 cards) |
 | [ch2-vocab-deck-fd.txt](ch2-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (21 cards) |
+| [ch2-vowels-deck.md](ch2-vowels-deck.md) | Markdown | Vowels deck — 24 cards: open-syllable reading drill across all vowel classes |
+| [ch2-vowels-deck.txt](ch2-vowels-deck.txt) | Anki import | Vowels deck — tab-separated, ready for Anki File → Import (24 cards) |
+| [ch2-vowels-deck-fd.txt](ch2-vowels-deck-fd.txt) | Flashcards Deluxe | Vowels deck — tab-separated, ready for Flashcards Deluxe import (24 cards) |
 
 ---
 
