@@ -1,29 +1,11 @@
 # BBG Chapter 29 — Adjectival Participles
 
----
+> Learn the attributive and substantival uses of the participle: in attributive position (article + participle modifying a noun) and as a substantive (article + participle standing alone as a noun phrase). Practice identifying the noun or pronoun being modified and rendering the adjectival participle in natural English. Substantival participles (e.g., ὁ πιστεύων = "the one who believes") are among the most theologically significant constructions in the NT.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch29-adjectival-participle-parsing/](exercises/ch29-adjectival-participle-parsing/index.md) | 15-item drill: parse adjectival participles, identify attributive vs. substantival use, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch29-vocab-deck.md](ch29-vocab-deck.md) | Human-readable card list — 5 vocabulary words |
-| [ch29-vocab-deck.txt](ch29-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch29-vocab-deck-fd.txt](ch29-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Adjectival vs adverbial role profile; substantival participles (ὁ πιστεύων) |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Adjectival vs adverbial participle rates by genre |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

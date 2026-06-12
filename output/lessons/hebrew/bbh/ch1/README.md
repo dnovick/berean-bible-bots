@@ -2,28 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/README.md) | 33-item letter identification drill — all 22 base letters, 5 sofit forms, 6 begadkephat letters with dagesh lene; mixed order |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch1-alphabet-deck.md](ch1-alphabet-deck.md) | Markdown | Alphabet deck — 34 cards: 22 base consonants, 6 begadkephat hard forms (dagesh lene), 5 sofit forms |
-| [ch1-alphabet-deck.txt](ch1-alphabet-deck.txt) | Anki import | Alphabet deck — tab-separated, ready for Anki File → Import (34 cards) |
-| [ch1-alphabet-deck-fd.txt](ch1-alphabet-deck-fd.txt) | Flashcards Deluxe | Alphabet deck — tab-separated, ready for Flashcards Deluxe import (34 cards) |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Chapter 1: The Hebrew Alphabet*
 

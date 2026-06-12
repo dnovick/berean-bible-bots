@@ -1,28 +1,13 @@
 # BBA Chapter 20 — The Hithpaal and Ithpaal Stems
 
+> Learn the Hithpaal and Ithpaal stems—the reflexive and passive counterparts to the Pael—in all conjugations. Identify the הִתְ-/אִתְ- preformative combined with the Pael's characteristic doubling of the middle radical as the compound diagnostic. Compare the Hithpaal to the Hebrew Hithpael (BBH Ch34) and note the same metathesis rule when the root begins with a sibilant.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 20: The Hithpaal and Ithpaal Stems*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch20-hithpaal-drill/](exercises/ch20-hithpaal-drill/index.md) | 20-item Hithpaal/Ithpaal stem parsing drill |
-| [exercises/ch20-hithpaal-function-sort/](exercises/ch20-hithpaal-function-sort/index.md) | Hithpaal Semantic Function Sort — 20 items: classify RF / IT / ES, parse, translate |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Hithpaal and Ithpaal stem profiles |
 
 ---
 

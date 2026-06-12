@@ -1,5 +1,10 @@
 # Chapter 12 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch12-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch12-vocab-deck-fd.txt)
+
+---
+
+
 *30 verbal roots from BBA Chapter 12 (Introduction to Aramaic Verbs).*
 *Import `ch12-vocab-deck.txt` directly into Anki (File → Import).*
 

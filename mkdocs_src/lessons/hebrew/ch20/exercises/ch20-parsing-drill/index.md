@@ -23,10 +23,10 @@ This 25-item parsing drill covers Qal IC forms across all major root classes, or
 ## Sample Questions
 
 **Q1.** 1 לִ/שְׁמֹר
-> **A:** IC · שמר · Strong A · לְ · Purpose/Complementary — Most common IC pattern; shewa + holem
+> **A:** IC שמר Strong A לְ Purpose/Complementary — Most common IC pattern; shewa + holem
 
 **Q2.** 2 לִ/שְׁמֹ֣עַ
-> **A:** IC · שמע · Strong B (gutt. R3) · לְ · Purpose/Complementary — Patach at R3 (ע)
+> **A:** IC שמע Strong B (gutt. R3) לְ Purpose/Complementary — Patach at R3 (ע)
 
 **Q3.** 3 כִּ/שְׁמֹ֣עַ
-> **A:** IC · שמע · Strong B (gutt.) · כְּ · Temporal (when/as) — "when/as he heard"; כְּ + IC = temporal
+> **A:** IC שמע Strong B (gutt.) כְּ Temporal (when/as) — "when/as he heard"; כְּ + IC = temporal

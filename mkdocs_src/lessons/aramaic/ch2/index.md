@@ -1,26 +1,11 @@
 # BBA Chapter 2 — Aramaic Vowels
 
----
+> Learn the Biblical Aramaic vowel system as represented in the Tiberian pointing used in the standard BHS/BHQ text, noting where Aramaic vowel classes overlap with Hebrew and where they diverge (e.g., the frequent use of seghol and patah in Aramaic nominal patterns). Recognize the reduced shewa vowels and understand how vowel reduction operates in Aramaic syllables—a skill needed for every inflected form in the course.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch2-vocab-deck.md](ch2-vocab-deck.md) | Reference list with glosses |
-| [ch2-vocab-deck.txt](ch2-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch2-vocab-deck-fd.txt](ch2-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/index.md) | 20-item vowel identification drill — vowel names, classes, length, and matres lectionis |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

@@ -1,5 +1,10 @@
 # Chapter 7 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch7-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch7-vocab-deck-fd.txt)
+
+---
+
+
 *19 words from BBH Chapter 7. Frequency counts are OT-wide occurrences.*
 *Import `ch7-vocab-deck.txt` directly into Anki (File → Import).*
 

@@ -1,29 +1,11 @@
 # BBG Chapter 18 — Present Middle/Passive Indicative
 
----
+> Learn the present middle/passive indicative paradigm with its secondary middle endings, and understand that Greek uses the same form for both middle and passive in the present (and imperfect). Learn the basic distinctions between active, middle (subject acting for its own benefit or on itself), and passive voice. Deponent verbs—which are middle or passive in form but active in meaning—are introduced and must be learned as vocabulary.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch18-middle-passive-parsing/](exercises/ch18-middle-passive-parsing/index.md) | 20-item drill: parse present middle/passive forms and identify likely voice from context |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch18-vocab-deck.md](ch18-vocab-deck.md) | Human-readable card list — 10 vocabulary words |
-| [ch18-vocab-deck.txt](ch18-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch18-vocab-deck-fd.txt](ch18-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Voice distribution; tense × voice crosstab |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Greek middle/passive voice patterns by genre |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

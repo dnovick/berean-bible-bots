@@ -1,5 +1,10 @@
 # Chapter 15 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch15-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch15-vocab-deck-fd.txt)
+
+---
+
+
 *10 verbal roots from BBA Chapter 15 (Peal Imperative).*
 *Import `ch15-vocab-deck.txt` directly into Anki (File → Import).*
 

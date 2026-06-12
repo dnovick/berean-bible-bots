@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch8-pronoun-identification/](exercises/ch8-pronoun-identification/README.md) | 25-item identification drill — classify, parse, and translate Hebrew pronouns (Personal / Demonstrative / Relative / Interrogative) |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch8-vocab-deck.md](ch8-vocab-deck.md) | Markdown | Vocabulary deck — personal/demonstrative/interrogative pronouns, relative pronouns, and כִּי with OT frequency |
-| [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (20 cards) |
-| [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (20 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Pronoun frequency by type (personal/demonstrative/interrogative) in the Hebrew OT corpus |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 
 ---

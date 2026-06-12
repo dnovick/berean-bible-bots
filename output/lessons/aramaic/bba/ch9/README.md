@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch9-vocab-deck.md](ch9-vocab-deck.md) | Reference list with glosses |
-| [ch9-vocab-deck.txt](ch9-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch9-vocab-deck-fd.txt](ch9-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch9-pronoun-drill/](exercises/ch9-pronoun-drill/README.md) | Pronoun identification and translation drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Personal pronoun frequency; pronoun type breakdown (personal/demonstrative/interrogative) in Daniel/Ezra |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 9: Pronouns*
 

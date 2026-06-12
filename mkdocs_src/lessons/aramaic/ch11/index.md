@@ -1,32 +1,11 @@
 # BBA Chapter 11 — Adverbs and Particles
 
----
+> Learn the common Aramaic adverbs (temporal, locative, manner) and particles including the negatives לָא and אַל, the existential אִיתַי and לֵית, the interrogative particle הֲ, and the discourse particle אֱדַיִן ("then, therefore"). These high-frequency words appear on nearly every page of Daniel and Ezra and are essential for parsing clause structure and discourse flow before the verbal chapters begin.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch11-vocab-deck.md](ch11-vocab-deck.md) | Reference list with glosses |
-| [ch11-vocab-deck.txt](ch11-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch11-vocab-deck-fd.txt](ch11-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch11-particle-drill/](exercises/ch11-particle-drill/index.md) | Particle and adverb identification drill from Daniel and Ezra |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Complete word class distribution including adverbs/particles across Daniel and Ezra |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

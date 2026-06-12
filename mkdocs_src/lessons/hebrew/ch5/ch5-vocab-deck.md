@@ -1,5 +1,10 @@
 # Chapter 5 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch5-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch5-vocab-deck-fd.txt)
+
+---
+
+
 *19 words from BBH Chapter 5. Frequency counts are OT-wide occurrences.*
 *Import `ch5-vocab-deck.txt` directly into Anki (File → Import).*
 

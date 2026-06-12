@@ -22,10 +22,10 @@ This drill covers all major Qal Imperative forms introduced in BBH Chapter 18. S
 ## Sample Questions
 
 **Q1.** 1 שְׁמֹר
-> **A:** Imperative · 2nd · Singular · Masculine · שמר — Strong A-class; shewa + holem; "Guard!"
+> **A:** Imperative 2nd Singular Masculine שמר — Strong A-class; shewa + holem; "Guard!"
 
 **Q2.** 2 שִׁמְרִי
-> **A:** Imperative · 2nd · Singular · Feminine · שמר — + ִי suffix (hireq-yod)
+> **A:** Imperative 2nd Singular Feminine שמר — + ִי suffix (hireq-yod)
 
 **Q3.** 3 שִׁמְרוּ
-> **A:** Imperative · 2nd · Plural · Masculine · שמר — + וּ suffix (shureq)
+> **A:** Imperative 2nd Plural Masculine שמר — + וּ suffix (shureq)

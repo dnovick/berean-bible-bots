@@ -17,10 +17,10 @@ This passage exercise presents 15 highlighted IA forms drawn from eight OT passa
 ## Sample Questions
 
 **Q1.** 1 אָכֹ֥ל
-> **A:** אכל · I-aleph · Emphatic — "freely eat"; IA + Imperfect 2ms of same root = emphatic permission; qamets under aleph
+> **A:** אכל I-aleph Emphatic "freely eat"; IA + Imperfect 2ms of same root = emphatic permission; qamets under aleph
 
 **Q2.** 2 מ֥וֹת
-> **A:** מות · Biconsonantal · Emphatic — "surely die"; IA + Imperfect = certain death; no preposition before מ֥וֹת confirms IA (not IC)
+> **A:** מות Biconsonantal Emphatic "surely die"; IA + Imperfect = certain death; no preposition before מ֥וֹת confirms IA (not IC)
 
 **Q3.** 3 רָאֹ֣ה
-> **A:** ראה · III-ה · Emphatic — "surely seen"; III-ה IA ends in ה (contrast IC: רְאוֹת); God's emphatic declaration of active concern at the burning bush
+> **A:** ראה III-ה Emphatic "surely seen"; III-ה IA ends in ה (contrast IC: רְאוֹת); God's emphatic declaration of active concern at the burning bush

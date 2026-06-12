@@ -19,11 +19,11 @@ A 15-verb parsing exercise drawn from Genesis 3, 6, and 21, with 3 distractor ve
 
 ## Sample Questions
 
-**Q1.** 1 וְנִפְקְחוּ
+**Q1.** 1 וְנִפְקְחוּ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive Reflexive Tolerative Simple Action NOT Niphal
 > **A:** ✓ ✓ Yes — Niphal | Weqatal · 3cp · פָּקַח | Middle — "will be opened" (eyes open themselves)
 
-**Q2.** 2 וַתֵּרֶא
+**Q2.** 2 וַתֵּרֶא Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive Reflexive Tolerative Simple Action NOT Niphal
 > **A:** ✗ ✗ No — Qal | Wayyiqtol · 3fs · רָאָה | NOT Niphal — Qal: she saw ; Qal wayyiqtol 3fs; no נ-/תִ- Niphal marker
 
-**Q3.** 3 וְנֶחְמָד
+**Q3.** 3 וְנֶחְמָד Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive Reflexive Tolerative Simple Action NOT Niphal
 > **A:** ✓ ✓ Yes — Niphal | Participle ms · ms · חָמַד | Passive — "desirable" (substantival participle: "desired/desirable")

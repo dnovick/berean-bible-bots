@@ -1,7 +1,7 @@
 # "Hebrew Letter Recognition" — Alphabet Identification Drill
 
 ## Description
-30-item identification drill covering all 22 Hebrew letters, the 5 final (sofit) forms, and 3 begadkephat letters with dagesh lene. Students identify the letter name, transliteration, sound, and any special category for each item.
+33-item identification drill covering all 22 Hebrew consonants, the 5 final (sofit) forms, and all 6 begadkephat letters with dagesh lene, presented in mixed order. Students identify the letter name and sound for each item.
 
 ### Coverage
 
@@ -9,8 +9,8 @@
 |---|---|
 | Standard letters | 22 |
 | Final (sofit) forms | 5 |
-| Begadkephat with dagesh | 3 |
-| **Total** | **30** |
+| Begadkephat with dagesh lene | 6 |
+| **Total** | **33** |
 
 ## Files
 

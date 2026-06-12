@@ -1,29 +1,11 @@
 # BBG Chapter 19 — Future Active and Middle Indicative
 
----
+> Learn the future active and middle indicative paradigms formed by adding the tense formative σ to the verbal stem before the connecting vowel and primary endings. Study the consonantal changes that occur when sigma is added to stops (labial, velar, dental clusters), and learn the future of εἰμί. Understand that the future tense-form carries perfective aspect and predictive or deliberative meaning in context.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch19-future-parsing/](exercises/ch19-future-parsing/index.md) | Future Active/Middle Parsing Drill — 20 forms to parse |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch19-vocab-deck.md](ch19-vocab-deck.md) | Human-readable card list — 10 vocabulary words |
-| [ch19-vocab-deck.txt](ch19-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch19-vocab-deck-fd.txt](ch19-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Future tense count and voice breakdown |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Future tense distribution and voice patterns across NT genres |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

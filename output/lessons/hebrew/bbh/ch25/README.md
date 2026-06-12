@@ -2,51 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-| File | Description |
-|---|---|
-| [niphal-paradigms.md](niphal-paradigms.md) | Strong paradigm reference (from Ch24) — full PGN tables with key-marker notes |
-| [niphal-weak-lamed-aleph-paradigms.md](niphal-weak-lamed-aleph-paradigms.md) | III-א (Lamed-Aleph) paradigms — root מָצָא and יָרֵא, all 8 conjugations with strong comparison |
-| [niphal-weak-lamed-he-paradigms.md](niphal-weak-lamed-he-paradigms.md) | III-ה (Lamed-He) paradigms — roots גָּלָה and רָאָה, all 8 conjugations with strong comparison |
-| [niphal-weak-lamed-guttural-paradigms.md](niphal-weak-lamed-guttural-paradigms.md) | III-ח/ע (Lamed-Guttural) paradigms — roots שָׁמַע and שָׁלַח, all 8 conjugations with strong comparison |
-| [niphal-weak-pe-guttural-paradigms.md](niphal-weak-pe-guttural-paradigms.md) | I-guttural (Pe-Guttural) paradigms — roots עָמַד and אָמַר, all 8 conjugations with strong comparison |
-| [niphal-weak-pe-paradigms.md](niphal-weak-pe-paradigms.md) | I-נ and I-י paradigms — roots פָּקַד / נָגַשׁ (I-נ) and יָלַד / יָדַע (I-י), all 8 conjugations each |
-| [niphal-weak-biconsonantal-paradigms.md](niphal-weak-biconsonantal-paradigms.md) | Biconsonantal (II-י/ו) paradigms — roots קוּם and שׁוּב, all 8 conjugations with strong comparison |
-| [niphal-weak-geminate-paradigms.md](niphal-weak-geminate-paradigms.md) | Geminate (II=III) paradigms — roots סָבַב and תָּמַם, all 8 conjugations with strong comparison |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch25-passage-exercise/](exercises/ch25-passage-exercise/README.md) | "Spot the Niphal" — parsing exercise from Gen 3, 6, and 21 with weak-root emphasis; includes weak-class identification column |
-| [exercises/ch25-weak-form-id/](exercises/ch25-weak-form-id/README.md) | 40 forms across all eight classes in two parts: by class, then mixed |
-| [exercises/ch25-function-sort/](exercises/ch25-function-sort/README.md) | Semantic function sorting — classify weak Niphal verbs by function type (passive, reflexive, middle, tolerative) |
-| [exercises/ch25-niphal-weak-paradigm-drill/](exercises/ch25-niphal-weak-paradigm-drill/README.md) | Paradigm drill — write Niphal Weak forms across the major weak root classes |
-| [exercises/ch25-qal-niphal-contrast/](exercises/ch25-qal-niphal-contrast/README.md) | Qal vs. Niphal contrast drill (weak roots) — spot the difference in form and meaning |
-| [exercises/ch25-stem-id-drill/](exercises/ch25-stem-id-drill/README.md) | Stem identification drill — Qal vs. Niphal weak roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch25-morphology-deck.md](ch25-morphology-deck.md) | Markdown | 40-card morphology deck — Niphal Weak forms across all eight weak root classes |
-| [ch25-morphology-deck.txt](ch25-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (40 cards) |
-| [ch25-morphology-deck-fd.txt](ch25-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (40 cards) |
-| [ch25-vocab-deck.md](ch25-vocab-deck.md) | Markdown | Vocabulary deck — 14 words (6 verbs, 8 nouns) with POS tags and frequency |
-| [ch25-vocab-deck.txt](ch25-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (14 cards) |
-| [ch25-vocab-deck-fd.txt](ch25-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (14 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Niphal Stem](../../../notebooks/ot/verbs/niphal/) | Niphal stem: root×conjugation heatmap showing weak root patterns |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Builds on Ch24 (Niphal Strong Verbs). Weak forms only — semantic functions not repeated.*
 

@@ -1,5 +1,10 @@
 # Chapter 13 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch13-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch13-vocab-deck-fd.txt)
+
+---
+
+
 *10 verbal roots from BBA Chapter 13 (Peal Perfect).*
 *Import `ch13-vocab-deck.txt` directly into Anki (File → Import).*
 

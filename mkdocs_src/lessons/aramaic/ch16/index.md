@@ -1,35 +1,14 @@
 # BBA Chapter 16 — Peal Infinitive Construct
 
+> Learn the Peal infinitive construct form and its syntactic uses: with the preposition לְ to express purpose or complementary infinitive, with prepositions to mark temporal relationships, and with pronominal suffixes as either its subject or object. Distinguish the infinitive construct from the imperative where forms overlap. The Aramaic infinitive construct parallels the Hebrew infinitive construct (BBH Ch20) in most of its functions.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 16: Peal Infinitive Construct*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch16-vocab-deck.md](ch16-vocab-deck.md) | Reference list with glosses |
-| [ch16-vocab-deck.txt](ch16-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch16-vocab-deck-fd.txt](ch16-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch16-peal-infinitive-drill/](exercises/ch16-peal-infinitive-drill/index.md) | 20-item Peal infinitive construct identification and translation drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Infinitive construct frequency; Peal infinitives in Daniel/Ezra |
 
 ---
 

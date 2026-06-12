@@ -1,33 +1,11 @@
 # BBA Chapter 12 — Introduction to Aramaic Verbs
 
----
+> Survey the Aramaic verbal system: the stem (binyan) system—Peal, Peil, Hithpeel, Pael, Hithpaal, Haphel, Aphel, and Hophal—and the conjugations (perfect, imperfect, imperative, infinitive, participle). Learn the 3ms Peal perfect as the lexical citation form and understand how Aramaic stems map onto the Hebrew Qal, Niphal, Piel, and Hiphil. This orientation chapter provides the framework for Chs 13–22.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch12-vocab-deck.md](ch12-vocab-deck.md) | Reference list with glosses |
-| [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch12-verb-intro-drill/](exercises/ch12-verb-intro-drill/index.md) | Stem identification and root recognition drill from Daniel and Ezra |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hebrew & Greek Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | Consolidated OT stem statistics including Aramaic verbal context |
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Aramaic verb stem profiles (Peal/Pael/Haphel), conjugation distribution, top roots |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

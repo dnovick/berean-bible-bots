@@ -1,30 +1,11 @@
 # BBG Chapter 28 — Perfective (Aorist) Adverbial Participles
 
----
+> Learn the aorist active (σαντ- / αντ- stem) and aorist passive (θεντ- stem) adverbial participle paradigms. Understand that the aorist adverbial participle typically depicts action antecedent to the main verb ("after having done"), contrasting with the present participle's simultaneous action (Ch27). Practice distinguishing first and second aorist participial forms and translating each adverbial category accurately.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch28-aorist-participle-parsing/](exercises/ch28-aorist-participle-parsing/index.md) | "Spot the Aorist Participle" — 15-item passage drill: parse form, distinguish 1st/2nd aorist, identify use, translate |
-| [exercises/ch28-participle-tense-contrast/](exercises/ch28-participle-tense-contrast/index.md) | Present vs. Aorist Participle Contrast — 20 clauses: classify CONTEMP / ANTEC, parse, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch28-vocab-deck.md](ch28-vocab-deck.md) | Human-readable card list — 8 vocabulary words |
-| [ch28-vocab-deck.txt](ch28-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch28-vocab-deck-fd.txt](ch28-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Aorist participle dominance; temporal relationship (aorist = antecedent action) |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Aorist participle distribution and temporal relationship to main verb |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

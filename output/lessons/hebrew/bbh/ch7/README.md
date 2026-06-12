@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch7-adjective-usage/](exercises/ch7-adjective-usage/README.md) | 25-item adjective usage drill — identify attributive / predicate / substantival use, parse gender and number agreement, translate |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch7-vocab-deck.md](ch7-vocab-deck.md) | Markdown | Vocabulary deck — 2 nouns, 16 adjectives, and מְאֹד with OT frequency |
-| [ch7-vocab-deck.txt](ch7-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (19 cards) |
-| [ch7-vocab-deck-fd.txt](ch7-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (19 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Noun gender distribution across the OT; adjective-noun agreement patterns by book |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 7*
 
 ## 1. Introduction

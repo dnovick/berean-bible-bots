@@ -25,10 +25,10 @@ A 24-item drill mixing Qal and Niphal forms of strong roots, interleaved Q/N/Q/N
 ## Sample Questions
 
 **Q1.** 1 קָטַל
-> **A:** Qal · Perfect · 3ms · קטל — The paradigm root; Qal Perfect 3ms is the dictionary form.
+> **A:** Qal Perfect 3ms קטל — The paradigm root; Qal Perfect 3ms is the dictionary form.
 
 **Q2.** 2 נִקְטַל
-> **A:** Niphal · Perfect · 3ms · קטל — נִ prefix + patach under second root letter is the Niphal Perfect 3ms signature.
+> **A:** Niphal Perfect 3ms קטל — נִ prefix + patach under second root letter is the Niphal Perfect 3ms signature.
 
 **Q3.** 3 שָׁמַר
-> **A:** Qal · Perfect · 3ms · שׁמר — Qamets under first root letter, patach under second: standard Qal Perfect 3ms.
+> **A:** Qal Perfect 3ms שׁמר — Qamets under first root letter, patach under second: standard Qal Perfect 3ms.

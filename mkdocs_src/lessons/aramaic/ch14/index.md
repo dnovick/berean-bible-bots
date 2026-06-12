@@ -1,35 +1,14 @@
 # BBA Chapter 14 — Peal Imperfect
 
+> Learn the Peal imperfect paradigm with its preformatives and afformatives, and identify the characteristic imperfect vowel pattern for the strong verb. Understand the imperfect's aspectual range (incomplete, habitual, modal, future) as parallel to the Hebrew Qal imperfect (BBH Ch15). Note the Aramaic imperfect preformatives—which differ slightly from Hebrew—and begin recognizing them in Daniel 2–7 and Ezra 4–7.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 14: Peal Imperfect*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch14-vocab-deck.md](ch14-vocab-deck.md) | Reference list with glosses |
-| [ch14-vocab-deck.txt](ch14-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch14-vocab-deck-fd.txt](ch14-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch14-peal-imperfect-drill/](exercises/ch14-peal-imperfect-drill/index.md) | 20-item Peal imperfect parsing drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal imperfect profile; yiqtol distribution by root |
 
 ---
 

@@ -1,18 +1,6 @@
 # BBG Chapter 1 — The Greek Language
 
----
-
-## Files
-
-### Exercises
-
-*No exercises for this introductory chapter.*
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Per-Book Language Profiles](../../../notebooks/both/survey/book_profiles/) | NT book-by-book tense/voice/mood distributions |
+> Survey the history of Greek from classical through Koine and Byzantine forms, and understand why Koine Greek—the lingua franca of the first-century Mediterranean world—is the language of the New Testament. Learn the significance of Greek as the vehicle for apostolic proclamation, and gain motivation for the grammatical precision that exegesis requires.
 
 ---
 

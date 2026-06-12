@@ -19,10 +19,10 @@
 ## Sample Questions
 
 **Q1.** 1 בָּרַךְ
-> **A:** Qal · Perfect · 3ms · "he knelt" — qamets under ב (Qal perfect 3ms); rare usage; root primarily used in Piel
+> **A:** Qal Perfect 3ms "he knelt" — qamets under ב (Qal perfect 3ms); rare usage; root primarily used in Piel
 
 **Q2.** 2 בֵּרַךְ
-> **A:** Piel · Perfect · 3ms · "he blessed" — tsere under ב (Piel stem vowel); ר rejects dagesh → compensatory lengthening to tsere
+> **A:** Piel Perfect 3ms "he blessed" — tsere under ב (Piel stem vowel); ר rejects dagesh → compensatory lengthening to tsere
 
 **Q3.** 3 בֹּרַךְ
-> **A:** Pual · Perfect · 3ms · "he was blessed" — holem under ב; ר rejects dagesh forte; holem is lengthening of qibbuts in guttural context
+> **A:** Pual Perfect 3ms "he was blessed" — holem under ב; ר rejects dagesh forte; holem is lengthening of qibbuts in guttural context

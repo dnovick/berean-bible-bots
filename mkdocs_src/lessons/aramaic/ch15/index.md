@@ -1,35 +1,14 @@
 # BBA Chapter 15 — Peal Imperative
 
+> Learn the four Peal imperative forms (2ms, 2fs, 2mp, 2fp) derived from the imperfect by removing the preformative, along with the negative command constructions. Recognize the close morphological relationship between the imperative and the infinitive construct in Aramaic—both often share the same form—and use context to distinguish them. Imperatives are frequent in the royal-decree and divine-command sections of Daniel.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 15: Peal Imperative*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch15-vocab-deck.md](ch15-vocab-deck.md) | Reference list with glosses |
-| [ch15-vocab-deck.txt](ch15-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch15-vocab-deck-fd.txt](ch15-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch15-peal-imperative-drill/](exercises/ch15-peal-imperative-drill/index.md) | 20-item Peal imperative parsing drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal imperative count and top roots |
 
 ---
 

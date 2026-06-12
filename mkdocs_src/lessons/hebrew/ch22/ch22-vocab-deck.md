@@ -1,5 +1,10 @@
 # Chapter 22 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch22-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch22-vocab-deck-fd.txt)
+
+---
+
+
 *13 words from BBH Chapter 22. Frequency counts are OT-wide occurrences.*
 *Import `ch22-vocab-deck.txt` directly into Anki (File → Import).*
 

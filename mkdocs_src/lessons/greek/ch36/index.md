@@ -1,28 +1,11 @@
 # BBG Chapter 36 — ἵστημι, τίθημι, δείκνυμι and Odds 'n Ends
 
----
+> Learn the full paradigms of ἵστημι (to stand/set), τίθημι (to place), and δείκνυμι (to show), observing the reduplication and stem-vowel alternation unique to each. Survey remaining grammatical topics: the optative mood, the vocative case, additional pronoun types, and numerals. This capstone chapter rounds out the BBG grammar, equipping students to read any passage in the Greek New Testament with the aid of a lexicon.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch36-mi-verbs-parsing/](exercises/ch36-mi-verbs-parsing/index.md) | 20-item drill: parse forms from ἵστημι, τίθημι, δείκνυμι, and related μι-verbs |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch36-vocab-deck.md](ch36-vocab-deck.md) | Human-readable card list — 9 vocabulary words |
-| [ch36-vocab-deck.txt](ch36-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch36-vocab-deck-fd.txt](ch36-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

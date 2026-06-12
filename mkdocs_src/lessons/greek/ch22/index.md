@@ -1,30 +1,11 @@
 # BBG Chapter 22 — Second Aorist Active and Middle Indicative
 
----
+> Learn the second aorist (strong aorist) active and middle indicative paradigms: augment + different (often shorter) aorist stem + connecting vowel + secondary endings. Recognize that the second aorist uses the same endings as the imperfect but with a different stem, and memorize the most common second aorist stems (e.g., εἶπον, ἦλθον, εἶδον). Perfective aspect (simple occurrence, summary) is the semantic hallmark of the aorist.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch22-second-aorist-parsing/](exercises/ch22-second-aorist-parsing/index.md) | Second Aorist Parsing Drill — 20 forms to parse |
-| [exercises/ch22-aorist-contrast/](exercises/ch22-aorist-contrast/index.md) | First vs. Second Aorist Contrast Drill — 20 items: classify type, parse PGN, lexical form, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch22-vocab-deck.md](ch22-vocab-deck.md) | Human-readable card list — 14 vocabulary words |
-| [ch22-vocab-deck.txt](ch22-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch22-vocab-deck-fd.txt](ch22-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Aorist tense dominance; tense × voice; top lemmas |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Aorist distribution and voice; most common aorist roots by genre |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

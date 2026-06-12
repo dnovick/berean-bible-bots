@@ -17,7 +17,7 @@ Students see 25 Hebrew forms — nouns, prepositions, and the direct object mark
 ## Sample Questions
 
 **Q1.** 1 סוּסוֹ
-> **A:** ✓ Base: סוּס (horse, ms) &nbsp;|&nbsp; Suffix: וֹ &nbsp;|&nbsp; Parse: 3ms &nbsp;|&nbsp; Translation: his horse &nbsp;·&nbsp; The Holem (וֹ) at the end of an otherwise complete noun-stem is the 3ms possessive suffix — one of the most common morphological elements in the OT.
+> **A:** ✓ Base: סוּס (horse, ms) &nbsp;|&nbsp; Suffix: וֹ &nbsp;|&nbsp; Parse: 3ms &nbsp;|&nbsp; Translation: his horse &nbsp;·&nbsp; The Holem (וֹ) at the end of an otherwise complete noun-stem is the 3ms possessive suffix one of the most common morphological elements in the OT.
 
 **Q2.** 2 דְּבָרִי
 > **A:** ✓ Base: דָּבָר (word, ms) &nbsp;|&nbsp; Suffix: ִי &nbsp;|&nbsp; Parse: 1cs &nbsp;|&nbsp; Translation: my word &nbsp;·&nbsp; The absolute דָּבָר has two Qamets vowels; before the 1cs suffix ִי, both reduce (Shewa + Patach). Standard vowel-reduction pattern when the accent shifts to the suffix.

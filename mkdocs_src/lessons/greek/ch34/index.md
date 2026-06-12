@@ -1,28 +1,11 @@
 # BBG Chapter 34 — Indicative of δίδωμι
 
----
+> Learn the indicative paradigms of δίδωμι (to give), the model μι-verb, in the present, imperfect, aorist, and perfect—active, middle, and passive. Understand the reduplication and stem-vowel alternation (διδο-/δο-) that characterizes μι-verb conjugation, and contrast these forms with the thematic (ω-verb) patterns learned in Chs 15–25. δίδωμι itself occurs over 400 times in the NT.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch34-didomi-parsing/](exercises/ch34-didomi-parsing/index.md) | 20-item drill: parse δίδωμι and its compounds in all indicative forms |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch34-vocab-deck.md](ch34-vocab-deck.md) | Human-readable card list — 7 vocabulary words |
-| [ch34-vocab-deck.txt](ch34-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch34-vocab-deck-fd.txt](ch34-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

@@ -20,10 +20,10 @@ A 30-item identification and parsing exercise covering the four main Hithpael we
 ## Sample Questions
 
 **Q1.** 1 וַיִּתְגַּל Gen 9:21 ▶
-> **A:** Wayyiqtol · 3ms · גָּלָה — he uncovered himself; III-he apocopation: ה dropped; short patach under R2 (ג); standard וַיִּתְ Hithpael prefix
+> **A:** Wayyiqtol 3ms גָּלָה — he uncovered himself; III-he apocopation: ה dropped; short patach under R2 (ג); standard וַיִּתְ Hithpael prefix
 
 **Q2.** 2 הִתְגַּלֹּתִי 1 Sam 2:27 ▶
-> **A:** Perfect · 1cs · גָּלָה — did I reveal myself; 1cs suffix תִּי ; dagesh forte in R2 (ג); III-he root
+> **A:** Perfect 1cs גָּלָה — did I reveal myself; 1cs suffix תִּי ; dagesh forte in R2 (ג); III-he root
 
 **Q3.** 3 וַיִּשְׁתַּחוּ Gen 18:2 ▶
-> **A:** Wayyiqtol · 3ms · שָׁחָה — he bowed down; both weak classes at work: sibilant metathesis ( שׁ + ת swapped → וַיִּשְׁתַּ ) AND III-he apocopation ( ה dropped)
+> **A:** Wayyiqtol 3ms שָׁחָה — he bowed down; both weak classes at work: sibilant metathesis ( שׁ + ת swapped → וַיִּשְׁתַּ ) AND III-he apocopation ( ה dropped)

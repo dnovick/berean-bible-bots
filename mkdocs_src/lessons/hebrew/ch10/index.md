@@ -1,29 +1,11 @@
 # BBH Chapter 10 — Hebrew Construct Chain
 
----
+> Learn to identify construct and absolute noun forms, understand that the construct noun is always indefinite unless the absolute noun is definite, and practice the vowel and ending changes that signal construct state. Recognize multi-link chains and translate the relationship they encode (possession, material, description). The construct chain is ubiquitous in Hebrew prose and poetry and must be parsed confidently before tackling complex syntax.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch10-construct-chain/](exercises/ch10-construct-chain/index.md) | 25-item drill — identify construct noun, absolute noun, definiteness, and translation for each chain |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch10-vocab-deck.md](ch10-vocab-deck.md) | Markdown | Vocabulary deck — 17 high-frequency nouns with OT frequency |
-| [ch10-vocab-deck.txt](ch10-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (17 cards) |
-| [ch10-vocab-deck-fd.txt](ch10-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (17 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Top nouns in construct state, construct % by lemma, lemma × state crosstab across the OT |
-| [Collocation and Phrase Search](../../../notebooks/both/lexicon/collocation_and_phrase/) | Phrase search: find construct chains and prepositional phrases in the OT corpus |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

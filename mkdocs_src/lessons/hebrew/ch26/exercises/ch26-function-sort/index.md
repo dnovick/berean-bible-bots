@@ -15,14 +15,3 @@ A 27-item classification exercise drawn entirely from Genesis, Exodus, Leviticus
 | Factitive | 18–20 | 3 |
 | Denominative | 25–27 | 3 |
 | Declarative | 21–22 | 2 |
-
-## Sample Questions
-
-**Q1.** 1 וַיָּבֵא Wayyiqtol 3ms Gen 2:19 "he brought them to the man" C F D SA DN
-> **A:** C — Causative · Root: בּוֹא (Qal: to come/go) · God caused the animals to come to Adam
-
-**Q2.** 2 וַתּוֹצֵא Wayyiqtol 3fs Gen 1:12 "the earth brought forth vegetation" C F D SA DN
-> **A:** C — Causative · Root: יָצָא (Qal: to go out) · The earth caused vegetation to come out
-
-**Q3.** 3 וַיָּשֶׁב Wayyiqtol 3ms Gen 14:16 "he brought back his brother Lot" C F D SA DN
-> **A:** C — Causative · Root: שׁוּב (Qal: to return) · Abraham caused Lot to return

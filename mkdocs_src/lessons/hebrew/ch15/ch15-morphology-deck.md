@@ -1,5 +1,10 @@
 # Chapter 15 — Qal Imperfect Strong Verbs Morphology Deck
 
+**Download:** [Anki import (.txt)](ch15-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch15-morphology-deck-fd.txt)
+
+---
+
+
 *~35 cards covering the Qal Imperfect paradigm: A-class, B-class, stative, and volitional forms.*
 *Import `ch15-morphology-deck.txt` directly into Anki (File → Import).*
 

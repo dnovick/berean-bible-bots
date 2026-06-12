@@ -25,10 +25,10 @@ An 18-item exercise using weak-root Hophal forms (I-י, Hollow, and III-ה roots
 ## Sample Questions
 
 **Q1.** 1 הוּבַל יבל I-י Perfect 3ms
-> **A:** Hiphil יָבַל : to lead, bring, carry (cause to go/come) → Hophal : he was led / he was brought · Root יבל is I-י; characteristic הוּ prefix marks Hophal.
+> **A:** Hiphil יָבַל : to lead, bring, carry (cause to go/come) → Hophal : he was led / he was brought Root יבל is I-י; characteristic הוּ prefix marks Hophal.
 
 **Q2.** 2 הוּבְאוּ בוא Hollow Perfect 3cp
-> **A:** Hiphil הֵבִיא : to bring (cause to come) → Hophal : they were brought (Gen 43:18) · Hollow root בוא; 3cp Perfect ending וּ added; the brothers were brought into Joseph's house.
+> **A:** Hiphil הֵבִיא : to bring (cause to come) → Hophal : they were brought (Gen 43:18) Hollow root בוא; 3cp Perfect ending וּ added; the brothers were brought into Joseph's house.
 
 **Q3.** 3 הוּרַד ירד I-י Perfect 3ms
-> **A:** Hiphil הוֹרִיד : to bring down (cause to descend) → Hophal : he was brought down (Gen 39:1) · Joseph was caused to descend to Egypt; I-י root ירד with הוּ prefix.
+> **A:** Hiphil הוֹרִיד : to bring down (cause to descend) → Hophal : he was brought down (Gen 39:1) Joseph was caused to descend to Egypt; I-י root ירד with הוּ prefix.

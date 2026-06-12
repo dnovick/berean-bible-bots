@@ -2,28 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch2-vocab-deck.md](ch2-vocab-deck.md) | Reference list with glosses |
-| [ch2-vocab-deck.txt](ch2-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch2-vocab-deck-fd.txt](ch2-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/README.md) | 20-item vowel identification drill — vowel names, classes, length, and matres lectionis |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 2: Vowels*
 

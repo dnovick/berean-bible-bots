@@ -19,10 +19,10 @@ A 24-item drill covering all major conjugations of three weak roots (גלה, ה�
 ## Sample Questions
 
 **Q1.** 1 גָּלָה
-> **A:** Qal · Perfect · 3ms · גלה — Qamets under R1, no prefix, no Dagesh in R2; III-ה: Qamets + ה ending → Qal perfect 3ms
+> **A:** Qal Perfect 3ms גלה — Qamets under R1, no prefix, no Dagesh in R2; III-ה: Qamets + ה ending → Qal perfect 3ms
 
 **Q2.** 2 גִּלָּה
-> **A:** Piel · Perfect · 3ms · גלה — Hireq under R1, Dagesh in R2 (לּ), no prefix; III-ה: Qamets + ה ending → Piel perfect 3ms
+> **A:** Piel Perfect 3ms גלה — Hireq under R1, Dagesh in R2 (לּ), no prefix; III-ה: Qamets + ה ending → Piel perfect 3ms
 
 **Q3.** 3 הִתְגַּלָּה
-> **A:** Hithpael · Perfect · 3ms · גלה — הִתְ prefix + Dagesh in R2 (לּ); III-ה: Qamets + ה ending → Hithpael perfect 3ms
+> **A:** Hithpael Perfect 3ms גלה — הִתְ prefix + Dagesh in R2 (לּ); III-ה: Qamets + ה ending → Hithpael perfect 3ms

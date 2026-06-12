@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch4-vocab-deck.md](ch4-vocab-deck.md) | Reference list with glosses |
-| [ch4-vocab-deck.txt](ch4-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch4-vocab-deck-fd.txt](ch4-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch4-noun-identification/](exercises/ch4-noun-identification/README.md) | 20-item noun identification drill — gender, number, state, and root/lexical form |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Aramaic noun state distribution; absolute vs. determined vs. construct — Daniel and Ezra |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 4: Nouns: Absolute State*
 

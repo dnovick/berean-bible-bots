@@ -1,5 +1,10 @@
 # Chapter 3 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch3-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch3-vocab-deck-fd.txt)
+
+---
+
+
 *24 words from BBA Chapter 3 (Syllabification): proper nouns, place names, and gentilic nouns.*
 *Import `ch3-vocab-deck.txt` directly into Anki (File → Import).*
 

@@ -1,29 +1,11 @@
 # BBG Chapter 30 — Combinative (Perfect) Participles and Genitive Absolutes
 
----
+> Learn the perfect active (κοτ- stem) and perfect middle/passive (μεν- stem) participle paradigms, and understand that they encode stative aspect (a present state resulting from past action). Study the genitive absolute construction—a genitive-case participial phrase whose subject is not the subject of the main clause—and learn to identify and translate it as a subordinate temporal or causal clause.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch30-perfect-participle-genabs/](exercises/ch30-perfect-participle-genabs/index.md) | 15-item drill: parse perfect participles and identify/translate genitive absolute constructions |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch30-vocab-deck.md](ch30-vocab-deck.md) | Human-readable card list — 2 vocabulary words |
-| [ch30-vocab-deck.txt](ch30-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch30-vocab-deck-fd.txt](ch30-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Perfect participle count and top lemmas; genitive absolute distribution |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Perfect participle and genitive absolute distribution by genre |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

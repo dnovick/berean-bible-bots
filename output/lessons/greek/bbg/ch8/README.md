@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch8-preposition-parsing/](exercises/ch8-preposition-parsing/README.md) | 20-item drill — identify preposition, case governed, and prepositional phrase translation |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch8-vocab-deck.md](ch8-vocab-deck.md) | Human-readable card list — 20 vocabulary words |
-| [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch8-eimi-deck.md](ch8-eimi-deck.md) | Human-readable card list — 12 cards: all present indicative forms of εἰμί (recognize + produce) |
-| [ch8-eimi-deck.txt](ch8-eimi-deck.txt) | Anki import file (File → Import) |
-| [ch8-eimi-deck-fd.txt](ch8-eimi-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Prepositions](../../../notebooks/nt/syntax/prepositions/) | Frequency, case binding, NT vs LXX comparison for all major prepositions |
-| [Discourse Particles](../../../notebooks/nt/discourse/discourse_particles/) | γάρ, οὖν, ἀλλά distribution — contrasting with prepositions in sentence structure |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

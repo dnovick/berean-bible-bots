@@ -24,11 +24,11 @@ A 15-item triplet drill using five weak roots (hollow and I-י), each presented 
 
 ## Sample Questions
 
-**Q1.** 1 בָּא
+**Q1.** 1 בָּא Qal Hiphil Hophal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp
 > **A:** Qal · Perfect · 3ms — he came · Hollow root בוא contracts to a single syllable; qamets under first consonant is characteristic of Qal Perfect 3ms of hollow roots.
 
-**Q2.** 2 הֵבִיא
+**Q2.** 2 הֵבִיא Qal Hiphil Hophal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp
 > **A:** Hiphil · Perfect · 3ms — he brought · Hiphil marker: הֵ prefix (tsere) + chiriq-yod in the contracted stem of the hollow root.
 
-**Q3.** 3 הוּבָא
+**Q3.** 3 הוּבָא Qal Hiphil Hophal Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp
 > **A:** Hophal · Perfect · 3ms — he was brought · Hophal marker: הוּ prefix (shureq) = characteristic of all weak Hophal forms; long ā vowel in contracted hollow stem.

@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch23-first-aorist-parsing/](exercises/ch23-first-aorist-parsing/README.md) | First Aorist Parsing Drill — 20 forms to parse |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch23-vocab-deck.md](ch23-vocab-deck.md) | Human-readable card list — 8 vocabulary words |
-| [ch23-vocab-deck.txt](ch23-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch23-vocab-deck-fd.txt](ch23-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Aorist tense dominance; tense × voice; top lemmas |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Aorist distribution and voice; most common aorist roots by genre |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~15,000 aorist active/middle indicative tokens NT-wide)*
 

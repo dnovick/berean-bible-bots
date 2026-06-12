@@ -25,10 +25,10 @@ A 24-item drill requiring students to identify the stem (Qal, Niphal, Hiphil, Ho
 ## Sample Questions
 
 **Q1.** 1 קָטַל
-> **A:** Qal · Perfect · 3ms · קטל — Basic a–a vowel pattern; no prefix, no dagesh in ט
+> **A:** Qal Perfect 3ms קטל — Basic a–a vowel pattern; no prefix, no dagesh in ט
 
 **Q2.** 2 קִטֵּל
-> **A:** Piel · Perfect · 3ms · קטל — Dagesh forte in ט (R2) + chirik–tsere vowels = Piel perfect marker
+> **A:** Piel Perfect 3ms קטל — Dagesh forte in ט (R2) + chirik–tsere vowels = Piel perfect marker
 
 **Q3.** 3 הִקְטִיל
-> **A:** Hiphil · Perfect · 3ms · קטל — הִ prefix + chirik + yod (long ī vowel) = Hiphil perfect
+> **A:** Hiphil Perfect 3ms קטל — הִ prefix + chirik + yod (long ī vowel) = Hiphil perfect

@@ -2,53 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-| File | Description |
-|---|---|
-| [hiphil-paradigms.md](../ch26/hiphil-paradigms.md) | Strong paradigm reference (from Ch26) — full PGN tables with key-marker notes |
-| [hiphil-weak-pe-guttural-paradigms.md](hiphil-weak-pe-guttural-paradigms.md) | I-guttural (Pe-Guttural) paradigms — roots עָמַד and עָזַר, all 8 conjugations with strong comparison |
-| [hiphil-weak-lamed-guttural-paradigms.md](hiphil-weak-lamed-guttural-paradigms.md) | III-ח/ע (Lamed-Guttural) paradigms — roots שָׁלַח and שָׁמַע, all 8 conjugations with strong comparison |
-| [hiphil-weak-lamed-aleph-paradigms.md](hiphil-weak-lamed-aleph-paradigms.md) | III-א (Lamed-Aleph) paradigms — roots מָצָא and קָרָא, all 8 conjugations with strong comparison |
-| [hiphil-weak-lamed-he-paradigms.md](hiphil-weak-lamed-he-paradigms.md) | III-ה (Lamed-He) paradigms — roots עָלָה and רָאָה, all 8 conjugations with strong comparison |
-| [hiphil-weak-pe-nun-paradigms.md](hiphil-weak-pe-nun-paradigms.md) | I-נ (Pe-Nun) paradigms — roots נָגַשׁ and נָפַל, all 8 conjugations with strong comparison |
-| [hiphil-weak-pe-yod-paradigms.md](hiphil-weak-pe-yod-paradigms.md) | I-י (Pe-Yod) paradigms — roots יָרַד and יָצָא, all 8 conjugations with strong comparison |
-| [hiphil-weak-biconsonantal-paradigms.md](hiphil-weak-biconsonantal-paradigms.md) | Biconsonantal (II-י/ו) paradigms — roots קוּם and שִׂים, all 8 conjugations with strong comparison |
-| [hiphil-weak-geminate-paradigms.md](hiphil-weak-geminate-paradigms.md) | Geminate (II=III) paradigms — roots סָבַב and שָׁלַל, all 8 conjugations with Biconsonantal comparison |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch27-passage-exercise/](exercises/ch27-passage-exercise/README.md) | Passage exercise — identify and parse weak Hiphil verbs in context |
-| [exercises/ch27-weak-form-id/](exercises/ch27-weak-form-id/README.md) | Weak form identification drill — classify Hiphil forms by root class |
-| [exercises/ch27-biconsig-drill/](exercises/ch27-biconsig-drill/README.md) | Biconsonantal and Geminate Hiphil drilling — distinguish the two near-identical classes |
-| [exercises/ch27-niphal-hiphil-contrast/](exercises/ch27-niphal-hiphil-contrast/README.md) | Niphal vs. Hiphil contrast — discriminate the two derived stems in form and meaning |
-| [exercises/ch27-function-sort/](exercises/ch27-function-sort/README.md) | Semantic function sorting — classify weak Hiphil verbs by function type (causative, declarative, factitive, simple) |
-| [exercises/ch27-qal-hiphil-contrast/](exercises/ch27-qal-hiphil-contrast/README.md) | Qal vs. Hiphil contrast drill (weak roots) — spot the difference in form and meaning |
-| [exercises/ch27-stem-id-drill/](exercises/ch27-stem-id-drill/README.md) | Stem identification drill — Qal/Niphal/Hiphil weak roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch27-morphology-deck.md](ch27-morphology-deck.md) | Markdown | 40-card morphology deck — Hiphil Weak forms across all eight weak root classes |
-| [ch27-morphology-deck.txt](ch27-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (40 cards) |
-| [ch27-morphology-deck-fd.txt](ch27-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (40 cards) |
-| [ch27-vocab-deck.md](ch27-vocab-deck.md) | Markdown | Vocabulary deck — 12 words (9 verbs, 3 nouns) with POS tags and frequency |
-| [ch27-vocab-deck.txt](ch27-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch27-vocab-deck-fd.txt](ch27-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hiphil Stem](../../../notebooks/ot/verbs/hiphil/) | Hiphil stem: root×conjugation heatmap, weak root behavior in the causative |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Builds on Ch26 (Hiphil Strong Verbs). Weak forms only — semantic functions not repeated.*
 

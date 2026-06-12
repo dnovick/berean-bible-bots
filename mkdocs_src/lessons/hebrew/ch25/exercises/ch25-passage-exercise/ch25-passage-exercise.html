@@ -19,12 +19,12 @@
   td { padding: .35rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
   td.verb-cell { font-size: 1.1rem; direction: rtl; unicode-bidi: embed; font-weight: bold; }
   td.num-cell { text-align: center; font-weight: bold; color: #666; width: 2rem; }
-  input.parse-field {
+  .parse-field {
     width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px;
     padding: .25rem .4rem; font-family: Georgia, serif; font-size: .88rem;
     background: #fafff8;
   }
-  input.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
   .answer-row { display: none; background: #f0faf0; }
   .answer-row td { border-top: none; font-size: .88rem; color: #2a6e2a; padding: .3rem .5rem; }
   .answer-row.wrong td { background: #fff0f0; color: #8b0000; }
@@ -53,8 +53,14 @@
   .reflection ol li { margin-bottom: .75rem; }
   @media print {
     .controls, button.reveal-btn { display: none; }
-    input.parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    .parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
     .answer-row { display: none !important; }
+  }
+
+  .hiphil-select {
+    width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px;
+    padding: .25rem .4rem; font-family: Georgia, serif; font-size: .88rem;
+    background: #fafff8;
   }
 </style>
 </head>
@@ -90,11 +96,11 @@
     <tr>
       <td class="num-cell">1</td>
       <td class="verb-cell">וְנִפְקְחוּ</td>
-      <td><input class="parse-field" id="f1-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f1-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f1-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f1-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f1-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f1-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f1-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f1-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f1-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f1-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r1">
@@ -113,11 +119,11 @@
     <tr>
       <td class="num-cell">2</td>
       <td class="verb-cell">וַתֵּרֶא</td>
-      <td><input class="parse-field" id="f2-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f2-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f2-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f2-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f2-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f2-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f2-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f2-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f2-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f2-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row wrong" id="r2">
@@ -127,11 +133,11 @@
     <tr>
       <td class="num-cell">3</td>
       <td class="verb-cell">וְנֶחְמָד</td>
-      <td><input class="parse-field" id="f3-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f3-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f3-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f3-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f3-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f3-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f3-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f3-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f3-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f3-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r3">
@@ -150,11 +156,11 @@
     <tr>
       <td class="num-cell">4</td>
       <td class="verb-cell">וַתִּפָּקַחְנָה</td>
-      <td><input class="parse-field" id="f4-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f4-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f4-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f4-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f4-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f4-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f4-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f4-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f4-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f4-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r4">
@@ -173,11 +179,11 @@
     <tr>
       <td class="num-cell">5</td>
       <td class="verb-cell">וָאֵחָבֵא</td>
-      <td><input class="parse-field" id="f5-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f5-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f5-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f5-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f5-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f5-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f5-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f5-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f5-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f5-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r5">
@@ -200,11 +206,11 @@
     <tr>
       <td class="num-cell">6</td>
       <td class="verb-cell">וַיִּנָּחֶם</td>
-      <td><input class="parse-field" id="f6-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f6-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f6-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f6-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f6-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f6-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f6-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f6-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f6-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f6-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r6">
@@ -214,11 +220,11 @@
     <tr>
       <td class="num-cell">7</td>
       <td class="verb-cell">עָשָׂה</td>
-      <td><input class="parse-field" id="f7-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f7-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f7-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f7-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f7-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f7-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f7-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f7-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f7-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f7-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row wrong" id="r7">
@@ -237,11 +243,11 @@
     <tr>
       <td class="num-cell">8</td>
       <td class="verb-cell">נִחַמְתִּי</td>
-      <td><input class="parse-field" id="f8-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f8-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f8-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f8-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f8-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f8-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f8-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f8-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f8-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f8-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r8">
@@ -260,11 +266,11 @@
     <tr>
       <td class="num-cell">9</td>
       <td class="verb-cell">וַתִּשָּׁחֵת</td>
-      <td><input class="parse-field" id="f9-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f9-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f9-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f9-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f9-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f9-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f9-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f9-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f9-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f9-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r9">
@@ -274,11 +280,11 @@
     <tr>
       <td class="num-cell">10</td>
       <td class="verb-cell">וַתִּמָּלֵא</td>
-      <td><input class="parse-field" id="f10-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f10-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f10-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f10-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f10-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f10-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f10-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f10-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f10-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f10-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r10">
@@ -297,11 +303,11 @@
     <tr>
       <td class="num-cell">11</td>
       <td class="verb-cell">נִשְׁחָתָה</td>
-      <td><input class="parse-field" id="f11-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f11-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f11-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f11-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f11-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f11-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f11-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f11-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f11-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f11-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r11">
@@ -320,11 +326,11 @@
     <tr>
       <td class="num-cell">12</td>
       <td class="verb-cell">יֵאָכֵל</td>
-      <td><input class="parse-field" id="f12-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f12-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f12-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f12-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f12-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f12-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f12-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f12-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f12-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f12-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r12">
@@ -347,11 +353,11 @@
     <tr>
       <td class="num-cell">13</td>
       <td class="verb-cell">הִשָּׁבְעָה</td>
-      <td><input class="parse-field" id="f13-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f13-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f13-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f13-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f13-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f13-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f13-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f13-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f13-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f13-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r13">
@@ -370,11 +376,11 @@
     <tr>
       <td class="num-cell">14</td>
       <td class="verb-cell">אִשָּׁבֵעַ</td>
-      <td><input class="parse-field" id="f14-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f14-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f14-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f14-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f14-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f14-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f14-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f14-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f14-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f14-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r14">
@@ -393,11 +399,11 @@
     <tr>
       <td class="num-cell">15</td>
       <td class="verb-cell">נִשְׁבְּעוּ</td>
-      <td><input class="parse-field" id="f15-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f15-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f15-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f15-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f15-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f15-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f15-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f15-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f15-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f15-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="r15">
@@ -423,11 +429,11 @@
     <tr>
       <td class="num-cell">B1</td>
       <td class="verb-cell">נּוֹלַד</td>
-      <td><input class="parse-field" id="fb1-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="fb1-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="fb1-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="fb1-root" placeholder="root"></td>
-      <td><input class="parse-field" id="fb1-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="fb1-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="fb1-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="fb1-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="fb1-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="fb1-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('rb1')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="rb1">
@@ -437,11 +443,11 @@
     <tr>
       <td class="num-cell">16</td>
       <td class="verb-cell">וַיִּגְדַּל</td>
-      <td><input class="parse-field" id="f16-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="f16-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="f16-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="f16-root" placeholder="root"></td>
-      <td><input class="parse-field" id="f16-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="f16-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="f16-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="f16-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="f16-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="f16-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row wrong" id="r16">
@@ -451,11 +457,11 @@
     <tr>
       <td class="num-cell">B2</td>
       <td class="verb-cell">וַיִּגָּמַל</td>
-      <td><input class="parse-field" id="fb2-nip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="fb2-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="fb2-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="fb2-root" placeholder="root"></td>
-      <td><input class="parse-field" id="fb2-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="fb2-nip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="fb2-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="fb2-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="fb2-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="fb2-func"><option value=""></option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="Tolerative">Tolerative</option><option value="Simple Action">Simple Action</option><option value="NOT Niphal">NOT Niphal</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('rb2')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="rb2">
@@ -516,7 +522,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => { b.textContent = '▶ Answer'; b.classList.remove('active'); });
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => { if(i.tagName==='SELECT') i.selectedIndex=0; else i.value=''; });
 }
 </script>
 </body>

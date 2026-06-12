@@ -1,29 +1,11 @@
 # BBG Chapter 32 — Infinitive
 
----
+> Learn the present and aorist infinitive forms (active, middle, passive) and the perfect active infinitive. Study the primary uses of the Greek infinitive: complementary (completing another verb), indirect discourse, purpose (with τοῦ or εἰς τό), and subject of a clause. Recognize the articular infinitive with various prepositions (ἐν τῷ, πρὸ τοῦ, μετὰ τό) encoding temporal relationships, and the nominative subject of an infinitive in accusative case.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch32-infinitive-parsing/](exercises/ch32-infinitive-parsing/index.md) | 20-item drill: parse infinitives, identify their use, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch32-vocab-deck.md](ch32-vocab-deck.md) | Human-readable card list — 2 vocabulary words |
-| [ch32-vocab-deck.txt](ch32-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch32-vocab-deck-fd.txt](ch32-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Mood Usage](../../../notebooks/nt/syntax/mood_usage/) | Infinitive distribution, construction types (complementary/articular/prepositional), genre comparison |
-| [Concordance](../../../notebooks/both/lexicon/concordance/) | Find all infinitive forms; collocations with key infinitive complements |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

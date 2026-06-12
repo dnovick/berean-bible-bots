@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch12-verb-overview/](exercises/ch12-verb-overview/README.md) | 20-item conceptual overview — stem identification, active/passive/reflexive classification, and root recognition |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch12-vocab-deck.md](ch12-vocab-deck.md) | Human-readable card list — 18 vocabulary words |
-| [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | OT verb stem totals and distribution across Torah, Prophets, and Writings |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Chapter 12 bridges the nominal system (Ch1–11) and the full verb system (Ch13–35).*
 

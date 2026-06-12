@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch6-preposition-parsing/](exercises/ch6-preposition-parsing/README.md) | 25-item prepositional phrase parsing drill — identify preposition, base form, vowel change, object, and translation |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch6-vocab-deck.md](ch6-vocab-deck.md) | Markdown | Vocabulary deck — 17 prepositions plus direct object marker and כֹּל with OT frequency |
-| [ch6-vocab-deck.txt](ch6-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (19 cards) |
-| [ch6-vocab-deck-fd.txt](ch6-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (19 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hebrew Prepositions](../../../notebooks/ot/syntax/prepositions/) | Hebrew preposition frequency and infinitive-construct governing analysis |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Chapter 6: Hebrew Prepositions*
 

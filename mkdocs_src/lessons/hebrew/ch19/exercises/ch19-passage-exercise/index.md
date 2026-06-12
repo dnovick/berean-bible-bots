@@ -21,10 +21,10 @@ This passage exercise presents 14 highlighted verb+suffix forms drawn from five 
 ## Sample Questions
 
 **Q1.** 1 וּשְׁמַרְתִּיךָ
-> **A:** Qal Weqatal 1cs (שמר) · 2ms · Object · "and I will keep you" — God's promise; suffix replaces אֹתְךָ
+> **A:** Qal Weqatal 1cs (שמר) 2ms Object "and I will keep you" — God's promise; suffix replaces אֹתְךָ
 
 **Q2.** 2 וַהֲשִׁבֹתִיךָ
-> **A:** Hiphil Weqatal 1cs (שוב) · 2ms · Object · "and I will bring you back" — Hiphil causative "cause to return" + 2ms suffix
+> **A:** Hiphil Weqatal 1cs (שוב) 2ms Object "and I will bring you back" — Hiphil causative "cause to return" + 2ms suffix
 
 **Q3.** 3 אֶעֱזָבְךָ
-> **A:** Qal Imperfect 1cs (עזב) · 2ms · Object · "I will forsake you" — with לֹא = "I will NOT forsake you"; I-aleph gutt.
+> **A:** Qal Imperfect 1cs (עזב) 2ms Object "I will forsake you" — with לֹא = "I will NOT forsake you"; I-aleph gutt.

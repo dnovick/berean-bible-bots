@@ -1,23 +1,6 @@
 # BBG Chapter 15 — Introduction to Verbs
 
----
-
-## Files
-
-### Exercises
-
-*No exercises for this preparatory chapter.*
-
-### Flashcards
-
-*No vocabulary introduced in this chapter.*
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Tense/voice/mood profiles, tense × voice crosstab, top lemmas, genre comparison |
-| [Hebrew & Greek Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | Comparative stem statistics; Greek tense×voice heatmap |
+> Survey the Greek verbal system: tense-form (present, imperfect, future, aorist, perfect, pluperfect), voice (active, middle, passive), mood (indicative, subjunctive, optative, imperative), person and number. Learn the present active indicative of λύω as the paradigm verb, the personal endings, and the connecting (thematic) vowel. This chapter provides the conceptual framework for all verb chapters (Chs 16–36).
 
 ---
 

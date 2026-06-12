@@ -1,5 +1,10 @@
 # Chapter 30 — Piel Strong Morphology Deck
 
+**Download:** [Anki import (.txt)](ch30-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch30-morphology-deck-fd.txt)
+
+---
+
+
 24 cards covering 4 roots across all Piel conjugations for strong verbs.
 
 **Roots:**

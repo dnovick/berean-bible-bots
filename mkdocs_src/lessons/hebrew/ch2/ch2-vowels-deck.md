@@ -1,5 +1,10 @@
 # BBH Chapter 2 — Hebrew Vowels
 
+**Download:** [Anki import (.txt)](ch2-vowels-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch2-vowels-deck-fd.txt)
+
+---
+
+
 *Open-syllable reading drill for all Hebrew vowels. 28 cards.*  
 *Import `ch2-vowels-deck.txt` directly into Anki (File → Import).*
 

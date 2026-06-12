@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch5-vocab-deck.md](ch5-vocab-deck.md) | Reference list with glosses |
-| [ch5-vocab-deck.txt](ch5-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch5-vocab-deck-fd.txt](ch5-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch5-determined-state-drill/](exercises/ch5-determined-state-drill/README.md) | 20-item drill — convert nouns between absolute and determined state across all four gender/number patterns |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Determined state frequency vs. absolute/construct; Daniel vs. Ezra comparison; top nouns in each state |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 5: Nouns: Determined State*
 

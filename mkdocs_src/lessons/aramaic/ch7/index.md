@@ -1,32 +1,11 @@
 # BBA Chapter 7 — Conjunctions and Prepositions
 
----
+> Learn the common Aramaic conjunctions (including the ubiquitous ו and the subordinating די) and the major prepositions, noting which attach as prefixes and which stand independently. Understand that the relative and genitive particle דִּי is the most distinctive feature of Aramaic grammar and appears hundreds of times in Daniel and Ezra, serving as relative pronoun, subordinator, and genitive link.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch7-vocab-deck.md](ch7-vocab-deck.md) | Reference list with glosses |
-| [ch7-vocab-deck.txt](ch7-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch7-vocab-deck-fd.txt](ch7-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch7-preposition-drill/](exercises/ch7-preposition-drill/index.md) | 20-item preposition identification and translation drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Top Aramaic prepositions by frequency — לְ, בְּ, מִן, עַל distribution across Daniel and Ezra |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

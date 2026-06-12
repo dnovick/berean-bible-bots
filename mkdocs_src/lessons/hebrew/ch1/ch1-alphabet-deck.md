@@ -1,5 +1,10 @@
 # BBH Chapter 1 — Hebrew Alphabet
 
+**Download:** [Anki import (.txt)](ch1-alphabet-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch1-alphabet-deck-fd.txt)
+
+---
+
+
 *Hebrew consonants: letter → name and pronunciation. 34 cards.*  
 *Import `ch1-alphabet-deck.txt` directly into Anki (File → Import).*
 

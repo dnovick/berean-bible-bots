@@ -21,14 +21,3 @@ A 20-item semantic function sort using weak-root Piel forms only. Students class
 | [ch31-function-sort.md](ch31-function-sort.md) | Static reference with answer key |
 | [ch31-function-sort.html](ch31-function-sort.html) | Interactive (fillable, ▶ Answer per row) |
 | [ch31-function-sort.pdf](ch31-function-sort.pdf) | Fillable PDF |
-
-## Sample Questions
-
-**Q1.** 1 בֵּרַךְ Perfect 3ms ברך Gen 1:28 "God blessed them" I F D SA DN
-> **A:** I — Intensive · Root: ברך (Qal: to kneel/bless — rare) · Piel = formal, intensive bestowal of divine favor; the standard OT word for blessing
-
-**Q2.** 2 גִּלָּה Perfect 3ms גלה Gen 35:7 "God revealed himself to him" I F D SA DN
-> **A:** I — Intensive · Root: גלה (Qal: to uncover / go into exile) · Piel = reveal completely, disclose thoroughly. III-ה root; dagesh in ל
-
-**Q3.** 3 חִזֵּק Perfect 3ms חזק Exo 4:21 "I will harden his heart" I F D SA DN
-> **A:** F — Factitive · Root: חזק (Qal: to be strong/hard — stative) · Piel = cause to enter the state of hardness; "he hardened [Pharaoh's heart]." Classic Factitive

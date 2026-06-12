@@ -1,5 +1,10 @@
 # Chapter 26 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch26-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch26-vocab-deck-fd.txt)
+
+---
+
+
 *15 words from BBH Chapter 26. Frequency counts are OT-wide occurrences.*
 *Import `ch26-vocab-deck.txt` directly into Anki (File → Import).*
 

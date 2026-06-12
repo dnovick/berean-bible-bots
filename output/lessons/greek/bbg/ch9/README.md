@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch9-adjective-parsing/](exercises/ch9-adjective-parsing/README.md) | 20-item parsing drill — case, number, gender, and position (attributive/predicate/substantival) for adjective phrases |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch9-vocab-deck.md](ch9-vocab-deck.md) | Human-readable card list — 18 vocabulary words |
-| [ch9-vocab-deck.txt](ch9-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch9-vocab-deck-fd.txt](ch9-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution — how adjectives match noun case, gender, number |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

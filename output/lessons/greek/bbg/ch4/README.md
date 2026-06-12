@@ -2,24 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch4-syllable-drill/](exercises/ch4-syllable-drill/README.md) | 20-item syllabification practice — divide Greek words into syllables and identify the accented syllable |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch4-vocab-deck.md](ch4-vocab-deck.md) | Human-readable card list — 20 vocabulary words |
-| [ch4-vocab-deck.txt](ch4-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch4-vocab-deck-fd.txt](ch4-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

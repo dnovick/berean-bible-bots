@@ -20,10 +20,10 @@ This passage exercise presents 15 highlighted IC forms drawn from nine OT passag
 ## Sample Questions
 
 **Q1.** 1 לֵאמֹ֑ר
-> **A:** אמר · I-aleph · לְ · Quotative — "saying"; tsere under ל (ל + hateph-seghol = tsere); introduces direct speech; ~2,600× OT
+> **A:** אמר I-aleph לְ Quotative — "saying"; tsere under ל (ל + hateph-seghol = tsere); introduces direct speech; ~2,600× OT
 
 **Q2.** 2 לִרְאֹ֥ת
-> **A:** ראה · III-ה · לְ · Purpose — "to see"; holem-taw spelling; לִ + IC marks purpose of God's descent to Babel
+> **A:** ראה III-ה לְ Purpose — "to see"; holem-taw spelling; לִ + IC marks purpose of God's descent to Babel
 
 **Q3.** 3 לַעֲשׂ֣וֹת
-> **A:** עשה · III-ה + I-gutt. · לְ · Complementary — "to do"; completes יכל ("able to"); chateph-patach under ע; וֹת ending
+> **A:** עשה III-ה + I-gutt. לְ Complementary — "to do"; completes יכל ("able to"); chateph-patach under ע; וֹת ending

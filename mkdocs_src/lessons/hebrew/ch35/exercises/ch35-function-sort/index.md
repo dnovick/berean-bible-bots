@@ -14,14 +14,3 @@ A 20-item classification exercise using weak-root Hithpael forms drawn from Gene
 | Simple Action | 4, 9, 12, 13 | 4 |
 | Intensive/Iterative | 18, 19 | 2 |
 | Reciprocal | — | 0 |
-
-## Sample Questions
-
-**Q1.** 1 הִתְגַּלָּה Perfect 3ms גלה Gen 35:7 "God revealed himself" R Re I SA
-> **A:** R — Reflexive · Root: גלה (III-ה) · God revealed himself — subject is both agent and recipient; III-ה: perfect ends in Qamets + ה
-
-**Q2.** 2 הִשְׁתַּחֲוָה Perfect 3ms שׁחה Gen 22:5 "we will worship / bow down" R Re I SA
-> **A:** R — Reflexive · Root: שׁחה (sibilant metathesis + III-ה) · Bowing = acting on one's own body in submission; הִתְ + שׁ → הִשְׁתְּ
-
-**Q3.** 3 הִתְהַלֵּל Perfect 3ms הלל Jer 9:23 "let him not boast" R Re I SA
-> **A:** R — Reflexive · Root: הלל (geminate) · Boasting = directing praise toward oneself; הִתְ prefix + Dagesh in R2/R3 (לּ)

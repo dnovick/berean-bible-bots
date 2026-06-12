@@ -1,32 +1,11 @@
 # BBA Chapter 6 — Nouns: Construct State
 
----
+> Learn the Aramaic construct state endings for masculine and feminine nouns (singular and plural) and understand how the construct chain functions: the construct noun is bound to its genitive companion to express possession, material, or description. Note that Aramaic construct chains work identically to Hebrew (BBH Ch10) but with distinct endings, especially the masculine plural construct. The three-state noun system (absolute, determined, construct) is now complete.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch6-vocab-deck.md](ch6-vocab-deck.md) | Reference list with glosses |
-| [ch6-vocab-deck.txt](ch6-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch6-vocab-deck-fd.txt](ch6-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch6-construct-chain-drill/](exercises/ch6-construct-chain-drill/index.md) | 20-item construct chain drill — identify the construct form of the first noun and complete the chain, covering all four gender/number patterns |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Construct state frequency; gender × state crosstab; top Aramaic nouns in construct |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

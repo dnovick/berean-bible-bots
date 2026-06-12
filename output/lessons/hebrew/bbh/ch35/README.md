@@ -2,35 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch35-passage-exercise/](exercises/ch35-passage-exercise/README.md) | "Spot the Hithpael" — parsing exercise from Gen 22, 18, Exo 20, Psa 95, Gen 35, 1 Sam 10, Gen 44, 2 Kgs 8 with weak-root emphasis |
-| [exercises/ch35-weak-form-id/](exercises/ch35-weak-form-id/README.md) | Weak Hithpael identification drill — parse 20 weak forms grouped by class (I-gutt, III-he, Sibilant metathesis, I-nun) + 10 mixed |
-| [exercises/ch35-function-sort/](exercises/ch35-function-sort/README.md) | Semantic function sorting — Hithpael Weak verbs by function type |
-| [exercises/ch35-hithpael-weak-paradigm-drill/](exercises/ch35-hithpael-weak-paradigm-drill/README.md) | Paradigm drill — write selected Hithpael Weak forms (III-ה with metathesis for צ) |
-| [exercises/ch35-qal-piel-hithpael-contrast/](exercises/ch35-qal-piel-hithpael-contrast/README.md) | Qal–Piel–Hithpael contrast drill (weak roots) |
-| [exercises/ch35-stem-id-drill/](exercises/ch35-stem-id-drill/README.md) | Stem identification drill — Qal/Piel/Hithpael weak roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch35-vocab-deck.md](ch35-vocab-deck.md) | Markdown | 12-word vocabulary deck — 1 verb + 10 nouns + 1 adjective |
-| [ch35-vocab-deck.txt](ch35-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch35-vocab-deck-fd.txt](ch35-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hithpael Stem](../../../notebooks/ot/verbs/hithpael/) | Hithpael stem: root×conjugation heatmap; weak root behavior in the reflexive-intensive |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 35*
 *Builds on Ch34 (Hithpael Strong Verbs). Weak forms only — semantic functions not repeated.*
 

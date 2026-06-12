@@ -1,5 +1,10 @@
 # Chapter 36 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch36-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch36-vocab-deck-fd.txt)
+
+---
+
+
 *9 words from BBG Chapter 36. Frequency counts are NT-wide occurrences.*
 *Import `ch36-vocab-deck.txt` directly into Anki (File → Import).*
 

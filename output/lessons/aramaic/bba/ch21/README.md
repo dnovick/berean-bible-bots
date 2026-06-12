@@ -5,27 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch21-haphel-stem-drill/](exercises/ch21-haphel-stem-drill/README.md) | 20-item Haphel stem parsing drill |
-| [exercises/ch21-haphel-peal-contrast/](exercises/ch21-haphel-peal-contrast/README.md) | Haphel vs. Peal Contrast Drill — 20 items: identify causative הַ/הוֹ prefix vs. simple Peal, parse, translate |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Haphel stem profile; causative roots in Daniel/Ezra |
-
----
-
 ## 1. Introduction — The Haphel as the H Stem
 
 Chapters 18–20 covered the passive and reflexive sides of the Aramaic stem system: the Peil and Ithpeel (Ch18) as the passive/reflexive of the Peal, the Pael (Ch19) as the intensive D stem, and the Hithpaal (Ch20) as the reflexive/passive of the Pael. Chapter 21 now introduces the **Haphel**, the third major stem family in Biblical Aramaic.

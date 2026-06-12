@@ -1,28 +1,11 @@
 # BBG Chapter 11 — First and Second Person Personal Pronouns
 
----
+> Memorize the first-person (ἐγώ) and second-person (σύ) personal pronoun paradigms in all four cases, singular and plural. Learn that personal pronouns do not have gender in the first and second persons, that the nominative forms are emphatic (the verb ending already carries person/number), and that oblique forms regularly appear as objects of prepositions and verbs.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch11-pronoun-parsing/](exercises/ch11-pronoun-parsing/index.md) | 20-item parsing drill — person, case, and number for 1st/2nd person pronoun forms, plus translation |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch11-vocab-deck.md](ch11-vocab-deck.md) | Human-readable card list — 21 vocabulary words |
-| [ch11-vocab-deck.txt](ch11-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch11-vocab-deck-fd.txt](ch11-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Divine Names & Christological Titles](../../../notebooks/both/survey/divine_names/) | How θεός, κύριος, Ἰησοῦς, Χριστός, πατήρ, πνεῦμα distribute across the NT |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

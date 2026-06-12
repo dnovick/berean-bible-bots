@@ -1,36 +1,14 @@
 # BBA Chapter 13 — Peal Perfect
 
+> Learn the Peal perfect paradigm (all 13 PGN forms) with its characteristic afformatives and the vowel pattern of the strong verb. Compare the Aramaic perfect to the Hebrew Qal perfect (BBH Ch13): the affixes are cognate but have Aramaic-specific vowels and spelling conventions. Practice parsing PGN from the text of Daniel and Ezra, and understand the perfect's aspectual range (completed action, stative).
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 13: Peal Perfect*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch13-vocab-deck.md](ch13-vocab-deck.md) | Reference list with glosses |
-| [ch13-vocab-deck.txt](ch13-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch13-vocab-deck-fd.txt](ch13-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch13-peal-perfect-drill/](exercises/ch13-peal-perfect-drill/index.md) | 20-item Peal perfect parsing drill |
-| [exercises/ch13-peal-contrast/](exercises/ch13-peal-contrast/index.md) | Peal Perfect vs. Imperfect Contrast Drill — 20 items: classify conjugation, parse PGN, root, translate |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal stem profile; qatal conjugation distribution; top Peal roots |
 
 ---
 

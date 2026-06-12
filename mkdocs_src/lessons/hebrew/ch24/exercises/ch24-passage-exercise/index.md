@@ -20,11 +20,11 @@ A 15-verb parsing exercise drawn from the Joseph narrative (Gen 37–49) and the
 
 ## Sample Questions
 
-**Q1.** 1 קָמָה
+**Q1.** 1 קָמָה Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive Reflexive Reciprocal Tolerative Resultative Simple Action NOT Niphal
 > **A:** ✗ קָמָה ✗ No — Qal | Perfect 3fs | קוּם | NOT Niphal — Qal: arose ; biconsonantal Qal perfect 3fs; no נ prefix or dagesh forte
 
-**Q2.** 2 נִצָּבָה
+**Q2.** 2 נִצָּבָה Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive Reflexive Reciprocal Tolerative Resultative Simple Action NOT Niphal
 > **A:** ✓ נִצָּבָה ✓ Yes — Niphal | Perfect 3fs | נָצַב | Reflexive — it stood upright (the sheaf stationed itself)
 
-**Q3.** 3 מָכְרוּ
+**Q3.** 3 מָכְרוּ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive Reflexive Reciprocal Tolerative Resultative Simple Action NOT Niphal
 > **A:** ✗ מָכְרוּ ✗ No — Qal | Perfect 3cp | מָכַר | NOT Niphal — Qal: had sold ; active Qal; contrast with #4 Niphal passive of the same root

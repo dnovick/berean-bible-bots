@@ -1,28 +1,11 @@
 # BBG Chapter 13 — Demonstrative Pronouns/Adjectives
 
----
+> Learn the near demonstrative οὗτος ("this") and the far demonstrative ἐκεῖνος ("that") in all cases, genders, and numbers, noting the irregular nominative forms of οὗτος. Distinguish the adjectival use (predicate position with the article) from the substantival use, and practice identifying antecedents in connected NT text. Demonstratives are especially prominent in John's Gospel and the Pauline letters.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch13-demonstrative-parsing/](exercises/ch13-demonstrative-parsing/index.md) | 20-item drill: parse demonstrative forms and identify adjective vs. pronoun use |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch13-vocab-deck.md](ch13-vocab-deck.md) | Human-readable card list — 13 vocabulary words |
-| [ch13-vocab-deck.txt](ch13-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch13-vocab-deck-fd.txt](ch13-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Demonstrative Pronouns](../../../notebooks/nt/syntax/demonstratives/) | οὗτος vs. ἐκεῖνος frequency, attributive vs. substantival use, case/gender profiles, near/far genre comparison, John's use of ἐκεῖνος for the Paraclete |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

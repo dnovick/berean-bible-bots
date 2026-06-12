@@ -17,11 +17,11 @@ A 14-root exercise in three parts. Students are given a root with its Qal meanin
 
 ## Sample Questions
 
-**Q1.** 1 בּוֹא to go in, come יָּבֵא (Wayyiqtol 3ms) Gen 2:19
-> **A:** he brought (them) — Causative — God caused the animals to come to Adam; Qal "to come" → Hiphil "to cause to come / bring"
+**Q1.** 1 בּוֹא to go in, come יָּבֵא (Wayyiqtol 3ms) Gen 2:19 Causative Factitive Declarative Simple Action
+> **A:** he brought (them) Causative God caused the animals to come to Adam; Qal "to come" → Hiphil "to cause to come / bring"
 
-**Q2.** 2 יָצָא to go out תּוֹצֵא (Wayyiqtol 3fs) Gen 1:12
-> **A:** it brought forth — Causative — the earth caused vegetation to come out; Qal "to go out" → Hiphil "to cause to go out / bring forth"
+**Q2.** 2 יָצָא to go out תּוֹצֵא (Wayyiqtol 3fs) Gen 1:12 Causative Factitive Declarative Simple Action
+> **A:** it brought forth Causative the earth caused vegetation to come out; Qal "to go out" → Hiphil "to cause to go out / bring forth"
 
-**Q3.** 3 שׁוּב to return הֵשִׁיב (Weqatal 3ms) Gen 14:16
-> **A:** he brought back — Causative — Abraham caused Lot to return; Qal "to return" → Hiphil "to cause to return / restore"
+**Q3.** 3 שׁוּב to return הֵשִׁיב (Weqatal 3ms) Gen 14:16 Causative Factitive Declarative Simple Action
+> **A:** he brought back Causative Abraham caused Lot to return; Qal "to return" → Hiphil "to cause to return / restore"

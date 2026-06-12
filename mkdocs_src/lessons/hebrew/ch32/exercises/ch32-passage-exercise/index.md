@@ -19,11 +19,11 @@ Students identify and parse Pual Strong verbs across three Torah/Prophets passag
 
 ## Sample Questions
 
-**Q1.** 1 תְּבָרֵךְ
+**Q1.** 1 תְּבָרֵךְ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Passive Reflexive NOT Pual
 > **A:** ✗ No — Piel | Imperfect | 2ms | ברך | Intensive — "you bless." R2=ר rejects dagesh; Piel identified by tsere under R2. The Pual passive counterpart appears next as מְבֹרָךְ.
 
-**Q2.** 2 מְבֹרָךְ
+**Q2.** 2 מְבֹרָךְ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Passive Reflexive NOT Pual
 > **A:** ✓ Yes — Pual | Participle | ms | ברך | Passive — "blessed one." Qamets under R1 (compensatory lengthening because ר rejects Dagesh Forte). Pual Ptc. prefix מְ + Qibbuts→Qamets pattern.
 
-**Q3.** 3 יוּאָר
+**Q3.** 3 יוּאָר Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Passive Reflexive NOT Pual
 > **A:** ✗ No — Hophal | Imperfect | 3ms | ארר | Hophal passive — "shall be cursed." The יוּ prefix (Shureq = u-class vowel under the preformative) is the Hophal Imperfect marker. Contrast Pual: Qibbuts is under R1, not the prefix consonant.

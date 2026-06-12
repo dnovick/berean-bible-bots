@@ -2,32 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch24-aorist-future-passive-parsing/](exercises/ch24-aorist-future-passive-parsing/README.md) | Aorist/Future Passive Parsing Drill — 20 forms to parse |
-| [exercises/ch24-passive-formation/](exercises/ch24-passive-formation/README.md) | Aorist vs. Future Passive Formation Drill — 20 items: classify θη-Aorist vs. θησ-Future, parse, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch24-vocab-deck.md](ch24-vocab-deck.md) | Human-readable card list — 8 vocabulary words |
-| [ch24-vocab-deck.txt](ch24-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch24-vocab-deck-fd.txt](ch24-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Passive voice counts by tense; divine passive context |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Passive voice distribution by tense and NT genre |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~6,500 aorist passive + ~1,200 future passive tokens NT-wide)*
 

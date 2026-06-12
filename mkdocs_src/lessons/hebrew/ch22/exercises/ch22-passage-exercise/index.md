@@ -18,10 +18,10 @@ This passage exercise presents 15 highlighted participle forms drawn from eleven
 ## Sample Questions
 
 **Q1.** 1 אָר֤וּר
-> **A:** Passive · ארר · Geminate · ms · Predicate — "you are cursed"; qamets + shureq (qatûl); predicate of אַתָּה in verbless clause
+> **A:** Passive ארר Geminate ms Predicate "you are cursed"; qamets + shureq (qatûl); predicate of אַתָּה in verbless clause
 
 **Q2.** 2 אָר֤וּר (4:11)
-> **A:** Passive · ארר · Geminate · ms · Predicate — identical form and function; curse formula applied to Cain
+> **A:** Passive ארר Geminate ms Predicate identical form and function; curse formula applied to Cain
 
 **Q3.** 3 בָּר֤וּךְ
-> **A:** Passive · ברך · Strong A · ms · Predicate — "blessed is Abram"; blessing formula
+> **A:** Passive ברך Strong A ms Predicate "blessed is Abram"; blessing formula

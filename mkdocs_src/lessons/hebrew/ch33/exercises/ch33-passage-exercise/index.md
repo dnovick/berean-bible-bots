@@ -25,11 +25,11 @@ Students identify and parse Pual Weak verbs across three passage sets: Genesis g
 
 ## Sample Questions
 
-**Q1.** 1 יָלַד
+**Q1.** 1 יָלַד Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Passive Reflexive NOT Pual
 > **A:** ✗ No — Qal | Perfect | 3ms | ילד | Qal — "fathered/begat" (active). Qal Perf 3ms vowel pattern (Qamets-Patach). No Qibbuts under R1 with Dagesh Forte in R2.
 
-**Q2.** 2 הוּחַל
+**Q2.** 2 הוּחַל Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Passive Reflexive NOT Pual
 > **A:** ✗ No — Hophal | Perfect | 3ms | חלל | Hophal passive — "was begun." The הוּ prefix (Shureq under הּ) = Hophal Perfect marker. Geminate root חלל. No Qibbuts under R1 with Dagesh in R2.
 
-**Q3.** 3 יֻלַּד
+**Q3.** 3 יֻלַּד Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Passive Reflexive NOT Pual
 > **A:** ✓ Yes — Pual | Perfect | 3ms | ילד | Passive — I-י root : "was born/begotten." Qibbuts under R1 (יֻ) + Dagesh Forte in R2 (לּ) = Pual. I-י: the initial י is simply R1 taking Qibbuts; no assimilation occurs in the Pual. Piel of ילד = "to beget" → Pual passive = "to be born."

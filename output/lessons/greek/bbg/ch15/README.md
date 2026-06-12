@@ -2,25 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-*No exercises for this preparatory chapter.*
-
-### Flashcards
-
-*No vocabulary introduced in this chapter.*
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Tense/voice/mood profiles, tense × voice crosstab, top lemmas, genre comparison |
-| [Hebrew & Greek Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | Comparative stem statistics; Greek tense×voice heatmap |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

@@ -5,27 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch18-passive-stems-drill/](exercises/ch18-passive-stems-drill/README.md) | 20-item Peil and Ithpeel stem identification drill |
-| [exercises/ch18-stem-contrast/](exercises/ch18-stem-contrast/README.md) | Peil vs. Ithpeel Stem Contrast Drill — 20 items: classify stem by CvCīC pattern vs. אִתְ/יִתְ prefix |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peil, Hithpeel, Ithpeel stem profiles and top roots |
-
----
-
 ## 1. Introduction — Passive and Reflexive Stems in Biblical Aramaic
 
 Chapters 13–17 introduced all the conjugations of the **Peal stem** — the base verbal stem of Biblical Aramaic, equivalent to the Hebrew Qal. The Peal expresses the basic action of a root in the active voice: כְּתַב = "he wrote"; יִכְתֻּב = "he will write"; כָּתֵב = "one who writes."

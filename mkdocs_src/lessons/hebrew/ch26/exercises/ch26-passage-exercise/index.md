@@ -24,11 +24,11 @@ Students first answer "Is it Hiphil?" for every highlighted verb before parsing 
 
 ## Sample Questions
 
-**Q1.** 1 נִשְׁחָתָה
-> **A:** ✗ נִשְׁחָתָה ✗ No — Niphal | Weqatal 3fs | שָׁחַת | NOT Hiphil — Niphal passive: was corrupt ; נ assimilates: Niphal weqatal passive
+**Q1.** 1 נִשְׁחָתָה Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3fs 2ms 1cs ms + 3mp suffix ms Causative Causative/Denominative Factitive Declarative Simple action NOT Hiphil
+> **A:** ✗ נִשְׁחָתָה No Weqatal 3fs שָׁחַת NOT Hiphil — Niphal passive: was corrupt ; נ assimilates: Niphal weqatal passive
 
-**Q2.** 2 הִשְׁחִית
-> **A:** ✓ הִשְׁחִית ✓ Yes — Hiphil | Perfect (qatal) 3ms | שָׁחַת | Causative — had corrupted
+**Q2.** 2 הִשְׁחִית Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3fs 2ms 1cs ms + 3mp suffix ms Causative Causative/Denominative Factitive Declarative Simple action NOT Hiphil
+> **A:** ✓ הִשְׁחִית Yes Perfect (qatal) 3ms שָׁחַת Causative — had corrupted
 
-**Q3.** 3 מַשְׁחִיתָם
-> **A:** ✓ מַשְׁחִיתָם ✓ Yes — Hiphil | Participle + 3mp suffix ms | שָׁחַת | Causative — destroying them
+**Q3.** 3 מַשְׁחִיתָם Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3fs 2ms 1cs ms + 3mp suffix ms Causative Causative/Denominative Factitive Declarative Simple action NOT Hiphil
+> **A:** ✓ מַשְׁחִיתָם Yes Participle ms + 3mp sfx שָׁחַת Causative — destroying them

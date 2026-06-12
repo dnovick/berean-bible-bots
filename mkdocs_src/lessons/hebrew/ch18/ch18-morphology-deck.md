@@ -1,5 +1,10 @@
 # Chapter 18 — Qal Imperative Morphology Deck
 
+**Download:** [Anki import (.txt)](ch18-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch18-morphology-deck-fd.txt)
+
+---
+
+
 *BBH Chapter 18 · 32 cards*
 
 ---

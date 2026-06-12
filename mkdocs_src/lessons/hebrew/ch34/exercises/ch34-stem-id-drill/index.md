@@ -19,10 +19,10 @@ A 24-item drill covering all major conjugations of two roots (קדשׁ and דב�
 ## Sample Questions
 
 **Q1.** 1 קָדַשׁ
-> **A:** Qal · Perfect · 3ms · קדשׁ — Patakh under R1, no prefix, no Dagesh in R2 → Qal
+> **A:** Qal Perfect 3ms קדשׁ — Patakh under R1, no prefix, no Dagesh in R2 → Qal
 
 **Q2.** 2 קִדֵּשׁ
-> **A:** Piel · Perfect · 3ms · קדשׁ — Dagesh in R2 (דּ), Hireq under R1, no prefix → Piel
+> **A:** Piel Perfect 3ms קדשׁ — Dagesh in R2 (דּ), Hireq under R1, no prefix → Piel
 
 **Q3.** 3 הִתְקַדֵּשׁ
-> **A:** Hithpael · Perfect 3ms OR Imperative 2ms · קדשׁ — הִתְ prefix + Dagesh in R2 → Hithpael; both parsings are identical in writing for strong roots
+> **A:** Hithpael Perfect 3ms OR Imperative 2ms קדשׁ הִתְ prefix + Dagesh in R2 → Hithpael; both parsings are identical in writing for strong roots

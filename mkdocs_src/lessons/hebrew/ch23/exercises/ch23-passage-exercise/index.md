@@ -23,10 +23,10 @@ This 15-item passage exercise draws on five OT passages to practice clause analy
 ## Sample Questions
 
 **Q1.** 1 בְּ/רֵאשִׁ֖ית בָּרָ֣א אֱלֹהִ֑ים … (Gen 1:1)
-> **A:** Type: Verbal — PP fronted &nbsp;|&nbsp; Fronted: בְּ/רֵאשִׁ֖ית (temporal PP) — sets the absolute time frame; VSO order follows &nbsp;|&nbsp; Verb: בָּרָ֣א — Qal Perfect 3ms &nbsp;|&nbsp; Gloss: "In the beginning God created the heavens and the earth"
+> **A:** Type: Verbal PP fronted &nbsp;|&nbsp; Fronted: בְּ/רֵאשִׁ֖ית (temporal PP) — sets the absolute time frame; VSO order follows &nbsp;|&nbsp; Verb: בָּרָ֣א — Qal Perfect 3ms &nbsp;|&nbsp; Gloss: "In the beginning God created the heavens and the earth"
 
 **Q2.** 2 וְהָ/אָ֗רֶץ הָיְתָ֥ה תֹ֙הוּ֙ וָ/בֹ֔הוּ (Gen 1:2a)
-> **A:** Type: Waw-disjunctive (Background) &nbsp;|&nbsp; Fronted: הָ/אָ֗רֶץ (noun) — וְ + noun steps off narrative mainline &nbsp;|&nbsp; Verb: הָיְתָ֥ה — Qal Perfect 3fs &nbsp;|&nbsp; Gloss: "Now the earth was formless and empty"
+> **A:** Type: Waw-disjunctive (Background) &nbsp;|&nbsp; Fronted: הָ/אָ֗רֶץ (noun) וְ + noun steps off narrative mainline &nbsp;|&nbsp; Verb: הָיְתָ֥ה — Qal Perfect 3fs &nbsp;|&nbsp; Gloss: "Now the earth was formless and empty"
 
 **Q3.** 3 וַיֹּ֤אמֶר אֱלֹהִ֙ים֙ (Gen 1:3)
-> **A:** Type: Verbal VSO &nbsp;|&nbsp; Fronted: None &nbsp;|&nbsp; Verb: וַיֹּ֤אמֶר — Wayyiqtol Qal 3ms &nbsp;|&nbsp; Gloss: "And God said"
+> **A:** Type: Verbal VSO &nbsp;|&nbsp; Fronted: None &nbsp;|&nbsp; Verb: וַיֹּ֤אמֶר Wayyiqtol Qal 3ms &nbsp;|&nbsp; Gloss: "And God said"

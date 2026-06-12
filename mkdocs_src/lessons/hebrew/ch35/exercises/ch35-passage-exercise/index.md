@@ -19,11 +19,11 @@ Students identify and parse Hithpael weak-root verbs across passages from Genesi
 
 ## Sample Questions
 
-**Q1.** 1 וַיִּשְׁתַּחוּ
+**Q1.** 1 וַיִּשְׁתַּחוּ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Reflexive Passive Denominative Estimative Iterative Tolerative NOT Hithpael
 > **A:** ✓ Yes — Hithpael | Wayyiqtol | 3ms | שחה | Reflexive — "and he bowed down"; I-שׁ metathesis (הִתְ + שׁ → הִשְׁתַּ); III-ה short form (וּ ending in Wayyiqtol 3ms).
 
-**Q2.** 2 וְנִשְׁתַּחֲוֶה
+**Q2.** 2 וְנִשְׁתַּחֲוֶה Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Reflexive Passive Denominative Estimative Iterative Tolerative NOT Hithpael
 > **A:** ✓ Yes — Hithpael | Cohortative | 1cp | שחה | Reflexive "let us worship/bow down" — I-שׁ metathesis: הִתְ + שׁ → הִשְׁתַּ; cohortative prefix נ replaces הִ: וְנִשְׁתַּחֲוֶה. III-ה ending: imperfect/cohortative takes ֶה. The full expected form: יִתְשַׁחֲוֶה → הִשְׁתַּחֲוֶה → cohortative נִשְׁתַּחֲוֶה.
 
-**Q3.** 3 וַיִּשְׁתַּחוּ
+**Q3.** 3 וַיִּשְׁתַּחוּ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Reflexive Passive Denominative Estimative Iterative Tolerative NOT Hithpael
 > **A:** ✓ Yes — Hithpael | Wayyiqtol | 3ms | שחה | Reflexive "and he bowed down" — Wayyiqtol: וַיִּ + שְׁתַּחוּ; I-שׁ metathesis preserved; III-ה in Wayyiqtol 3ms = short form (no ה ending, final vowel וּ from 3ms apocopation + suffix). Compare: form וַיִּשְׁתַּחֲווּ (3mp) has different ending.

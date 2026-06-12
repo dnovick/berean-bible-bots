@@ -1,22 +1,11 @@
 # BBG Chapter 4 — Punctuation and Syllabification
 
----
+> Learn Greek punctuation marks (period, comma, semicolon/question mark, high dot), the three accent types (acute, grave, circumflex), the rough and smooth breathings, and the rules for dividing words into syllables. Correct accentuation and syllabification support both pronunciation and the later recognition of accent-based distinctions (e.g., τίς vs. τις).
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch4-syllable-drill/](exercises/ch4-syllable-drill/index.md) | 20-item syllabification practice — divide Greek words into syllables and identify the accented syllable |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch4-vocab-deck.md](ch4-vocab-deck.md) | Human-readable card list — 20 vocabulary words |
-| [ch4-vocab-deck.txt](ch4-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch4-vocab-deck-fd.txt](ch4-vocab-deck-fd.txt) | Flashcards Deluxe import file |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

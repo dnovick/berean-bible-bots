@@ -1,30 +1,11 @@
 # BBH Chapter 23 — Sentence Syntax
 
----
+> Learn to analyze verbal and verbless clause structures, identify the subject, predicate, and object, and recognize the major clause types in Hebrew prose: narrative main clause (wayyiqtol), discourse clause, and subordinate clause. Study the function of the disjunctive waw, the Hebrew relative clause, and direct speech markers. This synthesis chapter integrates Chs 1–22 before the course moves into the derived verbal stems.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch23-clause-analysis/](exercises/ch23-clause-analysis/index.md) | 20-item clause analysis drill: Part A (VSO verbal), Part B (fronted elements), Part C (verbless), Part D (waw-disjunctive), Part E (mixed) |
-| [exercises/ch23-passage-exercise/](exercises/ch23-passage-exercise/index.md) | 15-item passage exercise: Gen 1:1–4, Gen 3:1–5, Deu 6:4–5, Gen 22:1–2, Jdg 16:20 / Gen 4:9 / Exo 20:2 — all five clause types in context |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch23-vocab-deck.md](ch23-vocab-deck.md) | Markdown | Vocabulary deck — 13 nouns with POS tags and frequency |
-| [ch23-vocab-deck.txt](ch23-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (13 cards) |
-| [ch23-vocab-deck-fd.txt](ch23-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (13 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Verbal Syntax](../../../notebooks/ot/syntax/verbal_syntax/) | Clause type profiles: disjunctive clauses, conditional clauses, relative clauses, aspect comparison |
-| [Syntactic Roles OT](../../../notebooks/ot/speakers/syntactic_roles_ot/) | Syntactic role search: who does what to whom in the OT |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

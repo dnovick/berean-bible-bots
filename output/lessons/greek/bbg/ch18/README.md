@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch18-middle-passive-parsing/](exercises/ch18-middle-passive-parsing/README.md) | 20-item drill: parse present middle/passive forms and identify likely voice from context |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch18-vocab-deck.md](ch18-vocab-deck.md) | Human-readable card list — 10 vocabulary words |
-| [ch18-vocab-deck.txt](ch18-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch18-vocab-deck-fd.txt](ch18-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Voice distribution; tense × voice crosstab |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Greek middle/passive voice patterns by genre |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

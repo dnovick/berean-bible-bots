@@ -1,40 +1,11 @@
 # BBH Chapter 21 — Qal Infinitive Absolute
 
----
+> Learn the Qal infinitive absolute form and its three primary uses: the emphatic cognate accusative construction (intensifying an adjacent finite verb of the same root), the resumptive/continuous use, and its occasional function as a substitute for an imperative. Distinguish the infinitive absolute from the infinitive construct by form and context; both can appear in close proximity in the same clause.
 
-## Files
-
-### Reference Files
-
-| File | Description |
+| Resource | Link |
 |---|---|
-| [infinitive-absolute-paradigms.md](infinitive-absolute-paradigms.md) | Full paradigm tables: Strong A/B, III-ה, Biconsonantal, I-י, I-נ, I-aleph; IC vs. IA summary table |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch21-parsing-drill/](exercises/ch21-parsing-drill/index.md) | 25-item drill: Part A (emphatic pairs), Part B (standalone IA: imperatival and manner), Part C (discrimination: IA vs. IC vs. Imperative vs. Perfect vs. Imperfect) |
-| [exercises/ch21-passage-exercise/](exercises/ch21-passage-exercise/index.md) | 15-item passage exercise: Gen 2, Exo 3, Exo 20/Deu 5, Gen 8, Gen 26, Gen 44, Deu 6/8, Num 15 — all four IA functions in context |
-| [exercises/ch21-qal-ia-paradigm-drill/](exercises/ch21-qal-ia-paradigm-drill/index.md) | Paradigm drill — write the Qal Infinitive Absolute for 6 root classes from memory |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch21-morphology-deck.md](ch21-morphology-deck.md) | Markdown | 32-card morphology deck — Qal Infinitive Absolute with root class and function groupings |
-| [ch21-morphology-deck.txt](ch21-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (32 cards) |
-| [ch21-morphology-deck-fd.txt](ch21-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (32 cards) |
-| [ch21-vocab-deck.md](ch21-vocab-deck.md) | Markdown | Vocabulary deck — 14 words (9 verbs, 5 nouns) with POS tags and frequency |
-| [ch21-vocab-deck.txt](ch21-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (14 cards) |
-| [ch21-vocab-deck-fd.txt](ch21-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (14 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: infinitive absolute distribution and paronomastic usage |
-| [Verbal Syntax](../../../notebooks/ot/syntax/verbal_syntax/) | Infinitive usage patterns (construct vs. absolute) by book and genre |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

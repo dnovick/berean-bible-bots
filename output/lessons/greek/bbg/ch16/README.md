@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch16-present-active-parsing/](exercises/ch16-present-active-parsing/README.md) | 20-item drill: parse present active indicative forms (tense/voice/mood/person/number/root) and translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch16-vocab-deck.md](ch16-vocab-deck.md) | Human-readable card list — 12 vocabulary words |
-| [ch16-vocab-deck.txt](ch16-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch16-vocab-deck-fd.txt](ch16-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Tense/voice/mood profiles — present tense in context |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Greek present tense distribution across Gospels / Pauline / General epistles |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

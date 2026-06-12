@@ -14,7 +14,7 @@
   td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
-  input.parse-field { width: 100%; box-sizing: border-box; font-size: .9em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .parse-field { width: 100%; box-sizing: border-box; font-size: .9em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
   button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
@@ -27,7 +27,7 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 </style>
@@ -40,6 +40,22 @@
 
 <p>For each Hiphil form below: (1) <strong>translate</strong> it into English, (2) <strong>name the semantic function</strong> (Causative / Declarative / Factitive / Simple Action), and (3) explain in one sentence why the Hiphil meaning follows from the Qal.</p>
 
+
+<table style="border-collapse:collapse;width:100%;margin:1rem 0;font-size:.9em">
+  <thead>
+    <tr>
+      <th style="background:#2a4a6e;color:#fff;padding:.4em .7em;width:10%">Function</th>
+      <th style="background:#2a4a6e;color:#fff;padding:.4em .7em;width:20%">Name</th>
+      <th style="background:#2a4a6e;color:#fff;padding:.4em .7em">Description / Test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr><td style="border:1px solid #ccc;padding:.35em .6em;text-align:center"><strong>Causative</strong></td><td style="border:1px solid #ccc;padding:.35em .6em">Causative</td><td style="border:1px solid #ccc;padding:.35em .6em">Subject <em>causes</em> someone/something to perform the action. (Motion verb: go → bring.)</td></tr>
+    <tr style="background:#f7f7f7"><td style="border:1px solid #ccc;padding:.35em .6em;text-align:center"><strong>Factitive</strong></td><td style="border:1px solid #ccc;padding:.35em .6em">Factitive</td><td style="border:1px solid #ccc;padding:.35em .6em">Subject causes an object to <em>enter</em> a state. (Stative root: be heavy → make heavy.)</td></tr>
+    <tr><td style="border:1px solid #ccc;padding:.35em .6em;text-align:center"><strong>Declarative</strong></td><td style="border:1px solid #ccc;padding:.35em .6em">Declarative</td><td style="border:1px solid #ccc;padding:.35em .6em">Subject <em>declares or treats</em> something as being in a state. (Legal / evaluative.)</td></tr>
+    <tr style="background:#f7f7f7"><td style="border:1px solid #ccc;padding:.35em .6em;text-align:center"><strong>Simple Action</strong></td><td style="border:1px solid #ccc;padding:.35em .6em">Simple Action</td><td style="border:1px solid #ccc;padding:.35em .6em">Hiphil is the standard form of the verb; no active Qal counterpart in normal BH usage.</td></tr>
+  </tbody>
+</table>
 <div class="controls">
   <button onclick="showAll()">Show All Answers</button>
   <button onclick="hideAll()">Hide All Answers</button>
@@ -62,11 +78,18 @@
     <td><span class="heb">יָּבֵא</span> (Wayyiqtol 3ms)</td>
     <td>Gen 2:19</td>
     <td><input class="parse-field" id="a1t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a1f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a1f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r1">
-    <td colspan="8"><strong>he brought (them)</strong> — <em>Causative</em> — God caused the animals to come to Adam; Qal "to come" → Hiphil "to cause to come / bring"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>he brought (them)</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">God caused the animals to come to Adam; Qal "to come" → Hiphil "to cause to come / bring"</td>
   </tr>
   <tr>
     <td>2</td>
@@ -75,11 +98,18 @@
     <td><span class="heb">תּוֹצֵא</span> (Wayyiqtol 3fs)</td>
     <td>Gen 1:12</td>
     <td><input class="parse-field" id="a2t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a2f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a2f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r2">
-    <td colspan="8"><strong>it brought forth</strong> — <em>Causative</em> — the earth caused vegetation to come out; Qal "to go out" → Hiphil "to cause to go out / bring forth"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>it brought forth</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">the earth caused vegetation to come out; Qal "to go out" → Hiphil "to cause to go out / bring forth"</td>
   </tr>
   <tr>
     <td>3</td>
@@ -88,11 +118,18 @@
     <td><span class="heb">הֵשִׁיב</span> (Weqatal 3ms)</td>
     <td>Gen 14:16</td>
     <td><input class="parse-field" id="a3t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a3f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a3f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r3">
-    <td colspan="8"><strong>he brought back</strong> — <em>Causative</em> — Abraham caused Lot to return; Qal "to return" → Hiphil "to cause to return / restore"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>he brought back</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">Abraham caused Lot to return; Qal "to return" → Hiphil "to cause to return / restore"</td>
   </tr>
   <tr>
     <td>4</td>
@@ -101,11 +138,18 @@
     <td><span class="heb">הַעֲלֵה</span> (Imperative 2ms)</td>
     <td>Gen 22:2</td>
     <td><input class="parse-field" id="a4t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a4f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a4f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r4">
-    <td colspan="8"><strong>offer up!</strong> — <em>Causative</em> — Abraham is to cause Isaac to go up as a burnt offering; Qal "to go up" → Hiphil "to bring up / offer"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>offer up!</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">Abraham is to cause Isaac to go up as a burnt offering; Qal "to go up" → Hiphil "to bring up / offer"</td>
   </tr>
   <tr>
     <td>5</td>
@@ -114,11 +158,18 @@
     <td><span class="heb">תֹּרֶד</span> (Wayyiqtol 3fs)</td>
     <td>Gen 24:18</td>
     <td><input class="parse-field" id="a5t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a5f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a5f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r5">
-    <td colspan="8"><strong>she lowered (her jar)</strong> — <em>Causative</em> — Rebekah caused the jar to go down; Qal "to go down" → Hiphil "to bring down / lower"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>she lowered (her jar)</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">Rebekah caused the jar to go down; Qal "to go down" → Hiphil "to bring down / lower"</td>
   </tr>
   <tr>
     <td>6</td>
@@ -127,11 +178,18 @@
     <td><span class="heb">הָמִית</span> (Inf. Construct)</td>
     <td>Gen 18:25</td>
     <td><input class="parse-field" id="a6t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a6f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a6f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r6">
-    <td colspan="8"><strong>to put to death / to kill</strong> — <em>Causative</em> — causing someone to die; Qal "to die" → Hiphil "to cause to die / kill"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>to put to death / to kill</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">causing someone to die; Qal "to die" → Hiphil "to cause to die / kill"</td>
   </tr>
   <tr>
     <td>7</td>
@@ -140,11 +198,18 @@
     <td><span class="heb">יּוֹלֶד</span> (Wayyiqtol 3ms)</td>
     <td>Gen 5:3</td>
     <td><input class="parse-field" id="a7t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a7f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a7f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r7">
-    <td colspan="8"><strong>he fathered / begat</strong> — <em>Causative</em> — Adam caused a son to be born; Qal "to give birth" → Hiphil "to cause to be born / beget"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>he fathered / begat</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">Adam caused a son to be born; Qal "to give birth" → Hiphil "to cause to be born / beget"</td>
   </tr>
   <tr>
     <td>8</td>
@@ -153,11 +218,18 @@
     <td><span class="heb">הִשְׁקָה</span> (Perfect 3ms)</td>
     <td>Gen 2:6</td>
     <td><input class="parse-field" id="a8t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a8f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a8f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r8">
-    <td colspan="8"><strong>it watered</strong> — <em>Causative</em> — the mist caused the ground to receive water; Qal "to drink" → Hiphil "to give to drink / water"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>it watered</strong></td>
+    <td><em>Causative</em></td>
+    <td style="font-size:.82em;color:#555;">the mist caused the ground to receive water; Qal "to drink" → Hiphil "to give to drink / water"</td>
   </tr>
 </table>
 
@@ -185,11 +257,18 @@
     <td><span class="heb">יַּכְבֵּד</span> (Wayyiqtol 3ms)</td>
     <td>Exo 8:28</td>
     <td><input class="parse-field" id="a9t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a9f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a9f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r9">
-    <td colspan="8"><strong>he hardened (his heart)</strong> — <em>Factitive</em> — Pharaoh caused his heart to be in a state of heaviness/stubbornness</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>he hardened (his heart)</strong></td>
+    <td><em>Factitive</em></td>
+    <td style="font-size:.82em;color:#555;">Pharaoh caused his heart to be in a state of heaviness/stubbornness</td>
   </tr>
   <tr>
     <td>10</td>
@@ -198,11 +277,18 @@
     <td><span class="heb">תַּגְדֵּל</span> (Wayyiqtol 2ms)</td>
     <td>Gen 19:19</td>
     <td><input class="parse-field" id="a10t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a10f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a10f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r10">
-    <td colspan="8"><strong>you have made great (your kindness)</strong> — <em>Factitive</em> — caused kindness to be great; Qal "to be great" → Hiphil "to make great / magnify"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>you have made great (your kindness)</strong></td>
+    <td><em>Factitive</em></td>
+    <td style="font-size:.82em;color:#555;">caused kindness to be great; Qal "to be great" → Hiphil "to make great / magnify"</td>
   </tr>
   <tr>
     <td>11</td>
@@ -211,11 +297,18 @@
     <td><span class="heb">הִרְשִׁיעוּ</span> (Perfect 3cp)</td>
     <td>Deu 25:1</td>
     <td><input class="parse-field" id="a11t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a11f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a11f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r11">
-    <td colspan="8"><strong>they condemned (the guilty) / declared wicked</strong> — <em>Declarative</em> — a legal verdict declaring someone to be in the state of guilt (Deu 25:1 contrasts this with acquitting the innocent)</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>they condemned (the guilty) / declared wicked</strong></td>
+    <td><em>Declarative</em></td>
+    <td style="font-size:.82em;color:#555;">a legal verdict declaring someone to be in the state of guilt (Deu 25:1 contrasts this with acquitting the innocent)</td>
   </tr>
 </table>
 
@@ -235,11 +328,18 @@
     <td><span class="heb">הַכּוֹת</span> (Inf. Construct)</td>
     <td>Gen 4:15</td>
     <td><input class="parse-field" id="a12t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a12f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a12f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r12">
-    <td colspan="8"><strong>to strike / smite</strong> — <em>Simple Action</em> — Hiphil is the primary form; no causative "extra layer" since there is no Qal counterpart</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>to strike / smite</strong></td>
+    <td><em>Simple Action</em></td>
+    <td style="font-size:.82em;color:#555;">Hiphil is the primary form; no causative "extra layer" since there is no Qal counterpart</td>
   </tr>
   <tr>
     <td>13</td>
@@ -248,11 +348,18 @@
     <td><span class="heb">הִשְׁמַדְתִּי</span> (Perfect 1cs)</td>
     <td>Lev 26:30</td>
     <td><input class="parse-field" id="a13t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a13f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a13f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r13">
-    <td colspan="8"><strong>I will destroy</strong> — <em>Simple Action</em> — Hiphil is the primary form; the Niphal of this root means "to be destroyed"</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>I will destroy</strong></td>
+    <td><em>Simple Action</em></td>
+    <td style="font-size:.82em;color:#555;">Hiphil is the primary form; the Niphal of this root means "to be destroyed"</td>
   </tr>
   <tr>
     <td>14</td>
@@ -261,11 +368,18 @@
     <td><span class="heb">יַּגֵּד</span> (Wayyiqtol 3ms)</td>
     <td>Gen 9:22</td>
     <td><input class="parse-field" id="a14t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a14f" placeholder="function…"></td>
+    <td><select class="parse-field" id="a14f"><option value=""></option><option value="Causative">Causative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="r14">
-    <td colspan="8"><strong>he told / reported</strong> — <em>Simple Action</em> — the Hiphil is the standard form; the root idea is "to place before / face" someone; Hiphil = to put information before someone</td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td></td>
+    <td><strong>he told / reported</strong></td>
+    <td><em>Simple Action</em></td>
+    <td style="font-size:.82em;color:#555;">the Hiphil is the standard form; the root idea is "to place before / face" someone; Hiphil = to put information before someone</td>
   </tr>
 </table>
 
@@ -299,7 +413,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => i.value = '');
 }
 </script>
 </body>

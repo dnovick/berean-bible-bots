@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch34-didomi-parsing/](exercises/ch34-didomi-parsing/README.md) | 20-item drill: parse δίδωμι and its compounds in all indicative forms |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch34-vocab-deck.md](ch34-vocab-deck.md) | Human-readable card list — 7 vocabulary words |
-| [ch34-vocab-deck.txt](ch34-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch34-vocab-deck-fd.txt](ch34-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~415 tokens of δίδωμι and compounds NT-wide)*
 

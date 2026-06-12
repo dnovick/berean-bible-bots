@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch19-future-parsing/](exercises/ch19-future-parsing/README.md) | Future Active/Middle Parsing Drill — 20 forms to parse |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch19-vocab-deck.md](ch19-vocab-deck.md) | Human-readable card list — 10 vocabulary words |
-| [ch19-vocab-deck.txt](ch19-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch19-vocab-deck-fd.txt](ch19-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Future tense count and voice breakdown |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Future tense distribution and voice patterns across NT genres |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~18,000 future indicative tokens NT-wide)*
 

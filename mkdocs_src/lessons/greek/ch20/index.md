@@ -1,22 +1,11 @@
 # BBG Chapter 20 — Verbal Roots (Patterns 2–4)
 
----
+> Learn the three additional verbal root patterns (Patterns 2–4) in which the present tense stem differs from the verbal root: (Pattern 2) a final root consonant changes; (Pattern 3) the root has an additional ι or υ in the present; (Pattern 4) the root uses a different stem altogether in the present. Mastery of these patterns allows students to move from a present form to the lexical verbal root needed for lexicon lookup and for forming future and aorist stems.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch20-stem-change-drill/](exercises/ch20-stem-change-drill/index.md) | Stem Change Drill — 20 items: identify root, pattern type, give future form |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch20-vocab-deck.md](ch20-vocab-deck.md) | Human-readable card list — 16 vocabulary words |
-| [ch20-vocab-deck.txt](ch20-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch20-vocab-deck-fd.txt](ch20-vocab-deck-fd.txt) | Flashcards Deluxe import file |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

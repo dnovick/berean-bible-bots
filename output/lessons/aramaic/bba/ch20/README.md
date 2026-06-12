@@ -5,27 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch20-hithpaal-drill/](exercises/ch20-hithpaal-drill/README.md) | 20-item Hithpaal/Ithpaal stem parsing drill |
-| [exercises/ch20-hithpaal-function-sort/](exercises/ch20-hithpaal-function-sort/README.md) | Hithpaal Semantic Function Sort — 20 items: classify RF / IT / ES, parse, translate |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Hithpaal and Ithpaal stem profiles |
-
----
-
 ## 1. Introduction — The Hithpaal as the Dt Stem
 
 Chapter 19 introduced the **Pael** — the D stem (doubling stem) of Biblical Aramaic. The Pael intensifies, makes causative, or otherwise modifies the basic action of the Peal. Chapter 20 now introduces the **reflexive and passive counterpart of the Pael**: the **Hithpaal** (also spelled **Ithpaal**), which comparative Semitists call the **Dt stem** (the "t-infixed D stem," or "reflexive D stem").

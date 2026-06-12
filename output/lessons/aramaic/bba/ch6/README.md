@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch6-vocab-deck.md](ch6-vocab-deck.md) | Reference list with glosses |
-| [ch6-vocab-deck.txt](ch6-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch6-vocab-deck-fd.txt](ch6-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch6-construct-chain-drill/](exercises/ch6-construct-chain-drill/README.md) | 20-item construct chain drill — identify the construct form of the first noun and complete the chain, covering all four gender/number patterns |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Construct state frequency; gender × state crosstab; top Aramaic nouns in construct |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 6: Nouns: Construct State*
 

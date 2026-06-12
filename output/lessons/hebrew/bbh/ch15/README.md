@@ -2,41 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-| File | Description |
-|---|---|
-| [qal-imperfect-paradigm.md](qal-imperfect-paradigm.md) | Full PGN paradigm: A/B/C vowel classes, jussive forms, with key-marker notes |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch15-parsing-drill/](exercises/ch15-parsing-drill/README.md) | 25 pointed forms — identify prefix, PGN, and root for each Qal Imperfect |
-| [exercises/ch15-passage-exercise/](exercises/ch15-passage-exercise/README.md) | 15 Qal Imperfect verbs from the burning bush narrative to parse (PGN + root) and identify usage type |
-| [exercises/ch15-qal-imperfect-paradigm-drill/](exercises/ch15-qal-imperfect-paradigm-drill/README.md) | Paradigm drill — write all 10 Qal Imperfect forms of שמר from memory |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch15-morphology-deck.md](ch15-morphology-deck.md) | Markdown | 25-card morphology deck — Qal Imperfect Strong forms across all 14 PGN cells |
-| [ch15-morphology-deck.txt](ch15-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (25 cards) |
-| [ch15-morphology-deck-fd.txt](ch15-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (25 cards) |
-| [ch15-vocab-deck.md](ch15-vocab-deck.md) | Markdown | Vocabulary deck — 16 words (6 verbs, 6 nouns, 4 other) with POS tags and frequency |
-| [ch15-vocab-deck.txt](ch15-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (16 cards) |
-| [ch15-vocab-deck-fd.txt](ch15-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (16 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: conjugation profile showing Imperfect (yiqtol) distribution |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Data: MACULA Hebrew WLC (~9,156 Qal Imperfect tokens OT-wide)*
 

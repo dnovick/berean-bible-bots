@@ -1,5 +1,10 @@
 # Chapter 8 — εἰμί Present Tense Deck
 
+**Download:** [Anki import (.txt)](ch8-eimi-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch8-eimi-deck-fd.txt)
+
+---
+
+
 *12 cards covering all six forms of εἰμί (to be) in the present indicative, singular and plural.*
 *Import `ch8-eimi-deck.txt` directly into Anki (File → Import).*
 

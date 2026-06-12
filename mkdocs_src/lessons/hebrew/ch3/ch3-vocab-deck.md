@@ -1,5 +1,10 @@
 # Chapter 3 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch3-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch3-vocab-deck-fd.txt)
+
+---
+
+
 *20 words from BBH Chapter 3. Frequency counts are OT-wide occurrences.*
 *Import `ch3-vocab-deck.txt` directly into Anki (File → Import).*
 

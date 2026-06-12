@@ -20,11 +20,11 @@ Students identify and parse Piel weak-root verbs across four thematic passages: 
 
 ## Sample Questions
 
-**Q1.** 1 וַיְצַו
+**Q1.** 1 וַיְצַו Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Declarative Denominative Simple Action NOT Piel
 > **A:** ✓ Yes — Piel | Wayyiqtol | 3ms | צוה | Denominative — "and he commanded." III-ה root צוה: Piel Wayyiqtol 3ms apocopates (final ה drops): וַיְצַו. The וַיְ prefix + patach under צ = Piel Wayyiqtol pattern. Full Impf. would be יְצַוֶּה (see verb 5).
 
-**Q2.** 2 צִוִּיתִיךָ
+**Q2.** 2 צִוִּיתִיךָ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Declarative Denominative Simple Action NOT Piel
 > **A:** ✓ Yes — Piel | Perfect | 1cs + 2ms obj. suffix | צוה | Denominative — "I commanded you." III-ה: Hireq under צ (R1) + dagesh forte in וּ (R2) + Pf. 1cs suffix תִּי + 2ms obj. suffix ךָ. The ו of the root contracts with the vowel pattern in the Perfect.
 
-**Q3.** 3 צִוִּיתִיךָ
+**Q3.** 3 צִוִּיתִיךָ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Declarative Denominative Simple Action NOT Piel
 > **A:** ✓ Yes — Piel | Perfect | 1cs + 2ms obj. suffix | צוה | Denominative — Same form as #2. God repeats the command formula in his verdict speech. Piel Pf. 1cs of צוה III-ה + 2ms suffix.

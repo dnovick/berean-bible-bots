@@ -1,12 +1,6 @@
 # BBG Chapter 2 — Learning Greek
 
----
-
-## Files
-
-### Exercises
-
-*No exercises for this introductory chapter.*
+> Establish effective habits for memorizing vocabulary, paradigms, and grammar rules, including the use of flashcards, spaced repetition, and reading aloud. Understand the structure of the BBG course—how chapters build on one another— and commit to the memorization workload required for genuine reading ability in the Greek New Testament.
 
 ---
 

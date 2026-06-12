@@ -18,10 +18,10 @@ A 14-root exercise in three parts. Students are given a root with its Qal meanin
 ## Sample Questions
 
 **Q1.** 1 מָכַר to sell וַיִּמָּכֵר (Wayyiqtol 3ms) Gen 37:36
-> **A:** he was sold into Egypt — Passive — The object of selling (Joseph) becomes the subject; Qal "to sell" → Niphal "to be sold"
+> **A:** he was sold into Egypt Passive — The object of selling (Joseph) becomes the subject; Qal "to sell" → Niphal "to be sold"
 
 **Q2.** 2 מָצָא to find יִמָּצֵא (Imperfect 3ms) Gen 44:9
-> **A:** is found (with the cup) — Passive — The thing found becomes the subject; Qal "to find" → Niphal "to be found"
+> **A:** is found (with the cup) Passive — The thing found becomes the subject; Qal "to find" → Niphal "to be found"
 
 **Q3.** 3 שָׁמַע to hear נִשְׁמַע (Perfect 3ms) Gen 45:16
-> **A:** was heard (in Pharaoh's house) — Passive — The report receives the hearing; Qal "to hear" → Niphal "to be heard / become audible"
+> **A:** was heard (in Pharaoh's house) Passive — The report receives the hearing; Qal "to hear" → Niphal "to be heard / become audible"

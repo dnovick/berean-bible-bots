@@ -1,30 +1,11 @@
 # BBG Chapter 33 — Imperative
 
----
+> Learn the present and aorist imperative paradigms (active and middle/passive) in second and third person. Understand the aspectual distinction: present imperative commands ongoing or repeated action; aorist imperative commands a simple act. Learn the negative imperative forms (μή + present imperative = stop; μή + aorist subjunctive = don't start) and the handful of irregular imperative forms that must be memorized (ἐλθέ, εἰπέ, etc.).
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch33-imperative-parsing/](exercises/ch33-imperative-parsing/index.md) | 20-item drill: parse imperatives, identify tense/voice/aspect implications, translate |
-| [exercises/ch33-prohibition-drill/](exercises/ch33-prohibition-drill/index.md) | Prohibition Pattern Drill — 20 items: classify STOP (μή + pres. imper.) vs. DONT (μή + aor. subj.) |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch33-vocab-deck.md](ch33-vocab-deck.md) | Human-readable card list — 3 vocabulary words |
-| [ch33-vocab-deck.txt](ch33-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch33-vocab-deck-fd.txt](ch33-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Mood Usage](../../../notebooks/nt/syntax/mood_usage/) | Imperative distribution, present vs. aorist aspect, tense × person breakdown, genre comparison |
-| [Concordance](../../../notebooks/both/lexicon/concordance/) | Find all imperatives of any NT verb |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

@@ -1,5 +1,10 @@
 # Chapter 2 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch2-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch2-vocab-deck-fd.txt)
+
+---
+
+
 *21 words from BBA Chapter 2 (Vowels).*
 *Import `ch2-vocab-deck.txt` directly into Anki (File → Import).*
 

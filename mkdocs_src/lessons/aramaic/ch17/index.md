@@ -1,35 +1,14 @@
 # BBA Chapter 17 — Peal Participle
 
+> Learn the Peal active and passive participle forms in all four gender-number combinations (ms, fs, mp, fp), noting their use as predicates of ongoing action and as attributive or substantival modifiers. In Biblical Aramaic the participle is especially common in narrative as a periphrastic construction with the copula (היה + participle) to express continuous action. This completes the Peal stem survey before moving to the derived stems.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 17: Peal Participle*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch17-vocab-deck.md](ch17-vocab-deck.md) | Reference list with glosses |
-| [ch17-vocab-deck.txt](ch17-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch17-vocab-deck-fd.txt](ch17-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch17-peal-participle-drill/](exercises/ch17-peal-participle-drill/index.md) | 20-item Peal participle identification and translation drill — active/passive, root, G/N, translation |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Participle distribution; active vs. passive participle counts |
 
 ---
 

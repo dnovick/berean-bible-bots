@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch30-perfect-participle-genabs/](exercises/ch30-perfect-participle-genabs/README.md) | 15-item drill: parse perfect participles and identify/translate genitive absolute constructions |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch30-vocab-deck.md](ch30-vocab-deck.md) | Human-readable card list — 2 vocabulary words |
-| [ch30-vocab-deck.txt](ch30-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch30-vocab-deck-fd.txt](ch30-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Perfect participle count and top lemmas; genitive absolute distribution |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Perfect participle and genitive absolute distribution by genre |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~520 perfect participle tokens NT-wide; ~480 genitive absolute constructions NT-wide)*
 

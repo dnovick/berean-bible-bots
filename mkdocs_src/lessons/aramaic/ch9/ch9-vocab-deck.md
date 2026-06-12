@@ -1,5 +1,10 @@
 # Chapter 9 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch9-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch9-vocab-deck-fd.txt)
+
+---
+
+
 *18 words from BBA Chapter 9 (Pronouns): personal, demonstrative, interrogative, and idiomatic constructions.*
 *Import `ch9-vocab-deck.txt` directly into Anki (File → Import).*
 

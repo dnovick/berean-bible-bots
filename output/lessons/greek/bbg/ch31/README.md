@@ -2,33 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch31-subjunctive-parsing/](exercises/ch31-subjunctive-parsing/README.md) | 20-item drill: parse subjunctive forms, identify use (hortatory/purpose/conditional), translate |
-| [exercises/ch31-subjunctive-use-sort/](exercises/ch31-subjunctive-use-sort/README.md) | Subjunctive Use Classification Drill — 20 clauses: classify HO/PU/CO/IN/DE/FS, parse, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch31-vocab-deck.md](ch31-vocab-deck.md) | Human-readable card list — 2 vocabulary words |
-| [ch31-vocab-deck.txt](ch31-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch31-vocab-deck-fd.txt](ch31-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Mood Usage](../../../notebooks/nt/syntax/mood_usage/) | Subjunctive distribution, construction types (purpose/conditional/hortatory), genre comparison |
-| [Concordance](../../../notebooks/both/lexicon/concordance/) | Find all subjunctive forms of any NT verb |
-| [Discourse Particles](../../../notebooks/nt/discourse/discourse_particles/) | ἵνα + subjunctive function classification (purpose/content/result); ὅτι function analysis |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~1,850 subjunctive tokens NT-wide)*
 

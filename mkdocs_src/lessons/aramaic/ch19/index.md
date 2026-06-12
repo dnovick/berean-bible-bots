@@ -1,28 +1,13 @@
 # BBA Chapter 19 — The Pael Stem
 
+> Learn the Pael stem paradigms (perfect, imperfect, imperative, infinitive, and participle) for the strong verb, and identify the diagnostic dagesh forte in the middle root consonant as the Pael's signature marker—directly parallel to the Hebrew Piel (BBH Ch30). Understand the Pael's intensive, resultative, and factitive functions, and contrast it with the Peal for the same root where both occur in Daniel and Ezra.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 19: The Pael Stem*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch19-pael-stem-drill/](exercises/ch19-pael-stem-drill/index.md) | 20-item Pael stem parsing drill |
-| [exercises/ch19-pael-qal-contrast/](exercises/ch19-pael-qal-contrast/index.md) | Peal vs. Pael Contrast Drill — 20 items: classify by dagesh forte in R2, parse, note semantic shift |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Pael stem profile; top roots and conjugation distribution |
 
 ---
 

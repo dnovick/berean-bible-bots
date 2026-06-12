@@ -1,32 +1,11 @@
 # BBA Chapter 5 — Nouns: Determined State
 
----
+> Learn the Aramaic determined (emphatic) state endings—the functional equivalent of the Hebrew definite article—which are suffixed directly to the noun rather than prefixed as a separate morpheme. Memorize the determined endings for masculine and feminine, singular and plural, and understand that in late Biblical Aramaic the determined state often loses its definite force and functions simply as the normal nominal form.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch5-vocab-deck.md](ch5-vocab-deck.md) | Reference list with glosses |
-| [ch5-vocab-deck.txt](ch5-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch5-vocab-deck-fd.txt](ch5-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch5-determined-state-drill/](exercises/ch5-determined-state-drill/index.md) | 20-item drill — convert nouns between absolute and determined state across all four gender/number patterns |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Determined state frequency vs. absolute/construct; Daniel vs. Ezra comparison; top nouns in each state |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

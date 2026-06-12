@@ -2,28 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch3-vocab-deck.md](ch3-vocab-deck.md) | Reference list with glosses |
-| [ch3-vocab-deck.txt](ch3-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch3-vocab-deck-fd.txt](ch3-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch3-syllabification-drill/](exercises/ch3-syllabification-drill/README.md) | 20-item syllable division and accent drill — open/closed syllables, stress rules, and vowel reduction patterns |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 3: Syllabification*
 

@@ -1,5 +1,10 @@
 # Chapter 3 — Greek Alphabet Deck
 
+**Download:** [Anki import (.txt)](ch3-alphabet-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch3-alphabet-deck-fd.txt)
+
+---
+
+
 *24 cards — one per letter of the Greek alphabet.*
 *Import `ch3-alphabet-deck.txt` directly into Anki (File → Import).*
 

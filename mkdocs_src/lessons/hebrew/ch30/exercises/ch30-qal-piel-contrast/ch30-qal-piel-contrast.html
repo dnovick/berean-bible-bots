@@ -14,7 +14,7 @@
   td { border: 1px solid #ccc; padding: .4em .6em; font-size: .88em; vertical-align: top; }
   tr:nth-child(even) td { background: #f7f7f7; }
   .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
-  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
   .answer-row { display: none; }
   button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
@@ -28,7 +28,7 @@
   ol.disc li { margin-bottom: .4em; }
   @media print {
     button, .controls { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
+    .parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
 </style>
@@ -72,12 +72,10 @@
     <td><span class="heb">שִׁבֵּר</span> (Perfect 3ms)</td>
     <td>Exo 32:19</td>
     <td><input class="parse-field" id="t1" placeholder="translation"></td>
-    <td><input class="parse-field" id="f1" placeholder="function"></td>
+    <td><select class="parse-field" id="f1"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r1">
-    <td colspan="8"><strong>Intensive</strong> · he smashed to pieces · Moses shattered the tablets completely; not merely "broke" but dashed them into fragments — an emphatic, total breaking</td>
-  </tr>
+  <tr class="answer-row" id="r1"><td><strong>Intensive</strong> · he smashed to pieces · Moses shattered the tablets completely; not merely "broke" but dashed them into fragments — an emphatic, total breaking</td><td></td></tr>
 
   <tr>
     <td>2</td>
@@ -86,12 +84,10 @@
     <td><span class="heb">יְכַסּוּ</span> (Wayyiqtol 3mp)</td>
     <td>Gen 9:23</td>
     <td><input class="parse-field" id="t2" placeholder="translation"></td>
-    <td><input class="parse-field" id="f2" placeholder="function"></td>
+    <td><select class="parse-field" id="f2"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r2">
-    <td colspan="8"><strong>Intensive</strong> · they covered (their father's nakedness) thoroughly · Shem and Japheth covered Noah completely; the Piel emphasizes the completeness of the covering</td>
-  </tr>
+  <tr class="answer-row" id="r2"><td><strong>Intensive</strong></td><td></td></tr>
 
   <tr>
     <td>3</td>
@@ -100,12 +96,10 @@
     <td><span class="heb">יְשַׁלַּח</span> (Wayyiqtol 3ms)</td>
     <td>Gen 8:7</td>
     <td><input class="parse-field" id="t3" placeholder="translation"></td>
-    <td><input class="parse-field" id="f3" placeholder="function"></td>
+    <td><select class="parse-field" id="f3"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r3">
-    <td colspan="8"><strong>Intensive</strong> · he sent out / released (the raven) · The Piel = let go completely, dispatch definitively; the bird is released from its confinement on the ark</td>
-  </tr>
+  <tr class="answer-row" id="r3"><td><strong>Intensive</strong></td><td></td></tr>
 
   <tr>
     <td>4</td>
@@ -114,12 +108,10 @@
     <td><span class="heb">יְגָרֶשׁ</span> (Wayyiqtol 3ms)</td>
     <td>Gen 3:24</td>
     <td><input class="parse-field" id="t4" placeholder="translation"></td>
-    <td><input class="parse-field" id="f4" placeholder="function"></td>
+    <td><select class="parse-field" id="f4"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r4">
-    <td colspan="8"><strong>Intensive</strong> · he drove out forcibly (the man) · The Piel = expel emphatically and completely; Adam is banished definitively from Eden</td>
-  </tr>
+  <tr class="answer-row" id="r4"><td><strong>Intensive</strong></td><td></td></tr>
 
   <tr>
     <td>5</td>
@@ -128,12 +120,10 @@
     <td><span class="heb">שַׁחֵת</span> (Inf. Construct)</td>
     <td>Gen 6:17</td>
     <td><input class="parse-field" id="t5" placeholder="translation"></td>
-    <td><input class="parse-field" id="f5" placeholder="function"></td>
+    <td><select class="parse-field" id="f5"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r5">
-    <td colspan="8"><strong>Intensive</strong> · to destroy utterly · Not mere ruin but total, cosmic annihilation; the flood is a thorough destruction of all flesh</td>
-  </tr>
+  <tr class="answer-row" id="r5"><td><strong>Intensive</strong></td><td></td></tr>
 
   <tr>
     <td>6</td>
@@ -142,12 +132,10 @@
     <td><span class="heb">יְנַגַּע</span> (Wayyiqtol 3ms)</td>
     <td>Gen 12:17</td>
     <td><input class="parse-field" id="t6" placeholder="translation"></td>
-    <td><input class="parse-field" id="f6" placeholder="function"></td>
+    <td><select class="parse-field" id="f6"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r6">
-    <td colspan="8"><strong>Intensive</strong> · he afflicted (Pharaoh and his house) with plagues · Not a single touch but repeated, sustained divine striking; the Piel intensifies both the force and duration</td>
-  </tr>
+  <tr class="answer-row" id="r6"><td><strong>Intensive</strong></td><td></td></tr>
 
   <tr>
     <td>7</td>
@@ -156,12 +144,10 @@
     <td><span class="heb">וְכִבְּסוּ</span> (Weqatal 3cp)</td>
     <td>Exo 19:10</td>
     <td><input class="parse-field" id="t7" placeholder="translation"></td>
-    <td><input class="parse-field" id="f7" placeholder="function"></td>
+    <td><select class="parse-field" id="f7"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r7">
-    <td colspan="8"><strong>Intensive</strong> · they shall wash (their garments) thoroughly · Ritual preparation requires complete, thorough laundering; the Piel is the standard form for washing garments in a cultic context</td>
-  </tr>
+  <tr class="answer-row" id="r7"><td><strong>Intensive</strong></td><td></td></tr>
 </table>
 
 <!-- PART B -->
@@ -184,12 +170,10 @@
     <td><span class="heb">יְקַדֵּשׁ</span> (Wayyiqtol 3ms)</td>
     <td>Gen 2:3</td>
     <td><input class="parse-field" id="t8" placeholder="translation"></td>
-    <td><input class="parse-field" id="f8" placeholder="function"></td>
+    <td><select class="parse-field" id="f8"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r8">
-    <td colspan="8"><strong>Factitive</strong> · he sanctified / set apart as holy (the Sabbath) · Qal = to be holy; Piel = cause the day to enter the state of holiness = sanctify</td>
-  </tr>
+  <tr class="answer-row" id="r8"><td><strong>Factitive</strong></td><td></td></tr>
 
   <tr>
     <td>9</td>
@@ -198,12 +182,10 @@
     <td><span class="heb">אֲגַדְּלָה</span> (Yiqtol 1cs)</td>
     <td>Gen 12:2</td>
     <td><input class="parse-field" id="t9" placeholder="translation"></td>
-    <td><input class="parse-field" id="f9" placeholder="function"></td>
+    <td><select class="parse-field" id="f9"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r9">
-    <td colspan="8"><strong>Factitive</strong> · I will make great / magnify (your name) · Qal = to be great; Piel = cause a name to enter the state of greatness = make great</td>
-  </tr>
+  <tr class="answer-row" id="r9"><td><strong>Factitive</strong></td><td></td></tr>
 
   <tr>
     <td>10</td>
@@ -212,12 +194,10 @@
     <td><span class="heb">חַיּוֹת</span> (Inf. Construct)</td>
     <td>Gen 7:3</td>
     <td><input class="parse-field" id="t10" placeholder="translation"></td>
-    <td><input class="parse-field" id="f10" placeholder="function"></td>
+    <td><select class="parse-field" id="f10"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r10">
-    <td colspan="8"><strong>Factitive</strong> · to preserve alive / keep alive · Qal = to be alive; Piel = cause animals to enter/remain in the state of living = preserve alive</td>
-  </tr>
+  <tr class="answer-row" id="r10"><td><strong>Factitive</strong></td><td></td></tr>
 
   <tr>
     <td>11</td>
@@ -226,12 +206,10 @@
     <td><span class="heb">יְחַלֵּל</span> (Wayyiqtol 3ms)</td>
     <td>Lev 21:12</td>
     <td><input class="parse-field" id="t11" placeholder="translation"></td>
-    <td><input class="parse-field" id="f11" placeholder="function"></td>
+    <td><select class="parse-field" id="f11"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r11">
-    <td colspan="8"><strong>Factitive</strong> · he would profane / desecrate (the sanctuary) · Qal = to be profane; Piel = cause the sanctuary to enter the state of profaneness = desecrate</td>
-  </tr>
+  <tr class="answer-row" id="r11"><td><strong>Factitive</strong></td><td></td></tr>
 
   <tr>
     <td>12</td>
@@ -240,12 +218,10 @@
     <td><span class="heb">יְכַל</span> (Wayyiqtol 3ms)</td>
     <td>Gen 2:2</td>
     <td><input class="parse-field" id="t12" placeholder="translation"></td>
-    <td><input class="parse-field" id="f12" placeholder="function"></td>
+    <td><select class="parse-field" id="f12"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r12">
-    <td colspan="8"><strong>Factitive</strong> · he finished / completed (all his work) · Qal = to be complete; Piel = cause the work to enter the state of completion; God brought his creative work to its finished state</td>
-  </tr>
+  <tr class="answer-row" id="r12"><td><strong>Factitive</strong></td><td></td></tr>
 </table>
 
 <!-- PART C -->
@@ -263,12 +239,10 @@
     <td><span class="heb">מְקַלֵּל</span> (Participle ms)</td>
     <td>Gen 12:3</td>
     <td><input class="parse-field" id="t13" placeholder="translation"></td>
-    <td><input class="parse-field" id="f13" placeholder="function"></td>
+    <td><select class="parse-field" id="f13"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r13">
-    <td colspan="8"><strong>Declarative</strong> · one who curses / treats as accursed · The subject does not <em>make</em> someone small (Factitive) — the subject <em>pronounces or treats</em> someone as accursed; it is a verbal or behavioral declaration of contempt</td>
-  </tr>
+  <tr class="answer-row" id="r13"><td><strong>Declarative</strong> · one who curses / treats as accursed · The subject does not <em>make</em> someone small (Factitive) — the subject <em>pronounces or treats</em> someone as accursed; it is a verbal or behavioral declaration of contempt</td><td></td></tr>
 
   <tr>
     <td>14</td>
@@ -277,12 +251,10 @@
     <td><span class="heb">לְכַפֵּר</span> (Inf. Construct)</td>
     <td>Lev 4:20</td>
     <td><input class="parse-field" id="t14" placeholder="translation"></td>
-    <td><input class="parse-field" id="f14" placeholder="function"></td>
+    <td><select class="parse-field" id="f14"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r14">
-    <td colspan="8"><strong>Denominative</strong> · to make atonement · Derived from noun <span class="heb">כֹּפֶר</span> ("ransom, covering, pitch") — the Piel performs the action of ransoming/covering = make atonement; knowing the noun explains the Levitical theology</td>
-  </tr>
+  <tr class="answer-row" id="r14"><td><strong>Denominative</strong> · to make atonement · Derived from noun <span class="heb">כֹּפֶר</span> ("ransom, covering, pitch") — the Piel performs the action of ransoming/covering = make atonement; knowing the noun explains the Levitical theology</td><td></td></tr>
 
   <tr>
     <td>15</td>
@@ -291,12 +263,10 @@
     <td><span class="heb">יְבָרֶךְ</span> (Wayyiqtol 3ms)</td>
     <td>Gen 1:22</td>
     <td><input class="parse-field" id="t15" placeholder="translation"></td>
-    <td><input class="parse-field" id="f15" placeholder="function"></td>
+    <td><select class="parse-field" id="f15"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r15">
-    <td colspan="8"><strong>Simple Action</strong> · he blessed (them) · Blessing is the Piel's own standard function; the Qal is not in active use; there is no Qal action to intensify — the Piel simply <em>is</em> the verb "to bless"</td>
-  </tr>
+  <tr class="answer-row" id="r15"><td><strong>Simple Action</strong> · he blessed (them) · Blessing is the Piel's own standard function; the Qal is not in active use; there is no Qal action to intensify — the Piel simply <em>is</em> the verb "to bless"</td><td></td></tr>
 
   <tr>
     <td>16</td>
@@ -305,12 +275,10 @@
     <td><span class="heb">יְדַבֵּר</span> (Wayyiqtol 3ms)</td>
     <td>Gen 8:15</td>
     <td><input class="parse-field" id="t16" placeholder="translation"></td>
-    <td><input class="parse-field" id="f16" placeholder="function"></td>
+    <td><select class="parse-field" id="f16"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r16">
-    <td colspan="8"><strong>Simple Action</strong> · God spoke (to Noah) · Speaking is the Piel's standard function; the Qal of דָּבַר is functionally absent; the Piel simply means "to speak"</td>
-  </tr>
+  <tr class="answer-row" id="r16"><td><strong>Simple Action</strong></td><td></td></tr>
 
   <tr>
     <td>17</td>
@@ -319,12 +287,10 @@
     <td><span class="heb">יְהַלֲלוּ</span> (Wayyiqtol 3mp)</td>
     <td>Gen 12:15</td>
     <td><input class="parse-field" id="t17" placeholder="translation"></td>
-    <td><input class="parse-field" id="f17" placeholder="function"></td>
+    <td><select class="parse-field" id="f17"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Denominative">Denominative</option><option value="Simple Action">Simple Action</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r17">
-    <td colspan="8"><strong>Simple Action</strong> · they praised (her) · Praising is the Piel's standard function; the Qal "shine/be bright" is semantically remote and rarely used; "Intense shining" does not explain "to praise"</td>
-  </tr>
+  <tr class="answer-row" id="r17"><td><strong>Simple Action</strong></td><td></td></tr>
 </table>
 
 <h2>Discussion Questions</h2>
@@ -357,7 +323,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
+  document.querySelectorAll('.parse-field').forEach(i => i.value = '');
 }
 </script>
 </body>

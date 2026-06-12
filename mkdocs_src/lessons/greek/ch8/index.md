@@ -1,32 +1,11 @@
 # BBG Chapter 8 — Prepositions and εἰμί
 
----
+> Learn the most frequent Greek prepositions and the cases they govern (with single, double, or triple case objects), and memorize the present indicative paradigm of εἰμί (I am), which is irregular and highly frequent. Understand that prepositions refine the meaning of the cases they govern and that εἰμί introduces predicate nominative and predicate adjective constructions essential for NT theology.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch8-preposition-parsing/](exercises/ch8-preposition-parsing/index.md) | 20-item drill — identify preposition, case governed, and prepositional phrase translation |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch8-vocab-deck.md](ch8-vocab-deck.md) | Human-readable card list — 20 vocabulary words |
-| [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch8-eimi-deck.md](ch8-eimi-deck.md) | Human-readable card list — 12 cards: all present indicative forms of εἰμί (recognize + produce) |
-| [ch8-eimi-deck.txt](ch8-eimi-deck.txt) | Anki import file (File → Import) |
-| [ch8-eimi-deck-fd.txt](ch8-eimi-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Prepositions](../../../notebooks/nt/syntax/prepositions/) | Frequency, case binding, NT vs LXX comparison for all major prepositions |
-| [Discourse Particles](../../../notebooks/nt/discourse/discourse_particles/) | γάρ, οὖν, ἀλλά distribution — contrasting with prepositions in sentence structure |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

@@ -1,5 +1,10 @@
 # Chapter 24 — Niphal Morphology Deck
 
+**Download:** [Anki import (.txt)](ch24-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch24-morphology-deck-fd.txt)
+
+---
+
+
 *28 cards covering all 8 conjugation forms across key Niphal roots.*
 *Import `ch24-morphology-deck.txt` directly into Anki (File → Import).*
 

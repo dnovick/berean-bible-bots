@@ -1,29 +1,11 @@
 # BBG Chapter 16 — Present Active Indicative
 
----
+> Memorize the full present active indicative paradigm (1s–3p) with its connecting vowels and primary active endings. Learn the aspect of the present tense-form (imperfective aspect: ongoing, progressive, or repeated action) and practice parsing person, number, tense-form, voice, and mood (PNTVM). First-declension feminine noun paradigms (ὥρα, γραφή) are introduced alongside the verbal material.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch16-present-active-parsing/](exercises/ch16-present-active-parsing/index.md) | 20-item drill: parse present active indicative forms (tense/voice/mood/person/number/root) and translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch16-vocab-deck.md](ch16-vocab-deck.md) | Human-readable card list — 12 vocabulary words |
-| [ch16-vocab-deck.txt](ch16-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch16-vocab-deck-fd.txt](ch16-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Tense/voice/mood profiles — present tense in context |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Greek present tense distribution across Gospels / Pauline / General epistles |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

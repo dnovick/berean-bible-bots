@@ -19,10 +19,10 @@ A 15-item triplet drill using five weak roots (גלה, שׁמר, צדק, הלל,
 ## Sample Questions
 
 **Q1.** 1 גָּלָה
-> **A:** Qal · Perfect 3ms · III-ה · R3 (ה) appears as Qamets + ה (ָ–ה) ending · "he went into exile / uncovered"
+> **A:** Qal Perfect 3ms III-ה R3 (ה) appears as Qamets + ה (ָ–ה) ending
 
 **Q2.** 2 גִּלָּה
-> **A:** Piel · Perfect 3ms · III-ה · Dagesh in R2 (לּ); R3 ends as Qamets + ה · "he revealed"
+> **A:** Piel Perfect 3ms III-ה Dagesh in R2 (לּ); R3 ends as Qamets + ה
 
 **Q3.** 3 הִתְגַּלָּה
-> **A:** Hithpael · Perfect 3ms · III-ה · הִתְ prefix + Dagesh in R2 + Qamets + ה at end (R3-ה preserved in Hithpael perfect) · "he revealed himself"
+> **A:** Hithpael Perfect 3ms III-ה הִתְ prefix + Dagesh in R2 + Qamets + ה at end (R3-ה preserved in Hithpael perfect)
