@@ -1193,6 +1193,9 @@ def main() -> None:
     if old_ar.exists():
         shutil.rmtree(old_ar)
 
+    # Ensure mkdocs_src/ exists (gitignored; absent on fresh CI checkout)
+    MKDOCS_SRC.mkdir(parents=True, exist_ok=True)
+
     # Write root index.md — Material for MkDocs uses the home.html override template
     (MKDOCS_SRC / "index.md").write_text(
         "---\ntemplate: home.html\n---\n", encoding="utf-8"
