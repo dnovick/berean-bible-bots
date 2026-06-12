@@ -1144,6 +1144,31 @@ def write_nav_yml(nav: list) -> None:
     print(f"Wrote {out}")
 
 
+def copy_static_assets() -> None:
+    """Copy hand-authored static files from docs/ into mkdocs_src/.
+
+    These files are committed under docs/ (not generated) and must be present
+    in mkdocs_src/ for MkDocs to include them in the built site.  Covered:
+      - assets/logo.png  (theme logo and favicon)
+      - stylesheets/extra.css  (custom colour scheme)
+      - javascripts/*.js  (sortable tables, nav toggle, home-link)
+      - about-the-logo.md  (hand-authored page)
+    """
+    static_dirs = ["assets", "stylesheets", "javascripts"]
+    for d in static_dirs:
+        src = REPO / "docs" / d
+        dst = MKDOCS_SRC / d
+        if src.is_dir():
+            if dst.exists():
+                shutil.rmtree(dst)
+            shutil.copytree(src, dst)
+
+    for fname in ["about-the-logo.md"]:
+        src = REPO / "docs" / fname
+        if src.exists():
+            shutil.copy2(src, MKDOCS_SRC / fname)
+
+
 def build_api_reference() -> None:
     ref_dir = MKDOCS_SRC / "reference"
     ref_dir.mkdir(parents=True, exist_ok=True)
@@ -1195,6 +1220,9 @@ def main() -> None:
 
     # Ensure mkdocs_src/ exists (gitignored; absent on fresh CI checkout)
     MKDOCS_SRC.mkdir(parents=True, exist_ok=True)
+
+    # Copy hand-authored static assets (logo, CSS, JS) from docs/ into mkdocs_src/
+    copy_static_assets()
 
     # Write root index.md — Material for MkDocs uses the home.html override template
     (MKDOCS_SRC / "index.md").write_text(
