@@ -1,0 +1,150 @@
+# BBH Chapter 2 — Vowels Flashcard Deck
+#
+# Edit this file to change card content, then run:
+#   python scripts/build_bbh_decks.py
+# to regenerate all output formats (.md, .txt, -fd.txt).
+#
+# Card format:
+#   front: Hebrew open syllable (consonant + vowel) shown on the card front
+#   back:  Full answer: transliteration — vowel name — English example
+#   tags:  List of Anki tags for filtering (added to the deck-level tag)
+#
+# Use 2 cards per vowel with different consonants to build reading fluency
+# across a variety of letter-vowel combinations.
+#
+# Transliteration key:
+#   ā = long a (Qamets)       a = short a (Patach)
+#   ē = long e (Tsere)        e = short e (Seghol)
+#   ī = long i (Hireq-Yod)   i = short i (Hireq)
+#   ō = long o (Holem)        o = short o (Qibbuts/Hateph)
+#   ū = long u (Shureq)       u = short u (Qibbuts)
+#   ə = reduced (Shewa)
+
+deck:
+  id: ch2-vowels
+  title: "BBH Chapter 2 — Hebrew Vowels"
+  anki_deck: "BBH Chapter 2 — Vowels"
+  description: "Open-syllable reading drill for all Hebrew vowels. 28 cards."
+  tags_prefix: bbh-ch2
+
+groups:
+
+  - name: "Long Vowels"
+    description: >
+      Long vowels are held for a full beat. They often include a vowel letter
+      (mater lectionis) — aleph, he, vav, or yod — that marks the vowel length.
+    tag: long-vowel
+    cards:
+      # Qamets (ָ) — long ā
+      - front: "בָּ"
+        back: "bā — Qamets (long ā) — like 'a' in 'father'"
+        tags: [qamets]
+      - front: "נָ"
+        back: "nā — Qamets (long ā) — like 'a' in 'father'"
+        tags: [qamets]
+
+      # Tsere (ֵ) — long ē
+      - front: "מֵ"
+        back: "mē — Tsere (long ē) — like 'a' in 'they'"
+        tags: [tsere]
+      - front: "לֵ"
+        back: "lē — Tsere (long ē) — like 'a' in 'they'"
+        tags: [tsere]
+
+      # Hireq-Yod (ִי) — long ī
+      - front: "נִי"
+        back: "nī — Hireq-Yod (long ī) — like 'ee' in 'machine'"
+        tags: [hireq-yod]
+      - front: "לִי"
+        back: "lī — Hireq-Yod (long ī) — like 'ee' in 'machine'"
+        tags: [hireq-yod]
+
+      # Holem (ֹ) — long ō
+      - front: "נֹ"
+        back: "nō — Holem (long ō) — like 'o' in 'go'"
+        tags: [holem]
+      - front: "מֹ"
+        back: "mō — Holem (long ō) — like 'o' in 'go'"
+        tags: [holem]
+
+      # Shureq (וּ) — long ū
+      - front: "לוּ"
+        back: "lū — Shureq (long ū) — like 'oo' in 'rule'"
+        tags: [shureq]
+      - front: "נוּ"
+        back: "nū — Shureq (long ū) — like 'oo' in 'rule'"
+        tags: [shureq]
+
+  - name: "Short Vowels"
+    description: >
+      Short vowels are held for a half beat. Qamets Hatuf looks identical to
+      Qamets but occurs only in a closed, unaccented syllable — context determines
+      which is which.
+    tag: short-vowel
+    cards:
+      # Patach (ַ) — short a
+      - front: "מַ"
+        back: "ma — Patach (short a) — like 'a' in 'bat'"
+        tags: [patach]
+      - front: "סַ"
+        back: "sa — Patach (short a) — like 'a' in 'bat'"
+        tags: [patach]
+
+      # Seghol (ֶ) — short e
+      - front: "זֶ"
+        back: "ze — Seghol (short e) — like 'e' in 'bed'"
+        tags: [seghol]
+      - front: "נֶ"
+        back: "ne — Seghol (short e) — like 'e' in 'bed'"
+        tags: [seghol]
+
+      # Hireq (ִ) — short i
+      - front: "זִ"
+        back: "zi — Hireq (short i) — like 'i' in 'bit'"
+        tags: [hireq]
+      - front: "לִ"
+        back: "li — Hireq (short i) — like 'i' in 'bit'"
+        tags: [hireq]
+
+      # Qamets Hatuf (ׇ) — short o (context-dependent)
+      - front: "כׇּל"
+        back: "kol — Qamets Hatuf (short o) — like 'o' in 'off' · same symbol as Qamets but in a closed, unaccented syllable"
+        tags: [qamets-hatuf]
+
+      # Qibbuts (ֻ) — short u
+      - front: "לֻ"
+        back: "lu — Qibbuts (short u) — like 'u' in 'put'"
+        tags: [qibbuts]
+      - front: "נֻ"
+        back: "nu — Qibbuts (short u) — like 'u' in 'put'"
+        tags: [qibbuts]
+
+  - name: "Reduced Vowels (Shewa and Hateph Vowels)"
+    description: >
+      Reduced vowels are extremely short — half the duration of a short vowel.
+      Vocal shewa (ְ) is a brief schwa sound. The three hateph vowels are used
+      under guttural letters (א ה ח ע) instead of a simple shewa.
+    tag: reduced-vowel
+    cards:
+      # Vocal Shewa (ְ) — brief schwa
+      - front: "לְ"
+        back: "lə — Vocal Shewa (reduced) — brief schwa, like 'a' in 'alone'"
+        tags: [shewa]
+      - front: "בְּ"
+        back: "bə — Vocal Shewa (reduced) — brief schwa, like 'a' in 'alone'"
+        tags: [shewa]
+
+      # Hateph-Patach (ֲ) — brief a, under gutturals
+      - front: "אֲ"
+        back: "ǎ — Hateph-Patach (reduced a) — very brief 'a'; used under guttural letters"
+        tags: [hateph-patach]
+
+      # Hateph-Seghol (ֱ) — brief e, under gutturals
+      - front: "אֱ"
+        back: "ě — Hateph-Seghol (reduced e) — very brief 'e'; used under guttural letters"
+        tags: [hateph-seghol]
+
+      # Hateph-Qamets (ֳ) — brief o, under gutturals
+      - front: "אֳ"
+        back: "ǒ — Hateph-Qamets (reduced o) — very brief 'o'; used under guttural letters"
+        tags: [hateph-qamets]
