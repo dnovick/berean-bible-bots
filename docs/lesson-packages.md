@@ -2,30 +2,15 @@
 
 Complete lesson packages for all chapters of *Basics of Biblical Hebrew* (Pratico & Van Pelt),
 *Basics of Biblical Greek* (Mounce, 4th ed.), and *Basics of Biblical Aramaic* (Van Pelt)
-are in [`output/lessons/`](../output/lessons/README.md).
-Each chapter contains a full lesson in `README.md`, paradigm reference files (where applicable),
+are in [`data/lessons/`](../data/lessons/).
+Each chapter directory contains a full lesson in `README.md`, paradigm reference files (where applicable),
 Anki and Flashcards Deluxe decks, and interactive exercises.
 
 | Textbook | Chapters | Index |
 |---|---|---|
-| Basics of Biblical Hebrew (BBH) | Ch 1–35 | [output/lessons/hebrew/bbh/](../output/lessons/hebrew/bbh/README.md) |
-| Basics of Biblical Greek (BBG) | Ch 1–36 | [output/lessons/greek/bbg/](../output/lessons/greek/bbg/README.md) |
-| Basics of Biblical Aramaic (BBA) | Ch 1–22 | [output/lessons/aramaic/bba/](../output/lessons/aramaic/bba/README.md) |
-
-## Student Downloads
-
-Pre-built zip packages for students who are not working directly in this repository.
-Each zip includes all lessons (rendered as HTML), interactive and printable exercises,
-flashcard decks, and relevant analysis charts. Everything opens in a web browser or
-PDF viewer — no installation required beyond unzipping.
-
-To regenerate: `python scripts/build_student_packs.py`
-
-| Package | Contents | Output |
-|---|---|---|
-| **BBH.zip** | BBH Ch 1–35 · lessons · exercises · flashcards · OT charts | `output/student-packs/BBH.zip` |
-| **BBG.zip** | BBG Ch 1–36 · lessons · exercises · flashcards · NT + cross-testament charts | `output/student-packs/BBG.zip` |
-| **BBA.zip** | BBA Ch 1–22 · lessons · exercises · flashcards | `output/student-packs/BBA.zip` |
+| Basics of Biblical Hebrew (BBH) | Ch 1–35 | [data/lessons/bbh/](../data/lessons/bbh/README.md) |
+| Basics of Biblical Greek (BBG) | Ch 1–36 | [data/lessons/bbg/](../data/lessons/bbg/README.md) |
+| Basics of Biblical Aramaic (BBA) | Ch 1–22 | [data/lessons/bba/](../data/lessons/bba/README.md) |
 
 ## Exercise Formats
 
