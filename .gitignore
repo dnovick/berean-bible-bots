@@ -25,8 +25,10 @@ output/exports/
 mkdocs_out/
 mkdocs_nav.yml
 
-# Generated course pages — built from data/courses/ by scripts/build_courses.py
-mkdocs_src/courses/
+# Generated MkDocs source tree — fully rebuilt from output/ and data/ by
+# scripts/build_mkdocs.py and scripts/build_courses.py before every site build.
+# Do not commit; CI regenerates it automatically.
+mkdocs_src/
 
 # Generated student zip packages — committed so students can download from GitHub
 # output/student-packs/
