@@ -1193,6 +1193,11 @@ def main() -> None:
     if old_ar.exists():
         shutil.rmtree(old_ar)
 
+    # Write root index.md — Material for MkDocs uses the home.html override template
+    (MKDOCS_SRC / "index.md").write_text(
+        "---\ntemplate: home.html\n---\n", encoding="utf-8"
+    )
+
     build_api_reference()
     nav = build_nav()
     write_nav_yml(nav)
