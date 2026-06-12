@@ -1,8 +1,0 @@
-#separator:tab
-#html:false
-#notetype:Basic
-#deck:BBG Chapter 33 — Vocabulary
-#tags column:3
-ἀπόλλυμι	verb — act: I destroy, kill; mid: I perish, die — 90×	bbg-ch33-vocab bbg-ch33-verb
-ἀπολύω	verb — I release — 66×	bbg-ch33-vocab bbg-ch33-verb
-εἴτε	conjunction — if, whether — 65×	bbg-ch33-vocab bbg-ch33-other

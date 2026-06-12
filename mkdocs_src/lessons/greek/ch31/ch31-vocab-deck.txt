@@ -1,7 +1,0 @@
-#separator:tab
-#html:false
-#notetype:Basic
-#deck:BBG Chapter 31 — Vocabulary
-#tags column:3
-λίθος, -ου, ὁ	noun 2nd decl. m — stone — 59×	bbg-ch31-vocab bbg-ch31-noun
-τοιοῦτος, -αύτη, -οῦτον	pronoun / adjective — such, of such a kind — 57×	bbg-ch31-vocab bbg-ch31-adj

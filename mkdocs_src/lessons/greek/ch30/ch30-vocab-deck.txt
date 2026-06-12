@@ -1,7 +1,0 @@
-#separator:tab
-#html:false
-#notetype:Basic
-#deck:BBG Chapter 30 — Vocabulary
-#tags column:3
-μηδέ	conjunction — but not, nor, not even — 56×	bbg-ch30-vocab bbg-ch30-other
-πρεσβύτερος, -α, -ον	adjective / noun — elder; older — 66×	bbg-ch30-vocab bbg-ch30-adj
