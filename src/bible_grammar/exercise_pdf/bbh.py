@@ -2887,111 +2887,88 @@ def build_ch33_exercise(out_dir: Optional[str] = None) -> str:
 class Ch1LetterRecognitionExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
-            'For each Hebrew letter shown, provide: (1) Letter Name, '
-            '(2) Transliteration, (3) Sound, (4) Any special category '
-            '(guttural / begadkephat / sofit form / normal).\n'
-            'Items 1–22 cover all standard letters in canonical order. '
-            'Items 23–27 cover the five sofit (final) forms. '
-            'Items 28–30 show three begadkephat letters with dagesh lene.'
+            'For each Hebrew letter shown, provide: (1) Letter Name, (2) Sound.\n'
+            'All 22 base consonants, 5 sofit (final) forms, and 6 begadkephat letters '
+            'with dagesh lene are included, presented in mixed order.'
         )
-        self.add_section_heading('Part A — Standard Letters (1–22)')
-        rows_a = [
-            ['1', 'א', '', '', '', ''],
-            ['2', 'ב', '', '', '', ''],
-            ['3', 'ג', '', '', '', ''],
-            ['4', 'ד', '', '', '', ''],
-            ['5', 'ה', '', '', '', ''],
-            ['6', 'ו', '', '', '', ''],
-            ['7', 'ז', '', '', '', ''],
-            ['8', 'ח', '', '', '', ''],
-            ['9', 'ט', '', '', '', ''],
-            ['10', 'י', '', '', '', ''],
-            ['11', 'כ', '', '', '', ''],
-            ['12', 'ל', '', '', '', ''],
-            ['13', 'מ', '', '', '', ''],
-            ['14', 'נ', '', '', '', ''],
-            ['15', 'ס', '', '', '', ''],
-            ['16', 'ע', '', '', '', ''],
-            ['17', 'פ', '', '', '', ''],
-            ['18', 'צ', '', '', '', ''],
-            ['19', 'ק', '', '', '', ''],
-            ['20', 'ר', '', '', '', ''],
-            ['21', 'שׁ', '', '', '', ''],
-            ['22', 'ת', '', '', '', ''],
+        # Mixed order: standard letters, sofit forms, and begadkephat hard forms interspersed
+        rows = [
+            ['1',  'ק',  '', ''],
+            ['2',  'ם',  '', ''],
+            ['3',  'בּ', '', ''],
+            ['4',  'ה',  '', ''],
+            ['5',  'ץ',  '', ''],
+            ['6',  'ל',  '', ''],
+            ['7',  'גּ', '', ''],
+            ['8',  'ע',  '', ''],
+            ['9',  'ך',  '', ''],
+            ['10', 'ז',  '', ''],
+            ['11', 'תּ', '', ''],
+            ['12', 'נ',  '', ''],
+            ['13', 'שׁ', '', ''],
+            ['14', 'דּ', '', ''],
+            ['15', 'ו',  '', ''],
+            ['16', 'ף',  '', ''],
+            ['17', 'כ',  '', ''],
+            ['18', 'י',  '', ''],
+            ['19', 'פּ', '', ''],
+            ['20', 'א',  '', ''],
+            ['21', 'ן',  '', ''],
+            ['22', 'מ',  '', ''],
+            ['23', 'ת',  '', ''],
+            ['24', 'כּ', '', ''],
+            ['25', 'ח',  '', ''],
+            ['26', 'ר',  '', ''],
+            ['27', 'ב',  '', ''],
+            ['28', 'ט',  '', ''],
+            ['29', 'ד',  '', ''],
+            ['30', 'פ',  '', ''],
+            ['31', 'ג',  '', ''],
+            ['32', 'ס',  '', ''],
+            ['33', 'צ',  '', ''],
         ]
-        ans_a = [
-            ['1', 'א', 'Aleph', 'ʾ', 'Silent/glottal stop', 'Guttural; quiescent'],
-            ['2', 'ב', 'Beth', 'b / v', 'b (hard) or v (soft)', 'Begadkephat'],
-            ['3', 'ג', 'Gimel', 'g / gh', 'g (hard) or gh (soft)', 'Begadkephat'],
-            ['4', 'ד', 'Dalet', 'd / dh', 'd (hard) or dh (soft)', 'Begadkephat'],
-            ['5', 'ה', 'He', 'h', 'h', 'Guttural; quiescent word-finally'],
-            ['6', 'ו', 'Waw', 'w', 'w (consonantal)', 'Also mater lectionis'],
-            ['7', 'ז', 'Zayin', 'z', 'z', 'Normal'],
-            ['8', 'ח', 'Cheth', 'ḥ', 'ch as in German Bach', 'Guttural'],
-            ['9', 'ט', 'Teth', 'ṭ', 'emphatic t', 'Normal (emphatic)'],
-            ['10', 'י', 'Yod', 'y', 'y (consonantal)', 'Also mater lectionis'],
-            ['11', 'כ', 'Kaph', 'k / kh', 'k (hard) or kh (soft)', 'Begadkephat; has sofit form'],
-            ['12', 'ל', 'Lamed', 'l', 'l', 'Normal'],
-            ['13', 'מ', 'Mem', 'm', 'm', 'Normal; has sofit form'],
-            ['14', 'נ', 'Nun', 'n', 'n', 'Normal; has sofit form'],
-            ['15', 'ס', 'Samech', 's', 's', 'Normal'],
-            ['16', 'ע', 'Ayin', 'ʿ', 'Silent/pharyngeal', 'Guttural'],
-            ['17', 'פ', 'Pe', 'p / f', 'p (hard) or f (soft)', 'Begadkephat; has sofit form'],
-            ['18', 'צ', 'Tsade', 'ṣ', 'emphatic ts', 'Normal (emphatic); has sofit form'],
-            ['19', 'ק', 'Qoph', 'q', 'q (uvular k)', 'Normal'],
-            ['20', 'ר', 'Resh', 'r', 'r (uvular)', 'Behaves like guttural in some contexts'],
-            ['21', 'שׁ', 'Shin', 'š', 'sh as in sheep', 'Normal (shin dot on right)'],
-            ['22', 'ת', 'Taw', 't / th', 't (hard) or th (soft)', 'Begadkephat'],
+        ans = [
+            ['1',  'ק',  'Qoph',          'q (uvular); no English equivalent'],
+            ['2',  'ם',  'Mem Sofit',      'm — final form of mem (word-finally only)'],
+            ['3',  'בּ', 'Beth (hard)',    'b as in "boy" — dagesh lene; hard form'],
+            ['4',  'ה',  'He',             'h — guttural; often quiescent word-finally'],
+            ['5',  'ץ',  'Tsade Sofit',    'emphatic ts — final form of tsade (word-finally only)'],
+            ['6',  'ל',  'Lamed',          'l'],
+            ['7',  'גּ', 'Gimel (hard)',   'g as in "go" — dagesh lene; hard form'],
+            ['8',  'ע',  'Ayin',           'silent / pharyngeal stop — guttural'],
+            ['9',  'ך',  'Kaph Sofit',     'k / kh — final form of kaph (word-finally only)'],
+            ['10', 'ז',  'Zayin',          'z'],
+            ['11', 'תּ', 'Tav (hard)',     't as in "top" — dagesh lene; hard form'],
+            ['12', 'נ',  'Nun',            'n — has final form nun sofit'],
+            ['13', 'שׁ', 'Shin',           'sh as in "shoe" — right dot = Shin'],
+            ['14', 'דּ', 'Dalet (hard)',   'd as in "day" — dagesh lene; hard form'],
+            ['15', 'ו',  'Waw',            'w (consonantal) — also vowel letter for o, u'],
+            ['16', 'ף',  'Pe Sofit',       'p / f — final form of pe (word-finally only)'],
+            ['17', 'כ',  'Kaph (soft)',    'kh as in "Bach" — soft form'],
+            ['18', 'י',  'Yod',            'y as in "yes" — also vowel letter for i'],
+            ['19', 'פּ', 'Pe (hard)',      'p as in "pan" — dagesh lene; hard form'],
+            ['20', 'א',  'Aleph',          'silent / glottal stop — guttural; quiescent'],
+            ['21', 'ן',  'Nun Sofit',      'n — final form of nun (word-finally only)'],
+            ['22', 'מ',  'Mem',            'm — has final form mem sofit'],
+            ['23', 'ת',  'Tav (soft)',     't / th — soft form'],
+            ['24', 'כּ', 'Kaph (hard)',   'k as in "king" — dagesh lene; hard form'],
+            ['25', 'ח',  'Chet',           'guttural fricative — kh as in German "Bach"'],
+            ['26', 'ר',  'Resh',           'r (uvular) — resists dagesh forte'],
+            ['27', 'ב',  'Beth (soft)',    'v as in "vine" — soft form'],
+            ['28', 'ט',  'Teth',           'emphatic t — no English equivalent'],
+            ['29', 'ד',  'Dalet (soft)',   'd / dh — soft form'],
+            ['30', 'פ',  'Pe (soft)',      'f as in "fan" — soft form'],
+            ['31', 'ג',  'Gimel (soft)',   'g / gh — soft form'],
+            ['32', 'ס',  'Samekh',         's'],
+            ['33', 'צ',  'Tsade',          'emphatic ts — has final form tsade sofit'],
         ]
         self.add_generic_table(
-            headers=['#', 'Letter', 'Name', 'Transliteration', 'Sound', 'Special Category'],
-            rows=rows_a,
-            col_ratios=[0.05, 0.08, 0.12, 0.12, 0.14, 0.49],
+            headers=['#', 'Letter', 'Name', 'Sound'],
+            rows=rows,
+            col_ratios=[0.05, 0.08, 0.22, 0.65],
             heb_cols=[1],
             show_answers=True,
-            answer_rows=ans_a,
-        )
-        self.add_section_heading('Part B — Final (Sofit) Forms (23–27)')
-        rows_b = [
-            ['23', 'ך', '', '', '', ''],
-            ['24', 'ם', '', '', '', ''],
-            ['25', 'ן', '', '', '', ''],
-            ['26', 'ף', '', '', '', ''],
-            ['27', 'ץ', '', '', '', ''],
-        ]
-        ans_b = [
-            ['23', 'ך', 'Kaph sofit', 'k / kh', 'k (hard) or kh (soft)', 'Sofit form of כ; occurs word-finally only'],
-            ['24', 'ם', 'Mem sofit', 'm', 'm', 'Sofit form of מ; occurs word-finally only'],
-            ['25', 'ן', 'Nun sofit', 'n', 'n', 'Sofit form of נ; occurs word-finally only'],
-            ['26', 'ף', 'Pe sofit', 'p / f', 'p (hard) or f (soft)', 'Sofit form of פ; occurs word-finally only'],
-            ['27', 'ץ', 'Tsade sofit', 'ṣ', 'emphatic ts', 'Sofit form of צ; occurs word-finally only'],
-        ]
-        self.add_generic_table(
-            headers=['#', 'Letter', 'Name', 'Transliteration', 'Sound', 'Special Category'],
-            rows=rows_b,
-            col_ratios=[0.05, 0.08, 0.12, 0.12, 0.14, 0.49],
-            heb_cols=[1],
-            show_answers=True,
-            answer_rows=ans_b,
-        )
-        self.add_section_heading('Part C — Begadkephat with Dagesh Lene (28–30)')
-        rows_c = [
-            ['28', 'בּ', '', '', '', ''],
-            ['29', 'כּ', '', '', '', ''],
-            ['30', 'פּ', '', '', '', ''],
-        ]
-        ans_c = [
-            ['28', 'בּ', 'Beth (dagesh lene)', 'b', 'b as in boy — hard stop', 'Begadkephat — hard pronunciation'],
-            ['29', 'כּ', 'Kaph (dagesh lene)', 'k', 'k as in king — hard stop', 'Begadkephat — hard pronunciation'],
-            ['30', 'פּ', 'Pe (dagesh lene)', 'p', 'p as in pan — hard stop', 'Begadkephat — hard pronunciation'],
-        ]
-        self.add_generic_table(
-            headers=['#', 'Letter', 'Name', 'Transliteration', 'Sound', 'Special Category'],
-            rows=rows_c,
-            col_ratios=[0.05, 0.08, 0.12, 0.12, 0.14, 0.49],
-            heb_cols=[1],
-            show_answers=True,
-            answer_rows=ans_c,
+            answer_rows=ans,
         )
 
 
