@@ -38,11 +38,11 @@ jobs:
             mkdocstrings-python==2.0.3 \
             mkdocs-jupyter==0.25.1
 
-      - name: Build course pages
-        run: python scripts/build_courses.py
-
       - name: Build MkDocs source tree
         run: python scripts/build_mkdocs.py
+
+      - name: Build course pages
+        run: python scripts/build_courses.py
 
       - name: Build MkDocs site
         run: mkdocs build
