@@ -1,0 +1,27 @@
+/* Berean Bible Bots — MkDocs Material custom theme */
+
+:root {
+  --md-primary-fg-color:        #1a2744;
+  --md-primary-fg-color--light: #2a3a60;
+  --md-primary-fg-color--dark:  #0f1830;
+  --md-primary-bg-color:        #ffffff;
+  --md-accent-fg-color:         #c9a94a;
+  --md-accent-fg-color--transparent: #c9a94a1a;
+}
+
+/* Keep Hebrew/Aramaic RTL text rendering cleanly */
+.md-content table td,
+.md-content table th {
+  unicode-bidi: embed;
+}
+
+/* Make iframes in exercise pages fill the viewport nicely */
+iframe {
+  display: block;
+  margin-top: 1rem;
+}
+
+/* Full-screen button styling */
+.md-button {
+  margin-bottom: 0.8rem;
+}
