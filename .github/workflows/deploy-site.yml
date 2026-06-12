@@ -15,7 +15,7 @@ on:
       - 'scripts/build_courses.py'
       - 'docs_hooks.py'
       - 'notebooks/**'
-      - 'binder/**'
+      - 'notebook-setup/**'
       - '.github/workflows/deploy-site.yml'
 
 jobs:
