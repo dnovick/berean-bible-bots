@@ -1146,7 +1146,7 @@ def write_nav_yml(nav: list) -> None:
 
 def build_api_reference() -> None:
     ref_dir = MKDOCS_SRC / "reference"
-    ref_dir.mkdir(exist_ok=True)
+    ref_dir.mkdir(parents=True, exist_ok=True)
 
     # Copy existing docs/features.md as the narrative API reference
     features = REPO / "docs" / "features.md"
