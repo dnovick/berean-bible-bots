@@ -119,7 +119,6 @@ Each chapter includes:
 - **Lesson page** — full notes with paradigm tables, key terms, and examples
 - **Interactive exercises** — fillable HTML with per-item answer reveal; AcroForm PDFs for printing
 - **Flashcard decks** — morphology and vocabulary decks in Anki (`.txt`) and Flashcards Deluxe (`-fd.txt`) formats
-- **Student zip packages** — pre-built downloads at `output/student-packs/`
 
 Active **course sessions** (BBH 2024.1 and BBH 2026.1) are tracked in `data/courses/` and
 published as session pages with instructor notes, session content, and linked resources.
