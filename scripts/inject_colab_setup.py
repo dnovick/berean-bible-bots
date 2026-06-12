@@ -35,11 +35,11 @@ if IN_COLAB:
     # Install Python dependencies
     subprocess.run(
         [sys.executable, "-m", "pip", "install", "-q", "-r",
-         "binder/requirements.txt"],
+         "notebook-setup/requirements.txt"],
         check=True,
     )
     # Download processed data files (~295 MB, one-time)
-    subprocess.run(["bash", "binder/postBuild"], check=True)
+    subprocess.run(["bash", "notebook-setup/postBuild"], check=True)
     print("Colab environment ready.")
 """
 
