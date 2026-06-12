@@ -7,7 +7,7 @@ hide:
 
 <style>
 .logo-page {
-  max-width: 860px;
+  max-width: 1100px;
   margin: 3rem auto;
   padding: 0 1.5rem;
   text-align: center;
