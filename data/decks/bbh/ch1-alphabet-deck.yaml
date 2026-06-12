@@ -13,7 +13,7 @@
 # All tags are prefixed with "bbh-ch1" automatically.
 
 deck:
-  id: ch1-alphabet
+  id: ch1-alphabet-deck
   title: "BBH Chapter 1 — Hebrew Alphabet"
   anki_deck: "BBH Chapter 1 — Alphabet"
   description: "Hebrew consonants: letter → name and pronunciation. 34 cards."

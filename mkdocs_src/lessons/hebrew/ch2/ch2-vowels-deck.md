@@ -1,7 +1,7 @@
 # BBH Chapter 2 — Hebrew Vowels
 
 *Open-syllable reading drill for all Hebrew vowels. 28 cards.*  
-*Import `ch2-vowels.txt` directly into Anki (File → Import).*
+*Import `ch2-vowels-deck.txt` directly into Anki (File → Import).*
 
 ---
 
@@ -9,7 +9,7 @@
 
 - **Front of card:** Hebrew character or syllable
 - **Back of card:** Name / transliteration / pronunciation
-- **Edit source:** `data/decks/bbh/ch2-vowels.yaml`
+- **Edit source:** `data/decks/bbh/ch2-vowels-deck.yaml`
 - **Rebuild:** `python scripts/build_bbh_decks.py`
 
 ---

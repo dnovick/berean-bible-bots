@@ -1,0 +1,34 @@
+א	Aleph — ʾ — silent (glottal stop); guttural letter	BBH Chapter 1 — Alphabet
+ב	Beth, soft form (Vet) — v — /v/ as in 'vine'	BBH Chapter 1 — Alphabet
+ג	Gimel, soft form (Ghimel) — g/gh — /g/ as in 'go' (soft rarely distinguished today)	BBH Chapter 1 — Alphabet
+ד	Dalet, soft form (Dhalet) — d/dh — /d/ as in 'day' (soft /dh/ as in 'the', rare today)	BBH Chapter 1 — Alphabet
+ה	He — h — /h/ as in 'hay'; often quiescent at end of syllable; guttural	BBH Chapter 1 — Alphabet
+ו	Vav — v/w — /v/ or /w/ (consonantal); also functions as a vowel letter	BBH Chapter 1 — Alphabet
+ז	Zayin — z — /z/ as in 'zoo'	BBH Chapter 1 — Alphabet
+ח	Chet — ḥ — guttural fricative /kh/ as in 'Bach'; guttural letter	BBH Chapter 1 — Alphabet
+ט	Tet — ṭ — emphatic /t/ (no English equivalent; like 't' but emphatic)	BBH Chapter 1 — Alphabet
+י	Yod — y — /y/ as in 'yes' (consonantal); also functions as a vowel letter	BBH Chapter 1 — Alphabet
+כ	Kaph, soft form (Khaf) — kh — /kh/ as in 'Bach'	BBH Chapter 1 — Alphabet
+ל	Lamed — l — /l/ as in 'lamp'	BBH Chapter 1 — Alphabet
+מ	Mem — m — /m/ as in 'man'	BBH Chapter 1 — Alphabet
+נ	Nun — n — /n/ as in 'now'	BBH Chapter 1 — Alphabet
+ס	Samekh — s — /s/ as in 'sun'	BBH Chapter 1 — Alphabet
+ע	Ayin — ʿ — silent pharyngeal stop; guttural; distinct from Aleph	BBH Chapter 1 — Alphabet
+פ	Pe, soft form (Fe) — f — /f/ as in 'fan'	BBH Chapter 1 — Alphabet
+צ	Tsade — ṣ — emphatic /ts/ as in 'ca-ts'	BBH Chapter 1 — Alphabet
+ק	Qof — q — uvular /q/ (deeper than /k/, no English equivalent)	BBH Chapter 1 — Alphabet
+ר	Resh — r — uvular /r/; resists Dagesh Forte; sometimes grouped with gutturals	BBH Chapter 1 — Alphabet
+שׁ	Shin — š — /sh/ as in 'shoe' (right dot = shin dot)	BBH Chapter 1 — Alphabet
+שׂ	Sin — ś — /s/ as in 'sun' (left dot = sin dot)	BBH Chapter 1 — Alphabet
+ת	Tav, soft form (Thav) — t/th — /t/ as in 'top' (soft /th/ as in 'the', rare today)	BBH Chapter 1 — Alphabet
+בּ	Beth, hard form (Bet) — b — /b/ as in 'boy' · dagesh lene present	BBH Chapter 1 — Alphabet
+גּ	Gimel, hard form — g — /g/ as in 'go' · dagesh lene present	BBH Chapter 1 — Alphabet
+דּ	Dalet, hard form — d — /d/ as in 'day' · dagesh lene present	BBH Chapter 1 — Alphabet
+כּ	Kaph, hard form (Kaf) — k — /k/ as in 'king' · dagesh lene present	BBH Chapter 1 — Alphabet
+פּ	Pe, hard form — p — /p/ as in 'pan' · dagesh lene present	BBH Chapter 1 — Alphabet
+תּ	Tav, hard form — t — /t/ as in 'top' · dagesh lene present	BBH Chapter 1 — Alphabet
+ך	Kaph Sofit — k/kh — final form of כ (soft) / כּ (hard)	BBH Chapter 1 — Alphabet
+ם	Mem Sofit — m — final form of מ (closed square shape)	BBH Chapter 1 — Alphabet
+ן	Nun Sofit — n — final form of נ (long descending stroke)	BBH Chapter 1 — Alphabet
+ף	Pe Sofit — f — final form of פ/פּ (open form with descending tail)	BBH Chapter 1 — Alphabet
+ץ	Tsade Sofit — ṣ — final form of צ (long descending tail)	BBH Chapter 1 — Alphabet

@@ -414,10 +414,20 @@ def build_chapter(
                     {ex_title: f"lessons/{lang}/{ch}/exercises/{ex_name}/README.md"}
                 )
 
+    # Collect deck .md nav entries
+    deck_entries = []
+    for deck_md in sorted(src_dir.glob("*-deck.md")):
+        deck_title = slugify(deck_md.stem)
+        deck_entries.append(
+            {deck_title: f"lessons/{lang}/{ch}/{deck_md.name}"}
+        )
+
     # Build chapter nav entry
     ch_nav: list = [{"Lesson": f"lessons/{lang}/{ch}/index.md"}]
     if exercise_entries:
         ch_nav.append({"Exercises": exercise_entries})
+    if deck_entries:
+        ch_nav.append({"Flashcard Decks": deck_entries})
 
     return [{f"Ch{ch_num} — {title}": ch_nav}]
 
