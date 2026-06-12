@@ -15,18 +15,24 @@
 
 ---
 
-A Python project for generating statistics, charts, and reports on the grammatical
-constructs of the biblical text — Hebrew and Aramaic Old Testament, Greek New Testament,
-Greek Septuagint (LXX), English/Latin translations, Syriac Peshitta NT, and Aramaic Targumim.
+A Python project for morphological analysis, statistical reporting, and language instruction
+across the full biblical corpus — Hebrew and Aramaic Old Testament, Greek New Testament,
+Greek Septuagint (LXX), Syriac Peshitta NT, Aramaic Targumim, and major English translations.
 
-The LXX (Septuagint) is the ancient Greek translation of the Hebrew scriptures, and plays
-a central role in this project: it bridges the Hebrew OT and Greek NT vocabulary, and is
-the primary text NT authors quote when citing the Old Testament. This project supports
-word-level alignment between the Hebrew OT and the LXX, per-book translation consistency
-analysis, and NT quotation alignment that determines whether a NT author follows the LXX
-wording or the Hebrew MT.
+The project runs on three tracks simultaneously:
 
-Built to answer questions like:
+- **Research tool** — 50+ analysis functions that answer cross-corpus morphological and semantic questions
+- **Teaching platform** — lesson packages for Biblical Hebrew (BBH), Greek (BBG), and Aramaic (BBA), with interactive exercises, Anki decks, and live course sessions
+- **MCP server** — a semantic search interface over a curated biblical-studies research library, usable directly inside Claude
+
+Everything publishes to **[bereanbiblebots.com](https://bereanbiblebots.com)** — a static MkDocs site
+with full lesson content, interactive exercises, course session pages, analysis reports, and
+Jupyter notebooks runnable on Google Colab.
+
+---
+
+## What You Can Ask
+
 - *How many Niphal perfect verbs are in each book of the OT?*
 - *What is the verb stem distribution across the Torah?*
 - *How does Paul use the aorist passive compared to the rest of the NT?*
@@ -35,25 +41,9 @@ Built to answer questions like:
 - *Does Hebrews quote the OT following the LXX or the Hebrew MT?*
 - *What Greek word does the LXX use to translate חֶסֶד (lovingkindness), and how does that word travel into the NT?*
 - *Which words cluster significantly near שָׁלוֹם (peace) in the OT?*
-- *How does Paul's use of Χριστός (Christ) compare to the Gospels? Where does the title concentrate?*
-- *What OT passages does Isaiah 53 echo in the NT — and through which books?*
+- *How does Paul's use of Χριστός (Christ) compare to the Gospels?*
 - *How do verb conjugation patterns differ between narrative prose and wisdom poetry?*
-- *How does Targum Jonathan render Isaiah 53 — does it apply the Servant to Israel or a messianic figure?*
-- *Where does Targum Onkelos use "Memra" (divine word) in place of direct divine action?*
-- *What verbal stems appear in the Syriac Peshitta NT, and how does the Peal compare to derived stems?*
-
----
-
-## Documentation
-
-| Document | Contents |
-|---|---|
-| [docs/data-sources.md](docs/data-sources.md) | Data submodules, morphological coverage, data notes |
-| [docs/getting-started.md](docs/getting-started.md) | Installation, prerequisites, first steps |
-| [docs/project-structure.md](docs/project-structure.md) | Directory tree and module descriptions |
-| [docs/features.md](docs/features.md) | Full API reference — all 50+ analysis features with code examples |
-| [docs/lesson-packages.md](docs/lesson-packages.md) | BBH / BBG / BBA lesson packages, exercise formats, PDF generation |
-| [notebooks/README.md](notebooks/README.md) | Jupyter notebook index by corpus and topic |
+- *How does Targum Jonathan render Isaiah 53?*
 
 ---
 
@@ -77,47 +67,143 @@ python scripts/build_db.py
 # 4. Download Targum data from Sefaria (one-time, ~14,000 verses)
 python scripts/fetch_targum_data.py
 
-# 5. Open any notebook in notebooks/ in VS Code and select the "Berean Bible Bots" kernel
+# 5. Open any notebook in notebooks/ — or run on Google Colab (no install needed)
 ```
 
-See [notebooks/SETUP.md](notebooks/SETUP.md) for notebook setup details and
-[docs/getting-started.md](docs/getting-started.md) for developer/API usage.
+**Google Colab (no local install):** every notebook at [bereanbiblebots.com](https://bereanbiblebots.com/notebooks)
+has an **Open in Colab** badge. The first cell clones the repo and downloads the processed data (~295 MB, one-time per session).
+
+See [docs/getting-started.md](docs/getting-started.md) for full developer setup and API usage.
+
+---
+
+## MCP Server
+
+The project includes a **research-library MCP server** that exposes a curated collection of
+biblical-studies reference works — grammars, commentaries, lexicons, and journal articles —
+as a semantic search tool usable directly inside Claude.
+
+**Setup:**
+
+```bash
+# 1. Index the research library (one-time, requires OpenAI API key)
+python scripts/index_research_library.py
+
+# 2. Add the server to your Claude Code config (.mcp.json)
+#    See .mcp.json in the repo root for the configuration template
+```
+
+**Tools exposed:**
+
+| Tool | Description |
+|---|---|
+| `search_literature(query, top_k=5)` | Semantic search over indexed grammars, commentaries, and journal articles — returns ranked excerpts with citation metadata |
+| `get_indexed_sources()` | Lists all works in the index with title, author, year, tags, and chunk count |
+
+The server uses ChromaDB with OpenAI embeddings. Once indexed, it can be queried from within any Claude conversation to pull primary-source support for exegetical or grammatical questions.
+
+---
+
+## Lesson Packages
+
+Structured lessons for three biblical language courses, all published at
+[bereanbiblebots.com](https://bereanbiblebots.com):
+
+| Course | Chapters | Textbook |
+|---|---|---|
+| **BBH** — Biblical Hebrew | Ch1–35 (alphabet → Hithpael weak) | *Basics of Biblical Hebrew*, Pratico & Van Pelt |
+| **BBG** — Biblical Greek | Ch1–36 (alphabet → μι-verbs) | *Basics of Biblical Greek*, Mounce (4th ed.) |
+| **BBA** — Biblical Aramaic | Ch1–22 (alphabet → Hophal stem) | *Basics of Biblical Aramaic*, Van Pelt |
+
+Each chapter includes:
+- **Lesson page** — full notes with paradigm tables, key terms, and examples
+- **Interactive exercises** — fillable HTML with per-item answer reveal; AcroForm PDFs for printing
+- **Flashcard decks** — morphology and vocabulary decks in Anki (`.txt`) and Flashcards Deluxe (`-fd.txt`) formats
+- **Student zip packages** — pre-built downloads at `output/student-packs/`
+
+Active **course sessions** (BBH 2024.1 and BBH 2026.1) are tracked in `data/courses/` and
+published as session pages with instructor notes, session content, and linked resources.
+
+See [docs/lesson-packages.md](docs/lesson-packages.md) for exercise formats and PDF generation details.
 
 ---
 
 ## Feature Summary
 
-- **Query API** — filtered morphological access to Hebrew OT, Greek NT, LXX, KJV, and Vulgate
-- **Word Study & Semantic Profile** — lexicon, frequency, morphology, LXX equivalents, collocations
-- **Cross-Testament Trajectory** — OT → LXX → NT word journey with continuity scoring
-- **Syntactic Role Search** — "who does what to whom" via MACULA subjref links (OT + NT)
-- **NT Quotations & Word Alignment** — LXX vs. MT source tracking for NT citations
-- **Intertextuality Network** — OT verse → NT citation bipartite graph
-- **Hebrew Poetry Analysis** — cola splitting, parallelism, chiasm, acrostic, meter
-- **Hebrew Verbal Syntax** — wayyiqtol chains, conditionals, relatives, aspect comparison, discourse particles
-- **LXX as a Queryable Corpus** — full Septuagint with morphology, frequency, and concordance
-- **Divine Names & Christological Titles** — OT/NT frequency with speaker filter
-- **Louw-Nida Domain Search** — semantic domain queries across the Greek NT
-- **Genre Comparison** — morphological patterns by literary genre (OT + NT)
-- **Theological Term Reports** — 14 pre-built cross-testament trajectory studies
-- **Derived Stem Morphology** — Niphal, Piel, Pual, Hophal, Hithpael (plus Hiphil) with full analysis suite
-- **OT Noun & Number Morphology** — state/gender/number profiles; gender-polarity rule for cardinals
-- **NT Noun & Participle Analysis** — case/gender profiles; tense × voice; genitive absolutes; perfect participles
-- **NT Mood Usage** — subjunctive constructions, infinitive types, present vs. aorist imperatives
-- **NT Discourse Particles** — καί/δέ/ὅτι/ἵνα/γάρ/οὖν/ἀλλά classification; ἵνα and ὅτι function profiles
-- **Greek Demonstratives** — οὗτος vs. ἐκεῖνος; near/far comparison by genre
-- **NT Coreference & Anaphora** — pronoun referent chains via MACULA xml_id (~14,471 tokens)
-- **OT Participant Tracking** — 19 major figures tracked by subject/object/chapter presence
-- **OT Predicate-Argument Structure** — PropBank A0/A1 semantic roles (~68k verb tokens)
-- **OT Discourse Structure** — narrative peak scoring, episode boundaries (Longacre model)
-- **Speech Act Classification** — Searle taxonomy: assertive/directive/commissive/expressive/declarative
-- **Information Structure** — parataxis/hypotaxis ratios, fronted elements, particle density (OT + NT)
-- **Stylometrics & Register** — TTR/MSTTR, wayyiqtol density, participle ratios, authorship fingerprinting
-- **Formulaic Language** — prophetic formulas, doxological phrases, n-gram detection, blessing/curse patterns
-- **Biblical Aramaic Verb Morphology** — Peal/Haphel/Pael stems, Daniel vs. Ezra comparison
-- **Biblical Aramaic Nominal System** — determined state dominance, pronouns, prepositions
-- **Peshitta NT Morphology** — 109,640 Syriac words with sp, gn, nu, ps, state, verbal stem, tense/aspect, Sedra root/lemma
-- **Targumim** — Onkelos (Torah), Targum Jonathan (Prophets), Targum to Psalms; 14,339 verses searchable by keyword
-- **Lesson Packages** — BBH Ch1–35, BBG Ch1–36, BBA Ch1–22 with exercises and Anki decks; pre-built student zip packages available in `output/student-packs/` (see [docs/lesson-packages.md](docs/lesson-packages.md))
+### Cross-Corpus Query API
+- Filtered morphological access to Hebrew OT, Greek NT, LXX, KJV, and Vulgate
+- Word study and semantic profile — lexicon, frequency, morphology, collocations
+- Cross-testament trajectory — OT → LXX → NT word journey with continuity scoring
+- NT quotations and word alignment — LXX vs. MT source tracking for every NT citation
+
+### Hebrew OT Analysis
+- **Verbal syntax** — wayyiqtol chains, conditionals, relatives, aspect comparison, discourse particles
+- **Poetry analysis** — cola splitting, parallelism, chiasm, acrostic detection, meter
+- **Noun and number morphology** — state/gender/number profiles; gender-polarity rule for cardinals
+- **Predicate-argument structure** — PropBank A0/A1 semantic roles (~68k verb tokens)
+- **Participant tracking** — 19 major figures tracked by subject/object/chapter
+- **Discourse structure** — narrative peak scoring, episode boundaries (Longacre model)
+- **Derived stem morphology** — Niphal, Piel, Pual, Hophal, Hithpael, Hiphil with full analysis suite
+
+### LXX (Septuagint)
+- Full queryable corpus (~480k words) with morphology, frequency, and concordance
+- Per-book translation consistency analysis for Hebrew lemmas
+- Word-level alignment between Hebrew OT and LXX
+
+### Greek NT Analysis
+- **Mood usage** — subjunctive constructions, infinitive types, present vs. aorist imperatives
+- **Participle analysis** — tense × voice profiles; genitive absolutes; perfect participles
+- **Discourse particles** — καί/δέ/ὅτι/ἵνα/γάρ/οὖν/ἀλλά classification and function profiles
+- **Demonstratives** — οὗτος vs. ἐκεῖνος; near/far comparison by genre
+- **Coreference and anaphora** — pronoun referent chains via MACULA (~14,471 tokens)
+- **Syntactic role search** — subject/object/verb relations via MACULA semantic links
+- **Louw-Nida domain search** — semantic domain queries across the Greek NT
+
+### Aramaic, Peshitta, and Targumim
+- **Biblical Aramaic** — Peal/Haphel/Pael verb stems; Daniel vs. Ezra morphological comparison
+- **Peshitta NT** — 109,640 Syriac words with stem, tense/aspect, verbal morphology, and Sedra lemma
+- **Targumim** — Onkelos, Targum Jonathan, and Targum to Psalms; 14,339 verses searchable by keyword
+
+### Cross-Corpus and Thematic
+- Divine names and christological titles — OT/NT frequency with speaker and genre filters
+- Intertextuality network — OT verse → NT citation bipartite graph
+- Genre comparison — morphological patterns across narrative, epistle, prophecy, poetry
+- Speech act classification (Searle taxonomy) — assertive/directive/commissive/expressive/declarative
+- Information structure — parataxis/hypotaxis ratios, fronted elements, particle density (OT + NT)
+- Stylometrics and register — TTR/MSTTR, wayyiqtol density, participle ratios, authorship fingerprinting
+- Formulaic language — prophetic formulas, n-gram detection, blessing/curse patterns
 
 For full API documentation and code examples, see [docs/features.md](docs/features.md).
+
+---
+
+## Data Sources
+
+| Source | Coverage |
+|---|---|
+| STEPBible TAHOT | ~284k Hebrew OT words with full morphology (stem, conjugation, PGN, state, Strong's) |
+| STEPBible TAGNT | ~142k Greek NT words (tense/voice/mood/case/PGN) — Byzantine / Textus Receptus |
+| STEPBible TALXX | ~480k LXX words with Strong's and Hebrew alignment |
+| MACULA Hebrew | 475k words — WLC, syntax trees, semantic roles, LXX word alignment |
+| MACULA Greek | 137k words — Nestle1904, syntax trees, semantic roles, referent links |
+| Peshitta NT (ETCBC) | 109,640 Syriac words with full morphology |
+| Targumim | Onkelos (Torah), Targum Jonathan (Prophets), Targum to Psalms — 14,339 verses |
+| KJV | 24,570 English verses |
+| Vulgate Clementine | 24,909 Latin verses |
+
+Data is included as git submodules: `stepbible-data/`, `macula-hebrew/`, `macula-greek/`,
+`scrollmapper-data/`, `syrnt/`. The processed database (`data/processed/`) is generated locally
+by `scripts/build_db.py` and is not committed to the repo.
+
+---
+
+## Documentation
+
+| Document | Contents |
+|---|---|
+| [docs/data-sources.md](docs/data-sources.md) | Data submodules, morphological coverage, data notes |
+| [docs/getting-started.md](docs/getting-started.md) | Installation, prerequisites, first steps |
+| [docs/project-structure.md](docs/project-structure.md) | Directory tree and module descriptions |
+| [docs/features.md](docs/features.md) | Full API reference — all 50+ analysis features with code examples |
+| [docs/lesson-packages.md](docs/lesson-packages.md) | BBH / BBG / BBA lesson packages, exercise formats, PDF generation |
+| [notebooks/README.md](notebooks/README.md) | Jupyter notebook index by corpus and topic |
