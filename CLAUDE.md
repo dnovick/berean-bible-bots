@@ -200,6 +200,49 @@ The `.html` exercise file is self-contained (no external dependencies):
 
 ---
 
+## Course and Session Management
+
+### Creating a new session
+
+Always use `scripts/new_session.py` to scaffold new sessions — never create `session.yml` files by hand:
+
+```bash
+python scripts/new_session.py <course-id> \
+    --date YYYY-MM-DD --focus "Session topic" \
+    [--session N] [--chapter N] [--instructor "Name"]
+```
+
+Examples:
+```bash
+# Next sequential session, no chapter:
+python scripts/new_session.py bbh-2026.1 \
+    --date 2026-09-17 --focus "Review — BBH Ch4–5"
+
+# Explicit session number with chapter and instructor:
+python scripts/new_session.py bbh-2026.1 \
+    --date 2026-10-01 --focus "Hebrew Nouns" --session 7 \
+    --chapter 4 --instructor "Preston Brown"
+```
+
+The script auto-numbers sessions from existing directories if `--session` is omitted. It refuses to overwrite an existing session.
+
+### Content validation
+
+Run `scripts/validate_courses.py` before committing any course content changes:
+
+```bash
+python scripts/validate_courses.py          # errors fail; warnings do not
+python scripts/validate_courses.py --strict # warnings also fail
+```
+
+**ERRORs** (break CI): missing `date`/`focus`, bad date format, chapter out of range, missing download files referenced in `files:`.
+
+**WARNs** (logged but do not break CI): section content files not yet written (planned content), exercise directory missing a standalone `.md`.
+
+CI runs the validator automatically on every push that touches `data/courses/**`, `data/lessons/**`, or `scripts/validate_courses.py`.
+
+---
+
 ## Git Workflow
 
 - **All changes go on a feature branch + PR.** Never push directly to main — branch protection is enabled.

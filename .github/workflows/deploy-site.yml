@@ -12,6 +12,7 @@ on:
       - 'data/lessons/**'
       - 'scripts/build_mkdocs.py'
       - 'scripts/build_courses.py'
+      - 'scripts/validate_courses.py'
       - 'docs_hooks.py'
       - 'notebooks/**'
       - 'notebook-setup/**'
@@ -28,14 +29,18 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install MkDocs dependencies
+      - name: Install dependencies
         run: |
           pip install \
+            pyyaml \
             mkdocs==1.6.1 \
             mkdocs-material==9.7.6 \
             mkdocstrings==1.0.4 \
             mkdocstrings-python==2.0.3 \
             mkdocs-jupyter==0.25.1
+
+      - name: Validate course and lesson content
+        run: python scripts/validate_courses.py
 
       - name: Build MkDocs source tree
         run: python scripts/build_mkdocs.py
