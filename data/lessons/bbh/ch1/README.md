@@ -109,7 +109,7 @@ The **guttural letters** are produced at the back of the throat and have special
 **Three rules governing gutturals** (preview — covered in detail with each weak verb chapter):
 
 1. **Cannot take Dagesh Forte** — When a dagesh forte would normally double a consonant, a guttural refuses it. This causes **compensatory lengthening** of the preceding vowel or **virtual doubling** (the dagesh is omitted without lengthening).
-2. **Prefer composite shevas** — Where a simple vocal shewa (ְ) would appear under a non-guttural, a guttural takes a **composite sheva** (hateph vowel): hateph patach (ֲ), hateph seghol (ֱ), or hateph qamets (ֳ). The most common is hateph patach.
+2. **Prefer composite shevas** — Where a simple vocal shewa (ְ) would appear under a non-guttural, a guttural takes a **composite sheva** (hateph vowel): hateph patach (אֲ), hateph seghol (אֱ), or hateph qamets (אֳ). The most common is hateph patach.
 3. **Prefer a-class vowels** — Gutturals tend to attract *patach* (a) vowels in their vicinity, especially before and after guttural consonants. This is why you often see *patach* where you might expect *seghol* or *tsere* near a guttural.
 
 > **Aleph vs. Ayin:** These two letters are the most commonly confused by beginners. Both are silent or near-silent in modern pronunciation. Visually: Aleph (א) has two diagonal strokes with a central diagonal; Ayin (ע) is a more rounded shape. They are completely different letters with different grammatical behaviors — confusing them will cause parsing errors.
