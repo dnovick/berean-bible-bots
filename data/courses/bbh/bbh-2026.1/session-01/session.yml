@@ -16,10 +16,16 @@
 #     file:    .md filename in this session directory (e.g. "background.md")
 #
 # instructor: name of the lead teacher for this session (optional, omit if blank)
+# recording:  URL to the session recording (optional, omit or leave blank if unavailable)
 # notes:      plain-text instructor notes (not rendered on the page when blank)
+#
+# files:    downloadable resources attached to this session (rendered as ## Downloads)
+#   - name: display label for the link (required)
+#     file: filename in this session directory (e.g. "handout.pdf")
 
 date: "2026-07-09"
 focus: "Introduction"
+instructor: "David Novick"
 
 agenda:
   - title: "Setting the Stage"

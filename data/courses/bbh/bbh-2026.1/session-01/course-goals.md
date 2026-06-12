@@ -1,14 +1,20 @@
 # Course Goals
 
-## Course Outline
+## What We'll Cover
+
 - Biblical Hebrew Alphabet - Consonants and Vowels
 - Biblical Hebrew Morphology
   - Biblical Hebrew Nouns
   - Biblical Hebrew Verbs
+- Basic Hebrew Syntax
+- Using the Hebrew Bible
 - Practicing Reading the Old Testament in Hebrew
 - Building Biblical Hebrew Vocabulary
+- Exegetical Fallacies?
+- Introduction to Biblical Figures of Speech?
 
-## Course Non-Goals
+## What We'll Not Cover
+
 - Mishnaic, Later Religious, and Modern Hebrew
 - Biblical Greek
 - Biblical Aramaic
@@ -20,11 +26,6 @@
 
 ## Instructor Goals
 
-### Preston Brown
-
-- TBD
-
-### David Novick
 - To be of some small help to you in your journey to please Christ as you, 
 with His help, "study" (gk. σπουδάζω – strive) to "...rightly divide the word of truth." – 2 Timothy 2:15.
 - To promote sound exegesis and hermeneutics of the Biblical text.

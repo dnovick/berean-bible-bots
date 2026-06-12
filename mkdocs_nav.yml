@@ -673,11 +673,21 @@ nav:
       - Overview: courses/bbh/bbh-2024.1/index.md
       - Sessions:
         - 'Session 130 — Hophal Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-130.md
+        - 'Session 131 — Hophal Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-131.md
+        - 'Session 132 — Piel Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-132.md
+        - 'Session 133 — Piel Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-133.md
+        - 'Session 134 — Pual Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-134.md
+        - 'Session 135 — Pual Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-135.md
+        - 'Session 136 — Hithpael Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-136.md
+        - 'Session 137 — Hithpael Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-137.md
     - bbh-2026.1:
       - Overview: courses/bbh/bbh-2026.1/index.md
       - Sessions:
         - 'Session 1 — Introduction': courses/bbh/bbh-2026.1/sessions/session-01.md
         - 'Session 2 — BBH 1 - Hebrew Alphabet': courses/bbh/bbh-2026.1/sessions/session-02.md
+        - 'Session 3 — BBH 2 - Hebrew Vowels': courses/bbh/bbh-2026.1/sessions/session-03.md
+        - 'Session 4 — BBH 3 - Syllabification and Pronunciation': courses/bbh/bbh-2026.1/sessions/session-04.md
+        - 'Session 5 — Review - BBH Ch1-3': courses/bbh/bbh-2026.1/sessions/session-05.md
 # </COURSES>
 - Study Helps:
   - Overview: study-helps/index.md
