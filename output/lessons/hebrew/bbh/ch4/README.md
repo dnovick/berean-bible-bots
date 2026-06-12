@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch4-noun-parsing/](exercises/ch4-noun-parsing/README.md) | 25-item noun parsing drill — gender, number, state, lexical form, and gloss |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch4-vocab-deck.md](ch4-vocab-deck.md) | Markdown | Vocabulary deck — 20 high-frequency nouns with construct forms, plurals, and OT frequency |
-| [ch4-vocab-deck.txt](ch4-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (20 cards) |
-| [ch4-vocab-deck-fd.txt](ch4-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (20 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Hebrew noun state (absolute/construct), gender, number, top lemmas, construct chains, article usage |
-| [Morphological Distribution of Nouns](../../../notebooks/both/lexicon/morph_distribution/) | Morphological distribution of Hebrew nouns across books (case, state, gender) |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Chapter 4: Hebrew Nouns*
 

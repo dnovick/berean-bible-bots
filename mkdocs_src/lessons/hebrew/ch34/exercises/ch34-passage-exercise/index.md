@@ -19,11 +19,11 @@ Students identify and parse Hithpael Strong verbs across passages from 1 Kings 8
 
 ## Sample Questions
 
-**Q1.** 1 מִתְפַּלֵּל
+**Q1.** 1 מִתְפַּלֵּל Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Reflexive Passive Declarative Denominative Estimative Factitive NOT Hithpael
 > **A:** ✓ Yes — Hithpael | Participle | ms | פלל | Denominative — "praying"; מִתְ- prefix marks Hithpael participle. Root פלל has no Qal stem in OT; Hithpael is its only active form, denominative from תְּפִלָּה (prayer).
 
-**Q2.** 2 יִתְפַּלְּלוּ
+**Q2.** 2 יִתְפַּלְּלוּ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Reflexive Passive Declarative Denominative Estimative Factitive NOT Hithpael
 > **A:** ✓ Yes — Hithpael | Imperfect | 3mp | פלל | Denominative — "they pray"; יִתְ- prefix + i-class vowel under R1 + dagesh forte in doubled ל (R2=R3 geminate: יִתְפַּלְּלוּ). The geminate doubling of ל ל is the hallmark of this root.
 
-**Q3.** 3 יִתְפַּלֵּל
+**Q3.** 3 יִתְפַּלֵּל Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Reflexive Passive Declarative Denominative Estimative Factitive NOT Hithpael
 > **A:** ✓ Yes — Hithpael | Imperfect | 3ms | פלל | Denominative — "he will pray"; יִתְ- prefix + patach under R1 (פַּ) + tsere + geminate ל ל; same root as #1–2 in imperfect 3ms.

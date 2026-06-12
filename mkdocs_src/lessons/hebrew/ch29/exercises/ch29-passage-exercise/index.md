@@ -18,11 +18,11 @@ Students identify and parse Hophal weak-root verbs across three passages: the Jo
 
 ## Sample Questions
 
-**Q1.** 1 הוּרַד
+**Q1.** 1 הוּרַד Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive NOT Hophal Qal NOT Hophal Hiphil
 > **A:** ✓ Yes — Hophal | Perfect | 3ms | ירד | Hophal passive causative — "was brought down." I-י root: Hiphil הוֹרִיד (to bring down) → Hophal הוּרַד. The הוּ prefix (u-class vowel) is the Hophal marker; I-י disappears (yod of the root collapsed).
 
-**Q2.** 2 הוּבָא
+**Q2.** 2 הוּבָא Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive NOT Hophal Qal NOT Hophal Hiphil
 > **A:** ✓ Yes — Hophal | Perfect | 3ms | בוא | Hophal passive causative — "was brought." I-י/ו root בוא: Hiphil הֵבִיא (to bring) → Hophal הוּבָא (was brought). The הוּ prefix + collapse of initial ב's preceding consonant; Qamets under ב = III-א lengthening.
 
-**Q3.** 3 הַשָּׁב
+**Q3.** 3 הַשָּׁב Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Passive NOT Hophal Qal NOT Hophal Hiphil
 > **A:** ✓ Yes — Hophal | Participle | ms | שוב | Hophal passive causative — "the (money) that was returned." Hophal Ptc. of biconsonantal root שוב: מוּשָׁב but here with definite article הַ. The שָּׁב (dagesh forte in שׁ) reflects the biconsonantal pattern; Hiphil הֵשִׁיב (to return/bring back) → Hophal = was returned.

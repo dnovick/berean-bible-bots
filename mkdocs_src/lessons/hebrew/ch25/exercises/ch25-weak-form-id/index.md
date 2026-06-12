@@ -23,10 +23,10 @@ A 52-item identification and parsing exercise covering all eight Niphal weak cla
 ## Sample Questions
 
 **Q1.** 1 נִמְצָא Gen 44:12 silent final א; identical in pointing to participle ms ▶
-> **A:** III-א · Perfect · 3ms · מָצָא — it was found; the silent א at the end is the only difference from a strong-root נִקְטַל
+> **A:** III-א Perfect 3ms מָצָא — it was found; the silent א at the end is the only difference from a strong-root נִקְטַל
 
 **Q2.** 2 יִמָּצֵא Gen 44:10 final tsere + silent א ▶
-> **A:** III-א · Imperfect · 3ms · מָצָא — "let it be found"; the tsere ends the syllable but the א following is silent
+> **A:** III-א Imperfect 3ms מָצָא — "let it be found"; the tsere ends the syllable but the א following is silent
 
 **Q3.** 3 וַיִּמָּצֵא Gen 44:12 wayyiqtol prefix + dagesh in R1 + final silent א ▶
-> **A:** III-א · Wayyiqtol · 3ms · מָצָא — "and it was found"; narrative climax of the cup-in-the-sack scene
+> **A:** III-א Wayyiqtol 3ms מָצָא — "and it was found"; narrative climax of the cup-in-the-sack scene

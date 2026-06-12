@@ -2,35 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch12-vocab-deck.md](ch12-vocab-deck.md) | Reference list with glosses |
-| [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch12-verb-intro-drill/](exercises/ch12-verb-intro-drill/README.md) | Stem identification and root recognition drill from Daniel and Ezra |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hebrew & Greek Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | Consolidated OT stem statistics including Aramaic verbal context |
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Aramaic verb stem profiles (Peal/Pael/Haphel), conjugation distribution, top roots |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 12: Introduction to Aramaic Verbs*
 

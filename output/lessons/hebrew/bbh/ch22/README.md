@@ -2,42 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-| File | Description |
-|---|---|
-| [participle-paradigms.md](participle-paradigms.md) | Full paradigm tables: Strong A/B, III-ה, Biconsonantal, I-י, I-נ, I-aleph active; passive participle (qatûl) full inflection; active vs. passive summary |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch22-parsing-drill/](exercises/ch22-parsing-drill/README.md) | 32-item drill: Part A (strong active ptc., all inflections), Part B (weak root active ptc.), Part C (passive ptc.), Part D (discrimination vs. Perfect, Imperfect, IC, IA) |
-| [exercises/ch22-passage-exercise/](exercises/ch22-passage-exercise/README.md) | 15-item passage exercise: Gen 3/4/14/18/37, Exo 3/6, Lev 2/25, Num 14/27, Deu 9 — all four participle functions across Torah |
-| [exercises/ch22-qal-participle-paradigm-drill/](exercises/ch22-qal-participle-paradigm-drill/README.md) | Paradigm drill — write all 8 Qal Participle forms of שמר (active and passive) from memory |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch22-morphology-deck.md](ch22-morphology-deck.md) | Markdown | 32-card morphology deck — Qal Participle (Active and Passive) with root class groupings |
-| [ch22-morphology-deck.txt](ch22-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (32 cards) |
-| [ch22-morphology-deck-fd.txt](ch22-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (32 cards) |
-| [ch22-vocab-deck.md](ch22-vocab-deck.md) | Markdown | Vocabulary deck — 13 words (9 verbs, 4 nouns) with POS tags and frequency |
-| [ch22-vocab-deck.txt](ch22-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (13 cards) |
-| [ch22-vocab-deck-fd.txt](ch22-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (13 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: active and passive participle distribution; dominant participial roots |
-| [Syntactic Roles OT](../../../notebooks/ot/speakers/syntactic_roles_ot/) | Syntactic roles: participles as subjects and predicates in OT prose |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Data: MACULA Hebrew WLC (~5,992 Qal Participle tokens OT-wide)*
 

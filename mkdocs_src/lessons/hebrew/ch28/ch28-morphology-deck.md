@@ -1,5 +1,10 @@
 # Chapter 28 — Hophal Strong Morphology Deck
 
+**Download:** [Anki import (.txt)](ch28-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch28-morphology-deck-fd.txt)
+
+---
+
+
 24 cards covering 3 roots across all Hophal conjugations, emphasizing the Hiphil/Hophal relationship.
 
 **Roots:**

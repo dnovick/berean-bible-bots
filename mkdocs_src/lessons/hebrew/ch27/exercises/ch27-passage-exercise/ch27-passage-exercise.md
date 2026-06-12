@@ -21,8 +21,8 @@ Parts A and B contain Hiphil weak verbs. For each:
 
 ## Part A — Kings, Genesis, Samuel, and Exodus (items 1–10)
 
-**1.** יַחֲטִיא אֶת־יִשְׂרָאֵל וַאֲשֶׁר **הֶחֱטִיא**
-*(1 Kgs 14:16)* — "because of his sins by which he caused Israel to sin"
+**1.** חַטֹּאות יָרָבְעָם אֲשֶׁר חָטָא וַאֲשֶׁר **הֶחֱטִיא** אֶת יִשְׂרָאֵל
+*(1 Kgs 14:16)* — "the sins of Jeroboam by which he sinned and caused Israel to sin"
 
 | Hiphil? | Conjugation | PGN | Root | Weak class | Causative gloss |
 |---|---|---|---|---|---|
@@ -39,8 +39,8 @@ Parts A and B contain Hiphil weak verbs. For each:
 
 ---
 
-**3.** יְהוָה אֲשֶׁר **הֶעֱלָה** אֶת־מֹשֶׁה וְאֶת־אַהֲרֹן
-*(1 Sam 12:6)* — "the LORD who brought up Moses and Aaron"
+**3.** יְהוָה אֲשֶׁר עָשָׂה אֶת מֹשֶׁה וְאֶת אַהֲרֹן וַאֲשֶׁר **הֶעֱלָה** אֶת אֲבֹתֵיכֶם
+*(1 Sam 12:6)* — "the LORD who appointed Moses and Aaron and who brought your ancestors up"
 
 | Hiphil? | Conjugation | PGN | Root | Weak class | Causative gloss |
 |---|---|---|---|---|---|
@@ -57,7 +57,7 @@ Parts A and B contain Hiphil weak verbs. For each:
 
 ---
 
-**5.** וַיִּבֶן נֹחַ מִזְבֵּחַ לַיהוָה … **וַיַּעַל** עֹלֹת עַל הַמִּזְבֵּחַ
+**5.** וַיִּבֶן נֹחַ מִזְבֵּחַ לַיהוָה … **וַיַּעַל** עֹלֹת בַּמִּזְבֵּחַ
 *(Gen 8:20)* — "And Noah … offered burnt offerings on the altar"
 
 | Hiphil? | Conjugation | PGN | Root | Weak class | Causative gloss |
@@ -75,7 +75,7 @@ Parts A and B contain Hiphil weak verbs. For each:
 
 ---
 
-**7.** בַּעֲבוּר זֹאת **הֶעֱמַדְתִּיךָ** לְהַרְאֹתְךָ אֶת־כֹּחִי
+**7.** בַּעֲבוּר זֹאת **הֶעֱמַדְתִּיךָ** בַּעֲבוּר הַרְאֹתְךָ אֶת־כֹּחִי
 *(Exo 9:16)* — "for this purpose I have raised you up, to show you my power"
 
 | Hiphil? | Conjugation | PGN | Root | Weak class | Causative gloss |
@@ -131,8 +131,8 @@ Parts A and B contain Hiphil weak verbs. For each:
 
 ---
 
-**13.** **הַשְׁמִיעוּ** זֹאת הַגִּידוּהָ עַד קְצֵה הָאָרֶץ
-*(Isa 48:20)* — "Declare this, announce it to the ends of the earth"
+**13.** הַגִּידוּ **הַשְׁמִיעוּ** זֹאת הוֹצִיאוּהָ עַד קְצֵה הָאָרֶץ
+*(Isa 48:20)* — "Declare this, proclaim it, send it out to the ends of the earth"
 
 | Hiphil? | Conjugation | PGN | Root | Weak class | Causative gloss |
 |---|---|---|---|---|---|
@@ -167,8 +167,8 @@ Parts A and B contain Hiphil weak verbs. For each:
 
 ---
 
-**17.** וְאַחַר כֵּן תָּבוֹא אֵלַי **לְהַעֲלוֹת** עֹלָה
-*(1 Sam 10:8)* — "after that you will come to me to offer up a burnt offering"
+**17.** וְאַחַר כֵּן תָּבוֹא אֵלַי **לְהַעֲלוֹת** עֹלוֹת
+*(1 Sam 10:8)* — "after that you will come to me to offer up burnt offerings"
 
 | Hiphil? | Conjugation | PGN | Root | Weak class | Causative gloss |
 |---|---|---|---|---|---|

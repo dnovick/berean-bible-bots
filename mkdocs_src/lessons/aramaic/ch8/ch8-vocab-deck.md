@@ -1,5 +1,10 @@
 # Chapter 8 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch8-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch8-vocab-deck-fd.txt)
+
+---
+
+
 *15 words from BBA Chapter 8 (Pronominal Suffixes): occupational titles and musical instruments.*
 *Import `ch8-vocab-deck.txt` directly into Anki (File → Import).*
 

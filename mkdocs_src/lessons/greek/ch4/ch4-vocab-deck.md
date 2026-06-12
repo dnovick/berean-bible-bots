@@ -1,5 +1,10 @@
 # Chapter 4 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch4-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch4-vocab-deck-fd.txt)
+
+---
+
+
 *20 words from BBG Chapter 4. Frequency counts are NT-wide occurrences.*
 *Import `ch4-vocab-deck.txt` directly into Anki (File → Import).*
 

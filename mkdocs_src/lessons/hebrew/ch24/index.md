@@ -1,41 +1,11 @@
 # BBH Chapter 24 — Niphal Strong Verbs (נִפְעַל)
 
----
+> Learn the Niphal stem in all finite and non-finite forms for the strong verb: perfect, imperfect, imperative, infinitives, and participle. Identify the diagnostic nun preformative (or assimilation with dagesh forte) in the perfect and infinitive construct, and the nun-plus-preformative pattern in the imperfect. Understand the Niphal's primary functions—passive of Qal, reflexive, and middle voice—and practice identifying them in exegetical context.
 
-## Files
-
-### Reference Files
-
-| File | Description |
+| Resource | Link |
 |---|---|
-| [niphal-paradigms.md](niphal-paradigms.md) | Full conjugation paradigms (Perfect through Participle) with PGN tables and key-marker notes |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch24-passage-exercise/](exercises/ch24-passage-exercise/index.md) | "Spot the Niphal" — Joseph narrative (Gen 37, 44–45, 47, 49); 14 verbs to parse |
-| [exercises/ch24-function-sort/](exercises/ch24-function-sort/index.md) | Semantic function sorting — classify 12 Niphal verbs by function type |
-| [exercises/ch24-qal-niphal-contrast/](exercises/ch24-qal-niphal-contrast/index.md) | Qal vs. Niphal contrast — spot the difference in form and meaning |
-| [exercises/ch24-niphal-paradigm-drill/](exercises/ch24-niphal-paradigm-drill/index.md) | Paradigm drill — write all 30 inflected forms of קטל (Niphal) from memory |
-| [exercises/ch24-stem-id-drill/](exercises/ch24-stem-id-drill/index.md) | Stem identification drill — Qal vs. Niphal strong roots; identify stem, conjugation, PGN, and root |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch24-morphology-deck.md](ch24-morphology-deck.md) | Markdown | 28-card morphology deck — Niphal forms across 4 roots and 8 conjugations |
-| [ch24-morphology-deck.txt](ch24-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (28 cards) |
-| [ch24-morphology-deck-fd.txt](ch24-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (28 cards) |
-| [ch24-vocab-deck.md](ch24-vocab-deck.md) | Markdown | Vocabulary deck — 14 verbs (Niphal and related stems) with POS tags and frequency |
-| [ch24-vocab-deck.txt](ch24-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (14 cards) |
-| [ch24-vocab-deck-fd.txt](ch24-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (14 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Niphal Stem](../../../notebooks/ot/verbs/niphal/) | Niphal stem: complete morphological profile, top roots, semantic categories (passive/reflexive/reciprocal) |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

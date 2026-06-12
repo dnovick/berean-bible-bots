@@ -15,8 +15,8 @@
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
-  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #aaa; background: transparent; font-size: 0.9em; padding: 1px 2px; font-family: inherit; }
-  input.parse-field:focus { outline: none; border-bottom: 2px solid #5b7dc8; }
+  .parse-field { width: 95%; border: none; border-bottom: 1px solid #aaa; background: transparent; font-size: 0.9em; padding: 1px 2px; font-family: inherit; }
+  .parse-field:focus { outline: none; border-bottom: 2px solid #5b7dc8; }
   .answer-row { display: none; background: #eaf5ea; }
   .answer-row td { border-top: none; color: #2a6b2a; font-size: 0.88em; }
   .answer-row.visible { display: table-row; }
@@ -35,7 +35,13 @@
   @media print {
     .controls, .reveal-btn { display: none !important; }
     .answer-row { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #999; }
+    .parse-field { border: none; border-bottom: 1px solid #999; }
+  }
+
+  .hiphil-select {
+    width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px;
+    padding: .25rem .4rem; font-family: Georgia, serif; font-size: .88rem;
+    background: #fafff8;
   }
 </style>
 </head>
@@ -63,16 +69,14 @@
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>וַיֻּגַּד</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a1">
-    <td colspan="8">✓ <strong>Hophal</strong> | Wayyiqtol | 3ms | נגד | Hiphil הִגִּיד = "to tell, declare, report" → Hophal = "it was reported." Qibbuts (ֻ) under the prefix consonant is an alternate Hophal vowel alongside Shureq. The Dagesh forte in the gimel (גּ) comes from the Hiphil doubling pattern.</td>
-  </tr>
+  <tr class="answer-row" id="a1"><td>✓ <strong>Hophal</strong> | Wayyiqtol | 3ms | נגד | Hiphil הִגִּיד = "to tell, declare, report" → Hophal = "it was reported." Qibbuts (ֻ) under the prefix consonant is an alternate Hophal vowel alongside Shureq. The Dagesh forte in the gimel (גּ) comes from the Hiphil doubling pattern.</td><td></td><td></td></tr>
 </table>
 
 <h2>Passage B — Exodus 5:14–16</h2>
@@ -85,16 +89,14 @@
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r2">
     <td>2</td><td>וַיֻּכּוּ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a2">
-    <td colspan="8">✓ <strong>Hophal</strong> | Wayyiqtol | 3mp | נכה | Hiphil הִכָּה = "to strike, beat, kill" → Hophal = "were struck/beaten." The root נכה is I-נ: the nun assimilates into the next consonant (here into כ, giving dagesh: יֻּכּוּ). Qibbuts under prefix = Hophal marker.</td>
-  </tr>
+  <tr class="answer-row" id="a2"><td>✓ <strong>Hophal</strong> | Wayyiqtol | 3mp | נכה | Hiphil הִכָּה = "to strike, beat, kill" → Hophal = "were struck/beaten." The root נכה is I-נ: the nun assimilates into the next consonant (here into כ, giving dagesh: יֻּכּוּ). Qibbuts under prefix = Hophal marker.</td><td></td><td></td></tr>
 </table>
 
 <div class="note-box"><strong>Parsing challenge — Passage B:</strong> Verb 3 (נִתָּן) is a Niphal Participle, not a Hophal. Both are passive forms. The נ prefix (vs. מ prefix) distinguishes Niphal from Hophal. Verb 4 (מֻכִּים) is the Hophal — the מֻ prefix + u-class vowel marks it.</div>
@@ -106,28 +108,24 @@
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r3">
     <td>3</td><td>נִתָּן</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a3">
-    <td colspan="8">✗ <strong>No — Niphal</strong> | Participle ms | ms | נתן | Niphal passive (not Hophal). The נִ prefix distinguishes it. נִתָּן = "is given" (Niphal of נתן "to give"); this is the Niphal passivizing the Qal, not the Hiphil causative. No u-class vowel under prefix — that confirms it is NOT Hophal.</td>
-  </tr>
+  <tr class="answer-row" id="a3"><td>✗ <strong>No</td><td>Niphal</strong> | Participle ms | ms | נתן | Niphal passive (not Hophal). The נִ prefix distinguishes it. נִתָּן = "is given" (Niphal of נתן "to give"); this is the Niphal passivizing the Qal, not the Hiphil causative. No u-class vowel under prefix — that confirms it is NOT Hophal.</td><td></td></tr>
   <tr id="r4">
     <td>4</td><td>מֻכִּים</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a4">
-    <td colspan="8">✓ <strong>Hophal</strong> | Participle | mp | נכה | Hiphil הִכָּה = "to strike, beat." מֻ prefix (Qibbuts) + כּ (dagesh from assimilation of נ) + י-stem. The Hophal Participle prefix מֻ/מוּ + u-class vowel is the key. This passive participle is used predicately: "your servants are [ones being] struck."</td>
-  </tr>
+  <tr class="answer-row" id="a4"><td>✓ <strong>Hophal</strong> | Participle | mp | נכה | Hiphil הִכָּה = "to strike, beat." מֻ prefix (Qibbuts) + כּ (dagesh from assimilation of נ) + י-stem. The Hophal Participle prefix מֻ/מוּ + u-class vowel is the key. This passive participle is used predicately: "your servants are [ones being] struck."</td><td></td><td></td></tr>
 </table>
 
 <h2>Passage C — Numbers 35:16–18, 30–31</h2>
@@ -142,16 +140,14 @@
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r5">
     <td>5</td><td>יוּמַת</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a5">
-    <td colspan="8">✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Hiphil הֵמִית = "to put to death, cause to die." יוּמַת: יוּ prefix (Shureq) + מַת (Patach under R2). This is the most common Hophal form in the OT (99×), used almost exclusively in capital punishment formulas. The preceding מוֹת is the Qal Inf. Absolute (not Hophal).</td>
-  </tr>
+  <tr class="answer-row" id="a5"><td>✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Hiphil הֵמִית = "to put to death, cause to die." יוּמַת: יוּ prefix (Shureq) + מַת (Patach under R2). This is the most common Hophal form in the OT (99×), used almost exclusively in capital punishment formulas. The preceding מוֹת is the Qal Inf. Absolute (not Hophal).</td><td></td><td></td></tr>
 </table>
 
 <div class="hebrew">וְאִם֩ בְּאֶ֨בֶן יָ֜ד אֲשֶׁר־<strong>יָמ֤וּת [6]</strong> בָּהּ֙ הִכָּ֔הוּ וַיָּמֹ֖ת מֽוֹת־<strong>יוּמַ֖ת [7]</strong> הָרֹצֵֽחַ׃ וְאִ֨ם בִּכְלִי֩ עֵ֨ץ יָ֜ד אֲשֶׁר־<strong>יָמ֤וּת [8]</strong> בָּהּ֙ הִכָּ֔הוּ וַיָּמֹ֖ת מֽוֹת־<strong>יוּמַ֖ת [9]</strong> הָרֹצֵֽחַ׃</div>
@@ -161,52 +157,44 @@
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>יָמוּת</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a6">
-    <td colspan="8">✗ <strong>No — Qal</strong> | Imperfect | 3ms | מות | Qal: "he dies / could die." יָמוּת = יָ prefix (Patach, Qal) + Shureq from biconsonantal root. Context: the relative clause "a stone by which someone <em>dies</em>" — this is the intransitive Qal, not causative. Critical contrast with יוּמַת (verbs 5, 7, 9, 11).</td>
-  </tr>
+  <tr class="answer-row" id="a6"><td>✗ <strong>No</td><td>Qal</strong> | Imperfect | 3ms | מות | Qal: "he dies / could die." יָמוּת = יָ prefix (Patach, Qal) + Shureq from biconsonantal root. Context: the relative clause "a stone by which someone <em>dies</em>" — this is the intransitive Qal, not causative. Critical contrast with יוּמַת (verbs 5, 7, 9, 11).</td><td></td></tr>
   <tr id="r7">
     <td>7</td><td>יוּמַת</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a7">
-    <td colspan="8">✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verb 5. יוּ prefix (Shureq) = Hophal marker.</td>
-  </tr>
+  <tr class="answer-row" id="a7"><td>✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verb 5. יוּ prefix (Shureq) = Hophal marker.</td><td></td><td></td></tr>
   <tr id="r8">
     <td>8</td><td>יָמוּת</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a8">
-    <td colspan="8">✗ <strong>No — Qal</strong> | Imperfect | 3ms | מות | Same as verb 6: Qal intransitive "to die." יָ prefix (Patach) = Qal.</td>
-  </tr>
+  <tr class="answer-row" id="a8"><td>✗ <strong>No</td><td>Qal</strong> | Imperfect | 3ms | מות | Same as verb 6: Qal intransitive "to die." יָ prefix (Patach) = Qal.</td><td></td></tr>
   <tr id="r9">
     <td>9</td><td>יוּמַת</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a9">
-    <td colspan="8">✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verbs 5 and 7.</td>
-  </tr>
+  <tr class="answer-row" id="a9"><td>✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verbs 5 and 7.</td><td></td><td></td></tr>
 </table>
 
 <div class="hebrew">עַל־פִּ֣י עֵדִים֮ <strong>יֵרָצֵ֣חַ [10]</strong> הָרֹצֵחַ֒ … כִּי־מ֖וֹת <strong>יוּמָֽת [11]</strong>׃</div>
@@ -216,28 +204,24 @@
   <tr><th>#</th><th>Verb</th><th>Hophal?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Hiphil meaning</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>יֵרָצֵחַ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a10">
-    <td colspan="8">✗ <strong>No — Niphal</strong> | Imperfect | 3ms | רצח | Niphal of רצח (to murder) = "shall be put to death / murdered." The נ of the Niphal prefix assimilated into the ר giving the יֵ prefix vowel. No u-class vowel under prefix — not Hophal. This is the passive of the Qal (not the Hiphil causative).</td>
-  </tr>
+  <tr class="answer-row" id="a10"><td>✗ <strong>No</td><td>Niphal</strong> | Imperfect | 3ms | רצח | Niphal of רצח (to murder) = "shall be put to death / murdered." The נ of the Niphal prefix assimilated into the ר giving the יֵ prefix vowel. No u-class vowel under prefix — not Hophal. This is the passive of the Qal (not the Hiphil causative).</td><td></td></tr>
   <tr id="r11">
     <td>11</td><td>יוּמַת</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
     <td><input class="parse-field" placeholder="Hiphil meaning"></td>
     <td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a11">
-    <td colspan="8">✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verbs 5, 7, 9. יוּ prefix = Hophal.</td>
-  </tr>
+  <tr class="answer-row" id="a11"><td>✓ <strong>Hophal</strong> | Imperfect | 3ms | מות | Same as verbs 5, 7, 9. יוּ prefix = Hophal.</td><td></td><td></td></tr>
 </table>
 
 <div class="reflection">
@@ -287,7 +271,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(function(b) { b.textContent = '▶ Answer'; });
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+  document.querySelectorAll('.parse-field').forEach(function(i) { i.value = ''; });
 }
 </script>
 </body>

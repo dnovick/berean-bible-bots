@@ -25,10 +25,10 @@ A 15-item drill organized in three parts by weak-root class: Part A (I-Guttural,
 ## Sample Questions
 
 **Q1.** 1 בֵּרַךְ ברך to kneel / bless Gen 1:28
-> **A:** he blessed · I — Intensive · Qal "to bless" is rare; Piel = formal, powerful bestowal of divine favor. The ב takes virtual dagesh (no actual doubling possible). Most common form for blessing in OT.
+> **A:** he blessed I — Intensive · Qal "to bless" is rare; Piel = formal, powerful bestowal of divine favor. The ב takes virtual dagesh (no actual doubling possible). Most common form for blessing in OT.
 
 **Q2.** 2 אֵהֵב אהב to love
-> **A:** he loved (intensively) · I — Intensive · Qal also means "to love"; Piel = love fervently or devotedly. The א (R1 guttural) shows virtual doubling — tsere lengthened rather than dagesh added.
+> **A:** he loved (intensively) I — Intensive · Qal also means "to love"; Piel = love fervently or devotedly. The א (R1 guttural) shows virtual doubling — tsere lengthened rather than dagesh added.
 
 **Q3.** 3 חִזֵּק חזק to be strong Exo 4:21
-> **A:** he hardened / made strong · F — Factitive · Qal = stative "be strong/hard." Piel = cause to enter the state of hardness. Classic Factitive: "he hardened [Pharaoh's heart]" (Exo 4:21). The ח guttural takes virtual dagesh.
+> **A:** he hardened / made strong F — Factitive · Qal = stative "be strong/hard." Piel = cause to enter the state of hardness. Classic Factitive: "he hardened [Pharaoh's heart]" (Exo 4:21). The ח guttural takes virtual dagesh.

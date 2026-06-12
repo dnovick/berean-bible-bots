@@ -14,14 +14,3 @@ A 25-item classification exercise drawn entirely from Genesis, Exodus, and Numbe
 | Reflexive | 2, 5, 7, 10, 12, 15, 22 | 7 |
 | Reciprocal | 11, 19 | 2 |
 | Simple Action | 3, 14, 17, 20, 23 | 5 |
-
-## Sample Questions
-
-**Q1.** 1 וַיִּמָּכֵר Wayyiqtol 3ms Gen 37:36 "and Joseph was sold into Egypt" P R RC SA
-> **A:** P — Joseph receives the action of being sold
-
-**Q2.** 2 נִצָּבָה Perfect 3fs Gen 37:7 "my sheaf stood upright" P R RC SA
-> **A:** R — The sheaf stations itself upright (acts on itself)
-
-**Q3.** 3 וַיִּנָּחֶם Wayyiqtol 3ms Gen 6:6 "the LORD regretted" P R RC SA
-> **A:** SA — נָחַם Niphal-only: no standard Qal; "to regret/relent" is the base meaning

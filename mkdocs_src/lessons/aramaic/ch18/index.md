@@ -1,28 +1,13 @@
 # BBA Chapter 18 — The Peil, Hithpeel, and Ithpeel Stems
 
+> Learn the three passive/reflexive counterparts to the Peal: the Peil (internal passive of Peal, analogous to the Hebrew Niphal or Qal passive), the Hithpeel (reflexive, analogous to Hebrew Hithpael), and the Ithpeel (an alternative reflexive/passive form). Identify the diagnostic vowel patterns and preformatives that distinguish each stem, and understand when each is preferred in Daniel and Ezra.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 18: The Peil, Hithpeel, and Ithpeel Stems*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch18-passive-stems-drill/](exercises/ch18-passive-stems-drill/index.md) | 20-item Peil and Ithpeel stem identification drill |
-| [exercises/ch18-stem-contrast/](exercises/ch18-stem-contrast/index.md) | Peil vs. Ithpeel Stem Contrast Drill — 20 items: classify stem by CvCīC pattern vs. אִתְ/יִתְ prefix |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peil, Hithpeel, Ithpeel stem profiles and top roots |
 
 ---
 

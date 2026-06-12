@@ -1,33 +1,11 @@
 # BBH Chapter 32 — Pual Strong Verbs (פֻּעַל)
 
----
+> Learn the Pual stem for strong verbs—the passive of Piel—in all conjugations. Identify the diagnostic qibbuts vowel under the first root consonant (in the perfect) and dagesh forte in the middle consonant as the twin markers of Pual. Contrast the Pual with the Niphal passive and Hophal passive, and understand when Hebrew authors prefer Pual to express the passive of an intensive or factitive action.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch32-passage-exercise/](exercises/ch32-passage-exercise/index.md) | Passage exercise — identify and parse Pual Strong verbs in Torah and Prophets texts |
-| [exercises/ch32-piel-pual-contrast/](exercises/ch32-piel-pual-contrast/index.md) | Piel vs. Pual contrast drill — distinguish active and passive Piel-group forms across 25 items |
-| [exercises/ch32-function-sort/](exercises/ch32-function-sort/index.md) | Semantic function sorting — classify Pual verbs by function type (passive-intensive, passive-causative) |
-| [exercises/ch32-pual-paradigm-drill/](exercises/ch32-pual-paradigm-drill/index.md) | Paradigm drill — write selected Pual forms for קטל from memory |
-| [exercises/ch32-qal-piel-pual-contrast/](exercises/ch32-qal-piel-pual-contrast/index.md) | Qal–Piel–Pual contrast drill — three-way stem discrimination (strong roots) |
-| [exercises/ch32-stem-id-drill/](exercises/ch32-stem-id-drill/index.md) | Stem identification drill — Qal/Piel/Pual strong roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch32-vocab-deck.md](ch32-vocab-deck.md) | Markdown | 12-word vocabulary deck — 5 verbs + 7 nouns |
-| [ch32-vocab-deck.txt](ch32-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch32-vocab-deck-fd.txt](ch32-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Pual Stem](../../../notebooks/ot/verbs/pual/) | Pual stem: complete morphological profile, passive intensive/factitive/birth (יֻלַּד) categories |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

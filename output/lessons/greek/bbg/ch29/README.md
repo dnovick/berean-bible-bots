@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch29-adjectival-participle-parsing/](exercises/ch29-adjectival-participle-parsing/README.md) | 15-item drill: parse adjectival participles, identify attributive vs. substantival use, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch29-vocab-deck.md](ch29-vocab-deck.md) | Human-readable card list — 5 vocabulary words |
-| [ch29-vocab-deck.txt](ch29-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch29-vocab-deck-fd.txt](ch29-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Adjectival vs adverbial role profile; substantival participles (ὁ πιστεύων) |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Adjectival vs adverbial participle rates by genre |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~2,100 adjectival/substantival participle tokens NT-wide)*
 

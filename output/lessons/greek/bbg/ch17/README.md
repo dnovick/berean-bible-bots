@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch17-contract-verb-parsing/](exercises/ch17-contract-verb-parsing/README.md) | 20-item drill: parse contracted forms, identify uncontracted vowels, and give the lexical form |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch17-vocab-deck.md](ch17-vocab-deck.md) | Human-readable card list — 11 vocabulary words |
-| [ch17-vocab-deck.txt](ch17-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch17-vocab-deck-fd.txt](ch17-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How a verb root's forms spread across tenses and books |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

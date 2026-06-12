@@ -5,35 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch13-vocab-deck.md](ch13-vocab-deck.md) | Reference list with glosses |
-| [ch13-vocab-deck.txt](ch13-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch13-vocab-deck-fd.txt](ch13-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch13-peal-perfect-drill/](exercises/ch13-peal-perfect-drill/README.md) | 20-item Peal perfect parsing drill |
-| [exercises/ch13-peal-contrast/](exercises/ch13-peal-contrast/README.md) | Peal Perfect vs. Imperfect Contrast Drill — 20 items: classify conjugation, parse PGN, root, translate |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal stem profile; qatal conjugation distribution; top Peal roots |
-
----
-
 ## 1. Introduction — The Peal Perfect
 
 Chapter 12 gave you the architectural map of Biblical Aramaic verbs. Chapter 13 begins filling in that map. The starting point is the **Peal perfect** — the most fundamental verb form in the Aramaic corpus, the dictionary form for every verb, and the foundation on which every derived stem is built.

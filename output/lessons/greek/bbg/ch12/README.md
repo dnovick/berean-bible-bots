@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch12-autos-parsing/](exercises/ch12-autos-parsing/README.md) | 20-item drill — parse αὐτός forms and identify which of the three uses applies |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch12-vocab-deck.md](ch12-vocab-deck.md) | Human-readable card list — 15 vocabulary words |
-| [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Syntactic Roles](../../../notebooks/nt/syntax/syntactic_roles_nt/) | What God and Jesus do as subjects/objects across the NT |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

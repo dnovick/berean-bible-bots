@@ -1,40 +1,11 @@
 # BBH Chapter 13 — Qal Perfect Strong Verbs
 
----
+> Learn all 13 Qal perfect strong-verb forms (3ms through 1cp), parsing by person, gender, and number (PGN). Identify the characteristic perfect affixes and the diagnostic vowel pattern (patah under the preformative-free stem). Understand the semantic range of the perfect aspect—completed action, stative—so that translation choices reflect Hebrew verbal aspect rather than defaulting to simple past.
 
-## Files
-
-### Reference Files
-
-| File | Description |
+| Resource | Link |
 |---|---|
-| [qal-perfect-paradigm.md](qal-perfect-paradigm.md) | Full PGN paradigm: fientive and stative verb classes with key-marker notes |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch13-parsing-drill/](exercises/ch13-parsing-drill/index.md) | 25-item parsing drill — identify PGN and root for each Qal Perfect form |
-| [exercises/ch13-passage-exercise/](exercises/ch13-passage-exercise/index.md) | 15 Qal Perfect verbs from early Genesis to parse (PGN + root) and identify usage type |
-| [exercises/ch13-qal-perfect-paradigm-drill/](exercises/ch13-qal-perfect-paradigm-drill/index.md) | Paradigm drill — write all 9 inflected Qal Perfect forms of קטל from memory |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch13-morphology-deck.md](ch13-morphology-deck.md) | Markdown | 28-card morphology deck — Qal Perfect forms across all 9 PGN cells for 3 high-frequency roots |
-| [ch13-morphology-deck.txt](ch13-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (28 cards) |
-| [ch13-morphology-deck-fd.txt](ch13-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (28 cards) |
-| [ch13-vocab-deck.md](ch13-vocab-deck.md) | Markdown | Vocabulary deck — 16 words (13 verbs, 3 adverbs) with POS tags and frequency |
-| [ch13-vocab-deck.txt](ch13-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (16 cards) |
-| [ch13-vocab-deck-fd.txt](ch13-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (16 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [ot/verbs/qal.ipynb](../../../notebooks/ot/verbs/qal/) | Qal stem notebook |
-| [both/survey/book_profiles.ipynb](../../../notebooks/both/survey/book_profiles/) | Per-book language profiles |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

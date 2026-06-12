@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch11-vocab-deck.md](ch11-vocab-deck.md) | Reference list with glosses |
-| [ch11-vocab-deck.txt](ch11-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch11-vocab-deck-fd.txt](ch11-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch11-particle-drill/](exercises/ch11-particle-drill/README.md) | Particle and adverb identification drill from Daniel and Ezra |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Complete word class distribution including adverbs/particles across Daniel and Ezra |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 11: Adverbs and Particles*
 

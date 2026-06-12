@@ -1,28 +1,11 @@
 # BBG Chapter 9 — Adjectives
 
----
+> Learn the first- and second-declension adjective paradigms (2-1-2 pattern) in all four cases, both genders, and both numbers, and the matching article forms. Distinguish attributive position (article-adjective-noun or article-noun-article-adjective) from predicate position (no article on adjective), and substantival use (adjective alone with article). Adjective agreement in case, gender, and number is the foundation for participial and pronoun agreement in later chapters.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch9-adjective-parsing/](exercises/ch9-adjective-parsing/index.md) | 20-item parsing drill — case, number, gender, and position (attributive/predicate/substantival) for adjective phrases |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch9-vocab-deck.md](ch9-vocab-deck.md) | Human-readable card list — 18 vocabulary words |
-| [ch9-vocab-deck.txt](ch9-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch9-vocab-deck-fd.txt](ch9-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution — how adjectives match noun case, gender, number |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

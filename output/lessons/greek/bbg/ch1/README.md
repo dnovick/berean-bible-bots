@@ -2,20 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-*No exercises for this introductory chapter.*
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Per-Book Language Profiles](../../../notebooks/both/survey/book_profiles/) | NT book-by-book tense/voice/mood distributions |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

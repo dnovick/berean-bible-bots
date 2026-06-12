@@ -20,10 +20,10 @@
 ## Sample Questions
 
 **Q1.** 1 גָּלָה
-> **A:** Qal · Perfect · 3ms · גלה · "he went into exile / uncovered" — qamets under ג + final ָה; no dagesh in ל; plain III-ה Qal
+> **A:** Qal Perfect 3ms גלה "he went into exile / uncovered" — qamets under ג + final ָה; no dagesh in ל; plain III-ה Qal
 
 **Q2.** 2 גִּלָּה
-> **A:** Piel · Perfect · 3ms · גלה · "he revealed / uncovered" — hiriq under ג + dagesh forte in ל + final ָּה (note: dagesh + qamets)
+> **A:** Piel Perfect 3ms גלה "he revealed / uncovered" — hiriq under ג + dagesh forte in ל + final ָּה (note: dagesh + qamets)
 
 **Q3.** 3 גֻּלָּה
-> **A:** Pual · Perfect · 3ms · גלה · "he was revealed / uncovered" — qibbuts under ג + dagesh forte in ל + final ָּה; distinguish from Piel by qibbuts vs hiriq
+> **A:** Pual Perfect 3ms גלה "he was revealed / uncovered" — qibbuts under ג + dagesh forte in ל + final ָּה; distinguish from Piel by qibbuts vs hiriq

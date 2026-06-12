@@ -5,34 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch15-vocab-deck.md](ch15-vocab-deck.md) | Reference list with glosses |
-| [ch15-vocab-deck.txt](ch15-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch15-vocab-deck-fd.txt](ch15-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch15-peal-imperative-drill/](exercises/ch15-peal-imperative-drill/README.md) | 20-item Peal imperative parsing drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal imperative count and top roots |
-
----
-
 ## 1. Introduction — The Peal Imperative
 
 Chapter 14 introduced the Peal imperfect — the form that expresses future, modal, and habitual action. Chapter 15 introduces the **Peal imperative**, the direct-command form of the verb. The imperative is addressed exclusively to **second persons**: the person or group you are speaking to directly. Commands directed at third parties use the jussive (the 3rd-person imperfect), not the imperative.

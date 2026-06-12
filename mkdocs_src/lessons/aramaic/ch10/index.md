@@ -1,32 +1,11 @@
 # BBA Chapter 10 — Adjectives and Numbers
 
----
+> Learn Aramaic adjective forms in all three states (absolute, determined, construct) for both genders and numbers, and practice adjective-noun agreement. Study the cardinal numbers 1–10 with their gender-polarity pattern (which mirrors Hebrew), the teens, and the tens. Note that Aramaic numbers appear most prominently in the chronological and administrative sections of Daniel and Ezra.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch10-vocab-deck.md](ch10-vocab-deck.md) | Reference list with glosses |
-| [ch10-vocab-deck.txt](ch10-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch10-vocab-deck-fd.txt](ch10-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch10-adjective-number-drill/](exercises/ch10-adjective-number-drill/index.md) | Adjective identification and number parsing drill from Daniel and Ezra |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Adjective token counts; word class distribution across Daniel/Ezra |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

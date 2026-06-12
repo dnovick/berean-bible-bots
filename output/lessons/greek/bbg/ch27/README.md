@@ -2,32 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch27-present-participle-parsing/](exercises/ch27-present-participle-parsing/README.md) | "Spot the Present Participle" — 15-item passage drill: parse form, identify use, translate |
-| [exercises/ch27-participle-use-sort/](exercises/ch27-participle-use-sort/README.md) | Participle Use Classification Drill — 20 phrases: classify ADV / ADJ / SUB, identify key signal, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch27-vocab-deck.md](ch27-vocab-deck.md) | Human-readable card list — 14 vocabulary words |
-| [ch27-vocab-deck.txt](ch27-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch27-vocab-deck-fd.txt](ch27-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Present participle frequency; adverbial role count; genre comparison |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Present participle distribution by genre and function |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~3,200 present participle tokens NT-wide)*
 

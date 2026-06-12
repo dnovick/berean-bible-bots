@@ -22,10 +22,10 @@ This passage exercise presents 16 highlighted verb forms drawn from five canonic
 ## Sample Questions
 
 **Q1.** 1 לֶךְ
-> **A:** Imperative · 2nd · s · m · הלך · Direct Command — I-י short form; ה of הלך absent; "Go!" — God's foundational call to Abraham
+> **A:** Imperative 2nd s m הלך Direct Command — I-י short form; ה of הלך absent; "Go!" — God's foundational call to Abraham
 
 **Q2.** 2 עֲזֹב
-> **A:** Imperative · 2nd · s · m · עזב · Direct Command — Strong A-class; "Leave!" — second imperative in the triple command sequence
+> **A:** Imperative 2nd s m עזב Direct Command — Strong A-class; "Leave!" — second imperative in the triple command sequence
 
 **Q3.** 3 וֶהְיֵה
-> **A:** Imperative · 2nd · s · m · היה · Direct Command — III-ה; וְ + Imperative (imperative chain, not Weqatal); "and be a blessing" — the purpose of the command
+> **A:** Imperative 2nd s m היה Direct Command — III-ה; וְ + Imperative (imperative chain, not Weqatal); "and be a blessing" — the purpose of the command

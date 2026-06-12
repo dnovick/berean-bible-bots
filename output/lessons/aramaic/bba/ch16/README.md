@@ -5,34 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch16-vocab-deck.md](ch16-vocab-deck.md) | Reference list with glosses |
-| [ch16-vocab-deck.txt](ch16-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch16-vocab-deck-fd.txt](ch16-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch16-peal-infinitive-drill/](exercises/ch16-peal-infinitive-drill/README.md) | 20-item Peal infinitive construct identification and translation drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Infinitive construct frequency; Peal infinitives in Daniel/Ezra |
-
----
-
 ## 1. Introduction — The Peal Infinitive Construct
 
 Chapters 13–15 introduced the finite verbal forms of the Peal stem: the perfect, the imperfect, and the imperative. All of those forms are **finite** — they are inflected for person, gender, and number and have a definite subject. Chapter 16 introduces the **Peal infinitive construct**, a **non-finite** verbal form that behaves more like a verbal noun than a conjugated verb.

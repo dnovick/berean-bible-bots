@@ -15,8 +15,8 @@
   th { background: #eee; border: 1px solid #ccc; padding: 6px 10px; text-align: left; }
   td { border: 1px solid #ccc; padding: 5px 9px; vertical-align: middle; }
   td:first-child { font-size: 1.1em; direction: rtl; unicode-bidi: embed; width: 14%; }
-  input.parse-field { width: 95%; border: none; border-bottom: 1px solid #aaa; background: transparent; font-size: 0.9em; padding: 1px 2px; font-family: inherit; }
-  input.parse-field:focus { outline: none; border-bottom: 2px solid #5b7dc8; }
+  .parse-field { width: 95%; border: none; border-bottom: 1px solid #aaa; background: transparent; font-size: 0.9em; padding: 1px 2px; font-family: inherit; }
+  .parse-field:focus { outline: none; border-bottom: 2px solid #5b7dc8; }
   .answer-row { display: none; background: #eaf5ea; }
   .answer-row td { border-top: none; color: #2a6b2a; font-size: 0.88em; }
   .answer-row.visible { display: table-row; }
@@ -35,7 +35,13 @@
   @media print {
     .controls, .reveal-btn { display: none !important; }
     .answer-row { display: none !important; }
-    input.parse-field { border: none; border-bottom: 1px solid #999; }
+    .parse-field { border: none; border-bottom: 1px solid #999; }
+  }
+
+  .hiphil-select {
+    width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px;
+    padding: .25rem .4rem; font-family: Georgia, serif; font-size: .88rem;
+    background: #fafff8;
   }
 </style>
 </head>
@@ -65,40 +71,34 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r1">
     <td>1</td><td>תְּבָרֵךְ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a1">
-    <td colspan="8">✗ <strong>No — Piel</strong> | Imperfect | 2ms | ברך | <em>Intensive</em> — "you bless." R2=ר rejects dagesh; Piel identified by tsere under R2. The Pual passive counterpart appears next as מְבֹרָךְ.</td>
-  </tr>
+  <tr class="answer-row" id="a1"><td>✗ <strong>No — Piel</strong> | Imperfect | 2ms | ברך | <em>Intensive</em> — "you bless." R2=ר rejects dagesh; Piel identified by tsere under R2. The Pual passive counterpart appears next as מְבֹרָךְ.</td><td></td></tr>
   <tr id="r2">
     <td>2</td><td>מְבֹרָךְ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a2">
-    <td colspan="8">✓ <strong>Yes — Pual</strong> | Participle | ms | ברך | <em>Passive</em> — "blessed one." Qamets under R1 (compensatory lengthening because ר rejects Dagesh Forte). Pual Ptc. prefix מְ + Qibbuts→Qamets pattern.</td>
-  </tr>
+  <tr class="answer-row" id="a2"><td>✓ <strong>Yes — Pual</strong> | Participle | ms | ברך | <em>Passive</em> — "blessed one." Qamets under R1 (compensatory lengthening because ר rejects Dagesh Forte). Pual Ptc. prefix מְ + Qibbuts→Qamets pattern.</td><td></td></tr>
   <tr id="r3">
     <td>3</td><td>יוּאָר</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a3">
-    <td colspan="8">✗ <strong>No — Hophal</strong> | Imperfect | 3ms | ארר | <em>Hophal passive</em> — "shall be cursed." The יוּ prefix (Shureq = u-class vowel under the preformative) is the Hophal Imperfect marker. Contrast Pual: Qibbuts is under R1, not the prefix consonant.</td>
-  </tr>
+  <tr class="answer-row" id="a3"><td>✗ <strong>No — Hophal</strong> | Imperfect | 3ms | ארר | <em>Hophal passive</em> — "shall be cursed." The יוּ prefix (Shureq = u-class vowel under the preformative) is the Hophal Imperfect marker. Contrast Pual: Qibbuts is under R1, not the prefix consonant.</td><td></td></tr>
 </table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">לֹ֥א תֵלֵ֖ךְ עִמָּהֶ֑ם לֹ֥א <strong>תָאֹ֖ר [4]</strong> אֶת־הָעָ֑ם כִּ֥י <strong>בָר֖וּךְ [5]</strong> הֽוּא׃</div>
@@ -108,28 +108,24 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r4">
     <td>4</td><td>תָאֹר</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a4">
-    <td colspan="8">✗ <strong>No — Qal</strong> | Imperfect | 2ms | ארר | <em>Qal</em> — "you shall curse." No Qibbuts under R1 with Dagesh in R2 — this is Qal active, not Pual passive.</td>
-  </tr>
+  <tr class="answer-row" id="a4"><td>✗ <strong>No — Qal</strong> | Imperfect | 2ms | ארר | <em>Qal</em> — "you shall curse." No Qibbuts under R1 with Dagesh in R2 — this is Qal active, not Pual passive.</td><td></td></tr>
   <tr id="r5">
     <td>5</td><td>בָּרוּךְ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a5">
-    <td colspan="8">✓ <strong>Yes — Pual</strong> | Participle | ms | ברך | <em>Passive</em> — "blessed" (substantival: "he is a blessed one"). Pual Ptc. ms without מְ prefix in attributive position: בָּ = Qamets for compensatory lengthening (ר rejects dagesh).</td>
-  </tr>
+  <tr class="answer-row" id="a5"><td>✓ <strong>Yes — Pual</strong> | Participle | ms | ברך | <em>Passive</em> — "blessed" (substantival: "he is a blessed one"). Pual Ptc. ms without מְ prefix in attributive position: בָּ = Qamets for compensatory lengthening (ר rejects dagesh).</td><td></td></tr>
 </table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">מַה־אֶקֹּ֕ב לֹ֥א <strong>קַבֹּ֖ה [6]</strong> אֵ֑ל וּמַה־אֶזְעֹ֕ם לֹ֥א <strong>זָעַ֖ם [7]</strong> יְהוָֽה׃</div>
@@ -139,28 +135,24 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r6">
     <td>6</td><td>קַבֹּה</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a6">
-    <td colspan="8">✗ <strong>No — Qal</strong> | Inf. Absolute | — | קבב | <em>Qal</em> — Inf. Abs. in negated construction ("what God has not cursed"). Geminate root; no Qibbuts + R2 dagesh pattern.</td>
-  </tr>
+  <tr class="answer-row" id="a6"><td>✗ <strong>No — Qal</strong> | Inf. Absolute | — | קבב | <em>Qal</em> — Inf. Abs. in negated construction ("what God has not cursed"). Geminate root; no Qibbuts + R2 dagesh pattern.</td><td></td></tr>
   <tr id="r7">
     <td>7</td><td>זָעַם</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a7">
-    <td colspan="8">✗ <strong>No — Qal</strong> | Perfect | 3ms | זעם | <em>Qal</em> — "has been indignant / has denounced." Qal Perfect 3ms vowel pattern: Qamets-Patach; no u-class vowel under R1 with Dagesh Forte in R2.</td>
-  </tr>
+  <tr class="answer-row" id="a7"><td>✗ <strong>No — Qal</strong> | Perfect | 3ms | זעם | <em>Qal</em> — "has been indignant / has denounced." Qal Perfect 3ms vowel pattern: Qamets-Patach; no u-class vowel under R1 with Dagesh Forte in R2.</td><td></td></tr>
 </table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">הִנֵּ֥ה <strong>בָרֵ֖ךְ [8]</strong> לָקָ֑חְתִּי וּבֵרַ֖ךְ וְלֹ֥א אֲשִׁיבֶֽנָּה׃</div>
@@ -170,16 +162,14 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r8">
     <td>8</td><td>בָרֵךְ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a8">
-    <td colspan="8">✗ <strong>No — Piel</strong> | Inf. Absolute | — | ברך | <em>Intensive</em> — Piel Inf. Abs. used with לָקַח in a cognate-like construction ("I have been commanded to bless"). Tsere under R2 confirms Piel active, not Pual passive.</td>
-  </tr>
+  <tr class="answer-row" id="a8"><td>✗ <strong>No — Piel</strong> | Inf. Absolute | — | ברך | <em>Intensive</em> — Piel Inf. Abs. used with לָקַח in a cognate-like construction ("I have been commanded to bless"). Tsere under R2 confirms Piel active, not Pual passive.</td><td></td></tr>
 </table>
 
 <h2>Passage B — Exodus 29:36–37</h2>
@@ -194,16 +184,14 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r9">
     <td>9</td><td>וּמָשַׁחְתָּ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a9">
-    <td colspan="8">✗ <strong>No — Qal</strong> | Weqatal | 2ms | משח | <em>Qal</em> — "and you shall anoint." Qal Weqatal; no u-class vowel under R1 with Dagesh Forte in R2.</td>
-  </tr>
+  <tr class="answer-row" id="a9"><td>✗ <strong>No — Qal</strong> | Weqatal | 2ms | משח | <em>Qal</em> — "and you shall anoint." Qal Weqatal; no u-class vowel under R1 with Dagesh Forte in R2.</td><td></td></tr>
 </table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">שִׁבְעַ֣ת יָמִ֔ים תְּכַפֵּ֥ר עַל־הַמִּזְבֵּ֖חַ <strong>וְקִדַּשְׁתָּ֣ [10]</strong> אֹת֑וֹ <strong>וְהָיָ֤ה [11]</strong> הַמִּזְבֵּ֙חַ֙ קֹ֣דֶשׁ קָֽדָשִׁ֔ים כָּל־הַנֹּגֵ֥עַ בַּמִּזְבֵּ֖חַ <strong>יִקְדָּשׁ [12]</strong>׃</div>
@@ -213,40 +201,34 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r10">
     <td>10</td><td>וְקִדַּשְׁתָּ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a10">
-    <td colspan="8">✗ <strong>No — Piel</strong> | Weqatal | 2ms | קדש | <em>Factitive</em> — "and you shall consecrate it." Hireq under R1 (קִ) + Dagesh Forte in R2 (דּ) = Piel. The Pual passive counterpart would have Qibbuts (קֻ) under R1.</td>
-  </tr>
+  <tr class="answer-row" id="a10"><td>✗ <strong>No — Piel</strong> | Weqatal | 2ms | קדש | <em>Factitive</em> — "and you shall consecrate it." Hireq under R1 (קִ) + Dagesh Forte in R2 (דּ) = Piel. The Pual passive counterpart would have Qibbuts (קֻ) under R1.</td><td></td></tr>
   <tr id="r11">
     <td>11</td><td>וְהָיָה</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a11">
-    <td colspan="8">✗ <strong>No — Qal</strong> | Weqatal | 3ms | היה | <em>Qal</em> — "and it shall be." III-ה root; standard Qal Weqatal.</td>
-  </tr>
+  <tr class="answer-row" id="a11"><td>✗ <strong>No — Qal</strong> | Weqatal | 3ms | היה | <em>Qal</em> — "and it shall be." III-ה root; standard Qal Weqatal.</td><td></td></tr>
   <tr id="r12">
     <td>12</td><td>יִקְדָּשׁ</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a12',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a12">
-    <td colspan="8">✗ <strong>No — Niphal</strong> | Imperfect | 3ms | קדש | <em>Niphal passive/reflexive</em> — "shall become holy / be consecrated." יִ prefix + Dagesh Forte in R1 (קּ) = Niphal contraction of נִ-. Compare: Pual would be יְקֻדַּשׁ (Shewa under prefix + Qibbuts under R1 + Dagesh in R2).</td>
-  </tr>
+  <tr class="answer-row" id="a12"><td>✗ <strong>No — Niphal</strong> | Imperfect | 3ms | קדש | <em>Niphal passive/reflexive</em> — "shall become holy / be consecrated." יִ prefix + Dagesh Forte in R1 (קּ) = Niphal contraction of נִ-. Compare: Pual would be יְקֻדַּשׁ (Shewa under prefix + Qibbuts under R1 + Dagesh in R2).</td><td></td></tr>
 </table>
 
 <h2>Passage C — Exodus 14:4; Isaiah 43:23; Numbers 9:15</h2>
@@ -259,16 +241,14 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r13">
     <td>13</td><td>וְכָבַדְתִּי</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a13',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a13">
-    <td colspan="8">✗ <strong>No — Niphal</strong> | Weqatal | 1cs | כבד | <em>Niphal reflexive/passive</em> — "I will be glorified / get glory." The וְנִכְבַּד form has contracted prefix; Niphal of כבד. No Qibbuts under R1 — this is not Pual.</td>
-  </tr>
+  <tr class="answer-row" id="a13"><td>✗ <strong>No — Niphal</strong> | Weqatal | 1cs | כבד | <em>Niphal reflexive/passive</em> — "I will be glorified / get glory." The וְנִכְבַּד form has contracted prefix; Niphal of כבד. No Qibbuts under R1 — this is not Pual.</td><td></td></tr>
 </table>
 
 <div class="hebrew" style="direction:rtl; unicode-bidi:embed">לֹ֥א <strong>כֻבַּדְתַּ֖נִי [14]</strong> בְּקָרְבָּנֶ֑יךָ וְעָמַלְתַּ֥נִי בִּלְבוֹנָתֶֽךָ׃</div>
@@ -278,16 +258,14 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r14">
     <td>14</td><td>כֻּבַּדְתַּנִי</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a14',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a14">
-    <td colspan="8">✓ <strong>Yes — Pual</strong> | Perfect | 2ms+1cs obj. | כבד | <em>Passive</em> — "you have not honored me." Qibbuts under R1 (כֻ) + Dagesh Forte in R2 (בּ) = Pual diagnostic. The 1cs object suffix נִי is added to the Pual Perfect 2ms base.</td>
-  </tr>
+  <tr class="answer-row" id="a14"><td>✓ <strong>Yes — Pual</strong> | Perfect | 2ms+1cs obj. | כבד | <em>Passive</em> — "you have not honored me." Qibbuts under R1 (כֻ) + Dagesh Forte in R2 (בּ) = Pual diagnostic. The 1cs object suffix נִי is added to the Pual Perfect 2ms base.</td><td></td></tr>
 </table>
 
 <div class="note-box"><strong>Distractor alert — Hophal:</strong> The next verb has a u-class vowel but is NOT Pual. Can you identify the difference?</div>
@@ -299,16 +277,14 @@
   <tr><th>#</th><th>Verb</th><th>Pual?</th><th>Conjugation</th><th>PGN</th><th>Root</th><th>Stem / Function</th><th></th></tr>
   <tr id="r15">
     <td>15</td><td>הוּקַם</td>
-    <td><input class="parse-field" placeholder="Yes / No"></td>
-    <td><input class="parse-field" placeholder="conjugation"></td>
-    <td><input class="parse-field" placeholder="PGN"></td>
-    <td><input class="parse-field" placeholder="root"></td>
-    <td><input class="parse-field" placeholder="stem / function"></td>
+    <td><select class="hiphil-select"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><input class="parse-field" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+    <td><select class="parse-field"><option value=""></option><option value="Intensive">Intensive</option><option value="Factitive">Factitive</option><option value="Passive">Passive</option><option value="Reflexive">Reflexive</option><option value="NOT Pual">NOT Pual</option></select></td>
     <td><button class="reveal-btn" onclick="toggle('a15',this)">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a15">
-    <td colspan="8">✗ <strong>No — Hophal</strong> | Perfect | 3ms | קום | <em>Hophal passive</em> — "was set up/raised." The הוּ prefix (Shureq under הּ) is the Hophal Perfect marker. No Dagesh Forte in R2 because this is a biconsonantal (hollow) root with no R2 to receive dagesh. Contrast Pual Perfect: קֻטַּל pattern.</td>
-  </tr>
+  <tr class="answer-row" id="a15"><td>✗ <strong>No — Hophal</strong> | Perfect | 3ms | קום | <em>Hophal passive</em> — "was set up/raised." The הוּ prefix (Shureq under הּ) is the Hophal Perfect marker. No Dagesh Forte in R2 because this is a biconsonantal (hollow) root with no R2 to receive dagesh. Contrast Pual Perfect: קֻטַּל pattern.</td><td></td></tr>
 </table>
 
 <div class="reflection">
@@ -362,7 +338,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(function(b) { b.textContent = '▶ Answer'; });
 }
 function clearAll() {
-  document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
+  document.querySelectorAll('.parse-field').forEach(function(i) { i.value = ''; });
 }
 </script>
 </body>

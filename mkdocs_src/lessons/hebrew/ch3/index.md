@@ -1,22 +1,11 @@
 # BBH Chapter 3 — Syllabification and Pronunciation
 
----
+> Apply the rules for dividing Hebrew words into open and closed syllables, identify the tone syllable, and understand how the accent drives vowel reduction (pretonic lengthening, propretonic reduction). Mastery of syllable structure explains why vowels change in inflected forms throughout the noun and verb chapters ahead.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch3-syllable-division/](exercises/ch3-syllable-division/index.md) | 20-word syllable division drill — divide words, label syllable types, mark stress, identify Qamets Hatuf |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch3-vocab-deck.md](ch3-vocab-deck.md) | Markdown | Vocabulary deck — 20 common nouns (family, creation, society) with alternate forms and OT frequency |
-| [ch3-vocab-deck.txt](ch3-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (20 cards) |
-| [ch3-vocab-deck-fd.txt](ch3-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (20 cards) |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

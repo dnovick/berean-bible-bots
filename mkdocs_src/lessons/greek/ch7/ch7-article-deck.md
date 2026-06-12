@@ -1,5 +1,10 @@
 # Chapter 7 — Definite Article Paradigm Deck
 
+**Download:** [Anki import (.txt)](ch7-article-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch7-article-deck-fd.txt)
+
+---
+
+
 *17 cards covering the complete definite article paradigm across all three genders.*
 *Import `ch7-article-deck.txt` directly into Anki (File → Import).*
 

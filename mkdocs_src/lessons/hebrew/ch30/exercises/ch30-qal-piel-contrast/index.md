@@ -16,11 +16,11 @@ A 17-item Qal-to-Piel contrast exercise organized in three parts: Part A (7 item
 
 ## Sample Questions
 
-**Q1.** 1 שָׁבַר to break שִׁבֵּר (Perfect 3ms) Exo 32:19
+**Q1.** 1 שָׁבַר to break שִׁבֵּר (Perfect 3ms) Exo 32:19 Intensive Factitive Declarative Denominative Simple Action
 > **A:** Intensive · he smashed to pieces · Moses shattered the tablets completely; not merely "broke" but dashed them into fragments — an emphatic, total breaking
 
-**Q2.** 2 כָּסָה to cover יְכַסּוּ (Wayyiqtol 3mp) Gen 9:23
-> **A:** Intensive · they covered (their father's nakedness) thoroughly · Shem and Japheth covered Noah completely; the Piel emphasizes the completeness of the covering
+**Q2.** 2 כָּסָה to cover יְכַסּוּ (Wayyiqtol 3mp) Gen 9:23 Intensive Factitive Declarative Denominative Simple Action
+> **A:** Intensive
 
-**Q3.** 3 שָׁלַח to send יְשַׁלַּח (Wayyiqtol 3ms) Gen 8:7
-> **A:** Intensive · he sent out / released (the raven) · The Piel = let go completely, dispatch definitively; the bird is released from its confinement on the ark
+**Q3.** 3 שָׁלַח to send יְשַׁלַּח (Wayyiqtol 3ms) Gen 8:7 Intensive Factitive Declarative Denominative Simple Action
+> **A:** Intensive

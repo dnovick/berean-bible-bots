@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch11-number-identification/](exercises/ch11-number-identification/README.md) | 20-item drill — identify the number word, value, gender polarity situation, and translation for Hebrew number-noun phrases |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch11-vocab-deck.md](ch11-vocab-deck.md) | Human-readable card list — 20 vocabulary words |
-| [ch11-vocab-deck.txt](ch11-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch11-vocab-deck-fd.txt](ch11-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Number Morphology](../../../notebooks/ot/numbers/ot_numbers/) | Hebrew number token frequency, gender-polarity rule for cardinals 1–10, state distribution, book/genre distribution (Numbers, Chronicles, Ezekiel dominate), ad-hoc queries |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 11*
 
 ---

@@ -1,5 +1,10 @@
 # Chapter 22 — Qal Participle Morphology Deck
 
+**Download:** [Anki import (.txt)](ch22-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch22-morphology-deck-fd.txt)
+
+---
+
+
 *32 cards · Active participle by root class (Groups 1–5) + Passive participle (Group 6) + Disambiguation (Group 7).*
 
 ---

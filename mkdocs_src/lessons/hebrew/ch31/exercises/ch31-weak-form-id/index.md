@@ -19,10 +19,10 @@ A 30-item identification and parsing exercise covering four Piel weak classes (I
 ## Sample Questions
 
 **Q1.** 1 יְכַל Gen 2:2 ▶
-> **A:** Wayyiqtol · 3ms · כָּלָה — and he finished; apocopated Piel III-he wayyiqtol: final ה dropped, short patach under R2 (כַ)
+> **A:** Wayyiqtol 3ms כָּלָה — and he finished; apocopated Piel III-he wayyiqtol: final ה dropped, short patach under R2 (כַ)
 
 **Q2.** 2 יְצַו Gen 2:16 ▶
-> **A:** Wayyiqtol · 3ms · צָוָה — and he commanded; apocopated: ה dropped; patach under צ; R2=ו (vav takes dagesh forte)
+> **A:** Wayyiqtol 3ms צָוָה — and he commanded; apocopated: ה dropped; patach under צ; R2=ו (vav takes dagesh forte)
 
 **Q3.** 3 צִוִּיתִי Gen 3:11 ▶
-> **A:** Perfect · 1cs · צָוָה — I commanded; chiriq-yod vowel letter before תִּי suffix; dagesh forte in ו (R2); III-he perfect 1cs
+> **A:** Perfect 1cs צָוָה — I commanded; chiriq-yod vowel letter before תִּי suffix; dagesh forte in ו (R2); III-he perfect 1cs

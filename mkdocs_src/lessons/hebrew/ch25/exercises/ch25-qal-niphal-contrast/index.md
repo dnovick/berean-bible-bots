@@ -20,10 +20,10 @@ A 15-item exercise in three parts organized by weak-root class. Students are giv
 ## Sample Questions
 
 **Q1.** 1 נפל to fall יִפָּל Imperfect 3ms Gen 14:10
-> **A:** he fell (into the tar pits) — Simple Action — I-נ Niphal imperfect: root nun assimilates → dagesh forte in פּ . The Niphal is the standard form for "fall" in many OT contexts.
+> **A:** he fell (into the tar pits) Simple Action — I-נ Niphal imperfect: root nun assimilates → dagesh forte in פּ . The Niphal is the standard form for "fall" in many OT contexts.
 
 **Q2.** 2 נגש to approach נִגַּשׁ Perfect 3ms
-> **A:** he approached / drew near — Simple Action — Niphal of נגש often carries the simple intransitive sense of drawing near; the root acts on the subject reflexively.
+> **A:** he approached / drew near Simple Action — Niphal of נגש often carries the simple intransitive sense of drawing near; the root acts on the subject reflexively.
 
 **Q3.** 3 נגד to tell, declare הִגָּד Inf. Absolute
-> **A:** to be told / being declared — Passive — הִגָּד is the Niphal inf. absolute of נגד; הִ prefix + dagesh forte in גּ (assimilated root nun).
+> **A:** to be told / being declared Passive — הִגָּד is the Niphal inf. absolute of נגד; הִ prefix + dagesh forte in גּ (assimilated root nun).

@@ -1,26 +1,11 @@
 # BBA Chapter 3 — Syllabification
 
----
+> Apply open-syllable and closed-syllable rules to Aramaic words, identify the tone syllable, and understand how the accent drives vowel length and reduction. Note that Aramaic syllabification principles are very close to those of Hebrew (Ch3 in BBH), so students with Hebrew background can transfer most rules directly while attending to a few Aramaic-specific spelling conventions.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch3-vocab-deck.md](ch3-vocab-deck.md) | Reference list with glosses |
-| [ch3-vocab-deck.txt](ch3-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch3-vocab-deck-fd.txt](ch3-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch3-syllabification-drill/](exercises/ch3-syllabification-drill/index.md) | 20-item syllable division and accent drill — open/closed syllables, stress rules, and vowel reduction patterns |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

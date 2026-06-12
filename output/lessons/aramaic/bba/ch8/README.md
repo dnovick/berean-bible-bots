@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch8-vocab-deck.md](ch8-vocab-deck.md) | Reference list with glosses |
-| [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch8-suffix-drill/](exercises/ch8-suffix-drill/README.md) | Pronominal suffix identification and translation drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Pronoun type distribution; pronominal suffix frequency and patterns in Daniel/Ezra |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 8: Pronominal Suffixes*
 

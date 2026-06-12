@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch34-passage-exercise/](exercises/ch34-passage-exercise/README.md) | Passage exercise — identify and parse Hithpael verbs in 1 Kgs 8, Gen 20, Jos 3, Exo 19, Gen 22, 2 Sam 10 |
-| [exercises/ch34-function-sort/](exercises/ch34-function-sort/README.md) | Semantic function sorting — classify 25 Hithpael forms as R / RC / IT / ES / DN |
-| [exercises/ch34-hithpael-paradigm-drill/](exercises/ch34-hithpael-paradigm-drill/README.md) | Paradigm drill — write all 29 inflected forms of קדשׁ (Hithpael) from memory |
-| [exercises/ch34-qal-piel-hithpael-contrast/](exercises/ch34-qal-piel-hithpael-contrast/README.md) | Qal–Piel–Hithpael contrast drill — three-way stem discrimination (strong roots) |
-| [exercises/ch34-stem-id-drill/](exercises/ch34-stem-id-drill/README.md) | Stem identification drill — Qal/Piel/Hithpael strong roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch34-vocab-deck.md](ch34-vocab-deck.md) | Markdown | 12-word vocabulary deck — 2 verbs + 10 nouns |
-| [ch34-vocab-deck.txt](ch34-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch34-vocab-deck-fd.txt](ch34-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hithpael Stem](../../../notebooks/ot/verbs/hithpael/) | Hithpael stem: complete morphological profile; reflexive, reciprocal, iterative categories |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 34*
 
 ## 1. Function

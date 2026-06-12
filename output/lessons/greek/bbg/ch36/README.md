@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch36-mi-verbs-parsing/](exercises/ch36-mi-verbs-parsing/README.md) | 20-item drill: parse forms from ἵστημι, τίθημι, δείκνυμι, and related μι-verbs |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch36-vocab-deck.md](ch36-vocab-deck.md) | Human-readable card list — 9 vocabulary words |
-| [ch36-vocab-deck.txt](ch36-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch36-vocab-deck-fd.txt](ch36-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~295 ἵστημι tokens; ~95 τίθημι tokens; ~33 δείκνυμι tokens NT-wide)*
 

@@ -19,11 +19,11 @@ Students identify and parse Piel Strong verbs across three Torah passages: Genes
 
 ## Sample Questions
 
-**Q1.** 1 וַיְבָרֶךְ
+**Q1.** 1 וַיְבָרֶךְ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Declarative Denominative Passive NOT Piel
 > **A:** ✓ Yes — Piel | Wayyiqtol | 3ms | ברך | Intensive — God's blessing on the creatures; וַיְ prefix (patach+shewa) = Piel/Hophal Wayyiqtol. R2=ר rejects dagesh; Piel identified by vowel pattern.
 
-**Q2.** 2 וַיְבָרֶךְ
+**Q2.** 2 וַיְבָרֶךְ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Declarative Denominative Passive NOT Piel
 > **A:** ✓ Yes — Piel | Wayyiqtol | 3ms | ברך | Intensive — Same form as #1; God's intensive blessing on humanity.
 
-**Q3.** 3 וְקִדַּשְׁתָּ
+**Q3.** 3 וְקִדַּשְׁתָּ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp Intensive Factitive Declarative Denominative Passive NOT Piel
 > **A:** ✓ Yes — Piel | Weqatal | 2ms | קדש | Factitive — "you shall consecrate them" = cause them to become holy. Weqatal carries consequential/instructional modal force.

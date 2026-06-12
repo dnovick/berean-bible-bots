@@ -16,14 +16,3 @@ A 25-item semantic classification exercise covering the five Piel functions: Int
 | Declarative | 13 | 1 |
 | Denominative | 21 | 1 |
 | Intensive/SA (debated) | 19, 24 | 2 |
-
-## Sample Questions
-
-**Q1.** 1 יְבָרֶךְ Wayyiqtol 3ms בָּרַךְ Gen 1:22 "God blessed them" I F D SA DN
-> **A:** SA — Simple Action · Root: בָּרַךְ (Qal: to kneel/bless — rare) · Blessing is the Piel's primary function; no intensification of a common Qal is intended
-
-**Q2.** 2 יְקַדֵּשׁ Wayyiqtol 3ms קָדַשׁ Gen 2:3 "he set it apart as holy" I F D SA DN
-> **A:** F — Factitive · Root: קָדַשׁ (Qal: to be holy — stative) · God caused the Sabbath day to enter the state of holiness
-
-**Q3.** 3 יְכַל Wayyiqtol 3ms כָּלָה Gen 2:2 "he finished all his work" I F D SA DN
-> **A:** F — Factitive · Root: כָּלָה (Qal: to be complete, finished — stative) · God caused his work to reach completion; Piel = bring something to its finished state

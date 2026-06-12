@@ -312,6 +312,128 @@ def slugify(name: str) -> str:
     return name.replace("-", " ").title()
 
 
+def _read_chapter_yml(course: str, ch: str) -> dict:
+    """Read data/lessons/{course}/{ch}/chapter.yml; return {} if missing."""
+    import yaml as _yaml
+    path = REPO / "data" / "lessons" / course / ch / "chapter.yml"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return _yaml.safe_load(f) or {}
+
+
+def _deck_short_title(stem: str) -> str:
+    """Convert deck file stem to display title.
+
+    Examples: 'ch1-alphabet-deck' → 'Alphabet Deck'
+              'ch13-morphology-deck' → 'Morphology Deck'
+    """
+    name = re.sub(r"^ch\d+-", "", stem)  # strip ch{N}- prefix
+    name = re.sub(r"-deck$", "", name)   # strip -deck suffix
+    return name.replace("-", " ").title()
+
+
+def _deck_description(deck_md: Path) -> str:
+    """Extract the first italic description line from a deck .md file."""
+    if not deck_md.exists():
+        return ""
+    text = deck_md.read_text(encoding="utf-8")
+    m = re.search(r"^\*([^*\n]+)\*", text, re.MULTILINE)
+    return m.group(1).strip() if m else ""
+
+
+def _prepend_deck_download_header(content: str, stem: str) -> str:
+    """Prepend Anki / Flashcards Deluxe download links to a deck .md file."""
+    txt_name = f"{stem}.txt"
+    fd_name = f"{stem}-fd.txt"
+    h1_m = re.match(r"(# [^\n]+\n)", content)
+    if not h1_m:
+        return content
+    dl_line = (
+        f"\n**Download:** [Anki import (.txt)]({txt_name}) · "
+        f"[Flashcards Deluxe (-fd.txt)]({fd_name})\n\n---\n\n"
+    )
+    # Skip the original --- separator that opens the deck content
+    rest = content[h1_m.end():]
+    rest = re.sub(r"^\s*---\s*\n+", "", rest)
+    return h1_m.group(0) + dl_line + rest
+
+
+def _inject_lesson_header(
+    content: str,
+    focus: str,
+    has_exercises: bool,
+    has_decks: bool,
+) -> str:
+    """Inject focus blockquote and resource nav table after the H1 heading."""
+    h1_m = re.match(r"(# [^\n]+\n)", content)
+    if not h1_m:
+        return content
+
+    lines: list[str] = [""]
+
+    if focus:
+        lines.append(f"> {focus.strip()}")
+        lines.append("")
+
+    if has_exercises or has_decks:
+        lines += ["| Resource | Link |", "|---|---|"]
+        if has_exercises:
+            lines.append("| Exercises | [View exercises →](exercises.md) |")
+        if has_decks:
+            lines.append("| Flashcard Decks | [View decks →](flashcards.md) |")
+        lines.append("")
+
+    insert = "\n".join(lines)
+    return h1_m.group(0) + insert + content[h1_m.end():]
+
+
+def _build_exercises_page(
+    ch_num: int,
+    ch_title: str,
+    items: list[dict],
+) -> str:
+    """Generate exercises.md listing page content."""
+    lines = [
+        f"# Ch{ch_num} — {ch_title}: Exercises",
+        "",
+        "[← Back to lesson](index.md)",
+        "",
+    ]
+    if not items:
+        lines += ["*No exercises for this chapter.*", ""]
+    else:
+        lines += ["| Exercise | Description |", "|---|---|"]
+        for item in items:
+            desc = item.get("desc", "").replace("\n", " ")
+            lines.append(f"| [{item['title']}]({item['link']}) | {desc} |")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def _build_flashcards_page(
+    ch_num: int,
+    ch_title: str,
+    items: list[dict],
+) -> str:
+    """Generate flashcards.md listing page content."""
+    lines = [
+        f"# Ch{ch_num} — {ch_title}: Flashcards",
+        "",
+        "[← Back to lesson](index.md)",
+        "",
+    ]
+    if not items:
+        lines += ["*No flashcard decks for this chapter.*", ""]
+    else:
+        lines += ["| Deck | Description |", "|---|---|"]
+        for item in items:
+            desc = item.get("desc", "").replace("\n", " ")
+            lines.append(f"| [{item['title']}]({item['md']}) | {desc} |")
+        lines.append("")
+    return "\n".join(lines)
+
+
 def sorted_chapters(titles: dict[str, str]) -> list[str]:
     return sorted(titles.keys(), key=lambda x: int(x[2:]))
 
@@ -328,39 +450,14 @@ def build_chapter(
     dst_dir = MKDOCS_SRC / "lessons" / lang / ch
     dst_dir.mkdir(parents=True, exist_ok=True)
 
-    # Copy README.md → index.md, rewriting exercise links to point at index.md
-    readme = src_dir / "README.md"
-    if readme.exists():
-        content = readme.read_text(encoding="utf-8")
-        # Rewrite  exercises/<name>/README.md  →  exercises/<name>/index.md
-        content = re.sub(
-            r"(exercises/[^)]+/)README\.md",
-            r"\1index.md",
-            content,
-        )
-        # Rewrite bare  exercises/<name>/  →  exercises/<name>/index.md
-        # (bare directory links with no explicit file)
-        content = re.sub(
-            r"\((exercises/[^)]+/)\)",
-            r"(\1index.md)",
-            content,
-        )
-        (dst_dir / "index.md").write_text(content, encoding="utf-8")
+    # Read chapter.yml for focus description
+    ch_meta = _read_chapter_yml(course, ch)
+    focus = ch_meta.get("focus", "").strip()
 
-    # Copy paradigm / other .md files (not README)
-    for md in src_dir.glob("*.md"):
-        if md.name == "README.md":
-            continue
-        shutil.copy(md, dst_dir / md.name)
-
-    # Copy deck text files (Anki .txt and Flashcards Deluxe -fd.txt)
-    for txt in src_dir.glob("*.txt"):
-        shutil.copy(txt, dst_dir / txt.name)
-
-    # Copy exercises
+    # ── Exercises ────────────────────────────────────────────────────────────
     exercises_src = src_dir / "exercises"
     exercises_dst = dst_dir / "exercises"
-    exercise_entries = []
+    exercise_items: list[dict] = []
 
     if exercises_src.is_dir():
         for ex_dir in sorted(exercises_src.iterdir()):
@@ -370,7 +467,6 @@ def build_chapter(
             ex_dst = exercises_dst / ex_name
             ex_dst.mkdir(parents=True, exist_ok=True)
 
-            # Copy .md, .html, and .pdf files
             for md in ex_dir.glob("*.md"):
                 shutil.copy(md, ex_dst / md.name)
             for html in ex_dir.glob("*.html"):
@@ -378,15 +474,13 @@ def build_chapter(
             for pdf in ex_dir.glob("*.pdf"):
                 shutil.copy(pdf, ex_dst / pdf.name)
 
-            # Build exercise page: embed HTML via iframe if .html exists,
-            # else redirect to the .md
             html_files = list(ex_dir.glob("*.html"))
-            md_file = ex_dst / "README.md"
             ex_title = slugify(ex_name)
+            ex_desc = _readme_description(ex_dir / "README.md")
 
             if html_files:
                 html_name = html_files[0].name
-                stem = html_files[0].stem  # e.g. ch26-function-sort
+                stem = html_files[0].stem
                 md_name = f"{stem}.md"
                 pdf_name = f"{stem}.pdf"
                 has_md = (ex_dir / md_name).exists()
@@ -404,30 +498,78 @@ def build_chapter(
                     has_md=has_md,
                     has_pdf=has_pdf,
                 )
-                exercise_md = ex_dst / "index.md"
-                exercise_md.write_text(page_content, encoding="utf-8")
-                exercise_entries.append(
-                    {ex_title: f"lessons/{lang}/{ch}/exercises/{ex_name}/index.md"}
-                )
-            elif md_file.exists():
-                exercise_entries.append(
-                    {ex_title: f"lessons/{lang}/{ch}/exercises/{ex_name}/README.md"}
-                )
+                (ex_dst / "index.md").write_text(page_content, encoding="utf-8")
+                ex_link = f"exercises/{ex_name}/index.md"
+            elif (ex_dir / "README.md").exists():
+                ex_link = f"exercises/{ex_name}/README.md"
+            else:
+                continue
 
-    # Collect deck .md nav entries
-    deck_entries = []
+            exercise_items.append(
+                {"title": ex_title, "link": ex_link, "desc": ex_desc}
+            )
+
+    # ── Flashcard decks ───────────────────────────────────────────────────────
+    deck_items: list[dict] = []
     for deck_md in sorted(src_dir.glob("*-deck.md")):
-        deck_title = slugify(deck_md.stem)
-        deck_entries.append(
-            {deck_title: f"lessons/{lang}/{ch}/{deck_md.name}"}
+        deck_title = _deck_short_title(deck_md.stem)
+        deck_desc = _deck_description(deck_md)
+
+        # Copy .md with download header prepended
+        content = deck_md.read_text(encoding="utf-8")
+        content = _prepend_deck_download_header(content, deck_md.stem)
+        (dst_dir / deck_md.name).write_text(content, encoding="utf-8")
+
+        deck_items.append(
+            {"title": deck_title, "md": deck_md.name, "desc": deck_desc}
         )
 
-    # Build chapter nav entry
+    # Copy deck text files (Anki .txt and Flashcards Deluxe -fd.txt)
+    for txt in src_dir.glob("*.txt"):
+        shutil.copy(txt, dst_dir / txt.name)
+
+    # Copy paradigm / other .md files (not README, not deck files)
+    for md in src_dir.glob("*.md"):
+        if md.name == "README.md" or md.name.endswith("-deck.md"):
+            continue
+        shutil.copy(md, dst_dir / md.name)
+
+    # ── Generated listing pages ───────────────────────────────────────────────
+    if exercise_items:
+        ex_page = _build_exercises_page(ch_num, title, exercise_items)
+        (dst_dir / "exercises.md").write_text(ex_page, encoding="utf-8")
+
+    if deck_items:
+        fl_page = _build_flashcards_page(ch_num, title, deck_items)
+        (dst_dir / "flashcards.md").write_text(fl_page, encoding="utf-8")
+
+    # ── index.md from README.md ───────────────────────────────────────────────
+    readme = src_dir / "README.md"
+    if readme.exists():
+        content = readme.read_text(encoding="utf-8")
+        content = re.sub(
+            r"(exercises/[^)]+/)README\.md",
+            r"\1index.md",
+            content,
+        )
+        content = re.sub(
+            r"\((exercises/[^)]+/)\)",
+            r"(\1index.md)",
+            content,
+        )
+        content = _inject_lesson_header(
+            content, focus,
+            has_exercises=bool(exercise_items),
+            has_decks=bool(deck_items),
+        )
+        (dst_dir / "index.md").write_text(content, encoding="utf-8")
+
+    # ── Nav (3 items: Lesson / Exercises / Flashcards) ────────────────────────
     ch_nav: list = [{"Lesson": f"lessons/{lang}/{ch}/index.md"}]
-    if exercise_entries:
-        ch_nav.append({"Exercises": exercise_entries})
-    if deck_entries:
-        ch_nav.append({"Flashcard Decks": deck_entries})
+    if exercise_items:
+        ch_nav.append({"Exercises": f"lessons/{lang}/{ch}/exercises.md"})
+    if deck_items:
+        ch_nav.append({"Flashcards": f"lessons/{lang}/{ch}/flashcards.md"})
 
     return [{f"Ch{ch_num} — {title}": ch_nav}]
 

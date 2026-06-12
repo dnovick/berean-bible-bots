@@ -1,28 +1,11 @@
 # BBH Chapter 7 — Hebrew Adjectives
 
----
+> Learn the four forms of the Hebrew adjective (masculine/feminine, singular/plural) and their attributive, predicative, and substantival uses. Practice adjective-noun agreement in gender and number, and recognize when the definite article is required on the adjective. The agreement rules established here reappear in participial modifiers (Ch22) and relative clauses (Ch23).
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch7-adjective-usage/](exercises/ch7-adjective-usage/index.md) | 25-item adjective usage drill — identify attributive / predicate / substantival use, parse gender and number agreement, translate |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch7-vocab-deck.md](ch7-vocab-deck.md) | Markdown | Vocabulary deck — 2 nouns, 16 adjectives, and מְאֹד with OT frequency |
-| [ch7-vocab-deck.txt](ch7-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (19 cards) |
-| [ch7-vocab-deck-fd.txt](ch7-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (19 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Noun gender distribution across the OT; adjective-noun agreement patterns by book |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

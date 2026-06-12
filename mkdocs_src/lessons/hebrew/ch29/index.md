@@ -1,33 +1,11 @@
 # BBH Chapter 29 — Hophal Weak Verbs (הֻפְעַל)
 
----
+> Apply Hophal stem markers to weak root classes: I-guttural, III-ה, hollow, and geminate roots. Because Hophal is less frequent than other derived stems, the focus is on recognition—identifying the Hophal preformative vowel pattern despite root-induced alterations—rather than on production. Students can compare Hophal weak forms with the Hiphil weak forms from Ch27 to reinforce the active/passive pairing.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch29-passage-exercise/](exercises/ch29-passage-exercise/index.md) | Passage exercise — identify and parse weak Hophal verbs in Joseph narrative, Tabernacle, and mixed passages |
-| [exercises/ch29-weak-form-id/](exercises/ch29-weak-form-id/index.md) | Weak-form identification drill — parse 20 weak Hophal forms grouped by weak class (I-yod/vav, III-he, Biconsonantal) + 10 mixed |
-| [exercises/ch29-function-sort/](exercises/ch29-function-sort/index.md) | Semantic function sorting — Hophal Weak verbs by function type |
-| [exercises/ch29-hophal-weak-paradigm-drill/](exercises/ch29-hophal-weak-paradigm-drill/index.md) | Paradigm drill — write selected Hophal Weak forms for נגד (I-נ) and בוא (hollow) |
-| [exercises/ch29-qal-hiphil-hophal-contrast/](exercises/ch29-qal-hiphil-hophal-contrast/index.md) | Qal–Hiphil–Hophal contrast drill (weak roots) — three-way stem discrimination |
-| [exercises/ch29-stem-id-drill/](exercises/ch29-stem-id-drill/index.md) | Stem identification drill — Qal/Hiphil/Hophal weak roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch29-vocab-deck.md](ch29-vocab-deck.md) | Markdown | 12-word vocabulary deck — 11 nouns + 1 adjective |
-| [ch29-vocab-deck.txt](ch29-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch29-vocab-deck-fd.txt](ch29-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hophal Stem](../../../notebooks/ot/verbs/hophal/) | Hophal stem: root×conjugation heatmap; weak root behavior in the causative-passive |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

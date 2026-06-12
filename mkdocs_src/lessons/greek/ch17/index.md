@@ -1,28 +1,11 @@
 # BBG Chapter 17 — Contract Verbs
 
----
+> Learn how stems ending in α, ε, or ο contract with the connecting vowel to produce the characteristic contracted forms of the present active indicative, and memorize the contraction rules for all three classes. Recognize contracted forms by their long-vowel or diphthong endings and identify the underlying stem vowel. Contract verbs—like ἀγαπάω, ποιέω, and πληρόω—are among the most common verbs in the NT.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch17-contract-verb-parsing/](exercises/ch17-contract-verb-parsing/index.md) | 20-item drill: parse contracted forms, identify uncontracted vowels, and give the lexical form |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch17-vocab-deck.md](ch17-vocab-deck.md) | Human-readable card list — 11 vocabulary words |
-| [ch17-vocab-deck.txt](ch17-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch17-vocab-deck-fd.txt](ch17-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How a verb root's forms spread across tenses and books |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

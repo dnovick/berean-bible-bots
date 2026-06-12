@@ -1,5 +1,10 @@
 # Chapter 14 — Qal Perfect Weak Verbs Morphology Deck
 
+**Download:** [Anki import (.txt)](ch14-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch14-morphology-deck-fd.txt)
+
+---
+
+
 *~40 cards covering all eight weak-root classes in the Qal Perfect.*
 *Import `ch14-morphology-deck.txt` directly into Anki (File → Import).*
 

@@ -2,34 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch10-vocab-deck.md](ch10-vocab-deck.md) | Reference list with glosses |
-| [ch10-vocab-deck.txt](ch10-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch10-vocab-deck-fd.txt](ch10-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch10-adjective-number-drill/](exercises/ch10-adjective-number-drill/README.md) | Adjective identification and number parsing drill from Daniel and Ezra |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Adjective token counts; word class distribution across Daniel/Ezra |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 10: Adjectives and Numbers*
 

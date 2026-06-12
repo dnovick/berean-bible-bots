@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch10-third-decl-parsing/](exercises/ch10-third-decl-parsing/README.md) | 20-item parsing drill — declension, case, number, gender, and lexical form for 3rd-declension forms |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch10-vocab-deck.md](ch10-vocab-deck.md) | Human-readable card list — 14 vocabulary words |
-| [ch10-vocab-deck.txt](ch10-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch10-vocab-deck-fd.txt](ch10-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution across all three declensions |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

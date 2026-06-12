@@ -1,29 +1,11 @@
 # BBG Chapter 21 — Imperfect Indicative
 
----
+> Learn the imperfect active and middle/passive indicative paradigms: augment (syllabic or temporal) + present stem + connecting vowel + secondary endings. Understand that the imperfect combines imperfective aspect with past time reference, yielding ongoing or repeated past action. Contrast the imperfect with the aorist (Ch22–23) which carries perfective aspect in past time. Augment rules for compound verbs are introduced.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch21-imperfect-parsing/](exercises/ch21-imperfect-parsing/index.md) | Imperfect Parsing Drill — 20 forms to parse |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch21-vocab-deck.md](ch21-vocab-deck.md) | Human-readable card list — 9 vocabulary words |
-| [ch21-vocab-deck.txt](ch21-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch21-vocab-deck-fd.txt](ch21-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Imperfect tense profile; narrative vs. discourse |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Imperfect tense distribution in narrative vs epistolary genres |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

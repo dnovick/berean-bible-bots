@@ -1,28 +1,11 @@
 # BBH Chapter 6 — Hebrew Prepositions
 
----
+> Learn the three inseparable prepositions and how they are pointed before normal consonants, before vowel letters, before the article, and before gutturals. Study the independent prepositions and their key functions in prepositional phrases. Prepositions recur in every translated passage and also attach pronominal suffixes (Ch9), so correct identification now is essential.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch6-preposition-parsing/](exercises/ch6-preposition-parsing/index.md) | 25-item prepositional phrase parsing drill — identify preposition, base form, vowel change, object, and translation |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch6-vocab-deck.md](ch6-vocab-deck.md) | Markdown | Vocabulary deck — 17 prepositions plus direct object marker and כֹּל with OT frequency |
-| [ch6-vocab-deck.txt](ch6-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (19 cards) |
-| [ch6-vocab-deck-fd.txt](ch6-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (19 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hebrew Prepositions](../../../notebooks/ot/syntax/prepositions/) | Hebrew preposition frequency and infinitive-construct governing analysis |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

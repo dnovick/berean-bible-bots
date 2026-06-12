@@ -2,32 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch33-imperative-parsing/](exercises/ch33-imperative-parsing/README.md) | 20-item drill: parse imperatives, identify tense/voice/aspect implications, translate |
-| [exercises/ch33-prohibition-drill/](exercises/ch33-prohibition-drill/README.md) | Prohibition Pattern Drill — 20 items: classify STOP (μή + pres. imper.) vs. DONT (μή + aor. subj.) |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch33-vocab-deck.md](ch33-vocab-deck.md) | Human-readable card list — 3 vocabulary words |
-| [ch33-vocab-deck.txt](ch33-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch33-vocab-deck-fd.txt](ch33-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Mood Usage](../../../notebooks/nt/syntax/mood_usage/) | Imperative distribution, present vs. aorist aspect, tense × person breakdown, genre comparison |
-| [Concordance](../../../notebooks/both/lexicon/concordance/) | Find all imperatives of any NT verb |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~1,680 imperative tokens NT-wide)*
 

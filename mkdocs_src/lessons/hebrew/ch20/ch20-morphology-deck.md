@@ -1,5 +1,10 @@
 # Chapter 20 — Qal Infinitive Construct Morphology Deck
 
+**Download:** [Anki import (.txt)](ch20-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch20-morphology-deck-fd.txt)
+
+---
+
+
 *32 cards · 4 roots × 8 root class groupings · covers Strong A, Strong B (gutt.), III-ה, Biconsonantal, I-י, I-נ, I-aleph, and preposition patterns.*
 
 ---

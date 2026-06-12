@@ -1,28 +1,11 @@
 # BBG Chapter 6 — Nominative and Accusative; Article
 
----
+> Learn the second-declension masculine and neuter paradigms in the nominative and accusative cases (singular and plural), and the matching forms of the definite article. Identify the subject (nominative) and direct object (accusative) functions, and use the article to determine case when the noun ending alone is ambiguous. The article paradigm is one of the highest-yield memorization tasks in the entire course.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch6-nom-acc-parsing/](exercises/ch6-nom-acc-parsing/index.md) | 20-item parsing drill — identify case, number, gender, lexical form, and function for 2nd-declension nouns and articles |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch6-vocab-deck.md](ch6-vocab-deck.md) | Human-readable card list — 13 vocabulary words |
-| [ch6-vocab-deck.txt](ch6-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch6-vocab-deck-fd.txt](ch6-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution, article co-occurrence, top lemmas (nominative and accusative cases) |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

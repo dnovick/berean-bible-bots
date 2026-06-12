@@ -1,29 +1,11 @@
 # BBG Chapter 25 — Perfect Indicative
 
----
+> Learn the perfect active and middle/passive indicative paradigms: reduplication + perfect stem + κα tense formative (active) or without κα (middle/passive) + endings. Understand that the perfect tense-form encodes stative aspect—a present state resulting from a past action—and distinguish it from the aorist (simple past occurrence). Key theological perfect forms (γέγραπται, πεπίστευκα) are introduced in context.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch25-perfect-parsing/](exercises/ch25-perfect-parsing/index.md) | Perfect Indicative Parsing Drill — 20 forms to parse |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch25-vocab-deck.md](ch25-vocab-deck.md) | Human-readable card list — 3 vocabulary words |
-| [ch25-vocab-deck.txt](ch25-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch25-vocab-deck-fd.txt](ch25-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Perfect tense profile; pluperfect; theological perfects |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Perfect tense distribution by genre; theologically important perfect forms |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

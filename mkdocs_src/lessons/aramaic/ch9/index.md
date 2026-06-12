@@ -1,32 +1,11 @@
 # BBA Chapter 9 — Pronouns
 
----
+> Memorize the Aramaic independent personal pronouns (all persons, genders, and numbers), demonstrative pronouns (near and far), and the interrogative pronouns. Note the characteristic Aramaic forms such as הוּא and הִיא for the third person singular, and understand that pronouns in Aramaic serve the same grammatical functions as their Hebrew counterparts but with distinct forms that must be learned separately.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch9-vocab-deck.md](ch9-vocab-deck.md) | Reference list with glosses |
-| [ch9-vocab-deck.txt](ch9-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch9-vocab-deck-fd.txt](ch9-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch9-pronoun-drill/](exercises/ch9-pronoun-drill/index.md) | Pronoun identification and translation drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Personal pronoun frequency; pronoun type breakdown (personal/demonstrative/interrogative) in Daniel/Ezra |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

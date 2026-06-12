@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch11-pronoun-parsing/](exercises/ch11-pronoun-parsing/README.md) | 20-item parsing drill — person, case, and number for 1st/2nd person pronoun forms, plus translation |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch11-vocab-deck.md](ch11-vocab-deck.md) | Human-readable card list — 21 vocabulary words |
-| [ch11-vocab-deck.txt](ch11-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch11-vocab-deck-fd.txt](ch11-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Divine Names & Christological Titles](../../../notebooks/both/survey/divine_names/) | How θεός, κύριος, Ἰησοῦς, Χριστός, πατήρ, πνεῦμα distribute across the NT |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

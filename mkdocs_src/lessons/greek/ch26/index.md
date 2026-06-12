@@ -1,23 +1,6 @@
 # BBG Chapter 26 — Introduction to Participles
 
----
-
-## Files
-
-### Exercises
-
-*(No exercise for this overview chapter — see Ch27 for the first "Spot the Participle" drill.)*
-
-### Flashcards
-
-*No vocabulary introduced in this chapter.*
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Participle tense/voice profiles, adverbial vs adjectival role distribution |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Participial usage rates by genre |
+> Survey the Greek participle as a verbal adjective: it has tense-form (aspect), voice, and can take objects like a verb, but also declines for case, gender, and number like an adjective. Learn the morphological key: tense formative + participial morpheme (ων/ουσα/ον for present active; μενος/η/ον for middle/passive) + adjective endings. Understand the adverbial and adjectival uses that will be developed in Chs 27–30.
 
 ---
 

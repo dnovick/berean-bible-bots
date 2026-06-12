@@ -1,28 +1,11 @@
 # BBG Chapter 12 — αὐτός
 
----
+> Learn the three uses of αὐτός: (1) as a third-person personal pronoun in the oblique cases; (2) as an intensive pronoun in the predicate position ("himself/herself/itself"); and (3) as an adjective of identity in attributive position ("the same"). Memorize the αὐτός paradigm and recognize which use is in view by its syntactic position relative to the article.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch12-autos-parsing/](exercises/ch12-autos-parsing/index.md) | 20-item drill — parse αὐτός forms and identify which of the three uses applies |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch12-vocab-deck.md](ch12-vocab-deck.md) | Human-readable card list — 15 vocabulary words |
-| [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Syntactic Roles](../../../notebooks/nt/syntax/syntactic_roles_nt/) | What God and Jesus do as subjects/objects across the NT |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

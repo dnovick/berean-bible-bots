@@ -1,30 +1,11 @@
 # BBG Chapter 27 — Imperfective (Present) Adverbial Participles
 
----
+> Learn the present active and middle/passive adverbial participle paradigms and their primary adverbial uses: temporal ("while"), causal ("because"), concessive ("although"), means, and manner. Practice locating the participle's referent (same subject as the main verb) and translating with an appropriate English subordinate clause. The imperfective participle implies action simultaneous or overlapping with the main verb.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch27-present-participle-parsing/](exercises/ch27-present-participle-parsing/index.md) | "Spot the Present Participle" — 15-item passage drill: parse form, identify use, translate |
-| [exercises/ch27-participle-use-sort/](exercises/ch27-participle-use-sort/index.md) | Participle Use Classification Drill — 20 phrases: classify ADV / ADJ / SUB, identify key signal, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch27-vocab-deck.md](ch27-vocab-deck.md) | Human-readable card list — 14 vocabulary words |
-| [ch27-vocab-deck.txt](ch27-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch27-vocab-deck-fd.txt](ch27-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Present participle frequency; adverbial role count; genre comparison |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Present participle distribution by genre and function |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

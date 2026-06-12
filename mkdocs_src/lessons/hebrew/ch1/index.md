@@ -1,18 +1,11 @@
 # BBH Chapter 1 — Hebrew Alphabet
 
----
+> Master all 22 Hebrew consonants, the 5 sofit (final) forms, and the 6 begadkephat letters with their hard (dagesh lene) and soft pronunciations. Learn to read right-to-left script and recognize the letter classes—gutturals, begadkephat, and sibilants—that govern spelling and pointing throughout the entire grammar.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/index.md) | 30-item letter identification drill — all 22 base letters, 5 sofit forms, 3 begadkephat letters with dagesh lene |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

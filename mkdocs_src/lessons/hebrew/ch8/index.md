@@ -1,28 +1,11 @@
 # BBH Chapter 8 — Hebrew Pronouns
 
----
+> Memorize the independent personal pronouns (1cs, 2ms/fs, 3ms/fs, and all plural forms) and the demonstrative pronouns (near and far, both genders and numbers). Learn to distinguish a pronoun used as a subject from one serving as a predicate (verbless clause). Pronouns anticipate the pronominal suffix paradigms introduced in Ch9.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch8-pronoun-identification/](exercises/ch8-pronoun-identification/index.md) | 25-item identification drill — classify, parse, and translate Hebrew pronouns (Personal / Demonstrative / Relative / Interrogative) |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch8-vocab-deck.md](ch8-vocab-deck.md) | Markdown | Vocabulary deck — personal/demonstrative/interrogative pronouns, relative pronouns, and כִּי with OT frequency |
-| [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (20 cards) |
-| [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (20 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Pronoun frequency by type (personal/demonstrative/interrogative) in the Hebrew OT corpus |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

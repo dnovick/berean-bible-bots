@@ -1,5 +1,10 @@
 # Chapter 19 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch19-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch19-vocab-deck-fd.txt)
+
+---
+
+
 *14 words from BBH Chapter 19. Frequency counts are OT-wide occurrences.*
 *Import `ch19-vocab-deck.txt` directly into Anki (File → Import).*
 

@@ -1,12 +1,6 @@
 # BBG Chapter 5 — Introduction to English Nouns
 
----
-
-## Files
-
-### Exercises
-
-*No exercises for this preparatory chapter.*
+> Review English noun categories—number, gender, and case (nominative, genitive, dative, accusative, vocative)—as a conceptual bridge to the Greek case system. Understand that English relies on word order for case while Greek uses inflectional endings, and that mastering Greek cases is the key to reading noun phrases correctly. This chapter sets up the paradigm work in Chs 6–7.
 
 ---
 

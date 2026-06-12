@@ -1,31 +1,11 @@
 # BBG Chapter 31 — Subjunctive
 
----
+> Learn the present and aorist subjunctive paradigms (active, middle, and passive) characterized by the lengthened connecting vowel (η/ω). Study the primary uses of the subjunctive: purpose/result clauses (ἵνα), indefinite temporal clauses (ὅταν), conditional sentences (ἐάν), deliberative questions, hortatory subjunctive, and prohibitions with μή + aorist subjunctive. The subjunctive is the most common non-indicative mood in the NT.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch31-subjunctive-parsing/](exercises/ch31-subjunctive-parsing/index.md) | 20-item drill: parse subjunctive forms, identify use (hortatory/purpose/conditional), translate |
-| [exercises/ch31-subjunctive-use-sort/](exercises/ch31-subjunctive-use-sort/index.md) | Subjunctive Use Classification Drill — 20 clauses: classify HO/PU/CO/IN/DE/FS, parse, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch31-vocab-deck.md](ch31-vocab-deck.md) | Human-readable card list — 2 vocabulary words |
-| [ch31-vocab-deck.txt](ch31-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch31-vocab-deck-fd.txt](ch31-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Mood Usage](../../../notebooks/nt/syntax/mood_usage/) | Subjunctive distribution, construction types (purpose/conditional/hortatory), genre comparison |
-| [Concordance](../../../notebooks/both/lexicon/concordance/) | Find all subjunctive forms of any NT verb |
-| [Discourse Particles](../../../notebooks/nt/discourse/discourse_particles/) | ἵνα + subjunctive function classification (purpose/content/result); ὅτι function analysis |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

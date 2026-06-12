@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch6-nom-acc-parsing/](exercises/ch6-nom-acc-parsing/README.md) | 20-item parsing drill — identify case, number, gender, lexical form, and function for 2nd-declension nouns and articles |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch6-vocab-deck.md](ch6-vocab-deck.md) | Human-readable card list — 13 vocabulary words |
-| [ch6-vocab-deck.txt](ch6-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch6-vocab-deck-fd.txt](ch6-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution, article co-occurrence, top lemmas (nominative and accusative cases) |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

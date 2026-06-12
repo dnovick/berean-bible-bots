@@ -1,26 +1,11 @@
 # BBH Chapter 2 — Hebrew Vowels
 
----
+> Learn the full Hebrew vowel system: the seven absolute vowels classified by class (a, e, i, o, u) and quantity (long, short, half-long), the reduced shewa vowels (vocal and silent shewa, composite shewaim), and the role of matres lectionis. Correct vowel reading is the foundation for every parsing decision made in subsequent chapters.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch2-vowel-identification/](exercises/ch2-vowel-identification/index.md) | 25-item vowel identification drill — all five vowel classes, both sheva types, all three hatef shevas, matres lectionis, and dagesh forte |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch2-vocab-deck.md](ch2-vocab-deck.md) | Markdown | Vocabulary deck — 21 proper nouns (biblical names and places) with OT frequency |
-| [ch2-vocab-deck.txt](ch2-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (21 cards) |
-| [ch2-vocab-deck-fd.txt](ch2-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (21 cards) |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

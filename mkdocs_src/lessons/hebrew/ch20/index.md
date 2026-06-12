@@ -1,41 +1,11 @@
 # BBH Chapter 20 — Qal Infinitive Construct
 
----
+> Learn the Qal infinitive construct form, its use with the prepositions לְ and כְּ to express purpose, temporal, or complementary relationships, and how it takes pronominal suffixes as either its subject or object. Distinguish the infinitive construct from the imperative (identical form in most roots) by context and syntactic function. Weak-root variations (III-ה, I-י, hollow) are introduced alongside the strong pattern.
 
-## Files
-
-### Reference Files
-
-| File | Description |
+| Resource | Link |
 |---|---|
-| [infinitive-construct-paradigms.md](infinitive-construct-paradigms.md) | Full paradigm tables: Strong A/B, III-ה, Biconsonantal, I-י, I-נ, I-aleph; summary table |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch20-parsing-drill/](exercises/ch20-parsing-drill/index.md) | 25-item drill: Parts A/B (IC recognition by root class and preposition) and Part C (disambiguation vs. Imperative, Imperfect, Perfect) |
-| [exercises/ch20-passage-exercise/](exercises/ch20-passage-exercise/index.md) | 15-item passage exercise: Gen 2, Gen 11, Gen 19, Gen 37, Gen 39, Exo 3, Exo 19, Ecc 3, Gen 45 — full range of IC functions in context |
-| [exercises/ch20-qal-ic-paradigm-drill/](exercises/ch20-qal-ic-paradigm-drill/index.md) | Paradigm drill — write the Infinitive Construct and לְ form for 6 root classes |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch20-morphology-deck.md](ch20-morphology-deck.md) | Markdown | 32-card morphology deck — Qal Infinitive Construct with root class groupings |
-| [ch20-morphology-deck.txt](ch20-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (32 cards) |
-| [ch20-morphology-deck-fd.txt](ch20-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (32 cards) |
-| [ch20-vocab-deck.md](ch20-vocab-deck.md) | Markdown | Vocabulary deck — 15 words (8 verbs, 5 nouns, 2 other) with POS tags and frequency |
-| [ch20-vocab-deck.txt](ch20-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (15 cards) |
-| [ch20-vocab-deck-fd.txt](ch20-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (15 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Qal Stem](../../../notebooks/ot/verbs/qal/) | Qal stem: infinitive construct distribution and top roots |
-| [Verbal Syntax](../../../notebooks/ot/syntax/verbal_syntax/) | Infinitive construct usage and governing preposition analysis |
-| [Hebrew Prepositions](../../../notebooks/ot/syntax/prepositions/) | Governing prepositions on infinitive constructs (לְ, בְּ, כְּ, מִן) |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

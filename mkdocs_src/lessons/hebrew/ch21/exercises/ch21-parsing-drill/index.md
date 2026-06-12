@@ -24,10 +24,10 @@ This 25-item parsing drill covers Qal IA forms across all major root classes in 
 ## Sample Questions
 
 **Q1.** 1 מ֥וֹת תָּמוּת
-> **A:** IA = מ֥וֹת · מות · Biconsonantal · Emphatic — "you shall surely die"; death-penalty formula; IA before Imperfect 2ms of same root
+> **A:** IA = מ֥וֹת מות Biconsonantal Emphatic "you shall surely die"; death-penalty formula; IA before Imperfect 2ms of same root
 
 **Q2.** 2 אָכֹ֥ל תֹּאכֵֽל
-> **A:** IA = אָכֹ֥ל · אכל · I-aleph · Emphatic — "you may freely eat" (Gen 2:16); qamets under aleph; permission formula
+> **A:** IA = אָכֹ֥ל אכל I-aleph Emphatic "you may freely eat" (Gen 2:16); qamets under aleph; permission formula
 
 **Q3.** 3 שָׁמ֣וֹעַ תִּשְׁמָע
-> **A:** IA = שָׁמ֣וֹעַ · שמע · Strong B (gutt. R3) · Emphatic — "hear attentively"; qamets + holem-waw + patach before ע
+> **A:** IA = שָׁמ֣וֹעַ שמע Strong B (gutt. R3) Emphatic "hear attentively"; qamets + holem-waw + patach before ע

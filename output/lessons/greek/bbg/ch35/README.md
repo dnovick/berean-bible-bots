@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch35-conditionals-drill/](exercises/ch35-conditionals-drill/README.md) | 20-item drill: identify conditional type, parse relevant verb forms, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch35-vocab-deck.md](ch35-vocab-deck.md) | Human-readable card list — 15 vocabulary words |
-| [ch35-vocab-deck.txt](ch35-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch35-vocab-deck-fd.txt](ch35-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~415 δίδωμι tokens; ~650 conditional sentences NT-wide)*
 

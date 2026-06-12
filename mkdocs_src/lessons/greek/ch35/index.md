@@ -1,28 +1,11 @@
 # BBG Chapter 35 — Nonindicative of δίδωμι and Conditional Sentences
 
----
+> Learn the non-indicative forms of δίδωμι (subjunctive, imperative, infinitive, and participle) alongside the parallel forms of τίθημι and ἵστημι for contrast. Study the four classes of Greek conditional sentences (simple, future more vivid, present general, contrary to fact) and the mood/tense combinations that signal each class. Conditional sentences are pervasive in Paul and important for understanding the logical structure of NT argumentation.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch35-conditionals-drill/](exercises/ch35-conditionals-drill/index.md) | 20-item drill: identify conditional type, parse relevant verb forms, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch35-vocab-deck.md](ch35-vocab-deck.md) | Human-readable card list — 15 vocabulary words |
-| [ch35-vocab-deck.txt](ch35-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch35-vocab-deck-fd.txt](ch35-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Morphological Distribution](../../../notebooks/both/lexicon/morph_distribution/) | How δίδωμι, ἵστημι, τίθημι forms distribute across tenses and books |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

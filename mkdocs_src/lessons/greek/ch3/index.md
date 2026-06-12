@@ -1,22 +1,11 @@
 # BBG Chapter 3 — The Alphabet and Pronunciation
 
----
+> Master all 24 Greek letters in upper and lower case, learn the two pronunciation systems (Erasmian and modern Greek), and practice writing the alphabet in sequence. Identify vowels, consonants, diphthongs, and the breathing-mark system. Accurate letter recognition is the prerequisite for every subsequent chapter involving paradigm memorization and text reading.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch3-alphabet-drill/](exercises/ch3-alphabet-drill/index.md) | 24-item letter identification drill — recognize letter name and sound from written form |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch3-alphabet-deck.md](ch3-alphabet-deck.md) | Human-readable card list — 24 cards: every letter with name, transliteration, and pronunciation |
-| [ch3-alphabet-deck.txt](ch3-alphabet-deck.txt) | Anki import file (File → Import) |
-| [ch3-alphabet-deck-fd.txt](ch3-alphabet-deck-fd.txt) | Flashcards Deluxe import file |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

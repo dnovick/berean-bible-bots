@@ -1,28 +1,13 @@
 # BBA Chapter 21 — The Haphel Stem
 
+> Learn the Haphel stem paradigms in all conjugations and identify the diagnostic הַ- (or אַ-) preformative that marks this causative stem, analogous to the Hebrew Hiphil (BBH Ch26). Understand the Haphel's causative function and note that in some roots Biblical Aramaic uses the Aphel (Ch22) instead of the Haphel; the two are historically related and functionally equivalent.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 21: The Haphel Stem*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch21-haphel-stem-drill/](exercises/ch21-haphel-stem-drill/index.md) | 20-item Haphel stem parsing drill |
-| [exercises/ch21-haphel-peal-contrast/](exercises/ch21-haphel-peal-contrast/index.md) | Haphel vs. Peal Contrast Drill — 20 items: identify causative הַ/הוֹ prefix vs. simple Peal, parse, translate |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Haphel stem profile; causative roots in Daniel/Ezra |
 
 ---
 

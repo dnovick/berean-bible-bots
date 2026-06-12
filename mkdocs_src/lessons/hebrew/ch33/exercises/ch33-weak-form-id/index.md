@@ -19,10 +19,10 @@ A 25-item identification and parsing exercise covering four Pual weak classes (I
 ## Sample Questions
 
 **Q1.** 1 יְכֻלּוּ Gen 2:1 ▶
-> **A:** Wayyiqtol · 3mp · כָּלָה — were finished/completed; qibbuts under כ + dagesh forte in ל; III-he Pual 3mp shureq ending; "thus the heavens and earth were completed"
+> **A:** Wayyiqtol 3mp כָּלָה — were finished/completed; qibbuts under כ + dagesh forte in ל; III-he Pual 3mp shureq ending; "thus the heavens and earth were completed"
 
 **Q2.** 2 יְכֻסּוּ Gen 7:19 ▶
-> **A:** Wayyiqtol · 3mp · כָּסָה — were covered; qibbuts under כ + dagesh forte in ס; III-he Pual 3mp shureq ending; "all the high mountains were covered"
+> **A:** Wayyiqtol 3mp כָּסָה — were covered; qibbuts under כ + dagesh forte in ס; III-he Pual 3mp shureq ending; "all the high mountains were covered"
 
 **Q3.** 3 כֻּסָּה Exo 15:5 ▶
-> **A:** Perfect · 3ms · כָּסָה — it was covered; qibbuts under כ + dagesh forte in ס; III-he Pual perfect 3ms: qamets + ה ending; Song of the Sea
+> **A:** Perfect 3ms כָּסָה — it was covered; qibbuts under כ + dagesh forte in ס; III-he Pual perfect 3ms: qamets + ה ending; Song of the Sea

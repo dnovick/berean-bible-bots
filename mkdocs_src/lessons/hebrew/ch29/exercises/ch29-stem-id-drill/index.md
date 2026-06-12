@@ -25,10 +25,10 @@ A 24-item identification drill mixing Qal, Niphal, Hiphil, and Hophal forms of h
 ## Sample Questions
 
 **Q1.** 1 בָּא
-> **A:** Qal · Perfect · 3ms · בוא — he came · Hollow root contracts; qamets under בּ = Qal Perfect 3ms. No prefix vowel marker.
+> **A:** Qal Perfect 3ms בוא he came · Hollow root contracts; qamets under בּ = Qal Perfect 3ms. No prefix vowel marker.
 
 **Q2.** 2 הֵבִיא
-> **A:** Hiphil · Perfect · 3ms · בוא — he brought · Hiphil hollow: הֵ prefix (tsere) + chiriq-yod in contracted stem.
+> **A:** Hiphil Perfect 3ms בוא he brought · Hiphil hollow: הֵ prefix (tsere) + chiriq-yod in contracted stem.
 
 **Q3.** 3 נָבוֹא
-> **A:** Niphal · Perfect · 3ms · בוא — he entered / he came in (reflexive) · Niphal hollow Perfect: נָ prefix (qamets) + full stem with holem-waw. The נִ lengthens to נָ before the hollow root's long vowel.
+> **A:** Niphal Perfect 3ms בוא he entered / he came in (reflexive) · Niphal hollow Perfect: נָ prefix (qamets) + full stem with holem-waw. The נִ lengthens to נָ before the hollow root's long vowel.

@@ -1,28 +1,11 @@
 # BBG Chapter 14 — Relative Pronoun
 
----
+> Learn the relative pronoun paradigm (ὅς, ἥ, ὅ), which resembles the article but always has a breathing mark and accent. Understand that the relative pronoun agrees with its antecedent in gender and number but takes its case from its function in the relative clause. Relative clauses are among the most common subordinate clause types in the NT and are essential for parsing Christological statements in John and Colossians.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch14-relative-parsing/](exercises/ch14-relative-parsing/index.md) | 20-item drill: parse relative pronoun, identify antecedent, and translate relative clause |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch14-vocab-deck.md](ch14-vocab-deck.md) | Human-readable card list — 18 vocabulary words |
-| [ch14-vocab-deck.txt](ch14-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch14-vocab-deck-fd.txt](ch14-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Syntactic Roles](../../../notebooks/nt/syntax/syntactic_roles_nt/) | Clause-level syntactic role analysis |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

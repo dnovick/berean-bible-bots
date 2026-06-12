@@ -1,38 +1,11 @@
 # BBG Chapter 7 — Genitive and Dative
 
----
+> Add the genitive and dative cases to the second-declension masculine and neuter paradigms and to the article. Learn the primary functions of the genitive (possession, description, partitive, separation) and the dative (indirect object, sphere, means, manner), and practice parsing all four cases in connected text. Completing the four main cases of the second declension equips students to read basic noun phrases in the GNT.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch7-gen-dat-parsing/](exercises/ch7-gen-dat-parsing/index.md) | 20-item parsing drill — case, number, gender, and lexical form for 2nd-declension forms |
-| [exercises/ch7-article-id/](exercises/ch7-article-id/index.md) | 20-item definite article identification drill — case, number, and gender from GNT context |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch7-vocab-deck.md](ch7-vocab-deck.md) | Human-readable card list — 15 vocabulary words |
-| [ch7-vocab-deck.txt](ch7-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch7-vocab-deck-fd.txt](ch7-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch7-article-deck.md](ch7-article-deck.md) | Human-readable card list — 17 cards: complete definite article paradigm (all genders, cases, numbers) |
-| [ch7-article-deck.txt](ch7-article-deck.txt) | Anki import file (File → Import) |
-| [ch7-article-deck-fd.txt](ch7-article-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch7-noun-paradigm-deck.md](ch7-noun-paradigm-deck.md) | Human-readable card list — 30 cards: full inflection of λόγος, γραφή, ὥρα, ἔργον |
-| [ch7-noun-paradigm-deck.txt](ch7-noun-paradigm-deck.txt) | Anki import file (File → Import) |
-| [ch7-noun-paradigm-deck-fd.txt](ch7-noun-paradigm-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch7-autos-deck.md](ch7-autos-deck.md) | Human-readable card list — 17 cards: all forms of αὐτός (he, she, it / himself / the same) |
-| [ch7-autos-deck.txt](ch7-autos-deck.txt) | Anki import file (File → Import) |
-| [ch7-autos-deck-fd.txt](ch7-autos-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution — genitive and dative cases in context |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

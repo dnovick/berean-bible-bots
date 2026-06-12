@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch21-imperfect-parsing/](exercises/ch21-imperfect-parsing/README.md) | Imperfect Parsing Drill — 20 forms to parse |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch21-vocab-deck.md](ch21-vocab-deck.md) | Human-readable card list — 9 vocabulary words |
-| [ch21-vocab-deck.txt](ch21-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch21-vocab-deck-fd.txt](ch21-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Imperfect tense profile; narrative vs. discourse |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Imperfect tense distribution in narrative vs epistolary genres |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~6,900 imperfect indicative tokens NT-wide)*
 

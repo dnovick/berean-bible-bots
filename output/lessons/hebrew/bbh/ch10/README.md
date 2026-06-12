@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch10-construct-chain/](exercises/ch10-construct-chain/README.md) | 25-item drill — identify construct noun, absolute noun, definiteness, and translation for each chain |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch10-vocab-deck.md](ch10-vocab-deck.md) | Markdown | Vocabulary deck — 17 high-frequency nouns with OT frequency |
-| [ch10-vocab-deck.txt](ch10-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (17 cards) |
-| [ch10-vocab-deck-fd.txt](ch10-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (17 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Noun Morphology](../../../notebooks/ot/nouns/ot_nouns/) | Top nouns in construct state, construct % by lemma, lemma × state crosstab across the OT |
-| [Collocation and Phrase Search](../../../notebooks/both/lexicon/collocation_and_phrase/) | Phrase search: find construct chains and prepositional phrases in the OT corpus |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Topic: Construct Chain (סְמִיכוּת, semikhut) — BBH §10*
 

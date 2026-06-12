@@ -19,10 +19,10 @@ This 20-item drill covers all five clause types taught in BBH Chapter 23: Verbal
 ## Sample Questions
 
 **Q1.** 1 וַיִּבְרָ֨א אֱלֹהִ֤ים אֶת-הָ/אָדָ֙ם֙ (Gen 1:27)
-> **A:** Type: Verbal VSO &nbsp;|&nbsp; Verb: וַיִּבְרָ֨א — Wayyiqtol Qal 3ms &nbsp;|&nbsp; Subject: אֱלֹהִ֤ים &nbsp;|&nbsp; Object: אֶת-הָאָדָ֙ם֙ (definite, marked by אֵת) &nbsp;|&nbsp; Gloss: "And God created man"
+> **A:** Type: Verbal VSO &nbsp;|&nbsp; Verb: וַיִּבְרָ֨א Wayyiqtol Qal 3ms &nbsp;|&nbsp; Subject: אֱלֹהִ֤ים &nbsp;|&nbsp; Object: אֶת-הָאָדָ֙ם֙ (definite, marked by אֵת) &nbsp;|&nbsp; Gloss: "And God created man"
 
 **Q2.** 2 וַיֹּ֤אמֶר יְהוָ֔ה אֶל-מֹשֶׁ֖ה (Exo 3:7)
-> **A:** Type: Verbal VSO &nbsp;|&nbsp; Verb: וַיֹּ֤אמֶר — Wayyiqtol Qal 3ms &nbsp;|&nbsp; Subject: יְהוָ֔ה &nbsp;|&nbsp; Object: אֶל-מֹשֶׁ֖ה (PP) &nbsp;|&nbsp; Gloss: "And the LORD said to Moses"
+> **A:** Type: Verbal VSO &nbsp;|&nbsp; Verb: וַיֹּ֤אמֶר Wayyiqtol Qal 3ms &nbsp;|&nbsp; Subject: יְהוָ֔ה &nbsp;|&nbsp; Object: אֶל-מֹשֶׁ֖ה (PP) &nbsp;|&nbsp; Gloss: "And the LORD said to Moses"
 
 **Q3.** 3 שָׁמְע֖וּ בְּנֵ֣י יִשְׂרָאֵ֑ל (Deu 6:4 opening)
-> **A:** Type: Verbal VSO &nbsp;|&nbsp; Verb: שָׁמְע֖וּ — Qal Imperative 2mp &nbsp;|&nbsp; Subject: — (addressed; בְּנֵי יִשְׂרָאֵל is vocative) &nbsp;|&nbsp; Object: — &nbsp;|&nbsp; Gloss: "Hear, O Israel" (Imperative + subject vocative)
+> **A:** Type: Verbal VSO &nbsp;|&nbsp; Verb: שָׁמְע֖וּ Qal Imperative 2mp &nbsp;|&nbsp; Subject: — (addressed; בְּנֵי יִשְׂרָאֵל is vocative) &nbsp;|&nbsp; Object: — &nbsp;|&nbsp; Gloss: "Hear, O Israel" (Imperative + subject vocative)

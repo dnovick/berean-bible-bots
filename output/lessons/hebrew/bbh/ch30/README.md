@@ -2,43 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-| File | Description |
-|---|---|
-| [piel-paradigms.md](piel-paradigms.md) | Full PGN paradigm tables — Piel (דִּבֵּר model) with Qal reference column |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch30-passage-exercise/](exercises/ch30-passage-exercise/README.md) | Passage exercise — identify and parse Piel Strong verbs in Torah narrative |
-| [exercises/ch30-function-sort/](exercises/ch30-function-sort/README.md) | Semantic function sorting — classify 25 Piel forms as I / F / D / DN / SA |
-| [exercises/ch30-qal-piel-contrast/](exercises/ch30-qal-piel-contrast/README.md) | Qal vs. Piel contrast drill — parse 25 forms and identify stem, noting meaning shift |
-| [exercises/ch30-piel-paradigm-drill/](exercises/ch30-piel-paradigm-drill/README.md) | Paradigm drill — write all 30 inflected forms of דבר (Piel) from memory |
-| [exercises/ch30-stem-id-drill/](exercises/ch30-stem-id-drill/README.md) | Stem identification drill — Qal/Niphal/Piel strong roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch30-morphology-deck.md](ch30-morphology-deck.md) | Markdown | 24-card morphology deck — Piel Strong forms across all 8 conjugations for 4 roots |
-| [ch30-morphology-deck.txt](ch30-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (24 cards) |
-| [ch30-morphology-deck-fd.txt](ch30-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (24 cards) |
-| [ch30-vocab-deck.md](ch30-vocab-deck.md) | Markdown | 12-word vocabulary deck — 4 verbs + 8 nouns |
-| [ch30-vocab-deck.txt](ch30-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch30-vocab-deck-fd.txt](ch30-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Piel Stem](../../../notebooks/ot/verbs/piel/) | Piel stem: complete morphological profile, intensive/factitive/declarative categories |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 30*
 
 ## 1. Function

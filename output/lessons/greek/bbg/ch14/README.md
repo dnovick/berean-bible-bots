@@ -2,30 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch14-relative-parsing/](exercises/ch14-relative-parsing/README.md) | 20-item drill: parse relative pronoun, identify antecedent, and translate relative clause |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch14-vocab-deck.md](ch14-vocab-deck.md) | Human-readable card list — 18 vocabulary words |
-| [ch14-vocab-deck.txt](ch14-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch14-vocab-deck-fd.txt](ch14-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Syntactic Roles](../../../notebooks/nt/syntax/syntactic_roles_nt/) | Clause-level syntactic role analysis |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

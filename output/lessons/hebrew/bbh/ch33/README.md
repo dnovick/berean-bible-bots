@@ -2,35 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch33-passage-exercise/](exercises/ch33-passage-exercise/README.md) | Passage exercise — identify and parse weak Pual verbs in context (Gen 4:18; 4:26; 46:22 · Lev 7:36; Num 3:9 · Lev 8:35; Num 22:6; Psa 72:17) |
-| [exercises/ch33-weak-form-id/](exercises/ch33-weak-form-id/README.md) | Weak Pual identification drill — parse 20 weak Pual forms grouped by weak class + 10 mixed |
-| [exercises/ch33-function-sort/](exercises/ch33-function-sort/README.md) | Semantic function sorting — Pual Weak verbs by function type |
-| [exercises/ch33-pual-weak-paradigm-drill/](exercises/ch33-pual-weak-paradigm-drill/README.md) | Paradigm drill — write selected Pual Weak forms for בנה (III-ה) from memory |
-| [exercises/ch33-qal-piel-pual-contrast/](exercises/ch33-qal-piel-pual-contrast/README.md) | Qal–Piel–Pual contrast drill (weak roots) |
-| [exercises/ch33-stem-id-drill/](exercises/ch33-stem-id-drill/README.md) | Stem identification drill — Qal/Piel/Pual weak roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch33-vocab-deck.md](ch33-vocab-deck.md) | Markdown | 12-word vocabulary deck — 5 verbs + 7 nouns |
-| [ch33-vocab-deck.txt](ch33-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch33-vocab-deck-fd.txt](ch33-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Pual Stem](../../../notebooks/ot/verbs/pual/) | Pual stem: root×conjugation heatmap; weak root behavior in the passive intensive |
-
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 33*
 
 > **Scope:** This chapter extends the Pual paradigm (Ch32) to weak-root classes. The Pual is the

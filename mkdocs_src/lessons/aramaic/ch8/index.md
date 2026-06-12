@@ -1,28 +1,11 @@
 # BBA Chapter 8 — Pronominal Suffixes
 
----
+> Learn the Aramaic pronominal suffix paradigm and attach suffixes to singular and plural nouns to express possession and to prepositions as object pronouns. Compare the Aramaic suffix set with the Hebrew Type 1 and Type 2 paradigms (BBH Ch9); the forms overlap substantially but have Aramaic-specific variants. Suffixes also attach to verbs as direct objects (Ch13+), making this one of the most productive paradigms in the course.
 
-## Files
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch8-vocab-deck.md](ch8-vocab-deck.md) | Reference list with glosses |
-| [ch8-vocab-deck.txt](ch8-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch8-vocab-deck-fd.txt](ch8-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch8-suffix-drill/](exercises/ch8-suffix-drill/index.md) | Pronominal suffix identification and translation drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Pronoun type distribution; pronominal suffix frequency and patterns in Daniel/Ezra |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

@@ -25,10 +25,10 @@ A 24-item identification drill mixing Qal, Niphal, Hiphil, and Hophal forms of s
 ## Sample Questions
 
 **Q1.** 1 קָטַל
-> **A:** Qal · Perfect · 3ms · קטל — he killed
+> **A:** Qal Perfect 3ms קטל he killed
 
 **Q2.** 2 הִקְטִיל
-> **A:** Hiphil · Perfect · 3ms · קטל — he caused to kill · Hiphil marker: הִ prefix + chiriq in 2nd position (קְטִיל)
+> **A:** Hiphil Perfect 3ms קטל he caused to kill · Hiphil marker: הִ prefix + chiriq in 2nd position (קְטִיל)
 
 **Q3.** 3 נִקְטַל
-> **A:** Niphal · Perfect · 3ms · קטל — he was killed · Niphal marker: נִ prefix in Perfect
+> **A:** Niphal Perfect 3ms קטל he was killed · Niphal marker: נִ prefix in Perfect

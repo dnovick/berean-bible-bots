@@ -20,10 +20,10 @@
 ## Sample Questions
 
 **Q1.** 1 דָּבַר
-> **A:** Qal · Perfect · 3ms · דבר · "he spoke" (rare) — qamets under ד; patach under ב; no dagesh in ב
+> **A:** Qal Perfect 3ms דבר "he spoke" (rare) — qamets under ד; patach under ב; no dagesh in ב
 
 **Q2.** 2 דִּבֶּר
-> **A:** Piel · Perfect · 3ms · דבר · "he spoke" — hiriq under ד + dagesh forte in ב + tsere theme vowel
+> **A:** Piel Perfect 3ms דבר "he spoke" — hiriq under ד + dagesh forte in ב + tsere theme vowel
 
 **Q3.** 3 דֻּבַּר
-> **A:** Pual · Perfect · 3ms · דבר · "it was spoken" — qibbuts under ד + dagesh forte in ב + patach theme vowel
+> **A:** Pual Perfect 3ms דבר "it was spoken" — qibbuts under ד + dagesh forte in ב + patach theme vowel

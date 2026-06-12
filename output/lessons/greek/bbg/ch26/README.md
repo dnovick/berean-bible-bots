@@ -2,25 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-*(No exercise for this overview chapter — see Ch27 for the first "Spot the Participle" drill.)*
-
-### Flashcards
-
-*No vocabulary introduced in this chapter.*
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Participle tense/voice profiles, adverbial vs adjectival role distribution |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Participial usage rates by genre |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~6,600 participle tokens NT-wide)*
 

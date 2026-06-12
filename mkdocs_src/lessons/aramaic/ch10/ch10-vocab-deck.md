@@ -1,5 +1,10 @@
 # Chapter 10 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch10-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch10-vocab-deck-fd.txt)
+
+---
+
+
 *21 words from BBA Chapter 10 (Adjectives and Numbers): adjectives, cardinal numbers, and ordinal numbers.*
 *Import `ch10-vocab-deck.txt` directly into Anki (File → Import).*
 

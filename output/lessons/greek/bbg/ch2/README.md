@@ -2,14 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-*No exercises for this introductory chapter.*
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

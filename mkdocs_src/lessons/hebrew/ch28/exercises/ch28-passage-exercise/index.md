@@ -18,11 +18,11 @@ Students identify and parse Hophal (passive causative) verbs across three passag
 
 ## Sample Questions
 
-**Q1.** 1 וַיֻּגַּד
+**Q1.** 1 וַיֻּגַּד Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp
 > **A:** ✓ Hophal | Wayyiqtol | 3ms | נגד | Hiphil הִגִּיד = "to tell, declare, report" → Hophal = "it was reported." Qibbuts (ֻ) under the prefix consonant is an alternate Hophal vowel alongside Shureq. The Dagesh forte in the gimel (גּ) comes from the Hiphil doubling pattern.
 
-**Q2.** 2 וַיֻּכּוּ
+**Q2.** 2 וַיֻּכּוּ Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp
 > **A:** ✓ Hophal | Wayyiqtol | 3mp | נכה | Hiphil הִכָּה = "to strike, beat, kill" → Hophal = "were struck/beaten." The root נכה is I-נ: the nun assimilates into the next consonant (here into כ, giving dagesh: יֻּכּוּ). Qibbuts under prefix = Hophal marker.
 
-**Q3.** 3 נִתָּן
-> **A:** ✗ No — Niphal | Participle ms | ms | נתן | Niphal passive (not Hophal). The נִ prefix distinguishes it. נִתָּן = "is given" (Niphal of נתן "to give"); this is the Niphal passivizing the Qal, not the Hiphil causative. No u-class vowel under prefix — that confirms it is NOT Hophal.
+**Q3.** 3 נִתָּן Yes No Perfect Imperfect Wayyiqtol Weqatal Imperative Inf. Construct Inf. Absolute Participle 3ms 3mp 3fs 3fp 2ms 2mp 2fs 1cs 1cp ms + 3mp suffix ms fs mp fp
+> **A:** ✗ No Niphal | Participle ms | ms | נתן | Niphal passive (not Hophal). The נִ prefix distinguishes it. נִתָּן = "is given" (Niphal of נתן "to give"); this is the Niphal passivizing the Qal, not the Hiphil causative. No u-class vowel under prefix — that confirms it is NOT Hophal.

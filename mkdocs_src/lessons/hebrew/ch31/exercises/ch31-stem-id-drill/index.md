@@ -25,10 +25,10 @@ A 24-item drill requiring students to identify the stem (Qal, Niphal, Hiphil, or
 ## Sample Questions
 
 **Q1.** 1 בֵּרַךְ
-> **A:** Piel · Perfect · 3ms · ברך — I-guttural ב: virtual dagesh (tsere lengthened before R2 rather than dagesh added); chirik–patach vowels signal Piel perfect
+> **A:** Piel Perfect 3ms ברך — I-guttural ב: virtual dagesh (tsere lengthened before R2 rather than dagesh added); chirik–patach vowels signal Piel perfect
 
 **Q2.** 2 בָּרַךְ
-> **A:** Qal · Perfect · 3ms · ברך — Qamets–patach = standard Qal perfect; no dagesh in R2
+> **A:** Qal Perfect 3ms ברך — Qamets–patach = standard Qal perfect; no dagesh in R2
 
 **Q3.** 3 גִּלָּה
-> **A:** Piel · Perfect · 3ms · גלה — Dagesh in ל (R2) + III-ה contraction: ends in ָּה (qamets + dagesh-he); chirik under ג
+> **A:** Piel Perfect 3ms גלה — Dagesh in ל (R2) + III-ה contraction: ends in ָּה (qamets + dagesh-he); chirik under ג

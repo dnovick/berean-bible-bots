@@ -19,10 +19,10 @@ A 25-item active/passive contrast and identification exercise introducing the Pu
 ## Sample Questions
 
 **Q1.** 1 תְּבָרֵךְ Num 22:6 ▶
-> **A:** Piel · Imperfect · 2ms · "you bless" — tsere as Piel stem vowel; ר rejects dagesh → compensatory lengthening to tsere; active; context: Balak to Balaam "whom you bless is blessed"
+> **A:** Piel Imperfect 2ms "you bless" — tsere as Piel stem vowel; ר rejects dagesh → compensatory lengthening to tsere; active; context: Balak to Balaam "whom you bless is blessed"
 
 **Q2.** 2 מְבֹרָךְ Num 22:6 ▶
-> **A:** Pual · Participle · ms · "is blessed" — Pual passive participle; qibbuts expected under ב (R1) but ר (R2) rejects dagesh forte → vowel compensatorily lengthened to qamets (ָ) under ר
+> **A:** Pual Participle ms "is blessed" — Pual passive participle; qibbuts expected under ב (R1) but ר (R2) rejects dagesh forte → vowel compensatorily lengthened to qamets (ָ) under ר
 
 **Q3.** 3 וְקִדַּשְׁתָּ Exo 29:36 ▶
-> **A:** Piel · Weqatal · 2ms · "and you shall consecrate" — hiriq under ק + dagesh forte in ד; Piel active weqatal with ו conjunction
+> **A:** Piel Weqatal 2ms "and you shall consecrate" — hiriq under ק + dagesh forte in ד; Piel active weqatal with ו conjunction

@@ -1,5 +1,10 @@
 # Chapter 17 — Wayyiqtol and Weqatal Morphology Deck
 
+**Download:** [Anki import (.txt)](ch17-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch17-morphology-deck-fd.txt)
+
+---
+
+
 *BBH Chapter 17 · 32 cards*
 
 ---

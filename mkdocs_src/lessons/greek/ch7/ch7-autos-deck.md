@@ -1,5 +1,10 @@
 # Chapter 7 — αὐτός Paradigm Deck
 
+**Download:** [Anki import (.txt)](ch7-autos-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch7-autos-deck-fd.txt)
+
+---
+
+
 *17 cards covering all forms of αὐτός, -ή, -ό across all three genders, four cases, and two numbers.*
 *Import `ch7-autos-deck.txt` directly into Anki (File → Import).*
 

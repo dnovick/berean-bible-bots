@@ -20,12 +20,17 @@
   td { padding: .35rem .5rem; border: 1px solid #ddd; vertical-align: middle; }
   td.verb-cell { font-size: 1.1rem; direction: rtl; unicode-bidi: embed; font-weight: bold; }
   td.num-cell { text-align: center; font-weight: bold; color: #666; width: 2rem; }
-  input.parse-field {
+  .parse-field {
     width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px;
     padding: .25rem .4rem; font-family: Georgia, serif; font-size: .88rem;
     background: #fafff8;
   }
-  input.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .hiphil-select {
+    width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px;
+    padding: .25rem .4rem; font-family: Georgia, serif; font-size: .88rem;
+    background: #fafff8;
+  }
   .answer-row { display: none; background: #f0faf0; }
   .answer-row td { border-top: none; font-size: .88rem; color: #2a6e2a; padding: .3rem .5rem; }
   .answer-row.wrong td { background: #fff0f0; color: #8b0000; }
@@ -55,7 +60,7 @@
   .reflection ol li { margin-bottom: .75rem; }
   @media print {
     .controls, button.reveal-btn { display: none; }
-    input.parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    .parse-field, .hiphil-select { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
     .answer-row { display: none !important; }
   }
 </style>
@@ -94,32 +99,42 @@
     <tr>
       <td class="num-cell">1</td>
       <td class="verb-cell">נִשְׁחָתָה</td>
-      <td><input class="parse-field" id="d1-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="d1-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="d1-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="d1-root" placeholder="root"></td>
-      <td><input class="parse-field" id="d1-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="d1-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="d1-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="d1-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="d1-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="d1-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('d1')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row wrong" id="ans-d1">
       <td class="answer-label">✗</td>
       <td class="answer-hebrew">נִשְׁחָתָה</td>
-      <td colspan="6">✗ <strong>No — Niphal</strong> | Weqatal 3fs | שָׁחַת | NOT Hiphil — Niphal passive: <em>was corrupt</em>; נ assimilates: Niphal weqatal passive</td>
+      <td><strong>No</strong></td>
+      <td>Weqatal</td>
+      <td>3fs</td>
+      <td style="direction:rtl;unicode-bidi:embed;">שָׁחַת</td>
+      <td>NOT Hiphil — Niphal passive: <em>was corrupt</em>; נ assimilates: Niphal weqatal passive</td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">2</td>
       <td class="verb-cell">הִשְׁחִית</td>
-      <td><input class="parse-field" id="2-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="2-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="2-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="2-root" placeholder="root"></td>
-      <td><input class="parse-field" id="2-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="2-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="2-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="2-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="2-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="2-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(2)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-2">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">הִשְׁחִית</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Perfect (qatal) 3ms | שָׁחַת | Causative — <em>had corrupted</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Perfect (qatal)</td>
+      <td>3ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">שָׁחַת</td>
+      <td>Causative — <em>had corrupted</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -134,17 +149,22 @@
     <tr>
       <td class="num-cell">3</td>
       <td class="verb-cell">מַשְׁחִיתָם</td>
-      <td><input class="parse-field" id="3-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="3-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="3-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="3-root" placeholder="root"></td>
-      <td><input class="parse-field" id="3-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="3-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="3-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="3-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="3-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="3-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(3)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-3">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">מַשְׁחִיתָם</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Participle + 3mp suffix ms | שָׁחַת | Causative — <em>destroying them</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Participle</td>
+      <td>ms + 3mp sfx</td>
+      <td style="direction:rtl;unicode-bidi:embed;">שָׁחַת</td>
+      <td>Causative — <em>destroying them</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -159,17 +179,22 @@
     <tr>
       <td class="num-cell">4</td>
       <td class="verb-cell">מֵבִיא</td>
-      <td><input class="parse-field" id="4-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="4-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="4-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="4-root" placeholder="root"></td>
-      <td><input class="parse-field" id="4-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="4-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="4-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="4-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="4-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="4-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(4)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-4">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">מֵבִיא</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Participle ms | בּוֹא | Causative — <em>bringing</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Participle</td>
+      <td>ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">בּוֹא</td>
+      <td>Causative — <em>bringing</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -184,17 +209,22 @@
     <tr>
       <td class="num-cell">5</td>
       <td class="verb-cell">וַהֲקִמֹתִי</td>
-      <td><input class="parse-field" id="5-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="5-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="5-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="5-root" placeholder="root"></td>
-      <td><input class="parse-field" id="5-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="5-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="5-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="5-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="5-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="5-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(5)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-5">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וַהֲקִמֹתִי</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Weqatal 1cs | קוּם | Factitive — <em>I will establish</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Weqatal</td>
+      <td>1cs</td>
+      <td style="direction:rtl;unicode-bidi:embed;">קוּם</td>
+      <td>Factitive — <em>I will establish</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -209,17 +239,22 @@
     <tr>
       <td class="num-cell">6</td>
       <td class="verb-cell">תָּבִיא</td>
-      <td><input class="parse-field" id="6-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="6-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="6-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="6-root" placeholder="root"></td>
-      <td><input class="parse-field" id="6-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="6-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="6-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="6-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="6-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="6-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(6)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-6">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">תָּבִיא</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Imperfect 2ms | בּוֹא | Causative — <em>you shall bring</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Imperfect</td>
+      <td>2ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">בּוֹא</td>
+      <td>Causative — <em>you shall bring</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -234,32 +269,42 @@
     <tr>
       <td class="num-cell">7</td>
       <td class="verb-cell">לְהַחֲיֹת</td>
-      <td><input class="parse-field" id="7-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="7-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="7-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="7-root" placeholder="root"></td>
-      <td><input class="parse-field" id="7-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="7-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="7-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="7-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="7-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="7-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(7)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-7">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">לְהַחֲיֹת</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Inf. Construct — | חָיָה | Causative — <em>to keep alive</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Inf. Construct</td>
+      <td>—</td>
+      <td style="direction:rtl;unicode-bidi:embed;">חָיָה</td>
+      <td>Causative — <em>to keep alive</em></td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">8</td>
       <td class="verb-cell">לְהַחֲיוֹת</td>
-      <td><input class="parse-field" id="8-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="8-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="8-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="8-root" placeholder="root"></td>
-      <td><input class="parse-field" id="8-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="8-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="8-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="8-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="8-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="8-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(8)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-8">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">לְהַחֲיוֹת</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Inf. Construct — | חָיָה | Causative — <em>to keep alive</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Inf. Construct</td>
+      <td>—</td>
+      <td style="direction:rtl;unicode-bidi:embed;">חָיָה</td>
+      <td>Causative — <em>to keep alive</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -278,17 +323,22 @@
     <tr>
       <td class="num-cell">9</td>
       <td class="verb-cell">מַמְטִיר</td>
-      <td><input class="parse-field" id="9-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="9-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="9-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="9-root" placeholder="root"></td>
-      <td><input class="parse-field" id="9-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="9-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="9-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="9-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="9-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="9-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(9)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-9">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">מַמְטִיר</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Participle ms | מָטַר | Causative/Denominative — <em>causing rain to fall</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Participle</td>
+      <td>ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">מָטַר</td>
+      <td>Causative/Denominative — <em>causing rain to fall</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -307,17 +357,22 @@
     <tr>
       <td class="num-cell">10</td>
       <td class="verb-cell">וַיַּעֲבֵר</td>
-      <td><input class="parse-field" id="10-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="10-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="10-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="10-root" placeholder="root"></td>
-      <td><input class="parse-field" id="10-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="10-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="10-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="10-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="10-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="10-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(10)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-10">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וַיַּעֲבֵר</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | עָבַר | Causative — <em>caused to pass over</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Wayyiqtol</td>
+      <td>3ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">עָבַר</td>
+      <td>Causative — <em>caused to pass over</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -331,17 +386,22 @@
     <tr>
       <td class="num-cell">11</td>
       <td class="verb-cell">וַיָּבֵא</td>
-      <td><input class="parse-field" id="11-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="11-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="11-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="11-root" placeholder="root"></td>
-      <td><input class="parse-field" id="11-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="11-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="11-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="11-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="11-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="11-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(11)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-11">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וַיָּבֵא</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | בּוֹא | Causative — <em>brought</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Wayyiqtol</td>
+      <td>3ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">בּוֹא</td>
+      <td>Causative — <em>brought</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -355,17 +415,22 @@
     <tr>
       <td class="num-cell">12</td>
       <td class="verb-cell">וַיָּסַר</td>
-      <td><input class="parse-field" id="12-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="12-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="12-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="12-root" placeholder="root"></td>
-      <td><input class="parse-field" id="12-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="12-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="12-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="12-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="12-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="12-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(12)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-12">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וַיָּסַר</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | סוּר | Causative — <em>removed</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Wayyiqtol</td>
+      <td>3ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">סוּר</td>
+      <td>Causative — <em>removed</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -379,17 +444,22 @@
     <tr>
       <td class="num-cell">13</td>
       <td class="verb-cell">הַיְצֵא</td>
-      <td><input class="parse-field" id="13-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="13-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="13-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="13-root" placeholder="root"></td>
-      <td><input class="parse-field" id="13-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="13-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="13-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="13-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="13-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="13-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(13)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-13">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">הַיְצֵא</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Imperative 2ms | יָצָא | Causative — <em>bring out!</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Imperative</td>
+      <td>2ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">יָצָא</td>
+      <td>Causative — <em>bring out!</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -403,17 +473,22 @@
     <tr>
       <td class="num-cell">14</td>
       <td class="verb-cell">וַיַּעַל</td>
-      <td><input class="parse-field" id="14-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="14-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="14-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="14-root" placeholder="root"></td>
-      <td><input class="parse-field" id="14-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="14-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="14-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="14-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="14-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="14-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(14)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-14">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וַיַּעַל</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | עָלָה | Causative — <em>offered up</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Wayyiqtol</td>
+      <td>3ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">עָלָה</td>
+      <td>Causative — <em>offered up</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -427,17 +502,22 @@
     <tr>
       <td class="num-cell">15</td>
       <td class="verb-cell">לְהַכֹּת</td>
-      <td><input class="parse-field" id="15-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="15-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="15-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="15-root" placeholder="root"></td>
-      <td><input class="parse-field" id="15-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="15-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="15-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="15-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="15-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="15-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(15)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-15">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">לְהַכֹּת</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Inf. Construct — | נָכָה | Causative — <em>to strike down</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Inf. Construct</td>
+      <td>—</td>
+      <td style="direction:rtl;unicode-bidi:embed;">נָכָה</td>
+      <td>Causative — <em>to strike down</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -457,32 +537,42 @@
     <tr>
       <td class="num-cell">16</td>
       <td class="verb-cell">וְהַרְבָּה</td>
-      <td><input class="parse-field" id="16-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="16-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="16-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="16-root" placeholder="root"></td>
-      <td><input class="parse-field" id="16-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="16-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="16-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="16-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="16-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="16-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(16)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-16">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וְהַרְבָּה</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Inf. Absolute — | רָבָה | Causative — emphatic modifier (<em>multiplying / surely</em>)</td>
+      <td><strong>Yes</strong></td>
+      <td>Inf. Absolute</td>
+      <td>—</td>
+      <td style="direction:rtl;unicode-bidi:embed;">רָבָה</td>
+      <td>Causative — emphatic modifier (<em>multiplying / surely</em>)</td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">17</td>
       <td class="verb-cell">אַרְבֶּה</td>
-      <td><input class="parse-field" id="17-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="17-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="17-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="17-root" placeholder="root"></td>
-      <td><input class="parse-field" id="17-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="17-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="17-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="17-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="17-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="17-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(17)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-17">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">אַרְבֶּה</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Imperfect 1cs | רָבָה | Causative — <em>I will multiply</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Imperfect</td>
+      <td>1cs</td>
+      <td style="direction:rtl;unicode-bidi:embed;">רָבָה</td>
+      <td>Causative — <em>I will multiply</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -501,77 +591,102 @@
     <tr>
       <td class="num-cell">18</td>
       <td class="verb-cell">וּנְתָנָם</td>
-      <td><input class="parse-field" id="d2-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="d2-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="d2-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="d2-root" placeholder="root"></td>
-      <td><input class="parse-field" id="d2-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="d2-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="d2-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="d2-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="d2-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="d2-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('d2')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row wrong" id="ans-d2">
       <td class="answer-label">✗</td>
       <td class="answer-hebrew">וּנְתָנָם</td>
-      <td colspan="6">✗ <strong>No — Qal</strong> | Perfect + 3mp suffix 3ms | נָתַן | NOT Hiphil — Qal: <em>gives them over</em>; Qal perfect of נָתַן with object suffix</td>
+      <td><strong>No</strong></td>
+      <td>Perfect</td>
+      <td>3ms (+ 3mp sfx)</td>
+      <td style="direction:rtl;unicode-bidi:embed;">נָתַן</td>
+      <td>NOT Hiphil — Qal: <em>gives them over</em>; Qal perfect with 3mp object suffix</td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">19</td>
       <td class="verb-cell">וְהִכִּיתָם</td>
-      <td><input class="parse-field" id="19-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="19-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="19-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="19-root" placeholder="root"></td>
-      <td><input class="parse-field" id="19-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="19-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="19-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="19-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="19-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="19-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(19)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-19">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וְהִכִּיתָם</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Weqatal 2ms | נָכָה | Causative — <em>and you shall strike them</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Weqatal</td>
+      <td>2ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">נָכָה</td>
+      <td>Causative — <em>and you shall strike them</em></td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">20</td>
       <td class="verb-cell">הַכֵּה</td>
-      <td><input class="parse-field" id="20-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="20-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="20-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="20-root" placeholder="root"></td>
-      <td><input class="parse-field" id="20-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="20-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="20-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="20-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="20-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="20-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(20)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-20">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">הַכֵּה</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Inf. Absolute — | נָכָה | Causative — emphatic modifier (<em>striking / certainly</em>)</td>
+      <td><strong>Yes</strong></td>
+      <td>Inf. Absolute</td>
+      <td>—</td>
+      <td style="direction:rtl;unicode-bidi:embed;">נָכָה</td>
+      <td>Causative — emphatic modifier (<em>striking / certainly</em>)</td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">21</td>
       <td class="verb-cell">תַכֶּה</td>
-      <td><input class="parse-field" id="21-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="21-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="21-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="21-root" placeholder="root"></td>
-      <td><input class="parse-field" id="21-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="21-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="21-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="21-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="21-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="21-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle(21)">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-21">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">תַכֶּה</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Imperfect 2ms | נָכָה | Causative — <em>you shall strike</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Imperfect</td>
+      <td>2ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">נָכָה</td>
+      <td>Causative — <em>you shall strike</em></td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">22</td>
       <td class="verb-cell">תִכְרֹת</td>
-      <td><input class="parse-field" id="d3-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="d3-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="d3-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="d3-root" placeholder="root"></td>
-      <td><input class="parse-field" id="d3-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="d3-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="d3-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="d3-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="d3-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="d3-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('d3')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row wrong" id="ans-d3">
       <td class="answer-label">✗</td>
       <td class="answer-hebrew">תִכְרֹת</td>
-      <td colspan="6">✗ <strong>No — Qal</strong> | Imperfect 2ms | כָּרַת | NOT Hiphil — Qal: <em>you shall make</em> (covenant); plain Qal imperfect; no הִ prefix</td>
+      <td><strong>No</strong></td>
+      <td>Imperfect</td>
+      <td>2ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">כָּרַת</td>
+      <td>NOT Hiphil — Qal: <em>you shall make</em> (covenant); plain Qal imperfect; no הִ prefix</td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -593,32 +708,42 @@
     <tr>
       <td class="num-cell">B1</td>
       <td class="verb-cell">הֵחֵל</td>
-      <td><input class="parse-field" id="b1-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="b1-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="b1-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="b1-root" placeholder="root"></td>
-      <td><input class="parse-field" id="b1-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="b1-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="b1-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="b1-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="b1-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="b1-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('b1')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-b1">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">הֵחֵל</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Perfect (qatal) 3ms | חָלַל | Causative — <em>began</em> (Hiphil of חָלַל = "to begin"; idiomatic)</td>
+      <td><strong>Yes</strong></td>
+      <td>Perfect (qatal)</td>
+      <td>3ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">חָלַל</td>
+      <td>Causative — <em>began</em> (Hiphil of חָלַל = "to begin"; idiomatic)</td>
+      <td></td>
     </tr>
     <tr>
       <td class="num-cell">B2</td>
       <td class="verb-cell">וַיּוֹלֶד</td>
-      <td><input class="parse-field" id="b2-hip" placeholder="Yes / No"></td>
-      <td><input class="parse-field" id="b2-conj" placeholder="conjugation"></td>
-      <td><input class="parse-field" id="b2-pgn" placeholder="PGN"></td>
-      <td><input class="parse-field" id="b2-root" placeholder="root"></td>
-      <td><input class="parse-field" id="b2-func" placeholder="function"></td>
+      <td><select class="hiphil-select" id="b2-hip"><option value=""></option><option value="Yes">Yes</option><option value="No">No</option></select></td>
+      <td><select class="parse-field" id="b2-conj"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
+      <td><select class="parse-field" id="b2-pgn"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="—">—</option></select></td>
+      <td><input class="parse-field" id="b2-root" type="text" style="direction:rtl;unicode-bidi:embed;"></td>
+      <td><select class="parse-field" id="b2-func"><option value=""></option><option value="Causative">Causative</option><option value="Causative/Denominative">Causative/Denominative</option><option value="Factitive">Factitive</option><option value="Declarative">Declarative</option><option value="Simple action">Simple action</option><option value="NOT Hiphil">NOT Hiphil</option></select></td>
       <td><button class="reveal-btn" onclick="toggle('b2')">▶ Answer</button></td>
     </tr>
     <tr class="answer-row" id="ans-b2">
       <td class="answer-label">✓</td>
       <td class="answer-hebrew">וַיּוֹלֶד</td>
-      <td colspan="6">✓ <strong>Yes — Hiphil</strong> | Wayyiqtol 3ms | יָלַד | Causative — <em>fathered / begat</em></td>
+      <td><strong>Yes</strong></td>
+      <td>Wayyiqtol</td>
+      <td>3ms</td>
+      <td style="direction:rtl;unicode-bidi:embed;">יָלַד</td>
+      <td>Causative — <em>fathered / begat</em></td>
+      <td></td>
     </tr>
   </table>
 </div>
@@ -696,6 +821,7 @@
 
   function clearAll() {
     document.querySelectorAll('input.parse-field').forEach(el => el.value = '');
+    document.querySelectorAll('select.parse-field, select.hiphil-select').forEach(el => el.selectedIndex = 0);
   }
 </script>
 </body>

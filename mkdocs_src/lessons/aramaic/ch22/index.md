@@ -1,27 +1,13 @@
 # BBA Chapter 22 — The Aphel, Shaphel, and Hophal Stems
 
+> Learn the Aphel (causative with אַ- preformative), the Shaphel (causative with שַׁ- preformative, rare in Biblical Aramaic), and the Hophal (passive of the Haphel/Aphel) in their major conjugational forms. This final chapter completes the Aramaic stem system; students can now identify any verb form in Daniel 2–7 and Ezra 4–7 by stem, conjugation, and PGN, and read those passages with full morphological analysis.
+
+| Resource | Link |
+|---|---|
+| Exercises | [View exercises →](exercises.md) |
+
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 22: The Aphel, Shaphel, and Hophal Stems*
-
----
-
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch22-causative-passive-drill/](exercises/ch22-causative-passive-drill/index.md) | 20-item capstone review drill — all 9 Aramaic stems |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Aphel, Shaphel, and Hophal stem profiles |
 
 ---
 

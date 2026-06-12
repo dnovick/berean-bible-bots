@@ -1,5 +1,10 @@
 # Chapter 4 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch4-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch4-vocab-deck-fd.txt)
+
+---
+
+
 *13 words from BBA Chapter 4 (Nouns: Absolute State).*
 *Import `ch4-vocab-deck.txt` directly into Anki (File → Import).*
 

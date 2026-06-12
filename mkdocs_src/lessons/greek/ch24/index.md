@@ -1,30 +1,11 @@
 # BBG Chapter 24 — Aorist and Future Passive Indicative
 
----
+> Learn the aorist passive indicative formed with augment + verbal stem + θη tense formative + secondary active endings, and the future passive formed with verbal stem + θησ + connecting vowel + primary middle endings. Recognize that Greek uses an active-voice ending set for the aorist passive (a diagnostic unique to this tense-form). Understand the passive voice theologically, especially the "divine passive" construction frequent in the Gospels.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch24-aorist-future-passive-parsing/](exercises/ch24-aorist-future-passive-parsing/index.md) | Aorist/Future Passive Parsing Drill — 20 forms to parse |
-| [exercises/ch24-passive-formation/](exercises/ch24-passive-formation/index.md) | Aorist vs. Future Passive Formation Drill — 20 items: classify θη-Aorist vs. θησ-Future, parse, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch24-vocab-deck.md](ch24-vocab-deck.md) | Human-readable card list — 8 vocabulary words |
-| [ch24-vocab-deck.txt](ch24-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch24-vocab-deck-fd.txt](ch24-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Passive voice counts by tense; divine passive context |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Passive voice distribution by tense and NT genre |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

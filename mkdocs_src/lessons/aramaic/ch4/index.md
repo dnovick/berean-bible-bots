@@ -1,32 +1,11 @@
 # BBA Chapter 4 — Nouns: Absolute State
 
----
+> Learn the masculine and feminine Aramaic noun paradigms in the absolute state (the base dictionary form) for singular and plural. Identify the characteristic plural endings and recognize the gender markers, noting both similarities to and differences from Hebrew noun patterns. The absolute state is the citation form and the starting point for the determined (Ch5) and construct (Ch6) state paradigms.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch4-vocab-deck.md](ch4-vocab-deck.md) | Reference list with glosses |
-| [ch4-vocab-deck.txt](ch4-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch4-vocab-deck-fd.txt](ch4-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch4-noun-identification/](exercises/ch4-noun-identification/index.md) | 20-item noun identification drill — gender, number, state, and root/lexical form |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Aramaic Nominal Morphology](../../../notebooks/ot/aramaic/aramaic_nominal/) | Aramaic noun state distribution; absolute vs. determined vs. construct — Daniel and Ezra |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

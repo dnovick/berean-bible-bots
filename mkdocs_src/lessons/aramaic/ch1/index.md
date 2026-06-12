@@ -1,26 +1,11 @@
 # BBA Chapter 1 — The Aramaic Alphabet
 
----
+> Learn the 22-letter Aramaic alphabet, which shares the same script and letter names as Biblical Hebrew but has several distinctive letter forms. Identify the five final (sofit) forms, recognize the consonants that frequently serve as matres lectionis in Aramaic spelling, and understand that right-to-left reading direction and root-and-pattern morphology carry over directly from Hebrew to Aramaic.
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
+| Resource | Link |
 |---|---|
-| [ch1-vocab-deck.md](ch1-vocab-deck.md) | Reference list with glosses |
-| [ch1-vocab-deck.txt](ch1-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch1-vocab-deck-fd.txt](ch1-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/index.md) | 22-item letter identification drill — all Aramaic letters, gutturals, emphatics, and comparison with Hebrew equivalents |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

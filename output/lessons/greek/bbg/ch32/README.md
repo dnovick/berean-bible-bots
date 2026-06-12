@@ -2,31 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch32-infinitive-parsing/](exercises/ch32-infinitive-parsing/README.md) | 20-item drill: parse infinitives, identify their use, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch32-vocab-deck.md](ch32-vocab-deck.md) | Human-readable card list — 2 vocabulary words |
-| [ch32-vocab-deck.txt](ch32-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch32-vocab-deck-fd.txt](ch32-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [NT Mood Usage](../../../notebooks/nt/syntax/mood_usage/) | Infinitive distribution, construction types (complementary/articular/prepositional), genre comparison |
-| [Concordance](../../../notebooks/both/lexicon/concordance/) | Find all infinitive forms; collocations with key infinitive complements |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~2,290 infinitive tokens NT-wide)*
 

@@ -1,33 +1,11 @@
 # BBH Chapter 31 — Piel Weak Verbs (פִּעֵל)
 
----
+> Apply Piel stem patterns to weak root classes: II-guttural and II-resh roots (which cannot take dagesh forte and require virtual doubling or compensatory lengthening), III-ה roots, and geminate roots. Recognizing a Piel form when the diagnostic dagesh forte is absent due to a guttural second radical is a critical parsing skill that prevents confusion with Qal forms of the same root.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch31-passage-exercise/](exercises/ch31-passage-exercise/index.md) | Passage exercise — identify and parse Piel Weak verbs in context (Gen 2–3, Gen 6, Gen 18:19, Gen 16:6, Deu 8:2–3, Amos 3:7, Gen 50:16) |
-| [exercises/ch31-weak-form-id/](exercises/ch31-weak-form-id/index.md) | Weak-form identification drill — parse 20 weak Piel forms grouped by weak class (I-gutt, III-he, Geminate, I-nun) + 10 mixed |
-| [exercises/ch31-function-sort/](exercises/ch31-function-sort/index.md) | Semantic function sorting — Piel Weak verbs by function type |
-| [exercises/ch31-piel-weak-paradigm-drill/](exercises/ch31-piel-weak-paradigm-drill/index.md) | Paradigm drill — write selected Piel Weak forms for גלה (III-ה) from memory |
-| [exercises/ch31-qal-piel-contrast/](exercises/ch31-qal-piel-contrast/index.md) | Qal vs. Piel contrast drill (weak roots) |
-| [exercises/ch31-stem-id-drill/](exercises/ch31-stem-id-drill/index.md) | Stem identification drill — Qal/Niphal/Piel weak roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch31-vocab-deck.md](ch31-vocab-deck.md) | Markdown | 12-word vocabulary deck — 12 nouns |
-| [ch31-vocab-deck.txt](ch31-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch31-vocab-deck-fd.txt](ch31-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Piel Stem](../../../notebooks/ot/verbs/piel/) | Piel stem: root×conjugation heatmap; weak root behavior in the intensive |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

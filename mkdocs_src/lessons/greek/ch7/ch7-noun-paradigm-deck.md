@@ -1,5 +1,10 @@
 # Chapter 7 — Noun Paradigm Deck
 
+**Download:** [Anki import (.txt)](ch7-noun-paradigm-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch7-noun-paradigm-deck-fd.txt)
+
+---
+
+
 *40 cards covering the full inflection (nom/gen/dat/acc/voc × sg/pl) of four paradigm nouns:*
 *λόγος (2nd decl. m), γραφή (1st decl. f), ὥρα (1st decl. f), ἔργον (2nd decl. n).*
 *Import `ch7-noun-paradigm-deck.txt` directly into Anki (File → Import).*

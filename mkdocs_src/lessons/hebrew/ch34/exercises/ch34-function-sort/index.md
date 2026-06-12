@@ -15,14 +15,3 @@ A 25-item classification exercise drawn from Genesis, Exodus, Joshua, and Psalms
 | Reciprocal | 15, 17 | 2 |
 | Estimative | 24, 25 | 2 |
 | Denominative | 11 | 1 |
-
-## Sample Questions
-
-**Q1.** 1 מִתְהַלֵּךְ Participle ms הָלַךְ Gen 3:8 "walking about" R RC IT ES DN
-> **A:** IT — Iterative · Root: הָלַךְ · Walking back and forth — ongoing, habitual movement, not a single walk
-
-**Q2.** 2 וַיִּתְחַבֵּא Wayyiqtol 3ms חָבָא Gen 3:8 "he hid himself" R RC IT ES DN
-> **A:** R — Reflexive · Root: חָבָא · Adam hid himself — the subject is both agent and object of the hiding action
-
-**Q3.** 3 וַיִּתְהַלֵּךְ Wayyiqtol 3ms הָלַךְ Gen 5:22 "he walked about" R RC IT ES DN
-> **A:** IT — Iterative · Root: הָלַךְ · Enoch walked with God habitually over his lifetime — a pattern of conduct, not a single event

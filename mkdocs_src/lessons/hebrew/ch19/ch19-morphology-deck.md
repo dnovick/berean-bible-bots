@@ -1,5 +1,10 @@
 # Chapter 19 — Pronominal Suffixes on Verbs Morphology Deck
 
+**Download:** [Anki import (.txt)](ch19-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch19-morphology-deck-fd.txt)
+
+---
+
+
 *BBH Chapter 19 · 32 cards*
 
 ---

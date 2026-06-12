@@ -21,10 +21,10 @@ This 32-item parsing drill covers Qal active and passive participle forms across
 ## Sample Questions
 
 **Q1.** 1 שֹׁמֵ֖ר
-> **A:** Active · שמר · Strong A · ms · Substantive/Predicate — "keeper"; holem-waw + tsere
+> **A:** Active שמר Strong A ms Substantive/Predicate — "keeper"; holem-waw + tsere
 
 **Q2.** 2 שֹׁמֶ֫רֶת
-> **A:** Active · שמר · Strong A · fs · Attributive/Substantive — "keeper (fs)"; ת + seghol-seghol
+> **A:** Active שמר Strong A fs Attributive/Substantive — "keeper (fs)"; ת + seghol-seghol
 
 **Q3.** 3 שֹׁמְרִ֖ים
-> **A:** Active · שמר · Strong A · mp · Substantive/Attributive — "keepers"; shewa on R2 in plural
+> **A:** Active שמר Strong A mp Substantive/Attributive — "keepers"; shewa on R2 in plural

@@ -1,28 +1,11 @@
 # BBH Chapter 12 — Introduction to Hebrew Verbs
 
----
+> Survey the Hebrew verbal system: the binyan (stem) system (Qal through Hithpael), the two finite conjugations (perfect and imperfect), mood forms (imperative, cohortative, jussive), and the non-finite forms (infinitives and participle). Learn the 3ms Qal perfect as the dictionary form and understand the root-and-pattern morphology that makes Hebrew verb parsing systematic. This chapter provides the conceptual map for every verb chapter that follows.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch12-verb-overview/](exercises/ch12-verb-overview/index.md) | 20-item conceptual overview — stem identification, active/passive/reflexive classification, and root recognition |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch12-vocab-deck.md](ch12-vocab-deck.md) | Human-readable card list — 18 vocabulary words |
-| [ch12-vocab-deck.txt](ch12-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch12-vocab-deck-fd.txt](ch12-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [OT Verb Stem Overview](../../../notebooks/ot/verbs/stem_overview/) | OT verb stem totals and distribution across Torah, Prophets, and Writings |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

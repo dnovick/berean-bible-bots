@@ -1,29 +1,11 @@
 # BBG Chapter 23 — First Aorist Active and Middle Indicative
 
----
+> Learn the first aorist (weak aorist) active and middle indicative paradigms: augment + verbal stem + σα tense formative + secondary endings (with special 1s and 3s forms). Study the consonantal changes that occur when σα is added to stems ending in stops, and learn liquid aorist stems that drop sigma and lengthen the preceding vowel. The first aorist is the most common aorist formation in the NT.
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
+| Resource | Link |
 |---|---|
-| [exercises/ch23-first-aorist-parsing/](exercises/ch23-first-aorist-parsing/index.md) | First Aorist Parsing Drill — 20 forms to parse |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch23-vocab-deck.md](ch23-vocab-deck.md) | Human-readable card list — 8 vocabulary words |
-| [ch23-vocab-deck.txt](ch23-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch23-vocab-deck-fd.txt](ch23-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Verb Morphology](../../../notebooks/nt/verbs/nt_verbs/) | Aorist tense dominance; tense × voice; top lemmas |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Aorist distribution and voice; most common aorist roots by genre |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

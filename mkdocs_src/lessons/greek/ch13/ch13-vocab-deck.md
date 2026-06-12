@@ -1,5 +1,10 @@
 # Chapter 13 — Vocabulary Deck
 
+**Download:** [Anki import (.txt)](ch13-vocab-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch13-vocab-deck-fd.txt)
+
+---
+
+
 *12 words from BBG Chapter 13. Frequency counts are NT-wide occurrences.*
 *Import `ch13-vocab-deck.txt` directly into Anki (File → Import).*
 

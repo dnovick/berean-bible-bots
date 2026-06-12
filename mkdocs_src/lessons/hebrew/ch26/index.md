@@ -1,41 +1,11 @@
 # BBH Chapter 26 — Hiphil Strong Verbs (הִפְעִיל)
 
----
+> Learn the Hiphil stem for strong verbs in all conjugations: perfect, imperfect, imperative, infinitives, and participle. Identify the diagnostic preformative הִ- in the perfect and infinitive, the מַ- participle preformative, and the characteristic hiriq-yod vowel in the imperfect stem. Understand the Hiphil's primary function as the causative stem (making someone do an action) and its frequent use with intransitive Qal roots to create transitive causative meanings.
 
-## Files
-
-### Reference Files
-
-| File | Description |
+| Resource | Link |
 |---|---|
-| [hiphil-paradigms.md](hiphil-paradigms.md) | Full conjugation paradigms (Perfect through Participle) with PGN tables and key-marker notes |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch26-passage-exercise/](exercises/ch26-passage-exercise/index.md) | "Spot the Hiphil" — 16 verbs from the flood narrative to parse and classify by function type |
-| [exercises/ch26-function-sort/](exercises/ch26-function-sort/index.md) | Semantic function sorting — classify Hiphil verbs by function type (causative, declarative, factitive, simple) |
-| [exercises/ch26-qal-hiphil-contrast/](exercises/ch26-qal-hiphil-contrast/index.md) | Qal vs. Hiphil contrast — spot the difference in form and meaning |
-| [exercises/ch26-hiphil-paradigm-drill/](exercises/ch26-hiphil-paradigm-drill/index.md) | Paradigm drill — write all 30 inflected forms of קטל (Hiphil) from memory |
-| [exercises/ch26-stem-id-drill/](exercises/ch26-stem-id-drill/index.md) | Stem identification drill — 24 forms from Qal/Niphal/Hiphil; identify stem, conjugation, PGN, and root |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch26-morphology-deck.md](ch26-morphology-deck.md) | Markdown | 32-card morphology deck — Hiphil forms across 4 roots and 8 conjugations |
-| [ch26-morphology-deck.txt](ch26-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (32 cards) |
-| [ch26-morphology-deck-fd.txt](ch26-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (32 cards) |
-| [ch26-vocab-deck.md](ch26-vocab-deck.md) | Markdown | Vocabulary deck — 15 words (11 verbs, 1 noun, 3 adjectives) with POS tags and frequency |
-| [ch26-vocab-deck.txt](ch26-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (15 cards) |
-| [ch26-vocab-deck-fd.txt](ch26-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (15 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hiphil Stem](../../../notebooks/ot/verbs/hiphil/) | Hiphil stem: complete morphological profile, causative semantic categories, dominant roots |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

@@ -1,5 +1,10 @@
 # Chapter 21 — Qal Infinitive Absolute Morphology Deck
 
+**Download:** [Anki import (.txt)](ch21-morphology-deck.txt) · [Flashcards Deluxe (-fd.txt)](ch21-morphology-deck-fd.txt)
+
+---
+
+
 *32 cards · 7 root class groupings + disambiguation · covers all IA patterns, IC/IA contrasts, and functional uses.*
 
 ---

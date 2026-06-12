@@ -5,34 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch17-vocab-deck.md](ch17-vocab-deck.md) | Reference list with glosses |
-| [ch17-vocab-deck.txt](ch17-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch17-vocab-deck-fd.txt](ch17-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch17-peal-participle-drill/](exercises/ch17-peal-participle-drill/README.md) | 20-item Peal participle identification and translation drill — active/passive, root, G/N, translation |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Participle distribution; active vs. passive participle counts |
-
----
-
 ## 1. Introduction — The Peal Participle
 
 Chapters 13–16 introduced the **finite** and **non-finite** verbal forms of the Peal stem that express complete or ongoing action in relation to time: the perfect (ch13), the imperfect (ch14), the imperative (ch15), and the infinitive construct (ch16). Chapter 17 introduces the **Peal participle** — a **verbal adjective** that describes a person or thing engaged in an action or affected by it.

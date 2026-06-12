@@ -1,41 +1,11 @@
 # BBH Chapter 28 — Hophal Strong Verbs (הֻפְעַל)
 
----
+> Learn the Hophal stem for strong verbs in all conjugations: perfect, imperfect, participle, and infinitives. Identify the diagnostic qamets-hatuph or qibbuts vowel under the הׁ- or מׁ- preformative that marks Hophal, and contrast it with the Hiphil preformative. Understand the Hophal as the passive of Hiphil—expressing the state of having been caused to perform an action—and recognize its relative rarity compared to the active Hiphil and the Niphal passive.
 
-## Files
-
-### Reference Files
-
-| File | Description |
+| Resource | Link |
 |---|---|
-| [hophal-paradigms.md](hophal-paradigms.md) | Full PGN paradigm tables — Hophal strong root (מוּת model), Hiphil comparison, key-marker notes per conjugation |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch28-passage-exercise/](exercises/ch28-passage-exercise/index.md) | Passage exercise — identify and parse Hophal verbs in Torah legal and narrative texts |
-| [exercises/ch28-function-sort/](exercises/ch28-function-sort/index.md) | Semantic function sorting — classify 25 Hophal forms as PT / LF / SR / SC / SA |
-| [exercises/ch28-hophal-hiphil-contrast/](exercises/ch28-hophal-hiphil-contrast/index.md) | Hophal vs. Hiphil contrast drill — parse 25 forms and identify the stem |
-| [exercises/ch28-hophal-paradigm-drill/](exercises/ch28-hophal-paradigm-drill/index.md) | Paradigm drill — write all 26 inflected forms of מות (Hophal) from memory |
-| [exercises/ch28-stem-id-drill/](exercises/ch28-stem-id-drill/index.md) | Stem identification drill — Qal/Hiphil/Hophal strong roots |
-
-### Flashcards
-
-| File | Format | Description |
-|---|---|---|
-| [ch28-morphology-deck.md](ch28-morphology-deck.md) | Markdown | 24-card morphology deck — Hophal strong forms across all conjugations for 3 roots |
-| [ch28-morphology-deck.txt](ch28-morphology-deck.txt) | Anki import | Morphology deck — tab-separated, ready for Anki File → Import (24 cards) |
-| [ch28-morphology-deck-fd.txt](ch28-morphology-deck-fd.txt) | Flashcards Deluxe | Morphology deck — tab-separated, ready for Flashcards Deluxe import (24 cards) |
-| [ch28-vocab-deck.md](ch28-vocab-deck.md) | Markdown | 12-word vocabulary deck — 8 verbs + 4 nouns |
-| [ch28-vocab-deck.txt](ch28-vocab-deck.txt) | Anki import | Vocabulary deck — tab-separated, ready for Anki File → Import (12 cards) |
-| [ch28-vocab-deck-fd.txt](ch28-vocab-deck-fd.txt) | Flashcards Deluxe | Vocabulary deck — tab-separated, ready for Flashcards Deluxe import (12 cards) |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Hophal Stem](../../../notebooks/ot/verbs/hophal/) | Hophal stem: complete morphological profile; legal formulas (מוּת יוּמַת), motion and speech |
+| Exercises | [View exercises →](exercises.md) |
+| Flashcard Decks | [View decks →](flashcards.md) |
 
 ---
 

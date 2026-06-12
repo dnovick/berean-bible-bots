@@ -5,34 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch14-vocab-deck.md](ch14-vocab-deck.md) | Reference list with glosses |
-| [ch14-vocab-deck.txt](ch14-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch14-vocab-deck-fd.txt](ch14-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch14-peal-imperfect-drill/](exercises/ch14-peal-imperfect-drill/README.md) | 20-item Peal imperfect parsing drill |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Peal imperfect profile; yiqtol distribution by root |
-
----
-
 ## 1. Introduction — The Peal Imperfect
 
 Chapter 13 established the **Peal perfect**, the backbone of Biblical Aramaic narrative. Chapter 14 introduces its counterpart: the **Peal imperfect**. Together these two finite verb forms account for the overwhelming majority of verbs in Daniel and Ezra.

@@ -5,26 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch22-causative-passive-drill/](exercises/ch22-causative-passive-drill/README.md) | 20-item capstone review drill — all 9 Aramaic stems |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Aphel, Shaphel, and Hophal stem profiles |
-
----
-
 ## 1. Introduction — Completing the Aramaic Stem System
 
 Chapter 21 introduced the **Haphel**, the primary causative stem of Biblical Aramaic. Chapter 22 completes the survey of the stem system by examining three remaining stems that are closely related to the Haphel:

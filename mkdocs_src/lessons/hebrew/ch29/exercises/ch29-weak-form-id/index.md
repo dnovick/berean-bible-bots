@@ -21,10 +21,10 @@ A 40-item identification and parsing exercise covering six Hophal weak classes (
 ## Sample Questions
 
 **Q1.** 1 הוּרַד Gen 39:1 ▶
-> **A:** Perfect · 3ms · יָרַד — he was brought down; שׁוּרֶק prefix (הוּ) is the I-yod/vav Hophal marker; R1 yod has quiesced
+> **A:** Perfect 3ms יָרַד — he was brought down; שׁוּרֶק prefix (הוּ) is the I-yod/vav Hophal marker; R1 yod has quiesced
 
 **Q2.** 2 יוּרַד Gen 44:29 ▶
-> **A:** Imperfect · 3ms · יָרַד — he will be brought down; שׁוּרֶק under imperfect prefix consonant (יוּ) — I-yod/vav pattern
+> **A:** Imperfect 3ms יָרַד — he will be brought down; שׁוּרֶק under imperfect prefix consonant (יוּ) — I-yod/vav pattern
 
 **Q3.** 3 הוּבָא Lev 4:4 ▶
-> **A:** Perfect · 3ms · בּוֹא — it was brought; הוּ prefix; root בּוֹא is I-vav (hollow); III-aleph: silent final א
+> **A:** Perfect 3ms בּוֹא — it was brought; הוּ prefix; root בּוֹא is I-vav (hollow); III-aleph: silent final א

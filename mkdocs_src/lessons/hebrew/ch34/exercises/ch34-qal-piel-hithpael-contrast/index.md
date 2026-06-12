@@ -17,10 +17,10 @@ A 15-item triplet drill using five strong roots (קדשׁ, כבד, שׁמר, פ�
 ## Sample Questions
 
 **Q1.** 1 קָדַשׁ
-> **A:** Qal Perfect 3ms · Stative: subject is in the state of holiness · "he was holy / became holy"
+> **A:** Qal Perfect 3ms Stative: subject is in the state of holiness "he was holy / became holy"
 
 **Q2.** 2 קִדֵּשׁ
-> **A:** Piel Perfect 3ms · Factitive: subject causes the object to become holy · "he consecrated / made holy"
+> **A:** Piel Perfect 3ms Factitive: subject causes the object to become holy "he consecrated / made holy"
 
 **Q3.** 3 הִתְקַדֵּשׁ
-> **A:** Hithpael Perfect 3ms · Reflexive: subject consecrates itself · "he consecrated himself / made himself holy"
+> **A:** Hithpael Perfect 3ms Reflexive: subject consecrates itself "he consecrated himself / made himself holy"

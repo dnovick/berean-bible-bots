@@ -2,32 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch28-aorist-participle-parsing/](exercises/ch28-aorist-participle-parsing/README.md) | "Spot the Aorist Participle" — 15-item passage drill: parse form, distinguish 1st/2nd aorist, identify use, translate |
-| [exercises/ch28-participle-tense-contrast/](exercises/ch28-participle-tense-contrast/README.md) | Present vs. Aorist Participle Contrast — 20 clauses: classify CONTEMP / ANTEC, parse, translate |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch28-vocab-deck.md](ch28-vocab-deck.md) | Human-readable card list — 8 vocabulary words |
-| [ch28-vocab-deck.txt](ch28-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch28-vocab-deck-fd.txt](ch28-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Greek Participles](../../../notebooks/nt/syntax/participles/) | Aorist participle dominance; temporal relationship (aorist = antecedent action) |
-| [Genre Comparison](../../../notebooks/both/survey/genre_compare/) | Aorist participle distribution and temporal relationship to main verb |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 *Data: MACULA Greek TAGNT (~2,800 aorist participle tokens NT-wide)*
 

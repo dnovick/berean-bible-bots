@@ -5,27 +5,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch19-pael-stem-drill/](exercises/ch19-pael-stem-drill/README.md) | 20-item Pael stem parsing drill |
-| [exercises/ch19-pael-qal-contrast/](exercises/ch19-pael-qal-contrast/README.md) | Peal vs. Pael Contrast Drill — 20 items: classify by dagesh forte in R2, parse, note semantic shift |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [Biblical Aramaic Overview](../../../notebooks/ot/aramaic/aramaic_overview/) | Pael stem profile; top roots and conjugation distribution |
-
----
-
 ## 1. Introduction — The Pael as the D Stem
 
 Chapters 13–17 covered all the conjugations of the **Peal**, the ground stem of Biblical Aramaic. Chapter 18 introduced the two passive/reflexive counterparts of the Peal — the Peil and the Ithpeel. Chapter 19 now turns to the **Pael**, the second major active stem in the Aramaic verbal system.

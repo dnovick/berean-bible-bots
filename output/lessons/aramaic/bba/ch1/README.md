@@ -2,28 +2,6 @@
 
 ---
 
-## Files
-
-### Reference Files
-
-*(No separate reference files for this chapter — full content is in this README.)*
-
-### Vocabulary Decks
-
-| File | Use |
-|---|---|
-| [ch1-vocab-deck.md](ch1-vocab-deck.md) | Reference list with glosses |
-| [ch1-vocab-deck.txt](ch1-vocab-deck.txt) | Anki import (tab-separated) |
-| [ch1-vocab-deck-fd.txt](ch1-vocab-deck-fd.txt) | Flashcards Deluxe import |
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch1-letter-recognition/](exercises/ch1-letter-recognition/README.md) | 22-item letter identification drill — all Aramaic letters, gutturals, emphatics, and comparison with Hebrew equivalents |
-
----
-
 *Basics of Biblical Aramaic, Van Pelt*
 *Chapter 1: The Aramaic Alphabet*
 

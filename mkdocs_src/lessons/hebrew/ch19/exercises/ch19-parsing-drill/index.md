@@ -18,10 +18,10 @@ This drill covers all major pronominal suffix constructions on verbs introduced 
 ## Sample Questions
 
 **Q1.** 1 שְׁמָרַ֥נִי
-> **A:** Qal Perfect · 3ms · שמר · 1cs · "he kept me" — connecting vowel qamets before נִי
+> **A:** Qal Perfect 3ms שמר 1cs "he kept me" — connecting vowel qamets before נִי
 
 **Q2.** 2 שְׁמָרוֹ
-> **A:** Qal Perfect · 3ms · שמר · 3ms · "he kept him" — short form וֹ (holem-waw)
+> **A:** Qal Perfect 3ms שמר 3ms "he kept him" — short form וֹ (holem-waw)
 
 **Q3.** 3 שְׁמָרָ֥נוּ
-> **A:** Qal Perfect · 3ms · שמר · 1cp · "he kept us" — qamets connecting vowel before נוּ
+> **A:** Qal Perfect 3ms שמר 1cp "he kept us" — qamets connecting vowel before נוּ

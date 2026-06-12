@@ -2,40 +2,6 @@
 
 ---
 
-## Files
-
-### Exercises
-
-| Exercise | Description |
-|---|---|
-| [exercises/ch7-gen-dat-parsing/](exercises/ch7-gen-dat-parsing/README.md) | 20-item parsing drill — case, number, gender, and lexical form for 2nd-declension forms |
-| [exercises/ch7-article-id/](exercises/ch7-article-id/README.md) | 20-item definite article identification drill — case, number, and gender from GNT context |
-
-### Flashcards
-
-| File | Description |
-|---|---|
-| [ch7-vocab-deck.md](ch7-vocab-deck.md) | Human-readable card list — 15 vocabulary words |
-| [ch7-vocab-deck.txt](ch7-vocab-deck.txt) | Anki import file (File → Import) |
-| [ch7-vocab-deck-fd.txt](ch7-vocab-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch7-article-deck.md](ch7-article-deck.md) | Human-readable card list — 17 cards: complete definite article paradigm (all genders, cases, numbers) |
-| [ch7-article-deck.txt](ch7-article-deck.txt) | Anki import file (File → Import) |
-| [ch7-article-deck-fd.txt](ch7-article-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch7-noun-paradigm-deck.md](ch7-noun-paradigm-deck.md) | Human-readable card list — 30 cards: full inflection of λόγος, γραφή, ὥρα, ἔργον |
-| [ch7-noun-paradigm-deck.txt](ch7-noun-paradigm-deck.txt) | Anki import file (File → Import) |
-| [ch7-noun-paradigm-deck-fd.txt](ch7-noun-paradigm-deck-fd.txt) | Flashcards Deluxe import file |
-| [ch7-autos-deck.md](ch7-autos-deck.md) | Human-readable card list — 17 cards: all forms of αὐτός (he, she, it / himself / the same) |
-| [ch7-autos-deck.txt](ch7-autos-deck.txt) | Anki import file (File → Import) |
-| [ch7-autos-deck-fd.txt](ch7-autos-deck-fd.txt) | Flashcards Deluxe import file |
-
-### Notebooks
-
-| Notebook | What it shows |
-|---|---|
-| [GNT Noun Morphology](../../../notebooks/nt/nouns/nt_nouns/) | Case/gender distribution — genitive and dative cases in context |
-
----
-
 *Basics of Biblical Greek Grammar, Mounce, 4th Edition*
 
 ---

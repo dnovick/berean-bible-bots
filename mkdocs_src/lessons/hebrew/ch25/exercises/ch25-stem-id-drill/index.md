@@ -25,10 +25,10 @@ A 24-item drill mixing Qal and Niphal forms of weak roots, interleaved Q/N/Q/N. 
 ## Sample Questions
 
 **Q1.** 1 גָּלָה
-> **A:** Qal · Perfect · 3ms · גלה — Qamets under first root letter, ָה ending = Qal Perfect 3ms of III-ה root. "he uncovered / went into exile."
+> **A:** Qal Perfect 3ms גלה — Qamets under first root letter, ָה ending = Qal Perfect 3ms of III-ה root. "he uncovered / went into exile."
 
 **Q2.** 2 נִגְלָה
-> **A:** Niphal · Perfect · 3ms · גלה — נִ prefix + ָה ending (III-ה). "he was revealed / revealed himself."
+> **A:** Niphal Perfect 3ms גלה — נִ prefix + ָה ending (III-ה). "he was revealed / revealed himself."
 
 **Q3.** 3 נָפַל
-> **A:** Qal · Perfect · 3ms · נפל — Qamets–patach vowel pattern without any dagesh forte = Qal. "he fell."
+> **A:** Qal Perfect 3ms נפל — Qamets–patach vowel pattern without any dagesh forte = Qal. "he fell."
