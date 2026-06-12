@@ -6,8 +6,6 @@ to <select> dropdowns for columns with fixed option sets.
 Usage: python3 scripts/convert_inputs_to_selects.py
 """
 
-import re
-import sys
 from pathlib import Path
 from bs4 import BeautifulSoup, Tag
 
@@ -20,36 +18,37 @@ from bs4 import BeautifulSoup, Tag
 BASE_DIR = Path("/Users/dnovick/gitrepos/projects/bible/berean-bible-bots")
 
 FILES = [
-    "output/lessons/hebrew/bbh/ch4/exercises/ch4-noun-parsing/ch4-noun-parsing.html",
-    "output/lessons/hebrew/bbh/ch7/exercises/ch7-adjective-usage/ch7-adjective-usage.html",
-    "output/lessons/hebrew/bbh/ch12/exercises/ch12-verb-overview/ch12-verb-overview.html",
-    "output/lessons/hebrew/bbh/ch13/exercises/ch13-parsing-drill/ch13-parsing-drill.html",
-    "output/lessons/hebrew/bbh/ch13/exercises/ch13-passage-exercise/ch13-passage-exercise.html",
-    "output/lessons/hebrew/bbh/ch13/exercises/ch13-qal-perfect-paradigm-drill/ch13-qal-perfect-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch15/exercises/ch15-parsing-drill/ch15-parsing-drill.html",
-    "output/lessons/hebrew/bbh/ch15/exercises/ch15-qal-imperfect-paradigm-drill/ch15-qal-imperfect-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch17/exercises/ch17-wayyiqtol-paradigm-drill/ch17-wayyiqtol-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch18/exercises/ch18-qal-imperative-paradigm-drill/ch18-qal-imperative-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch24/exercises/ch24-niphal-paradigm-drill/ch24-niphal-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch26/exercises/ch26-hiphil-paradigm-drill/ch26-hiphil-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch26/exercises/ch26-stem-id-drill/ch26-stem-id-drill.html",
-    "output/lessons/hebrew/bbh/ch27/exercises/ch27-function-sort/ch27-function-sort.html",
-    "output/lessons/hebrew/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.html",
-    "output/lessons/hebrew/bbh/ch27/exercises/ch27-qal-hiphil-contrast/ch27-qal-hiphil-contrast.html",
-    "output/lessons/hebrew/bbh/ch27/exercises/ch27-stem-id-drill/ch27-stem-id-drill.html",
-    "output/lessons/hebrew/bbh/ch28/exercises/ch28-hophal-paradigm-drill/ch28-hophal-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch29/exercises/ch29-hophal-weak-paradigm-drill/ch29-hophal-weak-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch30/exercises/ch30-piel-paradigm-drill/ch30-piel-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch31/exercises/ch31-piel-weak-paradigm-drill/ch31-piel-weak-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch32/exercises/ch32-pual-paradigm-drill/ch32-pual-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch33/exercises/ch33-pual-weak-paradigm-drill/ch33-pual-weak-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch34/exercises/ch34-hithpael-paradigm-drill/ch34-hithpael-paradigm-drill.html",
-    "output/lessons/hebrew/bbh/ch35/exercises/ch35-hithpael-weak-paradigm-drill/ch35-hithpael-weak-paradigm-drill.html",
+    "data/lessons/bbh/ch4/exercises/ch4-noun-parsing/ch4-noun-parsing.html",
+    "data/lessons/bbh/ch7/exercises/ch7-adjective-usage/ch7-adjective-usage.html",
+    "data/lessons/bbh/ch12/exercises/ch12-verb-overview/ch12-verb-overview.html",
+    "data/lessons/bbh/ch13/exercises/ch13-parsing-drill/ch13-parsing-drill.html",
+    "data/lessons/bbh/ch13/exercises/ch13-passage-exercise/ch13-passage-exercise.html",
+    "data/lessons/bbh/ch13/exercises/ch13-qal-perfect-paradigm-drill/ch13-qal-perfect-paradigm-drill.html",
+    "data/lessons/bbh/ch15/exercises/ch15-parsing-drill/ch15-parsing-drill.html",
+    "data/lessons/bbh/ch15/exercises/ch15-qal-imperfect-paradigm-drill/ch15-qal-imperfect-paradigm-drill.html",
+    "data/lessons/bbh/ch17/exercises/ch17-wayyiqtol-paradigm-drill/ch17-wayyiqtol-paradigm-drill.html",
+    "data/lessons/bbh/ch18/exercises/ch18-qal-imperative-paradigm-drill/ch18-qal-imperative-paradigm-drill.html",
+    "data/lessons/bbh/ch24/exercises/ch24-niphal-paradigm-drill/ch24-niphal-paradigm-drill.html",
+    "data/lessons/bbh/ch26/exercises/ch26-hiphil-paradigm-drill/ch26-hiphil-paradigm-drill.html",
+    "data/lessons/bbh/ch26/exercises/ch26-stem-id-drill/ch26-stem-id-drill.html",
+    "data/lessons/bbh/ch27/exercises/ch27-function-sort/ch27-function-sort.html",
+    "data/lessons/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.html",
+    "data/lessons/bbh/ch27/exercises/ch27-qal-hiphil-contrast/ch27-qal-hiphil-contrast.html",
+    "data/lessons/bbh/ch27/exercises/ch27-stem-id-drill/ch27-stem-id-drill.html",
+    "data/lessons/bbh/ch28/exercises/ch28-hophal-paradigm-drill/ch28-hophal-paradigm-drill.html",
+    "data/lessons/bbh/ch29/exercises/ch29-hophal-weak-paradigm-drill/ch29-hophal-weak-paradigm-drill.html",
+    "data/lessons/bbh/ch30/exercises/ch30-piel-paradigm-drill/ch30-piel-paradigm-drill.html",
+    "data/lessons/bbh/ch31/exercises/ch31-piel-weak-paradigm-drill/ch31-piel-weak-paradigm-drill.html",
+    "data/lessons/bbh/ch32/exercises/ch32-pual-paradigm-drill/ch32-pual-paradigm-drill.html",
+    "data/lessons/bbh/ch33/exercises/ch33-pual-weak-paradigm-drill/ch33-pual-weak-paradigm-drill.html",
+    "data/lessons/bbh/ch34/exercises/ch34-hithpael-paradigm-drill/ch34-hithpael-paradigm-drill.html",
+    "data/lessons/bbh/ch35/exercises/ch35-hithpael-weak-paradigm-drill/ch35-hithpael-weak-paradigm-drill.html",
 ]
 
 # ---------------------------------------------------------------------------
 # Helper: detect style (with-dot vs without-dot) from existing answer cells
 # ---------------------------------------------------------------------------
+
 
 def detect_style_from_answers(soup: BeautifulSoup) -> dict:
     """

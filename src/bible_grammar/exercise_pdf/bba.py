@@ -65,7 +65,7 @@ def build_bba_ch1_letter_recognition(out_dir: Optional[str] = None) -> str:
         BbaCh1LetterRecognitionPDF,
         'BBA Chapter 1 — Aramaic Letter Recognition',
         'All 22 Letters · Gutturals · Emphatics · Bgdkpt · Hebrew Comparison',
-        ['aramaic', 'bba', 'ch1', 'exercises', 'ch1-letter-recognition'],
+        ['bba', 'ch1', 'exercises', 'ch1-letter-recognition'],
         'ch1-letter-recognition.pdf',
         out_dir,
     )
@@ -169,7 +169,7 @@ def build_bba_ch2_vowel_identification(out_dir: Optional[str] = None) -> str:
         BbaCh2VowelIdentificationPDF,
         'BBA Chapter 2 — Aramaic Vowel Identification',
         'Long · Short · Reduced Vowels · Matres Lectionis',
-        ['aramaic', 'bba', 'ch2', 'exercises', 'ch2-vowel-identification'],
+        ['bba', 'ch2', 'exercises', 'ch2-vowel-identification'],
         'ch2-vowel-identification.pdf',
         out_dir,
     )
@@ -280,7 +280,7 @@ def build_bba_ch3_syllabification_drill(out_dir: Optional[str] = None) -> str:
         BbaCh3SyllabificationDrillPDF,
         'BBA Chapter 3 — Aramaic Syllabification Drill',
         'Open/Closed Syllables · Dagesh Forte · Guttural Quiescence · Accent',
-        ['aramaic', 'bba', 'ch3', 'exercises', 'ch3-syllabification-drill'],
+        ['bba', 'ch3', 'exercises', 'ch3-syllabification-drill'],
         'ch3-syllabification-drill.pdf',
         out_dir,
     )
@@ -353,7 +353,7 @@ def build_bba_ch4_noun_identification(out_dir: Optional[str] = None) -> str:
         BbaCh4NounIdentificationPDF,
         'BBA Chapter 4 — Noun Identification Drill',
         'Absolute State · Gender · Number · Root Form',
-        ['aramaic', 'bba', 'ch4', 'exercises', 'ch4-noun-identification'],
+        ['bba', 'ch4', 'exercises', 'ch4-noun-identification'],
         'ch4-noun-identification.pdf',
         out_dir,
     )
@@ -435,7 +435,7 @@ def build_bba_ch5_determined_state_drill(out_dir: Optional[str] = None) -> str:
         BbaCh5DeterminedStateDrillPDF,
         'BBA Chapter 5 — Determined State Forms Drill',
         'Absolute ↔ Determined · All Four Gender/Number Patterns',
-        ['aramaic', 'bba', 'ch5', 'exercises', 'ch5-determined-state-drill'],
+        ['bba', 'ch5', 'exercises', 'ch5-determined-state-drill'],
         'ch5-determined-state-drill.pdf',
         out_dir,
     )
@@ -507,7 +507,7 @@ def build_bba_ch6_construct_chain_drill(out_dir: Optional[str] = None) -> str:
         BbaCh6ConstructChainDrillPDF,
         'BBA Chapter 6 — Construct Chain Drill',
         'Construct State · All Four Gender/Number Patterns · Genitive Chains',
-        ['aramaic', 'bba', 'ch6', 'exercises', 'ch6-construct-chain-drill'],
+        ['bba', 'ch6', 'exercises', 'ch6-construct-chain-drill'],
         'ch6-construct-chain-drill.pdf',
         out_dir,
     )
@@ -574,7 +574,7 @@ def build_bba_ch7_preposition_drill(out_dir: Optional[str] = None) -> str:
         BbaCh7PrepositionDrillPDF,
         'BBA Chapter 7 — Preposition Drill',
         'Conjunctions and Prepositions · Identification and Translation',
-        ['aramaic', 'bba', 'ch7', 'exercises', 'ch7-preposition-drill'],
+        ['bba', 'ch7', 'exercises', 'ch7-preposition-drill'],
         'ch7-preposition-drill.pdf',
         out_dir,
     )
@@ -641,7 +641,7 @@ def build_bba_ch8_suffix_drill(out_dir: Optional[str] = None) -> str:
         BbaCh8SuffixDrillPDF,
         'BBA Chapter 8 — Suffix Drill',
         'Pronominal Suffixes on Nouns and Prepositions',
-        ['aramaic', 'bba', 'ch8', 'exercises', 'ch8-suffix-drill'],
+        ['bba', 'ch8', 'exercises', 'ch8-suffix-drill'],
         'ch8-suffix-drill.pdf',
         out_dir,
     )
@@ -708,7 +708,7 @@ def build_bba_ch9_pronoun_drill(out_dir: Optional[str] = None) -> str:
         BbaCh9PronounDrillPDF,
         'BBA Chapter 9 — Pronoun Drill',
         'Personal, Demonstrative, Interrogative, Existential, Indefinite',
-        ['aramaic', 'bba', 'ch9', 'exercises', 'ch9-pronoun-drill'],
+        ['bba', 'ch9', 'exercises', 'ch9-pronoun-drill'],
         'ch9-pronoun-drill.pdf',
         out_dir,
     )
@@ -775,7 +775,7 @@ def build_bba_ch10_adjective_number_drill(out_dir: Optional[str] = None) -> str:
         BbaCh10AdjectiveNumberDrillPDF,
         'BBA Chapter 10 — Adjective and Number Drill',
         'Adjective States and Agreement · Cardinal and Ordinal Numbers',
-        ['aramaic', 'bba', 'ch10', 'exercises', 'ch10-adjective-number-drill'],
+        ['bba', 'ch10', 'exercises', 'ch10-adjective-number-drill'],
         'ch10-adjective-number-drill.pdf',
         out_dir,
     )
@@ -843,7 +843,7 @@ def build_bba_ch11_particle_drill(out_dir: Optional[str] = None) -> str:
         BbaCh11ParticleDrillPDF,
         'BBA Chapter 11 — Particle Drill',
         'Adverbs and Particles · Time, Place, Manner, Negation, Discourse',
-        ['aramaic', 'bba', 'ch11', 'exercises', 'ch11-particle-drill'],
+        ['bba', 'ch11', 'exercises', 'ch11-particle-drill'],
         'ch11-particle-drill.pdf',
         out_dir,
     )
@@ -902,7 +902,7 @@ def build_bba_ch12_verb_intro_drill(out_dir: Optional[str] = None) -> str:
         BbaCh12VerbIntroDrillPDF,
         'BBA Chapter 12 — Stem Identification Drill',
         'Introduction to Aramaic Verbs · Peal · Haphel · Ithpeel',
-        ['aramaic', 'bba', 'ch12', 'exercises', 'ch12-verb-intro-drill'],
+        ['bba', 'ch12', 'exercises', 'ch12-verb-intro-drill'],
         'ch12-verb-intro-drill.pdf',
         out_dir,
     )
@@ -975,7 +975,7 @@ def build_bba_ch13_peal_perfect_drill(out_dir: Optional[str] = None) -> str:
         BbaCh13PealPerfectDrillPDF,
         'BBA Chapter 13 — Peal Perfect Parsing Drill',
         'Peal Perfect · Strong and Weak Roots · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch13', 'exercises', 'ch13-peal-perfect-drill'],
+        ['bba', 'ch13', 'exercises', 'ch13-peal-perfect-drill'],
         'ch13-peal-perfect-drill.pdf',
         out_dir,
     )
@@ -1048,7 +1048,7 @@ def build_bba_ch14_peal_imperfect_drill(out_dir: Optional[str] = None) -> str:
         BbaCh14PealImperfectDrillPDF,
         'BBA Chapter 14 — Peal Imperfect Parsing Drill',
         'Peal Imperfect · Strong and Weak Roots · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch14', 'exercises', 'ch14-peal-imperfect-drill'],
+        ['bba', 'ch14', 'exercises', 'ch14-peal-imperfect-drill'],
         'ch14-peal-imperfect-drill.pdf',
         out_dir,
     )
@@ -1122,7 +1122,7 @@ def build_bba_ch15_peal_imperative_drill(out_dir: Optional[str] = None) -> str:
         BbaCh15PealImperativeDrillPDF,
         'BBA Chapter 15 — Peal Imperative Parsing Drill',
         'Peal Imperative · Strong and Weak Roots · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch15', 'exercises', 'ch15-peal-imperative-drill'],
+        ['bba', 'ch15', 'exercises', 'ch15-peal-imperative-drill'],
         'ch15-peal-imperative-drill.pdf',
         out_dir,
     )
@@ -1198,7 +1198,7 @@ def build_bba_ch16_peal_infinitive_drill(out_dir: Optional[str] = None) -> str:
         BbaCh16PealInfinitiveDrillPDF,
         'BBA Chapter 16 — Peal Infinitive Construct Drill',
         'Peal Infinitive Construct · Strong and Weak Roots · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch16', 'exercises', 'ch16-peal-infinitive-drill'],
+        ['bba', 'ch16', 'exercises', 'ch16-peal-infinitive-drill'],
         'ch16-peal-infinitive-drill.pdf',
         out_dir,
     )
@@ -1274,7 +1274,7 @@ def build_bba_ch17_peal_participle_drill(out_dir: Optional[str] = None) -> str:
         BbaCh17PealParticipleDrillPDF,
         'BBA Chapter 17 — Peal Participle Drill',
         'Peal Active and Passive Participles · Strong and Weak Roots · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch17', 'exercises', 'ch17-peal-participle-drill'],
+        ['bba', 'ch17', 'exercises', 'ch17-peal-participle-drill'],
         'ch17-peal-participle-drill.pdf',
         out_dir,
     )
@@ -1353,7 +1353,7 @@ def build_bba_ch18_passive_stems_drill(out_dir: Optional[str] = None) -> str:
         BbaCh18PassiveStemsDrillPDF,
         'BBA Chapter 18 — Peil and Ithpeel Stem Drill',
         'Peil (Simple Passive) and Hithpeel/Ithpeel (Reflexive/Passive) · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch18', 'exercises', 'ch18-passive-stems-drill'],
+        ['bba', 'ch18', 'exercises', 'ch18-passive-stems-drill'],
         'ch18-passive-stems-drill.pdf',
         out_dir,
     )
@@ -1431,7 +1431,7 @@ def build_bba_ch19_pael_stem_drill(out_dir: Optional[str] = None) -> str:
         BbaCh19PaelStemDrillPDF,
         'BBA Chapter 19 — Pael Stem Drill',
         'Pael (D Stem — Intensive/Causative) · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch19', 'exercises', 'ch19-pael-stem-drill'],
+        ['bba', 'ch19', 'exercises', 'ch19-pael-stem-drill'],
         'ch19-pael-stem-drill.pdf',
         out_dir,
     )
@@ -1512,7 +1512,7 @@ def build_bba_ch20_hithpaal_drill(out_dir: Optional[str] = None) -> str:
         BbaCh20HithpaalDrillPDF,
         'BBA Chapter 20 — Hithpaal / Ithpaal Stem Drill',
         'Hithpaal / Ithpaal (Dt Stem — Reflexive/Passive of Pael) · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch20', 'exercises', 'ch20-hithpaal-drill'],
+        ['bba', 'ch20', 'exercises', 'ch20-hithpaal-drill'],
         'ch20-hithpaal-drill.pdf',
         out_dir,
     )
@@ -1591,7 +1591,7 @@ def build_bba_ch21_haphel_stem_drill(out_dir: Optional[str] = None) -> str:
         BbaCh21HaphelStemDrillPDF,
         'BBA Chapter 21 — Haphel Stem Drill',
         'Haphel (H Stem — Causative) · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch21', 'exercises', 'ch21-haphel-stem-drill'],
+        ['bba', 'ch21', 'exercises', 'ch21-haphel-stem-drill'],
         'ch21-haphel-stem-drill.pdf',
         out_dir,
     )
@@ -1673,7 +1673,7 @@ def build_bba_ch22_causative_passive_drill(out_dir: Optional[str] = None) -> str
         BbaCh22CausativePassiveDrillPDF,
         'BBA Chapter 22 — Causative & Passive Stems: Capstone Review',
         'All Nine Aramaic Stems · Daniel and Ezra · Capstone Drill',
-        ['aramaic', 'bba', 'ch22', 'exercises', 'ch22-causative-passive-drill'],
+        ['bba', 'ch22', 'exercises', 'ch22-causative-passive-drill'],
         'ch22-causative-passive-drill.pdf',
         out_dir,
     )
@@ -1748,7 +1748,7 @@ def build_bba_ch13_peal_contrast(out_dir: Optional[str] = None) -> str:
         BbaCh13PealContrastPDF,
         'BBA Chapter 13 — Peal Perfect vs. Peal Imperfect Contrast Drill',
         'Peal Perfect and Imperfect · Daniel and Ezra · Contrast and Parse',
-        ['aramaic', 'bba', 'ch13', 'exercises', 'ch13-peal-contrast'],
+        ['bba', 'ch13', 'exercises', 'ch13-peal-contrast'],
         'ch13-peal-contrast.pdf',
         out_dir,
     )
@@ -1822,7 +1822,7 @@ def build_bba_ch18_stem_contrast(out_dir: Optional[str] = None) -> str:
         BbaCh18StemContrastPDF,
         'BBA Chapter 18 — Peil vs. Ithpeel Stem Identification Drill',
         'Passive Peil vs. Reflexive/Passive Ithpeel · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch18', 'exercises', 'ch18-stem-contrast'],
+        ['bba', 'ch18', 'exercises', 'ch18-stem-contrast'],
         'ch18-stem-contrast.pdf',
         out_dir,
     )
@@ -1896,7 +1896,7 @@ def build_bba_ch19_pael_peal_contrast(out_dir: Optional[str] = None) -> str:
         BbaCh19PaelPealContrastPDF,
         'BBA Chapter 19 — Peal vs. Pael Contrast Drill',
         'Simple Peal vs. Intensive/Factitive Pael · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch19', 'exercises', 'ch19-pael-qal-contrast'],
+        ['bba', 'ch19', 'exercises', 'ch19-pael-qal-contrast'],
         'ch19-pael-qal-contrast.pdf',
         out_dir,
     )
@@ -1969,7 +1969,7 @@ def build_bba_ch20_hithpaal_function_sort(out_dir: Optional[str] = None) -> str:
         BbaCh20HithpaalFunctionSortPDF,
         'BBA Chapter 20 — Hithpaal Semantic Function Sorting',
         'Reflexive · Iterative · Estimative · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch20', 'exercises', 'ch20-hithpaal-function-sort'],
+        ['bba', 'ch20', 'exercises', 'ch20-hithpaal-function-sort'],
         'ch20-hithpaal-function-sort.pdf',
         out_dir,
     )
@@ -2043,7 +2043,7 @@ def build_bba_ch21_haphel_peal_contrast(out_dir: Optional[str] = None) -> str:
         BbaCh21HaphelPealContrastPDF,
         'BBA Chapter 21 — Haphel vs. Peal Contrast Drill',
         'Causative Haphel vs. Simple Peal · Daniel and Ezra',
-        ['aramaic', 'bba', 'ch21', 'exercises', 'ch21-haphel-peal-contrast'],
+        ['bba', 'ch21', 'exercises', 'ch21-haphel-peal-contrast'],
         'ch21-haphel-peal-contrast.pdf',
         out_dir,
     )

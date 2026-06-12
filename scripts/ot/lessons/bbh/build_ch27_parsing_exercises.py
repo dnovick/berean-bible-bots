@@ -28,7 +28,7 @@ from src.bible_grammar.exercise_pdf.bbh import (  # noqa: E402
     build_ch27_weak_form_id_exercise,
 )
 
-OUT_ROOT = Path('output/lessons/hebrew/bbh/ch27/exercises')
+OUT_ROOT = Path('data/lessons/bbh/ch27/exercises')
 
 # ── Shared HTML skeleton ──────────────────────────────────────────────────────
 

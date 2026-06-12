@@ -19,7 +19,7 @@ sys.path.insert(0, '.')
 
 from src.bible_grammar.exercise_pdf import bbg as _bbg  # noqa: E402
 
-OUT_ROOT = Path('output/lessons/greek/bbg')
+OUT_ROOT = Path('data/lessons/bbg')
 
 # ── Shared CSS / JS ───────────────────────────────────────────────────────────
 

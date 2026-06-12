@@ -11,8 +11,8 @@ Source data files (edit these to change card content):
     data/decks/bbh/ch2-vowels-deck.yaml
 
 Output files (regenerated on every run):
-    output/lessons/hebrew/bbh/ch1/ch1-alphabet-deck.{md,txt,-fd.txt}
-    output/lessons/hebrew/bbh/ch2/ch2-vowels-deck.{md,txt,-fd.txt}
+    data/lessons/bbh/ch1/ch1-alphabet-deck.{md,txt,-fd.txt}
+    data/lessons/bbh/ch2/ch2-vowels-deck.{md,txt,-fd.txt}
 
 Formats
 -------
@@ -30,7 +30,7 @@ import yaml
 
 _REPO_ROOT = Path(__file__).resolve().parents[1]
 _DECKS_DATA_DIR = _REPO_ROOT / "data" / "decks" / "bbh"
-_LESSONS_DIR = _REPO_ROOT / "output" / "lessons" / "hebrew" / "bbh"
+_LESSONS_DIR = _REPO_ROOT / "data" / "lessons" / "bbh"
 
 _DECK_CONFIGS: list[tuple[str, str]] = [
     ("ch1-alphabet-deck.yaml", "ch1"),
