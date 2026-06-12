@@ -1290,9 +1290,10 @@ def main() -> None:
     # Copy hand-authored static assets (logo, CSS, JS) from docs/ into mkdocs_src/
     copy_static_assets()
 
-    # Write root index.md — Material for MkDocs uses the home.html override template
+    # Write root index.md — hide nav and TOC so the full width is available
     (MKDOCS_SRC / "index.md").write_text(
-        "---\ntemplate: home.html\n---\n", encoding="utf-8"
+        "---\ntemplate: home.html\nhide:\n  - navigation\n  - toc\n---\n",
+        encoding="utf-8",
     )
 
     build_api_reference()
