@@ -336,16 +336,18 @@ def render_course_page(course: dict[str, Any]) -> str:
     lines += [
         "## Sessions",
         "",
-        "| Session | Date |",
-        "|---|---|",
+        "| Session | Date | Recording |",
+        "|---|---|---|",
     ]
 
     for session in sessions:
         num = session.get("number", "")
         date_str = format_date(session.get("date"))
         focus = session.get("focus", "")
+        recording = (session.get("recording") or "").strip()
         sess_link = f"[{num} — {focus}](sessions/{session_filename(session)})"
-        lines.append(f"| {sess_link} | {date_str} |")
+        rec_cell = f"[Watch]({recording})" if recording else ""
+        lines.append(f"| {sess_link} | {date_str} | {rec_cell} |")
 
     lines.append("")
     return "\n".join(lines)
@@ -388,10 +390,12 @@ def render_session_page(
     focus = session.get("focus", "")
     date_str = format_date(session.get("date"))
     instructor = (session.get("instructor") or "").strip()
+    recording = (session.get("recording") or "").strip()
     chapter = session.get("chapter")
     agenda = session.get("agenda") or []
     sections = session.get("sections") or []
     notes = (session.get("notes") or "").strip()
+    files = session.get("files") or []
 
     # ── First pass: classify each section, build heading → URL map ─────────────
     section_urls: dict[str, str] = {}
@@ -420,6 +424,8 @@ def render_session_page(
         lines.append(f"**Date:** {date_str}  ")
     if instructor:
         lines.append(f"**Instructor:** {instructor}  ")
+    if recording:
+        lines.append(f"**Recording:** [Watch]({recording})  ")
 
     lines.append("")
 
@@ -446,6 +452,16 @@ def render_session_page(
             inline_body = _strip_leading_h1(body)
             if inline_body:
                 lines += [inline_body, ""]
+
+    if files:
+        lines += ["## Downloads", ""]
+        for f in files:
+            fname = f.get("file", "")
+            label = f.get("name", "") or fname
+            url = f"{sess_slug}/{fname}" if fname else ""
+            entry = f"[{label}]({url})" if url else label
+            lines.append(f"- {entry}")
+        lines.append("")
 
     if notes:
         lines += ["## Notes", "", notes, ""]
@@ -575,6 +591,23 @@ def main() -> None:
                         subpage_path = subpage_dir / fname
                         subpage_path.write_text(content)
                         print(f"  Wrote {subpage_path.relative_to(_REPO_ROOT)}")
+
+                sess_files = session.get("files") or []
+                if sess_files:
+                    sess_data_dir = course_dir / session_slug(session)
+                    files_out_dir = sessions_out / session_slug(session)
+                    files_out_dir.mkdir(parents=True, exist_ok=True)
+                    for f in sess_files:
+                        src_name = f.get("file", "")
+                        if not src_name:
+                            continue
+                        src = sess_data_dir / src_name
+                        if src.exists():
+                            dst = files_out_dir / src_name
+                            shutil.copy2(src, dst)
+                            print(f"  Copied {dst.relative_to(_REPO_ROOT)}")
+                        else:
+                            print(f"  WARNING: session file not found: {src}")
 
     update_nav(courses)
     print("Done.")
