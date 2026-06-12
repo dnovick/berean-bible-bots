@@ -1016,8 +1016,74 @@ def build_additional_resources_nav() -> list:
     return [{"Additional Resources": nav_entries}] if nav_entries else []
 
 
+_COURSE_META = {
+    "hebrew": {
+        "heading": "Biblical Hebrew — BBH",
+        "textbook": "*Basics of Biblical Hebrew*, Pratico & Van Pelt, 3rd Edition",
+        "sections": None,
+    },
+    "greek": {
+        "heading": "Biblical Greek — BBG",
+        "textbook": "*Basics of Biblical Greek*, William D. Mounce, 4th Edition",
+        "sections": None,
+    },
+    "aramaic": {
+        "heading": "Biblical Aramaic — BBA",
+        "textbook": "*Basics of Biblical Aramaic*",
+        "sections": [
+            ("Phonological System", range(1, 4)),
+            ("Nominal System", range(4, 12)),
+            ("Verbal System: Peal", range(12, 18)),
+            ("Verbal System: Derived Stems", range(18, 23)),
+        ],
+    },
+}
+
+
+def build_course_overview(lang: str, titles: dict[str, str]) -> None:
+    """Write mkdocs_src/lessons/{lang}/index.md — the language overview page."""
+    meta = _COURSE_META[lang]
+    dst = MKDOCS_SRC / "lessons" / lang
+    dst.mkdir(parents=True, exist_ok=True)
+
+    lines = [
+        f"# {meta['heading']}",
+        "",
+        meta["textbook"],
+        "",
+        "---",
+        "",
+        "## Syllabus",
+        "",
+    ]
+
+    def _table(chs: list[str]) -> list[str]:
+        rows = ["| Chapter | Topic |", "|---|---|"]
+        for ch in chs:
+            ch_num = int(ch[2:])
+            title = titles[ch]
+            rows.append(f"| [Ch{ch_num} — {title}]({ch}/index.md) | {title} |")
+        return rows
+
+    all_chs = sorted_chapters(titles)
+
+    if meta["sections"] is None:
+        lines.extend(_table(all_chs))
+    else:
+        ch_by_num = {int(ch[2:]): ch for ch in all_chs}
+        for section_title, ch_range in meta["sections"]:
+            lines.append(f"### {section_title}")
+            lines.append("")
+            chs = [ch_by_num[n] for n in ch_range if n in ch_by_num]
+            lines.extend(_table(chs))
+            lines.append("")
+
+    (dst / "index.md").write_text("\n".join(lines) + "\n", encoding="utf-8")
+
+
 def build_course(lang: str, course: str, label: str, titles: dict[str, str]) -> list:
     """Build all chapters for a course. Returns nav entries."""
+    build_course_overview(lang, titles)
     nav_entries = []
     nav_entries.append({"Overview": f"lessons/{lang}/index.md"})
     for ch in sorted_chapters(titles):
@@ -1130,7 +1196,7 @@ def build_nav() -> list:
         nav.extend(build_course(lang, course, label, titles))
     nav.extend(build_notebooks())
     nav.extend(build_reports())
-    nav.extend(build_courses_nav())
+    # Courses nav block is inserted by scripts/build_courses.py (update_nav)
     nav.extend(build_study_helps())
     nav.append({"API Reference": "reference/index.md"})
     return nav
