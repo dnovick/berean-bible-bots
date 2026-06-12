@@ -21,7 +21,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).parent.parent
-LESSONS = ROOT / "output" / "lessons"
+LESSONS = ROOT / "data" / "lessons"
 
 # Matches:  \n---\n\n## Files<anything (non-greedy)>\n---\n
 # Replaces with: \n\n---\n   (keeps the closing ---, adds blank line before it)
@@ -31,9 +31,9 @@ _FILES_SECTION = re.compile(
 )
 
 COURSE_DIRS = {
-    "bbh": LESSONS / "hebrew" / "bbh",
-    "bbg": LESSONS / "greek" / "bbg",
-    "bba": LESSONS / "aramaic" / "bba",
+    "bbh": LESSONS / "bbh",
+    "bbg": LESSONS / "bbg",
+    "bba": LESSONS / "bba",
 }
 
 

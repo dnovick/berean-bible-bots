@@ -5,7 +5,7 @@ Source files (temp/):
   Biblical_Hebrew_-_All_Forms_of_Qatal.apkg — 195 strong-verb paradigm cards
   Hebrew parsing exercises.apkg        — 10,399 OT verb parsing cards
 
-Outputs (output/lessons/hebrew/bbh/sblair/):
+Outputs (data/lessons/bbh/sblair/):
   sblair-vocab/       — vocabulary deck (ch2–35 words, tags by chapter)
   sblair-vocab-extra/ — extended OT vocab (cards 507–1000, freq 30–69)
   sblair-paradigm/    — strong verb paradigm deck
@@ -20,7 +20,7 @@ import sqlite3
 from pathlib import Path
 
 APKG_DIR = Path('temp')
-OUT_ROOT = Path('output/lessons/hebrew/bbh/additional-resources')
+OUT_ROOT = Path('data/lessons/bbh/additional-resources')
 OUT_ROOT.mkdir(parents=True, exist_ok=True)
 
 

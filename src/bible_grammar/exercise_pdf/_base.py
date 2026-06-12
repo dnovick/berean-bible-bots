@@ -1387,11 +1387,11 @@ def _build_exercise_pdf(klass: Any, title: str, subtitle: str,
     """
     Instantiate `klass(title, subtitle)`, save to the standard output path, and return the path.
 
-    path_parts: sub-path components under output/lessons/ (e.g. ['aramaic','bba','ch1','exercises','ch1-letter-recognition'])
+    path_parts: sub-path components under data/lessons/ (e.g. ['bba','ch1','exercises','ch1-letter-recognition'])
     filename:   PDF filename without directory (e.g. 'ch1-letter-recognition.pdf')
     """
     if out_dir is None:
         here = os.path.dirname(os.path.abspath(__file__))
-        out_dir = os.path.join(here, '..', '..', '..', 'output', 'lessons', *path_parts)
+        out_dir = os.path.join(here, '..', '..', '..', 'data', 'lessons', *path_parts)
     path = os.path.join(out_dir, filename)
     return klass(title=title, subtitle=subtitle).save(path)

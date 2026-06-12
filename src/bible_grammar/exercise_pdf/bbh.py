@@ -264,7 +264,7 @@ def build_ch26_contrast_exercise(out_dir: Optional[str] = None) -> str:
         Ch26ContrastExercise,
         'Chapter 26 — Qal–Hiphil Contrast Drill',
         'BBH Chapter 26 · Hiphil Strong Verbs',
-        ['hebrew', 'bbh', 'ch26', 'exercises', 'ch26-qal-hiphil-contrast'],
+        ['bbh', 'ch26', 'exercises', 'ch26-qal-hiphil-contrast'],
         'ch26-qal-hiphil-contrast.pdf',
         out_dir,
     )
@@ -342,7 +342,7 @@ def build_ch26_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch26FunctionSortExercise,
         'Chapter 26 — Semantic Function Sorting',
         'BBH Chapter 26 · Hiphil Strong Verbs',
-        ['hebrew', 'bbh', 'ch26', 'exercises', 'ch26-function-sort'],
+        ['bbh', 'ch26', 'exercises', 'ch26-function-sort'],
         'ch26-function-sort.pdf',
         out_dir,
     )
@@ -353,7 +353,7 @@ def build_ch26_exercise(out_dir: Optional[str] = None) -> str:
         Ch26Exercise,
         'Chapter 26 — "Spot the Hiphil" Passage Exercise',
         'Genesis 6–8  ·  Genesis 22  ·  Deuteronomy 7',
-        ['hebrew', 'bbh', 'ch26', 'exercises', 'ch26-passage-exercise'],
+        ['bbh', 'ch26', 'exercises', 'ch26-passage-exercise'],
         'ch26-passage-exercise.pdf',
         out_dir,
     )
@@ -442,7 +442,7 @@ def build_ch26_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch26StemIdDrill,
         'Chapter 26 — Qal / Niphal / Hiphil Stem Identification Drill',
         'BBH Chapter 26 · Hiphil Strong Verbs',
-        ['hebrew', 'bbh', 'ch26', 'exercises', 'ch26-stem-id-drill'],
+        ['bbh', 'ch26', 'exercises', 'ch26-stem-id-drill'],
         'ch26-stem-id-drill.pdf', out_dir,
     )
 
@@ -598,7 +598,7 @@ def build_ch25_exercise(out_dir: Optional[str] = None) -> str:
         Ch25Exercise,
         'Chapter 25 — "Spot the Niphal" Passage Exercise',
         'Genesis 3, 6, and 21  ·  The Garden, the Flood Prelude, and Beersheba',
-        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-passage-exercise'],
+        ['bbh', 'ch25', 'exercises', 'ch25-passage-exercise'],
         'ch25-passage-exercise.pdf',
         out_dir,
     )
@@ -770,7 +770,7 @@ def build_ch24_exercise(out_dir: Optional[str] = None) -> str:
         Ch24Exercise,
         'Chapter 24 — "Spot the Niphal" Passage Exercise',
         'Genesis 37, 44, 45, 47, 49  ·  The Joseph Narrative',
-        ['hebrew', 'bbh', 'ch24', 'exercises', 'ch24-passage-exercise'],
+        ['bbh', 'ch24', 'exercises', 'ch24-passage-exercise'],
         'ch24-passage-exercise.pdf',
         out_dir,
     )
@@ -840,7 +840,7 @@ def build_ch24_contrast_exercise(out_dir: Optional[str] = None) -> str:
         Ch24ContrastExercise,
         'Chapter 24 — Qal–Niphal Contrast Drill',
         'BBH Chapter 24 · Niphal Strong Verbs',
-        ['hebrew', 'bbh', 'ch24', 'exercises', 'ch24-qal-niphal-contrast'],
+        ['bbh', 'ch24', 'exercises', 'ch24-qal-niphal-contrast'],
         'ch24-qal-niphal-contrast.pdf',
         out_dir,
     )
@@ -914,7 +914,7 @@ def build_ch24_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch24FunctionSortExercise,
         'Chapter 24 — Semantic Function Sorting',
         'BBH Chapter 24 · Niphal Strong Verbs',
-        ['hebrew', 'bbh', 'ch24', 'exercises', 'ch24-function-sort'],
+        ['bbh', 'ch24', 'exercises', 'ch24-function-sort'],
         'ch24-function-sort.pdf',
         out_dir,
     )
@@ -1042,7 +1042,7 @@ def build_ch25_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
         Ch25WeakFormIdExercise,
         'Chapter 25 — Niphal Weak-Form Identification Drill',
         'BBH Chapter 25 · Niphal Weak Verbs',
-        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-weak-form-id'],
+        ['bbh', 'ch25', 'exercises', 'ch25-weak-form-id'],
         'ch25-weak-form-id.pdf',
         out_dir,
     )
@@ -1194,7 +1194,7 @@ def build_ch27_exercise(out_dir: Optional[str] = None) -> str:
         Ch27Exercise,
         'Chapter 27 — "Spot the Hiphil" Passage Exercise',
         'BBH Chapter 27 · Hiphil Weak Verbs',
-        ['hebrew', 'bbh', 'ch27', 'exercises', 'ch27-passage-exercise'],
+        ['bbh', 'ch27', 'exercises', 'ch27-passage-exercise'],
         'ch27-passage-exercise.pdf',
         out_dir,
     )
@@ -1319,7 +1319,7 @@ def build_ch27_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
         Ch27WeakFormIdExercise,
         'Chapter 27 — Hiphil Weak-Form Identification Drill',
         'BBH Chapter 27 · Hiphil Weak Verbs',
-        ['hebrew', 'bbh', 'ch27', 'exercises', 'ch27-weak-form-id'],
+        ['bbh', 'ch27', 'exercises', 'ch27-weak-form-id'],
         'ch27-weak-form-id.pdf',
         out_dir,
     )
@@ -1460,7 +1460,7 @@ def build_ch27_nh_contrast_exercise(out_dir: Optional[str] = None) -> str:
         Ch27NHContrastExercise,
         'Chapter 27 — Niphal–Hiphil Contrast Drill',
         'BBH Chapters 25 & 27 · Niphal and Hiphil Weak Verbs',
-        ['hebrew', 'bbh', 'ch27', 'exercises', 'ch27-niphal-hiphil-contrast'],
+        ['bbh', 'ch27', 'exercises', 'ch27-niphal-hiphil-contrast'],
         'ch27-niphal-hiphil-contrast.pdf',
         out_dir,
     )
@@ -1609,7 +1609,7 @@ def build_ch27_bg_drill_exercise(out_dir: Optional[str] = None) -> str:
         Ch27BGDrillExercise,
         'Chapter 27 — Biconsonantal / Geminate Disambiguation Drill',
         'BBH Chapters 25 & 27 · Niphal and Hiphil Weak Verbs',
-        ['hebrew', 'bbh', 'ch27', 'exercises', 'ch27-biconsig-drill'],
+        ['bbh', 'ch27', 'exercises', 'ch27-biconsig-drill'],
         'ch27-biconsig-drill.pdf',
         out_dir,
     )
@@ -1683,7 +1683,7 @@ def build_ch27_contrast_exercise(out_dir: Optional[str] = None) -> str:
         Ch27ContrastExercise,
         'Chapter 27 — Qal–Hiphil Contrast Drill (Weak Verbs)',
         'BBH Chapter 27 · Hiphil Weak Verbs',
-        ['hebrew', 'bbh', 'ch27', 'exercises', 'ch27-qal-hiphil-contrast'],
+        ['bbh', 'ch27', 'exercises', 'ch27-qal-hiphil-contrast'],
         'ch27-qal-hiphil-contrast.pdf',
         out_dir,
     )
@@ -1757,7 +1757,7 @@ def build_ch27_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch27FunctionSortExercise,
         'Chapter 27 — Semantic Function Sorting (Weak Roots)',
         'BBH Chapter 27 · Hiphil Weak Verbs',
-        ['hebrew', 'bbh', 'ch27', 'exercises', 'ch27-function-sort'],
+        ['bbh', 'ch27', 'exercises', 'ch27-function-sort'],
         'ch27-function-sort.pdf',
         out_dir,
     )
@@ -1847,7 +1847,7 @@ def build_ch27_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch27StemIdDrill,
         'Chapter 27 — Qal / Niphal / Hiphil Stem Identification Drill (Weak Roots)',
         'BBH Chapter 27 · Hiphil Weak Verbs',
-        ['hebrew', 'bbh', 'ch27', 'exercises', 'ch27-stem-id-drill'],
+        ['bbh', 'ch27', 'exercises', 'ch27-stem-id-drill'],
         'ch27-stem-id-drill.pdf', out_dir,
     )
 
@@ -1959,7 +1959,7 @@ def build_ch30_exercise(out_dir: Optional[str] = None) -> str:
         Ch30PielExercise,
         'Chapter 30 — "Spot the Piel" Passage Exercise',
         'Gen 1  ·  Exo 19  ·  Num 22',
-        ['hebrew', 'bbh', 'ch30', 'exercises', 'ch30-passage-exercise'],
+        ['bbh', 'ch30', 'exercises', 'ch30-passage-exercise'],
         'ch30-passage-exercise.pdf',
         out_dir,
     )
@@ -2044,7 +2044,7 @@ def build_ch28_hophal_exercise(out_dir: Optional[str] = None) -> str:
         Ch28HophalExercise,
         'Chapter 28 — "Spot the Hophal" Passage Exercise',
         'Genesis 22  ·  Exodus 5  ·  Numbers 35',
-        ['hebrew', 'bbh', 'ch28', 'exercises', 'ch28-passage-exercise'],
+        ['bbh', 'ch28', 'exercises', 'ch28-passage-exercise'],
         'ch28-passage-exercise.pdf',
         out_dir,
     )
@@ -2173,7 +2173,7 @@ def build_ch34_hithpael_exercise(out_dir: Optional[str] = None) -> str:
         Ch34HithpaelExercise,
         'Chapter 34 — "Spot the Hithpael" Passage Exercise',
         '(Strong Verbs)  ·  1 Kgs 8  ·  Gen 20  ·  Jos 3  ·  Exo 19  ·  Gen 22  ·  2 Sam 10',
-        ['hebrew', 'bbh', 'ch34', 'exercises', 'ch34-passage-exercise'],
+        ['bbh', 'ch34', 'exercises', 'ch34-passage-exercise'],
         'ch34-passage-exercise.pdf',
         out_dir,
     )
@@ -2302,7 +2302,7 @@ def build_ch35_hithpael_weak_exercise(out_dir: Optional[str] = None) -> str:
         Ch35HithpaelWeakExercise,
         'Chapter 35 — "Spot the Hithpael" Passage Exercise',
         '(Weak Verbs)  ·  Gen 22/18  ·  Exo 20  ·  Psa 95  ·  Gen 35/44  ·  1 Sam 10  ·  2 Kgs 8',
-        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-passage-exercise'],
+        ['bbh', 'ch35', 'exercises', 'ch35-passage-exercise'],
         'ch35-passage-exercise.pdf',
         out_dir,
     )
@@ -2451,7 +2451,7 @@ def build_ch29_hophal_weak_exercise(out_dir: Optional[str] = None) -> str:
         Ch29HophalWeakExercise,
         'Chapter 29 — "Spot the Hophal Weak" Passage Exercise',
         'Genesis 39-43  /  Exodus 40 + Numbers 9  /  Genesis 38 + Exodus 14',
-        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-passage-exercise'],
+        ['bbh', 'ch29', 'exercises', 'ch29-passage-exercise'],
         'ch29-passage-exercise.pdf',
         out_dir,
     )
@@ -2618,7 +2618,7 @@ def build_ch31_piel_weak_exercise(out_dir: Optional[str] = None) -> str:
         Ch31PielWeakExercise,
         'Chapter 31 — "Spot the Piel Weak" Passage Exercise',
         'Gen 2-3, 6, 16, 18  /  Exo 1  /  Deu 8  /  Amos 3  /  Gen 50',
-        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-passage-exercise'],
+        ['bbh', 'ch31', 'exercises', 'ch31-passage-exercise'],
         'ch31-passage-exercise.pdf',
         out_dir,
     )
@@ -2740,7 +2740,7 @@ def build_ch32_exercise(out_dir: Optional[str] = None) -> str:
         Ch32PualExercise,
         'Chapter 32 — "Spot the Pual" Passage Exercise',
         'Num 22–23  ·  Exo 29  ·  Isa 43',
-        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-passage-exercise'],
+        ['bbh', 'ch32', 'exercises', 'ch32-passage-exercise'],
         'ch32-passage-exercise.pdf',
         out_dir,
     )
@@ -2873,7 +2873,7 @@ def build_ch33_exercise(out_dir: Optional[str] = None) -> str:
         Ch33PualWeakExercise,
         'Chapter 33 — "Spot the Pual" Passage Exercise (Weak Roots)',
         'Gen 4  ·  Lev 7–8  ·  Num 3, 22  ·  Psa 72',
-        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-passage-exercise'],
+        ['bbh', 'ch33', 'exercises', 'ch33-passage-exercise'],
         'ch33-passage-exercise.pdf',
         out_dir,
     )
@@ -2977,7 +2977,7 @@ def build_ch1_letter_recognition(out_dir: Optional[str] = None) -> str:
         Ch1LetterRecognitionExercise,
         'Chapter 1 — Hebrew Letter Recognition Exercise',
         'Hebrew Alphabet — Letter Identification',
-        ['hebrew', 'bbh', 'ch1', 'exercises', 'ch1-letter-recognition'],
+        ['bbh', 'ch1', 'exercises', 'ch1-letter-recognition'],
         'ch1-letter-recognition.pdf',
         out_dir,
     )
@@ -3064,7 +3064,7 @@ def build_ch2_vowel_identification(out_dir: Optional[str] = None) -> str:
         Ch2VowelIdentificationExercise,
         'Chapter 2 — Vowel Identification Exercise',
         'Hebrew Vowels — Identification and Classification',
-        ['hebrew', 'bbh', 'ch2', 'exercises', 'ch2-vowel-identification'],
+        ['bbh', 'ch2', 'exercises', 'ch2-vowel-identification'],
         'ch2-vowel-identification.pdf',
         out_dir,
     )
@@ -3140,7 +3140,7 @@ def build_ch3_syllable_division(out_dir: Optional[str] = None) -> str:
         Ch3SyllableDivisionExercise,
         'Chapter 3 — Syllable Division Exercise',
         'Hebrew Syllables — Open, Closed, Stress, Qamets Hatuf',
-        ['hebrew', 'bbh', 'ch3', 'exercises', 'ch3-syllable-division'],
+        ['bbh', 'ch3', 'exercises', 'ch3-syllable-division'],
         'ch3-syllable-division.pdf',
         out_dir,
     )
@@ -3224,7 +3224,7 @@ def build_ch4_noun_parsing(out_dir: Optional[str] = None) -> str:
         Ch4NounParsingExercise,
         'Chapter 4 — Noun Parsing Drill',
         'Hebrew Nouns — Gender, Number, State, Lexical Form',
-        ['hebrew', 'bbh', 'ch4', 'exercises', 'ch4-noun-parsing'],
+        ['bbh', 'ch4', 'exercises', 'ch4-noun-parsing'],
         'ch4-noun-parsing.pdf',
         out_dir,
     )
@@ -3343,7 +3343,7 @@ def build_ch5_article_and_vav(out_dir: Optional[str] = None) -> str:
         Ch5ArticleAndVavExercise,
         'Chapter 5 — Definite Article and Conjunction ו',
         'BBH Chapter 5 · 25 items',
-        ['hebrew', 'bbh', 'ch5', 'exercises', 'ch5-article-and-vav'],
+        ['bbh', 'ch5', 'exercises', 'ch5-article-and-vav'],
         'ch5-article-and-vav.pdf',
         out_dir,
     )
@@ -3454,7 +3454,7 @@ def build_ch6_preposition_parsing(out_dir: Optional[str] = None) -> str:
         Ch6PrepositionParsingExercise,
         'Chapter 6 — Preposition Parsing Drill',
         'Hebrew Prepositions — Inseparable, Article Fusion, מִן, Independent',
-        ['hebrew', 'bbh', 'ch6', 'exercises', 'ch6-preposition-parsing'],
+        ['bbh', 'ch6', 'exercises', 'ch6-preposition-parsing'],
         'ch6-preposition-parsing.pdf',
         out_dir,
     )
@@ -3574,7 +3574,7 @@ def build_ch7_adjective_usage(out_dir: Optional[str] = None) -> str:
         Ch7AdjectiveUsageExercise,
         'Chapter 7 — Adjective Usage Drill',
         'Hebrew Adjectives — Attributive, Predicate, and Substantival Uses',
-        ['hebrew', 'bbh', 'ch7', 'exercises', 'ch7-adjective-usage'],
+        ['bbh', 'ch7', 'exercises', 'ch7-adjective-usage'],
         'ch7-adjective-usage.pdf',
         out_dir,
     )
@@ -3662,7 +3662,7 @@ def build_ch8_pronoun_identification(out_dir: Optional[str] = None) -> str:
         Ch8PronounIdentificationExercise,
         'Chapter 8 — Pronoun Identification Drill',
         'Personal, Demonstrative, Relative, and Interrogative Pronouns',
-        ['hebrew', 'bbh', 'ch8', 'exercises', 'ch8-pronoun-identification'],
+        ['bbh', 'ch8', 'exercises', 'ch8-pronoun-identification'],
         'ch8-pronoun-identification.pdf',
         out_dir,
     )
@@ -3749,7 +3749,7 @@ def build_ch9_suffix_parsing(out_dir: Optional[str] = None) -> str:
         Ch9SuffixParsingExercise,
         'Chapter 9 — Hebrew Pronominal Suffix Parsing Drill',
         'Pronominal Suffixes on Nouns, Prepositions, and the DOM',
-        ['hebrew', 'bbh', 'ch9', 'exercises', 'ch9-suffix-parsing'],
+        ['bbh', 'ch9', 'exercises', 'ch9-suffix-parsing'],
         'ch9-suffix-parsing.pdf',
         out_dir,
     )
@@ -3858,7 +3858,7 @@ def build_ch10_construct_chain(out_dir: Optional[str] = None) -> str:
         Ch10ConstructChainExercise,
         'Chapter 10 — Construct Chain Drill',
         'BBH Chapter 10 — Hebrew Construct Chain',
-        ['hebrew', 'bbh', 'ch10', 'exercises', 'ch10-construct-chain'],
+        ['bbh', 'ch10', 'exercises', 'ch10-construct-chain'],
         'ch10-construct-chain.pdf',
         out_dir,
     )
@@ -3938,7 +3938,7 @@ def build_ch11_number_identification(out_dir: Optional[str] = None) -> str:
         Ch11NumberIdentificationExercise,
         'Chapter 11 — Number Identification Drill',
         'Hebrew Numbers — Cardinals, Teens, Tens, and Ordinals',
-        ['hebrew', 'bbh', 'ch11', 'exercises', 'ch11-number-identification'],
+        ['bbh', 'ch11', 'exercises', 'ch11-number-identification'],
         'ch11-number-identification.pdf',
         out_dir,
     )
@@ -4030,7 +4030,7 @@ def build_ch12_verb_overview(out_dir: Optional[str] = None) -> str:
         Ch12VerbOverviewExercise,
         'Chapter 12 — Verb Overview Exercise',
         'BBH Chapter 12 · 20 items',
-        ['hebrew', 'bbh', 'ch12', 'exercises', 'ch12-verb-overview'],
+        ['bbh', 'ch12', 'exercises', 'ch12-verb-overview'],
         'ch12-verb-overview.pdf',
         out_dir,
     )
@@ -4139,7 +4139,7 @@ def build_ch13_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch13ParsingDrillExercise,
         'Chapter 13 — Parsing Drill: Qal Perfect Strong Verbs',
         'BBH Chapter 13',
-        ['hebrew', 'bbh', 'ch13', 'exercises', 'ch13-parsing-drill'],
+        ['bbh', 'ch13', 'exercises', 'ch13-parsing-drill'],
         'ch13-parsing-drill.pdf',
         out_dir,
     )
@@ -4226,7 +4226,7 @@ def build_ch13_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch13PassageExercise,
         'Chapter 13 — Passage Exercise: Qal Perfect Strong Verbs',
         'BBH Chapter 13',
-        ['hebrew', 'bbh', 'ch13', 'exercises', 'ch13-passage-exercise'],
+        ['bbh', 'ch13', 'exercises', 'ch13-passage-exercise'],
         'ch13-passage-exercise.pdf',
         out_dir,
     )
@@ -4332,7 +4332,7 @@ def build_ch14_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch14PassageExercise,
         'Chapter 14 — Passage Exercise: Qal Perfect Weak Verbs',
         'BBH Chapter 14',
-        ['hebrew', 'bbh', 'ch14', 'exercises', 'ch14-passage-exercise'],
+        ['bbh', 'ch14', 'exercises', 'ch14-passage-exercise'],
         'ch14-passage-exercise.pdf',
         out_dir,
     )
@@ -4472,7 +4472,7 @@ def build_ch14_weak_form_id(out_dir: Optional[str] = None) -> str:
         Ch14WeakFormIdExercise,
         'Chapter 14 — Weak-Form Identification Drill: Qal Perfect Weak Verbs',
         'BBH Chapter 14',
-        ['hebrew', 'bbh', 'ch14', 'exercises', 'ch14-weak-form-id'],
+        ['bbh', 'ch14', 'exercises', 'ch14-weak-form-id'],
         'ch14-weak-form-id.pdf',
         out_dir,
     )
@@ -4584,7 +4584,7 @@ def build_ch15_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch15ParsingDrillExercise,
         'Chapter 15 — Parsing Drill: Qal Imperfect Strong Verbs',
         'BBH Chapter 15',
-        ['hebrew', 'bbh', 'ch15', 'exercises', 'ch15-parsing-drill'],
+        ['bbh', 'ch15', 'exercises', 'ch15-parsing-drill'],
         'ch15-parsing-drill.pdf',
         out_dir,
     )
@@ -4672,7 +4672,7 @@ def build_ch15_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch15PassageExercise,
         'Chapter 15 — Passage Exercise: Qal Imperfect Strong Verbs',
         'BBH Chapter 15',
-        ['hebrew', 'bbh', 'ch15', 'exercises', 'ch15-passage-exercise'],
+        ['bbh', 'ch15', 'exercises', 'ch15-passage-exercise'],
         'ch15-passage-exercise.pdf',
         out_dir,
     )
@@ -4765,7 +4765,7 @@ def build_ch16_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch16PassageExercise,
         'Chapter 16 — Passage Exercise: Qal Imperfect Weak Verbs',
         'BBH Chapter 16',
-        ['hebrew', 'bbh', 'ch16', 'exercises', 'ch16-passage-exercise'],
+        ['bbh', 'ch16', 'exercises', 'ch16-passage-exercise'],
         'ch16-passage-exercise.pdf',
         out_dir,
     )
@@ -4929,7 +4929,7 @@ def build_ch16_weak_form_id(out_dir: Optional[str] = None) -> str:
         Ch16WeakFormIdExercise,
         'Chapter 16 — Weak Form ID Drill: Qal Imperfect Weak Verbs',
         'BBH Chapter 16',
-        ['hebrew', 'bbh', 'ch16', 'exercises', 'ch16-weak-form-id'],
+        ['bbh', 'ch16', 'exercises', 'ch16-weak-form-id'],
         'ch16-weak-form-id.pdf',
         out_dir,
     )
@@ -5040,7 +5040,7 @@ def build_ch17_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch17ParsingDrillExercise,
         'Chapter 17 — Parsing Drill: Wayyiqtol and Weqatal',
         'BBH Chapter 17',
-        ['hebrew', 'bbh', 'ch17', 'exercises', 'ch17-parsing-drill'],
+        ['bbh', 'ch17', 'exercises', 'ch17-parsing-drill'],
         'ch17-parsing-drill.pdf',
         out_dir,
     )
@@ -5131,7 +5131,7 @@ def build_ch17_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch17PassageExercise,
         'Chapter 17 — Passage Exercise: Wayyiqtol and Weqatal in Context',
         'BBH Chapter 17',
-        ['hebrew', 'bbh', 'ch17', 'exercises', 'ch17-passage-exercise'],
+        ['bbh', 'ch17', 'exercises', 'ch17-passage-exercise'],
         'ch17-passage-exercise.pdf',
         out_dir,
     )
@@ -5258,7 +5258,7 @@ def build_ch18_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch18ParsingDrillExercise,
         'Chapter 18 — Parsing Drill: Qal Imperative',
         'BBH Chapter 18',
-        ['hebrew', 'bbh', 'ch18', 'exercises', 'ch18-parsing-drill'],
+        ['bbh', 'ch18', 'exercises', 'ch18-parsing-drill'],
         'ch18-parsing-drill.pdf',
         out_dir,
     )
@@ -5353,7 +5353,7 @@ def build_ch18_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch18PassageExercise,
         'Chapter 18 — Passage Exercise: Qal Imperative in Context',
         'BBH Chapter 18',
-        ['hebrew', 'bbh', 'ch18', 'exercises', 'ch18-passage-exercise'],
+        ['bbh', 'ch18', 'exercises', 'ch18-passage-exercise'],
         'ch18-passage-exercise.pdf',
         out_dir,
     )
@@ -5495,7 +5495,7 @@ def build_ch19_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch19ParsingDrillExercise,
         'Chapter 19 — Parsing Drill: Pronominal Suffixes on Verbs',
         'BBH Chapter 19',
-        ['hebrew', 'bbh', 'ch19', 'exercises', 'ch19-parsing-drill'],
+        ['bbh', 'ch19', 'exercises', 'ch19-parsing-drill'],
         'ch19-parsing-drill.pdf',
         out_dir,
     )
@@ -5581,7 +5581,7 @@ def build_ch19_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch19PassageExercise,
         'Chapter 19 — Passage Exercise: Pronominal Suffixes on Verbs in Context',
         'BBH Chapter 19',
-        ['hebrew', 'bbh', 'ch19', 'exercises', 'ch19-passage-exercise'],
+        ['bbh', 'ch19', 'exercises', 'ch19-passage-exercise'],
         'ch19-passage-exercise.pdf',
         out_dir,
     )
@@ -5706,7 +5706,7 @@ def build_ch20_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch20ParsingDrillExercise,
         'Chapter 20 — Parsing Drill: Qal Infinitive Construct',
         'BBH Chapter 20',
-        ['hebrew', 'bbh', 'ch20', 'exercises', 'ch20-parsing-drill'],
+        ['bbh', 'ch20', 'exercises', 'ch20-parsing-drill'],
         'ch20-parsing-drill.pdf',
         out_dir,
     )
@@ -5806,7 +5806,7 @@ def build_ch20_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch20PassageExercise,
         'Chapter 20 — Passage Exercise: Qal Infinitive Construct in Context',
         'BBH Chapter 20',
-        ['hebrew', 'bbh', 'ch20', 'exercises', 'ch20-passage-exercise'],
+        ['bbh', 'ch20', 'exercises', 'ch20-passage-exercise'],
         'ch20-passage-exercise.pdf',
         out_dir,
     )
@@ -5931,7 +5931,7 @@ def build_ch21_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch21ParsingDrillExercise,
         'Chapter 21 — Parsing Drill: Qal Infinitive Absolute',
         'BBH Chapter 21',
-        ['hebrew', 'bbh', 'ch21', 'exercises', 'ch21-parsing-drill'],
+        ['bbh', 'ch21', 'exercises', 'ch21-parsing-drill'],
         'ch21-parsing-drill.pdf',
         out_dir,
     )
@@ -6026,7 +6026,7 @@ def build_ch21_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch21PassageExercise,
         'Chapter 21 — Passage Exercise: Qal Infinitive Absolute in Context',
         'BBH Chapter 21',
-        ['hebrew', 'bbh', 'ch21', 'exercises', 'ch21-passage-exercise'],
+        ['bbh', 'ch21', 'exercises', 'ch21-passage-exercise'],
         'ch21-passage-exercise.pdf',
         out_dir,
     )
@@ -6180,7 +6180,7 @@ def build_ch22_parsing_drill(out_dir: Optional[str] = None) -> str:
         Ch22ParsingDrillExercise,
         'Chapter 22 — Parsing Drill: Qal Participle (Active and Passive)',
         'BBH Chapter 22',
-        ['hebrew', 'bbh', 'ch22', 'exercises', 'ch22-parsing-drill'],
+        ['bbh', 'ch22', 'exercises', 'ch22-parsing-drill'],
         'ch22-parsing-drill.pdf',
         out_dir,
     )
@@ -6288,7 +6288,7 @@ def build_ch22_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch22PassageExercise,
         'Chapter 22 — Passage Exercise: Qal Participle (Active and Passive) in Context',
         'BBH Chapter 22',
-        ['hebrew', 'bbh', 'ch22', 'exercises', 'ch22-passage-exercise'],
+        ['bbh', 'ch22', 'exercises', 'ch22-passage-exercise'],
         'ch22-passage-exercise.pdf',
         out_dir,
     )
@@ -6439,7 +6439,7 @@ def build_ch23_clause_analysis(out_dir: Optional[str] = None) -> str:
         Ch23ClauseAnalysisExercise,
         'Chapter 23 — Clause Analysis Drill',
         'BBH Chapter 23',
-        ['hebrew', 'bbh', 'ch23', 'exercises', 'ch23-clause-analysis'],
+        ['bbh', 'ch23', 'exercises', 'ch23-clause-analysis'],
         'ch23-clause-analysis.pdf',
         out_dir,
     )
@@ -6524,7 +6524,7 @@ def build_ch23_passage_exercise(out_dir: Optional[str] = None) -> str:
         Ch23PassageExercise,
         'Chapter 23 — Passage Exercise: Reading the Clause in Context',
         'BBH Chapter 23',
-        ['hebrew', 'bbh', 'ch23', 'exercises', 'ch23-passage-exercise'],
+        ['bbh', 'ch23', 'exercises', 'ch23-passage-exercise'],
         'ch23-passage-exercise.pdf',
         out_dir,
     )
@@ -6594,7 +6594,7 @@ def build_ch28_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch28FunctionSortExercise,
         'Chapter 28 — Hophal Semantic Function Sorting',
         'BBH Chapter 28 · Hophal Strong Verbs',
-        ['hebrew', 'bbh', 'ch28', 'exercises', 'ch28-function-sort'],
+        ['bbh', 'ch28', 'exercises', 'ch28-function-sort'],
         'ch28-function-sort.pdf',
         out_dir,
     )
@@ -6685,7 +6685,7 @@ def build_ch28_hophal_hiphil_contrast_exercise(out_dir: Optional[str] = None) ->
         Ch28HophalHiphilContrastExercise,
         'Chapter 28 — Hiphil–Hophal Contrast Drill',
         'BBH Chapter 28 · Hophal Strong Verbs',
-        ['hebrew', 'bbh', 'ch28', 'exercises', 'ch28-hophal-hiphil-contrast'],
+        ['bbh', 'ch28', 'exercises', 'ch28-hophal-hiphil-contrast'],
         'ch28-hophal-hiphil-contrast.pdf',
         out_dir,
     )
@@ -6832,7 +6832,7 @@ def build_ch29_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
         Ch29WeakFormIdExercise,
         'Chapter 29 — Hophal Weak-Form Identification Drill',
         'BBH Chapter 29 · Hophal Weak Verbs',
-        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-weak-form-id'],
+        ['bbh', 'ch29', 'exercises', 'ch29-weak-form-id'],
         'ch29-weak-form-id.pdf',
         out_dir,
     )
@@ -6902,7 +6902,7 @@ def build_ch30_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch30FunctionSortExercise,
         'Chapter 30 — Piel Semantic Function Sorting',
         'BBH Chapter 30 · Piel Strong Verbs',
-        ['hebrew', 'bbh', 'ch30', 'exercises', 'ch30-function-sort'],
+        ['bbh', 'ch30', 'exercises', 'ch30-function-sort'],
         'ch30-function-sort.pdf',
         out_dir,
     )
@@ -7010,7 +7010,7 @@ def build_ch30_qal_piel_contrast_exercise(out_dir: Optional[str] = None) -> str:
         Ch30QalPielContrastExercise,
         'Chapter 30 — Qal–Piel Contrast Drill',
         'BBH Chapter 30 · Piel Strong Verbs',
-        ['hebrew', 'bbh', 'ch30', 'exercises', 'ch30-qal-piel-contrast'],
+        ['bbh', 'ch30', 'exercises', 'ch30-qal-piel-contrast'],
         'ch30-qal-piel-contrast.pdf',
         out_dir,
     )
@@ -7155,7 +7155,7 @@ def build_ch31_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
         Ch31WeakFormIdExercise,
         'Chapter 31 — Piel Weak-Form Identification Drill',
         'BBH Chapter 31 · Piel Weak Verbs',
-        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-weak-form-id'],
+        ['bbh', 'ch31', 'exercises', 'ch31-weak-form-id'],
         'ch31-weak-form-id.pdf',
         out_dir,
     )
@@ -7266,7 +7266,7 @@ def build_ch32_piel_pual_contrast_exercise(out_dir: Optional[str] = None) -> str
         Ch32PielPualContrastExercise,
         'Chapter 32 — Piel–Pual Contrast Drill',
         'BBH Chapter 32 · Pual Strong Verbs',
-        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-piel-pual-contrast'],
+        ['bbh', 'ch32', 'exercises', 'ch32-piel-pual-contrast'],
         'ch32-piel-pual-contrast.pdf',
         out_dir,
     )
@@ -7388,7 +7388,7 @@ def build_ch33_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
         Ch33WeakFormIdExercise,
         'Chapter 33 — Pual Weak-Form Identification Drill',
         'BBH Chapter 33 · Pual Weak Verbs',
-        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-weak-form-id'],
+        ['bbh', 'ch33', 'exercises', 'ch33-weak-form-id'],
         'ch33-weak-form-id.pdf',
         out_dir,
     )
@@ -7458,7 +7458,7 @@ def build_ch34_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch34FunctionSortExercise,
         'Chapter 34 — Hithpael Semantic Function Sorting',
         'BBH Chapter 34 · Hithpael Strong Verbs',
-        ['hebrew', 'bbh', 'ch34', 'exercises', 'ch34-function-sort'],
+        ['bbh', 'ch34', 'exercises', 'ch34-function-sort'],
         'ch34-function-sort.pdf',
         out_dir,
     )
@@ -7603,7 +7603,7 @@ def build_ch35_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
         Ch35WeakFormIdExercise,
         'Chapter 35 — Hithpael Weak-Form Identification Drill',
         'BBH Chapter 35 · Hithpael Weak Verbs',
-        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-weak-form-id'],
+        ['bbh', 'ch35', 'exercises', 'ch35-weak-form-id'],
         'ch35-weak-form-id.pdf',
         out_dir,
     )
@@ -7648,7 +7648,7 @@ def build_ch13_qal_perfect_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch13QalPerfectParadigmDrill,
         'Chapter 13 — Qal Perfect Paradigm Drill',
         'BBH Chapter 13 · Qal Perfect Strong Verbs',
-        ['hebrew', 'bbh', 'ch13', 'exercises', 'ch13-qal-perfect-paradigm-drill'],
+        ['bbh', 'ch13', 'exercises', 'ch13-qal-perfect-paradigm-drill'],
         'ch13-qal-perfect-paradigm-drill.pdf', out_dir,
     )
 
@@ -7686,7 +7686,7 @@ def build_ch15_qal_imperfect_paradigm_drill(out_dir: Optional[str] = None) -> st
         Ch15QalImperfectParadigmDrill,
         'Chapter 15 — Qal Imperfect Paradigm Drill',
         'BBH Chapter 15 · Qal Imperfect Strong Verbs',
-        ['hebrew', 'bbh', 'ch15', 'exercises', 'ch15-qal-imperfect-paradigm-drill'],
+        ['bbh', 'ch15', 'exercises', 'ch15-qal-imperfect-paradigm-drill'],
         'ch15-qal-imperfect-paradigm-drill.pdf', out_dir,
     )
 
@@ -7724,7 +7724,7 @@ def build_ch17_wayyiqtol_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch17WayyiqtolParadigmDrill,
         'Chapter 17 — Wayyiqtol Paradigm Drill',
         'BBH Chapter 17 · Waw-Consecutive',
-        ['hebrew', 'bbh', 'ch17', 'exercises', 'ch17-wayyiqtol-paradigm-drill'],
+        ['bbh', 'ch17', 'exercises', 'ch17-wayyiqtol-paradigm-drill'],
         'ch17-wayyiqtol-paradigm-drill.pdf', out_dir,
     )
 
@@ -7759,7 +7759,7 @@ def build_ch18_qal_imperative_paradigm_drill(out_dir: Optional[str] = None) -> s
         Ch18QalImperativeParadigmDrill,
         'Chapter 18 — Qal Imperative Paradigm Drill',
         'BBH Chapter 18 · Qal Imperative',
-        ['hebrew', 'bbh', 'ch18', 'exercises', 'ch18-qal-imperative-paradigm-drill'],
+        ['bbh', 'ch18', 'exercises', 'ch18-qal-imperative-paradigm-drill'],
         'ch18-qal-imperative-paradigm-drill.pdf', out_dir,
     )
 
@@ -7813,7 +7813,7 @@ def build_ch19_verb_suffix_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch19VerbSuffixParadigmDrill,
         'Chapter 19 — Verb + Pronominal Suffix Paradigm Drill',
         'BBH Chapter 19 · Qal Pronominal Suffixes on Verbs',
-        ['hebrew', 'bbh', 'ch19', 'exercises', 'ch19-verb-suffix-paradigm-drill'],
+        ['bbh', 'ch19', 'exercises', 'ch19-verb-suffix-paradigm-drill'],
         'ch19-verb-suffix-paradigm-drill.pdf', out_dir,
     )
 
@@ -7859,7 +7859,7 @@ def build_ch20_qal_ic_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch20QalICParadigmDrill,
         'Chapter 20 — Qal Infinitive Construct Paradigm Drill',
         'BBH Chapter 20 · Qal Infinitive Construct',
-        ['hebrew', 'bbh', 'ch20', 'exercises', 'ch20-qal-ic-paradigm-drill'],
+        ['bbh', 'ch20', 'exercises', 'ch20-qal-ic-paradigm-drill'],
         'ch20-qal-ic-paradigm-drill.pdf', out_dir,
     )
 
@@ -7906,7 +7906,7 @@ def build_ch21_qal_ia_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch21QalIAParadigmDrill,
         'Chapter 21 — Qal Infinitive Absolute Paradigm Drill',
         'BBH Chapter 21 · Qal Infinitive Absolute',
-        ['hebrew', 'bbh', 'ch21', 'exercises', 'ch21-qal-ia-paradigm-drill'],
+        ['bbh', 'ch21', 'exercises', 'ch21-qal-ia-paradigm-drill'],
         'ch21-qal-ia-paradigm-drill.pdf', out_dir,
     )
 
@@ -7953,7 +7953,7 @@ def build_ch22_qal_participle_paradigm_drill(out_dir: Optional[str] = None) -> s
         Ch22QalParticipleParadigmDrill,
         'Chapter 22 — Qal Participle Paradigm Drill',
         'BBH Chapter 22 · Qal Participle',
-        ['hebrew', 'bbh', 'ch22', 'exercises', 'ch22-qal-participle-paradigm-drill'],
+        ['bbh', 'ch22', 'exercises', 'ch22-qal-participle-paradigm-drill'],
         'ch22-qal-participle-paradigm-drill.pdf', out_dir,
     )
 
@@ -8030,7 +8030,7 @@ def build_ch24_niphal_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch24NiphalParadigmDrill,
         'Chapter 24 — Niphal Paradigm Drill',
         'BBH Chapter 24 · Niphal Strong',
-        ['hebrew', 'bbh', 'ch24', 'exercises', 'ch24-niphal-paradigm-drill'],
+        ['bbh', 'ch24', 'exercises', 'ch24-niphal-paradigm-drill'],
         'ch24-niphal-paradigm-drill.pdf', out_dir,
     )
 
@@ -8102,7 +8102,7 @@ def build_ch26_hiphil_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch26HiphilParadigmDrill,
         'Chapter 26 — Hiphil Paradigm Drill',
         'BBH Chapter 26 · Hiphil Strong',
-        ['hebrew', 'bbh', 'ch26', 'exercises', 'ch26-hiphil-paradigm-drill'],
+        ['bbh', 'ch26', 'exercises', 'ch26-hiphil-paradigm-drill'],
         'ch26-hiphil-paradigm-drill.pdf', out_dir,
     )
 
@@ -8168,7 +8168,7 @@ def build_ch28_hophal_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch28HophalParadigmDrill,
         'Chapter 28 — Hophal Paradigm Drill',
         'BBH Chapter 28 · Hophal Strong',
-        ['hebrew', 'bbh', 'ch28', 'exercises', 'ch28-hophal-paradigm-drill'],
+        ['bbh', 'ch28', 'exercises', 'ch28-hophal-paradigm-drill'],
         'ch28-hophal-paradigm-drill.pdf', out_dir,
     )
 
@@ -8225,7 +8225,7 @@ def build_ch29_hophal_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch29HophalWeakParadigmDrill,
         'Chapter 29 — Hophal Weak Paradigm Drill',
         'BBH Chapter 29 · Hophal Weak',
-        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-hophal-weak-paradigm-drill'],
+        ['bbh', 'ch29', 'exercises', 'ch29-hophal-weak-paradigm-drill'],
         'ch29-hophal-weak-paradigm-drill.pdf', out_dir,
     )
 
@@ -8296,7 +8296,7 @@ def build_ch30_piel_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch30PielParadigmDrill,
         'Chapter 30 — Piel Paradigm Drill',
         'BBH Chapter 30 · Piel Strong',
-        ['hebrew', 'bbh', 'ch30', 'exercises', 'ch30-piel-paradigm-drill'],
+        ['bbh', 'ch30', 'exercises', 'ch30-piel-paradigm-drill'],
         'ch30-piel-paradigm-drill.pdf', out_dir,
     )
 
@@ -8351,7 +8351,7 @@ def build_ch31_piel_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch31PielWeakParadigmDrill,
         'Chapter 31 — Piel Weak Paradigm Drill',
         'BBH Chapter 31 · Piel Weak',
-        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-piel-weak-paradigm-drill'],
+        ['bbh', 'ch31', 'exercises', 'ch31-piel-weak-paradigm-drill'],
         'ch31-piel-weak-paradigm-drill.pdf', out_dir,
     )
 
@@ -8404,7 +8404,7 @@ def build_ch32_pual_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch32PualParadigmDrill,
         'Chapter 32 — Pual Paradigm Drill',
         'BBH Chapter 32 · Pual Strong',
-        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-pual-paradigm-drill'],
+        ['bbh', 'ch32', 'exercises', 'ch32-pual-paradigm-drill'],
         'ch32-pual-paradigm-drill.pdf', out_dir,
     )
 
@@ -8458,7 +8458,7 @@ def build_ch33_pual_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch33PualWeakParadigmDrill,
         'Chapter 33 — Pual Weak Paradigm Drill',
         'BBH Chapter 33 · Pual Weak',
-        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-pual-weak-paradigm-drill'],
+        ['bbh', 'ch33', 'exercises', 'ch33-pual-weak-paradigm-drill'],
         'ch33-pual-weak-paradigm-drill.pdf', out_dir,
     )
 
@@ -8543,7 +8543,7 @@ def build_ch32_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch32FunctionSortExercise,
         'Chapter 32 — Pual Function Sort',
         'BBH Chapter 32 · Pual Strong Verbs',
-        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-function-sort'],
+        ['bbh', 'ch32', 'exercises', 'ch32-function-sort'],
         'ch32-function-sort.pdf',
         out_dir,
     )
@@ -8648,7 +8648,7 @@ def build_ch32_qal_piel_pual_contrast_exercise(out_dir: Optional[str] = None) ->
         Ch32QalPielPualContrastExercise,
         'Chapter 32 — Qal–Piel–Pual Contrast Drill (Strong Roots)',
         'BBH Chapter 32 · Pual Strong Verbs',
-        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-qal-piel-pual-contrast'],
+        ['bbh', 'ch32', 'exercises', 'ch32-qal-piel-pual-contrast'],
         'ch32-qal-piel-pual-contrast.pdf',
         out_dir,
     )
@@ -8742,7 +8742,7 @@ def build_ch32_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch32StemIdDrill,
         'Chapter 32 — Qal / Piel / Pual Stem-ID Drill (Strong Roots)',
         'BBH Chapter 32 · Pual Strong Verbs',
-        ['hebrew', 'bbh', 'ch32', 'exercises', 'ch32-stem-id-drill'],
+        ['bbh', 'ch32', 'exercises', 'ch32-stem-id-drill'],
         'ch32-stem-id-drill.pdf', out_dir,
     )
 
@@ -8847,7 +8847,7 @@ def build_ch33_qal_piel_pual_contrast_exercise(out_dir: Optional[str] = None) ->
         Ch33QalPielPualContrastExercise,
         'Chapter 33 — Qal–Piel–Pual Contrast Drill (Weak Roots)',
         'BBH Chapter 33 · Pual Weak Verbs',
-        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-qal-piel-pual-contrast'],
+        ['bbh', 'ch33', 'exercises', 'ch33-qal-piel-pual-contrast'],
         'ch33-qal-piel-pual-contrast.pdf',
         out_dir,
     )
@@ -8931,7 +8931,7 @@ def build_ch33_function_sort_exercise(out_dir: Optional[str] = None) -> str:
         Ch33FunctionSortExercise,
         'Chapter 33 — Pual Function Sort (Weak Roots)',
         'BBH Chapter 33 · Pual Weak Verbs',
-        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-function-sort'],
+        ['bbh', 'ch33', 'exercises', 'ch33-function-sort'],
         'ch33-function-sort.pdf',
         out_dir,
     )
@@ -9026,7 +9026,7 @@ def build_ch33_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch33StemIdDrill,
         'Chapter 33 — Qal / Piel / Pual Stem-ID Drill (Weak Roots)',
         'BBH Chapter 33 · Pual Weak Verbs',
-        ['hebrew', 'bbh', 'ch33', 'exercises', 'ch33-stem-id-drill'],
+        ['bbh', 'ch33', 'exercises', 'ch33-stem-id-drill'],
         'ch33-stem-id-drill.pdf', out_dir,
     )
 
@@ -9095,7 +9095,7 @@ def build_ch34_hithpael_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch34HithpaelParadigmDrill,
         'Chapter 34 — Hithpael Paradigm Drill',
         'BBH Chapter 34 · Hithpael Strong',
-        ['hebrew', 'bbh', 'ch34', 'exercises', 'ch34-hithpael-paradigm-drill'],
+        ['bbh', 'ch34', 'exercises', 'ch34-hithpael-paradigm-drill'],
         'ch34-hithpael-paradigm-drill.pdf', out_dir,
     )
 
@@ -9154,7 +9154,7 @@ def build_ch35_hithpael_weak_paradigm_drill(out_dir: Optional[str] = None) -> st
         Ch35HithpaelWeakParadigmDrill,
         'Chapter 35 — Hithpael Weak Paradigm Drill',
         'BBH Chapter 35 · Hithpael Weak',
-        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-hithpael-weak-paradigm-drill'],
+        ['bbh', 'ch35', 'exercises', 'ch35-hithpael-weak-paradigm-drill'],
         'ch35-hithpael-weak-paradigm-drill.pdf', out_dir,
     )
 
@@ -9243,7 +9243,7 @@ def build_ch24_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch24StemIdDrill,
         'Chapter 24 — Qal / Niphal Stem-ID Drill (Strong Roots)',
         'BBH Chapter 24 · Niphal Strong Verbs',
-        ['hebrew', 'bbh', 'ch24', 'exercises', 'ch24-stem-id-drill'],
+        ['bbh', 'ch24', 'exercises', 'ch24-stem-id-drill'],
         'ch24-stem-id-drill.pdf', out_dir,
     )
 
@@ -9331,7 +9331,7 @@ def build_ch25_niphal_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
         Ch25NiphalWeakParadigmDrill,
         'Chapter 25 — Niphal Weak Paradigm Drill',
         'BBH Chapter 25 · Niphal Weak Verbs',
-        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-niphal-weak-paradigm-drill'],
+        ['bbh', 'ch25', 'exercises', 'ch25-niphal-weak-paradigm-drill'],
         'ch25-niphal-weak-paradigm-drill.pdf', out_dir,
     )
 
@@ -9425,7 +9425,7 @@ def build_ch25_qal_niphal_contrast(out_dir: Optional[str] = None) -> str:
         Ch25QalNiphalContrastExercise,
         'Chapter 25 — Qal–Niphal Contrast Drill (Weak Roots)',
         'BBH Chapter 25 · Niphal Weak Verbs',
-        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-qal-niphal-contrast'],
+        ['bbh', 'ch25', 'exercises', 'ch25-qal-niphal-contrast'],
         'ch25-qal-niphal-contrast.pdf', out_dir,
     )
 
@@ -9504,7 +9504,7 @@ def build_ch25_function_sort(out_dir: Optional[str] = None) -> str:
         Ch25FunctionSortExercise,
         'Chapter 25 — Niphal Function Sort (Weak Roots)',
         'BBH Chapter 25 · Niphal Weak Verbs',
-        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-function-sort'],
+        ['bbh', 'ch25', 'exercises', 'ch25-function-sort'],
         'ch25-function-sort.pdf', out_dir,
     )
 
@@ -9592,7 +9592,7 @@ def build_ch25_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch25StemIdDrill,
         'Chapter 25 — Qal / Niphal Stem-ID Drill (Weak Roots)',
         'BBH Chapter 25 · Niphal Weak Verbs',
-        ['hebrew', 'bbh', 'ch25', 'exercises', 'ch25-stem-id-drill'],
+        ['bbh', 'ch25', 'exercises', 'ch25-stem-id-drill'],
         'ch25-stem-id-drill.pdf', out_dir,
     )
 
@@ -9687,7 +9687,7 @@ def build_ch28_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch28StemIdDrill,
         'Chapter 28 — Four-Stem ID Drill (Strong Roots)',
         'BBH Chapter 28 · Hophal Strong Verbs',
-        ['hebrew', 'bbh', 'ch28', 'exercises', 'ch28-stem-id-drill'],
+        ['bbh', 'ch28', 'exercises', 'ch28-stem-id-drill'],
         'ch28-stem-id-drill.pdf', out_dir,
     )
 
@@ -9770,7 +9770,7 @@ def build_ch29_function_sort(out_dir: Optional[str] = None) -> str:
         Ch29FunctionSortExercise,
         'Chapter 29 — Hophal Weak-Root Function Sort',
         'BBH Chapter 29 · Hophal Weak Verbs',
-        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-function-sort'],
+        ['bbh', 'ch29', 'exercises', 'ch29-function-sort'],
         'ch29-function-sort.pdf', out_dir,
     )
 
@@ -9858,7 +9858,7 @@ def build_ch29_qal_hiphil_hophal_contrast(out_dir: Optional[str] = None) -> str:
         Ch29QalHiphilHophalContrastExercise,
         'Chapter 29 — Qal–Hiphil–Hophal Contrast Drill (Weak Roots)',
         'BBH Chapter 29 · Hophal Weak Verbs',
-        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-qal-hiphil-hophal-contrast'],
+        ['bbh', 'ch29', 'exercises', 'ch29-qal-hiphil-hophal-contrast'],
         'ch29-qal-hiphil-hophal-contrast.pdf', out_dir,
     )
 
@@ -9954,7 +9954,7 @@ def build_ch29_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch29StemIdDrill,
         'Chapter 29 — Four-Stem ID Drill (Weak Roots)',
         'BBH Chapter 29 · Hophal Weak Verbs',
-        ['hebrew', 'bbh', 'ch29', 'exercises', 'ch29-stem-id-drill'],
+        ['bbh', 'ch29', 'exercises', 'ch29-stem-id-drill'],
         'ch29-stem-id-drill.pdf', out_dir,
     )
 
@@ -10049,7 +10049,7 @@ def build_ch30_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch30StemIdDrill,
         'Chapter 30 — Five-Stem ID Drill (Strong Roots)',
         'BBH Chapter 30 · Piel Strong Verbs',
-        ['hebrew', 'bbh', 'ch30', 'exercises', 'ch30-stem-id-drill'],
+        ['bbh', 'ch30', 'exercises', 'ch30-stem-id-drill'],
         'ch30-stem-id-drill.pdf', out_dir,
     )
 
@@ -10149,7 +10149,7 @@ def build_ch31_qal_piel_contrast(out_dir: Optional[str] = None) -> str:
         Ch31QalPielContrastExercise,
         'Chapter 31 — Qal–Piel Contrast Drill (Weak Roots)',
         'BBH Chapter 31 · Piel Weak Verbs',
-        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-qal-piel-contrast'],
+        ['bbh', 'ch31', 'exercises', 'ch31-qal-piel-contrast'],
         'ch31-qal-piel-contrast.pdf', out_dir,
     )
 
@@ -10229,7 +10229,7 @@ def build_ch31_function_sort(out_dir: Optional[str] = None) -> str:
         Ch31FunctionSortExercise,
         'Chapter 31 — Piel Function Sort (Weak Roots)',
         'BBH Chapter 31 · Piel Weak Verbs',
-        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-function-sort'],
+        ['bbh', 'ch31', 'exercises', 'ch31-function-sort'],
         'ch31-function-sort.pdf', out_dir,
     )
 
@@ -10324,7 +10324,7 @@ def build_ch31_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch31StemIdDrill,
         'Chapter 31 — Stem-ID Drill (Weak Roots)',
         'BBH Chapter 31 · Piel Weak Verbs',
-        ['hebrew', 'bbh', 'ch31', 'exercises', 'ch31-stem-id-drill'],
+        ['bbh', 'ch31', 'exercises', 'ch31-stem-id-drill'],
         'ch31-stem-id-drill.pdf', out_dir,
     )
 
@@ -10421,7 +10421,7 @@ def build_ch34_qal_piel_hithpael_contrast(out_dir: Optional[str] = None) -> str:
         Ch34QalPielHithpaelContrastExercise,
         'Chapter 34 — Qal / Piel / Hithpael Contrast Drill (Strong Roots)',
         'BBH Chapter 34 · Hithpael Strong Verbs',
-        ['hebrew', 'bbh', 'ch34', 'exercises', 'ch34-qal-piel-hithpael-contrast'],
+        ['bbh', 'ch34', 'exercises', 'ch34-qal-piel-hithpael-contrast'],
         'ch34-qal-piel-hithpael-contrast.pdf', out_dir,
     )
 
@@ -10511,7 +10511,7 @@ def build_ch34_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch34StemIdDrill,
         'Chapter 34 — Stem-ID Drill (Strong Roots)',
         'BBH Chapter 34 · Hithpael Strong Verbs',
-        ['hebrew', 'bbh', 'ch34', 'exercises', 'ch34-stem-id-drill'],
+        ['bbh', 'ch34', 'exercises', 'ch34-stem-id-drill'],
         'ch34-stem-id-drill.pdf', out_dir,
     )
 
@@ -10606,7 +10606,7 @@ def build_ch35_qal_piel_hithpael_contrast(out_dir: Optional[str] = None) -> str:
         Ch35QalPielHithpaelContrastExercise,
         'Chapter 35 — Qal / Piel / Hithpael Contrast Drill (Weak Roots)',
         'BBH Chapter 35 · Hithpael Weak Verbs',
-        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-qal-piel-hithpael-contrast'],
+        ['bbh', 'ch35', 'exercises', 'ch35-qal-piel-hithpael-contrast'],
         'ch35-qal-piel-hithpael-contrast.pdf', out_dir,
     )
 
@@ -10686,7 +10686,7 @@ def build_ch35_function_sort(out_dir: Optional[str] = None) -> str:
         Ch35FunctionSortExercise,
         'Chapter 35 — Hithpael Function Sort (Weak Roots)',
         'BBH Chapter 35 · Hithpael Weak Verbs',
-        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-function-sort'],
+        ['bbh', 'ch35', 'exercises', 'ch35-function-sort'],
         'ch35-function-sort.pdf', out_dir,
     )
 
@@ -10775,6 +10775,6 @@ def build_ch35_stem_id_drill(out_dir: Optional[str] = None) -> str:
         Ch35StemIdDrill,
         'Chapter 35 — Stem-ID Drill (Weak Roots)',
         'BBH Chapter 35 · Hithpael Weak Verbs',
-        ['hebrew', 'bbh', 'ch35', 'exercises', 'ch35-stem-id-drill'],
+        ['bbh', 'ch35', 'exercises', 'ch35-stem-id-drill'],
         'ch35-stem-id-drill.pdf', out_dir,
     )

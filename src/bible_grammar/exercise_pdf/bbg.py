@@ -92,7 +92,7 @@ def build_bbg_ch3_alphabet_drill(out_dir: Optional[str] = None) -> str:
         BbgCh3AlphabetDrillPDF,
         'BBG Chapter 3 — Greek Alphabet Drill',
         'Letter Identification: Name and Sound',
-        ['greek', 'bbg', 'ch3', 'exercises', 'ch3-alphabet-drill'],
+        ['bbg', 'ch3', 'exercises', 'ch3-alphabet-drill'],
         'ch3-alphabet-drill.pdf',
         out_dir,
     )
@@ -171,7 +171,7 @@ def build_bbg_ch4_syllable_drill(out_dir: Optional[str] = None) -> str:
         BbgCh4SyllableDrillPDF,
         'BBG Chapter 4 — Syllabification Drill',
         'Syllable Division, Accent Position, and Accent Type',
-        ['greek', 'bbg', 'ch4', 'exercises', 'ch4-syllable-drill'],
+        ['bbg', 'ch4', 'exercises', 'ch4-syllable-drill'],
         'ch4-syllable-drill.pdf',
         out_dir,
     )
@@ -291,7 +291,7 @@ def build_bbg_ch6_nom_acc_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh6NomAccParsingPDF,
         'BBG Chapter 6 — Nominative and Accusative Parsing Drill',
         '2nd Declension Masculine and Neuter, 1st Declension Feminine, and Article',
-        ['greek', 'bbg', 'ch6', 'exercises', 'ch6-nom-acc-parsing'],
+        ['bbg', 'ch6', 'exercises', 'ch6-nom-acc-parsing'],
         'ch6-nom-acc-parsing.pdf',
         out_dir,
     )
@@ -364,7 +364,7 @@ def build_bbg_ch7_gen_dat_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh7GenDatParsingPDF,
         'BBG Chapter 7 — Genitive and Dative Parsing Drill',
         '2nd Declension Genitive and Dative Forms',
-        ['greek', 'bbg', 'ch7', 'exercises', 'ch7-gen-dat-parsing'],
+        ['bbg', 'ch7', 'exercises', 'ch7-gen-dat-parsing'],
         'ch7-gen-dat-parsing.pdf',
         out_dir,
     )
@@ -444,7 +444,7 @@ def build_bbg_ch7_article_id(out_dir: Optional[str] = None) -> str:
         BbgCh7ArticleIdPDF,
         'BBG Chapter 7 — Definite Article Identification Exercise',
         'Case, Number, and Gender from GNT Context',
-        ['greek', 'bbg', 'ch7', 'exercises', 'ch7-article-id'],
+        ['bbg', 'ch7', 'exercises', 'ch7-article-id'],
         'ch7-article-id.pdf',
         out_dir,
     )
@@ -517,7 +517,7 @@ def build_bbg_ch8_preposition_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh8PrepositionParsingPDF,
         'BBG Chapter 8 — Preposition Parsing Drill',
         'Prepositions and εἰμί',
-        ['greek', 'bbg', 'ch8', 'exercises', 'ch8-preposition-parsing'],
+        ['bbg', 'ch8', 'exercises', 'ch8-preposition-parsing'],
         'ch8-preposition-parsing.pdf',
         out_dir,
     )
@@ -589,7 +589,7 @@ def build_bbg_ch9_adjective_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh9AdjectiveParsingPDF,
         'BBG Chapter 9 — Adjective Parsing Drill',
         'Attributive, Predicate, and Substantival Positions',
-        ['greek', 'bbg', 'ch9', 'exercises', 'ch9-adjective-parsing'],
+        ['bbg', 'ch9', 'exercises', 'ch9-adjective-parsing'],
         'ch9-adjective-parsing.pdf',
         out_dir,
     )
@@ -661,7 +661,7 @@ def build_bbg_ch10_third_decl_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh10ThirdDeclParsingPDF,
         'BBG Chapter 10 — Third Declension Parsing Drill',
         'Consonant and Vowel Stem Nouns',
-        ['greek', 'bbg', 'ch10', 'exercises', 'ch10-third-decl-parsing'],
+        ['bbg', 'ch10', 'exercises', 'ch10-third-decl-parsing'],
         'ch10-third-decl-parsing.pdf',
         out_dir,
     )
@@ -723,7 +723,7 @@ def build_bbg_ch11_pronoun_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh11PronounParsingPDF,
         'BBG Chapter 11 — Personal Pronoun Parsing Drill',
         'First and Second Person Pronouns',
-        ['greek', 'bbg', 'ch11', 'exercises', 'ch11-pronoun-parsing'],
+        ['bbg', 'ch11', 'exercises', 'ch11-pronoun-parsing'],
         'ch11-pronoun-parsing.pdf',
         out_dir,
     )
@@ -796,7 +796,7 @@ def build_bbg_ch12_autos_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh12AutosParsingPDF,
         'BBG Chapter 12 — αὐτός Parsing and Use Identification',
         'Personal Pronoun · Intensive · Identical Adjective',
-        ['greek', 'bbg', 'ch12', 'exercises', 'ch12-autos-parsing'],
+        ['bbg', 'ch12', 'exercises', 'ch12-autos-parsing'],
         'ch12-autos-parsing.pdf',
         out_dir,
     )
@@ -868,7 +868,7 @@ def build_bbg_ch13_demonstrative_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh13DemonstrativeParsingPDF,
         'BBG Chapter 13 — Demonstrative Parsing Drill',
         'οὗτος and ἐκεῖνος — Adjective vs. Pronoun Use',
-        ['greek', 'bbg', 'ch13', 'exercises', 'ch13-demonstrative-parsing'],
+        ['bbg', 'ch13', 'exercises', 'ch13-demonstrative-parsing'],
         'ch13-demonstrative-parsing.pdf',
         out_dir,
     )
@@ -941,7 +941,7 @@ def build_bbg_ch14_relative_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh14RelativeParsingPDF,
         'BBG Chapter 14 — Relative Pronoun Parsing Drill',
         'ὅς, ἥ, ὅ — Gender/Number from Antecedent; Case from Clause Function',
-        ['greek', 'bbg', 'ch14', 'exercises', 'ch14-relative-parsing'],
+        ['bbg', 'ch14', 'exercises', 'ch14-relative-parsing'],
         'ch14-relative-parsing.pdf',
         out_dir,
     )
@@ -1003,7 +1003,7 @@ def build_bbg_ch16_present_active_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh16PresentActiveParsingPDF,
         'BBG Chapter 16 — Present Active Indicative Parsing Drill',
         'λύω Paradigm and Common Verbs',
-        ['greek', 'bbg', 'ch16', 'exercises', 'ch16-present-active-parsing'],
+        ['bbg', 'ch16', 'exercises', 'ch16-present-active-parsing'],
         'ch16-present-active-parsing.pdf',
         out_dir,
     )
@@ -1065,7 +1065,7 @@ def build_bbg_ch17_contract_verb_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh17ContractVerbParsingPDF,
         'BBG Chapter 17 — Contract Verb Parsing Drill',
         'α-, ε-, ο-Contract Verbs',
-        ['greek', 'bbg', 'ch17', 'exercises', 'ch17-contract-verb-parsing'],
+        ['bbg', 'ch17', 'exercises', 'ch17-contract-verb-parsing'],
         'ch17-contract-verb-parsing.pdf',
         out_dir,
     )
@@ -1136,7 +1136,7 @@ def build_bbg_ch18_middle_passive_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh18MiddlePassiveParsingPDF,
         'BBG Chapter 18 — Present Middle/Passive Indicative Parsing Drill',
         'Middle, Passive, and Deponent Verbs',
-        ['greek', 'bbg', 'ch18', 'exercises', 'ch18-middle-passive-parsing'],
+        ['bbg', 'ch18', 'exercises', 'ch18-middle-passive-parsing'],
         'ch18-middle-passive-parsing.pdf',
         out_dir,
     )
@@ -1198,7 +1198,7 @@ def build_bbg_ch19_future_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh19FutureParsingPDF,
         'BBG Chapter 19 — Future Active and Middle Parsing Drill',
         'Sigma Tense Formant and Liquid Futures',
-        ['greek', 'bbg', 'ch19', 'exercises', 'ch19-future-parsing'],
+        ['bbg', 'ch19', 'exercises', 'ch19-future-parsing'],
         'ch19-future-parsing.pdf',
         out_dir,
     )
@@ -1259,7 +1259,7 @@ def build_bbg_ch20_stem_change_drill(out_dir: Optional[str] = None) -> str:
         BbgCh20StemChangeDrillPDF,
         'BBG Chapter 20 — Verbal Root and Stem Change Drill',
         'Patterns 2–4: Stop Mutation, Nasal Infix, Suppletive',
-        ['greek', 'bbg', 'ch20', 'exercises', 'ch20-stem-change-drill'],
+        ['bbg', 'ch20', 'exercises', 'ch20-stem-change-drill'],
         'ch20-stem-change-drill.pdf',
         out_dir,
     )
@@ -1320,7 +1320,7 @@ def build_bbg_ch21_imperfect_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh21ImperfectParsingPDF,
         'BBG Chapter 21 — Imperfect Indicative Parsing Drill',
         'Augment · Secondary Active and Middle/Passive Endings',
-        ['greek', 'bbg', 'ch21', 'exercises', 'ch21-imperfect-parsing'],
+        ['bbg', 'ch21', 'exercises', 'ch21-imperfect-parsing'],
         'ch21-imperfect-parsing.pdf',
         out_dir,
     )
@@ -1382,7 +1382,7 @@ def build_bbg_ch22_second_aorist_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh22SecondAoristParsingPDF,
         'BBG Chapter 22 — Second Aorist Parsing Drill',
         'Second Aorist Active and Middle Indicative',
-        ['greek', 'bbg', 'ch22', 'exercises', 'ch22-second-aorist-parsing'],
+        ['bbg', 'ch22', 'exercises', 'ch22-second-aorist-parsing'],
         'ch22-second-aorist-parsing.pdf',
         out_dir,
     )
@@ -1444,7 +1444,7 @@ def build_bbg_ch23_first_aorist_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh23FirstAoristParsingPDF,
         'BBG Chapter 23 — First Aorist Parsing Drill',
         'First Aorist Active and Middle Indicative',
-        ['greek', 'bbg', 'ch23', 'exercises', 'ch23-first-aorist-parsing'],
+        ['bbg', 'ch23', 'exercises', 'ch23-first-aorist-parsing'],
         'ch23-first-aorist-parsing.pdf',
         out_dir,
     )
@@ -1506,7 +1506,7 @@ def build_bbg_ch24_aorist_future_passive_parsing(out_dir: Optional[str] = None) 
         BbgCh24AoristFuturePassiveParsingPDF,
         'BBG Chapter 24 — Aorist and Future Passive Parsing Drill',
         'Theta Tense Formant and Passive Personal Endings',
-        ['greek', 'bbg', 'ch24', 'exercises', 'ch24-aorist-future-passive-parsing'],
+        ['bbg', 'ch24', 'exercises', 'ch24-aorist-future-passive-parsing'],
         'ch24-aorist-future-passive-parsing.pdf',
         out_dir,
     )
@@ -1568,7 +1568,7 @@ def build_bbg_ch25_perfect_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh25PerfectParsingPDF,
         'BBG Chapter 25 — Perfect Indicative Parsing Drill',
         'Reduplication · Kappa Tense Formant · Perfect Active and Passive',
-        ['greek', 'bbg', 'ch25', 'exercises', 'ch25-perfect-parsing'],
+        ['bbg', 'ch25', 'exercises', 'ch25-perfect-parsing'],
         'ch25-perfect-parsing.pdf',
         out_dir,
     )
@@ -1630,7 +1630,7 @@ def build_bbg_ch27_present_participle_parsing(out_dir: Optional[str] = None) -> 
         BbgCh27PresentParticipleParsingPDF,
         'BBG Chapter 27 — Present Participle Parsing Drill',
         'Imperfective (Present) Adverbial · Adjectival · Substantival Participles',
-        ['greek', 'bbg', 'ch27', 'exercises', 'ch27-present-participle-parsing'],
+        ['bbg', 'ch27', 'exercises', 'ch27-present-participle-parsing'],
         'ch27-present-participle-parsing.pdf',
         out_dir,
     )
@@ -1692,7 +1692,7 @@ def build_bbg_ch28_aorist_participle_parsing(out_dir: Optional[str] = None) -> s
         BbgCh28AoristParticipleParsingPDF,
         'BBG Chapter 28 — Aorist Participle Parsing Drill',
         'Perfective (Aorist) Adverbial · Adjectival · Substantival Participles',
-        ['greek', 'bbg', 'ch28', 'exercises', 'ch28-aorist-participle-parsing'],
+        ['bbg', 'ch28', 'exercises', 'ch28-aorist-participle-parsing'],
         'ch28-aorist-participle-parsing.pdf',
         out_dir,
     )
@@ -1755,7 +1755,7 @@ def build_bbg_ch29_adjectival_participle_parsing(out_dir: Optional[str] = None) 
         BbgCh29AdjectivalParticipleParsingPDF,
         'BBG Chapter 29 — Adjectival Participle Parsing Drill',
         'Attributive (1st & 2nd Position) and Substantival Participle Uses',
-        ['greek', 'bbg', 'ch29', 'exercises', 'ch29-adjectival-participle-parsing'],
+        ['bbg', 'ch29', 'exercises', 'ch29-adjectival-participle-parsing'],
         'ch29-adjectival-participle-parsing.pdf',
         out_dir,
     )
@@ -1829,7 +1829,7 @@ def build_bbg_ch30_perfect_participle_genabs(out_dir: Optional[str] = None) -> s
         BbgCh30PerfectParticipleGenAbsPDF,
         'BBG Chapter 30 — Perfect Participles and Genitive Absolutes',
         'Combinative (Perfect) Participles · Genitive Absolute Construction',
-        ['greek', 'bbg', 'ch30', 'exercises', 'ch30-perfect-participle-genabs'],
+        ['bbg', 'ch30', 'exercises', 'ch30-perfect-participle-genabs'],
         'ch30-perfect-participle-genabs.pdf',
         out_dir,
     )
@@ -1902,7 +1902,7 @@ def build_bbg_ch31_subjunctive_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh31SubjunctiveParsingPDF,
         'BBG Chapter 31 — Subjunctive Parsing Drill',
         'Purpose · Conditional · Hortatory · Prohibition · Indefinite · Emphatic Denial',
-        ['greek', 'bbg', 'ch31', 'exercises', 'ch31-subjunctive-parsing'],
+        ['bbg', 'ch31', 'exercises', 'ch31-subjunctive-parsing'],
         'ch31-subjunctive-parsing.pdf',
         out_dir,
     )
@@ -1975,7 +1975,7 @@ def build_bbg_ch32_infinitive_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh32InfinitiveParsingPDF,
         'BBG Chapter 32 — Infinitive Parsing Drill',
         'Complementary · Articular · Purpose · Result · Indirect Discourse · Temporal',
-        ['greek', 'bbg', 'ch32', 'exercises', 'ch32-infinitive-parsing'],
+        ['bbg', 'ch32', 'exercises', 'ch32-infinitive-parsing'],
         'ch32-infinitive-parsing.pdf',
         out_dir,
     )
@@ -2048,7 +2048,7 @@ def build_bbg_ch33_imperative_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh33ImperativeParsingPDF,
         'BBG Chapter 33 — Imperative Parsing Drill',
         'Commands and Prohibitions · Present vs. Aorist Aspect',
-        ['greek', 'bbg', 'ch33', 'exercises', 'ch33-imperative-parsing'],
+        ['bbg', 'ch33', 'exercises', 'ch33-imperative-parsing'],
         'ch33-imperative-parsing.pdf',
         out_dir,
     )
@@ -2120,7 +2120,7 @@ def build_bbg_ch34_didomi_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh34DidomiParsingPDF,
         'BBG Chapter 34 — δίδωμι Parsing Drill',
         'Present · Imperfect · Aorist · Passive forms of δίδωμι and compounds',
-        ['greek', 'bbg', 'ch34', 'exercises', 'ch34-didomi-parsing'],
+        ['bbg', 'ch34', 'exercises', 'ch34-didomi-parsing'],
         'ch34-didomi-parsing.pdf',
         out_dir,
     )
@@ -2204,7 +2204,7 @@ def build_bbg_ch35_conditionals_drill(out_dir: Optional[str] = None) -> str:
         BbgCh35ConditionalsdrillPDF,
         'BBG Chapter 35 — Conditionals and δίδωμι Non-Indicative',
         'Four Conditional Classes · Subjunctive · Infinitive · Imperative · Participle of δίδωμι',
-        ['greek', 'bbg', 'ch35', 'exercises', 'ch35-conditionals-drill'],
+        ['bbg', 'ch35', 'exercises', 'ch35-conditionals-drill'],
         'ch35-conditionals-drill.pdf',
         out_dir,
     )
@@ -2277,7 +2277,7 @@ def build_bbg_ch36_mi_verbs_parsing(out_dir: Optional[str] = None) -> str:
         BbgCh36MiVerbsParsingPDF,
         'BBG Chapter 36 — μι-Verb Parsing Drill',
         'ἵστημι · τίθημι · δείκνυμι · ἀφίημι · ἀπόλλυμι · οἶδα',
-        ['greek', 'bbg', 'ch36', 'exercises', 'ch36-mi-verbs-parsing'],
+        ['bbg', 'ch36', 'exercises', 'ch36-mi-verbs-parsing'],
         'ch36-mi-verbs-parsing.pdf',
         out_dir,
     )
@@ -2349,7 +2349,7 @@ def build_bbg_ch22_aorist_contrast(out_dir: Optional[str] = None) -> str:
         BbgCh22AoristContrastPDF,
         'BBG Chapter 22 — First vs. Second Aorist Contrast Drill',
         'Second Aorist Active and Middle Indicative',
-        ['greek', 'bbg', 'ch22', 'exercises', 'ch22-aorist-contrast'],
+        ['bbg', 'ch22', 'exercises', 'ch22-aorist-contrast'],
         'ch22-aorist-contrast.pdf',
         out_dir,
     )
@@ -2421,7 +2421,7 @@ def build_bbg_ch24_passive_formation(out_dir: Optional[str] = None) -> str:
         BbgCh24PassiveFormationPDF,
         'BBG Chapter 24 — Aorist and Future Passive Formation Drill',
         'θη-Aorist Passive vs. θησ-Future Passive',
-        ['greek', 'bbg', 'ch24', 'exercises', 'ch24-passive-formation'],
+        ['bbg', 'ch24', 'exercises', 'ch24-passive-formation'],
         'ch24-passive-formation.pdf',
         out_dir,
     )
@@ -2495,7 +2495,7 @@ def build_bbg_ch27_participle_use_sort(out_dir: Optional[str] = None) -> str:
         BbgCh27ParticipleUseSortPDF,
         'BBG Chapter 27 — Participle Use Classification Drill',
         'Adverbial · Adjectival · Substantival Participles',
-        ['greek', 'bbg', 'ch27', 'exercises', 'ch27-participle-use-sort'],
+        ['bbg', 'ch27', 'exercises', 'ch27-participle-use-sort'],
         'ch27-participle-use-sort.pdf',
         out_dir,
     )
@@ -2569,7 +2569,7 @@ def build_bbg_ch28_participle_tense_contrast(out_dir: Optional[str] = None) -> s
         BbgCh28ParticipleTenseContrastPDF,
         'BBG Chapter 28 — Present vs. Aorist Adverbial Participle Contrast',
         'Contemporaneous vs. Antecedent Action',
-        ['greek', 'bbg', 'ch28', 'exercises', 'ch28-participle-tense-contrast'],
+        ['bbg', 'ch28', 'exercises', 'ch28-participle-tense-contrast'],
         'ch28-participle-tense-contrast.pdf',
         out_dir,
     )
@@ -2643,7 +2643,7 @@ def build_bbg_ch31_subjunctive_use_sort(out_dir: Optional[str] = None) -> str:
         BbgCh31SubjunctiveUseSortPDF,
         'BBG Chapter 31 — Subjunctive Use Classification Drill',
         'Hortatory · Purpose · Conditional · Indefinite · Deliberative · Fear Statement',
-        ['greek', 'bbg', 'ch31', 'exercises', 'ch31-subjunctive-use-sort'],
+        ['bbg', 'ch31', 'exercises', 'ch31-subjunctive-use-sort'],
         'ch31-subjunctive-use-sort.pdf',
         out_dir,
     )
@@ -2717,7 +2717,7 @@ def build_bbg_ch33_prohibition_drill(out_dir: Optional[str] = None) -> str:
         BbgCh33ProhibitionDrillPDF,
         'BBG Chapter 33 — Prohibition Pattern Drill',
         'μή + Present Imperative (STOP) vs. μή + Aorist Subjunctive (DONT)',
-        ['greek', 'bbg', 'ch33', 'exercises', 'ch33-prohibition-drill'],
+        ['bbg', 'ch33', 'exercises', 'ch33-prohibition-drill'],
         'ch33-prohibition-drill.pdf',
         out_dir,
     )

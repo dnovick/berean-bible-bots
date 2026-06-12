@@ -99,7 +99,7 @@ Always verify chapter number against this table before generating any lesson for
 | Ch35 | Nonindicative of δίδωμι and Conditional Sentences |
 | Ch36 | ἵστημι, τίθημι, δείκνυμι and Odds 'n Ends |
 
-BBG lessons live under `output/lessons/greek/bbg/ch<N>/`.
+BBG lessons live under `data/lessons/bbg/ch<N>/`.
 
 ---
 
@@ -145,13 +145,13 @@ BBG lessons live under `output/lessons/greek/bbg/ch<N>/`.
 
 Always verify chapter number against this table before generating any BBA lesson.
 
-BBA lessons live under `output/lessons/aramaic/bba/ch<N>/`.
+BBA lessons live under `data/lessons/bba/ch<N>/`.
 
 ---
 
 ## Lesson Output Structure
 
-Lessons live under `output/lessons/hebrew/bbh/ch<N>/`. Every chapter directory contains:
+Lessons live under `data/lessons/bbh/ch<N>/` (BBH), `data/lessons/bbg/ch<N>/` (BBG), and `data/lessons/bba/ch<N>/` (BBA). Every chapter directory contains:
 
 - **`README.md`** — the full lesson (no separate lesson `.md` file; README is the lesson)
 - **Paradigm files** (e.g. `qal-perfect-paradigm.md`) — where applicable

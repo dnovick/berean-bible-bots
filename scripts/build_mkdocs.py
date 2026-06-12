@@ -1,4 +1,4 @@
-"""Build the MkDocs docs/ source tree from output/lessons/.
+"""Build the MkDocs docs/ source tree from data/lessons/.
 
 Copies all lesson Markdown files into mkdocs_src/lessons/<lang>/<ch>/,
 generates per-chapter index pages that inline the interactive HTML exercises
@@ -14,7 +14,7 @@ import shutil
 from pathlib import Path
 
 REPO = Path(__file__).parent.parent
-LESSONS = REPO / "output" / "lessons"
+LESSONS = REPO / "data" / "lessons"
 MKDOCS_SRC = REPO / "mkdocs_src"
 
 
@@ -315,7 +315,7 @@ def slugify(name: str) -> str:
 def _read_chapter_yml(course: str, ch: str) -> dict:
     """Read data/lessons/{course}/{ch}/chapter.yml; return {} if missing."""
     import yaml as _yaml
-    path = REPO / "data" / "lessons" / course / ch / "chapter.yml"
+    path = LESSONS / course / ch / "chapter.yml"
     if not path.exists():
         return {}
     with open(path, encoding="utf-8") as f:
@@ -446,7 +446,7 @@ def build_chapter(
     ch_num: int,
 ) -> list[dict]:
     """Build docs for one chapter. Returns nav entries for this chapter."""
-    src_dir = LESSONS / lang / course / ch
+    src_dir = LESSONS / course / ch
     dst_dir = MKDOCS_SRC / "lessons" / lang / ch
     dst_dir.mkdir(parents=True, exist_ok=True)
 
@@ -1002,9 +1002,9 @@ def build_study_helps() -> list:
 
 
 def build_additional_resources_nav() -> list:
-    """Copy output/lessons/hebrew/bbh/additional-resources/ into mkdocs_src
+    """Copy data/lessons/bbh/additional-resources/ into mkdocs_src
     and return nav entries for embedding inside the BBH course section."""
-    src = LESSONS / "hebrew" / "bbh" / "additional-resources"
+    src = LESSONS / "bbh" / "additional-resources"
     dst = MKDOCS_SRC / "lessons" / "hebrew" / "additional-resources"
     if not src.exists():
         return []
@@ -1023,7 +1023,7 @@ def build_course(lang: str, course: str, label: str, titles: dict[str, str]) -> 
     for ch in sorted_chapters(titles):
         ch_num = int(ch[2:])
         title = titles[ch]
-        src = LESSONS / lang / course / ch
+        src = LESSONS / course / ch
         if not src.is_dir():
             continue
         nav_entries.extend(build_chapter(lang, course, ch, title, ch_num))
@@ -1201,7 +1201,7 @@ def main() -> None:
         1
         for lang, course, _, titles in COURSES
         for ch in sorted_chapters(titles)
-        if (LESSONS / lang / course / ch).is_dir()
+        if (LESSONS / course / ch).is_dir()
     )
     print(f"Processed {total} chapters across {len(COURSES)} courses.")
     print("Done. Run: mkdocs build")

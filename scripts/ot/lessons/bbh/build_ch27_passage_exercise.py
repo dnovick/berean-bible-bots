@@ -1,9 +1,9 @@
 """Build BBH Chapter 27 — "Spot the Hiphil" Passage Exercise.
 
 Generates all three output formats:
-  output/lessons/hebrew/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.md
-  output/lessons/hebrew/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.html
-  output/lessons/hebrew/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.pdf
+  data/lessons/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.md
+  data/lessons/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.html
+  data/lessons/bbh/ch27/exercises/ch27-passage-exercise/ch27-passage-exercise.pdf
 
 Usage:
     python3 scripts/ot/lessons/bbh/build_ch27_passage_exercise.py
@@ -21,7 +21,7 @@ sys.path.insert(0, '.')
 from src.bible_grammar.exercise_pdf.bbh import build_ch27_exercise  # noqa: E402
 
 OUT_DIR = Path(
-    'output/lessons/hebrew/bbh/ch27/exercises/ch27-passage-exercise'
+    'data/lessons/bbh/ch27/exercises/ch27-passage-exercise'
 )
 OUT_DIR.mkdir(parents=True, exist_ok=True)
 

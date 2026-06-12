@@ -167,9 +167,9 @@ def main() -> None:
     courses = ['bbh', 'bbg', 'bba'] if args.course == 'all' else [args.course]
 
     course_dirs = {
-        'bbh': ROOT / 'output' / 'lessons' / 'hebrew' / 'bbh',
-        'bbg': ROOT / 'output' / 'lessons' / 'greek' / 'bbg',
-        'bba': ROOT / 'output' / 'lessons' / 'aramaic' / 'bba',
+        'bbh': ROOT / 'data' / 'lessons' / 'bbh',
+        'bbg': ROOT / 'data' / 'lessons' / 'bbg',
+        'bba': ROOT / 'data' / 'lessons' / 'bba',
     }
 
     total_fixed = 0
