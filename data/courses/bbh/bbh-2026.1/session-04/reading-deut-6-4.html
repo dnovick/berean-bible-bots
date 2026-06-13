@@ -12,14 +12,13 @@
   .label    { font-size: .78rem; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; color: #888; margin-bottom: .3rem; }
   .ref      { font-size: 1rem; color: #1a2744; font-weight: bold; margin-bottom: 1.5rem; }
   .instr    { background: #f8f8f0; border-left: 4px solid #c9a94a; padding: .75rem 1rem; margin: 1.2rem 0 2rem; font-size: .93rem; line-height: 1.6; }
-  .verse-wrap { text-align: center; margin: 2.5rem 0; }
-  .verse    { direction: rtl; unicode-bidi: embed; font-family: 'SBL Hebrew', 'Arial Hebrew', 'David', 'Times New Roman', serif;
-              font-size: 3.6rem; line-height: 1.9; color: #111; display: inline-block; }
-  /* Word-by-word breakdown with aligned gloss */
-  .word-align-table { direction: rtl; display: inline-table; border-collapse: separate; border-spacing: 1.2em .4em; margin: 2rem auto; }
-  .word-align-table td { text-align: center; vertical-align: top; }
-  .word-align-table td.heb  { font-family: 'SBL Hebrew', 'Arial Hebrew', 'David', 'Times New Roman', serif; font-size: 2.2rem; line-height: 1.8; color: #111; }
-  .word-align-table td.gloss { font-size: .85rem; color: #666; direction: ltr; padding-top: .2rem; }
+  /* 2-row reading table: Hebrew on top, word-for-word gloss below */
+  .reading-wrap { text-align: center; margin: 2.5rem 0; }
+  .reading-table { direction: rtl; display: inline-table; border-collapse: separate; border-spacing: 1.2em .2em; }
+  .reading-table td { text-align: center; vertical-align: top; }
+  .reading-table td.heb   { font-family: 'SBL Hebrew', 'Arial Hebrew', 'David', 'Times New Roman', serif;
+                             font-size: 3.4rem; line-height: 1.9; color: #111; }
+  .reading-table td.gloss { font-size: .88rem; color: #666; direction: ltr; padding-top: .1rem; }
   .eng      { margin-top: 1.5rem; font-style: italic; font-size: .96rem; color: #555; text-align: center; line-height: 1.7; direction: ltr; }
   .eng cite { display: block; margin-top: .3rem; font-style: normal; font-size: .84rem; color: #888; }
   @media print { header { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
@@ -40,21 +39,15 @@
   Read at a steady pace, right to left.
 </div>
 
-<!-- Full verse for oral reading -->
-<div class="verse-wrap">
-  <div class="verse">שְׁמַע יִשְׂרָאֵל יְהוָה אֱלֹהֵינוּ יְהוָה אֶחָד׃</div>
-</div>
-
-<!-- Word-by-word breakdown: Hebrew on top, gloss aligned below -->
-<div style="text-align:center;">
-  <table class="word-align-table">
+<div class="reading-wrap">
+  <table class="reading-table">
     <tr>
       <td class="heb">שְׁמַע</td>
       <td class="heb">יִשְׂרָאֵל</td>
       <td class="heb">יְהוָה</td>
       <td class="heb">אֱלֹהֵינוּ</td>
       <td class="heb">יְהוָה</td>
-      <td class="heb">אֶחָד</td>
+      <td class="heb">אֶחָד׃</td>
     </tr>
     <tr>
       <td class="gloss">Hear</td>
