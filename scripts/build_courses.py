@@ -38,9 +38,6 @@ _NAV_PATH = _REPO_ROOT / "mkdocs_nav.yml"
 _NAV_START = "# <COURSES>"
 _NAV_END = "# </COURSES>"
 
-# Content at or below this character count renders inline on the session page;
-# anything larger is written as its own sub-page.
-INLINE_THRESHOLD = 600
 
 # ── Textbook metadata ─────────────────────────────────────────────────────────
 
@@ -374,8 +371,8 @@ def render_session_page(
 ) -> tuple[str, dict[str, str]]:
     """Render mkdocs_src/courses/<id>/sessions/session-NN.md.
 
-    Returns (page_markdown, subpages) where subpages maps filename → content
-    for sections whose content exceeds INLINE_THRESHOLD.  The caller is
+    Returns (page_markdown, subpages) where subpages maps filename → content.
+    Every section is always written as its own sub-page; the caller is
     responsible for writing those files under sessions/<session-slug>/.
     """
     cid = course["id"]
@@ -409,14 +406,9 @@ def render_session_page(
     for section in sections:
         heading = section.get("heading", "")
         body = _section_content(section, session_dir)
-        if len(body) <= INLINE_THRESHOLD:
-            anchor = heading_anchor(heading)
-            if anchor:
-                section_urls[heading] = f"#{anchor}"
-        else:
-            cslug = content_slug(section)
-            section_urls[heading] = f"{sess_slug}/{cslug}.md"
-            subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
+        cslug = content_slug(section)
+        section_urls[heading] = f"{sess_slug}/{cslug}.md"
+        subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
 
     # Add reading names to section_urls so agenda items can auto-link to them
     for reading in readings:
@@ -469,17 +461,6 @@ def render_session_page(
                 lines += [rdesc, ""]
             if rfile:
                 lines += [f"[Open Reading →]({sess_slug}/{rfile})", ""]
-
-    # Render only inline sections; subpages are written by the caller
-    for section in sections:
-        heading = section.get("heading", "")
-        body = _section_content(section, session_dir)
-        if len(body) <= INLINE_THRESHOLD:
-            if heading:
-                lines += [f"## {heading}", ""]
-            inline_body = _strip_leading_h1(body)
-            if inline_body:
-                lines += [inline_body, ""]
 
     if files:
         lines += ["## Downloads", ""]
