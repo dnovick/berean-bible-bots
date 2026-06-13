@@ -53,38 +53,38 @@ All 22 base consonants (including Sin שׂ), 5 sofit (final) forms, and 6 begadk
 
 | # | Letter | Name | Sound |
 |---|---|---|---|
-| 1 | ק | Qoph | q (uvular); no English equivalent |
+| 1 | ק | Qof | k as in king |
 | 2 | ם | Mem Sofit | m — final form of מ (occurs word-finally only) |
-| 3 | בּ | Beth (hard) | b as in "boy" — dagesh lene; hard form |
+| 3 | בּ | Bet (hard) | b as in "boy" — dagesh lene; hard form |
 | 4 | ה | He | h — guttural; often quiescent word-finally |
 | 5 | ץ | Tsade Sofit | emphatic ts — final form of צ (occurs word-finally only) |
 | 6 | ל | Lamed | l |
 | 7 | גּ | Gimel (hard) | g as in "go" — dagesh lene; hard form |
-| 8 | ע | Ayin | silent / pharyngeal stop — guttural; distinct from Aleph |
-| 9 | ך | Kaph Sofit | k / kh — final form of כ (occurs word-finally only) |
+| 8 | ע | Ayin | (silent) — guttural; distinct from Alef |
+| 9 | ך | Kaf Sofit | k / kh — final form of כ (occurs word-finally only) |
 | 10 | ז | Zayin | z |
-| 11 | תּ | Tav (hard) | t as in "top" — dagesh lene; hard form |
+| 11 | תּ | Taw (hard) | t as in "top" — dagesh lene; hard form |
 | 12 | נ | Nun | n — has final form ן |
 | 13 | שׁ | Shin | sh as in "shoe" — right dot = Shin |
 | 14 | דּ | Dalet (hard) | d as in "day" — dagesh lene; hard form |
 | 15 | ו | Waw | w (consonantal) — also vowel letter for ō, û |
 | 16 | ף | Pe Sofit | f as in "fan" — final form of פ (occurs word-finally only); no dagesh, so always soft |
-| 17 | כ | Kaph (soft) | kh as in "Bach" — soft form |
+| 17 | כ | Kaf (soft) | kh as in "Bach" — soft form |
 | 18 | י | Yod | y as in "yes" (consonantal) — also vowel letter for ī |
 | 19 | פּ | Pe (hard) | p as in "pan" — dagesh lene; hard form |
-| 20 | א | Aleph | silent / glottal stop — guttural; quiescent |
+| 20 | א | Alef | (silent) — guttural |
 | 21 | ן | Nun Sofit | n — final form of נ (occurs word-finally only) |
 | 22 | מ | Mem | m — has final form ם |
-| 23 | ת | Tav (soft) | t / th — soft form |
-| 24 | כּ | Kaph (hard) | k as in "king" — dagesh lene; hard form |
-| 25 | ח | Chet | guttural fricative — kh as in German "Bach"; guttural |
+| 23 | ת | Taw (soft) | t / th — soft form |
+| 24 | כּ | Kaf (hard) | k as in "king" — dagesh lene; hard form |
+| 25 | ח | Ḥet | ch as in Bach — guttural |
 | 26 | ר | Resh | r (uvular) — resists dagesh forte |
-| 27 | ב | Beth (soft) | v as in "vine" — soft form |
-| 28 | ט | Teth | emphatic t — no English equivalent |
+| 27 | ב | Bet (soft) | v as in "vine" — soft form |
+| 28 | ט | Tet | t as in toy — emphatic |
 | 29 | ד | Dalet (soft) | d / dh — soft form |
 | 30 | פ | Pe (soft) | f as in "fan" — soft form |
 | 31 | ג | Gimel (soft) | g / gh — soft form |
-| 32 | ס | Samekh | s |
+| 32 | ס | Samek | s |
 | 33 | צ | Tsade | emphatic ts — has final form ץ |
 | 34 | שׂ | Sin | s as in "sun" — left dot = Sin; same letter as Shin with different dot |
 

@@ -950,17 +950,17 @@ class Ch25WeakFormIdExercise(ExercisePDF):
         SortEntry('19', 'הִנָּצֵל',         'Imperative',       'Prov 6:3',  '"deliver yourself!"',                    'I-נ', 'נָצַל', 'Imperative 2ms — dagesh in נּ (R2)'),
         SortEntry('20', 'וַיִּנָּצֵל',      'Wayyiqtol',        'Gen 32:31', '"and Jacob was delivered"',              'I-נ', 'נָצַל', 'Wayyiqtol 3ms — dagesh in נּ (R2)'),
         # Group 5 — I-י
-        SortEntry('21', 'נוֹלַד',           'Perfect',          'Gen 21:3',  '"he was born"',                          'I-י', 'יָלַד', 'Perfect 3ms — נוֹ prefix + patach under R2'),
+        SortEntry('21', 'נוֹלַד',           'Perfect',          'Gen 21:3',  '"he was born"',                          'I-י', 'יָלַד', 'Perfect 3ms — נוֹ prefix + pathach under R2'),
         SortEntry('22', 'וַיִּוָּלֵד',      'Wayyiqtol',        'Gen 4:18',  '"and he was born"',                      'I-י', 'יָלַד', 'Wayyiqtol 3ms — וַיִּוָּ cluster'),
         SortEntry('23', 'יִוָּלֵד',         'Imperfect',        'Gen 17:17', '"shall a child be born?"',               'I-י', 'יָלַד', 'Imperfect 3ms — יִוָּ cluster + tsere'),
         SortEntry('24', 'בְּהִוָּלֶד',      'Inf. Construct',   'Gen 21:5',  '"when he was born"',                     'I-י', 'יָלַד', 'Inf. Construct — הִוָּ prefix + בְּ'),
-        SortEntry('25', 'נוֹלָד',           'Participle ms',    '1 Kgs 13:2', '"one who will be born"',                 'I-י', 'יָלַד', 'Participle ms — נוֹ prefix + qamets (vs. patach in perfect)'),
+        SortEntry('25', 'נוֹלָד',           'Participle ms',    '1 Kgs 13:2', '"one who will be born"',                 'I-י', 'יָלַד', 'Participle ms — נוֹ prefix + qamets (vs. pathach in perfect)'),
         # Group 6 — III-ח/ע
-        SortEntry('26', 'נִשְׁמַע',         'Perfect',          'Est 1:20',  '"it was heard"',                         'III-ch/ayin', 'שָׁמַע', 'Perfect 3ms — patach furtive before final ע'),
-        SortEntry('27', 'יִשָּׁמַע',        'Imperfect',        'Exo 28:35', '"it shall be heard"',                    'III-ch/ayin', 'שָׁמַע', 'Imperfect 3ms — patach (not tsere) before ע; dagesh in R1'),
-        SortEntry('28', 'וַיִּשָּׁמַע',     'Wayyiqtol',        'Gen 45:2',  '"and it was heard"',                     'III-ch/ayin', 'שָׁמַע', 'Wayyiqtol 3ms — patach before ע; no furtive'),
-        SortEntry('29', 'הִשָּׁמַע',        'Inf. Construct',   'Deu 4:32',  '"to be heard"',                          'III-ch/ayin', 'שָׁמַע', 'Inf. Construct (= Imperative form) — patach before ע'),
-        SortEntry('30', 'נִשְׁמָע',         'Participle ms',    'Ecc 12:13', '"that which is heard"',                  'III-ch/ayin', 'שָׁמַע', 'Participle ms — qamets + patach furtive before ע'),
+        SortEntry('26', 'נִשְׁמַע',         'Perfect',          'Est 1:20',  '"it was heard"',                         'III-ch/ayin', 'שָׁמַע', 'Perfect 3ms — pathach furtive before final ע'),
+        SortEntry('27', 'יִשָּׁמַע',        'Imperfect',        'Exo 28:35', '"it shall be heard"',                    'III-ch/ayin', 'שָׁמַע', 'Imperfect 3ms — pathach (not tsere) before ע; dagesh in R1'),
+        SortEntry('28', 'וַיִּשָּׁמַע',     'Wayyiqtol',        'Gen 45:2',  '"and it was heard"',                     'III-ch/ayin', 'שָׁמַע', 'Wayyiqtol 3ms — pathach before ע; no furtive'),
+        SortEntry('29', 'הִשָּׁמַע',        'Inf. Construct',   'Deu 4:32',  '"to be heard"',                          'III-ch/ayin', 'שָׁמַע', 'Inf. Construct (= Imperative form) — pathach before ע'),
+        SortEntry('30', 'נִשְׁמָע',         'Participle ms',    'Ecc 12:13', '"that which is heard"',                  'III-ch/ayin', 'שָׁמַע', 'Participle ms — qamets + pathach furtive before ע'),
         # Group 7 — Biconsonantal
         SortEntry('31', 'נָכוֹן',           'Perfect',          'Gen 41:32', '"it is established"',                    'Biconsonantal', 'כּוּן', 'Perfect 3ms — נָ prefix (qamets) + medial וֹ'),
         SortEntry('32', 'יִכּוֹן',          'Imperfect',        'Psa 93:2',  '"it is established"',                    'Biconsonantal', 'כּוּן', 'Imperfect 3ms — dagesh in R1 (Niphal assimilation) + contracted root'),
@@ -977,13 +977,13 @@ class Ch25WeakFormIdExercise(ExercisePDF):
 
     _PART_B = [
         SortEntry('41', 'תֵרָאֶה',          'Imperfect/Jussive', 'Gen 1:9',   '"let it appear"',                        'III-ה',         'רָאָה', '3fs — ר compensatory + final ֶה'),
-        SortEntry('42', 'וַיִּוָּדַע',      'Wayyiqtol',        'Est 2:22',  '"the matter became known"',             'I-י',           'יָדַע', '3ms — וַיִּוָּ; patach under R2 (יָדַע class)'),
+        SortEntry('42', 'וַיִּוָּדַע',      'Wayyiqtol',        'Est 2:22',  '"the matter became known"',             'I-י',           'יָדַע', '3ms — וַיִּוָּ; pathach under R2 (יָדַע class)'),
         SortEntry('43', 'נֶעֱמַד',          'Perfect',          '1 Sam 17:16', '"he took his stand"',                  'I-guttural',    'עָמַד', '3ms — נֶ prefix + composite shewa under ע'),
         SortEntry('44', 'וַיִּמָּצְאוּ',    'Wayyiqtol',        'Gen 47:14', '"all the silver was gathered"',          'III-א',         'מָצָא', '3mp — dagesh + 3mp ending + silent א'),
-        SortEntry('45', 'נוֹדַע',           'Perfect',          'Gen 41:21', '"it was not known"',                     'I-י',           'יָדַע', '3ms — נוֹ prefix + patach (perfect, not participle)'),
+        SortEntry('45', 'נוֹדַע',           'Perfect',          'Gen 41:21', '"it was not known"',                     'I-י',           'יָדַע', '3ms — נוֹ prefix + pathach (perfect, not participle)'),
         SortEntry('46', 'וַיִּגַּשׁ',       'Wayyiqtol',        'Gen 44:18', '"Judah drew near"',                      'I-נ',           'נָגַשׁ', '3ms — dagesh in ג (R2); root נ invisible'),
         SortEntry('47', 'הֵרָאֵה',          'Imperative',       '1 Kgs 18:1', '"show yourself!"',                       'III-ה',         'רָאָה', '2ms — הֵ compensatory + final ֵה (imperative)'),
-        SortEntry('48', 'נִשְׁלַח',         'Perfect',          'Est 3:13',  '"letters were sent"',                    'III-ch/ayin',   'שָׁלַח', '3ms — patach furtive before final ח'),
+        SortEntry('48', 'נִשְׁלַח',         'Perfect',          'Est 3:13',  '"letters were sent"',                    'III-ch/ayin',   'שָׁלַח', '3ms — pathach furtive before final ח'),
         SortEntry('49', 'נָכוֹן',           'Perfect/Participle', 'Exo 34:2', '"be ready"',                             'Biconsonantal', 'כּוּן', 'נָ prefix (qamets) is the biconsonantal Niphal marker'),
         SortEntry('50', 'וַיִּסֹּב',        'Wayyiqtol',        '2 Sam 5:23', '"and he circled behind them"',          'Geminate',      'סָבַב', '3ms — וַיִּ + dagesh forte in ב (R2=R3); root ס-ב-ב is Geminate, not hollow'),
         SortEntry('51', 'נִמְצְאוּ',        'Perfect',          'Exo 12:19', '"whoever is found"',                     'III-א',         'מָצָא', '3cp — 3cp ending + final silent א'),
@@ -1000,7 +1000,7 @@ class Ch25WeakFormIdExercise(ExercisePDF):
 
         self.add_note(
             'Classes: III-א (silent final א)  |  III-ה (final ָה / ֶה / וֹת / apocopated)  |  '
-            'III-ch/ayin (patach furtive before ח/ע; patach in short forms)  |  '
+            'III-ch/ayin (pathach furtive before ח/ע; pathach in short forms)  |  '
             'I-guttural (נֶ / יֵ / הֵ prefix; no dagesh in R1)  |  '
             'I-נ (dagesh forte in R2; root נ invisible)  |  '
             'I-י (נוֹ prefix in perfect/ptc; יִוָּ / הִוָּ in impf/wayyiqtol/imv/inf)  |  '
@@ -1024,7 +1024,7 @@ class Ch25WeakFormIdExercise(ExercisePDF):
             'Items 21 (נוֹלַד) and 25 (נוֹלָד) differ only in the vowel under R2. Which is the perfect '
             'and which is the participle, and how would each behave differently in a clause?',
             'Items 26 (נִשְׁמַע, III-ח/ע) and item 1 (נִמְצָא, III-א) both begin with נִ. What '
-            'distinguishes them visually, and why does the patach furtive appear before שָׁמַע but not מָצָא?',
+            'distinguishes them visually, and why does the pathach furtive appear before שָׁמַע but not מָצָא?',
             'Items 31 and 33 both show נָכוֹן (Biconsonantal). How does this perfect/participle ambiguity '
             'parallel the III-א problem in question 1, and what does it reveal about the general challenge '
             'of Niphal weak forms?',
@@ -1206,16 +1206,16 @@ class Ch27WeakFormIdExercise(ExercisePDF):
     _PART_A = [
         # Group 1 — I-guttural
         SortEntry('1',  'הֶעֱמִיד',      'Perfect',      '1 Kgs 7:21', '"he set up"',              'I-guttural',    'עָמַד', 'seghol under הֶ + hateph-seghol under ע'),
-        SortEntry('2',  'וַיַּעֲמֵד',    'Wayyiqtol',    '2 Chr 4:4',  '"and he set it"',           'I-guttural',    'עָמַד', 'patach prefix + composite shewa under ע'),
-        SortEntry('3',  'יַעֲמִיד',      'Imperfect',    'Psa 107:29', '"he causes to stand"',      'I-guttural',    'עָמַד', 'patach prefix + composite shewa; no dagesh'),
+        SortEntry('2',  'וַיַּעֲמֵד',    'Wayyiqtol',    '2 Chr 4:4',  '"and he set it"',           'I-guttural',    'עָמַד', 'pathach prefix + composite shewa under ע'),
+        SortEntry('3',  'יַעֲמִיד',      'Imperfect',    'Psa 107:29', '"he causes to stand"',      'I-guttural',    'עָמַד', 'pathach prefix + composite shewa; no dagesh'),
         SortEntry('4',  'הַעֲמֵד',       'Imperative',   'Num 27:19',  '"set him before"',          'I-guttural',    'עָמַד', 'הַ + composite shewa under ע + tsere'),
         SortEntry('5',  'מַעֲמִיד',      'Participle',   'Neh 4:7',    '"one who stations"',        'I-guttural',    'עָמַד', 'מַ + composite shewa under ע + chiriq'),
         # Group 2 — III-ח/ע
-        SortEntry('6',  'הִשְׁמִיעַ',    'Perfect',      'Isa 48:6',   '"he caused to hear"',       'III-ch/ayin',   'שָׁמַע', 'patach furtive before final ע in 3ms'),
-        SortEntry('7',  'וַיַּשְׁלַח',   'Wayyiqtol',    'Gen 3:23',   '"and he sent out"',         'III-ch/ayin',   'שָׁלַח', 'patach (not tsere) before final ח'),
-        SortEntry('8',  'יַשְׁמִיעַ',    'Imperfect',    'Isa 42:2',   '"he will cause to hear"',   'III-ch/ayin',   'שָׁמַע', 'patach furtive before final ע'),
-        SortEntry('9',  'הַשְׁמַע',      'Imperative',   'Deu 4:10',   '"make them hear"',          'III-ch/ayin',   'שָׁמַע', 'patach before final ע (not tsere)'),
-        SortEntry('10', 'מַשְׁמִיעַ',    'Participle',   'Isa 41:26',  '"one who announces"',       'III-ch/ayin',   'שָׁמַע', 'מַ + chiriq-yod + patach furtive before ע'),
+        SortEntry('6',  'הִשְׁמִיעַ',    'Perfect',      'Isa 48:6',   '"he caused to hear"',       'III-ch/ayin',   'שָׁמַע', 'pathach furtive before final ע in 3ms'),
+        SortEntry('7',  'וַיַּשְׁלַח',   'Wayyiqtol',    'Gen 3:23',   '"and he sent out"',         'III-ch/ayin',   'שָׁלַח', 'pathach (not tsere) before final ח'),
+        SortEntry('8',  'יַשְׁמִיעַ',    'Imperfect',    'Isa 42:2',   '"he will cause to hear"',   'III-ch/ayin',   'שָׁמַע', 'pathach furtive before final ע'),
+        SortEntry('9',  'הַשְׁמַע',      'Imperative',   'Deu 4:10',   '"make them hear"',          'III-ch/ayin',   'שָׁמַע', 'pathach before final ע (not tsere)'),
+        SortEntry('10', 'מַשְׁמִיעַ',    'Participle',   'Isa 41:26',  '"one who announces"',       'III-ch/ayin',   'שָׁמַע', 'מַ + chiriq-yod + pathach furtive before ע'),
         # Group 3 — III-א
         SortEntry('11', 'הִמְצִיא',      'Perfect',      'Neh 9:15',   '"he provided"',             'III-aleph',     'מָצָא', 'chiriq-yod + silent final א'),
         SortEntry('12', 'וַיַּמְצֵא',    'Wayyiqtol',    '2 Chr 2:13', '"and he provided"',         'III-aleph',     'מָצָא', 'tsere + silent final א'),
@@ -1224,14 +1224,14 @@ class Ch27WeakFormIdExercise(ExercisePDF):
         SortEntry('15', 'מַקְרִיא',      'Participle',   'Neh 8:3',    '"one who reads aloud"',     'III-aleph',     'קָרָא', 'מַ + chiriq-yod + silent final א'),
         # Group 4 — III-ה
         SortEntry('16', 'הֶעֱלָה',       'Perfect',      'Gen 8:20',   '"he offered up"',           'III-he',        'עָלָה', 'qamets + ה ending; seghol under הֶ'),
-        SortEntry('17', 'וַיַּעַל',      'Wayyiqtol',    'Gen 22:2',   '"and he went up"',          'III-he',        'עָלָה', 'apocopated — ה dropped; short patach under R2'),
+        SortEntry('17', 'וַיַּעַל',      'Wayyiqtol',    'Gen 22:2',   '"and he went up"',          'III-he',        'עָלָה', 'apocopated — ה dropped; short pathach under R2'),
         SortEntry('18', 'יַעֲלֶה',       'Imperfect',    'Lev 14:20',  '"he shall offer up"',       'III-he',        'עָלָה', 'seghol + ה ending'),
         SortEntry('19', 'הַרְאֵה',       'Imperative',   'Exo 33:18',  '"show me"',                 'III-he',        'רָאָה', 'tsere + ה retained (not apocopated)'),
         SortEntry('20', 'לְהַעֲלוֹת',   'Inf. Construct', 'Exo 3:17',  '"to bring up"',             'III-he',        'עָלָה', 'ends in וֹת — strong III-ה marker'),
         # Group 5 — I-נ
         SortEntry('21', 'הִפִּיל',       'Perfect',      'Gen 2:21',   '"he caused to fall"',       'I-nun',         'נָפַל', 'dagesh forte in R2 (פ); נ assimilated'),
-        SortEntry('22', 'וַיַּפֵּל',     'Wayyiqtol',    'Gen 2:21',   '"and he cast"',             'I-nun',         'נָפַל', 'patach prefix + dagesh in R2 + tsere'),
-        SortEntry('23', 'יַפִּיל',       'Imperfect',    'Pro 19:15',  '"causes to fall"',          'I-nun',         'נָפַל', 'patach prefix + dagesh in R2 + chiriq'),
+        SortEntry('22', 'וַיַּפֵּל',     'Wayyiqtol',    'Gen 2:21',   '"and he cast"',             'I-nun',         'נָפַל', 'pathach prefix + dagesh in R2 + tsere'),
+        SortEntry('23', 'יַפִּיל',       'Imperfect',    'Pro 19:15',  '"causes to fall"',          'I-nun',         'נָפַל', 'pathach prefix + dagesh in R2 + chiriq'),
         SortEntry('24', 'הַגֵּשׁ',       'Imperative',   'Gen 27:25',  '"bring near"',              'I-nun',         'נָגַשׁ', 'הַ + dagesh forte in R2 (ג) + tsere'),
         SortEntry('25', 'מַגִּישׁ',      'Participle',   'Mal 1:7',    '"one who brings near"',     'I-nun',         'נָגַשׁ', 'מַ + dagesh in R2 + chiriq'),
         # Group 6 — I-י
@@ -1255,7 +1255,7 @@ class Ch27WeakFormIdExercise(ExercisePDF):
     ]
 
     _PART_B = [
-        SortEntry('41', 'וַיַּשְׁמַע',   'Wayyiqtol',    '1 Sam 15:14', '"and he made heard"',       'III-ch/ayin',   'שָׁמַע', 'patach before final ע (not tsere) — guttural forces lowering'),
+        SortEntry('41', 'וַיַּשְׁמַע',   'Wayyiqtol',    '1 Sam 15:14', '"and he made heard"',       'III-ch/ayin',   'שָׁמַע', 'pathach before final ע (not tsere) — guttural forces lowering'),
         SortEntry('42', 'הֵשִׂים',        'Perfect',       'Gen 45:9',    '"he made / placed"',        'Biconsonantal', 'שִׂים',  'הֵ prefix (tsere); root שׂ-י-מ contains medial hireq-yod vowel letter = Biconsonantal'),
         SortEntry('43', 'וַיַּעַל',       'Wayyiqtol',     'Gen 22:2',    '"and he went up"',          'III-he',        'עָלָה', 'apocopated: ה dropped'),
         SortEntry('44', 'הִגִּישׁ',       'Perfect',       'Amos 9:13',   '"he brought near"',         'I-nun',         'נָגַשׁ', 'dagesh forte in R2 (ג)'),
@@ -1263,7 +1263,7 @@ class Ch27WeakFormIdExercise(ExercisePDF):
         SortEntry('46', 'הֶרְאָה',        'Perfect',       'Exo 25:9',    '"he showed"',               'III-he',        'רָאָה', 'qamets + ה ending; seghol under הֶ'),
         SortEntry('47', 'וַיּוֹרֶד',      'Wayyiqtol',     'Gen 42:38',   '"and he brought down"',     'I-yod',         'יָרַד', 'וַיּוֹ prefix uniquely identifies I-yod Hiphil'),
         SortEntry('48', 'מַעֲמִידִים',    'Participle mp', 'Neh 4:7',     '"those who station"',       'I-guttural',    'עָמַד', 'מַ + composite shewa under ע + chiriq + ים'),
-        SortEntry('49', 'הַמְצֵא',        'Imperative',    '(expected)',  '"cause to find"',           'III-aleph',     'מָצָא', 'tsere + silent final א; הַ prefix (patach)'),
+        SortEntry('49', 'הַמְצֵא',        'Imperative',    '(expected)',  '"cause to find"',           'III-aleph',     'מָצָא', 'tsere + silent final א; הַ prefix (pathach)'),
         SortEntry('50', 'וָאָקִים',       'Wayyiqtol',     'Exo 6:4',     '"and I established"',       'Biconsonantal', 'קוּם', 'וָאָ (1cs wayyiqtol) + qamets + chiriq-yod medial vowel letter = Biconsonantal'),
     ]
 
@@ -1277,7 +1277,7 @@ class Ch27WeakFormIdExercise(ExercisePDF):
 
         self.add_note(
             'Classes: I-guttural (he prefix seghol; composite shewa under R1)  |  '
-            'III-ch/ayin (patach furtive before final guttural)  |  '
+            'III-ch/ayin (pathach furtive before final guttural)  |  '
             'III-aleph (silent final aleph; chiriq-yod or tsere before it)  |  '
             'III-he (qamets+he perfect; seghol+he impf/ptc; apocopated wayyiqtol; vot inf.cstr)  |  '
             'I-nun (dagesh forte in R2 throughout)  |  '
@@ -1299,10 +1299,10 @@ class Ch27WeakFormIdExercise(ExercisePDF):
             'הַשְׁמַע (III-ch/ayin imperative) and הַעֲמֵד (I-guttural imperative) both begin '
             'with the ha- prefix. How does the vowel under R1 differ? What does that tell you about the class?',
             'וַיַּשְׁלַח (III-ch/ayin wayyiqtol) and וַיַּקְרֵא (III-aleph wayyiqtol) both have '
-            'patach under the wayyiqtol prefix. The difference is in the final vowel. '
+            'pathach under the wayyiqtol prefix. The difference is in the final vowel. '
             'Explain what happens to the Hiphil tsere in each case and why.',
             'Compare הוֹרֵד (I-yod imperative 2ms) and הָקֵם (Biconsonantal imperative 2ms). '
-            'Both have a long prefix vowel rather than the patach of the strong Hiphil imperative. '
+            'Both have a long prefix vowel rather than the pathach of the strong Hiphil imperative. '
             'What prefix vowel does each use, and how can you tell them apart?',
             'Items 36-40 (Geminate) and items 31-35 (Biconsonantal) share nearly identical vowel '
             'patterns in every conjugation: he+tsere perfect, qamets imperfect/wayyiqtol, '
@@ -1334,8 +1334,8 @@ class Ch27NHContrastExercise(ExercisePDF):
     """Niphal–Hiphil Contrast Drill — 20 items across both stems."""
 
     _PART_A = [
-        NHEntry('1',  'נִשְׁמַע',     'Est 1:20',  '"the decree ___ throughout the kingdom"',   'Niphal', 'Perfect',    '3ms', 'שָׁמַע · III-ח/ע',         'was heard',              'נִ prefix + patach furtive before ע = Niphal III-ח/ע perfect'),
-        NHEntry('2',  'הִשְׁמִיעַ',   'Isa 48:6',  '"I ___ you new things"',                    'Hiphil', 'Perfect',    '3ms', 'שָׁמַע · III-ח/ע',         'caused to hear / announced', 'הִ + chiriq-yod + patach furtive before ע = Hiphil III-ח/ע perfect'),
+        NHEntry('1',  'נִשְׁמַע',     'Est 1:20',  '"the decree ___ throughout the kingdom"',   'Niphal', 'Perfect',    '3ms', 'שָׁמַע · III-ח/ע',         'was heard',              'נִ prefix + pathach furtive before ע = Niphal III-ח/ע perfect'),
+        NHEntry('2',  'הִשְׁמִיעַ',   'Isa 48:6',  '"I ___ you new things"',                    'Hiphil', 'Perfect',    '3ms', 'שָׁמַע · III-ח/ע',         'caused to hear / announced', 'הִ + chiriq-yod + pathach furtive before ע = Hiphil III-ח/ע perfect'),
         NHEntry('3',  'יִמָּצֵא',     'Gen 44:10', '"he with whom it is ___ shall be my servant"', 'Niphal', 'Imperfect', '3ms', 'מָצָא · III-א',            'is found',               'יִמָּ (dagesh in מ = Niphal assimilation) + tsere + silent א'),
         NHEntry('4',  'הִמְצִיא',     'Neh 9:15',  '"You ___ them bread from heaven"',           'Hiphil', 'Perfect',    '3ms', 'מָצָא · III-א',            'provided / caused to find', 'הִ + chiriq-yod + silent final א = Hiphil III-א perfect'),
         NHEntry('5',  'נִגְלָה',      'Isa 40:5',  '"the glory of the LORD shall ___"',          'Niphal', 'Perfect',    '3ms', 'גָּלָה · III-ה',           'was revealed',           'נִ prefix + final ָה = Niphal III-ה perfect'),
@@ -1345,7 +1345,7 @@ class Ch27NHContrastExercise(ExercisePDF):
     ]
 
     _PART_B = [
-        NHEntry('9',  'נוֹלַד',       'Gen 21:3',  '"a son ___ to Abraham"',                    'Niphal', 'Perfect',    '3ms', 'יָלַד · I-י',              'was born',               'נוֹ prefix = Niphal I-י perfect; patach under R2 (not qamets of participle)'),
+        NHEntry('9',  'נוֹלַד',       'Gen 21:3',  '"a son ___ to Abraham"',                    'Niphal', 'Perfect',    '3ms', 'יָלַד · I-י',              'was born',               'נוֹ prefix = Niphal I-י perfect; pathach under R2 (not qamets of participle)'),
         NHEntry('10', 'יּוֹלֶד',      'Gen 5:3',   '"Adam ___ a son in his own likeness"',      'Hiphil', 'Wayyiqtol',  '3ms', 'יָלַד · I-י',              'fathered / begat',       'וַיּוֹ prefix (dagesh in יּ + holem-vav) = Hiphil I-י wayyiqtol'),
         NHEntry('11', 'יִוָּלֵד',     'Gen 17:17', '"shall a child ___ to a man of 100 years?"', 'Niphal', 'Imperfect',  '3ms', 'יָלַד · I-י',              'shall be born',          'יִוָּ cluster (dagesh in ו) = Niphal I-י imperfect; contrast Hiphil יוֹ'),
         NHEntry('12', 'יוֹרִיד',      '1 Sam 2:6', '"the LORD ___ to Sheol and raises up"',     'Hiphil', 'Imperfect',  '3ms', 'יָרַד · I-י',              'brings down',            'יוֹ prefix (holem-vav, no dagesh in ו) = Hiphil I-י imperfect'),
@@ -1355,7 +1355,7 @@ class Ch27NHContrastExercise(ExercisePDF):
     ]
 
     _PART_C = [
-        NHEntry('16', 'וַיַּעַל',     'Gen 22:2',  '"and he ___ him as a burnt offering"',      'Hiphil', 'Wayyiqtol',  '3ms', 'עָלָה · III-ה + I-gutt.', 'offered up (apocopated)', 'patach prefix (יַ) + composite shewa + apocopated = Hiphil; contrast Niphal וַיֵּ'),
+        NHEntry('16', 'וַיַּעַל',     'Gen 22:2',  '"and he ___ him as a burnt offering"',      'Hiphil', 'Wayyiqtol',  '3ms', 'עָלָה · III-ה + I-gutt.', 'offered up (apocopated)', 'pathach prefix (יַ) + composite shewa + apocopated = Hiphil; contrast Niphal וַיֵּ'),
         NHEntry('17', 'וַיִּגָּל',    'Num 24:4',  '"who sees the vision, ___ eyes"',           'Niphal', 'Wayyiqtol',  '3ms', 'גָּלָה · III-ה',           'were uncovered (apocopated)', 'וַיִּ + dagesh in ג (Niphal assimilation) + apocopated = Niphal'),
         NHEntry('18', 'הָסֵב',        '2 Sam 2:22', '"___ from following me"',                   'Hiphil', 'Imperative', '2ms', 'סָבַב · Geminate',         'turn aside!',            'הָ prefix (qamets) = Hiphil Biconsonantal/Geminate imperative; root R2=R3'),
         NHEntry('19', 'מַעֲמִידִים',  'Neh 4:7',   '"we who were ___ guard over them"',         'Hiphil', 'Participle', 'mp',  'עָמַד · I-guttural',       'stationing / standing guard', 'מַ + composite shewa under ע = Hiphil I-guttural participle; contrast Niphal נֶ'),
@@ -1932,7 +1932,7 @@ class Ch30PielExercise(PassageExercise):
             '"Come now, curse this people for me… he whom you bless is blessed [Ch32 Pual — not numbered], and he whom you curse is cursed."'))
         self.add_verb_table([
             VerbEntry('9',  'אָרָה',     'Qal Jussive',  '1cs', 'אָרַר', 'NOT Piel — Qal jussive (curse); no dagesh in R2'),
-            VerbEntry('10', 'תְּבָרֵךְ', 'Imperfect',    '2ms', 'בָּרַךְ', 'Intensive (Piel) — תְּ prefix + patach + tsere; R2=ר rejects dagesh'),
+            VerbEntry('10', 'תְּבָרֵךְ', 'Imperfect',    '2ms', 'בָּרַךְ', 'Intensive (Piel) — תְּ prefix + pathach + tsere; R2=ר rejects dagesh'),
             VerbEntry('11', 'יוּאָר',   'Hophal Impf.', '3ms', 'אָרַר', 'NOT Piel — Hophal (shall be cursed); יוּ prefix = u-class vowel under prefix = Hophal marker'),
         ], show_answers=show_answers)
 
@@ -2026,7 +2026,7 @@ class Ch28HophalExercise(PassageExercise):
             'וְאִם בְּאֶבֶן יָד אֲשֶׁר־יָמוּת בָּהּ הִכָּהוּ וַיָּמֹת מוֹת־יוּמַת הָרֹצֵֽחַ',
             '"If with a stone that could kill he struck him and he died — the murderer shall be put to death."'))
         self.add_verb_table([
-            VerbEntry('6', 'יָמוּת', 'Qal Impf.', '3ms', 'מוּת', 'NOT Hophal — Qal intransitive "to die"; יָ prefix (Patach) ≠ Hophal'),
+            VerbEntry('6', 'יָמוּת', 'Qal Impf.', '3ms', 'מוּת', 'NOT Hophal — Qal intransitive "to die"; יָ prefix (Pathach) ≠ Hophal'),
             VerbEntry('7', 'יוּמַת', 'Imperfect', '3ms', 'מוּת', 'Hophal — יוּ prefix (Shureq); same formula as verb 5'),
         ], show_answers=show_answers)
 
@@ -2090,7 +2090,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"…for he is a prophet, and he will pray for you."'))
         self.add_verb_table([
             VerbEntry('3', 'יִתְפַּלֵּל', 'Imperfect', '3ms', 'פלל',
-                      'Denominative — "he will pray"; יִתְ- prefix + patach under R1 + dagesh forte in ל ל'),
+                      'Denominative — "he will pray"; יִתְ- prefix + pathach under R1 + dagesh forte in ל ל'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('20:7',
@@ -2098,7 +2098,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"Pray to the LORD."'))
         self.add_verb_table([
             VerbEntry('4', 'הִתְפַּלֵּל', 'Imperative', '2ms', 'פלל',
-                      'Denominative — "Pray!"; הִתְ- prefix + patach under R1 + tsere + ל ל; same form as perfect 3ms in isolation'),
+                      'Denominative — "Pray!"; הִתְ- prefix + pathach under R1 + tsere + ל ל; same form as perfect 3ms in isolation'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Exo 29:36',
@@ -2119,7 +2119,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"Consecrate yourselves, for tomorrow the LORD will do wonders among you."'))
         self.add_verb_table([
             VerbEntry('6', 'הִתְקַדְּשׁוּ', 'Imperative', '2mp', 'קדש',
-                      'Reflexive — "consecrate yourselves!"; הִתְ- prefix + patach + dagesh forte in R2 (דּ) + 2mp suffix וּ'),
+                      'Reflexive — "consecrate yourselves!"; הִתְ- prefix + pathach + dagesh forte in R2 (דּ) + 2mp suffix וּ'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Exo 19:22',
@@ -2127,7 +2127,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"And also let the priests who come near to the LORD consecrate themselves, lest the LORD break out against them."'))
         self.add_verb_table([
             VerbEntry('7', 'יִתְקַדָּשׁוּ', 'Imperfect', '3mp', 'קדש',
-                      'Reflexive — "let them consecrate themselves"; יִתְ- prefix + patach + lengthened R2 vowel (qamets) + 3mp suffix וּ'),
+                      'Reflexive — "let them consecrate themselves"; יִתְ- prefix + pathach + lengthened R2 vowel (qamets) + 3mp suffix וּ'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Lev 8:15',
@@ -2527,7 +2527,7 @@ class Ch31PielWeakExercise(PassageExercise):
             '"so that he will command his sons and his household after him…"'))
         self.add_verb_table([
             VerbEntry('6', 'יְצַוֶּה', 'Imperfect', '3ms', 'צָוָה',
-                      'Denominative — III-he Impf. 3ms: ye- prefix + patach + dagesh in R2 + tsere-he'),
+                      'Denominative — III-he Impf. 3ms: ye- prefix + pathach + dagesh in R2 + tsere-he'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Exo 1:17',
@@ -2556,7 +2556,7 @@ class Ch31PielWeakExercise(PassageExercise):
             '"to humble you and to test you…"'))
         self.add_verb_table([
             VerbEntry('9', 'עַנֹּתְךָ', 'Inf. Construct', '— + 2ms', 'עָנָה',
-                      'Factitive — III-he Inf. Const. + 2ms suffix: patach + dagesh in nun + tav'),
+                      'Factitive — III-he Inf. Const. + 2ms suffix: pathach + dagesh in nun + tav'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Deu 8:3',
@@ -2572,7 +2572,7 @@ class Ch31PielWeakExercise(PassageExercise):
             '"The LORD your God will humble you in the wilderness."'))
         self.add_verb_table([
             VerbEntry('11', 'יְעַנֶּה', 'Imperfect', '3ms', 'עָנָה',
-                      'Factitive — III-he Impf. 3ms: ye- + patach + dagesh in nun + tsere-he ending'),
+                      'Factitive — III-he Impf. 3ms: ye- + pathach + dagesh in nun + tsere-he ending'),
         ], show_answers=show_answers)
 
         self.add_section_break()
@@ -2601,7 +2601,7 @@ class Ch31PielWeakExercise(PassageExercise):
             '"All the commandment that I am commanding you today, you shall be careful to do."'))
         self.add_verb_table([
             VerbEntry('14', 'מְצַוְּךָ', 'Participle', 'ms + 2ms', 'צָוָה',
-                      'Denominative — Piel Ptc. ms + 2ms suffix: me- + patach + dagesh in R2'),
+                      'Denominative — Piel Ptc. ms + 2ms suffix: me- + pathach + dagesh in R2'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Gen 39:1 (review)',
@@ -2664,7 +2664,7 @@ class Ch32PualExercise(PassageExercise):
             '"How shall I curse what God has not cursed, and how shall I denounce what the LORD has not denounced?"'))
         self.add_verb_table([
             VerbEntry('6', 'קַבֹּה', 'Qal Inf.Abs.', '—',  'קָבַב', 'NOT Pual — Qal Inf. Abs.; geminate root; no Qibbuts + R2 dagesh'),
-            VerbEntry('7', 'זָעַם',  'Perfect',      '3ms', 'זָעַם', 'NOT Pual — Qal Perf. 3ms; Qamets-Patach = Qal pattern; no u-class under R1'),
+            VerbEntry('7', 'זָעַם',  'Perfect',      '3ms', 'זָעַם', 'NOT Pual — Qal Perf. 3ms; Qamets-Pathach = Qal pattern; no u-class under R1'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('23:20',
@@ -2929,38 +2929,38 @@ class Ch1LetterRecognitionExercise(ExercisePDF):
             ['34', 'שׂ', '', ''],
         ]
         ans = [
-            ['1',  'ק',  'Qoph',          'q (uvular); no English equivalent'],
+            ['1',  'ק',  'Qof',          'k as in king'],
             ['2',  'ם',  'Mem Sofit',      'm — final form of mem (word-finally only)'],
-            ['3',  'בּ', 'Beth (hard)',    'b as in "boy" — dagesh lene; hard form'],
+            ['3',  'בּ', 'Bet (hard)',    'b as in "boy" — dagesh lene; hard form'],
             ['4',  'ה',  'He',             'h — guttural; often quiescent word-finally'],
             ['5',  'ץ',  'Tsade Sofit',    'emphatic ts — final form of tsade (word-finally only)'],
             ['6',  'ל',  'Lamed',          'l'],
             ['7',  'גּ', 'Gimel (hard)',   'g as in "go" — dagesh lene; hard form'],
             ['8',  'ע',  'Ayin',           'silent / pharyngeal stop — guttural'],
-            ['9',  'ך',  'Kaph Sofit',     'k / kh — final form of kaph (word-finally only)'],
+            ['9',  'ך',  'Kaf Sofit',     'k / kh — final form of kaf (word-finally only)'],
             ['10', 'ז',  'Zayin',          'z'],
-            ['11', 'תּ', 'Tav (hard)',     't as in "top" — dagesh lene; hard form'],
+            ['11', 'תּ', 'Taw (hard)',     't as in "top" — dagesh lene; hard form'],
             ['12', 'נ',  'Nun',            'n — has final form nun sofit'],
             ['13', 'שׁ', 'Shin',           'sh as in "shoe" — right dot = Shin'],
             ['14', 'דּ', 'Dalet (hard)',   'd as in "day" — dagesh lene; hard form'],
             ['15', 'ו',  'Waw',            'w (consonantal) — also vowel letter for o, u'],
             ['16', 'ף',  'Pe Sofit',       'f as in "fan" — final form of pe (word-finally only); no dagesh, always soft'],
-            ['17', 'כ',  'Kaph (soft)',    'kh as in "Bach" — soft form'],
+            ['17', 'כ',  'Kaf (soft)',    'kh as in "Bach" — soft form'],
             ['18', 'י',  'Yod',            'y as in "yes" — also vowel letter for i'],
             ['19', 'פּ', 'Pe (hard)',      'p as in "pan" — dagesh lene; hard form'],
-            ['20', 'א',  'Aleph',          'silent / glottal stop — guttural; quiescent'],
+            ['20', 'א',  'Alef',          '(silent) — guttural'],
             ['21', 'ן',  'Nun Sofit',      'n — final form of nun (word-finally only)'],
             ['22', 'מ',  'Mem',            'm — has final form mem sofit'],
-            ['23', 'ת',  'Tav (soft)',     't / th — soft form'],
-            ['24', 'כּ', 'Kaph (hard)',   'k as in "king" — dagesh lene; hard form'],
-            ['25', 'ח',  'Chet',           'guttural fricative — kh as in German "Bach"'],
+            ['23', 'ת',  'Taw (soft)',     't / th — soft form'],
+            ['24', 'כּ', 'Kaf (hard)',   'k as in "king" — dagesh lene; hard form'],
+            ['25', 'ח',  'Ḥet',           'ch as in Bach — guttural'],
             ['26', 'ר',  'Resh',           'r (uvular) — resists dagesh forte'],
-            ['27', 'ב',  'Beth (soft)',    'v as in "vine" — soft form'],
-            ['28', 'ט',  'Teth',           'emphatic t — no English equivalent'],
+            ['27', 'ב',  'Bet (soft)',    'v as in "vine" — soft form'],
+            ['28', 'ט',  'Tet',           't as in toy — emphatic'],
             ['29', 'ד',  'Dalet (soft)',   'd / dh — soft form'],
             ['30', 'פ',  'Pe (soft)',      'f as in "fan" — soft form'],
             ['31', 'ג',  'Gimel (soft)',   'g / gh — soft form'],
-            ['32', 'ס',  'Samekh',         's'],
+            ['32', 'ס',  'Samek',         's'],
             ['33', 'צ',  'Tsade',          'emphatic ts — has final form tsade sofit'],
             ['34', 'שׂ', 'Sin',            's as in "sun" — left dot = Sin; same letter as Shin with different dot'],
         ]
@@ -2994,9 +2994,9 @@ class Ch2VowelIdentificationExercise(ExercisePDF):
             'For each Hebrew form shown, identify: (1) Vowel Name, '
             '(2) Vowel Class (A / E / I / O / U / Reduced), '
             '(3) Quantity (Long / Short / Reduced), '
-            '(4) Notes (e.g., mater lectionis present, composite sheva, dagesh forte). '
+            '(4) Notes (e.g., mater lectionis present, composite shewa, dagesh forte). '
             'The letter מ (mem) serves as the carrier consonant for most items; '
-            'א (aleph) is used for word-final he (ה) items.'
+            'א (alef) is used for word-final he (ה) items.'
         )
         rows = [
             ['1',  'מָ', '', '', '', ''],
@@ -3029,20 +3029,20 @@ class Ch2VowelIdentificationExercise(ExercisePDF):
             ['3',  'מִ', 'Hireq', 'I', 'Short', 'Standard short I; single dot below consonant'],
             ['4',  'מֹ', 'Holem', 'O', 'Long', 'Long O; single dot above the letter to the upper left'],
             ['5',  'מֻ', 'Qibbuts', 'U', 'Short', 'Short U; three diagonal dots below consonant'],
-            ['6',  'מְ (word-initial)', 'Vocal Sheva', 'Reduced', 'Reduced', 'Vocal — word must begin with a vowel sound; /ə/'],
-            ['7',  'מַ', 'Patah', 'A', 'Short', 'Standard short A; horizontal bar below consonant'],
+            ['6',  'מְ (word-initial)', 'Vocal Shewa', 'Reduced', 'Reduced', 'Vocal — word must begin with a vowel sound; /ə/'],
+            ['7',  'מַ', 'Pathach', 'A', 'Short', 'Standard short A; horizontal bar below consonant'],
             ['8',  'מֶ', 'Seghol', 'E', 'Short', 'Standard short E; three dots (inverted triangle)'],
             ['9',  'מִי', 'Hireq Yod', 'I', 'Long', 'Hireq with yod mater lectionis; yod is quiescent'],
-            ['10', 'מוֹ', 'Holem Vav', 'O', 'Long', 'Holem with vav mater lectionis; vav is quiescent'],
-            ['11', 'מוּ', 'Shureq', 'U', 'Long', 'Long U; vav with a dot in its center; vav is mater'],
-            ['12', 'מְ (word-final)', 'Silent Sheva', '—', '—', 'Silent — marks the close of the final syllable'],
+            ['10', 'מוֹ', 'Holem Waw', 'O', 'Long', 'Holem with waw mater lectionis; waw is quiescent'],
+            ['11', 'מוּ', 'Shureq', 'U', 'Long', 'Long U; waw with a dot in its center; waw is mater'],
+            ['12', 'מְ (word-final)', 'Silent Shewa', '—', '—', 'Silent — marks the close of the final syllable'],
             ['13', 'מָ (closed, unaccented)', 'Qamets Hatuf', 'O', 'Short', 'Same shape as Qamets; O-class in closed unaccented syllable'],
             ['14', 'מֵי', 'Tsere Yod', 'E', 'Long', 'Tsere with yod mater lectionis; yod is quiescent'],
-            ['15', 'כִּי', 'Hireq Yod', 'I', 'Long', 'Long I with yod mater; dagesh lene in kaph; word = because/that'],
-            ['16', 'מֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva; A-class; used under gutturals'],
-            ['17', 'מֱ', 'Hatef Seghol', 'E', 'Reduced', 'Composite sheva; E-class; used under gutturals'],
-            ['18', 'מֳ', 'Hatef Qamets', 'O', 'Reduced', 'Composite sheva; O-class; rarest hatef sheva'],
-            ['19', 'הֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva under he guttural; most common hatef'],
+            ['15', 'כִּי', 'Hireq Yod', 'I', 'Long', 'Long I with yod mater; dagesh lene in kaf; word = because/that'],
+            ['16', 'מֲ', 'Hateph Pathach', 'A', 'Reduced', 'Composite shewa; A-class; used under gutturals'],
+            ['17', 'מֱ', 'Hateph Seghol', 'E', 'Reduced', 'Composite shewa; E-class; used under gutturals'],
+            ['18', 'מֳ', 'Hateph Qamets', 'O', 'Reduced', 'Composite shewa; O-class; rarest hateph shewa'],
+            ['19', 'הֲ', 'Hateph Pathach', 'A', 'Reduced', 'Composite shewa under he guttural; most common hateph'],
             ['20', 'אָה (word-final he)', 'Qamets He', 'A', 'Long', 'Word-final he as mater; he is quiescent; marks long A (e.g., Torah)'],
             ['21', 'אֶה (word-final he)', 'Seghol He', 'E', 'Short', 'Word-final he as mater; he is quiescent; marks short E'],
             ['22', 'אֵה (word-final he)', 'Tsere He', 'E', 'Long', 'Word-final he as mater; he is quiescent; marks long E'],
@@ -3297,10 +3297,10 @@ class Ch5ArticleAndVavExercise(ExercisePDF):
             ['18', 'וָאֹמַר', '', '', '', '', ''],
         ]
         ans_c = [
-            ['14', 'וְדָבָר', 'No', '—', 'Yes', 'וְ (sheva)', 'and a word'],
+            ['14', 'וְדָבָר', 'No', '—', 'Yes', 'וְ (shewa)', 'and a word'],
             ['15', 'וּמֶלֶךְ', 'No', '—', 'Yes', 'וּ (shureq)', 'and a king'],
             ['16', 'וּבֵן', 'No', '—', 'Yes', 'וּ (shureq)', 'and a son'],
-            ['17', 'וְאִישׁ', 'No', '—', 'Yes', 'וְ (sheva)', 'and a man'],
+            ['17', 'וְאִישׁ', 'No', '—', 'Yes', 'וְ (shewa)', 'and a man'],
             ['18', 'וָאֹמַר', 'No', '—', 'Yes', 'וָ (qamets)', 'and I said / then I said'],
         ]
         self.add_generic_table(headers=hdrs, rows=rows_c, col_ratios=cr, heb_cols=hc,
@@ -3315,11 +3315,11 @@ class Ch5ArticleAndVavExercise(ExercisePDF):
             ['23', 'וְהֶעָם', '', '', '', '', ''],
         ]
         ans_d = [
-            ['19', 'וְהַמֶּלֶךְ', 'Yes', 'הַ + dagesh forte', 'Yes', 'וְ (sheva)', 'and the king'],
-            ['20', 'וְהָאָרֶץ', 'Yes', 'הָ (qamets; no dagesh)', 'Yes', 'וְ (sheva)', 'and the land / and the earth'],
-            ['21', 'וְהָאִישׁ', 'Yes', 'הָ (qamets; no dagesh)', 'Yes', 'וְ (sheva)', 'and the man'],
-            ['22', 'וְהַיּוֹם', 'Yes', 'הַ + dagesh forte', 'Yes', 'וְ (sheva)', 'and the day'],
-            ['23', 'וְהֶעָם', 'Yes', 'הֶ (segol; no dagesh)', 'Yes', 'וְ (sheva)', 'and the people'],
+            ['19', 'וְהַמֶּלֶךְ', 'Yes', 'הַ + dagesh forte', 'Yes', 'וְ (shewa)', 'and the king'],
+            ['20', 'וְהָאָרֶץ', 'Yes', 'הָ (qamets; no dagesh)', 'Yes', 'וְ (shewa)', 'and the land / and the earth'],
+            ['21', 'וְהָאִישׁ', 'Yes', 'הָ (qamets; no dagesh)', 'Yes', 'וְ (shewa)', 'and the man'],
+            ['22', 'וְהַיּוֹם', 'Yes', 'הַ + dagesh forte', 'Yes', 'וְ (shewa)', 'and the day'],
+            ['23', 'וְהֶעָם', 'Yes', 'הֶ (segol; no dagesh)', 'Yes', 'וְ (shewa)', 'and the people'],
         ]
         self.add_generic_table(headers=hdrs, rows=rows_d, col_ratios=cr, heb_cols=hc,
                                show_answers=True, answer_rows=ans_d)
@@ -3365,7 +3365,7 @@ class Ch6PrepositionParsingExercise(ExercisePDF):
         cr = [0.05, 0.12, 0.10, 0.08, 0.22, 0.10, 0.33]
         hc = [1]
 
-        self.add_section_heading('Part A — Inseparable Prepositions: Standard/Sheva Rules (1–8)')
+        self.add_section_heading('Part A — Inseparable Prepositions: Standard/Shewa Rules (1–8)')
         rows_a = [
             ['1', 'בְּדָבָר', '', '', '', '', ''],
             ['2', 'לְמֶלֶךְ', '', '', '', '', ''],
@@ -3377,14 +3377,14 @@ class Ch6PrepositionParsingExercise(ExercisePDF):
             ['8', 'כֶּחָכְמָה', '', '', '', '', ''],
         ]
         ans_a = [
-            ['1', 'בְּדָבָר', 'בְּ', 'בְּ', 'None — default sheva', 'דָּבָר', 'in a word'],
-            ['2', 'לְמֶלֶךְ', 'לְ', 'לְ', 'None — default sheva', 'מֶלֶךְ', 'to a king / for a king'],
-            ['3', 'כְּאִישׁ', 'כְּ', 'כְּ', 'None — default sheva', 'אִישׁ', 'like a man'],
-            ['4', 'בִּשְׁמוּאֵל', 'בִּ', 'בְּ', 'Sheva → hireq: two consecutive shevas', 'שְׁמוּאֵל', 'in/with Samuel'],
-            ['5', 'לִשְׁלֹמֹה', 'לִ', 'לְ', 'Sheva → hireq: two consecutive shevas', 'שְׁלֹמֹה', 'to Solomon'],
-            ['6', 'בֶּאֱמֶת', 'בֶּ', 'בְּ', 'Composite sheva: אֱ (hateph seghol) → prep takes seghol', 'אֱמֶת', 'in truth'],
-            ['7', 'לֵאלֹהִים', 'לֵ', 'לְ', 'Composite sheva matching + lengthening before א to tsere', 'אֱלֹהִים', 'to God'],
-            ['8', 'כֶּחָכְמָה', 'כֶּ', 'כְּ', 'Composite sheva matching; prep takes seghol by assimilation', 'חָכְמָה', 'like wisdom'],
+            ['1', 'בְּדָבָר', 'בְּ', 'בְּ', 'None — default shewa', 'דָּבָר', 'in a word'],
+            ['2', 'לְמֶלֶךְ', 'לְ', 'לְ', 'None — default shewa', 'מֶלֶךְ', 'to a king / for a king'],
+            ['3', 'כְּאִישׁ', 'כְּ', 'כְּ', 'None — default shewa', 'אִישׁ', 'like a man'],
+            ['4', 'בִּשְׁמוּאֵל', 'בִּ', 'בְּ', 'Shewa → hireq: two consecutive shewas', 'שְׁמוּאֵל', 'in/with Samuel'],
+            ['5', 'לִשְׁלֹמֹה', 'לִ', 'לְ', 'Shewa → hireq: two consecutive shewas', 'שְׁלֹמֹה', 'to Solomon'],
+            ['6', 'בֶּאֱמֶת', 'בֶּ', 'בְּ', 'Composite shewa: אֱ (hateph seghol) → prep takes seghol', 'אֱמֶת', 'in truth'],
+            ['7', 'לֵאלֹהִים', 'לֵ', 'לְ', 'Composite shewa matching + lengthening before א to tsere', 'אֱלֹהִים', 'to God'],
+            ['8', 'כֶּחָכְמָה', 'כֶּ', 'כְּ', 'Composite shewa matching; prep takes seghol by assimilation', 'חָכְמָה', 'like wisdom'],
         ]
         self.add_generic_table(headers=hdrs, rows=rows_a, col_ratios=cr, heb_cols=hc,
                                show_answers=True, answer_rows=ans_a)
@@ -3401,13 +3401,13 @@ class Ch6PrepositionParsingExercise(ExercisePDF):
             ['16', 'כָּהָאִישׁ', '', '', '', '', ''],
         ]
         ans_b = [
-            ['9', 'בַּמֶּלֶךְ', 'בַּ', 'בְּ', 'Article fusion: הַ drops; patach transfers; dagesh forte in מ', 'מֶלֶךְ', 'in the king'],
-            ['10', 'לַשָּׁמַיִם', 'לַ', 'לְ', 'Article fusion: הַ drops; patach transfers; dagesh forte in שׁ', 'שָּׁמַיִם', 'to the heavens'],
-            ['11', 'כַּיּוֹם', 'כַּ', 'כְּ', 'Article fusion: הַ drops; patach transfers; dagesh forte in י', 'יּוֹם', 'like the day'],
-            ['12', 'בַּבַּיִת', 'בַּ', 'בְּ', 'Article fusion: הַ drops; patach transfers; dagesh forte in ב', 'בַּיִת', 'in the house'],
-            ['13', 'לָהָר', 'לָ', 'לְ', 'Article fusion (guttural): ה rejects dagesh; patach lengthens → qamets', 'הָר', 'to the mountain'],
-            ['14', 'בָּאָרֶץ', 'בָּ', 'בְּ', 'Article fusion (guttural): א rejects dagesh; patach → qamets', 'אָרֶץ', 'in the earth / in the land'],
-            ['15', 'לָעָם', 'לָ', 'לְ', 'Article fusion (guttural): ע rejects dagesh; patach → qamets', 'עָם', 'to the people'],
+            ['9', 'בַּמֶּלֶךְ', 'בַּ', 'בְּ', 'Article fusion: הַ drops; pathach transfers; dagesh forte in מ', 'מֶלֶךְ', 'in the king'],
+            ['10', 'לַשָּׁמַיִם', 'לַ', 'לְ', 'Article fusion: הַ drops; pathach transfers; dagesh forte in שׁ', 'שָּׁמַיִם', 'to the heavens'],
+            ['11', 'כַּיּוֹם', 'כַּ', 'כְּ', 'Article fusion: הַ drops; pathach transfers; dagesh forte in י', 'יּוֹם', 'like the day'],
+            ['12', 'בַּבַּיִת', 'בַּ', 'בְּ', 'Article fusion: הַ drops; pathach transfers; dagesh forte in ב', 'בַּיִת', 'in the house'],
+            ['13', 'לָהָר', 'לָ', 'לְ', 'Article fusion (guttural): ה rejects dagesh; pathach lengthens → qamets', 'הָר', 'to the mountain'],
+            ['14', 'בָּאָרֶץ', 'בָּ', 'בְּ', 'Article fusion (guttural): א rejects dagesh; pathach → qamets', 'אָרֶץ', 'in the earth / in the land'],
+            ['15', 'לָעָם', 'לָ', 'לְ', 'Article fusion (guttural): ע rejects dagesh; pathach → qamets', 'עָם', 'to the people'],
             ['16', 'כָּהָאִישׁ', 'כָּ', 'כְּ', 'Article fusion (guttural): א rejects dagesh; qamets under כָּ', 'אִישׁ', 'like the man'],
         ]
         self.add_generic_table(headers=hdrs, rows=rows_b, col_ratios=cr, heb_cols=hc,
@@ -4519,7 +4519,7 @@ class Ch15ParsingDrillExercise(ExercisePDF):
         self.add_generic_table(headers=hdrs_ab, rows=rows_a, col_ratios=cr_ab, heb_cols=hc,
                                show_answers=True, answer_rows=ans_a)
 
-        self.add_section_heading('Part B — B-Class (Patach) and Disambiguation (11–20)')
+        self.add_section_heading('Part B — B-Class (Pathach) and Disambiguation (11–20)')
         rows_b = [
             ['11', 'יִשְׁמַע', '', '', '', ''],
             ['12', 'תִּשְׁמַע', '', '', '', ''],
@@ -4797,7 +4797,7 @@ class Ch16WeakFormIdExercise(ExercisePDF):
                 ['4', 'תִּרְאֶה', 'III-ה', '3/2', 's', 'f/m', 'ראה'],
                 ['5', 'יִבֶּן', 'III-ה', '3', 's', 'm', 'בנה'],
             ]),
-            ('Group 2: III-א (Lamed-Aleph) (6–10)', [
+            ('Group 2: III-א (Lamed-Alef) (6–10)', [
                 ['6', 'יִמְצָא', '', '', '', '', ''],
                 ['7', 'תִּקְרָא', '', '', '', '', ''],
                 ['8', 'אֶמְצָא', '', '', '', '', ''],
@@ -5679,7 +5679,7 @@ class Ch20ParsingDrillExercise(ExercisePDF):
             ['22', 'שְׁמֹ֣עַ', 'IC or Imper.', 'שמע', 'Strong B', 'Ambiguous — context determines'],
             ['23', 'לֶ/כֶת',  'IC', 'הלך', 'I-י', 'Cannot be Imperative (which is לֵךְ)'],
             ['24', 'יִשְׁמֹר', 'Imperfect', 'שמר', 'Strong A', 'יִ– prefix = Imperfect'],
-            ['25', 'שָׁמַר',  'Perfect', 'שמר', 'Strong A', 'Qamets + patach = Perfect 3ms'],
+            ['25', 'שָׁמַר',  'Perfect', 'שמר', 'Strong A', 'Qamets + pathach = Perfect 3ms'],
         ]
         self.add_section_heading('Part C — I-י, I-נ, and Disambiguation (16–25)')
         self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
@@ -5898,13 +5898,13 @@ class Ch21ParsingDrillExercise(ExercisePDF):
             ['16', 'מ֥וֹת',    'followed by תָּמוּת',    'IA', 'מות', 'No prep; paired with finite verb = emphatic IA'],
             ['17', 'שָׁמ֣וֹר', 'no context',              'IA', 'שמר', 'Qamets under R1 = IA; IC/Imper. would have shewa'],
             ['18', 'שְׁמֹר',   'no context',              'IC or Imper.', 'שמר', 'Shewa under R1 = IC or Imperative 2ms; ambiguous'],
-            ['19', 'שָׁמַ֣ר',  'no context',              'Perfect 3ms', 'שמר', 'Qamets + patach = Qal Perfect 3ms'],
+            ['19', 'שָׁמַ֣ר',  'no context',              'Perfect 3ms', 'שמר', 'Qamets + pathach = Qal Perfect 3ms'],
             ['20', 'יִשְׁמֹ֣ר', 'no context',             'Imperfect 3ms', 'שמר', 'יִ prefix = Imperfect'],
             ['21', 'זָכ֕וֹר',  'imperatival context',     'Imperatival IA', 'זכר', 'Qamets + holem-waw; stands alone as command'],
             ['22', 'לִ/זְכֹר', 'preceded by כִּי',       'IC', 'זכר', 'לִ prefix = IC; shewa under ז'],
             ['23', 'לֶ/כֶת',   'no context',              'IC', 'הלך', 'I-י contracted IC; IA would be הָל֣וֹךְ'],
             ['24', 'הָל֣וֹךְ', 'followed by וָ/שׁ֑וֹב', 'IA (Manner)', 'הלך', 'Paired IAs describe progressive action'],
-            ['25', 'הָלַ֥ךְ',  'no context',              'Perfect 3ms', 'הלך', 'Qamets + patach; IA is הָל֣וֹךְ (holem-waw)'],
+            ['25', 'הָלַ֥ךְ',  'no context',              'Perfect 3ms', 'הלך', 'Qamets + pathach; IA is הָל֣וֹךְ (holem-waw)'],
         ]
         self.add_section_heading('Part C — Discrimination: IA, IC, Imperative, Imperfect, or Perfect (15–25)')
         self.add_generic_table(hdrC, rowsC, crC, heb_cols=[1],
@@ -6142,7 +6142,7 @@ class Ch22ParsingDrillExercise(ExercisePDF):
         ]
         ansD = [
             ['24', 'שֹׁמֵ֖ר',  'Qal Active Ptc. ms',         'שמר', 'Holem-waw + tsere'],
-            ['25', 'שָׁמַ֣ר',  'Qal Perfect 3ms',             'שמר', 'Qamets + patach'],
+            ['25', 'שָׁמַ֣ר',  'Qal Perfect 3ms',             'שמר', 'Qamets + pathach'],
             ['26', 'יִשְׁמֹ֣ר', 'Qal Imperfect 3ms',          'שמר', 'יִ prefix'],
             ['27', 'שָׁמ֥וּר',  'Qal Passive Ptc. ms',        'שמר', 'Qamets + shureq (qatûl)'],
             ['28', 'שְׁמֹר',   'Qal IC or Imper. 2ms',        'שמר', 'Shewa + holem; ambiguous'],
@@ -7072,11 +7072,11 @@ class Ch31WeakFormIdExercise(ExercisePDF):
                 ['14', 'מְהַלֵּל',   'Ps 18:4',   '', '', ''],
                 ['15', 'יְהַלֵּל',   'Prov 27:2', '', '', ''],
             ], [
-                ['11', 'יְהַלֲלוּ',  'Gen 12:15', 'Wayyiqtol', '3mp', 'הָלַל · Geminate; dagesh in doubled ל; patach in prefix'],
+                ['11', 'יְהַלֲלוּ',  'Gen 12:15', 'Wayyiqtol', '3mp', 'הָלַל · Geminate; dagesh in doubled ל; pathach in prefix'],
                 ['12', 'הַלְלוּ',    'Ps 113:1',  'Imperative', '2mp', 'הָלַל · Geminate; imperative 2mp; dagesh in ל'],
                 ['13', 'הִלֵּל',     'Isa 14:12', 'Qatal',     '3ms', 'הָלַל · Geminate; chiriq under הִ in Piel perfect 3ms'],
                 ['14', 'מְהַלֵּל',   'Ps 18:4',   'Participle', 'ms', 'הָלַל · Geminate; מְ prefix + tsere + dagesh in ל'],
-                ['15', 'יְהַלֵּל',   'Prov 27:2', 'Yiqtol',    '3ms', 'הָלַל · Geminate; patach prefix + tsere + doubled ל'],
+                ['15', 'יְהַלֵּל',   'Prov 27:2', 'Yiqtol',    '3ms', 'הָלַל · Geminate; pathach prefix + tsere + doubled ל'],
             ]),
             ('Group 4: I-nun', [
                 ['16', 'יְנַחֵם',    'Gen 5:29',  '', '', ''],
@@ -7178,7 +7178,7 @@ class Ch32PielPualContrastExercise(ExercisePDF):
             'Pual diagnostic: Qibbuts under R1 + Dagesh Forte in R2 '
             '(ר rejects dagesh → compensatory lengthening to qamets: מְבֹרָךְ).  '
             'Hophal: qibbuts under prefix consonant OR shureq for I-yod/Biconsonantal.  '
-            'Hiphil: Hireq under הִ (perfect); patach under prefix (yiqtol/wayyiqtol).'
+            'Hiphil: Hireq under הִ (perfect); pathach under prefix (yiqtol/wayyiqtol).'
         )
 
         hdr_a = ['#', 'Root', 'Form A', 'Stem A', 'Form B', 'Stem B', 'Translation A / B']
@@ -7222,11 +7222,11 @@ class Ch32PielPualContrastExercise(ExercisePDF):
             ['7',  'תְּבָרֵךְ',  'Piel',   'Yiqtol',     '2ms', 'בָּרַךְ · tsere under prefix = Piel'],
             ['8',  'יֻלַּד',      'Pual',   'Qatal',      '3ms', 'יָלַד · qibbuts + dagesh in ל = Pual'],
             ['9',  'יְכֻלּוּ',   'Pual',   'Wayyiqtol',  '3mp', 'כָּלָה · qibbuts + dagesh in כּ; III-he 3mp'],
-            ['10', 'יְכַסֶּה',   'Piel',   'Yiqtol',     '3ms', 'כָּסָה · tsere (patach) prefix = Piel'],
+            ['10', 'יְכַסֶּה',   'Piel',   'Yiqtol',     '3ms', 'כָּסָה · tsere (pathach) prefix = Piel'],
             ['11', 'יְכֻסּוּ',   'Pual',   'Wayyiqtol',  '3mp', 'כָּסָה · qibbuts + dagesh in כּ = Pual'],
-            ['12', 'יְבָרֶךְ',   'Piel',   'Wayyiqtol',  '3ms', 'בָּרַךְ · patach prefix + tsere = Piel'],
+            ['12', 'יְבָרֶךְ',   'Piel',   'Wayyiqtol',  '3ms', 'בָּרַךְ · pathach prefix + tsere = Piel'],
             ['13', 'יֻּגַּד',    'Hophal', 'Wayyiqtol',  '3ms', 'נָגַד · qibbuts under ו + dagesh = Hophal I-nun'],
-            ['14', 'וַיְקַדֵּשׁ', 'Piel',  'Wayyiqtol',  '3ms', 'קָדַשׁ · patach-tsere pattern = Piel'],
+            ['14', 'וַיְקַדֵּשׁ', 'Piel',  'Wayyiqtol',  '3ms', 'קָדַשׁ · pathach-tsere pattern = Piel'],
             ['15', 'יְקֻדַּשׁ',  'Pual',   'Yiqtol',     '3ms', 'קָדַשׁ · qibbuts + dagesh = Pual'],
             ['16', 'שִׁנֵּן',    'Piel',   'Perfect',    '3ms', 'שָׁנַן · chiriq + tsere + dagesh in נּ = Piel'],
             ['17', 'קֻדַּשׁ',    'Pual',   'Perfect',    '3ms', 'קָדַשׁ · qibbuts + dagesh = Pual perfect'],
@@ -7330,7 +7330,7 @@ class Ch33WeakFormIdExercise(ExercisePDF):
                 ['11', 'אֹרָשָׂה',  'Exo 22:15', 'Qatal',     '3fs', 'אָרַשׂ · I-aleph; holem (compensatory; ר rejects dagesh) + 3fs'],
                 ['12', 'עֻנָּה',    'Isa 51:21', 'Qatal',     '3fs', 'עָנָה · I-gutt (ע) + III-he; qibbuts + dagesh in נּ'],
                 ['13', 'יֻאַר',     'Num 22:6',  'Yiqtol',    '3ms', 'אָרַר · I-aleph; aleph rejects dagesh → qibbuts remains'],
-                ['14', 'יְאָרֵר',   'Gen 12:3',  'Yiqtol',    '3ms', 'אָרַר · Piel (not Pual): patach prefix + tsere + dagesh'],
+                ['14', 'יְאָרֵר',   'Gen 12:3',  'Yiqtol',    '3ms', 'אָרַר · Piel (not Pual): pathach prefix + tsere + dagesh'],
             ]),
         ]
 
@@ -7507,11 +7507,11 @@ class Ch35WeakFormIdExercise(ExercisePDF):
                 ['9',  'הִתְעַנִּי',   'Gen 16:9',  '', '', ''],
                 ['10', 'וַיִּתְחַזֵּק', 'Exo 7:13', '', '', ''],
             ], [
-                ['6',  'מִתְהַלֵּךְ',  'Gen 3:8',   'Participle',  'ms', 'הָלַךְ · I-gutt (ה); hateph-patach under ה'],
-                ['7',  'יִּתְהַלֵּךְ', 'Gen 5:22',  'Wayyiqtol',   '3ms', 'הָלַךְ · same root; hateph-patach + tsere'],
+                ['6',  'מִתְהַלֵּךְ',  'Gen 3:8',   'Participle',  'ms', 'הָלַךְ · I-gutt (ה); hateph-pathach under ה'],
+                ['7',  'יִּתְהַלֵּךְ', 'Gen 5:22',  'Wayyiqtol',   '3ms', 'הָלַךְ · same root; hateph-pathach + tsere'],
                 ['8',  'יִּתְחַבֵּא',  'Gen 3:8',   'Wayyiqtol',   '3ms', 'חָבָא · I-gutt (ח) + III-aleph; hateph under ח'],
                 ['9',  'הִתְעַנִּי',   'Gen 16:9',  'Imperative',  '2fs', 'עָנָה · I-gutt (ע) + III-he; hateph under ע'],
-                ['10', 'וַיִּתְחַזֵּק', 'Exo 7:13', 'Wayyiqtol',   '3ms', 'חָזַק · I-gutt (ח); hateph-patach; dagesh in ז'],
+                ['10', 'וַיִּתְחַזֵּק', 'Exo 7:13', 'Wayyiqtol',   '3ms', 'חָזַק · I-gutt (ח); hateph-pathach; dagesh in ז'],
             ]),
             ('Group 3: Sibilant Metathesis (R1 = שׁ/שׂ/ס/צ)', [
                 ['11', 'יִּשְׁתַּחוּ',  'Gen 19:1',  '', '', ''],
@@ -7536,7 +7536,7 @@ class Ch35WeakFormIdExercise(ExercisePDF):
                 ['16', 'מִתְנַחֵם',    'Gen 27:42', 'Participle', 'ms', 'נָחַם · I-nun RETAINED (not assimilated) in Hithpael'],
                 ['17', 'יִּתְנַחֲמוּ', 'Gen 37:35', 'Wayyiqtol', '3mp', 'נָחַם · same root; 3mp ending; nun retained'],
                 ['18', 'יִּתְנַכְּלוּ', 'Gen 37:18', 'Wayyiqtol', '3mp', 'נָכַל · I-nun retained; dagesh in כּ = Piel-pattern R2'],
-                ['19', 'אֶתְנַהֲלָה',  'Gen 33:14', 'Cohortative', '1cs', 'נָהַל · I-nun retained; hateph-patach under ה (I-gutt?)'],
+                ['19', 'אֶתְנַהֲלָה',  'Gen 33:14', 'Cohortative', '1cs', 'נָהַל · I-nun retained; hateph-pathach under ה (I-gutt?)'],
                 ['20', 'מִתְנַדְּבִים', 'Ezr 1:6',  'Participle', 'mp', 'נָדַב · I-nun retained; plural מִתְנַ + dagesh in ד'],
             ]),
         ]
@@ -8042,7 +8042,7 @@ def build_ch24_niphal_paradigm_drill(out_dir: Optional[str] = None) -> str:
 class Ch26HiphilParadigmDrill(ExercisePDF):
     _instructions = (
         'Write the complete Hiphil paradigm for the root קטל. '
-        'Key: הִ prefix + chiriq in Perfect; patach under prefix in Imperfect; '
+        'Key: הִ prefix + chiriq in Perfect; pathach under prefix in Imperfect; '
         'מַ prefix in Participle.'
     )
 
@@ -9385,10 +9385,10 @@ class Ch25QalNiphalContrastExercise(ExercisePDF):
         ]
         ans_b = [
             ['6',  '', '', '', '', 'it was revealed — Passive or Reflexive | Gen 35:7: "God was revealed / revealed himself"'],
-            ['7',  '', '', '', '', 'he went up — Simple Action | Niphal of עלה overlaps with Qal; note patach-furtive'],
+            ['7',  '', '', '', '', 'he went up — Simple Action | Niphal of עלה overlaps with Qal; note pathach-furtive'],
             ['8',  '', '', '', '', 'he appeared — Passive/Reflexive | Gen 12:7: "the LORD appeared to Abram"'],
             ['9',  '', '', '', '', 'it will be built — Passive | dagesh forte in בּ + ֶה ending'],
-            ['10', '', '', '', '', 'what has been done — Passive | Gen 20:9; patach-furtive before ה'],
+            ['10', '', '', '', '', 'what has been done — Passive | Gen 20:9; pathach-furtive before ה'],
         ]
         ans_c = [
             ['11', '', '', '', '', 'it was established — Passive | Niphal of קום; hollow root preserves ō vowel'],
@@ -9615,7 +9615,7 @@ class Ch28StemIdDrill(ExercisePDF):
             'Hophal Perfect: הָ prefix (qamets-hatuf = o-class).  '
             'Hophal Imperfect: יָ prefix.  '
             'Hophal Participle: הָ/הָשׁ prefix with qamets.  '
-            'Hiphil: הִ prefix in Perfect; patach under prefix in Imperfect.'
+            'Hiphil: הִ prefix in Perfect; pathach under prefix in Imperfect.'
         )
         hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root', 'Translation']
         cr   = [0.04, 0.16, 0.11, 0.18, 0.10, 0.09, 0.32]

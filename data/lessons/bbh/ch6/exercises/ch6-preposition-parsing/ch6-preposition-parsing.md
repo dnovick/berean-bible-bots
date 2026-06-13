@@ -16,7 +16,7 @@
 
 ---
 
-## Part A — Inseparable Prepositions: Standard and Sheva Rules (Items 1–8)
+## Part A — Inseparable Prepositions: Standard and Shewa Rules (Items 1–8)
 
 | # | Hebrew | Preposition | Base Form | Change / Reason | Object | Translation |
 |---|---|---|---|---|---|---|
@@ -73,20 +73,20 @@
 
 ## Answer Key
 
-### Part A — Standard and Sheva Rules
+### Part A — Standard and Shewa Rules
 
 | # | Hebrew | Preposition | Base Form | Change / Reason | Object | Translation |
 |---|---|---|---|---|---|---|
-| 1 | בְּדָבָר | בְּ | בְּ | None — default sheva before normal consonant | דָּבָר | in a word / with a word |
-| 2 | לְמֶלֶךְ | לְ | לְ | None — default sheva before normal consonant | מֶלֶךְ | to a king / for a king |
-| 3 | כְּאִישׁ | כְּ | כְּ | None — default sheva before normal consonant (א is quiescent here) | אִישׁ | like a man |
-| 4 | בִּשְׁמוּאֵל | בִּ | בְּ | Sheva → hireq: שְׁ has a sheva; two consecutive shevas not permitted; first sheva upgrades to hireq | שְׁמוּאֵל | in/with Samuel |
-| 5 | לִשְׁלֹמֹה | לִ | לְ | Sheva → hireq: שְׁ has a sheva; two consecutive shevas not permitted | שְׁלֹמֹה | to Solomon |
-| 6 | בֶּאֱמֶת | בֶּ | בְּ | Composite sheva matching: אֱ has hateph seghol (ֱ); prep takes seghol (ֶ) to match vowel class | אֱמֶת | in truth |
-| 7 | לֵאלֹהִים | לֵ | לְ | Composite sheva matching: אֱ has hateph seghol under א of אֱלֹהִים; prep takes the matching seghol, then lengthens before א to tsere | אֱלֹהִים | to God |
-| 8 | כֶּחָכְמָה | כֶּ | כְּ | Composite sheva matching: ח has hateph patach in some forms; the prep takes patach (ַ) class; note: standard form before ח with vocal shewa may also give seghol by assimilation | חָכְמָה | like wisdom |
+| 1 | בְּדָבָר | בְּ | בְּ | None — default shewa before normal consonant | דָּבָר | in a word / with a word |
+| 2 | לְמֶלֶךְ | לְ | לְ | None — default shewa before normal consonant | מֶלֶךְ | to a king / for a king |
+| 3 | כְּאִישׁ | כְּ | כְּ | None — default shewa before normal consonant (א is quiescent here) | אִישׁ | like a man |
+| 4 | בִּשְׁמוּאֵל | בִּ | בְּ | Shewa → hireq: שְׁ has a shewa; two consecutive shewas not permitted; first shewa upgrades to hireq | שְׁמוּאֵל | in/with Samuel |
+| 5 | לִשְׁלֹמֹה | לִ | לְ | Shewa → hireq: שְׁ has a shewa; two consecutive shewas not permitted | שְׁלֹמֹה | to Solomon |
+| 6 | בֶּאֱמֶת | בֶּ | בְּ | Composite shewa matching: אֱ has hateph seghol (ֱ); prep takes seghol (ֶ) to match vowel class | אֱמֶת | in truth |
+| 7 | לֵאלֹהִים | לֵ | לְ | Composite shewa matching: אֱ has hateph seghol under א of אֱלֹהִים; prep takes the matching seghol, then lengthens before א to tsere | אֱלֹהִים | to God |
+| 8 | כֶּחָכְמָה | כֶּ | כְּ | Composite shewa matching: ח has hateph patach in some forms; the prep takes patach (ַ) class; note: standard form before ח with vocal shewa may also give seghol by assimilation | חָכְמָה | like wisdom |
 
-> **Notes on items 6–8:** When the first consonant of the following word is a guttural bearing a **composite sheva (hateph vowel)**, the inseparable preposition takes the simple vowel that matches the class of that composite sheva: hateph patach → patach (ַ); hateph seghol → seghol (ֶ); hateph qamets → qamets (ָ).
+> **Notes on items 6–8:** When the first consonant of the following word is a guttural bearing a **composite shewa (hateph vowel)**, the inseparable preposition takes the simple vowel that matches the class of that composite shewa: hateph patach → patach (ַ); hateph seghol → seghol (ֶ); hateph qamets → qamets (ָ).
 
 ---
 
