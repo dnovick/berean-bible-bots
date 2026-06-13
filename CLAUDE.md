@@ -324,3 +324,8 @@ Always use these exact BBH (Pratico & Van Pelt) spellings in all exercises, less
 - **Output subdirectory:** every word/phrase study lives in its own named subdirectory (e.g. `reports/both/word_studies/<term>/`), never flat in the parent folder.
 - **Notebooks:** when adding new features, update relevant Jupyter notebooks to demonstrate them.
 - **Long report structure:** any report with more than ~5 `##` sections must open with a `## Contents` TOC (anchor links to every `##` section) followed immediately by a `## Key Observations` summary — before the body sections.
+- **Overview page links:** every new report must be added to **all three** of the following index pages (never just one):
+  1. `mkdocs_src/reports/index.md` — the top-level Quick Links list, under the appropriate section heading
+  2. `mkdocs_src/reports/<corpus>/index.md` — the corpus-level index table (e.g. `both/index.md`, `ot/index.md`, `nt/index.md`)
+  3. `mkdocs_src/reports/<corpus>/<category>/index.md` — the category index table (e.g. `both/word_studies/index.md`)
+  Also add the report to `mkdocs_nav.yml` under the correct nav section.
