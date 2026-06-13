@@ -1,0 +1,48 @@
+name: Slack — Issue Closed
+
+on:
+  issues:
+    types: [closed]
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Post to #web-announce
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          ISSUE_TITLE: ${{ github.event.issue.title }}
+          ISSUE_URL: ${{ github.event.issue.html_url }}
+          ISSUE_USER: ${{ github.event.issue.user.login }}
+          CLOSED_BY: ${{ github.event.sender.login }}
+        run: |
+          jq -n \
+            --arg number "$ISSUE_NUMBER" \
+            --arg title  "$ISSUE_TITLE" \
+            --arg url    "$ISSUE_URL" \
+            --arg opener "$ISSUE_USER" \
+            --arg closer "$CLOSED_BY" \
+            '{
+              blocks: [
+                {
+                  type: "section",
+                  text: {
+                    type: "mrkdwn",
+                    text: (":white_check_mark: *Issue #" + $number + " closed*\n<" + $url + "|" + $title + ">")
+                  }
+                },
+                {
+                  type: "context",
+                  elements: [
+                    {
+                      type: "mrkdwn",
+                      text: ("Opened by *" + $opener + "* · Closed by *" + $closer + "*")
+                    }
+                  ]
+                }
+              ]
+            }' \
+          | curl -s -X POST "$SLACK_WEBHOOK_URL" \
+              -H 'Content-type: application/json' \
+              --data @-
