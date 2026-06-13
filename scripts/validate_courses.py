@@ -111,6 +111,16 @@ def _check_session_yml(
 
     session_dir = session_yml.parent
 
+    # Lesson entry
+    lesson = data.get("lesson") or {}
+    if lesson:
+        if not isinstance(lesson, dict):
+            _err(errors, session_yml, "lesson must be a mapping with 'name' and 'url'")
+        else:
+            for field in ("name", "url"):
+                if not lesson.get(field):
+                    _err(errors, session_yml, f"lesson missing required field: {field!r}")
+
     # Reading entries
     readings_raw = data.get("reading") or []
     readings = [readings_raw] if isinstance(readings_raw, dict) else list(readings_raw)

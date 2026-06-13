@@ -393,6 +393,7 @@ def render_session_page(
     sections = session.get("sections") or []
     notes = (session.get("notes") or "").strip()
     files = session.get("files") or []
+    lesson = session.get("lesson") or {}
     readings_raw = session.get("reading") or []
     # Normalize: accept a single dict or a list
     readings: list[dict] = (
@@ -436,7 +437,12 @@ def render_session_page(
     if chapter:
         lines += ["## Lesson Content", "", chapter_link_md(textbook, chapter), ""]
 
-    # Build the combined agenda: explicit items first, then auto-appended readings
+    # Build combined agenda: explicit items, then lesson, then readings
+    lesson_agenda = (
+        [{"title": lesson.get("name", ""), "url": lesson.get("url", "")}]
+        if lesson.get("name") and lesson.get("url")
+        else []
+    )
     reading_agenda = [
         {
             "title": f"Reading: {r.get('name', '')}",
@@ -445,7 +451,7 @@ def render_session_page(
         for r in readings
         if r.get("name") and r.get("file")
     ]
-    full_agenda = list(agenda) + reading_agenda
+    full_agenda = list(agenda) + lesson_agenda + reading_agenda
 
     if full_agenda:
         lines += ["## Agenda", ""]

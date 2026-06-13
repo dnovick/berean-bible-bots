@@ -58,6 +58,11 @@ _SESSION_YML_TEMPLATE = """\
 #   - title:  item label (required)
 #     url:    optional link (internal path or external URL)
 #
+# lesson:   optional lesson linked in the agenda (auto-appended after explicit agenda items,
+#           before reading items)
+#   name:   display label for the agenda link (required if lesson is set)
+#   url:    path or URL to the lesson page (required if lesson is set)
+#
 # sections: freeform content blocks, each rendered as ## Heading + markdown body
 #   - heading: section title
 #     content: inline markdown text (use | for multi-line)
