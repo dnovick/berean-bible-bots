@@ -111,6 +111,21 @@ def _check_session_yml(
 
     session_dir = session_yml.parent
 
+    # Reading entries
+    readings_raw = data.get("reading") or []
+    readings = [readings_raw] if isinstance(readings_raw, dict) else list(readings_raw)
+    for reading in readings:
+        if not isinstance(reading, dict):
+            continue
+        for field in ("name", "description", "passage"):
+            if not reading.get(field):
+                _err(errors, session_yml, f"reading entry missing required field: {field!r}")
+        ref = reading.get("file")
+        if not ref:
+            _err(errors, session_yml, "reading entry missing required field: 'file'")
+        elif not (session_dir / ref).exists():
+            _err(errors, session_yml, f"reading file not found: {ref!r}")
+
     # File references in sections — warn (file may be planned but not yet written)
     for section in data.get("sections") or []:
         if not isinstance(section, dict):

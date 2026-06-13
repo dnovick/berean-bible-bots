@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Reading the Shema — Session 2 (Letter Recognition)</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 860px; margin: 2rem auto; padding: 0 1.5rem; color: #222; background: #fff; }
+  header { background: #1a2744; color: #fff; padding: 1rem 1.5rem; border-radius: .4rem; margin-bottom: 2rem; }
+  header h1 { margin: 0 0 .2rem; font-size: 1.3rem; font-weight: bold; }
+  header p  { margin: 0; font-size: .88rem; opacity: .8; }
+  .label    { font-size: .78rem; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; color: #888; margin-bottom: .3rem; }
+  .ref      { font-size: 1rem; color: #1a2744; font-weight: bold; margin-bottom: 1.5rem; }
+  .instr    { background: #f8f8f0; border-left: 4px solid #c9a94a; padding: .75rem 1rem; margin: 1.2rem 0 2rem; font-size: .93rem; line-height: 1.6; }
+  .verse-wrap { text-align: center; margin: 2.5rem 0; }
+  /* Letter-spaced display: each letter cluster in its own inline-block with generous spacing */
+  .verse-spaced {
+    direction: rtl; unicode-bidi: embed;
+    font-family: 'SBL Hebrew', 'Arial Hebrew', 'David', 'Times New Roman', serif;
+    font-size: 3rem; line-height: 2.2; color: #111;
+    display: block; text-align: center;
+  }
+  .word  { display: inline-block; margin: 0 .6em; }
+  .hlet  { display: inline-block; margin: 0 .35em; }
+  /* word boundary marker (spacing between words is handled by .word margin) */
+  .eng      { margin-top: 2rem; padding-top: 1.2rem; border-top: 1px solid #e0e0e0; font-style: italic; font-size: .96rem; color: #555; text-align: center; line-height: 1.7; }
+  .eng cite { display: block; margin-top: .3rem; font-style: normal; font-size: .84rem; color: #888; }
+  @media print { header { -webkit-print-color-adjust: exact; print-color-adjust: exact; } }
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Reading the Shema — Session 2</h1>
+  <p>BBH 2026.1 &nbsp;·&nbsp; Letter Recognition</p>
+</header>
+
+<div class="label">Passage</div>
+<div class="ref">Deuteronomy 6:4</div>
+
+<div class="instr">
+  <strong>Instructions:</strong> Each letter is shown with wide spacing between it and its neighbors.
+  Point to each letter in turn, name it aloud, and identify its vowel point.
+  Work right-to-left across each word, then move to the next word.
+</div>
+
+<div class="verse-wrap">
+  <div class="verse-spaced">
+    <!--
+      Words in RTL order (right to left on screen):
+        שְׁמַע  יִשְׂרָאֵל  יְהוָה  אֱלֹהֵינוּ  יְהוָה  אֶחָד
+      Each .word block contains .hlet spans for every letter+diacritic cluster.
+    -->
+
+    <!-- אֶחָד (echad) — rightmost word when viewed RTL = written last in HTML for RTL flow -->
+    <!-- Note: in RTL block, first .word in DOM appears on the right -->
+
+    <span class="word"><!-- שְׁמַע shema -->
+      <span class="hlet">שְׁ</span><span class="hlet">מַ</span><span class="hlet">ע</span>
+    </span>
+
+    <span class="word"><!-- יִשְׂרָאֵל yisrael -->
+      <span class="hlet">יִ</span><span class="hlet">שְׂ</span><span class="hlet">רָ</span><span class="hlet">אֵ</span><span class="hlet">ל</span>
+    </span>
+
+    <span class="word"><!-- יְהוָה yhwh -->
+      <span class="hlet">יְ</span><span class="hlet">ה</span><span class="hlet">וָ</span><span class="hlet">ה</span>
+    </span>
+
+    <span class="word"><!-- אֱלֹהֵינוּ eloheinu -->
+      <span class="hlet">אֱ</span><span class="hlet">לֹ</span><span class="hlet">הֵ</span><span class="hlet">י</span><span class="hlet">נוּ</span>
+    </span>
+
+    <span class="word"><!-- יְהוָה yhwh -->
+      <span class="hlet">יְ</span><span class="hlet">ה</span><span class="hlet">וָ</span><span class="hlet">ה</span>
+    </span>
+
+    <span class="word"><!-- אֶחָד echad -->
+      <span class="hlet">אֶ</span><span class="hlet">חָ</span><span class="hlet">ד</span>
+    </span>
+
+    ׃
+  </div>
+</div>
+
+<div class="eng">
+  "Hear, O Israel: The <span style="font-variant:small-caps">Lord</span> our God is one <span style="font-variant:small-caps">Lord</span>."
+  <cite>— Deuteronomy 6:4 (KJV)</cite>
+</div>
+
+</body>
+</html>
