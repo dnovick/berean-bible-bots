@@ -30,6 +30,10 @@ instructor: Preston Brown
 
 agenda:
 
+lesson:
+  name: "BBH 3 - Syllabification and Pronunciation"
+  url: "/lessons/hebrew/ch3/"
+
 reading:
   - name: "The Shema"
     description: "Students read the full verse aloud. By now you can identify every letter and vowel point in Deut 6:4."

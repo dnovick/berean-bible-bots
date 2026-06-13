@@ -377,7 +377,6 @@ def render_session_page(
     """
     cid = course["id"]
     name = course.get("name", cid)
-    textbook = course.get("textbook", "")
     if course_dir is None:
         course_dir = _COURSES_DATA_DIR / cid
     sess_slug = session_slug(session)
@@ -388,7 +387,6 @@ def render_session_page(
     date_str = format_date(session.get("date"))
     instructor = (session.get("instructor") or "").strip()
     recording = (session.get("recording") or "").strip()
-    chapter = session.get("chapter")
     agenda = session.get("agenda") or []
     sections = session.get("sections") or []
     notes = (session.get("notes") or "").strip()
@@ -433,9 +431,6 @@ def render_session_page(
         lines.append(f"**Recording:** [Watch]({recording})  ")
 
     lines.append("")
-
-    if chapter:
-        lines += ["## Lesson Content", "", chapter_link_md(textbook, chapter), ""]
 
     # Build combined agenda: explicit items, then lesson, then readings
     lesson_agenda = (

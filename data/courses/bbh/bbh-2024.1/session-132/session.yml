@@ -23,11 +23,13 @@ focus: "Piel Strong Verbs"
 instructor: "David Novick"
 chapter: 30
 agenda:
-  - title: "Piel Strong Verbs - BBH 30"
   - title: "References"
+
+lesson:
+  name: "BBH 30 - Piel Strong Verbs"
+  url: "/lessons/hebrew/ch30/"
+
 sections:
-  - heading: "Piel Strong Verbs - BBH 30"
-    file: "piel-strong-verbs.md"
   - heading: "References"
     file: "references.md"
 notes: ""

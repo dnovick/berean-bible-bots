@@ -30,6 +30,10 @@ instructor: "Preston Brown"
 agenda:
   - title: BBH.1 - The Hebrew Alphabet
 
+lesson:
+  name: "BBH 1 - Hebrew Alphabet"
+  url: "/lessons/hebrew/ch1/"
+
 reading:
   - name: "The Shema"
     description: "Letter recognition drill. Each letter is shown with wide spacing. Identify each letter aloud."

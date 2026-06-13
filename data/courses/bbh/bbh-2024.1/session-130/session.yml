@@ -24,13 +24,15 @@ instructor: "David Novick"
 chapter: 28
 agenda:
   - title: "BBB Updates"
-  - title: "Hophal Strong Verbs - BBH 28"
   - title: "References"
+
+lesson:
+  name: "BBH 28 - Hophal Strong Verbs"
+  url: "https://bereanbiblebots.com/lessons/hebrew/ch28/"
+
 sections:
   - heading: "BBB Updates"
     file: "bbb-updates.md"
-  - heading: "Hophal Strong Verbs - BBH 28"
-    file: "hophal-strong-verbs.md"
   - heading: "References"
     file: "references.md"
 notes: ""

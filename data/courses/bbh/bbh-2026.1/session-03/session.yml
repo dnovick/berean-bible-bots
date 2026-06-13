@@ -30,6 +30,10 @@ instructor: Preston Brown
 
 agenda:
 
+lesson:
+  name: "BBH 2 - Hebrew Vowels"
+  url: "/lessons/hebrew/ch2/"
+
 reading:
   - name: "The Shema"
     description: "Syllable reading drill. The verse is broken at syllable boundaries with hyphens. Read each syllable aloud."
