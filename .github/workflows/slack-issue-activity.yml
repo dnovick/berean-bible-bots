@@ -1,35 +1,41 @@
-name: Slack — Issue Closed
+name: Slack — Issue Activity
 
 on:
   issues:
-    types: [closed]
+    types: [opened, edited, closed]
 
 jobs:
   notify:
     runs-on: ubuntu-latest
     steps:
-      - name: Post to #web-announce
+      - name: Post to Slack
         env:
           SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }}
           ISSUE_NUMBER: ${{ github.event.issue.number }}
           ISSUE_TITLE: ${{ github.event.issue.title }}
           ISSUE_URL: ${{ github.event.issue.html_url }}
-          ISSUE_USER: ${{ github.event.issue.user.login }}
-          CLOSED_BY: ${{ github.event.sender.login }}
+          ACTION: ${{ github.event.action }}
+          ACTOR: ${{ github.event.sender.login }}
         run: |
+          case "$ACTION" in
+            opened)  EMOJI=":new:";              VERB="opened" ;;
+            edited)  EMOJI=":pencil2:";          VERB="edited" ;;
+            closed)  EMOJI=":white_check_mark:"; VERB="closed" ;;
+          esac
           jq -n \
             --arg number "$ISSUE_NUMBER" \
             --arg title  "$ISSUE_TITLE" \
             --arg url    "$ISSUE_URL" \
-            --arg opener "$ISSUE_USER" \
-            --arg closer "$CLOSED_BY" \
+            --arg emoji  "$EMOJI" \
+            --arg verb   "$VERB" \
+            --arg actor  "$ACTOR" \
             '{
               blocks: [
                 {
                   type: "section",
                   text: {
                     type: "mrkdwn",
-                    text: (":white_check_mark: *Issue #" + $number + " closed*\n<" + $url + "|" + $title + ">")
+                    text: ($emoji + " *Issue #" + $number + " " + $verb + "*\n<" + $url + "|" + $title + ">")
                   }
                 },
                 {
@@ -37,7 +43,7 @@ jobs:
                   elements: [
                     {
                       type: "mrkdwn",
-                      text: ("Opened by *" + $opener + "* · Closed by *" + $closer + "*")
+                      text: (($verb | ascii_upcase[:1]) + $verb[1:] + " by *" + $actor + "*")
                     }
                   ]
                 }
