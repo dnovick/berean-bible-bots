@@ -620,12 +620,27 @@ def main() -> None:
                         subpage_path.write_text(content)
                         print(f"  Wrote {subpage_path.relative_to(_REPO_ROOT)}")
 
+                sess_data_dir = course_dir / session_slug(session)
+                files_out_dir = sessions_out / session_slug(session)
+
+                # Collect all session-level files that need copying:
+                # - files: download attachments
+                # - reading: HTML exercise files
                 sess_files = session.get("files") or []
-                if sess_files:
-                    sess_data_dir = course_dir / session_slug(session)
-                    files_out_dir = sessions_out / session_slug(session)
+                readings_raw = session.get("reading") or []
+                reading_list = (
+                    [readings_raw] if isinstance(readings_raw, dict)
+                    else list(readings_raw)
+                )
+                reading_files = [
+                    {"file": r.get("file", "")}
+                    for r in reading_list
+                    if r.get("file")
+                ]
+                all_copy_files = sess_files + reading_files
+                if all_copy_files:
                     files_out_dir.mkdir(parents=True, exist_ok=True)
-                    for f in sess_files:
+                    for f in all_copy_files:
                         src_name = f.get("file", "")
                         if not src_name:
                             continue
