@@ -2888,7 +2888,7 @@ class Ch1LetterRecognitionExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
             'For each Hebrew letter shown, provide: (1) Letter Name, (2) Sound.\n'
-            'All 22 base consonants, 5 sofit (final) forms, and 6 begadkephat letters '
+            'All 22 base consonants (including Sin), 5 sofit (final) forms, and 6 begadkephat letters '
             'with dagesh lene are included, presented in mixed order.'
         )
         # Mixed order: standard letters, sofit forms, and begadkephat hard forms interspersed
@@ -2926,6 +2926,7 @@ class Ch1LetterRecognitionExercise(ExercisePDF):
             ['31', 'ג',  '', ''],
             ['32', 'ס',  '', ''],
             ['33', 'צ',  '', ''],
+            ['34', 'שׂ', '', ''],
         ]
         ans = [
             ['1',  'ק',  'Qoph',          'q (uvular); no English equivalent'],
@@ -2943,7 +2944,7 @@ class Ch1LetterRecognitionExercise(ExercisePDF):
             ['13', 'שׁ', 'Shin',           'sh as in "shoe" — right dot = Shin'],
             ['14', 'דּ', 'Dalet (hard)',   'd as in "day" — dagesh lene; hard form'],
             ['15', 'ו',  'Waw',            'w (consonantal) — also vowel letter for o, u'],
-            ['16', 'ף',  'Pe Sofit',       'p / f — final form of pe (word-finally only)'],
+            ['16', 'ף',  'Pe Sofit',       'f as in "fan" — final form of pe (word-finally only); no dagesh, always soft'],
             ['17', 'כ',  'Kaph (soft)',    'kh as in "Bach" — soft form'],
             ['18', 'י',  'Yod',            'y as in "yes" — also vowel letter for i'],
             ['19', 'פּ', 'Pe (hard)',      'p as in "pan" — dagesh lene; hard form'],
@@ -2961,6 +2962,7 @@ class Ch1LetterRecognitionExercise(ExercisePDF):
             ['31', 'ג',  'Gimel (soft)',   'g / gh — soft form'],
             ['32', 'ס',  'Samekh',         's'],
             ['33', 'צ',  'Tsade',          'emphatic ts — has final form tsade sofit'],
+            ['34', 'שׂ', 'Sin',            's as in "sun" — left dot = Sin; same letter as Shin with different dot'],
         ]
         self.add_generic_table(
             headers=['#', 'Letter', 'Name', 'Sound'],
@@ -2993,7 +2995,8 @@ class Ch2VowelIdentificationExercise(ExercisePDF):
             '(2) Vowel Class (A / E / I / O / U / Reduced), '
             '(3) Quantity (Long / Short / Reduced), '
             '(4) Notes (e.g., mater lectionis present, composite sheva, dagesh forte). '
-            'The letter מ (mem) serves as the carrier consonant for most items.'
+            'The letter מ (mem) serves as the carrier consonant for most items; '
+            'א (aleph) is used for word-final he (ה) items.'
         )
         rows = [
             ['1',  'מָ', '', '', '', ''],
@@ -3010,17 +3013,15 @@ class Ch2VowelIdentificationExercise(ExercisePDF):
             ['12', 'מְ (word-final)', '', '', '', ''],
             ['13', 'מָ (closed, unaccented)', '', '', '', ''],
             ['14', 'מֵי', '', '', '', ''],
-            ['15', 'כִּי', '', '', '', ''],
-            ['16', 'מָ (= Qamets Hatuf)', '', '', '', ''],
-            ['17', 'מֲ', '', '', '', ''],
-            ['18', 'מֱ', '', '', '', ''],
-            ['19', 'מֳ', '', '', '', ''],
-            ['20', 'הֲ', '', '', '', ''],
-            ['21', 'הֱ', '', '', '', ''],
-            ['22', 'הֳ', '', '', '', ''],
-            ['23', 'דָּבָר', '', '', '', ''],
-            ['24', 'בֵּן', '', '', '', ''],
-            ['25', 'מַּ (dagesh forte + patah)', '', '', '', ''],
+            ['15', 'כִּי', '', '', '', ''],
+            ['16', 'מֲ', '', '', '', ''],
+            ['17', 'מֱ', '', '', '', ''],
+            ['18', 'מֳ', '', '', '', ''],
+            ['19', 'הֲ', '', '', '', ''],
+            ['20', 'אָה (word-final he)', '', '', '', ''],
+            ['21', 'אֶה (word-final he)', '', '', '', ''],
+            ['22', 'אֵה (word-final he)', '', '', '', ''],
+            ['23', 'אֹה (word-final he)', '', '', '', ''],
         ]
         ans = [
             ['1',  'מָ', 'Qamets', 'A', 'Long', 'Standard long A; T-bar shape below consonant'],
@@ -3037,17 +3038,15 @@ class Ch2VowelIdentificationExercise(ExercisePDF):
             ['12', 'מְ (word-final)', 'Silent Sheva', '—', '—', 'Silent — marks the close of the final syllable'],
             ['13', 'מָ (closed, unaccented)', 'Qamets Hatuf', 'O', 'Short', 'Same shape as Qamets; O-class in closed unaccented syllable'],
             ['14', 'מֵי', 'Tsere Yod', 'E', 'Long', 'Tsere with yod mater lectionis; yod is quiescent'],
-            ['15', 'כִּי', 'Hireq Yod', 'I', 'Long', 'Long I with yod mater; dagesh lene in kaph; word = because/that'],
-            ['16', 'מָ (= Qamets Hatuf)', 'Qamets Hatuf', 'O', 'Short', 'O-class, short; same glyph as Qamets; closed unaccented syllable'],
-            ['17', 'מֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva; A-class; used under gutturals'],
-            ['18', 'מֱ', 'Hatef Seghol', 'E', 'Reduced', 'Composite sheva; E-class; used under gutturals'],
-            ['19', 'מֳ', 'Hatef Qamets', 'O', 'Reduced', 'Composite sheva; O-class; least common hatef sheva'],
-            ['20', 'הֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva; most common hatef; under gutturals'],
-            ['21', 'הֱ', 'Hatef Seghol', 'E', 'Reduced', 'Composite sheva; E-class; less common than Hatef Patah'],
-            ['22', 'הֳ', 'Hatef Qamets', 'O', 'Reduced', 'Composite sheva; O-class; least common of the three'],
-            ['23', 'דָּבָר', 'Qamets \xd7 2', 'A', 'Long', 'Both vowels Qamets (long A); Dagesh Forte in dalet'],
-            ['24', 'בֵּן', 'Tsere', 'E', 'Long', 'Long E under bet; dagesh lene in bet; word = son'],
-            ['25', 'מַּ (dagesh forte + patah)', 'Patah', 'A', 'Short', 'Patah under mem; dot inside mem is Dagesh Forte'],
+            ['15', 'כִּי', 'Hireq Yod', 'I', 'Long', 'Long I with yod mater; dagesh lene in kaph; word = because/that'],
+            ['16', 'מֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva; A-class; used under gutturals'],
+            ['17', 'מֱ', 'Hatef Seghol', 'E', 'Reduced', 'Composite sheva; E-class; used under gutturals'],
+            ['18', 'מֳ', 'Hatef Qamets', 'O', 'Reduced', 'Composite sheva; O-class; rarest hatef sheva'],
+            ['19', 'הֲ', 'Hatef Patah', 'A', 'Reduced', 'Composite sheva under he guttural; most common hatef'],
+            ['20', 'אָה (word-final he)', 'Qamets He', 'A', 'Long', 'Word-final he as mater; he is quiescent; marks long A (e.g., Torah)'],
+            ['21', 'אֶה (word-final he)', 'Seghol He', 'E', 'Short', 'Word-final he as mater; he is quiescent; marks short E'],
+            ['22', 'אֵה (word-final he)', 'Tsere He', 'E', 'Long', 'Word-final he as mater; he is quiescent; marks long E'],
+            ['23', 'אֹה (word-final he)', 'Holem He', 'O', 'Long', 'Word-final he as mater; he is quiescent; marks long O'],
         ]
         self.add_generic_table(
             headers=['#', 'Form', 'Vowel Name', 'Class', 'Quantity', 'Notes'],
