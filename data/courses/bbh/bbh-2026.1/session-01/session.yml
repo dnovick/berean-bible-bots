@@ -32,6 +32,14 @@ agenda:
   - title: "Course Goals"
   - title: "Course Logistics"
   - title: "Grammar Terms Reference"
+  - title: "Reading the Shema"
+
+reading:
+  - name: "Reading the Shema"
+    description: "The instructor reads Deut 6:4 aloud. Students follow along with the Hebrew text."
+    passage: "Deut 6:4"
+    file: "reading-deut-6-4.html"
+
 sections:
   - heading: "Setting the Stage"
     file: "setting-the-stage.md"

@@ -67,6 +67,13 @@ _SESSION_YML_TEMPLATE = """\
 # recording:  URL to the session recording (optional, omit or leave blank if unavailable)
 # notes:      plain-text instructor notes (not rendered on the page when blank)
 #
+# reading:  progressive reading exercise(s) for this session (rendered as ## Reading)
+#   Each entry:
+#   - name:        short label shown as the subsection heading and in the agenda (required)
+#     description: goals or instructions for this reading activity (required)
+#     passage:     Scripture reference displayed on the session page (required)
+#     file:        HTML filename in this session directory (required)
+#
 # files:    downloadable resources attached to this session (rendered as ## Downloads)
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")

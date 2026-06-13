@@ -29,6 +29,14 @@ instructor: "Preston Brown"
 
 agenda:
   - title: BBH.1 - The Hebrew Alphabet
+  - title: "Reading the Shema"
+
+reading:
+  - name: "Reading the Shema"
+    description: "Letter recognition drill. Each letter is shown with wide spacing. Identify each letter aloud."
+    passage: "Deut 6:4"
+    file: "reading-deut-6-4.html"
+
 sections:
 #  - heading: "BBH.1 - The Hebrew Alphabet"
 #    file: "bbh.1.md"

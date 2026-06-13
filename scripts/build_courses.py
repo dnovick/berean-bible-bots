@@ -396,6 +396,11 @@ def render_session_page(
     sections = session.get("sections") or []
     notes = (session.get("notes") or "").strip()
     files = session.get("files") or []
+    readings_raw = session.get("reading") or []
+    # Normalize: accept a single dict or a list
+    readings: list[dict] = (
+        [readings_raw] if isinstance(readings_raw, dict) else list(readings_raw)
+    )
 
     # ── First pass: classify each section, build heading → URL map ─────────────
     section_urls: dict[str, str] = {}
@@ -412,6 +417,13 @@ def render_session_page(
             cslug = content_slug(section)
             section_urls[heading] = f"{sess_slug}/{cslug}.md"
             subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
+
+    # Add reading names to section_urls so agenda items can auto-link to them
+    for reading in readings:
+        rname = reading.get("name", "")
+        rfile = reading.get("file", "")
+        if rname and rfile:
+            section_urls[rname] = f"{sess_slug}/{rfile}"
 
     # ── Build page ──────────────────────────────────────────────────────────────
     lines = [
@@ -441,6 +453,22 @@ def render_session_page(
             entry = f"[{title}]({url})" if url else title
             lines.append(f"1. {entry}")
         lines.append("")
+
+    if readings:
+        lines += ["## Reading", ""]
+        for reading in readings:
+            rname = reading.get("name", "")
+            rdesc = reading.get("description", "")
+            rpassage = reading.get("passage", "")
+            rfile = reading.get("file", "")
+            if rname:
+                lines += [f"### {rname}", ""]
+            if rpassage:
+                lines += [f"**Passage:** {rpassage}  ", ""]
+            if rdesc:
+                lines += [rdesc, ""]
+            if rfile:
+                lines += [f"[Open Reading →]({sess_slug}/{rfile})", ""]
 
     # Render only inline sections; subpages are written by the caller
     for section in sections:
