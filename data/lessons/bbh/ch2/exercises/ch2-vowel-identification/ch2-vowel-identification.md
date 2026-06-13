@@ -4,9 +4,9 @@
 
 ---
 
-**Instructions:** For each Hebrew form shown, identify: (1) Vowel Name, (2) Vowel Class (A / E / I / O / U / Reduced), (3) Quantity (Long / Short / Reduced), (4) Notes (e.g., mater lectionis present, composite sheva, dagesh forte).
+**Instructions:** For each Hebrew form shown, identify: (1) Vowel Name, (2) Vowel Class (A / E / I / O / U / Reduced), (3) Quantity (Long / Short / Reduced), (4) Notes (e.g., mater lectionis present, composite sheva).
 
-The letter מ (mem) serves as the carrier consonant for most items.
+The letter מ (mem) serves as the carrier consonant for most items; א (aleph) is used for word-final ה items.
 
 ---
 
@@ -26,19 +26,17 @@ The letter מ (mem) serves as the carrier consonant for most items.
 | 10 | מוֹ | | | | |
 | 11 | מוּ | | | | |
 | 12 | מְ (word-final) | | | | |
-| 13 | מָ (in closed, unaccented syllable) | | | | |
+| 13 | מָ (closed, unaccented syllable) | | | | |
 | 14 | מֵי | | | | |
 | 15 | כִּי | | | | |
-| 16 | מָ (= Qamets Hatuf) | | | | |
-| 17 | מֲ | | | | |
-| 18 | מֱ | | | | |
-| 19 | מֳ | | | | |
-| 20 | הֲ | | | | |
-| 21 | הֱ | | | | |
-| 22 | הֳ | | | | |
-| 23 | דָּבָר | | | | |
-| 24 | בֵּן | | | | |
-| 25 | מַּ (mem with dagesh forte + patah) | | | | |
+| 16 | מֲ | | | | |
+| 17 | מֱ | | | | |
+| 18 | מֳ | | | | |
+| 19 | הֲ | | | | |
+| 20 | אָה | | | | |
+| 21 | אֶה | | | | |
+| 22 | אֵה | | | | |
+| 23 | אֹה | | | | |
 
 ---
 
@@ -61,16 +59,14 @@ The letter מ (mem) serves as the carrier consonant for most items.
 | 13 | מָ (closed, unaccented) | Qamets Hatuf | O | Short | Same shape as Qamets; O-class in closed unaccented syllable — context determines identity |
 | 14 | מֵי | Tsere Yod | E | Long | Tsere with yod mater lectionis; yod is quiescent |
 | 15 | כִּי | Hireq Yod | I | Long | Long I with yod mater; dagesh lene in kaph (begadkephat, word-initial); word = because/that/when |
-| 16 | מָ (= Qamets Hatuf) | Qamets Hatuf | O | Short | O-class, short; same glyph as Qamets; identified by closed unaccented syllable and/or Metheg absence |
-| 17 | מֲ | Hatef Patah | A | Reduced | Composite sheva; A-class; used under gutturals (א ה ח ע) instead of vocal sheva; most common hatef |
-| 18 | מֱ | Hatef Seghol | E | Reduced | Composite sheva; E-class; used under gutturals; less common than Hatef Patah |
-| 19 | מֳ | Hatef Qamets | O | Reduced | Composite sheva; O-class; least common hatef sheva; used under gutturals |
-| 20 | הֲ | Hatef Patah | A | Reduced | Composite sheva; most common hatef; typically under א and ע as well |
-| 21 | הֱ | Hatef Seghol | E | Reduced | Composite sheva; E-class; less common than Hatef Patah |
-| 22 | הֳ | Hatef Qamets | O | Reduced | Composite sheva; O-class; least common of the three hatef shevas |
-| 23 | דָּבָר | Qamets × 2 | A | Long | Both vowels are Qamets (long A); Dagesh Forte in dalet doubles it |
-| 24 | בֵּן | Tsere | E | Long | Long E under bet; Dagesh Lene in bet (begadkephat, word-initial); word = son |
-| 25 | מַּ | Patah | A | Short | Patah (short A) under mem; the dot inside mem is a Dagesh Forte — mem is doubled |
+| 16 | מֲ | Hatef Patah | A | Reduced | Composite sheva; A-class; used under gutturals (א ה ח ע) instead of vocal sheva; most common hatef |
+| 17 | מֱ | Hatef Seghol | E | Reduced | Composite sheva; E-class; used under gutturals; less common than Hatef Patah |
+| 18 | מֳ | Hatef Qamets | O | Reduced | Composite sheva; O-class; rarest of the three hatef shevas; used under gutturals |
+| 19 | הֲ | Hatef Patah | A | Reduced | Composite sheva under ה guttural; most common hatef sheva |
+| 20 | אָה | Qamets He | A | Long | Word-final ה as mater lectionis; ה is quiescent (no vowel); marks long A (e.g., תּוֹרָה) |
+| 21 | אֶה | Seghol He | E | Short | Word-final ה as mater lectionis; ה is quiescent; marks short E (e.g., שָׂדֶה) |
+| 22 | אֵה | Tsere He | E | Long | Word-final ה as mater lectionis; ה is quiescent; marks long E |
+| 23 | אֹה | Holem He | O | Long | Word-final ה as mater lectionis; ה is quiescent; marks long O |
 
 ---
 

@@ -6,7 +6,7 @@
 
 **Instructions:** For each Hebrew letter shown, provide: (1) Letter Name, (2) Sound.
 
-All 22 base consonants, 5 sofit (final) forms, and 6 begadkephat letters with dagesh lene are included, presented in mixed order.
+All 22 base consonants (including Sin שׂ), 5 sofit (final) forms, and 6 begadkephat letters with dagesh lene are included, presented in mixed order.
 
 ---
 
@@ -45,6 +45,7 @@ All 22 base consonants, 5 sofit (final) forms, and 6 begadkephat letters with da
 | 31 | ג | | |
 | 32 | ס | | |
 | 33 | צ | | |
+| 34 | שׂ | | |
 
 ---
 
@@ -67,7 +68,7 @@ All 22 base consonants, 5 sofit (final) forms, and 6 begadkephat letters with da
 | 13 | שׁ | Shin | sh as in "shoe" — right dot = Shin |
 | 14 | דּ | Dalet (hard) | d as in "day" — dagesh lene; hard form |
 | 15 | ו | Waw | w (consonantal) — also vowel letter for ō, û |
-| 16 | ף | Pe Sofit | p / f — final form of פ (occurs word-finally only) |
+| 16 | ף | Pe Sofit | f as in "fan" — final form of פ (occurs word-finally only); no dagesh, so always soft |
 | 17 | כ | Kaph (soft) | kh as in "Bach" — soft form |
 | 18 | י | Yod | y as in "yes" (consonantal) — also vowel letter for ī |
 | 19 | פּ | Pe (hard) | p as in "pan" — dagesh lene; hard form |
@@ -85,6 +86,7 @@ All 22 base consonants, 5 sofit (final) forms, and 6 begadkephat letters with da
 | 31 | ג | Gimel (soft) | g / gh — soft form |
 | 32 | ס | Samekh | s |
 | 33 | צ | Tsade | emphatic ts — has final form ץ |
+| 34 | שׂ | Sin | s as in "sun" — left dot = Sin; same letter as Shin with different dot |
 
 ---
 
