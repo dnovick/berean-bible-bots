@@ -23,13 +23,11 @@ focus: "Hithpael Weak Verbs"
 instructor: "David Novick"
 chapter: 35
 agenda:
-  - title: "References"
 
 lesson:
   name: "BBH 35 - Hithpael Weak Verbs"
   url: "/lessons/hebrew/ch35/"
 
 sections:
-  - heading: "References"
-    file: "references.md"
+
 notes: ""
