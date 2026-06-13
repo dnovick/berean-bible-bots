@@ -269,6 +269,53 @@ CI runs the validator automatically on every push that touches `data/courses/**`
 
 ---
 
+## BBH Consonant and Vowel Name Conventions
+
+Always use these exact BBH (Pratico & Van Pelt) spellings in all exercises, lessons, flashcard decks, and PDFs. Never use variant spellings.
+
+### Consonant Names
+
+| Letter | BBH Name | Letter | BBH Name |
+|---|---|---|---|
+| א | Alef | נ | Nun |
+| ב | Bet | ס | Samek |
+| ג | Gimel | ע | Ayin |
+| ד | Dalet | פ | Pe |
+| ה | He | צ | Tsade |
+| ו | Waw | ק | Qof |
+| ז | Zayin | ר | Resh |
+| ח | Ḥet | שׁ | Shin |
+| ט | Tet | שׂ | Sin |
+| י | Yod | ת | Taw |
+| כ | Kaf | | |
+| ל | Lamed | | |
+| מ | Mem | | |
+
+**Key changes from non-BBH spellings:** Aleph→Alef, Beth→Bet, Chet→Ḥet, Teth→Tet, Kaph→Kaf, Samekh→Samek, Qoph→Qof, Tav→Taw.
+
+### Vowel Names
+
+| Symbol | BBH Name | Symbol | BBH Name |
+|---|---|---|---|
+| בָּ | Qamets | בַּ | Pathach |
+| בֵּ | Tsere | בֶּ | Seghol |
+| בֹּ | Holem | בִּ | Hireq |
+| | | בָּ (closed, unaccented) | Qamets Hatuf |
+| | | בֻּ | Qibbuts | 
+| בּוּ | Shureq | | |
+| בּוֹ | Holem Waw | | |
+| בֵּי | Tsere Yod | | |
+| בִּי | Hireq Yod | | |
+| בָּה | Qamets He | בֹּה | Holem He |
+| בֵּה | Tsere He | בֶּה | Seghol He |
+| מְ | Shewa | | |
+| מֲ | Hateph Pathach | מֱ | Hateph Seghol |
+| מֳ | Hateph Qamets | | |
+
+**Key changes from non-BBH spellings:** Patah→Pathach, Hatef→Hateph (prefix), Holem Vav→Holem Waw, Sheva→Shewa.
+
+---
+
 ## Report Standards
 
 - **Build script required:** every report must have a `scripts/build_<term>_report.py` that generates all charts, CSVs, and the report file. Never produce a report without a reproducible build script.

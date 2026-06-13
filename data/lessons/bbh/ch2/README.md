@@ -48,12 +48,12 @@ Quantity describes how long the vowel sound is held. Hebrew distinguishes three 
 |---|---|---|
 | **Long** | Extended vowel sound | Typically in open syllables; relatively stable |
 | **Short** | Brief vowel sound | Typically in closed syllables; subject to reduction |
-| **Reduced** | Ultra-short, barely pronounced | Sheva and hatef shevas; in unstressed syllables |
+| **Reduced** | Ultra-short, barely pronounced | Shewa and hateph shewas; in unstressed syllables |
 
 ### 2.3 Type (Full vs. Half-Vowel)
 
 - **Full vowels** (Long and Short) occupy a complete syllable position.
-- **Half-vowels** (shevas and hatef shevas) are reduced sounds that occupy a syllable only in certain positions. They are sometimes called **reduced vowels**.
+- **Half-vowels** (shewas and hateph shewas) are reduced sounds that occupy a syllable only in certain positions. They are sometimes called **reduced vowels**.
 
 ---
 
@@ -66,9 +66,9 @@ The following table presents all Tiberian vowels. The letter **מ** (mem) serves
 | Name | Symbol | Transliteration | Quantity | Sound | Notes |
 |---|---|---|---|---|---|
 | Qamets | מָ | ā | Long | "ah" as in *father* | Most common long A; identical in shape to Qamets Hatuf |
-| Patah | מַ | a | Short | "ah" as in *father* | Most common short A |
+| Pathach | מַ | a | Short | "ah" as in *father* | Most common short A |
 | Qamets Hatuf | מָ | o | Short | "oh" | Same shape as Qamets; distinguished by syllable type and Metheg |
-| Hatef Patah | מֲ | a | Reduced | very short "ah" | Composite sheva; used under gutturals |
+| Hateph Pathach | מֲ | a | Reduced | very short "ah" | Composite shewa; used under gutturals |
 
 > **Qamets vs. Qamets Hatuf:** These two vowels are written identically (מָ). To distinguish them, examine the syllable: a **Qamets** (long A) stands in an **open syllable** or under a **Metheg** (secondary accent mark); a **Qamets Hatuf** (short O) stands in a **closed, unaccented syllable**. This distinction is covered in detail in Chapter 3.
 
@@ -80,7 +80,7 @@ The following table presents all Tiberian vowels. The letter **מ** (mem) serves
 | Seghol | מֶ | e | Short | "eh" as in *bed* | Most common short E |
 | Tsere Yod | מֵי | ê | Long | "ay" as in *they* | Tsere with yod mater lectionis |
 | Seghol Yod | מֶי | e | Short | "eh" | Seghol with yod mater (less common) |
-| Hatef Seghol | מֱ | e | Reduced | very short "eh" | Composite sheva; used under gutturals; less common than Hatef Patah |
+| Hateph Seghol | מֱ | e | Reduced | very short "eh" | Composite shewa; used under gutturals; less common than Hateph Pathach |
 
 ### I-class Vowels
 
@@ -94,9 +94,9 @@ The following table presents all Tiberian vowels. The letter **מ** (mem) serves
 | Name | Symbol | Transliteration | Quantity | Sound | Notes |
 |---|---|---|---|---|---|
 | Holem | מֹ | ō | Long | "oh" as in *gold* | The dot appears above the letter to the left |
-| Holem Vav | מוֹ | ō | Long | "oh" as in *gold* | Holem with vav mater lectionis |
+| Holem Waw | מוֹ | ō | Long | "oh" as in *gold* | Holem with vav mater lectionis |
 | Qamets Hatuf | מָ | o | Short | "oh" | See note above (same shape as Qamets) |
-| Hatef Qamets | מֳ | o | Reduced | very short "oh" | Composite sheva; used under gutturals; least common hatef |
+| Hateph Qamets | מֳ | o | Reduced | very short "oh" | Composite shewa; used under gutturals; least common hatef |
 
 ### U-class Vowels
 
@@ -107,52 +107,52 @@ The following table presents all Tiberian vowels. The letter **מ** (mem) serves
 
 ---
 
-## 4. The Sheva
+## 4. The Shewa
 
-The **simple sheva** (שְׁוָא, *shewa*) is written as two vertical dots below a consonant: **מְ**. It has two entirely different functions depending on its position, and reading Hebrew correctly requires knowing which type you are encountering at every occurrence.
+The **simple shewa** (שְׁוָא, *shewa*) is written as two vertical dots below a consonant: **מְ**. It has two entirely different functions depending on its position, and reading Hebrew correctly requires knowing which type you are encountering at every occurrence.
 
-### 4.1 Silent Sheva
+### 4.1 Silent Shewa
 
-A silent sheva marks the **close of a syllable** — the consonant under which it appears ends the syllable, and the sheva itself has no vowel sound. It is essentially a syllable-closing marker.
+A silent shewa marks the **close of a syllable** — the consonant under which it appears ends the syllable, and the shewa itself has no vowel sound. It is essentially a syllable-closing marker.
 
-**A sheva is silent when it occurs:**
+**A shewa is silent when it occurs:**
 
 | Condition | Example context | Explanation |
 |---|---|---|
 | Word-final position | Any word ending in מְ | No vowel follows a final consonant |
 | After a long vowel | מָ followed by מְ | Long vowel closes the preceding syllable |
-| Second of two consecutive shevas | מְמְ — second מְ is silent | First sheva closes; second opens next syllable |
+| Second of two consecutive shewas | מְמְ — second מְ is silent | First shewa closes; second opens next syllable |
 
-### 4.2 Vocal Sheva
+### 4.2 Vocal Shewa
 
-A vocal sheva **opens a syllable** — it represents an ultra-short, murmured vowel sound (IPA: /ə/, the *schwa* sound). When vocal, it is pronounced as a very quick, indeterminate vowel.
+A vocal shewa **opens a syllable** — it represents an ultra-short, murmured vowel sound (IPA: /ə/, the *schwa* sound). When vocal, it is pronounced as a very quick, indeterminate vowel.
 
-**A sheva is vocal when it occurs:**
+**A shewa is vocal when it occurs:**
 
 | Condition | Example context | Explanation |
 |---|---|---|
 | Word-initial position | First consonant of a word | Every word must begin with a vowel sound |
-| After a short vowel in an open syllable | Short vowel + consonant + sheva | The short vowel did not close the syllable |
-| First of two consecutive shevas | מְמְ — first מְ is vocal | The sequence requires the first to open a syllable |
-| Under a consonant with Dagesh Forte | מּ with sheva | Dagesh forte creates a geminate; the sheva is vocal |
+| After a short vowel in an open syllable | Short vowel + consonant + shewa | The short vowel did not close the syllable |
+| First of two consecutive shewas | מְמְ — first מְ is vocal | The sequence requires the first to open a syllable |
+| Under a consonant with Dagesh Forte | מּ with shewa | Dagesh forte creates a geminate; the shewa is vocal |
 
-> **Practical rule of thumb:** If you are unsure, ask: does this consonant need a vowel to begin the next syllable? If yes, the sheva is vocal. If the consonant is closing off the previous syllable, it is silent.
+> **Practical rule of thumb:** If you are unsure, ask: does this consonant need a vowel to begin the next syllable? If yes, the shewa is vocal. If the consonant is closing off the previous syllable, it is silent.
 
 ---
 
-## 5. Composite (Hatef) Shevas
+## 5. Composite (Hatef) Shewas
 
-The **guttural letters** (א ה ח ע) and sometimes **resh** (ר) resist taking a simple vocal sheva. Instead, they take a **composite sheva** (הֶ״אחָ, *shewa merukkav*), also called a **hatef sheva**. These are formed by combining a sheva with a short vowel.
+The **guttural letters** (א ה ח ע) and sometimes **resh** (ר) resist taking a simple vocal shewa. Instead, they take a **composite shewa** (הֶ״אחָ, *shewa merukkav*), also called a **hateph shewa**. These are formed by combining a shewa with a short vowel.
 
-There are three hatef shevas:
+There are three hateph shewas:
 
 | Name | Symbol (with ה) | Transliteration | Vowel Class | Sound | Notes |
 |---|---|---|---|---|---|
-| Hatef Patah | הֲ | a | A-class | very short "ah" | Most common; often under אֲ and עֲ |
-| Hatef Seghol | הֱ | e | E-class | very short "eh" | Less common; often under אֱ |
-| Hatef Qamets | הֳ | o | O-class | very short "oh" | Least common |
+| Hateph Pathach | הֲ | a | A-class | very short "ah" | Most common; often under אֲ and עֲ |
+| Hateph Seghol | הֱ | e | E-class | very short "eh" | Less common; often under אֱ |
+| Hateph Qamets | הֳ | o | O-class | very short "oh" | Least common |
 
-> **Rule:** Wherever a simple vocal sheva would appear under a guttural, a hatef sheva appears instead. The specific hatef vowel (A/E/O) varies by word and must be memorized as part of the form, but Hatef Patah is by far the most frequent.
+> **Rule:** Wherever a simple vocal shewa would appear under a guttural, a hateph shewa appears instead. The specific hatef vowel (A/E/O) varies by word and must be memorized as part of the form, but Hateph Pathach is by far the most frequent.
 
 ---
 
@@ -168,7 +168,7 @@ Before the Masoretic vowel system was developed, ancient scribes used certain co
 
 **Important:** When a consonant serves as a mater lectionis, it is **quiescent** — it is present in the spelling but produces no consonantal sound. Its only function is to carry (or hint at) the vowel.
 
-**How to recognize a mater lectionis:** A ו or י that has a vowel sign pointing directly at it (holem above, hireq below, etc.) but has **no sheva** under it is functioning as a mater. A ה at the end of a word with no sheva is typically a mater for the preceding long vowel.
+**How to recognize a mater lectionis:** A ו or י that has a vowel sign pointing directly at it (holem above, hireq below, etc.) but has **no shewa** under it is functioning as a mater. A ה at the end of a word with no shewa is typically a mater for the preceding long vowel.
 
 > **Note:** Aleph (א) can also function as a quiescent mater in limited contexts (especially word-finally in older spellings), but this is less systematic than ו, י, and ה.
 
@@ -182,7 +182,7 @@ The relationship between vowel length and syllable structure is one of the most 
 |---|---|---|
 | **Open** | Ends in a vowel (CV) | Long vowel |
 | **Closed** | Ends in a consonant (CVC) | Short vowel |
-| **Reduced** | Unstressed, non-accent position | Sheva or hatef sheva |
+| **Reduced** | Unstressed, non-accent position | Shewa or hateph shewa |
 
 **Why this matters:** When a word adds a suffix, syllable boundaries shift. A long vowel in what was an open syllable may find itself in a now-closed syllable — and it will typically shorten. This is the engine behind most of the vowel alternations you will see throughout the paradigms.
 
@@ -197,21 +197,21 @@ BBH uses a **Sephardic-based Tiberian pronunciation**, which is close to Modern 
 | Vowel Class | Vowel Name | Symbol | Pronunciation | English Approximation |
 |---|---|---|---|---|
 | **A-class** | Qamets | מָ | "ah" | f**a**ther |
-| **A-class** | Patah | מַ | "ah" | f**a**ther |
+| **A-class** | Pathach | מַ | "ah" | f**a**ther |
 | **E-class** | Tsere | מֵ | "ay" | th**ey** |
 | **E-class** | Seghol | מֶ | "eh" | b**e**d |
 | **I-class** | Hireq Yod | מִי | "ee" | mach**i**ne |
 | **I-class** | Hireq | מִ | "ee" | mach**i**ne |
 | **O-class** | Holem | מֹ | "oh" | g**o**ld |
-| **O-class** | Holem Vav | מוֹ | "oh" | g**o**ld |
+| **O-class** | Holem Waw | מוֹ | "oh" | g**o**ld |
 | **U-class** | Shureq | מוּ | "oo" | r**u**le |
 | **U-class** | Qibbuts | מֻ | "oo" | r**u**le |
-| **Reduced** | Vocal Sheva | מְ | short "e" (murmur) | *a*bout (unstressed) |
-| **Reduced** | Hatef Patah | מֲ | very short "ah" | |
-| **Reduced** | Hatef Seghol | מֱ | very short "eh" | |
-| **Reduced** | Hatef Qamets | מֳ | very short "oh" | |
+| **Reduced** | Vocal Shewa | מְ | short "e" (murmur) | *a*bout (unstressed) |
+| **Reduced** | Hateph Pathach | מֲ | very short "ah" | |
+| **Reduced** | Hateph Seghol | מֱ | very short "eh" | |
+| **Reduced** | Hateph Qamets | מֳ | very short "oh" | |
 
-**Modern Israeli Hebrew note:** In contemporary Israeli Hebrew, Qamets and Patah are both pronounced as a short "ah" (no distinction in length), Tsere and Seghol are often merged, and the guttural letters א and ע are both silent. BBH and most academic programs preserve the Tiberian distinctions in the classroom because they are significant for parsing and lexical identification.
+**Modern Israeli Hebrew note:** In contemporary Israeli Hebrew, Qamets and Pathach are both pronounced as a short "ah" (no distinction in length), Tsere and Seghol are often merged, and the guttural letters א and ע are both silent. BBH and most academic programs preserve the Tiberian distinctions in the classroom because they are significant for parsing and lexical identification.
 
 ---
 
@@ -255,9 +255,9 @@ A dot inside a Hebrew letter is called a **dagesh** (דָּגֵשׁ). However, t
 | **Masoretes** | Jewish scribal scholars (c. 6th–10th century CE) who standardized the Hebrew Bible text and added the vowel pointing system. |
 | **Tiberian pointing** | The specific vowel system developed in Tiberias; the standard system of BHS/BHQ and all modern academic Hebrew study. |
 | **Qamets** (מָ) | Long A vowel; the most common long vowel in the Hebrew Bible. Written as a T-bar shape below the consonant. |
-| **Patah** (מַ) | Short A vowel; a horizontal bar below the consonant. |
-| **Sheva** (מְ) | Two vertical dots below a consonant; either silent (syllable-closing) or vocal (ultra-short murmur). |
-| **Hatef sheva** | A composite sheva combining the sheva with a short vowel (hatef patah, hatef seghol, hatef qamets); used under gutturals in place of vocal sheva. |
+| **Pathach** (מַ) | Short A vowel; a horizontal bar below the consonant. |
+| **Shewa** (מְ) | Two vertical dots below a consonant; either silent (syllable-closing) or vocal (ultra-short murmur). |
+| **Hatef shewa** | A composite shewa combining the shewa with a short vowel (hatef patah, hatef seghol, hatef qamets); used under gutturals in place of vocal shewa. |
 | **Mater lectionis** | A consonant (ו, י, or ה) used to "carry" a vowel sound; present in the spelling but not pronounced as a consonant. Plural: *matres lectionis*. |
 | **Dagesh lene** | A dot in a begadkephat letter marking its hard pronunciation; does not double the consonant. |
 | **Dagesh forte** | A dot in any non-guttural letter marking gemination (doubling); always follows a vowel and has grammatical significance. |
@@ -270,4 +270,4 @@ A dot inside a Hebrew letter is called a **dagesh** (דָּגֵשׁ). However, t
 
 | Resource | Description |
 |---|---|
-| [Vowel Identification Exercise](exercises/ch2-vowel-identification/README.md) | 25-item identification drill — all five vowel classes, both sheva types, all three hatef shevas, matres lectionis, and dagesh forte. Includes HTML interactive version with per-item answer reveal. |
+| [Vowel Identification Exercise](exercises/ch2-vowel-identification/README.md) | 25-item identification drill — all five vowel classes, both shewa types, all three hateph shewas, matres lectionis, and dagesh forte. Includes HTML interactive version with per-item answer reveal. |

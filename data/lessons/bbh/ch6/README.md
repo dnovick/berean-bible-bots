@@ -37,11 +37,11 @@ The default form is the consonant + **vocal shewa** (ְ):
 
 | Context | Vowel Under Prep | Example | Rule |
 |---|---|---|---|
-| Normal consonant (default) | Sheva (ְ) | בְּדָבָר | Standard form |
-| Following consonant has a sheva | Hireq (ִ) | בִּשְׁמוּאֵל | Two consecutive shevas are not permitted; sheva → hireq |
-| Following consonant has hateph patach (ֲ) | Patach (ַ) | בַּאֲדָמָה | Prep matches vowel class of the composite sheva |
-| Following consonant has hateph seghol (ֱ) | Seghol (ֶ) | בֶּאֱמֶת | Prep matches vowel class of the composite sheva |
-| Following consonant has hateph qamets (ֳ) | Qamets (ָ) | כָּחֳלִי | Prep matches vowel class of the composite sheva |
+| Normal consonant (default) | Shewa (ְ) | בְּדָבָר | Standard form |
+| Following consonant has a shewa | Hireq (ִ) | בִּשְׁמוּאֵל | Two consecutive shewas are not permitted; shewa → hireq |
+| Following consonant has hateph patach (ֲ) | Patach (ַ) | בַּאֲדָמָה | Prep matches vowel class of the composite shewa |
+| Following consonant has hateph seghol (ֱ) | Seghol (ֶ) | בֶּאֱמֶת | Prep matches vowel class of the composite shewa |
+| Following consonant has hateph qamets (ֳ) | Qamets (ָ) | כָּחֳלִי | Prep matches vowel class of the composite shewa |
 | Preceding the definite article הַ | Article drops; prep takes article vowel + dagesh forte in next consonant | בַּמֶּלֶךְ | Article-fusion: הַ disappears, vowel transfers to prep |
 
 ### 2c. Before the Definite Article — Article Fusion
@@ -169,7 +169,7 @@ Hebrew regularly uses prepositional phrases where English would use a single adv
 | בַּלַּיְלָה | in the night | by night / at night | Fused: בְּ + הַלַּיְלָה |
 | לְעוֹלָם | to eternity | forever / always | Common in Psalms |
 | עַד עוֹלָם | until eternity | forever / for ever and ever | Parallel to לְעוֹלָם |
-| בֶּאֱמֶת | in truth | truly / faithfully | Prep before composite sheva |
+| בֶּאֱמֶת | in truth | truly / faithfully | Prep before composite shewa |
 | מִדֵּי יוֹם | from each day | day by day / daily | Distributive use |
 | לַבֹּקֶר | in the morning | in the morning | Fused: לְ + הַבֹּקֶר |
 | לָעֶרֶב | in the evening | in the evening | Fused: לְ + הָעֶרֶב |
@@ -208,7 +208,7 @@ Prepositions are among the most frequent items in the Hebrew OT. The figures bel
 | **Independent preposition** | A preposition written as a separate word (אֶל, עַל, עִם, etc.) |
 | **Article fusion** | The process by which בְּ לְ כְּ absorb the definite article הַ; the ה drops, the vowel transfers, and dagesh forte appears in the following consonant |
 | **Compensatory lengthening** | When a dagesh forte is rejected by a guttural or ר, the preceding short vowel lengthens: hireq → tsere (ִ → ֵ), patach → qamets (ַ → ָ) |
-| **Composite sheva (hateph vowel)** | A reduced vowel used under gutturals in place of a simple vocal shewa: ֲ (hateph patach), ֱ (hateph seghol), ֳ (hateph qamets) |
+| **Composite shewa (hateph vowel)** | A reduced vowel used under gutturals in place of a simple vocal shewa: ֲ (hateph patach), ֱ (hateph seghol), ֳ (hateph qamets) |
 | **Direct object marker (DOM)** | אֵת / אֶת — a particle marking the definite direct object; untranslated in English |
 | **Assimilation** | The disappearance of נ in the prefixed form of מִן; it merges into the following consonant via dagesh forte |
 | **Construct chain** | A grammatical structure in which a noun is in the construct state to express possession or relationship — often used with prepositions (preview for Ch8–9) |
