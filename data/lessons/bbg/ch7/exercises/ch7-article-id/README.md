@@ -16,5 +16,6 @@ Covers all five cases (Nom, Gen, Dat, Acc, Nom./Acc.) and all three genders (Mas
 
 | File | Description |
 |---|---|
+| [ch7-article-id.md](ch7-article-id.md) | Static reference copy with answer key |
 | [ch7-article-id.html](ch7-article-id.html) | Interactive HTML — dropdowns for Case/Number/Gender; column-aligned answers |
 | [ch7-article-id.pdf](ch7-article-id.pdf) | Printable PDF |

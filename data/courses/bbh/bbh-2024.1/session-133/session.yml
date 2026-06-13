@@ -23,13 +23,10 @@ focus: "Piel Weak Verbs"
 instructor: "David Novick"
 chapter: 31
 agenda:
-  - title: "References"
 
 lesson:
   name: "BBH 31 - Piel Weak Verbs"
   url: "/lessons/hebrew/ch31/"
 
 sections:
-  - heading: "References"
-    file: "references.md"
 notes: ""
