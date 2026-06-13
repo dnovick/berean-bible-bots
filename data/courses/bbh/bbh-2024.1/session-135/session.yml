@@ -24,11 +24,15 @@ instructor: "David Novick"
 chapter: 33
 agenda:
   - title: "BBB Updates"
-  - title: "Pual Weak Verbs - BBH 33"
   - title: "References"
+
+lesson:
+  name: "BBH 33 - Pual Weak Verbs"
+  url: "/lessons/hebrew/ch33/"
+
 sections:
-  - heading: "Pual Weak Verbs - BBH 33"
-    file: "pual-weak-verbs.md"
+  - heading: "BBB Updates"
+    file: "bbb-updates.md"
   - heading: "References"
     file: "references.md"
 notes: ""

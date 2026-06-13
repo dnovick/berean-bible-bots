@@ -23,11 +23,13 @@ focus: "Hithpael Strong Verbs"
 instructor: "David Novick"
 chapter: 34
 agenda:
-  - title: "Hithpael Strong Verbs - BBH 34"
   - title: "References"
+
+lesson:
+  name: "BBH 34 - Hithpael Strong Verbs"
+  url: "/lessons/hebrew/ch34/"
+
 sections:
-  - heading: "Hithpael Strong Verbs - BBH 34"
-    file: "hithpael-strong-verbs.md"
   - heading: "References"
     file: "references.md"
 notes: ""
