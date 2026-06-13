@@ -29,10 +29,9 @@ chapter: 2
 instructor: Preston Brown
 
 agenda:
-  - title: "Reading the Shema"
 
 reading:
-  - name: "Reading the Shema"
+  - name: "The Shema"
     description: "Syllable reading drill. The verse is broken at syllable boundaries with hyphens. Read each syllable aloud."
     passage: "Deut 6:4"
     file: "reading-deut-6-4.html"

@@ -436,31 +436,26 @@ def render_session_page(
     if chapter:
         lines += ["## Lesson Content", "", chapter_link_md(textbook, chapter), ""]
 
-    if agenda:
+    # Build the combined agenda: explicit items first, then auto-appended readings
+    reading_agenda = [
+        {
+            "title": f"Reading: {r.get('name', '')}",
+            "url": f"{sess_slug}/{r.get('file', '')}",
+        }
+        for r in readings
+        if r.get("name") and r.get("file")
+    ]
+    full_agenda = list(agenda) + reading_agenda
+
+    if full_agenda:
         lines += ["## Agenda", ""]
-        for item in agenda:
+        for item in full_agenda:
             title = item.get("title", "")
             # Explicit url: in YAML always wins; otherwise auto-match to section
             url = item.get("url", "") or section_urls.get(title, "")
             entry = f"[{title}]({url})" if url else title
             lines.append(f"1. {entry}")
         lines.append("")
-
-    if readings:
-        lines += ["## Reading", ""]
-        for reading in readings:
-            rname = reading.get("name", "")
-            rdesc = reading.get("description", "")
-            rpassage = reading.get("passage", "")
-            rfile = reading.get("file", "")
-            if rname:
-                lines += [f"### {rname}", ""]
-            if rpassage:
-                lines += [f"**Passage:** {rpassage}  ", ""]
-            if rdesc:
-                lines += [rdesc, ""]
-            if rfile:
-                lines += [f"[Open Reading →]({sess_slug}/{rfile})", ""]
 
     if files:
         lines += ["## Downloads", ""]

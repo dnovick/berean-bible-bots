@@ -29,10 +29,9 @@ chapter: 3
 instructor: Preston Brown
 
 agenda:
-  - title: "Reading the Shema"
 
 reading:
-  - name: "Reading the Shema"
+  - name: "The Shema"
     description: "Students read the full verse aloud. By now you can identify every letter and vowel point in Deut 6:4."
     passage: "Deut 6:4"
     file: "reading-deut-6-4.html"
