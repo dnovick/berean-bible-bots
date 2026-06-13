@@ -434,7 +434,7 @@ def render_session_page(
 
     # Build combined agenda: explicit items, then lesson, then readings
     lesson_agenda = (
-        [{"title": lesson.get("name", ""), "url": lesson.get("url", "")}]
+        [{"title": f"Lesson: {lesson.get('name', '')}", "url": lesson.get("url", "")}]
         if lesson.get("name") and lesson.get("url")
         else []
     )
