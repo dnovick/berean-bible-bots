@@ -463,6 +463,23 @@ def render_session_page(
             lines.append(f"1. {entry}")
         lines.append("")
 
+    # Sections with no matching agenda title are orphaned — surface them in a
+    # dedicated ## Additional Info table rather than leaving them unreachable.
+    agenda_titles = {item.get("title", "") for item in full_agenda}
+    orphaned = [
+        s for s in sections
+        if s.get("heading", "") not in agenda_titles
+    ]
+    if orphaned:
+        lines += ["## Additional Info", ""]
+        lines += ["| Topic |", "|---|"]
+        for s in orphaned:
+            heading = s.get("heading", "")
+            url = section_urls.get(heading, "")
+            entry = f"[{heading}]({url})" if url else heading
+            lines.append(f"| {entry} |")
+        lines.append("")
+
     if files:
         lines += ["## Downloads", ""]
         for f in files:
