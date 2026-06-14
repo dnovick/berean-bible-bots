@@ -313,6 +313,7 @@ def render_course_page(course: dict[str, Any]) -> str:
     edition = course.get("edition", "")
     instructors = course.get("instructors", [])
     sessions = course.get("sessions", [])
+    session_groups = course.get("session_groups", [])
 
     lines = [f"# {name} — {cid}", ""]
 
@@ -330,23 +331,52 @@ def render_course_page(course: dict[str, Any]) -> str:
         lines += ["*No sessions recorded yet.*", ""]
         return "\n".join(lines)
 
-    lines += [
-        "## Sessions",
-        "",
-        "| Session | Date | Recording |",
-        "|---|---|---|",
-    ]
+    def _sess_num(s: dict[str, Any]) -> int:
+        try:
+            return int(s.get("number", 0))
+        except (ValueError, TypeError):
+            return 0
 
-    for session in sessions:
+    def _sess_row(session: dict[str, Any]) -> str:
         num = session.get("number", "")
         date_str = format_date(session.get("date"))
         focus = session.get("focus", "")
         recording = (session.get("recording") or "").strip()
         sess_link = f"[{num} — {focus}](sessions/{session_filename(session)})"
         rec_cell = f"[Watch]({recording})" if recording else ""
-        lines.append(f"| {sess_link} | {date_str} | {rec_cell} |")
+        return f"| {sess_link} | {date_str} | {rec_cell} |"
 
-    lines.append("")
+    _TABLE_HDR = ["| Session | Date | Recording |", "|---|---|---|"]
+
+    lines += ["## Sessions", ""]
+
+    if session_groups:
+        assigned_nums: set[int] = set()
+        for grp in session_groups:
+            frm = int(grp.get("from", 1))
+            to = int(grp.get("to", 9999))
+            grp_heading = grp.get("heading", "Sessions")
+            grp_sessions = [s for s in sessions if frm <= _sess_num(s) <= to]
+            if not grp_sessions:
+                continue
+            assigned_nums.update(_sess_num(s) for s in grp_sessions)
+            lines += [f"### {grp_heading}", ""] + _TABLE_HDR
+            for session in grp_sessions:
+                lines.append(_sess_row(session))
+            lines.append("")
+
+        unassigned = [s for s in sessions if _sess_num(s) not in assigned_nums]
+        if unassigned:
+            lines += ["### Other Sessions", ""] + _TABLE_HDR
+            for session in unassigned:
+                lines.append(_sess_row(session))
+            lines.append("")
+    else:
+        lines += _TABLE_HDR
+        for session in sessions:
+            lines.append(_sess_row(session))
+        lines.append("")
+
     return "\n".join(lines)
 
 
