@@ -25,63 +25,53 @@ _SESSION_DIR = os.path.join(
 
 
 # ---------------------------------------------------------------------------
-# Exercise 1 — Letter Review (25 items)
+# Exercise 1 — Letter Review (20 items — confusable pairs focus)
 # ---------------------------------------------------------------------------
 
 LETTER_ROWS = [
-    ['1',  'ף',  '', ''],
-    ['2',  'כּ', '', ''],
+    ['1',  'ה',  '', ''],
+    ['2',  'ח',  '', ''],
     ['3',  'ד',  '', ''],
-    ['4',  'ח',  '', ''],
-    ['5',  'שׂ', '', ''],
-    ['6',  'ץ',  '', ''],
-    ['7',  'ת',  '', ''],
-    ['8',  'ר',  '', ''],
-    ['9',  'ע',  '', ''],
-    ['10', 'פ',  '', ''],
-    ['11', 'ן',  '', ''],
-    ['12', 'ב',  '', ''],
-    ['13', 'גּ', '', ''],
-    ['14', 'ם',  '', ''],
-    ['15', 'כ',  '', ''],
-    ['16', 'א',  '', ''],
-    ['17', 'שׁ', '', ''],
-    ['18', 'ך',  '', ''],
-    ['19', 'דּ', '', ''],
-    ['20', 'תּ', '', ''],
-    ['21', 'בּ', '', ''],
-    ['22', 'ג',  '', ''],
-    ['23', 'ה',  '', ''],
-    ['24', 'פּ', '', ''],
-    ['25', 'ט',  '', ''],
+    ['4',  'ר',  '', ''],
+    ['5',  'ו',  '', ''],
+    ['6',  'ז',  '', ''],
+    ['7',  'שׁ', '', ''],
+    ['8',  'שׂ', '', ''],
+    ['9',  'ב',  '', ''],
+    ['10', 'כ',  '', ''],
+    ['11', 'כּ', '', ''],
+    ['12', 'ק',  '', ''],
+    ['13', 'מ',  '', ''],
+    ['14', 'ס',  '', ''],
+    ['15', 'ם',  '', ''],
+    ['16', 'ן',  '', ''],
+    ['17', 'ף',  '', ''],
+    ['18', 'ץ',  '', ''],
+    ['19', 'ך',  '', ''],
+    ['20', 'א',  '', ''],
 ]
 
 LETTER_ANSWERS = [
-    ['1',  'ף',  'Pe Sofit',     'f as in "fan" — final form of פ; word-final only; always soft'],
-    ['2',  'כּ', 'Kaf (hard)',   'k as in "king" — dagesh lene; hard form'],
-    ['3',  'ד',  'Dalet (soft)', 'd / dh — soft form (no dagesh)'],
-    ['4',  'ח',  'Ḥet',          'ch as in "Bach" — guttural; never takes dagesh forte'],
-    ['5',  'שׂ', 'Sin',          's as in "sun" — left dot; same letter-shape as Shin'],
-    ['6',  'ץ',  'Tsade Sofit',  'emphatic ts — final form of צ; word-final only'],
-    ['7',  'ת',  'Taw (soft)',   't / th — soft form (no dagesh)'],
-    ['8',  'ר',  'Resh',         'r (uvular) — resists dagesh forte'],
-    ['9',  'ע',  'Ayin',         '(silent) — guttural; distinct from Alef'],
-    ['10', 'פ',  'Pe (soft)',    'f as in "fan" — soft form (no dagesh)'],
-    ['11', 'ן',  'Nun Sofit',    'n — final form of נ; word-final only'],
-    ['12', 'ב',  'Bet (soft)',   'v as in "vine" — soft form (no dagesh)'],
-    ['13', 'גּ', 'Gimel (hard)', 'g as in "go" — dagesh lene; hard form'],
-    ['14', 'ם',  'Mem Sofit',    'm — final form of מ; word-final only'],
-    ['15', 'כ',  'Kaf (soft)',   'kh as in "Bach" — soft form (no dagesh)'],
-    ['16', 'א',  'Alef',         '(silent) — guttural; distinct from Ayin'],
-    ['17', 'שׁ', 'Shin',         'sh as in "shoe" — right dot'],
-    ['18', 'ך',  'Kaf Sofit',   'k / kh — final form of כ; word-final only'],
-    ['19', 'דּ', 'Dalet (hard)', 'd as in "day" — dagesh lene; hard form'],
-    ['20', 'תּ', 'Taw (hard)',   't as in "top" — dagesh lene; hard form'],
-    ['21', 'בּ', 'Bet (hard)',   'b as in "boy" — dagesh lene; hard form'],
-    ['22', 'ג',  'Gimel (soft)', 'g / gh — soft form (no dagesh)'],
-    ['23', 'ה',  'He',           'h — guttural; often quiescent word-finally'],
-    ['24', 'פּ', 'Pe (hard)',    'p as in "pan" — dagesh lene; hard form'],
-    ['25', 'ט',  'Tet',          't as in "toy" — emphatic; NOT a Begadkephat letter'],
+    ['1',  'ה',  'He',           'h — guttural; often quiescent at word-end'],
+    ['2',  'ח',  'Ḥet',          'ch as in "Bach" — guttural; stronger throat sound than He'],
+    ['3',  'ד',  'Dalet (soft)', 'd / dh — soft form; no dagesh'],
+    ['4',  'ר',  'Resh',         'r (uvular) — never takes dagesh forte'],
+    ['5',  'ו',  'Waw',          'w — also used as mater lectionis for O and U vowels'],
+    ['6',  'ז',  'Zayin',        'z — one horizontal bar on top; contrast with Waw'],
+    ['7',  'שׁ', 'Shin',         'sh as in "ship" — right dot; contrast with Sin'],
+    ['8',  'שׂ', 'Sin',          's as in "sun" — left dot; contrast with Shin'],
+    ['9',  'ב',  'Bet (soft)',   'v as in "vine" — soft form; no dagesh'],
+    ['10', 'כ',  'Kaf (soft)',   'kh as in "Bach" — soft form; no dagesh'],
+    ['11', 'כּ', 'Kaf (hard)',   'k as in "king" — dagesh lene; hard form'],
+    ['12', 'ק',  'Qof',          'q (uvular k) — never a Begadkephat letter'],
+    ['13', 'מ',  'Mem',          'm — open at bottom'],
+    ['14', 'ס',  'Samek',        's — fully closed letter; contrast with Mem\'s open bottom'],
+    ['15', 'ם',  'Mem Sofit',    'm — closed final form; word-final only'],
+    ['16', 'ן',  'Nun Sofit',    'n — descending final form; word-final only'],
+    ['17', 'ף',  'Pe Sofit',     'f — final form of Pe; word-final only'],
+    ['18', 'ץ',  'Tsade Sofit',  'emphatic ts — final form of Tsade; word-final only'],
+    ['19', 'ך',  'Kaf Sofit',   'kh — final form of Kaf; word-final only'],
+    ['20', 'א',  'Alef',         '(silent) — guttural; contrast with Ayin'],
 ]
 
 
@@ -89,9 +79,9 @@ class LetterReviewPDF(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
             'For each Hebrew letter shown, identify: (1) Letter Name, (2) Sound. '
-            'Focus on confusable pairs, sofit forms, and Begadkephat hard/soft variants.'
+            'Items are grouped by confusable pairs — study them in contrast.'
         )
-        self.add_section_heading('Exercise — 25 items')
+        self.add_section_heading('Exercise — 20 items')
         self.add_generic_table(
             headers=['#', 'Letter', 'Name', 'Sound'],
             rows=LETTER_ROWS,
@@ -111,53 +101,43 @@ class LetterReviewPDF(ExercisePDF):
 
 
 # ---------------------------------------------------------------------------
-# Exercise 2 — Vowel Review (20 items)
+# Exercise 2 — Vowel Review (15 items — confusable pairs focus)
 # ---------------------------------------------------------------------------
 
 VOWEL_ROWS = [
-    ['1',  'מָ',                      '', '', ''],
-    ['2',  'מַ',                      '', '', ''],
-    ['3',  'מֹ',                      '', '', ''],
-    ['4',  'מִ',                      '', '', ''],
-    ['5',  'מֵ',                      '', '', ''],
-    ['6',  'מֶ',                      '', '', ''],
-    ['7',  'מֻ',                      '', '', ''],
-    ['8',  'מוּ',                     '', '', ''],
-    ['9',  'מוֹ',                     '', '', ''],
-    ['10', 'מִי',                     '', '', ''],
-    ['11', 'מֵי',                     '', '', ''],
-    ['12', 'מְ (word-initial)',        '', '', ''],
-    ['13', 'מְ (word-final)',          '', '', ''],
-    ['14', 'מָ (closed, unaccented)', '', '', ''],
-    ['15', 'מֲ',                      '', '', ''],
-    ['16', 'מֱ',                      '', '', ''],
-    ['17', 'מֳ',                      '', '', ''],
-    ['18', 'אָה',                     '', '', ''],
-    ['19', 'אֹה',                     '', '', ''],
-    ['20', 'אֵה',                     '', '', ''],
+    ['1',  'בָּ (open, accented)',      '', '', ''],
+    ['2',  'בַּ',                       '', '', ''],
+    ['3',  'בָּ (closed, unaccented)',  '', '', ''],
+    ['4',  'בֵּ',                       '', '', ''],
+    ['5',  'בֶּ',                       '', '', ''],
+    ['6',  'בִּ',                       '', '', ''],
+    ['7',  'מִי',                       '', '', ''],
+    ['8',  'מֵי',                       '', '', ''],
+    ['9',  'בֹּ',                       '', '', ''],
+    ['10', 'בּוֹ',                      '', '', ''],
+    ['11', 'בּוּ',                      '', '', ''],
+    ['12', 'בֻּ',                       '', '', ''],
+    ['13', 'מְ (word-initial)',          '', '', ''],
+    ['14', 'מֲ',                        '', '', ''],
+    ['15', 'מֱ',                        '', '', ''],
 ]
 
 VOWEL_ANSWERS = [
-    ['1',  'מָ',                      'Qamets',        'A',       'Long'],
-    ['2',  'מַ',                      'Pathach',       'A',       'Short'],
-    ['3',  'מֹ',                      'Holem',         'O',       'Long'],
-    ['4',  'מִ',                      'Hireq',         'I',       'Short'],
-    ['5',  'מֵ',                      'Tsere',         'E',       'Long'],
-    ['6',  'מֶ',                      'Seghol',        'E',       'Short'],
-    ['7',  'מֻ',                      'Qibbuts',       'U',       'Short'],
-    ['8',  'מוּ',                     'Shureq',        'U',       'Long'],
-    ['9',  'מוֹ',                     'Holem Waw',     'O',       'Long'],
-    ['10', 'מִי',                     'Hireq Yod',     'I',       'Long'],
-    ['11', 'מֵי',                     'Tsere Yod',     'E',       'Long'],
-    ['12', 'מְ',                      'Vocal Shewa',   'Reduced', 'Reduced'],
-    ['13', 'מְ',                      'Silent Shewa',  '—',       '—'],
-    ['14', 'מָ',                      'Qamets Hatuf',  'O',       'Short'],
-    ['15', 'מֲ',                      'Hateph Pathach','A',       'Reduced'],
-    ['16', 'מֱ',                      'Hateph Seghol', 'E',       'Reduced'],
-    ['17', 'מֳ',                      'Hateph Qamets', 'O',       'Reduced'],
-    ['18', 'אָה',                     'Qamets He',     'A',       'Long'],
-    ['19', 'אֹה',                     'Holem He',      'O',       'Long'],
-    ['20', 'אֵה',                     'Tsere He',      'E',       'Long'],
+    ['1',  'בָּ',  'Qamets',         'A',       'Long'],
+    ['2',  'בַּ',  'Pathach',        'A',       'Short'],
+    ['3',  'בָּ',  'Qamets Hatuf',   'O',       'Short'],
+    ['4',  'בֵּ',  'Tsere',          'E',       'Long'],
+    ['5',  'בֶּ',  'Seghol',         'E',       'Short'],
+    ['6',  'בִּ',  'Hireq',          'I',       'Short'],
+    ['7',  'מִי',  'Hireq Yod',      'I',       'Long'],
+    ['8',  'מֵי',  'Tsere Yod',      'E',       'Long'],
+    ['9',  'בֹּ',  'Holem',          'O',       'Long'],
+    ['10', 'בּוֹ', 'Holem Waw',      'O',       'Long'],
+    ['11', 'בּוּ', 'Shureq',         'U',       'Long'],
+    ['12', 'בֻּ',  'Qibbuts',        'U',       'Short'],
+    ['13', 'מְ',   'Vocal Shewa',    'Reduced', 'Reduced'],
+    ['14', 'מֲ',   'Hateph Pathach', 'A',       'Reduced'],
+    ['15', 'מֱ',   'Hateph Seghol',  'E',       'Reduced'],
 ]
 
 
@@ -166,14 +146,13 @@ class VowelReviewPDF(ExercisePDF):
         self.add_instructions(
             'For each pointed Hebrew form shown, identify: (1) Vowel Name, '
             '(2) Vowel Class (A / E / I / O / U / Reduced), (3) Quantity (Long / Short / Reduced). '
-            'The letter מ (Mem) is used as the carrier consonant for most items; '
-            'א (Alef) for word-final ה forms.'
+            'Items 1–3 test the critical Qamets / Pathach / Qamets Hatuf distinction.'
         )
-        self.add_section_heading('Exercise — 20 items')
+        self.add_section_heading('Exercise — 15 items')
         self.add_generic_table(
             headers=['#', 'Form', 'Vowel Name', 'Class', 'Quantity'],
             rows=VOWEL_ROWS,
-            col_ratios=[0.06, 0.22, 0.30, 0.18, 0.24],
+            col_ratios=[0.06, 0.26, 0.28, 0.16, 0.24],
             heb_cols=[1],
             show_answers=False,
         )
@@ -181,7 +160,7 @@ class VowelReviewPDF(ExercisePDF):
         self.add_generic_table(
             headers=['#', 'Form', 'Vowel Name', 'Class', 'Quantity'],
             rows=VOWEL_ANSWERS,
-            col_ratios=[0.06, 0.22, 0.30, 0.18, 0.24],
+            col_ratios=[0.06, 0.26, 0.28, 0.16, 0.24],
             heb_cols=[1],
             show_answers=True,
             answer_rows=VOWEL_ANSWERS,
@@ -193,39 +172,39 @@ class VowelReviewPDF(ExercisePDF):
 # ---------------------------------------------------------------------------
 
 SYLL_ROWS = [
-    ['1',  'אָב',   '', '', '', ''],
-    ['2',  'בֵּן',  '', '', '', ''],
-    ['3',  'בַּיִת','', '', '', ''],
-    ['4',  'קוֹל', '', '', '', ''],
-    ['5',  'יָד',   '', '', '', ''],
-    ['6',  'מַיִם','', '', '', ''],
-    ['7',  'שֶׁמֶשׁ','','', '', ''],
-    ['8',  'אָדָם','', '', '', ''],
-    ['9',  'פֶּה', '', '', '', ''],
-    ['10', 'לֵב',  '', '', '', ''],
-    ['11', 'עֵץ',  '', '', '', ''],
-    ['12', 'אֱמֶת','', '', '', ''],
-    ['13', 'נֶפֶשׁ','','', '', ''],
-    ['14', 'מָוֶת','', '', '', ''],
-    ['15', 'חֶרֶב','', '', '', ''],
+    ['1',  'בַּיִת', '', '', '', ''],
+    ['2',  'מַיִם',  '', '', '', ''],
+    ['3',  'שֶׁמֶשׁ','', '', '', ''],
+    ['4',  'אָדָם',  '', '', '', ''],
+    ['5',  'אֱמֶת',  '', '', '', ''],
+    ['6',  'נֶפֶשׁ', '', '', '', ''],
+    ['7',  'מָוֶת',  '', '', '', ''],
+    ['8',  'חֶרֶב',  '', '', '', ''],
+    ['9',  'אָמַר',  '', '', '', ''],
+    ['10', 'בֹּקֶר', '', '', '', ''],
+    ['11', 'עֶרֶב',  '', '', '', ''],
+    ['12', 'פְּנֵי',  '', '', '', ''],
+    ['13', 'מָקוֹם', '', '', '', ''],
+    ['14', 'בְּרָכָה','','', '', ''],
+    ['15', 'יְהוּדָה','','', '', ''],
 ]
 
 SYLL_ANSWERS = [
-    ['1',  'אָב',   'אָב',     'C',   'אָב*',   '—'],
-    ['2',  'בֵּן',  'בֵּן',    'C',   'בֵּן*',  '—'],
-    ['3',  'בַּיִת','בַּ-יִת', 'O-C', 'יִת*',   '—'],
-    ['4',  'קוֹל', 'קוֹל',   'C',   'קוֹל*',  '—'],
-    ['5',  'יָד',   'יָד',     'C',   'יָד*',   '—'],
-    ['6',  'מַיִם','מַ-יִם',  'O-C', 'יִם*',   '—'],
-    ['7',  'שֶׁמֶשׁ','שֶׁ-מֶשׁ','O-C','מֶשׁ*',  '—'],
-    ['8',  'אָדָם','אָ-דָם',  'O-C', 'דָם*',   '—'],
-    ['9',  'פֶּה', 'פֶּה',    'O',   'פֶּה*',  '—'],
-    ['10', 'לֵב',  'לֵב',     'C',   'לֵב*',   '—'],
-    ['11', 'עֵץ',  'עֵץ',     'C',   'עֵץ*',   '—'],
-    ['12', 'אֱמֶת','אֱ-מֶת',  'O-C', 'מֶת*',   '—'],
-    ['13', 'נֶפֶשׁ','נֶ-פֶשׁ', 'O-C', 'פֶשׁ*',  '—'],
-    ['14', 'מָוֶת','מָ-וֶת',  'O-C', 'וֶת*',   '—'],
-    ['15', 'חֶרֶב','חֶ-רֶב',  'O-C', 'רֶב*',   '—'],
+    ['1',  'בַּיִת', 'בַּ-יִת',   'O-C',   'יִת*',   '—'],
+    ['2',  'מַיִם',  'מַ-יִם',    'O-C',   'יִם*',   '—'],
+    ['3',  'שֶׁמֶשׁ', 'שֶׁ-מֶשׁ', 'O-C',   'מֶשׁ*',  '—'],
+    ['4',  'אָדָם',  'אָ-דָם',    'O-C',   'דָם*',   '—'],
+    ['5',  'אֱמֶת',  'אֱ-מֶת',    'O-C',   'מֶת*',   '—'],
+    ['6',  'נֶפֶשׁ', 'נֶ-פֶשׁ',   'O-C',   'פֶשׁ*',  '—'],
+    ['7',  'מָוֶת',  'מָ-וֶת',    'O-C',   'וֶת*',   '—'],
+    ['8',  'חֶרֶב',  'חֶ-רֶב',    'O-C',   'רֶב*',   '—'],
+    ['9',  'אָמַר',  'אָ-מַר',    'O-C',   'מַר*',   '—'],
+    ['10', 'בֹּקֶר', 'בֹּ-קֶר',   'O-C',   'קֶר*',   '—'],
+    ['11', 'עֶרֶב',  'עֶ-רֶב',    'O-C',   'רֶב*',   '—'],
+    ['12', 'פְּנֵי',  'פְּ-נֵי',   'O-O',   'נֵי*',   '—'],
+    ['13', 'מָקוֹם', 'מָ-קוֹם',   'O-C',   'קוֹם*',  '—'],
+    ['14', 'בְּרָכָה','בְּ-רָ-כָה','O-O-O', 'כָה*',   '—'],
+    ['15', 'יְהוּדָה','יְ-הוּ-דָה','O-O-O', 'דָה*',   '—'],
 ]
 
 

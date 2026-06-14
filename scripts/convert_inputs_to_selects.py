@@ -18,6 +18,15 @@ from bs4 import BeautifulSoup, Tag
 BASE_DIR = Path("/Users/dnovick/gitrepos/projects/bible/berean-bible-bots")
 
 FILES = [
+    # Session review exercises — Ch1–3 (session05)
+    # These exercises use class="f" inputs; qualifying columns are converted to selects.
+    "data/courses/bbh/bbh-2026.1/session-05/exercises/session05-letter-review/session05-letter-review.html",
+    "data/courses/bbh/bbh-2026.1/session-05/exercises/session05-vowel-review/session05-vowel-review.html",
+    "data/courses/bbh/bbh-2026.1/session-05/exercises/"
+    "session05-syllabification-review/session05-syllabification-review.html",
+    "data/courses/bbh/bbh-2026.1/session-05/exercises/session05-dagesh-review/session05-dagesh-review.html",
+    "data/courses/bbh/bbh-2026.1/session-05/exercises/session05-shewa-review/session05-shewa-review.html",
+    # Lesson exercises — Ch4+
     "data/lessons/bbh/ch4/exercises/ch4-noun-parsing/ch4-noun-parsing.html",
     "data/lessons/bbh/ch7/exercises/ch7-adjective-usage/ch7-adjective-usage.html",
     "data/lessons/bbh/ch12/exercises/ch12-verb-overview/ch12-verb-overview.html",
@@ -58,7 +67,7 @@ def detect_style_from_answers(soup: BeautifulSoup) -> dict:
     """
     all_td_text = []
     for row in soup.find_all("tr"):
-        cls = row.get("class", [])
+        cls = list(row.get("class") or [])
         # Answer rows have class containing "ans-row", "answer-row", etc.
         is_ans = any("ans" in c for c in cls) or any("answer" in c for c in cls)
         if is_ans:
@@ -70,8 +79,16 @@ def detect_style_from_answers(soup: BeautifulSoup) -> dict:
     # Check for dotted patterns
     gender_dot = any(t in ("m.", "f.", "c.") for t in all_td_text)
     number_dot = any(t in ("s.", "pl.", "du.") for t in all_td_text)
+    # Detect Dagesh and Shewa type answer styles
+    has_forte_lene = any(t in ("Forte", "Lene") for t in all_td_text)
+    has_vocal_silent = any(t in ("Vocal", "Silent") for t in all_td_text)
 
-    return {"gender_dot": gender_dot, "number_dot": number_dot}
+    return {
+        "gender_dot": gender_dot,
+        "number_dot": number_dot,
+        "has_forte_lene": has_forte_lene,
+        "has_vocal_silent": has_vocal_silent,
+    }
 
 
 def get_column_options(header_text: str, style: dict) -> list | None:
@@ -134,6 +151,56 @@ def get_column_options(header_text: str, style: dict) -> list | None:
             "Participle",
         ]
 
+    # ── Session review exercise column types ─────────────────────────────────
+
+    # Letter name (all BBH letter names including sofit and hard/soft variants)
+    if h == "name":
+        return [
+            "Alef", "Ayin", "Bet", "Bet (hard)", "Bet (soft)",
+            "Dalet", "Dalet (hard)", "Dalet (soft)",
+            "Gimel", "Gimel (hard)", "Gimel (soft)",
+            "He", "Ḥet", "Kaf", "Kaf (hard)", "Kaf (soft)", "Kaf Sofit",
+            "Lamed", "Mem", "Mem Sofit", "Nun", "Nun Sofit",
+            "Pe", "Pe (hard)", "Pe (soft)", "Pe Sofit",
+            "Qof", "Resh", "Samek", "Shin", "Sin",
+            "Taw", "Taw (hard)", "Taw (soft)", "Tet",
+            "Tsade", "Tsade Sofit", "Waw", "Yod", "Zayin",
+        ]
+
+    # Vowel name (BBH vowel names)
+    if h == "vowel name":
+        return [
+            "Qamets", "Pathach", "Qamets Hatuf", "Tsere", "Seghol",
+            "Hireq", "Hireq Yod", "Tsere Yod", "Holem", "Holem Waw",
+            "Shureq", "Qibbuts", "Qamets He", "Holem He", "Tsere He",
+            "Seghol He", "Vocal Shewa", "Silent Shewa",
+            "Hateph Pathach", "Hateph Seghol", "Hateph Qamets",
+        ]
+
+    # Vowel class (A/E/I/O/U/Reduced)
+    if h == "class":
+        return ["A", "E", "I", "O", "U", "Reduced", "—"]
+
+    # Vowel quantity (Long/Short/Reduced)
+    if h == "quantity":
+        return ["Long", "Short", "Reduced", "—"]
+
+    # Syllable type pattern (O/C combinations)
+    if h in ("types (o/c)", "types"):
+        return ["O", "C", "O-C", "C-O", "O-O", "C-C", "O-O-C", "C-O-C", "O-O-O", "O-C-C"]
+
+    # Qamets Hatuf indicator
+    if h in ("qamets hatuf?", "qh?"):
+        return ["—", "Yes", "No"]
+
+    # Dagesh type (Forte/Lene) — detected from answer rows
+    if h in ("forte or lene?", "type") and style.get("has_forte_lene"):
+        return ["Forte", "Lene"]
+
+    # Shewa type (Vocal/Silent) — detected from answer rows
+    if h == "type" and style.get("has_vocal_silent"):
+        return ["Vocal", "Silent"]
+
     return None  # free-text column; leave as input
 
 
@@ -144,6 +211,13 @@ SELECT_CSS = (
     "select.parse-field { font-size: .9em; padding: 2px 4px; "
     "border: 1px solid #aaa; border-radius: 3px; min-width: 80px; }"
 )
+# CSS for session exercises that use class="f" (already injected at file creation;
+# this constant is kept for reference — inject_select_css checks for both).
+SELECT_CSS_F = (
+    "select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; "
+    "border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; "
+    "font-size: .87rem; background: #fafff8; }"
+)
 
 
 def build_select(options: list, original_input: Tag, soup: BeautifulSoup) -> Tag:
@@ -152,8 +226,9 @@ def build_select(options: list, original_input: Tag, soup: BeautifulSoup) -> Tag
     Preserve id, name, and data-* attributes from the original input.
     """
     sel = soup.new_tag("select")
-    # Copy over class
-    sel["class"] = "parse-field"
+    # Preserve the original class (parse-field or f) so CSS rules match
+    orig_classes = list(original_input.get("class") or ["parse-field"])
+    sel["class"] = orig_classes  # type: ignore[assignment]  # BS4 accepts list at runtime
     # Preserve id if present
     if original_input.get("id"):
         sel["id"] = original_input["id"]
@@ -179,8 +254,8 @@ def build_select(options: list, original_input: Tag, soup: BeautifulSoup) -> Tag
 
 def is_answer_row(tr: Tag) -> bool:
     """Return True if this <tr> is an answer/reveal row (should not be modified)."""
-    cls = tr.get("class", [])
-    row_id = tr.get("id", "")
+    cls = list(tr.get("class") or [])
+    row_id = str(tr.get("id") or "")
     return (
         any("ans" in c for c in cls)
         or any("answer" in c for c in cls)
@@ -212,12 +287,16 @@ def fix_clear_all(html_str: str) -> str:
 def inject_select_css(soup: BeautifulSoup) -> bool:
     """
     Add SELECT_CSS to the <style> block if not already present.
+    Handles both parse-field (lesson exercises) and f (session exercises) classes.
     Returns True if injected, False if already there.
     """
     style_tag = soup.find("style")
     if style_tag is None:
         return False
     existing = style_tag.string or ""
+    # For session exercises (class="f"), select.f CSS is already written at creation time
+    if "select.f" in existing:
+        return False
     if "select.parse-field" in existing:
         return False
     # Append at end of style block
@@ -280,14 +359,16 @@ def process_file(rel_path: str) -> dict:
                 if col_idx >= len(tds):
                     continue
                 td = tds[col_idx]
-                # Find input.parse-field (but NOT inputs with 'wide' class)
+                # Find input.parse-field or input.f (session exercises use .f)
                 inp = td.find("input", class_="parse-field")
                 if inp is None:
+                    inp = td.find("input", class_="f")
+                if inp is None:
                     continue
-                classes = inp.get("class", [])
+                classes = list(inp.get("class") or [])
                 if "wide" in classes:
                     continue
-                # Build and substitute the select
+                # Build and substitute the select (preserving original class)
                 sel = build_select(options, inp, soup)
                 inp.replace_with(sel)
                 total_selects += 1
@@ -322,7 +403,7 @@ def process_file(rel_path: str) -> dict:
     }
 
 
-def main():
+def main() -> None:
     print("=" * 70)
     print("Converting <input class='parse-field'> → <select> in BBH exercises")
     print("=" * 70)

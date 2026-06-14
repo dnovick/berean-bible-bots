@@ -20,6 +20,8 @@
   td.target { direction: rtl; unicode-bidi: embed; font-size: 1.6em; font-weight: bold; color: #1a2744; text-align: center; }
   input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
   input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
   .ans-row { display: none; background: #f0faf0; }
   .ans-row td { font-size: .85rem; color: #2a6e2a; padding: .28rem .45rem; }
   .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
@@ -35,6 +37,7 @@
   @media print {
     .controls, button.rbtn { display: none; }
     input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    select.f { border: none; border-bottom: 1px solid #aaa; appearance: none; }
     .ans-row { display: none !important; }
   }
 </style>
@@ -67,34 +70,34 @@
 <table>
   <tr><th>#</th><th>Word</th><th>Target</th><th>Forte or Lene?</th><th>Reason</th><th></th></tr>
 
-  <tr><td class="num">1</td><td class="heb">הַשָּׁמַיִם</td><td class="target">שּׁ</td><td><input class="f" id="1-t" placeholder="Forte / Lene"></td><td><input class="f" id="1-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
+  <tr><td class="num">1</td><td class="heb">הַשָּׁמַיִם</td><td class="target">שּׁ</td><td><select class="f" id="1-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="1-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">הַשָּׁמַיִם</td><td class="target">שּׁ</td><td><span class="forte">Forte</span></td><td>Shin is not a Begadkephat letter → any dagesh in Shin must be Forte; article הַ assimilates into שּׁ</td><td></td></tr>
 
-  <tr><td class="num">2</td><td class="heb">בְּרֵאשִׁית</td><td class="target">בּ</td><td><input class="f" id="2-t" placeholder="Forte / Lene"></td><td><input class="f" id="2-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td></tr>
+  <tr><td class="num">2</td><td class="heb">בְּרֵאשִׁית</td><td class="target">בּ</td><td><select class="f" id="2-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="2-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">בְּרֵאשִׁית</td><td class="target">בּ</td><td><span class="lene">Lene</span></td><td>Bet is a Begadkephat in word-initial position → Dagesh Lene (hard b sound)</td><td></td></tr>
 
-  <tr><td class="num">3</td><td class="heb">כִּי</td><td class="target">כּ</td><td><input class="f" id="3-t" placeholder="Forte / Lene"></td><td><input class="f" id="3-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td></tr>
+  <tr><td class="num">3</td><td class="heb">כִּי</td><td class="target">כּ</td><td><select class="f" id="3-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="3-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">כִּי</td><td class="target">כּ</td><td><span class="lene">Lene</span></td><td>Kaf is a Begadkephat in word-initial position → Dagesh Lene (hard k sound)</td><td></td></tr>
 
-  <tr><td class="num">4</td><td class="heb">הַמָּיִם</td><td class="target">מּ</td><td><input class="f" id="4-t" placeholder="Forte / Lene"></td><td><input class="f" id="4-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td></tr>
+  <tr><td class="num">4</td><td class="heb">הַמָּיִם</td><td class="target">מּ</td><td><select class="f" id="4-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="4-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">הַמָּיִם</td><td class="target">מּ</td><td><span class="forte">Forte</span></td><td>Mem is not a Begadkephat → any dagesh in Mem is Forte; article הַ assimilates into מּ</td><td></td></tr>
 
-  <tr><td class="num">5</td><td class="heb">תּוֹרָה</td><td class="target">תּ</td><td><input class="f" id="5-t" placeholder="Forte / Lene"></td><td><input class="f" id="5-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td></tr>
+  <tr><td class="num">5</td><td class="heb">תּוֹרָה</td><td class="target">תּ</td><td><select class="f" id="5-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="5-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">תּוֹרָה</td><td class="target">תּ</td><td><span class="lene">Lene</span></td><td>Taw is a Begadkephat in word-initial position → Dagesh Lene (hard t sound)</td><td></td></tr>
 
-  <tr><td class="num">6</td><td class="heb">מִשְׁפָּט</td><td class="target">פּ</td><td><input class="f" id="6-t" placeholder="Forte / Lene"></td><td><input class="f" id="6-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td></tr>
+  <tr><td class="num">6</td><td class="heb">מִשְׁפָּט</td><td class="target">פּ</td><td><select class="f" id="6-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="6-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">מִשְׁפָּט</td><td class="target">פּ</td><td><span class="forte">Forte</span></td><td>Pe is Begadkephat but follows the closed syllable מִשׁ (silent shewa under Shin) → Dagesh Forte, not Lene</td><td></td></tr>
 
-  <tr><td class="num">7</td><td class="heb">גּוֹי</td><td class="target">גּ</td><td><input class="f" id="7-t" placeholder="Forte / Lene"></td><td><input class="f" id="7-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td></tr>
+  <tr><td class="num">7</td><td class="heb">גּוֹי</td><td class="target">גּ</td><td><select class="f" id="7-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="7-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">גּוֹי</td><td class="target">גּ</td><td><span class="lene">Lene</span></td><td>Gimel is a Begadkephat in word-initial position → Dagesh Lene (hard g sound)</td><td></td></tr>
 
-  <tr><td class="num">8</td><td class="heb">וַיִּקְרָא</td><td class="target">יּ</td><td><input class="f" id="8-t" placeholder="Forte / Lene"></td><td><input class="f" id="8-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td></tr>
+  <tr><td class="num">8</td><td class="heb">וַיִּקְרָא</td><td class="target">יּ</td><td><select class="f" id="8-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="8-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">וַיִּקְרָא</td><td class="target">יּ</td><td><span class="forte">Forte</span></td><td>Yod is not a Begadkephat → any dagesh in Yod is Forte; the Wayyiqtol prefix וַיִּ‐ doubles the prefix yod</td><td></td></tr>
 
-  <tr><td class="num">9</td><td class="heb">הַפָּנִים</td><td class="target">פּ</td><td><input class="f" id="9-t" placeholder="Forte / Lene"></td><td><input class="f" id="9-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td></tr>
+  <tr><td class="num">9</td><td class="heb">הַפָּנִים</td><td class="target">פּ</td><td><select class="f" id="9-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="9-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">הַפָּנִים</td><td class="target">פּ</td><td><span class="forte">Forte</span></td><td>Pe is Begadkephat but follows definite article הַ (assimilation) → Dagesh Forte, not Lene</td><td></td></tr>
 
-  <tr><td class="num">10</td><td class="heb">דְּבַר</td><td class="target">דּ</td><td><input class="f" id="10-t" placeholder="Forte / Lene"></td><td><input class="f" id="10-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td></tr>
+  <tr><td class="num">10</td><td class="heb">דְּבַר</td><td class="target">דּ</td><td><select class="f" id="10-t"><option value="">—</option><option>Forte</option><option>Lene</option></select></td><td><input class="f" id="10-r" placeholder="reason"></td><td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td></tr>
   <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">דְּבַר</td><td class="target">דּ</td><td><span class="lene">Lene</span></td><td>Dalet is a Begadkephat at the beginning of the stem (word-initial after the vocal shewa prefix) → Dagesh Lene (hard d sound)</td><td></td></tr>
 </table>
 
@@ -116,7 +119,10 @@ function hideAll() {
   document.querySelectorAll('.rbtn').forEach(b => { b.classList.remove('on'); b.textContent = '▶ Answer'; });
 }
 function clearAll() {
-  document.querySelectorAll('input.f').forEach(i => i.value = '');
+  document.querySelectorAll('input.f, select.f').forEach(function(el) {
+    if (el.tagName === 'SELECT') el.selectedIndex = 0;
+    else el.value = '';
+  });
 }
 </script>
 </body>
