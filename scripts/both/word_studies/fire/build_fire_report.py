@@ -105,7 +105,7 @@ GENRE_MAP = {
     # Minor Prophets
     'Hos': 'Minor Prophets', 'Jol': 'Minor Prophets', 'Amo': 'Minor Prophets',
     'Oba': 'Minor Prophets', 'Jon': 'Minor Prophets', 'Mic': 'Minor Prophets',
-    'Nah': 'Minor Prophets', 'Hab': 'Minor Prophets', 'Zep': 'Minor Prophets',
+    'Nam': 'Minor Prophets', 'Hab': 'Minor Prophets', 'Zep': 'Minor Prophets',
     'Hag': 'Minor Prophets', 'Zec': 'Minor Prophets', 'Mal': 'Minor Prophets',
     # NT Gospels
     'Mat': 'Gospels', 'Mrk': 'Gospels', 'Luk': 'Gospels', 'Jhn': 'Gospels',
@@ -290,9 +290,9 @@ VERSE_CATEGORY: dict = {
     ('Amo', 1, 14): JUDGMENT,     # fire on Ammon
     ('Amo', 2, 2): JUDGMENT,      # fire on Moab
     ('Amo', 2, 5): JUDGMENT,      # fire on Judah
-    ('Nah', 1, 6): JUDGMENT,      # fire poured out in wrath
-    ('Nah', 3, 13): JUDGMENT,     # fire on Nineveh's bars
-    ('Nah', 3, 15): JUDGMENT,
+    ('Nam', 1, 6): JUDGMENT,      # fire poured out in wrath
+    ('Nam', 3, 13): JUDGMENT,     # fire on Nineveh's bars
+    ('Nam', 3, 15): JUDGMENT,
     ('Zep', 1, 18): JUDGMENT,     # fire of jealousy consuming the whole earth
     ('Zep', 3, 8): JUDGMENT,
     ('Zec', 9, 4): JUDGMENT,      # fire consuming Tyre
@@ -412,8 +412,20 @@ kjv = trans[trans['translation'] == 'KJV']
 print('Data loaded.')
 
 
+# Hebrew verse numbers that differ from KJV English versification.
+# Keys: (book, heb_chapter, heb_verse) → (kjv_chapter, kjv_verse).
+# Ezekiel 21: Hebrew vv.1-5 = KJV 20:45-49; Hebrew vv.6-37 = KJV 21:1-32.
+# Malachi 3: Hebrew vv.19-24 = KJV 4:1-6.
+_HEB_TO_KJV: dict[tuple[str, int, int], tuple[int, int]] = {
+    **{('Ezk', 21, v): (20, 44 + v) for v in range(1, 6)},
+    **{('Ezk', 21, v): (21, v - 5) for v in range(6, 38)},
+    **{('Mal', 3, v): (4, v - 18) for v in range(19, 25)},
+}
+
+
 def kjv_text(book: str, ch: int, vs: int) -> str:
-    r = kjv[(kjv['book_id'] == book) & (kjv['chapter'] == ch) & (kjv['verse'] == vs)]
+    kjv_ch, kjv_vs = _HEB_TO_KJV.get((book, ch, vs), (ch, vs))
+    r = kjv[(kjv['book_id'] == book) & (kjv['chapter'] == kjv_ch) & (kjv['verse'] == kjv_vs)]
     return r['text'].values[0] if len(r) else ''
 
 
@@ -916,11 +928,11 @@ report = f"""# Fire in Scripture: A Semantic Study
 
 **Terms included in this study:**
 
-*Hebrew OT:* אֵשׁ H784 (fire), אִשֶּׁה H801 (offering by fire), לַהַב H3857 (flame), לַפִּיד H3940 (torch/flame), נוּר H5135 (Aramaic: fire — Daniel).  # noqa: E501
+*Hebrew OT:* אֵשׁ H784 (fire), אִשֶּׁה H801 (offering by fire), לַהַב H3857 (flame), לַפִּיד H3940 (torch/flame), נוּר H5135 (Aramaic: fire — Daniel).
 
-*Greek NT:* πῦρ G4442 (fire), φλόξ G5395 (flame), πυρά G4443 (bonfire), πυρόω G4448 (to be ablaze), πύρωσις G4451 (fiery trial/burning), κατακαίω G2618 (to burn up completely).  # noqa: E501
+*Greek NT:* πῦρ G4442 (fire), φλόξ G5395 (flame), πυρά G4443 (bonfire), πυρόω G4448 (to be ablaze), πύρωσις G4451 (fiery trial/burning), κατακαίω G2618 (to burn up completely).
 
-*Not included:* General burning verbs (H1197 בָּעַר, H3341 יָקַד, G2545 καίω) unless they appear in direct fire-noun constructions captured above.  # noqa: E501
+*Not included:* General burning verbs (H1197 בָּעַר, H3341 יָקַד, G2545 καίω) unless they appear in direct fire-noun constructions captured above.
 
 ---
 
@@ -1007,7 +1019,7 @@ report = f"""# Fire in Scripture: A Semantic Study
 
 | File | Contents |
 |---|---|
-| [fire_all_references.csv](fire_all_references.csv) | All OT + NT fire references: reference, form, lemma, Strong's, category, KJV text |  # noqa: E501
+| [fire_all_references.csv](fire_all_references.csv) | All OT + NT fire references: reference, form, lemma, Strong's, category, KJV text |
 """
 
 # Write report to both output/ and mkdocs_src/

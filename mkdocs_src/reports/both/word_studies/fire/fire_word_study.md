@@ -62,11 +62,11 @@
 
 **Terms included in this study:**
 
-*Hebrew OT:* אֵשׁ H784 (fire), אִשֶּׁה H801 (offering by fire), לַהַב H3857 (flame), לַפִּיד H3940 (torch/flame), נוּר H5135 (Aramaic: fire — Daniel).  # noqa: E501
+*Hebrew OT:* אֵשׁ H784 (fire), אִשֶּׁה H801 (offering by fire), לַהַב H3857 (flame), לַפִּיד H3940 (torch/flame), נוּר H5135 (Aramaic: fire — Daniel).
 
-*Greek NT:* πῦρ G4442 (fire), φλόξ G5395 (flame), πυρά G4443 (bonfire), πυρόω G4448 (to be ablaze), πύρωσις G4451 (fiery trial/burning), κατακαίω G2618 (to burn up completely).  # noqa: E501
+*Greek NT:* πῦρ G4442 (fire), φλόξ G5395 (flame), πυρά G4443 (bonfire), πυρόω G4448 (to be ablaze), πύρωσις G4451 (fiery trial/burning), κατακαίω G2618 (to burn up completely).
 
-*Not included:* General burning verbs (H1197 בָּעַר, H3341 יָקַד, G2545 καίω) unless they appear in direct fire-noun constructions captured above.  # noqa: E501
+*Not included:* General burning verbs (H1197 בָּעַר, H3341 יָקַד, G2545 καίω) unless they appear in direct fire-noun constructions captured above.
 
 ---
 
@@ -77,13 +77,13 @@
 | Category | Count | % of Total |
 |---|---|---|
 | Divine Presence / Theophany | 61 | 13% |
-| Divine Judgment / Wrath | 55 | 11% |
+| Divine Judgment / Wrath | 58 | 12% |
 | Eschatological | 1 | 0% |
 | Purification / Refining | 6 | 1% |
 | Symbolic / Metaphorical | 4 | 1% |
 | Ambiguous | 4 | 1% |
 | Offering by Fire | 65 | 13% |
-| Mundane | 287 | 59% |
+| Mundane | 284 | 59% |
 
 
 ### OT: Divine Presence / Theophany
@@ -120,12 +120,12 @@
 | Deu 9:15 | אֵ֑שׁ | אֵשׁ (H784) | So I turned and came down from the mount, and the mount burned with fire: and the two tables of the … |
 | Deu 10:4 | אֵ֖שׁ | אֵשׁ (H784) | And he wrote on the tables, according to the first writing, the ten commandments, which the Lord spa… |
 | Deu 33:2 | אֵ֥שׁ | אֵשׁ (H784) | And he said, The Lord came from Sinai, and rose up from Seir unto them; he shined forth from mount P… |
-| 1Ki 18:38 | אֵשׁ־ | אֵשׁ (H784) |  |
-| 1Ki 19:12 | אֵ֔שׁ | אֵשׁ (H784) |  |
-| 2Ki 2:11 | אֵשׁ֙ | אֵשׁ (H784) |  |
-| 2Ki 6:17 | אֵ֖שׁ | אֵשׁ (H784) |  |
-| 2Ch 7:1 | אֵ֗שׁ | אֵשׁ (H784) |  |
-| 2Ch 7:3 | אֵ֔שׁ | אֵשׁ (H784) |  |
+| 1Ki 18:38 | אֵשׁ־ | אֵשׁ (H784) | Then the fire of the Lord fell, and consumed the burnt sacrifice, and the wood, and the stones, and … |
+| 1Ki 19:12 | אֵ֔שׁ | אֵשׁ (H784) | And after the earthquake a fire; but the Lord was not in the fire: and after the fire a still small … |
+| 2Ki 2:11 | אֵשׁ֙ | אֵשׁ (H784) | And it came to pass, as they still went on, and talked, that, behold, there appeared a chariot of fi… |
+| 2Ki 6:17 | אֵ֖שׁ | אֵשׁ (H784) | And Elisha prayed, and said, Lord, I pray thee, open his eyes, that he may see. And the Lord opened … |
+| 2Ch 7:1 | אֵ֗שׁ | אֵשׁ (H784) | Now when Solomon had made an end of praying, the fire came down from heaven, and consumed the burnt … |
+| 2Ch 7:3 | אֵ֔שׁ | אֵשׁ (H784) | And when all the children of Israel saw how the fire came down, and the glory of the Lord upon the h… |
 | Neh 9:12 | אֵשׁ֙ | אֵשׁ (H784) | Moreover thou leddest them in the day by a cloudy pillar; and in the night by a pillar of fire, to g… |
 | Neh 9:19 | אֵ֤שׁ | אֵשׁ (H784) | Yet thou in thy manifold mercies forsookest them not in the wilderness: the pillar of the cloud depa… |
 | Psa 78:14 | אֵֽשׁ | אֵשׁ (H784) | In the daytime also he led them with a cloud, and all the night with a light of fire. |
@@ -152,8 +152,8 @@
 | Num 11:1 | אֵ֣שׁ | אֵשׁ (H784) | And when the people complained, it displeased the Lord: and the Lord heard it; and his anger was kin… |
 | Num 11:3 | אֵ֥שׁ | אֵשׁ (H784) | And he called the name of the place Taberah: because the fire of the Lord burnt among them. |
 | Num 16:35 | אֵ֥שׁ | אֵשׁ (H784) | And there came out a fire from the Lord, and consumed the two hundred and fifty men that offered inc… |
-| 2Sa 22:9 | אֵ֥שׁ | אֵשׁ (H784) |  |
-| 2Sa 22:13 | אֵֽשׁ | אֵשׁ (H784) |  |
+| 2Sa 22:9 | אֵ֥שׁ | אֵשׁ (H784) | There went up a smoke out of his nostrils, and fire out of his mouth devoured: coals were kindled by… |
+| 2Sa 22:13 | אֵֽשׁ | אֵשׁ (H784) | Through the brightness before him were coals of fire kindled. |
 | Psa 18:13 | אֵֽשׁ | אֵשׁ (H784) | The Lord also thundered in the heavens, and the Highest gave his voice; hail stones and coals of fir… |
 | Psa 50:3 | אֵשׁ־ | אֵשׁ (H784) | Our God shall come, and shall not keep silence: a fire shall devour before him, and it shall be very… |
 | Isa 5:24 | אֵ֗שׁ | אֵשׁ (H784) | Therefore as the fire devoureth the stubble, and the flame consumeth the chaff, so their root shall … |
@@ -192,6 +192,9 @@
 | Amo 1:14 | אֵשׁ֙ | אֵשׁ (H784) | But I will kindle a fire in the wall of Rabbah, and it shall devour the palaces thereof, with shouti… |
 | Amo 2:2 | אֵ֣שׁ | אֵשׁ (H784) | But I will send a fire upon Moab, and it shall devour the palaces of Kerioth: and Moab shall die wit… |
 | Amo 2:5 | אֵ֖שׁ | אֵשׁ (H784) | But I will send a fire upon Judah, and it shall devour the palaces of Jerusalem. |
+| Nam 1:6 | אֵ֔שׁ | אֵשׁ (H784) | Who can stand before his indignation? and who can abide in the fierceness of his anger? his fury is … |
+| Nam 3:13 | אֵ֖שׁ | אֵשׁ (H784) | Behold, thy people in the midst of thee are women: the gates of thy land shall be set wide open unto… |
+| Nam 3:15 | אֵ֔שׁ | אֵשׁ (H784) | There shall the fire devour thee; the sword shall cut thee off, it shall eat thee up like the canker… |
 | Zep 1:18 | אֵשׁ֙ | אֵשׁ (H784) | Neither their silver nor their gold shall be able to deliver them in the day of the Lord’s wrath; bu… |
 | Zep 3:8 | אֵ֣שׁ | אֵשׁ (H784) | Therefore wait ye upon me, saith the Lord, until the day that I rise up to the prey: for my determin… |
 | Zec 9:4 | אֵ֥שׁ | אֵשׁ (H784) | Behold, the Lord will cast her out, and he will smite her power in the sea; and she shall be devoure… |
@@ -238,7 +241,7 @@
 
 ### OT: Mundane
 
-**287 occurrences** across 31 books.
+**284 occurrences** across 31 books.
 
 These are cooking fires, torches, burning of cities in warfare, and other non-theological uses. Individual references are omitted; see `fire_all_references.csv` for the complete list.
 
@@ -442,7 +445,7 @@ _None identified within this study's term set._
 | History | 80 | — |
 | Poetry / Wisdom | 47 | — |
 | Major Prophets | 97 | — |
-| Minor Prophets | 34 | — |
+| Minor Prophets | 39 | — |
 | Gospels | — | 29 |
 | Acts | — | 8 |
 | Pauline Epistles | — | 10 |
@@ -480,4 +483,4 @@ _None identified within this study's term set._
 
 | File | Contents |
 |---|---|
-| [fire_all_references.csv](fire_all_references.csv) | All OT + NT fire references: reference, form, lemma, Strong's, category, KJV text |  # noqa: E501
+| [fire_all_references.csv](fire_all_references.csv) | All OT + NT fire references: reference, form, lemma, Strong's, category, KJV text |

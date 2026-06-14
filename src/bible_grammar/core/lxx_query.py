@@ -35,7 +35,7 @@ LXX_BOOK_ORDER = [
     '1Sa', '2Sa', '1Ki', '2Ki', '1Ch', '2Ch', 'Ezr', 'Neh',
     'Est', 'Job', 'Psa', 'Pro', 'Ecc', 'Sng', 'Isa', 'Jer',
     'Lam', 'Ezk', 'Dan', 'Hos', 'Jol', 'Amo', 'Oba', 'Jon',
-    'Mic', 'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
+    'Mic', 'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
 ]
 
 _BOOK_GROUP: dict[str, list[str]] = {
@@ -43,7 +43,7 @@ _BOOK_GROUP: dict[str, list[str]] = {
     'historical': ['Jos', 'Jdg', 'Rut', '1Sa', '2Sa', '1Ki', '2Ki', '1Ch', '2Ch', 'Ezr', 'Neh', 'Est'],  # noqa: E501
     'wisdom':    ['Job', 'Psa', 'Pro', 'Ecc', 'Sng'],
     'prophets':  ['Isa', 'Jer', 'Lam', 'Ezk', 'Dan', 'Hos', 'Jol', 'Amo', 'Oba', 'Jon',
-                  'Mic', 'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],
+                  'Mic', 'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],
 }
 
 _df_cache: pd.DataFrame | None = None

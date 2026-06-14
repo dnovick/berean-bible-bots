@@ -36,7 +36,7 @@ _CANON = [
     '1Ch', '2Ch', 'Ezr', 'Neh', 'Est',
     'Job', 'Psa', 'Pro', 'Ecc', 'Sng',
     'Isa', 'Jer', 'Lam', 'Ezk', 'Dan',
-    'Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic', 'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
+    'Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic', 'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
 ]
 
 BOOK_ORDER = {b: i for i, b in enumerate(_CANON)}
@@ -45,7 +45,7 @@ BOOK_GROUPS = {
     'Torah':            ['Gen', 'Exo', 'Lev', 'Num', 'Deu'],
     'Former Prophets':  ['Jos', 'Jdg', 'Rut', '1Sa', '2Sa', '1Ki', '2Ki'],
     'Writings':         ['1Ch', '2Ch', 'Ezr', 'Neh', 'Est', 'Job', 'Psa', 'Pro', 'Ecc', 'Sng', 'Lam'],  # noqa: E501
-    'Latter Prophets':  ['Isa', 'Jer', 'Ezk', 'Dan', 'Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic', 'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],  # noqa: E501
+    'Latter Prophets':  ['Isa', 'Jer', 'Ezk', 'Dan', 'Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic', 'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],  # noqa: E501
 }
 
 # Top 7 major prepositions (by OT frequency)

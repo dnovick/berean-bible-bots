@@ -177,7 +177,7 @@ _OT_BOOK_ORDER = [
     '1Sa', '2Sa', '1Ki', '2Ki', '1Ch', '2Ch', 'Ezr', 'Neh', 'Est',
     'Job', 'Psa', 'Pro', 'Ecc', 'Sol', 'Isa', 'Jer', 'Lam',
     'Eze', 'Dan', 'Hos', 'Joe', 'Amo', 'Oba', 'Jon', 'Mic',
-    'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
+    'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
 ]
 _NT_BOOK_ORDER = [
     'Mat', 'Mrk', 'Luk', 'Jhn', 'Act',
