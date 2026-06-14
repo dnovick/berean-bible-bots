@@ -6,8 +6,10 @@
 
 ## Agenda
 
-1. [Setting the Stage](session-01/setting-the-stage.md)
-1. [Course Goals](session-01/course-goals.md)
-1. [Course Logistics](session-01/course-logistics.md)
-1. [Grammar Terms Reference](session-01/grammar-terms.md)
-1. [Reading: The Shema](session-01/reading-deut-6-4.html)
+1. Welcome and Introductions (15 min)
+1. [Setting the Stage](session-01/setting-the-stage.md) (40 min)
+1. [Course Goals](session-01/course-goals.md) (20 min)
+1. [Course Logistics](session-01/course-logistics.md) (10 min)
+1. [Grammar Terms Reference](session-01/grammar-terms.md) (15 min)
+1. Q&A (10 min)
+1. [Reading: The Shema](session-01/reading-deut-6-4.html) (10 min)

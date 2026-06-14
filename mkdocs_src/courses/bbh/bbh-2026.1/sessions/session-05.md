@@ -2,7 +2,7 @@
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
 **Date:** Sep 3, 2026  
-**Instructor:** David Novick  
+**Instructor:** Preston Brown  
 
 ## Agenda
 
