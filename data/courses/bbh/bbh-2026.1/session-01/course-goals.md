@@ -2,7 +2,7 @@
 
 ## What We'll Cover
 
-- Biblical Hebrew Alphabet - Consonants and Vowels
+- Biblical Hebrew Alphabet – Consonants and Vowels
 - Biblical Hebrew Morphology
   - Biblical Hebrew Nouns
   - Biblical Hebrew Verbs
@@ -36,7 +36,9 @@ with His help, "study" (gk. σπουδάζω – strive) to "...rightly divide t
     - Please come prepared. Read the lesson material and syllabus before class.
     - Please practice the material outside class.
     - Please participate. Ask questions. Take part in class discussions and exercises.
-    - If I say something you believe to be factually incorrect, please bring it to my attention, ASAP.
+    - Don't take it for granted that we have not made a mistake. 
+If we say something you believe to be incorrect, please bring it to my attention, ASAP
+(1 Thess 5:21, 1 John 4:1).
     - If something isn't working well for you in class, please bring it to our attention.
     - If you have suggestions on what would make the class more valuable to you, please say so.
 
