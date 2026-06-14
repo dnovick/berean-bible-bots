@@ -418,12 +418,20 @@ def render_session_page(
         cslug = content_slug(sp_decl)
         subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
 
-    # Add reading names to section_urls so agenda items can auto-link to them
+    # Add reading names to section_urls so agenda items can auto-link to them.
+    # Register both the bare name ("Genesis 1:1–5") and the prefixed form
+    # ("Reading: Genesis 1:1–5") so manual agenda entries with either title link.
     for reading in readings:
         rname = reading.get("name", "")
         rfile = reading.get("file", "")
         if rname and rfile:
             section_urls[rname] = f"{sess_slug}/{rfile}"
+            section_urls[f"Reading: {rname}"] = f"{sess_slug}/{rfile}"
+
+    # Add "Exercises" to section_urls if this session has an exercises: block.
+    exercises = session.get("exercises") or []
+    if exercises:
+        section_urls["Exercises"] = f"{sess_slug}/exercises.md"
 
     # ── Build page ──────────────────────────────────────────────────────────────
     lines = [
@@ -447,6 +455,9 @@ def render_session_page(
         if lesson.get("name") and lesson.get("url")
         else []
     )
+    # Only auto-append a reading agenda entry if that title isn't already in the
+    # manual agenda (prevents duplicates when the author writes it explicitly).
+    manual_titles = {item.get("title", "") for item in agenda}
     reading_agenda = [
         {
             "title": f"Reading: {r.get('name', '')}",
@@ -454,6 +465,7 @@ def render_session_page(
         }
         for r in readings
         if r.get("name") and r.get("file")
+        and f"Reading: {r.get('name', '')}" not in manual_titles
     ]
     full_agenda = list(agenda) + lesson_agenda + reading_agenda
 
@@ -498,6 +510,82 @@ def render_session_page(
         lines += ["## Notes", "", notes, ""]
 
     return "\n".join(lines), subpages
+
+
+# ── Session exercises pages ───────────────────────────────────────────────────
+
+def _render_session_exercises_page(
+    session: dict[str, Any],
+    exercises: list[dict[str, Any]],
+) -> str:
+    """Render sessions/{slug}/exercises.md — exercises listing for one session."""
+    num = session.get("number", "")
+    focus = session.get("focus", "")
+    back = f"../{session_filename(session)}"
+    lines = [
+        f"# Session {num} — {focus}: Exercises",
+        "",
+        f"[← Back to session]({back})",
+        "",
+    ]
+    if not exercises:
+        lines += ["*No exercises for this session.*", ""]
+    else:
+        lines += ["| Exercise | Description |", "|---|---|"]
+        for ex in exercises:
+            name = ex.get("name", "")
+            slug = ex.get("slug", "")
+            desc = ex.get("desc", "")
+            if slug:
+                lines.append(f"| [{name}](exercises/{slug}/index.md) | {desc} |")
+            else:
+                lines.append(f"| {name} | {desc} |")
+        lines.append("")
+    return "\n".join(lines)
+
+
+def _render_session_exercise_overview(
+    session: dict[str, Any],
+    ex: dict[str, Any],
+    ex_src: Path,
+) -> str:
+    """Render sessions/{slug}/exercises/{ex-slug}/index.md — one exercise page."""
+    num = session.get("number", "")
+    focus = session.get("focus", "")
+    name = ex.get("name", "")
+    slug = ex.get("slug", "")
+    desc = ex.get("desc", "")
+
+    html_files = list(ex_src.glob("*.html"))
+    stem = html_files[0].stem if html_files else slug
+    html_name = html_files[0].name if html_files else ""
+    pdf_name = f"{stem}.pdf"
+    md_name = f"{stem}.md"
+    has_pdf = (ex_src / pdf_name).exists()
+    has_md = (ex_src / md_name).exists()
+
+    btn_parts: list[str] = []
+    if html_name:
+        btn_parts.append(
+            f"[Full Screen (Interactive)]({html_name}){{.md-button .md-button--primary}}"
+        )
+    if has_pdf:
+        btn_parts.append(f"[Print / PDF]({pdf_name}){{.md-button}}")
+    if has_md:
+        btn_parts.append(f"[Markdown]({md_name}){{.md-button}}")
+    buttons_line = "  ".join(btn_parts)
+
+    lines: list[str] = [
+        f"# {name}",
+        "",
+        f"*Session {num} — {focus}*",
+        "",
+        buttons_line,
+        "",
+    ]
+    if desc:
+        lines += [desc, ""]
+    return "\n".join(lines)
 
 
 # ── Nav management ────────────────────────────────────────────────────────────
@@ -655,6 +743,39 @@ def main() -> None:
                             print(f"  Copied {dst.relative_to(_REPO_ROOT)}")
                         else:
                             print(f"  WARNING: session file not found: {src}")
+
+                # Generate exercises listing page + per-exercise overview pages.
+                sess_exercises = session.get("exercises") or []
+                if sess_exercises:
+                    sess_site_dir = sessions_out / session_slug(session)
+                    sess_site_dir.mkdir(parents=True, exist_ok=True)
+
+                    ex_list_path = sess_site_dir / "exercises.md"
+                    ex_list_path.write_text(
+                        _render_session_exercises_page(session, sess_exercises)
+                    )
+                    print(f"  Wrote {ex_list_path.relative_to(_REPO_ROOT)}")
+
+                    for ex in sess_exercises:
+                        ex_slug = ex.get("slug", "")
+                        if not ex_slug:
+                            continue
+                        ex_data_dir = sess_data_dir / "exercises" / ex_slug
+                        ex_site_dir = sess_site_dir / "exercises" / ex_slug
+                        ex_site_dir.mkdir(parents=True, exist_ok=True)
+
+                        # Copy exercise files (.html, .pdf, .md)
+                        for pattern in ("*.html", "*.pdf", "*.md"):
+                            for src_file in ex_data_dir.glob(pattern):
+                                shutil.copy2(src_file, ex_site_dir / src_file.name)
+                                print(f"  Copied {(ex_site_dir / src_file.name).relative_to(_REPO_ROOT)}")
+
+                        # Generate index.md overview page
+                        overview = _render_session_exercise_overview(
+                            session, ex, ex_data_dir
+                        )
+                        (ex_site_dir / "index.md").write_text(overview)
+                        print(f"  Wrote {(ex_site_dir / 'index.md').relative_to(_REPO_ROOT)}")
 
     update_nav(courses)
     print("Done.")
