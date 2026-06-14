@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 5 — Shewa: Vocal vs. Silent</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1080px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  .rule-box { background: #f0f4ff; border-left: 4px solid #7788cc; padding: .7rem 1rem; margin: .8rem 0 1.2rem; font-size: .9rem; }
+  .rule-box ul { margin: .3rem 0 0 1.2rem; padding: 0; }
+  .rule-box li { margin-bottom: .3rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 2em; font-weight: bold; width: 5rem; text-align: center; }
+  td.target { direction: rtl; unicode-bidi: embed; font-size: 1.6em; font-weight: bold; color: #1a2744; text-align: center; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .85rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  .vocal  { font-weight: bold; color: #1a5c1a; }
+  .silent { font-weight: bold; color: #8b4a00; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    select.f { border: none; border-bottom: 1px solid #aaa; appearance: none; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Session 5 — Shewa: Vocal vs. Silent</h1>
+<p class="subtitle">BBH 2026.1 · Ch3 Review · 10 items</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each word, a target letter bearing a shewa is identified in the "Target" column. Determine whether the shewa is <strong>Vocal</strong> or <strong>Silent</strong>, and state the rule that applies.
+</div>
+
+<div class="rule-box">
+  <strong>Key Rules:</strong>
+  <ul>
+    <li><strong>Vocal Shewa:</strong> (1) word-initial position, (2) after another shewa, (3) under a letter with Dagesh Forte.</li>
+    <li><strong>Silent Shewa:</strong> (1) word-final position, (2) all other positions — closes a syllable.</li>
+    <li><strong>Hateph Shewa</strong> (composite: מֲ מֱ מֳ): always vocal — used under gutturals instead of simple vocal shewa.</li>
+  </ul>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr><th>#</th><th>Word</th><th>Target (letter with shewa)</th><th>Vocal or Silent?</th><th>Rule</th><th></th></tr>
+
+  <tr><td class="num">1</td><td class="heb">בְּרֵאשִׁית</td><td class="target">בְּ</td><td><select class="f" id="1-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="1-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">בְּרֵאשִׁית</td><td class="target">בְּ</td><td><span class="vocal">Vocal</span></td><td>Word-initial position — every word begins with a vowel sound</td><td></td></tr>
+
+  <tr><td class="num">2</td><td class="heb">מֶלֶךְ</td><td class="target">ךְ</td><td><select class="f" id="2-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="2-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">מֶלֶךְ</td><td class="target">ךְ</td><td><span class="silent">Silent</span></td><td>Word-final position — marks close of the last syllable; no sound</td><td></td></tr>
+
+  <tr><td class="num">3</td><td class="heb">יְרוּשָׁלַיִם</td><td class="target">יְ</td><td><select class="f" id="3-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="3-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">יְרוּשָׁלַיִם</td><td class="target">יְ</td><td><span class="vocal">Vocal</span></td><td>Word-initial position — Yod begins the word</td><td></td></tr>
+
+  <tr><td class="num">4</td><td class="heb">מִשְׁפָּט</td><td class="target">שְׁ</td><td><select class="f" id="4-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="4-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">מִשְׁפָּט</td><td class="target">שְׁ</td><td><span class="silent">Silent</span></td><td>Middle-of-word, not word-initial, no dagesh forte under Shin — closes the first syllable מִשׁ</td><td></td></tr>
+
+  <tr><td class="num">5</td><td class="heb">בְּרִית</td><td class="target">בְּ</td><td><select class="f" id="5-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="5-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">בְּרִית</td><td class="target">בְּ</td><td><span class="vocal">Vocal</span></td><td>Word-initial position — Bet begins the word</td><td></td></tr>
+
+  <tr><td class="num">6</td><td class="heb">יִשְׂרָאֵל</td><td class="target">שְׂ</td><td><select class="f" id="6-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="6-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">יִשְׂרָאֵל</td><td class="target">שְׂ</td><td><span class="silent">Silent</span></td><td>Middle-of-word after short Hireq (יִ) — closes the first syllable יִשׂ</td><td></td></tr>
+
+  <tr><td class="num">7</td><td class="heb">כְּבוֹד</td><td class="target">כְּ</td><td><select class="f" id="7-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="7-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">כְּבוֹד</td><td class="target">כְּ</td><td><span class="vocal">Vocal</span></td><td>Word-initial position — Kaf begins the word</td><td></td></tr>
+
+  <tr><td class="num">8</td><td class="heb">נִשְׁמַר</td><td class="target">שְׁ</td><td><select class="f" id="8-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="8-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">נִשְׁמַר</td><td class="target">שְׁ</td><td><span class="silent">Silent</span></td><td>Middle-of-word after short Hireq (נִ) — closes the first syllable נִשׁ</td><td></td></tr>
+
+  <tr><td class="num">9</td><td class="heb">שְׁמַע</td><td class="target">שְׁ</td><td><select class="f" id="9-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="9-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">שְׁמַע</td><td class="target">שְׁ</td><td><span class="vocal">Vocal</span></td><td>Word-initial position — Shin begins the word (the Shema begins with this word!)</td><td></td></tr>
+
+  <tr><td class="num">10</td><td class="heb">יִשְׁלַח</td><td class="target">שְׁ</td><td><select class="f" id="10-t"><option value="">—</option><option>Vocal</option><option>Silent</option></select></td><td><input class="f" id="10-r" placeholder="rule"></td><td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="heb" style="font-size:1.2em">יִשְׁלַח</td><td class="target">שְׁ</td><td><span class="silent">Silent</span></td><td>Middle-of-word after short Hireq (יִ) — closes the first syllable יִשׁ</td><td></td></tr>
+</table>
+
+<script>
+function tog(n) {
+  const row = document.getElementById('ans-' + n);
+  const btn = event.currentTarget;
+  const visible = row.style.display === 'table-row';
+  row.style.display = visible ? 'none' : 'table-row';
+  btn.classList.toggle('on', !visible);
+  btn.textContent = visible ? '▶ Answer' : '▼ Hide';
+}
+function showAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.add('on'); b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.remove('on'); b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.f, select.f').forEach(function(el) {
+    if (el.tagName === 'SELECT') el.selectedIndex = 0;
+    else el.value = '';
+  });
+}
+</script>
+</body>
+</html>

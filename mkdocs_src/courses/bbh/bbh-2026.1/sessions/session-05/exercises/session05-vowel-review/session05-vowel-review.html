@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 5 — Hebrew Vowel Review</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 960px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 2em; font-weight: bold; width: 3.5rem; text-align: center; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.5em; font-weight: bold; width: 3.5rem; text-align: center; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  .reflect { background: #f4f0ff; border-left: 4px solid #9988cc; padding: .75rem 1rem; margin: 1.5rem 0; font-size: .92rem; }
+  .reflect ol { margin: .4rem 0 0 1.2rem; padding: 0; }
+  .reflect li { margin-bottom: .5rem; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    select.f { border: none; border-bottom: 1px solid #aaa; appearance: none; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Session 5 — Hebrew Vowel Review</h1>
+<p class="subtitle">BBH 2026.1 · Ch1–3 Review · 15 items · Confusable Pairs Focus</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each vowel symbol, identify: (1) Vowel Name, (2) Class (A/E/I/O/U/Reduced), (3) Quantity (Long/Short/Reduced). Items 1–3 drill the critical Qamets / Pathach / Qamets Hatuf distinction.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr><th>#</th><th>Vowel</th><th>Vowel Name</th><th>Class</th><th>Quantity</th><th></th></tr>
+
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">בָּ</td>
+    <td><select class="f" id="1-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="1-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="1-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="ans-heb">בָּ</td><td>Qamets</td><td>A</td><td>Long</td><td></td></tr>
+
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">בַּ</td>
+    <td><select class="f" id="2-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="2-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="2-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="ans-heb">בַּ</td><td>Pathach</td><td>A</td><td>Short</td><td></td></tr>
+
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">בָּ<br><small style="color:#888">closed, unaccented</small></td>
+    <td><select class="f" id="3-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="3-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="3-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="ans-heb">בָּ</td><td>Qamets Hatuf</td><td>O</td><td>Short</td><td></td></tr>
+
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">בֵּ</td>
+    <td><select class="f" id="4-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="4-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="4-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">בֵּ</td><td>Tsere</td><td>E</td><td>Long</td><td></td></tr>
+
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">בֶּ</td>
+    <td><select class="f" id="5-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="5-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="5-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">בֶּ</td><td>Seghol</td><td>E</td><td>Short</td><td></td></tr>
+
+  <tr>
+    <td class="num">6</td>
+    <td class="heb">בִּ</td>
+    <td><select class="f" id="6-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="6-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="6-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="ans-heb">בִּ</td><td>Hireq</td><td>I</td><td>Short</td><td></td></tr>
+
+  <tr>
+    <td class="num">7</td>
+    <td class="heb">מִי</td>
+    <td><select class="f" id="7-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="7-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="7-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="ans-heb">מִי</td><td>Hireq Yod</td><td>I</td><td>Long</td><td></td></tr>
+
+  <tr>
+    <td class="num">8</td>
+    <td class="heb">מֵי</td>
+    <td><select class="f" id="8-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="8-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="8-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">מֵי</td><td>Tsere Yod</td><td>E</td><td>Long</td><td></td></tr>
+
+  <tr>
+    <td class="num">9</td>
+    <td class="heb">בֹּ</td>
+    <td><select class="f" id="9-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="9-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="9-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="ans-heb">בֹּ</td><td>Holem</td><td>O</td><td>Long</td><td></td></tr>
+
+  <tr>
+    <td class="num">10</td>
+    <td class="heb">בּוֹ</td>
+    <td><select class="f" id="10-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="10-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="10-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">בּוֹ</td><td>Holem Waw</td><td>O</td><td>Long</td><td></td></tr>
+
+  <tr>
+    <td class="num">11</td>
+    <td class="heb">בּוּ</td>
+    <td><select class="f" id="11-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="11-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="11-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">בּוּ</td><td>Shureq</td><td>U</td><td>Long</td><td></td></tr>
+
+  <tr>
+    <td class="num">12</td>
+    <td class="heb">בֻּ</td>
+    <td><select class="f" id="12-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="12-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="12-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">בֻּ</td><td>Qibbuts</td><td>U</td><td>Short</td><td></td></tr>
+
+  <tr>
+    <td class="num">13</td>
+    <td class="heb">מְ<br><small style="color:#888">word-initial</small></td>
+    <td><select class="f" id="13-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="13-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="13-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-13"><td class="ans-lbl">✓</td><td class="ans-heb">מְ</td><td>Vocal Shewa</td><td>Reduced</td><td>Reduced</td><td></td></tr>
+
+  <tr>
+    <td class="num">14</td>
+    <td class="heb">מֲ</td>
+    <td><select class="f" id="14-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="14-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="14-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-14"><td class="ans-lbl">✓</td><td class="ans-heb">מֲ</td><td>Hateph Pathach</td><td>A</td><td>Reduced</td><td></td></tr>
+
+  <tr>
+    <td class="num">15</td>
+    <td class="heb">מֱ</td>
+    <td><select class="f" id="15-n"><option value="">—</option><option>Qamets</option><option>Pathach</option><option>Qamets Hatuf</option><option>Tsere</option><option>Seghol</option><option>Hireq</option><option>Hireq Yod</option><option>Tsere Yod</option><option>Holem</option><option>Holem Waw</option><option>Shureq</option><option>Qibbuts</option><option>Qamets He</option><option>Holem He</option><option>Tsere He</option><option>Seghol He</option><option>Vocal Shewa</option><option>Silent Shewa</option><option>Hateph Pathach</option><option>Hateph Seghol</option><option>Hateph Qamets</option></select></td>
+    <td><select class="f" id="15-c"><option value="">—</option><option>A</option><option>E</option><option>I</option><option>O</option><option>U</option><option>Reduced</option></select></td>
+    <td><select class="f" id="15-q"><option value="">—</option><option>Long</option><option>Short</option><option>Reduced</option></select></td>
+    <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">מֱ</td><td>Hateph Seghol</td><td>E</td><td>Reduced</td><td></td></tr>
+
+</table>
+
+<div class="reflect">
+  <strong>Reflection Questions</strong>
+  <ol>
+    <li><strong>Qamets vs. Qamets Hatuf (items 1, 3):</strong> Both look identical. What two contextual clues help you determine which one you are reading?</li>
+    <li><strong>Matres lectionis (items 7–8, 10–11):</strong> Waw and Yod can serve as vowel letters. For each, list the vowels they signal when quiescent.</li>
+    <li><strong>Vocal vs. Silent Shewa:</strong> The same sign (מְ) marks two different things. What are the rules for determining which type you have?</li>
+  </ol>
+</div>
+
+<script>
+function tog(n) {
+  const row = document.getElementById('ans-' + n);
+  const btn = event.currentTarget;
+  const visible = row.style.display === 'table-row';
+  row.style.display = visible ? 'none' : 'table-row';
+  btn.classList.toggle('on', !visible);
+  btn.textContent = visible ? '▶ Answer' : '▼ Hide';
+}
+function showAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.add('on'); b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.remove('on'); b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.f, select.f').forEach(function(el) {
+    if (el.tagName === 'SELECT') el.selectedIndex = 0;
+    else el.value = '';
+  });
+}
+</script>
+</body>
+</html>

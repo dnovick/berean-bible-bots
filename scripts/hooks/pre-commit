@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Pre-commit hook: rebuild mkdocs_src/courses/ and mkdocs_nav.yml whenever
+# course data or the build script itself is staged.
+#
+# Install: cp scripts/hooks/pre-commit .git/hooks/pre-commit
+#          chmod +x .git/hooks/pre-commit
+set -euo pipefail
+
+if git diff --cached --name-only | grep -qE '^(data/courses/|scripts/build_courses\.py)'; then
+    echo "[pre-commit] Rebuilding mkdocs_src/courses/ ..."
+    .venv/bin/python3 scripts/build_courses.py
+    git add mkdocs_src/courses/ mkdocs_nav.yml
+    echo "[pre-commit] Done."
+fi
