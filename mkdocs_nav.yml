@@ -1,0 +1,607 @@
+nav:
+- Home: index.md
+- Biblical Hebrew (BBH):
+  - Overview: lessons/hebrew/index.md
+  - Ch1 — Hebrew Alphabet:
+    - Lesson: lessons/hebrew/ch1/index.md
+    - Exercises: lessons/hebrew/ch1/exercises.md
+    - Flashcards: lessons/hebrew/ch1/flashcards.md
+  - Ch2 — Hebrew Vowels:
+    - Lesson: lessons/hebrew/ch2/index.md
+    - Exercises: lessons/hebrew/ch2/exercises.md
+    - Flashcards: lessons/hebrew/ch2/flashcards.md
+  - Ch3 — Syllabification and Pronunciation:
+    - Lesson: lessons/hebrew/ch3/index.md
+    - Exercises: lessons/hebrew/ch3/exercises.md
+    - Flashcards: lessons/hebrew/ch3/flashcards.md
+  - Ch4 — Hebrew Nouns:
+    - Lesson: lessons/hebrew/ch4/index.md
+    - Exercises: lessons/hebrew/ch4/exercises.md
+    - Flashcards: lessons/hebrew/ch4/flashcards.md
+  - Ch5 — Definite Article and Conjunction ו:
+    - Lesson: lessons/hebrew/ch5/index.md
+    - Exercises: lessons/hebrew/ch5/exercises.md
+    - Flashcards: lessons/hebrew/ch5/flashcards.md
+  - Ch6 — Hebrew Prepositions:
+    - Lesson: lessons/hebrew/ch6/index.md
+    - Exercises: lessons/hebrew/ch6/exercises.md
+    - Flashcards: lessons/hebrew/ch6/flashcards.md
+  - Ch7 — Hebrew Adjectives:
+    - Lesson: lessons/hebrew/ch7/index.md
+    - Exercises: lessons/hebrew/ch7/exercises.md
+    - Flashcards: lessons/hebrew/ch7/flashcards.md
+  - Ch8 — Hebrew Pronouns:
+    - Lesson: lessons/hebrew/ch8/index.md
+    - Exercises: lessons/hebrew/ch8/exercises.md
+    - Flashcards: lessons/hebrew/ch8/flashcards.md
+  - Ch9 — Hebrew Pronominal Suffixes:
+    - Lesson: lessons/hebrew/ch9/index.md
+    - Exercises: lessons/hebrew/ch9/exercises.md
+    - Flashcards: lessons/hebrew/ch9/flashcards.md
+  - Ch10 — Hebrew Construct Chain:
+    - Lesson: lessons/hebrew/ch10/index.md
+    - Exercises: lessons/hebrew/ch10/exercises.md
+    - Flashcards: lessons/hebrew/ch10/flashcards.md
+  - Ch11 — Hebrew Numbers:
+    - Lesson: lessons/hebrew/ch11/index.md
+    - Exercises: lessons/hebrew/ch11/exercises.md
+    - Flashcards: lessons/hebrew/ch11/flashcards.md
+  - Ch12 — Introduction to Hebrew Verbs:
+    - Lesson: lessons/hebrew/ch12/index.md
+    - Exercises: lessons/hebrew/ch12/exercises.md
+    - Flashcards: lessons/hebrew/ch12/flashcards.md
+  - Ch13 — Qal Perfect Strong Verbs:
+    - Lesson: lessons/hebrew/ch13/index.md
+    - Exercises: lessons/hebrew/ch13/exercises.md
+    - Flashcards: lessons/hebrew/ch13/flashcards.md
+  - Ch14 — Qal Perfect Weak Verbs:
+    - Lesson: lessons/hebrew/ch14/index.md
+    - Exercises: lessons/hebrew/ch14/exercises.md
+    - Flashcards: lessons/hebrew/ch14/flashcards.md
+  - Ch15 — Qal Imperfect Strong Verbs:
+    - Lesson: lessons/hebrew/ch15/index.md
+    - Exercises: lessons/hebrew/ch15/exercises.md
+    - Flashcards: lessons/hebrew/ch15/flashcards.md
+  - Ch16 — Qal Imperfect Weak Verbs:
+    - Lesson: lessons/hebrew/ch16/index.md
+    - Exercises: lessons/hebrew/ch16/exercises.md
+    - Flashcards: lessons/hebrew/ch16/flashcards.md
+  - Ch17 — Waw-Consecutive:
+    - Lesson: lessons/hebrew/ch17/index.md
+    - Exercises: lessons/hebrew/ch17/exercises.md
+    - Flashcards: lessons/hebrew/ch17/flashcards.md
+  - Ch18 — Qal Imperative:
+    - Lesson: lessons/hebrew/ch18/index.md
+    - Exercises: lessons/hebrew/ch18/exercises.md
+    - Flashcards: lessons/hebrew/ch18/flashcards.md
+  - Ch19 — Qal Pronominal Suffixes on Verbs:
+    - Lesson: lessons/hebrew/ch19/index.md
+    - Exercises: lessons/hebrew/ch19/exercises.md
+    - Flashcards: lessons/hebrew/ch19/flashcards.md
+  - Ch20 — Qal Infinitive Construct:
+    - Lesson: lessons/hebrew/ch20/index.md
+    - Exercises: lessons/hebrew/ch20/exercises.md
+    - Flashcards: lessons/hebrew/ch20/flashcards.md
+  - Ch21 — Qal Infinitive Absolute:
+    - Lesson: lessons/hebrew/ch21/index.md
+    - Exercises: lessons/hebrew/ch21/exercises.md
+    - Flashcards: lessons/hebrew/ch21/flashcards.md
+  - Ch22 — Qal Participle:
+    - Lesson: lessons/hebrew/ch22/index.md
+    - Exercises: lessons/hebrew/ch22/exercises.md
+    - Flashcards: lessons/hebrew/ch22/flashcards.md
+  - Ch23 — Sentence Syntax:
+    - Lesson: lessons/hebrew/ch23/index.md
+    - Exercises: lessons/hebrew/ch23/exercises.md
+    - Flashcards: lessons/hebrew/ch23/flashcards.md
+  - Ch24 — Niphal Strong:
+    - Lesson: lessons/hebrew/ch24/index.md
+    - Exercises: lessons/hebrew/ch24/exercises.md
+    - Flashcards: lessons/hebrew/ch24/flashcards.md
+  - Ch25 — Niphal Weak:
+    - Lesson: lessons/hebrew/ch25/index.md
+    - Exercises: lessons/hebrew/ch25/exercises.md
+    - Flashcards: lessons/hebrew/ch25/flashcards.md
+  - Ch26 — Hiphil Strong:
+    - Lesson: lessons/hebrew/ch26/index.md
+    - Exercises: lessons/hebrew/ch26/exercises.md
+    - Flashcards: lessons/hebrew/ch26/flashcards.md
+  - Ch27 — Hiphil Weak:
+    - Lesson: lessons/hebrew/ch27/index.md
+    - Exercises: lessons/hebrew/ch27/exercises.md
+    - Flashcards: lessons/hebrew/ch27/flashcards.md
+  - Ch28 — Hophal Strong:
+    - Lesson: lessons/hebrew/ch28/index.md
+    - Exercises: lessons/hebrew/ch28/exercises.md
+    - Flashcards: lessons/hebrew/ch28/flashcards.md
+  - Ch29 — Hophal Weak:
+    - Lesson: lessons/hebrew/ch29/index.md
+    - Exercises: lessons/hebrew/ch29/exercises.md
+    - Flashcards: lessons/hebrew/ch29/flashcards.md
+  - Ch30 — Piel Strong:
+    - Lesson: lessons/hebrew/ch30/index.md
+    - Exercises: lessons/hebrew/ch30/exercises.md
+    - Flashcards: lessons/hebrew/ch30/flashcards.md
+  - Ch31 — Piel Weak:
+    - Lesson: lessons/hebrew/ch31/index.md
+    - Exercises: lessons/hebrew/ch31/exercises.md
+    - Flashcards: lessons/hebrew/ch31/flashcards.md
+  - Ch32 — Pual Strong:
+    - Lesson: lessons/hebrew/ch32/index.md
+    - Exercises: lessons/hebrew/ch32/exercises.md
+    - Flashcards: lessons/hebrew/ch32/flashcards.md
+  - Ch33 — Pual Weak:
+    - Lesson: lessons/hebrew/ch33/index.md
+    - Exercises: lessons/hebrew/ch33/exercises.md
+    - Flashcards: lessons/hebrew/ch33/flashcards.md
+  - Ch34 — Hithpael Strong:
+    - Lesson: lessons/hebrew/ch34/index.md
+    - Exercises: lessons/hebrew/ch34/exercises.md
+    - Flashcards: lessons/hebrew/ch34/flashcards.md
+  - Ch35 — Hithpael Weak:
+    - Lesson: lessons/hebrew/ch35/index.md
+    - Exercises: lessons/hebrew/ch35/exercises.md
+    - Flashcards: lessons/hebrew/ch35/flashcards.md
+  - Additional Resources:
+    - Overview: lessons/hebrew/additional-resources/index.md
+    - BBH Vocabulary with Mnemonics — Ch2–35: lessons/hebrew/additional-resources/bbh-vocab-with-mnemonics/bbh-vocab-mnemonics.md
+    - Hebrew Verb Paradigm — All Stems: lessons/hebrew/additional-resources/hebrew-verb-paradigm-all-stems/heb-verb-paradigm.md
+    - OT Extended Vocabulary — Freq 30–69: lessons/hebrew/additional-resources/ot-extended-vocabulary/ot-vocab-extended.md
+    - OT Hebrew Verb Parsing — 10,399 Forms: lessons/hebrew/additional-resources/ot-verb-parsing-10k/ot-verb-parsing.md
+- Biblical Greek (BBG):
+  - Overview: lessons/greek/index.md
+  - Ch1 — The Greek Language:
+    - Lesson: lessons/greek/ch1/index.md
+  - Ch2 — Learning Greek:
+    - Lesson: lessons/greek/ch2/index.md
+  - Ch3 — The Alphabet and Pronunciation:
+    - Lesson: lessons/greek/ch3/index.md
+    - Exercises: lessons/greek/ch3/exercises.md
+    - Flashcards: lessons/greek/ch3/flashcards.md
+  - Ch4 — Punctuation and Syllabification:
+    - Lesson: lessons/greek/ch4/index.md
+    - Exercises: lessons/greek/ch4/exercises.md
+    - Flashcards: lessons/greek/ch4/flashcards.md
+  - Ch5 — Introduction to English Nouns:
+    - Lesson: lessons/greek/ch5/index.md
+  - Ch6 — Nominative and Accusative; Article:
+    - Lesson: lessons/greek/ch6/index.md
+    - Exercises: lessons/greek/ch6/exercises.md
+    - Flashcards: lessons/greek/ch6/flashcards.md
+  - Ch7 — Genitive and Dative:
+    - Lesson: lessons/greek/ch7/index.md
+    - Exercises: lessons/greek/ch7/exercises.md
+    - Flashcards: lessons/greek/ch7/flashcards.md
+  - Ch8 — Prepositions and εἰμί:
+    - Lesson: lessons/greek/ch8/index.md
+    - Exercises: lessons/greek/ch8/exercises.md
+    - Flashcards: lessons/greek/ch8/flashcards.md
+  - Ch9 — Adjectives:
+    - Lesson: lessons/greek/ch9/index.md
+    - Exercises: lessons/greek/ch9/exercises.md
+    - Flashcards: lessons/greek/ch9/flashcards.md
+  - Ch10 — Third Declension:
+    - Lesson: lessons/greek/ch10/index.md
+    - Exercises: lessons/greek/ch10/exercises.md
+    - Flashcards: lessons/greek/ch10/flashcards.md
+  - Ch11 — First and Second Person Personal Pronouns:
+    - Lesson: lessons/greek/ch11/index.md
+    - Exercises: lessons/greek/ch11/exercises.md
+    - Flashcards: lessons/greek/ch11/flashcards.md
+  - Ch12 — αὐτός:
+    - Lesson: lessons/greek/ch12/index.md
+    - Exercises: lessons/greek/ch12/exercises.md
+    - Flashcards: lessons/greek/ch12/flashcards.md
+  - Ch13 — Demonstrative Pronouns/Adjectives:
+    - Lesson: lessons/greek/ch13/index.md
+    - Exercises: lessons/greek/ch13/exercises.md
+    - Flashcards: lessons/greek/ch13/flashcards.md
+  - Ch14 — Relative Pronoun:
+    - Lesson: lessons/greek/ch14/index.md
+    - Exercises: lessons/greek/ch14/exercises.md
+    - Flashcards: lessons/greek/ch14/flashcards.md
+  - Ch15 — Introduction to Verbs:
+    - Lesson: lessons/greek/ch15/index.md
+  - Ch16 — Present Active Indicative:
+    - Lesson: lessons/greek/ch16/index.md
+    - Exercises: lessons/greek/ch16/exercises.md
+    - Flashcards: lessons/greek/ch16/flashcards.md
+  - Ch17 — Contract Verbs:
+    - Lesson: lessons/greek/ch17/index.md
+    - Exercises: lessons/greek/ch17/exercises.md
+    - Flashcards: lessons/greek/ch17/flashcards.md
+  - Ch18 — Present Middle/Passive Indicative:
+    - Lesson: lessons/greek/ch18/index.md
+    - Exercises: lessons/greek/ch18/exercises.md
+    - Flashcards: lessons/greek/ch18/flashcards.md
+  - Ch19 — Future Active and Middle Indicative:
+    - Lesson: lessons/greek/ch19/index.md
+    - Exercises: lessons/greek/ch19/exercises.md
+    - Flashcards: lessons/greek/ch19/flashcards.md
+  - Ch20 — Verbal Roots (Patterns 2–4):
+    - Lesson: lessons/greek/ch20/index.md
+    - Exercises: lessons/greek/ch20/exercises.md
+    - Flashcards: lessons/greek/ch20/flashcards.md
+  - Ch21 — Imperfect Indicative:
+    - Lesson: lessons/greek/ch21/index.md
+    - Exercises: lessons/greek/ch21/exercises.md
+    - Flashcards: lessons/greek/ch21/flashcards.md
+  - Ch22 — Second Aorist Active and Middle Indicative:
+    - Lesson: lessons/greek/ch22/index.md
+    - Exercises: lessons/greek/ch22/exercises.md
+    - Flashcards: lessons/greek/ch22/flashcards.md
+  - Ch23 — First Aorist Active and Middle Indicative:
+    - Lesson: lessons/greek/ch23/index.md
+    - Exercises: lessons/greek/ch23/exercises.md
+    - Flashcards: lessons/greek/ch23/flashcards.md
+  - Ch24 — Aorist and Future Passive Indicative:
+    - Lesson: lessons/greek/ch24/index.md
+    - Exercises: lessons/greek/ch24/exercises.md
+    - Flashcards: lessons/greek/ch24/flashcards.md
+  - Ch25 — Perfect Indicative:
+    - Lesson: lessons/greek/ch25/index.md
+    - Exercises: lessons/greek/ch25/exercises.md
+    - Flashcards: lessons/greek/ch25/flashcards.md
+  - Ch26 — Introduction to Participles:
+    - Lesson: lessons/greek/ch26/index.md
+  - Ch27 — Imperfective (Present) Adverbial Participles:
+    - Lesson: lessons/greek/ch27/index.md
+    - Exercises: lessons/greek/ch27/exercises.md
+    - Flashcards: lessons/greek/ch27/flashcards.md
+  - Ch28 — Perfective (Aorist) Adverbial Participles:
+    - Lesson: lessons/greek/ch28/index.md
+    - Exercises: lessons/greek/ch28/exercises.md
+    - Flashcards: lessons/greek/ch28/flashcards.md
+  - Ch29 — Adjectival Participles:
+    - Lesson: lessons/greek/ch29/index.md
+    - Exercises: lessons/greek/ch29/exercises.md
+    - Flashcards: lessons/greek/ch29/flashcards.md
+  - Ch30 — Combinative (Perfect) Participles and Genitive Absolutes:
+    - Lesson: lessons/greek/ch30/index.md
+    - Exercises: lessons/greek/ch30/exercises.md
+    - Flashcards: lessons/greek/ch30/flashcards.md
+  - Ch31 — Subjunctive:
+    - Lesson: lessons/greek/ch31/index.md
+    - Exercises: lessons/greek/ch31/exercises.md
+    - Flashcards: lessons/greek/ch31/flashcards.md
+  - Ch32 — Infinitive:
+    - Lesson: lessons/greek/ch32/index.md
+    - Exercises: lessons/greek/ch32/exercises.md
+    - Flashcards: lessons/greek/ch32/flashcards.md
+  - Ch33 — Imperative:
+    - Lesson: lessons/greek/ch33/index.md
+    - Exercises: lessons/greek/ch33/exercises.md
+    - Flashcards: lessons/greek/ch33/flashcards.md
+  - Ch34 — Indicative of δίδωμι:
+    - Lesson: lessons/greek/ch34/index.md
+    - Exercises: lessons/greek/ch34/exercises.md
+    - Flashcards: lessons/greek/ch34/flashcards.md
+  - Ch35 — Nonindicative of δίδωμι and Conditional Sentences:
+    - Lesson: lessons/greek/ch35/index.md
+    - Exercises: lessons/greek/ch35/exercises.md
+    - Flashcards: lessons/greek/ch35/flashcards.md
+  - Ch36 — ἵστημι, τίθημι, δείκνυμι and Odds 'n Ends:
+    - Lesson: lessons/greek/ch36/index.md
+    - Exercises: lessons/greek/ch36/exercises.md
+    - Flashcards: lessons/greek/ch36/flashcards.md
+- Biblical Aramaic (BBA):
+  - Overview: lessons/aramaic/index.md
+  - Ch1 — Alphabet:
+    - Lesson: lessons/aramaic/ch1/index.md
+    - Exercises: lessons/aramaic/ch1/exercises.md
+    - Flashcards: lessons/aramaic/ch1/flashcards.md
+  - Ch2 — Vowels:
+    - Lesson: lessons/aramaic/ch2/index.md
+    - Exercises: lessons/aramaic/ch2/exercises.md
+    - Flashcards: lessons/aramaic/ch2/flashcards.md
+  - Ch3 — Syllabification:
+    - Lesson: lessons/aramaic/ch3/index.md
+    - Exercises: lessons/aramaic/ch3/exercises.md
+    - Flashcards: lessons/aramaic/ch3/flashcards.md
+  - 'Ch4 — Nouns: Absolute State':
+    - Lesson: lessons/aramaic/ch4/index.md
+    - Exercises: lessons/aramaic/ch4/exercises.md
+    - Flashcards: lessons/aramaic/ch4/flashcards.md
+  - 'Ch5 — Nouns: Determined State':
+    - Lesson: lessons/aramaic/ch5/index.md
+    - Exercises: lessons/aramaic/ch5/exercises.md
+    - Flashcards: lessons/aramaic/ch5/flashcards.md
+  - 'Ch6 — Nouns: Construct State':
+    - Lesson: lessons/aramaic/ch6/index.md
+    - Exercises: lessons/aramaic/ch6/exercises.md
+    - Flashcards: lessons/aramaic/ch6/flashcards.md
+  - Ch7 — Conjunctions and Prepositions:
+    - Lesson: lessons/aramaic/ch7/index.md
+    - Exercises: lessons/aramaic/ch7/exercises.md
+    - Flashcards: lessons/aramaic/ch7/flashcards.md
+  - Ch8 — Pronominal Suffixes:
+    - Lesson: lessons/aramaic/ch8/index.md
+    - Exercises: lessons/aramaic/ch8/exercises.md
+    - Flashcards: lessons/aramaic/ch8/flashcards.md
+  - Ch9 — Pronouns:
+    - Lesson: lessons/aramaic/ch9/index.md
+    - Exercises: lessons/aramaic/ch9/exercises.md
+    - Flashcards: lessons/aramaic/ch9/flashcards.md
+  - Ch10 — Adjectives and Numbers:
+    - Lesson: lessons/aramaic/ch10/index.md
+    - Exercises: lessons/aramaic/ch10/exercises.md
+    - Flashcards: lessons/aramaic/ch10/flashcards.md
+  - Ch11 — Adverbs and Particles:
+    - Lesson: lessons/aramaic/ch11/index.md
+    - Exercises: lessons/aramaic/ch11/exercises.md
+    - Flashcards: lessons/aramaic/ch11/flashcards.md
+  - Ch12 — Introduction to Aramaic Verbs:
+    - Lesson: lessons/aramaic/ch12/index.md
+    - Exercises: lessons/aramaic/ch12/exercises.md
+    - Flashcards: lessons/aramaic/ch12/flashcards.md
+  - Ch13 — Peal Perfect:
+    - Lesson: lessons/aramaic/ch13/index.md
+    - Exercises: lessons/aramaic/ch13/exercises.md
+    - Flashcards: lessons/aramaic/ch13/flashcards.md
+  - Ch14 — Peal Imperfect:
+    - Lesson: lessons/aramaic/ch14/index.md
+    - Exercises: lessons/aramaic/ch14/exercises.md
+    - Flashcards: lessons/aramaic/ch14/flashcards.md
+  - Ch15 — Peal Imperative:
+    - Lesson: lessons/aramaic/ch15/index.md
+    - Exercises: lessons/aramaic/ch15/exercises.md
+    - Flashcards: lessons/aramaic/ch15/flashcards.md
+  - Ch16 — Peal Infinitive Construct:
+    - Lesson: lessons/aramaic/ch16/index.md
+    - Exercises: lessons/aramaic/ch16/exercises.md
+    - Flashcards: lessons/aramaic/ch16/flashcards.md
+  - Ch17 — Peal Participle:
+    - Lesson: lessons/aramaic/ch17/index.md
+    - Exercises: lessons/aramaic/ch17/exercises.md
+    - Flashcards: lessons/aramaic/ch17/flashcards.md
+  - Ch18 — The Peil, Hithpeel, and Ithpeel Stems:
+    - Lesson: lessons/aramaic/ch18/index.md
+    - Exercises: lessons/aramaic/ch18/exercises.md
+  - Ch19 — The Pael Stem:
+    - Lesson: lessons/aramaic/ch19/index.md
+    - Exercises: lessons/aramaic/ch19/exercises.md
+  - Ch20 — The Hithpaal and Ithpaal Stems:
+    - Lesson: lessons/aramaic/ch20/index.md
+    - Exercises: lessons/aramaic/ch20/exercises.md
+  - Ch21 — The Haphel Stem:
+    - Lesson: lessons/aramaic/ch21/index.md
+    - Exercises: lessons/aramaic/ch21/exercises.md
+  - Ch22 — The Aphel, Shaphel, and Hophal Stems:
+    - Lesson: lessons/aramaic/ch22/index.md
+    - Exercises: lessons/aramaic/ch22/exercises.md
+- Notebooks:
+  - Overview: notebooks/index.md
+  - Getting Started:
+    - Introduction:
+      - Getting Started: notebooks/tutorial/getting_started.ipynb
+  - Old Testament (Hebrew):
+    - Verb Stems:
+      - Stem Overview: notebooks/ot/verbs/stem_overview.ipynb
+      - Qal: notebooks/ot/verbs/qal.ipynb
+      - Niphal: notebooks/ot/verbs/niphal.ipynb
+      - Hiphil: notebooks/ot/verbs/hiphil.ipynb
+      - Hophal: notebooks/ot/verbs/hophal.ipynb
+      - Piel: notebooks/ot/verbs/piel.ipynb
+      - Pual: notebooks/ot/verbs/pual.ipynb
+      - Hithpael: notebooks/ot/verbs/hithpael.ipynb
+    - Noun Morphology:
+      - OT Nouns: notebooks/ot/nouns/ot_nouns.ipynb
+      - OT Numbers: notebooks/ot/numbers/ot_numbers.ipynb
+    - Syntax & Verbal Analysis:
+      - Verbal Syntax: notebooks/ot/syntax/verbal_syntax.ipynb
+      - Poetry: notebooks/ot/syntax/poetry.ipynb
+      - Predicate-Argument: notebooks/ot/syntax/predicate_argument.ipynb
+      - Discourse Structure: notebooks/ot/syntax/discourse_structure.ipynb
+      - Register Analysis: notebooks/ot/syntax/register_analysis.ipynb
+      - Information Structure: notebooks/ot/syntax/information_structure.ipynb
+      - Prepositions: notebooks/ot/syntax/prepositions.ipynb
+    - Speaker & Role Analysis:
+      - Speaker Attribution: notebooks/ot/speakers/speaker_attribution.ipynb
+      - Syntactic Roles: notebooks/ot/speakers/syntactic_roles_ot.ipynb
+      - Participant Tracking: notebooks/ot/speakers/participant_tracking.ipynb
+      - Speech Acts: notebooks/ot/speakers/speech_acts.ipynb
+    - Lexicon:
+      - Hapax Legomena: notebooks/ot/lexicon/hapax_legomena.ipynb
+    - Semantic Domains:
+      - Semantic Domains: notebooks/ot/semantic_domains/ot_semantic_domains.ipynb
+    - Aramaic:
+      - Aramaic Overview: notebooks/ot/aramaic/aramaic_overview.ipynb
+      - Aramaic Nominal: notebooks/ot/aramaic/aramaic_nominal.ipynb
+    - Targumim:
+      - Targumim Overview: notebooks/ot/targumim/targumim_overview.ipynb
+  - New Testament (Greek):
+    - Verb Morphology:
+      - NT Verbs: notebooks/nt/verbs/nt_verbs.ipynb
+    - Noun Morphology:
+      - NT Nouns: notebooks/nt/nouns/nt_nouns.ipynb
+    - Syntax & Roles:
+      - Syntactic Roles: notebooks/nt/syntax/syntactic_roles_nt.ipynb
+      - Participles: notebooks/nt/syntax/participles.ipynb
+      - Mood Usage: notebooks/nt/syntax/mood_usage.ipynb
+      - Demonstratives: notebooks/nt/syntax/demonstratives.ipynb
+      - Coreference: notebooks/nt/syntax/coreference.ipynb
+      - Style Analysis: notebooks/nt/syntax/style_analysis.ipynb
+      - Information Structure: notebooks/nt/syntax/information_structure.ipynb
+      - Speech Acts: notebooks/nt/syntax/speech_acts.ipynb
+      - Louw-Nida Domains: notebooks/nt/syntax/louw_nida_domains.ipynb
+      - Prepositions: notebooks/nt/syntax/prepositions.ipynb
+    - Discourse:
+      - Discourse Particles: notebooks/nt/discourse/discourse_particles.ipynb
+    - Peshitta NT (Syriac):
+      - Peshitta Morphology: notebooks/nt/peshitta/peshitta_morphology.ipynb
+  - Cross-Testament:
+    - Survey:
+      - Data Exploration: notebooks/both/survey/data_exploration.ipynb
+      - Book Profiles: notebooks/both/survey/book_profiles.ipynb
+      - Christological Titles: notebooks/both/survey/christological_titles.ipynb
+      - Divine Names: notebooks/both/survey/divine_names.ipynb
+      - Genre Comparison: notebooks/both/survey/genre_compare.ipynb
+    - Lexicon:
+      - Word Study: notebooks/both/lexicon/word_study.ipynb
+      - Concordance: notebooks/both/lexicon/concordance.ipynb
+      - Language Analysis: notebooks/both/lexicon/language_analysis.ipynb
+      - Morphological Distribution: notebooks/both/lexicon/morph_distribution.ipynb
+      - Collocation & Phrase: notebooks/both/lexicon/collocation_and_phrase.ipynb
+      - Formulaic Language: notebooks/both/lexicon/formulaic_language.ipynb
+    - Intertextuality:
+      - LXX Analysis: notebooks/both/intertextuality/lxx_analysis.ipynb
+      - Theological Trajectories: notebooks/both/intertextuality/theological_trajectories.ipynb
+      - NT Quotations: notebooks/both/intertextuality/nt_quotations.ipynb
+      - Parallel Passages: notebooks/both/intertextuality/parallel_passage.ipynb
+  - Developer / Infrastructure:
+    - Reference:
+      - Data Pipeline: notebooks/dev/data_pipeline.ipynb
+      - Export & Profiles: notebooks/dev/export_and_profiles.ipynb
+      - Morphology Codes: notebooks/dev/morphology_codes.ipynb
+- Reports:
+  - Overview: reports/index.md
+  - Old Testament (Hebrew):
+    - Overview: reports/ot/index.md
+    - OT Lexicon & Semantic Profile Reports:
+      - Overview: reports/ot/lexicon/index.md
+      - שָׁם...שָׁם — The Distributive Repetition Idiom in Biblical Hebrew: reports/ot/lexicon/sham-distributive/sham-distributive-report.md
+      - 'Semantic Profile: H1285 — בְּרִית': reports/ot/lexicon/h1285-semantic-profile.md
+      - 'Semantic Profile: H7307 — רוּחַ': reports/ot/lexicon/h7307-semantic-profile.md
+      - 'Semantic Profile: H7965 — שָׁלוֹם': reports/ot/lexicon/h7965-semantic-profile.md
+      - Hebrew vs. Aramaic Word Distribution in the OT: reports/ot/lexicon/ot-hebrew-aramaic-by-book.md
+      - 'Cross-Testament Trajectory: H2617 חֶ֫סֶד "kindness"': reports/ot/lexicon/trajectory-h2617.md
+    - 'Syntactic Role Analysis: YHWH/Elohim [OT]': reports/ot/names/role-yhwh-elohim-ot.md
+    - OT Book Surveys (Language Profiles):
+      - Overview: reports/ot/survey/index.md
+      - Daniel (Dan) — Language Profile: reports/ot/survey/Dan_profile.md
+      - Exodus (Exo) — Language Profile: reports/ot/survey/Exo_profile.md
+      - Genesis (Gen) — Language Profile: reports/ot/survey/Gen_profile.md
+      - Isaiah (Isa) — Language Profile: reports/ot/survey/Isa_profile.md
+      - Psalms (Psa) — Language Profile: reports/ot/survey/Psa_profile.md
+    - OT Verb Morphology Reports:
+      - Overview: reports/ot/verbs/index.md
+      - Hiphil Verb Density in Proverbs: reports/ot/verbs/hiphil-proverbs/hiphil-proverbs-report.md
+      - Hiphil Verb Density in the Psalms: reports/ot/verbs/hiphil-psalms/hiphil-psalms-report.md
+      - 2nd Person Feminine Plural Perfect Verbs in the OT: reports/ot/verbs/2fp-perfect-verbs.md
+      - Hebrew Verb Stems — Genesis: reports/ot/verbs/hebrew-verb-stems-genesis.md
+      - Hebrew Verb Stems — Entire Old Testament: reports/ot/verbs/hebrew-verb-stems-ot-total.md
+      - Hebrew Verb Stems in Torah Books (Grouped): reports/ot/verbs/hebrew-verb-stems-torah-by-book.md
+      - Hiphil (הִפְעִיל) Verb Morphology — Biblical Hebrew: reports/ot/verbs/hiphil_report.md
+      - Niphal Perfect Verbs by OT Book (Top 20): reports/ot/verbs/niphal-perfects-by-book-top20.md
+      - Niphal Perfect Verbs by OT Book: reports/ot/verbs/niphal-perfects-by-book.md
+      - Hebrew Verb Stem Distribution — Old Testament: reports/ot/verbs/ot-verb-stems-pie.md
+      - Verb Morphology by Book: reports/ot/verbs/verb-morphology-by-book.md
+  - New Testament (Greek):
+    - Overview: reports/nt/index.md
+    - καί Semantic Function Analysis: reports/nt/discourse/kai-semantic-functions.md
+    - NT Lexicon Reports:
+      - Overview: reports/nt/lexicon/index.md
+      - 1Pet2 Vice List:
+        - Overview: reports/nt/lexicon/1pet2-vice-list/index.md
+        - δόλος (G1388) — deceit, guile, treachery: reports/nt/lexicon/1pet2-vice-list/dolos/index.md
+        - ὑπόκρισις (G5272) — hypocrisy, dissimulation, play-acting: reports/nt/lexicon/1pet2-vice-list/hypokrisis/index.md
+        - κακία (G2549) — malice, evil, wickedness: reports/nt/lexicon/1pet2-vice-list/kakia/index.md
+        - καταλαλιά (G2636) — slander, evil speaking, defamation: reports/nt/lexicon/1pet2-vice-list/katalalia/index.md
+        - φθόνος (G5355) — envy, jealousy (malicious): reports/nt/lexicon/1pet2-vice-list/phthonos/index.md
+      - 2Tim3 Vice List:
+        - Overview: reports/nt/lexicon/2tim3-vice-list/index.md
+        - ἀχάριστος (G0884) — ungrateful, unthankful: reports/nt/lexicon/2tim3-vice-list/acharistos/index.md
+        - ἀκρατής (G0193) — without self-control, intemperate: reports/nt/lexicon/2tim3-vice-list/akrates/index.md
+        - ἀλαζών (G0213) — boastful, swaggering braggart: reports/nt/lexicon/2tim3-vice-list/alazon/index.md
+        - ἀνήμερος (G0434) — savage, fierce, untamed: reports/nt/lexicon/2tim3-vice-list/anemeros/index.md
+        - ἀνόσιος (G0462) — unholy, impious: reports/nt/lexicon/2tim3-vice-list/anosios/index.md
+        - ἀπειθής (G0545) — disobedient, unpersuadable: reports/nt/lexicon/2tim3-vice-list/apeithes/index.md
+        - ἀφιλάγαθος (G0865) — not loving good, hostile to goodness: reports/nt/lexicon/2tim3-vice-list/aphilagathos/index.md
+        - ἄσπονδος (G0786) — irreconcilable, implacable: reports/nt/lexicon/2tim3-vice-list/aspondos/index.md
+        - ἄστοργος (G0794) — without natural affection, unloving: reports/nt/lexicon/2tim3-vice-list/astorgos/index.md
+        - βλάσφημος (G0989) — blasphemous, slanderous, abusive in speech: reports/nt/lexicon/2tim3-vice-list/blasphemos/index.md
+        - χαλεπός (G5467) — harsh, fierce, dangerous: reports/nt/lexicon/2tim3-vice-list/chalepos/index.md
+        - διάβολος (G1228) — slanderer; the Devil: reports/nt/lexicon/2tim3-vice-list/diabolos/index.md
+        - εὐσέβεια (G2150) — godliness, piety, reverence: reports/nt/lexicon/2tim3-vice-list/eusebeia/index.md
+        - ὑπερήφανος (G5244) — proud, arrogant, showing oneself above others: reports/nt/lexicon/2tim3-vice-list/hyperephanos/index.md
+        - μόρφωσις (G3446) — outward form, semblance, shape: reports/nt/lexicon/2tim3-vice-list/morphosis/index.md
+        - φιλάργυρος (G5366) — money-loving, covetous: reports/nt/lexicon/2tim3-vice-list/philargyros/index.md
+        - φίλαυτος (G5367) — self-loving: reports/nt/lexicon/2tim3-vice-list/philautos/index.md
+        - φιλήδονος (G5369) — pleasure-loving: reports/nt/lexicon/2tim3-vice-list/philedonos/index.md
+        - φιλόθεος (G5377) — God-loving: reports/nt/lexicon/2tim3-vice-list/philotheos/index.md
+        - προδότης (G4273) — traitor, betrayer: reports/nt/lexicon/2tim3-vice-list/prodotes/index.md
+        - προπετής (G4312) — rash, reckless, headlong: reports/nt/lexicon/2tim3-vice-list/propetes/index.md
+        - τυφόω (G5187) — to be puffed up with conceit, to be blinded by pride: reports/nt/lexicon/2tim3-vice-list/typhoo/index.md
+      - '"Anoint / Anointing" — Cross-Corpus Word Study': reports/nt/lexicon/anoint-word-study/anoint-word-study.md
+      - The Armor of God — Ephesians 6:10–18 in Its Letter Context: reports/nt/lexicon/armor-of-god/armor-of-god-report.md
+      - Greek Personal Pronouns — NT and LXX Study: reports/nt/lexicon/greek-pronouns/greek-pronouns-report.md
+      - '"In the Name of" — Cross-Corpus Study': reports/nt/lexicon/in-the-name-of/in-the-name-of.md
+      - Phil 2:1 — Community Virtues Word Study: reports/nt/lexicon/phil2-community-virtues/phil2-community-virtues.md
+      - Sin Vocabulary in the Greek New Testament: reports/nt/lexicon/sin-vocabulary/nt-sin-vocabulary-report.md
+      - Suffering in the Life of the Believer — NT Word Study: reports/nt/lexicon/suffering-word-study/suffering-word-study.md
+      - 'Semantic Profile: G3056 — λόγος': reports/nt/lexicon/g3056-semantic-profile.md
+      - Greek NT Case Distribution by Book: reports/nt/lexicon/nt-case-distribution-by-book.md
+      - Greek Words for "Obey" — NT and LXX Word Study: reports/nt/lexicon/obey-greek-word-study.md
+    - 'Christological Titles: Jesus''s Self-Designations in the Gospels': reports/nt/names/christological-titles.md
+    - Greek NT Prepositions — Case Binding Statistics: reports/nt/prepositions/nt-prep-cases.md
+    - NT Book Surveys (Language Profiles):
+      - Overview: reports/nt/survey/index.md
+      - Hebrews (Heb) — Language Profile: reports/nt/survey/Heb_profile.md
+      - John (Jhn) — Language Profile: reports/nt/survey/Jhn_profile.md
+      - Matthew (Mat) — Language Profile: reports/nt/survey/Mat_profile.md
+      - Revelation (Rev) — Language Profile: reports/nt/survey/Rev_profile.md
+      - Romans (Rom) — Language Profile: reports/nt/survey/Rom_profile.md
+    - NT Verb Morphology Reports:
+      - Overview: reports/nt/verbs/index.md
+      - NT Greek Verb Tense Distribution: reports/nt/verbs/tense-distribution/nt-tense-distribution.md
+      - Greek Aorist Passive Verbs by NT Book: reports/nt/verbs/greek-aorist-passives-by-nt-book.md
+      - Greek NT Verb Tense × Voice Heatmap: reports/nt/verbs/greek-nt-tense-voice-heatmap.md
+      - Greek Verb Tense × Voice in Pauline Letters: reports/nt/verbs/greek-pauline-tense-voice-heatmap.md
+  - Cross-Testament:
+    - Overview: reports/both/index.md
+    - 'Genre Comparison: Morphological Patterns Across Literary Sections': reports/both/genre/genre-comparison-report.md
+    - Intertextuality Reports:
+      - Overview: reports/both/intertextuality/index.md
+      - 'Intertextuality Network: Isaiah 53': reports/both/intertextuality/isa-53-intertextuality.md
+      - 'Intertextuality Network: Isaiah': reports/both/intertextuality/isa-intertextuality.md
+      - NT OT Quotation Source — LXX vs MT Alignment by Book: reports/both/intertextuality/nt-ot-source-alignment.md
+      - NT Quotations of the OT — Overview: reports/both/intertextuality/nt_quotations_overview.md
+      - 'Intertextuality Network: Psalms 22': reports/both/intertextuality/psa-22-intertextuality.md
+    - Cross-Corpus Lexicon Reports:
+      - Overview: reports/both/lexicon/index.md
+      - Hapax Legomena by Biblical Book: reports/both/lexicon/hapax-legomena-by-book.md
+      - Nouns by Gender, Per Book: reports/both/lexicon/nouns-by-gender-by-book.md
+    - First-Coming Messianic Prophecy Density — OT Study: reports/both/messianic-prophecy/messianic-prophecy-density.md
+    - Divine Names and Christological Titles: reports/both/names/divine-names-report.md
+    - ἐπὶ τὸ αὐτό — Phrase Study: reports/both/phrase_studies/epi_to_auto_report.md
+    - Word Studies:
+      - Overview: reports/both/word_studies/index.md
+      - Fasting Vocabulary in the Bible: reports/both/word_studies/fasting/fasting_word_study.md
+      - 'Fire in Scripture — A Semantic Study': reports/both/word_studies/fire/fire_word_study.md
+      - 'Word Study: λόγος (G3056) and ῥῆμα (G4487)': reports/both/word_studies/logos-rhema/logos-rhema.md
+      - 'Word Study: παράκλητος / παρακαλέω / παράκλησις': reports/both/word_studies/parakletos/parakletos-report.md
+      - 'Word Study: Greek Prayer Vocabulary in 1 Timothy 2:1': reports/both/word_studies/prayer-vocabulary/prayer-vocabulary-report.md
+      - 'קֶרֶן / קָרַן — Word Study: Horn, Radiance, and the Moses Problem': reports/both/word_studies/qeren/qeren_report.md
+# <COURSES>
+- Courses:
+  - Overview: courses/index.md
+  - Biblical Hebrew - Year 1:
+    - Overview: courses/bbh/index.md
+    - Student Resources: courses/bbh/common/student-resources.md
+    - bbh-2024.1:
+      - Overview: courses/bbh/bbh-2024.1/index.md
+      - Sessions:
+        - 'Session 130 — Hophal Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-130.md
+        - 'Session 131 — Hophal Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-131.md
+        - 'Session 132 — Piel Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-132.md
+        - 'Session 133 — Piel Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-133.md
+        - 'Session 134 — Pual Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-134.md
+        - 'Session 135 — Pual Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-135.md
+        - 'Session 136 — Hithpael Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-136.md
+        - 'Session 137 — Hithpael Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-137.md
+    - bbh-2026.1:
+      - Overview: courses/bbh/bbh-2026.1/index.md
+      - Sessions:
+        - 'Session 1 — Introduction': courses/bbh/bbh-2026.1/sessions/session-01.md
+        - 'Session 2 — BBH 1 - Hebrew Alphabet': courses/bbh/bbh-2026.1/sessions/session-02.md
+        - 'Session 3 — BBH 2 - Hebrew Vowels': courses/bbh/bbh-2026.1/sessions/session-03.md
+        - 'Session 4 — BBH 3 - Syllabification and Pronunciation': courses/bbh/bbh-2026.1/sessions/session-04.md
+        - 'Session 5 — Review - BBH Ch1-3': courses/bbh/bbh-2026.1/sessions/session-05.md
+# </COURSES>
+- Study Helps:
+  - Overview: study-helps/index.md
+  - New Testament:
+    - Overview: study-helps/nt/index.md
+    - Hebrews 11 — Hall of Faith: study-helps/nt/hebrews-11-hall-of-faith/hebrews11-hall-of-faith.md
+    - Hebrews 12:22–24 — "Ye Are Come To": study-helps/nt/hebrews-12-come-to/hebrews12-come-to.md
+- API Reference: reference/index.md
