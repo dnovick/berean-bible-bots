@@ -48,4 +48,10 @@ sections:
     file: "course-logistics.md"
   - heading: "Grammar Terms Reference"
     file: "grammar-terms.md"
+
+subpages:
+  - heading: "Why Study Hebrew?"
+    file: "why-study-hebrew.md"
+  - heading: "The First Three Rules of Biblical Interpretation"
+    file: "three-rules.md"
 notes: ""

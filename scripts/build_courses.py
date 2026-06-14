@@ -389,6 +389,7 @@ def render_session_page(
     recording = (session.get("recording") or "").strip()
     agenda = session.get("agenda") or []
     sections = session.get("sections") or []
+    subpage_decls = session.get("subpages") or []
     notes = (session.get("notes") or "").strip()
     files = session.get("files") or []
     lesson = session.get("lesson") or {}
@@ -407,6 +408,14 @@ def render_session_page(
         body = _section_content(section, session_dir)
         cslug = content_slug(section)
         section_urls[heading] = f"{sess_slug}/{cslug}.md"
+        subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
+
+    # subpages: declared sub-pages linked from section content; written to the
+    # session subdirectory but never surfaced in the agenda or Additional Info.
+    for sp_decl in subpage_decls:
+        heading = sp_decl.get("heading", "")
+        body = _section_content(sp_decl, session_dir)
+        cslug = content_slug(sp_decl)
         subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
 
     # Add reading names to section_urls so agenda items can auto-link to them
