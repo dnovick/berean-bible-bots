@@ -28,16 +28,20 @@ focus: "BBH 1 - Hebrew Alphabet"
 instructor: "Preston Brown"
 
 agenda:
+  - title: "Follow Up Q&A"
+    duration: "5 min"
 
 lesson:
   name: "BBH 1 - Hebrew Alphabet"
   url: "/lessons/hebrew/ch1/"
+  duration: "100 min"
 
 reading:
   - name: "The Shema"
     description: "Letter recognition drill. Each letter is shown with wide spacing. Identify each letter aloud."
     passage: "Deut 6:4"
     file: "reading-deut-6-4.html"
+    duration: "15 min"
 
 sections:
 #  - heading: "BBH.1 - The Hebrew Alphabet"

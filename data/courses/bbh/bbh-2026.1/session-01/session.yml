@@ -63,4 +63,13 @@ subpages:
     file: "why-study-hebrew.md"
   - heading: "The First Three Rules of Biblical Interpretation"
     file: "three-rules.md"
+
+homework:
+  - "Read BBH Chapter 1"
+  - "Review lesson material for [BBH 1](https://bereanbiblebots.com/lessons/hebrew/ch1/)"
+  - "Install a supported flashcard app and import the flashcards for the next session."
+  - "If you haven't purchased the BBH text yet, please do so."
+  - "If you do not already have Bible study software setup, please do so."
+
+
 notes: ""
