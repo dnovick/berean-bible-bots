@@ -481,7 +481,11 @@ def render_session_page(
 
     # Build combined agenda: explicit items, then lesson, then readings
     lesson_agenda = (
-        [{"title": f"Lesson: {lesson.get('name', '')}", "url": lesson.get("url", "")}]
+        [{
+            "title": f"Lesson: {lesson.get('name', '')}",
+            "url": lesson.get("url", ""),
+            "duration": lesson.get("duration", ""),
+        }]
         if lesson.get("name") and lesson.get("url")
         else []
     )
@@ -492,6 +496,7 @@ def render_session_page(
         {
             "title": f"Reading: {r.get('name', '')}",
             "url": f"{sess_slug}/{r.get('file', '')}",
+            "duration": r.get("duration", ""),
         }
         for r in readings
         if r.get("name") and r.get("file")
@@ -506,6 +511,9 @@ def render_session_page(
             # Explicit url: in YAML always wins; otherwise auto-match to section
             url = item.get("url", "") or section_urls.get(title, "")
             entry = f"[{title}]({url})" if url else title
+            duration = (item.get("duration") or "").strip()
+            if duration:
+                entry += f" ({duration})"
             lines.append(f"1. {entry}")
         lines.append("")
 

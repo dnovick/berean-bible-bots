@@ -55,13 +55,17 @@ _SESSION_YML_TEMPLATE = """\
 #           Omit for review/intro sessions with no primary chapter.
 #
 # agenda:   ordered list of session agenda items
-#   - title:  item label (required)
-#     url:    optional link (internal path or external URL)
+#   - title:    item label (required)
+#     url:      optional link (internal path or external URL)
+#     duration: optional time allotment rendered as a parenthetical, e.g. "15 min"
+#               If present, "(15 min)" is appended to the agenda line.
+#               If absent, nothing is added — not even the parentheses.
 #
 # lesson:   optional lesson linked in the agenda (auto-appended after explicit agenda items,
 #           before reading items)
-#   name:   display label for the agenda link (required if lesson is set)
-#   url:    path or URL to the lesson page (required if lesson is set)
+#   name:     display label for the agenda link (required if lesson is set)
+#   url:      path or URL to the lesson page (required if lesson is set)
+#   duration: optional time allotment, e.g. "45 min" — rendered as "(45 min)" on the agenda line
 #
 # sections: freeform content blocks, each rendered as ## Heading + markdown body
 #   - heading: section title
@@ -78,6 +82,7 @@ _SESSION_YML_TEMPLATE = """\
 #     description: goals or instructions for this reading activity (required)
 #     passage:     Scripture reference displayed on the session page (required)
 #     file:        HTML filename in this session directory (required)
+#     duration:    optional time allotment, e.g. "15 min" — rendered as "(15 min)" on the agenda line
 #   NOTE: the agenda entry "Reading: <name>" auto-links to the reading file via section_urls.
 #   Write it explicitly in agenda: to control its position; omit it to have it
 #   auto-appended at the end of the agenda.
