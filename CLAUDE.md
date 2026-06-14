@@ -319,6 +319,7 @@ Always use these exact BBH (Pratico & Van Pelt) spellings in all exercises, less
 ## Report Standards
 
 - **Build script required:** every report must have a `scripts/build_<term>_report.py` that generates all charts, CSVs, and the report file. Never produce a report without a reproducible build script.
+- **No lint directives in output files:** never place `# noqa`, `# type: ignore`, or any other Python tool comment inside a string literal that gets written to a file. These become literal content in the output. Suppress linter warnings for long string literals by adding the script to `per-file-ignores` in `setup.cfg` instead.
 - **CSV exports:** every report script must export the underlying data as CSV alongside the report.
 - **README indexes:** every output directory (`reports/`, `charts/`, sub-categories) must have a `README.md` with a table of contents and links to all files.
 - **Output subdirectory:** every word/phrase study lives in its own named subdirectory (e.g. `reports/both/word_studies/<term>/`), never flat in the parent folder.

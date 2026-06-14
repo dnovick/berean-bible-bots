@@ -916,11 +916,11 @@ report = f"""# Fire in Scripture: A Semantic Study
 
 **Terms included in this study:**
 
-*Hebrew OT:* אֵשׁ H784 (fire), אִשֶּׁה H801 (offering by fire), לַהַב H3857 (flame), לַפִּיד H3940 (torch/flame), נוּר H5135 (Aramaic: fire — Daniel).  # noqa: E501
+*Hebrew OT:* אֵשׁ H784 (fire), אִשֶּׁה H801 (offering by fire), לַהַב H3857 (flame), לַפִּיד H3940 (torch/flame), נוּר H5135 (Aramaic: fire — Daniel).
 
-*Greek NT:* πῦρ G4442 (fire), φλόξ G5395 (flame), πυρά G4443 (bonfire), πυρόω G4448 (to be ablaze), πύρωσις G4451 (fiery trial/burning), κατακαίω G2618 (to burn up completely).  # noqa: E501
+*Greek NT:* πῦρ G4442 (fire), φλόξ G5395 (flame), πυρά G4443 (bonfire), πυρόω G4448 (to be ablaze), πύρωσις G4451 (fiery trial/burning), κατακαίω G2618 (to burn up completely).
 
-*Not included:* General burning verbs (H1197 בָּעַר, H3341 יָקַד, G2545 καίω) unless they appear in direct fire-noun constructions captured above.  # noqa: E501
+*Not included:* General burning verbs (H1197 בָּעַר, H3341 יָקַד, G2545 καίω) unless they appear in direct fire-noun constructions captured above.
 
 ---
 
@@ -1007,7 +1007,7 @@ report = f"""# Fire in Scripture: A Semantic Study
 
 | File | Contents |
 |---|---|
-| [fire_all_references.csv](fire_all_references.csv) | All OT + NT fire references: reference, form, lemma, Strong's, category, KJV text |  # noqa: E501
+| [fire_all_references.csv](fire_all_references.csv) | All OT + NT fire references: reference, form, lemma, Strong's, category, KJV text |
 """
 
 # Write report to both output/ and mkdocs_src/
