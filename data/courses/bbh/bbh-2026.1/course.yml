@@ -13,5 +13,25 @@ description: >
   Primary textbook: *Basics of Biblical Hebrew Grammar* — Pratico & Van Pelt,
   3rd ed. (Zondervan).
 
+# session_groups divides the sessions table into labeled sub-sections.
+# Each entry specifies a heading and the inclusive session number range (from/to).
+# Sessions outside all groups appear under "Other Sessions" at the bottom.
+session_groups:
+  - heading: "The Basics of Hebrew Writing"
+    from: 1
+    to: 5
+  - heading: "The Basics of Hebrew Nouns and Nominals"
+    from: 6
+    to: 14
+  - heading: "Introduction to Hebrew Verbs and the Qal Stem"
+    from: 15
+    to: 30
+  - heading: "Introduction to the Derived Stems"
+    from: 31
+    to: 44
+  - heading: "Reading and Studying Your Hebrew Bible"
+    from: 45
+    to: 46
+
 # Sessions live in session-NN/ subdirectories, each with a session.yml.
 # See session-01/session.yml for the session schema.

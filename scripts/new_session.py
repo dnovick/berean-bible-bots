@@ -95,6 +95,13 @@ _SESSION_YML_TEMPLATE = """\
 # files:    non-exercise downloadable resources (rendered as ## Downloads)
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")
+#
+# NOTE: session_groups is a COURSE-level key defined in course.yml, not in
+# session.yml. It divides the session table on the course overview page into
+# labeled sub-sections. Each entry has:
+#   - heading: section title
+#     from:    first session number (inclusive)
+#     to:      last session number (inclusive)
 
 date: "{date}"
 focus: "{focus}"{chapter_line}{instructor_line}
