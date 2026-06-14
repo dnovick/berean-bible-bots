@@ -48,9 +48,15 @@ You need a tool that supports:
 
 ---
 
-## Recommended Resources
+## Recommended Reading
 
 | Book | Notes |
 |------|-------|
 | **[Exegetical Fallacies](https://a.co/d/0a2vyrt3)** — D.A. Carson | A clear survey of common errors in biblical interpretation — logical, linguistic, and theological. Invaluable for learning to handle the text accurately. |
 | **[Figures of Speech Used in the Bible](https://a.co/d/0eju3j4f)** — E.W. Bullinger | The definitive reference catalog of biblical figures of speech with thousands of examples from the original languages. A lifetime reference work. |
+
+
+## Flashcards
+
+Most lessons provide flashcard decks for BBH vocabulary as well as the current study area. Import
+files are provided for both Anki and Flashcards Deluxe. We recommend using [Anki](https://apps.ankiweb.net).

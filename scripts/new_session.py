@@ -97,6 +97,12 @@ _SESSION_YML_TEMPLATE = """\
 #   Add "Exercises" to agenda: (no url needed) — it auto-links to exercises.md.
 #   Do NOT list individual exercises under files: — use exercises: instead.
 #
+# homework: optional list of assignments rendered as ## Homework (bulleted list below the Agenda).
+#           Each item is free text and may include Markdown links, e.g.:
+#             - "Read BBH Chapter 1"
+#             - "Review vocabulary at [Quizlet](https://quizlet.com/...)"
+#           Omit the key entirely if there is no homework for this session.
+#
 # files:    non-exercise downloadable resources (rendered as ## Downloads)
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")

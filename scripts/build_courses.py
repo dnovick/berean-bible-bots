@@ -422,6 +422,7 @@ def render_session_page(
     subpage_decls = session.get("subpages") or []
     notes = (session.get("notes") or "").strip()
     files = session.get("files") or []
+    homework = session.get("homework") or []
     lesson = session.get("lesson") or {}
     readings_raw = session.get("reading") or []
     # Normalize: accept a single dict or a list
@@ -532,6 +533,12 @@ def render_session_page(
             url = section_urls.get(heading, "")
             entry = f"[{heading}]({url})" if url else heading
             lines.append(f"| {entry} |")
+        lines.append("")
+
+    if homework:
+        lines += ["## Homework", ""]
+        for item in homework:
+            lines.append(f"- {item}")
         lines.append("")
 
     if files:
