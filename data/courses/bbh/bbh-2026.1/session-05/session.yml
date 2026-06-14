@@ -33,7 +33,6 @@ agenda:
   - title: "Review — BBH Ch3: Syllabification and Pronunciation"
   - title: "Reading: Genesis 1:1–5"
   - title: "Exercises"
-  - title: "Flashcard Review"
 
 reading:
   - name: "Genesis 1:1–5"
@@ -71,16 +70,21 @@ sections:
       - Qamets Hatuf identification
       - Stress placement (milra vs. milel)
 
-files:
-  - name: "Exercise 1 — Letter Review"
-    file: "exercises/session05-letter-review/session05-letter-review.pdf"
-  - name: "Exercise 2 — Vowel Identification"
-    file: "exercises/session05-vowel-review/session05-vowel-review.pdf"
-  - name: "Exercise 3 — Syllabification"
-    file: "exercises/session05-syllabification-review/session05-syllabification-review.pdf"
-  - name: "Exercise 4 — Dagesh Forte vs. Lene"
-    file: "exercises/session05-dagesh-review/session05-dagesh-review.pdf"
-  - name: "Exercise 5 — Vocal vs. Silent Shewa"
-    file: "exercises/session05-shewa-review/session05-shewa-review.pdf"
+exercises:
+  - name: "Letter Review"
+    slug: "session05-letter-review"
+    desc: "Identify each Hebrew letter by name and sound."
+  - name: "Vowel Identification"
+    slug: "session05-vowel-review"
+    desc: "Identify each vowel by name, class, and quantity."
+  - name: "Syllabification"
+    slug: "session05-syllabification-review"
+    desc: "Divide Hebrew words into syllables, label syllable types, mark stress, and identify Qamets Hatuf."
+  - name: "Dagesh Forte vs. Lene"
+    slug: "session05-dagesh-review"
+    desc: "Classify each dagesh as Forte or Lene and explain the rule."
+  - name: "Vocal vs. Silent Shewa"
+    slug: "session05-shewa-review"
+    desc: "Classify each shewa as vocal or silent and identify the rule."
 
 notes: ""

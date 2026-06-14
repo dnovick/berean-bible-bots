@@ -78,8 +78,21 @@ _SESSION_YML_TEMPLATE = """\
 #     description: goals or instructions for this reading activity (required)
 #     passage:     Scripture reference displayed on the session page (required)
 #     file:        HTML filename in this session directory (required)
+#   NOTE: the agenda entry "Reading: <name>" auto-links to the reading file via section_urls.
+#   Write it explicitly in agenda: to control its position; omit it to have it
+#   auto-appended at the end of the agenda.
 #
-# files:    downloadable resources attached to this session (rendered as ## Downloads)
+# exercises: session exercises (generates exercises.md listing + per-exercise index pages,
+#            identical to the lesson exercise pattern at /lessons/hebrew/chN/exercises/).
+#   Each entry:
+#   - name: display title for the exercise (required)
+#     slug: subdirectory name under exercises/ in this session directory (required)
+#     desc: one-sentence description shown in the exercises listing table (required)
+#   Exercise files (.html, .pdf, .md) are copied from exercises/<slug>/ automatically.
+#   Add "Exercises" to agenda: (no url needed) — it auto-links to exercises.md.
+#   Do NOT list individual exercises under files: — use exercises: instead.
+#
+# files:    non-exercise downloadable resources (rendered as ## Downloads)
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")
 
