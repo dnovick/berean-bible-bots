@@ -144,6 +144,14 @@ def _check_session_yml(
         if ref and not (session_dir / ref).exists():
             _warn(warnings, session_yml, f"sections file not found: {ref!r}")
 
+    # File references in subpages — warn (file may be planned but not yet written)
+    for sp in data.get("subpages") or []:
+        if not isinstance(sp, dict):
+            continue
+        ref = sp.get("file")
+        if ref and not (session_dir / ref).exists():
+            _warn(warnings, session_yml, f"subpages file not found: {ref!r}")
+
     # File references in downloads — error (committed downloads must exist)
     for dl in data.get("files") or []:
         if not isinstance(dl, dict):
