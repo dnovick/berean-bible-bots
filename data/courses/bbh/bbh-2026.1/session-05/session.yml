@@ -24,9 +24,63 @@
 #     file: filename in this session directory (e.g. "handout.pdf")
 
 date: "2026-09-03"
-focus: "Review - BBH Ch1-3"
+focus: "Review — BBH Ch1–3"
+instructor: "David Novick"
 
 agenda:
+  - title: "Review — BBH Ch1: Hebrew Alphabet"
+  - title: "Review — BBH Ch2: Hebrew Vowels"
+  - title: "Review — BBH Ch3: Syllabification and Pronunciation"
+  - title: "Reading: Genesis 1:1–5"
+  - title: "Exercises"
+  - title: "Flashcard Review"
+
+reading:
+  - name: "Genesis 1:1–5"
+    description: "Students read Genesis 1:1–5 aloud. Identify every letter, vowel, and syllable boundary."
+    passage: "Gen 1:1–5"
+    file: "reading-gen-1-1-5.html"
+
 sections:
+  - heading: "Review — BBH Ch1: Hebrew Alphabet"
+    content: |
+      **Lesson:** [BBH Chapter 1 — Hebrew Alphabet](/lessons/hebrew/ch1/)
+
+      Key topics to review:
+      - The 22 consonants and their names (BBH spellings)
+      - The 5 final (sofit) forms: ך ם ן ף ץ (mnemonic: כַּמְנַפַּץ)
+      - The 6 Begadkephat letters: ב ג ד כ פ ת
+      - Silent letters and gutturals: א ה ח ע (and ר)
+  - heading: "Review — BBH Ch2: Hebrew Vowels"
+    content: |
+      **Lesson:** [BBH Chapter 2 — Hebrew Vowels](/lessons/hebrew/ch2/)
+
+      Key topics to review:
+      - Long vowels: Qamets, Tsere, Hireq Yod, Holem, Shureq
+      - Short vowels: Pathach, Seghol, Hireq, Qamets Hatuf, Qibbuts
+      - Reduced vowels: Shewa, Hateph Pathach, Hateph Seghol, Hateph Qamets
+      - Matres lectionis (vowel letters): א ה ו י
+  - heading: "Review — BBH Ch3: Syllabification and Pronunciation"
+    content: |
+      **Lesson:** [BBH Chapter 3 — Syllabification and Pronunciation](/lessons/hebrew/ch3/)
+
+      Key topics to review:
+      - Open vs. closed syllables
+      - Vocal vs. silent shewa
+      - Dagesh Forte vs. Dagesh Lene
+      - Qamets Hatuf identification
+      - Stress placement (milra vs. milel)
+
+files:
+  - name: "Exercise 1 — Letter Review"
+    file: "exercises/session05-letter-review/session05-letter-review.pdf"
+  - name: "Exercise 2 — Vowel Identification"
+    file: "exercises/session05-vowel-review/session05-vowel-review.pdf"
+  - name: "Exercise 3 — Syllabification"
+    file: "exercises/session05-syllabification-review/session05-syllabification-review.pdf"
+  - name: "Exercise 4 — Dagesh Forte vs. Lene"
+    file: "exercises/session05-dagesh-review/session05-dagesh-review.pdf"
+  - name: "Exercise 5 — Vocal vs. Silent Shewa"
+    file: "exercises/session05-shewa-review/session05-shewa-review.pdf"
 
 notes: ""
