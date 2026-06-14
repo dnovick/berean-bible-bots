@@ -87,7 +87,7 @@ OT_BOOK_NAMES = {
     'Est': 'Esther', 'Job': 'Job', 'Psa': 'Psalms', 'Pro': 'Proverbs',
     'Ecc': 'Ecclesiastes', 'Sng': 'Song', 'Isa': 'Isaiah', 'Jer': 'Jeremiah',
     'Lam': 'Lamentations', 'Ezk': 'Ezekiel', 'Dan': 'Daniel', 'Hos': 'Hosea',
-    'Jol': 'Joel', 'Amo': 'Amos', 'Mic': 'Micah', 'Nah': 'Nahum',
+    'Jol': 'Joel', 'Amo': 'Amos', 'Mic': 'Micah', 'Nam': 'Nahum',
     'Hab': 'Habakkuk', 'Zep': 'Zephaniah', 'Hag': 'Haggai', 'Zec': 'Zechariah',
     'Mal': 'Malachi',
 }

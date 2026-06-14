@@ -54,7 +54,7 @@ GENRE_MAP = {
     'Job': 'Wisdom', 'Psa': 'Psalms', 'Pro': 'Wisdom', 'Ecc': 'Wisdom',
     'Isa': 'Prophets', 'Jer': 'Prophets', 'Lam': 'Prophets', 'Ezk': 'Prophets',
     'Dan': 'Prophets', 'Hos': 'Prophets', 'Amo': 'Prophets', 'Mic': 'Prophets',
-    'Nah': 'Prophets', 'Hab': 'Prophets', 'Zec': 'Prophets', 'Mal': 'Prophets',
+    'Nam': 'Prophets', 'Hab': 'Prophets', 'Zec': 'Prophets', 'Mal': 'Prophets',
 }
 GENRE_ORDER = ['Torah', 'Historical', 'Psalms', 'Wisdom', 'Prophets']
 GENRE_COLORS = {

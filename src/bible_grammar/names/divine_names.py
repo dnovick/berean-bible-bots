@@ -77,7 +77,7 @@ OT_SECTIONS = {
     'Historical': ['Jos', 'Jdg', 'Rut', '1Sa', '2Sa', '1Ki', '2Ki', '1Ch', '2Ch', 'Ezr', 'Neh', 'Est'],  # noqa: E501
     'Wisdom':     ['Job', 'Psa', 'Pro', 'Ecc', 'Sng'],
     'Prophets':   ['Isa', 'Jer', 'Lam', 'Ezk', 'Dan', 'Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic',
-                   'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],
+                   'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],
 }
 
 NT_SECTIONS = {

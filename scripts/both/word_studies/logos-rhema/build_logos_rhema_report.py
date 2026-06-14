@@ -170,7 +170,7 @@ OT_GENRE = {
     'Ezk': 'Latter\nProphets', 'Dan': 'Latter\nProphets',
     'Hos': 'Latter\nProphets', 'Jol': 'Latter\nProphets', 'Amo': 'Latter\nProphets',
     'Oba': 'Latter\nProphets', 'Jon': 'Latter\nProphets', 'Mic': 'Latter\nProphets',
-    'Nah': 'Latter\nProphets', 'Hab': 'Latter\nProphets', 'Zep': 'Latter\nProphets',
+    'Nam': 'Latter\nProphets', 'Hab': 'Latter\nProphets', 'Zep': 'Latter\nProphets',
     'Hag': 'Latter\nProphets', 'Zec': 'Latter\nProphets', 'Mal': 'Latter\nProphets',
 }
 GENRE_ORDER_OT = ['Torah', 'Former\nProphets', 'Writings', 'Psalms', 'Wisdom', 'Latter\nProphets']

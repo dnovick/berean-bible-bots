@@ -21,7 +21,7 @@ OT_BOOKS = [
     '1Ch', '2Ch', 'Ezr', 'Neh', 'Est',
     'Job', 'Psa', 'Pro', 'Ecc', 'Sol',
     'Isa', 'Jer', 'Lam', 'Ezk', 'Dan',
-    'Hos', 'Joe', 'Amo', 'Oba', 'Jon', 'Mic', 'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
+    'Hos', 'Joe', 'Amo', 'Oba', 'Jon', 'Mic', 'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
 ]
 LABELS = {
     'Gen': 'Gen', 'Exo': 'Exo', 'Lev': 'Lev', 'Num': 'Num', 'Deu': 'Deu',
@@ -31,7 +31,7 @@ LABELS = {
     'Job': 'Job', 'Psa': 'Psa', 'Pro': 'Pro', 'Ecc': 'Ecc', 'Sol': 'Song',
     'Isa': 'Isa', 'Jer': 'Jer', 'Lam': 'Lam', 'Ezk': 'Ezek', 'Dan': 'Dan',
     'Hos': 'Hos', 'Joe': 'Joel', 'Amo': 'Amos', 'Oba': 'Oba', 'Jon': 'Jon',
-    'Mic': 'Mic', 'Nah': 'Nah', 'Hab': 'Hab', 'Zep': 'Zeph', 'Hag': 'Hag',
+    'Mic': 'Mic', 'Nam': 'Nam', 'Hab': 'Hab', 'Zep': 'Zeph', 'Hag': 'Hag',
     'Zec': 'Zech', 'Mal': 'Mal',
 }
 SECTION_COLOR = {
@@ -42,7 +42,7 @@ SECTION_COLOR = {
     **{b: '#59a14f' for b in ['Job', 'Psa', 'Pro', 'Ecc', 'Sol']},
     **{b: '#e15759' for b in [
         'Isa', 'Jer', 'Lam', 'Ezk', 'Dan',
-        'Hos', 'Joe', 'Amo', 'Oba', 'Jon', 'Mic', 'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal']},
+        'Hos', 'Joe', 'Amo', 'Oba', 'Jon', 'Mic', 'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal']},
 }
 
 legend_elements = [

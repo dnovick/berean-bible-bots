@@ -55,7 +55,7 @@ _LXX_CANON = [
     '1Ch', '2Ch', 'Ezr', 'Neh', 'Est',
     'Job', 'Psa', 'Pro', 'Ecc', 'Sng',
     'Isa', 'Jer', 'Lam', 'Ezk', 'Dan',
-    'Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic', 'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
+    'Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic', 'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal',
     # Deuterocanon
     'Tob', 'Jdt', '1Ma', '2Ma', 'Wis', 'Sir', 'Bar',
 ]
@@ -79,7 +79,7 @@ LXX_BOOK_GROUPS = {
     'Wisdom':         ['Job', 'Psa', 'Pro', 'Ecc', 'Sng'],
     'Major Prophets': ['Isa', 'Jer', 'Lam', 'Ezk', 'Dan'],
     'Minor Prophets': ['Hos', 'Jol', 'Amo', 'Oba', 'Jon', 'Mic',
-                       'Nah', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],
+                       'Nam', 'Hab', 'Zep', 'Hag', 'Zec', 'Mal'],
     'Deuterocanon':   ['Tob', 'Jdt', '1Ma', '2Ma', 'Wis', 'Sir', 'Bar'],
 }
 
