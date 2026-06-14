@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 5 — Syllabification Review</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1080px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 2em; font-weight: bold; width: 4.5rem; text-align: center; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .85rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.4em; font-weight: bold; width: 4.5rem; text-align: center; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  .reflect { background: #f4f0ff; border-left: 4px solid #9988cc; padding: .75rem 1rem; margin: 1.5rem 0; font-size: .92rem; }
+  .reflect ol { margin: .4rem 0 0 1.2rem; padding: 0; }
+  .reflect li { margin-bottom: .5rem; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Session 5 — Syllabification Review</h1>
+<p class="subtitle">BBH 2026.1 · Ch3 Review · 15 words</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each Hebrew word: (1) divide into syllables with hyphens, (2) label each syllable O (open) or C (closed), (3) mark the stressed syllable with an asterisk (*), (4) note any Qamets Hatuf (write QH, or — if none).
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr><th>#</th><th>Word</th><th>Syllable Division</th><th>Types (O/C)</th><th>Stress</th><th>Qamets Hatuf?</th><th></th></tr>
+
+  <tr><td class="num">1</td><td class="heb">אָב</td><td><input class="f" id="1-d" placeholder="e.g. אָ-ב"></td><td><input class="f" id="1-t" placeholder="O/C"></td><td><input class="f" id="1-s" placeholder="syllable*"></td><td><input class="f" id="1-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="ans-heb">אָב</td><td>אָב</td><td>C</td><td>אָב*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">2</td><td class="heb">בֵּן</td><td><input class="f" id="2-d" placeholder="e.g. בֵּן"></td><td><input class="f" id="2-t" placeholder="O/C"></td><td><input class="f" id="2-s" placeholder="syllable*"></td><td><input class="f" id="2-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="ans-heb">בֵּן</td><td>בֵּן</td><td>C</td><td>בֵּן*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">3</td><td class="heb">בַּיִת</td><td><input class="f" id="3-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="3-t" placeholder="O/C"></td><td><input class="f" id="3-s" placeholder="syllable*"></td><td><input class="f" id="3-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="ans-heb">בַּיִת</td><td>בַּ-יִת</td><td>O-C</td><td>יִת*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">4</td><td class="heb">קוֹל</td><td><input class="f" id="4-d" placeholder="e.g. קוֹל"></td><td><input class="f" id="4-t" placeholder="O/C"></td><td><input class="f" id="4-s" placeholder="syllable*"></td><td><input class="f" id="4-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">קוֹל</td><td>קוֹל</td><td>C</td><td>קוֹל*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">5</td><td class="heb">יָד</td><td><input class="f" id="5-d" placeholder="e.g. יָד"></td><td><input class="f" id="5-t" placeholder="O/C"></td><td><input class="f" id="5-s" placeholder="syllable*"></td><td><input class="f" id="5-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">יָד</td><td>יָד</td><td>C</td><td>יָד*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">6</td><td class="heb">מַיִם</td><td><input class="f" id="6-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="6-t" placeholder="O/C"></td><td><input class="f" id="6-s" placeholder="syllable*"></td><td><input class="f" id="6-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="ans-heb">מַיִם</td><td>מַ-יִם</td><td>O-C</td><td>יִם*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">7</td><td class="heb">שֶׁמֶשׁ</td><td><input class="f" id="7-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="7-t" placeholder="O/C"></td><td><input class="f" id="7-s" placeholder="syllable*"></td><td><input class="f" id="7-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="ans-heb">שֶׁמֶשׁ</td><td>שֶׁ-מֶשׁ</td><td>O-C</td><td>מֶשׁ*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">8</td><td class="heb">אָדָם</td><td><input class="f" id="8-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="8-t" placeholder="O/C"></td><td><input class="f" id="8-s" placeholder="syllable*"></td><td><input class="f" id="8-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">אָדָם</td><td>אָ-דָם</td><td>O-C</td><td>דָם*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">9</td><td class="heb">פֶּה</td><td><input class="f" id="9-d" placeholder="e.g. פֶּה"></td><td><input class="f" id="9-t" placeholder="O/C"></td><td><input class="f" id="9-s" placeholder="syllable*"></td><td><input class="f" id="9-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="ans-heb">פֶּה</td><td>פֶּה</td><td>O</td><td>פֶּה*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">10</td><td class="heb">לֵב</td><td><input class="f" id="10-d" placeholder="e.g. לֵב"></td><td><input class="f" id="10-t" placeholder="O/C"></td><td><input class="f" id="10-s" placeholder="syllable*"></td><td><input class="f" id="10-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">לֵב</td><td>לֵב</td><td>C</td><td>לֵב*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">11</td><td class="heb">עֵץ</td><td><input class="f" id="11-d" placeholder="e.g. עֵץ"></td><td><input class="f" id="11-t" placeholder="O/C"></td><td><input class="f" id="11-s" placeholder="syllable*"></td><td><input class="f" id="11-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">עֵץ</td><td>עֵץ</td><td>C</td><td>עֵץ*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">12</td><td class="heb">אֱמֶת</td><td><input class="f" id="12-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="12-t" placeholder="O/C"></td><td><input class="f" id="12-s" placeholder="syllable*"></td><td><input class="f" id="12-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">אֱמֶת</td><td>אֱ-מֶת</td><td>O-C</td><td>מֶת*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">13</td><td class="heb">נֶפֶשׁ</td><td><input class="f" id="13-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="13-t" placeholder="O/C"></td><td><input class="f" id="13-s" placeholder="syllable*"></td><td><input class="f" id="13-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-13"><td class="ans-lbl">✓</td><td class="ans-heb">נֶפֶשׁ</td><td>נֶ-פֶשׁ</td><td>O-C</td><td>פֶשׁ*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">14</td><td class="heb">מָוֶת</td><td><input class="f" id="14-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="14-t" placeholder="O/C"></td><td><input class="f" id="14-s" placeholder="syllable*"></td><td><input class="f" id="14-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-14"><td class="ans-lbl">✓</td><td class="ans-heb">מָוֶת</td><td>מָ-וֶת</td><td>O-C</td><td>וֶת*</td><td>—</td><td></td></tr>
+
+  <tr><td class="num">15</td><td class="heb">חֶרֶב</td><td><input class="f" id="15-d" placeholder="syl 1-syl 2"></td><td><input class="f" id="15-t" placeholder="O/C"></td><td><input class="f" id="15-s" placeholder="syllable*"></td><td><input class="f" id="15-q" placeholder="QH or —"></td><td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">חֶרֶב</td><td>חֶ-רֶב</td><td>O-C</td><td>רֶב*</td><td>—</td><td></td></tr>
+</table>
+
+<div class="reflect">
+  <strong>Reflection Questions</strong>
+  <ol>
+    <li><strong>Single-syllable words:</strong> Items 1, 2, 4, 5, 10, and 11 are all monosyllabic. How do you determine whether a monosyllable is open or closed?</li>
+    <li><strong>Seghol pattern:</strong> Items 7, 13, and 15 all share the same syllable pattern (O-C with Seghol in both syllables). What is the classic two-syllable noun pattern this represents (BBH calls it the "segholate" pattern)?</li>
+    <li><strong>Guttural effect:</strong> Item 12 (אֱמֶת) uses a Hateph Seghol instead of a simple shewa under the Alef. Why can gutturals not take a simple vocal shewa?</li>
+  </ol>
+</div>
+
+<script>
+function tog(n) {
+  const row = document.getElementById('ans-' + n);
+  const btn = event.currentTarget;
+  const visible = row.style.display === 'table-row';
+  row.style.display = visible ? 'none' : 'table-row';
+  btn.classList.toggle('on', !visible);
+  btn.textContent = visible ? '▶ Answer' : '▼ Hide';
+}
+function showAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.add('on'); b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.remove('on'); b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.f').forEach(i => i.value = '');
+}
+</script>
+</body>
+</html>

@@ -650,6 +650,7 @@ def main() -> None:
                         src = sess_data_dir / src_name
                         if src.exists():
                             dst = files_out_dir / src_name
+                            dst.parent.mkdir(parents=True, exist_ok=True)
                             shutil.copy2(src, dst)
                             print(f"  Copied {dst.relative_to(_REPO_ROOT)}")
                         else:
