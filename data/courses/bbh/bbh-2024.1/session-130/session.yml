@@ -43,6 +43,8 @@ sections:
     file: "logistics.md"
   - heading: "References"
     file: "references.md"
+  - heading: "Hophal — OT Distribution by Book"
+    file: "hophal-distribution.md"
 
 
 notes: ""
