@@ -4,27 +4,43 @@
 #deck:BBH Chapter 28 — Hophal Strong
 #tags column:3
 
-יוּמַת	מות Hophal+Imperfect+3ms — "he shall be put to death" — most common Hophal form (99×); death penalty formula; יוּ prefix (Shureq) is universal Hophal Imperfect marker	hophal-imperfect bbh-ch28
-יוּמְתוּ	מות Hophal+Imperfect+3mp — "they shall be put to death" — יוּ prefix + 3mp ending; Num 35 death penalty	hophal-imperfect bbh-ch28
-הוּמַת	מות Hophal+Perfect+3ms — "he has been put to death" — הוּ prefix (he + Shureq) = definitive Hophal Perfect marker; Deu 21:22	hophal-perfect bbh-ch28
-הוּמְתָה	מות Hophal+Perfect+3fs — "she was put to death" — הוּ prefix + 3fs suffix	hophal-perfect bbh-ch28
-וַתּוּמַת	מות Hophal+Wayyiqtol+3fs — "and she was put to death" — וַתּ + Hophal Imperfect stem; 2Ki 11:16	hophal-wayyiqtol bbh-ch28
-מוּמָת	מות Hophal+Participle+ms — "one to be put to death" — מוּ prefix + Qamets under R2; 1Sa 19:11	hophal-participle bbh-ch28
-הוּמֵת	מות Hophal+Inf.Absolute — Tsere under R2 (contrast Perfect Patach הוּמַת); very rare (6× OT)	hophal-inf-absolute bbh-ch28
-מוֹת יוּמַת	מות Qal Inf.Abs. + Hophal Imperfect — "shall surely be put to death" — cognate absolute construction intensifying the legal command	hophal-imperfect bbh-ch28
-הֻגַּד	נגד Hophal+Perfect+3ms — "it was told" — הֻ (Qibbuts) = alternate Hophal prefix vowel alongside הוּ (Shureq); Deu 17:4	hophal-perfect bbh-ch28
-וַיֻּגַּד	נגד Hophal+Wayyiqtol+3ms — "and it was told" — standard narrative report formula; Gen 22:20; 27:42; 31:22; 38:13	hophal-wayyiqtol bbh-ch28
-יֻגַּד	נגד Hophal+Imperfect+3ms — "it will be told" — Qibbuts (ֻ) under prefix; contrast הִגִּיד (Hiphil active)	hophal-imperfect bbh-ch28
-וְהֻגַּד	נגד Hophal+Weqatal+3ms — "and it will be told" — וְ + Hophal Perfect; Jos 9:24	hophal-weqatal bbh-ch28
-הוּבָא	בוא Hophal+Perfect+3ms — "it was brought/put" — הוּ prefix; Exo 27:7; Lev 13:2	hophal-perfect bbh-ch28
-יוּבָא	בוא Hophal+Imperfect+3ms — "it shall be brought in" — יוּ prefix; Lev 6:23 (burnt offering)	hophal-imperfect bbh-ch28
-הֻבָּאת	בוא Hophal+Weqatal+3fs — "it was brought" — הֻ prefix (Qibbuts variant); Gen 33:11	hophal-weqatal bbh-ch28
-מוּבָאִים	בוא Hophal+Participle+mp — "those being brought" — מוּ prefix + Qibbuts/Shureq; Gen 43:18	hophal-participle bbh-ch28
-הֵמִית vs. יוּמַת	Hiphil הֵמִית = "he put to death" (active causative) · Hophal יוּמַת = "was put to death" (passive causative) — the Hophal always passivizes the Hiphil	hophal-vs-hiphil bbh-ch28
-הִגִּיד vs. הֻגַּד	Hiphil הִגִּיד = "he told/declared" (הִ prefix) · Hophal הֻגַּד = "it was told" (הֻ prefix) — prefix vowel shift: Hireq→Qibbuts/Shureq	hophal-vs-hiphil bbh-ch28
-הֵבִיא vs. הוּבָא	Hiphil הֵבִיא = "he brought" · Hophal הוּבָא = "it was brought" — passive causative of the Hiphil of biconsonantal root בוא	hophal-vs-hiphil bbh-ch28
-הִכָּה vs. מֻכִּים	Hiphil הִכָּה = "he struck/killed" · Hophal מֻכִּים = "those being struck" — Hophal Participle mp with מֻ prefix	hophal-vs-hiphil bbh-ch28
-What is the ONE universal Hophal marker?	u-class vowel (Shureq וּ or Qibbuts ֻ) under the prefix consonant — applies to Perfect (הוּ), Imperfect (יוּ), Wayyiqtol (וַיּוּ), and Participle (מוּ/מֻ)	hophal-diagnostic bbh-ch28
-Hophal vs. Pual Participle — how to distinguish?	Both have מ prefix + u-class vowel under R1. Key: Pual Participle has DAGESH FORTE in R2 (passive of Piel intensive). Hophal Participle does NOT (passive of Hiphil causative).	hophal-diagnostic bbh-ch28
-Why does Hophal have no Imperative?	Passive verbs cannot be commanded — the Hophal expresses "caused to undergo an action," not an act one initiates	hophal-diagnostic bbh-ch28
-Most common Hophal form in the OT?	יוּמַת (99 tokens) — "shall be put to death" — Hophal Imperfect 3ms of מות, used in the death penalty formula מוֹת יוּמַת	hophal-diagnostic bbh-ch28
+הָפְקַד (Lev 6:4)	פקד Hophal+Perfect+3ms — "it was entrusted/deposited to him" — הָ prefix (o-class qamets hatuf); strong root פקד; contrast Hiphil הִפְקִיד "he entrusted"	hophal-perfect bbh-ch28
+הֻשְׁלָכָה (Ezk 19:12)	שׁלך Hophal+Perfect+3fs — "it was thrown down" — הֻ prefix (u-class qibbuts); Jerusalem is cast down like a vine branch; -ָה suffix marks 3fs	hophal-perfect bbh-ch28
+הָשְׁלַכְתָּ (Isa 14:19)	שׁלך Hophal+Perfect+2ms — "you have been cast out" — הָ prefix (o-class); Babylon's king denied honorable burial; -תָּ suffix marks 2ms	hophal-perfect bbh-ch28
+הָשְׁלַכְתְּ (paradigm)	שׁלך Hophal+Perfect+2fs — "you (fs) have been cast out" — הָ prefix (o-class); -תְּ suffix marks 2fs	hophal-perfect bbh-ch28
+הָשְׁלַכְתִּי (Psa 22:10)	שׁלך Hophal+Perfect+1cs — "I was cast upon you" — הָ prefix (o-class); Psalm 22 messianic lament: "I was cast upon you from the womb"	hophal-perfect bbh-ch28
+הָשְׁלְכוּ (paradigm)	שׁלך Hophal+Perfect+3cp — "they were cast out" — הָ prefix (o-class); -וּ suffix marks 3cp; R2 takes vocal shewa before the suffix	hophal-perfect bbh-ch28
+הָשְׁלַכְתֶּם (paradigm)	שׁלך Hophal+Perfect+2mp — "you (mp) were cast out" — הָ prefix; -תֶּם suffix marks 2mp	hophal-perfect bbh-ch28
+הָשְׁלַכְתֶּן (paradigm)	שׁלך Hophal+Perfect+2fp — "you (fp) were cast out" — הָ prefix; -תֶּן suffix marks 2fp; very rare in BH	hophal-perfect bbh-ch28
+הָשְׁלַכְנוּ (paradigm)	שׁלך Hophal+Perfect+1cp — "we were cast out" — הָ prefix; -נוּ suffix marks 1cp	hophal-perfect bbh-ch28
+יֻשְׁלַךְ (paradigm)	שׁלך Hophal+Imperfect+3ms — "he shall be cast out" — יֻ prefix (yod + qibbuts); Patach under R2; contrast Hiphil Imperfect יַשְׁלִיךְ (yod + Patach)	hophal-imperfect bbh-ch28
+תֻּשְׁלַךְ (paradigm, 3fs)	שׁלך Hophal+Imperfect+3fs — "she shall be cast out" — תֻּ prefix (tav + qibbuts); identical in form to 2ms	hophal-imperfect bbh-ch28
+תֻּשְׁלַךְ (paradigm, 2ms)	שׁלך Hophal+Imperfect+2ms — "you will be cast out" — תֻּ prefix; same form as 3fs — context disambiguates	hophal-imperfect bbh-ch28
+תֻּשְׁלְכִי (paradigm)	שׁלך Hophal+Imperfect+2fs — "you (fs) will be cast out" — תֻּ prefix + -כִי suffix marks 2fs	hophal-imperfect bbh-ch28
+אֻשְׁלַךְ (paradigm)	שׁלך Hophal+Imperfect+1cs — "I will be cast out" — אֻ prefix (alef + qibbuts); Patach under R2	hophal-imperfect bbh-ch28
+יֻשְׁלָכוּ (Isa 34:3)	שׁלך Hophal+Imperfect+3mp — "they will be cast out" — יֻ prefix (qibbuts); -כוּ ending marks 3mp; note Qamets under R2 before the plural suffix (contrast Patach in singular)	hophal-imperfect bbh-ch28
+תֻּשְׁלַכְנָה (paradigm, 3fp)	שׁלך Hophal+Imperfect+3fp — "they (fp) will be cast out" — תֻּ prefix + -נָה ending marks 3fp/2fp	hophal-imperfect bbh-ch28
+תֻּשְׁלְכוּ (paradigm)	שׁלך Hophal+Imperfect+2mp — "you (mp) will be cast out" — תֻּ prefix + -כוּ ending marks 2mp	hophal-imperfect bbh-ch28
+תֻּשְׁלַכְנָה (paradigm, 2fp)	שׁלך Hophal+Imperfect+2fp — "you (fp) will be cast out" — same form as 3fp; -נָה marks both	hophal-imperfect bbh-ch28
+נֻשְׁלַךְ (paradigm)	שׁלך Hophal+Imperfect+1cp — "we will be cast out" — נֻ prefix (nun + qibbuts); Patach under R2	hophal-imperfect bbh-ch28
+וַיֻּשְׁלַךְ (paradigm)	שׁלך Hophal+Wayyiqtol+3ms — "and he was cast out" — וַיּ + qibbuts under yod; dagesh forte in the prefix consonant (assimilation of vav); Patach under R2	hophal-wayyiqtol bbh-ch28
+וַתֻּשְׁלַךְ (paradigm)	שׁלך Hophal+Wayyiqtol+3fs — "and she was cast out" — וַתּ + qibbuts; same vav assimilation	hophal-wayyiqtol bbh-ch28
+וַיֻּשְׁלְכוּ (paradigm)	שׁלך Hophal+Wayyiqtol+3mp — "and they were cast out" — וַיּ + qibbuts + 3mp ending; R2 takes vocal shewa before the plural suffix	hophal-wayyiqtol bbh-ch28
+וַתֻּשְׁלְכִי (Ezk 16:5)	שׁלך Hophal+Weqatal+2fs — "and you were thrown out" — וַתּ + qibbuts + 2fs ending; Ezk 16 indictment of Jerusalem as an abandoned infant	hophal-weqatal bbh-ch28
+וְהָשְׁלַכְתָּ (paradigm)	שׁלך Hophal+Weqatal+2ms — "and you shall be cast out" — וְ + Hophal Perfect form (הָ prefix retained)	hophal-weqatal bbh-ch28
+הָשְׁלַךְ (paradigm, Imper.)	שׁלך Hophal+Imperative+2ms — "be cast out!" — הָ prefix; Patach under R2; IDENTICAL in form to Perfect 3ms and Inf. Construct — context alone distinguishes. Hophal Imper. is extremely rare (1 clear OT example total: הָפְנוּ, Jer 49:8)	hophal-imperative bbh-ch28
+הָשְׁלְכִי (paradigm)	שׁלך Hophal+Imperative+2fs — "be cast out! (fs)" — הָ prefix + -כִי suffix	hophal-imperative bbh-ch28
+הָשְׁלְכוּ (paradigm)	שׁלך Hophal+Imperative+2mp — "be cast out! (mp)" — הָ prefix + -כוּ suffix; cf. attested הָפְנוּ (Jer 49:8, root פנה) — the one clear OT Hophal Imper.	hophal-imperative bbh-ch28
+הָשְׁלַכְנָה (paradigm)	שׁלך Hophal+Imperative+2fp — "be cast out! (fp)" — הָ prefix + -כְנָה suffix	hophal-imperative bbh-ch28
+הָשְׁלַךְ (paradigm, Inf.Cs.)	שׁלך Hophal+Infinitive Construct — "to be cast out" — same form as Perfect 3ms and Imperative 2ms; context alone distinguishes; Hophal Inf.Cs. is rare (≤10 OT tokens total)	hophal-infinitive bbh-ch28
+הָחֳרֵב (2Ki 3:23)	חרב Hophal+Infinitive Absolute — "(to be) utterly laid waste" — Tsere (ֵ) under R2 distinguishes Inf.Abs. from Perfect (Patach ַ) and Inf.Cs. (Patach); the soldiers assumed the valley "had certainly been slaughtered"	hophal-infinitive bbh-ch28
+מֻשְׁלָךְ (2Sa 20:21)	שׁלך Hophal+Participle+ms — "(his head) is about to be thrown" — מֻ prefix (mem + qibbuts); Qamets under R2 is the Participle signature; a wise woman promises Joab Sheba's head "thrown over the wall"	hophal-participle bbh-ch28
+מֻשְׁלֶכֶת (1Ki 13:24)	שׁלך Hophal+Participle+fs — "thrown down" — מֻ prefix + Seghol under R2 + fs ending; body of the man of God "lying thrown down on the road"	hophal-participle bbh-ch28
+מֻשְׁלָכִים (Jer 14:16)	שׁלך Hophal+Participle+mp — "thrown out" — מֻ prefix + Qamets + mp ending; those who prophesied falsely "will be thrown out in the streets"	hophal-participle bbh-ch28
+מֻשְׁלָכוֹת (paradigm)	שׁלך Hophal+Participle+fp — "thrown out (fp)" — מֻ prefix + Qamets + fp ending -וֹת	hophal-participle bbh-ch28
+הָשְׁלַכְתָּ vs. הִשְׁלַכְתָּ	Hophal הָשְׁלַכְתָּ = "you were cast out" (passive causative) · Hiphil הִשְׁלַכְתָּ = "you threw out" (active causative) — key: הָ (o-class) under prefix he = Hophal; הִ (Hireq) under prefix he = Hiphil	hophal-diagnostic bbh-ch28
+מֻשְׁלָכִים vs. מְשֻׁלָּכִים	Hophal Participle mp מֻשְׁלָכִים — passive of causative (מֻ prefix; no Dagesh in כ) · Pual Participle mp מְשֻׁלָּכִים — passive of intensive (Dagesh Forte in R2 כּ) — Dagesh in R2 = Pual; no Dagesh = Hophal	hophal-diagnostic bbh-ch28
+יָחֳרַם (Lev 27:29)	חרם Hophal+Imperfect+3ms — "shall be devoted to destruction" — note: o-class prefix יָ (qamets hatuf under yod) rather than the usual qibbuts; possible with guttural ח; context: no devoted person may be ransomed	hophal-imperfect bbh-ch28
+מֻפְקָדִים (2Ki 22:5)	פקד Hophal+Participle+mp — "those appointed over (the house of the LORD)" — מֻ prefix (qibbuts); Josiah's temple restoration: silver given to those appointed over the work	hophal-participle bbh-ch28
+What prefix marks Hophal Perfect of a STRONG root — and how many patterns are there?	TWO patterns: (1) הָ — qamets hatuf (o-class) — predominates in OT, e.g., הָשְׁלַכְתָּ (Isa 14:19), הָפְקַד (Lev 6:4); (2) הֻ — qibbuts (u-class) — also attested, e.g., הֻשְׁלָכָה (Ezk 19:12). Shureq (הוּ) marks hollow roots (Ch29), NOT strong roots.	hophal-diagnostic bbh-ch28
+Perfect 3ms · Inf.Cs. · Imperative 2ms of Hophal — what do all three have in common?	All three are identical in form: הָשְׁלַךְ. Context (syntactic position) alone distinguishes them. Imperative is the rarest — only 1 clear OT Hophal Imperative exists: הָפְנוּ (Jer 49:8).	hophal-diagnostic bbh-ch28

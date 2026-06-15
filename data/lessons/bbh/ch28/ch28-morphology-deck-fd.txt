@@ -1,24 +1,46 @@
-יוּמַת (Gen 26:11)	Root: מוּת | Hophal | Imperfect 3ms | shall be put to death — most common Hophal form; יוּ prefix (Shureq)	BBH Chapter 28 — Hophal Strong
-יוּמַת (Num 35:16)	Root: מוּת | Hophal | Imperfect 3ms | capital punishment formula; מוֹת יוּמַת = "shall surely be put to death"	BBH Chapter 28 — Hophal Strong
-הוּמַת (Deu 21:22)	Root: מוּת | Hophal | Perfect 3ms | he has been put to death — הוּ prefix (he + Shureq) marks Hophal Perfect	BBH Chapter 28 — Hophal Strong
-הוּמְתָה	Root: מוּת | Hophal | Perfect 3fs | she was put to death — 3fs suffix ָה	BBH Chapter 28 — Hophal Strong
-וַתּוּמַת (2Ki 11:16)	Root: מוּת | Hophal | Wayyiqtol 3fs | and she was put to death — Athaliah executed; וַתּ + Shureq prefix	BBH Chapter 28 — Hophal Strong
-מוּמָת (1Sa 19:11)	Root: מוּת | Hophal | Participle ms | one who is to be put to death — מוּ prefix + Qamets under R2	BBH Chapter 28 — Hophal Strong
-הוּמֵת	Root: מוּת | Hophal | Inf. Absolute | Tsere under R2 distinguishes from Perfect Patach (הוּמַת); rare (6× OT)	BBH Chapter 28 — Hophal Strong
-הֻגַּד (Deu 17:4)	Root: נָגַד | Hophal | Perfect 3ms | it was told — הֻ prefix (Qibbuts) = alternate Hophal prefix; Hiphil הִגִּיד → Hophal הֻגַּד	BBH Chapter 28 — Hophal Strong
-וַיֻּגַּד (Gen 22:20)	Root: נָגַד | Hophal | Wayyiqtol 3ms | and it was told — standard narrative report formula after major events	BBH Chapter 28 — Hophal Strong
-וַיֻּגַּד (Gen 27:42)	Root: נָגַד | Hophal | Wayyiqtol 3ms | and it was told [to Rebekah] — same formula; repeated in patriarchal narratives	BBH Chapter 28 — Hophal Strong
-יֻגַּד	Root: נָגַד | Hophal | Imperfect 3ms | it will be told — Qibbuts (ֻ) under prefix; alternate Hophal Imperfect vowel	BBH Chapter 28 — Hophal Strong
-הוּבָא (Exo 27:7)	Root: בּוֹא | Hophal | Perfect 3ms | it was brought/put — הוּ prefix; tabernacle instructions	BBH Chapter 28 — Hophal Strong
-יוּבָא (Lev 6:23)	Root: בּוֹא | Hophal | Imperfect 3ms | it shall be brought in — grain offering law; יוּ prefix	BBH Chapter 28 — Hophal Strong
-הֻבָּאת (Gen 33:11)	Root: בּוֹא | Hophal | Weqatal 3fs | it was brought — Jacob's gift to Esau; הֻ prefix (Qibbuts variant)	BBH Chapter 28 — Hophal Strong
-מוּבָאִים (Gen 43:18)	Root: בּוֹא | Hophal | Participle mp | [are.being] brought — brothers fear being brought to Joseph; מוּ prefix	BBH Chapter 28 — Hophal Strong
-וַיֻּכּוּ (Exo 5:14)	Root: נָכָה | Hophal | Wayyiqtol 3mp | and they were beaten — Israelite foremen; Pe-Nun assimilation: נ→כּ (dagesh)	BBH Chapter 28 — Hophal Strong
-מֻכִּים (Exo 5:16)	Root: נָכָה | Hophal | Participle mp | being beaten/struck — מֻ prefix + assimilation dagesh; Hiphil הִכָּה = to strike	BBH Chapter 28 — Hophal Strong
-הֵמִית vs. יוּמַת	Hiphil הֵמִית = "put to death" (active causative) · Hophal יוּמַת = "was put to death" (passive causative) — prefix Hireq→Shureq shift	BBH Chapter 28 — Hophal Strong
-הִגִּיד vs. וַיֻּגַּד	Hiphil הִגִּיד = "he told/declared" · Hophal וַיֻּגַּד = "it was told" — active Hiphil passivized by Hophal; הִ→ יֻ in Wayyiqtol	BBH Chapter 28 — Hophal Strong
-הֵבִיא vs. הוּבָא	Hiphil הֵבִיא = "he brought" · Hophal הוּבָא = "it was brought" — biconsonantal root בוא; prefix הֵ→הוּ	BBH Chapter 28 — Hophal Strong
-הִכָּה vs. מֻכִּים	Hiphil הִכָּה = "he struck/killed" · Hophal מֻכִּים = "those being struck" — Participle mp; מֻ prefix	BBH Chapter 28 — Hophal Strong
-Hophal Participle vs. Pual Participle	Both: מ prefix + u-class vowel. KEY DIFFERENCE: Pual has DAGESH in R2 (passive of Piel) · Hophal has NO dagesh (passive of Hiphil). Ex: מְקֻדָּשׁ (Pual) vs. מוּמָת (Hophal)	BBH Chapter 28 — Hophal Strong
-Why no Hophal Imperative?	Passive verbs cannot be commanded. The Hophal = passive causative; one cannot command someone to "be caused to do something."	BBH Chapter 28 — Hophal Strong
-Most common single Hophal form?	יוּמַת (99 tokens) — Hophal Imperfect 3ms of מות — capital punishment formula; in every OT death-penalty law	BBH Chapter 28 — Hophal Strong
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 28 — Hophal Strong
+#tags column:3
+
+הָפְקַד (Lev 6:4)	Root: פקד | Hophal | Perfect 3ms | was entrusted/deposited — הָ prefix (o-class qamets hatuf)	BBH Chapter 28 — Hophal Strong
+הֻשְׁלָכָה (Ezk 19:12)	Root: שׁלך | Hophal | Perfect 3fs | it was thrown down — הֻ prefix (u-class qibbuts); -ָה marks 3fs	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְתָּ (Isa 14:19)	Root: שׁלך | Hophal | Perfect 2ms | you have been cast out — הָ prefix (o-class); Babylon's king denied burial	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְתְּ (paradigm)	Root: שׁלך | Hophal | Perfect 2fs | you (fs) have been cast out — הָ prefix; -תְּ marks 2fs	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְתִּי (Psa 22:10)	Root: שׁלך | Hophal | Perfect 1cs | I was cast upon you — הָ prefix; "cast upon you from the womb" (Ps 22 messianic lament)	BBH Chapter 28 — Hophal Strong
+הָשְׁלְכוּ (paradigm)	Root: שׁלך | Hophal | Perfect 3cp | they were cast out — הָ prefix; -וּ marks 3cp; R2 takes vocal shewa	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְתֶּם (paradigm)	Root: שׁלך | Hophal | Perfect 2mp | you (mp) were cast out — הָ prefix; -תֶּם marks 2mp	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְתֶּן (paradigm)	Root: שׁלך | Hophal | Perfect 2fp | you (fp) were cast out — הָ prefix; -תֶּן marks 2fp	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְנוּ (paradigm)	Root: שׁלך | Hophal | Perfect 1cp | we were cast out — הָ prefix; -נוּ marks 1cp	BBH Chapter 28 — Hophal Strong
+יֻשְׁלַךְ (paradigm)	Root: שׁלך | Hophal | Imperfect 3ms | he shall be cast out — יֻ prefix (qibbuts); Patach under R2	BBH Chapter 28 — Hophal Strong
+תֻּשְׁלַךְ (paradigm, 3fs)	Root: שׁלך | Hophal | Imperfect 3fs | she shall be cast out — תֻּ prefix; identical form to 2ms	BBH Chapter 28 — Hophal Strong
+תֻּשְׁלַךְ (paradigm, 2ms)	Root: שׁלך | Hophal | Imperfect 2ms | you will be cast out — תֻּ prefix; same form as 3fs; context disambiguates	BBH Chapter 28 — Hophal Strong
+תֻּשְׁלְכִי (paradigm)	Root: שׁלך | Hophal | Imperfect 2fs | you (fs) will be cast out — תֻּ prefix + -כִי suffix	BBH Chapter 28 — Hophal Strong
+אֻשְׁלַךְ (paradigm)	Root: שׁלך | Hophal | Imperfect 1cs | I will be cast out — אֻ prefix (alef + qibbuts)	BBH Chapter 28 — Hophal Strong
+יֻשְׁלָכוּ (Isa 34:3)	Root: שׁלך | Hophal | Imperfect 3mp | they will be cast out — יֻ prefix; Qamets under R2 before plural suffix (contrast Patach in singular)	BBH Chapter 28 — Hophal Strong
+תֻּשְׁלַכְנָה (paradigm, 3fp)	Root: שׁלך | Hophal | Imperfect 3fp | they (fp) will be cast out — תֻּ prefix + -נָה	BBH Chapter 28 — Hophal Strong
+תֻּשְׁלְכוּ (paradigm)	Root: שׁלך | Hophal | Imperfect 2mp | you (mp) will be cast out — תֻּ prefix + -כוּ	BBH Chapter 28 — Hophal Strong
+תֻּשְׁלַכְנָה (paradigm, 2fp)	Root: שׁלך | Hophal | Imperfect 2fp | you (fp) will be cast out — same form as 3fp; -נָה marks both	BBH Chapter 28 — Hophal Strong
+נֻשְׁלַךְ (paradigm)	Root: שׁלך | Hophal | Imperfect 1cp | we will be cast out — נֻ prefix (nun + qibbuts)	BBH Chapter 28 — Hophal Strong
+וַיֻּשְׁלַךְ (paradigm)	Root: שׁלך | Hophal | Wayyiqtol 3ms | and he was cast out — וַיּ + qibbuts; dagesh in prefix consonant	BBH Chapter 28 — Hophal Strong
+וַתֻּשְׁלַךְ (paradigm)	Root: שׁלך | Hophal | Wayyiqtol 3fs | and she was cast out — וַתּ + qibbuts	BBH Chapter 28 — Hophal Strong
+וַיֻּשְׁלְכוּ (paradigm)	Root: שׁלך | Hophal | Wayyiqtol 3mp | and they were cast out — וַיּ + qibbuts + 3mp ending	BBH Chapter 28 — Hophal Strong
+וַתֻּשְׁלְכִי (Ezk 16:5)	Root: שׁלך | Hophal | Weqatal 2fs | and you were thrown out — Ezk 16 indictment of Jerusalem as abandoned infant	BBH Chapter 28 — Hophal Strong
+וְהָשְׁלַכְתָּ (paradigm)	Root: שׁלך | Hophal | Weqatal 2ms | and you shall be cast out — וְ + Hophal Perfect form (הָ prefix retained)	BBH Chapter 28 — Hophal Strong
+הָשְׁלַךְ (paradigm, Imper. 2ms)	Root: שׁלך | Hophal | Imperative 2ms | be cast out! — הָ prefix; identical to Perfect 3ms and Inf.Cs.; Hophal Imper. extremely rare (1 clear OT token total: הָפְנוּ Jer 49:8)	BBH Chapter 28 — Hophal Strong
+הָשְׁלְכִי (paradigm)	Root: שׁלך | Hophal | Imperative 2fs | be cast out! (fs) — הָ prefix + -כִי	BBH Chapter 28 — Hophal Strong
+הָשְׁלְכוּ (paradigm)	Root: שׁלך | Hophal | Imperative 2mp | be cast out! (mp) — הָ prefix + -כוּ; cf. הָפְנוּ (Jer 49:8)	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְנָה (paradigm)	Root: שׁלך | Hophal | Imperative 2fp | be cast out! (fp) — הָ prefix + -כְנָה	BBH Chapter 28 — Hophal Strong
+הָשְׁלַךְ (paradigm, Inf.Cs.)	Root: שׁלך | Hophal | Infinitive Construct | to be cast out — same form as Perfect 3ms and Imper. 2ms; very rare	BBH Chapter 28 — Hophal Strong
+הָחֳרֵב (2Ki 3:23)	Root: חרב | Hophal | Infinitive Absolute | to be laid waste — Tsere (ֵ) under R2 distinguishes Inf.Abs. from Perfect (Patach) and Inf.Cs. (Patach)	BBH Chapter 28 — Hophal Strong
+מֻשְׁלָךְ (2Sa 20:21)	Root: שׁלך | Hophal | Participle ms | (is) about to be thrown — מֻ prefix (qibbuts); Qamets under R2; woman of Abel promises Joab Sheba's head	BBH Chapter 28 — Hophal Strong
+מֻשְׁלֶכֶת (1Ki 13:24)	Root: שׁלך | Hophal | Participle fs | thrown down — מֻ prefix; Seghol under R2; body of the prophet lying on the road	BBH Chapter 28 — Hophal Strong
+מֻשְׁלָכִים (Jer 14:16)	Root: שׁלך | Hophal | Participle mp | thrown out — מֻ prefix; Qamets + -ים; false prophets cast into streets	BBH Chapter 28 — Hophal Strong
+מֻשְׁלָכוֹת (paradigm)	Root: שׁלך | Hophal | Participle fp | thrown out (fp) — מֻ prefix; Qamets + -וֹת	BBH Chapter 28 — Hophal Strong
+הָשְׁלַכְתָּ vs. הִשְׁלַכְתָּ	Hophal Perfect 2ms vs. Hiphil Perfect 2ms of שׁלך | הָ (o-class) = Hophal passive: "you were cast out" · הִ (Hireq) = Hiphil active: "you threw out"	BBH Chapter 28 — Hophal Strong
+מֻשְׁלָכִים vs. מְשֻׁלָּכִים	Hophal Ptc. mp vs. Pual Ptc. mp of שׁלך | No Dagesh in כ = Hophal (passive of causative) · Dagesh Forte in כּ = Pual (passive of intensive)	BBH Chapter 28 — Hophal Strong
+יָחֳרַם (Lev 27:29)	Root: חרם | Hophal | Imperfect 3ms | shall be devoted to destruction — o-class prefix יָ (qamets hatuf); guttural ח favors o-class; Torah law: no devoted person may be ransomed	BBH Chapter 28 — Hophal Strong
+מֻפְקָדִים (2Ki 22:5)	Root: פקד | Hophal | Participle mp | those appointed over — מֻ prefix; Josiah's temple restoration; "give it to those appointed over the house of the LORD"	BBH Chapter 28 — Hophal Strong
+Hophal Perfect prefix (strong root) — how many vowel patterns?	TWO: הָ (qamets hatuf, o-class) predominates — e.g., הָשְׁלַכְתָּ (Isa 14:19), הָפְקַד (Lev 6:4); הֻ (qibbuts, u-class) also attested — e.g., הֻשְׁלָכָה (Ezk 19:12). Shureq (הוּ) = hollow roots (Ch29).	BBH Chapter 28 — Hophal Strong
+Perfect 3ms = Inf.Cs. = Imperative 2ms — how to tell apart?	All three take the same form: הָשְׁלַךְ. Only syntactic context distinguishes them. Hophal Imperative is the rarest (1 clear OT token: הָפְנוּ Jer 49:8).	BBH Chapter 28 — Hophal Strong
