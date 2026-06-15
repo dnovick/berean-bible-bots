@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chapter 28 — Hiphil/Hophal Contrast Drill</title>
 <style>
-  body { font-family: Georgia, serif; max-width: 1060px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1.5em; color: #222; }
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
@@ -19,6 +19,7 @@
   input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
   .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; font-style: italic; vertical-align: middle; }
   .answer-row { display: none; }
+  .answer-row .heb { font-size: 1.1em; }
   button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
   .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
   .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
@@ -41,7 +42,7 @@
 <p class="subtitle">BBH Chapter 28 · Hophal Strong Verbs</p>
 
 <p>Each row gives a Hebrew verb form from the biblical text and its scripture reference.
-For each item: select the <strong>stem</strong> (Hiphil or Hophal), the <strong>conjugation</strong>, the <strong>person–gender–number</strong>, and type a <strong>translation</strong>.
+For each item: identify the <strong>root</strong>, select the <strong>stem</strong> (Hiphil or Hophal), the <strong>conjugation</strong>, the <strong>person–gender–number</strong>, and type a <strong>translation</strong>.
 Click <strong>▶ Answer</strong> to check; the answer row aligns under each question column.</p>
 
 <div class="note">
@@ -60,12 +61,13 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
   <thead>
     <tr>
       <th style="width:3%">#</th>
-      <th style="width:13%">Hebrew Form</th>
+      <th style="width:12%">Hebrew Form</th>
       <th style="width:7%">Ref</th>
-      <th style="width:10%">Stem</th>
-      <th style="width:16%">Conjugation</th>
-      <th style="width:8%">PGN</th>
-      <th style="width:35%">Translation</th>
+      <th style="width:9%">Root</th>
+      <th style="width:9%">Stem</th>
+      <th style="width:14%">Conjugation</th>
+      <th style="width:7%">PGN</th>
+      <th style="width:31%">Translation</th>
       <th style="width:8%"></th>
     </tr>
   </thead>
@@ -76,6 +78,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>1</td>
     <td><span class="heb">הִגִּיד</span></td>
     <td>Gen 3:11</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -83,7 +86,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a1">
-    <td></td><td class="heb">נָגַד</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָגַד</td>
     <td>Hiphil</td><td>Perfect</td><td>3ms</td>
     <td>he told you / who told you?</td><td></td>
   </tr>
@@ -93,6 +97,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>2</td>
     <td><span class="heb">הַכּוֹת</span></td>
     <td>Gen 4:15</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -100,7 +105,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a2')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a2">
-    <td></td><td class="heb">נָכָה</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָכָה</td>
     <td>Hiphil</td><td>Infinitive Construct</td><td>—</td>
     <td>to strike / lest anyone strike him</td><td></td>
   </tr>
@@ -110,6 +116,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>3</td>
     <td><span class="heb">הוּחַל</span></td>
     <td>Gen 4:26</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -117,7 +124,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a3')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a3">
-    <td></td><td class="heb">חָלַל</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">חָלַל</td>
     <td>Hophal</td><td>Perfect</td><td>3ms</td>
     <td>it was begun (to call on the name of the LORD)</td><td></td>
   </tr>
@@ -127,6 +135,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>4</td>
     <td><span class="heb">וַיַּגֵּד</span></td>
     <td>Gen 9:22</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -134,7 +143,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a4">
-    <td></td><td class="heb">נָגַד</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָגַד</td>
     <td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td>
     <td>and he told his brothers</td><td></td>
   </tr>
@@ -144,6 +154,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>5</td>
     <td><span class="heb">הָמִית</span></td>
     <td>Gen 18:25</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -151,7 +162,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a5">
-    <td></td><td class="heb">מוּת</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">מוּת</td>
     <td>Hiphil</td><td>Infinitive Construct</td><td>—</td>
     <td>to put to death / to kill</td><td></td>
   </tr>
@@ -161,6 +173,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>6</td>
     <td><span class="heb">וַיַּחֲזִיקוּ</span></td>
     <td>Gen 19:16</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -168,7 +181,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a6">
-    <td></td><td class="heb">חָזַק</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">חָזַק</td>
     <td>Hiphil</td><td>Wayyiqtol</td><td>3mp</td>
     <td>and they seized / took hold of (his hand)</td><td></td>
   </tr>
@@ -178,6 +192,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>7</td>
     <td><span class="heb">וַיֻּגַּד</span></td>
     <td>Gen 22:20</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -185,7 +200,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a7">
-    <td></td><td class="heb">נָגַד</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָגַד</td>
     <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
     <td>and it was told to Abraham</td><td></td>
   </tr>
@@ -195,6 +211,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>8</td>
     <td><span class="heb">וַיּוּשַׂם</span></td>
     <td>Gen 24:33</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -202,7 +219,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a8">
-    <td></td><td class="heb">שִׂים</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">שִׂים</td>
     <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
     <td>and food was set before him</td><td></td>
   </tr>
@@ -212,6 +230,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>9</td>
     <td><span class="heb">יוּמַת</span></td>
     <td>Gen 26:11</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -219,7 +238,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a9">
-    <td></td><td class="heb">מוּת</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">מוּת</td>
     <td>Hophal</td><td>Imperfect</td><td>3ms</td>
     <td>he shall be put to death</td><td></td>
   </tr>
@@ -229,6 +249,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>10</td>
     <td><span class="heb">הַשְׁלִיכוּ</span></td>
     <td>Gen 37:22</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -236,7 +257,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a10">
-    <td></td><td class="heb">שָׁלַךְ</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">שָׁלַךְ</td>
     <td>Hiphil</td><td>Imperative</td><td>2mp</td>
     <td>throw him! (into this pit)</td><td></td>
   </tr>
@@ -246,6 +268,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>11</td>
     <td><span class="heb">וַיַּשְׁלִכוּ</span></td>
     <td>Gen 37:24</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -253,7 +276,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a11">
-    <td></td><td class="heb">שָׁלַךְ</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">שָׁלַךְ</td>
     <td>Hiphil</td><td>Wayyiqtol</td><td>3mp</td>
     <td>and they threw him (into the pit)</td><td></td>
   </tr>
@@ -263,6 +287,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>12</td>
     <td><span class="heb">הוּרַד</span></td>
     <td>Gen 39:1</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -270,7 +295,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a12">
-    <td></td><td class="heb">יָרַד</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">יָרַד</td>
     <td>Hophal</td><td>Perfect</td><td>3ms</td>
     <td>he was brought down to Egypt</td><td></td>
   </tr>
@@ -280,6 +306,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>13</td>
     <td><span class="heb">הוּשַׁב</span></td>
     <td>Gen 42:28</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -287,7 +314,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a13">
-    <td></td><td class="heb">שׁוּב</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">שׁוּב</td>
     <td>Hophal</td><td>Perfect</td><td>3ms</td>
     <td>it was returned (into my sack)</td><td></td>
   </tr>
@@ -297,6 +325,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>14</td>
     <td><span class="heb">הוּבְאוּ</span></td>
     <td>Gen 43:18</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -304,7 +333,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a14')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a14">
-    <td></td><td class="heb">בּוֹא</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">בּוֹא</td>
     <td>Hophal</td><td>Perfect</td><td>3cp</td>
     <td>we were brought in (to Joseph's house)</td><td></td>
   </tr>
@@ -314,6 +344,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>15</td>
     <td><span class="heb">וַיַּחֲזֵק</span></td>
     <td>Exo 4:4</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -321,7 +352,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a15')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a15">
-    <td></td><td class="heb">חָזַק</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">חָזַק</td>
     <td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td>
     <td>and he grasped it (by the tail)</td><td></td>
   </tr>
@@ -331,6 +363,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>16</td>
     <td><span class="heb">וַיֻּכּוּ</span></td>
     <td>Exo 5:14</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -338,7 +371,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a16')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a16">
-    <td></td><td class="heb">נָכָה</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָכָה</td>
     <td>Hophal</td><td>Wayyiqtol</td><td>3mp</td>
     <td>and the Israelite overseers were beaten</td><td></td>
   </tr>
@@ -348,6 +382,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>17</td>
     <td><span class="heb">מֻכִּים</span></td>
     <td>Exo 5:16</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -355,7 +390,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a17')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a17">
-    <td></td><td class="heb">נָכָה</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָכָה</td>
     <td>Hophal</td><td>Participle</td><td>mp</td>
     <td>being beaten / your servants are beaten</td><td></td>
   </tr>
@@ -365,6 +401,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>18</td>
     <td><span class="heb">וַיּוּשַׁב</span></td>
     <td>Exo 10:8</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -372,7 +409,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a18')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a18">
-    <td></td><td class="heb">שׁוּב</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">שׁוּב</td>
     <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
     <td>and Moses and Aaron were brought back to Pharaoh</td><td></td>
   </tr>
@@ -382,6 +420,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>19</td>
     <td><span class="heb">וַיֻּגַּד</span></td>
     <td>Exo 14:5</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -389,7 +428,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a19')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a19">
-    <td></td><td class="heb">נָגַד</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָגַד</td>
     <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
     <td>and it was told to the king of Egypt</td><td></td>
   </tr>
@@ -399,6 +439,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>20</td>
     <td><span class="heb">הַכֵּה</span></td>
     <td>Exo 17:6</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -406,7 +447,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a20')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a20">
-    <td></td><td class="heb">נָכָה</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">נָכָה</td>
     <td>Hiphil</td><td>Imperative</td><td>2ms</td>
     <td>strike! (the rock)</td><td></td>
   </tr>
@@ -416,6 +458,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>21</td>
     <td><span class="heb">יוּמַת</span></td>
     <td>Exo 19:12</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -423,7 +466,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a21')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a21">
-    <td></td><td class="heb">מוּת</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">מוּת</td>
     <td>Hophal</td><td>Imperfect</td><td>3ms</td>
     <td>he shall be put to death (Sinai boundary law)</td><td></td>
   </tr>
@@ -433,6 +477,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>22</td>
     <td><span class="heb">וַיַּשְׁלֵךְ</span></td>
     <td>Exo 32:19</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -440,7 +485,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a22')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a22">
-    <td></td><td class="heb">שָׁלַךְ</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">שָׁלַךְ</td>
     <td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td>
     <td>and he threw them (the tablets) from his hands</td><td></td>
   </tr>
@@ -450,6 +496,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>23</td>
     <td><span class="heb">הוּקַם</span></td>
     <td>Exo 40:17</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -457,7 +504,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a23')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a23">
-    <td></td><td class="heb">קוּם</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">קוּם</td>
     <td>Hophal</td><td>Perfect</td><td>3ms</td>
     <td>the tabernacle was set up / erected</td><td></td>
   </tr>
@@ -467,6 +515,7 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td>24</td>
     <td><span class="heb">הוּסַר</span></td>
     <td>Lev 4:31</td>
+    <td><input class="parse-field" type="text" placeholder="root…"></td>
     <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
     <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
@@ -474,7 +523,8 @@ Click <strong>▶ Answer</strong> to check; the answer row aligns under each que
     <td><button class="reveal-btn" onclick="toggle('a24')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a24">
-    <td></td><td class="heb">סוּר</td><td></td>
+    <td></td><td></td><td></td>
+    <td class="heb">סוּר</td>
     <td>Hophal</td><td>Perfect</td><td>3ms</td>
     <td>it was removed (from the sacrifice)</td><td></td>
   </tr>
