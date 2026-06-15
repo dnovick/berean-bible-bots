@@ -7,11 +7,12 @@
 <style>
   body {
     font-family: Georgia, serif;
-    max-width: 680px;
+    max-width: 720px;
     margin: 3em auto;
     padding: 0 1.5em;
     color: #222;
     background: #fdf9f2;
+    direction: ltr;
   }
   h1 {
     font-size: 1.25em;
@@ -19,6 +20,7 @@
     border-bottom: 2px solid #7a4a1a;
     padding-bottom: 0.4em;
     color: #3a2000;
+    direction: rtl;
   }
   h2 {
     font-size: 0.95em;
@@ -32,26 +34,30 @@
     border-collapse: collapse;
     width: 100%;
     margin: 0;
+    direction: ltr;
   }
   td {
     border: none;
     padding: 0.45em 0;
     vertical-align: baseline;
   }
-  .v-num {
-    width: 2.2em;
-    font-size: 0.72em;
-    color: #aaa;
-    text-align: left;
-    padding-right: 0.5em;
-    white-space: nowrap;
-  }
   .v-heb {
     direction: rtl;
     unicode-bidi: embed;
     font-size: 1.45em;
-    line-height: 1.9;
+    line-height: 2.1;
     text-align: right;
+  }
+  .v-num {
+    width: 2.5em;
+    font-size: 1em;
+    color: #7a4a1a;
+    font-weight: bold;
+    text-align: right;
+    padding-left: 0.8em;
+    white-space: nowrap;
+    vertical-align: top;
+    padding-top: 0.55em;
   }
   .aleph {
     font-size: 1.6em;
@@ -61,8 +67,14 @@
     display: inline-block;
     vertical-align: bottom;
   }
+  .verb {
+    background: #fff3cd;
+    border-radius: 2px;
+    padding: 0 1px;
+  }
   @media print {
     body { background: white; margin: 1em; }
+    .verb { background: #ffe; }
   }
 </style>
 </head>
@@ -73,37 +85,45 @@
 
 <table>
   <tbody>
+    <!-- v1: verb = הַהֹלְכִים (Qal Participle) -->
     <tr>
+      <td class="v-heb"><span class="aleph">אַ</span>שְׁרֵ֥י תְמִֽימֵי־דָ֑רֶךְ <span class="verb">הַ֝הֹלְכִ֗ים</span> בְּתוֹרַ֥ת יְהֹוָֽה׃</td>
       <td class="v-num">1</td>
-      <td class="v-heb"><span class="aleph">אַ</span>שְׁרֵי תְמִימֵי־דָרֶךְ הַהֹלְכִים בְּתוֹרַת יְהוָה׃</td>
     </tr>
+    <!-- v2: verbs = נֹצְרֵי (Qal Ptc. cs.), יִדְרְשׁוּהוּ (Qal Impf. 3mp) -->
     <tr>
+      <td class="v-heb"><span class="aleph">אַ֭</span>שְׁרֵי <span class="verb">נֹצְרֵ֥י</span> עֵדֹתָ֗יו בְּכׇל־לֵ֥ב <span class="verb">יִדְרְשֽׁוּהוּ</span>׃</td>
       <td class="v-num">2</td>
-      <td class="v-heb"><span class="aleph">אַ</span>שְׁרֵי נֹצְרֵי עֵדֹתָיו בְּכָל־לֵב יִדְרְשֽׁוּהוּ׃</td>
     </tr>
+    <!-- v3: verbs = פָעֲלוּ (Qal Perf. 3cp), הָלָכוּ (Qal Perf. 3cp) -->
     <tr>
+      <td class="v-heb"><span class="aleph">אַ֭</span>ף לֹא־<span class="verb">פָעֲל֣וּ</span> עַוְלָ֑ה בִּדְרָכָ֥יו <span class="verb">הָלָֽכוּ</span>׃</td>
       <td class="v-num">3</td>
-      <td class="v-heb"><span class="aleph">אַ</span>ף לֹא־פָעֲלוּ עַוְלָה בִּדְרָכָיו הָלָכוּ׃</td>
     </tr>
+    <!-- v4: verbs = צִוִּיתָ (Piel Perf. 2ms), לִשְׁמֹר (Qal Inf. Cs.) -->
     <tr>
+      <td class="v-heb"><span class="aleph">אַ֭</span>תָּה <span class="verb">צִוִּ֥יתָ</span> פִקֻּדֶ֗יךָ <span class="verb">לִשְׁמֹ֥ר</span> מְאֹֽד׃</td>
       <td class="v-num">4</td>
-      <td class="v-heb"><span class="aleph">אַ</span>תָּה צִוִּיתָה פִקֻּדֶיךָ לִשְׁמֹר מְאֹד׃</td>
     </tr>
+    <!-- v5: verbs = יִכֹּנוּ (Niphal Impf. 3mp), לִשְׁמֹר (Qal Inf. Cs.) -->
     <tr>
+      <td class="v-heb"><span class="aleph">אַ֭</span>חֲלַי <span class="verb">יִכֹּ֥נוּ</span> דְרָכָ֗י <span class="verb">לִשְׁמֹ֥ר</span> חֻקֶּֽיךָ׃</td>
       <td class="v-num">5</td>
-      <td class="v-heb"><span class="aleph">אַ</span>חֲלַי יִכֹּנוּ דְרָכַי לִשְׁמֹר חֻקֶּיךָ׃</td>
     </tr>
+    <!-- v6: verbs = אֵבוֹשׁ (Qal Impf. 1cs), בְּהַבִּיטִי (Hiphil Inf. Cs. + prep.) -->
     <tr>
+      <td class="v-heb"><span class="aleph">אָ֥</span>ז לֹא־<span class="verb">אֵב֑וֹשׁ</span> <span class="verb">בְּ֝הַבִּיטִ֗י</span> אֶל־כׇּל־מִצְוֺתֶֽיךָ׃</td>
       <td class="v-num">6</td>
-      <td class="v-heb"><span class="aleph">אָ</span>ז לֹא־אֵבוֹשׁ בְּהַבִּיטִי אֶל־כָּל־מִצְוֹתֶיךָ׃</td>
     </tr>
+    <!-- v7: verbs = אוֹדְךָ (Hiphil Impf. 1cs), בְּלָמְדִי (Qal Inf. Cs. + prep.) -->
     <tr>
+      <td class="v-heb"><span class="verb"><span class="aleph">א֭</span>וֹדְךָ</span> בְּיֹ֣שֶׁר לֵבָ֑ב <span class="verb">בְּ֝לׇמְדִ֗י</span> מִשְׁפְּטֵ֥י צִדְקֶֽךָ׃</td>
       <td class="v-num">7</td>
-      <td class="v-heb"><span class="aleph">א</span>וֹדְךָ בְּיֹשֶׁר לֵבָב בְּלָמְדִי מִשְׁפְּטֵי צִדְקֶךָ׃</td>
     </tr>
+    <!-- v8: verbs = אֶשְׁמֹר (Qal Impf. 1cs), תַּעַזְבֵנִי (Qal Impf. 2ms) -->
     <tr>
+      <td class="v-heb"><span class="aleph">אֶ</span>ת־חֻקֶּ֥יךָ <span class="verb">אֶשְׁמֹ֑ר</span> אַֽל־<span class="verb">תַּעַזְבֵ֥נִי</span> עַד־מְאֹֽד׃</td>
       <td class="v-num">8</td>
-      <td class="v-heb"><span class="aleph">אֶ</span>ת־חֻקֶּיךָ אֶשְׁמֹר אַל־תַּעַזְבֵנִי עַד־מְאֹד׃</td>
     </tr>
   </tbody>
 </table>

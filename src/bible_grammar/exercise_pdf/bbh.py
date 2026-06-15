@@ -8229,6 +8229,96 @@ def build_ch28_hophal_paradigm_drill(out_dir: Optional[str] = None) -> str:
 
 
 # ---------------------------------------------------------------------------
+# Ch28 — Stem-ID Drill (Strong Roots)
+# ---------------------------------------------------------------------------
+
+_CH28_STEM_ROWS = [
+    ['1',  'שָׁמַר',       '',  '',                '',    ''],
+    ['2',  'נִקְטַל',      '',  '',                '',    ''],
+    ['3',  'הִפְקִיד',     '',  '',                '',    ''],
+    ['4',  'הָכְתַב',      '',  '',                '',    ''],
+    ['5',  'כָּתַבְנוּ',   '',  '',                '',    ''],
+    ['6',  'הָפְקְדָה',    '',  '',                '',    ''],
+    ['7',  'הִכְתִּיבָה',  '',  '',                '',    ''],
+    ['8',  'נִפְקְדוּ',    '',  '',                '',    ''],
+    ['9',  'יִשְׁמֹר',     '',  '',                '',    ''],
+    ['10', 'תַּשְׁמֵרְנָה','',  '',                '',    ''],
+    ['11', 'אֶפָּקֵד',     '',  '',                '',    ''],
+    ['12', 'יָכְתַב',      '',  '',                '',    ''],
+    ['13', 'וַנִּשְׁמֹר',  '',  '',                '',    ''],
+    ['14', 'וַיַּפְקֵד',   '',  '',                '',    ''],
+    ['15', 'וַיִּכָּתֵב',  '',  '',                '',    ''],
+    ['16', 'וַיָּכְתַב',   '',  '',                '',    ''],
+    ['17', 'שִׁמְרוּ',     '',  '',                '',    ''],
+    ['18', 'הַקְטֵל',      '',  '',                '',    ''],
+    ['19', 'הִפָּקֵד',     '',  '',                '',    ''],
+    ['20', 'הָשְׁמַר',     '',  '',                '',    ''],
+    ['21', 'קָטֹל',        '',  '',                '',    ''],
+    ['22', 'הַשְׁמֵר',     '',  '',                '',    ''],
+    ['23', 'נִקְטָל',      '',  '',                '',    ''],
+    ['24', 'מָקְטָל',      '',  '',                '',    ''],
+]
+_CH28_STEM_ANS = [
+    ['1',  'שָׁמַר',       'Qal',    'Perfect',         '3ms', 'שׁמר'],
+    ['2',  'נִקְטַל',      'Niphal', 'Perfect',         '3ms', 'קטל'],
+    ['3',  'הִפְקִיד',     'Hiphil', 'Perfect',         '3ms', 'פקד'],
+    ['4',  'הָכְתַב',      'Hophal', 'Perfect',         '3ms', 'כתב'],
+    ['5',  'כָּתַבְנוּ',   'Qal',    'Perfect',         '1cp', 'כתב'],
+    ['6',  'הָפְקְדָה',    'Hophal', 'Perfect',         '3fs', 'פקד'],
+    ['7',  'הִכְתִּיבָה',  'Hiphil', 'Perfect',         '3fs', 'כתב'],
+    ['8',  'נִפְקְדוּ',    'Niphal', 'Perfect',         '3cp', 'פקד'],
+    ['9',  'יִשְׁמֹר',     'Qal',    'Imperfect',       '3ms', 'שׁמר'],
+    ['10', 'תַּשְׁמֵרְנָה','Hiphil', 'Imperfect',       '3fp', 'שׁמר'],
+    ['11', 'אֶפָּקֵד',     'Niphal', 'Imperfect',       '1cs', 'פקד'],
+    ['12', 'יָכְתַב',      'Hophal', 'Imperfect',       '3ms', 'כתב'],
+    ['13', 'וַנִּשְׁמֹר',  'Qal',    'Wayyiqtol',      '1cp', 'שׁמר'],
+    ['14', 'וַיַּפְקֵד',   'Hiphil', 'Wayyiqtol',      '3ms', 'פקד'],
+    ['15', 'וַיִּכָּתֵב',  'Niphal', 'Wayyiqtol',      '3ms', 'כתב'],
+    ['16', 'וַיָּכְתַב',   'Hophal', 'Wayyiqtol',      '3ms', 'כתב'],
+    ['17', 'שִׁמְרוּ',     'Qal',    'Imperative',      '2mp', 'שׁמר'],
+    ['18', 'הַקְטֵל',      'Hiphil', 'Imperative',      '2ms', 'קטל'],
+    ['19', 'הִפָּקֵד',     'Niphal', 'Imperative',      '2ms', 'פקד'],
+    ['20', 'הָשְׁמַר',     'Hophal', 'Imperative',      '2ms', 'שׁמר'],
+    ['21', 'קָטֹל',        'Qal',    'Inf. Absolute',   '—',   'קטל'],
+    ['22', 'הַשְׁמֵר',     'Hiphil', 'Inf. Absolute',   '—',   'שׁמר'],
+    ['23', 'נִקְטָל',      'Niphal', 'Participle',      'ms',  'קטל'],
+    ['24', 'מָקְטָל',      'Hophal', 'Participle',      'ms',  'קטל'],
+]
+
+
+class Ch28StemIdDrill(ExercisePDF):
+    _instructions = (
+        'For each verb form, identify the stem (Qal / Niphal / Hiphil / Hophal), '
+        'then fill in the conjugation, PGN (person–gender–number), and root. '
+        'Forms are drawn from four strong roots: שׁמר (keep/guard), קטל (kill), '
+        'כתב (write), and פקד (appoint/muster). '
+        'For non-finite forms (Infinitive Absolute, Participle) enter the appropriate gender/number or — in PGN.'
+    )
+
+    def _build(self) -> None:
+        self.add_instructions(self._instructions)
+        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
+        cr   = [0.05, 0.18, 0.15, 0.22, 0.15, 0.25]
+        self.add_drill_with_answer_key(
+            hdrs, _CH28_STEM_ROWS, _CH28_STEM_ANS,
+            col_ratios=cr,
+            heb_cols=[1],
+            answer_heb_cols=[5],
+            section_title='Qal / Niphal / Hiphil / Hophal — Strong Roots',
+        )
+
+
+def build_ch28_stem_id_drill(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch28StemIdDrill,
+        'Chapter 28 — Qal / Niphal / Hiphil / Hophal Stem Identification Drill',
+        'BBH Chapter 28 · Hophal Strong Verbs',
+        ['bbh', 'ch28', 'exercises', 'ch28-stem-id-drill'],
+        'ch28-stem-id-drill.pdf', out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
 # Ch29 — Hophal Weak Paradigm Drill
 # ---------------------------------------------------------------------------
 
@@ -9649,101 +9739,6 @@ def build_ch25_stem_id_drill(out_dir: Optional[str] = None) -> str:
         'BBH Chapter 25 · Niphal Weak Verbs',
         ['bbh', 'ch25', 'exercises', 'ch25-stem-id-drill'],
         'ch25-stem-id-drill.pdf', out_dir,
-    )
-
-
-# ---------------------------------------------------------------------------
-# Ch28 — Stem-ID Drill (Strong Roots)
-# ---------------------------------------------------------------------------
-
-
-class Ch28StemIdDrill(ExercisePDF):
-    _instructions = (
-        'This drill mixes 24 forms of strong roots (Qal, Niphal, Hiphil, Hophal). '
-        'For each item: (1) identify the stem, (2) parse conjugation and PGN, '
-        '(3) translate the form. '
-        'Roots used: קטל (paradigm), שׁמר (keep/guard), כבד (heavy/honored), שׁמד (destroy).'
-    )
-
-    def _build(self) -> None:
-        self.add_instructions(self._instructions)
-        self.add_note(
-            'Hophal Perfect: הָ prefix (qamets-hatuf = o-class).  '
-            'Hophal Imperfect: יָ prefix.  '
-            'Hophal Participle: הָ/הָשׁ prefix with qamets.  '
-            'Hiphil: הִ prefix in Perfect; pathach under prefix in Imperfect.'
-        )
-        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root', 'Translation']
-        cr   = [0.04, 0.16, 0.11, 0.18, 0.10, 0.09, 0.32]
-        rows = [
-            ['1',  'קָטַל',        '', '', '', 'קטל',  ''],
-            ['2',  'הִקְטִיל',     '', '', '', 'קטל',  ''],
-            ['3',  'נִקְטַל',      '', '', '', 'קטל',  ''],
-            ['4',  'הָקְטַל',      '', '', '', 'קטל',  ''],
-            ['5',  'שָׁמַר',       '', '', '', 'שׁמר', ''],
-            ['6',  'נִשְׁמַר',     '', '', '', 'שׁמר', ''],
-            ['7',  'יִשְׁמֹר',     '', '', '', 'שׁמר', ''],
-            ['8',  'יַשְׁמִיר',    '', '', '', 'שׁמר', ''],
-            ['9',  'יִשָּׁמֵר',    '', '', '', 'שׁמר', ''],
-            ['10', 'יָשְׁמַר',     '', '', '', 'שׁמר', ''],
-            ['11', 'וַיִּשְׁמֹר',  '', '', '', 'שׁמר', ''],
-            ['12', 'וַיַּשְׁמֵר',  '', '', '', 'שׁמר', ''],
-            ['13', 'וַיִּשָּׁמֵר', '', '', '', 'שׁמר', ''],
-            ['14', 'וַיָּשְׁמַר',  '', '', '', 'שׁמר', ''],
-            ['15', 'שְׁמֹר',       '', '', '', 'שׁמר', ''],
-            ['16', 'הַשְׁמֵר',     '', '', '', 'שׁמר', ''],
-            ['17', 'הִשָּׁמֵר',    '', '', '', 'שׁמר', ''],
-            ['18', 'הָשְׁמֵר',     '', '', '', 'שׁמר', ''],
-            ['19', 'שָׁמוֹר',      '', '', '', 'שׁמר', ''],
-            ['20', 'הַשְׁמֵר',     '', '', '', 'שׁמר', ''],
-            ['21', 'הִשָּׁמֵר',    '', '', '', 'שׁמר', ''],
-            ['22', 'שֹׁמֵר',       '', '', '', 'שׁמר', ''],
-            ['23', 'מַשְׁמִיר',    '', '', '', 'שׁמר', ''],
-            ['24', 'הָשְׁמָר',     '', '', '', 'שׁמר', ''],
-        ]
-        ans = [
-            ['1',  'קָטַל',        'Qal',    'Perfect',         '3ms', 'קטל',  'he killed'],
-            ['2',  'הִקְטִיל',     'Hiphil', 'Perfect',         '3ms', 'קטל',  'he caused to kill'],
-            ['3',  'נִקְטַל',      'Niphal', 'Perfect',         '3ms', 'קטל',  'he was killed'],
-            ['4',  'הָקְטַל',      'Hophal', 'Perfect',         '3ms', 'קטל',  'he was caused to be killed'],
-            ['5',  'שָׁמַר',       'Qal',    'Perfect',         '3ms', 'שׁמר', 'he kept / guarded'],
-            ['6',  'נִשְׁמַר',     'Niphal', 'Perfect',         '3ms', 'שׁמר', 'he was kept / guarded'],
-            ['7',  'יִשְׁמֹר',     'Qal',    'Imperfect',       '3ms', 'שׁמר', 'he will keep / guards'],
-            ['8',  'יַשְׁמִיר',    'Hiphil', 'Imperfect',       '3ms', 'שׁמר', 'he will cause to keep'],
-            ['9',  'יִשָּׁמֵר',    'Niphal', 'Imperfect',       '3ms', 'שׁמר', 'he will be kept / guards himself'],
-            ['10', 'יָשְׁמַר',     'Hophal', 'Imperfect',       '3ms', 'שׁמר', 'he will be made to keep'],
-            ['11', 'וַיִּשְׁמֹר',  'Qal',    'Wayyiqtol',       '3ms', 'שׁמר', 'and he kept / guarded'],
-            ['12', 'וַיַּשְׁמֵר',  'Hiphil', 'Wayyiqtol',       '3ms', 'שׁמר', 'and he caused to keep'],
-            ['13', 'וַיִּשָּׁמֵר', 'Niphal', 'Wayyiqtol',       '3ms', 'שׁמר', 'and he was kept / kept himself'],
-            ['14', 'וַיָּשְׁמַר',  'Hophal', 'Wayyiqtol',       '3ms', 'שׁמר', 'and he was made to keep'],
-            ['15', 'שְׁמֹר',       'Qal',    'Imperative',      '2ms', 'שׁמר', 'Keep! / Guard!'],
-            ['16', 'הַשְׁמֵר',     'Hiphil', 'Imperative',      '2ms', 'שׁמר', 'Cause to keep! (same as #20)'],
-            ['17', 'הִשָּׁמֵר',    'Niphal', 'Imperative',      '2ms', 'שׁמר', 'Guard yourself!'],
-            ['18', 'הָשְׁמֵר',     'Hophal', 'Inf. Construct',  '—',   'שׁמר', 'to be made to keep / to be guarded'],
-            ['19', 'שָׁמוֹר',      'Qal',    'Inf. Absolute',   '—',   'שׁמר', 'keeping / indeed keeping'],
-            ['20', 'הַשְׁמֵר',     'Hiphil', 'Inf. Absolute',   '—',   'שׁמר', 'causing to keep (same as #16)'],
-            ['21', 'הִשָּׁמֵר',    'Niphal', 'Inf. Absolute',   '—',   'שׁמר', 'being kept / indeed guarding oneself'],
-            ['22', 'שֹׁמֵר',       'Qal',    'Participle',      'ms',  'שׁמר', 'one who keeps / guardian'],
-            ['23', 'מַשְׁמִיר',    'Hiphil', 'Participle',      'ms',  'שׁמר', 'one who causes to keep'],
-            ['24', 'הָשְׁמָר',     'Hophal', 'Participle',      'ms',  'שׁמר', 'one who is being kept / guarded'],
-        ]
-        self.add_drill_with_answer_key(
-            hdrs, rows, ans,
-            col_ratios=cr,
-            heb_cols=[1, 5],
-            answer_heb_cols=[1, 5],
-            section_title='Qal / Niphal / Hiphil / Hophal — Strong Roots (24 forms)',
-            answer_title='Answer Key',
-        )
-
-
-def build_ch28_stem_id_drill(out_dir: Optional[str] = None) -> str:
-    return _build_exercise_pdf(
-        Ch28StemIdDrill,
-        'Chapter 28 — Four-Stem ID Drill (Strong Roots)',
-        'BBH Chapter 28 · Hophal Strong Verbs',
-        ['bbh', 'ch28', 'exercises', 'ch28-stem-id-drill'],
-        'ch28-stem-id-drill.pdf', out_dir,
     )
 
 
