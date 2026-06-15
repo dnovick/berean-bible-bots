@@ -18,7 +18,7 @@ td.num { text-align: center; font-weight: bold; color: #666; width: 2.5rem; }
 td.pgn { font-weight: bold; color: #333; }
 td.root-given { font-size: 1.2rem; direction: rtl; unicode-bidi: embed; font-family: 'SBL Hebrew', 'Ezra SIL', serif; }
 td.ref-given { font-size: .85rem; color: #666; white-space: nowrap; }
-td.heb-ans { font-size: 1.2rem; font-family: 'SBL Hebrew', 'Ezra SIL', serif; color: #2a6e2a; text-align: left; direction: rtl; unicode-bidi: embed; }
+td.heb-ans { font-size: 1.2rem; font-family: 'SBL Hebrew', 'Ezra SIL', serif; color: #2a6e2a; text-align: right; direction: rtl; unicode-bidi: embed; }
 select.f { font-family: 'SBL Hebrew', 'Ezra SIL', Arial, serif; font-size: 1.05rem; direction: rtl; width: 100%; box-sizing: border-box; padding: .22rem .4rem; border: 1px solid #bbb; border-radius: 3px; background: #fafff8; }
 select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
 .ans-row { display: none; background: #f0faf0; }
@@ -38,9 +38,9 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <body>
 
 <h1>Ch28 Hophal Paradigm Drill</h1>
-<p class="subtitle">Stem: Hophal &nbsp;|&nbsp; Various Strong Roots</p>
+<p class="subtitle">Stem: Hophal &nbsp;|&nbsp; Root שׁלך throughout (+ מות for Inf. Abs.)</p>
 <div class="instructions">For each row, the root and PGN are given. Select the correct Hophal form from the dropdown. Options include forms from Qal, Niphal, Hiphil, and Hophal across various person–gender–number combinations — choose the Hophal form for the PGN shown.</div>
-<div class="note"><strong>Key markers:</strong> Strong roots show <em>qibbuts</em> (ֻ) under the prefix in Perfect and Imperfect; the Participle prefix is <strong>מֻ</strong>. The Imperative part (Part F) uses theoretical paradigmatic forms; the Hophal Imperative is rare but attested in the OT.</div>
+<div class="note"><strong>Key markers:</strong> Strong roots show <em>qibbuts</em> (ֻ) under the prefix in Perfect and Imperfect; the Participle prefix is <strong>מֻ</strong>. The Imperative (Part F) uses theoretical paradigmatic forms; the Hophal Imperative is extremely rare in the OT (only one form clearly attested: הָפְנוּ, Jer 49:8, from root פנה).<br><strong>Ref column:</strong> shows OT references where the specific Hophal form appears. "—" means not clearly attested for this root in this PGN. Where the MT shows Qamets Hatuf (ׇ) in place of Qibbuts (ֻ) in the prefix syllable — expected in open pretonic syllables — the ref is marked with *.</div>
 
 <div class="controls">
   <button onclick="showAll()">Show All Answers</button>
@@ -49,55 +49,55 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 </div>
 
 <!-- ============================================================ -->
-<h2>Part A — Perfect (9 forms) — Root שׁמר</h2>
+<h2>Part A — Perfect (9 forms) — Root שׁלך</h2>
 <table>
 <thead><tr><th>#</th><th>Root</th><th>PGN</th><th>Ref</th><th>Form</th><th></th></tr></thead>
 <tbody>
 
-<tr><td class="num">1</td><td class="root-given">שׁמר</td><td class="pgn">3ms</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a1"><option value="">— select —</option><option>שָׁמַר</option><option>הֻשְׁמַר</option><option>נִשְׁמַר</option><option>הֻשְׁמְרוּ</option></select></td>
+<tr><td class="num">1</td><td class="root-given">שׁלך</td><td class="pgn">3ms</td><td class="ref-given">—</td>
+<td><select class="f" id="f-a1"><option value="">— select —</option><option>הִשְׁלִיךְ</option><option>הֻשְׁלַךְ</option><option>נִשְׁלַךְ</option><option>הֻשְׁלְכוּ</option></select></td>
 <td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a1"><td class="ans-lbl">✓</td><td></td><td class="pgn">3ms</td><td></td><td class="heb-ans">הֻשְׁמַר</td><td></td></tr>
+<tr class="ans-row" id="ans-a1"><td class="ans-lbl">✓</td><td></td><td class="pgn">3ms</td><td></td><td class="heb-ans">הֻשְׁלַךְ</td><td></td></tr>
 
-<tr><td class="num">2</td><td class="root-given">שׁמר</td><td class="pgn">3fs</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a2"><option value="">— select —</option><option>נִשְׁמְרָה</option><option>הֻשְׁמְרָה</option><option>שָׁמְרָה</option><option>הֻשְׁמַר</option></select></td>
+<tr><td class="num">2</td><td class="root-given">שׁלך</td><td class="pgn">3fs</td><td class="ref-given">Ezk 19:12</td>
+<td><select class="f" id="f-a2"><option value="">— select —</option><option>הֻשְׁלְכָה</option><option>נִשְׁלְכָה</option><option>הִשְׁלִיכָה</option><option>הֻשְׁלַכְתָּ</option></select></td>
 <td><button class="rbtn" onclick="tog('a2')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a2"><td class="ans-lbl">✓</td><td></td><td class="pgn">3fs</td><td></td><td class="heb-ans">הֻשְׁמְרָה</td><td></td></tr>
+<tr class="ans-row" id="ans-a2"><td class="ans-lbl">✓</td><td></td><td class="pgn">3fs</td><td></td><td class="heb-ans">הֻשְׁלְכָה</td><td></td></tr>
 
-<tr><td class="num">3</td><td class="root-given">שׁמר</td><td class="pgn">2ms</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a3"><option value="">— select —</option><option>הֻשְׁמַרְתְּ</option><option>שָׁמַרְתָּ</option><option>הֻשְׁמַרְתָּ</option><option>נִשְׁמַרְתָּ</option></select></td>
+<tr><td class="num">3</td><td class="root-given">שׁלך</td><td class="pgn">2ms</td><td class="ref-given">Isa 14:19 *</td>
+<td><select class="f" id="f-a3"><option value="">— select —</option><option>הֻשְׁלַכְתְּ</option><option>נִשְׁלַכְתָּ</option><option>הֻשְׁלַכְתָּ</option><option>הִשְׁלַכְתָּ</option></select></td>
 <td><button class="rbtn" onclick="tog('a3')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a3"><td class="ans-lbl">✓</td><td></td><td class="pgn">2ms</td><td></td><td class="heb-ans">הֻשְׁמַרְתָּ</td><td></td></tr>
+<tr class="ans-row" id="ans-a3"><td class="ans-lbl">✓</td><td></td><td class="pgn">2ms</td><td></td><td class="heb-ans">הֻשְׁלַכְתָּ</td><td></td></tr>
 
-<tr><td class="num">4</td><td class="root-given">שׁמר</td><td class="pgn">2fs</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a4"><option value="">— select —</option><option>הֻשְׁמַרְתְּ</option><option>נִשְׁמַרְתְּ</option><option>שָׁמַרְתְּ</option><option>הֻשְׁמַרְתָּ</option></select></td>
+<tr><td class="num">4</td><td class="root-given">שׁלך</td><td class="pgn">2fs</td><td class="ref-given">—</td>
+<td><select class="f" id="f-a4"><option value="">— select —</option><option>הֻשְׁלַכְתְּ</option><option>נִשְׁלַכְתְּ</option><option>הִשְׁלַכְתְּ</option><option>הֻשְׁלַכְתָּ</option></select></td>
 <td><button class="rbtn" onclick="tog('a4')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a4"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fs</td><td></td><td class="heb-ans">הֻשְׁמַרְתְּ</td><td></td></tr>
+<tr class="ans-row" id="ans-a4"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fs</td><td></td><td class="heb-ans">הֻשְׁלַכְתְּ</td><td></td></tr>
 
-<tr><td class="num">5</td><td class="root-given">שׁמר</td><td class="pgn">1cs</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a5"><option value="">— select —</option><option>שָׁמַרְתִּי</option><option>הֻשְׁמַרְנוּ</option><option>נִשְׁמַרְתִּי</option><option>הֻשְׁמַרְתִּי</option></select></td>
+<tr><td class="num">5</td><td class="root-given">שׁלך</td><td class="pgn">1cs</td><td class="ref-given">Psa 22:10 *</td>
+<td><select class="f" id="f-a5"><option value="">— select —</option><option>נִשְׁלַכְתִּי</option><option>הֻשְׁלַכְנוּ</option><option>הִשְׁלַכְתִּי</option><option>הֻשְׁלַכְתִּי</option></select></td>
 <td><button class="rbtn" onclick="tog('a5')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a5"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cs</td><td></td><td class="heb-ans">הֻשְׁמַרְתִּי</td><td></td></tr>
+<tr class="ans-row" id="ans-a5"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cs</td><td></td><td class="heb-ans">הֻשְׁלַכְתִּי</td><td></td></tr>
 
-<tr><td class="num">6</td><td class="root-given">שׁמר</td><td class="pgn">3cp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a6"><option value="">— select —</option><option>הֻשְׁמְרוּ</option><option>שָׁמְרוּ</option><option>הֻשְׁמַר</option><option>נִשְׁמְרוּ</option></select></td>
+<tr><td class="num">6</td><td class="root-given">שׁלך</td><td class="pgn">3cp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-a6"><option value="">— select —</option><option>הֻשְׁלְכוּ</option><option>הִשְׁלִיכוּ</option><option>הֻשְׁלַךְ</option><option>נִשְׁלְכוּ</option></select></td>
 <td><button class="rbtn" onclick="tog('a6')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a6"><td class="ans-lbl">✓</td><td></td><td class="pgn">3cp</td><td></td><td class="heb-ans">הֻשְׁמְרוּ</td><td></td></tr>
+<tr class="ans-row" id="ans-a6"><td class="ans-lbl">✓</td><td></td><td class="pgn">3cp</td><td></td><td class="heb-ans">הֻשְׁלְכוּ</td><td></td></tr>
 
-<tr><td class="num">7</td><td class="root-given">שׁמר</td><td class="pgn">2mp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a7"><option value="">— select —</option><option>נִשְׁמַרְתֶּם</option><option>הֻשְׁמַרְתֶּן</option><option>הֻשְׁמַרְתֶּם</option><option>שְׁמַרְתֶּם</option></select></td>
+<tr><td class="num">7</td><td class="root-given">שׁלך</td><td class="pgn">2mp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-a7"><option value="">— select —</option><option>נִשְׁלַכְתֶּם</option><option>הֻשְׁלַכְתֶּן</option><option>הֻשְׁלַכְתֶּם</option><option>הִשְׁלַכְתֶּם</option></select></td>
 <td><button class="rbtn" onclick="tog('a7')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a7"><td class="ans-lbl">✓</td><td></td><td class="pgn">2mp</td><td></td><td class="heb-ans">הֻשְׁמַרְתֶּם</td><td></td></tr>
+<tr class="ans-row" id="ans-a7"><td class="ans-lbl">✓</td><td></td><td class="pgn">2mp</td><td></td><td class="heb-ans">הֻשְׁלַכְתֶּם</td><td></td></tr>
 
-<tr><td class="num">8</td><td class="root-given">שׁמר</td><td class="pgn">2fp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a8"><option value="">— select —</option><option>שְׁמַרְתֶּן</option><option>הֻשְׁמַרְתֶּן</option><option>הֻשְׁמַרְתֶּם</option><option>נִשְׁמַרְתֶּן</option></select></td>
+<tr><td class="num">8</td><td class="root-given">שׁלך</td><td class="pgn">2fp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-a8"><option value="">— select —</option><option>נִשְׁלַכְתֶּן</option><option>הֻשְׁלַכְתֶּן</option><option>הֻשְׁלַכְתֶּם</option><option>הִשְׁלַכְתֶּן</option></select></td>
 <td><button class="rbtn" onclick="tog('a8')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a8"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fp</td><td></td><td class="heb-ans">הֻשְׁמַרְתֶּן</td><td></td></tr>
+<tr class="ans-row" id="ans-a8"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fp</td><td></td><td class="heb-ans">הֻשְׁלַכְתֶּן</td><td></td></tr>
 
-<tr><td class="num">9</td><td class="root-given">שׁמר</td><td class="pgn">1cp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-a9"><option value="">— select —</option><option>נִשְׁמַרְנוּ</option><option>שָׁמַרְנוּ</option><option>הֻשְׁמַרְתִּי</option><option>הֻשְׁמַרְנוּ</option></select></td>
+<tr><td class="num">9</td><td class="root-given">שׁלך</td><td class="pgn">1cp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-a9"><option value="">— select —</option><option>נִשְׁלַכְנוּ</option><option>הֻשְׁלַכְתִּי</option><option>הִשְׁלַכְנוּ</option><option>הֻשְׁלַכְנוּ</option></select></td>
 <td><button class="rbtn" onclick="tog('a9')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a9"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cp</td><td></td><td class="heb-ans">הֻשְׁמַרְנוּ</td><td></td></tr>
+<tr class="ans-row" id="ans-a9"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cp</td><td></td><td class="heb-ans">הֻשְׁלַכְנוּ</td><td></td></tr>
 
 </tbody>
 </table>
@@ -105,60 +105,60 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <hr class="sec">
 
 <!-- ============================================================ -->
-<h2>Part B — Imperfect (10 forms) — Root פקד</h2>
+<h2>Part B — Imperfect (10 forms) — Root שׁלך</h2>
 <table>
 <thead><tr><th>#</th><th>Root</th><th>PGN</th><th>Ref</th><th>Form</th><th></th></tr></thead>
 <tbody>
 
-<tr><td class="num">1</td><td class="root-given">פקד</td><td class="pgn">3ms</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b1"><option value="">— select —</option><option>יִפְקֹד</option><option>תֻּפְקַד</option><option>יֻפְקַד</option><option>יִפָּקֵד</option></select></td>
+<tr><td class="num">1</td><td class="root-given">שׁלך</td><td class="pgn">3ms</td><td class="ref-given">—</td>
+<td><select class="f" id="f-b1"><option value="">— select —</option><option>יַשְׁלִיךְ</option><option>תֻּשְׁלַךְ</option><option>יֻשְׁלַךְ</option><option>יִשָּׁלֵךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b1"><td class="ans-lbl">✓</td><td></td><td class="pgn">3ms</td><td></td><td class="heb-ans">יֻפְקַד</td><td></td></tr>
+<tr class="ans-row" id="ans-b1"><td class="ans-lbl">✓</td><td></td><td class="pgn">3ms</td><td></td><td class="heb-ans">יֻשְׁלַךְ</td><td></td></tr>
 
-<tr><td class="num">2</td><td class="root-given">פקד</td><td class="pgn">3fs</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b2"><option value="">— select —</option><option>תֻּפְקַד</option><option>יֻפְקַד</option><option>תִּפְקֹד</option><option>תִּפָּקֵד</option></select></td>
+<tr><td class="num">2</td><td class="root-given">שׁלך</td><td class="pgn">3fs</td><td class="ref-given">—</td>
+<td><select class="f" id="f-b2"><option value="">— select —</option><option>תֻּשְׁלַךְ</option><option>יֻשְׁלַךְ</option><option>תַּשְׁלִיךְ</option><option>תִּשָּׁלֵךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('b2')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b2"><td class="ans-lbl">✓</td><td></td><td class="pgn">3fs</td><td></td><td class="heb-ans">תֻּפְקַד</td><td></td></tr>
+<tr class="ans-row" id="ans-b2"><td class="ans-lbl">✓</td><td></td><td class="pgn">3fs</td><td></td><td class="heb-ans">תֻּשְׁלַךְ</td><td></td></tr>
 
-<tr><td class="num">3</td><td class="root-given">פקד</td><td class="pgn">2ms <em style="font-weight:normal;font-size:.85em;color:#888">(= 3fs)</em></td><td class="ref-given">—</td>
-<td><select class="f" id="f-b3"><option value="">— select —</option><option>תִּפָּקֵד</option><option>תֻּפְקַד</option><option>יֻפְקַד</option><option>תִּפְקֹד</option></select></td>
+<tr><td class="num">3</td><td class="root-given">שׁלך</td><td class="pgn">2ms <em style="font-weight:normal;font-size:.85em;color:#888">(= 3fs)</em></td><td class="ref-given">—</td>
+<td><select class="f" id="f-b3"><option value="">— select —</option><option>תִּשָּׁלֵךְ</option><option>תֻּשְׁלַךְ</option><option>יֻשְׁלַךְ</option><option>תַּשְׁלִיךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('b3')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b3"><td class="ans-lbl">✓</td><td></td><td class="pgn">2ms</td><td></td><td class="heb-ans">תֻּפְקַד</td><td></td></tr>
+<tr class="ans-row" id="ans-b3"><td class="ans-lbl">✓</td><td></td><td class="pgn">2ms</td><td></td><td class="heb-ans">תֻּשְׁלַךְ</td><td></td></tr>
 
-<tr><td class="num">4</td><td class="root-given">פקד</td><td class="pgn">2fs</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b4"><option value="">— select —</option><option>תִּפְקְדִי</option><option>תֻּפְקְדִי</option><option>תִּפָּקְדִי</option><option>תֻּפְקַד</option></select></td>
+<tr><td class="num">4</td><td class="root-given">שׁלך</td><td class="pgn">2fs</td><td class="ref-given">—</td>
+<td><select class="f" id="f-b4"><option value="">— select —</option><option>תַּשְׁלִיכִי</option><option>תֻּשְׁלְכִי</option><option>תִּשָּׁלְכִי</option><option>תֻּשְׁלַךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b4"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fs</td><td></td><td class="heb-ans">תֻּפְקְדִי</td><td></td></tr>
+<tr class="ans-row" id="ans-b4"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fs</td><td></td><td class="heb-ans">תֻּשְׁלְכִי</td><td></td></tr>
 
-<tr><td class="num">5</td><td class="root-given">פקד</td><td class="pgn">1cs</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b5"><option value="">— select —</option><option>אֶפְקֹד</option><option>נֻפְקַד</option><option>אֻפְקַד</option><option>אֶפָּקֵד</option></select></td>
+<tr><td class="num">5</td><td class="root-given">שׁלך</td><td class="pgn">1cs</td><td class="ref-given">—</td>
+<td><select class="f" id="f-b5"><option value="">— select —</option><option>אַשְׁלִיךְ</option><option>נֻשְׁלַךְ</option><option>אֻשְׁלַךְ</option><option>אִשָּׁלֵךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('b5')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b5"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cs</td><td></td><td class="heb-ans">אֻפְקַד</td><td></td></tr>
+<tr class="ans-row" id="ans-b5"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cs</td><td></td><td class="heb-ans">אֻשְׁלַךְ</td><td></td></tr>
 
-<tr><td class="num">6</td><td class="root-given">פקד</td><td class="pgn">3mp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b6"><option value="">— select —</option><option>יִפָּקְדוּ</option><option>תֻּפְקְדוּ</option><option>יִפְקְדוּ</option><option>יֻפְקְדוּ</option></select></td>
+<tr><td class="num">6</td><td class="root-given">שׁלך</td><td class="pgn">3mp</td><td class="ref-given">Isa 34:3</td>
+<td><select class="f" id="f-b6"><option value="">— select —</option><option>יִשָּׁלְכוּ</option><option>תֻּשְׁלְכוּ</option><option>יַשְׁלִיכוּ</option><option>יֻשְׁלְכוּ</option></select></td>
 <td><button class="rbtn" onclick="tog('b6')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b6"><td class="ans-lbl">✓</td><td></td><td class="pgn">3mp</td><td></td><td class="heb-ans">יֻפְקְדוּ</td><td></td></tr>
+<tr class="ans-row" id="ans-b6"><td class="ans-lbl">✓</td><td></td><td class="pgn">3mp</td><td></td><td class="heb-ans">יֻשְׁלְכוּ</td><td></td></tr>
 
-<tr><td class="num">7</td><td class="root-given">פקד</td><td class="pgn">3fp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b7"><option value="">— select —</option><option>תֻּפְקַדְנָה</option><option>תִּפְקֹדְנָה</option><option>יֻפְקְדוּ</option><option>תִּפָּקַדְנָה</option></select></td>
+<tr><td class="num">7</td><td class="root-given">שׁלך</td><td class="pgn">3fp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-b7"><option value="">— select —</option><option>תֻּשְׁלַכְנָה</option><option>תַּשְׁלֵכְנָה</option><option>יֻשְׁלְכוּ</option><option>תִּשָּׁלַכְנָה</option></select></td>
 <td><button class="rbtn" onclick="tog('b7')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b7"><td class="ans-lbl">✓</td><td></td><td class="pgn">3fp</td><td></td><td class="heb-ans">תֻּפְקַדְנָה</td><td></td></tr>
+<tr class="ans-row" id="ans-b7"><td class="ans-lbl">✓</td><td></td><td class="pgn">3fp</td><td></td><td class="heb-ans">תֻּשְׁלַכְנָה</td><td></td></tr>
 
-<tr><td class="num">8</td><td class="root-given">פקד</td><td class="pgn">2mp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b8"><option value="">— select —</option><option>תִּפָּקְדוּ</option><option>תֻּפְקְדוּ</option><option>יֻפְקְדוּ</option><option>תִּפְקְדוּ</option></select></td>
+<tr><td class="num">8</td><td class="root-given">שׁלך</td><td class="pgn">2mp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-b8"><option value="">— select —</option><option>תִּשָּׁלְכוּ</option><option>תֻּשְׁלְכוּ</option><option>יֻשְׁלְכוּ</option><option>תַּשְׁלִיכוּ</option></select></td>
 <td><button class="rbtn" onclick="tog('b8')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b8"><td class="ans-lbl">✓</td><td></td><td class="pgn">2mp</td><td></td><td class="heb-ans">תֻּפְקְדוּ</td><td></td></tr>
+<tr class="ans-row" id="ans-b8"><td class="ans-lbl">✓</td><td></td><td class="pgn">2mp</td><td></td><td class="heb-ans">תֻּשְׁלְכוּ</td><td></td></tr>
 
-<tr><td class="num">9</td><td class="root-given">פקד</td><td class="pgn">2fp <em style="font-weight:normal;font-size:.85em;color:#888">(= 3fp)</em></td><td class="ref-given">—</td>
-<td><select class="f" id="f-b9"><option value="">— select —</option><option>תִּפְקֹדְנָה</option><option>תֻּפְקַדְנָה</option><option>תִּפָּקַדְנָה</option><option>תֻּפְקְדוּ</option></select></td>
+<tr><td class="num">9</td><td class="root-given">שׁלך</td><td class="pgn">2fp <em style="font-weight:normal;font-size:.85em;color:#888">(= 3fp)</em></td><td class="ref-given">—</td>
+<td><select class="f" id="f-b9"><option value="">— select —</option><option>תַּשְׁלֵכְנָה</option><option>תֻּשְׁלַכְנָה</option><option>תִּשָּׁלַכְנָה</option><option>תֻּשְׁלְכוּ</option></select></td>
 <td><button class="rbtn" onclick="tog('b9')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b9"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fp</td><td></td><td class="heb-ans">תֻּפְקַדְנָה</td><td></td></tr>
+<tr class="ans-row" id="ans-b9"><td class="ans-lbl">✓</td><td></td><td class="pgn">2fp</td><td></td><td class="heb-ans">תֻּשְׁלַכְנָה</td><td></td></tr>
 
-<tr><td class="num">10</td><td class="root-given">פקד</td><td class="pgn">1cp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-b10"><option value="">— select —</option><option>נִפְקֹד</option><option>יֻפְקַד</option><option>נֻפְקַד</option><option>נִפָּקֵד</option></select></td>
+<tr><td class="num">10</td><td class="root-given">שׁלך</td><td class="pgn">1cp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-b10"><option value="">— select —</option><option>נַשְׁלִיךְ</option><option>יֻשְׁלַךְ</option><option>נֻשְׁלַךְ</option><option>נִשָּׁלֵךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('b10')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b10"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cp</td><td></td><td class="heb-ans">נֻפְקַד</td><td></td></tr>
+<tr class="ans-row" id="ans-b10"><td class="ans-lbl">✓</td><td></td><td class="pgn">1cp</td><td></td><td class="heb-ans">נֻשְׁלַךְ</td><td></td></tr>
 
 </tbody>
 </table>
@@ -166,15 +166,15 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <hr class="sec">
 
 <!-- ============================================================ -->
-<h2>Part C — Infinitive Construct (2 forms)</h2>
+<h2>Part C — Infinitive Construct (2 forms) — Root שׁלך</h2>
 <table>
 <thead><tr><th>#</th><th>Root</th><th>Description</th><th>Ref</th><th>Form</th><th></th></tr></thead>
 <tbody>
 
-<tr><td class="num">1</td><td class="root-given">שׁמר</td><td class="pgn">Base</td><td class="ref-given">—</td>
-<td><select class="f" id="f-c1"><option value="">— select —</option><option>הַשְׁמִיר</option><option>הֻשְׁמַר</option><option>שְׁמֹר</option><option>הִשָּׁמֵר</option></select></td>
+<tr><td class="num">1</td><td class="root-given">שׁלך</td><td class="pgn">Base</td><td class="ref-given">—</td>
+<td><select class="f" id="f-c1"><option value="">— select —</option><option>הַשְׁלֵךְ</option><option>הֻשְׁלַךְ</option><option>שְׁלֹךְ</option><option>הִשָּׁלֵךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-c1"><td class="ans-lbl">✓</td><td></td><td class="pgn">Base</td><td></td><td class="heb-ans">הֻשְׁמַר</td><td></td></tr>
+<tr class="ans-row" id="ans-c1"><td class="ans-lbl">✓</td><td></td><td class="pgn">Base</td><td></td><td class="heb-ans">הֻשְׁלַךְ</td><td></td></tr>
 
 <tr><td class="num">2</td><td class="root-given">שׁלך</td><td class="pgn">with לְ</td><td class="ref-given">—</td>
 <td><select class="f" id="f-c2"><option value="">— select —</option><option>לְהַשְׁלִיךְ</option><option>לְהִשָּׁלֵךְ</option><option>לְהֻשְׁלַךְ</option><option>לִשְׁלֹךְ</option></select></td>
@@ -188,6 +188,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 
 <!-- ============================================================ -->
 <h2>Part D — Infinitive Absolute (1 form) — Root מות</h2>
+<div class="note">The Hophal Infinitive Absolute is extremely rare; no form of מות Hophal Inf. Abs. is clearly attested in the MT. The form הוּמֵת represents the expected paradigmatic pattern. The root מות does appear abundantly in other Hophal conjugations (64 forms, e.g., יוּמַת, "he shall be put to death").</div>
 <table>
 <thead><tr><th>#</th><th>Root</th><th>Description</th><th>Ref</th><th>Form</th><th></th></tr></thead>
 <tbody>
@@ -203,30 +204,30 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <hr class="sec">
 
 <!-- ============================================================ -->
-<h2>Part E — Participle (4 forms) — Root פקד</h2>
+<h2>Part E — Participle (4 forms) — Root שׁלך</h2>
 <table>
 <thead><tr><th>#</th><th>Root</th><th>PGN</th><th>Ref</th><th>Form</th><th></th></tr></thead>
 <tbody>
 
-<tr><td class="num">1</td><td class="root-given">פקד</td><td class="pgn">ms</td><td class="ref-given">—</td>
-<td><select class="f" id="f-e1"><option value="">— select —</option><option>נִפְקָד</option><option>מֻפְקָד</option><option>פֹּקֵד</option><option>מַפְקִיד</option></select></td>
+<tr><td class="num">1</td><td class="root-given">שׁלך</td><td class="pgn">ms</td><td class="ref-given">2Sa 20:21</td>
+<td><select class="f" id="f-e1"><option value="">— select —</option><option>נִשְׁלָךְ</option><option>מֻשְׁלָךְ</option><option>שֹׁלֵךְ</option><option>מַשְׁלִיךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('e1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-e1"><td class="ans-lbl">✓</td><td></td><td class="pgn">ms</td><td></td><td class="heb-ans">מֻפְקָד</td><td></td></tr>
+<tr class="ans-row" id="ans-e1"><td class="ans-lbl">✓</td><td></td><td class="pgn">ms</td><td></td><td class="heb-ans">מֻשְׁלָךְ</td><td></td></tr>
 
-<tr><td class="num">2</td><td class="root-given">פקד</td><td class="pgn">fs</td><td class="ref-given">—</td>
-<td><select class="f" id="f-e2"><option value="">— select —</option><option>מֻפְקֶדֶת</option><option>פֹּקֶדֶת</option><option>מַפְקִידָה</option><option>נִפְקֶדֶת</option></select></td>
+<tr><td class="num">2</td><td class="root-given">שׁלך</td><td class="pgn">fs</td><td class="ref-given">1Ki 13:24</td>
+<td><select class="f" id="f-e2"><option value="">— select —</option><option>מֻשְׁלֶכֶת</option><option>שֹׁלֶכֶת</option><option>מַשְׁלִיכָה</option><option>נִשְׁלֶכֶת</option></select></td>
 <td><button class="rbtn" onclick="tog('e2')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-e2"><td class="ans-lbl">✓</td><td></td><td class="pgn">fs</td><td></td><td class="heb-ans">מֻפְקֶדֶת</td><td></td></tr>
+<tr class="ans-row" id="ans-e2"><td class="ans-lbl">✓</td><td></td><td class="pgn">fs</td><td></td><td class="heb-ans">מֻשְׁלֶכֶת</td><td></td></tr>
 
-<tr><td class="num">3</td><td class="root-given">פקד</td><td class="pgn">mp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-e3"><option value="">— select —</option><option>פֹּקְדִים</option><option>מַפְקִידִים</option><option>נִפְקָדִים</option><option>מֻפְקָדִים</option></select></td>
+<tr><td class="num">3</td><td class="root-given">שׁלך</td><td class="pgn">mp</td><td class="ref-given">Jer 14:16</td>
+<td><select class="f" id="f-e3"><option value="">— select —</option><option>שֹׁלְכִים</option><option>מַשְׁלִיכִים</option><option>נִשְׁלָכִים</option><option>מֻשְׁלָכִים</option></select></td>
 <td><button class="rbtn" onclick="tog('e3')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-e3"><td class="ans-lbl">✓</td><td></td><td class="pgn">mp</td><td></td><td class="heb-ans">מֻפְקָדִים</td><td></td></tr>
+<tr class="ans-row" id="ans-e3"><td class="ans-lbl">✓</td><td></td><td class="pgn">mp</td><td></td><td class="heb-ans">מֻשְׁלָכִים</td><td></td></tr>
 
-<tr><td class="num">4</td><td class="root-given">פקד</td><td class="pgn">fp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-e4"><option value="">— select —</option><option>מַפְקִידוֹת</option><option>פֹּקְדוֹת</option><option>מֻפְקָדוֹת</option><option>נִפְקָדוֹת</option></select></td>
+<tr><td class="num">4</td><td class="root-given">שׁלך</td><td class="pgn">fp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-e4"><option value="">— select —</option><option>מַשְׁלִיכוֹת</option><option>שֹׁלְכוֹת</option><option>מֻשְׁלָכוֹת</option><option>נִשְׁלָכוֹת</option></select></td>
 <td><button class="rbtn" onclick="tog('e4')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-e4"><td class="ans-lbl">✓</td><td></td><td class="pgn">fp</td><td></td><td class="heb-ans">מֻפְקָדוֹת</td><td></td></tr>
+<tr class="ans-row" id="ans-e4"><td class="ans-lbl">✓</td><td></td><td class="pgn">fp</td><td></td><td class="heb-ans">מֻשְׁלָכוֹת</td><td></td></tr>
 
 </tbody>
 </table>
@@ -234,21 +235,21 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <hr class="sec">
 
 <!-- ============================================================ -->
-<h2>Part F — Imperative (2 forms) — Root שׁמר</h2>
-<div class="note">The Hophal Imperative is rare in the OT (only 2 occurrences attested). These forms represent the theoretical paradigmatic pattern. Scripture references are not provided. Note that the 2ms form is identical in appearance to the Hophal Perfect 3ms and Hophal Infinitive Construct.</div>
+<h2>Part F — Imperative (2 forms) — Root שׁלך</h2>
+<div class="note">The Hophal Imperative is extremely rare in the OT. The only clearly attested form in the MT is הָפְנוּ (Jer 49:8), a 2mp from root פנה (III-he). The forms below represent the theoretical paradigmatic pattern for a strong root. Note that the 2ms form is identical in appearance to the Hophal Perfect 3ms and Hophal Infinitive Construct.</div>
 <table>
 <thead><tr><th>#</th><th>Root</th><th>PGN</th><th>Ref</th><th>Form</th><th></th></tr></thead>
 <tbody>
 
-<tr><td class="num">1</td><td class="root-given">שׁמר</td><td class="pgn">2ms</td><td class="ref-given">—</td>
-<td><select class="f" id="f-f1"><option value="">— select —</option><option>הִשָּׁמֵר</option><option>הֻשְׁמַר</option><option>שְׁמֹר</option><option>הַשְׁמֵר</option></select></td>
+<tr><td class="num">1</td><td class="root-given">שׁלך</td><td class="pgn">2ms</td><td class="ref-given">—</td>
+<td><select class="f" id="f-f1"><option value="">— select —</option><option>הִשָּׁלֵךְ</option><option>הֻשְׁלַךְ</option><option>שְׁלֹךְ</option><option>הַשְׁלֵךְ</option></select></td>
 <td><button class="rbtn" onclick="tog('f1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-f1"><td class="ans-lbl">✓</td><td></td><td class="pgn">2ms</td><td></td><td class="heb-ans">הֻשְׁמַר</td><td></td></tr>
+<tr class="ans-row" id="ans-f1"><td class="ans-lbl">✓</td><td></td><td class="pgn">2ms</td><td></td><td class="heb-ans">הֻשְׁלַךְ</td><td></td></tr>
 
-<tr><td class="num">2</td><td class="root-given">שׁמר</td><td class="pgn">2mp</td><td class="ref-given">—</td>
-<td><select class="f" id="f-f2"><option value="">— select —</option><option>הִשָּׁמְרוּ</option><option>שִׁמְרוּ</option><option>הֻשְׁמְרוּ</option><option>הַשְׁמִירוּ</option></select></td>
+<tr><td class="num">2</td><td class="root-given">שׁלך</td><td class="pgn">2mp</td><td class="ref-given">—</td>
+<td><select class="f" id="f-f2"><option value="">— select —</option><option>הִשָּׁלְכוּ</option><option>שִׁלְכוּ</option><option>הֻשְׁלְכוּ</option><option>הַשְׁלִיכוּ</option></select></td>
 <td><button class="rbtn" onclick="tog('f2')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-f2"><td class="ans-lbl">✓</td><td></td><td class="pgn">2mp</td><td></td><td class="heb-ans">הֻשְׁמְרוּ</td><td></td></tr>
+<tr class="ans-row" id="ans-f2"><td class="ans-lbl">✓</td><td></td><td class="pgn">2mp</td><td></td><td class="heb-ans">הֻשְׁלְכוּ</td><td></td></tr>
 
 </tbody>
 </table>

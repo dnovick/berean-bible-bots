@@ -24,14 +24,25 @@ instructor: "David Novick"
 chapter: 28
 agenda:
   - title: "BBB Updates"
+    duration: "5 min"
 
 lesson:
   name: "BBH 28 - Hophal Strong Verbs"
   url: "https://bereanbiblebots.com/lessons/hebrew/ch28/"
+  duration: "90 min"
+
+reading:
+  - name: "TBD"
+    description: "TBD"
+    passage: "TBD"
+    file: "tbd.html"
+    duration: "15 min"
 
 sections:
-  - heading: "BBB Updates"
-    file: "bbb-updates.md"
+  - heading: "Logistics"
+    file: "logistics.md"
   - heading: "References"
     file: "references.md"
+
+
 notes: ""
