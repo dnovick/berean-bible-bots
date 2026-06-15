@@ -138,8 +138,15 @@
 
     function isNumericSample(values) {
         return values.length > 0 && values.every(function (v) {
-            return v === '' || !isNaN(v.replace(/[,% ]/g, ''));
+            return v === '' || v === '—' || !isNaN(v.replace(/[,% ]/g, ''));
         });
+    }
+
+    // Rows whose first cell contains bold text (e.g. "**OT Total**") are summary
+    // rows — they should be pinned to the bottom rather than sorted.
+    function isSummaryRow(row) {
+        var first = row.cells[0];
+        return !!first && first.querySelector('strong') !== null;
     }
 
     // A 2-column table whose second header is "Value" or "Description" is a
@@ -154,7 +161,11 @@
     function sortTable(table, colIdx, ascending) {
         const tbody = table.querySelector('tbody');
         if (!tbody) return;
-        const rows = Array.from(tbody.querySelectorAll('tr'));
+        const allRows = Array.from(tbody.querySelectorAll('tr'));
+
+        // Bold-first-cell rows (e.g. "**OT Total**") are pinned to the bottom.
+        const pinned = allRows.filter(isSummaryRow);
+        const rows = allRows.filter(function (r) { return !isSummaryRow(r); });
 
         const samples = rows
             .map(function (r) { return cellText(r.cells[colIdx]); })
@@ -190,6 +201,7 @@
 
         rows.sort(compare);
         rows.forEach(function (r) { tbody.appendChild(r); });
+        pinned.forEach(function (r) { tbody.appendChild(r); });
     }
 
     // ── Initialise one table ──────────────────────────────────────────────────
