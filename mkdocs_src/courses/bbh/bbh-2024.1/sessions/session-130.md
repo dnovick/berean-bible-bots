@@ -6,13 +6,12 @@
 
 ## Agenda
 
-1. BBB Updates (5 min)
-1. [Lesson: BBH 28 - Hophal Strong Verbs](https://bereanbiblebots.com/lessons/hebrew/ch28/) (90 min)
-1. [Reading: TBD](session-130/tbd.html) (15 min)
+1. [Logistics](session-130/logistics.md) (5 min)
+1. [Lesson: BBH 28 - Hophal Strong Verbs](https://bereanbiblebots.com/lessons/hebrew/ch28/) (80 min)
+1. [Reading: Psalm 119:1-8](session-130/ps119-1-8.html) (20 min)
 
 ## Additional Info
 
 | Topic |
 |---|
-| [Logistics](session-130/logistics.md) |
 | [References](session-130/references.md) |
