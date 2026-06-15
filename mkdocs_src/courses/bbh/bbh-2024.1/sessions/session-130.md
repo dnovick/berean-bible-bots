@@ -15,3 +15,4 @@
 | Topic |
 |---|
 | [References](session-130/references.md) |
+| [Hophal — OT Distribution by Book](session-130/hophal-distribution.md) |
