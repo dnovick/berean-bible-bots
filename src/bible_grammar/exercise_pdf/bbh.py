@@ -6535,78 +6535,98 @@ def build_ch23_passage_exercise(out_dir: Optional[str] = None) -> str:
 
 
 class Ch28HophalHiphilContrastExercise(ExercisePDF):
+    # columns: #, Form, Ref, Stem, Conjugation, PGN, Translation
+    _HDR = ['#', 'Form', 'Ref', 'Stem', 'Conjugation', 'PGN', 'Translation']
+    _CR  = [0.04, 0.13, 0.08, 0.10, 0.15, 0.08, 0.42]
+
+    # question rows: Stem/Conjugation/PGN/Translation left blank
+    _ROWS = [
+        ['1',  'הִגִּיד',      'Gen 3:11',  '', '', '', ''],
+        ['2',  'הַכּוֹת',      'Gen 4:15',  '', '', '', ''],
+        ['3',  'הוּחַל',       'Gen 4:26',  '', '', '', ''],
+        ['4',  'וַיַּגֵּד',    'Gen 9:22',  '', '', '', ''],
+        ['5',  'הָמִית',       'Gen 18:25', '', '', '', ''],
+        ['6',  'וַיַּחֲזִיקוּ','Gen 19:16', '', '', '', ''],
+        ['7',  'וַיֻּגַּד',    'Gen 22:20', '', '', '', ''],
+        ['8',  'וַיּוּשַׂם',   'Gen 24:33', '', '', '', ''],
+        ['9',  'יוּמַת',       'Gen 26:11', '', '', '', ''],
+        ['10', 'הַשְׁלִיכוּ',  'Gen 37:22', '', '', '', ''],
+        ['11', 'וַיַּשְׁלִכוּ','Gen 37:24', '', '', '', ''],
+        ['12', 'הוּרַד',       'Gen 39:1',  '', '', '', ''],
+        ['13', 'הוּשַׁב',      'Gen 42:28', '', '', '', ''],
+        ['14', 'הוּבְאוּ',     'Gen 43:18', '', '', '', ''],
+        ['15', 'וַיַּחֲזֵק',   'Exo 4:4',   '', '', '', ''],
+        ['16', 'וַיֻּכּוּ',    'Exo 5:14',  '', '', '', ''],
+        ['17', 'מֻכִּים',      'Exo 5:16',  '', '', '', ''],
+        ['18', 'וַיּוּשַׁב',   'Exo 10:8',  '', '', '', ''],
+        ['19', 'וַיֻּגַּד',    'Exo 14:5',  '', '', '', ''],
+        ['20', 'הַכֵּה',       'Exo 17:6',  '', '', '', ''],
+        ['21', 'יוּמַת',       'Exo 19:12', '', '', '', ''],
+        ['22', 'וַיַּשְׁלֵךְ', 'Exo 32:19', '', '', '', ''],
+        ['23', 'הוּקַם',       'Exo 40:17', '', '', '', ''],
+        ['24', 'הוּסַר',       'Lev 4:31',  '', '', '', ''],
+    ]
+
+    # answer rows: Form column shows root (Hebrew); other cols show answers
+    _ANS = [
+        ['1',  'נָגַד',        'Gen 3:11',  'Hiphil', 'Perfect',             '3ms', 'he told you'],
+        ['2',  'נָכָה',        'Gen 4:15',  'Hiphil', 'Inf. Construct',      '—',   'to strike'],
+        ['3',  'חָלַל',        'Gen 4:26',  'Hophal', 'Perfect',             '3ms', 'it was begun'],
+        ['4',  'נָגַד',        'Gen 9:22',  'Hiphil', 'Wayyiqtol',           '3ms', 'and he told'],
+        ['5',  'מוּת',         'Gen 18:25', 'Hiphil', 'Inf. Construct',      '—',   'to put to death'],
+        ['6',  'חָזַק',        'Gen 19:16', 'Hiphil', 'Wayyiqtol',           '3mp', 'and they seized his hand'],
+        ['7',  'נָגַד',        'Gen 22:20', 'Hophal', 'Wayyiqtol',           '3ms', 'and it was told to Abraham'],
+        ['8',  'שִׂים',        'Gen 24:33', 'Hophal', 'Wayyiqtol',           '3ms', 'and food was set before him'],
+        ['9',  'מוּת',         'Gen 26:11', 'Hophal', 'Imperfect',           '3ms', 'he shall be put to death'],
+        ['10', 'שָׁלַךְ',      'Gen 37:22', 'Hiphil', 'Imperative',          '2mp', 'throw him! (into this pit)'],
+        ['11', 'שָׁלַךְ',      'Gen 37:24', 'Hiphil', 'Wayyiqtol',           '3mp', 'and they threw him'],
+        ['12', 'יָרַד',        'Gen 39:1',  'Hophal', 'Perfect',             '3ms', 'he was brought down to Egypt'],
+        ['13', 'שׁוּב',        'Gen 42:28', 'Hophal', 'Perfect',             '3ms', 'it was returned into my sack'],
+        ['14', 'בּוֹא',        'Gen 43:18', 'Hophal', 'Perfect',             '3cp', 'we were brought in'],
+        ['15', 'חָזַק',        'Exo 4:4',   'Hiphil', 'Wayyiqtol',           '3ms', 'and he grasped it by the tail'],
+        ['16', 'נָכָה',        'Exo 5:14',  'Hophal', 'Wayyiqtol',           '3mp', 'and the overseers were beaten'],
+        ['17', 'נָכָה',        'Exo 5:16',  'Hophal', 'Participle',          'mp',  'being beaten'],
+        ['18', 'שׁוּב',        'Exo 10:8',  'Hophal', 'Wayyiqtol',           '3ms', 'Moses/Aaron were brought back'],
+        ['19', 'נָגַד',        'Exo 14:5',  'Hophal', 'Wayyiqtol',           '3ms', 'and it was told to Pharaoh'],
+        ['20', 'נָכָה',        'Exo 17:6',  'Hiphil', 'Imperative',          '2ms', 'strike! (the rock)'],
+        ['21', 'מוּת',         'Exo 19:12', 'Hophal', 'Imperfect',           '3ms', 'he shall be put to death'],
+        ['22', 'שָׁלַךְ',      'Exo 32:19', 'Hiphil', 'Wayyiqtol',           '3ms', 'and he threw them (the tablets)'],
+        ['23', 'קוּם',         'Exo 40:17', 'Hophal', 'Perfect',             '3ms', 'the tabernacle was set up'],
+        ['24', 'סוּר',         'Lev 4:31',  'Hophal', 'Perfect',             '3ms', 'it was removed'],
+    ]
 
     def _build(self) -> None:
         self.add_instructions(
-            'Part A: 8 Hophal forms — translate and name the corresponding Hiphil meaning. '
-            'Part B: 4 מוּת pairs — identify Hiphil vs. Hophal and translate. '
-            'Answer key is on the last page.'
+            'Each item gives a Hiphil or Hophal verb form from the biblical text. '
+            'Identify the stem (Hiphil or Hophal), conjugation, PGN, and translate. '
+            'Items are ordered by scripture reference. Answer key is on the last page.'
         )
         self.add_note(
-            'Hophal prefix vowel: קֻּ (strong/I-gutt); וּ (I-yod/Biconsonantal). '
-            'Hiphil prefix vowel: הִ (perfect); הַ (imperative); מַ (participle). '
-            'Biconsonantal: Hiphil perfect הֵ / Hophal perfect הוּ — one vowel distinguishes them.'
+            'Hiphil: prefix הִ (perfect); הַ/יַ '
+            '(imperfect/wayyiqtol/imperative/inf. construct); causative; active.  '
+            'Hophal: prefix vowel קֻ (qibbuts, strong roots) or וּ '
+            '(shureq, biconsonantal/I-yod); passive of Hiphil.'
         )
-
-        hdr_a = ['#', 'Form', 'Conjugation', 'Ref', 'Gloss (blank)', 'Translation', 'Stem']
-        cr_a  = [0.05, 0.13, 0.14, 0.09, 0.28, 0.18, 0.13]
-        rows_a = [
-            ['1', 'הוּבְאוּ',  'Qatal 3cp',       'Gen 43:18', '"we were ___"',                 '', ''],
-            ['2', 'הוּרַד',    'Qatal 3ms',        'Gen 39:1',  '"he had been ___ to Egypt"',    '', ''],
-            ['3', 'הוּשַׁב',   'Qatal 3ms',        'Gen 42:28', '"it has been ___"',             '', ''],
-            ['4', 'הוּקַם',    'Qatal 3ms',        'Exo 40:17', '"the tabernacle was ___"',      '', ''],
-            ['5', 'יֻּגַּד',   'Wayyiqtol 3ms',   'Gen 22:20', '"it was ___"',                  '', ''],
-            ['6', 'יּוּשַׂם',  'Wayyiqtol 3ms',   'Gen 24:33', '"food was ___"',                '', ''],
-            ['7', 'הוּסַר',    'Qatal 3ms',        'Lev 4:31',  '"it was ___"',                  '', ''],
-            ['8', 'יוּשַׁב',   'Wayyiqtol 3ms',   'Exo 10:8',  '"Moses was ___"',               '', ''],
-        ]
-        ans_a = [
-            ['1', 'הוּבְאוּ',  'Qatal 3cp',       'Gen 43:18', '"we were brought in"',         'they were brought',  'Hophal (בּוֹא)'],
-            ['2', 'הוּרַד',    'Qatal 3ms',        'Gen 39:1',  '"he had been brought down"',   'was brought down',   'Hophal (יָרַד)'],
-            ['3', 'הוּשַׁב',   'Qatal 3ms',        'Gen 42:28', '"it has been returned"',       'was returned',       'Hophal (שׁוּב)'],
-            ['4', 'הוּקַם',    'Qatal 3ms',        'Exo 40:17', '"the tabernacle was set up"',  'was set up',         'Hophal (קוּם)'],
-            ['5', 'יֻּגַּד',   'Wayyiqtol 3ms',   'Gen 22:20', '"it was told"',                'it was told',        'Hophal (נָגַד)'],
-            ['6', 'יּוּשַׂם',  'Wayyiqtol 3ms',   'Gen 24:33', '"food was set before him"',    'it was set/placed',  'Hophal (שִׂים)'],
-            ['7', 'הוּסַר',    'Qatal 3ms',        'Lev 4:31',  '"it was removed"',             'was removed',        'Hophal (סוּר)'],
-            ['8', 'יוּשַׁב',   'Wayyiqtol 3ms',   'Exo 10:8',  '"Moses was brought back"',     'was brought back',   'Hophal (שׁוּב)'],
-        ]
-        self.add_section_heading('Part A — Motion and Transfer Roots')
-        self.add_generic_table(hdr_a, rows_a, cr_a, heb_cols=[1], show_answers=False)
-        self.add_section_break()
-
-        hdr_b = ['#', 'Form', 'Stem', 'Conj.', 'Ref', 'Translation']
-        cr_b  = [0.05, 0.16, 0.12, 0.16, 0.14, 0.37]
-        rows_b = [
-            ['9',  'הֵמִית',   '', 'Inf. Construct', 'Gen 18:25', ''],
-            ['10', 'יוּמַת',   '', 'Yiqtol 3ms',     'Gen 26:11', ''],
-            ['11', 'הָמִית',   '', 'Qatal 3ms',       '2 Sam 12:9', ''],
-            ['12', 'הוּמַת',   '', 'Qatal 3ms',       '2 Sam 21:9', ''],
-        ]
-        ans_b = [
-            ['9',  'הֵמִית',   'Hiphil', 'Inf. Construct', 'Gen 18:25',   'to put to death; הֵ prefix = Hiphil Bicons.'],
-            ['10', 'יוּמַת',   'Hophal', 'Yiqtol 3ms',     'Gen 26:11',  'shall be put to death; וּ prefix = Hophal'],
-            ['11', 'הָמִית',   'Hiphil', 'Qatal 3ms',       '2 Sam 12:9', 'he killed; הֵ → הָ (alternate vocalization)'],
-            ['12', 'הוּמַת',   'Hophal', 'Qatal 3ms',       '2 Sam 21:9', 'he was put to death; הוּ = Hophal perfect'],
-        ]
-        self.add_section_heading('Part B — מוּת: Hiphil / Hophal Pairs')
-        self.add_generic_table(hdr_b, rows_b, cr_b, heb_cols=[1], show_answers=False)
-        self.add_section_break()
-
+        self.add_generic_table(
+            self._HDR, self._ROWS, self._CR,
+            heb_cols=[1], show_answers=False
+        )
         self.add_reflection([
-            'In Part A, every Hophal form uses a וּ (shureq) prefix vowel. Explain why '
-            'I-yod and Biconsonantal roots take shureq instead of the usual qibbuts.',
-            'Items 9–12 are all from מוּת. Write the prefix vowel pattern that '
-            'distinguishes Hiphil perfect (הֵמִית) from Hophal qatal (הוּמַת). '
-            'What is the one vowel that differs?',
+            'Items 1, 4 (Hiphil נָגַד) vs. 7, 19 (Hophal): '
+            'In the Hiphil, a person tells; in the Hophal, information is told. '
+            'What does this show about how Hebrew distributes agency in speech-reporting?',
+            'Items 10, 11, 22 are all Hiphil of שָלַך (strong root). '
+            'Without looking at context, what morphological feature marks each one\'s '
+            'conjugation and PGN?',
+            'Items 9 (Gen 26:11) and 21 (Exo 19:12) use the identical Hophal Imperfect '
+            'יוּמַת in both a royal decree and divine law. '
+            'What does the passive voice add that an active "I will kill" cannot?',
         ])
-
-        self.add_section_heading('Answer Key — Part A')
-        self.add_generic_table(hdr_a, rows_a, cr_a, heb_cols=[1],
-                               show_answers=True, answer_rows=ans_a)
-        self.add_section_break()
-        self.add_section_heading('Answer Key — Part B')
-        self.add_generic_table(hdr_b, rows_b, cr_b, heb_cols=[1],
-                               show_answers=True, answer_rows=ans_b)
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(
+            self._HDR, self._ROWS, self._CR,
+            heb_cols=[1], show_answers=True, answer_rows=self._ANS
+        )
 
 
 def build_ch28_hophal_hiphil_contrast_exercise(out_dir: Optional[str] = None) -> str:

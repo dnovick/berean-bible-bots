@@ -1,19 +1,26 @@
 # ch28-hophal-hiphil-contrast
 
-An 18-item drill contrasting Hiphil and Hophal forms drawn from the same roots, illustrating the causative-passive relationship that defines the Hophal. Builds on BBH Chapter 28 (Hophal Strong Verbs).
+A 24-item drill contrasting Hiphil and Hophal forms drawn from the biblical text (Gen–Lev), ordered by scripture reference. Students identify the stem, conjugation, PGN, and translation for each form. Builds on BBH Chapter 28 (Hophal Strong Verbs).
 
-The exercise is organized in four parts:
-- **Part A** (items 1–7): Motion/transfer roots — all Hophal; students identify the passivized Hiphil action
-- **Part B** (items 8–11): Root <span class="heb">מוּת</span> — Hiphil/Hophal pairs with morphological contrast (vowel under ה distinguishes stems)
-- **Part C** (items 12–15): Root <span class="heb">נָגַד</span> — Hiphil (person as subject) vs. Hophal (information as subject)
-- **Part D** (items 16–18): Root <span class="heb">נָכָה</span> — Hiphil and Hophal with no common Qal counterpart
+A single unified table replaces the former multi-part structure. Stems are mixed throughout the exercise to prevent pattern-matching by position.
 
-### Stem distribution
+### Stem and conjugation distribution
 
-| Stem | Items | Count |
+| Stem | Count | Items |
 |---|---|---|
-| Hophal | 1–7, 9, 11, 13, 15, 17, 18 | 13 |
-| Hiphil | 8, 10, 12, 14, 16 | 5 |
+| Hiphil | 10 | 1, 2, 4, 5, 6, 10, 11, 15, 20, 22 |
+| Hophal | 14 | 3, 7, 8, 9, 12, 13, 14, 16, 17, 18, 19, 21, 23, 24 |
+
+### Conjugation coverage
+
+| Conjugation | Items |
+|---|---|
+| Perfect | 3, 5, 12, 13, 14, 23, 24 |
+| Imperfect | 9, 21 |
+| Wayyiqtol | 4, 6, 7, 8, 11, 15, 16, 18, 19, 22 |
+| Imperative | 10, 20 |
+| Infinitive Construct | 2, 5 |
+| Participle | 17 |
 
 ---
 
@@ -22,5 +29,5 @@ The exercise is organized in four parts:
 | File | Format | Use |
 |---|---|---|
 | [ch28-hophal-hiphil-contrast.md](ch28-hophal-hiphil-contrast.md) | Markdown | Reference copy — static answer key at bottom |
-| [ch28-hophal-hiphil-contrast.html](ch28-hophal-hiphil-contrast.html) | HTML | Classroom use — fillable fields, per-item ▶ Answer reveal, Show/Hide/Clear All controls |
-| [ch28-hophal-hiphil-contrast.pdf](ch28-hophal-hiphil-contrast.pdf) | PDF | Print or tablet use — AcroForm text fields, answer rows always visible |
+| [ch28-hophal-hiphil-contrast.html](ch28-hophal-hiphil-contrast.html) | HTML | Classroom use — stem/conjugation/PGN dropdowns, translation field, column-aligned ▶ Answer rows |
+| [ch28-hophal-hiphil-contrast.pdf](ch28-hophal-hiphil-contrast.pdf) | PDF | Print or tablet use — AcroForm fields, answer key on last page |
