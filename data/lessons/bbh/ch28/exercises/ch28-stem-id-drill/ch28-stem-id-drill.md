@@ -1,18 +1,16 @@
 # Chapter 28 — Stem-ID Drill (Strong Roots)
 
-*BBH Chapter 28 · Hophal Strong Verbs*
+*BBH Chapter 28 · Qal, Niphal, Hiphil, and Hophal Stems*
 
 ---
 
 ## Instructions
 
-By Chapter 28 you have learned all four major stems: **Qal, Niphal, Hiphil, and Hophal**. This drill mixes 24 forms of strong roots (6 per stem), interleaved. For each item:
+By Chapter 28 you have learned all four major stems: **Qal, Niphal, Hiphil, and Hophal**. This drill presents 24 forms drawn from four strong roots: קטל (kill), שׁמר (keep/guard), כתב (write), and פקד (appoint/muster). Six items per stem, interleaved throughout. For each item:
 
 1. **Identify the stem** (Qal / Niphal / Hiphil / Hophal).
-2. **Parse** the conjugation and PGN where applicable.
-3. **Translate** the form.
-
-The roots used are **קטל** (paradigm root), **שׁמר** (to keep/guard), **כבד** (to be heavy/honored), and **שׁמד** (to destroy).
+2. **Parse** the conjugation and PGN (where applicable).
+3. **Provide the root** and a **gloss**.
 
 The answer key is at the bottom.
 
@@ -20,71 +18,78 @@ The answer key is at the bottom.
 
 ## Exercise Table
 
-| # | Hebrew | Stem | Conjugation | PGN | Root | Translation |
+| # | Hebrew | Stem | Conjugation | PGN | Root | Gloss |
 |---|---|---|---|---|---|---|
-| 1 | קָטַל | | | | | |
-| 2 | הִקְטִיל | | | | | |
-| 3 | נִקְטַל | | | | | |
-| 4 | הָקְטַל | | | | | |
-| 5 | שָׁמַר | | | | | |
-| 6 | נִשְׁמַר | | | | | |
-| 7 | יִשְׁמֹר | | | | | |
-| 8 | יַשְׁמִיר | | | | | |
-| 9 | יִשָּׁמֵר | | | | | |
-| 10 | יָשְׁמַר | | | | | |
-| 11 | וַיִּשְׁמֹר | | | | | |
-| 12 | וַיַּשְׁמֵר | | | | | |
-| 13 | וַיִּשָּׁמֵר | | | | | |
-| 14 | וַיָּשְׁמַר | | | | | |
-| 15 | שְׁמֹר | | | | | |
-| 16 | הַשְׁמֵר | | | | | |
-| 17 | הִשָּׁמֵר | | | | | |
-| 18 | הָשְׁמֵר | | | | | |
-| 19 | שָׁמוֹר | | | | | |
-| 20 | הַשְׁמֵר | | | | | |
-| 21 | הִשָּׁמֵר | | | | | |
-| 22 | שֹׁמֵר | | | | | |
-| 23 | מַשְׁמִיר | | | | | |
-| 24 | הָשְׁמָר | | | | | |
-
-> **Note:** Items 16 and 20 are identical in spelling (הַשְׁמֵר). In the strong root the Hiphil Imperative 2ms and Hiphil Infinitive Absolute are identical in form. Context disambiguates.
+| 1 | שָׁמַר | | | | | |
+| 2 | נִקְטַל | | | | | |
+| 3 | הִפְקִיד | | | | | |
+| 4 | הָכְתַב | | | | | |
+| 5 | כָּתַבְנוּ | | | | | |
+| 6 | הָפְקְדָה | | | | | |
+| 7 | הִכְתִּיבָה | | | | | |
+| 8 | נִפְקְדוּ | | | | | |
+| 9 | יִשְׁמֹר | | | | | |
+| 10 | תַּשְׁמֵרְנָה | | | | | |
+| 11 | אֶפָּקֵד | | | | | |
+| 12 | יָכְתַב | | | | | |
+| 13 | וַנִּשְׁמֹר | | | | | |
+| 14 | וַיַּפְקֵד | | | | | |
+| 15 | וַיִּכָּתֵב | | | | | |
+| 16 | וַיָּכְתַב | | | | | |
+| 17 | שִׁמְרוּ | | | | | |
+| 18 | הַקְטֵל | | | | | |
+| 19 | הִפָּקֵד | | | | | |
+| 20 | הָשְׁמַר | | | | | |
+| 21 | קָטֹל | | | | | |
+| 22 | הַשְׁמֵר | | | | | |
+| 23 | נִקְטָל | | | | | |
+| 24 | מָקְטָל | | | | | |
 
 ---
 
 ## Answer Key
 
-| # | Hebrew | Stem | Conjugation | PGN | Root | Translation |
+| # | Hebrew | Stem | Conjugation | PGN | Root | Gloss |
 |---|---|---|---|---|---|---|
-| 1 | קָטַל | **Qal** | Perfect | 3ms | קטל | he killed |
-| 2 | הִקְטִיל | **Hiphil** | Perfect | 3ms | קטל | he caused to kill |
-| 3 | נִקְטַל | **Niphal** | Perfect | 3ms | קטל | he was killed |
-| 4 | הָקְטַל | **Hophal** | Perfect | 3ms | קטל | he was caused to be killed |
-| 5 | שָׁמַר | **Qal** | Perfect | 3ms | שׁמר | he kept / he guarded |
-| 6 | נִשְׁמַר | **Niphal** | Perfect | 3ms | שׁמר | he was kept / he was guarded |
-| 7 | יִשְׁמֹר | **Qal** | Imperfect | 3ms | שׁמר | he will keep / he keeps |
-| 8 | יַשְׁמִיר | **Hiphil** | Imperfect | 3ms | שׁמר | he will cause to keep |
-| 9 | יִשָּׁמֵר | **Niphal** | Imperfect | 3ms | שׁמר | he will be kept / he guards himself |
-| 10 | יָשְׁמַר | **Hophal** | Imperfect | 3ms | שׁמר | he will be made to keep / he will be guarded |
-| 11 | וַיִּשְׁמֹר | **Qal** | Wayyiqtol | 3ms | שׁמר | and he kept / and he guarded |
-| 12 | וַיַּשְׁמֵר | **Hiphil** | Wayyiqtol | 3ms | שׁמר | and he caused to keep |
-| 13 | וַיִּשָּׁמֵר | **Niphal** | Wayyiqtol | 3ms | שׁמר | and he was kept / and he kept himself |
-| 14 | וַיָּשְׁמַר | **Hophal** | Wayyiqtol | 3ms | שׁמר | and he was made to keep / and he was guarded |
-| 15 | שְׁמֹר | **Qal** | Imperative | 2ms | שׁמר | Keep! / Guard! |
-| 16 | הַשְׁמֵר | **Hiphil** | Imperative | 2ms | שׁמר | Cause to keep! *(same spelling as #20)* |
-| 17 | הִשָּׁמֵר | **Niphal** | Imperative | 2ms | שׁמר | Guard yourself! / Be on guard! |
-| 18 | הָשְׁמֵר | **Hophal** | Infinitive Construct | — | שׁמר | to be made to keep / to be guarded *(Hophal has no Imperative; Inf. Construct used instead)* |
-| 19 | שָׁמוֹר | **Qal** | Infinitive Absolute | — | שׁמר | keeping / indeed keeping |
-| 20 | הַשְׁמֵר | **Hiphil** | Infinitive Absolute | — | שׁמר | causing to keep *(same spelling as #16: Hiphil Imp. 2ms and Inf. Abs. are identical in strong roots)* |
-| 21 | הִשָּׁמֵר | **Niphal** | Infinitive Absolute | — | שׁמר | being kept / indeed guarding oneself |
-| 22 | שֹׁמֵר | **Qal** | Participle | ms | שׁמר | one who keeps / guardian |
-| 23 | מַשְׁמִיר | **Hiphil** | Participle | ms | שׁמר | one who causes to keep |
-| 24 | הָשְׁמָר | **Hophal** | Participle | ms | שׁמר | one who is being kept / one who is guarded |
+| 1 | שָׁמַר | **Qal** | Perfect | 3ms | שׁמר | he kept / he guarded |
+| 2 | נִקְטַל | **Niphal** | Perfect | 3ms | קטל | he was killed |
+| 3 | הִפְקִיד | **Hiphil** | Perfect | 3ms | פקד | he appointed / he entrusted |
+| 4 | הָכְתַב | **Hophal** | Perfect | 3ms | כתב | it was caused to be written |
+| 5 | כָּתַבְנוּ | **Qal** | Perfect | 1cp | כתב | we wrote |
+| 6 | הָפְקְדָה | **Hophal** | Perfect | 3fs | פקד | she was appointed (by someone) |
+| 7 | הִכְתִּיבָה | **Hiphil** | Perfect | 3fs | כתב | she caused to write |
+| 8 | נִפְקְדוּ | **Niphal** | Perfect | 3cp | פקד | they were appointed / mustered |
+| 9 | יִשְׁמֹר | **Qal** | Imperfect | 3ms | שׁמר | he will keep / he keeps |
+| 10 | תַּשְׁמֵרְנָה | **Hiphil** | Imperfect | 3fp | שׁמר | they (f) will cause to keep |
+| 11 | אֶפָּקֵד | **Niphal** | Imperfect | 1cs | פקד | I will be appointed / I will be mustered |
+| 12 | יָכְתַב | **Hophal** | Imperfect | 3ms | כתב | it will be caused to be written |
+| 13 | וַנִּשְׁמֹר | **Qal** | Wayyiqtol | 1cp | שׁמר | and we kept / and we guarded |
+| 14 | וַיַּפְקֵד | **Hiphil** | Wayyiqtol | 3ms | פקד | and he appointed / and he entrusted |
+| 15 | וַיִּכָּתֵב | **Niphal** | Wayyiqtol | 3ms | כתב | and it was written / and he was enrolled |
+| 16 | וַיָּכְתַב | **Hophal** | Wayyiqtol | 3ms | כתב | and it was caused to be written |
+| 17 | שִׁמְרוּ | **Qal** | Imperative | 2mp | שׁמר | Keep! Guard! (plural) |
+| 18 | הַקְטֵל | **Hiphil** | Imperative | 2ms | קטל | Cause to kill! *(same form as Hiphil Inf. Abs. in strong roots)* |
+| 19 | הִפָּקֵד | **Niphal** | Imperative | 2ms | פקד | Be appointed! / Report for duty! |
+| 20 | הָשְׁמַר | **Hophal** | Imperative | 2ms | שׁמר | Be made to keep! *(same form as Hophal Perfect 3ms — context distinguishes)* |
+| 21 | קָטֹל | **Qal** | Inf. Absolute | — | קטל | killing (used with finite verb to intensify) |
+| 22 | הַשְׁמֵר | **Hiphil** | Inf. Absolute | — | שׁמר | causing to keep *(same form as Hiphil Imper 2ms — context distinguishes)* |
+| 23 | נִקְטָל | **Niphal** | Participle | ms | קטל | being killed / one who is killed |
+| 24 | מָקְטָל | **Hophal** | Participle | ms | קטל | being made to kill / one being caused to kill |
 
-### Stem Identification Summary
+### Stem Distribution
+
+| Stem | Items | Count |
+|---|---|---|
+| Qal | 1, 5, 9, 13, 17, 21 | 6 |
+| Niphal | 2, 8, 11, 15, 19, 23 | 6 |
+| Hiphil | 3, 7, 10, 14, 18, 22 | 6 |
+| Hophal | 4, 6, 12, 16, 20, 24 | 6 |
+
+### Key Stem Identifiers
 
 | Stem | Identifying Features |
 |---|---|
-| **Qal** | No prefix vowel change; base root vowels (qamets-patach for Perfect; hiriq-holem for Imperfect) |
-| **Niphal** | Prefix נִ in Perfect; assimilates in Imperfect/Wayyiqtol (יִשָּׁ); הִ prefix with dagesh in Imperative/Inf. Abs. |
-| **Hiphil** | Prefix הִ in Perfect; a-class vowel under yiqtol prefix + chiriq in 2nd root position; הַ in Imperative/Inf. Abs. |
-| **Hophal** | Prefix הָ with qamets-hatuf (o-class) in Perfect; o-class prefix vowel (יָ) in Imperfect; o-class prefix הָ in Inf. Construct/Participle |
+| **Qal** | No prefix vowel change; base root vowels — Perfect qamets–patach; Imperfect hireq–holem; Participle holem–tsere (ms) |
+| **Niphal** | נִ prefix in Perfect; dagesh-forte in R1 in Imperfect/Wayyiqtol (nun assimilates); הִ + dagesh in Imperative/Inf. Abs.; נִ + qamets in Participle |
+| **Hiphil** | הִ prefix in Perfect; a-class prefix vowel + chiriq-yod in 2nd position in Imperfect; הַ in Imperative/Inf. Abs. (same form!); מַ + chiriq-yod in Participle |
+| **Hophal** | הָ prefix (Qamets Hatuf, o-class) in Perfect/Inf. Construct/Imperative; יָ prefix (o-class) in Imperfect/Wayyiqtol; מָ prefix in Participle |

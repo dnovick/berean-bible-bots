@@ -4,7 +4,7 @@
 
 *BBH Chapter 28 · Hophal Strong Verbs*
 
-A 24-item identification drill mixing Qal, Niphal, Hiphil, and Hophal forms of strong roots (6 per stem), interleaved. Uses roots קטל (paradigm), שׁמר, כבד, and שׁמד. Students identify the stem, parse the conjugation and PGN, and translate each form. Items 16 and 20 share the identical spelling הַשְׁמֵר (Hiphil Imperative 2ms = Hiphil Inf. Absolute), reinforcing the ambiguity unique to strong roots. The Hophal has no Imperative; item 18 uses the Hophal Infinitive Construct in its place.
+A 24-item identification drill mixing Qal, Niphal, Hiphil, and Hophal forms of strong roots (6 per stem), interleaved. Uses roots שׁמר (keep/guard), קטל (kill), כתב (write), and פקד (appoint/muster). Students select the stem, conjugation, and PGN from dropdowns and enter the root and gloss. PGNs include 3ms, 3fs, 3cp, 3fp, 1cs, 1cp, 2ms, and 2mp, giving broad coverage. Each of the four stems is represented in every major conjugation type (Perfect, Imperfect, Wayyiqtol, Imperative, Inf. Absolute, Participle). Includes a Hophal Imperative (item 20).
 
 | File | Format |
 |---|---|
