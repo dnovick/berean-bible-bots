@@ -3,30 +3,33 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chapter 28 — Hiphil–Hophal Contrast Drill</title>
+<title>Chapter 28 — Hiphil/Hophal Contrast Drill</title>
 <style>
-  body { font-family: Georgia, serif; max-width: 900px; margin: 2em auto; padding: 0 1.5em; color: #222; }
+  body { font-family: Georgia, serif; max-width: 1060px; margin: 2em auto; padding: 0 1.5em; color: #222; }
   h1 { font-size: 1.4em; border-bottom: 2px solid #444; padding-bottom: .4em; }
   h2 { font-size: 1.1em; margin-top: 2em; color: #444; }
   .subtitle { color: #666; font-style: italic; margin-top: -.3em; }
   table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .9em; }
-  td { border: 1px solid #ccc; padding: .4em .7em; font-size: .9em; vertical-align: top; }
-  tr:nth-child(even) td { background: #f7f7f7; }
-  .heb { font-size: 1.25em; direction: rtl; unicode-bidi: embed; }
-  input.parse-field { width: 100%; box-sizing: border-box; font-size: .9em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
-  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; }
+  th { background: #2a4a6e; color: #fff; padding: .5em .7em; text-align: left; font-size: .85em; }
+  td { border: 1px solid #ccc; padding: .35em .6em; font-size: .88em; vertical-align: middle; }
+  tr.q-row:nth-child(4n+1) td,
+  tr.q-row:nth-child(4n+2) td { background: #f7f7f7; }
+  .heb { font-size: 1.3em; direction: rtl; unicode-bidi: embed; font-family: 'SBL Hebrew', 'Ezra SIL', serif; }
+  select.parse-field { font-size: .84em; padding: 2px 3px; border: 1px solid #aaa; border-radius: 3px; width: 100%; box-sizing: border-box; }
+  input.parse-field { width: 100%; box-sizing: border-box; font-size: .88em; padding: 3px 5px; border: 1px solid #aaa; border-radius: 3px; }
+  .answer-row td { background: #f0faf0 !important; color: #2a6e2a; font-size: .85em; font-style: italic; vertical-align: middle; }
   .answer-row { display: none; }
-  button.reveal-btn { font-size: .8em; padding: 2px 8px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
+  button.reveal-btn { font-size: .78em; padding: 2px 7px; cursor: pointer; border: 1px solid #888; border-radius: 3px; background: #fff; white-space: nowrap; }
   .controls { margin: 1em 0; display: flex; gap: .6em; flex-wrap: wrap; }
   .controls button { padding: .4em .9em; font-size: .9em; cursor: pointer; border: 1px solid #555; border-radius: 4px; background: #f0f0f0; }
   .controls button:hover { background: #ddd; }
-  .note { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
-  .discussion { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .9em; }
+  .note { background: #fffbe6; border-left: 4px solid #d4a017; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
+  .discussion { background: #f0f4ff; border-left: 4px solid #2a4a6e; padding: .6em 1em; margin: 1em 0; font-size: .88em; }
   ol.disc { margin: .4em 0 0 1.2em; padding: 0; }
-  ol.disc li { margin-bottom: .4em; }
+  ol.disc li { margin-bottom: .5em; }
   @media print {
     button, .controls { display: none !important; }
+    select.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; -webkit-appearance: none; appearance: none; }
     input.parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
     .answer-row { display: table-row !important; }
   }
@@ -34,11 +37,18 @@
 </head>
 <body>
 
-
-<h1>Chapter 28 — Hiphil–Hophal Contrast Drill</h1>
+<h1>Chapter 28 — Hiphil/Hophal Contrast Drill</h1>
 <p class="subtitle">BBH Chapter 28 · Hophal Strong Verbs</p>
 
-<p>The Hophal is the <strong>passive of the Hiphil</strong>. Every Hiphil transitive action has a Hophal passive counterpart. For each item below: (1) <strong>identify the stem</strong> (Hiphil or Hophal), (2) <strong>parse</strong> the conjugation and PGN, (3) <strong>translate</strong> in context, and (4) <strong>explain the relationship</strong> between the pair. Click <strong>▶ Answer</strong> to check.</p>
+<p>Each row gives a Hebrew verb form from the biblical text and its scripture reference.
+For each item: select the <strong>stem</strong> (Hiphil or Hophal), the <strong>conjugation</strong>, the <strong>person–gender–number</strong>, and type a <strong>translation</strong>.
+Click <strong>▶ Answer</strong> to check; the answer row aligns under each question column.</p>
+
+<div class="note">
+  <strong>Diagnostic clues:</strong>
+  <strong>Hiphil</strong> — prefix <span class="heb">הִ</span> (perfect); prefix <span class="heb">הַ</span> / <span class="heb">יַ</span> (imperfect/wayyiqtol/imperative/infinitive); causative force; typically active.<br>
+  <strong>Hophal</strong> — prefix vowel <em>qibbuts</em> (<span class="heb">קֻ</span>) in strong roots; <em>shureq</em> (<span class="heb">וּ</span>) in biconsonantal/I-yod roots; passive of the corresponding Hiphil.
+</div>
 
 <div class="controls">
   <button onclick="showAll()">Show All Answers</button>
@@ -46,261 +56,440 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<!-- PART A -->
-<h2>Part A — Motion/Transfer Roots</h2>
-<p>These roots have Qal meanings describing motion or placement. The Hiphil causes motion; the Hophal passivizes it. All items in this part are <strong>Hophal</strong> — translate and explain what Hiphil action is being passivized.</p>
-
 <table>
-  <tr>
-    <th>#</th><th>Root</th><th>Hiphil Meaning</th><th>Hophal Form</th><th>Ref</th>
-    <th>Translation</th><th>Stem / Conj.</th><th></th>
-  </tr>
-  <tr>
+  <thead>
+    <tr>
+      <th style="width:3%">#</th>
+      <th style="width:13%">Hebrew Form</th>
+      <th style="width:7%">Ref</th>
+      <th style="width:10%">Stem</th>
+      <th style="width:16%">Conjugation</th>
+      <th style="width:8%">PGN</th>
+      <th style="width:35%">Translation</th>
+      <th style="width:8%"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <!-- 1 -->
+  <tr class="q-row">
     <td>1</td>
-    <td><span class="heb">בּוֹא</span></td>
-    <td>to bring</td>
-    <td><span class="heb">הוּבְאוּ</span> (Qatal 3cp)</td>
-    <td>Gen 43:18</td>
-    <td><input class="parse-field" id="a1t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a1s" placeholder="stem / conjugation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r1"><td><strong>they were brought in</strong></td><td><em>Hophal Qatal 3cp</em> — The brothers were passivized by the Hiphil "to bring"; Joseph's steward brought them in; Qal "to come" → Hiphil "to bring" → Hophal "to be brought"</td><td></td></tr>
-  <tr>
-    <td>2</td>
-    <td><span class="heb">יָרַד</span></td>
-    <td>to bring down</td>
-    <td><span class="heb">הוּרַד</span> (Qatal 3ms)</td>
-    <td>Gen 39:1</td>
-    <td><input class="parse-field" id="a2t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a2s" placeholder="stem / conjugation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r2"><td><strong>he was brought down (to Egypt)</strong></td><td><em>Hophal Qatal 3ms</em> — Joseph was caused to descend; Qal "to go down" → Hiphil "to bring down" → Hophal "to be brought down"</td><td></td></tr>
-  <tr>
-    <td>3</td>
-    <td><span class="heb">שׁוּב</span></td>
-    <td>to bring back</td>
-    <td><span class="heb">הוּשַׁב</span> (Qatal 3ms)</td>
-    <td>Gen 42:28</td>
-    <td><input class="parse-field" id="a3t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a3s" placeholder="stem / conjugation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r3"><td><strong>it was returned (into my sack)</strong></td><td><em>Hophal Qatal 3ms</em> — The silver was caused to return; Qal "to return" → Hiphil "to bring back" → Hophal "to be returned"</td><td></td></tr>
-  <tr>
-    <td>4</td>
-    <td><span class="heb">קוּם</span></td>
-    <td>to set up / erect</td>
-    <td><span class="heb">הוּקַם</span> (Qatal 3ms)</td>
-    <td>Exo 40:17</td>
-    <td><input class="parse-field" id="a4t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a4s" placeholder="stem / conjugation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r4"><td><strong>it was set up / erected</strong></td><td><em>Hophal Qatal 3ms</em> — The tabernacle was caused to stand; Qal "to stand, rise" → Hiphil "to erect/set up" → Hophal "to be set up"</td><td></td></tr>
-  <tr>
-    <td>5</td>
-    <td><span class="heb">שִׂים</span></td>
-    <td>to put / set</td>
-    <td><span class="heb">יּוּשַׂם</span> (Wayyiqtol 3ms)</td>
-    <td>Gen 24:33</td>
-    <td><input class="parse-field" id="a5t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a5s" placeholder="stem / conjugation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r5"><td><strong>and it was set (before him) / food was placed before him</strong></td><td><em>Hophal Wayyiqtol 3ms</em> — The food was caused to be placed; Hiphil "to put/set" → Hophal "to be put/set"</td><td></td></tr>
-  <tr>
-    <td>6</td>
-    <td><span class="heb">סוּר</span></td>
-    <td>to remove</td>
-    <td><span class="heb">הוּסַר</span> (Qatal 3ms)</td>
-    <td>Lev 4:31</td>
-    <td><input class="parse-field" id="a6t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a6s" placeholder="stem / conjugation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r6"><td><strong>it was removed</strong></td><td><em>Hophal Qatal 3ms</em> — The fat was caused to depart from the sacrifice; Qal "to turn aside, depart" → Hiphil "to remove" → Hophal "to be removed"</td><td></td></tr>
-  <tr>
-    <td>7</td>
-    <td><span class="heb">שׁוּב</span></td>
-    <td>to bring back</td>
-    <td><span class="heb">יוּשַׁב</span> (Wayyiqtol 3ms)</td>
-    <td>Exo 10:8</td>
-    <td><input class="parse-field" id="a7t" placeholder="translation…"></td>
-    <td><input class="parse-field" id="a7s" placeholder="stem / conjugation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r7"><td><strong>and they were brought back (to Pharaoh)</strong></td><td><em>Hophal Wayyiqtol 3ms</em> — Moses and Aaron were caused to return; same root as #3 but persons rather than an object</td><td></td></tr>
-</table>
-
-<!-- PART B -->
-<h2>Part B — Death Formula (<span class="heb">מוּת</span>)</h2>
-<p>The root <span class="heb">מוּת</span> "to die" appears in both stems with a perfect morphological contrast. Identify the stem and translate each form.</p>
-
-<div class="note">
-  <strong>Key vowel pattern:</strong><br>
-  Hiphil Perfect/Inf.: <span class="heb">הֵ</span> (tsere under ה) — e.g. <span class="heb">הֵמִית</span><br>
-  Hophal Qatal: <span class="heb">הוּ</span> (shureq under ה) — e.g. <span class="heb">הוּמַת</span>
-</div>
-
-<table>
-  <tr>
-    <th>#</th><th>Root</th><th>Form</th><th>Ref</th>
-    <th>Stem</th><th>Conjugation</th><th>Translation</th><th></th>
-  </tr>
-  <tr>
-    <td>8</td>
-    <td><span class="heb">מוּת</span></td>
-    <td><span class="heb">הֵמִית</span></td>
-    <td>Gen 18:25</td>
-    <td><input class="parse-field" id="b8s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="b8c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="b8t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r8"><td><strong>Hiphil</strong></td><td></td><td>Inf. Construct — <strong>to put to death / to kill</strong> — The vowel <span class="heb">הֵ</span> (tsere) identifies this as Hiphil; "Far be it from you to put the righteous to death"</td><td></td></tr>
-  <tr>
-    <td>9</td>
-    <td><span class="heb">מוּת</span></td>
-    <td><span class="heb">יוּמַת</span></td>
-    <td>Gen 26:11</td>
-    <td><input class="parse-field" id="b9s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="b9c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="b9t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r9"><td><strong>Hophal</strong></td><td></td><td>Yiqtol 3ms — <strong>he shall be put to death</strong> — The shureq (וּ) in the Yiqtol prefix marks the Hophal; the standard capital-penalty legal formula</td><td></td></tr>
-  <tr>
-    <td>10</td>
-    <td><span class="heb">מוּת</span></td>
-    <td><span class="heb">הָמִית</span></td>
-    <td>Gen 37:18</td>
-    <td><input class="parse-field" id="b10s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="b10c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="b10t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r10"><td><strong>Hiphil</strong></td><td></td><td>Inf. Construct — <strong>to kill him / to put him to death</strong> — Joseph's brothers conspired to kill him; same Hiphil inf. construct form as #8 with a different vowel environment</td><td></td></tr>
-  <tr>
-    <td>11</td>
-    <td><span class="heb">מוּת</span></td>
-    <td><span class="heb">הוּמַת</span></td>
-    <td>2 Sam 21:9</td>
-    <td><input class="parse-field" id="b11s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="b11c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="b11t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r11"><td><strong>Hophal</strong></td><td></td><td>Qatal 3ms — <strong>he was put to death</strong> — The vowel <span class="heb">הוּ</span> identifies Hophal Qatal 3ms; Saul's sons were executed before the LORD</td><td></td></tr>
-</table>
-
-<!-- PART C -->
-<h2>Part C — Speech Reporting Root (<span class="heb">נָגַד</span>)</h2>
-<p>This root illustrates how the Hiphil and Hophal serve different narrative roles. The Hiphil has a <em>person</em> as subject; the Hophal has <em>information</em> as subject. Identify which is which and translate.</p>
-
-<table>
-  <tr>
-    <th>#</th><th>Root</th><th>Form</th><th>Ref</th>
-    <th>Stem</th><th>Conjugation</th><th>Translation</th><th></th>
-  </tr>
-  <tr>
-    <td>12</td>
-    <td><span class="heb">נָגַד</span></td>
-    <td><span class="heb">יַּגֵּד</span></td>
-    <td>Gen 9:22</td>
-    <td><input class="parse-field" id="c12s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="c12c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="c12t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r12"><td><strong>Hiphil</strong></td><td></td><td>Wayyiqtol 3ms — <strong>and he told (his brothers)</strong> — Ham is the active subject; a person reports; the Hiphil "to tell" has a person initiating the speech</td><td></td></tr>
-  <tr>
-    <td>13</td>
-    <td><span class="heb">נָגַד</span></td>
-    <td><span class="heb">יֻּגַּד</span></td>
-    <td>Gen 22:20</td>
-    <td><input class="parse-field" id="c13s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="c13c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="c13t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r13"><td><strong>Hophal</strong></td><td></td><td>Wayyiqtol 3ms — <strong>and it was told to Abraham</strong> — Information is the grammatical subject; the Hophal shifts focus to what was reported rather than who reported it</td><td></td></tr>
-  <tr>
-    <td>14</td>
-    <td><span class="heb">נָגַד</span></td>
     <td><span class="heb">הִגִּיד</span></td>
     <td>Gen 3:11</td>
-    <td><input class="parse-field" id="c14s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="c14c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="c14t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a1')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r14"><td><strong>Hiphil</strong></td><td></td><td>Qatal 3ms — <strong>who told you (that you were naked)?</strong> — God asks Adam; the subject is a person (someone told Adam); Hiphil active</td><td></td></tr>
-  <tr>
-    <td>15</td>
-    <td><span class="heb">נָגַד</span></td>
-    <td><span class="heb">יֻּגַּד</span></td>
-    <td>Exo 14:5</td>
-    <td><input class="parse-field" id="c15s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="c15c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="c15t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+  <tr class="answer-row" id="a1">
+    <td></td><td class="heb">נָגַד</td><td></td>
+    <td>Hiphil</td><td>Perfect</td><td>3ms</td>
+    <td>he told you / who told you?</td><td></td>
   </tr>
-  <tr class="answer-row" id="r15"><td><strong>Hophal</strong></td><td></td><td>Wayyiqtol 3ms — <strong>and it was told to the king of Egypt</strong> — The news (information) is the subject; same Hophal form as #13; the reporter is left unnamed</td><td></td></tr>
-</table>
 
-<!-- PART D -->
-<h2>Part D — Roots with No Common Qal (<span class="heb">נָכָה</span>)</h2>
-<p>This root has no standard Qal form in Biblical Hebrew. Both the Hiphil and Hophal serve as base forms. Identify the stem and translate.</p>
-
-<table>
-  <tr>
-    <th>#</th><th>Root</th><th>Form</th><th>Ref</th>
-    <th>Stem</th><th>Conjugation</th><th>Translation</th><th></th>
-  </tr>
-  <tr>
-    <td>16</td>
-    <td><span class="heb">נָכָה</span></td>
+  <!-- 2 -->
+  <tr class="q-row">
+    <td>2</td>
     <td><span class="heb">הַכּוֹת</span></td>
     <td>Gen 4:15</td>
-    <td><input class="parse-field" id="d16s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="d16c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="d16t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a2')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r16"><td><strong>Hiphil</strong></td><td></td><td>Inf. Construct — <strong>to strike / smite</strong> — Lest anyone who found Cain should strike him; Hiphil is the standard active form of this root</td><td></td></tr>
-  <tr>
-    <td>17</td>
-    <td><span class="heb">נָכָה</span></td>
-    <td><span class="heb">יֻּכּוּ</span></td>
+  <tr class="answer-row" id="a2">
+    <td></td><td class="heb">נָכָה</td><td></td>
+    <td>Hiphil</td><td>Infinitive Construct</td><td>—</td>
+    <td>to strike / lest anyone strike him</td><td></td>
+  </tr>
+
+  <!-- 3 -->
+  <tr class="q-row">
+    <td>3</td>
+    <td><span class="heb">הוּחַל</span></td>
+    <td>Gen 4:26</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a3')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a3">
+    <td></td><td class="heb">חָלַל</td><td></td>
+    <td>Hophal</td><td>Perfect</td><td>3ms</td>
+    <td>it was begun (to call on the name of the LORD)</td><td></td>
+  </tr>
+
+  <!-- 4 -->
+  <tr class="q-row">
+    <td>4</td>
+    <td><span class="heb">וַיַּגֵּד</span></td>
+    <td>Gen 9:22</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a4">
+    <td></td><td class="heb">נָגַד</td><td></td>
+    <td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td>
+    <td>and he told his brothers</td><td></td>
+  </tr>
+
+  <!-- 5 -->
+  <tr class="q-row">
+    <td>5</td>
+    <td><span class="heb">הָמִית</span></td>
+    <td>Gen 18:25</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a5">
+    <td></td><td class="heb">מוּת</td><td></td>
+    <td>Hiphil</td><td>Infinitive Construct</td><td>—</td>
+    <td>to put to death / to kill</td><td></td>
+  </tr>
+
+  <!-- 6 -->
+  <tr class="q-row">
+    <td>6</td>
+    <td><span class="heb">וַיַּחֲזִיקוּ</span></td>
+    <td>Gen 19:16</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a6">
+    <td></td><td class="heb">חָזַק</td><td></td>
+    <td>Hiphil</td><td>Wayyiqtol</td><td>3mp</td>
+    <td>and they seized / took hold of (his hand)</td><td></td>
+  </tr>
+
+  <!-- 7 -->
+  <tr class="q-row">
+    <td>7</td>
+    <td><span class="heb">וַיֻּגַּד</span></td>
+    <td>Gen 22:20</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a7">
+    <td></td><td class="heb">נָגַד</td><td></td>
+    <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
+    <td>and it was told to Abraham</td><td></td>
+  </tr>
+
+  <!-- 8 -->
+  <tr class="q-row">
+    <td>8</td>
+    <td><span class="heb">וַיּוּשַׂם</span></td>
+    <td>Gen 24:33</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a8">
+    <td></td><td class="heb">שִׂים</td><td></td>
+    <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
+    <td>and food was set before him</td><td></td>
+  </tr>
+
+  <!-- 9 -->
+  <tr class="q-row">
+    <td>9</td>
+    <td><span class="heb">יוּמַת</span></td>
+    <td>Gen 26:11</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a9">
+    <td></td><td class="heb">מוּת</td><td></td>
+    <td>Hophal</td><td>Imperfect</td><td>3ms</td>
+    <td>he shall be put to death</td><td></td>
+  </tr>
+
+  <!-- 10 -->
+  <tr class="q-row">
+    <td>10</td>
+    <td><span class="heb">הַשְׁלִיכוּ</span></td>
+    <td>Gen 37:22</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a10">
+    <td></td><td class="heb">שָׁלַךְ</td><td></td>
+    <td>Hiphil</td><td>Imperative</td><td>2mp</td>
+    <td>throw him! (into this pit)</td><td></td>
+  </tr>
+
+  <!-- 11 -->
+  <tr class="q-row">
+    <td>11</td>
+    <td><span class="heb">וַיַּשְׁלִכוּ</span></td>
+    <td>Gen 37:24</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a11">
+    <td></td><td class="heb">שָׁלַךְ</td><td></td>
+    <td>Hiphil</td><td>Wayyiqtol</td><td>3mp</td>
+    <td>and they threw him (into the pit)</td><td></td>
+  </tr>
+
+  <!-- 12 -->
+  <tr class="q-row">
+    <td>12</td>
+    <td><span class="heb">הוּרַד</span></td>
+    <td>Gen 39:1</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a12">
+    <td></td><td class="heb">יָרַד</td><td></td>
+    <td>Hophal</td><td>Perfect</td><td>3ms</td>
+    <td>he was brought down to Egypt</td><td></td>
+  </tr>
+
+  <!-- 13 -->
+  <tr class="q-row">
+    <td>13</td>
+    <td><span class="heb">הוּשַׁב</span></td>
+    <td>Gen 42:28</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a13">
+    <td></td><td class="heb">שׁוּב</td><td></td>
+    <td>Hophal</td><td>Perfect</td><td>3ms</td>
+    <td>it was returned (into my sack)</td><td></td>
+  </tr>
+
+  <!-- 14 -->
+  <tr class="q-row">
+    <td>14</td>
+    <td><span class="heb">הוּבְאוּ</span></td>
+    <td>Gen 43:18</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a14">
+    <td></td><td class="heb">בּוֹא</td><td></td>
+    <td>Hophal</td><td>Perfect</td><td>3cp</td>
+    <td>we were brought in (to Joseph's house)</td><td></td>
+  </tr>
+
+  <!-- 15 -->
+  <tr class="q-row">
+    <td>15</td>
+    <td><span class="heb">וַיַּחֲזֵק</span></td>
+    <td>Exo 4:4</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a15">
+    <td></td><td class="heb">חָזַק</td><td></td>
+    <td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td>
+    <td>and he grasped it (by the tail)</td><td></td>
+  </tr>
+
+  <!-- 16 -->
+  <tr class="q-row">
+    <td>16</td>
+    <td><span class="heb">וַיֻּכּוּ</span></td>
     <td>Exo 5:14</td>
-    <td><input class="parse-field" id="d17s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="d17c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="d17t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a16')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r17"><td><strong>Hophal</strong></td><td></td><td>Wayyiqtol 3mp — <strong>and they were beaten</strong> — The Israelite overseers received the blows; Hophal passivizes the Hiphil "to strike"</td><td></td></tr>
-  <tr>
-    <td>18</td>
-    <td><span class="heb">נָכָה</span></td>
+  <tr class="answer-row" id="a16">
+    <td></td><td class="heb">נָכָה</td><td></td>
+    <td>Hophal</td><td>Wayyiqtol</td><td>3mp</td>
+    <td>and the Israelite overseers were beaten</td><td></td>
+  </tr>
+
+  <!-- 17 -->
+  <tr class="q-row">
+    <td>17</td>
     <td><span class="heb">מֻכִּים</span></td>
     <td>Exo 5:16</td>
-    <td><input class="parse-field" id="d18s" placeholder="stem…"></td>
-    <td><input class="parse-field" id="d18c" placeholder="conjugation…"></td>
-    <td><input class="parse-field" id="d18t" placeholder="translation…"></td>
-    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a17')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="r18"><td><strong>Hophal</strong></td><td></td><td>Participle mp — <strong>being beaten / they are being beaten</strong> — Israel's servants are currently receiving the blows; the mְ prefix and ּ pattern mark the Hophal participle</td><td></td></tr>
+  <tr class="answer-row" id="a17">
+    <td></td><td class="heb">נָכָה</td><td></td>
+    <td>Hophal</td><td>Participle</td><td>mp</td>
+    <td>being beaten / your servants are beaten</td><td></td>
+  </tr>
+
+  <!-- 18 -->
+  <tr class="q-row">
+    <td>18</td>
+    <td><span class="heb">וַיּוּשַׁב</span></td>
+    <td>Exo 10:8</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a18">
+    <td></td><td class="heb">שׁוּב</td><td></td>
+    <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
+    <td>and Moses and Aaron were brought back to Pharaoh</td><td></td>
+  </tr>
+
+  <!-- 19 -->
+  <tr class="q-row">
+    <td>19</td>
+    <td><span class="heb">וַיֻּגַּד</span></td>
+    <td>Exo 14:5</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a19')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a19">
+    <td></td><td class="heb">נָגַד</td><td></td>
+    <td>Hophal</td><td>Wayyiqtol</td><td>3ms</td>
+    <td>and it was told to the king of Egypt</td><td></td>
+  </tr>
+
+  <!-- 20 -->
+  <tr class="q-row">
+    <td>20</td>
+    <td><span class="heb">הַכֵּה</span></td>
+    <td>Exo 17:6</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a20')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a20">
+    <td></td><td class="heb">נָכָה</td><td></td>
+    <td>Hiphil</td><td>Imperative</td><td>2ms</td>
+    <td>strike! (the rock)</td><td></td>
+  </tr>
+
+  <!-- 21 -->
+  <tr class="q-row">
+    <td>21</td>
+    <td><span class="heb">יוּמַת</span></td>
+    <td>Exo 19:12</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a21')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a21">
+    <td></td><td class="heb">מוּת</td><td></td>
+    <td>Hophal</td><td>Imperfect</td><td>3ms</td>
+    <td>he shall be put to death (Sinai boundary law)</td><td></td>
+  </tr>
+
+  <!-- 22 -->
+  <tr class="q-row">
+    <td>22</td>
+    <td><span class="heb">וַיַּשְׁלֵךְ</span></td>
+    <td>Exo 32:19</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a22')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a22">
+    <td></td><td class="heb">שָׁלַךְ</td><td></td>
+    <td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td>
+    <td>and he threw them (the tablets) from his hands</td><td></td>
+  </tr>
+
+  <!-- 23 -->
+  <tr class="q-row">
+    <td>23</td>
+    <td><span class="heb">הוּקַם</span></td>
+    <td>Exo 40:17</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a23')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a23">
+    <td></td><td class="heb">קוּם</td><td></td>
+    <td>Hophal</td><td>Perfect</td><td>3ms</td>
+    <td>the tabernacle was set up / erected</td><td></td>
+  </tr>
+
+  <!-- 24 -->
+  <tr class="q-row">
+    <td>24</td>
+    <td><span class="heb">הוּסַר</span></td>
+    <td>Lev 4:31</td>
+    <td><select class="parse-field"><option value="">—</option><option>Hiphil</option><option>Hophal</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Infinitive Construct</option><option>Infinitive Absolute</option><option>Participle</option></select></td>
+    <td><select class="parse-field"><option value="">—</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+    <td><input class="parse-field" type="text" placeholder="translation…"></td>
+    <td><button class="reveal-btn" onclick="toggle('a24')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a24">
+    <td></td><td class="heb">סוּר</td><td></td>
+    <td>Hophal</td><td>Perfect</td><td>3ms</td>
+    <td>it was removed (from the sacrifice)</td><td></td>
+  </tr>
+
+  </tbody>
 </table>
 
 <h2>Discussion Questions</h2>
 <div class="discussion">
   <ol class="disc">
-    <li>In Part C, items 12 and 14 are Hiphil (active: someone tells/reports), while items 13 and 15 are Hophal (passive: something is told). Notice that in 13 and 15 the grammatical subject is <em>information</em> ("it was told"). What does this show about when Hebrew uses the Hiphil vs. Hophal of <span class="heb">נָגַד</span> — is the choice driven by the <em>type of subject</em> or by something else?</li>
-    <li>In Part B, items 8–11: write out the identifying vowel patterns for Hiphil Perfect/Inf. vs. Hophal Qatal 3ms of <span class="heb">מוּת</span>. Why does the Hophal of a biconsonantal root like <span class="heb">מוּת</span> use the vowel וּ (shureq/ḥolem-waw) rather than the standard קֻּ pattern seen in strong Hophal forms?</li>
-    <li>Compare items 3 and 7 (both from root <span class="heb">שׁוּב</span>). Item 3 (Gen 42:28) refers to silver being returned in a sack; item 7 (Exo 10:8) refers to Moses and Aaron being brought back to Pharaoh. Both are Hophal. Translate each and describe what is the same and what is different about the "returning" action in each context.</li>
-    <li>The Hophal and Niphal both express passivity in Hebrew. For the roots in Part A — <span class="heb">בּוֹא</span>, <span class="heb">יָרַד</span>, <span class="heb">שׁוּב</span> — consider whether a Niphal passive would be grammatically possible. What semantic difference does using the Hophal (rather than the Niphal) signal? Which stem emphasizes an <em>external agent</em> causing the action?</li>
+    <li>Items 1 and 4 (Hiphil of <span class="heb">נָגַד</span>) show a person as the active subject — God asks who told Adam (Gen 3:11); Ham tells his brothers (Gen 9:22). Items 7 and 19 (Hophal of <span class="heb">נָגַד</span>) have <em>information</em> as the grammatical subject: "and it was told." What does this distinction reveal about when Biblical Hebrew chooses the Hiphil versus the Hophal for the root <span class="heb">נָגַד</span>?</li>
+    <li>Items 10, 11, and 22 are all Hiphil forms of the strong root <span class="heb">שָׁלַךְ</span> ("to throw/cast"). Item 10 (Gen 37:22) is an Imperative 2mp; item 11 (Gen 37:24) is Wayyiqtol 3mp; item 22 (Exo 32:19) is Wayyiqtol 3ms. Looking only at the Hebrew form — not the context — what morphological features reveal each form's conjugation and PGN?</li>
+    <li>Items 6 (Gen 19:16) and 15 (Exo 4:4) are both Hiphil Wayyiqtol of <span class="heb">חָזַק</span>. Item 6 is 3mp (the angels seize Lot); item 15 is 3ms (Moses grasps the snake). The forms differ only in the suffix: <span class="heb">וַיַּחֲזִיקוּ</span> vs. <span class="heb">וַיַּחֲזֵק</span>. What is the clue in the form that marks the plural versus the singular?</li>
+    <li>Items 9 (Gen 26:11) and 21 (Exo 19:12) both show the Hophal Imperfect form <span class="heb">יוּמַת</span>. In Gen 26:11 Abimelech uses it in a civil decree protecting Isaac; in Exo 19:12 God uses it to protect Sinai. The form is identical in both. What does it mean that the same Hophal Imperfect works in a royal edict and in a divine boundary law? What does the passive express that an active verb like "I will kill" would not?</li>
+    <li>Items 16 (Exo 5:14) and 17 (Exo 5:16) both come from root <span class="heb">נָכָה</span> in the Hophal. Item 16 is Wayyiqtol (narrative past: the overseers <em>were beaten</em>); item 17 is a Participle (ongoing state: the foremen <em>are being beaten</em>). How does the shift from a finite verb to a participle change the picture? In your English translation, how do you capture the aspectual difference between a completed beating and a continuing state of being beaten?</li>
   </ol>
 </div>
 
@@ -325,6 +514,7 @@ function hideAll() {
   document.querySelectorAll('.reveal-btn').forEach(b => b.textContent = '▶ Answer');
 }
 function clearAll() {
+  document.querySelectorAll('select.parse-field').forEach(s => s.value = '');
   document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
 }
 </script>

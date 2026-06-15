@@ -1,4 +1,4 @@
-# Chapter 28 — Hiphil–Hophal Contrast Drill
+# Chapter 28 — Hiphil/Hophal Contrast Drill
 
 *BBH Chapter 28 · Hophal Strong Verbs*
 
@@ -6,123 +6,94 @@
 
 ## Instructions
 
-The Hophal is the **passive of the Hiphil**. Every Hiphil transitive action has a Hophal passive counterpart. This drill presents Hiphil–Hophal pairs from the same root.
+Each item below gives a Hebrew verb form from the biblical text and its scripture reference.
+For each item: identify the **stem** (Hiphil or Hophal), the **conjugation**, the **person–gender–number (PGN)**, and provide a **translation**.
 
-**For each item:**
-1. **Identify the stem** (Hiphil or Hophal).
-2. **Parse** the conjugation and PGN.
-3. **Translate** in context.
-4. **Explain the relationship** between the Hiphil and Hophal forms in one sentence.
+**Diagnostic clues:**
+- **Hiphil** — prefix הִ (perfect); prefix הַ / יַ (imperfect/wayyiqtol/imperative/infinitive); causative force; typically active.
+- **Hophal** — prefix vowel *qibbuts* (קֻ) in strong roots; *shureq* (וּ) in biconsonantal/I-yod roots; passive of the corresponding Hiphil.
 
-The answer key is at the bottom.
-
----
-
-## Part A — Motion/Transfer Roots
-
-These roots have Qal meanings describing motion or placement. The Hiphil causes motion; the Hophal passivizes it.
-
-| # | Root | Hiphil Meaning | Hophal Form | Conjugation | Ref | Translation | Stem |
-|---|---|---|---|---|---|---|---|
-| 1 | בּוֹא | to bring | הוּבְאוּ | Qatal 3cp | Gen 43:18 | | |
-| 2 | יָרַד | to bring down | הוּרַד | Qatal 3ms | Gen 39:1 | | |
-| 3 | שׁוּב | to bring back | הוּשַׁב | Qatal 3ms | Gen 42:28 | | |
-| 4 | קוּם | to set up / erect | הוּקַם | Qatal 3ms | Exo 40:17 | | |
-| 5 | שִׂים | to put / set | יּוּשַׂם | Wayyiqtol 3ms | Gen 24:33 | | |
-| 6 | סוּר | to remove | הוּסַר | Qatal 3ms | Lev 4:31 | | |
-| 7 | שׁוּב | to bring back | יוּשַׁב | Wayyiqtol 3ms | Exo 10:8 | | |
+Items are ordered by scripture reference. Write your answers in the blank columns, then check the Answer Key below.
 
 ---
 
-## Part B — Death Formula (מוּת)
+## Exercise Table
 
-The root מוּת "to die" appears in both stems with a perfect morphological contrast. Compare the vowel patterns carefully.
-
-| # | Root | Form | Stem | Conjugation | Ref | Translation |
+| # | Hebrew Form | Ref | Stem | Conjugation | PGN | Translation |
 |---|---|---|---|---|---|---|
-| 8  | מוּת | הֵמִית | | | Gen 18:25 | |
-| 9  | מוּת | יוּמַת | | | Gen 26:11 | |
-| 10 | מוּת | הָמִית | | | Gen 37:18 | |
-| 11 | מוּת | הוּמַת | | | 2 Sam 21:9 | |
-
-> **Bonus:** What vowel under ה distinguishes Hiphil Perfect 3ms from Hophal Qatal 3ms?
-
----
-
-## Part C — Speech Reporting Root (נָגַד)
-
-This root illustrates how the Hiphil and Hophal serve different narrative roles. The Hiphil "to tell/report" has a person as its subject; the Hophal "to be told/reported" has information as its subject.
-
-| # | Root | Form | Stem | Conjugation | Ref | Translation |
-|---|---|---|---|---|---|---|
-| 12 | נָגַד | יַּגֵּד | | | Gen 9:22 | |
-| 13 | נָגַד | יֻּגַּד | | | Gen 22:20 | |
-| 14 | נָגַד | הִגִּיד | | | Gen 3:11 | |
-| 15 | נָגַד | יֻּגַּד | | | Exo 14:5 | |
-
----
-
-## Part D — Roots with No Common Qal (נָכָה)
-
-Some roots appear in Hiphil and Hophal but have no standard Qal. Both stems are treated as the "base" forms.
-
-| # | Root | Form | Stem | Conjugation | Ref | Translation |
-|---|---|---|---|---|---|---|
-| 16 | נָכָה | הַכּוֹת | | | Gen 4:15 | |
-| 17 | נָכָה | יֻּכּוּ | | | Exo 5:14 | |
-| 18 | נָכָה | מֻכִּים | | | Exo 5:16 | |
+| 1  | הִגִּיד | Gen 3:11 | | | | |
+| 2  | הַכּוֹת | Gen 4:15 | | | | |
+| 3  | הוּחַל | Gen 4:26 | | | | |
+| 4  | וַיַּגֵּד | Gen 9:22 | | | | |
+| 5  | הָמִית | Gen 18:25 | | | | |
+| 6  | וַיַּחֲזִיקוּ | Gen 19:16 | | | | |
+| 7  | וַיֻּגַּד | Gen 22:20 | | | | |
+| 8  | וַיּוּשַׂם | Gen 24:33 | | | | |
+| 9  | יוּמַת | Gen 26:11 | | | | |
+| 10 | הַשְׁלִיכוּ | Gen 37:22 | | | | |
+| 11 | וַיַּשְׁלִכוּ | Gen 37:24 | | | | |
+| 12 | הוּרַד | Gen 39:1 | | | | |
+| 13 | הוּשַׁב | Gen 42:28 | | | | |
+| 14 | הוּבְאוּ | Gen 43:18 | | | | |
+| 15 | וַיַּחֲזֵק | Exo 4:4 | | | | |
+| 16 | וַיֻּכּוּ | Exo 5:14 | | | | |
+| 17 | מֻכִּים | Exo 5:16 | | | | |
+| 18 | וַיּוּשַׁב | Exo 10:8 | | | | |
+| 19 | וַיֻּגַּד | Exo 14:5 | | | | |
+| 20 | הַכֵּה | Exo 17:6 | | | | |
+| 21 | יוּמַת | Exo 19:12 | | | | |
+| 22 | וַיַּשְׁלֵךְ | Exo 32:19 | | | | |
+| 23 | הוּקַם | Exo 40:17 | | | | |
+| 24 | הוּסַר | Lev 4:31 | | | | |
 
 ---
 
 ## Discussion Questions
 
-1. In Part C, items 12 and 14 are Hiphil (active: someone tells/reports), while items 13 and 15 are Hophal (passive: something is told). Notice that in 13 and 15 the grammatical subject is *information* ("it was told"). What does this show about when Hebrew uses the Hiphil vs. Hophal of נָגַד — is the choice driven by the *type of subject* or by something else?
-2. In Part B, items 8–11: write out the identifying vowel patterns for Hiphil Perfect 3ms vs. Hophal Qatal 3ms of מוּת. Why does the Hophal of a biconsonantal root like מוּת use the vowel וּ (shureq/ḥolem-waw) rather than the standard קֻּ pattern seen in strong Hophal forms?
-3. Compare items 3 and 7 (both from root שׁוּב). Item 3 (Gen 42:28) refers to silver being returned in a sack; item 7 (Exo 10:8) refers to Moses and Aaron being brought back to Pharaoh. Both are Hophal. Translate each and describe what is the same and what is different about the "returning" action in each context.
-4. The Hophal and Niphal both express passivity in Hebrew. For the roots in Part A — בּוֹא, יָרַד, שׁוּב — consider whether a Niphal passive would be grammatically possible. What semantic difference does using the Hophal (rather than the Niphal) signal? Which stem emphasizes an *external agent* causing the action?
+1. Items 1 and 4 (Hiphil of נָגַד) show a person as the active subject — God asks who told Adam (Gen 3:11); Ham tells his brothers (Gen 9:22). Items 7 and 19 (Hophal of נָגַד) have *information* as the grammatical subject: "and it was told." What does this distinction reveal about when Biblical Hebrew chooses the Hiphil versus the Hophal for the root נָגַד?
+
+2. Items 10, 11, and 22 are all Hiphil forms of the strong root שָׁלַךְ ("to throw/cast"). Item 10 (Gen 37:22) is an Imperative 2mp; item 11 (Gen 37:24) is Wayyiqtol 3mp; item 22 (Exo 32:19) is Wayyiqtol 3ms. Looking only at the Hebrew form — not the context — what morphological features reveal each form's conjugation and PGN?
+
+3. Items 6 (Gen 19:16) and 15 (Exo 4:4) are both Hiphil Wayyiqtol of חָזַק. Item 6 is 3mp (the angels seize Lot); item 15 is 3ms (Moses grasps the snake). The forms differ only in the suffix: וַיַּחֲזִיקוּ vs. וַיַּחֲזֵק. What is the clue in the form that marks the plural versus the singular?
+
+4. Items 9 (Gen 26:11) and 21 (Exo 19:12) both show the Hophal Imperfect form יוּמַת. In Gen 26:11 Abimelech uses it in a civil decree protecting Isaac; in Exo 19:12 God uses it to protect Sinai. The form is identical in both. What does it mean that the same Hophal Imperfect works in a royal edict and in a divine boundary law? What does the passive express that an active verb like "I will kill" would not?
+
+5. Items 16 (Exo 5:14) and 17 (Exo 5:16) both come from root נָכָה in the Hophal. Item 16 is Wayyiqtol (narrative past: the overseers *were beaten*); item 17 is a Participle (ongoing state: the foremen *are being beaten*). How does the shift from a finite verb to a participle change the picture? In your English translation, how do you capture the aspectual difference?
 
 ---
 
 ## Answer Key
 
-### Part A
-
-| # | Root | Translation | Stem | Explanation |
-|---|---|---|---|---|
-| 1 | בּוֹא | they were brought in | Hophal Qatal 3cp | The brothers were passivized by the Hiphil "to bring"; an external agent (Joseph's steward) brought them in |
-| 2 | יָרַד | he was brought down | Hophal Qatal 3ms | Joseph was caused to descend to Egypt by Potiphar's men; Hiphil = to bring down |
-| 3 | שׁוּב | it was returned | Hophal Qatal 3ms | The silver was caused to return into the sack; Hiphil = to bring back |
-| 4 | קוּם | it was set up | Hophal Qatal 3ms | The tabernacle was caused to stand erect; Hiphil = to erect/set up |
-| 5 | שִׂים | it was set (before him) | Hophal Wayyiqtol 3ms | The food was placed before Abraham's servant; Hiphil = to put/set |
-| 6 | סוּר | it was removed | Hophal Qatal 3ms | The fat was caused to depart from the sacrifice; Hiphil = to remove |
-| 7 | שׁוּב | they were brought back | Hophal Wayyiqtol 3ms | Moses and Aaron were caused to return to Pharaoh; same Hiphil root as #3 |
-
-### Part B
-
-| # | Form | Stem | Conjugation | Translation | Notes |
+| # | Root | Stem | Conjugation | PGN | Translation |
 |---|---|---|---|---|---|
-| 8  | הֵמִית | **Hiphil** | Inf. Construct | to put to death | Vowel הֵ identifies Hiphil Perfect/Inf. Construct |
-| 9  | יוּמַת | **Hophal** | Yiqtol 3ms | he shall be put to death | Shureq in the Yiqtol prefix slot marks Hophal; the standard LF formula |
-| 10 | הָמִית | **Hiphil** | Qatal 3ms | he put to death / he killed | Hiphil Qatal 3ms; vowel הָ before the root |
-| 11 | הוּמַת | **Hophal** | Qatal 3ms | he was put to death | Vowel הוּ distinguishes Hophal Qatal 3ms from Hiphil הֵ |
+| 1  | נָגַד | Hiphil | Perfect | 3ms | he told you / who told you? |
+| 2  | נָכָה | Hiphil | Infinitive Construct | — | to strike |
+| 3  | חָלַל | Hophal | Perfect | 3ms | it was begun (to call on the name of the LORD) |
+| 4  | נָגַד | Hiphil | Wayyiqtol | 3ms | and he told his brothers |
+| 5  | מוּת | Hiphil | Infinitive Construct | — | to put to death / to kill |
+| 6  | חָזַק | Hiphil | Wayyiqtol | 3mp | and they seized / took hold of (his hand) |
+| 7  | נָגַד | Hophal | Wayyiqtol | 3ms | and it was told to Abraham |
+| 8  | שִׂים | Hophal | Wayyiqtol | 3ms | and food was set before him |
+| 9  | מוּת | Hophal | Imperfect | 3ms | he shall be put to death |
+| 10 | שָׁלַךְ | Hiphil | Imperative | 2mp | throw him! (into this pit) |
+| 11 | שָׁלַךְ | Hiphil | Wayyiqtol | 3mp | and they threw him (into the pit) |
+| 12 | יָרַד | Hophal | Perfect | 3ms | he was brought down to Egypt |
+| 13 | שׁוּב | Hophal | Perfect | 3ms | it was returned (into my sack) |
+| 14 | בּוֹא | Hophal | Perfect | 3cp | we were brought in (to Joseph's house) |
+| 15 | חָזַק | Hiphil | Wayyiqtol | 3ms | and he grasped it (by the tail) |
+| 16 | נָכָה | Hophal | Wayyiqtol | 3mp | and the Israelite overseers were beaten |
+| 17 | נָכָה | Hophal | Participle | mp | being beaten / your servants are beaten |
+| 18 | שׁוּב | Hophal | Wayyiqtol | 3ms | and Moses and Aaron were brought back to Pharaoh |
+| 19 | נָגַד | Hophal | Wayyiqtol | 3ms | and it was told to the king of Egypt |
+| 20 | נָכָה | Hiphil | Imperative | 2ms | strike! (the rock) |
+| 21 | מוּת | Hophal | Imperfect | 3ms | he shall be put to death (Sinai boundary law) |
+| 22 | שָׁלַךְ | Hiphil | Wayyiqtol | 3ms | and he threw them (the tablets) from his hands |
+| 23 | קוּם | Hophal | Perfect | 3ms | the tabernacle was set up / erected |
+| 24 | סוּר | Hophal | Perfect | 3ms | it was removed (from the sacrifice) |
 
-**Bonus answer:** The vowel under ה is the key distinguisher:
-- Hiphil Perfect 3ms: **הֵ** (tsere under ה) — e.g. הֵמִית
-- Hophal Qatal 3ms: **הוּ** (shureq under ה) — e.g. הוּמַת
+### Summary
 
-### Part C
-
-| # | Form | Stem | Conjugation | Translation | Notes |
-|---|---|---|---|---|---|
-| 12 | יַּגֵּד | **Hiphil** | Wayyiqtol 3ms | and he told | Ham (a person) is the active subject; Hiphil = to tell |
-| 13 | יֻּגַּד | **Hophal** | Wayyiqtol 3ms | and it was told | Information is the grammatical subject; Hophal = to be reported |
-| 14 | הִגִּיד | **Hiphil** | Qatal 3ms | who told you? | God asks Adam who told him he was naked; person as subject |
-| 15 | יֻּגַּד | **Hophal** | Wayyiqtol 3ms | and it was told | The news of Israel's flight was reported to Pharaoh; information as subject |
-
-### Part D
-
-| # | Form | Stem | Conjugation | Translation | Notes |
-|---|---|---|---|---|---|
-| 16 | הַכּוֹת | **Hiphil** | Inf. Construct | to strike | Standard Hiphil inf. construct; no Qal — SA classification |
-| 17 | יֻּכּוּ | **Hophal** | Wayyiqtol 3mp | they were beaten | The overseers received the action; Hophal of Hiphil נָכָה |
-| 18 | מֻכִּים | **Hophal** | Participle mp | being beaten | Participial form; Israel's servants are currently receiving the blows |
+| Stem | Count | Items |
+|---|---|---|
+| Hiphil | 10 | 1, 2, 4, 5, 6, 10, 11, 15, 20, 22 |
+| Hophal | 14 | 3, 7, 8, 9, 12, 13, 14, 16, 17, 18, 19, 21, 23, 24 |
