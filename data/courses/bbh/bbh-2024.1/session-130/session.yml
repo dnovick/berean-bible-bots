@@ -23,20 +23,20 @@ focus: "Hophal Strong Verbs"
 instructor: "David Novick"
 chapter: 28
 agenda:
-  - title: "BBB Updates"
+  - title: "Logistics"
     duration: "5 min"
 
 lesson:
   name: "BBH 28 - Hophal Strong Verbs"
   url: "https://bereanbiblebots.com/lessons/hebrew/ch28/"
-  duration: "90 min"
+  duration: "80 min"
 
 reading:
-  - name: "TBD"
-    description: "TBD"
-    passage: "TBD"
-    file: "tbd.html"
-    duration: "15 min"
+  - name: "Psalm 119:1-8"
+    description: "The law of the LORD - an acrostic poem. Part א."
+    passage: "Psalm 119:1-8"
+    file: "ps119-1-8.html"
+    duration: "20 min"
 
 sections:
   - heading: "Logistics"

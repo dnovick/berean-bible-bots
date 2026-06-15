@@ -1974,7 +1974,7 @@ class Ch28HophalExercise(PassageExercise):
     _instructions = (
         'Each numbered verb belongs to one of the stems you have already studied '
         '(Qal, Niphal, Hiphil, or Hophal). '
-        'For each one, fill in: Hophal? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'For each one, fill in: Hophal? (Yes/No), Conjugation, PGN, Root, and Gloss. '
         'The answer key begins on the page marked "Answer Key".'
     )
 
@@ -1985,57 +1985,129 @@ class Ch28HophalExercise(PassageExercise):
 
         self.add_passage(PassageBlock('22:20',
             'וַיְהִ֗י אַֽחֲרֵי֙ הַדְּבָרִ֣ים הָאֵ֔לֶּה וַיֻּגַּ֥ד לְאַבְרָהָ֖ם לֵאמֹֽר',
-            '"Now after these things it was told to Abraham, saying…"'))
+            'KJV: "And it came to pass after these things, that it was told Abraham…"'))
         self.add_verb_table([
-            VerbEntry('1', 'וַיֻּגַּד', 'Wayyiqtol', '3ms', 'נָגַד', 'Hiphil הִגִּיד = to tell/declare → Hophal = it was reported'),
+            VerbEntry('1', 'וַיֻּגַּד', 'Wayyiqtol', '3ms', 'נגד', 'it was told / reported'),
         ], show_answers=show_answers)
 
         self.add_section_break()
 
         # ── Passage B ─────────────────────────────────────────────────────────
-        self.add_section_heading('Passage B — Exodus 5:14–16 (with Niphal distractor)')
+        self.add_section_heading('Passage B — Exodus 5:14–16')
 
         self.add_passage(PassageBlock('5:14',
             'וַיֻּכּ֗וּ שֹׁטְרֵי֙ בְּנֵ֣י יִשְׂרָאֵ֔ל אֲשֶׁר־שָׂ֣מוּ עֲלֵהֶ֔ם נֹגְשֵׂ֥י פַרְעֹ֖ה',
-            '"And the overseers of the people of Israel were beaten…"'))
+            'KJV: "And the officers of the children of Israel…were beaten…"'))
         self.add_verb_table([
-            VerbEntry('2', 'וַיֻּכּוּ', 'Wayyiqtol', '3mp', 'נָכָה', 'Hiphil הִכָּה = to strike/kill → Hophal = were beaten'),
+            VerbEntry('2', 'וַיֻּכּוּ', 'Wayyiqtol', '3mp', 'נכה', 'were beaten / struck'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('5:16',
             'תֶּ֗בֶן אֵ֤ין נִתָּן֙ לַעֲבָדֶ֔יךָ וְהִנֵּ֧ה עֲבָדֶ֛יךָ מֻכִּ֖ים',
-            '"No straw is given to your servants, and behold, your servants are being beaten…"'))
+            'KJV: "There is no straw given…and, behold, thy servants are beaten…"'))
         self.add_verb_table([
-            VerbEntry('3', 'נִתָּן', 'Niphal Ptc.', 'ms', 'נָתַן', 'NOT Hophal — Niphal passive of Qal נָתַן (given); נ prefix'),
-            VerbEntry('4', 'מֻכִּים', 'Participle', 'mp', 'נָכָה', 'Hophal — מֻ prefix (Qibbuts) = u-class vowel; passive of Hiphil הִכָּה'),
+            VerbEntry('3', 'נִתָּן', 'Niphal Ptc.', 'ms', 'נתן', 'is given (Niphal — not Hophal)'),
+            VerbEntry('4', 'מֻכִּים', 'Participle', 'mp', 'נכה', 'being beaten'),
         ], show_answers=show_answers)
 
         self.add_section_break()
 
         # ── Passage C ─────────────────────────────────────────────────────────
-        self.add_section_heading('Passage C — Numbers 35:16–18, 30–31 (Qal distractors)')
+        self.add_section_heading('Passage C — Numbers 35:16–18, 30–31')
 
         self.add_passage(PassageBlock('35:16',
             'וְאִם בִּכְלִי בַרְזֶל הִכָּהוּ וַיָּמֹת מוֹת־יוּמַת הָרֹצֵֽחַ',
-            '"If he struck him with iron and he died — the murderer shall surely be put to death."'))
+            'KJV: "…the murderer shall surely be put to death."'))
         self.add_verb_table([
-            VerbEntry('5', 'יוּמַת', 'Imperfect', '3ms', 'מוּת', 'Hophal — יוּ prefix (Shureq); Hiphil הֵמִית = to put to death'),
+            VerbEntry('5', 'יוּמַת', 'Imperfect', '3ms', 'מות', 'shall be put to death'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('35:17',
             'וְאִם בְּאֶבֶן יָד אֲשֶׁר־יָמוּת בָּהּ הִכָּהוּ וַיָּמֹת מוֹת־יוּמַת הָרֹצֵֽחַ',
-            '"If with a stone that could kill he struck him and he died — the murderer shall be put to death."'))
+            'KJV: "Or if he smite him with a stone…whereby he may die…shall be put to death."'))
         self.add_verb_table([
-            VerbEntry('6', 'יָמוּת', 'Qal Impf.', '3ms', 'מוּת', 'NOT Hophal — Qal intransitive "to die"; יָ prefix (Pathach) ≠ Hophal'),
-            VerbEntry('7', 'יוּמַת', 'Imperfect', '3ms', 'מוּת', 'Hophal — יוּ prefix (Shureq); same formula as verb 5'),
+            VerbEntry('6', 'יָמוּת', 'Qal Impf.', '3ms', 'מות', 'dies / could die (Qal)'),
+            VerbEntry('7', 'יוּמַת', 'Imperfect', '3ms', 'מות', 'shall be put to death'),
+        ], show_answers=show_answers)
+
+        self.add_passage(PassageBlock('35:18',
+            'וְאִם בִּכְלִי עֵץ יָד אֲשֶׁר־יָמוּת בָּהּ הִכָּהוּ וַיָּמֹת מוֹת־יוּמַת הָרֹצֵֽחַ',
+            'KJV: "Or if he smite him with an hand weapon of wood…shall be put to death."'))
+        self.add_verb_table([
+            VerbEntry('8', 'יָמוּת', 'Qal Impf.', '3ms', 'מות', 'dies / could die (Qal)'),
+            VerbEntry('9', 'יוּמַת', 'Imperfect', '3ms', 'מות', 'shall be put to death'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('35:30–31',
             'עַל־פִּי עֵדִים יֵרָצֵחַ הָרֹצֵחַ … כִּי־מוֹת יוּמָת',
-            '"On the testimony of witnesses the murderer shall be put to death… for he shall surely be put to death."'))
+            'KJV: "…the murderer shall be put to death by…witnesses…he shall surely be put to death."'))
         self.add_verb_table([
-            VerbEntry('8', 'יֵרָצֵחַ', 'Niphal Impf.', '3ms', 'רָצַח', 'NOT Hophal — Niphal (passive of Qal murder); יֵ prefix, no u-vowel'),
-            VerbEntry('9', 'יוּמַת', 'Imperfect', '3ms', 'מוּת', 'Hophal — יוּ prefix (Shureq); death penalty formula'),
+            VerbEntry('10', 'יֵרָצֵחַ', 'Niphal Impf.', '3ms', 'רצח', 'shall be slain (Niphal — not Hophal)'),
+            VerbEntry('11', 'יוּמַת', 'Imperfect', '3ms', 'מות', 'shall surely be put to death'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage D ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage D — Genesis 39:1')
+
+        self.add_passage(PassageBlock('39:1',
+            'וְיוֹסֵף הוּרַד מִצְרַיְמָה וַיִּקְנֵהוּ פּוֹטִיפַר … אֲשֶׁר הוֹרִדֻהוּ שָׁמָּה',
+            'KJV: "And Joseph was brought down to Egypt; and Potiphar…bought him…which had brought him down thither."'))
+        self.add_verb_table([
+            VerbEntry('12', 'הוּרַד', 'Perfect', '3ms', 'ירד', 'was brought down'),
+            VerbEntry('13', 'וַיִּקְנֵהוּ', 'Wayyiqtol', '3ms', 'קנה', 'bought him (Qal)'),
+            VerbEntry('14', 'הוֹרִדֻהוּ', 'Perfect', '3cp', 'ירד', 'had brought him down (Hiphil)'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage E ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage E — Exodus 40:17–18')
+
+        self.add_passage(PassageBlock('40:17–18',
+            'הוּקַם הַמִּשְׁכָּן׃ וַיָּקֶם מֹשֶׁה אֶת־הַמִּשְׁכָּן',
+            'KJV: "…the tabernacle was reared up. And Moses reared up the tabernacle…"'))
+        self.add_verb_table([
+            VerbEntry('15', 'הוּקַם', 'Perfect', '3ms', 'קום', 'was set up / erected'),
+            VerbEntry('16', 'וַיָּקֶם', 'Wayyiqtol', '3ms', 'קום', 'set up / erected (Hiphil)'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage F ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage F — Genesis 42:28')
+
+        self.add_passage(PassageBlock('42:28',
+            'הוּשַׁב כַּסְפִּי … וַיֵּצֵא לִבָּם וַיֶּחֶרְדוּ אִישׁ אֶל־אָחִיו',
+            'KJV: "My money is restored…and their heart failed them, and they were afraid…"'))
+        self.add_verb_table([
+            VerbEntry('17', 'הוּשַׁב', 'Perfect', '3ms', 'שׁוב', 'was returned / restored'),
+            VerbEntry('18', 'וַיֶּחֶרְדוּ', 'Wayyiqtol', '3mp', 'חרד', 'trembled / were afraid (Qal)'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage G ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage G — Exodus 10:8')
+
+        self.add_passage(PassageBlock('10:8',
+            'וַיּוּשַׁב אֶת מֹשֶׁה וְאֶת אַהֲרֹן אֶל פַּרְעֹה',
+            'KJV: "And Moses and Aaron were brought again unto Pharaoh…"'))
+        self.add_verb_table([
+            VerbEntry('19', 'וַיּוּשַׁב', 'Wayyiqtol', '3ms', 'שׁוב', 'were brought back'),
+        ], show_answers=show_answers)
+
+        self.add_section_break()
+
+        # ── Passage H ─────────────────────────────────────────────────────────
+        self.add_section_heading('Passage H — Genesis 43:18')
+
+        self.add_passage(PassageBlock('43:18',
+            'וַיִּירְאוּ הָאֲנָשִׁים כִּי הוּבְאוּ בֵּית יוֹסֵף',
+            'KJV: "And the men were afraid, because they were brought into Joseph\'s house…"'))
+        self.add_verb_table([
+            VerbEntry('20', 'הוּבְאוּ', 'Perfect', '3cp', 'בוא', 'were brought in'),
         ], show_answers=show_answers)
 
 
@@ -2043,7 +2115,7 @@ def build_ch28_hophal_exercise(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch28HophalExercise,
         'Chapter 28 — "Spot the Hophal" Passage Exercise',
-        'Genesis 22  ·  Exodus 5  ·  Numbers 35',
+        'Gen 22 · Gen 39 · Gen 42 · Gen 43 · Exo 5 · Exo 10 · Exo 40 · Num 35',
         ['bbh', 'ch28', 'exercises', 'ch28-passage-exercise'],
         'ch28-passage-exercise.pdf',
         out_dir,
