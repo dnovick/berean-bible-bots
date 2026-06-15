@@ -1,6 +1,6 @@
 # ch28-hophal-hiphil-contrast
 
-A 24-item drill contrasting Hiphil and Hophal forms drawn from the biblical text (Gen–Lev), ordered by scripture reference. Students identify the stem, conjugation, PGN, and translation for each form. Builds on BBH Chapter 28 (Hophal Strong Verbs).
+A 24-item drill contrasting Hiphil and Hophal forms drawn from the biblical text (Gen–Lev), ordered by scripture reference. Students identify the root, stem, conjugation, PGN, and translation for each form. Builds on BBH Chapter 28 (Hophal Strong Verbs).
 
 A single unified table replaces the former multi-part structure. Stems are mixed throughout the exercise to prevent pattern-matching by position.
 

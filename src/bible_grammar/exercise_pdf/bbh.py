@@ -6535,70 +6535,70 @@ def build_ch23_passage_exercise(out_dir: Optional[str] = None) -> str:
 
 
 class Ch28HophalHiphilContrastExercise(ExercisePDF):
-    # columns: #, Form, Ref, Stem, Conjugation, PGN, Translation
-    _HDR = ['#', 'Form', 'Ref', 'Stem', 'Conjugation', 'PGN', 'Translation']
-    _CR  = [0.04, 0.13, 0.08, 0.10, 0.15, 0.08, 0.42]
+    # columns: #, Form, Ref, Root, Stem, Conjugation, PGN, Translation
+    _HDR = ['#', 'Form', 'Ref', 'Root', 'Stem', 'Conjugation', 'PGN', 'Translation']
+    _CR  = [0.04, 0.12, 0.07, 0.09, 0.09, 0.14, 0.07, 0.38]
 
-    # question rows: Stem/Conjugation/PGN/Translation left blank
+    # question rows: Root/Stem/Conjugation/PGN/Translation left blank
     _ROWS = [
-        ['1',  'הִגִּיד',      'Gen 3:11',  '', '', '', ''],
-        ['2',  'הַכּוֹת',      'Gen 4:15',  '', '', '', ''],
-        ['3',  'הוּחַל',       'Gen 4:26',  '', '', '', ''],
-        ['4',  'וַיַּגֵּד',    'Gen 9:22',  '', '', '', ''],
-        ['5',  'הָמִית',       'Gen 18:25', '', '', '', ''],
-        ['6',  'וַיַּחֲזִיקוּ','Gen 19:16', '', '', '', ''],
-        ['7',  'וַיֻּגַּד',    'Gen 22:20', '', '', '', ''],
-        ['8',  'וַיּוּשַׂם',   'Gen 24:33', '', '', '', ''],
-        ['9',  'יוּמַת',       'Gen 26:11', '', '', '', ''],
-        ['10', 'הַשְׁלִיכוּ',  'Gen 37:22', '', '', '', ''],
-        ['11', 'וַיַּשְׁלִכוּ','Gen 37:24', '', '', '', ''],
-        ['12', 'הוּרַד',       'Gen 39:1',  '', '', '', ''],
-        ['13', 'הוּשַׁב',      'Gen 42:28', '', '', '', ''],
-        ['14', 'הוּבְאוּ',     'Gen 43:18', '', '', '', ''],
-        ['15', 'וַיַּחֲזֵק',   'Exo 4:4',   '', '', '', ''],
-        ['16', 'וַיֻּכּוּ',    'Exo 5:14',  '', '', '', ''],
-        ['17', 'מֻכִּים',      'Exo 5:16',  '', '', '', ''],
-        ['18', 'וַיּוּשַׁב',   'Exo 10:8',  '', '', '', ''],
-        ['19', 'וַיֻּגַּד',    'Exo 14:5',  '', '', '', ''],
-        ['20', 'הַכֵּה',       'Exo 17:6',  '', '', '', ''],
-        ['21', 'יוּמַת',       'Exo 19:12', '', '', '', ''],
-        ['22', 'וַיַּשְׁלֵךְ', 'Exo 32:19', '', '', '', ''],
-        ['23', 'הוּקַם',       'Exo 40:17', '', '', '', ''],
-        ['24', 'הוּסַר',       'Lev 4:31',  '', '', '', ''],
+        ['1',  'הִגִּיד',      'Gen 3:11',  '', '', '', '', ''],
+        ['2',  'הַכּוֹת',      'Gen 4:15',  '', '', '', '', ''],
+        ['3',  'הוּחַל',       'Gen 4:26',  '', '', '', '', ''],
+        ['4',  'וַיַּגֵּד',    'Gen 9:22',  '', '', '', '', ''],
+        ['5',  'הָמִית',       'Gen 18:25', '', '', '', '', ''],
+        ['6',  'וַיַּחֲזִיקוּ','Gen 19:16', '', '', '', '', ''],
+        ['7',  'וַיֻּגַּד',    'Gen 22:20', '', '', '', '', ''],
+        ['8',  'וַיּוּשַׂם',   'Gen 24:33', '', '', '', '', ''],
+        ['9',  'יוּמַת',       'Gen 26:11', '', '', '', '', ''],
+        ['10', 'הַשְׁלִיכוּ',  'Gen 37:22', '', '', '', '', ''],
+        ['11', 'וַיַּשְׁלִכוּ','Gen 37:24', '', '', '', '', ''],
+        ['12', 'הוּרַד',       'Gen 39:1',  '', '', '', '', ''],
+        ['13', 'הוּשַׁב',      'Gen 42:28', '', '', '', '', ''],
+        ['14', 'הוּבְאוּ',     'Gen 43:18', '', '', '', '', ''],
+        ['15', 'וַיַּחֲזֵק',   'Exo 4:4',   '', '', '', '', ''],
+        ['16', 'וַיֻּכּוּ',    'Exo 5:14',  '', '', '', '', ''],
+        ['17', 'מֻכִּים',      'Exo 5:16',  '', '', '', '', ''],
+        ['18', 'וַיּוּשַׁב',   'Exo 10:8',  '', '', '', '', ''],
+        ['19', 'וַיֻּגַּד',    'Exo 14:5',  '', '', '', '', ''],
+        ['20', 'הַכֵּה',       'Exo 17:6',  '', '', '', '', ''],
+        ['21', 'יוּמַת',       'Exo 19:12', '', '', '', '', ''],
+        ['22', 'וַיַּשְׁלֵךְ', 'Exo 32:19', '', '', '', '', ''],
+        ['23', 'הוּקַם',       'Exo 40:17', '', '', '', '', ''],
+        ['24', 'הוּסַר',       'Lev 4:31',  '', '', '', '', ''],
     ]
 
-    # answer rows: Form column shows root (Hebrew); other cols show answers
+    # answer rows: Form col blank; Root col shows Hebrew root; other cols show answers
     _ANS = [
-        ['1',  'נָגַד',        'Gen 3:11',  'Hiphil', 'Perfect',             '3ms', 'he told you'],
-        ['2',  'נָכָה',        'Gen 4:15',  'Hiphil', 'Inf. Construct',      '—',   'to strike'],
-        ['3',  'חָלַל',        'Gen 4:26',  'Hophal', 'Perfect',             '3ms', 'it was begun'],
-        ['4',  'נָגַד',        'Gen 9:22',  'Hiphil', 'Wayyiqtol',           '3ms', 'and he told'],
-        ['5',  'מוּת',         'Gen 18:25', 'Hiphil', 'Inf. Construct',      '—',   'to put to death'],
-        ['6',  'חָזַק',        'Gen 19:16', 'Hiphil', 'Wayyiqtol',           '3mp', 'and they seized his hand'],
-        ['7',  'נָגַד',        'Gen 22:20', 'Hophal', 'Wayyiqtol',           '3ms', 'and it was told to Abraham'],
-        ['8',  'שִׂים',        'Gen 24:33', 'Hophal', 'Wayyiqtol',           '3ms', 'and food was set before him'],
-        ['9',  'מוּת',         'Gen 26:11', 'Hophal', 'Imperfect',           '3ms', 'he shall be put to death'],
-        ['10', 'שָׁלַךְ',      'Gen 37:22', 'Hiphil', 'Imperative',          '2mp', 'throw him! (into this pit)'],
-        ['11', 'שָׁלַךְ',      'Gen 37:24', 'Hiphil', 'Wayyiqtol',           '3mp', 'and they threw him'],
-        ['12', 'יָרַד',        'Gen 39:1',  'Hophal', 'Perfect',             '3ms', 'he was brought down to Egypt'],
-        ['13', 'שׁוּב',        'Gen 42:28', 'Hophal', 'Perfect',             '3ms', 'it was returned into my sack'],
-        ['14', 'בּוֹא',        'Gen 43:18', 'Hophal', 'Perfect',             '3cp', 'we were brought in'],
-        ['15', 'חָזַק',        'Exo 4:4',   'Hiphil', 'Wayyiqtol',           '3ms', 'and he grasped it by the tail'],
-        ['16', 'נָכָה',        'Exo 5:14',  'Hophal', 'Wayyiqtol',           '3mp', 'and the overseers were beaten'],
-        ['17', 'נָכָה',        'Exo 5:16',  'Hophal', 'Participle',          'mp',  'being beaten'],
-        ['18', 'שׁוּב',        'Exo 10:8',  'Hophal', 'Wayyiqtol',           '3ms', 'Moses/Aaron were brought back'],
-        ['19', 'נָגַד',        'Exo 14:5',  'Hophal', 'Wayyiqtol',           '3ms', 'and it was told to Pharaoh'],
-        ['20', 'נָכָה',        'Exo 17:6',  'Hiphil', 'Imperative',          '2ms', 'strike! (the rock)'],
-        ['21', 'מוּת',         'Exo 19:12', 'Hophal', 'Imperfect',           '3ms', 'he shall be put to death'],
-        ['22', 'שָׁלַךְ',      'Exo 32:19', 'Hiphil', 'Wayyiqtol',           '3ms', 'and he threw them (the tablets)'],
-        ['23', 'קוּם',         'Exo 40:17', 'Hophal', 'Perfect',             '3ms', 'the tabernacle was set up'],
-        ['24', 'סוּר',         'Lev 4:31',  'Hophal', 'Perfect',             '3ms', 'it was removed'],
+        ['1',  'הִגִּיד',      'Gen 3:11',  'נָגַד',  'Hiphil', 'Perfect',        '3ms', 'he told you'],
+        ['2',  'הַכּוֹת',      'Gen 4:15',  'נָכָה',  'Hiphil', 'Inf. Construct', '—',   'to strike'],
+        ['3',  'הוּחַל',       'Gen 4:26',  'חָלַל',  'Hophal', 'Perfect',        '3ms', 'it was begun'],
+        ['4',  'וַיַּגֵּד',    'Gen 9:22',  'נָגַד',  'Hiphil', 'Wayyiqtol',      '3ms', 'and he told'],
+        ['5',  'הָמִית',       'Gen 18:25', 'מוּת',   'Hiphil', 'Inf. Construct', '—',   'to put to death'],
+        ['6',  'וַיַּחֲזִיקוּ','Gen 19:16', 'חָזַק',  'Hiphil', 'Wayyiqtol',      '3mp', 'and they seized his hand'],
+        ['7',  'וַיֻּגַּד',    'Gen 22:20', 'נָגַד',  'Hophal', 'Wayyiqtol',      '3ms', 'and it was told to Abraham'],
+        ['8',  'וַיּוּשַׂם',   'Gen 24:33', 'שִׂים',  'Hophal', 'Wayyiqtol',      '3ms', 'and food was set before him'],
+        ['9',  'יוּמַת',       'Gen 26:11', 'מוּת',   'Hophal', 'Imperfect',      '3ms', 'he shall be put to death'],
+        ['10', 'הַשְׁלִיכוּ',  'Gen 37:22', 'שָׁלַךְ','Hiphil', 'Imperative',     '2mp', 'throw him! (into this pit)'],
+        ['11', 'וַיַּשְׁלִכוּ','Gen 37:24', 'שָׁלַךְ','Hiphil', 'Wayyiqtol',      '3mp', 'and they threw him'],
+        ['12', 'הוּרַד',       'Gen 39:1',  'יָרַד',  'Hophal', 'Perfect',        '3ms', 'he was brought down to Egypt'],
+        ['13', 'הוּשַׁב',      'Gen 42:28', 'שׁוּב',  'Hophal', 'Perfect',        '3ms', 'it was returned into my sack'],
+        ['14', 'הוּבְאוּ',     'Gen 43:18', 'בּוֹא',  'Hophal', 'Perfect',        '3cp', 'we were brought in'],
+        ['15', 'וַיַּחֲזֵק',   'Exo 4:4',   'חָזַק',  'Hiphil', 'Wayyiqtol',      '3ms', 'and he grasped it by the tail'],
+        ['16', 'וַיֻּכּוּ',    'Exo 5:14',  'נָכָה',  'Hophal', 'Wayyiqtol',      '3mp', 'and the overseers were beaten'],
+        ['17', 'מֻכִּים',      'Exo 5:16',  'נָכָה',  'Hophal', 'Participle',     'mp',  'being beaten'],
+        ['18', 'וַיּוּשַׁב',   'Exo 10:8',  'שׁוּב',  'Hophal', 'Wayyiqtol',      '3ms', 'Moses/Aaron were brought back'],
+        ['19', 'וַיֻּגַּד',    'Exo 14:5',  'נָגַד',  'Hophal', 'Wayyiqtol',      '3ms', 'and it was told to Pharaoh'],
+        ['20', 'הַכֵּה',       'Exo 17:6',  'נָכָה',  'Hiphil', 'Imperative',     '2ms', 'strike! (the rock)'],
+        ['21', 'יוּמַת',       'Exo 19:12', 'מוּת',   'Hophal', 'Imperfect',      '3ms', 'he shall be put to death'],
+        ['22', 'וַיַּשְׁלֵךְ', 'Exo 32:19', 'שָׁלַךְ','Hiphil', 'Wayyiqtol',      '3ms', 'and he threw them (the tablets)'],
+        ['23', 'הוּקַם',       'Exo 40:17', 'קוּם',   'Hophal', 'Perfect',        '3ms', 'the tabernacle was set up'],
+        ['24', 'הוּסַר',       'Lev 4:31',  'סוּר',   'Hophal', 'Perfect',        '3ms', 'it was removed'],
     ]
 
     def _build(self) -> None:
         self.add_instructions(
             'Each item gives a Hiphil or Hophal verb form from the biblical text. '
-            'Identify the stem (Hiphil or Hophal), conjugation, PGN, and translate. '
+            'Identify the root, stem (Hiphil or Hophal), conjugation, PGN, and translate. '
             'Items are ordered by scripture reference. Answer key is on the last page.'
         )
         self.add_note(
@@ -6625,7 +6625,7 @@ class Ch28HophalHiphilContrastExercise(ExercisePDF):
         self.add_section_heading('Answer Key')
         self.add_generic_table(
             self._HDR, self._ROWS, self._CR,
-            heb_cols=[1], show_answers=True, answer_rows=self._ANS
+            heb_cols=[1, 3], show_answers=True, answer_rows=self._ANS
         )
 
 
@@ -8063,53 +8063,87 @@ def build_ch26_hiphil_paradigm_drill(out_dir: Optional[str] = None) -> str:
 
 class Ch28HophalParadigmDrill(ExercisePDF):
     _instructions = (
-        'Write the Hophal paradigm for the root מות. '
-        'Note: there is NO Hophal Imperative — passives cannot be commanded. '
-        'Key marker: שׁוּ/הוּ prefix (shureq) in Perfect/Imperfect; מוּ in Participle.'
+        'For each row the root and PGN are given. '
+        'Circle or write the correct Hophal form. '
+        'Options include Qal, Niphal, Hiphil, and Hophal — choose the Hophal. '
+        'Key marker: strong roots show qibbuts (ֻ) under the prefix; Participle prefix is מֻ.'
     )
 
     def _build(self) -> None:
         self.add_instructions(self._instructions)
-        hdrs = ['#', 'PGN', 'Hophal form (מות)']
-        cr   = [0.06, 0.18, 0.76]
-        rows_pf = [['%d'%i,p,''] for i,p in enumerate(['3ms','3fs','2ms','2fs','1cs','3cp','2mp','2fp','1cp'],1)]
-        ans_pf  = [
-            ['1','3ms','הוּמַת'],['2','3fs','הוּמְתָה'],['3','2ms','הוּמַתָּ'],
-            ['4','2fs','הוּמַתְּ'],['5','1cs','הוּמַתִּי'],['6','3cp','הוּמְתוּ'],
-            ['7','2mp','הוּמַתֶּם'],['8','2fp','הוּמַתֶּן'],['9','1cp','הוּמַתְנוּ'],
+
+        hdrs = ['#', 'Root', 'PGN', 'Hophal Form']
+        cr   = [0.05, 0.14, 0.14, 0.67]
+
+        # Part A — Perfect — Root שׁמר
+        rows_pf = [
+            ['1', 'שׁמר', '3ms', ''], ['2', 'שׁמר', '3fs', ''],
+            ['3', 'שׁמר', '2ms', ''], ['4', 'שׁמר', '2fs', ''],
+            ['5', 'שׁמר', '1cs', ''], ['6', 'שׁמר', '3cp', ''],
+            ['7', 'שׁמר', '2mp', ''], ['8', 'שׁמר', '2fp', ''],
+            ['9', 'שׁמר', '1cp', ''],
         ]
-        rows_imp = [['%d'%(i+9),p,''] for i,p in enumerate(['3ms','3fs','2ms','2fs','1cs','3mp','3fp','2mp','2fp','1cp'],1)]
-        ans_imp  = [
-            ['10','3ms','יוּמַת'],['11','3fs','תּוּמַת'],['12','2ms','תּוּמַת'],
-            ['13','2fs','תּוּמְתִי'],['14','1cs','אוּמַת'],['15','3mp','יוּמְתוּ'],
-            ['16','3fp','תּוּמַתְנָה'],['17','2mp','תּוּמְתוּ'],['18','2fp','תּוּמַתְנָה'],
-            ['19','1cp','נוּמַת'],
+        ans_pf = [
+            ['1', 'שׁמר', '3ms', 'הֻשְׁמַר'], ['2', 'שׁמר', '3fs', 'הֻשְׁמְרָה'],
+            ['3', 'שׁמר', '2ms', 'הֻשְׁמַרְתָּ'], ['4', 'שׁמר', '2fs', 'הֻשְׁמַרְתְּ'],
+            ['5', 'שׁמר', '1cs', 'הֻשְׁמַרְתִּי'], ['6', 'שׁמר', '3cp', 'הֻשְׁמְרוּ'],
+            ['7', 'שׁמר', '2mp', 'הֻשְׁמַרְתֶּם'], ['8', 'שׁמר', '2fp', 'הֻשְׁמַרְתֶּן'],
+            ['9', 'שׁמר', '1cp', 'הֻשְׁמַרְנוּ'],
         ]
-        hdrs_misc = ['#', 'Form', 'Hophal (מות)']
+
+        # Part B — Imperfect — Root פקד
+        rows_imp = [
+            ['1', 'פקד', '3ms', ''], ['2', 'פקד', '3fs', ''],
+            ['3', 'פקד', '2ms (=3fs)', ''], ['4', 'פקד', '2fs', ''],
+            ['5', 'פקד', '1cs', ''], ['6', 'פקד', '3mp', ''],
+            ['7', 'פקד', '3fp', ''], ['8', 'פקד', '2mp', ''],
+            ['9', 'פקד', '2fp (=3fp)', ''], ['10', 'פקד', '1cp', ''],
+        ]
+        ans_imp = [
+            ['1', 'פקד', '3ms', 'יֻפְקַד'], ['2', 'פקד', '3fs', 'תֻּפְקַד'],
+            ['3', 'פקד', '2ms', 'תֻּפְקַד'], ['4', 'פקד', '2fs', 'תֻּפְקְדִי'],
+            ['5', 'פקד', '1cs', 'אֻפְקַד'], ['6', 'פקד', '3mp', 'יֻפְקְדוּ'],
+            ['7', 'פקד', '3fp', 'תֻּפְקַדְנָה'], ['8', 'פקד', '2mp', 'תֻּפְקְדוּ'],
+            ['9', 'פקד', '2fp', 'תֻּפְקַדְנָה'], ['10', 'פקד', '1cp', 'נֻפְקַד'],
+        ]
+
+        # Parts C–F (misc)
+        hdrs_misc = ['#', 'Root', 'Form / PGN', 'Hophal Form']
         rows_misc = [
-            ['20','Inf. Construct (bare)',''], ['21','Inf. Construct +לְ',''],
-            ['22','Inf. Absolute',''],
-            ['23','Participle ms',''], ['24','Participle fs',''],
-            ['25','Participle mp',''], ['26','Participle fp',''],
+            ['1', 'שׁמר', 'Inf. Construct (base)', ''],
+            ['2', 'שׁלך', 'Inf. Construct +לְ', ''],
+            ['3', 'מות', 'Inf. Absolute', ''],
+            ['4', 'פקד', 'Participle ms', ''],
+            ['5', 'פקד', 'Participle fs', ''],
+            ['6', 'פקד', 'Participle mp', ''],
+            ['7', 'פקד', 'Participle fp', ''],
+            ['8', 'שׁמר', 'Imperative 2ms', ''],
+            ['9', 'שׁמר', 'Imperative 2mp', ''],
         ]
-        ans_misc  = [
-            ['20','Inf. Construct (bare)','הוּמַת'], ['21','Inf. Construct +לְ','לְהוּמַת'],
-            ['22','Inf. Absolute','הוּמֵת'],
-            ['23','Participle ms','מוּמָת'], ['24','Participle fs','מוּמָתֶת'],
-            ['25','Participle mp','מוּמָתִים'], ['26','Participle fp','מוּמָתוֹת'],
+        ans_misc = [
+            ['1', 'שׁמר', 'Inf. Construct (base)', 'הֻשְׁמַר'],
+            ['2', 'שׁלך', 'Inf. Construct +לְ', 'לְהֻשְׁלַךְ'],
+            ['3', 'מות', 'Inf. Absolute', 'הוּמֵת'],
+            ['4', 'פקד', 'Participle ms', 'מֻפְקָד'],
+            ['5', 'פקד', 'Participle fs', 'מֻפְקֶדֶת'],
+            ['6', 'פקד', 'Participle mp', 'מֻפְקָדִים'],
+            ['7', 'פקד', 'Participle fp', 'מֻפְקָדוֹת'],
+            ['8', 'שׁמר', 'Imperative 2ms', 'הֻשְׁמַר'],
+            ['9', 'שׁמר', 'Imperative 2mp', 'הֻשְׁמְרוּ'],
         ]
-        for title_q, rows_q, ans_q in [
-            ('Hophal Perfect', rows_pf, ans_pf),
-            ('Hophal Imperfect', rows_imp, ans_imp),
-        ]:
-            self.add_drill_with_answer_key(hdrs, rows_q, ans_q, col_ratios=cr,
-                                           answer_heb_cols=[2],
-                                           section_title=title_q,
-                                           answer_title=f'{title_q} — Answer Key')
+
+        self.add_drill_with_answer_key(hdrs, rows_pf, ans_pf, col_ratios=cr,
+                                       answer_heb_cols=[1, 3],
+                                       section_title='Part A — Hophal Perfect (Root שׁמר)',
+                                       answer_title='Part A — Answer Key')
+        self.add_drill_with_answer_key(hdrs, rows_imp, ans_imp, col_ratios=cr,
+                                       answer_heb_cols=[1, 3],
+                                       section_title='Part B — Hophal Imperfect (Root פקד)',
+                                       answer_title='Part B — Answer Key')
         self.add_drill_with_answer_key(hdrs_misc, rows_misc, ans_misc, col_ratios=cr,
-                                       answer_heb_cols=[2],
-                                       section_title='Hophal — Inf. Construct · Inf. Absolute · Participle',
-                                       answer_title='Inf./Participle — Answer Key')
+                                       answer_heb_cols=[1, 3],
+                                       section_title='Parts C–F — Inf. Construct · Inf. Absolute · Participle · Imperative',
+                                       answer_title='Parts C–F — Answer Key')
 
 
 def build_ch28_hophal_paradigm_drill(out_dir: Optional[str] = None) -> str:
