@@ -24,6 +24,13 @@ instructor: "David Novick"
 chapter: 29
 agenda:
 
+reading:
+  - name: "Psalm 119:1-8"
+    description: "The law of the LORD - an acrostic poem. Part א."
+    passage: "Psalm 119:1-8"
+    file: "ps119-1-8.html"
+    duration: "20 min"
+
 lesson:
   name: "BBH 29 - Hophal Weak Verbs"
   url: "/lessons/hebrew/ch29/"
