@@ -17,16 +17,19 @@
   }
   .not-found a.logo-link {
     display: inline-block;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.2rem;
     line-height: 0;
   }
   .not-found a.logo-link img {
     width: 90px;
-    height: 90px;
-    object-fit: cover;
+    height: auto;
     border-radius: 50%;
     border: 3px solid var(--md-accent-fg-color);
-    opacity: .7;
+    transition: opacity .15s, transform .15s;
+  }
+  .not-found a.logo-link:hover img {
+    opacity: .85;
+    transform: scale(1.05);
   }
   /* Hide both sidebars so the 404 page uses the full viewport width */
   .md-sidebar { display: none !important; }
@@ -94,7 +97,7 @@
 
 <div class="not-found">
   <a href="{{ base_url }}" class="logo-link" title="Go home">
-    <img src="{{ base_url }}/assets/logo.png" alt="Berean Bible Bots" />
+    <img src="assets/logo.png" alt="Berean Bible Bots" />
   </a>
   <div class="error-code">404</div>
   <h1>This Scroll Was Not Found</h1>
