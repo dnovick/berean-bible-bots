@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
-# Pre-commit hook: rebuild mkdocs_src/courses/ and mkdocs_nav.yml whenever
-# course data or the build script itself is staged.
+# Pre-commit hook: rebuild mkdocs_src/ sections and mkdocs_nav.yml whenever
+# course/lesson data or the build scripts themselves are staged.
 #
 # Install: cp scripts/hooks/pre-commit .git/hooks/pre-commit
 #          chmod +x .git/hooks/pre-commit
@@ -10,5 +10,13 @@ if git diff --cached --name-only | grep -qE '^(data/courses/|scripts/build_cours
     echo "[pre-commit] Rebuilding mkdocs_src/courses/ ..."
     .venv/bin/python3 scripts/build_courses.py
     git add mkdocs_src/courses/ mkdocs_nav.yml
-    echo "[pre-commit] Done."
+    echo "[pre-commit] Done (courses)."
+fi
+
+if git diff --cached --name-only | grep -qE '^(data/lessons/|scripts/build_lessons\.py)'; then
+    echo "[pre-commit] Rebuilding mkdocs_src/lessons/ ..."
+    .venv/bin/python3 scripts/build_lessons.py
+    # mkdocs_src/lessons/ is gitignored (generated); only stage the nav update
+    git add mkdocs_nav.yml
+    echo "[pre-commit] Done (lessons)."
 fi
