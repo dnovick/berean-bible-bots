@@ -15,5 +15,5 @@
 
 | Topic |
 |---|
-| [References](session-130/references.md) |
+| [Hiphil Strong Verb Paradigms](session-130/hiphil-paradigms.md) |
 | [Hophal — OT Distribution by Book](session-130/hophal-distribution.md) |

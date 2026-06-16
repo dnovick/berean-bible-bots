@@ -38,13 +38,14 @@ reading:
     description: "The law of the LORD - an acrostic poem. Part א."
     passage: "Psalm 119:1-8"
     file: "ps119-1-8.html"
+    scope: instance
     duration: "20 min"
 
 sections:
   - heading: "Logistics"
     file: "logistics.md"
-  - heading: "References"
-    file: "references.md"
+  - heading: "Hiphil Strong Verb Paradigms"
+    file: "https://bereanbiblebots.com/lessons/hebrew/ch26/hiphil-paradigms/"
   - heading: "Hophal — OT Distribution by Book"
     file: "hophal-distribution.md"
 

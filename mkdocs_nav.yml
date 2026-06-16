@@ -575,11 +575,12 @@ nav:
 # <COURSES>
 - Courses:
   - Overview: courses/index.md
-  - Biblical Hebrew - Year 1:
+  - Biblical Hebrew:
     - Overview: courses/bbh/index.md
     - Student Resources: courses/bbh/common/student-resources.md
     - bbh-2024.1:
       - Overview: courses/bbh/bbh-2024.1/index.md
+      - Global Test File: courses/common/foo.txt
       - Sessions:
         - 'Session 130 — Hophal Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-130.md
         - 'Session 131 — Hophal Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-131.md

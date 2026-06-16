@@ -107,18 +107,27 @@ _GROUP_LABELS: dict[str, str] = {
 
 # ── Data loading ──────────────────────────────────────────────────────────────
 
-def load_course(course_dir: Path) -> dict[str, Any]:
-    """Load a course from course.yml + session-NN/session.yml subdirectories."""
-    with open(course_dir / "course.yml") as f:
+def load_course_data(group_dir: Path) -> dict[str, Any]:
+    """Load data/courses/<group>/course.yml, or return {} if absent."""
+    yml = group_dir / "course.yml"
+    if not yml.exists():
+        return {}
+    with open(yml) as f:
+        return yaml.safe_load(f) or {}
+
+
+def load_instance(instance_dir: Path) -> dict[str, Any]:
+    """Load a course instance from instance.yml + session-NN/session.yml subdirectories."""
+    with open(instance_dir / "instance.yml") as f:
         data: dict[str, Any] = yaml.safe_load(f)
     data.setdefault("instructors", [])
     data.setdefault("description", "")
     data.setdefault("edition", "")
-    data["_course_dir"] = course_dir  # preserve actual path for session file resolution
+    data["_instance_dir"] = instance_dir  # preserve actual path for session file resolution
 
     sessions: list[dict[str, Any]] = []
     for session_dir in sorted(
-        d for d in course_dir.iterdir()
+        d for d in instance_dir.iterdir()
         if d.is_dir() and d.name.startswith("session-")
     ):
         yml = session_dir / "session.yml"
@@ -140,26 +149,26 @@ def load_course(course_dir: Path) -> dict[str, Any]:
     return data
 
 
-def load_all_courses() -> list[dict[str, Any]]:
+def load_all_instances() -> list[dict[str, Any]]:
     """Load all courses from data/courses/<group>/<id>/, sorted by group then id."""
     courses = []
     for entry in sorted(_COURSES_DATA_DIR.iterdir()):
         if not entry.is_dir():
             continue
-        if (entry / "course.yml").exists():
-            # Ungrouped legacy course directly under data/courses/
-            courses.append(load_course(entry))
+        if (entry / "instance.yml").exists():
+            # Ungrouped legacy instance directly under data/courses/
+            courses.append(load_instance(entry))
         else:
-            # Group directory — scan one level deeper for course dirs
+            # Group directory — scan one level deeper for instance dirs
             for course_dir in sorted(entry.iterdir()):
-                if course_dir.is_dir() and (course_dir / "course.yml").exists():
-                    courses.append(load_course(course_dir))
+                if course_dir.is_dir() and (course_dir / "instance.yml").exists():
+                    courses.append(load_instance(course_dir))
     return courses
 
 
 # ── Slug / anchor helpers ────────────────────────────────────────────────────
 
-def course_group(course: dict[str, Any]) -> str:
+def instance_group(course: dict[str, Any]) -> str:
     """Return the URL group prefix for a course (e.g. 'bbh', 'bbg', 'bba')."""
     tb = course.get("textbook", "")
     short = _TEXTBOOK_META.get(tb, {}).get("short", "")
@@ -254,7 +263,7 @@ def render_courses_index(courses: list[dict[str, Any]]) -> str:
 
     seen_groups: list[str] = []
     for course in courses:
-        group = course_group(course)
+        group = instance_group(course)
         if group not in seen_groups:
             seen_groups.append(group)
 
@@ -266,18 +275,44 @@ def render_courses_index(courses: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def render_group_page(group: str, courses: list[dict[str, Any]]) -> str:
-    """Render mkdocs_src/courses/<group>/index.md — group landing page."""
-    label = _GROUP_LABELS.get(group, group.upper())
-    description = courses[0].get("description", "") if courses else ""
+def render_course_page(
+    group: str,
+    courses: list[dict[str, Any]],
+    group_data: dict[str, Any],
+) -> str:
+    """Render mkdocs_src/courses/<group>/index.md — group landing page.
+
+    group_data comes from data/courses/<group>/course.yml; falls back to
+    _GROUP_LABELS / hardcoded student-resources if the file is absent.
+    """
+    label = group_data.get("name") or _GROUP_LABELS.get(group, group.upper())
+    description = (group_data.get("description") or "").strip()
+    resources = group_data.get("resources") or []
+
     lines = [f"# {label}", ""]
     if description:
         lines += [description, ""]
+
+    lines += ["## Resources", ""]
+    if resources:
+        for res in resources:
+            name = res.get("name", "")
+            rfile = res.get("file", "")
+            scope = res.get("scope", "course")
+            desc = (res.get("description") or "").strip()
+            if rfile:
+                url = f"../common/{rfile}" if scope == "global" else f"common/{rfile}"
+            else:
+                url = ""
+            entry = f"[{name}]({url})" if url else name
+            suffix = f" — {desc}" if desc else ""
+            lines.append(f"- {entry}{suffix}")
+    else:
+        lines.append(
+            "- [Student Resources](common/student-resources.md) — "
+            "Textbook acquisition and Bible software guide"
+        )
     lines += [
-        "## Resources",
-        "",
-        "- [Student Resources](common/student-resources.md) — "
-        "Textbook acquisition and Bible software guide",
         "",
         "## Courses",
         "",
@@ -294,7 +329,7 @@ def render_group_page(group: str, courses: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def _copy_common_resources(group: str, common_out: Path) -> None:
+def _copy_course_resources(group: str, common_out: Path) -> None:
     """Copy data/courses/<group>/common/*.md into mkdocs_src/courses/<group>/common/."""
     common_data = _COURSES_DATA_DIR / group / "common"
     if not common_data.is_dir():
@@ -305,7 +340,33 @@ def _copy_common_resources(group: str, common_out: Path) -> None:
         print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
 
 
-def render_course_page(course: dict[str, Any]) -> str:
+def _copy_global_resources(global_out: Path) -> None:
+    """Copy data/courses/common/*.md into mkdocs_src/courses/common/."""
+    global_data = _COURSES_DATA_DIR / "common"
+    if not global_data.is_dir():
+        return
+    global_out.mkdir(parents=True, exist_ok=True)
+    for src in sorted(global_data.glob("*.md")):
+        dst = global_out / src.name
+        dst.write_text(src.read_text(encoding="utf-8"))
+        print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
+
+
+def _copy_instance_resources(instance_dir: Path, instance_out: Path) -> None:
+    """Copy instance_dir/common/* into mkdocs_src/courses/<group>/<id>/common/."""
+    common_data = instance_dir / "common"
+    if not common_data.is_dir():
+        return
+    common_out = instance_out / "common"
+    common_out.mkdir(parents=True, exist_ok=True)
+    for src in sorted(common_data.iterdir()):
+        if src.is_file():
+            dst = common_out / src.name
+            dst.write_bytes(src.read_bytes())
+            print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
+
+
+def render_instance_page(course: dict[str, Any]) -> str:
     """Render mkdocs_src/courses/<id>/index.md — session table for one course."""
     cid = course["id"]
     name = course.get("name", cid)
@@ -314,6 +375,7 @@ def render_course_page(course: dict[str, Any]) -> str:
     instructors = course.get("instructors", [])
     sessions = course.get("sessions", [])
     session_groups = course.get("session_groups", [])
+    resources = course.get("resources") or []
 
     lines = [f"# {name} — {cid}", ""]
 
@@ -326,6 +388,27 @@ def render_course_page(course: dict[str, Any]) -> str:
         lines.append(f"**Instructor(s):** {', '.join(instructors)}  ")
 
     lines.append("")
+
+    if resources:
+        lines += ["## Resources", ""]
+        for res in resources:
+            rname = res.get("name", "")
+            rfile = res.get("file", "")
+            scope = res.get("scope", "instance")
+            desc = (res.get("description") or "").strip()
+            if rfile:
+                if scope == "global":
+                    url = f"../../common/{rfile}"
+                elif scope == "course":
+                    url = f"../common/{rfile}"
+                else:
+                    url = f"common/{rfile}"
+            else:
+                url = ""
+            entry = f"[{rname}]({url})" if url else rname
+            suffix = f" — {desc}" if desc else ""
+            lines.append(f"- {entry}{suffix}")
+        lines.append("")
 
     if not sessions:
         lines += ["*No sessions recorded yet.*", ""]
@@ -380,24 +463,41 @@ def render_course_page(course: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
-def _section_content(section: dict[str, Any], session_dir: Path) -> str:
-    """Return the body text for a section: inline content or file contents.
+def _resolve_file_path(ref: str, scope: str, session_dir: Path, instance_dir: Path) -> Path:
+    """Return the filesystem path for a file: reference given its scope.
 
-    File paths are relative to the per-session data directory
-    (e.g. data/courses/bbh-2026.1/session-01/).
+    scope: session  (default) → session_dir / ref
+    scope: instance           → instance_dir / "common" / ref
+    scope: course             → instance_dir.parent / "common" / ref
+    scope: global             → data/courses/common/ / ref
     """
+    if scope == "instance":
+        return instance_dir / "common" / ref
+    if scope == "course":
+        return instance_dir.parent / "common" / ref
+    if scope == "global":
+        return _COURSES_DATA_DIR / "common" / ref
+    return session_dir / ref
+
+
+def _section_content(section: dict[str, Any], session_dir: Path, instance_dir: Path) -> str:
+    """Return the body text for a section: inline content or file contents."""
     if section.get("file"):
-        file_path = session_dir / section["file"]
+        ref = section["file"]
+        if ref.startswith("http"):
+            return f"*(external link: `{ref}`)*"
+        scope = section.get("scope", "session")
+        file_path = _resolve_file_path(ref, scope, session_dir, instance_dir)
         if file_path.exists():
             return file_path.read_text(encoding="utf-8").strip()
-        return f"*(file not found: `{section['file']}`)*"
+        return f"*(file not found: `{ref}`)*"
     return (section.get("content") or "").strip()
 
 
 def render_session_page(
     course: dict[str, Any],
     session: dict[str, Any],
-    course_dir: Path | None = None,
+    instance_dir: Path | None = None,
 ) -> tuple[str, dict[str, str]]:
     """Render mkdocs_src/courses/<id>/sessions/session-NN.md.
 
@@ -407,10 +507,10 @@ def render_session_page(
     """
     cid = course["id"]
     name = course.get("name", cid)
-    if course_dir is None:
-        course_dir = _COURSES_DATA_DIR / cid
+    if instance_dir is None:
+        instance_dir = _COURSES_DATA_DIR / cid
     sess_slug = session_slug(session)
-    session_dir = course_dir / sess_slug
+    session_dir = instance_dir / sess_slug
 
     num = session.get("number", "")
     focus = session.get("focus", "")
@@ -436,7 +536,7 @@ def render_session_page(
 
     for section in sections:
         heading = section.get("heading", "")
-        body = _section_content(section, session_dir)
+        body = _section_content(section, session_dir, instance_dir)
         cslug = content_slug(section)
         section_urls[heading] = f"{sess_slug}/{cslug}.md"
         subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
@@ -445,7 +545,7 @@ def render_session_page(
     # session subdirectory but never surfaced in the agenda or Additional Info.
     for sp_decl in subpage_decls:
         heading = sp_decl.get("heading", "")
-        body = _section_content(sp_decl, session_dir)
+        body = _section_content(sp_decl, session_dir, instance_dir)
         cslug = content_slug(sp_decl)
         subpages[f"{cslug}.md"] = f"# {heading}\n\n{_strip_leading_h1(body)}\n"
 
@@ -635,7 +735,10 @@ def _render_session_exercise_overview(
 
 # ── Nav management ────────────────────────────────────────────────────────────
 
-def _build_nav_block(courses: list[dict[str, Any]]) -> str:
+def _build_nav_block(
+    courses: list[dict[str, Any]],
+    group_data_map: dict[str, dict[str, Any]],
+) -> str:
     """Build the YAML nav fragment for the Courses section."""
     lines = [
         _NAV_START,
@@ -645,19 +748,46 @@ def _build_nav_block(courses: list[dict[str, Any]]) -> str:
 
     by_group: dict[str, list[dict[str, Any]]] = {}
     for course in courses:
-        by_group.setdefault(course_group(course), []).append(course)
+        by_group.setdefault(instance_group(course), []).append(course)
 
-    for group, group_courses in by_group.items():
-        label = _GROUP_LABELS.get(group, group.upper())
+    for group, group_instances in by_group.items():
+        gdata = group_data_map.get(group, {})
+        label = gdata.get("name") or _GROUP_LABELS.get(group, group.upper())
+        resources = gdata.get("resources") or []
+
         lines.append(f"  - {label}:")
         lines.append(f"    - Overview: courses/{group}/index.md")
-        lines.append(
-            f"    - Student Resources: courses/{group}/common/student-resources.md"
-        )
-        for course in group_courses:
+
+        if resources:
+            for res in resources:
+                rname = res.get("name", "")
+                rfile = res.get("file", "")
+                scope = res.get("scope", "course")
+                if rname and rfile:
+                    if scope == "global":
+                        lines.append(f"    - {rname}: courses/common/{rfile}")
+                    else:
+                        lines.append(f"    - {rname}: courses/{group}/common/{rfile}")
+        else:
+            lines.append(
+                f"    - Student Resources: courses/{group}/common/student-resources.md"
+            )
+
+        for course in group_instances:
             cid = course["id"]
             lines.append(f"    - {cid}:")
             lines.append(f"      - Overview: courses/{group}/{cid}/index.md")
+            for res in course.get("resources") or []:
+                rname = res.get("name", "")
+                rfile = res.get("file", "")
+                scope = res.get("scope", "instance")
+                if rname and rfile:
+                    if scope == "global":
+                        lines.append(f"      - {rname}: courses/common/{rfile}")
+                    elif scope == "course":
+                        lines.append(f"      - {rname}: courses/{group}/common/{rfile}")
+                    else:
+                        lines.append(f"      - {rname}: courses/{group}/{cid}/common/{rfile}")
             sessions = course.get("sessions", [])
             if sessions:
                 lines.append("      - Sessions:")
@@ -672,10 +802,13 @@ def _build_nav_block(courses: list[dict[str, Any]]) -> str:
     return "\n".join(lines)
 
 
-def update_nav(courses: list[dict[str, Any]]) -> None:
+def update_nav(
+    courses: list[dict[str, Any]],
+    group_data_map: dict[str, dict[str, Any]],
+) -> None:
     """Insert or replace the Courses block in mkdocs_nav.yml."""
     nav_text = _NAV_PATH.read_text()
-    new_block = _build_nav_block(courses)
+    new_block = _build_nav_block(courses, group_data_map)
 
     if _NAV_START in nav_text:
         pattern = re.compile(
@@ -701,7 +834,7 @@ def update_nav(courses: list[dict[str, Any]]) -> None:
 def main() -> None:
     import shutil
 
-    courses = load_all_courses()
+    courses = load_all_instances()
     print(f"Found {len(courses)} course(s): {[c['id'] for c in courses]}")
 
     # Wipe and recreate so stale files (old non-grouped paths) don't linger.
@@ -713,38 +846,48 @@ def main() -> None:
     idx.write_text(render_courses_index(courses))
     print(f"  Wrote {idx.relative_to(_REPO_ROOT)}")
 
+    # Copy global common resources (data/courses/common/ → mkdocs_src/courses/common/).
+    _copy_global_resources(_COURSES_SITE_DIR / "common")
+
     # Group courses and generate group landing + common resource pages.
     by_group: dict[str, list[dict[str, Any]]] = {}
     for course in courses:
-        by_group.setdefault(course_group(course), []).append(course)
+        by_group.setdefault(instance_group(course), []).append(course)
 
-    for group, group_courses in by_group.items():
+    # Load group-level course.yml for every group that has one.
+    group_data_map: dict[str, dict[str, Any]] = {}
+    for group in by_group:
+        group_data_map[group] = load_course_data(_COURSES_DATA_DIR / group)
+
+    for group, group_instances in by_group.items():
         group_out = _COURSES_SITE_DIR / group
         common_out = group_out / "common"
         group_out.mkdir(parents=True, exist_ok=True)
         common_out.mkdir(parents=True, exist_ok=True)
 
         gp = group_out / "index.md"
-        gp.write_text(render_group_page(group, group_courses))
+        gp.write_text(render_course_page(group, group_instances, group_data_map[group]))
         print(f"  Wrote {gp.relative_to(_REPO_ROOT)}")
 
-        _copy_common_resources(group, common_out)
+        _copy_course_resources(group, common_out)
 
-        for course in group_courses:
+        for course in group_instances:
             cid = course["id"]
             course_out = group_out / cid
             sessions_out = course_out / "sessions"
             course_out.mkdir(parents=True, exist_ok=True)
             sessions_out.mkdir(parents=True, exist_ok=True)
 
+            instance_dir = course.get("_instance_dir") or _COURSES_DATA_DIR / cid
+
             cp = course_out / "index.md"
-            cp.write_text(render_course_page(course))
+            cp.write_text(render_instance_page(course))
             print(f"  Wrote {cp.relative_to(_REPO_ROOT)}")
 
-            course_dir = course.get("_course_dir") or _COURSES_DATA_DIR / cid
+            _copy_instance_resources(instance_dir, course_out)
             for session in course.get("sessions", []):
                 sp = sessions_out / session_filename(session)
-                page_md, subpages = render_session_page(course, session, course_dir)
+                page_md, subpages = render_session_page(course, session, instance_dir)
                 sp.write_text(page_md)
                 print(f"  Wrote {sp.relative_to(_REPO_ROOT)}")
 
@@ -756,7 +899,7 @@ def main() -> None:
                         subpage_path.write_text(content)
                         print(f"  Wrote {subpage_path.relative_to(_REPO_ROOT)}")
 
-                sess_data_dir = course_dir / session_slug(session)
+                sess_data_dir = instance_dir / session_slug(session)
                 files_out_dir = sessions_out / session_slug(session)
 
                 # Collect all session-level files that need copying:
@@ -769,7 +912,7 @@ def main() -> None:
                     else list(readings_raw)
                 )
                 reading_files = [
-                    {"file": r.get("file", "")}
+                    {"file": r.get("file", ""), "scope": r.get("scope", "session")}
                     for r in reading_list
                     if r.get("file")
                 ]
@@ -780,7 +923,8 @@ def main() -> None:
                         src_name = f.get("file", "")
                         if not src_name:
                             continue
-                        src = sess_data_dir / src_name
+                        scope = f.get("scope", "session")
+                        src = _resolve_file_path(src_name, scope, sess_data_dir, instance_dir)
                         if src.exists():
                             dst = files_out_dir / src_name
                             dst.parent.mkdir(parents=True, exist_ok=True)
@@ -822,7 +966,7 @@ def main() -> None:
                         (ex_site_dir / "index.md").write_text(overview)
                         print(f"  Wrote {(ex_site_dir / 'index.md').relative_to(_REPO_ROOT)}")
 
-    update_nav(courses)
+    update_nav(courses, group_data_map)
     print("Done.")
 
 

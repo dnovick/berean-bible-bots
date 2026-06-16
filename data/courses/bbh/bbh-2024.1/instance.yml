@@ -12,6 +12,12 @@ description: >
   Primary textbook: *Basics of Biblical Hebrew Grammar* — Pratico & Van Pelt,
   3rd ed. (Zondervan).
 
+resources:
+  - name: "Global Test File"
+    file: "foo.txt"
+    scope: global
+    description: "Scope resolution test — file lives in data/courses/common/"
+
 # session_groups divides the sessions table into labeled sub-sections.
 # Each entry specifies a heading and the inclusive session number range (from/to).
 # Sessions outside all groups appear under "Other Sessions" at the bottom.
