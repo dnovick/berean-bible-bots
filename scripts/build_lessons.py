@@ -203,6 +203,14 @@ def _read_exercise_yml(ex_dir: Path) -> dict[str, Any]:
         return yaml.safe_load(f) or {}
 
 
+def _read_deck_yml(slug_dir: Path) -> dict[str, Any]:
+    path = slug_dir / "deck.yml"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
+
+
 def _strip_tags(html: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html)).strip()
 
@@ -472,38 +480,66 @@ def build_chapter(
 
     # ── Flashcard decks ───────────────────────────────────────────────────────
     deck_items: list[dict] = []
+    flashcards_src = src_dir / "flashcards"
     if flashcard_slugs is not None:
-        # Declared slugs — resolve to filenames
+        # Declared slugs — resolve from flashcards/<slug>/ subdirectory
         for slug in flashcard_slugs:
-            deck_md = src_dir / f"ch{ch_num}-{slug}-deck.md"
-            if deck_md.exists():
+            slug_dir = flashcards_src / slug
+            stem = f"ch{ch_num}-{slug}-deck"
+            deck_md = slug_dir / f"{stem}.md"
+            if not deck_md.exists():
+                continue
+            deck_yml = _read_deck_yml(slug_dir)
+            title_str = deck_yml.get("name") or slug.replace("-", " ").title()
+            desc_str = deck_yml.get("description") or _deck_description(deck_md)
+            content = _prepend_deck_download_header(
+                deck_md.read_text(encoding="utf-8"), stem
+            )
+            (dst_dir / f"{stem}.md").write_text(content, encoding="utf-8")
+            for ext in (".txt", "-fd.txt"):
+                src_file = slug_dir / f"{stem}{ext}"
+                if src_file.exists():
+                    shutil.copy(src_file, dst_dir / src_file.name)
+            deck_items.append({"title": title_str, "md": f"{stem}.md", "desc": desc_str})
+    else:
+        # Auto-discover fallback: check flashcards/<slug>/ subdirs, then chapter root
+        if flashcards_src.is_dir():
+            for slug_dir in sorted(d for d in flashcards_src.iterdir() if d.is_dir()):
+                slug = slug_dir.name
+                stem = f"ch{ch_num}-{slug}-deck"
+                deck_md = slug_dir / f"{stem}.md"
+                if not deck_md.exists():
+                    continue
+                deck_yml = _read_deck_yml(slug_dir)
+                title_str = deck_yml.get("name") or slug.replace("-", " ").title()
+                desc_str = deck_yml.get("description") or _deck_description(deck_md)
+                content = _prepend_deck_download_header(
+                    deck_md.read_text(encoding="utf-8"), stem
+                )
+                (dst_dir / f"{stem}.md").write_text(content, encoding="utf-8")
+                for ext in (".txt", "-fd.txt"):
+                    src_file = slug_dir / f"{stem}{ext}"
+                    if src_file.exists():
+                        shutil.copy(src_file, dst_dir / src_file.name)
+                deck_items.append({"title": title_str, "md": f"{stem}.md", "desc": desc_str})
+        else:
+            # Legacy: flat deck files in chapter root
+            for deck_md in sorted(src_dir.glob("*-deck.md")):
                 content = _prepend_deck_download_header(
                     deck_md.read_text(encoding="utf-8"), deck_md.stem
                 )
                 (dst_dir / deck_md.name).write_text(content, encoding="utf-8")
+                for txt in src_dir.glob(f"{deck_md.stem}*.txt"):
+                    shutil.copy(txt, dst_dir / txt.name)
                 deck_items.append({
-                    "title": slug.replace("-", " ").title(),
+                    "title": _deck_short_title(deck_md.stem),
                     "md": deck_md.name,
                     "desc": _deck_description(deck_md),
                 })
-    else:
-        # Auto-discover (fallback for chapters without flashcards: in chapter.yml)
-        for deck_md in sorted(src_dir.glob("*-deck.md")):
-            content = _prepend_deck_download_header(
-                deck_md.read_text(encoding="utf-8"), deck_md.stem
-            )
-            (dst_dir / deck_md.name).write_text(content, encoding="utf-8")
-            deck_items.append({
-                "title": _deck_short_title(deck_md.stem),
-                "md": deck_md.name,
-                "desc": _deck_description(deck_md),
-            })
-    for txt in src_dir.glob("*.txt"):
-        shutil.copy(txt, dst_dir / txt.name)
 
-    # Other .md files (paradigms, etc.)
+    # Other .md files (paradigms, etc.) — exclude lesson.md and README.md
     for md in src_dir.glob("*.md"):
-        if md.name not in ("lesson.md", "README.md") and not md.name.endswith("-deck.md"):
+        if md.name not in ("lesson.md", "README.md"):
             shutil.copy(md, dst_dir / md.name)
 
     # ── Listing pages ─────────────────────────────────────────────────────────
