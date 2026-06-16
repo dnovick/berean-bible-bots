@@ -330,14 +330,16 @@ def render_course_page(
 
 
 def _copy_course_resources(group: str, common_out: Path) -> None:
-    """Copy data/courses/<group>/common/*.md into mkdocs_src/courses/<group>/common/."""
+    """Copy data/courses/<group>/common/* into mkdocs_src/courses/<group>/common/."""
     common_data = _COURSES_DATA_DIR / group / "common"
     if not common_data.is_dir():
         return
-    for src in sorted(common_data.glob("*.md")):
-        dst = common_out / src.name
-        dst.write_text(src.read_text(encoding="utf-8"))
-        print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
+    common_out.mkdir(parents=True, exist_ok=True)
+    for src in sorted(common_data.iterdir()):
+        if src.is_file():
+            dst = common_out / src.name
+            dst.write_bytes(src.read_bytes())
+            print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
 
 
 def _copy_global_resources(global_out: Path) -> None:
