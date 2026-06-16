@@ -341,15 +341,16 @@ def _copy_course_resources(group: str, common_out: Path) -> None:
 
 
 def _copy_global_resources(global_out: Path) -> None:
-    """Copy data/courses/common/*.md into mkdocs_src/courses/common/."""
+    """Copy data/courses/common/* into mkdocs_src/courses/common/."""
     global_data = _COURSES_DATA_DIR / "common"
     if not global_data.is_dir():
         return
     global_out.mkdir(parents=True, exist_ok=True)
-    for src in sorted(global_data.glob("*.md")):
-        dst = global_out / src.name
-        dst.write_text(src.read_text(encoding="utf-8"))
-        print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
+    for src in sorted(global_data.iterdir()):
+        if src.is_file():
+            dst = global_out / src.name
+            dst.write_bytes(src.read_bytes())
+            print(f"  Wrote {dst.relative_to(_REPO_ROOT)}")
 
 
 def _copy_instance_resources(instance_dir: Path, instance_out: Path) -> None:
