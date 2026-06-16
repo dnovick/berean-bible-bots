@@ -1,0 +1,5 @@
+name: 'Exercise: Ch17 Contract Verb Parsing'
+description: 'Parse each contracted verb form (person, number, lexical form) and identify
+  the two vowels that contracted to produce the form. All verbs are present active
+  indicative. Forms are drawn from all three contract classes: α-contract, ε-contract,
+  and ο-contract.'

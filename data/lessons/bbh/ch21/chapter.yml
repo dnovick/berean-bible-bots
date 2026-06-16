@@ -8,3 +8,12 @@ focus: >
   function as a substitute for an imperative. Distinguish the infinitive
   absolute from the infinitive construct by form and context; both can appear
   in close proximity in the same clause.
+
+flashcards: 
+  - morphology
+  - vocab
+
+exercises: 
+  - ch21-parsing-drill
+  - ch21-passage-exercise
+  - ch21-qal-ia-paradigm-drill

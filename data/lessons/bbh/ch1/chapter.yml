@@ -7,3 +7,9 @@ focus: >
   Learn to read right-to-left script and recognize the letter classes—gutturals,
   begadkephat, and sibilants—that govern spelling and pointing throughout the
   entire grammar.
+
+flashcards: 
+  - alphabet
+
+exercises: 
+  - ch1-letter-recognition

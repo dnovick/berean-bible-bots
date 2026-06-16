@@ -8,3 +8,9 @@ focus: >
   action) and practice parsing person, number, tense-form, voice, and mood
   (PNTVM). First-declension feminine noun paradigms (ὥρα, γραφή) are
   introduced alongside the verbal material.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch16-present-active-parsing

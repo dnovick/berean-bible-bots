@@ -8,3 +8,9 @@ focus: >
   (accusative) functions, and use the article to determine case when the noun
   ending alone is ambiguous. The article paradigm is one of the highest-yield
   memorization tasks in the entire course.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch6-nom-acc-parsing

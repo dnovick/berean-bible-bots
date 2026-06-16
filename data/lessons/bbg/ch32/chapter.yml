@@ -9,3 +9,9 @@ focus: >
   articular infinitive with various prepositions (ἐν τῷ, πρὸ τοῦ, μετὰ τό)
   encoding temporal relationships, and the nominative subject of an infinitive
   in accusative case.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch32-infinitive-parsing

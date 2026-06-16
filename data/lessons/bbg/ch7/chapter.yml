@@ -8,3 +8,13 @@ focus: >
   (indirect object, sphere, means, manner), and practice parsing all four cases
   in connected text. Completing the four main cases of the second declension
   equips students to read basic noun phrases in the GNT.
+
+flashcards: 
+  - article
+  - autos
+  - noun-paradigm
+  - vocab
+
+exercises: 
+  - ch7-article-id
+  - ch7-gen-dat-parsing

@@ -8,3 +8,9 @@ focus: >
   These high-frequency words appear on nearly every page of Daniel and Ezra
   and are essential for parsing clause structure and discourse flow before
   the verbal chapters begin.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch11-particle-drill

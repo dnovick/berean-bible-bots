@@ -1,0 +1,4 @@
+name: 'Exercise: Ch14 Relative Pronoun Parsing'
+description: 'For each item: (1) parse the relative pronoun (gender, case, number),
+  (2) identify the antecedent, and (3) translate the relative clause. Forms are drawn
+  from GNT passages and constructed examples covering all genders, cases, and numbers.'

@@ -1,0 +1,4 @@
+name: 'Exercise: Ch18 Present Middle/Passive Indicative Parsing'
+description: Parse each present middle/passive indicative verb form (person, number,
+  lexical form) and identify the most likely voice (Middle or Passive) based on context
+  clues provided. Deponent verbs are included and labeled.

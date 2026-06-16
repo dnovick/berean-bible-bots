@@ -8,3 +8,9 @@ focus: >
   prepositional phrases. Prepositions recur in every translated passage and
   also attach pronominal suffixes (Ch9), so correct identification now is
   essential.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch6-preposition-parsing

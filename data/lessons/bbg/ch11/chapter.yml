@@ -7,3 +7,9 @@ focus: >
   pronouns do not have gender in the first and second persons, that the
   nominative forms are emphatic (the verb ending already carries person/number),
   and that oblique forms regularly appear as objects of prepositions and verbs.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch11-pronoun-parsing

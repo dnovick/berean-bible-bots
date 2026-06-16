@@ -8,3 +8,12 @@ focus: >
   stem). Understand the semantic range of the perfect aspect—completed action,
   stative—so that translation choices reflect Hebrew verbal aspect rather than
   defaulting to simple past.
+
+flashcards: 
+  - morphology
+  - vocab
+
+exercises: 
+  - ch13-parsing-drill
+  - ch13-passage-exercise
+  - ch13-qal-perfect-paradigm-drill

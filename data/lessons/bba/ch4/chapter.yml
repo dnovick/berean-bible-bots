@@ -8,3 +8,9 @@ focus: >
   and differences from Hebrew noun patterns. The absolute state is the citation
   form and the starting point for the determined (Ch5) and construct (Ch6)
   state paradigms.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch4-noun-identification

@@ -8,3 +8,9 @@ focus: >
   frequently serve as matres lectionis in Aramaic spelling, and understand
   that right-to-left reading direction and root-and-pattern morphology carry
   over directly from Hebrew to Aramaic.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch1-letter-recognition

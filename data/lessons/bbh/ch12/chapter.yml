@@ -9,3 +9,9 @@ focus: >
   understand the root-and-pattern morphology that makes Hebrew verb parsing
   systematic. This chapter provides the conceptual map for every verb chapter
   that follows.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch12-verb-overview
