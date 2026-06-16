@@ -1,0 +1,92 @@
+name: Slack — Recording Posted
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'data/courses/**/session.yml'
+
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 2   # need HEAD and HEAD^ to detect what changed
+
+      - name: Detect new recording links and notify Slack
+        env:
+          SLACK_WEBHOOK_BBH_2024_1: ${{ secrets.SLACK_WEBHOOK_BBH_2024_1 }}
+          SLACK_WEBHOOK_BBH_2026_1: ${{ secrets.SLACK_WEBHOOK_BBH_2026_1 }}
+        run: |
+          python3 << 'EOF'
+          import subprocess, yaml, json, os, urllib.request
+
+          # Map course-id → GitHub secret name → webhook URL.
+          # To add a new course: add an entry here and a matching GitHub secret.
+          WEBHOOKS = {
+              'bbh-2024.1': os.environ.get('SLACK_WEBHOOK_BBH_2024_1', ''),
+              'bbh-2026.1': os.environ.get('SLACK_WEBHOOK_BBH_2026_1', ''),
+          }
+
+          changed = subprocess.check_output(
+              ['git', 'diff', '--name-only', 'HEAD^', 'HEAD'],
+              text=True,
+          ).splitlines()
+
+          session_files = [
+              f for f in changed
+              if f.startswith('data/courses/') and f.endswith('/session.yml')
+          ]
+
+          def get_recording(ref, path):
+              try:
+                  raw = subprocess.check_output(
+                      ['git', 'show', f'{ref}:{path}'],
+                      text=True, stderr=subprocess.DEVNULL,
+                  )
+                  return ((yaml.safe_load(raw) or {}).get('recording') or '').strip()
+              except subprocess.CalledProcessError:
+                  return ''
+
+          for f in session_files:
+              old_rec = get_recording('HEAD^', f)
+              new_rec = get_recording('HEAD',  f)
+
+              # Only fire when a URL is newly present (not when it is removed or unchanged)
+              if not new_rec or old_rec:
+                  continue
+
+              raw  = subprocess.check_output(['git', 'show', f'HEAD:{f}'], text=True)
+              data = yaml.safe_load(raw) or {}
+
+              # Path: data/courses/<lang>/<course-id>/<session-dir>/session.yml
+              parts      = f.split('/')
+              course     = parts[3]                           # e.g. bbh-2024.1
+              session_num = parts[4].replace('session-', '')  # e.g. 130
+              focus      = data.get('focus', '(no title)')
+              date       = str(data.get('date', ''))
+
+              webhook = WEBHOOKS.get(course, '')
+              if not webhook:
+                  print(f"No webhook configured for course '{course}' — skipping")
+                  continue
+
+              text = (
+                  f":movie_camera: *Recording posted — {course} · Session {session_num}*\n"
+                  f"*{focus}*  ·  {date}\n"
+                  f"<{new_rec}|Watch recording>"
+              )
+              payload = json.dumps({
+                  'blocks': [{'type': 'section', 'text': {'type': 'mrkdwn', 'text': text}}],
+              }).encode()
+
+              req = urllib.request.Request(
+                  webhook,
+                  data=payload,
+                  headers={'Content-Type': 'application/json'},
+                  method='POST',
+              )
+              with urllib.request.urlopen(req) as resp:
+                  print(f"Notified {course} session {session_num}: HTTP {resp.status}")
+          EOF
