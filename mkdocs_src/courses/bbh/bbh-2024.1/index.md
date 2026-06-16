@@ -9,7 +9,7 @@
 
 | Session | Date | Recording |
 |---|---|---|
-| [130 — Hophal Strong Verbs](sessions/session-130.md) | Jun 15, 2026 |  |
+| [130 — Hophal Strong Verbs](sessions/session-130.md) | Jun 15, 2026 | [Watch](https://drive.google.com/file/d/1weQ98AlV_YnH_Q2OzHs-EvSTBTsU6wSe/view?usp=drive_web) |
 | [131 — Hophal Weak Verbs](sessions/session-131.md) | Jun 22, 2026 |  |
 | [132 — Piel Strong Verbs](sessions/session-132.md) | Jun 29, 2026 |  |
 | [133 — Piel Weak Verbs](sessions/session-133.md) | Jul 13, 2026 |  |
