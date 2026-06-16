@@ -102,10 +102,12 @@ def _check_chapter(
     ch_num = str(data.get("chapter", ""))
 
     # ── Flashcards ────────────────────────────────────────────────────────────
+    # flashcards: [] (explicit empty list) = intentionally no decks — no warning.
+    # Missing flashcards: key = possibly forgotten — warn.
+    if "flashcards" not in data:
+        _warn(warnings, ch_yml_path, "flashcards: field missing from chapter.yml")
     flashcard_slugs: list[str] = data.get("flashcards") or []
-    if not flashcard_slugs:
-        _warn(warnings, ch_yml_path, "no flashcard decks declared")
-    else:
+    if flashcard_slugs:
         flashcards_dir = ch_dir / "flashcards"
         for slug in flashcard_slugs:
             slug_dir = flashcards_dir / slug
@@ -126,6 +128,10 @@ def _check_chapter(
 
     # ── Exercises ─────────────────────────────────────────────────────────────
     exercises_dir = ch_dir / "exercises"
+    # exercises: [] (explicit empty list) = intentionally no exercises — no warning.
+    # Missing exercises: key = possibly forgotten — warn.
+    if "exercises" not in data:
+        _warn(warnings, ch_yml_path, "exercises: field missing from chapter.yml")
     exercise_list: list[str] = data.get("exercises") or []
     declared: set[str] = set(exercise_list)
 
@@ -145,13 +151,6 @@ def _check_chapter(
                 _warn(warnings, ch_yml_path,
                       f"exercise directory {ex_dir.name!r} exists but is not listed in exercises:")
                 _check_exercise(ex_dir, errors, warnings)
-
-    # Warn if chapter has no exercises at all
-    has_any_exercises = exercises_dir.is_dir() and any(
-        d for d in exercises_dir.iterdir() if d.is_dir()
-    )
-    if not has_any_exercises:
-        _warn(warnings, ch_yml_path, "chapter has no exercises")
 
 
 # ── Main ──────────────────────────────────────────────────────────────────────
