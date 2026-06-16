@@ -3,6 +3,10 @@
 **Textbook:** Basics of Biblical Hebrew, 3rd ed.  
 **Instructor(s):** David Novick  
 
+## Resources
+
+- [Global Test File](../../common/foo.txt) — Scope resolution test — file lives in data/courses/common/
+
 ## Sessions
 
 ### Introduction to the Derived Stems

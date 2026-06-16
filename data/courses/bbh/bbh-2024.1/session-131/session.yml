@@ -29,6 +29,7 @@ reading:
     description: "The law of the LORD - an acrostic poem. Part א."
     passage: "Psalm 119:1-8"
     file: "ps119-1-8.html"
+    scope: instance
     duration: "20 min"
 
 lesson:

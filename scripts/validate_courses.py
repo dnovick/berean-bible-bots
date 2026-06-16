@@ -2,7 +2,8 @@
 """Validate course and lesson content structure.
 
 Checks:
-  - course.yml has required fields (id, name, textbook)
+  - instance.yml has required fields (id, name, textbook)
+  - course.yml (group-level), if present, has required field: name
   - Every session.yml has date: and focus: (non-empty)
   - date: is a valid YYYY-MM-DD string
   - chapter: (if present) is within the valid range for the textbook
@@ -16,6 +17,12 @@ cause a non-zero exit.
 Usage:
     python scripts/validate_courses.py
     python scripts/validate_courses.py --strict   # warnings also count as errors
+
+File scope levels (used in session.yml file: entries):
+    session  (default) — file lives in the session directory
+    instance           — file lives in <instance>/common/  (e.g. bbh-2024.1/common/)
+    course             — file lives in <group>/common/     (e.g. bbh/common/)
+    global             — file lives in data/courses/common/
 """
 
 from __future__ import annotations
@@ -30,6 +37,7 @@ import yaml
 _REPO = Path(__file__).resolve().parent.parent
 _COURSES_DIR = _REPO / "data" / "courses"
 _LESSONS_DIR = _REPO / "data" / "lessons"
+_GLOBAL_COMMON_DIR = _COURSES_DIR / "common"
 
 # Maximum valid chapter number per textbook (short name → max chapter)
 _CHAPTER_MAX: dict[str, int] = {
@@ -41,6 +49,23 @@ _CHAPTER_MAX: dict[str, int] = {
 # ── Helpers ───────────────────────────────────────────────────────────────────
 
 
+def _resolve_file(ref: str, scope: str, session_dir: Path, instance_dir: Path) -> Path:
+    """Return the expected filesystem path for a file: reference given its scope.
+
+    scope: session  (default) → session_dir / ref
+    scope: instance           → instance_dir / "common" / ref
+    scope: course             → instance_dir.parent / "common" / ref
+    scope: global             → data/courses/common/ / ref
+    """
+    if scope == "instance":
+        return instance_dir / "common" / ref
+    if scope == "course":
+        return instance_dir.parent / "common" / ref
+    if scope == "global":
+        return _GLOBAL_COMMON_DIR / ref
+    return session_dir / ref
+
+
 def _err(errors: list[str], path: Path, msg: str) -> None:
     errors.append(f"ERROR  {path.relative_to(_REPO)}  —  {msg}")
 
@@ -49,24 +74,77 @@ def _warn(warnings: list[str], path: Path, msg: str) -> None:
     warnings.append(f"WARN   {path.relative_to(_REPO)}  —  {msg}")
 
 
-# ── Course-level checks ───────────────────────────────────────────────────────
+# ── Group-level checks ────────────────────────────────────────────────────────
 
 
 def _check_course_yml(
-    course_yml: Path,
+    group_yml: Path,
     errors: list[str],
     warnings: list[str],
 ) -> dict:
     try:
-        with open(course_yml) as f:
+        with open(group_yml) as f:
             data = yaml.safe_load(f) or {}
     except Exception as exc:
-        _err(errors, course_yml, f"YAML parse error: {exc}")
+        _err(errors, group_yml, f"YAML parse error: {exc}")
+        return {}
+
+    if not data.get("name"):
+        _err(errors, group_yml, "missing required field: 'name'")
+
+    group_dir = group_yml.parent
+    for res in data.get("resources") or []:
+        if not isinstance(res, dict):
+            continue
+        ref = res.get("file") or ""
+        scope = res.get("scope", "course")
+        if not ref:
+            continue
+        resolved = _GLOBAL_COMMON_DIR / ref if scope == "global" else group_dir / "common" / ref
+        if not resolved.exists():
+            _err(errors, group_yml, f"resource file not found: {ref!r} (scope: {scope!r})")
+
+    return data
+
+
+# ── Instance-level checks ─────────────────────────────────────────────────────
+
+
+def _check_instance_yml(
+    instance_yml: Path,
+    errors: list[str],
+    warnings: list[str],
+) -> dict:
+    try:
+        with open(instance_yml) as f:
+            data = yaml.safe_load(f) or {}
+    except Exception as exc:
+        _err(errors, instance_yml, f"YAML parse error: {exc}")
         return {}
 
     for field in ("id", "name", "textbook"):
         if not data.get(field):
-            _err(errors, course_yml, f"missing required field: {field!r}")
+            _err(errors, instance_yml, f"missing required field: {field!r}")
+
+    instance_dir = instance_yml.parent
+    for res in data.get("resources") or []:
+        if not isinstance(res, dict):
+            continue
+        ref = res.get("file") or ""
+        scope = res.get("scope", "instance")
+        if not ref:
+            continue
+        if scope == "instance":
+            resolved = instance_dir / "common" / ref
+        elif scope == "course":
+            resolved = instance_dir.parent / "common" / ref
+        elif scope == "global":
+            resolved = _GLOBAL_COMMON_DIR / ref
+        else:
+            _err(errors, instance_yml, f"unknown scope {scope!r} for resource {ref!r}")
+            continue
+        if not resolved.exists():
+            _err(errors, instance_yml, f"resource file not found: {ref!r} (scope: {scope!r})")
 
     return data
 
@@ -77,6 +155,7 @@ def _check_course_yml(
 def _check_session_yml(
     session_yml: Path,
     textbook: str,
+    instance_dir: Path,
     errors: list[str],
     warnings: list[str],
 ) -> None:
@@ -131,34 +210,38 @@ def _check_session_yml(
             if not reading.get(field):
                 _err(errors, session_yml, f"reading entry missing required field: {field!r}")
         ref = reading.get("file")
+        scope = reading.get("scope", "session")
         if not ref:
             _err(errors, session_yml, "reading entry missing required field: 'file'")
-        elif not (session_dir / ref).exists():
-            _err(errors, session_yml, f"reading file not found: {ref!r}")
+        elif not _resolve_file(ref, scope, session_dir, instance_dir).exists():
+            _err(errors, session_yml, f"reading file not found: {ref!r} (scope: {scope!r})")
 
     # File references in sections — warn (file may be planned but not yet written)
     for section in data.get("sections") or []:
         if not isinstance(section, dict):
             continue
         ref = section.get("file")
-        if ref and not (session_dir / ref).exists():
-            _warn(warnings, session_yml, f"sections file not found: {ref!r}")
+        scope = section.get("scope", "session")
+        if ref and not ref.startswith("http") and not _resolve_file(ref, scope, session_dir, instance_dir).exists():
+            _warn(warnings, session_yml, f"sections file not found: {ref!r} (scope: {scope!r})")
 
     # File references in subpages — warn (file may be planned but not yet written)
     for sp in data.get("subpages") or []:
         if not isinstance(sp, dict):
             continue
         ref = sp.get("file")
-        if ref and not (session_dir / ref).exists():
-            _warn(warnings, session_yml, f"subpages file not found: {ref!r}")
+        scope = sp.get("scope", "session")
+        if ref and not _resolve_file(ref, scope, session_dir, instance_dir).exists():
+            _warn(warnings, session_yml, f"subpages file not found: {ref!r} (scope: {scope!r})")
 
     # File references in downloads — error (committed downloads must exist)
     for dl in data.get("files") or []:
         if not isinstance(dl, dict):
             continue
         ref = dl.get("file")
-        if ref and not (session_dir / ref).exists():
-            _err(errors, session_yml, f"files download not found: {ref!r}")
+        scope = dl.get("scope", "session")
+        if ref and not _resolve_file(ref, scope, session_dir, instance_dir).exists():
+            _err(errors, session_yml, f"files download not found: {ref!r} (scope: {scope!r})")
 
 
 # ── Exercise-level checks ─────────────────────────────────────────────────────
@@ -202,27 +285,34 @@ def main() -> int:
     for entry in sorted(_COURSES_DIR.iterdir()):
         if not entry.is_dir():
             continue
-        if (entry / "course.yml").exists():
-            course_dirs = [entry]
+
+        if (entry / "instance.yml").exists():
+            # Ungrouped legacy instance directly under data/courses/
+            instance_dirs = [entry]
         else:
-            course_dirs = [
+            # Group directory — validate group.yml if present, then scan instances
+            group_yml = entry / "course.yml"
+            if group_yml.exists():
+                _check_course_yml(group_yml, errors, warnings)
+
+            instance_dirs = [
                 d for d in sorted(entry.iterdir())
-                if d.is_dir() and (d / "course.yml").exists()
+                if d.is_dir() and (d / "instance.yml").exists()
             ]
 
-        for course_dir in course_dirs:
-            course_data = _check_course_yml(course_dir / "course.yml", errors, warnings)
-            textbook = course_data.get("textbook", "")
+        for instance_dir in instance_dirs:
+            instance_data = _check_instance_yml(instance_dir / "instance.yml", errors, warnings)
+            textbook = instance_data.get("textbook", "")
 
             for session_dir in sorted(
-                d for d in course_dir.iterdir()
+                d for d in instance_dir.iterdir()
                 if d.is_dir() and d.name.startswith("session-")
             ):
                 session_yml = session_dir / "session.yml"
                 if not session_yml.exists():
                     _warn(warnings, session_dir, "directory has no session.yml")
                     continue
-                _check_session_yml(session_yml, textbook, errors, warnings)
+                _check_session_yml(session_yml, textbook, instance_dir, errors, warnings)
 
     # Exercise format completeness
     _check_exercises(errors, warnings)

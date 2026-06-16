@@ -1,0 +1,27 @@
+# Group-level course YAML for Biblical Hebrew.
+#
+# name:        Display name for the course group (shown as the page heading and
+#              in the site nav).
+# description: Intro paragraph shown at the top of the course group page.
+#
+# resources:   Files in data/courses/bbh/common/ to list in the Resources
+#              section.  Each entry maps to one nav item and one bullet on the
+#              group page.
+#   - name:        Link label and nav title.
+#     file:        Filename inside data/courses/bbh/common/.
+#     description: Optional subtitle shown next to the link on the page.
+
+name: "Biblical Hebrew"
+
+description: >
+  Introduces the Biblical Hebrew language from the ground up. Students learn
+  the Hebrew alphabet (consonants and vowels), core morphology including nouns
+  and verbs across the major conjugations, and develop the vocabulary and
+  reading skills needed to engage the Old Testament in its original language.
+  Primary textbook: *Basics of Biblical Hebrew Grammar* — Pratico & Van Pelt,
+  3rd ed. (Zondervan).
+
+resources:
+  - name: "Student Resources"
+    file: "student-resources.md"
+    description: "Textbook acquisition and Bible software guide"
