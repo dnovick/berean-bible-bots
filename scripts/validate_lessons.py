@@ -106,15 +106,23 @@ def _check_chapter(
     if not flashcard_slugs:
         _warn(warnings, ch_yml_path, "no flashcard decks declared")
     else:
+        flashcards_dir = ch_dir / "flashcards"
         for slug in flashcard_slugs:
-            for suffix in (
-                f"ch{ch_num}-{slug}-deck.md",
-                f"ch{ch_num}-{slug}-deck.txt",
-                f"ch{ch_num}-{slug}-deck-fd.txt",
-            ):
-                if not (ch_dir / suffix).exists():
+            slug_dir = flashcards_dir / slug
+            stem = f"ch{ch_num}-{slug}-deck"
+
+            if not slug_dir.is_dir():
+                _err(errors, ch_yml_path,
+                     f"flashcard slug {slug!r}: directory flashcards/{slug}/ not found")
+                continue
+
+            if not (slug_dir / "deck.yml").exists():
+                _err(errors, slug_dir, "missing deck.yml")
+
+            for filename in (f"{stem}.md", f"{stem}.txt", f"{stem}-fd.txt"):
+                if not (slug_dir / filename).exists():
                     _err(errors, ch_yml_path,
-                         f"flashcard slug {slug!r}: missing {suffix}")
+                         f"flashcard slug {slug!r}: missing {filename}")
 
     # ── Exercises ─────────────────────────────────────────────────────────────
     exercises_dir = ch_dir / "exercises"
