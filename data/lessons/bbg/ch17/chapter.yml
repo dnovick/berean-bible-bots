@@ -8,3 +8,9 @@ focus: >
   Recognize contracted forms by their long-vowel or diphthong endings and
   identify the underlying stem vowel. Contract verbs—like ἀγαπάω, ποιέω,
   and πληρόω—are among the most common verbs in the NT.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch17-contract-verb-parsing

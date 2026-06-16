@@ -1,0 +1,5 @@
+name: 'Exercise: Ch13 Demonstrative Parsing'
+description: Parse each demonstrative form (giving gender, case, number, and the lexical
+  form) and identify whether it functions as an **adjective** (modifying a noun in
+  predicate position) or a **pronoun** (substantival/standalone). GNT examples are
+  drawn from the Synoptic Gospels and John.

@@ -7,3 +7,10 @@ focus: >
   shewa vowels (vocal and silent shewa, composite shewaim), and the role of
   matres lectionis. Correct vowel reading is the foundation for every parsing
   decision made in subsequent chapters.
+
+flashcards: 
+  - vocab
+  - vowels
+
+exercises: 
+  - ch2-vowel-identification

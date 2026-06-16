@@ -8,3 +8,14 @@ focus: >
   final chapter of BBH consolidates all seven stems and all major weak classes,
   equipping students to parse any Hebrew verb encountered in continuous
   biblical text.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch35-function-sort
+  - ch35-hithpael-weak-paradigm-drill
+  - ch35-passage-exercise
+  - ch35-qal-piel-hithpael-contrast
+  - ch35-stem-id-drill
+  - ch35-weak-form-id

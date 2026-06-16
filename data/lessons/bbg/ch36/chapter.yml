@@ -8,3 +8,9 @@ focus: >
   the vocative case, additional pronoun types, and numerals. This capstone
   chapter rounds out the BBG grammar, equipping students to read any passage
   in the Greek New Testament with the aid of a lexicon.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch36-mi-verbs-parsing

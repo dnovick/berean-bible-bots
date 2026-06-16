@@ -195,6 +195,14 @@ def _read_chapter_yml(course: str, ch: str) -> dict[str, Any]:
         return yaml.safe_load(f) or {}
 
 
+def _read_exercise_yml(ex_dir: Path) -> dict[str, Any]:
+    path = ex_dir / "exercise.yml"
+    if not path.exists():
+        return {}
+    with open(path, encoding="utf-8") as f:
+        return yaml.safe_load(f) or {}
+
+
 def _strip_tags(html: str) -> str:
     return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", html)).strip()
 
@@ -212,20 +220,6 @@ def _readme_description(readme_path: Path) -> str:
     desc = re.sub(r"^#{1,3}[^\n]*\n", "", desc, flags=re.MULTILINE).strip()
     desc = re.sub(r"^\*\*\w[^*]*:\*\*[^\n]*\n?", "", desc, flags=re.MULTILINE).strip()
     return desc
-
-
-def _readme_coverage_table(readme_path: Path) -> str:
-    if not readme_path.exists():
-        return ""
-    table_lines: list[str] = []
-    in_table = False
-    for line in readme_path.read_text(encoding="utf-8").splitlines():
-        if line.startswith("|"):
-            in_table = True
-            table_lines.append(line)
-        elif in_table:
-            break
-    return "\n".join(table_lines) if table_lines else ""
 
 
 def _sample_qas(html_path: Path, n: int = 3) -> list[tuple[str, str]]:
@@ -336,6 +330,7 @@ def _inject_lesson_header(
 def _build_exercise_page(
     ex_src: Path,
     ex_title: str,
+    ex_desc: str,
     ch_num: int,
     ch_title: str,
     html_name: str,
@@ -357,12 +352,8 @@ def _build_exercise_page(
         f"*Chapter {ch_num} — {ch_title}*", "",
         "  ".join(btn_parts), "",
     ]
-    desc = _readme_description(ex_src / "README.md")
-    if desc:
-        lines += [desc, ""]
-    cov = _readme_coverage_table(ex_src / "README.md")
-    if cov:
-        lines += ["## Coverage", "", cov, ""]
+    if ex_desc:
+        lines += [ex_desc, ""]
     for i, (q, a) in enumerate(_sample_qas(ex_src / html_name, n=3), 1):
         if i == 1:
             lines += ["## Sample Questions", ""]
@@ -421,14 +412,23 @@ def build_chapter(
     dst_dir = _MKDOCS_SRC / "lessons" / lang / ch
     dst_dir.mkdir(parents=True, exist_ok=True)
 
-    focus = (_read_chapter_yml(course, ch).get("focus") or "").strip()
+    chapter_data = _read_chapter_yml(course, ch)
+    focus = (chapter_data.get("focus") or "").strip()
+    flashcard_slugs: list[str] | None = chapter_data.get("flashcards")
+    exercise_list: list[str] | None = chapter_data.get("exercises")
 
     # ── Exercises ─────────────────────────────────────────────────────────────
     exercise_items: list[dict] = []
     exercises_src = src_dir / "exercises"
     if exercises_src.is_dir():
-        for ex_dir in sorted(d for d in exercises_src.iterdir() if d.is_dir()):
-            ex_name = ex_dir.name
+        # Get ordered exercise names: YAML-declared if present, else sorted from fs
+        if exercise_list is not None:
+            ex_names = [n for n in exercise_list if (exercises_src / n).is_dir()]
+        else:
+            ex_names = sorted(d.name for d in exercises_src.iterdir() if d.is_dir())
+
+        for ex_name in ex_names:
+            ex_dir = exercises_src / ex_name
             ex_dst = dst_dir / "exercises" / ex_name
             ex_dst.mkdir(parents=True, exist_ok=True)
             for ext in ("*.md", "*.html", "*.pdf"):
@@ -436,7 +436,10 @@ def build_chapter(
                     shutil.copy(f, ex_dst / f.name)
 
             html_files = list(ex_dir.glob("*.html"))
-            ex_desc = _readme_description(ex_dir / "README.md")
+            # Get title and description from exercise.yml; fall back to README.md
+            ex_yml = _read_exercise_yml(ex_dir)
+            ex_title = ex_yml.get("name") or slugify(ex_name)
+            ex_desc = ex_yml.get("description") or _readme_description(ex_dir / "README.md")
             if html_files:
                 stem = html_files[0].stem
                 html_name = html_files[0].name
@@ -445,7 +448,8 @@ def build_chapter(
                 (ex_dst / "index.md").write_text(
                     _build_exercise_page(
                         ex_src=ex_dir,
-                        ex_title=slugify(ex_name),
+                        ex_title=ex_title,
+                        ex_desc=ex_desc,
                         ch_num=ch_num,
                         ch_title=title,
                         html_name=html_name,
@@ -463,27 +467,43 @@ def build_chapter(
                 continue
 
             exercise_items.append(
-                {"title": slugify(ex_name), "link": ex_link, "desc": ex_desc}
+                {"title": ex_title, "link": ex_link, "desc": ex_desc}
             )
 
     # ── Flashcard decks ───────────────────────────────────────────────────────
     deck_items: list[dict] = []
-    for deck_md in sorted(src_dir.glob("*-deck.md")):
-        content = _prepend_deck_download_header(
-            deck_md.read_text(encoding="utf-8"), deck_md.stem
-        )
-        (dst_dir / deck_md.name).write_text(content, encoding="utf-8")
-        deck_items.append({
-            "title": _deck_short_title(deck_md.stem),
-            "md": deck_md.name,
-            "desc": _deck_description(deck_md),
-        })
+    if flashcard_slugs is not None:
+        # Declared slugs — resolve to filenames
+        for slug in flashcard_slugs:
+            deck_md = src_dir / f"ch{ch_num}-{slug}-deck.md"
+            if deck_md.exists():
+                content = _prepend_deck_download_header(
+                    deck_md.read_text(encoding="utf-8"), deck_md.stem
+                )
+                (dst_dir / deck_md.name).write_text(content, encoding="utf-8")
+                deck_items.append({
+                    "title": slug.replace("-", " ").title(),
+                    "md": deck_md.name,
+                    "desc": _deck_description(deck_md),
+                })
+    else:
+        # Auto-discover (fallback for chapters without flashcards: in chapter.yml)
+        for deck_md in sorted(src_dir.glob("*-deck.md")):
+            content = _prepend_deck_download_header(
+                deck_md.read_text(encoding="utf-8"), deck_md.stem
+            )
+            (dst_dir / deck_md.name).write_text(content, encoding="utf-8")
+            deck_items.append({
+                "title": _deck_short_title(deck_md.stem),
+                "md": deck_md.name,
+                "desc": _deck_description(deck_md),
+            })
     for txt in src_dir.glob("*.txt"):
         shutil.copy(txt, dst_dir / txt.name)
 
     # Other .md files (paradigms, etc.)
     for md in src_dir.glob("*.md"):
-        if md.name != "README.md" and not md.name.endswith("-deck.md"):
+        if md.name not in ("lesson.md", "README.md") and not md.name.endswith("-deck.md"):
             shutil.copy(md, dst_dir / md.name)
 
     # ── Listing pages ─────────────────────────────────────────────────────────
@@ -496,10 +516,12 @@ def build_chapter(
             _build_flashcards_page(ch_num, title, deck_items), encoding="utf-8"
         )
 
-    # ── index.md from README.md ───────────────────────────────────────────────
-    readme = src_dir / "README.md"
-    if readme.exists():
-        content = readme.read_text(encoding="utf-8")
+    # ── index.md from lesson.md (fall back to README.md) ─────────────────────
+    lesson = src_dir / "lesson.md"
+    if not lesson.exists():
+        lesson = src_dir / "README.md"
+    if lesson.exists():
+        content = lesson.read_text(encoding="utf-8")
         content = re.sub(r"(exercises/[^)]+/)README\.md", r"\1index.md", content)
         content = re.sub(r"\((exercises/[^)]+/)\)", r"(\1index.md)", content)
         content = _inject_lesson_header(

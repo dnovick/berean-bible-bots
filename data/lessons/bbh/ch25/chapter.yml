@@ -8,3 +8,15 @@ focus: >
   roots. The goal is to recognize a Niphal form even when the diagnostic nun
   is obscured by root behavior, and to distinguish Niphal from Qal in ambiguous
   cases.
+
+flashcards: 
+  - morphology
+  - vocab
+
+exercises: 
+  - ch25-function-sort
+  - ch25-niphal-weak-paradigm-drill
+  - ch25-passage-exercise
+  - ch25-qal-niphal-contrast
+  - ch25-stem-id-drill
+  - ch25-weak-form-id

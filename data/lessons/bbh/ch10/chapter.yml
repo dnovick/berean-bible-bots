@@ -8,3 +8,9 @@ focus: >
   multi-link chains and translate the relationship they encode (possession,
   material, description). The construct chain is ubiquitous in Hebrew prose
   and poetry and must be parsed confidently before tackling complex syntax.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch10-construct-chain

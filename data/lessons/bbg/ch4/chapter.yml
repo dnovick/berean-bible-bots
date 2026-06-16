@@ -7,3 +7,9 @@ focus: >
   smooth breathings, and the rules for dividing words into syllables. Correct
   accentuation and syllabification support both pronunciation and the later
   recognition of accent-based distinctions (e.g., τίς vs. τις).
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch4-syllable-drill

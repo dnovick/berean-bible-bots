@@ -8,3 +8,10 @@ focus: >
   a simple act. Learn the negative imperative forms (μή + present imperative
   = stop; μή + aorist subjunctive = don't start) and the handful of irregular
   imperative forms that must be memorized (ἐλθέ, εἰπέ, etc.).
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch33-imperative-parsing
+  - ch33-prohibition-drill

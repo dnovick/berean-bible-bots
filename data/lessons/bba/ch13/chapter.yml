@@ -8,3 +8,10 @@ focus: >
   have Aramaic-specific vowels and spelling conventions. Practice parsing
   PGN from the text of Daniel and Ezra, and understand the perfect's aspectual
   range (completed action, stative).
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch13-peal-contrast
+  - ch13-peal-perfect-drill

@@ -7,3 +7,9 @@ focus: >
   the alphabet in sequence. Identify vowels, consonants, diphthongs, and
   the breathing-mark system. Accurate letter recognition is the prerequisite
   for every subsequent chapter involving paradigm memorization and text reading.
+
+flashcards: 
+  - alphabet
+
+exercises: 
+  - ch3-alphabet-drill

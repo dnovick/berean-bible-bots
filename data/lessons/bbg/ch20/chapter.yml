@@ -9,3 +9,9 @@ focus: >
   present. Mastery of these patterns allows students to move from a present
   form to the lexical verbal root needed for lexicon lookup and for forming
   future and aorist stems.
+
+flashcards: 
+  - vocab
+
+exercises: 
+  - ch20-stem-change-drill
