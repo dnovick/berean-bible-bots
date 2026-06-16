@@ -15,20 +15,11 @@
     align-items: center;
     justify-content: center;
   }
-  .not-found .logo-wrap {
-    display: block;
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    border: 3px solid var(--md-accent-fg-color);
-    background: url('assets/logo.png') center / cover no-repeat;
-    margin-bottom: 1.2rem;
-    flex-shrink: 0;
-    transition: opacity .15s, transform .15s;
-  }
-  .not-found .logo-wrap:hover {
+  .not-found .logo-img {
+    width: 120px;
+    height: auto;
+    margin-bottom: 1.5rem;
     opacity: .85;
-    transform: scale(1.05);
   }
   /* Hide both sidebars so the 404 page uses the full viewport width */
   .md-sidebar { display: none !important; }
@@ -95,7 +86,9 @@
 </style>
 
 <div class="not-found">
-  <a href="{{ base_url }}" class="logo-wrap" title="Go home" aria-label="Berean Bible Bots — go home"></a>
+  <a href="{{ base_url }}">
+    <img src="/assets/logo.png" alt="Berean Bible Bots" class="logo-img" style="width:120px;height:auto;" />
+  </a>
   <div class="error-code">404</div>
   <h1>This Scroll Was Not Found</h1>
 
