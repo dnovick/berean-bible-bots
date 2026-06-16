@@ -7,3 +7,4 @@
 ## Agenda
 
 1. [Lesson: BBH 29 - Hophal Weak Verbs](/lessons/hebrew/ch29/)
+1. [Reading: Psalm 119:1-8](session-131/ps119-1-8.html) (20 min)
