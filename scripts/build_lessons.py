@@ -481,6 +481,7 @@ def build_chapter(
     # ── Flashcard decks ───────────────────────────────────────────────────────
     deck_items: list[dict] = []
     flashcards_src = src_dir / "flashcards"
+    flashcards_dst = dst_dir / "flashcards"
     if flashcard_slugs is not None:
         # Declared slugs — resolve from flashcards/<slug>/ subdirectory
         for slug in flashcard_slugs:
@@ -495,12 +496,13 @@ def build_chapter(
             content = _prepend_deck_download_header(
                 deck_md.read_text(encoding="utf-8"), stem
             )
-            (dst_dir / f"{stem}.md").write_text(content, encoding="utf-8")
+            flashcards_dst.mkdir(parents=True, exist_ok=True)
+            (flashcards_dst / f"{stem}.md").write_text(content, encoding="utf-8")
             for ext in (".txt", "-fd.txt"):
                 src_file = slug_dir / f"{stem}{ext}"
                 if src_file.exists():
-                    shutil.copy(src_file, dst_dir / src_file.name)
-            deck_items.append({"title": title_str, "md": f"{stem}.md", "desc": desc_str})
+                    shutil.copy(src_file, flashcards_dst / src_file.name)
+            deck_items.append({"title": title_str, "md": f"flashcards/{stem}.md", "desc": desc_str})
     else:
         # Auto-discover fallback: check flashcards/<slug>/ subdirs, then chapter root
         if flashcards_src.is_dir():
@@ -516,24 +518,26 @@ def build_chapter(
                 content = _prepend_deck_download_header(
                     deck_md.read_text(encoding="utf-8"), stem
                 )
-                (dst_dir / f"{stem}.md").write_text(content, encoding="utf-8")
+                flashcards_dst.mkdir(parents=True, exist_ok=True)
+                (flashcards_dst / f"{stem}.md").write_text(content, encoding="utf-8")
                 for ext in (".txt", "-fd.txt"):
                     src_file = slug_dir / f"{stem}{ext}"
                     if src_file.exists():
-                        shutil.copy(src_file, dst_dir / src_file.name)
-                deck_items.append({"title": title_str, "md": f"{stem}.md", "desc": desc_str})
+                        shutil.copy(src_file, flashcards_dst / src_file.name)
+                deck_items.append({"title": title_str, "md": f"flashcards/{stem}.md", "desc": desc_str})
         else:
             # Legacy: flat deck files in chapter root
             for deck_md in sorted(src_dir.glob("*-deck.md")):
                 content = _prepend_deck_download_header(
                     deck_md.read_text(encoding="utf-8"), deck_md.stem
                 )
-                (dst_dir / deck_md.name).write_text(content, encoding="utf-8")
+                flashcards_dst.mkdir(parents=True, exist_ok=True)
+                (flashcards_dst / deck_md.name).write_text(content, encoding="utf-8")
                 for txt in src_dir.glob(f"{deck_md.stem}*.txt"):
-                    shutil.copy(txt, dst_dir / txt.name)
+                    shutil.copy(txt, flashcards_dst / txt.name)
                 deck_items.append({
                     "title": _deck_short_title(deck_md.stem),
-                    "md": deck_md.name,
+                    "md": f"flashcards/{deck_md.name}",
                     "desc": _deck_description(deck_md),
                 })
 
