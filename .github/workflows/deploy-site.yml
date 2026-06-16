@@ -12,7 +12,9 @@ on:
       - 'data/lessons/**'
       - 'scripts/build_mkdocs.py'
       - 'scripts/build_courses.py'
+      - 'scripts/build_lessons.py'
       - 'scripts/validate_courses.py'
+      - 'scripts/validate_lessons.py'
       - 'docs_hooks.py'
       - 'notebooks/**'
       - 'notebook-setup/**'
@@ -39,8 +41,11 @@ jobs:
             mkdocstrings-python==2.0.3 \
             mkdocs-jupyter==0.25.1
 
-      - name: Validate course and lesson content
+      - name: Validate course content
         run: python scripts/validate_courses.py
+
+      - name: Validate lesson content
+        run: python scripts/validate_lessons.py
 
       - name: Build MkDocs source tree
         run: python scripts/build_mkdocs.py
