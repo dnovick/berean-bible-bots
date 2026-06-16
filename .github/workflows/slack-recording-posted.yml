@@ -73,8 +73,7 @@ jobs:
                   continue
 
               text = (
-                  f":movie_camera: *Recording posted — {course} · Session {session_num}*\n"
-                  f"*{focus}*  ·  {date}\n"
+                  f"Recording now available for Session {session_num} - {focus}\n"
                   f"<{new_rec}|Watch recording>"
               )
               payload = json.dumps({
