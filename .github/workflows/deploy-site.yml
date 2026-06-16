@@ -71,6 +71,34 @@ jobs:
             --exclude "data/*" \
             --cache-control "max-age=300"
 
+      - name: Configure CloudFront custom error pages
+        run: |
+          DIST_ID="${{ secrets.CLOUDFRONT_DISTRIBUTION_ID }}"
+          RESULT=$(aws cloudfront get-distribution-config --id "$DIST_ID")
+          ETAG=$(echo "$RESULT" | jq -r '.ETag')
+          NEW_CONFIG=$(echo "$RESULT" | jq '.DistributionConfig |
+            .CustomErrorResponses = {
+              "Quantity": 2,
+              "Items": [
+                {
+                  "ErrorCode": 404,
+                  "ResponsePagePath": "/404.html",
+                  "ResponseCode": "404",
+                  "ErrorCachingMinTTL": 300
+                },
+                {
+                  "ErrorCode": 403,
+                  "ResponsePagePath": "/404.html",
+                  "ResponseCode": "404",
+                  "ErrorCachingMinTTL": 300
+                }
+              ]
+            }')
+          aws cloudfront update-distribution \
+            --id "$DIST_ID" \
+            --distribution-config "$NEW_CONFIG" \
+            --if-match "$ETAG"
+
       - name: Invalidate CloudFront cache
         run: |
           aws cloudfront create-invalidation \

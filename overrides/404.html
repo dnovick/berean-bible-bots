@@ -1,0 +1,111 @@
+{% extends "main.html" %}
+
+{% block tabs %}{{ super() }}{% endblock %}
+
+{% block content %}
+<style>
+  .not-found {
+    background: var(--md-primary-fg-color);
+    color: #fff;
+    text-align: center;
+    padding: 5rem 1.5rem 4rem;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .not-found a.logo-link {
+    display: inline-block;
+    margin-bottom: 1.5rem;
+    line-height: 0;
+  }
+  .not-found a.logo-link img {
+    width: 90px;
+    height: auto;
+    border-radius: 50%;
+    border: 3px solid var(--md-accent-fg-color);
+    opacity: .7;
+  }
+  .not-found h1 {
+    font-size: 2rem;
+    color: var(--md-accent-fg-color);
+    margin: 0 0 .5rem;
+    font-weight: 700;
+  }
+  .not-found .error-code {
+    font-size: 5rem;
+    font-weight: 900;
+    color: var(--md-accent-fg-color);
+    line-height: 1;
+    margin: 0 0 1rem;
+    opacity: .25;
+  }
+  .not-found .bot-message {
+    max-width: 600px;
+    background: rgba(255,255,255,.07);
+    border-left: 4px solid var(--md-accent-fg-color);
+    border-radius: 0 .4rem .4rem 0;
+    padding: 1.2rem 1.6rem;
+    margin: 1.5rem auto;
+    text-align: left;
+    font-size: .97rem;
+    line-height: 1.8;
+    color: #ddd;
+  }
+  .not-found .bot-message .hebrew {
+    display: block;
+    font-size: 1.3rem;
+    color: var(--md-accent-fg-color);
+    margin: .6rem 0 .2rem;
+    direction: rtl;
+    unicode-bidi: embed;
+  }
+  .not-found .bot-message .ref {
+    font-size: .82rem;
+    color: #aaa;
+    font-style: italic;
+  }
+  .not-found .bot-message .sig {
+    margin-top: .8rem;
+    font-size: .85rem;
+    color: #888;
+    font-style: italic;
+  }
+  .not-found .home-btn {
+    display: inline-block;
+    margin-top: 2rem;
+    padding: .75rem 2rem;
+    background: var(--md-accent-fg-color);
+    color: var(--md-primary-fg-color);
+    border-radius: .3rem;
+    font-weight: 600;
+    font-size: .95rem;
+    text-decoration: none;
+    transition: opacity .15s;
+  }
+  .not-found .home-btn:hover { opacity: .85; }
+</style>
+
+<div class="not-found">
+  <a href="{{ base_url }}" class="logo-link" title="Go home">
+    <img src="{{ base_url }}/assets/logo.png" alt="Berean Bible Bots" />
+  </a>
+  <div class="error-code">404</div>
+  <h1>This Scroll Was Not Found</h1>
+
+  <div class="bot-message">
+    I searched diligently — Masoretic manuscripts, Septuagint codices, Byzantine
+    lectionaries, Dead Sea Scrolls — but this page does not appear in any text I
+    know.<br><br>
+    The scribes have a word for it:
+    <span class="hebrew">אַיֵּה</span>
+    <span class="ref">"Where is it?" — Job 28:12</span>
+    <div class="sig">— The Bot</div>
+  </div>
+
+  <a href="{{ base_url }}" class="home-btn">← Back to Home</a>
+</div>
+
+{% block footer %}{% endblock %}
+{% endblock %}
