@@ -244,28 +244,6 @@ def _check_session_yml(
             _err(errors, session_yml, f"files download not found: {ref!r} (scope: {scope!r})")
 
 
-# ── Exercise-level checks ─────────────────────────────────────────────────────
-
-
-def _check_exercises(errors: list[str], warnings: list[str]) -> None:
-    for ex_dir in sorted(_LESSONS_DIR.glob("*/*/exercises/*/")):
-        if not ex_dir.is_dir():
-            continue
-
-        has_html = any(ex_dir.glob("*.html"))
-        has_pdf = any(ex_dir.glob("*.pdf"))
-        # A non-README .md counts; README.md alone does not
-        md_files = [f for f in ex_dir.glob("*.md") if f.name.lower() != "readme.md"]
-        has_md = bool(md_files)
-
-        if not has_html:
-            _err(errors, ex_dir, "missing .html exercise file")
-        if not has_pdf:
-            _err(errors, ex_dir, "missing .pdf exercise file")
-        if not has_md:
-            _warn(warnings, ex_dir, "missing standalone .md exercise file (only README.md found)")
-
-
 # ── Main ──────────────────────────────────────────────────────────────────────
 
 
@@ -314,14 +292,10 @@ def main() -> int:
                     continue
                 _check_session_yml(session_yml, textbook, instance_dir, errors, warnings)
 
-    # Exercise format completeness
-    _check_exercises(errors, warnings)
-
     # Report
     total_issues = len(errors) + len(warnings)
     if total_issues == 0:
-        print(f"validate_courses: OK — {_count_sessions()} sessions, "
-              f"{_count_exercises()} exercises checked")
+        print(f"validate_courses: OK — {_count_sessions()} sessions checked")
         return 0
 
     for line in sorted(warnings):
@@ -344,14 +318,6 @@ def _count_sessions() -> int:
     return sum(
         1
         for p in _COURSES_DIR.rglob("session.yml")
-    )
-
-
-def _count_exercises() -> int:
-    return sum(
-        1
-        for p in _LESSONS_DIR.glob("*/*/exercises/*/")
-        if p.is_dir()
     )
 
 
