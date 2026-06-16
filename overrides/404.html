@@ -23,10 +23,12 @@
   .not-found a.logo-link img {
     width: 90px;
     height: auto;
-    border-radius: 50%;
-    border: 3px solid var(--md-accent-fg-color);
     opacity: .7;
   }
+  /* Hide both sidebars so the 404 page uses the full viewport width */
+  .md-sidebar { display: none !important; }
+  .md-content { max-width: 100% !important; }
+  .md-grid { max-width: 100% !important; }
   .not-found h1 {
     font-size: 2rem;
     color: var(--md-accent-fg-color);
