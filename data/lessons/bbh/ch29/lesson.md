@@ -58,6 +58,8 @@ In the perfect, the Hophal prefix הֻ or הוּ precedes R1 directly. The guttu
 | Inf. Absolute | הוּמֵת | הֻעֲמֵד | Tsere under R2 distinguishes from Perfect |
 | Participle | מוּמָת | מֻעֲמָד | מֻ prefix; composite shewa under R1 |
 
+→ Full PGN tables: [hophal-weak-paradigms.md#pe-guttural](hophal-weak-paradigms.md#i-guttural-pe-guttural--model-root-עמד)
+
 ### Key Corpus Examples
 
 - יֻעֲמַד (Ezr 2:63 / Neh 7:65) — "until a priest should stand up" — though this is Qal jussive in context, compare הֶעֱמַד patterns in related passages; Hophal of עָמַד = "to be stationed, set up"
@@ -91,6 +93,8 @@ In closed syllables (before suffixes), the patach furtive disappears; the guttur
 | Inf. Absolute | הוּמֵת | הֻשְׁלֵחַ | Tsere under R2; patach furtive before final ח |
 | Participle | מוּמָת | מֻשְׁלָח | מֻ prefix; Qamets under R2 |
 
+→ Full PGN tables: [hophal-weak-paradigms.md#lamed-guttural](hophal-weak-paradigms.md#iii-חע-lamed-guttural--model-root-שלח)
+
 ### Key Corpus Examples
 
 - יֻשְׁלַח (Job 18:8) — "he is cast into a net by his own feet" — Hophal Imperfect 3ms of שָׁלַח; Qibbuts under prefix, Patach under R2, final ח
@@ -123,6 +127,8 @@ Because the quiesced א is visually present in the spelling but phonetically abs
 | Inf. Construct | הוּמַת | הֻמְצָא | Rare; same as Perfect 3ms |
 | Inf. Absolute | הוּמֵת | הֻמְצֵא | Tsere under R2; silent final א |
 | Participle | מוּמָת | מֻמְצָא | מֻ prefix; Qamets before silent א |
+
+→ Full PGN tables: [hophal-weak-paradigms.md#lamed-aleph](hophal-weak-paradigms.md#iii-א-lamed-aleph--model-root-מצא)
 
 ### Key Corpus Examples
 
@@ -163,6 +169,8 @@ This is one of the most practically important weak classes in the Hophal because
 | Inf. Absolute | הוּמֵת | הֻגְלֵה | Tsere + ה |
 | Participle | מוּמָת | מֻגְלֶה | מֻ prefix; Seghol + ה |
 
+→ Full PGN tables: [hophal-weak-paradigms.md#lamed-he](hophal-weak-paradigms.md#iii-ה-lamed-he--model-root-גלה)
+
 ### Key Corpus Examples
 
 - הֻגְלָה (Amos 1:5) — "the people of Aram shall go into exile to Kir" — Hophal Perfect 3ms of גָּלָה; Qibbuts prefix; Qamets + ה; "was exiled" (passive causative of Hiphil הֶגְלָה "to exile")
@@ -201,6 +209,8 @@ The combination of Hophal u-class prefix + Dagesh forte in R2 is the unmistakabl
 | Participle | מוּמָת | מֻגָּד | — | מֻ prefix; Dagesh in R2 |
 
 *Note: נָקַם is listed here for cross-reference — its Hophal הֻקַּם/יֻקַּם is more commonly cited in the Geminate section (section 9) since קַם patterns as geminate. See section 9 for full treatment.
+
+→ Full PGN tables: [hophal-weak-paradigms.md#pe-nun](hophal-weak-paradigms.md#i-נ-pe-nun--model-root-נגד)
 
 ### Key Corpus Examples
 
@@ -244,6 +254,8 @@ The practical effect: I-י/ו Hophal forms are recognized exactly like Hophal st
 | Inf. Absolute | הוּמֵת | הוּלֵד | הוּבֵא | Tsere under R2 |
 | Participle | מוּמָת | מוּלָד | מוּבָא | מוּ prefix; Qamets under R2 |
 
+→ Full PGN tables: [hophal-weak-paradigms.md#pe-yod](hophal-weak-paradigms.md#i-יו-pe-yodvav--model-roots-ילד-בוא)
+
 ### Key Corpus Examples
 
 - הוּלַד לוֹ (Gen 21:5) — "was born to him" — Hophal Perfect 3ms of יָלַד; Shureq prefix; Patach under ל; Abraham's age when Isaac was born
@@ -285,6 +297,8 @@ In practice, Biconsonantal Hophal forms are identified by (1) Shureq or Qibbuts 
 | Inf. Absolute | הוּמֵת | הוּקֵם | הוּשֵׁב | Tsere under R2 |
 | Participle | מוּמָת | מוּקָם | מוּשָׁב | מוּ prefix; Qamets under R2 |
 
+→ Full PGN tables: [hophal-weak-paradigms.md#biconsonantal](hophal-weak-paradigms.md#biconsonantal-iiוי--model-roots-קום-שׁוב)
+
 ### Key Corpus Examples
 
 - הוּקַם הַמִּשְׁכָּן (Exo 40:17) — "the tabernacle was set up" — Hophal Perfect 3ms of קוּם; Shureq prefix; "the tabernacle was raised up/established" on the first day of the first month; the great Tabernacle narrative Hophal
@@ -319,6 +333,8 @@ The most important Geminate Hophal root is נָקַם "to avenge" → יֻקַּ
 | Inf. Absolute | הוּמֵת | הֻקֵּם | — | Tsere under R2 |
 | Participle | מוּמָת | מֻקָּם | — | מֻ prefix; Qamets; Dagesh forte |
 
+→ Full PGN tables: [hophal-weak-paradigms.md#geminate](hophal-weak-paradigms.md#geminate-ayin-doubled-iiiii--model-roots-נקם-קלל)
+
 ### Key Corpus Examples
 
 - יֻקַּם שִׁבְעָתַיִם (Gen 4:15) — "Cain will be avenged sevenfold" — Hophal Imperfect 3ms of נָקַם; the LORD sets a protective sign on Cain; Qibbuts under prefix + Dagesh forte in קּ; one of the earliest Hophal forms in the OT
@@ -328,7 +344,22 @@ The most important Geminate Hophal root is נָקַם "to avenge" → יֻקַּ
 
 ---
 
-## 10. High-Frequency Weak Hophal Lemmas
+## 10. Double-Weak Roots
+
+Several high-frequency Hophal roots belong to **two** weak classes simultaneously. The phonological effects stack.
+
+| Root | Weak classes | Key effect | Representative Hophal form |
+|---|---|---|---|
+| נָכָה | I-נ + III-ה | נ assimilates (Dagesh in R2); ה contracts (Seghol + ה final) | הֻכָּה (Num 25:14) — was struck |
+| עָלָה | I-guttural + III-ה | Composite shewa under ע; ה contracts (Qamets + ה) | הֻעֲלָה — was brought up |
+| בּוֹא | I-ו (Pe-Vav) + Biconsonantal | Shureq prefix; two root consonants; I-ו quiesces | הוּבָא (Gen 43:18) — was brought |
+| נָשָׂא | I-נ + III-א | נ assimilates (Dagesh in R2); א quiesces (Qamets before final א) | יֻשָּׂא — was lifted, carried |
+
+> **Teaching note:** נָכָה is the most pedagogically important double-weak root in the Hophal. Its forms (הֻכָּה, יֻכֶּה, מֻכִּים) appear in Exodus 5:16, Numbers 25:14, and Deuteronomy 25:2 — three critical legal-narrative passages students encounter repeatedly. Identifying the stacked effects (I-נ Dagesh + III-ה contracted ending) is a key parsing milestone.
+
+---
+
+## 11. High-Frequency Weak Hophal Lemmas
 
 The following weak-root Hophal lemmas are among the most common in the OT. Frequency counts represent Hophal tokens only.
 
@@ -351,6 +382,109 @@ The following weak-root Hophal lemmas are among the most common in the OT. Frequ
 | 15 | מָצָא | III-א | 4+ | to cause to find; present | to be found |
 
 > **Usage note:** The three most common weak Hophal lemmas — בּוֹא (brought), נָגַד (told), and יָלַד (born/begotten) — account for the majority of Hophal weak tokens in narrative texts. בּוֹא dominates the Joseph narrative; נָגַד dominates the narrative reporting formula; יָלַד dominates the genealogies of Genesis 4–11. Mastering these three roots in their Hophal forms gives immediate access to large swaths of Genesis.
+
+---
+
+## 12. Example Passages
+
+---
+
+### Pe-Nun — The Narrative Report Formula
+
+**Wayyiqtol — Gen 22:20**
+וַיְהִ֗י אַֽחֲרֵי֙ הַדְּבָרִ֣ים הָאֵ֔לֶּה וַיֻּגַּ֥ד לְאַבְרָהָ֖ם
+*"Now after these things it was told to Abraham…"*
+→ נגד Hophal Wayyiqtol 3ms of נָגַד; וַיֻּגַּד = וַיּ + Qibbuts + Dagesh forte in ג (Pe-Nun assimilation). The formula וַיֻּגַּד לְ is the OT's standard passive-reportage construction — Abraham, Moses, and David are all its recipients. The Hiphil הִגִּיד "to declare/tell" is passivized: "it was declared to."
+
+**Perfect — Deu 17:4**
+וְהֻגַּ֥ד לְךָ֖ וְשָׁמָ֑עְתָּ
+*"and it is told to you and you hear…"*
+→ נגד Hophal Weqatal 3ms; וְהֻגַּד = וְ + הֻ (Qibbuts prefix) + Dagesh forte in ג. Legal context: someone hears a report of idolatry. The form וְהֻגַּד perfectly illustrates the Hophal's role as the passive of official communication.
+
+---
+
+### Pe-Yod — Birth and Motion
+
+**Wayyiqtol — Gen 4:26**
+וּלְשֵׁ֤ת גַּם־הוּא֙ יֻלַּד־בֵּ֔ן
+*"And to Seth also a son was born."*
+→ ילד Hophal Wayyiqtol 3ms of יָלַד; יֻלַּד = יוּ prefix (Shureq — Pe-Yod quiesces) + Dagesh forte in ל (Pe-Nun-like assimilation does not apply; rather the Shureq absorbs the initial י). This form appears dozens of times in the Genesis genealogies (Gen 4:18, 4:26, 5:3–32, 11:10–26). Learning יוּלַד unlocks the entire primeval genealogical narrative.
+
+**Perfect — Gen 21:5**
+אַבְרָהָ֔ם בֶּן־מְאַ֣ת שָׁנָ֑ה בְּהִוָּ֣לֶד ל֔וֹ אֵ֖ת יִצְחָ֥ק בְּנֽוֹ׃
+*"Abraham was a hundred years old when Isaac his son was born to him."*
+→ ילד Hophal Inf. Construct of יָלַד with לְ; בְּהִוָּלֶד = בְּ + הִ + וָּ + לֶ + ד. Temporal clause construction (בְּ + inf.const.). The Shureq prefix (הוּ/הִ + ו) marks the Pe-Yod/Vav Hophal throughout.
+
+**Wayyiqtol — Gen 39:1**
+וְיוֹסֵ֖ף הוּרַ֣ד מִצְרָ֑יְמָה וַיִּקְנֵ֡הוּ פּוֹטִיפַר֩
+*"Now Joseph was brought down to Egypt, and Potiphar…purchased him."*
+→ ירד Hophal Perfect 3ms of יָרַד; הוּרַד = Shureq prefix (Pe-Yod quiesces) + Patach under ר. The very same verse continues with the Hiphil ← Hophal pair: the brothers' act (Hiphil cause) is passivized in Joseph's experience (Hophal result). הוּרַד begins the Joseph narrative's Hophal arc.
+
+---
+
+### III-ה — Exile and Desolation
+
+**Perfect 3ms — Amos 1:5**
+וְגָלֻ֥ת אֲרָ֖ם קִ֑ירָה אָמַ֖ר יְהוָ֥ה׃
+*"…and the people of Aram shall go into exile to Kir, says the LORD."*
+→ גלה Hophal Perfect 3ms of גָּלָה; הֻגְלָה = Qibbuts prefix + Qamets + ה mater. Amos uses this exile formula (הֻגְלָה / הֻגְלוּ) six times in chapters 1–2 for six nations — one of the most concentrated uses of the III-ה Hophal in the OT.
+
+**Perfect 3cp — Amos 1:6**
+עַ֣ל הַסְגִּירָ֗ם גָּל֤וּת שְׁלֵמָה֙ לְהַסְגִּ֣יר לֶאֱד֔וֹם
+*"…because they carried into exile a whole people to deliver them up to Edom."*
+→ גלה Hophal Perfect 3cp of גָּלָה; הֻגְלוּ = Qibbuts prefix + plural suffix (ו replaces contracted ה). Compare with 3ms הֻגְלָה above: the plural drops the ה mater and adds וּ directly to the stem.
+
+**Double-weak — Num 25:14**
+וְשֵׁ֗ם אִ֤ישׁ יִשְׂרָאֵל֙ הַמֻּכֶּ֔ה אֲשֶׁ֥ר הֻכָּ֖ה
+*"The name of the Israelite man who was struck was…"*
+→ נכה Hophal Perfect 3ms (הֻכָּה) and Hophal Participle ms (הַמֻּכֶּה) of נָכָה in the same verse. הֻכָּה: Qibbuts prefix + Dagesh forte in כ (Pe-Nun נ assimilates) + Qamets + ה mater (III-ה ending). הַמֻּכֶּה: מֻ prefix + Dagesh forte in כ + Seghol + ה (III-ה participle). Both double-weak effects are visible side by side.
+
+---
+
+### Biconsonantal — Tabernacle Dedication
+
+**Perfect — Exo 40:17**
+וַיְהִ֞י בַּחֹ֧דֶשׁ הָרִאשׁ֛וֹן בַּשָּׁנָ֥ה הַשֵּׁנִ֖ית … הוּקַ֥ם הַמִּשְׁכָּֽן׃
+*"And in the first month of the second year … the tabernacle was set up."*
+→ קום Hophal Perfect 3ms of קוּם; הוּקַם = Shureq prefix + Patach under ק (only two root consonants). The dedication of the Tabernacle is marked by Hophal Biconsonantal forms throughout Exodus 40 (הוּקַם, יוּקַם) — the passive construction emphasizing that Moses acts under divine instruction, not personal initiative.
+
+**Imperfect — Num 9:15**
+וּבְיוֹם֙ הָקִ֣ים אֶת־הַמִּשְׁכָּ֔ן
+*"On the day that the tabernacle was set up…"*
+→ קום Hophal Inf. Construct (הָקִים here functions as inf.const. with ב); the narrative looks back to Exo 40 from Num 9. Compare with the biconsonantal perfect הוּקַם — both mark the same referential event.
+
+---
+
+### Geminate — Vengeance
+
+**Imperfect — Gen 4:15**
+כָּל־הֹרֵ֣ג קַ֔יִן שִׁבְעָתַ֖יִם יֻקָּֽם׃
+*"If anyone kills Cain, he will be avenged sevenfold."*
+→ נקם Hophal Imperfect 3ms of נָקַם; יֻקַּם = Qibbuts under prefix + Dagesh forte in קּ (R2 = R3 geminate). This is one of the earliest Hophal forms in the OT and one of the first legal-theological pronouncements in Genesis. The LORD's protective decree over Cain uses the Hophal to express divine passive action: Cain "will be avenged" — the agent is unspecified but implicitly divine.
+
+**Imperfect — Gen 4:24**
+כִּ֥י שִׁבְעָתַ֖יִם יֻקַּם־קָ֑יִן וְלֶ֖מֶךְ שִׁבְעִ֥ים וְשִׁבְעָֽה׃
+*"If Cain is avenged sevenfold, then Lamech seventy-sevenfold."*
+→ נקם Hophal Imperfect 3ms; same form יֻקַּם used twice in four verses (4:15, 4:24) as Lamech's boast escalates God's decree. The Geminate Hophal is the literary hinge of this vengeance poem — recognizing יֻקַּם is essential for reading this passage.
+
+---
+
+## 13. Summary: Identifying Weak Hophal Forms
+
+| Question | Answer |
+|---|---|
+| What is the ONE universal Hophal marker across all weak classes? | **u-class vowel (Qibbuts ֻ or Shureq וּ) under the prefix consonant** — every conjugation, every weak class |
+| I-guttural: what changes? | Composite shewa under R1; u-prefix unchanged |
+| III-ח/ע: what changes? | Patach furtive before word-final ח/ע; otherwise unchanged |
+| III-א: what changes? | Patach → Qamets before quiesced final א |
+| III-ה: what changes? | Contracted endings (ָה / ֶה); wayyiqtol apocopates |
+| I-נ: what changes? | Dagesh forte in R2 (נ assimilated); u-prefix intact |
+| I-י/ו: what changes? | Qibbuts → Shureq throughout (יוּ / הוּ / מוּ) |
+| Biconsonantal: what changes? | Shureq prefix throughout; only R1 and R3 visible |
+| Geminate: what changes? | Qibbuts prefix + Dagesh forte in R2 (=R3) |
+| Which three roots account for most weak Hophal narrative tokens? | **בּוֹא** (brought — Joseph narrative), **נָגַד** (told — report formula), **יָלַד** (born — genealogies) |
+| How to distinguish I-י/ו Hophal from Biconsonantal Hophal? | I-י/ו: three consonants in root, one quiesces; Biconsonantal: only two root consonants |
+| How to distinguish I-נ Hophal from Geminate Hophal? | Both have Dagesh in R2; I-נ: three root letters total; Geminate: R2 = R3, effectively two distinct letters |
 
 ---
 
