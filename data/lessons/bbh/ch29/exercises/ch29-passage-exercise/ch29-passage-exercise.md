@@ -1,7 +1,7 @@
 # Chapter 29 — "Spot the Hophal Weak" Passage Exercise
 
 **Stem:** Hophal (הֻפְעַל) — Weak Verbs
-**Passages:** Gen 37–44 (Joseph narrative) · Exo 40 + Num 9 (Tabernacle) · Gen 43–44 (Second Egypt journey)
+**Passages:** Gen 39 + 43 (Joseph) · Exo 40 + Num 9 (Tabernacle) · Gen 38 + 43 + Exo 5 + 14 (Scattered) · Gen 4 + 22 + Exile context (Weak class coverage)
 
 ---
 
@@ -13,9 +13,9 @@ For each bolded verb, indicate:
 2. **Conjugation** (Perfect, Imperfect, Wayyiqtol, Weqatal, Participle, Inf. Construct)
 3. **PGN** (Person–Gender–Number)
 4. **Root** (3-letter root, unvoweled)
-5. **Stem / Function** (if Hophal: Passive causative + meaning; if not: name the stem and parse)
+5. **Stem / Function** (if Hophal: passive causative + meaning; if not: name the stem and parse)
 
-*Three verbs in this exercise are not Hophal — drawn from Qal and Hiphil already studied. Focus: the Hophal prefix vowel is u-class (וּ- or ֻ), distinguishing it from Niphal (נ-) and Hiphil (הֵ-/הִ-).*
+*Four verbs in this exercise are not Hophal — drawn from Qal and Hiphil already studied. Key diagnostic: Hophal prefix vowel is always u-class (הוּ-/הֻ-) or, for I-guttural Perfect, Seghol (הֶ-).*
 
 ---
 
@@ -25,7 +25,7 @@ For each bolded verb, indicate:
 
 > **הוּרַד (1)** יוֹסֵף מִצְרָיְמָה וַיִּקְנֵהוּ פּוֹטִיפַר
 
-"Now **Joseph had been brought down** to Egypt, and Potiphar … bought him."
+"Now **Joseph had been brought down** to Egypt, and Potiphar … bought him." (Gen 39:1)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
@@ -33,19 +33,19 @@ For each bolded verb, indicate:
 
 ---
 
-> **הוּבָא (2)** יוֹסֵף מִצְרָיְמָה
+> וַיִּירְאוּ הָאֲנָשִׁים כִּי **הוּבְאוּ (2)** בֵּית יוֹסֵף
 
-"**Joseph was brought** to Egypt."
+"And the men were afraid, because **they were brought** into Joseph's house." (Gen 43:18)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 2 | הוּבָא | | | | | |
+| 2 | הוּבְאוּ | | | | | |
 
 ---
 
-> וַיֹּאמְרוּ אֶל־אֲחֵיהֶם **עַל דְּבַר** הַכֶּסֶף **הַשָּׁב (3)** בְּאַמְתְּחֹתֵינוּ בַּתְּחִלָּה אֲנַחְנוּ **מֽוּבָאִים (4)**
+> עַל דְּבַר הַכֶּסֶף **הַשָּׁב (3)** בְּאַמְתְּחֹתֵינוּ בַּתְּחִלָּה אֲנַחְנוּ **מוּבָאִים (4)**
 
-"And they said to one another, '…because of the silver that **was returned** in our sacks the first time, we **are being brought in**.'"
+"…because of the silver that **returned** in our sacks the first time, we **are being brought in**." (Gen 43:18)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
@@ -56,7 +56,7 @@ For each bolded verb, indicate:
 
 > כִּי **יוּבָא (5)** אִתָּנוּ אֶל־בֵּיתוֹ
 
-"…because **we are being brought** into his house." (Gen 43:18)
+"…because **he will be brought** into his house with us." (Gen 43:18)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
@@ -70,7 +70,7 @@ For each bolded verb, indicate:
 
 > וַיְהִי בַּחֹדֶשׁ הָרִאשׁוֹן בַּשָּׁנָה הַשֵּׁנִית **הוּקַם (6)** הַמִּשְׁכָּן
 
-"And it came about in the first month of the second year — **the tabernacle was set up**."
+"And it came about in the first month of the second year — **the tabernacle was set up**." (Exo 40:17)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
@@ -98,23 +98,23 @@ For each bolded verb, indicate:
 
 ---
 
-> וְאִם לֹא **יֻקַּם (9)** הַמִּשְׁכָּן
+> וְאִם לֹא **יוּקַם (9)** הַמִּשְׁכָּן
 
-"And if **the tabernacle was not set up**…" (cf. Num 9:15 extended context)
+"And if **the tabernacle is not set up**…" (cf. Num 9 context — biconsonantal Hophal Impf.)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 9 | יֻקַּם | | | | | |
+| 9 | יוּקַם | | | | | |
 
 ---
 
-## Passage C — Genesis 43:12 + 38:25 + Exodus 14:5
+## Passage C — Genesis 43:12 + 38:25 + Exodus 5 + 14:5
 
-*Context: Jacob sends the money back; Tamar is brought out; the exodus is reported.*
+*Context: The returned money; Tamar is brought out; Israel's labor; the exodus is reported.*
 
-> וְכֶסֶף מִשְׁנֶה קְחוּ בְיֶדְכֶם וְאֶת־הַכֶּסֶף הַמּוּשָׁב **בְּפִי אַמְתְּחֹתֵיכֶם תָּשִׁיבוּ** **הוּשַׁב (10)**
+> וְכֶסֶף מִשְׁנֶה קְחוּ בְיֶדְכֶם וְאֶת הַכֶּסֶף הַמּוּשָׁב בְּפִי אַמְתְּחֹתֵיכֶם **הוּשַׁב (10)**
 
-"…take double the money with you, and the money **that was returned** in the mouth of your sacks — **bring it back**." (Gen 43:12)
+"…take double the money with you, and the money that was returned in the mouth of your sacks — **it was returned**." (Gen 43:12)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
@@ -142,10 +142,9 @@ For each bolded verb, indicate:
 
 ---
 
-> **הוּצָא (13)** הַחוֹמֶר מֵהֵם וַיְהִי עָלֵינוּ לְפֶלֶא
+> **הוּצָא (13)** הַחֹמֶר מֵהֶם
 
-*Extended passage — "The straw **was taken away** from them, and it became a wonder to us."*
-*(Analogous form from Exo 5 context; root יצא I-י.)*
+"**The straw was taken away** from them." (cf. Exo 5 context)
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
@@ -163,45 +162,101 @@ For each bolded verb, indicate:
 
 ---
 
+## Passage D — Weak-Class Coverage: III-ה · I-נ Wayyiqtol · I-נ/Geminate · I-guttural
+
+*Context: Genesis 4 + 22 · Exile context · Paradigm forms for rare Hophal classes.*
+
+> **הֻגְלָה (15)** עַמִּי מִן הָאָרֶץ
+
+"My people **was exiled** from the land." (paradigm form — III-ה Hophal; cf. Kings/Amos exile context)
+
+| # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 15 | הֻגְלָה | | | | | |
+
+---
+
+> **וַיֻּגַּד (16)** לְאַבְרָהָם לֵאמֹר הִנֵּה יָלְדָה מִלְכָּה גַּם הִוא
+
+"**And it was told** to Abraham, saying, 'Behold, Milcah has also borne children.'" (Gen 22:20)
+
+| # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 16 | וַיֻּגַּד | | | | | |
+
+---
+
+> כָּל הֹרֵג קַיִן שִׁבְעָתַיִם **יֻקָּם (17)**
+
+"Whoever kills Cain, **sevenfold shall he be avenged**." (Gen 4:15)
+
+| # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 17 | יֻקָּם | | | | | |
+
+---
+
+> **הֶעֱמַד (18)** שָׁם לִפְנֵי הַמֶּלֶךְ
+
+"He **was stationed** there before the king." (paradigm form — I-guttural Hophal)
+
+| # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
+|---|---|---|---|---|---|---|
+| 18 | הֶעֱמַד | | | | | |
+
+---
+
 ## Reflection Questions
 
-1. Several Hophal weak verbs in this exercise share the same prefix marker. State the rule: what vowel (or vowel class) identifies the Hophal prefix in the Perfect vs. the Imperfect? How does this vowel differ from the Hiphil prefix (הִ-) and the Niphal prefix (נִ-/יִ-)?
-
-2. Verbs 2 (הוּבָא) and 4 (מוּבָאִים) come from the same root (בוא). One is a Hophal Perfect 3ms and the other is a Hophal Participle mp. What morphological difference tells you which is which, and what do the respective context clues confirm?
-
-3. The Hiphil distractor 7 (הָקִים) and the Hophal target verb 6 (הוּקַם) share root קום. Explain how the same root produces two different meanings in these two stems, and what the stem-change communicates about agency and passivity.
+1. Verbs 6 (הוּקַם), 9 (יוּקַם), and 17 (יֻקָּם) all display ק-מ consonants. Why are #6 and #9 from root קום while #17 is from root נקם? What is the morphological difference in the prefix vowel that distinguishes them?
+2. Verb 3 (הַשָּׁב) and verb 10 (הוּשַׁב) both come from root שׁוב. One is Hophal and one is Qal. Explain what feature of each form identifies the stem, and why the dagesh in שׁ of הַשָּׁב does not indicate Hophal.
+3. Verb 14 (הֻגַּד) and verb 16 (וַיֻּגַּד) come from the same root (נגד) and both are Hophal. What is the conjugation difference, and what does the וַ prefix on verb 16 signal about its narrative function?
+4. Verb 18 (הֶעֱמַד) has Seghol (הֶ-) under the prefix rather than Qibbuts (הֻ-). Why does the I-guttural class produce this prefix change in the Perfect? What happens in the Imperfect (יֻעֲמַד)?
 
 ---
 
 ## Answer Key
 
-**Score: 11 Hophal + 3 non-Hophal = 14 total**
+**Score: 14 Hophal + 4 non-Hophal = 18 total**
 
-**Conjugation coverage:**
-- Perfect / qatal (6): #1, #2, #6, #10, #13, #14
-- Participle (3): #3, #4, #11
-- Imperfect (2): #5, #9
-- Non-Hophal (3): #7 (Hiphil Perfect 3ms קוּם), #8 (Qal Impf. 3mp נָסַע), #12 (Qal Pf. 3ms מָצָא + obj. suffix)
+**Non-Hophal distractors:** #3 (Qal Ptc.), #7 (Hiphil Pf.), #8 (Qal Impf.), #12 (Qal Pf. + suffix)
+
+**Weak class coverage:**
+
+| Class | Root | Verb(s) |
+|---|---|---|
+| I-י/ו | ירד, בוא, יצא | #1, #2, #4, #5, #11, #13 |
+| Biconsonantal | קום, שׁוב | #6, #9, #10 |
+| I-נ (Perfect) | נגד | #14 |
+| I-נ (Wayyiqtol) | נגד | #16 |
+| I-נ / Geminate-like | נקם | #17 |
+| III-ה | גלה | #15 |
+| III-א (doubly weak with I-י) | יצא | #11, #13 |
+| I-guttural | עמד | #18 |
 
 | # | Verb | Hophal? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 1 | הוּרַד | Yes | Perfect | 3ms | ירד | Hophal — Hiphil הוֹרִיד = to bring down → Hophal = was brought down (I-י root) |
-| 2 | הוּבָא | Yes | Perfect | 3ms | בוא | Hophal — Hiphil הֵבִיא = to bring → Hophal = was brought (I-י root) |
-| 3 | הַשָּׁב | Yes | Participle | ms | שוב | Hophal — Hiphil הֵשִׁיב = to return → Hophal Ptc. = (money) that was returned (biconsonantal) |
-| 4 | מוּבָאִים | Yes | Participle | mp | בוא | Hophal — Hophal Ptc. mp (מוּ- prefix) of בוא; "being brought" — same root as #2 |
-| 5 | יוּבָא | Yes | Imperfect | 3ms | בוא | Hophal — יוּ prefix (u-class Shureq) = Hophal Impf.; "will be brought" (I-י root) |
-| 6 | הוּקַם | Yes | Perfect | 3ms | קום | Hophal — Hiphil הֵקִים = to set up → Hophal = was set up (biconsonantal) |
-| 7 | הָקִים | No | Perfect | 3ms | קום | NOT Hophal — Hiphil Perfect 3ms (הֵ/הָ prefix + î vowel sequence); active: "he set up" |
-| 8 | יִסְעוּ | No | Imperfect | 3mp | נסע | NOT Hophal — Qal Impf. 3mp (I-נ: נ assimilates into dagesh in סּ); "they set out" |
-| 9 | יֻקַּם | Yes | Imperfect | 3ms | קום | Hophal — Qibbuts (ֻ) variant under prefix + dagesh in כּ (assimilated from ו); same root as #6 |
-| 10 | הוּשַׁב | Yes | Perfect | 3ms | שוב | Hophal — Hiphil הֵשִׁיב = to return → Hophal = was returned/brought back (biconsonantal) |
-| 11 | מוּצֵאת | Yes | Participle | fs | יצא | Hophal — Hophal Ptc. fs (מוּ- prefix); Hiphil הוֹצִיא = to bring out → Hophal = being brought out (I-י root) |
-| 12 | מְצָאָהּ | No | Perfect | 3ms + 3fs obj. | מצא | NOT Hophal — Qal Perfect 3ms with 3fs object suffix (מְצָ = Qal Pf. 3ms of מצא); "he found her" |
-| 13 | הוּצָא | Yes | Perfect | 3ms | יצא | Hophal — הוּ prefix + I-י collapse; Hiphil הוֹצִיא = to bring out → Hophal = was brought out |
-| 14 | הֻגַּד | Yes | Perfect | 3ms | נגד | Hophal — Qibbuts (ֻ) under prefix + I-נ collapse with dagesh in גּ; "it was told" (cf. Hiphil הִגִּיד) |
+| 1 | הוּרַד | Yes | Perfect | 3ms | ירד | Hophal — was brought down (I-י; Hiphil הוֹרִיד; הוּ/Shureq prefix) |
+| 2 | הוּבְאוּ | Yes | Perfect | 3cp | בוא | Hophal — they were brought (I-ו/י; Hiphil הֵבִיא; הוּ prefix + 3cp suffix) |
+| 3 | הַשָּׁב | **No** | Participle | ms | שוב | NOT Hophal — Qal Ptc. ms "the (silver) that returned" (הַ = article; Hophal Ptc. = הַמּוּשָׁב) |
+| 4 | מוּבָאִים | Yes | Participle | mp | בוא | Hophal Ptc. mp — "being brought in" (מוּ- prefix; I-ו/י) |
+| 5 | יוּבָא | Yes | Imperfect | 3ms | בוא | Hophal Impf. — "will be brought" (יוּ prefix; I-ו/י) |
+| 6 | הוּקַם | Yes | Perfect | 3ms | קום | Hophal — "was set up" (Biconsonantal; Hiphil הֵקִים; הוּ/Shureq prefix) |
+| 7 | הָקִים | **No** | Perfect | 3ms | קום | NOT Hophal — Hiphil active "he set up" (הָ- prefix + Hireq under ק = i-class) |
+| 8 | יִסְעוּ | **No** | Imperfect | 3mp | נסע | NOT Hophal — Qal Impf. 3mp; I-נ assimilation; יִ prefix (not u-class) |
+| 9 | יוּקַם | Yes | Imperfect | 3ms | קום | Hophal Impf. — "will be set up" (Biconsonantal; יוּ/Shureq prefix — contrast יֻקָּם #17) |
+| 10 | הוּשַׁב | Yes | Perfect | 3ms | שוב | Hophal — "was returned/brought back" (Biconsonantal; Hiphil הֵשִׁיב; הוּ prefix) |
+| 11 | מוּצֵאת | Yes | Participle | fs | יצא | Hophal Ptc. fs — "being brought out" (I-י + III-א doubly weak; מוּ- prefix; ת = fs) |
+| 12 | מְצָאָהּ | **No** | Perfect | 3ms + 3fs obj. | מצא | NOT Hophal — Qal Pf. 3ms "he found her" (מְ = Qal shewa, not Hophal מוּ-) |
+| 13 | הוּצָא | Yes | Perfect | 3ms | יצא | Hophal — "was brought out" (I-י + III-א; Hiphil הוֹצִיא; הוּ prefix) |
+| 14 | הֻגַּד | Yes | Perfect | 3ms | נגד | Hophal — "it was told" (I-נ; נ assimilated → dagesh in גּ; Qibbuts הֻ prefix) |
+| 15 | הֻגְלָה | Yes | Perfect | 3ms | גלה | Hophal — "was exiled" (III-ה; Qibbuts הֻ prefix; Qamets-ה mater ending) |
+| 16 | וַיֻּגַּד | Yes | Wayyiqtol | 3ms | נגד | Hophal Wayyiqtol — "and it was told" (I-נ; וַיֻּ prefix; dagesh forte in גּ from נ assimilation) |
+| 17 | יֻקָּם | Yes | Imperfect | 3ms | נקם | Hophal Impf. — "shall be avenged" (I-נ root נקם; Qibbuts יֻ + dagesh in קּ; contrast: #9 יוּקַם from קום) |
+| 18 | הֶעֱמַד | Yes | Perfect | 3ms | עמד | Hophal — "was stationed" (I-guttural; Seghol הֶ prefix in Perfect; hateph-seghol under ע) |
 
 > **Notes on distractors:**
-> - **4 מוּבָאִים** is itself Hophal (Participle mp of בוא), not a distractor in the ordinary sense — it is included to contrast the Participle with the Perfect (verb 2).
-> - **7 הָקִים** is Hiphil Perfect 3ms of קום (active: "he set up the tabernacle"). Contrast: Hophal הוּקַם (passive: "the tabernacle was set up"). The diagnostic: Hiphil prefix carries an i-class vowel (הִ-/הֵ-/הָ-), never u-class.
-> - **8 יִסְעוּ** is Qal Imperfect 3mp of נסע, a I-נ root. The נ assimilates completely, producing dagesh in ס. No u-class vowel under the prefix = not Hophal.
-> - **12 מְצָאָהּ** is Qal Perfect 3ms of מצא with a 3fs object suffix. The מְ here is simply the Qal Perfect 3ms vowel pattern, not the Hophal Participle prefix מוּ.
+> - **#3 הַשָּׁב**: Qal Participle ms of שׁוב with definite article הַ (dagesh in שׁ from article assimilation). The Hophal Participle ms with article = הַמּוּשָׁב — visible in Gen 43:12.
+> - **#7 הָקִים**: Hiphil Perfect 3ms of קום "he set up." Diagnostic: הָ- prefix + Hireq under ק = i-class (Hiphil). Contrast with Hophal הוּקַם (u-class).
+> - **#8 יִסְעוּ**: Qal Imperfect 3mp of I-נ root נסע. The יִ prefix (Hireq) is i-class = not Hophal.
+> - **#12 מְצָאָהּ**: Qal Perfect 3ms of מצא + 3fs obj. suffix. The מְ is Qal vowel pattern (shewa), not the Hophal Participle מוּ-.
