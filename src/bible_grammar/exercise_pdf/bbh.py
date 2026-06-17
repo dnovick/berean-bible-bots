@@ -10098,7 +10098,9 @@ class Ch29QalHiphilHophalContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
         self.add_instructions(
-            'Five root triplets — each root in Qal, Hiphil, and Hophal Perfect 3ms. '
+            'Five weak-root triplets — each root in Qal, Hiphil, and Hophal across '
+            'three conjugations: Perfect 3ms, Imperfect 3ms, and Participle ms '
+            '(9 forms per root, 45 total). '
             'For each form: (1) identify the stem, (2) parse conjugation and PGN, '
             '(3) translate, observing how the meaning shifts. '
             'Answer key at the bottom.'
@@ -10107,64 +10109,169 @@ class Ch29QalHiphilHophalContrastExercise(ExercisePDF):
         hdr = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Translation']
         cr  = [0.04, 0.16, 0.12, 0.20, 0.10, 0.38]
 
-        triplets = [
+        # Each entry: (part_title, [(conj_label, q_rows, a_rows), ...])
+        parts = [
             ('Part A — Root: בוא (Hollow: "to come / bring / be brought")', [
-                ['1', 'בָּא',     '', 'Perfect', '3ms', ''],
-                ['2', 'הֵבִיא',   '', 'Perfect', '3ms', ''],
-                ['3', 'הוּבָא',   '', 'Perfect', '3ms', ''],
-            ], [
-                ['1', 'בָּא',     'Qal',    'Perfect', '3ms', 'he came'],
-                ['2', 'הֵבִיא',   'Hiphil', 'Perfect', '3ms', 'he brought'],
-                ['3', 'הוּבָא',   'Hophal', 'Perfect', '3ms', 'he was brought'],
+                ('Perfect 3ms', [
+                    ['1', 'בָּא',   '', '', '', ''],
+                    ['2', 'הֵבִיא', '', '', '', ''],
+                    ['3', 'הוּבָא', '', '', '', ''],
+                ], [
+                    ['1', 'בָּא',   'Qal',    'Perfect', '3ms', 'he came'],
+                    ['2', 'הֵבִיא', 'Hiphil', 'Perfect', '3ms', 'he brought'],
+                    ['3', 'הוּבָא', 'Hophal', 'Perfect', '3ms', 'he was brought'],
+                ]),
+                ('Imperfect 3ms', [
+                    ['4', 'יָבוֹא', '', '', '', ''],
+                    ['5', 'יָבִיא', '', '', '', ''],
+                    ['6', 'יוּבָא', '', '', '', ''],
+                ], [
+                    ['4', 'יָבוֹא', 'Qal',    'Imperfect', '3ms', 'he will come'],
+                    ['5', 'יָבִיא', 'Hiphil', 'Imperfect', '3ms', 'he will bring'],
+                    ['6', 'יוּבָא', 'Hophal', 'Imperfect', '3ms', 'he will be brought'],
+                ]),
+                ('Participle ms', [
+                    ['7', 'בָּא',   '', '', '', ''],
+                    ['8', 'מֵבִיא', '', '', '', ''],
+                    ['9', 'מוּבָא', '', '', '', ''],
+                ], [
+                    ['7', 'בָּא',   'Qal',    'Participle', 'ms', 'one coming (= Pf 3ms form)'],
+                    ['8', 'מֵבִיא', 'Hiphil', 'Participle', 'ms', 'one who brings'],
+                    ['9', 'מוּבָא', 'Hophal', 'Participle', 'ms', 'one being brought'],
+                ]),
             ]),
             ('Part B — Root: ירד (I-י: "to go down / bring down / be brought down")', [
-                ['4', 'יָרַד',    '', 'Perfect', '3ms', ''],
-                ['5', 'הוֹרִיד',  '', 'Perfect', '3ms', ''],
-                ['6', 'הוּרַד',   '', 'Perfect', '3ms', ''],
-            ], [
-                ['4', 'יָרַד',    'Qal',    'Perfect', '3ms', 'he went down'],
-                ['5', 'הוֹרִיד',  'Hiphil', 'Perfect', '3ms', 'he brought down'],
-                ['6', 'הוּרַד',   'Hophal', 'Perfect', '3ms', 'he was brought down'],
+                ('Perfect 3ms', [
+                    ['10', 'יָרַד',   '', '', '', ''],
+                    ['11', 'הוֹרִיד', '', '', '', ''],
+                    ['12', 'הוּרַד',  '', '', '', ''],
+                ], [
+                    ['10', 'יָרַד',   'Qal',    'Perfect', '3ms', 'he went down'],
+                    ['11', 'הוֹרִיד', 'Hiphil', 'Perfect', '3ms', 'he brought down'],
+                    ['12', 'הוּרַד',  'Hophal', 'Perfect', '3ms', 'he was brought down'],
+                ]),
+                ('Imperfect 3ms', [
+                    ['13', 'יֵרֵד',   '', '', '', ''],
+                    ['14', 'יוֹרִיד', '', '', '', ''],
+                    ['15', 'יוּרַד',  '', '', '', ''],
+                ], [
+                    ['13', 'יֵרֵד',   'Qal',    'Imperfect', '3ms', 'he will go down'],
+                    ['14', 'יוֹרִיד', 'Hiphil', 'Imperfect', '3ms', 'he will bring down'],
+                    ['15', 'יוּרַד',  'Hophal', 'Imperfect', '3ms', 'he will be brought down'],
+                ]),
+                ('Participle ms', [
+                    ['16', 'יֹרֵד',   '', '', '', ''],
+                    ['17', 'מוֹרִיד', '', '', '', ''],
+                    ['18', 'מוּרָד',  '', '', '', ''],
+                ], [
+                    ['16', 'יֹרֵד',   'Qal',    'Participle', 'ms', 'one going down'],
+                    ['17', 'מוֹרִיד', 'Hiphil', 'Participle', 'ms', 'one who brings down'],
+                    ['18', 'מוּרָד',  'Hophal', 'Participle', 'ms', 'one being brought down'],
+                ]),
             ]),
             ('Part C — Root: שׁוב (Hollow: "to return / bring back / be brought back")', [
-                ['7', 'שָׁב',     '', 'Perfect', '3ms', ''],
-                ['8', 'הֵשִׁיב',  '', 'Perfect', '3ms', ''],
-                ['9', 'הוּשַׁב',  '', 'Perfect', '3ms', ''],
-            ], [
-                ['7', 'שָׁב',     'Qal',    'Perfect', '3ms', 'he returned'],
-                ['8', 'הֵשִׁיב',  'Hiphil', 'Perfect', '3ms', 'he returned (it) / brought back'],
-                ['9', 'הוּשַׁב',  'Hophal', 'Perfect', '3ms', 'he was brought back'],
+                ('Perfect 3ms', [
+                    ['19', 'שָׁב',    '', '', '', ''],
+                    ['20', 'הֵשִׁיב', '', '', '', ''],
+                    ['21', 'הוּשַׁב', '', '', '', ''],
+                ], [
+                    ['19', 'שָׁב',    'Qal',    'Perfect', '3ms', 'he returned'],
+                    ['20', 'הֵשִׁיב', 'Hiphil', 'Perfect', '3ms', 'he returned (it) / brought back'],
+                    ['21', 'הוּשַׁב', 'Hophal', 'Perfect', '3ms', 'he was brought back'],
+                ]),
+                ('Imperfect 3ms', [
+                    ['22', 'יָשׁוּב', '', '', '', ''],
+                    ['23', 'יָשִׁיב', '', '', '', ''],
+                    ['24', 'יוּשַׁב', '', '', '', ''],
+                ], [
+                    ['22', 'יָשׁוּב', 'Qal',    'Imperfect', '3ms', 'he will return'],
+                    ['23', 'יָשִׁיב', 'Hiphil', 'Imperfect', '3ms', 'he will bring back / restore'],
+                    ['24', 'יוּשַׁב', 'Hophal', 'Imperfect', '3ms', 'he will be brought back'],
+                ]),
+                ('Participle ms', [
+                    ['25', 'שָׁב',    '', '', '', ''],
+                    ['26', 'מֵשִׁיב', '', '', '', ''],
+                    ['27', 'מוּשָׁב', '', '', '', ''],
+                ], [
+                    ['25', 'שָׁב',    'Qal',    'Participle', 'ms', 'one returning (= Pf 3ms form)'],
+                    ['26', 'מֵשִׁיב', 'Hiphil', 'Participle', 'ms', 'one who brings back'],
+                    ['27', 'מוּשָׁב', 'Hophal', 'Participle', 'ms', 'one being brought back'],
+                ]),
             ]),
             ('Part D — Root: קום (Hollow: "to arise / raise up / be raised up")', [
-                ['10', 'קָם',     '', 'Perfect', '3ms', ''],
-                ['11', 'הֵקִים',  '', 'Perfect', '3ms', ''],
-                ['12', 'הוּקַם',  '', 'Perfect', '3ms', ''],
-            ], [
-                ['10', 'קָם',     'Qal',    'Perfect', '3ms', 'he arose'],
-                ['11', 'הֵקִים',  'Hiphil', 'Perfect', '3ms', 'he established / raised up'],
-                ['12', 'הוּקַם',  'Hophal', 'Perfect', '3ms', 'he was raised up / established'],
+                ('Perfect 3ms', [
+                    ['28', 'קָם',    '', '', '', ''],
+                    ['29', 'הֵקִים', '', '', '', ''],
+                    ['30', 'הוּקַם', '', '', '', ''],
+                ], [
+                    ['28', 'קָם',    'Qal',    'Perfect', '3ms', 'he arose'],
+                    ['29', 'הֵקִים', 'Hiphil', 'Perfect', '3ms', 'he established / raised up'],
+                    ['30', 'הוּקַם', 'Hophal', 'Perfect', '3ms', 'he was raised up / established'],
+                ]),
+                ('Imperfect 3ms', [
+                    ['31', 'יָקוּם', '', '', '', ''],
+                    ['32', 'יָקִים', '', '', '', ''],
+                    ['33', 'יוּקַם', '', '', '', ''],
+                ], [
+                    ['31', 'יָקוּם', 'Qal',    'Imperfect', '3ms', 'he will arise'],
+                    ['32', 'יָקִים', 'Hiphil', 'Imperfect', '3ms', 'he will raise up / establish'],
+                    ['33', 'יוּקַם', 'Hophal', 'Imperfect', '3ms', 'he will be raised up'],
+                ]),
+                ('Participle ms', [
+                    ['34', 'קָם',    '', '', '', ''],
+                    ['35', 'מֵקִים', '', '', '', ''],
+                    ['36', 'מוּקָם', '', '', '', ''],
+                ], [
+                    ['34', 'קָם',    'Qal',    'Participle', 'ms', 'one arising (= Pf 3ms form)'],
+                    ['35', 'מֵקִים', 'Hiphil', 'Participle', 'ms', 'one who raises up'],
+                    ['36', 'מוּקָם', 'Hophal', 'Participle', 'ms', 'one being raised up'],
+                ]),
             ]),
             ('Part E — Root: ילד (I-י: "to bear/father / beget / be born")', [
-                ['13', 'יָלַד',   '', 'Perfect', '3ms', ''],
-                ['14', 'הוֹלִיד', '', 'Perfect', '3ms', ''],
-                ['15', 'הוּלַד',  '', 'Perfect', '3ms', ''],
-            ], [
-                ['13', 'יָלַד',   'Qal',    'Perfect', '3ms', 'he fathered / bore'],
-                ['14', 'הוֹלִיד', 'Hiphil', 'Perfect', '3ms', 'he begat / caused to be born'],
-                ['15', 'הוּלַד',  'Hophal', 'Perfect', '3ms', 'he was born'],
+                ('Perfect 3ms', [
+                    ['37', 'יָלַד',   '', '', '', ''],
+                    ['38', 'הוֹלִיד', '', '', '', ''],
+                    ['39', 'הוּלַד',  '', '', '', ''],
+                ], [
+                    ['37', 'יָלַד',   'Qal',    'Perfect', '3ms', 'he fathered / bore'],
+                    ['38', 'הוֹלִיד', 'Hiphil', 'Perfect', '3ms', 'he begat / caused to be born'],
+                    ['39', 'הוּלַד',  'Hophal', 'Perfect', '3ms', 'he was born'],
+                ]),
+                ('Imperfect 3ms', [
+                    ['40', 'יֵלֵד',   '', '', '', ''],
+                    ['41', 'יוֹלִיד', '', '', '', ''],
+                    ['42', 'יוּלַד',  '', '', '', ''],
+                ], [
+                    ['40', 'יֵלֵד',   'Qal',    'Imperfect', '3ms', 'he will bear / father'],
+                    ['41', 'יוֹלִיד', 'Hiphil', 'Imperfect', '3ms', 'he will beget / cause to be born'],
+                    ['42', 'יוּלַד',  'Hophal', 'Imperfect', '3ms', 'he will be born'],
+                ]),
+                ('Participle ms', [
+                    ['43', 'יֹלֵד',   '', '', '', ''],
+                    ['44', 'מוֹלִיד', '', '', '', ''],
+                    ['45', 'מוּלָד',  '', '', '', ''],
+                ], [
+                    ['43', 'יֹלֵד',   'Qal',    'Participle', 'ms', 'one bearing / fathering'],
+                    ['44', 'מוֹלִיד', 'Hiphil', 'Participle', 'ms', 'one who begets'],
+                    ['45', 'מוּלָד',  'Hophal', 'Participle', 'ms', 'one being born'],
+                ]),
             ]),
         ]
 
-        for title, rows, ans in triplets:
-            self.add_section_heading(title)
-            self.add_generic_table(hdr, rows, cr, heb_cols=[1], show_answers=False)
+        for part_title, conj_groups in parts:
+            self.add_section_heading(part_title)
+            for conj_label, rows, _ans in conj_groups:
+                self.add_section_heading(conj_label)
+                self.add_generic_table(hdr, rows, cr, heb_cols=[1], show_answers=False)
             self.add_section_break()
 
         self.add_section_heading('Answer Key')
-        for title, rows, ans in triplets:
-            self.add_section_heading(title)
-            self.add_generic_table(hdr, rows, cr, heb_cols=[1],
-                                   show_answers=True, answer_rows=ans)
+        for part_title, conj_groups in parts:
+            self.add_section_heading(part_title)
+            for conj_label, _rows, ans in conj_groups:
+                self.add_section_heading(conj_label)
+                self.add_generic_table(hdr, ans, cr, heb_cols=[1],
+                                       show_answers=True, answer_rows=ans)
 
 
 def build_ch29_qal_hiphil_hophal_contrast(out_dir: Optional[str] = None) -> str:

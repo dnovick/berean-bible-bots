@@ -27,6 +27,7 @@
   .discussion { background: #f8f0ff; border-left: 4px solid #6a2a8e; padding: .6em 1em; margin: 1.5em 0; font-size: .88em; }
   ol.disc { margin: .4em 0 0 1.2em; padding: 0; }
   ol.disc li { margin-bottom: .4em; }
+  .conj-hdr td { background: #dce8f5 !important; font-weight: bold; font-size: .82em; color: #2a4a6e; padding: .3em .6em; border-top: 2px solid #2a4a6e; }
   @media print {
     button, .controls { display: none !important; }
     .parse-field { border: none; border-bottom: 1px solid #000; background: transparent; }
@@ -40,13 +41,19 @@
 <h1>Chapter 29 — Qal–Hiphil–Hophal Contrast Drill (Weak Roots)</h1>
 <p class="subtitle">BBH Chapter 29 · Hophal Weak Verbs</p>
 
-<p>This drill presents five weak-root triplets. Each group of three shows the same root in <strong>Qal / Hiphil / Hophal</strong> (all Perfect 3ms). For each form: (1) identify the stem, (2) parse, (3) translate. Click <strong>▶ Answer</strong> to reveal the answer row.</p>
+<p>This drill presents five weak-root triplets. Each group shows the same root in <strong>Qal / Hiphil / Hophal</strong> across three conjugations: <strong>Perfect 3ms</strong>, <strong>Imperfect 3ms</strong>, and <strong>Participle ms</strong> (9 forms per root, 45 total). For each form: (1) identify the stem, (2) parse conjugation and PGN, (3) translate. Click <strong>▶ Answer</strong> to reveal the answer row.</p>
 
 <div class="tip">
-  <strong>Stem distinguishers (weak roots):</strong>
-  <strong>Qal</strong>: base root vowels, no special prefix (hollow roots contract to one syllable).
-  <strong>Hiphil</strong>: הֵ/הוֹ prefix in Perfect; chiriq-yod in hollow stems (הֵשִׁיב, הֵקִים, הֵבִיא); הוֹ in some I-י (הוֹרִיד, הוֹלִיד).
-  <strong>Hophal</strong>: הוּ prefix (shureq) in all weak Hophal Perfects; contracted stem for hollow roots.
+  <strong>Stem distinguishers (weak roots):</strong><br>
+  <strong>Qal Perfect</strong>: base root vowels, no prefix (hollow roots contract to one syllable: בָּא, שָׁב, קָם; I-י roots retain initial consonant: יָרַד, יָלַד).<br>
+  <strong>Qal Imperfect</strong>: standard יִ/יָ prefix; hollow roots lengthen the root vowel (יָבוֹא, יָשׁוּב, יָקוּם); I-י drops the yod (יֵרֵד, יֵלֵד).<br>
+  <strong>Qal Participle ms</strong>: active qotel pattern; hollow roots look identical to Pf 3ms (בָּא, שָׁב, קָם — only context distinguishes); I-י: יֹרֵד, יֹלֵד.<br>
+  <strong>Hiphil Perfect</strong>: הֵ prefix + chiriq-yod in hollow stems (הֵבִיא, הֵשִׁיב, הֵקִים); הוֹ in I-י (הוֹרִיד, הוֹלִיד).<br>
+  <strong>Hiphil Imperfect</strong>: יָ prefix + chiriq-yod in hollow (יָבִיא, יָשִׁיב, יָקִים); יוֹ prefix in I-י (יוֹרִיד, יוֹלִיד).<br>
+  <strong>Hiphil Participle ms</strong>: מֵ prefix in hollow (מֵבִיא, מֵשִׁיב, מֵקִים); מוֹ in I-י (מוֹרִיד, מוֹלִיד).<br>
+  <strong>Hophal Perfect</strong>: הוּ prefix (shureq) in all weak roots: הוּבָא, הוּשַׁב, הוּקַם, הוּרַד, הוּלַד.<br>
+  <strong>Hophal Imperfect</strong>: יוּ prefix: יוּבָא, יוּשַׁב, יוּקַם, יוּרַד, יוּלַד.<br>
+  <strong>Hophal Participle ms</strong>: מוּ prefix: מוּבָא, מוּשָׁב, מוּקָם, מוּרָד, מוּלָד.
 </div>
 
 <div class="controls">
@@ -55,31 +62,33 @@
   <button onclick="clearAll()">Clear All Inputs</button>
 </div>
 
+<!-- ============================================================ PART A -->
 <h3>Part A — Root: <span class="heb">בוא</span> (Hollow) — "to come / to bring / to be brought"</h3>
 
 <table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Perfect 3ms</td></tr>
   <tr>
     <td>1</td>
     <td><span class="heb">בָּא</span></td>
     <td><select class="parse-field" id="s1"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c1"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p1"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><select class="parse-field" id="c1"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p1"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
     <td><input class="parse-field" id="t1" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a1')">▶ Answer</button></td>
   </tr>
   <tr class="answer-row" id="a1">
     <td>✓</td><td></td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td>
-    <td>he came — <em>Hollow root בוא contracts; qamets under first consonant = Qal Pf 3ms of hollow roots.</em></td><td></td>
+    <td>he came — <em>Hollow root בוא contracts; qamets under first consonant = Qal Pf 3ms.</em></td><td></td>
   </tr>
   <tr>
     <td>2</td>
     <td><span class="heb">הֵבִיא</span></td>
     <td><select class="parse-field" id="s2"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c2"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p2"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><select class="parse-field" id="c2"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p2"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
     <td><input class="parse-field" id="t2" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a2')">▶ Answer</button></td>
   </tr>
@@ -91,8 +100,8 @@
     <td>3</td>
     <td><span class="heb">הוּבָא</span></td>
     <td><select class="parse-field" id="s3"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c3"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p3"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
+    <td><select class="parse-field" id="c3"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p3"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
     <td><input class="parse-field" id="t3" placeholder="translation"></td>
     <td><button class="reveal-btn" onclick="toggle('a3')">▶ Answer</button></td>
   </tr>
@@ -100,193 +109,601 @@
     <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he was brought — <em>הוּ prefix (shureq) = Hophal marker; long ā in contracted hollow stem.</em></td><td></td>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Imperfect 3ms</td></tr>
+  <tr>
+    <td>4</td>
+    <td><span class="heb">יָבוֹא</span></td>
+    <td><select class="parse-field" id="s4"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c4"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p4"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t4" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a4">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will come / he comes — <em>יָ prefix; holem-waw in contracted hollow stem.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>5</td>
+    <td><span class="heb">יָבִיא</span></td>
+    <td><select class="parse-field" id="s5"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c5"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p5"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t5" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a5">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will bring — <em>יָ prefix + chiriq-yod (patach shortens to pathach under stress shift); contrast Qal יָבוֹא.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>6</td>
+    <td><span class="heb">יוּבָא</span></td>
+    <td><select class="parse-field" id="s6"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c6"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p6"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t6" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a6">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will be brought — <em>יוּ prefix (shureq) = Hophal Imperfect marker for all weak roots.</em></td><td></td>
+  </tr>
+  <tr class="conj-hdr"><td colspan="7">Participle ms</td></tr>
+  <tr>
+    <td>7</td>
+    <td><span class="heb">בָּא</span></td>
+    <td><select class="parse-field" id="s7"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c7"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p7"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t7" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a7">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Participle</td><td>ms</td>
+    <td>one who comes / coming — <em>Hollow Qal Ptc ms = בָּא, identical to Pf 3ms; context (article, agreement) distinguishes.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>8</td>
+    <td><span class="heb">מֵבִיא</span></td>
+    <td><select class="parse-field" id="s8"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c8"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p8"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t8" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a8">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Participle</td><td>ms</td>
+    <td>one who brings / bringing — <em>מֵ prefix (tsere) + chiriq-yod = Hiphil Ptc of hollow roots.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>9</td>
+    <td><span class="heb">מוּבָא</span></td>
+    <td><select class="parse-field" id="s9"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c9"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p9"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t9" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a9">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Participle</td><td>ms</td>
+    <td>one being brought — <em>מוּ prefix (shureq) = Hophal Ptc marker for all weak roots.</em></td><td></td>
+  </tr>
 </table>
 
+<!-- ============================================================ PART B -->
 <h3>Part B — Root: <span class="heb">ירד</span> (I-י) — "to go down / to bring down / to be brought down"</h3>
 
 <table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Perfect 3ms</td></tr>
   <tr>
-    <td>4</td>
+    <td>10</td>
     <td><span class="heb">יָרַד</span></td>
-    <td><select class="parse-field" id="s4"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c4"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p4"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t4" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a4')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s10"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c10"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p10"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t10" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a4">
+  <tr class="answer-row" id="a10">
     <td>✓</td><td></td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td>
-    <td>he went down — <em>Base qamets-patach vowels; I-י root has no prefix marking in Qal Pf 3ms.</em></td><td></td>
+    <td>he went down — <em>I-י root; base qamets-patach; initial י retained in Perfect.</em></td><td></td>
   </tr>
   <tr>
-    <td>5</td>
+    <td>11</td>
     <td><span class="heb">הוֹרִיד</span></td>
-    <td><select class="parse-field" id="s5"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c5"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p5"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t5" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a5')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s11"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c11"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p11"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t11" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a5">
+  <tr class="answer-row" id="a11">
     <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Perfect</td><td>3ms</td>
     <td>he brought down — <em>I-י Hiphil: הוֹ prefix (holem-waw, compensating for dropped י) + chiriq-yod.</em></td><td></td>
   </tr>
   <tr>
-    <td>6</td>
+    <td>12</td>
     <td><span class="heb">הוּרַד</span></td>
-    <td><select class="parse-field" id="s6"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c6"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p6"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t6" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a6')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s12"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c12"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p12"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t12" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a6">
+  <tr class="answer-row" id="a12">
     <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he was brought down — <em>הוּ prefix (shureq); contrast Hiphil הוֹ (holem-waw) vs. Hophal הוּ (shureq).</em></td><td></td>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Imperfect 3ms</td></tr>
+  <tr>
+    <td>13</td>
+    <td><span class="heb">יֵרֵד</span></td>
+    <td><select class="parse-field" id="s13"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c13"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p13"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t13" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a13">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will go down — <em>I-י Qal Impf: initial י drops; tsere prefix-vowel (יֵ) + tsere in stem (tsere-tsere pattern).</em></td><td></td>
+  </tr>
+  <tr>
+    <td>14</td>
+    <td><span class="heb">יוֹרִיד</span></td>
+    <td><select class="parse-field" id="s14"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c14"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p14"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t14" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a14')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a14">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will bring down — <em>I-י Hiphil Impf: יוֹ prefix (holem-waw) + chiriq-yod.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>15</td>
+    <td><span class="heb">יוּרַד</span></td>
+    <td><select class="parse-field" id="s15"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c15"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p15"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t15" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a15')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a15">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will be brought down — <em>יוּ prefix (shureq); contrast Hiphil יוֹ (holem-waw) vs. Hophal יוּ (shureq).</em></td><td></td>
+  </tr>
+  <tr class="conj-hdr"><td colspan="7">Participle ms</td></tr>
+  <tr>
+    <td>16</td>
+    <td><span class="heb">יֹרֵד</span></td>
+    <td><select class="parse-field" id="s16"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c16"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p16"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t16" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a16')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a16">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Participle</td><td>ms</td>
+    <td>one going down / descending — <em>I-י Qal Ptc: יֹ prefix (holem) + tsere in stem; distinct from Pf 3ms יָרַד.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>17</td>
+    <td><span class="heb">מוֹרִיד</span></td>
+    <td><select class="parse-field" id="s17"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c17"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p17"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t17" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a17')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a17">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Participle</td><td>ms</td>
+    <td>one who brings down — <em>I-י Hiphil Ptc: מוֹ prefix (holem-waw) + chiriq-yod.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>18</td>
+    <td><span class="heb">מוּרָד</span></td>
+    <td><select class="parse-field" id="s18"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c18"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p18"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t18" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a18')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a18">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Participle</td><td>ms</td>
+    <td>one being brought down — <em>מוּ prefix (shureq); contrast Hiphil מוֹ (holem-waw) vs. Hophal מוּ (shureq).</em></td><td></td>
+  </tr>
 </table>
 
+<!-- ============================================================ PART C -->
 <h3>Part C — Root: <span class="heb">שׁוב</span> (Hollow) — "to return / to bring back / to be brought back"</h3>
 
 <table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Perfect 3ms</td></tr>
   <tr>
-    <td>7</td>
+    <td>19</td>
     <td><span class="heb">שָׁב</span></td>
-    <td><select class="parse-field" id="s7"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c7"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p7"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t7" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a7')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s19"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c19"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p19"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t19" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a19')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a7">
+  <tr class="answer-row" id="a19">
     <td>✓</td><td></td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he returned — <em>Hollow root שׁוב contracts; qamets under שׁ = Qal Pf 3ms.</em></td><td></td>
   </tr>
   <tr>
-    <td>8</td>
+    <td>20</td>
     <td><span class="heb">הֵשִׁיב</span></td>
-    <td><select class="parse-field" id="s8"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c8"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p8"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t8" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a8')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s20"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c20"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p20"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t20" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a20')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a8">
+  <tr class="answer-row" id="a20">
     <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Perfect</td><td>3ms</td>
     <td>he returned (it) / brought back — <em>Hollow Hiphil: הֵ prefix (tsere) + chiriq-yod.</em></td><td></td>
   </tr>
   <tr>
-    <td>9</td>
+    <td>21</td>
     <td><span class="heb">הוּשַׁב</span></td>
-    <td><select class="parse-field" id="s9"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c9"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p9"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t9" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a9')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s21"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c21"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p21"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t21" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a21')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a9">
+  <tr class="answer-row" id="a21">
     <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he was brought back — <em>הוּ prefix (shureq) + patach; contrast Hiphil הֵשִׁיב (tsere + chiriq-yod).</em></td><td></td>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Imperfect 3ms</td></tr>
+  <tr>
+    <td>22</td>
+    <td><span class="heb">יָשׁוּב</span></td>
+    <td><select class="parse-field" id="s22"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c22"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p22"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t22" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a22')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a22">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will return — <em>יָ prefix; shureq in contracted hollow stem.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>23</td>
+    <td><span class="heb">יָשִׁיב</span></td>
+    <td><select class="parse-field" id="s23"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c23"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p23"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t23" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a23')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a23">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will bring back / restore — <em>יָ prefix + chiriq-yod; contrast Qal יָשׁוּב (shureq) vs. Hiphil יָשִׁיב (chiriq-yod).</em></td><td></td>
+  </tr>
+  <tr>
+    <td>24</td>
+    <td><span class="heb">יוּשַׁב</span></td>
+    <td><select class="parse-field" id="s24"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c24"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p24"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t24" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a24')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a24">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will be brought back — <em>יוּ prefix (shureq) = Hophal Imperfect.</em></td><td></td>
+  </tr>
+  <tr class="conj-hdr"><td colspan="7">Participle ms</td></tr>
+  <tr>
+    <td>25</td>
+    <td><span class="heb">שָׁב</span></td>
+    <td><select class="parse-field" id="s25"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c25"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p25"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t25" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a25')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a25">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Participle</td><td>ms</td>
+    <td>one returning / returning — <em>Hollow Qal Ptc ms = שָׁב, identical to Pf 3ms; article or noun agreement disambiguates.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>26</td>
+    <td><span class="heb">מֵשִׁיב</span></td>
+    <td><select class="parse-field" id="s26"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c26"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p26"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t26" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a26')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a26">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Participle</td><td>ms</td>
+    <td>one who brings back / restoring — <em>מֵ prefix (tsere) + chiriq-yod = Hiphil Ptc of hollow roots.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>27</td>
+    <td><span class="heb">מוּשָׁב</span></td>
+    <td><select class="parse-field" id="s27"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c27"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p27"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t27" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a27')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a27">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Participle</td><td>ms</td>
+    <td>one being brought back — <em>מוּ prefix (shureq) = Hophal Ptc; contrast Hiphil מֵשִׁיב (tsere + chiriq-yod).</em></td><td></td>
+  </tr>
 </table>
 
+<!-- ============================================================ PART D -->
 <h3>Part D — Root: <span class="heb">קום</span> (Hollow) — "to arise / to raise up / to be raised up"</h3>
 
 <table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Perfect 3ms</td></tr>
   <tr>
-    <td>10</td>
+    <td>28</td>
     <td><span class="heb">קָם</span></td>
-    <td><select class="parse-field" id="s10"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c10"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p10"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t10" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a10')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s28"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c28"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p28"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t28" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a28')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a10">
+  <tr class="answer-row" id="a28">
     <td>✓</td><td></td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he arose — <em>Hollow root קום contracts to one syllable (קָם); qamets under first consonant.</em></td><td></td>
   </tr>
   <tr>
-    <td>11</td>
+    <td>29</td>
     <td><span class="heb">הֵקִים</span></td>
-    <td><select class="parse-field" id="s11"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c11"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p11"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t11" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a11')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s29"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c29"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p29"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t29" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a29')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a11">
+  <tr class="answer-row" id="a29">
     <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Perfect</td><td>3ms</td>
-    <td>he established / raised up — <em>הֵ prefix (tsere) + chiriq-yod; used of God establishing covenants.</em></td><td></td>
+    <td>he established / raised up — <em>הֵ prefix (tsere) + chiriq-yod; used of God establishing covenants (Exo 6:4).</em></td><td></td>
   </tr>
   <tr>
-    <td>12</td>
+    <td>30</td>
     <td><span class="heb">הוּקַם</span></td>
-    <td><select class="parse-field" id="s12"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c12"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p12"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t12" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a12')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s30"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c30"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p30"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t30" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a30')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a12">
+  <tr class="answer-row" id="a30">
     <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he was raised up / established — <em>הוּ prefix (shureq) + patach; Exo 40:17: הוּקַם הַמִּשְׁכָּן.</em></td><td></td>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Imperfect 3ms</td></tr>
+  <tr>
+    <td>31</td>
+    <td><span class="heb">יָקוּם</span></td>
+    <td><select class="parse-field" id="s31"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c31"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p31"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t31" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a31')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a31">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will arise — <em>יָ prefix; shureq in contracted hollow stem.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>32</td>
+    <td><span class="heb">יָקִים</span></td>
+    <td><select class="parse-field" id="s32"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c32"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p32"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t32" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a32')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a32">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will raise up / establish — <em>יָ prefix + chiriq-yod; contrast Qal יָקוּם (shureq) vs. Hiphil יָקִים (chiriq-yod).</em></td><td></td>
+  </tr>
+  <tr>
+    <td>33</td>
+    <td><span class="heb">יוּקַם</span></td>
+    <td><select class="parse-field" id="s33"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c33"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p33"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t33" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a33')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a33">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will be raised up — <em>יוּ prefix (shureq) = Hophal Imperfect.</em></td><td></td>
+  </tr>
+  <tr class="conj-hdr"><td colspan="7">Participle ms</td></tr>
+  <tr>
+    <td>34</td>
+    <td><span class="heb">קָם</span></td>
+    <td><select class="parse-field" id="s34"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c34"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p34"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t34" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a34')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a34">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Participle</td><td>ms</td>
+    <td>one arising / rising — <em>Hollow Qal Ptc ms = קָם, identical to Pf 3ms; article or predicate position disambiguates in context.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>35</td>
+    <td><span class="heb">מֵקִים</span></td>
+    <td><select class="parse-field" id="s35"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c35"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p35"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t35" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a35')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a35">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Participle</td><td>ms</td>
+    <td>one who raises up / establishing — <em>מֵ prefix (tsere) + chiriq-yod = Hiphil Ptc of hollow roots.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>36</td>
+    <td><span class="heb">מוּקָם</span></td>
+    <td><select class="parse-field" id="s36"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c36"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p36"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t36" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a36')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a36">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Participle</td><td>ms</td>
+    <td>one being raised up — <em>מוּ prefix (shureq); contrast Hiphil מֵקִים (tsere + chiriq-yod).</em></td><td></td>
+  </tr>
 </table>
 
+<!-- ============================================================ PART E -->
 <h3>Part E — Root: <span class="heb">ילד</span> (I-י) — "to bear/father / to beget / to be born"</h3>
 
 <table>
   <tr>
     <th>#</th><th>Hebrew Form</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Translation</th><th></th>
   </tr>
+  <tr class="conj-hdr"><td colspan="7">Perfect 3ms</td></tr>
   <tr>
-    <td>13</td>
+    <td>37</td>
     <td><span class="heb">יָלַד</span></td>
-    <td><select class="parse-field" id="s13"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c13"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p13"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t13" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a13')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s37"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c37"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p37"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t37" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a37')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a13">
+  <tr class="answer-row" id="a37">
     <td>✓</td><td></td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he fathered / bore — <em>I-י root; base qamets-patach; initial י retained in Perfect.</em></td><td></td>
   </tr>
   <tr>
-    <td>14</td>
+    <td>38</td>
     <td><span class="heb">הוֹלִיד</span></td>
-    <td><select class="parse-field" id="s14"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c14"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p14"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t14" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a14')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s38"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c38"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p38"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t38" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a38')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a14">
+  <tr class="answer-row" id="a38">
     <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Perfect</td><td>3ms</td>
     <td>he begat / caused to be born — <em>I-י Hiphil: הוֹ prefix (holem-waw) + chiriq-yod.</em></td><td></td>
   </tr>
   <tr>
-    <td>15</td>
+    <td>39</td>
     <td><span class="heb">הוּלַד</span></td>
-    <td><select class="parse-field" id="s15"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
-    <td><select class="parse-field" id="c15"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Weqatal">Weqatal</option><option value="Imperative">Imperative</option><option value="Inf. Construct">Inf. Construct</option><option value="Inf. Absolute">Inf. Absolute</option><option value="Participle">Participle</option></select></td>
-    <td><select class="parse-field" id="p15"><option value=""></option><option value="3ms">3ms</option><option value="3mp">3mp</option><option value="3fs">3fs</option><option value="3fp">3fp</option><option value="2ms">2ms</option><option value="2mp">2mp</option><option value="2fs">2fs</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms + 3mp suffix">ms + 3mp suffix</option><option value="ms">ms</option><option value="fs">fs</option><option value="mp">mp</option><option value="fp">fp</option><option value="—">—</option></select></td>
-    <td><input class="parse-field" id="t15" placeholder="translation"></td>
-    <td><button class="reveal-btn" onclick="toggle('a15')">▶ Answer</button></td>
+    <td><select class="parse-field" id="s39"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c39"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p39"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t39" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a39')">▶ Answer</button></td>
   </tr>
-  <tr class="answer-row" id="a15">
+  <tr class="answer-row" id="a39">
     <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Perfect</td><td>3ms</td>
     <td>he was born — <em>I-י Hophal: הוּ prefix (shureq); contrast Hiphil הוֹ (holem-waw).</em></td><td></td>
+  </tr>
+  <tr class="conj-hdr"><td colspan="7">Imperfect 3ms</td></tr>
+  <tr>
+    <td>40</td>
+    <td><span class="heb">יֵלֵד</span></td>
+    <td><select class="parse-field" id="s40"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c40"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p40"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t40" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a40')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a40">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will bear / father — <em>I-י Qal Impf: initial י drops; tsere prefix-vowel (יֵ) + tsere in stem.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>41</td>
+    <td><span class="heb">יוֹלִיד</span></td>
+    <td><select class="parse-field" id="s41"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c41"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p41"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t41" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a41')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a41">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will beget / cause to be born — <em>I-י Hiphil Impf: יוֹ prefix (holem-waw) + chiriq-yod.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>42</td>
+    <td><span class="heb">יוּלַד</span></td>
+    <td><select class="parse-field" id="s42"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c42"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p42"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t42" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a42')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a42">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Imperfect</td><td>3ms</td>
+    <td>he will be born — <em>יוּ prefix (shureq); contrast Hiphil יוֹ (holem-waw) vs. Hophal יוּ (shureq).</em></td><td></td>
+  </tr>
+  <tr class="conj-hdr"><td colspan="7">Participle ms</td></tr>
+  <tr>
+    <td>43</td>
+    <td><span class="heb">יֹלֵד</span></td>
+    <td><select class="parse-field" id="s43"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c43"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p43"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t43" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a43')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a43">
+    <td>✓</td><td></td><td><strong>Qal</strong></td><td>Participle</td><td>ms</td>
+    <td>one bearing / fathering — <em>I-י Qal Ptc: יֹ prefix (holem) + tsere in stem; distinct from Pf 3ms יָלַד.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>44</td>
+    <td><span class="heb">מוֹלִיד</span></td>
+    <td><select class="parse-field" id="s44"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c44"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p44"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t44" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a44')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a44">
+    <td>✓</td><td></td><td><strong>Hiphil</strong></td><td>Participle</td><td>ms</td>
+    <td>one who begets / begetting — <em>I-י Hiphil Ptc: מוֹ prefix (holem-waw) + chiriq-yod.</em></td><td></td>
+  </tr>
+  <tr>
+    <td>45</td>
+    <td><span class="heb">מוּלָד</span></td>
+    <td><select class="parse-field" id="s45"><option value=""></option><option value="Qal">Qal</option><option value="Hiphil">Hiphil</option><option value="Hophal">Hophal</option></select></td>
+    <td><select class="parse-field" id="c45"><option value=""></option><option value="Perfect">Perfect</option><option value="Imperfect">Imperfect</option><option value="Wayyiqtol">Wayyiqtol</option><option value="Participle">Participle</option></select></td>
+    <td><select class="parse-field" id="p45"><option value=""></option><option value="3ms">3ms</option><option value="3fs">3fs</option><option value="3mp">3mp</option><option value="2ms">2ms</option><option value="1cs">1cs</option><option value="1cp">1cp</option><option value="ms">ms</option><option value="mp">mp</option></select></td>
+    <td><input class="parse-field" id="t45" placeholder="translation"></td>
+    <td><button class="reveal-btn" onclick="toggle('a45')">▶ Answer</button></td>
+  </tr>
+  <tr class="answer-row" id="a45">
+    <td>✓</td><td></td><td><strong>Hophal</strong></td><td>Participle</td><td>ms</td>
+    <td>one being born — <em>מוּ prefix (shureq); contrast Hiphil מוֹ (holem-waw) vs. Hophal מוּ (shureq).</em></td><td></td>
   </tr>
 </table>
 
@@ -294,9 +711,10 @@
   <strong>Discussion Questions</strong>
   <ol class="disc">
     <li>Using root בוא (Part A), describe the subject's role in each stem: in the Qal, who is acting? In the Hiphil, who is causing whom to act? In the Hophal, who receives the causation?</li>
-    <li>Compare the Hiphil Perfect 3ms forms across all five roots. Hollow roots use הֵ + chiriq-yod (הֵבִיא, הֵשִׁיב, הֵקִים); I-י roots use הוֹ + chiriq-yod (הוֹרִיד, הוֹלִיד). What phonological principle explains why I-י roots use הוֹ rather than הֵ in the Hiphil?</li>
-    <li>All five Hophal Perfect 3ms forms begin with הוּ. How does this help you identify a Hophal of a weak root instantly, without knowing the root class?</li>
-    <li>The root ילד yields הוּלַד "he was born" (Hophal). Who is the implied agent causing the birth? How does using the Hophal (rather than simply the Niphal) shape the theological meaning when this form appears in narratives about God's action?</li>
+    <li>Compare the Hiphil Imperfect 3ms forms across all five roots. Hollow roots use יָ + chiriq-yod (יָבִיא, יָשִׁיב, יָקִים); I-י roots use יוֹ + chiriq-yod (יוֹרִיד, יוֹלִיד). What phonological principle explains the יוֹ prefix in I-י Hiphil Imperfect?</li>
+    <li>Qal Participle ms forms of hollow roots (בָּא, שָׁב, קָם) are identical to the Perfect 3ms. Name two grammatical features in context that allow you to distinguish Participle from Perfect for these forms.</li>
+    <li>Every Hophal Imperfect 3ms begins with יוּ and every Hophal Participle ms begins with מוּ. How is this single vowel pattern (shureq) a useful diagnostic for identifying Hophal in all weak-root classes?</li>
+    <li>The root ילד yields הוּלַד "he was born" (Hophal Pf 3ms) and מוּלָד "one being born" (Hophal Ptc ms). Who is the implied agent causing the birth? How does the Hophal (rather than Niphal) shape theological meaning in birth narratives?</li>
   </ol>
 </div>
 
