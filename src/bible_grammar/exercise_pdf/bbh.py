@@ -10291,10 +10291,11 @@ def build_ch29_qal_hiphil_hophal_contrast(out_dir: Optional[str] = None) -> str:
 
 class Ch29StemIdDrill(ExercisePDF):
     _instructions = (
-        'This drill mixes 24 forms of weak roots (hollow and I-י), '
+        'This drill mixes 36 forms of weak roots (hollow and I-י), '
         'from the four stems learned through Ch29: Qal, Niphal, Hiphil, Hophal. '
         'For each item: (1) identify the stem, (2) parse conjugation and PGN, '
-        '(3) translate the form. '
+        '(3) identify the root, (4) translate the form. '
+        'Items are mixed — not grouped by conjugation. '
         'Roots: בוא (hollow), שׁוב (hollow), קום (hollow), ירד (I-י), ילד (I-י).'
     )
 
@@ -10303,69 +10304,93 @@ class Ch29StemIdDrill(ExercisePDF):
         self.add_note(
             'Key rule: In weak Hophal (hollow and I-י), '
             'the characteristic vowel is שׁוּרֶק (וּ) in the prefix slot — '
-            'הוּ (Perfect/Inf.), יוּ (Imperfect), וַיּוּ (Wayyiqtol), מוּ (Participle). '
-            'Note on item 11: Niphal Imperfect 3ms of בוא → יִוָּבֵא.'
+            'הוּ (Perfect), יוּ (Imperfect), וַיּוּ (Wayyiqtol), מוּ (Participle). '
+            'Note on item 18: Niphal Imperfect 3ms of בוא → יִוָּבֵא (נ assimilates).'
         )
         hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root', 'Translation']
         cr   = [0.04, 0.16, 0.11, 0.18, 0.10, 0.09, 0.32]
         rows = [
-            ['1',  'בָּא',       '', '', '', 'בוא', ''],
-            ['2',  'הֵבִיא',     '', '', '', 'בוא', ''],
-            ['3',  'נָבוֹא',     '', '', '', 'בוא', ''],
-            ['4',  'הוּבָא',     '', '', '', 'בוא', ''],
-            ['5',  'שָׁב',       '', '', '', 'שׁוב', ''],
-            ['6',  'הֵשִׁיב',    '', '', '', 'שׁוב', ''],
-            ['7',  'יָרַד',      '', '', '', 'ירד', ''],
-            ['8',  'הוֹרִיד',    '', '', '', 'ירד', ''],
-            ['9',  'יָבוֹא',     '', '', '', 'בוא', ''],
-            ['10', 'יָבִיא',     '', '', '', 'בוא', ''],
-            ['11', 'יִוָּבֵא',   '', '', '', 'בוא', ''],
-            ['12', 'יוּבָא',     '', '', '', 'בוא', ''],
-            ['13', 'יָשׁוּב',    '', '', '', 'שׁוב', ''],
-            ['14', 'יָשִׁיב',    '', '', '', 'שׁוב', ''],
-            ['15', 'יוּשַׁב',    '', '', '', 'שׁוב', ''],
-            ['16', 'וַיָּבֹא',   '', '', '', 'בוא', ''],
-            ['17', 'וַיָּבֵא',   '', '', '', 'בוא', ''],
-            ['18', 'וַיּוּבָא',  '', '', '', 'בוא', ''],
-            ['19', 'קָם',        '', '', '', 'קום', ''],
-            ['20', 'הֵקִים',     '', '', '', 'קום', ''],
-            ['21', 'הוּקַם',     '', '', '', 'קום', ''],
-            ['22', 'יָלַד',      '', '', '', 'ילד', ''],
-            ['23', 'הוֹלִיד',    '', '', '', 'ילד', ''],
-            ['24', 'הוּלַד',     '', '', '', 'ילד', ''],
+            ['1',  'בָּאָה',     '', '', '', '', ''],
+            ['2',  'הֵבִיא',     '', '', '', '', ''],
+            ['3',  'שַׁבְתִּי',  '', '', '', '', ''],
+            ['4',  'הוּבָא',     '', '', '', '', ''],
+            ['5',  'הֵשִׁיבוּ',  '', '', '', '', ''],
+            ['6',  'בָּא',       '', '', '', '', ''],
+            ['7',  'שָׁב',       '', '', '', '', ''],
+            ['8',  'הֵשִׁיב',    '', '', '', '', ''],
+            ['9',  'הוּשַׁב',    '', '', '', '', ''],
+            ['10', 'בָּאנוּ',    '', '', '', '', ''],
+            ['11', 'נָבוֹא',     '', '', '', '', ''],
+            ['12', 'יָרַד',      '', '', '', '', ''],
+            ['13', 'הוֹרִיד',    '', '', '', '', ''],
+            ['14', 'הוּרַד',     '', '', '', '', ''],
+            ['15', 'יָבוֹא',     '', '', '', '', ''],
+            ['16', 'אָשׁוּב',    '', '', '', '', ''],
+            ['17', 'יָבִיא',     '', '', '', '', ''],
+            ['18', 'יִוָּבֵא',   '', '', '', '', ''],
+            ['19', 'יָשׁוּב',    '', '', '', '', ''],
+            ['20', 'יוּבָא',     '', '', '', '', ''],
+            ['21', 'יָשִׁיב',    '', '', '', '', ''],
+            ['22', 'יוּשַׁב',    '', '', '', '', ''],
+            ['23', 'יֵרֵד',      '', '', '', '', ''],
+            ['24', 'יוֹרִיד',    '', '', '', '', ''],
+            ['25', 'יוּרַד',     '', '', '', '', ''],
+            ['26', 'קָם',        '', '', '', '', ''],
+            ['27', 'הֵקִים',     '', '', '', '', ''],
+            ['28', 'הוּקַם',     '', '', '', '', ''],
+            ['29', 'נֵלֵד',      '', '', '', '', ''],
+            ['30', 'יָלַד',      '', '', '', '', ''],
+            ['31', 'הוֹלִיד',    '', '', '', '', ''],
+            ['32', 'מוּלָד',     '', '', '', '', ''],
+            ['33', 'הוּלַד',     '', '', '', '', ''],
+            ['34', 'וַיָּבֹא',   '', '', '', '', ''],
+            ['35', 'וַיָּבֵא',   '', '', '', '', ''],
+            ['36', 'וַיּוּבָא',  '', '', '', '', ''],
         ]
         ans = [
-            ['1',  'בָּא',       'Qal',    'Perfect',   '3ms', 'בוא', 'he came'],
-            ['2',  'הֵבִיא',     'Hiphil', 'Perfect',   '3ms', 'בוא', 'he brought'],
-            ['3',  'נָבוֹא',     'Niphal', 'Perfect',   '3ms', 'בוא', 'he came in / entered'],
-            ['4',  'הוּבָא',     'Hophal', 'Perfect',   '3ms', 'בוא', 'he was brought'],
-            ['5',  'שָׁב',       'Qal',    'Perfect',   '3ms', 'שׁוב', 'he returned'],
-            ['6',  'הֵשִׁיב',    'Hiphil', 'Perfect',   '3ms', 'שׁוב', 'he returned (it) / brought back'],
-            ['7',  'יָרַד',      'Qal',    'Perfect',   '3ms', 'ירד', 'he went down'],
-            ['8',  'הוֹרִיד',    'Hiphil', 'Perfect',   '3ms', 'ירד', 'he brought down'],
-            ['9',  'יָבוֹא',     'Qal',    'Imperfect', '3ms', 'בוא', 'he will come'],
-            ['10', 'יָבִיא',     'Hiphil', 'Imperfect', '3ms', 'בוא', 'he will bring'],
-            ['11', 'יִוָּבֵא',   'Niphal', 'Imperfect', '3ms', 'בוא', 'he will come in / be brought in'],
-            ['12', 'יוּבָא',     'Hophal', 'Imperfect', '3ms', 'בוא', 'he will be brought'],
-            ['13', 'יָשׁוּב',    'Qal',    'Imperfect', '3ms', 'שׁוב', 'he will return'],
-            ['14', 'יָשִׁיב',    'Hiphil', 'Imperfect', '3ms', 'שׁוב', 'he will bring back / restore'],
-            ['15', 'יוּשַׁב',    'Hophal', 'Imperfect', '3ms', 'שׁוב', 'he will be brought back'],
-            ['16', 'וַיָּבֹא',   'Qal',    'Wayyiqtol', '3ms', 'בוא', 'and he came'],
-            ['17', 'וַיָּבֵא',   'Hiphil', 'Wayyiqtol', '3ms', 'בוא', 'and he brought'],
-            ['18', 'וַיּוּבָא',  'Hophal', 'Wayyiqtol', '3ms', 'בוא', 'and he was brought'],
-            ['19', 'קָם',        'Qal',    'Perfect',   '3ms', 'קום', 'he arose'],
-            ['20', 'הֵקִים',     'Hiphil', 'Perfect',   '3ms', 'קום', 'he established / raised up'],
-            ['21', 'הוּקַם',     'Hophal', 'Perfect',   '3ms', 'קום', 'he was raised up / established'],
-            ['22', 'יָלַד',      'Qal',    'Perfect',   '3ms', 'ילד', 'he fathered / bore'],
-            ['23', 'הוֹלִיד',    'Hiphil', 'Perfect',   '3ms', 'ילד', 'he begat / caused to be born'],
-            ['24', 'הוּלַד',     'Hophal', 'Perfect',   '3ms', 'ילד', 'he was born'],
+            ['1',  'בָּאָה',     'Qal',    'Perfect',    '3fs', 'בוא',  'she came'],
+            ['2',  'הֵבִיא',     'Hiphil', 'Perfect',    '3ms', 'בוא',  'he brought'],
+            ['3',  'שַׁבְתִּי',  'Qal',    'Perfect',    '1cs', 'שׁוב', 'I returned'],
+            ['4',  'הוּבָא',     'Hophal', 'Perfect',    '3ms', 'בוא',  'he was brought'],
+            ['5',  'הֵשִׁיבוּ',  'Hiphil', 'Perfect',    '3mp', 'שׁוב', 'they brought back'],
+            ['6',  'בָּא',       'Qal',    'Perfect',    '3ms', 'בוא',  'he came'],
+            ['7',  'שָׁב',       'Qal',    'Perfect',    '3ms', 'שׁוב', 'he returned'],
+            ['8',  'הֵשִׁיב',    'Hiphil', 'Perfect',    '3ms', 'שׁוב', 'he brought back'],
+            ['9',  'הוּשַׁב',    'Hophal', 'Perfect',    '3ms', 'שׁוב', 'he was brought back'],
+            ['10', 'בָּאנוּ',    'Qal',    'Perfect',    '1cp', 'בוא',  'we came'],
+            ['11', 'נָבוֹא',     'Niphal', 'Perfect',    '3ms', 'בוא',  'he came in / entered'],
+            ['12', 'יָרַד',      'Qal',    'Perfect',    '3ms', 'ירד',  'he went down'],
+            ['13', 'הוֹרִיד',    'Hiphil', 'Perfect',    '3ms', 'ירד',  'he brought down'],
+            ['14', 'הוּרַד',     'Hophal', 'Perfect',    '3ms', 'ירד',  'he was brought down'],
+            ['15', 'יָבוֹא',     'Qal',    'Imperfect',  '3ms', 'בוא',  'he will come'],
+            ['16', 'אָשׁוּב',    'Qal',    'Imperfect',  '1cs', 'שׁוב', 'I will return'],
+            ['17', 'יָבִיא',     'Hiphil', 'Imperfect',  '3ms', 'בוא',  'he will bring'],
+            ['18', 'יִוָּבֵא',   'Niphal', 'Imperfect',  '3ms', 'בוא',  'he will come in / be brought in'],
+            ['19', 'יָשׁוּב',    'Qal',    'Imperfect',  '3ms', 'שׁוב', 'he will return'],
+            ['20', 'יוּבָא',     'Hophal', 'Imperfect',  '3ms', 'בוא',  'he will be brought'],
+            ['21', 'יָשִׁיב',    'Hiphil', 'Imperfect',  '3ms', 'שׁוב', 'he will bring back / restore'],
+            ['22', 'יוּשַׁב',    'Hophal', 'Imperfect',  '3ms', 'שׁוב', 'he will be brought back'],
+            ['23', 'יֵרֵד',      'Qal',    'Imperfect',  '3ms', 'ירד',  'he will go down'],
+            ['24', 'יוֹרִיד',    'Hiphil', 'Imperfect',  '3ms', 'ירד',  'he will bring down'],
+            ['25', 'יוּרַד',     'Hophal', 'Imperfect',  '3ms', 'ירד',  'he will be brought down'],
+            ['26', 'קָם',        'Qal',    'Perfect',    '3ms', 'קום',  'he arose'],
+            ['27', 'הֵקִים',     'Hiphil', 'Perfect',    '3ms', 'קום',  'he established / raised up'],
+            ['28', 'הוּקַם',     'Hophal', 'Perfect',    '3ms', 'קום',  'he was raised up / established'],
+            ['29', 'נֵלֵד',      'Qal',    'Imperfect',  '1cp', 'ילד',  'we will bear / father'],
+            ['30', 'יָלַד',      'Qal',    'Perfect',    '3ms', 'ילד',  'he fathered / bore'],
+            ['31', 'הוֹלִיד',    'Hiphil', 'Perfect',    '3ms', 'ילד',  'he begat / caused to be born'],
+            ['32', 'מוּלָד',     'Hophal', 'Participle', 'ms',  'ילד',  'one being born'],
+            ['33', 'הוּלַד',     'Hophal', 'Perfect',    '3ms', 'ילד',  'he was born'],
+            ['34', 'וַיָּבֹא',   'Qal',    'Wayyiqtol',  '3ms', 'בוא',  'and he came'],
+            ['35', 'וַיָּבֵא',   'Hiphil', 'Wayyiqtol',  '3ms', 'בוא',  'and he brought'],
+            ['36', 'וַיּוּבָא',  'Hophal', 'Wayyiqtol',  '3ms', 'בוא',  'and he was brought'],
         ]
         self.add_drill_with_answer_key(
             hdrs, rows, ans,
             col_ratios=cr,
             heb_cols=[1, 5],
             answer_heb_cols=[1, 5],
-            section_title='Qal / Niphal / Hiphil / Hophal — Weak Roots (24 forms)',
+            section_title='Qal / Niphal / Hiphil / Hophal — Weak Roots (36 forms)',
             answer_title='Answer Key',
         )
 
