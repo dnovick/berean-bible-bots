@@ -467,7 +467,9 @@ nav:
       - 'Semantic Profile: H7965 — שָׁלוֹם': reports/ot/lexicon/h7965-semantic-profile.md
       - Hebrew vs. Aramaic Word Distribution in the OT: reports/ot/lexicon/ot-hebrew-aramaic-by-book.md
       - 'Cross-Testament Trajectory: H2617 חֶ֫סֶד "kindness"': reports/ot/lexicon/trajectory-h2617.md
-    - 'Syntactic Role Analysis: YHWH/Elohim [OT]': reports/ot/names/role-yhwh-elohim-ot.md
+    - OT Divine Names & Roles Reports:
+      - Overview: reports/ot/names/index.md
+      - 'Syntactic Role Analysis: YHWH/Elohim [OT]': reports/ot/names/role-yhwh-elohim-ot.md
     - OT Book Surveys (Language Profiles):
       - Overview: reports/ot/survey/index.md
       - Daniel (Dan) — Language Profile: reports/ot/survey/Dan_profile.md
@@ -490,40 +492,69 @@ nav:
       - Verb Morphology by Book: reports/ot/verbs/verb-morphology-by-book.md
   - New Testament (Greek):
     - Overview: reports/nt/index.md
-    - καί Semantic Function Analysis: reports/nt/discourse/kai-semantic-functions.md
+    - NT Discourse Reports:
+      - Overview: reports/nt/discourse/index.md
+      - καί Semantic Function Analysis: reports/nt/discourse/kai-semantic-functions.md
     - NT Lexicon Reports:
       - Overview: reports/nt/lexicon/index.md
       - 1Pet2 Vice List:
-        - Overview: reports/nt/lexicon/1pet2-vice-list/index.md
-        - δόλος (G1388) — deceit, guile, treachery: reports/nt/lexicon/1pet2-vice-list/dolos/index.md
-        - ὑπόκρισις (G5272) — hypocrisy, dissimulation, play-acting: reports/nt/lexicon/1pet2-vice-list/hypokrisis/index.md
-        - κακία (G2549) — malice, evil, wickedness: reports/nt/lexicon/1pet2-vice-list/kakia/index.md
-        - καταλαλιά (G2636) — slander, evil speaking, defamation: reports/nt/lexicon/1pet2-vice-list/katalalia/index.md
-        - φθόνος (G5355) — envy, jealousy (malicious): reports/nt/lexicon/1pet2-vice-list/phthonos/index.md
+        - δόλος (G1388) — deceit, guile, treachery:
+          - δόλος (G1388) — deceit, guile, treachery: reports/nt/lexicon/1pet2-vice-list/dolos/index.md
+        - ὑπόκρισις (G5272) — hypocrisy, dissimulation, play-acting:
+          - ὑπόκρισις (G5272) — hypocrisy, dissimulation, play-acting: reports/nt/lexicon/1pet2-vice-list/hypokrisis/index.md
+        - κακία (G2549) — malice, evil, wickedness:
+          - κακία (G2549) — malice, evil, wickedness: reports/nt/lexicon/1pet2-vice-list/kakia/index.md
+        - καταλαλιά (G2636) — slander, evil speaking, defamation:
+          - καταλαλιά (G2636) — slander, evil speaking, defamation: reports/nt/lexicon/1pet2-vice-list/katalalia/index.md
+        - φθόνος (G5355) — envy, jealousy (malicious):
+          - φθόνος (G5355) — envy, jealousy (malicious): reports/nt/lexicon/1pet2-vice-list/phthonos/index.md
+        - 1 Peter 2:1 — The "Lay Aside" Vice List: reports/nt/lexicon/1pet2-vice-list/index.md
       - 2Tim3 Vice List:
-        - Overview: reports/nt/lexicon/2tim3-vice-list/index.md
-        - ἀχάριστος (G0884) — ungrateful, unthankful: reports/nt/lexicon/2tim3-vice-list/acharistos/index.md
-        - ἀκρατής (G0193) — without self-control, intemperate: reports/nt/lexicon/2tim3-vice-list/akrates/index.md
-        - ἀλαζών (G0213) — boastful, swaggering braggart: reports/nt/lexicon/2tim3-vice-list/alazon/index.md
-        - ἀνήμερος (G0434) — savage, fierce, untamed: reports/nt/lexicon/2tim3-vice-list/anemeros/index.md
-        - ἀνόσιος (G0462) — unholy, impious: reports/nt/lexicon/2tim3-vice-list/anosios/index.md
-        - ἀπειθής (G0545) — disobedient, unpersuadable: reports/nt/lexicon/2tim3-vice-list/apeithes/index.md
-        - ἀφιλάγαθος (G0865) — not loving good, hostile to goodness: reports/nt/lexicon/2tim3-vice-list/aphilagathos/index.md
-        - ἄσπονδος (G0786) — irreconcilable, implacable: reports/nt/lexicon/2tim3-vice-list/aspondos/index.md
-        - ἄστοργος (G0794) — without natural affection, unloving: reports/nt/lexicon/2tim3-vice-list/astorgos/index.md
-        - βλάσφημος (G0989) — blasphemous, slanderous, abusive in speech: reports/nt/lexicon/2tim3-vice-list/blasphemos/index.md
-        - χαλεπός (G5467) — harsh, fierce, dangerous: reports/nt/lexicon/2tim3-vice-list/chalepos/index.md
-        - διάβολος (G1228) — slanderer; the Devil: reports/nt/lexicon/2tim3-vice-list/diabolos/index.md
-        - εὐσέβεια (G2150) — godliness, piety, reverence: reports/nt/lexicon/2tim3-vice-list/eusebeia/index.md
-        - ὑπερήφανος (G5244) — proud, arrogant, showing oneself above others: reports/nt/lexicon/2tim3-vice-list/hyperephanos/index.md
-        - μόρφωσις (G3446) — outward form, semblance, shape: reports/nt/lexicon/2tim3-vice-list/morphosis/index.md
-        - φιλάργυρος (G5366) — money-loving, covetous: reports/nt/lexicon/2tim3-vice-list/philargyros/index.md
-        - φίλαυτος (G5367) — self-loving: reports/nt/lexicon/2tim3-vice-list/philautos/index.md
-        - φιλήδονος (G5369) — pleasure-loving: reports/nt/lexicon/2tim3-vice-list/philedonos/index.md
-        - φιλόθεος (G5377) — God-loving: reports/nt/lexicon/2tim3-vice-list/philotheos/index.md
-        - προδότης (G4273) — traitor, betrayer: reports/nt/lexicon/2tim3-vice-list/prodotes/index.md
-        - προπετής (G4312) — rash, reckless, headlong: reports/nt/lexicon/2tim3-vice-list/propetes/index.md
-        - τυφόω (G5187) — to be puffed up with conceit, to be blinded by pride: reports/nt/lexicon/2tim3-vice-list/typhoo/index.md
+        - ἀχάριστος (G0884) — ungrateful, unthankful:
+          - ἀχάριστος (G0884) — ungrateful, unthankful: reports/nt/lexicon/2tim3-vice-list/acharistos/index.md
+        - ἀκρατής (G0193) — without self-control, intemperate:
+          - ἀκρατής (G0193) — without self-control, intemperate: reports/nt/lexicon/2tim3-vice-list/akrates/index.md
+        - ἀλαζών (G0213) — boastful, swaggering braggart:
+          - ἀλαζών (G0213) — boastful, swaggering braggart: reports/nt/lexicon/2tim3-vice-list/alazon/index.md
+        - ἀνήμερος (G0434) — savage, fierce, untamed:
+          - ἀνήμερος (G0434) — savage, fierce, untamed: reports/nt/lexicon/2tim3-vice-list/anemeros/index.md
+        - ἀνόσιος (G0462) — unholy, impious:
+          - ἀνόσιος (G0462) — unholy, impious: reports/nt/lexicon/2tim3-vice-list/anosios/index.md
+        - ἀπειθής (G0545) — disobedient, unpersuadable:
+          - ἀπειθής (G0545) — disobedient, unpersuadable: reports/nt/lexicon/2tim3-vice-list/apeithes/index.md
+        - ἀφιλάγαθος (G0865) — not loving good, hostile to goodness:
+          - ἀφιλάγαθος (G0865) — not loving good, hostile to goodness: reports/nt/lexicon/2tim3-vice-list/aphilagathos/index.md
+        - ἄσπονδος (G0786) — irreconcilable, implacable:
+          - ἄσπονδος (G0786) — irreconcilable, implacable: reports/nt/lexicon/2tim3-vice-list/aspondos/index.md
+        - ἄστοργος (G0794) — without natural affection, unloving:
+          - ἄστοργος (G0794) — without natural affection, unloving: reports/nt/lexicon/2tim3-vice-list/astorgos/index.md
+        - βλάσφημος (G0989) — blasphemous, slanderous, abusive in speech:
+          - βλάσφημος (G0989) — blasphemous, slanderous, abusive in speech: reports/nt/lexicon/2tim3-vice-list/blasphemos/index.md
+        - χαλεπός (G5467) — harsh, fierce, dangerous:
+          - χαλεπός (G5467) — harsh, fierce, dangerous: reports/nt/lexicon/2tim3-vice-list/chalepos/index.md
+        - διάβολος (G1228) — slanderer; the Devil:
+          - διάβολος (G1228) — slanderer; the Devil: reports/nt/lexicon/2tim3-vice-list/diabolos/index.md
+        - εὐσέβεια (G2150) — godliness, piety, reverence:
+          - εὐσέβεια (G2150) — godliness, piety, reverence: reports/nt/lexicon/2tim3-vice-list/eusebeia/index.md
+        - ὑπερήφανος (G5244) — proud, arrogant, showing oneself above others:
+          - ὑπερήφανος (G5244) — proud, arrogant, showing oneself above others: reports/nt/lexicon/2tim3-vice-list/hyperephanos/index.md
+        - μόρφωσις (G3446) — outward form, semblance, shape:
+          - μόρφωσις (G3446) — outward form, semblance, shape: reports/nt/lexicon/2tim3-vice-list/morphosis/index.md
+        - φιλάργυρος (G5366) — money-loving, covetous:
+          - φιλάργυρος (G5366) — money-loving, covetous: reports/nt/lexicon/2tim3-vice-list/philargyros/index.md
+        - φίλαυτος (G5367) — self-loving:
+          - φίλαυτος (G5367) — self-loving: reports/nt/lexicon/2tim3-vice-list/philautos/index.md
+        - φιλήδονος (G5369) — pleasure-loving:
+          - φιλήδονος (G5369) — pleasure-loving: reports/nt/lexicon/2tim3-vice-list/philedonos/index.md
+        - φιλόθεος (G5377) — God-loving:
+          - φιλόθεος (G5377) — God-loving: reports/nt/lexicon/2tim3-vice-list/philotheos/index.md
+        - προδότης (G4273) — traitor, betrayer:
+          - προδότης (G4273) — traitor, betrayer: reports/nt/lexicon/2tim3-vice-list/prodotes/index.md
+        - προπετής (G4312) — rash, reckless, headlong:
+          - προπετής (G4312) — rash, reckless, headlong: reports/nt/lexicon/2tim3-vice-list/propetes/index.md
+        - τυφόω (G5187) — to be puffed up with conceit, to be blinded by pride:
+          - τυφόω (G5187) — to be puffed up with conceit, to be blinded by pride: reports/nt/lexicon/2tim3-vice-list/typhoo/index.md
+        - 2 Timothy 3:1–5 — Vice List Word Study: reports/nt/lexicon/2tim3-vice-list/index.md
       - '"Anoint / Anointing" — Cross-Corpus Word Study': reports/nt/lexicon/anoint-word-study/anoint-word-study.md
       - The Armor of God — Ephesians 6:10–18 in Its Letter Context: reports/nt/lexicon/armor-of-god/armor-of-god-report.md
       - Greek Personal Pronouns — NT and LXX Study: reports/nt/lexicon/greek-pronouns/greek-pronouns-report.md
@@ -534,8 +565,12 @@ nav:
       - 'Semantic Profile: G3056 — λόγος': reports/nt/lexicon/g3056-semantic-profile.md
       - Greek NT Case Distribution by Book: reports/nt/lexicon/nt-case-distribution-by-book.md
       - Greek Words for "Obey" — NT and LXX Word Study: reports/nt/lexicon/obey-greek-word-study.md
-    - 'Christological Titles: Jesus''s Self-Designations in the Gospels': reports/nt/names/christological-titles.md
-    - Greek NT Prepositions — Case Binding Statistics: reports/nt/prepositions/nt-prep-cases.md
+    - NT Divine Names & Christological Titles Reports:
+      - Overview: reports/nt/names/index.md
+      - 'Christological Titles: Jesus''s Self-Designations in the Gospels': reports/nt/names/christological-titles.md
+    - NT Preposition Reports:
+      - Overview: reports/nt/prepositions/index.md
+      - Greek NT Prepositions — Case Binding Statistics: reports/nt/prepositions/nt-prep-cases.md
     - NT Book Surveys (Language Profiles):
       - Overview: reports/nt/survey/index.md
       - Hebrews (Heb) — Language Profile: reports/nt/survey/Heb_profile.md
@@ -551,7 +586,9 @@ nav:
       - Greek Verb Tense × Voice in Pauline Letters: reports/nt/verbs/greek-pauline-tense-voice-heatmap.md
   - Cross-Testament:
     - Overview: reports/both/index.md
-    - 'Genre Comparison: Morphological Patterns Across Literary Sections': reports/both/genre/genre-comparison-report.md
+    - Genre & Structure Reports:
+      - Overview: reports/both/genre/index.md
+      - 'Genre Comparison: Morphological Patterns Across Literary Sections': reports/both/genre/genre-comparison-report.md
     - Intertextuality Reports:
       - Overview: reports/both/intertextuality/index.md
       - 'Intertextuality Network: Isaiah 53': reports/both/intertextuality/isa-53-intertextuality.md
@@ -563,17 +600,33 @@ nav:
       - Overview: reports/both/lexicon/index.md
       - Hapax Legomena by Biblical Book: reports/both/lexicon/hapax-legomena-by-book.md
       - Nouns by Gender, Per Book: reports/both/lexicon/nouns-by-gender-by-book.md
-    - First-Coming Messianic Prophecy Density — OT Study: reports/both/messianic-prophecy/messianic-prophecy-density.md
-    - Divine Names and Christological Titles: reports/both/names/divine-names-report.md
-    - ἐπὶ τὸ αὐτό — Phrase Study: reports/both/phrase_studies/epi_to_auto_report.md
+    - Messianic Prophecy:
+      - Overview: reports/both/messianic-prophecy/index.md
+      - First-Coming Messianic Prophecy Density — OT Study: reports/both/messianic-prophecy/messianic-prophecy-density.md
+    - Divine Names & Titles — Cross-Corpus Reports:
+      - Overview: reports/both/names/index.md
+      - Divine Names and Christological Titles: reports/both/names/divine-names-report.md
+    - Phrase Studies:
+      - Overview: reports/both/phrase_studies/index.md
+      - ἐπὶ τὸ αὐτό — Phrase Study: reports/both/phrase_studies/epi_to_auto_report.md
     - Word Studies:
       - Overview: reports/both/word_studies/index.md
-      - Fasting Vocabulary in the Bible: reports/both/word_studies/fasting/fasting_word_study.md
+      - 'Word Study: Fasting Vocabulary':
+        - Overview: reports/both/word_studies/fasting/index.md
+        - Fasting Vocabulary in the Bible: reports/both/word_studies/fasting/fasting_word_study.md
       - 'Fire in Scripture: A Semantic Study': reports/both/word_studies/fire/fire_word_study.md
-      - 'Word Study: λόγος (G3056) and ῥῆμα (G4487)': reports/both/word_studies/logos-rhema/logos-rhema.md
-      - 'Word Study: παράκλητος / παρακαλέω / παράκλησις': reports/both/word_studies/parakletos/parakletos-report.md
-      - 'Word Study: Greek Prayer Vocabulary in 1 Timothy 2:1': reports/both/word_studies/prayer-vocabulary/prayer-vocabulary-report.md
-      - 'קֶרֶן / קָרַן — Word Study: Horn, Radiance, and the Moses Problem': reports/both/word_studies/qeren/qeren_report.md
+      - 'Word Study: λόγος vs ῥῆμα — "Word"':
+        - Overview: reports/both/word_studies/logos-rhema/index.md
+        - 'Word Study: λόγος (G3056) and ῥῆμα (G4487)': reports/both/word_studies/logos-rhema/logos-rhema.md
+      - 'Word Study: παράκλητος / παρακαλέω / παράκλησις — Comforter, Advocate':
+        - Overview: reports/both/word_studies/parakletos/index.md
+        - 'Word Study: παράκλητος / παρακαλέω / παράκλησις': reports/both/word_studies/parakletos/parakletos-report.md
+      - 'Word Study: Greek Prayer Vocabulary — 1 Timothy 2:1':
+        - Overview: reports/both/word_studies/prayer-vocabulary/index.md
+        - 'Word Study: Greek Prayer Vocabulary in 1 Timothy 2:1': reports/both/word_studies/prayer-vocabulary/prayer-vocabulary-report.md
+      - 'Word Study: קֶרֶן / קָרַן — Horn / Radiance':
+        - Overview: reports/both/word_studies/qeren/index.md
+        - 'קֶרֶן / קָרַן — Word Study: Horn, Radiance, and the Moses Problem': reports/both/word_studies/qeren/qeren_report.md
 - Study Helps:
   - Overview: study-helps/index.md
   - New Testament:
