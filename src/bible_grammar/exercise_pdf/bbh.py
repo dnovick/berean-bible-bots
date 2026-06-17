@@ -8328,88 +8328,171 @@ class Ch29HophalWeakParadigmDrill(ExercisePDF):
         'For each row, identify the correct Hophal form. '
         'Shureq prefix (הוּ/יוּ/מוּ): I-י/ו and Biconsonantal roots. '
         'Qibbuts prefix (הֻ/יֻ/מֻ): all other classes. '
-        'I-guttural: Seghol (הֶ) in Perfect, Qibbuts in Imperfect. '
-        'III-ה: ָה in Perfect 3ms, ֶה in Imperfect, apocopated Wayyiqtol. '
-        'I-נ/Geminate: Dagesh forte in R2.'
+        'I-guttural: Seghol (הֶ) in Perfect/Imp./Inf.Constr., Qibbuts in Imperfect. '
+        'III-ה: ָה in Perfect 3ms, ֶה in Imperfect, apocopated Wayyiqtol; '
+        'Imp. ms = הֻגְלֵה (Seghol) — different from Perfect 3ms; Inf. Constr. = הֻגְלוֹת. '
+        'I-נ/Geminate: Dagesh forte in R2. '
+        'Hophal Imp. ms = Perfect 3ms form for all roots except III-ה. '
+        'Hophal Inf. Constr. = Perfect 3ms form for all roots except III-ה.'
     )
 
     def _build(self) -> None:
         self.add_instructions(self._instructions)
         hdr = ['#', 'Root', 'PGN', 'Ref', 'Hophal Form']
-        cr  = [0.05, 0.10, 0.20, 0.15, 0.50]
+        cr  = [0.05, 0.10, 0.22, 0.13, 0.50]
 
         parts = [
             ('A', 'ילד', 'I-י/ו — Shureq prefix', [
                 ['1', 'ילד', 'Perfect 3ms',    'Gen 21:5', ''],
                 ['2', 'ילד', 'Imperfect 3ms',  'Gen 4:26', ''],
                 ['3', 'ילד', 'Participle ms',  '—',        ''],
+                ['4', 'ילד', 'Perfect 3cp',    '—',        ''],
+                ['5', 'ילד', 'Imperfect 3mp',  '—',        ''],
+                ['6', 'ילד', 'Participle fs',  '—',        ''],
+                ['7', 'ילד', 'Imperative ms',  '—',        ''],
+                ['8', 'ילד', 'Inf. Construct', '—',        ''],
             ], [
                 ['1', 'ילד', 'Perfect 3ms',    'Gen 21:5', 'הוּלַד'],
                 ['2', 'ילד', 'Imperfect 3ms',  'Gen 4:26', 'יוּלַד'],
                 ['3', 'ילד', 'Participle ms',  '—',        'מוּלָד'],
+                ['4', 'ילד', 'Perfect 3cp',    '—',        'הוּלְדוּ'],
+                ['5', 'ילד', 'Imperfect 3mp',  '—',        'יוּלְדוּ'],
+                ['6', 'ילד', 'Participle fs',  '—',        'מוּלֶדֶת'],
+                ['7', 'ילד', 'Imperative ms',  '—',        'הוּלַד'],
+                ['8', 'ילד', 'Inf. Construct', '—',        'הוּלַד'],
             ]),
             ('B', 'קום', 'Biconsonantal — Shureq prefix', [
                 ['1', 'קום', 'Perfect 3ms',    'Exo 40:17', ''],
                 ['2', 'קום', 'Imperfect 3ms',  'Num 9:15',  ''],
                 ['3', 'קום', 'Participle ms',  '—',         ''],
+                ['4', 'קום', 'Perfect 3cp',    '—',         ''],
+                ['5', 'קום', 'Imperfect 3mp',  '—',         ''],
+                ['6', 'קום', 'Participle fs',  '—',         ''],
+                ['7', 'קום', 'Imperative ms',  '—',         ''],
+                ['8', 'קום', 'Inf. Construct', '—',         ''],
             ], [
                 ['1', 'קום', 'Perfect 3ms',    'Exo 40:17', 'הוּקַם'],
                 ['2', 'קום', 'Imperfect 3ms',  'Num 9:15',  'יוּקַם'],
                 ['3', 'קום', 'Participle ms',  '—',         'מוּקָם'],
+                ['4', 'קום', 'Perfect 3cp',    '—',         'הוּקְמוּ'],
+                ['5', 'קום', 'Imperfect 3mp',  '—',         'יוּקְמוּ'],
+                ['6', 'קום', 'Participle fs',  '—',         'מוּקֶמֶת'],
+                ['7', 'קום', 'Imperative ms',  '—',         'הוּקַם'],
+                ['8', 'קום', 'Inf. Construct', '—',         'הוּקַם'],
             ]),
             ('C', 'עמד', 'I-guttural — Seghol Perfect / Qibbuts Imperfect', [
                 ['1', 'עמד', 'Perfect 3ms',    '—', ''],
                 ['2', 'עמד', 'Imperfect 3ms',  '—', ''],
                 ['3', 'עמד', 'Participle ms',  '—', ''],
+                ['4', 'עמד', 'Perfect 3cp',    '—', ''],
+                ['5', 'עמד', 'Imperfect 3mp',  '—', ''],
+                ['6', 'עמד', 'Participle fs',  '—', ''],
+                ['7', 'עמד', 'Imperative ms',  '—', ''],
+                ['8', 'עמד', 'Inf. Construct', '—', ''],
             ], [
                 ['1', 'עמד', 'Perfect 3ms',    '—', 'הֶעֱמַד'],
                 ['2', 'עמד', 'Imperfect 3ms',  '—', 'יֻעֲמַד'],
                 ['3', 'עמד', 'Participle ms',  '—', 'מֻעֲמָד'],
+                ['4', 'עמד', 'Perfect 3cp',    '—', 'הֻעֲמְדוּ'],
+                ['5', 'עמד', 'Imperfect 3mp',  '—', 'יֻעֲמְדוּ'],
+                ['6', 'עמד', 'Participle fs',  '—', 'מֻעֲמֶדֶת'],
+                ['7', 'עמד', 'Imperative ms',  '—', 'הֶעֱמַד'],
+                ['8', 'עמד', 'Inf. Construct', '—', 'הֶעֱמַד'],
             ]),
             ('D', 'נגד', 'I-נ — Qibbuts prefix; Dagesh forte in R2', [
                 ['1', 'נגד', 'Perfect 3ms',    'Deu 17:4', ''],
                 ['2', 'נגד', 'Imperfect 3ms',  '—',        ''],
                 ['3', 'נגד', 'Participle ms',  '—',        ''],
+                ['4', 'נגד', 'Perfect 3cp',    '—',        ''],
+                ['5', 'נגד', 'Imperfect 3mp',  '—',        ''],
+                ['6', 'נגד', 'Participle fs',  '—',        ''],
+                ['7', 'נגד', 'Imperative ms',  '—',        ''],
+                ['8', 'נגד', 'Inf. Construct', '—',        ''],
             ], [
                 ['1', 'נגד', 'Perfect 3ms',    'Deu 17:4', 'הֻגַּד'],
                 ['2', 'נגד', 'Imperfect 3ms',  '—',        'יֻגַּד'],
                 ['3', 'נגד', 'Participle ms',  '—',        'מֻגָּד'],
+                ['4', 'נגד', 'Perfect 3cp',    '—',        'הֻגְּדוּ'],
+                ['5', 'נגד', 'Imperfect 3mp',  '—',        'יֻגְּדוּ'],
+                ['6', 'נגד', 'Participle fs',  '—',        'מֻגֶּדֶת'],
+                ['7', 'נגד', 'Imperative ms',  '—',        'הֻגַּד'],
+                ['8', 'נגד', 'Inf. Construct', '—',        'הֻגַּד'],
             ]),
             ('E', 'גלה', 'III-ה — Qibbuts; contracted endings; apocopated Wayyiqtol', [
                 ['1', 'גלה', 'Perfect 3ms',    'Amos 1:5',    ''],
                 ['2', 'גלה', 'Imperfect 3ms',  '—',           ''],
                 ['3', 'גלה', 'Wayyiqtol 3ms',  '2 Kgs 15:29', ''],
                 ['4', 'גלה', 'Participle ms',  '—',           ''],
+                ['5', 'גלה', 'Perfect 3cp',    '—',           ''],
+                ['6', 'גלה', 'Imperfect 3mp',  '—',           ''],
+                ['7', 'גלה', 'Imperative ms',  '—',           ''],
+                ['8', 'גלה', 'Inf. Construct', '—',           ''],
             ], [
                 ['1', 'גלה', 'Perfect 3ms',    'Amos 1:5',    'הֻגְלָה'],
                 ['2', 'גלה', 'Imperfect 3ms',  '—',           'יֻגְלֶה'],
                 ['3', 'גלה', 'Wayyiqtol 3ms',  '2 Kgs 15:29', 'וַיֻּגֶל'],
                 ['4', 'גלה', 'Participle ms',  '—',           'מֻגְלֶה'],
+                ['5', 'גלה', 'Perfect 3cp',    '—',           'הֻגְלוּ'],
+                ['6', 'גלה', 'Imperfect 3mp',  '—',           'יֻגְלוּ'],
+                ['7', 'גלה', 'Imperative ms',  '—',           'הֻגְלֵה'],
+                ['8', 'גלה', 'Inf. Construct', '—',           'הֻגְלוֹת'],
             ]),
             ('F', 'שׁלח', 'III-ח/ע — Qibbuts prefix; Patach furtive before final guttural', [
-                ['1', 'שׁלח', 'Perfect 3ms',   '—',          ''],
-                ['2', 'שׁלח', 'Imperfect 3ms', 'Job 18:8',   ''],
-                ['3', 'שׁלח', 'Participle ms', 'Isa 27:10',  ''],
+                ['1', 'שׁלח', 'Perfect 3ms',   '—',         ''],
+                ['2', 'שׁלח', 'Imperfect 3ms', 'Job 18:8',  ''],
+                ['3', 'שׁלח', 'Participle ms', 'Isa 27:10', ''],
+                ['4', 'שׁלח', 'Perfect 3cp',   '—',         ''],
+                ['5', 'שׁלח', 'Imperfect 3mp', '—',         ''],
+                ['6', 'שׁלח', 'Participle fs', '—',         ''],
+                ['7', 'שׁלח', 'Imperative ms', '—',         ''],
+                ['8', 'שׁלח', 'Inf. Construct','—',         ''],
             ], [
-                ['1', 'שׁלח', 'Perfect 3ms',   '—',          'הֻשְׁלַח'],
-                ['2', 'שׁלח', 'Imperfect 3ms', 'Job 18:8',   'יֻשְׁלַח'],
-                ['3', 'שׁלח', 'Participle ms', 'Isa 27:10',  'מֻשְׁלָח'],
+                ['1', 'שׁלח', 'Perfect 3ms',   '—',         'הֻשְׁלַח'],
+                ['2', 'שׁלח', 'Imperfect 3ms', 'Job 18:8',  'יֻשְׁלַח'],
+                ['3', 'שׁלח', 'Participle ms', 'Isa 27:10', 'מֻשְׁלָח'],
+                ['4', 'שׁלח', 'Perfect 3cp',   '—',         'הֻשְׁלְחוּ'],
+                ['5', 'שׁלח', 'Imperfect 3mp', '—',         'יֻשְׁלְחוּ'],
+                ['6', 'שׁלח', 'Participle fs', '—',         'מֻשְׁלַחַת'],
+                ['7', 'שׁלח', 'Imperative ms', '—',         'הֻשְׁלַח'],
+                ['8', 'שׁלח', 'Inf. Construct','—',         'הֻשְׁלַח'],
             ]),
             ('G', 'מצא', 'III-א — Qibbuts prefix; Qamets before silent final א', [
                 ['1', 'מצא', 'Perfect 3ms',    '—', ''],
                 ['2', 'מצא', 'Imperfect 3ms',  '—', ''],
+                ['3', 'מצא', 'Participle ms',  '—', ''],
+                ['4', 'מצא', 'Perfect 3cp',    '—', ''],
+                ['5', 'מצא', 'Imperfect 3mp',  '—', ''],
+                ['6', 'מצא', 'Participle fs',  '—', ''],
+                ['7', 'מצא', 'Imperative ms',  '—', ''],
+                ['8', 'מצא', 'Inf. Construct', '—', ''],
             ], [
                 ['1', 'מצא', 'Perfect 3ms',    '—', 'הֻמְצָא'],
                 ['2', 'מצא', 'Imperfect 3ms',  '—', 'יֻמְצָא'],
+                ['3', 'מצא', 'Participle ms',  '—', 'מֻמְצָא'],
+                ['4', 'מצא', 'Perfect 3cp',    '—', 'הֻמְצְאוּ'],
+                ['5', 'מצא', 'Imperfect 3mp',  '—', 'יֻמְצְאוּ'],
+                ['6', 'מצא', 'Participle fs',  '—', 'מֻמְצֵאת'],
+                ['7', 'מצא', 'Imperative ms',  '—', 'הֻמְצָא'],
+                ['8', 'מצא', 'Inf. Construct', '—', 'הֻמְצָא'],
             ]),
             ('H', 'נקם', 'Geminate — Qibbuts prefix; Dagesh forte in R2', [
-                ['1', 'נקם', 'Perfect 3ms',    '—',         ''],
-                ['2', 'נקם', 'Imperfect 3ms',  'Gen 4:15',  ''],
-                ['3', 'נקם', 'Participle ms',  '—',         ''],
+                ['1', 'נקם', 'Perfect 3ms',    '—',        ''],
+                ['2', 'נקם', 'Imperfect 3ms',  'Gen 4:15', ''],
+                ['3', 'נקם', 'Participle ms',  '—',        ''],
+                ['4', 'נקם', 'Perfect 3cp',    '—',        ''],
+                ['5', 'נקם', 'Imperfect 3mp',  '—',        ''],
+                ['6', 'נקם', 'Participle fs',  '—',        ''],
+                ['7', 'נקם', 'Imperative ms',  '—',        ''],
+                ['8', 'נקם', 'Inf. Construct', '—',        ''],
             ], [
-                ['1', 'נקם', 'Perfect 3ms',    '—',         'הֻקַּם'],
-                ['2', 'נקם', 'Imperfect 3ms',  'Gen 4:15',  'יֻקַּם'],
-                ['3', 'נקם', 'Participle ms',  '—',         'מֻקָּם'],
+                ['1', 'נקם', 'Perfect 3ms',    '—',        'הֻקַּם'],
+                ['2', 'נקם', 'Imperfect 3ms',  'Gen 4:15', 'יֻקַּם'],
+                ['3', 'נקם', 'Participle ms',  '—',        'מֻקָּם'],
+                ['4', 'נקם', 'Perfect 3cp',    '—',        'הֻקְּמוּ'],
+                ['5', 'נקם', 'Imperfect 3mp',  '—',        'יֻקְּמוּ'],
+                ['6', 'נקם', 'Participle fs',  '—',        'מֻקֶּמֶת'],
+                ['7', 'נקם', 'Imperative ms',  '—',        'הֻקַּם'],
+                ['8', 'נקם', 'Inf. Construct', '—',        'הֻקַּם'],
             ]),
         ]
         for part_letter, _root, title, rows, ans in parts:
