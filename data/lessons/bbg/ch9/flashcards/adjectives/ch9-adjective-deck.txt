@@ -1,0 +1,21 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBG Chapter 9 — ἀγαθός Adjective Paradigm
+#tags column:3
+ἀγαθός	adj. ἀγαθός | Masculine · Nominative · Singular	bbg-ch9-adj adj-masc adj-sg adj-nom
+ἀγαθοῦ	adj. ἀγαθός | Masculine · Genitive · Singular  OR  Neuter · Genitive · Singular	bbg-ch9-adj adj-masc adj-neut adj-sg adj-gen
+ἀγαθῷ	adj. ἀγαθός | Masculine · Dative · Singular  OR  Neuter · Dative · Singular	bbg-ch9-adj adj-masc adj-neut adj-sg adj-dat
+ἀγαθόν	adj. ἀγαθός | (1) Masculine · Accusative · Singular  (2) Neuter · Nominative · Singular  (3) Neuter · Accusative · Singular	bbg-ch9-adj adj-masc adj-neut adj-sg adj-acc adj-nom
+ἀγαθοί	adj. ἀγαθός | Masculine · Nominative · Plural	bbg-ch9-adj adj-masc adj-pl adj-nom
+ἀγαθῶν	adj. ἀγαθός | All Genders · Genitive · Plural	bbg-ch9-adj adj-masc adj-fem adj-neut adj-pl adj-gen
+ἀγαθοῖς	adj. ἀγαθός | Masculine · Dative · Plural  OR  Neuter · Dative · Plural	bbg-ch9-adj adj-masc adj-neut adj-pl adj-dat
+ἀγαθούς	adj. ἀγαθός | Masculine · Accusative · Plural	bbg-ch9-adj adj-masc adj-pl adj-acc
+ἀγαθή	adj. ἀγαθός | Feminine · Nominative · Singular	bbg-ch9-adj adj-fem adj-sg adj-nom
+ἀγαθῆς	adj. ἀγαθός | Feminine · Genitive · Singular	bbg-ch9-adj adj-fem adj-sg adj-gen
+ἀγαθῇ	adj. ἀγαθός | Feminine · Dative · Singular	bbg-ch9-adj adj-fem adj-sg adj-dat
+ἀγαθήν	adj. ἀγαθός | Feminine · Accusative · Singular	bbg-ch9-adj adj-fem adj-sg adj-acc
+ἀγαθαί	adj. ἀγαθός | Feminine · Nominative · Plural	bbg-ch9-adj adj-fem adj-pl adj-nom
+ἀγαθαῖς	adj. ἀγαθός | Feminine · Dative · Plural	bbg-ch9-adj adj-fem adj-pl adj-dat
+ἀγαθάς	adj. ἀγαθός | Feminine · Accusative · Plural	bbg-ch9-adj adj-fem adj-pl adj-acc
+ἀγαθά	adj. ἀγαθός | Neuter · Nominative · Plural  OR  Neuter · Accusative · Plural	bbg-ch9-adj adj-neut adj-pl adj-nom adj-acc
