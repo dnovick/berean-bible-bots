@@ -6721,72 +6721,102 @@ class Ch29WeakFormIdExercise(ExercisePDF):
 
     def _build(self) -> None:
         self.add_instructions(
-            'Part A: identify conjugation, PGN, and root for each form (grouped by weak class). '
-            'Part B: identify the weak class first, then conjugation, PGN, and root. '
+            'Part A: identify conjugation, PGN, and root for each form (grouped by weak class, '
+            '5 items per group, 6 groups = 30 items). '
+            'Part B: identify the weak class first, then conjugation, PGN, and root (15 items). '
+            'Items marked "(paradigmatic)" illustrate the paradigm and may not be '
+            'directly cited from a biblical verse. '
             'Answer key is on the last page.'
         )
         self.add_note(
             'I-yod/Biconsonantal Hophal: uses וּ (shureq) not קֻּ.  '
             'I-nun: dagesh forte in R2 (nun assimilated).  '
             'III-he: ending ָה (qatal 3ms) or וּ (3cp).  '
-            'I-guttural: hateph vowel under R1 instead of simple shewa.'
+            'I-guttural: hateph vowel under R1 instead of simple shewa.  '
+            'Geminate: R2=R3; dagesh forte in final root consonant.'
         )
 
-        hdr = ['#', 'Form', 'Reference', 'Conjugation', 'PGN', 'Root']
+        hdr = ['#', 'Form', 'Reference', 'Conjugation', 'PGN', 'Root / Diagnostic']
         cr  = [0.05, 0.16, 0.14, 0.20, 0.10, 0.35]
 
         groups = [
             ('Group 1: I-yod / I-vav', [
-                ['1', 'הוּרַד',    'Gen 39:1',  '', '', ''],
-                ['2', 'הוּבָא',    'Lev 14:2',  '', '', ''],
-                ['3', 'מוּבָאִים', 'Gen 43:18', '', '', ''],
-                ['4', 'הוּבְאוּ',  'Gen 43:18', '', '', ''],
-                ['5', 'מוּצֵאת',   'Gen 38:25', '', '', ''],
+                ['1',  'הוּרַד',    'Gen 39:1',  '', '', ''],
+                ['2',  'יוּרַד',    'Gen 44:29', '', '', ''],
+                ['3',  'הוּבָא',    'Lev 4:4',   '', '', ''],
+                ['4',  'הוּבְאוּ',  'Gen 43:18', '', '', ''],
+                ['5',  'מוּבָאִים', 'Gen 43:18', '', '', ''],
             ], [
-                ['1', 'הוּרַד',    'Gen 39:1',  'Qatal',     '3ms', 'יָרַד · holem-vav prefix = I-yod Hophal'],
-                ['2', 'הוּבָא',    'Lev 14:2',  'Weqatal',   '3ms', 'בּוֹא · holem-vav prefix = I-yod/Hollow'],
-                ['3', 'מוּבָאִים', 'Gen 43:18', 'Participle', 'mp', 'בּוֹא · מוּ prefix (not מַ) = I-yod Hophal ptc'],
-                ['4', 'הוּבְאוּ',  'Gen 43:18', 'Qatal',     '3cp', 'בּוֹא · holem-vav + plural וּ ending'],
-                ['5', 'מוּצֵאת',   'Gen 38:25', 'Participle', 'fs', 'יָצָא · מוּ prefix + fs ת ending'],
+                ['1',  'הוּרַד',    'Gen 39:1',  'Perfect',    '3ms', 'יָרַד · הוּ prefix (שׁוּרֶק) = I-yod Hophal; R1 yod quiesces'],
+                ['2',  'יוּרַד',    'Gen 44:29', 'Imperfect',  '3ms', 'יָרַד · יוּ prefix (שׁוּרֶק) — I-yod/vav Hophal imperfect'],
+                ['3',  'הוּבָא',    'Lev 4:4',   'Perfect',    '3ms', 'בּוֹא · הוּ prefix; I-vav/hollow root; III-aleph silent'],
+                ['4',  'הוּבְאוּ',  'Gen 43:18', 'Perfect',    '3cp', 'בּוֹא · הוּ prefix + וּ plural ending; I-vav root'],
+                ['5',  'מוּבָאִים', 'Gen 43:18', 'Participle', 'mp',  'בּוֹא · מוּ prefix (שׁוּרֶק under מ) — I-yod/vav Hophal ptc; ים plural'],
             ]),
             ('Group 2: Biconsonantal (Hollow)', [
-                ['6',  'הוּקַם',  'Exo 40:17', '', '', ''],
-                ['7',  'יוּמַת',  'Gen 26:11', '', '', ''],
-                ['8',  'הוּסַר',  'Lev 4:31',  '', '', ''],
-                ['9',  'הוּשַׁב', 'Gen 42:28', '', '', ''],
+                ['6',  'הוּקַם',   'Exo 40:17', '', '', ''],
+                ['7',  'יוּמַת',   'Gen 26:11', '', '', ''],
+                ['8',  'הוּסַר',   'Lev 4:31',  '', '', ''],
+                ['9',  'הוּשַׁב',  'Gen 42:28', '', '', ''],
                 ['10', 'יּוּשַׂם', 'Gen 24:33', '', '', ''],
             ], [
-                ['6',  'הוּקַם',  'Exo 40:17', 'Qatal',      '3ms', 'קוּם · הוּ prefix = Hophal Bicons. perfect'],
-                ['7',  'יוּמַת',  'Gen 26:11', 'Yiqtol',     '3ms', 'מוּת · יוּ prefix = Hophal Bicons. imperfect'],
-                ['8',  'הוּסַר',  'Lev 4:31',  'Qatal',      '3ms', 'סוּר · הוּ prefix; root סוּר'],
-                ['9',  'הוּשַׁב', 'Gen 42:28', 'Qatal',      '3ms', 'שׁוּב · הוּ prefix; root שׁוּב'],
-                ['10', 'יּוּשַׂם', 'Gen 24:33', 'Wayyiqtol',  '3ms', 'שִׂים · וַיּוּ prefix (dagesh in יּ) = Wayyiqtol'],
+                ['6',  'הוּקַם',   'Exo 40:17', 'Perfect',    '3ms', 'קוּם · הוּ prefix = Biconsonantal Hophal pf; medial וּ vowel letter'],
+                ['7',  'יוּמַת',   'Gen 26:11', 'Imperfect',  '3ms', 'מוּת · יוּ prefix = Biconsonantal Hophal impf; hollow root מוּת'],
+                ['8',  'הוּסַר',   'Lev 4:31',  'Perfect',    '3ms', 'סוּר · הוּ prefix; hollow root סוּר'],
+                ['9',  'הוּשַׁב',  'Gen 42:28', 'Perfect',    '3ms', 'שׁוּב · הוּ prefix; hollow root שׁוּב'],
+                ['10', 'יּוּשַׂם', 'Gen 24:33', 'Wayyiqtol',  '3ms', 'שִׂים · וַיּוּ prefix (dagesh in יּ + שׁוּרֶק) = Wayyiqtol; hollow root שִׂים'],
             ]),
             ('Group 3: I-nun', [
-                ['11', 'יֻּגַּד',  'Gen 22:20', '', '', ''],
+                ['11', 'וַיֻּגַּד', 'Gen 22:20', '', '', ''],
                 ['12', 'יֻּגַּד',  'Gen 38:13', '', '', ''],
                 ['13', 'יֻּכּוּ',  'Exo 5:14',  '', '', ''],
-                ['14', 'מֻכִּים', 'Exo 5:16',  '', '', ''],
-                ['15', 'יֻקָּם',  'Gen 4:15',  '', '', ''],
+                ['14', 'יֻּתַּן',  'Lev 11:38', '', '', ''],
+                ['15', 'יֻּקַּם',  'Gen 4:15',  '', '', ''],
             ], [
-                ['11', 'יֻּגַּד',  'Gen 22:20', 'Wayyiqtol', '3ms', 'נָגַד · nun assimilated; dagesh in ג'],
-                ['12', 'יֻּגַּד',  'Gen 38:13', 'Wayyiqtol', '3ms', 'נָגַד · same form/root; different context'],
-                ['13', 'יֻּכּוּ',  'Exo 5:14',  'Wayyiqtol', '3mp', 'נָכָה · I-nun + III-he; dagesh in כּ; plural וּ'],
-                ['14', 'מֻכִּים', 'Exo 5:16',  'Participle', 'mp', 'נָכָה · qibbuts under מ + dagesh in כּ = Hophal ptc I-nun/III-he'],
-                ['15', 'יֻקָּם',  'Gen 4:15',  'Yiqtol',    '3ms', 'נָקַם · nun assimilated; dagesh in ק'],
+                ['11', 'וַיֻּגַּד', 'Gen 22:20', 'Wayyiqtol',  '3ms', 'נָגַד · וַיֻּ prefix (קִבּוּץ) + dagesh in ג — I-nun: נ assimilated'],
+                ['12', 'יֻּגַּד',  'Gen 38:13', 'Imperfect',  '3ms', 'נָגַד · יֻּ prefix (קִבּוּץ) + dagesh in R2 — I-nun pattern'],
+                ['13', 'יֻּכּוּ',  'Exo 5:14',  'Wayyiqtol',  '3mp', 'נָכָה · קִבּוּץ + dagesh in R2 (כּ) — I-nun; also III-he root; וּ plural'],
+                ['14', 'יֻּתַּן',  'Lev 11:38', 'Imperfect',  '3ms', 'נָתַן · קִבּוּץ prefix + dagesh in R2 (תּ) — I-nun; R3 נ also assimilates'],
+                ['15', 'יֻּקַּם',  'Gen 4:15',  'Imperfect',  '3ms', 'נָקַם · קִבּוּץ + dagesh in R2 (קּ) — I-nun: נ of נָקַם has assimilated'],
             ]),
             ('Group 4: III-he', [
-                ['16', 'הֻגְלוּ',   'Jer 29:1',  '', '', ''],
-                ['17', 'הֻלֶּדֶת', 'Gen 40:20', '', '', ''],
-                ['18', 'מוּכָּה',  'Deu 28:27', '', '', ''],
-                ['19', 'הֻבָּאת',  'Gen 33:11', '', '', ''],
-                ['20', 'יֻּכֶּה',   'Exo 22:1',  '', '', ''],
+                ['16', 'הֻגְלָה',  'Amos 1:5',   '', '', ''],
+                ['17', 'הֻגְלוּ',  'Jer 29:1',   '', '', ''],
+                ['18', 'מוּכָּה',  'Deut 28:27', '', '', ''],
+                ['19', 'יֻּכֶּה',  'Exo 21:20',  '', '', ''],
+                ['20', 'הֻלַּד',   'Exo 1:22',   '', '', ''],
             ], [
-                ['16', 'הֻגְלוּ',   'Jer 29:1',  'Qatal',      '3cp', 'גָּלָה · III-he qibbuts; וּ ending 3cp'],
-                ['17', 'הֻלֶּדֶת', 'Gen 40:20', 'Inf. Construct', '—', 'יָלַד · I-nun + III-he; inf. constr. ת ending'],
-                ['18', 'מוּכָּה',  'Deu 28:27', 'Participle', 'fs', 'נָכָה · מוּ + dagesh + III-he ָה ptc fs = Hophal'],
-                ['19', 'הֻבָּאת',  'Gen 33:11', 'Qatal',      '3fs', 'בּוֹא · I-yod + qibbuts; 3fs ת ending'],
-                ['20', 'יֻּכֶּה',   'Exo 22:1',  'Yiqtol',    '3ms', 'נָכָה · I-nun + III-he; seghol + ה = III-he yiqtol'],
+                ['16', 'הֻגְלָה',  'Amos 1:5',   'Perfect',    '3ms', 'גָּלָה · קִבּוּץ under הֻ + III-he: qamets-he ending'],
+                ['17', 'הֻגְלוּ',  'Jer 29:1',   'Perfect',    '3cp', 'גָּלָה · קִבּוּץ under הֻ + וּ plural ending (III-he 3cp)'],
+                ['18', 'מוּכָּה',  'Deut 28:27', 'Participle', 'fs',  'נָכָה · מוּ prefix + dagesh in R2 (כּ) — I-nun; III-he: ה ending (fs)'],
+                ['19', 'יֻּכֶּה',  'Exo 21:20',  'Imperfect',  '3ms', 'נָכָה · קִבּוּץ prefix + dagesh in R2 — I-nun; III-he: seghol-he ending'],
+                ['20', 'הֻלַּד',   'Exo 1:22',   'Perfect',    '3ms', 'יָלַד · קִבּוּץ under הֻ + dagesh in R2 (לּ); root יָלַד is I-yod'],
+            ]),
+            ('Group 5: I-guttural', [
+                ['21', 'הוּחַל',   'Gen 4:26',   '', '', ''],
+                ['22', 'יָחֳרַם',  'Ezr 10:8',   '', '', ''],
+                ['23', 'הֻחְלָה',  '1 Sam 21:6', '', '', ''],
+                ['24', 'הֻאֲמַן',  '2 Chr 9:8',  '', '', ''],
+                ['25', 'יֶֽחֱטָא', 'Num 15:28',  '', '', ''],
+            ], [
+                ['21', 'הוּחַל',   'Gen 4:26',   'Perfect',    '3ms', 'חָלַל · הוּ prefix; guttural ח: no dagesh, patach under R1'],
+                ['22', 'יָחֳרַם',  'Ezr 10:8',   'Imperfect',  '3ms', 'חָרַם · I-guttural: hateph-qamets under ח (יָ + חֳ)'],
+                ['23', 'הֻחְלָה',  '1 Sam 21:6', 'Perfect',    '3fs', 'חָלָה · קִבּוּץ under הֻ + shewa under guttural ח + III-he ה ending'],
+                ['24', 'הֻאֲמַן',  '2 Chr 9:8',  'Perfect',    '3ms', 'אָמַן · קִבּוּץ under הֻ + hateph-patach under guttural א (I-aleph)'],
+                ['25', 'יֶֽחֱטָא', 'Num 15:28',  'Imperfect',  '3ms', 'חָטָא · I-guttural: hateph-seghol under ח; III-aleph ending'],
+            ]),
+            ('Group 6: Geminate', [
+                ['26', 'הוּסַב',     '2 Sam 3:12',  '', '', ''],
+                ['27', 'מוּסַבּוֹת', 'Num 32:38',   '', '', ''],
+                ['28', 'הֻסַּב',     '1 Kgs 2:15',  '', '', ''],
+                ['29', 'יֻּתַּם',    '2 Sam 20:18', '', '', ''],
+                ['30', 'יֻּכַּל',    'Num 13:30',   '', '', ''],
+            ], [
+                ['26', 'הוּסַב',     '2 Sam 3:12',  'Perfect',    '3ms', 'סָבַב · הוּ prefix; geminate root ס-ב-ב (R2=R3); שׁוּרֶק Hophal form'],
+                ['27', 'מוּסַבּוֹת', 'Num 32:38',   'Participle', 'fp',  'סָבַב · מוּ prefix + dagesh in R3 (בּ) — geminate; fp וֹת ending'],
+                ['28', 'הֻסַּב',     '1 Kgs 2:15',  'Perfect',    '3ms', 'סָבַב · קִבּוּץ under הֻ + dagesh in R2 (סּ) — alternate geminate Hophal form'],
+                ['29', 'יֻּתַּם',    '2 Sam 20:18', 'Imperfect',  '3ms', 'תָּמַם · קִבּוּץ + dagesh in R2 — geminate root ת-מ-מ'],
+                ['30', 'יֻּכַּל',    'Num 13:30',   'Imperfect',  '3ms', 'כָּלַל · קִבּוּץ + dagesh in R2 (כּ) — geminate root כ-ל-ל'],
             ]),
         ]
 
@@ -6796,33 +6826,43 @@ class Ch29WeakFormIdExercise(ExercisePDF):
             self.add_section_break()
 
         hdr_b = ['#', 'Form', 'Reference', 'Weak Class', 'Conjugation', 'PGN', 'Root']
-        cr_b  = [0.04, 0.14, 0.12, 0.18, 0.17, 0.09, 0.26]
+        cr_b  = [0.04, 0.13, 0.12, 0.17, 0.16, 0.09, 0.29]
         rows_b = [
-            ['21', 'יֻּגַּד',   'Gen 38:24', '', '', '', ''],
-            ['22', 'הוּסַר',    'Lev 4:35',  '', '', '', ''],
-            ['23', 'יוּמַת',    'Exo 21:12', '', '', '', ''],
-            ['24', 'מוּבָאִים', 'Gen 43:18', '', '', '', ''],
-            ['25', 'הוּבָא',    'Lev 14:2',  '', '', '', ''],
-            ['26', 'הוּחַל',    'Gen 4:26',  '', '', '', ''],
-            ['27', 'יֻּכּוּ',   'Exo 5:14',  '', '', '', ''],
-            ['28', 'הוּקַם',    'Exo 40:17', '', '', '', ''],
-            ['29', 'הֻגְלוּ',   'Jer 29:1',  '', '', '', ''],
-            ['30', 'יֻקָּם',    'Gen 4:15',  '', '', '', ''],
+            ['31', 'הוּבָא',      'Gen 33:11',      '', '', '', ''],
+            ['32', 'יֻּגַּד',     'Gen 48:2',       '', '', '', ''],
+            ['33', 'יוּמַת',      'Lev 20:2',       '', '', '', ''],
+            ['34', 'הֻגְלוּ',     '2 Kgs 17:23',    '', '', '', ''],
+            ['35', 'הוּקַם',      'Num 7:1',        '', '', '', ''],
+            ['36', 'הוּסַר',      'Lev 6:4',        '', '', '', ''],
+            ['37', 'יֻּכּוּ',     'Num 14:12',      '', '', '', ''],
+            ['38', 'הוּרַד',      '1 Sam 30:24',    '', '', '', ''],
+            ['39', 'הוּחַל',      'Gen 4:26',       '', '', '', ''],
+            ['40', 'הוּסַב',      'Josh 15:3',      '', '', '', ''],
+            ['41', 'תּוּרַד',     'Isa 14:15',      '', '', '', ''],
+            ['42', 'הוּמְתוּ',    '2 Sam 21:9',     '', '', '', ''],
+            ['43', 'הֻגַּדְתִּי', '(paradigmatic)', '', '', '', ''],
+            ['44', 'הֻגְלֵיתֶם', '(paradigmatic)', '', '', '', ''],
+            ['45', 'הוּרַדְנוּ',  '(paradigmatic)', '', '', '', ''],
         ]
         ans_b = [
-            ['21', 'יֻּגַּד',   'Gen 38:24', 'I-nun',          'Wayyiqtol',  '3ms', 'נָגַד'],
-            ['22', 'הוּסַר',    'Lev 4:35',  'Biconsonantal',  'Yiqtol',     '3ms', 'סוּר'],
-            ['23', 'יוּמַת',    'Exo 21:12', 'Biconsonantal',  'Yiqtol',     '3ms', 'מוּת'],
-            ['24', 'מוּבָאִים', 'Gen 43:18', 'I-yod',          'Participle', 'mp',  'בּוֹא'],
-            ['25', 'הוּבָא',    'Lev 14:2',  'I-yod',          'Weqatal',    '3ms', 'בּוֹא'],
-            ['26', 'הוּחַל',    'Gen 4:26',  'I-guttural',     'Qatal',      '3ms', 'חָלַל'],
-            ['27', 'יֻּכּוּ',   'Exo 5:14',  'I-nun + III-he', 'Wayyiqtol',  '3mp', 'נָכָה'],
-            ['28', 'הוּקַם',    'Exo 40:17', 'Biconsonantal',  'Qatal',      '3ms', 'קוּם'],
-            ['29', 'הֻגְלוּ',   'Jer 29:1',  'III-he',         'Qatal',      '3cp', 'גָּלָה'],
-            ['30', 'יֻקָּם',    'Gen 4:15',  'I-nun',          'Yiqtol',     '3ms', 'נָקַם'],
+            ['31', 'הוּבָא',      'Gen 33:11',      'I-yod / I-vav',  'Perfect',    '3ms', 'בּוֹא'],
+            ['32', 'יֻּגַּד',     'Gen 48:2',       'I-nun',          'Imperfect',  '3ms', 'נָגַד'],
+            ['33', 'יוּמַת',      'Lev 20:2',       'Biconsonantal',  'Imperfect',  '3ms', 'מוּת'],
+            ['34', 'הֻגְלוּ',     '2 Kgs 17:23',    'III-he',         'Perfect',    '3cp', 'גָּלָה'],
+            ['35', 'הוּקַם',      'Num 7:1',        'Biconsonantal',  'Perfect',    '3ms', 'קוּם'],
+            ['36', 'הוּסַר',      'Lev 6:4',        'Biconsonantal',  'Perfect',    '3ms', 'סוּר'],
+            ['37', 'יֻּכּוּ',     'Num 14:12',      'I-nun + III-he', 'Wayyiqtol',  '3mp', 'נָכָה'],
+            ['38', 'הוּרַד',      '1 Sam 30:24',    'I-yod / I-vav',  'Perfect',    '3ms', 'יָרַד'],
+            ['39', 'הוּחַל',      'Gen 4:26',       'I-guttural',     'Perfect',    '3ms', 'חָלַל'],
+            ['40', 'הוּסַב',      'Josh 15:3',      'Geminate',       'Perfect',    '3ms', 'סָבַב'],
+            ['41', 'תּוּרַד',     'Isa 14:15',      'I-yod / I-vav',  'Imperfect',  '2ms', 'יָרַד'],
+            ['42', 'הוּמְתוּ',    '2 Sam 21:9',     'Biconsonantal',  'Perfect',    '3cp', 'מוּת'],
+            ['43', 'הֻגַּדְתִּי', '(paradigmatic)', 'I-nun',          'Perfect',    '1cs', 'נָגַד'],
+            ['44', 'הֻגְלֵיתֶם', '(paradigmatic)', 'III-he',         'Perfect',    '2mp', 'גָּלָה'],
+            ['45', 'הוּרַדְנוּ',  '(paradigmatic)', 'I-yod / I-vav',  'Perfect',    '1cp', 'יָרַד'],
         ]
 
-        self.add_section_heading('Part B — Mixed Forms')
+        self.add_section_heading('Part B — Mixed Forms (15 items)')
         self.add_generic_table(hdr_b, rows_b, cr_b, heb_cols=[1], show_answers=False)
         self.add_section_break()
 
@@ -6832,8 +6872,8 @@ class Ch29WeakFormIdExercise(ExercisePDF):
             'Biconsonantal uses הֵ).',
             'I-nun forms (items 11–15) have dagesh forte in R2. What happened to the נ? '
             'Is this the same assimilation as in the Qal/Hiphil of I-nun roots?',
-            'Items 13 and 20 are both from נָכָה (I-nun + III-he). One is wayyiqtol 3mp, '
-            'the other yiqtol 3ms. Compare their endings. Where did the III-he ה go in item 13?',
+            'Items 13 and 19 are both from III-he roots (נָכָה). One is wayyiqtol 3mp, '
+            'the other imperfect 3ms. Compare their endings. Where did the III-he ה go in item 13?',
         ])
 
         self.add_section_heading('Answer Key — Part A')
