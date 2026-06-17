@@ -16,17 +16,11 @@ description: >
 # Each entry specifies a heading and the inclusive session number range (from/to).
 # Sessions outside all groups appear under "Other Sessions" at the bottom.
 session_groups:
-  - heading: "Qal Weak Perfects and Imperfects"
+  - heading: "Introduction to Hebrew Verbs and the Qal Stem"
     from: 100
-    to: 115
-  - heading: "Non-Finite Verbal Forms"
-    from: 116
     to: 123
-  - heading: "Niphal and Hiphil Stems"
-    from: 124
-    to: 129
   - heading: "Introduction to the Derived Stems"
-    from: 130
+    from: 124
     to: 137
 
 # Sessions live in session-NN/ subdirectories, each with a session.yml.

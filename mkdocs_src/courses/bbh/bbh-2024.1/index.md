@@ -5,7 +5,7 @@
 
 ## Sessions
 
-### Qal Weak Perfects and Imperfects
+### Introduction to Hebrew Verbs and the Qal Stem
 
 | Session | Date | Recording |
 |---|---|---|
@@ -25,11 +25,6 @@
 | [113 — Waw Consecutive](sessions/session-113.md) | Nov 17, 2025 |  |
 | [114 — Waw Consecutive II](sessions/session-114.md) | Dec 8, 2025 |  |
 | [115 — Waw Consecutive III](sessions/session-115.md) | Jan 5, 2026 |  |
-
-### Non-Finite Verbal Forms
-
-| Session | Date | Recording |
-|---|---|---|
 | [116 — Qal Imperative](sessions/session-116.md) | Jan 26, 2026 |  |
 | [117 — Pronominal Suffixes on Verbs](sessions/session-117.md) | Feb 2, 2026 |  |
 | [118 — Infinitive Construct](sessions/session-118.md) | Feb 16, 2026 |  |
@@ -39,7 +34,7 @@
 | [122 — Review in Context](sessions/session-122.md) | Mar 30, 2026 |  |
 | [123 — Review in Context](sessions/session-123.md) | Apr 13, 2026 |  |
 
-### Niphal and Hiphil Stems
+### Introduction to the Derived Stems
 
 | Session | Date | Recording |
 |---|---|---|
@@ -49,11 +44,6 @@
 | [127 — Hiphil Strong Verbs (Cont'd)](sessions/session-127.md) | May 18, 2026 |  |
 | [128 — Hiphil Weak Verbs](sessions/session-128.md) | Jun 1, 2026 |  |
 | [129 — Hiphil Verb Practice](sessions/session-129.md) | Jun 8, 2026 |  |
-
-### Introduction to the Derived Stems
-
-| Session | Date | Recording |
-|---|---|---|
 | [130 — Hophal Strong Verbs](sessions/session-130.md) | Jun 15, 2026 | [Watch](https://drive.google.com/file/d/1weQ98AlV_YnH_Q2OzHs-EvSTBTsU6wSe/view?usp=drive_web) |
 | [131 — Hophal Weak Verbs](sessions/session-131.md) | Jun 22, 2026 |  |
 | [132 — Piel Strong Verbs](sessions/session-132.md) | Jun 29, 2026 |  |
