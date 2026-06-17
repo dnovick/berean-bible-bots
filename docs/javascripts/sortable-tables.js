@@ -204,6 +204,18 @@
         pinned.forEach(function (r) { tbody.appendChild(r); });
     }
 
+    // ── Paradigm-table detection ──────────────────────────────────────────────
+    // Tables whose first column is one of these headers have grammatically
+    // meaningful row order (Perfect before Imperfect, 3ms before 3fs, etc.)
+    // and must never be rearranged by sorting.
+    const PARADIGM_FIRST_HEADERS = new Set([
+        'conjugation', 'person', 'form', 'question', 'feature', 'pgn'
+    ]);
+    function isParadigmTable(headers) {
+        if (!headers.length) return false;
+        return PARADIGM_FIRST_HEADERS.has(headers[0].textContent.trim().toLowerCase());
+    }
+
     // ── Initialise one table ──────────────────────────────────────────────────
     function initSortableTable(table) {
         // Manual opt-out via attribute
@@ -215,6 +227,9 @@
 
         // Skip key-value glossary tables
         if (isKeyValueTable(headers)) return;
+
+        // Skip paradigm/conjugation tables — grammatically meaningful row order
+        if (isParadigmTable(headers)) return;
 
         table.dataset.sortable = '1';
 
@@ -248,10 +263,6 @@
 
     // ── Entry point ───────────────────────────────────────────────────────────
     function initAll() {
-        // Never sort tables on lesson pages — conjugation/paradigm row order
-        // is grammatically meaningful and must not be rearranged.
-        if (window.location.pathname.includes('/lessons/')) return;
-
         document.querySelectorAll('.md-typeset table').forEach(initSortableTable);
     }
 
