@@ -2390,7 +2390,7 @@ class Ch29HophalWeakExercise(PassageExercise):
         'Each numbered verb belongs to one of the stems you have already studied '
         '(Qal, Niphal, Hiphil, or Hophal). '
         'Focus: weak roots in the Hophal stem. '
-        'For each one, fill in: Hophal? (Yes/No), Conjugation, PGN, Root, and Stem/Function. '
+        'For each one, fill in: Hophal? (Yes/No), Conjugation, PGN, and Root. '
         'Key diagnostic: Hophal prefix vowel is always u-class (hu- Perfect, yu-/qu- Imperfect, mu- Participle). '
         'Four verbs in this exercise are not Hophal — drawn from Qal and Hiphil already studied. '
         'The answer key begins on the page marked "Answer Key".'
