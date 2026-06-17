@@ -8325,44 +8325,100 @@ def build_ch28_stem_id_drill(out_dir: Optional[str] = None) -> str:
 
 class Ch29HophalWeakParadigmDrill(ExercisePDF):
     _instructions = (
-        'Write the Hophal Weak forms. '
-        'Part A uses נגד (I-נ root, qibbuts pattern — ֻ under prefix). '
-        'Part B uses בוא (biconsonantal, shureq pattern). '
-        'The qibbuts vs. shureq distinction is the key diagnostic.'
+        'For each row, identify the correct Hophal form. '
+        'Shureq prefix (הוּ/יוּ/מוּ): I-י/ו and Biconsonantal roots. '
+        'Qibbuts prefix (הֻ/יֻ/מֻ): all other classes. '
+        'I-guttural: Seghol (הֶ) in Perfect, Qibbuts in Imperfect. '
+        'III-ה: ָה in Perfect 3ms, ֶה in Imperfect, apocopated Wayyiqtol. '
+        'I-נ/Geminate: Dagesh forte in R2.'
     )
 
     def _build(self) -> None:
         self.add_instructions(self._instructions)
-        hdrs = ['#', 'PGN / Form', 'Hophal form']
-        cr   = [0.06, 0.28, 0.66]
+        hdr = ['#', 'Root', 'PGN', 'Ref', 'Hophal Form']
+        cr  = [0.05, 0.10, 0.20, 0.15, 0.50]
 
-        rows_a = [
-            ['1','Perfect 3ms',''], ['2','Perfect 3fs',''], ['3','Perfect 2ms',''],
-            ['4','Perfect 1cs',''], ['5','Imperfect 3ms',''], ['6','Imperfect 3fs',''],
-            ['7','Imperfect 3mp',''], ['8','Imperfect 1cp',''],
-            ['9','Participle ms',''], ['10','Participle mp',''],
+        parts = [
+            ('A', 'ילד', 'I-י/ו — Shureq prefix', [
+                ['1', 'ילד', 'Perfect 3ms',    'Gen 21:5', ''],
+                ['2', 'ילד', 'Imperfect 3ms',  'Gen 4:26', ''],
+                ['3', 'ילד', 'Participle ms',  '—',        ''],
+            ], [
+                ['1', 'ילד', 'Perfect 3ms',    'Gen 21:5', 'הוּלַד'],
+                ['2', 'ילד', 'Imperfect 3ms',  'Gen 4:26', 'יוּלַד'],
+                ['3', 'ילד', 'Participle ms',  '—',        'מוּלָד'],
+            ]),
+            ('B', 'קום', 'Biconsonantal — Shureq prefix', [
+                ['1', 'קום', 'Perfect 3ms',    'Exo 40:17', ''],
+                ['2', 'קום', 'Imperfect 3ms',  'Num 9:15',  ''],
+                ['3', 'קום', 'Participle ms',  '—',         ''],
+            ], [
+                ['1', 'קום', 'Perfect 3ms',    'Exo 40:17', 'הוּקַם'],
+                ['2', 'קום', 'Imperfect 3ms',  'Num 9:15',  'יוּקַם'],
+                ['3', 'קום', 'Participle ms',  '—',         'מוּקָם'],
+            ]),
+            ('C', 'עמד', 'I-guttural — Seghol Perfect / Qibbuts Imperfect', [
+                ['1', 'עמד', 'Perfect 3ms',    '—', ''],
+                ['2', 'עמד', 'Imperfect 3ms',  '—', ''],
+                ['3', 'עמד', 'Participle ms',  '—', ''],
+            ], [
+                ['1', 'עמד', 'Perfect 3ms',    '—', 'הֶעֱמַד'],
+                ['2', 'עמד', 'Imperfect 3ms',  '—', 'יֻעֲמַד'],
+                ['3', 'עמד', 'Participle ms',  '—', 'מֻעֲמָד'],
+            ]),
+            ('D', 'נגד', 'I-נ — Qibbuts prefix; Dagesh forte in R2', [
+                ['1', 'נגד', 'Perfect 3ms',    'Deu 17:4', ''],
+                ['2', 'נגד', 'Imperfect 3ms',  '—',        ''],
+                ['3', 'נגד', 'Participle ms',  '—',        ''],
+            ], [
+                ['1', 'נגד', 'Perfect 3ms',    'Deu 17:4', 'הֻגַּד'],
+                ['2', 'נגד', 'Imperfect 3ms',  '—',        'יֻגַּד'],
+                ['3', 'נגד', 'Participle ms',  '—',        'מֻגָּד'],
+            ]),
+            ('E', 'גלה', 'III-ה — Qibbuts; contracted endings; apocopated Wayyiqtol', [
+                ['1', 'גלה', 'Perfect 3ms',    'Amos 1:5',    ''],
+                ['2', 'גלה', 'Imperfect 3ms',  '—',           ''],
+                ['3', 'גלה', 'Wayyiqtol 3ms',  '2 Kgs 15:29', ''],
+                ['4', 'גלה', 'Participle ms',  '—',           ''],
+            ], [
+                ['1', 'גלה', 'Perfect 3ms',    'Amos 1:5',    'הֻגְלָה'],
+                ['2', 'גלה', 'Imperfect 3ms',  '—',           'יֻגְלֶה'],
+                ['3', 'גלה', 'Wayyiqtol 3ms',  '2 Kgs 15:29', 'וַיֻּגֶל'],
+                ['4', 'גלה', 'Participle ms',  '—',           'מֻגְלֶה'],
+            ]),
+            ('F', 'שׁלח', 'III-ח/ע — Qibbuts prefix; Patach furtive before final guttural', [
+                ['1', 'שׁלח', 'Perfect 3ms',   '—',          ''],
+                ['2', 'שׁלח', 'Imperfect 3ms', 'Job 18:8',   ''],
+                ['3', 'שׁלח', 'Participle ms', 'Isa 27:10',  ''],
+            ], [
+                ['1', 'שׁלח', 'Perfect 3ms',   '—',          'הֻשְׁלַח'],
+                ['2', 'שׁלח', 'Imperfect 3ms', 'Job 18:8',   'יֻשְׁלַח'],
+                ['3', 'שׁלח', 'Participle ms', 'Isa 27:10',  'מֻשְׁלָח'],
+            ]),
+            ('G', 'מצא', 'III-א — Qibbuts prefix; Qamets before silent final א', [
+                ['1', 'מצא', 'Perfect 3ms',    '—', ''],
+                ['2', 'מצא', 'Imperfect 3ms',  '—', ''],
+            ], [
+                ['1', 'מצא', 'Perfect 3ms',    '—', 'הֻמְצָא'],
+                ['2', 'מצא', 'Imperfect 3ms',  '—', 'יֻמְצָא'],
+            ]),
+            ('H', 'נקם', 'Geminate — Qibbuts prefix; Dagesh forte in R2', [
+                ['1', 'נקם', 'Perfect 3ms',    '—',         ''],
+                ['2', 'נקם', 'Imperfect 3ms',  'Gen 4:15',  ''],
+                ['3', 'נקם', 'Participle ms',  '—',         ''],
+            ], [
+                ['1', 'נקם', 'Perfect 3ms',    '—',         'הֻקַּם'],
+                ['2', 'נקם', 'Imperfect 3ms',  'Gen 4:15',  'יֻקַּם'],
+                ['3', 'נקם', 'Participle ms',  '—',         'מֻקָּם'],
+            ]),
         ]
-        ans_a = [
-            ['1','Perfect 3ms','הֻגַּד'], ['2','Perfect 3fs','הֻגְּדָה'],
-            ['3','Perfect 2ms','הֻגַּדְתָּ'], ['4','Perfect 1cs','הֻגַּדְתִּי'],
-            ['5','Imperfect 3ms','יֻגַּד'], ['6','Imperfect 3fs','תֻּגַּד'],
-            ['7','Imperfect 3mp','יֻגְּדוּ'], ['8','Imperfect 1cp','נֻגַּד'],
-            ['9','Participle ms','מֻגָּד'], ['10','Participle mp','מֻגָּדִים'],
-        ]
-        rows_b = [
-            ['11','Imperfect 3ms (בוא)',''], ['12','Participle ms (בוא)',''],
-        ]
-        ans_b = [
-            ['11','Imperfect 3ms (בוא)','יוּבָא'], ['12','Participle ms (בוא)','מוּבָא'],
-        ]
-        self.add_drill_with_answer_key(hdrs, rows_a, ans_a, col_ratios=cr,
-                                       answer_heb_cols=[2],
-                                       section_title='Part A — Hophal Weak: נגד (I-נ, qibbuts)',
-                                       answer_title='Part A — Answer Key')
-        self.add_drill_with_answer_key(hdrs, rows_b, ans_b, col_ratios=cr,
-                                       answer_heb_cols=[2],
-                                       section_title='Part B — Hophal Weak: בוא (biconsonantal, shureq)',
-                                       answer_title='Part B — Answer Key')
+        for part_letter, _root, title, rows, ans in parts:
+            self.add_drill_with_answer_key(
+                hdr, rows, ans, col_ratios=cr,
+                heb_cols=[1], answer_heb_cols=[1, 4],
+                section_title=f'Part {part_letter} — {title}',
+                answer_title=f'Part {part_letter} — Answer Key',
+            )
 
 
 def build_ch29_hophal_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:
