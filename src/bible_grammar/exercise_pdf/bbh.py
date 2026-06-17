@@ -9747,7 +9747,7 @@ def build_ch25_stem_id_drill(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 
 
-class Ch29FunctionSortExercise(ExercisePDF):
+class Ch29HiphilPassiveDrillExercise(ExercisePDF):
 
     def _build(self) -> None:
         self.add_instructions(
@@ -9758,70 +9758,83 @@ class Ch29FunctionSortExercise(ExercisePDF):
             'Answer key at the bottom.'
         )
         self.add_note(
-            'I-י/Hollow Hophal: הוּ/יוּ prefix with shureq vowel (שׁוּרֶק) is the key marker.  '
-            'I-י: Hiphil uses הוֹ– prefix; Hophal uses הוּ– prefix.  '
-            'Hollow: Hiphil uses הֵ– + chiriq-yod; Hophal uses הוּ– + contracted stem.  '
-            'III-ה Hophal: הוּ prefix + ָה ending in Perfect 3ms.'
+            'I-י/Biconsonantal Hophal: הוּ/יוּ/מוּ prefix (shureq).  '
+            'III-ה, I-נ, I-guttural, III-ח/ע, III-א, Geminate Hophal: הֻ/יֻ/מֻ prefix (qibbuts).  '
+            'III-ה Perfect 3ms ends ָה; 3cp ends וּ.'
         )
         hdr = ['#', 'Hophal Form', 'Root', 'Weak Class', 'Conjugation', 'Hiphil Active Meaning', 'Hophal Translation']
         cr  = [0.04, 0.12, 0.07, 0.10, 0.15, 0.26, 0.26]
         rows = [
-            ['1',  'הוּבַל',    'יבל', 'I-י',    'Perfect 3ms',    '', ''],
-            ['2',  'הוּבְאוּ',  'בוא', 'Hollow', 'Perfect 3cp',    '', ''],
-            ['3',  'הוּרַד',    'ירד', 'I-י',    'Perfect 3ms',    '', ''],
-            ['4',  'הוּקַם',    'קום', 'Hollow', 'Perfect 3ms',    '', ''],
-            ['5',  'הוּשַׁב',   'שׁוב','Hollow', 'Perfect 3ms',    '', ''],
-            ['6',  'יוּבַל',    'יבל', 'I-י',    'Imperfect 3ms',  '', ''],
-            ['7',  'יוּבָא',    'בוא', 'Hollow', 'Imperfect 3ms',  '', ''],
-            ['8',  'יוּרַד',    'ירד', 'I-י',    'Imperfect 3ms',  '', ''],
-            ['9',  'יוּקַם',    'קום', 'Hollow', 'Imperfect 3ms',  '', ''],
-            ['10', 'יוּשַׁב',   'שׁוב','Hollow', 'Imperfect 3ms',  '', ''],
-            ['11', 'וַיּוּבַל', 'יבל', 'I-י',    'Wayyiqtol 3ms',  '', ''],
-            ['12', 'וַיּוּבָא', 'בוא', 'Hollow', 'Wayyiqtol 3ms',  '', ''],
-            ['13', 'וַיּוּרַד', 'ירד', 'I-י',    'Wayyiqtol 3ms',  '', ''],
-            ['14', 'הוּלַד',    'ילד', 'I-י',    'Perfect 3ms',    '', ''],
-            ['15', 'יוּלַד',    'ילד', 'I-י',    'Imperfect 3ms',  '', ''],
-            ['16', 'מוּבָא',    'בוא', 'Hollow', 'Participle ms',  '', ''],
-            ['17', 'מוּרָד',    'ירד', 'I-י',    'Participle ms',  '', ''],
-            ['18', 'הוּגְלָה',  'גלה', 'III-ה',  'Perfect 3ms',    '', ''],
+            ['1',  'הוּבַל',     'יבל',  'I-י',          'Perfect 3ms',    '', ''],
+            ['2',  'הוּבְאוּ',   'בוא',  'Biconsonantal', 'Perfect 3cp',    '', ''],
+            ['3',  'הוּרַד',     'ירד',  'I-י',          'Perfect 3ms',    '', ''],
+            ['4',  'הוּקַם',     'קום',  'Biconsonantal', 'Perfect 3ms',    '', ''],
+            ['5',  'הוּשַׁב',    'שׁוב', 'Biconsonantal', 'Perfect 3ms',    '', ''],
+            ['6',  'יוּבַל',     'יבל',  'I-י',          'Imperfect 3ms',  '', ''],
+            ['7',  'יוּבָא',     'בוא',  'Biconsonantal', 'Imperfect 3ms',  '', ''],
+            ['8',  'יוּרַד',     'ירד',  'I-י',          'Imperfect 3ms',  '', ''],
+            ['9',  'יוּקַם',     'קום',  'Biconsonantal', 'Imperfect 3ms',  '', ''],
+            ['10', 'יוּשַׁב',    'שׁוב', 'Biconsonantal', 'Imperfect 3ms',  '', ''],
+            ['11', 'וַיּוּבַל',  'יבל',  'I-י',          'Wayyiqtol 3ms',  '', ''],
+            ['12', 'וַיּוּבָא',  'בוא',  'Biconsonantal', 'Wayyiqtol 3ms',  '', ''],
+            ['13', 'וַיּוּרַד',  'ירד',  'I-י',          'Wayyiqtol 3ms',  '', ''],
+            ['14', 'הוּלַד',     'ילד',  'I-י',          'Perfect 3ms',    '', ''],
+            ['15', 'יוּלַד',     'ילד',  'I-י',          'Imperfect 3ms',  '', ''],
+            ['16', 'מוּבָא',     'בוא',  'Biconsonantal', 'Participle ms',  '', ''],
+            ['17', 'מוּרָד',     'ירד',  'I-י',          'Participle ms',  '', ''],
+            ['18', 'הֻגְלָה',    'גלה',  'III-ה',         'Perfect 3ms',    '', ''],
+            ['19', 'הֻגְלוּ',    'גלה',  'III-ה',         'Perfect 3cp',    '', ''],
+            ['20', 'הֻגַּד',     'נגד',  'I-נ',           'Perfect 3ms',    '', ''],
+            ['21', 'וַיֻּגַּד',  'נגד',  'I-נ',           'Wayyiqtol 3ms',  '', ''],
+            ['22', 'הֻעֲמַד',    'עמד',  'I-guttural',    'Perfect 3ms',    '', ''],
+            ['23', 'יֻשְׁלַח',   'שׁלח', 'III-ח/ע',       'Imperfect 3ms',  '', ''],
+            ['24', 'הֻמְצָא',    'מצא',  'III-א',         'Perfect 3ms',    '', ''],
+            ['25', 'יֻקַּם',     'נקם',  'Geminate',      'Imperfect 3ms',  '', ''],
         ]
         ans = [
-            ['1',  'הוּבַל',    'יבל', 'I-י',    'Perfect 3ms',    'Hiphil יָבַל: to lead/bring/carry',          'he was led / brought'],
-            ['2',  'הוּבְאוּ',  'בוא', 'Hollow', 'Perfect 3cp',    'Hiphil הֵבִיא: to bring (cause to come)',     'they were brought'],
-            ['3',  'הוּרַד',    'ירד', 'I-י',    'Perfect 3ms',    'Hiphil הוֹרִיד: to bring down (cause to descend)', 'he was brought down'],
-            ['4',  'הוּקַם',    'קום', 'Hollow', 'Perfect 3ms',    'Hiphil הֵקִים: to raise up / establish',     'the tabernacle was erected'],
-            ['5',  'הוּשַׁב',   'שׁוב','Hollow', 'Perfect 3ms',    'Hiphil הֵשִׁיב: to bring back / restore',    'the money was brought back'],
-            ['6',  'יוּבַל',    'יבל', 'I-י',    'Imperfect 3ms',  'Hiphil יָבַל: to lead/bring/carry',          'he will be led / brought'],
-            ['7',  'יוּבָא',    'בוא', 'Hollow', 'Imperfect 3ms',  'Hiphil הֵבִיא: to bring',                    'he will be brought'],
-            ['8',  'יוּרַד',    'ירד', 'I-י',    'Imperfect 3ms',  'Hiphil הוֹרִיד: to bring down',              'he will be brought down'],
-            ['9',  'יוּקַם',    'קום', 'Hollow', 'Imperfect 3ms',  'Hiphil הֵקִים: to raise up / establish',     'it will be raised up'],
-            ['10', 'יוּשַׁב',   'שׁוב','Hollow', 'Imperfect 3ms',  'Hiphil הֵשִׁיב: to bring back / restore',    'he will be brought back'],
-            ['11', 'וַיּוּבַל', 'יבל', 'I-י',    'Wayyiqtol 3ms',  'Hiphil יָבַל: to lead/bring',               'and he was led'],
-            ['12', 'וַיּוּבָא', 'בוא', 'Hollow', 'Wayyiqtol 3ms',  'Hiphil הֵבִיא: to bring',                    'and he was brought (Gen 39:1)'],
-            ['13', 'וַיּוּרַד', 'ירד', 'I-י',    'Wayyiqtol 3ms',  'Hiphil הוֹרִיד: to bring down',              'and he was brought down'],
-            ['14', 'הוּלַד',    'ילד', 'I-י',    'Perfect 3ms',    'Hiphil הוֹלִיד: to beget / cause to be born', 'he was born'],
-            ['15', 'יוּלַד',    'ילד', 'I-י',    'Imperfect 3ms',  'Hiphil הוֹלִיד: to beget / cause to be born', 'he will be born'],
-            ['16', 'מוּבָא',    'בוא', 'Hollow', 'Participle ms',  'Hiphil הֵבִיא: to bring',                    '(one) being brought in'],
-            ['17', 'מוּרָד',    'ירד', 'I-י',    'Participle ms',  'Hiphil הוֹרִיד: to bring down',              '(one) being brought down'],
-            ['18', 'הוּגְלָה',  'גלה', 'III-ה',  'Perfect 3ms',    'Hiphil הִגְלָה: to exile (cause to go into exile)', 'he/Israel was carried into exile'],
+            ['1',  'הוּבַל',     'יבל',  'I-י',          'Perfect 3ms',    'Hiphil יָבַל: to lead/bring/carry',               'he was led / brought'],
+            ['2',  'הוּבְאוּ',   'בוא',  'Biconsonantal', 'Perfect 3cp',    'Hiphil הֵבִיא: to bring (cause to come)',          'they were brought'],
+            ['3',  'הוּרַד',     'ירד',  'I-י',          'Perfect 3ms',    'Hiphil הוֹרִיד: to bring down',                   'he was brought down'],
+            ['4',  'הוּקַם',     'קום',  'Biconsonantal', 'Perfect 3ms',    'Hiphil הֵקִים: to raise up / establish',          'the tabernacle was erected'],
+            ['5',  'הוּשַׁב',    'שׁוב', 'Biconsonantal', 'Perfect 3ms',    'Hiphil הֵשִׁיב: to bring back / restore',         'the money was brought back'],
+            ['6',  'יוּבַל',     'יבל',  'I-י',          'Imperfect 3ms',  'Hiphil יָבַל: to lead/bring/carry',               'he will be led / brought'],
+            ['7',  'יוּבָא',     'בוא',  'Biconsonantal', 'Imperfect 3ms',  'Hiphil הֵבִיא: to bring',                         'he will be brought'],
+            ['8',  'יוּרַד',     'ירד',  'I-י',          'Imperfect 3ms',  'Hiphil הוֹרִיד: to bring down',                   'he will be brought down'],
+            ['9',  'יוּקַם',     'קום',  'Biconsonantal', 'Imperfect 3ms',  'Hiphil הֵקִים: to raise up / establish',          'it will be raised up'],
+            ['10', 'יוּשַׁב',    'שׁוב', 'Biconsonantal', 'Imperfect 3ms',  'Hiphil הֵשִׁיב: to bring back / restore',         'he will be brought back'],
+            ['11', 'וַיּוּבַל',  'יבל',  'I-י',          'Wayyiqtol 3ms',  'Hiphil יָבַל: to lead/bring',                     'and he was led'],
+            ['12', 'וַיּוּבָא',  'בוא',  'Biconsonantal', 'Wayyiqtol 3ms',  'Hiphil הֵבִיא: to bring',                         'and he was brought (Gen 39:1)'],
+            ['13', 'וַיּוּרַד',  'ירד',  'I-י',          'Wayyiqtol 3ms',  'Hiphil הוֹרִיד: to bring down',                   'and he was brought down'],
+            ['14', 'הוּלַד',     'ילד',  'I-י',          'Perfect 3ms',    'Hiphil הוֹלִיד: to beget / cause to be born',     'he was born'],
+            ['15', 'יוּלַד',     'ילד',  'I-י',          'Imperfect 3ms',  'Hiphil הוֹלִיד: to beget / cause to be born',     'he will be born'],
+            ['16', 'מוּבָא',     'בוא',  'Biconsonantal', 'Participle ms',  'Hiphil הֵבִיא: to bring',                         '(one) being brought in'],
+            ['17', 'מוּרָד',     'ירד',  'I-י',          'Participle ms',  'Hiphil הוֹרִיד: to bring down',                   '(one) being brought down'],
+            ['18', 'הֻגְלָה',    'גלה',  'III-ה',         'Perfect 3ms',    'Hiphil הִגְלָה: to exile, deport',                'he/Israel was exiled (Amos 1:5)'],
+            ['19', 'הֻגְלוּ',    'גלה',  'III-ה',         'Perfect 3cp',    'Hiphil הִגְלָה: to exile, deport',                'they were exiled / deported (Amos 1:6)'],
+            ['20', 'הֻגַּד',     'נגד',  'I-נ',           'Perfect 3ms',    'Hiphil הִגִּיד: to declare, tell, report',        'it was told / reported (Deu 17:4)'],
+            ['21', 'וַיֻּגַּד',  'נגד',  'I-נ',           'Wayyiqtol 3ms',  'Hiphil הִגִּיד: to declare, tell',                'and it was told (Gen 22:20)'],
+            ['22', 'הֻעֲמַד',    'עמד',  'I-guttural',    'Perfect 3ms',    'Hiphil הֶעֱמִיד: to station, set in place',       'he was stationed / set in place'],
+            ['23', 'יֻשְׁלַח',   'שׁלח', 'III-ח/ע',       'Imperfect 3ms',  'Piel שָׁלַח: to send, release',                   'it will be sent / released (Job 18:8)'],
+            ['24', 'הֻמְצָא',    'מצא',  'III-א',         'Perfect 3ms',    'Qal מָצָא: to find',                              'it was found / presented'],
+            ['25', 'יֻקַּם',     'נקם',  'Geminate',      'Imperfect 3ms',  'Qal נָקַם: to avenge',                            'he shall be avenged (Gen 4:15)'],
         ]
         self.add_drill_with_answer_key(
             hdr, rows, ans,
             col_ratios=cr,
             heb_cols=[1, 2],
             answer_heb_cols=[1, 2],
-            section_title='Hophal Weak-Root Function Sort (18 forms)',
+            section_title='Hophal Weak-Root: Hiphil → Hophal Passive Drill (25 forms)',
             answer_title='Answer Key',
         )
 
 
-def build_ch29_function_sort(out_dir: Optional[str] = None) -> str:
+def build_ch29_hiphil_passive_drill(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
-        Ch29FunctionSortExercise,
-        'Chapter 29 — Hophal Weak-Root Function Sort',
+        Ch29HiphilPassiveDrillExercise,
+        'Chapter 29 — Hophal Weak-Root: Hiphil → Hophal Passive Drill',
         'BBH Chapter 29 · Hophal Weak Verbs',
-        ['bbh', 'ch29', 'exercises', 'ch29-function-sort'],
-        'ch29-function-sort.pdf', out_dir,
+        ['bbh', 'ch29', 'exercises', 'ch29-hiphil-passive-drill'],
+        'ch29-hiphil-passive-drill.pdf', out_dir,
     )
 
 
