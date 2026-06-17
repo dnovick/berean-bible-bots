@@ -12,7 +12,9 @@ Analyses of Hebrew verb forms — stems, conjugations, and their distribution ac
 | [Hebrew Verb Stems — Torah by Book](hebrew-verb-stems-torah-by-book.md) | Stem distribution broken down by Torah book |
 | [Hebrew Verb Stems — Genesis](hebrew-verb-stems-genesis.md) | Stem distribution for Genesis only |
 | [Hebrew Verb Stem Distribution — Pie Chart](ot-verb-stems-pie.md) | Visual overview of stem proportions across the OT |
-| [Verb Morphology by Book (OT + NT)](verb-morphology-by-book.md) | Stem distribution for the Hebrew OT and tense/mood distribution for the Greek NT, side by side |
+| [Verb Morphology by Book — Overview](verb-morphology-by-book.md) | Overview: OT stem distribution and NT tense/mood distribution by book |
+| [Hebrew OT — Verb Stems by Book](ot-verb-stems-by-book.md) | Stem distribution for all 39 OT books (full data table + chart) |
+| [Greek NT — Verb Morphology by Book](nt-verb-morphology-by-book.md) | Tense and mood distribution for all 27 NT books (full data tables + charts) |
 | [Hiphil (הִפְעִיל) Verb Morphology](hiphil_report.md) | Deep dive into the Hiphil (causative active) stem — frequency, forms, and semantic patterns |
 | [Niphal Perfect Verbs by OT Book](niphal-perfects-by-book.md) | All Niphal perfects, organized by book |
 | [Niphal Perfect Verbs — Top 20 Books](niphal-perfects-by-book-top20.md) | The 20 books with the highest Niphal perfect counts |
