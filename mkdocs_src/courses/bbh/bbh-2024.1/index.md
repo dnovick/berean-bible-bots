@@ -5,6 +5,51 @@
 
 ## Sessions
 
+### Qal Weak Perfects and Imperfects
+
+| Session | Date | Recording |
+|---|---|---|
+| [100 — Weak Qal Perfective Verbs II](sessions/session-100.md) | Jul 7, 2025 |  |
+| [101 — Qal Imperfective Strong Verbs](sessions/session-101.md) | Jul 14, 2025 |  |
+| [102 — Review / Q&A](sessions/session-102.md) | Jul 21, 2025 |  |
+| [103 — Review / Q&A](sessions/session-103.md) | Jul 28, 2025 |  |
+| [104 — Review / Q&A](sessions/session-104.md) | Aug 4, 2025 |  |
+| [105 — Review / Q&A](sessions/session-105.md) | Aug 18, 2025 |  |
+| [106 — Review / Q&A](sessions/session-106.md) | Sep 1, 2025 |  |
+| [107 — Review / Q&A](sessions/session-107.md) | Sep 8, 2025 |  |
+| [108 — Review / Q&A](sessions/session-108.md) | Sep 29, 2025 |  |
+| [109 — Qal Imperfective Strong Verbs](sessions/session-109.md) | Oct 6, 2025 |  |
+| [110 — Qal Imperfective Weak Verbs I](sessions/session-110.md) | Oct 13, 2025 |  |
+| [111 — Qal Imperfective Weak Verbs II](sessions/session-111.md) | Nov 3, 2025 |  |
+| [112 — Qal Imperfective Weak Verbs II](sessions/session-112.md) | Nov 10, 2025 |  |
+| [113 — Waw Consecutive](sessions/session-113.md) | Nov 17, 2025 |  |
+| [114 — Waw Consecutive II](sessions/session-114.md) | Dec 8, 2025 |  |
+| [115 — Waw Consecutive III](sessions/session-115.md) | Jan 5, 2026 |  |
+
+### Non-Finite Verbal Forms
+
+| Session | Date | Recording |
+|---|---|---|
+| [116 — Qal Imperative](sessions/session-116.md) | Jan 26, 2026 |  |
+| [117 — Pronominal Suffixes on Verbs](sessions/session-117.md) | Feb 2, 2026 |  |
+| [118 — Infinitive Construct](sessions/session-118.md) | Feb 16, 2026 |  |
+| [119 — Infinitive Construct / Infinitive Absolute](sessions/session-119.md) | Mar 2, 2026 |  |
+| [120 — Infinitive Absolute / Participle](sessions/session-120.md) | Mar 9, 2026 |  |
+| [121 — Review in Context](sessions/session-121.md) | Mar 23, 2026 |  |
+| [122 — Review in Context](sessions/session-122.md) | Mar 30, 2026 |  |
+| [123 — Review in Context](sessions/session-123.md) | Apr 13, 2026 |  |
+
+### Niphal and Hiphil Stems
+
+| Session | Date | Recording |
+|---|---|---|
+| [124 — Niphal Strong Verbs](sessions/session-124.md) | Apr 20, 2026 |  |
+| [125 — Niphal Weak Verbs](sessions/session-125.md) | Apr 27, 2026 |  |
+| [126 — Hiphil Strong Verbs](sessions/session-126.md) | May 4, 2026 |  |
+| [127 — Hiphil Strong Verbs (Cont'd)](sessions/session-127.md) | May 18, 2026 |  |
+| [128 — Hiphil Weak Verbs](sessions/session-128.md) | Jun 1, 2026 |  |
+| [129 — Hiphil Verb Practice](sessions/session-129.md) | Jun 8, 2026 |  |
+
 ### Introduction to the Derived Stems
 
 | Session | Date | Recording |

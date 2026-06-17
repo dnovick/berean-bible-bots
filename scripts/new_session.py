@@ -124,17 +124,23 @@ notes: ""
 """
 
 
+def _is_course_dir(path: Path) -> bool:
+    return path.is_dir() and (
+        (path / "course.yml").exists() or (path / "instance.yml").exists()
+    )
+
+
 def _find_course_dir(course_id: str) -> Path:
     """Return the course directory for course_id, searching all group dirs."""
     for entry in sorted(_COURSES_DIR.iterdir()):
         if not entry.is_dir():
             continue
         # Direct course dir (ungrouped)
-        if entry.name == course_id and (entry / "course.yml").exists():
+        if entry.name == course_id and _is_course_dir(entry):
             return entry
         # Group dir — search one level deeper
         candidate = entry / course_id
-        if candidate.is_dir() and (candidate / "course.yml").exists():
+        if _is_course_dir(candidate):
             return candidate
     raise SystemExit(
         f"ERROR: course {course_id!r} not found under {_COURSES_DIR}.\n"
@@ -147,11 +153,11 @@ def _list_course_ids() -> str:
     for entry in sorted(_COURSES_DIR.iterdir()):
         if not entry.is_dir():
             continue
-        if (entry / "course.yml").exists():
+        if _is_course_dir(entry):
             ids.append(entry.name)
         else:
             for sub in sorted(entry.iterdir()):
-                if sub.is_dir() and (sub / "course.yml").exists():
+                if _is_course_dir(sub):
                     ids.append(sub.name)
     return ", ".join(ids) if ids else "(none found)"
 

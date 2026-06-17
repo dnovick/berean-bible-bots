@@ -1,0 +1,75 @@
+# Session schema
+#
+# date:     YYYY-MM-DD
+# focus:    short description shown in the course session table
+# chapter:  BBH chapter number (integer) — renders as a "Textbook Chapter" link
+#           on the session page and is used in the course session table.
+#           Omit for review/intro sessions with no primary chapter.
+#
+# agenda:   ordered list of session agenda items
+#   - title:    item label (required)
+#     url:      optional link (internal path or external URL)
+#     duration: optional time allotment rendered as a parenthetical, e.g. "15 min"
+#               If present, "(15 min)" is appended to the agenda line.
+#               If absent, nothing is added — not even the parentheses.
+#
+# lesson:   optional lesson linked in the agenda (auto-appended after explicit agenda items,
+#           before reading items)
+#   name:     display label for the agenda link (required if lesson is set)
+#   url:      path or URL to the lesson page (required if lesson is set)
+#   duration: optional time allotment, e.g. "45 min" — rendered as "(45 min)" on the agenda line
+#
+# sections: freeform content blocks, each rendered as ## Heading + markdown body
+#   - heading: section title
+#     content: inline markdown text (use | for multi-line)
+#     file:    .md filename in this session directory (e.g. "background.md")
+#
+# instructor: name of the lead teacher for this session (optional, omit if blank)
+# recording:  URL to the session recording (optional, omit or leave blank if unavailable)
+# notes:      plain-text instructor notes (not rendered on the page when blank)
+#
+# reading:  progressive reading exercise(s) for this session (rendered as ## Reading)
+#   Each entry:
+#   - name:        short label shown as the subsection heading and in the agenda (required)
+#     description: goals or instructions for this reading activity (required)
+#     passage:     Scripture reference displayed on the session page (required)
+#     file:        HTML filename in this session directory (required)
+#     duration:    optional time allotment, e.g. "15 min" — rendered as "(15 min)" on the agenda line
+#   NOTE: the agenda entry "Reading: <name>" auto-links to the reading file via section_urls.
+#   Write it explicitly in agenda: to control its position; omit it to have it
+#   auto-appended at the end of the agenda.
+#
+# exercises: session exercises (generates exercises.md listing + per-exercise index pages,
+#            identical to the lesson exercise pattern at /lessons/hebrew/chN/exercises/).
+#   Each entry:
+#   - name: display title for the exercise (required)
+#     slug: subdirectory name under exercises/ in this session directory (required)
+#     desc: one-sentence description shown in the exercises listing table (required)
+#   Exercise files (.html, .pdf, .md) are copied from exercises/<slug>/ automatically.
+#   Add "Exercises" to agenda: (no url needed) — it auto-links to exercises.md.
+#   Do NOT list individual exercises under files: — use exercises: instead.
+#
+# homework: optional list of assignments rendered as ## Homework (bulleted list below the Agenda).
+#           Each item is free text and may include Markdown links, e.g.:
+#             - "Read BBH Chapter 1"
+#             - "Review vocabulary at [Quizlet](https://quizlet.com/...)"
+#           Omit the key entirely if there is no homework for this session.
+#
+# files:    non-exercise downloadable resources (rendered as ## Downloads)
+#   - name: display label for the link (required)
+#     file: filename in this session directory (e.g. "handout.pdf")
+#
+# NOTE: session_groups is a COURSE-level key defined in course.yml, not in
+# session.yml. It divides the session table on the course overview page into
+# labeled sub-sections. Each entry has:
+#   - heading: section title
+#     from:    first session number (inclusive)
+#     to:      last session number (inclusive)
+
+date: "2025-09-08"
+focus: "Review / Q&A"
+
+agenda:
+sections:
+
+notes: ""

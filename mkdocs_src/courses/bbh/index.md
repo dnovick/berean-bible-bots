@@ -10,5 +10,5 @@ Introduces the Biblical Hebrew language from the ground up. Students learn the H
 
 | Course | Instructor(s) | Sessions |
 |---|---|---|
-| [bbh-2024.1](bbh-2024.1/index.md) | David Novick | 8 |
+| [bbh-2024.1](bbh-2024.1/index.md) | David Novick | 38 |
 | [bbh-2026.1](bbh-2026.1/index.md) | Preston Brown, David Novick | 46 |

@@ -16,6 +16,15 @@ description: >
 # Each entry specifies a heading and the inclusive session number range (from/to).
 # Sessions outside all groups appear under "Other Sessions" at the bottom.
 session_groups:
+  - heading: "Qal Weak Perfects and Imperfects"
+    from: 100
+    to: 115
+  - heading: "Non-Finite Verbal Forms"
+    from: 116
+    to: 123
+  - heading: "Niphal and Hiphil Stems"
+    from: 124
+    to: 129
   - heading: "Introduction to the Derived Stems"
     from: 130
     to: 137
