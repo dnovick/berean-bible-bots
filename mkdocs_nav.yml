@@ -488,6 +488,8 @@ nav:
       - Hiphil (הִפְעִיל) Verb Morphology — Biblical Hebrew: reports/ot/verbs/hiphil_report.md
       - Niphal Perfect Verbs by OT Book (Top 20): reports/ot/verbs/niphal-perfects-by-book-top20.md
       - Niphal Perfect Verbs by OT Book: reports/ot/verbs/niphal-perfects-by-book.md
+      - Greek NT — Verb Morphology by Book: reports/ot/verbs/nt-verb-morphology-by-book.md
+      - Hebrew OT — Verb Stems by Book: reports/ot/verbs/ot-verb-stems-by-book.md
       - Hebrew Verb Stem Distribution — Old Testament: reports/ot/verbs/ot-verb-stems-pie.md
       - Verb Morphology by Book: reports/ot/verbs/verb-morphology-by-book.md
   - New Testament (Greek):
@@ -606,6 +608,9 @@ nav:
     - Divine Names & Titles — Cross-Corpus Reports:
       - Overview: reports/both/names/index.md
       - Divine Names and Christological Titles: reports/both/names/divine-names-report.md
+      - Divine Names — Septuagint (LXX): reports/both/names/lxx-divine-names.md
+      - Divine Names & Christological Titles — New Testament Greek: reports/both/names/nt-divine-names.md
+      - Divine Names — Old Testament Hebrew: reports/both/names/ot-divine-names.md
     - Phrase Studies:
       - Overview: reports/both/phrase_studies/index.md
       - ἐπὶ τὸ αὐτό — Phrase Study: reports/both/phrase_studies/epi_to_auto_report.md
