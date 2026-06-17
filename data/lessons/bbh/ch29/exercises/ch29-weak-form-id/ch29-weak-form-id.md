@@ -7,7 +7,7 @@
 ## Instructions
 
 **Part A:** Forms are grouped by weak class (5 per class, 6 groups = 30 items total). For each, identify: conjugation, PGN, root.
-**Part B:** Forms are mixed. Identify: weak class first, then conjugation, PGN, root.
+**Part B:** Forms are mixed (15 items). Identify: weak class first, then conjugation, PGN, root. Items marked "(paradigmatic)" are attested paradigm forms not directly cited from a biblical verse.
 
 ---
 
@@ -89,6 +89,11 @@
 | 38 | הוּרַד | 1 Sam 30:24 | | | | |
 | 39 | הוּחַל | Gen 4:26 | | | | |
 | 40 | הוּסַב | Josh 15:3 | | | | |
+| 41 | תּוּרַד | Isa 14:15 | | | | |
+| 42 | הוּמְתוּ | 2 Sam 21:9 | | | | |
+| 43 | הֻגַּדְתִּי | (paradigmatic) | | | | |
+| 44 | הֻגְלֵיתֶם | (paradigmatic) | | | | |
+| 45 | הוּרַדְנוּ | (paradigmatic) | | | | |
 
 ---
 
@@ -143,6 +148,11 @@
 | 38 | הוּרַד | I-yod | Perfect | 3ms | יָרַד | הוּ prefix; R1 = י (quiescent); "he was brought down" |
 | 39 | הוּחַל | I-guttural | Perfect | 3ms | חָלַל | הוּ prefix; guttural ח opens syllable; "it was begun" |
 | 40 | הוּסַב | Geminate | Perfect | 3ms | סָבַב | הוּ prefix; R2=R3 in root ס-ב-ב; contrast: biconsonantal roots end in שׁוּרֶק vowel-letter, geminate do not |
+| 41 | תּוּרַד | I-yod / I-vav | Imperfect | 2ms | יָרַד | תּוּ prefix = 2ms Hophal Impf; שׁוּרֶק marks I-yod/vav; R1 yod quiesces |
+| 42 | הוּמְתוּ | Biconsonantal | Perfect | 3cp | מוּת | הוּ prefix + 3cp ending וּ; contrast 3ms יוּמַת (item 7) |
+| 43 | הֻגַּדְתִּי | I-nun | Perfect | 1cs | נָגַד | קִבּוּץ under הֻ + dagesh in R2 (גּ, I-nun assimilation) + 1cs suffix תִּי |
+| 44 | הֻגְלֵיתֶם | III-he | Perfect | 2mp | גָּלָה | קִבּוּץ under הֻ + III-he: tsere-yod pattern before 2mp suffix תֶם |
+| 45 | הוּרַדְנוּ | I-yod / I-vav | Perfect | 1cp | יָרַד | הוּ prefix (I-yod Hophal Pf) + 1cp suffix נוּ; R1 yod quiesces |
 
 ---
 
