@@ -7,7 +7,7 @@
 
 ---
 
-## I-guttural (Pe-Guttural) — Model Root עמד
+## I-guttural (Pe-Guttural) — Model Root עמד {#i-guttural}
 
 ### Perfect (Qatal) {#pe-guttural-perfect}
 
