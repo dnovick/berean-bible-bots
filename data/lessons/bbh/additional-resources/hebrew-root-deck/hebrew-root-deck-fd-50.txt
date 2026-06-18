@@ -1,242 +1,242 @@
 Text 1	Text 2	Category
-אסר	yoke | Stems: Qal (45), Niphal (5), Pual (2) | Nouns: אָסִיר bound; אַסִּיר prisoner.; אֵסוּר bond; אֱסוּר band, imprisonment.	Freq50to99
-קדם	front | Nouns: קִדְמָה forward	Freq50to99
-שרת	attend | Stems: Piel (64) | Nouns: שָׁרֵת service	Freq50to99
-צור	cliff | Nouns: צוּרָה rock; טוּר rock	Freq50to99
-מלט	be smooth | Stems: Niphal (59), Hiphil (2), Piel (23), Hithpael (1) | Nouns: מֶלֶט cement	Freq50to99
-קדוש	sacred	Freq50to99
-יבל	flow | Stems: Hiphil (5), Hophal (10) | Nouns: תֵּבֵל earth; יְבוּל produce; מַבּוּל deluge; בּוּל produce	Freq50to99
-סתר	hide | Stems: Niphal (30), Hiphil (36), Piel (1), Pual (1), Hithpael (5) | Nouns: מִסְתָּר concealer; מִסְתּוֹר refuge; מַסְתֵּר hider	Freq50to99
-פרץ	break | Stems: Qal (44), Niphal (1), Pual (1), Hithpael (1) | Nouns: פֶּרֶץ break; פְּרִיץ violent; מִפְרָץ break; פַּרְצִי Partsite	Freq50to99
-לון	stop | Stems: Qal (68), Niphal (5), Hiphil (9), Hithpael (2) | Nouns: מָלוֹן lodgment; מְלוּנָה hut	Freq50to99
-יסר	chastise | Stems: Qal (3), Niphal (5), Piel (17), Nithpael (1) | Nouns: מוּסָר chastisement; יִסּוֹר reprover; מֹסָר admonition	Freq50to99
-קרן	shoot out horns | Stems: Qal (3), Hiphil (1) | Nouns: קֶרֶן horn; קֶרֶן horn	Freq50to99
-און	nothingness | Nouns: אוֹן ability; תְּאֻן naughtiness	Freq50to99
-ערה	be | Stems: Niphal (1), Hiphil (3), Piel (9), Hithpael (2) | Nouns: עֶרְוָה nudity; תַּעַר knife; עֶרְיָה nudity; מַעֲרֶה nude place	Freq50to99
-נבט	scan | Stems: Hiphil (61), Piel (1)	Freq50to99
-דג	fish | Stems: Qal (1) | Nouns: דָּגָן increase; דָּגָה fish.; דַּיָּג fisherman; דַּוָּג fisherman	Freq50to99
-ירה	flow | Stems: Qal (14), Niphal (1), Hiphil (33), Hophal (1) | Nouns: מוֹרֶה archer; יוֹרֶה sprinkling	Freq50to99
-כרוב	cherub	Freq50to99
-סכך	entwine | Stems: Qal (11), Hiphil (7), Piel (2) | Nouns: סֻכָּה hut; מָסָךְ cover; סֹךְ hut; מֵיסָךְ portico	Freq50to99
-מרה	be | Stems: Qal (23), Hiphil (20) | Nouns: מְרִי bitterness	Freq50to99
-קרע	rend | Stems: Qal (52), Niphal (5) | Nouns: קְעָרָה bowl; קַרְקַע floor; קֶרַע rag	Freq50to99
-ארי	lion | Nouns: אַרְיֵה lion.	Freq50to99
-מעל	cover up | Stems: Qal (35) | Nouns: מְעִיל robe; מַעַל treachery	Freq50to99
-נדב	to impel | Stems: Qal (2), Hithpael (13) | Nouns: נְדָבָה spontaneity; נָדִיב voluntary; נְדִיבָה nobility	Freq50to99
-שמד	desolate | Stems: Niphal (12), Hiphil (44)	Freq50to99
-חרם	seclude | Stems: Qal (1), Hiphil (36), Hophal (3) | Nouns: חֶרְמֵשׁ sickle	Freq50to99
-כרר	dance | Stems: Piel (2) | Nouns: כִּכָּר circle; כַּר ram; כָּרִי life-guardsman; כָּרָה meadow	Freq50to99
-שיר	song	Freq50to99
-נגף	push | Stems: Qal (20), Niphal (23), Hithpael (1) | Nouns: מַגֵּפָה pestilence; אַגָּף wings of an army; נֶגֶף trip	Freq50to99
-אצר	store | Stems: Qal (3), Niphal (1) | Nouns: אוֹצָר depository	Freq50to99
-קיר	wall | Stems: Qal (2), Hiphil (2), Piel (1) | Nouns: קוּר trenches	Freq50to99
-שלל	drop | Stems: Qal (11), Pual (1), Hithpael (1) | Nouns: שָׁלָל booty	Freq50to99
-המון	noise	Freq50to99
-נכר	scrutinize | Stems: Niphal (2), Hiphil (25), Piel (5), Hithpael (4) | Nouns: נֵכָר foreign; מַכָּר acquaintance; הַכָּרָה respect	Freq50to99
-למד	goad | Stems: Qal (21), Piel (28), Pual (5) | Nouns: מַלְמָד goad; תַּלְמִיד pupil	Freq50to99
-עשר	accumulate | Stems: Qal (4), Hiphil (14), Piel (4), Hithpael (1) | Nouns: עֹשֶׁר wealth; עָשִׁיר rich; עַשְׁתְּרָה increase	Freq50to99
-יצר	press | Stems: Qal (31), Niphal (1), Hiphil (1), Hophal (1), Pual (1) | Nouns: יֵצֶר form; יָצֻר structure; יִצְרִי Jitsrite	Freq50to99
-שחט	slaughter | Stems: Qal (73), Niphal (3) | Nouns: שְׁחִיטָה slaughter	Freq50to99
-שיר	sing | Stems: Qal (49), Hophal (1), Piel (37)	Freq50to99
-קוה	bind | Stems: Qal (2), Niphal (2), Piel (38) | Nouns: תִּקְוָה cord	Freq50to99
-אבה	breathe | Stems: Qal (53) | Nouns: אֶבְיוֹן destitute; אָבֶה longing; אֵבֶה the papyrus; אֲבוֹי want	Freq50to99
-איך	how? | Nouns: הֵיךְ how?; אֵיכֹה where	Freq50to99
-פלא	separate | Stems: Niphal (29), Hiphil (11), Piel (3), Hithpael (1) | Nouns: פֶּלֶא miracle; מִפְלָאָה miracle	Freq50to99
-שקה	quaff | Stems: Hiphil (38), Pual (1) | Nouns: מַשְׁקֶה causing to drink; שִׁקּוּי beverage; שֹׁקֶת trough; שִׁקֻּו draught	Freq50to99
-קנא	be | Stems: Hiphil (1), Piel (26) | Nouns: קִנְאָה jealousy; קַנָּא jealous; קַנּוֹא jealous	Freq50to99
-כסל	be fat | Stems: Qal (1), Niphal (4), Hiphil (2), Piel (2) | Nouns: כְּסִיל fat; כֶּסֶל fatness; סָכָל silly; כְּסִיל constellation	Freq50to99
-קצץ	chop off | Stems: Qal (4), Piel (10), Pual (1) | Nouns: קֵץ extremity	Freq50to99
-אלם	tie | Stems: Niphal (8), Piel (1) | Nouns: אַלְמָנָה widow; אִלֵּם speechless; אַלְמָנוּת widow; אַלְמֹנִי some	Freq50to99
-רוע	mar | Stems: Hiphil (40), Pual (1), Hithpael (3) | Nouns: תְּרוּעָה clamor; רֵעַ crash	Freq50to99
-קרבן	brought near	Freq50to99
-אבל	bewail | Stems: Qal (18), Hiphil (2), Hithpael (18) | Nouns: אֵבֶל lamentation; אֲבָל nay; אָבֵל lamenting	Freq50to99
-הבל	emptiness	Freq50to99
-נגן	thrum | Stems: Qal (1), Piel (14) | Nouns: גִּתִּי Gittite; גַּת press; אַגָּן bowl; גִּתִּית Gittite harp	Freq50to99
-אצל	join | Stems: Qal (4), Niphal (1) | Nouns: אֵצֶל side; אַצִּיל joint of the hand; אָצִיל extremity	Freq50to99
-שמנה	eight	Freq50to99
-בהל	tremble | Stems: Niphal (23), Hiphil (1), Piel (4), Pual (2), u (3) | Nouns: בַּלָּהָה alarm; בֶּהָלָה panic; בְּהִילוּ hurry	Freq50to99
-נוף	quiver | Stems: Qal (1), Hiphil (29), Hophal (1), Piel (1) | Nouns: תְּנוּפָה brandishing; נֹפֶת dripping; נֶפֶת height; נָפָה sieve	Freq50to99
-שכל	be | Stems: Qal (1), Hiphil (57), Piel (1) | Nouns: מַשְׂכִּיל instructive; שׇׂכְלְתָנוּ intelligence	Freq50to99
-נקם	grudge | Stems: Qal (12), Niphal (12), Hophal (3), Piel (2), Hithpael (5) | Nouns: נְקָמָה avengement; נָקָם revenge	Freq50to99
-סלה	hang | Stems: Qal (1), Piel (1), Pual (2) | Nouns: סַלְסִלָּה twig	Freq50to99
-ארח	travel | Stems: Qal (5) | Nouns: אֹרַח road; אֲרֻחָה ration of food; אֹרַח road; אֹרְחָה caravan	Freq50to99
-בזז	plunder | Stems: Qal (34), Niphal (3), Pual (1) | Nouns: בַּז plunder; בִּזָּה booty	Freq50to99
-גורל	pebble	Freq50to99
-לבן	white	Freq50to99
-תקע	clatter | Stems: Qal (61), Niphal (3) | Nouns: תָּקוֹעַ trumpet; תֵּקַע blast of a trumpet	Freq50to99
-מאס	spurn | Stems: Qal (57), Niphal (5) | Nouns: מָאוֹס refuse	Freq50to99
-קבר	sepulchre	Freq50to99
-שבר	fracture | Stems: Qal (16), Hiphil (4) | Nouns: שֶׁבֶר grain	Freq50to99
-תרומה	present | Nouns: תְּרוּמִיָּה sacrificial offering	Freq50to99
-בקע	cleave | Stems: Qal (12), Niphal (15), Hiphil (1), Hophal (1), Piel (11), Pual (3), Hithpael (2) | Nouns: בִּקְעָה split; בְּקִיעַ fissure; בֶּקַע section; בִּקְעָא plain.	Freq50to99
-רחק	widen | Stems: Qal (29), Hiphil (20), Piel (4) | Nouns: מֶרְחָק remoteness; רָחֵק remote	Freq50to99
-פחד	be startled | Stems: Qal (22), Hiphil (1), Piel (2) | Nouns: פַּחַד alarm; פַּחַד testicle; פַּחְדָּה alarm	Freq50to99
-צעק	shriek | Stems: Qal (47), Niphal (6), Hiphil (1), Piel (1) | Nouns: צַעֲקָה shriek	Freq50to99
-רחץ	lave | Stems: Qal (68), Pual (2), Hithpael (1) | Nouns: רַחַץ bath; רַחְצָה bathing place	Freq50to99
-בטן	belly | Nouns: בֹּטֶן pistachio-nut	Freq50to99
-פדה	sever | Stems: Qal (37), Niphal (3), Hophal (1) | Nouns: פָּדוּי ransom	Freq50to99
-כלב	dog | Nouns: כְּלוּב bird-trap	Freq50to99
-מקדש	consecrated	Freq50to99
-עמל	toil | Stems: Qal (11) | Nouns: עָמָל toil; עָמֵל toiling	Freq50to99
-רצה	be pleased with | Stems: Qal (34), Niphal (7), Hiphil (1), Piel (1), Hithpael (1)	Freq50to99
-ארז	of cedar | Nouns: אֶרֶז cedar; אַרְזָה cedar wainscoating	Freq50to99
-פרש	separate | Stems: Qal (1), Niphal (1), Hiphil (1), Piel (1), Pual (2) | Nouns: פָּרָשׁ steed; פֶּרֶשׁ excrement; פָּרָשָׁה exposition; פַּרְשְׁדֹן crotch	Freq50to99
-צלח	push | Stems: Qal (25), Hiphil (39) | Nouns: צַלַּחַת advanced; קַלַּחַת kettle; צֵלָחָה protracted; צְלֹחִית prolonged	Freq50to99
-שנן	point | Stems: Qal (7), Hithpael (1) | Nouns: שֵׁן tooth; שְׁנִינָה pointed; שֵׁן tooth; שֶׁנְהַבִּים tooth of elephants	Freq50to99
-אהה	Oh! | Nouns: הוֹי oh!; אָח Oh!; הוֹ oh!; אֹחַ howler	Freq50to99
-זעק	shriek | Stems: Qal (57), Niphal (6), Hiphil (7)	Freq50to99
-עלל	effect thoroughly | Stems: Hiphil (2), Piel (10), Pual (1), Hithpael (8) | Nouns: מַעֲלָל act; עֹלֵלָה gleanings; תַּעֲלוּל caprice; עֲלִיל crucible	Freq50to99
-מתי	extent | Nouns: מַת adult	Freq50to99
-חג	festival	Freq50to99
-מדוע	what	Freq50to99
-נעם	be agreeable | Stems: Qal (8) | Nouns: נָעִים delightful; נֹעַם agreeableness; נַעֲמָתִי Naamathite; מַנְעַם delicacy	Freq50to99
-רמה	hurl | Stems: Qal (7), Piel (2), Q (1) | Nouns: מִרְמָה fraud; רְמִיָּה remissness	Freq50to99
-שופר	cornet	Freq50to99
-גנן	hedge | Stems: Qal (8) | Nouns: גַּן garden; גַּנָּה garden; גִּנָּה garden.; גּוּנִי Gunite	Freq50to99
-יקר	be heavy | Stems: Qal (9), Hiphil (2) | Nouns: יָקָר valuable; יְקָר value; יְקָר glory, honour.; יַקִּיר precious	Freq50to99
-קרח	depilate | Stems: Qal (2), Niphal (1), Hiphil (1), Hophal (1) | Nouns: קָרַחַת bald; קֵרֵחַ bald	Freq50to99
-שכר	hire | Stems: Qal (15), Niphal (1), Hithpael (2) | Nouns: שָׂכָר payment of contract; שָׂכִיר at wages; מַשְׂכֹּרֶת wages; אֶשְׁכָּר gratuity	Freq50to99
-חמם	be hot | Stems: Qal (15), Niphal (1), Piel (1), Hithpael (1) | Nouns: חֹם heat; חַמָּן sun; חַמָּה heat; חָם hot	Freq50to99
-חמס	be violent | Stems: Qal (7), Niphal (1) | Nouns: חָמָס violence; תַּחְמָס species of unclean bird	Freq50to99
-נטע	strike | Stems: Qal (46), Niphal (1) | Nouns: מַטָּע planted; נֶטַע plant; נָטִיעַ plant	Freq50to99
-מנה	weigh out | Stems: Qal (12), Niphal (6), Piel (9), Pual (1) | Nouns: מָנָה weighed; מְנָת allotment; מָנֶה fixed weight; מֹנֶה weighed out	Freq50to99
-בלע	make away with | Stems: Qal (10), Niphal (2), Piel (15), Pual (3), Hithpael (1) | Nouns: בֶּלַע gulp; בַּלְעִי Belaite	Freq50to99
-הום	make an uproar | Stems: Qal (36), Niphal (3), Hiphil (2) | Nouns: מְהוּמָה confusion; הֵם abundance; הֶמְיָה sound	Freq50to99
-כלם	wound | Stems: Niphal (26), Hiphil (5), Hophal (2) | Nouns: כְּלִמָּה disgrace; כְּלִמּוּת disgrace	Freq50to99
-פוץ	dash | Stems: Qal (12), Niphal (15), Hiphil (21), Piel (1), Hithpael (1) | Nouns: מֵפִיץ a breaker; תְּפוֹצָה dispersal	Freq50to99
-פרש	break | Stems: Qal (54), Niphal (1), Piel (8) | Nouns: מִפְרָשׂ expansion	Freq50to99
-פסח	hop | Stems: Qal (5), Niphal (1), Piel (1) | Nouns: פֶּסַח pretermission; פִּסֵּחַ lame	Freq50to99
-צרע	scourge | Stems: Qal (5), Pual (15) | Nouns: צָרַעַת leprosy; צִרְעָה wasp	Freq50to99
-קדים	fore	Freq50to99
-אלוף	familiar	Freq50to99
-ארר	execrate | Stems: Qal (49), Niphal (1), Hophal (1), Piel (6) | Nouns: מְאֵרָה execration	Freq50to99
-טהור	pure	Freq50to99
-פתל	twine | Stems: Niphal (3), Hithpael (2) | Nouns: פָּתִיל twine; נַפְתּוּל wrestled	Freq50to99
-סמל	likeness | Nouns: שִׂמְלָה dress; שַׂלְמָה dress	Freq50to99
-בור	bore | Stems: Qal (1) | Nouns: בּוֹר hole	Freq50to99
-גדע	fell | Stems: Qal (5), Niphal (7), Piel (7), Pual (1)	Freq50to99
-זרק	sprinkle | Stems: Qal (30), Pual (2) | Nouns: מִזְרָק bowl	Freq50to99
-כתף	shoulder	Freq50to99
-מגן	shield | Stems: Piel (1) | Nouns: מְגִנָּה covering	Freq50to99
-נצר	guard | Stems: Qal (44) | Nouns: נֵצֶר shoot	Freq50to99
-רצון	delight	Freq50to99
-בוס	trample | Stems: Qal (6), Hophal (1), Piel (2), Hithpael (2) | Nouns: יְבוּסִי Jebusite; מְבוּסָה trampling; תְּבוּסָה treading down	Freq50to99
-חמד	delight in | Stems: Qal (11), Niphal (4), Piel (1) | Nouns: חֶמְדָּה delight; מַחְמָד delightful; חֶמֶד delight	Freq50to99
-יער	copse of bushes | Nouns: יַעֲרָה (honey-) comb, forest.	Freq50to99
-כשל	totter | Stems: Qal (29), Niphal (21), Hiphil (5), Hophal (1) | Nouns: מַכְשֵׁלָה stumbling-block; כַּשִּׁיל feller; כִּשָּׁלוֹן tottering	Freq50to99
-מד	extent | Nouns: מִדָּה extension	Freq50to99
-מרר	be | Stems: Qal (6), Hiphil (5), Piel (2), Hithpael (2) | Nouns: מְרָרִי Merarite; תַּמְרוּר bitterness; מַמְרֹר bitterness; מַר drop	Freq50to99
-שאול	hades	Freq50to99
-חלום	dream	Freq50to99
-יאר	channel	Freq50to99
-מלל	speak | Stems: Qal (1), Piel (4) | Nouns: מִלָּה word; מִלָּה word; מְלִילָה head of grain	Freq50to99
-נחש	hiss | Stems: Niphal (1), Piel (10) | Nouns: נָחָשׁ snake; נַחַשׁ incantation; נָחוּשׁ coppery	Freq50to99
-נסך	libation | Nouns: נְסַךְ libation	Freq50to99
-סלע	rock | Nouns: סׇלְעָם kind of locust	Freq50to99
-קצף	crack | Stems: Qal (29), Hiphil (5), Hithpael (1) | Nouns: קֶצֶף splinter; קְצָפָה fragment	Freq50to99
-שפל	depress | Stems: Qal (11), Hiphil (15) | Nouns: שְׁפֵלָה Lowland; שָׁפָל depressed; שֶׁפֶל humble; שִׁפְלָה depression	Freq50to99
-תפש	manipulate | Stems: Qal (32), Niphal (15), Piel (1)	Freq50to99
-אולי	if not | Nouns: אוּלָם however	Freq50to99
-איב	to hate | Stems: Qal (1) | Nouns: אֵיבָה hostility	Freq50to99
-יצהר	oil | Stems: Hiphil (1) | Nouns: צֹהַר light; יִצְהָרִי Jitsharite	Freq50to99
-נסך	pour | Stems: Qal (8), Niphal (1), Hiphil (14), Hophal (2), Piel (2) | Nouns: מַסֵּכָה pouring; נְסִיךְ poured; מַסֶּכֶת expanded	Freq50to99
-ארב	lurk | Stems: Qal (38), Hiphil (1), Piel (2) | Nouns: אֲרֻבָּה lattice; מַאֲרָב ambuscade; אֶרֶב ambuscade; אֹרֶב wait.	Freq50to99
-טבח	slaughter | Stems: Qal (10) | Nouns: טַבָּח butcher; טֶבַח slaughtered; טִבְחָה flesh, slaughter.; טַבָּח lifeguardsman	Freq50to99
-יפה	be bright | Stems: Qal (5), Piel (1), Hithpael (1) | Nouns: יָפֶה beautiful; יֳפִי beauty; יְפֵה־פִיָּה very beautiful	Freq50to99
-ירך	thigh | Nouns: יְרֵכָה flank; יַרְכָא thigh	Freq50to99
-ברא	create | Stems: Qal (30), Niphal (5), Piel (4) | Nouns: בָּרִיא fatted; בְּרִיאָה creation	Freq50to99
-חבל	rope	Freq50to99
-קשר	tie | Stems: Qal (31), Niphal (2), Piel (1), Pual (1), Hithpael (3) | Nouns: קֶשֶׁר alliance; קִשֻּׁר girdle	Freq50to99
-גנב	thieve | Stems: Qal (27), Niphal (1), Piel (2), Pual (4), Hithpael (2) | Nouns: גַּנָּב stealer; גְּנֵבָה stealing	Freq50to99
-הדר	swell | Stems: Qal (4), Niphal (1), Piel (2), Hithpael (1) | Nouns: הָדָר magnificence; הֲדָרָה decoration; הֲדַר magnificence; הֶדֶר honour	Freq50to99
-חדל	be flabby | Stems: Qal (57) | Nouns: חֶדֶל rest; חָדֵל vacant	Freq50to99
-טבע	sink | Stems: Qal (6), Hophal (3), Pual (1) | Nouns: טַבַּעַת seal	Freq50to99
-ריב	contest	Freq50to99
-חלם	bind firmly | Stems: Qal (25), Hiphil (1) | Nouns: חֵלֶם dream; חַלָּמִישׁ flint; נֶחֱלָמִי Nechelamite; אַחְלָמָה amethyst	Freq50to99
-אמץ	be alert | Stems: Qal (16), Hiphil (2), Piel (13), Hithpael (4) | Nouns: אָמֹץ strong; אֹמֶץ strength; אַמְצָה force; מַאֲמָץ strength	Freq50to99
-בתולה	virgin | Nouns: בְּתוּלִים virginity	Freq50to99
-גיא	gorge	Freq50to99
-עלם	veil | Stems: Niphal (11), Hiphil (10), Hithpael (6) | Nouns: עַלְמָה lass; עָלוּם adolescence; עֲלָמוֹת girls; תַּעֲלֻמָּה secret	Freq50to99
-נדר	promise	Freq50to99
-פסל	carve | Stems: Qal (5) | Nouns: פֶּסֶל idol; פְּסִיל idol	Freq50to99
-פרח	break forth | Stems: Qal (31), Hiphil (5) | Nouns: פֶּרַח calyx; אֶפְרֹחַ brood; פִּרְחַח progeny	Freq50to99
-דבק	impinge | Stems: Qal (35), Hiphil (10), Hophal (1), Pual (2) | Nouns: דֶּבֶק joint; דָּבֵק adhering	Freq50to99
-יכח	be right | Stems: Niphal (3), Hiphil (45), Hophal (1), Hithpael (1)	Freq50to99
-שמאול	dark | Stems: Hiphil (5)	Freq50to99
-טרף	pluck off | Stems: Qal (20), Niphal (2), Pual (2) | Nouns: טֶרֶף torn; טְרֵפָה prey; טָרָף recently torn off	Freq50to99
-כלל	complete | Stems: Qal (2), Shaphel (3) | Nouns: כַּלָּה bride; כָּלִיל complete; מִכְלוֹל perfection; כְּלוּלָה bridehood	Freq50to99
-לאה	tire | Stems: Qal (3), Niphal (10), Hiphil (3) | Nouns: תְּלָאָה distress	Freq50to99
-נדד	wave | Stems: Qal (21), Hophal (2), Piel (1), Hithpael (1) | Nouns: נִדָּה rejection; נָדֻד tossed	Freq50to99
-עשק	press upon | Stems: Qal (28), Pual (1), Hithpael (1) | Nouns: עֹשֶׁק injury; מַעֲשַׁקָּה oppression; עָשׁוֹק oppressive; עֵשֶׂק strife	Freq50to99
-עמר	heap | Stems: Piel (1), Hithpael (2) | Nouns: עֹמֶר heap; עָמִיר bunch of grain	Freq50to99
-דבש	honey | Nouns: דַּבֶּשֶׁת mass	Freq50to99
-ירע	be broken | Stems: Qal (2) | Nouns: יְרִיעָה hanging	Freq50to99
-סלל	mound | Stems: Qal (9), Hithpael (1) | Nouns: מְסִלָּה thoroughfare; סַל willow twig; מַסְלוּל thoroughfare; סִלָּא Silla	Freq50to99
-שחל	lion | Nouns: תְּכֵלֶת mussel; שְׁחֵלֶת scale	Freq50to99
-שממה	devastation	Freq50to99
-תשע	nine | Nouns: תִּשְׁעִים ninety	Freq50to99
-כזב	lie | Stems: Qal (1), Niphal (2), Piel (11) | Nouns: כָּזָב falsehood; אַכְזָב falsehood	Freq50to99
-אמה	maid-servant	Freq50to99
-דמה	compare | Stems: Qal (14), Niphal (1), Piel (10), Hithpael (1) | Nouns: דְּמוּת resemblance; דִּמְיוֹן resemblance	Freq50to99
-חלץ	pull off | Stems: Qal (22), Niphal (5), Hiphil (1), Piel (4) | Nouns: חָלָץ loins; מַחֲלָצָה mantle	Freq50to99
-קטן	abbreviated | Stems: Qal (3), Hiphil (1) | Nouns: קֹטֶן pettiness	Freq50to99
-מגדל	tower | Nouns: מִגְדַּל־עֵדֶר Migdal-Eder	Freq50to99
-נדח	off | Stems: Qal (1), Niphal (21), Hiphil (10), Hophal (1), Pual (1) | Nouns: מַדּוּחַ seduction	Freq50to99
-מוט	waver | Stems: Qal (10), Niphal (23), Hiphil (1), Hithpael (1) | Nouns: מוֹטָה pole; מוֹט wavering	Freq50to99
-מחשבה	contrivance	Freq50to99
-מטר	rain | Stems: Niphal (1), Hiphil (16) | Nouns: מָטַר rain; מַטְרִי Matri	Freq50to99
-עדר	arrange | Stems: Qal (2), Niphal (7), Piel (1) | Nouns: עֵדֶר arrangement; מַעְדֵּר hoe	Freq50to99
-שקק	course | Stems: Qal (5) | Nouns: שַׂק mesh; מַשָּׁק traversing	Freq50to99
-אפוד	girdle | Stems: Qal (2) | Nouns: אֵפֻדָּה girding	Freq50to99
-גבה	soar | Stems: Qal (24), Hiphil (9) | Nouns: גֹּבַהּ elation; גַּבְהוּת pride; יׇגְבְּהָה Jogbehah	Freq50to99
-גפן	vine	Freq50to99
-זוב	flow | Stems: Qal (42) | Nouns: זוֹב seminal	Freq50to99
-חנך	narrow | Stems: Qal (3), Niphal (1), Piel (1) | Nouns: חֵךְ palate; חֲנֻכָּה initiation; חֲנֻכָּא consecration; חָנִיךְ initiated	Freq50to99
-עצב	carve | Stems: Qal (1), Niphal (7), Piel (2), Hithpael (2) | Nouns: עָצָב image; עֶצֶב earthen vessel; עַצֶּבֶת idol; עֹצֶב idol	Freq50to99
-עול	evil | Nouns: עַלְוָה moral perverseness	Freq50to99
-צרר	cramp | Stems: Qal (29), Hiphil (10), Pual (1)	Freq50to99
-שוא	evil	Freq50to99
-רגז	quiver | Stems: Qal (28), Hiphil (6) | Nouns: רֹגֶז commotion; אַרְגָּז box; רְגַז violent anger; רַגָּז timid	Freq50to99
-גיל	spin | Stems: Qal (44) | Nouns: גִּיל revolution	Freq50to99
-חרד	shudder | Stems: Qal (23), Hiphil (16) | Nouns: חֲרָדָה fear; חָרֵד fearful; חֲרֹדִי Charodite	Freq50to99
-חתן	give | Stems: Qal (10), Hithpael (11) | Nouns: חָתָן relative by marriage; חֲתֻנָּה wedding	Freq50to99
-כעס	trouble | Stems: Qal (6), Hiphil (21)	Freq50to99
-פגע	impinge | Stems: Qal (34), Hiphil (6) | Nouns: פֶּגַע impact; מִפְגָּע object of attack	Freq50to99
-מצץ	suck | Stems: Qal (1) | Nouns: מַצָּה sweetness	Freq50to99
-פרר	break up | Stems: Qal (1), Hiphil (39), Hophal (3), Piel (1), Hithpael (1) | Nouns: פָּרוּר a skillet	Freq50to99
-צור	cramp | Stems: Qal (35), Hiphil (1), Hithpael (1) | Nouns: צִיר hinge; צֹר stone; צִיר form	Freq50to99
-שרש	root | Stems: Hiphil (3), Piel (2), Pual (2) | Nouns: שֶׁרֶשׁ root; שַׁרְשְׁרָה chain; שֹׁרֶשׁ root.; שַׁרְשָׁה a chain	Freq50to99
-בצר	gather grapes | Stems: Qal (13), Niphal (2), Piel (2) | Nouns: בָּצִיר clipped; בֶּצֶר clipping; בַּצֹּרֶת restraint; בׇּצְרָה enclosure	Freq50to99
-לבן	be | Stems: Qal (3), Hiphil (4), Hithpael (1) | Nouns: לְבֵנָה brick; לְבָנָה white; מַלְבֵּן a brickkiln; לִבְנֶה storax	Freq50to99
-מאום	blemish | Nouns: מְאוּמָה speck	Freq50to99
-עצר	inclose | Stems: Qal (33), Niphal (10) | Nouns: עֹצֶר closure; מַעְצוֹר hindrance; מַעְצָר control; עֶצֶר restraint	Freq50to99
-סלת	flour	Freq50to99
-איתן	permanence | Nouns: אָתוֹן female donkey	Freq50to99
-בדל	divide | Stems: Niphal (10), Hiphil (27) | Nouns: בְּדִיל alloy; בְּדֹלַח something in pieces; בָּדָל part; מִבְדָּלָה separation	Freq50to99
-יצק	pour out | Stems: Qal (38), Hiphil (2), Hophal (7) | Nouns: יְצֻקָה poured out	Freq50to99
-מדד	stretch | Stems: Qal (40), Niphal (3), Piel (4), Hithpael (1) | Nouns: מֵמַד measure	Freq50to99
-קלע	sling | Stems: Qal (5), Piel (1) | Nouns: קֶלַע sling; מִקְלַעַת sculpture; קַלָּע slinger	Freq50to99
-צלע	rib | Stems: Qal (4), Piel (2) | Nouns: צֶלַע limping	Freq50to99
-צפור	little bird | Nouns: צְפַר bird	Freq50to99
-תעה	vacillate | Stems: Qal (27), Niphal (2), Hiphil (13) | Nouns: תּוֹעָה mistake	Freq50to99
-אלה	adjure | Stems: Qal (6), Hiphil (1) | Nouns: אָלָה imprecation; אַלְיָה stout; אַלְלַי alas!; תַּאֲלָה imprecation	Freq50to99
-אפס	disappear | Stems: Qal (5) | Nouns: אֶפֶס cessation	Freq50to99
-חפר	pry into | Stems: Qal (32), Hiphil (4) | Nouns: חֲפֹר burrower; חֶפְרִי Chephrite	Freq50to99
-יחל	wait | Stems: Niphal (2), Hiphil (15), Piel (22) | Nouns: תּוֹחֶלֶת expectation; יָחִיל expectant; יַחְלְאֵלִי Jachleelite	Freq50to99
-סמך	prop | Stems: Qal (35), Niphal (6) | Nouns: שְׂמִיכָה run	Freq50to99
-קון	strike a musical note | Stems: Piel (7) | Nouns: קִינָה dirge; קַיִן lance	Freq50to99
-כבס	trample | Stems: Qal (3), Piel (42), Pual (2), u (2)	Freq50to99
-עבור	crossed | Nouns: עָבוּר passed	Freq50to99
-קרוב	near	Freq50to99
-קרש	slab	Freq50to99
-רחל	ewe	Freq50to99
-תולע	maggot | Stems: Pual (1)	Freq50to99
-תפארה	ornament	Freq50to99
-גרר	drag off roughly | Stems: Qal (1), Pual (1), Hithpael (2) | Nouns: גֵּרָה cud; גֵּרָה gerah; גַּרְגְּרוֹת throat; מְגֵרָה saw	Freq50to99
-חמר	boil | Stems: Qal (2), Piel (3) | Nouns: חֹמֶר bubbling; חֲמַר wine; חֵמָר bitumen; חֲמֹרָה heap	Freq50to99
-יצב	place | Stems: Piel (1), Hithpael (47) | Nouns: יַצִּיב fixed	Freq50to99
-לשכה	room | Nouns: נִשְׁכָּה cell	Freq50to99
-נשג	reach | Stems: Hiphil (32)	Freq50to99
-עזרה	aid	Freq50to99
-קשב	prick up | Stems: Qal (1), Hiphil (35) | Nouns: קֶשֶׁב hearkening	Freq50to99
-רפה	slacken | Stems: Qal (14), Niphal (3), Hiphil (12), Piel (5), Hithpael (3) | Nouns: רָפֶה slack; רִפְיוֹן slackness; רֶפֶת stall for cattle	Freq50to99
+אסר	Verbs: Qal/she has bound (45), Niphal/will you be bound (5), Pual/they have been captured (2) | Nominals: אָסִיר [Noun (m)] bound; אַסִּיר [Noun (m)] prisoner.; אֵסוּר [Noun (m)] bond; אֱסוּר [Noun (m)] band, imprisonment.	Freq50to99
+קדם	Nominals: קִדְמָה [Noun (f)] forward	Freq50to99
+שרת	Verbs: Piel/serve (64) | Nominals: שָׁרֵת [Noun (m)] service	Freq50to99
+צור	Nominals: צוּרָה [Noun (f)] rock; טוּר [Noun (m)] rock	Freq50to99
+מלט	Verbs: Niphal/he escaped (59), Hiphil/he will deliver [it] (2), Piel/save (23), Hithpael/they escape (1) | Nominals: מֶלֶט [Noun (m)] cement	Freq50to99
+קדוש		Freq50to99
+יבל	Verbs: Hiphil/they will bring (5), Hophal/I was brought (10) | Nominals: תֵּבֵל [Noun (f)] earth; יְבוּל [Noun (m)] produce; מַבּוּל [Noun (m)] deluge; בּוּל [Noun (m)] produce	Freq50to99
+סתר	Verbs: Niphal/it is hidden (30), Hiphil/you hide (36), Piel/hide (1), Pual/hidden (1), Hithpael/hiding himself (5) | Nominals: מִסְתָּר [Noun (m)] concealer; מִסְתּוֹר [Noun (m)] refuge; מַסְתֵּר [Noun (m)] hider	Freq50to99
+פרץ	Verbs: Qal/he urged (44), Niphal/[was] spread out (1), Pual/[has been] broken down (1), Hithpael/who/ break away (1) | Nominals: פֶּרֶץ [Noun (m)] break; פְּרִיץ [Noun (m)] violent; מִפְרָץ [Noun (m)] break; פַּרְצִי [Adj] Partsite	Freq50to99
+לון	Verbs: Qal/spend [the] night (68), Niphal/they grumbled (5), Hiphil/[are] grumbling (9), Hithpael/it may pass [the] night (2) | Nominals: מָלוֹן [Noun (m)] lodgment; מְלוּנָה [Noun (f)] hut	Freq50to99
+יסר	Verbs: Qal/an instructor (3), Niphal/you will let yourself be disciplined (5), Piel/he disciplined (17), Nithpael/they will be warned (1) | Nominals: מוּסָר [Noun (m)] chastisement; יִסּוֹר [Noun (m)] reprover; מֹסָר [Noun (m)] admonition	Freq50to99
+קרן	Verbs: Qal/it shone (3), Hiphil/having horns (1) | Nominals: קֶרֶן [Noun (f)] horn; קֶרֶן [Noun (f)] horn	Freq50to99
+און	Nominals: אוֹן [Noun (m)] ability; תְּאֻן [Noun (m)] naughtiness	Freq50to99
+ערה	Verbs: Niphal/it will be poured out (1), Hiphil/he has made naked (3), Piel/lay bare (9), Hithpael/spreading himself (2) | Nominals: עֶרְוָה [Noun (f)] nudity; תַּעַר [Noun] knife; עֶרְיָה [Noun (f)] nudity; מַעֲרֶה [Noun (m)] nude place	Freq50to99
+נבט	Verbs: Hiphil/look (61), Piel/someone will look (1)	Freq50to99
+דג	Verbs: Qal/may they multiply (1) | Nominals: דָּגָן [Noun (m)] increase; דָּגָה [Noun (f)] fish.; דַּיָּג [Noun (m)] fisherman; דַּוָּג [Noun (m)] fisherman	Freq50to99
+ירה	Verbs: Qal/shoot (14), Niphal/he will be shot (1), Hiphil/archers (33), Hophal/he will be given water (1) | Nominals: מוֹרֶה [Noun (m)] archer; יוֹרֶה [Noun (m)] sprinkling	Freq50to99
+כרוב		Freq50to99
+סכך	Verbs: Qal/covering (11), Hiphil/he covered (7), Piel/he provoked (2) | Nominals: סֻכָּה [Noun (f)] hut; מָסָךְ [Noun (m)] cover; סֹךְ [Noun (m)] hut; מֵיסָךְ [Noun (m)] portico	Freq50to99
+מרה	Verbs: Qal/rebellious (23), Hiphil/they rebelled (20) | Nominals: מְרִי [Noun (m)] bitterness	Freq50to99
+קרע	Verbs: Qal/he tore (52), Niphal/it will be torn (5) | Nominals: קְעָרָה [Noun (f)] bowl; קַרְקַע [Noun (m)] floor; קֶרַע [Noun (m)] rag	Freq50to99
+ארי	Nominals: אַרְיֵה [Noun (m)] lion.	Freq50to99
+מעל	Verbs: Qal/they acted unfaithfully (35) | Nominals: מְעִיל [Noun (m)] robe; מַעַל [Noun (m)] treachery	Freq50to99
+נדב	Verbs: Qal/it impelled (2), Hithpael/make a contribution (13) | Nominals: נְדָבָה [Noun (f)] spontaneity; נָדִיב [Adj] voluntary; נְדִיבָה [Noun (f)] nobility	Freq50to99
+שמד	Verbs: Niphal/it will be destroyed (12), Hiphil/destroy (44)	Freq50to99
+חרם	Verbs: Qal/[having] a slit nose (1), Hiphil/he totally destroyed (36), Hophal/he will be dedicated to destruction (3) | Nominals: חֶרְמֵשׁ [Noun (m)] sickle	Freq50to99
+כרר	Verbs: Piel/[was] dancing (2) | Nominals: כִּכָּר [Noun (f)] circle; כַּר [Noun (m)] ram; כָּרִי [Adj] life-guardsman; כָּרָה [Noun (f)] meadow	Freq50to99
+שיר		Freq50to99
+נגף	Verbs: Qal/he struck (20), Niphal/they were defeated (23), Hithpael/they will stumble (1) | Nominals: מַגֵּפָה [Noun (f)] pestilence; אַגָּף [Noun (m)] wings of an army; נֶגֶף [Noun (m)] trip	Freq50to99
+אצר	Verbs: Qal/they have stored up (3), Niphal/it will be stored up (1) | Nominals: אוֹצָר [Noun (m)] depository	Freq50to99
+קיר	Verbs: Qal/I have dug (2), Hiphil/as/ keeps cool (2), Piel/a breaking down of (1) | Nominals: קוּר [Noun (m)] trenches	Freq50to99
+שלל	Verbs: Qal/plunder (11), Pual/they were plundered (1), Hithpael/[was] plundered (1) | Nominals: שָׁלָל [Noun (m)] booty	Freq50to99
+המון		Freq50to99
+נכר	Verbs: Niphal/he disguises himself (2), Hiphil/he recognized (25), Piel/they should misconstrue (5), Hithpael/he acted as a stranger (4) | Nominals: נֵכָר [Noun (m)] foreign; מַכָּר [Noun (m)] acquaintance; הַכָּרָה [Noun (f)] respect	Freq50to99
+למד	Verbs: Qal/they will learn (21), Piel/teach (28), Pual/trained of (5) | Nominals: מַלְמָד [Noun (m)] goad; תַּלְמִיד [Noun (m)] pupil	Freq50to99
+עשר	Verbs: Qal/he will take a tenth (4), Hiphil/tithe (14), Piel/fully <tithe> (4), Hithpael/[is one who] enriches himself (1) | Nominals: עֹשֶׁר [Noun (m)] wealth; עָשִׁיר [Noun (m)] rich; עַשְׁתְּרָה [Noun (f)] increase	Freq50to99
+יצר	Verbs: Qal/it was distress (31), Niphal/it was formed (1), Hiphil/they caused distress (1), Hophal/[which] it will be formed (1), Pual/[which] they were ordained (1) | Nominals: יֵצֶר [Noun (m)] form; יָצֻר [Noun (m)] structure; יִצְרִי [Adj] Jitsrite	Freq50to99
+שחט	Verbs: Qal/he will cut [the] throat of (73), Niphal/it has its throat cut (3) | Nominals: שְׁחִיטָה [Noun (f)] slaughter	Freq50to99
+שיר	Verbs: Qal/sing (49), Hophal/it will be sung (1), Piel/singers (37)	Freq50to99
+קוה	Verbs: Qal/[those who] wait for (2), Niphal/let them gather (2), Piel/wait (38) | Nominals: תִּקְוָה [Noun (f)] cord	Freq50to99
+אבה	Verbs: Qal/he was willing (53) | Nominals: אֶבְיוֹן [Adj] destitute; אָבֶה [Noun (f)] longing; אֵבֶה [Noun (m)] the papyrus; אֲבוֹי [inj] want	Freq50to99
+איך	Nominals: הֵיךְ [Adj] how?; אֵיכֹה [Adj] where	Freq50to99
+פלא	Verbs: Niphal/wonders (29), Hiphil/he will make hard (11), Piel/fulfill (3), Hithpael/you show yourself wonderful (1) | Nominals: פֶּלֶא [Noun (m)] miracle; מִפְלָאָה [Noun (f)] miracle	Freq50to99
+שקה	Verbs: Hiphil/cup bearers (38), Pual/it is watered (1) | Nominals: מַשְׁקֶה [Noun (m)] causing to drink; שִׁקּוּי [Noun (m)] beverage; שֹׁקֶת [Noun (f)] trough; שִׁקֻּו [Noun (m)] draught	Freq50to99
+קנא	Verbs: Hiphil/which/ provokes to jealousy (1), Piel/you be jealous (26) | Nominals: קִנְאָה [Noun (f)] jealousy; קַנָּא [Adj] jealous; קַנּוֹא [Adj] jealous	Freq50to99
+כסל	Verbs: Qal/they may be foolish (1), Niphal/you have acted foolishly (4), Hiphil/you have behaved foolishly (2), Piel/make foolish (2) | Nominals: כְּסִיל [Noun (m)] fat; כֶּסֶל [Noun (m)] fatness; סָכָל [Noun (m)] silly; כְּסִיל [Noun (m)] constellation	Freq50to99
+קצץ	Verbs: Qal/[those who] are cut off of (4), Piel/they cut off (10), Pual/cut off (1) | Nominals: קֵץ [Noun (m)] extremity	Freq50to99
+אלם	Verbs: Niphal/I was dumb (8), Piel/[were] binding (1) | Nominals: אַלְמָנָה [Noun (f)] widow; אִלֵּם [Adj] speechless; אַלְמָנוּת [Noun (f)] widow; אַלְמֹנִי [Adj] some	Freq50to99
+רוע	Verbs: Hiphil/shout for joy (40), Pual/anything will be shouted (1), Hithpael/shout (3) | Nominals: תְּרוּעָה [Noun (f)] clamor; רֵעַ [Noun] crash	Freq50to99
+קרבן		Freq50to99
+אבל	Verbs: Qal/it has dried up (18), Hiphil/he has caused to mourn (2), Hithpael/he mourned (18) | Nominals: אֵבֶל [Noun (m)] lamentation; אֲבָל [Adj] nay; אָבֵל [Adj] lamenting	Freq50to99
+הבל		Freq50to99
+נגן	Verbs: Qal/musicians (1), Piel/to play (14) | Nominals: גִּתִּי [Adj] Gittite; גַּת [Noun (f)] press; אַגָּן [Noun (m)] bowl; גִּתִּית [Noun (f)] Gittite harp	Freq50to99
+אצל	Verbs: Qal/have you reserved (4), Niphal/it was shortened (1) | Nominals: אֵצֶל [Noun (m)] side; אַצִּיל [Noun (f)] joint of the hand; אָצִיל [Noun (m)] extremity	Freq50to99
+שמנה		Freq50to99
+בהל	Verbs: Niphal/they were terrified (23), Hiphil/they made haste (1), Piel/you be hasty (4), Pual/hastened (2), u/in/ haste (3) | Nominals: בַּלָּהָה [Noun (f)] alarm; בֶּהָלָה [Noun (f)] panic; בְּהִילוּ [Adj] hurry	Freq50to99
+נוף	Verbs: Qal/I have sprinkled (1), Hiphil/he will wave (29), Hophal/it was waved (1), Piel/he will shake (1) | Nominals: תְּנוּפָה [Noun (f)] brandishing; נֹפֶת [Noun (m)] dripping; נֶפֶת [Noun (f)] height; נָפָה [Noun (f)] sieve	Freq50to99
+שכל	Verbs: Qal/he was successful (1), Hiphil/insight (57), Piel/he laid cross-wise (1) | Nominals: מַשְׂכִּיל [Noun (m)] instructive; שׇׂכְלְתָנוּ [Noun (f)] intelligence	Freq50to99
+נקם	Verbs: Qal/avenge (12), Niphal/I will avenge myself (12), Hophal/he will be avenged (3), Piel/I will avenge (2), Hithpael/will it avenge itself (5) | Nominals: נְקָמָה [Noun (f)] avengement; נָקָם [Noun (m)] revenge	Freq50to99
+סלה	Verbs: Qal/you reject (1), Piel/he has thrown away (1), Pual/it will be paid (2) | Nominals: סַלְסִלָּה [Noun (f)] twig	Freq50to99
+ארח	Verbs: Qal/who/ was traveling (5) | Nominals: אֹרַח [Noun (m)] road; אֲרֻחָה [Noun (f)] ration of food; אֹרַח [Noun (m)] road; אֹרְחָה [Noun (f)] caravan	Freq50to99
+בזז	Verbs: Qal/they plundered (34), Niphal/certainly <to be plundered> (3), Pual/they will be plundered (1) | Nominals: בַּז [Noun (m)] plunder; בִּזָּה [Noun (f)] booty	Freq50to99
+גורל		Freq50to99
+לבן		Freq50to99
+תקע	Verbs: Qal/they gave a blast (61), Niphal/will he strike himself (3) | Nominals: תָּקוֹעַ [Noun (m)] trumpet; תֵּקַע [Noun (m)] blast of a trumpet	Freq50to99
+מאס	Verbs: Qal/refuse (57), Niphal/it has run (5) | Nominals: מָאוֹס [Noun (m)] refuse	Freq50to99
+קבר		Freq50to99
+שבר	Verbs: Qal/buy grain (16), Hiphil/[was] the/ [one who] sold grain (4) | Nominals: שֶׁבֶר [Noun (m)] grain	Freq50to99
+תרומה	Nominals: תְּרוּמִיָּה [Noun (f)] sacrificial offering	Freq50to99
+בקע	Verbs: Qal/he split open (12), Niphal/they were split open (15), Hiphil/break through (1), Hophal/it was broken into (1), Piel/he cut (11), Pual/split (3), Hithpael/they have split (2) | Nominals: בִּקְעָה [Noun (f)] split; בְּקִיעַ [Noun (m)] fissure; בֶּקַע [Noun (m)] section; בִּקְעָא [Noun (f)] plain.	Freq50to99
+רחק	Verbs: Qal/they are distant (29), Hiphil/put far away (20), Piel/he will send far away (4) | Nominals: מֶרְחָק [Noun (m)] remoteness; רָחֵק [Adj] remote	Freq50to99
+פחד	Verbs: Qal/they were afraid (22), Hiphil/it caused to tremble (1), Piel/[who] fears (2) | Nominals: פַּחַד [Noun (m)] alarm; פַּחַד [Noun (m)] testicle; פַּחְדָּה [Noun (f)] alarm	Freq50to99
+צעק	Verbs: Qal/they cried out (47), Niphal/they were summoned (6), Hiphil/he called together (1), Piel/[was] crying out (1) | Nominals: צַעֲקָה [Noun (f)] shriek	Freq50to99
+רחץ	Verbs: Qal/he will wash (68), Pual/it has been washed (2), Hithpael/I washed myself (1) | Nominals: רַחַץ [Noun (m)] bath; רַחְצָה [Noun (f)] bathing place	Freq50to99
+בטן	Nominals: בֹּטֶן [Noun (m)] pistachio-nut	Freq50to99
+פדה	Verbs: Qal/you will redeem (37), Niphal/she had been released (3), Hophal/certainly <to be released> (1) | Nominals: פָּדוּי [Noun (m)] ransom	Freq50to99
+כלב	Nominals: כְּלוּב [Noun (m)] bird-trap	Freq50to99
+מקדש		Freq50to99
+עמל	Verbs: Qal/that/ I have toiled (11) | Nominals: עָמָל [Noun] toil; עָמֵל [Noun (m)] toiling	Freq50to99
+רצה	Verbs: Qal/I will accept (34), Niphal/it will be accepted (7), Hiphil/it will accept (1), Piel/they will seek [the] favor of (1), Hithpael/will he make himself acceptable (1)	Freq50to99
+ארז	Nominals: אֶרֶז [Noun (m)] cedar; אַרְזָה [Noun (f)] cedar wainscoating	Freq50to99
+פרש	Verbs: Qal/decide (1), Niphal/separated (1), Hiphil/it will sting (1), Piel/he spreads (1), Pual/it had been decided (2) | Nominals: פָּרָשׁ [Noun (m)] steed; פֶּרֶשׁ [Noun (m)] excrement; פָּרָשָׁה [Noun (f)] exposition; פַּרְשְׁדֹן [Noun (m)] crotch	Freq50to99
+צלח	Verbs: Qal/it rushed (25), Hiphil/succeed (39) | Nominals: צַלַּחַת [Noun (f)] advanced; קַלַּחַת [Noun (f)] kettle; צֵלָחָה [Noun (f)] protracted; צְלֹחִית [Noun (f)] prolonged	Freq50to99
+שנן	Verbs: Qal/[are] sharpened (7), Hithpael/I was pierced (1) | Nominals: שֵׁן [Noun (f)] tooth; שְׁנִינָה [Noun (f)] pointed; שֵׁן [Noun] tooth; שֶׁנְהַבִּים [Noun (m)] tooth of elephants	Freq50to99
+אהה	Nominals: הוֹי [inj] oh!; אָח [inj] Oh!; הוֹ [inj] oh!; אֹחַ [Noun (m)] howler	Freq50to99
+זעק	Verbs: Qal/they cried out (57), Niphal/they were called together (6), Hiphil/he summoned (7)	Freq50to99
+עלל	Verbs: Hiphil/bring in (2), Piel/you will glean (10), Pual/it has been done (1), Hithpael/they will deal wantonly (8) | Nominals: מַעֲלָל [Noun (m)] act; עֹלֵלָה [Noun (f)] gleanings; תַּעֲלוּל [Noun (m)] caprice; עֲלִיל [Noun (m)] crucible	Freq50to99
+מתי	Nominals: מַת [Noun (m)] adult	Freq50to99
+חג		Freq50to99
+מדוע		Freq50to99
+נעם	Verbs: Qal/it will be pleasant (8) | Nominals: נָעִים [Adj] delightful; נֹעַם [Noun (m)] agreeableness; נַעֲמָתִי [Adj] Naamathite; מַנְעַם [Noun (m)] delicacy	Freq50to99
+רמה	Verbs: Qal/he has thrown (7), Piel/did you deceive (2), Q/they were thrown (1) | Nominals: מִרְמָה [Noun (f)] fraud; רְמִיָּה [Noun (f)] remissness	Freq50to99
+שופר		Freq50to99
+גנן	Verbs: Qal/I will defend (8) | Nominals: גַּן [Noun] garden; גַּנָּה [Noun (f)] garden; גִּנָּה [Noun (f)] garden.; גּוּנִי [Adj] Gunite	Freq50to99
+יקר	Verbs: Qal/let it be precious (9), Hiphil/make rare (2) | Nominals: יָקָר [Adj] valuable; יְקָר [Noun (m)] value; יְקָר [Noun (m)] glory, honour.; יַקִּיר [Adj] precious	Freq50to99
+קרח	Verbs: Qal/they will make bald (2), Niphal/anyone will make himself bald (1), Hiphil/they will make bald (1), Hophal/[was] made bald (1) | Nominals: קָרַחַת [Noun (f)] bald; קֵרֵחַ [Adj] bald	Freq50to99
+שכר	Verbs: Qal/he hired (15), Niphal/they hire themselves out (1), Hithpael/the/ [one who] earns wages (2) | Nominals: שָׂכָר [Noun (m)] payment of contract; שָׂכִיר [Adj] at wages; מַשְׂכֹּרֶת [Noun (f)] wages; אֶשְׁכָּר [Noun (m)] gratuity	Freq50to99
+חמם	Verbs: Qal/when/ [the] heat of (15), Niphal/who/ inflame yourselves (1), Piel/it keeps [them] warm (1), Hithpael/he warmed himself (1) | Nominals: חֹם [Noun (m)] heat; חַמָּן [Noun (m)] sun; חַמָּה [Noun (f)] heat; חָם [Adj] hot	Freq50to99
+חמס	Verbs: Qal/he will wrong (7), Niphal/they have suffered violence (1) | Nominals: חָמָס [Noun (m)] violence; תַּחְמָס [Noun (m)] species of unclean bird	Freq50to99
+נטע	Verbs: Qal/plant (46), Niphal/they have been planted (1) | Nominals: מַטָּע [Noun (m)] planted; נֶטַע [Noun (m)] plant; נָטִיעַ [Noun (m)] plant	Freq50to99
+מנה	Verbs: Qal/count (12), Niphal/they were numbered (6), Piel/he appointed (9), Pual/[were] appointed (1) | Nominals: מָנָה [Noun (f)] weighed; מְנָת [Noun (f)] allotment; מָנֶה [Noun (m)] fixed weight; מֹנֶה [Noun (m)] weighed out	Freq50to99
+בלע	Verbs: Qal/they swallowed (10), Niphal/they were confused (2), Piel/he has swallowed up (15), Pual/it should be swallowed up (3), Hithpael/it was confused (1) | Nominals: בֶּלַע [Noun (m)] gulp; בַּלְעִי [Adj] Belaite	Freq50to99
+הום	Verbs: Qal/are you in turmoil (36), Niphal/it was excited (3), Hiphil/I am distraught (2) | Nominals: מְהוּמָה [Noun (f)] confusion; הֵם [Noun (m)] abundance; הֶמְיָה [Noun (f)] sound	Freq50to99
+כלם	Verbs: Niphal/humiliated (26), Hiphil/[was one] putting to shame (5), Hophal/we were humiliated (2) | Nominals: כְּלִמָּה [Noun (f)] disgrace; כְּלִמּוּת [Noun (f)] disgrace	Freq50to99
+פוץ	Verbs: Qal/they may be scattered (12), Niphal/they were scattered (15), Hiphil/I will scatter (21), Piel/[which] it shatters (1), Hithpael/they have been shattered (1) | Nominals: מֵפִיץ [Noun (m)] a breaker; תְּפוֹצָה [Noun (f)] dispersal	Freq50to99
+פרש	Verbs: Qal/he spread out (54), Niphal/they will be scattered (1), Piel/when/ scatters (8) | Nominals: מִפְרָשׂ [Noun (m)] expansion	Freq50to99
+פסח	Verbs: Qal/I will pass over (5), Niphal/he became lame (1), Piel/they limped around (1) | Nominals: פֶּסַח [Noun (m)] pretermission; פִּסֵּחַ [Adj] lame	Freq50to99
+צרע	Verbs: Qal/[who] has a serious skin disease (5), Pual/[was] leprous (15) | Nominals: צָרַעַת [Noun (f)] leprosy; צִרְעָה [Noun (f)] wasp	Freq50to99
+קדים		Freq50to99
+אלוף		Freq50to99
+ארר	Verbs: Qal/[is] cursed (49), Niphal/[are] cursed (1), Hophal/he is cursed (1), Piel/which/ bring a curse (6) | Nominals: מְאֵרָה [Noun (f)] execration	Freq50to99
+טהור		Freq50to99
+פתל	Verbs: Niphal/I have wrestled (3), Hithpael/you show yourself twisted (2) | Nominals: פָּתִיל [Noun (m)] twine; נַפְתּוּל [Noun (m)] wrestled	Freq50to99
+סמל	Nominals: שִׂמְלָה [Noun (f)] dress; שַׂלְמָה [Noun (f)] dress	Freq50to99
+בור	Verbs: Qal/to/ make clear (1) | Nominals: בּוֹר [Noun (m)] hole	Freq50to99
+גדע	Verbs: Qal/I cut up (5), Niphal/it has been cut off (7), Piel/he cut down (7), Pual/they have been cut down (1)	Freq50to99
+זרק	Verbs: Qal/he sprinkled (30), Pual/it was sprinkled (2) | Nominals: מִזְרָק [Noun (m)] bowl	Freq50to99
+כתף		Freq50to99
+מגן	Verbs: Piel/he has delivered (1) | Nominals: מְגִנָּה [Noun (f)] covering	Freq50to99
+נצר	Verbs: Qal/watchmen (44) | Nominals: נֵצֶר [Noun (m)] shoot	Freq50to99
+רצון		Freq50to99
+בוס	Verbs: Qal/he will tread down (6), Hophal/trodden down (1), Piel/they have trodden down (2), Hithpael/kicking about (2) | Nominals: יְבוּסִי [Noun (m)] Jebusite; מְבוּסָה [Noun (f)] trampling; תְּבוּסָה [Noun (f)] treading down	Freq50to99
+חמד	Verbs: Qal/you must covet (11), Niphal/desirable (4), Piel/I desired (1) | Nominals: חֶמְדָּה [Noun (f)] delight; מַחְמָד [Noun (m)] delightful; חֶמֶד [Noun (m)] delight	Freq50to99
+יער	Nominals: יַעֲרָה [Noun (f)] (honey-) comb, forest.	Freq50to99
+כשל	Verbs: Qal/they will stumble (29), Niphal/they will stumble (21), Hiphil/to/ overthrow (5), Hophal/overthrown (1) | Nominals: מַכְשֵׁלָה [Noun (f)] stumbling-block; כַּשִּׁיל [Noun (m)] feller; כִּשָּׁלוֹן [Noun (m)] tottering	Freq50to99
+מד	Nominals: מִדָּה [Noun (f)] extension	Freq50to99
+מרר	Verbs: Qal/it is bitter (6), Hiphil/you cause bitterness (5), Piel/they made bitter (2), Hithpael/it was enraged (2) | Nominals: מְרָרִי [Adj] Merarite; תַּמְרוּר [Noun (m)] bitterness; מַמְרֹר [Noun (m)] bitterness; מַר [Noun (m)] drop	Freq50to99
+שאול		Freq50to99
+חלום		Freq50to99
+יאר		Freq50to99
+מלל	Verbs: Qal/[he is] scraping (1), Piel/has he said (4) | Nominals: מִלָּה [Noun (f)] word; מִלָּה [Noun (f)] word; מְלִילָה [Noun (f)] head of grain	Freq50to99
+נחש	Verbs: Niphal/I have learned by divination (1), Piel/indeed <divine> (10) | Nominals: נָחָשׁ [Noun (m)] snake; נַחַשׁ [Noun (m)] incantation; נָחוּשׁ [Adj] coppery	Freq50to99
+נסך	Nominals: נְסַךְ [Noun (m)] libation	Freq50to99
+סלע	Nominals: סׇלְעָם [Noun (m)] kind of locust	Freq50to99
+קצף	Verbs: Qal/he was angry (29), Hiphil/you provoked to anger (5), Hithpael/it will be enraged (1) | Nominals: קֶצֶף [Noun (m)] splinter; קְצָפָה [Noun (f)] fragment	Freq50to99
+שפל	Verbs: Qal/it will become low (11), Hiphil/[he is] bringing low (15) | Nominals: שְׁפֵלָה [Noun (f)] Lowland; שָׁפָל [Adj] depressed; שֶׁפֶל [Noun (m)] humble; שִׁפְלָה [Noun (f)] depression	Freq50to99
+תפש	Verbs: Qal/he seized (32), Niphal/you will be captured (15), Piel/you will grasp (1)	Freq50to99
+אולי	Nominals: אוּלָם [Adj] however	Freq50to99
+איב	Verbs: Qal/I will be an enemy to (1) | Nominals: אֵיבָה [Noun (f)] hostility	Freq50to99
+יצהר	Verbs: Hiphil/they press out oil (1) | Nominals: צֹהַר [Noun (m)] light; יִצְהָרִי [Adj] Jitsharite	Freq50to99
+נסך	Verbs: Qal/you must pour out (8), Niphal/I was installed (1), Hiphil/he poured out (14), Hophal/it will be poured out (2), Piel/he poured out (2) | Nominals: מַסֵּכָה [Noun (f)] pouring; נְסִיךְ [Noun (m)] poured; מַסֶּכֶת [Noun (f)] expanded	Freq50to99
+ארב	Verbs: Qal/an ambush (38), Hiphil/he lay in wait (1), Piel/ambushers (2) | Nominals: אֲרֻבָּה [Noun (f)] lattice; מַאֲרָב [Noun (m)] ambuscade; אֶרֶב [Noun (m)] ambuscade; אֹרֶב [Noun (m)] wait.	Freq50to99
+טבח	Verbs: Qal/slaughter (10) | Nominals: טַבָּח [Noun (m)] butcher; טֶבַח [Noun (m)] slaughtered; טִבְחָה [Noun (f)] flesh, slaughter.; טַבָּח [Noun (m)] lifeguardsman	Freq50to99
+יפה	Verbs: Qal/they are beautiful (5), Piel/you are handsome (1), Hithpael/you beautify yourself (1) | Nominals: יָפֶה [Adj] beautiful; יֳפִי [Noun (m)] beauty; יְפֵה־פִיָּה [Adj] very beautiful	Freq50to99
+ירך	Nominals: יְרֵכָה [Noun (f)] flank; יַרְכָא [Noun (f)] thigh	Freq50to99
+ברא	Verbs: Qal/he created (30), Niphal/they have been created (5), Piel/you will cut down (4) | Nominals: בָּרִיא [Adj] fatted; בְּרִיאָה [Noun (f)] creation	Freq50to99
+חבל		Freq50to99
+קשר	Verbs: Qal/he conspired (31), Niphal/it was bound (2), Piel/¿/ will you bind on (1), Pual/<the>/ vigorous [female] (1), Hithpael/he conspired (3) | Nominals: קֶשֶׁר [Noun (m)] alliance; קִשֻּׁר [Noun (m)] girdle	Freq50to99
+גנב	Verbs: Qal/she stole (27), Niphal/it will be stolen (1), Piel/he stole (2), Pual/certainly <to be stolen> (4), Hithpael/it acted stealthily (2) | Nominals: גַּנָּב [Noun (m)] stealer; גְּנֵבָה [Noun (f)] stealing	Freq50to99
+הדר	Verbs: Qal/you will honor (4), Niphal/they have been honored (1), Piel/I glorified (2), Hithpael/you claim honor (1) | Nominals: הָדָר [Noun (m)] magnificence; הֲדָרָה [Noun (f)] decoration; הֲדַר [Noun (m)] magnificence; הֶדֶר [Noun (m)] honour	Freq50to99
+חדל	Verbs: Qal/cease (57) | Nominals: חֶדֶל [Noun (m)] rest; חָדֵל [Adj] vacant	Freq50to99
+טבע	Verbs: Qal/they have sunk (6), Hophal/were they sunk (3), Pual/they have been sunk (1) | Nominals: טַבַּעַת [Noun (m)] seal	Freq50to99
+ריב		Freq50to99
+חלם	Verbs: Qal/I have dreamed (25), Hiphil/[are] dreaming (1) | Nominals: חֵלֶם [Noun (m)] dream; חַלָּמִישׁ [Noun (m)] flint; נֶחֱלָמִי [Adj] Nechelamite; אַחְלָמָה [Noun (f)] amethyst	Freq50to99
+אמץ	Verbs: Qal/be bold (16), Hiphil/may it show strength (2), Piel/he had made obstinate (13), Hithpael/he proved himself strong (4) | Nominals: אָמֹץ [Adj] strong; אֹמֶץ [Noun (m)] strength; אַמְצָה [Noun (f)] force; מַאֲמָץ [Noun (m)] strength	Freq50to99
+בתולה	Nominals: בְּתוּלִים [Noun (f)] virginity	Freq50to99
+גיא		Freq50to99
+עלם	Verbs: Niphal/it will be hidden (11), Hiphil/certainly <to hide> (10), Hithpael/you will hide yourself (6) | Nominals: עַלְמָה [Noun (f)] lass; עָלוּם [Noun (m)] adolescence; עֲלָמוֹת [Noun (f)] girls; תַּעֲלֻמָּה [Noun (f)] secret	Freq50to99
+נדר		Freq50to99
+פסל	Verbs: Qal/cut out (5) | Nominals: פֶּסֶל [Noun (m)] idol; פְּסִיל [Noun (m)] idol	Freq50to99
+פרח	Verbs: Qal/it has broken out (31), Hiphil/it will show buds (5) | Nominals: פֶּרַח [Noun (m)] calyx; אֶפְרֹחַ [Noun (m)] brood; פִּרְחַח [Noun (m)] progeny	Freq50to99
+דבק	Verbs: Qal/it clings (35), Hiphil/they pursued closely (10), Hophal/[has been] made to cling to (1), Pual/they are joined together (2) | Nominals: דֶּבֶק [Noun (m)] joint; דָּבֵק [Adj] adhering	Freq50to99
+יכח	Verbs: Niphal/<and>/ [you are] vindicated (3), Hiphil/[one who] reproves (45), Hophal/he is chastened (1), Hithpael/he will argue (1)	Freq50to99
+שמאול	Verbs: Hiphil/I will go left (5)	Freq50to99
+טרף	Verbs: Qal/tearing (20), Niphal/it will be torn in pieces (2), Pual/he has been torn to pieces (2) | Nominals: טֶרֶף [Noun (m)] torn; טְרֵפָה [Noun (f)] prey; טָרָף [Adj] recently torn off	Freq50to99
+כלל	Verbs: Qal/they perfected (2), Shaphel/finish (3) | Nominals: כַּלָּה [Noun (f)] bride; כָּלִיל [Adj] complete; מִכְלוֹל [Noun (m)] perfection; כְּלוּלָה [Noun (f)] bridehood	Freq50to99
+לאה	Verbs: Qal/they became weary (3), Niphal/I am weary (10), Hiphil/[is] to make weary (3) | Nominals: תְּלָאָה [Noun (f)] distress	Freq50to99
+נדד	Verbs: Qal/they have fled (21), Hophal/[which is] chased away (2), Piel/it flees (1), Hithpael/they will shudder (1) | Nominals: נִדָּה [Noun (f)] rejection; נָדֻד [Noun (m)] tossed	Freq50to99
+עשק	Verbs: Qal/oppressed (28), Pual/O/ oppressed [one] (1), Hithpael/they quarreled (1) | Nominals: עֹשֶׁק [Noun (m)] injury; מַעֲשַׁקָּה [Noun (f)] oppression; עָשׁוֹק [Noun (m)] oppressive; עֵשֶׂק [Noun] strife	Freq50to99
+עמר	Verbs: Piel/[one who] binds sheaves (1), Hithpael/you will treat as a slave (2) | Nominals: עֹמֶר [Noun (m)] heap; עָמִיר [Noun (m)] bunch of grain	Freq50to99
+דבש	Nominals: דַּבֶּשֶׁת [Noun (f)] mass	Freq50to99
+ירע	Verbs: Qal/is sad (2) | Nominals: יְרִיעָה [Noun (f)] hanging	Freq50to99
+סלל	Verbs: Qal/build up (9), Hithpael/[are] exalting yourself (1) | Nominals: מְסִלָּה [Noun (f)] thoroughfare; סַל [Noun (m)] willow twig; מַסְלוּל [Noun (m)] thoroughfare; סִלָּא [Noun (m)] Silla	Freq50to99
+שחל	Nominals: תְּכֵלֶת [Noun (f)] mussel; שְׁחֵלֶת [Noun (f)] scale	Freq50to99
+שממה		Freq50to99
+תשע	Nominals: תִּשְׁעִים [Noun] ninety	Freq50to99
+כזב	Verbs: Qal/[is] a liar (1), Niphal/it is proved a lie (2), Piel/I will lie (11) | Nominals: כָּזָב [Noun (m)] falsehood; אַכְזָב [Adj] falsehood	Freq50to99
+אמה		Freq50to99
+דמה	Verbs: Qal/be like (14), Niphal/you became like (1), Piel/I intended (10), Hithpael/I will make myself like (1) | Nominals: דְּמוּת [Noun (f)] resemblance; דִּמְיוֹן [Noun (m)] resemblance	Freq50to99
+חלץ	Verbs: Qal/equipped (22), Niphal/be equipped (5), Hiphil/he will strengthen (1), Piel/people will tear out (4) | Nominals: חָלָץ [Noun (f)] loins; מַחֲלָצָה [Noun (f)] mantle	Freq50to99
+קטן	Verbs: Qal/it was small (3), Hiphil/make small (1) | Nominals: קֹטֶן [Noun (m)] pettiness	Freq50to99
+מגדל	Nominals: מִגְדַּל־עֵדֶר [Noun] Migdal-Eder	Freq50to99
+נדח	Verbs: Qal/by/ wielding (1), Niphal/you will be drawn aside (21), Hiphil/they have thrust aside (10), Hophal/hunted (1), Pual/[it is] thrust out (1) | Nominals: מַדּוּחַ [Noun (m)] seduction	Freq50to99
+מוט	Verbs: Qal/it will slip (10), Niphal/it will be shaken (23), Hiphil/they drop (1), Hithpael/it has been shaken (1) | Nominals: מוֹטָה [Noun (f)] pole; מוֹט [Noun (m)] wavering	Freq50to99
+מחשבה		Freq50to99
+מטר	Verbs: Niphal/it was rained on (1), Hiphil/he rained down (16) | Nominals: מָטַר [Noun (m)] rain; מַטְרִי [Adj] Matri	Freq50to99
+עדר	Verbs: Qal/to/ help (2), Niphal/it was missing (7), Piel/they left lacking (1) | Nominals: עֵדֶר [Noun (m)] arrangement; מַעְדֵּר [Noun (m)] hoe	Freq50to99
+שקק	Verbs: Qal/longing (5) | Nominals: שַׂק [Noun (m)] mesh; מַשָּׁק [Noun (m)] traversing	Freq50to99
+אפוד	Verbs: Qal/you will gird [the] ephod (2) | Nominals: אֵפֻדָּה [Noun (f)] girding	Freq50to99
+גבה	Verbs: Qal/it was haughty (24), Hiphil/you will make high (9) | Nominals: גֹּבַהּ [Noun (m)] elation; גַּבְהוּת [Noun (m)] pride; יׇגְבְּהָה [Noun (f)] Jogbehah	Freq50to99
+גפן		Freq50to99
+זוב	Verbs: Qal/flowing of (42) | Nominals: זוֹב [Noun (m)] seminal	Freq50to99
+חנך	Verbs: Qal/they dedicated (3), Niphal/he hanged himself (1), Piel/[was] strangling (1) | Nominals: חֵךְ [Noun (m)] palate; חֲנֻכָּה [Noun (f)] initiation; חֲנֻכָּא [Noun (f)] consecration; חָנִיךְ [Adj] initiated	Freq50to99
+עצב	Verbs: Qal/grieved of (1), Niphal/you be grieved (7), Piel/they twist (2), Hithpael/he was pained (2) | Nominals: עָצָב [Noun (m)] image; עֶצֶב [Noun (m)] earthen vessel; עַצֶּבֶת [Noun (f)] idol; עֹצֶב [Noun (m)] idol	Freq50to99
+עול	Nominals: עַלְוָה [Noun (f)] moral perverseness	Freq50to99
+צרר	Verbs: Qal/it is distress (29), Hiphil/it will lay siege (10), Pual/tied up (1)	Freq50to99
+שוא		Freq50to99
+רגז	Verbs: Qal/they trembled (28), Hiphil/[one who] shakes (6) | Nominals: רֹגֶז [Noun (m)] commotion; אַרְגָּז [Noun (m)] box; רְגַז [Noun (m)] violent anger; רַגָּז [Adj] timid	Freq50to99
+גיל	Verbs: Qal/let it be glad (44) | Nominals: גִּיל [Noun (m)] revolution	Freq50to99
+חרד	Verbs: Qal/they trembled (23), Hiphil/[will be one who] terrifies (16) | Nominals: חֲרָדָה [Noun (f)] fear; חָרֵד [Adj] fearful; חֲרֹדִי [Noun (m)] Charodite	Freq50to99
+חתן	Verbs: Qal/[the] father-in-law of (10), Hithpael/be son-in-law (11) | Nominals: חָתָן [Noun (m)] relative by marriage; חֲתֻנָּה [Noun (f)] wedding	Freq50to99
+כעס	Verbs: Qal/he was angry (6), Hiphil/provoke to anger (21)	Freq50to99
+פגע	Verbs: Qal/it touches (34), Hiphil/in/ an assailant (6) | Nominals: פֶּגַע [Noun (m)] impact; מִפְגָּע [Noun (m)] object of attack	Freq50to99
+מצץ	Verbs: Qal/you may suck (1) | Nominals: מַצָּה [Noun (f)] sweetness	Freq50to99
+פרר	Verbs: Qal/utterly <split> (1), Hiphil/break (39), Hophal/it may be frustrated (3), Piel/you divided (1), Hithpael/it has been split through (1) | Nominals: פָּרוּר [Noun (m)] a skillet	Freq50to99
+צור	Verbs: Qal/they laid siege (35), Hiphil/he will lay siege (1), Hithpael/they acted as ambassadors (1) | Nominals: צִיר [Noun (m)] hinge; צֹר [Noun (m)] stone; צִיר [Noun (m)] form	Freq50to99
+שרש	Verbs: Hiphil/taking root (3), Piel/it will root up (2), Pual/let them be rooted up (2) | Nominals: שֶׁרֶשׁ [Noun (m)] root; שַׁרְשְׁרָה [Noun (f)] chain; שֹׁרֶשׁ [Noun (m)] root.; שַׁרְשָׁה [Noun (f)] a chain	Freq50to99
+בצר	Verbs: Qal/fortified (13), Niphal/it will be withheld (2), Piel/fortify (2) | Nominals: בָּצִיר [Noun (m)] clipped; בֶּצֶר [Noun (m)] clipping; בַּצֹּרֶת [Noun (f)] restraint; בׇּצְרָה [Noun (f)] enclosure	Freq50to99
+לבן	Verbs: Qal/let us make bricks (3), Hiphil/I will become white (4), Hithpael/they may purify themselves (1) | Nominals: לְבֵנָה [Noun (f)] brick; לְבָנָה [Noun (f)] white; מַלְבֵּן [Noun (m)] a brickkiln; לִבְנֶה [Noun (m)] storax	Freq50to99
+מאום	Nominals: מְאוּמָה [x] speck	Freq50to99
+עצר	Verbs: Qal/shut up (33), Niphal/it was restrained (10) | Nominals: עֹצֶר [Noun (m)] closure; מַעְצוֹר [Noun (m)] hindrance; מַעְצָר [Noun (m)] control; עֶצֶר [Noun (m)] restraint	Freq50to99
+סלת		Freq50to99
+איתן	Nominals: אָתוֹן [Noun (f)] female donkey	Freq50to99
+בדל	Verbs: Niphal/they separated themselves (10), Hiphil/he separated (27) | Nominals: בְּדִיל [Noun (m)] alloy; בְּדֹלַח [Noun (m)] something in pieces; בָּדָל [Noun (m)] part; מִבְדָּלָה [Noun (f)] separation	Freq50to99
+יצק	Verbs: Qal/he poured (38), Hiphil/they set down (2), Hophal/it was poured (7) | Nominals: יְצֻקָה [Noun (f)] poured out	Freq50to99
+מדד	Verbs: Qal/he measured (40), Niphal/it will be measured (3), Piel/I will measure off (4), Hithpael/he stretched himself (1) | Nominals: מֵמַד [Noun (m)] measure	Freq50to99
+קלע	Verbs: Qal/he carved (5), Piel/he slung [it] (1) | Nominals: קֶלַע [Noun (m)] sling; מִקְלַעַת [Noun (f)] sculpture; קַלָּע [Noun (m)] slinger	Freq50to99
+צלע	Verbs: Qal/[was] limping (4), Piel/praying (2) | Nominals: צֶלַע [Noun (m)] limping	Freq50to99
+צפור	Nominals: צְפַר [Noun (m)] bird	Freq50to99
+תעה	Verbs: Qal/when/ went astray (27), Niphal/he has been led astray (2), Hiphil/they have misled (13) | Nominals: תּוֹעָה [Noun (f)] mistake	Freq50to99
+אלה	Verbs: Qal/wail (6), Hiphil/he had put under oath (1) | Nominals: אָלָה [Noun (f)] imprecation; אַלְיָה [Noun (f)] stout; אַלְלַי [inj] alas!; תַּאֲלָה [Noun (f)] imprecation	Freq50to99
+אפס	Verbs: Qal/it has come to an end (5) | Nominals: אֶפֶס [Noun (m)] cessation	Freq50to99
+חפר	Verbs: Qal/they dug (32), Hiphil/he may act shamefully (4) | Nominals: חֲפֹר [Noun (f)] burrower; חֶפְרִי [Noun (m)] Chephrite	Freq50to99
+יחל	Verbs: Niphal/he waited (2), Hiphil/I will wait (15), Piel/I hope (22) | Nominals: תּוֹחֶלֶת [Noun (f)] expectation; יָחִיל [Adj] expectant; יַחְלְאֵלִי [Adj] Jachleelite	Freq50to99
+סמך	Verbs: Qal/he will lean (35), Niphal/he will support himself (6) | Nominals: שְׂמִיכָה [Noun (f)] run	Freq50to99
+קון	Verbs: Piel/he lamented (7) | Nominals: קִינָה [Noun (f)] dirge; קַיִן [Noun (m)] lance	Freq50to99
+כבס	Verbs: Qal/[the] washer (3), Piel/he will wash (42), Pual/it will be washed (2), u/was washed out (2)	Freq50to99
+עבור	Nominals: עָבוּר [Noun (m)] passed	Freq50to99
+קרוב		Freq50to99
+קרש		Freq50to99
+רחל		Freq50to99
+תולע	Verbs: Pual/[are] clothed in scarlet (1)	Freq50to99
+תפארה		Freq50to99
+גרר	Verbs: Qal/it ruminates (1), Pual/sawn (1), Hithpael/staying as a sojourner (2) | Nominals: גֵּרָה [Noun (f)] cud; גֵּרָה [Noun (f)] gerah; גַּרְגְּרוֹת [Noun (f)] throat; מְגֵרָה [Noun (f)] saw	Freq50to99
+חמר	Verbs: Qal/they will foam (2), Piel/they are in turmoil (3) | Nominals: חֹמֶר [Noun (m)] bubbling; חֲמַר [Noun (m)] wine; חֵמָר [Noun (m)] bitumen; חֲמֹרָה [Noun (m)] heap	Freq50to99
+יצב	Verbs: Piel/make certain (1), Hithpael/take your stand (47) | Nominals: יַצִּיב [Adj] fixed	Freq50to99
+לשכה	Nominals: נִשְׁכָּה [Noun (f)] cell	Freq50to99
+נשג	Verbs: Hiphil/it will reach (32)	Freq50to99
+עזרה		Freq50to99
+קשב	Verbs: Qal/they will pay attention (1), Hiphil/pay attention (35) | Nominals: קֶשֶׁב [Noun (m)] hearkening	Freq50to99
+רפה	Verbs: Qal/they will drop (14), Niphal/[are] idle (3), Hiphil/refrain (12), Piel/they let drop (5), Hithpael/[be] showing yourself slack (3) | Nominals: רָפֶה [Adj] slack; רִפְיוֹן [Noun (m)] slackness; רֶפֶת [Noun (m)] stall for cattle	Freq50to99

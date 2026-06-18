@@ -55,10 +55,9 @@ class RootCard:
     root_id: str
     consonants: str
     word_form: str
-    gloss: str
     frequency: int
-    verb_stems: List[Tuple[str, int]] = field(default_factory=list)
-    nominals: List[Tuple[str, str, int]] = field(default_factory=list)
+    verb_stems: List[Tuple[str, str, int]] = field(default_factory=list)   # (stem, gloss, count)
+    nominals: List[Tuple[str, str, str, int]] = field(default_factory=list)  # (form, pos, gloss, count)
     has_verb: bool = False
     has_nominal: bool = False
     tags: List[str] = field(default_factory=list)
@@ -174,12 +173,24 @@ def build_root_groups(entries: Dict[str, Entry]) -> Dict[str, List[str]]:
     return groups
 
 
-def load_frequencies(parquet_path: Path) -> Tuple[Dict[str, int], Dict[str, Dict[str, int]]]:
+def clean_gloss(t: object) -> str:
+    """Strip contextual prefixes from a parquet translation to get a core gloss."""
+    if not isinstance(t, str):
+        return ""
+    t = re.sub(r"^(and|or|the|a|to|so|but|for|now|then)/\s*", "", t, flags=re.IGNORECASE)
+    t = t.strip().rstrip(".,;")
+    return t[:45] if len(t) > 45 else t
+
+
+def load_frequencies(
+    parquet_path: Path,
+) -> Tuple[Dict[str, int], Dict[str, Dict[str, int]], Dict[Tuple[str, str], str]]:
     """Load OT Hebrew frequencies from parquet.
 
     Returns:
-        lemma_freq: normalized_id → total count
-        stem_freq: normalized_id → {stem_name → count}
+        lemma_freq:  normalized_id → total count
+        stem_freq:   normalized_id → {stem_name → count}
+        stem_gloss:  (normalized_id, stem_name) → modal gloss
     """
     df = pd.read_parquet(str(parquet_path))
     heb = df[df["language"] == "Hebrew"].copy()
@@ -189,8 +200,6 @@ def load_frequencies(parquet_path: Path) -> Tuple[Dict[str, int], Dict[str, Dict
             return []
         return [nid(m) for m in re.findall(r"\{(H\d+[A-Z]?)\}", s)]
 
-    # Explode each row's Strong's codes
-    heb = heb.copy()
     heb["codes"] = heb["strongs"].apply(extract_codes)
     exploded = heb.explode("codes").dropna(subset=["codes"])
 
@@ -199,18 +208,28 @@ def load_frequencies(parquet_path: Path) -> Tuple[Dict[str, int], Dict[str, Dict
 
     lemma_freq: Dict[str, int] = exploded.groupby("codes").size().to_dict()
 
-    # Stem frequencies (only for verbs)
+    # Stem frequencies and modal glosses (only for verbs)
     verb_rows = exploded[
         (exploded["part_of_speech"] == "Verb") &
         (exploded["stem"].notna()) &
         (exploded["stem"].str.strip() != "")
-    ]
+    ].copy()
+
     stem_groups = verb_rows.groupby(["codes", "stem"]).size()
     stem_freq: Dict[str, Dict[str, int]] = {}
     for (code, stem_name), count in stem_groups.items():
         stem_freq.setdefault(code, {})[stem_name] = int(count)
 
-    return lemma_freq, stem_freq
+    # Modal gloss per (code, stem) — most common cleaned translation
+    verb_rows["clean_t"] = verb_rows["translation"].apply(clean_gloss)
+    verb_noblank = verb_rows[verb_rows["clean_t"].str.len() > 0]
+    stem_gloss: Dict[Tuple[str, str], str] = {}
+    for (code, stem_name), grp in verb_noblank.groupby(["codes", "stem"])["clean_t"]:
+        vc = grp.value_counts()
+        if len(vc) > 0:
+            stem_gloss[(str(code), str(stem_name))] = str(vc.index[0])
+
+    return lemma_freq, stem_freq, stem_gloss
 
 
 def is_proper_name(pos: str) -> bool:
@@ -245,6 +264,7 @@ def build_cards(
     entries: Dict[str, Entry],
     lemma_freq: Dict[str, int],
     stem_freq: Dict[str, Dict[str, int]],
+    stem_gloss: Dict[Tuple[str, str], str],
 ) -> List[RootCard]:
     """Build one RootCard per root, sorted by combined frequency."""
     cards: List[RootCard] = []
@@ -278,17 +298,25 @@ def build_cards(
                 for sname, cnt in stem_freq[mid].items():
                     verb_stem_totals[sname] = verb_stem_totals.get(sname, 0) + cnt
 
-        # Order stems by STEM_ORDER then alphabetical
-        ordered_stems: List[Tuple[str, int]] = []
+        # Order stems by STEM_ORDER then alphabetical; attach modal gloss per stem
+        ordered_stems: List[Tuple[str, str, int]] = []
         for sname in STEM_ORDER:
             if sname in verb_stem_totals:
-                ordered_stems.append((sname, verb_stem_totals[sname]))
+                gloss = next(
+                    (stem_gloss[(mid, sname)] for mid in member_ids if (mid, sname) in stem_gloss),
+                    "",
+                )
+                ordered_stems.append((sname, gloss, verb_stem_totals[sname]))
         for sname, cnt in sorted(verb_stem_totals.items()):
             if sname not in STEM_ORDER:
-                ordered_stems.append((sname, cnt))
+                gloss = next(
+                    (stem_gloss[(mid, sname)] for mid in member_ids if (mid, sname) in stem_gloss),
+                    "",
+                )
+                ordered_stems.append((sname, gloss, cnt))
 
         # Collect nominals (non-verb, non-proper-name, Hebrew, with gloss)
-        nominals: List[Tuple[str, str, int]] = []
+        nominals: List[Tuple[str, str, str, int]] = []
         for mid in member_ids:
             e = entries.get(mid)
             if e is None or mid == root_id:
@@ -300,17 +328,19 @@ def build_cards(
             freq = lemma_freq.get(mid, 0)
             if freq == 0:
                 continue
-            gloss = e.gloss or root_entry.gloss
-            nominals.append((e.word_form, gloss, freq))
+            gloss = e.gloss
+            if not gloss:
+                continue
+            nominals.append((e.word_form, pos_label(e.pos), gloss, freq))
 
-        nominals.sort(key=lambda x: -x[2])
+        nominals.sort(key=lambda x: -x[3])
         nominals = nominals[:8]  # cap at 8 per card for readability
 
         # Build tags
         tags: List[str] = ["Hebrew:Root"]
         if ordered_stems:
             tags.append("Hebrew:POS:Verb")
-            for sname, _ in ordered_stems:
+            for sname, _, _cnt in ordered_stems:
                 tags.append(f"Hebrew:Stem:{sname}")
         if nominals:
             tags.append("Hebrew:POS:Nominal")
@@ -328,7 +358,6 @@ def build_cards(
             root_id=root_id,
             consonants=root_entry.consonants,
             word_form=root_entry.word_form,
-            gloss=root_entry.gloss,
             frequency=total_freq,
             verb_stems=ordered_stems,
             nominals=nominals,
@@ -346,23 +375,27 @@ def render_anki_back(card: RootCard) -> str:
     parts: List[str] = []
     # Root form with vowels
     parts.append(
-        f'<div style="font-size:1.5em;direction:rtl;margin-bottom:4px">'
+        f'<div style="font-size:1.5em;direction:rtl;margin-bottom:8px">'
         f'{card.word_form}</div>'
     )
-    # Gloss
-    if card.gloss:
-        parts.append(f'<div style="font-style:italic;margin-bottom:8px">{card.gloss}</div>')
 
     # Verb stems table
     if card.verb_stems:
         rows = "".join(
-            f"<tr><td>{s}</td><td style='text-align:right'>{c}</td></tr>"
-            for s, c in card.verb_stems
+            f'<tr><td style="padding:2px 8px">Verb</td>'
+            f'<td style="padding:2px 8px">{s}</td>'
+            f'<td style="padding:2px 8px;font-style:italic">{g}</td>'
+            f'<td style="text-align:right;padding:2px 8px">{c}</td></tr>'
+            for s, g, c in card.verb_stems
         )
         parts.append(
             '<table style="border-collapse:collapse;margin-bottom:8px">'
-            '<tr><th style="padding:2px 8px">Stem</th>'
-            '<th style="padding:2px 8px;text-align:right">N</th></tr>'
+            '<tr>'
+            '<th style="padding:2px 8px">POS</th>'
+            '<th style="padding:2px 8px">Stem</th>'
+            '<th style="padding:2px 8px">Gloss</th>'
+            '<th style="padding:2px 8px;text-align:right">N</th>'
+            '</tr>'
             f"{rows}</table>"
         )
 
@@ -370,15 +403,19 @@ def render_anki_back(card: RootCard) -> str:
     if card.nominals:
         rows = "".join(
             f'<tr><td style="direction:rtl;padding:2px 8px">{wf}</td>'
+            f'<td style="padding:2px 8px">{ps}</td>'
             f'<td style="padding:2px 8px;font-style:italic">{gl}</td>'
             f'<td style="text-align:right;padding:2px 8px">{fr}</td></tr>'
-            for wf, gl, fr in card.nominals
+            for wf, ps, gl, fr in card.nominals
         )
         parts.append(
             '<table style="border-collapse:collapse">'
-            '<tr><th style="padding:2px 8px">Form</th>'
+            '<tr>'
+            '<th style="padding:2px 8px">Form</th>'
+            '<th style="padding:2px 8px">POS</th>'
             '<th style="padding:2px 8px">Gloss</th>'
-            '<th style="padding:2px 8px;text-align:right">N</th></tr>'
+            '<th style="padding:2px 8px;text-align:right">N</th>'
+            '</tr>'
             f"{rows}</table>"
         )
 
@@ -388,14 +425,12 @@ def render_anki_back(card: RootCard) -> str:
 def render_fd_back(card: RootCard) -> str:
     """Render plain-text back for Flashcards Deluxe."""
     parts: List[str] = []
-    if card.gloss:
-        parts.append(card.gloss)
     if card.verb_stems:
-        stem_str = ", ".join(f"{s} ({c})" for s, c in card.verb_stems)
-        parts.append(f"Stems: {stem_str}")
+        stem_str = ", ".join(f"{s}/{g} ({c})" if g else f"{s} ({c})" for s, g, c in card.verb_stems)
+        parts.append(f"Verbs: {stem_str}")
     if card.nominals:
-        nom_str = "; ".join(f"{wf} {gl}" for wf, gl, _ in card.nominals[:4])
-        parts.append(f"Nouns: {nom_str}")
+        nom_str = "; ".join(f"{wf} [{ps}] {gl}" for wf, ps, gl, _ in card.nominals[:4])
+        parts.append(f"Nominals: {nom_str}")
     return " | ".join(parts)
 
 
@@ -455,8 +490,8 @@ def write_summary_md(cards: List[RootCard], out_path: Path) -> None:
     max_freq = max(c.frequency for c in cards) if cards else 0
 
     rows = "".join(
-        f"| {i+1} | {c.consonants} | {c.word_form} | {c.gloss[:50]} | {c.frequency} |"
-        f" {', '.join(s for s, _ in c.verb_stems) or '—'} |\n"
+        f"| {i+1} | {c.consonants} | {c.word_form} | {c.frequency} |"
+        f" {', '.join(s for s, _, _ in c.verb_stems) or '—'} |\n"
         for i, c in enumerate(cards[:50])
     )
 
@@ -487,8 +522,8 @@ def write_summary_md(cards: List[RootCard], out_path: Path) -> None:
 
 ## Top 50 Roots
 
-| # | Root | Form | Gloss | Freq | Stems |
-|---|---|---|---|---|---|
+| # | Root | Form | Freq | Stems |
+|---|---|---|---|---|
 {rows}
 """
     out_path.write_text(content, encoding="utf-8")
@@ -508,7 +543,7 @@ Each card front shows the consonantal root; the back shows the gloss, attested v
 ## Card Design
 
 - **Front:** Consonantal root (e.g., אבד)
-- **Back:** Vowel-pointed form, gloss, verbal stem frequencies, derived nominals
+- **Back:** Vowel-pointed form; table of verbal stems with individual glosses and frequencies; table of derived nominals with POS, gloss, and frequency
 - **Frequency field:** Combined OT occurrence count (sum of all lemmata in the root family)
 
 ## Files
@@ -524,10 +559,56 @@ Each card front shows the consonantal root; the back shows the gloss, attested v
 
 ## Anki Setup
 
-Before importing `hebrew-root-deck.txt`, create a note type named **Hebrew Root** with three fields in order:
-1. **Front** — the question (consonantal root)
-2. **Back** — the answer (HTML)
-3. **Frequency** — numeric OT frequency (used for filtered decks, e.g., `Frequency:>100`)
+### Step 1 — Create the note type
+
+1. Open **Tools → Manage Note Types**
+2. Click **Add**, choose **Add: Basic**, and name it **Hebrew Root**
+3. Click **Fields…** and confirm the fields are in this exact order:
+
+| # | Field | Purpose |
+|---|---|---|
+| 1 | **Front** | Consonantal root (the question) |
+| 2 | **Back** | HTML answer (stems, nominals) |
+| 3 | **Frequency** | OT occurrence count — enables filtered decks (e.g., `Frequency:>100`) |
+
+### Step 2 — Set the card templates
+
+Click **Cards…** in the Manage Note Types dialog and enter the following:
+
+**Front Template:**
+```html
+<div style="font-size:2.5em; direction:rtl; text-align:center;">{{{{Front}}}}</div>
+```
+
+**Back Template:**
+```html
+{{{{FrontSide}}}}
+<hr>
+{{{{Back}}}}
+```
+
+**Styling** (optional — adds borders and centering to the stem and nominal tables):
+```css
+.card {{
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}}
+
+table {{
+  margin: 8px auto;
+  border-collapse: collapse;
+}}
+
+th, td {{
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+}}
+```
+
+### Step 3 — Import the deck
+
+With the **Hebrew Root** note type in place, import via **File → Import** and select `hebrew-root-deck.txt`.
 
 ## Filtering in Flashcards Deluxe
 
@@ -557,11 +638,11 @@ def main() -> None:
     print(f"  Found {len(root_groups)} root groups")
 
     print("Loading OT frequencies from parquet…")
-    lemma_freq, stem_freq = load_frequencies(PARQUET_PATH)
+    lemma_freq, stem_freq, stem_gloss = load_frequencies(PARQUET_PATH)
     print(f"  Loaded frequencies for {len(lemma_freq)} codes")
 
     print(f"Building top-{TOP_N} root cards…")
-    cards = build_cards(root_groups, entries, lemma_freq, stem_freq)
+    cards = build_cards(root_groups, entries, lemma_freq, stem_freq, stem_gloss)
     print(f"  Built {len(cards)} cards (freq range {cards[-1].frequency}–{cards[0].frequency})")
 
     OUT_DIR.mkdir(parents=True, exist_ok=True)

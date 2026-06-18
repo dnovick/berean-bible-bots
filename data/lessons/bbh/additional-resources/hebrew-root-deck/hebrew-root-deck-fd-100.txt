@@ -1,401 +1,401 @@
 Text 1	Text 2	Category
-הוא	be | Stems: Qal (3514), Niphal (21) | Nouns: יֵשׁ is; הַוָּה falling); אִיתַי entity; הֹוָה ruin	Freq100plus
-אות	come | Stems: Niphal (4) | Nouns: אֵת self; אוֹת signal; אָת portent; יַת sign of the object of a verb	Freq100plus
-בנה	build | Stems: Qal (331), Niphal (28) | Nouns: בֵּן son; בַּיִת a house; בַּת daughter; אֶבֶן stone	Freq100plus
-עלה	ascend | Stems: Qal (595), Niphal (16), Hiphil (213), Hophal (3), Hithpael (1) | Nouns: עַל above; מַעַל upper part; מַעֲלָה elevation; עַל about, against, concerning, for, (there-) fore, from, in, × more, of, (there-, u	Freq100plus
-אשר	who | Nouns: שָׁם there	Freq100plus
-לא	not | Nouns: אַל not; אֱלִיל nothing; אַל תַּשְׁחֵת 'Thou must not destroy'; אִלּוּ nay	Freq100plus
-אל	near	Freq100plus
-אמר	say | Stems: Qal (5280), Niphal (21), Hiphil (1), Hithpael (1) | Nouns: אֱמֹרִי Emorite; אֵמֶר something said; אֹמֶר promise, speech, thing, word.; מַאֲמַר said	Freq100plus
-כל	whole | Nouns: כֹּל all, any,   (forasmuch) as,   be-(for this) cause, every,   no (manner, -ne),   	Freq100plus
-כי	relative conjunction	Freq100plus
-מלך	reign | Stems: Qal (243), Niphal (1), Hiphil (40), Hophal (1) | Nouns: מֶלֶךְ king; מֶלֶךְ king; מַמְלָכָה dominion; מַלְכָּה queen	Freq100plus
-עמם	associate | Stems: Hophal (1) | Nouns: עַם people; עִם with; עִמָּד along with; עֻמָּה conjunction	Freq100plus
-אנש	be frail | Stems: Qal (2), Niphal (1), Hithpael (1) | Nouns: אִישׁ man; אִשָּׁה woman; אֱנוֹשׁ mortal; אִישׁוֹן little man	Freq100plus
-עשה	do | Stems: Qal (2410), Niphal (98), Piel (2), Pual (1) | Nouns: מַעֲשֶׂה action	Freq100plus
-דבר	arrange | Stems: Qal (40), Niphal (4), Hiphil (2), Piel (1060), Pual (2), Hithpael (2) | Nouns: דָּבָר word; מִדְבָּר pasture; דֶּבֶר pestilence; דִּבְרָה reason	Freq100plus
-אלוה	deity | Nouns: אֱלֹהִים gods; אֱלָהּ God	Freq100plus
-יד	hand | Stems: Qal (5), Hiphil (66), Piel (2), Hithpael (11) | Nouns: יְהוּדִי Jehudite; תּוֹדָה extension; יַד hand, power.; יְהוּדִית Jewish	Freq100plus
-בוא	go | Stems: Qal (1872), Hiphil (403), Hophal (24) | Nouns: תְּבוּאָה income; מָבוֹא entrance; מוֹבָא entrance; בְּאָה entrance	Freq100plus
-הוא	he | Nouns: כֹּה like this; הֵנָּה hither; כָּכָה just so; הֵנָּה themselves	Freq100plus
-ארץ	earth | Nouns: אֲרַע earth; אַרְעִית bottom; אֲרַק earth	Freq100plus
-שרה	prevail | Stems: Qal (2) | Nouns: יִשְׂרְאֵלִי a Jisreelite; מִשְׂרָה empire	Freq100plus
-יום	day | Nouns: יוֹמָם daily; יוֹם day; יֵם warm spring; נְמוּאֵלִי Nemuelite	Freq100plus
-עדה	advance | Stems: Qal (8), Hiphil (1) | Nouns: עַד as far; עַתָּה at this time; עֵת time; בְּעַד in up to	Freq100plus
-פנים	face | Nouns: פְּנִימָה faceward	Freq100plus
-נתן	give | Stems: Qal (1619), Niphal (82), Hophal (8) | Nouns: מַתָּנָה present; מַתָּת present; מַתָּן present; מַתְּנָא gift.	Freq100plus
-אב	father | Nouns: אוֹב mumble; אַב father.	Freq100plus
-זה	this | Nouns: זֹאת this; דִּי that; זוּ this; זֹה this	Freq100plus
-הלך	walk | Stems: Qal (1350), Niphal (1), Hiphil (29), Piel (22), Hithpael (62) | Nouns: הֲלִיכָה walking; מַהֲלָךְ walk; הֲלָךְ journey; הֵלֶךְ journey	Freq100plus
-ראה	see | Stems: Qal (1040), Niphal (99), Hiphil (14), Hophal (4), Pual (1), Hithpael (5) | Nouns: מַרְאֶה view; רְאוּבֵנִי Reubenite; מַרְאָה vision; רֹאֶה seer	Freq100plus
-שמע	hear | Stems: Qal (978), Niphal (43), Hiphil (45), Piel (2), M (1) | Nouns: שֵׁמַע heard; יִשְׁמָעֵאלִי Jishmaelite; מִשְׁמַעַת audience; שֹׁמַע report	Freq100plus
-שום	put | Stems: Qal (487), Hiphil (4), Hophal (1), Q (1) | Nouns: שֵׁם appellation; שֻׁם name.; תְּשׂוּמֶת deposit	Freq100plus
-אנכי	I | Nouns: אֲנִי I; אֲנַחְנוּ we; נַחְנוּ we	Freq100plus
-מה	what? | Stems: Hithpael (8) | Nouns: מִי who?; מָן whatness; מָן who; מָה how great (mighty), that which, what(-soever), why.	Freq100plus
-מן	part | Nouns: מִן according, after,   because,   before, by, for, from, × him, × more than, (out) 	Freq100plus
-כון	be erect | Stems: Niphal (67), Hiphil (100), Hophal (6), Piel (18), Pual (2), Hithpael (4) | Nouns: כֵּן set upright; אַךְ affirmation; אָכֵן firmly; כֵּן stand	Freq100plus
-עבד	work | Stems: Qal (199), Niphal (4), Hiphil (5), Pual (2) | Nouns: עֶבֶד servant; עֲבַד servant; עַבְדוּת servitude; עֲבִידָה labor	Freq100plus
-הן	lo! | Nouns: הִנֵּה lo!; הֵן lo!; לָהֵן for if	Freq100plus
-עיר	city	Freq100plus
-ידע	know | Stems: Qal (752), Niphal (40), Hiphil (42), Hophal (3), Piel (1), Pual (1), Hithpael (2) | Nouns: דַּעַת knowledge; יִדְּעֹנִי knowing; דֵּעָה knowledge; דֵּעַ knowledge	Freq100plus
-אתה	thou | Nouns: אַנְתָּה thou	Freq100plus
-ישב	sit | Stems: Qal (966), Niphal (8), Hiphil (27), Hophal (2), Piel (1) | Nouns: שֶׁבֶת session; שִׁיבָה residence	Freq100plus
-יצא	go | Stems: Qal (729), Hiphil (197), Hophal (5), Shaphel (1) | Nouns: צֶאֱצָא issue; צָאָה issue; יָצִיא issue	Freq100plus
-שוב	turn | Stems: Qal (644), Hiphil (264), Hophal (5), Piel (6) | Nouns: שׁוֹבָב apostate; שׁוּבָה return; שִׁיבָה return	Freq100plus
-אם	lo!	Freq100plus
-מות	die | Stems: Qal (601), Hiphil (67), Hophal (68), Piel (4) | Nouns: מָוֶת death; מָמוֹת mortal disease; תְּמוּתָה execution; מוֹת death	Freq100plus
-לקח	take | Stems: Qal (848), Niphal (9), Hophal (6), Pual (9), Hithpael (2) | Nouns: לֶקַח received; מַלְקוֹחַ jaws; מִקָּח reception; מַקָּחָה received	Freq100plus
-אנה	groan | Stems: Qal (2), Piel (1), Pual (2), Hithpael (1) | Nouns: אֵת nearness; אֳנִיָּה ship; אֳנִי ship; מָאן utensil	Freq100plus
-עין	eye | Stems: Qal (1) | Nouns: עַיִן eye	Freq100plus
-שלח	send | Stems: Qal (473), Niphal (1), Hiphil (5), Piel (182), Pual (10) | Nouns: שֻׁלְחָן table; שֶׁלַח missile	Freq100plus
-לבב	be enclosed | Stems: Niphal (1), Piel (2) | Nouns: לֵב heart; לֵבָב heart; לְבַב heart.; לִבָּה heart	Freq100plus
-אין	nonentity | Nouns: אַיֵּה where?; אַי where?; אַיִן where?; אֵיפֹה what place?	Freq100plus
-קרא	encounter | Stems: Qal (679), Niphal (68), Hiphil (1), Pual (6) | Nouns: מִקְרָא called; קֹרֵא caller; קָרִיא called; קְרִיאָה proclamation	Freq100plus
-אכל	eat | Stems: Qal (646), Niphal (45), Hiphil (5), Pual (5) | Nouns: אֹכֶל food; מַאֲכָל eatable; מַאֲכֶלֶת eat; מַאֲכֹלֶת eaten	Freq100plus
-אח	brother | Nouns: אָחוֹת sister; אֲחוֹחִי Achochite; אַח brother.; אַחֲוָה fraternity	Freq100plus
-שנה	year | Nouns: שְׁנָה year.	Freq100plus
-אחר	loiter | Stems: Qal (1), Hiphil (1), Piel (15) | Nouns: אַחַר the hind part; אַחֵר hinder; אַחֲרִית last; מָחָר deferred	Freq100plus
-ענה	eye | Stems: Qal (250), Niphal (9), Hiphil (3), Piel (33), Pual (3), Hithpael (6) | Nouns: מַעַן heed; עָנִי depressed; עֳנִי depression; עָנָו depressed	Freq100plus
-אול	the body | Nouns: אֵל strength; אַיִל strength; אֵלָה oak; אַיָּל stag	Freq100plus
-אדון	sovereign | Nouns: אֲדֹנָי Lord; אֶדֶן basis; אַדּוֹן Addon	Freq100plus
-משה	pull out | Nouns: שֵׁשׁ bleached; מֶשִׁי silk; שַׁיִשׁ white	Freq100plus
-אדם	show blood | Stems: Qal (1), Hiphil (1), Pual (7), Hithpael (1) | Nouns: אָדָם ruddy; אֲדָמָה soil; אָדֹם rosy; אֲדַמְדָּם reddish	Freq100plus
-נשא	lift | Stems: Qal (547), Niphal (33), Hiphil (2), Piel (7), Hithpael (8) | Nouns: מַשָּׂא burden; מַשְׂאֵת raising; שְׂאֵת elevation; מַשֹּׂא partiality	Freq100plus
-לחם	feed on | Stems: Qal (9), Niphal (161) | Nouns: מִלְחָמָה battle; לֶחֶם food; לָחֶם battle	Freq100plus
-חוה	live | Stems: Qal (201), Hiphil (25), Piel (32) | Nouns: חַי alive; חִוִּי Chivvite; מִחְיָה preservation of life; חַוָּה village	Freq100plus
-כהן	officiate | Stems: Piel (20) | Nouns: כֹּהֵן officiating; כְּהֻנָּה priesthood; כָּהֵן priest.	Freq100plus
-אחד	unify | Stems: Hithpael (1) | Nouns: אֶחָד united; חַד one	Freq100plus
-חול	twist | Stems: Qal (71), Niphal (19), Hiphil (63), Hophal (5), Piel (78), Pual (9), Hithpael (7) | Nouns: חַיִל force; חָלָל pierced; חֳלִי malady; חוֹל sand	Freq100plus
-דרך	tread | Stems: Qal (47), Hiphil (3) | Nouns: דֶּרֶךְ road; מִדְרָךְ treading	Freq100plus
-עשר	ten | Nouns: עָשָׂר ten; עֶשְׂרִים twenty; עֲשִׂירִי tenth	Freq100plus
-גם	assemblage | Nouns: מְגַמָּה accumulation	Freq100plus
-אל	these | Nouns: אֵלֶּה these; אֲלוּ lo!; אֲרוּ lo!	Freq100plus
-נפש	breathe | Stems: Niphal (3) | Nouns: נֶפֶשׁ breathing creature	Freq100plus
-עבר	cross | Stems: Qal (442), Niphal (1), Hiphil (64), Piel (2), Hithpael (7) | Nouns: עֵבֶר across; עֶבְרָה outburst; עֲבַר beyond, this side.; עֲבָרָה crossing-place	Freq100plus
-שנה	fold | Stems: Qal (12), Niphal (1), Piel (5), Hithpael (1) | Nouns: שְׁנַיִם two; שֵׁנִי double; מִשְׁנֶה repetition	Freq100plus
-מצור	hemming in | Nouns: מִצְרִי Mitsrite	Freq100plus
-שמר	hedge | Stems: Qal (384), Niphal (37), Piel (1), Hithpael (2) | Nouns: מִשְׁמֶרֶת watch; מִשְׁמָר guard; שָׁמִיר thorn; שֶׁמֶר preserved	Freq100plus
-קום	rise | Stems: Qal (423), Hiphil (132), Hophal (3), Piel (14), Hithpael (2) | Nouns: קוֹמָה height; קָמָה rises; יְקוּם standing; קוֹמְמִיּוּת elevation	Freq100plus
-זבח	slaughter | Stems: Qal (106), Piel (22) | Nouns: מִזְבֵּחַ altar; זֶבַח slaughter; מַדְבַּח sacrificial altar	Freq100plus
-חנן	bend | Stems: Qal (157), Hophal (2), Piel (4), Hithpael (16), M (1) | Nouns: מַחֲנֶה encampment; חֵן graciousness; חֲנִית lance; חִנָּם gratis	Freq100plus
-קדש	be | Stems: Qal (10), Niphal (9), Hiphil (40), Piel (51), Pual (4), Hithpael (24) | Nouns: קֹדֶשׁ sacred; קְדֵשָׁה female devotee; קָדֵשׁ sacred person	Freq100plus
-צוה	constitute | Stems: Piel (363), Pual (9) | Nouns: מִצְוָה command; צִי ship	Freq100plus
-ראש	head | Nouns: רֵאשִׁית first; רֵאשׁ head; מְרַאֲשָׁה headpiece; מַרְאָשָׁה headship	Freq100plus
-רבב	cast together | Stems: Qal (21), Pual (1) | Nouns: רַב abundant; רֹב abundance; רַבְשָׁקֵה Rabshakeh; רְבָבָה abundance	Freq100plus
-שפט	judge | Stems: Qal (144), Niphal (15) | Nouns: מִשְׁפָּט verdict; שֶׁפֶט sentence; תִּפְתַּי judicial	Freq100plus
-שבע	seven | Stems: Niphal (149), Hiphil (18) | Nouns: שִׁבְעִים seventy; שְׁבוּעָה sworn; שִׁבְעָתַיִם seven-times; שִׁבְעָנָה seven	Freq100plus
-ילד	bear young | Stems: Qal (211), Niphal (36), Hiphil (158), Hophal (3), Piel (9), Pual (27), Hithpael (1) | Nouns: יֶלֶד something born; מוֹלֶדֶת nativity; יָלִיד born; יַלְדָּה lass	Freq100plus
-רעע	spoil | Stems: Qal (36), Niphal (2), Hiphil (68), Hithpael (2) | Nouns: רַע bad; רֹעַ badness; בְּרִיעִי Beriite; מֵרַע wickedness	Freq100plus
-כלה	end | Stems: Qal (63), Piel (98), Pual (1) | Nouns: כְּלִי prepared; כִּלְיָה kidney; כָּלָה completion; תַּכְלִית completion	Freq100plus
-מים	water	Freq100plus
-שאל	inquire | Stems: Qal (138), Niphal (5), Piel (2) | Nouns: מִשְׁאָלָה request; שְׁאֵלָא question	Freq100plus
-הרר	mountain | Nouns: הַר mountain; יָהִיר elated; הַרְאֵל mount of God	Freq100plus
-ירד	descend | Stems: Qal (299), Hiphil (43), Hophal (6) | Nouns: מוֹרָד descent	Freq100plus
-שכב	lie down | Stems: Qal (292), Niphal (2), Hiphil (9), Hophal (2), Piel (12), Pual (1) | Nouns: מִשְׁכָּן residence; מִשְׁכָּב bed; שָׁכֵן resident; שְׁכָבָה lying	Freq100plus
-גוי	nation	Freq100plus
-הם	they	Freq100plus
-חרב	parch | Stems: Qal (19), Niphal (3), Hiphil (12), Hophal (3), Pual (2) | Nouns: חֶרֶב drought; חׇרְבָּה drought; חֹרֶב drought; חָרָבָה desert	Freq100plus
-שלום	safe | Nouns: שְׁלָם prosperity	Freq100plus
-פאה	puff | Nouns: פֶּה mouth; פֻּם mouth	Freq100plus
-עמד	stand | Stems: Qal (421), Hiphil (62), Hophal (2) | Nouns: עֹמֶד spot; מַעֲמָד position; מׇעֳמָד foothold; עֶמְדָּה station	Freq100plus
-צדק	be | Stems: Qal (22), Niphal (1), Hiphil (10), Piel (2), Hithpael (1) | Nouns: צַדִּיק just; צְדָקָה rightness; צֶדֶק right; צִדְקָה beneficence	Freq100plus
-קרב	approach | Stems: Qal (86), Niphal (2), Hiphil (159), Piel (8) | Nouns: קֶרֶב nearest; קְרָב hostile encounter; קְרָבָה approach; קָרֵב near	Freq100plus
-מאה	hundred | Nouns: מֵאָה Meah	Freq100plus
-קול	voice | Nouns: קָל sound, voice.	Freq100plus
-נכה	strike | Stems: Niphal (1), Hiphil (336), Hophal (16), Pual (2) | Nouns: נֵכֶה smiter	Freq100plus
-אלף	learn | Stems: Qal (1), Hiphil (1), Piel (1) | Nouns: אֶלֶף thousand; אֶלֶף family	Freq100plus
-ימין	right | Stems: Qal (6), Niphal (47), Hiphil (56), Hophal (1) | Nouns: אֶמֶת stability; אָמֵן sure; אׇמְנָם verily; אֵמוּן established	Freq100plus
-שרר	have | Stems: Qal (3), Hithpael (2) | Nouns: שַׂר head; שָׂרָה mistress	Freq100plus
-צבא	mass	Freq100plus
-בין	separate | Stems: Qal (61), Niphal (21), Hiphil (52), Hithpael (22) | Nouns: בֵּין between; בִּינָה understanding; בֵּנַיִם a double interval; בֵּין among, between.	Freq100plus
-אם	mother | Nouns: אַמָּה a mother; אֻמַּה collection; אֻמָּה nation.	Freq100plus
-נגד	front | Stems: Hiphil (317), Hophal (35) | Nouns: נֶגֶד front	Freq100plus
-ברך	kneel | Stems: Qal (73), Niphal (3), Hiphil (1), Piel (148), Pual (12), Hithpael (7) | Nouns: בְּרָכָה benediction; בֶּרֶךְ knee; בְּרֵכָה reservoir; בֶּרֶךְ knee.	Freq100plus
-טוב	be | Stems: Qal (40), Hiphil (3) | Nouns: טוֹב good; טוּב good	Freq100plus
-רוח	blow | Stems: Qal (2), Hiphil (7), Pual (1) | Nouns: רוּחַ wind; רֵיחַ odor; רוּחַ mind, spirit, wind.; רֶוַח room	Freq100plus
-שמים	sky | Nouns: שָׁמַיִן heaven.	Freq100plus
-מצא	come | Stems: Qal (242), Niphal (134), Hiphil (6)	Freq100plus
-עולם	concealed | Nouns: עָלַם remote time; עֵילוֹם ever.	Freq100plus
-אש	fire | Nouns: אִשָּׁה burnt-offering; אֲשִׁישָׁה closely pressed together; אַתּוּן fire-place; אִשׁ entity	Freq100plus
-נפל	fall | Stems: Qal (364), Hiphil (50), Piel (1), Hithpael (5) | Nouns: מַפֶּלֶת fall; מַפָּל falling off	Freq100plus
-נבא	prophesy | Stems: Niphal (83), Hithpael (28), M (1) | Nouns: נָבִיא prophet; נְבִיאָה prophetess; נְבִיא prophet; נְבוּאָה prediction	Freq100plus
-עוד	iteration	Freq100plus
-יסף	add | Stems: Qal (32), Niphal (6), Hiphil (169)	Freq100plus
-ירא	fear | Stems: Qal (249), Niphal (44), Piel (2) | Nouns: יָרֵא fearing; יִרְאָה fear	Freq100plus
-כסף	become pale | Stems: Qal (2), Niphal (4) | Nouns: כֶּסֶף silver; כְּסַף money, silver.	Freq100plus
-תוך	bisection	Freq100plus
-בקר	plough | Stems: Piel (9) | Nouns: בֹּקֶר dawn; בָּקָר beeve; בּוֹקֵר cattle-tender; בַּקָּרָה looking after	Freq100plus
-זהב	gold | Nouns: דְּהַב gold; מַדְהֵבָה goldmaking	Freq100plus
-נא	'I pray'	Freq100plus
-שלוש	three | Stems: Piel (4), Pual (5) | Nouns: שְׁלִישִׁי third; שִׁלֵּשׁ third	Freq100plus
-דוח	thrust | Stems: Qal (23), Niphal (6), Hiphil (3), Piel (1) | Nouns: דָּם blood; דּוּמָם still; דְּמָמָה quiet	Freq100plus
-מקום	standing	Freq100plus
-ים	sea | Nouns: יָם sea.	Freq100plus
-עקב	heel | Stems: Qal (3) | Nouns: עֵקֶב heel; עָקֹב fraudulent; עׇקְבָה trickery	Freq100plus
-שפה	abrade | Stems: Niphal (1), Pual (1) | Nouns: מִשְׁפָּחָה family; שִׁפְחָה female slave; שְׁפִי bareness; מִשְׁפָּת stall	Freq100plus
-מלאך	messenger | Nouns: מְלָאכָה deputyship; מַלְאַךְ angel; מַלְאֲכוּת message	Freq100plus
-שער	act as gatekeeper | Stems: Qal (1) | Nouns: שַׁעַר opening; תְּרַע door; שַׁעַר measure; תָּרָע doorkeeper	Freq100plus
-חמש	five | Stems: Piel (1) | Nouns: חֲמִשִּׁים fifty; חֹמֶשׁ fifth tax	Freq100plus
-נאם	whisper | Stems: Qal (1) | Nouns: נְאֻם oracle	Freq100plus
-אהל	be clear | Stems: Qal (2), Hiphil (1), Piel (1) | Nouns: אֹהֶל tent; אׇהֳלִיבָמָה Oholibamah	Freq100plus
-פקד	visit | Stems: Qal (164), Niphal (21), Hiphil (25), Hophal (8), Piel (1), Pual (2), Hithpael (4), u (4) | Nouns: פְּקֻדָּה visitation; פָּקִיד superintendent; מִפְקָד an appointment; פִּקָּדוֹן deposit	Freq100plus
-פתח	open wide | Stems: Qal (93), Niphal (18), Piel (25), Pual (1), Hithpael (1) | Nouns: פֶּתַח opening; מַפְתֵּחַ opener; פִּתְחוֹן opening; מִפְתָּח aperture	Freq100plus
-עוד	duplicate | Stems: Hiphil (34), Hophal (1), Piel (2), Hithpael (1) | Nouns: עֵדָה assemblage; עֵד witness; עֵדוּת testimony; עֵדָה testimony	Freq100plus
-בלה	fail | Stems: Qal (10), Piel (3) | Nouns: בִּלְתִּי failure of; בַּל failure; בְּלִי failure; בְּלִיַּעַל without profit	Freq100plus
-עצה	fasten | Stems: Qal (1) | Nouns: עֵץ tree; אָע tree; עָצֶה spine; עֵצָה timber	Freq100plus
-חזק	fasten | Stems: Qal (80), Hiphil (110), Piel (51), Hithpael (27) | Nouns: חָזָק strong; חֹזֶק power; חׇזְקָה vehemence; חֶזְקָה power	Freq100plus
-זכר	mark | Stems: Qal (146), Niphal (19), Hiphil (36) | Nouns: זָכָר remembered; זִכְרוֹן memento; אַזְכָּרָה reminder; זָכוּר male	Freq100plus
-שדה	field | Nouns: שְׁדֵמָה field	Freq100plus
-רשע	be | Stems: Qal (9), Hiphil (18) | Nouns: רָשָׁע wrong; רֶשַׁע wrong; רִשְׁעָה wrong; מִרְשַׁעַת female wicked doer	Freq100plus
-גדול	great	Freq100plus
-חדש	be new | Stems: Piel (9), Hithpael (1) | Nouns: חֹדֶשׁ new; חָדָשׁ new	Freq100plus
-ארבע	four | Nouns: אַרְבָּעִים forty; אַרְבַּעְתַּיִם fourfold	Freq100plus
-גלל	roll | Stems: Qal (10), Niphal (2), Piel (1), Pual (1), Hithpael (3) | Nouns: גַּל rolled; מְגִלָּה roll; גֻּלָּה fountain; גֻּלְגֹּלֶת skull	Freq100plus
-זרע	sow | Stems: Qal (42), Niphal (6), Hiphil (3), Pual (1) | Nouns: זֶרַע seed; יִזְרְעֵאלִי Jizreelite; זֵרוּעַ sown; זְרַע posterity	Freq100plus
-סביב	circle	Freq100plus
-נער	growl | Stems: Qal (5), Niphal (3), Piel (3), Hithpael (1) | Nouns: נַעַר boy; נַעֲרָה girl; נֹעַר boyhood; נְעֹרֶת shaken	Freq100plus
-רום	be high | Stems: Qal (64), Hiphil (81), Hophal (3), Piel (12), Pual (2), Hithpael (2) | Nouns: מָרוֹם altitude; רוּם altitude; רָמָה height; רוֹם elevation	Freq100plus
-מלא	fill | Stems: Qal (99), Niphal (35), Piel (101), Pual (1) | Nouns: מָלֵא full; מִלֻּא fulfilling; מְלֵאָה fulfilled; מִלֻּאָה filling	Freq100plus
-חצר	trumpet | Stems: Hiphil (5), Piel (1) | Nouns: חָצֵר yard; חֲצֹצְרָה trumpet; חָצִיר grass; חֶצְרוֹנִי Chetsronite	Freq100plus
-אוד	poker | Nouns: מְאֹד vehemence; אֵיד oppression; אֵד fog	Freq100plus
-או	desire	Freq100plus
-בר	grain | Stems: Qal (3), Hiphil (1) | Nouns: בְּרִית compact; בַּר field; בִּרְיָה food; בַּרְבֻּר fowl	Freq100plus
-ספר	score | Stems: Qal (25), Niphal (8), Piel (62), Pual (5) | Nouns: מִסְפָּר number; סַפִּיר gem; סָפֵר scribe; סְפַר book	Freq100plus
-בלל	overflow | Stems: Qal (42), Hithpael (1) | Nouns: בְּלִיל mixed; תֶּבֶל mixture; בַּבְלִי Babylonian; תְּבַּלֻּל cataract	Freq100plus
-ישע	be open | Stems: Niphal (20), Hiphil (98) | Nouns: יְשׁוּעָה saved; מוֹשָׁעָה deliverance	Freq100plus
-סור	turn | Stems: Qal (156), Hiphil (118), Hophal (5), Piel (1) | Nouns: סָרָה apostasy; סוּר turned off; סוּר Sur	Freq100plus
-יכל	be able | Stems: Qal (191) | Nouns: הֵיכָל palace; הֵיכַל palace, temple.; מִיכָל container	Freq100plus
-כרת	cut | Stems: Qal (128), Niphal (71), Hiphil (71), Hophal (1), Pual (2) | Nouns: כְּרֵתִי Kerethite; כְּרִיתוּת cutting; כָּרֻתָה cut; כְּרִית Kerith	Freq100plus
-חכם	be wise | Stems: Qal (19), Hiphil (1), Piel (1), Pual (2), Hithpael (2) | Nouns: חׇכְמָה wisdom; חָכָם wise; חׇכְמָה wisdom; חַכִּים wise	Freq100plus
-פלש	roll | Stems: Hithpael (4) | Nouns: פְּלִשְׁתִּי Pelishtite; פְּלֶשֶׁת Pelesheth	Freq100plus
-בשר	be fresh | Stems: Piel (23), Hithpael (1) | Nouns: בָּשָׂר flesh; בְּשׂוֹר Besor; בְּשַׁר flesh.	Freq100plus
-רגל	foot | Stems: Qal (1), Piel (23), Tiphil (1) | Nouns: רַגְלִי footman; רְגַל foot.; מַרְגְלָה footpiece	Freq100plus
-אנף	breathe | Stems: Qal (8), Hithpael (6) | Nouns: אַף nose; אֲנַף face; אֲנָפָה unclean bird	Freq100plus
-חטאה	offence	Freq100plus
-חטא	miss | Stems: Qal (178), Hiphil (31), Piel (11), Hithpael (9) | Nouns: חֵטְא crime; חַטָּא criminal; חֲטָאָה offence; חַטָּאָה an offence	Freq100plus
-לויי	Levite	Freq100plus
-חסד	bow | Stems: Hithpael (2) | Nouns: חֶסֶד kindness; חָסִיד kind; חֲסִידָה kind	Freq100plus
-עלה	step | Nouns: עֲלָה holocaust	Freq100plus
-יתר	jut | Stems: Niphal (82), Hiphil (22) | Nouns: יֶתֶר overhanging; יֹתֶרֶת lobe; יִתְרוֹן preeminence; יוֹתֵר redundant	Freq100plus
-ירש	occupy | Stems: Qal (102), Niphal (4), Hiphil (45), Piel (1) | Nouns: רֶשֶׁת net; יְרֻשָּׁה occupied; מוֹרָשָׁה possession; מוֹרָשׁ possession	Freq100plus
-פנה	turn | Stems: Qal (115), Hiphil (7), Hophal (2), Piel (8) | Nouns: פֵּן removal	Freq100plus
-איב	hating	Freq100plus
-נחל	inherit | Stems: Qal (27), Hiphil (12), Hophal (1), Piel (4), Hithpael (6) | Nouns: נַחֲלָה inherited	Freq100plus
-בעל	master | Stems: Qal (9), Niphal (2) | Nouns: בַּעֲלָה mistress; בַּעֲלִי Baali	Freq100plus
-צאן	flock	Freq100plus
-אסף	gather | Stems: Qal (89), Niphal (80), Piel (6), Pual (5), Hithpael (1) | Nouns: אָפִיק containing; אָסֻף collected; אֹסֶף collection; אֲסֵפָה collection	Freq100plus
-פרעה	Paroh	Freq100plus
-רבה	increase | Stems: Qal (57), Hiphil (152), Piel (4) | Nouns: אַרְבֶּה locust; תַּרְבִּית multiplication; מַרְבִּית multitude; רְבוּ increase	Freq100plus
-בגד	cover | Stems: Qal (48) | Nouns: בֶּגֶד covering; בָּגוֹד treacherous; בֹּגְדוֹת treacheries	Freq100plus
-שלם	be safe | Stems: Qal (7), Hiphil (11), Hophal (1), Piel (81), Pual (5) | Nouns: שֶׁלֶם requital; שָׁלֵם complete; שׁוּלַמִּית peaceful; שִׁלֵּם requital	Freq100plus
-שתה	imbibe | Stems: Qal (209), Niphal (1) | Nouns: מִשְׁתֶּה drink; מִשְׁתֶּה banquet; שְׁתִי intoxicaion; שְׁתִיָּה potation	Freq100plus
-רעה	tend | Stems: Qal (150), Piel (1), Hithpael (1) | Nouns: מִרְעֶה pasture; מִרְעִית pasturage; מֵרֵעַ friend; רְעוּת feeding	Freq100plus
-שאר	swell | Stems: Qal (1), Niphal (94), Hiphil (38) | Nouns: שְׁאֵרִית remainder; שְׁאָר remainder; שְׁאֵר flesh; שְׁאָר × whatsoever more, residue, rest.	Freq100plus
-שמח	brighten | Stems: Qal (125), Hiphil (1), Piel (17) | Nouns: שִׂמְחָה blithesomeness; שָׂמֵחַ blithe	Freq100plus
-רכב	ride | Stems: Qal (49), Hiphil (12) | Nouns: רֶכֶב vehicle; מֶרְכָּבָה chariot; מֶרְכָּב chariot; רַכָּב charioteer	Freq100plus
-טמא	be foul | Stems: Qal (77), Niphal (19), Piel (39), Pual (1), Hithpael (14), u (1) | Nouns: טָמֵא foul; טֻמְאָה impurity	Freq100plus
-כתב	grave | Stems: Qal (193), Niphal (16), Piel (2) | Nouns: כָּתָב written; כְּתָב prescribing, writing(-ten).; מִכְתָּב written; כְּתֹבֶת letter	Freq100plus
-זוד	seethe | Stems: Qal (11), Niphal (4), Hiphil (8), Piel (1), Pual (1) | Nouns: חֵצִי half; חֵץ piercer; מַחֲצִית halving; זֵד arrogant	Freq100plus
-ערב	braid | Stems: Qal (22), Hiphil (1), Hithpael (7) | Nouns: עֶרֶב dusk; עֲרָבָה desert; מַעֲרָב traffic; עָרֹב mosquito	Freq100plus
-דין	rule | Stems: Qal (21), Niphal (1) | Nouns: מְדִינָה judgeship; מָדוֹן contest; מִדְיָן brawling, contention(-ous).; מְדִינָה province.	Freq100plus
-קנה	erect | Stems: Qal (73), Niphal (2) | Nouns: מִקְנֶה bought; קָנֶה reed; מִקְנָה buying; קִנְיָן creation	Freq100plus
-אזן	broaden out the ear | Stems: Hiphil (25), Piel (1) | Nouns: אֹזֶן broadness; מֹאזֵן scales; אָזֵן spade; מֹאזֵן balances.	Freq100plus
-גבול	cord | Stems: Qal (3), Hiphil (2) | Nouns: גִּבְלִי Gebalite; גַּבְלֻת chain; מִגְבָּלָה border	Freq100plus
-חקק	hack | Stems: Qal (5), Hophal (1), Piel (5), Pual (1) | Nouns: חֹק enactment; חֻקָּה appointed, custom, manner, ordinance, site, statute.; חֵקֶק enactment	Freq100plus
-מטה	branch	Freq100plus
-אהב	have affection | Stems: Qal (139), Niphal (1) | Nouns: אַהֲבָה love.; אַהַב affection	Freq100plus
-נטה	stretch | Stems: Qal (133), Niphal (3), Hiphil (66) | Nouns: מִטָּה bed; מֻטֶּה stretching; מֻטָּה expansion	Freq100plus
-הלל	be clear | Stems: Qal (4), Hiphil (3), Piel (85), Pual (11), Hithpael (29) | Nouns: תְּהִלָּה laudation; הוֹלֵלָה folly; הִלּוּל celebration of thanksgiving for harvest; הוֹלֵלוּת folly	Freq100plus
-בדד	divide | Stems: Qal (3) | Nouns: בַּד separation; בַּד thread; בָּדָד separate	Freq100plus
-עזב	loosen | Stems: Qal (141), Niphal (9), Pual (2), Shaphel (1) | Nouns: עִזָּבוֹן trade; עֲזוּבָה desertion	Freq100plus
-ליל	twist | Nouns: לִילִית night	Freq100plus
-בקש	search | Stems: Piel (193), Pual (3) | Nouns: בַּקָּשָׁה petition	Freq100plus
-עון	perversity	Freq100plus
-נגע	touch | Stems: Qal (104), Niphal (1), Hiphil (35), Piel (2), Pual (1) | Nouns: נֶגַע blow	Freq100plus
-בטח	hie | Stems: Qal (148), Hiphil (4) | Nouns: בֶּטַח place of refuge; מִבְטָח refuge; בִּטָּחוֹן trust; בִּטְחָה trust	Freq100plus
-מועד	appointment	Freq100plus
-גבור	powerful | Nouns: גְּבוּרָה force; גְּבוּרָה power	Freq100plus
-חלק	be smooth | Stems: Qal (16), Niphal (6), Hiphil (7), Piel (21), Pual (3), Hithpael (1) | Nouns: חֵלֶק smoothness; מַחֲלֹקֶת section; חֶלְקָה smoothness; חֲלַקְלַקָּה very smooth	Freq100plus
-שש	six | Stems: Piel (1) | Nouns: שִׁשִּׁים sixty; שִׁשִּׁי sixth	Freq100plus
-תורה	precept	Freq100plus
-נצל	snatch | Stems: Niphal (15), Hiphil (113), Hophal (2), Piel (4), Hithpael (1) | Nouns: הַצָּלָה rescue	Freq100plus
-ריב	toss | Stems: Qal (50), Hiphil (1) | Nouns: יָרִיב he will contend; יָרֵב Jareb; מְרִיבָה quarrel	Freq100plus
-אבד	wander | Stems: Qal (108), Hiphil (22), Hophal (1), Piel (28) | Nouns: אֲבֵדָה lost; אֹבֵד wretched; אֲבַדֹּה perishing; אַבְדָן perishing	Freq100plus
-מנחה	donation | Nouns: מִנְחָה sacrificial offering	Freq100plus
-גלה	denude | Stems: Qal (49), Niphal (32), Hiphil (28), Hophal (7), Piel (56), Pual (2), Hithpael (2) | Nouns: גָּלוּת captivity; גָּלוּת captivity.	Freq100plus
-שמן	shine | Stems: Qal (3), Hiphil (2) | Nouns: שֶׁמֶן grease; שָׁמֵן greasy; מַשְׁמָן fat; אַשְׁמָן fat	Freq100plus
-אור	be | Stems: Qal (7), Niphal (2), Hiphil (32) | Nouns: אוֹר illumination; אוּרִים Urim; אוּר flame; אוֹרָה luminousness	Freq100plus
-כנע	bend | Stems: Niphal (23), Hiphil (7) | Nouns: כְּנַעַנִי Kenaanite; כִּנְעָה package	Freq100plus
-יין	wine | Nouns: יוֹנָה dove; יוֹנַת אֵלֶם רְחֹקִים dove of; יָוֵן dregs; יְוָנִי Jevanite	Freq100plus
-גביע	goblet | Nouns: גִּבְעָה hillock; גִּבְעֹנִי Gibonite; מִגְבָּעָה cap; גִּבְעֹל calyx of a flower	Freq100plus
-כפר	cover | Stems: Qal (1), Piel (86), Pual (7), Hithpael (1), Nithpael (1) | Nouns: כְּפִיר village; כַּפֹּרֶת lid; כֹּפֶר cover; כְּפוֹר cover	Freq100plus
-ארמון	citadel | Nouns: אֲרַמִּי Aramite; אֲרָמִית in Aramæan; רַמִּי a Ramite	Freq100plus
-כפף	curve | Stems: Qal (4), Niphal (1) | Nouns: כַּף hollow hand; כִּפָּה leaf; כֵּף hollow rock	Freq100plus
-ארון	box	Freq100plus
-בחר	try | Stems: Qal (157), Niphal (7) | Nouns: בָּחִיר select; מִבְחָר select; מִבְחוֹר select	Freq100plus
-רע	associate | Nouns: רַעְיָה female associate; רֵעָה female associate	Freq100plus
-כבוד	weight	Freq100plus
-שבת	repose | Stems: Qal (27), Niphal (4), Hiphil (38) | Nouns: שַׁבָּת intermission; שַׁבָּתוֹן sabbatism; שֶׁבֶת rest; מִשְׁבָּת cessation	Freq100plus
-תמם	complete | Stems: Qal (45), Hiphil (7), Hithpael (2) | Nouns: תָּמִים entire; תֹּם completeness; תָּם complete; תֻּמָּה innocence	Freq100plus
-רחב	broaden | Stems: Qal (3), Niphal (1), Hiphil (21) | Nouns: רֹחַב width; רָחָב roomy; מֶרְחָב enlargement; רַחַב width	Freq100plus
-שבט	scion | Nouns: שַׁרְבִיט rod of empire	Freq100plus
-גור	turn | Stems: Qal (95), Hithpael (1) | Nouns: גֵּר guest; גֵּרוּת residence	Freq100plus
-בהמה	dumb | Nouns: בְּהֵמוֹת water-ox	Freq100plus
-קטר	smoke | Stems: Hiphil (63), Hophal (2), Piel (41), Pual (1) | Nouns: קְטֹרֶת fumigation; מִקְטֶרֶת to fume; מִקְטָר fume; קְטוֹרָה perfume	Freq100plus
-ספר	writing	Freq100plus
-חשב	plait | Stems: Qal (66), Niphal (30), Piel (13), Hithpael (1) | Nouns: חֵשֶׁב belt; חֶשְׁבּוֹן contrivance; חִשָּׁבוֹן contrivance	Freq100plus
-כסה	plump | Stems: Qal (3), Niphal (3), Piel (99), Pual (7), Hithpael (8) | Nouns: מִכְסֶה covering; כְּסוּת cover; מְכַסֶּה covering; כָּסוּי covered	Freq100plus
-שמם	stun | Stems: Qal (28), Niphal (25), Hiphil (15), Piel (4), Hithpael (5) | Nouns: שַׁמָּה ruin; שְׁמוּעָה heard; מְשַׁמָּה waste; שָׁמֵם ruined	Freq100plus
-חומה	wall | Nouns: חָם father-in-law; חֵמֶת skin bottle; חֲמָתִי Chamathite	Freq100plus
-ציה	aridity | Nouns: צִיִּי desert-dweller; צִיּוּן monumental; צִיוֹן desert	Freq100plus
-שפה	lip | Nouns: שָׂפָם beard	Freq100plus
-גאה	mount | Stems: Qal (7) | Nouns: גָּאוֹן the same as 1346; גָּג roof; גַּאֲוָה arrogance; גַב back	Freq100plus
-אחז	seize | Stems: Qal (46), Niphal (7), Hophal (1), Piel (1) | Nouns: אֲחֻזָּה seized	Freq100plus
-שמש	sun | Nouns: שֶׁמֶשׁ sun	Freq100plus
-נשה	forget | Stems: Qal (11), Hiphil (3) | Nouns: מְנַשִּׁי Menashshite; מַשָּׁא loan; מַשָּׁאָה loan; נָשֶׁה rheumatic	Freq100plus
-הרג	smite | Stems: Qal (115), Niphal (3), Pual (2) | Nouns: הֶרֶג slaughter; הֲרֵגָה slaughter	Freq100plus
-יעץ	advise | Stems: Qal (42), Niphal (22), Hithpael (1) | Nouns: עֵצָה advice; מוֹעֵצָה purpose	Freq100plus
-שחה	depress | Stems: Qal (1), Hithpael (39), Haphel (130) | Nouns: שְׁחִית pit-fall; שְׁחוּת pit	Freq100plus
-שקל	suspend | Stems: Qal (15), Niphal (3) | Nouns: שֶׁקֶל weight; מִשְׁקָל weight; אֶשְׁקְלוֹנִי Ashkelonite; מִשְׁקוֹל weight	Freq100plus
-קהל	convoke | Stems: Niphal (19), Hiphil (20) | Nouns: קָהָל assemblage; קֹהֶלֶת assembler; קְהִלָּה assemblage	Freq100plus
-נוח	rest | Stems: Qal (30), Hiphil (75), Hophal (5) | Nouns: מָנוֹחַ quiet; הֲנָחָה permission of rest	Freq100plus
-פלל	judge | Stems: Piel (3), Hithpael (78) | Nouns: תְּפִלָּה intercession; פָּלִיל magistrate; פְּלִילָה justice; פְּלִילִי judicial	Freq100plus
-בכר	give the birthright | Stems: Hiphil (1), Piel (2), Pual (1) | Nouns: בְּכוֹר first-born; בִּכּוּר first-fruits; בְּכִירָה eldest; בִּכּוּרָה early fig	Freq100plus
-עזז	be stout | Stems: Qal (8), Hiphil (2) | Nouns: עֵז she-goat; עַז strong; עַזָּה Azzah; עֲזָאזֵל goat of departure	Freq100plus
-דור	revolution | Nouns: דָּר age	Freq100plus
-שרף	be | Stems: Qal (83), Niphal (14), Pual (1) | Nouns: שְׂרֵפָה cremation; רִצְפָּה stone; רֶשֶׁף live coal; שָׂרָף burning	Freq100plus
-כבד	be heavy | Stems: Qal (22), Niphal (26), Hiphil (16), Piel (20), Pual (3), Hithpael (3) | Nouns: כָּבֵד heavy; כָּבֵד liver; כֹּבֶד weight; כְּבוּדָּה weightiness	Freq100plus
-צר	narrow | Nouns: צָרָה tightness; מֵצַר tight	Freq100plus
-פה	this place | Nouns: פֵּאָה mouth	Freq100plus
-עור	bare | Stems: Niphal (1), Piel (5) | Nouns: עוֹר skin; מְעָרָה cavern; עִוֵּר blind; מַטָּה downward	Freq100plus
-נוס	flit | Stems: Qal (149), Hiphil (4), Piel (1) | Nouns: מָנוֹס retreat	Freq100plus
-שבר	burst | Stems: Qal (43), Niphal (57), Hiphil (1), Hophal (1), Piel (33) | Nouns: מִשְׁבָּר breaker; מִשְׁבֵּר orifice; שִׁבְרוֹן rupture	Freq100plus
-דרש	tread | Stems: Qal (131), Niphal (9) | Nouns: מִדְרָשׁ investigation	Freq100plus
-חוץ	separate by a wall | Nouns: חַיִץ wall; חִיצוֹן wall side	Freq100plus
-יחד	be | Stems: Qal (2), Piel (1) | Nouns: יַחַד unit; יָחִיד united	Freq100plus
-זקן	be old | Stems: Qal (25), Hiphil (2) | Nouns: זָקֵן old; זָקָן beard; זִקְנָה old age; זָקֻן old age	Freq100plus
-סבב	revolve | Stems: Qal (73), Niphal (20), Hiphil (31), Hophal (6), Piel (6) | Nouns: מוּסָב turn; נְסִבָּה environment; סִבָּה turn	Freq100plus
-שנא	hate | Stems: Qal (82), Niphal (2), Piel (1) | Nouns: שִׂנְאָה hate	Freq100plus
-בוש	pale | Stems: Qal (94), Hiphil (28), Piel (2), Hithpael (1) | Nouns: בֹּשֶׁת shame; בּוּשָׁה shame; בׇּשְׁנָה shamefulness; מָבֻשׁ pudenda	Freq100plus
-שחת	decay | Stems: Niphal (6), Hiphil (73), Hophal (2), Piel (31), Q (3) | Nouns: מַשְׁחִית destructive; מַשְׁחֵת destruction	Freq100plus
-דלל	slacken | Stems: Qal (12) | Nouns: דֶּלֶת something swinging; דַּל dangling; דַּלָּה dangling; דָּלִיָּה dangling	Freq100plus
-משל	rule | Stems: Qal (84), Niphal (5), Hiphil (1), Piel (1), Hithpael (1) | Nouns: מָשָׁל pithy; מֶמְשָׁלָה rule; מִמְשָׁל ruler; מֹשֶׁל empire	Freq100plus
-נסע	pull | Stems: Qal (132), Niphal (2), Hiphil (8) | Nouns: מַסַּע departure; מַסָּע missile	Freq100plus
-פר	bullock | Nouns: פָּרָה heifer	Freq100plus
-חזה	gaze | Stems: Qal (54) | Nouns: חָזוֹן sight; חֹזֶה beholder; חָזֶה breast; חִזָּיוֹן revelation	Freq100plus
-נחושה	copper | Nouns: נְחֹשֶׁת copper; נְחָשׁ copper; נְחֻשְׁתָּן made of copper	Freq100plus
-חבר	join | Stems: Qal (10), Hiphil (1), Piel (8), Pual (5), Hithpael (2) | Nouns: חָבֵר associate; מַחְבֶּרֶת junction; חֲבַר associate; חֶבֶר society	Freq100plus
-עצם	bind fast | Stems: Qal (16), Piel (1) | Nouns: עֶצֶם bone; עֹצֶם power; עׇצְמָה powerfulness; תַּעֲצֻמָה might	Freq100plus
-צפון	hidden	Freq100plus
-שכם	load up | Stems: Hiphil (65) | Nouns: שְׁכֶם neck; שִׁכְמָה the shoulderbone; שִׁכְמִי Shikmite	Freq100plus
-ארך	be | Stems: Qal (3), Hiphil (26) | Nouns: אֹרֶךְ length; אָרֵךְ long; אַרְכִּי Arkite; אָרֹךְ long	Freq100plus
-בכה	weep | Stems: Qal (109), Piel (2) | Nouns: בְּכִי weeping; בָּכָא weeping tree; בֶּכֶה weeping; בְּכִית weeping	Freq100plus
-אוה	wish for | Stems: Piel (9), Hithpael (14) | Nouns: אִי habitable spot; אוֹי lamentation; תַּאֲוָה longing; אַוָּה longing	Freq100plus
-כרם	garden | Nouns: כַּרְמֶל field; כַּרְמְלִי Karmelite; כַּרְמִי Karmite	Freq100plus
-חשך	be dark | Stems: Qal (45), Niphal (2), Hiphil (6), Piel (1), Pual (2) | Nouns: חֹשֶׁךְ dark; מַחְשָׁךְ darkness; חֵשֶׁק delight; חֲשׁוֹךְ dark	Freq100plus
-רחם	fondle | Stems: Piel (26), Pual (3) | Nouns: רַחַם compassion; רֶחֶם womb; רַחוּם compassionate; יְרַחְמְאֵלִי Jerachmeelite	Freq100plus
-זרח	irradiate | Stems: Qal (18) | Nouns: מִזְרָח sunrise; אֶזְרָח growth; זַרְחִי Zarchite; אֶזְרָחִי Ezrachite	Freq100plus
-גדד	crowd | Stems: Qal (2), Hithpael (7) | Nouns: גְּדוּד crowd; גָּדִי Gadite; גִּיד thong; גַּד coriander	Freq100plus
-באר	dig | Stems: Piel (3) | Nouns: בְּאֵר pit; בְּאֵרֹתִי Beerothite; בֹּאר cistern; בְּאֹשׁ stench	Freq100plus
-פרה	bear fruit | Stems: Qal (22), Hiphil (4) | Nouns: פְּרִי fruit	Freq100plus
-זמר	trim | Stems: Qal (2), Niphal (1), Piel (41) | Nouns: מִזְמוֹר music; מְזַמְּרָה tweezer; זְמָר instrumental music; זִמְרָה musical	Freq100plus
-צפה	lean | Stems: Qal (26), Piel (44), Pual (2) | Nouns: צִפּוּי encasement; מִצְפֶּה observatory; צָפָה inundation; צְפוֹנִי Tsephonite	Freq100plus
-עבדה	work	Freq100plus
-אז	at that time | Nouns: אֲזַי at that time	Freq100plus
-כמו	as | Nouns: כְּנֵמָא so	Freq100plus
-רדף	run after | Stems: Qal (90), Niphal (2), Piel (8), Pual (1) | Nouns: מֻרְדָּף persecuted	Freq100plus
-קשה	be dense | Stems: Qal (5), Niphal (1), Hiphil (20), Piel (1) | Nouns: קֶשֶׁת bow; קָשֶׁה severe; מִקְשָׁה rounded; מִקְשֶׁה turned	Freq100plus
-נחל	stream	Freq100plus
-סוס	horse | Nouns: סוּסָה mare; סָס moth	Freq100plus
-חרש	scratch | Stems: Qal (31), Niphal (2), Hiphil (38), Hithpael (1) | Nouns: חָרָשׁ fabricator; חֹרֶשׁ forest; חֵרֵשׁ deaf; חֲרֹשֶׁת work	Freq100plus
-עפר	be dust | Stems: Piel (1) | Nouns: עָפָר dust; עֹפֶר fawn	Freq100plus
-חלב	fat | Nouns: חָלָב milk; חֶלְבְּנָה galbanam	Freq100plus
-נהר	sparkle | Stems: Qal (6) | Nouns: נָהָר stream; נְהַר river; מִנְהָרָה channel; נְהָרָה daylight	Freq100plus
-שלושים	thirty	Freq100plus
-גדל	be | Stems: Qal (53), Hiphil (33), Piel (16), Pual (1), Hithpael (4) | Nouns: גֹּדֶל magnitude; גְּדִל thread; גָּדֵל large	Freq100plus
-מלכות	rule | Nouns: מַלְכוּ dominion	Freq100plus
-אף	accession | Nouns: אַף also.	Freq100plus
-ערך	row | Stems: Qal (63), Hiphil (4) | Nouns: עֵרֶךְ pile; מַעֲרָכָה arrangement; מַעֲרֶכֶת arrangement; מַעֲרָךְ arrangement	Freq100plus
-כסא	covered | Nouns: כֵּס sworn.; כׇּרְסֵא throne	Freq100plus
-קבץ	grasp | Stems: Qal (31), Niphal (30), Piel (28), Pual (1), Hithpael (8) | Nouns: קִבּוּץ throng; קְבֻצָה hoard	Freq100plus
-נשיא	exalted	Freq100plus
-פשע	break | Stems: Qal (40), Niphal (1) | Nouns: פֶּשַׁע revolt	Freq100plus
-גאל	redeem | Stems: Qal (58), Niphal (11), Hiphil (1), Pual (4), Hithpael (2) | Nouns: גְּאֻלָּה redemption; גֹּאֶל profanation	Freq100plus
-קבר	inter | Stems: Qal (59), Niphal (39), Piel (5), Pual (1)	Freq100plus
-שית	place | Stems: Qal (61), Hiphil (8), Hophal (2) | Nouns: שְׁתִי fixture; שַׁיִת scrub; שִׁית dress; שָׁתָה basis	Freq100plus
-עזר	surround | Stems: Qal (40), Niphal (4), Hiphil (1) | Nouns: עֵזֶר aid; עֲזָרָה inclosure	Freq100plus
-קצה	extremity | Nouns: קָצָה termination	Freq100plus
-נחם	sigh | Stems: Niphal (48), Piel (25), Pual (2), Hithpael (7) | Nouns: נֶחָמָה consolation; נֹחַם ruefulness	Freq100plus
-שדד	be burly | Stems: Qal (28), Niphal (1), Hophal (2), Piel (3), Pual (20) | Nouns: שַׁדַּי Almighty; אַשְׁדּוֹדִי Ashdodite; שִׁדָּה wife; אַשְׁדּוֹדִית in the language of Ashdod	Freq100plus
-חתת	prostrate | Stems: Qal (17), Niphal (28), Hiphil (2), Piel (1) | Nouns: חִתִּי Chittite; חִתִּית fear; חַת crushed; חִתָּה fear	Freq100plus
-יטב	be | Stems: Qal (44), Hiphil (66) | Nouns: מֵיטָב best	Freq100plus
-שלך	throw | Stems: Hiphil (85), Hophal (13) | Nouns: שָׁלָךְ bird of prey; שַׁלֶּכֶת felling	Freq100plus
-חרר	glow | Stems: Qal (85), Niphal (8), Hiphil (2), Piel (2), Hithpael (4), Tiphil (2) | Nouns: חֳרִי burning; תַּחֲרָא corslet; חַרְחֻר fever; חָרֵר arid	Freq100plus
-קלל	be | Stems: Qal (12), Niphal (11), Hiphil (12), Piel (32), Pual (2), Hithpael (1) | Nouns: קְלָלָה vilification; קַל light; קָלָל brightened; קְלֹקֵל insubstantial	Freq100plus
-רקק	spit | Stems: Qal (1) | Nouns: רַק leanness; רָקִיק cake; רַקָּה thinness; רֹק spittle	Freq100plus
-גבר	be strong | Stems: Qal (17), Hiphil (2), Piel (2), Hithpael (3) | Nouns: גֶּבֶר valiant; גְּבַר certain, man.; גְּבֶרֶת mistress; גְּבִירָה mistress	Freq100plus
-ישר	be straight | Stems: Qal (13), Hiphil (2), Piel (8), Pual (1) | Nouns: יָשָׁר straight; מֵישָׁר evenness; יֹשֶׁר right; יִשְׁרָה rectitude	Freq100plus
-רעב	hunger | Stems: Qal (11), Hiphil (1) | Nouns: רָעָב hunger; רָעֵב hungry; רְעָבוֹן famine	Freq100plus
-כח	vigor	Freq100plus
-לשון	tongue | Stems: Hiphil (1), Piel (1) | Nouns: לִשָּׁן speech	Freq100plus
-נצב	station | Stems: Niphal (51), Hiphil (19), Hophal (2) | Nouns: מַצֵּבָה stationed; מַצָּב spot; מַצֶּבֶת stationary; מֻצָּב station	Freq100plus
-חמה	heat	Freq100plus
-חפץ	incline | Stems: Qal (72) | Nouns: חֵפֶץ pleasure; חָפֵץ pleased with	Freq100plus
-חרף	pull off | Stems: Qal (2), Niphal (1), Piel (28) | Nouns: חֶרְפָּה contumely; חֹרֶף crop gathered; חֲרוּפִי a Charuphite	Freq100plus
-נגש	be | Stems: Qal (61), Niphal (17), Hiphil (27), Hophal (2), Hithpael (1)	Freq100plus
-פעם	stroke | Nouns: פַּעֲמֹן bell	Freq100plus
-שבע	sate | Stems: Qal (75), Niphal (1), Hiphil (10), Piel (1) | Nouns: שָׂבָע copiousness; שֹׂבַע satisfaction; שׇׂבְעָה satiety; שָׂבֵעַ satiated	Freq100plus
-צלם	phantom | Stems: Qal (1), Hiphil (1) | Nouns: צֵל shade; צַלְמָוֶת shade of death; צֵלֶל shade; מְצֻלָּה shade	Freq100plus
-זור	turn aside | Stems: Qal (17), Niphal (3), Hophal (1), Piel (16), Pual (3) | Nouns: זֵר chaplet; זֶרֶת spread; מִזְרֶה shovel; זָרָא disgust	Freq100plus
-צחק	laugh outright | Stems: Qal (6), Piel (7) | Nouns: צְחֹק laughter	Freq100plus
-לכד	catch | Stems: Qal (53), Niphal (35), Hithpael (2) | Nouns: לֶכֶד capture; מַלְכֹּדֶת snare	Freq100plus
-נבל	wilt | Stems: Qal (19), Hiphil (1), Piel (3) | Nouns: נְבֵלָה flabby; נְבָלָה foolishness; נָבָל stupid; נַבְלוּת disgrace	Freq100plus
-גמל	treat | Stems: Qal (20), Niphal (3) | Nouns: גָּמָל camel; גְּמוּל treatment; גְּמוּלָה meaning the same; תַּגְמוּל bestowment	Freq100plus
-כבש	ram | Nouns: כֶּשֶׂב young sheep; כִּשְׂבָּה young ewe	Freq100plus
-אשר	be straight | Stems: Qal (1), Piel (6), Pual (2) | Nouns: אֶשֶׁר happiness; אֻשַּׁרְנָא wall; תְּאַשּׁוּר cedar; אֹשֶׁר happiness	Freq100plus
-סגר	shut | Stems: Qal (37), Niphal (8), Hiphil (18), Piel (2), Pual (5) | Nouns: מִסְגֶּרֶת enclosing; מַסְגֵּר fastener; סְגוֹר shut up; סַגְרִיד pouring rain	Freq100plus
-שפך	spill forth | Stems: Qal (93), Niphal (8), Pual (3), Hithpael (3) | Nouns: שֶׁפֶךְ emptying; שׇׁפְכָה pipe	Freq100plus
-מגרש	suburb	Freq100plus
-שקר	cheat | Stems: Qal (1), Piel (5) | Nouns: שֶׁקֶר untruth	Freq100plus
-בער	kindle | Stems: Qal (41), Niphal (4), Hiphil (8), Piel (38), Pual (1) | Nouns: בְּעִיר cattle; בַּעַר foot; בְּעֵרָה burning	Freq100plus
-רפא	mend | Stems: Qal (23), Niphal (17), Piel (9), Hithpael (3) | Nouns: מַרְפֵּא curative; תְּרָפִים Teraphim; רָפָא lax; רְפֻאָה medicament	Freq100plus
-מהר	be liquid | Stems: Qal (2), Niphal (4), Piel (61) | Nouns: מְהֵרָה hurry; מַהֵר hurrying; מֹהַר price	Freq100plus
-עוף	fly | Stems: Qal (17), Hiphil (1), Piel (4), Hithpael (1) | Nouns: עוֹף bird; עַפְעַף eyelash; עֵיפָה obscurity; מוּעָף covered	Freq100plus
-מכר	sell | Stems: Qal (40), Niphal (18), Hithpael (3) | Nouns: מִמְכָּר merchandise; מֶכֶר merchandise; מָכִירִי Makirite; מִמְכֶּרֶת sale	Freq100plus
-תועבה	disgusting	Freq100plus
-הפך	turn | Stems: Qal (51), Niphal (34), Hophal (1), Hithpael (4) | Nouns: תַּהְפֻּכָה perversity; מַהְפֵּכָה destruction; מַהְפֶּכֶת wrench; הֹפֶךְ upset	Freq100plus
-זנה	commit adultery | Stems: Qal (82), Hiphil (8), Pual (1) | Nouns: זָנוּן adultery; זְנוּת adultery	Freq100plus
-רנן	creak | Stems: Qal (19), Hiphil (5), Piel (28), Pual (1), Hithpael (1) | Nouns: רִנָּה creaking; רְנָנָה shout; תֹּרֶן pole; אֹרֶן ash	Freq100plus
-טהר	be pure | Stems: Qal (34), Piel (24), Pual (1), Hithpael (19) | Nouns: טׇהֳרָה purification; טֹהַר brightness; טְהוֹר purity	Freq100plus
-נגב	south	Freq100plus
-נצח	goal | Stems: Niphal (1), Piel (64) | Nouns: נֵצַח juice	Freq100plus
-עור	wake | Stems: Qal (14), Niphal (7), Hiphil (29), Piel (12), Hithpael (5) | Nouns: עַיִר young ass; עָר foe; עָר enemy.; עֵרִי Erite	Freq100plus
-עז	strength | Nouns: עׇזִּיאֵלִי Uzzielite; עׇזְנִיָּה sea-eagle	Freq100plus
-לבש	wrap around | Stems: Qal (57), Hiphil (22), Pual (4) | Nouns: תַּלְבֹּשֶׁת garment	Freq100plus
-משח	rub with oil | Stems: Qal (48), Niphal (5) | Nouns: מָשִׁיחַ anointed; מִמְשַׁח outspread; מְשַׁח oil	Freq100plus
-עמוד	column	Freq100plus
-שבה	transport into captivity | Stems: Qal (25), Niphal (8) | Nouns: שְׁבִי exiled; שִׁבְיָה exile; שְׁבוּ gem	Freq100plus
-שכח	mislay | Stems: Qal (72), Niphal (13), Hiphil (6), Piel (1), Hithpael (1), u (2) | Nouns: שָׁכֵחַ oblivious	Freq100plus
-כנף	project laterally | Stems: Niphal (1) | Nouns: כָּנָף edge	Freq100plus
-חמור	ass	Freq100plus
-יען	heed | Nouns: יַעֲנָה owl.; יָעֵן ostrich	Freq100plus
-פעל	do | Stems: Qal (53) | Nouns: פֹּעַל act; פְּעֻלָּה work	Freq100plus
-יבש	be ashamed | Stems: Qal (41), Hiphil (15), Piel (2) | Nouns: יַבָּשָׁה dry ground; יָבֵשׁ dry; יַבֶּשֶׁת dry ground; יַבֶּשֶׁת dry land	Freq100plus
-לוה	twine | Stems: Qal (6), Niphal (15), Hiphil (8) | Nouns: לִוְיָתָן wreathed; לֵוִי Levite.; לֹיָה wreath; לִוְיָה attached	Freq100plus
-קצר	dock off | Stems: Qal (41), Hiphil (1), Piel (1) | Nouns: קָצִיר severed; קָצֵר short; קֹצֶר shortness	Freq100plus
-במה	elevation	Freq100plus
-ברח	bolt | Stems: Qal (54), Hiphil (4) | Nouns: בְּרִיחַ bolt; מִבְרָח refugee	Freq100plus
-עמק	be | Stems: Qal (1), Hiphil (8) | Nouns: עֵמֶק vale; עָמֹק deep; מַעֲמָק deep; עָמֵק deep	Freq100plus
-רוץ	run | Stems: Qal (91), Hiphil (3), Piel (1) | Nouns: מֵרוֹץ run	Freq100plus
-תמיד	continuance	Freq100plus
-זרוע	arm | Nouns: אֶזְרוֹעַ arm; אֶדְרָע arm; דְּרַע arm	Freq100plus
-ענן	act covertly | Stems: Piel (9) | Nouns: עָנָן cloud; עֲנָנָה cloudiness	Freq100plus
-אשם	be guilty | Stems: Qal (33), Niphal (1) | Nouns: אָשָׁם guilt; אַשְׁמָה guiltiness; אָשֵׁם guilty	Freq100plus
-דוד	love | Nouns: יְדִיד loved; דּוּד pot; דּוּדַי boiler; דַּד breast	Freq100plus
-עגל	circular | Nouns: עֵגֶל calf; עֲגָלָה revolving; עֶגְלָה calf; מוּצָק fusion	Freq100plus
-מעט	little	Freq100plus
-שור	turn | Stems: Qal (2) | Nouns: שׁוֹר bullock; שׁוּר wall; תּוֹר bull; שׁוּר wall.	Freq100plus
-שעיר	shaggy | Nouns: שְׂעִירָה she-goat; שָׂעִיר shower	Freq100plus
-יסד	set | Stems: Qal (10), Niphal (2), Hophal (3), Piel (8), Pual (6) | Nouns: סוֹד session; יְסוֹד foundation; מוֹסָד foundation; מוּסָד foundation	Freq100plus
-ניר	lamp | Stems: Qal (2) | Nouns: תַּנּוּר fire-pot; נוּר fire; מָנוֹר yoke	Freq100plus
-קרה	light upon | Stems: Qal (6), Niphal (6), Hiphil (3), Piel (3) | Nouns: קִרְיָה city; מִקְרֶה met; קְרִי hostile encounter; קֶרֶת city	Freq100plus
+הוא	Verbs: Qal/be (3514), Niphal/it has occurred (21) | Nominals: יֵשׁ [Particle] is; הַוָּה [Noun (f)] falling); אִיתַי [Particle] entity; הֹוָה [Noun (f)] ruin	Freq100plus
+אות	Verbs: Niphal/we will agree (4) | Nominals: אֵת [Particle] self; אוֹת [Noun (f)] signal; אָת [Noun (f)] portent; יַת [Particle] sign of the object of a verb	Freq100plus
+בנה	Verbs: Qal/he passed [the] night (331), Niphal/it will be rebuilt (28) | Nominals: בֵּן [Noun (m)] son; בַּיִת [Noun (m)] a house; בַּת [Noun (f)] daughter; אֶבֶן [Noun (f)] stone	Freq100plus
+עלה	Verbs: Qal/he went up (595), Niphal/it was taken up (16), Hiphil/he offered up (213), Hophal/it had been offered up (3), Hithpael/he lift (1) | Nominals: עַל [Prep] above; מַעַל [Adj] upper part; מַעֲלָה [Noun (f)] elevation; עַל [Prep] about, against, concerning, for, (there-) fore, from, in, × more, of, (there-, u	Freq100plus
+אשר	Nominals: שָׁם [Adj] there	Freq100plus
+לא	Nominals: אַל [Adj] not; אֱלִיל [Adj] nothing; אַל תַּשְׁחֵת [Noun (m)] 'Thou must not destroy'; אִלּוּ [Conj] nay	Freq100plus
+אל		Freq100plus
+אמר	Verbs: Qal/he said (5280), Niphal/it will be said (21), Hiphil/you have declared (1), Hithpael/they boast (1) | Nominals: אֱמֹרִי [Noun (m)] Emorite; אֵמֶר [Noun (m)] something said; אֹמֶר [Noun (m)] promise, speech, thing, word.; מַאֲמַר [Noun (m)] said	Freq100plus
+כל	Nominals: כֹּל [Noun (m)] all, any,   (forasmuch) as,   be-(for this) cause, every,   no (manner, -ne),   	Freq100plus
+כי		Freq100plus
+מלך	Verbs: Qal/he reigned (243), Niphal/it considered (1), Hiphil/they made king (40), Hophal/he had been made king (1) | Nominals: מֶלֶךְ [Noun (m)] king; מֶלֶךְ [Noun (m)] king; מַמְלָכָה [Noun (f)] dominion; מַלְכָּה [Noun (f)] queen	Freq100plus
+עמם	Verbs: Hophal/it is dimmed (1) | Nominals: עַם [Noun (m)] people; עִם [Prep] with; עִמָּד [Prep] along with; עֻמָּה [Noun (f)] conjunction	Freq100plus
+אנש	Verbs: Qal/incurable (2), Niphal/he was sick (1), Hithpael/pluck up courage (1) | Nominals: אִישׁ [Noun (m)] man; אִשָּׁה [Noun (f)] woman; אֱנוֹשׁ [Noun (m)] mortal; אִישׁוֹן [Noun (m)] little man	Freq100plus
+עשה	Verbs: Qal/he did (2410), Niphal/it will be done (98), Piel/they squeezed (2), Pual/I was made (1) | Nominals: מַעֲשֶׂה [Noun (m)] action	Freq100plus
+דבר	Verbs: Qal/who/ was speaking (40), Niphal/they speak together (4), Hiphil/he has subdued (2), Piel/he spoke (1060), Pual/[is] spoken (2), Hithpael/speaking (2) | Nominals: דָּבָר [Noun (m)] word; מִדְבָּר [Noun (m)] pasture; דֶּבֶר [Noun (m)] pestilence; דִּבְרָה [Noun (m)] reason	Freq100plus
+אלוה	Nominals: אֱלֹהִים [Noun (m)] gods; אֱלָהּ [Noun (m)] God	Freq100plus
+יד	Verbs: Qal/he will put out (5), Hiphil/[was] praising (66), Piel/they threw down (2), Hithpael/he will confess (11) | Nominals: יְהוּדִי [Noun (m)] Jehudite; תּוֹדָה [Noun (f)] extension; יַד [Noun (f)] hand, power.; יְהוּדִית [Adj] Jewish	Freq100plus
+בוא	Verbs: Qal/he came (1872), Hiphil/he brought (403), Hophal/it was brought (24) | Nominals: תְּבוּאָה [Noun (f)] income; מָבוֹא [Noun (m)] entrance; מוֹבָא [Noun (m)] entrance; בְּאָה [Noun (f)] entrance	Freq100plus
+הוא	Nominals: כֹּה [Particle] like this; הֵנָּה [Adj] hither; כָּכָה [Adj] just so; הֵנָּה [p] themselves	Freq100plus
+ארץ	Nominals: אֲרַע [Noun (m)] earth; אַרְעִית [Noun (f)] bottom; אֲרַק [Noun (f)] earth	Freq100plus
+שרה	Verbs: Qal/you have struggled (2) | Nominals: יִשְׂרְאֵלִי [Adj] a Jisreelite; מִשְׂרָה [Noun (f)] empire	Freq100plus
+יום	Nominals: יוֹמָם [Adj] daily; יוֹם [Noun (m)] day; יֵם [Noun (m)] warm spring; נְמוּאֵלִי [Adj] Nemuelite	Freq100plus
+עדה	Verbs: Qal/it passes by (8), Hiphil/[one who] removes (1) | Nominals: עַד [Prep] as far; עַתָּה [Adj] at this time; עֵת [Noun (f)] time; בְּעַד [Prep] in up to	Freq100plus
+פנים	Nominals: פְּנִימָה [Adj] faceward	Freq100plus
+נתן	Verbs: Qal/he gave (1619), Niphal/it will be given (82), Hophal/let it be given (8) | Nominals: מַתָּנָה [Noun (f)] present; מַתָּת [Noun (f)] present; מַתָּן [Noun (m)] present; מַתְּנָא [Noun (f)] gift.	Freq100plus
+אב	Nominals: אוֹב [Noun (m)] mumble; אַב [Noun (m)] father.	Freq100plus
+זה	Nominals: זֹאת [d] this; דִּי [Particle] that; זוּ [d] this; זֹה [d] this	Freq100plus
+הלך	Verbs: Qal/let it go (1350), Niphal/I have vanished (1), Hiphil/I led (29), Piel/I have gone about (22), Hithpael/they went about (62) | Nominals: הֲלִיכָה [Noun (f)] walking; מַהֲלָךְ [Noun (m)] walk; הֲלָךְ [Noun (m)] journey; הֵלֶךְ [Noun (m)] journey	Freq100plus
+ראה	Verbs: Qal/see (1040), Niphal/he appeared (99), Hiphil/show (14), Hophal/[are] being shown (4), Pual/they were seen (1), Hithpael/let us look at one another (5) | Nominals: מַרְאֶה [Noun (m)] view; רְאוּבֵנִי [Adj] Reubenite; מַרְאָה [Noun (f)] vision; רֹאֶה [Noun (m)] seer	Freq100plus
+שמע	Verbs: Qal/hear (978), Niphal/it will be heard (43), Hiphil/make a proclamation (45), Piel/he summoned (2), M/they may obey (1) | Nominals: שֵׁמַע [Noun (m)] heard; יִשְׁמָעֵאלִי [Adj] Jishmaelite; מִשְׁמַעַת [Noun (f)] audience; שֹׁמַע [Noun (m)] report	Freq100plus
+שום	Verbs: Qal/he put (487), Hiphil/she set (4), Hophal/it was put (1), Q/it was set (1) | Nominals: שֵׁם [Noun (m)] appellation; שֻׁם [Noun (m)] name.; תְּשׂוּמֶת [Noun (f)] deposit	Freq100plus
+אנכי	Nominals: אֲנִי [p] I; אֲנַחְנוּ [p] we; נַחְנוּ [p] we	Freq100plus
+מה	Verbs: Hithpael/delay (8) | Nominals: מִי [i] who?; מָן [Noun (m)] whatness; מָן [i] who; מָה [i] how great (mighty), that which, what(-soever), why.	Freq100plus
+מן	Nominals: מִן [Prep] according, after,   because,   before, by, for, from, × him, × more than, (out) 	Freq100plus
+כון	Verbs: Niphal/established (67), Hiphil/prepare (100), Hophal/[is] prepared (6), Piel/you have established (18), Pual/they are established (2), Hithpael/it may be established (4) | Nominals: כֵּן [Adj] set upright; אַךְ [Adj] affirmation; אָכֵן [Adj] firmly; כֵּן [Noun (m)] stand	Freq100plus
+עבד	Verbs: Qal/serve (199), Niphal/it is tilled (4), Hiphil/they compelled to labor (5), Pual/it has been worked (2) | Nominals: עֶבֶד [Noun (m)] servant; עֲבַד [Noun (m)] servant; עַבְדוּת [Noun (f)] servitude; עֲבִידָה [Noun (f)] labor	Freq100plus
+הן	Nominals: הִנֵּה [dp] lo!; הֵן [inj] lo!; לָהֵן [Conj] for if	Freq100plus
+עיר		Freq100plus
+ידע	Verbs: Qal/you will know (752), Niphal/it was known (40), Hiphil/make known (42), Hophal/it has been made known (3), Piel/you caused to know (1), Pual/I have directed (1), Hithpael/when/ made himself known (2) | Nominals: דַּעַת [Noun] knowledge; יִדְּעֹנִי [Noun (m)] knowing; דֵּעָה [Noun (f)] knowledge; דֵּעַ [Noun (m)] knowledge	Freq100plus
+אתה	Nominals: אַנְתָּה [p] thou	Freq100plus
+ישב	Verbs: Qal/[the] inhabitants of (966), Niphal/inhabited (8), Hiphil/he caused to dwell (27), Hophal/you are made to dwell (2), Piel/they will set up (1) | Nominals: שֶׁבֶת [Noun (f)] session; שִׁיבָה [Noun (f)] residence	Freq100plus
+יצא	Verbs: Qal/he went out (729), Hiphil/he brought out (197), Hophal/[was being] brought out (5), Shaphel/it was brought forth (1) | Nominals: צֶאֱצָא [Noun (m)] issue; צָאָה [Noun (f)] issue; יָצִיא [Adj] issue	Freq100plus
+שוב	Verbs: Qal/he returned (644), Hiphil/he brought back (264), Hophal/it has been returned (5), Piel/he restores (6) | Nominals: שׁוֹבָב [Adj] apostate; שׁוּבָה [Noun (f)] return; שִׁיבָה [Noun (m)] return	Freq100plus
+אם		Freq100plus
+מות	Verbs: Qal/he died (601), Hiphil/put to death (67), Hophal/he will be put to death (68), Piel/[was] killing (4) | Nominals: מָוֶת [Noun (m)] death; מָמוֹת [Noun (m)] mortal disease; תְּמוּתָה [Noun (f)] execution; מוֹת [Noun (m)] death	Freq100plus
+לקח	Verbs: Qal/he took (848), Niphal/it has been taken (9), Hophal/she was taken (6), Pual/it was taken (9), Hithpael/[was] flashing (2) | Nominals: לֶקַח [Noun (m)] received; מַלְקוֹחַ [Noun (m)] jaws; מִקָּח [Noun (m)] reception; מַקָּחָה [Noun (f)] received	Freq100plus
+אנה	Verbs: Qal/they will lament (2), Piel/he allowed to happen (1), Pual/it will happen (2), Hithpael/[is] seeking an opportunity (1) | Nominals: אֵת [Prep] nearness; אֳנִיָּה [Noun (f)] ship; אֳנִי [Noun] ship; מָאן [Noun (m)] utensil	Freq100plus
+עין	Verbs: Qal/looking at (1) | Nominals: עַיִן [Noun (f)] eye	Freq100plus
+שלח	Verbs: Qal/he sent (473), Niphal/they were sent (1), Hiphil/I will send (5), Piel/I will send (182), Pual/they were sent off (10) | Nominals: שֻׁלְחָן [Noun (m)] table; שֶׁלַח [Noun (m)] missile	Freq100plus
+לבב	Verbs: Niphal/he will become intelligent (1), Piel/let her make cakes (2) | Nominals: לֵב [Noun (m)] heart; לֵבָב [Noun (m)] heart; לְבַב [Noun (m)] heart.; לִבָּה [Noun (f)] heart	Freq100plus
+אין	Nominals: אַיֵּה [Adj] where?; אַי [Adj] where?; אַיִן [Adj] where?; אֵיפֹה [Adj] what place?	Freq100plus
+קרא	Verbs: Qal/he called (679), Niphal/it is called (68), Hiphil/you have caused to happen to (1), Pual/it will be called (6) | Nominals: מִקְרָא [Noun (m)] called; קֹרֵא [Noun (m)] caller; קָרִיא [Adj] called; קְרִיאָה [Noun (f)] proclamation	Freq100plus
+אכל	Verbs: Qal/you will eat (646), Niphal/it will be eaten (45), Hiphil/I caused to eat (5), Pual/[was] consumed (5) | Nominals: אֹכֶל [Noun (m)] food; מַאֲכָל [Noun (m)] eatable; מַאֲכֶלֶת [Noun (f)] eat; מַאֲכֹלֶת [Noun (f)] eaten	Freq100plus
+אח	Nominals: אָחוֹת [Noun (f)] sister; אֲחוֹחִי [Adj] Achochite; אַח [Noun (m)] brother.; אַחֲוָה [Noun (m)] fraternity	Freq100plus
+שנה	Nominals: שְׁנָה [Noun (f)] year.	Freq100plus
+אחר	Verbs: Qal/I have delayed (1), Hiphil/he was delayed (1), Piel/you delay (15) | Nominals: אַחַר [Adj] the hind part; אַחֵר [Adj] hinder; אַחֲרִית [Noun (f)] last; מָחָר [Noun (m)] deferred	Freq100plus
+ענה	Verbs: Qal/he answered (250), Niphal/will it be answered (9), Hiphil/I will answer (3), Piel/sing (33), Pual/it will humble [itself] (3), Hithpael/humble yourself (6) | Nominals: מַעַן [Particle] heed; עָנִי [Adj] depressed; עֳנִי [Noun (m)] depression; עָנָו [Noun (m)] depressed	Freq100plus
+אול	Nominals: אֵל [Noun (m)] strength; אַיִל [Noun (m)] strength; אֵלָה [Noun (f)] oak; אַיָּל [Noun (m)] stag	Freq100plus
+אדון	Nominals: אֲדֹנָי [Noun (m)] Lord; אֶדֶן [Noun (m)] basis; אַדּוֹן [Adj] Addon	Freq100plus
+משה	Nominals: שֵׁשׁ [Noun (m)] bleached; מֶשִׁי [Noun (m)] silk; שַׁיִשׁ [Noun (m)] white	Freq100plus
+אדם	Verbs: Qal/they were red (1), Hiphil/they are red (1), Pual/dyed red (7), Hithpael/it will be red (1) | Nominals: אָדָם [Noun (m)] ruddy; אֲדָמָה [Noun (f)] soil; אָדֹם [Adj] rosy; אֲדַמְדָּם [Adj] reddish	Freq100plus
+נשא	Verbs: Qal/he lifted up (547), Niphal/lifted up (33), Hiphil/they will cause to bear (2), Piel/he had exalted (7), Hithpael/do you exalt yourselves (8) | Nominals: מַשָּׂא [Noun (m)] burden; מַשְׂאֵת [Noun (f)] raising; שְׂאֵת [Noun (f)] elevation; מַשֹּׂא [Noun (m)] partiality	Freq100plus
+לחם	Verbs: Qal/eat (9), Niphal/fight (161) | Nominals: מִלְחָמָה [Noun (f)] battle; לֶחֶם [Noun (m)] food; לָחֶם [Noun (m)] battle	Freq100plus
+חוה	Verbs: Qal/he lived (201), Hiphil/declare (25), Piel/I will tell (32) | Nominals: חַי [Adj] alive; חִוִּי [Noun (m)] Chivvite; מִחְיָה [Noun (f)] preservation of life; חַוָּה [Noun (f)] village	Freq100plus
+כהן	Verbs: Piel/serve as priests (20) | Nominals: כֹּהֵן [Noun (m)] officiating; כְּהֻנָּה [Noun (f)] priesthood; כָּהֵן [Noun (m)] priest.	Freq100plus
+אחד	Verbs: Hithpael/be sharp (1) | Nominals: אֶחָד [Adj] united; חַד [Adj] one	Freq100plus
+חול	Verbs: Qal/tremble (71), Niphal/he waited (19), Hiphil/they writhed (63), Hophal/¿/ will it be brought forth (5), Piel/dancers (78), Pual/I was brought forth (9), Hithpael/she agonized (7) | Nominals: חַיִל [Noun (m)] force; חָלָל [Noun (m)] pierced; חֳלִי [Noun (m)] malady; חוֹל [Noun (m)] sand	Freq100plus
+דרך	Verbs: Qal/it will tread (47), Hiphil/he leads (3) | Nominals: דֶּרֶךְ [Noun (m)] road; מִדְרָךְ [Noun (m)] treading	Freq100plus
+עשר	Nominals: עָשָׂר [Noun] ten; עֶשְׂרִים [Noun] twenty; עֲשִׂירִי [Adj] tenth	Freq100plus
+גם	Nominals: מְגַמָּה [Noun (f)] accumulation	Freq100plus
+אל	Nominals: אֵלֶּה [d] these; אֲלוּ [inj] lo!; אֲרוּ [inj] lo!	Freq100plus
+נפש	Verbs: Niphal/he refreshed himself (3) | Nominals: נֶפֶשׁ [Noun (f)] breathing creature	Freq100plus
+עבר	Verbs: Qal/pass over (442), Niphal/it was passed through (1), Hiphil/take away (64), Piel/he made pass (2), Hithpael/he was furious (7) | Nominals: עֵבֶר [Noun (m)] across; עֶבְרָה [Noun (f)] outburst; עֲבַר [Noun (m)] beyond, this side.; עֲבָרָה [Noun (f)] crossing-place	Freq100plus
+שנה	Verbs: Qal/I will repeat (12), Niphal/[the] being repeated of (1), Piel/[you are] changing (5), Hithpael/you will disguise yourself (1) | Nominals: שְׁנַיִם [Noun] two; שֵׁנִי [Noun] double; מִשְׁנֶה [Noun (m)] repetition	Freq100plus
+מצור	Nominals: מִצְרִי [Adj] Mitsrite	Freq100plus
+שמר	Verbs: Qal/you will keep (384), Niphal/take heed (37), Piel/[those who] pay regard (1), Hithpael/I have kept myself (2) | Nominals: מִשְׁמֶרֶת [Noun (f)] watch; מִשְׁמָר [Noun (m)] guard; שָׁמִיר [Noun (m)] thorn; שֶׁמֶר [Noun (m)] preserved	Freq100plus
+קום	Verbs: Qal/he arose (423), Hiphil/I will establish (132), Hophal/it was set up (3), Piel/confirm (14), Hithpael/[will] rise up (2) | Nominals: קוֹמָה [Noun (f)] height; קָמָה [Noun (f)] rises; יְקוּם [Noun (m)] standing; קוֹמְמִיּוּת [Noun (f)] elevation	Freq100plus
+זבח	Verbs: Qal/sacrifice (106), Piel/[were] sacrificing (22) | Nominals: מִזְבֵּחַ [Noun (m)] altar; זֶבַח [Noun (m)] slaughter; מַדְבַּח [Noun (m)] sacrificial altar	Freq100plus
+חנן	Verbs: Qal/they encamped (157), Hophal/he is shown favor (2), Piel/to have compassion (4), Hithpael/they will seek favor (16), M/imploring favor (1) | Nominals: מַחֲנֶה [Noun (m)] encampment; חֵן [Noun (m)] graciousness; חֲנִית [Noun (f)] lance; חִנָּם [Adj] gratis	Freq100plus
+קדש	Verbs: Qal/it will be holy (10), Niphal/I will show myself holy (9), Hiphil/he will set apart as holy (40), Piel/consecrate (51), Pual/who/ are consecrated (4), Hithpael/consecrate yourselves (24) | Nominals: קֹדֶשׁ [Noun (m)] sacred; קְדֵשָׁה [Noun (f)] female devotee; קָדֵשׁ [Noun (m)] sacred person	Freq100plus
+צוה	Verbs: Piel/he had commanded (363), Pual/he was commanded (9) | Nominals: מִצְוָה [Noun (f)] command; צִי [Noun (m)] ship	Freq100plus
+ראש	Nominals: רֵאשִׁית [Noun (f)] first; רֵאשׁ [Noun (m)] head; מְרַאֲשָׁה [Noun (f)] headpiece; מַרְאָשָׁה [Noun (f)] headship	Freq100plus
+רבב	Verbs: Qal/they are many (21), Pual/producing ten thousands (1) | Nominals: רַב [Adj] abundant; רֹב [Noun (m)] abundance; רַבְשָׁקֵה [Noun (m)] Rabshakeh; רְבָבָה [Noun (f)] abundance	Freq100plus
+שפט	Verbs: Qal/judge (144), Niphal/I will enter into judgment (15) | Nominals: מִשְׁפָּט [Noun (m)] verdict; שֶׁפֶט [Noun (m)] sentence; תִּפְתַּי [Noun (m)] judicial	Freq100plus
+שבע	Verbs: Niphal/he swore (149), Hiphil/he made to swear an oath (18) | Nominals: שִׁבְעִים [Noun] seventy; שְׁבוּעָה [Noun (f)] sworn; שִׁבְעָתַיִם [Noun (f)] seven-times; שִׁבְעָנָה [Noun] seven	Freq100plus
+ילד	Verbs: Qal/she bore (211), Niphal/they were born (36), Hiphil/he fathered (158), Hophal/were born (3), Piel/midwife (9), Pual/they were born (27), Hithpael/they recorded their ancestry (1) | Nominals: יֶלֶד [Noun (m)] something born; מוֹלֶדֶת [Noun (f)] nativity; יָלִיד [Adj] born; יַלְדָּה [Noun (f)] lass	Freq100plus
+רעע	Verbs: Qal/broken (36), Niphal/he is harmed (2), Hiphil/evil-doers (68), Hithpael/[is] to/ be broken (2) | Nominals: רַע [Adj] bad; רֹעַ [Noun (m)] badness; בְּרִיעִי [Adj] Beriite; מֵרַע [Noun (m)] wickedness	Freq100plus
+כלה	Verbs: Qal/they will come to an end (63), Piel/he finished (98), Pual/they were completed (1) | Nominals: כְּלִי [Noun (m)] prepared; כִּלְיָה [Noun (f)] kidney; כָּלָה [Noun (f)] completion; תַּכְלִית [Noun (f)] completion	Freq100plus
+מים		Freq100plus
+שאל	Verbs: Qal/ask (138), Niphal/certainly <to ask> (5), Piel/they will ask (2) | Nominals: מִשְׁאָלָה [Noun (f)] request; שְׁאֵלָא [Noun (f)] question	Freq100plus
+הרר	Nominals: הַר [Noun (m)] mountain; יָהִיר [Adj] elated; הַרְאֵל [Noun (m)] mount of God	Freq100plus
+ירד	Verbs: Qal/he went down (299), Hiphil/bring down (43), Hophal/he had been brought down (6) | Nominals: מוֹרָד [Noun (m)] descent	Freq100plus
+שכב	Verbs: Qal/he lay down (292), Niphal/they will be lain with (2), Hiphil/he made lie down (9), Hophal/laid (2), Piel/cause to dwell (12), Pual/have you been lain with (1) | Nominals: מִשְׁכָּן [Noun (m)] residence; מִשְׁכָּב [Noun (m)] bed; שָׁכֵן [Adj] resident; שְׁכָבָה [Noun (f)] lying	Freq100plus
+גוי		Freq100plus
+הם		Freq100plus
+חרב	Verbs: Qal/they will be waste (19), Niphal/they have fought one another (3), Hiphil/they have made desolate (12), Hophal/certainly <to fight> (3), Pual/they have been dried (2) | Nominals: חֶרֶב [Noun (f)] drought; חׇרְבָּה [Noun (f)] drought; חֹרֶב [Noun (m)] drought; חָרָבָה [Noun (f)] desert	Freq100plus
+שלום	Nominals: שְׁלָם [Noun (m)] prosperity	Freq100plus
+פאה	Nominals: פֶּה [Noun (m)] mouth; פֻּם [Noun (m)] mouth	Freq100plus
+עמד	Verbs: Qal/he stood (421), Hiphil/he appointed (62), Hophal/it will be stationed (2) | Nominals: עֹמֶד [Noun (m)] spot; מַעֲמָד [Noun (m)] position; מׇעֳמָד [Noun (m)] foothold; עֶמְדָּה [Noun (f)] station	Freq100plus
+צדק	Verbs: Qal/I am righteous (22), Niphal/it will be put right (1), Hiphil/I will declare righteous (10), Piel/she has made appear righteous (2), Hithpael/will we justify ourselves (1) | Nominals: צַדִּיק [Adj] just; צְדָקָה [Noun (f)] rightness; צֶדֶק [Noun (m)] right; צִדְקָה [Noun (f)] beneficence	Freq100plus
+קרב	Verbs: Qal/they drew near (86), Niphal/he will be brought near (2), Hiphil/he will present (159), Piel/bring near (8) | Nominals: קֶרֶב [Noun (m)] nearest; קְרָב [Noun (m)] hostile encounter; קְרָבָה [Noun (f)] approach; קָרֵב [Adj] near	Freq100plus
+מאה	Nominals: מֵאָה [Noun (f)] Meah	Freq100plus
+קול	Nominals: קָל [Noun (m)] sound, voice.	Freq100plus
+נכה	Verbs: Niphal/he will be struck down (1), Hiphil/he struck down (336), Hophal/who/ was struck down (16), Pual/it was struck (2) | Nominals: נֵכֶה [Adj] smiter	Freq100plus
+אלף	Verbs: Qal/you should learn (1), Hiphil/[will be] producing thousands (1), Piel/it teaches (1) | Nominals: אֶלֶף [Noun (m)] thousand; אֶלֶף [Noun (m)] family	Freq100plus
+ימין	Verbs: Qal/<the>/ foster-father (6), Niphal/faithful (47), Hiphil/they believed (56), Hophal/[is] trustworthy (1) | Nominals: אֶמֶת [Noun (f)] stability; אָמֵן [Adj] sure; אׇמְנָם [Adj] verily; אֵמוּן [Noun (m)] established	Freq100plus
+שרר	Verbs: Qal/ruler (3), Hithpael/you will make yourself ruler (2) | Nominals: שַׂר [Noun (m)] head; שָׂרָה [Noun (f)] mistress	Freq100plus
+צבא		Freq100plus
+בין	Verbs: Qal/they understand (61), Niphal/discerning (21), Hiphil/understand (52), Hithpael/I gain understanding (22) | Nominals: בֵּין [Prep] between; בִּינָה [Noun (f)] understanding; בֵּנַיִם [Noun (m)] a double interval; בֵּין [Prep] among, between.	Freq100plus
+אם	Nominals: אַמָּה [Noun (f)] a mother; אֻמַּה [Noun (f)] collection; אֻמָּה [Noun (f)] nation.	Freq100plus
+נגד	Verbs: Hiphil/he told (317), Hophal/it was told (35) | Nominals: נֶגֶד [Prep] front	Freq100plus
+ברך	Verbs: Qal/[be] blessed (73), Niphal/they will be blessed (3), Hiphil/he made kneel (1), Piel/bless (148), Pual/it will be blessed (12), Hithpael/they will bless themselves (7) | Nominals: בְּרָכָה [Noun (f)] benediction; בֶּרֶךְ [Noun (f)] knee; בְּרֵכָה [Noun (f)] reservoir; בֶּרֶךְ [Noun (f)] knee.	Freq100plus
+טוב	Verbs: Qal/it was good (40), Hiphil/you did well (3) | Nominals: טוֹב [Adj] good; טוּב [Noun (m)] good	Freq100plus
+רוח	Verbs: Qal/it was relief (2), Hiphil/he smelled (7), Pual/spacious (1) | Nominals: רוּחַ [Noun (f)] wind; רֵיחַ [Noun (m)] odor; רוּחַ [Noun (f)] mind, spirit, wind.; רֶוַח [Noun (m)] room	Freq100plus
+שמים	Nominals: שָׁמַיִן [Noun (m)] heaven.	Freq100plus
+מצא	Verbs: Qal/I have found (242), Niphal/it was found (134), Hiphil/they brought forward (6)	Freq100plus
+עולם	Nominals: עָלַם [Noun (m)] remote time; עֵילוֹם [Noun (m)] ever.	Freq100plus
+אש	Nominals: אִשָּׁה [Noun (m)] burnt-offering; אֲשִׁישָׁה [Noun (f)] closely pressed together; אַתּוּן [Noun (m)] fire-place; אִשׁ [Adj] entity	Freq100plus
+נפל	Verbs: Qal/they will fall (364), Hiphil/they cast (50), Piel/it will fall (1), Hithpael/I prostrated myself (5) | Nominals: מַפֶּלֶת [Noun (f)] fall; מַפָּל [Noun (m)] falling off	Freq100plus
+נבא	Verbs: Niphal/prophesy (83), Hithpael/they prophesied (28), M/he prophesied (1) | Nominals: נָבִיא [Noun (m)] prophet; נְבִיאָה [Noun (f)] prophetess; נְבִיא [Noun (m)] prophet; נְבוּאָה [Noun (f)] prediction	Freq100plus
+עוד		Freq100plus
+יסף	Verbs: Qal/he will add (32), Niphal/it will be added (6), Hiphil/he repeated (169)	Freq100plus
+ירא	Verbs: Qal/you be afraid (249), Niphal/<the>/ awesome (44), Piel/[were] making afraid (2) | Nominals: יָרֵא [Adj] fearing; יִרְאָה [Noun (f)] fear	Freq100plus
+כסף	Verbs: Qal/you will long (2), Niphal/certainly <to long for> (4) | Nominals: כֶּסֶף [Noun (m)] silver; כְּסַף [Noun (m)] money, silver.	Freq100plus
+תוך		Freq100plus
+בקר	Verbs: Piel/he will seek (9) | Nominals: בֹּקֶר [Noun (m)] dawn; בָּקָר [Noun (m)] beeve; בּוֹקֵר [Noun (m)] cattle-tender; בַּקָּרָה [Noun (f)] looking after	Freq100plus
+זהב	Nominals: דְּהַב [Noun (m)] gold; מַדְהֵבָה [Noun (f)] goldmaking	Freq100plus
+נא		Freq100plus
+שלוש	Verbs: Piel/you will divide into three (4), Pual/three years old (5) | Nominals: שְׁלִישִׁי [Adj] third; שִׁלֵּשׁ [Adj] third	Freq100plus
+דוח	Verbs: Qal/be still (23), Niphal/astounded (6), Hiphil/people rinsed (3), Piel/I have made quiet (1) | Nominals: דָּם [Noun (m)] blood; דּוּמָם [Noun (m)] still; דְּמָמָה [Noun (f)] quiet	Freq100plus
+מקום		Freq100plus
+ים	Nominals: יָם [Noun (m)] sea.	Freq100plus
+עקב	Verbs: Qal/certainly <to cheat> (3) | Nominals: עֵקֶב [Noun (m)] heel; עָקֹב [Adj] fraudulent; עׇקְבָה [Noun (f)] trickery	Freq100plus
+שפה	Verbs: Niphal/swept bare (1), Pual/they are laid bare (1) | Nominals: מִשְׁפָּחָה [Noun (f)] family; שִׁפְחָה [Noun (f)] female slave; שְׁפִי [Noun (m)] bareness; מִשְׁפָּת [Noun (m)] stall	Freq100plus
+מלאך	Nominals: מְלָאכָה [Noun (f)] deputyship; מַלְאַךְ [Noun (m)] angel; מַלְאֲכוּת [Noun (f)] message	Freq100plus
+שער	Verbs: Qal/he calculates (1) | Nominals: שַׁעַר [Noun (m)] opening; תְּרַע [Noun (m)] door; שַׁעַר [Noun (m)] measure; תָּרָע [Noun (m)] doorkeeper	Freq100plus
+חמש	Verbs: Piel/he will take a fifth of (1) | Nominals: חֲמִשִּׁים [Noun] fifty; חֹמֶשׁ [Noun (m)] fifth tax	Freq100plus
+נאם	Verbs: Qal/they have uttered (1) | Nominals: נְאֻם [Noun (m)] oracle	Freq100plus
+אהל	Verbs: Qal/he moved tent (2), Hiphil/it is clear (1), Piel/he will pitch a tent (1) | Nominals: אֹהֶל [Noun (m)] tent; אׇהֳלִיבָמָה [Noun] Oholibamah	Freq100plus
+פקד	Verbs: Qal/I will visit [judgment] (164), Niphal/it was empty (21), Hiphil/he had appointed (25), Hophal/who/ were appointed (8), Piel/[is] mustering (1), Pual/it was recorded (2), Hithpael/they were mustered (4), u/they were enrolled (4) | Nominals: פְּקֻדָּה [Noun (f)] visitation; פָּקִיד [Noun (m)] superintendent; מִפְקָד [Noun (m)] an appointment; פִּקָּדוֹן [Noun (m)] deposit	Freq100plus
+פתח	Verbs: Qal/open (93), Niphal/it will be opened (18), Piel/you will engrave (25), Pual/engraved (1), Hithpael/loosen for yourself (1) | Nominals: פֶּתַח [Noun (m)] opening; מַפְתֵּחַ [Noun (m)] opener; פִּתְחוֹן [Noun (m)] opening; מִפְתָּח [Noun (m)] aperture	Freq100plus
+עוד	Verbs: Hiphil/certainly <to warn> (34), Hophal/it has been protested (1), Piel/he helps up (2), Hithpael/we have kept upright (1) | Nominals: עֵדָה [Noun (f)] assemblage; עֵד [Noun (m)] witness; עֵדוּת [Noun (f)] testimony; עֵדָה [Noun (f)] testimony	Freq100plus
+בלה	Verbs: Qal/it wore out (10), Piel/[is] for/ [the] consuming of (3) | Nominals: בִּלְתִּי [Noun] failure of; בַּל [Adj] failure; בְּלִי [Noun] failure; בְּלִיַּעַל [Noun (m)] without profit	Freq100plus
+עצה	Verbs: Qal/[one who] shuts (1) | Nominals: עֵץ [Noun (m)] tree; אָע [Noun (m)] tree; עָצֶה [Noun (m)] spine; עֵצָה [Noun (f)] timber	Freq100plus
+חזק	Verbs: Qal/be strong (80), Hiphil/he repaired (110), Piel/repair (51), Hithpael/he strengthened himself (27) | Nominals: חָזָק [Adj] strong; חֹזֶק [Noun (m)] power; חׇזְקָה [Noun (f)] vehemence; חֶזְקָה [Noun (f)] power	Freq100plus
+זכר	Verbs: Qal/remember (146), Niphal/they will be remembered (19), Hiphil/recorder (36) | Nominals: זָכָר [Noun (m)] remembered; זִכְרוֹן [Noun (m)] memento; אַזְכָּרָה [Noun (f)] reminder; זָכוּר [Noun (m)] male	Freq100plus
+שדה	Nominals: שְׁדֵמָה [Noun (f)] field	Freq100plus
+רשע	Verbs: Qal/we have acted wickedly (9), Hiphil/we have acted wickedly (18) | Nominals: רָשָׁע [Adj] wrong; רֶשַׁע [Noun (m)] wrong; רִשְׁעָה [Noun (f)] wrong; מִרְשַׁעַת [Noun (f)] female wicked doer	Freq100plus
+גדול		Freq100plus
+חדש	Verbs: Piel/renew (9), Hithpael/it renews itself (1) | Nominals: חֹדֶשׁ [Noun (m)] new; חָדָשׁ [Adj] new	Freq100plus
+ארבע	Nominals: אַרְבָּעִים [Noun] forty; אַרְבַּעְתַּיִם [Adj] fourfold	Freq100plus
+גלל	Verbs: Qal/roll (10), Niphal/they will be rolled up (2), Piel/roll away (1), Pual/rolled (1), Hithpael/roll himself (3) | Nominals: גַּל [Noun (m)] rolled; מְגִלָּה [Noun (f)] roll; גֻּלָּה [Noun (f)] fountain; גֻּלְגֹּלֶת [Noun (f)] skull	Freq100plus
+זרע	Verbs: Qal/you will sow (42), Niphal/it will be sown (6), Hiphil/[which] bears seed (3), Pual/they have been sown (1) | Nominals: זֶרַע [Noun (m)] seed; יִזְרְעֵאלִי [Adj] Jizreelite; זֵרוּעַ [Noun (m)] sown; זְרַע [Noun (m)] posterity	Freq100plus
+סביב		Freq100plus
+נער	Verbs: Qal/they growl (5), Niphal/I may shake myself free (3), Piel/he shook off (3), Hithpael/shake yourself free (1) | Nominals: נַעַר [Noun (m)] boy; נַעֲרָה [Noun (f)] girl; נֹעַר [Noun (m)] boyhood; נְעֹרֶת [Noun (f)] shaken	Freq100plus
+רום	Verbs: Qal/high (64), Hiphil/you will offer up (81), Hophal/it was raised (3), Piel/exalt (12), Pual/[may it] be exalted (2), Hithpael/I will exalt myself (2) | Nominals: מָרוֹם [Noun (m)] altitude; רוּם [Noun (m)] altitude; רָמָה [Noun (f)] height; רוֹם [Adj] elevation	Freq100plus
+מלא	Verbs: Qal/it is full (99), Niphal/it was filled (35), Piel/he filled (101), Pual/filled (1) | Nominals: מָלֵא [Adj] full; מִלֻּא [Noun (m)] fulfilling; מְלֵאָה [Noun (f)] fulfilled; מִלֻּאָה [Noun (f)] filling	Freq100plus
+חצר	Verbs: Hiphil/[were] blowing a trumpet (5), Piel/to the/ trumpeters (1) | Nominals: חָצֵר [Noun (m)] yard; חֲצֹצְרָה [Noun (f)] trumpet; חָצִיר [Noun (m)] grass; חֶצְרוֹנִי [Noun (m)] Chetsronite	Freq100plus
+אוד	Nominals: מְאֹד [Adj] vehemence; אֵיד [Noun (m)] oppression; אֵד [Noun (m)] fog	Freq100plus
+או		Freq100plus
+בר	Verbs: Qal/I may eat (3), Hiphil/make to eat (1) | Nominals: בְּרִית [Noun (f)] compact; בַּר [Noun (m)] field; בִּרְיָה [Noun (f)] food; בַּרְבֻּר [Noun (m)] fowl	Freq100plus
+ספר	Verbs: Qal/count (25), Niphal/it will be counted (8), Piel/he recounted (62), Pual/¿/ will it be recounted (5) | Nominals: מִסְפָּר [Noun (m)] number; סַפִּיר [Noun (m)] gem; סָפֵר [Noun (m)] scribe; סְפַר [Noun (m)] book	Freq100plus
+בלל	Verbs: Qal/mixed (42), Hithpael/he mixes himself (1) | Nominals: בְּלִיל [Noun (m)] mixed; תֶּבֶל [Noun (m)] mixture; בַּבְלִי [Adj] Babylonian; תְּבַּלֻּל [Noun (m)] cataract	Freq100plus
+ישע	Verbs: Niphal/let us be delivered (20), Hiphil/a deliverer (98) | Nominals: יְשׁוּעָה [Noun (f)] saved; מוֹשָׁעָה [Noun (f)] deliverance	Freq100plus
+סור	Verbs: Qal/he turned aside (156), Hiphil/remove (118), Hophal/it was removed (5), Piel/he has caused to deviate (1) | Nominals: סָרָה [Noun (f)] apostasy; סוּר [Noun (m)] turned off; סוּר [Noun] Sur	Freq100plus
+יכל	Verbs: Qal/they were able (191) | Nominals: הֵיכָל [Noun (m)] palace; הֵיכַל [Noun (m)] palace, temple.; מִיכָל [Noun (m)] container	Freq100plus
+כרת	Verbs: Qal/he made (128), Niphal/it will be cut off (71), Hiphil/I will cut off (71), Hophal/it has been cut off (1), Pual/it was cut down (2) | Nominals: כְּרֵתִי [Adj] Kerethite; כְּרִיתוּת [Noun (f)] cutting; כָּרֻתָה [Noun (f)] cut; כְּרִית [Noun] Kerith	Freq100plus
+חכם	Verbs: Qal/you are wise (19), Hiphil/making wise (1), Piel/he taught wisdom (1), Pual/skillful (2), Hithpael/let us deal wisely (2) | Nominals: חׇכְמָה [Noun (f)] wisdom; חָכָם [Adj] wise; חׇכְמָה [Noun (f)] wisdom; חַכִּים [Adj] wise	Freq100plus
+פלש	Verbs: Hithpael/roll (4) | Nominals: פְּלִשְׁתִּי [Adj] Pelishtite; פְּלֶשֶׁת [Noun] Pelesheth	Freq100plus
+בשר	Verbs: Piel/bear news (23), Hithpael/let him receive [the] news (1) | Nominals: בָּשָׂר [Noun (m)] flesh; בְּשׂוֹר [Noun] Besor; בְּשַׁר [Noun (f)] flesh.	Freq100plus
+רגל	Verbs: Qal/he takes slander (1), Piel/spy out (23), Tiphil/I taught to walk (1) | Nominals: רַגְלִי [Adj] footman; רְגַל [Noun (f)] foot.; מַרְגְלָה [Noun (f)] footpiece	Freq100plus
+אנף	Verbs: Qal/you will be angry (8), Hithpael/he was angry (6) | Nominals: אַף [Noun (m)] nose; אֲנַף [Noun (m)] face; אֲנָפָה [Noun (f)] unclean bird	Freq100plus
+חטאה		Freq100plus
+חטא	Verbs: Qal/we have sinned (178), Hiphil/he caused to sin (31), Piel/you will cleanse from sin (11), Hithpael/he will purify himself (9) | Nominals: חֵטְא [Noun (m)] crime; חַטָּא [Noun (m)] criminal; חֲטָאָה [Noun (f)] offence; חַטָּאָה [Noun (f)] an offence	Freq100plus
+לויי		Freq100plus
+חסד	Verbs: Hithpael/you show yourself faithful (2) | Nominals: חֶסֶד [Noun (m)] kindness; חָסִיד [Adj] kind; חֲסִידָה [Noun (f)] kind	Freq100plus
+עלה	Nominals: עֲלָה [Noun (f)] holocaust	Freq100plus
+יתר	Verbs: Niphal/which/ remained (82), Hiphil/you will leave over (22) | Nominals: יֶתֶר [Noun (m)] overhanging; יֹתֶרֶת [Noun (f)] lobe; יִתְרוֹן [Noun (m)] preeminence; יוֹתֵר [Noun (m)] redundant	Freq100plus
+ירש	Verbs: Qal/take possession of (102), Niphal/you should become impoverished (4), Hiphil/he dispossessed (45), Piel/it will take possession of (1) | Nominals: רֶשֶׁת [Noun (f)] net; יְרֻשָּׁה [Noun (f)] occupied; מוֹרָשָׁה [Noun (f)] possession; מוֹרָשׁ [Noun (m)] possession	Freq100plus
+פנה	Verbs: Qal/he turned (115), Hiphil/he turned (7), Hophal/be turned back (2), Piel/make clear (8) | Nominals: פֵּן [Conj] removal	Freq100plus
+איב		Freq100plus
+נחל	Verbs: Qal/they will inherit (27), Hiphil/I gave as an inheritance (12), Hophal/I have been allotted (1), Piel/they gave as a possession (4), Hithpael/you will inherit (6) | Nominals: נַחֲלָה [Noun (f)] inherited	Freq100plus
+בעל	Verbs: Qal/[is] married of (9), Niphal/she will be married (2) | Nominals: בַּעֲלָה [Noun (f)] mistress; בַּעֲלִי [Noun (m)] Baali	Freq100plus
+צאן		Freq100plus
+אסף	Verbs: Qal/he gathered (89), Niphal/they gathered (80), Piel/the/ rearguard (6), Pual/they will be gathered (5), Hithpael/when/ gathered themselves (1) | Nominals: אָפִיק [Noun (m)] containing; אָסֻף [Noun (m)] collected; אֹסֶף [Noun (m)] collection; אֲסֵפָה [Noun (f)] collection	Freq100plus
+פרעה		Freq100plus
+רבה	Verbs: Qal/multiply (57), Hiphil/much (152), Piel/make numerous (4) | Nominals: אַרְבֶּה [Noun (m)] locust; תַּרְבִּית [Noun (f)] multiplication; מַרְבִּית [Noun (f)] multitude; רְבוּ [Noun (f)] increase	Freq100plus
+בגד	Verbs: Qal/treacherous [people] (48) | Nominals: בֶּגֶד [Noun (m)] covering; בָּגוֹד [Adj] treacherous; בֹּגְדוֹת [Noun (f)] treacheries	Freq100plus
+שלם	Verbs: Qal/it was complete (7), Hiphil/they made peace (11), Hophal/it will be at peace (1), Piel/he will repay (81), Pual/it will be paid (5) | Nominals: שֶׁלֶם [Noun (m)] requital; שָׁלֵם [Adj] complete; שׁוּלַמִּית [Adj] peaceful; שִׁלֵּם [Noun (m)] requital	Freq100plus
+שתה	Verbs: Qal/drink (209), Niphal/it is drunk (1) | Nominals: מִשְׁתֶּה [Noun (m)] drink; מִשְׁתֶּה [Noun (m)] banquet; שְׁתִי [Noun (m)] intoxicaion; שְׁתִיָּה [Noun (f)] potation	Freq100plus
+רעה	Verbs: Qal/shepherds (150), Piel/he was a special friend (1), Hithpael/you associate (1) | Nominals: מִרְעֶה [Noun (m)] pasture; מִרְעִית [Noun (f)] pasturage; מֵרֵעַ [Noun (m)] friend; רְעוּת [Noun (m)] feeding	Freq100plus
+שאר	Verbs: Qal/he remains (1), Niphal/which/ remains (94), Hiphil/he left (38) | Nominals: שְׁאֵרִית [Noun (f)] remainder; שְׁאָר [Noun (m)] remainder; שְׁאֵר [Noun (m)] flesh; שְׁאָר [Noun (m)] × whatsoever more, residue, rest.	Freq100plus
+שמח	Verbs: Qal/rejoice (125), Hiphil/you have made to rejoice (1), Piel/he makes glad (17) | Nominals: שִׂמְחָה [Noun (f)] blithesomeness; שָׂמֵחַ [Adj] blithe	Freq100plus
+רכב	Verbs: Qal/[was] riding (49), Hiphil/he made ride (12) | Nominals: רֶכֶב [Noun (m)] vehicle; מֶרְכָּבָה [Noun (f)] chariot; מֶרְכָּב [Noun (m)] chariot; רַכָּב [Noun (m)] charioteer	Freq100plus
+טמא	Verbs: Qal/he will be unclean (77), Niphal/she has made herself unclean (19), Piel/he will declare unclean (39), Pual/[has been] made unclean (1), Hithpael/he will make himself unclean (14), u/she has been declared unclean (1) | Nominals: טָמֵא [Adj] foul; טֻמְאָה [Noun (f)] impurity	Freq100plus
+כתב	Verbs: Qal/written (193), Niphal/let it be written (16), Piel/writers (2) | Nominals: כָּתָב [Noun (m)] written; כְּתָב [Noun (m)] prescribing, writing(-ten).; מִכְתָּב [Noun (m)] written; כְּתֹבֶת [Noun (f)] letter	Freq100plus
+זוד	Verbs: Qal/they have acted presumptuously (11), Niphal/they were divided (4), Hiphil/he will act presumptuously (8), Piel/archers (1), Pual/they have been cut off (1) | Nominals: חֵצִי [Noun (m)] half; חֵץ [Noun (m)] piercer; מַחֲצִית [Noun (f)] halving; זֵד [Noun (m)] arrogant	Freq100plus
+ערב	Verbs: Qal/he stood surety for (22), Hiphil/[the] evening darkened (1), Hithpael/make a wager (7) | Nominals: עֶרֶב [Noun (m)] dusk; עֲרָבָה [Noun (f)] desert; מַעֲרָב [Noun (m)] traffic; עָרֹב [Noun (m)] mosquito	Freq100plus
+דין	Verbs: Qal/he will judge (21), Niphal/quarrelling (1) | Nominals: מְדִינָה [Noun (f)] judgeship; מָדוֹן [Noun (m)] contest; מִדְיָן [Noun (m)] brawling, contention(-ous).; מְדִינָה [Noun (f)] province.	Freq100plus
+קנה	Verbs: Qal/buy (73), Niphal/they will be bought (2) | Nominals: מִקְנֶה [Noun (m)] bought; קָנֶה [Noun (m)] reed; מִקְנָה [Noun (f)] buying; קִנְיָן [Noun (m)] creation	Freq100plus
+אזן	Verbs: Hiphil/give ear (25), Piel/he weighed (1) | Nominals: אֹזֶן [Noun (f)] broadness; מֹאזֵן [Noun (m)] scales; אָזֵן [Noun (m)] spade; מֹאזֵן [Noun (m)] balances.	Freq100plus
+גבול	Verbs: Qal/they set bounds (3), Hiphil/you will set a boundary for (2) | Nominals: גִּבְלִי [Adj] Gebalite; גַּבְלֻת [Noun (f)] chain; מִגְבָּלָה [Noun (f)] border	Freq100plus
+חקק	Verbs: Qal/[is] for/ [the] commanders of (5), Hophal/they may be inscribed (1), Piel/a ruler's staff (5), Pual/[what] is decreed (1) | Nominals: חֹק [Noun (m)] enactment; חֻקָּה [Noun (f)] appointed, custom, manner, ordinance, site, statute.; חֵקֶק [Noun (m)] enactment	Freq100plus
+מטה		Freq100plus
+אהב	Verbs: Qal/he loved (139), Niphal/<the>/ lovable (1) | Nominals: אַהֲבָה [Noun (f)] love.; אַהַב [Noun (m)] affection	Freq100plus
+נטה	Verbs: Qal/he stretched out (133), Niphal/[which] they are stretched out (3), Hiphil/incline (66) | Nominals: מִטָּה [Noun (f)] bed; מֻטֶּה [Noun (m)] stretching; מֻטָּה [Noun (f)] expansion	Freq100plus
+הלל	Verbs: Qal/boasters (4), Hiphil/it shone (3), Piel/praise (85), Pual/[is] to be praised (11), Hithpael/he boast (29) | Nominals: תְּהִלָּה [Noun (f)] laudation; הוֹלֵלָה [Noun (f)] folly; הִלּוּל [Noun (m)] celebration of thanksgiving for harvest; הוֹלֵלוּת [Noun (f)] folly	Freq100plus
+בדד	Verbs: Qal/isolated (3) | Nominals: בַּד [Noun (m)] separation; בַּד [Noun (m)] thread; בָּדָד [Noun (m)] separate	Freq100plus
+עזב	Verbs: Qal/they forsook (141), Niphal/it will be forsaken (9), Pual/it will be abandoned (2), Shaphel/he has delivered (1) | Nominals: עִזָּבוֹן [Noun (m)] trade; עֲזוּבָה [Noun (f)] desertion	Freq100plus
+ליל	Nominals: לִילִית [Noun (f)] night	Freq100plus
+בקש	Verbs: Piel/seek (193), Pual/it was sought (3) | Nominals: בַּקָּשָׁה [Noun (m)] petition	Freq100plus
+עון		Freq100plus
+נגע	Verbs: Qal/<the>/ [one who] touches (104), Niphal/they were struck (1), Hiphil/it will reach (35), Piel/he struck (2), Pual/they are stricken (1) | Nominals: נֶגַע [Noun (m)] blow	Freq100plus
+בטח	Verbs: Qal/trust (148), Hiphil/he make trust (4) | Nominals: בֶּטַח [Noun (m)] place of refuge; מִבְטָח [Noun (m)] refuge; בִּטָּחוֹן [Noun (m)] trust; בִּטְחָה [Noun (f)] trust	Freq100plus
+מועד		Freq100plus
+גבור	Nominals: גְּבוּרָה [Noun (f)] force; גְּבוּרָה [Noun (f)] power	Freq100plus
+חלק	Verbs: Qal/he had assigned (16), Niphal/it will be divided (6), Hiphil/she makes smooth (7), Piel/he distributed (21), Pual/it will be divided (3), Hithpael/they will divide among themselves (1) | Nominals: חֵלֶק [Noun (m)] smoothness; מַחֲלֹקֶת [Noun (f)] section; חֶלְקָה [Noun (f)] smoothness; חֲלַקְלַקָּה [Noun (f)] very smooth	Freq100plus
+שש	Verbs: Piel/you will give a sixth part of (1) | Nominals: שִׁשִּׁים [Noun] sixty; שִׁשִּׁי [Noun] sixth	Freq100plus
+תורה		Freq100plus
+נצל	Verbs: Niphal/they will be delivered (15), Hiphil/deliver (113), Hophal/plucked out (2), Piel/they plundered (4), Hithpael/they stripped themselves (1) | Nominals: הַצָּלָה [Noun (f)] rescue	Freq100plus
+ריב	Verbs: Qal/conduct a case (50), Hiphil/[is] like/ [those who] contend (1) | Nominals: יָרִיב [Noun (m)] he will contend; יָרֵב [Noun (m)] Jareb; מְרִיבָה [Noun (f)] quarrel	Freq100plus
+אבד	Verbs: Qal/they will perish (108), Hiphil/I will destroy (22), Hophal/it was destroyed (1), Piel/you will destroy (28) | Nominals: אֲבֵדָה [Noun (f)] lost; אֹבֵד [Noun (m)] wretched; אֲבַדֹּה [Noun (f)] perishing; אַבְדָן [Noun (m)] perishing	Freq100plus
+מנחה	Nominals: מִנְחָה [Noun (f)] sacrificial offering	Freq100plus
+גלה	Verbs: Qal/it will go into exile (49), Niphal/it will be uncovered (32), Hiphil/he took into exile (28), Hophal/it has been taken into exile (7), Piel/you will uncover (56), Pual/uncovered (2), Hithpael/he uncovered himself (2) | Nominals: גָּלוּת [Noun (f)] captivity; גָּלוּת [Noun (f)] captivity.	Freq100plus
+שמן	Verbs: Qal/he grew fat (3), Hiphil/they grew fat (2) | Nominals: שֶׁמֶן [Noun (m)] grease; שָׁמֵן [Adj] greasy; מַשְׁמָן [Noun (m)] fat; אַשְׁמָן [Noun (m)] fat	Freq100plus
+אור	Verbs: Qal/they brightened (7), Niphal/be lighted up (2), Hiphil/make shine (32) | Nominals: אוֹר [Noun (f)] illumination; אוּרִים [Noun (m)] Urim; אוּר [Noun (m)] flame; אוֹרָה [Noun (f)] luminousness	Freq100plus
+כנע	Verbs: Niphal/he humbled himself (23), Hiphil/I will subdue (7) | Nominals: כְּנַעַנִי [Noun (m)] Kenaanite; כִּנְעָה [Noun (f)] package	Freq100plus
+יין	Nominals: יוֹנָה [Noun (f)] dove; יוֹנַת אֵלֶם רְחֹקִים [Noun] dove of; יָוֵן [Noun (m)] dregs; יְוָנִי [Adj] Jevanite	Freq100plus
+גביע	Nominals: גִּבְעָה [Noun (f)] hillock; גִּבְעֹנִי [Adj] Gibonite; מִגְבָּעָה [Noun (f)] cap; גִּבְעֹל [Noun (m)] calyx of a flower	Freq100plus
+כפר	Verbs: Qal/you will cover (1), Piel/he will make atonement (86), Pual/it will be atoned for (7), Hithpael/it will be atoned for (1), Nithpael/it will be atoned for (1) | Nominals: כְּפִיר [Noun (m)] village; כַּפֹּרֶת [Noun (f)] lid; כֹּפֶר [Noun (m)] cover; כְּפוֹר [Noun (m)] cover	Freq100plus
+ארמון	Nominals: אֲרַמִּי [Adj] Aramite; אֲרָמִית [Adj] in Aramæan; רַמִּי [Adj] a Ramite	Freq100plus
+כפף	Verbs: Qal/it bent down (4), Niphal/will I bend myself down? (1) | Nominals: כַּף [Noun (f)] hollow hand; כִּפָּה [Noun (f)] leaf; כֵּף [Noun (m)] hollow rock	Freq100plus
+ארון		Freq100plus
+בחר	Verbs: Qal/he will choose (157), Niphal/chosen (7) | Nominals: בָּחִיר [Noun (m)] select; מִבְחָר [Noun (m)] select; מִבְחוֹר [Noun (m)] select	Freq100plus
+רע	Nominals: רַעְיָה [Noun (f)] female associate; רֵעָה [Noun (f)] female associate	Freq100plus
+כבוד		Freq100plus
+שבת	Verbs: Qal/it has ceased (27), Niphal/it will cease (4), Hiphil/I will cause to cease (38) | Nominals: שַׁבָּת [Noun] intermission; שַׁבָּתוֹן [Noun (m)] sabbatism; שֶׁבֶת [Noun (f)] rest; מִשְׁבָּת [Noun (m)] cessation	Freq100plus
+תמם	Verbs: Qal/was finished (45), Hiphil/they ceased (7), Hithpael/you show yourself blameless (2) | Nominals: תָּמִים [Adj] entire; תֹּם [Noun (m)] completeness; תָּם [Adj] complete; תֻּמָּה [Noun (f)] innocence	Freq100plus
+רחב	Verbs: Qal/it has opened wide (3), Niphal/roomy (1), Hiphil/he will enlarge (21) | Nominals: רֹחַב [Noun (m)] width; רָחָב [Adj] roomy; מֶרְחָב [Noun (m)] enlargement; רַחַב [Noun (m)] width	Freq100plus
+שבט	Nominals: שַׁרְבִיט [Noun (m)] rod of empire	Freq100plus
+גור	Verbs: Qal/sojourn (95), Hithpael/[am] staying as a sojourner (1) | Nominals: גֵּר [Noun (m)] guest; גֵּרוּת [Noun (f)] residence	Freq100plus
+בהמה	Nominals: בְּהֵמוֹת [Noun (m)] water-ox	Freq100plus
+קטר	Verbs: Hiphil/he will make smoke (63), Hophal/it will be made to smoke (2), Piel/make smoke (41), Pual/[who is] perfumed of (1) | Nominals: קְטֹרֶת [Noun (f)] fumigation; מִקְטֶרֶת [Noun (f)] to fume; מִקְטָר [Noun (m)] fume; קְטוֹרָה [Noun (m)] perfume	Freq100plus
+ספר		Freq100plus
+חשב	Verbs: Qal/a skillful worker (66), Niphal/it will be reckoned (30), Piel/he will calculate (13), Hithpael/it reckons itself (1) | Nominals: חֵשֶׁב [Noun (m)] belt; חֶשְׁבּוֹן [Noun (m)] contrivance; חִשָּׁבוֹן [Noun (m)] contrivance	Freq100plus
+כסה	Verbs: Qal/[is one who] is covered of (3), Niphal/it covers itself (3), Piel/cover (99), Pual/they were covered (7), Hithpael/he covered himself (8) | Nominals: מִכְסֶה [Noun (m)] covering; כְּסוּת [Noun (f)] cover; מְכַסֶּה [Noun (m)] covering; כָּסוּי [Noun (m)] covered	Freq100plus
+שמם	Verbs: Qal/he will be appalled (28), Niphal/made desolate (25), Hiphil/I will devastate (15), Piel/appalled (4), Hithpael/it is appalled (5) | Nominals: שַׁמָּה [Noun (f)] ruin; שְׁמוּעָה [Noun (f)] heard; מְשַׁמָּה [Noun (f)] waste; שָׁמֵם [Adj] ruined	Freq100plus
+חומה	Nominals: חָם [Noun (m)] father-in-law; חֵמֶת [Noun (m)] skin bottle; חֲמָתִי [Noun (m)] Chamathite	Freq100plus
+ציה	Nominals: צִיִּי [Noun (m)] desert-dweller; צִיּוּן [Noun (m)] monumental; צִיוֹן [Noun (m)] desert	Freq100plus
+שפה	Nominals: שָׂפָם [Noun (m)] beard	Freq100plus
+גאה	Verbs: Qal/certainly <to exalted> (7) | Nominals: גָּאוֹן [Noun (m)] the same as 1346; גָּג [Noun (m)] roof; גַּאֲוָה [Noun (f)] arrogance; גַב [Noun] back	Freq100plus
+אחז	Verbs: Qal/he took hold (46), Niphal/have possessions (7), Hophal/[were] attached (1), Piel/[he] covers (1) | Nominals: אֲחֻזָּה [Noun (f)] seized	Freq100plus
+שמש	Nominals: שֶׁמֶשׁ [Noun (m)] sun	Freq100plus
+נשה	Verbs: Qal/I will surely <forget> (11), Hiphil/he will cause to forget (3) | Nominals: מְנַשִּׁי [Adj] Menashshite; מַשָּׁא [Noun (m)] loan; מַשָּׁאָה [Noun (f)] loan; נָשֶׁה [Noun (m)] rheumatic	Freq100plus
+הרג	Verbs: Qal/he killed (115), Niphal/will he be killed (3), Pual/we have been killed (2) | Nominals: הֶרֶג [Noun (m)] slaughter; הֲרֵגָה [Noun (f)] slaughter	Freq100plus
+יעץ	Verbs: Qal/he has planned (42), Niphal/he consulted (22), Hithpael/they may consult together (1) | Nominals: עֵצָה [Noun (f)] advice; מוֹעֵצָה [Noun (f)] purpose	Freq100plus
+שחה	Verbs: Qal/lie down (1), Hithpael/you must bow down (39), Haphel/he bowed down (130) | Nominals: שְׁחִית [Noun (f)] pit-fall; שְׁחוּת [Noun (f)] pit	Freq100plus
+שקל	Verbs: Qal/he weighed out (15), Niphal/it was weighed out (3) | Nominals: שֶׁקֶל [Noun (m)] weight; מִשְׁקָל [Noun (m)] weight; אֶשְׁקְלוֹנִי [Adj] Ashkelonite; מִשְׁקוֹל [Noun (m)] weight	Freq100plus
+קהל	Verbs: Niphal/they assembled (19), Hiphil/he called together (20) | Nominals: קָהָל [Noun (m)] assemblage; קֹהֶלֶת [Noun (m)] assembler; קְהִלָּה [Noun (f)] assemblage	Freq100plus
+נוח	Verbs: Qal/it will rest (30), Hiphil/he left (75), Hophal/it has been given rest (5) | Nominals: מָנוֹחַ [Noun (m)] quiet; הֲנָחָה [Noun (f)] permission of rest	Freq100plus
+פלל	Verbs: Piel/I judged (3), Hithpael/he prayed (78) | Nominals: תְּפִלָּה [Noun (f)] intercession; פָּלִיל [Noun (m)] magistrate; פְּלִילָה [Noun (f)] justice; פְּלִילִי [Adj] judicial	Freq100plus
+בכר	Verbs: Hiphil/like/ a [woman] bearing a first child (1), Piel/treat as firstborn (2), Pual/it will be born a firstling (1) | Nominals: בְּכוֹר [Noun (m)] first-born; בִּכּוּר [Noun (m)] first-fruits; בְּכִירָה [Noun (f)] eldest; בִּכּוּרָה [Noun (f)] early fig	Freq100plus
+עזז	Verbs: Qal/it prevailed (8), Hiphil/she has made firm (2) | Nominals: עֵז [Noun (f)] she-goat; עַז [Adj] strong; עַזָּה [Noun (f)] Azzah; עֲזָאזֵל [Noun (m)] goat of departure	Freq100plus
+דור	Nominals: דָּר [Noun (m)] age	Freq100plus
+שרף	Verbs: Qal/[was] fitted out (83), Niphal/it will be burned (14), Pual/it had been burned (1) | Nominals: שְׂרֵפָה [Noun (f)] cremation; רִצְפָּה [Noun (f)] stone; רֶשֶׁף [Noun (m)] live coal; שָׂרָף [Noun (m)] burning	Freq100plus
+כבד	Verbs: Qal/it was heavy (22), Niphal/honored (26), Hiphil/he made heavy (16), Piel/honor (20), Pual/he is honored (3), Hithpael/make yourself numerous (3) | Nominals: כָּבֵד [Adj] heavy; כָּבֵד [Noun (f)] liver; כֹּבֶד [Noun (m)] weight; כְּבוּדָּה [Noun (f)] weightiness	Freq100plus
+צר	Nominals: צָרָה [Noun (f)] tightness; מֵצַר [Noun (m)] tight	Freq100plus
+פה	Nominals: פֵּאָה [Noun (f)] mouth	Freq100plus
+עור	Verbs: Niphal/it is made bare (1), Piel/he made blind (5) | Nominals: עוֹר [Noun (m)] skin; מְעָרָה [Noun (f)] cavern; עִוֵּר [Adj] blind; מַטָּה [Adj] downward	Freq100plus
+נוס	Verbs: Qal/they fled (149), Hiphil/he made to flee (4), Piel/it will drive (1) | Nominals: מָנוֹס [Noun (m)] retreat	Freq100plus
+שבר	Verbs: Qal/I will break (43), Niphal/they will be broken (57), Hiphil/do I bring to [the] birth (1), Hophal/I have been broken (1), Piel/they broke (33) | Nominals: מִשְׁבָּר [Noun (m)] breaker; מִשְׁבֵּר [Noun (m)] orifice; שִׁבְרוֹן [Noun (m)] rupture	Freq100plus
+דרש	Verbs: Qal/seek (131), Niphal/I will let myself be consulted (9) | Nominals: מִדְרָשׁ [Noun (m)] investigation	Freq100plus
+חוץ	Nominals: חַיִץ [Noun (m)] wall; חִיצוֹן [Adj] wall side	Freq100plus
+יחד	Verbs: Qal/it be united (2), Piel/unite (1) | Nominals: יַחַד [Noun (m)] unit; יָחִיד [Adj] united	Freq100plus
+זקן	Verbs: Qal/he was old (25), Hiphil/it will grow old (2) | Nominals: זָקֵן [Adj] old; זָקָן [Noun (m)] beard; זִקְנָה [Noun (f)] old age; זָקֻן [Noun (m)] old age	Freq100plus
+סבב	Verbs: Qal/go around (73), Niphal/they turned (20), Hiphil/he turned (31), Hophal/surrounded (6), Piel/they may go around (6) | Nominals: מוּסָב [Noun (m)] turn; נְסִבָּה [Noun (f)] environment; סִבָּה [Noun (f)] turn	Freq100plus
+שנא	Verbs: Qal/I hate (82), Niphal/he is hated (2), Piel/[those who] hate (1) | Nominals: שִׂנְאָה [Noun (f)] hate	Freq100plus
+בוש	Verbs: Qal/they will be ashamed (94), Hiphil/it will be put to shame (28), Piel/he delayed (2), Hithpael/they were ashamed (1) | Nominals: בֹּשֶׁת [Noun (f)] shame; בּוּשָׁה [Noun (f)] shame; בׇּשְׁנָה [Noun (m)] shamefulness; מָבֻשׁ [Noun (m)] pudenda	Freq100plus
+שחת	Verbs: Niphal/it was ruined (6), Hiphil/they destroyed (73), Hophal/ruined (2), Piel/destroy (31), Q/corruption (3) | Nominals: מַשְׁחִית [Noun (m)] destructive; מַשְׁחֵת [Noun (m)] destruction	Freq100plus
+דלל	Verbs: Qal/they drew (12) | Nominals: דֶּלֶת [Noun (m)] something swinging; דַּל [Adj] dangling; דַּלָּה [Noun (f)] dangling; דָּלִיָּה [Noun (f)] dangling	Freq100plus
+משל	Verbs: Qal/he will rule (84), Niphal/I will be equal (5), Hiphil/dominion (1), Piel/making a parable (1), Hithpael/I have become like (1) | Nominals: מָשָׁל [Noun (m)] pithy; מֶמְשָׁלָה [Noun (f)] rule; מִמְשָׁל [Noun (m)] ruler; מֹשֶׁל [Noun (m)] empire	Freq100plus
+נסע	Verbs: Qal/they set out (132), Niphal/has it been pulled up (2), Hiphil/he led out (8) | Nominals: מַסַּע [Noun (m)] departure; מַסָּע [Noun (m)] missile	Freq100plus
+פר	Nominals: פָּרָה [Noun (f)] heifer	Freq100plus
+חזה	Verbs: Qal/[they] dream (54) | Nominals: חָזוֹן [Noun (m)] sight; חֹזֶה [Noun (m)] beholder; חָזֶה [Noun (m)] breast; חִזָּיוֹן [Noun (m)] revelation	Freq100plus
+נחושה	Nominals: נְחֹשֶׁת [Noun (m)] copper; נְחָשׁ [Noun (m)] copper; נְחֻשְׁתָּן [Noun] made of copper	Freq100plus
+חבר	Verbs: Qal/joined (10), Hiphil/I will make join (1), Piel/he joined (8), Pual/it will be joined together (5), Hithpael/they will make an alliance (2) | Nominals: חָבֵר [Noun (m)] associate; מַחְבֶּרֶת [Noun (f)] junction; חֲבַר [Noun (m)] associate; חֶבֶר [Noun (m)] society	Freq100plus
+עצם	Verbs: Qal/they are numerous (16), Piel/he has shut (1) | Nominals: עֶצֶם [Noun (f)] bone; עֹצֶם [Noun (m)] power; עׇצְמָה [Noun (f)] powerfulness; תַּעֲצֻמָה [Noun (f)] might	Freq100plus
+צפון		Freq100plus
+שכם	Verbs: Hiphil/he rose early (65) | Nominals: שְׁכֶם [Noun (m)] neck; שִׁכְמָה [Noun (f)] the shoulderbone; שִׁכְמִי [Adj] Shikmite	Freq100plus
+ארך	Verbs: Qal/they had become long (3), Hiphil/you will prolong (26) | Nominals: אֹרֶךְ [Noun (m)] length; אָרֵךְ [Adj] long; אַרְכִּי [Adj] Arkite; אָרֹךְ [Adj] long	Freq100plus
+בכה	Verbs: Qal/he wept (109), Piel/[is] weeping (2) | Nominals: בְּכִי [Noun (m)] weeping; בָּכָא [Noun (m)] weeping tree; בֶּכֶה [Noun (m)] weeping; בְּכִית [Noun (f)] weeping	Freq100plus
+אוה	Verbs: Piel/it will desire (9), Hithpael/they craved (14) | Nominals: אִי [Noun (m)] habitable spot; אוֹי [inj] lamentation; תַּאֲוָה [Noun (f)] longing; אַוָּה [Noun (f)] longing	Freq100plus
+כרם	Nominals: כַּרְמֶל [Noun (m)] field; כַּרְמְלִי [Adj] Karmelite; כַּרְמִי [Adj] Karmite	Freq100plus
+חשך	Verbs: Qal/you have withheld (45), Niphal/it will be restrained (2), Hiphil/[is] making dark (6), Piel/he furnished with bands (1), Pual/[will be] furnished with bands (2) | Nominals: חֹשֶׁךְ [Noun (m)] dark; מַחְשָׁךְ [Noun (m)] darkness; חֵשֶׁק [Noun (m)] delight; חֲשׁוֹךְ [Noun (m)] dark	Freq100plus
+רחם	Verbs: Piel/I will have compassion on (26), Pual/he will be shown mercy (3) | Nominals: רַחַם [Noun (f)] compassion; רֶחֶם [Noun (m)] womb; רַחוּם [Adj] compassionate; יְרַחְמְאֵלִי [Adj] Jerachmeelite	Freq100plus
+זרח	Verbs: Qal/it rises (18) | Nominals: מִזְרָח [Noun (m)] sunrise; אֶזְרָח [Noun (m)] growth; זַרְחִי [Noun (m)] Zarchite; אֶזְרָחִי [Adj] Ezrachite	Freq100plus
+גדד	Verbs: Qal/they band together (2), Hithpael/they cut themselves (7) | Nominals: גְּדוּד [Noun (m)] crowd; גָּדִי [Adj] Gadite; גִּיד [Noun (m)] thong; גַּד [Noun (m)] coriander	Freq100plus
+באר	Verbs: Piel/he made clear (3) | Nominals: בְּאֵר [Noun (f)] pit; בְּאֵרֹתִי [Adj] Beerothite; בֹּאר [Noun (m)] cistern; בְּאֹשׁ [Noun (m)] stench	Freq100plus
+פרה	Verbs: Qal/be fruitful (22), Hiphil/I will make fruitful (4) | Nominals: פְּרִי [Noun (m)] fruit	Freq100plus
+זמר	Verbs: Qal/you will prune (2), Niphal/it will be pruned (1), Piel/I will sing praises (41) | Nominals: מִזְמוֹר [Noun (m)] music; מְזַמְּרָה [Noun (f)] tweezer; זְמָר [Noun (m)] instrumental music; זִמְרָה [Noun (f)] musical	Freq100plus
+צפה	Verbs: Qal/watchman (26), Piel/I may watch (44), Pual/overlaid (2) | Nominals: צִפּוּי [Noun (m)] encasement; מִצְפֶּה [Noun (m)] observatory; צָפָה [Noun (f)] inundation; צְפוֹנִי [Adj] Tsephonite	Freq100plus
+עבדה		Freq100plus
+אז	Nominals: אֲזַי [Adj] at that time	Freq100plus
+כמו	Nominals: כְּנֵמָא [Adj] so	Freq100plus
+רדף	Verbs: Qal/they pursued (90), Niphal/[what] was pursued (2), Piel/[one who] pursues (8), Pual/it will be chased (1) | Nominals: מֻרְדָּף [Noun (m)] persecuted	Freq100plus
+קשה	Verbs: Qal/it is hard (5), Niphal/hard pressed (1), Hiphil/they stiffened (20), Piel/she had difficulties (1) | Nominals: קֶשֶׁת [Noun (f)] bow; קָשֶׁה [Adj] severe; מִקְשָׁה [Noun (f)] rounded; מִקְשֶׁה [Noun (m)] turned	Freq100plus
+נחל		Freq100plus
+סוס	Nominals: סוּסָה [Noun (f)] mare; סָס [Noun (m)] moth	Freq100plus
+חרש	Verbs: Qal/you be silent (31), Niphal/it will be plowed (2), Hiphil/he will keep silent (38), Hithpael/they were silent (1) | Nominals: חָרָשׁ [Noun (m)] fabricator; חֹרֶשׁ [Noun (m)] forest; חֵרֵשׁ [Adj] deaf; חֲרֹשֶׁת [Noun (f)] work	Freq100plus
+עפר	Verbs: Piel/he dusted [them] (1) | Nominals: עָפָר [Noun (m)] dust; עֹפֶר [Noun (m)] fawn	Freq100plus
+חלב	Nominals: חָלָב [Noun (m)] milk; חֶלְבְּנָה [Noun (f)] galbanam	Freq100plus
+נהר	Verbs: Qal/they will stream (6) | Nominals: נָהָר [Noun (m)] stream; נְהַר [Noun (m)] river; מִנְהָרָה [Noun (f)] channel; נְהָרָה [Noun (f)] daylight	Freq100plus
+שלושים		Freq100plus
+גדל	Verbs: Qal/he grew up (53), Hiphil/he has made great (33), Piel/he made great (16), Pual/full grown (1), Hithpael/does it magnify itself (4) | Nominals: גֹּדֶל [Noun (m)] magnitude; גְּדִל [Noun (m)] thread; גָּדֵל [Adj] large	Freq100plus
+מלכות	Nominals: מַלְכוּ [Noun (f)] dominion	Freq100plus
+אף	Nominals: אַף [Conj] also.	Freq100plus
+ערך	Verbs: Qal/they deployed (63), Hiphil/he will evaluate (4) | Nominals: עֵרֶךְ [Noun (m)] pile; מַעֲרָכָה [Noun (f)] arrangement; מַעֲרֶכֶת [Noun (f)] arrangement; מַעֲרָךְ [Noun (m)] arrangement	Freq100plus
+כסא	Nominals: כֵּס [Noun (m)] sworn.; כׇּרְסֵא [Noun (m)] throne	Freq100plus
+קבץ	Verbs: Qal/he gathered (31), Niphal/they gathered together (30), Piel/I will gather (28), Pual/gathered together (1), Hithpael/they gathered together (8) | Nominals: קִבּוּץ [Noun (m)] throng; קְבֻצָה [Noun (f)] hoard	Freq100plus
+נשיא		Freq100plus
+פשע	Verbs: Qal/they have rebelled (40), Niphal/transgressed (1) | Nominals: פֶּשַׁע [Noun (m)] revolt	Freq100plus
+גאל	Verbs: Qal/[the] avenger of (58), Niphal/it will be redeemed (11), Hiphil/I have defiled (1), Pual/they were defiled (4), Hithpael/he defiled himself (2) | Nominals: גְּאֻלָּה [Noun (f)] redemption; גֹּאֶל [Noun (m)] profanation	Freq100plus
+קבר	Verbs: Qal/they buried (59), Niphal/he was buried (39), Piel/[were] burying (5), Pual/he was buried (1)	Freq100plus
+שית	Verbs: Qal/you set (61), Hiphil/he incited (8), Hophal/it will be imposed (2) | Nominals: שְׁתִי [Noun (m)] fixture; שַׁיִת [Noun (m)] scrub; שִׁית [Noun (m)] dress; שָׁתָה [Noun (m)] basis	Freq100plus
+עזר	Verbs: Qal/help (40), Niphal/they were helped (4), Hiphil/[are] helping (1) | Nominals: עֵזֶר [Noun (m)] aid; עֲזָרָה [Noun (f)] inclosure	Freq100plus
+קצה	Nominals: קָצָה [Noun] termination	Freq100plus
+נחם	Verbs: Niphal/he relented (48), Piel/a comforter (25), Pual/it has been comforted (2), Hithpael/[is] comforting himself (7) | Nominals: נֶחָמָה [Noun (f)] consolation; נֹחַם [Noun (m)] ruefulness	Freq100plus
+שדד	Verbs: Qal/a destroyer (28), Niphal/we are devastated (1), Hophal/you will be destroyed (2), Piel/[one who] assaults (3), Pual/it has been devastated (20) | Nominals: שַׁדַּי [Noun (m)] Almighty; אַשְׁדּוֹדִי [Adj] Ashdodite; שִׁדָּה [Noun (f)] wife; אַשְׁדּוֹדִית [Adj] in the language of Ashdod	Freq100plus
+חתת	Verbs: Qal/they will be dismayed (17), Niphal/you be dismayed (28), Hiphil/you will shatter (2), Piel/it will be shattered (1) | Nominals: חִתִּי [Noun (m)] Chittite; חִתִּית [Noun (f)] fear; חַת [Noun (m)] crushed; חִתָּה [Noun (f)] fear	Freq100plus
+יטב	Verbs: Qal/it was good (44), Hiphil/he will do good (66) | Nominals: מֵיטָב [Noun (m)] best	Freq100plus
+שלך	Verbs: Hiphil/he threw (85), Hophal/thrown down (13) | Nominals: שָׁלָךְ [Noun (m)] bird of prey; שַׁלֶּכֶת [Noun (f)] felling	Freq100plus
+חרר	Verbs: Qal/it burned (85), Niphal/those/ [who] are angry (8), Hiphil/zealously (2), Piel/they were angry (2), Hithpael/you fret yourself (4), Tiphil/will you compete (2) | Nominals: חֳרִי [Noun (m)] burning; תַּחֲרָא [Noun (m)] corslet; חַרְחֻר [Noun (m)] fever; חָרֵר [Noun (m)] arid	Freq100plus
+קלל	Verbs: Qal/they have been swift (12), Niphal/it is trifling (11), Hiphil/lighten (12), Piel/he cursed (32), Pual/it is cursed (2), Hithpael/they shook to and fro (1) | Nominals: קְלָלָה [Noun (f)] vilification; קַל [Adj] light; קָלָל [Adj] brightened; קְלֹקֵל [Adj] insubstantial	Freq100plus
+רקק	Verbs: Qal/he will spit (1) | Nominals: רַק [Adj] leanness; רָקִיק [Noun (m)] cake; רַקָּה [Noun (f)] thinness; רֹק [Noun (m)] spittle	Freq100plus
+גבר	Verbs: Qal/they increased (17), Hiphil/we will make strong (2), Piel/he will make strong (2), Hithpael/he behaves proudly (3) | Nominals: גֶּבֶר [Noun (m)] valiant; גְּבַר [Noun (m)] certain, man.; גְּבֶרֶת [Noun (f)] mistress; גְּבִירָה [Noun (f)] mistress	Freq100plus
+ישר	Verbs: Qal/it was pleasing (13), Hiphil/make straight (2), Piel/I will make smooth (8), Pual/made smooth (1) | Nominals: יָשָׁר [Adj] straight; מֵישָׁר [Noun (m)] evenness; יֹשֶׁר [Noun (m)] right; יִשְׁרָה [Noun (f)] rectitude	Freq100plus
+רעב	Verbs: Qal/it was hungry (11), Hiphil/he allows to hunger (1) | Nominals: רָעָב [Noun (m)] hunger; רָעֵב [Adj] hungry; רְעָבוֹן [Noun (m)] famine	Freq100plus
+כח		Freq100plus
+לשון	Verbs: Hiphil/you slander (1), Piel/[one who] slanders (1) | Nominals: לִשָּׁן [Noun (m)] speech	Freq100plus
+נצב	Verbs: Niphal/overseers (51), Hiphil/he set up (19), Hophal/[was] placed (2) | Nominals: מַצֵּבָה [Noun (f)] stationed; מַצָּב [Noun (m)] spot; מַצֶּבֶת [Noun (f)] stationary; מֻצָּב [Noun (m)] station	Freq100plus
+חמה		Freq100plus
+חפץ	Verbs: Qal/he delights (72) | Nominals: חֵפֶץ [Noun (m)] pleasure; חָפֵץ [Adj] pleased with	Freq100plus
+חרף	Verbs: Qal/it reproaches (2), Niphal/intended (1), Piel/taunt (28) | Nominals: חֶרְפָּה [Noun (f)] contumely; חֹרֶף [Noun (m)] crop gathered; חֲרוּפִי [Noun (m)] a Charuphite	Freq100plus
+נגש	Verbs: Qal/he drew near (61), Niphal/they drew near (17), Hiphil/bring near (27), Hophal/they were brought near (2), Hithpael/draw near (1)	Freq100plus
+פעם	Nominals: פַּעֲמֹן [Noun (m)] bell	Freq100plus
+שבע	Verbs: Qal/you will be satisfied (75), Niphal/[one who] is satisfied (1), Hiphil/I will satisfy (10), Piel/they will satisfy (1) | Nominals: שָׂבָע [Noun (m)] copiousness; שֹׂבַע [Noun (m)] satisfaction; שׇׂבְעָה [Noun (f)] satiety; שָׂבֵעַ [Adj] satiated	Freq100plus
+צלם	Verbs: Qal/they became dark (1), Hiphil/giving shade (1) | Nominals: צֵל [Noun (m)] shade; צַלְמָוֶת [Noun (m)] shade of death; צֵלֶל [Noun (m)] shade; מְצֻלָּה [Noun (m)] shade	Freq100plus
+זור	Verbs: Qal/strange (17), Niphal/they have become estranged (3), Hophal/estranged (1), Piel/I will disperse (16), Pual/they turn aside (3) | Nominals: זֵר [Noun (m)] chaplet; זֶרֶת [Noun (f)] spread; מִזְרֶה [Noun (m)] shovel; זָרָא [Noun (m)] disgust	Freq100plus
+צחק	Verbs: Qal/he laughed (6), Piel/mock (7) | Nominals: צְחֹק [Noun (m)] laughter	Freq100plus
+לכד	Verbs: Qal/he captured (53), Niphal/it will be captured (35), Hithpael/they freeze (2) | Nominals: לֶכֶד [Noun (m)] capture; מַלְכֹּדֶת [Noun (f)] snare	Freq100plus
+נבל	Verbs: Qal/it withers (19), Hiphil/we have withered (1), Piel/he treated with contempt (3) | Nominals: נְבֵלָה [Noun (f)] flabby; נְבָלָה [Noun (f)] foolishness; נָבָל [Adj] stupid; נַבְלוּת [Noun (f)] disgrace	Freq100plus
+גמל	Verbs: Qal/he has dealt bountifully (20), Niphal/he was weaned (3) | Nominals: גָּמָל [Noun] camel; גְּמוּל [Noun (m)] treatment; גְּמוּלָה [Noun (f)] meaning the same; תַּגְמוּל [Noun (m)] bestowment	Freq100plus
+כבש	Nominals: כֶּשֶׂב [Noun (m)] young sheep; כִּשְׂבָּה [Noun (f)] young ewe	Freq100plus
+אשר	Verbs: Qal/advance (1), Piel/you advance (6), Pual/he will be called blessed (2) | Nominals: אֶשֶׁר [Noun (m)] happiness; אֻשַּׁרְנָא [Noun (m)] wall; תְּאַשּׁוּר [Noun (f)] cedar; אֹשֶׁר [Noun (m)] happiness	Freq100plus
+סגר	Verbs: Qal/shut (37), Niphal/they will be shut (8), Hiphil/he will shut up (18), Piel/he has delivered up (2), Pual/they will be shut up (5) | Nominals: מִסְגֶּרֶת [Noun (f)] enclosing; מַסְגֵּר [Noun (m)] fastener; סְגוֹר [Noun (m)] shut up; סַגְרִיד [Noun (m)] pouring rain	Freq100plus
+שפך	Verbs: Qal/pour out (93), Niphal/it will be poured out (8), Pual/it was shed (3), Hithpael/it pours itself out (3) | Nominals: שֶׁפֶךְ [Noun (m)] emptying; שׇׁפְכָה [Noun (f)] pipe	Freq100plus
+מגרש		Freq100plus
+שקר	Verbs: Qal/you will deal falsely (1), Piel/you will deal falsely (5) | Nominals: שֶׁקֶר [Noun (m)] untruth	Freq100plus
+בער	Verbs: Qal/it burned (41), Niphal/he is stupid (4), Hiphil/he will cause to be grazed over (8), Piel/you will remove (38), Pual/[was] kindled (1) | Nominals: בְּעִיר [Noun (m)] cattle; בַּעַר [Noun (m)] foot; בְּעֵרָה [Noun (f)] burning	Freq100plus
+רפא	Verbs: Qal/heal (23), Niphal/it has been healed (17), Piel/they have healed (9), Hithpael/get himself healed (3) | Nominals: מַרְפֵּא [Noun (m)] curative; תְּרָפִים [Noun (m)] Teraphim; רָפָא [Noun (m)] lax; רְפֻאָה [Noun (f)] medicament	Freq100plus
+מהר	Verbs: Qal/they hurried after (2), Niphal/it is hasty (4), Piel/hurry (61) | Nominals: מְהֵרָה [Noun (f)] hurry; מַהֵר [Adj] hurrying; מֹהַר [Noun (m)] price	Freq100plus
+עוף	Verbs: Qal/flying (17), Hiphil/¿/ do you cause to fly (1), Piel/flying (4), Hithpael/it will fly away (1) | Nominals: עוֹף [Noun (m)] bird; עַפְעַף [Noun (m)] eyelash; עֵיפָה [Noun (f)] obscurity; מוּעָף [Noun (m)] covered	Freq100plus
+מכר	Verbs: Qal/you sold (40), Niphal/it will be sold (18), Hithpael/you will sell yourselves (3) | Nominals: מִמְכָּר [Noun (m)] merchandise; מֶכֶר [Noun (m)] merchandise; מָכִירִי [Adj] Makirite; מִמְכֶּרֶת [Noun (f)] sale	Freq100plus
+תועבה		Freq100plus
+הפך	Verbs: Qal/he turned (51), Niphal/it was changed (34), Hophal/it has been turned (1), Hithpael/<the>/ whirling (4) | Nominals: תַּהְפֻּכָה [Noun (f)] perversity; מַהְפֵּכָה [Noun (f)] destruction; מַהְפֶּכֶת [Noun (f)] wrench; הֹפֶךְ [Noun (m)] upset	Freq100plus
+זנה	Verbs: Qal/a prostitute (82), Hiphil/they will make prostitute [themselves] (8), Pual/it was approached for prostitution (1) | Nominals: זָנוּן [Noun (m)] adultery; זְנוּת [Noun (f)] adultery	Freq100plus
+רנן	Verbs: Qal/shout for joy (19), Hiphil/shout for joy (5), Piel/they will shout for joy (28), Pual/anything will be sung (1), Hithpael/overcome (1) | Nominals: רִנָּה [Noun (f)] creaking; רְנָנָה [Noun (f)] shout; תֹּרֶן [Noun (m)] pole; אֹרֶן [Noun (m)] ash	Freq100plus
+טהר	Verbs: Qal/he will be pure (34), Piel/he will declare pure (24), Pual/[is] cleansed (1), Hithpael/[one] purifying himself (19) | Nominals: טׇהֳרָה [Noun (f)] purification; טֹהַר [Noun (m)] brightness; טְהוֹר [Noun (m)] purity	Freq100plus
+נגב		Freq100plus
+נצח	Verbs: Niphal/enduring (1), Piel/to the/ choirmaster (64) | Nominals: נֵצַח [Noun (m)] juice	Freq100plus
+עור	Verbs: Qal/awake (14), Niphal/they will be roused (7), Hiphil/he stirred up (29), Piel/he wielded (12), Hithpael/rouse yourself (5) | Nominals: עַיִר [Noun (m)] young ass; עָר [Noun (m)] foe; עָר [Noun (m)] enemy.; עֵרִי [Adj] Erite	Freq100plus
+עז	Nominals: עׇזִּיאֵלִי [Adj] Uzzielite; עׇזְנִיָּה [Noun (f)] sea-eagle	Freq100plus
+לבש	Verbs: Qal/put on (57), Hiphil/he clothed (22), Pual/clothed (4) | Nominals: תַּלְבֹּשֶׁת [Noun (f)] garment	Freq100plus
+משח	Verbs: Qal/you will anoint (48), Niphal/was anointed (5) | Nominals: מָשִׁיחַ [Noun (m)] anointed; מִמְשַׁח [Noun (m)] outspread; מְשַׁח [Noun (m)] oil	Freq100plus
+עמוד		Freq100plus
+שבה	Verbs: Qal/they took captive (25), Niphal/they have been taken captive (8) | Nominals: שְׁבִי [Noun (m)] exiled; שִׁבְיָה [Noun (f)] exile; שְׁבוּ [Noun (f)] gem	Freq100plus
+שכח	Verbs: Qal/you will forget (72), Niphal/it will be forgotten (13), Hiphil/make forget (6), Piel/he has caused to be forgotten (1), Hithpael/they may be forgotten (1), u/it was found (2) | Nominals: שָׁכֵחַ [Adj] oblivious	Freq100plus
+כנף	Verbs: Niphal/he will hide himself (1) | Nominals: כָּנָף [Noun (f)] edge	Freq100plus
+חמור		Freq100plus
+יען	Nominals: יַעֲנָה [Noun (f)] owl.; יָעֵן [Noun (f)] ostrich	Freq100plus
+פעל	Verbs: Qal/[those who] do (53) | Nominals: פֹּעַל [Noun (m)] act; פְּעֻלָּה [Noun (f)] work	Freq100plus
+יבש	Verbs: Qal/it will wither (41), Hiphil/he dried up (15), Piel/it will dry up (2) | Nominals: יַבָּשָׁה [Noun (f)] dry ground; יָבֵשׁ [Adj] dry; יַבֶּשֶׁת [Noun (f)] dry ground; יַבֶּשֶׁת [Noun (f)] dry land	Freq100plus
+לוה	Verbs: Qal/you will borrow (6), Niphal/they will join themselves (15), Hiphil/you will lend to (8) | Nominals: לִוְיָתָן [Noun (m)] wreathed; לֵוִי [Noun (m)] Levite.; לֹיָה [Noun (f)] wreath; לִוְיָה [Noun (f)] attached	Freq100plus
+קצר	Verbs: Qal/harvesters (41), Hiphil/you have made short (1), Piel/he has cut short (1) | Nominals: קָצִיר [Noun (m)] severed; קָצֵר [Adj] short; קֹצֶר [Noun (m)] shortness	Freq100plus
+במה		Freq100plus
+ברח	Verbs: Qal/he fled (54), Hiphil/they put to flight (4) | Nominals: בְּרִיחַ [Noun (m)] bolt; מִבְרָח [Noun (m)] refugee	Freq100plus
+עמק	Verbs: Qal/they are deep (1), Hiphil/make deep (8) | Nominals: עֵמֶק [Noun (m)] vale; עָמֹק [Adj] deep; מַעֲמָק [Noun (m)] deep; עָמֵק [Adj] deep	Freq100plus
+רוץ	Verbs: Qal/he ran (91), Hiphil/bring [them] quickly (3), Piel/they run around (1) | Nominals: מֵרוֹץ [Noun (m)] run	Freq100plus
+תמיד		Freq100plus
+זרוע	Nominals: אֶזְרוֹעַ [Noun (f)] arm; אֶדְרָע [Noun (f)] arm; דְּרַע [Noun (f)] arm	Freq100plus
+ענן	Verbs: Piel/soothsayers (9) | Nominals: עָנָן [Noun (m)] cloud; עֲנָנָה [Noun (f)] cloudiness	Freq100plus
+אשם	Verbs: Qal/he will be guilty (33), Niphal/they have suffered (1) | Nominals: אָשָׁם [Noun (m)] guilt; אַשְׁמָה [Noun (f)] guiltiness; אָשֵׁם [Adj] guilty	Freq100plus
+דוד	Nominals: יְדִיד [Adj] loved; דּוּד [Noun (m)] pot; דּוּדַי [Noun (m)] boiler; דַּד [Noun (m)] breast	Freq100plus
+עגל	Nominals: עֵגֶל [Noun (m)] calf; עֲגָלָה [Noun (f)] revolving; עֶגְלָה [Noun (f)] calf; מוּצָק [Noun (m)] fusion	Freq100plus
+מעט		Freq100plus
+שור	Verbs: Qal/you will come down (2) | Nominals: שׁוֹר [Noun (m)] bullock; שׁוּר [Noun (m)] wall; תּוֹר [Noun (m)] bull; שׁוּר [Noun (m)] wall.	Freq100plus
+שעיר	Nominals: שְׂעִירָה [Noun (f)] she-goat; שָׂעִיר [Noun (m)] shower	Freq100plus
+יסד	Verbs: Qal/[who] founded (10), Niphal/they seat themselves (2), Hophal/[are] [the] founding of (3), Piel/he had appointed (8), Pual/it was founded (6) | Nominals: סוֹד [Noun (m)] session; יְסוֹד [Noun (f)] foundation; מוֹסָד [Noun (m)] foundation; מוּסָד [Noun (m)] foundation	Freq100plus
+ניר	Verbs: Qal/plow (2) | Nominals: תַּנּוּר [Noun (m)] fire-pot; נוּר [Noun] fire; מָנוֹר [Noun (m)] yoke	Freq100plus
+קרה	Verbs: Qal/[things which] had happened to (6), Niphal/he met (6), Hiphil/make happen (3), Piel/to/ make beams for (3) | Nominals: קִרְיָה [Noun (f)] city; מִקְרֶה [Noun (m)] met; קְרִי [Noun (m)] hostile encounter; קֶרֶת [Noun (f)] city	Freq100plus

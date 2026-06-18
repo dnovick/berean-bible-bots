@@ -8,7 +8,7 @@ Each card front shows the consonantal root; the back shows the gloss, attested v
 ## Card Design
 
 - **Front:** Consonantal root (e.g., אבד)
-- **Back:** Vowel-pointed form, gloss, verbal stem frequencies, derived nominals
+- **Back:** Vowel-pointed form; table of verbal stems with individual glosses and frequencies; table of derived nominals with POS, gloss, and frequency
 - **Frequency field:** Combined OT occurrence count (sum of all lemmata in the root family)
 
 ## Files
@@ -33,7 +33,7 @@ Each card front shows the consonantal root; the back shows the gloss, attested v
 | # | Field | Purpose |
 |---|---|---|
 | 1 | **Front** | Consonantal root (the question) |
-| 2 | **Back** | HTML answer (gloss, stems, nominals) |
+| 2 | **Back** | HTML answer (stems, nominals) |
 | 3 | **Frequency** | OT occurrence count — enables filtered decks (e.g., `Frequency:>100`) |
 
 ### Step 2 — Set the card templates
