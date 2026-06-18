@@ -3,7 +3,7 @@
 Supplementary flashcard decks for Biblical Hebrew students working through
 Pratico & Van Pelt's *Basics of Biblical Hebrew*.
 
-> **With thanks to Scott Blair**, whose generously shared Anki decks form the basis of all four resources on this page.
+> **With thanks to Scott Blair**, whose generously shared Anki decks and ideas have shaped the resources on this page.
 
 Each deck is provided in three formats:
 **MD** (human-readable reference with answer key) ·
@@ -48,6 +48,23 @@ Tagged by stem (`stem-qal`, `stem-hiphil`, etc.) for selective drill.
 | MD | [heb-verb-paradigm.md](hebrew-verb-paradigm-all-stems/heb-verb-paradigm.md) | Human-readable card list with answer key |
 | Anki | [heb-verb-paradigm.txt](hebrew-verb-paradigm-all-stems/heb-verb-paradigm.txt) | Tab-separated import (File → Import) |
 | Flashcards Deluxe | [heb-verb-paradigm-fd.txt](hebrew-verb-paradigm-all-stems/heb-verb-paradigm-fd.txt) | Flashcards Deluxe import file |
+
+---
+
+## Hebrew Root Deck — 1,000 cards
+
+The top 1,000 Hebrew roots ranked by combined OT frequency.
+Front: consonantal root. Back: vowel-pointed form, gloss, attested verbal stems with frequencies, and derived nominals.
+Requires **Hebrew Root** notetype in Anki (3 fields: Front, Back, Frequency) — see [README](hebrew-root-deck/README.md) for setup.
+
+| Format | File | Description |
+|---|---|---|
+| Anki | [hebrew-root-deck.txt](hebrew-root-deck/hebrew-root-deck.txt) | Hebrew Root notetype (File → Import) |
+| Flashcards Deluxe (all) | [hebrew-root-deck-fd-all.txt](hebrew-root-deck/hebrew-root-deck-fd-all.txt) | All 1,000 roots |
+| Flashcards Deluxe (≥100) | [hebrew-root-deck-fd-100.txt](hebrew-root-deck/hebrew-root-deck-fd-100.txt) | Freq ≥ 100 |
+| Flashcards Deluxe (50–99) | [hebrew-root-deck-fd-50.txt](hebrew-root-deck/hebrew-root-deck-fd-50.txt) | Freq 50–99 |
+| Flashcards Deluxe (10–49) | [hebrew-root-deck-fd-10.txt](hebrew-root-deck/hebrew-root-deck-fd-10.txt) | Freq 10–49 |
+| Summary | [hebrew-root-deck.md](hebrew-root-deck/hebrew-root-deck.md) | Top-50 table and statistics |
 
 ---
 
