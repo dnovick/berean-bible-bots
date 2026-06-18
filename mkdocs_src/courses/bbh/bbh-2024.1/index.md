@@ -9,11 +9,11 @@
 
 | Session | Date | Recording |
 |---|---|---|
-| [100 — Weak Qal Perfective Verbs II](sessions/session-100.md) | Jul 7, 2025 |  |
-| [101 — Qal Imperfective Strong Verbs](sessions/session-101.md) | Jul 14, 2025 |  |
-| [102 — Review / Q&A](sessions/session-102.md) | Jul 21, 2025 |  |
-| [103 — Review / Q&A](sessions/session-103.md) | Jul 28, 2025 |  |
-| [104 — Review / Q&A](sessions/session-104.md) | Aug 4, 2025 |  |
+| [100 — Weak Qal Perfective Verbs II](sessions/session-100.md) | Jul 7, 2025 | [Watch](https://drive.google.com/file/d/1rXjDmvNSMVGok4dBaZtcKlLTe9ermAiX/view?usp=drive_link) |
+| [101 — Qal Imperfective Strong Verbs](sessions/session-101.md) | Jul 14, 2025 | [Watch](https://drive.google.com/file/d/17F7kiAdO_WFcoIP06F42H7s7GwumndZH/view?usp=drive_link) |
+| [102 — Review / Q&A](sessions/session-102.md) | Jul 21, 2025 | [Watch](https://drive.google.com/file/d/1dVQ5Jh9NWDuxiK4I243OZ55CgLRgKzhs/view?usp=drive_link) |
+| [103 — Review / Q&A](sessions/session-103.md) | Jul 28, 2025 | [Watch](https://drive.google.com/file/d/1A5q-90lMEAztdMNFMFck1eDB9IJKKv67/view?usp=drive_link) |
+| [104 — Review / Q&A](sessions/session-104.md) | Aug 4, 2025 | [Watch](https://drive.google.com/file/d/1m1KegS08mkDf-FLvECo0DqLA5eN-SzOF/view?usp=drive_link) |
 | [105 — Review / Q&A](sessions/session-105.md) | Aug 18, 2025 | [Watch](https://drive.google.com/file/d/18XlNI1TTU-ofFFUY9UpCMRZVWLPI7t4m/view?usp=drive_link) |
 | [106 — Review / Q&A](sessions/session-106.md) | Sep 1, 2025 | [Watch](https://drive.google.com/file/d/1mWd5QQaKpa5_zDKKUwR5Cmgd1ZWiTHmJ/view?usp=drive_link) |
 | [107 — Review / Q&A](sessions/session-107.md) | Sep 8, 2025 | [Watch](https://drive.google.com/file/d/1VD8BnH0jpKp6pbSC-iHNZxFWfdjtNf6U/view?usp=drive_link) |
