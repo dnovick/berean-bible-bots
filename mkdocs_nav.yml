@@ -636,6 +636,103 @@ nav:
       - 'Word Study: קֶרֶן / קָרַן — Horn / Radiance':
         - Overview: reports/both/word_studies/qeren/index.md
         - 'קֶרֶן / קָרַן — Word Study: Horn, Radiance, and the Moses Problem': reports/both/word_studies/qeren/qeren_report.md
+# <COURSES>
+- Courses:
+  - Overview: courses/index.md
+  - Biblical Hebrew:
+    - Overview: courses/bbh/index.md
+    - Student Resources: courses/bbh/common/student-resources.md
+    - bbh-2024.1:
+      - Overview: courses/bbh/bbh-2024.1/index.md
+      - Sessions:
+        - 'Session 100 — Weak Qal Perfective Verbs II': courses/bbh/bbh-2024.1/sessions/session-100.md
+        - 'Session 101 — Qal Imperfective Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-101.md
+        - 'Session 102 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-102.md
+        - 'Session 103 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-103.md
+        - 'Session 104 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-104.md
+        - 'Session 105 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-105.md
+        - 'Session 106 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-106.md
+        - 'Session 107 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-107.md
+        - 'Session 108 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-108.md
+        - 'Session 109 — Qal Imperfective Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-109.md
+        - 'Session 110 — Qal Imperfective Weak Verbs I': courses/bbh/bbh-2024.1/sessions/session-110.md
+        - 'Session 111 — Qal Imperfective Weak Verbs II': courses/bbh/bbh-2024.1/sessions/session-111.md
+        - 'Session 112 — Qal Imperfective Weak Verbs II': courses/bbh/bbh-2024.1/sessions/session-112.md
+        - 'Session 113 — Waw Consecutive': courses/bbh/bbh-2024.1/sessions/session-113.md
+        - 'Session 114 — Waw Consecutive II': courses/bbh/bbh-2024.1/sessions/session-114.md
+        - 'Session 115 — Waw Consecutive III': courses/bbh/bbh-2024.1/sessions/session-115.md
+        - 'Session 116 — Qal Imperative': courses/bbh/bbh-2024.1/sessions/session-116.md
+        - 'Session 117 — Pronominal Suffixes on Verbs': courses/bbh/bbh-2024.1/sessions/session-117.md
+        - 'Session 118 — Infinitive Construct': courses/bbh/bbh-2024.1/sessions/session-118.md
+        - 'Session 119 — Infinitive Construct / Infinitive Absolute': courses/bbh/bbh-2024.1/sessions/session-119.md
+        - 'Session 120 — Infinitive Absolute / Participle': courses/bbh/bbh-2024.1/sessions/session-120.md
+        - 'Session 121 — Review in Context': courses/bbh/bbh-2024.1/sessions/session-121.md
+        - 'Session 122 — Review in Context': courses/bbh/bbh-2024.1/sessions/session-122.md
+        - 'Session 123 — Review in Context': courses/bbh/bbh-2024.1/sessions/session-123.md
+        - 'Session 124 — Niphal Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-124.md
+        - 'Session 125 — Niphal Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-125.md
+        - 'Session 126 — Hiphil Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-126.md
+        - 'Session 127 — Hiphil Strong Verbs (Cont''d)': courses/bbh/bbh-2024.1/sessions/session-127.md
+        - 'Session 128 — Hiphil Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-128.md
+        - 'Session 129 — Hiphil Verb Practice': courses/bbh/bbh-2024.1/sessions/session-129.md
+        - 'Session 130 — Hophal Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-130.md
+        - 'Session 131 — Hophal Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-131.md
+        - 'Session 132 — Piel Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-132.md
+        - 'Session 133 — Piel Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-133.md
+        - 'Session 134 — Pual Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-134.md
+        - 'Session 135 — Pual Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-135.md
+        - 'Session 136 — Hithpael Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-136.md
+        - 'Session 137 — Hithpael Weak Verbs': courses/bbh/bbh-2024.1/sessions/session-137.md
+    - bbh-2026.1:
+      - Overview: courses/bbh/bbh-2026.1/index.md
+      - Sessions:
+        - 'Session 1 — Introduction': courses/bbh/bbh-2026.1/sessions/session-01.md
+        - 'Session 2 — BBH 1 - Hebrew Alphabet': courses/bbh/bbh-2026.1/sessions/session-02.md
+        - 'Session 3 — BBH 2 - Hebrew Vowels': courses/bbh/bbh-2026.1/sessions/session-03.md
+        - 'Session 4 — BBH 3 - Syllabification and Pronunciation': courses/bbh/bbh-2026.1/sessions/session-04.md
+        - 'Session 5 — Review — BBH Ch1–3': courses/bbh/bbh-2026.1/sessions/session-05.md
+        - 'Session 6 — BBH 4 — Hebrew Nouns': courses/bbh/bbh-2026.1/sessions/session-06.md
+        - 'Session 7 — BBH 5 — Definite Article and Conjunction ו': courses/bbh/bbh-2026.1/sessions/session-07.md
+        - 'Session 8 — BBH 6 — Hebrew Prepositions': courses/bbh/bbh-2026.1/sessions/session-08.md
+        - 'Session 9 — BBH 7 — Hebrew Adjectives': courses/bbh/bbh-2026.1/sessions/session-09.md
+        - 'Session 10 — Review — BBH Ch4–7': courses/bbh/bbh-2026.1/sessions/session-10.md
+        - 'Session 11 — BBH 8 — Hebrew Pronouns': courses/bbh/bbh-2026.1/sessions/session-11.md
+        - 'Session 12 — BBH 9 — Hebrew Pronominal Suffixes': courses/bbh/bbh-2026.1/sessions/session-12.md
+        - 'Session 13 — BBH 10 — Hebrew Construct Chain': courses/bbh/bbh-2026.1/sessions/session-13.md
+        - 'Session 14 — BBH 11 — Hebrew Numbers': courses/bbh/bbh-2026.1/sessions/session-14.md
+        - 'Session 15 — Review — BBH Ch8–11': courses/bbh/bbh-2026.1/sessions/session-15.md
+        - 'Session 16 — BBH 12 — Introduction to Hebrew Verbs': courses/bbh/bbh-2026.1/sessions/session-16.md
+        - 'Session 17 — BBH 13 — Qal Perfect Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-17.md
+        - 'Session 18 — BBH 14 — Qal Perfect Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-18.md
+        - 'Session 19 — BBH 15 — Qal Imperfect Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-19.md
+        - 'Session 20 — BBH 16 — Qal Imperfect Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-20.md
+        - 'Session 21 — Review — BBH Ch12–16': courses/bbh/bbh-2026.1/sessions/session-21.md
+        - 'Session 22 — BBH 17 — Waw-Consecutive': courses/bbh/bbh-2026.1/sessions/session-22.md
+        - 'Session 23 — BBH 18 — Qal Imperative': courses/bbh/bbh-2026.1/sessions/session-23.md
+        - 'Session 24 — BBH 19 — Qal Pronominal Suffixes on Verbs': courses/bbh/bbh-2026.1/sessions/session-24.md
+        - 'Session 25 — Review — BBH Ch17–19': courses/bbh/bbh-2026.1/sessions/session-25.md
+        - 'Session 26 — BBH 20 — Qal Infinitive Construct': courses/bbh/bbh-2026.1/sessions/session-26.md
+        - 'Session 27 — BBH 21 — Qal Infinitive Absolute': courses/bbh/bbh-2026.1/sessions/session-27.md
+        - 'Session 28 — BBH 22 — Qal Participle': courses/bbh/bbh-2026.1/sessions/session-28.md
+        - 'Session 29 — BBH 23 — Sentence Syntax': courses/bbh/bbh-2026.1/sessions/session-29.md
+        - 'Session 30 — Review — BBH Ch20–23': courses/bbh/bbh-2026.1/sessions/session-30.md
+        - 'Session 31 — BBH 24 — Niphal Stem Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-31.md
+        - 'Session 32 — BBH 25 — Niphal Stem Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-32.md
+        - 'Session 33 — BBH 26 — Hiphil Stem Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-33.md
+        - 'Session 34 — BBH 27 — Hiphil Stem Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-34.md
+        - 'Session 35 — BBH 28 — Hophal Stem Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-35.md
+        - 'Session 36 — BBH 29 — Hophal Stem Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-36.md
+        - 'Session 37 — Review — BBH Ch24–29': courses/bbh/bbh-2026.1/sessions/session-37.md
+        - 'Session 38 — BBH 30 — Piel Stem Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-38.md
+        - 'Session 39 — BBH 31 — Piel Stem Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-39.md
+        - 'Session 40 — BBH 32 — Pual Stem Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-40.md
+        - 'Session 41 — BBH 33 — Pual Stem Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-41.md
+        - 'Session 42 — BBH 34 — Hithpael Strong Verbs': courses/bbh/bbh-2026.1/sessions/session-42.md
+        - 'Session 43 — BBH 35 — Hithpael Weak Verbs': courses/bbh/bbh-2026.1/sessions/session-43.md
+        - 'Session 44 — Review — BBH Ch30–35': courses/bbh/bbh-2026.1/sessions/session-44.md
+        - 'Session 45 — Introduction to the Hebrew Bible': courses/bbh/bbh-2026.1/sessions/session-45.md
+        - 'Session 46 — Final Review and Capstone': courses/bbh/bbh-2026.1/sessions/session-46.md
+# </COURSES>
 - Study Helps:
   - Overview: study-helps/index.md
   - New Testament:
