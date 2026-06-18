@@ -795,7 +795,7 @@ def _build_nav_block(
             if sessions:
                 lines.append("      - Sessions:")
                 for session in sessions:
-                    title = session_title(session)
+                    title = session_title(session).replace("'", "''")
                     fname = session_filename(session)
                     lines.append(
                         f"        - '{title}': courses/{group}/{cid}/sessions/{fname}"
