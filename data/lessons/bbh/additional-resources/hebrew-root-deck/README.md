@@ -24,10 +24,47 @@ Each card front shows the consonantal root; the back shows the gloss, attested v
 
 ## Anki Setup
 
-Before importing `hebrew-root-deck.txt`, create a note type named **Hebrew Root** with three fields in order:
-1. **Front** — the question (consonantal root)
-2. **Back** — the answer (HTML)
-3. **Frequency** — numeric OT frequency (used for filtered decks, e.g., `Frequency:>100`)
+Before importing `hebrew-root-deck.txt`, create a note type named **Hebrew Root**:
+
+1. Open **Tools → Manage Note Types**, click **Add**, choose **Add: Basic**, and name it **Hebrew Root**.
+2. Click **Fields…** and ensure the fields are in this exact order:
+   1. **Front** — the question (consonantal root)
+   2. **Back** — the answer (HTML)
+   3. **Frequency** — numeric OT frequency (used for filtered decks, e.g., `Frequency:>100`)
+3. Click **Cards…** and set the templates:
+
+   **Front Template:**
+   ```html
+   <div style="font-size:2.5em; direction:rtl; text-align:center;">{{Front}}</div>
+   ```
+
+   **Back Template:**
+   ```html
+   {{FrontSide}}
+   <hr>
+   {{Back}}
+   ```
+
+   **Styling** (optional, adds borders and centering to the stem/nominal tables):
+   ```css
+   .card {
+     font-family: Arial, sans-serif;
+     font-size: 16px;
+     text-align: center;
+   }
+
+   table {
+     margin: 8px auto;
+     border-collapse: collapse;
+   }
+
+   th, td {
+     padding: 3px 10px;
+     border: 1px solid #ccc;
+   }
+   ```
+
+4. Close the dialogs and import `hebrew-root-deck.txt` via **File → Import**.
 
 ## Filtering in Flashcards Deluxe
 
