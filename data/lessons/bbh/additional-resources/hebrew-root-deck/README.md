@@ -24,47 +24,56 @@ Each card front shows the consonantal root; the back shows the gloss, attested v
 
 ## Anki Setup
 
-Before importing `hebrew-root-deck.txt`, create a note type named **Hebrew Root**:
+### Step 1 — Create the note type
 
-1. Open **Tools → Manage Note Types**, click **Add**, choose **Add: Basic**, and name it **Hebrew Root**.
-2. Click **Fields…** and ensure the fields are in this exact order:
-   1. **Front** — the question (consonantal root)
-   2. **Back** — the answer (HTML)
-   3. **Frequency** — numeric OT frequency (used for filtered decks, e.g., `Frequency:>100`)
-3. Click **Cards…** and set the templates:
+1. Open **Tools → Manage Note Types**
+2. Click **Add**, choose **Add: Basic**, and name it **Hebrew Root**
+3. Click **Fields…** and confirm the fields are in this exact order:
 
-   **Front Template:**
-   ```html
-   <div style="font-size:2.5em; direction:rtl; text-align:center;">{{Front}}</div>
-   ```
+| # | Field | Purpose |
+|---|---|---|
+| 1 | **Front** | Consonantal root (the question) |
+| 2 | **Back** | HTML answer (gloss, stems, nominals) |
+| 3 | **Frequency** | OT occurrence count — enables filtered decks (e.g., `Frequency:>100`) |
 
-   **Back Template:**
-   ```html
-   {{FrontSide}}
-   <hr>
-   {{Back}}
-   ```
+### Step 2 — Set the card templates
 
-   **Styling** (optional, adds borders and centering to the stem/nominal tables):
-   ```css
-   .card {
-     font-family: Arial, sans-serif;
-     font-size: 16px;
-     text-align: center;
-   }
+Click **Cards…** in the Manage Note Types dialog and enter the following:
 
-   table {
-     margin: 8px auto;
-     border-collapse: collapse;
-   }
+**Front Template:**
+```html
+<div style="font-size:2.5em; direction:rtl; text-align:center;">{{Front}}</div>
+```
 
-   th, td {
-     padding: 3px 10px;
-     border: 1px solid #ccc;
-   }
-   ```
+**Back Template:**
+```html
+{{FrontSide}}
+<hr>
+{{Back}}
+```
 
-4. Close the dialogs and import `hebrew-root-deck.txt` via **File → Import**.
+**Styling** (optional — adds borders and centering to the stem and nominal tables):
+```css
+.card {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  text-align: center;
+}
+
+table {
+  margin: 8px auto;
+  border-collapse: collapse;
+}
+
+th, td {
+  padding: 3px 10px;
+  border: 1px solid #ccc;
+}
+```
+
+### Step 3 — Import the deck
+
+With the **Hebrew Root** note type in place, import via **File → Import** and select `hebrew-root-deck.txt`.
 
 ## Filtering in Flashcards Deluxe
 
