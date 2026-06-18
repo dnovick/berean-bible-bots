@@ -59,3 +59,13 @@ Each profile covers the grammatical makeup of an OT book — verb stems, noun di
 | Psalms | [Psa_profile.md](survey/Psa_profile.md) |
 | Isaiah | [Isa_profile.md](survey/Isa_profile.md) |
 | Daniel | [Dan_profile.md](survey/Dan_profile.md) |
+
+---
+
+## Thematic Studies
+
+In-depth studies of vocabulary and themes within a single OT book.
+
+| Report | Description |
+|---|---|
+| [Psalm 119 — Word Vocabulary and Themes](survey/psalm-119/README.md) | Analysis of the 8 canonical Word terms and major thematic threads across all 22 acrostic stanzas |
