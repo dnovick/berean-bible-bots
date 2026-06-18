@@ -6,6 +6,15 @@
 #          chmod +x .git/hooks/pre-commit
 set -euo pipefail
 
+# Auto-stage any locally modified exercise PDFs so they never accumulate as
+# silent unstaged changes after a full exercise_pdf rebuild.
+modified_pdfs=$(git diff --name-only -- 'data/lessons/' | grep '\.pdf$' || true)
+if [ -n "$modified_pdfs" ]; then
+    echo "[pre-commit] Auto-staging modified exercise PDFs ..."
+    echo "$modified_pdfs" | xargs git add
+    echo "[pre-commit] Done (exercise PDFs staged)."
+fi
+
 if git diff --cached --name-only | grep -qE '^(data/courses/|scripts/build_courses\.py)'; then
     echo "[pre-commit] Rebuilding mkdocs_src/courses/ ..."
     .venv/bin/python3 scripts/build_courses.py

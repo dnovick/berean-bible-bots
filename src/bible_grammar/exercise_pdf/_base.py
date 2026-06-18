@@ -1326,6 +1326,9 @@ class ExercisePDF:
 
     # -------------------------------------------------------- save
     def save(self, path: str) -> str:
+        if os.path.exists(path) and not os.environ.get('PDF_FORCE_REBUILD'):
+            print(f'  Skipping (exists): {os.path.basename(path)}')
+            return path
         self._path = path
         os.makedirs(os.path.dirname(path), exist_ok=True)
         self._canvas = canvas.Canvas(path, pagesize=LETTER)
@@ -1389,9 +1392,16 @@ def _build_exercise_pdf(klass: Any, title: str, subtitle: str,
 
     path_parts: sub-path components under data/lessons/ (e.g. ['bba','ch1','exercises','ch1-letter-recognition'])
     filename:   PDF filename without directory (e.g. 'ch1-letter-recognition.pdf')
+
+    Skips regeneration if the file already exists and PDF_FORCE_REBUILD is not set.
     """
     if out_dir is None:
         here = os.path.dirname(os.path.abspath(__file__))
         out_dir = os.path.join(here, '..', '..', '..', 'data', 'lessons', *path_parts)
     path = os.path.join(out_dir, filename)
-    return klass(title=title, subtitle=subtitle).save(path)
+    if os.path.exists(path) and not os.environ.get('PDF_FORCE_REBUILD'):
+        print(f'  Skipping (exists): {filename}')
+        return path
+    result = klass(title=title, subtitle=subtitle).save(path)
+    print(f'  Built: {filename}')
+    return result

@@ -2,9 +2,15 @@
 Run all exercise PDF builders.
 
 Usage:
-    python3 -m src.bible_grammar.exercise_pdf
-    python3 src/bible_grammar/exercise_pdf/__main__.py
+    python3 -m bible_grammar.exercise_pdf           # skip existing PDFs
+    python3 -m bible_grammar.exercise_pdf --force   # rebuild everything
 """
+import os
+import sys
+
+if '--force' in sys.argv:
+    os.environ['PDF_FORCE_REBUILD'] = '1'
+
 from .bbh import (
     build_ch1_letter_recognition,
     build_ch2_vowel_identification,
@@ -225,90 +231,50 @@ builders_ch1_23 = [
 ]
 for fn in builders_ch1_23:
     try:
-        saved = fn()
-        print(f'Saved: {saved}')
+        fn()
     except Exception as exc:
         print(f'ERROR in {fn.__name__}: {exc}')
 
 # Ch24+ exercises (existing)
-p0 = build_ch24_exercise()
-print(f'Saved: {p0}')
-p1 = build_ch24_contrast_exercise()
-print(f'Saved: {p1}')
-p2 = build_ch24_function_sort_exercise()
-print(f'Saved: {p2}')
-p3 = build_ch25_exercise()
-print(f'Saved: {p3}')
-p4 = build_ch25_weak_form_id_exercise()
-print(f'Saved: {p4}')
-p5 = build_ch26_exercise()
-print(f'Saved: {p5}')
-p6 = build_ch26_contrast_exercise()
-print(f'Saved: {p6}')
-p7 = build_ch26_function_sort_exercise()
-print(f'Saved: {p7}')
-p7b = build_ch26_stem_id_drill()
-print(f'Saved: {p7b}')
-p8 = build_ch27_exercise()
-print(f'Saved: {p8}')
-p9 = build_ch27_weak_form_id_exercise()
-print(f'Saved: {p9}')
-p9a1 = build_ch27_nh_contrast_exercise()
-print(f'Saved: {p9a1}')
-p9a2 = build_ch27_bg_drill_exercise()
-print(f'Saved: {p9a2}')
-p9b = build_ch27_contrast_exercise()
-print(f'Saved: {p9b}')
-p9c = build_ch27_function_sort_exercise()
-print(f'Saved: {p9c}')
-p9d = build_ch27_stem_id_drill()
-print(f'Saved: {p9d}')
-p10 = build_ch28_hophal_exercise()
-print(f'Saved: {p10}')
-p12 = build_ch28_hophal_hiphil_contrast_exercise()
-print(f'Saved: {p12}')
-p13 = build_ch29_hophal_weak_exercise()
-print(f'Saved: {p13}')
-p14 = build_ch29_weak_form_id_exercise()
-print(f'Saved: {p14}')
-p15 = build_ch30_exercise()
-print(f'Saved: {p15}')
-p16 = build_ch30_function_sort_exercise()
-print(f'Saved: {p16}')
-p17 = build_ch30_qal_piel_contrast_exercise()
-print(f'Saved: {p17}')
-p18 = build_ch31_piel_weak_exercise()
-print(f'Saved: {p18}')
-p19 = build_ch31_weak_form_id_exercise()
-print(f'Saved: {p19}')
-p20 = build_ch32_exercise()
-print(f'Saved: {p20}')
-p21 = build_ch32_piel_pual_contrast_exercise()
-print(f'Saved: {p21}')
-p21b = build_ch32_function_sort_exercise()
-print(f'Saved: {p21b}')
-p21c = build_ch32_qal_piel_pual_contrast_exercise()
-print(f'Saved: {p21c}')
-p21d = build_ch32_stem_id_drill()
-print(f'Saved: {p21d}')
-p22 = build_ch33_exercise()
-print(f'Saved: {p22}')
-p23 = build_ch33_weak_form_id_exercise()
-print(f'Saved: {p23}')
-p23b = build_ch33_qal_piel_pual_contrast_exercise()
-print(f'Saved: {p23b}')
-p23c = build_ch33_function_sort_exercise()
-print(f'Saved: {p23c}')
-p23d = build_ch33_stem_id_drill()
-print(f'Saved: {p23d}')
-p24 = build_ch34_hithpael_exercise()
-print(f'Saved: {p24}')
-p25 = build_ch34_function_sort_exercise()
-print(f'Saved: {p25}')
-p26 = build_ch35_hithpael_weak_exercise()
-print(f'Saved: {p26}')
-p27 = build_ch35_weak_form_id_exercise()
-print(f'Saved: {p27}')
+build_ch24_exercise()
+build_ch24_contrast_exercise()
+build_ch24_function_sort_exercise()
+build_ch25_exercise()
+build_ch25_weak_form_id_exercise()
+build_ch26_exercise()
+build_ch26_contrast_exercise()
+build_ch26_function_sort_exercise()
+build_ch26_stem_id_drill()
+build_ch27_exercise()
+build_ch27_weak_form_id_exercise()
+build_ch27_nh_contrast_exercise()
+build_ch27_bg_drill_exercise()
+build_ch27_contrast_exercise()
+build_ch27_function_sort_exercise()
+build_ch27_stem_id_drill()
+build_ch28_hophal_exercise()
+build_ch28_hophal_hiphil_contrast_exercise()
+build_ch29_hophal_weak_exercise()
+build_ch29_weak_form_id_exercise()
+build_ch30_exercise()
+build_ch30_function_sort_exercise()
+build_ch30_qal_piel_contrast_exercise()
+build_ch31_piel_weak_exercise()
+build_ch31_weak_form_id_exercise()
+build_ch32_exercise()
+build_ch32_piel_pual_contrast_exercise()
+build_ch32_function_sort_exercise()
+build_ch32_qal_piel_pual_contrast_exercise()
+build_ch32_stem_id_drill()
+build_ch33_exercise()
+build_ch33_weak_form_id_exercise()
+build_ch33_qal_piel_pual_contrast_exercise()
+build_ch33_function_sort_exercise()
+build_ch33_stem_id_drill()
+build_ch34_hithpael_exercise()
+build_ch34_function_sort_exercise()
+build_ch35_hithpael_weak_exercise()
+build_ch35_weak_form_id_exercise()
 
 # New stem-id, contrast, function-sort, and paradigm drills (Ch24–Ch35)
 new_builders = [
@@ -333,8 +299,7 @@ new_builders = [
 ]
 for fn in new_builders:
     try:
-        saved = fn()
-        print(f'Saved: {saved}')
+        fn()
     except Exception as exc:
         print(f'ERROR in {fn.__name__}: {exc}')
 
@@ -361,8 +326,7 @@ paradigm_builders = [
 ]
 for fn in paradigm_builders:
     try:
-        saved = fn()
-        print(f'Saved: {saved}')
+        fn()
     except Exception as exc:
         print(f'ERROR in {fn.__name__}: {exc}')
 
@@ -409,8 +373,7 @@ bbg_builders = [
 ]
 for fn in bbg_builders:
     try:
-        saved = fn()
-        print(f'Saved: {saved}')
+        fn()
     except Exception as exc:
         print(f'ERROR in {fn.__name__}: {exc}')
 
@@ -446,7 +409,6 @@ bba_builders = [
 ]
 for fn in bba_builders:
     try:
-        saved = fn()
-        print(f'Saved: {saved}')
+        fn()
     except Exception as exc:
         print(f'ERROR in {fn.__name__}: {exc}')
