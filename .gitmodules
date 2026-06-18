@@ -13,3 +13,6 @@
 [submodule "syrnt"]
 	path = syrnt
 	url = https://github.com/ETCBC/syrnt.git
+[submodule "openscriptures-lexicon"]
+	path = openscriptures-lexicon
+	url = https://github.com/openscriptures/HebrewLexicon.git
