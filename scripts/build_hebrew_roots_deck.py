@@ -550,12 +550,12 @@ Each card front shows the consonantal root; the back shows the gloss, attested v
 
 | File | Purpose |
 |---|---|
-| `hebrew-root-deck.txt` | Anki import — requires **Hebrew Root** notetype (3 fields: Front, Back, Frequency) |
-| `hebrew-root-deck-fd-all.txt` | Flashcards Deluxe — all {total} roots |
-| `hebrew-root-deck-fd-100.txt` | Flashcards Deluxe — freq ≥ 100 |
-| `hebrew-root-deck-fd-50.txt` | Flashcards Deluxe — freq 50–99 |
-| `hebrew-root-deck-fd-10.txt` | Flashcards Deluxe — freq 10–49 |
-| `hebrew-root-deck.md` | Summary report with top-50 table |
+| [hebrew-root-deck.txt](hebrew-root-deck.txt) | Anki import — requires **Hebrew Root** notetype (3 fields: Front, Back, Frequency) |
+| [hebrew-root-deck-fd-all.txt](hebrew-root-deck-fd-all.txt) | Flashcards Deluxe — all {total} roots |
+| [hebrew-root-deck-fd-100.txt](hebrew-root-deck-fd-100.txt) | Flashcards Deluxe — freq ≥ 100 |
+| [hebrew-root-deck-fd-50.txt](hebrew-root-deck-fd-50.txt) | Flashcards Deluxe — freq 50–99 |
+| [hebrew-root-deck-fd-10.txt](hebrew-root-deck-fd-10.txt) | Flashcards Deluxe — freq 10–49 |
+| [hebrew-root-deck.md](hebrew-root-deck.md) | Summary report with top-50 table |
 
 ## Anki Setup
 
