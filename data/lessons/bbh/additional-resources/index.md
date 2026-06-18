@@ -51,6 +51,23 @@ Tagged by stem (`stem-qal`, `stem-hiphil`, etc.) for selective drill.
 
 ---
 
+## Hebrew Root Deck — 1,000 cards
+
+The top 1,000 Hebrew roots ranked by combined OT frequency.
+Front: consonantal root. Back: vowel-pointed form, gloss, attested verbal stems with frequencies, and derived nominals.
+Requires **Hebrew Root** notetype in Anki (3 fields: Front, Back, Frequency) — see [README](hebrew-root-deck/README.md) for setup.
+
+| Format | File | Description |
+|---|---|---|
+| Anki | [hebrew-root-deck.txt](hebrew-root-deck/hebrew-root-deck.txt) | Hebrew Root notetype (File → Import) |
+| Flashcards Deluxe (all) | [hebrew-root-deck-fd-all.txt](hebrew-root-deck/hebrew-root-deck-fd-all.txt) | All 1,000 roots |
+| Flashcards Deluxe (≥100) | [hebrew-root-deck-fd-100.txt](hebrew-root-deck/hebrew-root-deck-fd-100.txt) | Freq ≥ 100 |
+| Flashcards Deluxe (50–99) | [hebrew-root-deck-fd-50.txt](hebrew-root-deck/hebrew-root-deck-fd-50.txt) | Freq 50–99 |
+| Flashcards Deluxe (10–49) | [hebrew-root-deck-fd-10.txt](hebrew-root-deck/hebrew-root-deck-fd-10.txt) | Freq 10–49 |
+| Summary | [hebrew-root-deck.md](hebrew-root-deck/hebrew-root-deck.md) | Top-50 table and statistics |
+
+---
+
 ## OT Verb Parsing — 10,399 cards
 
 Attested OT verb forms with full parsing: root, stem, conjugation, PGN, gloss,

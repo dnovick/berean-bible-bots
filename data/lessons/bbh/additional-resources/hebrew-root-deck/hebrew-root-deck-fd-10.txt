@@ -1,0 +1,360 @@
+Text 1	Text 2	Category
+אמונה	firmness	Freq10to49
+גרש	drive out | Stems: Qal (7), Niphal (3), Piel (20), Pual (2) | Nouns: גֶּרֶשׁ produce; גְרֻשָׁה dispossession	Freq10to49
+נוח	quiet	Freq10to49
+סלח	forgive | Stems: Qal (32), Niphal (13) | Nouns: סְלִיחָה pardon	Freq10to49
+רצח	dash | Stems: Qal (39), Niphal (2), Piel (5) | Nouns: רֶצַח crushing	Freq10to49
+אחור	hinder | Nouns: אֲחֹרַנִּית backwards	Freq10to49
+גלול	log	Freq10to49
+חלף	slide | Stems: Qal (15), Hiphil (8), Piel (2) | Nouns: חֲלִיפָה alternation; מַחְלָפָה ringlet of hair; חֵלֶף exchange; חֲלוֹף surviving	Freq10to49
+חמל	commiserate | Stems: Qal (40) | Nouns: חֶמְלָה commiseration; חָמוּלִי Chamulite; מַחְמָל sympathy	Freq10to49
+משך	draw | Stems: Qal (25), Niphal (3), Pual (3) | Nouns: מֶשֶׁךְ sowing; מוֹשְׁכָה drawing	Freq10to49
+מכה	blow	Freq10to49
+נקה	be | Stems: Qal (1), Niphal (24), Piel (13) | Nouns: מְנַקִּית sacrificial basin	Freq10to49
+קדם	project | Stems: Hiphil (1), Piel (10) | Nouns: קַדְמָה priority; קַרְדֹּם axe; קַדְמַי first; קָדוּם pristine hero	Freq10to49
+מתן	waist	Freq10to49
+צבע	dye | Nouns: אֶצְבַּע sieze; אֶצְבַּע finger, toe.; צָבוּעַ dyed	Freq10to49
+בזה	disesteem | Stems: Qal (29), Niphal (9), Hiphil (1) | Nouns: בִּזָּיוֹן disesteem; נְמִבְזֶה despised	Freq10to49
+גוז	shear off | Stems: Qal (14), Niphal (1) | Nouns: גָּזִית cut; גָּזַּה fleece; גֵּז fleece	Freq10to49
+גולה	exile	Freq10to49
+שה	sheep	Freq10to49
+יגע	gasp | Stems: Qal (20), Hiphil (2), Piel (1) | Nouns: יְגִיעַ toil; יָגֵעַ tired; יָגִיעַ tired; יָגָע earnings	Freq10to49
+נוע	waver | Stems: Qal (24), Niphal (2), Hiphil (8) | Nouns: מְנַעְנַע sistrum	Freq10to49
+נעור	youth	Freq10to49
+רעש	undulate | Stems: Qal (22), Niphal (1), Hiphil (6) | Nouns: רַעַשׁ vibration	Freq10to49
+אדר	expand | Stems: Niphal (2), Hiphil (1) | Nouns: אַדִּיר wide; אַדֶּרֶת ample; אֶדֶר amplitude; אֲדַרְגָּזֵר chief diviner	Freq10to49
+פרד	break through | Stems: Qal (1), Niphal (12), Hiphil (6), Piel (2), Pual (1), Hithpael (4) | Nouns: פֶּרֶד mule; פִּרְדָּה she-mule; פְּרֻדָה separated	Freq10to49
+הרס	pull | Stems: Qal (24), Niphal (9), Piel (1) | Nouns: הֲרִיסָה demolished; הֲרִיסוּת demolition; הֶרֶס demolition	Freq10to49
+חבב	hide | Stems: Qal (2), Niphal (19), Hiphil (4), Hophal (1), Pual (1), Hithpael (10) | Nouns: חֹב cherisher; חֶבְיוֹן concealment	Freq10to49
+חגר	gird | Stems: Qal (43) | Nouns: חָגוֹר belted; מַחֲגֹרֶת girdle	Freq10to49
+יקש	ensnare | Stems: Qal (4), Niphal (4) | Nouns: יָקוּשׁ entangled; יָקוֹשׁ entangling	Freq10to49
+לוט	wrap up | Stems: Qal (2), Hiphil (1) | Nouns: לֹט gum; לוֹט veil	Freq10to49
+מאן	refuse | Stems: Piel (41) | Nouns: מָאֵן unwilling; מֵאֵן refractory	Freq10to49
+ספד	lament | Stems: Qal (28), Niphal (2) | Nouns: מִסְפֵּד lamentation	Freq10to49
+אויל	silly | Nouns: אִוֶּלֶת silliness; אֱוִלִי silly	Freq10to49
+שחר	dawn | Stems: Qal (2), Piel (4) | Nouns: שַׁחַר dawn; מִשְׁחָר dawn; שְׁחוֹר dinginess; שַׁחֲרוּת dawning	Freq10to49
+בלק	annihilate | Stems: Pual (1)	Freq10to49
+גזר	cut | Stems: Qal (7), Niphal (6) | Nouns: גִּזְרָה figure; גֶּזֶר cut off; גְּזֵרָה decree; גְּזֵרָה desert	Freq10to49
+כרע	bend | Stems: Qal (28), Hiphil (4) | Nouns: כָּרָע leg	Freq10to49
+נסה	test | Stems: Piel (23) | Nouns: מַסָּה testing	Freq10to49
+שוש	be bright | Stems: Qal (26) | Nouns: מָשׂוֹשׂ delight	Freq10to49
+נגיד	commander	Freq10to49
+צבה	amass | Stems: Qal (1), Hiphil (1) | Nouns: צְבִי splendor; צְבִיָּה female gazelle; צָבֶה turgid	Freq10to49
+צואר	neck | Nouns: צַוַּאר neck.	Freq10to49
+צמח	sprout | Stems: Qal (15), Hiphil (13), Piel (4) | Nouns: צֶמַח sprout	Freq10to49
+שכר	become tipsy | Stems: Qal (8), Hiphil (2), Piel (2) | Nouns: שֵׁכָר intoxicant; שִׁכָּרוֹן intoxication	Freq10to49
+בחור	selected	Freq10to49
+הרה	be | Stems: Qal (38), Piel (1), Pual (1) | Nouns: הַרְהֹר mental conception	Freq10to49
+מושב	seat	Freq10to49
+מלח	rub | Stems: Qal (1), Niphal (1), Hophal (2), Pual (1) | Nouns: מֶלַח powder; מַלָּח sailor; מְלֵחָה salted; מָלָח rag	Freq10to49
+שוח	sink | Stems: Qal (3) | Nouns: שַׁחַת pit; שׁוּחָה chasm; שׁוּחִי Shuchite; שׁוּחָמִי Shuchamite	Freq10to49
+טפף	trip | Stems: Qal (1) | Nouns: טַף family	Freq10to49
+ירח	lunation | Nouns: יָרֵחַ moon; יְרַח month	Freq10to49
+יתום	bereaved	Freq10to49
+לוח	glisten	Freq10to49
+מחה	stroke | Stems: Qal (22), Niphal (8), Hiphil (3), Pual (1) | Nouns: מֵחַ fat; מֹחַ fat; מְחִי stroke	Freq10to49
+נטש	pound | Stems: Qal (24), Niphal (6), Pual (1) | Nouns: נְטִישָׁה tendril	Freq10to49
+ניחוח	restful	Freq10to49
+נתץ	tear | Stems: Qal (25), Niphal (4), Hophal (1), Piel (6), Pual (1)	Freq10to49
+פארה	ornamentation | Stems: Piel (5), Hithpael (7) | Nouns: פְּאֵר embellishment; פָּארוּר illuminated	Freq10to49
+פשט	spread out | Stems: Qal (24), Hiphil (11), Piel (3), Hithpael (1)	Freq10to49
+רחב	width	Freq10to49
+שוע	be free | Stems: Piel (17) | Nouns: שַׁוְעָה hallooing; שׁוֹעַ noble; שׁוּעַ halloo	Freq10to49
+שושן	a lily	Freq10to49
+ארגמן	purple | Nouns: אַרְגְּוָן purple.; אַרְגְּוָן purple	Freq10to49
+גזל	pluck off | Stems: Qal (28), Niphal (1) | Nouns: גָּזֵל robbery; גְּזֵלָה that (he had robbed) (which he took violently away), spoil, violence.	Freq10to49
+גשם	shower violently | Stems: Hiphil (1) | Nouns: גֶּשֶׁם shower; גֶּשֶׁם body; גֹּשֶׁם rained upon.	Freq10to49
+חסר	lack | Stems: Qal (18), Hiphil (2), Piel (1) | Nouns: חָסֵר lacking; חֹסֶר poverty; חֶסֶר lack; חֶסְרוֹן deficiency	Freq10to49
+פתה	open | Stems: Qal (5), Niphal (2), Hiphil (1), Piel (10), Pual (3) | Nouns: פְּתַי open	Freq10to49
+כבר	plait together | Stems: Hiphil (2) | Nouns: כַּבִּיר vast; כְּבָר extent of time; כְּבָר Kebar; מַכְבֵּר grate	Freq10to49
+כוס	cup | Nouns: כִּיס cup; קֶסֶת cup	Freq10to49
+כנור	harp	Freq10to49
+מנורה	chandelier	Freq10to49
+נוה	at home | Stems: Qal (1)	Freq10to49
+סריס	eunuch	Freq10to49
+קדר	be ashy | Stems: Qal (13), Hiphil (2), Hithpael (1) | Nouns: קַדְרוּת duskiness; קְדֹרַנִּית blackish	Freq10to49
+שיח	ponder | Stems: Qal (17), Piel (2) | Nouns: שִׂיחַ contemplation; שִׂיחַ shoot; שִׂיחָה reflection; שֵׂחַ communion	Freq10to49
+שני	crimson	Freq10to49
+שקט	repose | Stems: Qal (31), Hiphil (10) | Nouns: שֶׁקֶט tranquillity	Freq10to49
+תבון	intelligence	Freq10to49
+אן	where?	Freq10to49
+גדר	wall | Stems: Qal (10) | Nouns: גָּדֵר circumvallation; גְּדֵרָה inclosure; גֶּדֶר circumvallation; גְּדֵרִי Gederite	Freq10to49
+יהב	give | Stems: Qal (22), Q (3), u (1) | Nouns: הַבְהָב gift; יְהָב what is given	Freq10to49
+חוש	hurry | Stems: Qal (5), Hiphil (4) | Nouns: חֻשָׁתִי Chushathite; חִישׁ hurry	Freq10to49
+חרון	burning	Freq10to49
+ינק	suck | Stems: Qal (7), Hiphil (6) | Nouns: יוֹנֶקֶת sprout; יוֹנֵק sucker; יְנִיקָה sucker	Freq10to49
+נתק	tear | Stems: Qal (1), Niphal (10), Hophal (1), Piel (10) | Nouns: נֶתֶק scurf	Freq10to49
+על	yoke	Freq10to49
+עקר	pluck | Stems: Qal (1), Niphal (1), Piel (5) | Nouns: עָקָר sterile; עֵקֶר transplanted person	Freq10to49
+ערף	break the neck | Stems: Qal (4) | Nouns: עֹרֶף nape	Freq10to49
+חדד	be | Stems: Qal (1), Hiphil (2), Hophal (3) | Nouns: חַד sharp; חַדּוּד point	Freq10to49
+איפה	ephah	Freq10to49
+בשם	fragrance	Freq10to49
+חקר	penetrate | Stems: Qal (13), Niphal (4), Piel (1) | Nouns: חֵקֶר examination; מֶחְקָר scrutinized	Freq10to49
+לקט	pick | Stems: Qal (12), Piel (21), Pual (1), Hithpael (1) | Nouns: לֶקֶט gleaning; יַלְקוּט travelling pouch	Freq10to49
+פלט	slip | Stems: Qal (1), Hiphil (2), Piel (5) | Nouns: יַפְלֵטִי Japhletite; מִפְלָט escape; פַּלֵּט escape; פַּלְטִי a Paltite	Freq10to49
+כול	keep in | Stems: Qal (1), Hiphil (11), Piel (14), Pual (1)	Freq10to49
+עמס	load | Stems: Qal (6), Hiphil (2) | Nouns: מַעֲמָסָה burdensomeness	Freq10to49
+שגב	be | Stems: Qal (2), Niphal (10), Hiphil (1), Piel (2), Pual (1) | Nouns: מִשְׂגָּב cliff	Freq10to49
+נשק	catch | Stems: Qal (23), Niphal (1), Hiphil (3), Piel (5) | Nouns: נְשִׁיקָה kiss	Freq10to49
+בצע	break | Stems: Qal (9), Piel (4) | Nouns: בֶּצַע plunder	Freq10to49
+די	enough	Freq10to49
+הלאה	distance | Stems: Niphal (1) | Nouns: הֲלֹם hither; הַלָּז this; הַלָּזֶה this very; הַלֵּזוּ that	Freq10to49
+חדר	inclose | Stems: Qal (1) | Nouns: חֶדֶר apartment	Freq10to49
+חור	blanch | Stems: Qal (1) | Nouns: חוּר white linen; חוֹר white; חֹרִי white bread	Freq10to49
+מבצר	fortification	Freq10to49
+צרף	fuse | Stems: Qal (22), Niphal (1), Piel (2) | Nouns: מִצְרֵף crucible; צֹרְפִי Tsorephi	Freq10to49
+נחה	guide | Stems: Qal (3), Hiphil (1)	Freq10to49
+ערל	expose | Stems: Qal (1), Niphal (1) | Nouns: עָרֵל exposed; עׇרְלָה prepuce	Freq10to49
+תאן	fig	Freq10to49
+תולדה	descent	Freq10to49
+חבל	wind | Stems: Qal (13), Niphal (1), Piel (9), Pual (2) | Nouns: חֹבֵל sailor; חֲבַל harm; חִבֵּל mast	Freq10to49
+חיק	bosom	Freq10to49
+חרם	net	Freq10to49
+מול	cut | Stems: Qal (13), Niphal (17), Piel (1), Hithpael (1) | Nouns: מוּלָה circumcision	Freq10to49
+מלא	fulness	Freq10to49
+רגע	toss | Stems: Qal (4), Niphal (1), Hiphil (7) | Nouns: רֶגַע wink; מַרְגּוֹעַ resting place; מַרְגֵּעָה rest; רָגֵעַ restful	Freq10to49
+נבל	bag	Freq10to49
+פקח	open | Stems: Qal (17), Niphal (3) | Nouns: פִּקֵּחַ clear-sighted; פְּקַח־קוֹחַ opening	Freq10to49
+פרס	break | Stems: Qal (2), Hiphil (12) | Nouns: פַּרְסָה claw; פֶּרֶס claw	Freq10to49
+פתר	open up | Stems: Qal (10) | Nouns: פְּשַׁר interpretation; פֵּשֶׁר interpretation.	Freq10to49
+צד	side | Nouns: צַד at	Freq10to49
+צוד	lie | Stems: Qal (8), Piel (4), Hithpael (1) | Nouns: צַיִד chase; צַיָּד huntsman	Freq10to49
+שער	hair | Nouns: שַׂעֲרָה hairiness; שְׂעַר hair	Freq10to49
+תירוש	must	Freq10to49
+אמרה	commandment, speech, word.	Freq10to49
+ברק	to lighten | Stems: Qal (1) | Nouns: בָּרָק lightning; בַּרְקָן thorn	Freq10to49
+חתה	hold | Stems: Qal (3) | Nouns: מַחְתָּה pan; מְחִתָּה dissolution	Freq10to49
+טלל	strew over | Nouns: טַל dew; טַל dew.	Freq10to49
+ילל	howl | Stems: Hiphil (30) | Nouns: יְלָלָה howling; יְלֵל howl; תּוֹלָל causing to howl	Freq10to49
+עוה	crook | Stems: Qal (2), Niphal (4), Hiphil (8), Piel (2) | Nouns: עִי ruin; עַוָּה overthrow; מְעִי pile; עִוְיָא perverseness	Freq10to49
+סתר	cover	Freq10to49
+פילגש	concubine	Freq10to49
+צמא	thirst | Stems: Qal (10) | Nouns: צָמָא thirst; צָמֵא thirsty; צִמָּאוֹן thirsty place; צִמְאָה thirst	Freq10to49
+שוער	janitor	Freq10to49
+ישן	be slack | Stems: Qal (14), Niphal (3) | Nouns: יָשֵׁן sleepy; יָשָׁן old; שְׁנָת sleep	Freq10to49
+גרן	threshing-floor	Freq10to49
+טור	row | Nouns: טִירָה wall	Freq10to49
+נטף	ooze | Stems: Qal (9), Hiphil (8) | Nouns: נְטֹפָתִי Netophathite; נְטִיפָה pendant; נָטָף drop	Freq10to49
+יעד	fix | Stems: Niphal (19), Hophal (2) | Nouns: מוֹעָד assembly; מוּעָדָה appointed place	Freq10to49
+מנע	debar | Stems: Qal (20), Niphal (4)	Freq10to49
+ישע	liberty	Freq10to49
+שפן	conceal | Stems: Qal (1) | Nouns: שָׁפָן rock-rabbit	Freq10to49
+מול	abrupt	Freq10to49
+מופת	miracle	Freq10to49
+מעוז	fortified	Freq10to49
+רבץ	crouch | Stems: Qal (22), Hiphil (4) | Nouns: רֵבֶץ couch; מַרְבֵּץ reclining place	Freq10to49
+עשן	smoke | Stems: Qal (6) | Nouns: עָשָׁן smoke; עָשֵׁן smoky	Freq10to49
+רמון	pomegranate	Freq10to49
+שטן	attack | Stems: Qal (1) | Nouns: שָׂטָן opponent; שָׁאוּלִי Shaülite; שִׂטְנָה opposition	Freq10to49
+שחק	laugh | Stems: Qal (18), Hiphil (1), Piel (17)	Freq10to49
+שרד	puncture | Stems: Qal (1) | Nouns: שָׂרִיד survivor; שְׂרָד stitching; שֶׂרֶד scribing-awl	Freq10to49
+תהום	abyss	Freq10to49
+תמר	palm | Nouns: תֹּמֶר palm trunk; תַּמְרוּר erection	Freq10to49
+אופן	wheel	Freq10to49
+הגה	murmur | Stems: Qal (23), Hiphil (1), Hophal (1) | Nouns: הִגָּיוֹן murmuring sound; הֶגֶה muttering; הָגִיג murmur; הָגוּת musing	Freq10to49
+הוד	grandeur	Freq10to49
+לבוש	garment | Nouns: לְבוּשׁ garment.	Freq10to49
+נקב	puncture | Stems: Qal (8), Niphal (6) | Nouns: נְקֵבָה female; מַקָּבָה perforatrix; מַקֶּבֶת perforator	Freq10to49
+נקי	innocent	Freq10to49
+סף	vestibule | Stems: Hithpael (1)	Freq10to49
+שערה	barley	Freq10to49
+תרשיש	topaz	Freq10to49
+אולם	vestibule	Freq10to49
+דקק	crush | Stems: Qal (4), Hiphil (10), Hophal (1) | Nouns: דַּק crushed; דָּיֵק battering-tower; דֹּק crumbling	Freq10to49
+דת	royal edict | Nouns: דָּת decree, law.	Freq10to49
+זמם	plan | Stems: Qal (13) | Nouns: מְזִמָּה plan; זָמָם plot	Freq10to49
+צער	be small | Stems: Qal (3) | Nouns: זְעֵיר small; מִצְעָר petty; מִזְעָר fewness	Freq10to49
+זעם	foam | Stems: Qal (9), Niphal (1) | Nouns: זַעַם froth	Freq10to49
+יעל	ascend | Stems: Hiphil (22) | Nouns: יָעֵל ibex; יַעֲלָה roe.	Freq10to49
+מוצא	going forth | Nouns: מוֹצָאָה family descent	Freq10to49
+מעה	intestines | Nouns: מֵעָה belly	Freq10to49
+ערץ	awe | Stems: Qal (10), Niphal (1), Hiphil (2) | Nouns: עָרִיץ fearful; מַעֲרָצָה violence; עָרוּץ feared	Freq10to49
+נאף	commit adultery | Stems: Qal (16), Piel (15) | Nouns: נִאֻף adultery; נַאֲפוּף adultery	Freq10to49
+סוף	snatch | Stems: Qal (6), Hiphil (1) | Nouns: סוּפָה hurricane; סוֹף termination; סוֹף end.	Freq10to49
+סיר	pot	Freq10to49
+רמש	glide swiftly | Stems: Qal (17) | Nouns: רֶמֶשׂ reptile	Freq10to49
+תשועה	rescue	Freq10to49
+בחן	test | Stems: Qal (15), Niphal (3), Pual (1) | Nouns: בָּחוֹן assayer; בַּחִין tower; בַּחַן tower; בֹּחַן trial	Freq10to49
+ברד	hail | Stems: Qal (1) | Nouns: בָּרָד hail; בָּרֹד spotted	Freq10to49
+חבש	wrap | Stems: Qal (26), Piel (2), Pual (2)	Freq10to49
+יקץ	awake | Stems: Qal (11), Hiphil (18)	Freq10to49
+שוה	level | Stems: Qal (8), Hiphil (2), Piel (10), Nithpael (1) | Nouns: שַׁי gift; יִשְׁוִי Jishvite	Freq10to49
+כתר	enclose | Stems: Hiphil (3), Piel (2) | Nouns: כֹתֶרֶת capital of a column; כֶּתֶר circlet	Freq10to49
+נהג	drive | Stems: Qal (19), Piel (6) | Nouns: מִנְהָג driving	Freq10to49
+נוד	nod | Stems: Qal (18), Hiphil (2), Hithpael (3) | Nouns: נֵד mound; מָנוֹד nodding; נִיד motion; נִידָה removal	Freq10to49
+צפן	hide | Stems: Qal (18), Niphal (3) | Nouns: מִצְפֻּן secret	Freq10to49
+קסם	distribute | Stems: Qal (18) | Nouns: קֶסֶם lot; מִקְסָם augury	Freq10to49
+עשב	grass	Freq10to49
+עשרון	tenth	Freq10to49
+צרי	distillation	Freq10to49
+שטה	acacia	Freq10to49
+שלט	dominate | Stems: Qal (5), Hiphil (1) | Nouns: שׇׁלְטָן empire; שֶׁלֶט shield; שִׁלְטוֹן potentate; שַׁלִּיט potent	Freq10to49
+דוש	trample | Stems: Qal (9), Niphal (2), Hophal (1) | Nouns: דַּיִשׁ threshing-time; דִּישֹׁן leaper; מְדֻשָּׁה threshing	Freq10to49
+דין	judgement | Nouns: דִּין judgement.	Freq10to49
+זמה	plan	Freq10to49
+צפר	skip about | Stems: Qal (1) | Nouns: צְפַרְדֵּעַ marsh-leaper; צָפִיר male goat; צְפִירָה crown; טְפַר finger-nail	Freq10to49
+רוק	pour | Stems: Hiphil (16), Hophal (2) | Nouns: רִיק emptiness	Freq10to49
+כחד	secrete | Stems: Niphal (11), Hiphil (3), Piel (15)	Freq10to49
+כלא	restrict | Stems: Qal (11), Niphal (3) | Nouns: כֶּלֶא prison; כִּלְאַיִם two heterogeneities	Freq10to49
+לאם	community | Nouns: לְאֻמִּים Leummim	Freq10to49
+מחרת	morrow	Freq10to49
+סחר	travel round | Stems: Qal (13), Piel (1) | Nouns: סַחַר profit; מִסְחָר trade; סְחֹרָה traffic; סֹחֵרָה surrounding	Freq10to49
+עוג	bake | Nouns: עֻגָּה ashcake; מָעוֹג cake of bread	Freq10to49
+מעשר	tenth	Freq10to49
+עוב	be dense | Stems: Hiphil (1) | Nouns: עָב envelope	Freq10to49
+פחה	prefect | Nouns: פֶּחָה captain, governor.	Freq10to49
+פתאום	instantly | Nouns: פֶּתַע wink	Freq10to49
+שבות	exile	Freq10to49
+שוק	run after | Stems: Hiphil (2) | Nouns: שׁוֹק leg; שׁוּק street; תְּשׁוּקָה longing; שָׁק leg	Freq10to49
+שטף	gush | Stems: Qal (23), Niphal (2), Pual (1) | Nouns: שֶׁצֶף an outburst	Freq10to49
+בקק	pour | Stems: Qal (4), Niphal (3), Piel (1) | Nouns: בַּקְבֻּק bottle	Freq10to49
+ברר	clarify | Stems: Qal (7), Niphal (3), Hiphil (2), Piel (1), Hithpael (3) | Nouns: בֹּר purity; בַּר beloved; בֹּר lye; בֹּרִית vegetable alkali	Freq10to49
+חלון	window	Freq10to49
+טמן	hide | Stems: Qal (20), Niphal (1), Hiphil (2)	Freq10to49
+טעם	taste | Stems: Qal (11) | Nouns: טַעַם taste; טְעֵם flavor; טַעַם a taste	Freq10to49
+לחץ	press | Stems: Qal (12), Niphal (1) | Nouns: לַחַץ distress	Freq10to49
+מין	sort	Freq10to49
+נעל	sandal tongue | Stems: Qal (6) | Nouns: מִנְעָל bolt	Freq10to49
+מרד	rebel | Stems: Qal (24) | Nouns: מְרַד rebellion; מֶרֶד rebellion; מָרָד rebellious; מַרְדּוּת rebelliousness	Freq10to49
+נוב	produce	Freq10to49
+נדר	promise | Stems: Qal (31)	Freq10to49
+נכר	strange | Nouns: נׇכְרִי strange	Freq10to49
+עטר	encircle | Stems: Qal (1), Hiphil (1), Piel (2) | Nouns: עֲטָרָה crown	Freq10to49
+פרך	fracture | Nouns: פֹּרֶכֶת separatrix	Freq10to49
+רבע	squat | Stems: Qal (10), Hiphil (1), Pual (3) | Nouns: רֶבַע fourth; רִבֵּעַ fourth; רֶבַע Reba; רֹבַע quarter	Freq10to49
+שאה	rush | Stems: Qal (1), Niphal (1), Hiphil (2) | Nouns: שָׁאוֹן uproar; שְׁאִיָּה desolation; שֵׁאת devastation; שֻׁתַלְחִי Shuthalchite	Freq10to49
+אבל	a meadow | Nouns: מְחֹלָתִי Mecholathite	Freq10to49
+אדין	then	Freq10to49
+בוז	disrespect | Stems: Qal (12) | Nouns: בּוּז disrespect; בּוּזִי Buzite; בּוּזָה scorned	Freq10to49
+בשל	boil | Stems: Qal (2), Hiphil (1), Piel (20), Pual (4) | Nouns: בָּשֵׁל boiled; מְבַשְּׁלָה cooking hearth	Freq10to49
+גער	chide | Stems: Qal (14) | Nouns: גְּעָרָה chiding; מִגְעֶרֶת reproof	Freq10to49
+דך	crushed | Stems: Qal (1), Niphal (3), Piel (8), Pual (4), Hithpael (2) | Nouns: דַּכָּא crushed; דַּכָּה mutilated; דֳּכִי dashing of surf	Freq10to49
+חגא	vertigo | Stems: Qal (16) | Nouns: חוּג circle; מְחוּגָה compasses	Freq10to49
+חטה	wheat	Freq10to49
+פן	angle | Nouns: פִּנָּה angle	Freq10to49
+פרע	loosen | Stems: Qal (11), Niphal (1), Hiphil (2) | Nouns: פֶּרַע hair; פַּרְעָה leadership; פַּרְעֹשׁ flea; צִבֻּר pile	Freq10to49
+תפף	drum | Stems: Qal (1), Piel (1) | Nouns: תֹּף tambourine; תֹּפֶת smiting	Freq10to49
+קדד	shrivel up | Stems: Qal (15) | Nouns: קׇדְקֹד crown; קִדָּה cassia; אֶקְדָּח burning	Freq10to49
+רגב	lump of clay | Stems: Qal (13), Pual (1) | Nouns: מַרְגֵּמָה stone-heap; רִגְמָה pile	Freq10to49
+דשן	be fat | Stems: Qal (1), Piel (3), Pual (4), u (1) | Nouns: דֶּשֶׁן fat; דָּשֵׁן fat	Freq10to49
+יצת	burn | Stems: Qal (4), Niphal (8), Hiphil (16)	Freq10to49
+תלה	suspend | Stems: Qal (21), Niphal (2), Piel (2) | Nouns: תְּלִי quiver	Freq10to49
+תנין	monster	Freq10to49
+כחש	be untrue | Stems: Qal (1), Niphal (1), Piel (18), Hithpael (1) | Nouns: כַּחַשׁ failure of flesh; כֶּחָשׁ faithless	Freq10to49
+כתנת	shirt	Freq10to49
+לוץ	make mouths at | Stems: Qal (1), Hiphil (6), Piel (1), Hithpael (1) | Nouns: לָצוֹן derision; מְלִיצָה aphorism	Freq10to49
+רכל	travel for trading | Stems: Qal (9) | Nouns: רָכִיל scandal-monger; רְכֻלָּה trade; מַרְכֹּלֶת mart	Freq10to49
+נגה	glitter | Stems: Qal (3), Hiphil (3) | Nouns: נֹגַהּ brilliancy; נֹגַהּ dawn; נְגֹהָה splendor	Freq10to49
+נשם	blow | Stems: Qal (1) | Nouns: נְשָׁמָה puff; תַּנְשֶׁמֶת hard breather; נִשְׁמָא vital breath	Freq10to49
+סוף	reed	Freq10to49
+עתוד	prepared	Freq10to49
+קלה	be light | Stems: Qal (2), Niphal (6), Hiphil (1) | Nouns: קָלוֹן disgrace; קִיקָלוֹן intense disgrace	Freq10to49
+רקע	pound | Stems: Qal (4), Hiphil (1), Piel (1), Pual (1) | Nouns: רָקִיעַ expanse; רִקֻּעַ beaten	Freq10to49
+שרץ	wriggle | Stems: Qal (14) | Nouns: שֶׁרֶץ swarm	Freq10to49
+אמנון	Amnon	Freq10to49
+זול	shake | Stems: Qal (7), Niphal (2) | Nouns: זוּלָה scattering; זֻלּוּת shaking; זַלְזַל tremulous	Freq10to49
+חצב	cut | Stems: Qal (22), Hiphil (1), Pual (1) | Nouns: מַחְצֵב hewing	Freq10to49
+חתם	close | Stems: Qal (22), Niphal (2), Hiphil (1), Piel (1) | Nouns: חֹתֶמֶת seal	Freq10to49
+פלג	split | Stems: Niphal (2), Piel (2) | Nouns: פֶּלֶג rill; פְּלֻגָּה section; מִפְלַגָּה classification; פְּלַג half	Freq10to49
+מר	bitter	Freq10to49
+שוט	push forth | Stems: Qal (7), Piel (5), Hithpael (1) | Nouns: שׁוֹט lash; מַשְׂטֵמָה enmity; שֹׁטֵט flog; שַׁיִט oar	Freq10to49
+שקף	lean out | Stems: Niphal (10), Hiphil (11) | Nouns: מַשְׁקוֹף lintel; שָׁקֻף embrasure; שֶׁקֶף loophole	Freq10to49
+נכח	fore | Nouns: נֹכַח front; נָכֹחַ straightforward; נְכֹחָה straightforwardness	Freq10to49
+נשך	strike | Stems: Qal (7), Hiphil (3), Piel (2) | Nouns: נֶשֶׁךְ interest	Freq10to49
+פח	sheet | Stems: Hiphil (1)	Freq10to49
+פליטה	deliverance	Freq10to49
+רכוש	property	Freq10to49
+שמנים	eighty	Freq10to49
+שקוץ	disgusting	Freq10to49
+תבה	box	Freq10to49
+תוכחה	chastisement	Freq10to49
+אבר	soar | Stems: Hiphil (1) | Nouns: אַבִּיר angel, bull, chiefest, mighty (one), stout(-hearted), strong (one), valiant.; אָבִיר mighty; אֶבְרָה feather, wing.; אֵבֶר pinion	Freq10to49
+אפה	cook | Stems: Qal (9), Niphal (3) | Nouns: מַאֲפֶה baked; תֻּפִין cookery	Freq10to49
+גבה	elevated	Freq10to49
+הון	be naught | Stems: Hiphil (1) | Nouns: הוֹן wealth	Freq10to49
+זכך	be transparent | Stems: Qal (7), Hiphil (1), Piel (3), Hithpael (1) | Nouns: זַךְ clear; זְכוּכִית transparency	Freq10to49
+יגה	grieve | Stems: Niphal (2), Hiphil (3), Piel (1) | Nouns: יָגוֹן affliction; תּוּגָה depression	Freq10to49
+יובל	blast	Freq10to49
+לעג	deride | Stems: Qal (12), Niphal (1), Hiphil (5) | Nouns: לַעַג derision; לָעֵג buffoon	Freq10to49
+מוקש	noose	Freq10to49
+נפח	puff | Stems: Qal (9), Hiphil (2), Pual (1) | Nouns: תַּפּוּחַ apple; מַפָּח breathing out; מַפֻּחַ bellows	Freq10to49
+שטר	scribe | Nouns: מִשְׁטָר jurisdiction	Freq10to49
+נשר	eagle | Nouns: נְשַׁר eagle	Freq10to49
+עתר	be | Stems: Qal (5), Niphal (9), Hiphil (8) | Nouns: עָתָר incense; עֲתֶרֶת copiousness	Freq10to49
+רדה	tread | Stems: Qal (21), Hiphil (1)	Freq10to49
+רקם	variegate | Stems: Qal (8), Pual (1) | Nouns: רִקְמָה variegation of color	Freq10to49
+שאג	rumble | Stems: Qal (20) | Nouns: שְׁאָגָה rumbling	Freq10to49
+שכל	miscarry | Stems: Qal (4), Hiphil (1), Piel (14) | Nouns: שְׁכוֹל bereavement; שִׁכֻּלִים childlessness	Freq10to49
+שלף	pull | Stems: Qal (24)	Freq10to49
+בתה	desolation | Nouns: בַּת bath; בָּתָה desolation	Freq10to49
+דמע	weep | Stems: Qal (2) | Nouns: דִּמְעָה weeping; דֶּמַע tear	Freq10to49
+חמץ	be pungent | Stems: Qal (3), Hiphil (2), Hithpael (1) | Nouns: חָמֵץ ferment; חֹמֶץ vinegar; חָמוֹץ violent; חָמִיץ seasoned	Freq10to49
+קש	straw | Stems: Qal (1), Piel (6), Hithpael (1) | Nouns: חָשַׁשׁ grass	Freq10to49
+מכונה	pedestal | Nouns: מְכֻנָה spot	Freq10to49
+מעון	abode	Freq10to49
+נקד	spotted | Nouns: נִקֻּד crumb; נֹקֵד spotter; נְקֻדָּה boss	Freq10to49
+רמס	tread | Stems: Qal (12), Niphal (1) | Nouns: מִרְמָס abasement	Freq10to49
+משחה	unction	Freq10to49
+נתיב	track	Freq10to49
+פרזי	rustic | Nouns: פְּרִזִּי Perizzite	Freq10to49
+צום	fast	Freq10to49
+קצה	cut | Stems: Qal (1), Hiphil (2), Piel (2) | Nouns: קָצִין magistrate; קְצָת termination; קְצָת end, partly.	Freq10to49
+רחוק	remote	Freq10to49
+ריק	empty | Nouns: רֵיקָם emptily	Freq10to49
+רעם	tumble | Stems: Qal (4), Hiphil (8) | Nouns: רַעַם peal; רַעְמָה mane of a horse	Freq10to49
+דמה	be dumb | Stems: Qal (3), Niphal (12) | Nouns: דּוּמִיָּה stillness; דּוּמָה silence; דֻּמָּה desolation	Freq10to49
+זנח	reject | Stems: Qal (11), Hiphil (2)	Freq10to49
+חור	cavity | Nouns: חֹרִי Chorite; חֹרֹנִי Choronite	Freq10to49
+חשן	pocket	Freq10to49
+יעה	brush | Stems: Qal (1) | Nouns: יָע shovel	Freq10to49
+יתד	peg	Freq10to49
+כד	pail | Nouns: לֹג log; כַּדְכֹּד sparkling gem	Freq10to49
+כעס	vexation	Freq10to49
+נפץ	dash | Stems: Qal (5), Niphal (1), Piel (12), Pual (1) | Nouns: מַפָּץ smiting to pieces; מַפֵּץ smiter; נֶפֶץ storm	Freq10to49
+רכך	soften | Stems: Qal (6), Hiphil (1), Pual (1) | Nouns: רַךְ tender; מֹרֶךְ softness; רֹךְ softness	Freq10to49
+נאץ	scorn | Stems: Qal (7), Hiphil (1), Piel (10), Hithpael (1)	Freq10to49
+נזר	set apart	Freq10to49
+נחת	sink | Stems: Qal (4), Niphal (3), Hiphil (2), Piel (3) | Nouns: נַחַת descent; נָחֵת descending	Freq10to49
+עכר	roil water | Stems: Qal (9), Niphal (2) | Nouns: עָכוֹר Akor	Freq10to49
+עלילה	exploit | Nouns: עֲלִילִיָּה execution	Freq10to49
+צן	thorn | Nouns: צִנָּה hook; צִנְצֶנֶת vase	Freq10to49
+קו	cord | Nouns: קַו־קַו stalwart	Freq10to49
+קוץ	spend the harvest | Nouns: קַיִץ harvest; קְוֻצָּה forelock; קַעֲקַע incision	Freq10to49
+ראשון	first	Freq10to49
+שד	violence	Freq10to49
+שחד	donate | Stems: Qal (2) | Nouns: שַׁחַד donation	Freq10to49
+שחק	comminate | Stems: Qal (2) | Nouns: שַׁחַק powder	Freq10to49
+שיב	become aged | Stems: Qal (2) | Nouns: שֵׂיבָה old age; שֵׂיב old age	Freq10to49
+תכן	balance | Stems: Qal (3), Niphal (10), Piel (4), Pual (1) | Nouns: תְּכוּנָה adjustment; תֹּכֶן fixed quantity; תׇּכְנִית admeasurement	Freq10to49
+אנח	sigh | Stems: Niphal (13) | Nouns: אֲנָחָה sighing	Freq10to49
+אפר	ashes | Nouns: אֲפֵר turban	Freq10to49
+גוע	breathe out | Stems: Qal (23)	Freq10to49
+כור	pot | Nouns: כֹּר vessel; גִּיר lime; גִּר lime; כִּיר cooking range	Freq10to49
+זהר	gleam | Stems: Niphal (8), Hiphil (10) | Nouns: זֹהַר brilliancy	Freq10to49
+זכר	memento	Freq10to49
+חוס	cover | Stems: Qal (22)	Freq10to49
+חנף	soil | Stems: Qal (7), Hiphil (4) | Nouns: חָנֵף soiled; חֹנֶף filth; חֲנֻפָה impiety	Freq10to49
+חפש	seek | Stems: Qal (3), Niphal (1), Piel (8), Pual (2), Hithpael (8) | Nouns: חֵפֶשׂ covert	Freq10to49
+חרס	sun | Nouns: חֶרֶשׂ pottery; חַרְסוּת a potsherd	Freq10to49
+יקד	burn | Stems: Qal (3), Hophal (5) | Nouns: יְקוֹד burning; מוֹקֵד fire; יְקֵדָא conflagration; מוֹקְדָה fuel	Freq10to49
+כבה	expire | Stems: Qal (14), Piel (8)	Freq10to49
+לחי	cheek	Freq10to49
+מוש	touch | Stems: Qal (17), Hiphil (3)	Freq10to49
+צלל	tinkle | Stems: Qal (4) | Nouns: מְצֵלֶת double tinklers; צְלָצַל clatter; מְצִלָּה tinkler	Freq10to49
+קלט	maim | Stems: Qal (1) | Nouns: מִקְלָט asylum	Freq10to49
+שגה	stray | Stems: Qal (17), Hiphil (3) | Nouns: מִשְׁגֶּה err; שְׁגִיאָה moral mistake	Freq10to49
+שרק	be shrill | Stems: Qal (12) | Nouns: שְׁרֵקָה derision; מַשְׁרוֹקִי pipe; שָׂרֻק bright red	Freq10to49
+נזה	spirt | Stems: Qal (4), Hiphil (20)	Freq10to49
+סער	hurricane	Freq10to49
+עבת	intwined	Freq10to49
+צמר	wool | Nouns: צַמֶּרֶת fleeciness; עֲמַר wool	Freq10to49
+ענק	collar | Stems: Hiphil (2) | Nouns: עֲנָקִי Anakite; עָנָק necklace	Freq10to49
+פגר	relax | Stems: Piel (2) | Nouns: פֶּגֶר carcase	Freq10to49
+פליט	refugee	Freq10to49
+פקוד	appointed	Freq10to49
+קן	nest | Stems: Piel (4), Pual (1)	Freq10to49
+רוש	be destitute | Stems: Qal (23), Hithpael (1)	Freq10to49
+שד	breast of a woman	Freq10to49
+שלשום	trebly	Freq10to49
+שנה	sleep | Nouns: שְׁנָה sleep.	Freq10to49
