@@ -5,7 +5,7 @@
 
 **Sources:** Attested forms are drawn from the Open Scriptures Hebrew Bible (OSHB). Unattested theoretical forms are derived from standard Hophal morphological rules (Pratico & Van Pelt §29; GKC §67) and are marked †. In paradigm study these theoretical forms represent the expected outputs of the documented phonological rules for each weak root class.
 
-← [Back to Ch29 lesson](lesson.md)
+← [Back to Ch29 lesson](index.md)
 
 ---
 
@@ -631,6 +631,8 @@
 | 2mp | הָקְטַלְתֶּם | הֻקַּמְתֶּם | הֻקַּלְתֶּם | |
 | 2fp | הָקְטַלְתֶּן | הֻקַּמְתֶּן† | הֻקַּלְתֶּן† | |
 | 1cp | הָקְטַלְנוּ | הֻקַּמְנוּ | הֻקַּלְנוּ | |
+
+> **Alternate Geminate Hophal pattern (Shureq variant):** Some geminate roots use a Shureq prefix (הוּ-/יוּ-/מוּ-) throughout the Hophal instead of the Qibbuts+dagesh pattern shown above. For example, root סבב: Hophal perfect 3ms = הוּסַּב (attested: Judg 20:43); imperfect 3ms = יוּסַב; participle ms = מוּסַב. When this pattern is used, the perfect also takes hollow-type endings (ות-) for 2ms/2fs/1cs rather than the standard ת/תִּי endings. The Qibbuts+dagesh pattern (as above) and the Shureq pattern are both attested in the OT for different geminate roots. BBH teaches the Qibbuts+dagesh pattern as the standard for derived stems; be aware that some roots (particularly those with final labials like ב or מ) may appear with the Shureq pattern in your OT reading.
 
 ### Imperfect (Yiqtol) {#geminate-imperfect}
 
