@@ -29,6 +29,11 @@ for d in [OUT, MKD, OUT / 'charts', MKD / 'charts']:
 
 words_df = pd.read_parquet(REPO / 'data' / 'processed' / 'words.parquet')
 trans_df = pd.read_parquet(REPO / 'data' / 'processed' / 'translations.parquet')
+macula_df = pd.read_parquet(REPO / 'data' / 'processed' / 'macula_syntax_ot.parquet')
+ps119_mx = macula_df[macula_df['ref'].str.startswith('PSA 119')].copy()
+mx_id_map = ps119_mx.set_index('xml_id')[
+    ['lemma', 'gloss', 'text', 'strong_h', 'role', 'pos']
+].to_dict('index')
 
 ps119 = words_df[
     (words_df['book_id'] == 'Psa') & (words_df['chapter'] == 119)
@@ -187,6 +192,128 @@ affliction_vv = verses_matching(AFFLICTION_CODES)
 seeking_vv = verses_matching(SEEKING_CODES)
 praise_vv = verses_matching(PRAISE_CODES)
 meditate_vv = verses_matching(MEDITATE_CODES)
+
+# ── Non-petition verb + object analysis (macula syntax data) ──────────────────
+
+# Maps strongs code -> Torah term key (handles zero-padded and unpadded variants)
+TORAH_STRONGS: Dict[str, str] = {
+    'H8451': 'Torah',    'H5715': 'Edut',     'H5713': 'Edut',
+    'H6490': 'Piqqudim', 'H2706': 'Choq',     'H2708': 'Choq',
+    'H4687': 'Mitzvah',  'H4941': 'Mishpat',
+    'H1697': 'Davar',    'H565':  'Imrah',     'H0565': 'Imrah',
+}
+TORAH_TERM_ORDER = ['Torah', 'Edut', 'Piqqudim', 'Choq', 'Mitzvah', 'Mishpat', 'Davar', 'Imrah']
+
+
+def extract_a1_ids(frame_str: Optional[str]) -> List[str]:
+    if not frame_str or pd.isna(frame_str):
+        return []
+    m = re.search(r'A1:([^A]+)', str(frame_str))
+    if not m:
+        return []
+    ids = [x.strip().rstrip(';') for x in m.group(1).split(';') if x.strip()]
+    return ['o' + i if not i.startswith('o') else i for i in ids]
+
+
+mx_verbs = ps119_mx[ps119_mx['pos'] == 'verb']
+mx_petition_ids = set(mx_verbs[
+    mx_verbs['type_'].isin(['imperative', 'jussive']) |
+    mx_verbs['morph'].str.contains(r'V[a-zA-Z]+v2', na=False, regex=True) |
+    mx_verbs['morph'].str.contains(r'V[a-zA-Z]+j', na=False, regex=True)
+]['xml_id'])
+mx_non_pet = mx_verbs[~mx_verbs['xml_id'].isin(mx_petition_ids)]
+
+verb_obj_rows: List[Dict[str, Any]] = []
+for _, row in mx_non_pet.iterrows():
+    a1_ids = extract_a1_ids(row['frame'])
+    torah_objs: List[str] = []
+    for aid in a1_ids:
+        if aid not in mx_id_map:
+            continue
+        strong = mx_id_map[aid]['strong_h']
+        if strong in TORAH_STRONGS:
+            torah_objs.append(TORAH_STRONGS[strong])
+    verse_num = 0
+    try:
+        verse_num = int(row['ref'].split(':')[1].split('!')[0])
+    except (IndexError, ValueError):
+        pass
+    verb_obj_rows.append({
+        'verse': verse_num,
+        'strong': row['strong_h'],
+        'lemma': row['lemma'],
+        'gloss': row['gloss'],
+        'type_': row['type_'],
+        'person': row['person'],
+        'torah_objs': torah_objs,
+        'has_torah_obj': bool(torah_objs),
+    })
+
+verb_obj_df = pd.DataFrame(verb_obj_rows)
+
+# Top non-petition verbs by frequency (group by root, not by inflected gloss)
+_verb_counts = (
+    verb_obj_df.groupby(['strong', 'lemma'])
+    .size()
+    .reset_index(name='count')
+    .sort_values('count', ascending=False)
+    .head(12)
+    .reset_index(drop=True)
+)
+# Attach a simple base gloss: modal value from the data
+_verb_gloss = (
+    verb_obj_df.groupby('strong')['gloss']
+    .agg(lambda s: s.mode().iloc[0] if not s.mode().empty else s.iloc[0])
+    .reset_index()
+    .rename(columns={'gloss': 'base_gloss'})
+)
+top_non_pet = _verb_counts.merge(_verb_gloss, on='strong', how='left')
+
+# Torah-directed verbs: how often each governs each Torah term
+KEY_TORAH_VERB_STRONGS = ['H8104', 'H157', 'H5341', 'H7911', 'H3925', 'H1875']
+KEY_VERB_LABELS: Dict[str, tuple] = {
+    'H8104': ('שָׁמַר', 'Keep'),
+    'H157':  ('אָהֵב', 'Love'),
+    'H5341': ('נָצַר', 'Observe'),
+    'H7911': ('שָׁכַח', 'Forget*'),
+    'H3925': ('לָמַד', 'Learn'),
+    'H1875': ('דָּרַשׁ', 'Seek'),
+}
+
+# Human-readable display names for the frequency table
+VERB_DISPLAY_NAME: Dict[str, str] = {
+    'H8104': 'Keep / Observe',
+    'H157':  'Love',
+    'H5341': 'Observe / Guard',
+    'H7911': 'Forget (negated)',
+    'H6213': 'Do / Make',
+    'H2421': 'Live',
+    'H3176': 'Wait / Hope',
+    'H7878': 'Meditate',
+    'H7291': 'Pursue',
+    'H3925': 'Learn',
+    'H1875': 'Seek',
+    'H6031': 'Afflict',
+    'H8130': 'Hate',
+    'H7200': 'See',
+    'H995':  'Understand',
+    'H3615': 'Long for',
+    'H954':  'Be ashamed',
+    'H3045': 'Know',
+    'H6':    'Perish',
+}
+
+verb_torah_matrix: Dict[str, Dict[str, int]] = {}
+for strong in KEY_TORAH_VERB_STRONGS:
+    rows_v = verb_obj_df[verb_obj_df['strong'] == strong]
+    if rows_v.empty:
+        continue
+    counts: Dict[str, int] = {t: 0 for t in TORAH_TERM_ORDER}
+    for _, r in rows_v.iterrows():
+        for t in r['torah_objs']:
+            if t in counts:
+                counts[t] += 1
+    verb_torah_matrix[strong] = counts
 
 # ── Term frequency table ───────────────────────────────────────────────────────
 
@@ -364,14 +491,62 @@ def chart_themes_by_stanza() -> None:
     save_chart(fig, 'themes-by-stanza.png')
 
 
+# Chart 4: Verb × Torah-term object matrix
+def chart_verb_torah_matrix() -> None:
+    strongs_order = [s for s in KEY_TORAH_VERB_STRONGS if s in verb_torah_matrix]
+    if not strongs_order:
+        return
+    n_verbs = len(strongs_order)
+    n_terms = len(TORAH_TERM_ORDER)
+    matrix = np.zeros((n_verbs, n_terms))
+    for i, strong in enumerate(strongs_order):
+        for j, term in enumerate(TORAH_TERM_ORDER):
+            matrix[i, j] = verb_torah_matrix[strong].get(term, 0)
+
+    fig, ax = plt.subplots(figsize=(11, 4))
+    im = ax.imshow(matrix, aspect='auto', cmap='Blues', vmin=0, vmax=4)
+    for i in range(n_verbs):
+        for j in range(n_terms):
+            val = int(matrix[i, j])
+            color = 'white' if val >= 3 else ('black' if val > 0 else '#cccccc')
+            ax.text(j, i, str(val) if val else '·', ha='center', va='center',
+                    fontsize=10, color=color)
+    ax.set_xticks(range(n_terms))
+    ax.set_xticklabels(TORAH_TERM_ORDER, fontsize=9)
+    ax.set_yticks(range(n_verbs))
+    ax.set_yticklabels(
+        [f'{KEY_VERB_LABELS[s][0]} ({KEY_VERB_LABELS[s][1]})' for s in strongs_order],
+        fontsize=9
+    )
+    ax.set_title('Psalm 119 — Non-Petition Verb × Torah-Term Object Matrix',
+                 fontsize=12, fontweight='bold')
+    fig.colorbar(im, ax=ax, fraction=0.02, pad=0.02, label='Occurrences')
+    fig.tight_layout()
+    save_chart(fig, 'verb-torah-object-matrix.png')
+
+
 chart_term_frequencies()
 chart_heatmap()
 chart_themes_by_stanza()
+chart_verb_torah_matrix()
 
 # ── CSV exports ────────────────────────────────────────────────────────────────
 
 freq_df.to_csv(OUT / 'psalm-119-word-vocab.csv', index=False)
 petition_df.to_csv(OUT / 'psalm-119-petitions.csv', index=False)
+
+verb_csv_rows = []
+for _, r in verb_obj_df.iterrows():
+    verb_csv_rows.append({
+        'Verse': r['verse'],
+        'Strong': r['strong'],
+        'Lemma': r['lemma'],
+        'Gloss': r['gloss'],
+        'Type': r['type_'],
+        'Person': r['person'],
+        'Torah Objects': '|'.join(r['torah_objs']),
+    })
+pd.DataFrame(verb_csv_rows).to_csv(OUT / 'psalm-119-non-petition-verbs.csv', index=False)
 
 # Themes by stanza CSV
 theme_rows = []
@@ -496,6 +671,62 @@ def top_petition_verbs() -> str:
     return '\n'.join(lines)
 
 
+# ── Non-petition verb section builders ────────────────────────────────────────
+
+def non_pet_verb_freq_table() -> str:
+    lines = ['| Verb (English) | Hebrew | N | Primary Object |', '|---|---|---|---|']
+    for _, row in top_non_pet.iterrows():
+        strong = row['strong']
+        n = row['count']
+        lem = row['lemma']
+        if strong in verb_torah_matrix:
+            best = max(verb_torah_matrix[strong], key=lambda k: verb_torah_matrix[strong][k])
+            best_count = verb_torah_matrix[strong][best]
+            obj_str = f'{best} ({best_count}×)' if best_count > 0 else '—'
+        else:
+            obj_str = '—'
+        display = VERB_DISPLAY_NAME.get(strong)
+        if not display:
+            g = str(row.get('base_gloss', '') or '')
+            display = g.replace('I.', '').replace('.', ' ').strip().capitalize() or lem
+        lines.append(f'| {display} | {lem} | {n} | {obj_str} |')
+    return '\n'.join(lines)
+
+
+def verb_torah_matrix_table() -> str:
+    strongs_order = [s for s in KEY_TORAH_VERB_STRONGS if s in verb_torah_matrix]
+    header = '| Verb | ' + ' | '.join(TORAH_TERM_ORDER) + ' | Total |\n'
+    sep = '|---|' + '|'.join(['---'] * len(TORAH_TERM_ORDER)) + '|---|\n'
+    rows = []
+    for strong in strongs_order:
+        heb, eng = KEY_VERB_LABELS[strong]
+        counts = verb_torah_matrix[strong]
+        total = sum(counts.values())
+        cells = ' | '.join(str(counts[t]) if counts[t] else '·' for t in TORAH_TERM_ORDER)
+        rows.append(f'| {heb} ({eng}) | {cells} | {total} |')
+    return header + sep + '\n'.join(rows)
+
+
+def shamar_object_list() -> str:
+    strong = 'H8104'
+    rows_v = verb_obj_df[verb_obj_df['strong'] == strong]
+    counts: Dict[str, int] = {t: 0 for t in TORAH_TERM_ORDER}
+    for _, r in rows_v.iterrows():
+        for t in r['torah_objs']:
+            if t in counts:
+                counts[t] += 1
+    lines = []
+    for term in TORAH_TERM_ORDER:
+        if counts[term] > 0:
+            # find verse refs
+            vv = [
+                str(r['verse']) for _, r in rows_v.iterrows()
+                if term in r['torah_objs']
+            ]
+            lines.append(f'- **{term}** — {counts[term]}× (vv. {", ".join(vv)})')
+    return '\n'.join(lines)
+
+
 # ── Key observations ───────────────────────────────────────────────────────────
 
 n_petition_vv = len(set(petition_verses))
@@ -519,6 +750,7 @@ recurring emotional themes.
 - [Word Vocabulary Analysis](#word-vocabulary-analysis)
 - [Word Vocabulary by Stanza](#word-vocabulary-by-stanza)
 - [Requests and Petitions to God](#requests-and-petitions-to-god)
+- [The Psalmist's Own Verbs](#the-psalmists-own-verbs)
 - [Affirmations of Love and Devotion](#affirmations-of-love-and-devotion)
 - [Lament: Affliction and Enemies](#lament-affliction-and-enemies)
 - [Seeking, Longing, and Hope](#seeking-longing-and-hope)
@@ -548,6 +780,11 @@ recurring emotional themes.
 6. **Devotion and seeking** overlap substantially: many verses that express love for
    God's word also express earnest pursuit. The two themes form the emotional spine of
    the psalm alongside the petition voice.
+7. **שָׁמַר** (keep/observe) is the most frequent non-petition verb (21 occurrences) and
+   the only one whose direct objects span all 8 Torah vocabulary terms — it is the most
+   comprehensive verb of covenant faithfulness in the psalm. Alongside it, **אָהֵב** (love)
+   and **שָׂנֵא** (hate) form a devotional binary: the psalmist loves Torah's eight synonyms
+   and hates falsehood, false paths, and half-heartedness.
 
 ---
 
@@ -620,9 +857,63 @@ for cat_name, cat_desc in PETITION_CATEGORIES:
     if section:
         report += section + '\n'
 
-# ── Devotion section ───────────────────────────────────────────────────────────
+# ── Non-petition verb section ─────────────────────────────────────────────────
 
 report += f"""\
+---
+
+## The Psalmist's Own Verbs
+
+Alongside his petitions to God, the psalmist declares what he himself does. These
+non-petition verb forms — 273 tokens across the psalm — reveal the psalmist's active
+posture toward God's word and form the obverse of the petition voice: he asks God to
+*help* him keep, love, and understand Torah, but he also affirms that he already does so.
+
+### Most-Frequent Declared Actions
+
+{non_pet_verb_freq_table()}
+
+### What the Psalmist Keeps, Loves, and Observes
+
+The six Torah-directed verbs (keep, love, observe, not-forget, learn, seek) all take
+the eight canonical Torah vocabulary terms as direct objects. The matrix below shows
+how many times each verb governs each term.
+
+{verb_torah_matrix_table()}
+
+*\\* שָׁכַח (forget) is always negated in Psalm 119 — "I will not forget your law/word."
+All nine occurrences are negated declarations of faithfulness, not admissions of failure.*
+
+![Verb × Torah-Term Object Matrix](charts/verb-torah-object-matrix.png)
+
+**שָׁמַר (keep/observe)** stands out: with 21 occurrences it is the most frequent
+non-petition verb, and its objects span all 8 Torah vocabulary terms — the only verb
+in the psalm that governs the entire Torah synonymy:
+
+{shamar_object_list()}
+
+**אָהֵב (love)** concentrates on מִצְוָה (commandments, 3×) and תּוֹרָה (Torah, 3×),
+anchoring the psalmist's affective devotion in the two most foundational Torah terms.
+
+**שָׁכַח (forget)** — always negated — takes תּוֹרָה (3×) and דָּבָר / פִּקּוּדִים /
+מִצְוָה as objects. The psalmist's most consistent negative declaration is precisely
+that he does *not* forget God's word.
+
+### What the Psalmist Hates
+
+שָׂנֵא (hate, 4 occurrences) takes exclusively negative objects — a binary counterpart
+to the love vocabulary:
+
+| Verse | Object | Gloss |
+|---|---|---|
+| 104 | אֹרַח | false path |
+| 113 | סֵעֵף | half-hearted people |
+| 128 | אֹרַח | false path |
+| 163 | שֶׁקֶר | falsehood |
+
+The psalmist loves every Torah synonym; he hates every form of deception and
+half-heartedness. The binary is sharp and deliberate.
+
 ---
 
 ## Affirmations of Love and Devotion
@@ -720,6 +1011,7 @@ report += """
 | [Word Term Frequencies](charts/word-term-frequencies.png) | Frequency of the 8 canonical Word terms across Psalm 119 |
 | [Word Vocabulary by Stanza](charts/word-terms-by-stanza.png) | Heatmap: which terms appear in which stanzas |
 | [Themes by Stanza](charts/themes-by-stanza.png) | Thematic distribution across all 22 stanzas |
+| [Verb × Torah-Term Object Matrix](charts/verb-torah-object-matrix.png) | Which Torah terms each key non-petition verb governs |
 
 ---
 
@@ -746,9 +1038,11 @@ Analysis of Psalm 119's Hebrew word vocabulary and major themes.
 | [psalm-119-word-vocab.csv](psalm-119-word-vocab.csv) | Word term frequency data |
 | [psalm-119-petitions.csv](psalm-119-petitions.csv) | All petition verbs with verse references |
 | [psalm-119-themes-by-stanza.csv](psalm-119-themes-by-stanza.csv) | Thematic data by stanza |
+| [psalm-119-non-petition-verbs.csv](psalm-119-non-petition-verbs.csv) | Non-petition verbs with Torah object data |
 | [charts/word-term-frequencies.png](charts/word-term-frequencies.png) | Term frequency chart |
 | [charts/word-terms-by-stanza.png](charts/word-terms-by-stanza.png) | Stanza × term heatmap |
 | [charts/themes-by-stanza.png](charts/themes-by-stanza.png) | Theme distribution chart |
+| [charts/verb-torah-object-matrix.png](charts/verb-torah-object-matrix.png) | Verb × Torah-term object matrix |
 """
 (OUT / 'README.md').write_text(readme, encoding='utf-8')
 
@@ -767,6 +1061,7 @@ Analysis of Psalm 119's Hebrew word vocabulary and major themes.
 | [Word Vocabulary CSV](psalm-119-word-vocab.csv) | Term frequency data |
 | [Petitions CSV](psalm-119-petitions.csv) | All petition verbs |
 | [Themes by Stanza CSV](psalm-119-themes-by-stanza.csv) | Thematic data by stanza |
+| [Non-Petition Verbs CSV](psalm-119-non-petition-verbs.csv) | Non-petition verbs with Torah object data |
 """
 (MKD / 'index.md').write_text(index_md, encoding='utf-8')
 

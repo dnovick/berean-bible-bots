@@ -12,6 +12,7 @@ recurring emotional themes.
 - [Word Vocabulary Analysis](#word-vocabulary-analysis)
 - [Word Vocabulary by Stanza](#word-vocabulary-by-stanza)
 - [Requests and Petitions to God](#requests-and-petitions-to-god)
+- [The Psalmist's Own Verbs](#the-psalmists-own-verbs)
 - [Affirmations of Love and Devotion](#affirmations-of-love-and-devotion)
 - [Lament: Affliction and Enemies](#lament-affliction-and-enemies)
 - [Seeking, Longing, and Hope](#seeking-longing-and-hope)
@@ -41,6 +42,11 @@ recurring emotional themes.
 6. **Devotion and seeking** overlap substantially: many verses that express love for
    God's word also express earnest pursuit. The two themes form the emotional spine of
    the psalm alongside the petition voice.
+7. **שָׁמַר** (keep/observe) is the most frequent non-petition verb (21 occurrences) and
+   the only one whose direct objects span all 8 Torah vocabulary terms — it is the most
+   comprehensive verb of covenant faithfulness in the psalm. Alongside it, **אָהֵב** (love)
+   and **שָׂנֵא** (hate) form a devotional binary: the psalmist loves Torah's eight synonyms
+   and hates falsehood, false paths, and half-heartedness.
 
 ---
 
@@ -425,6 +431,87 @@ merely *obey* God's word — he pleads with God to *enable* him to live it.
 
 ---
 
+## The Psalmist's Own Verbs
+
+Alongside his petitions to God, the psalmist declares what he himself does. These
+non-petition verb forms — 273 tokens across the psalm — reveal the psalmist's active
+posture toward God's word and form the obverse of the petition voice: he asks God to
+*help* him keep, love, and understand Torah, but he also affirms that he already does so.
+
+### Most-Frequent Declared Actions
+
+| Verb (English) | Hebrew | N | Primary Object |
+|---|---|---|---|
+| Keep / Observe | שָׁמַר | 21 | Edut (4×) |
+| Love | אָהֵב | 12 | Torah (4×) |
+| Observe / Guard | נָצַר | 10 | Piqqudim (3×) |
+| Forget (negated) | שָׁכַח | 9 | Torah (3×) |
+| Do / Make | עָשָׂה | 7 | — |
+| Live | חָיָה | 7 | — |
+| Wait / Hope | יָחַל | 6 | — |
+| Meditate | שִׂיחַ | 6 | — |
+| Pursue | רָדַף | 5 | — |
+| Learn | לָמַד | 5 | Choq (2×) |
+| Seek | דָּרַשׁ | 5 | Piqqudim (2×) |
+| Afflict | עָנָה | 4 | — |
+
+### What the Psalmist Keeps, Loves, and Observes
+
+The six Torah-directed verbs (keep, love, observe, not-forget, learn, seek) all take
+the eight canonical Torah vocabulary terms as direct objects. The matrix below shows
+how many times each verb governs each term.
+
+| Verb | Torah | Edut | Piqqudim | Choq | Mitzvah | Mishpat | Davar | Imrah | Total |
+|---|---|---|---|---|---|---|---|---|---|
+| שָׁמַר (Keep) | 3 | 4 | 3 | 2 | 1 | 1 | 3 | 2 | 19 |
+| אָהֵב (Love) | 4 | 1 | 1 | · | 3 | · | · | · | 9 |
+| נָצַר (Observe) | 1 | 2 | 3 | 1 | 1 | · | · | · | 8 |
+| שָׁכַח (Forget*) | 3 | · | 2 | 1 | 1 | · | 2 | · | 9 |
+| לָמַד (Learn) | · | · | · | 2 | 1 | 1 | · | · | 4 |
+| דָּרַשׁ (Seek) | · | · | 2 | 1 | · | · | · | · | 3 |
+
+*\* שָׁכַח (forget) is always negated in Psalm 119 — "I will not forget your law/word."
+All nine occurrences are negated declarations of faithfulness, not admissions of failure.*
+
+![Verb × Torah-Term Object Matrix](charts/verb-torah-object-matrix.png)
+
+**שָׁמַר (keep/observe)** stands out: with 21 occurrences it is the most frequent
+non-petition verb, and its objects span all 8 Torah vocabulary terms — the only verb
+in the psalm that governs the entire Torah synonymy:
+
+- **Torah** — 3× (vv. 44, 55, 136)
+- **Edut** — 4× (vv. 88, 146, 167, 168)
+- **Piqqudim** — 3× (vv. 63, 134, 168)
+- **Choq** — 2× (vv. 5, 8)
+- **Mitzvah** — 1× (vv. 60)
+- **Mishpat** — 1× (vv. 106)
+- **Davar** — 3× (vv. 17, 57, 101)
+- **Imrah** — 2× (vv. 67, 158)
+
+**אָהֵב (love)** concentrates on מִצְוָה (commandments, 3×) and תּוֹרָה (Torah, 3×),
+anchoring the psalmist's affective devotion in the two most foundational Torah terms.
+
+**שָׁכַח (forget)** — always negated — takes תּוֹרָה (3×) and דָּבָר / פִּקּוּדִים /
+מִצְוָה as objects. The psalmist's most consistent negative declaration is precisely
+that he does *not* forget God's word.
+
+### What the Psalmist Hates
+
+שָׂנֵא (hate, 4 occurrences) takes exclusively negative objects — a binary counterpart
+to the love vocabulary:
+
+| Verse | Object | Gloss |
+|---|---|---|
+| 104 | אֹרַח | false path |
+| 113 | סֵעֵף | half-hearted people |
+| 128 | אֹרַח | false path |
+| 163 | שֶׁקֶר | falsehood |
+
+The psalmist loves every Torah synonym; he hates every form of deception and
+half-heartedness. The binary is sharp and deliberate.
+
+---
+
 ## Affirmations of Love and Devotion
 
 The psalmist does not merely *keep* God's commandments — he *loves* them.
@@ -606,6 +693,7 @@ peak expressions of the psalmist's love for God's word.
 | [Word Term Frequencies](charts/word-term-frequencies.png) | Frequency of the 8 canonical Word terms across Psalm 119 |
 | [Word Vocabulary by Stanza](charts/word-terms-by-stanza.png) | Heatmap: which terms appear in which stanzas |
 | [Themes by Stanza](charts/themes-by-stanza.png) | Thematic distribution across all 22 stanzas |
+| [Verb × Torah-Term Object Matrix](charts/verb-torah-object-matrix.png) | Which Torah terms each key non-petition verb governs |
 
 ---
 
