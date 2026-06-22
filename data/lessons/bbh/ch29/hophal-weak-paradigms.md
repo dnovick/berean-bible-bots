@@ -54,6 +54,27 @@
 | 3fs | וַתֻּקְטַל | וַתֻּעֲמַד | |
 | 3mp | וַיֻּקְטְלוּ | וַיֻּעֲמְדוּ | |
 
+
+### Weqatal {#pe-guttural-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal I-guttural (עמד) | Notes |
+|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהֶעֱמַד† | וְ + Perfect form; seghol-he prefix retained |
+| 3fs | וְהָקְטְלָה | וְהֶעֱמְדָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהֶעֱמַדְתָּ† |  |
+| 3cp | וְהָקְטְלוּ | וְהֶעֱמְדוּ† |  |
+
+### Imperative {#pe-guttural-imperative}
+
+**Diagnostic:** Same form as Perfect 3ms; composite shewa under guttural R1
+
+| Person | Hophal Strong (קטל) | Hophal I-guttural (עמד) | Notes |
+|---|---|---|---|
+| 2ms | הָקְטַל | הֶעֱמַד† | Same form as Perfect 3ms and Inf. Construct |
+| 2fs | הָקְטְלִי | הֶעֱמְדִי† | Composite shewa under ע; shewa under מ |
+| 2mp | הָקְטְלוּ | הֶעֱמְדוּ† |  |
+| 2fp | הָקְטַלְנָה | הֶעֱמַדְנָה† |  |
+
 ### Infinitive Construct {#pe-guttural-inf-construct}
 
 | Form | Hophal Strong (קטל) | Hophal I-guttural (עמד) | Notes |
@@ -121,6 +142,32 @@
 | 3fs | וַתֻּקְטַל | וַתֻּשְׁלַח† | |
 | 3mp | וַיֻּקְטְלוּ | וַיֻּשְׁלְחוּ† | |
 
+
+### Weqatal {#lamed-guttural-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal III-ח (שׁלח) | Notes |
+|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהֻשְׁלַח† | וְ + Perfect form; patach under R2 before final ח |
+| 3fs | וְהָקְטְלָה | וְהֻשְׁלְחָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהֻשְׁלַחְתָּ† |  |
+| 3cp | וְהָקְטְלוּ | וְהֻשְׁלְחוּ† |  |
+
+### Imperative {#lamed-guttural-imperative}
+
+| Person | Hophal Strong (קטל) | Hophal III-ח (שׁלח) | Notes |
+|---|---|---|---|
+| 2ms | הָקְטַל | הֻשְׁלַח† | Same form as Perfect 3ms; patach before final ח |
+| 2fs | הָקְטְלִי | הֻשְׁלְחִי† | Shewa under R2 before vocalic suffix |
+| 2mp | הָקְטְלוּ | הֻשְׁלְחוּ† |  |
+| 2fp | הָקְטַלְנָה | הֻשְׁלַחְנָה† |  |
+
+### Infinitive Construct {#lamed-guttural-inf-construct}
+
+| Form | Hophal Strong (קטל) | Hophal III-ח (שׁלח) | Notes |
+|---|---|---|---|
+| Base | הָקְטַל | הֻשְׁלַח† | Same form as Perfect 3ms; patach under R2; final ח does not alter the inf. construct pattern |
+| + לְ | לְהָקְטַל | לְהֻשְׁלַח† | |
+
 ### Infinitive Absolute {#lamed-guttural-inf-abs}
 
 | Form | Hophal Strong (קטל) | Hophal III-ח (שׁלח) | Notes |
@@ -179,6 +226,25 @@
 |---|---|---|---|
 | 3ms | וַיֻּקְטַל | וַיֻּמְצָא / וַיֻּקְרָא | Qibbuts prefix; Qamets + silent א (Num 21:3: וַיִּקְרָא שֵׁם) |
 | 3mp | וַיֻּקְטְלוּ | וַיֻּמְצְאוּ | OT: 2 Chr 36:8 |
+
+
+### Weqatal {#lamed-aleph-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal III-א (מצא) | Notes |
+|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהֻמְצָא† | וְ + Perfect form; qamets before silent א |
+| 3fs | וְהָקְטְלָה | וְהֻמְצְאָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהֻמְצֵאתָ† |  |
+| 3cp | וְהָקְטְלוּ | וְהֻמְצְאוּ† |  |
+
+### Imperative {#lamed-aleph-imperative}
+
+| Person | Hophal Strong (קטל) | Hophal III-א (מצא) | Notes |
+|---|---|---|---|
+| 2ms | הָקְטַל | הֻמְצָא† | Same form as Perfect 3ms; qamets before silent א |
+| 2fs | הָקְטְלִי | הֻמְצְאִי† | Mobile shewa under R2; silent א before suffix |
+| 2mp | הָקְטְלוּ | הֻמְצְאוּ† |  |
+| 2fp | הָקְטַלְנָה | הֻמְצֶאנָה† | Seghol under R2 before נָה; quiescent א retained |
 
 ### Infinitive Construct {#lamed-aleph-inf-construct}
 
@@ -249,6 +315,25 @@
 | 3fs | וַתֻּקְטַל | וַתֻּגֶל | |
 | 3mp | וַיֻּקְטְלוּ | וַיֻּגְלוּ | |
 
+
+### Weqatal {#lamed-he-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal III-ה (גלה) | Notes |
+|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהֻגְלָה† | וְ + Perfect form; qamets-he ending retained |
+| 3fs | וְהָקְטְלָה | וְהֻגְלְתָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהֻגְלֵיתָ† |  |
+| 3cp | וְהָקְטְלוּ | וְהֻגְלוּ† |  |
+
+### Imperative {#lamed-he-imperative}
+
+| Person | Hophal Strong (קטל) | Hophal III-ה (גלה) | Notes |
+|---|---|---|---|
+| 2ms | הָקְטַל | הֻגְלֵה† | III-ה Imperative 2ms: tsere-he ending (cf. Qal גְּלֵה) |
+| 2fs | הָקְטְלִי | הֻגְלִי† | ה drops before vocalic suffix |
+| 2mp | הָקְטְלוּ | הֻגְלוּ† |  |
+| 2fp | הָקְטַלְנָה | הֻגְלֶינָה† |  |
+
 ### Infinitive Construct {#lamed-he-inf-construct}
 
 | Form | Hophal Strong (קטל) | Hophal III-ה (גלה) | Notes |
@@ -315,6 +400,25 @@
 | 3ms | וַיֻּקְטַל | וַיֻּגַּד | Qibbuts + Dagesh forte in R2 — the report formula (OT: Gen 22:20) |
 | 3fs | וַתֻּקְטַל | וַתֻּגַּד | |
 | 3mp | וַיֻּקְטְלוּ | וַיֻּגְּדוּ | |
+
+
+### Weqatal {#pe-nun-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal I-נ (נגד) | Notes |
+|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהֻגַּד† | וְ + Perfect form; dagesh forte in R2 retained |
+| 3fs | וְהָקְטְלָה | וְהֻגְּדָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהֻגַּדְתָּ† |  |
+| 3cp | וְהָקְטְלוּ | וְהֻגְּדוּ† |  |
+
+### Imperative {#pe-nun-imperative}
+
+| Person | Hophal Strong (קטל) | Hophal I-נ (נגד) | Notes |
+|---|---|---|---|
+| 2ms | הָקְטַל | הֻגַּד† | Same form as Perfect 3ms; dagesh forte in R2 |
+| 2fs | הָקְטְלִי | הֻגְּדִי† | Mobile shewa before vocalic suffix; dagesh forte retained |
+| 2mp | הָקְטְלוּ | הֻגְּדוּ† |  |
+| 2fp | הָקְטַלְנָה | הֻגַּדְנָה† |  |
 
 ### Infinitive Construct {#pe-nun-inf-construct}
 
@@ -383,6 +487,25 @@
 | 3fs | וַתֻּקְטַל | וַתּוּלַד | וַתּוּבָא | |
 | 3mp | וַיֻּקְטְלוּ | וַיּוּלְדוּ | וַיּוּבְאוּ | |
 
+
+### Weqatal {#pe-yod-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal I-י (ילד) | Hophal I-ו (בוא) | Notes |
+|---|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהוּלַד† | וְהוּבָא† | וְ + Perfect form; Shureq prefix retained |
+| 3fs | וְהָקְטְלָה | וְהוּלְדָה† | וְהוּבְאָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהוּלַדְתָּ† | וְהוּבֵאתָ† |  |
+| 3cp | וְהָקְטְלוּ | וְהוּלְדוּ† | וְהוּבְאוּ† |  |
+
+### Imperative {#pe-yod-imperative}
+
+| Person | Hophal Strong (קטל) | Hophal I-י (ילד) | Hophal I-ו (בוא) | Notes |
+|---|---|---|---|---|
+| 2ms | הָקְטַל | הוּלַד† | הוּבָא† | Same form as Perfect 3ms; Shureq prefix |
+| 2fs | הָקְטְלִי | הוּלְדִי† | הוּבְאִי† | Shewa under R2 before vocalic suffix |
+| 2mp | הָקְטְלוּ | הוּלְדוּ† | הוּבְאוּ† |  |
+| 2fp | הָקְטַלְנָה | הוּלַדְנָה† | הוּבֶאנָה† |  |
+
 ### Infinitive Construct {#pe-yod-inf-construct}
 
 | Form | Hophal Strong (קטל) | Hophal I-י (ילד) | Hophal I-ו (בוא) | Notes |
@@ -448,6 +571,25 @@
 | 3fs | וַתֻּקְטַל | וַתּוּקַם | וַתּוּשַׁב | |
 | 3mp | וַיֻּקְטְלוּ | וַיּוּקְמוּ | וַיּוּשְׁבוּ | |
 
+
+### Weqatal {#biconsonantal-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal Bicons. (קום) | Hophal Bicons. (שׁוב) | Notes |
+|---|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהוּקַם† | וְהוּשַׁב† | וְ + Perfect form; Shureq prefix retained |
+| 3fs | וְהָקְטְלָה | וְהוּקְמָה† | וְהוּשְׁבָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהוּקַמְתָּ† | וְהוּשַׁבְתָּ† |  |
+| 3cp | וְהָקְטְלוּ | וְהוּקְמוּ† | וְהוּשְׁבוּ† |  |
+
+### Imperative {#biconsonantal-imperative}
+
+| Person | Hophal Strong (קטל) | Hophal Bicons. (קום) | Hophal Bicons. (שׁוב) | Notes |
+|---|---|---|---|---|
+| 2ms | הָקְטַל | הוּקַם† | הוּשַׁב† | Same form as Perfect 3ms; Shureq prefix |
+| 2fs | הָקְטְלִי | הוּקְמִי† | הוּשְׁבִי† | Shewa under R2 before vocalic suffix |
+| 2mp | הָקְטְלוּ | הוּקְמוּ† | הוּשְׁבוּ† |  |
+| 2fp | הָקְטַלְנָה | הוּקַמְנָה† | הוּשַׁבְנָה† |  |
+
 ### Infinitive Construct {#biconsonantal-inf-construct}
 
 | Form | Hophal Strong (קטל) | Hophal Bicons. (קום) | Hophal Bicons. (שׁוב) | Notes |
@@ -512,6 +654,25 @@
 | 3ms | וַיֻּקְטַל | וַיֻּקַּם | וַיֻּקַּל† | Qibbuts + Dagesh forte in R2 |
 | 3fs | וַתֻּקְטַל | וַתֻּקַּם† | וַתֻּקַּל† | |
 | 3mp | וַיֻּקְטְלוּ | וַיֻּקְּמוּ† | וַיֻּקְּלוּ† | |
+
+
+### Weqatal {#geminate-weqatal}
+
+| Form | Hophal Strong (קטל) | Hophal Geminate (נקם) | Hophal Geminate (קלל) | Notes |
+|---|---|---|---|---|
+| 3ms | וְהָקְטַל | וְהֻקַּם† | וְהֻקַּל† | וְ + Perfect form; Qibbuts prefix; Dagesh forte retained |
+| 3fs | וְהָקְטְלָה | וְהֻקְּמָה† | וְהֻקְּלָה† |  |
+| 2ms | וְהָקְטַלְתָּ | וְהֻקַּמְתָּ† | וְהֻקַּלְתָּ† |  |
+| 3cp | וְהָקְטְלוּ | וְהֻקְּמוּ† | וְהֻקְּלוּ† |  |
+
+### Imperative {#geminate-imperative}
+
+| Person | Hophal Strong (קטל) | Hophal Geminate (נקם) | Hophal Geminate (קלל) | Notes |
+|---|---|---|---|---|
+| 2ms | הָקְטַל | הֻקַּם† | הֻקַּל† | Same form as Perfect 3ms; Qibbuts; Dagesh forte in R2 |
+| 2fs | הָקְטְלִי | הֻקְּמִי† | הֻקְּלִי† | Mobile shewa before vocalic suffix; Dagesh forte retained |
+| 2mp | הָקְטְלוּ | הֻקְּמוּ† | הֻקְּלוּ† |  |
+| 2fp | הָקְטַלְנָה | הֻקַּמְנָה† | הֻקַּלְנָה† |  |
 
 ### Infinitive Construct {#geminate-inf-construct}
 
