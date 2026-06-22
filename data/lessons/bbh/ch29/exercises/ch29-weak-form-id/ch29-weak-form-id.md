@@ -6,7 +6,7 @@
 
 ## Instructions
 
-**Part A:** Forms are grouped by weak class (5 per class, 6 groups = 30 items total). For each, identify: conjugation, PGN, root.
+**Part A:** Forms are grouped by weak class (5 per class, 8 groups = 40 items total). For each, identify: conjugation, PGN, root.
 **Part B:** Forms are mixed (15 items). Identify: weak class first, then conjugation, PGN, root. Items marked "(paradigmatic)" are attested paradigm forms not directly cited from a biblical verse.
 
 ---
@@ -73,27 +73,47 @@
 | 29 | יֻּתַּם | 2 Sam 20:18 | | | |
 | 30 | יֻּכַּל | Num 13:30 | | | |
 
+### Group 7: III-ח/ע (Lamed-Guttural)
+
+| # | Form | Reference | Conjugation | PGN | Root |
+|---|---|---|---|---|---|
+| 51 | וַתֻּקַּח | Gen 12:15 | | | |
+| 52 | יֻקַּח | Job 28:2 | | | |
+| 53 | הֻמְלַחַתְּ | Ezk 16:4 | | | |
+| 54 | יֻשְׁלַח | (paradigmatic) | | | |
+| 55 | מֻשְׁלַחַת | (paradigmatic) | | | |
+
+### Group 8: III-א (Lamed-Aleph)
+
+| # | Form | Reference | Conjugation | PGN | Root |
+|---|---|---|---|---|---|
+| 46 | מוּצֵאת | Gen 38:25 | | | |
+| 47 | הוּצָאָה | Ezk 38:8 | | | |
+| 48 | מוּצָאוֹת | Jer 38:22 | | | |
+| 49 | הֻמְצָא | (paradigmatic) | | | |
+| 50 | יֻמְצָא | (paradigmatic) | | | |
+
 ---
 
 ## Part B — Mixed (identify weak class first)
 
 | # | Form | Reference | Weak class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|
-| 31 | הוּבָא | Gen 33:11 | | | | |
-| 32 | יֻּגַּד | Gen 48:2 | | | | |
-| 33 | יוּמַת | Lev 20:2 | | | | |
-| 34 | הֻגְלוּ | 2 Kgs 17:23 | | | | |
-| 35 | הוּקַם | Num 7:1 | | | | |
-| 36 | הוּסַר | Lev 6:4 | | | | |
-| 37 | יֻּכּוּ | Num 14:12 | | | | |
-| 38 | הוּרַד | 1 Sam 30:24 | | | | |
-| 39 | הוּחַל | Gen 4:26 | | | | |
-| 40 | הוּסַב | Josh 15:3 | | | | |
-| 41 | תּוּרַד | Isa 14:15 | | | | |
-| 42 | הוּמְתוּ | 2 Sam 21:9 | | | | |
-| 43 | הֻגַּדְתִּי | (paradigmatic) | | | | |
-| 44 | הֻגְלֵיתֶם | (paradigmatic) | | | | |
-| 45 | הוּרַדְנוּ | (paradigmatic) | | | | |
+| 41 | הוּבָא | Gen 33:11 | | | | |
+| 42 | יֻּגַּד | Gen 48:2 | | | | |
+| 43 | יוּמַת | Lev 20:2 | | | | |
+| 44 | הֻגְלוּ | 2 Kgs 17:23 | | | | |
+| 45 | הוּקַם | Num 7:1 | | | | |
+| 46 | הוּסַר | Lev 6:4 | | | | |
+| 47 | יֻּכּוּ | Num 14:12 | | | | |
+| 48 | הוּרַד | 1 Sam 30:24 | | | | |
+| 49 | הוּחַל | Gen 4:26 | | | | |
+| 50 | הוּסַב | Josh 15:3 | | | | |
+| 51 | תּוּרַד | Isa 14:15 | | | | |
+| 52 | הוּמְתוּ | 2 Sam 21:9 | | | | |
+| 53 | הֻגַּדְתִּי | (paradigmatic) | | | | |
+| 54 | הֻגְלֵיתֶם | (paradigmatic) | | | | |
+| 55 | הוּרַדְנוּ | (paradigmatic) | | | | |
 
 ---
 
@@ -131,6 +151,16 @@
 | 28 | הֻסַּב | Perfect | 3ms | סָבַב | קִבּוּץ + dagesh in R2 (סּ) — geminate contraction form; alternate to הוּסַב |
 | 29 | יֻּתַּם | Imperfect | 3ms | תָּמַם | קִבּוּץ + dagesh in R2 — geminate root ת-מ-מ; "it will be completed/finished" |
 | 30 | יֻּכַּל | Imperfect | 3ms | כָּלַל | קִבּוּץ + dagesh in R2 (כּ) — geminate root כ-ל-ל; "it will be able/completed" |
+| 31 | וַתֻּקַּח | Wayyiqtol | 3fs | לָקַח | קִבּוּץ prefix; dagesh in R2 (ק) from ל-assimilation; R3 ח (lamed-guttural) refuses dagesh; patach under ח |
+| 32 | יֻקַּח | Imperfect | 3ms | לָקַח | קִבּוּץ prefix; ל of לָקַח assimilates (like I-nun) → dagesh in ק; R3 ח takes patach (cannot take dagesh) |
+| 33 | הֻמְלַחַתְּ | Perfect | 2fs | מָלַח | קִבּוּץ under הֻ; shewa under מ (R1); R3 ח refuses dagesh — patach furtive before ח; 2fs suffix תּ |
+| 34 | יֻשְׁלַח | Imperfect | 3ms | שָׁלַח | קִבּוּץ prefix + shewa under שׁ; R3 ח guttural refuses dagesh; patach under final ח; contrast strong יֻקְטַל |
+| 35 | מֻשְׁלַחַת | Participle | fs | שָׁלַח | מֻ prefix (Hophal Ptc); R3 ח: patach + patach furtive before final ח; feminine ת suffix; compare strong מֻקְטֶלֶת |
+| 36 | מוּצֵאת | Participle | fs | יָצָא | מוּ prefix (שׁוּרֶק) — I-yod root; R3 א quiesces after tsere (ֵ); feminine ת suffix |
+| 37 | הוּצָאָה | Perfect | 3fs | יָצָא | הוּ prefix (שׁוּרֶק) — I-yod root; R3 א quiesces after qamets (ָ); feminine 3fs suffix ָה |
+| 38 | מוּצָאוֹת | Participle | fp | יָצָא | מוּ prefix (Hophal Ptc); R3 א quiesces after qamets (ָ); feminine plural וֹת ending |
+| 39 | הֻמְצָא | Perfect | 3ms | מָצָא | קִבּוּץ under הֻ; shewa under מ (R1); R3 א quiesces silently after qamets (ָ) |
+| 40 | יֻמְצָא | Imperfect | 3ms | מָצָא | קִבּוּץ prefix (יֻ); shewa under מ (R1); R3 א quiesces after qamets — sole III-א diagnostic |
 
 ---
 
@@ -138,21 +168,21 @@
 
 | # | Form | Weak class | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|---|
-| 31 | הוּבָא | I-vav / Biconsonantal | Perfect | 3ms | בּוֹא | הוּ prefix; root בּוֹא is I-vav and hollow |
-| 32 | יֻּגַּד | I-nun | Wayyiqtol | 3ms | נָגַד | קִבּוּץ + dagesh in R2 (ג); נ assimilated |
-| 33 | יוּמַת | Biconsonantal | Imperfect | 3ms | מוּת | יוּ prefix — hollow biconsonantal; root מוּת |
-| 34 | הֻגְלוּ | III-he | Perfect | 3cp | גָּלָה | קִבּוּץ under הֻ + וּ plural (III-he 3cp) |
-| 35 | הוּקַם | Biconsonantal | Perfect | 3ms | קוּם | הוּ prefix; hollow root קוּם |
-| 36 | הוּסַר | Biconsonantal | Perfect | 3ms | סוּר | הוּ prefix; hollow root סוּר; "it was removed" |
-| 37 | יֻּכּוּ | I-nun | Wayyiqtol | 3mp | נָכָה | קִבּוּץ + dagesh in כּ; III-he; וּ plural ending |
-| 38 | הוּרַד | I-yod | Perfect | 3ms | יָרַד | הוּ prefix; R1 = י (quiescent); "he was brought down" |
-| 39 | הוּחַל | I-guttural | Perfect | 3ms | חָלַל | הוּ prefix; guttural ח opens syllable; "it was begun" |
-| 40 | הוּסַב | Geminate | Perfect | 3ms | סָבַב | הוּ prefix; R2=R3 in root ס-ב-ב; contrast: biconsonantal roots end in שׁוּרֶק vowel-letter, geminate do not |
-| 41 | תּוּרַד | I-yod / I-vav | Imperfect | 2ms | יָרַד | תּוּ prefix = 2ms Hophal Impf; שׁוּרֶק marks I-yod/vav; R1 yod quiesces |
-| 42 | הוּמְתוּ | Biconsonantal | Perfect | 3cp | מוּת | הוּ prefix + 3cp ending וּ; contrast 3ms יוּמַת (item 7) |
-| 43 | הֻגַּדְתִּי | I-nun | Perfect | 1cs | נָגַד | קִבּוּץ under הֻ + dagesh in R2 (גּ, I-nun assimilation) + 1cs suffix תִּי |
-| 44 | הֻגְלֵיתֶם | III-he | Perfect | 2mp | גָּלָה | קִבּוּץ under הֻ + III-he: tsere-yod pattern before 2mp suffix תֶם |
-| 45 | הוּרַדְנוּ | I-yod / I-vav | Perfect | 1cp | יָרַד | הוּ prefix (I-yod Hophal Pf) + 1cp suffix נוּ; R1 yod quiesces |
+| 41 | הוּבָא | I-vav / Biconsonantal | Perfect | 3ms | בּוֹא | הוּ prefix; root בּוֹא is I-vav and hollow |
+| 42 | יֻּגַּד | I-nun | Wayyiqtol | 3ms | נָגַד | קִבּוּץ + dagesh in R2 (ג); נ assimilated |
+| 43 | יוּמַת | Biconsonantal | Imperfect | 3ms | מוּת | יוּ prefix — hollow biconsonantal; root מוּת |
+| 44 | הֻגְלוּ | III-he | Perfect | 3cp | גָּלָה | קִבּוּץ under הֻ + וּ plural (III-he 3cp) |
+| 45 | הוּקַם | Biconsonantal | Perfect | 3ms | קוּם | הוּ prefix; hollow root קוּם |
+| 46 | הוּסַר | Biconsonantal | Perfect | 3ms | סוּר | הוּ prefix; hollow root סוּר; "it was removed" |
+| 47 | יֻּכּוּ | I-nun | Wayyiqtol | 3mp | נָכָה | קִבּוּץ + dagesh in כּ; III-he; וּ plural ending |
+| 48 | הוּרַד | I-yod | Perfect | 3ms | יָרַד | הוּ prefix; R1 = י (quiescent); "he was brought down" |
+| 49 | הוּחַל | I-guttural | Perfect | 3ms | חָלַל | הוּ prefix; guttural ח opens syllable; "it was begun" |
+| 50 | הוּסַב | Geminate | Perfect | 3ms | סָבַב | הוּ prefix; R2=R3 in root ס-ב-ב; contrast: biconsonantal roots end in שׁוּרֶק vowel-letter, geminate do not |
+| 51 | תּוּרַד | I-yod / I-vav | Imperfect | 2ms | יָרַד | תּוּ prefix = 2ms Hophal Impf; שׁוּרֶק marks I-yod/vav; R1 yod quiesces |
+| 52 | הוּמְתוּ | Biconsonantal | Perfect | 3cp | מוּת | הוּ prefix + 3cp ending וּ; contrast 3ms יוּמַת (item 7) |
+| 53 | הֻגַּדְתִּי | I-nun | Perfect | 1cs | נָגַד | קִבּוּץ under הֻ + dagesh in R2 (גּ, I-nun assimilation) + 1cs suffix תִּי |
+| 54 | הֻגְלֵיתֶם | III-he | Perfect | 2mp | גָּלָה | קִבּוּץ under הֻ + III-he: tsere-yod pattern before 2mp suffix תֶם |
+| 55 | הוּרַדְנוּ | I-yod / I-vav | Perfect | 1cp | יָרַד | הוּ prefix (I-yod Hophal Pf) + 1cp suffix נוּ; R1 yod quiesces |
 
 ---
 
