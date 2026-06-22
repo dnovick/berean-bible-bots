@@ -6722,7 +6722,7 @@ class Ch29WeakFormIdExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
             'Part A: identify conjugation, PGN, and root for each form (grouped by weak class, '
-            '5 items per group, 6 groups = 30 items). '
+            '5 items per group, 8 groups = 40 items). '
             'Part B: identify the weak class first, then conjugation, PGN, and root (15 items). '
             'Items marked "(paradigmatic)" illustrate the paradigm and may not be '
             'directly cited from a biblical verse. '
@@ -6733,7 +6733,9 @@ class Ch29WeakFormIdExercise(ExercisePDF):
             'I-nun: dagesh forte in R2 (nun assimilated).  '
             'III-he: ending ָה (qatal 3ms) or וּ (3cp).  '
             'I-guttural: hateph vowel under R1 instead of simple shewa.  '
-            'Geminate: R2=R3; dagesh forte in final root consonant.'
+            'Geminate: R2=R3; dagesh forte in final root consonant.  '
+            'III-ח/ע: qibbuts prefix; R3 guttural refuses dagesh — patach under final ח/ע.  '
+            'III-aleph: qibbuts or shureq prefix; R3 aleph quiesces after qamets/tsere.'
         )
 
         hdr = ['#', 'Form', 'Reference', 'Conjugation', 'PGN', 'Root / Diagnostic']
@@ -6818,6 +6820,62 @@ class Ch29WeakFormIdExercise(ExercisePDF):
                 ['29', 'יֻּתַּם',    '2 Sam 20:18', 'Imperfect',  '3ms', 'תָּמַם · קִבּוּץ + dagesh in R2 — geminate root ת-מ-מ'],
                 ['30', 'יֻּכַּל',    'Num 13:30',   'Imperfect',  '3ms', 'כָּלַל · קִבּוּץ + dagesh in R2 (כּ) — geminate root כ-ל-ל'],
             ]),
+            ('Group 7: III-ח/ע (Lamed-Guttural)', [
+                ['31', 'וַתֻׁקַּח', 'Gen 12:15',      '', '', ''],
+                ['32', 'יֻקַּח',                   'Job 28:2',       '', '', ''],
+                ['33', 'הֻמְלַחַתְּ', 'Ezk 16:4', '', '', ''],
+                ['34', 'יֻשְׁלַח',      '(paradigmatic)', '', '', ''],
+                ['35', 'מֻשְׁלַחַת', '(paradigmatic)', '', '', ''],
+            ], [
+                ['31', 'וַתֻׁקַּח', 'Gen 12:15',
+                 'Wayyiqtol', '3fs',
+                 'לָקַח \xb7 קִבּוּץ prefix;'
+                 ' dagesh in R2 (ק) from ל-assimilation; R3 ח refuses dagesh — patach under ח'],
+                ['32', 'יֻקַּח', 'Job 28:2',
+                 'Imperfect', '3ms',
+                 'לָקַח \xb7 קִבּוּץ prefix;'
+                 ' ל assimilates → dagesh in ק (R2); R3 ח (lamed-guttural): patach replaces dagesh'],
+                ['33', 'הֻמְלַחַתְּ', 'Ezk 16:4',
+                 'Perfect', '2fs',
+                 'מָלַח \xb7 קִבּוּץ under הֻ;'
+                 ' R3 ח refuses dagesh — patach furtive; 2fs suffix תּ'],
+                ['34', 'יֻשְׁלַח', '(paradigmatic)',
+                 'Imperfect', '3ms',
+                 'שָׁלַח \xb7 קִבּוּץ prefix;'
+                 ' shewa under R1; R3 ח guttural refuses dagesh — patach under ח'],
+                ['35', 'מֻשְׁלַחַת', '(paradigmatic)',
+                 'Participle', 'fs',
+                 'שָׁלַח \xb7 מֻ prefix (Hophal Ptc);'
+                 ' R3 ח: patach + patach furtive before ח + ת suffix; compare strong מֻקְטֶלֶת'],
+            ]),
+            ('Group 8: III-א (Lamed-Aleph)', [
+                ['36', 'מוּצֵאת',             'Gen 38:25',      '', '', ''],
+                ['37', 'הוּצָאָה',       'Ezk 38:8',       '', '', ''],
+                ['38', 'מוּצָאוֹת', 'Jer 38:22',      '', '', ''],
+                ['39', 'הֻמְצָא',             '(paradigmatic)', '', '', ''],
+                ['40', 'יֻמְצָא',             '(paradigmatic)', '', '', ''],
+            ], [
+                ['36', 'מוּצֵאת', 'Gen 38:25',
+                 'Participle', 'fs',
+                 'יָצָא \xb7 מוּ prefix (שׁוּרֶק)'
+                 ' — I-yod root; R3 א quiesces after tsere (ֵ); fs ת suffix'],
+                ['37', 'הוּצָאָה', 'Ezk 38:8',
+                 'Perfect', '3fs',
+                 'יָצָא \xb7 הוּ prefix (שׁוּרֶק)'
+                 ' — I-yod; R3 א quiesces after qamets (ָ); 3fs suffix ָה'],
+                ['38', 'מוּצָאוֹת', 'Jer 38:22',
+                 'Participle', 'fp',
+                 'יָצָא \xb7 מוּ prefix (Hophal Ptc);'
+                 ' R3 א quiesces after qamets; fp וֹת ending'],
+                ['39', 'הֻמְצָא', '(paradigmatic)',
+                 'Perfect', '3ms',
+                 'מָצָא \xb7 קִבּוּץ under הֻ;'
+                 ' shewa under מ (R1); R3 א quiesces silently after qamets (ָ)'],
+                ['40', 'יֻמְצָא', '(paradigmatic)',
+                 'Imperfect', '3ms',
+                 'מָצָא \xb7 קִבּוּץ prefix (יֻ);'
+                 ' shewa under מ (R1); R3 א quiesces after qamets — sole III-א diagnostic'],
+            ]),
         ]
 
         for title, rows, ans in groups:
@@ -6828,38 +6886,38 @@ class Ch29WeakFormIdExercise(ExercisePDF):
         hdr_b = ['#', 'Form', 'Reference', 'Weak Class', 'Conjugation', 'PGN', 'Root']
         cr_b  = [0.04, 0.13, 0.12, 0.17, 0.16, 0.09, 0.29]
         rows_b = [
-            ['31', 'הוּבָא',      'Gen 33:11',      '', '', '', ''],
-            ['32', 'יֻּגַּד',     'Gen 48:2',       '', '', '', ''],
-            ['33', 'יוּמַת',      'Lev 20:2',       '', '', '', ''],
-            ['34', 'הֻגְלוּ',     '2 Kgs 17:23',    '', '', '', ''],
-            ['35', 'הוּקַם',      'Num 7:1',        '', '', '', ''],
-            ['36', 'הוּסַר',      'Lev 6:4',        '', '', '', ''],
-            ['37', 'יֻּכּוּ',     'Num 14:12',      '', '', '', ''],
-            ['38', 'הוּרַד',      '1 Sam 30:24',    '', '', '', ''],
-            ['39', 'הוּחַל',      'Gen 4:26',       '', '', '', ''],
-            ['40', 'הוּסַב',      'Josh 15:3',      '', '', '', ''],
-            ['41', 'תּוּרַד',     'Isa 14:15',      '', '', '', ''],
-            ['42', 'הוּמְתוּ',    '2 Sam 21:9',     '', '', '', ''],
-            ['43', 'הֻגַּדְתִּי', '(paradigmatic)', '', '', '', ''],
-            ['44', 'הֻגְלֵיתֶם', '(paradigmatic)', '', '', '', ''],
-            ['45', 'הוּרַדְנוּ',  '(paradigmatic)', '', '', '', ''],
+            ['41', 'הוּבָא',      'Gen 33:11',      '', '', '', ''],
+            ['42', 'יֻּגַּד',     'Gen 48:2',       '', '', '', ''],
+            ['43', 'יוּמַת',      'Lev 20:2',       '', '', '', ''],
+            ['44', 'הֻגְלוּ',     '2 Kgs 17:23',    '', '', '', ''],
+            ['45', 'הוּקַם',      'Num 7:1',        '', '', '', ''],
+            ['46', 'הוּסַר',      'Lev 6:4',        '', '', '', ''],
+            ['47', 'יֻּכּוּ',     'Num 14:12',      '', '', '', ''],
+            ['48', 'הוּרַד',      '1 Sam 30:24',    '', '', '', ''],
+            ['49', 'הוּחַל',      'Gen 4:26',       '', '', '', ''],
+            ['50', 'הוּסַב',      'Josh 15:3',      '', '', '', ''],
+            ['51', 'תּוּרַד',     'Isa 14:15',      '', '', '', ''],
+            ['52', 'הוּמְתוּ',    '2 Sam 21:9',     '', '', '', ''],
+            ['53', 'הֻגַּדְתִּי', '(paradigmatic)', '', '', '', ''],
+            ['54', 'הֻגְלֵיתֶם', '(paradigmatic)', '', '', '', ''],
+            ['55', 'הוּרַדְנוּ',  '(paradigmatic)', '', '', '', ''],
         ]
         ans_b = [
-            ['31', 'הוּבָא',      'Gen 33:11',      'I-yod / I-vav',  'Perfect',    '3ms', 'בּוֹא'],
-            ['32', 'יֻּגַּד',     'Gen 48:2',       'I-nun',          'Imperfect',  '3ms', 'נָגַד'],
-            ['33', 'יוּמַת',      'Lev 20:2',       'Biconsonantal',  'Imperfect',  '3ms', 'מוּת'],
-            ['34', 'הֻגְלוּ',     '2 Kgs 17:23',    'III-he',         'Perfect',    '3cp', 'גָּלָה'],
-            ['35', 'הוּקַם',      'Num 7:1',        'Biconsonantal',  'Perfect',    '3ms', 'קוּם'],
-            ['36', 'הוּסַר',      'Lev 6:4',        'Biconsonantal',  'Perfect',    '3ms', 'סוּר'],
-            ['37', 'יֻּכּוּ',     'Num 14:12',      'I-nun + III-he', 'Wayyiqtol',  '3mp', 'נָכָה'],
-            ['38', 'הוּרַד',      '1 Sam 30:24',    'I-yod / I-vav',  'Perfect',    '3ms', 'יָרַד'],
-            ['39', 'הוּחַל',      'Gen 4:26',       'I-guttural',     'Perfect',    '3ms', 'חָלַל'],
-            ['40', 'הוּסַב',      'Josh 15:3',      'Geminate',       'Perfect',    '3ms', 'סָבַב'],
-            ['41', 'תּוּרַד',     'Isa 14:15',      'I-yod / I-vav',  'Imperfect',  '2ms', 'יָרַד'],
-            ['42', 'הוּמְתוּ',    '2 Sam 21:9',     'Biconsonantal',  'Perfect',    '3cp', 'מוּת'],
-            ['43', 'הֻגַּדְתִּי', '(paradigmatic)', 'I-nun',          'Perfect',    '1cs', 'נָגַד'],
-            ['44', 'הֻגְלֵיתֶם', '(paradigmatic)', 'III-he',         'Perfect',    '2mp', 'גָּלָה'],
-            ['45', 'הוּרַדְנוּ',  '(paradigmatic)', 'I-yod / I-vav',  'Perfect',    '1cp', 'יָרַד'],
+            ['41', 'הוּבָא',      'Gen 33:11',      'I-yod / I-vav',  'Perfect',    '3ms', 'בּוֹא'],
+            ['42', 'יֻּגַּד',     'Gen 48:2',       'I-nun',          'Imperfect',  '3ms', 'נָגַד'],
+            ['43', 'יוּמַת',      'Lev 20:2',       'Biconsonantal',  'Imperfect',  '3ms', 'מוּת'],
+            ['44', 'הֻגְלוּ',     '2 Kgs 17:23',    'III-he',         'Perfect',    '3cp', 'גָּלָה'],
+            ['45', 'הוּקַם',      'Num 7:1',        'Biconsonantal',  'Perfect',    '3ms', 'קוּם'],
+            ['46', 'הוּסַר',      'Lev 6:4',        'Biconsonantal',  'Perfect',    '3ms', 'סוּר'],
+            ['47', 'יֻּכּוּ',     'Num 14:12',      'I-nun + III-he', 'Wayyiqtol',  '3mp', 'נָכָה'],
+            ['48', 'הוּרַד',      '1 Sam 30:24',    'I-yod / I-vav',  'Perfect',    '3ms', 'יָרַד'],
+            ['49', 'הוּחַל',      'Gen 4:26',       'I-guttural',     'Perfect',    '3ms', 'חָלַל'],
+            ['50', 'הוּסַב',      'Josh 15:3',      'Geminate',       'Perfect',    '3ms', 'סָבַב'],
+            ['51', 'תּוּרַד',     'Isa 14:15',      'I-yod / I-vav',  'Imperfect',  '2ms', 'יָרַד'],
+            ['52', 'הוּמְתוּ',    '2 Sam 21:9',     'Biconsonantal',  'Perfect',    '3cp', 'מוּת'],
+            ['53', 'הֻגַּדְתִּי', '(paradigmatic)', 'I-nun',          'Perfect',    '1cs', 'נָגַד'],
+            ['54', 'הֻגְלֵיתֶם', '(paradigmatic)', 'III-he',         'Perfect',    '2mp', 'גָּלָה'],
+            ['55', 'הוּרַדְנוּ',  '(paradigmatic)', 'I-yod / I-vav',  'Perfect',    '1cp', 'יָרַד'],
         ]
 
         self.add_section_heading('Part B — Mixed Forms (15 items)')
