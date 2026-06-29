@@ -18,7 +18,8 @@ from .ot.prepositions import (
 from .lexical.stats import freq_table
 from .core.alignment import translation_equivalents, hebrew_sources
 from .core.ibm_align import translation_equivalents_w, hebrew_sources_w
-from .intertextuality.quotations import nt_quotations, verse_comparison, quotation_table, quotation_summary
+from .intertextuality.quotations import (
+    nt_quotations, verse_comparison, quotation_table, quotation_summary)
 from .intertextuality.lxx_consistency import lxx_consistency, print_lxx_consistency, consistency_heatmap, batch_consistency  # noqa: E501
 from .lexical.concordance import concordance, lemma_frequency, top_lemmas
 from .reporting.profiles import book_profile, print_profile, save_profile_report, batch_profiles
@@ -26,17 +27,20 @@ from .lexical.wordstudy import word_study, print_word_study, word_study_table, r
 from .intertextuality.parallel import parallel_passage, print_parallel, parallel_words
 from .lexical.hapax import hapax_legomena, hapax_table, hapax_summary
 from .lexical.termmap import term_map, print_term_map, term_map_table, THEOLOGICAL_TERMS
-from .lexical.phrase import phrase_search, print_phrase_results, proximity_search, print_proximity_results
+from .lexical.phrase import (
+    phrase_search, print_phrase_results, proximity_search, print_proximity_results)
 from .lexical.collocation import collocations, print_collocations, collocation_network
 from .lexical.morph_chart import morph_distribution, print_morph_distribution, morph_chart
-from .lexical.semantic_profile import semantic_profile, print_semantic_profile, save_semantic_profile
+from .lexical.semantic_profile import (
+    semantic_profile, print_semantic_profile, save_semantic_profile)
 from .lexical.synonym import compare_synonyms, print_synonym_comparison, synonym_table
 from .intertextuality.quotation_align import quotation_align, print_quotation_align, batch_align
 from .names.divine_names import (divine_name_table, divine_name_summary, divine_name_by_section,
                            print_divine_names, divine_names_chart, divine_names_report,
                            OT_DIVINE_NAMES, NT_DIVINE_NAMES, LXX_DIVINE_NAMES)
-from .discourse.genre_compare import (genre_compare, print_genre_compare, genre_heatmap, genre_report,
-                            OT_GENRES, NT_GENRES)
+from .discourse.genre_compare import (
+    genre_compare, print_genre_compare, genre_heatmap, genre_report,
+    OT_GENRES, NT_GENRES)
 from .intertextuality.intertextuality import (intertextuality, print_intertextuality,
                               intertextuality_graph, intertextuality_report)
 from .names.christological_titles import (title_counts, print_title_counts,

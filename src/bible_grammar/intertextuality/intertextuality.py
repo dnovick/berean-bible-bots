@@ -74,7 +74,8 @@ def _kjv_df() -> 'pd.DataFrame':
     if _KJV_DF is None:
         import pandas as pd
         from pathlib import Path
-        p = Path(__file__).parent.parent.parent.parent / 'data' / 'processed' / 'translations.parquet'
+        p = (Path(__file__).parent.parent.parent.parent
+             / 'data' / 'processed' / 'translations.parquet')
         _KJV_DF = pd.read_parquet(p)
     return _KJV_DF
 

@@ -39,7 +39,8 @@ def _get_collection() -> Any:
     api_key = os.environ.get("OPENAI_API_KEY", "")
     ef = OpenAIEmbeddingFunction(api_key=api_key, model_name=EMBED_MODEL)
     client = chromadb.PersistentClient(path=str(_CHROMA_DIR))
-    return client.get_or_create_collection(COLLECTION_NAME, embedding_function=ef)  # type: ignore[arg-type]
+    return client.get_or_create_collection(
+        COLLECTION_NAME, embedding_function=ef)  # type: ignore[arg-type]
 
 
 def _load_manifest() -> dict:
