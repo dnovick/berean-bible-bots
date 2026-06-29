@@ -23,7 +23,7 @@
 | I-נ (Pe-Nun) | `pe-nun` | נָגַד, נָכָה, נָקַם | Root נ assimilates into R2 with dagesh forte in imperfect, wayyiqtol | Dagesh in R2; no trace of נ in prefix conjugations |
 | I-י/ו (Pe-Yod/Vav) | `pe-yod` | יָלַד, יָצָא, בּוֹא | Hophal prefix vowel lengthens to Shureq (וּ) before quiesced yod/vav; yields הוּלַד / יוּלַד | Shureq under prefix consonant (overlaps Hophal strong marker) |
 | Biconsonantal (II-ו/י) | `biconsonantal` | קוּם, שִׂים, שׁוּב | Root's medial vowel letter merges with Hophal u-prefix; forms contract to two-syllable pattern | הוּקַם / יוּקַם; holem-vav under prefix |
-| Geminate (Ayin-Doubled, II=III) | `geminate` | נָקַם, קָלַל, שָׁמַם | R2 = R3; dagesh forte in final consonant; u-prefix preserved | הֻקַּם / יֻקַּם; dagesh forte in R2/R3 |
+| Geminate (Ayin-Doubled, II=III) | `geminate` | קָלַל, שָׁמַם | R2 = R3; dagesh forte in final consonant; u-prefix preserved | הֻקַּל / יֻקַּל; dagesh forte in R2 (=R3) |
 
 > **Key principle:** The u-class prefix vowel never disappears in the Hophal regardless of weak class.
 > What changes is how the root consonants — particularly the first and last — behave around that
@@ -192,7 +192,7 @@ The combination of Hophal u-class prefix + Dagesh forte in R2 is the unmistakabl
 
 | Conjugation | Hophal Strong (קטל) | I-נ (נגד) | I-נ (נקם) | Notes |
 |---|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#pe-nun-perfect) | הֻקְטַל | הֻגַּד | הֻקַּם* | Dagesh in R2; *see Geminate note |
+| [Perfect (Qatal)](hophal-weak-paradigms.md#pe-nun-perfect) | הֻקְטַל | הֻגַּד | הֻקַּם | Dagesh in R2 (nun assimilated) |
 | [Imperfect (Yiqtol)](hophal-weak-paradigms.md#pe-nun-imperfect) | יֻקְטַל | יֻגַּד | יֻקַּם | Qibbuts prefix; Dagesh forte in R2 |
 | [Wayyiqtol](hophal-weak-paradigms.md#pe-nun-wayyiqtol) | וַיֻּקְטַל | וַיֻּגַּד | — | Contraction + Qibbuts + Dagesh |
 | [Weqatal](hophal-weak-paradigms.md#pe-nun-perfect) | וְהֻקְטַל | וְהֻגַּד | — | וְ + Perfect form |
@@ -200,7 +200,6 @@ The combination of Hophal u-class prefix + Dagesh forte in R2 is the unmistakabl
 | [Inf. Absolute](hophal-weak-paradigms.md#pe-nun-inf-abs) | הֻקְטֵל | הֻגֵּד | — | Tsere under R2 |
 | [Participle](hophal-weak-paradigms.md#pe-nun-participle) | מֻקְטָל | מֻגָּד | — | מֻ prefix; Dagesh in R2 |
 
-*Note: נָקַם is listed here for cross-reference — its Hophal הֻקַּם/יֻקַּם is more commonly cited in the Geminate section (section 9) since קַם patterns as geminate. See section 9 for full treatment.
 
 ### Key Corpus Examples
 
@@ -299,32 +298,32 @@ In practice, Biconsonantal Hophal forms are identified by (1) Shureq or Qibbuts 
 
 Geminate roots (R2 = R3) in the Hophal produce compact, distinctive forms. Because the identical consonants must be written together, R2 takes a **Dagesh forte** (representing the doubled consonant). The Hophal u-class prefix is retained. The combination of Qibbuts under the prefix consonant + Dagesh forte in R2 is the defining signature.
 
-The most important Geminate Hophal root is נָקַם "to avenge" → יֻקַּם "shall be avenged." This form is embedded in Genesis 4, one of the most-cited legal-theological texts in the OT. The root קָלַל "to be cursed/despised" and שָׁמַם "to be devastated/desolate" also produce important Hophal Geminate forms.
+The canonical Geminate Hophal roots are קָלַל "to be slight/cursed" → הֻקַּל "was made light" and שָׁמַם "to be devastated" → הֻשַּׁם "was laid waste." Note: the frequently-cited form יֻקַּם (Gen 4:15) comes from the I-נ root נָקַם, where nun assimilation produces a Dagesh that resembles geminate doubling — but the mechanism is different (see section 7 above).
 
 **Diagnostic markers:**
-- **Perfect 3ms:** הֻקַּם — Qibbuts under prefix; Dagesh forte in R2 (=R3); short Patach
-- **Imperfect 3ms:** יֻקַּם — Qibbuts under prefix consonant; Dagesh forte in R2
-- **Wayyiqtol 3ms:** וַיֻּקַּם — doubled prefix + Qibbuts + Dagesh in R2
-- **Participle ms:** מֻקָּם — מֻ prefix; Dagesh forte in R2; Qamets
+- **Perfect 3ms:** הֻקַּל — Qibbuts under prefix; Dagesh forte in R2 (=R3); short Patach
+- **Imperfect 3ms:** יֻקַּל — Qibbuts under prefix consonant; Dagesh forte in R2
+- **Wayyiqtol 3ms:** וַיֻּקַּל — doubled prefix + Qibbuts + Dagesh in R2
+- **Participle ms:** מֻקָּל — מֻ prefix; Dagesh forte in R2; Qamets
 
 ### Paradigm Summary (3ms per conjugation)
 
-| Conjugation | Hophal Strong (קטל) | Geminate (נקם) | Geminate (קלל) | Notes |
-|---|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#geminate-perfect) | הֻקְטַל | הֻקַּם | הֻקַּל | Qibbuts prefix; Dagesh forte in R2 |
-| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#geminate-imperfect) | יֻקְטַל | יֻקַּם | יֻקַּל | Qibbuts + Dagesh forte |
-| [Wayyiqtol](hophal-weak-paradigms.md#geminate-wayyiqtol) | וַיֻּקְטַל | וַיֻּקַּם | — | Doubled prefix + Qibbuts + Dagesh |
-| [Weqatal](hophal-weak-paradigms.md#geminate-perfect) | וְהֻקְטַל | וְהֻקַּם | — | וְ + Perfect form |
-| [Inf. Construct](hophal-weak-paradigms.md#geminate-perfect) | הֻקְטַל | הֻקַּם | — | Same as Perfect 3ms |
-| [Inf. Absolute](hophal-weak-paradigms.md#geminate-inf-abs) | הֻקְטֵל | הֻקֵּם | — | Tsere under R2 |
-| [Participle](hophal-weak-paradigms.md#geminate-participle) | מֻקְטָל | מֻקָּם | — | מֻ prefix; Qamets; Dagesh forte |
+| Conjugation | Hophal Strong (קטל) | Geminate (קלל) | Notes |
+|---|---|---|---|
+| [Perfect (Qatal)](hophal-weak-paradigms.md#geminate-perfect) | הֻקְטַל | הֻקַּל | Qibbuts prefix; Dagesh forte in R2 (=R3) |
+| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#geminate-imperfect) | יֻקְטַל | יֻקַּל | Qibbuts + Dagesh forte |
+| [Wayyiqtol](hophal-weak-paradigms.md#geminate-wayyiqtol) | וַיֻּקְטַל | וַיֻּקַּל† | Doubled prefix + Qibbuts + Dagesh |
+| [Weqatal](hophal-weak-paradigms.md#geminate-perfect) | וְהֻקְטַל | וְהֻקַּל† | וְ + Perfect form |
+| [Inf. Construct](hophal-weak-paradigms.md#geminate-perfect) | הֻקְטַל | הֻקַּל† | Same as Perfect 3ms |
+| [Inf. Absolute](hophal-weak-paradigms.md#geminate-inf-abs) | הֻקְטֵל | הֻקֵּל† | Tsere under R2 |
+| [Participle](hophal-weak-paradigms.md#geminate-participle) | מֻקְטָל | מֻקָּל | מֻ prefix; Qamets; Dagesh forte |
 
 ### Key Corpus Examples
 
-- יֻקַּם שִׁבְעָתַיִם (Gen 4:15) — "Cain will be avenged sevenfold" — Hophal Imperfect 3ms of נָקַם; the LORD sets a protective sign on Cain; Qibbuts under prefix + Dagesh forte in קּ; one of the earliest Hophal forms in the OT
-- יֻקַּם לָמֶךְ (Gen 4:24) — "if Cain is avenged sevenfold, then Lamech seventy-sevenfold" — same root, same form; Lamech's boast song; consecutive use of Hophal Imperfect in a poem
-- הֻשַּׁמּוּ (Jer 2:12) — "be appalled, O heavens" — though morphologically complex, compare Hophal Geminate of שָׁמַם in Hophal usage; "were made desolate/appalled"
-- הֻקַּם (Exo 40:2) — "on the first day of the first month you shall set up the tabernacle" — Hophal of קוּם here in biconsonantal/geminate overlap; Qibbuts + Dagesh; the tabernacle-erection formula
+- הֻשַּׁמּוּ (Jer 2:12) — "be appalled, O heavens" — Hophal Geminate of שָׁמַם (R2=R3=מ); Qibbuts prefix + Dagesh forte in שׁ; "were made desolate/appalled"
+- הֻקַּם (Exo 40:2) — "the tabernacle was set up" — Biconsonantal Hophal of קוּם (compare the geminate Dagesh pattern); Qibbuts + Dagesh
+
+> **Note on יֻקַּם (Gen 4:15, 4:24):** This widely-cited form belongs to the I-נ root נָקַם "to avenge." The nun assimilates in the Hophal imperfect, producing Dagesh forte in ק — a pattern that *looks* like geminate doubling but arises from nun assimilation, not R2=R3 contraction. See section 7 (I-נ) for full treatment.
 
 ---
 
@@ -358,7 +357,7 @@ The following weak-root Hophal lemmas are among the most common in the OT. Frequ
 | 5 | קוּם | Biconsonantal | 20+ | to raise up, establish | to be raised up, established |
 | 6 | נָכָה | I-נ + III-ה | 18+ | to strike, smite | to be struck, smitten |
 | 7 | שׁוּב | Biconsonantal | 12+ | to bring back, restore | to be brought back, restored |
-| 8 | נָקַם | I-נ / Geminate | 10+ | to avenge | to be avenged |
+| 8 | נָקַם | I-נ | 10+ | to avenge | to be avenged |
 | 9 | יָרַד | I-י | 8+ | to bring down, lower | to be brought down |
 | 10 | עָלָה | I-gutt. + III-ה | 8+ | to bring up, offer | to be brought up, offered |
 | 11 | שָׁלַח | III-ח | 7+ | to send, release | to be sent, released |
@@ -441,17 +440,17 @@ The following weak-root Hophal lemmas are among the most common in the OT. Frequ
 
 ---
 
-### Geminate — Vengeance
+### I-נ — Vengeance (יֻקַּם looks geminate but is I-נ)
 
 **Imperfect — Gen 4:15**
 כָּל־הֹרֵ֣ג קַ֔יִן שִׁבְעָתַ֖יִם יֻקָּֽם׃
 *"If anyone kills Cain, he will be avenged sevenfold."*
-→ נקם Hophal Imperfect 3ms of נָקַם; יֻקַּם = Qibbuts under prefix + Dagesh forte in קּ (R2 = R3 geminate). This is one of the earliest Hophal forms in the OT and one of the first legal-theological pronouncements in Genesis. The LORD's protective decree over Cain uses the Hophal to express divine passive action: Cain "will be avenged" — the agent is unspecified but implicitly divine.
+→ I-נ Hophal Imperfect 3ms of נָקַם; יֻקַּם = Qibbuts under prefix + Dagesh forte in קּ (from nun assimilation, not R2=R3 geminate contraction). This is one of the earliest Hophal forms in the OT. The Dagesh in ק looks identical to a geminate Dagesh but its source is the assimilated נ of R1.
 
 **Imperfect — Gen 4:24**
 כִּ֥י שִׁבְעָתַ֖יִם יֻקַּם־קָ֑יִן וְלֶ֖מֶךְ שִׁבְעִ֥ים וְשִׁבְעָֽה׃
 *"If Cain is avenged sevenfold, then Lamech seventy-sevenfold."*
-→ נקם Hophal Imperfect 3ms; same form יֻקַּם used twice in four verses (4:15, 4:24) as Lamech's boast escalates God's decree. The Geminate Hophal is the literary hinge of this vengeance poem — recognizing יֻקַּם is essential for reading this passage.
+→ I-נ Hophal Imperfect 3ms; same form יֻקַּם used twice in four verses (4:15, 4:24). Recognizing that this is I-נ behavior (not geminate) is the key parsing point — see section 7 for the full I-נ paradigm.
 
 ---
 
