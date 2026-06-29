@@ -25,6 +25,8 @@ chapter: 29
 agenda:
   - title: "Availability of old recordings"
     duration: "5 min"
+  - title: "Class schedule"
+    duration: "5 min"
   - title: "New: Hebrew Root Deck"
     url: "https://bereanbiblebots.com/lessons/hebrew/additional-resources/hebrew-root-deck/"
     duration: "5 min"
@@ -40,6 +42,6 @@ reading:
 lesson:
   name: "BBH 29 - Hophal Weak Verbs"
   url: "/lessons/hebrew/ch29/"
-  duration: "90 min"
+  duration: "85 min"
 
 notes: ""
