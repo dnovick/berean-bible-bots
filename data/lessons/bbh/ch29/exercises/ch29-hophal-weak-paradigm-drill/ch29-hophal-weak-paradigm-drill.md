@@ -1,6 +1,6 @@
 # Ch29 Hophal Weak Paradigm Drill
 
-**Stem:** Hophal | **Roots:** ילד · קום · עמד · נגד · גלה · שׁלח · מצא · נקם
+**Stem:** Hophal | **Roots:** ילד · קום · עמד · נגד · גלה · שׁלח · מצא · קלל
 
 **Instructions:** For each row, the root and PGN are given. Select (HTML) or write (print) the correct Hophal weak form. Options include forms from Qal, Hiphil, Niphal, Piel, and Hophal — and from other Hophal conjugations of the same root. Identify the correct Hophal form for the PGN shown.
 
@@ -171,26 +171,26 @@
 
 ---
 
-## Part H — Geminate (Root: נקם) — Qibbuts prefix; Dagesh forte in R2 (= R3)
+## Part H — Geminate (Root: קלל) — Qibbuts prefix; Dagesh forte in R2 (= R3)
 
 | # | Root | PGN | Ref | Form |
 |---|---|---|---|---|
-| 1 | נקם | Perfect 3ms | — | ________ |
-| 2 | נקם | Imperfect 3ms | Gen 4:15 | ________ |
-| 3 | נקם | Participle ms | — | ________ |
+| 1 | קלל | Perfect 3ms | — | ________ |
+| 2 | קלל | Imperfect 3ms | — | ________ |
+| 3 | קלל | Participle ms | — | ________ |
 
-| 4 | נקם | Perfect 3cp | — | ________ |
-| 5 | נקם | Imperfect 3mp | — | ________ |
-| 6 | נקם | Participle fs | — | ________ |
-| 7 | נקם | Imperative ms | — | ________ |
-| 8 | נקם | Inf. Construct | — | ________ |
-| 9 | נקם | Perfect 3fs | — | ________ |
-| 10 | נקם | Imperfect 3fs / 2ms | — | ________ |
-| 11 | נקם | Imperfect 1cs | — | ________ |
-| 12 | נקם | Imperfect 1cp | — | ________ |
-| 13 | נקם | Perfect 1cs | — | ________ |
-| 14 | נקם | Perfect 1cp | — | ________ |
-| 15 | נקם | Participle mp | — | ________ |
+| 4 | קלל | Perfect 3cp | — | ________ |
+| 5 | קלל | Imperfect 3mp | — | ________ |
+| 6 | קלל | Participle fs | — | ________ |
+| 7 | קלל | Imperative ms | — | ________ |
+| 8 | קלל | Inf. Construct | — | ________ |
+| 9 | קלל | Perfect 3fs | — | ________ |
+| 10 | קלל | Imperfect 3fs / 2ms | — | ________ |
+| 11 | קלל | Imperfect 1cs | — | ________ |
+| 12 | קלל | Imperfect 1cp | — | ________ |
+| 13 | קלל | Perfect 1cs | — | ________ |
+| 14 | קלל | Perfect 1cp | — | ________ |
+| 15 | קלל | Participle mp | — | ________ |
 
 ---
 
@@ -355,23 +355,23 @@
 
 ---
 
-## Answer Key — Part H (Root: נקם, Geminate)
+## Answer Key — Part H (Root: קלל, Geminate)
 
 | # | Root | PGN | Ref | Form | Notes |
 |---|---|---|---|---|---|
-| 1 | נקם | Perfect 3ms | — | הֻקַּם | Qibbuts prefix; Dagesh forte in ק (R2); Patach under ק |
-| 2 | נקם | Imperfect 3ms | Gen 4:15 | יֻקַּם | Qibbuts under יֻ; Dagesh forte in ק; cf. יֻקַּם שִׁבְעָתַיִם |
-| 3 | נקם | Participle ms | — | מֻקָּם | מֻ prefix; Dagesh forte in ק; Qamets under ק |
+| 1 | קלל | Perfect 3ms | — | הֻקַּם | Qibbuts prefix; Dagesh forte in ק (R2); Patach under ק |
+| 2 | קלל | Imperfect 3ms | Gen 4:15 | יֻקַּם | Qibbuts under יֻ; Dagesh forte in ק; cf. יֻקַּם שִׁבְעָתַיִם |
+| 3 | קלל | Participle ms | — | מֻקָּם | מֻ prefix; Dagesh forte in ק; Qamets under ק |
 
-| 4 | נקם | Perfect 3cp | — | הֻקְּמוּ | Qibbuts prefix; Dagesh forte in ק (R2=R3); Shewa under ק; וּ plural |
-| 5 | נקם | Imperfect 3mp | — | יֻקְּמוּ | Qibbuts under יֻ; Dagesh forte in ק (geminate); וּ 3mp |
-| 6 | נקם | Participle fs | — | מֻקֶּמֶת | מֻ prefix; Dagesh forte in ק; Seghol + ת feminine; contrast Biconsonantal מוּקֶמֶת (Shureq) |
-| 7 | נקם | Imperative ms | — | הֻקַּם | **= Perfect 3ms in form** (הֻקַּם); Qibbuts prefix; Dagesh forte in ק — same |
-| 8 | נקם | Inf. Construct | — | הֻקַּם | = Perfect 3ms form; also identical to Imperative ms; Dagesh forte in ק retained |
-| 9 | נקם | Perfect 3fs | — | הֻקְּמָה | Qibbuts prefix; Dagesh forte in ק (geminate contraction); Shewa under ק + ָה fem. ending |
-| 10 | נקם | Imperfect 3fs / 2ms | — | תֻּקַּם | תּ prefix + Qibbuts (תֻּ); Dagesh forte in ק; 3fs and 2ms share this form |
-| 11 | נקם | Imperfect 1cs | — | אֻקַּם | א prefix + Qibbuts (אֻ); Dagesh forte in ק; contrast Biconsonantal אוּקַם (Shureq, no Dagesh) |
-| 12 | נקם | Imperfect 1cp | — | נֻקַּם | נ prefix + Qibbuts (נֻ); Dagesh forte in ק; contrast Biconsonantal נוּקַם (Shureq, no Dagesh) |
-| 13 | נקם | Perfect 1cs | — | הֻקַּמְתִּי | Qibbuts prefix; Dagesh forte in ק; תִּי suffix; contrast Biconsonantal הוּקַמְתִּי (Shureq) |
-| 14 | נקם | Perfect 1cp | — | הֻקַּמְנוּ | Qibbuts prefix; Dagesh forte in ק; נוּ suffix; contrast Biconsonantal הוּקַמְנוּ (Shureq) |
-| 15 | נקם | Participle mp | — | מֻקָּמִים | מֻ prefix (Qibbuts); Dagesh forte in ק; Qamets + ים plural; contrast Biconsonantal מוּקָמִים (Shureq) |
+| 4 | קלל | Perfect 3cp | — | הֻקְּמוּ | Qibbuts prefix; Dagesh forte in ק (R2=R3); Shewa under ק; וּ plural |
+| 5 | קלל | Imperfect 3mp | — | יֻקְּמוּ | Qibbuts under יֻ; Dagesh forte in ק (geminate); וּ 3mp |
+| 6 | קלל | Participle fs | — | מֻקֶּמֶת | מֻ prefix; Dagesh forte in ק; Seghol + ת feminine; contrast Biconsonantal מוּקֶמֶת (Shureq) |
+| 7 | קלל | Imperative ms | — | הֻקַּם | **= Perfect 3ms in form** (הֻקַּם); Qibbuts prefix; Dagesh forte in ק — same |
+| 8 | קלל | Inf. Construct | — | הֻקַּם | = Perfect 3ms form; also identical to Imperative ms; Dagesh forte in ק retained |
+| 9 | קלל | Perfect 3fs | — | הֻקְּמָה | Qibbuts prefix; Dagesh forte in ק (geminate contraction); Shewa under ק + ָה fem. ending |
+| 10 | קלל | Imperfect 3fs / 2ms | — | תֻּקַּם | תּ prefix + Qibbuts (תֻּ); Dagesh forte in ק; 3fs and 2ms share this form |
+| 11 | קלל | Imperfect 1cs | — | אֻקַּם | א prefix + Qibbuts (אֻ); Dagesh forte in ק; contrast Biconsonantal אוּקַם (Shureq, no Dagesh) |
+| 12 | קלל | Imperfect 1cp | — | נֻקַּם | נ prefix + Qibbuts (נֻ); Dagesh forte in ק; contrast Biconsonantal נוּקַם (Shureq, no Dagesh) |
+| 13 | קלל | Perfect 1cs | — | הֻקַּלְתִּי | Qibbuts prefix; Dagesh forte in ק; תִּי suffix; contrast Biconsonantal הוּקַמְתִּי (Shureq) |
+| 14 | קלל | Perfect 1cp | — | הֻקַּלְנוּ | Qibbuts prefix; Dagesh forte in ק; נוּ suffix; contrast Biconsonantal הוּקַמְנוּ (Shureq) |
+| 15 | קלל | Participle mp | — | מֻקָּלִים | מֻ prefix (Qibbuts); Dagesh forte in ק; Qamets + ים plural; contrast Biconsonantal מוּקָמִים (Shureq) |
