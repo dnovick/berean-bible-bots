@@ -466,6 +466,68 @@ def render_instance_page(course: dict[str, Any]) -> str:
     return "\n".join(lines)
 
 
+def render_sessions_index(course: dict[str, Any]) -> str:
+    """Render mkdocs_src/courses/<id>/sessions/index.md — sessions listing page."""
+    cid = course["id"]
+    name = course.get("name", cid)
+    sessions = course.get("sessions", [])
+    session_groups = course.get("session_groups", [])
+
+    lines = [f"# {name} — {cid}", "", "[← Course Overview](../index.md)", ""]
+
+    if not sessions:
+        lines += ["*No sessions recorded yet.*", ""]
+        return "\n".join(lines)
+
+    def _sess_num(s: dict[str, Any]) -> int:
+        try:
+            return int(s.get("number", 0))
+        except (ValueError, TypeError):
+            return 0
+
+    def _sess_row(session: dict[str, Any]) -> str:
+        num = session.get("number", "")
+        date_str = format_date(session.get("date"))
+        focus = session.get("focus", "")
+        recording = (session.get("recording") or "").strip()
+        sess_link = f"[{num} — {focus}]({session_filename(session)})"
+        rec_cell = f"[Watch]({recording})" if recording else ""
+        return f"| {sess_link} | {date_str} | {rec_cell} |"
+
+    _TABLE_HDR = ["| Session | Date | Recording |", "|---|---|---|"]
+
+    lines += ["## Sessions", ""]
+
+    if session_groups:
+        assigned_nums: set[int] = set()
+        for grp in session_groups:
+            frm = int(grp.get("from", 1))
+            to = int(grp.get("to", 9999))
+            grp_heading = grp.get("heading", "Sessions")
+            grp_sessions = [s for s in sessions if frm <= _sess_num(s) <= to]
+            if not grp_sessions:
+                continue
+            assigned_nums.update(_sess_num(s) for s in grp_sessions)
+            lines += [f"### {grp_heading}", ""] + _TABLE_HDR
+            for session in grp_sessions:
+                lines.append(_sess_row(session))
+            lines.append("")
+
+        unassigned = [s for s in sessions if _sess_num(s) not in assigned_nums]
+        if unassigned:
+            lines += ["### Other Sessions", ""] + _TABLE_HDR
+            for session in unassigned:
+                lines.append(_sess_row(session))
+            lines.append("")
+    else:
+        lines += _TABLE_HDR
+        for session in sessions:
+            lines.append(_sess_row(session))
+        lines.append("")
+
+    return "\n".join(lines)
+
+
 def _resolve_file_path(ref: str, scope: str, session_dir: Path, instance_dir: Path) -> Path:
     """Return the filesystem path for a file: reference given its scope.
 
@@ -794,6 +856,9 @@ def _build_nav_block(
             sessions = course.get("sessions", [])
             if sessions:
                 lines.append("      - Sessions:")
+                lines.append(
+                    f"        - Overview: courses/{group}/{cid}/sessions/index.md"
+                )
                 for session in sessions:
                     title = session_title(session).replace("'", "''")
                     fname = session_filename(session)
@@ -887,6 +952,11 @@ def main() -> None:
             cp.write_text(render_instance_page(course))
             print(f"  Wrote {cp.relative_to(_REPO_ROOT)}")
 
+            if course.get("sessions"):
+                si = sessions_out / "index.md"
+                si.write_text(render_sessions_index(course))
+                print(f"  Wrote {si.relative_to(_REPO_ROOT)}")
+
             _copy_instance_resources(instance_dir, course_out)
             for session in course.get("sessions", []):
                 sp = sessions_out / session_filename(session)
@@ -960,7 +1030,8 @@ def main() -> None:
                         for pattern in ("*.html", "*.pdf", "*.md"):
                             for src_file in ex_data_dir.glob(pattern):
                                 shutil.copy2(src_file, ex_site_dir / src_file.name)
-                                print(f"  Copied {(ex_site_dir / src_file.name).relative_to(_REPO_ROOT)}")
+                                rel = (ex_site_dir / src_file.name).relative_to(_REPO_ROOT)
+                                print(f"  Copied {rel}")
 
                         # Generate index.md overview page
                         overview = _render_session_exercise_overview(

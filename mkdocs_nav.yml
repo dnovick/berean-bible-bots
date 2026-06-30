@@ -645,6 +645,7 @@ nav:
     - bbh-2024.1:
       - Overview: courses/bbh/bbh-2024.1/index.md
       - Sessions:
+        - Overview: courses/bbh/bbh-2024.1/sessions/index.md
         - 'Session 100 — Weak Qal Perfective Verbs II': courses/bbh/bbh-2024.1/sessions/session-100.md
         - 'Session 101 — Qal Imperfective Strong Verbs': courses/bbh/bbh-2024.1/sessions/session-101.md
         - 'Session 102 — Review / Q&A': courses/bbh/bbh-2024.1/sessions/session-102.md
@@ -686,6 +687,7 @@ nav:
     - bbh-2026.1:
       - Overview: courses/bbh/bbh-2026.1/index.md
       - Sessions:
+        - Overview: courses/bbh/bbh-2026.1/sessions/index.md
         - 'Session 1 — Introduction': courses/bbh/bbh-2026.1/sessions/session-01.md
         - 'Session 2 — BBH 1 - Hebrew Alphabet': courses/bbh/bbh-2026.1/sessions/session-02.md
         - 'Session 3 — BBH 2 - Hebrew Vowels': courses/bbh/bbh-2026.1/sessions/session-03.md
