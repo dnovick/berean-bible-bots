@@ -23,7 +23,7 @@
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")
 
-date: "2026-08-06"
+date: "2026-08-20"
 focus: "BBH 2 - Hebrew Vowels"
 chapter: 2
 instructor: Preston Brown

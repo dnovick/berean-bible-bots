@@ -1,7 +1,7 @@
 # Session 36 — BBH 29 — Hophal Stem Weak Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Nov 11, 2027  
+**Date:** Nov 25, 2027  
 **Instructor:** Preston Brown  
 
 ## Agenda

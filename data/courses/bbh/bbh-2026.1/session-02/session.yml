@@ -23,7 +23,7 @@
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")
 
-date: "2026-07-23"
+date: "2026-08-06"
 focus: "BBH 1 - Hebrew Alphabet"
 instructor: "Preston Brown"
 

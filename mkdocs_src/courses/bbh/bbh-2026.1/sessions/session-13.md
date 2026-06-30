@@ -1,7 +1,7 @@
 # Session 13 — BBH 10 — Hebrew Construct Chain
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Dec 24, 2026  
+**Date:** Jan 7, 2027  
 **Instructor:** Preston Brown  
 
 ## Agenda

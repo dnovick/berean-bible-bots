@@ -1,7 +1,7 @@
 # Session 40 — BBH 32 — Pual Stem Strong Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Jan 6, 2028  
+**Date:** Jan 20, 2028  
 **Instructor:** Preston Brown  
 
 ## Agenda
