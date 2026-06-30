@@ -1,7 +1,7 @@
 # Session 3 — BBH 2 - Hebrew Vowels
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Aug 6, 2026  
+**Date:** Aug 20, 2026  
 **Instructor:** Preston Brown  
 
 ## Agenda

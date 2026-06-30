@@ -23,7 +23,7 @@
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")
 
-date: "2026-08-20"
+date: "2026-09-03"
 focus: "BBH 3 - Syllabification and Pronunciation"
 chapter: 3
 instructor: Preston Brown

@@ -1,7 +1,7 @@
 # Session 43 — BBH 35 — Hithpael Weak Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Feb 17, 2028  
+**Date:** Mar 2, 2028  
 **Instructor:** Preston Brown  
 
 ## Agenda

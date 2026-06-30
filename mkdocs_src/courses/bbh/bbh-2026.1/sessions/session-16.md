@@ -1,7 +1,7 @@
 # Session 16 — BBH 12 — Introduction to Hebrew Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Feb 4, 2027  
+**Date:** Feb 18, 2027  
 **Instructor:** Preston Brown  
 
 ## Agenda

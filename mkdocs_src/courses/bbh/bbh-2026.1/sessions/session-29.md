@@ -1,7 +1,7 @@
 # Session 29 — BBH 23 — Sentence Syntax
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Aug 5, 2027  
+**Date:** Aug 19, 2027  
 **Instructor:** Preston Brown  
 
 ## Agenda

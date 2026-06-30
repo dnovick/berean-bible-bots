@@ -23,7 +23,7 @@
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")
 
-date: "2026-09-03"
+date: "2026-09-17"
 focus: "Review — BBH Ch1–3"
 instructor: "Preston Brown"
 

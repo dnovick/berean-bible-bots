@@ -23,7 +23,7 @@
 #   - name: display label for the link (required)
 #     file: filename in this session directory (e.g. "handout.pdf")
 
-date: "2026-07-09"
+date: "2026-07-23"
 focus: "Introduction"
 instructor: "David Novick"
 

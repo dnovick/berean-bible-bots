@@ -1,7 +1,7 @@
 # Session 28 — BBH 22 — Qal Participle
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Jul 22, 2027  
+**Date:** Aug 5, 2027  
 **Instructor:** Preston Brown  
 
 ## Agenda

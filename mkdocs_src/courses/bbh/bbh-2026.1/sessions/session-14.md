@@ -1,7 +1,7 @@
 # Session 14 — BBH 11 — Hebrew Numbers
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Jan 7, 2027  
+**Date:** Jan 21, 2027  
 **Instructor:** Preston Brown  
 
 ## Agenda

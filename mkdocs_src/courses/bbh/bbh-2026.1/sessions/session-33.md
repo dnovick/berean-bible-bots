@@ -1,7 +1,7 @@
 # Session 33 — BBH 26 — Hiphil Stem Strong Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Sep 30, 2027  
+**Date:** Oct 14, 2027  
 **Instructor:** Preston Brown  
 
 ## Agenda

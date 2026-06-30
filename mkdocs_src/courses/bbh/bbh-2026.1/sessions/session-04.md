@@ -1,7 +1,7 @@
 # Session 4 — BBH 3 - Syllabification and Pronunciation
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Aug 20, 2026  
+**Date:** Sep 3, 2026  
 **Instructor:** Preston Brown  
 
 ## Agenda

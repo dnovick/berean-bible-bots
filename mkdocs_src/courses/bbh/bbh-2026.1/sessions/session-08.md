@@ -1,7 +1,7 @@
 # Session 8 — BBH 6 — Hebrew Prepositions
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Oct 15, 2026  
+**Date:** Oct 29, 2026  
 **Instructor:** Preston Brown  
 
 ## Agenda

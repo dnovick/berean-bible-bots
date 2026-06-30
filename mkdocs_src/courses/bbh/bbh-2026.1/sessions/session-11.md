@@ -1,7 +1,7 @@
 # Session 11 — BBH 8 — Hebrew Pronouns
 
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
-**Date:** Nov 26, 2026  
+**Date:** Dec 10, 2026  
 **Instructor:** Preston Brown  
 
 ## Agenda
