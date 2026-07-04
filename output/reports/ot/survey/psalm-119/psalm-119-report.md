@@ -27,7 +27,7 @@ recurring emotional themes.
 
 1. **Torah** (*תּוֹרָה*) is the most frequent Word term, appearing in
    25 of the psalm's 176 verses —
-   nearly every other verse on average.
+   roughly once every 7 verses on average.
 2. **58 verses** (out of 176) contain at least one petition to God.
    The most repeated single verb is *ḥayyenî* ("revive / preserve me alive") — 9 times —
    revealing the psalmist's deepest felt need as spiritual life from God.

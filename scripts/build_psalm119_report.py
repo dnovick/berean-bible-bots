@@ -14,6 +14,7 @@ from typing import Any, Dict, List, Optional
 import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
+from bidi.algorithm import get_display
 import numpy as np
 import pandas as pd
 
@@ -406,7 +407,8 @@ def save_chart(fig: Any, name: str) -> None:
 
 # Chart 1: Word term frequencies (horizontal bar)
 def chart_term_frequencies() -> None:
-    labels = freq_df['Term'] + '\n(' + freq_df['Hebrew'] + ')'
+    labels = [get_display(t + '\n(' + h + ')')
+              for t, h in zip(freq_df['Term'], freq_df['Hebrew'])]
     vals = freq_df['Verses'].tolist()
     fig, ax = plt.subplots(figsize=(9, 5))
     bars = ax.barh(labels[::-1], vals[::-1],
@@ -449,7 +451,7 @@ def chart_heatmap() -> None:
     )
     ax.set_yticks(range(n_terms))
     ax.set_yticklabels(
-        [f'{t[3]} ({t[2]})' for t in WORD_TERMS], fontsize=9
+        [get_display(f'{t[3]} ({t[2]})') for t in WORD_TERMS], fontsize=9
     )
     ax.set_title('Psalm 119 — Word Vocabulary by Stanza', fontsize=12, fontweight='bold')
     fig.colorbar(im, ax=ax, fraction=0.02, pad=0.02, label='Occurrences')
@@ -515,7 +517,7 @@ def chart_verb_torah_matrix() -> None:
     ax.set_xticklabels(TORAH_TERM_ORDER, fontsize=9)
     ax.set_yticks(range(n_verbs))
     ax.set_yticklabels(
-        [f'{KEY_VERB_LABELS[s][0]} ({KEY_VERB_LABELS[s][1]})' for s in strongs_order],
+        [get_display(f'{KEY_VERB_LABELS[s][1]} ({KEY_VERB_LABELS[s][0]})') for s in strongs_order],
         fontsize=9
     )
     ax.set_title('Psalm 119 — Non-Petition Verb × Torah-Term Object Matrix',
@@ -732,6 +734,8 @@ def shamar_object_list() -> str:
 n_petition_vv = len(set(petition_verses))
 most_common_term = freq_df.iloc[0]['Term']
 most_common_count = freq_df.iloc[0]['Verses']
+_torah_count = int(freq_df[freq_df['Term'] == 'Torah']['Verses'].iloc[0])
+_torah_interval = round(176 / _torah_count)
 
 # ── Build report ───────────────────────────────────────────────────────────────
 
@@ -764,8 +768,8 @@ recurring emotional themes.
 ## Key Observations
 
 1. **Torah** (*{WORD_TERMS[0][2]}*) is the most frequent Word term, appearing in
-   {freq_df[freq_df['Term'] == 'Torah']['Verses'].iloc[0]} of the psalm's 176 verses —
-   nearly every other verse on average.
+   {_torah_count} of the psalm's 176 verses —
+   roughly once every {_torah_interval} verses on average.
 2. **{n_petition_vv} verses** (out of 176) contain at least one petition to God.
    The most repeated single verb is *ḥayyenî* ("revive / preserve me alive") — 9 times —
    revealing the psalmist's deepest felt need as spiritual life from God.
