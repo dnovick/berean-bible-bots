@@ -22,7 +22,10 @@ date: "2026-07-13"
 focus: "Piel Strong Verbs"
 instructor: "David Novick"
 chapter: 30
+recording:
 agenda:
+  - title: "Piel Verbs - Introduction"
+    duration: "5 min"
 
 reading:
   - name: "Psalm 119:9-16"
@@ -34,6 +37,11 @@ reading:
 
 lesson:
   name: "BBH 30 - Piel Strong Verbs"
+  duration: "85 min"
   url: "/lessons/hebrew/ch30/"
+
+sections:
+  - heading: "Piel Verbs - Introduction"
+    file: "piel-intro.md"
 
 notes: ""
