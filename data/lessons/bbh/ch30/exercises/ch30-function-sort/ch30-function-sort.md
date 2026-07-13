@@ -28,29 +28,29 @@ Write your answer (I / F / D / DN / SA) in the blank column.
 
 | # | Hebrew Form | Conjugation | Root | Reference | Contextual Gloss | Function |
 |---|---|---|---|---|---|---|
-| 1 | יְבָרֶךְ | Wayyiqtol 3ms | בָּרַךְ | Gen 1:22 | "God blessed them" | |
-| 2 | יְקַדֵּשׁ | Wayyiqtol 3ms | קָדַשׁ | Gen 2:3 | "he set it apart as holy" | |
-| 3 | יְכַל | Wayyiqtol 3ms | כָּלָה | Gen 2:2 | "he finished/completed all his work" | |
+| 1 | וַיְבָרֶךְ | Wayyiqtol 3ms | בָּרַךְ | Gen 1:22 | "God blessed them" | |
+| 2 | וַיְקַדֵּשׁ | Wayyiqtol 3ms | קָדַשׁ | Gen 2:3 | "he set it apart as holy" | |
+| 3 | וַיְכַל | Wayyiqtol 3ms | כָּלָה | Gen 2:2 | "he finished/completed all his work" | |
 | 4 | שַׁחֵת | Inf. Construct | שָׁחַת | Gen 6:17 | "to destroy all flesh" | |
-| 5 | יְצַו | Wayyiqtol 3ms | צָוָה | Gen 2:16 | "the LORD God commanded the man" | |
-| 6 | יְגָרֶשׁ | Wayyiqtol 3ms | גָּרַשׁ | Gen 3:24 | "he drove out the man" | |
+| 5 | וַיְצַו | Wayyiqtol 3ms | צָוָה | Gen 2:16 | "the LORD God commanded the man" | |
+| 6 | וַיְגָרֶשׁ | Wayyiqtol 3ms | גָּרַשׁ | Gen 3:24 | "he drove out the man" | |
 | 7 | חַיּוֹת | Inf. Construct | חָיָה | Gen 7:3 | "to keep offspring alive on the earth" | |
-| 8 | יְשַׁלַּח | Wayyiqtol 3ms | שָׁלַח | Gen 8:7 | "he sent out a raven" | |
-| 9 | יְכַסּוּ | Wayyiqtol 3mp | כָּסָה | Gen 9:23 | "they covered their father's nakedness" | |
-| 10 | יְדַבֵּר | Wayyiqtol 3ms | דָּבַר | Gen 8:15 | "God spoke to Noah" | |
-| 11 | יְשָׁרֶת | Wayyiqtol 3ms | שָׁרַת | Gen 39:4 | "he served him / ministered to him" | |
+| 8 | וַיְשַׁלַּח | Wayyiqtol 3ms | שָׁלַח | Gen 8:7 | "he sent out a raven" | |
+| 9 | וַיְכַסּוּ | Wayyiqtol 3mp | כָּסָה | Gen 9:23 | "they covered their father's nakedness" | |
+| 10 | וַיְדַבֵּר | Wayyiqtol 3ms | דָּבַר | Gen 8:15 | "God spoke to Noah" | |
+| 11 | וַיְשָׁרֶת | Wayyiqtol 3ms | שָׁרַת | Gen 39:4 | "he served him / ministered to him" | |
 | 12 | אֲגַדְּלָה | Yiqtol 1cs | גָּדַל | Gen 12:2 | "I will make your name great" | |
 | 13 | מְקַלֵּל | Participle ms | קָלַל | Gen 12:3 | "the one who curses/treats you lightly" | |
-| 14 | יְנַגַּע | Wayyiqtol 3ms | נָגַע | Gen 12:17 | "the LORD afflicted Pharaoh with plagues" | |
+| 14 | וַיְנַגַּע | Wayyiqtol 3ms | נָגַע | Gen 12:17 | "the LORD afflicted Pharaoh with plagues" | |
 | 15 | וְקִדַּשְׁתָּ | Weqatal 2ms | קָדַשׁ | Exo 19:10 | "you shall consecrate them today and tomorrow" | |
 | 16 | וְכִבְּסוּ | Weqatal 3cp | כָּבַס | Exo 19:10 | "and they shall wash their garments" | |
-| 17 | יְהַלֲלוּ | Wayyiqtol 3mp | הָלַל | Gen 12:15 | "Pharaoh's officials praised her" | |
-| 18 | יְבַקֵּשׁ | Wayyiqtol 3ms | בָּקַשׁ | Gen 37:15 | "the man asked him, saying, 'What are you seeking?'" | |
+| 17 | וַיְהַלֲלוּ | Wayyiqtol 3mp | הָלַל | Gen 12:15 | "Pharaoh's officials praised her" | |
+| 18 | תְּבַקֵּשׁ | Yiqtol 2ms | בָּקַשׁ | Gen 37:15 | "What are you seeking?" | |
 | 19 | לְנַחֵם | Inf. Construct | נָחַם | Gen 37:35 | "but he refused to be comforted" | |
 | 20 | צִוָּה | Perfect 3ms | צָוָה | Gen 6:22 | "God had commanded him" | |
 | 21 | לְכַפֵּר | Inf. Construct | כָּפַר | Lev 4:20 | "to make atonement for them" | |
-| 22 | יְחַלֵּל | Wayyiqtol 3ms | חָלַל | Lev 21:12 | "he shall not profane the sanctuary of his God" | |
-| 23 | בִּקֵּשׁ | Perfect 3ms | בָּקַשׁ | Gen 43:30 | "he sought a place to weep" | |
+| 22 | וַיְחַלֵּל | Wayyiqtol 3ms | חָלַל | Lev 21:12 | "he shall not profane the sanctuary of his God" | |
+| 23 | וַיְבַקֵּשׁ | Wayyiqtol 3ms | בָּקַשׁ | Gen 43:30 | "he sought a place to weep" | |
 | 24 | יְנַחֵם | Yiqtol 3ms | נָחַם | Gen 5:29 | "this one will comfort us" | |
 | 25 | לְהַלֵּל | Inf. Construct | הָלַל | Psa 113:1 | "praise the name of the LORD" | |
 
@@ -89,7 +89,7 @@ Write your answer (I / F / D / DN / SA) in the blank column.
 | 15 | קָדַשׁ | to be holy | **F** | Same as #2; Piel causes the people to be in a state of ritual consecration |
 | 16 | כָּבַס | to wash (garments) | **I** | Qal = wash; Piel = wash thoroughly; the Piel form is the standard for laundering ritual garments |
 | 17 | הָלַל | to shine, praise | **SA** | Praising is the Piel's primary meaning; Qal "shine/be bright" is rare and unrelated in usage |
-| 18 | בָּקַשׁ | to seek | **I** | Qal = seek; Piel = seek diligently/earnestly; intensified searching |
+| 18 | בָּקַשׁ | to seek | **I** | Qal = seek; Piel Yiqtol 2ms = seek diligently/earnestly; intensified searching |
 | 19 | נָחַם | to be comforted, sorry | **I/SA** | Qal = be comforted; Piel = actively comfort/console someone; some analyze as Simple Action because the Piel meaning is standard for the comfort function |
 | 20 | צָוָה | (no common Qal) | **SA** | Same root as #5; commanding is always the Piel's function |
 | 21 | כָּפַר | to wipe, cover | **DN** | Derived from noun כֹּפֶר ("ransom, cover, pitch"); the Piel performs the act of covering/ransoming = make atonement |
