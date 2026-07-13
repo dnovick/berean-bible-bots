@@ -1,8 +1,8 @@
 # Piel Verbs - Introduction
 
-## Logos searches
+## Logos morph search
 
-- morph.h:V
+- morph.h:V[bCxRyN]
 
 ## Statistics
 
