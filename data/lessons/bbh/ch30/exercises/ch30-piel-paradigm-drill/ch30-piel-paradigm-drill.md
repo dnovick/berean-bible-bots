@@ -39,7 +39,41 @@
 
 ---
 
-## Part C — Imperative (4 forms)
+## Part C — Wayyiqtol (10 forms)
+
+| # | PGN | Form |
+|---|---|---|
+| 1 | 3ms | ________ |
+| 2 | 3fs | ________ |
+| 3 | 2ms | ________ |
+| 4 | 2fs | ________ |
+| 5 | 1cs | ________ |
+| 6 | 3mp | ________ |
+| 7 | 3fp | ________ |
+| 8 | 2mp | ________ |
+| 9 | 2fp | ________ |
+| 10 | 1cp | ________ |
+
+---
+
+## Part D — Weqatal (10 forms)
+
+| # | PGN | Form |
+|---|---|---|
+| 1 | 3ms | ________ |
+| 2 | 3fs | ________ |
+| 3 | 2ms | ________ |
+| 4 | 2fs | ________ |
+| 5 | 1cs | ________ |
+| 6 | 3mp | ________ |
+| 7 | 3fp | ________ |
+| 8 | 2mp | ________ |
+| 9 | 2fp | ________ |
+| 10 | 1cp | ________ |
+
+---
+
+## Part E — Imperative (4 forms)
 
 | # | PGN | Form |
 |---|---|---|
@@ -50,7 +84,7 @@
 
 ---
 
-## Part D — Infinitive Construct (2 forms)
+## Part F — Infinitive Construct (2 forms)
 
 | # | Description | Form |
 |---|---|---|
@@ -59,7 +93,7 @@
 
 ---
 
-## Part E — Infinitive Absolute (1 form)
+## Part G — Infinitive Absolute (1 form)
 
 | # | Description | Form |
 |---|---|---|
@@ -67,7 +101,7 @@
 
 ---
 
-## Part F — Participle (4 forms)
+## Part H — Participle (4 forms)
 
 | # | PGN | Form |
 |---|---|---|
@@ -111,7 +145,41 @@
 
 ---
 
-## Answer Key — Part C (Imperative)
+## Answer Key — Part C (Wayyiqtol)
+
+| # | PGN | Form |
+|---|---|---|
+| 1 | 3ms | וַיְדַבֵּר |
+| 2 | 3fs | וַתְּדַבֵּר |
+| 3 | 2ms | וַתְּדַבֵּר |
+| 4 | 2fs | וַתְּדַבְּרִי |
+| 5 | 1cs | וָאֲדַבֵּר |
+| 6 | 3mp | וַיְדַבְּרוּ |
+| 7 | 3fp | וַתְּדַבֵּרְנָה |
+| 8 | 2mp | וַתְּדַבְּרוּ |
+| 9 | 2fp | וַתְּדַבֵּרְנָה |
+| 10 | 1cp | וַנְּדַבֵּר |
+
+---
+
+## Answer Key — Part D (Weqatal)
+
+| # | PGN | Form |
+|---|---|---|
+| 1 | 3ms | וְדִבֵּר |
+| 2 | 3fs | וְדִבְּרָה |
+| 3 | 2ms | וְדִבַּרְתָּ |
+| 4 | 2fs | וְדִבַּרְתְּ |
+| 5 | 1cs | וְדִבַּרְתִּי |
+| 6 | 3mp | וְדִבְּרוּ |
+| 7 | 3fp | וְדִבֵּרְנָה |
+| 8 | 2mp | וְדִבַּרְתֶּם |
+| 9 | 2fp | וְדִבַּרְתֶּן |
+| 10 | 1cp | וְדִבַּרְנוּ |
+
+---
+
+## Answer Key — Part E (Imperative)
 
 | # | PGN | Form |
 |---|---|---|
@@ -122,7 +190,7 @@
 
 ---
 
-## Answer Key — Part D (Infinitive Construct)
+## Answer Key — Part F (Infinitive Construct)
 
 | # | Description | Form |
 |---|---|---|
@@ -131,7 +199,7 @@
 
 ---
 
-## Answer Key — Part E (Infinitive Absolute)
+## Answer Key — Part G (Infinitive Absolute)
 
 | # | Description | Form |
 |---|---|---|
@@ -139,7 +207,7 @@
 
 ---
 
-## Answer Key — Part F (Participle)
+## Answer Key — Part H (Participle)
 
 | # | PGN | Form |
 |---|---|---|

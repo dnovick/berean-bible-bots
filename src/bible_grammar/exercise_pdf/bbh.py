@@ -8752,27 +8752,45 @@ class Ch30PielParadigmDrill(ExercisePDF):
             ['16','3fp','תְּדַבֵּרְנָה'],['17','2mp','תְּדַבְּרוּ'],['18','2fp','תְּדַבֵּרְנָה'],
             ['19','1cp','נְדַבֵּר'],
         ]
-        rows_imper = [['%d'%(i+19),p,''] for i,p in enumerate(['2ms','2fs','2mp','2fp'],1)]
+        rows_wcons = [['%d'%(i+19),p,''] for i,p in enumerate(
+            ['3ms','3fs','2ms','2fs','1cs','3mp','3fp','2mp','2fp','1cp'],1)]
+        ans_wcons = [
+            ['20','3ms','וַיְדַבֵּר'],['21','3fs','וַתְּדַבֵּר'],['22','2ms','וַתְּדַבֵּר'],
+            ['23','2fs','וַתְּדַבְּרִי'],['24','1cs','וָאֲדַבֵּר'],['25','3mp','וַיְדַבְּרוּ'],
+            ['26','3fp','וַתְּדַבֵּרְנָה'],['27','2mp','וַתְּדַבְּרוּ'],
+            ['28','2fp','וַתְּדַבֵּרְנָה'],['29','1cp','וַנְּדַבֵּר'],
+        ]
+        rows_weq = [['%d'%(i+29),p,''] for i,p in enumerate(
+            ['3ms','3fs','2ms','2fs','1cs','3mp','3fp','2mp','2fp','1cp'],1)]
+        ans_weq = [
+            ['30','3ms','וְדִבֵּר'],['31','3fs','וְדִבְּרָה'],['32','2ms','וְדִבַּרְתָּ'],
+            ['33','2fs','וְדִבַּרְתְּ'],['34','1cs','וְדִבַּרְתִּי'],['35','3mp','וְדִבְּרוּ'],
+            ['36','3fp','וְדִבֵּרְנָה'],['37','2mp','וְדִבַּרְתֶּם'],
+            ['38','2fp','וְדִבַּרְתֶּן'],['39','1cp','וְדִבַּרְנוּ'],
+        ]
+        rows_imper = [['%d'%(i+39),p,''] for i,p in enumerate(['2ms','2fs','2mp','2fp'],1)]
         ans_imper  = [
-            ['20','2ms','דַּבֵּר'],['21','2fs','דַּבְּרִי'],
-            ['22','2mp','דַּבְּרוּ'],['23','2fp','דַּבֵּרְנָה'],
+            ['40','2ms','דַּבֵּר'],['41','2fs','דַּבְּרִי'],
+            ['42','2mp','דַּבְּרוּ'],['43','2fp','דַּבֵּרְנָה'],
         ]
         hdrs_misc = ['#', 'Form', 'Piel (דבר)']
         rows_misc = [
-            ['24','Inf. Construct (bare)',''], ['25','Inf. Construct +לְ',''],
-            ['26','Inf. Absolute',''],
-            ['27','Participle ms',''], ['28','Participle fs',''],
-            ['29','Participle mp',''], ['30','Participle fp',''],
+            ['44','Inf. Construct (bare)',''], ['45','Inf. Construct +לְ',''],
+            ['46','Inf. Absolute',''],
+            ['47','Participle ms',''], ['48','Participle fs',''],
+            ['49','Participle mp',''], ['50','Participle fp',''],
         ]
         ans_misc  = [
-            ['24','Inf. Construct (bare)','דַּבֵּר'], ['25','Inf. Construct +לְ','לְדַבֵּר'],
-            ['26','Inf. Absolute','דַּבֵּר'],
-            ['27','Participle ms','מְדַבֵּר'], ['28','Participle fs','מְדַבֶּרֶת'],
-            ['29','Participle mp','מְדַבְּרִים'], ['30','Participle fp','מְדַבְּרוֹת'],
+            ['44','Inf. Construct (bare)','דַּבֵּר'], ['45','Inf. Construct +לְ','לְדַבֵּר'],
+            ['46','Inf. Absolute','דַּבֵּר'],
+            ['47','Participle ms','מְדַבֵּר'], ['48','Participle fs','מְדַבֶּרֶת'],
+            ['49','Participle mp','מְדַבְּרִים'], ['50','Participle fp','מְדַבְּרוֹת'],
         ]
         for title_q, rows_q, ans_q in [
             ('Piel Perfect', rows_pf, ans_pf),
             ('Piel Imperfect', rows_imp, ans_imp),
+            ('Piel Wayyiqtol', rows_wcons, ans_wcons),
+            ('Piel Weqatal', rows_weq, ans_weq),
             ('Piel Imperative', rows_imper, ans_imper),
         ]:
             self.add_drill_with_answer_key(hdrs, rows_q, ans_q, col_ratios=cr,
