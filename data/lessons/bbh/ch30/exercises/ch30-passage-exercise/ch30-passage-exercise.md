@@ -142,16 +142,16 @@ For each bolded verb, indicate:
 
 | # | Verb | Piel? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 1 | וַיְבָרֶךְ | Yes | Wayyiqtol | 3ms | ברך | Piel — Intensive |
-| 2 | וַיְבָרֶךְ | Yes | Wayyiqtol | 3ms | ברך | Piel — Intensive |
+| 1 | וַיְבָרֶךְ | Yes | Wayyiqtol | 3ms | ברך | Piel — Simple Action |
+| 2 | וַיְבָרֶךְ | Yes | Wayyiqtol | 3ms | ברך | Piel — Simple Action |
 | 3 | וְקִדַּשְׁתָּ | Yes | Weqatal | 2ms | קדש | Piel — Factitive |
 | 4 | וְכִבְּסוּ | Yes | Weqatal | 3cp | כבס | Piel — Intensive |
 | 5 | וַיְקַדֵּשׁ | Yes | Wayyiqtol | 3ms | קדש | Piel — Factitive |
 | 6 | וַיְכַבְּסוּ | Yes | Wayyiqtol | 3mp | כבס | Piel — Intensive |
 | 7 | וַיְדַבֵּר | Yes | Wayyiqtol | 3ms | דבר | Piel — Denominative |
 | 8 | יִסָּקֵל | No | Imperfect | 3ms | סקל | Niphal — Passive |
-| 9 | אָרָה | No | Jussive | 1cs | ארר | Qal |
-| 10 | תְּבָרֵךְ | Yes | Imperfect | 2ms | ברך | Piel — Intensive |
+| 9 | אָרָה | No | Imperative | 2ms | ארה | Qal |
+| 10 | תְּבָרֵךְ | Yes | Imperfect | 2ms | ברך | Piel — Simple Action |
 | 11 | יוּאָר | No | Imperfect | 3ms | ארר | Hophal — Passive |
 | 12 | יְדַבֵּר | Yes | Imperfect | 3ms | דבר | Piel — Denominative |
 | 13 | וְדִבַּרְתִּי | Yes | Weqatal | 1cs | דבר | Piel — Denominative |
@@ -161,7 +161,8 @@ For each bolded verb, indicate:
 
 > **Notes on distractors:**
 > - **#8 יִסָּקֵל** is a Niphal imperfect (passive: "shall be stoned"). The נִ- prefix contracts with the preformative: יִ + dagesh.
-> - **#9 אָרָה** and **#16 קָבָה** are Qal forms — no Dagesh Forte in R2.
+> - **#9 אָרָה** is Qal Imperative 2ms of ארה ("to curse") — Balak is commanding Balaam (2ms imperative), not expressing a 1cs wish. Root is ארה, distinct from ארר.
+> - **#16 קָבָה** is a Qal form — no Dagesh Forte in R2.
 > - **#11 יוּאָר** is Hophal imperfect of ארר: the יוּ prefix (u-class vowel) is the Hophal marker.
 > - **מְבֹרָךְ** in Passage C text is Pual (Ch32) and is deliberately left unnumbered.
 > - **#14 כַבֵּד** is a Piel Inf. Absolute in the cognate construction כַּבֵּד אֲכַבֶּדְךָ ("I will surely honor you greatly").
