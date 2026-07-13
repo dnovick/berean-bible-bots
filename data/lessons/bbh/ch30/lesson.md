@@ -41,7 +41,7 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 | [Perfect (Qatal)](piel-paradigms.md#perfect-qatal) | דִּבֵּר | 30.3 | Hireq under R1 + Dagesh in R2 + Tsere under R2 |
 | [Imperfect (Yiqtol)](piel-paradigms.md#imperfect-yiqtol) | יְדַבֵּר | 30.4 | Shewa under prefix; Patach under R1; Dagesh in R2 |
 | [Wayyiqtol](piel-paradigms.md#wayyiqtol) | וַיְדַבֵּר | — | וַיְ prefix (contrast Qal וַיִּ, Hiphil וַיַּ) |
-| [Weqatal](piel-paradigms.md#weqatal) | וְדִבֶּר | — | וְ + Perfect form |
+| [Weqatal](piel-paradigms.md#weqatal) | וְדִבֵּר | — | וְ + Perfect form |
 | [Imperative](piel-paradigms.md#imperative) | דַּבֵּר | 30.5 | Identical form to Inf. Construct |
 | [Inf. Construct](piel-paradigms.md#infinitive-construct) | דַּבֵּר | 30.6 | Identical form to Imperative 2ms |
 | [Inf. Absolute](piel-paradigms.md#infinitive-absolute) | דַּבֵּר | 30.7 | |
