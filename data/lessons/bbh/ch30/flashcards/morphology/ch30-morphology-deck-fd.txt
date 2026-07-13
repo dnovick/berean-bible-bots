@@ -5,6 +5,9 @@
 דַּבֵּר (Gen 24:33)	Root: דָּבַר | Piel | Imperative 2ms | speak! — patach+dagesh+tsere; identical to Inf. Construct	BBH Chapter 30 — Piel Strong
 דַּבֵּר (Gen 17:22)	Root: דָּבַר | Piel | Infinitive Construct | to speak / when he finished speaking — prepositions distinguish from Imperative	BBH Chapter 30 — Piel Strong
 מְדַבֵּר (Gen 27:6)	Root: דָּבַר | Piel | Participle ms | speaking — מְ prefix marks Piel ptc.	BBH Chapter 30 — Piel Strong
+וְדִבֵּר	Root: דָּבַר | Piel | Weqatal 3ms | and he will speak / then he spoke — וְ + Piel Perfect; sequential action	BBH Chapter 30 — Piel Strong
+וְדִבַּרְתָּ	Root: דָּבַר | Piel | Weqatal 2ms | and you will speak / then you spoke — 2ms suffix תָּ	BBH Chapter 30 — Piel Strong
+וְדִבַּרְתִּי	Root: דָּבַר | Piel | Weqatal 1cs | and I will speak / then I spoke — 1cs suffix תִּי	BBH Chapter 30 — Piel Strong
 קִדֵּשׁ (Exo 29:27)	Root: קָדַשׁ | Piel | Perfect 3ms | he consecrated — factitive: made holy	BBH Chapter 30 — Piel Strong
 קִדַּשְׁתָּ (Exo 19:10)	Root: קָדַשׁ | Piel | Perfect 2ms | you consecrated	BBH Chapter 30 — Piel Strong
 יְקַדֵּשׁ (Exo 29:44)	Root: קָדַשׁ | Piel | Imperfect 3ms | he will consecrate	BBH Chapter 30 — Piel Strong
@@ -12,13 +15,22 @@
 וַיְקַדֵּשׁ (Gen 2:3)	Root: קָדַשׁ | Piel | Wayyiqtol 3ms | and he set apart as holy — Gen 2:3	BBH Chapter 30 — Piel Strong
 קַדֵּשׁ (Exo 13:2)	Root: קָדַשׁ | Piel | Imperative 2ms | consecrate! — God's command to Moses	BBH Chapter 30 — Piel Strong
 מְקַדֵּשׁ (Exo 31:13)	Root: קָדַשׁ | Piel | Participle ms | [the LORD] who consecrates — predicate	BBH Chapter 30 — Piel Strong
+וְקִדֵּשׁ	Root: קָדַשׁ | Piel | Weqatal 3ms | and he will consecrate / then he consecrated — וְ + Piel Perfect	BBH Chapter 30 — Piel Strong
+וְקִדַּשְׁתָּ	Root: קָדַשׁ | Piel | Weqatal 2ms | and you will consecrate / then you consecrated	BBH Chapter 30 — Piel Strong
+וְקִדַּשְׁתִּי	Root: קָדַשׁ | Piel | Weqatal 1cs | and I will consecrate / then I consecrated	BBH Chapter 30 — Piel Strong
 בֵּרַךְ (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 3ms | he blessed — intensive; R2=ר rejects dagesh; Tsere compensates	BBH Chapter 30 — Piel Strong
 בֵּרַכְתִּי (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 1cs | I will bless — God's promise to Sarah	BBH Chapter 30 — Piel Strong
 יְבָרֵךְ (Num 22:6)	Root: בָּרַךְ | Piel | Imperfect 3ms | he will bless — R2=ר rejects dagesh	BBH Chapter 30 — Piel Strong
 וַיְבָרֶךְ (Gen 1:22)	Root: בָּרַךְ | Piel | Wayyiqtol 3ms | and he blessed — first occurrence in OT; ר cannot take dagesh	BBH Chapter 30 — Piel Strong
 בָּרֵךְ (Gen 22:17)	Root: בָּרַךְ | Piel | Infinitive Absolute | blessing — cognate: בָּרֵךְ אֲבָרֶכְךָ	BBH Chapter 30 — Piel Strong
+וּבֵרַךְ	Root: בָּרַךְ | Piel | Weqatal 3ms | and he will bless / then he blessed — וּ (shureq) before ב; ר rejects dagesh	BBH Chapter 30 — Piel Strong
+וּבֵרַכְתָּ	Root: בָּרַךְ | Piel | Weqatal 2ms | and you will bless / then you blessed — וּ before ב	BBH Chapter 30 — Piel Strong
+וּבֵרַכְתִּי	Root: בָּרַךְ | Piel | Weqatal 1cs | and I will bless / then I blessed — וּ before ב	BBH Chapter 30 — Piel Strong
 צִוָּה (Gen 3:11)	Root: צָוָה | Piel | Perfect 3ms | he commanded — simple action; 485× in OT	BBH Chapter 30 — Piel Strong
 צִוִּיתִי (Gen 3:11)	Root: צָוָה | Piel | Perfect 1cs | I commanded — God speaking	BBH Chapter 30 — Piel Strong
 יְצַוֶּה	Root: צָוָה | Piel | Imperfect 3ms | he will command	BBH Chapter 30 — Piel Strong
 וַיְצַו (Gen 2:16)	Root: צָוָה | Piel | Wayyiqtol 3ms | and he commanded — apocopated III-ה Wayyiqtol	BBH Chapter 30 — Piel Strong
 צַו	Root: צָוָה | Piel | Imperative 2ms | command!	BBH Chapter 30 — Piel Strong
+וְצִוָּה	Root: צָוָה | Piel | Weqatal 3ms | and he will command / then he commanded — וְ + Piel Perfect (III-ה root)	BBH Chapter 30 — Piel Strong
+וְצִוִּיתָ	Root: צָוָה | Piel | Weqatal 2ms | and you will command / then you commanded	BBH Chapter 30 — Piel Strong
+וְצִוִּיתִי	Root: צָוָה | Piel | Weqatal 1cs | and I will command / then I commanded	BBH Chapter 30 — Piel Strong
