@@ -55,8 +55,10 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 
 | Conjugation | Form | Reference | Morph | Gloss |
 |---|---|---|---|---|
+| Perfect 3ms | דִּבֵּר | Gen 21:1 | Vpq3ms | he spoke |
 | Perfect 2ms | דִּבַּרְתָּ | Exo 4:15 | Vpq2ms | you spoke |
 | Wayyiqtol 3ms | וַיְדַבֵּר | Gen 8:15 | Vpw3ms | and he spoke |
+| Weqatal 2ms | וְדִבַּרְתָּ | Deut 6:7 | Vpq2ms | and you shall speak |
 | Imperfect 2ms | תְּדַבֵּר | Gen 31:24 | Vpi2ms | you shall speak |
 | Imperative 2ms | דַּבֵּר | Gen 24:33 | Vpv2ms | speak! |
 | Inf. Construct | דַּבֵּר | Gen 17:22 | Vpc | to speak |
@@ -64,6 +66,8 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 | Participle ms | מְדַבֵּר | Gen 27:6 | Vprmsa | speaking |
 
 > **Denominative note:** דִּבֵּר is the paradigm Piel denominative — the verb "to speak" is formed from the noun דָּבָר ("word"). The root rarely appears in the Qal (only a few archaic forms). Nearly all 1,090 OT occurrences are Piel.
+
+> **Note:** A Piel passive participle (מְדֻבָּר — "spoken") exists but functions as the Pual participle and will be studied in Ch32 (Pual).
 
 ---
 
