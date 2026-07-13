@@ -3,6 +3,8 @@
 *Piel paradigm root: דִּבֵּר (to speak) — strong triliteral, denominative*
 *With Qal reference column for comparison*
 
+← [Back to Ch30 lesson](lesson.md)
+
 ---
 
 ## Perfect (Qatal)
