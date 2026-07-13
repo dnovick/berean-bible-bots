@@ -7,3 +7,4 @@
 ## Agenda
 
 1. [Lesson: BBH 30 - Piel Strong Verbs](/lessons/hebrew/ch30/)
+1. [Reading: Psalm 119:9-16](session-132/ps119-9-16.html) (20 min)

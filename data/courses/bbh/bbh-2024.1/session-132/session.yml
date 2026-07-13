@@ -24,6 +24,14 @@ instructor: "David Novick"
 chapter: 30
 agenda:
 
+reading:
+  - name: "Psalm 119:9-16"
+    description: "The law of the LORD — an acrostic poem. Part ב."
+    passage: "Psalm 119:9-16"
+    file: "ps119-9-16.html"
+    scope: instance
+    duration: "20 min"
+
 lesson:
   name: "BBH 30 - Piel Strong Verbs"
   url: "/lessons/hebrew/ch30/"
