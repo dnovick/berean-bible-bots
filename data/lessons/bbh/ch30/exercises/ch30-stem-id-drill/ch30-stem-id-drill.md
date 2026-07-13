@@ -6,7 +6,7 @@
 
 ## Instructions
 
-Below are 24 Hebrew verb forms, all from strong roots (קטל, דבר, שׁמר, כבד). For each form, identify:
+Below are 24 Hebrew verb forms, all from strong roots (קטל, דבר). For each form, identify:
 
 1. **Stem** — Qal / Niphal / Hiphil / Hophal / Piel
 2. **Conjugation** — Perfect / Imperfect / Wayyiqtol / Imperative / Infinitive Absolute / Participle

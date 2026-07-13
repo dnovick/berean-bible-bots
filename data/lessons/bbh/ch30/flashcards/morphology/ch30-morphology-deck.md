@@ -7,7 +7,7 @@
 **Roots:**
 - **דבר** (denominative) — to speak
 - **קדש** (factitive) — to consecrate, make holy
-- **ברך** (intensive) — to bless
+- **ברך** (simple action) — to bless
 - **צוה** (simple action) — to command
 
 ---
@@ -63,7 +63,7 @@
 
 | Front | Back |
 |---|---|
-| בֵּרַךְ | ברך Piel+Perfect+3ms — "he blessed" — intensive; R2=ר rejects dagesh; Tsere under prefix consonant compensates |
+| בֵּרַךְ | ברך Piel+Perfect+3ms — "he blessed" — simple action; R2=ר rejects dagesh; Tsere under prefix consonant compensates |
 | בֵּרַכְתִּי | ברך Piel+Perfect+1cs — "I blessed" |
 | יְבָרֵךְ | ברך Piel+Imperfect+3ms — "he will bless" — R2=ר rejects dagesh; tsere marks Piel |
 | וַיְבָרֶךְ | ברך Piel+Wayyiqtol+3ms — "and he blessed" — Gen 1:22; וַיְ prefix marks Piel; ר cannot take dagesh |
