@@ -18,7 +18,7 @@
 וְקִדֵּשׁ	Root: קָדַשׁ | Piel | Weqatal 3ms | and he will consecrate / then he consecrated — וְ + Piel Perfect	BBH Chapter 30 — Piel Strong
 וְקִדַּשְׁתָּ	Root: קָדַשׁ | Piel | Weqatal 2ms | and you will consecrate / then you consecrated	BBH Chapter 30 — Piel Strong
 וְקִדַּשְׁתִּי	Root: קָדַשׁ | Piel | Weqatal 1cs | and I will consecrate / then I consecrated	BBH Chapter 30 — Piel Strong
-בֵּרַךְ (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 3ms | he blessed — intensive; R2=ר rejects dagesh; Tsere compensates	BBH Chapter 30 — Piel Strong
+בֵּרַךְ (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 3ms | he blessed — simple action; R2=ר rejects dagesh; Tsere compensates	BBH Chapter 30 — Piel Strong
 בֵּרַכְתִּי (Gen 17:16)	Root: בָּרַךְ | Piel | Perfect 1cs | I will bless — God's promise to Sarah	BBH Chapter 30 — Piel Strong
 יְבָרֵךְ (Num 22:6)	Root: בָּרַךְ | Piel | Imperfect 3ms | he will bless — R2=ר rejects dagesh	BBH Chapter 30 — Piel Strong
 וַיְבָרֶךְ (Gen 1:22)	Root: בָּרַךְ | Piel | Wayyiqtol 3ms | and he blessed — first occurrence in OT; ר cannot take dagesh	BBH Chapter 30 — Piel Strong

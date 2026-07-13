@@ -77,7 +77,7 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 |---|---|---|---|---|
 | 1 | דבר | 408 | to speak | Denominative |
 | 2 | צוה | 246 | to command | Simple action / Denominative |
-| 3 | ברך | 108 | to bless | Intensive |
+| 3 | ברך | 108 | to bless | Simple Action |
 | 4 | שלח | 106 | to send away, release | Intensive |
 | 5 | כפר | 74 | to make atonement | Denominative / Factitive |
 | 6 | כסה | 44 | to cover | Intensive |
@@ -174,22 +174,22 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 
 ---
 
-### Intensive
+### Simple Action
 
 **Perfect — Gen 17:16 (ברך)**
 וּבֵרַכְתִּ֣י אֹתָ֔הּ וְגַ֨ם נָתַ֧תִּי מִמֶּ֛נָּה לְךָ֖ בֵּ֑ן
 *"I will bless her, and I will also give you a son by her."*
-→ ברך Piel+Perfect+1cs; God's intensive/thoroughgoing blessing on Sarah. Contrast Qal which is rarer.
+→ ברך Piel+Perfect+1cs; God's sovereign blessing on Sarah. ברך has no common Qal equivalent — the Piel is the standard form of the verb (simple action).
 
 **Wayyiqtol — Gen 1:22 (ברך)**
 וַיְבָ֧רֶךְ אֹתָ֛ם אֱלֹהִ֖ים לֵאמֹ֑ר פְּר֥וּ וּרְב֛וּ
 *"And God blessed them, saying, 'Be fruitful and multiply.'"*
-→ ברך Piel+Wayyiqtol+3ms; first occurrence of the root in the OT; God's powerful creative blessing.
+→ ברך Piel+Wayyiqtol+3ms; first occurrence of the root in the OT; God's creative blessing over living creatures.
 
 **Inf. Absolute — Gen 22:17 (ברך)**
 כִּֽי־בָרֵ֣ךְ אֲבָרֶכְךָ֗ וְהַרְבָּ֨ה אַרְבֶּ֤ה אֶֽת־זַרְעֲךָ֙
 *"I will surely bless you, and I will surely multiply your offspring."*
-→ ברך Piel+Inf.Absolute + Piel+Imperfect+1cs (אֲבָרֶכְךָ); cognate absolute construction intensifies the promise.
+→ ברך Piel+Inf.Absolute + Piel+Imperfect+1cs (אֲבָרֶכְךָ); cognate absolute construction emphasizes certainty of the promise.
 
 ---
 

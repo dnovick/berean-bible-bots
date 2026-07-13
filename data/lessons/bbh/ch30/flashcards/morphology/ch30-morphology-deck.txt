@@ -24,14 +24,14 @@
 וְקִדֵּשׁ	קדש Piel+Weqatal+3ms — "and he will consecrate / then he consecrated" — וְ + Piel Perfect	piel-weqatal factitive bbh-ch30
 וְקִדַּשְׁתָּ	קדש Piel+Weqatal+2ms — "and you will consecrate / then you consecrated"	piel-weqatal factitive bbh-ch30
 וְקִדַּשְׁתִּי	קדש Piel+Weqatal+1cs — "and I will consecrate / then I consecrated"	piel-weqatal factitive bbh-ch30
-בֵּרַךְ	ברך Piel+Perfect+3ms — "he blessed" — intensive; R2=ר rejects dagesh; Tsere under prefix consonant compensates	piel-perfect intensive bbh-ch30
-בֵּרַכְתִּי	ברך Piel+Perfect+1cs — "I blessed"	piel-perfect intensive bbh-ch30
-יְבָרֵךְ	ברך Piel+Imperfect+3ms — "he will bless" — יְ prefix; R2=ר rejects dagesh; tsere marks Piel	piel-imperfect intensive bbh-ch30
-וַיְבָרֶךְ	ברך Piel+Wayyiqtol+3ms — "and he blessed" — Gen 1:22; וַיְ prefix marks Piel; ר cannot take dagesh	piel-wayyiqtol intensive bbh-ch30
-בָּרֵךְ	ברך Piel+Infinitive Absolute — cognate: בָּרֵךְ אֲבָרֶכְךָ "I will surely bless" (Gen 22:17)	piel-inf-absolute intensive bbh-ch30
-וּבֵרַךְ	ברך Piel+Weqatal+3ms — "and he will bless / then he blessed" — וּ (shureq) before ב; ר rejects dagesh	piel-weqatal intensive bbh-ch30
-וּבֵרַכְתָּ	ברך Piel+Weqatal+2ms — "and you will bless / then you blessed" — וּ before ב	piel-weqatal intensive bbh-ch30
-וּבֵרַכְתִּי	ברך Piel+Weqatal+1cs — "and I will bless / then I blessed" — וּ before ב	piel-weqatal intensive bbh-ch30
+בֵּרַךְ	ברך Piel+Perfect+3ms — "he blessed" — simple action; R2=ר rejects dagesh; Tsere under prefix consonant compensates	piel-perfect simple-action bbh-ch30
+בֵּרַכְתִּי	ברך Piel+Perfect+1cs — "I blessed"	piel-perfect simple-action bbh-ch30
+יְבָרֵךְ	ברך Piel+Imperfect+3ms — "he will bless" — יְ prefix; R2=ר rejects dagesh; tsere marks Piel	piel-imperfect simple-action bbh-ch30
+וַיְבָרֶךְ	ברך Piel+Wayyiqtol+3ms — "and he blessed" — Gen 1:22; וַיְ prefix marks Piel; ר cannot take dagesh	piel-wayyiqtol simple-action bbh-ch30
+בָּרֵךְ	ברך Piel+Infinitive Absolute — cognate: בָּרֵךְ אֲבָרֶכְךָ "I will surely bless" (Gen 22:17)	piel-inf-absolute simple-action bbh-ch30
+וּבֵרַךְ	ברך Piel+Weqatal+3ms — "and he will bless / then he blessed" — וּ (shureq) before ב; ר rejects dagesh	piel-weqatal simple-action bbh-ch30
+וּבֵרַכְתָּ	ברך Piel+Weqatal+2ms — "and you will bless / then you blessed" — וּ before ב	piel-weqatal simple-action bbh-ch30
+וּבֵרַכְתִּי	ברך Piel+Weqatal+1cs — "and I will bless / then I blessed" — וּ before ב	piel-weqatal simple-action bbh-ch30
 צִוָּה	צוה Piel+Perfect+3ms — "he commanded" — simple action (no meaningful Qal); 485× in OT	piel-perfect simple-action bbh-ch30
 צִוִּיתִי	צוה Piel+Perfect+1cs — "I commanded" — God speaking	piel-perfect simple-action bbh-ch30
 יְצַוֶּה	צוה Piel+Imperfect+3ms — "he will command"	piel-imperfect simple-action bbh-ch30
