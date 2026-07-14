@@ -45,7 +45,7 @@
 | [129 — Hiphil Verb Practice](session-129.md) | Jun 8, 2026 | [Watch](https://drive.google.com/file/d/1vGfpn0wdSmAuMipH0uxS3sD27oYtLFaN/view?usp=drive_link) |
 | [130 — Hophal Strong Verbs](session-130.md) | Jun 15, 2026 | [Watch](https://drive.google.com/file/d/1weQ98AlV_YnH_Q2OzHs-EvSTBTsU6wSe/view?usp=drive_web) |
 | [131 — Hophal Weak Verbs](session-131.md) | Jun 29, 2026 | [Watch](https://drive.google.com/file/d/1xSTkpWLniDdkk2sj5f7CUcAy0aBtgbE2/view?usp=sharing) |
-| [132 — Piel Strong Verbs](session-132.md) | Jul 13, 2026 |  |
+| [132 — Piel Strong Verbs](session-132.md) | Jul 13, 2026 | [Watch](https://drive.google.com/file/d/1zb8C1dLVqoLZvmvKnaRfazV990BKZpt7/view?usp=sharing) |
 | [133 — Piel Weak Verbs](session-133.md) | Jul 27, 2026 |  |
 | [134 — Pual Strong Verbs](session-134.md) | Aug 10, 2026 |  |
 | [135 — Pual Weak Verbs](session-135.md) | Aug 24, 2026 |  |
