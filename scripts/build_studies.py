@@ -56,9 +56,22 @@ PSALM119_STANZAS = [
 
 def _update_nav(new_block: str) -> None:
     text = _NAV_PATH.read_text(encoding="utf-8")
-    pattern = rf"{re.escape(NAV_START)}.*?{re.escape(NAV_END)}"
-    replacement = f"{NAV_START}\n{new_block}{NAV_END}"
-    updated = re.sub(pattern, replacement, text, flags=re.DOTALL)
+    wrapped = f"{NAV_START}\n{new_block}{NAV_END}"
+
+    if NAV_START in text:
+        pattern = rf"{re.escape(NAV_START)}.*?{re.escape(NAV_END)}"
+        updated = re.sub(pattern, wrapped, text, flags=re.DOTALL)
+    else:
+        # Sentinel absent (e.g. nav was just rewritten by build_mkdocs.py).
+        # Insert before "- Study Helps:" or "- API Reference:", whichever
+        # comes first; fall back to appending at the end.
+        for anchor in ("- Study Helps:", "- API Reference:"):
+            if anchor in text:
+                updated = text.replace(anchor, wrapped + "\n" + anchor, 1)
+                break
+        else:
+            updated = text.rstrip() + "\n" + wrapped + "\n"
+
     _NAV_PATH.write_text(updated, encoding="utf-8")
 
 
