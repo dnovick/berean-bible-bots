@@ -2,8 +2,8 @@
 """
 Build Psalm 119 Word Vocabulary and Themes Report.
 
-Output: output/reports/ot/survey/psalm-119/
-        mkdocs_src/reports/ot/survey/psalm-119/
+Output: output/studies/psalm-119/analysis/
+        mkdocs_src/studies/psalm-119/analysis/
 """
 
 import re
@@ -21,8 +21,8 @@ import pandas as pd
 REPO = Path(__file__).resolve().parent.parent
 sys.path.insert(0, str(REPO / 'src'))
 
-OUT = REPO / 'output' / 'reports' / 'ot' / 'survey' / 'psalm-119'
-MKD = REPO / 'mkdocs_src' / 'reports' / 'ot' / 'survey' / 'psalm-119'
+OUT = REPO / 'output' / 'studies' / 'psalm-119' / 'analysis'
+MKD = REPO / 'mkdocs_src' / 'studies' / 'psalm-119' / 'analysis'
 for d in [OUT, MKD, OUT / 'charts', MKD / 'charts']:
     d.mkdir(parents=True, exist_ok=True)
 

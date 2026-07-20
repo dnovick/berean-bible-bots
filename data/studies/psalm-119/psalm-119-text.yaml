@@ -1,0 +1,2025 @@
+stanzas:
+- num: 1
+  letter: א
+  name: Alef
+  verses:
+  - num: 1
+    abs_num: 1
+    hebrew: אַשְׁרֵי תְמִימֵי־דָרֶךְ הַהֹלְכִים בְּתוֹרַת יְהוָה׃
+    kjv: Blessed are the undefiled in the way, who walk in the law of the Lord.
+    first_word: אַשְׁרֵי
+    key_words:
+    - הַהֹלְכִים
+    - תְמִימֵי
+    - בְּתוֹרַת
+    line_endings:
+    - יְהוָה
+  - num: 2
+    abs_num: 2
+    hebrew: אַשְׁרֵי נֹצְרֵי עֵדֹתָיו בְּכָל־לֵב יִדְרְשׁוּהוּ׃
+    kjv: Blessed are they that keep his testimonies, and that seek him with the whole heart.
+    first_word: אַשְׁרֵי
+    key_words:
+    - יִדְרְשׁוּהוּ
+    - עֵדֹתָיו
+    - אַשְׁרֵי
+    line_endings:
+    - יִדְרְשׁוּהוּ
+  - num: 3
+    abs_num: 3
+    hebrew: אַף לֹא־פָעֲלוּ עַוְלָה בִּדְרָכָיו הָלָכוּ׃
+    kjv: 'They also do no iniquity: they walk in his ways.'
+    first_word: אַף
+    key_words:
+    - בִּדְרָכָיו
+    - פָעֲלוּ
+    - עַוְלָה
+    line_endings:
+    - הָלָכוּ
+  - num: 4
+    abs_num: 4
+    hebrew: אַתָּה צִוִּיתָה פִקֻּדֶיךָ לִשְׁמֹר מְאֹד׃
+    kjv: Thou hast commanded us to keep thy precepts diligently.
+    first_word: אַתָּה
+    key_words:
+    - צִוִּיתָה
+    - פִקֻּדֶיךָ
+    - לִשְׁמֹר
+    line_endings:
+    - מְאֹד
+  - num: 5
+    abs_num: 5
+    hebrew: אַחֲלַי יִכֹּנוּ דְרָכָי לִשְׁמֹר חֻקֶּיךָ׃
+    kjv: O that my ways were directed to keep thy statutes!
+    first_word: אַחֲלַי
+    key_words:
+    - אַחֲלַי
+    - יִכֹּנוּ
+    - דְרָכָי
+    line_endings:
+    - חֻקֶּיךָ
+  - num: 6
+    abs_num: 6
+    hebrew: אָז לֹא־אֵבוֹשׁ בְּהַבִּיטִי אֶל־כָּל־מִצְוֹתֶיךָ׃
+    kjv: Then shall I not be ashamed, when I have respect unto all thy commandments.
+    first_word: אָז
+    key_words:
+    - בְּהַבִּיטִי
+    - מִצְוֹתֶיךָ
+    - אֵבוֹשׁ
+    line_endings:
+    - מִצְוֹתֶיךָ
+  - num: 7
+    abs_num: 7
+    hebrew: אוֹדְךָ בְּיֹשֶׁר לֵבָב בְּלָמְדִי מִשְׁפְּטֵי צִדְקֶךָ׃
+    kjv: I will praise thee with uprightness of heart, when I shall have learned thy righteous judgments.
+    first_word: אוֹדְךָ
+    key_words:
+    - בְּלָמְדִי
+    - מִשְׁפְּטֵי
+    - אוֹדְךָ
+    line_endings:
+    - צִדְקֶךָ
+  - num: 8
+    abs_num: 8
+    hebrew: אֶת־חֻקֶּיךָ אֶשְׁמֹר אַל־תַּעַזְבֵנִי עַד־מְאֹד׃
+    kjv: 'I will keep thy statutes: O forsake me not utterly.'
+    first_word: אֶת־
+    key_words:
+    - תַּעַזְבֵנִי
+    - חֻקֶּיךָ
+    - אֶשְׁמֹר
+    line_endings:
+    - מְאֹד
+- num: 2
+  letter: ב
+  name: Bet
+  verses:
+  - num: 1
+    abs_num: 9
+    hebrew: בַּמֶּה יְזַכֶּה־נַּעַר אֶת־אָרְחוֹ לִשְׁמֹר כִּדְבָרֶךָ׃
+    kjv: Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word.
+    first_word: בַּמֶּה
+    key_words:
+    - כִּדְבָרֶךָ
+    - יְזַכֶּה
+    - אָרְחוֹ
+    line_endings:
+    - כִּדְבָרֶךָ
+  - num: 2
+    abs_num: 10
+    hebrew: בְּכָל־לִבִּי דְרַשְׁתִּיךָ אַל־תַּשְׁגֵּנִי מִמִּצְוֹתֶיךָ׃
+    kjv: 'With my whole heart have I sought thee: O let me not wander from thy commandments.'
+    first_word: בְּכָל־
+    key_words:
+    - מִמִּצְוֹתֶיךָ
+    - דְרַשְׁתִּיךָ
+    - תַּשְׁגֵּנִי
+    line_endings:
+    - מִמִּצְוֹתֶיךָ
+  - num: 3
+    abs_num: 11
+    hebrew: בְּלִבִּי צָפַנְתִּי אִמְרָתֶךָ לְמַעַן לֹא אֶחֱטָא־לָךְ׃
+    kjv: Thy word have I hid in mine heart, that I might not sin against thee.
+    first_word: בְּלִבִּי
+    key_words:
+    - צָפַנְתִּי
+    - אִמְרָתֶךָ
+    - בְּלִבִּי
+    line_endings:
+    - לָךְ
+  - num: 4
+    abs_num: 12
+    hebrew: בָּרוּךְ אַתָּה יְהוָה לַמְּדֵנִי חֻקֶּיךָ׃
+    kjv: 'Blessed art thou, O Lord: teach me thy statutes.'
+    first_word: בָּרוּךְ
+    key_words:
+    - לַמְּדֵנִי
+    - בָּרוּךְ
+    - יְהוָה
+    line_endings:
+    - חֻקֶּיךָ
+  - num: 5
+    abs_num: 13
+    hebrew: בִּשְׂפָתַי סִפַּרְתִּי כֹּל מִשְׁפְּטֵי־פִיךָ׃
+    kjv: With my lips have I declared all the judgments of thy mouth.
+    first_word: בִּשְׂפָתַי
+    key_words:
+    - בִּשְׂפָתַי
+    - סִפַּרְתִּי
+    - מִשְׁפְּטֵי
+    line_endings:
+    - פִיךָ
+  - num: 6
+    abs_num: 14
+    hebrew: בְּדֶרֶךְ עֵדְוֹתֶיךָ שַׂשְׂתִּי כְּעַל כָּל־הוֹן׃
+    kjv: I have rejoiced in the way of thy testimonies, as much as in all riches.
+    first_word: בְּדֶרֶךְ
+    key_words:
+    - עֵדְוֹתֶיךָ
+    - בְּדֶרֶךְ
+    - שַׂשְׂתִּי
+    line_endings:
+    - הוֹן
+  - num: 7
+    abs_num: 15
+    hebrew: בְּפִקֻּדֶיךָ אָשִׂיחָה וְאַבִּיטָה אֹרְחֹתֶיךָ׃
+    kjv: I will meditate in thy precepts, and have respect unto thy ways.
+    first_word: בְּפִקֻּדֶיךָ
+    key_words:
+    - בְּפִקֻּדֶיךָ
+    - וְאַבִּיטָה
+    - אֹרְחֹתֶיךָ
+    line_endings:
+    - אֹרְחֹתֶיךָ
+  - num: 8
+    abs_num: 16
+    hebrew: בְּחֻקֹּתֶיךָ אֶשְׁתַּעֲשָׁע לֹא אֶשְׁכַּח דְּבָרֶךָ׃
+    kjv: 'I will delight myself in thy statutes: I will not forget thy word.'
+    first_word: בְּחֻקֹּתֶיךָ
+    key_words:
+    - בְּחֻקֹּתֶיךָ
+    - אֶשְׁתַּעֲשָׁע
+    - אֶשְׁכַּח
+    line_endings:
+    - דְּבָרֶךָ
+- num: 3
+  letter: ג
+  name: Gimel
+  verses:
+  - num: 1
+    abs_num: 17
+    hebrew: גְּמֹל עַל־עַבְדְּךָ אֶחְיֶה וְאֶשְׁמְרָה דְבָרֶךָ׃
+    kjv: Deal bountifully with thy servant, that I may live, and keep thy word.
+    first_word: גְּמֹל
+    key_words:
+    - וְאֶשְׁמְרָה
+    - עַבְדְּךָ
+    - אֶחְיֶה
+    line_endings:
+    - דְבָרֶךָ
+  - num: 2
+    abs_num: 18
+    hebrew: גַּל־עֵינַי וְאַבִּיטָה נִפְלָאוֹת מִתּוֹרָתֶךָ׃
+    kjv: Open thou mine eyes, that I may behold wondrous things out of thy law.
+    first_word: גַּל־
+    key_words:
+    - וְאַבִּיטָה
+    - נִפְלָאוֹת
+    - מִתּוֹרָתֶךָ
+    line_endings:
+    - מִתּוֹרָתֶךָ
+  - num: 3
+    abs_num: 19
+    hebrew: גֵּר אָנֹכִי בָאָרֶץ אַל־תַּסְתֵּר מִמֶּנִּי מִצְוֹתֶיךָ׃
+    kjv: 'I am a stranger in the earth: hide not thy commandments from me.'
+    first_word: גֵּר
+    key_words:
+    - מִצְוֹתֶיךָ
+    - אָנֹכִי
+    - בָאָרֶץ
+    line_endings:
+    - מִצְוֹתֶיךָ
+  - num: 4
+    abs_num: 20
+    hebrew: גָּרְסָה נַפְשִׁי לְתַאֲבָה אֶל־מִשְׁפָּטֶיךָ בְכָל־עֵת׃
+    kjv: My soul breaketh for the longing that it hath unto thy judgments at all times.
+    first_word: גָּרְסָה
+    key_words:
+    - מִשְׁפָּטֶיךָ
+    - לְתַאֲבָה
+    - גָּרְסָה
+    line_endings:
+    - עֵת
+  - num: 5
+    abs_num: 21
+    hebrew: גָּעַרְתָּ זֵדִים אֲרוּרִים הַשֹּׁגִים מִמִּצְוֹתֶיךָ׃
+    kjv: Thou hast rebuked the proud that are cursed, which do err from thy commandments.
+    first_word: גָּעַרְתָּ
+    key_words:
+    - מִמִּצְוֹתֶיךָ
+    - אֲרוּרִים
+    - הַשֹּׁגִים
+    line_endings:
+    - מִמִּצְוֹתֶיךָ
+  - num: 6
+    abs_num: 22
+    hebrew: גַּל מֵעָלַי חֶרְפָּה וָבוּז כִּי עֵדֹתֶיךָ נָצָרְתִּי׃
+    kjv: Remove from me reproach and contempt; for I have kept thy testimonies.
+    first_word: גַּל
+    key_words:
+    - עֵדֹתֶיךָ
+    - נָצָרְתִּי
+    - מֵעָלַי
+    line_endings:
+    - נָצָרְתִּי
+  - num: 7
+    abs_num: 23
+    hebrew: גַּם יָשְׁבוּ שָׂרִים בִּי נִדְבָּרוּ עַבְדְּךָ יָשִׂיחַ בְּחֻקֶּיךָ׃
+    kjv: 'Princes also did sit and speak against me: but thy servant did meditate in thy statutes.'
+    first_word: גַּם
+    key_words:
+    - נִדְבָּרוּ
+    - בְּחֻקֶּיךָ
+    - יָשְׁבוּ
+    line_endings:
+    - בְּחֻקֶּיךָ
+  - num: 8
+    abs_num: 24
+    hebrew: גַּם־עֵדֹתֶיךָ שַׁעֲשֻׁעָי אַנְשֵׁי עֲצָתִי׃
+    kjv: Thy testimonies also are my delight and my counsellors.
+    first_word: גַּם־
+    key_words:
+    - עֵדֹתֶיךָ
+    - שַׁעֲשֻׁעָי
+    - אַנְשֵׁי
+    line_endings:
+    - עֲצָתִי
+- num: 4
+  letter: ד
+  name: Dalet
+  verses:
+  - num: 1
+    abs_num: 25
+    hebrew: דָּבְקָה לֶעָפָר נַפְשִׁי חַיֵּנִי כִּדְבָרֶךָ׃
+    kjv: 'My soul cleaveth unto the dust: quicken thou me according to thy word.'
+    first_word: דָּבְקָה
+    key_words:
+    - כִּדְבָרֶךָ
+    - דָּבְקָה
+    - לֶעָפָר
+    line_endings:
+    - כִּדְבָרֶךָ
+  - num: 2
+    abs_num: 26
+    hebrew: דְּרָכַי סִפַּרְתִּי וַתַּעֲנֵנִי לַמְּדֵנִי חֻקֶּיךָ׃
+    kjv: 'I have declared my ways, and thou heardest me: teach me thy statutes.'
+    first_word: דְּרָכַי
+    key_words:
+    - וַתַּעֲנֵנִי
+    - סִפַּרְתִּי
+    - לַמְּדֵנִי
+    line_endings:
+    - חֻקֶּיךָ
+  - num: 3
+    abs_num: 27
+    hebrew: דֶּרֶךְ־פִּקּוּדֶיךָ הֲבִינֵנִי וְאָשִׂיחָה בְּנִפְלְאוֹתֶיךָ׃
+    kjv: 'Make me to understand the way of thy precepts: so shall I talk of thy wondrous works.'
+    first_word: דֶּרֶךְ־
+    key_words:
+    - בְּנִפְלְאוֹתֶיךָ
+    - פִּקּוּדֶיךָ
+    - הֲבִינֵנִי
+    line_endings:
+    - בְּנִפְלְאוֹתֶיךָ
+  - num: 4
+    abs_num: 28
+    hebrew: דָּלְפָה נַפְשִׁי מִתּוּגָה קַיְּמֵנִי כִּדְבָרֶךָ׃
+    kjv: 'My soul melteth for heaviness: strengthen thou me according unto thy word.'
+    first_word: דָּלְפָה
+    key_words:
+    - מִתּוּגָה
+    - קַיְּמֵנִי
+    - כִּדְבָרֶךָ
+    line_endings:
+    - כִּדְבָרֶךָ
+  - num: 5
+    abs_num: 29
+    hebrew: דֶּרֶךְ־שֶׁקֶר הָסֵר מִמֶּנִּי וְתוֹרָתְךָ חָנֵּנִי׃
+    kjv: 'Remove from me the way of lying: and grant me thy law graciously.'
+    first_word: דֶּרֶךְ־
+    key_words:
+    - וְתוֹרָתְךָ
+    - מִמֶּנִּי
+    - חָנֵּנִי
+    line_endings:
+    - חָנֵּנִי
+  - num: 6
+    abs_num: 30
+    hebrew: דֶּרֶךְ־אֱמוּנָה בָחָרְתִּי מִשְׁפָּטֶיךָ שִׁוִּיתִי׃
+    kjv: 'I have chosen the way of truth: thy judgments have I laid before me.'
+    first_word: דֶּרֶךְ־
+    key_words:
+    - מִשְׁפָּטֶיךָ
+    - אֱמוּנָה
+    - בָחָרְתִּי
+    line_endings:
+    - שִׁוִּיתִי
+  - num: 7
+    abs_num: 31
+    hebrew: דָּבַקְתִּי בְעֵדְוֹתֶיךָ יְהוָה אַל־תְּבִישֵׁנִי׃
+    kjv: 'I have stuck unto thy testimonies: O Lord, put me not to shame.'
+    first_word: דָּבַקְתִּי
+    key_words:
+    - בְעֵדְוֹתֶיךָ
+    - תְּבִישֵׁנִי
+    - דָּבַקְתִּי
+    line_endings:
+    - תְּבִישֵׁנִי
+  - num: 8
+    abs_num: 32
+    hebrew: דֶּרֶךְ־מִצְוֹתֶיךָ אָרוּץ כִּי תַרְחִיב לִבִּי׃
+    kjv: I will run the way of thy commandments, when thou shalt enlarge my heart.
+    first_word: דֶּרֶךְ־
+    key_words:
+    - מִצְוֹתֶיךָ
+    - תַרְחִיב
+    - אָרוּץ
+    line_endings:
+    - לִבִּי
+- num: 5
+  letter: ה
+  name: He
+  verses:
+  - num: 1
+    abs_num: 33
+    hebrew: הוֹרֵנִי יְהוָה דֶּרֶךְ חֻקֶּיךָ וְאֶצְּרֶנָּה עֵקֶב׃
+    kjv: Teach me, O Lord, the way of thy statutes; and I shall keep it unto the end.
+    first_word: הוֹרֵנִי
+    key_words:
+    - וְאֶצְּרֶנָּה
+    - הוֹרֵנִי
+    - יְהוָה
+    line_endings:
+    - עֵקֶב
+  - num: 2
+    abs_num: 34
+    hebrew: הֲבִינֵנִי וְאֶצְּרָה תוֹרָתֶךָ וְאֶשְׁמְרֶנָּה בְכָל־לֵב׃
+    kjv: Give me understanding, and I shall keep thy law; yea, I shall observe it with my whole heart.
+    first_word: הֲבִינֵנִי
+    key_words:
+    - וְאֶשְׁמְרֶנָּה
+    - הֲבִינֵנִי
+    - וְאֶצְּרָה
+    line_endings:
+    - לֵב
+  - num: 3
+    abs_num: 35
+    hebrew: הַדְרִיכֵנִי בִּנְתִיב מִצְוֹתֶיךָ כִּי־בוֹ חָפָצְתִּי׃
+    kjv: Make me to go in the path of thy commandments; for therein do I delight.
+    first_word: הַדְרִיכֵנִי
+    key_words:
+    - הַדְרִיכֵנִי
+    - מִצְוֹתֶיךָ
+    - בִּנְתִיב
+    line_endings:
+    - חָפָצְתִּי
+  - num: 4
+    abs_num: 36
+    hebrew: הַט־לִבִּי אֶל־עֵדְוֹתֶיךָ וְאַל אֶל־בָּצַע׃
+    kjv: Incline my heart unto thy testimonies, and not to covetousness.
+    first_word: הַט־
+    key_words:
+    - עֵדְוֹתֶיךָ
+    - לִבִּי
+    - וְאַל
+    line_endings:
+    - בָּצַע
+  - num: 5
+    abs_num: 37
+    hebrew: הַעֲבֵר עֵינַי מֵרְאוֹת שָׁוְא בִּדְרָכֶךָ חַיֵּנִי׃
+    kjv: Turn away mine eyes from beholding vanity; and quicken thou me in thy way.
+    first_word: הַעֲבֵר
+    key_words:
+    - מֵרְאוֹת
+    - בִּדְרָכֶךָ
+    - הַעֲבֵר
+    line_endings:
+    - חַיֵּנִי
+  - num: 6
+    abs_num: 38
+    hebrew: הָקֵם לְעַבְדְּךָ אִמְרָתֶךָ אֲשֶׁר לְיִרְאָתֶךָ׃
+    kjv: Stablish thy word unto thy servant, who is devoted to thy fear.
+    first_word: הָקֵם
+    key_words:
+    - לְיִרְאָתֶךָ
+    - לְעַבְדְּךָ
+    - אִמְרָתֶךָ
+    line_endings:
+    - לְיִרְאָתֶךָ
+  - num: 7
+    abs_num: 39
+    hebrew: הַעֲבֵר חֶרְפָּתִי אֲשֶׁר יָגֹרְתִּי כִּי מִשְׁפָּטֶיךָ טוֹבִים׃
+    kjv: 'Turn away my reproach which I fear: for thy judgments are good.'
+    first_word: הַעֲבֵר
+    key_words:
+    - מִשְׁפָּטֶיךָ
+    - חֶרְפָּתִי
+    - יָגֹרְתִּי
+    line_endings:
+    - טוֹבִים
+  - num: 8
+    abs_num: 40
+    hebrew: הִנֵּה תָּאַבְתִּי לְפִקֻּדֶיךָ בְּצִדְקָתְךָ חַיֵּנִי׃
+    kjv: 'Behold, I have longed after thy precepts: quicken me in thy righteousness.'
+    first_word: הִנֵּה
+    key_words:
+    - לְפִקֻּדֶיךָ
+    - בְּצִדְקָתְךָ
+    - תָּאַבְתִּי
+    line_endings:
+    - חַיֵּנִי
+- num: 6
+  letter: ו
+  name: Waw
+  verses:
+  - num: 1
+    abs_num: 41
+    hebrew: וִיבֹאֻנִי חֲסָדֶךָ יְהוָה תְּשׁוּעָתְךָ כְּאִמְרָתֶךָ׃
+    kjv: Let thy mercies come also unto me, O Lord, even thy salvation, according to thy word.
+    first_word: וִיבֹאֻנִי
+    key_words:
+    - וִיבֹאֻנִי
+    - תְּשׁוּעָתְךָ
+    - כְּאִמְרָתֶךָ
+    line_endings:
+    - כְּאִמְרָתֶךָ
+  - num: 2
+    abs_num: 42
+    hebrew: וְאֶעֱנֶה חֹרְפִי דָבָר כִּי־בָטַחְתִּי בִּדְבָרֶךָ׃
+    kjv: 'So shall I have wherewith to answer him that reproacheth me: for I trust in thy word.'
+    first_word: וְאֶעֱנֶה
+    key_words:
+    - וְאֶעֱנֶה
+    - בָטַחְתִּי
+    - בִּדְבָרֶךָ
+    line_endings:
+    - בִּדְבָרֶךָ
+  - num: 3
+    abs_num: 43
+    hebrew: וְאַל־תַּצֵּל מִפִּי דְבַר־אֱמֶת עַד־מְאֹד כִּי לְמִשְׁפָּטֶךָ יִחָלְתִּי׃
+    kjv: And take not the word of truth utterly out of my mouth; for I have hoped in thy judgments.
+    first_word: וְאַל־
+    key_words:
+    - לְמִשְׁפָּטֶךָ
+    - יִחָלְתִּי
+    - וְאַל
+    line_endings:
+    - יִחָלְתִּי
+  - num: 4
+    abs_num: 44
+    hebrew: וְאֶשְׁמְרָה תוֹרָתְךָ תָמִיד לְעוֹלָם וָעֶד׃
+    kjv: So shall I keep thy law continually for ever and ever.
+    first_word: וְאֶשְׁמְרָה
+    key_words:
+    - וְאֶשְׁמְרָה
+    - תוֹרָתְךָ
+    - לְעוֹלָם
+    line_endings:
+    - וָעֶד
+  - num: 5
+    abs_num: 45
+    hebrew: וְאֶתְהַלְּכָה בָרְחָבָה כִּי פִקֻּדֶיךָ דָרָשְׁתִּי׃
+    kjv: 'And I will walk at liberty: for I seek thy precepts.'
+    first_word: וְאֶתְהַלְּכָה
+    key_words:
+    - וְאֶתְהַלְּכָה
+    - בָרְחָבָה
+    - פִקֻּדֶיךָ
+    line_endings:
+    - דָרָשְׁתִּי
+  - num: 6
+    abs_num: 46
+    hebrew: וַאֲדַבְּרָה בְעֵדֹתֶיךָ נֶגֶד מְלָכִים וְלֹא אֵבוֹשׁ׃
+    kjv: I will speak of thy testimonies also before kings, and will not be ashamed.
+    first_word: וַאֲדַבְּרָה
+    key_words:
+    - וַאֲדַבְּרָה
+    - בְעֵדֹתֶיךָ
+    - מְלָכִים
+    line_endings:
+    - אֵבוֹשׁ
+  - num: 7
+    abs_num: 47
+    hebrew: וְאֶשְׁתַּעֲשַׁע בְּמִצְוֹתֶיךָ אֲשֶׁר אָהָבְתִּי׃
+    kjv: And I will delight myself in thy commandments, which I have loved.
+    first_word: וְאֶשְׁתַּעֲשַׁע
+    key_words:
+    - וְאֶשְׁתַּעֲשַׁע
+    - בְּמִצְוֹתֶיךָ
+    - אָהָבְתִּי
+    line_endings:
+    - אָהָבְתִּי
+  - num: 8
+    abs_num: 48
+    hebrew: וְאֶשָּׂא־כַפַּי אֶל־מִצְוֹתֶיךָ אֲשֶׁר אָהָבְתִּי וְאָשִׂיחָה בְחֻקֶּיךָ׃
+    kjv: My hands also will I lift up unto thy commandments, which I have loved; and I will meditate in thy statutes.
+    first_word: וְאֶשָּׂא־
+    key_words:
+    - מִצְוֹתֶיךָ
+    - וְאָשִׂיחָה
+    - אָהָבְתִּי
+    line_endings:
+    - בְחֻקֶּיךָ
+- num: 7
+  letter: ז
+  name: Zayin
+  verses:
+  - num: 1
+    abs_num: 49
+    hebrew: זְכֹר־דָּבָר לְעַבְדֶּךָ עַל אֲשֶׁר יִחַלְתָּנִי׃
+    kjv: Remember the word unto thy servant, upon which thou hast caused me to hope.
+    first_word: זְכֹר־
+    key_words:
+    - יִחַלְתָּנִי
+    - לְעַבְדֶּךָ
+    - זְכֹר
+    line_endings:
+    - יִחַלְתָּנִי
+  - num: 2
+    abs_num: 50
+    hebrew: זֹאת נֶחָמָתִי בְעָנְיִי כִּי אִמְרָתְךָ חִיָּתְנִי׃
+    kjv: 'This is my comfort in my affliction: for thy word hath quickened me.'
+    first_word: זֹאת
+    key_words:
+    - נֶחָמָתִי
+    - בְעָנְיִי
+    - אִמְרָתְךָ
+    line_endings:
+    - חִיָּתְנִי
+  - num: 3
+    abs_num: 51
+    hebrew: זֵדִים הֱלִיצֻנִי עַד־מְאֹד מִתּוֹרָתְךָ לֹא נָטִיתִי׃
+    kjv: 'The proud have had me greatly in derision: yet have I not declined from thy law.'
+    first_word: זֵדִים
+    key_words:
+    - הֱלִיצֻנִי
+    - מִתּוֹרָתְךָ
+    - נָטִיתִי
+    line_endings:
+    - נָטִיתִי
+  - num: 4
+    abs_num: 52
+    hebrew: זָכַרְתִּי מִשְׁפָּטֶיךָ מֵעוֹלָם יְהוָה וָאֶתְנֶחָם׃
+    kjv: I remembered thy judgments of old, O Lord; and have comforted myself.
+    first_word: זָכַרְתִּי
+    key_words:
+    - מִשְׁפָּטֶיךָ
+    - וָאֶתְנֶחָם
+    - זָכַרְתִּי
+    line_endings:
+    - וָאֶתְנֶחָם
+  - num: 5
+    abs_num: 53
+    hebrew: זַלְעָפָה אֲחָזַתְנִי מֵרְשָׁעִים עֹזְבֵי תּוֹרָתֶךָ׃
+    kjv: Horror hath taken hold upon me because of the wicked that forsake thy law.
+    first_word: זַלְעָפָה
+    key_words:
+    - אֲחָזַתְנִי
+    - מֵרְשָׁעִים
+    - זַלְעָפָה
+    line_endings:
+    - תּוֹרָתֶךָ
+  - num: 6
+    abs_num: 54
+    hebrew: זְמִרוֹת הָיוּ־לִי חֻקֶּיךָ בְּבֵית מְגוּרָי׃
+    kjv: Thy statutes have been my songs in the house of my pilgrimage.
+    first_word: זְמִרוֹת
+    key_words:
+    - זְמִרוֹת
+    - מְגוּרָי
+    - חֻקֶּיךָ
+    line_endings:
+    - מְגוּרָי
+  - num: 7
+    abs_num: 55
+    hebrew: זָכַרְתִּי בַלַּיְלָה שִׁמְךָ יְהוָה וָאֶשְׁמְרָה תּוֹרָתֶךָ׃
+    kjv: I have remembered thy name, O Lord, in the night, and have kept thy law.
+    first_word: זָכַרְתִּי
+    key_words:
+    - וָאֶשְׁמְרָה
+    - זָכַרְתִּי
+    - בַלַּיְלָה
+    line_endings:
+    - תּוֹרָתֶךָ
+  - num: 8
+    abs_num: 56
+    hebrew: זֹאת הָיְתָה־לִּי כִּי פִקֻּדֶיךָ נָצָרְתִּי׃
+    kjv: This I had, because I kept thy precepts.
+    first_word: זֹאת
+    key_words:
+    - פִקֻּדֶיךָ
+    - נָצָרְתִּי
+    - הָיְתָה
+    line_endings:
+    - נָצָרְתִּי
+- num: 8
+  letter: ח
+  name: Ḥet
+  verses:
+  - num: 1
+    abs_num: 57
+    hebrew: חֶלְקִי יְהוָה אָמַרְתִּי לִשְׁמֹר דְּבָרֶיךָ׃
+    kjv: 'Thou art my portion, O Lord: I have said that I would keep thy words.'
+    first_word: חֶלְקִי
+    key_words:
+    - אָמַרְתִּי
+    - דְּבָרֶיךָ
+    - חֶלְקִי
+    line_endings:
+    - דְּבָרֶיךָ
+  - num: 2
+    abs_num: 58
+    hebrew: חִלִּיתִי פָנֶיךָ בְכָל־לֵב חָנֵּנִי כְּאִמְרָתֶךָ׃
+    kjv: 'I intreated thy favour with my whole heart: be merciful unto me according to thy word.'
+    first_word: חִלִּיתִי
+    key_words:
+    - כְּאִמְרָתֶךָ
+    - חִלִּיתִי
+    - פָנֶיךָ
+    line_endings:
+    - כְּאִמְרָתֶךָ
+  - num: 3
+    abs_num: 59
+    hebrew: חִשַּׁבְתִּי דְרָכָי וָאָשִׁיבָה רַגְלַי אֶל־עֵדֹתֶיךָ׃
+    kjv: I thought on my ways, and turned my feet unto thy testimonies.
+    first_word: חִשַּׁבְתִּי
+    key_words:
+    - וָאָשִׁיבָה
+    - חִשַּׁבְתִּי
+    - עֵדֹתֶיךָ
+    line_endings:
+    - עֵדֹתֶיךָ
+  - num: 4
+    abs_num: 60
+    hebrew: חַשְׁתִּי וְלֹא הִתְמַהְמָהְתִּי לִשְׁמֹר מִצְוֹתֶיךָ׃
+    kjv: I made haste, and delayed not to keep thy commandments.
+    first_word: חַשְׁתִּי
+    key_words:
+    - הִתְמַהְמָהְתִּי
+    - מִצְוֹתֶיךָ
+    - חַשְׁתִּי
+    line_endings:
+    - מִצְוֹתֶיךָ
+  - num: 5
+    abs_num: 61
+    hebrew: חֶבְלֵי רְשָׁעִים עִוְּדֻנִי תּוֹרָתְךָ לֹא שָׁכָחְתִּי׃
+    kjv: 'The bands of the wicked have robbed me: but I have not forgotten thy law.'
+    first_word: חֶבְלֵי
+    key_words:
+    - רְשָׁעִים
+    - עִוְּדֻנִי
+    - תּוֹרָתְךָ
+    line_endings:
+    - שָׁכָחְתִּי
+  - num: 6
+    abs_num: 62
+    hebrew: חֲצוֹת־לַיְלָה אָקוּם לְהוֹדוֹת לָךְ עַל מִשְׁפְּטֵי צִדְקֶךָ׃
+    kjv: At midnight I will rise to give thanks unto thee because of thy righteous judgments.
+    first_word: חֲצוֹת־
+    key_words:
+    - לְהוֹדוֹת
+    - מִשְׁפְּטֵי
+    - חֲצוֹת
+    line_endings:
+    - צִדְקֶךָ
+  - num: 7
+    abs_num: 63
+    hebrew: חָבֵר אָנִי לְכָל־אֲשֶׁר יְרֵאוּךָ וּלְשֹׁמְרֵי פִּקּוּדֶיךָ׃
+    kjv: I am a companion of all them that fear thee, and of them that keep thy precepts.
+    first_word: חָבֵר
+    key_words:
+    - וּלְשֹׁמְרֵי
+    - פִּקּוּדֶיךָ
+    - יְרֵאוּךָ
+    line_endings:
+    - פִּקּוּדֶיךָ
+  - num: 8
+    abs_num: 64
+    hebrew: חַסְדְּךָ יְהוָה מָלְאָה הָאָרֶץ חֻקֶּיךָ לַמְּדֵנִי׃
+    kjv: 'The earth, O Lord, is full of thy mercy: teach me thy statutes.'
+    first_word: חַסְדְּךָ
+    key_words:
+    - לַמְּדֵנִי
+    - חַסְדְּךָ
+    - יְהוָה
+    line_endings:
+    - לַמְּדֵנִי
+- num: 9
+  letter: ט
+  name: Tet
+  verses:
+  - num: 1
+    abs_num: 65
+    hebrew: טוֹב עָשִׂיתָ עִם־עַבְדְּךָ יְהוָה כִּדְבָרֶךָ׃
+    kjv: Thou hast dealt well with thy servant, O Lord, according unto thy word.
+    first_word: טוֹב
+    key_words:
+    - כִּדְבָרֶךָ
+    - עָשִׂיתָ
+    - עַבְדְּךָ
+    line_endings:
+    - כִּדְבָרֶךָ
+  - num: 2
+    abs_num: 66
+    hebrew: טוּב טַעַם וָדַעַת לַמְּדֵנִי כִּי בְמִצְוֹתֶיךָ הֶאֱמָנְתִּי׃
+    kjv: 'Teach me good judgment and knowledge: for I have believed thy commandments.'
+    first_word: טוּב
+    key_words:
+    - בְמִצְוֹתֶיךָ
+    - הֶאֱמָנְתִּי
+    - לַמְּדֵנִי
+    line_endings:
+    - הֶאֱמָנְתִּי
+  - num: 3
+    abs_num: 67
+    hebrew: טֶרֶם אֶעֱנֶה אֲנִי שֹׁגֵג וְעַתָּה אִמְרָתְךָ שָׁמָרְתִּי׃
+    kjv: 'Before I was afflicted I went astray: but now have I kept thy word.'
+    first_word: טֶרֶם
+    key_words:
+    - אִמְרָתְךָ
+    - שָׁמָרְתִּי
+    - אֶעֱנֶה
+    line_endings:
+    - שָׁמָרְתִּי
+  - num: 4
+    abs_num: 68
+    hebrew: טוֹב־אַתָּה וּמֵטִיב לַמְּדֵנִי חֻקֶּיךָ׃
+    kjv: Thou art good, and doest good; teach me thy statutes.
+    first_word: טוֹב־
+    key_words:
+    - וּמֵטִיב
+    - לַמְּדֵנִי
+    - חֻקֶּיךָ
+    line_endings:
+    - חֻקֶּיךָ
+  - num: 5
+    abs_num: 69
+    hebrew: טָפְלוּ עָלַי שֶׁקֶר זֵדִים אֲנִי בְּכָל־לֵב אֱצֹּר פִּקּוּדֶיךָ׃
+    kjv: 'The proud have forged a lie against me: but I will keep thy precepts with my whole heart.'
+    first_word: טָפְלוּ
+    key_words:
+    - פִּקּוּדֶיךָ
+    - טָפְלוּ
+    - זֵדִים
+    line_endings:
+    - פִּקּוּדֶיךָ
+  - num: 6
+    abs_num: 70
+    hebrew: טָפַשׁ כַּחֵלֶב לִבָּם אֲנִי תּוֹרָתְךָ שִׁעֲשָׁעְתִּי׃
+    kjv: Their heart is as fat as grease; but I delight in thy law.
+    first_word: טָפַשׁ
+    key_words:
+    - שִׁעֲשָׁעְתִּי
+    - תּוֹרָתְךָ
+    - כַּחֵלֶב
+    line_endings:
+    - שִׁעֲשָׁעְתִּי
+  - num: 7
+    abs_num: 71
+    hebrew: טוֹב־לִי כִי־עֻנֵּיתִי לְמַעַן אֶלְמַד חֻקֶּיךָ׃
+    kjv: It is good for me that I have been afflicted; that I might learn thy statutes.
+    first_word: טוֹב־
+    key_words:
+    - עֻנֵּיתִי
+    - לְמַעַן
+    - אֶלְמַד
+    line_endings:
+    - חֻקֶּיךָ
+  - num: 8
+    abs_num: 72
+    hebrew: טוֹב־לִי תוֹרַת־פִּיךָ מֵאַלְפֵי זָהָב וָכָסֶף׃
+    kjv: The law of thy mouth is better unto me than thousands of gold and silver.
+    first_word: טוֹב־
+    key_words:
+    - מֵאַלְפֵי
+    - תוֹרַת
+    - וָכָסֶף
+    line_endings:
+    - וָכָסֶף
+- num: 10
+  letter: י
+  name: Yod
+  verses:
+  - num: 1
+    abs_num: 73
+    hebrew: יָדֶיךָ עָשׂוּנִי וַיְכוֹנְנוּנִי הֲבִינֵנִי וְאֶלְמְדָה מִצְוֹתֶיךָ׃
+    kjv: 'Thy hands have made me and fashioned me: give me understanding, that I may learn thy commandments.'
+    first_word: יָדֶיךָ
+    key_words:
+    - וַיְכוֹנְנוּנִי
+    - הֲבִינֵנִי
+    - וְאֶלְמְדָה
+    line_endings:
+    - מִצְוֹתֶיךָ
+  - num: 2
+    abs_num: 74
+    hebrew: יְרֵאֶיךָ יִרְאוּנִי וְיִשְׂמָחוּ כִּי לִדְבָרְךָ יִחָלְתִּי׃
+    kjv: They that fear thee will be glad when they see me; because I have hoped in thy word.
+    first_word: יְרֵאֶיךָ
+    key_words:
+    - יִרְאוּנִי
+    - וְיִשְׂמָחוּ
+    - יְרֵאֶיךָ
+    line_endings:
+    - יִחָלְתִּי
+  - num: 3
+    abs_num: 75
+    hebrew: יָדַעְתִּי יְהוָה כִּי־צֶדֶק מִשְׁפָּטֶיךָ וֶאֱמוּנָה עִנִּיתָנִי׃
+    kjv: I know, O Lord, that thy judgments are right, and that thou in faithfulness hast afflicted me.
+    first_word: יָדַעְתִּי
+    key_words:
+    - מִשְׁפָּטֶיךָ
+    - וֶאֱמוּנָה
+    - עִנִּיתָנִי
+    line_endings:
+    - עִנִּיתָנִי
+  - num: 4
+    abs_num: 76
+    hebrew: יְהִי־נָא חַסְדְּךָ לְנַחֲמֵנִי כְּאִמְרָתְךָ לְעַבְדֶּךָ׃
+    kjv: Let, I pray thee, thy merciful kindness be for my comfort, according to thy word unto thy servant.
+    first_word: יְהִי־
+    key_words:
+    - לְנַחֲמֵנִי
+    - כְּאִמְרָתְךָ
+    - לְעַבְדֶּךָ
+    line_endings:
+    - לְעַבְדֶּךָ
+  - num: 5
+    abs_num: 77
+    hebrew: יְבֹאוּנִי רַחֲמֶיךָ וְאֶחְיֶה כִּי־תוֹרָתְךָ שַׁעֲשֻׁעָי׃
+    kjv: 'Let thy tender mercies come unto me, that I may live: for thy law is my delight.'
+    first_word: יְבֹאוּנִי
+    key_words:
+    - יְבֹאוּנִי
+    - רַחֲמֶיךָ
+    - וְאֶחְיֶה
+    line_endings:
+    - שַׁעֲשֻׁעָי
+  - num: 6
+    abs_num: 78
+    hebrew: יֵבֹשׁוּ זֵדִים כִּי־שֶׁקֶר עִוְּתוּנִי אֲנִי אָשִׂיחַ בְּפִקּוּדֶיךָ׃
+    kjv: 'Let the proud be ashamed; for they dealt perversely with me without a cause: but I will meditate in thy precepts.'
+    first_word: יֵבֹשׁוּ
+    key_words:
+    - בְּפִקּוּדֶיךָ
+    - עִוְּתוּנִי
+    - יֵבֹשׁוּ
+    line_endings:
+    - בְּפִקּוּדֶיךָ
+  - num: 7
+    abs_num: 79
+    hebrew: יָשׁוּבוּ לִי יְרֵאֶיךָ וְיֹדְעֵי עֵדֹתֶיךָ׃
+    kjv: Let those that fear thee turn unto me, and those that have known thy testimonies.
+    first_word: יָשׁוּבוּ
+    key_words:
+    - יָשׁוּבוּ
+    - יְרֵאֶיךָ
+    - וְיֹדְעֵי
+    line_endings:
+    - עֵדֹתֶיךָ
+  - num: 8
+    abs_num: 80
+    hebrew: יְהִי־לִבִּי תָמִים בְּחֻקֶּיךָ לְמַעַן לֹא אֵבוֹשׁ׃
+    kjv: Let my heart be sound in thy statutes; that I be not ashamed.
+    first_word: יְהִי־
+    key_words:
+    - בְּחֻקֶּיךָ
+    - תָמִים
+    - לְמַעַן
+    line_endings:
+    - אֵבוֹשׁ
+- num: 11
+  letter: כ
+  name: Kaf
+  verses:
+  - num: 1
+    abs_num: 81
+    hebrew: כָּלְתָה לִתְשׁוּעָתְךָ נַפְשִׁי לִדְבָרְךָ יִחָלְתִּי׃
+    kjv: 'My soul fainteth for thy salvation: but I hope in thy word.'
+    first_word: כָּלְתָה
+    key_words:
+    - לִתְשׁוּעָתְךָ
+    - לִדְבָרְךָ
+    - יִחָלְתִּי
+    line_endings:
+    - יִחָלְתִּי
+  - num: 2
+    abs_num: 82
+    hebrew: כָּלוּ עֵינַי לְאִמְרָתֶךָ לֵאמֹר מָתַי תְּנַחֲמֵנִי׃
+    kjv: Mine eyes fail for thy word, saying, When wilt thou comfort me?
+    first_word: כָּלוּ
+    key_words:
+    - לְאִמְרָתֶךָ
+    - תְּנַחֲמֵנִי
+    - עֵינַי
+    line_endings:
+    - תְּנַחֲמֵנִי
+  - num: 3
+    abs_num: 83
+    hebrew: כִּי־הָיִיתִי כְּנֹאד בְּקִיטוֹר חֻקֶּיךָ לֹא שָׁכָחְתִּי׃
+    kjv: For I am become like a bottle in the smoke; yet do I not forget thy statutes.
+    first_word: כִּי־
+    key_words:
+    - בְּקִיטוֹר
+    - הָיִיתִי
+    - שָׁכָחְתִּי
+    line_endings:
+    - שָׁכָחְתִּי
+  - num: 4
+    abs_num: 84
+    hebrew: כַּמָּה יְמֵי־עַבְדֶּךָ מָתַי תַּעֲשֶׂה בְרֹדְפַי מִשְׁפָּט׃
+    kjv: How many are the days of thy servant? when wilt thou execute judgment on them that persecute me?
+    first_word: כַּמָּה
+    key_words:
+    - בְרֹדְפַי
+    - עַבְדֶּךָ
+    - תַּעֲשֶׂה
+    line_endings:
+    - מִשְׁפָּט
+  - num: 5
+    abs_num: 85
+    hebrew: כָּרוּ־לִי זֵדִים שִׁיחוֹת אֲשֶׁר לֹא כְתוֹרָתֶךָ׃
+    kjv: The proud have digged pits for me, which are not after thy law.
+    first_word: כָּרוּ־
+    key_words:
+    - כְתוֹרָתֶךָ
+    - שִׁיחוֹת
+    - זֵדִים
+    line_endings:
+    - כְתוֹרָתֶךָ
+  - num: 6
+    abs_num: 86
+    hebrew: כָּל־מִצְוֹתֶיךָ אֱמוּנָה שֶׁקֶר רְדָפוּנִי עָזְרֵנִי׃
+    kjv: 'All thy commandments are faithful: they persecute me wrongfully; help thou me.'
+    first_word: כָּל־
+    key_words:
+    - מִצְוֹתֶיךָ
+    - רְדָפוּנִי
+    - אֱמוּנָה
+    line_endings:
+    - עָזְרֵנִי
+  - num: 7
+    abs_num: 87
+    hebrew: כִּמְעַט כִּלּוּנִי בָאָרֶץ וַאֲנִי לֹא־עָזַבְתִּי פִקֻּודֶיךָ׃
+    kjv: They had almost consumed me upon earth; but I forsook not thy precepts.
+    first_word: כִּמְעַט
+    key_words:
+    - פִקֻּודֶיךָ
+    - כִּלּוּנִי
+    - עָזַבְתִּי
+    line_endings:
+    - פִקֻּודֶיךָ
+  - num: 8
+    abs_num: 88
+    hebrew: כְּחַסְדְּךָ חַיֵּנִי וְאֶשְׁמְרָה עֵדוּת פִּיךָ׃
+    kjv: Quicken me after thy lovingkindness; so shall I keep the testimony of thy mouth.
+    first_word: כְּחַסְדְּךָ
+    key_words:
+    - וְאֶשְׁמְרָה
+    - כְּחַסְדְּךָ
+    - חַיֵּנִי
+    line_endings:
+    - פִּיךָ
+- num: 12
+  letter: ל
+  name: Lamed
+  verses:
+  - num: 1
+    abs_num: 89
+    hebrew: לְעוֹלָם יְהוָה דְּבָרְךָ נִצָּב בַּשָּׁמָיִם׃
+    kjv: For ever, O Lord, thy word is settled in heaven.
+    first_word: לְעוֹלָם
+    key_words:
+    - לְעוֹלָם
+    - בַּשָּׁמָיִם
+    - יְהוָה
+    line_endings:
+    - בַּשָּׁמָיִם
+  - num: 2
+    abs_num: 90
+    hebrew: לְדֹר וָדֹר אֱמוּנָתֶךָ כּוֹנַנְתָּ אֶרֶץ וַתַּעֲמֹד׃
+    kjv: 'Thy faithfulness is unto all generations: thou hast established the earth, and it abideth.'
+    first_word: לְדֹר
+    key_words:
+    - אֱמוּנָתֶךָ
+    - כּוֹנַנְתָּ
+    - וַתַּעֲמֹד
+    line_endings:
+    - וַתַּעֲמֹד
+  - num: 3
+    abs_num: 91
+    hebrew: לְמִשְׁפָּטֶיךָ עָמְדוּ הַיּוֹם כִּי הַכֹּל עֲבָדֶיךָ׃
+    kjv: 'They continue this day according to thine ordinances: for all are thy servants.'
+    first_word: לְמִשְׁפָּטֶיךָ
+    key_words:
+    - לְמִשְׁפָּטֶיךָ
+    - עֲבָדֶיךָ
+    - עָמְדוּ
+    line_endings:
+    - עֲבָדֶיךָ
+  - num: 4
+    abs_num: 92
+    hebrew: לוּלֵי תוֹרָתְךָ שַׁעֲשֻׁעָי אָז אָבַדְתִּי בְעָנְיִי׃
+    kjv: Unless thy law had been my delights, I should then have perished in mine affliction.
+    first_word: לוּלֵי
+    key_words:
+    - תוֹרָתְךָ
+    - שַׁעֲשֻׁעָי
+    - אָבַדְתִּי
+    line_endings:
+    - בְעָנְיִי
+  - num: 5
+    abs_num: 93
+    hebrew: לְעוֹלָם לֹא־אֶשְׁכַּח פִּקּוּדֶיךָ כִּי בָם חִיִּיתָנִי׃
+    kjv: 'I will never forget thy precepts: for with them thou hast quickened me.'
+    first_word: לְעוֹלָם
+    key_words:
+    - פִּקּוּדֶיךָ
+    - חִיִּיתָנִי
+    - לְעוֹלָם
+    line_endings:
+    - חִיִּיתָנִי
+  - num: 6
+    abs_num: 94
+    hebrew: לְךָ־אֲנִי הוֹשִׁיעֵנִי כִּי פִקּוּדֶיךָ דָרָשְׁתִּי׃
+    kjv: I am thine, save me; for I have sought thy precepts.
+    first_word: לְךָ־
+    key_words:
+    - הוֹשִׁיעֵנִי
+    - פִקּוּדֶיךָ
+    - דָרָשְׁתִּי
+    line_endings:
+    - דָרָשְׁתִּי
+  - num: 7
+    abs_num: 95
+    hebrew: לִי קִוּוּ רְשָׁעִים לְאַבְּדֵנִי עֵדֹתֶיךָ אֶתְבּוֹנָן׃
+    kjv: 'The wicked have waited for me to destroy me: but I will consider thy testimonies.'
+    first_word: לִי
+    key_words:
+    - לְאַבְּדֵנִי
+    - אֶתְבּוֹנָן
+    - רְשָׁעִים
+    line_endings:
+    - אֶתְבּוֹנָן
+  - num: 8
+    abs_num: 96
+    hebrew: לְכָל תִּכְלָה רָאִיתִי קֵץ רְחָבָה מִצְוָתְךָ מְאֹד׃
+    kjv: 'I have seen an end of all perfection: but thy commandment is exceeding broad.'
+    first_word: לְכָל
+    key_words:
+    - רָאִיתִי
+    - מִצְוָתְךָ
+    - תִּכְלָה
+    line_endings:
+    - מְאֹד
+- num: 13
+  letter: מ
+  name: Mem
+  verses:
+  - num: 1
+    abs_num: 97
+    hebrew: מָה־אָהַבְתִּי תוֹרָתֶךָ כָּל־הַיּוֹם הִיא שִׂיחָתִי׃
+    kjv: O how love I thy law! it is my meditation all the day.
+    first_word: מָה־
+    key_words:
+    - אָהַבְתִּי
+    - תוֹרָתֶךָ
+    - שִׂיחָתִי
+    line_endings:
+    - שִׂיחָתִי
+  - num: 2
+    abs_num: 98
+    hebrew: מֵאֹיְבַי תְּחַכְּמֵנִי מִצְוֹתֶךָ כִּי לְעוֹלָם הִיא־לִי׃
+    kjv: 'Thou through thy commandments hast made me wiser than mine enemies: for they are ever with me.'
+    first_word: מֵאֹיְבַי
+    key_words:
+    - תְּחַכְּמֵנִי
+    - מֵאֹיְבַי
+    - מִצְוֹתֶךָ
+    line_endings:
+    - לִי
+  - num: 3
+    abs_num: 99
+    hebrew: מִכָּל־מְלַמְּדַי הִשְׂכַּלְתִּי כִּי עֵדְוֹתֶיךָ שִׂיחָה לִֿי׃
+    kjv: 'I have more understanding than all my teachers: for thy testimonies are my meditation.'
+    first_word: מִכָּל־
+    key_words:
+    - הִשְׂכַּלְתִּי
+    - עֵדְוֹתֶיךָ
+    - מְלַמְּדַי
+    line_endings:
+    - לִֿי
+  - num: 4
+    abs_num: 100
+    hebrew: מִזְּקֵנִים אֶתְבּוֹנָן כִּי פִקּוּדֶיךָ נָצָרְתִּי׃
+    kjv: I understand more than the ancients, because I keep thy precepts.
+    first_word: מִזְּקֵנִים
+    key_words:
+    - מִזְּקֵנִים
+    - אֶתְבּוֹנָן
+    - פִקּוּדֶיךָ
+    line_endings:
+    - נָצָרְתִּי
+  - num: 5
+    abs_num: 101
+    hebrew: מִכָּל־אֹרַח רָע כָּלִאתִי רַגְלָי לְמַעַן אֶשְׁמֹר דְּבָרֶךָ׃
+    kjv: I have refrained my feet from every evil way, that I might keep thy word.
+    first_word: מִכָּל־
+    key_words:
+    - כָּלִאתִי
+    - רַגְלָי
+    - לְמַעַן
+    line_endings:
+    - דְּבָרֶךָ
+  - num: 6
+    abs_num: 102
+    hebrew: מִמִּשְׁפָּטֶיךָ לֹא־סָרְתִּי כִּי־אַתָּה הוֹרֵתָנִי׃
+    kjv: 'I have not departed from thy judgments: for thou hast taught me.'
+    first_word: מִמִּשְׁפָּטֶיךָ
+    key_words:
+    - מִמִּשְׁפָּטֶיךָ
+    - הוֹרֵתָנִי
+    - סָרְתִּי
+    line_endings:
+    - הוֹרֵתָנִי
+  - num: 7
+    abs_num: 103
+    hebrew: מַה־נִּמְלְצוּ לְחִכִּי אִמְרָתֶךָ מִדְּבַשׁ לְפִי׃
+    kjv: How sweet are thy words unto my taste! yea, sweeter than honey to my mouth!
+    first_word: מַה־
+    key_words:
+    - נִּמְלְצוּ
+    - אִמְרָתֶךָ
+    - לְחִכִּי
+    line_endings:
+    - לְפִי
+  - num: 8
+    abs_num: 104
+    hebrew: מִפִּקּוּדֶיךָ אֶתְבּוֹנָן עַל־כֵּן שָׂנֵאתִי כָּל־אֹרַח שָׁקֶר׃
+    kjv: 'Through thy precepts I get understanding: therefore I hate every false way.'
+    first_word: מִפִּקּוּדֶיךָ
+    key_words:
+    - מִפִּקּוּדֶיךָ
+    - אֶתְבּוֹנָן
+    - שָׂנֵאתִי
+    line_endings:
+    - שָׁקֶר
+- num: 14
+  letter: נ
+  name: Nun
+  verses:
+  - num: 1
+    abs_num: 105
+    hebrew: נֵר־לְרַגְלִי דְבָרֶךָ וְאוֹר לִנְתִיבָתִי׃
+    kjv: Thy word is a lamp unto my feet, and a light unto my path.
+    first_word: נֵר־
+    key_words:
+    - לִנְתִיבָתִי
+    - לְרַגְלִי
+    - דְבָרֶךָ
+    line_endings:
+    - לִנְתִיבָתִי
+  - num: 2
+    abs_num: 106
+    hebrew: נִשְׁבַּעְתִּי וָאֲקַיֵּמָה לִשְׁמֹר מִשְׁפְּטֵי צִדְקֶךָ׃
+    kjv: I have sworn, and I will perform it, that I will keep thy righteous judgments.
+    first_word: נִשְׁבַּעְתִּי
+    key_words:
+    - נִשְׁבַּעְתִּי
+    - וָאֲקַיֵּמָה
+    - מִשְׁפְּטֵי
+    line_endings:
+    - צִדְקֶךָ
+  - num: 3
+    abs_num: 107
+    hebrew: נַעֲנֵיתִי עַד־מְאֹד יְהוָה חַיֵּנִי כִדְבָרֶךָ׃
+    kjv: 'I am afflicted very much: quicken me, O Lord, according unto thy word.'
+    first_word: נַעֲנֵיתִי
+    key_words:
+    - נַעֲנֵיתִי
+    - כִדְבָרֶךָ
+    - יְהוָה
+    line_endings:
+    - כִדְבָרֶךָ
+  - num: 4
+    abs_num: 108
+    hebrew: נִדְבוֹת פִּי רְצֵה־נָא יְהוָה וּמִשְׁפָּטֶיךָ לַמְּדֵנִי׃
+    kjv: Accept, I beseech thee, the freewill offerings of my mouth, O Lord, and teach me thy judgments.
+    first_word: נִדְבוֹת
+    key_words:
+    - וּמִשְׁפָּטֶיךָ
+    - נִדְבוֹת
+    - לַמְּדֵנִי
+    line_endings:
+    - לַמְּדֵנִי
+  - num: 5
+    abs_num: 109
+    hebrew: נַפְשִׁי בְכַפִּי תָמִיד וְתוֹרָתְךָ לֹא שָׁכָחְתִּי׃
+    kjv: 'My soul is continually in my hand: yet do I not forget thy law.'
+    first_word: נַפְשִׁי
+    key_words:
+    - וְתוֹרָתְךָ
+    - שָׁכָחְתִּי
+    - נַפְשִׁי
+    line_endings:
+    - שָׁכָחְתִּי
+  - num: 6
+    abs_num: 110
+    hebrew: נָתְנוּ רְשָׁעִים פַּח לִי וּמִפִּקּוּדֶיךָ לֹא תָעִיתִי׃
+    kjv: 'The wicked have laid a snare for me: yet I erred not from thy precepts.'
+    first_word: נָתְנוּ
+    key_words:
+    - וּמִפִּקּוּדֶיךָ
+    - רְשָׁעִים
+    - תָעִיתִי
+    line_endings:
+    - תָעִיתִי
+  - num: 7
+    abs_num: 111
+    hebrew: נָחַלְתִּי עֵדְוֹתֶיךָ לְעוֹלָם כִּי־שְׂשׂוֹן לִבִּי הֵמָּה׃
+    kjv: 'Thy testimonies have I taken as an heritage for ever: for they are the rejoicing of my heart.'
+    first_word: נָחַלְתִּי
+    key_words:
+    - עֵדְוֹתֶיךָ
+    - נָחַלְתִּי
+    - לְעוֹלָם
+    line_endings:
+    - הֵמָּה
+  - num: 8
+    abs_num: 112
+    hebrew: נָטִיתִי לִבִּי לַעֲשׂוֹת חֻקֶּיךָ לְעוֹלָם עֵקֶב׃
+    kjv: I have inclined mine heart to perform thy statutes alway, even unto the end.
+    first_word: נָטִיתִי
+    key_words:
+    - נָטִיתִי
+    - לַעֲשׂוֹת
+    - לְעוֹלָם
+    line_endings:
+    - עֵקֶב
+- num: 15
+  letter: ס
+  name: Samek
+  verses:
+  - num: 1
+    abs_num: 113
+    hebrew: סֵעֲפִים שָׂנֵאתִי וְתוֹרָתְךָ אָהָבְתִּי׃
+    kjv: 'I hate vain thoughts: but thy law do I love.'
+    first_word: סֵעֲפִים
+    key_words:
+    - וְתוֹרָתְךָ
+    - סֵעֲפִים
+    - שָׂנֵאתִי
+    line_endings:
+    - אָהָבְתִּי
+  - num: 2
+    abs_num: 114
+    hebrew: סִתְרִי וּמָגִנִּי אָתָּה לִדְבָרְךָ יִחָלְתִּי׃
+    kjv: 'Thou art my hiding place and my shield: I hope in thy word.'
+    first_word: סִתְרִי
+    key_words:
+    - וּמָגִנִּי
+    - לִדְבָרְךָ
+    - יִחָלְתִּי
+    line_endings:
+    - יִחָלְתִּי
+  - num: 3
+    abs_num: 115
+    hebrew: סוּרוּ־מִמֶּנִּי מְרֵעִים וְאֶצְּרָה מִצְוֹת אֱלֹהָי׃
+    kjv: 'Depart from me, ye evildoers: for I will keep the commandments of my God.'
+    first_word: סוּרוּ־
+    key_words:
+    - מְרֵעִים
+    - וְאֶצְּרָה
+    - סוּרוּ
+    line_endings:
+    - אֱלֹהָי
+  - num: 4
+    abs_num: 116
+    hebrew: סָמְכֵנִי כְאִמְרָתְךָ וְאֶחְיֶה וְאַל־תְּבִישֵׁנִי מִשִּׂבְרִי׃
+    kjv: 'Uphold me according unto thy word, that I may live: and let me not be ashamed of my hope.'
+    first_word: סָמְכֵנִי
+    key_words:
+    - כְאִמְרָתְךָ
+    - תְּבִישֵׁנִי
+    - סָמְכֵנִי
+    line_endings:
+    - מִשִּׂבְרִי
+  - num: 5
+    abs_num: 117
+    hebrew: סְעָדֵנִי וְאִוָּשֵׁעָה וְאֶשְׁעָה בְחֻקֶּיךָ תָמִיד׃
+    kjv: 'Hold thou me up, and I shall be safe: and I will have respect unto thy statutes continually.'
+    first_word: סְעָדֵנִי
+    key_words:
+    - וְאִוָּשֵׁעָה
+    - סְעָדֵנִי
+    - וְאֶשְׁעָה
+    line_endings:
+    - תָמִיד
+  - num: 6
+    abs_num: 118
+    hebrew: סָלִיתָ כָּל־שׁוֹגִים מֵחֻקֶּיךָ כִּי־שֶׁקֶר תַּרְמִיתָם׃
+    kjv: 'Thou hast trodden down all them that err from thy statutes: for their deceit is falsehood.'
+    first_word: סָלִיתָ
+    key_words:
+    - תַּרְמִיתָם
+    - שׁוֹגִים
+    - מֵחֻקֶּיךָ
+    line_endings:
+    - תַּרְמִיתָם
+  - num: 7
+    abs_num: 119
+    hebrew: סִגִים הִשְׁבַּתָּ כָל־רִשְׁעֵי־אָרֶץ לָכֵן אָהַבְתִּי עֵדֹתֶיךָ׃
+    kjv: 'Thou puttest away all the wicked of the earth like dross: therefore I love thy testimonies.'
+    first_word: סִגִים
+    key_words:
+    - אָהַבְתִּי
+    - עֵדֹתֶיךָ
+    - סִגִים
+    line_endings:
+    - עֵדֹתֶיךָ
+  - num: 8
+    abs_num: 120
+    hebrew: סָמַר מִפַּחְדְּךָ בְשָׂרִי וּמִמִּשְׁפָּטֶיךָ יָרֵאתִי׃
+    kjv: My flesh trembleth for fear of thee; and I am afraid of thy judgments.
+    first_word: סָמַר
+    key_words:
+    - וּמִמִּשְׁפָּטֶיךָ
+    - מִפַּחְדְּךָ
+    - יָרֵאתִי
+    line_endings:
+    - יָרֵאתִי
+- num: 16
+  letter: ע
+  name: Ayin
+  verses:
+  - num: 1
+    abs_num: 121
+    hebrew: עָשִׂיתִי מִשְׁפָּט וָצֶדֶק בַּל־תַּנִּיחֵנִי לְעֹשְׁקָי׃
+    kjv: 'I have done judgment and justice: leave me not to mine oppressors.'
+    first_word: עָשִׂיתִי
+    key_words:
+    - תַּנִּיחֵנִי
+    - עָשִׂיתִי
+    - לְעֹשְׁקָי
+    line_endings:
+    - לְעֹשְׁקָי
+  - num: 2
+    abs_num: 122
+    hebrew: עֲרֹב עַבְדְּךָ לְטוֹב אַל־יַעַשְׁקֻנִי זֵדִים׃
+    kjv: 'Be surety for thy servant for good: let not the proud oppress me.'
+    first_word: עֲרֹב
+    key_words:
+    - יַעַשְׁקֻנִי
+    - עַבְדְּךָ
+    - לְטוֹב
+    line_endings:
+    - זֵדִים
+  - num: 3
+    abs_num: 123
+    hebrew: עֵינַי כָּלוּ לִישׁוּעָתֶךָ וּלְאִמְרַת צִדְקֶךָ׃
+    kjv: Mine eyes fail for thy salvation, and for the word of thy righteousness.
+    first_word: עֵינַי
+    key_words:
+    - לִישׁוּעָתֶךָ
+    - וּלְאִמְרַת
+    - עֵינַי
+    line_endings:
+    - צִדְקֶךָ
+  - num: 4
+    abs_num: 124
+    hebrew: עֲשֵׂה עִם־עַבְדְּךָ כְחַסְדֶּךָ וְחֻקֶּיךָ לַמְּדֵנִי׃
+    kjv: Deal with thy servant according unto thy mercy, and teach me thy statutes.
+    first_word: עֲשֵׂה
+    key_words:
+    - כְחַסְדֶּךָ
+    - וְחֻקֶּיךָ
+    - לַמְּדֵנִי
+    line_endings:
+    - לַמְּדֵנִי
+  - num: 5
+    abs_num: 125
+    hebrew: עַבְדְּךָ־אָנִי הֲבִינֵנִי וְאֵדְעָה עֵדֹתֶיךָ׃
+    kjv: I am thy servant; give me understanding, that I may know thy testimonies.
+    first_word: עַבְדְּךָ־
+    key_words:
+    - הֲבִינֵנִי
+    - וְאֵדְעָה
+    - עֵדֹתֶיךָ
+    line_endings:
+    - עֵדֹתֶיךָ
+  - num: 6
+    abs_num: 126
+    hebrew: עֵת לַעֲשׂוֹת לַיהוָה הֵפֵרוּ תּוֹרָתֶךָ׃
+    kjv: 'It is time for thee, Lord, to work: for they have made void thy law.'
+    first_word: עֵת
+    key_words:
+    - לַעֲשׂוֹת
+    - לַיהוָה
+    - תּוֹרָתֶךָ
+    line_endings:
+    - תּוֹרָתֶךָ
+  - num: 7
+    abs_num: 127
+    hebrew: עַל־כֵּן אָהַבְתִּי מִצְוֹתֶיךָ מִזָּהָב וּמִפָּז׃
+    kjv: Therefore I love thy commandments above gold; yea, above fine gold.
+    first_word: עַל־
+    key_words:
+    - מִצְוֹתֶיךָ
+    - אָהַבְתִּי
+    - מִזָּהָב
+    line_endings:
+    - וּמִפָּז
+  - num: 8
+    abs_num: 128
+    hebrew: עַל־כֵּן כָּל־פִּקּוּדֵי כֹל יִשָּׁרְתִּי כָּל־אֹרַח שֶׁקֶר שָׂנֵאתִי׃
+    kjv: Therefore I esteem all thy precepts concerning all things to be right; and I hate every false way.
+    first_word: עַל־
+    key_words:
+    - פִּקּוּדֵי
+    - יִשָּׁרְתִּי
+    - שָׂנֵאתִי
+    line_endings:
+    - שָׂנֵאתִי
+- num: 17
+  letter: פ
+  name: Pe
+  verses:
+  - num: 1
+    abs_num: 129
+    hebrew: פְּלָאוֹת עֵדְוֹתֶיךָ עַל־כֵּן נְצָרָתַם נַפְשִׁי׃
+    kjv: 'Thy testimonies are wonderful: therefore doth my soul keep them.'
+    first_word: פְּלָאוֹת
+    key_words:
+    - עֵדְוֹתֶיךָ
+    - פְּלָאוֹת
+    - נְצָרָתַם
+    line_endings:
+    - נַפְשִׁי
+  - num: 2
+    abs_num: 130
+    hebrew: פֵּתַח דְּבָרֶיךָ יָאִיר מֵבִין פְּתָיִים׃
+    kjv: The entrance of thy words giveth light; it giveth understanding unto the simple.
+    first_word: פֵּתַח
+    key_words:
+    - דְּבָרֶיךָ
+    - פְּתָיִים
+    - יָאִיר
+    line_endings:
+    - פְּתָיִים
+  - num: 3
+    abs_num: 131
+    hebrew: פִּי־פָעַרְתִּי וָאֶשְׁאָפָה כִּי לְמִצְוֹתֶיךָ יָאָבְתִּי׃
+    kjv: 'I opened my mouth, and panted: for I longed for thy commandments.'
+    first_word: פִּי־
+    key_words:
+    - לְמִצְוֹתֶיךָ
+    - וָאֶשְׁאָפָה
+    - פָעַרְתִּי
+    line_endings:
+    - יָאָבְתִּי
+  - num: 4
+    abs_num: 132
+    hebrew: פְּנֵה־אֵלַי וְחָנֵּנִי כְּמִשְׁפָּט לְאֹהֲבֵי שְׁמֶךָ׃
+    kjv: Look thou upon me, and be merciful unto me, as thou usest to do unto those that love thy name.
+    first_word: פְּנֵה־
+    key_words:
+    - וְחָנֵּנִי
+    - כְּמִשְׁפָּט
+    - לְאֹהֲבֵי
+    line_endings:
+    - שְׁמֶךָ
+  - num: 5
+    abs_num: 133
+    hebrew: פְּעָמַי הָכֵן בְּאִמְרָתֶךָ וְאַל־תַּשְׁלֶט־בִּי כָל־אָוֶן׃
+    kjv: 'Order my steps in thy word: and let not any iniquity have dominion over me.'
+    first_word: פְּעָמַי
+    key_words:
+    - בְּאִמְרָתֶךָ
+    - פְּעָמַי
+    - תַּשְׁלֶט
+    line_endings:
+    - אָוֶן
+  - num: 6
+    abs_num: 134
+    hebrew: פְּדֵנִי מֵעֹשֶׁק אָדָם וְאֶשְׁמְרָה פִּקּוּדֶיךָ׃
+    kjv: 'Deliver me from the oppression of man: so will I keep thy precepts.'
+    first_word: פְּדֵנִי
+    key_words:
+    - וְאֶשְׁמְרָה
+    - פִּקּוּדֶיךָ
+    - פְּדֵנִי
+    line_endings:
+    - פִּקּוּדֶיךָ
+  - num: 7
+    abs_num: 135
+    hebrew: פָּנֶיךָ הָאֵר בְּעַבְדֶּךָ וְלַמְּדֵנִי אֶת־חֻקֶּיךָ׃
+    kjv: Make thy face to shine upon thy servant; and teach me thy statutes.
+    first_word: פָּנֶיךָ
+    key_words:
+    - וְלַמְּדֵנִי
+    - בְּעַבְדֶּךָ
+    - פָּנֶיךָ
+    line_endings:
+    - חֻקֶּיךָ
+  - num: 8
+    abs_num: 136
+    hebrew: פַּלְגֵי־מַיִם יָרְדוּ עֵינָי עַל לֹא־שָׁמְרוּ תוֹרָתֶךָ׃
+    kjv: Rivers of waters run down mine eyes, because they keep not thy law.
+    first_word: פַּלְגֵי־
+    key_words:
+    - תוֹרָתֶךָ
+    - פַּלְגֵי
+    - יָרְדוּ
+    line_endings:
+    - תוֹרָתֶךָ
+- num: 18
+  letter: צ
+  name: Tsade
+  verses:
+  - num: 1
+    abs_num: 137
+    hebrew: צַדִּיק אַתָּה יְהוָה וְיָשָׁר מִשְׁפָּטֶיךָ׃
+    kjv: Righteous art thou, O Lord, and upright are thy judgments.
+    first_word: צַדִּיק
+    key_words:
+    - מִשְׁפָּטֶיךָ
+    - צַדִּיק
+    - יְהוָה
+    line_endings:
+    - מִשְׁפָּטֶיךָ
+  - num: 2
+    abs_num: 138
+    hebrew: צִוִּיתָ צֶדֶק עֵדֹתֶיךָ וֶאֱמוּנָה מְאֹד׃
+    kjv: Thy testimonies that thou hast commanded are righteous and very faithful.
+    first_word: צִוִּיתָ
+    key_words:
+    - וֶאֱמוּנָה
+    - עֵדֹתֶיךָ
+    - צִוִּיתָ
+    line_endings:
+    - מְאֹד
+  - num: 3
+    abs_num: 139
+    hebrew: צִמְּתַתְנִי קִנְאָתִי כִּי־שָׁכְחוּ דְבָרֶיךָ צָרָי׃
+    kjv: My zeal hath consumed me, because mine enemies have forgotten thy words.
+    first_word: צִמְּתַתְנִי
+    key_words:
+    - צִמְּתַתְנִי
+    - קִנְאָתִי
+    - דְבָרֶיךָ
+    line_endings:
+    - צָרָי
+  - num: 4
+    abs_num: 140
+    hebrew: צְרוּפָה אִמְרָתְךָ מְאֹד וְעַבְדְּךָ אֲהֵבָהּ׃
+    kjv: 'Thy word is very pure: therefore thy servant loveth it.'
+    first_word: צְרוּפָה
+    key_words:
+    - צְרוּפָה
+    - אִמְרָתְךָ
+    - וְעַבְדְּךָ
+    line_endings:
+    - אֲהֵבָהּ
+  - num: 5
+    abs_num: 141
+    hebrew: צָעִיר אָנֹכִי וְנִבְזֶה פִּקֻּדֶיךָ לֹא שָׁכָחְתִּי׃
+    kjv: 'I am small and despised: yet do not I forget thy precepts.'
+    first_word: צָעִיר
+    key_words:
+    - וְנִבְזֶה
+    - פִּקֻּדֶיךָ
+    - שָׁכָחְתִּי
+    line_endings:
+    - שָׁכָחְתִּי
+  - num: 6
+    abs_num: 142
+    hebrew: צִדְקָתְךָ צֶדֶק לְעוֹלָם וְתוֹרָתְךָ אֱמֶת׃
+    kjv: Thy righteousness is an everlasting righteousness, and thy law is the truth.
+    first_word: צִדְקָתְךָ
+    key_words:
+    - וְתוֹרָתְךָ
+    - צִדְקָתְךָ
+    - לְעוֹלָם
+    line_endings:
+    - אֱמֶת
+  - num: 7
+    abs_num: 143
+    hebrew: צַר־וּמָצוֹק מְצָאוּנִי מִצְוֹתֶיךָ שַׁעֲשֻׁעָי׃
+    kjv: 'Trouble and anguish have taken hold on me: yet thy commandments are my delights.'
+    first_word: צַר־
+    key_words:
+    - מְצָאוּנִי
+    - מִצְוֹתֶיךָ
+    - וּמָצוֹק
+    line_endings:
+    - שַׁעֲשֻׁעָי
+  - num: 8
+    abs_num: 144
+    hebrew: צֶדֶק עֵדְוֹתֶיךָ לְעוֹלָם הֲבִינֵנִי וְאֶחְיֶה׃
+    kjv: 'The righteousness of thy testimonies is everlasting: give me understanding, and I shall live.'
+    first_word: צֶדֶק
+    key_words:
+    - עֵדְוֹתֶיךָ
+    - הֲבִינֵנִי
+    - לְעוֹלָם
+    line_endings:
+    - וְאֶחְיֶה
+- num: 19
+  letter: ק
+  name: Qof
+  verses:
+  - num: 1
+    abs_num: 145
+    hebrew: קָרָאתִי בְכָל־לֵב עֲנֵנִי יְהוָה חֻקֶּיךָ אֶצֹּרָה׃
+    kjv: 'I cried with my whole heart; hear me, O Lord: I will keep thy statutes.'
+    first_word: קָרָאתִי
+    key_words:
+    - קָרָאתִי
+    - עֲנֵנִי
+    - יְהוָה
+    line_endings:
+    - אֶצֹּרָה
+  - num: 2
+    abs_num: 146
+    hebrew: קְרָאתִיךָ הוֹשִׁיעֵנִי וְאֶשְׁמְרָה עֵדֹתֶיךָ׃
+    kjv: I cried unto thee; save me, and I shall keep thy testimonies.
+    first_word: קְרָאתִיךָ
+    key_words:
+    - הוֹשִׁיעֵנִי
+    - קְרָאתִיךָ
+    - וְאֶשְׁמְרָה
+    line_endings:
+    - עֵדֹתֶיךָ
+  - num: 3
+    abs_num: 147
+    hebrew: קִדַּמְתִּי בַנֶּשֶׁף וָאֲשַׁוֵּעָה לִדְבָרְךָ יִחָלְתִּי׃
+    kjv: 'I prevented the dawning of the morning, and cried: I hoped in thy word.'
+    first_word: קִדַּמְתִּי
+    key_words:
+    - וָאֲשַׁוֵּעָה
+    - קִדַּמְתִּי
+    - לִדְבָרְךָ
+    line_endings:
+    - יִחָלְתִּי
+  - num: 4
+    abs_num: 148
+    hebrew: קִדְּמוּ עֵינַי אַשְׁמֻרוֹת לָשִׂיחַ בְּאִמְרָתֶךָ׃
+    kjv: Mine eyes prevent the night watches, that I might meditate in thy word.
+    first_word: קִדְּמוּ
+    key_words:
+    - אַשְׁמֻרוֹת
+    - בְּאִמְרָתֶךָ
+    - קִדְּמוּ
+    line_endings:
+    - בְּאִמְרָתֶךָ
+  - num: 5
+    abs_num: 149
+    hebrew: קוֹלִי שִׁמְעָה כְחַסְדֶּךָ יְהוָה כְּמִשְׁפָּטֶךָ חַיֵּנִי׃
+    kjv: 'Hear my voice according unto thy lovingkindness: O Lord, quicken me according to thy judgment.'
+    first_word: קוֹלִי
+    key_words:
+    - כְּמִשְׁפָּטֶךָ
+    - כְחַסְדֶּךָ
+    - קוֹלִי
+    line_endings:
+    - חַיֵּנִי
+  - num: 6
+    abs_num: 150
+    hebrew: קָרְבוּ רֹדְפֵי זִמָּה מִתּוֹרָתְךָ רָחָקוּ׃
+    kjv: 'They draw nigh that follow after mischief: they are far from thy law.'
+    first_word: קָרְבוּ
+    key_words:
+    - מִתּוֹרָתְךָ
+    - קָרְבוּ
+    - רֹדְפֵי
+    line_endings:
+    - רָחָקוּ
+  - num: 7
+    abs_num: 151
+    hebrew: קָרוֹב אַתָּה יְהוָה וְכָל־מִצְוֹתֶיךָ אֱמֶת׃
+    kjv: Thou art near, O Lord; and all thy commandments are truth.
+    first_word: קָרוֹב
+    key_words:
+    - מִצְוֹתֶיךָ
+    - קָרוֹב
+    - יְהוָה
+    line_endings:
+    - אֱמֶת
+  - num: 8
+    abs_num: 152
+    hebrew: קֶדֶם יָדַעְתִּי מֵעֵדֹתֶיךָ כִּי לְעוֹלָם יְסַדְתָּם׃
+    kjv: Concerning thy testimonies, I have known of old that thou hast founded them for ever.
+    first_word: קֶדֶם
+    key_words:
+    - מֵעֵדֹתֶיךָ
+    - יָדַעְתִּי
+    - לְעוֹלָם
+    line_endings:
+    - יְסַדְתָּם
+- num: 20
+  letter: ר
+  name: Resh
+  verses:
+  - num: 1
+    abs_num: 153
+    hebrew: רְאֵה־עָנְיִי וְחַלְּצֵנִי כִּי־תוֹרָתְךָ לֹא שָׁכָחְתִּי׃
+    kjv: 'Consider mine affliction, and deliver me: for I do not forget thy law.'
+    first_word: רְאֵה־
+    key_words:
+    - וְחַלְּצֵנִי
+    - תוֹרָתְךָ
+    - שָׁכָחְתִּי
+    line_endings:
+    - שָׁכָחְתִּי
+  - num: 2
+    abs_num: 154
+    hebrew: רִיבָה רִיבִי וּגְאָלֵנִי לְאִמְרָתְךָ חַיֵּנִי׃
+    kjv: 'Plead my cause, and deliver me: quicken me according to thy word.'
+    first_word: רִיבָה
+    key_words:
+    - וּגְאָלֵנִי
+    - לְאִמְרָתְךָ
+    - רִיבָה
+    line_endings:
+    - חַיֵּנִי
+  - num: 3
+    abs_num: 155
+    hebrew: רָחוֹק מֵרְשָׁעִים יְשׁוּעָה כִּי־חֻקֶּיךָ לֹא דָרָשׁוּ׃
+    kjv: 'Salvation is far from the wicked: for they seek not thy statutes.'
+    first_word: רָחוֹק
+    key_words:
+    - מֵרְשָׁעִים
+    - יְשׁוּעָה
+    - רָחוֹק
+    line_endings:
+    - דָרָשׁוּ
+  - num: 4
+    abs_num: 156
+    hebrew: רַחֲמֶיךָ רַבִּים יְהוָה כְּמִשְׁפָּטֶיךָ חַיֵּנִי׃
+    kjv: 'Great are thy tender mercies, O Lord: quicken me according to thy judgments.'
+    first_word: רַחֲמֶיךָ
+    key_words:
+    - כְּמִשְׁפָּטֶיךָ
+    - רַחֲמֶיךָ
+    - רַבִּים
+    line_endings:
+    - חַיֵּנִי
+  - num: 5
+    abs_num: 157
+    hebrew: רַבִּים רֹדְפַי וְצָרָי מֵעֵדְוֹתֶיךָ לֹא נָטִיתִי׃
+    kjv: Many are my persecutors and mine enemies; yet do I not decline from thy testimonies.
+    first_word: רַבִּים
+    key_words:
+    - מֵעֵדְוֹתֶיךָ
+    - נָטִיתִי
+    - רַבִּים
+    line_endings:
+    - נָטִיתִי
+  - num: 6
+    abs_num: 158
+    hebrew: רָאִיתִי בֹגְדִים וָאֶתְקוֹטָטָה אֲשֶׁר אִמְרָתְךָ לֹא שָׁמָרוּ׃
+    kjv: I beheld the transgressors, and was grieved; because they kept not thy word.
+    first_word: רָאִיתִי
+    key_words:
+    - וָאֶתְקוֹטָטָה
+    - רָאִיתִי
+    - בֹגְדִים
+    line_endings:
+    - שָׁמָרוּ
+  - num: 7
+    abs_num: 159
+    hebrew: רְאֵה כִּי־פִקּוּדֶיךָ אָהָבְתִּי יְהוָה כְּחַסְדְּךָ חַיֵּנִי׃
+    kjv: 'Consider how I love thy precepts: quicken me, O Lord, according to thy lovingkindness.'
+    first_word: רְאֵה
+    key_words:
+    - פִקּוּדֶיךָ
+    - אָהָבְתִּי
+    - כְּחַסְדְּךָ
+    line_endings:
+    - חַיֵּנִי
+  - num: 8
+    abs_num: 160
+    hebrew: רֹאשׁ־דְּבָרְךָ אֱמֶת וּלְעוֹלָם כָּל־מִשְׁפַּט צִדְקֶךָ׃
+    kjv: 'Thy word is true from the beginning: and every one of thy righteous judgments endureth for ever.'
+    first_word: רֹאשׁ־
+    key_words:
+    - וּלְעוֹלָם
+    - דְּבָרְךָ
+    - מִשְׁפַּט
+    line_endings:
+    - צִדְקֶךָ
+- num: 21
+  letter: שׁ
+  name: Shin
+  verses:
+  - num: 1
+    abs_num: 161
+    hebrew: שָׂרִים רְדָפוּנִי חִנָּם וּמִדְּבָרְךָ פָּחַד לִבִּי׃
+    kjv: 'Princes have persecuted me without a cause: but my heart standeth in awe of thy word.'
+    first_word: שָׂרִים
+    key_words:
+    - רְדָפוּנִי
+    - וּמִדְּבָרְךָ
+    - שָׂרִים
+    line_endings:
+    - לִבִּי
+  - num: 2
+    abs_num: 162
+    hebrew: שָׂשׂ אָנֹכִי עַל־אִמְרָתֶךָ כְּמוֹצֵא שָׁלָל רָב׃
+    kjv: I rejoice at thy word, as one that findeth great spoil.
+    first_word: שָׂשׂ
+    key_words:
+    - אִמְרָתֶךָ
+    - כְּמוֹצֵא
+    - אָנֹכִי
+    line_endings:
+    - רָב
+  - num: 3
+    abs_num: 163
+    hebrew: שֶׁקֶר שָׂנֵאתִי וַאֲתַעֵבָה תּוֹרָתְךָ אָהָבְתִּי׃
+    kjv: 'I hate and abhor lying: but thy law do I love.'
+    first_word: שֶׁקֶר
+    key_words:
+    - וַאֲתַעֵבָה
+    - שָׂנֵאתִי
+    - תּוֹרָתְךָ
+    line_endings:
+    - אָהָבְתִּי
+  - num: 4
+    abs_num: 164
+    hebrew: שֶׁבַע בַּיּוֹם הִלַּלְתִּיךָ עַל מִשְׁפְּטֵי צִדְקֶךָ׃
+    kjv: Seven times a day do I praise thee because of thy righteous judgments.
+    first_word: שֶׁבַע
+    key_words:
+    - הִלַּלְתִּיךָ
+    - מִשְׁפְּטֵי
+    - בַּיּוֹם
+    line_endings:
+    - צִדְקֶךָ
+  - num: 5
+    abs_num: 165
+    hebrew: שָׁלוֹם רָב לְאֹהֲבֵי תוֹרָתֶךָ וְאֵין־לָמוֹ מִכְשׁוֹל׃
+    kjv: 'Great peace have they which love thy law: and nothing shall offend them.'
+    first_word: שָׁלוֹם
+    key_words:
+    - לְאֹהֲבֵי
+    - תוֹרָתֶךָ
+    - מִכְשׁוֹל
+    line_endings:
+    - מִכְשׁוֹל
+  - num: 6
+    abs_num: 166
+    hebrew: שִׂבַּרְתִּי לִישׁוּעָתְךָ יְהוָה וּמִצְוֹתֶיךָ עָשִׂיתִי׃
+    kjv: Lord, I have hoped for thy salvation, and done thy commandments.
+    first_word: שִׂבַּרְתִּי
+    key_words:
+    - לִישׁוּעָתְךָ
+    - וּמִצְוֹתֶיךָ
+    - שִׂבַּרְתִּי
+    line_endings:
+    - עָשִׂיתִי
+  - num: 7
+    abs_num: 167
+    hebrew: שָׁמְרָה נַפְשִׁי עֵדֹתֶיךָ וָאֹהֲבֵם מְאֹד׃
+    kjv: My soul hath kept thy testimonies; and I love them exceedingly.
+    first_word: שָׁמְרָה
+    key_words:
+    - עֵדֹתֶיךָ
+    - וָאֹהֲבֵם
+    - שָׁמְרָה
+    line_endings:
+    - מְאֹד
+  - num: 8
+    abs_num: 168
+    hebrew: שָׁמַרְתִּי פִקּוּדֶיךָ וְעֵדֹתֶיךָ כִּי כָל־דְּרָכַי נֶגְדֶּךָ׃
+    kjv: 'I have kept thy precepts and thy testimonies: for all my ways are before thee.'
+    first_word: שָׁמַרְתִּי
+    key_words:
+    - פִקּוּדֶיךָ
+    - וְעֵדֹתֶיךָ
+    - שָׁמַרְתִּי
+    line_endings:
+    - נֶגְדֶּךָ
+- num: 22
+  letter: ת
+  name: Taw
+  verses:
+  - num: 1
+    abs_num: 169
+    hebrew: תִּקְרַב רִנָּתִי לְפָנֶיךָ יְהוָה כִּדְבָרְךָ הֲבִינֵנִי׃
+    kjv: 'Let my cry come near before thee, O Lord: give me understanding according to thy word.'
+    first_word: תִּקְרַב
+    key_words:
+    - הֲבִינֵנִי
+    - לְפָנֶיךָ
+    - כִּדְבָרְךָ
+    line_endings:
+    - הֲבִינֵנִי
+  - num: 2
+    abs_num: 170
+    hebrew: תָּבוֹא תְּחִנָּתִי לְפָנֶיךָ כְּאִמְרָתְךָ הַצִּילֵנִי׃
+    kjv: 'Let my supplication come before thee: deliver me according to thy word.'
+    first_word: תָּבוֹא
+    key_words:
+    - כְּאִמְרָתְךָ
+    - הַצִּילֵנִי
+    - תְּחִנָּתִי
+    line_endings:
+    - הַצִּילֵנִי
+  - num: 3
+    abs_num: 171
+    hebrew: תַּבַּעְנָה שְׂפָתַי תְּהִלָּה כִּי תְלַמְּדֵנִי חֻקֶּיךָ׃
+    kjv: My lips shall utter praise, when thou hast taught me thy statutes.
+    first_word: תַּבַּעְנָה
+    key_words:
+    - תְלַמְּדֵנִי
+    - תַּבַּעְנָה
+    - שְׂפָתַי
+    line_endings:
+    - חֻקֶּיךָ
+  - num: 4
+    abs_num: 172
+    hebrew: תַּעַן לְשׁוֹנִי אִמְרָתֶךָ כִּי כָל־מִצְוֹתֶיךָ צֶּדֶק׃
+    kjv: 'My tongue shall speak of thy word: for all thy commandments are righteousness.'
+    first_word: תַּעַן
+    key_words:
+    - מִצְוֹתֶיךָ
+    - לְשׁוֹנִי
+    - אִמְרָתֶךָ
+    line_endings:
+    - צֶּדֶק
+  - num: 5
+    abs_num: 173
+    hebrew: תְּהִי־יָדְךָ לְעָזְרֵנִי כִּי פִקּוּדֶיךָ בָחָרְתִּי׃
+    kjv: Let thine hand help me; for I have chosen thy precepts.
+    first_word: תְּהִי־
+    key_words:
+    - לְעָזְרֵנִי
+    - פִקּוּדֶיךָ
+    - בָחָרְתִּי
+    line_endings:
+    - בָחָרְתִּי
+  - num: 6
+    abs_num: 174
+    hebrew: תָּאַבְתִּי לִישׁוּעָתְךָ יְהוָה וְתוֹרָתְךָ שַׁעֲשֻׁעָי׃
+    kjv: I have longed for thy salvation, O Lord; and thy law is my delight.
+    first_word: תָּאַבְתִּי
+    key_words:
+    - לִישׁוּעָתְךָ
+    - וְתוֹרָתְךָ
+    - תָּאַבְתִּי
+    line_endings:
+    - שַׁעֲשֻׁעָי
+  - num: 7
+    abs_num: 175
+    hebrew: תְּחִי־נַפְשִׁי וּתְהַלְלֶךָּ וּמִשְׁפָּטֶךָ יַעֲזְרֻנִי׃
+    kjv: Let my soul live, and it shall praise thee; and let thy judgments help me.
+    first_word: תְּחִי־
+    key_words:
+    - וּתְהַלְלֶךָּ
+    - וּמִשְׁפָּטֶךָ
+    - יַעֲזְרֻנִי
+    line_endings:
+    - יַעֲזְרֻנִי
+  - num: 8
+    abs_num: 176
+    hebrew: תָּעִיתִי כְּשֶׂה אֹבֵד בַּקֵּשׁ עַבְדֶּךָ כִּי מִצְוֹתֶיךָ לֹא שָׁכָחְתִּי׃
+    kjv: I have gone astray like a lost sheep; seek thy servant; for I do not forget thy commandments.
+    first_word: תָּעִיתִי
+    key_words:
+    - מִצְוֹתֶיךָ
+    - תָּעִיתִי
+    - שָׁכָחְתִּי
+    line_endings:
+    - שָׁכָחְתִּי

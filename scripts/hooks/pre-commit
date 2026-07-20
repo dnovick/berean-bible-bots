@@ -29,3 +29,10 @@ if git diff --cached --name-only | grep -qE '^(data/lessons/|scripts/build_lesso
     git add mkdocs_nav.yml
     echo "[pre-commit] Done (lessons)."
 fi
+
+if git diff --cached --name-only | grep -qE '^(data/studies/|scripts/build_studies\.py)'; then
+    echo "[pre-commit] Rebuilding mkdocs_src/studies/ ..."
+    .venv/bin/python3 scripts/build_studies.py
+    git add mkdocs_src/studies/ mkdocs_nav.yml
+    echo "[pre-commit] Done (studies)."
+fi
