@@ -20,6 +20,7 @@ __pycache__/
 
 # Output — exports are regenerated; charts are committed alongside reports
 output/exports/
+output/studies/
 
 # MkDocs generated output (built by CI)
 mkdocs_out/
