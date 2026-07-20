@@ -1,0 +1,109 @@
+#!/usr/bin/env python3
+"""Build the MkDocs source tree for all Studies.
+
+Reads data/studies/ and writes generated output to mkdocs_src/studies/.
+Updates the Studies block in mkdocs_nav.yml using sentinel markers
+(# <STUDIES> / # </STUDIES>) so the script can be run standalone
+without touching the rest of the nav.
+
+Run before `mkdocs build` (or let the pre-commit hook do it automatically):
+    python scripts/build_studies.py
+"""
+
+from __future__ import annotations
+
+import re
+import shutil
+from pathlib import Path
+
+_REPO = Path(__file__).resolve().parent.parent
+_DATA_STUDIES = _REPO / "data" / "studies"
+_MKDOCS_STUDIES = _REPO / "mkdocs_src" / "studies"
+_NAV_PATH = _REPO / "mkdocs_nav.yml"
+
+NAV_START = "# <STUDIES>"
+NAV_END = "# </STUDIES>"
+
+# ── Psalm 119 stanzas ─────────────────────────────────────────────────────────
+
+PSALM119_STANZAS = [
+    (1,  "א", "Alef",  1,   8),
+    (2,  "ב", "Bet",   9,  16),
+    (3,  "ג", "Gimel", 17, 24),
+    (4,  "ד", "Dalet", 25, 32),
+    (5,  "ה", "He",    33, 40),
+    (6,  "ו", "Waw",   41, 48),
+    (7,  "ז", "Zayin", 49, 56),
+    (8,  "ח", "Ḥet",   57, 64),
+    (9,  "ט", "Tet",   65, 72),
+    (10, "י", "Yod",   73, 80),
+    (11, "כ", "Kaf",   81, 88),
+    (12, "ל", "Lamed", 89, 96),
+    (13, "מ", "Mem",   97, 104),
+    (14, "נ", "Nun",  105, 112),
+    (15, "ס", "Samek", 113, 120),
+    (16, "ע", "Ayin", 121, 128),
+    (17, "פ", "Pe",   129, 136),
+    (18, "צ", "Tsade", 137, 144),
+    (19, "ק", "Qof",  145, 152),
+    (20, "ר", "Resh", 153, 160),
+    (21, "שׁ", "Shin", 161, 168),
+    (22, "ת", "Taw",  169, 176),
+]
+
+
+# ── Nav helpers ───────────────────────────────────────────────────────────────
+
+def _update_nav(new_block: str) -> None:
+    text = _NAV_PATH.read_text(encoding="utf-8")
+    pattern = rf"{re.escape(NAV_START)}.*?{re.escape(NAV_END)}"
+    replacement = f"{NAV_START}\n{new_block}{NAV_END}"
+    updated = re.sub(pattern, replacement, text, flags=re.DOTALL)
+    _NAV_PATH.write_text(updated, encoding="utf-8")
+
+
+def _build_psalm119_nav() -> str:
+    """Return the Studies nav block for Psalm 119."""
+    mem_dir = _MKDOCS_STUDIES / "psalm-119" / "memorization"
+
+    lines: list[str] = [
+        "- Studies:",
+        "  - Overview: studies/index.md",
+        "  - Psalm 119 — Hebrew Memorization:",
+        "    - Overview: studies/psalm-119/index.md",
+        "    - Analysis — Word Vocabulary & Themes: studies/psalm-119/analysis/psalm-119-report.md",
+        "    - Memorization Exercises:",
+        "      - Overview: studies/psalm-119/memorization/index.md",
+    ]
+
+    for num, letter, name, v_start, v_end in PSALM119_STANZAS:
+        slug = f"{num:02d}-{name.lower().replace('ḥ', 'het')}"
+        section_dir = mem_dir / slug
+        if section_dir.exists():
+            lines.append(
+                f"      - {letter} {name} (vv. {v_start}–{v_end}): "
+                f"studies/psalm-119/memorization/{slug}/index.md"
+            )
+
+    return "\n".join(lines) + "\n"
+
+
+# ── Main ──────────────────────────────────────────────────────────────────────
+
+def main() -> None:
+    _MKDOCS_STUDIES.mkdir(parents=True, exist_ok=True)
+
+    # Copy hand-authored index pages from data/studies/ if present;
+    # otherwise leave the existing mkdocs_src/studies/ files in place.
+    for src in (_DATA_STUDIES / "psalm-119").glob("*.md"):
+        dst = _MKDOCS_STUDIES / "psalm-119" / src.name
+        dst.parent.mkdir(parents=True, exist_ok=True)
+        shutil.copy2(src, dst)
+
+    nav_block = _build_psalm119_nav()
+    _update_nav(nav_block)
+    print("build_studies: Studies nav updated.")
+
+
+if __name__ == "__main__":
+    main()
