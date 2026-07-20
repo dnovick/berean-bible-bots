@@ -473,9 +473,6 @@ nav:
       - 'Syntactic Role Analysis: YHWH/Elohim [OT]': reports/ot/names/role-yhwh-elohim-ot.md
     - OT Book Surveys (Language Profiles):
       - Overview: reports/ot/survey/index.md
-      - Psalm 119 — Word Vocabulary and Thematic Analysis:
-        - Overview: reports/ot/survey/psalm-119/index.md
-        - Psalm 119 — Word Vocabulary and Thematic Analysis: reports/ot/survey/psalm-119/psalm-119-report.md
       - Daniel (Dan) — Language Profile: reports/ot/survey/Dan_profile.md
       - Exodus (Exo) — Language Profile: reports/ot/survey/Exo_profile.md
       - Genesis (Gen) — Language Profile: reports/ot/survey/Gen_profile.md
@@ -735,6 +732,15 @@ nav:
         - 'Session 45 — Introduction to the Hebrew Bible': courses/bbh/bbh-2026.1/sessions/session-45.md
         - 'Session 46 — Final Review and Capstone': courses/bbh/bbh-2026.1/sessions/session-46.md
 # </COURSES>
+# <STUDIES>
+- Studies:
+  - Overview: studies/index.md
+  - Psalm 119 — Hebrew Memorization:
+    - Overview: studies/psalm-119/index.md
+    - Analysis — Word Vocabulary & Themes: studies/psalm-119/analysis/psalm-119-report.md
+    - Memorization Exercises:
+      - Overview: studies/psalm-119/memorization/index.md
+# </STUDIES>
 - Study Helps:
   - Overview: study-helps/index.md
   - New Testament:
