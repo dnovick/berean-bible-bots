@@ -6,13 +6,17 @@ on:
     paths:
       - 'output/reports/**'
       - 'mkdocs.yml'
+      - 'mkdocs_nav.yml'
+      - 'mkdocs_src/**'
       - 'overrides/**'
       - 'docs/**'
       - 'data/courses/**'
       - 'data/lessons/**'
+      - 'data/studies/**'
       - 'scripts/build_mkdocs.py'
       - 'scripts/build_courses.py'
       - 'scripts/build_lessons.py'
+      - 'scripts/build_studies.py'
       - 'scripts/validate_courses.py'
       - 'scripts/validate_lessons.py'
       - 'docs_hooks.py'
@@ -52,6 +56,9 @@ jobs:
 
       - name: Build course pages
         run: python scripts/build_courses.py
+
+      - name: Build studies pages
+        run: python scripts/build_studies.py
 
       - name: Build MkDocs site
         run: mkdocs build
