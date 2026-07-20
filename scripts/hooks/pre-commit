@@ -15,6 +15,28 @@ if [ -n "$modified_pdfs" ]; then
     echo "[pre-commit] Done (exercise PDFs staged)."
 fi
 
+# Auto-stage new or modified PDFs in data/research/, then rebuild the search index.
+research_pdfs=$(
+    { git diff --name-only -- 'data/research/' 2>/dev/null
+      git ls-files --others --exclude-standard -- 'data/research/' 2>/dev/null; } \
+    | grep '\.pdf$' | sort -u || true
+)
+if [ -n "$research_pdfs" ]; then
+    echo "[pre-commit] Auto-staging research PDFs ..."
+    echo "$research_pdfs" | xargs git add
+    echo "[pre-commit] Done (research PDFs staged)."
+fi
+if git diff --cached --name-only | grep -qE '^data/research/.*\.pdf$'; then
+    echo "[pre-commit] Rebuilding research library search index ..."
+    if [ -n "${OPENAI_API_KEY:-}" ]; then
+        .venv/bin/python3 scripts/index_research_library.py
+        echo "[pre-commit] Done (research index)."
+    else
+        echo "[pre-commit] Warning: OPENAI_API_KEY not set — PDFs staged but index not rebuilt."
+        echo "[pre-commit] Run: python scripts/index_research_library.py  (requires API key)"
+    fi
+fi
+
 if git diff --cached --name-only | grep -qE '^(data/courses/|scripts/build_courses\.py)'; then
     echo "[pre-commit] Rebuilding mkdocs_src/courses/ ..."
     .venv/bin/python3 scripts/build_courses.py
