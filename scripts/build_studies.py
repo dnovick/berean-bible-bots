@@ -87,6 +87,7 @@ def _build_psalm119_nav() -> str:
         "  - Psalm 119:",
         "    - Overview: studies/psalm-119/index.md",
         "    - Analysis — Word Vocabulary & Themes: studies/psalm-119/analysis/psalm-119-report.md",
+        "    - Flashcards: studies/psalm-119/flashcards/index.md",
         "    - Memorization Exercises:",
         "      - Overview: studies/psalm-119/memorization/index.md",
     ]
