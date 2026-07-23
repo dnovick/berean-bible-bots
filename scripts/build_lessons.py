@@ -599,16 +599,20 @@ def build_additional_resources_nav() -> list:
         shutil.copy(top_index, dst / "index.md")
         nav_entries.append({"Overview": "lessons/hebrew/additional-resources/index.md"})
 
-    # One subdir per resource; find primary .md for the nav link
+    # One subdir per resource; prefer README.md as the landing page
     for sub in sorted(d for d in src.iterdir() if d.is_dir()):
         sub_dst = dst / sub.name
         sub_dst.mkdir(parents=True, exist_ok=True)
         for f in sub.iterdir():
             if f.is_file():
                 shutil.copy(f, sub_dst / f.name)
-        md_files = [f for f in sub.glob("*.md") if f.name.lower() != "readme.md"]
-        if md_files:
-            md = md_files[0]
+        readme = sub / "README.md"
+        if readme.exists():
+            md: Path | None = readme
+        else:
+            others = [f for f in sub.glob("*.md") if f.name.lower() != "readme.md"]
+            md = others[0] if others else None
+        if md:
             nav_entries.append(
                 {_md_title(sub_dst / md.name):
                  f"lessons/hebrew/additional-resources/{sub.name}/{md.name}"}
