@@ -198,9 +198,10 @@ def build_cloze_l1_html(stanza: dict[str, Any]) -> str:
         blanked = v["hebrew"]
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
+        # Reversed so leftmost input matches leftmost blank in RTL Hebrew display
         inputs = "".join(
             f'<input class="parse-field" id="cl1_{i}_{j}" placeholder="{safe_html(w)[:1]}…" dir="rtl">'
-            for j, (w, _) in enumerate(pairs)
+            for j, (w, _) in enumerate(reversed(pairs))
         )
         body_rows.append(
             f"<tr>"
@@ -211,7 +212,7 @@ def build_cloze_l1_html(stanza: dict[str, Any]) -> str:
             f"</tr>"
         )
         ans_parts = []
-        for word, gloss in pairs:
+        for word, gloss in reversed(pairs):
             gs = f" — {safe_html(gloss)}" if gloss else ""
             ans_parts.append(f"<span class='heb-inline'>{safe_html(word)}</span>{gs}")
         ans_text = " &nbsp;|&nbsp; ".join(ans_parts) if ans_parts else "—"
@@ -238,12 +239,12 @@ def build_cloze_l1_md(stanza: dict[str, Any]) -> str:
         blanked = v["hebrew"]
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
-        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in pairs) or "—"
+        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in reversed(pairs)) or "—"
         lines.append(f"| 119:{v['abs_num']} | {blanked} | {ans} |")
     lines += ["", "---", "", "## Answer Key", "", "| # | Full Verse | Key Word(s) |", "|---|---|---|"]
     for v in stanza["verses"]:
         pairs = _kw_pairs(v.get("key_words") or [])
-        kw = ", ".join(w for w, _ in pairs) or "—"
+        kw = ", ".join(w for w, _ in reversed(pairs)) or "—"
         lines.append(f"| 119:{v['abs_num']} | {v['hebrew']} | {kw} |")
     return "\n".join(lines) + "\n"
 
@@ -277,9 +278,10 @@ def build_cloze_l2_html(stanza: dict[str, Any]) -> str:
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
         n = len(pairs) or 1
+        # Reversed so leftmost input matches leftmost blank in RTL Hebrew display
         inputs = "".join(
             f'<input class="parse-field" id="cl2_{i}_{j}" placeholder="line ending" dir="rtl">'
-            for j in range(n)
+            for j in range(n - 1, -1, -1)
         )
         body_rows.append(
             f"<tr>"
@@ -290,7 +292,7 @@ def build_cloze_l2_html(stanza: dict[str, Any]) -> str:
             f"</tr>"
         )
         ans_parts = []
-        for word, gloss in pairs:
+        for word, gloss in reversed(pairs):
             gs = f" — {safe_html(gloss)}" if gloss else ""
             ans_parts.append(f"<span class='heb-inline'>{safe_html(word)}</span>{gs}")
         ans_text = " &nbsp;|&nbsp; ".join(ans_parts) if ans_parts else "—"
@@ -317,12 +319,12 @@ def build_cloze_l2_md(stanza: dict[str, Any]) -> str:
         blanked = v["hebrew"]
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
-        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in pairs) or "—"
+        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in reversed(pairs)) or "—"
         lines.append(f"| 119:{v['abs_num']} | {blanked} | {ans} |")
     lines += ["", "---", "", "## Answer Key", "", "| # | Full Verse | Line Ending(s) |", "|---|---|---|"]
     for v in stanza["verses"]:
         pairs = _kw_pairs(v.get("line_endings") or [])
-        lines.append(f"| 119:{v['abs_num']} | {v['hebrew']} | {', '.join(w for w, _ in pairs) or '—'} |")
+        lines.append(f"| 119:{v['abs_num']} | {v['hebrew']} | {', '.join(w for w, _ in reversed(pairs)) or '—'} |")
     return "\n".join(lines) + "\n"
 
 
