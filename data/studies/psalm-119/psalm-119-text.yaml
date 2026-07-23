@@ -11,29 +11,69 @@ stanzas:
     key_words:
     - word: הַהֹלְכִים
       gloss: those walk
+      pos: verb
+      lemma: הָלַךְ
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.abs
     - word: תְמִימֵי
       gloss: blameless of
+      pos: adj
+      gender: m
+      number: pl
+      state: cstr
+      lemma: תָּמִים
     - word: בְּתוֹרַת
       gloss: in law of
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      lemma: תּוֹרָה
     line_endings:
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
   - num: 2
     abs_num: 2
     hebrew: אַשְׁרֵי נֹצְרֵי עֵדֹתָיו בְּכָל־לֵב יִדְרְשׁוּהוּ׃
-    kjv: Blessed are they that keep his testimonies, and that seek him with the whole
-      heart.
+    kjv: Blessed are they that keep his testimonies, and that seek him with the whole heart.
     first_word: אַשְׁרֵי
     key_words:
     - word: יִדְרְשׁוּהוּ
       gloss: they seek him
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      suffix: 3ms
+      lemma: דָרַשׁ
     - word: עֵדֹתָיו
       gloss: <of> testimonies his
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 3ms
+      lemma: עֵדֹתֶיךָ
     - word: אַשְׁרֵי
       gloss: how blessed!
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: אַשְׁרֵי
     line_endings:
     - word: יִדְרְשׁוּהוּ
       gloss: they seek him
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      suffix: 3ms
+      lemma: דָרַשׁ
   - num: 3
     abs_num: 3
     hebrew: אַף לֹא־פָעֲלוּ עַוְלָה בִּדְרָכָיו הָלָכוּ׃
@@ -42,13 +82,34 @@ stanzas:
     key_words:
     - word: בִּדְרָכָיו
       gloss: in ways his
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 3ms
+      lemma: דֶּרֶךְ
     - word: פָעֲלוּ
       gloss: they do
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: פָּעַל
     - word: עַוְלָה
       gloss: injustice
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: עַוְלָה
     line_endings:
     - word: הָלָכוּ
       gloss: they walk
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: הָלַךְ
   - num: 4
     abs_num: 4
     hebrew: אַתָּה צִוִּיתָה פִקֻּדֶיךָ לִשְׁמֹר מְאֹד׃
@@ -57,13 +118,33 @@ stanzas:
     key_words:
     - word: צִוִּיתָה
       gloss: you have commanded
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      lemma: צִוָּה
     - word: פִקֻּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: לִשְׁמֹר
       gloss: to keep
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: שָׁמַר
     line_endings:
     - word: מְאֹד
       gloss: exceedingly
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: מְאֹד
   - num: 5
     abs_num: 5
     hebrew: אַחֲלַי יִכֹּנוּ דְרָכָי לִשְׁמֹר חֻקֶּיךָ׃
@@ -72,13 +153,32 @@ stanzas:
     key_words:
     - word: אַחֲלַי
       gloss: would that!
+      pos: particle
+      lemma: אַחֲלֵי
     - word: יִכֹּנוּ
       gloss: they will be steadfast
+      pos: verb
+      stem: Niphal
+      conj: Impf
+      pgn: 3mp
+      lemma: הֵכִין
     - word: דְרָכָי
       gloss: ways my
+      pos: noun
+      gender: c
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: דֶּרֶךְ
     line_endings:
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 6
     abs_num: 6
     hebrew: אָז לֹא־אֵבוֹשׁ בְּהַבִּיטִי אֶל־כָּל־מִצְוֹתֶיךָ׃
@@ -87,29 +187,72 @@ stanzas:
     key_words:
     - word: בְּהַבִּיטִי
       gloss: when look I
+      pos: verb
+      stem: Hiphil
+      conj: InfCstr
+      suffix: 1cs
+      lemma: הִבִּיט
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: אֵבוֹשׁ
       gloss: I will be ashamed
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: הֹבִישׁ
     line_endings:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
   - num: 7
     abs_num: 7
     hebrew: אוֹדְךָ בְּיֹשֶׁר לֵבָב בְּלָמְדִי מִשְׁפְּטֵי צִדְקֶךָ׃
-    kjv: I will praise thee with uprightness of heart, when I shall have learned thy
-      righteous judgments.
+    kjv: I will praise thee with uprightness of heart, when I shall have learned thy righteous judgments.
     first_word: אוֹדְךָ
     key_words:
     - word: בְּלָמְדִי
       gloss: when learn I
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      suffix: 1cs
+      lemma: לָמַד
     - word: מִשְׁפְּטֵי
       gloss: judgments of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: מִשְׁפָּט
     - word: אוֹדְךָ
       gloss: I will give thanks to you
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 1cs
+      suffix: 2ms
+      lemma: וּלְהֹדוֹת
     line_endings:
     - word: צִדְקֶךָ
       gloss: righteousness your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: צֶדֶק
   - num: 8
     abs_num: 8
     hebrew: אֶת־חֻקֶּיךָ אֶשְׁמֹר אַל־תַּעַזְבֵנִי עַד־מְאֹד׃
@@ -118,13 +261,35 @@ stanzas:
     key_words:
     - word: תַּעַזְבֵנִי
       gloss: you forsake me
+      pos: verb
+      stem: Qal
+      conj: Juss
+      pgn: 2ms
+      suffix: 1cs
+      lemma: עָזַב
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
     - word: אֶשְׁמֹר
       gloss: I will keep
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: שָׁמַר
     line_endings:
     - word: מְאֹד
       gloss: exceedingly
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: מְאֹד
 - num: 2
   letter: ב
   name: Bet
@@ -132,19 +297,40 @@ stanzas:
   - num: 1
     abs_num: 9
     hebrew: בַּמֶּה יְזַכֶּה־נַּעַר אֶת־אָרְחוֹ לִשְׁמֹר כִּדְבָרֶךָ׃
-    kjv: Wherewithal shall a young man cleanse his way? by taking heed thereto according
-      to thy word.
+    kjv: Wherewithal shall a young man cleanse his way? by taking heed thereto according to thy word.
     first_word: בַּמֶּה
     key_words:
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: יְזַכֶּה
       gloss: will he keep pure
+      pos: verb
+      stem: Piel
+      conj: Impf
+      pgn: 3ms
     - word: אָרְחוֹ
       gloss: path his
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 3ms
+      lemma: אֹרַח
     line_endings:
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 2
     abs_num: 10
     hebrew: בְּכָל־לִבִּי דְרַשְׁתִּיךָ אַל־תַּשְׁגֵּנִי מִמִּצְוֹתֶיךָ׃
@@ -153,13 +339,37 @@ stanzas:
     key_words:
     - word: מִמִּצְוֹתֶיךָ
       gloss: from commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: דְרַשְׁתִּיךָ
       gloss: I seek you
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      suffix: 2ms
+      lemma: דָרַשׁ
     - word: תַּשְׁגֵּנִי
       gloss: you allow to stray me
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִשְׁגוֹת
     line_endings:
     - word: מִמִּצְוֹתֶיךָ
       gloss: from commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
   - num: 3
     abs_num: 11
     hebrew: בְּלִבִּי צָפַנְתִּי אִמְרָתֶךָ לְמַעַן לֹא אֶחֱטָא־לָךְ׃
@@ -168,13 +378,31 @@ stanzas:
     key_words:
     - word: צָפַנְתִּי
       gloss: I have hidden
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: צָפַן
     - word: אִמְרָתֶךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: בְּלִבִּי
       gloss: in heart my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: לֵב
     line_endings:
     - word: לָךְ
       gloss: to you
+      pos: particle
   - num: 4
     abs_num: 12
     hebrew: בָּרוּךְ אַתָּה יְהוָה לַמְּדֵנִי חֻקֶּיךָ׃
@@ -183,13 +411,33 @@ stanzas:
     key_words:
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     - word: בָּרוּךְ
       gloss: blessed
+      pos: verb
+      stem: Qal
+      conj: Ptc.pass
+      pgn: m.sg.abs
+      lemma: בֵּרַךְ
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 5
     abs_num: 13
     hebrew: בִּשְׂפָתַי סִפַּרְתִּי כֹּל מִשְׁפְּטֵי־פִיךָ׃
@@ -198,13 +446,35 @@ stanzas:
     key_words:
     - word: בִּשְׂפָתַי
       gloss: with lips my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: שָׂפָה
     - word: סִפַּרְתִּי
       gloss: I recount
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: סָפַר
     - word: מִשְׁפְּטֵי
       gloss: judgments of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: מִשְׁפָּט
     line_endings:
     - word: פִיךָ
       gloss: mouth your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: פֶּה
   - num: 6
     abs_num: 14
     hebrew: בְּדֶרֶךְ עֵדְוֹתֶיךָ שַׂשְׂתִּי כְּעַל כָּל־הוֹן׃
@@ -213,13 +483,34 @@ stanzas:
     key_words:
     - word: עֵדְוֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: בְּדֶרֶךְ
       gloss: in way of
+      pos: noun
+      gender: c
+      number: sg
+      state: cstr
+      lemma: דֶּרֶךְ
     - word: שַׂשְׂתִּי
       gloss: I exult
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׂשׂ
     line_endings:
     - word: הוֹן
       gloss: wealth
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: הוֹן
   - num: 7
     abs_num: 15
     hebrew: בְּפִקֻּדֶיךָ אָשִׂיחָה וְאַבִּיטָה אֹרְחֹתֶיךָ׃
@@ -228,13 +519,35 @@ stanzas:
     key_words:
     - word: בְּפִקֻּדֶיךָ
       gloss: on precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: וְאַבִּיטָה
       gloss: and I will pay attention to
+      pos: verb
+      stem: Hiphil
+      conj: InfCstr
+      lemma: הִבִּיט
     - word: אֹרְחֹתֶיךָ
       gloss: paths your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: אֹרַח
     line_endings:
     - word: אֹרְחֹתֶיךָ
       gloss: paths your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: אֹרַח
   - num: 8
     abs_num: 16
     hebrew: בְּחֻקֹּתֶיךָ אֶשְׁתַּעֲשָׁע לֹא אֶשְׁכַּח דְּבָרֶךָ׃
@@ -243,13 +556,34 @@ stanzas:
     key_words:
     - word: בְּחֻקֹּתֶיךָ
       gloss: in statutes your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֻקָּה
     - word: אֶשְׁתַּעֲשָׁע
       gloss: I will delight myself
+      pos: verb
+      stem: Hithpael
+      conj: Impf
+      pgn: 1cs
     - word: אֶשְׁכַּח
       gloss: I will forget
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: שָׁכַח
     line_endings:
     - word: דְּבָרֶךָ
       gloss: word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
 - num: 3
   letter: ג
   name: Gimel
@@ -262,13 +596,34 @@ stanzas:
     key_words:
     - word: וְאֶשְׁמְרָה
       gloss: and I will keep
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: שָׁמַר
     - word: עַבְדְּךָ
       gloss: servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     - word: אֶחְיֶה
       gloss: I will live
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: חַי
     line_endings:
     - word: דְבָרֶךָ
       gloss: word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 2
     abs_num: 18
     hebrew: גַּל־עֵינַי וְאַבִּיטָה נִפְלָאוֹת מִתּוֹרָתֶךָ׃
@@ -277,13 +632,34 @@ stanzas:
     key_words:
     - word: וְאַבִּיטָה
       gloss: and I will pay attention to
+      pos: verb
+      stem: Hiphil
+      conj: InfCstr
+      lemma: הִבִּיט
     - word: נִפְלָאוֹת
       gloss: wonderful
+      pos: verb
+      stem: Niphal
+      conj: Ptc.act
+      pgn: f.pl.abs
+      lemma: הִפְלִיא
     - word: מִתּוֹרָתֶךָ
       gloss: from law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     line_endings:
     - word: מִתּוֹרָתֶךָ
       gloss: from law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
   - num: 3
     abs_num: 19
     hebrew: גֵּר אָנֹכִי בָאָרֶץ אַל־תַּסְתֵּר מִמֶּנִּי מִצְוֹתֶיךָ׃
@@ -292,13 +668,32 @@ stanzas:
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: אָנֹכִי
       gloss: I
+      pos: pronoun
+      lemma: אָנֹכִי
     - word: בָאָרֶץ
       gloss: on the earth
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: אֶרֶץ
     line_endings:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
   - num: 4
     abs_num: 20
     hebrew: גָּרְסָה נַפְשִׁי לְתַאֲבָה אֶל־מִשְׁפָּטֶיךָ בְכָל־עֵת׃
@@ -307,13 +702,33 @@ stanzas:
     key_words:
     - word: מִשְׁפָּטֶיךָ
       gloss: judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: לְתַאֲבָה
       gloss: for longing
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: לְתַאֲבָה
     - word: גָּרְסָה
       gloss: it is crushed
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3fs
     line_endings:
     - word: עֵת
       gloss: time
+      pos: noun
+      gender: c
+      number: sg
+      state: abs
+      lemma: עֵת
   - num: 5
     abs_num: 21
     hebrew: גָּעַרְתָּ זֵדִים אֲרוּרִים הַשֹּׁגִים מִמִּצְוֹתֶיךָ׃
@@ -322,13 +737,34 @@ stanzas:
     key_words:
     - word: מִמִּצְוֹתֶיךָ
       gloss: from commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: אֲרוּרִים
       gloss: cursed
+      pos: verb
+      stem: Qal
+      conj: Ptc.pass
+      pgn: m.pl.abs
     - word: הַשֹּׁגִים
       gloss: who go astray
+      pos: verb
+      lemma: לִשְׁגוֹת
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.abs
     line_endings:
     - word: מִמִּצְוֹתֶיךָ
       gloss: from commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
   - num: 6
     abs_num: 22
     hebrew: גַּל מֵעָלַי חֶרְפָּה וָבוּז כִּי עֵדֹתֶיךָ נָצָרְתִּי׃
@@ -337,29 +773,68 @@ stanzas:
     key_words:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: נָצָרְתִּי
       gloss: I observe
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: וְאֶצְּרָה
     - word: מֵעָלַי
       gloss: from on <the> me
+      pos: particle
+      lemma: וְעַל
     line_endings:
     - word: נָצָרְתִּי
       gloss: I observe
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: וְאֶצְּרָה
   - num: 7
     abs_num: 23
     hebrew: גַּם יָשְׁבוּ שָׂרִים בִּי נִדְבָּרוּ עַבְדְּךָ יָשִׂיחַ בְּחֻקֶּיךָ׃
-    kjv: 'Princes also did sit and speak against me: but thy servant did meditate
-      in thy statutes.'
+    kjv: 'Princes also did sit and speak against me: but thy servant did meditate in thy statutes.'
     first_word: גַּם
     key_words:
     - word: נִדְבָּרוּ
       gloss: they speak together
+      pos: verb
+      stem: Niphal
+      conj: Perf
+      pgn: 3cp
+      lemma: דִּבֶּר
     - word: בְּחֻקֶּיךָ
       gloss: on decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
     - word: יָשְׁבוּ
       gloss: they sit
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: יָשַׁב
     line_endings:
     - word: בְּחֻקֶּיךָ
       gloss: on decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 8
     abs_num: 24
     hebrew: גַּם־עֵדֹתֶיךָ שַׁעֲשֻׁעָי אַנְשֵׁי עֲצָתִי׃
@@ -368,13 +843,36 @@ stanzas:
     key_words:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: שַׁעֲשֻׁעָי
       gloss: delight<s> my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: שַׁעֲשֻׁעִים
     - word: אַנְשֵׁי
       gloss: people of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: אֱנוֹשׁ
     line_endings:
     - word: עֲצָתִי
       gloss: counsel my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: עֵצָה
 - num: 4
   letter: ד
   name: Dalet
@@ -387,13 +885,35 @@ stanzas:
     key_words:
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: דָּבְקָה
       gloss: it clings
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3fs
+      lemma: דָּבַק
     - word: לֶעָפָר
       gloss: to the dust
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עָפָר
     line_endings:
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 2
     abs_num: 26
     hebrew: דְּרָכַי סִפַּרְתִּי וַתַּעֲנֵנִי לַמְּדֵנִי חֻקֶּיךָ׃
@@ -402,29 +922,75 @@ stanzas:
     key_words:
     - word: וַתַּעֲנֵנִי
       gloss: and you answered me
+      pos: verb
+      stem: Qal
+      conj: w
+      pgn: 2ms
+      suffix: 1cs
+      lemma: עָנָה
     - word: סִפַּרְתִּי
       gloss: I recount
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: סָפַר
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     line_endings:
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 3
     abs_num: 27
     hebrew: דֶּרֶךְ־פִּקּוּדֶיךָ הֲבִינֵנִי וְאָשִׂיחָה בְּנִפְלְאוֹתֶיךָ׃
-    kjv: 'Make me to understand the way of thy precepts: so shall I talk of thy wondrous
-      works.'
+    kjv: 'Make me to understand the way of thy precepts: so shall I talk of thy wondrous works.'
     first_word: דֶּרֶךְ־
     key_words:
     - word: בְּנִפְלְאוֹתֶיךָ
       gloss: on wonders your
+      pos: verb
+      stem: Niphal
+      conj: Ptc.act
+      pgn: f.pl.cstr
+      suffix: 2ms
+      lemma: הִפְלִיא
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: הֲבִינֵנִי
       gloss: give understanding of me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵבִין
     line_endings:
     - word: בְּנִפְלְאוֹתֶיךָ
       gloss: on wonders your
+      pos: verb
+      stem: Niphal
+      conj: Ptc.act
+      pgn: f.pl.cstr
+      suffix: 2ms
+      lemma: הִפְלִיא
   - num: 4
     abs_num: 28
     hebrew: דָּלְפָה נַפְשִׁי מִתּוּגָה קַיְּמֵנִי כִּדְבָרֶךָ׃
@@ -433,13 +999,36 @@ stanzas:
     key_words:
     - word: מִתּוּגָה
       gloss: from grief
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: תוּגָה
     - word: קַיְּמֵנִי
       gloss: strengthen me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵקִים
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     line_endings:
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 5
     abs_num: 29
     hebrew: דֶּרֶךְ־שֶׁקֶר הָסֵר מִמֶּנִּי וְתוֹרָתְךָ חָנֵּנִי׃
@@ -448,13 +1037,33 @@ stanzas:
     key_words:
     - word: וְתוֹרָתְךָ
       gloss: and law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: מִמֶּנִּי
       gloss: from me
+      pos: particle
+      lemma: וּמִן
     - word: חָנֵּנִי
       gloss: show favor to me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חָנַן
     line_endings:
     - word: חָנֵּנִי
       gloss: show favor to me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חָנַן
   - num: 6
     abs_num: 30
     hebrew: דֶּרֶךְ־אֱמוּנָה בָחָרְתִּי מִשְׁפָּטֶיךָ שִׁוִּיתִי׃
@@ -463,13 +1072,34 @@ stanzas:
     key_words:
     - word: מִשְׁפָּטֶיךָ
       gloss: judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: אֱמוּנָה
       gloss: faithfulness
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: אֱמוּנָה
     - word: בָחָרְתִּי
       gloss: I have chosen
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: בָּחַר
     line_endings:
     - word: שִׁוִּיתִי
       gloss: I have placed
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁוָה
   - num: 7
     abs_num: 31
     hebrew: דָּבַקְתִּי בְעֵדְוֹתֶיךָ יְהוָה אַל־תְּבִישֵׁנִי׃
@@ -478,13 +1108,36 @@ stanzas:
     key_words:
     - word: בְעֵדְוֹתֶיךָ
       gloss: to testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: תְּבִישֵׁנִי
       gloss: you put to shame me
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֹבִישׁ
     - word: דָּבַקְתִּי
       gloss: I have clung
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: דָּבַק
     line_endings:
     - word: תְּבִישֵׁנִי
       gloss: you put to shame me
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֹבִישׁ
   - num: 8
     abs_num: 32
     hebrew: דֶּרֶךְ־מִצְוֹתֶיךָ אָרוּץ כִּי תַרְחִיב לִבִּי׃
@@ -493,13 +1146,35 @@ stanzas:
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: תַרְחִיב
       gloss: you enlarge
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 2ms
+      lemma: רָחַב
     - word: אָרוּץ
       gloss: I run
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: רָץ
     line_endings:
     - word: לִבִּי
       gloss: heart my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: לֵב
 - num: 5
   letter: ה
   name: He
@@ -512,29 +1187,69 @@ stanzas:
     key_words:
     - word: וְאֶצְּרֶנָּה
       gloss: so I may observe it
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 1cs
+      suffix: 3fs
+      lemma: וְאֶצְּרָה
     - word: הוֹרֵנִי
       gloss: teach me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: וּלְהוֹרֹת
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: עֵקֶב
       gloss: end
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עֵקֶב
   - num: 2
     abs_num: 34
     hebrew: הֲבִינֵנִי וְאֶצְּרָה תוֹרָתֶךָ וְאֶשְׁמְרֶנָּה בְכָל־לֵב׃
-    kjv: Give me understanding, and I shall keep thy law; yea, I shall observe it
-      with my whole heart.
+    kjv: Give me understanding, and I shall keep thy law; yea, I shall observe it with my whole heart.
     first_word: הֲבִינֵנִי
     key_words:
     - word: וְאֶשְׁמְרֶנָּה
       gloss: so I may keep it
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 1cs
+      suffix: 3fs
+      lemma: שָׁמַר
     - word: הֲבִינֵנִי
       gloss: give understanding of me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵבִין
     - word: וְאֶצְּרָה
       gloss: so let me observe
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: וְאֶצְּרָה
     line_endings:
     - word: לֵב
       gloss: heart
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: לֵב
   - num: 3
     abs_num: 35
     hebrew: הַדְרִיכֵנִי בִּנְתִיב מִצְוֹתֶיךָ כִּי־בוֹ חָפָצְתִּי׃
@@ -543,13 +1258,35 @@ stanzas:
     key_words:
     - word: הַדְרִיכֵנִי
       gloss: lead me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: דָּרַךְ
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: בִּנְתִיב
       gloss: in path of
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      lemma: נָתִיב
     line_endings:
     - word: חָפָצְתִּי
       gloss: I delight
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: חָפֵץ
   - num: 4
     abs_num: 36
     hebrew: הַט־לִבִּי אֶל־עֵדְוֹתֶיךָ וְאַל אֶל־בָּצַע׃
@@ -558,13 +1295,32 @@ stanzas:
     key_words:
     - word: עֵדְוֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: לִבִּי
       gloss: heart my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: לֵב
     - word: וְאַל
       gloss: and may not
+      pos: particle
+      lemma: וְאַל
     line_endings:
     - word: בָּצַע
       gloss: unjust gain
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: בָּצַע
   - num: 5
     abs_num: 37
     hebrew: הַעֲבֵר עֵינַי מֵרְאוֹת שָׁוְא בִּדְרָכֶךָ חַיֵּנִי׃
@@ -573,13 +1329,34 @@ stanzas:
     key_words:
     - word: מֵרְאוֹת
       gloss: from looking at
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: רָאָה
     - word: בִּדְרָכֶךָ
       gloss: in ways your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: דֶּרֶךְ
     - word: הַעֲבֵר
       gloss: take away
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      lemma: הֶעֱבִיר
     line_endings:
     - word: חַיֵּנִי
       gloss: preserve alive me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
   - num: 6
     abs_num: 38
     hebrew: הָקֵם לְעַבְדְּךָ אִמְרָתֶךָ אֲשֶׁר לְיִרְאָתֶךָ׃
@@ -588,13 +1365,35 @@ stanzas:
     key_words:
     - word: לְיִרְאָתֶךָ
       gloss: for fear your
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      suffix: 2ms
+      lemma: יִרְאָה
     - word: לְעַבְדְּךָ
       gloss: to servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     - word: אִמְרָתֶךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     line_endings:
     - word: לְיִרְאָתֶךָ
       gloss: for fear your
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      suffix: 2ms
+      lemma: יִרְאָה
   - num: 7
     abs_num: 39
     hebrew: הַעֲבֵר חֶרְפָּתִי אֲשֶׁר יָגֹרְתִּי כִּי מִשְׁפָּטֶיךָ טוֹבִים׃
@@ -603,13 +1402,34 @@ stanzas:
     key_words:
     - word: מִשְׁפָּטֶיךָ
       gloss: judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: חֶרְפָּתִי
       gloss: reproach my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: חֶרְפָּה
     - word: יָגֹרְתִּי
       gloss: I dread
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
     line_endings:
     - word: טוֹבִים
       gloss: good
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: טוֹב
   - num: 8
     abs_num: 40
     hebrew: הִנֵּה תָּאַבְתִּי לְפִקֻּדֶיךָ בְּצִדְקָתְךָ חַיֵּנִי׃
@@ -618,13 +1438,35 @@ stanzas:
     key_words:
     - word: לְפִקֻּדֶיךָ
       gloss: for precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: בְּצִדְקָתְךָ
       gloss: in righteousness your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: וּצְדָקָה
     - word: תָּאַבְתִּי
       gloss: I long
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
     line_endings:
     - word: חַיֵּנִי
       gloss: preserve alive me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
 - num: 6
   letter: ו
   name: Waw
@@ -632,51 +1474,112 @@ stanzas:
   - num: 1
     abs_num: 41
     hebrew: וִיבֹאֻנִי חֲסָדֶךָ יְהוָה תְּשׁוּעָתְךָ כְּאִמְרָתֶךָ׃
-    kjv: Let thy mercies come also unto me, O Lord, even thy salvation, according
-      to thy word.
+    kjv: Let thy mercies come also unto me, O Lord, even thy salvation, according to thy word.
     first_word: וִיבֹאֻנִי
     key_words:
     - word: וִיבֹאֻנִי
       gloss: and may they come to me
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 3mp
+      suffix: 1cs
+      lemma: בָּא
     - word: תְּשׁוּעָתְךָ
       gloss: salvation your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תְּשׁוּעָה
     - word: כְּאִמְרָתֶךָ
       gloss: according to word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     line_endings:
     - word: כְּאִמְרָתֶךָ
       gloss: according to word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
   - num: 2
     abs_num: 42
     hebrew: וְאֶעֱנֶה חֹרְפִי דָבָר כִּי־בָטַחְתִּי בִּדְבָרֶךָ׃
-    kjv: 'So shall I have wherewith to answer him that reproacheth me: for I trust
-      in thy word.'
+    kjv: 'So shall I have wherewith to answer him that reproacheth me: for I trust in thy word.'
     first_word: וְאֶעֱנֶה
     key_words:
     - word: וְאֶעֱנֶה
       gloss: so I may answer
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 1cs
+      lemma: עָנָה
     - word: בָטַחְתִּי
       gloss: I trust
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: בָטַח
     - word: בִּדְבָרֶךָ
       gloss: in word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     line_endings:
     - word: בִּדְבָרֶךָ
       gloss: in word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 3
     abs_num: 43
     hebrew: וְאַל־תַּצֵּל מִפִּי דְבַר־אֱמֶת עַד־מְאֹד כִּי לְמִשְׁפָּטֶךָ יִחָלְתִּי׃
-    kjv: And take not the word of truth utterly out of my mouth; for I have hoped
-      in thy judgments.
+    kjv: And take not the word of truth utterly out of my mouth; for I have hoped in thy judgments.
     first_word: וְאַל־
     key_words:
     - word: לְמִשְׁפָּטֶךָ
       gloss: for judgments your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
     - word: וְאַל
       gloss: and may not
+      pos: particle
+      lemma: וְאַל
     line_endings:
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
   - num: 4
     abs_num: 44
     hebrew: וְאֶשְׁמְרָה תוֹרָתְךָ תָמִיד לְעוֹלָם וָעֶד׃
@@ -685,13 +1588,33 @@ stanzas:
     key_words:
     - word: וְאֶשְׁמְרָה
       gloss: and I will keep
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: שָׁמַר
     - word: תוֹרָתְךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     line_endings:
     - word: וָעֶד
       gloss: and ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: וָעֶד
   - num: 5
     abs_num: 45
     hebrew: וְאֶתְהַלְּכָה בָרְחָבָה כִּי פִקֻּדֶיךָ דָרָשְׁתִּי׃
@@ -700,13 +1623,33 @@ stanzas:
     key_words:
     - word: וְאֶתְהַלְּכָה
       gloss: and I will walk about
+      pos: verb
+      stem: Hithpael
+      conj: InfCstr
+      lemma: הָלַךְ
     - word: בָרְחָבָה
       gloss: in the broad place
+      pos: adj
+      gender: f
+      number: sg
+      state: abs
+      lemma: רָחָב
     - word: פִקֻּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     line_endings:
     - word: דָרָשְׁתִּי
       gloss: I have sought
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: דָרַשׁ
   - num: 6
     abs_num: 46
     hebrew: וַאֲדַבְּרָה בְעֵדֹתֶיךָ נֶגֶד מְלָכִים וְלֹא אֵבוֹשׁ׃
@@ -715,13 +1658,33 @@ stanzas:
     key_words:
     - word: וַאֲדַבְּרָה
       gloss: and I will speak
+      pos: verb
+      stem: Piel
+      conj: InfCstr
+      lemma: דִּבֶּר
     - word: בְעֵדֹתֶיךָ
       gloss: in testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: מְלָכִים
       gloss: kings
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: מֶלֶךְ
     line_endings:
     - word: אֵבוֹשׁ
       gloss: I will be ashamed
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: הֹבִישׁ
   - num: 7
     abs_num: 47
     hebrew: וְאֶשְׁתַּעֲשַׁע בְּמִצְוֹתֶיךָ אֲשֶׁר אָהָבְתִּי׃
@@ -730,29 +1693,69 @@ stanzas:
     key_words:
     - word: וְאֶשְׁתַּעֲשַׁע
       gloss: and I may delight myself
+      pos: verb
+      stem: Hithpael
+      conj: u
+      pgn: 1cs
     - word: בְּמִצְוֹתֶיךָ
       gloss: in commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: אָהָבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
     line_endings:
     - word: אָהָבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
   - num: 8
     abs_num: 48
     hebrew: וְאֶשָּׂא־כַפַּי אֶל־מִצְוֹתֶיךָ אֲשֶׁר אָהָבְתִּי וְאָשִׂיחָה בְחֻקֶּיךָ׃
-    kjv: My hands also will I lift up unto thy commandments, which I have loved; and
-      I will meditate in thy statutes.
+    kjv: My hands also will I lift up unto thy commandments, which I have loved; and I will meditate in thy statutes.
     first_word: וְאֶשָּׂא־
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: וְאָשִׂיחָה
       gloss: so let me meditate
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: אָשִׂיחָה
     - word: אָהָבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
     line_endings:
     - word: בְחֻקֶּיךָ
       gloss: on decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
 - num: 7
   letter: ז
   name: Zayin
@@ -765,13 +1768,36 @@ stanzas:
     key_words:
     - word: יִחַלְתָּנִי
       gloss: you have made hope me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: וַאֲיַחֲלָה
     - word: לְעַבְדֶּךָ
       gloss: to servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     - word: זְכֹר
       gloss: remember
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      lemma: זָכַר
     line_endings:
     - word: יִחַלְתָּנִי
       gloss: you have made hope me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: וַאֲיַחֲלָה
   - num: 2
     abs_num: 50
     hebrew: זֹאת נֶחָמָתִי בְעָנְיִי כִּי אִמְרָתְךָ חִיָּתְנִי׃
@@ -780,29 +1806,74 @@ stanzas:
     key_words:
     - word: נֶחָמָתִי
       gloss: comfort my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: נֶחָמָתִי
     - word: בְעָנְיִי
       gloss: in affliction my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: עֹנִי
     - word: אִמְרָתְךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     line_endings:
     - word: חִיָּתְנִי
       gloss: it has preserved alive me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 3fs
+      suffix: 1cs
+      lemma: חַי
   - num: 3
     abs_num: 51
     hebrew: זֵדִים הֱלִיצֻנִי עַד־מְאֹד מִתּוֹרָתְךָ לֹא נָטִיתִי׃
-    kjv: 'The proud have had me greatly in derision: yet have I not declined from
-      thy law.'
+    kjv: 'The proud have had me greatly in derision: yet have I not declined from thy law.'
     first_word: זֵדִים
     key_words:
     - word: הֱלִיצֻנִי
       gloss: they have mocked me
+      pos: verb
+      stem: Hiphil
+      conj: Perf
+      pgn: 3cp
+      suffix: 1cs
+      lemma: לֵץ
     - word: מִתּוֹרָתְךָ
       gloss: from law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: נָטִיתִי
       gloss: I have turned aside
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: נָטָה
     line_endings:
     - word: נָטִיתִי
       gloss: I have turned aside
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: נָטָה
   - num: 4
     abs_num: 52
     hebrew: זָכַרְתִּי מִשְׁפָּטֶיךָ מֵעוֹלָם יְהוָה וָאֶתְנֶחָם׃
@@ -811,13 +1882,34 @@ stanzas:
     key_words:
     - word: מִשְׁפָּטֶיךָ
       gloss: judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: וָאֶתְנֶחָם
       gloss: and I have comforted myself
+      pos: verb
+      stem: Hithpael
+      conj: w
+      pgn: 1cs
+      lemma: נִחַם
     - word: זָכַרְתִּי
       gloss: I remember
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: זָכַר
     line_endings:
     - word: וָאֶתְנֶחָם
       gloss: and I have comforted myself
+      pos: verb
+      stem: Hithpael
+      conj: w
+      pgn: 1cs
+      lemma: נִחַם
   - num: 5
     abs_num: 53
     hebrew: זַלְעָפָה אֲחָזַתְנִי מֵרְשָׁעִים עֹזְבֵי תּוֹרָתֶךָ׃
@@ -826,13 +1918,35 @@ stanzas:
     key_words:
     - word: אֲחָזַתְנִי
       gloss: it has seized me
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3fs
+      suffix: 1cs
+      lemma: אָחַז
     - word: מֵרְשָׁעִים
       gloss: from wicked
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: רָשָׁע
     - word: זַלְעָפָה
       gloss: burning indignation
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: זַלְעָפָה
     line_endings:
     - word: תּוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
   - num: 6
     abs_num: 54
     hebrew: זְמִרוֹת הָיוּ־לִי חֻקֶּיךָ בְּבֵית מְגוּרָי׃
@@ -841,13 +1955,36 @@ stanzas:
     key_words:
     - word: זְמִרוֹת
       gloss: songs
+      pos: noun
+      gender: f
+      number: pl
+      state: abs
+      lemma: זְמִרוֹת
     - word: מְגוּרָי
       gloss: sojournings my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: מְגוּרֵי
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
     line_endings:
     - word: מְגוּרָי
       gloss: sojournings my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: מְגוּרֵי
   - num: 7
     abs_num: 55
     hebrew: זָכַרְתִּי בַלַּיְלָה שִׁמְךָ יְהוָה וָאֶשְׁמְרָה תּוֹרָתֶךָ׃
@@ -856,13 +1993,35 @@ stanzas:
     key_words:
     - word: וָאֶשְׁמְרָה
       gloss: and I will keep
+      pos: verb
+      stem: Qal
+      conj: w
+      pgn: 1cs
+      suffix: h
+      lemma: שָׁמַר
     - word: זָכַרְתִּי
       gloss: I remember
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: זָכַר
     - word: בַלַּיְלָה
       gloss: in the night
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: לַיְלָה
     line_endings:
     - word: תּוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
   - num: 8
     abs_num: 56
     hebrew: זֹאת הָיְתָה־לִּי כִּי פִקֻּדֶיךָ נָצָרְתִּי׃
@@ -871,13 +2030,34 @@ stanzas:
     key_words:
     - word: פִקֻּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: נָצָרְתִּי
       gloss: I observe
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: וְאֶצְּרָה
     - word: הָיְתָה
       gloss: it has belonged
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3fs
+      lemma: הָיָה
     line_endings:
     - word: נָצָרְתִּי
       gloss: I observe
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: וְאֶצְּרָה
 - num: 8
   letter: ח
   name: Ḥet
@@ -890,29 +2070,74 @@ stanzas:
     key_words:
     - word: אָמַרְתִּי
       gloss: I have said
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָמַר
     - word: דְּבָרֶיךָ
       gloss: words your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: חֶלְקִי
       gloss: portion my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: חֵלֶק
     line_endings:
     - word: דְּבָרֶיךָ
       gloss: words your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 2
     abs_num: 58
     hebrew: חִלִּיתִי פָנֶיךָ בְכָל־לֵב חָנֵּנִי כְּאִמְרָתֶךָ׃
-    kjv: 'I intreated thy favour with my whole heart: be merciful unto me according
-      to thy word.'
+    kjv: 'I intreated thy favour with my whole heart: be merciful unto me according to thy word.'
     first_word: חִלִּיתִי
     key_words:
     - word: כְּאִמְרָתֶךָ
       gloss: according to word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: חִלִּיתִי
       gloss: I have entreated
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: חִלָּה
     - word: פָנֶיךָ
       gloss: face your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פָּנִים
     line_endings:
     - word: כְּאִמְרָתֶךָ
       gloss: according to word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
   - num: 3
     abs_num: 59
     hebrew: חִשַּׁבְתִּי דְרָכָי וָאָשִׁיבָה רַגְלַי אֶל־עֵדֹתֶיךָ׃
@@ -921,13 +2146,35 @@ stanzas:
     key_words:
     - word: וָאָשִׁיבָה
       gloss: and I have turned back !
+      pos: verb
+      stem: Hiphil
+      conj: w
+      pgn: 1cs
+      suffix: h
+      lemma: שָׁב
     - word: חִשַּׁבְתִּי
       gloss: I have thought about
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     line_endings:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
   - num: 4
     abs_num: 60
     hebrew: חַשְׁתִּי וְלֹא הִתְמַהְמָהְתִּי לִשְׁמֹר מִצְוֹתֶיךָ׃
@@ -936,13 +2183,35 @@ stanzas:
     key_words:
     - word: הִתְמַהְמָהְתִּי
       gloss: I have delayed
+      pos: verb
+      stem: Hithpael
+      conj: Perf
+      pgn: 1cs
+      lemma: לְהִתְמַהְמֵהַּ
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: חַשְׁתִּי
       gloss: I have made haste
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָחִישָׁה
     line_endings:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
   - num: 5
     abs_num: 61
     hebrew: חֶבְלֵי רְשָׁעִים עִוְּדֻנִי תּוֹרָתְךָ לֹא שָׁכָחְתִּי׃
@@ -951,29 +2220,69 @@ stanzas:
     key_words:
     - word: רְשָׁעִים
       gloss: wicked
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: רָשָׁע
     - word: עִוְּדֻנִי
       gloss: they have surrounded me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 3cp
+      suffix: 1cs
     - word: תּוֹרָתְךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     line_endings:
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
   - num: 6
     abs_num: 62
     hebrew: חֲצוֹת־לַיְלָה אָקוּם לְהוֹדוֹת לָךְ עַל מִשְׁפְּטֵי צִדְקֶךָ׃
-    kjv: At midnight I will rise to give thanks unto thee because of thy righteous
-      judgments.
+    kjv: At midnight I will rise to give thanks unto thee because of thy righteous judgments.
     first_word: חֲצוֹת־
     key_words:
     - word: לְהוֹדוֹת
       gloss: to give thanks
+      pos: verb
+      stem: Hiphil
+      conj: InfCstr
+      lemma: וּלְהֹדוֹת
     - word: מִשְׁפְּטֵי
       gloss: judgments of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: מִשְׁפָּט
     - word: חֲצוֹת
       gloss: middle of
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      lemma: וַחֲצוֹת
     line_endings:
     - word: צִדְקֶךָ
       gloss: righteousness your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: צֶדֶק
   - num: 7
     abs_num: 63
     hebrew: חָבֵר אָנִי לְכָל־אֲשֶׁר יְרֵאוּךָ וּלְשֹׁמְרֵי פִּקּוּדֶיךָ׃
@@ -982,13 +2291,36 @@ stanzas:
     key_words:
     - word: וּלְשֹׁמְרֵי
       gloss: and of keep
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      lemma: שָׁמַר
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: יְרֵאוּךָ
       gloss: they fear you
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      suffix: 2ms
+      lemma: יָרֵא
     line_endings:
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
   - num: 8
     abs_num: 64
     hebrew: חַסְדְּךָ יְהוָה מָלְאָה הָאָרֶץ חֻקֶּיךָ לַמְּדֵנִי׃
@@ -997,13 +2329,34 @@ stanzas:
     key_words:
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     - word: חַסְדְּךָ
       gloss: covenant loyalti<es> your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: חֶסֶד
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
 - num: 9
   letter: ט
   name: Tet
@@ -1016,13 +2369,36 @@ stanzas:
     key_words:
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: עָשִׂיתָ
       gloss: you have done
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 2ms
+      lemma: עָשָׂה
     - word: עַבְדְּךָ
       gloss: servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     line_endings:
     - word: כִּדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 2
     abs_num: 66
     hebrew: טוּב טַעַם וָדַעַת לַמְּדֵנִי כִּי בְמִצְוֹתֶיךָ הֶאֱמָנְתִּי׃
@@ -1031,13 +2407,35 @@ stanzas:
     key_words:
     - word: בְמִצְוֹתֶיךָ
       gloss: in commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: הֶאֱמָנְתִּי
       gloss: I trust
+      pos: verb
+      stem: Hiphil
+      conj: Perf
+      pgn: 1cs
+      lemma: הֶאֱמִין
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     line_endings:
     - word: הֶאֱמָנְתִּי
       gloss: I trust
+      pos: verb
+      stem: Hiphil
+      conj: Perf
+      pgn: 1cs
+      lemma: הֶאֱמִין
   - num: 3
     abs_num: 67
     hebrew: טֶרֶם אֶעֱנֶה אֲנִי שֹׁגֵג וְעַתָּה אִמְרָתְךָ שָׁמָרְתִּי׃
@@ -1046,13 +2444,34 @@ stanzas:
     key_words:
     - word: אִמְרָתְךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: שָׁמָרְתִּי
       gloss: I keep
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁמַר
     - word: אֶעֱנֶה
       gloss: I was afflicted
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: עִנָּה
     line_endings:
     - word: שָׁמָרְתִּי
       gloss: I keep
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁמַר
   - num: 4
     abs_num: 68
     hebrew: טוֹב־אַתָּה וּמֵטִיב לַמְּדֵנִי חֻקֶּיךָ׃
@@ -1061,29 +2480,72 @@ stanzas:
     key_words:
     - word: וּמֵטִיב
       gloss: and doing good
+      pos: verb
+      stem: Hiphil
+      conj: Ptc.act
+      pgn: m.sg.abs
+      lemma: הֵיטִיב
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
     line_endings:
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 5
     abs_num: 69
     hebrew: טָפְלוּ עָלַי שֶׁקֶר זֵדִים אֲנִי בְּכָל־לֵב אֱצֹּר פִּקּוּדֶיךָ׃
-    kjv: 'The proud have forged a lie against me: but I will keep thy precepts with
-      my whole heart.'
+    kjv: 'The proud have forged a lie against me: but I will keep thy precepts with my whole heart.'
     first_word: טָפְלוּ
     key_words:
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: טָפְלוּ
       gloss: they have smeared
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
     - word: זֵדִים
       gloss: arrogant
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: זֵד
     line_endings:
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
   - num: 6
     abs_num: 70
     hebrew: טָפַשׁ כַּחֵלֶב לִבָּם אֲנִי תּוֹרָתְךָ שִׁעֲשָׁעְתִּי׃
@@ -1092,13 +2554,32 @@ stanzas:
     key_words:
     - word: שִׁעֲשָׁעְתִּי
       gloss: I delight
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
     - word: תּוֹרָתְךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: כַּחֵלֶב
       gloss: like <the> fat
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: חֵלֶב
     line_endings:
     - word: שִׁעֲשָׁעְתִּי
       gloss: I delight
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
   - num: 7
     abs_num: 71
     hebrew: טוֹב־לִי כִי־עֻנֵּיתִי לְמַעַן אֶלְמַד חֻקֶּיךָ׃
@@ -1107,13 +2588,31 @@ stanzas:
     key_words:
     - word: עֻנֵּיתִי
       gloss: I was afflicted
+      pos: verb
+      stem: P
+      conj: Perf
+      pgn: 1cs
+      lemma: עִנָּה
     - word: לְמַעַן
       gloss: so that
+      pos: particle
+      lemma: וּלְמַעַן
     - word: אֶלְמַד
       gloss: I may learn
+      pos: verb
+      stem: Qal
+      conj: Juss
+      pgn: 1cs
+      lemma: לָמַד
     line_endings:
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 8
     abs_num: 72
     hebrew: טוֹב־לִי תוֹרַת־פִּיךָ מֵאַלְפֵי זָהָב וָכָסֶף׃
@@ -1122,13 +2621,33 @@ stanzas:
     key_words:
     - word: מֵאַלְפֵי
       gloss: more than thousands of
+      pos: noun
+      gender: c
+      number: pl
+      state: cstr
+      lemma: אֶלֶף
     - word: תוֹרַת
       gloss: law of
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      lemma: תּוֹרָה
     - word: וָכָסֶף
       gloss: and silver
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: כֶּסֶף
     line_endings:
     - word: וָכָסֶף
       gloss: and silver
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: כֶּסֶף
 - num: 10
   letter: י
   name: Yod
@@ -1136,99 +2655,228 @@ stanzas:
   - num: 1
     abs_num: 73
     hebrew: יָדֶיךָ עָשׂוּנִי וַיְכוֹנְנוּנִי הֲבִינֵנִי וְאֶלְמְדָה מִצְוֹתֶיךָ׃
-    kjv: 'Thy hands have made me and fashioned me: give me understanding, that I may
-      learn thy commandments.'
+    kjv: 'Thy hands have made me and fashioned me: give me understanding, that I may learn thy commandments.'
     first_word: יָדֶיךָ
     key_words:
     - word: וַיְכוֹנְנוּנִי
       gloss: and they prepared me
+      pos: verb
+      stem: Piel
+      conj: w
+      pgn: 3mp
+      suffix: 1cs
     - word: הֲבִינֵנִי
       gloss: give understanding of me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵבִין
     - word: וְאֶלְמְדָה
       gloss: so let me learn
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: לָמַד
     line_endings:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
   - num: 2
     abs_num: 74
     hebrew: יְרֵאֶיךָ יִרְאוּנִי וְיִשְׂמָחוּ כִּי לִדְבָרְךָ יִחָלְתִּי׃
-    kjv: They that fear thee will be glad when they see me; because I have hoped in
-      thy word.
+    kjv: They that fear thee will be glad when they see me; because I have hoped in thy word.
     first_word: יְרֵאֶיךָ
     key_words:
     - word: יִרְאוּנִי
       gloss: may they see me
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      suffix: 1cs
+      lemma: רָאָה
     - word: וְיִשְׂמָחוּ
       gloss: and they may rejoice
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 3mp
+      lemma: שָׂמַח
     - word: יְרֵאֶיךָ
       gloss: fearing you
+      pos: adj
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: יָרֵא
     line_endings:
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
   - num: 3
     abs_num: 75
     hebrew: יָדַעְתִּי יְהוָה כִּי־צֶדֶק מִשְׁפָּטֶיךָ וֶאֱמוּנָה עִנִּיתָנִי׃
-    kjv: I know, O Lord, that thy judgments are right, and that thou in faithfulness
-      hast afflicted me.
+    kjv: I know, O Lord, that thy judgments are right, and that thou in faithfulness hast afflicted me.
     first_word: יָדַעְתִּי
     key_words:
     - word: מִשְׁפָּטֶיךָ
       gloss: judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: וֶאֱמוּנָה
       gloss: and faithfulness
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: אֱמוּנָה
     - word: עִנִּיתָנִי
       gloss: you have afflicted me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: עִנָּה
     line_endings:
     - word: עִנִּיתָנִי
       gloss: you have afflicted me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: עִנָּה
   - num: 4
     abs_num: 76
     hebrew: יְהִי־נָא חַסְדְּךָ לְנַחֲמֵנִי כְּאִמְרָתְךָ לְעַבְדֶּךָ׃
-    kjv: Let, I pray thee, thy merciful kindness be for my comfort, according to thy
-      word unto thy servant.
+    kjv: Let, I pray thee, thy merciful kindness be for my comfort, according to thy word unto thy servant.
     first_word: יְהִי־
     key_words:
     - word: לְנַחֲמֵנִי
       gloss: to comfort me
+      pos: verb
+      stem: Piel
+      conj: InfCstr
+      suffix: 1cs
+      lemma: נִחַם
     - word: כְּאִמְרָתְךָ
       gloss: according to word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: לְעַבְדֶּךָ
       gloss: to servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     line_endings:
     - word: לְעַבְדֶּךָ
       gloss: to servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
   - num: 5
     abs_num: 77
     hebrew: יְבֹאוּנִי רַחֲמֶיךָ וְאֶחְיֶה כִּי־תוֹרָתְךָ שַׁעֲשֻׁעָי׃
-    kjv: 'Let thy tender mercies come unto me, that I may live: for thy law is my
-      delight.'
+    kjv: 'Let thy tender mercies come unto me, that I may live: for thy law is my delight.'
     first_word: יְבֹאוּנִי
     key_words:
     - word: יְבֹאוּנִי
       gloss: let them come to me
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      suffix: 1cs
+      lemma: בָּא
     - word: רַחֲמֶיךָ
       gloss: compassion<s> your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: רַחֲמִים
     - word: וְאֶחְיֶה
       gloss: so I may live
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 1cs
+      lemma: חַי
     line_endings:
     - word: שַׁעֲשֻׁעָי
       gloss: delight<s> my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: שַׁעֲשֻׁעִים
   - num: 6
     abs_num: 78
     hebrew: יֵבֹשׁוּ זֵדִים כִּי־שֶׁקֶר עִוְּתוּנִי אֲנִי אָשִׂיחַ בְּפִקּוּדֶיךָ׃
-    kjv: 'Let the proud be ashamed; for they dealt perversely with me without a cause:
-      but I will meditate in thy precepts.'
+    kjv: 'Let the proud be ashamed; for they dealt perversely with me without a cause: but I will meditate in thy precepts.'
     first_word: יֵבֹשׁוּ
     key_words:
     - word: בְּפִקּוּדֶיךָ
       gloss: on precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: עִוְּתוּנִי
       gloss: they have subverted me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 3cp
+      suffix: 1cs
+      lemma: וּלְעַוֵּת
     - word: יֵבֹשׁוּ
       gloss: let them be ashamed
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      lemma: הֹבִישׁ
     line_endings:
     - word: בְּפִקּוּדֶיךָ
       gloss: on precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
   - num: 7
     abs_num: 79
     hebrew: יָשׁוּבוּ לִי יְרֵאֶיךָ וְיֹדְעֵי עֵדֹתֶיךָ׃
@@ -1237,13 +2885,35 @@ stanzas:
     key_words:
     - word: יָשׁוּבוּ
       gloss: let them turn
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      lemma: שָׁב
     - word: יְרֵאֶיךָ
       gloss: fearing you
+      pos: adj
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: יָרֵא
     - word: וְיֹדְעֵי
       gloss: and know
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      lemma: יָדַע
     line_endings:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
   - num: 8
     abs_num: 80
     hebrew: יְהִי־לִבִּי תָמִים בְּחֻקֶּיךָ לְמַעַן לֹא אֵבוֹשׁ׃
@@ -1252,13 +2922,31 @@ stanzas:
     key_words:
     - word: בְּחֻקֶּיךָ
       gloss: on decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
     - word: תָמִים
       gloss: blameless
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: תָּמִים
     - word: לְמַעַן
       gloss: so that
+      pos: particle
+      lemma: וּלְמַעַן
     line_endings:
     - word: אֵבוֹשׁ
       gloss: I will be ashamed
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 1cs
+      lemma: הֹבִישׁ
 - num: 11
   letter: כ
   name: Kaf
@@ -1271,13 +2959,35 @@ stanzas:
     key_words:
     - word: לִתְשׁוּעָתְךָ
       gloss: for salvation your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תְּשׁוּעָה
     - word: לִדְבָרְךָ
       gloss: for word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
     line_endings:
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
   - num: 2
     abs_num: 82
     hebrew: כָּלוּ עֵינַי לְאִמְרָתֶךָ לֵאמֹר מָתַי תְּנַחֲמֵנִי׃
@@ -1286,13 +2996,37 @@ stanzas:
     key_words:
     - word: לְאִמְרָתֶךָ
       gloss: for word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: תְּנַחֲמֵנִי
       gloss: will you comfort me
+      pos: verb
+      stem: Piel
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: נִחַם
     - word: עֵינַי
       gloss: eyes my
+      pos: noun
+      gender: f
+      number: du
+      state: cstr
+      suffix: 1cs
+      lemma: עַיִן
     line_endings:
     - word: תְּנַחֲמֵנִי
       gloss: will you comfort me
+      pos: verb
+      stem: Piel
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: נִחַם
   - num: 3
     abs_num: 83
     hebrew: כִּי־הָיִיתִי כְּנֹאד בְּקִיטוֹר חֻקֶּיךָ לֹא שָׁכָחְתִּי׃
@@ -1301,29 +3035,70 @@ stanzas:
     key_words:
     - word: בְּקִיטוֹר
       gloss: in smoke
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: וְקִיטוֹר
     - word: הָיִיתִי
       gloss: I have become
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: הָיָה
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
     line_endings:
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
   - num: 4
     abs_num: 84
     hebrew: כַּמָּה יְמֵי־עַבְדֶּךָ מָתַי תַּעֲשֶׂה בְרֹדְפַי מִשְׁפָּט׃
-    kjv: How many are the days of thy servant? when wilt thou execute judgment on
-      them that persecute me?
+    kjv: How many are the days of thy servant? when wilt thou execute judgment on them that persecute me?
     first_word: כַּמָּה
     key_words:
     - word: בְרֹדְפַי
       gloss: in harass me
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      suffix: 1cs
+      lemma: רָדַף
     - word: עַבְדֶּךָ
       gloss: servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     - word: תַּעֲשֶׂה
       gloss: will you do
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 2ms
+      lemma: לַעֲשׂוֹת
     line_endings:
     - word: מִשְׁפָּט
       gloss: judgment
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: מִשְׁפָּט
   - num: 5
     abs_num: 85
     hebrew: כָּרוּ־לִי זֵדִים שִׁיחוֹת אֲשֶׁר לֹא כְתוֹרָתֶךָ׃
@@ -1332,29 +3107,73 @@ stanzas:
     key_words:
     - word: כְתוֹרָתֶךָ
       gloss: according to law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: שִׁיחוֹת
       gloss: pits
+      pos: noun
+      gender: f
+      number: pl
+      state: abs
+      lemma: שִׁיחָה
     - word: זֵדִים
       gloss: arrogant
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: זֵד
     line_endings:
     - word: כְתוֹרָתֶךָ
       gloss: according to law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
   - num: 6
     abs_num: 86
     hebrew: כָּל־מִצְוֹתֶיךָ אֱמוּנָה שֶׁקֶר רְדָפוּנִי עָזְרֵנִי׃
-    kjv: 'All thy commandments are faithful: they persecute me wrongfully; help thou
-      me.'
+    kjv: 'All thy commandments are faithful: they persecute me wrongfully; help thou me.'
     first_word: כָּל־
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: רְדָפוּנִי
       gloss: they have harassed me
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      suffix: 1cs
+      lemma: רָדַף
     - word: אֱמוּנָה
       gloss: faithfulness
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: אֱמוּנָה
     line_endings:
     - word: עָזְרֵנִי
       gloss: help me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לַעְזֹר
   - num: 7
     abs_num: 87
     hebrew: כִּמְעַט כִּלּוּנִי בָאָרֶץ וַאֲנִי לֹא־עָזַבְתִּי פִקֻּודֶיךָ׃
@@ -1363,29 +3182,73 @@ stanzas:
     key_words:
     - word: פִקֻּודֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: כִּלּוּנִי
       gloss: they have made an end of me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 3cp
+      suffix: 1cs
+      lemma: כָּלָה
     - word: עָזַבְתִּי
       gloss: I have forsaken
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: עָזַב
     line_endings:
     - word: פִקֻּודֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
   - num: 8
     abs_num: 88
     hebrew: כְּחַסְדְּךָ חַיֵּנִי וְאֶשְׁמְרָה עֵדוּת פִּיךָ׃
-    kjv: Quicken me after thy lovingkindness; so shall I keep the testimony of thy
-      mouth.
+    kjv: Quicken me after thy lovingkindness; so shall I keep the testimony of thy mouth.
     first_word: כְּחַסְדְּךָ
     key_words:
     - word: וְאֶשְׁמְרָה
       gloss: and I will keep
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: שָׁמַר
     - word: כְּחַסְדְּךָ
       gloss: according to covenant loyalty your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: חֶסֶד
     - word: חַיֵּנִי
       gloss: preserve alive me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
     line_endings:
     - word: פִּיךָ
       gloss: mouth your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: פֶּה
 - num: 12
   letter: ל
   name: Lamed
@@ -1398,29 +3261,67 @@ stanzas:
     key_words:
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     - word: בַּשָּׁמָיִם
       gloss: in the heavens
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: שָׁמַיִם
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: בַּשָּׁמָיִם
       gloss: in the heavens
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: שָׁמַיִם
   - num: 2
     abs_num: 90
     hebrew: לְדֹר וָדֹר אֱמוּנָתֶךָ כּוֹנַנְתָּ אֶרֶץ וַתַּעֲמֹד׃
-    kjv: 'Thy faithfulness is unto all generations: thou hast established the earth,
-      and it abideth.'
+    kjv: 'Thy faithfulness is unto all generations: thou hast established the earth, and it abideth.'
     first_word: לְדֹר
     key_words:
     - word: אֱמוּנָתֶךָ
       gloss: faithfulness your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֱמוּנָה
     - word: כּוֹנַנְתָּ
       gloss: you have established
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      lemma: הֵכִין
     - word: וַתַּעֲמֹד
       gloss: and it endures
+      pos: verb
+      stem: Qal
+      conj: w
+      pgn: 3fs
+      lemma: עָמַד
     line_endings:
     - word: וַתַּעֲמֹד
       gloss: and it endures
+      pos: verb
+      stem: Qal
+      conj: w
+      pgn: 3fs
+      lemma: עָמַד
   - num: 3
     abs_num: 91
     hebrew: לְמִשְׁפָּטֶיךָ עָמְדוּ הַיּוֹם כִּי הַכֹּל עֲבָדֶיךָ׃
@@ -1429,29 +3330,74 @@ stanzas:
     key_words:
     - word: לְמִשְׁפָּטֶיךָ
       gloss: for judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפַּט
     - word: עֲבָדֶיךָ
       gloss: servants your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     - word: עָמְדוּ
       gloss: they stand forth
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: עָמַד
     line_endings:
     - word: עֲבָדֶיךָ
       gloss: servants your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
   - num: 4
     abs_num: 92
     hebrew: לוּלֵי תוֹרָתְךָ שַׁעֲשֻׁעָי אָז אָבַדְתִּי בְעָנְיִי׃
-    kjv: Unless thy law had been my delights, I should then have perished in mine
-      affliction.
+    kjv: Unless thy law had been my delights, I should then have perished in mine affliction.
     first_word: לוּלֵי
     key_words:
     - word: תוֹרָתְךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: שַׁעֲשֻׁעָי
       gloss: delight<s> my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: שַׁעֲשֻׁעִים
     - word: אָבַדְתִּי
       gloss: I perished
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָבַד
     line_endings:
     - word: בְעָנְיִי
       gloss: in affliction my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: עֹנִי
   - num: 5
     abs_num: 93
     hebrew: לְעוֹלָם לֹא־אֶשְׁכַּח פִּקּוּדֶיךָ כִּי בָם חִיִּיתָנִי׃
@@ -1460,13 +3406,36 @@ stanzas:
     key_words:
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: חִיִּיתָנִי
       gloss: you have preserved alive me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     line_endings:
     - word: חִיִּיתָנִי
       gloss: you have preserved alive me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
   - num: 6
     abs_num: 94
     hebrew: לְךָ־אֲנִי הוֹשִׁיעֵנִי כִּי פִקּוּדֶיךָ דָרָשְׁתִּי׃
@@ -1475,13 +3444,35 @@ stanzas:
     key_words:
     - word: הוֹשִׁיעֵנִי
       gloss: save me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: נוֹשַׁע
     - word: פִקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: דָרָשְׁתִּי
       gloss: I have sought
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: דָרַשׁ
     line_endings:
     - word: דָרָשְׁתִּי
       gloss: I have sought
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: דָרַשׁ
   - num: 7
     abs_num: 95
     hebrew: לִי קִוּוּ רְשָׁעִים לְאַבְּדֵנִי עֵדֹתֶיךָ אֶתְבּוֹנָן׃
@@ -1490,13 +3481,33 @@ stanzas:
     key_words:
     - word: לְאַבְּדֵנִי
       gloss: to destroy me
+      pos: verb
+      stem: Piel
+      conj: InfCstr
+      suffix: 1cs
+      lemma: אָבַד
     - word: אֶתְבּוֹנָן
       gloss: I will consider carefully
+      pos: verb
+      stem: Hithpael
+      conj: Impf
+      pgn: 1cs
+      lemma: הֵבִין
     - word: רְשָׁעִים
       gloss: wicked
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: רָשָׁע
     line_endings:
     - word: אֶתְבּוֹנָן
       gloss: I will consider carefully
+      pos: verb
+      stem: Hithpael
+      conj: Impf
+      pgn: 1cs
+      lemma: הֵבִין
   - num: 8
     abs_num: 96
     hebrew: לְכָל תִּכְלָה רָאִיתִי קֵץ רְחָבָה מִצְוָתְךָ מְאֹד׃
@@ -1505,13 +3516,34 @@ stanzas:
     key_words:
     - word: רָאִיתִי
       gloss: I have seen
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: רָאָה
     - word: מִצְוָתְךָ
       gloss: commandment your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: תִּכְלָה
       gloss: perfection
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: תִּכְלָה
     line_endings:
     - word: מְאֹד
       gloss: exceedingly
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: מְאֹד
 - num: 13
   letter: מ
   name: Mem
@@ -1524,45 +3556,103 @@ stanzas:
     key_words:
     - word: אָהַבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
     - word: תוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: שִׂיחָתִי
       gloss: meditation my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: שִׂיחָה
     line_endings:
     - word: שִׂיחָתִי
       gloss: meditation my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: שִׂיחָה
   - num: 2
     abs_num: 98
     hebrew: מֵאֹיְבַי תְּחַכְּמֵנִי מִצְוֹתֶךָ כִּי לְעוֹלָם הִיא־לִי׃
-    kjv: 'Thou through thy commandments hast made me wiser than mine enemies: for
-      they are ever with me.'
+    kjv: 'Thou through thy commandments hast made me wiser than mine enemies: for they are ever with me.'
     first_word: מֵאֹיְבַי
     key_words:
     - word: תְּחַכְּמֵנִי
       gloss: it makes wise me
+      pos: verb
+      stem: Piel
+      conj: Impf
+      pgn: 3fs
+      suffix: 1cs
+      lemma: חָכַם
     - word: מֵאֹיְבַי
       gloss: more than enemies my
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      suffix: 1cs
+      lemma: אוֹיֵב
     - word: מִצְוֹתֶךָ
       gloss: commandment your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     line_endings:
     - word: לִי
       gloss: of me
+      pos: particle
   - num: 3
     abs_num: 99
     hebrew: מִכָּל־מְלַמְּדַי הִשְׂכַּלְתִּי כִּי עֵדְוֹתֶיךָ שִׂיחָה לִֿי׃
-    kjv: 'I have more understanding than all my teachers: for thy testimonies are
-      my meditation.'
+    kjv: 'I have more understanding than all my teachers: for thy testimonies are my meditation.'
     first_word: מִכָּל־
     key_words:
     - word: הִשְׂכַּלְתִּי
       gloss: I have insight
+      pos: verb
+      stem: Hiphil
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׂכַל
     - word: עֵדְוֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: מְלַמְּדַי
       gloss: teachers my
+      pos: verb
+      stem: Piel
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      suffix: 1cs
+      lemma: לִמַּד
     line_endings:
     - word: לִֿי
       gloss: of me
+      pos: particle
   - num: 4
     abs_num: 100
     hebrew: מִזְּקֵנִים אֶתְבּוֹנָן כִּי פִקּוּדֶיךָ נָצָרְתִּי׃
@@ -1571,13 +3661,34 @@ stanzas:
     key_words:
     - word: מִזְּקֵנִים
       gloss: more than old
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: זָקֵן
     - word: אֶתְבּוֹנָן
       gloss: I will consider carefully
+      pos: verb
+      stem: Hithpael
+      conj: Impf
+      pgn: 1cs
+      lemma: הֵבִין
     - word: פִקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     line_endings:
     - word: נָצָרְתִּי
       gloss: I observe
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: וְאֶצְּרָה
   - num: 5
     abs_num: 101
     hebrew: מִכָּל־אֹרַח רָע כָּלִאתִי רַגְלָי לְמַעַן אֶשְׁמֹר דְּבָרֶךָ׃
@@ -1586,13 +3697,32 @@ stanzas:
     key_words:
     - word: כָּלִאתִי
       gloss: I have restrained
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: לִכְלוֹא
     - word: רַגְלָי
       gloss: feet my
+      pos: noun
+      gender: f
+      number: du
+      state: cstr
+      suffix: 1cs
+      lemma: רָגֶל
     - word: לְמַעַן
       gloss: so that
+      pos: particle
+      lemma: וּלְמַעַן
     line_endings:
     - word: דְּבָרֶךָ
       gloss: word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 6
     abs_num: 102
     hebrew: מִמִּשְׁפָּטֶיךָ לֹא־סָרְתִּי כִּי־אַתָּה הוֹרֵתָנִי׃
@@ -1601,13 +3731,36 @@ stanzas:
     key_words:
     - word: מִמִּשְׁפָּטֶיךָ
       gloss: from judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: הוֹרֵתָנִי
       gloss: you have taught me
+      pos: verb
+      stem: Hiphil
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: וּלְהוֹרֹת
     - word: סָרְתִּי
       gloss: I have turned aside
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: סָר
     line_endings:
     - word: הוֹרֵתָנִי
       gloss: you have taught me
+      pos: verb
+      stem: Hiphil
+      conj: Perf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: וּלְהוֹרֹת
   - num: 7
     abs_num: 103
     hebrew: מַה־נִּמְלְצוּ לְחִכִּי אִמְרָתֶךָ מִדְּבַשׁ לְפִי׃
@@ -1616,13 +3769,35 @@ stanzas:
     key_words:
     - word: נִּמְלְצוּ
       gloss: they are smooth
+      pos: verb
+      stem: Niphal
+      conj: Perf
+      pgn: 3cp
     - word: אִמְרָתֶךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: לְחִכִּי
       gloss: to palate my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: וְחֵךְ
     line_endings:
     - word: לְפִי
       gloss: to mouth my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: פֶּה
   - num: 8
     abs_num: 104
     hebrew: מִפִּקּוּדֶיךָ אֶתְבּוֹנָן עַל־כֵּן שָׂנֵאתִי כָּל־אֹרַח שָׁקֶר׃
@@ -1631,13 +3806,34 @@ stanzas:
     key_words:
     - word: מִפִּקּוּדֶיךָ
       gloss: from precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: אֶתְבּוֹנָן
       gloss: I will consider carefully
+      pos: verb
+      stem: Hithpael
+      conj: Impf
+      pgn: 1cs
+      lemma: הֵבִין
     - word: שָׂנֵאתִי
       gloss: I hate
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׂנֵא
     line_endings:
     - word: שָׁקֶר
       gloss: falsehood
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: שֶׁקֶר
 - num: 14
   letter: נ
   name: Nun
@@ -1650,13 +3846,37 @@ stanzas:
     key_words:
     - word: לִנְתִיבָתִי
       gloss: for pathway my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: נְתִיבָה
     - word: לְרַגְלִי
       gloss: for foot my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: רָגֶל
     - word: דְבָרֶךָ
       gloss: word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     line_endings:
     - word: לִנְתִיבָתִי
       gloss: for pathway my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: נְתִיבָה
   - num: 2
     abs_num: 106
     hebrew: נִשְׁבַּעְתִּי וָאֲקַיֵּמָה לִשְׁמֹר מִשְׁפְּטֵי צִדְקֶךָ׃
@@ -1665,13 +3885,35 @@ stanzas:
     key_words:
     - word: נִשְׁבַּעְתִּי
       gloss: I have sworn an oath
+      pos: verb
+      stem: Niphal
+      conj: Perf
+      pgn: 1cs
+      lemma: נִשְׁבַּע
     - word: וָאֲקַיֵּמָה
       gloss: and I have confirmed !
+      pos: verb
+      stem: Piel
+      conj: w
+      pgn: 1cs
+      suffix: h
+      lemma: הֵקִים
     - word: מִשְׁפְּטֵי
       gloss: judgments of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: מִשְׁפָּט
     line_endings:
     - word: צִדְקֶךָ
       gloss: righteousness your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: צֶדֶק
   - num: 3
     abs_num: 107
     hebrew: נַעֲנֵיתִי עַד־מְאֹד יְהוָה חַיֵּנִי כִדְבָרֶךָ׃
@@ -1680,29 +3922,71 @@ stanzas:
     key_words:
     - word: נַעֲנֵיתִי
       gloss: I have been afflicted
+      pos: verb
+      stem: Niphal
+      conj: Perf
+      pgn: 1cs
+      lemma: עִנָּה
     - word: כִדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: כִדְבָרֶךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
   - num: 4
     abs_num: 108
     hebrew: נִדְבוֹת פִּי רְצֵה־נָא יְהוָה וּמִשְׁפָּטֶיךָ לַמְּדֵנִי׃
-    kjv: Accept, I beseech thee, the freewill offerings of my mouth, O Lord, and teach
-      me thy judgments.
+    kjv: Accept, I beseech thee, the freewill offerings of my mouth, O Lord, and teach me thy judgments.
     first_word: נִדְבוֹת
     key_words:
     - word: וּמִשְׁפָּטֶיךָ
       gloss: and judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: נִדְבוֹת
       gloss: freewill offerings of
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      lemma: נְדָבָה
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     line_endings:
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
   - num: 5
     abs_num: 109
     hebrew: נַפְשִׁי בְכַפִּי תָמִיד וְתוֹרָתְךָ לֹא שָׁכָחְתִּי׃
@@ -1711,13 +3995,35 @@ stanzas:
     key_words:
     - word: וְתוֹרָתְךָ
       gloss: and law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
     - word: נַפְשִׁי
       gloss: self my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: נֶפֶשׁ
     line_endings:
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
   - num: 6
     abs_num: 110
     hebrew: נָתְנוּ רְשָׁעִים פַּח לִי וּמִפִּקּוּדֶיךָ לֹא תָעִיתִי׃
@@ -1726,29 +4032,67 @@ stanzas:
     key_words:
     - word: וּמִפִּקּוּדֶיךָ
       gloss: and from precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: רְשָׁעִים
       gloss: wicked
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: רָשָׁע
     - word: תָעִיתִי
       gloss: I have gone astray
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: תָּעָה
     line_endings:
     - word: תָעִיתִי
       gloss: I have gone astray
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: תָּעָה
   - num: 7
     abs_num: 111
     hebrew: נָחַלְתִּי עֵדְוֹתֶיךָ לְעוֹלָם כִּי־שְׂשׂוֹן לִבִּי הֵמָּה׃
-    kjv: 'Thy testimonies have I taken as an heritage for ever: for they are the rejoicing
-      of my heart.'
+    kjv: 'Thy testimonies have I taken as an heritage for ever: for they are the rejoicing of my heart.'
     first_word: נָחַלְתִּי
     key_words:
     - word: עֵדְוֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: נָחַלְתִּי
       gloss: I have inherited
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: נִחַל
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     line_endings:
     - word: הֵמָּה
       gloss: they
+      pos: pronoun
+      lemma: הֵמָּה
   - num: 8
     abs_num: 112
     hebrew: נָטִיתִי לִבִּי לַעֲשׂוֹת חֻקֶּיךָ לְעוֹלָם עֵקֶב׃
@@ -1757,13 +4101,32 @@ stanzas:
     key_words:
     - word: נָטִיתִי
       gloss: I have turned aside
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: נָטָה
     - word: לַעֲשׂוֹת
       gloss: to do
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: עָשָׂה
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     line_endings:
     - word: עֵקֶב
       gloss: end
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עֵקֶב
 - num: 15
   letter: ס
   name: Samek
@@ -1776,13 +4139,34 @@ stanzas:
     key_words:
     - word: וְתוֹרָתְךָ
       gloss: and law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: סֵעֲפִים
       gloss: half-hearted people
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: סֵעֲפִים
     - word: שָׂנֵאתִי
       gloss: I hate
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׂנֵא
     line_endings:
     - word: אָהָבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
   - num: 2
     abs_num: 114
     hebrew: סִתְרִי וּמָגִנִּי אָתָּה לִדְבָרְךָ יִחָלְתִּי׃
@@ -1791,13 +4175,35 @@ stanzas:
     key_words:
     - word: וּמָגִנִּי
       gloss: and shield my
+      pos: noun
+      gender: c
+      number: sg
+      state: cstr
+      suffix: 1ms
+      lemma: מָגֵן
     - word: לִדְבָרְךָ
       gloss: for word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
     line_endings:
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
   - num: 3
     abs_num: 115
     hebrew: סוּרוּ־מִמֶּנִּי מְרֵעִים וְאֶצְּרָה מִצְוֹת אֱלֹהָי׃
@@ -1806,77 +4212,182 @@ stanzas:
     key_words:
     - word: מְרֵעִים
       gloss: O evil-doers
+      pos: verb
+      stem: Hiphil
+      conj: Ptc.act
+      pgn: m.pl.abs
+      lemma: רַע
     - word: וְאֶצְּרָה
       gloss: so let me observe
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: וְאֶצְּרָה
     - word: סוּרוּ
       gloss: turn aside
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2mp
+      lemma: סָר
     line_endings:
     - word: אֱלֹהָי
       gloss: God my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: אֱלֹהִים
   - num: 4
     abs_num: 116
     hebrew: סָמְכֵנִי כְאִמְרָתְךָ וְאֶחְיֶה וְאַל־תְּבִישֵׁנִי מִשִּׂבְרִי׃
-    kjv: 'Uphold me according unto thy word, that I may live: and let me not be ashamed
-      of my hope.'
+    kjv: 'Uphold me according unto thy word, that I may live: and let me not be ashamed of my hope.'
     first_word: סָמְכֵנִי
     key_words:
     - word: כְאִמְרָתְךָ
       gloss: according to word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: תְּבִישֵׁנִי
       gloss: you put to shame me
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֹבִישׁ
     - word: סָמְכֵנִי
       gloss: sustain me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: סָמַךְ
     line_endings:
     - word: מִשִּׂבְרִי
       gloss: from hope my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: מִשִּׂבְרִי
   - num: 5
     abs_num: 117
     hebrew: סְעָדֵנִי וְאִוָּשֵׁעָה וְאֶשְׁעָה בְחֻקֶּיךָ תָמִיד׃
-    kjv: 'Hold thou me up, and I shall be safe: and I will have respect unto thy statutes
-      continually.'
+    kjv: 'Hold thou me up, and I shall be safe: and I will have respect unto thy statutes continually.'
     first_word: סְעָדֵנִי
     key_words:
     - word: וְאִוָּשֵׁעָה
       gloss: so let me be saved
+      pos: verb
+      stem: Niphal
+      conj: InfCstr
+      lemma: נוֹשַׁע
     - word: סְעָדֵנִי
       gloss: uphold me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: סְעָד
     - word: וְאֶשְׁעָה
       gloss: and I may have regard
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 1cs
+      lemma: שָׁעָה
     line_endings:
     - word: תָמִיד
       gloss: continually
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: תָּמִיד
   - num: 6
     abs_num: 118
     hebrew: סָלִיתָ כָּל־שׁוֹגִים מֵחֻקֶּיךָ כִּי־שֶׁקֶר תַּרְמִיתָם׃
-    kjv: 'Thou hast trodden down all them that err from thy statutes: for their deceit
-      is falsehood.'
+    kjv: 'Thou hast trodden down all them that err from thy statutes: for their deceit is falsehood.'
     first_word: סָלִיתָ
     key_words:
     - word: תַּרְמִיתָם
       gloss: deceitfulness their
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 3mp
+      lemma: תַּרְמִית
     - word: שׁוֹגִים
       gloss: go astray
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.abs
+      lemma: לִשְׁגוֹת
     - word: מֵחֻקֶּיךָ
       gloss: from decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
     line_endings:
     - word: תַּרְמִיתָם
       gloss: deceitfulness their
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 3mp
+      lemma: תַּרְמִית
   - num: 7
     abs_num: 119
     hebrew: סִגִים הִשְׁבַּתָּ כָל־רִשְׁעֵי־אָרֶץ לָכֵן אָהַבְתִּי עֵדֹתֶיךָ׃
-    kjv: 'Thou puttest away all the wicked of the earth like dross: therefore I love
-      thy testimonies.'
+    kjv: 'Thou puttest away all the wicked of the earth like dross: therefore I love thy testimonies.'
     first_word: סִגִים
     key_words:
     - word: אָהַבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: סִגִים
       gloss: dross<es>
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: סִגִים
     line_endings:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
   - num: 8
     abs_num: 120
     hebrew: סָמַר מִפַּחְדְּךָ בְשָׂרִי וּמִמִּשְׁפָּטֶיךָ יָרֵאתִי׃
@@ -1885,13 +4396,35 @@ stanzas:
     key_words:
     - word: וּמִמִּשְׁפָּטֶיךָ
       gloss: and from judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: מִפַּחְדְּךָ
       gloss: from dread of you
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: פַּחַד
     - word: יָרֵאתִי
       gloss: I am afraid
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: יָרֵא
     line_endings:
     - word: יָרֵאתִי
       gloss: I am afraid
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: יָרֵא
 - num: 16
   letter: ע
   name: Ayin
@@ -1904,13 +4437,36 @@ stanzas:
     key_words:
     - word: תַּנִּיחֵנִי
       gloss: you will abandon me
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: נָחָה
     - word: עָשִׂיתִי
       gloss: I have done
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: עָשָׂה
     - word: לְעֹשְׁקָי
       gloss: to oppressors my
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      suffix: 1cs
+      lemma: עָשַׁק
     line_endings:
     - word: לְעֹשְׁקָי
       gloss: to oppressors my
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      suffix: 1cs
+      lemma: עָשַׁק
   - num: 2
     abs_num: 122
     hebrew: עֲרֹב עַבְדְּךָ לְטוֹב אַל־יַעַשְׁקֻנִי זֵדִים׃
@@ -1919,13 +4475,35 @@ stanzas:
     key_words:
     - word: יַעַשְׁקֻנִי
       gloss: they oppress me
+      pos: verb
+      stem: Qal
+      conj: Juss
+      pgn: 3mp
+      suffix: 1cs
+      lemma: עָשַׁק
     - word: עַבְדְּךָ
       gloss: servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     - word: לְטוֹב
       gloss: for good
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: טוֹב
     line_endings:
     - word: זֵדִים
       gloss: arrogant
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: זֵד
   - num: 3
     abs_num: 123
     hebrew: עֵינַי כָּלוּ לִישׁוּעָתֶךָ וּלְאִמְרַת צִדְקֶךָ׃
@@ -1934,13 +4512,36 @@ stanzas:
     key_words:
     - word: לִישׁוּעָתֶךָ
       gloss: for deliverance your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: יְשׁוּעָה
     - word: וּלְאִמְרַת
       gloss: and for word of
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      lemma: אֲמָרוֹת
     - word: עֵינַי
       gloss: eyes my
+      pos: noun
+      gender: f
+      number: du
+      state: cstr
+      suffix: 1cs
+      lemma: עַיִן
     line_endings:
     - word: צִדְקֶךָ
       gloss: righteousness your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: צֶדֶק
   - num: 4
     abs_num: 124
     hebrew: עֲשֵׂה עִם־עַבְדְּךָ כְחַסְדֶּךָ וְחֻקֶּיךָ לַמְּדֵנִי׃
@@ -1949,13 +4550,37 @@ stanzas:
     key_words:
     - word: כְחַסְדֶּךָ
       gloss: according to covenant loyalty your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: חֶסֶד
     - word: וְחֻקֶּיךָ
       gloss: and decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     line_endings:
     - word: לַמְּדֵנִי
       gloss: teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
   - num: 5
     abs_num: 125
     hebrew: עַבְדְּךָ־אָנִי הֲבִינֵנִי וְאֵדְעָה עֵדֹתֶיךָ׃
@@ -1964,13 +4589,35 @@ stanzas:
     key_words:
     - word: הֲבִינֵנִי
       gloss: give understanding of me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵבִין
     - word: וְאֵדְעָה
       gloss: so let me know
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: יָדַע
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     line_endings:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
   - num: 6
     abs_num: 126
     hebrew: עֵת לַעֲשׂוֹת לַיהוָה הֵפֵרוּ תּוֹרָתֶךָ׃
@@ -1979,13 +4626,32 @@ stanzas:
     key_words:
     - word: לַעֲשׂוֹת
       gloss: to do
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: עָשָׂה
     - word: לַיהוָה
       gloss: to Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     - word: תּוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     line_endings:
     - word: תּוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
   - num: 7
     abs_num: 127
     hebrew: עַל־כֵּן אָהַבְתִּי מִצְוֹתֶיךָ מִזָּהָב וּמִפָּז׃
@@ -1994,29 +4660,69 @@ stanzas:
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: אָהַבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
     - word: מִזָּהָב
       gloss: more than gold
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: זָהָב
     line_endings:
     - word: וּמִפָּז
       gloss: and more than pure gold
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: פָז
   - num: 8
     abs_num: 128
     hebrew: עַל־כֵּן כָּל־פִּקּוּדֵי כֹל יִשָּׁרְתִּי כָּל־אֹרַח שֶׁקֶר שָׂנֵאתִי׃
-    kjv: Therefore I esteem all thy precepts concerning all things to be right; and
-      I hate every false way.
+    kjv: Therefore I esteem all thy precepts concerning all things to be right; and I hate every false way.
     first_word: עַל־
     key_words:
     - word: פִּקּוּדֵי
       gloss: precepts of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: פִּקּוּדֵי
     - word: יִשָּׁרְתִּי
       gloss: I approve
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: יָשַׁר
     - word: שָׂנֵאתִי
       gloss: I hate
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׂנֵא
     line_endings:
     - word: שָׂנֵאתִי
       gloss: I hate
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׂנֵא
 - num: 17
   letter: פ
   name: Pe
@@ -2029,29 +4735,72 @@ stanzas:
     key_words:
     - word: עֵדְוֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: פְּלָאוֹת
       gloss: wonders
+      pos: noun
+      gender: f
+      number: pl
+      state: abs
+      lemma: פֶלֶא
     - word: נְצָרָתַם
       gloss: it observes them
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3fs
+      suffix: 3mp
+      lemma: וְאֶצְּרָה
     line_endings:
     - word: נַפְשִׁי
       gloss: self my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: נָפֶשׁ
   - num: 2
     abs_num: 130
     hebrew: פֵּתַח דְּבָרֶיךָ יָאִיר מֵבִין פְּתָיִים׃
-    kjv: The entrance of thy words giveth light; it giveth understanding unto the
-      simple.
+    kjv: The entrance of thy words giveth light; it giveth understanding unto the simple.
     first_word: פֵּתַח
     key_words:
     - word: דְּבָרֶיךָ
       gloss: words your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: פְּתָיִים
       gloss: simple people
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: פֶּתִי
     - word: יָאִיר
       gloss: it gives light
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 3ms
+      lemma: אוֹר
     line_endings:
     - word: פְּתָיִים
       gloss: simple people
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: פֶּתִי
   - num: 3
     abs_num: 131
     hebrew: פִּי־פָעַרְתִּי וָאֶשְׁאָפָה כִּי לְמִצְוֹתֶיךָ יָאָבְתִּי׃
@@ -2060,45 +4809,106 @@ stanzas:
     key_words:
     - word: לְמִצְוֹתֶיךָ
       gloss: for commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: וָאֶשְׁאָפָה
       gloss: and I panted !
+      pos: verb
+      stem: Qal
+      conj: w
+      pgn: 1cs
+      suffix: h
     - word: פָעַרְתִּי
       gloss: I opened wide
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
     line_endings:
     - word: יָאָבְתִּי
       gloss: I longed
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
   - num: 4
     abs_num: 132
     hebrew: פְּנֵה־אֵלַי וְחָנֵּנִי כְּמִשְׁפָּט לְאֹהֲבֵי שְׁמֶךָ׃
-    kjv: Look thou upon me, and be merciful unto me, as thou usest to do unto those
-      that love thy name.
+    kjv: Look thou upon me, and be merciful unto me, as thou usest to do unto those that love thy name.
     first_word: פְּנֵה־
     key_words:
     - word: וְחָנֵּנִי
       gloss: and show favor to me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חָנַן
     - word: כְּמִשְׁפָּט
       gloss: according to custom
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: וּמִשְׁפָּט
     - word: לְאֹהֲבֵי
       gloss: to love
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      lemma: אָהֵב
     line_endings:
     - word: שְׁמֶךָ
       gloss: name your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: שֵׁם
   - num: 5
     abs_num: 133
     hebrew: פְּעָמַי הָכֵן בְּאִמְרָתֶךָ וְאַל־תַּשְׁלֶט־בִּי כָל־אָוֶן׃
-    kjv: 'Order my steps in thy word: and let not any iniquity have dominion over
-      me.'
+    kjv: 'Order my steps in thy word: and let not any iniquity have dominion over me.'
     first_word: פְּעָמַי
     key_words:
     - word: בְּאִמְרָתֶךָ
       gloss: by word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: פְּעָמַי
       gloss: footsteps my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: פַּעַם
     - word: תַּשְׁלֶט
       gloss: it have power
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 3fs
+      lemma: שָׁלַט
     line_endings:
     - word: אָוֶן
       gloss: wickedness
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: אָוֶן
   - num: 6
     abs_num: 134
     hebrew: פְּדֵנִי מֵעֹשֶׁק אָדָם וְאֶשְׁמְרָה פִּקּוּדֶיךָ׃
@@ -2107,13 +4917,35 @@ stanzas:
     key_words:
     - word: וְאֶשְׁמְרָה
       gloss: and I will keep
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: שָׁמַר
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: פְּדֵנִי
       gloss: redeem me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: פָּדָה
     line_endings:
     - word: פִּקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
   - num: 7
     abs_num: 135
     hebrew: פָּנֶיךָ הָאֵר בְּעַבְדֶּךָ וְלַמְּדֵנִי אֶת־חֻקֶּיךָ׃
@@ -2122,13 +4954,37 @@ stanzas:
     key_words:
     - word: וְלַמְּדֵנִי
       gloss: and teach me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     - word: בְּעַבְדֶּךָ
       gloss: on servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     - word: פָּנֶיךָ
       gloss: face your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פָּנִים
     line_endings:
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 8
     abs_num: 136
     hebrew: פַּלְגֵי־מַיִם יָרְדוּ עֵינָי עַל לֹא־שָׁמְרוּ תוֹרָתֶךָ׃
@@ -2137,13 +4993,35 @@ stanzas:
     key_words:
     - word: תוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: פַּלְגֵי
       gloss: streams of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: פְּלָגִים
     - word: יָרְדוּ
       gloss: they have gone down
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: יָרַד
     line_endings:
     - word: תוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
 - num: 18
   letter: צ
   name: Tsade
@@ -2156,13 +5034,33 @@ stanzas:
     key_words:
     - word: מִשְׁפָּטֶיךָ
       gloss: judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: צַדִּיק
       gloss: righteous
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: צַדִּיק
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: מִשְׁפָּטֶיךָ
       gloss: judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
   - num: 2
     abs_num: 138
     hebrew: צִוִּיתָ צֶדֶק עֵדֹתֶיךָ וֶאֱמוּנָה מְאֹד׃
@@ -2171,13 +5069,34 @@ stanzas:
     key_words:
     - word: וֶאֱמוּנָה
       gloss: and faithfulness
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: אֱמוּנָה
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: צִוִּיתָ
       gloss: you commanded
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 2ms
+      lemma: צִוָּה
     line_endings:
     - word: מְאֹד
       gloss: exceedingly
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: מְאֹד
   - num: 3
     abs_num: 139
     hebrew: צִמְּתַתְנִי קִנְאָתִי כִּי־שָׁכְחוּ דְבָרֶיךָ צָרָי׃
@@ -2186,13 +5105,37 @@ stanzas:
     key_words:
     - word: צִמְּתַתְנִי
       gloss: it has destroyed me
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 3fs
+      suffix: 1cs
+      lemma: יַצְמִיתֵם
     - word: קִנְאָתִי
       gloss: zeal my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: קִנְאָה
     - word: דְבָרֶיךָ
       gloss: words your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     line_endings:
     - word: צָרָי
       gloss: opponents my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: צָר
   - num: 4
     abs_num: 140
     hebrew: צְרוּפָה אִמְרָתְךָ מְאֹד וְעַבְדְּךָ אֲהֵבָהּ׃
@@ -2201,13 +5144,36 @@ stanzas:
     key_words:
     - word: צְרוּפָה
       gloss: refined
+      pos: verb
+      stem: Qal
+      conj: Ptc.pass
+      pgn: f.sg.abs
+      lemma: צָרַף
     - word: אִמְרָתְךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: וְעַבְדְּךָ
       gloss: and servant your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: עֶבֶד
     line_endings:
     - word: אֲהֵבָהּ
       gloss: he loves it
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3ms
+      suffix: 3fs
+      lemma: אָהֵב
   - num: 5
     abs_num: 141
     hebrew: צָעִיר אָנֹכִי וְנִבְזֶה פִּקֻּדֶיךָ לֹא שָׁכָחְתִּי׃
@@ -2216,13 +5182,34 @@ stanzas:
     key_words:
     - word: וְנִבְזֶה
       gloss: and despised
+      pos: verb
+      stem: Niphal
+      conj: Ptc.act
+      pgn: m.sg.abs
+      lemma: בָּזָה
     - word: פִּקֻּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
     line_endings:
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
   - num: 6
     abs_num: 142
     hebrew: צִדְקָתְךָ צֶדֶק לְעוֹלָם וְתוֹרָתְךָ אֱמֶת׃
@@ -2231,13 +5218,35 @@ stanzas:
     key_words:
     - word: וְתוֹרָתְךָ
       gloss: and law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: צִדְקָתְךָ
       gloss: righteousness your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: וּצְדָקָה
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     line_endings:
     - word: אֱמֶת
       gloss: faithfulness
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: אֱמֶת
   - num: 7
     abs_num: 143
     hebrew: צַר־וּמָצוֹק מְצָאוּנִי מִצְוֹתֶיךָ שַׁעֲשֻׁעָי׃
@@ -2246,29 +5255,73 @@ stanzas:
     key_words:
     - word: מְצָאוּנִי
       gloss: they have found me
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      suffix: 1cs
+      lemma: מָצָא
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: וּמָצוֹק
       gloss: and anguish
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: וּבְמָצוֹק
     line_endings:
     - word: שַׁעֲשֻׁעָי
       gloss: delight<s> my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: שַׁעֲשֻׁעִים
   - num: 8
     abs_num: 144
     hebrew: צֶדֶק עֵדְוֹתֶיךָ לְעוֹלָם הֲבִינֵנִי וְאֶחְיֶה׃
-    kjv: 'The righteousness of thy testimonies is everlasting: give me understanding,
-      and I shall live.'
+    kjv: 'The righteousness of thy testimonies is everlasting: give me understanding, and I shall live.'
     first_word: צֶדֶק
     key_words:
     - word: עֵדְוֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: הֲבִינֵנִי
       gloss: give understanding of me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵבִין
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     line_endings:
     - word: וְאֶחְיֶה
       gloss: so I may live
+      pos: verb
+      stem: Qal
+      conj: u
+      pgn: 1cs
+      lemma: חַי
 - num: 19
   letter: ק
   name: Qof
@@ -2281,13 +5334,31 @@ stanzas:
     key_words:
     - word: קָרָאתִי
       gloss: I call out
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: קָרָא
     - word: עֲנֵנִי
       gloss: answer me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: עָנָה
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: אֶצֹּרָה
       gloss: I will observe
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: וְאֶצְּרָה
   - num: 2
     abs_num: 146
     hebrew: קְרָאתִיךָ הוֹשִׁיעֵנִי וְאֶשְׁמְרָה עֵדֹתֶיךָ׃
@@ -2296,13 +5367,35 @@ stanzas:
     key_words:
     - word: הוֹשִׁיעֵנִי
       gloss: save me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: נוֹשַׁע
     - word: קְרָאתִיךָ
       gloss: I call out to you
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      suffix: 2ms
+      lemma: קָרָא
     - word: וְאֶשְׁמְרָה
       gloss: and I will keep
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      lemma: שָׁמַר
     line_endings:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
   - num: 3
     abs_num: 147
     hebrew: קִדַּמְתִּי בַנֶּשֶׁף וָאֲשַׁוֵּעָה לִדְבָרְךָ יִחָלְתִּי׃
@@ -2311,13 +5404,34 @@ stanzas:
     key_words:
     - word: וָאֲשַׁוֵּעָה
       gloss: and I cried for help !
+      pos: verb
+      stem: Piel
+      conj: w
+      pgn: 1cs
+      suffix: h
     - word: קִדַּמְתִּי
       gloss: I am early
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: נְקַדְּמָה
     - word: לִדְבָרְךָ
       gloss: for word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     line_endings:
     - word: יִחָלְתִּי
       gloss: I hope
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      lemma: וַאֲיַחֲלָה
   - num: 4
     abs_num: 148
     hebrew: קִדְּמוּ עֵינַי אַשְׁמֻרוֹת לָשִׂיחַ בְּאִמְרָתֶךָ׃
@@ -2326,29 +5440,74 @@ stanzas:
     key_words:
     - word: אַשְׁמֻרוֹת
       gloss: night-watches
+      pos: noun
+      gender: f
+      number: pl
+      state: abs
+      lemma: וְאַשְׁמוּרָה
     - word: בְּאִמְרָתֶךָ
       gloss: by word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: קִדְּמוּ
       gloss: they anticipate
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 3cp
+      lemma: נְקַדְּמָה
     line_endings:
     - word: בְּאִמְרָתֶךָ
       gloss: by word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
   - num: 5
     abs_num: 149
     hebrew: קוֹלִי שִׁמְעָה כְחַסְדֶּךָ יְהוָה כְּמִשְׁפָּטֶךָ חַיֵּנִי׃
-    kjv: 'Hear my voice according unto thy lovingkindness: O Lord, quicken me according
-      to thy judgment.'
+    kjv: 'Hear my voice according unto thy lovingkindness: O Lord, quicken me according to thy judgment.'
     first_word: קוֹלִי
     key_words:
     - word: כְּמִשְׁפָּטֶךָ
       gloss: according to judgments your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: כְחַסְדֶּךָ
       gloss: according to covenant loyalty your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: חֶסֶד
     - word: קוֹלִי
       gloss: voice my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: קוֹל
     line_endings:
     - word: חַיֵּנִי
       gloss: preserve alive me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
   - num: 6
     abs_num: 150
     hebrew: קָרְבוּ רֹדְפֵי זִמָּה מִתּוֹרָתְךָ רָחָקוּ׃
@@ -2357,13 +5516,34 @@ stanzas:
     key_words:
     - word: מִתּוֹרָתְךָ
       gloss: from law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: קָרְבוּ
       gloss: they draw near
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: קָרַב
     - word: רֹדְפֵי
       gloss: pursue
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      lemma: רָדַף
     line_endings:
     - word: רָחָקוּ
       gloss: they are distant
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: רָחַק
   - num: 7
     abs_num: 151
     hebrew: קָרוֹב אַתָּה יְהוָה וְכָל־מִצְוֹתֶיךָ אֱמֶת׃
@@ -2372,29 +5552,69 @@ stanzas:
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: קָרוֹב
       gloss: near
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: קָרוֹב
     - word: יְהוָה
       gloss: Yahweh
+      pos: noun
+      gender: t
+      lemma: יְהוָה צְבָאוֹת
     line_endings:
     - word: אֱמֶת
       gloss: faithfulness
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: אֱמֶת
   - num: 8
     abs_num: 152
     hebrew: קֶדֶם יָדַעְתִּי מֵעֵדֹתֶיךָ כִּי לְעוֹלָם יְסַדְתָּם׃
-    kjv: Concerning thy testimonies, I have known of old that thou hast founded them
-      for ever.
+    kjv: Concerning thy testimonies, I have known of old that thou hast founded them for ever.
     first_word: קֶדֶם
     key_words:
     - word: מֵעֵדֹתֶיךָ
       gloss: from testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: יָדַעְתִּי
       gloss: I know
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: יָדַע
     - word: לְעוֹלָם
       gloss: for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     line_endings:
     - word: יְסַדְתָּם
       gloss: you have established them
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 2ms
+      suffix: 3mp
+      lemma: יָסַד
 - num: 20
   letter: ר
   name: Resh
@@ -2407,13 +5627,35 @@ stanzas:
     key_words:
     - word: וְחַלְּצֵנִי
       gloss: and rescue me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חָלַץ
     - word: תוֹרָתְךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
     line_endings:
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
   - num: 2
     abs_num: 154
     hebrew: רִיבָה רִיבִי וּגְאָלֵנִי לְאִמְרָתְךָ חַיֵּנִי׃
@@ -2422,13 +5664,37 @@ stanzas:
     key_words:
     - word: וּגְאָלֵנִי
       gloss: and redeem me
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: גָּאַל
     - word: לְאִמְרָתְךָ
       gloss: for word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: רִיבָה
       gloss: conduct !
+      pos: verb
+      stem: Qal
+      conj: Wqtl
+      pgn: 2ms
+      suffix: h
+      lemma: רָב
     line_endings:
     - word: חַיֵּנִי
       gloss: preserve alive me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
   - num: 3
     abs_num: 155
     hebrew: רָחוֹק מֵרְשָׁעִים יְשׁוּעָה כִּי־חֻקֶּיךָ לֹא דָרָשׁוּ׃
@@ -2437,13 +5703,33 @@ stanzas:
     key_words:
     - word: מֵרְשָׁעִים
       gloss: from wicked
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: רָשָׁע
     - word: יְשׁוּעָה
       gloss: salvation
+      pos: noun
+      gender: f
+      number: sg
+      state: abs
+      lemma: יְשׁוּעָה
     - word: רָחוֹק
       gloss: far
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: רְחוֹקָה
     line_endings:
     - word: דָרָשׁוּ
       gloss: they have sought
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: דָרַשׁ
   - num: 4
     abs_num: 156
     hebrew: רַחֲמֶיךָ רַבִּים יְהוָה כְּמִשְׁפָּטֶיךָ חַיֵּנִי׃
@@ -2452,13 +5738,36 @@ stanzas:
     key_words:
     - word: כְּמִשְׁפָּטֶיךָ
       gloss: according to judgments your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: רַחֲמֶיךָ
       gloss: compassion<s> your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: רַחֲמִים
     - word: רַבִּים
       gloss: great
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: רַב
     line_endings:
     - word: חַיֵּנִי
       gloss: preserve alive me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
   - num: 5
     abs_num: 157
     hebrew: רַבִּים רֹדְפַי וְצָרָי מֵעֵדְוֹתֶיךָ לֹא נָטִיתִי׃
@@ -2467,13 +5776,34 @@ stanzas:
     key_words:
     - word: מֵעֵדְוֹתֶיךָ
       gloss: from testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדוּת
     - word: נָטִיתִי
       gloss: I have turned aside
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: נָטָה
     - word: רַבִּים
       gloss: great
+      pos: adj
+      gender: m
+      number: pl
+      state: abs
+      lemma: רַב
     line_endings:
     - word: נָטִיתִי
       gloss: I have turned aside
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: נָטָה
   - num: 6
     abs_num: 158
     hebrew: רָאִיתִי בֹגְדִים וָאֶתְקוֹטָטָה אֲשֶׁר אִמְרָתְךָ לֹא שָׁמָרוּ׃
@@ -2482,13 +5812,33 @@ stanzas:
     key_words:
     - word: וָאֶתְקוֹטָטָה
       gloss: and I felt disgust !
+      pos: verb
+      stem: Hithpael
+      conj: w
+      pgn: 1cs
+      suffix: h
     - word: רָאִיתִי
       gloss: I have seen
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: רָאָה
     - word: בֹגְדִים
       gloss: act treacherously
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.abs
+      lemma: לִבְגֹּד
     line_endings:
     - word: שָׁמָרוּ
       gloss: people keep
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      lemma: שָׁמַר
   - num: 7
     abs_num: 159
     hebrew: רְאֵה כִּי־פִקּוּדֶיךָ אָהָבְתִּי יְהוָה כְּחַסְדְּךָ חַיֵּנִי׃
@@ -2497,29 +5847,73 @@ stanzas:
     key_words:
     - word: פִקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: אָהָבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
     - word: כְּחַסְדְּךָ
       gloss: according to covenant loyalty your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: חֶסֶד
     line_endings:
     - word: חַיֵּנִי
       gloss: preserve alive me
+      pos: verb
+      stem: Piel
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: חַי
   - num: 8
     abs_num: 160
     hebrew: רֹאשׁ־דְּבָרְךָ אֱמֶת וּלְעוֹלָם כָּל־מִשְׁפַּט צִדְקֶךָ׃
-    kjv: 'Thy word is true from the beginning: and every one of thy righteous judgments
-      endureth for ever.'
+    kjv: 'Thy word is true from the beginning: and every one of thy righteous judgments endureth for ever.'
     first_word: רֹאשׁ־
     key_words:
     - word: וּלְעוֹלָם
       gloss: and for ever
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: עוֹלָם
     - word: דְּבָרְךָ
       gloss: word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: מִשְׁפַּט
       gloss: judgment
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      lemma: מִשְׁפָּט
     line_endings:
     - word: צִדְקֶךָ
       gloss: righteousness your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: צֶדֶק
 - num: 21
   letter: שׁ
   name: Shin
@@ -2527,19 +5921,41 @@ stanzas:
   - num: 1
     abs_num: 161
     hebrew: שָׂרִים רְדָפוּנִי חִנָּם וּמִדְּבָרְךָ פָּחַד לִבִּי׃
-    kjv: 'Princes have persecuted me without a cause: but my heart standeth in awe
-      of thy word.'
+    kjv: 'Princes have persecuted me without a cause: but my heart standeth in awe of thy word.'
     first_word: שָׂרִים
     key_words:
     - word: רְדָפוּנִי
       gloss: they have harassed me
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3cp
+      suffix: 1cs
+      lemma: רָדַף
     - word: וּמִדְּבָרְךָ
       gloss: and from word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     - word: שָׂרִים
       gloss: officials
+      pos: noun
+      gender: m
+      number: pl
+      state: abs
+      lemma: שַׂר
     line_endings:
     - word: לִבִּי
       gloss: heart my
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: לֵב
   - num: 2
     abs_num: 162
     hebrew: שָׂשׂ אָנֹכִי עַל־אִמְרָתֶךָ כְּמוֹצֵא שָׁלָל רָב׃
@@ -2548,13 +5964,31 @@ stanzas:
     key_words:
     - word: אִמְרָתֶךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: כְּמוֹצֵא
       gloss: like brings out
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.sg.cstr
+      lemma: מָצָא
     - word: אָנֹכִי
       gloss: I
+      pos: pronoun
+      lemma: אָנֹכִי
     line_endings:
     - word: רָב
       gloss: much
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: רַב
   - num: 3
     abs_num: 163
     hebrew: שֶׁקֶר שָׂנֵאתִי וַאֲתַעֵבָה תּוֹרָתְךָ אָהָבְתִּי׃
@@ -2563,13 +5997,33 @@ stanzas:
     key_words:
     - word: וַאֲתַעֵבָה
       gloss: and I abhor
+      pos: verb
+      stem: Piel
+      conj: InfCstr
+      lemma: נִתְעַב
     - word: שָׂנֵאתִי
       gloss: I hate
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׂנֵא
     - word: תּוֹרָתְךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     line_endings:
     - word: אָהָבְתִּי
       gloss: I love
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: אָהֵב
   - num: 4
     abs_num: 164
     hebrew: שֶׁבַע בַּיּוֹם הִלַּלְתִּיךָ עַל מִשְׁפְּטֵי צִדְקֶךָ׃
@@ -2578,13 +6032,35 @@ stanzas:
     key_words:
     - word: הִלַּלְתִּיךָ
       gloss: I praise you
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
+      suffix: 2ms
+      lemma: וּלְהַלֵּל
     - word: מִשְׁפְּטֵי
       gloss: judgments of
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      lemma: מִשְׁפָּט
     - word: בַּיּוֹם
       gloss: in the day
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: יוֹם
     line_endings:
     - word: צִדְקֶךָ
       gloss: righteousness your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: צֶדֶק
   - num: 5
     abs_num: 165
     hebrew: שָׁלוֹם רָב לְאֹהֲבֵי תוֹרָתֶךָ וְאֵין־לָמוֹ מִכְשׁוֹל׃
@@ -2593,13 +6069,34 @@ stanzas:
     key_words:
     - word: לְאֹהֲבֵי
       gloss: to love
+      pos: verb
+      stem: Qal
+      conj: Ptc.act
+      pgn: m.pl.cstr
+      lemma: אָהֵב
     - word: תוֹרָתֶךָ
       gloss: law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: מִכְשׁוֹל
       gloss: a stumbling block
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: מִכְשׁוֹל
     line_endings:
     - word: מִכְשׁוֹל
       gloss: a stumbling block
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: מִכְשׁוֹל
   - num: 6
     abs_num: 166
     hebrew: שִׂבַּרְתִּי לִישׁוּעָתְךָ יְהוָה וּמִצְוֹתֶיךָ עָשִׂיתִי׃
@@ -2608,13 +6105,34 @@ stanzas:
     key_words:
     - word: לִישׁוּעָתְךָ
       gloss: for deliverance your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: יְשׁוּעָה
     - word: וּמִצְוֹתֶיךָ
       gloss: and commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: שִׂבַּרְתִּי
       gloss: I wait
+      pos: verb
+      stem: Piel
+      conj: Perf
+      pgn: 1cs
     line_endings:
     - word: עָשִׂיתִי
       gloss: I have done
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: עָשָׂה
   - num: 7
     abs_num: 167
     hebrew: שָׁמְרָה נַפְשִׁי עֵדֹתֶיךָ וָאֹהֲבֵם מְאֹד׃
@@ -2623,29 +6141,73 @@ stanzas:
     key_words:
     - word: עֵדֹתֶיךָ
       gloss: testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: וָאֹהֲבֵם
       gloss: and I have loved them
+      pos: verb
+      stem: Qal
+      conj: w
+      pgn: 1cs
+      suffix: 3mp
+      lemma: אָהֵב
     - word: שָׁמְרָה
       gloss: it keeps
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 3fs
+      lemma: שָׁמַר
     line_endings:
     - word: מְאֹד
       gloss: exceedingly
+      pos: adj
+      gender: m
+      number: sg
+      state: abs
+      lemma: מְאֹד
   - num: 8
     abs_num: 168
     hebrew: שָׁמַרְתִּי פִקּוּדֶיךָ וְעֵדֹתֶיךָ כִּי כָל־דְּרָכַי נֶגְדֶּךָ׃
-    kjv: 'I have kept thy precepts and thy testimonies: for all my ways are before
-      thee.'
+    kjv: 'I have kept thy precepts and thy testimonies: for all my ways are before thee.'
     first_word: שָׁמַרְתִּי
     key_words:
     - word: פִקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: וְעֵדֹתֶיךָ
       gloss: and testimonies your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: עֵדֹתֶיךָ
     - word: שָׁמַרְתִּי
       gloss: I keep
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁמַר
     line_endings:
     - word: נֶגְדֶּךָ
       gloss: before you
+      pos: adj
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: נֶגֶד
 - num: 22
   letter: ת
   name: Taw
@@ -2653,19 +6215,42 @@ stanzas:
   - num: 1
     abs_num: 169
     hebrew: תִּקְרַב רִנָּתִי לְפָנֶיךָ יְהוָה כִּדְבָרְךָ הֲבִינֵנִי׃
-    kjv: 'Let my cry come near before thee, O Lord: give me understanding according
-      to thy word.'
+    kjv: 'Let my cry come near before thee, O Lord: give me understanding according to thy word.'
     first_word: תִּקְרַב
     key_words:
     - word: הֲבִינֵנִי
       gloss: give understanding of me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵבִין
     - word: לְפָנֶיךָ
       gloss: <to> before you
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פָּנִים
     - word: כִּדְבָרְךָ
       gloss: according to word your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: דָּבָר
     line_endings:
     - word: הֲבִינֵנִי
       gloss: give understanding of me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הֵבִין
   - num: 2
     abs_num: 170
     hebrew: תָּבוֹא תְּחִנָּתִי לְפָנֶיךָ כְּאִמְרָתְךָ הַצִּילֵנִי׃
@@ -2674,13 +6259,37 @@ stanzas:
     key_words:
     - word: כְּאִמְרָתְךָ
       gloss: according to word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     - word: הַצִּילֵנִי
       gloss: deliver me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הִצִּיל
     - word: תְּחִנָּתִי
       gloss: supplication my
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: תְּחִנָּה
     line_endings:
     - word: הַצִּילֵנִי
       gloss: deliver me
+      pos: verb
+      stem: Hiphil
+      conj: Wqtl
+      pgn: 2ms
+      suffix: 1cs
+      lemma: הִצִּיל
   - num: 3
     abs_num: 171
     hebrew: תַּבַּעְנָה שְׂפָתַי תְּהִלָּה כִּי תְלַמְּדֵנִי חֻקֶּיךָ׃
@@ -2689,13 +6298,36 @@ stanzas:
     key_words:
     - word: תְלַמְּדֵנִי
       gloss: you teach me
+      pos: verb
+      stem: Piel
+      conj: Impf
+      pgn: 2ms
+      suffix: 1cs
+      lemma: לִמַּד
     - word: תַּבַּעְנָה
       gloss: may they pour forth
+      pos: verb
+      stem: Hiphil
+      conj: Impf
+      pgn: 3fp
+      lemma: אַבִּיעָה
     - word: שְׂפָתַי
       gloss: lips my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: שָׂפָה
     line_endings:
     - word: חֻקֶּיךָ
       gloss: decrees your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: חֹק
   - num: 4
     abs_num: 172
     hebrew: תַּעַן לְשׁוֹנִי אִמְרָתֶךָ כִּי כָל־מִצְוֹתֶיךָ צֶּדֶק׃
@@ -2704,13 +6336,36 @@ stanzas:
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: לְשׁוֹנִי
       gloss: tongue my
+      pos: noun
+      gender: c
+      number: sg
+      state: cstr
+      suffix: 1cs
+      lemma: לָשׁוֹן
     - word: אִמְרָתֶךָ
       gloss: word your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: אֲמָרוֹת
     line_endings:
     - word: צֶּדֶק
       gloss: righteousness
+      pos: noun
+      gender: m
+      number: sg
+      state: abs
+      lemma: צֶדֶק
   - num: 5
     abs_num: 173
     hebrew: תְּהִי־יָדְךָ לְעָזְרֵנִי כִּי פִקּוּדֶיךָ בָחָרְתִּי׃
@@ -2719,13 +6374,34 @@ stanzas:
     key_words:
     - word: לְעָזְרֵנִי
       gloss: to help me
+      pos: verb
+      stem: Qal
+      conj: InfCstr
+      suffix: 1cs
+      lemma: לַעְזֹר
     - word: פִקּוּדֶיךָ
       gloss: precepts your
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: פִּקּוּדֵי
     - word: בָחָרְתִּי
       gloss: I have chosen
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: בָּחַר
     line_endings:
     - word: בָחָרְתִּי
       gloss: I have chosen
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: בָּחַר
   - num: 6
     abs_num: 174
     hebrew: תָּאַבְתִּי לִישׁוּעָתְךָ יְהוָה וְתוֹרָתְךָ שַׁעֲשֻׁעָי׃
@@ -2734,13 +6410,35 @@ stanzas:
     key_words:
     - word: לִישׁוּעָתְךָ
       gloss: for deliverance your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: יְשׁוּעָה
     - word: וְתוֹרָתְךָ
       gloss: and law your
+      pos: noun
+      gender: f
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: תּוֹרָה
     - word: תָּאַבְתִּי
       gloss: I long
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
     line_endings:
     - word: שַׁעֲשֻׁעָי
       gloss: delight<s> my
+      pos: noun
+      gender: m
+      number: pl
+      state: cstr
+      suffix: 1cs
+      lemma: שַׁעֲשֻׁעִים
   - num: 7
     abs_num: 175
     hebrew: תְּחִי־נַפְשִׁי וּתְהַלְלֶךָּ וּמִשְׁפָּטֶךָ יַעֲזְרֻנִי׃
@@ -2749,26 +6447,70 @@ stanzas:
     key_words:
     - word: וּתְהַלְלֶךָּ
       gloss: so it may praise you
+      pos: verb
+      stem: Piel
+      conj: u
+      pgn: 3fs
+      suffix: 2ms
+      lemma: וּלְהַלֵּל
     - word: וּמִשְׁפָּטֶךָ
       gloss: and judgments your
+      pos: noun
+      gender: m
+      number: sg
+      state: cstr
+      suffix: 2ms
+      lemma: מִשְׁפָּט
     - word: יַעֲזְרֻנִי
       gloss: may they help me
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      suffix: 1cs
+      lemma: לַעְזֹר
     line_endings:
     - word: יַעֲזְרֻנִי
       gloss: may they help me
+      pos: verb
+      stem: Qal
+      conj: Impf
+      pgn: 3mp
+      suffix: 1cs
+      lemma: לַעְזֹר
   - num: 8
     abs_num: 176
     hebrew: תָּעִיתִי כְּשֶׂה אֹבֵד בַּקֵּשׁ עַבְדֶּךָ כִּי מִצְוֹתֶיךָ לֹא שָׁכָחְתִּי׃
-    kjv: I have gone astray like a lost sheep; seek thy servant; for I do not forget
-      thy commandments.
+    kjv: I have gone astray like a lost sheep; seek thy servant; for I do not forget thy commandments.
     first_word: תָּעִיתִי
     key_words:
     - word: מִצְוֹתֶיךָ
       gloss: commandments your
+      pos: noun
+      gender: f
+      number: pl
+      state: cstr
+      suffix: 2ms
+      lemma: מִצְוָה
     - word: תָּעִיתִי
       gloss: I have gone astray
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: תָּעָה
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
     line_endings:
     - word: שָׁכָחְתִּי
       gloss: I have forgotten
+      pos: verb
+      stem: Qal
+      conj: Perf
+      pgn: 1cs
+      lemma: שָׁכַח
