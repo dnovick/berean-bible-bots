@@ -497,6 +497,9 @@ def build_vocab_deck(stanza: dict[str, Any], slug: str) -> dict[str, str]:
     fd = "\n".join(f"{f}\t{b}\t{deck_name}" for f, b in cards) + "\n"
     md_lines = [
         f"# {deck_name}", "",
+        f"**Download:** [Anki import (.txt)](ps119-{slug}-vocab-deck.txt) · "
+        f"[Flashcard Deluxe (-fd.txt)](ps119-{slug}-vocab-deck-fd.txt)",
+        "",
         f"*{len(cards)} key vocabulary words from Psalm 119:{stanza['verses'][0]['abs_num']}"
         f"–{stanza['verses'][-1]['abs_num']}.*",
         f"*Import `ps119-{slug}-vocab-deck.txt` into Anki (File → Import).*",
@@ -523,6 +526,9 @@ def build_verse_deck(stanza: dict[str, Any], slug: str) -> dict[str, str]:
     fd = "\n".join(f"{f}\t{b}\t{deck_name}" for f, b in cards) + "\n"
     md_lines = [
         f"# {deck_name}", "",
+        f"**Download:** [Anki import (.txt)](ps119-{slug}-verse-deck.txt) · "
+        f"[Flashcard Deluxe (-fd.txt)](ps119-{slug}-verse-deck-fd.txt)",
+        "",
         f"*{len(cards)} cards ({len(stanza['verses'])} verses × 2 card types).*",
         f"*Import `ps119-{slug}-verse-deck.txt` into Anki (File → Import).*",
         "", "**Type A** — First-word prompt → full Hebrew verse",
@@ -563,11 +569,11 @@ def build_section_index(stanza: dict[str, Any], slug: str) -> str:
         "[MD](exercises/first-word/first-word.md) |",
         "", "---", "", "## Anki Flashcard Decks", "",
         "| Deck | Download |", "|---|---|",
-        f"| Vocabulary | [.txt](anki/ps119-{slug}-vocab-deck.txt) · "
-        f"[FrontDoor](anki/ps119-{slug}-vocab-deck-fd.txt) · "
+        f"| Vocabulary | [Anki (.txt)](anki/ps119-{slug}-vocab-deck.txt) · "
+        f"[Flashcard Deluxe (-fd.txt)](anki/ps119-{slug}-vocab-deck-fd.txt) · "
         f"[Preview](anki/ps119-{slug}-vocab-deck.md) |",
-        f"| Verse Recitation | [.txt](anki/ps119-{slug}-verse-deck.txt) · "
-        f"[FrontDoor](anki/ps119-{slug}-verse-deck-fd.txt) · "
+        f"| Verse Recitation | [Anki (.txt)](anki/ps119-{slug}-verse-deck.txt) · "
+        f"[Flashcard Deluxe (-fd.txt)](anki/ps119-{slug}-verse-deck-fd.txt) · "
         f"[Preview](anki/ps119-{slug}-verse-deck.md) |",
         "", "---", "", "## Reference Card", "",
         f"[Download PDF reference card](ps119-{slug}-reference.pdf) — Hebrew and KJV side-by-side.",
@@ -859,6 +865,43 @@ def _copy_or_build_pdf(data_src: Path, mkdocs_dst: Path, builder: Any) -> None:
 
 
 # ---------------------------------------------------------------------------
+# Master flashcards index
+# ---------------------------------------------------------------------------
+
+def build_flashcards_index(stanzas: list[dict[str, Any]]) -> str:
+    lines = [
+        "# Psalm 119 — Flashcard Decks",
+        "",
+        "Download flashcard decks for all 22 stanzas. Each stanza has a **Vocabulary** deck "
+        "(key Hebrew words with glosses) and a **Verse Recitation** deck "
+        "(first-word and KJV prompts).",
+        "",
+        "Import `.txt` files into [Anki](https://apps.ankiweb.net) (File → Import). "
+        "Use `-fd.txt` files with Flashcard Deluxe.",
+        "",
+        "---", "",
+        "| Stanza | Vocabulary Deck | Verse Recitation Deck |",
+        "|---|---|---|",
+    ]
+    for stanza in stanzas:
+        slug = make_slug(stanza)
+        letter, name = stanza["letter"], stanza["name"]
+        v_start = stanza["verses"][0]["abs_num"]
+        v_end = stanza["verses"][-1]["abs_num"]
+        base = f"../memorization/{slug}/anki/ps119-{slug}"
+        lines.append(
+            f"| [{letter} {name} (vv. {v_start}–{v_end})](../memorization/{slug}/) |"
+            f" [Anki (.txt)]({base}-vocab-deck.txt)"
+            f" \xb7 [Flashcard Deluxe (-fd.txt)]({base}-vocab-deck-fd.txt)"
+            f" \xb7 [Preview]({base}-vocab-deck.md) |"
+            f" [Anki (.txt)]({base}-verse-deck.txt)"
+            f" \xb7 [Flashcard Deluxe (-fd.txt)]({base}-verse-deck-fd.txt)"
+            f" \xb7 [Preview]({base}-verse-deck.md) |"
+        )
+    return "\n".join(lines) + "\n"
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -873,7 +916,11 @@ def main() -> None:
         print(f"  {slug}...", end=" ", flush=True)
         build_section(stanza, MKDOCS_OUT, DATA_MEM)
         print("done")
+    fc_dir = MKDOCS_OUT.parent / "flashcards"
+    fc_dir.mkdir(parents=True, exist_ok=True)
+    (fc_dir / "index.md").write_text(build_flashcards_index(stanzas), encoding="utf-8")
     print(f"build_psalm119_memorization: complete → {MKDOCS_OUT}")
+    print(f"build_psalm119_memorization: flashcards index → {fc_dir / 'index.md'}")
 
 
 if __name__ == "__main__":
