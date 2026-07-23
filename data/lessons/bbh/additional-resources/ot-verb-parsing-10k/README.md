@@ -1,4 +1,4 @@
-# OT Verb Parsing — 10,000 Forms
+# OT Verb Parsing — 10,399 Forms
 
 ← [Back to Additional Resources](../index.md)
 

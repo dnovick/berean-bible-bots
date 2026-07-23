@@ -1,4 +1,4 @@
-# OT Extended Vocabulary
+# OT Extended Vocabulary — Freq 30–69
 
 ← [Back to Additional Resources](../index.md)
 

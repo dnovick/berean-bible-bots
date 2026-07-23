@@ -1,4 +1,4 @@
-# Hebrew Root Deck
+# Hebrew Root Flashcard Deck
 
 ← [Back to Additional Resources](../index.md)
 
