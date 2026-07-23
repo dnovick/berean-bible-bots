@@ -1331,7 +1331,7 @@ class ExercisePDF:
             return path
         self._path = path
         os.makedirs(os.path.dirname(path), exist_ok=True)
-        self._canvas = canvas.Canvas(path, pagesize=LETTER)
+        self._canvas = canvas.Canvas(path, pagesize=LETTER, invariant=1)
         self._canvas.setTitle(self.title)
         self._canvas.setAuthor('Berean Bible Bots')
         self._canvas.setSubject('Biblical Hebrew Passage Exercise')

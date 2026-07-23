@@ -739,7 +739,7 @@ def build_reference_card_pdf(stanza: dict[str, Any], out_path: Path) -> None:
     v_start, v_end = stanza["verses"][0]["abs_num"], stanza["verses"][-1]["abs_num"]
     title = f"Psalm 119 — {letter} {name} — Reference Card"
     W, H = LETTER
-    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER)
+    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER, invariant=1)
     y = _setup_pdf_page(c, title, f"Verses {v_start}–{v_end}")
     row_h = 0.7 * inch
     col_heb = 0.75 * inch
@@ -793,7 +793,7 @@ def build_cloze_pdf(stanza: dict[str, Any], level: int, out_path: Path) -> None:
     label = "Key Vocabulary" if level == 1 else "Line Endings"
     title = f"Psalm 119 — {letter} {name} — Cloze Level {level}"
     W, H = LETTER
-    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER)
+    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER, invariant=1)
     y = _setup_pdf_page(c, title, f"Ps 119:{v_start}–{v_end} · {label} blanked")
     row_h = 0.9 * inch
     for i, v in enumerate(stanza["verses"]):
@@ -833,7 +833,7 @@ def build_verse_order_pdf(stanza: dict[str, Any], out_path: Path) -> None:
     letter, name = stanza["letter"], stanza["name"]
     v_start, v_end = stanza["verses"][0]["abs_num"], stanza["verses"][-1]["abs_num"]
     W, H = LETTER
-    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER)
+    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER, invariant=1)
     y = _setup_pdf_page(c, f"Psalm 119 — {letter} {name} — Verse Ordering",
                         f"Ps 119:{v_start}–{v_end} · Write the correct position (1–8)")
     row_h = 0.8 * inch
@@ -866,7 +866,7 @@ def build_first_word_pdf(stanza: dict[str, Any], out_path: Path) -> None:
     letter, name = stanza["letter"], stanza["name"]
     v_start, v_end = stanza["verses"][0]["abs_num"], stanza["verses"][-1]["abs_num"]
     W, H = LETTER
-    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER)
+    c = rl_canvas.Canvas(str(out_path), pagesize=LETTER, invariant=1)
     y = _setup_pdf_page(c, f"Psalm 119 — {letter} {name} — First-Word Prompt",
                         f"Ps 119:{v_start}–{v_end} · Write the full verse from memory")
     row_h = 1.0 * inch
