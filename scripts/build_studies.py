@@ -13,6 +13,8 @@ Run before `mkdocs build` (or let the pre-commit hook do it automatically):
 from __future__ import annotations
 
 import re
+import subprocess
+import sys
 import shutil
 from pathlib import Path
 
@@ -90,7 +92,9 @@ def _build_psalm119_nav() -> str:
     ]
 
     for num, letter, name, v_start, v_end in PSALM119_STANZAS:
-        slug = f"{num:02d}-{name.lower().replace('ḥ', 'het')}"
+        import unicodedata as _ud
+        _n = _ud.normalize("NFKD", name.lower())
+        slug = f"{num:02d}-{re.sub(r'[^a-z]', '', _n)}"
         section_dir = mem_dir / slug
         if section_dir.exists():
             lines.append(
@@ -112,6 +116,10 @@ def main() -> None:
         dst = _MKDOCS_STUDIES / "psalm-119" / src.name
         dst.parent.mkdir(parents=True, exist_ok=True)
         shutil.copy2(src, dst)
+
+    # Generate per-section memorization exercises for Psalm 119.
+    mem_script = _REPO / "scripts" / "build_psalm119_memorization.py"
+    subprocess.run([sys.executable, str(mem_script)], check=True)
 
     nav_block = _build_psalm119_nav()
     _update_nav(nav_block)
