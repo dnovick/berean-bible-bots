@@ -46,9 +46,9 @@
 - To be of some small help to you in your journey to please Christ as you, 
 with His help, "study" (gk. σπουδάζω – strive) to "...rightly divide the word of truth." – 2 Timothy 2:15.
 - To promote sound exegesis and hermeneutics of the Biblical text.
-  - Exegesis: Determining the meaning of the text.
-  - Hermeneutics: The study of principles and methods of interpretation.
-  - What does it mean for exegesis and hermeneutics to be sound?
+    - Exegesis: Determining the meaning of the text.
+    - Hermeneutics: The study of principles and methods of interpretation.
+    - What does it mean for exegesis and hermeneutics to be sound?
 - Requests:
     - Pray for one another. Pray for the instructors. Pray for the class sessions.
     - Please remember that our understanding of the text is ultimately reliant on the
