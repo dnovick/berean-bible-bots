@@ -87,6 +87,16 @@ def make_slug(stanza: dict[str, Any]) -> str:
 # Verse text helpers
 # ---------------------------------------------------------------------------
 
+def _sort_by_position(pairs: list[tuple[str, str]], text: str) -> list[tuple[str, str]]:
+    """Return pairs sorted by position in text (ascending = rightmost in RTL display = first read)."""
+    def _pos(wg: tuple[str, str]) -> int:
+        try:
+            return text.index(wg[0])
+        except ValueError:
+            return len(text)
+    return sorted(pairs, key=_pos)
+
+
 def blank_key_word(text: str, key_word: str) -> str:
     if key_word in text:
         idx = text.index(key_word)
@@ -198,10 +208,10 @@ def build_cloze_l1_html(stanza: dict[str, Any]) -> str:
         blanked = v["hebrew"]
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
-        # Reversed so leftmost input matches leftmost blank in RTL Hebrew display
+        ordered = _sort_by_position(pairs, v["hebrew"])
         inputs = "".join(
             f'<input class="parse-field" id="cl1_{i}_{j}" placeholder="{safe_html(w)[:1]}…" dir="rtl">'
-            for j, (w, _) in enumerate(reversed(pairs))
+            for j, (w, _) in enumerate(ordered)
         )
         body_rows.append(
             f"<tr>"
@@ -212,7 +222,7 @@ def build_cloze_l1_html(stanza: dict[str, Any]) -> str:
             f"</tr>"
         )
         ans_parts = []
-        for word, gloss in reversed(pairs):
+        for word, gloss in ordered:
             gs = f" — {safe_html(gloss)}" if gloss else ""
             ans_parts.append(f"<span class='heb-inline'>{safe_html(word)}</span>{gs}")
         ans_text = " &nbsp;|&nbsp; ".join(ans_parts) if ans_parts else "—"
@@ -239,12 +249,13 @@ def build_cloze_l1_md(stanza: dict[str, Any]) -> str:
         blanked = v["hebrew"]
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
-        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in reversed(pairs)) or "—"
+        ordered = _sort_by_position(pairs, v["hebrew"])
+        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in ordered) or "—"
         lines.append(f"| 119:{v['abs_num']} | {blanked} | {ans} |")
     lines += ["", "---", "", "## Answer Key", "", "| # | Full Verse | Key Word(s) |", "|---|---|---|"]
     for v in stanza["verses"]:
         pairs = _kw_pairs(v.get("key_words") or [])
-        kw = ", ".join(w for w, _ in reversed(pairs)) or "—"
+        kw = ", ".join(w for w, _ in _sort_by_position(pairs, v["hebrew"])) or "—"
         lines.append(f"| 119:{v['abs_num']} | {v['hebrew']} | {kw} |")
     return "\n".join(lines) + "\n"
 
@@ -277,11 +288,11 @@ def build_cloze_l2_html(stanza: dict[str, Any]) -> str:
         blanked = v["hebrew"]
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
-        n = len(pairs) or 1
-        # Reversed so leftmost input matches leftmost blank in RTL Hebrew display
+        ordered = _sort_by_position(pairs, v["hebrew"])
+        n = len(ordered) or 1
         inputs = "".join(
             f'<input class="parse-field" id="cl2_{i}_{j}" placeholder="line ending" dir="rtl">'
-            for j in range(n - 1, -1, -1)
+            for j in range(n)
         )
         body_rows.append(
             f"<tr>"
@@ -292,7 +303,7 @@ def build_cloze_l2_html(stanza: dict[str, Any]) -> str:
             f"</tr>"
         )
         ans_parts = []
-        for word, gloss in reversed(pairs):
+        for word, gloss in ordered:
             gs = f" — {safe_html(gloss)}" if gloss else ""
             ans_parts.append(f"<span class='heb-inline'>{safe_html(word)}</span>{gs}")
         ans_text = " &nbsp;|&nbsp; ".join(ans_parts) if ans_parts else "—"
@@ -319,12 +330,14 @@ def build_cloze_l2_md(stanza: dict[str, Any]) -> str:
         blanked = v["hebrew"]
         for word, _ in pairs:
             blanked = blank_key_word(blanked, word)
-        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in reversed(pairs)) or "—"
+        ordered = _sort_by_position(pairs, v["hebrew"])
+        ans = " | ".join((f"{w} — {g}" if g else w) for w, g in ordered) or "—"
         lines.append(f"| 119:{v['abs_num']} | {blanked} | {ans} |")
     lines += ["", "---", "", "## Answer Key", "", "| # | Full Verse | Line Ending(s) |", "|---|---|---|"]
     for v in stanza["verses"]:
         pairs = _kw_pairs(v.get("line_endings") or [])
-        lines.append(f"| 119:{v['abs_num']} | {v['hebrew']} | {', '.join(w for w, _ in reversed(pairs)) or '—'} |")
+        ordered = _sort_by_position(pairs, v["hebrew"])
+        lines.append(f"| 119:{v['abs_num']} | {v['hebrew']} | {', '.join(w for w, _ in ordered) or '—'} |")
     return "\n".join(lines) + "\n"
 
 
