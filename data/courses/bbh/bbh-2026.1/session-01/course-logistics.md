@@ -5,7 +5,7 @@
 |-------------|----------------------------------------------|
 | Day of week | Alternate Thursdays, beginning July 13, 2026 |
 | Time        | 6pm PT / 8pm CT                              |
-| Location    | Google Meet (calendar hit to come)           |
+| Location    | [Google Meet](https://meet.google.com/yth-mbyp-gxn) |
 | 
 
 ## Session Guidelines

@@ -390,6 +390,10 @@ def render_instance_page(course: dict[str, Any]) -> str:
     if instructors:
         lines.append(f"**Instructor(s):** {', '.join(instructors)}  ")
 
+    meet_url = course.get("meet_url", "")
+    if meet_url:
+        lines.append(f"**Google Meet:** [{meet_url}]({meet_url})  ")
+
     lines.append("")
 
     if resources:
