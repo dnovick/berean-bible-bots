@@ -1,4 +1,4 @@
-# Psalm 119 — Hebrew Study
+# Psalm 119
 
 Psalm 119 is the longest chapter in the Bible (176 verses) and the most elaborate alphabetic acrostic in the Hebrew scriptures: 22 stanzas of 8 verses each, one for every letter of the Hebrew alphabet. This study combines thematic analysis with structured memorization resources for reading and retaining the psalm in Hebrew.
 

@@ -1,10 +1,10 @@
 # Course Logistics
 
-| Item        | Details                                     |
-|-------------|---------------------------------------------|
-| Day of week | Alternate Thursdays, beginning July 9, 2026 |
-| Time        | 6pm PT / 8pm CT                             |
-| Location    | Google Meet (calendar hit to come)          |
+| Item        | Details                                      |
+|-------------|----------------------------------------------|
+| Day of week | Alternate Thursdays, beginning July 13, 2026 |
+| Time        | 6pm PT / 8pm CT                              |
+| Location    | Google Meet (calendar hit to come)           |
 | 
 
 ## Session Guidelines
