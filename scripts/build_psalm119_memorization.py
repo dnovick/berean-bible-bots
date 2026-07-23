@@ -476,43 +476,145 @@ def build_first_word_md(stanza: dict[str, Any]) -> str:
 # Anki decks
 # ---------------------------------------------------------------------------
 
+_STEM_TAG = {
+    "Qal": "qal", "Niphal": "niphal", "Piel": "piel", "Pual": "pual",
+    "Hiphil": "hiphil", "Hophal": "hophal", "Hithpael": "hithpael",
+    "Polel": "polel", "Polal": "polal", "Hithpolel": "hithpolel",
+    "Qal-pass": "qal-pass",
+}
+
+_CONJ_TAG = {
+    "Perf": "perfect", "Impf": "imperfect", "Wqtl": "wayyiqtol",
+    "Juss": "jussive", "Impv": "imperative",
+    "InfCstr": "inf-cstr", "InfAbs": "inf-abs",
+    "Ptc.act": "participle", "Ptc.pass": "ptc-pass",
+}
+
+
+def _kw_back(kw: dict[str, Any]) -> str:
+    """Build the back-of-card string from a key_word dict with morphological fields."""
+    pos = kw.get("pos", "")
+    gloss = kw.get("gloss", "") or "(see verse)"
+    lemma = kw.get("lemma", "")
+    suffix = kw.get("suffix", "")
+    sfx_str = f" + {suffix} sfx" if suffix else ""
+
+    if pos == "verb":
+        stem = kw.get("stem", "")
+        conj = kw.get("conj", "")
+        pgn = kw.get("pgn", "")
+        morph = " ".join(x for x in [stem, conj, pgn] if x)
+        root_str = f" — root: {lemma}" if lemma else ""
+        return f"verb — {morph}{sfx_str}{root_str} — {gloss}"
+
+    if pos == "noun":
+        gen = kw.get("gender", "")
+        num = kw.get("number", "")
+        state = kw.get("state", "")
+        morph = ".".join(x for x in [gen, num, state] if x)
+        lem_str = f" — lemma: {lemma}" if lemma else ""
+        return f"noun {morph}{sfx_str}{lem_str} — {gloss}"
+
+    if pos == "adj":
+        gen = kw.get("gender", "")
+        num = kw.get("number", "")
+        state = kw.get("state", "")
+        morph = ".".join(x for x in [gen, num, state] if x)
+        lem_str = f" — lemma: {lemma}" if lemma else ""
+        return f"adj {morph}{sfx_str}{lem_str} — {gloss}"
+
+    if pos in ("pronoun", "particle"):
+        lem_str = f" — lemma: {lemma}" if lemma else ""
+        return f"{pos}{lem_str} — {gloss}"
+
+    # Fallback: plain gloss
+    return gloss
+
+
+def _kw_tags(kw: dict[str, Any], base_tags: str) -> str:
+    """Build the Anki tag string for a vocab card."""
+    tags = [base_tags]
+    pos = kw.get("pos", "")
+    if pos:
+        tags.append(f"ps119-{pos}")
+    if pos == "verb":
+        stem = _STEM_TAG.get(kw.get("stem", ""), "")
+        if stem:
+            tags.append(f"ps119-{stem}")
+        conj_tag = _CONJ_TAG.get(kw.get("conj", ""), "")
+        if conj_tag:
+            tags.append(f"ps119-{conj_tag}")
+    return " ".join(tags)
+
+
+def _kw_parse_str(kw: dict[str, Any]) -> str:
+    """Return a compact parse descriptor for the preview table."""
+    pos = kw.get("pos", "")
+    suffix = kw.get("suffix", "")
+    sfx = f" + {suffix} sfx" if suffix else ""
+    if pos == "verb":
+        stem = kw.get("stem", "")
+        conj = kw.get("conj", "")
+        pgn = kw.get("pgn", "")
+        return " ".join(x for x in [stem, conj, pgn] if x) + sfx
+    if pos in ("noun", "adj"):
+        g = kw.get("gender", "")
+        n = kw.get("number", "")
+        s = kw.get("state", "")
+        return ".".join(x for x in [g, n, s] if x) + sfx
+    return ""
+
+
 def build_vocab_deck(stanza: dict[str, Any], slug: str) -> dict[str, str]:
-    letter, name = stanza["letter"], stanza["name"]
-    deck_name = f"Psalm 119 — {letter} {name} — Vocabulary"
-    tag = f"ps119 ps119-{slug} ps119-vocab"
-    cards: list[tuple[str, str]] = []
+    num = stanza["num"]
+    name = stanza["name"]
+    deck_name = f"Psalm 119::{num:02d} {name} — Vocabulary"
+    base_tags = f"ps119-vocab ps119-{slug}"
+    # cards: (front, back, tags, kw_dict)
+    cards: list[tuple[str, str, str, dict[str, Any]]] = []
     seen: set[str] = set()
     for v in stanza["verses"]:
-        for word, gloss in _kw_pairs(v.get("key_words") or []):
+        for kw in (v.get("key_words") or []):
+            if not isinstance(kw, dict):
+                continue
+            word = kw.get("word", "")
             if word in seen:
                 continue
             seen.add(word)
             ref = f"Ps 119:{v['abs_num']}"
-            cards.append((f"{word} ({ref})", gloss or "(see verse)"))
+            cards.append((f"{word} ({ref})", _kw_back(kw), _kw_tags(kw, base_tags), kw))
     txt = "\n".join([
         "#separator:tab", "#html:false", "#notetype:Basic",
         f"#deck:{deck_name}", "#tags column:3",
-        *[f"{f}\t{b}\t{tag}" for f, b in cards],
+        *[f"{f}\t{b}\t{t}" for f, b, t, _ in cards],
     ]) + "\n"
-    fd = "\n".join(f"{f}\t{b}\t{deck_name}" for f, b in cards) + "\n"
+    fd = "\n".join(f"{f}\t{b}\t{deck_name}" for f, b, t, _ in cards) + "\n"
     md_lines = [
-        f"# {deck_name}", "",
+        f"# Psalm 119 — {stanza['letter']} {name} — Vocabulary", "",
         f"**Download:** [Anki import (.txt)](ps119-{slug}-vocab-deck.txt) · "
         f"[Flashcard Deluxe (-fd.txt)](ps119-{slug}-vocab-deck-fd.txt)",
         "",
-        f"*{len(cards)} key vocabulary words from Psalm 119:{stanza['verses'][0]['abs_num']}"
-        f"–{stanza['verses'][-1]['abs_num']}.*",
+        f"*{len(cards)} key vocabulary words from "
+        f"Psalm 119:{stanza['verses'][0]['abs_num']}–{stanza['verses'][-1]['abs_num']}.*",
         f"*Import `ps119-{slug}-vocab-deck.txt` into Anki (File → Import).*",
-        "", "---", "", "## Card List", "", "| # | Hebrew Form | Gloss |", "|---|---|---|",
-        *[f"| {i} | {f.split(' (')[0]} | {b} |" for i, (f, b) in enumerate(cards, 1)],
+        "", "---", "", "## Card List", "",
+        "| # | Hebrew Form | POS | Parse / Morphology | Lemma | Gloss |",
+        "|---|---|---|---|---|---|",
     ]
+    for i, (f, _b, _t, kw) in enumerate(cards, 1):
+        word = f.split(" (")[0]
+        pos = kw.get("pos", "")
+        parse = _kw_parse_str(kw)
+        lemma = kw.get("lemma", "")
+        gloss = kw.get("gloss", "")
+        md_lines.append(f"| {i} | {word} | {pos} | {parse} | {lemma} | {gloss} |")
     return {"txt": txt, "fd": fd, "md": "\n".join(md_lines) + "\n"}
 
 
 def build_verse_deck(stanza: dict[str, Any], slug: str) -> dict[str, str]:
     letter, name = stanza["letter"], stanza["name"]
-    deck_name = f"Psalm 119 — {letter} {name} — Verse Recitation"
-    tag = f"ps119 ps119-{slug} ps119-verse"
+    deck_name = f"Psalm 119::{stanza['num']:02d} {name} — Verse Recitation"
+    tag = f"ps119-verse ps119-{slug}"
     cards: list[tuple[str, str]] = []
     for v in stanza["verses"]:
         ref = f"Ps 119:{v['abs_num']}"
