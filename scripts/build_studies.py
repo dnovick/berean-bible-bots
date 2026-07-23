@@ -84,7 +84,7 @@ def _build_psalm119_nav() -> str:
     lines: list[str] = [
         "- Studies:",
         "  - Overview: studies/index.md",
-        "  - Psalm 119 — Hebrew Memorization:",
+        "  - Psalm 119:",
         "    - Overview: studies/psalm-119/index.md",
         "    - Analysis — Word Vocabulary & Themes: studies/psalm-119/analysis/psalm-119-report.md",
         "    - Memorization Exercises:",
