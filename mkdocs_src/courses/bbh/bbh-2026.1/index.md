@@ -2,6 +2,7 @@
 
 **Textbook:** Basics of Biblical Hebrew, 3rd ed.  
 **Instructor(s):** Preston Brown, David Novick  
+**Google Meet:** [https://meet.google.com/yth-mbyp-gxn](https://meet.google.com/yth-mbyp-gxn)  
 
 ## Sessions
 
