@@ -8,7 +8,7 @@
 
 | Session | Date | Recording |
 |---|---|---|
-| [1 — Introduction](session-01.md) | Jul 23, 2026 |  |
+| [1 — Introduction](session-01.md) | Jul 23, 2026 | [Watch](https://drive.google.com/file/d/1-04RP3mNELzgHx1RKOUG7I8HIMzg9QYM/view) |
 | [2 — BBH 1 - Hebrew Alphabet](session-02.md) | Aug 6, 2026 |  |
 | [3 — BBH 2 - Hebrew Vowels](session-03.md) | Aug 20, 2026 |  |
 | [4 — BBH 3 - Syllabification and Pronunciation](session-04.md) | Sep 3, 2026 |  |
