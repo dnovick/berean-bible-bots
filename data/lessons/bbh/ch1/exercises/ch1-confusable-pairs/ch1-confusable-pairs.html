@@ -1,0 +1,765 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 1 — Hebrew Confusable Letter Pairs Exercise</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 960px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 2em; font-weight: bold; width: 3.5rem; text-align: center; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.parse-field { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.5em; font-weight: bold; width: 3.5rem; text-align: center; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    select.parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 1 — Hebrew Confusable Letter Pairs Exercise</h1>
+<p class="subtitle">BBH Chapter 1 · Hebrew Alphabet · 34 pairs</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each pair of Hebrew letters shown, provide: (1) Name of Letter A, (2) Name of Letter B, (3) the key visual feature that distinguishes them.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr><th>#</th><th>Letter A</th><th>Letter B</th><th>Name A</th><th>Name B</th><th>Key Difference</th><th></th></tr>
+
+  <!-- 1: כ / ב -->
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">כ</td>
+    <td class="heb">ב</td>
+    <td><select class="parse-field" id="1-na"><option value="">—</option><option>Bet (soft)</option><option>He</option><option>Kaf (soft)</option><option>Resh</option></select></td>
+    <td><select class="parse-field" id="1-nb"><option value="">—</option><option>Bet (soft)</option><option>Dalet</option><option>Kaf (soft)</option><option>Pe (soft)</option></select></td>
+    <td><input class="f" id="1-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כ</td>
+    <td class="ans-heb">ב</td>
+    <td>Kaf (soft)</td>
+    <td>Bet (soft)</td>
+    <td>כ has a small foot projecting from the lower-left corner; ב has a flat base with no foot</td>
+    <td></td>
+  </tr>
+
+  <!-- 2: ד / ר -->
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">ד</td>
+    <td class="heb">ר</td>
+    <td><select class="parse-field" id="2-na"><option value="">—</option><option>Dalet</option><option>He</option><option>Kaf (soft)</option><option>Resh</option></select></td>
+    <td><select class="parse-field" id="2-nb"><option value="">—</option><option>Dalet</option><option>He</option><option>Kaf (soft)</option><option>Resh</option></select></td>
+    <td><input class="f" id="2-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ד</td>
+    <td class="ans-heb">ר</td>
+    <td>Dalet</td>
+    <td>Resh</td>
+    <td>ד has a sharp right-angle at the upper-right corner; ר is gently rounded — "Dalet is Definite, it has a corner"</td>
+    <td></td>
+  </tr>
+
+  <!-- 3: ה / ח -->
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">ה</td>
+    <td class="heb">ח</td>
+    <td><select class="parse-field" id="3-na"><option value="">—</option><option>Dalet</option><option>He</option><option>Ḥet</option><option>Kaf (soft)</option></select></td>
+    <td><select class="parse-field" id="3-nb"><option value="">—</option><option>Ayin</option><option>He</option><option>Ḥet</option><option>Kaf (soft)</option></select></td>
+    <td><input class="f" id="3-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ה</td>
+    <td class="ans-heb">ח</td>
+    <td>He</td>
+    <td>Ḥet</td>
+    <td>The left leg of ה hangs free (gap at top-left); ח's two legs are joined at the top — "He has a Hole"</td>
+    <td></td>
+  </tr>
+
+  <!-- 4: מ / ס -->
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">מ</td>
+    <td class="heb">ס</td>
+    <td><select class="parse-field" id="4-na"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="4-nb"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Qof</option><option>Samek</option></select></td>
+    <td><input class="f" id="4-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מ</td>
+    <td class="ans-heb">ס</td>
+    <td>Mem</td>
+    <td>Samek</td>
+    <td>מ is open at the lower-right with angular corners; ס is a fully enclosed oval with no opening</td>
+    <td></td>
+  </tr>
+
+  <!-- 5: ו / ז -->
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">ו</td>
+    <td class="heb">ז</td>
+    <td><select class="parse-field" id="5-na"><option value="">—</option><option>Nun Sofit</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><select class="parse-field" id="5-nb"><option value="">—</option><option>Nun</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><input class="f" id="5-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ו</td>
+    <td class="ans-heb">ז</td>
+    <td>Waw</td>
+    <td>Zayin</td>
+    <td>ז has a horizontal top bar; ו is a plain vertical stroke with no bar</td>
+    <td></td>
+  </tr>
+
+  <!-- 6: ו / י -->
+  <tr>
+    <td class="num">6</td>
+    <td class="heb">ו</td>
+    <td class="heb">י</td>
+    <td><select class="parse-field" id="6-na"><option value="">—</option><option>Nun Sofit</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><select class="parse-field" id="6-nb"><option value="">—</option><option>Nun</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><input class="f" id="6-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ו</td>
+    <td class="ans-heb">י</td>
+    <td>Waw</td>
+    <td>Yod</td>
+    <td>ו is taller and plain; י is shorter with a small curved top hook</td>
+    <td></td>
+  </tr>
+
+  <!-- 7: ט / מ -->
+  <tr>
+    <td class="num">7</td>
+    <td class="heb">ט</td>
+    <td class="heb">מ</td>
+    <td><select class="parse-field" id="7-na"><option value="">—</option><option>Mem</option><option>Qof</option><option>Samek</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="7-nb"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><input class="f" id="7-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ט</td>
+    <td class="ans-heb">מ</td>
+    <td>Tet</td>
+    <td>Mem</td>
+    <td>ט is closed with an inward-curling top; מ is open at the bottom-right — "Tet is Tight (closed)"</td>
+    <td></td>
+  </tr>
+
+  <!-- 8: ע / צ -->
+  <tr>
+    <td class="num">8</td>
+    <td class="heb">ע</td>
+    <td class="heb">צ</td>
+    <td><select class="parse-field" id="8-na"><option value="">—</option><option>Alef</option><option>Ayin</option><option>Shin</option><option>Tsade</option></select></td>
+    <td><select class="parse-field" id="8-nb"><option value="">—</option><option>Ayin</option><option>Pe (soft)</option><option>Shin</option><option>Tsade</option></select></td>
+    <td><input class="f" id="8-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ע</td>
+    <td class="ans-heb">צ</td>
+    <td>Ayin</td>
+    <td>Tsade</td>
+    <td>ע has two arms curving symmetrically; צ has an additional downward stroke on the right side</td>
+    <td></td>
+  </tr>
+
+  <!-- 9: שׁ / שׂ -->
+  <tr>
+    <td class="num">9</td>
+    <td class="heb">שׁ</td>
+    <td class="heb">שׂ</td>
+    <td><select class="parse-field" id="9-na"><option value="">—</option><option>Samek</option><option>Shin</option><option>Sin</option><option>Tsade</option></select></td>
+    <td><select class="parse-field" id="9-nb"><option value="">—</option><option>Samek</option><option>Shin</option><option>Sin</option><option>Tsade</option></select></td>
+    <td><input class="f" id="9-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שׁ</td>
+    <td class="ans-heb">שׂ</td>
+    <td>Shin</td>
+    <td>Sin</td>
+    <td>Identical body; Shin has a dot on the upper right, Sin has a dot on the upper left — "Shin dot shoots Right"</td>
+    <td></td>
+  </tr>
+
+  <!-- 10: מ / ם -->
+  <tr>
+    <td class="num">10</td>
+    <td class="heb">מ</td>
+    <td class="heb">ם</td>
+    <td><select class="parse-field" id="10-na"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="10-nb"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><input class="f" id="10-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מ</td>
+    <td class="ans-heb">ם</td>
+    <td>Mem</td>
+    <td>Mem Sofit</td>
+    <td>ם is fully closed (a closed rectangle); מ is open at the bottom-right</td>
+    <td></td>
+  </tr>
+
+  <!-- 11: ו / ן -->
+  <tr>
+    <td class="num">11</td>
+    <td class="heb">ו</td>
+    <td class="heb">ן</td>
+    <td><select class="parse-field" id="11-na"><option value="">—</option><option>Waw</option><option>Yod</option><option>Zayin</option><option>Nun Sofit</option></select></td>
+    <td><select class="parse-field" id="11-nb"><option value="">—</option><option>Nun Sofit</option><option>Waw</option><option>Kaf Sofit</option><option>Zayin</option></select></td>
+    <td><input class="f" id="11-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ו</td>
+    <td class="ans-heb">ן</td>
+    <td>Waw</td>
+    <td>Nun Sofit</td>
+    <td>Both are plain vertical strokes; ן descends far below the baseline while ו is short and stays above it</td>
+    <td></td>
+  </tr>
+
+  <!-- 12: ד / ך -->
+  <tr>
+    <td class="num">12</td>
+    <td class="heb">ד</td>
+    <td class="heb">ך</td>
+    <td><select class="parse-field" id="12-na"><option value="">—</option><option>Dalet</option><option>Resh</option><option>He</option><option>Kaf Sofit</option></select></td>
+    <td><select class="parse-field" id="12-nb"><option value="">—</option><option>Kaf Sofit</option><option>Nun Sofit</option><option>Dalet</option><option>Resh</option></select></td>
+    <td><input class="f" id="12-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ד</td>
+    <td class="ans-heb">ך</td>
+    <td>Dalet</td>
+    <td>Kaf Sofit</td>
+    <td>Both have a horizontal top; ך has a long tail descending below the baseline while ד is short and compact</td>
+    <td></td>
+  </tr>
+
+  <!-- 13: פ / כ -->
+  <tr>
+    <td class="num">13</td>
+    <td class="heb">פ</td>
+    <td class="heb">כ</td>
+    <td><select class="parse-field" id="13-na"><option value="">—</option><option>Pe (soft)</option><option>Bet (soft)</option><option>Kaf (soft)</option><option>Pe Sofit</option></select></td>
+    <td><select class="parse-field" id="13-nb"><option value="">—</option><option>Kaf (soft)</option><option>Bet (soft)</option><option>Pe (soft)</option><option>Kaf Sofit</option></select></td>
+    <td><input class="f" id="13-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-13">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">פ</td>
+    <td class="ans-heb">כ</td>
+    <td>Pe (soft)</td>
+    <td>Kaf (soft)</td>
+    <td>פ has a small inward-curling projection inside its cup; כ is a plain open cup with a small foot at the lower-left</td>
+    <td></td>
+  </tr>
+
+  <!-- 14: צ / ע -->
+
+  <tr>
+    <td class="num">14</td>
+    <td class="heb">צ</td>
+    <td class="heb">ע</td>
+    <td><select class="parse-field" id="14-na"><option value="">—</option><option>Tsade</option><option>Ayin</option><option>Pe (soft)</option><option>Tsade Sofit</option></select></td>
+    <td><select class="parse-field" id="14-nb"><option value="">—</option><option>Ayin</option><option>Tsade</option><option>Tsade Sofit</option><option>Pe (soft)</option></select></td>
+    <td><input class="f" id="14-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-14">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">צ</td>
+    <td class="ans-heb">ע</td>
+    <td>Tsade</td>
+    <td>Ayin</td>
+    <td>צ has an extra right-pointing arm at the lower right; ע has two arms curving symmetrically with no extra stroke</td>
+    <td></td>
+  </tr>
+
+  <!-- 15: א / צ -->
+  <tr>
+    <td class="num">15</td>
+    <td class="heb">א</td>
+    <td class="heb">צ</td>
+    <td><select class="parse-field" id="15-na"><option value="">—</option><option>Alef</option><option>Tsade</option><option>Ayin</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="15-nb"><option value="">—</option><option>Tsade</option><option>Alef</option><option>Ayin</option><option>Tsade Sofit</option></select></td>
+    <td><input class="f" id="15-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-15">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">א</td>
+    <td class="ans-heb">צ</td>
+    <td>Alef</td>
+    <td>Tsade</td>
+    <td>א is built around a diagonal backbone with two symmetrical arms; צ has two upward-curving arms joined at the bottom with a rightward extension</td>
+    <td></td>
+  </tr>
+
+  <!-- 16: ה / ת -->
+  <tr>
+    <td class="num">16</td>
+    <td class="heb">ה</td>
+    <td class="heb">ת</td>
+    <td><select class="parse-field" id="16-na"><option value="">—</option><option>He</option><option>Ḥet</option><option>Taw</option><option>Dalet</option></select></td>
+    <td><select class="parse-field" id="16-nb"><option value="">—</option><option>Taw</option><option>He</option><option>Ḥet</option><option>Tet</option></select></td>
+    <td><input class="f" id="16-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-16">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ה</td>
+    <td class="ans-heb">ת</td>
+    <td>He</td>
+    <td>Taw</td>
+    <td>ה has a gap at the top-left where the left leg is detached from the roof; ת has two legs both fully joined to the roof</td>
+    <td></td>
+  </tr>
+
+  <!-- 17: ח / ת -->
+  <tr>
+    <td class="num">17</td>
+    <td class="heb">ח</td>
+    <td class="heb">ת</td>
+    <td><select class="parse-field" id="17-na"><option value="">—</option><option>Ḥet</option><option>He</option><option>Taw</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="17-nb"><option value="">—</option><option>Taw</option><option>Ḥet</option><option>He</option><option>Tet</option></select></td>
+    <td><input class="f" id="17-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-17">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ח</td>
+    <td class="ans-heb">ת</td>
+    <td>Ḥet</td>
+    <td>Taw</td>
+    <td>ת's right leg curves outward at the bottom; ח's two legs descend straight with no curve</td>
+    <td></td>
+  </tr>
+
+  <!-- 18: כ / נ -->
+  <tr>
+    <td class="num">18</td>
+    <td class="heb">כ</td>
+    <td class="heb">נ</td>
+    <td><select class="parse-field" id="18-na"><option value="">—</option><option>Kaf (soft)</option><option>Bet (soft)</option><option>Nun</option><option>Kaf Sofit</option></select></td>
+    <td><select class="parse-field" id="18-nb"><option value="">—</option><option>Nun</option><option>Kaf (soft)</option><option>Bet (soft)</option><option>Nun Sofit</option></select></td>
+    <td><input class="f" id="18-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-18">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כ</td>
+    <td class="ans-heb">נ</td>
+    <td>Kaf (soft)</td>
+    <td>Nun</td>
+    <td>כ is a broad open cup facing left with a foot at the lower-left; נ is narrow with a short top bar and a foot at the lower-right</td>
+    <td></td>
+  </tr>
+
+
+  <!-- 19: ב / כ -->
+  <tr>
+    <td class="num">19</td>
+    <td class="heb">ב</td>
+    <td class="heb">כ</td>
+    <td><select class="parse-field" id="19-na"><option value="">—</option><option>Bet (soft)</option><option>He</option><option>Kaf (soft)</option><option>Resh</option></select></td>
+    <td><select class="parse-field" id="19-nb"><option value="">—</option><option>Bet (soft)</option><option>Dalet</option><option>Kaf (soft)</option><option>Pe (soft)</option></select></td>
+    <td><input class="f" id="19-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-19">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ב</td>
+    <td class="ans-heb">כ</td>
+    <td>Bet (soft)</td>
+    <td>Kaf (soft)</td>
+    <td>ב has a flat base with no foot; כ has a small foot projecting from the lower-left corner</td>
+    <td></td>
+  </tr>
+
+  <!-- 20: ר / ד -->
+  <tr>
+    <td class="num">20</td>
+    <td class="heb">ר</td>
+    <td class="heb">ד</td>
+    <td><select class="parse-field" id="20-na"><option value="">—</option><option>Dalet</option><option>He</option><option>Kaf (soft)</option><option>Resh</option></select></td>
+    <td><select class="parse-field" id="20-nb"><option value="">—</option><option>Dalet</option><option>He</option><option>Kaf (soft)</option><option>Resh</option></select></td>
+    <td><input class="f" id="20-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-20">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ר</td>
+    <td class="ans-heb">ד</td>
+    <td>Resh</td>
+    <td>Dalet</td>
+    <td>ר is gently rounded at the upper-right; ד has a sharp right-angle corner — "Dalet is Definite, it has a corner"</td>
+    <td></td>
+  </tr>
+
+  <!-- 21: ח / ה -->
+  <tr>
+    <td class="num">21</td>
+    <td class="heb">ח</td>
+    <td class="heb">ה</td>
+    <td><select class="parse-field" id="21-na"><option value="">—</option><option>Ayin</option><option>He</option><option>Ḥet</option><option>Kaf (soft)</option></select></td>
+    <td><select class="parse-field" id="21-nb"><option value="">—</option><option>Dalet</option><option>He</option><option>Ḥet</option><option>Kaf (soft)</option></select></td>
+    <td><input class="f" id="21-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(21)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-21">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ח</td>
+    <td class="ans-heb">ה</td>
+    <td>Ḥet</td>
+    <td>He</td>
+    <td>ח's two legs are joined at the top; ה's left leg hangs free (gap at top-left) — "He has a Hole"</td>
+    <td></td>
+  </tr>
+
+  <!-- 22: ס / מ -->
+  <tr>
+    <td class="num">22</td>
+    <td class="heb">ס</td>
+    <td class="heb">מ</td>
+    <td><select class="parse-field" id="22-na"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Qof</option><option>Samek</option></select></td>
+    <td><select class="parse-field" id="22-nb"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><input class="f" id="22-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(22)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-22">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ס</td>
+    <td class="ans-heb">מ</td>
+    <td>Samek</td>
+    <td>Mem</td>
+    <td>ס is a fully enclosed oval with no opening; מ is open at the lower-right with angular corners</td>
+    <td></td>
+  </tr>
+
+  <!-- 23: ז / ו -->
+  <tr>
+    <td class="num">23</td>
+    <td class="heb">ז</td>
+    <td class="heb">ו</td>
+    <td><select class="parse-field" id="23-na"><option value="">—</option><option>Nun</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><select class="parse-field" id="23-nb"><option value="">—</option><option>Nun Sofit</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><input class="f" id="23-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(23)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-23">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ז</td>
+    <td class="ans-heb">ו</td>
+    <td>Zayin</td>
+    <td>Waw</td>
+    <td>ז has a horizontal top bar; ו is a plain vertical stroke with no bar</td>
+    <td></td>
+  </tr>
+
+  <!-- 24: י / ו -->
+  <tr>
+    <td class="num">24</td>
+    <td class="heb">י</td>
+    <td class="heb">ו</td>
+    <td><select class="parse-field" id="24-na"><option value="">—</option><option>Nun</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><select class="parse-field" id="24-nb"><option value="">—</option><option>Nun Sofit</option><option>Waw</option><option>Yod</option><option>Zayin</option></select></td>
+    <td><input class="f" id="24-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(24)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-24">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">י</td>
+    <td class="ans-heb">ו</td>
+    <td>Yod</td>
+    <td>Waw</td>
+    <td>י is shorter with a small curved top hook; ו is taller and plain</td>
+    <td></td>
+  </tr>
+
+  <!-- 25: מ / ט -->
+  <tr>
+    <td class="num">25</td>
+    <td class="heb">מ</td>
+    <td class="heb">ט</td>
+    <td><select class="parse-field" id="25-na"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="25-nb"><option value="">—</option><option>Mem</option><option>Qof</option><option>Samek</option><option>Tet</option></select></td>
+    <td><input class="f" id="25-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(25)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-25">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מ</td>
+    <td class="ans-heb">ט</td>
+    <td>Mem</td>
+    <td>Tet</td>
+    <td>מ is open at the bottom-right; ט is closed with an inward-curling top — "Tet is Tight (closed)"</td>
+    <td></td>
+  </tr>
+
+  <!-- 26: שׂ / שׁ -->
+  <tr>
+    <td class="num">26</td>
+    <td class="heb">שׂ</td>
+    <td class="heb">שׁ</td>
+    <td><select class="parse-field" id="26-na"><option value="">—</option><option>Samek</option><option>Shin</option><option>Sin</option><option>Tsade</option></select></td>
+    <td><select class="parse-field" id="26-nb"><option value="">—</option><option>Samek</option><option>Shin</option><option>Sin</option><option>Tsade</option></select></td>
+    <td><input class="f" id="26-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(26)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-26">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שׂ</td>
+    <td class="ans-heb">שׁ</td>
+    <td>Sin</td>
+    <td>Shin</td>
+    <td>Identical body; Sin dot is upper-left, Shin dot is upper-right — "Shin dot shoots Right"</td>
+    <td></td>
+  </tr>
+
+  <!-- 27: ם / מ -->
+  <tr>
+    <td class="num">27</td>
+    <td class="heb">ם</td>
+    <td class="heb">מ</td>
+    <td><select class="parse-field" id="27-na"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="27-nb"><option value="">—</option><option>Mem</option><option>Mem Sofit</option><option>Samek</option><option>Tet</option></select></td>
+    <td><input class="f" id="27-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(27)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-27">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ם</td>
+    <td class="ans-heb">מ</td>
+    <td>Mem Sofit</td>
+    <td>Mem</td>
+    <td>ם is fully closed (a closed rectangle); מ is open at the bottom-right</td>
+    <td></td>
+  </tr>
+
+  <!-- 28: ן / ו -->
+  <tr>
+    <td class="num">28</td>
+    <td class="heb">ן</td>
+    <td class="heb">ו</td>
+    <td><select class="parse-field" id="28-na"><option value="">—</option><option>Nun Sofit</option><option>Waw</option><option>Kaf Sofit</option><option>Zayin</option></select></td>
+    <td><select class="parse-field" id="28-nb"><option value="">—</option><option>Waw</option><option>Yod</option><option>Zayin</option><option>Nun Sofit</option></select></td>
+    <td><input class="f" id="28-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(28)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-28">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ן</td>
+    <td class="ans-heb">ו</td>
+    <td>Nun Sofit</td>
+    <td>Waw</td>
+    <td>Both are plain vertical strokes; ן descends far below the baseline while ו is short and stays above it</td>
+    <td></td>
+  </tr>
+
+  <!-- 29: ך / ד -->
+  <tr>
+    <td class="num">29</td>
+    <td class="heb">ך</td>
+    <td class="heb">ד</td>
+    <td><select class="parse-field" id="29-na"><option value="">—</option><option>Kaf Sofit</option><option>Nun Sofit</option><option>Dalet</option><option>Resh</option></select></td>
+    <td><select class="parse-field" id="29-nb"><option value="">—</option><option>Dalet</option><option>Resh</option><option>He</option><option>Kaf Sofit</option></select></td>
+    <td><input class="f" id="29-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(29)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-29">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ך</td>
+    <td class="ans-heb">ד</td>
+    <td>Kaf Sofit</td>
+    <td>Dalet</td>
+    <td>ך has a long tail descending below the baseline; ד is short and compact with a horizontal top</td>
+    <td></td>
+  </tr>
+
+  <!-- 30: כ / פ -->
+  <tr>
+    <td class="num">30</td>
+    <td class="heb">כ</td>
+    <td class="heb">פ</td>
+    <td><select class="parse-field" id="30-na"><option value="">—</option><option>Kaf (soft)</option><option>Bet (soft)</option><option>Pe (soft)</option><option>Kaf Sofit</option></select></td>
+    <td><select class="parse-field" id="30-nb"><option value="">—</option><option>Pe (soft)</option><option>Bet (soft)</option><option>Kaf (soft)</option><option>Pe Sofit</option></select></td>
+    <td><input class="f" id="30-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(30)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-30">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כ</td>
+    <td class="ans-heb">פ</td>
+    <td>Kaf (soft)</td>
+    <td>Pe (soft)</td>
+    <td>כ is a plain open cup with a small foot at the lower-left; פ has a small inward-curling projection inside its cup</td>
+    <td></td>
+  </tr>
+
+  <!-- 31: צ / א -->
+  <tr>
+    <td class="num">31</td>
+    <td class="heb">צ</td>
+    <td class="heb">א</td>
+    <td><select class="parse-field" id="31-na"><option value="">—</option><option>Tsade</option><option>Alef</option><option>Ayin</option><option>Tsade Sofit</option></select></td>
+    <td><select class="parse-field" id="31-nb"><option value="">—</option><option>Alef</option><option>Tsade</option><option>Ayin</option><option>Tet</option></select></td>
+    <td><input class="f" id="31-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(31)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-31">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">צ</td>
+    <td class="ans-heb">א</td>
+    <td>Tsade</td>
+    <td>Alef</td>
+    <td>צ has two upward-curving arms joined at the bottom with a rightward extension; א is built around a diagonal backbone with two symmetrical arms</td>
+    <td></td>
+  </tr>
+
+  <!-- 32: ת / ה -->
+  <tr>
+    <td class="num">32</td>
+    <td class="heb">ת</td>
+    <td class="heb">ה</td>
+    <td><select class="parse-field" id="32-na"><option value="">—</option><option>Taw</option><option>He</option><option>Ḥet</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="32-nb"><option value="">—</option><option>He</option><option>Ḥet</option><option>Taw</option><option>Dalet</option></select></td>
+    <td><input class="f" id="32-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(32)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-32">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ת</td>
+    <td class="ans-heb">ה</td>
+    <td>Taw</td>
+    <td>He</td>
+    <td>ת has two legs both fully joined to the roof; ה has a gap at the top-left where the left leg is detached</td>
+    <td></td>
+  </tr>
+
+  <!-- 33: ת / ח -->
+  <tr>
+    <td class="num">33</td>
+    <td class="heb">ת</td>
+    <td class="heb">ח</td>
+    <td><select class="parse-field" id="33-na"><option value="">—</option><option>Taw</option><option>Ḥet</option><option>He</option><option>Tet</option></select></td>
+    <td><select class="parse-field" id="33-nb"><option value="">—</option><option>Ḥet</option><option>He</option><option>Taw</option><option>Tet</option></select></td>
+    <td><input class="f" id="33-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(33)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-33">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ת</td>
+    <td class="ans-heb">ח</td>
+    <td>Taw</td>
+    <td>Ḥet</td>
+    <td>ת's right leg curves outward at the bottom; ח's two legs descend straight with no curve</td>
+    <td></td>
+  </tr>
+
+  <!-- 34: נ / כ -->
+  <tr>
+    <td class="num">34</td>
+    <td class="heb">נ</td>
+    <td class="heb">כ</td>
+    <td><select class="parse-field" id="34-na"><option value="">—</option><option>Nun</option><option>Kaf (soft)</option><option>Bet (soft)</option><option>Nun Sofit</option></select></td>
+    <td><select class="parse-field" id="34-nb"><option value="">—</option><option>Kaf (soft)</option><option>Bet (soft)</option><option>Nun</option><option>Kaf Sofit</option></select></td>
+    <td><input class="f" id="34-kd" placeholder="key visual difference"></td>
+    <td><button class="rbtn" onclick="tog(34)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-34">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">נ</td>
+    <td class="ans-heb">כ</td>
+    <td>Nun</td>
+    <td>Kaf (soft)</td>
+    <td>נ is narrow with a short top bar and a foot at the lower-right; כ is a broad open cup facing left with a foot at the lower-left</td>
+    <td></td>
+  </tr>
+
+</table>
+
+<script>
+function tog(n) {
+  const row = document.getElementById('ans-' + n);
+  const btn = event.currentTarget;
+  const visible = row.style.display === 'table-row';
+  row.style.display = visible ? 'none' : 'table-row';
+  btn.classList.toggle('on', !visible);
+  btn.textContent = visible ? '▶ Answer' : '▼ Hide';
+}
+function showAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'table-row');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.add('on'); b.textContent = '▼ Hide'; });
+}
+function hideAll() {
+  document.querySelectorAll('.ans-row').forEach(r => r.style.display = 'none');
+  document.querySelectorAll('.rbtn').forEach(b => { b.classList.remove('on'); b.textContent = '▶ Answer'; });
+}
+function clearAll() {
+  document.querySelectorAll('input.f').forEach(i => i.value = '');
+  document.querySelectorAll('select.parse-field').forEach(s => s.selectedIndex = 0);
+}
+</script>
+</body>
+</html>

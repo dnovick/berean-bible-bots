@@ -13,6 +13,9 @@ if '--force' in sys.argv:
 
 from .bbh import (
     build_ch1_letter_recognition,
+    build_ch1_confusable_pairs,
+    build_ch1_sofit_forms,
+    build_ch1_begadkephat,
     build_ch2_vowel_identification,
     build_ch3_syllable_division,
     build_ch4_noun_parsing,
@@ -195,6 +198,9 @@ from .bba import (
 # Ch1–Ch23 exercises (Hebrew BBH)
 builders_ch1_23 = [
     build_ch1_letter_recognition,
+    build_ch1_confusable_pairs,
+    build_ch1_sofit_forms,
+    build_ch1_begadkephat,
     build_ch2_vowel_identification,
     build_ch3_syllable_division,
     build_ch4_noun_parsing,

@@ -7,5 +7,6 @@
 ## Agenda
 
 1. Follow Up Q&A (5 min)
-1. [Lesson: BBH 1 - Hebrew Alphabet](/lessons/hebrew/ch1/) (100 min)
+1. Housekeeping (5 min)
+1. [Lesson: BBH 1 - Hebrew Alphabet](/lessons/hebrew/ch1/) (95 min)
 1. [Reading: The Shema](session-02/reading-deut-6-4.html) (15 min)

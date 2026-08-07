@@ -30,11 +30,13 @@ instructor: "Preston Brown"
 agenda:
   - title: "Follow Up Q&A"
     duration: "5 min"
+  - title: "Housekeeping"
+    duration: "5 min"
 
 lesson:
   name: "BBH 1 - Hebrew Alphabet"
   url: "/lessons/hebrew/ch1/"
-  duration: "100 min"
+  duration: "95 min"
 
 reading:
   - name: "The Shema"
