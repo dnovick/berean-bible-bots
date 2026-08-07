@@ -11,5 +11,8 @@ focus: >
 flashcards: 
   - alphabet
 
-exercises: 
+exercises:
   - ch1-letter-recognition
+  - ch1-confusable-pairs
+  - ch1-sofit-forms
+  - ch1-begadkephat

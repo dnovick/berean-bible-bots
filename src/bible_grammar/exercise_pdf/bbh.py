@@ -3060,6 +3060,337 @@ def build_ch1_letter_recognition(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 
 
+class Ch1ConfusablePairsExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each pair of Hebrew letters shown, provide: '
+            '(1) Name of Letter A, (2) Name of Letter B, '
+            '(3) the key visual feature that distinguishes them.'
+        )
+        rows = [
+            ['1',  'כ', 'ב', '', '', ''],
+            ['2',  'ד', 'ר', '', '', ''],
+            ['3',  'ה', 'ח', '', '', ''],
+            ['4',  'מ', 'ס', '', '', ''],
+            ['5',  'ו', 'ז', '', '', ''],
+            ['6',  'ו', 'י', '', '', ''],
+            ['7',  'ט', 'מ', '', '', ''],
+            ['8',  'ע', 'צ', '', '', ''],
+            ['9',  'שׁ', 'שׂ', '', '', ''],
+            ['10', 'מ', 'ם', '', '', ''],
+            ['11', 'ו', 'ן', '', '', ''],
+            ['12', 'ד', 'ך', '', '', ''],
+            ['13', 'פ', 'כ', '', '', ''],
+            ['14', 'צ', 'ע', '', '', ''],
+            ['15', 'א', 'צ', '', '', ''],
+            ['16', 'ה', 'ת', '', '', ''],
+            ['17', 'ח', 'ת', '', '', ''],
+            ['18', 'כ', 'נ', '', '', ''],
+            ['19', 'ב',       'כ',       '', '', ''],
+            ['20', 'ר',       'ד',       '', '', ''],
+            ['21', 'ח',       'ה',       '', '', ''],
+            ['22', 'ס',       'מ',       '', '', ''],
+            ['23', 'ז',       'ו',       '', '', ''],
+            ['24', 'י',       'ו',       '', '', ''],
+            ['25', 'מ',       'ט',       '', '', ''],
+            ['26', 'שׂ', 'שׁ', '', '', ''],
+            ['27', 'ם',       'מ',       '', '', ''],
+            ['28', 'ן',       'ו',       '', '', ''],
+            ['29', 'ך',       'ד',       '', '', ''],
+            ['30', 'כ',       'פ',       '', '', ''],
+            ['31', 'צ',       'א',       '', '', ''],
+            ['32', 'ת',       'ה',       '', '', ''],
+            ['33', 'ת',       'ח',       '', '', ''],
+            ['34', 'נ',       'כ',       '', '', ''],
+        ]
+        ans = [
+            ['1',  'כ', 'ב',
+             'Kaf (soft)', 'Bet (soft)',
+             'כ has a small foot at the lower-left; ב has a flat base with no foot'],
+            ['2',  'ד', 'ר',
+             'Dalet', 'Resh',
+             'ד has a sharp right-angle at the upper-right; '
+             'ר is gently rounded — "Dalet is Definite, it has a corner"'],
+            ['3',  'ה', 'ח',
+             'He', 'Ḥet',
+             'The left leg of ה hangs free (gap at top-left); '
+             'ח\'s two legs are joined at the top — "He has a Hole"'],
+            ['4',  'מ', 'ס',
+             'Mem', 'Samek',
+             'מ is open at the lower-right with angular corners; '
+             'ס is a fully enclosed oval with no opening'],
+            ['5',  'ו', 'ז',
+             'Waw', 'Zayin',
+             'ז has a horizontal top bar; ו is a plain vertical stroke with no bar'],
+            ['6',  'ו', 'י',
+             'Waw', 'Yod',
+             'ו is taller and plain; י is shorter with a small curved top hook'],
+            ['7',  'ט', 'מ',
+             'Tet', 'Mem',
+             'ט is closed with an inward-curling top; '
+             'מ is open at the bottom-right — "Tet is Tight (closed)"'],
+            ['8',  'ע', 'צ',
+             'Ayin', 'Tsade',
+             'ע has two arms curving symmetrically; '
+             'צ has an additional downward stroke on the right side'],
+            ['9',  'שׁ', 'שׂ',
+             'Shin', 'Sin',
+             'Identical body; Shin dot is upper-right, Sin dot is upper-left — '
+             '"Shin dot shoots Right"'],
+            ['10', 'מ', 'ם',
+             'Mem', 'Mem Sofit',
+             'ם is fully closed (a closed rectangle); '
+             'מ is open at the bottom-right'],
+            ['11', 'ו', 'ן',
+             'Waw', 'Nun Sofit',
+             'Both are plain vertical strokes; '
+             'ן descends far below the baseline while ו is short and stays above it'],
+            ['12', 'ד', 'ך',
+             'Dalet', 'Kaf Sofit',
+             'Both have a horizontal top; '
+             'ך has a long tail descending below the baseline while ד is short and compact'],
+            ['13', 'פ', 'כ',
+             'Pe (soft)', 'Kaf (soft)',
+             'פ has a small inward-curling projection inside its cup; '
+             'כ is a plain open cup with a small foot at the lower-left'],
+            ['14', 'צ', 'ע',
+             'Tsade', 'Ayin',
+             'צ has an extra right-pointing arm at the lower right; '
+             'ע has two arms curving symmetrically with no extra stroke'],
+            ['15', 'א', 'צ',
+             'Alef', 'Tsade',
+             'א is built around a diagonal backbone with two symmetrical arms; '
+             'צ has two upward-curving arms joined at the bottom with a rightward extension'],
+            ['16', 'ה', 'ת',
+             'He', 'Taw',
+             'ה has a gap at the top-left where the left leg is detached from the roof; '
+             'ת has two legs both fully joined to the roof'],
+            ['17', 'ח', 'ת',
+             'Ḥet', 'Taw',
+             'ת\'s right leg curves outward at the bottom; '
+             'ח\'s two legs descend straight with no curve'],
+            ['18', 'כ', 'נ',
+             'Kaf (soft)', 'Nun',
+             'כ is a broad open cup facing left with a foot at the lower-left; '
+             'נ is narrow with a short top bar and a foot at the lower-right'],
+            ['19', 'ב',       'כ',
+             'Bet (soft)', 'Kaf (soft)',
+             'ב has a flat base with no foot; '
+             'כ has a small foot projecting from the lower-left corner'],
+            ['20', 'ר',       'ד',
+             'Resh', 'Dalet',
+             'ר is gently rounded at the upper-right; '
+             'ד has a sharp right-angle corner — "Dalet is Definite, it has a corner"'],
+            ['21', 'ח',       'ה',
+             'Ḥet', 'He',
+             'ח\'s two legs are joined at the top; '
+             'ה\'s left leg hangs free (gap at top-left) — "He has a Hole"'],
+            ['22', 'ס',       'מ',
+             'Samek', 'Mem',
+             'ס is a fully enclosed oval with no opening; '
+             'מ is open at the lower-right with angular corners'],
+            ['23', 'ז',       'ו',
+             'Zayin', 'Waw',
+             'ז has a horizontal top bar; ו is a plain vertical stroke with no bar'],
+            ['24', 'י',       'ו',
+             'Yod', 'Waw',
+             'י is shorter with a small curved top hook; ו is taller and plain'],
+            ['25', 'מ',       'ט',
+             'Mem', 'Tet',
+             'מ is open at the bottom-right; '
+             'ט is closed with an inward-curling top — "Tet is Tight (closed)"'],
+            ['26', 'שׂ', 'שׁ',
+             'Sin', 'Shin',
+             'Identical body; Sin dot is upper-left, Shin dot is upper-right — '
+             '"Shin dot shoots Right"'],
+            ['27', 'ם',       'מ',
+             'Mem Sofit', 'Mem',
+             'ם is fully closed (a closed rectangle); '
+             'מ is open at the bottom-right'],
+            ['28', 'ן',       'ו',
+             'Nun Sofit', 'Waw',
+             'Both are plain vertical strokes; '
+             'ן descends far below the baseline while ו is short and stays above it'],
+            ['29', 'ך',       'ד',
+             'Kaf Sofit', 'Dalet',
+             'ך has a long tail descending below the baseline; '
+             'ד is short and compact with a horizontal top'],
+            ['30', 'כ',       'פ',
+             'Kaf (soft)', 'Pe (soft)',
+             'כ is a plain open cup with a small foot at the lower-left; '
+             'פ has a small inward-curling projection inside its cup'],
+            ['31', 'צ',       'א',
+             'Tsade', 'Alef',
+             'צ has two upward-curving arms joined at the bottom with a rightward extension; '
+             'א is built around a diagonal backbone with two symmetrical arms'],
+            ['32', 'ת',       'ה',
+             'Taw', 'He',
+             'ת has two legs both fully joined to the roof; '
+             'ה has a gap at the top-left where the left leg is detached'],
+            ['33', 'ת',       'ח',
+             'Taw', 'Ḥet',
+             'ת\'s right leg curves outward at the bottom; '
+             'ח\'s two legs descend straight with no curve'],
+            ['34', 'נ',       'כ',
+             'Nun', 'Kaf (soft)',
+             'נ is narrow with a short top bar and a foot at the lower-right; '
+             'כ is a broad open cup facing left with a foot at the lower-left'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Letter A', 'Letter B', 'Name A', 'Name B', 'Key Difference'],
+            rows=rows,
+            col_ratios=[0.04, 0.07, 0.07, 0.15, 0.15, 0.52],
+            heb_cols=[1, 2],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch1_confusable_pairs(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch1ConfusablePairsExercise,
+        'Chapter 1 — Hebrew Confusable Letter Pairs Exercise',
+        'Hebrew Alphabet — Side-by-Side Discrimination',
+        ['bbh', 'ch1', 'exercises', 'ch1-confusable-pairs'],
+        'ch1-confusable-pairs.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+
+
+class Ch1SofitFormsExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'Five Hebrew letters have a special final (sofit) form used only '
+            'at the end of a word. For each letter shown, select its correct '
+            'final form from the dropdown.'
+        )
+        rows = [
+            ['1', 'כ', 'Kaf (soft)', ''],
+            ['2', 'מ', 'Mem',        ''],
+            ['3', 'נ', 'Nun',        ''],
+            ['4', 'פ', 'Pe (soft)',  ''],
+            ['5', 'צ', 'Tsade',      ''],
+        ]
+        ans = [
+            ['1', 'כ', 'Kaf (soft)', 'ך'],
+            ['2', 'מ', 'Mem',        'ם'],
+            ['3', 'נ', 'Nun',        'ן'],
+            ['4', 'פ', 'Pe (soft)',  'ף'],
+            ['5', 'צ', 'Tsade',      'ץ'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Letter', 'Name', 'Final Form'],
+            rows=rows,
+            col_ratios=[0.05, 0.10, 0.25, 0.60],
+            heb_cols=[1, 3],
+            show_answers=True,
+            answer_rows=ans,
+        )
+        self.add_section_heading('Part 2 — Given the final form, identify the standard form')
+        self.add_instructions(
+            'For each final (sofit) letter shown, write the correct '
+            'standard (non-final) form in the blank.'
+        )
+        rows2 = [
+            ['1', 'ם', 'Mem Sofit',   ''],
+            ['2', 'ך', 'Kaf Sofit',   ''],
+            ['3', 'ץ', 'Tsade Sofit', ''],
+            ['4', 'ן', 'Nun Sofit',   ''],
+            ['5', 'ף', 'Pe Sofit',    ''],
+        ]
+        ans2 = [
+            ['1', 'ם', 'Mem Sofit',   'מ'],
+            ['2', 'ך', 'Kaf Sofit',   'כ'],
+            ['3', 'ץ', 'Tsade Sofit', 'צ'],
+            ['4', 'ן', 'Nun Sofit',   'נ'],
+            ['5', 'ף', 'Pe Sofit',    'פ'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Final Form', 'Sofit Name', 'Standard Form'],
+            rows=rows2,
+            col_ratios=[0.05, 0.10, 0.25, 0.60],
+            heb_cols=[1, 3],
+            show_answers=True,
+            answer_rows=ans2,
+        )
+
+
+def build_ch1_sofit_forms(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch1SofitFormsExercise,
+        'Chapter 1 — Hebrew Final (Sofit) Letter Forms',
+        'Hebrew Alphabet — Sofit Form Identification',
+        ['bbh', 'ch1', 'exercises', 'ch1-sofit-forms'],
+        'ch1-sofit-forms.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+
+
+class Ch1BegadkephatExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'The six begadkephat letters (ב ג ד כ פ ת) each have two '
+            'pronunciations: hard (with dagesh lene ּ) and soft (without). '
+            'For each letter shown, identify the correct pronunciation.'
+        )
+        rows = [
+            ['1',  'פ',       'Pe',    ''],
+            ['2',  'גּ', 'Gimel', ''],
+            ['3',  'תּ', 'Taw',   ''],
+            ['4',  'ב',       'Bet',   ''],
+            ['5',  'כּ', 'Kaf',   ''],
+            ['6',  'ד',       'Dalet', ''],
+            ['7',  'בּ', 'Bet',   ''],
+            ['8',  'ת',       'Taw',   ''],
+            ['9',  'כ',       'Kaf',   ''],
+            ['10', 'דּ', 'Dalet', ''],
+            ['11', 'ג',       'Gimel', ''],
+            ['12', 'פּ', 'Pe',    ''],
+        ]
+        ans = [
+            ['1',  'פ',       'Pe',    'f as in fill'],
+            ['2',  'גּ', 'Gimel', 'g as in good'],
+            ['3',  'תּ', 'Taw',   't as in tall'],
+            ['4',  'ב',       'Bet',   'v as in vine'],
+            ['5',  'כּ', 'Kaf',   'k as in king'],
+            ['6',  'ד',       'Dalet', 'd as in door'],
+            ['7',  'בּ', 'Bet',   'b as in boy'],
+            ['8',  'ת',       'Taw',   't as in tall'],
+            ['9',  'כ',       'Kaf',   'kh as in Bach'],
+            ['10', 'דּ', 'Dalet', 'd as in door'],
+            ['11', 'ג',       'Gimel', 'g as in good'],
+            ['12', 'פּ', 'Pe',    'p as in pool'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Letter', 'Name', 'Pronunciation'],
+            rows=rows,
+            col_ratios=[0.04, 0.08, 0.18, 0.70],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch1_begadkephat(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch1BegadkephatExercise,
+        'Chapter 1 — Hebrew Begadkephat Letter Pronunciation',
+        'Hebrew Alphabet — Begadkephat Pronunciation Drill',
+        ['bbh', 'ch1', 'exercises', 'ch1-begadkephat'],
+        'ch1-begadkephat.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+
+
 class Ch2VowelIdentificationExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
