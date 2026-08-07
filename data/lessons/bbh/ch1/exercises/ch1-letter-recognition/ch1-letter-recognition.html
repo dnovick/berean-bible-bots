@@ -27,11 +27,13 @@
   .controls button:hover { background: #ddd; }
   .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
   .clr:hover { background: #ffd8d8 !important; }
+  .shuf { border-color: #5080b0 !important; color: #1a4080 !important; background: #eef3ff !important; }
+  .shuf:hover { background: #d8e8ff !important; }
   .reflect { background: #f4f0ff; border-left: 4px solid #9988cc; padding: .75rem 1rem; margin: 1.5rem 0; font-size: .92rem; }
   .reflect ol { margin: .4rem 0 0 1.2rem; padding: 0; }
   .reflect li { margin-bottom: .5rem; }
   @media print {
-    .controls, button.rbtn { display: none; }
+    .controls, button.rbtn, .shuf { display: none; }
     input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
     .ans-row { display: none !important; }
   }
@@ -51,6 +53,7 @@
   <button onclick="showAll()">Show All Answers</button>
   <button onclick="hideAll()">Hide All Answers</button>
   <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+  <button class="shuf" onclick="shuffleRows()">⇅ Shuffle</button>
 </div>
 
 <table>
@@ -187,6 +190,34 @@ function hideAll() {
 }
 function clearAll() {
   document.querySelectorAll('input.f').forEach(i => i.value = '');
+}
+function shuffleRows() {
+  const table = document.querySelector('table');
+  const tbody = table.tBodies[0] || table;
+  const all = Array.from(tbody.rows);
+  // Collect [questionRow, answerRow] pairs; skip the header (index 0)
+  const pairs = [];
+  let i = 1;
+  while (i < all.length) {
+    if (i + 1 < all.length && all[i + 1].classList.contains('ans-row')) {
+      pairs.push([all[i], all[i + 1]]);
+      i += 2;
+    } else {
+      i++;
+    }
+  }
+  // Fisher-Yates shuffle
+  for (let j = pairs.length - 1; j > 0; j--) {
+    const k = Math.floor(Math.random() * (j + 1));
+    [pairs[j], pairs[k]] = [pairs[k], pairs[j]];
+  }
+  // Re-append in new order (appendChild moves existing DOM nodes,
+  // so input values and answer-row visibility are preserved)
+  pairs.forEach(([qRow, aRow], idx) => {
+    qRow.querySelector('td.num').textContent = idx + 1;
+    tbody.appendChild(qRow);
+    tbody.appendChild(aRow);
+  });
 }
 </script>
 </body>
