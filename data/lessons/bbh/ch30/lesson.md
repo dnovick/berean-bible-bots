@@ -159,7 +159,12 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 
 > **BBH definition:** The Piel marks an action as *repeated* or *ongoing* — done again and again rather than once. BBH's examples: הָלַךְ (Qal, to go/walk) → הִלֵּךְ (Piel, to pace / walk back and forth); צָעַק (Qal, to cry out) → צֵעֵק (Piel, to weep over and over / keep crying).
 
-BBH gives only these two examples for Iterative, and neither is attested in a Torah passage included in the exercise set. The category is listed here for completeness; the exercises focus on the four functions with clear OT examples at this level.
+The Piel of הָלַךְ appears 22× in the OT (Psalms, Proverbs, Ecclesiastes, Kings, and the Prophets) but not in the Torah. The Piel of צָעַק appears only once in the entire OT (2Ki 2:12). The corpus-attested example below is from 1 Kings.
+
+**Wayyiqtol — 1Ki 21:27 (הלך)**
+וַיְהַלֵּ֖ךְ אַֽט׃
+*"…and he walked about (paced) slowly."*
+→ הלך Piel+Wayyiqtol+3ms; Ahab, on hearing Elijah's judgment, tears his clothes, fasts, and *paces about* in sackcloth. The Piel marks repeated back-and-forth movement (pacing), not a single directed walk — the paradigm Iterative use BBH describes.
 
 ---
 
