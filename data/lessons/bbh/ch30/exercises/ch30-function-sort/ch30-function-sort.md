@@ -6,7 +6,7 @@
 
 ## Instructions
 
-Below are 25 Piel verb forms drawn from the OT. Each item gives you the Hebrew form, its conjugation, root, reference, and a contextual gloss.
+Below are 27 Piel verb forms drawn from the OT. Each item gives you the Hebrew form, its conjugation, root, reference, and a contextual gloss.
 
 **For each item, classify the Piel as one of the five semantic functions:**
 
@@ -20,7 +20,7 @@ Below are 25 Piel verb forms drawn from the OT. Each item gives you the Hebrew f
 
 > **Tip:** Ask: *Does the subject do the action more forcefully/completely?* → **Intensive**. *Does the subject cause something to become a certain way (from a stative root)?* → **Factitive**. *Does the Piel mark repeated or ongoing action?* → **Iterative** (e.g., הָלַךְ → הִלֵּךְ, to pace). *Is the Piel the standard form with no common Qal equivalent?* → **Simple Action**. *Is the verb built on a noun?* → **Denominative**.
 
-Write your answer (I / F / D / DN / SA) in the blank column.
+Write your answer (I / F / It / DN / SA) in the blank column.
 
 ---
 
@@ -97,6 +97,8 @@ Write your answer (I / F / D / DN / SA) in the blank column.
 | 23 | בָּקַשׁ | to seek | **I** | Same root as #18; intensified seeking |
 | 24 | נָחַם | to be comforted | **I/SA** | Same root as #19; same analysis applies |
 | 25 | הָלַל | to praise | **SA** | Same root as #17; praise is always the Piel's function |
+| 26 | צָחַק | to laugh | **It** | Qal = to laugh (single burst — Gen 17:17; 18:12–15); Piel = to play, sport, caress — sustained repeated laughing-type behavior. Same Piel root at Gen 19:14, 21:9, 39:14/17, Exo 32:6 |
+| 27 | שָׁנַן | to sharpen | **It** | Qal = to sharpen (a sword or tongue — Deut 32:41; Ps 64:3); Piel = to sharpen by repetition = drill/repeat. Deut 6:7: "you shall repeat/drill them to your children." The Shema context (home, road, lying down, rising up) makes the iteration explicit |
 
 ### Function summary
 
@@ -105,5 +107,6 @@ Write your answer (I / F / D / DN / SA) in the blank column.
 | Simple Action | 1, 5, 10, 11, 13, 17, 20, 25 | 8 |
 | Intensive | 4, 6, 8, 9, 14, 16, 18, 23 | 8 |
 | Factitive | 2, 3, 7, 12, 15, 22 | 6 |
+| Iterative | 26, 27 | 2 |
 | Denominative | 21 | 1 |
 | Intensive/SA | 19, 24 | 2 |
