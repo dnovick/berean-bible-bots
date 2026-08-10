@@ -11206,9 +11206,9 @@ def build_ch31_function_sort(out_dir: Optional[str] = None) -> str:
 
 class Ch31StemIdDrill(ExercisePDF):
     _instructions = (
-        'Below are 24 Hebrew verb forms from weak roots (ברך, גלה, צוה, חזק). '
-        'For each form, identify: (1) Stem (Qal / Niphal / Hiphil / Piel), '
-        '(2) Conjugation, (3) PGN, (4) Root. '
+        'Below are 25 Hebrew verb forms from weak roots (ברך, גלה, צוה, חזק). '
+        'For each form, identify: (1) Root, (2) Stem (Qal / Niphal / Hiphil / Hophal / Piel), '
+        '(3) Conjugation, (4) PGN. '
         'Answer key at the bottom.'
     )
 
@@ -11218,10 +11218,11 @@ class Ch31StemIdDrill(ExercisePDF):
             'I-Guttural Piel (ברך, חזק): guttural R1 cannot take dagesh; '
             'watch for virtual doubling (longer vowel before R2).  '
             'III-ה Piel (גלה, צוה): perfect 3ms ends in ָּה (qamets + dagesh-he).  '
-            'Qal III-ה perfect 3ms ends in ָה (no dagesh in ה).'
+            'Qal III-ה perfect 3ms ends in ָה (no dagesh in ה).  '
+            'Hophal prefix הֻ (u-class) = passive of Hiphil.'
         )
-        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
-        cr   = [0.05, 0.18, 0.12, 0.22, 0.12, 0.31]
+        hdrs = ['#', 'Hebrew Form', 'Root', 'Stem', 'Conjugation', 'PGN']
+        cr   = [0.05, 0.22, 0.15, 0.14, 0.26, 0.18]
         rows = [
             ['1',  'בֵּרַךְ',    '', '', '', ''],
             ['2',  'בָּרַךְ',    '', '', '', ''],
@@ -11247,39 +11248,41 @@ class Ch31StemIdDrill(ExercisePDF):
             ['22', 'מְבָרֵךְ',   '', '', '', ''],
             ['23', 'מְגַלֶּה',   '', '', '', ''],
             ['24', 'גֹּלֶה',     '', '', '', ''],
+            ['25', 'הֻגְלָה',    '', '', '', ''],
         ]
         ans = [
-            ['1',  'בֵּרַךְ',    'Piel',   'Perfect',     '3ms', 'ברך'],
-            ['2',  'בָּרַךְ',    'Qal',    'Perfect',     '3ms', 'ברך'],
-            ['3',  'גִּלָּה',    'Piel',   'Perfect',     '3ms', 'גלה'],
-            ['4',  'גָּלָה',     'Qal',    'Perfect',     '3ms', 'גלה'],
-            ['5',  'נִגְלָה',    'Niphal', 'Perfect',     '3ms', 'גלה'],
-            ['6',  'הִגְלָה',    'Hiphil', 'Perfect',     '3ms', 'גלה'],
-            ['7',  'צִוָּה',     'Piel',   'Perfect',     '3ms', 'צוה'],
-            ['8',  'חִזֵּק',     'Piel',   'Perfect',     '3ms', 'חזק'],
-            ['9',  'חָזַק',      'Qal',    'Perfect',     '3ms', 'חזק'],
-            ['10', 'יְבָרֵךְ',   'Piel',   'Imperfect',   '3ms', 'ברך'],
-            ['11', 'יְצַוֶּה',   'Piel',   'Imperfect',   '3ms', 'צוה'],
-            ['12', 'יִגְלֶה',    'Qal',    'Imperfect',   '3ms', 'גלה'],
-            ['13', 'יִגָּלֶה',   'Niphal', 'Imperfect',   '3ms', 'גלה'],
-            ['14', 'יְגַלֶּה',   'Piel',   'Imperfect',   '3ms', 'גלה'],
-            ['15', 'יַגְלֶה',    'Hiphil', 'Imperfect',   '3ms', 'גלה'],
-            ['16', 'וַיְבָרֶךְ', 'Piel',   'Wayyiqtol',   '3ms', 'ברך'],
-            ['17', 'וַיְצַו',    'Piel',   'Wayyiqtol',   '3ms', 'צוה'],
-            ['18', 'וַיִּגֶּל',  'Qal',    'Wayyiqtol',   '3ms', 'גלה'],
-            ['19', 'בָּרֵךְ',    'Piel',   'Imperative',  '2ms', 'ברך'],
-            ['20', 'גַּל',       'Qal',    'Imperative',  '2ms', 'גלה'],
-            ['21', 'גַּלֵּה',    'Piel',   'Imperative',  '2ms', 'גלה'],
-            ['22', 'מְבָרֵךְ',   'Piel',   'Participle',  'ms',  'ברך'],
-            ['23', 'מְגַלֶּה',   'Piel',   'Participle',  'ms',  'גלה'],
-            ['24', 'גֹּלֶה',     'Qal',    'Participle',  'ms',  'גלה'],
+            ['1',  'בֵּרַךְ',    'ברך', 'Piel',   'Perfect',    '3ms'],
+            ['2',  'בָּרַךְ',    'ברך', 'Qal',    'Perfect',    '3ms'],
+            ['3',  'גִּלָּה',    'גלה', 'Piel',   'Perfect',    '3ms'],
+            ['4',  'גָּלָה',     'גלה', 'Qal',    'Perfect',    '3ms'],
+            ['5',  'נִגְלָה',    'גלה', 'Niphal', 'Perfect',    '3ms'],
+            ['6',  'הִגְלָה',    'גלה', 'Hiphil', 'Perfect',    '3ms'],
+            ['7',  'צִוָּה',     'צוה', 'Piel',   'Perfect',    '3ms'],
+            ['8',  'חִזֵּק',     'חזק', 'Piel',   'Perfect',    '3ms'],
+            ['9',  'חָזַק',      'חזק', 'Qal',    'Perfect',    '3ms'],
+            ['10', 'יְבָרֵךְ',   'ברך', 'Piel',   'Imperfect',  '3ms'],
+            ['11', 'יְצַוֶּה',   'צוה', 'Piel',   'Imperfect',  '3ms'],
+            ['12', 'יִגְלֶה',    'גלה', 'Qal',    'Imperfect',  '3ms'],
+            ['13', 'יִגָּלֶה',   'גלה', 'Niphal', 'Imperfect',  '3ms'],
+            ['14', 'יְגַלֶּה',   'גלה', 'Piel',   'Imperfect',  '3ms'],
+            ['15', 'יַגְלֶה',    'גלה', 'Hiphil', 'Imperfect',  '3ms'],
+            ['16', 'וַיְבָרֶךְ', 'ברך', 'Piel',   'Wayyiqtol',  '3ms'],
+            ['17', 'וַיְצַו',    'צוה', 'Piel',   'Wayyiqtol',  '3ms'],
+            ['18', 'וַיִּגֶּל',  'גלה', 'Qal',    'Wayyiqtol',  '3ms'],
+            ['19', 'בָּרֵךְ',    'ברך', 'Piel',   'Imperative', '2ms'],
+            ['20', 'גַּל',       'גלה', 'Qal',    'Imperative', '2ms'],
+            ['21', 'גַּלֵּה',    'גלה', 'Piel',   'Imperative', '2ms'],
+            ['22', 'מְבָרֵךְ',   'ברך', 'Piel',   'Participle', 'ms'],
+            ['23', 'מְגַלֶּה',   'גלה', 'Piel',   'Participle', 'ms'],
+            ['24', 'גֹּלֶה',     'גלה', 'Qal',    'Participle', 'ms'],
+            ['25', 'הֻגְלָה',    'גלה', 'Hophal', 'Perfect',    '3ms'],
         ]
         self.add_drill_with_answer_key(
             hdrs, rows, ans,
             col_ratios=cr,
             heb_cols=[1],
-            answer_heb_cols=[1, 5],
-            section_title='Qal / Niphal / Hiphil / Piel — Weak Roots (24 forms)',
+            answer_heb_cols=[1, 2],
+            section_title='Qal / Niphal / Hiphil / Hophal / Piel — Weak Roots (25 forms)',
             answer_title='Answer Key',
         )
 
