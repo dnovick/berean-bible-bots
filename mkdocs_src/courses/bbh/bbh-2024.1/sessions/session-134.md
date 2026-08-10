@@ -1,7 +1,7 @@
 # Session 134 — Pual Strong Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2024.1](../index.md)  
-**Date:** Aug 10, 2026  
+**Date:** Aug 24, 2026  
 **Instructor:** David Novick  
 
 ## Agenda
