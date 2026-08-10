@@ -1,27 +1,27 @@
 # Ch30 Piel Semantic Function Sorting
 
-Students classify 25 attested Piel verb forms from the OT into one of five semantic functions: Intensive, Factitive, Iterative, Denominative, or Simple Action. Forms are drawn from Genesis 1–43, Exodus, Leviticus, and Psalms, covering a range of Piel roots and conjugation types. The exercise reinforces the analytical framework for understanding *why* a Piel means what it means — not just that it does.
+Students classify 27 attested Piel verb forms from the OT into one of five semantic functions: Intensive, Factitive, Iterative, Denominative, or Simple Action. Forms are drawn from Genesis 1–43, Exodus, Leviticus, Deuteronomy, and Psalms, covering a range of Piel roots and conjugation types. The exercise reinforces the analytical framework for understanding *why* a Piel means what it means — not just that it does.
 
 ## Coverage
 
 | Semantic Function | Count | Example Root |
 |---|---|---|
-| Simple Action | 7 | דָּבַר, בָּרַךְ, הָלַל |
+| Simple Action | 8 | דָּבַר, בָּרַךְ, הָלַל |
 | Intensive | 8 | שָׁחַת, גָּרַשׁ, כָּסָה |
 | Factitive | 6 | קָדַשׁ, גָּדַל, חָיָה |
-| Simple Action | 1 | קָלַל |
+| Iterative | 2 | צָחַק, שָׁנַן |
 | Denominative | 1 | כָּפַר |
 | Intensive/SA (disputed) | 2 | נָחַם |
-| **Total** | **25** | |
+| **Total** | **27** | |
 
 | Conjugation | Count |
 |---|---|
 | Wayyiqtol | 13 |
 | Infinitive Construct | 5 |
 | Yiqtol (Imperfect) | 2 |
-| Perfect | 2 |
+| Perfect | 3 |
 | Weqatal | 2 |
-| Participle | 1 |
+| Participle | 2 |
 
 ## Files
 
