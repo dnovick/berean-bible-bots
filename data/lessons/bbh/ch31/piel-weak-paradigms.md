@@ -9,6 +9,104 @@
 
 ---
 
+## II-Guttural (Ayin-Guttural) — Model Root בּאר {#ayin-guttural}
+
+*BBH Ch31 priority class — the only Piel weak class that exhibits major spelling changes.*
+
+*Attested Piel forms: בֵּאַר (Deut 1:5, "Moses began to expound this law"); מְבֹאָר (Deut 27:8, "very clearly")*
+
+### Why three simultaneous changes occur {#ayin-guttural-why}
+
+In the Piel, R2 must carry **Dagesh Forte** (the defining Piel marker). When R2 is a guttural, it **refuses** that dagesh. Three compensating changes follow:
+
+1. **No Dagesh in R2** — the guttural simply cannot double
+2. **Compensatory lengthening** — the syllable before R2 was *closed* (dagesh forte closed it); without the dagesh it opens, and the short vowel lengthens:
+   - Short Hireq [ִ] under R1 → Long Tsere [ֵ] (Perfect)
+   - Short Patach [ַ] under R1 → Long Qamets [ָ] (Imperfect, Imperative, Participle)
+3. **A-class preference** — the guttural at R2 takes Patach [ַ] instead of Tsere [ֵ]
+
+No other weak class produces all three changes at once, which is why BBH singles out II-Guttural as the class that "exhibits any major changes in spelling."
+
+### Perfect (Qatal) {#ayin-guttural-perfect}
+
+**Diagnostic:** Tsere [ֵ] under R1 (compensatory; contrast strong Piel Hireq); no Dagesh in R2; R2 takes Patach [ַ] or Hateph-Patach [ֲ] (before vowel suffixes, guttural takes hateph rather than simple shewa).
+
+| Person | Piel Strong (דבר) | Piel II-Guttural (בּאר — explain) | Notes |
+|---|---|---|---|
+| 3ms | דִּבֵּר | בֵּאַר | R1 hireq → tsere; no dagesh in א; א takes patach. **Attested: Deut 1:5** |
+| 3fs | דִּבְּרָה | בֵּאֲרָה | R2 shewa (strong) → hateph-patach (aleph refuses simple shewa) |
+| 2ms | דִּבַּרְתָּ | בֵּאַרְתָּ | R1 tsere stays; R2 patach before consonantal suffix |
+| 2fs | דִּבַּרְתְּ | בֵּאַרְתְּ | |
+| 1cs | דִּבַּרְתִּי | בֵּאַרְתִּי | |
+| 3cp | דִּבְּרוּ | בֵּאֲרוּ | R2 hateph-patach before vowel suffix |
+| 2mp | דִּבַּרְתֶּם | בֵּאַרְתֶּם | |
+| 2fp | דִּבַּרְתֶּן | בֵּאַרְתֶּן | |
+| 1cp | דִּבַּרְנוּ | בֵּאַרְנוּ | |
+
+### Imperfect (Yiqtol) {#ayin-guttural-imperfect}
+
+**Diagnostic:** Qamets [ָ] under R1 (compensatory of Patach; contrast strong Piel Patach); no Dagesh in R2; R2 takes Patach or Hateph-Patach.
+
+| Person | Piel Strong (דבר) | Piel II-Guttural (בּאר) | Notes |
+|---|---|---|---|
+| 3ms | יְדַבֵּר | יְבָאַר | R1 patach → qamets; no dagesh in א; א takes patach |
+| 3fs | תְּדַבֵּר | תְּבָאַר | |
+| 2ms | תְּדַבֵּר | תְּבָאַר | |
+| 2fs | תְּדַבְּרִי | תְּבָאֲרִי | R2 hateph-patach before vowel suffix |
+| 1cs | אֲדַבֵּר | אֲבָאַר | prefix aleph has hateph (unchanged); R2 patach |
+| 3mp | יְדַבְּרוּ | יְבָאֲרוּ | R2 hateph-patach before vowel suffix |
+| 3fp | תְּדַבֵּרְנָה | תְּבָאַרְנָה | R2 patach; נָה suffix |
+| 2mp | תְּדַבְּרוּ | תְּבָאֲרוּ | |
+| 2fp | תְּדַבֵּרְנָה | תְּבָאַרְנָה | |
+| 1cp | נְדַבֵּר | נְבָאַר | |
+
+### Wayyiqtol {#ayin-guttural-wayyiqtol}
+
+| Person | Piel Strong (דבר) | Piel II-Guttural (בּאר) | Notes |
+|---|---|---|---|
+| 3ms | וַיְדַבֵּר | וַיְבָאַר | וַיְ prefix; qamets under R1; patach under R2 |
+| 3mp | וַיְדַבְּרוּ | וַיְבָאֲרוּ | hateph-patach under R2 before vowel suffix |
+
+### Weqatal {#ayin-guttural-weqatal}
+
+| Form | Piel Strong (דבר) | Piel II-Guttural (בּאר) | Notes |
+|---|---|---|---|
+| 3ms | וְדִבֵּר | וְבֵאַר | וְ + perfect form; tsere under R1; patach under R2 |
+
+### Imperative {#ayin-guttural-imperative}
+
+| Person | Piel Strong (דבר) | Piel II-Guttural (בּאר) | Notes |
+|---|---|---|---|
+| 2ms | דַּבֵּר | בָּאַר | qamets under R1 (compensatory); patach under R2; no prefix or suffix |
+| 2fs | דַּבְּרִי | בָּאֲרִי | hateph-patach under R2 before vowel suffix |
+| 2mp | דַּבְּרוּ | בָּאֲרוּ | hateph-patach under R2 before vowel suffix |
+| 2fp | דַּבֵּרְנָה | בָּאַרְנָה | patach under R2; נָה suffix |
+
+### Infinitive Construct {#ayin-guttural-inf-construct}
+
+| Form | Piel Strong (דבר) | Piel II-Guttural (בּאר) | Notes |
+|---|---|---|---|
+| Inf. Const. | דַּבֵּר | בָּאַר | Same shape as Imperative 2ms; qamets under R1; patach under R2 |
+
+### Infinitive Absolute {#ayin-guttural-inf-absolute}
+
+| Form | Piel Strong (דבר) | Piel II-Guttural (בּאר) | Notes |
+|---|---|---|---|
+| Inf. Abs. | דַּבֵּר | בָּאַר | Same as Inf. Construct in this class; context distinguishes |
+
+### Participle {#ayin-guttural-participle}
+
+| Form | Piel Strong (דבר) | Piel II-Guttural (בּאר) | Notes |
+|---|---|---|---|
+| ms | מְדַבֵּר | מְבָאַר | מְ prefix; qamets under R1; patach under R2. **Cf. Deut 27:8 מְבֹאָר** |
+| fs | מְדַבֶּרֶת | מְבָאֶרֶת | Feminine -ֶרֶת suffix |
+| mp | מְדַבְּרִים | מְבָאֲרִים | hateph-patach under R2 before vowel suffix |
+| fp | מְדַבְּרוֹת | מְבָאֲרוֹת | |
+
+> **Key:** II-Guttural is the only Piel weak class where the strong Piel diagnostic (Dagesh in R2) is truly *replaced* rather than merely *absent from a consonant that could not receive it in any stem*. The three simultaneous changes — no dagesh, lengthened R1 vowel, and a-class shift at R2 — produce forms that look substantially different from the strong Piel. Learn the three-change pattern as a unit.
+
+---
+
 ## I-guttural (Pe-Guttural) — Model Root חזק {#pe-guttural}
 
 *Note: In the Piel, R1 always carries a full vowel (Hireq in perfect; Patach in imperfect/participle), so gutturals at R1 rarely need composite shewa. The main diagnostic is the guttural letter itself at R1.*
