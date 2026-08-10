@@ -9,90 +9,92 @@
 
 ---
 
-## I-guttural (Pe-Guttural) — Model Root עזר {#pe-guttural}
+## I-guttural (Pe-Guttural) — Model Root חזק {#pe-guttural}
 
 *Note: In the Piel, R1 always carries a full vowel (Hireq in perfect; Patach in imperfect/participle), so gutturals at R1 rarely need composite shewa. The main diagnostic is the guttural letter itself at R1.*
 
+*Attested Piel forms of חזק: חִזְּקוּ (Neh 2:18 — "they strengthened their hands"), לְחַזֵּק (2 Kgs 12:6 — "to repair the temple"), תְּחַזֵּק (Job 4:3 — "you strengthen weak hands"), חַזְּקוּ (Isa 35:3 — "strengthen weak hands"), וְחִזַּקְתִּי (Ezek 30:24 — "I will strengthen").*
+
 ### Perfect (Qatal) {#pe-guttural-perfect}
 
-**Diagnostic:** Hireq under guttural R1 (ע takes Hireq as expected); Dagesh forte in R2; Tsere
+**Diagnostic:** Hireq under guttural R1 (ח takes Hireq as expected); Dagesh forte in R2; Tsere
 
-| Person | Piel Strong (דבר) | Piel I-guttural (עזר — help) | Notes |
+| Person | Piel Strong (דבר) | Piel I-guttural (חזק — strengthen) | Notes |
 |---|---|---|---|
-| 3ms | דִּבֵּר | עִזֵּר | ע takes Hireq; Dagesh forte in ז; Tsere |
-| 3fs | דִּבְּרָה | עִזְּרָה | |
-| 2ms | דִּבַּרְתָּ | עִזַּרְתָּ | Patach under R2 before consonantal suffix |
-| 2fs | דִּבַּרְתְּ | עִזַּרְתְּ | |
-| 1cs | דִּבַּרְתִּי | עִזַּרְתִּי | |
-| 3cp | דִּבְּרוּ | עִזְּרוּ | |
-| 2mp | דִּבַּרְתֶּם | עִזַּרְתֶּם | |
-| 2fp | דִּבַּרְתֶּן | עִזַּרְתֶּן† | |
-| 1cp | דִּבַּרְנוּ | עִזַּרְנוּ | |
+| 3ms | דִּבֵּר | חִזֵּק | ח takes Hireq; Dagesh forte in ז; Tsere |
+| 3fs | דִּבְּרָה | חִזְּקָה | |
+| 2ms | דִּבַּרְתָּ | חִזַּקְתָּ | Patach under R2 before consonantal suffix |
+| 2fs | דִּבַּרְתְּ | חִזַּקְתְּ | |
+| 1cs | דִּבַּרְתִּי | חִזַּקְתִּי | |
+| 3cp | דִּבְּרוּ | חִזְּקוּ | Attested: Neh 2:18 |
+| 2mp | דִּבַּרְתֶּם | חִזַּקְתֶּם | |
+| 2fp | דִּבַּרְתֶּן | חִזַּקְתֶּן† | |
+| 1cp | דִּבַּרְנוּ | חִזַּקְנוּ | |
 
 ### Imperfect (Yiqtol) {#pe-guttural-imperfect}
 
-**Diagnostic:** Prefix keeps plain Shewa; R1 (ע) takes Patach (full vowel, not composite shewa); Dagesh in R2
+**Diagnostic:** Prefix keeps plain Shewa; R1 (ח) takes Patach (full vowel, not composite shewa); Dagesh in R2
 
-| Person | Piel Strong (דבר) | Piel I-guttural (עזר) | Notes |
+| Person | Piel Strong (דבר) | Piel I-guttural (חזק) | Notes |
 |---|---|---|---|
-| 3ms | יְדַבֵּר | יְעַזֵּר | Prefix Shewa; ע takes Patach; Dagesh in ז; Tsere |
-| 3fs | תְּדַבֵּר | תְּעַזֵּר | |
-| 2ms | תְּדַבֵּר | תְּעַזֵּר | |
-| 2fs | תְּדַבְּרִי | תְּעַזְּרִי | Shewa under R2 before vocalic suffix |
-| 1cs | אֲדַבֵּר | אֲעַזֵּר | Aleph prefix takes hateph-patach (standard aleph behavior) |
-| 3mp | יְדַבְּרוּ | יְעַזְּרוּ | |
-| 3fp | תְּדַבֵּרְנָה | תְּעַזֵּרְנָה | |
-| 2mp | תְּדַבְּרוּ | תְּעַזְּרוּ | |
-| 2fp | תְּדַבֵּרְנָה | תְּעַזֵּרְנָה | Same form as 3fp |
-| 1cp | נְדַבֵּר | נְעַזֵּר | |
+| 3ms | יְדַבֵּר | יְחַזֵּק | Prefix Shewa; ח takes Patach; Dagesh in ז; Tsere |
+| 3fs | תְּדַבֵּר | תְּחַזֵּק | |
+| 2ms | תְּדַבֵּר | תְּחַזֵּק | Attested: Job 4:3 |
+| 2fs | תְּדַבְּרִי | תְּחַזְּקִי | Shewa under R2 before vocalic suffix |
+| 1cs | אֲדַבֵּר | אֲחַזֵּק | Aleph prefix takes hateph-patach (standard aleph behavior) |
+| 3mp | יְדַבְּרוּ | יְחַזְּקוּ | |
+| 3fp | תְּדַבֵּרְנָה | תְּחַזֵּקְנָה | |
+| 2mp | תְּדַבְּרוּ | תְּחַזְּקוּ | |
+| 2fp | תְּדַבֵּרְנָה | תְּחַזֵּקְנָה | Same form as 3fp |
+| 1cp | נְדַבֵּר | נְחַזֵּק | |
 
 ### Wayyiqtol {#pe-guttural-wayyiqtol}
 
-| Person | Piel Strong (דבר) | Piel I-guttural (עזר) | Notes |
+| Person | Piel Strong (דבר) | Piel I-guttural (חזק) | Notes |
 |---|---|---|---|
-| 3ms | וַיְדַבֵּר | וַיְעַזֵּר | וַיְ prefix; ע takes Patach; Dagesh in R2 |
-| 3fs | וַתְּדַבֵּר | וַתְּעַזֵּר | |
-| 3mp | וַיְדַבְּרוּ | וַיְעַזְּרוּ | |
+| 3ms | וַיְדַבֵּר | וַיְחַזֵּק | וַיְ prefix; ח takes Patach; Dagesh in R2 |
+| 3fs | וַתְּדַבֵּר | וַתְּחַזֵּק | |
+| 3mp | וַיְדַבְּרוּ | וַיְחַזְּקוּ | |
 
 ### Weqatal {#pe-guttural-weqatal}
 
-| Form | Piel Strong (דבר) | Piel I-guttural (עזר) | Notes |
+| Form | Piel Strong (דבר) | Piel I-guttural (חזק) | Notes |
 |---|---|---|---|
-| 3ms | וְדִבֵּר | וְעִזֵּר† | וְ + Perfect form; Hireq under ע retained |
-| 3fs | וְדִבְּרָה | וְעִזְּרָה† | |
-| 2ms | וְדִבַּרְתָּ | וְעִזַּרְתָּ† | |
-| 3cp | וְדִבְּרוּ | וְעִזְּרוּ† | |
+| 3ms | וְדִבֵּר | וְחִזֵּק† | וְ + Perfect form; Hireq under ח retained |
+| 3fs | וְדִבְּרָה | וְחִזְּקָה† | |
+| 2ms | וְדִבַּרְתָּ | וְחִזַּקְתָּ† | Attested as waw-consecutive: וְחִזַּקְתִּי (Ezek 30:24) |
+| 3cp | וְדִבְּרוּ | וְחִזְּקוּ† | |
 
 ### Imperative {#pe-guttural-imperative}
 
-| Person | Piel Strong (דבר) | Piel I-guttural (עזר) | Notes |
+| Person | Piel Strong (דבר) | Piel I-guttural (חזק) | Notes |
 |---|---|---|---|
-| 2ms | דַּבֵּר | עַזֵּר | ע takes Patach; Dagesh in ז; Tsere |
-| 2fs | דַּבְּרִי | עַזְּרִי | Shewa under R2 before vocalic suffix |
-| 2mp | דַּבְּרוּ | עַזְּרוּ | |
-| 2fp | דַּבֵּרְנָה | עַזֵּרְנָה | |
+| 2ms | דַּבֵּר | חַזֵּק | ח takes Patach; Dagesh in ז; Tsere |
+| 2fs | דַּבְּרִי | חַזְּקִי | Shewa under R2 before vocalic suffix |
+| 2mp | דַּבְּרוּ | חַזְּקוּ | Attested: Isa 35:3 |
+| 2fp | דַּבֵּרְנָה | חַזֵּקְנָה | |
 
 ### Infinitive Construct {#pe-guttural-inf-construct}
 
-| Form | Piel Strong (דבר) | Piel I-guttural (עזר) | Notes |
+| Form | Piel Strong (דבר) | Piel I-guttural (חזק) | Notes |
 |---|---|---|---|
-| Base | דַּבֵּר | עַזֵּר | Same form as Imperative 2ms |
-| + לְ | לְדַבֵּר | לְעַזֵּר | |
+| Base | דַּבֵּר | חַזֵּק | Same form as Imperative 2ms |
+| + לְ | לְדַבֵּר | לְחַזֵּק | Attested: 2 Kgs 12:6 |
 
 ### Infinitive Absolute {#pe-guttural-inf-absolute}
 
-| Form | Piel Strong (דבר) | Piel I-guttural (עזר) | Notes |
+| Form | Piel Strong (דבר) | Piel I-guttural (חזק) | Notes |
 |---|---|---|---|
-| Standard | דַּבֵּר | עַזֵּר† | Tsere under R2; ע at R1 position |
+| Standard | דַּבֵּר | חַזֵּק† | Tsere under R2; ח at R1 position |
 
 ### Participle {#pe-guttural-participle}
 
-| Form | Piel Strong (דבר) | Piel I-guttural (עזר) | Notes |
+| Form | Piel Strong (דבר) | Piel I-guttural (חזק) | Notes |
 |---|---|---|---|
-| ms | מְדַבֵּר | מְעַזֵּר | מְ prefix; ע takes Patach; Dagesh in ז; Tsere |
-| fs | מְדַבֶּרֶת | מְעַזֶּרֶת | |
-| mp | מְדַבְּרִים | מְעַזְּרִים | |
-| fp | מְדַבְּרוֹת | מְעַזְּרוֹת | |
+| ms | מְדַבֵּר | מְחַזֵּק | מְ prefix; ח takes Patach; Dagesh in ז; Tsere |
+| fs | מְדַבֶּרֶת | מְחַזֶּקֶת | |
+| mp | מְדַבְּרִים | מְחַזְּקִים | |
+| fp | מְדַבְּרוֹת | מְחַזְּקוֹת | |
 
 > **Key:** I-guttural Piel forms are nearly identical to strong Piel. Because R1 always carries a full vowel (Hireq/Patach), composite shewa is rarely triggered. The guttural letter at R1 is the main visual marker. Compare I-guttural Qal (where R1 shewa is frequent and composite shewa is prominent) to see why the Piel is the "easiest" stem for I-guttural roots.
 
