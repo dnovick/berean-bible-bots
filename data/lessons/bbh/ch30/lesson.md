@@ -159,12 +159,22 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 
 > **BBH definition:** The Piel marks an action as *repeated* or *ongoing* — done again and again rather than once. BBH's examples: הָלַךְ (Qal, to go/walk) → הִלֵּךְ (Piel, to pace / walk back and forth); צָעַק (Qal, to cry out) → צֵעֵק (Piel, to weep over and over / keep crying).
 
-The Piel of הָלַךְ appears 22× in the OT (Psalms, Proverbs, Ecclesiastes, Kings, and the Prophets) but not in the Torah. The Piel of צָעַק appears only once in the entire OT (2Ki 2:12). The corpus-attested example below is from 1 Kings.
+The Piel of הָלַךְ appears 22× in the OT (Psalms, Proverbs, Ecclesiastes, Kings, and the Prophets) but not in the Torah. The Piel of צָעַק appears only once in the entire OT (2Ki 2:12). Corpus search reveals two additional Iterative roots with Torah attestations: **צחק** (6× Piel, all in Genesis–Exodus) and **שׁנן** (Deut 6:7).
 
 **Wayyiqtol — 1Ki 21:27 (הלך)**
 וַיְהַלֵּ֖ךְ אַֽט׃
 *"…and he walked about (paced) slowly."*
 → הלך Piel+Wayyiqtol+3ms; Ahab, on hearing Elijah's judgment, tears his clothes, fasts, and *paces about* in sackcloth. The Piel marks repeated back-and-forth movement (pacing), not a single directed walk — the paradigm Iterative use BBH describes.
+
+**Participle — Gen 26:8 (צחק)**
+וְהִנֵּ֤ה יִצְחָק֙ מְצַחֵ֔ק אֵ֖ת רִבְקָ֥ה אִשְׁתּֽוֹ׃
+*"…and there was Isaac playing with Rebekah his wife."*
+→ צחק Piel+Participle+ms; Qal צָחַק = to laugh (a single burst — Gen 17:17; 18:12–15). Piel = to play, sport, caress — sustained or repeated laughing-type behavior. Abimelech sees what he sees precisely because it is ongoing: a Qal laugh is momentary and invisible through a window; Piel "playing" is sustained enough to betray the relationship. The same Piel appears at Gen 19:14 (Lot's warning seeming like *jesting*), Gen 21:9 (Ishmael *mocking* Isaac), Gen 39:14, 17 (Potiphar's wife accusing Joseph of coming "to *mock* us"), and Exo 32:6 (Israel arising "to *revel*" around the golden calf).
+
+**Perfect — Deut 6:7 (שׁנן)**
+וְשִׁנַּנְתָּ֣ם לְבָנֶ֔יךָ
+*"You shall repeat/drill them into your children."*
+→ שׁנן Piel+Perfect+2ms; Qal שָׁנַן = to sharpen (a sword or tongue — Deut 32:41; Ps 64:3; 140:3). Piel = to sharpen *by repetition* — to drill words in again and again until they are honed into memory. The Shema context (Deut 6:4–9) makes the iterative force explicit: speaking at home, on the road, lying down, rising up — the repetition is the point.
 
 ---
 
