@@ -13,7 +13,7 @@ For each bolded verb, indicate:
 2. **Conjugation** (Perfect, Imperfect, Wayyiqtol, Weqatal, Imperative, Inf. Const., Inf. Abs., Participle)
 3. **PGN** (Person–Gender–Number, e.g., 3ms, 2mp, 1cs)
 4. **Root** (3-letter root, unvoweled)
-5. **Stem / Function** (if Piel: Intensive / Factitive / Declarative / Denominative / Simple action; if not: name the stem — Qal, Niphal, Hiphil, or Hophal)
+5. **Stem / Function** (if Piel: Intensive / Factitive / Iterative / Denominative / Simple action; if not: name the stem — Qal, Niphal, Hiphil, or Hophal)
 
 *Distractors include Qal, Niphal, and Hophal forms — all stems you have already studied. The form מְבֹרָךְ in Passage C is Pual (Ch32) and is left unnumbered; you do not need to parse it.*
 

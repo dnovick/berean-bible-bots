@@ -9,7 +9,7 @@
 Each item below gives you a root with its **Qal meaning** and an attested **Piel form** from the OT. For each item:
 
 1. **Translate** the Piel form into English.
-2. **Name the semantic function** (Intensive / Factitive / Declarative / Simple Action / Denominative).
+2. **Name the semantic function** (Intensive / Factitive / Iterative / Simple Action / Denominative).
 3. **Explain in one sentence** *why* the Piel meaning follows from — or departs from — the Qal meaning.
 
 The answer key is at the bottom.
@@ -48,7 +48,7 @@ These roots describe a *state* in the Qal. The Piel **causes** an object to ente
 
 ---
 
-## Part C — Declarative, Denominative, and Simple Action
+## Part C — Simple Action and Denominative
 
 | # | Root | Qal Meaning | Piel Form | Ref | Translation | Function |
 |---|---|---|---|---|---|---|
@@ -66,7 +66,7 @@ These roots describe a *state* in the Qal. The Piel **causes** an object to ente
 
 2. Items 8–12 (Factitive, Part B): for each root, write the stative Qal meaning and the Piel meaning side by side. What grammatical object does the Piel require that the Qal stative does not?
 
-3. Items 13, 14, and 15–17 are respectively Declarative, Denominative, and Simple Action. For each category, explain in one sentence why "Intensive" doesn't fit, even though all five are Piels.
+3. Items 13, 14, and 15–17 are respectively Simple Action and Denominative. For each category, explain in one sentence why "Intensive" doesn't fit, even though all five are Piels.
 
 ---
 
@@ -98,7 +98,7 @@ These roots describe a *state* in the Qal. The Piel **causes** an object to ente
 
 | # | Root | Piel Meaning | Function | Notes |
 |---|---|---|---|---|
-| 13 | קָלַל | to curse / treat as accursed | Declarative | Not "make someone small" (Factitive) but "pronounce/treat as accursed"; verbal declaration |
+| 13 | קָלַל | to curse / revile | Simple Action | Not "make someone small" (Factitive) but "pronounce/treat as accursed"; verbal declaration |
 | 14 | כָּפַר | to make atonement | Denominative | From noun כֹּפֶר "ransom, covering"; the Piel performs the act of the noun |
 | 15 | בָּרַךְ | to bless | Simple Action | Blessing is the Piel's own standard function; no Qal to intensify in ordinary usage |
 | 16 | דָּבַר | to speak | Simple Action | Speaking is the Piel's standard function; Qal is functionally absent |

@@ -1,6 +1,6 @@
 # Ch30 Qal–Piel Contrast Drill
 
-Students compare 17 Piel verb forms against their Qal counterparts, translating each Piel and naming its semantic function (Intensive, Factitive, Declarative, Denominative, or Simple Action). The exercise is organized by function category — Part A (Intensive, 7 items), Part B (Factitive from stative roots, 5 items), and Part C (Declarative, Denominative, and Simple Action, 5 items) — so that students can see the pattern within each category before moving to the next. All forms are attested in the OT, drawn primarily from Genesis 1–43, Exodus, and Leviticus.
+Students compare 17 Piel verb forms against their Qal counterparts, translating each Piel and naming its semantic function (Intensive, Factitive, Iterative, Denominative, or Simple Action). The exercise is organized by function category — Part A (Intensive, 7 items), Part B (Factitive from stative roots, 5 items), and Part C (Simple Action and Denominative, 5 items) — so that students can see the pattern within each category before moving to the next. All forms are attested in the OT, drawn primarily from Genesis 1–43, Exodus, and Leviticus.
 
 ## Coverage
 
@@ -8,7 +8,7 @@ Students compare 17 Piel verb forms against their Qal counterparts, translating 
 |---|---|---|---|
 | A | Intensive | 7 | שָׁבַר, כָּסָה, שָׁלַח, גָּרַשׁ, שָׁחַת, נָגַע, כָּבַס |
 | B | Factitive (stative roots) | 5 | קָדַשׁ, גָּדַל, חָיָה, חָלַל, כָּלָה |
-| C | Declarative / Denominative / Simple Action | 5 | קָלַל, כָּפַר, בָּרַךְ, דָּבַר, הָלַל |
+| C | Simple Action and Denominative | 5 | קָלַל, כָּפַר, בָּרַךְ, דָּבַר, הָלַל |
 | **Total** | | **17** | |
 
 | Conjugation Types Present | |
