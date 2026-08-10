@@ -1,7 +1,7 @@
 # Session 137 — Hithpael Weak Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2024.1](../index.md)  
-**Date:** Sep 21, 2026  
+**Date:** Oct 5, 2026  
 **Instructor:** David Novick  
 
 ## Agenda

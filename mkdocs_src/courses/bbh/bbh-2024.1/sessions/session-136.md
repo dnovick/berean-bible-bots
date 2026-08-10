@@ -1,7 +1,7 @@
 # Session 136 — Hithpael Strong Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2024.1](../index.md)  
-**Date:** Sep 7, 2026  
+**Date:** Sep 21, 2026  
 **Instructor:** David Novick  
 
 ## Agenda

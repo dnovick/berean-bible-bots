@@ -52,14 +52,14 @@ The most important I-guttural Piel root is עָנָה → עִנָּה ("to affl
 
 | Conjugation | Strong (דבר) | I-guttural (ענה — afflict) |
 |---|---|---|
-| Perfect | דִּבֵּר | עִנָּה |
-| Imperfect | יְדַבֵּר | יְעַנֶּה |
-| Wayyiqtol | וַיְדַבֵּר | וַיְעַנֶּה |
-| Weqatal | וְדִבֵּר | וְעִנָּה |
-| Imperative | דַּבֵּר | עַנֵּה |
-| Inf. Construct | דַּבֵּר | עַנּוֹת |
-| Inf. Absolute | דַּבֵּר | עַנֵּה |
-| Participle | מְדַבֵּר | מְעַנֶּה |
+| [Perfect (Qatal)](piel-weak-paradigms.md#pe-guttural-perfect) | דִּבֵּר | עִנָּה |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#pe-guttural-imperfect) | יְדַבֵּר | יְעַנֶּה |
+| [Wayyiqtol](piel-weak-paradigms.md#pe-guttural-wayyiqtol) | וַיְדַבֵּר | וַיְעַנֶּה |
+| [Weqatal](piel-weak-paradigms.md#pe-guttural-weqatal) | וְדִבֵּר | וְעִנָּה |
+| [Imperative](piel-weak-paradigms.md#pe-guttural-imperative) | דַּבֵּר | עַנֵּה |
+| [Inf. Construct](piel-weak-paradigms.md#pe-guttural-inf-construct) | דַּבֵּר | עַנּוֹת |
+| [Inf. Absolute](piel-weak-paradigms.md#pe-guttural-inf-absolute) | דַּבֵּר | עַנֵּה |
+| [Participle](piel-weak-paradigms.md#pe-guttural-participle) | מְדַבֵּר | מְעַנֶּה |
 
 ### Key Corpus Examples
 
@@ -91,14 +91,14 @@ The Piel Dagesh Forte in R2 is completely unaffected by a III-guttural final rad
 
 | Conjugation | Strong (דבר) | III-ח (שלח — send away) | III-ע (שמע — cause to hear) |
 |---|---|---|---|
-| Perfect | דִּבֵּר | שִׁלַּח | שִׁמַּע |
-| Imperfect | יְדַבֵּר | יְשַׁלַּח | יְשַׁמַּע |
-| Wayyiqtol | וַיְדַבֵּר | וַיְשַׁלַּח | וַיְשַׁמַּע |
-| Weqatal | וְדִבֵּר | וְשִׁלַּח | וְשִׁמַּע |
-| Imperative | דַּבֵּר | שַׁלַּח | שַׁמַּע |
-| Inf. Construct | דַּבֵּר | שַׁלַּח | שַׁמַּע |
-| Inf. Absolute | דַּבֵּר | שַׁלֵּחַ | שַׁמֵּעַ |
-| Participle | מְדַבֵּר | מְשַׁלֵּחַ | מְשַׁמֵּעַ |
+| [Perfect (Qatal)](piel-weak-paradigms.md#lamed-guttural-perfect) | דִּבֵּר | שִׁלַּח | שִׁמַּע |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#lamed-guttural-imperfect) | יְדַבֵּר | יְשַׁלַּח | יְשַׁמַּע |
+| [Wayyiqtol](piel-weak-paradigms.md#lamed-guttural-wayyiqtol) | וַיְדַבֵּר | וַיְשַׁלַּח | וַיְשַׁמַּע |
+| [Weqatal](piel-weak-paradigms.md#lamed-guttural-weqatal) | וְדִבֵּר | וְשִׁלַּח | וְשִׁמַּע |
+| [Imperative](piel-weak-paradigms.md#lamed-guttural-imperative) | דַּבֵּר | שַׁלַּח | שַׁמַּע |
+| [Inf. Construct](piel-weak-paradigms.md#lamed-guttural-inf-construct) | דַּבֵּר | שַׁלַּח | שַׁמַּע |
+| [Inf. Absolute](piel-weak-paradigms.md#lamed-guttural-inf-absolute) | דַּבֵּר | שַׁלֵּחַ | שַׁמֵּעַ |
+| [Participle](piel-weak-paradigms.md#lamed-guttural-participle) | מְדַבֵּר | מְשַׁלֵּחַ | מְשַׁמֵּעַ |
 
 ### Key Corpus Examples
 
@@ -126,14 +126,14 @@ The final א of these roots quiesces (becomes silent) in word-final position. Be
 
 | Conjugation | Strong (דבר) | III-א (מלא — fill) |
 |---|---|---|
-| Perfect | דִּבֵּר | מִלֵּא |
-| Imperfect | יְדַבֵּר | יְמַלֵּא |
-| Wayyiqtol | וַיְדַבֵּר | וַיְמַלֵּא |
-| Weqatal | וְדִבֵּר | וְמִלֵּא |
-| Imperative | דַּבֵּר | מַלֵּא |
-| Inf. Construct | דַּבֵּר | מַלֵּא |
-| Inf. Absolute | דַּבֵּר | מַלֵּא |
-| Participle | מְדַבֵּר | מְמַלֵּא |
+| [Perfect (Qatal)](piel-weak-paradigms.md#lamed-aleph-perfect) | דִּבֵּר | מִלֵּא |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#lamed-aleph-imperfect) | יְדַבֵּר | יְמַלֵּא |
+| [Wayyiqtol](piel-weak-paradigms.md#lamed-aleph-wayyiqtol) | וַיְדַבֵּר | וַיְמַלֵּא |
+| [Weqatal](piel-weak-paradigms.md#lamed-aleph-weqatal) | וְדִבֵּר | וְמִלֵּא |
+| [Imperative](piel-weak-paradigms.md#lamed-aleph-imperative) | דַּבֵּר | מַלֵּא |
+| [Inf. Construct](piel-weak-paradigms.md#lamed-aleph-inf-construct) | דַּבֵּר | מַלֵּא |
+| [Inf. Absolute](piel-weak-paradigms.md#lamed-aleph-inf-absolute) | דַּבֵּר | מַלֵּא |
+| [Participle](piel-weak-paradigms.md#lamed-aleph-participle) | מְדַבֵּר | מְמַלֵּא |
 
 ### Key Corpus Examples
 
@@ -161,14 +161,14 @@ III-ה roots are among the most common weak roots in the OT. The final ה is a v
 
 | Conjugation | Strong (דבר) | III-ה (צוה — command) | III-ה (גלה — uncover) | III-ה (כסה — cover) |
 |---|---|---|---|---|
-| Perfect | דִּבֵּר | צִוָּה | גִּלָּה | כִּסָּה |
-| Imperfect | יְדַבֵּר | יְצַוֶּה | יְגַלֶּה | יְכַסֶּה |
-| Wayyiqtol | וַיְדַבֵּר | וַיְצַו | וַיְגַל | וַיְכַס |
-| Weqatal | וְדִבֵּר | וְצִוָּה | וְגִלָּה | וְכִסָּה |
-| Imperative | דַּבֵּר | צַוֵּה | גַּלֵּה | כַּסֵּה |
-| Inf. Construct | דַּבֵּר | צַוּוֹת | גַּלּוֹת | כַּסּוֹת |
-| Inf. Absolute | דַּבֵּר | צַוֵּה | גַּלֵּה | כַּסֵּה |
-| Participle | מְדַבֵּר | מְצַוֶּה | מְגַלֶּה | מְכַסֶּה |
+| [Perfect (Qatal)](piel-weak-paradigms.md#lamed-he-perfect) | דִּבֵּר | צִוָּה | גִּלָּה | כִּסָּה |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#lamed-he-imperfect) | יְדַבֵּר | יְצַוֶּה | יְגַלֶּה | יְכַסֶּה |
+| [Wayyiqtol](piel-weak-paradigms.md#lamed-he-wayyiqtol) | וַיְדַבֵּר | וַיְצַו | וַיְגַל | וַיְכַס |
+| [Weqatal](piel-weak-paradigms.md#lamed-he-weqatal) | וְדִבֵּר | וְצִוָּה | וְגִלָּה | וְכִסָּה |
+| [Imperative](piel-weak-paradigms.md#lamed-he-imperative) | דַּבֵּר | צַוֵּה | גַּלֵּה | כַּסֵּה |
+| [Inf. Construct](piel-weak-paradigms.md#lamed-he-inf-construct) | דַּבֵּר | צַוּוֹת | גַּלּוֹת | כַּסּוֹת |
+| [Inf. Absolute](piel-weak-paradigms.md#lamed-he-inf-absolute) | דַּבֵּר | צַוֵּה | גַּלֵּה | כַּסֵּה |
+| [Participle](piel-weak-paradigms.md#lamed-he-participle) | מְדַבֵּר | מְצַוֶּה | מְגַלֶּה | מְכַסֶּה |
 
 ### Key Corpus Examples
 
@@ -205,14 +205,14 @@ The most important I-נ Piel roots are:
 
 | Conjugation | Strong (דבר) | I-נ (נחם — comfort) | I-נ (נצל — rescue) |
 |---|---|---|---|
-| Perfect | דִּבֵּר | נִחֵּם | נִצֵּל |
-| Imperfect | יְדַבֵּר | יְנַחֵּם | יְנַצֵּל |
-| Wayyiqtol | וַיְדַבֵּר | וַיְנַחֵּם | וַיְנַצֵּל |
-| Weqatal | וְדִבֵּר | וְנִחֵּם | וְנִצֵּל |
-| Imperative | דַּבֵּר | נַחֵּם | נַצֵּל |
-| Inf. Construct | דַּבֵּר | נַחֵּם | נַצֵּל |
-| Inf. Absolute | דַּבֵּר | נַחֵּם | נַצֵּל |
-| Participle | מְדַבֵּר | מְנַחֵּם | מְנַצֵּל |
+| [Perfect (Qatal)](piel-weak-paradigms.md#pe-nun-perfect) | דִּבֵּר | נִחֵּם | נִצֵּל |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#pe-nun-imperfect) | יְדַבֵּר | יְנַחֵּם | יְנַצֵּל |
+| [Wayyiqtol](piel-weak-paradigms.md#pe-nun-wayyiqtol) | וַיְדַבֵּר | וַיְנַחֵּם | וַיְנַצֵּל |
+| [Weqatal](piel-weak-paradigms.md#pe-nun-weqatal) | וְדִבֵּר | וְנִחֵּם | וְנִצֵּל |
+| [Imperative](piel-weak-paradigms.md#pe-nun-imperative) | דַּבֵּר | נַחֵּם | נַצֵּל |
+| [Inf. Construct](piel-weak-paradigms.md#pe-nun-inf-construct) | דַּבֵּר | נַחֵּם | נַצֵּל |
+| [Inf. Absolute](piel-weak-paradigms.md#pe-nun-inf-absolute) | דַּבֵּר | נַחֵּם | נַצֵּל |
+| [Participle](piel-weak-paradigms.md#pe-nun-participle) | מְדַבֵּר | מְנַחֵּם | מְנַצֵּל |
 
 ### Key Corpus Examples
 
@@ -245,14 +245,14 @@ The key I-י Piel roots:
 
 | Conjugation | Strong (דבר) | I-י (יסר — discipline) |
 |---|---|---|
-| Perfect | דִּבֵּר | יִסֵּר |
-| Imperfect | יְדַבֵּר | יְיַסֵּר |
-| Wayyiqtol | וַיְדַבֵּר | וַיְיַסֵּר |
-| Weqatal | וְדִבֵּר | וְיִסֵּר |
-| Imperative | דַּבֵּר | יַסֵּר |
-| Inf. Construct | דַּבֵּר | יַסֵּר |
-| Inf. Absolute | דַּבֵּר | יַסֵּר |
-| Participle | מְדַבֵּר | מְיַסֵּר |
+| [Perfect (Qatal)](piel-weak-paradigms.md#pe-yod-perfect) | דִּבֵּר | יִסֵּר |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#pe-yod-imperfect) | יְדַבֵּר | יְיַסֵּר |
+| [Wayyiqtol](piel-weak-paradigms.md#pe-yod-wayyiqtol) | וַיְדַבֵּר | וַיְיַסֵּר |
+| [Weqatal](piel-weak-paradigms.md#pe-yod-weqatal) | וְדִבֵּר | וְיִסֵּר |
+| [Imperative](piel-weak-paradigms.md#pe-yod-imperative) | דַּבֵּר | יַסֵּר |
+| [Inf. Construct](piel-weak-paradigms.md#pe-yod-inf-construct) | דַּבֵּר | יַסֵּר |
+| [Inf. Absolute](piel-weak-paradigms.md#pe-yod-inf-absolute) | דַּבֵּר | יַסֵּר |
+| [Participle](piel-weak-paradigms.md#pe-yod-participle) | מְדַבֵּר | מְיַסֵּר |
 
 ### Key Corpus Examples
 
@@ -285,14 +285,14 @@ The diagnostic for this class:
 
 | Conjugation | Strong (דבר) | Biconsonantal Polel (קום → קומם) |
 |---|---|---|
-| Perfect | דִּבֵּר | קוֹמֵם |
-| Imperfect | יְדַבֵּר | יְקוֹמֵם |
-| Wayyiqtol | וַיְדַבֵּר | וַיְקוֹמֵם |
-| Weqatal | וְדִבֵּר | וְקוֹמֵם |
-| Imperative | דַּבֵּר | קוֹמֵם |
-| Inf. Construct | דַּבֵּר | קוֹמֵם |
-| Inf. Absolute | דַּבֵּר | קוֹמֵם |
-| Participle | מְדַבֵּר | מְקוֹמֵם |
+| [Perfect (Qatal)](piel-weak-paradigms.md#biconsonantal-perfect) | דִּבֵּר | קוֹמֵם |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#biconsonantal-imperfect) | יְדַבֵּר | יְקוֹמֵם |
+| [Wayyiqtol](piel-weak-paradigms.md#biconsonantal-wayyiqtol) | וַיְדַבֵּר | וַיְקוֹמֵם |
+| [Weqatal](piel-weak-paradigms.md#biconsonantal-weqatal) | וְדִבֵּר | וְקוֹמֵם |
+| [Imperative](piel-weak-paradigms.md#biconsonantal-imperative) | דַּבֵּר | קוֹמֵם |
+| [Inf. Construct](piel-weak-paradigms.md#biconsonantal-inf-construct) | דַּבֵּר | קוֹמֵם |
+| [Inf. Absolute](piel-weak-paradigms.md#biconsonantal-inf-absolute) | דַּבֵּר | קוֹמֵם |
+| [Participle](piel-weak-paradigms.md#biconsonantal-participle) | מְדַבֵּר | מְקוֹמֵם |
 
 ### Key Corpus Examples
 
@@ -323,14 +323,14 @@ Geminate roots (R2 = R3) are among the most natural Piel roots because the Piel'
 
 | Conjugation | Strong (דבר) | Geminate (הלל — praise) | Geminate (קלל — curse/revile) |
 |---|---|---|---|
-| Perfect | דִּבֵּר | הִלֵּל | קִלֵּל |
-| Imperfect | יְדַבֵּר | יְהַלֵּל | יְקַלֵּל |
-| Wayyiqtol | וַיְדַבֵּר | וַיְהַלֵּל | וַיְקַלֵּל |
-| Weqatal | וְדִבֵּר | וְהִלֵּל | וְקִלֵּל |
-| Imperative | דַּבֵּר | הַלֵּל | קַלֵּל |
-| Inf. Construct | דַּבֵּר | הַלֵּל | קַלֵּל |
-| Inf. Absolute | דַּבֵּר | הַלֵּל | קַלֵּל |
-| Participle | מְדַבֵּר | מְהַלֵּל | מְקַלֵּל |
+| [Perfect (Qatal)](piel-weak-paradigms.md#geminate-perfect) | דִּבֵּר | הִלֵּל | קִלֵּל |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#geminate-imperfect) | יְדַבֵּר | יְהַלֵּל | יְקַלֵּל |
+| [Wayyiqtol](piel-weak-paradigms.md#geminate-wayyiqtol) | וַיְדַבֵּר | וַיְהַלֵּל | וַיְקַלֵּל |
+| [Weqatal](piel-weak-paradigms.md#geminate-weqatal) | וְדִבֵּר | וְהִלֵּל | וְקִלֵּל |
+| [Imperative](piel-weak-paradigms.md#geminate-imperative) | דַּבֵּר | הַלֵּל | קַלֵּל |
+| [Inf. Construct](piel-weak-paradigms.md#geminate-inf-construct) | דַּבֵּר | הַלֵּל | קַלֵּל |
+| [Inf. Absolute](piel-weak-paradigms.md#geminate-inf-absolute) | דַּבֵּר | הַלֵּל | קַלֵּל |
+| [Participle](piel-weak-paradigms.md#geminate-participle) | מְדַבֵּר | מְהַלֵּל | מְקַלֵּל |
 
 ### Key Corpus Examples
 

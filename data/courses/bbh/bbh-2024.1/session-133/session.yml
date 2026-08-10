@@ -18,11 +18,19 @@
 # instructor: name of the lead teacher for this session (optional, omit if blank)
 # notes:      plain-text instructor notes (not rendered on the page when blank)
 
-date: "2026-07-27"
+date: "2026-08-10"
 focus: "Piel Weak Verbs"
 instructor: "David Novick"
 chapter: 31
 agenda:
+
+reading:
+  - name: "Psalm 119:9-16"
+    description: "The law of the LORD — an acrostic poem. Part ב."
+    passage: "Psalm 119:9-16"
+    file: "ps119-9-16.html"
+    scope: instance
+    duration: "20 min"
 
 lesson:
   name: "BBH 31 - Piel Weak Verbs"

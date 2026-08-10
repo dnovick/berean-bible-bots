@@ -8,37 +8,38 @@
 body { font-family: Georgia, serif; max-width: 920px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
 h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
 h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
+h3 { font-size: .95rem; margin-top: 1.4rem; color: #555; }
 .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+.root-gloss { color: #777; font-weight: normal; font-style: italic; font-size: .9em; }
 .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
-.note { background: #fff8e8; border-left: 4px solid #e0a020; padding: .6rem 1rem; margin: .8rem 0; font-size: .9rem; color: #6b4c10; }
+.note { background: #fff8e8; border-left: 4px solid #e0a020; padding: .6rem 1rem; margin: .8rem 0; font-size: .88rem; color: #6b4c10; }
 table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
 th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
 td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
 td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
-td.pgn { font-weight: bold; color: #333; width: 5rem; }
+td.pgn { font-weight: bold; color: #333; width: 6.5rem; }
 td.heb-ans { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; font-family: 'Arial Hebrew', Arial, sans-serif; color: #2a6e2a; min-width: 7rem; }
-input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
-input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+select.parse-field { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
+select.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
 .ans-row { display: none; background: #f0faf0; }
 .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
 .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
 button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
-button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+button.rbtn:hover { background: #c8ecd4; }
 .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
 .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
 .controls button:hover { background: #ddd; }
 .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
 .clr:hover { background: #ffd8d8 !important; }
 hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
-@media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
+@media print { .controls, button.rbtn { display: none; } select.parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; } .ans-row { display: none !important; } }
 </style>
 </head>
 <body>
 
 <h1>Ch31 Piel Weak Paradigm Drill</h1>
-<p class="subtitle">Root: גלה (III-ה) &nbsp;|&nbsp; Stem: Piel</p>
-<div class="instructions">Write the Piel Weak paradigm for גלה (III-ה). Note: the final ה in the 3ms perfect is retained; it drops before vowel suffixes.</div>
-<div class="note"><strong>Note:</strong> The 3ms perfect גִּלָּה retains the ה. Before vowel suffixes, ה drops: גִּלּוּ (3cp), גִּלִּיתָ (2ms).</div>
+<p class="subtitle">Roots: גלה (III-ה) · ענה (I-guttural + III-ה) · הלל (Geminate) &nbsp;|&nbsp; Stem: Piel</p>
+<div class="instructions">Select the correct Piel form for each root and person-gender-number. All four choices come from the same root — study the vowel patterns and suffixes carefully before choosing. Click <strong>▶ Answer</strong> to reveal the correct form with a morphological note.</div>
 
 <div class="controls">
   <button onclick="showAll()">Show All Answers</button>
@@ -46,65 +47,374 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
   <button class="clr" onclick="clearAll()">Clear All Inputs</button>
 </div>
 
-<h2>Part A — Perfect (5 forms)</h2>
+<!-- ============================================================ -->
+<!-- SECTION 1: גלה (III-ה) -->
+<!-- ============================================================ -->
+
+<h2>§1 — גלה (III-ה) &nbsp;<span class="root-gloss">to reveal, uncover</span></h2>
+
+<h3>Perfect</h3>
 <table>
-<thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-a1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">גִּלָּה</td><td></td></tr>
-<tr><td class="num">2</td><td class="pgn">3fs</td><td><input class="parse-field" id="f-a2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a2')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a2"><td class="ans-lbl">✓</td><td class="pgn">3fs</td><td class="heb-ans">גִּלְּתָה</td><td></td></tr>
-<tr><td class="num">3</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-a3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a3')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a3"><td class="ans-lbl">✓</td><td class="pgn">2ms</td><td class="heb-ans">גִּלִּיתָ</td><td></td></tr>
-<tr><td class="num">4</td><td class="pgn">1cs</td><td><input class="parse-field" id="f-a4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a4')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a4"><td class="ans-lbl">✓</td><td class="pgn">1cs</td><td class="heb-ans">גִּלִּיתִי</td><td></td></tr>
-<tr><td class="num">5</td><td class="pgn">3cp</td><td><input class="parse-field" id="f-a5" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a5')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-a5"><td class="ans-lbl">✓</td><td class="pgn">3cp</td><td class="heb-ans">גִּלּוּ</td><td></td></tr>
+<tr>
+  <td class="num">1</td><td class="pgn">3ms</td>
+  <td><select class="parse-field" id="f-1a1"><option value="">—</option><option>גָּלָה</option><option>גִּלָּה</option><option>גִּלְּתָה</option><option>גִּלּוּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('1a1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1a1">
+  <td class="ans-lbl">✓</td><td class="pgn">3ms</td>
+  <td class="heb-ans">גִּלָּה</td>
+  <td><em>i-class (hireq) under ג (R1) + dagesh forte in לּ (R2) + ָה (III-ה Pf 3ms ending)</em></td>
+</tr>
+<tr>
+  <td class="num">2</td><td class="pgn">2ms</td>
+  <td><select class="parse-field" id="f-1a2"><option value="">—</option><option>גִּלִּיתִי</option><option>גִּלָּה</option><option>גִּלְּתָה</option><option>גִּלִּיתָ</option></select></td>
+  <td><button class="rbtn" onclick="tog('1a2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1a2">
+  <td class="ans-lbl">✓</td><td class="pgn">2ms</td>
+  <td class="heb-ans">גִּלִּיתָ</td>
+  <td><em>ה drops before consonantal suffix; i-class preserved → י + תָ (2ms suffix)</em></td>
+</tr>
+<tr>
+  <td class="num">3</td><td class="pgn">1cs</td>
+  <td><select class="parse-field" id="f-1a3"><option value="">—</option><option>גִּלִּיתָ</option><option>גִּלִּיתִי</option><option>גִּלּוּ</option><option>גִּלְּתָה</option></select></td>
+  <td><button class="rbtn" onclick="tog('1a3')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1a3">
+  <td class="ans-lbl">✓</td><td class="pgn">1cs</td>
+  <td class="heb-ans">גִּלִּיתִי</td>
+  <td><em>ה drops before consonantal suffix; i-class + י + תִי (1cs suffix)</em></td>
+</tr>
+<tr>
+  <td class="num">4</td><td class="pgn">3cp</td>
+  <td><select class="parse-field" id="f-1a4"><option value="">—</option><option>גִּלּוּ</option><option>גִּלָּה</option><option>יְגַלּוּ</option><option>גִּלְּתָה</option></select></td>
+  <td><button class="rbtn" onclick="tog('1a4')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1a4">
+  <td class="ans-lbl">✓</td><td class="pgn">3cp</td>
+  <td class="heb-ans">גִּלּוּ</td>
+  <td><em>ה drops before vowel suffix; hireq + dagesh forte in לּ + וּ (3cp ending)</em></td>
+</tr>
+<tr>
+  <td class="num">5</td><td class="pgn">3fs</td>
+  <td><select class="parse-field" id="f-1a5"><option value="">—</option><option>גִּלָּה</option><option>גִּלְּתָה</option><option>גִּלּוּ</option><option>גִּלִּיתָ</option></select></td>
+  <td><button class="rbtn" onclick="tog('1a5')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1a5">
+  <td class="ans-lbl">✓</td><td class="pgn">3fs</td>
+  <td class="heb-ans">גִּלְּתָה</td>
+  <td><em>ה drops before consonantal suffix; vocal shewa under לּ before תָה suffix</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Imperfect</h3>
+<table>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
+<tbody>
+<tr>
+  <td class="num">6</td><td class="pgn">3ms</td>
+  <td><select class="parse-field" id="f-1b1"><option value="">—</option><option>מְגַלֶּה</option><option>יְגַלּוּ</option><option>גַּלֵּה</option><option>יְגַלֶּה</option></select></td>
+  <td><button class="rbtn" onclick="tog('1b1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1b1">
+  <td class="ans-lbl">✓</td><td class="pgn">3ms</td>
+  <td class="heb-ans">יְגַלֶּה</td>
+  <td><em>יְ prefix + a-class (pathach) under ג (R1) + dagesh forte in לּ (R2) + tsere-He (ֶּה) ending</em></td>
+</tr>
+<tr>
+  <td class="num">7</td><td class="pgn">3mp</td>
+  <td><select class="parse-field" id="f-1b2"><option value="">—</option><option>יְגַלֶּה</option><option>גִּלּוּ</option><option>יְגַלּוּ</option><option>תְּגַלּוּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('1b2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1b2">
+  <td class="ans-lbl">✓</td><td class="pgn">3mp</td>
+  <td class="heb-ans">יְגַלּוּ</td>
+  <td><em>יְ prefix + pathach + dagesh forte in לּ + וּ (3mp; ה drops before vowel suffix)</em></td>
+</tr>
+<tr>
+  <td class="num">8</td><td class="pgn">1cp</td>
+  <td><select class="parse-field" id="f-1b3"><option value="">—</option><option>אֲגַלֶּה</option><option>נְגַלֶּה</option><option>תְּגַלֶּה</option><option>יְגַלֶּה</option></select></td>
+  <td><button class="rbtn" onclick="tog('1b3')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1b3">
+  <td class="ans-lbl">✓</td><td class="pgn">1cp</td>
+  <td class="heb-ans">נְגַלֶּה</td>
+  <td><em>נְ prefix (1cp) + pathach under ג + dagesh forte in לּ + tsere-He ending</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Imperative</h3>
+<table>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
+<tbody>
+<tr>
+  <td class="num">9</td><td class="pgn">2ms</td>
+  <td><select class="parse-field" id="f-1c1"><option value="">—</option><option>גַּלֵּה</option><option>גַּלִּי</option><option>יְגַלֶּה</option><option>גַּלּוּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('1c1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1c1">
+  <td class="ans-lbl">✓</td><td class="pgn">2ms</td>
+  <td class="heb-ans">גַּלֵּה</td>
+  <td><em>a-class (pathach) under ג (R1) + dagesh forte + tsere (R2) + ה (III-ה Imp 2ms ending)</em></td>
+</tr>
+<tr>
+  <td class="num">10</td><td class="pgn">2mp</td>
+  <td><select class="parse-field" id="f-1c2"><option value="">—</option><option>גַּלֵּה</option><option>יְגַלּוּ</option><option>גִּלּוּ</option><option>גַּלּוּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('1c2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1c2">
+  <td class="ans-lbl">✓</td><td class="pgn">2mp</td>
+  <td class="heb-ans">גַּלּוּ</td>
+  <td><em>a-class under ג + dagesh forte in לּ + וּ (2mp Imp ending; ה drops before vowel suffix)</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Infinitives</h3>
+<table>
+<thead><tr><th>#</th><th>Form</th><th>Select the Piel form</th><th></th></tr></thead>
+<tbody>
+<tr>
+  <td class="num">11</td><td class="pgn">Inf. Construct</td>
+  <td><select class="parse-field" id="f-1d1"><option value="">—</option><option>גַּלֵּה</option><option>גִּלָּה</option><option>מְגַלֶּה</option><option>גַּלּוֹת</option></select></td>
+  <td><button class="rbtn" onclick="tog('1d1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1d1">
+  <td class="ans-lbl">✓</td><td class="pgn">Inf. Const.</td>
+  <td class="heb-ans">גַּלּוֹת</td>
+  <td><em>a-class under ג + dagesh forte in לּ + וֹת (III-ה Inf Const ending: holem-tav)</em></td>
+</tr>
+<tr>
+  <td class="num">12</td><td class="pgn">Inf. Absolute</td>
+  <td><select class="parse-field" id="f-1d2"><option value="">—</option><option>גַּלּוֹת</option><option>גַּלֵּה</option><option>גִּלָּה</option><option>גַּלִּי</option></select></td>
+  <td><button class="rbtn" onclick="tog('1d2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1d2">
+  <td class="ans-lbl">✓</td><td class="pgn">Inf. Abs.</td>
+  <td class="heb-ans">גַּלֵּה</td>
+  <td><em>Same shape as Imp 2ms; III-ה Piel Inf Abs = a-class + dagesh forte + tsere-He pattern</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Participle</h3>
+<table>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
+<tbody>
+<tr>
+  <td class="num">13</td><td class="pgn">ms</td>
+  <td><select class="parse-field" id="f-1e1"><option value="">—</option><option>יְגַלֶּה</option><option>גַּלֵּה</option><option>מְגַלֶּה</option><option>גַּלּוֹת</option></select></td>
+  <td><button class="rbtn" onclick="tog('1e1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1e1">
+  <td class="ans-lbl">✓</td><td class="pgn">ms</td>
+  <td class="heb-ans">מְגַלֶּה</td>
+  <td><em>מְ prefix (Piel Ptc marker) + pathach under ג + dagesh forte in לּ + tsere-He ending</em></td>
+</tr>
 </tbody>
 </table>
 
 <hr class="sec">
 
-<h2>Part B — Imperfect (5 forms)</h2>
+<!-- ============================================================ -->
+<!-- SECTION 2: ענה (I-guttural + III-ה) -->
+<!-- ============================================================ -->
+
+<h2>§2 — ענה (I-guttural + III-ה) &nbsp;<span class="root-gloss">to afflict, humble, oppress</span></h2>
+<div class="note"><strong>I-guttural note:</strong> ע (R1) is a guttural. In the Piel Perfect the i-class vowel (hireq) still appears under ע — no composite shewa required since ע can take a simple vowel. In the Imperfect, ע takes pathach (the normal a-class position for R1). No dagesh forte is possible in ע, but the pattern is otherwise the same as §1.</div>
+
+<h3>Perfect</h3>
 <table>
-<thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-b1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">יְגַלֶּה</td><td></td></tr>
-<tr><td class="num">2</td><td class="pgn">3fs</td><td><input class="parse-field" id="f-b2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b2')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b2"><td class="ans-lbl">✓</td><td class="pgn">3fs</td><td class="heb-ans">תְּגַלֶּה</td><td></td></tr>
-<tr><td class="num">3</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-b3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b3')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b3"><td class="ans-lbl">✓</td><td class="pgn">2ms</td><td class="heb-ans">תְּגַלֶּה</td><td></td></tr>
-<tr><td class="num">4</td><td class="pgn">3mp</td><td><input class="parse-field" id="f-b4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b4"><td class="ans-lbl">✓</td><td class="pgn">3mp</td><td class="heb-ans">יְגַלּוּ</td><td></td></tr>
-<tr><td class="num">5</td><td class="pgn">1cp</td><td><input class="parse-field" id="f-b5" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b5')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-b5"><td class="ans-lbl">✓</td><td class="pgn">1cp</td><td class="heb-ans">נְגַלֶּה</td><td></td></tr>
+<tr>
+  <td class="num">14</td><td class="pgn">3ms</td>
+  <td><select class="parse-field" id="f-2a1"><option value="">—</option><option>עָנָה</option><option>עִנְּתָה</option><option>עִנּוּ</option><option>עִנָּה</option></select></td>
+  <td><button class="rbtn" onclick="tog('2a1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2a1">
+  <td class="ans-lbl">✓</td><td class="pgn">3ms</td>
+  <td class="heb-ans">עִנָּה</td>
+  <td><em>i-class (hireq) under ע (R1) + dagesh forte in נּ (R2) + ָה (III-ה Pf 3ms ending)</em></td>
+</tr>
+<tr>
+  <td class="num">15</td><td class="pgn">2ms</td>
+  <td><select class="parse-field" id="f-2a2"><option value="">—</option><option>עִנִּיתִי</option><option>עִנָּה</option><option>עִנִּיתָ</option><option>עִנְּתָה</option></select></td>
+  <td><button class="rbtn" onclick="tog('2a2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2a2">
+  <td class="ans-lbl">✓</td><td class="pgn">2ms</td>
+  <td class="heb-ans">עִנִּיתָ</td>
+  <td><em>ה drops before consonantal suffix; hireq under ע + dagesh forte in נּ + י + תָ (2ms)</em></td>
+</tr>
+<tr>
+  <td class="num">16</td><td class="pgn">3cp</td>
+  <td><select class="parse-field" id="f-2a3"><option value="">—</option><option>עִנָּה</option><option>יְעַנּוּ</option><option>עִנּוּ</option><option>עִנְּתָה</option></select></td>
+  <td><button class="rbtn" onclick="tog('2a3')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2a3">
+  <td class="ans-lbl">✓</td><td class="pgn">3cp</td>
+  <td class="heb-ans">עִנּוּ</td>
+  <td><em>ה drops before vowel suffix; hireq under ע + dagesh forte in נּ + וּ (3cp ending)</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Imperfect</h3>
+<table>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
+<tbody>
+<tr>
+  <td class="num">17</td><td class="pgn">3ms</td>
+  <td><select class="parse-field" id="f-2b1"><option value="">—</option><option>יְעַנּוּ</option><option>עַנֵּה</option><option>יְעַנֶּה</option><option>מְעַנֶּה</option></select></td>
+  <td><button class="rbtn" onclick="tog('2b1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2b1">
+  <td class="ans-lbl">✓</td><td class="pgn">3ms</td>
+  <td class="heb-ans">יְעַנֶּה</td>
+  <td><em>יְ prefix + pathach under ע (R1) + dagesh forte in נּ (R2) + tsere-He (ֶּה) ending</em></td>
+</tr>
+<tr>
+  <td class="num">18</td><td class="pgn">3mp</td>
+  <td><select class="parse-field" id="f-2b2"><option value="">—</option><option>יְעַנֶּה</option><option>עִנּוּ</option><option>תְּעַנּוּ</option><option>יְעַנּוּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('2b2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2b2">
+  <td class="ans-lbl">✓</td><td class="pgn">3mp</td>
+  <td class="heb-ans">יְעַנּוּ</td>
+  <td><em>יְ prefix + pathach under ע + dagesh forte in נּ + וּ (3mp; ה drops before vowel suffix)</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Infinitives</h3>
+<table>
+<thead><tr><th>#</th><th>Form</th><th>Select the Piel form</th><th></th></tr></thead>
+<tbody>
+<tr>
+  <td class="num">19</td><td class="pgn">Inf. Construct</td>
+  <td><select class="parse-field" id="f-2c1"><option value="">—</option><option>עַנֵּה</option><option>עַנּוֹת</option><option>עִנָּה</option><option>מְעַנֶּה</option></select></td>
+  <td><button class="rbtn" onclick="tog('2c1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2c1">
+  <td class="ans-lbl">✓</td><td class="pgn">Inf. Const.</td>
+  <td class="heb-ans">עַנּוֹת</td>
+  <td><em>pathach under ע (R1) + dagesh forte in נּ (R2) + וֹת (III-ה Inf Const ending)</em></td>
+</tr>
+<tr>
+  <td class="num">20</td><td class="pgn">Inf. Absolute</td>
+  <td><select class="parse-field" id="f-2c2"><option value="">—</option><option>עַנּוֹת</option><option>עִנָּה</option><option>יְעַנֶּה</option><option>עַנֵּה</option></select></td>
+  <td><button class="rbtn" onclick="tog('2c2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2c2">
+  <td class="ans-lbl">✓</td><td class="pgn">Inf. Abs.</td>
+  <td class="heb-ans">עַנֵּה</td>
+  <td><em>Same pattern as Imp 2ms: pathach + dagesh forte in נּ + tsere-He. Distinct from Inf Const (וֹת ending).</em></td>
+</tr>
 </tbody>
 </table>
 
 <hr class="sec">
 
-<h2>Part C — Imperative (3 forms)</h2>
+<!-- ============================================================ -->
+<!-- SECTION 3: הלל (Geminate) -->
+<!-- ============================================================ -->
+
+<h2>§3 — הלל (Geminate) &nbsp;<span class="root-gloss">to praise, boast</span></h2>
+<div class="note"><strong>Geminate note:</strong> In a geminate root R2 = R3. The Piel treats R2 as the doubled radical and R3 as the repeated final consonant. Perfect 3ms: הִ (i-class) + לּ (R2 with dagesh forte) + ֵ + ל (R3) = הִלֵּל. Before consonantal suffixes the inter-radical vowel reduces: הִלַּלְתָּ. Before vowel suffixes the vowel under R2 becomes shewa: הִלְּלוּ.</div>
+
+<h3>Perfect</h3>
 <table>
-<thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-c1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-c1"><td class="ans-lbl">✓</td><td class="pgn">2ms</td><td class="heb-ans">גַּלֵּה</td><td></td></tr>
-<tr><td class="num">2</td><td class="pgn">2fs</td><td><input class="parse-field" id="f-c2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c2')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-c2"><td class="ans-lbl">✓</td><td class="pgn">2fs</td><td class="heb-ans">גַּלִּי</td><td></td></tr>
-<tr><td class="num">3</td><td class="pgn">2mp</td><td><input class="parse-field" id="f-c3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c3')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-c3"><td class="ans-lbl">✓</td><td class="pgn">2mp</td><td class="heb-ans">גַּלּוּ</td><td></td></tr>
+<tr>
+  <td class="num">21</td><td class="pgn">3ms</td>
+  <td><select class="parse-field" id="f-3a1"><option value="">—</option><option>הָלַל</option><option>הִלְּלוּ</option><option>הִלַּלְתָּ</option><option>הִלֵּל</option></select></td>
+  <td><button class="rbtn" onclick="tog('3a1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3a1">
+  <td class="ans-lbl">✓</td><td class="pgn">3ms</td>
+  <td class="heb-ans">הִלֵּל</td>
+  <td><em>i-class (hireq) under ה (R1) + dagesh forte in לּ (R2) + tsere + ל (R3 = R2, repeated)</em></td>
+</tr>
+<tr>
+  <td class="num">22</td><td class="pgn">2ms</td>
+  <td><select class="parse-field" id="f-3a2"><option value="">—</option><option>הִלַּלְתִּי</option><option>הִלֵּל</option><option>הִלַּלְתָּ</option><option>הִלְּלוּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('3a2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3a2">
+  <td class="ans-lbl">✓</td><td class="pgn">2ms</td>
+  <td class="heb-ans">הִלַּלְתָּ</td>
+  <td><em>hireq under ה + pathach under first ל (inter-radical vowel reduces before consonantal suffix) + vocal shewa + תָּ (2ms suffix)</em></td>
+</tr>
+<tr>
+  <td class="num">23</td><td class="pgn">3cp</td>
+  <td><select class="parse-field" id="f-3a3"><option value="">—</option><option>הִלֵּל</option><option>הִלְּלוּ</option><option>יְהַלְּלוּ</option><option>הִלַּלְתָּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('3a3')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3a3">
+  <td class="ans-lbl">✓</td><td class="pgn">3cp</td>
+  <td class="heb-ans">הִלְּלוּ</td>
+  <td><em>hireq under ה + vocal shewa under first ל (reduced before vowel suffix) + second ל + וּ (3cp)</em></td>
+</tr>
 </tbody>
 </table>
 
-<hr class="sec">
-
-<h2>Part D — Participle (1 form)</h2>
+<h3>Imperfect</h3>
 <table>
-<thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
+<thead><tr><th>#</th><th>PGN</th><th>Select the Piel form</th><th></th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td class="pgn">ms</td><td><input class="parse-field" id="f-d1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('d1')">▶ Answer</button></td></tr>
-<tr class="ans-row" id="ans-d1"><td class="ans-lbl">✓</td><td class="pgn">ms</td><td class="heb-ans">מְגַלֶּה</td><td></td></tr>
+<tr>
+  <td class="num">24</td><td class="pgn">3ms</td>
+  <td><select class="parse-field" id="f-3b1"><option value="">—</option><option>יְהַלֵּל</option><option>הַלֵּל</option><option>יְהַלְּלוּ</option><option>מְהַלֵּל</option></select></td>
+  <td><button class="rbtn" onclick="tog('3b1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3b1">
+  <td class="ans-lbl">✓</td><td class="pgn">3ms</td>
+  <td class="heb-ans">יְהַלֵּל</td>
+  <td><em>יְ prefix + a-class (pathach) under ה (R1) + dagesh forte in לּ (R2) + tsere + ל (R3)</em></td>
+</tr>
+<tr>
+  <td class="num">25</td><td class="pgn">3mp</td>
+  <td><select class="parse-field" id="f-3b2"><option value="">—</option><option>יְהַלֵּל</option><option>הִלְּלוּ</option><option>תְּהַלְּלוּ</option><option>יְהַלְּלוּ</option></select></td>
+  <td><button class="rbtn" onclick="tog('3b2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3b2">
+  <td class="ans-lbl">✓</td><td class="pgn">3mp</td>
+  <td class="heb-ans">יְהַלְּלוּ</td>
+  <td><em>יְ prefix + pathach under ה + vocal shewa under first לּ (reduced before vowel suffix) + second ל + וּ (3mp)</em></td>
+</tr>
+</tbody>
+</table>
+
+<h3>Infinitives &amp; Participle</h3>
+<table>
+<thead><tr><th>#</th><th>Form</th><th>Select the Piel form</th><th></th></tr></thead>
+<tbody>
+<tr>
+  <td class="num">26</td><td class="pgn">Inf. Construct</td>
+  <td><select class="parse-field" id="f-3c1"><option value="">—</option><option>מְהַלֵּל</option><option>הִלֵּל</option><option>יְהַלֵּל</option><option>הַלֵּל</option></select></td>
+  <td><button class="rbtn" onclick="tog('3c1')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3c1">
+  <td class="ans-lbl">✓</td><td class="pgn">Inf. Const.</td>
+  <td class="heb-ans">הַלֵּל</td>
+  <td><em>pathach under ה (R1) + dagesh forte in לּ (R2) + tsere + ל (R3). No prefix; same consonantal shape as Impf without יְ.</em></td>
+</tr>
+<tr>
+  <td class="num">27</td><td class="pgn">Ptc. ms</td>
+  <td><select class="parse-field" id="f-3c2"><option value="">—</option><option>הַלֵּל</option><option>יְהַלֵּל</option><option>הִלֵּל</option><option>מְהַלֵּל</option></select></td>
+  <td><button class="rbtn" onclick="tog('3c2')">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3c2">
+  <td class="ans-lbl">✓</td><td class="pgn">Ptc. ms</td>
+  <td class="heb-ans">מְהַלֵּל</td>
+  <td><em>מְ prefix (Piel Ptc marker) + pathach under ה (R1) + dagesh forte in לּ (R2) + tsere + ל (R3)</em></td>
+</tr>
 </tbody>
 </table>
 
@@ -112,7 +422,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}
 function showAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='table-row');}
 function hideAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='none');}
-function clearAll(){document.querySelectorAll('input.f').forEach(i=>i.value='');}
+function clearAll(){document.querySelectorAll('select.parse-field').forEach(s=>s.selectedIndex=0);}
 </script>
 </body>
 </html>

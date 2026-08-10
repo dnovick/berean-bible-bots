@@ -9151,39 +9151,111 @@ def build_ch30_piel_paradigm_drill(out_dir: Optional[str] = None) -> str:
 
 class Ch31PielWeakParadigmDrill(ExercisePDF):
     _instructions = (
-        'Write the Piel Weak paradigm for the root גלה (III-ה: uncover/reveal). '
-        'Note: final ה is retained in the 3ms Perfect; it drops before vowel suffixes.'
+        'Select the correct Piel form for each root and PGN. '
+        'Roots covered: גלה (III-ה), ענה (I-guttural + III-ה), '
+        'הלל (Geminate).'
     )
 
     def _build(self) -> None:
         self.add_instructions(self._instructions)
-        hdrs = ['#', 'PGN / Form', 'Piel form (גלה)']
-        cr   = [0.06, 0.24, 0.70]
+        cr = [0.06, 0.24, 0.70]
 
-        rows_pf = [['%d'%i,p,''] for i,p in enumerate(['3ms','3fs','2ms','1cs','3cp'],1)]
-        ans_pf  = [
-            ['1','3ms','גִּלָּה'], ['2','3fs','גִּלְּתָה'], ['3','2ms','גִּלִּיתָ'],
-            ['4','1cs','גִּלִּיתִי'], ['5','3cp','גִּלּוּ'],
+        # --- §1 גלה (III-ה) ---
+        hdrs1 = ['#', 'PGN / Form', 'גלה (III-ה) — Piel form']
+        s1_pf_q = [['%d'%i,p,''] for i,p in enumerate(
+            ['3ms','2ms','1cs','3cp','3fs'], 1)]
+        s1_pf_a = [
+            ['1','3ms','גִּלָּה'],
+            ['2','2ms','גִּלִּיתָ'],
+            ['3','1cs','גִּלִּיתִי'],
+            ['4','3cp','גִּלּוּ'],
+            ['5','3fs','גִּלְּתָה'],
         ]
-        rows_imp = [['%d'%(i+5),p,''] for i,p in enumerate(['3ms','3fs','2ms','3mp','1cp'],1)]
-        ans_imp  = [
-            ['6','3ms','יְגַלֶּה'], ['7','3fs','תְּגַלֶּה'], ['8','2ms','תְּגַלֶּה'],
-            ['9','3mp','יְגַלּוּ'], ['10','1cp','נְגַלֶּה'],
+        s1_imp_q = [['%d'%(i+5),p,''] for i,p in enumerate(['3ms','3mp','1cp'], 1)]
+        s1_imp_a = [
+            ['6','3ms','יְגַלֶּה'],
+            ['7','3mp','יְגַלּוּ'],
+            ['8','1cp','נְגַלֶּה'],
         ]
-        rows_imper = [['%d'%(i+10),p,''] for i,p in enumerate(['2ms','2fs','2mp'],1)]
-        ans_imper  = [
-            ['11','2ms','גַּלֵּה'], ['12','2fs','גַּלִּי'], ['13','2mp','גַּלּוּ'],
+        s1_imper_q = [['%d'%(i+8),p,''] for i,p in enumerate(['2ms','2mp'], 1)]
+        s1_imper_a = [
+            ['9','2ms','גַּלֵּה'],
+            ['10','2mp','גַּלּוּ'],
         ]
-        rows_ptc = [['14','Participle ms','']]
-        ans_ptc  = [['14','Participle ms','מְגַלֶּה']]
+        s1_inf_q = [['11','Inf. Construct',''],['12','Inf. Absolute','']]
+        s1_inf_a = [
+            ['11','Inf. Const.','גַּלּוֹת'],
+            ['12','Inf. Abs.','גַּלֵּה'],
+        ]
+        s1_ptc_q = [['13','Participle ms','']]
+        s1_ptc_a = [['13','Participle ms','מְגַלֶּה']]
 
         for title_q, rows_q, ans_q in [
-            ('Piel Weak Perfect (גלה)', rows_pf, ans_pf),
-            ('Piel Weak Imperfect (גלה)', rows_imp, ans_imp),
-            ('Piel Weak Imperative (גלה)', rows_imper, ans_imper),
-            ('Piel Weak Participle (גלה)', rows_ptc, ans_ptc),
+            ('§1 Piel Perfect (גלה)', s1_pf_q, s1_pf_a),
+            ('§1 Piel Imperfect (גלה)', s1_imp_q, s1_imp_a),
+            ('§1 Piel Imperative (גלה)', s1_imper_q, s1_imper_a),
+            ('§1 Piel Infinitives (גלה)', s1_inf_q, s1_inf_a),
+            ('§1 Piel Participle (גלה)', s1_ptc_q, s1_ptc_a),
         ]:
-            self.add_drill_with_answer_key(hdrs, rows_q, ans_q, col_ratios=cr,
+            self.add_drill_with_answer_key(hdrs1, rows_q, ans_q, col_ratios=cr,
+                                           answer_heb_cols=[2],
+                                           section_title=title_q,
+                                           answer_title=f'{title_q} — Answer Key')
+
+        # --- §2 ענה (I-guttural + III-ה) ---
+        hdrs2 = ['#', 'PGN / Form', 'ענה (I-guttural + III-ה) — Piel form']
+        s2_pf_q = [['%d'%i,p,''] for i,p in enumerate(['3ms','2ms','3cp'], 14)]
+        s2_pf_a = [
+            ['14','3ms','עִנָּה'],
+            ['15','2ms','עִנִּיתָ'],
+            ['16','3cp','עִנּוּ'],
+        ]
+        s2_imp_q = [['%d'%(i+16),p,''] for i,p in enumerate(['3ms','3mp'], 1)]
+        s2_imp_a = [
+            ['17','3ms','יְעַנֶּה'],
+            ['18','3mp','יְעַנּוּ'],
+        ]
+        s2_inf_q = [['19','Inf. Construct',''],['20','Inf. Absolute','']]
+        s2_inf_a = [
+            ['19','Inf. Const.','עַנּוֹת'],
+            ['20','Inf. Abs.','עַנֵּה'],
+        ]
+
+        for title_q, rows_q, ans_q in [
+            ('§2 Piel Perfect (ענה)', s2_pf_q, s2_pf_a),
+            ('§2 Piel Imperfect (ענה)', s2_imp_q, s2_imp_a),
+            ('§2 Piel Infinitives (ענה)', s2_inf_q, s2_inf_a),
+        ]:
+            self.add_drill_with_answer_key(hdrs2, rows_q, ans_q, col_ratios=cr,
+                                           answer_heb_cols=[2],
+                                           section_title=title_q,
+                                           answer_title=f'{title_q} — Answer Key')
+
+        # --- §3 הלל (Geminate) ---
+        hdrs3 = ['#', 'PGN / Form', 'הלל (Geminate) — Piel form']
+        s3_pf_q = [['%d'%i,p,''] for i,p in enumerate(['3ms','2ms','3cp'], 21)]
+        s3_pf_a = [
+            ['21','3ms','הִלֵּל'],
+            ['22','2ms','הִלַּלְתָּ'],
+            ['23','3cp','הִלְּלוּ'],
+        ]
+        s3_imp_q = [['%d'%(i+23),p,''] for i,p in enumerate(['3ms','3mp'], 1)]
+        s3_imp_a = [
+            ['24','3ms','יְהַלֵּל'],
+            ['25','3mp','יְהַלְּלוּ'],
+        ]
+        s3_inf_ptc_q = [['26','Inf. Construct',''],['27','Participle ms','']]
+        s3_inf_ptc_a = [
+            ['26','Inf. Const.','הַלֵּל'],
+            ['27','Participle ms','מְהַלֵּל'],
+        ]
+
+        for title_q, rows_q, ans_q in [
+            ('§3 Piel Perfect (הלל)', s3_pf_q, s3_pf_a),
+            ('§3 Piel Imperfect (הלל)', s3_imp_q, s3_imp_a),
+            ('§3 Piel Infinitives & Participle (הלל)', s3_inf_ptc_q, s3_inf_ptc_a),
+        ]:
+            self.add_drill_with_answer_key(hdrs3, rows_q, ans_q, col_ratios=cr,
                                            answer_heb_cols=[2],
                                            section_title=title_q,
                                            answer_title=f'{title_q} — Answer Key')
@@ -11134,9 +11206,9 @@ def build_ch31_function_sort(out_dir: Optional[str] = None) -> str:
 
 class Ch31StemIdDrill(ExercisePDF):
     _instructions = (
-        'Below are 24 Hebrew verb forms from weak roots (ברך, גלה, צוה, חזק). '
-        'For each form, identify: (1) Stem (Qal / Niphal / Hiphil / Piel), '
-        '(2) Conjugation, (3) PGN, (4) Root. '
+        'Below are 25 Hebrew verb forms from weak roots (ברך, גלה, צוה, חזק). '
+        'For each form, identify: (1) Root, (2) Stem (Qal / Niphal / Hiphil / Hophal / Piel), '
+        '(3) Conjugation, (4) PGN. '
         'Answer key at the bottom.'
     )
 
@@ -11146,10 +11218,11 @@ class Ch31StemIdDrill(ExercisePDF):
             'I-Guttural Piel (ברך, חזק): guttural R1 cannot take dagesh; '
             'watch for virtual doubling (longer vowel before R2).  '
             'III-ה Piel (גלה, צוה): perfect 3ms ends in ָּה (qamets + dagesh-he).  '
-            'Qal III-ה perfect 3ms ends in ָה (no dagesh in ה).'
+            'Qal III-ה perfect 3ms ends in ָה (no dagesh in ה).  '
+            'Hophal prefix הֻ (u-class) = passive of Hiphil.'
         )
-        hdrs = ['#', 'Hebrew Form', 'Stem', 'Conjugation', 'PGN', 'Root']
-        cr   = [0.05, 0.18, 0.12, 0.22, 0.12, 0.31]
+        hdrs = ['#', 'Hebrew Form', 'Root', 'Stem', 'Conjugation', 'PGN']
+        cr   = [0.05, 0.22, 0.15, 0.14, 0.26, 0.18]
         rows = [
             ['1',  'בֵּרַךְ',    '', '', '', ''],
             ['2',  'בָּרַךְ',    '', '', '', ''],
@@ -11175,39 +11248,41 @@ class Ch31StemIdDrill(ExercisePDF):
             ['22', 'מְבָרֵךְ',   '', '', '', ''],
             ['23', 'מְגַלֶּה',   '', '', '', ''],
             ['24', 'גֹּלֶה',     '', '', '', ''],
+            ['25', 'הֻגְלָה',    '', '', '', ''],
         ]
         ans = [
-            ['1',  'בֵּרַךְ',    'Piel',   'Perfect',     '3ms', 'ברך'],
-            ['2',  'בָּרַךְ',    'Qal',    'Perfect',     '3ms', 'ברך'],
-            ['3',  'גִּלָּה',    'Piel',   'Perfect',     '3ms', 'גלה'],
-            ['4',  'גָּלָה',     'Qal',    'Perfect',     '3ms', 'גלה'],
-            ['5',  'נִגְלָה',    'Niphal', 'Perfect',     '3ms', 'גלה'],
-            ['6',  'הִגְלָה',    'Hiphil', 'Perfect',     '3ms', 'גלה'],
-            ['7',  'צִוָּה',     'Piel',   'Perfect',     '3ms', 'צוה'],
-            ['8',  'חִזֵּק',     'Piel',   'Perfect',     '3ms', 'חזק'],
-            ['9',  'חָזַק',      'Qal',    'Perfect',     '3ms', 'חזק'],
-            ['10', 'יְבָרֵךְ',   'Piel',   'Imperfect',   '3ms', 'ברך'],
-            ['11', 'יְצַוֶּה',   'Piel',   'Imperfect',   '3ms', 'צוה'],
-            ['12', 'יִגְלֶה',    'Qal',    'Imperfect',   '3ms', 'גלה'],
-            ['13', 'יִגָּלֶה',   'Niphal', 'Imperfect',   '3ms', 'גלה'],
-            ['14', 'יְגַלֶּה',   'Piel',   'Imperfect',   '3ms', 'גלה'],
-            ['15', 'יַגְלֶה',    'Hiphil', 'Imperfect',   '3ms', 'גלה'],
-            ['16', 'וַיְבָרֶךְ', 'Piel',   'Wayyiqtol',   '3ms', 'ברך'],
-            ['17', 'וַיְצַו',    'Piel',   'Wayyiqtol',   '3ms', 'צוה'],
-            ['18', 'וַיִּגֶּל',  'Qal',    'Wayyiqtol',   '3ms', 'גלה'],
-            ['19', 'בָּרֵךְ',    'Piel',   'Imperative',  '2ms', 'ברך'],
-            ['20', 'גַּל',       'Qal',    'Imperative',  '2ms', 'גלה'],
-            ['21', 'גַּלֵּה',    'Piel',   'Imperative',  '2ms', 'גלה'],
-            ['22', 'מְבָרֵךְ',   'Piel',   'Participle',  'ms',  'ברך'],
-            ['23', 'מְגַלֶּה',   'Piel',   'Participle',  'ms',  'גלה'],
-            ['24', 'גֹּלֶה',     'Qal',    'Participle',  'ms',  'גלה'],
+            ['1',  'בֵּרַךְ',    'ברך', 'Piel',   'Perfect',    '3ms'],
+            ['2',  'בָּרַךְ',    'ברך', 'Qal',    'Perfect',    '3ms'],
+            ['3',  'גִּלָּה',    'גלה', 'Piel',   'Perfect',    '3ms'],
+            ['4',  'גָּלָה',     'גלה', 'Qal',    'Perfect',    '3ms'],
+            ['5',  'נִגְלָה',    'גלה', 'Niphal', 'Perfect',    '3ms'],
+            ['6',  'הִגְלָה',    'גלה', 'Hiphil', 'Perfect',    '3ms'],
+            ['7',  'צִוָּה',     'צוה', 'Piel',   'Perfect',    '3ms'],
+            ['8',  'חִזֵּק',     'חזק', 'Piel',   'Perfect',    '3ms'],
+            ['9',  'חָזַק',      'חזק', 'Qal',    'Perfect',    '3ms'],
+            ['10', 'יְבָרֵךְ',   'ברך', 'Piel',   'Imperfect',  '3ms'],
+            ['11', 'יְצַוֶּה',   'צוה', 'Piel',   'Imperfect',  '3ms'],
+            ['12', 'יִגְלֶה',    'גלה', 'Qal',    'Imperfect',  '3ms'],
+            ['13', 'יִגָּלֶה',   'גלה', 'Niphal', 'Imperfect',  '3ms'],
+            ['14', 'יְגַלֶּה',   'גלה', 'Piel',   'Imperfect',  '3ms'],
+            ['15', 'יַגְלֶה',    'גלה', 'Hiphil', 'Imperfect',  '3ms'],
+            ['16', 'וַיְבָרֶךְ', 'ברך', 'Piel',   'Wayyiqtol',  '3ms'],
+            ['17', 'וַיְצַו',    'צוה', 'Piel',   'Wayyiqtol',  '3ms'],
+            ['18', 'וַיִּגֶּל',  'גלה', 'Qal',    'Wayyiqtol',  '3ms'],
+            ['19', 'בָּרֵךְ',    'ברך', 'Piel',   'Imperative', '2ms'],
+            ['20', 'גַּל',       'גלה', 'Qal',    'Imperative', '2ms'],
+            ['21', 'גַּלֵּה',    'גלה', 'Piel',   'Imperative', '2ms'],
+            ['22', 'מְבָרֵךְ',   'ברך', 'Piel',   'Participle', 'ms'],
+            ['23', 'מְגַלֶּה',   'גלה', 'Piel',   'Participle', 'ms'],
+            ['24', 'גֹּלֶה',     'גלה', 'Qal',    'Participle', 'ms'],
+            ['25', 'הֻגְלָה',    'גלה', 'Hophal', 'Perfect',    '3ms'],
         ]
         self.add_drill_with_answer_key(
             hdrs, rows, ans,
             col_ratios=cr,
             heb_cols=[1],
-            answer_heb_cols=[1, 5],
-            section_title='Qal / Niphal / Hiphil / Piel — Weak Roots (24 forms)',
+            answer_heb_cols=[1, 2],
+            section_title='Qal / Niphal / Hiphil / Hophal / Piel — Weak Roots (25 forms)',
             answer_title='Answer Key',
         )
 
