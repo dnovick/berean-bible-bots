@@ -159,10 +159,7 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 
 > **BBH definition:** The Piel marks an action as *repeated* or *ongoing* — done again and again rather than once. BBH's examples: הָלַךְ (Qal, to go/walk) → הִלֵּךְ (Piel, to pace / walk back and forth); צָעַק (Qal, to cry out) → צֵעֵק (Piel, to weep over and over / keep crying).
 
-**Perfect — Lev 13:6 (כבס)**
-וְכִבֶּ֣ס בְּגָדָ֑יו וְטָהֵֽר׃
-*"He shall wash his clothes and be clean."*
-→ כבס Piel+Perfect+3ms; "to launder" = to scrub garments *repeatedly* until clean. The Piel of כבס marks the repeated, thorough scrubbing action of laundering, distinct from a single rinse. Cf. Lev 11:25, 13:34, 14:8–9, 15:5–8.
+BBH gives only these two examples for Iterative, and neither is attested in a Torah passage included in the exercise set. The category is listed here for completeness; the exercises focus on the four functions with clear OT examples at this level.
 
 ---
 
