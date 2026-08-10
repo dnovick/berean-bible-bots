@@ -14,11 +14,11 @@ Below are 25 Piel verb forms drawn from the OT. Each item gives you the Hebrew f
 |---|---|---|
 | **I** | Intensive | Intensified form of the Qal action — more forceful, thorough, or repeated |
 | **F** | Factitive | Causes an object to enter a state (typically from a stative Qal root) |
-| **D** | Declarative | Declares or treats something as being in a state |
+| **It** | Iterative | Repeated or ongoing action — done again and again (הָלַךְ → הִלֵּךְ, to pace; צָעַק → צֵעֵק, to keep crying) |
 | **DN** | Denominative | Derived from a noun; performs the noun's characteristic action |
 | **SA** | Simple Action | No productive Qal; Piel is the primary form of the root |
 
-> **Tip:** Ask: *Does the subject do the action more forcefully/completely?* → **Intensive**. *Does the subject cause something to become a certain way (from a stative root)?* → **Factitive**. *Does the subject pronounce/treat something as being in a state?* → **Declarative**. *Is the Piel the standard form with no common Qal equivalent?* → **Simple Action**. *Is the verb built on a noun?* → **Denominative**.
+> **Tip:** Ask: *Does the subject do the action more forcefully/completely?* → **Intensive**. *Does the subject cause something to become a certain way (from a stative root)?* → **Factitive**. *Does the Piel mark repeated or ongoing action?* → **Iterative** (e.g., הָלַךְ → הִלֵּךְ, to pace). *Is the Piel the standard form with no common Qal equivalent?* → **Simple Action**. *Is the verb built on a noun?* → **Denominative**.
 
 Write your answer (I / F / D / DN / SA) in the blank column.
 
@@ -84,7 +84,7 @@ Write your answer (I / F / D / DN / SA) in the blank column.
 | 10 | דָּבַר | to speak | **SA** | Speaking is the Piel's standard function; Qal is exceedingly rare; no useful Qal counterpart |
 | 11 | שָׁרַת | to serve, minister | **SA** | Service/ministry is the Piel's basic domain; no common Qal; possibly Denominative from a noun |
 | 12 | גָּדַל | to be great | **F** | Qal = stative "be great"; Piel = cause a name/person to be great = make great, magnify |
-| 13 | קָלַל | to be small, light | **D** | Qal = stative "be light/of little account"; Piel Declarative = pronounce/treat as accursed; to curse is to declare someone in a state of diminishment |
+| 13 | קָלַל | to be small, light | **SA** | Qal = stative "be light/of little account"; Piel "to curse" is Simple Action — it is the standard verb for cursing with no common Qal equivalent for that meaning |
 | 14 | נָגַע | to touch, strike | **I** | Qal = touch, reach; Piel = strike repeatedly/afflict with plague; intensified or repeated striking |
 | 15 | קָדַשׁ | to be holy | **F** | Same as #2; Piel causes the people to be in a state of ritual consecration |
 | 16 | כָּבַס | to wash (garments) | **I** | Qal = wash; Piel = wash thoroughly; the Piel form is the standard for laundering ritual garments |
@@ -102,9 +102,8 @@ Write your answer (I / F / D / DN / SA) in the blank column.
 
 | Function | Items | Count |
 |---|---|---|
-| Simple Action | 1, 5, 10, 11, 17, 20, 25 | 7 |
+| Simple Action | 1, 5, 10, 11, 13, 17, 20, 25 | 8 |
 | Intensive | 4, 6, 8, 9, 14, 16, 18, 23 | 8 |
 | Factitive | 2, 3, 7, 12, 15, 22 | 6 |
-| Declarative | 13 | 1 |
 | Denominative | 21 | 1 |
 | Intensive/SA | 19, 24 | 2 |

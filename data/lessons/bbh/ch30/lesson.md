@@ -12,8 +12,8 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 |---|---|---|
 | Intensive | Emphasizes forceful or thorough action | שִׁבֵּר — shattered (vs. Qal שָׁבַר broke) |
 | Factitive | Makes an adjective or state into an action (causes something to *become*) | קִדֵּשׁ — consecrated (made holy) |
-| Declarative | Declares or pronounces something to be in a state | טִמֵּא — declared unclean |
 | Denominative | Verb derived from a noun | דִּבֵּר — spoke (from דָּבָר word) |
+| Iterative | Repeated or ongoing action; the Piel marks the action as done again and again | הִלֵּךְ — paced / walked back and forth (vs. Qal הָלַךְ went/walked); צֵעֵק — kept crying (vs. Qal צָעַק cried out) |
 | Simple action | Some roots appear almost exclusively in Piel with no clear Qal intensification | בִּקֵּשׁ — sought; צִוָּה — commanded |
 
 > **Key diagnostic:** The **Dagesh Forte in R2** (the middle root consonant) is the single most reliable Piel identifier across every conjugation. The Piel carries a characteristic Tsere (ֵ) under R2 in the Perfect 3ms and Imperfect, and an i-class vowel (Hireq or Patach) under R1.
@@ -88,12 +88,12 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 | 11 | גלה | 27 | to uncover, expose | Intensive |
 | 12 | שרת | 27 | to minister, serve | Simple action |
 | 13 | שלם | 27 | to make restitution, repay | Factitive |
-| 14 | טמא | 26 | to declare unclean; to defile | Declarative / Factitive |
+| 14 | טמא | 26 | to defile, render unclean | Factitive |
 | 15 | מהר | 26 | to hurry | Intensive |
 | 16 | צפה | 25 | to overlay (with gold/silver) | Denominative |
 | 17 | ענה | 25 | to afflict, humble | Factitive |
 | 18 | חלל | 21 | to profane, desecrate | Factitive |
-| 19 | טהר | 17 | to declare clean; to cleanse | Declarative / Factitive |
+| 19 | טהר | 17 | to cleanse; to pronounce clean | Simple action |
 | 20 | בער | 17 | to remove, purge | Intensive |
 
 ---
@@ -155,26 +155,20 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 
 ---
 
-### Declarative
+### Iterative
 
-**Weqatal — Gen 34:5 (טמא)**
-וְטִמֵּ֖א אֶת־דִּינָ֣ה בִתּ֑וֹ
-*"…and he had defiled Dinah his daughter."*
-→ טמא Piel+Perfect+3ms; "defiled" = declared/made ritually and morally unclean. The Piel of טמא moves from the adjective טָמֵא ("unclean") to the active causative sense.
+> **BBH definition:** The Piel marks an action as *repeated* or *ongoing* — done again and again rather than once. BBH's examples: הָלַךְ (Qal, to go/walk) → הִלֵּךְ (Piel, to pace / walk back and forth); צָעַק (Qal, to cry out) → צֵעֵק (Piel, to weep over and over / keep crying).
 
-**Perfect — Lev 13:6 (טהר)**
-וְטִהֲר֣וֹ הַכֹּהֵ֔ן מִסְפַּ֖חַת הִ֑וא
-*"…then the priest shall pronounce him clean; it is only a rash."*
-→ טהר Piel+Perfect+3ms; priestly declaration — the priest *pronounces* the person clean (declarative, not causing cleanness).
-
-**Inf. Construct — Job 32:2 (צדק)**
-עַ֚ל צַדְּק֣וֹ נַפְשׁ֔וֹ מֵאֱלֹהִֽים׃
-*"…because he justified himself rather than God."*
-→ צדק Piel+Inf.Construct; "declared himself righteous" — the Piel of צדק is purely declarative.
+**Perfect — Lev 13:6 (כבס)**
+וְכִבֶּ֣ס בְּגָדָ֑יו וְטָהֵֽר׃
+*"He shall wash his clothes and be clean."*
+→ כבס Piel+Perfect+3ms; "to launder" = to scrub garments *repeatedly* until clean. The Piel of כבס marks the repeated, thorough scrubbing action of laundering, distinct from a single rinse. Cf. Lev 11:25, 13:34, 14:8–9, 15:5–8.
 
 ---
 
-### Simple Action
+### Simple Action (including speech-act verbs)
+
+> **BBH note:** BBH does not use "Declarative" as a separate Piel category. Verbs whose Piel performs a speech act or pronouncement — such as טִמֵּא ("to defile"), טִהֵר ("to pronounce clean"), and צִדֵּק ("to justify") — are classified under **Simple Action** since the Piel is the standard active form with no meaningful Qal equivalent to intensify.
 
 **Perfect — Gen 17:16 (ברך)**
 וּבֵרַכְתִּ֣י אֹתָ֔הּ וְגַ֨ם נָתַ֧תִּי מִמֶּ֛נָּה לְךָ֖ בֵּ֑ן
