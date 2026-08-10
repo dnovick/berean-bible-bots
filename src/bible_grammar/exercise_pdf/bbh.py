@@ -7600,22 +7600,6 @@ class Ch31WeakFormIdExercise(ExercisePDF):
                                show_answers=True, answer_rows=ans_b)
 
 
-def build_ch31_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
-    return _build_exercise_pdf(
-        Ch31WeakFormIdExercise,
-        'Chapter 31 — Piel Weak-Form Identification Drill',
-        'BBH Chapter 31 · Piel Weak Verbs',
-        ['bbh', 'ch31', 'exercises', 'ch31-weak-form-id'],
-        'ch31-weak-form-id.pdf',
-        out_dir,
-    )
-
-
-# ---------------------------------------------------------------------------
-# Chapter 32 — Piel–Pual Contrast Drill
-# ---------------------------------------------------------------------------
-
-
 class Ch32PielPualContrastExercise(ExercisePDF):
 
     def _build(self) -> None:
@@ -11107,21 +11091,6 @@ class Ch31QalPielContrastExercise(ExercisePDF):
         self.add_section_heading('Answer Key — Part C')
         self.add_generic_table(hdr, rows_c, cr, heb_cols=[1, 2],
                                show_answers=True, answer_rows=ans_c)
-
-
-def build_ch31_qal_piel_contrast(out_dir: Optional[str] = None) -> str:
-    return _build_exercise_pdf(
-        Ch31QalPielContrastExercise,
-        'Chapter 31 — Qal–Piel Contrast Drill (Weak Roots)',
-        'BBH Chapter 31 · Piel Weak Verbs',
-        ['bbh', 'ch31', 'exercises', 'ch31-qal-piel-contrast'],
-        'ch31-qal-piel-contrast.pdf', out_dir,
-    )
-
-
-# ---------------------------------------------------------------------------
-# Ch31 — Piel Function Sort (Weak Roots)
-# ---------------------------------------------------------------------------
 
 
 class Ch31FunctionSortExercise(ExercisePDF):

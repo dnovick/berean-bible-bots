@@ -73,7 +73,6 @@ from .bbh import (
     build_ch30_function_sort_exercise,
     build_ch30_qal_piel_contrast_exercise,
     build_ch31_piel_weak_exercise,
-    build_ch31_weak_form_id_exercise,
     build_ch32_exercise,
     build_ch32_piel_pual_contrast_exercise,
     build_ch32_function_sort_exercise,
@@ -116,7 +115,6 @@ from .bbh import (
     build_ch29_qal_hiphil_hophal_contrast,
     build_ch29_stem_id_drill,
     build_ch30_stem_id_drill,
-    build_ch31_qal_piel_contrast,
     build_ch31_function_sort,
     build_ch31_stem_id_drill,
     build_ch34_qal_piel_hithpael_contrast,
@@ -266,7 +264,6 @@ build_ch30_exercise()
 build_ch30_function_sort_exercise()
 build_ch30_qal_piel_contrast_exercise()
 build_ch31_piel_weak_exercise()
-build_ch31_weak_form_id_exercise()
 build_ch32_exercise()
 build_ch32_piel_pual_contrast_exercise()
 build_ch32_function_sort_exercise()
@@ -294,7 +291,6 @@ new_builders = [
     build_ch29_qal_hiphil_hophal_contrast,
     build_ch29_stem_id_drill,
     build_ch30_stem_id_drill,
-    build_ch31_qal_piel_contrast,
     build_ch31_function_sort,
     build_ch31_stem_id_drill,
     build_ch34_qal_piel_hithpael_contrast,
