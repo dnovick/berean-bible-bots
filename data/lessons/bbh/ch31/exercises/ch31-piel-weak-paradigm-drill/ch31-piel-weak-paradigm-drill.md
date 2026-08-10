@@ -1,6 +1,6 @@
 # Ch31 Piel Weak Paradigm Drill
 
-**Roots:** גלה (III-ה) · ענה (I-guttural + III-ה) · הלל (Geminate) | **Stem:** Piel
+**Roots:** גלה (III-ה) · ענה (I-guttural + III-ה) · הלל (Geminate) · בּאר (II-Guttural) | **Stem:** Piel
 
 **Instructions:** Fill in the correct Piel form for each root and person-gender-number. All forms are drawn from the same root — study the vowel patterns and suffixes carefully.
 
@@ -106,6 +106,40 @@
 
 ---
 
+## §4 — בּאר (II-Guttural / II-aleph) — to explain, expound
+
+**Key rule (BBH Ch31 priority class):** R2 = א refuses Dagesh Forte. Three simultaneous changes: (1) No Dagesh in R2; (2) Compensatory lengthening — Perfect R1: Hireq → Tsere; Imperfect/Imperative/Ptc R1: Patach → Qamets; (3) Aleph takes Patach (a-class) at R2, Hateph-Patach before vowel suffixes. Attested: בֵּאַר (Deut 1:5).
+
+### Part A — Perfect
+
+| # | PGN | Form |
+|---|---|---|
+| 28 | 3ms | ________ |
+| 29 | 2ms | ________ |
+| 30 | 1cs | ________ |
+| 31 | 3cp | ________ |
+
+### Part B — Imperfect
+
+| # | PGN | Form |
+|---|---|---|
+| 32 | 3ms | ________ |
+| 33 | 3mp | ________ |
+
+### Part C — Imperative
+
+| # | PGN | Form |
+|---|---|---|
+| 34 | 2ms | ________ |
+
+### Part D — Participle
+
+| # | PGN | Form |
+|---|---|---|
+| 35 | ms | ________ |
+
+---
+
 ## Answer Key
 
 ### §1 גלה (III-ה)
@@ -149,3 +183,16 @@
 | 25 | Impf 3mp | יְהַלְּלוּ | יְ + pathach + vocal shewa under R2 + second ל + וּ |
 | 26 | Inf. Const. | הַלֵּל | pathach + dagesh forte + tsere + ל; no prefix |
 | 27 | Ptc. ms | מְהַלֵּל | מְ prefix + pathach + dagesh forte + tsere + ל (R3) |
+
+### §4 בּאר (II-Guttural / II-aleph)
+
+| # | PGN | Form | Note |
+|---|---|---|---|
+| 28 | Perf 3ms | בֵּאַר | Tsere under ב (R1, compensatory) + no dagesh in א + Patach under א (a-class). Attested: Deut 1:5 |
+| 29 | Perf 2ms | בֵּאַרְתָּ | Tsere under ב + Patach under א (closed syllable) + תָּ suffix |
+| 30 | Perf 1cs | בֵּאַרְתִּי | Tsere under ב + Patach + תִּי suffix |
+| 31 | Perf 3cp | בֵּאֲרוּ | Tsere under ב + Hateph-Patach under א (aleph refuses simple shewa) + וּ |
+| 32 | Impf 3ms | יְבָאַר | יְ prefix + Qamets under ב (R1, compensatory) + no dagesh in א + Patach under א |
+| 33 | Impf 3mp | יְבָאֲרוּ | יְ + Qamets under ב + Hateph-Patach under א + וּ |
+| 34 | Imp 2ms | בָּאַר | Qamets under ב (same compensatory pattern as Impf R1) + Patach under א; no prefix or suffix |
+| 35 | Ptc. ms | מְבָאַר | מְ prefix + Qamets under ב + Patach under א |

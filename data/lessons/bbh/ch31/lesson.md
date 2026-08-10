@@ -10,10 +10,13 @@
 > surrounding R2, driven by the phonological properties of the weak radical. Recognize the rule;
 > the form follows.
 
-## 1. The Eight Weak Classes — Overview
+## 1. Overview — Weak Classes in the Piel
+
+> "Most weak verbs in the Piel stem maintain the diagnostic features of the strong verb. It is only II-Guttural weak verbs that exhibit any major changes in spelling. The weak verb classes III-ע/ח, III-א, III-ה, and Geminate are given for your study, but you will observe that all of the strong verb diagnostics are preserved in each weak verb class." — Pratico & Van Pelt, BBH Ch31
 
 | Class | Label | Representative roots | What changes | Key conjugations affected |
 |---|---|---|---|---|
+| **II-Guttural (Ayin-Guttural)** ★ | `ayin-guttural` | **בּאר, שׁחת** | **Three simultaneous changes:** R2 refuses dagesh forte; R1 vowel lengthens (compensatory); R2 takes a-class (Patach) | **All — the most visually distinct class** |
 | I-guttural (Pe-Guttural) | `pe-guttural` | עָנָה, חָזַק | Guttural rejects simple shewa → composite shewa (hateph); vowel before R1 adjusts; dagesh in R2 intact | Perfect, imperfect, all |
 | III-ח/ע (Lamed-Guttural) | `lamed-guttural` | שָׁלַח, שָׁמַע | Guttural demands a-class vowel; patach furtive before final ח/ע in open syllable | Perfect, imperfect, participle |
 | III-א (Lamed-Aleph) | `lamed-aleph` | מָלָא, קָרָא | Final א quiesces; compensatory lengthening of preceding vowel; tsere under R2 lengthens to tsere + א | Perfect 3ms/3fs, imperfect, participle |
@@ -23,14 +26,57 @@
 | Biconsonantal (II-ו/י) | `biconsonantal` | קוֹמֵם (from קוּם), שׁוֹרֵר | Two-consonant root; Piel doubles R2 by gemination; holem-vav medial; pattern differs markedly from strong | All conjugations |
 | Geminate (Ayin-Doubled) | `geminate` | הִלֵּל, חִלֵּל, קִלֵּל | R2 = R3; Piel dagesh in R2 serves double duty (Piel + geminate); forms closely parallel strong Piel | All conjugations |
 
-> **Key principle:** The Piel Dagesh Forte in R2 is present in every weak class where R2 can accept
-> a dagesh. When R2 is a guttural or ר (which reject dagesh forte), compensatory lengthening occurs
-> in the vowel before R2. In all other weak classes, the dagesh in R2 stays; what changes is
-> what surrounds it.
+★ = The only class BBH identifies as exhibiting *major* spelling changes in the Piel.
+
+> **Key principle:** In every Piel weak class, the Dagesh Forte in R2 either (a) remains unchanged, or (b) is refused by a guttural R2, triggering compensatory lengthening of the R1 vowel. The II-Guttural class is unique because *both* the compensatory lengthening *and* the guttural's a-class preference operate together.
 
 ---
 
-## 2. I-guttural (Pe-Guttural) Verbs
+## 2. II-Guttural (Ayin-Guttural) Verbs
+
+### Pattern
+
+The Piel is defined by Dagesh Forte in R2. When **R2 is a guttural** (א, ה, ח, ע), it refuses that dagesh. Three changes result:
+
+1. **No Dagesh in R2** — the guttural cannot double
+2. **Compensatory lengthening** — without the dagesh, the syllable that R2 was closing reopens; the short vowel under R1 lengthens to compensate:
+   - Perfect: Short Hireq [ִ] → Long Tsere [ֵ]
+   - Imperfect / Imperative / Participle: Short Patach [ַ] → Long Qamets [ָ]
+3. **A-class preference at R2** — the guttural takes Patach [ַ] rather than the Tsere [ֵ] of the strong Piel; before vowel suffixes it takes Hateph-Patach [ֲ] instead of simple shewa
+
+These three changes together make II-Guttural the most visually distinct Piel weak class.
+
+**Model root: בּאר** (bet–aleph–resh) — "to explain, expound"
+- The aleph at R2 is the most consistent dagesh-refuser (never takes dagesh forte in any context)
+- Piel perfect 3ms **בֵּאַר** is directly attested: "Moses undertook to expound this Torah" (Deut 1:5)
+
+**Diagnostic markers:**
+- **Perfect 3ms:** בֵּאַר — Tsere under R1 (ב) distinguishes from strong Hireq; no dagesh in R2; Patach under R2 (aleph)
+- **Imperfect 3ms:** יְבָאַר — Qamets under R1 distinguishes from strong Patach; no dagesh in R2; Patach under R2
+- **Imperative 2ms:** בָּאַר — same shape as Inf. Construct; Qamets under R1
+- **Participle ms:** מְבָאַר — מְ prefix; Qamets under R1; Patach under R2
+
+### Paradigm Summary (3ms per conjugation)
+
+| Conjugation | Strong (דבר) | II-Guttural (בּאר — explain) | Change from strong |
+|---|---|---|---|
+| [Perfect (Qatal)](piel-weak-paradigms.md#ayin-guttural-perfect) | דִּבֵּר | בֵּאַר | R1 hireq → tsere; R2: no dagesh, patach |
+| [Imperfect (Yiqtol)](piel-weak-paradigms.md#ayin-guttural-imperfect) | יְדַבֵּר | יְבָאַר | R1 patach → qamets; R2: no dagesh, patach |
+| [Wayyiqtol](piel-weak-paradigms.md#ayin-guttural-wayyiqtol) | וַיְדַבֵּר | וַיְבָאַר | Same compensatory pattern |
+| [Weqatal](piel-weak-paradigms.md#ayin-guttural-weqatal) | וְדִבֵּר | וְבֵאַר | waw + perfect form |
+| [Imperative](piel-weak-paradigms.md#ayin-guttural-imperative) | דַּבֵּר | בָּאַר | R1 patach → qamets; R2: no dagesh, patach |
+| [Inf. Construct](piel-weak-paradigms.md#ayin-guttural-inf-construct) | דַּבֵּר | בָּאַר | Same shape as Imp 2ms |
+| [Inf. Absolute](piel-weak-paradigms.md#ayin-guttural-inf-absolute) | דַּבֵּר | בָּאַר | Same shape as Inf. Construct |
+| [Participle](piel-weak-paradigms.md#ayin-guttural-participle) | מְדַבֵּר | מְבָאַר | מְ prefix; R1 qamets; R2 patach |
+
+### Key Corpus Examples
+
+- בֵּאַר (Deut 1:5) — "he expounded / began to explain" — perfect 3ms Piel; R2=א, tsere under ב (R1), patach under א (R2), no dagesh
+- מְבֹאָר (Deut 27:8) — "very clearly (written)" — Pual participle of בּאר (note Pual vowel pattern with holem)
+
+---
+
+## 3. I-guttural (Pe-Guttural) Verbs
 
 ### Pattern
 
@@ -69,7 +115,7 @@ The most important I-guttural Piel root is עָנָה → עִנָּה ("to affl
 
 ---
 
-## 3. III-ח/ע (Lamed-Guttural) Verbs
+## 4. III-ח/ע (Lamed-Guttural) Verbs
 
 ### Pattern
 
@@ -108,7 +154,7 @@ The Piel Dagesh Forte in R2 is completely unaffected by a III-guttural final rad
 
 ---
 
-## 4. III-א (Lamed-Aleph) Verbs
+## 5. III-א (Lamed-Aleph) Verbs
 
 ### Pattern
 
@@ -143,7 +189,7 @@ The final א of these roots quiesces (becomes silent) in word-final position. Be
 
 ---
 
-## 5. III-ה (Lamed-He) Verbs
+## 6. III-ה (Lamed-He) Verbs
 
 ### Pattern
 
@@ -181,7 +227,7 @@ III-ה roots are among the most common weak roots in the OT. The final ה is a v
 
 ---
 
-## 6. I-נ (Pe-Nun) Verbs
+## 7. I-נ (Pe-Nun) Verbs
 
 ### Pattern
 
@@ -223,7 +269,7 @@ The most important I-נ Piel roots are:
 
 ---
 
-## 7. I-י (Pe-Yod) Verbs
+## 8. I-י (Pe-Yod) Verbs
 
 ### Pattern
 
@@ -262,7 +308,7 @@ The key I-י Piel roots:
 
 ---
 
-## 8. Biconsonantal (II-ו/י) Verbs
+## 9. Biconsonantal (II-ו/י) Verbs
 
 ### Pattern
 
@@ -302,7 +348,7 @@ The diagnostic for this class:
 
 ---
 
-## 9. Geminate (Ayin-Doubled, II=III) Verbs
+## 10. Geminate (Ayin-Doubled, II=III) Verbs
 
 ### Pattern
 
@@ -342,7 +388,7 @@ Geminate roots (R2 = R3) are among the most natural Piel roots because the Piel'
 
 ---
 
-## 10. High-Frequency Weak Piel Lemmas
+## 11. High-Frequency Weak Piel Lemmas
 
 The following weak-root Piel verbs are among the most common in the OT. All carry the Piel Dagesh Forte in R2 as their diagnostic marker, modified by the phonological behavior of the weak radical.
 
