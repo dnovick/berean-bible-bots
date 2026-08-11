@@ -14,13 +14,13 @@ Below are 20 Piel verb forms, all from weak roots. Each item gives you the Hebre
 |---|---|---|
 | **I** | Intensive | Intensified form of the Qal action — more forceful, thorough, or repeated |
 | **F** | Factitive | Causes an object to enter a state (typically from a stative Qal root) |
-| **D** | Declarative | Declares or treats something as being in a state |
+| **It** | Iterative | Repeated or ongoing action — done again and again (הָלַךְ → הִלֵּךְ, to pace; צָעַק → צֵעֵק, to keep crying) |
 | **DN** | Denominative | Derived from a noun; performs the noun's characteristic action |
 | **SA** | Simple Action | No productive Qal; Piel is the primary form of the root |
 
-> **Tip:** Ask: *Does the Qal root describe a state (be X)?* + Piel causes entry into that state → **Factitive**. *Does the Qal root describe an action (do X)?* + Piel does it more intensely → **Intensive**. *Is this a formal pronouncement treating something as X?* → **Declarative**. *Is there no common Qal?* → **Simple Action**. *Is the verb built from a noun?* → **Denominative**.
+> **Tip:** Ask: *Does the subject do the action more forcefully/completely?* → **Intensive**. *Does the subject cause something to become a certain way (from a stative root)?* → **Factitive**. *Does the Piel mark repeated or ongoing action?* → **Iterative** (e.g., הָלַךְ → הִלֵּךְ, to pace). *Is the Piel the standard form with no common Qal equivalent?* → **Simple Action**. *Is the verb built on a noun?* → **Denominative**.
 
-Write your answer (I / F / D / DN / SA) in the blank column.
+Write your answer (I / F / It / DN / SA) in the blank column.
 
 ---
 
