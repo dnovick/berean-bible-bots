@@ -11098,7 +11098,7 @@ class Ch31FunctionSortExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
             'For each Piel form below, classify the semantic function: '
-            'I (Intensive), F (Factitive), D (Declarative), DN (Denominative), SA (Simple Action). '
+            'I (Intensive), F (Factitive), It (Iterative), DN (Denominative), SA (Simple Action). '
             'Each item gives the Hebrew form, conjugation, root, reference, and contextual gloss. '
             'Answer key at the bottom.'
         )
@@ -11124,7 +11124,9 @@ class Ch31FunctionSortExercise(ExercisePDF):
             ['17', 'גִּלָּה',    'Perfect 3ms',   'גלה',  'Amo 3:7',   '"he reveals his secret to his servants"', ''],
             ['18', 'שִׁנָּה',    'Perfect 3ms',   'שׁנה', '—',          '"he changed / altered"',                  ''],
             ['19', 'חִזְּקוּ',   'Perfect 3cp',   'חזק',  '—',         '"they strengthened / encouraged"',        ''],
-            ['20', 'בִּנָּה',    'Perfect 3ms',   'בנה',  '1 Kgs 6:2', '"Solomon built the house"',               ''],
+            ['20', 'בִּנָּה',    'Perfect 3ms',    'בנה',  '1 Kgs 6:2',   '"Solomon built the house"',               ''],
+            ['21', 'מְרַחֶפֶת',  'Participle fs',  'רחף',  'Gen 1:2',    '"hovering over the face of the waters"',  ''],
+            ['22', 'וַיְהַלֵּךְ', 'Wayyiqtol 3ms', 'הלך',  '1 Kgs 21:27','"he walked softly about in mourning"',    ''],
         ]
         ans = [
             ['1',  'בֵּרַךְ',    'Perfect 3ms',   'ברך',  'Gen 1:28',   '"God blessed them"',                      'I'],
@@ -11146,14 +11148,16 @@ class Ch31FunctionSortExercise(ExercisePDF):
             ['17', 'גִּלָּה',    'Perfect 3ms',   'גלה',  'Amo 3:7',    '"he reveals his secret to his servants"', 'I'],
             ['18', 'שִׁנָּה',    'Perfect 3ms',   'שׁנה', '—',           '"he changed / altered"',                  'I'],
             ['19', 'חִזְּקוּ',   'Perfect 3cp',   'חזק',  '—',          '"they strengthened / encouraged"',        'F'],
-            ['20', 'בִּנָּה',    'Perfect 3ms',   'בנה',  '1 Kgs 6:2',  '"Solomon built the house"',               'I'],
+            ['20', 'בִּנָּה',    'Perfect 3ms',    'בנה',  '1 Kgs 6:2',   '"Solomon built the house"',               'I'],
+            ['21', 'מְרַחֶפֶת',  'Participle fs',  'רחף',  'Gen 1:2',     '"hovering over the face of the waters"',  'It'],
+            ['22', 'וַיְהַלֵּךְ', 'Wayyiqtol 3ms', 'הלך',  '1 Kgs 21:27', '"he walked softly about in mourning"',    'It'],
         ]
         self.add_drill_with_answer_key(
             hdrs, rows, ans,
             col_ratios=cr,
             heb_cols=[1, 3],
             answer_heb_cols=[1, 3],
-            section_title='Piel Semantic Function Sort — 20 Weak-Root Forms',
+            section_title='Piel Semantic Function Sort — 22 Weak-Root Forms',
             answer_title='Answer Key',
         )
 

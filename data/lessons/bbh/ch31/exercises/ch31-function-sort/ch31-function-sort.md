@@ -48,6 +48,8 @@ Write your answer (I / F / It / DN / SA) in the blank column.
 | 18 | שִׁנָּה | Perfect 3ms | שׁנה | — | "he changed / altered" | |
 | 19 | חִזְּקוּ | Perfect 3cp | חזק | — | "they strengthened / encouraged" | |
 | 20 | בִּנָּה | Perfect 3ms | בנה | 1 Kgs 6:2 | "Solomon built the house" | |
+| 21 | מְרַחֶפֶת | Participle fs | רחף | Gen 1:2 | "hovering over the face of the waters" | |
+| 22 | וַיְהַלֵּךְ | Wayyiqtol 3ms | הלך | 1 Kgs 21:27 | "he walked softly about in mourning" | |
 
 ---
 
@@ -75,6 +77,8 @@ Write your answer (I / F / It / DN / SA) in the blank column.
 | 18 | שִׁנָּה | שׁנה | **I** | Qal = change/repeat; Piel = alter thoroughly, change completely. III-ה root; dagesh in נ. |
 | 19 | חִזְּקוּ | חזק | **F** | Qal = stative "be strong"; Piel 3cp = they caused [others] to be strong = they strengthened/encouraged. Same analysis as #3. |
 | 20 | בִּנָּה | בנה | **I** | Qal = build; Piel = build thoroughly, construct comprehensively. III-ה root; dagesh in נ. |
+| 21 | מְרַחֶפֶת | רחף | **It** | Qal רחף = "to hover/flutter" (occurs only here). Piel = to flutter repeatedly over a surface — sustained, back-and-forth motion. The Spirit of God hovering over the waters is ongoing, iterative movement. II-Guttural root: ח cannot take dagesh forte → virtual doubling (compensatory lengthening in preceding vowel). |
+| 22 | וַיְהַלֵּךְ | הלך | **It** | Qal הָלַךְ = "to walk" (single journey); Piel הִלֵּךְ = "to walk about, pace" — repeated back-and-forth motion. BBH's own textbook example for Iterative Piel. Ahab pacing in sackcloth (1 Kgs 21:27) = iterative, ongoing walking. I-He weak root; the ה of the root elides in Piel forms. |
 
 ---
 
@@ -84,6 +88,7 @@ Write your answer (I / F / It / DN / SA) in the blank column.
 |---|---|---|
 | Intensive (I) | 1, 2, 6, 7, 9, 17, 18, 20 | 8 |
 | Factitive (F) | 3, 11, 13, 19 | 4 |
+| Iterative (It) | 21, 22 | 2 |
 | Simple Action (SA) | 5, 8, 10, 15, 16 | 5 |
 | Denominative (DN) | 14 | 1 |
 | I or F (dual) | 4, 12 | 2 |
