@@ -95,10 +95,20 @@ def write_index(rows: list[dict]) -> None:
 
 
 def write_readme(rows: list[dict]) -> None:
+    """Write the top-level README with per-book sections embedding each diagram."""
     if not rows:
         return
     books_seen = sorted({r['book'] for r in rows})
     readme = OUTPUT_ROOT / 'README.md'
+
+    # Group rows by book, then sort by chapter/verse within each book
+    from collections import defaultdict
+    by_book: dict[str, list[dict]] = defaultdict(list)
+    for r in rows:
+        by_book[r['book']].append(r)
+    for b in by_book:
+        by_book[b].sort(key=lambda r: (r['chapter'], r['verse']))
+
     lines = [
         '# Cantillation Diagrams',
         '',
@@ -106,22 +116,43 @@ def write_readme(rows: list[dict]) -> None:
         'following J.D. Price, *The Syntax of Masoretic Accents in the Hebrew Bible*',
         '(Temple Baptist Seminary, 2nd ed., 1990/2010).',
         '',
+        'Each diagram shows the verse\'s accent hierarchy rooted at **SOP** (Soph Pasuq).',
+        'Words are displayed in right-to-left order matching Hebrew. Accent labels use',
+        'Price\'s H1–H5 abbreviations; color coding: red=H1, orange=H2, amber=H3,',
+        'green=H4, blue=H5, grey=conjunctive.',
+        '',
         '## Contents',
         '',
-        '| Book | Verses |',
-        '|---|---|',
     ]
     for b in books_seen:
-        n = sum(1 for r in rows if r['book'] == b)
-        lines.append(f'| {b} | {n} |')
+        n = len(by_book[b])
+        lines.append(f'- [{b}](#{b.lower()}) — {n} verse(s)')
+    lines.append('')
+
+    for b in books_seen:
+        lines += [f'## {b}', '']
+        for r in by_book[b]:
+            ch, vs = r['chapter'], r['verse']
+            png_rel = f'{b}/{b}_{ch:02d}_{vs:02d}.png'
+            lines += [
+                f'### {b} {ch}:{vs}',
+                '',
+                f'![{b} {ch}:{vs} cantillation diagram]({png_rel})',
+                '',
+            ]
+
     lines += [
-        '',
-        '## File naming',
-        '`<Book>_<CC>_<VV>.png` — e.g. `Gen_01_01.png` = Genesis 1:1',
+        '---',
         '',
         '## Build',
+        '',
         '```bash',
+        '# One verse:',
+        'python scripts/build_cantillation_diagram.py Gen 1 1',
+        '# A chapter:',
         'python scripts/build_cantillation_diagram.py Gen 1',
+        '# A whole book:',
+        'python scripts/build_cantillation_diagram.py Gen',
         '```',
         '',
         'See `index.csv` for a machine-readable inventory of all generated files.',
