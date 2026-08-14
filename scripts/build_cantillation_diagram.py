@@ -28,14 +28,19 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.bible_grammar.ot.cantillation import (  # noqa: E402
-    PROSE_BOOKS, parse_verse, render_verse,
+    PROSE_BOOKS, AccentNode, parse_verse, render_verse,
 )
 from src.bible_grammar.core.syntax_ot import query_syntax_ot  # noqa: E402
 
-OUTPUT_ROOT = Path('reports/ot/cantillation')
+OUTPUT_ROOT = Path('output/reports/ot/cantillation')
 
 
-def _verse_refs(book: str, chapter: int | None, verse: int | None):
+from typing import Generator, Tuple  # noqa: E402
+
+
+def _verse_refs(
+    book: str, chapter: int | None, verse: int | None
+) -> Generator[Tuple[str, int, int], None, None]:
     """Yield (book, chapter, verse) tuples for the requested scope."""
     df = query_syntax_ot(book=book, chapter=chapter, verse=verse)
     if df.empty:
@@ -62,7 +67,7 @@ def build_one(book: str, chapter: int, verse: int) -> dict:
         tree = parse_verse(book, chapter, verse)
         render_verse(book, chapter, verse, output_path=out)
 
-        def _count(n, acc=0):
+        def _count(n: 'AccentNode', acc: int = 0) -> int:
             return acc + 1 + sum(_count(c) for c in n.children)
         node_count = _count(tree)
         word_count = sum(1 for _ in _collect_words_flat(tree))
@@ -76,7 +81,7 @@ def build_one(book: str, chapter: int, verse: int) -> dict:
         return {}
 
 
-def _collect_words_flat(node):
+def _collect_words_flat(node: AccentNode) -> Generator:
     yield from node.words
     for child in node.children:
         yield from _collect_words_flat(child)
