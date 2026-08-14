@@ -144,14 +144,3 @@ In Modern Hebrew, the three begadkephat consonants ג, ד, and ת without Daghes
 ### The Hebrew Acrostic (§1.11)
 
 Knowledge of the Hebrew alphabet unlocks the **acrostic psalms** — poems in which consecutive units begin with successive letters of the alphabet. Examples include Pss 9–10; 25; 34; 37; 111; 112; 119; 145, and the book of Lamentations. Psalm 119 is the most elaborate: twenty-two sections of eight verses each, with every verse in each section beginning with the same Hebrew letter.
-
----
-
-## Exercises
-
-| Exercise | Description |
-|---|---|
-| [Letter Recognition](exercises/ch1-letter-recognition/) | Identify all 23 base letters and 5 final forms |
-| [Confusable Pairs](exercises/ch1-confusable-pairs/) | Distinguish visually similar letter pairs |
-| [Final Forms](exercises/ch1-sofit-forms/) | Identify and match final forms to their base letters |
-| [Begadkephat](exercises/ch1-begadkephat/) | Hard vs. soft pronunciation with and without Daghesh Lene |

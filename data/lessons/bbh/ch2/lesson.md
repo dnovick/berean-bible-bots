@@ -161,34 +161,6 @@ The **Daghesh Forte** looks identical to the Daghesh Lene (introduced in ch1) bu
 
 ---
 
-## Vocabulary (§2.17)
-
-| Hebrew | Definition | Freq. |
-|---|---|---|
-| אַבְרָהָם | Abraham | 175 |
-| אַהֲרֹן | Aaron | 347 |
-| דָּוִד | David | 1,075 |
-| יְהוּדָה | Judah | 820 |
-| יהוה | Yahweh, the LORD | 6,828 |
-| יְהוֹשׁוּעַ | Joshua | 218 |
-| יוֹסֵף | Joseph | 213 |
-| יַעֲקֹב | Jacob | 349 |
-| יִצְחָק | Isaac | 108 |
-| יְרוּשָׁלַםִ | Jerusalem; יְרוּשָׁלַ֫יִם (alternate form) | 643 |
-| יִרְמְיָהוּ | Jeremiah; also spelled יִרְמְיָה | 147 |
-| יִשְׂרָאֵל | Israel | 2,507 |
-| כְּנַעַן | Canaan | 93 |
-| מִצְרַ֫יִם | Egypt | 682 |
-| מֹשֶׁה | Moses | 766 |
-| עֵשָׂו | Esau | 99 |
-| פַּרְעֹה | Pharaoh | 274 |
-| צִיּוֹן | Zion | 154 |
-| שָׁאוּל | Saul | 406 |
-| שְׁלֹמֹה | Solomon | 293 |
-| שְׁמוּאֵל | Samuel | 140 |
-
----
-
 ## Additional Information
 
 ### Alternative Vowel Classification (§2.18)
@@ -198,11 +170,3 @@ Some grammarians divide Hebrew vowels into three classes (a, i, u) rather than f
 ### The Spelling of the Divine Name (§2.19)
 
 The divine name יהוה (the tetragrammaton, "four letters") is the most frequent proper noun in the Hebrew Bible (6,828×). Jewish tradition substitutes אֲדֹנָי (*Adonai*, "Lord") when reading aloud, and so the vowels of אֲדֹנָי were applied to יהוה, producing יְהוָה. When אֲדֹנָי already appears alongside יהוה in a text, the vowels of אֱלֹהִים are used instead, producing יְהוִה — to avoid the repetition *Adonai Adonai*. The tetragrammaton is discussed further in §§24.18, 25.15, 26.17, and 27.19.
-
----
-
-## Exercises
-
-| Exercise | Description |
-|---|---|
-| [Vowel Identification](exercises/ch2-vowel-identification/) | Identify vowel name, class, and type for vowels in context |
