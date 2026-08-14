@@ -471,6 +471,8 @@ nav:
     - OT Divine Names & Roles Reports:
       - Overview: reports/ot/names/index.md
       - 'Syntactic Role Analysis: YHWH/Elohim [OT]': reports/ot/names/role-yhwh-elohim-ot.md
+    - OT Syntax & Accentuation:
+      - Cantillation Diagrams (Price's Hierarchy): reports/ot/cantillation/README.md
     - OT Book Surveys (Language Profiles):
       - Overview: reports/ot/survey/index.md
       - Psalm 119 — Word Vocabulary and Thematic Analysis:
