@@ -48,6 +48,16 @@ Detailed studies of individual Hebrew words — distribution, meaning, and cross
 
 ---
 
+## Accent Syntax (Cantillation)
+
+Hierarchical accent-structure diagrams following J.D. Price's *The Syntax of Masoretic Accents in the Hebrew Bible*.
+
+| Report | Description |
+|---|---|
+| [Cantillation Diagrams](cantillation/README.md) | Genesis 1 — verse-by-verse accent hierarchy (Price's H1–H5 system) |
+
+---
+
 ## Book Surveys (Language Profiles)
 
 Each profile covers the grammatical makeup of an OT book — verb stems, noun distribution, vocabulary statistics.
