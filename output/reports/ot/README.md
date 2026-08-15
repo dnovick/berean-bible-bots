@@ -50,11 +50,11 @@ Detailed studies of individual Hebrew words — distribution, meaning, and cross
 
 ## Accent Syntax (Cantillation)
 
-Hierarchical accent-structure diagrams following J.D. Price's *The Syntax of Masoretic Accents in the Hebrew Bible*.
+Bracket/staircase accent-structure diagrams following Sung Jin Park, *The Fundamentals of Hebrew Accents: Divisions and Exegetical Roles Beyond Syntax* (2023). Each verse is shown as domain panels with depth labels D0/D1f/D1/D2f/D2/C in natural Hebrew RTL order.
 
 | Report | Description |
 |---|---|
-| [Cantillation Diagrams](cantillation/README.md) | Genesis 1 — verse-by-verse accent hierarchy (Price's H1–H5 system) |
+| [Cantillation Diagrams](cantillation/README.md) | Genesis — verse-by-verse accent structure (Park bracket/staircase format) |
 
 ---
 

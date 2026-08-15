@@ -89,88 +89,168 @@ def _collect_words_flat(node: AccentNode) -> Generator:
         yield from _collect_words_flat(child)
 
 
+_BOOK_NAMES: dict[str, str] = {
+    'Gen': 'Genesis',     'Exo': 'Exodus',        'Lev': 'Leviticus',
+    'Num': 'Numbers',     'Deu': 'Deuteronomy',   'Jos': 'Joshua',
+    'Jdg': 'Judges',      'Rut': 'Ruth',          '1Sa': '1 Samuel',
+    '2Sa': '2 Samuel',    '1Ki': '1 Kings',        '2Ki': '2 Kings',
+    '1Ch': '1 Chronicles', '2Ch': '2 Chronicles', 'Ezr': 'Ezra',
+    'Neh': 'Nehemiah',    'Est': 'Esther',         'Isa': 'Isaiah',
+    'Jer': 'Jeremiah',    'Lam': 'Lamentations',   'Eze': 'Ezekiel',
+    'Dan': 'Daniel',      'Hos': 'Hosea',           'Joe': 'Joel',
+    'Amo': 'Amos',        'Oba': 'Obadiah',         'Jon': 'Jonah',
+    'Mic': 'Micah',       'Nah': 'Nahum',           'Hab': 'Habakkuk',
+    'Zep': 'Zephaniah',   'Hag': 'Haggai',          'Zec': 'Zechariah',
+    'Mal': 'Malachi',     'Sng': 'Song of Solomon', 'Ecc': 'Ecclesiastes',
+}
+
+
 def write_index(rows: list[dict]) -> None:
+    """Write/update the CSV index, merging with any previously built rows."""
     if not rows:
         return
     index_path = OUTPUT_ROOT / 'index.csv'
     fieldnames = ['book', 'chapter', 'verse', 'png', 'nodes', 'words']
+
+    existing: dict[tuple[str, int, int], dict] = {}
+    if index_path.exists():
+        with open(index_path, newline='', encoding='utf-8') as fh:
+            for r in csv.DictReader(fh):
+                key = (r['book'], int(r['chapter']), int(r['verse']))
+                existing[key] = r
+    for r in rows:
+        key = (r['book'], int(r['chapter']), int(r['verse']))
+        existing[key] = r  # overwrite stale entry with fresh data
+
+    all_rows = sorted(
+        existing.values(),
+        key=lambda r: (r['book'], int(r['chapter']), int(r['verse'])),
+    )
     with open(index_path, 'w', newline='', encoding='utf-8') as fh:
         writer = csv.DictWriter(fh, fieldnames=fieldnames)
         writer.writeheader()
-        writer.writerows(rows)
+        writer.writerows(all_rows)
     print(f'\nIndex written → {index_path}')
 
 
-def write_readme(rows: list[dict]) -> None:
-    """Write the top-level README with per-book sections embedding each diagram."""
-    if not rows:
-        return
-    books_seen = sorted({r['book'] for r in rows})
-    readme = OUTPUT_ROOT / 'README.md'
+_PARK_BLURB = """\
+Bracket/staircase accent-structure diagrams generated from the MACULA Hebrew WLC text,
+following Sung Jin Park, *The Fundamentals of Hebrew Accents: Divisions and Exegetical
+Roles Beyond Syntax* (2023).
 
-    # Group rows by book, then sort by chapter/verse within each book
+Each verse is split into major domain panels (**a** = Athnach half, **b** = Silluq
+half). Hebrew words appear in natural RTL order: the governing accent (D0) is leftmost;
+earlier verse words extend rightward. Bracket lines step down as a staircase — D0 at
+the top-left, progressively deeper domains lower and further right. D1f (near/final
+branch) labels are shown in gray; accent names appear in italics below each word.
+
+**Depth labels:** D0 = panel governor · D1f = near branch before D0 · D1 = far branch
+· D2f/D2 = next level · C = conjunctive"""
+
+
+def _write_md(path: Path, lines: list[str]) -> None:
+    path.write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    print(f'  wrote → {path}')
+
+
+def write_top_readme(all_rows: list[dict]) -> None:
+    """Write cantillation/README.md — index of all books."""
     from collections import defaultdict
     by_book: dict[str, list[dict]] = defaultdict(list)
-    for r in rows:
+    for r in all_rows:
         by_book[r['book']].append(r)
-    for b in by_book:
-        by_book[b].sort(key=lambda r: (r['chapter'], r['verse']))
 
-    lines = [
+    lines: list[str] = [
         '# Cantillation Diagrams',
         '',
-        'Bracket/staircase accent-structure diagrams generated from the MACULA WLC text,',
-        'following Sung Jin Park, *The Fundamentals of Hebrew Accents: Divisions and',
-        'Exegetical Roles Beyond Syntax* (2023).',
+        _PARK_BLURB,
         '',
-        'Each diagram renders one panel per major accent domain (Athnach half = **a**,',
-        'Silluq half = **b**). Hebrew words appear in natural RTL order: the governing',
-        'accent (D0) is leftmost; earlier verse words extend rightward. Bracket lines',
-        'step down like a staircase — D0 at the top-left, progressively deeper domains',
-        'lower and further right. D1f labels (near/final branch) are shown in gray.',
-        'Accent names appear in italics below each governing word.',
+        '## Books',
         '',
-        '**Depth labels:** D0 = panel governor; D1f = final (near) branch before D0;',
-        'D1 = far branch of D0\'s domain; D2f/D2 = next level; C = conjunctive.',
-        '',
-        '## Contents',
-        '',
+        '| Book | Chapters | Verses |',
+        '|---|---|---|',
     ]
-    for b in books_seen:
-        n = len(by_book[b])
-        lines.append(f'- [{b}](#{b.lower()}) — {n} verse(s)')
+    for book in sorted(by_book):
+        book_rows = by_book[book]
+        chapters = sorted({int(r['chapter']) for r in book_rows})
+        name = _BOOK_NAMES.get(book, book)
+        lines.append(
+            f'| [{name}]({book}/index.md) | {len(chapters)} | {len(book_rows)} |'
+        )
+    lines += ['', '---', '', '## Build', '',
+              '```bash',
+              'python scripts/build_cantillation_diagram.py Gen 1',
+              '```', '',
+              'See `index.csv` for a full inventory of generated files.']
+    _write_md(OUTPUT_ROOT / 'README.md', lines)
+
+
+def write_book_readme(book: str, book_rows: list[dict], book_dir: Path) -> None:
+    """Write cantillation/<book>/README.md — chapter index for one book."""
+    from collections import defaultdict
+    by_chapter: dict[int, list[dict]] = defaultdict(list)
+    for r in book_rows:
+        by_chapter[int(r['chapter'])].append(r)
+
+    name = _BOOK_NAMES.get(book, book)
+    lines: list[str] = [
+        f'# {name} — Cantillation Diagrams',
+        '',
+        f'Accent-structure diagrams for {name}, one page per chapter.',
+        '',
+        '| Chapter | Verses |',
+        '|---|---|',
+    ]
+    for ch in sorted(by_chapter):
+        n = len(by_chapter[ch])
+        lines.append(f'| [Chapter {ch}](ch{ch:02d}.md) | {n} |')
     lines.append('')
+    _write_md(book_dir / 'README.md', lines)
 
-    for b in books_seen:
-        lines += [f'## {b}', '']
-        for r in by_book[b]:
-            ch, vs = r['chapter'], r['verse']
-            png_rel = f'{b}/{b}_{ch:02d}_{vs:02d}.png'
-            lines += [
-                f'### {b} {ch}:{vs}',
-                '',
-                f'![{b} {ch}:{vs} cantillation diagram]({png_rel})',
-                '',
-            ]
 
-    lines += [
-        '---',
-        '',
-        '## Build',
-        '',
-        '```bash',
-        '# One verse:',
-        'python scripts/build_cantillation_diagram.py Gen 1 1',
-        '# A chapter:',
-        'python scripts/build_cantillation_diagram.py Gen 1',
-        '# A whole book:',
-        'python scripts/build_cantillation_diagram.py Gen',
-        '```',
-        '',
-        'See `index.csv` for a machine-readable inventory of all generated files.',
-    ]
-    readme.write_text('\n'.join(lines) + '\n', encoding='utf-8')
-    print(f'README  written → {readme}')
+def write_chapter_page(
+    book: str, chapter: int, ch_rows: list[dict], book_dir: Path,
+) -> None:
+    """Write cantillation/<book>/ch<N>.md — one page of verse diagrams."""
+    name = _BOOK_NAMES.get(book, book)
+    lines: list[str] = [f'# {name} {chapter} — Cantillation', '']
+    for r in sorted(ch_rows, key=lambda r: int(r['verse'])):
+        vs = int(r['verse'])
+        png = f"{book}_{chapter:02d}_{vs:02d}.png"
+        lines += [
+            f'### {name} {chapter}:{vs}',
+            '',
+            f'![{name} {chapter}:{vs} cantillation]({png})',
+            '',
+        ]
+    _write_md(book_dir / f'ch{chapter:02d}.md', lines)
+
+
+def write_pages(rows: list[dict]) -> None:
+    """Write top, book, and chapter pages using the full merged index."""
+    index_path = OUTPUT_ROOT / 'index.csv'
+    if not index_path.exists():
+        return
+    with open(index_path, newline='', encoding='utf-8') as fh:
+        all_rows = list(csv.DictReader(fh))
+    if not all_rows:
+        return
+
+    from collections import defaultdict
+    by_book: dict[str, list[dict]] = defaultdict(list)
+    for r in all_rows:
+        by_book[r['book']].append(r)
+
+    print('\nWriting site pages …')
+    write_top_readme(all_rows)
+    for book, book_rows in sorted(by_book.items()):
+        book_dir = OUTPUT_ROOT / book
+        write_book_readme(book, book_rows, book_dir)
+        by_chapter: dict[int, list[dict]] = defaultdict(list)
+        for r in book_rows:
+            by_chapter[int(r['chapter'])].append(r)
+        for ch, ch_rows in sorted(by_chapter.items()):
+            write_chapter_page(book, ch, ch_rows, book_dir)
 
 
 def main() -> None:
@@ -222,7 +302,7 @@ def main() -> None:
                 rows.append(row)
 
     write_index(rows)
-    write_readme(rows)
+    write_pages(rows)
     print(f'\nDone. {len(rows)} diagram(s) written to {OUTPUT_ROOT}/')
 
 
