@@ -683,7 +683,7 @@ def render_verse_park(
         return Path(output_path)
 
     # ── Layout constants ────────────────────────────────────────────────────
-    COL_W: float = 2.2       # x-units per word column
+    COL_W: float = 1.6       # x-units per word column
     BRACKET_H: float = 0.5   # y-units per bracket depth step (0 = deepest)
     WORD_Y: float = -0.15    # Hebrew word text centre y
     PLABEL_Y: float = -0.62  # Park label top y  (below word)
@@ -746,11 +746,6 @@ def render_verse_park(
                 word_park_label[gov.position] = plabel
             for w in node.words[:-1]:   # conjunctives before governor
                 word_park_label[w.position] = 'C'
-
-        # ── Vertical column separators ──────────────────────────────────────
-        for c in range(n_cols + 1):
-            ax.plot([c * COL_W, c * COL_W], [BOT_Y, 0.0],
-                    color='#cccccc', lw=0.5, zorder=0)
 
         # ── Hebrew words + labels ───────────────────────────────────────────
         for w in all_words:
