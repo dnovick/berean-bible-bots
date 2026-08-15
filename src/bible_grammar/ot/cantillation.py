@@ -684,7 +684,7 @@ def render_verse_park(
 
     # ── Layout constants ────────────────────────────────────────────────────
     COL_W: float = 2.2       # x-units per word column
-    BRACKET_H: float = 0.85  # y-units per bracket depth step (0 = deepest)
+    BRACKET_H: float = 0.5   # y-units per bracket depth step (0 = deepest)
     WORD_Y: float = -0.15    # Hebrew word text centre y
     PLABEL_Y: float = -0.62  # Park label top y  (below word)
     ACCENT_Y: float = -0.98  # accent name top y (italic, below Park label)
@@ -698,16 +698,21 @@ def render_verse_park(
         sorted(_collect_words(p), key=lambda w: -w.position)
         for p in panels
     ]
-    overall_max_depth = max(len(c) for c in chains)
     max_cols = max(len(wl) for wl in all_words_per_panel)
-
-    bracket_top: float = overall_max_depth * BRACKET_H
-    panel_h: float = bracket_top - BOT_Y + 0.4
     n_panels = len(panels)
-    fig_w = max(10.0, LEFT_MARGIN + max_cols * COL_W + 0.6)
-    fig_h = max(4.0, n_panels * panel_h + 1.0)
 
+    # Per-panel bracket top: sized to each panel's own depth, not the global max
+    panel_bracket_tops = [len(c) * BRACKET_H for c in chains]
+    panel_heights = [bt - BOT_Y + 0.4 for bt in panel_bracket_tops]
+
+    fig_w = max(10.0, LEFT_MARGIN + max_cols * COL_W + 0.6)
+    fig_h = max(4.0, sum(panel_heights) + 1.0)
+
+    import matplotlib.gridspec as gridspec
     fig = plt.figure(figsize=(fig_w, fig_h))
+    gs = gridspec.GridSpec(n_panels, 1, figure=fig,
+                           height_ratios=panel_heights, hspace=0.45)
+
     ref_str = f'{book} {chapter}:{verse}'
     fig.suptitle(
         get_display(f'Cantillation (Park): {ref_str}'),
@@ -719,8 +724,9 @@ def render_verse_park(
         all_words = all_words_per_panel[p_idx]
         pname = panel_names[p_idx]
         n_cols = len(all_words)
+        bracket_top = panel_bracket_tops[p_idx]
 
-        ax = fig.add_subplot(n_panels, 1, p_idx + 1)
+        ax = fig.add_subplot(gs[p_idx])
         ax.set_xlim(-LEFT_MARGIN, n_cols * COL_W + 0.5)
         ax.set_ylim(BOT_Y - 0.1, bracket_top + 0.4)
         ax.axis('off')
