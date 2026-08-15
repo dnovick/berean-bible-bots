@@ -1,13 +1,18 @@
 # Cantillation Diagrams
 
-Hierarchical accent structure diagrams generated from the MACULA WLC text,
-following J.D. Price, *The Syntax of Masoretic Accents in the Hebrew Bible*
-(Temple Baptist Seminary, 2nd ed., 1990/2010).
+Bracket/staircase accent-structure diagrams generated from the MACULA WLC text,
+following Sung Jin Park, *The Fundamentals of Hebrew Accents: Divisions and
+Exegetical Roles Beyond Syntax* (2023).
 
-Each diagram shows the verse's accent hierarchy rooted at **SOP** (Soph Pasuq).
-Words are displayed in right-to-left order matching Hebrew. Accent labels use
-Price's H1–H5 abbreviations; color coding: red=H1, orange=H2, amber=H3,
-green=H4, blue=H5, grey=conjunctive.
+Each diagram renders one panel per major accent domain (Athnach half = **a**,
+Silluq half = **b**). Hebrew words appear in natural RTL order: the governing
+accent (D0) is leftmost; earlier verse words extend rightward. Bracket lines
+step down like a staircase — D0 at the top-left, progressively deeper domains
+lower and further right. D1f labels (near/final branch) are shown in gray.
+Accent names appear in italics below each governing word.
+
+**Depth labels:** D0 = panel governor; D1f = final (near) branch before D0;
+D1 = far branch of D0's domain; D2f/D2 = next level; C = conjunctive.
 
 ## Contents
 

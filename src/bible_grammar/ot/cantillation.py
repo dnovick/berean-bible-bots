@@ -576,3 +576,241 @@ def render_verse(
         fig.savefig(output_path, dpi=150, bbox_inches='tight')
     plt.close(fig)
     return output_path
+
+
+# ── Park-format renderer ───────────────────────────────────────────────────────
+#
+# Source: Sung Jin Park, "The Fundamentals of Hebrew Accents: Divisions and
+#         Exegetical Roles Beyond Syntax" (2023).
+#
+# Layout: horizontal bracket/staircase (one panel per H2 domain).
+# RTL word order: D0 governor appears LEFTMOST; earlier verse words extend right.
+# Chain mapping (Price → Park depth labels):
+#   chain idx  0  1    2   3    4   5    6   ...
+#   Park label D0 D1f  D1  D2f  D2  D3f  D3
+#   Meaning    governor  near  far  near  far  ...
+#   ("f" = final/near branch at that depth)
+
+_ACCENT_DISPLAY: dict[str, str] = {
+    'ATH': 'Athnach',    'SIL': 'Silluq',      'TIP': 'Tiphcha',
+    'ZAQ': 'Zaqeph',     'GZAQ': 'Gt. Zaqeph', 'SEG': 'Segolta',
+    'SHAL': 'Shalsheleth', 'TEB': 'Tebir',     'PASH': 'Pashta',
+    'YETH': 'Yethib',    'ZAR': 'Zarqa',       'REB': 'Rebia',
+    'GER': 'Geresh',     'GER2': 'Garshaim',   'PAZ': 'Pazer',
+    'GTEL': 'Gt. Telisha', 'GPAZ': 'Gt. Pazer', 'LEG': 'Legarmeh',
+    'MUN': 'Munach',     'MER': 'Mereka',       'MER2': 'Dbl. Mereka',
+    'MAH': 'Mahpak',     'DAR': 'Darga',        'AZL': 'Azla',
+    'LTEL': 'Lt. Telisha', 'GAL': 'Galgal',     'NONE': '',
+}
+
+
+def _park_label(chain_idx: int) -> str:
+    """Park depth-label for Price chain position i.
+
+    i=0→D0, i=1→D1f, i=2→D1, i=3→D2f, i=4→D2, i=5→D3f, i=6→D3, …
+    """
+    if chain_idx == 0:
+        return 'D0'
+    if chain_idx % 2 == 1:
+        return f'D{(chain_idx + 1) // 2}f'
+    return f'D{chain_idx // 2}'
+
+
+def _get_park_chain(
+    panel_node: AccentNode,
+) -> list[tuple[AccentNode, str]]:
+    """Walk Price's right-leaning chain and return [(node, park_label), ...]."""
+    chain: list[tuple[AccentNode, str]] = []
+    current: Optional[AccentNode] = panel_node
+    i = 0
+    while current is not None:
+        chain.append((current, _park_label(i)))
+        current = current.children[0] if current.children else None
+        i += 1
+    return chain
+
+
+def render_verse_park(
+    book: str,
+    chapter: int,
+    verse: int,
+    output_path: Optional[str | Path] = None,
+) -> Path:
+    """Render a Park-format bracket/staircase cantillation diagram as PNG.
+
+    One panel per H2 domain (ATH half = 'a', SIL half = 'b').
+    Governer (D0) appears leftmost; earlier verse words extend rightward (RTL).
+    Bracket lines step down like a staircase: D0 at top-left, deeper domains
+    lower and further right.  D1f labels are grayed (near/final branch role).
+    Accent names shown in italics below each governing word.
+
+    Source: Sung Jin Park, "The Fundamentals of Hebrew Accents" (2023).
+    """
+    import warnings
+    import matplotlib
+    matplotlib.use('Agg')
+    import matplotlib.pyplot as plt
+    import matplotlib.font_manager as _fm
+    from bidi.algorithm import get_display
+
+    _hebrew_fonts = ['Arial Hebrew', 'Raanana', 'New Peninim MT',
+                     'SBL Hebrew', 'Ezra SIL', 'DejaVu Sans']
+    _heb_prop = None
+    for _fn in _hebrew_fonts:
+        try:
+            _heb_prop = _fm.FontProperties(family=_fn)
+            break
+        except Exception:
+            continue
+
+    tree = parse_verse(book, chapter, verse)
+
+    if output_path is None:
+        out_dir = Path('output/reports/ot/cantillation') / book
+        out_dir.mkdir(parents=True, exist_ok=True)
+        output_path = out_dir / f'{book}_{chapter:02d}_{verse:02d}.png'
+    else:
+        output_path = Path(output_path)
+        output_path.parent.mkdir(parents=True, exist_ok=True)
+
+    panels = tree.children
+    if not panels:
+        fig, ax = plt.subplots(figsize=(8, 3))
+        ax.text(0.5, 0.5, f'{book} {chapter}:{verse} — no accent data',
+                ha='center', va='center', transform=ax.transAxes)
+        fig.savefig(Path(output_path), dpi=150, bbox_inches='tight')
+        plt.close(fig)
+        return Path(output_path)
+
+    # ── Layout constants ────────────────────────────────────────────────────
+    COL_W: float = 2.2       # x-units per word column
+    BRACKET_H: float = 0.85  # y-units per bracket depth step (0 = deepest)
+    WORD_Y: float = -0.15    # Hebrew word text centre y
+    PLABEL_Y: float = -0.62  # Park label top y  (below word)
+    ACCENT_Y: float = -0.98  # accent name top y (italic, below Park label)
+    BOT_Y: float = -1.35     # bottom of the word area
+    LEFT_MARGIN: float = 1.8  # x-space left of col 0 for bracket labels
+
+    # ── Collect per-panel data ──────────────────────────────────────────────
+    panel_names = ['a' if p.accent == 'ATH' else 'b' for p in panels]
+    chains = [_get_park_chain(p) for p in panels]
+    all_words_per_panel = [
+        sorted(_collect_words(p), key=lambda w: -w.position)
+        for p in panels
+    ]
+    overall_max_depth = max(len(c) for c in chains)
+    max_cols = max(len(wl) for wl in all_words_per_panel)
+
+    bracket_top: float = overall_max_depth * BRACKET_H
+    panel_h: float = bracket_top - BOT_Y + 0.4
+    n_panels = len(panels)
+    fig_w = max(10.0, LEFT_MARGIN + max_cols * COL_W + 0.6)
+    fig_h = max(4.0, n_panels * panel_h + 1.0)
+
+    fig = plt.figure(figsize=(fig_w, fig_h))
+    ref_str = f'{book} {chapter}:{verse}'
+    fig.suptitle(
+        get_display(f'Cantillation (Park): {ref_str}'),
+        fontsize=13, y=0.99,
+    )
+
+    for p_idx in range(n_panels):
+        chain = chains[p_idx]
+        all_words = all_words_per_panel[p_idx]
+        pname = panel_names[p_idx]
+        n_cols = len(all_words)
+
+        ax = fig.add_subplot(n_panels, 1, p_idx + 1)
+        ax.set_xlim(-LEFT_MARGIN, n_cols * COL_W + 0.5)
+        ax.set_ylim(BOT_Y - 0.1, bracket_top + 0.4)
+        ax.axis('off')
+
+        # Panel half-label (a / b) top-left
+        ax.text(-LEFT_MARGIN + 0.1, bracket_top + 0.3, pname,
+                ha='left', va='top', fontsize=10, style='italic', color='#555')
+
+        # pos → column index (0 = leftmost = latest word in verse)
+        pos_to_col: dict[int, int] = {w.position: i for i, w in enumerate(all_words)}
+
+        # Assign Park label to every word in the panel
+        word_park_label: dict[int, str] = {}
+        for node, plabel in chain:
+            gov = node.governor_word
+            if gov is not None:
+                word_park_label[gov.position] = plabel
+            for w in node.words[:-1]:   # conjunctives before governor
+                word_park_label[w.position] = 'C'
+
+        # ── Vertical column separators ──────────────────────────────────────
+        for c in range(n_cols + 1):
+            ax.plot([c * COL_W, c * COL_W], [BOT_Y, 0.0],
+                    color='#cccccc', lw=0.5, zorder=0)
+
+        # ── Hebrew words + labels ───────────────────────────────────────────
+        for w in all_words:
+            cx: float = pos_to_col[w.position] * COL_W + COL_W / 2
+            heb = _display_text(w.text)
+            txt_kw: dict = dict(ha='center', va='center',
+                                fontsize=11, color='#1a237e')
+            if _heb_prop is not None:
+                txt_kw['fontproperties'] = _heb_prop
+            with warnings.catch_warnings():
+                warnings.simplefilter('ignore')
+                ax.text(cx, WORD_Y, heb, **txt_kw)
+
+            plabel = word_park_label.get(w.position, 'C')
+            is_final = plabel.endswith('f')
+            lbl_col = '#999999' if is_final else '#222222'
+            ax.text(cx, PLABEL_Y, plabel,
+                    ha='center', va='top', fontsize=8, color=lbl_col)
+
+            if w.accent_name in ALL_DISJUNCTIVES or w.is_silluq or w.is_legarmeh:
+                acc = _ACCENT_DISPLAY.get(w.accent_name, w.accent_name)
+                ax.text(cx, ACCENT_Y, acc,
+                        ha='center', va='top', fontsize=7,
+                        style='italic', color='#666666')
+
+        # ── Bracket staircase ───────────────────────────────────────────────
+        for chain_idx, (node, plabel) in enumerate(chain):
+            gov = node.governor_word
+            if gov is None:
+                continue
+
+            bk_y: float = bracket_top - chain_idx * BRACKET_H
+            lx: float = pos_to_col[gov.position] * COL_W   # left edge of governor col
+
+            sub = _collect_words(node)
+            earliest = min(sub, key=lambda w: w.position)
+            rx: float = (pos_to_col[earliest.position] + 1) * COL_W  # right edge
+
+            is_final = plabel.endswith('f')
+            bk_col = '#aaaaaa' if is_final else '#333333'
+            bk_lw: float = 1.0 if is_final else 1.6
+
+            # Horizontal bracket line
+            ax.plot([lx, rx], [bk_y, bk_y],
+                    color=bk_col, lw=bk_lw, solid_capstyle='butt', zorder=3)
+
+            # Left vertical drop from bracket to word area
+            ax.plot([lx, lx], [0.0, bk_y],
+                    color=bk_col, lw=bk_lw * 0.75, zorder=2)
+
+            # Park label to the left of the governor column
+            fw = 'normal' if is_final else 'bold'
+            ax.text(lx - 0.12, bk_y + 0.06, plabel,
+                    ha='right', va='bottom', fontsize=8,
+                    color=bk_col, fontweight=fw)
+
+            # Accent name in italics below the Park label (left side)
+            acc = _ACCENT_DISPLAY.get(gov.accent_name, '')
+            if acc:
+                ax.text(lx - 0.12, bk_y - 0.08, acc,
+                        ha='right', va='top', fontsize=7,
+                        style='italic', color=bk_col)
+
+    with warnings.catch_warnings():
+        warnings.simplefilter('ignore')
+        plt.tight_layout(rect=(0, 0, 1, 0.97))
+        fig.savefig(Path(output_path), dpi=150, bbox_inches='tight')
+    plt.close(fig)
+    return Path(output_path)

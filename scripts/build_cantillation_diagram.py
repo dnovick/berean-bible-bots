@@ -15,8 +15,10 @@ python scripts/build_cantillation_diagram.py Gen
 # Multiple explicit references:
 python scripts/build_cantillation_diagram.py Gen 1 1 Gen 1 2 Exo 20 1
 
-Output is written to reports/ot/cantillation/<book>/<book>_<ch>_<vs>.png
-A CSV index is written to reports/ot/cantillation/index.csv
+Output is written to output/reports/ot/cantillation/<book>/<book>_<ch>_<vs>.png
+A CSV index is written to output/reports/ot/cantillation/index.csv
+
+Diagrams use Park's bracket/staircase format (Sung Jin Park, 2023).
 """
 
 import argparse
@@ -28,7 +30,7 @@ from pathlib import Path
 sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 
 from src.bible_grammar.ot.cantillation import (  # noqa: E402
-    PROSE_BOOKS, AccentNode, parse_verse, render_verse,
+    PROSE_BOOKS, AccentNode, parse_verse, render_verse_park,
 )
 from src.bible_grammar.core.syntax_ot import query_syntax_ot  # noqa: E402
 
@@ -65,7 +67,7 @@ def build_one(book: str, chapter: int, verse: int) -> dict:
     out = OUTPUT_ROOT / book / f'{book}_{chapter:02d}_{verse:02d}.png'
     try:
         tree = parse_verse(book, chapter, verse)
-        render_verse(book, chapter, verse, output_path=out)
+        render_verse_park(book, chapter, verse, output_path=out)
 
         def _count(n: 'AccentNode', acc: int = 0) -> int:
             return acc + 1 + sum(_count(c) for c in n.children)
@@ -117,14 +119,19 @@ def write_readme(rows: list[dict]) -> None:
     lines = [
         '# Cantillation Diagrams',
         '',
-        'Hierarchical accent structure diagrams generated from the MACULA WLC text,',
-        'following J.D. Price, *The Syntax of Masoretic Accents in the Hebrew Bible*',
-        '(Temple Baptist Seminary, 2nd ed., 1990/2010).',
+        'Bracket/staircase accent-structure diagrams generated from the MACULA WLC text,',
+        'following Sung Jin Park, *The Fundamentals of Hebrew Accents: Divisions and',
+        'Exegetical Roles Beyond Syntax* (2023).',
         '',
-        'Each diagram shows the verse\'s accent hierarchy rooted at **SOP** (Soph Pasuq).',
-        'Words are displayed in right-to-left order matching Hebrew. Accent labels use',
-        'Price\'s H1–H5 abbreviations; color coding: red=H1, orange=H2, amber=H3,',
-        'green=H4, blue=H5, grey=conjunctive.',
+        'Each diagram renders one panel per major accent domain (Athnach half = **a**,',
+        'Silluq half = **b**). Hebrew words appear in natural RTL order: the governing',
+        'accent (D0) is leftmost; earlier verse words extend rightward. Bracket lines',
+        'step down like a staircase — D0 at the top-left, progressively deeper domains',
+        'lower and further right. D1f labels (near/final branch) are shown in gray.',
+        'Accent names appear in italics below each governing word.',
+        '',
+        '**Depth labels:** D0 = panel governor; D1f = final (near) branch before D0;',
+        'D1 = far branch of D0\'s domain; D2f/D2 = next level; C = conjunctive.',
         '',
         '## Contents',
         '',
