@@ -3548,6 +3548,71 @@ def build_ch3_syllable_division(out_dir: Optional[str] = None) -> str:
     )
 
 
+def build_ch3_daghesh_shewa(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch3DagheshShewaExercise,
+        'Chapter 3 — Daghesh and Shewa Exercise',
+        'Hebrew Daghesh (Forte/Lene) and Shewa (Silent/Vocal) Identification',
+        ['bbh', 'ch3', 'exercises', 'ch3-daghesh-shewa'],
+        'ch3-daghesh-shewa.pdf',
+        out_dir,
+    )
+
+
+# ---------------------------------------------------------------------------
+
+
+class Ch3DagheshShewaExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each Hebrew word, identify: (1) the Daghesh — Forte or Lene, '
+            'and in which letter; (2) the Shewa — Silent or Vocal, and under '
+            'which letter. Write "none" if not present.'
+        )
+        rows = [
+            ['1', 'בְּרָכָה', '', ''],
+            ['2', 'אִשָּׁה', '', ''],
+            ['3', 'חַטָּאת', '', ''],
+            ['4', 'הַבְּהֵמָה', '', ''],
+            ['5', 'אִתָּ֫נוּ', '', ''],
+            ['6', 'חֻקָּה', '', ''],
+            ['7', 'כִּסֵּה', '', ''],
+            ['8', 'מַלְכָּה', '', ''],
+            ['9', 'מִשְׁפָּט', '', ''],
+            ['10', 'אַתָּה', '', ''],
+            ['11', 'דָּבָר', '', ''],
+            ['12', 'אוּרִיָּה', '', ''],
+            ['13', 'אַתֵּ֫נָה', '', ''],
+            ['14', 'קְטַנִּים', '', ''],
+            ['15', 'הִגִּיד', '', ''],
+        ]
+        ans = [
+            ['1', 'בְּרָכָה', 'Daghesh Lene in ב', 'Vocal Shewa under ב'],
+            ['2', 'אִשָּׁה', 'Daghesh Forte in שׁ', 'none'],
+            ['3', 'חַטָּאת', 'Daghesh Forte in ט', 'none'],
+            ['4', 'הַבְּהֵמָה', 'Daghesh Forte in ב (follows article vowel)', 'Vocal Shewa under ב'],
+            ['5', 'אִתָּ֫נוּ', 'Daghesh Forte in ת', 'none'],
+            ['6', 'חֻקָּה', 'Daghesh Forte in ק', 'none'],
+            ['7', 'כִּסֵּה', 'Lene in כ (word-initial); Forte in ס', 'none'],
+            ['8', 'מַלְכָּה', 'Daghesh Lene in כ (follows Silent Shewa)', 'Silent Shewa under ל'],
+            ['9', 'מִשְׁפָּט', 'Daghesh Lene in פ (follows Silent Shewa)', 'Silent Shewa under שׁ'],
+            ['10', 'אַתָּה', 'Daghesh Forte in ת', 'none'],
+            ['11', 'דָּבָר', 'Daghesh Lene in ד (word-initial)', 'none'],
+            ['12', 'אוּרִיָּה', 'Daghesh Forte in י', 'none'],
+            ['13', 'אַתֵּ֫נָה', 'Daghesh Forte in ת', 'none'],
+            ['14', 'קְטַנִּים', 'Daghesh Forte in נ', 'Vocal Shewa under ק (word-initial)'],
+            ['15', 'הִגִּיד', 'Daghesh Forte in ג', 'none'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Word', 'Daghesh', 'Shewa'],
+            rows=rows,
+            col_ratios=[0.05, 0.12, 0.49, 0.34],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
 # ---------------------------------------------------------------------------
 
 
