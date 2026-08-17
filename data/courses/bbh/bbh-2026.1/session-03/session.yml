@@ -29,6 +29,7 @@ chapter: 2
 instructor: Preston Brown
 
 agenda:
+  - title: "Introduction to the Masorah (10 min)"
 
 lesson:
   name: "BBH 2 - Hebrew Vowels"
@@ -41,5 +42,7 @@ reading:
     file: "reading-deut-6-4.html"
 
 sections:
+  - heading: "Introduction to the Masorah"
+    file: "masorah-intro.md"
 
 notes: ""
