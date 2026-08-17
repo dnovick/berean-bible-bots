@@ -29,10 +29,14 @@ chapter: 2
 instructor: Preston Brown
 
 agenda:
-  - title: "Housekeeping (5 min)"
-  - title: "BBH Ch2 — Hebrew Vowels (95 min)"
-  - title: "Reading: Deut 6:4 — The Shema (10 min)"
-  - title: "Introduction to the Masorah (10 min)"
+  - title: "Housekeeping"
+    duration: "5 min"
+  - title: "BBH Ch2 — Hebrew Vowels"
+    duration: "95 min"
+  - title: "Reading: Deut 6:4 — The Shema"
+    duration: "10 min"
+  - title: "Introduction to the Masorah"
+    duration: "10 min"
     url: "/courses/bbh/bbh-2026.1/sessions/session-03/masorah-intro/"
 
 lesson:
