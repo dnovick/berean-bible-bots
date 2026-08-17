@@ -31,10 +31,6 @@ instructor: Preston Brown
 agenda:
   - title: "Housekeeping"
     duration: "5 min"
-  - title: "BBH Ch2 — Hebrew Vowels"
-    duration: "95 min"
-  - title: "Reading: Deut 6:4 — The Shema"
-    duration: "10 min"
   - title: "Introduction to the Masorah"
     duration: "10 min"
     url: "/courses/bbh/bbh-2026.1/sessions/session-03/masorah-intro/"
@@ -42,12 +38,14 @@ agenda:
 lesson:
   name: "BBH 2 - Hebrew Vowels"
   url: "/lessons/hebrew/ch2/"
+  duration: "95 min"
 
 reading:
   - name: "The Shema"
     description: "Syllable reading drill. The verse is broken at syllable boundaries with hyphens. Read each syllable aloud."
     passage: "Deut 6:4"
     file: "reading-deut-6-4.html"
+    duration: "10 min"
 
 sections:
   - heading: "Introduction to the Masorah"
