@@ -8,3 +8,4 @@ Ephesians 6:10–18 is one of Paul's most celebrated passages. This study approa
 |---|---|
 | [Letter Context Analysis](analysis/armor-of-god-report.md) | Each armor piece traced to its earlier development in Ephesians 1–5, with a frequency heatmap |
 | [Verse 12 — The Opposition Named](v12-analysis/index.md) | Word and phrase analysis of the four categories of spiritual opposition in v. 12 |
+| [Verse 12 — The "We Wrestle Not" Construction](v12-construction/index.md) | The dative-of-possession construction behind "we wrestle not," its ἡμῖν/ὑμῖν textual variant, NT parallels, and grammars that treat it |
