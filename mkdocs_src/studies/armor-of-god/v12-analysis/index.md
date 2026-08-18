@@ -1,6 +1,6 @@
 # Verse 12 — The Opposition Named
 
-← [Back to Armor of God](../index.md)
+← [Back to Armor of God](../index.md) · See also: [Verse 12 — The "We Wrestle Not" Construction](../v12-construction/index.md)
 
 > ὅτι οὐκ ἔστιν ἡμῖν ἡ πάλη πρὸς αἷμα καὶ σάρκα ἀλλὰ πρὸς τὰς ἀρχάς, πρὸς τὰς ἐξουσίας, πρὸς τοὺς κοσμοκράτορας τοῦ σκότους τοῦ αἰῶνος τούτου, πρὸς τὰ πνευματικὰ τῆς πονηρίας ἐν τοῖς ἐπουρανίοις.
 >
