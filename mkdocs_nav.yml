@@ -561,7 +561,6 @@ nav:
           - τυφόω (G5187) — to be puffed up with conceit, to be blinded by pride: reports/nt/lexicon/2tim3-vice-list/typhoo/index.md
         - 2 Timothy 3:1–5 — Vice List Word Study: reports/nt/lexicon/2tim3-vice-list/index.md
       - '"Anoint / Anointing" — Cross-Corpus Word Study': reports/nt/lexicon/anoint-word-study/anoint-word-study.md
-      - The Armor of God — Ephesians 6:10–18 in Its Letter Context: reports/nt/lexicon/armor-of-god/armor-of-god-report.md
       - Greek Personal Pronouns — NT and LXX Study: reports/nt/lexicon/greek-pronouns/greek-pronouns-report.md
       - '"In the Name of" — Cross-Corpus Study': reports/nt/lexicon/in-the-name-of/in-the-name-of.md
       - Phil 2:1 — Community Virtues Word Study: reports/nt/lexicon/phil2-community-virtues/phil2-community-virtues.md
@@ -734,6 +733,44 @@ nav:
         - 'Session 45 — Introduction to the Hebrew Bible': courses/bbh/bbh-2026.1/sessions/session-45.md
         - 'Session 46 — Final Review and Capstone': courses/bbh/bbh-2026.1/sessions/session-46.md
 # </COURSES>
+# <STUDIES>
+- Studies:
+  - Overview: studies/index.md
+  - Psalm 119:
+    - Overview: studies/psalm-119/index.md
+    - Analysis — Word Vocabulary & Themes: studies/psalm-119/analysis/psalm-119-report.md
+    - Flashcards: studies/psalm-119/flashcards/index.md
+    - Memorization Exercises:
+      - Overview: studies/psalm-119/memorization/index.md
+      - א Alef (vv. 1–8): studies/psalm-119/memorization/01-alef/index.md
+      - ב Bet (vv. 9–16): studies/psalm-119/memorization/02-bet/index.md
+      - ג Gimel (vv. 17–24): studies/psalm-119/memorization/03-gimel/index.md
+      - ד Dalet (vv. 25–32): studies/psalm-119/memorization/04-dalet/index.md
+      - ה He (vv. 33–40): studies/psalm-119/memorization/05-he/index.md
+      - ו Waw (vv. 41–48): studies/psalm-119/memorization/06-waw/index.md
+      - ז Zayin (vv. 49–56): studies/psalm-119/memorization/07-zayin/index.md
+      - ח Ḥet (vv. 57–64): studies/psalm-119/memorization/08-het/index.md
+      - ט Tet (vv. 65–72): studies/psalm-119/memorization/09-tet/index.md
+      - י Yod (vv. 73–80): studies/psalm-119/memorization/10-yod/index.md
+      - כ Kaf (vv. 81–88): studies/psalm-119/memorization/11-kaf/index.md
+      - ל Lamed (vv. 89–96): studies/psalm-119/memorization/12-lamed/index.md
+      - מ Mem (vv. 97–104): studies/psalm-119/memorization/13-mem/index.md
+      - נ Nun (vv. 105–112): studies/psalm-119/memorization/14-nun/index.md
+      - ס Samek (vv. 113–120): studies/psalm-119/memorization/15-samek/index.md
+      - ע Ayin (vv. 121–128): studies/psalm-119/memorization/16-ayin/index.md
+      - פ Pe (vv. 129–136): studies/psalm-119/memorization/17-pe/index.md
+      - צ Tsade (vv. 137–144): studies/psalm-119/memorization/18-tsade/index.md
+      - ק Qof (vv. 145–152): studies/psalm-119/memorization/19-qof/index.md
+      - ר Resh (vv. 153–160): studies/psalm-119/memorization/20-resh/index.md
+      - שׁ Shin (vv. 161–168): studies/psalm-119/memorization/21-shin/index.md
+      - ת Taw (vv. 169–176): studies/psalm-119/memorization/22-taw/index.md
+  - The Armor of God — Ephesians 6:10–18:
+    - Overview: studies/armor-of-god/index.md
+    - Letter Context Analysis:
+      - Overview: studies/armor-of-god/analysis/index.md
+      - The Armor of God — Eph 6:10–18 in Its Letter Context: studies/armor-of-god/analysis/armor-of-god-report.md
+    - Verse 12 — The Opposition Named: studies/armor-of-god/v12-analysis/index.md
+# </STUDIES>
 - Study Helps:
   - Overview: study-helps/index.md
   - New Testament:
