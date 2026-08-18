@@ -103,6 +103,16 @@ def _build_psalm119_nav() -> str:
                 f"studies/psalm-119/memorization/{slug}/index.md"
             )
 
+    lines += [
+        "  - The Armor of God — Ephesians 6:10–18:",
+        "    - Overview: studies/armor-of-god/index.md",
+        "    - Letter Context Analysis:",
+        "      - Overview: studies/armor-of-god/analysis/index.md",
+        "      - The Armor of God — Eph 6:10–18 in Its Letter Context:"
+        " studies/armor-of-god/analysis/armor-of-god-report.md",
+        "    - Verse 12 — The Opposition Named: studies/armor-of-god/v12-analysis/index.md",
+    ]
+
     return "\n".join(lines) + "\n"
 
 
