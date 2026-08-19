@@ -20,10 +20,10 @@
             label: 'STEP Bible',
             description: 'Free · Hebrew/Greek interlinear · no account needed',
             url: function (book, chapter, verse) {
-                // STEP uses dot-separated OSIS book abbreviations
-                return 'https://www.stepbible.org/?q=reference=' +
-                    encodeURIComponent(osisBook(book) + '.' + chapter + '.' + verse) +
-                    '|version=THGNT|version=OSMHB';
+                // STEP parses | as a query separator — must NOT be percent-encoded.
+                // Format: version first, then reference (OSIS dot notation).
+                var ref = osisBook(book) + '.' + chapter + '.' + verse;
+                return 'https://www.stepbible.org/?q=version=KJV|reference=' + ref;
             }
         },
         {
@@ -457,13 +457,28 @@
             radio.addEventListener('change', function () {
                 setResourceId(r.id);
                 rewriteLinks();
-                // Update checked state of all radios in case of re-render
                 box.querySelectorAll('input[name="bbb-resource"]').forEach(function (inp) {
                     inp.checked = inp.value === r.id;
                 });
+                // Show/hide the Logos permission note
+                var note = box.querySelector('.bbb-logos-note');
+                if (note) note.style.display = r.id === 'logos-desktop' ? '' : 'none';
             });
 
             box.appendChild(label);
+
+            // Chrome permission note — shown only for Logos desktop
+            if (r.id === 'logos-desktop') {
+                var note = document.createElement('p');
+                note.className = 'bbb-logos-note';
+                note.style.display = current === 'logos-desktop' ? '' : 'none';
+                note.innerHTML =
+                    'The first click may trigger a Chrome dialog — click “Open” ' +
+                    'to allow. If nothing happens, visit ' +
+                    '<strong>chrome://settings/content/handlers</strong> and ' +
+                    'remove any blocked <code>logos4:</code> entry, then try again.';
+                box.appendChild(note);
+            }
         });
 
         var close = document.createElement('button');
@@ -521,27 +536,11 @@
         headerInner.appendChild(btn);
     }
 
-    // ── Custom-scheme click handler ───────────────────────────────────────────
-    // Browsers (especially Chrome) sometimes silently drop anchor-tag clicks
-    // for custom URL schemes. Using window.location.href is more reliable.
-    // We attach this once per content area; re-init on instant nav reuses the
-    // same listener because we check dataset.schemeHandlerAttached.
-
-    function attachCustomSchemeHandler(content) {
-        if (content.dataset.schemeHandlerAttached) return;
-        content.dataset.schemeHandlerAttached = '1';
-        content.addEventListener('click', function (e) {
-            var a = e.target.closest('a.scripture-ref');
-            if (!a) return;
-            var href = a.getAttribute('href');
-            if (href && !/^https?:/i.test(href)) {
-                e.preventDefault();
-                window.location.href = href;
-            }
-        });
-    }
-
     // ── Entry point ───────────────────────────────────────────────────────────
+    // Note: no custom click handler for logos4:/custom schemes. Calling
+    // e.preventDefault() before window.location.href kills Chrome's user-gesture
+    // context and silently suppresses protocol invocation. Native anchor behavior
+    // on an <a> without target lets Chrome route the link to the OS handler.
 
     function init() {
         // Skip pages under /lessons/ — paradigm tables have too many false positives
@@ -555,7 +554,6 @@
         content.dataset.scriptureLinked = '1';
 
         walkNode(content);
-        attachCustomSchemeHandler(content);
     }
 
     // MkDocs Material instant navigation fires document$ on each page transition.
@@ -568,7 +566,6 @@
             var content = document.querySelector('.md-typeset');
             if (content) {
                 delete content.dataset.scriptureLinked;
-                delete content.dataset.schemeHandlerAttached;
             }
             init();
         });
