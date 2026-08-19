@@ -26,6 +26,11 @@ iframe {
   margin-bottom: 0.8rem;
 }
 
+/* Move GitHub repo link out of header — it lives in the footer via extra.social */
+.md-header__source {
+  display: none;
+}
+
 /* ── Scripture reference links ──────────────────────────────────────────── */
 
 a.scripture-ref {

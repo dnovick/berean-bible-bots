@@ -497,35 +497,28 @@
         if (_popup) _popup.style.display = 'none';
     }
 
-    // ── Gear button in page header ────────────────────────────────────────────
+    // ── Config button in page header ──────────────────────────────────────────
+    // Injected once into .md-header__inner (the header persists across Material
+    // instant navigation, so one injection covers all pages).
 
     function injectGearButton() {
         if (document.getElementById('bbb-scripture-gear')) return;
 
-        // Material theme header actions area
-        var actions = document.querySelector('.md-header__inner .md-header__source') ||
-                      document.querySelector('.md-header__inner') ||
-                      document.querySelector('.md-header');
-        if (!actions) return;
+        var headerInner = document.querySelector('.md-header__inner');
+        if (!headerInner) return;
 
         var btn = document.createElement('button');
         btn.id = 'bbb-scripture-gear';
         btn.className = 'bbb-scripture-gear';
         btn.title = 'Bible resource settings';
         btn.setAttribute('aria-label', 'Choose Bible resource for scripture links');
-        // Unicode gear + book emoji
         btn.innerHTML =
             '<span class="bbb-sg-icon" aria-hidden="true">&#x1F4D6;</span>' +
             '<span class="bbb-sg-text">Config</span>';
         btn.addEventListener('click', showPopup);
 
-        // Insert before the source link (repo button) if it exists, else append
-        var source = actions.querySelector('.md-header__source');
-        if (source) {
-            actions.insertBefore(btn, source);
-        } else {
-            actions.appendChild(btn);
-        }
+        // Append at the far right of the inner header row
+        headerInner.appendChild(btn);
     }
 
     // ── Custom-scheme click handler ───────────────────────────────────────────
@@ -562,13 +555,15 @@
         content.dataset.scriptureLinked = '1';
 
         walkNode(content);
-        injectGearButton();
         attachCustomSchemeHandler(content);
     }
 
     // MkDocs Material instant navigation fires document$ on each page transition.
+    // injectGearButton runs on every transition but is idempotent (the header
+    // persists across instant nav, so the button is only ever inserted once).
     if (typeof document$ !== 'undefined') {
         document$.subscribe(function () {
+            injectGearButton();
             // Reset flags so new page content is processed
             var content = document.querySelector('.md-typeset');
             if (content) {
@@ -578,6 +573,9 @@
             init();
         });
     } else {
-        document.addEventListener('DOMContentLoaded', init);
+        document.addEventListener('DOMContentLoaded', function () {
+            injectGearButton();
+            init();
+        });
     }
 }());
