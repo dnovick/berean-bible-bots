@@ -353,8 +353,12 @@
             var href = buildUrl(book, chapter, verse);
             var a = document.createElement('a');
             a.href = href;
-            a.target = '_blank';
-            a.rel = 'noopener noreferrer';
+            // Custom URL schemes (logos4:, etc.) silently fail with target="_blank"
+            // in Chrome; only set it for ordinary http/https links.
+            if (/^https?:/i.test(href)) {
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+            }
             a.className = 'scripture-ref';
             a.setAttribute('data-book', book);
             a.setAttribute('data-chapter', chapter);
@@ -396,7 +400,15 @@
             var chapter = a.getAttribute('data-chapter');
             var verse = a.getAttribute('data-verse');
             if (book && chapter && verse) {
-                a.href = buildUrl(book, chapter, verse);
+                var href = buildUrl(book, chapter, verse);
+                a.href = href;
+                if (/^https?:/i.test(href)) {
+                    a.target = '_blank';
+                    a.rel = 'noopener noreferrer';
+                } else {
+                    a.removeAttribute('target');
+                    a.removeAttribute('rel');
+                }
             }
         });
     }
@@ -501,7 +513,9 @@
         btn.title = 'Bible resource settings';
         btn.setAttribute('aria-label', 'Choose Bible resource for scripture links');
         // Unicode gear + book emoji
-        btn.textContent = 'Config';
+        btn.innerHTML =
+            '<span class="bbb-sg-icon" aria-hidden="true">&#x1F4D6;</span>' +
+            '<span class="bbb-sg-text">Config</span>';
         btn.addEventListener('click', showPopup);
 
         // Insert before the source link (repo button) if it exists, else append
