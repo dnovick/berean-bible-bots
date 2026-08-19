@@ -157,3 +157,14 @@ a.scripture-ref:hover {
 #bbb-scripture-close:hover {
   background: var(--md-primary-fg-color--light);
 }
+
+.bbb-logos-note {
+  font-size: 0.75rem;
+  color: var(--md-default-fg-color--light, #666);
+  background: var(--md-accent-fg-color--transparent, #c9a94a1a);
+  border-left: 3px solid var(--md-accent-fg-color);
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0 0.5rem;
+  border-radius: 0 3px 3px 0;
+  line-height: 1.5;
+}
