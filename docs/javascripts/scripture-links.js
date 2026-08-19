@@ -29,10 +29,11 @@
         {
             id: 'logos',
             label: 'Logos',
-            description: 'Opens desktop app if installed, Logos web otherwise',
+            description: 'Opens Logos desktop app directly (app must be installed)',
             url: function (book, chapter, verse) {
-                return 'https://ref.ly/logosref/Bible.' +
-                    osisBook(book) + chapter + '.' + verse;
+                // logos4: is the registered URL scheme for the Logos desktop app.
+                // Format: logos4:Bible.KJV.<OsisBook><chapter>.<verse>
+                return 'logos4:Bible.KJV.' + osisBook(book) + chapter + '.' + verse;
             }
         },
         {
@@ -491,7 +492,7 @@
         btn.title = 'Bible resource settings';
         btn.setAttribute('aria-label', 'Choose Bible resource for scripture links');
         // Unicode gear + book emoji
-        btn.innerHTML = '&#x1F4D6;';
+        btn.textContent = 'Config';
         btn.addEventListener('click', showPopup);
 
         // Insert before the source link (repo button) if it exists, else append
