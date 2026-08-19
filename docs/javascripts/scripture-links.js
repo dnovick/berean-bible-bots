@@ -27,13 +27,22 @@
             }
         },
         {
-            id: 'logos',
-            label: 'Logos',
-            description: 'Opens Logos desktop app directly (app must be installed)',
+            id: 'logos-desktop',
+            label: 'Logos (desktop)',
+            description: 'Opens Logos desktop app; will launch it if not running',
             url: function (book, chapter, verse) {
                 // logos4: is the registered URL scheme for the Logos desktop app.
                 // Format: logos4:Bible.KJV.<OsisBook><chapter>.<verse>
                 return 'logos4:Bible.KJV.' + osisBook(book) + chapter + '.' + verse;
+            }
+        },
+        {
+            id: 'logos-web',
+            label: 'Logos (web)',
+            description: 'Opens Logos in the browser — account required',
+            url: function (book, chapter, verse) {
+                return 'https://ref.ly/logosref/Bible.' +
+                    osisBook(book) + chapter + '.' + verse;
             }
         },
         {
