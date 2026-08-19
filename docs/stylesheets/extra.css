@@ -25,3 +25,118 @@ iframe {
 .md-button {
   margin-bottom: 0.8rem;
 }
+
+/* ── Scripture reference links ──────────────────────────────────────────── */
+
+a.scripture-ref {
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+  border-bottom: 1px dotted var(--md-accent-fg-color);
+  white-space: nowrap;
+}
+
+a.scripture-ref:hover {
+  border-bottom-style: solid;
+}
+
+/* Gear button in the header */
+.bbb-scripture-gear {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 0 0.5rem;
+  color: var(--md-primary-bg-color);
+  opacity: 0.75;
+  line-height: 1;
+  vertical-align: middle;
+  transition: opacity 0.15s;
+}
+
+.bbb-scripture-gear:hover {
+  opacity: 1;
+}
+
+/* Settings overlay and popup */
+#bbb-scripture-overlay {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9999;
+  align-items: center;
+  justify-content: center;
+}
+
+#bbb-scripture-popup {
+  background: var(--md-default-bg-color, #fff);
+  border-radius: 6px;
+  padding: 1.5rem 1.75rem;
+  max-width: 420px;
+  width: 90vw;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.25);
+}
+
+#bbb-scripture-popup h3 {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--md-primary-fg-color);
+  border: none;
+}
+
+.bbb-resource-option {
+  display: grid;
+  grid-template-columns: 1.2rem 1fr;
+  grid-template-rows: auto auto;
+  column-gap: 0.6rem;
+  align-items: start;
+  padding: 0.5rem 0.4rem;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 0.25rem;
+}
+
+.bbb-resource-option:hover {
+  background: var(--md-accent-fg-color--transparent, #c9a94a1a);
+}
+
+.bbb-resource-option input[type="radio"] {
+  margin-top: 0.15rem;
+  grid-row: 1;
+  accent-color: var(--md-accent-fg-color);
+}
+
+.bbb-resource-name {
+  grid-column: 2;
+  grid-row: 1;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--md-typeset-color, #333);
+}
+
+.bbb-resource-desc {
+  grid-column: 2;
+  grid-row: 2;
+  font-size: 0.78rem;
+  color: var(--md-default-fg-color--light, #666);
+  margin-top: 0.1rem;
+}
+
+#bbb-scripture-close {
+  display: block;
+  margin: 1.25rem auto 0;
+  padding: 0.45rem 1.5rem;
+  background: var(--md-primary-fg-color);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.15s;
+}
+
+#bbb-scripture-close:hover {
+  background: var(--md-primary-fg-color--light);
+}
