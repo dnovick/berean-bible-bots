@@ -192,7 +192,7 @@ The third term is the most vivid of the four and functions as the climax of the 
 
 This is the most grammatically complex of the four terms, involving three elements:
 
-**τὰ πνευματικά** (neuter plural adjective used substantively): "the spiritual things/beings." The adjective πνευματικός (G4152) means "pertaining to spirit/Spirit." When Paul uses the neuter plural substantively, it usually refers to spiritual *gifts* or *matters* (1 Cor 12:1; 14:1; Gal 6:6). Here, however, in a context listing personal beings, the neuter substantival use designates the spiritual forces or entities themselves — not "spiritual matters" but "the spiritual ones" or "spiritual forces."
+**τὰ πνευματικά** (neuter plural adjective used substantively): "the spiritual things/beings." The adjective πνευματικός (G4152) means "pertaining to spirit/Spirit." When Paul uses the neuter plural substantively, it usually refers to spiritual *gifts* or *matters* (1 Cor 12:1; 14:1). Here, however, in a context listing personal beings, the neuter substantival use designates the spiritual forces or entities themselves — not "spiritual matters" but "the spiritual ones" or "spiritual forces."
 
 **τῆς πονηρίας** (genitive of πονηρία, G4189): "of wickedness/evil." πονηρία is the abstract noun from πονηρός (wicked, evil). The genitive here is attributive ("wicked spiritual forces") or possibly a genitive of source ("spiritual forces characterized by/proceeding from wickedness"). Either way, it marks the moral quality of these beings — they are not merely powerful; they are *wicked*.
 
