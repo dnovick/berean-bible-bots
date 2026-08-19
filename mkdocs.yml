@@ -30,6 +30,12 @@ theme:
   logo: assets/logo.png
   favicon: assets/logo.png
 
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/dnovick/berean-bible-bots
+      name: berean-bible-bots on GitHub
+
 extra_css:
   - stylesheets/extra.css
 
