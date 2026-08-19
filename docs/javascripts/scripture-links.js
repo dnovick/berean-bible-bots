@@ -472,9 +472,10 @@
                 note.className = 'bbb-logos-note';
                 note.style.display = current === 'logos-desktop' ? '' : 'none';
                 note.innerHTML =
-                    'The first click may show a Chrome dialog — click “Open Logos” ' +
-                    'to allow. If nothing happens, click the lock icon in the address bar, ' +
-                    'choose “Site settings”, and make sure “Handlers” is set to Allow.';
+                    'Requires Logos desktop to be installed. On first click Chrome ' +
+                    'may ask “Allow this site to open Logos?” — click Allow. ' +
+                    'To test outside the browser, paste ' +
+                    '<code>logosref:Bible.Eph6.12</code> into Chrome\'s address bar.';
                 box.appendChild(note);
             }
         });
