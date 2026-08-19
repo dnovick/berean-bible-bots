@@ -111,6 +111,8 @@ def _build_psalm119_nav() -> str:
         "      - The Armor of God — Eph 6:10–18 in Its Letter Context:"
         " studies/armor-of-god/analysis/armor-of-god-report.md",
         "    - Verse 12 — The Opposition Named: studies/armor-of-god/v12-analysis/index.md",
+        "    - Verse 12 — The \"We Wrestle Not\" Construction:"
+        " studies/armor-of-god/v12-construction/index.md",
     ]
 
     return "\n".join(lines) + "\n"
