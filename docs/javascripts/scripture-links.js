@@ -31,10 +31,9 @@
             label: 'Logos (desktop)',
             description: 'Opens Logos desktop app; will launch it if not running',
             url: function (book, chapter, verse) {
-                // logos4:passage?ref= is the documented Logos deep-link format.
-                // Reference format: <OsisBook>.<chapter>.<verse>
-                return 'logos4:passage?ref=' +
-                    osisBook(book) + '.' + chapter + '.' + verse;
+                // logosref:Bible.<Book><chapter>.<verse> is the Faithlife deep-link format.
+                // Same reference pattern as ref.ly web links, different scheme.
+                return 'logosref:Bible.' + osisBook(book) + chapter + '.' + verse;
             }
         },
         {
@@ -354,7 +353,7 @@
             var href = buildUrl(book, chapter, verse);
             var a = document.createElement('a');
             a.href = href;
-            // Custom URL schemes (logos4:, etc.) silently fail with target="_blank"
+            // Custom URL schemes (logosref:, etc.) silently fail with target="_blank"
             // in Chrome; only set it for ordinary http/https links.
             if (/^https?:/i.test(href)) {
                 a.target = '_blank';
@@ -473,10 +472,9 @@
                 note.className = 'bbb-logos-note';
                 note.style.display = current === 'logos-desktop' ? '' : 'none';
                 note.innerHTML =
-                    'The first click may trigger a Chrome dialog — click “Open” ' +
-                    'to allow. If nothing happens, visit ' +
-                    '<strong>chrome://settings/content/handlers</strong> and ' +
-                    'remove any blocked <code>logos4:</code> entry, then try again.';
+                    'The first click may show a Chrome dialog — click “Open Logos” ' +
+                    'to allow. If nothing happens, click the lock icon in the address bar, ' +
+                    'choose “Site settings”, and make sure “Handlers” is set to Allow.';
                 box.appendChild(note);
             }
         });
@@ -537,7 +535,7 @@
     }
 
     // ── Entry point ───────────────────────────────────────────────────────────
-    // Note: no custom click handler for logos4:/custom schemes. Calling
+    // Note: no custom click handler for logosref:/custom schemes. Calling
     // e.preventDefault() before window.location.href kills Chrome's user-gesture
     // context and silently suppresses protocol invocation. Native anchor behavior
     // on an <a> without target lets Chrome route the link to the OS handler.
