@@ -459,25 +459,9 @@
                 box.querySelectorAll('input[name="bbb-resource"]').forEach(function (inp) {
                     inp.checked = inp.value === r.id;
                 });
-                // Show/hide the Logos permission note
-                var note = box.querySelector('.bbb-logos-note');
-                if (note) note.style.display = r.id === 'logos-desktop' ? '' : 'none';
             });
 
             box.appendChild(label);
-
-            // Chrome permission note — shown only for Logos desktop
-            if (r.id === 'logos-desktop') {
-                var note = document.createElement('p');
-                note.className = 'bbb-logos-note';
-                note.style.display = current === 'logos-desktop' ? '' : 'none';
-                note.innerHTML =
-                    'Requires Logos desktop to be installed. On first click Chrome ' +
-                    'may ask “Allow this site to open Logos?” — click Allow. ' +
-                    'To test outside the browser, paste ' +
-                    '<code>logosref:Bible.Eph6.12</code> into Chrome\'s address bar.';
-                box.appendChild(note);
-            }
         });
 
         var close = document.createElement('button');
