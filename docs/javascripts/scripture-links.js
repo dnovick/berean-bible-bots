@@ -293,6 +293,15 @@
         'gi'
     );
 
+    // Bare chapter:verse shorthand (e.g. "; 14:1") following a full book reference.
+    // Group 1: separator (; or , + optional spaces), Group 2: chapter, Group 3: verse
+    var BARE_REF_PATTERN =
+        /([;,][ \t]*)(\d{1,3}):(\d{1,3})(?:[–—-]\d{1,3}(?::\d{1,3})?)?/g;
+
+    // Most recently matched book name; used to resolve bare ch:v shorthand.
+    // Reset at the start of each page's init() pass.
+    var lastBook = null;
+
     // ── URL builders ─────────────────────────────────────────────────────────
 
     function buildUrl(book, chapter, verse) {
@@ -316,12 +325,73 @@
         return false;
     }
 
+    // Append text to fragment, linkifying any bare ch:v references (e.g. "; 14:1")
+    // using the lastBook context set by the most recent full reference match.
+    function appendBareRefs(frag, text) {
+        if (!lastBook) {
+            frag.appendChild(document.createTextNode(text));
+            return;
+        }
+        BARE_REF_PATTERN.lastIndex = 0;
+        var m = BARE_REF_PATTERN.exec(text);
+        if (!m) {
+            frag.appendChild(document.createTextNode(text));
+            return;
+        }
+        var idx = 0;
+        do {
+            var sep = m[1];
+            var chapter = m[2];
+            var verse = m[3];
+            var refStart = m.index + sep.length;
+
+            // Text before the digits (includes the separator character(s))
+            if (refStart > idx) {
+                frag.appendChild(document.createTextNode(text.slice(idx, refStart)));
+            }
+
+            var linkText = text.slice(refStart, m.index + m[0].length);
+            var href = buildUrl(lastBook, chapter, verse);
+            var a = document.createElement('a');
+            a.href = href;
+            if (/^https?:/i.test(href)) {
+                a.target = '_blank';
+                a.rel = 'noopener noreferrer';
+            }
+            a.className = 'scripture-ref';
+            a.setAttribute('data-book', lastBook);
+            a.setAttribute('data-chapter', chapter);
+            a.setAttribute('data-verse', verse);
+            a.textContent = linkText;
+            frag.appendChild(a);
+
+            idx = m.index + m[0].length;
+            m = BARE_REF_PATTERN.exec(text);
+        } while (m);
+
+        if (idx < text.length) {
+            frag.appendChild(document.createTextNode(text.slice(idx)));
+        }
+    }
+
     function processTextNode(textNode) {
         if (shouldSkipNode(textNode)) return;
         var text = textNode.nodeValue;
         REF_PATTERN.lastIndex = 0;
         var match = REF_PATTERN.exec(text);
-        if (!match) return;
+
+        // No full reference — check for bare ch:v shorthand (e.g. "; 14:1")
+        if (!match) {
+            if (lastBook) {
+                BARE_REF_PATTERN.lastIndex = 0;
+                if (BARE_REF_PATTERN.test(text)) {
+                    var bareFragment = document.createDocumentFragment();
+                    appendBareRefs(bareFragment, text);
+                    textNode.parentNode.replaceChild(bareFragment, textNode);
+                }
+            }
+            return;
+        }
 
         var fragment = document.createDocumentFragment();
         var lastIndex = 0;
@@ -340,14 +410,14 @@
                 continue;
             }
 
+            lastBook = book; // track for bare ch:v shorthand that follows
+
             // The match starts at the boundary char; the ref itself starts after it.
             var refStart = match.index + boundary.length;
 
-            // Text before this match (including the boundary char — output it verbatim)
+            // Text before this match — scan it for bare refs using the previous lastBook
             if (refStart > lastIndex) {
-                fragment.appendChild(document.createTextNode(
-                    text.slice(lastIndex, refStart)
-                ));
+                appendBareRefs(fragment, text.slice(lastIndex, refStart));
             }
 
             var href = buildUrl(book, chapter, verse);
@@ -375,9 +445,9 @@
             match = REF_PATTERN.exec(text);
         } while (match);
 
-        // Remaining text
+        // Remaining text — scan for bare refs (e.g. "; 14:1" after "1 Cor 12:1")
         if (lastIndex < text.length) {
-            fragment.appendChild(document.createTextNode(text.slice(lastIndex)));
+            appendBareRefs(fragment, text.slice(lastIndex));
         }
 
         textNode.parentNode.replaceChild(fragment, textNode);
@@ -536,6 +606,7 @@
         if (content.dataset.scriptureLinked) return;
         content.dataset.scriptureLinked = '1';
 
+        lastBook = null; // reset bare-ref context for each new page
         walkNode(content);
     }
 
