@@ -31,9 +31,10 @@
             label: 'Logos (desktop)',
             description: 'Opens Logos desktop app; will launch it if not running',
             url: function (book, chapter, verse) {
-                // logos4: is the registered URL scheme for the Logos desktop app.
-                // Format: logos4:Bible.KJV.<OsisBook><chapter>.<verse>
-                return 'logos4:Bible.KJV.' + osisBook(book) + chapter + '.' + verse;
+                // logos4:passage?ref= is the documented Logos deep-link format.
+                // Reference format: <OsisBook>.<chapter>.<verse>
+                return 'logos4:passage?ref=' +
+                    osisBook(book) + '.' + chapter + '.' + verse;
             }
         },
         {
@@ -527,6 +528,26 @@
         }
     }
 
+    // ── Custom-scheme click handler ───────────────────────────────────────────
+    // Browsers (especially Chrome) sometimes silently drop anchor-tag clicks
+    // for custom URL schemes. Using window.location.href is more reliable.
+    // We attach this once per content area; re-init on instant nav reuses the
+    // same listener because we check dataset.schemeHandlerAttached.
+
+    function attachCustomSchemeHandler(content) {
+        if (content.dataset.schemeHandlerAttached) return;
+        content.dataset.schemeHandlerAttached = '1';
+        content.addEventListener('click', function (e) {
+            var a = e.target.closest('a.scripture-ref');
+            if (!a) return;
+            var href = a.getAttribute('href');
+            if (href && !/^https?:/i.test(href)) {
+                e.preventDefault();
+                window.location.href = href;
+            }
+        });
+    }
+
     // ── Entry point ───────────────────────────────────────────────────────────
 
     function init() {
@@ -542,14 +563,18 @@
 
         walkNode(content);
         injectGearButton();
+        attachCustomSchemeHandler(content);
     }
 
     // MkDocs Material instant navigation fires document$ on each page transition.
     if (typeof document$ !== 'undefined') {
         document$.subscribe(function () {
-            // Reset flag so new page content is processed
+            // Reset flags so new page content is processed
             var content = document.querySelector('.md-typeset');
-            if (content) delete content.dataset.scriptureLinked;
+            if (content) {
+                delete content.dataset.scriptureLinked;
+                delete content.dataset.schemeHandlerAttached;
+            }
             init();
         });
     } else {
