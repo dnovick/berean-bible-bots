@@ -39,25 +39,34 @@ a.scripture-ref:hover {
   border-bottom-style: solid;
 }
 
-/* Config button in the header */
+/* Config button — matches the style of the GitHub source link in the header */
 .bbb-scripture-gear {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
   background: none;
-  border: 1px solid rgba(255, 255, 255, 0.45);
-  border-radius: 3px;
+  border: none;
   cursor: pointer;
-  font-size: 0.75rem;
-  font-weight: 600;
-  letter-spacing: 0.03em;
-  padding: 0.15rem 0.5rem;
   color: var(--md-primary-bg-color);
-  opacity: 0.8;
-  line-height: 1.4;
-  vertical-align: middle;
-  transition: opacity 0.15s, border-color 0.15s;
+  opacity: 0.7;
+  padding: 0 0.6rem;
+  height: 2.4rem;
+  transition: opacity 0.15s;
 }
 
 .bbb-scripture-gear:hover {
   opacity: 1;
+}
+
+.bbb-sg-icon {
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.bbb-sg-text {
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
 }
 
 /* Settings overlay and popup */
