@@ -11858,7 +11858,9 @@ class Ch2VowelLettersExercise(ExercisePDF):
         self.add_instructions(
             'For each Hebrew form: (1) Are any matres lectionis (vowel letters) present? '
             '(Yes / No). (2) If yes, which letter(s) — waw (ו), yod (י), or he (ה)? '
-            '(3) What vowel does each mater represent?'
+            '(3) Name the vowel — if a mater is present, give its compound name '
+            '(e.g., Holem Waw); if no mater is present, give the plain vowel name '
+            '(e.g., Qamets).'
         )
         rows = [
             ['1',  'אָב',      'father',          '', '', ''],
@@ -11878,7 +11880,7 @@ class Ch2VowelLettersExercise(ExercisePDF):
             ['15', 'שָׂרָה',       'Sarah',       '', '', ''],
         ]
         ans = [
-            ['1',  'אָב',      'father',          'No',  '—', '—'],
+            ['1',  'אָב',      'father',          'No',  '—', 'Qamets'],
             ['2',  'יוֹם', 'day',             'Yes', 'ו (waw)',  'Holem Waw'],
             ['3',  'כִּי', 'because',         'Yes', 'י (yod)',  'Hireq Yod'],
             ['4',  'תּוֹרָה', 'Torah (law)',
@@ -11887,17 +11889,17 @@ class Ch2VowelLettersExercise(ExercisePDF):
              'Yes', 'ו (waw)', 'Holem Waw'],
             ['6',  'בֵּית', 'house',
              'Yes', 'י (yod)', 'Tsere Yod'],
-            ['7',  'נֵר',       'lamp',            'No',  '—', '—'],
+            ['7',  'נֵר',       'lamp',            'No',  '—', 'Tsere'],
             ['8',  'שׁוֹפֵט', 'judge',
              'Yes', 'ו (waw)', 'Holem Waw'],
             ['9',  'נָבִיא',       'prophet',
              'Yes', 'י (yod)', 'Hireq Yod'],
-            ['10', 'חֶסֶד', 'lovingkindness', 'No', '—', '—'],
+            ['10', 'חֶסֶד', 'lovingkindness', 'No', '—', 'Seghol; Seghol'],
             ['11', 'מְנוֹרָה', 'lampstand',
              'Yes', 'ו and ה', 'Holem Waw; Qamets He'],
             ['12', 'בְּרִית', 'covenant',
              'Yes', 'י (yod)', 'Hireq Yod'],
-            ['13', 'מֶלֶךְ', 'king', 'No', '—', '—'],
+            ['13', 'מֶלֶךְ', 'king', 'No', '—', 'Seghol; Seghol'],
             ['14', 'עֵינַיִם', 'eyes',
              'Yes', 'י (first yod)', 'Tsere Yod'],
             ['15', 'שָׂרָה', 'Sarah',
