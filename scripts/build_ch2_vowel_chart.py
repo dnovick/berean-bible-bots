@@ -137,7 +137,7 @@ ROWS = [
         'class': 'o',
         'long_plain': [('בֹּ', 'Holem')],
         'long_mater': [
-            ('בּוֹ', 'Holem Waw'),
+            ('בּוֹ', 'Holem Vav'),
             ('בֹּה', 'Holem He'),
         ],
         'short':      [('בָּ', 'Qamets Hatuf¹')],
