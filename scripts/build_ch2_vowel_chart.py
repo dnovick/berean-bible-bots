@@ -314,7 +314,7 @@ def build() -> None:
 
     subhdr_labels = [
         (0, ''),
-        (1, 'Plain'),
+        (1, 'Changeable'),
         (2, 'Vowel Letter (Mater Lectionis)'),
         (3, ''),
         (4, ''),
