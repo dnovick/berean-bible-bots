@@ -109,7 +109,7 @@ SUBHDR_ROW_H = 16  # sub-header row height (Plain / Vowel Letter)
 ROWS = [
     {
         'class': 'a',
-        'long_plain': [('בָּ', 'Qamets')],
+        'long_plain': [('בָּ', 'Qamets¹')],
         'long_mater': [('בָּה', 'Qamets He')],
         'short':      [('בַּ', 'Pathach')],
         'reduced':    [('בֲּ', 'Hateph Pathach')],
