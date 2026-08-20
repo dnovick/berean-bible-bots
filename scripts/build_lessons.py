@@ -546,6 +546,10 @@ def build_chapter(
         if md.name not in ("lesson.md", "README.md"):
             shutil.copy(md, dst_dir / md.name)
 
+    # Root-level PDFs (charts, reference sheets, etc.)
+    for pdf in src_dir.glob("*.pdf"):
+        shutil.copy(pdf, dst_dir / pdf.name)
+
     # ── Listing pages ─────────────────────────────────────────────────────────
     if exercise_items:
         (dst_dir / "exercises.md").write_text(
