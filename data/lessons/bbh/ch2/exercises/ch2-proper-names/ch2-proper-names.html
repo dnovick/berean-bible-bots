@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chapter 2 — Sounding Out Proper Names</title>
 <style>
-  body { font-family: Georgia, serif; max-width: 1020px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  body { font-family: Georgia, serif; max-width: 900px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
   h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
   h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
@@ -15,7 +15,6 @@
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
   td.heb { direction: rtl; unicode-bidi: embed; font-size: 1.8em; font-weight: bold; width: 7rem; text-align: center; }
-  td.eng { font-style: italic; width: 6rem; }
   input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
   input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
   select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .2rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
@@ -44,8 +43,7 @@
 <p class="subtitle">BBH Chapter 2 · Hebrew Vowels · 15 proper names</p>
 
 <div class="instructions">
-  <strong>Instructions:</strong> For each proper name, list every vowel sign you see in left-to-right order by its BBH name (e.g., Qamets, Hireq, Shewa). Then indicate whether any vowel <em>letters</em> (matres lectionis — ו, י, or ה functioning as vowel holders) are present.<br>
-  <em>Note: distinguishing vocal from silent shewa will be covered in Chapter 3.</em>
+  <strong>Instructions:</strong> For each Hebrew proper name, write the English name and indicate whether any vowel <em>letters</em> (matres lectionis — ו, י, or ה functioning as vowel holders) are present.
 </div>
 
 <div class="controls">
@@ -59,7 +57,6 @@
     <th>#</th>
     <th>Hebrew Name</th>
     <th>English Name</th>
-    <th>Vowels (Name Each in Order)</th>
     <th>Matres Lectionis?</th>
     <th></th>
   </tr>
@@ -67,8 +64,7 @@
   <tr>
     <td class="num">1</td>
     <td class="heb">שָׂרָה</td>
-    <td class="eng">Sarah</td>
-    <td><input class="f" id="1-v" placeholder="e.g., Qamets, Tsere"></td>
+    <td><input class="f" id="1-e" placeholder="English name"></td>
     <td><select class="f" id="1-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-1" onclick="toggle('ans-1',this)">▶ Answer</button></td>
   </tr>
@@ -76,15 +72,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">שָׂרָה</td>
     <td><em>Sarah</em></td>
-    <td><strong>Qamets, Qamets He</strong></td>
     <td colspan="2">Yes — ה (Qamets He): the final he is a mater for long A</td>
   </tr>
 
   <tr>
     <td class="num">2</td>
     <td class="heb">נֹחַ</td>
-    <td class="eng">Noah</td>
-    <td><input class="f" id="2-v" placeholder="e.g., Holem, Pathach"></td>
+    <td><input class="f" id="2-e" placeholder="English name"></td>
     <td><select class="f" id="2-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-2" onclick="toggle('ans-2',this)">▶ Answer</button></td>
   </tr>
@@ -92,15 +86,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">נֹחַ</td>
     <td><em>Noah</em></td>
-    <td><strong>Holem, Pathach</strong></td>
     <td colspan="2">No matres lectionis</td>
   </tr>
 
   <tr>
     <td class="num">3</td>
     <td class="heb">דָּוִד</td>
-    <td class="eng">David</td>
-    <td><input class="f" id="3-v" placeholder=""></td>
+    <td><input class="f" id="3-e" placeholder="English name"></td>
     <td><select class="f" id="3-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-3" onclick="toggle('ans-3',this)">▶ Answer</button></td>
   </tr>
@@ -108,15 +100,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">דָּוִד</td>
     <td><em>David</em></td>
-    <td><strong>Qamets, Hireq</strong></td>
     <td colspan="2">No matres lectionis (the waw is a consonant here)</td>
   </tr>
 
   <tr>
     <td class="num">4</td>
     <td class="heb">רוּת</td>
-    <td class="eng">Ruth</td>
-    <td><input class="f" id="4-v" placeholder=""></td>
+    <td><input class="f" id="4-e" placeholder="English name"></td>
     <td><select class="f" id="4-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-4" onclick="toggle('ans-4',this)">▶ Answer</button></td>
   </tr>
@@ -124,15 +114,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">רוּת</td>
     <td><em>Ruth</em></td>
-    <td><strong>Shureq</strong></td>
     <td colspan="2">Yes — ו (Shureq): waw with dagesh dot = long U mater</td>
   </tr>
 
   <tr>
     <td class="num">5</td>
     <td class="heb">לֵאָה</td>
-    <td class="eng">Leah</td>
-    <td><input class="f" id="5-v" placeholder=""></td>
+    <td><input class="f" id="5-e" placeholder="English name"></td>
     <td><select class="f" id="5-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-5" onclick="toggle('ans-5',this)">▶ Answer</button></td>
   </tr>
@@ -140,15 +128,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">לֵאָה</td>
     <td><em>Leah</em></td>
-    <td><strong>Tsere, Qamets He</strong></td>
     <td colspan="2">Yes — ה (Qamets He): the final he is a mater for long A</td>
   </tr>
 
   <tr>
     <td class="num">6</td>
     <td class="heb">מֹשֶׁה</td>
-    <td class="eng">Moses</td>
-    <td><input class="f" id="6-v" placeholder=""></td>
+    <td><input class="f" id="6-e" placeholder="English name"></td>
     <td><select class="f" id="6-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-6" onclick="toggle('ans-6',this)">▶ Answer</button></td>
   </tr>
@@ -156,15 +142,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">מֹשֶׁה</td>
     <td><em>Moses</em></td>
-    <td><strong>Holem, Seghol He</strong></td>
     <td colspan="2">Yes — ה (Seghol He): the final he is a mater for short E</td>
   </tr>
 
   <tr>
     <td class="num">7</td>
     <td class="heb">יַעֲקֹב</td>
-    <td class="eng">Jacob</td>
-    <td><input class="f" id="7-v" placeholder=""></td>
+    <td><input class="f" id="7-e" placeholder="English name"></td>
     <td><select class="f" id="7-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-7" onclick="toggle('ans-7',this)">▶ Answer</button></td>
   </tr>
@@ -172,15 +156,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">יַעֲקֹב</td>
     <td><em>Jacob</em></td>
-    <td><strong>Pathach, Hateph Pathach, Holem</strong></td>
     <td colspan="2">No matres lectionis</td>
   </tr>
 
   <tr>
     <td class="num">8</td>
     <td class="heb">יִצְחָק</td>
-    <td class="eng">Isaac</td>
-    <td><input class="f" id="8-v" placeholder=""></td>
+    <td><input class="f" id="8-e" placeholder="English name"></td>
     <td><select class="f" id="8-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-8" onclick="toggle('ans-8',this)">▶ Answer</button></td>
   </tr>
@@ -188,15 +170,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">יִצְחָק</td>
     <td><em>Isaac</em></td>
-    <td><strong>Hireq, Shewa, Qamets</strong></td>
     <td colspan="2">No matres lectionis</td>
   </tr>
 
   <tr>
     <td class="num">9</td>
     <td class="heb">אַהֲרֹן</td>
-    <td class="eng">Aaron</td>
-    <td><input class="f" id="9-v" placeholder=""></td>
+    <td><input class="f" id="9-e" placeholder="English name"></td>
     <td><select class="f" id="9-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-9" onclick="toggle('ans-9',this)">▶ Answer</button></td>
   </tr>
@@ -204,15 +184,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אַהֲרֹן</td>
     <td><em>Aaron</em></td>
-    <td><strong>Pathach, Hateph Pathach, Holem</strong></td>
     <td colspan="2">No matres lectionis</td>
   </tr>
 
   <tr>
     <td class="num">10</td>
     <td class="heb">מִרְיָם</td>
-    <td class="eng">Miriam</td>
-    <td><input class="f" id="10-v" placeholder=""></td>
+    <td><input class="f" id="10-e" placeholder="English name"></td>
     <td><select class="f" id="10-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-10" onclick="toggle('ans-10',this)">▶ Answer</button></td>
   </tr>
@@ -220,15 +198,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">מִרְיָם</td>
     <td><em>Miriam</em></td>
-    <td><strong>Hireq, Shewa, Qamets</strong></td>
     <td colspan="2">No matres lectionis (yod is a consonant)</td>
   </tr>
 
   <tr>
     <td class="num">11</td>
     <td class="heb">שְׁלֹמֹה</td>
-    <td class="eng">Solomon</td>
-    <td><input class="f" id="11-v" placeholder=""></td>
+    <td><input class="f" id="11-e" placeholder="English name"></td>
     <td><select class="f" id="11-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-11" onclick="toggle('ans-11',this)">▶ Answer</button></td>
   </tr>
@@ -236,15 +212,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">שְׁלֹמֹה</td>
     <td><em>Solomon</em></td>
-    <td><strong>Shewa, Holem, Holem He</strong></td>
     <td colspan="2">Yes — ה (Holem He): the final he is a mater for long O</td>
   </tr>
 
   <tr>
     <td class="num">12</td>
     <td class="heb">אֱלִיָּהוּ</td>
-    <td class="eng">Elijah</td>
-    <td><input class="f" id="12-v" placeholder=""></td>
+    <td><input class="f" id="12-e" placeholder="English name"></td>
     <td><select class="f" id="12-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-12" onclick="toggle('ans-12',this)">▶ Answer</button></td>
   </tr>
@@ -252,15 +226,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אֱלִיָּהוּ</td>
     <td><em>Elijah</em></td>
-    <td><strong>Hateph Seghol, Hireq, Qamets, Shureq</strong></td>
     <td colspan="2">Yes — ו (Shureq): final waw with dagesh dot = long U mater</td>
   </tr>
 
   <tr>
     <td class="num">13</td>
     <td class="heb">יוֹסֵף</td>
-    <td class="eng">Joseph</td>
-    <td><input class="f" id="13-v" placeholder=""></td>
+    <td><input class="f" id="13-e" placeholder="English name"></td>
     <td><select class="f" id="13-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-13" onclick="toggle('ans-13',this)">▶ Answer</button></td>
   </tr>
@@ -268,15 +240,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">יוֹסֵף</td>
     <td><em>Joseph</em></td>
-    <td><strong>Holem Waw, Tsere</strong></td>
     <td colspan="2">Yes — ו (Holem Waw): waw with holem dot above = long O mater</td>
   </tr>
 
   <tr>
     <td class="num">14</td>
     <td class="heb">אַבְרָהָם</td>
-    <td class="eng">Abraham</td>
-    <td><input class="f" id="14-v" placeholder=""></td>
+    <td><input class="f" id="14-e" placeholder="English name"></td>
     <td><select class="f" id="14-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-14" onclick="toggle('ans-14',this)">▶ Answer</button></td>
   </tr>
@@ -284,15 +254,13 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אַבְרָהָם</td>
     <td><em>Abraham</em></td>
-    <td><strong>Pathach, Shewa, Qamets, Qamets</strong></td>
     <td colspan="2">No matres lectionis (the he is a consonant with Qamets under it)</td>
   </tr>
 
   <tr>
     <td class="num">15</td>
     <td class="heb">יְרוּשָׁלַיִם</td>
-    <td class="eng">Jerusalem</td>
-    <td><input class="f" id="15-v" placeholder=""></td>
+    <td><input class="f" id="15-e" placeholder="English name"></td>
     <td><select class="f" id="15-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
     <td><button class="rbtn" id="btn-15" onclick="toggle('ans-15',this)">▶ Answer</button></td>
   </tr>
@@ -300,7 +268,6 @@
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">יְרוּשָׁלַיִם</td>
     <td><em>Jerusalem</em></td>
-    <td><strong>Shewa, Shureq, Qamets, Pathach, Hireq</strong></td>
     <td colspan="2">Yes — ו (Shureq): waw with dagesh dot after resh = long U mater</td>
   </tr>
 
