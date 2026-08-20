@@ -4,7 +4,7 @@
 
 ---
 
-**Instructions:** For each Hebrew form: (1) Are any matres lectionis (vowel letters) present? (Yes / No). (2) If yes, which letter(s) — ו (waw), י (yod), or ה (he)? (3) What vowel does each mater represent?
+**Instructions:** For each Hebrew form: (1) Are any matres lectionis (vowel letters) present? (Yes / No). (2) If yes, which letter(s) — ו (waw), י (yod), or ה (he)? (3) Name the vowel — if a mater is present, give its compound name (e.g., Holem Waw); if no mater is present, give the plain vowel name (e.g., Qamets).
 
 ---
 
@@ -34,18 +34,18 @@
 
 | # | Form | English | Mater(es) Present? | Which Letter(s) | Vowel Name |
 |---|---|---|---|---|---|
-| 1 | אָב | father | No | — | — |
+| 1 | אָב | father | No | — | Qamets |
 | 2 | יוֹם | day | Yes | ו (waw) | Holem Waw |
 | 3 | כִּי | because | Yes | י (yod) | Hireq Yod |
 | 4 | תּוֹרָה | Torah (law) | Yes | ו and ה | Holem Waw; Qamets He |
 | 5 | שָׁלוֹם | peace | Yes | ו (waw) | Holem Waw |
 | 6 | בֵּית | house | Yes | י (yod) | Tsere Yod |
-| 7 | נֵר | lamp | No | — | — |
+| 7 | נֵר | lamp | No | — | Tsere |
 | 8 | שׁוֹפֵט | judge | Yes | ו (waw) | Holem Waw |
 | 9 | נָבִיא | prophet | Yes | י (yod) | Hireq Yod |
-| 10 | חֶסֶד | lovingkindness | No | — | — |
+| 10 | חֶסֶד | lovingkindness | No | — | Seghol; Seghol |
 | 11 | מְנוֹרָה | lampstand | Yes | ו and ה | Holem Waw; Qamets He |
 | 12 | בְּרִית | covenant | Yes | י (yod) | Hireq Yod |
-| 13 | מֶלֶךְ | king | No | — | — |
+| 13 | מֶלֶךְ | king | No | — | Seghol; Seghol |
 | 14 | עֵינַיִם | eyes | Yes | י (first yod) | Tsere Yod |
 | 15 | שָׂרָה | Sarah | Yes | ה (he) | Qamets He |
