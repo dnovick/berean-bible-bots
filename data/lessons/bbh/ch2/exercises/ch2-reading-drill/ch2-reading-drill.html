@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 — Consonant-Vowel Reading Drill</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1020px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .drill-row { margin: 1rem 0; border: 1px solid #ddd; border-radius: 6px; padding: .65rem 1rem; }
+  .drill-row.guttural { border-color: #c8a860; background: #fffdf4; }
+  .row-meta { display: flex; align-items: center; gap: 1rem; margin-bottom: .5rem; }
+  .row-num { font-weight: bold; color: #666; font-size: .88rem; min-width: 2rem; }
+  .cons-label { font-weight: bold; font-size: 1rem; color: #333; }
+  .guttural-note { font-size: .78rem; color: #8a6800; font-style: italic; }
+  button.rbtn { font-size: .76rem; padding: .14rem .55rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; margin-left: auto; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .syl-line { display: flex; flex-wrap: wrap; gap: 1.1rem; padding: .2rem 0; }
+  .syl { text-align: center; min-width: 3.2rem; }
+  .heb-syl { display: block; font-size: 2.4em; direction: rtl; unicode-bidi: embed; line-height: 1.5; color: #111; }
+  .vname { display: none; font-size: .72rem; color: #2a6e2a; text-align: center; margin-top: .12rem; font-style: italic; line-height: 1.3; }
+  hr.sec { border: none; border-top: 1px dashed #ccc; margin: 1.8rem 0 .8rem; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    .vname { display: none !important; }
+    .drill-row { break-inside: avoid; border: 1px solid #bbb; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 2 — Consonant-Vowel Reading Drill</h1>
+<p class="subtitle">BBH Chapter 2 · Hebrew Vowels · 15 rows × 10 syllables</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> Read each line aloud, pronouncing each syllable in order from left to right. Each line uses one consonant throughout. Your instructor will call on individual students to read a line. All vowel types from Chapter 2 appear across the fifteen lines, including matres lectionis and Hateph shewas.<br>
+  <em>Rows marked with ★ use guttural consonants and include Hateph (composite) shewas.</em>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Names</button>
+  <button onclick="hideAll()">Hide All Names</button>
+</div>
+
+<!-- Row 1: Bet -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">1</span>
+    <span class="cons-label">Bet — בּ</span>
+    <button class="rbtn" onclick="toggleRow(1,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">בּוּ</span><span class="vname" data-row="1">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">בָּ</span><span class="vname" data-row="1">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">בִּי</span><span class="vname" data-row="1">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">בַּ</span><span class="vname" data-row="1">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">בּוֹ</span><span class="vname" data-row="1">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">בֵּ</span><span class="vname" data-row="1">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">בֶּ</span><span class="vname" data-row="1">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">בֹּ</span><span class="vname" data-row="1">Holem</span></span>
+    <span class="syl"><span class="heb-syl">בֻּ</span><span class="vname" data-row="1">Qibbuts</span></span>
+    <span class="syl"><span class="heb-syl">בֵּי</span><span class="vname" data-row="1">Tsere Yod</span></span>
+  </div>
+</div>
+
+<!-- Row 2: Mem -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">2</span>
+    <span class="cons-label">Mem — מ</span>
+    <button class="rbtn" onclick="toggleRow(2,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">מָה</span><span class="vname" data-row="2">Qamets He</span></span>
+    <span class="syl"><span class="heb-syl">מִ</span><span class="vname" data-row="2">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">מֹ</span><span class="vname" data-row="2">Holem</span></span>
+    <span class="syl"><span class="heb-syl">מֶה</span><span class="vname" data-row="2">Seghol He</span></span>
+    <span class="syl"><span class="heb-syl">מֵ</span><span class="vname" data-row="2">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">מֵה</span><span class="vname" data-row="2">Tsere He</span></span>
+    <span class="syl"><span class="heb-syl">מַ</span><span class="vname" data-row="2">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">מֹה</span><span class="vname" data-row="2">Holem He</span></span>
+    <span class="syl"><span class="heb-syl">מֻ</span><span class="vname" data-row="2">Qibbuts</span></span>
+    <span class="syl"><span class="heb-syl">מָ</span><span class="vname" data-row="2">Qamets</span></span>
+  </div>
+</div>
+
+<!-- Row 3: Shin -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">3</span>
+    <span class="cons-label">Shin — שׁ</span>
+    <button class="rbtn" onclick="toggleRow(3,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">שִׁי</span><span class="vname" data-row="3">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">שֵׁ</span><span class="vname" data-row="3">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">שָׁ</span><span class="vname" data-row="3">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">שׁוּ</span><span class="vname" data-row="3">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">שַׁ</span><span class="vname" data-row="3">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">שֹׁ</span><span class="vname" data-row="3">Holem</span></span>
+    <span class="syl"><span class="heb-syl">שֵׁי</span><span class="vname" data-row="3">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">שׁוֹ</span><span class="vname" data-row="3">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">שֶׁ</span><span class="vname" data-row="3">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">שִׁ</span><span class="vname" data-row="3">Hireq</span></span>
+  </div>
+</div>
+
+<!-- Row 4: Lamed -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">4</span>
+    <span class="cons-label">Lamed — ל</span>
+    <button class="rbtn" onclick="toggleRow(4,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">לֵ</span><span class="vname" data-row="4">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">לוֹ</span><span class="vname" data-row="4">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">לַ</span><span class="vname" data-row="4">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">לָה</span><span class="vname" data-row="4">Qamets He</span></span>
+    <span class="syl"><span class="heb-syl">לִ</span><span class="vname" data-row="4">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">לֶ</span><span class="vname" data-row="4">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">לָ</span><span class="vname" data-row="4">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">לֵי</span><span class="vname" data-row="4">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">לֹ</span><span class="vname" data-row="4">Holem</span></span>
+    <span class="syl"><span class="heb-syl">לֻ</span><span class="vname" data-row="4">Qibbuts</span></span>
+  </div>
+</div>
+
+<!-- Row 5: Nun -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">5</span>
+    <span class="cons-label">Nun — נ</span>
+    <button class="rbtn" onclick="toggleRow(5,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">נָ</span><span class="vname" data-row="5">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">נֶה</span><span class="vname" data-row="5">Seghol He</span></span>
+    <span class="syl"><span class="heb-syl">נִי</span><span class="vname" data-row="5">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">נֵ</span><span class="vname" data-row="5">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">נֹ</span><span class="vname" data-row="5">Holem</span></span>
+    <span class="syl"><span class="heb-syl">נֶ</span><span class="vname" data-row="5">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">נוּ</span><span class="vname" data-row="5">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">נַ</span><span class="vname" data-row="5">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">נֹה</span><span class="vname" data-row="5">Holem He</span></span>
+    <span class="syl"><span class="heb-syl">נְ</span><span class="vname" data-row="5">Vocal Shewa</span></span>
+  </div>
+</div>
+
+<!-- Row 6: Dalet -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">6</span>
+    <span class="cons-label">Dalet — דּ</span>
+    <button class="rbtn" onclick="toggleRow(6,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">דֵּי</span><span class="vname" data-row="6">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">דָּ</span><span class="vname" data-row="6">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">דּוּ</span><span class="vname" data-row="6">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">דִּ</span><span class="vname" data-row="6">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">דֵּ</span><span class="vname" data-row="6">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">דּוֹ</span><span class="vname" data-row="6">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">דַּ</span><span class="vname" data-row="6">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">דִּי</span><span class="vname" data-row="6">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">דֹּ</span><span class="vname" data-row="6">Holem</span></span>
+    <span class="syl"><span class="heb-syl">דֶּ</span><span class="vname" data-row="6">Seghol</span></span>
+  </div>
+</div>
+
+<!-- Row 7: Alef (guttural) -->
+<div class="drill-row guttural">
+  <div class="row-meta">
+    <span class="row-num">7</span>
+    <span class="cons-label">Alef — א</span>
+    <span class="guttural-note">★ guttural — includes Hateph shewas</span>
+    <button class="rbtn" onclick="toggleRow(7,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">אֵ</span><span class="vname" data-row="7">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">אֲ</span><span class="vname" data-row="7">Hateph Pathach</span></span>
+    <span class="syl"><span class="heb-syl">אָ</span><span class="vname" data-row="7">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">אֶ</span><span class="vname" data-row="7">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">אֳ</span><span class="vname" data-row="7">Hateph Qamets</span></span>
+    <span class="syl"><span class="heb-syl">אִ</span><span class="vname" data-row="7">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">אַ</span><span class="vname" data-row="7">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">אֱ</span><span class="vname" data-row="7">Hateph Seghol</span></span>
+    <span class="syl"><span class="heb-syl">אֹ</span><span class="vname" data-row="7">Holem</span></span>
+    <span class="syl"><span class="heb-syl">אוּ</span><span class="vname" data-row="7">Shureq</span></span>
+  </div>
+</div>
+
+<!-- Row 8: Kaf -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">8</span>
+    <span class="cons-label">Kaf — כּ</span>
+    <button class="rbtn" onclick="toggleRow(8,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">כּוֹ</span><span class="vname" data-row="8">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">כַּ</span><span class="vname" data-row="8">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">כֵּי</span><span class="vname" data-row="8">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">כִּ</span><span class="vname" data-row="8">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">כָּה</span><span class="vname" data-row="8">Qamets He</span></span>
+    <span class="syl"><span class="heb-syl">כֶּ</span><span class="vname" data-row="8">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">כָּ</span><span class="vname" data-row="8">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">כֵּ</span><span class="vname" data-row="8">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">כֵּה</span><span class="vname" data-row="8">Tsere He</span></span>
+    <span class="syl"><span class="heb-syl">כֻּ</span><span class="vname" data-row="8">Qibbuts</span></span>
+  </div>
+</div>
+
+<!-- Row 9: He (guttural) -->
+<div class="drill-row guttural">
+  <div class="row-meta">
+    <span class="row-num">9</span>
+    <span class="cons-label">He — ה</span>
+    <span class="guttural-note">★ guttural — includes Hateph shewas</span>
+    <button class="rbtn" onclick="toggleRow(9,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">הֶ</span><span class="vname" data-row="9">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">הֳ</span><span class="vname" data-row="9">Hateph Qamets</span></span>
+    <span class="syl"><span class="heb-syl">הָ</span><span class="vname" data-row="9">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">הֲ</span><span class="vname" data-row="9">Hateph Pathach</span></span>
+    <span class="syl"><span class="heb-syl">הֵ</span><span class="vname" data-row="9">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">הֹ</span><span class="vname" data-row="9">Holem</span></span>
+    <span class="syl"><span class="heb-syl">הֱ</span><span class="vname" data-row="9">Hateph Seghol</span></span>
+    <span class="syl"><span class="heb-syl">הַ</span><span class="vname" data-row="9">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">הִ</span><span class="vname" data-row="9">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">הוּ</span><span class="vname" data-row="9">Shureq</span></span>
+  </div>
+</div>
+
+<!-- Row 10: Pe -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">10</span>
+    <span class="cons-label">Pe — פּ</span>
+    <button class="rbtn" onclick="toggleRow(10,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">פֵּי</span><span class="vname" data-row="10">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">פָּ</span><span class="vname" data-row="10">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">פּוּ</span><span class="vname" data-row="10">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">פֹּ</span><span class="vname" data-row="10">Holem</span></span>
+    <span class="syl"><span class="heb-syl">פֶּה</span><span class="vname" data-row="10">Seghol He</span></span>
+    <span class="syl"><span class="heb-syl">פִּ</span><span class="vname" data-row="10">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">פֵּ</span><span class="vname" data-row="10">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">פִּי</span><span class="vname" data-row="10">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">פַּ</span><span class="vname" data-row="10">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">פֹּה</span><span class="vname" data-row="10">Holem He</span></span>
+  </div>
+</div>
+
+<!-- Row 11: Taw -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">11</span>
+    <span class="cons-label">Taw — תּ</span>
+    <button class="rbtn" onclick="toggleRow(11,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">תּוֹ</span><span class="vname" data-row="11">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">תָּ</span><span class="vname" data-row="11">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">תִּי</span><span class="vname" data-row="11">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">תַּ</span><span class="vname" data-row="11">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">תֵּ</span><span class="vname" data-row="11">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">תֶּ</span><span class="vname" data-row="11">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">תּוּ</span><span class="vname" data-row="11">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">תֵּי</span><span class="vname" data-row="11">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">תֹּ</span><span class="vname" data-row="11">Holem</span></span>
+    <span class="syl"><span class="heb-syl">תִּ</span><span class="vname" data-row="11">Hireq</span></span>
+  </div>
+</div>
+
+<!-- Row 12: Resh -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">12</span>
+    <span class="cons-label">Resh — ר</span>
+    <button class="rbtn" onclick="toggleRow(12,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">רָ</span><span class="vname" data-row="12">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">רֵה</span><span class="vname" data-row="12">Tsere He</span></span>
+    <span class="syl"><span class="heb-syl">רִי</span><span class="vname" data-row="12">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">רֶ</span><span class="vname" data-row="12">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">רֹ</span><span class="vname" data-row="12">Holem</span></span>
+    <span class="syl"><span class="heb-syl">רוּ</span><span class="vname" data-row="12">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">רַ</span><span class="vname" data-row="12">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">רֵ</span><span class="vname" data-row="12">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">רָה</span><span class="vname" data-row="12">Qamets He</span></span>
+    <span class="syl"><span class="heb-syl">רִ</span><span class="vname" data-row="12">Hireq</span></span>
+  </div>
+</div>
+
+<!-- Row 13: Gimel -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">13</span>
+    <span class="cons-label">Gimel — גּ</span>
+    <button class="rbtn" onclick="toggleRow(13,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">גּוֹ</span><span class="vname" data-row="13">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">גָּ</span><span class="vname" data-row="13">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">גֶּה</span><span class="vname" data-row="13">Seghol He</span></span>
+    <span class="syl"><span class="heb-syl">גַּ</span><span class="vname" data-row="13">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">גֵּ</span><span class="vname" data-row="13">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">גּוּ</span><span class="vname" data-row="13">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">גִּי</span><span class="vname" data-row="13">Hireq Yod</span></span>
+    <span class="syl"><span class="heb-syl">גֹּ</span><span class="vname" data-row="13">Holem</span></span>
+    <span class="syl"><span class="heb-syl">גֵּי</span><span class="vname" data-row="13">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">גֶּ</span><span class="vname" data-row="13">Seghol</span></span>
+  </div>
+</div>
+
+<!-- Row 14: Ayin (guttural) -->
+<div class="drill-row guttural">
+  <div class="row-meta">
+    <span class="row-num">14</span>
+    <span class="cons-label">Ayin — ע</span>
+    <span class="guttural-note">★ guttural — includes Hateph shewas</span>
+    <button class="rbtn" onclick="toggleRow(14,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">עֶ</span><span class="vname" data-row="14">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">עֲ</span><span class="vname" data-row="14">Hateph Pathach</span></span>
+    <span class="syl"><span class="heb-syl">עָ</span><span class="vname" data-row="14">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">עֱ</span><span class="vname" data-row="14">Hateph Seghol</span></span>
+    <span class="syl"><span class="heb-syl">עַ</span><span class="vname" data-row="14">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">עֳ</span><span class="vname" data-row="14">Hateph Qamets</span></span>
+    <span class="syl"><span class="heb-syl">עִ</span><span class="vname" data-row="14">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">עֵ</span><span class="vname" data-row="14">Tsere</span></span>
+    <span class="syl"><span class="heb-syl">עֹ</span><span class="vname" data-row="14">Holem</span></span>
+    <span class="syl"><span class="heb-syl">עוּ</span><span class="vname" data-row="14">Shureq</span></span>
+  </div>
+</div>
+
+<!-- Row 15: Tsade -->
+<div class="drill-row">
+  <div class="row-meta">
+    <span class="row-num">15</span>
+    <span class="cons-label">Tsade — צ</span>
+    <button class="rbtn" onclick="toggleRow(15,this)">▶ Show Names</button>
+  </div>
+  <div class="syl-line">
+    <span class="syl"><span class="heb-syl">צֵי</span><span class="vname" data-row="15">Tsere Yod</span></span>
+    <span class="syl"><span class="heb-syl">צָה</span><span class="vname" data-row="15">Qamets He</span></span>
+    <span class="syl"><span class="heb-syl">צִ</span><span class="vname" data-row="15">Hireq</span></span>
+    <span class="syl"><span class="heb-syl">צוֹ</span><span class="vname" data-row="15">Holem Waw</span></span>
+    <span class="syl"><span class="heb-syl">צֶ</span><span class="vname" data-row="15">Seghol</span></span>
+    <span class="syl"><span class="heb-syl">צָ</span><span class="vname" data-row="15">Qamets</span></span>
+    <span class="syl"><span class="heb-syl">צַ</span><span class="vname" data-row="15">Pathach</span></span>
+    <span class="syl"><span class="heb-syl">צֹה</span><span class="vname" data-row="15">Holem He</span></span>
+    <span class="syl"><span class="heb-syl">צוּ</span><span class="vname" data-row="15">Shureq</span></span>
+    <span class="syl"><span class="heb-syl">צֵ</span><span class="vname" data-row="15">Tsere</span></span>
+  </div>
+</div>
+
+<script>
+function toggleRow(n, btn) {
+  var names = document.querySelectorAll('.vname[data-row="' + n + '"]');
+  var showing = btn.classList.contains('on');
+  names.forEach(function(el) { el.style.display = showing ? 'none' : 'block'; });
+  btn.classList.toggle('on', !showing);
+  btn.textContent = showing ? '▶ Show Names' : '▼ Hide Names';
+}
+function showAll() {
+  document.querySelectorAll('.vname').forEach(function(el) { el.style.display = 'block'; });
+  document.querySelectorAll('.rbtn').forEach(function(btn) {
+    btn.classList.add('on'); btn.textContent = '▼ Hide Names';
+  });
+}
+function hideAll() {
+  document.querySelectorAll('.vname').forEach(function(el) { el.style.display = 'none'; });
+  document.querySelectorAll('.rbtn').forEach(function(btn) {
+    btn.classList.remove('on'); btn.textContent = '▶ Show Names';
+  });
+}
+</script>
+</body>
+</html>
