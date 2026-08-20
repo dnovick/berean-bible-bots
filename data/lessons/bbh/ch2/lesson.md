@@ -67,7 +67,7 @@ i-class and u-class reduced vowels are not attested.
 
 ## Vowel Letters (§2.7–2.11)
 
-Certain Hebrew consonants — **ה**, **ו**, and **י** — can function as **vowel letters**, marking long vowel sounds. These combinations are referred to as vowel letters (not consonantal). The most common are Hireq Yod (ִי), Holem Waw (וֹ), and Shureq (וּ).
+Certain Hebrew consonants — **ה**, **ו**, and **י** — can function as **vowel letters**, marking long vowel sounds. These are also known by the Latin term ***matres lectionis*** (singular: *mater lectionis*, "mother of reading"), a name widely used in grammars, lexicons, and scholarly literature. The most common are Hireq Yod (ִי), Holem Waw (וֹ), and Shureq (וּ).
 
 ### With ה (§2.8)
 
