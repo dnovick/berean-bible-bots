@@ -11784,3 +11784,230 @@ def build_ch35_stem_id_drill(out_dir: Optional[str] = None) -> str:
         ['bbh', 'ch35', 'exercises', 'ch35-stem-id-drill'],
         'ch35-stem-id-drill.pdf', out_dir,
     )
+
+
+# ---------------------------------------------------------------------------
+# Chapter 2 — Additional exercises
+# ---------------------------------------------------------------------------
+
+
+class Ch2ProperNamesExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each proper name, list every vowel sign you see in left-to-right order '
+            'by its BBH name (e.g., Qamets, Hireq, Shewa). Then indicate whether any '
+            'vowel letters (matres lectionis — waw, yod, or he functioning as vowel '
+            'holders) are present. Note: distinguishing vocal from silent shewa is '
+            'covered in Chapter 3.'
+        )
+        rows = [
+            ['1',  'שָׂרָה',      'Sarah',     '', ''],
+            ['2',  'נֹחַ',                   'Noah',      '', ''],
+            ['3',  'דָּוִד',       'David',     '', ''],
+            ['4',  'רוּת',                   'Ruth',      '', ''],
+            ['5',  'לֵאָה',             'Leah',      '', ''],
+            ['6',  'מֹשֶׁה',       'Moses',     '', ''],
+            ['7',  'יַעֲקֹב', 'Jacob',     '', ''],
+            ['8',  'יִצְחָק', 'Isaac',     '', ''],
+            ['9',  'אַהֲרֹן', 'Aaron',     '', ''],
+            ['10', 'מִרְיָם', 'Miriam',    '', ''],
+            ['11', 'שְׁלֹמֹה', 'Solomon', '', ''],
+            ['12', 'אֱלִיָּהוּ', 'Elijah', '', ''],
+            ['13', 'יוֹסֵף',       'Joseph',    '', ''],
+            ['14', 'אַבְרָהָם', 'Abraham', '', ''],
+            ['15', 'יְרוּשָׁלַיִם', 'Jerusalem', '', ''],
+        ]
+        ans = [
+            ['1',  'שָׂרָה',      'Sarah',
+             'Qamets, Qamets He', 'Yes — he (Qamets He)'],
+            ['2',  'נֹחַ',                   'Noah',
+             'Holem, Pathach', 'No'],
+            ['3',  'דָּוִד',       'David',
+             'Qamets, Hireq', 'No (waw is a consonant)'],
+            ['4',  'רוּת',                   'Ruth',
+             'Shureq', 'Yes — waw (Shureq)'],
+            ['5',  'לֵאָה',             'Leah',
+             'Tsere, Qamets He', 'Yes — he (Qamets He)'],
+            ['6',  'מֹשֶׁה',       'Moses',
+             'Holem, Seghol He', 'Yes — he (Seghol He)'],
+            ['7',  'יַעֲקֹב', 'Jacob',
+             'Pathach, Hateph Pathach, Holem', 'No'],
+            ['8',  'יִצְחָק', 'Isaac',
+             'Hireq, Shewa, Qamets', 'No'],
+            ['9',  'אַהֲרֹן', 'Aaron',
+             'Pathach, Hateph Pathach, Holem', 'No'],
+            ['10', 'מִרְיָם', 'Miriam',
+             'Hireq, Shewa, Qamets', 'No (yod is a consonant)'],
+            ['11', 'שְׁלֹמֹה', 'Solomon',
+             'Shewa, Holem, Holem He', 'Yes — he (Holem He)'],
+            ['12', 'אֱלִיָּהוּ', 'Elijah',
+             'Hateph Seghol, Hireq, Qamets, Shureq', 'Yes — waw (Shureq)'],
+            ['13', 'יוֹסֵף',       'Joseph',
+             'Holem Waw, Tsere', 'Yes — waw (Holem Waw)'],
+            ['14', 'אַבְרָהָם', 'Abraham',
+             'Pathach, Shewa, Qamets, Qamets', 'No'],
+            ['15', 'יְרוּשָׁלַיִם', 'Jerusalem',
+             'Shewa, Shureq, Qamets, Pathach, Hireq', 'Yes — waw (Shureq)'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Hebrew Name', 'English Name', 'Vowels (in Order)', 'Matres Lectionis?'],
+            rows=rows,
+            col_ratios=[0.05, 0.15, 0.13, 0.42, 0.25],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch2_proper_names(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch2ProperNamesExercise,
+        'Chapter 2 — Sounding Out Proper Names',
+        'Hebrew Vowels — Identification in Proper Names',
+        ['bbh', 'ch2', 'exercises', 'ch2-proper-names'],
+        'ch2-proper-names.pdf',
+        out_dir,
+    )
+
+
+class Ch2VowelLettersExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each Hebrew form: (1) Are any matres lectionis (vowel letters) present? '
+            '(Yes / No). (2) If yes, which letter(s) — waw (ו), yod (י), or he (ה)? '
+            '(3) What vowel does each mater represent?'
+        )
+        rows = [
+            ['1',  'אָב',      'father',          '', '', ''],
+            ['2',  'יוֹם', 'day',             '', '', ''],
+            ['3',  'כִּי', 'because',         '', '', ''],
+            ['4',  'תּוֹרָה', 'Torah (law)', '', '', ''],
+            ['5',  'שָׁלוֹם', 'peace',       '', '', ''],
+            ['6',  'בֵּית',             'house',       '', '', ''],
+            ['7',  'נֵר',       'lamp',            '', '', ''],
+            ['8',  'שׁוֹפֵט', 'judge',       '', '', ''],
+            ['9',  'נָבִיא',       'prophet',     '', '', ''],
+            ['10', 'חֶסֶד',             'lovingkindness', '', '', ''],
+            ['11', 'מְנוֹרָה', 'lampstand', '', '', ''],
+            ['12', 'בְּרִית', 'covenant',    '', '', ''],
+            ['13', 'מֶלֶךְ',       'king',        '', '', ''],
+            ['14', 'עֵינַיִם', 'eyes',  '', '', ''],
+            ['15', 'שָׂרָה',       'Sarah',       '', '', ''],
+        ]
+        ans = [
+            ['1',  'אָב',      'father',          'No',  '—', '—'],
+            ['2',  'יוֹם', 'day',             'Yes', 'ו (waw)',  'Holem Waw'],
+            ['3',  'כִּי', 'because',         'Yes', 'י (yod)',  'Hireq Yod'],
+            ['4',  'תּוֹרָה', 'Torah (law)',
+             'Yes', 'ו and ה', 'Holem Waw; Qamets He'],
+            ['5',  'שָׁלוֹם', 'peace',
+             'Yes', 'ו (waw)', 'Holem Waw'],
+            ['6',  'בֵּית', 'house',
+             'Yes', 'י (yod)', 'Tsere Yod'],
+            ['7',  'נֵר',       'lamp',            'No',  '—', '—'],
+            ['8',  'שׁוֹפֵט', 'judge',
+             'Yes', 'ו (waw)', 'Holem Waw'],
+            ['9',  'נָבִיא',       'prophet',
+             'Yes', 'י (yod)', 'Hireq Yod'],
+            ['10', 'חֶסֶד', 'lovingkindness', 'No', '—', '—'],
+            ['11', 'מְנוֹרָה', 'lampstand',
+             'Yes', 'ו and ה', 'Holem Waw; Qamets He'],
+            ['12', 'בְּרִית', 'covenant',
+             'Yes', 'י (yod)', 'Hireq Yod'],
+            ['13', 'מֶלֶךְ', 'king', 'No', '—', '—'],
+            ['14', 'עֵינַיִם', 'eyes',
+             'Yes', 'י (first yod)', 'Tsere Yod'],
+            ['15', 'שָׂרָה', 'Sarah',
+             'Yes', 'ה (he)', 'Qamets He'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Form', 'English', 'Mater(es)?', 'Letter(s)', 'Vowel Name'],
+            rows=rows,
+            col_ratios=[0.05, 0.10, 0.20, 0.12, 0.18, 0.35],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch2_vowel_letters(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch2VowelLettersExercise,
+        'Chapter 2 — Vowel Letter Identification',
+        'Hebrew Matres Lectionis — Waw, Yod, and He as Vowel Holders',
+        ['bbh', 'ch2', 'exercises', 'ch2-vowel-letters'],
+        'ch2-vowel-letters.pdf',
+        out_dir,
+    )
+
+
+class Ch2QametsHatufExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'Both Qamets (long A) and Qamets Hatuf (short O) use the same T-bar shape. '
+            'For each item you are told which consonant bears the T-bar vowel and its '
+            'syllable context. Determine: (1) Syllable type — open or closed? '
+            '(2) Is the syllable accented? (3) Is a metheg present? '
+            'Then identify the vowel. Rule: Qamets Hatuf occurs in a CLOSED, '
+            'UNACCENTED syllable with NO metheg.'
+        )
+        rows = [
+            ['1',  'שָׁלוֹם', 'under שׁ', '', '', '', ''],
+            ['2',  'הָלְכָה', 'under ה',       '', '', '', ''],
+            ['3',  'יָד',       'under י',       '', '', '', ''],
+            ['4',  'חָכְמָה', 'under ח',       '', '', '', ''],
+            ['5',  'אָמַר', 'under א',    '', '', '', ''],
+            ['6',  'קָרְבָּן', 'under ק', '', '', '', ''],
+            ['7',  'כָּל',  'under כ',       '', '', '', ''],
+            ['8',  'כָּתְבָה', 'under כ', '', '', '', ''],
+            ['9',  'דָּבָר', 'under דּ (first)', '', '', '', ''],
+            ['10', 'מָלְכוֹ', 'under מ',       '', '', '', ''],
+            ['11', 'תּוֹרָה', 'under ר',       '', '', '', ''],
+            ['12', 'בָּרְכוּ', 'under בּ', '', '', '', ''],
+        ]
+        ans = [
+            ['1',  'שָׁלוֹם', 'under שׁ',
+             'Open',   'Yes', 'No', 'Qamets (long A)'],
+            ['2',  'הָלְכָה', 'under ה',
+             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
+            ['3',  'יָד',       'under י',
+             'Closed', 'Yes', 'No', 'Qamets (long A)'],
+            ['4',  'חָכְמָה', 'under ח',
+             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
+            ['5',  'אָמַר', 'under א',
+             'Open',   'No',  'No', 'Qamets (long A)'],
+            ['6',  'קָרְבָּן', 'under ק',
+             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
+            ['7',  'כָּל',  'under כ',
+             'Closed', 'Yes', 'No', 'Qamets (long A)'],
+            ['8',  'כָּתְבָה', 'under כ',
+             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
+            ['9',  'דָּבָר', 'under דּ (first)',
+             'Open',   'No',  'No', 'Qamets (long A)'],
+            ['10', 'מָלְכוֹ', 'under מ',
+             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
+            ['11', 'תּוֹרָה', 'under ר',
+             'Open',   'No',  'No', 'Qamets (long A)'],
+            ['12', 'בָּרְכוּ', 'under בּ',
+             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Word', 'Vowel Under', 'Syllable', 'Accented?', 'Metheg?',
+                     'Qamets or Qamets Hatuf?'],
+            rows=rows,
+            col_ratios=[0.04, 0.10, 0.14, 0.10, 0.10, 0.09, 0.43],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+def build_ch2_qamets_hatuf(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch2QametsHatufExercise,
+        'Chapter 2 — Qamets or Qamets Hatuf?',
+        'Distinguishing Long A (Qamets) from Short O (Qamets Hatuf)',
+        ['bbh', 'ch2', 'exercises', 'ch2-qamets-hatuf'],
+        'ch2-qamets-hatuf.pdf',
+        out_dir,
+    )
