@@ -95,16 +95,16 @@ FS_FOOTNOTE = 7
 CELL_PAD_V = 5     # top and bottom padding inside each data cell
 HEB_H = 26         # approximate visual height of Hebrew glyph at FS_HEB
 NAME_H = 8         # name text height at FS_NAME
-HEB_NAME_GAP = 1   # gap between glyph baseline and name top
+HEB_NAME_GAP = 5   # gap between glyph baseline and name top
 ENTRY_H = HEB_H + HEB_NAME_GAP + NAME_H   # ~35 pt per sub-entry
 ENTRY_GAP = 5      # vertical gap between consecutive sub-entries in one cell
 
 HDR_ROW_H = 24     # main header row height
 SUBHDR_ROW_H = 16  # sub-header row height (Plain / Vowel Letter)
 
-# ── Vowel data ───────────────────────────────────────────────────────────────
+# ── Vowel data ───────────────────────────────────────────────────────────────────────────
 # Each entry is (hebrew_unicode_str, 'Vowel Name')
-# Reduced vowels use מ (Mem) as representative letter (conventional for reduced)
+# Shureq uses precomposed U+FB35 (WAW WITH DAGESH) for reliable dot placement.
 
 ROWS = [
     {
@@ -112,7 +112,7 @@ ROWS = [
         'long_plain': [('בָּ', 'Qamets')],
         'long_mater': [('בָּה', 'Qamets He')],
         'short':      [('בַּ', 'Pathach')],
-        'reduced':    [('מֲ', 'Hateph Pathach')],
+        'reduced':    [('בֲּ', 'Hateph Pathach')],
     },
     {
         'class': 'e',
@@ -124,7 +124,7 @@ ROWS = [
             ('בֶּי', 'Seghol Yod'),
         ],
         'short':      [('בֶּ', 'Seghol')],
-        'reduced':    [('מֱ', 'Hateph Seghol')],
+        'reduced':    [('בֱּ', 'Hateph Seghol')],
     },
     {
         'class': 'i',
@@ -137,25 +137,25 @@ ROWS = [
         'class': 'o',
         'long_plain': [('בֹּ', 'Holem')],
         'long_mater': [
-            ('בּוֹ', 'Holem Waw'),
+            ('בּוֹ', 'Holem Waw'),
             ('בֹּה', 'Holem He'),
         ],
         'short':      [('בָּ', 'Qamets Hatuf¹')],
-        'reduced':    [('מֳ', 'Hateph Qamets')],
+        'reduced':    [('בֳּ', 'Hateph Qamets')],
     },
     {
         'class': 'u',
         'long_plain': [],
-        'long_mater': [('בּוּ', 'Shureq')],
+        'long_mater': [('בּוּ', 'Shureq')],
         'short':      [('בֻּ', 'Qibbuts')],
         'reduced':    [],
     },
     {
-        'class': '—',
+        'class': '—',  # em-dash
         'long_plain': [],
         'long_mater': [],
         'short':      [],
-        'reduced':    [('מְ', 'Shewa²')],
+        'reduced':    [('בְּ', 'Shewa²')],
     },
 ]
 
@@ -380,16 +380,29 @@ def build() -> None:
            TABLE_W, table_top - table_bottom, fill=0, stroke=1)
 
     # ── Footnotes ────────────────────────────────────────────────────────────
-    fn_y = table_bottom - 6
+    fn_y = table_bottom - 16   # 16 pt gap below table
+
+    def _fn_segments(c: Any, x: float, y: float, segments: List[Tuple[Any, ...]]) -> None:
+        """Draw mixed-font footnote text. segments: list of (text, font, size)."""
+        cur_x = x
+        for text, font, size in segments:
+            c.setFont(font, size)
+            c.drawString(cur_x, y, text)
+            cur_x += c.stringWidth(text, font, size)
+
     c.setFillColor(C_FOOTNOTE)
-    c.setFont(FONT_LATIN, FS_FOOTNOTE)
-    fn1 = ('¹ Qamets Hatuf (בָ) has the same glyph as Qamets '
-           'but is a short o-class vowel; context distinguishes them.')
-    fn2 = ('² Shewa (מְ) has no vowel class; vocal Shewa is a '
-           'reduced vowel. Silent Shewa has zero value. '
-           'Reduced vowels are shown with מ (Mem) as the representative letter.')
-    c.drawString(TABLE_X, fn_y, fn1)
-    c.drawString(TABLE_X, fn_y - 9, fn2)
+    _fn_segments(c, TABLE_X, fn_y, [
+        ('¹ Qamets Hatuf (', FONT_LATIN, FS_FOOTNOTE),
+        ('בָּ', FONT_HEB, FS_FOOTNOTE + 1),
+        (') has the same visual shape as Qamets but is a short o-class vowel; '
+         'context determines which is intended.', FONT_LATIN, FS_FOOTNOTE),
+    ])
+    _fn_segments(c, TABLE_X, fn_y - 10, [
+        ('² Shewa (', FONT_LATIN, FS_FOOTNOTE),
+        ('בְּ', FONT_HEB, FS_FOOTNOTE + 1),
+        (') has no vowel class; vocal Shewa is a reduced vowel, silent Shewa '
+         'has zero value.', FONT_LATIN, FS_FOOTNOTE),
+    ])
 
     c.save()
     print(f'Saved: {OUT_PATH}')
