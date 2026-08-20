@@ -11930,60 +11930,47 @@ class Ch2QametsHatufExercise(ExercisePDF):
             'Both Qamets (long A) and Qamets Hatuf (short O) use the same T-bar shape. '
             'For each item you are told which consonant bears the T-bar vowel and its '
             'syllable context. Determine: (1) Syllable type — open or closed? '
-            '(2) Is the syllable accented? (3) Is a metheg present? '
+            '(2) Is the syllable accented? '
             'Then identify the vowel. Rule: Qamets Hatuf occurs in a CLOSED, '
             'UNACCENTED syllable with NO metheg.'
         )
         rows = [
-            ['1',  'שָׁלוֹם', 'under שׁ', '', '', '', ''],
-            ['2',  'הָלְכָה', 'under ה',       '', '', '', ''],
-            ['3',  'יָד',       'under י',       '', '', '', ''],
-            ['4',  'חָכְמָה', 'under ח',       '', '', '', ''],
-            ['5',  'אָמַר', 'under א',    '', '', '', ''],
-            ['6',  'קָרְבָּן', 'under ק', '', '', '', ''],
-            ['7',  'כָּל',  'under כ',       '', '', '', ''],
-            ['8',  'כָּתְבָה', 'under כ', '', '', '', ''],
-            ['9',  'דָּבָר', 'under דּ (first)', '', '', '', ''],
-            ['10', 'מָלְכוֹ', 'under מ',       '', '', '', ''],
-            ['11', 'תּוֹרָה', 'under ר',       '', '', '', ''],
-            ['12', 'בָּרְכוּ', 'under בּ', '', '', '', ''],
+            ['1',  'שָׁלוֹם', 'under שׁ',         '', '', ''],
+            ['2',  'הָלְכָה', 'under ה',           '', '', ''],
+            ['3',  'יָד',     'under י',           '', '', ''],
+            ['4',  'חָכְמָה', 'under ח',           '', '', ''],
+            ['5',  'אָמַר',   'under א',           '', '', ''],
+            ['6',  'קָרְבָּן', 'under ק',          '', '', ''],
+            ['7',  'כָּל',    'under כ',           '', '', ''],
+            ['8',  'כָּתְבָה', 'under כ',          '', '', ''],
+            ['9',  'דָּבָר',  'under דּ (first)',  '', '', ''],
+            ['10', 'מָלְכוֹ', 'under מ',           '', '', ''],
+            ['11', 'תּוֹרָה', 'under ר',           '', '', ''],
+            ['12', 'בָּרְכוּ', 'under בּ',         '', '', ''],
         ]
         ans = [
-            ['1',  'שָׁלוֹם', 'under שׁ',
-             'Open',   'Yes', 'No', 'Qamets (long A)'],
-            ['2',  'הָלְכָה', 'under ה',
-             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
-            ['3',  'יָד',       'under י',
-             'Closed', 'Yes', 'No', 'Qamets (long A)'],
-            ['4',  'חָכְמָה', 'under ח',
-             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
-            ['5',  'אָמַר', 'under א',
-             'Open',   'No',  'No', 'Qamets (long A)'],
-            ['6',  'קָרְבָּן', 'under ק',
-             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
-            ['7',  'כָּל',  'under כ',
-             'Closed', 'Yes', 'No', 'Qamets (long A)'],
-            ['8',  'כָּתְבָה', 'under כ',
-             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
-            ['9',  'דָּבָר', 'under דּ (first)',
-             'Open',   'No',  'No', 'Qamets (long A)'],
-            ['10', 'מָלְכוֹ', 'under מ',
-             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
-            ['11', 'תּוֹרָה', 'under ר',
-             'Open',   'No',  'No', 'Qamets (long A)'],
-            ['12', 'בָּרְכוּ', 'under בּ',
-             'Closed', 'No',  'No', 'Qamets Hatuf (short O)'],
+            ['1',  'שָׁלוֹם', 'under שׁ',        'Open',   'Yes', 'Qamets (long A)'],
+            ['2',  'הָלְכָה', 'under ה',          'Closed', 'No',  'Qamets Hatuf (short O)'],
+            ['3',  'יָד',     'under י',          'Closed', 'Yes', 'Qamets (long A)'],
+            ['4',  'חָכְמָה', 'under ח',          'Closed', 'No',  'Qamets Hatuf (short O)'],
+            ['5',  'אָמַר',   'under א',          'Open',   'No',  'Qamets (long A)'],
+            ['6',  'קָרְבָּן', 'under ק',         'Closed', 'No',  'Qamets Hatuf (short O)'],
+            ['7',  'כָּל',    'under כ',          'Closed', 'Yes', 'Qamets (long A)'],
+            ['8',  'כָּתְבָה', 'under כ',         'Closed', 'No',  'Qamets Hatuf (short O)'],
+            ['9',  'דָּבָר',  'under דּ (first)', 'Open',   'No',  'Qamets (long A)'],
+            ['10', 'מָלְכוֹ', 'under מ',          'Closed', 'No',  'Qamets Hatuf (short O)'],
+            ['11', 'תּוֹרָה', 'under ר',          'Open',   'No',  'Qamets (long A)'],
+            ['12', 'בָּרְכוּ', 'under בּ',        'Closed', 'No',  'Qamets Hatuf (short O)'],
         ]
         self.add_generic_table(
-            headers=['#', 'Word', 'Vowel Under', 'Syllable', 'Accented?', 'Metheg?',
+            headers=['#', 'Word', 'Vowel Under', 'Syllable', 'Accented?',
                      'Qamets or Qamets Hatuf?'],
             rows=rows,
-            col_ratios=[0.04, 0.10, 0.14, 0.10, 0.10, 0.09, 0.43],
+            col_ratios=[0.04, 0.10, 0.14, 0.12, 0.12, 0.48],
             heb_cols=[1],
             show_answers=True,
             answer_rows=ans,
         )
-
 
 def build_ch2_qamets_hatuf(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(

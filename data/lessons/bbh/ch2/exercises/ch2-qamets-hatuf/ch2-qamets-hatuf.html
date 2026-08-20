@@ -42,7 +42,7 @@
 <p class="subtitle">BBH Chapter 2 · Distinguishing Long A from Short O · 12 items</p>
 
 <div class="instructions">
-  <strong>Instructions:</strong> Both Qamets (long A) and Qamets Hatuf (short O) share the same T-bar symbol (ָ). For each word you are told which consonant bears the T-bar vowel. Determine: (1) Syllable type — open or closed? (2) Is the syllable accented? (3) Is a Metheg present? Then identify the vowel.
+  <strong>Instructions:</strong> Both Qamets (long A) and Qamets Hatuf (short O) share the same T-bar symbol (ָ). For each word you are told which consonant bears the T-bar vowel. Determine: (1) Syllable type — open or closed? (2) Is the syllable accented? Then identify the vowel.
 </div>
 <div class="rule">
   <strong>Rule:</strong> <strong>Qamets Hatuf</strong> = closed syllable + unaccented + no metheg. All other cases = <strong>Qamets</strong> (long A).
@@ -61,7 +61,6 @@
     <th>Vowel Under</th>
     <th>Syllable Type</th>
     <th>Accented?</th>
-    <th>Metheg?</th>
     <th>Qamets or Qamets Hatuf?</th>
     <th></th>
   </tr>
@@ -72,7 +71,6 @@
     <td class="under">under שׁ</td>
     <td><select class="f" id="1-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="1-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="1-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="1-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-1" onclick="toggle('ans-1',this)">▶ Answer</button></td>
   </tr>
@@ -82,7 +80,6 @@
     <td class="under">under שׁ</td>
     <td>Open</td>
     <td>Yes</td>
-    <td>No</td>
     <td colspan="2"><strong>Qamets (long A)</strong> — open syllable</td>
   </tr>
 
@@ -92,7 +89,6 @@
     <td class="under">under ה</td>
     <td><select class="f" id="2-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="2-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="2-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="2-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-2" onclick="toggle('ans-2',this)">▶ Answer</button></td>
   </tr>
@@ -101,7 +97,6 @@
     <td class="ans-heb">הָלְכָה</td>
     <td class="under">under ה</td>
     <td>Closed</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets Hatuf (short O)</strong> — closed + unaccented + no metheg</td>
   </tr>
@@ -112,7 +107,6 @@
     <td class="under">under י</td>
     <td><select class="f" id="3-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="3-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="3-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="3-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-3" onclick="toggle('ans-3',this)">▶ Answer</button></td>
   </tr>
@@ -122,7 +116,6 @@
     <td class="under">under י</td>
     <td>Closed</td>
     <td>Yes</td>
-    <td>No</td>
     <td colspan="2"><strong>Qamets (long A)</strong> — accented (only syllable)</td>
   </tr>
 
@@ -132,7 +125,6 @@
     <td class="under">under ח</td>
     <td><select class="f" id="4-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="4-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="4-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="4-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-4" onclick="toggle('ans-4',this)">▶ Answer</button></td>
   </tr>
@@ -141,7 +133,6 @@
     <td class="ans-heb">חָכְמָה</td>
     <td class="under">under ח</td>
     <td>Closed</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets Hatuf (short O)</strong> — closed + unaccented + no metheg</td>
   </tr>
@@ -152,7 +143,6 @@
     <td class="under">under א</td>
     <td><select class="f" id="5-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="5-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="5-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="5-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-5" onclick="toggle('ans-5',this)">▶ Answer</button></td>
   </tr>
@@ -161,7 +151,6 @@
     <td class="ans-heb">אָמַר</td>
     <td class="under">under א</td>
     <td>Open</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets (long A)</strong> — open syllable</td>
   </tr>
@@ -172,7 +161,6 @@
     <td class="under">under ק</td>
     <td><select class="f" id="6-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="6-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="6-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="6-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-6" onclick="toggle('ans-6',this)">▶ Answer</button></td>
   </tr>
@@ -181,7 +169,6 @@
     <td class="ans-heb">קָרְבָּן</td>
     <td class="under">under ק</td>
     <td>Closed</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets Hatuf (short O)</strong> — closed + unaccented + no metheg</td>
   </tr>
@@ -192,7 +179,6 @@
     <td class="under">under כ</td>
     <td><select class="f" id="7-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="7-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="7-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="7-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-7" onclick="toggle('ans-7',this)">▶ Answer</button></td>
   </tr>
@@ -202,7 +188,6 @@
     <td class="under">under כ</td>
     <td>Closed</td>
     <td>Yes</td>
-    <td>No</td>
     <td colspan="2"><strong>Qamets (long A)</strong> — accented (only syllable)</td>
   </tr>
 
@@ -212,7 +197,6 @@
     <td class="under">under כ</td>
     <td><select class="f" id="8-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="8-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="8-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="8-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-8" onclick="toggle('ans-8',this)">▶ Answer</button></td>
   </tr>
@@ -221,7 +205,6 @@
     <td class="ans-heb">כָּתְבָה</td>
     <td class="under">under כ</td>
     <td>Closed</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets Hatuf (short O)</strong> — closed + unaccented + no metheg</td>
   </tr>
@@ -232,7 +215,6 @@
     <td class="under">under דּ (first)</td>
     <td><select class="f" id="9-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="9-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="9-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="9-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-9" onclick="toggle('ans-9',this)">▶ Answer</button></td>
   </tr>
@@ -241,7 +223,6 @@
     <td class="ans-heb">דָּבָר</td>
     <td class="under">under דּ (first)</td>
     <td>Open</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets (long A)</strong> — open syllable</td>
   </tr>
@@ -252,7 +233,6 @@
     <td class="under">under מ</td>
     <td><select class="f" id="10-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="10-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="10-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="10-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-10" onclick="toggle('ans-10',this)">▶ Answer</button></td>
   </tr>
@@ -261,7 +241,6 @@
     <td class="ans-heb">מָלְכוֹ</td>
     <td class="under">under מ</td>
     <td>Closed</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets Hatuf (short O)</strong> — closed + unaccented + no metheg</td>
   </tr>
@@ -272,7 +251,6 @@
     <td class="under">under ר</td>
     <td><select class="f" id="11-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="11-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="11-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="11-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-11" onclick="toggle('ans-11',this)">▶ Answer</button></td>
   </tr>
@@ -281,7 +259,6 @@
     <td class="ans-heb">תּוֹרָה</td>
     <td class="under">under ר</td>
     <td>Open</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets (long A)</strong> — open syllable</td>
   </tr>
@@ -292,7 +269,6 @@
     <td class="under">under בּ</td>
     <td><select class="f" id="12-s"><option value=""></option><option>Open</option><option>Closed</option></select></td>
     <td><select class="f" id="12-a"><option value=""></option><option>Yes</option><option>No</option></select></td>
-    <td><select class="f" id="12-me"><option value=""></option><option>Yes</option><option>No</option></select></td>
     <td><select class="f" id="12-q"><option value=""></option><option>Qamets (long A)</option><option>Qamets Hatuf (short O)</option></select></td>
     <td><button class="rbtn" id="btn-12" onclick="toggle('ans-12',this)">▶ Answer</button></td>
   </tr>
@@ -301,7 +277,6 @@
     <td class="ans-heb">בָּרְכוּ</td>
     <td class="under">under בּ</td>
     <td>Closed</td>
-    <td>No</td>
     <td>No</td>
     <td colspan="2"><strong>Qamets Hatuf (short O)</strong> — closed + unaccented + no metheg</td>
   </tr>
