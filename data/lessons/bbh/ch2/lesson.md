@@ -136,7 +136,7 @@ How to distinguish them is covered in chapter 3 (§3.6).
 
 ## Holem over שׂ and שׁ (§2.14)
 
-When Holem (בֹּ) appears with שׂ or שׁ, the two dots combine into one dot over the letter. That single dot serves two functions simultaneously: it distinguishes Sin from Shin, and it functions as the vowel Holem.
+When Holem (בֹּ) appears over **שׂ (Sin)**, the two dots merge into one. Both the Sin dot and the Holem dot occupy the same position — upper left of the letter — so a single dot does double duty: it identifies the letter as Sin (not Shin) and simultaneously functions as the vowel Holem. With **שׁ (Shin)** this does not happen: the Shin dot sits on the upper right while Holem sits on the upper left, so both dots remain visually distinct.
 
 ---
 
