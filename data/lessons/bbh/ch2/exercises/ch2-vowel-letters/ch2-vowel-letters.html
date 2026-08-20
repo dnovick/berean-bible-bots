@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Chapter 2 — Vowel Letter Identification</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 1020px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 1.8em; font-weight: bold; width: 6rem; text-align: center; }
+  td.eng { font-style: italic; width: 8rem; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .2rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2rem; text-align: center; }
+  .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.5em; font-weight: bold; width: 6rem; text-align: center; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f, select.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; -webkit-appearance: none; appearance: none; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Chapter 2 — Vowel Letter Identification</h1>
+<p class="subtitle">BBH Chapter 2 · Matres Lectionis — Waw, Yod, and He · 15 items</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each Hebrew form: (1) Are any matres lectionis (vowel letters) present? (Yes / No). (2) If yes, which letter(s) — ו (waw), י (yod), or ה (he)? (3) What vowel does each mater represent?
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr>
+    <th>#</th>
+    <th>Form</th>
+    <th>English</th>
+    <th>Mater(es) Present?</th>
+    <th>Which Letter(s)</th>
+    <th>Vowel Name</th>
+    <th></th>
+  </tr>
+
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">אָב</td>
+    <td class="eng">father</td>
+    <td><select class="f" id="1-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="1-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="1-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-1" onclick="toggle('ans-1',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">אָב</td>
+    <td><em>father</em></td>
+    <td>No</td>
+    <td>—</td>
+    <td colspan="2">—</td>
+  </tr>
+
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">יוֹם</td>
+    <td class="eng">day</td>
+    <td><select class="f" id="2-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="2-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="2-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-2" onclick="toggle('ans-2',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יוֹם</td>
+    <td><em>day</em></td>
+    <td>Yes</td>
+    <td>ו (waw)</td>
+    <td colspan="2"><strong>Holem Waw</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">כִּי</td>
+    <td class="eng">because</td>
+    <td><select class="f" id="3-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="3-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="3-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-3" onclick="toggle('ans-3',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כִּי</td>
+    <td><em>because</em></td>
+    <td>Yes</td>
+    <td>י (yod)</td>
+    <td colspan="2"><strong>Hireq Yod</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">תּוֹרָה</td>
+    <td class="eng">Torah (law)</td>
+    <td><select class="f" id="4-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="4-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="4-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-4" onclick="toggle('ans-4',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">תּוֹרָה</td>
+    <td><em>Torah (law)</em></td>
+    <td>Yes</td>
+    <td>ו and ה</td>
+    <td colspan="2"><strong>Holem Waw; Qamets He</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">שָׁלוֹם</td>
+    <td class="eng">peace</td>
+    <td><select class="f" id="5-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="5-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="5-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-5" onclick="toggle('ans-5',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שָׁלוֹם</td>
+    <td><em>peace</em></td>
+    <td>Yes</td>
+    <td>ו (waw)</td>
+    <td colspan="2"><strong>Holem Waw</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">6</td>
+    <td class="heb">בֵּית</td>
+    <td class="eng">house</td>
+    <td><select class="f" id="6-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="6-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="6-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-6" onclick="toggle('ans-6',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">בֵּית</td>
+    <td><em>house</em></td>
+    <td>Yes</td>
+    <td>י (yod)</td>
+    <td colspan="2"><strong>Tsere Yod</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">7</td>
+    <td class="heb">נֵר</td>
+    <td class="eng">lamp</td>
+    <td><select class="f" id="7-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="7-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="7-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-7" onclick="toggle('ans-7',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">נֵר</td>
+    <td><em>lamp</em></td>
+    <td>No</td>
+    <td>—</td>
+    <td colspan="2">— (Tsere here has no yod; it is a plain long E vowel sign)</td>
+  </tr>
+
+  <tr>
+    <td class="num">8</td>
+    <td class="heb">שׁוֹפֵט</td>
+    <td class="eng">judge</td>
+    <td><select class="f" id="8-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="8-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="8-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-8" onclick="toggle('ans-8',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שׁוֹפֵט</td>
+    <td><em>judge</em></td>
+    <td>Yes</td>
+    <td>ו (waw)</td>
+    <td colspan="2"><strong>Holem Waw</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">9</td>
+    <td class="heb">נָבִיא</td>
+    <td class="eng">prophet</td>
+    <td><select class="f" id="9-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="9-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="9-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-9" onclick="toggle('ans-9',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">נָבִיא</td>
+    <td><em>prophet</em></td>
+    <td>Yes</td>
+    <td>י (yod)</td>
+    <td colspan="2"><strong>Hireq Yod</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">10</td>
+    <td class="heb">חֶסֶד</td>
+    <td class="eng">lovingkindness</td>
+    <td><select class="f" id="10-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="10-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="10-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-10" onclick="toggle('ans-10',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">חֶסֶד</td>
+    <td><em>lovingkindness</em></td>
+    <td>No</td>
+    <td>—</td>
+    <td colspan="2">—</td>
+  </tr>
+
+  <tr>
+    <td class="num">11</td>
+    <td class="heb">מְנוֹרָה</td>
+    <td class="eng">lampstand</td>
+    <td><select class="f" id="11-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="11-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="11-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-11" onclick="toggle('ans-11',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מְנוֹרָה</td>
+    <td><em>lampstand</em></td>
+    <td>Yes</td>
+    <td>ו and ה</td>
+    <td colspan="2"><strong>Holem Waw; Qamets He</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">12</td>
+    <td class="heb">בְּרִית</td>
+    <td class="eng">covenant</td>
+    <td><select class="f" id="12-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="12-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="12-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-12" onclick="toggle('ans-12',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">בְּרִית</td>
+    <td><em>covenant</em></td>
+    <td>Yes</td>
+    <td>י (yod)</td>
+    <td colspan="2"><strong>Hireq Yod</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">13</td>
+    <td class="heb">מֶלֶךְ</td>
+    <td class="eng">king</td>
+    <td><select class="f" id="13-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="13-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="13-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-13" onclick="toggle('ans-13',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-13">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מֶלֶךְ</td>
+    <td><em>king</em></td>
+    <td>No</td>
+    <td>—</td>
+    <td colspan="2">—</td>
+  </tr>
+
+  <tr>
+    <td class="num">14</td>
+    <td class="heb">עֵינַיִם</td>
+    <td class="eng">eyes</td>
+    <td><select class="f" id="14-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="14-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="14-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-14" onclick="toggle('ans-14',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-14">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">עֵינַיִם</td>
+    <td><em>eyes</em></td>
+    <td>Yes</td>
+    <td>י (first yod)</td>
+    <td colspan="2"><strong>Tsere Yod</strong></td>
+  </tr>
+
+  <tr>
+    <td class="num">15</td>
+    <td class="heb">שָׂרָה</td>
+    <td class="eng">Sarah</td>
+    <td><select class="f" id="15-m"><option value=""></option><option>No</option><option>Yes</option></select></td>
+    <td><input class="f" id="15-l" placeholder="letter(s)"></td>
+    <td><input class="f" id="15-v" placeholder="vowel name"></td>
+    <td><button class="rbtn" id="btn-15" onclick="toggle('ans-15',this)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-15">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שָׂרָה</td>
+    <td><em>Sarah</em></td>
+    <td>Yes</td>
+    <td>ה (he)</td>
+    <td colspan="2"><strong>Qamets He</strong></td>
+  </tr>
+
+</table>
+
+<script>
+function toggle(id, btn) {
+  var r = document.getElementById(id);
+  if (r.style.display === 'none' || r.style.display === '') {
+    r.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+    btn.classList.add('on');
+  } else {
+    r.style.display = 'none';
+    btn.textContent = '▶ Answer';
+    btn.classList.remove('on');
+  }
+}
+function showAll() {
+  document.querySelectorAll('.ans-row').forEach(function(r) { r.style.display = 'table-row'; });
+  document.querySelectorAll('.rbtn').forEach(function(b) { b.textContent = '▼ Hide'; b.classList.add('on'); });
+}
+function hideAll() {
+  document.querySelectorAll('.ans-row').forEach(function(r) { r.style.display = 'none'; });
+  document.querySelectorAll('.rbtn').forEach(function(b) { b.textContent = '▶ Answer'; b.classList.remove('on'); });
+}
+function clearAll() {
+  document.querySelectorAll('.f').forEach(function(f) { f.value = ''; });
+}
+</script>
+
+</body>
+</html>
