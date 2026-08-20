@@ -79,6 +79,62 @@ signaling the reader to say *Adonai* rather than the divine name itself.
 
 ---
 
+## Other Text-Critical Conventions in the Masorah
+
+Beyond Qere/Ketiv, the Masoretic tradition records several other conventions that bear on
+the text's transmission and interpretation.
+
+**Tiqqune Sopherim** (תִּקּוּנֵי סוֹפְרִים, "scribal emendations") — A list of 18 passages
+where the Masoretes recorded that an earlier scribal tradition had euphemistically altered
+the original text, typically to avoid expressions that seemed too blunt or irreverent about
+God. For example, in Numbers 11:15 the tradition notes that "kill me" originally read
+"kill yourself" (referring to God), but scribes changed the subject to protect reverence.
+These 18 corrections are tracked in the Masorah and cited in BHS footnotes wherever they
+occur; they are directly relevant when making translation decisions.
+
+**Sebirin** (סְבִירִין, "one might expect") — Notes in the margin flagging places where
+a reader might expect a different word or form, but the text is correct as written. The
+Masoretes used *Sebirin* to preempt "corrections" by future copyists who might assume the
+unusual form was a scribal error.
+
+**Puncta Extraordinaria** ("extraordinary points") — Dots written above certain letters in
+15 passages throughout the Hebrew Bible (e.g., Numbers 9:10; Psalm 27:13), marking readings
+that the scribes considered uncertain, secondary, or doubtful. The dots do not alter the
+consonants; they signal that something unusual is happening at that point. Ancient
+interpreters debated their meaning; modern textual critics treat them as witnesses to
+early editorial uncertainty.
+
+---
+
+## The Masorah and the BHS Critical Apparatus — An Important Distinction
+
+Students working in BHS encounter two separate layers of annotation and often confuse them.
+
+**The Masorah** (Mp and Mm notes in the side and top/bottom margins) is the work of
+the Masoretes themselves — it focuses on *preserving* the received text: counting
+occurrences, flagging unusual spellings, recording Qere/Ketiv, and so on. The Masoretes
+were not trying to restore an original; they were ensuring the text they received was
+copied with perfect fidelity.
+
+**The BHS critical apparatus** (the small-print notes *below the text* at the bottom of
+each page, introduced by the verse number in superscript) is an entirely different layer —
+the work of modern 20th-century text critics. These notes record:
+
+- Variant readings from other Hebrew manuscripts
+- Differences in the ancient versions (Septuagint, Vulgate, Syriac Peshitta, Targums)
+- Readings from the Dead Sea Scrolls
+- Conjectural emendations proposed by modern scholars (marked **pr** [*proposuit*, proposed])
+
+The critical apparatus asks: "What did the original text most likely say?" The Masorah
+asks: "What does this received text say, and how do we transmit it without error?"
+
+Both appear on the same BHS page, but they represent very different scholarly projects
+separated by more than a thousand years. When you see a small circle or raised letter in
+the Hebrew text pointing you to a footnote at the bottom of the page, you are reading the
+critical apparatus — not the Masorah.
+
+---
+
 ## The Standard Hebrew Text Today
 
 When you use **Logos** or **Accordance** (or any major Bible software), the Hebrew text
