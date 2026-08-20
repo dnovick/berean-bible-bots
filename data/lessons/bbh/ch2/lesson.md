@@ -63,6 +63,8 @@ i-class and u-class reduced vowels are not attested.
 | Short | בַּ Pathach | בֶּ Seghol | בִּ Hireq | בָּ Qamets Hatuf | בֻּ Qibbuts |
 | Reduced | בֲּ Hateph Pathach | בֱּ Hateph Seghol | — | בֳּ Hateph Qamets | — |
 
+A printable one-page chart showing all vowels — including vowel letters — organized by class and type is available as a PDF: [ch2-vowel-chart.pdf](ch2-vowel-chart.pdf)
+
 ---
 
 ## Vowel Letters (§2.7–2.11)
