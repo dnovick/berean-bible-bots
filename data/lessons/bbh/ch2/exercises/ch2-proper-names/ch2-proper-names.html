@@ -50,6 +50,7 @@
   <button onclick="showAll()">Show All Answers</button>
   <button onclick="hideAll()">Hide All Answers</button>
   <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+  <button onclick="shuffle()">Shuffle</button>
 </div>
 
 <table>
@@ -296,6 +297,25 @@ function hideAll() {
 }
 function clearAll() {
   document.querySelectorAll('.f').forEach(function(f) { f.value = ''; });
+}
+function shuffle() {
+  hideAll();
+  clearAll();
+  var table = document.querySelector('table');
+  var rows = Array.from(table.rows);
+  var pairs = [];
+  for (var i = 1; i < rows.length; i += 2) {
+    pairs.push([rows[i], rows[i + 1]]);
+  }
+  for (var i = pairs.length - 1; i > 0; i--) {
+    var j = Math.floor(Math.random() * (i + 1));
+    var tmp = pairs[i]; pairs[i] = pairs[j]; pairs[j] = tmp;
+  }
+  pairs.forEach(function(pair, idx) {
+    pair[0].querySelector('.num').textContent = idx + 1;
+    table.appendChild(pair[0]);
+    table.appendChild(pair[1]);
+  });
 }
 </script>
 

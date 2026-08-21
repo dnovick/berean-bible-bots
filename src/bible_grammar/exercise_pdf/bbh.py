@@ -11974,6 +11974,7 @@ class Ch2QametsHatufExercise(ExercisePDF):
             answer_rows=ans,
         )
 
+
 def build_ch2_qamets_hatuf(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch2QametsHatufExercise,
