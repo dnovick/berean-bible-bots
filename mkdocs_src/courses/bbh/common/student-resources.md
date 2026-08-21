@@ -36,6 +36,23 @@ You need a tool that supports:
 
 **Class recommendation: Logos** — the textbook is available as a Logos resource, search syntax is well-documented, and free training videos are available.
 
+#### Recommended Class Package
+
+A curated package has been put together specifically for this class and is available at a reduced price through our Logos contact:
+
+| Item | Details |
+|------|---------|
+| Logos Max subscription | 1 year |
+| *Basics of Biblical Hebrew* | Text + workbook (Pratico & Van Pelt) |
+| Lexham Hebrew Bible (LHB) | Hebrew OT with morphological tagging |
+| **Total price** | **$299.12** |
+
+To order, contact our Logos representative directly:
+
+**John Groce** — Senior Sales Representative  
+Phone: (360) 398-5116  
+Email: john.groce@logos.com
+
 ### Free Options
 
 | Tool | Morphology Search | Lemma Search | Interlinear | Notes |
