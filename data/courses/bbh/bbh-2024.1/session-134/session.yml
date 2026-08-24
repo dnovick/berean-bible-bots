@@ -25,6 +25,7 @@ chapter: 32
 agenda:
   - title: "Housekeeping"
     duration: "10 min"
+  - title: "Adventure with Atnach"
   - title: "Lesson: BBH Ch32 — Pual Strong Verbs"
     url: "/lessons/hebrew/ch32/"
     duration: "30 min"
@@ -41,6 +42,8 @@ reading:
     duration: "20 min"
 
 sections:
+  - heading: "Adventure with Atnach"
+    file: "adventure-with-atnach.md"
   - heading: "Reference: Virtual Doubling vs. Compensatory Lengthening (II-Guttural Piel/Pual)"
     file: "ii-guttural-doubling-vs-lengthening.md"
   - heading: "Reference: Pual-Attested Verb Roots by Second-Radical Guttural/Resh"
