@@ -17,8 +17,8 @@ td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
 td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
 td.pgn { font-weight: bold; color: #333; width: 5rem; }
 td.heb-ans { font-size: 1.25rem; direction: rtl; unicode-bidi: embed; font-family: 'Arial Hebrew', Arial, sans-serif; color: #2a6e2a; min-width: 7rem; }
-input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
-input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+input.parse-field { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
+input.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
 .ans-row { display: none; background: #f0faf0; }
 .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
 .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
@@ -30,7 +30,7 @@ button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
 .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
 .clr:hover { background: #ffd8d8 !important; }
 hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
-@media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
+@media print { .controls, button.rbtn { display: none; } input.parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
 </style>
 </head>
 <body>
@@ -110,7 +110,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}
 function showAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='table-row');}
 function hideAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='none');}
-function clearAll(){document.querySelectorAll('input.f').forEach(i=>i.value='');}
+function clearAll(){document.querySelectorAll('input.parse-field').forEach(i=>i.value='');}
 </script>
 </body>
 </html>
