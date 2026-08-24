@@ -1,7 +1,7 @@
 # Chapter 32 — "Spot the Pual" Passage Exercise
 
 **Stem:** Pual (פֻּעַל) — Strong Verbs
-**Passages:** Num 22:6, 12, 23:8, 20 · Exo 29:36–37 · Exo 14:4 / Isa 43:23
+**Passages:** Num 22:6, 12, 23:8, 20 · Gen 25:8, 10 · Exo 14:4 / Isa 43:23
 
 ---
 
@@ -67,29 +67,29 @@ For each bolded verb, indicate:
 
 ---
 
-## Passage B — Exodus 29:36–37
+## Passage B — Genesis 25:8, 10
 
-*Context: Instructions for the consecration of the altar and tabernacle furnishings.*
+*Context: The death and burial of Abraham (Gen 25:7–10).*
 
-> וּפַ֣ר חַטָּ֔את תַּעֲשֶׂ֥ה לַיּ֖וֹם עַל־הַכִּפֻּרִ֑ים וְחִטֵּאתָ֙ עַל־הַמִּזְבֵּ֔חַ בְּכַפֶּרְךָ֖ עָלָ֑יו **וּמָשַׁחְתָּ֥ (9)** אֹת֖וֹ לְקַדְּשֽׁוֹ׃
+> וַיִּגְוַ֨ע **וַיָּ֤מָת (9)** אַבְרָהָם֙ בְּשֵׂיבָ֣ה טֹובָ֔ה זָקֵ֖ן וְשָׂבֵ֑עַ **וַיֵּאָ֖סֶף (10)** אֶל עַמָּֽיו׃
 
-"And a bull sin-offering you shall make each day for atonement, and you shall purify the altar when you make atonement for it, and you shall **anoint (9)** it to consecrate it." (Exo 29:36)
+"He expired, and **Abraham died (9)** at a good old age, old and full of years, and **was gathered (10)** to his people." (Gen 25:8)
 
 | # | Verb | Pual? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 9 | וּמָשַׁחְתָּ | | | | | |
+| 9 | וַיָּמָת | | | | | |
+| 10 | וַיֵּאָסֶף | | | | | |
 
 ---
 
-> שִׁבְעַ֣ת יָמִ֔ים תְּכַפֵּ֥ר עַל־הַמִּזְבֵּ֖חַ **וְקִדַּשְׁתָּ֣ (10)** אֹת֑וֹ **וְהָיָ֤ה (11)** הַמִּזְבֵּ֙חַ֙ קֹ֣דֶשׁ קָֽדָשִׁ֔ים כָּל־הַנֹּגֵ֥עַ בַּמִּזְבֵּ֖חַ **יִקְדָּשׁ (12)**׃
+> **וַיִּקְבְּר֤וּ (11)** אֹתֹו֙ יִצְחָ֣ק וְיִשְׁמָעֵ֔אל בָּנָ֖יו אֶל מְעָרַ֣ת הַמַּכְפֵּלָ֑ה … הַשָּׂדֶה֩ אֲשֶׁר קָנָ֨ה אַבְרָהָ֜ם … שָׁ֛מָּה **קֻבַּ֥ר (12)** אַבְרָהָ֖ם וְשָׂרָ֥ה אִשְׁתּֽוֹ׃
 
-"Seven days you shall make atonement for the altar and **consecrate (10)** it, and the altar shall **be (11)** most holy. Whatever **touches (—)** the altar shall **be consecrated (12)**." (Exo 29:37)
+"And Isaac and Ishmael his sons **buried him (11)** in the cave of Machpelah … the field that Abraham purchased … there **Abraham was buried (12)**, and Sarah his wife." (Gen 25:9–10)
 
 | # | Verb | Pual? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 10 | וְקִדַּשְׁתָּ | | | | | |
-| 11 | וְהָיָה | | | | | |
-| 12 | יִקְדָּשׁ | | | | | |
+| 11 | וַיִּקְבְּרוּ | | | | | |
+| 12 | קֻבַּר | | | | | |
 
 ---
 
@@ -133,7 +133,7 @@ For each bolded verb, indicate:
 
 2. Verb 3 (יוּאָר, Hophal) and verb 14 (כֻּבַּדְתַּנִי, Pual) both express passive meaning. What is the key visual feature that distinguishes a Hophal Imperfect from a Pual Perfect? What does each stem tell you about the corresponding active stem?
 
-3. Verbs 10 (וְקִדַּשְׁתָּ, Piel Weqatal) and 12 (יִקְדָּשׁ, Niphal Imperfect) from Exo 29:37 use the same root קדש. One is active (the priest consecrates the altar), the other is a passive/reflexive state result (things that touch become holy). How does this passage illustrate the difference between Piel (causative/factitive action) and Niphal (resulting state)?
+3. Verbs 11 (וַיִּקְבְּרוּ, Qal Wayyiqtol 3mp) and 12 (קֻבַּר, Pual Perfect 3ms) in Passage B both come from root קבר. One is Qal active (Isaac and Ishmael as subjects), the other is Pual passive (Abraham as the object). Describe the active/passive contrast. What does the Pual vowel pattern tell you about who is performing the burying action?
 
 ---
 
@@ -149,10 +149,10 @@ For each bolded verb, indicate:
 | 6 | קַבֹּה | No | Inf. Absolute | — | קבב | Qal — Inf. Abs. in negated construction: "what God has not cursed" |
 | 7 | זָעַם | No | Perfect | 3ms | זעם | Qal — "has denounced/been indignant" |
 | 8 | בָרֵךְ | No | Inf. Absolute | — | ברך | Piel — Inf. Abs.: "to bless" (cognate construction with לָקַח; Piel Inf. Abs. of ברך; tsere under R2 confirms Piel) |
-| 9 | וּמָשַׁחְתָּ | No | Weqatal | 2ms | משח | Qal — "and you shall anoint" |
-| 10 | וְקִדַּשְׁתָּ | No | Weqatal | 2ms | קדש | Piel — Factitive: "and you shall consecrate" (Hireq under R1 + Dagesh in R2 = Piel) |
-| 11 | וְהָיָה | No | Weqatal | 3ms | היה | Qal — "and it shall be" |
-| 12 | יִקְדָּשׁ | No | Imperfect | 3ms | קדש | Niphal — Passive/Reflexive: "shall become holy" (יִ prefix + dagesh in R1 = Niphal; no Qibbuts + R2 dagesh = not Pual) |
+| 9 | וַיָּמָת | No | Wayyiqtol | 3ms | מות | Qal — "and Abraham died" |
+| 10 | וַיֵּאָסֶף | No | Wayyiqtol | 3ms | אסף | Niphal — Passive: "was gathered to his people" |
+| 11 | וַיִּקְבְּרוּ | No | Wayyiqtol | 3mp | קבר | Qal — "and they buried him" (active) |
+| 12 | קֻבַּר | Yes | Perfect | 3ms | קבר | Pual — Passive: "was buried" (Qibbuts under R1 + Dagesh Forte in R2 = Pual; passive of Qal verb 11) |
 | 13 | וְכָבַדְתִּי | No | Weqatal | 1cs | כבד | Niphal — Reflexive/Passive: "I will get glory / be glorified" (וְנִ form; Niphal of כבד) |
 | 14 | כֻּבַּדְתַּנִי | Yes | Perfect | 2ms+1cs | כבד | Pual — Passive: "you have not honored me" (Qibbuts under R1 כֻ + Dagesh Forte in R2 בּ = Pual diagnostic) |
 | 15 | הוּקַם | No | Perfect | 3ms | קום | Hophal — Passive: "was set up/raised" (הוּ prefix with Shureq = Hophal Perfect marker; u-class but no Dagesh Forte in R2 because this is biconsonantal) |
@@ -160,7 +160,7 @@ For each bolded verb, indicate:
 > **Notes on distractors:**
 > - **#3 יוּאָר** is Hophal Imperfect of ארר. The יוּ prefix (Shureq = u-class vowel under prefix) is the Hophal marker. Compare: Pual would have Qibbuts under R1 with Dagesh in R2.
 > - **#4 תָאֹר** and **#6 קַבֹּה** and **#7 זָעַם** are Qal forms — no Pual u-class vowel under R1 with Dagesh in R2.
-> - **#10 וְקִדַּשְׁתָּ** is Piel (active), not Pual — Hireq under R1 (i-class) is the Piel marker.
-> - **#12 יִקְדָּשׁ** is Niphal, not Pual — the prefix יִ + dagesh in the first root consonant marks Niphal.
+> - **#10 וַיֵּאָסֶף** is Niphal Wayyiqtol, not Pual — the Niphal prefix + assimilation of nun into the root marks Niphal passive.
+> - **#11 וַיִּקְבְּרוּ** is Qal active of קבר, not Pual — no u-class vowel under R1 with Dagesh Forte in R2.
 > - **#15 הוּקַם** is Hophal Perfect — the הוּ prefix is the Hophal marker; no Dagesh Forte in R2 (biconsonantal root קום).
 > - **מְבֹרָךְ** (#2) and **בָּרוּךְ** (#5) are both Pual Participles of ברך — the compensatory Qamets under R1 (replacing expected Qibbuts) occurs because ר cannot take Dagesh Forte.
