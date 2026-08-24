@@ -540,7 +540,7 @@ No other weak class produces all three changes at once, which is why BBH singles
 | mp | מְדַבְּרִים | מְנַצְּלִים | |
 | fp | מְדַבְּרוֹת | מְנַצְּלוֹת | |
 
-> **Key:** The Piel preserves נ at R1 throughout — unlike the Qal imperfect or Hiphil where נ assimilates. The Piel Dagesh forte in R2 is the Piel marker. נ is simply a consonant that stays, so I-נ Piel forms look almost identical to strong Piel. Also common: נִחֵּם (to comfort, from נחם), where R2=ח (a guttural) receives compensatory lengthening instead of Dagesh forte.
+> **Key:** The Piel preserves נ at R1 throughout — unlike the Qal imperfect or Hiphil where נ assimilates. The Piel Dagesh forte in R2 is the Piel marker. נ is simply a consonant that stays, so I-נ Piel forms look almost identical to strong Piel. Also common: נִחַם (to comfort, from נחם), where R2=ח (a guttural) takes virtual doubling — no Dagesh forte, but the preceding vowel stays short (Patach, not lengthened). Contrast compensatory lengthening, which occurs with ר-medial roots like בֵּרַךְ where the vowel before ר lengthens.
 
 ---
 
