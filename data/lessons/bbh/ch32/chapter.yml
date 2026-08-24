@@ -9,7 +9,8 @@ focus: >
   when Hebrew authors prefer Pual to express the passive of an intensive or
   factitive action.
 
-flashcards: 
+flashcards:
+  - morphology
   - vocab
 
 exercises: 
