@@ -1,439 +1,558 @@
-# BBH Chapter 35 — Hithpael Weak Verbs (הִתְקַטֵּל)
-
----
+# BBH Chapter 35 — Hithpael Weak Verbs
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 35*
-*Builds on Ch34 (Hithpael Strong Verbs). Weak forms only — semantic functions not repeated.*
-
-> **Scope:** This chapter extends the Hithpael paradigm to eight weak-root classes. Each class modifies
-> the strong pattern in a predictable, phonologically motivated way. Functions (Reflexive, Reciprocal,
-> Iterative, Estimative, Denominative) were covered in Ch34 and are not repeated here.
-
-## 1. The Eight Weak Classes — Overview
-
-| Class | Label | Representative roots | What changes | Affected conjugations |
-|---|---|---|---|---|
-| I-guttural (Pe-Guttural) | `pe-guttural` | עָמַד, אָנַף | Guttural rejects dagesh in R1; composite shewa under R1; prefix vowel may adjust | Imperfect, wayyiqtol, imperative, inf. construct |
-| III-ח/ע (Lamed-Guttural) | `lamed-guttural` | רָחַם, שָׁמַע | Patach furtive before word-final ח/ע; a-class vowel shift before guttural | Perfect, imperfect, participle |
-| III-א (Lamed-Aleph) | `lamed-aleph` | רָפָא, נָבָא | Final א quiesces; preceding vowel lengthens compensatorily | Perfect 3ms/3fs, imperfect, inf. construct, participle |
-| III-ה (Lamed-He) | `lamed-he` | שָׁחָה, גָּלָה, עָלָה | Final ה is a vowel letter; endings contract; wayyiqtol apocopates; I-שׁ sibilant metathesis overlaps | All conjugations |
-| I-נ (Pe-Nun) | `pe-nun` | נָבָא, נָחַם | Root נ (R1) stands between הִתְ and R2 — no assimilation in Hithpael (contrast Qal/Hiphil) | All conjugations |
-| I-י (Pe-Yod) | `pe-yod` | יָצַב | Initial י retained as R1 between הִתְ and R2; no quiescence (contrast Qal imperfect) | All conjugations |
-| Biconsonantal (II-ו/י) | `biconsonantal` | (rare) | Medial vowel letter retained; full Hithpael prefix on two-consonant core | All conjugations |
-| Geminate (Ayin-Doubled) | `geminate` | אָנַן, מָהַה | R2 = R3; doubling may collapse; full Hithpael prefix maintained | All conjugations |
-
-> **Metathesis rules** (not a weak class but co-occurring with any I-sibilant root):
-> - **I-שׁ / I-שׂ / I-ס:** The הִתְ prefix swaps with the sibilant — הִתְ + שׁ → הִשְׁתַּ (e.g., הִשְׁתַּחֲוָה)
-> - **I-צ / I-ז:** The הִתְ prefix swaps AND the ת voices or changes — הִתְ + צ → הִצְתַּ → הִצְטַּ (e.g., הִצְטַדֵּק)
-
-> **Key principle:** None of these classes requires learning a new stem. Every change follows from
-> a standard phonological rule — quiescence, compensatory lengthening, composite shewa, or
-> metathesis — applied to the strong Hithpael pattern (הִתְקַטֵּל). Recognize the rule; the form follows.
 
 ---
 
-## 2. I-guttural (Pe-Guttural) Verbs
+## Introduction (§35.1)
 
-### Pattern
+This chapter extends the Hithpael stem to selected weak verb classes. Most of the strong verb diagnostics are retained in Geminate and III-ה verbs. It is only the II-Guttural class that exhibits significant variation from the strong verb, because the guttural in second root position cannot take the Daghesh Forte. Study of II-Guttural verbs in the Piel (Ch31) and Pual (Ch33) has prepared you for this chapter.
 
-The strong Hithpael perfect has a simple shewa under R1 after the הִתְ prefix: הִתְקַטֵּל. When R1 is a
-guttural (א, ה, ח, ע), the guttural refuses the simple shewa and takes a composite shewa instead —
-typically *hateph-patach* (under ע, ח) or *hateph-seghol* (under א). The preceding vowel adjusts
-accordingly: the *patach* (ַ) of the הִתְ prefix may lengthen toward *qamets* before ה/ח/ע. In the
-imperfect and wayyiqtol, the יִתְ prefix similarly adjusts before a guttural R1.
+---
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הִתְעַלֵּם — composite shewa (*hateph-patach*) under ע (R1); *tsere* in R2 (Hithpael marker)
-- **Imperfect 3ms:** יִתְעַלֵּם — יִתְ prefix; composite shewa under R1; *dagesh* in R2; *tsere*
-- **Wayyiqtol 3ms:** וַיִּתְעַלֵּם — וַיִּתְ prefix; composite shewa under R1
-- **Imperative 2ms:** הִתְעַלֵּם — same as perfect 3ms form (distinguish by context)
-- **Participle ms:** מִתְעַלֵּם — מִתְ prefix; composite shewa under R1; *dagesh* in R2
+## 1. Geminate Verbs (§35.2–35.3)
 
-### Paradigm Summary (3ms per conjugation)
+Paradigm verb: **פָּלַל** (to pray in Hithpael)
 
-| Conjugation | Strong (קטל) | I-guttural (עלם) |
+Most geminate verbs in the Hithpael retain all strong verb diagnostics. One minor exception with פָּלַל: the Daghesh Forte in R2 may be given up when R2 is followed by Shewa (sqnmlwy rule, §5.5, §30.15), as in the Perfect 3cp (הִתְפַּלְלוּ).
+
+### Perfect
+
+| PGN | הִתְפַּלֵּל |
+|---|---|
+| 3ms | הִתְפַּלֵּל |
+| 3fs | הִתְפַּלְלָה |
+| 2ms | הִתְפַּלַּ֫לְתָּ |
+| 2fs | הִתְפַּלַּלְתְּ |
+| 1cs | הִתְפַּלַּ֫לְתִּי |
+| 3cp | הִתְפַּלְלוּ |
+| 2mp | הִתְפַּלַּלְתֶּם |
+| 2fp | הִתְפַּלַּלְתֶּן |
+| 1cp | הִתְפַּלַּ֫לְנוּ |
+
+### Imperfect
+
+| PGN | יִתְפַּלֵּל |
+|---|---|
+| 3ms | יִתְפַּלֵּל |
+| 3fs | תִּתְפַּלֵּל |
+| 2ms | תִּתְפַּלֵּל |
+| 2fs | תִּתְפַּלְּלִי |
+| 1cs | אֶתְפַּלֵּל |
+| 3mp | יִתְפַּלְּלוּ |
+| 3fp | תִּתְפַּלֵּ֫לְנָה |
+| 2mp | תִּתְפַּלְּלוּ |
+| 2fp | תִּתְפַּלֵּ֫לְנָה |
+| 1cp | נִתְפַּלֵּל |
+
+### Imperative and Participle
+
+| PGN | Imperative | Participle |
 |---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְעַלֵּם |
-| Imperfect | יִתְקַטֵּל | יִתְעַלֵּם |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְעַלֵּם |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְעַלֵּם |
-| Imperative | הִתְקַטֵּל | הִתְעַלֵּם |
-| Inf. Construct | הִתְקַטֵּל | הִתְעַלֵּם |
-| Inf. Absolute | הִתְקַטֵּל | הִתְעַלֵּם |
-| Participle | מִתְקַטֵּל | מִתְעַלֵּם |
-
-### Key Corpus Examples
-
-- הִתְעַלֵּם (Deu 22:1) — "you must not ignore [your brother's ox or sheep]" — perfect 3ms used as prohibition with לֹא; composite shewa under ע is the I-guttural marker
-- וַיִּתְעַלֵּם (1 Sam 12:11) — "he delivered you from the hand of your enemies" — wayyiqtol 3ms; prefix יִתְ + composite shewa
-- הִתְחַזֵּק (2 Sam 10:12) — "be strong" — imperative 2ms from חָזַק (I-ח guttural); *hateph-patach* under ח
-- מִתְחַזֵּק (1 Chr 11:10) — "who gave him strong support" — participle ms; מִתְ prefix; composite shewa under ח
+| ms / 2ms | הִתְפַּלֵּל | מִתְפַּלֵּל |
+| fs / 2fs | הִתְפַּלְלִי | מִתְפַּלֶּ֫לֶת |
+| mp / 2mp | הִתְפַּלְלוּ | מִתְפַּלְלִים |
+| fp / 2fp | הִתְפַּלֵּ֫לְנָה | מִתְפַּלְלוֹת |
 
 ---
 
-## 3. III-ח/ע (Lamed-Guttural) Verbs
+## 2. III-ה Verbs (§35.4–35.5)
 
-### Pattern
+Paradigm verb: **גָּלָה** (to reveal oneself in Hithpael)
 
-When R3 is ח or ע, the guttural demands an *a*-class vowel in its syllable. In the Hithpael, the
-characteristic *tsere* under R2 (the Hithpael vowel) typically shifts toward *patach* when R3 is a
-guttural, and *patach furtive* appears before a word-final guttural in open syllables.
+All strong verb diagnostics are retained. The endings are the same as those seen on III-ה forms in other stems.
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הִתְרַחֵם — *patach* may shift toward *seghol* before word-final ח; the main
-  Hithpael markers (הִתְ prefix, *dagesh* in R2) remain intact
-- **Participle ms:** מִתְרַחֵם — *patach furtive* before final ח when the syllable is open
-- **Imperfect 3ms:** יִתְרַחֵם — standard יִתְ prefix; *a*-class before final ח/ע
+### Perfect
 
-> **Note:** The *patach furtive* is pronounced *before* the guttural (as a glide), though it is written
-> below the guttural. It does not appear when the guttural is followed by a suffix and stands in a
-> closed syllable.
+| PGN | הִתְגַּלָּה |
+|---|---|
+| 3ms | הִתְגַּלָּה |
+| 3fs | הִתְגַּלְּתָה |
+| 2ms | הִתְגַּלִּ֫יתָ |
+| 2fs | הִתְגַּלִּית |
+| 1cs | הִתְגַּלִּ֫יתִי |
+| 3cp | הִתְגַּלּוּ |
+| 2mp | הִתְגַּלִּיתֶם |
+| 2fp | הִתְגַּלִּיתֶן |
+| 1cp | הִתְגַּלִּ֫ינוּ |
 
-### Paradigm Summary (3ms per conjugation)
+### Imperfect
 
-| Conjugation | Strong (קטל) | III-ח/ע (רחם) |
-|---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְרַחֵם |
-| Imperfect | יִתְקַטֵּל | יִתְרַחֵם |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְרַחֵם |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְרַחֵם |
-| Imperative | הִתְקַטֵּל | הִתְרַחֵם |
-| Inf. Construct | הִתְקַטֵּל | הִתְרַחֵם |
-| Inf. Absolute | הִתְקַטֵּל | הִתְרַחֵם |
-| Participle | מִתְקַטֵּל | מִתְרַחֵם |
+| PGN | יִתְגַּלֶּה |
+|---|---|
+| 3ms | יִתְגַּלֶּה |
+| 3fs | תִּתְגַּלֶּה |
+| 2ms | תִּתְגַּלֶּה |
+| 2fs | תִּתְגַּלִּי |
+| 1cs | אֶתְגַּלֶּה |
+| 3mp | יִתְגַּלּוּ |
+| 3fp | תִּתְגַּלֶּ֫ינָה |
+| 2mp | תִּתְגַּלּוּ |
+| 2fp | תִּתְגַּלֶּ֫ינָה |
+| 1cp | נִתְגַּלֶּה |
 
-### Key Corpus Examples
+### Imperative and Participle
 
-- הִתְרַחֵם (Isa 27:11) — "he who made them will not have compassion on them" — perfect/imperfect Hithpael from רחם; reflexive/middle: "will show himself compassionate"
-- מִתְנַחֵם (Gen 6:6) — "and he was grieved" — participle from נחם (III-ח overlap with I-נ class); illustrates *a*-class vowel before final ח
-- יִתְנַחֵם (Exo 32:12) — "relent from this disaster" — imperfect 3ms; *a*-class vowel before final ח maintained
-
----
-
-## 4. III-א (Lamed-Aleph) Verbs
-
-### Pattern
-
-The final א of these roots quiesces (becomes silent) in word-final position. The vowel that would stand
-before it lengthens compensatorily. The Hithpael prefix הִתְ and the *dagesh* in R2 are otherwise intact.
-In practice, the form looks very similar to the strong Hithpael, but the word ends in a long vowel + silent
-א rather than a true consonantal ending.
-
-**Diagnostic markers:**
-- **Perfect 3ms:** הִתְרַפֵּא — *tsere* + silent א; form ends in visible א but it does not close the syllable
-- **Imperfect 3ms:** יִתְרַפֵּא — יִתְ prefix; *dagesh* in R2; *tsere* before silent final א
-- **Inf. Construct:** הִתְרַפֵּא (with לְ: לְהִתְרַפֵּא) — same form as perfect 3ms; lamed-preposition marks infinitive construct
-- **Participle ms:** מִתְרַפֵּא — מִתְ prefix; *tsere* before silent final א
-
-> **Compare:** Strong Hithpael perfect 3ms ends in the R3 consonant (הִתְקַטֵּל). III-א forms end in
-> visible א but it is quiescent — the syllable is effectively open with a long *tsere*.
-
-> **Exercise connection:** Verb 10 in the passage exercise — **לְהִתְרַפֵּא** (2 Kgs 8:29) — is the
-> Hithpael inf. construct of רפא (III-א), "to be healed / to seek healing." The לְ preposition
-> signals the infinitive construct function.
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (קטל) | III-א (רפא) | III-א (נבא) |
+| PGN | Imperative | Inf. Cs. | Participle |
 |---|---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְרַפֵּא | הִתְנַבֵּא |
-| Imperfect | יִתְקַטֵּל | יִתְרַפֵּא | יִתְנַבֵּא |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְרַפֵּא | וַיִּתְנַבֵּא |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְרַפֵּא | וְהִתְנַבֵּא |
-| Imperative | הִתְקַטֵּל | הִתְרַפֵּא | הִתְנַבֵּא |
-| Inf. Construct | הִתְקַטֵּל | הִתְרַפֵּא | הִתְנַבֵּא |
-| Inf. Absolute | הִתְקַטֵּל | הִתְרַפֵּא | הִתְנַבֵּא |
-| Participle | מִתְקַטֵּל | מִתְרַפֵּא | מִתְנַבֵּא |
-
-> **Note on נבא (I-נ + III-א):** The root נבא carries two weak features — I-נ and III-א. See
-> §6 for the I-נ discussion; the critical point is that in Hithpael the נ of the root does NOT
-> assimilate (unlike in the Niphal or Hiphil imperfect). The full paradigm column above reflects
-> the III-א effect; the I-נ column in §6 shows the same root with focus on the Pe-Nun behavior.
-
-### Key Corpus Examples
-
-- לְהִתְרַפֵּא (2 Kgs 8:29) — "to be healed / to seek healing" — **infinitive construct**; הִתְ prefix + *dagesh* in R2 (פּ) + *tsere* + silent א; לְ preposition confirms inf. construct function (exercise verb 10)
-- וַיִּתְנַבֵּא (1 Sam 18:10) — "and he prophesied" — wayyiqtol 3ms of נבא; יִתְ prefix clearly visible; *tsere* before quiescent א
-- הִתְנַבֵּא (Eze 37:7) — "So I prophesied" — perfect 1cs (הִתְנַבֵּאתִי); the 1cs suffix is added to the root; paradigm Hithpael denominative form
-- מִתְנַבְּאִים (1 Sam 10:5) — "prophesying" — participle mp; מִתְ prefix + *dagesh* in R2 + *shewa* + III-א form; denominative from נָבִיא
+| ms / 2ms | הִתְגַּלֵּה | הִתְגַּלּוֹת | מִתְגַּלֶּה |
+| fs / 2fs | הִתְגַּלִּי | | מִתְגַּלָּה |
+| mp / 2mp | הִתְגַּלּוּ | | מִתְגַּלִּים |
+| fp / 2fp | הִתְגַּלֶּ֫ינָה | | מִתְגַּלּוֹת |
 
 ---
 
-## 5. III-ה (Lamed-He) Verbs — Including I-שׁ/שׂ/ס Metathesis
+## 3. II-Guttural — Virtual Doubling (§35.6–35.7)
 
-### Pattern
+Paradigm verb: **נָחַם** (to relent, be consoled in Hithpael)
 
-The final ה of these roots is a vowel letter (mater lectionis), not a true consonant. In the Hithpael, III-ה
-roots show contracted endings throughout the paradigm, parallel to other stems. The Hithpael prefix
-הִתְ is otherwise intact — but when R1 is also a sibilant (שׁ, שׂ, ס), **metathesis** occurs
-simultaneously: the ת of the הִתְ prefix swaps with the sibilant. The root שׁחה (the most common
-Hithpael verb in the entire OT) combines both features: I-שׁ metathesis AND III-ה endings.
+The guttural ח in second root position rejects the Daghesh Forte. Virtual doubling preserves the Pathach under R1 (הִתְנַחֵם) in every form. All other strong verb diagnostics are retained.
 
-**Metathesis rule:**
-- הִתְ + שׁ → the שׁ and ת swap positions → הִשְׁתַּ
-- In the imperfect: יִתְ + שׁ → יִשְׁתַּ
-- In the wayyiqtol: וַיִּתְ + שׁ → וַיִּשְׁתַּ
+### Perfect
 
-**III-ה endings in Hithpael:**
-- **Perfect 3ms:** ends in ָה (qamets-he): הִשְׁתַּחֲוָה
-- **Imperfect 3ms:** ends in ֶה (seghol-he): יִשְׁתַּחֲוֶה
-- **Wayyiqtol 3ms:** apocopated — ה dropped, short vowel retained: וַיִּשְׁתַּחוּ (note: the וּ ending in this root reflects a retained historical glide; see §5a below)
-- **Imperative 2ms:** ends in ֵה (tsere-he): הִשְׁתַּחֲוֵה (poetic/rare) or imperative pl הִשְׁתַּחֲווּ
-- **Cohortative 1cp:** וְנִשְׁתַּחֲוֶה — cohortative ה added to the imperfect/cohortative form
-- **Inf. Construct:** הִשְׁתַּחֲוֹת — *holem-vav* + ת (cf. other III-ה inf. constructs)
-- **Participle ms:** מִשְׁתַּחֲוֶה — מִשְׁ prefix; seghol-he ending
+| PGN | הִתְנַחֵם |
+|---|---|
+| 3ms | הִתְנַחֵם |
+| 3fs | הִתְנַחֲמָה |
+| 2ms | הִתְנַחַ֫מְתָּ |
+| 2fs | הִתְנַחַמְתְּ |
+| 1cs | הִתְנַחַ֫מְתִּי |
+| 3cp | הִתְנַחֲמוּ |
+| 2mp | הִתְנַחַמְתֶּם |
+| 2fp | הִתְנַחַמְתֶּן |
+| 1cp | הִתְנַחַ֫מְנוּ |
 
-> **§5a — שׁחה in detail:** This root (שׁחה, III-ה) presents an extra complication: the final ה
-> conceals an underlying ו (waw) glide. Forms like וַיִּשְׁתַּחוּ retain the ו as part of the root,
-> making the wayyiqtol end in וּ rather than fully apocopating. Students should memorize the key forms
-> of this root as a special paradigm.
+### Imperfect
 
-> **Exercise connections:**
-> - Verb 2 (Gen 22:5): **וְנִשְׁתַּחֲוֶה** — Hithpael cohortative 1cp of שׁחה; I-שׁ metathesis + III-ה cohortative ending
-> - Verb 3 (Gen 18:2): **וַיִּשְׁתַּחוּ** — Hithpael wayyiqtol 3ms of שׁחה; apocopated with retained ו
-> - Verb 4 (Exo 20:5): **תִשְׁתַּחְוֶה** — Hithpael imperfect 2ms of שׁחה; I-שׁ metathesis + III-ה imperfect ending
+| PGN | יִתְנַחֵם |
+|---|---|
+| 3ms | יִתְנַחֵם |
+| 3fs | תִּתְנַחֵם |
+| 2ms | תִּתְנַחֵם |
+| 2fs | תִּתְנַחֲמִי |
+| 1cs | אֶתְנַחֵם |
+| 3mp | יִתְנַחֲמוּ |
+| 3fp | תִּתְנַחַ֫מְנָה |
+| 2mp | תִּתְנַחֲמוּ |
+| 2fp | תִּתְנַחַ֫מְנָה |
+| 1cp | נִתְנַחֵם |
 
-**Pure III-ה (without metathesis):**
-- הִתְגַּלָּה (reveal oneself) — גָּלָה, III-ה; perfect 3ms
-- הִתְעַלָּה (exalt oneself) — עָלָה, III-ה; perfect 3ms
-- הִתְחַנָּן (seek favor, plead) — חָנַן, III-ה (and geminate); perfect 3ms
+### Imperative and Participle
 
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (קטל) | III-ה (גלה) | III-ה + I-שׁ metathesis (שׁחה) |
+| PGN | Imperative | Inf. Cs. | Participle |
 |---|---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְגַּלָּה | הִשְׁתַּחֲוָה |
-| Imperfect | יִתְקַטֵּל | יִתְגַּלֶּה | יִשְׁתַּחֲוֶה |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְגַּל | וַיִּשְׁתַּחוּ |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְגַּלָּה | וְהִשְׁתַּחֲוָה |
-| Imperative | הִתְקַטֵּל | הִתְגַּלֵּה | הִשְׁתַּחֲווּ (pl) |
-| Inf. Construct | הִתְקַטֵּל | הִתְגַּלּוֹת | הִשְׁתַּחֲוֹת |
-| Inf. Absolute | הִתְקַטֵּל | הִתְגַּלֵּה | הִשְׁתַּחֲוֹ |
-| Participle | מִתְקַטֵּל | מִתְגַּלֶּה | מִשְׁתַּחֲוֶה |
-
-### Key Corpus Examples
-
-**שׁחה (III-ה + I-שׁ metathesis — the most common Hithpael verb in the OT, ~170 occurrences):**
-
-- וְנִשְׁתַּחֲוֶה (Gen 22:5) — "and we will worship" — **cohortative 1cp**; the ו introduces the cohortative of purpose; I-שׁ metathesis clearly visible (וְנִשְׁ- rather than וְנִתְשׁ-); III-ה cohortative ending ֶה (exercise verb 2)
-- וַיִּשְׁתַּחוּ (Gen 18:2) — "and he bowed down" — **wayyiqtol 3ms**; apocopated III-ה form with retained ו glide; Abraham's greeting of the three visitors (exercise verb 3)
-- תִשְׁתַּחְוֶה (Exo 20:5) — "you shall not bow down" — **imperfect 2ms** with negation לֹא; the second commandment; I-שׁ metathesis + III-ה imperfect ending ֶה (exercise verb 4)
-- הִשְׁתַּחֲווּ (Psa 95:6) — "bow down, kneel" — **imperative 2mp**; plural imperative form of שׁחה in the call to worship; I-שׁ metathesis + III-ה plural imperative ending
-
-**גלה (III-ה, without metathesis):**
-
-- נִגְלוּ (Gen 35:7) — "God had revealed himself" — Niphal perfect 3cp (distractor! — exercise verb 6); compare Hithpael הִתְגַּלָּה which is not used at this verse; the Niphal נִ- prefix is the key diagnostic against the Hithpael הִתְ prefix
-- הִתְגַּלָּה (Gen 35:7 context) — the Hithpael form does NOT appear here; the Niphal is used instead; students must distinguish נִגְלוּ (Niphal) from the Hithpael הִתְגַּלָּה
+| ms / 2ms | הִתְנַחֵם | הִתְנַחֵם | מִתְנַחֵם |
+| fs / 2fs | הִתְנַחֲמִי | | מִתְנַחֶ֫מֶת |
+| mp / 2mp | הִתְנַחֲמוּ | | מִתְנַחֲמִים |
+| fp / 2fp | הִתְנַחַ֫מְנָה | | מִתְנַחֲמוֹת |
 
 ---
 
-## 6. I-נ (Pe-Nun) Verbs
+## 4. II-Guttural — Compensatory Lengthening (§35.8–35.9)
 
-### Pattern
+Paradigm verb: **בָּרַךְ** (to bless; Hithpael: to bless oneself, be blessed)
 
-In the Niphal and Hiphil imperfect, a I-נ root's initial נ assimilates into R2 with *dagesh forte*.
-**In the Hithpael, this assimilation does NOT occur.** The reason: in the Hithpael, R1 (the נ) is
-not adjacent to a prefix that triggers assimilation — it follows the הִתְ prefix directly, and the נ
-simply stands as R1 with a *patach* vowel under it. The נ is preserved in all conjugations.
+The ר in second root position rejects the Daghesh Forte and the preceding Pathach lengthens to Qamets. Compared to the strong verb, neither the Daghesh Forte in R2 nor the Pathach under R1 is present. The distinctive הִתְ/יִתְ/מִתְ preformatives make stem identification reliable.
 
-**Diagnostic marker:** The full הִתְ prefix is followed by נַ (patach under נ) and then *dagesh* in R2
-(the standard Hithpael double). No assimilation of the נ; no trace of *dagesh* in R1 from assimilation.
+### Perfect
 
-**Paradigm:**
-- **Perfect 3ms:** הִתְנַבֵּא — הִתְ + נַ (Pe-Nun with patach) + בֵּ (dagesh in R2) + א (quiescent)
-- **Imperfect 3ms:** יִתְנַבֵּא — יִתְ prefix; נַ retained as R1
-- **Wayyiqtol 3ms:** וַיִּתְנַבֵּא — וַיִּתְ prefix; נַ retained
-- **Weqatal 2ms:** וְהִתְנַבִּיתָ — וְהִתְ prefix; 2ms suffix; cf. exercise verb 7
-- **Wayyiqtol 3mp:** וַיִּתְנַבְּאוּ — וַיִּתְ prefix; נַ retained; 3mp suffix אוּ added; cf. exercise verb 8
+| PGN | הִתְבָּרֵךְ |
+|---|---|
+| 3ms | הִתְבָּרֵךְ |
+| 3fs | הִתְבָּֽרְכָה |
+| 2ms | הִתְבָּרַ֫כְתָּ |
+| 2fs | הִתְבָּרַכְתְּ |
+| 1cs | הִתְבָּרַ֫כְתִּי |
+| 3cp | הִתְבָּֽרְכוּ |
+| 2mp | הִתְבָּרַכְתֶּם |
+| 2fp | הִתְבָּרַכְתֶּן |
+| 1cp | הִתְבָּרַ֫כְנוּ |
 
-> **Exercise connections:**
-> - Verb 7 (1 Sam 10:6): **וְהִתְנַבִּיתָ** — Hithpael weqatal 2ms of נבא (I-נ + III-א); "and you will prophesy"; the הִתְ prefix with full נַ (no assimilation) is the key to identification
-> - Verb 8 (1 Sam 10:11): **וַיִּתְנַבְּאוּ** — Hithpael wayyiqtol 3mp of נבא; the יִתְ prefix with full נַ (no assimilation) distinguishes this from what a Niphal wayyiqtol would look like
+### Imperfect
 
-> **Why no assimilation?** In the Qal imperfect of a I-נ root (e.g., יִפֹּל from נפל), the נ assimilates because
-> it directly follows the imperfect prefix יִ with no intervening letter. In the Hithpael, the sequence
-> is הִ + תְ + נַ: the נ is protected by the intervening ת. There is nothing to trigger assimilation into
-> the next consonant.
+| PGN | יִתְבָּרֵךְ |
+|---|---|
+| 3ms | יִתְבָּרֵךְ |
+| 3fs | תִּתְבָּרֵךְ |
+| 2ms | תִּתְבָּרֵךְ |
+| 2fs | תִּתְבָּֽרְכִי |
+| 1cs | אֶתְבָּרֵךְ |
+| 3mp | יִתְבָּֽרְכוּ |
+| 3fp | תִּתְבָּרֵ֫כְנָה |
+| 2mp | תִּתְבָּֽרְכוּ |
+| 2fp | תִּתְבָּרֵ֫כְנָה |
+| 1cp | נִתְבָּרֵךְ |
 
-### Paradigm Summary (3ms per conjugation)
+### Imperative and Participle
 
-| Conjugation | Strong (קטל) | I-נ (נחם) | I-נ + III-א (נבא) |
+| PGN | Imperative | Inf. Cs. | Participle |
 |---|---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְנַחֵם | הִתְנַבֵּא |
-| Imperfect | יִתְקַטֵּל | יִתְנַחֵם | יִתְנַבֵּא |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְנַחֵם | וַיִּתְנַבֵּא |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְנַחֵם | וְהִתְנַבֵּא |
-| Imperative | הִתְקַטֵּל | הִתְנַחֵם | הִתְנַבֵּא |
-| Inf. Construct | הִתְקַטֵּל | הִתְנַחֵם | הִתְנַבֵּא |
-| Inf. Absolute | הִתְקַטֵּל | הִתְנַחֵם | הִתְנַבֵּא |
-| Participle | מִתְקַטֵּל | מִתְנַחֵם | מִתְנַבֵּא |
-
-### Key Corpus Examples
-
-- וְהִתְנַבִּיתָ (1 Sam 10:6) — "and you will prophesy" — **weqatal 2ms** of נבא (I-נ + III-א); the Spirit of the LORD will rush upon Saul; הִתְ prefix with intact נַ; denominative Hithpael (exercise verb 7)
-- וַיִּתְנַבְּאוּ (1 Sam 10:11) — "and they prophesied" — **wayyiqtol 3mp** of נבא; יִתְ prefix; נַ not assimilated; אוּ suffix for 3mp (exercise verb 8)
-- הִתְנַחֵם (Gen 6:6) — "and he was sorry / relented" — **perfect 3ms** of נחם; God's sorrow over creating humanity; Hithpael reflexive/estimative: "he caused himself to feel sorrow"
-- וַיִּתְנַחֵם (Exo 32:14) — "and the LORD relented" — **wayyiqtol 3ms** of נחם; intact נַ under R1; a classic theological use of the Hithpael reflexive
+| ms / 2ms | הִתְבָּרֵךְ | הִתְבָּרֵךְ | מִתְבָּרֵךְ |
+| fs / 2fs | הִתְבָּֽרְכִי | | מִתְבָּרֶ֫כֶת |
+| mp / 2mp | הִתְבָּֽרְכוּ | | מִתְבָּֽרְכִים |
+| fp / 2fp | הִתְבָּרֵ֫כְנָה | | מִתְבָּֽרְכוֹת |
 
 ---
 
-## 7. I-י (Pe-Yod) Verbs
+## 5. Summary Chart (§35.10)
 
-### Pattern
+| Class | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| Strong | הִתְקַטֵּל | יִתְקַטֵּל | הִתְקַטֵּל | הִתְקַטֵּל | הִתְקַטֵּל | מִתְקַטֵּל |
+| Geminate | הִתְפַּלֵּל | יִתְפַּלֵּל | הִתְפַּלֵּל | הִתְפַּלֵּל | הִתְפַּלֵּל | מִתְפַּלֵּל |
+| III-ה | הִתְגַּלָּה | יִתְגַּלֶּה | הִתְגַּלֵּה | הִתְגַּלּוֹת | — | מִתְגַּלֶּה |
+| II-Guttural (Virtual Doubling) | הִתְנַחֵם | יִתְנַחֵם | הִתְנַחֵם | הִתְנַחֵם | הִתְנַחֵם | מִתְנַחֵם |
+| II-Guttural (Comp. Lengthening) | הִתְבָּרֵךְ | יִתְבָּרֵךְ | הִתְבָּרֵךְ | הִתְבָּרֵךְ | הִתְבָּרֵךְ | מִתְבָּרֵךְ |
 
-Roots beginning with י in the Hithpael retain the initial י as R1 between the הִתְ prefix and R2.
-Unlike the Qal imperfect (where I-י often quiesces), the Hithpael prefix הִתְ does not provide the
-same vowel environment that triggers quiescence. As a result, the Hithpael of I-י roots looks
-relatively regular: הִתְ + יַ (patach under י) + R2 with *dagesh*. The prefix vowel and יַ are
-distinct and the form is recognizable.
+---
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הִתְיַצֵּב — הִתְ prefix + יַ (full yod with patach) + *dagesh* in R2 + *tsere*
-- **Imperfect 3ms:** יִתְיַצֵּב — יִתְ prefix + יַ (full yod) + *dagesh* in R2
-- **Wayyiqtol 3ms:** וַיִּתְיַצֵּב — וַיִּתְ prefix + יַ
+## 6. I-Guttural (Pe-Guttural) Verbs
 
-### Paradigm Summary (3ms per conjugation)
+Paradigm verb: **עָלַם** (to hide; Hithpael: to ignore, hide oneself)
 
-| Conjugation | Strong (קטל) | I-י (יצב) |
+When R1 is a guttural (א, ה, ח, ע), the guttural takes the expected Pathach naturally (gutturals prefer a-class vowels). Where a simple vocal Shewa would appear under R1, the guttural takes a composite Shewa (Hateph-Pathach under ע/ח; Hateph-Seghol under א) and the preceding vowel adjusts. In the Hithpael, R1 carries Pathach in most forms, so I-guttural changes are minimal compared to other stems. The Daghesh Forte in R2 is unaffected (it falls on R2, not R1).
+
+### Perfect
+
+| PGN | הִתְעַלֵּם |
+|---|---|
+| 3ms | הִתְעַלֵּם |
+| 3fs | הִתְעַלְּמָה |
+| 2ms | הִתְעַלַּ֫מְתָּ |
+| 2fs | הִתְעַלַּמְתְּ |
+| 1cs | הִתְעַלַּ֫מְתִּי |
+| 3cp | הִתְעַלְּמוּ |
+| 2mp | הִתְעַלַּמְתֶּם |
+| 2fp | הִתְעַלַּמְתֶּן |
+| 1cp | הִתְעַלַּ֫מְנוּ |
+
+### Imperfect
+
+| PGN | יִתְעַלֵּם |
+|---|---|
+| 3ms | יִתְעַלֵּם |
+| 3fs | תִּתְעַלֵּם |
+| 2ms | תִּתְעַלֵּם |
+| 2fs | תִּתְעַלְּמִי |
+| 1cs | אֶתְעַלֵּם |
+| 3mp | יִתְעַלְּמוּ |
+| 3fp | תִּתְעַלֵּ֫מְנָה |
+| 2mp | תִּתְעַלְּמוּ |
+| 2fp | תִּתְעַלֵּ֫מְנָה |
+| 1cp | נִתְעַלֵּם |
+
+### Imperative and Participle
+
+| PGN | Imperative | Participle |
 |---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְיַצֵּב |
-| Imperfect | יִתְקַטֵּל | יִתְיַצֵּב |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְיַצֵּב |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְיַצֵּב |
-| Imperative | הִתְקַטֵּל | הִתְיַצֵּב |
-| Inf. Construct | הִתְקַטֵּל | הִתְיַצֵּב |
-| Inf. Absolute | הִתְקַטֵּל | הִתְיַצֵּב |
-| Participle | מִתְקַטֵּל | מִתְיַצֵּב |
+| ms / 2ms | הִתְעַלֵּם | מִתְעַלֵּם |
+| fs / 2fs | הִתְעַלְּמִי | מִתְעַלֶּ֫מֶת |
+| mp / 2mp | הִתְעַלְּמוּ | מִתְעַלְּמִים |
+| fp / 2fp | הִתְעַלֵּ֫מְנָה | מִתְעַלְּמוֹת |
 
-### Key Corpus Examples
+### Key examples
 
-- הִתְיַצֵּב (Gen 18:22) — "but Abraham still stood before the LORD" — **perfect 3ms** of יצב; note יַ (full yod) retained after הִתְ; Hithpael reflexive: "presented himself / took his stand"
-- וַיִּתְיַצֵּב (Num 22:22) — "and the angel of the LORD took his stand" — **wayyiqtol 3ms** of יצב; intact יַ between the וַיִּתְ prefix and R2; reflexive: "positioned himself"
-- יִתְיַצֵּב (Psa 2:2) — "the kings of the earth take their stand" — **imperfect 3mp** (יִתְיַצְּבוּ); plural with 3mp suffix; reflexive standing/positioning
+- הִתְעַלֵּם (Deu 22:1, 3, 4) — "you must not ignore" — reflexive; composite Shewa under ע when preceding vowel is simple
+- הִתְחַזֵּק (2 Sam 10:12) — "be strong" — Imperative 2ms from חָזַק; Hateph-Pathach under ח
+- מִתְחַזֵּק (1 Chr 11:10) — Participle ms; מִתְ prefix + composite Shewa under ח
 
 ---
 
-## 8. Biconsonantal (II-ו/י) Verbs
+## 7. III-ח/ע (Lamed-Guttural) Verbs
 
-### Pattern
+Paradigm verb: **שָׁלַח** (to send; Hithpael: to send oneself off, let loose)
 
-Biconsonantal roots (two true consonants with a medial long vowel) are rare in the Hithpael. Where
-they occur, the Hithpael prefix הִתְ is added to the two-consonant core, and the medial vowel letter
-(וּ or יִ) is retained. The stem's characteristic *dagesh* would fall on R2, but since there is no true
-R2 between two consonants, the doubling effectively disappears and the root's long medial vowel
-appears instead. These forms are uncommon enough that recognition rather than production is the
-primary goal.
+> **Note on שׁלח:** This root also exhibits I-שׁ metathesis (§10 below), so its Hithpael begins with הִשְׁתַּ rather than הִתְשַׁ. The paradigm below shows both effects together: I-שׁ metathesis AND III-ח (Pathach furtive before word-final ח).
 
-**Diagnostic marker:** The full הִתְ prefix signals Hithpael even when the root core is only two
-consonants. The form may look unusual but the prefix is unmistakable.
+When R3 is a guttural (ח or ע):
+- **Pathach furtive** appears before a word-final ח/ע that follows a long vowel in an open syllable (e.g., הִשְׁתַּלֵּחַ).
+- Before vowel-beginning suffixes, the guttural is not word-final and no Pathach furtive appears.
 
-### Paradigm Summary (3ms per conjugation)
+### Perfect
 
-| Conjugation | Strong (קטל) | Biconsonantal (בוש) |
+| PGN | הִשְׁתַּלֵּחַ |
+|---|---|
+| 3ms | הִשְׁתַּלֵּחַ |
+| 3fs | הִשְׁתַּלְּחָה |
+| 2ms | הִשְׁתַּלַּ֫חְתָּ |
+| 2fs | הִשְׁתַּלַּחְתְּ |
+| 1cs | הִשְׁתַּלַּ֫חְתִּי |
+| 3cp | הִשְׁתַּלְּחוּ |
+| 2mp | הִשְׁתַּלַּחְתֶּם |
+| 2fp | הִשְׁתַּלַּחְתֶּן |
+| 1cp | הִשְׁתַּלַּ֫חְנוּ |
+
+### Imperfect
+
+| PGN | יִשְׁתַּלֵּחַ |
+|---|---|
+| 3ms | יִשְׁתַּלֵּחַ |
+| 3fs | תִּשְׁתַּלֵּחַ |
+| 2ms | תִּשְׁתַּלֵּחַ |
+| 2fs | תִּשְׁתַּלְּחִי |
+| 1cs | אֶשְׁתַּלֵּחַ |
+| 3mp | יִשְׁתַּלְּחוּ |
+| 3fp | תִּשְׁתַּלֵּ֫חְנָה |
+| 2mp | תִּשְׁתַּלְּחוּ |
+| 2fp | תִּשְׁתַּלֵּ֫חְנָה |
+| 1cp | נִשְׁתַּלֵּחַ |
+
+### Imperative and Participle
+
+| PGN | Imperative | Participle |
 |---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְבּוֹשֵׁשׁ |
-| Imperfect | יִתְקַטֵּל | יִתְבּוֹשֵׁשׁ |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְבּוֹשֵׁשׁ |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְבּוֹשֵׁשׁ |
-| Imperative | הִתְקַטֵּל | הִתְבּוֹשֵׁשׁ |
-| Inf. Construct | הִתְקַטֵּל | הִתְבּוֹשֵׁשׁ |
-| Inf. Absolute | הִתְקַטֵּל | הִתְבּוֹשֵׁשׁ |
-| Participle | מִתְקַטֵּל | מִתְבּוֹשֵׁשׁ |
-
-> **Note on בוש:** The root בּוֹשׁ (be ashamed) is biconsonantal. In the Hithpael, it shows
-> geminate-like doubling of the final consonant: הִתְבּוֹשֵׁשׁ. This is the expected pattern
-> when a biconsonantal root "fills out" its slots in a triconsonantal-based stem; students should
-> recognize it as a special lexical form.
-
-### Key Corpus Examples
-
-- הִתְבּוֹשֵׁשׁ (Exo 32:1) — "Moses delayed" — **perfect 3ms** of בוש (Hithpael: "showed himself ashamed / was delayed"); the הִתְ prefix plus the long ōō vowel of the root and geminated final שׁ
-- וַיִּתְבּוֹשָׁשׁוּ (Gen 2:25) — "and they were not ashamed" — **wayyiqtol 3mp** of בוש (negated); יִתְ prefix + biconsonantal core + 3mp suffix; reflexive-middle sense
+| ms / 2ms | הִשְׁתַּלֵּחַ | מִשְׁתַּלֵּחַ |
+| fs / 2fs | הִשְׁתַּלְּחִי | מִשְׁתַּלֶּ֫חֶת |
+| mp / 2mp | הִשְׁתַּלְּחוּ | מִשְׁתַּלְּחִים |
+| fp / 2fp | הִשְׁתַּלֵּ֫חְנָה | מִשְׁתַּלְּחוֹת |
 
 ---
 
-## 9. Geminate (Ayin-Doubled, II=III) Verbs
+## 8. III-א (Lamed-Aleph) Verbs
 
-### Pattern
+Paradigm verb: **רָפָא** (to heal; Hithpael: to be healed, seek healing)
 
-Geminate roots (R2 = R3) in the Hithpael show the Hithpael prefix הִתְ followed by R1 and the
-doubled R2/R3. The *dagesh forte* required by the Hithpael in R2 may merge with the natural doubling
-of the geminate root, or the root may show other adjustments. In practice, the most common geminate
-Hithpael forms (e.g., הִתְאַנֵּן, הִתְמַהְמֵהַּ) are known as lexical items and recognized by the
-הִתְ prefix plus the doubled consonant.
+The final א quiesces in word-final position; the preceding vowel is retained as a long vowel. Before suffixes beginning with a vowel, the א functions as a consonant. The הִתְ prefix and Daghesh Forte in R2 are intact throughout.
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הִתְאַנֵּן — הִתְ prefix + אַ (R1 with patach) + נֵּ (dagesh in R2, which is also R3); *tsere* is the Hithpael characteristic vowel under R2
-- **Imperfect 3ms:** יִתְאוֹנֵן — יִתְ prefix; geminate root may show o-class vowel in imperfect (like other geminate classes)
+### Perfect
 
-### Paradigm Summary (3ms per conjugation)
+| PGN | הִתְרַפֵּא |
+|---|---|
+| 3ms | הִתְרַפֵּא |
+| 3fs | הִתְרַפְּאָה |
+| 2ms | הִתְרַפֵּ֫אתָ |
+| 2fs | הִתְרַפֵּאת |
+| 1cs | הִתְרַפֵּ֫אתִי |
+| 3cp | הִתְרַפְּאוּ |
+| 2mp | הִתְרַפֵּאתֶם |
+| 2fp | הִתְרַפֵּאתֶן |
+| 1cp | הִתְרַפֵּ֫אנוּ |
 
-| Conjugation | Strong (קטל) | Geminate (אנן) |
+### Imperfect
+
+| PGN | יִתְרַפֵּא |
+|---|---|
+| 3ms | יִתְרַפֵּא |
+| 3fs | תִּתְרַפֵּא |
+| 2ms | תִּתְרַפֵּא |
+| 2fs | תִּתְרַפְּאִי |
+| 1cs | אֶתְרַפֵּא |
+| 3mp | יִתְרַפְּאוּ |
+| 3fp | תִּתְרַפֵּ֫אנָה |
+| 2mp | תִּתְרַפְּאוּ |
+| 2fp | תִּתְרַפֵּ֫אנָה |
+| 1cp | נִתְרַפֵּא |
+
+### Imperative and Participle
+
+| PGN | Imperative | Participle |
 |---|---|---|
-| Perfect | הִתְקַטֵּל | הִתְאוֹנֵן |
-| Imperfect | יִתְקַטֵּל | יִתְאוֹנֵן |
-| Wayyiqtol | וַיִּתְקַטֵּל | וַיִּתְאוֹנֵן |
-| Weqatal | וְהִתְקַטֵּל | וְהִתְאוֹנֵן |
-| Imperative | הִתְקַטֵּל | הִתְאוֹנֵן |
-| Inf. Construct | הִתְקַטֵּל | הִתְאוֹנֵן |
-| Inf. Absolute | הִתְקַטֵּל | הִתְאוֹנֵן |
-| Participle | מִתְקַטֵּל | מִתְאוֹנֵן |
+| ms / 2ms | הִתְרַפֵּא | מִתְרַפֵּא |
+| fs / 2fs | הִתְרַפְּאִי | מִתְרַפְּאָה |
+| mp / 2mp | הִתְרַפְּאוּ | מִתְרַפְּאִים |
+| fp / 2fp | הִתְרַפֵּ֫אנָה | מִתְרַפְּאוֹת |
 
-### Key Corpus Examples
+### Key examples
 
-- וַיִּתְאוֹנְנוּ (Num 11:1) — "and the people complained" — **wayyiqtol 3mp** of אנן (geminate); the first complaint in the wilderness; יִתְ prefix + geminate root; Hithpael iterative/denominative: "they kept complaining"
-- הִתְאוֹנֵן (Num 11:1) — underlying form of the root; **perfect 3ms** geminate pattern
-- הִתְמַהְמֵהַּ (Gen 19:16) — "but he lingered" — **perfect 3ms** of מהה (geminate); patach furtive before final ח; the Hithpael iterative-intensive sense: "he kept delaying / lingering"; the doubled מ is diagnostic
+- לְהִתְרַפֵּא (2 Kgs 8:29) — Inf. Construct; לְ preposition + הִתְ prefix + Daghesh in R2 + Tsere + silent א
+- וַיִּתְנַבֵּא (1 Sam 18:10) — Wayyiqtol 3ms of נָבָא (I-נ + III-א)
+- מִתְנַבְּאִים (1 Sam 10:5) — Participle mp; denominative from נָבִיא
 
 ---
 
-## 10. Metathesis Summary — I-Sibilant Roots
+## 9. I-נ (Pe-Nun) Verbs
 
-Metathesis is not a "weak class" (the root itself is not phonologically weak) but it co-occurs with
-any root whose R1 is a sibilant (שׁ, שׂ, ס, צ, ז). The הִתְ prefix's ת swaps with R1 before the vowel
-is placed. This affects every conjugation that has הִתְ / יִתְ / מִתְ:
+Paradigm verb: **נָחַם** (to comfort; Hithpael: to relent, be sorry)
 
-| R1 | Metathesis rule | Example root | Before metathesis | After metathesis | Attested form |
+In the Niphal and Hiphil imperfect, the initial נ assimilates into R2 with Daghesh Forte. **In the Hithpael, this assimilation does not occur.** The נ of R1 stands directly after the הִתְ prefix and is fully preserved in all conjugations. No assimilation occurs because the ת of the prefix stands between the prefix vowel and נ, removing the phonological trigger.
+
+### Perfect
+
+| PGN | הִתְנַחֵם |
+|---|---|
+| 3ms | הִתְנַחֵם |
+| 3fs | הִתְנַחֲמָה |
+| 2ms | הִתְנַחַ֫מְתָּ |
+| 2fs | הִתְנַחַמְתְּ |
+| 1cs | הִתְנַחַ֫מְתִּי |
+| 3cp | הִתְנַחֲמוּ |
+| 2mp | הִתְנַחַמְתֶּם |
+| 2fp | הִתְנַחַמְתֶּן |
+| 1cp | הִתְנַחַ֫מְנוּ |
+
+### Imperfect
+
+| PGN | יִתְנַחֵם |
+|---|---|
+| 3ms | יִתְנַחֵם |
+| 3fs | תִּתְנַחֵם |
+| 2ms | תִּתְנַחֵם |
+| 2fs | תִּתְנַחֲמִי |
+| 1cs | אֶתְנַחֵם |
+| 3mp | יִתְנַחֲמוּ |
+| 3fp | תִּתְנַחַ֫מְנָה |
+| 2mp | תִּתְנַחֲמוּ |
+| 2fp | תִּתְנַחַ֫מְנָה |
+| 1cp | נִתְנַחֵם |
+
+### Imperative and Participle
+
+| PGN | Imperative | Participle |
+|---|---|---|
+| ms / 2ms | הִתְנַחֵם | מִתְנַחֵם |
+| fs / 2fs | הִתְנַחֲמִי | מִתְנַחֶ֫מֶת |
+| mp / 2mp | הִתְנַחֲמוּ | מִתְנַחֲמִים |
+| fp / 2fp | הִתְנַחַ֫מְנָה | מִתְנַחֲמוֹת |
+
+### Key examples
+
+- הִתְנַחֵם (Gen 6:6) — Perfect 3ms; God's sorrow over creating humanity; נ is intact after הִתְ
+- וַיִּתְנַחֵם (Exo 32:14) — Wayyiqtol 3ms; "the LORD relented"; reflexive use
+- וְהִתְנַבִּיתָ (1 Sam 10:6) — Weqatal 2ms of נבא (I-נ + III-א); נ intact, no assimilation
+
+---
+
+## 10. I-י (Pe-Yod) Verbs
+
+Paradigm verb: **יָצַב** (Hithpael: to station oneself, take a stand, present oneself)
+
+Roots beginning with י retain the initial י as R1 in the Hithpael, unlike the Qal imperfect where I-י often quiesces. The Hithpael prefix הִתְ does not provide the vowel environment that triggers quiescence, so the forms are regular: הִתְ + יַ + R2 (Daghesh) + Tsere throughout.
+
+### Perfect
+
+| PGN | הִתְיַצֵּב |
+|---|---|
+| 3ms | הִתְיַצֵּב |
+| 3fs | הִתְיַצְּבָה |
+| 2ms | הִתְיַצַּ֫בְתָּ |
+| 2fs | הִתְיַצַּבְתְּ |
+| 1cs | הִתְיַצַּ֫בְתִּי |
+| 3cp | הִתְיַצְּבוּ |
+| 2mp | הִתְיַצַּבְתֶּם |
+| 2fp | הִתְיַצַּבְתֶּן |
+| 1cp | הִתְיַצַּ֫בְנוּ |
+
+### Imperfect
+
+| PGN | יִתְיַצֵּב |
+|---|---|
+| 3ms | יִתְיַצֵּב |
+| 3fs | תִּתְיַצֵּב |
+| 2ms | תִּתְיַצֵּב |
+| 2fs | תִּתְיַצְּבִי |
+| 1cs | אֶתְיַצֵּב |
+| 3mp | יִתְיַצְּבוּ |
+| 3fp | תִּתְיַצֵּ֫בְנָה |
+| 2mp | תִּתְיַצְּבוּ |
+| 2fp | תִּתְיַצֵּ֫בְנָה |
+| 1cp | נִתְיַצֵּב |
+
+### Imperative and Participle
+
+| PGN | Imperative | Participle |
+|---|---|---|
+| ms / 2ms | הִתְיַצֵּב | מִתְיַצֵּב |
+| fs / 2fs | הִתְיַצְּבִי | מִתְיַצֶּ֫בֶת |
+| mp / 2mp | הִתְיַצְּבוּ | מִתְיַצְּבִים |
+| fp / 2fp | הִתְיַצֵּ֫בְנָה | מִתְיַצְּבוֹת |
+
+### Key examples
+
+- הִתְיַצֵּב (Gen 18:22) — Perfect 3ms; "Abraham still stood before the LORD"; full י retained
+- וַיִּתְיַצֵּב (Num 22:22) — Wayyiqtol 3ms; "the angel of the LORD took his stand"
+- יִתְיַצְּבוּ (Psa 2:2) — Imperfect 3mp; "the kings of the earth take their stand"
+
+---
+
+## 11. Biconsonantal (II-ו/י) Verbs
+
+Biconsonantal roots in the Hithpael are uncommon. The הִתְ prefix is added to the two-consonant core with its medial long vowel; since there is no true R2 between two consonants to carry the Daghesh Forte, the characteristic doubling is replaced by gemination of the final consonant. Recognition is the primary goal.
+
+Paradigm verb: **בּוּשׁ** (to be ashamed; Hithpael הִתְבּוֹשֵׁשׁ: to show oneself ashamed, delay)
+
+### Perfect
+
+| PGN | הִתְבּוֹשֵׁשׁ |
+|---|---|
+| 3ms | הִתְבּוֹשֵׁשׁ |
+| 3fs | הִתְבּוֹשְׁשָׁה |
+| 2ms | הִתְבּוֹשַׁ֫שְׁתָּ |
+| 2fs | הִתְבּוֹשַׁשְׁתְּ |
+| 1cs | הִתְבּוֹשַׁ֫שְׁתִּי |
+| 3cp | הִתְבּוֹשְׁשׁוּ |
+| 2mp | הִתְבּוֹשַׁשְׁתֶּם |
+| 2fp | הִתְבּוֹשַׁשְׁתֶּן |
+| 1cp | הִתְבּוֹשַׁ֫שְׁנוּ |
+
+### Imperfect
+
+| PGN | יִתְבּוֹשֵׁשׁ |
+|---|---|
+| 3ms | יִתְבּוֹשֵׁשׁ |
+| 3fs | תִּתְבּוֹשֵׁשׁ |
+| 2ms | תִּתְבּוֹשֵׁשׁ |
+| 2fs | תִּתְבּוֹשְׁשִׁי |
+| 1cs | אֶתְבּוֹשֵׁשׁ |
+| 3mp | יִתְבּוֹשְׁשׁוּ |
+| 3fp | תִּתְבּוֹשֵׁ֫שְׁנָה |
+| 2mp | תִּתְבּוֹשְׁשׁוּ |
+| 2fp | תִּתְבּוֹשֵׁ֫שְׁנָה |
+| 1cp | נִתְבּוֹשֵׁשׁ |
+
+### Imperative and Participle
+
+| PGN | Imperative | Participle |
+|---|---|---|
+| ms / 2ms | הִתְבּוֹשֵׁשׁ | מִתְבּוֹשֵׁשׁ |
+| fs / 2fs | הִתְבּוֹשְׁשִׁי | מִתְבּוֹשֶׁ֫שֶׁת |
+| mp / 2mp | הִתְבּוֹשְׁשׁוּ | מִתְבּוֹשְׁשִׁים |
+| fp / 2fp | הִתְבּוֹשֵׁ֫שְׁנָה | מִתְבּוֹשְׁשׁוֹת |
+
+### Key examples
+
+- הִתְבּוֹשֵׁשׁ (Exo 32:1) — Perfect 3ms; "Moses delayed / was long in coming down"; הִתְ prefix + long ōō vowel of root + geminated final שׁ
+- וַיִּתְבֹּשָׁשׁוּ (Gen 2:25) — Wayyiqtol 3mp (with metathesis in some manuscripts); "they were not ashamed"
+
+---
+
+## 12. Metathesis — I-Sibilant Roots
+
+When R1 is a sibilant (שׁ, שׂ, ס, צ, ז), the ת of the הִתְ prefix swaps with R1. See Ch34 §8 for the full treatment. Brief summary:
+
+| R1 | Rule | Result | Example |
+|---|---|---|---|
+| שׁ, שׂ, ס | ת + sibilant → sibilant + תַּ | הִשְׁתַּ / יִשְׁתַּ | הִשְׁתַּחֲוָה |
+| צ | ת + צ → צ + תַּ → צ + טַּ (voicing) | הִצְטַּ | הִצְטַדֵּק |
+
+This co-occurs with any weak class whose R1 is a sibilant (as seen in §7 above with שׁלח).
+
+---
+
+## 13. Hithpolel Stem (§35.12)
+
+The Hithpolel is the Hithpael equivalent for certain Biconsonantal and Geminate verbs. Like the Polel (Ch31) and Polal (Ch33), it is characterized by a Holem Waw after R1 and duplication of R2. The Hithpolel is distinguished from the Polel by its distinctive הִתְ/יִתְ/מִתְ prefixes.
+
+Paradigm verb: **הִתְרוֹמֵם** (from רוּם, to be exalted, to exalt oneself)
+
+| PGN | Perfect | Imperfect | Imperative | Inf. Cs. | Participle |
 |---|---|---|---|---|---|
-| שׁ | ת + שׁ → שְׁתַ | שׁחה | הִתְשַׁחֲוָה | הִשְׁתַּחֲוָה | הִשְׁתַּחֲוָה ✓ |
-| שׂ | ת + שׂ → שְׂתַ | שׂמח | הִתְשְׂמַּח | הִשְׂתַּמַּח | הִשְׂתַּמַּח (rare) |
-| ס | ת + ס → סְתַ | סתר | הִתְסַתֵּר | הִסְתַּתֵּר | הִסְתַּתֵּר ✓ |
-| צ | ת + צ → צְתַ → צְטַ | צדק | הִתְצַדֵּק | הִצְתַּדֵּק → הִצְטַּדֵּק | הִצְטַּדֵּק ✓ |
-
-> **Exercise connection — Verb 9 (Gen 44:16): נִצְטַדָּק**
-> Root: צדק (I-צ). Expected Hithpael before metathesis: הִתְצַדֵּק.
-> Metathesis + voicing: הִתְ + צ → הִצְתַּ → הִצְטַּ (ת voices to ט after the sibilant).
-> With 1cp imperfect prefix נ (short vowel *hireq*) and *qamets* under R2: נִצְטַדָּק.
-> Meaning: "How can we justify ourselves?" — Hithpael reflexive/estimative of צדק.
-
----
-
-## 11. High-Frequency Weak Hithpael Lemmas
-
-The following weak-root Hithpael lemmas are among the most common in the OT. Frequency counts
-represent Hithpael tokens only.
-
-| Root | Class(es) | OT Htpa tokens (approx.) | Gloss (Hithpael) |
-|---|---|---|---|
-| שׁחה | III-ה + I-שׁ metathesis | ~170 | bow down, worship, prostrate oneself |
-| נבא | I-נ + III-א | ~115 | prophesy, act as a prophet |
-| נחם | I-נ + III-ח | ~40 | relent, be sorry, comfort oneself |
-| חזק | I-ח (guttural) | ~35 | be/make oneself strong, strengthen oneself |
-| יצב | I-י | ~30 | station oneself, take one's stand, present oneself |
-| עלה | I-ע (guttural) + III-ה | ~15 | exalt oneself |
-| גלה | III-ה | ~12 | reveal oneself, uncover oneself |
-| ענה | III-ה | ~10 | humble oneself, afflict oneself |
-| רפא | III-א | ~8 | heal oneself, seek to be healed |
-| צדק | I-צ metathesis | ~6 | justify oneself, be declared righteous |
-| בוש | Biconsonantal | ~4 | be ashamed, show oneself ashamed |
-| אנן | Geminate | ~3 | complain, grumble (Num 11:1) |
-
-> **Pedagogical note:** The single most important Hithpael verb in the OT is הִשְׁתַּחֲוָה (שׁחה).
-> Students who master its three key forms — cohortative (וְנִשְׁתַּחֲוֶה), wayyiqtol (וַיִּשְׁתַּחוּ),
-> and imperfect (יִשְׁתַּחְוֶה / תִשְׁתַּחְוֶה) — will recognize the dominant Hithpael pattern in
-> narrative, poetry, and law. Every instance of worship vocabulary in the Psalms and Torah runs
-> through this single root.
+| 3ms / ms | הִתְרוֹמֵם | יִתְרוֹמֵם | הִתְרוֹמֵם | הִתְרוֹמֵם | מִתְרוֹמֵם |
+| 3fs / fs | הִתְרוֹמְמָה | תִּתְרוֹמֵם | הִתְרוֹמְמִי | | מִתְרוֹמֶ֫מֶת |
+| 2ms / mp | הִתְרוֹמַ֫מְתָּ | תִּתְרוֹמֵם | הִתְרוֹמְמוּ | | מִתְרוֹמְמִים |
+| 2fs / fp | הִתְרוֹמַמְתְּ | תִּתְרוֹמְמִי | הִתְרוֹמֵ֫מְנָה | | מִתְרוֹמְמוֹת |
+| 1cs | הִתְרוֹמַ֫מְתִּי | אֶתְרוֹמֵם | | | |
+| 3cp | הִתְרוֹמְמוּ | יִתְרוֹמְמוּ | | | |
+| 2mp | הִתְרוֹמַמְתֶּם | תִּתְרוֹמֵ֫מְנָה | | | |
+| 2fp | הִתְרוֹמַמְתֶּן | תִּתְרוֹמְמוּ | | | |
+| 1cp | הִתְרוֹמַ֫מְנוּ | תִּתְרוֹמֵ֫מְנָה | | | |
+| | | נִתְרוֹמֵם | | | |
 
 ---
 
-*Sources: MACULA Hebrew WLC (Clear Bible, CC BY 4.0) · BBH = Pratico & Van Pelt, Basics of Biblical Hebrew, 3rd ed.*
+## 15. Something to Memorize: Psalm 66:16 (§35.13)
+
+> לְכוּ־שִׁמְעוּ וַאֲסַפְּרָה כָּל־יִרְאֵי אֱלֹהִים אֲשֶׁר עָשָׂה לְנַפְשִׁי
+>
+> Come and hear, all who fear God, and I will proclaim what he has done for my soul.
+
+The verse opens with two Qal Imperative 2ms verbs: לְכוּ (from הָלַךְ, as a particle of entreaty joined by Maqqef) and שִׁמְעוּ (from שָׁמַע). The verb וַאֲסַפְּרָה is a Piel Imperfect 1cs from סָפַר with a volitional ָה ending. The vocative יִרְאֵי אֱלֹהִים is a Qal active Participle mp construct from יָרֵא used substantively. The verse concludes with a relative clause: אֲשֶׁר עָשָׂה (Qal Perfect 3ms from עָשָׂה) with the prepositional phrase לְנַפְשִׁי (for my soul).

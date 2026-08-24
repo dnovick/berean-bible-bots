@@ -4,33 +4,34 @@
 
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 30*
 
-## 1. Function
+## 1. Function (§30.2)
 
 The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is covered in Chapter 32.
 
 | Function | Description | Example |
 |---|---|---|
 | Intensive | Emphasizes forceful or thorough action | שִׁבֵּר — shattered (vs. Qal שָׁבַר broke) |
-| Factitive | Makes an adjective or state into an action (causes something to *become*) | קִדֵּשׁ — consecrated (made holy) |
-| Denominative | Verb derived from a noun | דִּבֵּר — spoke (from דָּבָר word) |
-| Iterative | Repeated or ongoing action; the Piel marks the action as done again and again | הִלֵּךְ — paced / walked back and forth (vs. Qal הָלַךְ went/walked); צֵעֵק — kept crying (vs. Qal צָעַק cried out) |
-| Simple action | Some roots appear almost exclusively in Piel with no clear Qal intensification | בִּקֵּשׁ — sought; צִוָּה — commanded |
+| Factitive | Makes an intransitive Qal verb transitive | קִדַּשׁ — to sanctify (vs. Qal קָדַשׁ to be holy) |
+| Denominative | Verb derived from a noun or adjective | דִּבֵּר — to speak (from דָּבָר word) |
+| Iterative | Repeated or ongoing action | הִלֵּךְ — to pace (vs. Qal הָלַךְ to go); צֵעֵק — to keep crying (vs. Qal צָעַק to cry out) |
+| Simple Action | Root not attested (or rarely attested) in Qal | צִוָּה — to command; בֵּרֵךְ — to bless |
 
-> **Key diagnostic:** The **Dagesh Forte in R2** (the middle root consonant) is the single most reliable Piel identifier across every conjugation. The Piel carries a characteristic Tsere (ֵ) under R2 in the Perfect 3ms and Imperfect, and an i-class vowel (Hireq or Patach) under R1.
+> **Key diagnostic:** The **Daghesh Forte in the second root consonant** is the most reliable Piel identifier across every conjugation.
 
 ---
 
-## 2. Form — Diagnostic Markers
+## 2. Diagnostic Markers
 
-| Conjugation | Piel pattern | Key |
-|---|---|---|
-| **Perfect 3ms** | ִ under R1 + **dagesh in R2** + Tsere (ֵ) under R2 | Dagesh in R2 + Tsere |
-| **Imperfect 3ms** | Shewa under prefix (יְ) + Patach (ַ) under R1 + **dagesh** + Tsere | Shewa under prefix |
-| **Wayyiqtol** | וַיְ prefix (Patach + shewa) | Contrasts Qal (וַיִּ) and Hiphil (וַיַּ) |
-| **Imperative 2ms** | Patach (ַ) under R1 + **dagesh** + Tsere | Identical form to Inf. Construct |
-| **Inf. Construct** | Patach (ַ) under R1 + **dagesh** + Tsere; identical to Imperative 2ms | Context and prepositions distinguish |
-| **Inf. Absolute** | Same form as Imperative/Inf. Construct | Cognate construction: דַּבֵּר יְדַבֵּר |
-| **Participle ms** | מְ prefix + Patach (ַ) under R1 + **dagesh** + Tsere | מְ prefix + dagesh distinguishes from Hiphil |
+| Conjugation | Piel diagnostic features |
+|---|---|
+| **Perfect** | Hireq (ִ) under R1 + Daghesh Forte in R2 + variable stem vowel (Tsere in 3ms) |
+| **Imperfect** | Vocal Shewa under preformative (יְ) + Pathach under R1 + Daghesh Forte in R2 |
+| **Imperative / Inf. Construct / Inf. Absolute** | Pathach under R1 + Daghesh Forte in R2 |
+| **Participle** | מְ prefix (Vocal Shewa) + Pathach under R1 + Daghesh Forte in R2 |
+
+Key distinctions:
+- **Piel Wayyiqtol:** וַיְ prefix (Patach + Shewa) — contrast Qal וַיִּ (Patach + Hireq + Dagesh) and Hiphil וַיַּ (Patach + Pathach + Dagesh)
+- **Piel vs. Pual:** Piel has i-class vowel under R1; Pual has u-class vowel (Qibbuts) under R1
 
 ---
 
@@ -38,222 +39,90 @@ The Piel is the **intensive-active** stem. Its passive counterpart (the Pual) is
 
 | Conjugation | Piel 3ms | BBH § | Notes |
 |---|---|---|---|
-| [Perfect (Qatal)](piel-paradigms.md#perfect-qatal) | דִּבֵּר | 30.3 | Hireq under R1 + Dagesh in R2 + Tsere under R2 |
-| [Imperfect (Yiqtol)](piel-paradigms.md#imperfect-yiqtol) | יְדַבֵּר | 30.4 | Shewa under prefix; Patach under R1; Dagesh in R2 |
-| [Wayyiqtol](piel-paradigms.md#wayyiqtol) | וַיְדַבֵּר | — | וַיְ prefix (contrast Qal וַיִּ, Hiphil וַיַּ) |
-| [Weqatal](piel-paradigms.md#weqatal) | וְדִבֵּר | — | וְ + Perfect form |
-| [Imperative](piel-paradigms.md#imperative) | דַּבֵּר | 30.5 | Identical form to Inf. Construct |
-| [Inf. Construct](piel-paradigms.md#infinitive-construct) | דַּבֵּר | 30.6 | Identical form to Imperative 2ms |
-| [Inf. Absolute](piel-paradigms.md#infinitive-absolute) | דַּבֵּר | 30.7 | |
-| [Participle](piel-paradigms.md#participle-active) | מְדַבֵּר | 30.8 | מְ prefix + dagesh in R2 |
+| [Perfect (Qatal)](piel-paradigms.md#perfect-qatal) | קִטֵּל | 30.3 | Hireq under R1 + Daghesh in R2 |
+| [Imperfect (Yiqtol)](piel-paradigms.md#imperfect-yiqtol) | יְקַטֵּל | 30.5 | Vocal Shewa under preformative; Pathach under R1 |
+| [Wayyiqtol](piel-paradigms.md#wayyiqtol) | וַיְקַטֵּל | — | וַיְ prefix |
+| [Weqatal](piel-paradigms.md#weqatal) | וְקִטֵּל | — | וְ + Perfect form |
+| [Imperative](piel-paradigms.md#imperative) | קַטֵּל | 30.7–30.8 | Pathach under R1; identical form to Inf. Construct |
+| [Inf. Construct](piel-paradigms.md#infinitive-construct) | קַטֵּל | 30.9 | Identical form to Imperative 2ms |
+| [Inf. Absolute](piel-paradigms.md#infinitive-absolute) | קַטֵּל | 30.10 | e-class stem vowel (Tsere) |
+| [Participle](piel-paradigms.md#participle-active) | מְקַטֵּל | 30.11 | מְ prefix + Pathach under R1 + Daghesh in R2 |
+
+Full paradigms (all PGN forms) are in [piel-paradigms.md](piel-paradigms.md).
 
 ---
 
-## 4. Real Forms — דִּבֵּר (Piel)
+## 4. Example Forms — דִּבֵּר (Piel)
 
-**Root דבר — "to speak" (Piel denominative from דָּבָר, "word") — 1,090 OT occurrences**
+**Root דבר — "to speak" (Piel denominative from דָּבָר) — 1,090 OT occurrences**
 
-| Conjugation | Form | Reference | Morph | Gloss |
-|---|---|---|---|---|
-| Perfect 3ms | דִּבֵּר | Gen 21:1 | Vpq3ms | he spoke |
-| Perfect 2ms | דִּבַּרְתָּ | Exo 4:15 | Vpq2ms | you spoke |
-| Wayyiqtol 3ms | וַיְדַבֵּר | Gen 8:15 | Vpw3ms | and he spoke |
-| Weqatal 2ms | וְדִבַּרְתָּ | Deut 6:7 | Vpq2ms | and you shall speak |
-| Imperfect 2ms | תְּדַבֵּר | Gen 31:24 | Vpi2ms | you shall speak |
-| Imperative 2ms | דַּבֵּר | Gen 24:33 | Vpv2ms | speak! |
-| Inf. Construct | דַּבֵּר | Gen 17:22 | Vpc | to speak |
-| Inf. Absolute | דַּבֵּר | Exo 4:14 | Vpa | (cognate construction) |
-| Participle ms | מְדַבֵּר | Gen 27:6 | Vprmsa | speaking |
-
-> **Denominative note:** דִּבֵּר is the paradigm Piel denominative — the verb "to speak" is formed from the noun דָּבָר ("word"). The root rarely appears in the Qal (only a few archaic forms). Nearly all 1,090 OT occurrences are Piel.
-
-> **Note:** A Piel passive participle (מְדֻבָּר — "spoken") exists but functions as the Pual participle and will be studied in Ch32 (Pual).
+| Conjugation | Form | Reference | Gloss |
+|---|---|---|---|
+| Perfect 3ms | דִּבֵּר | Gen 21:1 | he spoke |
+| Perfect 2ms | דִּבַּרְתָּ | Exo 4:15 | you spoke |
+| Wayyiqtol 3ms | וַיְדַבֵּר | Gen 8:15 | and he spoke |
+| Weqatal 2ms | וְדִבַּרְתָּ | Deut 6:7 | and you shall speak |
+| Imperfect 2ms | תְּדַבֵּר | Gen 31:24 | you shall speak |
+| Imperative 2ms | דַּבֵּר | Gen 24:33 | speak! |
+| Inf. Construct | דַּבֵּר | Gen 17:22 | to speak |
+| Inf. Absolute | דַּבֵּר | Exo 4:14 | (cognate construction) |
+| Participle ms | מְדַבֵּר | Gen 27:6 | speaking |
 
 ---
 
-## 5. Most Common Piel Lemmas — Torah (Genesis–Deuteronomy)
+## 5. Example Passages
 
-| # | Root | Count (Torah) | Piel Meaning | Function Type |
-|---|---|---|---|---|
-| 1 | דבר | 408 | to speak | Denominative |
-| 2 | צוה | 246 | to command | Simple action / Denominative |
-| 3 | ברך | 108 | to bless | Simple Action |
-| 4 | שלח | 106 | to send away, release | Intensive |
-| 5 | כפר | 74 | to make atonement | Denominative / Factitive |
-| 6 | כסה | 44 | to cover | Intensive |
-| 7 | קדש | 43 | to consecrate, make holy | Factitive |
-| 8 | כלה | 42 | to finish, complete | Intensive |
-| 9 | כבס | 38 | to wash (launder) | Intensive |
-| 10 | מלא | 32 | to fill | Factitive |
-| 11 | גלה | 27 | to uncover, expose | Intensive |
-| 12 | שרת | 27 | to minister, serve | Simple action |
-| 13 | שלם | 27 | to make restitution, repay | Factitive |
-| 14 | טמא | 26 | to defile, render unclean | Factitive |
-| 15 | מהר | 26 | to hurry | Intensive |
-| 16 | צפה | 25 | to overlay (with gold/silver) | Denominative |
-| 17 | ענה | 25 | to afflict, humble | Factitive |
-| 18 | חלל | 21 | to profane, desecrate | Factitive |
-| 19 | טהר | 17 | to cleanse; to pronounce clean | Simple action |
-| 20 | בער | 17 | to remove, purge | Intensive |
-
----
-
-## 6. Example Passages
-
----
-
-### Denominative
+### Denominative — דבר (to speak)
 
 **Wayyiqtol — Gen 8:15**
 וַיְדַבֵּ֥ר אֱלֹהִ֖ים אֶל־נֹ֥חַ לֵאמֹֽר׃
 *"And God spoke to Noah, saying:"*
-→ דבר Piel+Wayyiqtol+3ms; paradigm example of the Piel Wayyiqtol. The וַיְ prefix (patach + shewa) is the hallmark marker — contrast Qal וַיֹּאמֶר.
+→ דבר Piel Wayyiqtol 3ms. The וַיְ prefix (Pathach + Shewa) is the hallmark Piel marker — contrast Qal וַיֹּאמֶר.
 
-**Imperfect — Gen 31:24**
-וַיֹּ֤אמֶר לוֹ֙ אֱלֹהִ֔ים הִשָּׁ֣מֶר לְךָ֔ פֶּן־תְּדַבֵּ֥ר עִֽם־יַעֲקֹ֖ב מִטּ֥וֹב עַד־רָֽע׃
-*"And God said to him, 'Be careful that you do not speak to Jacob either good or bad.'"*
-→ דבר Piel+Imperfect+2ms; shewa under prefix (תְּ) + patach under R1 (דַ) + dagesh in R2 + tsere.
-
-**Imperative — Gen 24:33**
-וַיֹּ֖אמֶר דַּבֵּֽר׃
-*"And he said, 'Speak!'"*
-→ דבר Piel+Imperative+2ms; form identical to Inf. Construct; context (direct command) disambiguates.
-
-**Infinitive Construct — Gen 17:22**
-וַיַּ֖עַל אֱלֹהִ֑ים מֵעַ֖ל אַבְרָהָֽם׃ [after finishing] דַּבֵּ֣ר אִתּ֔וֹ
-*"When he had finished speaking with him, God went up from Abraham."*
-→ דבר Piel+Inf.Construct; introduced by temporal clause; same form as Imperative.
-
-**Participle — Gen 27:6**
-וְרִבְקָ֗ה אָמְרָה֙ אֶל־יַעֲקֹ֣ב בְּנָ֔הּ לֵאמֹ֖ר הִנֵּ֣ה שָׁמַ֔עְתִּי אֶת־אָבִ֖יךָ מְדַבֵּ֛ר אֶל־עֵשָׂ֥ו אָחִ֖יךָ
-*"Now Rebekah was speaking to Jacob her son…"*
-→ דבר Piel+Participle+ms active; מְ prefix + patach + dagesh + tsere pattern.
-
----
-
-### Factitive
+### Factitive — קדש (to sanctify)
 
 **Wayyiqtol — Gen 2:3**
 וַיְבָ֤רֶךְ אֱלֹהִים֙ אֶת־י֣וֹם הַשְּׁבִיעִ֔י וַיְקַדֵּ֖שׁ אֹת֑וֹ
 *"And God blessed the seventh day and made it holy."*
-→ קדש Piel+Wayyiqtol+3ms; "made it holy" — caused the day to *become* holy. Classic factitive: creating a state.
+→ קדש Piel Wayyiqtol 3ms. Qal קָדַשׁ = to be holy (intransitive); Piel = to sanctify/make holy (transitive, factitive).
 
-**Imperative — Exo 13:2**
-קַדֶּשׁ־לִ֤י כָל־בְּכוֹר֙
-*"Consecrate to me every firstborn."*
-→ קדש Piel+Imperative+2ms; God commands Israel to make the firstborn holy (set them apart as belonging to him).
+### Iterative — הלך (to pace)
 
-**Perfect — Exo 19:10**
-קִדַּשְׁתָּ֥ אֹתָ֖ם הַיּ֑וֹם וּמָחָ֑ר
-*"Consecrate them today and tomorrow."*
-→ קדש Piel+Perfect+2ms (instructional/performative perfect); Moses directed to effect a state of holiness.
-
-**Participle — Exo 31:13**
-אֲנִ֥י יְהוָ֖ה מְקַדִּשְׁכֶֽם׃
-*"I am the LORD who consecrates you."*
-→ קדש Piel+Participle+ms; מְ prefix + dagesh in R2 + tsere; predicate participle identifying God as agent who causes holiness.
-
----
-
-### Iterative
-
-> **BBH definition:** The Piel marks an action as *repeated* or *ongoing* — done again and again rather than once. BBH's examples: הָלַךְ (Qal, to go/walk) → הִלֵּךְ (Piel, to pace / walk back and forth); צָעַק (Qal, to cry out) → צֵעֵק (Piel, to weep over and over / keep crying).
-
-The Piel of הָלַךְ appears 22× in the OT (Psalms, Proverbs, Ecclesiastes, Kings, and the Prophets) but not in the Torah. The Piel of צָעַק appears only once in the entire OT (2Ki 2:12). Corpus search reveals two additional Iterative roots with Torah attestations: **צחק** (6× Piel, all in Genesis–Exodus) and **שׁנן** (Deut 6:7).
-
-**Wayyiqtol — 1Ki 21:27 (הלך)**
+**Wayyiqtol — 1Ki 21:27**
 וַיְהַלֵּ֖ךְ אַֽט׃
-*"…and he walked about (paced) slowly."*
-→ הלך Piel+Wayyiqtol+3ms; Ahab, on hearing Elijah's judgment, tears his clothes, fasts, and *paces about* in sackcloth. The Piel marks repeated back-and-forth movement (pacing), not a single directed walk — the paradigm Iterative use BBH describes.
+*"…and he walked about slowly."*
+→ הלך Piel Wayyiqtol 3ms. Qal = to go/walk (single directed motion); Piel = to pace, walk back and forth (repeated movement).
 
-**Participle — Gen 26:8 (צחק)**
-וְהִנֵּ֤ה יִצְחָק֙ מְצַחֵ֔ק אֵ֖ת רִבְקָ֥ה אִשְׁתּֽוֹ׃
-*"…and there was Isaac playing with Rebekah his wife."*
-→ צחק Piel+Participle+ms; Qal צָחַק = to laugh (a single burst — Gen 17:17; 18:12–15). Piel = to play, sport, caress — sustained or repeated laughing-type behavior. Abimelech sees what he sees precisely because it is ongoing: a Qal laugh is momentary and invisible through a window; Piel "playing" is sustained enough to betray the relationship. The same Piel appears at Gen 19:14 (Lot's warning seeming like *jesting*), Gen 21:9 (Ishmael *mocking* Isaac), Gen 39:14, 17 (Potiphar's wife accusing Joseph of coming "to *mock* us"), and Exo 32:6 (Israel arising "to *revel*" around the golden calf).
+### Simple Action — ברך (to bless)
 
-**Perfect — Deut 6:7 (שׁנן)**
-וְשִׁנַּנְתָּ֣ם לְבָנֶ֔יךָ
-*"You shall repeat/drill them into your children."*
-→ שׁנן Piel+Perfect+2ms; Qal שָׁנַן = to sharpen (a sword or tongue — Deut 32:41; Ps 64:3; 140:3). Piel = to sharpen *by repetition* — to drill words in again and again until they are honed into memory. The Shema context (Deut 6:4–9) makes the iterative force explicit: speaking at home, on the road, lying down, rising up — the repetition is the point.
+**Perfect — Gen 17:16**
+וּבֵרַכְתִּ֣י אֹתָ֔הּ
+*"I will bless her…"*
+→ ברך Piel Perfect 1cs. ברך has no common Qal equivalent; the Piel is the standard form.
 
 ---
 
-### Simple Action (including speech-act verbs)
+## 6. Loss of Daghesh Forte (§30.15)
 
-> **BBH note:** BBH does not use "Declarative" as a separate Piel category. Verbs whose Piel performs a speech act or pronouncement — such as טִמֵּא ("to defile"), טִהֵר ("to pronounce clean"), and צִדֵּק ("to justify") — are classified under **Simple Action** since the Piel is the standard active form with no meaningful Qal equivalent to intensify.
+The rule of **sqnmlwy** (see §5.5) governs circumstances where an expected Daghesh Forte is lost. The consonants ס, צ, שׂ, שׁ, ק, נ, מ, ל, ו, י — when bearing a Daghesh Forte and a Vocal Shewa — frequently lose the Daghesh Forte. This is especially common in the Piel.
 
-**Perfect — Gen 17:16 (ברך)**
-וּבֵרַכְתִּ֣י אֹתָ֔הּ וְגַ֨ם נָתַ֧תִּי מִמֶּ֛נָּה לְךָ֖ בֵּ֑ן
-*"I will bless her, and I will also give you a son by her."*
-→ ברך Piel+Perfect+1cs; God's sovereign blessing on Sarah. ברך has no common Qal equivalent — the Piel is the standard form of the verb (simple action).
-
-**Wayyiqtol — Gen 1:22 (ברך)**
-וַיְבָ֧רֶךְ אֹתָ֛ם אֱלֹהִ֖ים לֵאמֹ֑ר פְּר֥וּ וּרְב֛וּ
-*"And God blessed them, saying, 'Be fruitful and multiply.'"*
-→ ברך Piel+Wayyiqtol+3ms; first occurrence of the root in the OT; God's creative blessing over living creatures.
-
-**Inf. Absolute — Gen 22:17 (ברך)**
-כִּֽי־בָרֵ֣ךְ אֲבָרֶכְךָ֗ וְהַרְבָּ֨ה אַרְבֶּ֤ה אֶֽת־זַרְעֲךָ֙
-*"I will surely bless you, and I will surely multiply your offspring."*
-→ ברך Piel+Inf.Absolute + Piel+Imperfect+1cs (אֲבָרֶכְךָ); cognate absolute construction emphasizes certainty of the promise.
-
----
-
-## 7. Conjugation Distribution (OT-Wide)
-
-### Piel (6,484 total tokens)
-
-| Conjugation | Count | % |
+| Form | Parsing | Why Daghesh Forte Is Lost |
 |---|---|---|
-| Perfect (Qatal) | 1,613 | 24.9% |
-| Imperfect (Yiqtol) | 1,311 | 20.2% |
-| Wayyiqtol | 968 | 14.9% |
-| Infinitive Construct | 705 | 10.9% |
-| Participle (active) | 682 | 10.5% |
-| Weqatal | 501 | 7.7% |
-| Imperative | 441 | 6.8% |
-| Infinitive Absolute | 102 | 1.6% |
-| Cohortative | 86 | 1.3% |
-| Jussive | 74 | 1.1% |
-
-> **Teaching note:** The Piel Perfect (25%) and Imperfect (20%) together account for nearly half of all Piel tokens. This contrasts with the Qal, where Wayyiqtol is the most common narrative form. The relatively high Inf. Construct (11%) reflects the Piel's frequent use in legal/instructional prose with לְ + Inf. Construct constructions.
+| הַמְדַבֵּר | Piel Participle ms with definite article | Expected Daghesh of the article is lost because the syllable begins with מְ |
+| וַיְדַבֵּר | Piel Imperfect 3ms with Waw Consecutive | Expected Daghesh of Waw Consecutive lost because the syllable begins with יְ |
+| מִלְאוּ | Piel Perfect 3cp | Expected Daghesh Forte in R2 lost because ל occurs with Vocal Shewa (לְ) |
+| וַיְקַנְאוּ | Piel Imperfect 3mp with Waw Consecutive | Both daghesh of Waw Consecutive and Daghesh Forte in R2 (נ + Vocal Shewa) are lost |
 
 ---
 
-## 8. Piel-Dominant Roots (Roots ≥80% Piel)
-
-These roots appear almost exclusively in the Piel — there is no meaningful Qal intensification contrast:
-
-| Root | Piel | Total | % | Primary Meaning |
-|---|---|---|---|---|
-| שרת | 97 | 97 | 100.0% | to minister, serve |
-| מאן | 45 | 45 | 100.0% | to refuse |
-| בקש | 222 | 225 | 98.7% | to seek |
-| צוה | 485 | 494 | 98.2% | to command |
-| נצח | 64 | 65 | 98.5% | to direct (music) |
-| דבר | 1,090 | 1,141 | 95.5% | to speak |
-| זמר | 45 | 48 | 93.8% | to sing praises |
-| רחם | 42 | 46 | 91.3% | to have compassion |
-| כפר | 92 | 101 | 91.1% | to make atonement |
-| מהר | 59 | 66 | 89.4% | to hurry |
-| שלם | 89 | 103 | 86.4% | to repay, make restitution |
-| כסה | 131 | 152 | 86.2% | to cover |
-| כבס | 44 | 51 | 86.3% | to wash (launder) |
-| קוה | 41 | 48 | 85.4% | to wait for, hope |
-| נסה | 35 | 36 | 97.2% | to test |
-
-> For these roots, the Piel *is* the standard active form. There is no meaningful Qal contrast to intensify.
-
----
-
-## 9. Summary: Identifying the Piel at a Glance
+## 7. Summary: Identifying the Piel
 
 | Question | Answer |
 |---|---|
-| What is the **one universal marker** of the Piel? | **Dagesh Forte in R2** (the middle root consonant) |
-| How do I distinguish Piel from Pual? | Piel: i-class vowel (Hireq/Tsere) under R1 · Pual: **u-class vowel** (Qibbuts/Shureq) under R1 — see Ch32 |
-| How do I distinguish Piel Wayyiqtol from Qal? | Piel: **וַיְ** (patach + shewa); Qal: **וַיִּ** (patach + hireq + dagesh) |
-| How do I distinguish Piel Wayyiqtol from Hiphil? | Piel: **וַיְ**; Hiphil: **וַיַּ** (patach + patach + dagesh) |
-| Is the Piel Participle active or passive? | **Active** — מְדַבֵּר "speaking" |
-| What form is Piel Inf. Construct identical to? | The **Piel Imperative 2ms** — context and prepositions distinguish them |
+| What is the one universal Piel marker? | **Daghesh Forte in R2** (present in every form, every conjugation) |
+| How to distinguish Piel from Pual? | Piel: i-class vowel (Hireq) under R1 · Pual: u-class (Qibbuts) under R1 |
+| How to distinguish Piel Wayyiqtol from Qal? | Piel: **וַיְ** (Pathach + Shewa) · Qal: **וַיִּ** (Pathach + Hireq + Dagesh) |
+| How to distinguish Piel Wayyiqtol from Hiphil? | Piel: **וַיְ** · Hiphil: **וַיַּ** (Pathach + Pathach + Dagesh) |
+| What does the Piel Participle prefix look like? | **מְ** (Vocal Shewa) — same prefix consonant as Hiphil/Hophal but with Vocal Shewa |
+| What form is identical to Piel Inf. Construct? | The **Piel Imperative 2ms** — context and prepositions distinguish |
 | Where is the Pual (passive of Piel) covered? | **Chapter 32** |

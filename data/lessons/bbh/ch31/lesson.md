@@ -1,417 +1,237 @@
 # BBH Chapter 31 — Piel Weak Verbs (פִּעֵל)
 
----
-
 *Basics of Biblical Hebrew, Pratico & Van Pelt, Chapter 31*
-*Builds on Ch30 (Piel Strong Verbs). Weak forms only — semantic functions (Intensive, Factitive, Declarative, Denominative) not repeated.*
-
-> **Scope:** This chapter extends the Piel paradigm to eight weak-root classes. In every class the
-> **Dagesh Forte in R2** remains the defining Piel marker — what changes is the vowel pattern
-> surrounding R2, driven by the phonological properties of the weak radical. Recognize the rule;
-> the form follows.
-
-## 1. Overview — Weak Classes in the Piel
-
-> "Most weak verbs in the Piel stem maintain the diagnostic features of the strong verb. It is only II-Guttural weak verbs that exhibit any major changes in spelling. The weak verb classes III-ע/ח, III-א, III-ה, and Geminate are given for your study, but you will observe that all of the strong verb diagnostics are preserved in each weak verb class." — Pratico & Van Pelt, BBH Ch31
-
-| Class | Label | Representative roots | What changes | Key conjugations affected |
-|---|---|---|---|---|
-| **II-Guttural (Ayin-Guttural)** ★ | `ayin-guttural` | **בּאר, שׁחת** | **Three simultaneous changes:** R2 refuses dagesh forte; R1 vowel lengthens (compensatory); R2 takes a-class (Patach) | **All — the most visually distinct class** |
-| I-guttural (Pe-Guttural) | `pe-guttural` | עָנָה, חָזַק | Guttural rejects simple shewa → composite shewa (hateph); vowel before R1 adjusts; dagesh in R2 intact | Perfect, imperfect, all |
-| III-ח/ע (Lamed-Guttural) | `lamed-guttural` | שָׁלַח, שָׁמַע | Guttural demands a-class vowel; patach furtive before final ח/ע in open syllable | Perfect, imperfect, participle |
-| III-א (Lamed-Aleph) | `lamed-aleph` | מָלָא, קָרָא | Final א quiesces; compensatory lengthening of preceding vowel; tsere under R2 lengthens to tsere + א | Perfect 3ms/3fs, imperfect, participle |
-| III-ה (Lamed-He) | `lamed-he` | צִוָּה, גָּלָה, כָּסָה, עָנָה | Final ה is a vowel letter; endings contract throughout; wayyiqtol 3ms apocopates | All conjugations |
-| I-נ (Pe-Nun) | `pe-nun` | נִחֵּם, נִצֵּל | Root נ assimilates into R2 with dagesh forte — in the Piel this dagesh merges with the characteristic Piel dagesh in R2 | All (assimilation visible in all) |
-| I-י (Pe-Yod) | `pe-yod` | יִסֵּר, יִבֵּשׁ | I-י quiesces; characteristic Hireq-Yod pattern; Piel vowels shift slightly | Perfect, imperfect |
-| Biconsonantal (II-ו/י) | `biconsonantal` | קוֹמֵם (from קוּם), שׁוֹרֵר | Two-consonant root; Piel doubles R2 by gemination; holem-vav medial; pattern differs markedly from strong | All conjugations |
-| Geminate (Ayin-Doubled) | `geminate` | הִלֵּל, חִלֵּל, קִלֵּל | R2 = R3; Piel dagesh in R2 serves double duty (Piel + geminate); forms closely parallel strong Piel | All conjugations |
-
-★ = The only class BBH identifies as exhibiting *major* spelling changes in the Piel.
-
-> **Key principle:** In every Piel weak class, the Dagesh Forte in R2 either (a) remains unchanged, or (b) is refused by a guttural R2, triggering compensatory lengthening of the R1 vowel. The II-Guttural class is unique because *both* the compensatory lengthening *and* the guttural's a-class preference operate together.
+*Builds on Ch30 (Piel Strong Verbs). Semantic functions (Intensive, Factitive, Denominative, Iterative) are not repeated here.*
 
 ---
 
-## 2. II-Guttural (Ayin-Guttural) Verbs
+## Introduction
 
-### Pattern
+Most weak verbs in the Piel stem maintain the diagnostic features of the strong verb. It is only II-Guttural weak verbs that exhibit any major changes in spelling. The weak verb classes III-ע/ח, III-א, III-ה, and Geminate are given for study, but all of the strong verb diagnostics are preserved in each of these weak verb classes.
 
-The Piel is defined by Dagesh Forte in R2. When **R2 is a guttural** (א, ה, ח, ע), it refuses that dagesh. Three changes result:
+**Three Piel diagnostics preserved across all weak classes (§31.11):**
 
-1. **No Dagesh in R2** — the guttural cannot double
-2. **Compensatory lengthening** — without the dagesh, the syllable that R2 was closing reopens; the short vowel under R1 lengthens to compensate:
-   - Perfect: Short Hireq [ִ] → Long Tsere [ֵ]
-   - Imperfect / Imperative / Participle: Short Patach [ַ] → Long Qamets [ָ]
-3. **A-class preference at R2** — the guttural takes Patach [ַ] rather than the Tsere [ֵ] of the strong Piel; before vowel suffixes it takes Hateph-Patach [ֲ] instead of simple shewa
-
-These three changes together make II-Guttural the most visually distinct Piel weak class.
-
-**Model root: בּאר** (bet–aleph–resh) — "to explain, expound"
-- The aleph at R2 is the most consistent dagesh-refuser (never takes dagesh forte in any context)
-- Piel perfect 3ms **בֵּאַר** is directly attested: "Moses undertook to expound this Torah" (Deut 1:5)
-
-**Diagnostic markers:**
-- **Perfect 3ms:** בֵּאַר — Tsere under R1 (ב) distinguishes from strong Hireq; no dagesh in R2; Patach under R2 (aleph)
-- **Imperfect 3ms:** יְבָאַר — Qamets under R1 distinguishes from strong Patach; no dagesh in R2; Patach under R2
-- **Imperative 2ms:** בָּאַר — same shape as Inf. Construct; Qamets under R1
-- **Participle ms:** מְבָאַר — מְ prefix; Qamets under R1; Patach under R2
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | II-Guttural (בּאר — explain) | Change from strong |
-|---|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#ayin-guttural-perfect) | דִּבֵּר | בֵּאַר | R1 hireq → tsere; R2: no dagesh, patach |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#ayin-guttural-imperfect) | יְדַבֵּר | יְבָאַר | R1 patach → qamets; R2: no dagesh, patach |
-| [Wayyiqtol](piel-weak-paradigms.md#ayin-guttural-wayyiqtol) | וַיְדַבֵּר | וַיְבָאַר | Same compensatory pattern |
-| [Weqatal](piel-weak-paradigms.md#ayin-guttural-weqatal) | וְדִבֵּר | וְבֵאַר | waw + perfect form |
-| [Imperative](piel-weak-paradigms.md#ayin-guttural-imperative) | דַּבֵּר | בָּאַר | R1 patach → qamets; R2: no dagesh, patach |
-| [Inf. Construct](piel-weak-paradigms.md#ayin-guttural-inf-construct) | דַּבֵּר | בָּאַר | Same shape as Imp 2ms |
-| [Inf. Absolute](piel-weak-paradigms.md#ayin-guttural-inf-absolute) | דַּבֵּר | בָּאַר | Same shape as Inf. Construct |
-| [Participle](piel-weak-paradigms.md#ayin-guttural-participle) | מְדַבֵּר | מְבָאַר | מְ prefix; R1 qamets; R2 patach |
-
-### Key Corpus Examples
-
-- בֵּאַר (Deut 1:5) — "he expounded / began to explain" — perfect 3ms Piel; R2=א, tsere under ב (R1), patach under א (R2), no dagesh
-- מְבֹאָר (Deut 27:8) — "very clearly (written)" — Pual participle of בּאר (note Pual vowel pattern with holem)
+1. Daghesh Forte in the second root consonant
+2. Patach under R1 in every conjugation except the Perfect
+3. Vocal Shewa under all Imperfect preformatives and Participle prefixes
 
 ---
 
-## 3. I-guttural (Pe-Guttural) Verbs
+## 1. III-ח/ע Verbs — שָׁלַח ("to send, release")
 
-### Pattern
+The Tsere stem vowel of the strong Piel is replaced by Patach before the final ח or ע, because gutturals prefer a-class vowels. All other Piel diagnostics are present.
 
-The Piel perfect 3ms of a strong root shows Hireq under R1 (דִּבֵּר). When R1 is a guttural (א, ה, ח, ע), the guttural cannot take a simple shewa — it takes a composite shewa (hateph) instead. This shifts the vowel under R1:
-
-- **ע/ח** typically take *hateph-patach* (ֲ), yielding a sub-pattern with patach coloring under R1
-- **א** takes *hateph-seghol* (ֱ), yielding seghol coloring
-- The Piel **Dagesh Forte in R2 is unaffected** — it remains present throughout
-
-The most important I-guttural Piel root is עָנָה → עִנָּה ("to afflict, humble"). Note that ע takes *hateph-patach* in most forms, but the perfect 3ms shows the long vowel Hireq under the prefix/R1 slot adjusted.
-
-**Diagnostic markers:**
-- **Perfect 3ms:** עִנָּה — the א/ע/ח is R1; Hireq under R1 (with composite shewa adjustment); Dagesh in R2
-- **Imperfect 3ms:** יְעַנֶּה — Shewa under prefix (יְ); composite shewa under ע; Patach under R1; Dagesh in R2
-- **Wayyiqtol 3ms:** וַיְעַנֶּה — וַיְ prefix (characteristic Piel patach+shewa); composite shewa under ע
-- **Participle ms:** מְעַנֶּה — מְ prefix; composite shewa under R1; Dagesh in R2
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | I-guttural (ענה — afflict) |
-|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#pe-guttural-perfect) | דִּבֵּר | עִנָּה |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#pe-guttural-imperfect) | יְדַבֵּר | יְעַנֶּה |
-| [Wayyiqtol](piel-weak-paradigms.md#pe-guttural-wayyiqtol) | וַיְדַבֵּר | וַיְעַנֶּה |
-| [Weqatal](piel-weak-paradigms.md#pe-guttural-weqatal) | וְדִבֵּר | וְעִנָּה |
-| [Imperative](piel-weak-paradigms.md#pe-guttural-imperative) | דַּבֵּר | עַנֵּה |
-| [Inf. Construct](piel-weak-paradigms.md#pe-guttural-inf-construct) | דַּבֵּר | עַנּוֹת |
-| [Inf. Absolute](piel-weak-paradigms.md#pe-guttural-inf-absolute) | דַּבֵּר | עַנֵּה |
-| [Participle](piel-weak-paradigms.md#pe-guttural-participle) | מְדַבֵּר | מְעַנֶּה |
-
-### Key Corpus Examples
-
-- עִנָּה (Deu 8:2) — "he humbled/afflicted you" — perfect 3ms Piel; "in order to humble you" (לְמַעַן עַנֹּתְךָ); R1=ע with composite shewa; Dagesh Forte in נ
-- וַיְעַנּוּ (Exo 1:12) — "and the more they afflicted them" — wayyiqtol 3mp; וַיְ prefix marks Piel Wayyiqtol; ע with composite shewa; Dagesh in נ
-- חִזַּקְתִּי (Isa 41:10) — "I have strengthened you" — perfect 1cs Piel of חָזַק; R1=ח (I-guttural) but ח can take dagesh in closed syllables; note Piel Hireq-Dagesh pattern
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | שִׁלַּח | יְשַׁלַּח | שַׁלַּח | שַׁלַּח | שַׁלֵּחַ | מְשַׁלֵּחַ |
+| 3fs / fs | שִׁלְּחָה | תְּשַׁלַּח | שַׁלְּחִי | | | מְשַׁלַּ֫חַת |
+| 2ms / mp | שִׁלַּ֫חְתָּ | תְּשַׁלַּח | שַׁלְּחוּ | | | מְשַׁלְּחִים |
+| 2fs / fp | שִׁלַּ֫חַתְּ | תְּשַׁלְּחִי | שַׁלַּ֫חְנָה | | | מְשַׁלְּחוֹת |
+| 1cs | שִׁלַּ֫חְתִּי | אֲשַׁלַּח | | | | |
+| 3cp / 3mp | שִׁלְּחוּ | יְשַׁלְּחוּ | | | | |
+| 2mp / 3fp | שִׁלַּחְתֶּם | תְּשַׁלַּ֫חְנָה | | | | |
+| 2fp / 2mp | שִׁלַּחְתֶּן | תְּשַׁלְּחוּ | | | | |
+| 1cp / 2fp | שִׁלַּ֫חְנוּ | תְּשַׁלַּ֫חְנָה | | | | |
+| — / 1cp | | נְשַׁלַּח | | | | |
 
 ---
 
-## 4. III-ח/ע (Lamed-Guttural) Verbs
+## 2. III-א Verbs — מָצָא ("to find")
 
-### Pattern
+The stem vowel in the Perfect is Tsere in most forms (not Patach). All Piel strong verb diagnostics are present.
 
-When R3 is ח or ע, the guttural demands an a-class vowel in its syllable and refuses e/i-class vowels before it. In the Piel, the characteristic Tsere under R2 (the Piel's signature vowel) is maintained up to R2, but before the final guttural:
-
-- In an **open, stressed final syllable** a *patach furtive* (פַּתַח גְּנוּבָה) appears immediately before the ח/ע — written below and to the right of the preceding vowel, pronounced *before* the guttural
-- When the guttural **carries a suffix** (closed syllable), the patach furtive disappears and a regular Patach appears under the guttural
-
-The Piel Dagesh Forte in R2 is completely unaffected by a III-guttural final radical.
-
-**Diagnostic markers:**
-- **Perfect 3ms:** שִׁלַּח — *patach furtive* before ח; Piel Hireq under R1; Dagesh in R2 (ל)
-- **Imperfect 3ms:** יְשַׁלַּח — Shewa under prefix; Patach under R1; Dagesh in R2; patach before ח
-- **Participle ms:** מְשַׁלֵּחַ — מְ prefix; Tsere under R2; patach furtive before ח
-
-> **Note:** שִׁלַּח (Piel of שָׁלַח) is among the most frequent verbs in the Torah — "send away, release, let go." Its Piel force is intensive vs. the Qal "to send."
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | III-ח (שלח — send away) | III-ע (שמע — cause to hear) |
-|---|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#lamed-guttural-perfect) | דִּבֵּר | שִׁלַּח | שִׁמַּע |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#lamed-guttural-imperfect) | יְדַבֵּר | יְשַׁלַּח | יְשַׁמַּע |
-| [Wayyiqtol](piel-weak-paradigms.md#lamed-guttural-wayyiqtol) | וַיְדַבֵּר | וַיְשַׁלַּח | וַיְשַׁמַּע |
-| [Weqatal](piel-weak-paradigms.md#lamed-guttural-weqatal) | וְדִבֵּר | וְשִׁלַּח | וְשִׁמַּע |
-| [Imperative](piel-weak-paradigms.md#lamed-guttural-imperative) | דַּבֵּר | שַׁלַּח | שַׁמַּע |
-| [Inf. Construct](piel-weak-paradigms.md#lamed-guttural-inf-construct) | דַּבֵּר | שַׁלַּח | שַׁמַּע |
-| [Inf. Absolute](piel-weak-paradigms.md#lamed-guttural-inf-absolute) | דַּבֵּר | שַׁלֵּחַ | שַׁמֵּעַ |
-| [Participle](piel-weak-paradigms.md#lamed-guttural-participle) | מְדַבֵּר | מְשַׁלֵּחַ | מְשַׁמֵּעַ |
-
-### Key Corpus Examples
-
-- שִׁלַּח (Gen 3:23) — "the LORD God sent him out" — perfect 3ms Piel; Hireq + Dagesh in ל + patach before ח; intensive vs. Qal "to send"
-- וַיְשַׁלַּח (Gen 8:7) — "he sent out a raven" — wayyiqtol 3ms; וַיְ prefix; Dagesh in ל; patach before ח
-- מְשַׁלֵּחַ (Mal 3:1) — "I am sending my messenger" — participle ms; מְ prefix; Tsere under R2; patach furtive before ח
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | מִצֵּא | יְמַצֵּא | מַצֵּא | מַצֵּא | מַצֹּא | מְמַצֵּא |
+| 3fs / fs | מִצְּאָה | תְּמַצֵּא | מַצְּאִי | | | מְמַצֵּאת |
+| 2ms / mp | מִצֵּ֫אתָ | תְּמַצֵּא | מַצְּאוּ | | | מְמַצְּאִים |
+| 2fs / fp | מִצֵּאת | תְּמַצְּאִי | מַצֶּ֫אנָה | | | מְמַצְּאוֹת |
+| 1cs | מִצֵּ֫אתִי | אֲמַצֵּא | | | | |
+| 3cp / 3mp | מִצְּאוּ | יְמַצְּאוּ | | | | |
+| 2mp / 3fp | מִצֵּאתֶם | תְּמַצֶּ֫אנָה | | | | |
+| 2fp / 2mp | מִצֵּאתֶן | תְּמַצְּאוּ | | | | |
+| 1cp / 2fp | מִצֵּ֫אנוּ | תְּמַצֶּ֫אנָה | | | | |
+| — / 1cp | | נְמַצֵּא | | | | |
 
 ---
 
-## 5. III-א (Lamed-Aleph) Verbs
+## 3. III-ה Verbs — גָּלָה ("to uncover, disclose")
 
-### Pattern
+All Piel strong verb diagnostics are present. Note the stem vowels in the Perfect (Qamets and Hireq Yod in selected forms) and the III-ה diagnostic endings throughout all conjugations.
 
-The final א of these roots quiesces (becomes silent) in word-final position. Because the silent א can no longer close a syllable, the preceding vowel lengthens compensatorily. In the Piel, the Tsere under R2 that would be followed by the final consonant א instead stands before a silent letter — the Tsere is retained or lengthened to a long vowel + א mater.
-
-- The Piel Dagesh Forte in R2 remains
-- Final א is written but silent: the form looks like it ends in a long vowel
-
-**Diagnostic markers:**
-- **Perfect 3ms:** מִלֵּא — Hireq under R1; Dagesh in ל (R2); Tsere + silent א
-- **Imperfect 3ms:** יְמַלֵּא — Shewa under prefix; Patach under R1; Dagesh in R2; Tsere + silent א
-- **Participle ms:** מְמַלֵּא — מְ prefix; Patach under R1; Dagesh; Tsere + silent א
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | III-א (מלא — fill) |
-|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#lamed-aleph-perfect) | דִּבֵּר | מִלֵּא |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#lamed-aleph-imperfect) | יְדַבֵּר | יְמַלֵּא |
-| [Wayyiqtol](piel-weak-paradigms.md#lamed-aleph-wayyiqtol) | וַיְדַבֵּר | וַיְמַלֵּא |
-| [Weqatal](piel-weak-paradigms.md#lamed-aleph-weqatal) | וְדִבֵּר | וְמִלֵּא |
-| [Imperative](piel-weak-paradigms.md#lamed-aleph-imperative) | דַּבֵּר | מַלֵּא |
-| [Inf. Construct](piel-weak-paradigms.md#lamed-aleph-inf-construct) | דַּבֵּר | מַלֵּא |
-| [Inf. Absolute](piel-weak-paradigms.md#lamed-aleph-inf-absolute) | דַּבֵּר | מַלֵּא |
-| [Participle](piel-weak-paradigms.md#lamed-aleph-participle) | מְדַבֵּר | מְמַלֵּא |
-
-### Key Corpus Examples
-
-- מִלֵּא (Exo 28:3) — "I have filled with a spirit of wisdom" — perfect 3ms Piel; Tsere + silent א; "filled" (factitive — causing to become full)
-- וַיְמַלֵּא (Exo 40:34) — "and the glory of the LORD filled the tabernacle" — wayyiqtol 3ms; וַיְ prefix; Dagesh in ל; Tsere + silent א
-- מְמַלֵּא (Jer 23:24) — "do I not fill heaven and earth?" — participle ms; מְ prefix; Dagesh + Tsere + silent א
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | גִּלָּה | יְגַלֶּה | גַּלֵּה | גַּלּוֹת | גַּלֵּה | מְגַלֶּה |
+| 3fs / fs | גִּלְּתָה | תְּגַלֶּה | גַּלִּי | | | מְגַלָּה |
+| 2ms / mp | גִּלִּ֫יתָ | תְּגַלֶּה | גַּלּוּ | | | מְגַלִּים |
+| 2fs / fp | גִּלִּית | תְּגַלִּי | גַּלֶּ֫ינָה | | | מְגַלּוֹת |
+| 1cs | גִּלִּ֫יתִי | אֲגַלֶּה | | | | |
+| 3cp / 3mp | גִּלּוּ | יְגַלּוּ | | | | |
+| 2mp / 3fp | גִּלִּיתֶם | תְּגַלֶּ֫ינָה | | | | |
+| 2fp / 2mp | גִּלִּיתֶן | תְּגַלּוּ | | | | |
+| 1cp / 2fp | גִּלִּ֫ינוּ | תְּגַלֶּ֫ינָה | | | | |
+| — / 1cp | | נְגַלֶּה | | | | |
 
 ---
 
-## 6. III-ה (Lamed-He) Verbs
+## 4. Geminate Verbs — הָלַל ("to praise")
 
-### Pattern
+All Piel strong verb diagnostics are present. Note the absence of the Daghesh Forte in selected forms of the Perfect (3fs, 3cp), Imperfect (2fs, 3mp, 2mp), and Imperative (fs, mp). This loss is due to the rule of sqnmlwy (§§5.5, 30.15).
 
-III-ה roots are among the most common weak roots in the OT. The final ה is a vowel letter (mater lectionis), not a true consonant. In the Piel, the characteristic Dagesh Forte in R2 is fully retained — this is the most important identification marker. What changes are the endings, which use the ה mater throughout:
-
-- **Perfect 3ms:** Tsere under R2 + ה mater (e.g., צִוָּה, גִּלָּה, כִּסָּה)
-- **Imperfect 3ms:** Seghol + ה mater (e.g., יְצַוֶּה, יְגַלֶּה)
-- **Wayyiqtol 3ms:** Apocopates — the final ה is dropped; the form ends in R2 (e.g., וַיְצַו, וַיְגַל)
-- **Imperative/Inf. Construct:** Tsere + ה mater
-- **Participle ms:** Seghol + ה mater
-
-> **Key:** The Dagesh Forte in R2 plus the ה mater at the end of the form is the reliable signature of the III-ה Piel. When the wayyiqtol drops the ה, the Dagesh in R2 is the only Piel marker remaining.
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | III-ה (צוה — command) | III-ה (גלה — uncover) | III-ה (כסה — cover) |
-|---|---|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#lamed-he-perfect) | דִּבֵּר | צִוָּה | גִּלָּה | כִּסָּה |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#lamed-he-imperfect) | יְדַבֵּר | יְצַוֶּה | יְגַלֶּה | יְכַסֶּה |
-| [Wayyiqtol](piel-weak-paradigms.md#lamed-he-wayyiqtol) | וַיְדַבֵּר | וַיְצַו | וַיְגַל | וַיְכַס |
-| [Weqatal](piel-weak-paradigms.md#lamed-he-weqatal) | וְדִבֵּר | וְצִוָּה | וְגִלָּה | וְכִסָּה |
-| [Imperative](piel-weak-paradigms.md#lamed-he-imperative) | דַּבֵּר | צַוֵּה | גַּלֵּה | כַּסֵּה |
-| [Inf. Construct](piel-weak-paradigms.md#lamed-he-inf-construct) | דַּבֵּר | צַוּוֹת | גַּלּוֹת | כַּסּוֹת |
-| [Inf. Absolute](piel-weak-paradigms.md#lamed-he-inf-absolute) | דַּבֵּר | צַוֵּה | גַּלֵּה | כַּסֵּה |
-| [Participle](piel-weak-paradigms.md#lamed-he-participle) | מְדַבֵּר | מְצַוֶּה | מְגַלֶּה | מְכַסֶּה |
-
-### Key Corpus Examples
-
-- צִוָּה (Gen 2:16) — "the LORD God commanded the man" — perfect 3ms Piel; Tsere under R2 (וּ with dagesh forte in ו) + ה mater; highly frequent (246 Torah occurrences)
-- וַיְצַו (Gen 18:19) — "he has commanded his children and his household" — wayyiqtol 3ms; apocopated; ה dropped; Dagesh Forte in ו is the Piel marker; most common Piel wayyiqtol form in the Torah
-- גִּלָּה (Gen 9:21) — "he was uncovered" — the root גלה appears in Piel meaning "to uncover, reveal"; Tsere (ā) + ה mater; Dagesh in ל
-- וַיְגַל (1 Sam 20:2) — "he has not uncovered my ear" — wayyiqtol apocopated; Piel of גָּלָה; ה dropped; Dagesh in ל
-- כִּסָּה (Gen 7:19) — "and the waters covered all the high mountains" — perfect 3ms Piel; Hireq + Dagesh in ס + Tsere + ה; "covered" (Piel intensive of כסה)
-- עִנָּה (Gen 16:6) — "Sarai afflicted her" — perfect 3ms Piel of עָנָה (III-ה + I-guttural); note both weak features: ע as R1 + ה as R3; Dagesh in נ intact
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | הִלֵּל | יְהַלֵּל | הַלֵּל | הַלֵּל | הַלֵּל | מְהַלֵּל |
+| 3fs / fs | הִלְלָה | תְּהַלֵּל | הַלְלִי | | | מְהַלֶּ֫לֶת |
+| 2ms / mp | הִלַּ֫לְתָּ | תְּהַלֵּל | הַלְלוּ | | | מְהַלְּלִים |
+| 2fs / fp | הִלַּלְתְּ | תְּהַלְלִי | הַלֵּ֫לְנָה | | | מְהַלְּלוֹת |
+| 1cs | הִלַּ֫לְתִּי | אֲהַלֵּל | | | | |
+| 3cp / 3mp | הִלְלוּ | יְהַלְלוּ | | | | |
+| 2mp / 3fp | הִלַּלְתֶּם | תְּהַלֵּ֫לְנָה | | | | |
+| 2fp / 2mp | הִלַּלְתֶּן | תְּהַלְלוּ | | | | |
+| 1cp / 2fp | הִלַּ֫לְנוּ | תְּהַלֵּ֫לְנָה | | | | |
+| — / 1cp | | נְהַלֵּל | | | | |
 
 ---
 
-## 7. I-נ (Pe-Nun) Verbs
+## 5. II-Guttural — Virtual Doubling — נָחַם ("to comfort, console")
 
-### Pattern
+In the Piel, only II-Guttural weak verbs exhibit major changes compared to the strong verb diagnostics. The guttural consonant in R2 position rejects the Daghesh Forte. With **virtual doubling**, the guttural rejects the Daghesh but the preceding vowel is not lengthened. The stem vowel in the Perfect may be either Tsere (בִּעֵר) or Patach (נִחַם) — the stem vowel is not a diagnostic feature of the Piel.
 
-In I-נ roots, the root נ (R1) assimilates into R2 whenever it would stand before another consonant with only a shewa (in unaccented syllables). In the **Piel**, this assimilation affects the entire paradigm because the Piel already places a Dagesh Forte in R2 — the assimilated נ simply merges into the Piel's existing Dagesh in R2. The result is:
-
-- **No separate trace of נ** — the Piel Dagesh in R2 represents both the Piel stem marker and the assimilated נ
-- The vowel pattern otherwise follows the standard Piel: Hireq or i-class vowel under R1 (which is now effectively the prefix) + Tsere under R2
-
-The most important I-נ Piel roots are:
-- **נחם** → Piel נִחֵּם ("to comfort, console")
-- **נצל** → Piel נִצֵּל ("to rescue, deliver")
-
-**Diagnostic markers:**
-- **Perfect 3ms:** נִחֵּם — Hireq under נ (R1 intact in the perfect); Dagesh Forte in ח (R2) = Piel dagesh; Tsere final
-- **Imperfect 3ms:** יְנַחֵּם — Shewa under prefix (יְ); Patach under נ; Dagesh in ח; Tsere
-- **Wayyiqtol 3ms:** וַיְנַחֵּם — וַיְ prefix; Patach under נ; Dagesh in ח
-
-> **Note:** Unlike in the Hiphil or Qal where I-נ assimilation often eliminates נ entirely, the Piel preserves נ as R1 throughout because the Piel prefix/vowel structure provides a stable syllable for the נ to stand in. Assimilation is partial or non-visible rather than total.
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | I-נ (נחם — comfort) | I-נ (נצל — rescue) |
-|---|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#pe-nun-perfect) | דִּבֵּר | נִחֵּם | נִצֵּל |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#pe-nun-imperfect) | יְדַבֵּר | יְנַחֵּם | יְנַצֵּל |
-| [Wayyiqtol](piel-weak-paradigms.md#pe-nun-wayyiqtol) | וַיְדַבֵּר | וַיְנַחֵּם | וַיְנַצֵּל |
-| [Weqatal](piel-weak-paradigms.md#pe-nun-weqatal) | וְדִבֵּר | וְנִחֵּם | וְנִצֵּל |
-| [Imperative](piel-weak-paradigms.md#pe-nun-imperative) | דַּבֵּר | נַחֵּם | נַצֵּל |
-| [Inf. Construct](piel-weak-paradigms.md#pe-nun-inf-construct) | דַּבֵּר | נַחֵּם | נַצֵּל |
-| [Inf. Absolute](piel-weak-paradigms.md#pe-nun-inf-absolute) | דַּבֵּר | נַחֵּם | נַצֵּל |
-| [Participle](piel-weak-paradigms.md#pe-nun-participle) | מְדַבֵּר | מְנַחֵּם | מְנַצֵּל |
-
-### Key Corpus Examples
-
-- נִחֵּם (Gen 50:21) — "and he comforted them" — perfect 3ms Piel; Hireq + Dagesh in ח + Tsere; I-נ root but נ intact; comfort after Joseph's brothers fear retribution
-- וַיְנַחֵּם (Gen 50:21) — "and he comforted them and spoke kindly" — wayyiqtol 3ms; וַיְ Piel prefix; Patach under נ; Dagesh in ח
-- מְנַחֵּם (Isa 51:12) — "I, I am he who comforts you" — participle ms Piel; God as מְנַחֵּם — the Comforter; מְ prefix + Dagesh in ח + Tsere
-- נִצֵּל (Amos 3:12) — "as a shepherd rescues from the mouth of a lion" — perfect 3ms Piel of נצל; Hireq + Dagesh in צ + Tsere
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | נִחַם | יְנַחֵם | נַחֵם | נַחֵם | נַחֵם | מְנַחֵם |
+| 3fs / fs | נִחֲמָה | תְּנַחֵם | נַחֲמִי | | | מְנַחֶ֫מֶת |
+| 2ms / mp | נִחַ֫מְתָּ | תְּנַחֵם | נַחֲמוּ | | | מְנַחֲמִים |
+| 2fs / fp | נִחַמְתְּ | תְּנַחֲמִי | נַחֵ֫מְנָה | | | מְנַחֲמוֹת |
+| 1cs | נִחַ֫מְתִּי | אֲנַחֵם | | | | |
+| 3cp / 3mp | נִחֲמוּ | יְנַחֲמוּ | | | | |
+| 2mp / 3fp | נִחַמְתֶּם | תְּנַחֵ֫מְנָה | | | | |
+| 2fp / 2mp | נִחַמְתֶּן | תְּנַחֲמוּ | | | | |
+| 1cp / 2fp | נִחַ֫מְנוּ | תְּנַחֵ֫מְנָה | | | | |
+| — / 1cp | | נְנַחֵם | | | | |
 
 ---
 
-## 8. I-י (Pe-Yod) Verbs
+## 6. II-Guttural — Compensatory Lengthening — בָּרַךְ ("to bless")
 
-### Pattern
+With **compensatory lengthening**, the guttural rejects the Daghesh Forte and the preceding vowel is lengthened. In the verb בָּרַךְ, the consonant ר in R2 position functions like a guttural in rejecting the Daghesh Forte. In the Perfect, Hireq lengthens to Tsere under R1 (בֵּרֵךְ). In all other conjugations, Patach lengthens to Qamets under R1 (יְבָרֵךְ).
 
-I-י roots in the Piel behave quite differently from I-י roots in the Qal or Hiphil. Because the Piel is a triconsonantal stem with a fixed pattern built on *all three* root consonants, the initial י (R1) is retained rather than dropped or replaced. The Piel simply applies its standard vowel pattern to the full root:
-
-- **Perfect 3ms:** Hireq (or Tsere) under R1 (י) + Dagesh in R2 + Tsere — e.g., יִסֵּר
-- The initial י behaves normally as a consonant because the Piel does not undergo the same prefix-coalescence that triggers I-י loss in Qal/Hiphil
-
-The key I-י Piel roots:
-- **יסר** → Piel יִסֵּר ("to discipline, chasten, instruct") — important in Deuteronomy
-- **יבשׁ** → Piel יִבֵּשׁ / יְיַבֵּשׁ (rare; "to dry up") — mostly Hiphil/Polel in practice
-
-**Diagnostic markers:**
-- **Perfect 3ms:** יִסֵּר — Hireq under י (R1); Dagesh Forte in ס (R2); Tsere under ס
-- **Imperfect 3ms:** יְיַסֵּר — Shewa under prefix יְ; Patach under R1 (י); Dagesh in ס; Tsere
-- **Wayyiqtol 3ms:** וַיְיַסֵּר — וַיְ prefix; Patach under R1; Dagesh in R2
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | I-י (יסר — discipline) |
-|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#pe-yod-perfect) | דִּבֵּר | יִסֵּר |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#pe-yod-imperfect) | יְדַבֵּר | יְיַסֵּר |
-| [Wayyiqtol](piel-weak-paradigms.md#pe-yod-wayyiqtol) | וַיְדַבֵּר | וַיְיַסֵּר |
-| [Weqatal](piel-weak-paradigms.md#pe-yod-weqatal) | וְדִבֵּר | וְיִסֵּר |
-| [Imperative](piel-weak-paradigms.md#pe-yod-imperative) | דַּבֵּר | יַסֵּר |
-| [Inf. Construct](piel-weak-paradigms.md#pe-yod-inf-construct) | דַּבֵּר | יַסֵּר |
-| [Inf. Absolute](piel-weak-paradigms.md#pe-yod-inf-absolute) | דַּבֵּר | יַסֵּר |
-| [Participle](piel-weak-paradigms.md#pe-yod-participle) | מְדַבֵּר | מְיַסֵּר |
-
-### Key Corpus Examples
-
-- יִסַּרְתִּיו (Jer 31:18) — "you have disciplined me and I was disciplined" — perfect 2ms Piel of יסר with 3ms suffix; Hireq + Dagesh in ס; the reflexive/reciprocal nuance
-- יְיַסֶּרְךָ (Deu 8:5) — "the LORD your God disciplines you" — imperfect 3ms Piel with 2ms suffix; Shewa under prefix; Patach + Dagesh in ס; key Deuteronomy passage (יָסַר as fatherly correction)
-- מְיַסֵּר (Psa 94:10) — "he who disciplines the nations" — participle ms Piel; מְ prefix + Patach under י + Dagesh in ס + Tsere; God as cosmic disciplinarian
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | בֵּרֵךְ | יְבָרֵךְ | בָּרֵךְ | בָּרֵךְ | בָּרֵךְ | מְבָרֵךְ |
+| 3fs / fs | בֵּרְכָה | תְּבָרֵךְ | בָּֽרְכִי | | | מְבָרֶ֫כֶת |
+| 2ms / mp | בֵּרַ֫כְתָּ | תְּבָרֵךְ | בָּֽרְכוּ | | | מְבָֽרְכִים |
+| 2fs / fp | בֵּרַכְתְּ | תְּבָֽרְכִי | בָּרֵ֫כְנָה | | | מְבָֽרְכוֹת |
+| 1cs | בֵּרַ֫כְתִּי | אֲבָרֵךְ | | | | |
+| 3cp / 3mp | בֵּרְכוּ | יְבָֽרְכוּ | | | | |
+| 2mp / 3fp | בֵּרַכְתֶּם | תְּבָרֵ֫כְנָה | | | | |
+| 2fp / 2mp | בֵּרַכְתֶּן | תְּבָֽרְכוּ | | | | |
+| 1cp / 2fp | בֵּרַ֫כְנוּ | תְּבָרֵ֫כְנָה | | | | |
+| — / 1cp | | נְבָרֵךְ | | | | |
 
 ---
 
-## 9. Biconsonantal (II-ו/י) Verbs
+## 7. I-Guttural (Pe-Guttural) Verbs — חָזַק ("to strengthen, make firm")
 
-### Pattern
+I-Guttural verbs in the Piel closely parallel the strong verb because R1 receives full vowels (Hireq in the Perfect, Patach in all other conjugations) throughout the paradigm. Gutturals accept these full vowels without difficulty. In forms where a vocal shewa falls on R2 (not R1), the I-guttural has no effect. The paradigm verb is חָזַק (Piel: חִזֵּק).
 
-Biconsonantal roots (R1–R3 with a medial vowel letter) present a special challenge in the Piel because the Piel requires a Dagesh Forte in R2 — but these roots have no true R2 consonant to receive it. The solution is **gemination**: R1 is written with the vowel, and R3 is doubled (written twice or with a Dagesh Forte) to supply the missing consonant cluster. This produces what grammarians call the **Polel** or **Poel** pattern, which functions as the Piel equivalent for biconsonantal roots:
-
-- **קוֹמֵם** (from קוּם) — "to set up, restore, establish" — the root's ו/ו is written as Holem-Vav; R3 (מ) receives the Dagesh Forte
-- **שׁוֹרֵר** (from שׁיר/שׁור) — "to sing" (Polel of שִׁיר) — same pattern
-
-The diagnostic for this class:
-- **Holem-Vav** (וֹ) as the medial vowel (from ו-class roots)
-- **Dagesh Forte in R3** (which serves as the "R2" in the Piel pattern)
-- Tsere under R3 in the perfect (Holem-Vav + R3 with Dagesh + Tsere)
-
-**Diagnostic markers:**
-- **Perfect 3ms:** קוֹמֵם — Holem-Vav medial; Dagesh in מ (R3 doubled); Tsere final
-- **Imperfect 3ms:** יְקוֹמֵם — Shewa under prefix; Holem-Vav; Dagesh in מ; Tsere
-- **Participle ms:** מְקוֹמֵם — מְ prefix; Holem-Vav; Dagesh in מ
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | Biconsonantal Polel (קום → קומם) |
-|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#biconsonantal-perfect) | דִּבֵּר | קוֹמֵם |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#biconsonantal-imperfect) | יְדַבֵּר | יְקוֹמֵם |
-| [Wayyiqtol](piel-weak-paradigms.md#biconsonantal-wayyiqtol) | וַיְדַבֵּר | וַיְקוֹמֵם |
-| [Weqatal](piel-weak-paradigms.md#biconsonantal-weqatal) | וְדִבֵּר | וְקוֹמֵם |
-| [Imperative](piel-weak-paradigms.md#biconsonantal-imperative) | דַּבֵּר | קוֹמֵם |
-| [Inf. Construct](piel-weak-paradigms.md#biconsonantal-inf-construct) | דַּבֵּר | קוֹמֵם |
-| [Inf. Absolute](piel-weak-paradigms.md#biconsonantal-inf-absolute) | דַּבֵּר | קוֹמֵם |
-| [Participle](piel-weak-paradigms.md#biconsonantal-participle) | מְדַבֵּר | מְקוֹמֵם |
-
-### Key Corpus Examples
-
-- קוֹמֵם (Ezr 9:9) — "to restore (set upright) our God's house" — perfect 3ms Polel/Piel of קוּם; Holem-Vav + Dagesh in מ + Tsere; "to set up, restore" a structure
-- יְקוֹמֵם (Psa 107:25) — "he raised up a stormy wind" — imperfect 3ms; Shewa under prefix + Holem-Vav + Dagesh in מ
-- מְקוֹמֵם (Psa 113:7) — "he raises the poor from the dust" — participle ms; מְ prefix; parallel to מֵקִים (Hiphil of the same root); Holem-Vav + Dagesh in מ
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | חִזֵּק | יְחַזֵּק | חַזֵּק | חַזֵּק | חַזֵּק | מְחַזֵּק |
+| 3fs / fs | חִזְּקָה | תְּחַזֵּק | חַזְּקִי | | | מְחַזֶּ֫קֶת |
+| 2ms / mp | חִזַּ֫קְתָּ | תְּחַזֵּק | חַזְּקוּ | | | מְחַזְּקִים |
+| 2fs / fp | חִזַּקְתְּ | תְּחַזְּקִי | חַזֵּ֫קְנָה | | | מְחַזְּקוֹת |
+| 1cs | חִזַּ֫קְתִּי | אֲחַזֵּק | | | | |
+| 3cp / 3mp | חִזְּקוּ | יְחַזְּקוּ | | | | |
+| 2mp / 3fp | חִזַּקְתֶּם | תְּחַזֵּ֫קְנָה | | | | |
+| 2fp / 2mp | חִזַּקְתֶּן | תְּחַזְּקוּ | | | | |
+| 1cp / 2fp | חִזַּ֫קְנוּ | תְּחַזֵּ֫קְנָה | | | | |
+| — / 1cp | | נְחַזֵּק | | | | |
 
 ---
 
-## 10. Geminate (Ayin-Doubled, II=III) Verbs
+## 8. I-נ (Pe-Nun) Verbs — נָצַל ("to rescue, deliver")
 
-### Pattern
+In the Piel, the root נ at R1 is retained throughout the paradigm because R1 receives a full vowel (Hireq in the Perfect, Patach elsewhere). The Piel pattern never reduces R1 to shewa, so the נ has no occasion to assimilate as it does in the Qal or Hiphil Imperfect. The Piel diagnostics (Dagesh Forte in R2, Tsere in Perfect, Patach in other conjugations) are fully preserved.
 
-Geminate roots (R2 = R3) are among the most natural Piel roots because the Piel's defining feature — Dagesh Forte in R2 — coincides perfectly with the geminate's doubled R2/R3. The Piel geminate pattern is essentially **identical to the Piel strong** in most forms: the Dagesh in R2 represents both the Piel stem marker and the geminate doubling of the root consonant.
-
-- The forms look exactly like strong Piel except that R2 and R3 are the same letter (and the Dagesh in R2 does double duty)
-- Most geminate Piel roots are common, high-frequency verbs: הִלֵּל, חִלֵּל, קִלֵּל, גִּלֵּל, שִׁכֵּל
-
-**Diagnostic markers:**
-- **Perfect 3ms:** הִלֵּל — Hireq under R1 (ה); Dagesh in ל (R2 = R3); Tsere; appears identical to a Piel strong root
-- **Imperfect 3ms:** יְהַלֵּל — Shewa under prefix; Patach under R1; Dagesh in R2; Tsere
-- **Wayyiqtol 3ms:** וַיְהַלֵּל — standard Piel Wayyiqtol pattern with doubled ל
-- **Participle ms:** מְהַלֵּל — מְ prefix; Patach under R1; Dagesh in doubled R2; Tsere
-
-> **Identification tip:** Once you know the root, identification is simple. The form הִלֵּל with the root הלל (not a three-letter root with three distinct consonants but a geminate) shows R2 = R3 = ל. The Piel Dagesh Forte in ל is exactly what you would expect of any Piel perfect 3ms.
-
-### Paradigm Summary (3ms per conjugation)
-
-| Conjugation | Strong (דבר) | Geminate (הלל — praise) | Geminate (קלל — curse/revile) |
-|---|---|---|---|
-| [Perfect (Qatal)](piel-weak-paradigms.md#geminate-perfect) | דִּבֵּר | הִלֵּל | קִלֵּל |
-| [Imperfect (Yiqtol)](piel-weak-paradigms.md#geminate-imperfect) | יְדַבֵּר | יְהַלֵּל | יְקַלֵּל |
-| [Wayyiqtol](piel-weak-paradigms.md#geminate-wayyiqtol) | וַיְדַבֵּר | וַיְהַלֵּל | וַיְקַלֵּל |
-| [Weqatal](piel-weak-paradigms.md#geminate-weqatal) | וְדִבֵּר | וְהִלֵּל | וְקִלֵּל |
-| [Imperative](piel-weak-paradigms.md#geminate-imperative) | דַּבֵּר | הַלֵּל | קַלֵּל |
-| [Inf. Construct](piel-weak-paradigms.md#geminate-inf-construct) | דַּבֵּר | הַלֵּל | קַלֵּל |
-| [Inf. Absolute](piel-weak-paradigms.md#geminate-inf-absolute) | דַּבֵּר | הַלֵּל | קַלֵּל |
-| [Participle](piel-weak-paradigms.md#geminate-participle) | מְדַבֵּר | מְהַלֵּל | מְקַלֵּל |
-
-### Key Corpus Examples
-
-- הִלֵּל (Psa 22:24[23]) — "he has not despised... but has praised" (כִּי לֹא שָׁזַף... כִּי הִלֵּלוֹ) — perfect 3ms Piel of הלל; "praised"; Hireq + doubled ל with Dagesh + Tsere
-- וַיְהַלֲלוּ (1 Chr 23:5) — "and they praised the LORD with instruments" — wayyiqtol 3mp; וַיְ Piel prefix; Patach + doubled ל; Dagesh in ל
-- חִלֵּל (Gen 49:4) — "you defiled my couch" — perfect 2ms Piel of חלל; "profaned, desecrated"; Hireq + Dagesh in ל + Tsere; geminate root חלל appearing identical in form to strong Piel
-- וַיְקַלֵּל (2 Sam 16:7) — "and Shimei cursed David" — wayyiqtol 3ms Piel of קלל; "cursed/reviled"; Dagesh in doubled ל; standard Piel Wayyiqtol pattern
-- מְהַלֵּל (Psa 113:3) — "the name of the LORD is to be praised" — participle ms Piel of הלל; מְ prefix + Patach + Dagesh in ל + Tsere; predicate use
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | נִצֵּל | יְנַצֵּל | נַצֵּל | נַצֵּל | נַצֵּל | מְנַצֵּל |
+| 3fs / fs | נִצְּלָה | תְּנַצֵּל | נַצְּלִי | | | מְנַצֶּ֫לֶת |
+| 2ms / mp | נִצַּ֫לְתָּ | תְּנַצֵּל | נַצְּלוּ | | | מְנַצְּלִים |
+| 2fs / fp | נִצַּלְתְּ | תְּנַצְּלִי | נַצֵּ֫לְנָה | | | מְנַצְּלוֹת |
+| 1cs | נִצַּ֫לְתִּי | אֲנַצֵּל | | | | |
+| 3cp / 3mp | נִצְּלוּ | יְנַצְּלוּ | | | | |
+| 2mp / 3fp | נִצַּלְתֶּם | תְּנַצֵּ֫לְנָה | | | | |
+| 2fp / 2mp | נִצַּלְתֶּן | תְּנַצְּלוּ | | | | |
+| 1cp / 2fp | נִצַּ֫לְנוּ | תְּנַצֵּ֫לְנָה | | | | |
+| — / 1cp | | נְנַצֵּל | | | | |
 
 ---
 
-## 11. High-Frequency Weak Piel Lemmas
+## 9. I-י (Pe-Yod) Verbs — יָסַר ("to discipline, chasten")
 
-The following weak-root Piel verbs are among the most common in the OT. All carry the Piel Dagesh Forte in R2 as their diagnostic marker, modified by the phonological behavior of the weak radical.
+In the Piel, the initial י at R1 is retained as a consonant throughout. Because the Piel assigns a full vowel (Hireq) to R1 in the Perfect and Patach in other conjugations, the י has no occasion to quiesce as it does in the Qal or Hiphil. The most distinctive form is the Imperfect, which shows a double yod (prefix י + root י): יְיַסֵּר.
 
-| # | Root | Weak Class | OT Piel tokens (approx.) | Piel Meaning | Function Type |
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| 3ms / ms | יִסֵּר | יְיַסֵּר | יַסֵּר | יַסֵּר | יַסֵּר | מְיַסֵּר |
+| 3fs / fs | יִסְּרָה | תְּיַסֵּר | יַסְּרִי | | | מְיַסֶּ֫רֶת |
+| 2ms / mp | יִסַּ֫רְתָּ | תְּיַסֵּר | יַסְּרוּ | | | מְיַסְּרִים |
+| 2fs / fp | יִסַּרְתְּ | תְּיַסְּרִי | יַסֵּ֫רְנָה | | | מְיַסְּרוֹת |
+| 1cs | יִסַּ֫רְתִּי | אֲיַסֵּר | | | | |
+| 3cp / 3mp | יִסְּרוּ | יְיַסְּרוּ | | | | |
+| 2mp / 3fp | יִסַּרְתֶּם | תְּיַסֵּ֫רְנָה | | | | |
+| 2fp / 2mp | יִסַּרְתֶּן | תְּיַסְּרוּ | | | | |
+| 1cp / 2fp | יִסַּ֫רְנוּ | תְּיַסֵּ֫רְנָה | | | | |
+| — / 1cp | | נְיַסֵּר | | | | |
+
+---
+
+## 10. Biconsonantal (II-ו/י) Verbs — Polel Stem
+
+Biconsonantal roots do not occur in the Piel stem. Instead, they appear in the **Polel** stem, which functions as the Piel equivalent for biconsonantal roots (and some geminate roots). The Polel is characterized by a Holem Vav after R1 and gemination (doubling) of R2/R3. See §31.13 below for the full Polel paradigm of רוּם.
+
+| Strong Piel 3ms | Polel 3ms (קוּם → "to restore, set up") |
+|---|---|
+| קִטֵּל | קוֹמֵם |
+
+The Polel pattern: Holem Vav + R2 doubled (R2 = R3) with Tsere. For יִ-class roots (e.g., שִׁיר → שׁוֹרֵר).
+
+---
+
+## Summary — 3ms Principal Parts (§31.11)
+
+| Class | Perfect | Imperfect | Imperative | Inf. Cs. | Inf. Abs. | Participle |
+|---|---|---|---|---|---|---|
+| Strong | קִטֵּל | יְקַטֵּל | קַטֵּל | קַטֵּל | קַטֵּל | מְקַטֵּל |
+| III-ח/ע | שִׁלַּח | יְשַׁלַּח | שַׁלַּח | שַׁלַּח | שַׁלֵּחַ | מְשַׁלֵּחַ |
+| III-א | מִצֵּא | יְמַצֵּא | מַצֵּא | מַצֵּא | מַצֹּא | מְמַצֵּא |
+| III-ה | גִּלָּה | יְגַלֶּה | גַּלֵּה | גַּלּוֹת | גַּלֵּה | מְגַלֶּה |
+| Geminate | הִלֵּל | יְהַלֵּל | הַלֵּל | הַלֵּל | הַלֵּל | מְהַלֵּל |
+| II-Guttural (Virtual Doubling) | נִחַם | יְנַחֵם | נַחֵם | נַחֵם | נַחֵם | מְנַחֵם |
+| II-Guttural (Comp. Lengthening) | בֵּרֵךְ | יְבָרֵךְ | בָּרֵךְ | בָּרֵךְ | בָּרֵךְ | מְבָרֵךְ |
+| I-Guttural | חִזֵּק | יְחַזֵּק | חַזֵּק | חַזֵּק | חַזֵּק | מְחַזֵּק |
+| I-נ | נִצֵּל | יְנַצֵּל | נַצֵּל | נַצֵּל | נַצֵּל | מְנַצֵּל |
+| I-י | יִסֵּר | יְיַסֵּר | יַסֵּר | יַסֵּר | יַסֵּר | מְיַסֵּר |
+
+---
+
+## Additional Information: The Polel Stem (§31.13)
+
+Biconsonantal verbs do not occur in the Piel, Pual, or Hithpael stems. Instead, they occur in the Polel, Polal (§33.11), and Hithpolel (§35.12) stems. Geminate roots may also appear in these stems. In general, the meaning of the Piel corresponds to the meaning of the Polel, the Pual to the Polal, and the Hithpael to the Hithpolel.
+
+The Polel stem is characterized by a Holem Vav after R1 and gemination of R2/R3. Below are the Polel forms of רוּם ("to exalt, lift up"):
+
+| | Perfect | Imperfect | Imperative | Inf. Cs. | Participle |
 |---|---|---|---|---|---|
-| 1 | צוה | III-ה | 485 | to command | Simple action / Denominative |
-| 2 | כסה | III-ה | 131 | to cover | Intensive |
-| 3 | גלה | III-ה | 110 | to uncover, reveal, exile | Intensive |
-| 4 | שלח | III-ח/ע | 106 | to send away, release, divorce | Intensive |
-| 5 | כלה | III-ה | 105 | to finish, complete, destroy | Intensive |
-| 6 | הלל | Geminate | 100 | to praise | Intensive / Denominative |
-| 7 | ענה | I-guttural + III-ה | 75 | to afflict, humble, oppress | Factitive |
-| 8 | מלא | III-א | 68 | to fill | Factitive |
-| 9 | נחם | I-נ | 51 | to comfort, console | Intensive / Factitive |
-| 10 | חלל | Geminate | 47 | to profane, desecrate | Factitive |
-| 11 | קלל | Geminate | 43 | to curse, revile | Intensive |
-| 12 | יסר | I-י | 42 | to discipline, chasten, instruct | Factitive / Simple action |
-| 13 | כסה | III-ה | — | (see #2) | — |
-| 14 | נצל | I-נ | 36 | to rescue, deliver | Intensive |
-| 15 | קומם | Biconsonantal (Polel) | 9 | to set up, restore, raise | Factitive |
-
-> **Observation:** The III-ה class dominates the high-frequency weak Piel list. Roots like צוה, כסה, גלה, כלה, and ענה account for hundreds of Torah and OT occurrences. The Dagesh Forte in R2 + ה mater ending is therefore the single most productive weak Piel pattern to master.
-
----
-
-*Sources: MACULA Hebrew WLC (Clear Bible, CC BY 4.0) · BBH = Pratico & Van Pelt, Basics of Biblical Hebrew, 3rd ed.*
+| 3ms / ms | רוֹמֵם | יְרוֹמֵם | רוֹמֵם | רוֹמֵם | מְרוֹמֵם |
+| 3fs / fs | רוֹמְמָה | תְּרוֹמֵם | רוֹמְמִי | | מְרוֹמֶ֫מֶת |
+| 2ms / mp | רוֹמַ֫מְתָּ | תְּרוֹמֵם | רוֹמְמוּ | | מְרוֹמְמִים |
+| 2fs / fp | רוֹמַמְתְּ | תְּרוֹמְמִי | רוֹמֵ֫מְנָה | | מְרוֹמְמוֹת |
+| 1cs | רוֹמַ֫מְתִּי | אֲרוֹמֵם | | | |
+| 3cp / 3mp | רוֹמְמוּ | יְרוֹמְמוּ | | | |
+| 2mp / 3fp | רוֹמַמְתֶּם | תְּרוֹמֵ֫מְנָה | | | |
+| 2fp / 2mp | רוֹמַמְתֶּן | תְּרוֹמְמוּ | | | |
+| 1cp / 2fp | רוֹמַ֫מְנוּ | תְּרוֹמֵ֫מְנָה | | | |
+| — / 1cp | | נְרוֹמֵם | | | |

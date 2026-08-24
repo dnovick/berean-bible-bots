@@ -24,6 +24,14 @@ instructor: "David Novick"
 chapter: 32
 agenda:
 
+reading:
+  - name: "Psalm 119:17-24"
+    description: "The law of the LORD — an acrostic poem. Part ג."
+    passage: "Psalm 119:17-24"
+    file: "ps119-17-24.html"
+    scope: instance
+    duration: "20 min"
+
 lesson:
   name: "BBH 32 - Pual Strong Verbs"
   url: "/lessons/hebrew/ch32/"
