@@ -1,0 +1,32 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 34 — Hithpael Strong
+#tags column:3
+
+What are the THREE universal Hithpael diagnostics?	הִתְ prefix (varies: יִתְ/תִּתְ in Imperfect, מִתְ in Participle) + Pathach under R1 + Daghesh Forte in R2	diagnostic bbh-ch34
+Which FOUR Hithpael forms look identical?	Perfect 3ms = Imperative 2ms = Infinitive Construct = Infinitive Absolute — all: הִתְקַדֵּשׁ	diagnostic bbh-ch34
+Hithpael Participle prefix	מִתְ — unique to the Hithpael Participle; contrast Piel Participle (מְ + Patach) and Pual Participle (מְ + Qibbuts)	diagnostic hithpael-participle bbh-ch34
+What triggers Hithpael metathesis?	A sibilant (שׁ, שׂ, ס, צ) as R1 — ת of the prefix switches position with the sibilant	diagnostic metathesis bbh-ch34
+What is הִשְׁתַּחֲוָה, and why is it not Hithpael?	Hishtaphel of שׁחה — the unique Hishtaphel stem; only verb in this stem; 173× in OT = "he worshiped / bowed down"	diagnostic hishtaphel bbh-ch34
+הִתְקַדֵּשׁ	קדש Hithpael+Perfect+3ms — "he sanctified himself" — intensive-reflexive; same form as Imp. 2ms, Inf. Cs., Inf. Abs.	hithpael-perfect intensive-reflexive bbh-ch34
+הִתְקַדַּשְׁתָּ	קדש Hithpael+Perfect+2ms — "you sanctified yourself" — 2ms suffix תָּ; dagesh+Pathach in ד	hithpael-perfect intensive-reflexive bbh-ch34
+הִתְקַדַּשְׁתִּי	קדש Hithpael+Perfect+1cs — "I sanctified myself" — 1cs suffix תִּי	hithpael-perfect intensive-reflexive bbh-ch34
+יִתְקַדֵּשׁ	קדש Hithpael+Imperfect+3ms — "he will sanctify himself" — יִתְ preformative + Pathach under ק + dagesh+Tsere in ד	hithpael-imperfect intensive-reflexive bbh-ch34
+וַיִּתְקַדֵּשׁ	קדש Hithpael+Wayyiqtol+3ms — "and he sanctified himself" — וַיִּ prefix (Patach+Hireq+dagesh in yod) + תְ preformative	hithpael-wayyiqtol intensive-reflexive bbh-ch34
+הִתְקַדֵּשׁ!	קדש Hithpael+Imperative+2ms — "sanctify yourself!" — identical form to Perfect 3ms, Inf. Cs., Inf. Abs.; imperatival context distinguishes	hithpael-imperative intensive-reflexive bbh-ch34
+הִתְקַדֵּשׁ (+ לְ/כְּ)	קדש Hithpael+Infinitive Construct — "to sanctify oneself / when sanctifying oneself" — prepositions signal Inf. Cs.; identical form to Perf. 3ms and Imp. 2ms	hithpael-inf-construct intensive-reflexive bbh-ch34
+וְהִתְקַדֵּשׁ	קדש Hithpael+Weqatal+3ms — "and he will sanctify himself / then he sanctified himself" — וְ + Hithpael Perfect 3ms; sequential action	hithpael-weqatal intensive-reflexive bbh-ch34
+וְהִתְקַדַּשְׁתָּ	קדש Hithpael+Weqatal+2ms — "and you will sanctify yourself / then you sanctified yourself" — 2ms suffix תָּ	hithpael-weqatal intensive-reflexive bbh-ch34
+וְהִתְקַדַּשְׁתִּי	קדש Hithpael+Weqatal+1cs — "and I will sanctify myself / then I sanctified myself" — 1cs suffix תִּי	hithpael-weqatal intensive-reflexive bbh-ch34
+מִתְקַדֵּשׁ	קדש Hithpael+Participle+ms active — "one who sanctifies himself" — מִתְ prefix; unique to Hithpael Participle	hithpael-participle intensive-reflexive bbh-ch34
+הִתְחַזֵּק	חזק Hithpael+Perfect+3ms — "he strengthened himself / took courage" — reflexive / simple action	hithpael-perfect simple-action bbh-ch34
+הִתְחַזַּקְתִּי	חזק Hithpael+Perfect+1cs — "I strengthened myself" — 1cs suffix תִּי; dagesh+Pathach in ז	hithpael-perfect simple-action bbh-ch34
+יִתְחַזֵּק	חזק Hithpael+Imperfect+3ms — "he will strengthen himself" — יִתְ preformative	hithpael-imperfect simple-action bbh-ch34
+וַיִּתְחַזֵּק	חזק Hithpael+Wayyiqtol+3ms — "and he strengthened himself" — וַיִּתְ prefix; 2 Chr 15:8	hithpael-wayyiqtol simple-action bbh-ch34
+מִתְחַזֵּק	חזק Hithpael+Participle+ms — "one who strengthens himself" — מִתְ prefix	hithpael-participle simple-action bbh-ch34
+הִשְׁתַּמֵּר	שׁמר Hithpael+Perfect+3ms — "he guarded himself" — R1=שׁ (sibilant): *הִתְשַׁמֵּר → ת and שׁ swap → הִשְׁתַּמֵּר; Deut 4:9	hithpael-perfect metathesis bbh-ch34
+הִסְתַּתֵּר	סתר Hithpael+Perfect+3ms — "he hid himself" — R1=ס (sibilant): *הִתְסַתֵּר → ת and ס swap → הִסְתַּתֵּר; 1 Sam 23:19	hithpael-perfect metathesis bbh-ch34
+הִדַּבֵּר	דבר Hithpael+Perfect+3ms — "he spoke with / conferred" — R1=ד: ת assimilates into ד → dagesh forte in ד; contrast Piel דִּבֵּר	hithpael-perfect assimilation bbh-ch34
+הִשְׁתַּחֲוָה	שׁחה Hishtaphel+Perfect+3ms — "he worshiped / bowed down" — NOT Hithpael; unique Hishtaphel stem; III-ה verb; 173× in OT; Gen 18:2	hishtaphel bbh-ch34
+מִשְׁתַּחֲוֶה	שׁחה Hishtaphel+Participle+ms — "worshiping / bowing down" — מִשְׁתּ prefix (מִ + metathesized שׁת); het takes hateph-Pathach; Ps 22:28	hishtaphel bbh-ch34

@@ -1,0 +1,25 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 32 — Pual Strong
+#tags column:3
+
+שֻׁבַּר	שבר Pual+Perfect+3ms — "it was broken/shattered" — passive intensive; Qibbuts under R1 + Daghesh in R2	pual-perfect passive-intensive bbh-ch32
+שֻׁבַּרְתָּ	שבר Pual+Perfect+2ms — "you were broken" — 2ms suffix תָּ; Daghesh in R2	pual-perfect passive-intensive bbh-ch32
+יְשֻׁבַּר	שבר Pual+Imperfect+3ms — "it will be broken" — יְ prefix (shewa) + Qibbuts + Daghesh in R2	pual-imperfect passive-intensive bbh-ch32
+וַיְשֻׁבַּר	שבר Pual+Wayyiqtol+3ms — "and it was broken" — וַיְ prefix (same as Piel); Qibbuts under R1 distinguishes Pual	pual-wayyiqtol passive-intensive bbh-ch32
+מְשֻׁבָּר	שבר Pual+Participle+ms — "broken" — מְ prefix + Qibbuts + Daghesh in R2 + Qamets under R2	pual-participle passive-intensive bbh-ch32
+וְשֻׁבַּר	שבר Pual+Weqatal+3ms — "and it will be broken / then it was broken" — וְ + Pual Perfect 3ms	pual-weqatal passive-intensive bbh-ch32
+וְשֻׁבַּרְתָּ	שבר Pual+Weqatal+2ms — "and you will be broken / then you were broken" — 2ms suffix תָּ	pual-weqatal passive-intensive bbh-ch32
+וְשֻׁבַּרְתִּי	שבר Pual+Weqatal+1cs — "and I will be broken / then I was broken" — 1cs suffix תִּי	pual-weqatal passive-intensive bbh-ch32
+סֻפַּר	ספר Pual+Perfect+3ms — "it was told/counted" — Qibbuts under R1 + Daghesh in R2; Exo 18:8	pual-perfect passive-simple bbh-ch32
+סֻפַּרְתִּי	ספר Pual+Perfect+1cs — "I was counted" — 1cs suffix תִּי	pual-perfect passive-simple bbh-ch32
+יְסֻפַּר	ספר Pual+Imperfect+3ms — "it will be told" — יְ prefix + Qibbuts + Daghesh in R2	pual-imperfect passive-simple bbh-ch32
+וַיְסֻפַּר	ספר Pual+Wayyiqtol+3ms — "and it was told" — וַיְ prefix marks Pual Wayyiqtol	pual-wayyiqtol passive-simple bbh-ch32
+מְסֻפָּר	ספר Pual+Participle+ms — "what is counted/told" — מְ prefix; Qamets under R2	pual-participle passive-simple bbh-ch32
+סֻפַּר (+ לְ/בְּ)	ספר Pual+Infinitive Construct — "to be told" — identical in form to Perfect 3ms; prepositions distinguish	pual-inf-construct passive-simple bbh-ch32
+בֹּרַךְ	ברך Pual+Perfect+3ms — "he was blessed" — compensatory lengthening; Holem under R1; no Daghesh in ר	pual-perfect compensatory-lengthening bbh-ch32
+בֹּרַכְתָּ	ברך Pual+Perfect+2ms — "you were blessed" — Holem under R1 throughout	pual-perfect compensatory-lengthening bbh-ch32
+יְבֹרַךְ	ברך Pual+Imperfect+3ms — "he will be blessed" — יְ prefix; Holem replaces expected Qibbuts	pual-imperfect compensatory-lengthening bbh-ch32
+וְבֹרַךְ	ברך Pual+Weqatal+3ms — "and he will be blessed / then he was blessed" — וְ + Pual Perfect	pual-weqatal compensatory-lengthening bbh-ch32
+מְבֹרָךְ	ברך Pual+Participle+ms — "blessed" — מְ prefix; Holem under R1 instead of Qibbuts; Ps 113:2	pual-participle compensatory-lengthening bbh-ch32
