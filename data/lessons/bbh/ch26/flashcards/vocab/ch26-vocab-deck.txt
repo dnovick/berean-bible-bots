@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 26 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 26
 #tags column:3
 בָּקַשׁ	verb — (Pi) to seek, search for, look for, discover, demand, require; (Pu) be sought — 225×	bbh-ch26-vocab bbh-ch26-verb
 דָּבַר	verb — (Q) to speak (rare in Q); (Pi) speak — 1,136×	bbh-ch26-vocab bbh-ch26-verb

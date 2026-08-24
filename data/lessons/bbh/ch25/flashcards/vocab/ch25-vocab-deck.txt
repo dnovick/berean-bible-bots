@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 25 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 25
 #tags column:3
 הָפַךְ	verb — (Q) to turn, overturn, overthrow, destroy; (Ni) be destroyed, turned into, changed — 95×	bbh-ch25-vocab bbh-ch25-verb
 חָרָה	verb — (Q) to be(come) hot, burn with anger, become angry — 93×	bbh-ch25-vocab bbh-ch25-verb

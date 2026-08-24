@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 35 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 35
 #tags column:3
 חָוָה	verb — (Hishtaphel) to bow down, worship — 173×	bbh-ch35-vocab bbh-ch35-verb
 בָּמָה	noun fs — (cultic) high place, sacred hill; fp בָּמוֹת — 106×	bbh-ch35-vocab bbh-ch35-noun

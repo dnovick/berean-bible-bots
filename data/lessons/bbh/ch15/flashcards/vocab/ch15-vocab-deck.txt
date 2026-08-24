@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 15 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 15
 #tags column:3
 חָיָה	verb — (Q) to live, be alive, revive, restore to life; (Pi) preserve alive, let live, give life; (Hi) preserve, keep alive, revive, restore to life — 283×	bbh-ch15-vocab bbh-ch15-verb
 יָכֹל	verb — (Q) to be able, capable of, endure, prevail — 193×	bbh-ch15-vocab bbh-ch15-verb

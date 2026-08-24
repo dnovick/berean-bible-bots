@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 22 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 22
 #tags column:3
 בּוֹשׁ	verb — (Q) to be ashamed; (Hi) put to shame — 125×	bbh-ch22-vocab bbh-ch22-verb
 גָּדַל	verb — (Q) to grow up, be(come) great, strong, wealthy, important; (Pi) bring up (children), make great, extol; (Hi) make great, magnify, do great things — 117×	bbh-ch22-vocab bbh-ch22-verb

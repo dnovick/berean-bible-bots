@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 3 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 3
 #tags column:3
 אָב	noun ms — father, ancestor; cstr אֲבִי; pl אָבוֹת — 1,210×	bbh-ch3-vocab bbh-ch3-noun
 אָדוֹן	noun ms — lord, master; (divine title) אֲדֹנָי Lord (439×) — 774×	bbh-ch3-vocab bbh-ch3-noun

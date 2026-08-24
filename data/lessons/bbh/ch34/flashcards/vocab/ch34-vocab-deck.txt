@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 34 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 34
 #tags column:3
 פָּלַל	verb — (Hith) to pray, make intercession — 84×	bbh-ch34-vocab bbh-ch34-verb
 תָּקַע	verb — (Q) to drive or thrust (weapon into a person), pitch (tent), blow (trumpet), clap one's hands — 70×	bbh-ch34-vocab bbh-ch34-verb

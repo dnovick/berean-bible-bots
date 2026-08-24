@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 11 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 11
 #tags column:3
 אַמָּה	noun fs — cubit (forearm length), forearm — 249×	bbh-ch11-vocab bbh-ch11-noun
 אֹ֫רֶךְ	noun ms — length — 95×	bbh-ch11-vocab bbh-ch11-noun

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 27 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 27
 #tags column:3
 גּוּר	(Q) to sojourn, dwell as a foreigner or alien; 82×	bbh-ch27-vocab bbh-ch27-verb
 יָעַץ	(Q) to advise, counsel, plan, decide; (Ni) consult together; 80×	bbh-ch27-vocab bbh-ch27-verb

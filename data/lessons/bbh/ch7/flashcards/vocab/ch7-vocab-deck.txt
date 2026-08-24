@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 7 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 7
 #tags column:3
 קֹ֫דֶשׁ	noun ms — holiness, something that is holy — 470×	bbh-ch7-vocab bbh-ch7-noun
 רָעָה	noun fs — evil, wickedness, calamity, disaster — 354×	bbh-ch7-vocab bbh-ch7-noun

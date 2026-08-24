@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 28 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 28
 #tags column:3
 אָסַר	verb — (Q) to tie, bind, fetter, imprison — 73×	bbh-ch28-vocab bbh-ch28-verb
 זָעַק	verb — (Q) to cry (out), call for help, summon — 73×	bbh-ch28-vocab bbh-ch28-verb

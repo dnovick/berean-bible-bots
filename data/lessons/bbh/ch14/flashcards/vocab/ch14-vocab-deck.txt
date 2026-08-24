@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 14 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 14
 #tags column:3
 בּוֹא	verb — (Q) to go in, enter, come to, come upon; (Hi) bring (in), come (in); (Hoph) be brought — 2,592×	bbh-ch14-vocab bbh-ch14-verb
 בָּנָה	verb — (Q) to build (up), rebuild, build (establish) a family; (Ni) be built, have a child (by or from) — 377×	bbh-ch14-vocab bbh-ch14-verb

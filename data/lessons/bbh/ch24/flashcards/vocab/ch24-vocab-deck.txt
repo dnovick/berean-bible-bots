@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 24 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 24
 #tags column:3
 אָמַן	verb — (Ni) to be reliable, faithful or trustworthy; (Hi) believe (in), trust, have trust in, put trust in — 97×	bbh-ch24-vocab bbh-ch24-verb
 יָשַׁע	verb — (Ni) to be delivered, victorious, receive help; (Hi) help, save, deliver, rescue, come to the aid of — 205×	bbh-ch24-vocab bbh-ch24-verb

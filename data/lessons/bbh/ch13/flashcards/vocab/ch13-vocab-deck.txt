@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 13 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 13
 #tags column:3
 בָּרַךְ	verb — (Q pass ptc) blessed, praised, adored; (Pi) bless, praise — 327×	bbh-ch13-vocab bbh-ch13-verb
 זָכַר	verb — (Q) to remember; (Ni) be remembered, thought of; (Hi) remind — 235×	bbh-ch13-vocab bbh-ch13-verb
