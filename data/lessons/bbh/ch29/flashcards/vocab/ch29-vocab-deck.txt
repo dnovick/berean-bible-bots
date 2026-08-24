@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 29 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 29
 #tags column:3
 גֵּר	noun ms — stranger, sojourner, alien — 92×	bbh-ch29-vocab bbh-ch29-noun
 חַיָּה	noun fs — animal, beast, living thing — 96×	bbh-ch29-vocab bbh-ch29-noun

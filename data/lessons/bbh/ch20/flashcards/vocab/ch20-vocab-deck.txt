@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 20 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 20
 #tags column:3
 טָמֵא	verb — (Q) to be(come) unclean; (Ni) defile oneself; (Pi) defile, pronounce or declare unclean; (Hith) defile oneself, become unclean — 162×	bbh-ch20-vocab bbh-ch20-verb
 נָגַע	verb — (Q) to touch, strike, reach; (Hi) touch, reach, throw, arrive — 150×	bbh-ch20-vocab bbh-ch20-verb

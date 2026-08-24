@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 5 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 5
 #tags column:3
 אֵשׁ	noun cs — fire — 376×	bbh-ch5-vocab bbh-ch5-noun
 הֵיכָל	noun ms — temple, palace — 80×	bbh-ch5-vocab bbh-ch5-noun

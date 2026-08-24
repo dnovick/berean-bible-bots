@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 17 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 17
 #tags column:3
 אָבַד	verb — (Q) to perish, vanish, be(come) lost, go astray; (Pi) cause to perish, destroy; (Hi) exterminate — 185×	bbh-ch17-vocab bbh-ch17-verb
 אָהַב	verb — (Q) to love (of human and divine love); (Pi ptc) lover — 217×	bbh-ch17-vocab bbh-ch17-verb

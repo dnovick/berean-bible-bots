@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 31 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 31
 #tags column:3
 אָ֫וֶן	noun ms — iniquity, wickedness, evildoer — 81×	bbh-ch31-vocab bbh-ch31-noun
 אוֹצָר	noun ms — treasure, treasury, storehouse — 79×	bbh-ch31-vocab bbh-ch31-noun

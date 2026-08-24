@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 23 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 23
 #tags column:3
 בֶּגֶד	noun (ms) — clothes, garment, covering — 216×	bbh-ch23-vocab bbh-ch23-noun
 בְּהֵמָה	noun (fs) — animal(s), beast(s), cattle — 190×	bbh-ch23-vocab bbh-ch23-noun

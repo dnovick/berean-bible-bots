@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 10 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 10
 #tags column:3
 אֶ֫בֶן	noun fs — stone; pl אֲבָנִים — 276×	bbh-ch10-vocab bbh-ch10-noun
 אֹיֵב	noun ms — enemy — 285×	bbh-ch10-vocab bbh-ch10-noun

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 12 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 12
 #tags column:3
 אָכַל	verb — (Q) to eat, consume; (Ni) be eaten, consumed; (Hi) feed — 820×	bbh-ch12-vocab bbh-ch12-verb
 אָמַר	verb — (Q) to say; (Ni) be said, called; (Hi) declare, proclaim — 5,316×	bbh-ch12-vocab bbh-ch12-verb

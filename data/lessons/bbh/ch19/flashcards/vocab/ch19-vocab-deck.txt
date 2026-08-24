@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 19 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 19
 #tags column:3
 בָּטַח	verb — (Q) to trust, rely upon — 118×	bbh-ch19-vocab bbh-ch19-verb
 בָּכָה	verb — (Q) to weep (in grief or joy), weep (for) — 114×	bbh-ch19-vocab bbh-ch19-verb

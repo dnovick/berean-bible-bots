@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 4 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 4
 #tags column:3
 גּוֹי	noun ms — nation, people; pl גּוֹיִם — 567×	bbh-ch4-vocab bbh-ch4-noun
 דֶּ֫רֶךְ	noun cs — way, road, journey — 712×	bbh-ch4-vocab bbh-ch4-noun

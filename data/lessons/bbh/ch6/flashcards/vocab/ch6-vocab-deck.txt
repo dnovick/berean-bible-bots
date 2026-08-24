@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 6 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 6
 #tags column:3
 אַחֲרֵי	preposition — after, behind (also אַחַר) — 718×	bbh-ch6-vocab bbh-ch6-prep
 אֶל־	preposition — to, toward, into; with 3ms suff אֵלָיו — 5,518×	bbh-ch6-vocab bbh-ch6-prep

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 2 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 2
 #tags column:3
 אַבְרָהָם	proper noun — Abraham — 175×	bbh-ch2-vocab bbh-ch2-proper
 אַהֲרֹן	proper noun — Aaron — 347×	bbh-ch2-vocab bbh-ch2-proper

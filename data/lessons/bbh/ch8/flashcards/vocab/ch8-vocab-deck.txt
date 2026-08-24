@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 8 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 8
 #tags column:3
 אֲנַ֫חְנוּ	pronoun — we (1cp) — 121×	bbh-ch8-vocab bbh-ch8-pronoun
 אֲנִי	pronoun — I (1cs) — 874×	bbh-ch8-vocab bbh-ch8-pronoun

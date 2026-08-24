@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 21 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 21
 #tags column:3
 זָבַח	verb — (Q) to slaughter (for sacrifice), sacrifice; (Pi) offer sacrifice, sacrifice — 134×	bbh-ch21-vocab bbh-ch21-verb
 חָנָה	verb — (Q) to decline, camp, encamp, pitch camp, lay siege to — 143×	bbh-ch21-vocab bbh-ch21-verb

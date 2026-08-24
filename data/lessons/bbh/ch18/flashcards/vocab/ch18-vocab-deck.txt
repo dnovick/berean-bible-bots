@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 18 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 18
 #tags column:3
 בָּחַר	verb — (Q) to choose, test, examine — 172×	bbh-ch18-vocab bbh-ch18-verb
 בִּין	verb — (Q) to understand, perceive, consider, give heed to; (Ni) be discerning, have understanding; (Hi) understand, teach; (Hith) show oneself perceptive — 171×	bbh-ch18-vocab bbh-ch18-verb

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 33 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 33
 #tags column:3
 לִין	verb — (Q) to remain overnight, spend the night — 71×	bbh-ch33-vocab bbh-ch33-verb
 מָשַׁח	verb — (Q) to smear (with a liquid, oil or dye), anoint (with oil) — 70×	bbh-ch33-vocab bbh-ch33-verb

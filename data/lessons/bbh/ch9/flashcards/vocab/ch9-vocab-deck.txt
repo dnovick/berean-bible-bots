@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 9 — Vocabulary
+#deck:BBH::Vocabulary::Chapter 9
 #tags column:3
 אַף	noun md — nostril, nose; (metaphorically) anger; du אַפַּ֫יִם — 277×	bbh-ch9-vocab bbh-ch9-noun
 בָּקָר	noun ms — cattle, herd — 183×	bbh-ch9-vocab bbh-ch9-noun
