@@ -302,9 +302,13 @@ def _prepend_deck_download_header(content: str, stem: str) -> str:
     h1_m = re.match(r"(# [^\n]+\n)", content)
     if not h1_m:
         return content
+    # The deck page itself is promoted to flashcards/<stem>/index.html under
+    # mkdocs's directory URLs, but the .txt downloads stay flat in flashcards/
+    # as static files (mkdocs does not URL-rewrite links to non-.md assets)
+    # — so the deck page must reach up one level to find them.
     dl_line = (
-        f"\n**Download:** [Anki import (.txt)]({stem}.txt) · "
-        f"[Flashcards Deluxe (-fd.txt)]({stem}-fd.txt)\n\n---\n\n"
+        f"\n**Download:** [Anki import (.txt)](../{stem}.txt) · "
+        f"[Flashcards Deluxe (-fd.txt)](../{stem}-fd.txt)\n\n---\n\n"
     )
     rest = re.sub(r"^\s*---\s*\n+", "", content[h1_m.end():])
     return h1_m.group(0) + dl_line + rest
