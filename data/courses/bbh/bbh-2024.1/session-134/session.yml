@@ -49,4 +49,8 @@ sections:
   - heading: "Reference: Pual-Attested Verb Roots by Second-Radical Guttural/Resh"
     file: "pual-ii-guttural-roots.md"
 
+subpages:
+  - heading: "Atnach on the First Word — Full List"
+    file: "atnach-first-word-examples.md"
+
 notes: ""
