@@ -37,5 +37,7 @@ lesson:
   url: "/lessons/hebrew/ch32/"
 
 sections:
+  - heading: "Reference: Virtual Doubling vs. Compensatory Lengthening (II-Guttural Piel/Pual)"
+    file: "ii-guttural-doubling-vs-lengthening.md"
 
 notes: ""
