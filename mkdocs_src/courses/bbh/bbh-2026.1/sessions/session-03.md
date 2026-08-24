@@ -3,6 +3,7 @@
 **Course:** [Biblical Hebrew 1 — bbh-2026.1](../index.md)  
 **Date:** Aug 20, 2026  
 **Instructor:** Preston Brown  
+**Recording:** [Watch](https://drive.google.com/file/d/1d2fNZrpQAVHC8tVUodyzwX6LDQbdgVQ8/view)  
 
 ## Agenda
 
