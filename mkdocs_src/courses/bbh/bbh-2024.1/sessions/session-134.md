@@ -7,6 +7,7 @@
 ## Agenda
 
 1. Housekeeping (10 min)
+1. [Adventure with Atnach](session-134/adventure-with-atnach.md)
 1. [Lesson: BBH Ch32 — Pual Strong Verbs](/lessons/hebrew/ch32/) (30 min)
 1. [Lesson: BBH Ch33 — Pual Weak Verbs](/lessons/hebrew/ch33/) (30 min)
 1. [Reading: Psalm 119:17-24](session-134/ps119-17-24.html) (20 min)
