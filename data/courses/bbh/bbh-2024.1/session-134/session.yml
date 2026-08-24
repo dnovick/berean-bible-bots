@@ -23,12 +23,14 @@ focus: "Pual Verbs"
 instructor: "David Novick"
 chapter: 32
 agenda:
+  - title: "Housekeeping"
+    duration: "10 min"
   - title: "Lesson: BBH Ch32 — Pual Strong Verbs"
     url: "/lessons/hebrew/ch32/"
-    duration: "45 min"
+    duration: "30 min"
   - title: "Lesson: BBH Ch33 — Pual Weak Verbs"
     url: "/lessons/hebrew/ch33/"
-    duration: "45 min"
+    duration: "30 min"
 
 reading:
   - name: "Psalm 119:17-24"
