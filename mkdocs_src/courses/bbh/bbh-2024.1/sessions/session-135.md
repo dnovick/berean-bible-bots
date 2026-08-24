@@ -6,6 +6,5 @@
 
 ## Agenda
 
-1. [BBH Ch34 — Hithpael Strong Verbs](/lessons/hebrew/ch34/) (45 min)
-1. [BBH Ch35 — Hithpael Weak Verbs](/lessons/hebrew/ch35/) (45 min)
-1. [Lesson: BBH Ch34–35 — Hithpael Verbs](/lessons/hebrew/ch34/)
+1. [Lesson: BBH Ch34 — Hithpael Strong Verbs](/lessons/hebrew/ch34/) (45 min)
+1. [Lesson: BBH Ch35 — Hithpael Weak Verbs](/lessons/hebrew/ch35/) (45 min)

@@ -23,10 +23,10 @@ focus: "Pual Verbs"
 instructor: "David Novick"
 chapter: 32
 agenda:
-  - title: "BBH Ch32 — Pual Strong Verbs"
+  - title: "Lesson: BBH Ch32 — Pual Strong Verbs"
     url: "/lessons/hebrew/ch32/"
     duration: "45 min"
-  - title: "BBH Ch33 — Pual Weak Verbs"
+  - title: "Lesson: BBH Ch33 — Pual Weak Verbs"
     url: "/lessons/hebrew/ch33/"
     duration: "45 min"
 
@@ -37,10 +37,6 @@ reading:
     file: "ps119-17-24.html"
     scope: instance
     duration: "20 min"
-
-lesson:
-  name: "BBH Ch32–33 — Pual Verbs"
-  url: "/lessons/hebrew/ch32/"
 
 sections:
   - heading: "Reference: Virtual Doubling vs. Compensatory Lengthening (II-Guttural Piel/Pual)"
