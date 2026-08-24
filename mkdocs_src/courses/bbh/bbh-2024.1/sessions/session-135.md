@@ -1,4 +1,4 @@
-# Session 135 — Pual Weak Verbs
+# Session 135 — Hithpael Verbs
 
 **Course:** [Biblical Hebrew 1 — bbh-2024.1](../index.md)  
 **Date:** Sep 7, 2026  
@@ -6,4 +6,6 @@
 
 ## Agenda
 
-1. [Lesson: BBH 33 - Pual Weak Verbs](/lessons/hebrew/ch33/)
+1. [BBH Ch34 — Hithpael Strong Verbs](/lessons/hebrew/ch34/) (45 min)
+1. [BBH Ch35 — Hithpael Weak Verbs](/lessons/hebrew/ch35/) (45 min)
+1. [Lesson: BBH Ch34–35 — Hithpael Verbs](/lessons/hebrew/ch34/)

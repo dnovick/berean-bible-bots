@@ -19,10 +19,16 @@
 # notes:      plain-text instructor notes (not rendered on the page when blank)
 
 date: "2026-08-24"
-focus: "Pual Strong Verbs"
+focus: "Pual Verbs"
 instructor: "David Novick"
 chapter: 32
 agenda:
+  - title: "BBH Ch32 — Pual Strong Verbs"
+    url: "/lessons/hebrew/ch32/"
+    duration: "45 min"
+  - title: "BBH Ch33 — Pual Weak Verbs"
+    url: "/lessons/hebrew/ch33/"
+    duration: "45 min"
 
 reading:
   - name: "Psalm 119:17-24"
@@ -33,7 +39,7 @@ reading:
     duration: "20 min"
 
 lesson:
-  name: "BBH 32 - Pual Strong Verbs"
+  name: "BBH Ch32–33 — Pual Verbs"
   url: "/lessons/hebrew/ch32/"
 
 sections:
