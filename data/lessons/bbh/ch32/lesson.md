@@ -21,9 +21,11 @@ The Pual (פֻּעַל) is the **passive of the Piel** stem. Because the Piel ma
 
 ---
 
-## 2. Scope (§32.1)
+## 2. Scope
 
-BBH studies only three Pual conjugations — Perfect, Imperfect, and Participle — because other forms are infrequent in the OT.
+BBH's primary treatment covers Perfect, Imperfect, and Participle. The full paradigm below adds Wayyiqtol, Weqatal, Infinitive Construct, and Infinitive Absolute for reference — these forms are infrequent in the OT but occur.
+
+> **Note:** The Pual has no Imperative — passive stems do not take imperatival forms.
 
 ---
 
@@ -76,7 +78,69 @@ The Pual Perfect is listed below with the Piel Perfect for comparison. The vowel
 
 ---
 
-## 5. Pual Participle (§32.7–32.8)
+## 5. Pual Wayyiqtol
+
+The Pual Wayyiqtol is formed with the **וַיְ** prefix (waw + Patach + the imperfect preformative). The same prefix is used in the Piel; the **Qibbuts under R1** distinguishes Pual from Piel.
+
+| PGN | Pual Wayyiqtol |
+|---|---|
+| 3ms | וַיְקֻטַּל |
+| 3fs | וַתְּקֻטַּל |
+| 2ms | וַתְּקֻטַּל |
+| 2fs | וַתְּקֻטְּלִי |
+| 1cs | וָאֲקֻטַּל |
+| 3mp | וַיְקֻטְּלוּ |
+| 3fp | וַתְּקֻטַּ֫לְנָה |
+| 2mp | וַתְּקֻטְּלוּ |
+| 2fp | וַתְּקֻטַּ֫לְנָה |
+| 1cp | וַנְּקֻטַּל |
+
+> **Strong verb summary form:** וַיְקֻטַּל
+
+---
+
+## 6. Pual Weqatal
+
+The Pual Weqatal is the Perfect form preceded by conjunctive waw (וְ). It carries the same Qibbuts-under-R1 + Daghesh-in-R2 signature as the Perfect.
+
+| PGN | Pual Weqatal |
+|---|---|
+| 3ms | וְקֻטַּל |
+| 3fs | וְקֻטְּלָה |
+| 2ms | וְקֻטַּ֫לְתָּ |
+| 2fs | וְקֻטַּלְתְּ |
+| 1cs | וְקֻטַּ֫לְתִּי |
+| 3cp | וְקֻטְּלוּ |
+| 2mp | וְקֻטַּלְתֶּם |
+| 2fp | וְקֻטַּלְתֶּן |
+| 1cp | וְקֻטַּ֫לְנוּ |
+
+> **Strong verb summary form:** וְקֻטַּל
+
+---
+
+## 7. Pual Infinitive Construct
+
+The Pual Infinitive Construct is identical in form to the Perfect 3ms. With pronominal suffixes it takes the same suffix pattern as the Piel Infinitive Construct.
+
+| Form | Pual |
+|---|---|
+| Infinitive Construct | קֻטַּל |
+| With ל | לְקֻטַּל |
+
+---
+
+## 8. Pual Infinitive Absolute
+
+The Pual Infinitive Absolute uses Holem under R2 (the standard infinitive absolute pattern), with Qibbuts retained under R1.
+
+| Form | Pual |
+|---|---|
+| Infinitive Absolute | קֻטֹּל |
+
+---
+
+## 9. Pual Participle (§32.7–32.8)
 
 | | Piel | Pual |
 |---|---|---|
@@ -94,24 +158,21 @@ The Pual Perfect is listed below with the Piel Perfect for comparison. The vowel
 
 ---
 
-## 6. Summary Chart (§32.9)
+## 10. Summary Chart
 
-| PGN | Perfect | Imperfect | Participle |
-|---|---|---|---|
-| 3ms | קֻטַּל | יְקֻטַּל | מְקֻטָּל |
-| 3fs | קֻטְּלָה | תְּקֻטַּל | מְקֻטֶּ֫לֶת |
-| 2ms | קֻטַּ֫לְתָּ | תְּקֻטַּל | מְקֻטָּלִים (mp) |
-| 2fs | קֻטַּלְתְּ | תְּקֻטְּלִי | מְקֻטָּלוֹת (fp) |
-| 1cs | קֻטַּ֫לְתִּי | אֲקֻטַּל | |
-| 3cp | קֻטְּלוּ | יְקֻטְּלוּ | |
-| 2mp | קֻטַּלְתֶּם | תְּקֻטַּ֫לְנָה | |
-| 2fp | קֻטַּלְתֶּן | תְּקֻטְּלוּ | |
-| 1cp | קֻטַּ֫לְנוּ | תְּקֻטַּ֫לְנָה | |
-| | | נְקֻטַּל | |
+| Conjugation | 3ms form |
+|---|---|
+| Perfect | קֻטַּל |
+| Imperfect | יְקֻטַּל |
+| Wayyiqtol | וַיְקֻטַּל |
+| Weqatal | וְקֻטַּל |
+| Infinitive Construct | קֻטַּל |
+| Infinitive Absolute | קֻטֹּל |
+| Participle ms | מְקֻטָּל |
 
 ---
 
-## 7. Pual vs. Hophal — Distinguishing Two Passive Stems
+## 11. Pual vs. Hophal — Distinguishing Two Passive Stems
 
 Both the Pual and Hophal are passive stems with Participles beginning with מ and a u-class vowel. The differences are systematic:
 
@@ -131,7 +192,7 @@ Both the Pual and Hophal are passive stems with Participles beginning with מ an
 
 ---
 
-## 8. Conjunctive Daghesh (§32.11)
+## 12. Conjunctive Daghesh (§32.11)
 
 A **Conjunctive Daghesh** is a Daghesh Forte placed in the initial consonant of a word to connect it to the preceding word and smooth pronunciation. It typically occurs when the preceding word ends in an unaccented ֶה or ָה and the following word begins with an accented syllable. Examples:
 
