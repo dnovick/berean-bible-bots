@@ -25,6 +25,9 @@ chapter: 31
 recording: https://drive.google.com/file/d/1gpSAxIsIYbZj1wmOPgRlGHA-It0X0ape/view
 
 agenda:
+  - title: "Lesson: BBH Ch31 — Piel Weak Verbs"
+    url: "/lessons/hebrew/ch31/"
+    duration: "45 min"
 
 reading:
   - name: "Psalm 119:9-16"
@@ -33,10 +36,6 @@ reading:
     file: "ps119-9-16.html"
     scope: instance
     duration: "20 min"
-
-lesson:
-  name: "BBH 31 - Piel Weak Verbs"
-  url: "/lessons/hebrew/ch31/"
 
 sections:
 notes: ""
