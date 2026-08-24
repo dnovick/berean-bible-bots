@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 16 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 16
 #tags column:3
 ἀκούω	verb — I hear; learn, obey; understand — 428×	bbg-ch16-vocab bbg-ch16-verb
 βλέπω	verb — I see, look at — 132×	bbg-ch16-vocab bbg-ch16-verb

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 23 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 23
 #tags column:3
 ἀπέρχομαι	verb — I depart — 117×	bbg-ch23-vocab bbg-ch23-verb
 ἄρχομαι	verb — I begin — 86×	bbg-ch23-vocab bbg-ch23-verb

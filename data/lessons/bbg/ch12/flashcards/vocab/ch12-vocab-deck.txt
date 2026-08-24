@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 12 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 12
 #tags column:3
 αἰών, -ῶνος, ὁ	noun 3rd decl. m — age, eternity — 122×	bbg-ch12-vocab bbg-ch12-noun
 διδάσκαλος, -ου, ὁ	noun 2nd decl. m — teacher — 59×	bbg-ch12-vocab bbg-ch12-noun

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 35 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 35
 #tags column:3
 ἁγιάζω	verb — I consecrate, sanctify — 28×	bbg-ch35-vocab bbg-ch35-verb
 ἁμαρτάνω	verb — I sin — 43×	bbg-ch35-vocab bbg-ch35-verb

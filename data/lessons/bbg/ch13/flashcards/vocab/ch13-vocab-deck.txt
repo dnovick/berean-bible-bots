@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 13 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 13
 #tags column:3
 γυνή, γυναικός, ἡ	noun 3rd decl. f — woman; wife — 215×	bbg-ch13-vocab bbg-ch13-noun
 δικαιοσύνη, -ης, ἡ	noun 1st decl. f — righteousness — 92×	bbg-ch13-vocab bbg-ch13-noun

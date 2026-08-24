@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 21 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 21
 #tags column:3
 ἀκολουθέω	verb — I follow; accompany — 90×	bbg-ch21-vocab bbg-ch21-verb
 διδάσκω	verb — I teach — 97×	bbg-ch21-vocab bbg-ch21-verb

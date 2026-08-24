@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 7 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 7
 #tags column:3
 ἁμαρτία, -ας, ἡ	noun 1st decl. f — sin — 173×	bbg-ch7-vocab bbg-ch7-noun
 ἀρχή, -ῆς, ἡ	noun 1st decl. f — beginning; ruler — 55×	bbg-ch7-vocab bbg-ch7-noun

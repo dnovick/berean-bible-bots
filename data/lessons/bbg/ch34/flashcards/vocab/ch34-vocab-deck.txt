@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 34 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 34
 #tags column:3
 δίδωμι	verb — I give; entrust — 415×	bbg-ch34-vocab bbg-ch34-verb
 ἔθνος, -ους, τό	noun 3rd decl. n — nation (sg); the Gentiles (pl) — 162×	bbg-ch34-vocab bbg-ch34-noun

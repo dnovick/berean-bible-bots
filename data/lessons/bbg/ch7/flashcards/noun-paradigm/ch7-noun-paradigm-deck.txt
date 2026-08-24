@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 7 — Noun Paradigms
+#deck:BBG::Chapter 7 — Noun Paradigms
 #tags column:3
 λόγος	Lemma: λόγος, -ου, ὁ | 2nd decl. m | nom sg | the word	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-nom noun-sg
 λόγου	Lemma: λόγος, -ου, ὁ | 2nd decl. m | gen sg | of the word	bbg-ch7-noun-paradigm noun-logos decl-2nd-masc noun-gen noun-sg

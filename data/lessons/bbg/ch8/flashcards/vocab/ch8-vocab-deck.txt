@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 8 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 8
 #tags column:3
 ἀλλά (ἀλλʼ)	conjunction — but, yet; rather — 638×	bbg-ch8-vocab bbg-ch8-other
 ἀπό (ἀπʼ, ἀφʼ)	preposition (+ gen) — (away) from — 646×	bbg-ch8-vocab bbg-ch8-prep

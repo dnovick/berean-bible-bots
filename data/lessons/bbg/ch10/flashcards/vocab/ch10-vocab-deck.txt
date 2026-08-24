@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 10 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 10
 #tags column:3
 εἰ	conjunction — if — 502×	bbg-ch10-vocab bbg-ch10-other
 εἰ μή	idiom — except; if not — 86×	bbg-ch10-vocab bbg-ch10-other

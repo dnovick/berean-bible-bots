@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 6 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 6
 #tags column:3
 ἀγάπη, -ης, ἡ	noun 1st decl. f — love — 116×	bbg-ch6-vocab bbg-ch6-noun
 ἄλλος, -η, -ο	adjective — other, another — 155×	bbg-ch6-vocab bbg-ch6-adj

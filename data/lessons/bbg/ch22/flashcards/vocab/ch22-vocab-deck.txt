@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 22 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 22
 #tags column:3
 ἀποθνῄσκω	verb — I die, am about to die, am freed from — 111×	bbg-ch22-vocab bbg-ch22-verb
 ἄρτος, -ου, ὁ	noun 2nd decl. m — bread, loaf, food — 97×	bbg-ch22-vocab bbg-ch22-noun
