@@ -36,27 +36,91 @@
 
 ### Pattern
 
-When R1 is a guttural (א, ע, ח, ה), the main effect on the Hophal is confined to the treatment of the shewa under R1. In the Hophal strong, R1 receives a vocal shewa (when in a prefix conjugation). A guttural in that position cannot take a plain vocal shewa and instead takes a composite shewa: hateph-patach (ֲ) for ע/ח, hateph-seghol (ֱ) for א/ה. The Hophal u-class prefix vowel (Shureq or Qibbuts) is entirely unaffected — gutturals occur at R1, not under the prefix letter.
+When R1 is a guttural (א, ע, ח, ה), the Hophal prefix vowel shifts to **o-class (Qamets Hatuf ָ)** — the predominant pattern for I-Guttural verbs in the Hophal (§29.3). A guttural at R1 cannot take a plain vocal shewa and instead takes a composite shewa: Hateph Qamets (ֳ) for ע/ח, Hateph Seghol (ֱ) for א/ה. The composite shewa under R1 is the primary surface mark of the I-Guttural class; the o-class prefix vowel is the Hophal diagnostic.
 
-In the perfect, the Hophal prefix הֻ or הוּ precedes R1 directly. The guttural takes its composite shewa without interacting with the prefix vowel at all. There is no dagesh-lengthening issue (unlike the Niphal or Hiphil) because the Hophal does not place dagesh forte under R1.
+In the Perfect, the Hophal prefix הָ precedes R1 directly. The guttural takes its Hateph Qamets without interacting with the prefix vowel at all. There is no dagesh-lengthening issue (unlike the Niphal or Hiphil) because the Hophal does not place dagesh forte under R1.
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הֶעֱמַד — Qibbuts/Shureq under הֻ/הוּ prefix; hateph-seghol under ע
-- **Imperfect 3ms:** יֻעֲמַד — Qibbuts under prefix consonant; hateph-patach under ע
-- **Wayyiqtol 3ms:** וַיֻּעֲמַד — doubled prefix consonant; composite shewa under guttural R1
-- **Participle ms:** מֻעֲמָד — מֻ prefix; composite shewa under R1; Qamets under R2
+**Diagnostic markers (BBH §29.2 — paradigm verb עָמַד):**
+- **Perfect 3ms:** הָעֳמַד — Qamets Hatuf (o-class) prefix; Hateph Qamets (ֳ) under ע
+- **Imperfect 3ms:** יָעֳמַד — Qamets Hatuf under prefix consonant; Hateph Qamets under ע
+- **Wayyiqtol 3ms:** וַיָּעֳמַד — dagesh forte in prefix consonant; Hateph Qamets under ע
+- **Participle ms:** מָעֳמָד — מָ prefix; Hateph Qamets under R1; Qamets under R2
 
-### Paradigm Summary (3ms per conjugation)
+### Paradigm Tables (BBH §29.2)
 
-| Conjugation | Hophal Strong (קטל) | I-guttural (עמד) | Notes |
-|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#pe-guttural-perfect) | הֻקְטַל | הֻעֲמַד | Composite shewa under ע replaces plain shewa |
-| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#pe-guttural-imperfect) | יֻקְטַל | יֻעֲמַד | Qibbuts under prefix; composite shewa under ע |
-| [Wayyiqtol](hophal-weak-paradigms.md#pe-guttural-wayyiqtol) | וַיֻּקְטַל | וַיֻּעֲמַד | Same prefix doubling; composite shewa under guttural |
-| [Weqatal](hophal-weak-paradigms.md#pe-guttural-perfect) | וְהֻקְטַל | וְהֻעֲמַד | Weqatal = וְ + Perfect form |
-| [Inf. Construct](hophal-weak-paradigms.md#pe-guttural-perfect) | הֻקְטַל | הֻעֲמַד | Rare; same as Perfect 3ms |
-| [Inf. Absolute](hophal-weak-paradigms.md#pe-guttural-participle) | הֻקְטֵל | הֻעֲמֵד | Tsere under R2 distinguishes from Perfect |
-| [Participle](hophal-weak-paradigms.md#pe-guttural-participle) | מֻקְטָל | מֻעֲמָד | מֻ prefix; composite shewa under R1 |
+#### Perfect (Qatal)
+
+| PGN | Hophal Strong (קטל) | I-Guttural (עמד) |
+|---|---|---|
+| 3ms | הָקְטַל | הָעֳמַד |
+| 3fs | הָקְטְלָה | הָעָמְדָה |
+| 2ms | הָקְטַלְתָּ | הָעֳמַ֫דְתָּ |
+| 2fs | הָקְטַלְתְּ | הָעֳמַדְתְּ |
+| 1cs | הָקְטַלְתִּי | הָעֳמַ֫דְתִּי |
+| 3cp | הָקְטְלוּ | הָעָמְדוּ |
+| 2mp | הָקְטַלְתֶּם | הָעֳמַדְתֶּם |
+| 2fp | הָקְטַלְתֶּן | הָעֳמַדְתֶּן |
+| 1cp | הָקְטַלְנוּ | הָעֳמַ֫דְנוּ |
+
+#### Imperfect (Yiqtol)
+
+| PGN | Hophal Strong (קטל) | I-Guttural (עמד) |
+|---|---|---|
+| 3ms | יָקְטַל | יָעֳמַד |
+| 3fs | תָּקְטַל | תָּעֳמַד |
+| 2ms | תָּקְטַל | תָּעֳמַד |
+| 2fs | תָּקְטְלִי | תָּעָמְדִי |
+| 1cs | אָקְטַל | אָעֳמַד |
+| 3mp | יָקְטְלוּ | יָעָמְדוּ |
+| 3fp | תָּקְטַ֫לְנָה | תָּעֳמַ֫דְנָה |
+| 2mp | תָּקְטְלוּ | תָּעָמְדוּ |
+| 2fp | תָּקְטַ֫לְנָה | תָּעֳמַ֫דְנָה |
+| 1cp | נָקְטַל | נָעֳמַד |
+
+#### Wayyiqtol
+
+| PGN | Hophal Strong (קטל) | I-Guttural (עמד) |
+|---|---|---|
+| 3ms | וַיָּקְטַל | וַיָּעֳמַד |
+| 3fs | וַתָּקְטַל | וַתָּעֳמַד |
+| 2ms | וַתָּקְטַל | וַתָּעֳמַד |
+| 2fs | וַתָּקְטְלִי | וַתָּעָמְדִי |
+| 1cs | וָאָקְטַל | וָאָעֳמַד |
+| 3mp | וַיָּקְטְלוּ | וַיָּעָמְדוּ |
+| 3fp | וַתָּקְטַ֫לְנָה | וַתָּעֳמַ֫דְנָה |
+| 2mp | וַתָּקְטְלוּ | וַתָּעָמְדוּ |
+| 2fp | וַתָּקְטַ֫לְנָה | וַתָּעֳמַ֫דְנָה |
+| 1cp | וַנָּקְטַל | וַנָּעֳמַד |
+
+#### Weqatal
+
+| PGN | I-Guttural (עמד) |
+|---|---|
+| 3ms | וְהָעֳמַד |
+| 3fs | וְהָעָמְדָה |
+| 2ms | וְהָעֳמַ֫דְתָּ |
+| 2fs | וְהָעֳמַדְתְּ |
+| 1cs | וְהָעֳמַ֫דְתִּי |
+| 3cp | וְהָעָמְדוּ |
+| 2mp | וְהָעֳמַדְתֶּם |
+| 2fp | וְהָעֳמַדְתֶּן |
+| 1cp | וְהָעֳמַ֫דְנוּ |
+
+#### Infinitives
+
+| Form | I-Guttural (עמד) | Notes |
+|---|---|---|
+| Infinitive Construct | הָעֳמַד | Same form as Perfect 3ms; rare |
+| Infinitive Absolute | הָעֳמֵד | Tsere under R2 (מ) distinguishes from Perfect |
+
+#### Participle
+
+| Form | Hophal Strong (קטל) | I-Guttural (עמד) |
+|---|---|---|
+| ms | מָקְטָל | מָעֳמָד |
+| fs | מָקְטֶלֶת | מָעֳמֶ֫דֶת |
+| mp | מָקְטָלִים | מָעֳמָדִים |
+| fp | מָקְטָלוֹת | מָעֳמָדוֹת |
 
 ### Key Corpus Examples
 
@@ -75,21 +139,86 @@ When R3 is ח or ע, the gutturals require an a-class vowel in their syllable. I
 In closed syllables (before suffixes), the patach furtive disappears; the guttural simply takes a regular Patach.
 
 **Diagnostic markers:**
-- **Perfect 3ms:** הֻשְׁלַח — Patach furtive before final ח (if applicable to the Hophal vowel pattern)
-- **Imperfect 3ms:** יֻשְׁלַח — Qibbuts under prefix; Patach under R2; final ח may carry patach furtive
-- **Participle ms:** מֻשְׁלָח — מֻ prefix; Qamets under R2; patach furtive where applicable
+- **Perfect 3ms:** הֻשְׁלַח — Qibbuts prefix; Patach under R2; final ח
+- **Imperfect 3ms:** יֻשְׁלַח — Qibbuts under prefix; Patach under R2; final ח
+- **Wayyiqtol 3ms:** וַיֻּשְׁלַח — dagesh forte in prefix consonant; Qibbuts; final ח
+- **Participle ms:** מֻשְׁלָח — מֻ prefix; Qamets under R2; final ח
 
-### Paradigm Summary (3ms per conjugation)
+### Paradigm Tables
 
-| Conjugation | Hophal Strong (קטל) | III-ח/ע (שלח) | Notes |
-|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#lamed-guttural-perfect) | הֻקְטַל | הֻשְׁלַח | Final ח takes patach; patach furtive in stressed open syllable |
-| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#lamed-guttural-imperfect) | יֻקְטַל | יֻשְׁלַח | Qibbuts prefix; Patach under R2; final ח |
-| [Wayyiqtol](hophal-weak-paradigms.md#lamed-guttural-imperfect) | וַיֻּקְטַל | וַיֻּשְׁלַח | Same contraction; final ח |
-| [Weqatal](hophal-weak-paradigms.md#lamed-guttural-perfect) | וְהֻקְטַל | וְהֻשְׁלַח | וְ + Perfect form |
-| [Inf. Construct](hophal-weak-paradigms.md#lamed-guttural-perfect) | הֻקְטַל | הֻשְׁלַח | Rare |
-| [Inf. Absolute](hophal-weak-paradigms.md#lamed-guttural-inf-abs) | הֻקְטֵל | הֻשְׁלֵחַ | Tsere under R2; patach furtive before final ח |
-| [Participle](hophal-weak-paradigms.md#lamed-guttural-participle) | מֻקְטָל | מֻשְׁלָח | מֻ prefix; Qamets under R2 |
+#### Perfect (Qatal)
+
+| PGN | Hophal Strong (קטל) | III-ח/ע (שלח) |
+|---|---|---|
+| 3ms | הֻקְטַל | הֻשְׁלַח |
+| 3fs | הֻקְטְלָה | הֻשְׁלְחָה |
+| 2ms | הֻקְטַלְתָּ | הֻשְׁלַ֫חְתָּ |
+| 2fs | הֻקְטַלְתְּ | הֻשְׁלַחְתְּ |
+| 1cs | הֻקְטַלְתִּי | הֻשְׁלַ֫חְתִּי |
+| 3cp | הֻקְטְלוּ | הֻשְׁלְחוּ |
+| 2mp | הֻקְטַלְתֶּם | הֻשְׁלַחְתֶּם |
+| 2fp | הֻקְטַלְתֶּן | הֻשְׁלַחְתֶּן |
+| 1cp | הֻקְטַלְנוּ | הֻשְׁלַ֫חְנוּ |
+
+#### Imperfect (Yiqtol)
+
+| PGN | Hophal Strong (קטל) | III-ח/ע (שלח) |
+|---|---|---|
+| 3ms | יֻקְטַל | יֻשְׁלַח |
+| 3fs | תֻּקְטַל | תֻּשְׁלַח |
+| 2ms | תֻּקְטַל | תֻּשְׁלַח |
+| 2fs | תֻּקְטְלִי | תֻּשְׁלְחִי |
+| 1cs | אֻקְטַל | אֻשְׁלַח |
+| 3mp | יֻקְטְלוּ | יֻשְׁלְחוּ |
+| 3fp | תֻּקְטַ֫לְנָה | תֻּשְׁלַ֫חְנָה |
+| 2mp | תֻּקְטְלוּ | תֻּשְׁלְחוּ |
+| 2fp | תֻּקְטַ֫לְנָה | תֻּשְׁלַ֫חְנָה |
+| 1cp | נֻקְטַל | נֻשְׁלַח |
+
+#### Wayyiqtol
+
+| PGN | Hophal Strong (קטל) | III-ח/ע (שלח) |
+|---|---|---|
+| 3ms | וַיֻּקְטַל | וַיֻּשְׁלַח |
+| 3fs | וַתֻּקְטַל | וַתֻּשְׁלַח |
+| 2ms | וַתֻּקְטַל | וַתֻּשְׁלַח |
+| 2fs | וַתֻּקְטְלִי | וַתֻּשְׁלְחִי |
+| 1cs | וָאֻקְטַל | וָאֻשְׁלַח |
+| 3mp | וַיֻּקְטְלוּ | וַיֻּשְׁלְחוּ |
+| 3fp | וַתֻּקְטַ֫לְנָה | וַתֻּשְׁלַ֫חְנָה |
+| 2mp | וַתֻּקְטְלוּ | וַתֻּשְׁלְחוּ |
+| 2fp | וַתֻּקְטַ֫לְנָה | וַתֻּשְׁלַ֫חְנָה |
+| 1cp | וַנֻּקְטַל | וַנֻּשְׁלַח |
+
+#### Weqatal
+
+| PGN | III-ח/ע (שלח) |
+|---|---|
+| 3ms | וְהֻשְׁלַח |
+| 3fs | וְהֻשְׁלְחָה |
+| 2ms | וְהֻשְׁלַ֫חְתָּ |
+| 2fs | וְהֻשְׁלַחְתְּ |
+| 1cs | וְהֻשְׁלַ֫חְתִּי |
+| 3cp | וְהֻשְׁלְחוּ |
+| 2mp | וְהֻשְׁלַחְתֶּם |
+| 2fp | וְהֻשְׁלַחְתֶּן |
+| 1cp | וְהֻשְׁלַ֫חְנוּ |
+
+#### Infinitives
+
+| Form | III-ח/ע (שלח) | Notes |
+|---|---|---|
+| Infinitive Construct | הֻשְׁלַח | Same form as Perfect 3ms; rare |
+| Infinitive Absolute | הָשְׁלֵחַ | Qamets prefix; Tsere under R2; Patach furtive before final ח |
+
+#### Participle
+
+| Form | Hophal Strong (קטל) | III-ח/ע (שלח) |
+|---|---|---|
+| ms | מֻקְטָל | מֻשְׁלָח |
+| fs | מֻקְטֶלֶת | מֻשְׁלַחַת |
+| mp | מֻקְטָלִים | מֻשְׁלָחִים |
+| fp | מֻקְטָלוֹת | מֻשְׁלָחוֹת |
 
 ### Key Corpus Examples
 
@@ -108,21 +237,86 @@ Final א quiesces in word-final position: it becomes silent and the vowel before
 Because the quiesced א is visually present in the spelling but phonetically absent, the form can initially appear difficult to identify as Hophal. The u-class prefix vowel remains the decisive diagnostic.
 
 **Diagnostic markers:**
-- **Perfect 3ms:** הֻמְצָא — Qamets under R2 + silent final א (compensatory for quiesced א)
-- **Imperfect 3ms:** יֻמְצָא — Qibbuts under prefix; Qamets under R2; silent final א
-- **Participle ms:** מֻמְצָא — מֻ prefix; Qamets under R2; silent final א
+- **Perfect 3ms:** הֻמְצָא — Qibbuts prefix; Qamets under R2 (compensatory for quiesced final א)
+- **Imperfect 3ms:** יֻמְצָא — Qibbuts under prefix; Qamets before silent final א
+- **Wayyiqtol 3ms:** וַיֻּמְצָא — dagesh forte in prefix consonant; Qamets + silent א
+- **Participle ms:** מֻמְצָא — מֻ prefix; Qamets before silent final א
 
-### Paradigm Summary (3ms per conjugation)
+### Paradigm Tables
 
-| Conjugation | Hophal Strong (קטל) | III-א (מצא) | Notes |
-|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#lamed-aleph-perfect) | הֻקְטַל | הֻמְצָא | Patach → Qamets before quiesced final א |
-| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#lamed-aleph-imperfect) | יֻקְטַל | יֻמְצָא | Qibbuts prefix; Qamets before silent א |
-| [Wayyiqtol](hophal-weak-paradigms.md#lamed-aleph-wayyiqtol) | וַיֻּקְטַל | וַיֻּמְצָא | Standard contraction; Qamets + silent א |
-| [Weqatal](hophal-weak-paradigms.md#lamed-aleph-perfect) | וְהֻקְטַל | וְהֻמְצָא | וְ + Perfect form |
-| [Inf. Construct](hophal-weak-paradigms.md#lamed-aleph-perfect) | הֻקְטַל | הֻמְצָא | Rare; same as Perfect 3ms |
-| [Inf. Absolute](hophal-weak-paradigms.md#lamed-aleph-inf-abs) | הֻקְטֵל | הֻמְצֵא | Tsere under R2; silent final א |
-| [Participle](hophal-weak-paradigms.md#lamed-aleph-participle) | מֻקְטָל | מֻמְצָא | מֻ prefix; Qamets before silent א |
+#### Perfect (Qatal)
+
+| PGN | Hophal Strong (קטל) | III-א (מצא) |
+|---|---|---|
+| 3ms | הֻקְטַל | הֻמְצָא |
+| 3fs | הֻקְטְלָה | הֻמְצְאָה |
+| 2ms | הֻקְטַלְתָּ | הֻמְצֵ֫אתָ |
+| 2fs | הֻקְטַלְתְּ | הֻמְצֵ֫את |
+| 1cs | הֻקְטַלְתִּי | הֻמְצֵ֫אתִי |
+| 3cp | הֻקְטְלוּ | הֻמְצְאוּ |
+| 2mp | הֻקְטַלְתֶּם | הֻמְצֵאתֶם |
+| 2fp | הֻקְטַלְתֶּן | הֻמְצֵאתֶן |
+| 1cp | הֻקְטַלְנוּ | הֻמְצֵ֫אנוּ |
+
+#### Imperfect (Yiqtol)
+
+| PGN | Hophal Strong (קטל) | III-א (מצא) |
+|---|---|---|
+| 3ms | יֻקְטַל | יֻמְצָא |
+| 3fs | תֻּקְטַל | תֻּמְצָא |
+| 2ms | תֻּקְטַל | תֻּמְצָא |
+| 2fs | תֻּקְטְלִי | תֻּמְצְאִי |
+| 1cs | אֻקְטַל | אֻמְצָא |
+| 3mp | יֻקְטְלוּ | יֻמְצְאוּ |
+| 3fp | תֻּקְטַ֫לְנָה | תֻּמְצֶ֫אנָה |
+| 2mp | תֻּקְטְלוּ | תֻּמְצְאוּ |
+| 2fp | תֻּקְטַ֫לְנָה | תֻּמְצֶ֫אנָה |
+| 1cp | נֻקְטַל | נֻמְצָא |
+
+#### Wayyiqtol
+
+| PGN | Hophal Strong (קטל) | III-א (מצא) |
+|---|---|---|
+| 3ms | וַיֻּקְטַל | וַיֻּמְצָא |
+| 3fs | וַתֻּקְטַל | וַתֻּמְצָא |
+| 2ms | וַתֻּקְטַל | וַתֻּמְצָא |
+| 2fs | וַתֻּקְטְלִי | וַתֻּמְצְאִי |
+| 1cs | וָאֻקְטַל | וָאֻמְצָא |
+| 3mp | וַיֻּקְטְלוּ | וַיֻּמְצְאוּ |
+| 3fp | וַתֻּקְטַ֫לְנָה | וַתֻּמְצֶ֫אנָה |
+| 2mp | וַתֻּקְטְלוּ | וַתֻּמְצְאוּ |
+| 2fp | וַתֻּקְטַ֫לְנָה | וַתֻּמְצֶ֫אנָה |
+| 1cp | וַנֻּקְטַל | וַנֻּמְצָא |
+
+#### Weqatal
+
+| PGN | III-א (מצא) |
+|---|---|
+| 3ms | וְהֻמְצָא |
+| 3fs | וְהֻמְצְאָה |
+| 2ms | וְהֻמְצֵ֫אתָ |
+| 2fs | וְהֻמְצֵ֫את |
+| 1cs | וְהֻמְצֵ֫אתִי |
+| 3cp | וְהֻמְצְאוּ |
+| 2mp | וְהֻמְצֵאתֶם |
+| 2fp | וְהֻמְצֵאתֶן |
+| 1cp | וְהֻמְצֵ֫אנוּ |
+
+#### Infinitives
+
+| Form | III-א (מצא) | Notes |
+|---|---|---|
+| Infinitive Construct | הֻמְצָא | Same form as Perfect 3ms; rare |
+| Infinitive Absolute | הֻמְצֵא | Qibbuts prefix; Tsere under R2; silent final א |
+
+#### Participle
+
+| Form | Hophal Strong (קטל) | III-א (מצא) |
+|---|---|---|
+| ms | מֻקְטָל | מֻמְצָא |
+| fs | מֻקְטֶלֶת | מֻמְצֵ֫את |
+| mp | מֻקְטָלִים | מֻמְצָאִים |
+| fp | מֻקְטָלוֹת | מֻמְצְאוֹת |
 
 ### Key Corpus Examples
 
@@ -136,38 +330,104 @@ Because the quiesced א is visually present in the spelling but phonetically abs
 
 ### Pattern
 
-III-ה roots treat the final ה as a vowel letter (mater lectionis), not a true consonant. In the Hophal, this produces contracted endings throughout the paradigm. The u-class prefix vowel (Shureq or Qibbuts) is unaffected because it sits under the prefix consonant, not near R3. The main effects are:
+III-ה roots treat the final ה as a vowel letter (mater lectionis), not a true consonant. Like I-Guttural verbs, III-ה Hophal verbs prefer the **o-class (Qamets Hatuf) prefix** (§29.5). The main effects are:
 
-- **Perfect 3ms:** ends in ָה (Qamets + ה) — the Hophal Patach under R2 is already Qamets in the III-ה perfect
-- **Imperfect 3ms:** ends in ֶה (Seghol + ה mater) — contraction of the strong imperfect final syllable
+- **Perfect 3ms:** ends in ָה (Qamets + ה) — the Hophal Patach under R2 lengthens to Qamets before the final vowel letter
+- **Imperfect 3ms:** ends in ֶה (Seghol + ה mater)
 - **Wayyiqtol 3ms:** apocopates — the final ה drops and the form ends in R2 with a short vowel
 - **Participle ms:** ends in ֶה like the imperfect
 
 This is one of the most practically important weak classes in the Hophal because key high-frequency roots (גָּלָה "exile," בָּנָה "build," נָכָה "strike") are III-ה.
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הֻגְלָה — Qibbuts prefix; Qamets + ה final
-- **Imperfect 3ms:** יֻגְלֶה — Qibbuts prefix; Seghol + ה final
-- **Wayyiqtol 3ms:** וַיֻּגֶל — apocopated; ה dropped; Seghol final
-- **Participle ms:** מֻגְלֶה — מֻ prefix; Seghol + ה
+**Diagnostic markers (BBH §29.4 — paradigm verb גָּלָה):**
+- **Perfect 3ms:** הָגְלָה — Qamets Hatuf (o-class) prefix; Qamets + ה final
+- **Imperfect 3ms:** יָגְלֶה — Qamets Hatuf prefix; Seghol + ה final
+- **Wayyiqtol 3ms:** וַיָּגֶל — apocopated; ה dropped; Seghol retained on R2
+- **Participle ms:** מָגְלֶה — מָ prefix; Seghol + ה
 
-### Paradigm Summary (3ms per conjugation)
+### Paradigm Tables (BBH §29.4)
 
-| Conjugation | Hophal Strong (קטל) | III-ה (גלה) | Notes |
-|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#lamed-he-perfect) | הֻקְטַל | הֻגְלָה | Qibbuts prefix; Qamets + ה mater |
-| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#lamed-he-imperfect) | יֻקְטַל | יֻגְלֶה | Qibbuts prefix; Seghol + ה |
-| [Wayyiqtol](hophal-weak-paradigms.md#lamed-he-wayyiqtol) | וַיֻּקְטַל | וַיֻּגֶל | Apocopated; ה dropped |
-| [Weqatal](hophal-weak-paradigms.md#lamed-he-perfect) | וְהֻקְטַל | וְהֻגְלָה | וְ + Perfect form |
-| [Inf. Construct](hophal-weak-paradigms.md#lamed-he-inf-construct) | הֻקְטַל | הֻגְלוֹת | Rare; ends in וֹת (standard III-ה infinitive suffix) |
-| [Inf. Absolute](hophal-weak-paradigms.md#lamed-he-inf-abs) | הֻקְטֵל | הֻגְלֵה | Tsere + ה |
-| [Participle](hophal-weak-paradigms.md#lamed-he-participle) | מֻקְטָל | מֻגְלֶה | מֻ prefix; Seghol + ה |
+#### Perfect (Qatal)
+
+| PGN | Hophal Strong (קטל) | III-ה (גלה) |
+|---|---|---|
+| 3ms | הָקְטַל | הָגְלָה |
+| 3fs | הָקְטְלָה | הָגְלְתָה |
+| 2ms | הָקְטַלְתָּ | הָגְלֵ֫יתָ |
+| 2fs | הָקְטַלְתְּ | הָגְלֵית |
+| 1cs | הָקְטַלְתִּי | הָגְלֵ֫יתִי |
+| 3cp | הָקְטְלוּ | הָגְלוּ |
+| 2mp | הָקְטַלְתֶּם | הָגְלֵיתֶם |
+| 2fp | הָקְטַלְתֶּן | הָגְלֵיתֶן |
+| 1cp | הָקְטַלְנוּ | הָגְלֵ֫ינוּ |
+
+#### Imperfect (Yiqtol)
+
+| PGN | Hophal Strong (קטל) | III-ה (גלה) |
+|---|---|---|
+| 3ms | יָקְטַל | יָגְלֶה |
+| 3fs | תָּקְטַל | תָּגְלֶה |
+| 2ms | תָּקְטַל | תָּגְלֶה |
+| 2fs | תָּקְטְלִי | תָּגְלִי |
+| 1cs | אָקְטַל | אָגְלֶה |
+| 3mp | יָקְטְלוּ | יָגְלוּ |
+| 3fp | תָּקְטַ֫לְנָה | תָּגְלֶ֫ינָה |
+| 2mp | תָּקְטְלוּ | תָּגְלוּ |
+| 2fp | תָּקְטַ֫לְנָה | תָּגְלֶ֫ינָה |
+| 1cp | נָקְטַל | נָגְלֶה |
+
+#### Wayyiqtol
+
+3ms apocopates (final ה drops); all other forms parallel the Imperfect.
+
+| PGN | Hophal Strong (קטל) | III-ה (גלה) |
+|---|---|---|
+| 3ms | וַיָּקְטַל | וַיָּגֶל *(apocopated)* |
+| 3fs | וַתָּקְטַל | וַתָּגְלֶה |
+| 2ms | וַתָּקְטַל | וַתָּגְלֶה |
+| 2fs | וַתָּקְטְלִי | וַתָּגְלִי |
+| 1cs | וָאָקְטַל | וָאָגְלֶה |
+| 3mp | וַיָּקְטְלוּ | וַיָּגְלוּ |
+| 3fp | וַתָּקְטַ֫לְנָה | וַתָּגְלֶ֫ינָה |
+| 2mp | וַתָּקְטְלוּ | וַתָּגְלוּ |
+| 2fp | וַתָּקְטַ֫לְנָה | וַתָּגְלֶ֫ינָה |
+| 1cp | וַנָּקְטַל | וַנָּגְלֶה |
+
+#### Weqatal
+
+| PGN | III-ה (גלה) |
+|---|---|
+| 3ms | וְהָגְלָה |
+| 3fs | וְהָגְלְתָה |
+| 2ms | וְהָגְלֵ֫יתָ |
+| 2fs | וְהָגְלֵית |
+| 1cs | וְהָגְלֵ֫יתִי |
+| 3cp | וְהָגְלוּ |
+| 2mp | וְהָגְלֵיתֶם |
+| 2fp | וְהָגְלֵיתֶן |
+| 1cp | וְהָגְלֵ֫ינוּ |
+
+#### Infinitives
+
+| Form | III-ה (גלה) | Notes |
+|---|---|---|
+| Infinitive Construct | הָגְלוֹת | Ends in וֹת (standard III-ה inf.const. suffix) |
+| Infinitive Absolute | הָגְלֵה | Qamets prefix; Tsere + ה mater |
+
+#### Participle
+
+| Form | Hophal Strong (קטל) | III-ה (גלה) |
+|---|---|---|
+| ms | מָקְטָל | מָגְלֶה |
+| fs | מָקְטֶלֶת | מָגְלָה |
+| mp | מָקְטָלִים | מָגְלִים |
+| fp | מָקְטָלוֹת | מָגְלוֹת |
 
 ### Key Corpus Examples
 
-- הֻגְלָה (Amos 1:5) — "the people of Aram shall go into exile to Kir" — Hophal Perfect 3ms of גָּלָה; Qibbuts prefix; Qamets + ה; "was exiled" (passive causative of Hiphil הֶגְלָה "to exile")
-- הֻגְלוּ (Amos 1:6) — "they delivered up a whole people into exile" — Hophal Perfect 3cp of גָּלָה; plural suffix added to contracted stem; Amos uses this formula repeatedly for the nations
-- הֻכָּה (Num 25:14) — "the one who was struck" — Hophal Perfect 3ms of נָכָה (III-ה); Qibbuts + dagesh forte in כ (Pe-Nun assimilation also at play since נָכָה is also I-נ; see section 6); "was struck down"
+- הָגְלָה (Amos 1:5) — "the people of Aram shall go into exile to Kir" — Hophal Perfect 3ms of גָּלָה; Qamets Hatuf prefix; Qamets + ה; "was exiled"
+- הָגְלוּ (Amos 1:6) — Hophal Perfect 3cp of גָּלָה; plural suffix (וּ) replaces the contracted ה; Amos uses this formula repeatedly for the nations
+- הֻכָּה (Num 25:14) — "the one who was struck" — Hophal Perfect 3ms of נָכָה (III-ה + I-נ double-weak); Qibbuts prefix + dagesh forte in כ (Pe-Nun assimilation); "was struck down"
 - יֻכֶּה (Deu 25:2) — "the guilty man shall be beaten" — Hophal Imperfect 3ms of נָכָה; Seghol + ה final; double weak class I-נ + III-ה
 
 ---
@@ -176,37 +436,100 @@ This is one of the most practically important weak classes in the Hophal because
 
 ### Pattern
 
-Root נ assimilates into R2 with Dagesh forte whenever it stands in a syllable immediately before R2 without a supporting vowel. In the Hophal, this occurs in the **imperfect, wayyiqtol, and infinitive construct** — the same conjugations where the strong Hophal has a simple prefix before R1 (and the root נ therefore stands unsupported). In the perfect and participle, the prefix vowel (הֻ/מֻ) stabilizes R1, and assimilation does NOT occur.
+Root נ assimilates into R2 with Dagesh forte in **all** Hophal conjugations (§29.7). The Hophal prefix (הֻ / מֻ) takes the position where the nun would stand, pushing the nun forward where it assimilates into R2 as Dagesh forte. The result: only two root consonants are visible, and the Dagesh forte in R2 is the diagnostic marker throughout.
 
-The combination of Hophal u-class prefix + Dagesh forte in R2 is the unmistakable signature of a Pe-Nun root in a prefix Hophal conjugation.
+I-נ Hophal verbs prefer the **u-class (Qibbuts) prefix** throughout.
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הֻגַּד — Qibbuts prefix; Dagesh in R2 (ג); נ has assimilated even in perfect (because נָגַד also loses its נ in the Niphal/Hophal pattern — here the dagesh in ג is from the Hophal doubling context)
-- **Imperfect 3ms:** יֻגַּד — Qibbuts prefix; Dagesh forte in R2; no trace of root נ
-- **Wayyiqtol 3ms:** וַיֻּגַּד — contraction of prefix + Hophal u-vowel; Dagesh forte in R2
-- **Participle ms:** מֻגָּד — מֻ prefix; Dagesh forte in R2 (from assimilation)
+**Diagnostic markers (BBH §29.6 — paradigm verb נָצַל):**
+- **Perfect 3ms:** הֻצַּל — Qibbuts prefix; Dagesh forte in R2 (צ); נ assimilated
+- **Imperfect 3ms:** יֻצַּל — Qibbuts prefix; Dagesh forte in R2; no trace of root נ
+- **Wayyiqtol 3ms:** וַיֻּצַּל — dagesh forte in prefix consonant; Qibbuts; Dagesh forte in R2
+- **Participle ms:** מֻצָּל — מֻ prefix; Dagesh forte in R2 (from assimilation)
 
-> **The נגד formula:** וַיֻּגַּד לְ ("and it was told to…") is one of the most common narrative formulas in Genesis and the historical books. Recognizing this as Hophal Wayyiqtol 3ms of נָגַד is essential for fluent reading.
+> **The נגד formula:** וַיֻּגַּד לְ ("and it was told to…") is one of the most common I-נ Hophal forms in the OT. The same paradigm rules apply to נָגַד as to the BBH paradigm verb נָצַל.
 
-### Paradigm Summary (3ms per conjugation)
+### Paradigm Tables (BBH §29.6)
 
-| Conjugation | Hophal Strong (קטל) | I-נ (נגד) | I-נ (נקם) | Notes |
-|---|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#pe-nun-perfect) | הֻקְטַל | הֻגַּד | הֻקַּם | Dagesh in R2 (nun assimilated) |
-| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#pe-nun-imperfect) | יֻקְטַל | יֻגַּד | יֻקַּם | Qibbuts prefix; Dagesh forte in R2 |
-| [Wayyiqtol](hophal-weak-paradigms.md#pe-nun-wayyiqtol) | וַיֻּקְטַל | וַיֻּגַּד | — | Contraction + Qibbuts + Dagesh |
-| [Weqatal](hophal-weak-paradigms.md#pe-nun-perfect) | וְהֻקְטַל | וְהֻגַּד | — | וְ + Perfect form |
-| [Inf. Construct](hophal-weak-paradigms.md#pe-nun-perfect) | הֻקְטַל | הֻגַּד | — | Same as Perfect 3ms |
-| [Inf. Absolute](hophal-weak-paradigms.md#pe-nun-inf-abs) | הֻקְטֵל | הֻגֵּד | — | Tsere under R2 |
-| [Participle](hophal-weak-paradigms.md#pe-nun-participle) | מֻקְטָל | מֻגָּד | — | מֻ prefix; Dagesh in R2 |
+#### Perfect (Qatal)
 
+| PGN | Hophal Strong (קטל) | I-נ (נצל) |
+|---|---|---|
+| 3ms | הֻקְטַל | הֻצַּל |
+| 3fs | הֻקְטְלָה | הֻצְּלָה |
+| 2ms | הֻקְטַלְתָּ | הֻצַּ֫לְתָּ |
+| 2fs | הֻקְטַלְתְּ | הֻצַּלְתְּ |
+| 1cs | הֻקְטַלְתִּי | הֻצַּ֫לְתִּי |
+| 3cp | הֻקְטְלוּ | הֻצְּלוּ |
+| 2mp | הֻקְטַלְתֶּם | הֻצַּלְתֶּם |
+| 2fp | הֻקְטַלְתֶּן | הֻצַּלְתֶּן |
+| 1cp | הֻקְטַלְנוּ | הֻצַּ֫לְנוּ |
+
+#### Imperfect (Yiqtol)
+
+| PGN | Hophal Strong (קטל) | I-נ (נצל) |
+|---|---|---|
+| 3ms | יֻקְטַל | יֻצַּל |
+| 3fs | תֻּקְטַל | תֻּצַּל |
+| 2ms | תֻּקְטַל | תֻּצַּל |
+| 2fs | תֻּקְטְלִי | תֻּצְּלִי |
+| 1cs | אֻקְטַל | אֻצַּל |
+| 3mp | יֻקְטְלוּ | יֻצְּלוּ |
+| 3fp | תֻּקְטַ֫לְנָה | תֻּצַּ֫לְנָה |
+| 2mp | תֻּקְטְלוּ | תֻּצְּלוּ |
+| 2fp | תֻּקְטַ֫לְנָה | תֻּצַּ֫לְנָה |
+| 1cp | נֻקְטַל | נֻצַּל |
+
+#### Wayyiqtol
+
+| PGN | Hophal Strong (קטל) | I-נ (נצל) |
+|---|---|---|
+| 3ms | וַיֻּקְטַל | וַיֻּצַּל |
+| 3fs | וַתֻּקְטַל | וַתֻּצַּל |
+| 2ms | וַתֻּקְטַל | וַתֻּצַּל |
+| 2fs | וַתֻּקְטְלִי | וַתֻּצְּלִי |
+| 1cs | וָאֻקְטַל | וָאֻצַּל |
+| 3mp | וַיֻּקְטְלוּ | וַיֻּצְּלוּ |
+| 3fp | וַתֻּקְטַ֫לְנָה | וַתֻּצַּ֫לְנָה |
+| 2mp | וַתֻּקְטְלוּ | וַתֻּצְּלוּ |
+| 2fp | וַתֻּקְטַ֫לְנָה | וַתֻּצַּ֫לְנָה |
+| 1cp | וַנֻּקְטַל | וַנֻּצַּל |
+
+#### Weqatal
+
+| PGN | I-נ (נצל) |
+|---|---|
+| 3ms | וְהֻצַּל |
+| 3fs | וְהֻצְּלָה |
+| 2ms | וְהֻצַּ֫לְתָּ |
+| 2fs | וְהֻצַּלְתְּ |
+| 1cs | וְהֻצַּ֫לְתִּי |
+| 3cp | וְהֻצְּלוּ |
+| 2mp | וְהֻצַּלְתֶּם |
+| 2fp | וְהֻצַּלְתֶּן |
+| 1cp | וְהֻצַּ֫לְנוּ |
+
+#### Infinitives
+
+| Form | I-נ (נצל) | Notes |
+|---|---|---|
+| Infinitive Construct | הֻצַּל | Same form as Perfect 3ms; rare |
+| Infinitive Absolute | הֻצֵּל | Qibbuts prefix; Tsere under R2 |
+
+#### Participle
+
+| Form | Hophal Strong (קטל) | I-נ (נצל) |
+|---|---|---|
+| ms | מֻקְטָל | מֻצָּל |
+| fs | מֻקְטֶלֶת | מֻצֶּ֫לֶת |
+| mp | מֻקְטָלִים | מֻצָּלִים |
+| fp | מֻקְטָלוֹת | מֻצָּלוֹת |
 
 ### Key Corpus Examples
 
-- וַיֻּגַּד לְאַבְרָהָם (Gen 22:20) — "and it was told to Abraham" — Hophal Wayyiqtol 3ms of נָגַד; standard narrative report formula; Qibbuts under prefix consonant; Dagesh forte in ג
-- וַיֻּגַּד לְרִבְקָה (Gen 27:42) — "and the words of Esau were told to Rebekah" — same formula; Hophal passivizes the Hiphil הִגִּיד "to tell/declare"
-- הֻגַּד (Deu 17:4) — "and it has been told to you" — Hophal Perfect 3ms of נָגַד; Qibbuts + Dagesh forte in ג; the Weqatal form וְהֻגַּד also found here
-- מֻגָּד (various) — Hophal Participle of נָגַד; "what is told/reported"
+- וַיֻּגַּד לְאַבְרָהָם (Gen 22:20) — "and it was told to Abraham" — Hophal Wayyiqtol 3ms of נָגַד (I-נ); Qibbuts under prefix; Dagesh forte in ג (assimilated נ); the standard narrative report formula in Genesis
+- הֻגַּד (Deu 17:4) — Hophal Perfect 3ms of נָגַד; Qibbuts + Dagesh forte in ג; Weqatal form וְהֻגַּד also found in the verse
+- יֻצַּל (Eze 14:16) — Hophal Imperfect 3ms of נָצַל (BBH paradigm verb); "they would be delivered/rescued"
+- מֻצָּל (various) — Hophal Participle of נָצַל; "one being rescued/delivered"
 
 ---
 
@@ -218,30 +541,95 @@ I-י/ו roots in the Hophal produce the most visually distinctive forms of the e
 
 The practical effect: I-י/ו Hophal forms are recognized exactly like Hophal strong forms — by the Shureq under the prefix consonant. The root is identified by examining R2 and R3 (the only consonants visible) and checking the lexicon.
 
+Most I-י roots were originally I-ו; the original ו reappears as the Shureq vowel letter in all Hophal conjugations (§29.9).
+
 **Most important I-י/ו Hophal roots:**
+- יָשַׁב "to sit/dwell" → Hophal הוּשַׁב "was returned/restored" (BBH paradigm verb)
 - יָלַד "to bear/beget" → Hophal הוּלַד "was born/begotten"
 - בּוֹא "to come/bring" (I-ו) → Hophal הוּבָא "was brought" / יוּבָא "will be brought"
-- יָצָא "to go out" → Hophal הוּצָא (rare); more common in Hiphil הוֹצִיא
 - יָרַד "to go down" → Hophal הוּרַד "was brought down"
 
-**Diagnostic markers:**
-- **Perfect 3ms:** הוּלַד — Shureq under הוּ prefix; R1 (י) has quiesced; Patach under R2
-- **Perfect 3ms (בוא):** הוּבָא — Shureq prefix; Qamets under R2 (III-א effect: see section 4)
-- **Imperfect 3ms:** יוּלַד — Shureq under imperfect prefix; Patach under R2
-- **Wayyiqtol 3ms:** וַיּוּלַד — doubled prefix consonant + Shureq; Patach under R2
-- **Participle ms:** מוּלָד — מוּ prefix (Shureq); Qamets under R2
+**Diagnostic markers (BBH §29.8 — paradigm verb יָשַׁב):**
+- **Perfect 3ms:** הוּשַׁב — Shureq under הוּ prefix; R1 (י/ו) has quiesced; Patach under R2
+- **Imperfect 3ms:** יוּשַׁב — Shureq under imperfect prefix; Patach under R2
+- **Wayyiqtol 3ms:** וַיּוּשַׁב — dagesh forte in prefix consonant + Shureq; Patach under R2
+- **Participle ms:** מוּשָׁב — מוּ prefix (Shureq); Qamets under R2
 
-### Paradigm Summary (3ms per conjugation)
+### Paradigm Tables (BBH §29.8)
 
-| Conjugation | Hophal Strong (קטל) | I-י (ילד) | I-ו (בוא) | Notes |
-|---|---|---|---|---|
-| [Perfect (Qatal)](hophal-weak-paradigms.md#pe-yod-perfect) | הֻקְטַל | הוּלַד | הוּבָא | Shureq prefix; Pe-Yod/Vav quiesces |
-| [Imperfect (Yiqtol)](hophal-weak-paradigms.md#pe-yod-imperfect) | יֻקְטַל | יוּלַד | יוּבָא | Shureq under imperfect prefix |
-| [Wayyiqtol](hophal-weak-paradigms.md#pe-yod-wayyiqtol) | וַיֻּקְטַל | וַיּוּלַד | וַיּוּבָא | Doubled prefix + Shureq |
-| [Weqatal](hophal-weak-paradigms.md#pe-yod-perfect) | וְהֻקְטַל | וְהוּלַד | וְהוּבָא | וְ + Perfect form |
-| [Inf. Construct](hophal-weak-paradigms.md#pe-yod-inf-construct) | הֻקְטַל | הוּלֶד | הוּבָא | Rare |
-| [Inf. Absolute](hophal-weak-paradigms.md#pe-yod-inf-abs) | הֻקְטֵל | הוּלֵד | הוּבֵא | Tsere under R2 |
-| [Participle](hophal-weak-paradigms.md#pe-yod-participle) | מֻקְטָל | מוּלָד | מוּבָא | מוּ prefix; Qamets under R2 |
+#### Perfect (Qatal)
+
+| PGN | Hophal Strong (קטל) | I-י (ישׁב) |
+|---|---|---|
+| 3ms | הֻקְטַל | הוּשַׁב |
+| 3fs | הֻקְטְלָה | הוּשְׁבָה |
+| 2ms | הֻקְטַלְתָּ | הוּשַׁ֫בְתָּ |
+| 2fs | הֻקְטַלְתְּ | הוּשַׁבְתְּ |
+| 1cs | הֻקְטַלְתִּי | הוּשַׁ֫בְתִּי |
+| 3cp | הֻקְטְלוּ | הוּשְׁבוּ |
+| 2mp | הֻקְטַלְתֶּם | הוּשַׁבְתֶּם |
+| 2fp | הֻקְטַלְתֶּן | הוּשַׁבְתֶּן |
+| 1cp | הֻקְטַלְנוּ | הוּשַׁ֫בְנוּ |
+
+#### Imperfect (Yiqtol)
+
+| PGN | Hophal Strong (קטל) | I-י (ישׁב) |
+|---|---|---|
+| 3ms | יֻקְטַל | יוּשַׁב |
+| 3fs | תֻּקְטַל | תּוּשַׁב |
+| 2ms | תֻּקְטַל | תּוּשַׁב |
+| 2fs | תֻּקְטְלִי | תּוּשְׁבִי |
+| 1cs | אֻקְטַל | אוּשַׁב |
+| 3mp | יֻקְטְלוּ | יוּשְׁבוּ |
+| 3fp | תֻּקְטַ֫לְנָה | תּוּשַׁ֫בְנָה |
+| 2mp | תֻּקְטְלוּ | תּוּשְׁבוּ |
+| 2fp | תֻּקְטַ֫לְנָה | תּוּשַׁ֫בְנָה |
+| 1cp | נֻקְטַל | נוּשַׁב |
+
+#### Wayyiqtol
+
+| PGN | Hophal Strong (קטל) | I-י (ישׁב) |
+|---|---|---|
+| 3ms | וַיֻּקְטַל | וַיּוּשַׁב |
+| 3fs | וַתֻּקְטַל | וַתּוּשַׁב |
+| 2ms | וַתֻּקְטַל | וַתּוּשַׁב |
+| 2fs | וַתֻּקְטְלִי | וַתּוּשְׁבִי |
+| 1cs | וָאֻקְטַל | וָאוּשַׁב |
+| 3mp | וַיֻּקְטְלוּ | וַיּוּשְׁבוּ |
+| 3fp | וַתֻּקְטַ֫לְנָה | וַתּוּשַׁ֫בְנָה |
+| 2mp | וַתֻּקְטְלוּ | וַתּוּשְׁבוּ |
+| 2fp | וַתֻּקְטַ֫לְנָה | וַתּוּשַׁ֫בְנָה |
+| 1cp | וַנֻּקְטַל | וַנּוּשַׁב |
+
+#### Weqatal
+
+| PGN | I-י (ישׁב) |
+|---|---|
+| 3ms | וְהוּשַׁב |
+| 3fs | וְהוּשְׁבָה |
+| 2ms | וְהוּשַׁ֫בְתָּ |
+| 2fs | וְהוּשַׁבְתְּ |
+| 1cs | וְהוּשַׁ֫בְתִּי |
+| 3cp | וְהוּשְׁבוּ |
+| 2mp | וְהוּשַׁבְתֶּם |
+| 2fp | וְהוּשַׁבְתֶּן |
+| 1cp | וְהוּשַׁ֫בְנוּ |
+
+#### Infinitives
+
+| Form | I-י (ישׁב) | Notes |
+|---|---|---|
+| Infinitive Construct | הוּשַׁב | Same form as Perfect 3ms; rare |
+| Infinitive Absolute | הוּשֵׁב | Shureq prefix; Tsere under R2 |
+
+#### Participle
+
+| Form | Hophal Strong (קטל) | I-י (ישׁב) |
+|---|---|---|
+| ms | מֻקְטָל | מוּשָׁב |
+| fs | מֻקְטֶלֶת | מוּשֶׁ֫בֶת |
+| mp | מֻקְטָלִים | מוּשָׁבִים |
+| fp | מֻקְטָלוֹת | מוּשָׁבוֹת |
 
 ### Key Corpus Examples
 

@@ -37,20 +37,21 @@ The final א of the root quiesces (becomes silent) in word-final position. The v
 - **Imperfect/Wayyiqtol:** יִמָּצֵא — the final syllable ends in silent א after *tsere*; the form looks like a strong root
 - **Participle ms:** נִמְצָא — identical in pointing to the perfect 3ms; context distinguishes them
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | III-א (מצא) |
-|---|---|---|
-| Perfect | נִקְטַל | נִמְצָא |
-| Imperfect | יִקָּטֵל | יִמָּצֵא |
-| Wayyiqtol | וַיִּקָּטֵל | וַיִּמָּצֵא |
-| Weqatal | וְנִקְטַל | וְנִמְצָא |
-| Imperative | הִקָּטֵל | הִמָּצֵא |
-| Inf. Construct | הִקָּטֵל | הִמָּצֵא |
-| Inf. Absolute | נִקְטֹל | הִמָּצֵא |
-| Participle | נִקְטָל | נִמְצָא |
+Paradigm verb: מצא.
 
-→ Full PGN tables: [niphal-weak-lamed-aleph-paradigms.md](niphal-weak-lamed-aleph-paradigms.md)
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נִמְצָא | יִמָּצֵא | וַיִּמָּצֵא | וְנִמְצָא | 2ms: הִמָּצֵא | הִמָּצֵא | נִמְצוֹא | ms: נִמְצָא |
+| 3fs / fs | נִמְצְאָה | תִּמָּצֵא | וַתִּמָּצֵא | וְנִמְצְאָה | 2fs: הִמָּֽצְאִי | | | fs: נִמְצָאָה |
+| 2ms / mp | נִמְצֵ֫אתָ | תִּמָּצֵא | וַתִּמָּצֵא | וְנִמְצֵ֫אתָ | 2mp: הִמָּֽצְאוּ | | | mp: נִמְצָאִים |
+| 2fs / fp | נִמְצֵאת | תִּמָּֽצְאִי | וַתִּמָּֽצְאִי | וְנִמְצֵאת | 2fp: הִמָּצֶ֫אנָה | | | fp: נִמְצָאוֹת |
+| 1cs | נִמְצֵ֫אתִי | אֶמָּצֵא | וָאֶמָּצֵא | וְנִמְצֵ֫אתִי | — | | | |
+| 3cp | נִמְצְאוּ | יִמָּֽצְאוּ | וַיִּמָּֽצְאוּ | וְנִמְצְאוּ | — | | | |
+| 2mp | נִמְצֵאתֶם | תִּמָּֽצְאוּ | וַתִּמָּֽצְאוּ | וְנִמְצֵאתֶם | — | | | |
+| 2fp | נִמְצֵאתֶן | תִּמָּצֶ֫אנָה | וַתִּמָּצֶ֫אנָה | וְנִמְצֵאתֶן | — | | | |
+| 1cp | נִמְצֵ֫אנוּ | נִמָּצֵא | וַנִּמָּצֵא | וְנִמְצֵ֫אנוּ | — | | | |
 
 ### Key Corpus Examples
 
@@ -74,22 +75,25 @@ The final ה of these roots is not a true consonant but a vowel letter (mater le
 - **Inf. Construct:** הִגָּלוֹת — the ת is added to the base (cf. Qal inf. construct of III-ה roots)
 - **Participle ms:** נִגְלֶה — final *seghol* + he
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | III-ה (גלה) | III-ה (ראה) |
-|---|---|---|---|
-| Perfect | נִקְטַל | נִגְלָה | נִרְאָה |
-| Imperfect | יִקָּטֵל | יִגָּלֶה | יֵרָאֶה |
-| Wayyiqtol | וַיִּקָּטֵל | וַיִּגָּל | וַיֵּרָא |
-| Weqatal | וְנִקְטַל | וְנִגְלָה | וְנִרְאָה |
-| Imperative | הִקָּטֵל | הִגָּלֵה | הֵרָאֵה |
-| Inf. Construct | הִקָּטֵל | הִגָּלוֹת | הֵרָאוֹת |
-| Inf. Absolute | נִקְטֹל | הִגָּלֹה | הֵרָאֹה |
-| Participle | נִקְטָל | נִגְלֶה | נִרְאֶה |
+Paradigm verb: בנה (Niphal: נִבְנָה).
 
-> **Note on רָאָה:** The I-ר does not take the normal dagesh pattern, so where גָּלָה shows יִגָּלֶה, רָאָה shows יֵרָאֶה (compensatory lengthening before ר). Both are III-ה; the difference is the I-position consonant.
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נִבְנָה | יִבָּנֶה | וַיִּבָּן | וְנִבְנָה | 2ms: הִבָּנֵה | הִבָּנוֹת | נִבְנֹה | ms: נִבְנֶה |
+| 3fs / fs | נִבְנְתָה | תִּבָּנֶה | וַתִּבָּנֶה | וְנִבְנְתָה | 2fs: הִבָּנִי | | | fs: נִבְנָה |
+| 2ms / mp | נִבְנֵ֫יתָ | תִּבָּנֶה | וַתִּבָּנֶה | וְנִבְנֵ֫יתָ | 2mp: הִבָּנוּ | | | mp: נִבְנִים |
+| 2fs / fp | נִבְנֵית | תִּבָּנִי | וַתִּבָּנִי | וְנִבְנֵית | 2fp: הִבָּנֶ֫ינָה | | | fp: נִבְנוֹת |
+| 1cs | נִבְנֵ֫יתִי | אֶבָּנֶה | וָאֶבָּנֶה | וְנִבְנֵ֫יתִי | — | | | |
+| 3cp | נִבְנוּ | יִבָּנוּ | וַיִּבָּנוּ | וְנִבְנוּ | — | | | |
+| 2mp | נִבְנֵיתֶם | תִּבָּנֶ֫ינָה | וַתִּבָּנֶ֫ינָה | וְנִבְנֵיתֶם | — | | | |
+| 2fp | נִבְנֵיתֶן | תִּבָּנוּ | וַתִּבָּנוּ | וְנִבְנֵיתֶן | — | | | |
+| 1cp | נִבְנֵ֫ינוּ | נִבָּנֶה | וַנִּבָּנֶה | וְנִבְנֵ֫ינוּ | — | | | |
 
-→ Full PGN tables: [niphal-weak-lamed-he-paradigms.md](niphal-weak-lamed-he-paradigms.md)
+> **Note:** The Wayyiqtol 3ms (וַיִּבָּן) apocopates the final ה. This is the distinctive marker of III-ה verbs in the Wayyiqtol.
+
+> **Note on רָאָה:** Where גָּלָה/בָּנָה shows יִגָּלֶה, רָאָה shows יֵרָאֶה (compensatory lengthening before ר). Both are III-ה; the difference is the I-position consonant.
 
 ### Key Corpus Examples
 
@@ -114,20 +118,21 @@ In the perfect, the guttural takes a **composite shewa** (hateph) instead of a s
 - **Wayyiqtol 3ms:** וַיֵּאָמֵר — same lengthening; the *tsere* is the marker
 - **Imperative/Inf. Construct:** הֵאָמֵר / הֵעָמֵד — *tsere* under ה (not *hiriq*); no dagesh in R1
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | I-gutt. (עמד) | I-gutt. (אמר) |
-|---|---|---|---|
-| Perfect | נִקְטַל | נֶעֱמַד | נֶאֱמַר |
-| Imperfect | יִקָּטֵל | יֵעָמֵד | יֵאָמֵר |
-| Wayyiqtol | וַיִּקָּטֵל | וַיֵּעָמֵד | וַיֵּאָמֵר |
-| Weqatal | וְנִקְטַל | וְנֶעֱמַד | וְנֶאֱמַר |
-| Imperative | הִקָּטֵל | הֵעָמֵד | הֵאָמֵר |
-| Inf. Construct | הִקָּטֵל | הֵעָמֵד | הֵאָמֵר |
-| Inf. Absolute | נִקְטֹל | נֶעֱמֹד | נֶאֱמֹר |
-| Participle | נִקְטָל | נֶעֱמָד | נֶאֱמָר |
+Paradigm verb: עזב (Niphal: נֶעֱזַב).
 
-→ Full PGN tables: [niphal-weak-pe-guttural-paradigms.md](niphal-weak-pe-guttural-paradigms.md)
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נֶעֱזַב | יֵעָזֵב | וַיֵּעָזֵב | וְנֶעֱזַב | 2ms: הֵעָזֵב | הֵעָזֵב | נַעֲזוֹב | ms: נֶעֱזָב |
+| 3fs / fs | נֶעֶזְבָה | תֵּעָזֵב | וַתֵּעָזֵב | וְנֶעֶזְבָה | 2fs: הֵעָֽזְבִי | | הֵעָזוֹב | fs: נֶעֱזֶ֫בֶת |
+| 2ms / mp | נֶעֱזַ֫בְתָּ | תֵּעָזֵב | וַתֵּעָזֵב | וְנֶעֱזַ֫בְתָּ | 2mp: הֵעָֽזְבוּ | | | mp: נֶעֱזָבִים |
+| 2fs / fp | נֶעֱזַבְתְּ | תֵּעָֽזְבִי | וַתֵּעָֽזְבִי | וְנֶעֱזַבְתְּ | 2fp: הֵעָזַ֫בְנָה | | | fp: נֶעֱזָבוֹת |
+| 1cs | נֶעֱזַ֫בְתִּי | אֵעָזֵב | וָאֵעָזֵב | וְנֶעֱזַ֫בְתִּי | — | | | |
+| 3cp | נֶעֶזְבוּ | יֵעָֽזְבוּ | וַיֵּעָֽזְבוּ | וְנֶעֶזְבוּ | — | | | |
+| 2mp | נֶעֱזַבְתֶּם | תֵּעָזַ֫בְנָה | וַתֵּעָזַ֫בְנָה | וְנֶעֱזַבְתֶּם | — | | | |
+| 2fp | נֶעֱזַבְתֶּן | תֵּעָֽזְבוּ | וַתֵּעָֽזְבוּ | וְנֶעֱזַבְתֶּן | — | | | |
+| 1cp | נֶעֱזַ֫בְנוּ | נֵעָזֵב | וַנֵּעָזֵב | וְנֶעֱזַ֫בְנוּ | — | | | |
 
 ### Key Corpus Examples
 
@@ -155,20 +160,21 @@ The result: I-נ Niphal forms consistently show **dagesh forte in R2**, with R1 
 - **Wayyiqtol 3ms:** וַיִּגַּשׁ — same; compare to strong וַיִּקָּטֵל (dagesh in R1) vs. I-נ (dagesh in R2)
 - **Participle ms:** נִגָּשׁ — *qamets* under R2 (like the strong root participle, but only two consonants visible)
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | I-נ (נגשׁ) | I-נ (נצל) |
-|---|---|---|---|
-| Perfect | נִקְטַל | נִגַּשׁ | נִצַּל |
-| Imperfect | יִקָּטֵל | יִגַּשׁ | יִנָּצֵל |
-| Wayyiqtol | וַיִּקָּטֵל | וַיִּגַּשׁ | וַיִּנָּצֵל |
-| Weqatal | וְנִקְטַל | וְנִגַּשׁ | וְנִצַּל |
-| Imperative | הִקָּטֵל | הִגַּשׁ | הִנָּצֵל |
-| Inf. Construct | הִקָּטֵל | הִגַּשׁ | הִנָּצֵל |
-| Inf. Absolute | נִקְטֹל | הִגַּשׁ | הִנָּצֵל |
-| Participle | נִקְטָל | נִגָּשׁ | נִצָּל |
+Paradigm verb: נצל (Niphal: נִצַּל).
 
-→ Full PGN tables: [niphal-weak-pe-paradigms.md](niphal-weak-pe-paradigms.md) (Part 1 — I-נ)
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נִצַּל | יִנָּצֵל | וַיִּנָּצֵל | וְנִצַּל | 2ms: הִנָּצֵל | הִנָּצֵל | הִנָּצֵל | ms: נִצָּל |
+| 3fs / fs | נִצְּלָה | תִּנָּצֵל | וַתִּנָּצֵל | וְנִצְּלָה | 2fs: הִנָּֽצְלִי | | נִצּוֹל | fs: נִצֶּ֫לֶת |
+| 2ms / mp | נִצַּ֫לְתָּ | תִּנָּצֵל | וַתִּנָּצֵל | וְנִצַּ֫לְתָּ | 2mp: הִנָּֽצְלוּ | | | mp: נִצָּלִים |
+| 2fs / fp | נִצַּלְתְּ | תִּנָּֽצְלִי | וַתִּנָּֽצְלִי | וְנִצַּלְתְּ | 2fp: הִנָּצַ֫לְנָה | | | fp: נִצָּלוֹת |
+| 1cs | נִצַּ֫לְתִּי | אֶנָּצֵל | וָאֶנָּצֵל | וְנִצַּ֫לְתִּי | — | | | |
+| 3cp | נִצְּלוּ | יִנָּֽצְלוּ | וַיִּנָּֽצְלוּ | וְנִצְּלוּ | — | | | |
+| 2mp | נִצַּלְתֶּם | תִּנָּצַ֫לְנָה | וַתִּנָּצַ֫לְנָה | וְנִצַּלְתֶּם | — | | | |
+| 2fp | נִצַּלְתֶּן | תִּנָּֽצְלוּ | וַתִּנָּֽצְלוּ | וְנִצַּלְתֶּן | — | | | |
+| 1cp | נִצַּ֫לְנוּ | נִנָּצֵל | וַנִּנָּצֵל | וְנִצַּ֫לְנוּ | — | | | |
 
 ### Key Corpus Examples
 
@@ -198,20 +204,23 @@ This is the **only** Niphal weak class with a split inside the paradigm. The נ�
 - **Wayyiqtol 3ms:** וַיִּוָּלֵד — the וַיִּוָּ cluster is visually unique and highly frequent in genealogies
 - **Participle ms:** נוֹלָד / נוֹדָע — נוֹ prefix + *qamets* under R2 (cf. perfect: *patah* under R2)
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | I-י (ילד) | I-י (ידע) |
-|---|---|---|---|
-| Perfect | נִקְטַל | נוֹלַד | נוֹדַע |
-| Imperfect | יִקָּטֵל | יִוָּלֵד | יִוָּדַע |
-| Wayyiqtol | וַיִּקָּטֵל | וַיִּוָּלֵד | וַיִּוָּדַע |
-| Weqatal | וְנִקְטַל | וְנוֹלַד | וְנוֹדַע |
-| Imperative | הִקָּטֵל | הִוָּלֵד | הִוָּדַע |
-| Inf. Construct | הִקָּטֵל | הִוָּלֵד | הִוָּדַע |
-| Inf. Absolute | נִקְטֹל | הִוָּלֵד | הִוָּדַע |
-| Participle | נִקְטָל | נוֹלָד | נוֹדָע |
+Paradigm verb: ישב (Niphal: נוֹשַׁב).
 
-→ Full PGN tables: [niphal-weak-pe-paradigms.md](niphal-weak-pe-paradigms.md) (Part 2 — I-י)
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נוֹשַׁב | יִוָּשֵׁב | וַיִּוָּשֵׁב | וְנוֹשַׁב | 2ms: הִוָּשֵׁב | הִוָּשֵׁב | — | ms: נוֹשַׁב |
+| 3fs / fs | נוֹשְׁבָה | תִּוָּשֵׁב | וַתִּוָּשֵׁב | וְנוֹשְׁבָה | 2fs: הִוָּֽשְׁבִי | | | fs: נוֹשֶׁ֫בֶת |
+| 2ms / mp | נוֹשַׁ֫בְתָּ | תִּוָּשֵׁב | וַתִּוָּשֵׁב | וְנוֹשַׁ֫בְתָּ | 2mp: הִוָּֽשְׁבוּ | | | mp: נוֹשָׁבִים |
+| 2fs / fp | נוֹשַׁבְתְּ | תִּוָּֽשְׁבִי | וַתִּוָּֽשְׁבִי | וְנוֹשַׁבְתְּ | 2fp: הִוָּשַׁ֫בְנָה | | | fp: נוֹשָׁבוֹת |
+| 1cs | נוֹשַׁ֫בְתִּי | אִוָּשֵׁב | וָאִוָּשֵׁב | וְנוֹשַׁ֫בְתִּי | — | | | |
+| 3cp | נוֹשְׁבוּ | יִוָּֽשְׁבוּ | וַיִּוָּֽשְׁבוּ | וְנוֹשְׁבוּ | — | נוֹשָׁב | | |
+| 2mp | נוֹשַׁבְתֶּם | תִּוָּשַׁ֫בְנָה | וַתִּוָּשַׁ֫בְנָה | וְנוֹשַׁבְתֶּם | — | | | |
+| 2fp | נוֹשַׁבְתֶּן | תִּוָּֽשְׁבוּ | וַתִּוָּֽשְׁבוּ | וְנוֹשַׁבְתֶּן | — | | | |
+| 1cp | נוֹשַׁ֫בְנוּ | נִוָּשֵׁב | וַנִּוָּשֵׁב | וְנוֹשַׁ֫בְנוּ | — | | | |
+
+> **Note:** The Infinitive Absolute is not securely attested in the Niphal for I-י verbs. An alternative Inf. Cs. form (נוֹשָׁב) appears in the source paradigm at the 3cp row.
 
 ### Key Corpus Examples
 
@@ -238,20 +247,21 @@ Gutturals (ח and ע) at R3 prefer *a*-class vowels. In the Niphal, this produce
 - **Wayyiqtol 3ms:** וַיִּשָּׁמַע — *patach* before final ח/ע; no *patach furtive* (form already short)
 - **Participle ms:** נִשְׁמָע — *patach furtive* before final ח/ע in the ms form
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | III-ח/ע (שמע) | III-ח/ע (שלח) |
-|---|---|---|---|
-| Perfect | נִקְטַל | נִשְׁמַע | נִשְׁלַח |
-| Imperfect | יִקָּטֵל | יִשָּׁמַע | יִשָּׁלַח |
-| Wayyiqtol | וַיִּקָּטֵל | וַיִּשָּׁמַע | וַיִּשָּׁלַח |
-| Weqatal | וְנִקְטַל | וְנִשְׁמַע | וְנִשְׁלַח |
-| Imperative | הִקָּטֵל | הִשָּׁמַע | הִשָּׁלַח |
-| Inf. Construct | הִקָּטֵל | הִשָּׁמַע | הִשָּׁלַח |
-| Inf. Absolute | נִקְטֹל | נִשְׁמֹעַ | נִשְׁלֹחַ |
-| Participle | נִקְטָל | נִשְׁמָע | נִשְׁלָח |
+Paradigm verb: שמע.
 
-→ Full PGN tables: [niphal-weak-lamed-guttural-paradigms.md](niphal-weak-lamed-guttural-paradigms.md)
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נִשְׁמַע | יִשָּׁמַע | וַיִּשָּׁמַע | וְנִשְׁמַע | 2ms: הִשָּׁמַע | הִשָּׁמַע | נִשְׁמֹעַ | ms: נִשְׁמָע |
+| 3fs / fs | נִשְׁמְעָה | תִּשָּׁמַע | וַתִּשָּׁמַע | וְנִשְׁמְעָה | 2fs: הִשָּׁמְעִי | | | fs: נִשְׁמַ֫עַת |
+| 2ms / mp | נִשְׁמַ֫עְתָּ | תִּשָּׁמַע | וַתִּשָּׁמַע | וְנִשְׁמַ֫עְתָּ | 2mp: הִשָּׁמְעוּ | | | mp: נִשְׁמָעִים |
+| 2fs / fp | נִשְׁמַעְתְּ | תִּשָּׁמְעִי | וַתִּשָּׁמְעִי | וְנִשְׁמַעְתְּ | 2fp: הִשָּׁמַ֫עְנָה | | | fp: נִשְׁמָעוֹת |
+| 1cs | נִשְׁמַ֫עְתִּי | אֶשָּׁמַע | וָאֶשָּׁמַע | וְנִשְׁמַ֫עְתִּי | — | | | |
+| 3cp | נִשְׁמְעוּ | יִשָּׁמְעוּ | וַיִּשָּׁמְעוּ | וְנִשְׁמְעוּ | — | | | |
+| 2mp | נִשְׁמַעְתֶּם | תִּשָּׁמַ֫עְנָה | וַתִּשָּׁמַ֫עְנָה | וְנִשְׁמַעְתֶּם | — | | | |
+| 2fp | נִשְׁמַעְתֶּן | תִּשָּׁמְעוּ | וַתִּשָּׁמְעוּ | וְנִשְׁמַעְתֶּן | — | | | |
+| 1cp | נִשְׁמַ֫עְנוּ | נִשָּׁמַע | וַנִּשָּׁמַע | וְנִשְׁמַ֫עְנוּ | — | | | |
 
 ### Key Corpus Examples
 
@@ -275,19 +285,21 @@ In the imperfect, wayyiqtol, and imperative, the Niphal's prefix נ assimilates 
 - **Imperfect 3ms:** יִקּוֹם — dagesh forte in R1 (Niphal assimilation) + contracted root; can resemble Qal — context is essential
 - **Participle ms:** נָקוּם / נָכוּן — *qamets* under נ; same prefix as perfect 3ms
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | Biconsonantal (קום) | Biconsonantal (שׁוב) |
-|---|---|---|---|
-| Perfect | נִקְטַל | נָקוֹם | נָשׁוּב |
-| Imperfect | יִקָּטֵל | יִקּוֹם | יִשּׁוּב |
-| Wayyiqtol | וַיִּקָּטֵל | וַיִּקּוֹם | וַיִּשּׁוּב |
-| Weqatal | וְנִקְטַל | וְנָקוֹם | וְנָשׁוּב |
-| Imperative | הִקָּטֵל | הִקּוֹם | הִשּׁוּב |
-| Inf. Construct | הִקָּטֵל | הִקּוֹם | הִשּׁוּב |
-| Participle | נִקְטָל | נָקוּם | נָשׁוּב |
+Paradigm verb: קום.
 
-→ Full PGN tables: [niphal-weak-biconsonantal-paradigms.md](niphal-weak-biconsonantal-paradigms.md)
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נָקוֹם | יִקּוֹם | וַיִּקּוֹם | וְנָקוֹם | 2ms: הִקּוֹם | הִקּוֹם | נָקוֹם | ms: נָקוּם |
+| 3fs / fs | נָקוֹמָה | תִּקּוֹם | וַתִּקּוֹם | וְנָקוֹמָה | 2fs: הִקּוּמִי | | | fs: נָקוּמָה |
+| 2ms / mp | נָקַ֫מְתָּ | תִּקּוֹם | וַתִּקּוֹם | וְנָקַ֫מְתָּ | 2mp: הִקּוּמוּ | | | mp: נָקוּמִים |
+| 2fs / fp | נָקַמְתְּ | תִּקּוּמִי | וַתִּקּוּמִי | וְנָקַמְתְּ | 2fp: הִקּוֹ֫מְנָה | | | fp: נָקוּמוֹת |
+| 1cs | נָקַ֫מְתִּי | אֶקּוֹם | וָאֶקּוֹם | וְנָקַ֫מְתִּי | — | | | |
+| 3cp | נָקוֹמוּ | יִקּוּמוּ | וַיִּקּוּמוּ | וְנָקוֹמוּ | — | | | |
+| 2mp | נָקַמְתֶּם | תִּקּוּמוּ | וַתִּקּוּמוּ | וְנָקַמְתֶּם | — | | | |
+| 2fp | נָקַמְתֶּן | תִּקּוֹ֫מְנָה | וַתִּקּוֹ֫מְנָה | וְנָקַמְתֶּן | — | | | |
+| 1cp | נָקַ֫מְנוּ | נִקּוֹם | וַנִּקּוֹם | וְנָקַ֫מְנוּ | — | | | |
 
 ### Key Corpus Examples
 
@@ -310,20 +322,21 @@ Geminate roots have R2 = R3 (e.g., סָבַב: ס-ב-ב; תָּמַם: ת-מ-מ)
 - **Wayyiqtol 3ms:** וַיִּסֹּב — וַיִּ prefix + *dagesh* in R2/R3
 - **Participle ms:** נָסַב — **identical to perfect 3ms**; context is the only distinguisher (parallels Biconsonantal and III-א ambiguity)
 
-### Paradigm Summary (3ms per conjugation)
+### Full Paradigm
 
-| Conjugation | Strong (קטל) | Geminate (סבב) | Geminate (תמם) |
-|---|---|---|---|
-| Perfect | נִקְטַל | נָסַב | נָתַם |
-| Imperfect | יִקָּטֵל | יִסֹּב | יִתֹּם |
-| Wayyiqtol | וַיִּקָּטֵל | וַיִּסֹּב | וַיִּתֹּם |
-| Weqatal | וְנִקְטַל | וְנָסַב | וְנָתַם |
-| Imperative | הִקָּטֵל | הִסֹּב | הִתֹּם |
-| Inf. Construct | הִקָּטֵל | הִסֹּב | הִתֹּם |
-| Inf. Absolute | נִקְטֹל | נִסֹּב † | נִתֹּם † |
-| Participle | נִקְטָל | נָסַב | נָתַם |
+Paradigm verb: סבב.
 
-→ Full PGN tables: [niphal-weak-geminate-paradigms.md](niphal-weak-geminate-paradigms.md)
+| PGN | Perfect | Imperfect | Wayyiqtol | Weqatal | Imperative | Inf. Cs. | Inf. Ab. | Participle |
+|---|---|---|---|---|---|---|---|---|
+| 3ms / ms | נָסַב | יִסֹּב | וַיִּסֹּב | וְנָסַב | 2ms: הִסֹּב | הִסֹּב | נִסֹּב | ms: נָסַב |
+| 3fs / fs | נָסַ֫בָּה | תִּסֹּב | וַתִּסֹּב | וְנָסַ֫בָּה | 2fs: הִסֹּ֫בִּי | | | fs: נְסֻבָּה |
+| 2ms / mp | נְסַבּ֫וֹתָ | תִּסֹּב | וַתִּסֹּב | וְנְסַבּ֫וֹתָ | 2mp: הִסֹּ֫בּוּ | | | mp: נְסַבִּים |
+| 2fs / fp | נְסַבּוֹת | תִּסֹּ֫בִּי | וַתִּסֹּ֫בִּי | וְנְסַבּוֹת | 2fp: הִסֹּבְנָה | | | fp: נְסַבּוֹת |
+| 1cs | נְסַבּ֫וֹתִי | אֶסֹּב | וָאֶסֹּב | וְנְסַבּ֫וֹתִי | — | | | |
+| 3cp | נָסַ֫בּוּ | יִסֹּ֫בּוּ | וַיִּסֹּ֫בּוּ | וְנָסַ֫בּוּ | — | | | |
+| 2mp | נְסַבּוֹתֶם | תִּסֹּ֫בּוּ | וַתִּסֹּ֫בּוּ | וְנְסַבּוֹתֶם | — | | | |
+| 2fp | נְסַבּוֹתֶן | תִּסֹּבְנָה | וַתִּסֹּבְנָה | וְנְסַבּוֹתֶן | — | | | |
+| 1cp | נְסַבּ֫וֹנוּ | נִסֹּב | וַנִּסֹּב | וְנְסַבּ֫וֹנוּ | — | | | |
 
 ### Key Corpus Examples
 
