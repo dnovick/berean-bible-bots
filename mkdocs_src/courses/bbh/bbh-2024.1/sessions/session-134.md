@@ -7,3 +7,4 @@
 ## Agenda
 
 1. [Lesson: BBH 32 - Pual Strong Verbs](/lessons/hebrew/ch32/)
+1. [Reading: Psalm 119:17-24](session-134/ps119-17-24.html) (20 min)
