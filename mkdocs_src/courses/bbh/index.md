@@ -11,5 +11,5 @@ Google Meet: https://meet.google.com/yth-mbyp-gxn
 
 | Course | Instructor(s) | Sessions |
 |---|---|---|
-| [bbh-2024.1](bbh-2024.1/index.md) | David Novick | 38 |
+| [bbh-2024.1](bbh-2024.1/index.md) | David Novick | 37 |
 | [bbh-2026.1](bbh-2026.1/index.md) | Preston Brown, David Novick | 46 |
