@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 15 — Qal Imperfect Strong
+#deck:BBH::Morphology::Chapter 15 — Qal Imperfect Strong
 #tags column:3
 יִשְׁמֹר	Root: שָׁמַר | Imperfect 3ms | he will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15
 תִּשְׁמֹר	Root: שָׁמַר | Imperfect 3/2ms | he/you will guard | Simple future	qal-imperfect-a-class usage-simple-future bbh-ch15

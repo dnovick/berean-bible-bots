@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 30 — Piel Strong
+#deck:BBH::Morphology::Chapter 30 — Piel Strong
 #tags column:3
 
 דִּבֵּר	דבר Piel+Perfect+3ms — "he spoke" — denominative (from דָּבָר, word); Hireq+R1, dagesh in R2, Tsere under R2	piel-perfect denominative bbh-ch30

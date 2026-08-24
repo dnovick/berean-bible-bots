@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 18 — Qal Imperative
+#deck:BBH::Morphology::Chapter 18 — Qal Imperative
 #tags column:3
 
 שְׁמֹר	שמר · Qal Imperative · 2ms · "Guard!" · Strong A-class; shewa + holem	imperative-strong bbh-ch18

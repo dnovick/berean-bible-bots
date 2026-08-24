@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 34 — Hithpael Strong
+#deck:BBH::Morphology::Chapter 34 — Hithpael Strong
 #tags column:3
 
 What are the THREE universal Hithpael diagnostics?	הִתְ prefix (varies: יִתְ/תִּתְ in Imperfect, מִתְ in Participle) + Pathach under R1 + Daghesh Forte in R2	diagnostic bbh-ch34

@@ -1,50 +1,50 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 29 — Hophal Weak
+#deck:BBH::Morphology::Chapter 29 — Hophal Weak
 #tags column:3
 
-הוּקַם (Exo 40:17)	Root: קום | Hophal | Perfect 3ms | the tabernacle was set up — הוּ prefix (Shureq); 2 root consonants (ק + מ); contrast Hiphil הֵקִים	BBH Chapter 29 — Hophal Weak
-הוּשַׁב (Gen 43:12)	Root: שׁוב | Hophal | Perfect 3ms | the silver was returned — הוּ prefix (Shureq); 2 root consonants (שׁ + ב)	BBH Chapter 29 — Hophal Weak
-הֻמְתוּ (2Sa 21:9)	Root: מות | Hophal | Perfect 3cp | they were put to death — הֻ prefix (Qibbuts before suffix); 2 root consonants	BBH Chapter 29 — Hophal Weak
-יוּקַם (Num 9:15)	Root: קום | Hophal | Imperfect 3ms | the tabernacle was set up — יוּ prefix (Shureq under yod); 2 root consonants	BBH Chapter 29 — Hophal Weak
-יוּמַת (Exo 31:14)	Root: מות | Hophal | Imperfect 3ms | shall be put to death — יוּ prefix (Shureq); the most common Hophal form in the OT	BBH Chapter 29 — Hophal Weak
-וַיּוּקַם (Exo 40:18)	Root: קום | Hophal | Wayyiqtol 3ms | and it was set up — וַיּוּ prefix (Dagesh forte in yod + Shureq)	BBH Chapter 29 — Hophal Weak
-וַיּוּשַׁב (Exo 10:8)	Root: שׁוב | Hophal | Wayyiqtol 3ms | and he was brought back — וַיּוּ prefix; Patach under R2 (שׁ)	BBH Chapter 29 — Hophal Weak
-מוּקָם (paradigm)	Root: קום | Hophal | Participle ms | (being) set up — מוּ prefix (Shureq); Qamets under R2	BBH Chapter 29 — Hophal Weak
-מוֹת יוּמַת (Exo 21:12)	Root: מות | Formula: Inf.Abs. + Hophal Imperfect | מוֹת (Qal Inf.Abs.) + יוּמַת (Hophal Impf. 3ms) = "shall surely be put to death"	BBH Chapter 29 — Hophal Weak
-הֻגַּד (Deu 17:4)	Root: נגד | Hophal | Perfect 3ms | it has been told/reported — הֻ prefix (Qibbuts); Dagesh forte in ג from Pe-Nun (נ) assimilation	BBH Chapter 29 — Hophal Weak
-וְהֻגַּד (Deu 17:4)	Root: נגד | Hophal | Weqatal 3ms | and it has been told — וְ + הֻגַּד; Waw + Shewa prefixed to Hophal Perfect form	BBH Chapter 29 — Hophal Weak
-יֻגַּד (paradigm)	Root: נגד | Hophal | Imperfect 3ms | it shall be told — יֻ prefix (Qibbuts); Dagesh forte in R2 (ג)	BBH Chapter 29 — Hophal Weak
-וַיֻּגַּד (Gen 22:20)	Root: נגד | Hophal | Wayyiqtol 3ms | and it was told to... — וַיֻּ prefix + Dagesh in R2; common narrative reporting formula	BBH Chapter 29 — Hophal Weak
-הֻגֵּד (paradigm)	Root: נגד | Hophal | Inf. Absolute | to be declared — הֻ prefix; Tsere under R2 (ג) = Inf.Abs. signature; Dagesh forte in R2	BBH Chapter 29 — Hophal Weak
-הֻכָּה (Num 25:14)	Root: נכה | Hophal | Perfect 3ms | was struck down — הֻ prefix; Dagesh in כ (Pe-Nun); Qamets+ה ending (Lamed-He); doubly weak	BBH Chapter 29 — Hophal Weak
-יֻכֶּה (Deu 25:2)	Root: נכה | Hophal | Imperfect 3ms | shall be beaten — יֻ prefix; Dagesh in כ (Pe-Nun); Seghol+ה ending (Lamed-He); doubly weak	BBH Chapter 29 — Hophal Weak
-הֻגְלָה (Amos 1:5)	Root: גלה | Hophal | Perfect 3ms | was exiled — הֻ prefix (Qibbuts); Qamets + ה = III-ה Perfect ending	BBH Chapter 29 — Hophal Weak
-הֻגְלוּ (Amos 1:6)	Root: גלה | Hophal | Perfect 3cp | they were exiled — הֻ prefix; plural -וּ suffix; final ה absorbed before suffix	BBH Chapter 29 — Hophal Weak
-יֻגְלֶה (paradigm)	Root: גלה | Hophal | Imperfect 3ms | shall be exiled — יֻ prefix; Seghol + ה = III-ה Imperfect ending	BBH Chapter 29 — Hophal Weak
-וַיֻּגֶל (paradigm)	Root: גלה | Hophal | Wayyiqtol 3ms | and he was exiled — וַיֻּ prefix; final ה dropped (apocopation); Seghol under R2	BBH Chapter 29 — Hophal Weak
-מֻגְלֶה (paradigm)	Root: גלה | Hophal | Participle ms | (one) being exiled — מֻ prefix; Seghol + ה = III-ה Participle ending	BBH Chapter 29 — Hophal Weak
-הוּלַד (Gen 21:5)	Root: ילד | Hophal | Perfect 3ms | was born/begotten — הוּ prefix (Shureq, from Pe-Yod quiescence); Patach under R2	BBH Chapter 29 — Hophal Weak
-יוּלַד (paradigm)	Root: ילד | Hophal | Imperfect 3ms | shall be born — יוּ prefix (Shureq); 3 root consonants (ל + ד visible after prefix)	BBH Chapter 29 — Hophal Weak
-וַיּוּלַד (Gen 4:26)	Root: ילד | Hophal | Wayyiqtol 3ms | and a son was born — וַיּוּ prefix; standard genealogical passive (Gen 4–11)	BBH Chapter 29 — Hophal Weak
-מוּלָד (paradigm)	Root: ילד | Hophal | Participle ms | (one) being born — מוּ prefix (Shureq); Qamets under R2	BBH Chapter 29 — Hophal Weak
-הוּבָא (Lev 10:18)	Root: בוא | Hophal | Perfect 3ms | was brought in — הוּ prefix (Shureq, I-ו); Qamets + silent א (III-א); doubly weak	BBH Chapter 29 — Hophal Weak
-יוּבָא (Lev 6:30)	Root: בוא | Hophal | Imperfect 3ms | shall be brought in — יוּ prefix (Shureq); Qamets + silent א	BBH Chapter 29 — Hophal Weak
-הוּרַד (Gen 39:1)	Root: ירד | Hophal | Perfect 3ms | was brought down — הוּ prefix (Pe-Yod quiescence → Shureq); Patach under R2	BBH Chapter 29 — Hophal Weak
-יֻקַּם (Gen 4:15)	Root: נקם | Hophal | Imperfect 3ms | shall be avenged — יֻ prefix (Qibbuts); Dagesh forte in ק (Pe-Nun assimilation); Gen 4 avenging formula	BBH Chapter 29 — Hophal Weak
-הֻקַּם (paradigm)	Root: נקם | Hophal | Perfect 3ms | was avenged — הֻ prefix; Dagesh forte in ק (Pe-Nun assimilation)	BBH Chapter 29 — Hophal Weak
-וַיֻּקַּם (paradigm)	Root: נקם | Hophal | Wayyiqtol 3ms | and he was avenged — וַיֻּ prefix; two Dagheshes: yod (Wayyiqtol) + ק (Pe-Nun)	BBH Chapter 29 — Hophal Weak
-מֻקָּם (paradigm)	Root: נקם | Hophal | Participle ms | (one who is) avenged — מֻ prefix; Dagesh forte in ק (Pe-Nun); Qamets under R2	BBH Chapter 29 — Hophal Weak
-הֻעֲמַד (paradigm)	Root: עמד | Hophal | Perfect 3ms | was stationed — הֻ prefix (Qibbuts); hateph-patach under ע (guttural cannot take plain shewa)	BBH Chapter 29 — Hophal Weak
-יֻעֲמַד (paradigm)	Root: עמד | Hophal | Imperfect 3ms | shall be stationed — יֻ prefix; hateph-patach under ע; Patach under R2	BBH Chapter 29 — Hophal Weak
-מֻעֲמָד (paradigm)	Root: עמד | Hophal | Participle ms | (one who is) stationed — מֻ prefix; hateph-patach under ע; Qamets under R2	BBH Chapter 29 — Hophal Weak
-יֻשְׁלַח (Job 18:8)	Root: שׁלח | Hophal | Imperfect 3ms | is cast into a net — יֻ prefix; Patach furtive before final ח	BBH Chapter 29 — Hophal Weak
-מֻשְׁלָח (Isa 27:10)	Root: שׁלח | Hophal | Participle ms | forsaken — מֻ prefix; Qamets under R2; Patach furtive before final ח	BBH Chapter 29 — Hophal Weak
-הֻמְצָא (paradigm)	Root: מצא | Hophal | Perfect 3ms | was found — הֻ prefix; Qamets + silent א (compensatory lengthening for III-א)	BBH Chapter 29 — Hophal Weak
-וַיֻּקְרָא (Num 21:3)	Root: קרא | Hophal | Wayyiqtol 3ms | and it was called — וַיֻּ prefix; Qamets + silent א; name-giving formula	BBH Chapter 29 — Hophal Weak
-הוּקַם (Biconsonantal) vs. הוּלַד (Pe-Yod) (—)	Biconsonantal vs. Pe-Yod — count root consonants: הוּקַם = 2 visible (ק+מ); הוּלַד = 3 with first quiesced (י-ל-ד)	BBH Chapter 29 — Hophal Weak
-וַיֻּגַּד (Pe-Nun) vs. וַיֻּגְלָה (Lamed-He) (—)	Pe-Nun (וַיֻּגַּד): Dagesh forte in R2 from assimilation · Lamed-He (וַיֻּגֶל): Seghol at end, ה apocopated — no Dagesh	BBH Chapter 29 — Hophal Weak
-What is the u-class prefix vowel in each weak class? (—)	Strong/Pe-Nun/Lamed-weak → Qibbuts (הֻ/יֻ/מֻ) · Biconsonantal/Pe-Yod → Shureq (הוּ/יוּ/מוּ)	BBH Chapter 29 — Hophal Weak
-מֻכֶּה (Isa 53:4) — what two weak classes combine here? (Isa 53:4)	Root: נכה | Hophal | Participle ms | stricken — doubly weak: I-נ (Dagesh in כ) + III-ה (Seghol+ה ending); Isa 53:4	BBH Chapter 29 — Hophal Weak
-וַיּוּלַד vs. הוּלַד vs. יוּלַד — how do you distinguish? (—)	ילד Hophal: הוּ- = Perfect · יוּ- = Imperfect · וַיּוּ- (Dagesh in yod) = Wayyiqtol	BBH Chapter 29 — Hophal Weak
+הוּקַם (Exo 40:17)	Root: קום | Hophal | Perfect 3ms | the tabernacle was set up — הוּ prefix (Shureq); 2 root consonants (ק + מ); contrast Hiphil הֵקִים	BBH::Morphology::Chapter 29 — Hophal Weak
+הוּשַׁב (Gen 43:12)	Root: שׁוב | Hophal | Perfect 3ms | the silver was returned — הוּ prefix (Shureq); 2 root consonants (שׁ + ב)	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻמְתוּ (2Sa 21:9)	Root: מות | Hophal | Perfect 3cp | they were put to death — הֻ prefix (Qibbuts before suffix); 2 root consonants	BBH::Morphology::Chapter 29 — Hophal Weak
+יוּקַם (Num 9:15)	Root: קום | Hophal | Imperfect 3ms | the tabernacle was set up — יוּ prefix (Shureq under yod); 2 root consonants	BBH::Morphology::Chapter 29 — Hophal Weak
+יוּמַת (Exo 31:14)	Root: מות | Hophal | Imperfect 3ms | shall be put to death — יוּ prefix (Shureq); the most common Hophal form in the OT	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיּוּקַם (Exo 40:18)	Root: קום | Hophal | Wayyiqtol 3ms | and it was set up — וַיּוּ prefix (Dagesh forte in yod + Shureq)	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיּוּשַׁב (Exo 10:8)	Root: שׁוב | Hophal | Wayyiqtol 3ms | and he was brought back — וַיּוּ prefix; Patach under R2 (שׁ)	BBH::Morphology::Chapter 29 — Hophal Weak
+מוּקָם (paradigm)	Root: קום | Hophal | Participle ms | (being) set up — מוּ prefix (Shureq); Qamets under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+מוֹת יוּמַת (Exo 21:12)	Root: מות | Formula: Inf.Abs. + Hophal Imperfect | מוֹת (Qal Inf.Abs.) + יוּמַת (Hophal Impf. 3ms) = "shall surely be put to death"	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻגַּד (Deu 17:4)	Root: נגד | Hophal | Perfect 3ms | it has been told/reported — הֻ prefix (Qibbuts); Dagesh forte in ג from Pe-Nun (נ) assimilation	BBH::Morphology::Chapter 29 — Hophal Weak
+וְהֻגַּד (Deu 17:4)	Root: נגד | Hophal | Weqatal 3ms | and it has been told — וְ + הֻגַּד; Waw + Shewa prefixed to Hophal Perfect form	BBH::Morphology::Chapter 29 — Hophal Weak
+יֻגַּד (paradigm)	Root: נגד | Hophal | Imperfect 3ms | it shall be told — יֻ prefix (Qibbuts); Dagesh forte in R2 (ג)	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיֻּגַּד (Gen 22:20)	Root: נגד | Hophal | Wayyiqtol 3ms | and it was told to... — וַיֻּ prefix + Dagesh in R2; common narrative reporting formula	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻגֵּד (paradigm)	Root: נגד | Hophal | Inf. Absolute | to be declared — הֻ prefix; Tsere under R2 (ג) = Inf.Abs. signature; Dagesh forte in R2	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻכָּה (Num 25:14)	Root: נכה | Hophal | Perfect 3ms | was struck down — הֻ prefix; Dagesh in כ (Pe-Nun); Qamets+ה ending (Lamed-He); doubly weak	BBH::Morphology::Chapter 29 — Hophal Weak
+יֻכֶּה (Deu 25:2)	Root: נכה | Hophal | Imperfect 3ms | shall be beaten — יֻ prefix; Dagesh in כ (Pe-Nun); Seghol+ה ending (Lamed-He); doubly weak	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻגְלָה (Amos 1:5)	Root: גלה | Hophal | Perfect 3ms | was exiled — הֻ prefix (Qibbuts); Qamets + ה = III-ה Perfect ending	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻגְלוּ (Amos 1:6)	Root: גלה | Hophal | Perfect 3cp | they were exiled — הֻ prefix; plural -וּ suffix; final ה absorbed before suffix	BBH::Morphology::Chapter 29 — Hophal Weak
+יֻגְלֶה (paradigm)	Root: גלה | Hophal | Imperfect 3ms | shall be exiled — יֻ prefix; Seghol + ה = III-ה Imperfect ending	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיֻּגֶל (paradigm)	Root: גלה | Hophal | Wayyiqtol 3ms | and he was exiled — וַיֻּ prefix; final ה dropped (apocopation); Seghol under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+מֻגְלֶה (paradigm)	Root: גלה | Hophal | Participle ms | (one) being exiled — מֻ prefix; Seghol + ה = III-ה Participle ending	BBH::Morphology::Chapter 29 — Hophal Weak
+הוּלַד (Gen 21:5)	Root: ילד | Hophal | Perfect 3ms | was born/begotten — הוּ prefix (Shureq, from Pe-Yod quiescence); Patach under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+יוּלַד (paradigm)	Root: ילד | Hophal | Imperfect 3ms | shall be born — יוּ prefix (Shureq); 3 root consonants (ל + ד visible after prefix)	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיּוּלַד (Gen 4:26)	Root: ילד | Hophal | Wayyiqtol 3ms | and a son was born — וַיּוּ prefix; standard genealogical passive (Gen 4–11)	BBH::Morphology::Chapter 29 — Hophal Weak
+מוּלָד (paradigm)	Root: ילד | Hophal | Participle ms | (one) being born — מוּ prefix (Shureq); Qamets under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+הוּבָא (Lev 10:18)	Root: בוא | Hophal | Perfect 3ms | was brought in — הוּ prefix (Shureq, I-ו); Qamets + silent א (III-א); doubly weak	BBH::Morphology::Chapter 29 — Hophal Weak
+יוּבָא (Lev 6:30)	Root: בוא | Hophal | Imperfect 3ms | shall be brought in — יוּ prefix (Shureq); Qamets + silent א	BBH::Morphology::Chapter 29 — Hophal Weak
+הוּרַד (Gen 39:1)	Root: ירד | Hophal | Perfect 3ms | was brought down — הוּ prefix (Pe-Yod quiescence → Shureq); Patach under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+יֻקַּם (Gen 4:15)	Root: נקם | Hophal | Imperfect 3ms | shall be avenged — יֻ prefix (Qibbuts); Dagesh forte in ק (Pe-Nun assimilation); Gen 4 avenging formula	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻקַּם (paradigm)	Root: נקם | Hophal | Perfect 3ms | was avenged — הֻ prefix; Dagesh forte in ק (Pe-Nun assimilation)	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיֻּקַּם (paradigm)	Root: נקם | Hophal | Wayyiqtol 3ms | and he was avenged — וַיֻּ prefix; two Dagheshes: yod (Wayyiqtol) + ק (Pe-Nun)	BBH::Morphology::Chapter 29 — Hophal Weak
+מֻקָּם (paradigm)	Root: נקם | Hophal | Participle ms | (one who is) avenged — מֻ prefix; Dagesh forte in ק (Pe-Nun); Qamets under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻעֲמַד (paradigm)	Root: עמד | Hophal | Perfect 3ms | was stationed — הֻ prefix (Qibbuts); hateph-patach under ע (guttural cannot take plain shewa)	BBH::Morphology::Chapter 29 — Hophal Weak
+יֻעֲמַד (paradigm)	Root: עמד | Hophal | Imperfect 3ms | shall be stationed — יֻ prefix; hateph-patach under ע; Patach under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+מֻעֲמָד (paradigm)	Root: עמד | Hophal | Participle ms | (one who is) stationed — מֻ prefix; hateph-patach under ע; Qamets under R2	BBH::Morphology::Chapter 29 — Hophal Weak
+יֻשְׁלַח (Job 18:8)	Root: שׁלח | Hophal | Imperfect 3ms | is cast into a net — יֻ prefix; Patach furtive before final ח	BBH::Morphology::Chapter 29 — Hophal Weak
+מֻשְׁלָח (Isa 27:10)	Root: שׁלח | Hophal | Participle ms | forsaken — מֻ prefix; Qamets under R2; Patach furtive before final ח	BBH::Morphology::Chapter 29 — Hophal Weak
+הֻמְצָא (paradigm)	Root: מצא | Hophal | Perfect 3ms | was found — הֻ prefix; Qamets + silent א (compensatory lengthening for III-א)	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיֻּקְרָא (Num 21:3)	Root: קרא | Hophal | Wayyiqtol 3ms | and it was called — וַיֻּ prefix; Qamets + silent א; name-giving formula	BBH::Morphology::Chapter 29 — Hophal Weak
+הוּקַם (Biconsonantal) vs. הוּלַד (Pe-Yod) (—)	Biconsonantal vs. Pe-Yod — count root consonants: הוּקַם = 2 visible (ק+מ); הוּלַד = 3 with first quiesced (י-ל-ד)	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיֻּגַּד (Pe-Nun) vs. וַיֻּגְלָה (Lamed-He) (—)	Pe-Nun (וַיֻּגַּד): Dagesh forte in R2 from assimilation · Lamed-He (וַיֻּגֶל): Seghol at end, ה apocopated — no Dagesh	BBH::Morphology::Chapter 29 — Hophal Weak
+What is the u-class prefix vowel in each weak class? (—)	Strong/Pe-Nun/Lamed-weak → Qibbuts (הֻ/יֻ/מֻ) · Biconsonantal/Pe-Yod → Shureq (הוּ/יוּ/מוּ)	BBH::Morphology::Chapter 29 — Hophal Weak
+מֻכֶּה (Isa 53:4) — what two weak classes combine here? (Isa 53:4)	Root: נכה | Hophal | Participle ms | stricken — doubly weak: I-נ (Dagesh in כ) + III-ה (Seghol+ה ending); Isa 53:4	BBH::Morphology::Chapter 29 — Hophal Weak
+וַיּוּלַד vs. הוּלַד vs. יוּלַד — how do you distinguish? (—)	ילד Hophal: הוּ- = Perfect · יוּ- = Imperfect · וַיּוּ- (Dagesh in yod) = Wayyiqtol	BBH::Morphology::Chapter 29 — Hophal Weak

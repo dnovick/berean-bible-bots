@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 21 — Qal Infinitive Absolute
+#deck:BBH::Morphology::Chapter 21 — Qal Infinitive Absolute
 #tags column:3
 
 שָׁמ֣וֹר	Qal IA · שמר · Strong A · "surely keep" — qamets R1 + holem-waw R2; contrast IC שְׁמֹר (shewa R1)	ia Strong-A bbh-ch21

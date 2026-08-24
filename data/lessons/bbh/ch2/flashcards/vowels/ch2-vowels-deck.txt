@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 2 — Vowels
+#deck:BBH::Chapter 2 — Vowels
 #tags column:3
 
 בָּ	bā — Qamets (long ā) — like 'a' in 'father'	bbh-ch2 bbh-ch2-long-vowel bbh-ch2-qamets

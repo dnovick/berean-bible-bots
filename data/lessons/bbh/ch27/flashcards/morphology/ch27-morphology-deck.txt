@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 27 — Hiphil Weak
+#deck:BBH::Morphology::Chapter 27 — Hiphil Weak
 #tags column:3
 הֶעֱמִיד (1 Chr 6:31)	Root: עָמַד | I-guttural | Perfect 3ms | he set up	hiphil-perfect hiphil-pe-guttural bbh-ch27
 וַיַּעֲמֵד (2 Chr 8:14)	Root: עָמַד | I-guttural | Wayyiqtol 3ms | and he stationed	hiphil-wayyiqtol hiphil-pe-guttural bbh-ch27

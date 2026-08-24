@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 17 — Wayyiqtol and Weqatal
+#deck:BBH::Morphology::Chapter 17 — Wayyiqtol and Weqatal
 #tags column:3
 
 וַיֹּאמֶר	אמר · Wayyiqtol · 3ms · "and he said" · Most frequent OT verb form; I-aleph holem prefix	wayyiqtol-strong bbh-ch17

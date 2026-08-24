@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 28 — Hophal Strong
+#deck:BBH::Morphology::Chapter 28 — Hophal Strong
 #tags column:3
 
 הָפְקַד (Lev 6:4)	פקד Hophal+Perfect+3ms — "it was entrusted/deposited to him" — הָ prefix (o-class qamets hatuf); strong root פקד; contrast Hiphil הִפְקִיד "he entrusted"	hophal-perfect bbh-ch28

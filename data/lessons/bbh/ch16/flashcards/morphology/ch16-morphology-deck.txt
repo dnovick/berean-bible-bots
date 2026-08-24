@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 16 — Qal Imperfect Weak
+#deck:BBH::Morphology::Chapter 16 — Qal Imperfect Weak
 #tags column:3
 יִמְצָא	Root: מָצָא | Imperfect 3ms | he will find | III-א	qal-imperfect-lamed-aleph bbh-ch16
 תִּקְרָא	Root: קָרָא | Imperfect 3/2ms | he/you will call | III-א	qal-imperfect-lamed-aleph bbh-ch16

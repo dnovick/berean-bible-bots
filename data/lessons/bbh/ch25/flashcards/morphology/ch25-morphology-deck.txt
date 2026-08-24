@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 25 — Niphal Weak
+#deck:BBH::Morphology::Chapter 25 — Niphal Weak
 #tags column:3
 נִמְצָא (Gen 44:12)	Root: מָצָא | III-א | Perfect 3ms | it was found	niphal-perfect niphal-lamed-aleph bbh-ch25
 וַיִּמָּצֵא (Gen 44:12)	Root: מָצָא | III-א | Wayyiqtol 3ms | and it was found	niphal-wayyiqtol niphal-lamed-aleph bbh-ch25
