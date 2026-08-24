@@ -6,8 +6,9 @@
 
 ## Agenda
 
-1. [Lesson: BBH Ch32 — Pual Strong Verbs](/lessons/hebrew/ch32/) (45 min)
-1. [Lesson: BBH Ch33 — Pual Weak Verbs](/lessons/hebrew/ch33/) (45 min)
+1. Housekeeping (10 min)
+1. [Lesson: BBH Ch32 — Pual Strong Verbs](/lessons/hebrew/ch32/) (30 min)
+1. [Lesson: BBH Ch33 — Pual Weak Verbs](/lessons/hebrew/ch33/) (30 min)
 1. [Reading: Psalm 119:17-24](session-134/ps119-17-24.html) (20 min)
 
 ## Additional Info
