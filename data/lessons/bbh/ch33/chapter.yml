@@ -9,7 +9,8 @@ focus: >
   roots that suppress one of those two diagnostics, and on distinguishing Pual
   from a Piel where vowels have reduced.
 
-flashcards: 
+flashcards:
+  - morphology
   - vocab
 
 exercises: 
