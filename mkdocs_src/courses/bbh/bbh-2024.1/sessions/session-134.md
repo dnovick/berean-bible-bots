@@ -16,3 +16,4 @@
 | Topic |
 |---|
 | [Reference: Virtual Doubling vs. Compensatory Lengthening (II-Guttural Piel/Pual)](session-134/ii-guttural-doubling-vs-lengthening.md) |
+| [Reference: Pual-Attested Verb Roots by Second-Radical Guttural/Resh](session-134/pual-ii-guttural-roots.md) |
