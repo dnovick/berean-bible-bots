@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 35 — Hithpael Weak
+#deck:BBH::Morphology::Chapter 35 — Hithpael Weak
 #tags column:3
 
 Hithpael Wayyiqtol prefix	וַיִּתְ (waw-Patach + Yod-Hireq + Taw) — e.g. וַיִּתְפַּלֵּל, וַיִּתְנַחֵם; contrast Piel וַיְ and Qal וַיִּ	hithpael-wayyiqtol diagnostic bbh-ch35

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 14 — Qal Perfect Weak
+#deck:BBH::Morphology::Chapter 14 — Qal Perfect Weak
 #tags column:3
 מָצָא (Exo 2:15)	Root: מָצָא | Perfect 3ms | he found | III-א	qal-perfect-lamed-aleph bbh-ch14
 מָצְאָה (Gen 8:9)	Root: מָצָא | Perfect 3fs | she found | III-א	qal-perfect-lamed-aleph bbh-ch14

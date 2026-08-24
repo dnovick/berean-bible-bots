@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 29 — Hophal Weak
+#deck:BBH::Morphology::Chapter 29 — Hophal Weak
 #tags column:3
 
 הוּקַם (Exo 40:17)	קום Hophal+Perfect+3ms — "the tabernacle was set up" — הוּ prefix (Shureq); biconsonantal: only ק + מ visible; Patach under R2 (ק); tabernacle dedication narrative; Hiphil הֵקִים = "Moses set up [the tabernacle]" (v.18)	hophal-perfect hophal-biconsonantal bbh-ch29

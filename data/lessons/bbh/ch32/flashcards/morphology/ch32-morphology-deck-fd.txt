@@ -1,19 +1,19 @@
-שֻׁבַּר (Isa 8:15)	Root: שָׁבַר | Pual | Perfect 3ms | it was broken/shattered — passive intensive; Qibbuts under R1 + Daghesh in R2	BBH Chapter 32 — Pual Strong
-שֻׁבַּרְתָּ	Root: שָׁבַר | Pual | Perfect 2ms | you were broken — 2ms suffix תָּ	BBH Chapter 32 — Pual Strong
-יְשֻׁבַּר (Isa 7:8)	Root: שָׁבַר | Pual | Imperfect 3ms | it will be broken — יְ prefix + Qibbuts + Daghesh in R2	BBH Chapter 32 — Pual Strong
-וַיְשֻׁבַּר	Root: שָׁבַר | Pual | Wayyiqtol 3ms | and it was broken — וַיְ prefix (same as Piel); Qibbuts distinguishes Pual	BBH Chapter 32 — Pual Strong
-מְשֻׁבָּר (Ps 34:19)	Root: שָׁבַר | Pual | Participle ms | broken — מְ prefix + Qibbuts + Daghesh + Qamets under R2	BBH Chapter 32 — Pual Strong
-וְשֻׁבַּר	Root: שָׁבַר | Pual | Weqatal 3ms | and it will be broken / then it was broken — וְ + Pual Perfect	BBH Chapter 32 — Pual Strong
-וְשֻׁבַּרְתָּ	Root: שָׁבַר | Pual | Weqatal 2ms | and you will be broken / then you were broken	BBH Chapter 32 — Pual Strong
-וְשֻׁבַּרְתִּי	Root: שָׁבַר | Pual | Weqatal 1cs | and I will be broken / then I was broken	BBH Chapter 32 — Pual Strong
-סֻפַּר (Exo 18:8)	Root: סָפַר | Pual | Perfect 3ms | it was told/counted — Qibbuts under R1 + Daghesh in R2	BBH Chapter 32 — Pual Strong
-סֻפַּרְתִּי	Root: סָפַר | Pual | Perfect 1cs | I was counted — 1cs suffix תִּי	BBH Chapter 32 — Pual Strong
-יְסֻפַּר	Root: סָפַר | Pual | Imperfect 3ms | it will be told — יְ prefix + Qibbuts + Daghesh in R2	BBH Chapter 32 — Pual Strong
-וַיְסֻפַּר	Root: סָפַר | Pual | Wayyiqtol 3ms | and it was told — וַיְ prefix marks Pual Wayyiqtol	BBH Chapter 32 — Pual Strong
-מְסֻפָּר	Root: סָפַר | Pual | Participle ms | what is counted/told — מְ prefix; Qamets under R2	BBH Chapter 32 — Pual Strong
-סֻפַּר (+ לְ/בְּ)	Root: סָפַר | Pual | Infinitive Construct | to be told — identical to Perfect 3ms; prepositions distinguish	BBH Chapter 32 — Pual Strong
-בֹּרַךְ	Root: בָּרַךְ | Pual | Perfect 3ms | he was blessed — compensatory lengthening; Holem under R1; no Daghesh in ר	BBH Chapter 32 — Pual Strong
-בֹּרַכְתָּ	Root: בָּרַךְ | Pual | Perfect 2ms | you were blessed — Holem under R1 throughout	BBH Chapter 32 — Pual Strong
-יְבֹרַךְ	Root: בָּרַךְ | Pual | Imperfect 3ms | he will be blessed — יְ prefix; Holem replaces expected Qibbuts	BBH Chapter 32 — Pual Strong
-וְבֹרַךְ	Root: בָּרַךְ | Pual | Weqatal 3ms | and he will be blessed / then he was blessed — וְ + Pual Perfect	BBH Chapter 32 — Pual Strong
-מְבֹרָךְ (Ps 113:2)	Root: בָּרַךְ | Pual | Participle ms | blessed — מְ prefix; Holem under R1 instead of Qibbuts; Ps 113:2	BBH Chapter 32 — Pual Strong
+שֻׁבַּר (Isa 8:15)	Root: שָׁבַר | Pual | Perfect 3ms | it was broken/shattered — passive intensive; Qibbuts under R1 + Daghesh in R2	BBH::Morphology::Chapter 32 — Pual Strong
+שֻׁבַּרְתָּ	Root: שָׁבַר | Pual | Perfect 2ms | you were broken — 2ms suffix תָּ	BBH::Morphology::Chapter 32 — Pual Strong
+יְשֻׁבַּר (Isa 7:8)	Root: שָׁבַר | Pual | Imperfect 3ms | it will be broken — יְ prefix + Qibbuts + Daghesh in R2	BBH::Morphology::Chapter 32 — Pual Strong
+וַיְשֻׁבַּר	Root: שָׁבַר | Pual | Wayyiqtol 3ms | and it was broken — וַיְ prefix (same as Piel); Qibbuts distinguishes Pual	BBH::Morphology::Chapter 32 — Pual Strong
+מְשֻׁבָּר (Ps 34:19)	Root: שָׁבַר | Pual | Participle ms | broken — מְ prefix + Qibbuts + Daghesh + Qamets under R2	BBH::Morphology::Chapter 32 — Pual Strong
+וְשֻׁבַּר	Root: שָׁבַר | Pual | Weqatal 3ms | and it will be broken / then it was broken — וְ + Pual Perfect	BBH::Morphology::Chapter 32 — Pual Strong
+וְשֻׁבַּרְתָּ	Root: שָׁבַר | Pual | Weqatal 2ms | and you will be broken / then you were broken	BBH::Morphology::Chapter 32 — Pual Strong
+וְשֻׁבַּרְתִּי	Root: שָׁבַר | Pual | Weqatal 1cs | and I will be broken / then I was broken	BBH::Morphology::Chapter 32 — Pual Strong
+סֻפַּר (Exo 18:8)	Root: סָפַר | Pual | Perfect 3ms | it was told/counted — Qibbuts under R1 + Daghesh in R2	BBH::Morphology::Chapter 32 — Pual Strong
+סֻפַּרְתִּי	Root: סָפַר | Pual | Perfect 1cs | I was counted — 1cs suffix תִּי	BBH::Morphology::Chapter 32 — Pual Strong
+יְסֻפַּר	Root: סָפַר | Pual | Imperfect 3ms | it will be told — יְ prefix + Qibbuts + Daghesh in R2	BBH::Morphology::Chapter 32 — Pual Strong
+וַיְסֻפַּר	Root: סָפַר | Pual | Wayyiqtol 3ms | and it was told — וַיְ prefix marks Pual Wayyiqtol	BBH::Morphology::Chapter 32 — Pual Strong
+מְסֻפָּר	Root: סָפַר | Pual | Participle ms | what is counted/told — מְ prefix; Qamets under R2	BBH::Morphology::Chapter 32 — Pual Strong
+סֻפַּר (+ לְ/בְּ)	Root: סָפַר | Pual | Infinitive Construct | to be told — identical to Perfect 3ms; prepositions distinguish	BBH::Morphology::Chapter 32 — Pual Strong
+בֹּרַךְ	Root: בָּרַךְ | Pual | Perfect 3ms | he was blessed — compensatory lengthening; Holem under R1; no Daghesh in ר	BBH::Morphology::Chapter 32 — Pual Strong
+בֹּרַכְתָּ	Root: בָּרַךְ | Pual | Perfect 2ms | you were blessed — Holem under R1 throughout	BBH::Morphology::Chapter 32 — Pual Strong
+יְבֹרַךְ	Root: בָּרַךְ | Pual | Imperfect 3ms | he will be blessed — יְ prefix; Holem replaces expected Qibbuts	BBH::Morphology::Chapter 32 — Pual Strong
+וְבֹרַךְ	Root: בָּרַךְ | Pual | Weqatal 3ms | and he will be blessed / then he was blessed — וְ + Pual Perfect	BBH::Morphology::Chapter 32 — Pual Strong
+מְבֹרָךְ (Ps 113:2)	Root: בָּרַךְ | Pual | Participle ms | blessed — מְ prefix; Holem under R1 instead of Qibbuts; Ps 113:2	BBH::Morphology::Chapter 32 — Pual Strong

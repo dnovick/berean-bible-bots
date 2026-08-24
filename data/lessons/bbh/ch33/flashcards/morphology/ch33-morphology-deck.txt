@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 33 — Pual Weak
+#deck:BBH::Morphology::Chapter 33 — Pual Weak
 #tags column:3
 
 Which Pual weak classes deviate significantly from the strong verb?	Only II-Guttural — the guttural in R2 rejects Dagesh Forte; III-א and III-ה preserve all Pual diagnostics	pual-diagnostics bbh-ch33

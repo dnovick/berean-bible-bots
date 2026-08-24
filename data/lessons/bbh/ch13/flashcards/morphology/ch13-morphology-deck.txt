@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 13 — Qal Perfect
+#deck:BBH::Morphology::Chapter 13 — Qal Perfect
 #tags column:3
 בָּרָא (Gen 1:1)	Root: בָּרָא | Perfect 3ms | he created | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13
 שָׁמַר	Root: שָׁמַר | Perfect 3ms | he kept/guarded | Simple past	qal-perfect-fientive usage-simple-past bbh-ch13

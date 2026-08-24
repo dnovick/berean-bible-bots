@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 1 — Alphabet
+#deck:BBH::Chapter 1 — Alphabet
 #tags column:3
 
 א	Aleph — ʾ — silent (glottal stop); guttural letter	bbh-ch1 bbh-ch1-consonant bbh-ch1-guttural

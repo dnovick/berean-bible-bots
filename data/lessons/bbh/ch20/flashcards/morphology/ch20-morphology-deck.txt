@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 20 — Qal Infinitive Construct
+#deck:BBH::Morphology::Chapter 20 — Qal Infinitive Construct
 #tags column:3
 
 שְׁמֹר	Qal IC (bare) · שמר · Strong A · "to keep/guard" — identical to Imperative 2ms; context distinguishes	ic Strong-A bbh-ch20

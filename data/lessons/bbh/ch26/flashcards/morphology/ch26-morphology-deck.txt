@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 26 — Hiphil
+#deck:BBH::Morphology::Chapter 26 — Hiphil
 #tags column:3
 וַיָּבֵא (Gen 2:19)	Root: בּוֹא | Wayyiqtol 3ms | he brought | Causative	hiphil-wayyiqtol hiphil-causative bbh-ch26
 וַיַּכּוּ (Gen 14:5)	Root: נָכָה | Wayyiqtol 3mp | they defeated | Causative	hiphil-wayyiqtol hiphil-causative bbh-ch26

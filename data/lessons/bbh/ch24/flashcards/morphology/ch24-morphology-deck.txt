@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 24 — Niphal
+#deck:BBH::Morphology::Chapter 24 — Niphal
 #tags column:3
 נִשְׁמַע (Gen 45:16)	Root: שָׁמַע | Perfect 3ms | it was heard | Passive	niphal-perfect niphal-passive bbh-ch24
 וַיִּמָּצֵא (Gen 44:12)	Root: מָצָא | Wayyiqtol 3ms | it was found | Passive	niphal-wayyiqtol niphal-passive bbh-ch24

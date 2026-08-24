@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 19 — Pronominal Suffixes on Verbs
+#deck:BBH::Morphology::Chapter 19 — Pronominal Suffixes on Verbs
 #tags column:3
 
 שְׁמָרַ֥נִי	שמר Qal Perf. 3ms + 1cs · "he kept me" · Connecting vowel qamets before נִי	suffix-perfect bbh-ch19

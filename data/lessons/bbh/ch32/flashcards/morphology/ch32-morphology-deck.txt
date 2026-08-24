@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 32 — Pual Strong
+#deck:BBH::Morphology::Chapter 32 — Pual Strong
 #tags column:3
 
 שֻׁבַּר	שבר Pual+Perfect+3ms — "it was broken/shattered" — passive intensive; Qibbuts under R1 + Daghesh in R2	pual-perfect passive-intensive bbh-ch32

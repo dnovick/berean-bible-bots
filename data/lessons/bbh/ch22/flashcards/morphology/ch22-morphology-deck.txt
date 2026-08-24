@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBH Chapter 22 — Qal Participle (Active and Passive)
+#deck:BBH::Morphology::Chapter 22 — Qal Participle (Active and Passive)
 #tags column:3
 
 שֹׁמֵ֖ר	Qal Active Ptc. ms · שמר · Strong A · "keeper/one who keeps" — holem-waw R1 + tsere R2; primary diagnostic	ptc active Strong-A bbh-ch22

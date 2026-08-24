@@ -1,26 +1,26 @@
-What are the THREE universal Hithpael diagnostics?	הִתְ prefix (varies: יִתְ/תִּתְ Imperfect, מִתְ Participle) + Pathach under R1 + Daghesh Forte in R2	BBH Chapter 34 — Hithpael Strong
-Which FOUR Hithpael forms look identical?	Perfect 3ms = Imperative 2ms = Infinitive Construct = Infinitive Absolute | all: הִתְקַדֵּשׁ	BBH Chapter 34 — Hithpael Strong
-Hithpael Participle prefix	מִתְ — unique to the Hithpael Participle; contrast Piel Ptc. (מְ + Patach) and Pual Ptc. (מְ + Qibbuts)	BBH Chapter 34 — Hithpael Strong
-What triggers Hithpael metathesis?	A sibilant (שׁ, שׂ, ס, צ) as R1 — ת of the prefix switches position with the sibilant	BBH Chapter 34 — Hithpael Strong
-What is הִשְׁתַּחֲוָה, and why is it not Hithpael?	Hishtaphel of שׁחה | unique Hishtaphel stem; only verb in this stem; 173× in OT | "he worshiped / bowed down"	BBH Chapter 34 — Hithpael Strong
-הִתְקַדֵּשׁ (Exo 19:22)	Root: קָדַשׁ | Hithpael | Perfect 3ms | he sanctified himself — intensive-reflexive; also = Imp. 2ms, Inf. Cs., Inf. Abs.	BBH Chapter 34 — Hithpael Strong
-הִתְקַדַּשְׁתָּ (Num 11:18)	Root: קָדַשׁ | Hithpael | Perfect 2ms | you sanctified yourself — 2ms suffix תָּ; dagesh+Pathach in ד	BBH Chapter 34 — Hithpael Strong
-הִתְקַדַּשְׁתִּי	Root: קָדַשׁ | Hithpael | Perfect 1cs | I sanctified myself — 1cs suffix תִּי	BBH Chapter 34 — Hithpael Strong
-יִתְקַדֵּשׁ (Lev 21:8)	Root: קָדַשׁ | Hithpael | Imperfect 3ms | he will sanctify himself — יִתְ preformative; Pathach+dagesh+Tsere under ד	BBH Chapter 34 — Hithpael Strong
-וַיִּתְקַדֵּשׁ (2 Sam 11:4)	Root: קָדַשׁ | Hithpael | Wayyiqtol 3ms | and she sanctified herself — וַיִּ prefix (Patach+Hireq+dagesh in yod) + תְ	BBH Chapter 34 — Hithpael Strong
-הִתְקַדֵּשׁ! (Exo 19:10)	Root: קָדַשׁ | Hithpael | Imperative 2ms | sanctify yourself! — identical to Perfect 3ms, Inf. Cs., Inf. Abs.; imperatival context distinguishes	BBH Chapter 34 — Hithpael Strong
-הִתְקַדֵּשׁ (+ לְ/כְּ)	Root: קָדַשׁ | Hithpael | Infinitive Construct | to sanctify oneself — identical to Perf. 3ms and Imp. 2ms; prepositions signal Inf. Cs.	BBH Chapter 34 — Hithpael Strong
-וְהִתְקַדֵּשׁ	Root: קָדַשׁ | Hithpael | Weqatal 3ms | and he will sanctify himself / then he sanctified himself — וְ + Hithpael Perfect; sequential action	BBH Chapter 34 — Hithpael Strong
-וְהִתְקַדַּשְׁתָּ	Root: קָדַשׁ | Hithpael | Weqatal 2ms | and you will sanctify yourself / then you sanctified yourself — 2ms suffix תָּ	BBH Chapter 34 — Hithpael Strong
-וְהִתְקַדַּשְׁתִּי	Root: קָדַשׁ | Hithpael | Weqatal 1cs | and I will sanctify myself / then I sanctified myself — 1cs suffix תִּי	BBH Chapter 34 — Hithpael Strong
-מִתְקַדֵּשׁ (Exo 29:43)	Root: קָדַשׁ | Hithpael | Participle ms | one who sanctifies himself / being sanctified — מִתְ prefix unique to Hithpael Ptc.	BBH Chapter 34 — Hithpael Strong
-הִתְחַזֵּק (2 Sam 10:12)	Root: חָזַק | Hithpael | Perfect 3ms | he strengthened himself / took courage — reflexive / simple action	BBH Chapter 34 — Hithpael Strong
-הִתְחַזַּקְתִּי	Root: חָזַק | Hithpael | Perfect 1cs | I strengthened myself — 1cs suffix תִּי; dagesh+Pathach in ז	BBH Chapter 34 — Hithpael Strong
-יִתְחַזֵּק (Deut 12:23)	Root: חָזַק | Hithpael | Imperfect 3ms | he will strengthen himself / be resolute — יִתְ preformative	BBH Chapter 34 — Hithpael Strong
-וַיִּתְחַזֵּק (2 Chr 15:8)	Root: חָזַק | Hithpael | Wayyiqtol 3ms | and he strengthened himself / took courage — וַיִּתְ prefix	BBH Chapter 34 — Hithpael Strong
-מִתְחַזֵּק (Ezra 7:28)	Root: חָזַק | Hithpael | Participle ms | one who strengthens himself — מִתְ prefix	BBH Chapter 34 — Hithpael Strong
-הִשְׁתַּמֵּר (Deut 4:9)	Root: שָׁמַר | Hithpael | Perfect 3ms | he guarded himself — R1=שׁ sibilant: *הִתְשַׁמֵּר → ת and שׁ swap → הִשְׁתַּמֵּר	BBH Chapter 34 — Hithpael Strong
-הִסְתַּתֵּר (1 Sam 23:19)	Root: סָתַר | Hithpael | Perfect 3ms | he hid himself — R1=ס sibilant: *הִתְסַתֵּר → ת and ס swap → הִסְתַּתֵּר	BBH Chapter 34 — Hithpael Strong
-הִדַּבֵּר (Num 7:89)	Root: דָּבַר | Hithpael | Perfect 3ms | he spoke with / conferred — R1=ד: ת assimilates into ד; dagesh in ד represents assimilated ת	BBH Chapter 34 — Hithpael Strong
-הִשְׁתַּחֲוָה (Gen 18:2)	Root: שָׁחָה | Hishtaphel | Perfect 3ms | he worshiped / bowed down — unique Hishtaphel stem (NOT Hithpael); III-ה verb; 173× in OT	BBH Chapter 34 — Hithpael Strong
-מִשְׁתַּחֲוֶה (Ps 22:28)	Root: שָׁחָה | Hishtaphel | Participle ms | worshiping / bowing down — מִשְׁתּ prefix (מִ + metathesized שׁת); ח takes hateph-Pathach	BBH Chapter 34 — Hithpael Strong
+What are the THREE universal Hithpael diagnostics?	הִתְ prefix (varies: יִתְ/תִּתְ Imperfect, מִתְ Participle) + Pathach under R1 + Daghesh Forte in R2	BBH::Morphology::Chapter 34 — Hithpael Strong
+Which FOUR Hithpael forms look identical?	Perfect 3ms = Imperative 2ms = Infinitive Construct = Infinitive Absolute | all: הִתְקַדֵּשׁ	BBH::Morphology::Chapter 34 — Hithpael Strong
+Hithpael Participle prefix	מִתְ — unique to the Hithpael Participle; contrast Piel Ptc. (מְ + Patach) and Pual Ptc. (מְ + Qibbuts)	BBH::Morphology::Chapter 34 — Hithpael Strong
+What triggers Hithpael metathesis?	A sibilant (שׁ, שׂ, ס, צ) as R1 — ת of the prefix switches position with the sibilant	BBH::Morphology::Chapter 34 — Hithpael Strong
+What is הִשְׁתַּחֲוָה, and why is it not Hithpael?	Hishtaphel of שׁחה | unique Hishtaphel stem; only verb in this stem; 173× in OT | "he worshiped / bowed down"	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִתְקַדֵּשׁ (Exo 19:22)	Root: קָדַשׁ | Hithpael | Perfect 3ms | he sanctified himself — intensive-reflexive; also = Imp. 2ms, Inf. Cs., Inf. Abs.	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִתְקַדַּשְׁתָּ (Num 11:18)	Root: קָדַשׁ | Hithpael | Perfect 2ms | you sanctified yourself — 2ms suffix תָּ; dagesh+Pathach in ד	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִתְקַדַּשְׁתִּי	Root: קָדַשׁ | Hithpael | Perfect 1cs | I sanctified myself — 1cs suffix תִּי	BBH::Morphology::Chapter 34 — Hithpael Strong
+יִתְקַדֵּשׁ (Lev 21:8)	Root: קָדַשׁ | Hithpael | Imperfect 3ms | he will sanctify himself — יִתְ preformative; Pathach+dagesh+Tsere under ד	BBH::Morphology::Chapter 34 — Hithpael Strong
+וַיִּתְקַדֵּשׁ (2 Sam 11:4)	Root: קָדַשׁ | Hithpael | Wayyiqtol 3ms | and she sanctified herself — וַיִּ prefix (Patach+Hireq+dagesh in yod) + תְ	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִתְקַדֵּשׁ! (Exo 19:10)	Root: קָדַשׁ | Hithpael | Imperative 2ms | sanctify yourself! — identical to Perfect 3ms, Inf. Cs., Inf. Abs.; imperatival context distinguishes	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִתְקַדֵּשׁ (+ לְ/כְּ)	Root: קָדַשׁ | Hithpael | Infinitive Construct | to sanctify oneself — identical to Perf. 3ms and Imp. 2ms; prepositions signal Inf. Cs.	BBH::Morphology::Chapter 34 — Hithpael Strong
+וְהִתְקַדֵּשׁ	Root: קָדַשׁ | Hithpael | Weqatal 3ms | and he will sanctify himself / then he sanctified himself — וְ + Hithpael Perfect; sequential action	BBH::Morphology::Chapter 34 — Hithpael Strong
+וְהִתְקַדַּשְׁתָּ	Root: קָדַשׁ | Hithpael | Weqatal 2ms | and you will sanctify yourself / then you sanctified yourself — 2ms suffix תָּ	BBH::Morphology::Chapter 34 — Hithpael Strong
+וְהִתְקַדַּשְׁתִּי	Root: קָדַשׁ | Hithpael | Weqatal 1cs | and I will sanctify myself / then I sanctified myself — 1cs suffix תִּי	BBH::Morphology::Chapter 34 — Hithpael Strong
+מִתְקַדֵּשׁ (Exo 29:43)	Root: קָדַשׁ | Hithpael | Participle ms | one who sanctifies himself / being sanctified — מִתְ prefix unique to Hithpael Ptc.	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִתְחַזֵּק (2 Sam 10:12)	Root: חָזַק | Hithpael | Perfect 3ms | he strengthened himself / took courage — reflexive / simple action	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִתְחַזַּקְתִּי	Root: חָזַק | Hithpael | Perfect 1cs | I strengthened myself — 1cs suffix תִּי; dagesh+Pathach in ז	BBH::Morphology::Chapter 34 — Hithpael Strong
+יִתְחַזֵּק (Deut 12:23)	Root: חָזַק | Hithpael | Imperfect 3ms | he will strengthen himself / be resolute — יִתְ preformative	BBH::Morphology::Chapter 34 — Hithpael Strong
+וַיִּתְחַזֵּק (2 Chr 15:8)	Root: חָזַק | Hithpael | Wayyiqtol 3ms | and he strengthened himself / took courage — וַיִּתְ prefix	BBH::Morphology::Chapter 34 — Hithpael Strong
+מִתְחַזֵּק (Ezra 7:28)	Root: חָזַק | Hithpael | Participle ms | one who strengthens himself — מִתְ prefix	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִשְׁתַּמֵּר (Deut 4:9)	Root: שָׁמַר | Hithpael | Perfect 3ms | he guarded himself — R1=שׁ sibilant: *הִתְשַׁמֵּר → ת and שׁ swap → הִשְׁתַּמֵּר	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִסְתַּתֵּר (1 Sam 23:19)	Root: סָתַר | Hithpael | Perfect 3ms | he hid himself — R1=ס sibilant: *הִתְסַתֵּר → ת and ס swap → הִסְתַּתֵּר	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִדַּבֵּר (Num 7:89)	Root: דָּבַר | Hithpael | Perfect 3ms | he spoke with / conferred — R1=ד: ת assimilates into ד; dagesh in ד represents assimilated ת	BBH::Morphology::Chapter 34 — Hithpael Strong
+הִשְׁתַּחֲוָה (Gen 18:2)	Root: שָׁחָה | Hishtaphel | Perfect 3ms | he worshiped / bowed down — unique Hishtaphel stem (NOT Hithpael); III-ה verb; 173× in OT	BBH::Morphology::Chapter 34 — Hithpael Strong
+מִשְׁתַּחֲוֶה (Ps 22:28)	Root: שָׁחָה | Hishtaphel | Participle ms | worshiping / bowing down — מִשְׁתּ prefix (מִ + metathesized שׁת); ח takes hateph-Pathach	BBH::Morphology::Chapter 34 — Hithpael Strong
