@@ -31,6 +31,8 @@ button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
 .clr:hover { background: #ffd8d8 !important; }
 hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 @media print { .controls, button.rbtn { display: none; } input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; direction: rtl; } .ans-row { display: none !important; } }
+
+  input.parse-field, select.parse-field { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: 'Arial Hebrew', Arial, sans-serif; font-size: 1.05rem; direction: rtl; background: #fafff8; }
 </style>
 </head>
 <body>
@@ -50,15 +52,15 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-a1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
+<tr><td class="num">1</td><td class="pgn">3ms</td><td><select class="parse-field" id="f-a1"><option value="">— choose —</option><option>קָטַל</option><option>קֻטַּל</option><option>קִטֵּל</option><option>קֻטְּלָה</option></select></td><td><button class="rbtn" onclick="tog('a1')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">קֻטַּל</td><td></td></tr>
-<tr><td class="num">2</td><td class="pgn">3fs</td><td><input class="parse-field" id="f-a2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a2')">▶ Answer</button></td></tr>
+<tr><td class="num">2</td><td class="pgn">3fs</td><td><select class="parse-field" id="f-a2"><option value="">— choose —</option><option>קִטְּלָה</option><option>קֻטַּל</option><option>קָטְלָה</option><option>קֻטְּלָה</option></select></td><td><button class="rbtn" onclick="tog('a2')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a2"><td class="ans-lbl">✓</td><td class="pgn">3fs</td><td class="heb-ans">קֻטְּלָה</td><td></td></tr>
-<tr><td class="num">3</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-a3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a3')">▶ Answer</button></td></tr>
+<tr><td class="num">3</td><td class="pgn">2ms</td><td><select class="parse-field" id="f-a3"><option value="">— choose —</option><option>קֻטַּלְתָּ</option><option>קִטַּלְתָּ</option><option>קָטַלְתָּ</option><option>קֻטְּלָה</option></select></td><td><button class="rbtn" onclick="tog('a3')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a3"><td class="ans-lbl">✓</td><td class="pgn">2ms</td><td class="heb-ans">קֻטַּלְתָּ</td><td></td></tr>
-<tr><td class="num">4</td><td class="pgn">3cp</td><td><input class="parse-field" id="f-a4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a4')">▶ Answer</button></td></tr>
+<tr><td class="num">4</td><td class="pgn">3cp</td><td><select class="parse-field" id="f-a4"><option value="">— choose —</option><option>קִטְּלוּ</option><option>קָטְלוּ</option><option>קֻטְּלוּ</option><option>קֻטַּל</option></select></td><td><button class="rbtn" onclick="tog('a4')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a4"><td class="ans-lbl">✓</td><td class="pgn">3cp</td><td class="heb-ans">קֻטְּלוּ</td><td></td></tr>
-<tr><td class="num">5</td><td class="pgn">1cs</td><td><input class="parse-field" id="f-a5" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('a5')">▶ Answer</button></td></tr>
+<tr><td class="num">5</td><td class="pgn">1cs</td><td><select class="parse-field" id="f-a5"><option value="">— choose —</option><option>קִטַּלְתִּי</option><option>קֻטַּלְתִּי</option><option>קָטַלְתִּי</option><option>קֻטַּלְתָּ</option></select></td><td><button class="rbtn" onclick="tog('a5')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-a5"><td class="ans-lbl">✓</td><td class="pgn">1cs</td><td class="heb-ans">קֻטַּלְתִּי</td><td></td></tr>
 </tbody>
 </table>
@@ -69,15 +71,15 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td class="pgn">3ms</td><td><input class="parse-field" id="f-b1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
+<tr><td class="num">1</td><td class="pgn">3ms</td><td><select class="parse-field" id="f-b1"><option value="">— choose —</option><option>יִקְטֹל</option><option>יְקַטֵּל</option><option>תְּקֻטַּל</option><option>יְקֻטַּל</option></select></td><td><button class="rbtn" onclick="tog('b1')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b1"><td class="ans-lbl">✓</td><td class="pgn">3ms</td><td class="heb-ans">יְקֻטַּל</td><td></td></tr>
-<tr><td class="num">2</td><td class="pgn">3fs</td><td><input class="parse-field" id="f-b2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b2')">▶ Answer</button></td></tr>
+<tr><td class="num">2</td><td class="pgn">3fs</td><td><select class="parse-field" id="f-b2"><option value="">— choose —</option><option>תְּקֻטַּל</option><option>יְקֻטַּל</option><option>תְּקַטֵּל</option><option>תִּקְטֹל</option></select></td><td><button class="rbtn" onclick="tog('b2')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b2"><td class="ans-lbl">✓</td><td class="pgn">3fs</td><td class="heb-ans">תְּקֻטַּל</td><td></td></tr>
-<tr><td class="num">3</td><td class="pgn">2ms</td><td><input class="parse-field" id="f-b3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b3')">▶ Answer</button></td></tr>
+<tr><td class="num">3</td><td class="pgn">2ms</td><td><select class="parse-field" id="f-b3"><option value="">— choose —</option><option>יְקֻטַּל</option><option>תִּקְטֹל</option><option>תְּקֻטַּל</option><option>תְּקַטֵּל</option></select></td><td><button class="rbtn" onclick="tog('b3')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b3"><td class="ans-lbl">✓</td><td class="pgn">2ms</td><td class="heb-ans">תְּקֻטַּל</td><td></td></tr>
-<tr><td class="num">4</td><td class="pgn">3mp</td><td><input class="parse-field" id="f-b4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td></tr>
+<tr><td class="num">4</td><td class="pgn">3mp</td><td><select class="parse-field" id="f-b4"><option value="">— choose —</option><option>יְקַטְּלוּ</option><option>יְקֻטְּלוּ</option><option>יִקְטְלוּ</option><option>תְּקֻטַּל</option></select></td><td><button class="rbtn" onclick="tog('b4')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b4"><td class="ans-lbl">✓</td><td class="pgn">3mp</td><td class="heb-ans">יְקֻטְּלוּ</td><td></td></tr>
-<tr><td class="num">5</td><td class="pgn">1cp</td><td><input class="parse-field" id="f-b5" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('b5')">▶ Answer</button></td></tr>
+<tr><td class="num">5</td><td class="pgn">1cp</td><td><select class="parse-field" id="f-b5"><option value="">— choose —</option><option>נְקֻטַּל</option><option>נְקַטֵּל</option><option>יְקֻטַּל</option><option>נִקְטֹל</option></select></td><td><button class="rbtn" onclick="tog('b5')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-b5"><td class="ans-lbl">✓</td><td class="pgn">1cp</td><td class="heb-ans">נְקֻטַּל</td><td></td></tr>
 </tbody>
 </table>
@@ -88,13 +90,13 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 <table>
 <thead><tr><th>#</th><th>PGN</th><th>Form</th><th></th></tr></thead>
 <tbody>
-<tr><td class="num">1</td><td class="pgn">ms</td><td><input class="parse-field" id="f-c1" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
+<tr><td class="num">1</td><td class="pgn">ms</td><td><select class="parse-field" id="f-c1"><option value="">— choose —</option><option>מְקַטֵּל</option><option>קֹטֵל</option><option>מְקֻטָּל</option><option>מְקֻטָּלִים</option></select></td><td><button class="rbtn" onclick="tog('c1')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-c1"><td class="ans-lbl">✓</td><td class="pgn">ms</td><td class="heb-ans">מְקֻטָּל</td><td></td></tr>
-<tr><td class="num">2</td><td class="pgn">fs</td><td><input class="parse-field" id="f-c2" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c2')">▶ Answer</button></td></tr>
+<tr><td class="num">2</td><td class="pgn">fs</td><td><select class="parse-field" id="f-c2"><option value="">— choose —</option><option>מְקַטֶּלֶת</option><option>מְקֻטָּל</option><option>קֹטֶלֶת</option><option>מְקֻטֶּלֶת</option></select></td><td><button class="rbtn" onclick="tog('c2')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-c2"><td class="ans-lbl">✓</td><td class="pgn">fs</td><td class="heb-ans">מְקֻטֶּלֶת</td><td></td></tr>
-<tr><td class="num">3</td><td class="pgn">mp</td><td><input class="parse-field" id="f-c3" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c3')">▶ Answer</button></td></tr>
+<tr><td class="num">3</td><td class="pgn">mp</td><td><select class="parse-field" id="f-c3"><option value="">— choose —</option><option>מְקַטְּלִים</option><option>מְקֻטָּלִים</option><option>קֹטְלִים</option><option>מְקֻטָּלוֹת</option></select></td><td><button class="rbtn" onclick="tog('c3')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-c3"><td class="ans-lbl">✓</td><td class="pgn">mp</td><td class="heb-ans">מְקֻטָּלִים</td><td></td></tr>
-<tr><td class="num">4</td><td class="pgn">fp</td><td><input class="parse-field" id="f-c4" placeholder="כתוב..."></td><td><button class="rbtn" onclick="tog('c4')">▶ Answer</button></td></tr>
+<tr><td class="num">4</td><td class="pgn">fp</td><td><select class="parse-field" id="f-c4"><option value="">— choose —</option><option>מְקֻטָּלוֹת</option><option>מְקַטְּלוֹת</option><option>מְקֻטָּלִים</option><option>קֹטְלוֹת</option></select></td><td><button class="rbtn" onclick="tog('c4')">▶ Answer</button></td></tr>
 <tr class="ans-row" id="ans-c4"><td class="ans-lbl">✓</td><td class="pgn">fp</td><td class="heb-ans">מְקֻטָּלוֹת</td><td></td></tr>
 </tbody>
 </table>
@@ -103,7 +105,7 @@ hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
 function tog(n){var r=document.getElementById('ans-'+n);r.style.display=r.style.display==='table-row'?'none':'table-row';}
 function showAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='table-row');}
 function hideAll(){document.querySelectorAll('.ans-row').forEach(r=>r.style.display='none');}
-function clearAll(){document.querySelectorAll('input.f').forEach(i=>i.value='');}
+function clearAll(){document.querySelectorAll('.parse-field').forEach(el=>el.value='');}
 </script>
 </body>
 </html>

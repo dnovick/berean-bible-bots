@@ -2749,22 +2749,22 @@ class Ch32PualExercise(PassageExercise):
         self.add_section_break()
 
         # ── Passage B ─────────────────────────────────────────────────────────
-        self.add_section_heading('Passage B — Exodus 29:36–37 (Consecration of the Altar)')
+        self.add_section_heading('Passage B — Genesis 25:8, 10 (Death and Burial of Abraham)')
 
-        self.add_passage(PassageBlock('29:36',
-            'וּמָשַׁחְתָּ אֹתוֹ לְקַדְּשׁוֹ',
-            '"…and you shall anoint it to consecrate it."'))
+        self.add_passage(PassageBlock('Gen 25:8',
+            'וַיִּגְוַע וַיָּמָת אַבְרָהָם בְּשֵׂיבָה טֹובָה זָקֵן וְשָׂבֵעַ וַיֵּאָסֶף אֶל עַמָּיו',
+            '"He expired, and Abraham died at a good old age, old and full of years, and was gathered to his people."'))
         self.add_verb_table([
-            VerbEntry('9', 'וּמָשַׁחְתָּ', 'Weqatal', '2ms', 'מָשַׁח', 'NOT Pual — Qal Weqatal: "and you shall anoint"; no u-class under R1'),
+            VerbEntry('9',  'וַיָּמָת',   'Wayyiqtol', '3ms', 'מוּת',  'NOT Pual — Qal Wayyiqtol: "and Abraham died"; hollow root מות; no u-class under R1 + R2 dagesh'),
+            VerbEntry('10', 'וַיֵּאָסֶף', 'Wayyiqtol', '3ms', 'אָסַף', 'NOT Pual — Niphal passive: "was gathered to his people"; Niphal Wayyiqtol 3ms of אסף; stock patriarchal death formula'),
         ], show_answers=show_answers)
 
-        self.add_passage(PassageBlock('29:37',
-            'שִׁבְעַת יָמִים תְּכַפֵּר עַל הַמִּזְבֵּחַ וְקִדַּשְׁתָּ אֹתוֹ וְהָיָה הַמִּזְבֵּחַ קֹדֶשׁ קָדָשִׁים כָּל הַנֹּגֵעַ בַּמִּזְבֵּחַ יִקְדָּשׁ',
-            '"Seven days you shall make atonement for the altar and consecrate it, and the altar shall be most holy; whatever touches the altar shall be consecrated."'))
+        self.add_passage(PassageBlock('Gen 25:9–10',
+            'וַיִּקְבְּרוּ אֹתוֹ יִצְחָק וְיִשְׁמָעֵאל בָּנָיו אֶל מְעָרַת הַמַּכְפֵּלָה … שָׁמָּה קֻבַּר אַבְרָהָם וְשָׂרָה אִשְׁתּוֹ',
+            '"Isaac and Ishmael his sons buried him in the cave of Machpelah … there Abraham was buried, and Sarah his wife."'))
         self.add_verb_table([
-            VerbEntry('10', 'וְקִדַּשְׁתָּ', 'Weqatal',     '2ms', 'קָדַשׁ', 'NOT Pual — Piel Factitive: "and you shall consecrate"; Hireq under R1 (קִ) = Piel'),
-            VerbEntry('11', 'וְהָיָה',       'Weqatal',     '3ms', 'הָיָה',  'NOT Pual — Qal Weqatal: "and it shall be"; III-ה Qal'),
-            VerbEntry('12', 'יִקְדָּשׁ',      'Niphal Impf.', '3ms', 'קָדַשׁ', 'NOT Pual — Niphal passive/reflexive: "shall be consecrated"; יִ + dagesh in R1 = Niphal; compare Pual: יְקֻדַּשׁ'),
+            VerbEntry('11', 'וַיִּקְבְּרוּ', 'Wayyiqtol', '3mp', 'קָבַר', 'NOT Pual — Qal active: "and they buried him"; Isaac and Ishmael as active subjects'),
+            VerbEntry('12', 'קֻבַּר',        'Perfect',   '3ms', 'קָבַר', 'Passive — Pual: "was buried"; Qibbuts (קֻ) under R1 + Dagesh Forte in R2 (בּ) = Pual; same root as verb 11, active vs. passive'),
         ], show_answers=show_answers)
 
         self.add_section_break()
@@ -2801,9 +2801,9 @@ class Ch32PualExercise(PassageExercise):
                 'Verb 3 (יוּאָר, Hophal) and verb 14 (כֻּבַּדְתַּנִי, Pual) both express passive meaning. '
                 'What is the key visual feature that distinguishes a Hophal from a Pual? '
                 'What does each stem tell you about the corresponding active stem?',
-                'Verbs 10 (Piel Weqatal) and 12 (Niphal Impf.) from Exo 29:37 use the same root קדש. '
-                'The priest actively consecrates (Piel); then whatever touches becomes holy (Niphal). '
-                'How does this passage illustrate the Piel-as-cause / Niphal-as-resulting-state distinction?',
+                'Verbs 11 (Qal Wayyiqtol 3mp) and 12 (Pual Perfect 3ms) in Passage B both come from root קבר. '
+                'Verb 11 is Qal active (Isaac and Ishmael bury Abraham); verb 12 is Pual passive (Abraham was buried). '
+                'What does the Pual vowel pattern (Qibbuts under R1 + Dagesh Forte in R2) tell you about who performs the action?',
             ])
 
 
@@ -2811,7 +2811,7 @@ def build_ch32_exercise(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch32PualExercise,
         'Chapter 32 — "Spot the Pual" Passage Exercise',
-        'Num 22–23  ·  Exo 29  ·  Isa 43',
+        'Num 22–23  ·  Gen 25  ·  Isa 43',
         ['bbh', 'ch32', 'exercises', 'ch32-passage-exercise'],
         'ch32-passage-exercise.pdf',
         out_dir,
