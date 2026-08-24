@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 9 — ἀγαθός Adjective Paradigm
+#deck:BBG::Chapter 9 — ἀγαθός Adjective Paradigm
 #tags column:3
 ἀγαθός	adj. ἀγαθός | Masculine · Nominative · Singular	bbg-ch9-adj adj-masc adj-sg adj-nom
 ἀγαθοῦ	adj. ἀγαθός | Masculine · Genitive · Singular  OR  Neuter · Genitive · Singular	bbg-ch9-adj adj-masc adj-neut adj-sg adj-gen

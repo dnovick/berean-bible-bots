@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 4 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 4
 #tags column:3
 ἄγγελος, -ου, ὁ	noun 2nd decl. m — angel; messenger — 175×	bbg-ch4-vocab bbg-ch4-noun
 ἀμήν	adverb — verily, truly, amen, so let it be — 128×	bbg-ch4-vocab bbg-ch4-other

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 17 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 17
 #tags column:3
 ἀγαπάω	verb — I love, cherish — 143×	bbg-ch17-vocab bbg-ch17-verb
 δαιμόνιον, -ου, τό	noun 2nd decl. n — demon — 63×	bbg-ch17-vocab bbg-ch17-noun

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 36 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 36
 #tags column:3
 ἀνίστημι	verb — intrans: I rise, get up; trans: I raise — 108×	bbg-ch36-vocab bbg-ch36-verb
 ἀνοίγω	verb — I open — 77×	bbg-ch36-vocab bbg-ch36-verb

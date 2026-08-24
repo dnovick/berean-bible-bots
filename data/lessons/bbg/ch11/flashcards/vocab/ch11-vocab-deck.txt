@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 11 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 11
 #tags column:3
 ἀδελφός, -οῦ, ὁ	noun 2nd decl. m — brother — 343×	bbg-ch11-vocab bbg-ch11-noun
 ἄν	particle — contingency particle (untranslatable; makes statements indefinite) — 166×	bbg-ch11-vocab bbg-ch11-other

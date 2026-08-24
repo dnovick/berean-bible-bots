@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 7 — αὐτός
+#deck:BBG::Chapter 7 — αὐτός
 #tags column:3
 αὐτός	pronoun — masc nom sg — he	bbg-ch7-autos autos-masc autos-nom autos-sg
 αὐτοῦ	pronoun — masc/neut gen sg — of him/it	bbg-ch7-autos autos-masc autos-neut autos-gen autos-sg

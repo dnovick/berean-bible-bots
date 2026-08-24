@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 18 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 18
 #tags column:3
 ἀποκρίνομαι	verb — I answer — 231×	bbg-ch18-vocab bbg-ch18-verb
 δεῖ	verb (impersonal) — it is necessary — 101×	bbg-ch18-vocab bbg-ch18-verb

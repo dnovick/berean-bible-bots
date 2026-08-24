@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 8 — εἰμί Present
+#deck:BBG::Chapter 8 — εἰμί Present
 #tags column:3
 εἰμί	verb εἰμί | pres. ind. 1sg | I am | enclitic	bbg-ch8-eimi eimi-recognize eimi-1st eimi-sg
 εἶ	verb εἰμί | pres. ind. 2sg | you are | accented (non-enclitic)	bbg-ch8-eimi eimi-recognize eimi-2nd eimi-sg

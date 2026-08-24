@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 24 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 24
 #tags column:3
 ἄγω	verb — I lead, bring, arrest — 67×	bbg-ch24-vocab bbg-ch24-verb
 αἷμα, -ατος, τό	noun 3rd decl. n — blood — 97×	bbg-ch24-vocab bbg-ch24-noun

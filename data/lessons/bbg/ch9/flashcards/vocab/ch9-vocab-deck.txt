@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 9 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 9
 #tags column:3
 ἀγαθός, -ή, -όν	adjective — good, useful — 102×	bbg-ch9-vocab bbg-ch9-adj
 ἀγαπητός, -ή, -όν	adjective — beloved — 61×	bbg-ch9-vocab bbg-ch9-adj

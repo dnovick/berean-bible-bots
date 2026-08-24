@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 20 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 20
 #tags column:3
 αἴρω	verb — I raise, take up, take away — 101×	bbg-ch20-vocab bbg-ch20-verb
 ἀποκτείνω	verb — I kill — 74×	bbg-ch20-vocab bbg-ch20-verb

@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 19 — Vocabulary
+#deck:BBG::Vocabulary::Chapter 19
 #tags column:3
 βασιλεύς, -έως, ὁ	noun 3rd decl. m — king — 115×	bbg-ch19-vocab bbg-ch19-noun
 γεννάω	verb — I beget, give birth to; produce — 97×	bbg-ch19-vocab bbg-ch19-verb

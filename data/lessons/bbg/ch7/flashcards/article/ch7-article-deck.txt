@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 7 — Definite Article
+#deck:BBG::Chapter 7 — Definite Article
 #tags column:3
 ὁ	article — masc nom sg — the	bbg-ch7-article article-nom article-masc article-sg
 ἡ	article — fem nom sg — the	bbg-ch7-article article-nom article-fem article-sg

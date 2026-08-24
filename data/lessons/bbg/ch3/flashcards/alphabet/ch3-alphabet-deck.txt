@@ -1,7 +1,7 @@
 #separator:tab
 #html:false
 #notetype:Basic
-#deck:BBG Chapter 3 — Greek Alphabet
+#deck:BBG::Chapter 3 — Greek Alphabet
 #tags column:3
 α (Α)	Alpha | a | "father" (long) / "along" (short)	bbg-ch3-alphabet letter-vowel vowel-either-length
 β (Β)	Beta | b | "Bible"	bbg-ch3-alphabet letter-consonant letter-labial
