@@ -1,0 +1,34 @@
+Hithpael Wayyiqtol prefix	Prefix: וַיִּתְ | Waw-Patach + Yod-Hireq + Taw | diagnostic — contrast Piel וַיְ and Qal וַיִּ; e.g. וַיִּתְפַּלֵּל, וַיִּתְנַחֵם	BBH Chapter 35 — Hithpael Weak
+Geminate Hithpael: when can Dagesh in R2 drop?	Before Shewa — sqnmlwy rule | diagnostic | e.g. הִתְפַּלְלוּ (Perf 3cp of פלל); Pathach under R1 and undoubled R2 retained in most forms	BBH Chapter 35 — Hithpael Weak
+II-Guttural virtual doubling in Hithpael: what changes?	Diagnostic | No Dagesh in R2; Pathach under R1 preserved; guttural takes Patach or Hateph-Patach; stems identified by הִתְ/יִתְ/מִתְ prefix	BBH Chapter 35 — Hithpael Weak
+II-Guttural compensatory lengthening in Hithpael: what changes?	Diagnostic | ר rejects Dagesh; Pathach under R1 lengthens to Qamets; no Dagesh in ר; prefixes הִתְ/יִתְ/מִתְ unchanged	BBH Chapter 35 — Hithpael Weak
+III-ה Hithpael Infinitive Construct: distinctive ending?	Diagnostic | וֹת (Holem-Waw + Taw) — e.g. הִתְגַּלּוֹת | unique ending not found in other stems	BBH Chapter 35 — Hithpael Weak
+I-שׁ Hithpael: what phonological change occurs?	Diagnostic | Metathesis — ת swaps with שׁ → הִשְׁתַּ prefix; most important: הִשְׁתַּחֲוָה (worship) from שׁחה — 173× in OT	BBH Chapter 35 — Hithpael Weak
+I-נ in Hithpael: does נ assimilate?	Diagnostic | No — הִתְ prefix ת stands between prefix vowel and נ, blocking assimilation; e.g. הִתְנַחֵם preserves נ intact	BBH Chapter 35 — Hithpael Weak
+הִתְפַּלֵּל	Root: פָּלַל | Hithpael | Perfect 3ms | he prayed — geminate root (לל); most common Hithpael verb in OT; identical form to Imperative 2ms	BBH Chapter 35 — Hithpael Weak
+הִתְפַּלַּלְתִּי	Root: פָּלַל | Hithpael | Perfect 1cs | I prayed — Pathach under doubled ל before suffix תִּי	BBH Chapter 35 — Hithpael Weak
+הִתְפַּלְלוּ	Root: פָּלַל | Hithpael | Perfect 3cp | they prayed — Dagesh in second ל dropped before Shewa; sqnmlwy rule	BBH Chapter 35 — Hithpael Weak
+יִתְפַּלֵּל	Root: פָּלַל | Hithpael | Imperfect 3ms | he will pray — יִתְ preformative; Pathach + doubled ל + Tsere	BBH Chapter 35 — Hithpael Weak
+אֶתְפַּלֵּל	Root: פָּלַל | Hithpael | Imperfect 1cs | I will pray — אֶתְ preformative (unique 1cs form)	BBH Chapter 35 — Hithpael Weak
+וַיִּתְפַּלֵּל (1 Kgs 8:54)	Root: פָּלַל | Hithpael | Wayyiqtol 3ms | and he prayed — וַיִּתְ prefix (waw-patach + yod-hireq + taw)	BBH Chapter 35 — Hithpael Weak
+הִתְפַּלֵּל (Imperative)	Root: פָּלַל | Hithpael | Imperative 2ms | pray! — identical form to Perfect 3ms; context distinguishes	BBH Chapter 35 — Hithpael Weak
+מִתְפַּלֵּל	Root: פָּלַל | Hithpael | Participle ms | praying — מִתְ prefix + Pathach + doubled ל + Tsere	BBH Chapter 35 — Hithpael Weak
+וְהִתְפַּלֵּל	Root: פָּלַל | Hithpael | Weqatal 3ms | and he will pray / then he prayed — וְ + Hithpael Perfect 3ms; sequential action	BBH Chapter 35 — Hithpael Weak
+הִתְגַּלָּה	Root: גָּלָה | Hithpael | Perfect 3ms | he revealed himself — Dagesh in ל (R2); Qamets-He ending (III-ה)	BBH Chapter 35 — Hithpael Weak
+הִתְגַּלִּיתָ	Root: גָּלָה | Hithpael | Perfect 2ms | you revealed yourself — Hireq-Yod-Taw suffix (III-ה)	BBH Chapter 35 — Hithpael Weak
+הִתְגַּלּוּ	Root: גָּלָה | Hithpael | Perfect 3cp | they revealed themselves — doubled ל before וּ; III-ה contracts	BBH Chapter 35 — Hithpael Weak
+יִתְגַּלֶּה	Root: גָּלָה | Hithpael | Imperfect 3ms | he will reveal himself — Seghol-He ending (III-ה Imperfect)	BBH Chapter 35 — Hithpael Weak
+יִתְגַּלּוּ	Root: גָּלָה | Hithpael | Imperfect 3mp | they will reveal themselves — doubled ל before וּ	BBH Chapter 35 — Hithpael Weak
+הִתְגַּלּוֹת	Root: גָּלָה | Hithpael | Infinitive Construct | to reveal oneself — unique III-ה Hithpael Inf. Cs. ending: וֹת	BBH Chapter 35 — Hithpael Weak
+מִתְגַּלֶּה	Root: גָּלָה | Hithpael | Participle ms | revealing himself — מִתְ prefix; Seghol-He ending (III-ה)	BBH Chapter 35 — Hithpael Weak
+הִתְנַחֵם (Gen 6:6)	Root: נָחַם | Hithpael | Perfect 3ms | he relented — ח rejects Dagesh; Pathach under נ = virtual doubling; Tsere under ח; נ intact after הִתְ (I-נ does not assimilate)	BBH Chapter 35 — Hithpael Weak
+הִתְנַחַמְתָּ	Root: נָחַם | Hithpael | Perfect 2ms | you relented — Patach under ח in suffix forms	BBH Chapter 35 — Hithpael Weak
+הִתְנַחֲמוּ	Root: נָחַם | Hithpael | Perfect 3cp | they relented — Hateph-Patach under ח before Shewa	BBH Chapter 35 — Hithpael Weak
+יִתְנַחֵם	Root: נָחַם | Hithpael | Imperfect 3ms | he will relent — יִתְ preformative; no Dagesh in ח; Tsere under ח	BBH Chapter 35 — Hithpael Weak
+וַיִּתְנַחֵם (Exo 32:14)	Root: נָחַם | Hithpael | Wayyiqtol 3ms | and he relented — the LORD relented; וַיִּתְ prefix	BBH Chapter 35 — Hithpael Weak
+הִתְנַחֵם (Imperative)	Root: נָחַם | Hithpael | Imperative 2ms | relent! / be consoled! — identical form to Perfect 3ms	BBH Chapter 35 — Hithpael Weak
+מִתְנַחֵם	Root: נָחַם | Hithpael | Participle ms | relenting / being consoled — מִתְ prefix; no Dagesh in ח	BBH Chapter 35 — Hithpael Weak
+הִתְבָּרֵךְ	Root: בָּרַךְ | Hithpael | Perfect 3ms | he blessed himself / was blessed — ר rejects Dagesh; Pathach under ב lengthens to Qamets; Tsere under ר	BBH Chapter 35 — Hithpael Weak
+הִתְבָּרַכְתָּ	Root: בָּרַךְ | Hithpael | Perfect 2ms | you blessed yourself — Patach under ר before suffix; Qamets under ב retained	BBH Chapter 35 — Hithpael Weak
+יִתְבָּרֵךְ	Root: בָּרַךְ | Hithpael | Imperfect 3ms | he will bless himself / be blessed — יִתְ preformative; Qamets under ב; Tsere under ר	BBH Chapter 35 — Hithpael Weak
+מִתְבָּרֵךְ	Root: בָּרַךְ | Hithpael | Participle ms | blessing himself / being blessed — מִתְ prefix; Qamets under ב; Tsere under ר	BBH Chapter 35 — Hithpael Weak

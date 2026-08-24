@@ -1,0 +1,34 @@
+#separator:tab
+#html:false
+#notetype:Basic
+#deck:BBH Chapter 33 — Pual Weak
+#tags column:3
+
+Which Pual weak classes deviate significantly from the strong verb?	Only II-Guttural — the guttural in R2 rejects Dagesh Forte; III-א and III-ה preserve all Pual diagnostics	pual-diagnostics bbh-ch33
+Pual II-Guttural virtual doubling: what changes?	No visible Dagesh in R2 (guttural); Patach (or Hateph Patach) under R2; Qibbuts under R1 is preserved	pual-diagnostics ii-guttural-virtual bbh-ch33
+Pual II-Guttural compensatory lengthening (ר): what changes?	Qibbuts under R1 lengthens to Holem; no Dagesh in ר	pual-diagnostics ii-guttural-compensatory bbh-ch33
+How to distinguish a Pual Participle from a Hophal Participle?	Pual: מְ + Qibbuts under R1 + Dagesh in R2; Hophal: מוּ or מֻ prefix, NO Dagesh in R2	pual-diagnostics bbh-ch33
+Pual III-ה Perfect 3ms vs. Piel III-ה Perfect 3ms — how do you tell them apart?	Pual: גֻּלָּה (Qibbuts under R1); Piel: גִּלָּה (Hireq under R1) — the vowel under R1 is the decisive distinguisher	pual-diagnostics iii-he bbh-ch33
+מֻצָּא	מצא Pual+Perfect+3ms — "he was found" — Qibbuts under R1 (מ), Dagesh in R2 (צ), Qamets before quiescing א	pual-perfect iii-aleph bbh-ch33
+מֻצֵּ֫אתָ	מצא Pual+Perfect+2ms — "you were found" — Tsere+א before 2ms suffix; all strong Pual markers retained	pual-perfect iii-aleph bbh-ch33
+יְמֻצָּא	מצא Pual+Imperfect+3ms — "he will be found" — shewa under preformative, Qibbuts under R1, Dagesh in R2	pual-imperfect iii-aleph bbh-ch33
+אֲמֻצָּא	מצא Pual+Imperfect+1cs — "I will be found" — אֲ prefix (hateph-patach); Qibbuts under root מ	pual-imperfect iii-aleph bbh-ch33
+מְמֻצָּא	מצא Pual+Participle+ms — "being found" — מְ Participle prefix + מֻ (root-initial מ); double mem marks III-א Pual Participle	pual-participle iii-aleph bbh-ch33
+גֻּלָּה	גלה Pual+Perfect+3ms — "he was uncovered / it was disclosed" — Qibbuts under R1 (ג), Dagesh in R2 (ל), Qamets He ending	pual-perfect iii-he bbh-ch33
+גֻּלֵּ֫יתָ	גלה Pual+Perfect+2ms — "you were uncovered" — Tsere+Yod before 2ms suffix (III-ה pattern)	pual-perfect iii-he bbh-ch33
+יְגֻלֶּה	גלה Pual+Imperfect+3ms — "he will be uncovered" — shewa under preformative, Qibbuts under R1, Seghol He ending	pual-imperfect iii-he bbh-ch33
+אֲגֻלֶּה	גלה Pual+Imperfect+1cs — "I will be uncovered" — אֲ prefix; Qibbuts under R1; Seghol He ending	pual-imperfect iii-he bbh-ch33
+מְגֻלֶּה	גלה Pual+Participle+ms — "being uncovered" — מְ prefix + Qibbuts under R1 + Dagesh in R2 + Seghol He	pual-participle iii-he bbh-ch33
+מְגֻלָּה	גלה Pual+Participle+fs — "being uncovered (fs)" — Qamets He ending; contrast ms מְגֻלֶּה (Seghol He)	pual-participle iii-he bbh-ch33
+נֻחַם	נחם Pual+Perfect+3ms — "he was comforted" — Qibbuts under R1 (נ), NO Dagesh in R2 (ח), Patach under ח (virtual doubling)	pual-perfect ii-guttural-virtual bbh-ch33
+נֻחַ֫מְתָּ	נחם Pual+Perfect+2ms — "you were comforted" — virtual doubling; Qibbuts under R1, no Dagesh in ח	pual-perfect ii-guttural-virtual bbh-ch33
+נֻחַ֫מְתִּי	נחם Pual+Perfect+1cs — "I was comforted" — Qibbuts under R1; virtual doubling pattern throughout	pual-perfect ii-guttural-virtual bbh-ch33
+יְנֻחַם	נחם Pual+Imperfect+3ms — "he will be comforted" — shewa under preformative + Qibbuts under R1 + Patach under ח (no Dagesh)	pual-imperfect ii-guttural-virtual bbh-ch33
+אֲנֻחַם	נחם Pual+Imperfect+1cs — "I will be comforted" — אֲ prefix; ח retains Patach (virtual doubling)	pual-imperfect ii-guttural-virtual bbh-ch33
+מְנֻחָם	נחם Pual+Participle+ms — "being comforted" — מְ prefix + Qibbuts under R1 + Qamets under ח (no Dagesh)	pual-participle ii-guttural-virtual bbh-ch33
+בֹּרַךְ	ברך Pual+Perfect+3ms — "he was blessed" — Holem under R1 (ב) due to compensatory lengthening; NO Dagesh in R2 (ר)	pual-perfect ii-guttural-compensatory bbh-ch33
+בֹּרַכְתָּ	ברך Pual+Perfect+2ms — "you were blessed" — Holem under ב retained; no Dagesh in ר	pual-perfect ii-guttural-compensatory bbh-ch33
+בֹּרַכְתִּי	ברך Pual+Perfect+1cs — "I was blessed" — Holem under ב; compensatory lengthening throughout	pual-perfect ii-guttural-compensatory bbh-ch33
+יְבֹרַךְ	ברך Pual+Imperfect+3ms — "he will be blessed" — shewa under preformative + Holem under ב + no Dagesh in ר	pual-imperfect ii-guttural-compensatory bbh-ch33
+אֲבֹרַךְ	ברך Pual+Imperfect+1cs — "I will be blessed" — אֲ prefix; Holem under ב (compensatory)	pual-imperfect ii-guttural-compensatory bbh-ch33
+מְבֹרָךְ	ברך Pual+Participle+ms — "being blessed / blessed one" — מְ prefix + Holem under ב + Qamets under ר (no Dagesh)	pual-participle ii-guttural-compensatory bbh-ch33

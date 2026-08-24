@@ -1,0 +1,23 @@
+מֻצָּא	Root: מָצָא | Pual | Perfect 3ms | he was found — Qibbuts under R1 (מ), Dagesh in R2 (צ), Qamets before quiescing א	BBH Chapter 33 — Pual Weak
+מֻצֵּ֫אתָ	Root: מָצָא | Pual | Perfect 2ms | you were found — Tsere+א before 2ms suffix; strong Pual markers retained	BBH Chapter 33 — Pual Weak
+יְמֻצָּא	Root: מָצָא | Pual | Imperfect 3ms | he will be found — shewa under preformative, Qibbuts under R1, Dagesh in צ	BBH Chapter 33 — Pual Weak
+אֲמֻצָּא	Root: מָצָא | Pual | Imperfect 1cs | I will be found — אֲ prefix (hateph-patach); Qibbuts under root מ	BBH Chapter 33 — Pual Weak
+מְמֻצָּא	Root: מָצָא | Pual | Participle ms | being found — מְ Participle prefix + מֻ (root-initial מ); double mem	BBH Chapter 33 — Pual Weak
+גֻּלָּה	Root: גָּלָה | Pual | Perfect 3ms | he was uncovered / it was disclosed — Qibbuts under R1 (ג), Dagesh in R2 (ל), Qamets He	BBH Chapter 33 — Pual Weak
+גֻּלֵּ֫יתָ	Root: גָּלָה | Pual | Perfect 2ms | you were uncovered — Tsere+Yod before 2ms suffix (III-ה pattern)	BBH Chapter 33 — Pual Weak
+יְגֻלֶּה	Root: גָּלָה | Pual | Imperfect 3ms | he will be uncovered — shewa under preformative, Qibbuts under R1, Seghol He	BBH Chapter 33 — Pual Weak
+אֲגֻלֶּה	Root: גָּלָה | Pual | Imperfect 1cs | I will be uncovered — אֲ prefix; Qibbuts under R1; Seghol He	BBH Chapter 33 — Pual Weak
+מְגֻלֶּה	Root: גָּלָה | Pual | Participle ms | being uncovered — מְ prefix + Qibbuts under R1 + Dagesh in ל + Seghol He	BBH Chapter 33 — Pual Weak
+מְגֻלָּה	Root: גָּלָה | Pual | Participle fs | being uncovered (fs) — Qamets He ending; contrast ms מְגֻלֶּה	BBH Chapter 33 — Pual Weak
+נֻחַם	Root: נָחַם | Pual | Perfect 3ms | he was comforted — Qibbuts under R1 (נ), NO Dagesh in R2 (ח), Patach under ח (virtual doubling)	BBH Chapter 33 — Pual Weak
+נֻחַ֫מְתָּ	Root: נָחַם | Pual | Perfect 2ms | you were comforted — virtual doubling; Qibbuts under R1, no Dagesh in ח	BBH Chapter 33 — Pual Weak
+נֻחַ֫מְתִּי	Root: נָחַם | Pual | Perfect 1cs | I was comforted — Qibbuts under R1; virtual doubling throughout	BBH Chapter 33 — Pual Weak
+יְנֻחַם	Root: נָחַם | Pual | Imperfect 3ms | he will be comforted — shewa under preformative + Qibbuts under R1 + Patach under ח (no Dagesh)	BBH Chapter 33 — Pual Weak
+אֲנֻחַם	Root: נָחַם | Pual | Imperfect 1cs | I will be comforted — אֲ prefix; ח retains Patach (virtual doubling)	BBH Chapter 33 — Pual Weak
+מְנֻחָם	Root: נָחַם | Pual | Participle ms | being comforted — מְ prefix + Qibbuts under R1 + Qamets under ח (no Dagesh)	BBH Chapter 33 — Pual Weak
+בֹּרַךְ	Root: בָּרַךְ | Pual | Perfect 3ms | he was blessed — Holem under R1 (ב, compensatory lengthening); NO Dagesh in R2 (ר)	BBH Chapter 33 — Pual Weak
+בֹּרַכְתָּ	Root: בָּרַךְ | Pual | Perfect 2ms | you were blessed — Holem under ב retained; no Dagesh in ר	BBH Chapter 33 — Pual Weak
+בֹּרַכְתִּי	Root: בָּרַךְ | Pual | Perfect 1cs | I was blessed — Holem under ב throughout	BBH Chapter 33 — Pual Weak
+יְבֹרַךְ	Root: בָּרַךְ | Pual | Imperfect 3ms | he will be blessed — shewa under preformative + Holem under ב + no Dagesh in ר	BBH Chapter 33 — Pual Weak
+אֲבֹרַךְ	Root: בָּרַךְ | Pual | Imperfect 1cs | I will be blessed — אֲ prefix; Holem under ב (compensatory)	BBH Chapter 33 — Pual Weak
+מְבֹרָךְ	Root: בָּרַךְ | Pual | Participle ms | being blessed / blessed one — מְ prefix + Holem under ב + Qamets under ר (no Dagesh)	BBH Chapter 33 — Pual Weak
