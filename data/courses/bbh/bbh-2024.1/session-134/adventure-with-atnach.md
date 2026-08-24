@@ -2,5 +2,3 @@
 
 - Atnach for emphasis
 - Atnach on first word
-
-*Content coming soon.*
