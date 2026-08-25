@@ -64,7 +64,7 @@ The **Daghesh Forte** doubles the consonant and must be divided in syllabificati
    - Shewa under a consonant with Daghesh Forte is vocal (e.g., הַמְּלָכִים)
    - Shewa after an unaccented long vowel is vocal (e.g., כֹּתְבִים)
 
-> Gutturals (א ה ח ע) cannot take a Vocal Shewa — they take a Silent Shewa instead (e.g., שָׁמַ֫עְתָּ).
+> Gutturals (א ה ח ע) generally avoid Vocal Shewa, often replacing it with a Ḥateph vowel (e.g., אֲ, הֱ, חֲ). However, they may take a Silent Shewa when they close a syllable (e.g., שָׁמַ֫עְתָּ).
 
 ---
 
@@ -121,7 +121,7 @@ Two vowel-consonant clusters function as a **single unit** and make the syllable
 5. A Daghesh Forte in a begadkephat doubles the **hard** sound, not the soft sound.
 6. The gutturals (א ה ח ע) and ר cannot take Daghesh Lene or Daghesh Forte.
 7. A Shewa is **silent** if the previous vowel is short; **vocal** in all other circumstances.
-8. A guttural cannot take a Vocal Shewa, but it can take a Silent Shewa.
+8. Gutturals generally avoid Vocal Shewa, often taking a Ḥateph vowel instead; they may take a Silent Shewa when closing a syllable.
 9. Unlike the gutturals, ר **can** take Vocal Shewa.
 10. The reduced vowels (בֲּ בֱּ בֳּ) always occur in open syllables and are never silent.
 11. The Metheg (ֽ) occurs with Qamets (not Qamets Hatuf) to distinguish the two.
