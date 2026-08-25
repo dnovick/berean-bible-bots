@@ -124,7 +124,7 @@ Two vowel-consonant clusters function as a **single unit** and make the syllable
 8. Gutturals generally avoid Vocal Shewa, often taking a Ḥateph vowel instead; they may take a Silent Shewa when closing a syllable.
 9. Unlike the gutturals, ר **can** take Vocal Shewa.
 10. The reduced vowels (בֲּ בֱּ בֳּ) always occur in open syllables and are never silent.
-11. The Metheg (ֽ) occurs with Qamets (not Qamets Hatuf) to distinguish the two.
+11. The Metheg (<span style="font-size:1.35em;font-family:'Arial Hebrew',Arial,sans-serif">בָֽ</span>) occurs with Qamets (not Qamets Hatuf) to distinguish the two.
 12. Furtive Pathach is not a full vowel and is not counted in syllabification.
 13. When א occurs without a vowel, it is quiescent.
 14. Syllables containing the diphthong (ַיִ) are closed because they end with a consonant.
