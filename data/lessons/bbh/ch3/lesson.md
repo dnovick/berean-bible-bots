@@ -77,7 +77,7 @@ The **Qamets** (בָּ, long *ā*) and **Qamets Hatuf** (בָּ, short *ŏ*) are
 | Open syllable | Qamets | long *ā* |
 | Closed, **accented** syllable | Qamets | long *ā* |
 | Closed, **unaccented** syllable | Qamets Hatuf | short *ŏ* |
-| Any syllable with **Metheg** (ֽ) to the left | Qamets | long *ā* |
+| Any syllable with **Metheg** (<span style="font-size:1.35em;font-family:'Arial Hebrew',Arial,sans-serif">בָֽ</span>) to the left | Qamets | long *ā* |
 
 > The most common Qamets Hatuf: כָּל ("all of") when unaccented before maqqef.
 
