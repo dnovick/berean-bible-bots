@@ -9,10 +9,10 @@
 1. Every syllable must begin with **one consonant** and have **only one vowel**.
 2. There are only **two types** of syllables: **open** (ends with a vowel) and **closed** (ends with a consonant).
 
-| Type | Ends with | Example | Syllabification |
-|---|---|---|---|
-| **Open** | vowel | דָּ in דָּבָר | דָּ (vowel at end = open) |
-| **Closed** | consonant | בָר in דָּבָר | בָר (resh at end = closed) |
+| Type | Pattern | Ends with | Example | Syllabification |
+|---|---|---|---|---|
+| **Open** | CV | vowel | דָּ in דָּבָר | דָּ (vowel at end = open) |
+| **Closed** | CVC | consonant | בָר in דָּבָר | בָר (resh at end = closed) |
 
 ---
 
