@@ -11,8 +11,8 @@ import os
 from collections import Counter
 from typing import Any, Dict, List
 
-MANIFEST = os.path.join(
-    os.path.dirname(__file__), "..", "data", "research", ".index_manifest.json"
+BIBLIOGRAPHY = os.path.join(
+    os.path.dirname(__file__), "..", "data", "research", "bibliography.json"
 )
 OUT_DIR = os.path.join(
     os.path.dirname(__file__), "..", "mkdocs_src", "research"
@@ -233,14 +233,9 @@ def build_page(papers: List[Dict[str, Any]], all_tags: List[str]) -> str:
 
 
 def main() -> None:
-    with open(MANIFEST, encoding="utf-8") as f:
-        manifest = json.load(f)
+    with open(BIBLIOGRAPHY, encoding="utf-8") as f:
+        papers = json.load(f)
 
-    papers = [
-        {**v, "_id": k}
-        for k, v in manifest.items()
-        if v.get("title")
-    ]
     papers.sort(key=sort_key)
 
     all_tags = build_tag_set(papers)
