@@ -438,6 +438,7 @@ def build_nav() -> list:
     nav.extend(build_reports())
     # Courses nav block is inserted by scripts/build_courses.py (update_nav)
     nav.extend(build_study_helps())
+    nav.append({"Research Library": [{"Overview": "research/index.md"}]})
     nav.append({"API Reference": "reference/index.md"})
     return nav
 
