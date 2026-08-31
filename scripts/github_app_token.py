@@ -1,7 +1,6 @@
 """Generate a GitHub App installation token for berean-bots-author or berean-bots-reviewer.
 
-Local config: ~/.config/berean-bots/github-apps.json
-Format:
+Local config (~/.config/berean-bots/github-apps.json):
 {
   "author": {
     "app_id": 123456,
@@ -15,6 +14,10 @@ Format:
   }
 }
 
+CI mode (environment variables override the config file):
+  ROLE_APP_ID, ROLE_PRIVATE_KEY, ROLE_INSTALLATION_ID
+  where ROLE is AUTHOR or REVIEWER (uppercased --role value).
+
 Usage:
   GH_TOKEN=$(python scripts/github_app_token.py --role author)
   GH_TOKEN=$(python scripts/github_app_token.py --role reviewer)
@@ -22,6 +25,7 @@ Usage:
 
 import argparse
 import json
+import os
 import time
 from pathlib import Path
 
@@ -53,26 +57,44 @@ def get_installation_token(app_id: int, private_key: str, installation_id: int) 
     return str(response.json()["token"])
 
 
+def load_credentials(role: str) -> tuple[int, str, int]:
+    """Return (app_id, private_key, installation_id) for the given role.
+
+    CI mode: reads from ROLE_APP_ID, ROLE_PRIVATE_KEY, ROLE_INSTALLATION_ID env vars.
+    Local mode: reads from ~/.config/berean-bots/github-apps.json + .pem file.
+    """
+    prefix = role.upper()
+    env_app_id = os.environ.get(f"{prefix}_APP_ID")
+    env_key = os.environ.get(f"{prefix}_PRIVATE_KEY")
+    env_install = os.environ.get(f"{prefix}_INSTALLATION_ID")
+
+    if env_app_id and env_key and env_install:
+        return int(env_app_id), env_key, int(env_install)
+
+    if not CONFIG_PATH.exists():
+        raise SystemExit(
+            f"Config file not found: {CONFIG_PATH}\n"
+            "Create it with app_id, installation_id, and private_key_path, "
+            f"or set {prefix}_APP_ID / {prefix}_PRIVATE_KEY / {prefix}_INSTALLATION_ID env vars."
+        )
+
+    config = json.loads(CONFIG_PATH.read_text())[role]
+    private_key_path = Path(config["private_key_path"]).expanduser()
+
+    if not private_key_path.exists():
+        raise SystemExit(f"Private key not found: {private_key_path}")
+
+    return int(config["app_id"]), private_key_path.read_text(), int(config["installation_id"])
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate a GitHub App installation token.")
     parser.add_argument("--role", choices=["author", "reviewer"], required=True,
                         help="Which app to generate a token for.")
     args = parser.parse_args()
 
-    if not CONFIG_PATH.exists():
-        raise SystemExit(
-            f"Config file not found: {CONFIG_PATH}\n"
-            "Create it with your app_id, installation_id, and private_key_path."
-        )
-
-    config = json.loads(CONFIG_PATH.read_text())[args.role]
-    private_key_path = Path(config["private_key_path"]).expanduser()
-
-    if not private_key_path.exists():
-        raise SystemExit(f"Private key not found: {private_key_path}")
-
-    private_key = private_key_path.read_text()
-    token = get_installation_token(config["app_id"], private_key, config["installation_id"])
+    app_id, private_key, installation_id = load_credentials(args.role)
+    token = get_installation_token(app_id, private_key, installation_id)
     print(token, end="")  # no trailing newline — safe for GH_TOKEN=$(...)
 
 
