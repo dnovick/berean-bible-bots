@@ -271,6 +271,10 @@ git checkout main && git pull
 ```
 Do not use `--admin` — branch protection enforces reviews for admins too.
 
+**Repo secrets** (set in GitHub → Settings → Secrets → Actions):
+- `AUTHOR_01_APP_ID`, `AUTHOR_01_PRIVATE_KEY`, `AUTHOR_01_INSTALLATION_ID`
+- `REVIEWER_01_APP_ID`, `REVIEWER_01_PRIVATE_KEY`, `REVIEWER_01_INSTALLATION_ID`
+
 **Local setup required** (one-time, outside the repo):
 - `~/.config/berean-bots/github-apps.json` — app IDs and installation IDs
 - `~/.config/berean-bots/author-01-app.pem` — author app private key
