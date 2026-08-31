@@ -86,7 +86,7 @@ def load_credentials(role: str) -> tuple[int, str, int]:
         # CI_PRIVATE_KEY_PATH: workflow wrote the key to a temp file (most reliable)
         env_key_path = os.environ.get(f"{prefix}_PRIVATE_KEY_PATH")
         if env_key_path:
-            env_key = Path(env_key_path).read_text()
+            env_key = _normalize_pem(Path(env_key_path).read_text())
         elif env_key:
             env_key = _normalize_pem(env_key)
         if env_key:
