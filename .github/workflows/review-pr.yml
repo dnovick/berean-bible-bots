@@ -77,10 +77,33 @@ jobs:
 
       - name: Generate reviewer token
         id: reviewer-token
-        uses: actions/create-github-app-token@v1
-        with:
-          app-id: ${{ secrets.REVIEWER_01_APP_ID }}
-          private-key: ${{ secrets.REVIEWER_01_PRIVATE_KEY }}
+        env:
+          REVIEWER_APP_ID: ${{ secrets.REVIEWER_01_APP_ID }}
+          REVIEWER_PRIVATE_KEY: ${{ secrets.REVIEWER_01_PRIVATE_KEY }}
+          REVIEWER_INSTALLATION_ID: ${{ secrets.REVIEWER_01_INSTALLATION_ID }}
+        run: |
+          pip install PyJWT cryptography requests -q
+          TOKEN=$(python3 - <<'PYEOF'
+import jwt, time, os, requests, sys
+app_id = os.environ["REVIEWER_APP_ID"]
+private_key = os.environ["REVIEWER_PRIVATE_KEY"]
+installation_id = os.environ["REVIEWER_INSTALLATION_ID"]
+now = int(time.time())
+payload = {"iat": now - 60, "exp": now + 600, "iss": str(app_id)}
+encoded = jwt.encode(payload, private_key, algorithm="RS256")
+resp = requests.post(
+    f"https://api.github.com/app/installations/{installation_id}/access_tokens",
+    headers={
+        "Authorization": f"Bearer {encoded}",
+        "Accept": "application/vnd.github+json",
+        "X-GitHub-Api-Version": "2022-11-28",
+    },
+)
+resp.raise_for_status()
+print(resp.json()["token"], end="")
+PYEOF
+)
+          echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
 
       - name: Approve PR
         if: steps.checks.outputs.failed == '0'
