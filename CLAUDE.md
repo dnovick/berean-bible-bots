@@ -246,10 +246,37 @@ CI runs the validator automatically on every push that touches `data/courses/**`
 ## Git Workflow
 
 - **All changes go on a feature branch + PR.** Never push directly to main — branch protection is enabled.
-- **Merge with:** `gh pr merge <n> --squash --admin` then `git checkout main && git pull`.
 - **Before every commit:** run `python -m flake8 src/` and `python -m mypy src/ --ignore-missing-imports`. Fix all errors before committing.
 - **After non-trivial changes:** commit and push automatically — do not ask first.
 - **GitHub issues:** always create with `--assignee dnovick`.
+
+### PR Workflow (GitHub App identities)
+
+PRs are created by `berean-bots-author[bot]` and reviewed by `berean-bots-reviewer[bot]`.
+
+**Opening a PR:**
+```bash
+GH_TOKEN=$(python scripts/github_app_token.py --role author) \
+  gh pr create --title "..." --body "..."
+```
+
+**Review:** The `.github/workflows/review-pr.yml` action runs automatically on every PR.
+It runs flake8, mypy, validate_courses, and validate_lessons. If all pass, `berean-bots-reviewer[bot]`
+approves the PR. If any fail, it requests changes with details.
+
+**Merging** (after reviewer approves):
+```bash
+gh pr merge <n> --squash
+git checkout main && git pull
+```
+Do not use `--admin` — branch protection enforces reviews for admins too.
+
+**Local setup required** (one-time, outside the repo):
+- `~/.config/berean-bots/github-apps.json` — app IDs and installation IDs
+- `~/.config/berean-bots/author-01-app.pem` — author app private key
+- `~/.config/berean-bots/reviewer-01-app.pem` — reviewer app private key
+
+See `scripts/github_app_token.py` for the config file format.
 
 ---
 

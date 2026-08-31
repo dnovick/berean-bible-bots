@@ -1,0 +1,101 @@
+name: PR Review
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pull-requests: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies
+        run: |
+          pip install \
+            pyyaml \
+            flake8 \
+            mypy
+
+      - name: Run checks
+        id: checks
+        run: |
+          FAILED=0
+          BODY=""
+
+          if ! python -m flake8 src/ > /tmp/flake8.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### flake8
+          \`\`\`
+          $(cat /tmp/flake8.txt)
+          \`\`\`"
+          fi
+
+          if ! python -m mypy src/ --ignore-missing-imports > /tmp/mypy.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### mypy
+          \`\`\`
+          $(cat /tmp/mypy.txt)
+          \`\`\`"
+          fi
+
+          if ! python scripts/validate_courses.py > /tmp/courses.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### validate_courses
+          \`\`\`
+          $(cat /tmp/courses.txt)
+          \`\`\`"
+          fi
+
+          if ! python scripts/validate_lessons.py > /tmp/lessons.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### validate_lessons
+          \`\`\`
+          $(cat /tmp/lessons.txt)
+          \`\`\`"
+          fi
+
+          echo "failed=${FAILED}" >> "$GITHUB_OUTPUT"
+          {
+            echo "body<<REVIEW_BODY_EOF"
+            echo "${BODY}"
+            echo "REVIEW_BODY_EOF"
+          } >> "$GITHUB_OUTPUT"
+
+      - name: Generate reviewer token
+        id: reviewer-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.REVIEWER_01_APP_ID }}
+          private-key: ${{ secrets.REVIEWER_01_PRIVATE_KEY }}
+
+      - name: Approve PR
+        if: steps.checks.outputs.failed == '0'
+        env:
+          GH_TOKEN: ${{ steps.reviewer-token.outputs.token }}
+        run: |
+          gh pr review ${{ github.event.pull_request.number }} \
+            --approve \
+            --body "All automated checks passed (flake8, mypy, validate_courses, validate_lessons)."
+
+      - name: Request changes
+        if: steps.checks.outputs.failed != '0'
+        env:
+          GH_TOKEN: ${{ steps.reviewer-token.outputs.token }}
+        run: |
+          gh pr review ${{ github.event.pull_request.number }} \
+            --request-changes \
+            --body "Automated checks failed. Fix the issues below and push a new commit.${{ steps.checks.outputs.body }}"
