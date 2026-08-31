@@ -69,6 +69,8 @@ def load_credentials(role: str) -> tuple[int, str, int]:
     env_install = os.environ.get(f"{prefix}_INSTALLATION_ID")
 
     if env_app_id and env_key and env_install:
+        # GitHub Actions may encode newlines as literal \n in env vars
+        env_key = env_key.replace("\\n", "\n")
         return int(env_app_id), env_key, int(env_install)
 
     if not CONFIG_PATH.exists():
