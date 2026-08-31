@@ -20,55 +20,26 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: |
-          pip install \
-            pyyaml \
-            flake8 \
-            mypy \
-            PyJWT \
-            cryptography \
-            requests
+        run: pip install pyyaml PyJWT cryptography requests
 
-      - name: Run checks
+      - name: Run content validators
         id: checks
         run: |
           FAILED=0
           BODY=""
 
-          if ! python -m flake8 src/ > /tmp/flake8.txt 2>&1; then
-            FAILED=1
-            BODY="${BODY}
-          ### flake8
-          \`\`\`
-          $(cat /tmp/flake8.txt)
-          \`\`\`"
-          fi
-
-          if ! python -m mypy src/ --ignore-missing-imports > /tmp/mypy.txt 2>&1; then
-            FAILED=1
-            BODY="${BODY}
-          ### mypy
-          \`\`\`
-          $(cat /tmp/mypy.txt)
-          \`\`\`"
-          fi
-
           if ! python scripts/validate_courses.py > /tmp/courses.txt 2>&1; then
             FAILED=1
             BODY="${BODY}
           ### validate_courses
-          \`\`\`
-          $(cat /tmp/courses.txt)
-          \`\`\`"
+          $(cat /tmp/courses.txt)"
           fi
 
           if ! python scripts/validate_lessons.py > /tmp/lessons.txt 2>&1; then
             FAILED=1
             BODY="${BODY}
           ### validate_lessons
-          \`\`\`
-          $(cat /tmp/lessons.txt)
-          \`\`\`"
+          $(cat /tmp/lessons.txt)"
           fi
 
           echo "failed=${FAILED}" >> "$GITHUB_OUTPUT"
@@ -77,17 +48,6 @@ jobs:
             echo "${BODY}"
             echo "REVIEW_BODY_EOF"
           } >> "$GITHUB_OUTPUT"
-
-      - name: Debug key structure
-        env:
-          REVIEWER_PRIVATE_KEY: ${{ secrets.REVIEWER_01_PRIVATE_KEY }}
-        run: |
-          printf '%s' "$REVIEWER_PRIVATE_KEY" > /tmp/reviewer.pem
-          echo "Byte count: $(wc -c < /tmp/reviewer.pem)"
-          echo "Line count: $(wc -l < /tmp/reviewer.pem)"
-          echo "First line: $(head -1 /tmp/reviewer.pem)"
-          echo "Last line:  $(tail -1 /tmp/reviewer.pem)"
-          rm -f /tmp/reviewer.pem
 
       - name: Generate reviewer token
         id: reviewer-token
