@@ -83,14 +83,10 @@ jobs:
           REVIEWER_PRIVATE_KEY: ${{ secrets.REVIEWER_01_PRIVATE_KEY }}
         run: |
           printf '%s' "$REVIEWER_PRIVATE_KEY" > /tmp/reviewer.pem
-          python3 -c "
-key = open('/tmp/reviewer.pem').read()
-print('Length:', len(key))
-print('First 40 chars:', repr(key[:40]))
-print('Last 40 chars:', repr(key[-40:]))
-print('Actual newlines:', key.count(chr(10)))
-print('Literal backslash-n:', key.count(chr(92)+chr(110)))
-"
+          echo "Byte count: $(wc -c < /tmp/reviewer.pem)"
+          echo "Line count: $(wc -l < /tmp/reviewer.pem)"
+          echo "First line: $(head -1 /tmp/reviewer.pem)"
+          echo "Last line:  $(tail -1 /tmp/reviewer.pem)"
           rm -f /tmp/reviewer.pem
 
       - name: Generate reviewer token
