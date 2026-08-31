@@ -26,6 +26,7 @@ Usage:
 import argparse
 import json
 import os
+import re
 import time
 from pathlib import Path
 
@@ -34,6 +35,19 @@ import requests
 
 
 CONFIG_PATH = Path.home() / ".config" / "berean-bots" / "github-apps.json"
+
+
+def _normalize_pem(key: str) -> str:
+    """Fix common env-var encoding issues with PEM private keys."""
+    key = key.replace("\\n", "\n").strip()
+    # If newlines were stripped entirely, reconstruct from header/body/footer
+    if "\n" not in key:
+        m = re.match(r"(-----BEGIN [^-]+-----)(.*)(-----END [^-]+-----)", key)
+        if m:
+            header, body, footer = m.group(1), m.group(2).strip(), m.group(3)
+            wrapped = "\n".join(body[i:i + 64] for i in range(0, len(body), 64))
+            key = f"{header}\n{wrapped}\n{footer}"
+    return key + "\n" if not key.endswith("\n") else key
 
 
 def get_installation_token(app_id: int, private_key: str, installation_id: int) -> str:
@@ -68,10 +82,15 @@ def load_credentials(role: str) -> tuple[int, str, int]:
     env_key = os.environ.get(f"{prefix}_PRIVATE_KEY")
     env_install = os.environ.get(f"{prefix}_INSTALLATION_ID")
 
-    if env_app_id and env_key and env_install:
-        # GitHub Actions may encode newlines as literal \n in env vars
-        env_key = env_key.replace("\\n", "\n")
-        return int(env_app_id), env_key, int(env_install)
+    if env_app_id and env_install:
+        # CI_PRIVATE_KEY_PATH: workflow wrote the key to a temp file (most reliable)
+        env_key_path = os.environ.get(f"{prefix}_PRIVATE_KEY_PATH")
+        if env_key_path:
+            env_key = Path(env_key_path).read_text()
+        elif env_key:
+            env_key = _normalize_pem(env_key)
+        if env_key:
+            return int(env_app_id), env_key, int(env_install)
 
     if not CONFIG_PATH.exists():
         raise SystemExit(

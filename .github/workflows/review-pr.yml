@@ -85,8 +85,12 @@ jobs:
           REVIEWER_PRIVATE_KEY: ${{ secrets.REVIEWER_01_PRIVATE_KEY }}
           REVIEWER_INSTALLATION_ID: ${{ secrets.REVIEWER_01_INSTALLATION_ID }}
         run: |
-          TOKEN=$(python scripts/github_app_token.py --role reviewer)
+          # Write key to a temp file — more reliable than env var for multi-line PEM
+          printf '%s' "$REVIEWER_PRIVATE_KEY" > /tmp/reviewer.pem
+          TOKEN=$(REVIEWER_PRIVATE_KEY_PATH=/tmp/reviewer.pem \
+            python scripts/github_app_token.py --role reviewer)
           echo "token=$TOKEN" >> "$GITHUB_OUTPUT"
+          rm -f /tmp/reviewer.pem
 
       - name: Approve PR
         if: steps.checks.outputs.failed == '0'
