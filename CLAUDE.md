@@ -261,15 +261,18 @@ GH_TOKEN=$(python scripts/github_app_token.py --role author) \
 ```
 
 **Review:** The `.github/workflows/review-pr.yml` action runs automatically on every PR.
-It runs flake8, mypy, validate_courses, and validate_lessons. If all pass, `berean-bots-reviewer[bot]`
-approves the PR. If any fail, it requests changes with details.
+It runs validate_courses and validate_lessons. If all pass, `berean-bots-reviewer[bot]`
+approves the PR. If any fail, it requests changes with details. The reviewer bot's approval is
+informational — the actual merge gate is the **`review` required status check** (GitHub Apps on
+personal repos cannot be granted collaborator status, so their reviews do not count toward
+required-approval counts).
 
-**Merging** (after reviewer approves):
+**Merging** (after the `review` status check passes):
 ```bash
 gh pr merge <n> --squash
 git checkout main && git pull
 ```
-Do not use `--admin` — branch protection enforces reviews for admins too.
+Do not use `--admin` — branch protection enforces `enforce_admins: true`.
 
 **Repo secrets** (set in GitHub → Settings → Secrets → Actions):
 - `AUTHOR_01_APP_ID`, `AUTHOR_01_PRIVATE_KEY`, `AUTHOR_01_INSTALLATION_ID`
