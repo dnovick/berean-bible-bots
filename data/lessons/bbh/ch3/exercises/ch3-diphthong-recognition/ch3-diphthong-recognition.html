@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ch3 Diphthong Recognition Exercise — BBH Chapter 3</title>
+<style>
+  body { font-family: Georgia, serif; max-width: 980px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.heb { direction: rtl; unicode-bidi: embed; font-size: 1.8em; font-weight: bold; width: 6rem; text-align: center; }
+  select.parse-field { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.3em; font-weight: bold; width: 6rem; text-align: center; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    select.parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Ch3 Diphthong Recognition Exercise — Syllabification and Pronunciation</h1>
+<p class="subtitle">BBH Chapter 3 · 12 words</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each Hebrew word, select the diphthong combination it contains, or "None — no diphthong" if it has none.
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All</button>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th style="width:2.2rem">#</th>
+      <th style="width:6rem">Word</th>
+      <th style="width:9rem">Gloss</th>
+      <th>Diphthong</th>
+      <th style="width:5.5rem"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <!-- 1: בַּ֫יִת — correct: Pathach + Yod -->
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">בַּ֫יִת</td>
+    <td>house</td>
+    <td><select class="parse-field" id="sel-1">
+      <option value="">—</option>
+      <option>Pathach + Yod</option>
+      <option>Holem + Yod</option>
+      <option>Shureq + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>None — no diphthong</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">בַּ֫יִת</td>
+    <td>house</td>
+    <td>Pathach + Yod</td>
+    <td></td>
+  </tr>
+
+  <!-- 2: שָׁמַ֫יִם — correct: Pathach + Yod -->
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">שָׁמַ֫יִם</td>
+    <td>heavens</td>
+    <td><select class="parse-field" id="sel-2">
+      <option value="">—</option>
+      <option>Holem + Yod</option>
+      <option>Pathach + Yod</option>
+      <option>None — no diphthong</option>
+      <option>Shureq + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שָׁמַ֫יִם</td>
+    <td>heavens</td>
+    <td>Pathach + Yod</td>
+    <td></td>
+  </tr>
+
+  <!-- 3: חַי — correct: Pathach + Yod -->
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">חַי</td>
+    <td>living, alive</td>
+    <td><select class="parse-field" id="sel-3">
+      <option value="">—</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>Shureq + Yod</option>
+      <option>Pathach + Yod</option>
+      <option>Holem + Yod</option>
+      <option>None — no diphthong</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">חַי</td>
+    <td>living, alive</td>
+    <td>Pathach + Yod</td>
+    <td></td>
+  </tr>
+
+  <!-- 4: גּוֹי — correct: Holem + Yod -->
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">גּוֹי</td>
+    <td>nation</td>
+    <td><select class="parse-field" id="sel-4">
+      <option value="">—</option>
+      <option>Pathach + Yod</option>
+      <option>Holem + Yod</option>
+      <option>Shureq + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>None — no diphthong</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">גּוֹי</td>
+    <td>nation</td>
+    <td>Holem + Yod</td>
+    <td></td>
+  </tr>
+
+  <!-- 5: כְּסוּי — correct: Shureq + Yod -->
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">כְּסוּי</td>
+    <td>a covering</td>
+    <td><select class="parse-field" id="sel-5">
+      <option value="">—</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>Shureq + Yod</option>
+      <option>Pathach + Yod</option>
+      <option>Holem + Yod</option>
+      <option>None — no diphthong</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כְּסוּי</td>
+    <td>a covering</td>
+    <td>Shureq + Yod</td>
+    <td></td>
+  </tr>
+
+  <!-- 6: עָלָיו — correct: Qamets + Yod (before Waw) -->
+  <tr>
+    <td class="num">6</td>
+    <td class="heb">עָלָיו</td>
+    <td>upon him</td>
+    <td><select class="parse-field" id="sel-6">
+      <option value="">—</option>
+      <option>Holem + Yod</option>
+      <option>None — no diphthong</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>Pathach + Yod</option>
+      <option>Shureq + Yod</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">עָלָיו</td>
+    <td>upon him</td>
+    <td>Qamets + Yod (before Waw — the Yod quiesces; pronounced as one vowel + Waw)</td>
+    <td></td>
+  </tr>
+
+  <!-- 7: בָּנָיו — correct: Qamets + Yod (before Waw) -->
+  <tr>
+    <td class="num">7</td>
+    <td class="heb">בָּנָיו</td>
+    <td>his sons</td>
+    <td><select class="parse-field" id="sel-7">
+      <option value="">—</option>
+      <option>Pathach + Yod</option>
+      <option>Shureq + Yod</option>
+      <option>Holem + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>None — no diphthong</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">בָּנָיו</td>
+    <td>his sons</td>
+    <td>Qamets + Yod (before Waw — the Yod quiesces; pronounced as one vowel + Waw)</td>
+    <td></td>
+  </tr>
+
+  <!-- 8: דָּבָר — correct: none -->
+  <tr>
+    <td class="num">8</td>
+    <td class="heb">דָּבָר</td>
+    <td>word</td>
+    <td><select class="parse-field" id="sel-8">
+      <option value="">—</option>
+      <option>Pathach + Yod</option>
+      <option>Holem + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>Shureq + Yod</option>
+      <option>None — no diphthong</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">דָּבָר</td>
+    <td>word</td>
+    <td>none</td>
+    <td></td>
+  </tr>
+
+  <!-- 9: מֶ֫לֶךְ — correct: none -->
+  <tr>
+    <td class="num">9</td>
+    <td class="heb">מֶ֫לֶךְ</td>
+    <td>king</td>
+    <td><select class="parse-field" id="sel-9">
+      <option value="">—</option>
+      <option>Holem + Yod</option>
+      <option>Shureq + Yod</option>
+      <option>None — no diphthong</option>
+      <option>Pathach + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מֶ֫לֶךְ</td>
+    <td>king</td>
+    <td>none</td>
+    <td></td>
+  </tr>
+
+  <!-- 10: תּוֹרָה — correct: none (Holem+Waw, no Yod) -->
+  <tr>
+    <td class="num">10</td>
+    <td class="heb">תּוֹרָה</td>
+    <td>law, instruction</td>
+    <td><select class="parse-field" id="sel-10">
+      <option value="">—</option>
+      <option>Holem + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>Pathach + Yod</option>
+      <option>None — no diphthong</option>
+      <option>Shureq + Yod</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">תּוֹרָה</td>
+    <td>law, instruction</td>
+    <td>none (Holem + Waw, but no Yod)</td>
+    <td></td>
+  </tr>
+
+  <!-- 11: בָּנִים — correct: none (Hireq Yod = long i) -->
+  <tr>
+    <td class="num">11</td>
+    <td class="heb">בָּנִים</td>
+    <td>sons</td>
+    <td><select class="parse-field" id="sel-11">
+      <option value="">—</option>
+      <option>Shureq + Yod</option>
+      <option>Pathach + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+      <option>Holem + Yod</option>
+      <option>None — no diphthong</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">בָּנִים</td>
+    <td>sons</td>
+    <td>none (Hireq + Yod marks a plain long <em>i</em>, not a diphthong)</td>
+    <td></td>
+  </tr>
+
+  <!-- 12: שָׁלוֹם — correct: none -->
+  <tr>
+    <td class="num">12</td>
+    <td class="heb">שָׁלוֹם</td>
+    <td>peace</td>
+    <td><select class="parse-field" id="sel-12">
+      <option value="">—</option>
+      <option>Pathach + Yod</option>
+      <option>None — no diphthong</option>
+      <option>Holem + Yod</option>
+      <option>Shureq + Yod</option>
+      <option>Qamets + Yod (before Waw)</option>
+    </select></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שָׁלוֹם</td>
+    <td>peace</td>
+    <td>none</td>
+    <td></td>
+  </tr>
+
+  </tbody>
+</table>
+
+<script>
+  const ROWS = 12;
+  function tog(n) {
+    const r = document.getElementById('ans-' + n);
+    const btn = r.previousElementSibling.querySelector('button.rbtn');
+    const vis = r.style.display === 'table-row';
+    r.style.display = vis ? 'none' : 'table-row';
+    btn.classList.toggle('on', !vis);
+  }
+  function showAll() {
+    for (let i = 1; i <= ROWS; i++) {
+      document.getElementById('ans-' + i).style.display = 'table-row';
+      document.getElementById('ans-' + i).previousElementSibling.querySelector('button.rbtn').classList.add('on');
+    }
+  }
+  function hideAll() {
+    for (let i = 1; i <= ROWS; i++) {
+      document.getElementById('ans-' + i).style.display = 'none';
+      document.getElementById('ans-' + i).previousElementSibling.querySelector('button.rbtn').classList.remove('on');
+    }
+  }
+  function clearAll() {
+    document.querySelectorAll('select.parse-field').forEach(s => s.value = '');
+    hideAll();
+  }
+</script>
+
+</body>
+</html>

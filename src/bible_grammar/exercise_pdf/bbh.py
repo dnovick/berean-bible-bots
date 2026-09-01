@@ -3559,6 +3559,39 @@ def build_ch3_daghesh_shewa(out_dir: Optional[str] = None) -> str:
     )
 
 
+def build_ch3_diphthong_recognition(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch3DiphthongRecognitionExercise,
+        'Chapter 3 — Diphthong Recognition Exercise',
+        'Hebrew Diphthongs — Pathach/Qamets/Holem/Shureq + Yod',
+        ['bbh', 'ch3', 'exercises', 'ch3-diphthong-recognition'],
+        'ch3-diphthong-recognition.pdf',
+        out_dir,
+    )
+
+
+def build_ch3_qamets_hatuf(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch3QametsHatufExercise,
+        'Chapter 3 — Qamets vs. Qamets Hatuf Exercise',
+        'Hebrew Qamets (long a) vs. Qamets Hatuf (short o) Discrimination',
+        ['bbh', 'ch3', 'exercises', 'ch3-qamets-hatuf'],
+        'ch3-qamets-hatuf.pdf',
+        out_dir,
+    )
+
+
+def build_ch3_furtive_quiescent(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch3FurtiveQuiescentExercise,
+        'Chapter 3 — Furtive Pathach and Quiescent Alef Exercise',
+        'Hebrew Furtive Pathach vs. Quiescent א Identification',
+        ['bbh', 'ch3', 'exercises', 'ch3-furtive-quiescent'],
+        'ch3-furtive-quiescent.pdf',
+        out_dir,
+    )
+
+
 # ---------------------------------------------------------------------------
 
 
@@ -3607,6 +3640,134 @@ class Ch3DagheshShewaExercise(ExercisePDF):
             headers=['#', 'Word', 'Daghesh', 'Shewa'],
             rows=rows,
             col_ratios=[0.05, 0.12, 0.49, 0.34],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+class Ch3DiphthongRecognitionExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each Hebrew word, identify the diphthong combination it '
+            'contains — Pathach + Yod, Qamets + Yod (before Waw), Holem + '
+            'Yod, Shureq + Yod — or "none" if it has no diphthong.'
+        )
+        rows = [
+            ['1', 'בַּ֫יִת', 'house', ''],
+            ['2', 'שָׁמַ֫יִם', 'heavens', ''],
+            ['3', 'חַי', 'living, alive', ''],
+            ['4', 'גּוֹי', 'nation', ''],
+            ['5', 'כְּסוּי', 'a covering', ''],
+            ['6', 'עָלָיו', 'upon him', ''],
+            ['7', 'בָּנָיו', 'his sons', ''],
+            ['8', 'דָּבָר', 'word', ''],
+            ['9', 'מֶ֫לֶךְ', 'king', ''],
+            ['10', 'תּוֹרָה', 'law, instruction', ''],
+            ['11', 'בָּנִים', 'sons', ''],
+            ['12', 'שָׁלוֹם', 'peace', ''],
+        ]
+        ans = [
+            ['1', 'בַּ֫יִת', 'house', 'Pathach + Yod'],
+            ['2', 'שָׁמַ֫יִם', 'heavens', 'Pathach + Yod'],
+            ['3', 'חַי', 'living, alive', 'Pathach + Yod'],
+            ['4', 'גּוֹי', 'nation', 'Holem + Yod'],
+            ['5', 'כְּסוּי', 'a covering', 'Shureq + Yod'],
+            ['6', 'עָלָיו', 'upon him', 'Qamets + Yod (before Waw — Yod quiesces)'],
+            ['7', 'בָּנָיו', 'his sons', 'Qamets + Yod (before Waw — Yod quiesces)'],
+            ['8', 'דָּבָר', 'word', 'none'],
+            ['9', 'מֶ֫לֶךְ', 'king', 'none'],
+            ['10', 'תּוֹרָה', 'law, instruction', 'none (Holem + Waw, no Yod)'],
+            ['11', 'בָּנִים', 'sons', 'none (Hireq Yod = long i, not a diphthong)'],
+            ['12', 'שָׁלוֹם', 'peace', 'none'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Word', 'Gloss', 'Diphthong'],
+            rows=rows,
+            col_ratios=[0.05, 0.14, 0.24, 0.57],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+class Ch3QametsHatufExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'Qamets (long a) and Qamets Hatuf (short o) are written with the '
+            'identical symbol. For each item, classify the marked vowel as '
+            'Qamets or Qamets Hatuf. Qamets Hatuf occurs only in a closed, '
+            'unaccented syllable; a Metheg always confirms Qamets, even in '
+            'that environment.'
+        )
+        rows = [
+            ['1', 'חָכְמָה', 'vowel under ח (wisdom)', ''],
+            ['2', 'קָדוֹשׁ', 'vowel under ק (holy)', ''],
+            ['3', 'דָּבָר', 'vowel under ב, final syllable (word)', ''],
+            ['4', 'כָּל־', 'vowel under כ (all of, bound form)', ''],
+            ['5', 'אָֽמְרָה', 'vowel under א, with Metheg (she said)', ''],
+            ['6', 'מָ', 'open, pretonic syllable', ''],
+            ['7', 'מָ', 'closed, unaccented syllable', ''],
+            ['8', 'מָ', 'closed, accented syllable', ''],
+            ['9', 'מָ', 'open, accented syllable', ''],
+            ['10', 'מָ', 'closed, unaccented syllable, with Metheg', ''],
+        ]
+        ans = [
+            ['1', 'חָכְמָה', 'vowel under ח', 'Qamets Hatuf (closed, unaccented)'],
+            ['2', 'קָדוֹשׁ', 'vowel under ק', 'Qamets (open, pretonic)'],
+            ['3', 'דָּבָר', 'vowel under ב', 'Qamets (closed, accented)'],
+            ['4', 'כָּל־', 'vowel under כ', 'Qamets Hatuf (closed, unaccented, bound form)'],
+            ['5', 'אָֽמְרָה', 'vowel under א', 'Qamets (Metheg confirms it)'],
+            ['6', 'מָ', 'open, pretonic', 'Qamets'],
+            ['7', 'מָ', 'closed, unaccented', 'Qamets Hatuf'],
+            ['8', 'מָ', 'closed, accented', 'Qamets'],
+            ['9', 'מָ', 'open, accented', 'Qamets'],
+            ['10', 'מָ', 'closed, unaccented, with Metheg', 'Qamets (Metheg overrides)'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Word / Form', 'Target', 'Classification'],
+            rows=rows,
+            col_ratios=[0.05, 0.14, 0.42, 0.39],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+class Ch3FurtiveQuiescentExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each Hebrew word, classify it as Furtive Pathach, '
+            'Quiescent א, or neither.'
+        )
+        rows = [
+            ['1', 'בֹּרֵחַ', 'fleeing', ''],
+            ['2', 'נֹטֵעַ', 'planting', ''],
+            ['3', 'רָקִיעַ', 'expanse, firmament', ''],
+            ['4', 'רוּחַ', 'spirit, wind', ''],
+            ['5', 'חַטָּאת', 'sin', ''],
+            ['6', 'רֹאשׁ', 'head', ''],
+            ['7', 'מָצָא', 'he found', ''],
+            ['8', 'דָּבָר', 'word', ''],
+            ['9', 'מֶ֫לֶךְ', 'king', ''],
+            ['10', 'שָׁלוֹם', 'peace', ''],
+        ]
+        ans = [
+            ['1', 'בֹּרֵחַ', 'fleeing', 'Furtive Pathach (final ח)'],
+            ['2', 'נֹטֵעַ', 'planting', 'Furtive Pathach (final ע)'],
+            ['3', 'רָקִיעַ', 'expanse, firmament', 'Furtive Pathach (final ע)'],
+            ['4', 'רוּחַ', 'spirit, wind', 'Furtive Pathach (final ח; monosyllabic)'],
+            ['5', 'חַטָּאת', 'sin', 'Quiescent א (not counted in syllabification)'],
+            ['6', 'רֹאשׁ', 'head', 'Quiescent א (between Holem and Shin)'],
+            ['7', 'מָצָא', 'he found', 'neither (final א carries its own vowel, Qamets)'],
+            ['8', 'דָּבָר', 'word', 'neither'],
+            ['9', 'מֶ֫לֶךְ', 'king', 'neither'],
+            ['10', 'שָׁלוֹם', 'peace', 'neither'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Word', 'Gloss', 'Classification'],
+            rows=rows,
+            col_ratios=[0.05, 0.14, 0.24, 0.57],
             heb_cols=[1],
             show_answers=True,
             answer_rows=ans,
