@@ -20,11 +20,23 @@
 
 Hebrew words are usually accented on the **last syllable**. When a word is accented on a different syllable, an accent mark appears over that syllable (e.g., סֵ֫פֶר — accent on the first syllable).
 
+This accent mark (a raised stroke called **Ole**, ֫) is a genuine Masoretic accent sign — but in the printed Hebrew Bible it functions as part of the full cantillation system (marking syntax and chant, and appearing on essentially every word of a verse, not only words with non-final stress). Grammars such as BBH repurpose this same symbol as a simplified stress marker, printed only over isolated citation and vocabulary forms — and only when the stress falls somewhere other than the last syllable — as a teaching aid. You will not find this specific "mark only the non-final stress" convention in a printed OT text; there, every word carries an accent from the full te'amim system, chosen by syntax and cantillation rather than this simplified rule.
+
 | Position | Name | Description | Example |
 |---|---|---|---|
 | Accented syllable | **Tonic** | The stressed syllable | בָר in דָּבָר |
 | One before tonic | **Pretonic** | Immediately before accent | דָּ in דָּבָר |
 | Two before tonic | **Propretonic** | Two syllables before accent | דְּ in דְּבָרִים |
+
+Hebrew grammars also use a second, related set of terms for syllable position — this time counted from the **end of the word**, regardless of where the accent falls:
+
+| Position | Name | Description | Example |
+|---|---|---|---|
+| Last syllable | **Ultimate** (ultima) | The final syllable of the word | בָר in דָּבָר |
+| Second-to-last syllable | **Penultimate** (penult) | One syllable before the ultima | דָּ in דָּבָר |
+| Third-to-last syllable | **Antepenultimate** (antepenult) | Two syllables before the ultima | דְּ in דְּבָרִים |
+
+Because Hebrew words are usually accented on the last syllable, the two sets of terms usually line up: ultima = tonic, penult = pretonic, antepenult = propretonic. But they are not the same thing — tonic/pretonic/propretonic are defined **relative to the accent**, while ultimate/penultimate/antepenultimate are defined **relative to the end of the word**. When the accent falls elsewhere, the two systems diverge: in סֵ֫פֶר (two syllables, accented on the first), the accented syllable is the **penult**, not the ultima — so here the tonic syllable and the penultimate syllable are the same syllable, while the ultima (פֶר) is unaccented.
 
 ---
 
