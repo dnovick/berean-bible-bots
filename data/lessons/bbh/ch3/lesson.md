@@ -113,12 +113,16 @@ When **א** appears without a vowel, it is quiescent (silent) and is **not count
 
 ### Hebrew Diphthongs (§3.10)
 
-Two vowel-consonant clusters function as a **single unit** and make the syllable **closed**.
+A diphthong is formed when a vowel and **י** combine into a single syllable, with the Yod functioning as a glide rather than a full consonant.
 
-| Type | Pattern | Example | Syllabification |
-|---|---|---|---|
-| AY diphthong | ַיִ | שָׁמַ֫יִם | שָׁ׀מַ֫יִם |
-| AW diphthong | ָוֶ | מָ֫וֶת | מָ֫וֶת (monosyllabic) |
+| Combination | Example | Pronunciation |
+|---|---|---|
+| Pathach + Yod | בַּ֫יִת (house) | the y in cry |
+| Qamets + Yod | טָי | the y in sky |
+| Holem + Yod | גּוֹי (nation) | the oy in boy |
+| Shureq + Yod | כְּסוּי (a covering) | the uey in gluey |
+
+**NOTE:** Qamets + Yod almost always occurs immediately before a Waw, as in עָלָיו ("upon him") or בָּנָיו ("his sons"). In that environment, the Yod is not pronounced separately — the whole ending is pronounced as a single vowel followed by the Waw.
 
 ---
 
