@@ -243,6 +243,16 @@ CI runs the validator automatically on every push that touches `data/courses/**`
 
 ---
 
+## Autonomous Action Policy
+
+Agent session behavior is governed by `docs/policies/autonomous-actions.md`, which defines the Phase 1/2/3 trust matrix for this project (aligned with Foundry OA §6). Read it to understand which actions require owner approval (Phase 1) vs. proceed-then-review (Phase 2). Key points:
+
+- **Phase 1 (always ask first):** PR creation, AI code review, PR merge, branch deletion, any action affecting billing/secrets/permissions.
+- **Phase 2 (proceed, owner reviews after):** content file writes, script execution, git staging/commit/push on feature branches, branch creation, GitHub issue creation.
+- **Permanently owner-only:** pushing to `main`, merging without both status checks green.
+
+---
+
 ## Git Workflow
 
 - **All changes go on a feature branch + PR.** Never push directly to main — branch protection is enabled.

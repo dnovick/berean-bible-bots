@@ -76,6 +76,35 @@ These are not candidates for promotion — they are owner-only by design.
 
 ---
 
+## Claude Code Settings Encoding
+
+Claude Code's `permissions.allow` list in `.claude/settings.local.json` is the mechanical layer that suppresses prompts for Phase 2 actions. It is a **usability optimization**, not the primary safety mechanism — `CLAUDE.md` behavioral rules and agent judgment are the actual enforcement.
+
+### How the layers interact
+
+| Layer | Role |
+|---|---|
+| `permissions.allow` | Skips the interactive prompt for pre-approved commands |
+| `CLAUDE.md` behavioral rules | Defines what the agent *should* do (enforced by judgment) |
+| `docs/policies/autonomous-actions.md` | The durable policy record (this file) |
+
+### Current alignment (evaluated 2026-09-01)
+
+Phase 2 actions are broadly covered by the allow list (`git *`, `python *`, `gh issue *`, `flake8 *`, `mypy *`). One misalignment was found and corrected:
+
+**`Bash(gh pr *)` was too broad** — it allowed `gh pr create` and `gh pr merge` without prompting, contradicting the Phase 1 policy for those actions. Fixed by replacing it with the Phase 2-only sub-commands:
+- `Bash(gh pr checks *)` — checking CI status (Phase 2)
+- `Bash(gh pr view *)` — reading PR details (Phase 2)
+- `Bash(gh pr list *)` — listing PRs (Phase 2)
+
+`gh pr create`, `gh pr merge`, and `gh pr review` remain outside the allow list and will prompt for approval (Phase 1 behavior).
+
+### Maintenance
+
+When a new Phase 2 action is approved (promotion criteria met — see above), add it to `permissions.allow` via the `update-config` skill. When an action is demoted back to Phase 1, remove it from the allow list.
+
+---
+
 ## Review Cadence
 
 - **Per-session:** Claude surfaces any Phase-1 actions needed and waits for explicit approval before proceeding.
