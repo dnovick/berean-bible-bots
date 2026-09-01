@@ -159,6 +159,7 @@ Key rules (always enforced):
 - Exercises live in `exercises/<name>/` — see exercise standards below
 - Use `scripts/new_session.py` to scaffold sessions — never hand-write `session.yml`
 - Run `scripts/validate_courses.py` before committing course content changes
+- No inline Vocabulary or Practice section on the lesson page itself — those live in the vocab Anki deck and `exercises.md`, respectively (see full spec)
 
 ## Exercise Standards
 

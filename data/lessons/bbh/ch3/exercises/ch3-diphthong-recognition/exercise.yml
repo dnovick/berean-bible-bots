@@ -1,0 +1,6 @@
+name: "Ch3 Diphthong Recognition"
+description: >
+  Identify the diphthong combination (Pathach + Yod, Qamets + Yod before Waw,
+  Holem + Yod, Shureq + Yod, or none) in 12 Hebrew words, reinforcing the
+  reworked §3.10 diphthong table and the Qamets+Yod-before-Waw quiescence
+  rule.

@@ -18,13 +18,23 @@
 
 ## Syllable Accent (§3.3–3.4)
 
-Hebrew words are usually accented on the **last syllable**. When a word is accented on a different syllable, an accent mark appears over that syllable (e.g., סֵ֫פֶר — accent on the first syllable).
+Hebrew words are usually accented on the **last syllable**. When a word is accented on a different syllable, an accent mark appears over that syllable (e.g., סֵ֫פֶר — accent on the first syllable). **NOTE:** This mark is a convention used by grammars such as BBH to help students locate the stress — it is not how accentuation works in the Masoretic text itself.
 
 | Position | Name | Description | Example |
 |---|---|---|---|
 | Accented syllable | **Tonic** | The stressed syllable | בָר in דָּבָר |
 | One before tonic | **Pretonic** | Immediately before accent | דָּ in דָּבָר |
 | Two before tonic | **Propretonic** | Two syllables before accent | דְּ in דְּבָרִים |
+
+Hebrew grammars also use a second, related set of terms for syllable position — this time counted from the **end of the word**, regardless of where the accent falls:
+
+| Position | Name | Description | Example |
+|---|---|---|---|
+| Last syllable | **Ultimate** (ultima) | The final syllable of the word | בָר in דָּבָר |
+| Second-to-last syllable | **Penultimate** (penult) | One syllable before the ultima | דָּ in דָּבָר |
+| Third-to-last syllable | **Antepenultimate** (antepenult) | Two syllables before the ultima | דְּ in דְּבָרִים |
+
+Because Hebrew words are usually accented on the last syllable, the two sets of terms usually line up: ultima = tonic, penult = pretonic, antepenult = propretonic. But they are not the same thing — tonic/pretonic/propretonic are defined **relative to the accent**, while ultimate/penultimate/antepenultimate are defined **relative to the end of the word**. When the accent falls elsewhere, the two systems diverge: in סֵ֫פֶר (two syllables, accented on the first), the accented syllable is the **penult**, not the ultima — so here the tonic syllable and the penultimate syllable are the same syllable, while the ultima (פֶר) is unaccented.
 
 ---
 
@@ -103,12 +113,18 @@ When **א** appears without a vowel, it is quiescent (silent) and is **not count
 
 ### Hebrew Diphthongs (§3.10)
 
-Two vowel-consonant clusters function as a **single unit** and make the syllable **closed**.
+A diphthong is formed when a vowel and **י** combine into a single syllable, with the Yod functioning as a glide rather than a full consonant.
 
-| Type | Pattern | Example | Syllabification |
-|---|---|---|---|
-| AY diphthong | ַיִ | שָׁמַ֫יִם | שָׁ׀מַ֫יִם |
-| AW diphthong | ָוֶ | מָ֫וֶת | מָ֫וֶת (monosyllabic) |
+| Combination | Example | Pronunciation |
+|---|---|---|
+| Pathach + Yod | בַּ֫יִת (house) | the y in cry |
+| Qamets + Yod | טָי\* | the y in sky |
+| Holem + Yod | גּוֹי (nation) | the oy in boy |
+| Shureq + Yod | כְּסוּי (a covering) | the uey in gluey |
+
+\* Illustrative only (ט as a neutral carrier consonant) — a standalone Qamets+Yod diphthong not followed by a Waw is not attested in the Hebrew Bible; see the note below.
+
+**NOTE:** Qamets + Yod almost always occurs immediately before a Waw, as in עָלָיו ("upon him") or בָּנָיו ("his sons"). In that environment, the Yod is not pronounced separately — the whole ending is pronounced as a single vowel followed by the Waw.
 
 ---
 
@@ -128,39 +144,3 @@ Two vowel-consonant clusters function as a **single unit** and make the syllable
 12. Furtive Pathach is not a full vowel and is not counted in syllabification.
 13. When א occurs without a vowel, it is quiescent.
 14. Syllables containing the diphthong (ַיִ) are closed because they end with a consonant.
-
----
-
-## Vocabulary (§3.12)
-
-| Hebrew | Definition | Freq. |
-|---|---|---|
-| אָב | father, ancestor | 1,210 |
-| אָדוֹן | lord, master; (of God 439×) אֲדֹנָי | 774 |
-| אָדָם | man, mankind, humankind | 546 |
-| אֲדָמָה | ground, land, earth | 222 |
-| אָח | brother | 629 |
-| אָחוֹת | sister, relative, loved one | 119 |
-| אִישׁ | man, husband; (mp) אֲנָשִׁים | 2,188 |
-| אֵל | God, god | 237 |
-| אֱלֹהִים | God, gods | 2,602 |
-| אֵם | (fs) mother | 220 |
-| אֶ֫רֶץ | (fs) land, earth, ground | 2,505 |
-| אִשָּׁה | woman, wife; (fp) נָשִׁים | 781 |
-| בַּ֫יִת | (ms) house, household, dynasty | 2,047 |
-| בֵּן | son; (mp) בָּנִים | 4,941 |
-| בַּת | daughter; (fp) בָּנוֹת | 587 |
-| דָּבָר | word, matter, thing | 1,454 |
-| יוֹם | day; (mp) יָמִים | 2,301 |
-| לַ֫יְלָה | (ms) night | 234 |
-| נַ֫עַר | boy, youth, servant | 240 |
-| נַעֲרָה | young girl, maidservant | 76 |
-
----
-
-## Practice
-
-| Exercise | Description |
-|---|---|
-| [Daghesh and Shewa](exercises/ch3-daghesh-shewa/README.md) | 15 words — identify each Daghesh (Forte/Lene) and Shewa (Silent/Vocal) |
-| [Syllable Division](exercises/ch3-syllable-division/README.md) | 20 words — divide syllables, label types (O/C), mark stress, identify Qamets Hatuf |

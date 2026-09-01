@@ -46,10 +46,12 @@ The `README.md` **is** the lesson — there is no separate lesson `.md` file. Th
 2. Learning objectives
 3. Grammatical exposition with examples
 4. Paradigm tables (may link to paradigm files)
-5. Vocabulary list (if applicable)
-6. Links to exercises (by subdirectory name)
 
 Do not create a separate `lesson.md` alongside `README.md`. If a `lesson.md` exists from earlier work, its content should be merged into `README.md`.
+
+**Never include an inline Vocabulary section on the lesson page itself.** Chapter vocabulary lives only in the vocab Anki deck (`ch<N>-vocab-deck.*`, linked from the lesson's Flashcard Decks resource) — duplicating it as a table on the lesson page is redundant and drifts out of sync with the deck.
+
+**Never include an inline Practice section (a table of exercise links) on the lesson page itself.** Exercises already have their own listing at `exercises.md`, linked from the lesson's Exercises resource — duplicating the list on the lesson page is redundant.
 
 ---
 
