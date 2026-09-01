@@ -108,11 +108,40 @@ def load_credentials(role: str) -> tuple[int, str, int]:
     return int(config["app_id"]), private_key_path.read_text(), int(config["installation_id"])
 
 
+def git_author_string(role: str) -> str:
+    """Return the git --author string for the given role's GitHub App bot.
+
+    Format: 'slug[bot] <installation_id+slug[bot]@users.noreply.github.com>'
+    GitHub maps this email to the App installation, so commits show as the bot.
+
+    Requires 'slug' field in ~/.config/berean-bots/github-apps.json.
+    """
+    if not CONFIG_PATH.exists():
+        raise SystemExit(f"Config file not found: {CONFIG_PATH}")
+    config = json.loads(CONFIG_PATH.read_text())[role]
+    slug = config.get("slug")
+    if not slug:
+        raise SystemExit(
+            f"No 'slug' field for role '{role}' in {CONFIG_PATH}. "
+            "Add the GitHub App slug (e.g. 'bbb-author-01') to the config."
+        )
+    installation_id = config["installation_id"]
+    bot_name = f"{slug}[bot]"
+    bot_email = f"{installation_id}+{slug}[bot]@users.noreply.github.com"
+    return f"{bot_name} <{bot_email}>"
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description="Generate a GitHub App installation token.")
     parser.add_argument("--role", choices=["author", "reviewer"], required=True,
                         help="Which app to generate a token for.")
+    parser.add_argument("--git-author", action="store_true",
+                        help="Print the git --author string for this role's bot instead of a token.")
     args = parser.parse_args()
+
+    if args.git_author:
+        print(git_author_string(args.role), end="")
+        return
 
     app_id, private_key, installation_id = load_credentials(args.role)
     token = get_installation_token(app_id, private_key, installation_id)

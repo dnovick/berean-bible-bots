@@ -250,9 +250,26 @@ CI runs the validator automatically on every push that touches `data/courses/**`
 - **After non-trivial changes:** commit and push automatically — do not ask first.
 - **GitHub issues:** always create with `--assignee dnovick`.
 
+### Agent Commit Identity
+
+Commits made by Claude or another agent must use the author bot identity so they appear as `bbb-author-01[bot]` on GitHub rather than David Novick:
+
+```bash
+# Get the --author string:
+BOT_AUTHOR=$(python scripts/github_app_token.py --role author --git-author)
+
+# Use it when committing:
+git commit --author="$BOT_AUTHOR" -m "$(cat <<'EOF'
+Commit message here.
+EOF
+)"
+```
+
+This works because GitHub maps the noreply email (`<installation-id>+<slug>[bot]@users.noreply.github.com`) to the App installation. Owner-made commits (outside agent sessions) use the default git config and correctly show as David Novick.
+
 ### PR Workflow (GitHub App identities)
 
-PRs are created by `berean-bots-author[bot]` and reviewed by `berean-bots-reviewer[bot]`.
+PRs are created by `bbb-author-01[bot]` and reviewed by `bbb-reviewer-01[bot]`.
 
 **Opening a PR:**
 ```bash
@@ -261,7 +278,7 @@ GH_TOKEN=$(python scripts/github_app_token.py --role author) \
 ```
 
 **Automated review:** The `.github/workflows/review-pr.yml` action runs automatically on every PR.
-It runs validate_courses and validate_lessons. If all pass, `berean-bots-reviewer[bot]`
+It runs validate_courses and validate_lessons. If all pass, `bbb-reviewer-01[bot]`
 approves the PR. If any fail, it requests changes with details. The reviewer bot's approval is
 informational — the actual merge gate is the **`review` required status check** (GitHub Apps on
 personal repos cannot be granted collaborator status, so their reviews do not count toward
@@ -273,10 +290,10 @@ via `bbb-reviewer-01[bot]`, and posts a `codex-review` commit status (success or
 Branch protection requires this status to be green before merging.
 ```bash
 source .venv/bin/activate
-python scripts/ai_review.py --pr <n>                        # uses claude-opus-5 by default
-python scripts/ai_review.py --pr <n> --model claude-sonnet-5  # use a different model
+env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n>                        # uses claude-opus-5 by default
+env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n> --model claude-sonnet-5  # use a different model
 ```
-Requires `ANTHROPIC_API_KEY` in the environment.
+Credentials: uses Anthropic SDK auto-discovery (Claude Code installation). Do NOT set `ANTHROPIC_API_KEY` if you have an identity-linked key — unset it with `env -u ANTHROPIC_API_KEY`.
 
 **Merging** (after both `review` and `codex-review` status checks pass):
 ```bash
