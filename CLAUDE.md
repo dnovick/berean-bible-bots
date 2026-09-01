@@ -160,6 +160,8 @@ Lessons live under `data/lessons/bbh/ch<N>/` (BBH), `data/lessons/bbg/ch<N>/` (B
 
 **Never include an inline Vocabulary section on the lesson page itself.** Chapter vocabulary lives only in the vocab Anki deck (`ch<N>-vocab-deck.*`, linked from the lesson's Flashcard Decks resource) — duplicating it as a table on the lesson page is redundant and drifts out of sync with the deck.
 
+**Never include an inline Practice section (a table of exercise links) on the lesson page itself.** Exercises already have their own listing at `exercises.md`, linked from the lesson's Exercises resource — duplicating the list on the lesson page is redundant.
+
 Each exercise subdirectory (`exercises/<name>/`) contains exactly **three formats**:
 - `<name>.md` — static reference copy with answer key at the bottom
 - `<name>.html` — self-contained interactive HTML (fillable fields, ▶ Answer per row, Show All / Hide All / Clear All)
