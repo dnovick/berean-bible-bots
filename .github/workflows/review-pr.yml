@@ -56,6 +56,31 @@ jobs:
           $(cat /tmp/lessons.txt)"
           fi
 
+          # validate_exercises: errors fail, warnings are informational
+          if ! python scripts/validate_exercises.py > /tmp/exercises.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### validate_exercises
+          $(cat /tmp/exercises.txt)"
+          fi
+
+          # validate_nav: all missing nav refs are errors
+          if ! python scripts/validate_nav.py > /tmp/nav.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### validate_nav
+          $(cat /tmp/nav.txt)"
+          fi
+
+          # validate_links: warnings only (non-blocking); use --strict locally to fail
+          python scripts/validate_links.py > /tmp/links.txt 2>&1 || true
+          LINKS_WARNS=$(grep -c "^WARN" /tmp/links.txt || true)
+          if [ "${LINKS_WARNS}" -gt 0 ]; then
+            BODY="${BODY}
+          ### validate_links (informational — ${LINKS_WARNS} broken link(s))
+          $(tail -5 /tmp/links.txt)"
+          fi
+
           echo "failed=${FAILED}" >> "$GITHUB_OUTPUT"
           {
             echo "body<<REVIEW_BODY_EOF"
@@ -83,7 +108,7 @@ jobs:
         run: |
           gh pr review ${{ github.event.pull_request.number }} \
             --approve \
-            --body "All automated checks passed: flake8, mypy, validate_courses, validate_lessons."
+            --body "All automated checks passed: flake8, mypy, validate_courses, validate_lessons, validate_exercises, validate_nav."
 
       - name: Request changes
         if: steps.checks.outputs.failed != '0'
