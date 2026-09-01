@@ -297,10 +297,13 @@ Credentials: uses Anthropic SDK auto-discovery (Claude Code installation). Do NO
 
 **Merging** (after both `review` and `codex-review` status checks pass):
 ```bash
-gh pr merge <n> --squash
+# When merging as an agent (squash commit shows as bbb-author-01[bot]):
+GH_TOKEN=$(python scripts/github_app_token.py --role author) \
+  gh pr merge <n> --squash
 git checkout main && git pull
 ```
 Do not use `--admin` — branch protection enforces `enforce_admins: true`.
+Owner-initiated merges (from the GitHub UI or using the personal token) will show as David Novick, which is correct.
 
 **Repo secrets** (set in GitHub → Settings → Secrets → Actions):
 - `AUTHOR_01_APP_ID`, `AUTHOR_01_PRIVATE_KEY`, `AUTHOR_01_INSTALLATION_ID`
