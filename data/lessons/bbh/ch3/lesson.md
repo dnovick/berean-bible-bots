@@ -18,9 +18,7 @@
 
 ## Syllable Accent (§3.3–3.4)
 
-Hebrew words are usually accented on the **last syllable**. When a word is accented on a different syllable, an accent mark appears over that syllable (e.g., סֵ֫פֶר — accent on the first syllable).
-
-This mark is a convention used by grammars such as BBH to help students locate the stress — it is not how accentuation works in the Masoretic Text itself.
+Hebrew words are usually accented on the **last syllable**. When a word is accented on a different syllable, an accent mark appears over that syllable (e.g., סֵ֫פֶר — accent on the first syllable). **NOTE:** This mark is a convention used by grammars such as BBH to help students locate the stress — it is not how accentuation works in the Masoretic text itself.
 
 | Position | Name | Description | Example |
 |---|---|---|---|
