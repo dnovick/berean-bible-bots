@@ -19,6 +19,8 @@ This document specifies conventions for displaying biblical language text (Hebre
 
 This applies to all output surfaces: Markdown files, HTML exercises, PDFs, Matplotlib chart labels, and Anki decks.
 
+**Exception — pronunciation aids:** when a lesson is specifically teaching a pronunciation concept (e.g. explaining a diphthong or vowel sound), a brief illustrative English sound-alike is fine — e.g. "the AY diphthong sounds like the *oy* in *boy*." This is a pronunciation aid tied to one specific teaching point, not a systematic transliteration column/row applied to every word in a table.
+
 ---
 
 ## Table Format
