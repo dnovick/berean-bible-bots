@@ -260,14 +260,25 @@ GH_TOKEN=$(python scripts/github_app_token.py --role author) \
   gh pr create --title "..." --body "..."
 ```
 
-**Review:** The `.github/workflows/review-pr.yml` action runs automatically on every PR.
+**Automated review:** The `.github/workflows/review-pr.yml` action runs automatically on every PR.
 It runs validate_courses and validate_lessons. If all pass, `berean-bots-reviewer[bot]`
 approves the PR. If any fail, it requests changes with details. The reviewer bot's approval is
 informational — the actual merge gate is the **`review` required status check** (GitHub Apps on
 personal repos cannot be granted collaborator status, so their reviews do not count toward
 required-approval counts).
 
-**Merging** (after the `review` status check passes):
+**AI code review (manual):** Run `scripts/codex_review.py` against the PR before merging.
+It sends the diff to GPT-4o, checks nine project-specific rules, posts a review comment via
+`bbb-reviewer-01[bot]`, and posts a `codex-review` commit status (success or failure).
+Branch protection requires this status to be green before merging.
+```bash
+source .venv/bin/activate
+python scripts/codex_review.py --pr <n>          # uses gpt-4o by default
+python scripts/codex_review.py --pr <n> --model o3  # use a different model
+```
+Requires `OPENAI_API_KEY` in the environment.
+
+**Merging** (after both `review` and `codex-review` status checks pass):
 ```bash
 gh pr merge <n> --squash
 git checkout main && git pull
