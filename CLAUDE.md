@@ -264,7 +264,7 @@ See `scripts/github_app_token.py` for the config file format.
 Full specification: **[`mkdocs_src/standards/language.md`](mkdocs_src/standards/language.md)**
 
 Key rules (always enforced):
-- **No transliterations** for Hebrew, Aramaic, or Greek in any output
+- **No transliterations** for Hebrew, Aramaic, or Greek in any output — except a brief illustrative English sound-alike when a lesson is specifically teaching a pronunciation concept (e.g. "the AY diphthong sounds like the *oy* in *boy*"), which is a pronunciation aid tied to one point, not a systematic transliteration column
 - **Tables:** GitHub-Flavored Markdown — never ASCII art or terminal output
 - **NT text:** Byzantine/TR (STEPBible TAGNT); KJV translation — label deviations inline
 - **BBH names:** use exact Pratico & Van Pelt spellings (Alef, Bet, Ḥet, Pathach, Shewa, etc.)
