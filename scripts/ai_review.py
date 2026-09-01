@@ -7,14 +7,16 @@ as a hard merge gate.
 Usage:
     python scripts/ai_review.py --pr N [--model claude-opus-5]
 
+Credentials: the Anthropic SDK auto-discovers credentials from the Claude Code
+installation. Do not set ANTHROPIC_API_KEY if you have an identity-linked key
+(sk-ant-...) — unset it and let auto-discovery handle authentication.
+
 Requires:
-    ANTHROPIC_API_KEY environment variable
     ~/.config/berean-bots/github-apps.json with reviewer credentials
 """
 
 import argparse
 import json
-import os
 import subprocess
 import sys
 from pathlib import Path
@@ -216,9 +218,6 @@ def main() -> None:
     parser.add_argument("--model", default=DEFAULT_MODEL,
                         help=f"Anthropic model (default: {DEFAULT_MODEL})")
     args = parser.parse_args()
-
-    if not os.environ.get("ANTHROPIC_API_KEY"):
-        raise SystemExit("ANTHROPIC_API_KEY is not set.")
 
     print(f"Fetching PR #{args.pr}...")
     token = _get_reviewer_token()
