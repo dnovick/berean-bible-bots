@@ -20,7 +20,7 @@
 
 Hebrew words are usually accented on the **last syllable**. When a word is accented on a different syllable, an accent mark appears over that syllable (e.g., סֵ֫פֶר — accent on the first syllable).
 
-This accent mark (a raised stroke called **Ole**, ֫) is a genuine Masoretic accent sign — but in the printed Hebrew Bible it functions as part of the full cantillation system (marking syntax and chant, and appearing on essentially every word of a verse, not only words with non-final stress). Grammars such as BBH repurpose this same symbol as a simplified stress marker, printed only over isolated citation and vocabulary forms — and only when the stress falls somewhere other than the last syllable — as a teaching aid. You will not find this specific "mark only the non-final stress" convention in a printed OT text; there, every word carries an accent from the full te'amim system, chosen by syntax and cantillation rather than this simplified rule.
+This mark is a convention used by grammars such as BBH to help students locate the stress — it is not how accentuation works in the Masoretic Text itself.
 
 | Position | Name | Description | Example |
 |---|---|---|---|
