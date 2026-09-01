@@ -138,39 +138,3 @@ Two vowel-consonant clusters function as a **single unit** and make the syllable
 12. Furtive Pathach is not a full vowel and is not counted in syllabification.
 13. When א occurs without a vowel, it is quiescent.
 14. Syllables containing the diphthong (ַיִ) are closed because they end with a consonant.
-
----
-
-## Vocabulary (§3.12)
-
-| Hebrew | Definition | Freq. |
-|---|---|---|
-| אָב | father, ancestor | 1,210 |
-| אָדוֹן | lord, master; (of God 439×) אֲדֹנָי | 774 |
-| אָדָם | man, mankind, humankind | 546 |
-| אֲדָמָה | ground, land, earth | 222 |
-| אָח | brother | 629 |
-| אָחוֹת | sister, relative, loved one | 119 |
-| אִישׁ | man, husband; (mp) אֲנָשִׁים | 2,188 |
-| אֵל | God, god | 237 |
-| אֱלֹהִים | God, gods | 2,602 |
-| אֵם | (fs) mother | 220 |
-| אֶ֫רֶץ | (fs) land, earth, ground | 2,505 |
-| אִשָּׁה | woman, wife; (fp) נָשִׁים | 781 |
-| בַּ֫יִת | (ms) house, household, dynasty | 2,047 |
-| בֵּן | son; (mp) בָּנִים | 4,941 |
-| בַּת | daughter; (fp) בָּנוֹת | 587 |
-| דָּבָר | word, matter, thing | 1,454 |
-| יוֹם | day; (mp) יָמִים | 2,301 |
-| לַ֫יְלָה | (ms) night | 234 |
-| נַ֫עַר | boy, youth, servant | 240 |
-| נַעֲרָה | young girl, maidservant | 76 |
-
----
-
-## Practice
-
-| Exercise | Description |
-|---|---|
-| [Daghesh and Shewa](exercises/ch3-daghesh-shewa/README.md) | 15 words — identify each Daghesh (Forte/Lene) and Shewa (Silent/Vocal) |
-| [Syllable Division](exercises/ch3-syllable-division/README.md) | 20 words — divide syllables, label types (O/C), mark stress, identify Qamets Hatuf |

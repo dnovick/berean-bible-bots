@@ -158,6 +158,8 @@ Lessons live under `data/lessons/bbh/ch<N>/` (BBH), `data/lessons/bbg/ch<N>/` (B
 - **Anki decks** — `ch<N>-morphology-deck.{md,txt,-fd.txt}` and `ch<N>-vocab-deck.{md,txt,-fd.txt}`
 - **`exercises/`** — one subdirectory per exercise
 
+**Never include an inline Vocabulary section on the lesson page itself.** Chapter vocabulary lives only in the vocab Anki deck (`ch<N>-vocab-deck.*`, linked from the lesson's Flashcard Decks resource) — duplicating it as a table on the lesson page is redundant and drifts out of sync with the deck.
+
 Each exercise subdirectory (`exercises/<name>/`) contains exactly **three formats**:
 - `<name>.md` — static reference copy with answer key at the bottom
 - `<name>.html` — self-contained interactive HTML (fillable fields, ▶ Answer per row, Show All / Hide All / Clear All)
