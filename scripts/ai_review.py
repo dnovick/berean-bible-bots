@@ -176,11 +176,15 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     )
     message = client.messages.create(
         model=model,
-        max_tokens=2048,
+        max_tokens=4096,
         messages=[{"role": "user", "content": prompt}],
     )
     text_blocks = [b for b in message.content if b.type == "text"]
     content = text_blocks[0].text if text_blocks else "{}"
+    # Strip markdown code fences if the model wrapped the JSON
+    import re as _re
+    content = _re.sub(r"^```(?:json)?\s*", "", content.strip())
+    content = _re.sub(r"\s*```$", "", content)
     return json.loads(content)
 
 
