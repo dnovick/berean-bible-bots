@@ -20,13 +20,27 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install pyyaml PyJWT cryptography requests
+        run: pip install pyyaml PyJWT cryptography requests flake8 mypy
 
-      - name: Run content validators
+      - name: Run content validators and lint
         id: checks
         run: |
           FAILED=0
           BODY=""
+
+          if ! python -m flake8 src/ > /tmp/flake8.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### flake8
+          $(cat /tmp/flake8.txt)"
+          fi
+
+          if ! python -m mypy src/ --ignore-missing-imports --no-error-summary > /tmp/mypy.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### mypy
+          $(cat /tmp/mypy.txt)"
+          fi
 
           if ! python scripts/validate_courses.py > /tmp/courses.txt 2>&1; then
             FAILED=1
@@ -69,7 +83,7 @@ jobs:
         run: |
           gh pr review ${{ github.event.pull_request.number }} \
             --approve \
-            --body "All automated checks passed (flake8, mypy, validate_courses, validate_lessons)."
+            --body "All automated checks passed: flake8, mypy, validate_courses, validate_lessons."
 
       - name: Request changes
         if: steps.checks.outputs.failed != '0'
