@@ -332,7 +332,7 @@ See `scripts/github_app_token.py` for the config file format.
 
 ## Language Display Rules
 
-- **No transliterations.** Never include transliteration columns or inline transliterations for Hebrew, Aramaic, or Greek in any report, table, lesson, chart, or flashcard deck.
+- **No transliterations.** Never include transliteration columns or inline transliterations for Hebrew, Aramaic, or Greek in any report, table, lesson, chart, or flashcard deck. Exception: when a lesson is specifically teaching a *pronunciation* concept (e.g. explaining a diphthong or vowel sound), a brief illustrative English sound-alike is fine — e.g. "the AY diphthong sounds like the *oy* in *boy*." This is a pronunciation aid tied to one specific point, not a systematic transliteration column/row applied to every word in a table.
 - **Tables:** always render as GitHub-flavored Markdown, never ASCII art or terminal `print()` output.
 - **Matplotlib bidi:** pass the entire mixed-direction string to `get_display()` from `python-bidi` — never split out the Hebrew fragment, apply `get_display()` to it alone, and concatenate. Start title strings with LTR text.
 
