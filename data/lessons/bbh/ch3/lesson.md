@@ -118,9 +118,11 @@ A diphthong is formed when a vowel and **י** combine into a single syllable, wi
 | Combination | Example | Pronunciation |
 |---|---|---|
 | Pathach + Yod | בַּ֫יִת (house) | the y in cry |
-| Qamets + Yod | טָי | the y in sky |
+| Qamets + Yod | טָי\* | the y in sky |
 | Holem + Yod | גּוֹי (nation) | the oy in boy |
 | Shureq + Yod | כְּסוּי (a covering) | the uey in gluey |
+
+\* Illustrative only (ט as a neutral carrier consonant) — a standalone Qamets+Yod diphthong not followed by a Waw is not attested in the Hebrew Bible; see the note below.
 
 **NOTE:** Qamets + Yod almost always occurs immediately before a Waw, as in עָלָיו ("upon him") or בָּנָיו ("his sons"). In that environment, the Yod is not pronounced separately — the whole ending is pronounced as a single vowel followed by the Waw.
 

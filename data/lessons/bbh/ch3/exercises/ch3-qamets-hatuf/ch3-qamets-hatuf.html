@@ -20,6 +20,7 @@
   .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
   .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
   .ans-heb { direction: rtl; unicode-bidi: embed; font-size: 1.1em; font-weight: bold; width: 9rem; }
+  .heb-inline { direction: rtl; unicode-bidi: embed; font-weight: bold; }
   button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
   button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
   .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
@@ -65,7 +66,7 @@
   <tr>
     <td class="num">1</td>
     <td class="heb">חָכְמָה</td>
-    <td>vowel under ח (<em>wisdom</em>)</td>
+    <td>vowel under <span class="heb-inline">ח</span> (<em>wisdom</em>)</td>
     <td><select class="parse-field" id="sel-1">
       <option value="">—</option>
       <option>Qamets (long a)</option>
@@ -76,7 +77,7 @@
   <tr class="ans-row" id="ans-1">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">חָכְמָה</td>
-    <td>vowel under ח</td>
+    <td>vowel under <span class="heb-inline">ח</span></td>
     <td>Qamets Hatuf — closed, unaccented syllable (חָכְ)</td>
     <td></td>
   </tr>
@@ -85,7 +86,7 @@
   <tr>
     <td class="num">2</td>
     <td class="heb">קָדוֹשׁ</td>
-    <td>vowel under ק (<em>holy</em>)</td>
+    <td>vowel under <span class="heb-inline">ק</span> (<em>holy</em>)</td>
     <td><select class="parse-field" id="sel-2">
       <option value="">—</option>
       <option>Qamets Hatuf (short o)</option>
@@ -96,7 +97,7 @@
   <tr class="ans-row" id="ans-2">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">קָדוֹשׁ</td>
-    <td>vowel under ק</td>
+    <td>vowel under <span class="heb-inline">ק</span></td>
     <td>Qamets — open, pretonic syllable</td>
     <td></td>
   </tr>
@@ -105,7 +106,7 @@
   <tr>
     <td class="num">3</td>
     <td class="heb">דָּבָר</td>
-    <td>vowel under ב, final syllable (<em>word</em>)</td>
+    <td>vowel under <span class="heb-inline">ב</span>, final syllable (<em>word</em>)</td>
     <td><select class="parse-field" id="sel-3">
       <option value="">—</option>
       <option>Qamets (long a)</option>
@@ -116,7 +117,7 @@
   <tr class="ans-row" id="ans-3">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">דָּבָר</td>
-    <td>vowel under ב, final syllable</td>
+    <td>vowel under <span class="heb-inline">ב</span>, final syllable</td>
     <td>Qamets — closed, accented syllable</td>
     <td></td>
   </tr>
@@ -125,7 +126,7 @@
   <tr>
     <td class="num">4</td>
     <td class="heb">כָּל־</td>
-    <td>vowel under כ (<em>all of</em>, bound form)</td>
+    <td>vowel under <span class="heb-inline">כ</span> (<em>all of</em>, bound form)</td>
     <td><select class="parse-field" id="sel-4">
       <option value="">—</option>
       <option>Qamets Hatuf (short o)</option>
@@ -136,7 +137,7 @@
   <tr class="ans-row" id="ans-4">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">כָּל־</td>
-    <td>vowel under כ, bound form</td>
+    <td>vowel under <span class="heb-inline">כ</span>, bound form</td>
     <td>Qamets Hatuf — closed, unaccented (bound/proclitic to the next word)</td>
     <td></td>
   </tr>
@@ -145,7 +146,7 @@
   <tr>
     <td class="num">5</td>
     <td class="heb">אָֽמְרָה</td>
-    <td>vowel under א, marked with Metheg (<em>she said</em>)</td>
+    <td>vowel under <span class="heb-inline">א</span>, marked with Metheg (<em>she said</em>)</td>
     <td><select class="parse-field" id="sel-5">
       <option value="">—</option>
       <option>Qamets Hatuf (short o)</option>
@@ -156,7 +157,7 @@
   <tr class="ans-row" id="ans-5">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אָֽמְרָה</td>
-    <td>vowel under א, with Metheg</td>
+    <td>vowel under <span class="heb-inline">א</span>, with Metheg</td>
     <td>Qamets — the Metheg confirms Qamets even though the syllable is closed and unaccented</td>
     <td></td>
   </tr>
