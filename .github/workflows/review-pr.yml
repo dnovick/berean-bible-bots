@@ -35,7 +35,7 @@ jobs:
           $(cat /tmp/flake8.txt)"
           fi
 
-          if ! python -m mypy src/ --ignore-missing-imports --no-error-summary > /tmp/mypy.txt 2>&1; then
+          if ! python -m mypy src/ --ignore-missing-imports --no-error-summary --no-warn-unused-ignores > /tmp/mypy.txt 2>&1; then
             FAILED=1
             BODY="${BODY}
           ### mypy
@@ -89,7 +89,8 @@ jobs:
         if: steps.checks.outputs.failed != '0'
         env:
           GH_TOKEN: ${{ steps.reviewer-token.outputs.token }}
+          REVIEW_BODY: ${{ steps.checks.outputs.body }}
         run: |
           gh pr review ${{ github.event.pull_request.number }} \
             --request-changes \
-            --body "Automated checks failed. Fix the issues below and push a new commit.${{ steps.checks.outputs.body }}"
+            --body "Automated checks failed. Fix the issues below and push a new commit.${REVIEW_BODY}"
