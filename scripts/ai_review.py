@@ -176,7 +176,7 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     )
     message = client.messages.create(
         model=model,
-        max_tokens=4096,
+        max_tokens=8192,
         messages=[{"role": "user", "content": prompt}],
     )
     text_blocks = [b for b in message.content if b.type == "text"]
@@ -185,7 +185,16 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     import re as _re
     content = _re.sub(r"^```(?:json)?\s*", "", content.strip())
     content = _re.sub(r"\s*```$", "", content)
-    return json.loads(content)
+    try:
+        return json.loads(content)
+    except json.JSONDecodeError as exc:
+        if message.stop_reason == "max_tokens":
+            raise SystemExit(
+                f"AI review response was truncated (hit max_tokens={message.usage.output_tokens} "
+                "output tokens) before the JSON could be closed. Increase max_tokens in "
+                "_run_ai_review() or shrink the diff."
+            ) from exc
+        raise
 
 
 def _build_review_body(result: dict[str, Any], model: str) -> str:
