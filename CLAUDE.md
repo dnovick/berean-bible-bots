@@ -267,16 +267,16 @@ informational — the actual merge gate is the **`review` required status check*
 personal repos cannot be granted collaborator status, so their reviews do not count toward
 required-approval counts).
 
-**AI code review (manual):** Run `scripts/codex_review.py` against the PR before merging.
-It sends the diff to GPT-4o, checks nine project-specific rules, posts a review comment via
-`bbb-reviewer-01[bot]`, and posts a `codex-review` commit status (success or failure).
+**AI code review (manual):** Run `scripts/ai_review.py` against the PR before merging.
+It sends the diff to Claude Opus 5, checks nine project-specific rules, posts a review comment
+via `bbb-reviewer-01[bot]`, and posts a `codex-review` commit status (success or failure).
 Branch protection requires this status to be green before merging.
 ```bash
 source .venv/bin/activate
-python scripts/codex_review.py --pr <n>          # uses gpt-4o by default
-python scripts/codex_review.py --pr <n> --model o3  # use a different model
+python scripts/ai_review.py --pr <n>                        # uses claude-opus-5 by default
+python scripts/ai_review.py --pr <n> --model claude-sonnet-5  # use a different model
 ```
-Requires `OPENAI_API_KEY` in the environment.
+Requires `ANTHROPIC_API_KEY` in the environment.
 
 **Merging** (after both `review` and `codex-review` status checks pass):
 ```bash
