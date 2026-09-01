@@ -1,14 +1,14 @@
-"""AI code review for a GitHub PR using the OpenAI API.
+"""AI code review for a GitHub PR using the Anthropic API.
 
 Posts a review comment and commit status via bbb-reviewer-01[bot].
-The commit status context is "codex-review" — add it to branch protection
-required status checks to make this a hard merge gate.
+The commit status context is "codex-review" — required by branch protection
+as a hard merge gate.
 
 Usage:
-    python scripts/codex_review.py --pr N [--model gpt-4o]
+    python scripts/ai_review.py --pr N [--model claude-opus-5]
 
 Requires:
-    OPENAI_API_KEY environment variable
+    ANTHROPIC_API_KEY environment variable
     ~/.config/berean-bots/github-apps.json with reviewer credentials
 """
 
@@ -20,14 +20,14 @@ import sys
 from pathlib import Path
 from typing import Any
 
+import anthropic
 import requests
-from openai import OpenAI
 
 REPO = "dnovick/berean-bible-bots"
 STATUS_CONTEXT = "codex-review"
 MAX_DIFF_CHARS = 80_000
 GITHUB_API = "https://api.github.com"
-DEFAULT_MODEL = "gpt-4o"
+DEFAULT_MODEL = "claude-opus-5"
 
 REVIEW_PROMPT = """\
 You are a code reviewer for the berean-bible-bots project — a Biblical Hebrew/Greek/Aramaic \
@@ -48,9 +48,8 @@ Be specific about file paths when flagging issues.
 3. **RTL display**: In HTML exercises, a verse reference (e.g. "Gen 1:1") and Hebrew text
    must never appear on the same line. Hebrew must use `direction:rtl; unicode-bidi:embed`.
 
-4. **Dropdown fields**: In HTML exercises, Stem, Conjugation, PGN \
-(Person/Gender/Number), Yes/No,
-   and Function fields must use `<select>` elements, not `<input type="text">`.
+4. **Dropdown fields**: In HTML exercises, Stem, Conjugation, PGN (Person/Gender/Number),
+   Yes/No, and Function fields must use `<select>` elements, not `<input type="text">`.
 
 5. **Answer row alignment**: Every `.answer-row td` must align cell-for-cell with table
    columns — no colspan shortcuts, no bunching all content into the first cell.
@@ -164,7 +163,7 @@ def _post_review(pr_number: int, body: str, event: str, token: str) -> None:
 
 
 def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[str, Any]:
-    client = OpenAI()
+    client = anthropic.Anthropic()
     truncated = diff[:MAX_DIFF_CHARS]
     if len(diff) > MAX_DIFF_CHARS:
         truncated += f"\n\n[Diff truncated — showing first {MAX_DIFF_CHARS:,} chars]"
@@ -173,13 +172,13 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
         description=description or "(no description provided)",
         diff=truncated,
     )
-    response = client.chat.completions.create(
+    message = client.messages.create(
         model=model,
+        max_tokens=2048,
         messages=[{"role": "user", "content": prompt}],
-        response_format={"type": "json_object"},
-        temperature=0,
     )
-    content = response.choices[0].message.content or "{}"
+    text_blocks = [b for b in message.content if b.type == "text"]
+    content = text_blocks[0].text if text_blocks else "{}"
     return json.loads(content)
 
 
@@ -215,11 +214,11 @@ def main() -> None:
     parser = argparse.ArgumentParser(description="AI code review for a GitHub PR.")
     parser.add_argument("--pr", type=int, required=True, help="PR number to review")
     parser.add_argument("--model", default=DEFAULT_MODEL,
-                        help=f"OpenAI model (default: {DEFAULT_MODEL})")
+                        help=f"Anthropic model (default: {DEFAULT_MODEL})")
     args = parser.parse_args()
 
-    if not os.environ.get("OPENAI_API_KEY"):
-        raise SystemExit("OPENAI_API_KEY is not set.")
+    if not os.environ.get("ANTHROPIC_API_KEY"):
+        raise SystemExit("ANTHROPIC_API_KEY is not set.")
 
     print(f"Fetching PR #{args.pr}...")
     token = _get_reviewer_token()
