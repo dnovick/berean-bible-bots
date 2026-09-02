@@ -16,6 +16,7 @@ Usage:
 from __future__ import annotations
 
 import argparse
+import re as _re
 import sys
 from pathlib import Path
 from typing import Callable
@@ -43,6 +44,35 @@ def _warn(warnings: list[str], path: Path, msg: str) -> None:
 
 
 # ── Registered checks ─────────────────────────────────────────────────────────
+
+_ANS_ROW_INLINE_DISPLAY_RE = _re.compile(
+    r'class=["\']ans-row["\'][^>]*style=["\'][^"\']*display\s*:', _re.IGNORECASE
+)
+
+
+@_register("ans-row-no-inline-display")
+def check_ans_row_no_inline_display(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """ans-row elements must not carry inline style="display:..." attributes.
+
+    Visibility is controlled exclusively by the CSS rule and the toggle
+    script. A hardcoded display value overrides the CSS and makes the answer
+    visible on page load (or permanently hidden on print).
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    text = html_file.read_text(encoding="utf-8", errors="replace")
+    for lineno, line in enumerate(text.splitlines(), 1):
+        if _ANS_ROW_INLINE_DISPLAY_RE.search(line):
+            _err(
+                errors, ex_dir,
+                f"{html_file.name}:{lineno} — ans-row has inline display style"
+                " (remove the style attribute; CSS handles visibility)"
+            )
+
 
 @_register("three-format")
 def check_three_formats(ex_dir: Path, errors: list[str], warnings: list[str]) -> None:

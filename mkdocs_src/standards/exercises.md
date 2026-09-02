@@ -55,6 +55,7 @@ The `.html` file is **fully self-contained** — no external dependencies, no CD
 - Three global controls at the top of the form: **Show All Answers**, **Hide All Answers**, **Clear All Inputs**
 - `@media print` block: hides all buttons; makes `<input>` elements render as underlines
 - All answers, styles, and JavaScript embedded inline in the single `.html` file
+- **Answer rows must never carry an inline `style="display:..."` attribute.** Visibility is controlled exclusively by the CSS rule `.ans-row { display: none; }` and the toggle script. A hardcoded `style="display:table-row;"` on any `ans-row` element will make that answer visible on page load.
 
 ### Hebrew/Aramaic/Greek text
 
