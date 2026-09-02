@@ -57,6 +57,7 @@ The `.html` file is **fully self-contained** — no external dependencies, no CD
 - All answers, styles, and JavaScript embedded inline in the single `.html` file
 - **Answer rows must never carry an inline `style="display:..."` attribute.** Visibility is controlled exclusively by the CSS rule `.ans-row { display: none; }` and the toggle script. A hardcoded `style="display:table-row;"` on any `ans-row` element will make that answer visible on page load.
 - **Answer buttons must not be pre-labeled as open.** Every `▶ Answer` button must start with `class="rbtn"` and text `▶ Answer`. Using `class="rbtn on"` or text `▼ Hide` in the static HTML causes the button state to be out of sync with the hidden answer row, making the first click show the answer without visually changing the button.
+- **Input placeholders must not reveal the answer.** Never use `placeholder="e.g. אֱ-לֹ-הִים"` or any placeholder that shows the correct answer (even prefixed with "e.g."). Use generic labels (`division`, `types`, `root`, `gloss`) that describe the field without giving the answer. This applies equally to every row, especially row 1 where the instructions' worked example is often identical to the first word's answer.
 
 ### Hebrew/Aramaic/Greek text
 
