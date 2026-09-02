@@ -20,8 +20,9 @@ import json
 import re as _re
 import subprocess
 import sys
+import time
 from pathlib import Path
-from typing import Any
+from typing import Any, Callable, TypeVar
 
 import anthropic
 import requests
@@ -30,6 +31,24 @@ REPO = "dnovick/berean-bible-bots"
 STATUS_CONTEXT = "claude-review"
 MAX_DIFF_CHARS = 500_000
 GITHUB_API = "https://api.github.com"
+REVIEWER_LOGIN = "bbb-reviewer-01[bot]"
+
+# Circuit breaker for repeated content rejections: if bbb-reviewer-01 has already
+# posted this many CHANGES_REQUESTED reviews on the PR, further rejections are very
+# unlikely to be resolved by another automated pass — stop spending API calls and
+# require a human to look at it directly instead of looping indefinitely.
+MAX_CONTENT_REJECTIONS = 3
+
+# Retry only genuinely transient failures (rate limits, momentary overload/connection
+# issues) — never retry errors that won't fix themselves on their own (bad auth,
+# billing lockout, malformed request), since that just burns time on a guaranteed
+# repeat failure.
+MAX_TRANSIENT_RETRIES = 3
+_RETRYABLE_ERRORS = (
+    anthropic.RateLimitError,
+    anthropic.APIConnectionError,
+    anthropic.InternalServerError,
+)
 
 # Haiku is cheap but has a smaller context window (200K tokens) than Opus/Sonnet, and
 # fails hard (400 error) rather than degrading if a prompt exceeds it. Reviewer is
@@ -240,6 +259,31 @@ def _post_review(pr_number: int, body: str, event: str, token: str) -> None:
     resp.raise_for_status()
 
 
+def _count_prior_rejections(pr_number: int, token: str) -> int:
+    """How many times bbb-reviewer-01 has already posted CHANGES_REQUESTED on this
+    PR. GitHub is the source of truth — no separate counter to keep in sync.
+    """
+    resp = requests.get(
+        f"{GITHUB_API}/repos/{REPO}/pulls/{pr_number}/reviews",
+        headers=_gh_headers(token),
+    )
+    resp.raise_for_status()
+    return sum(
+        1 for r in resp.json()
+        if r.get("user", {}).get("login") == REVIEWER_LOGIN
+        and r.get("state") == "CHANGES_REQUESTED"
+    )
+
+
+def _post_issue_comment(pr_number: int, body: str, token: str) -> None:
+    resp = requests.post(
+        f"{GITHUB_API}/repos/{REPO}/issues/{pr_number}/comments",
+        headers=_gh_headers(token),
+        json={"body": body},
+    )
+    resp.raise_for_status()
+
+
 _DIFF_PATH_RE = _re.compile(r"^diff --git a/(\S+) b/\S+", _re.MULTILINE)
 _DIFF_FILE_BLOCK_RE = _re.compile(
     r"^diff --git a/(\S+) b/\S+.*?(?=^diff --git |\Z)", _re.MULTILINE | _re.DOTALL
@@ -300,6 +344,33 @@ def _get_validator_output(diff: str) -> str:
     return "\n".join(relevant)
 
 
+_T = TypeVar("_T")
+
+
+def _call_with_retries(fn: Callable[[], _T], label: str) -> _T:
+    """Retry only transient Anthropic API errors (rate limits, momentary overload
+    or connection issues), with exponential backoff, up to MAX_TRANSIENT_RETRIES
+    attempts. Anything else (bad auth, billing lockout, malformed request) is
+    raised immediately — retrying those wastes time on a guaranteed repeat failure.
+    """
+    for attempt in range(1, MAX_TRANSIENT_RETRIES + 1):
+        try:
+            return fn()
+        except _RETRYABLE_ERRORS as exc:
+            if attempt == MAX_TRANSIENT_RETRIES:
+                raise SystemExit(
+                    f"AI review's {label} call failed after {MAX_TRANSIENT_RETRIES} attempts "
+                    f"({type(exc).__name__}: {exc}). This looks transient (rate limit/overload/"
+                    "connection), but retries are exhausted — needs human intervention rather "
+                    "than a further automated retry."
+                ) from exc
+            wait = 2 ** attempt
+            print(f"  {label} call failed ({type(exc).__name__}), retrying in {wait}s "
+                  f"(attempt {attempt}/{MAX_TRANSIENT_RETRIES})...")
+            time.sleep(wait)
+    raise AssertionError("unreachable")
+
+
 def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[str, Any]:
     client = anthropic.Anthropic()
     diff, dropped_files, dropped_chars = _filter_generated_files(diff)
@@ -330,8 +401,9 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     # count_tokens endpoint doesn't bill like a generate call — and escalate to Opus
     # before spending anything if it won't fit.
     if model.startswith("claude-haiku"):
-        predicted = client.messages.count_tokens(
-            model=model, messages=messages,
+        predicted = _call_with_retries(
+            lambda: client.messages.count_tokens(model=model, messages=messages),
+            "count_tokens",
         ).input_tokens
         if predicted + HAIKU_SAFETY_MARGIN > HAIKU_CONTEXT_LIMIT:
             print(f"  Diff too large for {model} ({predicted:,} tokens > "
@@ -346,11 +418,14 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     # 1h TTL (not the 5m default): our own retry cycles this session — waiting on CI, reading
     # findings, fixing and re-pushing — routinely ran longer than 5 minutes, so the default
     # ephemeral cache was expiring before the next retry and silently eating the full cost again.
-    message = client.messages.create(
-        model=model,
-        max_tokens=8192,
-        thinking={"type": "disabled"},
-        messages=messages,
+    message = _call_with_retries(
+        lambda: client.messages.create(
+            model=model,
+            max_tokens=8192,
+            thinking={"type": "disabled"},
+            messages=messages,
+        ),
+        "messages.create",
     )
     usage = message.usage
     cache_read = getattr(usage, "cache_read_input_tokens", 0) or 0
@@ -431,11 +506,42 @@ def main() -> None:
     print(f"  Title : {title}")
     print(f"  SHA   : {head_sha[:8]}")
 
+    prior_rejections = _count_prior_rejections(args.pr, token)
+    if prior_rejections >= MAX_CONTENT_REJECTIONS:
+        message = (
+            f"AI review has already requested changes {prior_rejections} time(s) on this PR. "
+            f"Stopping after {MAX_CONTENT_REJECTIONS} — further automated review attempts are "
+            "unlikely to resolve this and just spend API calls. **This PR needs a human to "
+            "look at it directly** rather than another automated fix-and-rerun cycle."
+        )
+        print(f"  {message}")
+        print("Posting comment (skipping AI review call)...")
+        _post_issue_comment(args.pr, f"## AI Code Review\n\n{message}", token)
+        print("Posting commit status...")
+        _post_status(head_sha, "failure",
+                     f"{prior_rejections} rejections — human review required", args.pr, token)
+        print("Done.")
+        sys.exit(2)
+
     diff = _get_diff(args.pr, token)
     print(f"  Diff  : {len(diff):,} chars")
 
     print(f"Running AI review ({args.model})...")
-    result = _run_ai_review(diff, title, description, args.model)
+    try:
+        result = _run_ai_review(diff, title, description, args.model)
+    except SystemExit as exc:
+        # _run_ai_review (or _call_with_retries within it) raises SystemExit for
+        # failures the script itself can't resolve — exhausted transient retries,
+        # a truncated/unparseable model response, etc. Distinct from a normal
+        # content rejection: post an "error" status, not "failure", so it's
+        # visibly a different situation (needs a human to check what went wrong,
+        # not another automated fix-and-rerun cycle).
+        error_msg = str(exc)
+        print(f"  AI review could not complete: {error_msg}")
+        print("Posting commit status (error)...")
+        _post_status(head_sha, "error", error_msg, args.pr, token)
+        print("Done.")
+        sys.exit(3)
 
     approved: bool = result.get("approved", False)
     summary: str = result.get("summary", "Review complete.")
