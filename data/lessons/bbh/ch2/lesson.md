@@ -109,6 +109,12 @@ These are also **unchangeable long vowels**.
 | with ו | — | — | — | בּוֹ Holem Waw | בּוּ Shureq |
 | with י | — | בֵּי Tsere Yod / בֶּי Seghol Yod | בִּי Hireq Yod | — | — |
 
+### A Note on Alef
+
+Grammars occasionally list **א** as a fourth *mater lectionis* because Alef can quiesce (go silent) when combined with a vowel. In most cases this reflects *etymological orthography* — the letter preserves a historical spelling where it was once pronounced. **רֹאשׁ** ("head") is the classic example: its Arabic cognate *raʾs* retained an audible Alef that Hebrew lost in pronunciation but kept in spelling. The negative **לֹא** is another familiar case.
+
+Unlike ה, ו, and י — which each mark a specific vowel class in a regular, predictable way — Alef quiesces only in particular words for historical reasons. Joüon and Muraoka therefore conclude that it "can hardly be called a mater lectionis" in the strict sense (§7d). **For this course, ה, ו, and י are the three vowel letters;** silent Alef will be noted word by word as it arises.
+
 ---
 
 ## Defective Writing (§2.12)
