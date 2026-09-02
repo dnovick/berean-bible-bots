@@ -6,8 +6,8 @@ Identify the Daghesh type (Lene or Forte) in each of 15 Hebrew words and name th
 
 | Daghesh Type | Count |
 |---|---|
-| Lene | 5 |
-| Forte | 9 |
+| Lene | 4 |
+| Forte | 10 |
 | Both (Lene + Forte in same word) | 1 |
 
 ## Files
