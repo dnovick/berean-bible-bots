@@ -62,7 +62,7 @@ Vocabulary may be drawn from **Chapter 4** and **Chapter 5**.
 | 8 | אֻמְּמָן | אֻמְּמָתָא | fp. | Remove ָתָא-, restore ָן-; *nations / the nations* |
 | 9 | זְמָר | זְמָרָא | ms. | Add ָא-; *music / the music* |
 | 10 | רָזִין | רָזַיָּא | mp. | Remove ַיָּא-, restore ִין-; *secrets / the secrets* (Ch4 vocab) |
-| 11 | חֲמַר | חַמְרָא | ms. | Add ָא-; note vowel shift: ḥămar → ḥamrāʾ (shewa under ח in open syllable reduces); *wine / the wine* |
+| 11 | חֲמַר | חַמְרָא | ms. | Add ָא-; note vowel shift: ḥămar → ḥamrāʾ (Shewa under ח in open syllable reduces); *wine / the wine* |
 | 12 | אִילָנִין | אִילָנַיָּא | mp. | Remove ַיָּא-, restore ִין-; *trees / the trees* |
 | 13 | חֵיוָן | חֵיוָתָא | fp. | Replace ָן- with ָתָא-; *beasts / the beasts* (Ch4 vocab) |
 | 14 | אֱסָר | אֱסָרָא | ms. | Remove ָא-; *prohibition / the prohibition* |
@@ -81,4 +81,4 @@ Vocabulary may be drawn from **Chapter 4** and **Chapter 5**.
 
 2. Items 2, 6, 10, and 16 are all Chapter 4 vocabulary items used in determined-state forms. What does the distribution of determined-state Chapter 4 nouns in actual Daniel passages tell you about which state is more common in Biblical Aramaic narrative?
 
-3. Item 11 (חֲמַר → חַמְרָא) shows a vowel shift: the patach under ח in the absolute becomes a qamets in the determined, while the mem's vowel disappears. Using what you know about stress and syllable structure, explain why the vowel pattern changes when ָא- is added.
+3. Item 11 (חֲמַר → חַמְרָא) shows a vowel shift: the Pathach under ח in the absolute becomes a Qamets in the determined, while the mem's vowel disappears. Using what you know about stress and syllable structure, explain why the vowel pattern changes when ָא- is added.

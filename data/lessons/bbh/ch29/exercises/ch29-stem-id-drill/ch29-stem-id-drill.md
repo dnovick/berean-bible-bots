@@ -107,10 +107,10 @@ Items are deliberately mixed — not grouped by conjugation — so that the stud
 
 | Feature | Qal | Hiphil | Hophal |
 |---|---|---|---|
-| **Perfect 3ms prefix (hollow)** | No prefix; qamets under 1st consonant (בָּא, שָׁב, קָם) | הֵ + chiriq-yod in stem (הֵבִיא, הֵשִׁיב, הֵקִים) | הוּ + contracted stem (הוּבָא, הוּשַׁב, הוּקַם) |
-| **Perfect 3ms prefix (I-י)** | Base vowels (יָרַד, יָלַד) | הוֹ + chiriq-yod (הוֹרִיד, הוֹלִיד) | הוּ + patach (הוּרַד, הוּלַד) |
+| **Perfect 3ms prefix (hollow)** | No prefix; Qamets under 1st consonant (בָּא, שָׁב, קָם) | הֵ + chiriq-yod in stem (הֵבִיא, הֵשִׁיב, הֵקִים) | הוּ + contracted stem (הוּבָא, הוּשַׁב, הוּקַם) |
+| **Perfect 3ms prefix (I-י)** | Base vowels (יָרַד, יָלַד) | הוֹ + chiriq-yod (הוֹרִיד, הוֹלִיד) | הוּ + Pathach (הוּרַד, הוּלַד) |
 | **Imperfect 3ms (hollow)** | Long vowel in prefix-stem (יָבוֹא, יָשׁוּב) | a-class prefix + chiriq-yod (יָבִיא, יָשִׁיב) | יוּ prefix + contracted stem (יוּבָא, יוּשַׁב) |
-| **Wayyiqtol 3ms (hollow)** | וַיָּ + contracted stem (וַיָּבֹא) | וַיָּ + tsere/chiriq in stem (וַיָּבֵא) | וַיּוּ + contracted stem (וַיּוּבָא) |
-| **Participle ms (hollow/I-י)** | Distinct forms (יֹרֵד, יֹלֵד) | מוֹ/מֵ + chiriq-yod | מוּ + patach/qamets (מוּלָד) |
+| **Wayyiqtol 3ms (hollow)** | וַיָּ + contracted stem (וַיָּבֹא) | וַיָּ + Tsere/chiriq in stem (וַיָּבֵא) | וַיּוּ + contracted stem (וַיּוּבָא) |
+| **Participle ms (hollow/I-י)** | Distinct forms (יֹרֵד, יֹלֵד) | מוֹ/מֵ + chiriq-yod | מוּ + Pathach/Qamets (מוּלָד) |
 
-> **Key rule:** In weak Hophal (hollow and I-י), the characteristic vowel is **וּ (shureq)** in the prefix slot — whether הוּ (Perfect), יוּ (Imperfect), וַיּוּ (Wayyiqtol), or מוּ (Participle). This שׁוּרֶק is the single most reliable marker of Hophal in weak verb paradigms.
+> **Key rule:** In weak Hophal (hollow and I-י), the characteristic vowel is **וּ (Shureq)** in the prefix slot — whether הוּ (Perfect), יוּ (Imperfect), וַיּוּ (Wayyiqtol), or מוּ (Participle). This שׁוּרֶק is the single most reliable marker of Hophal in weak verb paradigms.

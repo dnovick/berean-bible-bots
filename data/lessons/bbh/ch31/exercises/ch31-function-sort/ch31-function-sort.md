@@ -62,9 +62,9 @@ Write your answer (I / F / It / DN / SA) in the blank column.
 | 3 | חִזֵּק | חזק | **F** | Qal = stative "be strong/hard"; Piel = cause to be in that state = harden. Classic Factitive. ח guttural = virtual dagesh. |
 | 4 | כִּלָּה | כלה | **I or F** | Qal = stative "be complete"; Piel = bring to completion (F) or finish thoroughly (I). Both analyses are defensible. |
 | 5 | צִוָּה | צוה | **SA** | No common Qal; commanding is the Piel's primary function. III-ה root. |
-| 6 | בֵּרֲכוּ | ברך | **I** | Same root as #1; 3cp perfect. Note hateph-patach under ר (I-guttural effect in conjugation). |
-| 7 | יְבָרֵךְ | ברך | **I** | Piel imperfect 3ms; shewa under בְ + tsere = Piel imperfect pattern. Blessing = intensified/formal. |
-| 8 | יְצַוֶּה | צוה | **SA** | Piel imperfect 3ms of צוה; note the III-ה contraction with tsere-yod. No Qal; commanding is always Piel. |
+| 6 | בֵּרֲכוּ | ברך | **I** | Same root as #1; 3cp perfect. Note Hateph Pathach under ר (I-guttural effect in conjugation). |
+| 7 | יְבָרֵךְ | ברך | **I** | Piel imperfect 3ms; Shewa under בְ + Tsere = Piel imperfect pattern. Blessing = intensified/formal. |
+| 8 | יְצַוֶּה | צוה | **SA** | Piel imperfect 3ms of צוה; note the III-ה contraction with Tsere-yod. No Qal; commanding is always Piel. |
 | 9 | וַיְבָרֶךְ | ברך | **I** | Wayyiqtol 3ms; Piel wayyiqtol = waw + Piel imperfect. Same function as #1. |
 | 10 | וַיְצַו | צוה | **SA** | Wayyiqtol 3ms of צוה; the III-ה root contracts in wayyiqtol (ה drops). No Qal; commanding = Piel primary. |
 | 11 | חִיָּה | חיה | **F** | Qal = stative "be alive"; Piel = cause to live = preserve alive. Classic Factitive. |

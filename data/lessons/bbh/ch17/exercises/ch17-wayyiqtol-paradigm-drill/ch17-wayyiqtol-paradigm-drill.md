@@ -2,7 +2,7 @@
 
 **Root:** קטל | **Conjugation:** Wayyiqtol (Waw-Consecutive Imperfect)
 
-**Instructions:** Write the Wayyiqtol (Waw-Consecutive Imperfect) form for each PGN. Root: קטל. Note: the 1cs prefix waw takes qamets (וָ) because aleph cannot take dagesh.
+**Instructions:** Write the Wayyiqtol (Waw-Consecutive Imperfect) form for each PGN. Root: קטל. Note: the 1cs prefix waw takes Qamets (וָ) because aleph cannot take dagesh.
 
 ## Paradigm Table
 

@@ -1,8 +1,8 @@
 # Ch15 Qal Imperfect Paradigm Drill
 
-**Root:** שמר | **Conjugation:** Qal Imperfect (A-class, holem theme vowel)
+**Root:** שמר | **Conjugation:** Qal Imperfect (A-class, Holem theme vowel)
 
-**Instructions:** Write the correct Qal Imperfect form. Root: שמר (A-class, holem theme). All cells blank — fill from memory.
+**Instructions:** Write the correct Qal Imperfect form. Root: שמר (A-class, Holem theme). All cells blank — fill from memory.
 
 ## Paradigm Table
 

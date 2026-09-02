@@ -22,9 +22,9 @@ The answer key is at the bottom.
 
 | Stem | R1 vowel (Perfect 3ms) | R2 | Meaning |
 |---|---|---|---|
-| **Qal** | Variable (patach, tsere, holem) | No extra dagesh | Simple active |
-| **Piel** | Hiriq (קִ) or tsere (קֵ) | Dagesh Forte | Intensive/factitive active |
-| **Pual** | Qibbuts (קֻ) or holem (קֹ) when R2 is guttural | Dagesh Forte | Passive of Piel |
+| **Qal** | Variable (Pathach, Tsere, Holem) | No extra dagesh | Simple active |
+| **Piel** | Hiriq (קִ) or Tsere (קֵ) | Dagesh Forte | Intensive/factitive active |
+| **Pual** | Qibbuts (קֻ) or Holem (קֹ) when R2 is guttural | Dagesh Forte | Passive of Piel |
 
 ---
 
@@ -88,7 +88,7 @@ The answer key is at the bottom.
 | 2 | בֵּרַךְ | Piel | Perfect | 3ms | he blessed |
 | 3 | בֹּרַךְ | Pual | Perfect | 3ms | he was blessed |
 
-*Notes: בָּרַךְ (Qal) is rare; the primary usage of ברך is in the Piel. בֵּרַךְ shows tsere under ב (Piel stem vowel) with ר rejecting dagesh — compensatory lengthening. בֹּרַךְ (Pual) shows holem instead of qibbuts because ר rejects dagesh forte.*
+*Notes: בָּרַךְ (Qal) is rare; the primary usage of ברך is in the Piel. בֵּרַךְ shows Tsere under ב (Piel stem vowel) with ר rejecting dagesh — compensatory lengthening. בֹּרַךְ (Pual) shows Holem instead of Qibbuts because ר rejects dagesh forte.*
 
 ### Triplet 2 — Root: שׁלח
 
@@ -98,7 +98,7 @@ The answer key is at the bottom.
 | 5 | שִׁלַּח | Piel | Perfect | 3ms | he sent away / released |
 | 6 | שֻׁלַּח | Pual | Perfect | 3ms | he was sent away |
 
-*Notes: Qal שָׁלַח uses qamets under שׁ. Piel שִׁלַּח uses hiriq + dagesh in ל. Pual שֻׁלַּח uses qibbuts + dagesh in ל. Piel often adds the nuance of releasing or dismissing.*
+*Notes: Qal שָׁלַח uses Qamets under שׁ. Piel שִׁלַּח uses hiriq + dagesh in ל. Pual שֻׁלַּח uses Qibbuts + dagesh in ל. Piel often adds the nuance of releasing or dismissing.*
 
 ### Triplet 3 — Root: דבר
 
@@ -108,7 +108,7 @@ The answer key is at the bottom.
 | 8 | דִּבֶּר | Piel | Perfect | 3ms | he spoke |
 | 9 | דֻּבַּר | Pual | Perfect | 3ms | it was spoken |
 
-*Notes: דבר is one of several roots used almost exclusively in the Piel (דִּבֶּר). The Qal exists but is uncommon. The Pual דֻּבַּר shows qibbuts under ד + dagesh in ב.*
+*Notes: דבר is one of several roots used almost exclusively in the Piel (דִּבֶּר). The Qal exists but is uncommon. The Pual דֻּבַּר shows Qibbuts under ד + dagesh in ב.*
 
 ### Triplet 4 — Root: כבד
 
@@ -118,7 +118,7 @@ The answer key is at the bottom.
 | 11 | כִּבֵּד | Piel | Perfect | 3ms | he honored |
 | 12 | כֻּבַּד | Pual | Perfect | 3ms | he was honored |
 
-*Notes: Qal כָּבֵד is a stative verb (tsere theme vowel). Piel כִּבֵּד is factitive ("he made/treated as heavy/honorable"). Pual כֻּבַּד is the passive: "he was treated as honored."*
+*Notes: Qal כָּבֵד is a stative verb (Tsere theme vowel). Piel כִּבֵּד is factitive ("he made/treated as heavy/honorable"). Pual כֻּבַּד is the passive: "he was treated as honored."*
 
 ### Triplet 5 — Root: ספר
 
@@ -128,4 +128,4 @@ The answer key is at the bottom.
 | 14 | סִפֵּר | Piel | Perfect | 3ms | he recounted / told |
 | 15 | סֻפַּר | Pual | Perfect | 3ms | it was told / recounted |
 
-*Notes: Qal סָפַר = count/number. Piel סִפֵּר = tell/recount (iterative/intensive). Pual סֻפַּר = the passive of telling. Note the systematic vowel shift: qamets (Qal) → hiriq (Piel) → qibbuts (Pual) under R1.*
+*Notes: Qal סָפַר = count/number. Piel סִפֵּר = tell/recount (iterative/intensive). Pual סֻפַּר = the passive of telling. Note the systematic vowel shift: Qamets (Qal) → hiriq (Piel) → Qibbuts (Pual) under R1.*

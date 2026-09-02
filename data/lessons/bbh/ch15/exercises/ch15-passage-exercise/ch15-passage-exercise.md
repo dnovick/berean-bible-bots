@@ -75,16 +75,16 @@ pattern and the usage type. Weak-root Imperfect patterns are covered in Chapter 
 |---|---|---|---|---|---|---|---|
 | 1 | אֵלֵ֖ךְ | 1 | s | c | הלך | Cohortative | Cohortative 1cs; "Let me go" — volitional statement by Moses |
 | 2 | אֶרְאֶ֗ה | 1 | s | c | ראה | Cohortative | III-ה weak; "Let me see" — parallel volitional |
-| 3 | תִקְרַב | 2 | s | m | קרב | Prohibition | לֹא missing here (direct command form); B-class patach under R2 |
+| 3 | תִקְרַב | 2 | s | m | קרב | Prohibition | לֹא missing here (direct command form); B-class Pathach under R2 |
 | 4 | אֶֽהְיֶ֣ה | 1 | s | c | היה | Simple Future | III-ה + I-gutt.; "I will be with you" — God's promise |
 | 5 | אֵלֵ֙ךְ֙ | 1 | s | c | הלך | Modal | "that I should go" — conditional/modal sense in question |
 | 6 | אֹוצִ֥יא | 1 | s | c | יצא | Modal/Future | Hiphil 1cs of יצא; "bring out" — included for recognition contrast |
 | 7 | אֶשְׁלַ֤ח | 1 | s | c | שלח | Simple Future | Qal Imperfect 1cs; "I will stretch out my hand" |
-| 8 | יִשְׁמְע֖וּ | 3 | p | m | שמע | Simple Future | 3mp; B-class patach under R2 (שמע is B-class) |
+| 8 | יִשְׁמְע֖וּ | 3 | p | m | שמע | Simple Future | 3mp; B-class Pathach under R2 (שמע is B-class) |
 | 9 | תִּרְצָֽח | 2 | s | m | רצח | Prohibition (לֹא) | Absolute prohibition; "you shall not murder" |
 | 10 | תִנְאָ֑ף | 2 | s | m | נאף | Prohibition (לֹא) | Same pattern |
-| 11 | תִּגְנֹֽב | 2 | s | m | גנב | Prohibition (לֹא) | A-class; holem under R2 |
-| 12 | תַעֲנֶ֥ה | 2 | s | m | ענה | Prohibition (לֹא) | I-gutt. (ע); chateph-patach under ע in prefix |
-| 13 | תַחְמֹ֖ד | 2 | s | m | חמד | Prohibition (לֹא) | A-class; standard prefix + holem |
+| 11 | תִּגְנֹֽב | 2 | s | m | גנב | Prohibition (לֹא) | A-class; Holem under R2 |
+| 12 | תַעֲנֶ֥ה | 2 | s | m | ענה | Prohibition (לֹא) | I-gutt. (ע); chateph-Pathach under ע in prefix |
+| 13 | תַחְמֹ֖ד | 2 | s | m | חמד | Prohibition (לֹא) | A-class; standard prefix + Holem |
 | 14 | יְהִ֣י | 3 | s | m | היה | Jussive | III-ה; short jussive form (final ה dropped): יְהִי |
 | 15 | יִקָּו֗וּ | 3 | p | m | קוה | Jussive/Command | Niphal Jussive 3mp (not Qal); noted for recognition; dagesh forte in kaf |

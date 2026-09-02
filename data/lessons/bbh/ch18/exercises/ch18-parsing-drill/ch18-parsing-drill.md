@@ -70,35 +70,35 @@
 
 | # | Form | Conjugation | Person | Number | Gender | Root | Notes |
 |---|---|---|---|---|---|---|---|
-| 1 | שְׁמֹר | Imperative | 2nd | Singular | Masculine | שמר | Strong A-class; shewa + holem |
-| 2 | שִׁמְרִי | Imperative | 2nd | Singular | Feminine | שמר | + ִי suffix; hireq-yod |
+| 1 | שְׁמֹר | Imperative | 2nd | Singular | Masculine | שמר | Strong A-class; Shewa + Holem |
+| 2 | שִׁמְרִי | Imperative | 2nd | Singular | Feminine | שמר | + ִי suffix; Hireq-Yod |
 | 3 | שִׁמְרוּ | Imperative | 2nd | Plural | Masculine | שמר | + וּ suffix |
 | 4 | שְׁמֹרְנָה | Imperative | 2nd | Plural | Feminine | שמר | + נָה suffix |
-| 5 | שְׁמַע | Imperative | 2nd | Singular | Masculine | שמע | B-class; gutt. R3 forces patach |
+| 5 | שְׁמַע | Imperative | 2nd | Singular | Masculine | שמע | B-class; gutt. R3 forces Pathach |
 | 6 | שִׁמְעוּ | Imperative | 2nd | Plural | Masculine | שמע | + וּ suffix |
 | 7 | זְכֹר | Imperative | 2nd | Singular | Masculine | זכר | Strong A-class; "remember!" |
-| 8 | חֲזַק | Imperative | 2nd | Singular | Masculine | חזק | I-gutt. chateph; B-class patach; "be strong!" |
+| 8 | חֲזַק | Imperative | 2nd | Singular | Masculine | חזק | I-gutt. chateph; B-class Pathach; "be strong!" |
 | 9 | כְּתֹב | Imperative | 2nd | Singular | Masculine | כתב | Strong A-class; "write!" |
-| 10 | קְרָא | Imperative | 2nd | Singular | Masculine | קרא | III-א; qamets before quiescent aleph; "call/read!" |
+| 10 | קְרָא | Imperative | 2nd | Singular | Masculine | קרא | III-א; Qamets before quiescent aleph; "call/read!" |
 
 ### Part B
 
 | # | Form | Conjugation | Person | Number | Gender | Root | Weak Class | Notes |
 |---|---|---|---|---|---|---|---|---|
-| 11 | לֵךְ | Imperative | 2nd | Singular | Masculine | הלך | I-י | Extremely short; tsere; ה of הלך absent |
-| 12 | לְכוּ | Imperative | 2nd | Plural | Masculine | הלך | I-י | + וּ; shewa under ל |
+| 11 | לֵךְ | Imperative | 2nd | Singular | Masculine | הלך | I-י | Extremely short; Tsere; ה of הלך absent |
+| 12 | לְכוּ | Imperative | 2nd | Plural | Masculine | הלך | I-י | + וּ; Shewa under ל |
 | 13 | עֲשֵׂה | Imperative | 2nd | Singular | Masculine | עשה | III-ה + I-gutt. | ה retained in 2ms; chateph under ע |
 | 14 | עֲשׂוּ | Imperative | 2nd | Plural | Masculine | עשה | III-ה + I-gutt. | ה drops before -וּ |
-| 15 | רְאֵה | Imperative | 2nd | Singular | Masculine | ראה | III-ה | ה retained; tsere before ה |
-| 16 | קוּם | Imperative | 2nd | Singular | Masculine | קום | Biconsonantal | Full shureq vowel retained |
+| 15 | רְאֵה | Imperative | 2nd | Singular | Masculine | ראה | III-ה | ה retained; Tsere before ה |
+| 16 | קוּם | Imperative | 2nd | Singular | Masculine | קום | Biconsonantal | Full Shureq vowel retained |
 | 17 | קוּמִי | Imperative | 2nd | Singular | Feminine | קום | Biconsonantal | + ִי |
 | 18 | בֹּא | Imperative | 2nd | Singular | Masculine | בוא | Biconsonantal | Holem-waw; aleph quiesces |
-| 19 | שׁוּב | Imperative | 2nd | Singular | Masculine | שוב | Biconsonantal | Full shureq retained |
-| 20 | שֵׁב | Imperative | 2nd | Singular | Masculine | ישב | I-י | Short form; tsere; yod absent |
+| 19 | שׁוּב | Imperative | 2nd | Singular | Masculine | שוב | Biconsonantal | Full Shureq retained |
+| 20 | שֵׁב | Imperative | 2nd | Singular | Masculine | ישב | I-י | Short form; Tsere; yod absent |
 | 21 | צֵא | Imperative | 2nd | Singular | Masculine | יצא | I-י + III-א | Tsere; aleph quiesces at R3 |
 | 22 | תֵּן | Imperative | 2nd | Singular | Masculine | נתן | I-נ | Both nuns drop/assimilate; very short |
 | 23 | תְּנוּ | Imperative | 2nd | Plural | Masculine | נתן | I-נ | + וּ |
-| 24 | אֱמֹר | Imperative | 2nd | Singular | Masculine | אמר | I-aleph | Hateph-seghol under aleph; "say!" |
+| 24 | אֱמֹר | Imperative | 2nd | Singular | Masculine | אמר | I-aleph | Hateph-Seghol under aleph; "say!" |
 | 25 | קַח | Imperative | 2nd | Singular | Masculine | לקח | I-י | From יִקַּח; I-י short form |
 
 ### Part C

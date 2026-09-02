@@ -69,10 +69,10 @@ An answer key is at the bottom.
 | # | Translation | Function | Notes |
 |---|---|---|---|
 | 6 | it/God was revealed / he revealed himself | Passive or Reflexive | Gen 35:7 — "God was revealed to him" or "revealed himself"; the ambiguity is intentional in Niphal. |
-| 7 | he went up / ascended | Simple Action | Niphal of עלה sometimes overlaps with Qal meaning. Note the patach-furtive under the ע (III-ה + guttural). |
+| 7 | he went up / ascended | Simple Action | Niphal of עלה sometimes overlaps with Qal meaning. Note the Pathach-furtive under the ע (III-ה + guttural). |
 | 8 | he appeared / was seen | Passive/Reflexive | Gen 12:7 — "The LORD appeared to Abram"; classic Niphal of appearance. |
 | 9 | it will be built | Passive | Niphal imperfect of בנה; dagesh forte in בּ + ֶה ending. |
-| 10 | what has been done (to me) | Passive | Gen 20:9 — "What have you done to me?" / "what has been done." Patach-furtive before ה. |
+| 10 | what has been done (to me) | Passive | Gen 20:9 — "What have you done to me?" / "what has been done." Pathach-furtive before ה. |
 
 ### Part C — Hollow Roots
 

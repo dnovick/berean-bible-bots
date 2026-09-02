@@ -121,49 +121,49 @@
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
-| 1 | הֶעֱמִיד | Perfect | 3ms | עָמַד | seghol under הֶ + hateph-seghol under ע are the twin I-guttural m… |
-| 2 | וַיַּעֲמֵד | Wayyiqtol | 3ms | עָמַד | patach prefix + composite shewa under ע + tsere final |
-| 3 | יַעֲמִיד | Imperfect | 3ms | עָמַד | patach prefix + composite shewa; no dagesh in ע (guttural rule) |
-| 4 | הַעֲמֵד | Imperative | 2ms | עָמַד | הַ + composite shewa under ע + tsere — he/composite-shewa pattern |
-| 5 | מַעֲמִיד | Participle | ms | עָמַד | מַ + composite shewa under ע + chiriq — standard I-guttural parti… |
+| 1 | הֶעֱמִיד | Perfect | 3ms | עָמַד | Seghol under הֶ + hateph-Seghol under ע are the twin I-guttural m… |
+| 2 | וַיַּעֲמֵד | Wayyiqtol | 3ms | עָמַד | Pathach prefix + composite Shewa under ע + Tsere final |
+| 3 | יַעֲמִיד | Imperfect | 3ms | עָמַד | Pathach prefix + composite Shewa; no dagesh in ע (guttural rule) |
+| 4 | הַעֲמֵד | Imperative | 2ms | עָמַד | הַ + composite Shewa under ע + Tsere — he/composite-Shewa pattern |
+| 5 | מַעֲמִיד | Participle | ms | עָמַד | מַ + composite Shewa under ע + chiriq — standard I-guttural parti… |
 
 **Group 2 — III-ח/ע** — all Hiphil III-ח/ע
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
-| 6 | הִשְׁמִיעַ | Perfect | 3ms | שָׁמַע | chiriq-yod + patach furtive before final ע — patach not tsere |
-| 7 | וְהִשְׁמִיעַ | Imperfect | 3ms (w/vav) | שָׁמַע | patach furtive before final ע; vav + שׁ + chiriq-yod = standard I… |
-| 8 | יַשְׁמִיעַ | Imperfect | 3ms | שָׁמַע | patach prefix (not tsere) + chiriq-yod + patach furtive before ע |
-| 9 | הַשְׁמִיעוּ | Imperative | 2mp | שָׁמַע | הַ + chiriq-yod + patach before ע + וּ plural ending = III-ח/ע im… |
-| 10 | מַשְׁמִיעַ | Participle | ms | שָׁמַע | מַ + chiriq-yod + patach furtive before ע = III-ח/ע participle |
+| 6 | הִשְׁמִיעַ | Perfect | 3ms | שָׁמַע | chiriq-yod + Pathach furtive before final ע — Pathach not Tsere |
+| 7 | וְהִשְׁמִיעַ | Imperfect | 3ms (w/vav) | שָׁמַע | Pathach furtive before final ע; vav + שׁ + chiriq-yod = standard I… |
+| 8 | יַשְׁמִיעַ | Imperfect | 3ms | שָׁמַע | Pathach prefix (not Tsere) + chiriq-yod + Pathach furtive before ע |
+| 9 | הַשְׁמִיעוּ | Imperative | 2mp | שָׁמַע | הַ + chiriq-yod + Pathach before ע + וּ plural ending = III-ח/ע im… |
+| 10 | מַשְׁמִיעַ | Participle | ms | שָׁמַע | מַ + chiriq-yod + Pathach furtive before ע = III-ח/ע participle |
 
 **Group 3 — III-א** — all Hiphil III-א
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
-| 11 | הֶחֱטִיא | Perfect | 3ms | חָטָא | seghol under הֶ + composite shewa under ח = I-guttural + III-א; c… |
-| 12 | וַיַּחֲטִא | Wayyiqtol | 3ms | חָטָא | patach prefix + composite shewa + tsere + silent final א = Hiphil… |
-| 13 | יַחֲטִיאוּ | Imperfect | 3mp | חָטָא | patach prefix + composite shewa + chiriq-yod + silent א + וּ = II… |
-| 14 | הַחֲטִיא | Inf. Construct | — | חָטָא | הַ + composite shewa + chiriq-yod + silent final א = III-א inf. c… |
-| 15 | מַחֲטִיאֵי | Participle | mp cstr | חָטָא | מַ + composite shewa + chiriq-yod + silent א + ֵי = III-א ptc mp … |
+| 11 | הֶחֱטִיא | Perfect | 3ms | חָטָא | Seghol under הֶ + composite Shewa under ח = I-guttural + III-א; c… |
+| 12 | וַיַּחֲטִא | Wayyiqtol | 3ms | חָטָא | Pathach prefix + composite Shewa + Tsere + silent final א = Hiphil… |
+| 13 | יַחֲטִיאוּ | Imperfect | 3mp | חָטָא | Pathach prefix + composite Shewa + chiriq-yod + silent א + וּ = II… |
+| 14 | הַחֲטִיא | Inf. Construct | — | חָטָא | הַ + composite Shewa + chiriq-yod + silent final א = III-א inf. c… |
+| 15 | מַחֲטִיאֵי | Participle | mp cstr | חָטָא | מַ + composite Shewa + chiriq-yod + silent א + ֵי = III-א ptc mp … |
 
 **Group 4 — III-ה** — all Hiphil III-ה
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
-| 16 | הֶעֱלָה | Perfect | 3ms | עָלָה | qamets + ה ending; seghol under הֶ; III-ה I-guttural combination |
-| 17 | וַיַּעַל | Wayyiqtol | 3ms | עָלָה | apocopated — ה dropped; short patach under R2; I-guttural composi… |
-| 18 | יַעֲלֶה | Imperfect | 3ms | עָלָה | seghol + ה ending; composite shewa under ע; standard III-ה Hiphil… |
-| 19 | הַרְאֵנִי | Imperative | 2ms + 1cs suffix | רָאָה | tsere + ה retained (not apocopated) + suffix נִי; standard III-ה … |
-| 20 | מַרְאֶה | Participle | ms | רָאָה | מַ + composite shewa + seghol (not chiriq) + ה = III-ה Hiphil par… |
+| 16 | הֶעֱלָה | Perfect | 3ms | עָלָה | Qamets + ה ending; Seghol under הֶ; III-ה I-guttural combination |
+| 17 | וַיַּעַל | Wayyiqtol | 3ms | עָלָה | apocopated — ה dropped; short Pathach under R2; I-guttural composi… |
+| 18 | יַעֲלֶה | Imperfect | 3ms | עָלָה | Seghol + ה ending; composite Shewa under ע; standard III-ה Hiphil… |
+| 19 | הַרְאֵנִי | Imperative | 2ms + 1cs suffix | רָאָה | Tsere + ה retained (not apocopated) + suffix נִי; standard III-ה … |
+| 20 | מַרְאֶה | Participle | ms | רָאָה | מַ + composite Shewa + Seghol (not chiriq) + ה = III-ה Hiphil par… |
 
 **Group 5 — I-נ** — all Hiphil I-נ
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
 | 21 | הִפִּיל | Perfect | 3ms | נָפַל | dagesh forte in פּ (R2); נ assimilated; chiriq-yod = I-נ Hiphil |
-| 22 | וַיַּפֵּל | Wayyiqtol | 3ms | נָפַל | patach prefix + dagesh in R2 + tsere = I-נ Hiphil wayyiqtol |
-| 23 | יַפִּיל | Imperfect | 3ms | נָפַל | patach prefix + dagesh in R2 + chiriq = I-נ Hiphil imperfect |
+| 22 | וַיַּפֵּל | Wayyiqtol | 3ms | נָפַל | Pathach prefix + dagesh in R2 + Tsere = I-נ Hiphil wayyiqtol |
+| 23 | יַפִּיל | Imperfect | 3ms | נָפַל | Pathach prefix + dagesh in R2 + chiriq = I-נ Hiphil imperfect |
 | 24 | הַגִּשָׁה | Imperative | 2ms + ה | נָגַשׁ | הַ + dagesh in ג + cohortative ה; נ assimilated into ג; I-נ imper… |
 | 25 | וּמַגִּישׁ | Participle | ms | נָגַשׁ | מַ + dagesh in ג + chiriq = I-נ Hiphil participle; וּ is conjunct… |
 
@@ -171,43 +171,43 @@
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
-| 26 | הוֹצִיא | Perfect | 3ms | יָצָא | הוֹ prefix (holem-vav) — the signature I-י/vav Hiphil marker |
-| 27 | וַיּוֹצֵא | Wayyiqtol | 3ms | יָצָא | וַיּוֹ prefix — dagesh in יּ + holem-vav uniquely identifies I-י … |
-| 28 | יוֹצִיא | Imperfect | 3ms | יָצָא | יוֹ prefix (holem-vav) = I-י Hiphil imperfect; chiriq-yod in root |
-| 29 | וַיּוֹרֶד | Wayyiqtol | 3ms | יָרַד | וַיּוֹ prefix + seghol (apocopated ה) = I-י III-ה Hiphil wayyiqto… |
-| 30 | מוֹצִיא | Participle | ms | יָצָא | מוֹ prefix (holem-vav) — not מַ; uniquely marks I-י Hiphil partic… |
+| 26 | הוֹצִיא | Perfect | 3ms | יָצָא | הוֹ prefix (Holem Waw) — the signature I-י/vav Hiphil marker |
+| 27 | וַיּוֹצֵא | Wayyiqtol | 3ms | יָצָא | וַיּוֹ prefix — dagesh in יּ + Holem Waw uniquely identifies I-י … |
+| 28 | יוֹצִיא | Imperfect | 3ms | יָצָא | יוֹ prefix (Holem Waw) = I-י Hiphil imperfect; chiriq-yod in root |
+| 29 | וַיּוֹרֶד | Wayyiqtol | 3ms | יָרַד | וַיּוֹ prefix + Seghol (apocopated ה) = I-י III-ה Hiphil wayyiqto… |
+| 30 | מוֹצִיא | Participle | ms | יָצָא | מוֹ prefix (Holem Waw) — not מַ; uniquely marks I-י Hiphil partic… |
 
 **Group 7 — Biconsonantal** — all Hiphil Biconsonantal
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
-| 31 | הֵקִים | Perfect | 3ms | קוּם | הֵ prefix (tsere) — not הִ (hiriq); chiriq-yod in medial = Bicons… |
-| 32 | וַיָּקֶם | Wayyiqtol | 3ms | קוּם | qamets prefix + apocopated seghol final = Biconsonantal Hiphil wa… |
-| 33 | יָקִים | Imperfect | 3ms | קוּם | qamets under prefix consonant (יָ) = Biconsonantal Hiphil imperfe… |
-| 34 | הָקֵם | Imperative | 2ms | קוּם | הָ prefix (qamets) + tsere = Biconsonantal imperative |
-| 35 | מֵקִים | Participle | ms | קוּם | מֵ prefix (tsere) — not מַ; uniquely marks Biconsonantal Hiphil p… |
+| 31 | הֵקִים | Perfect | 3ms | קוּם | הֵ prefix (Tsere) — not הִ (hiriq); chiriq-yod in medial = Bicons… |
+| 32 | וַיָּקֶם | Wayyiqtol | 3ms | קוּם | Qamets prefix + apocopated Seghol final = Biconsonantal Hiphil wa… |
+| 33 | יָקִים | Imperfect | 3ms | קוּם | Qamets under prefix consonant (יָ) = Biconsonantal Hiphil imperfe… |
+| 34 | הָקֵם | Imperative | 2ms | קוּם | הָ prefix (Qamets) + Tsere = Biconsonantal imperative |
+| 35 | מֵקִים | Participle | ms | קוּם | מֵ prefix (Tsere) — not מַ; uniquely marks Biconsonantal Hiphil p… |
 
 **Group 8 — Geminate** — all Hiphil Geminate
 
 | # | Form | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
-| 36 | הֵסֵב | Perfect | 3ms | סָבַב | הֵ prefix (tsere) = Hiphil; R2=R3=ב; tsere in contracted stem = G… |
-| 37 | וַיַּסֵּב | Wayyiqtol | 3ms | סָבַב | patach prefix + dagesh forte in ב (R2=R3 doubled) + tsere = Gemin… |
-| 38 | יָסֵב | Imperfect | 3ms | סָבַב | qamets under יָ (= Biconsonantal/Geminate pattern); tsere in cont… |
-| 39 | הָסֵב | Imperative | 2ms | סָבַב | הָ prefix (qamets) + tsere in contracted R2=R3 = Geminate imperat… |
-| 40 | מֵסֵב | Participle | ms | סָבַב | מֵ prefix (tsere) + tsere in contracted R2=R3 = Geminate particip… |
+| 36 | הֵסֵב | Perfect | 3ms | סָבַב | הֵ prefix (Tsere) = Hiphil; R2=R3=ב; Tsere in contracted stem = G… |
+| 37 | וַיַּסֵּב | Wayyiqtol | 3ms | סָבַב | Pathach prefix + dagesh forte in ב (R2=R3 doubled) + Tsere = Gemin… |
+| 38 | יָסֵב | Imperfect | 3ms | סָבַב | Qamets under יָ (= Biconsonantal/Geminate pattern); Tsere in cont… |
+| 39 | הָסֵב | Imperative | 2ms | סָבַב | הָ prefix (Qamets) + Tsere in contracted R2=R3 = Geminate imperat… |
+| 40 | מֵסֵב | Participle | ms | סָבַב | מֵ prefix (Tsere) + Tsere in contracted R2=R3 = Geminate particip… |
 
 ### Part B
 
 | # | Form | Weak Class | Conj | PGN | Root | Note |
 |---|---|---|---|---|---|---|
-| 41 | וַיַּשְׁמַע | III-ח/ע | Wayyiqtol | 3ms | שָׁמַע | patach (not tsere) before final ע — guttural forces vowel lowerin… |
-| 42 | הֵשִׂים | Biconsonantal | Perfect | 3ms | שִׂים | הֵ prefix (tsere); root שׂ-י-מ with medial chiriq-yod = Biconsona… |
-| 43 | וַיַּעַל | III-ה + I-guttural | Wayyiqtol | 3ms | עָלָה | apocopated: ה dropped; short patach under R2; I-guttural composit… |
+| 41 | וַיַּשְׁמַע | III-ח/ע | Wayyiqtol | 3ms | שָׁמַע | Pathach (not Tsere) before final ע — guttural forces vowel lowerin… |
+| 42 | הֵשִׂים | Biconsonantal | Perfect | 3ms | שִׂים | הֵ prefix (Tsere); root שׂ-י-מ with medial chiriq-yod = Biconsona… |
+| 43 | וַיַּעַל | III-ה + I-guttural | Wayyiqtol | 3ms | עָלָה | apocopated: ה dropped; short Pathach under R2; I-guttural composit… |
 | 44 | הִגִּישׁ | I-נ | Perfect | 3ms | נָגַשׁ | הִ prefix + dagesh forte in ג (R2); נ assimilated into R2 = I-נ H… |
-| 45 | הָסֵב | Geminate | Imperative | 2ms | סָבַב | הָ prefix (qamets) — same as Biconsonantal הָקֵם; tsere from cont… |
-| 46 | הֶרְאָה | III-ה | Perfect | 3ms | רָאָה | qamets + ה ending; seghol under הֶ = III-ה Hiphil perfect |
+| 45 | הָסֵב | Geminate | Imperative | 2ms | סָבַב | הָ prefix (Qamets) — same as Biconsonantal הָקֵם; Tsere from cont… |
+| 46 | הֶרְאָה | III-ה | Perfect | 3ms | רָאָה | Qamets + ה ending; Seghol under הֶ = III-ה Hiphil perfect |
 | 47 | וַיּוֹרֶד | I-י | Wayyiqtol | 3ms | יָרַד | וַיּוֹ prefix uniquely identifies I-י Hiphil wayyiqtol |
-| 48 | מַעֲמִידִים | I-guttural | Participle | mp | עָמַד | מַ + composite shewa under ע + chiriq + ים = I-guttural Hiphil pa… |
-| 49 | הַמְצֵא | III-א | Imperative | 2ms | מָצָא | הַ prefix (patach) + tsere + silent final א = III-א Hiphil impera… |
-| 50 | וָאָקִים | Biconsonantal | Wayyiqtol | 1cs | קוּם | וָאָ (1cs wayyiqtol) + qamets + chiriq-yod = Biconsonantal 1cs wa… |
+| 48 | מַעֲמִידִים | I-guttural | Participle | mp | עָמַד | מַ + composite Shewa under ע + chiriq + ים = I-guttural Hiphil pa… |
+| 49 | הַמְצֵא | III-א | Imperative | 2ms | מָצָא | הַ prefix (Pathach) + Tsere + silent final א = III-א Hiphil impera… |
+| 50 | וָאָקִים | Biconsonantal | Wayyiqtol | 1cs | קוּם | וָאָ (1cs wayyiqtol) + Qamets + chiriq-yod = Biconsonantal 1cs wa… |

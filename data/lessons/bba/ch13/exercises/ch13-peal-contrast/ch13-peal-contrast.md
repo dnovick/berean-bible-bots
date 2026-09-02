@@ -18,7 +18,7 @@ For each numbered Aramaic verbal form drawn from Daniel or Ezra, provide:
 **Quick diagnostics:**
 
 - **Peal Perfect**: no prefix; base form ends in root consonants; common endings: 3ms bare (CvCaC), 3fs ‑ַת, 3mp ‑וּ, 1cp ‑נָא, 2ms ‑תְּ
-- **Peal Imperfect**: preformative yod/tav/nun/aleph + vowel before R1; 3ms: יִ prefix + qibbuts (or tsere) under R2; 3mp: יִCCvּן or יִCCוּן
+- **Peal Imperfect**: preformative yod/tav/nun/aleph + vowel before R1; 3ms: יִ prefix + Qibbuts (or Tsere) under R2; 3mp: יִCCvּן or יִCCוּן
 - **Key rule**: a consonantal prefix with a vowel before the root = Imperfect; no such prefix = Perfect
 - **1cp contrast**: Perfect ends in ‑נָא (e.g., שְׁמַעְנָא); Imperfect begins with נִ prefix (e.g., נִשְׁמַע)
 - **I-nun in Imperfect**: nun may assimilate into R2 in the Imperfect (compare יִּנְפֵּל — some forms retain nun, others show dagesh in R2)
@@ -89,8 +89,8 @@ For each numbered Aramaic verbal form drawn from Daniel or Ezra, provide:
 
 ### Answers to Discussion Questions
 
-**1.** The Hebrew Qal Perfect 3ms typically shows a patach under R1 and a patach under R2 (e.g., כָּתַב, with qamets under R1). The Aramaic Peal Perfect 3ms shows a vocal shewa (or reduced vowel) under R1 and a patach under R2: כְּתַב. In other words, the first syllable in Aramaic is reduced (short shewa vowel), whereas in Hebrew it carries a full long vowel (qamets/patach). This vowel reduction under R1 is the primary phonological distinction.
+**1.** The Hebrew Qal Perfect 3ms typically shows a Pathach under R1 and a Pathach under R2 (e.g., כָּתַב, with Qamets under R1). The Aramaic Peal Perfect 3ms shows a vocal Shewa (or reduced vowel) under R1 and a Pathach under R2: כְּתַב. In other words, the first syllable in Aramaic is reduced (short Shewa vowel), whereas in Hebrew it carries a full long vowel (Qamets/Pathach). This vowel reduction under R1 is the primary phonological distinction.
 
-**2.** Item 7 (שְׁמַעְנָא) is a **Perfect**: the ‑נָא ending (qamets + nun + aleph) is the Aramaic 1cp Perfect suffix, appended after the final root consonant with no prefix before R1. Item 8 (נִשְׁמַע) is an **Imperfect**: the נִ‑ is the 1cp imperfect preformative, placed before R1 of the root (שׁמע). The diagnostic: in the Perfect, נָא comes at the end; in the Imperfect, נִ comes at the beginning before the root.
+**2.** Item 7 (שְׁמַעְנָא) is a **Perfect**: the ‑נָא ending (Qamets + nun + aleph) is the Aramaic 1cp Perfect suffix, appended after the final root consonant with no prefix before R1. Item 8 (נִשְׁמַע) is an **Imperfect**: the נִ‑ is the 1cp imperfect preformative, placed before R1 of the root (שׁמע). The diagnostic: in the Perfect, נָא comes at the end; in the Imperfect, נִ comes at the beginning before the root.
 
 **3.** Item 16 (יִּנְפֵּל) retains the nun of the I-nun root נפל in the Imperfect — though the dagesh forte in the nun (יִּנ‑) in some forms indicates partial assimilation. In contrast, the Hebrew Qal Imperfect (יִפֹּל) shows complete assimilation of nun into R2 (the dagesh forte in פּ). This reveals that Biblical Aramaic is more conservative than Biblical Hebrew in treating I-nun roots in the Imperfect: Aramaic tends to retain or only partially assimilate the nun, whereas Hebrew regularly assimilates it completely. The dagesh in the nun of יִּנְפֵּל signals a doubling/assimilation process that is less advanced than the full Hebrew assimilation.

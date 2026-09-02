@@ -16,7 +16,7 @@ For each numbered Aramaic verbal form drawn from Daniel or Ezra, provide:
 
 **Quick diagnostics:**
 
-- **Haphel Perfect 3ms**: הַ‑/הוֹ‑ prefix + CvCēC (tsere under R2); I-yod/vav roots → הוֹ prefix (e.g., הוֹדַע from ידע, הֲקֵים from קום)
+- **Haphel Perfect 3ms**: הַ‑/הוֹ‑ prefix + CvCēC (Tsere under R2); I-yod/vav roots → הוֹ prefix (e.g., הוֹדַע from ידע, הֲקֵים from קום)
 - **Haphel Imperfect 3ms**: יְהַ‑ prefix before the root (e.g., יְהַחֲוֵה)
 - **Haphel Perfect 3mp**: same הַ‑/הוֹ‑ prefix + ‑וּ ending (e.g., הֲקֵימוּ)
 - **Peal**: no causative prefix; base form follows standard Peal patterns
@@ -81,19 +81,19 @@ For each numbered Aramaic verbal form drawn from Daniel or Ezra, provide:
 | 14 | הַשְׁלֵט | Haphel | Perfect | 3ms | שׁלט | he gave authority / he made to rule |
 | 15 | קְרָא | Peal | Perfect | 3ms | קרא | he called/read (III-aleph) |
 | 16 | יְהַחֲוֵה | Haphel | Imperfect | 3ms | חוה | he will declare / he will show (יְהַ‑ Haphel Impf prefix; III-he root) |
-| 17 | אֲמַר | Peal | Perfect | 3ms | אמר | he said (I-aleph; hateph-patach) |
+| 17 | אֲמַר | Peal | Perfect | 3ms | אמר | he said (I-aleph; Hateph Pathach) |
 | 18 | הֲקֵימוּ | Haphel | Perfect | 3mp | קום | they set up / they caused to stand (hollow root; ‑וּ = 3mp) |
 | 19 | נְפַקְנָא | Peal | Perfect | 1cp | נפק | we went out (‑נָא = 1cp Perfect suffix) |
 | 20 | הוֹדַעְנָּא | Haphel | Perfect | 1cp | ידע | we made known / we informed (הוֹ prefix; ‑נָּא = 1cp) |
 
 ### Answers to Discussion Questions
 
-**1.** The key prefix difference: **Aramaic Haphel** uses הַ‑ (patach under he) or הוֹ‑ (holam under he) as its causative prefix. **Hebrew Hiphil** uses הִ‑ (hireq under he) in the perfect. This is a vowel-only difference — both prefix a he before the root consonants to form the causative. The underlying morphological process is essentially the same: a he-prefix is prefixed to the Qal/Peal root base to form the causative. The vowel under the he is what distinguishes them: Aramaic has patach (הַ) vs. Hebrew hireq (הִ). The parallel breaks down somewhat with weak roots: Hebrew Hiphil I-nun roots often assimilate the nun into the dagesh in R2 (הִפִּיל from נפל), while Aramaic also assimilates the nun (הַפֵּל from נפל) — so the assimilation pattern is parallel.
+**1.** The key prefix difference: **Aramaic Haphel** uses הַ‑ (Pathach under he) or הוֹ‑ (holam under he) as its causative prefix. **Hebrew Hiphil** uses הִ‑ (Hireq under he) in the perfect. This is a vowel-only difference — both prefix a he before the root consonants to form the causative. The underlying morphological process is essentially the same: a he-prefix is prefixed to the Qal/Peal root base to form the causative. The vowel under the he is what distinguishes them: Aramaic has Pathach (הַ) vs. Hebrew Hireq (הִ). The parallel breaks down somewhat with weak roots: Hebrew Hiphil I-nun roots often assimilate the nun into the dagesh in R2 (הִפִּיל from נפל), while Aramaic also assimilates the nun (הַפֵּל from נפל) — so the assimilation pattern is parallel.
 
 **2.** Items 8 (הוֹדַע) and 10 (הֲקֵים) use **הוֹ‑** instead of **הַ‑** because of their root class:
 
-- **הוֹדַע** (root ידע, I-yod): In the Haphel, the causative he-prefix absorbs the initial yod of the root through a contraction with the patach vowel, producing a holam (וֹ). The yod of I-yod roots merges into the prefix vowel. Hebrew Hiphil parallel: הוֹדִיעַ (Hiphil of ידע) — the Hebrew also uses הוֹ prefix for I-yod Hiphil roots, following the same contraction (he + yod + vowel → הוֹ).
-- **הֲקֵים** (root קום, hollow): In the Haphel of hollow roots, the causative prefix takes a hateph-patach (הֲ) because of the guttural/vowel interaction with the contracted hollow root base (קֵים from qum). Hebrew Hiphil parallel: הֵקִים (Hiphil of קום) — Hebrew uses tsere-he (הֵ) for hollow Hiphil, while Aramaic uses hateph-patach (הֲ). Both reflect the phonological adjustments caused by the hollow root's contracted base.
+- **הוֹדַע** (root ידע, I-yod): In the Haphel, the causative he-prefix absorbs the initial yod of the root through a contraction with the Pathach vowel, producing a holam (וֹ). The yod of I-yod roots merges into the prefix vowel. Hebrew Hiphil parallel: הוֹדִיעַ (Hiphil of ידע) — the Hebrew also uses הוֹ prefix for I-yod Hiphil roots, following the same contraction (he + yod + vowel → הוֹ).
+- **הֲקֵים** (root קום, hollow): In the Haphel of hollow roots, the causative prefix takes a Hateph Pathach (הֲ) because of the guttural/vowel interaction with the contracted hollow root base (קֵים from qum). Hebrew Hiphil parallel: הֵקִים (Hiphil of קום) — Hebrew uses Tsere-he (הֵ) for hollow Hiphil, while Aramaic uses Hateph Pathach (הֲ). Both reflect the phonological adjustments caused by the hollow root's contracted base.
 
 **3.** Causativization of motion verbs works by adding an external agent (the causee) who makes someone or something perform the base motion:
 

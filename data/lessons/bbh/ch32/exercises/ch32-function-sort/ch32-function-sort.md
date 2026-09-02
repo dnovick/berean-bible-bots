@@ -11,7 +11,7 @@ The Pual is **always** the passive of the Piel. For each of the 20 Pual forms be
 1. Give the **Piel active meaning** (what the Piel form means — the doer's action).
 2. Translate the **Pual passive form** (what happens to the subject).
 
-The Pual diagnostic: **Qibbuts (ֻ) or holem (ֹ) under R1 + Dagesh Forte in R2**.
+The Pual diagnostic: **Qibbuts (ֻ) or Holem (ֹ) under R1 + Dagesh Forte in R2**.
 
 The answer key is at the bottom.
 
@@ -74,6 +74,6 @@ The answer key is at the bottom.
 ### Notes on Vowel Patterns
 
 - **Qibbuts under R1 (קֻ / שֻׁ / דֻ / סֻ):** The standard Pual marker for roots that take dagesh in R2.
-- **Holem under R1 (בֹּ / גֹּ):** Roots where R2 is a guttural (ר or שׁ) reject dagesh forte; holem appears instead of qibbuts as compensatory lengthening.
-- **Pual Participle:** Prefixed מְ + qibbuts/holem under R1 + qamets under R2 (e.g., מְקֻטָּל, מְבֹרָךְ, מְשֻׁלָּח).
-- **Perfect 3cp:** The qibbuts shortens to shewa under the dagesh (e.g., כֻּבְּדוּ, שֻׁלְּחוּ).
+- **Holem under R1 (בֹּ / גֹּ):** Roots where R2 is a guttural (ר or שׁ) reject dagesh forte; Holem appears instead of Qibbuts as compensatory lengthening.
+- **Pual Participle:** Prefixed מְ + Qibbuts/Holem under R1 + Qamets under R2 (e.g., מְקֻטָּל, מְבֹרָךְ, מְשֻׁלָּח).
+- **Perfect 3cp:** The Qibbuts shortens to Shewa under the dagesh (e.g., כֻּבְּדוּ, שֻׁלְּחוּ).

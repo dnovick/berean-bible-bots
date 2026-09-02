@@ -11,7 +11,7 @@ For each item: identify the **stem** (Hiphil or Hophal), the **conjugation**, th
 
 **Diagnostic clues:**
 - **Hiphil** — prefix הִ (perfect); prefix הַ / יַ (imperfect/wayyiqtol/imperative/infinitive); causative force; typically active.
-- **Hophal** — prefix vowel *qibbuts* (קֻ) in strong roots; *shureq* (וּ) in biconsonantal/I-yod roots; passive of the corresponding Hiphil.
+- **Hophal** — prefix vowel *Qibbuts* (קֻ) in strong roots; *Shureq* (וּ) in biconsonantal/I-yod roots; passive of the corresponding Hiphil.
 
 Items are ordered by scripture reference. Write your answers in the blank columns, then check the Answer Key below.
 

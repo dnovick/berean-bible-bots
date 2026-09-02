@@ -85,7 +85,7 @@ For each Hebrew form below:
 **Items 1–10: Nouns with suffixes**
 
 - **#1 סוּסוֹ** — The Holem (וֹ) at the end of an otherwise complete noun-stem = 3ms suffix. One of the most common morphological elements in the OT.
-- **#2 דְּבָרִי** — The absolute דָּבָר has two long vowels (Qamets–Qamets). Before the 1cs suffix ִי, the stem vowels reduce (Shewa + Patach). This is a standard "segolate-adjacent" reduction pattern.
+- **#2 דְּבָרִי** — The absolute דָּבָר has two long vowels (Qamets–Qamets). Before the 1cs suffix ִי, the stem vowels reduce (Shewa + Pathach). This is a standard "segolate-adjacent" reduction pattern.
 - **#3 מַלְכְּכֶם** — The noun מֶלֶךְ reduces to מַלְכּ- before 2mp suffix. Note the doubled consonant before the suffix (Dagesh Forte in כּ).
 - **#4 אָחִיהָ** — אָח (brother) is an irregular noun; it takes the form אָחִי- before suffixes (like the plural אַחִים). The 3fs suffix הָ follows.
 - **#5 בֵּיתְךָ** — בַּיִת (house) shifts to בֵּית- before Type 1 suffixes. The ְךָ (2ms) attaches with a Shewa.

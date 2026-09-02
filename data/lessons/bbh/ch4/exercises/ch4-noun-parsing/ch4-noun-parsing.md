@@ -41,27 +41,27 @@
 | # | Form | Gender | Number | State | Lexical Form | Gloss | Notes |
 |---|---|---|---|---|---|---|---|
 | 1 | מֶלֶךְ | m. | s. | abs. | מֶלֶךְ | king | Classic segolate; sg. abs. = lexical form |
-| 2 | מְלָכִים | m. | pl. | abs. | מֶלֶךְ | kings | Propretonic reduction: seghol → shewa; R2 qamets |
+| 2 | מְלָכִים | m. | pl. | abs. | מֶלֶךְ | kings | Propretonic reduction: Seghol → Shewa; R2 Qamets |
 | 3 | מַלְכֵי | m. | pl. | cstr. | מֶלֶךְ | kings of | Construct pl.; ים- → ֵי |
 | 4 | תּוֹרָה | f. | s. | abs. | תּוֹרָה | law, instruction | Feminine ָה- ending |
 | 5 | תּוֹרוֹת | f. | pl. | abs. or cstr. | תּוֹרָה | laws | Feminine plural וֹת- (abs. and cstr. identical) |
-| 6 | דְּבָרִים | m. | pl. | abs. | דָּבָר | words, things | R1 reduces: qamets → shewa |
+| 6 | דְּבָרִים | m. | pl. | abs. | דָּבָר | words, things | R1 reduces: Qamets → Shewa |
 | 7 | דִּבְרֵי | m. | pl. | cstr. | דָּבָר | words of | Construct pl.; both internal vowels short |
 | 8 | בָּנִים | m. | pl. | abs. | בֵּן | sons | Irregular plural of בֵּן |
 | 9 | בָּנוֹת | f. | pl. | abs. | בַּת | daughters | Irregular plural of בַּת (feminine pl.) |
 | 10 | אֲנָשִׁים | m. | pl. | abs. | אִישׁ | men | Irregular plural of אִישׁ; suppletive form |
 | 11 | נָשִׁים | f. | pl. | abs. | אִשָּׁה | women | Irregular plural of אִשָּׁה; suppletive form |
-| 12 | יָדַיִם | f. | du. | abs. | יָד | two hands | Dual of יָד; patach under yod marks dual |
+| 12 | יָדַיִם | f. | du. | abs. | יָד | two hands | Dual of יָד; Pathach under yod marks dual |
 | 13 | עֵינַיִם | f. | du. | abs. | עַיִן | two eyes | Dual of עַיִן; paired body part |
 | 14 | עָרִים | f. | pl. | abs. | עִיר | cities | Irregular plural; note vowel change (i → a) |
 | 15 | בָּתִּים | m. | pl. | abs. | בַּיִת | houses | Irregular plural; dagesh forte in tav |
-| 16 | יָמִים | m. | pl. | abs. | יוֹם | days | Vowel change in plural: holem waw → qamets |
+| 16 | יָמִים | m. | pl. | abs. | יוֹם | days | Vowel change in plural: Holem waw → Qamets |
 | 17 | נֶפֶשׁ | f. | s. | abs. | נֶפֶשׁ | soul, life | Segolate; grammatically feminine despite form |
 | 18 | נְפָשׁוֹת | f. | pl. | abs. | נֶפֶשׁ | souls | Feminine plural; propretonic reduction |
-| 19 | סְפָרִים | m. | pl. | abs. | סֵפֶר | books | Segolate (Qitl); R1 reduces to shewa |
+| 19 | סְפָרִים | m. | pl. | abs. | סֵפֶר | books | Segolate (Qitl); R1 reduces to Shewa |
 | 20 | שָׁנָה | f. | s. | abs. | שָׁנָה | year | Feminine ָה- ending; lexical form |
 | 21 | שָׁנָתַיִם | f. | du. | abs. | שָׁנָה | two years | Dual of שָׁנָה; time expression |
-| 22 | אֲרָצוֹת | f. | pl. | abs. | אֶרֶץ | lands, earth | Segolate; feminine pl.; hateph patach under aleph |
+| 22 | אֲרָצוֹת | f. | pl. | abs. | אֶרֶץ | lands, earth | Segolate; feminine pl.; hateph Pathach under aleph |
 | 23 | בְּנֵי | m. | pl. | cstr. | בֵּן | sons of | Construct pl. of בֵּן; very frequent phrase (בְּנֵי יִשְׂרָאֵל) |
 | 24 | מַלְכַּת | f. | s. | cstr. | מַלְכָּה | queen of | Construct sg. fem.; ָה- → ַת |
 | 25 | שְׁנַת | f. | s. | cstr. | שָׁנָה | year of | Construct sg. fem.; both vowels reduce |

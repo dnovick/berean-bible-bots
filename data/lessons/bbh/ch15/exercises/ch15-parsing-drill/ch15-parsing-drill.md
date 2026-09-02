@@ -22,7 +22,7 @@
 
 ---
 
-## Part B — B-Class (Patach) and Disambiguation
+## Part B — B-Class (Pathach) and Disambiguation
 
 | # | Form | Person | Number | Gender | Root | Notes |
 |---|---|---|---|---|---|---|
@@ -77,16 +77,16 @@ Only weak verbs like III-ה show a distinct Jussive form. Items 23–24 test thi
 
 | # | Form | Person | Number | Gender | Root | Notes |
 |---|---|---|---|---|---|---|
-| 11 | יִשְׁמַע | 3 | s | m | שמע | B-class patach |
+| 11 | יִשְׁמַע | 3 | s | m | שמע | B-class Pathach |
 | 12 | תִּשְׁמַע | 3/2 | s | f/m | שמע | Ambiguous: 3fs or 2ms — context required |
 | 13 | תִּשְׁמְעִי | 2 | s | f | שמע | Hireq-yod suffix disambiguates 2fs |
-| 14 | יִכְבַּד | 3 | s | m | כבד | Stative; patach under R2 |
-| 15 | תִּגְדַּל | 3/2 | s | f/m | גדל | Stative patach |
+| 14 | יִכְבַּד | 3 | s | m | כבד | Stative; Pathach under R2 |
+| 15 | תִּגְדַּל | 3/2 | s | f/m | גדל | Stative Pathach |
 | 16 | יִכְבְּדוּ | 3 | p | m | כבד | 3mp |
 | 17 | תִּשְׁמַעְנָה | 3/2 | p | f | שמע | Nah-ending; B-class |
-| 18 | אֶשְׁמַע | 1 | s | c | שמע | Patach under prefix (1cs) + B-class patach |
+| 18 | אֶשְׁמַע | 1 | s | c | שמע | Pathach under prefix (1cs) + B-class Pathach |
 | 19 | נִשְׁמַע | 1 | p | c | שמע | 1cp nun prefix |
-| 20 | יִגְדַּל | 3 | s | m | גדל | Stative patach |
+| 20 | יִגְדַּל | 3 | s | m | גדל | Stative Pathach |
 
 ### Part C
 

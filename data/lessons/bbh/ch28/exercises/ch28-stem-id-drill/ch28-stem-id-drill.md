@@ -89,7 +89,7 @@ The answer key is at the bottom.
 
 | Stem | Identifying Features |
 |---|---|
-| **Qal** | No prefix vowel change; base root vowels — Perfect qamets–patach; Imperfect hireq–holem; Participle holem–tsere (ms) |
-| **Niphal** | נִ prefix in Perfect; dagesh-forte in R1 in Imperfect/Wayyiqtol (nun assimilates); הִ + dagesh in Imperative/Inf. Abs.; נִ + qamets in Participle |
+| **Qal** | No prefix vowel change; base root vowels — Perfect Qamets–Pathach; Imperfect Hireq–Holem; Participle Holem–Tsere (ms) |
+| **Niphal** | נִ prefix in Perfect; dagesh-forte in R1 in Imperfect/Wayyiqtol (nun assimilates); הִ + dagesh in Imperative/Inf. Abs.; נִ + Qamets in Participle |
 | **Hiphil** | הִ prefix in Perfect; a-class prefix vowel + chiriq-yod in 2nd position in Imperfect; הַ in Imperative/Inf. Abs. (same form!); מַ + chiriq-yod in Participle |
 | **Hophal** | הָ prefix (Qamets Hatuf, o-class) in Perfect/Inf. Construct/Imperative; יָ prefix (o-class) in Imperfect/Wayyiqtol; מָ prefix in Participle |

@@ -91,8 +91,8 @@ For each Hebrew form below, identify:
 | Conjugation | Qal (נפל) | Niphal (נפל) | Distinguishing feature |
 |---|---|---|---|
 | Perfect 3ms | נָפַל | נִפַּל | dagesh forte in פּ (Niphal) |
-| Imperfect 3ms | יִפֹּל | יִפָּל | holem (Qal) vs. qamets (Niphal) |
-| Wayyiqtol 3ms | וַיִּפֹּל | וַיִּפָּל | holem (Qal) vs. qamets (Niphal) |
+| Imperfect 3ms | יִפֹּל | יִפָּל | Holem (Qal) vs. Qamets (Niphal) |
+| Wayyiqtol 3ms | וַיִּפֹּל | וַיִּפָּל | Holem (Qal) vs. Qamets (Niphal) |
 
 | Conjugation | Qal (שׁוב) | Niphal (שׁוב) | Distinguishing feature |
 |---|---|---|---|

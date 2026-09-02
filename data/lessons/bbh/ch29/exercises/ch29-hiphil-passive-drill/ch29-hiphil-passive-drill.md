@@ -59,9 +59,9 @@ The answer key is at the bottom.
 | **Biconsonantal (II-ו/י)** | Shureq (הוּ/יוּ/מוּ) | Only two root consonants; middle vowel contracts |
 | **III-ה (Lamed-He)** | Qibbuts (הֻ/יֻ/מֻ) | Perfect 3ms ends ָה; wayyiqtol apocopates |
 | **I-נ (Pe-Nun)** | Qibbuts (הֻ/יֻ/מֻ) | Dagesh forte in R2 (נ assimilated) |
-| **I-guttural (Pe-Guttural)** | Qibbuts (הֻ/יֻ/מֻ) | Composite shewa under R1 guttural |
-| **III-ח/ע (Lamed-Guttural)** | Qibbuts (הֻ/יֻ/מֻ) | Patach furtive before final ח or ע |
-| **III-א (Lamed-Aleph)** | Qibbuts (הֻ/יֻ/מֻ) | Patach → Qamets before quiesced silent א |
+| **I-guttural (Pe-Guttural)** | Qibbuts (הֻ/יֻ/מֻ) | Composite Shewa under R1 guttural |
+| **III-ח/ע (Lamed-Guttural)** | Qibbuts (הֻ/יֻ/מֻ) | Pathach furtive before final ח or ע |
+| **III-א (Lamed-Alef)** | Qibbuts (הֻ/יֻ/מֻ) | Pathach → Qamets before quiesced silent א |
 | **Geminate (II=III)** | Qibbuts (הֻ/יֻ/מֻ) | Dagesh forte in R2 (= R3); compact form |
 
 ---
@@ -70,19 +70,19 @@ The answer key is at the bottom.
 
 | # | Hophal Form | Root | Active (Hiphil) Meaning | Hophal Translation | Notes |
 |---|---|---|---|---|---|
-| 1 | הוּבַל | יבל | **Hiphil יָבַל**: to lead, carry, bring | he was led / brought | I-י: הוּ prefix (shureq); R1 י quiesces |
+| 1 | הוּבַל | יבל | **Hiphil יָבַל**: to lead, carry, bring | he was led / brought | I-י: הוּ prefix (Shureq); R1 י quiesces |
 | 2 | הוּבְאוּ | בוא | **Hiphil הֵבִיא**: to bring | they were brought (Gen 43:18) | Biconsonantal; 3cp suffix; brothers brought into Joseph's house |
 | 3 | הוּרַד | ירד | **Hiphil הוֹרִיד**: to bring down | he was brought down (Gen 39:1) | I-י: Joseph was caused to descend to Egypt |
-| 4 | הוּקַם | קום | **Hiphil הֵקִים**: to raise up, establish | the tabernacle was set up (Exo 40:17) | Biconsonantal; contracted stem; Patach under R2 |
-| 5 | הוּשַׁב | שׁוב | **Hiphil הֵשִׁיב**: to bring back, restore | the silver was brought back (Gen 43:12) | Biconsonantal; הוּ prefix; Patach under R2 |
-| 6 | יוּבַל | יבל | **Hiphil יָבַל**: to lead, bring | he will be led / brought | I-י: יוּ prefix (shureq) under imperfect prefix |
+| 4 | הוּקַם | קום | **Hiphil הֵקִים**: to raise up, establish | the tabernacle was set up (Exo 40:17) | Biconsonantal; contracted stem; Pathach under R2 |
+| 5 | הוּשַׁב | שׁוב | **Hiphil הֵשִׁיב**: to bring back, restore | the silver was brought back (Gen 43:12) | Biconsonantal; הוּ prefix; Pathach under R2 |
+| 6 | יוּבַל | יבל | **Hiphil יָבַל**: to lead, bring | he will be led / brought | I-י: יוּ prefix (Shureq) under imperfect prefix |
 | 7 | יוּבָא | בוא | **Hiphil הֵבִיא**: to bring | he will be brought | Biconsonantal; Qamets under R2 (I-ו + biconsonantal) |
-| 8 | יוּרַד | ירד | **Hiphil הוֹרִיד**: to bring down | he will be brought down | I-י: יוּ prefix; Patach under R2 |
-| 9 | יוּקַם | קום | **Hiphil הֵקִים**: to raise up | it will be raised up (Num 9:15) | Biconsonantal; contracted stem with Patach |
+| 8 | יוּרַד | ירד | **Hiphil הוֹרִיד**: to bring down | he will be brought down | I-י: יוּ prefix; Pathach under R2 |
+| 9 | יוּקַם | קום | **Hiphil הֵקִים**: to raise up | it will be raised up (Num 9:15) | Biconsonantal; contracted stem with Pathach |
 | 10 | יוּשַׁב | שׁוב | **Hiphil הֵשִׁיב**: to bring back | he will be brought back | Biconsonantal; יוּ prefix |
-| 11 | וַיּוּבַל | יבל | **Hiphil יָבַל**: to lead, bring | and he was led / brought | I-י Wayyiqtol; וַיּוּ prefix retains shureq |
+| 11 | וַיּוּבַל | יבל | **Hiphil יָבַל**: to lead, bring | and he was led / brought | I-י Wayyiqtol; וַיּוּ prefix retains Shureq |
 | 12 | וַיּוּבָא | בוא | **Hiphil הֵבִיא**: to bring | and he was brought (Gen 39:1) | Biconsonantal Wayyiqtol; Qamets under R2 |
-| 13 | וַיּוּרַד | ירד | **Hiphil הוֹרִיד**: to bring down | and Joseph was brought down (Gen 39:1) | I-י Wayyiqtol; וַיּוּ prefix; Patach under R2 |
+| 13 | וַיּוּרַד | ירד | **Hiphil הוֹרִיד**: to bring down | and Joseph was brought down (Gen 39:1) | I-י Wayyiqtol; וַיּוּ prefix; Pathach under R2 |
 | 14 | הוּלַד | ילד | **Hiphil הוֹלִיד**: to beget, cause to be born | he was born (Gen 21:5) | I-י: Hiphil = to father; Hophal = to be born |
 | 15 | יוּלַד | ילד | **Hiphil הוֹלִיד**: to beget | he will be born (Gen 4:26) | I-י Imperfect; the genealogical passive |
 | 16 | מוּבָא | בוא | **Hiphil הֵבִיא**: to bring | (one) being brought / that which is brought | Biconsonantal Participle; מוּ prefix; Qamets under R2 |
@@ -91,8 +91,8 @@ The answer key is at the bottom.
 | 19 | הֻגְלוּ | גלה | **Hiphil הִגְלָה**: to exile, deport | they were exiled / deported (Amos 1:6) | III-ה 3cp: plural suffix וּ replaces contracted ה mater |
 | 20 | הֻגַּד | נגד | **Hiphil הִגִּיד**: to declare, tell, report | it was told / reported (Deu 17:4) | I-נ: Dagesh forte in ג (נ assimilated); Qibbuts prefix |
 | 21 | וַיֻּגַּד | נגד | **Hiphil הִגִּיד**: to declare, tell | and it was told (Gen 22:20: וַיֻּגַּד לְאַבְרָהָם) | I-נ Wayyiqtol; the OT passive-report formula |
-| 22 | הֻעֲמַד | עמד | **Hiphil הֶעֱמִיד**: to station, set in place | he was stationed / set in place | I-guttural: Qibbuts prefix; composite shewa (hateph-patach) under ע |
-| 23 | יֻשְׁלַח | שׁלח | **Piel שָׁלַח**: to send, release | it will be sent / released (Job 18:8) | III-ח/ע: Qibbuts prefix; Patach under R2; final ח |
+| 22 | הֻעֲמַד | עמד | **Hiphil הֶעֱמִיד**: to station, set in place | he was stationed / set in place | I-guttural: Qibbuts prefix; composite Shewa (Hateph Pathach) under ע |
+| 23 | יֻשְׁלַח | שׁלח | **Piel שָׁלַח**: to send, release | it will be sent / released (Job 18:8) | III-ח/ע: Qibbuts prefix; Pathach under R2; final ח |
 | 24 | הֻמְצָא | מצא | **Qal מָצָא**: to find | it was found; was presented | III-א: Qibbuts prefix; Qamets before quiesced silent א |
 | 25 | יֻקַּם | נקם | **Qal נָקַם**: to avenge | he shall be avenged (Gen 4:15: יֻקַּם שִׁבְעָתַיִם) | Geminate: Qibbuts prefix + Dagesh forte in קּ (R2 = R3) |
 

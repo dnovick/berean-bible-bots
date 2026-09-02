@@ -65,23 +65,23 @@ Leave the answer columns blank, then check your work against the answer key belo
 | 4 | נִקְטַל | Niphal | Perfect | 3ms | קטל | נִ prefix assimilates in other forms; here visible |
 | 5 | דִּבֶּר | Piel | Perfect | 3ms | דבר | Dagesh in ב (R2); ִ–ֶ vowel pattern |
 | 6 | דָּבַר | Qal | Perfect | 3ms | דבר | No dagesh in ב; basic a–a Qal perfect |
-| 7 | יְדַבֵּר | Piel | Imperfect | 3ms | דבר | Shewa prefix + dagesh in ב + tsere |
-| 8 | יִדְבַּר | Qal | Imperfect | 3ms | דבר | Chirik prefix, no dagesh in ב, patach under ב |
-| 9 | יַדְבִּיר | Hiphil | Imperfect | 3ms | דבר | Patach prefix (יַ) + chirik + yod |
-| 10 | יִדָּבֵר | Niphal | Imperfect | 3ms | דבר | Dagesh in ד (assimilated נ) + qamets-tsere |
-| 11 | וַיְדַבֵּר | Piel | Wayyiqtol | 3ms | דבר | Wayyiqtol waw + Piel imperfect (shewa + dagesh in ב) |
+| 7 | יְדַבֵּר | Piel | Imperfect | 3ms | דבר | Shewa prefix + dagesh in ב + Tsere |
+| 8 | יִדְבַּר | Qal | Imperfect | 3ms | דבר | Chirik prefix, no dagesh in ב, Pathach under ב |
+| 9 | יַדְבִּיר | Hiphil | Imperfect | 3ms | דבר | Pathach prefix (יַ) + chirik + yod |
+| 10 | יִדָּבֵר | Niphal | Imperfect | 3ms | דבר | Dagesh in ד (assimilated נ) + Qamets-Tsere |
+| 11 | וַיְדַבֵּר | Piel | Wayyiqtol | 3ms | דבר | Wayyiqtol waw + Piel imperfect (Shewa + dagesh in ב) |
 | 12 | וַיִּדְבַּר | Qal | Wayyiqtol | 3ms | דבר | Waw + dagesh in י (wayyiqtol) + Qal imperfect pattern |
-| 13 | וַיַּדְבֵּר | Hiphil | Wayyiqtol | 3ms | דבר | Waw + patach (יַ) + Hiphil imperfect |
+| 13 | וַיַּדְבֵּר | Hiphil | Wayyiqtol | 3ms | דבר | Waw + Pathach (יַ) + Hiphil imperfect |
 | 14 | וַיִּדָּבֵר | Niphal | Wayyiqtol | 3ms | דבר | Waw + assimilated-נ dagesh in ד + Niphal vowels |
-| 15 | דַּבֵּר | Piel | Imperative | 2ms | דבר | Patach + dagesh in ב + tsere; no prefix; identical to #19 (Piel Inf. Abs.) |
-| 16 | דְּבַר | Qal | Imperative | 2ms | דבר | Shewa under ד, patach under ב; no dagesh in ב |
+| 15 | דַּבֵּר | Piel | Imperative | 2ms | דבר | Pathach + dagesh in ב + Tsere; no prefix; identical to #19 (Piel Inf. Abs.) |
+| 16 | דְּבַר | Qal | Imperative | 2ms | דבר | Shewa under ד, Pathach under ב; no dagesh in ב |
 | 17 | הַדְבֵּר | Hiphil | Imperative | 2ms | דבר | הַ prefix + Hiphil vowel chain |
-| 18 | הִדָּבֵר | Niphal | Imperative | 2ms | דבר | הִ + dagesh (assimilated נ) + tsere |
+| 18 | הִדָּבֵר | Niphal | Imperative | 2ms | דבר | הִ + dagesh (assimilated נ) + Tsere |
 | 19 | דַּבֵּר | Piel | Inf. Absolute | — | דבר | Identical in form to Piel Imperative 2ms (#15); context determines function |
-| 20 | דָּבוֹר | Qal | Inf. Absolute | — | דבר | Qamets + holem waw = Qal Inf. Abs. pattern |
-| 21 | מְדַבֵּר | Piel | Participle | ms | דבר | מְ prefix + dagesh in ב + tsere |
-| 22 | דֹּבֵר | Qal | Participle | ms | דבר | Holem + tsere; no מ prefix = Qal act. ptc. pattern |
+| 20 | דָּבוֹר | Qal | Inf. Absolute | — | דבר | Qamets + Holem waw = Qal Inf. Abs. pattern |
+| 21 | מְדַבֵּר | Piel | Participle | ms | דבר | מְ prefix + dagesh in ב + Tsere |
+| 22 | דֹּבֵר | Qal | Participle | ms | דבר | Holem + Tsere; no מ prefix = Qal act. ptc. pattern |
 | 23 | מַדְבִּיר | Hiphil | Participle | ms | דבר | מַ prefix + chirik + yod = Hiphil ptc. |
-| 24 | נִדְבָּר | Niphal | Participle | ms | דבר | נִ prefix + qamets = Niphal ptc. pattern |
+| 24 | נִדְבָּר | Niphal | Participle | ms | דבר | נִ prefix + Qamets = Niphal ptc. pattern |
 
 > **Note on items 15 and 19:** דַּבֵּר is spelled identically whether it is the Piel Imperative 2ms ("Speak!") or the Piel Infinitive Absolute. For strong roots these two forms always overlap. Context — specifically whether the form functions as a command or as an adverbial intensifier alongside a finite verb — is the only distinguishing factor.

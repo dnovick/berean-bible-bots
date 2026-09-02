@@ -131,20 +131,20 @@
 
 | # | Form | Root | Class | Function | Gloss |
 |---|---|---|---|---|---|
-| 1 | אָכֹ֥ל | אכל | I-aleph | Emphatic | "you may freely eat"; IA + Imperfect of same root = emphatic permission; qamets under aleph |
+| 1 | אָכֹ֥ל | אכל | I-aleph | Emphatic | "you may freely eat"; IA + Imperfect of same root = emphatic permission; Qamets under aleph |
 | 2 | מ֥וֹת | מות | Biconsonantal | Emphatic | "you shall surely die"; IA + Imperfect 2ms of same root = certain death; biconsonantal IA identical to bare IC — context (no preposition, paired verb) = IA |
 
 ### Passage 2 — Exo 3:7
 
 | # | Form | Root | Class | Function | Gloss |
 |---|---|---|---|---|---|
-| 3 | רָאֹ֣ה | ראה | III-ה | Emphatic | "I have surely seen"; III-ה IA ends in ה (contrast IC: רְאוֹת); qamets + holem; God's emphatic declaration of attentive concern |
+| 3 | רָאֹ֣ה | ראה | III-ה | Emphatic | "I have surely seen"; III-ה IA ends in ה (contrast IC: רְאוֹת); Qamets + Holem; God's emphatic declaration of attentive concern |
 
 ### Passage 3 — Exo 20:8 / Deu 5:12
 
 | # | Form | Root | Class | Function | Gloss |
 |---|---|---|---|---|---|
-| 4 | זָכ֕וֹר | זכר | Strong A | Imperatival | "Remember!"; IA used as stand-alone command; no paired finite verb of same root; qamets + holem-waw |
+| 4 | זָכ֕וֹר | זכר | Strong A | Imperatival | "Remember!"; IA used as stand-alone command; no paired finite verb of same root; Qamets + Holem-waw |
 | 5 | שָׁמ֗וֹר | שמר | Strong A | Imperatival | "Keep/Observe!"; same imperatival IA construction; Deu version of the Sabbath command; the two forms (זָכ֕וֹר / שָׁמ֗וֹר) show that IA can express the Sabbath command in both its forms |
 
 ### Passage 4 — Gen 8:3, 5
@@ -152,9 +152,9 @@
 | # | Form | Root | Class | Function | Gloss |
 |---|---|---|---|---|---|
 | 6 | הָל֣וֹךְ | הלך | I-י | Manner/Progressive | "going"; I-י IA retains full form; paired with שׁוֹב = "going to and fro" (steady recession) |
-| 7 | וָ/שׁ֑וֹב | שוב | Biconsonantal | Manner | "returning"; second IA in the pair; full shureq |
+| 7 | וָ/שׁ֑וֹב | שוב | Biconsonantal | Manner | "returning"; second IA in the pair; full Shureq |
 | 8 | הָל֣וֹךְ | הלך | I-י | Progressive | same form; second paired IA sequence describing continued recession |
-| 9 | וְ/חָס֔וֹר | חסר | Strong A | Progressive | "decreasing"; IA of חסר; holem on R2; the IA pair describes ongoing diminishment |
+| 9 | וְ/חָס֔וֹר | חסר | Strong A | Progressive | "decreasing"; IA of חסר; Holem on R2; the IA pair describes ongoing diminishment |
 
 ### Passage 5 — Gen 26:13
 
@@ -173,13 +173,13 @@
 
 | # | Form | Root | Class | Function | Gloss |
 |---|---|---|---|---|---|
-| 13 | שָׁמ֣וֹר | שמר | Strong A | Emphatic | "diligently keep"; IA + Imperfect 2mp; Deuteronomic command style; qamets + holem-waw |
+| 13 | שָׁמ֣וֹר | שמר | Strong A | Emphatic | "diligently keep"; IA + Imperfect 2mp; Deuteronomic command style; Qamets + Holem-waw |
 
 ### Passage 8 — Deu 8:19
 
 | # | Form | Root | Class | Function | Gloss |
 |---|---|---|---|---|---|
-| 14 | שָׁכֹ֤חַ | שכח | Strong B (gutt. R3) | Emphatic | "ever forget"; IA + Imperfect of same root in conditional clause; qamets + holem + patach before gutt. ח |
+| 14 | שָׁכֹ֤חַ | שכח | Strong B (gutt. R3) | Emphatic | "ever forget"; IA + Imperfect of same root in conditional clause; Qamets + Holem + Pathach before gutt. ח |
 
 ### Passage 9 — Num 15:35
 

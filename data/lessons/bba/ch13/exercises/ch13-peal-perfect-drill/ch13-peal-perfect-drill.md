@@ -83,12 +83,12 @@ All forms are Peal perfect. Verb types include strong roots and several weak cla
 ### Answers to Reflection Questions
 
 **1.** The three distinctive Aramaic endings and their Hebrew counterparts:
-- 1cs: Aramaic **ֵת-** (tsere + tav) vs. Hebrew **-תִּי**. Tested in item 15 (כְּתָבֵת).
-- 1cp: Aramaic **-נָא** (qamets + nun + aleph) vs. Hebrew **-נוּ**. Tested in items 4 (יְהַבְנָא) and 20 (בְּנַיְנָא).
-- 2mp: Aramaic **-תּוּן** (tav + shureq + nun) vs. Hebrew **-תֶּם**. Tested in item 18 (עֲבַדְתּוּן).
+- 1cs: Aramaic **ֵת-** (Tsere + tav) vs. Hebrew **-תִּי**. Tested in item 15 (כְּתָבֵת).
+- 1cp: Aramaic **-נָא** (Qamets + nun + aleph) vs. Hebrew **-נוּ**. Tested in items 4 (יְהַבְנָא) and 20 (בְּנַיְנָא).
+- 2mp: Aramaic **-תּוּן** (tav + Shureq + nun) vs. Hebrew **-תֶּם**. Tested in item 18 (עֲבַדְתּוּן).
 
-**2.** Item 8 is קָם (3ms: bare stem, long qamets base, no suffix) and item 19 is קָמַת (3fs: the 3fs ending **-ַת** is added). The grammatical feature that changed is gender (masculine → feminine). The tav ending signals feminine singular.
+**2.** Item 8 is קָם (3ms: bare stem, long Qamets base, no suffix) and item 19 is קָמַת (3fs: the 3fs ending **-ַת** is added). The grammatical feature that changed is gender (masculine → feminine). The tav ending signals feminine singular.
 
 **3.** הֲוָת (item 9) ends in tav because the 3fs ending **-ַת** was added to the III-he root הוה — the root's final he dropped and the tav ending took its place. בְּנָה (item 13) ends in he-mater because it is the **3ms** form, where no suffix is added and the root's final he appears as a mater lectionis for the long â vowel. The presence of tav = feminine singular; the presence of he-mater = 3ms.
 
-**4.** Item 1 is אֲמַר (3ms: bare form, hateph-patach under aleph, no suffix). Item 14 is אֲמַרוּ (3mp: same base form, with the **-וּ** plural ending appended). The formal difference is the presence of the **וּ-** suffix in item 14. The hateph-patach under the initial aleph is identical in both — that is the I-aleph diagnostic. The only PGN difference is the number ending.
+**4.** Item 1 is אֲמַר (3ms: bare form, Hateph Pathach under aleph, no suffix). Item 14 is אֲמַרוּ (3mp: same base form, with the **-וּ** plural ending appended). The formal difference is the presence of the **וּ-** suffix in item 14. The Hateph Pathach under the initial aleph is identical in both — that is the I-aleph diagnostic. The only PGN difference is the number ending.

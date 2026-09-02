@@ -63,9 +63,9 @@
 | # | Pair | IA | Root | Class | Function | Gloss |
 |---|---|---|---|---|---|---|
 | 1 | מ֥וֹת — תָּמוּת | מ֥וֹת | מות | Biconsonantal | Emphatic | "you shall surely die" — death penalty formula; IA before Imperfect 2ms of same root |
-| 2 | אָכֹ֥ל — תֹּאכֵֽל | אָכֹ֥ל | אכל | I-aleph | Emphatic | "you may freely eat" — permission; qamets under aleph |
-| 3 | שָׁמ֣וֹעַ — תִּשְׁמָע | שָׁמ֣וֹעַ | שמע | Strong B (gutt.) | Emphatic | "hear attentively"; qamets + holem-waw + patach at gutt. R3 |
-| 4 | שָׁמ֣וֹר — תִּשְׁמְרוּן | שָׁמ֣וֹר | שמר | Strong A | Emphatic | "carefully keep"; qamets + holem-waw on R2 |
+| 2 | אָכֹ֥ל — תֹּאכֵֽל | אָכֹ֥ל | אכל | I-aleph | Emphatic | "you may freely eat" — permission; Qamets under aleph |
+| 3 | שָׁמ֣וֹעַ — תִּשְׁמָע | שָׁמ֣וֹעַ | שמע | Strong B (gutt.) | Emphatic | "hear attentively"; Qamets + Holem-waw + Pathach at gutt. R3 |
+| 4 | שָׁמ֣וֹר — תִּשְׁמְרוּן | שָׁמ֣וֹר | שמר | Strong A | Emphatic | "carefully keep"; Qamets + Holem-waw on R2 |
 | 5 | רָאֹ֣ה — רָאִ֛יתִי | רָאֹ֣ה | ראה | III-ה | Emphatic | "I have surely seen"; ה retained; burning bush declaration (Exo 3:7) |
 | 6 | טָרֹ֥ף — טֹרַ֖ף | טָרֹ֥ף | טרף | Strong A | Emphatic | "he has surely been torn" (Gen 44:28); IA + passive Perfect = certainty |
 | 7 | נָת֤וֹן — יִנָּתֵן | נָת֤וֹן | נתן | I-נ | Emphatic | "it shall certainly be given"; both nuns retained (contrast IC תֵּת) |
@@ -75,12 +75,12 @@
 
 | # | Form | IA? | Root | Class | Function | Notes |
 |---|---|---|---|---|---|---|
-| 9 | זָכ֕וֹר | IA | זכר | Strong A | Imperatival | "Remember!" — Exo 20:8; IA stands alone as command; qamets + holem-waw |
+| 9 | זָכ֕וֹר | IA | זכר | Strong A | Imperatival | "Remember!" — Exo 20:8; IA stands alone as command; Qamets + Holem-waw |
 | 10 | שָׁמ֗וֹר | IA | שמר | Strong A | Imperatival | "Keep/Observe!" — Deu 5:12; same structure as זָכ֕וֹר |
 | 11 | הָל֣וֹךְ | IA | הלך | I-י | Manner/Progressive | "going"; paired with another IA (הָל֣וֹךְ וְגָדֵל = "growing greater"); retains full yod-shape |
 | 12 | יָצוֹא֙ | IA | יצא | I-י + III-א | Emphatic/Manner | "going out"; IA retains yod-shape (contrast IC צֵאת) |
 | 13 | הָי֧וֹ | IA | היה | III-ה | Emphatic/Verbal noun | "being/surely be"; ה retained |
-| 14 | גָּאֹ֖ל | IA | גאל | Strong A | Emphatic | "surely redeem"; Leviticus legal formula; qamets + holem |
+| 14 | גָּאֹ֖ל | IA | גאל | Strong A | Emphatic | "surely redeem"; Leviticus legal formula; Qamets + Holem |
 
 ### Part C
 
@@ -88,12 +88,12 @@
 |---|---|---|---|---|---|
 | 15 | מ֥וֹת | preceded by לָ | **IC** | מות | Biconsonantal IC of מות ("to die"); the preposition לָ marks IC, not IA |
 | 16 | מ֥וֹת | followed by תָּמוּת | **IA** | מות | Same form, but no preposition and paired with finite verb = emphatic IA |
-| 17 | שָׁמ֣וֹר | no context | **IA** | שמר | Qamets under R1 = IA; IC/Imper. would have shewa |
+| 17 | שָׁמ֣וֹר | no context | **IA** | שמר | Qamets under R1 = IA; IC/Imper. would have Shewa |
 | 18 | שְׁמֹר | no context | **IC or Imper.** | שמר | Shewa under R1 = IC or Imperative 2ms; ambiguous without context |
-| 19 | שָׁמַ֣ר | no context | **Perfect 3ms** | שמר | Qamets + patach = Qal Perfect 3ms; not IA (IA would have holem on R2: שָׁמ֣וֹר) |
+| 19 | שָׁמַ֣ר | no context | **Perfect 3ms** | שמר | Qamets + Pathach = Qal Perfect 3ms; not IA (IA would have Holem on R2: שָׁמ֣וֹר) |
 | 20 | יִשְׁמֹ֣ר | no context | **Imperfect 3ms** | שמר | יִ– prefix = Imperfect; cannot be IA |
-| 21 | זָכ֕וֹר | imperatival context | **Imperatival IA** | זכר | Qamets + holem-waw; IA functions as command when no paired finite verb; Exo 20:8 |
-| 22 | לִ/זְכֹר | preceded by כִּי | **IC** | זכר | לִ prefix = IC; shewa under ז confirms IC; "in order to remember" |
-| 23 | לֶ/כֶת | no context | **IC** | הלך | I-י contracted IC form (seghol-taw); IA of הלך would be הָל֣וֹךְ |
+| 21 | זָכ֕וֹר | imperatival context | **Imperatival IA** | זכר | Qamets + Holem-waw; IA functions as command when no paired finite verb; Exo 20:8 |
+| 22 | לִ/זְכֹר | preceded by כִּי | **IC** | זכר | לִ prefix = IC; Shewa under ז confirms IC; "in order to remember" |
+| 23 | לֶ/כֶת | no context | **IC** | הלך | I-י contracted IC form (Seghol-taw); IA of הלך would be הָל֣וֹךְ |
 | 24 | הָל֣וֹךְ | followed by וָ/שׁ֑וֹב | **IA (Manner)** | הלך | Paired IAs (hālôk wāšôb) describe manner/progressive action (Gen 8:3) |
-| 25 | הָלַ֥ךְ | no context | **Perfect 3ms** | הלך | Qamets + patach = Perfect 3ms; note: IA is הָל֣וֹךְ (holem-waw, not patach) |
+| 25 | הָלַ֥ךְ | no context | **Perfect 3ms** | הלך | Qamets + Pathach = Perfect 3ms; note: IA is הָל֣וֹךְ (Holem-waw, not Pathach) |

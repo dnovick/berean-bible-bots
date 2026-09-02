@@ -187,14 +187,14 @@
 
 | # | Form | Act./Pass. | Root | Class | G/N | Function | Gloss |
 |---|---|---|---|---|---|---|---|
-| 1 | אָר֤וּר | Passive | ארר | Geminate | ms | Predicate | "you are cursed"; qamets + shureq (qatûl); stands as predicate of subject אַתָּה |
+| 1 | אָר֤וּר | Passive | ארר | Geminate | ms | Predicate | "you are cursed"; Qamets + Shureq (qatûl); stands as predicate of subject אַתָּה |
 | 2 | אָר֤וּר | Passive | ארר | Geminate | ms | Predicate | same form and function in Cain's curse; fixed liturgical formula |
 
 ### Passage 2 — Gen 14:19 / Gen 24:27
 
 | # | Form | Act./Pass. | Root | Class | G/N | Function | Gloss |
 |---|---|---|---|---|---|---|---|
-| 3 | בָּר֤וּךְ | Passive | ברך | Strong A | ms | Predicate | "blessed is Abram"; qamets + shureq; predicate of אַבְרָם |
+| 3 | בָּר֤וּךְ | Passive | ברך | Strong A | ms | Predicate | "blessed is Abram"; Qamets + Shureq; predicate of אַבְרָם |
 | 4 | בָּר֤וּךְ | Passive | ברך | Strong A | ms | Predicate | "blessed is the LORD"; same form; blessing formula applied to God |
 
 ### Passage 3 — Gen 18:1
@@ -231,13 +231,13 @@
 
 | # | Form | Act./Pass. | Root | Class | G/N | Function | Gloss |
 |---|---|---|---|---|---|---|---|
-| 10 | בְּלוּלֹ֥ת | Passive | בלל | Geminate | fp | Attributive | "mixed with oil"; agrees with חַלּוֹת (loaves, fp); shewa + shureq + וֹת |
+| 10 | בְּלוּלֹ֥ת | Passive | בלל | Geminate | fp | Attributive | "mixed with oil"; agrees with חַלּוֹת (loaves, fp); Shewa + Shureq + וֹת |
 
 ### Passage 10 — Gen 37:2 / Num 27:17
 
 | # | Form | Act./Pass. | Root | Class | G/N | Function | Gloss |
 |---|---|---|---|---|---|---|---|
-| 11 | רֹעֶ֩ה (Gen 37:2) | Active | רעה | III-ה | ms | Predicate (progressive) | "was shepherding"; describes Joseph's ongoing occupation; III-ה form (holem-waw + seghol + ה) |
+| 11 | רֹעֶ֩ה (Gen 37:2) | Active | רעה | III-ה | ms | Predicate (progressive) | "was shepherding"; describes Joseph's ongoing occupation; III-ה form (Holem-waw + Seghol + ה) |
 | 12 | רֹעֶ֖ה (Num 27:17) | Active | רעה | III-ה | ms | Substantive | "shepherd"; used as a noun ("a shepherd they have not"); same form, different function |
 
 ### Passage 11 — Lev 25:25
@@ -257,7 +257,7 @@
 | # | Form | Act./Pass. | Root | Class | G/N | Function | Gloss |
 |---|---|---|---|---|---|---|---|
 | 15 | נֹתֵ֥ן | Active | נתן | I-נ | ms | Substantive — "giver / the one who gives"; nun retained; most common Torah active ptc. (53×) |
-| 16 | יוֹשְׁבֵ֣י | Active | ישב | I-י | mp construct | Attributive/Substantive — "those who dwell in / inhabitants of"; mp construct (tsere-yod); I-י form |
+| 16 | יוֹשְׁבֵ֣י | Active | ישב | I-י | mp construct | Attributive/Substantive — "those who dwell in / inhabitants of"; mp construct (Tsere-yod); I-י form |
 
 ---
 

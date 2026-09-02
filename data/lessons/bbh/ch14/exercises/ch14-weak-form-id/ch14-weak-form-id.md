@@ -99,7 +99,7 @@
    root knowledge do you need?
 
 2. Compare #6 (מָצָא, III-א) and #26 (קָם, Biconsonantal). Both are Qal Perfect 3ms
-   with qamets. How would you tell which class each belongs to? What are the visual cues?
+   with Qamets. How would you tell which class each belongs to? What are the visual cues?
 
 3. Forms #1 (עָשָׂה, III-ה, 3ms) and a hypothetical Qal Perfect 3fs of a strong root
    (e.g., שָׁמְרָה) both end in ָה-. How do you distinguish the III-ה 3ms from a strong
@@ -126,27 +126,27 @@
 | 3 | גָּלְתָה | III-ה | 3 | s | f | גלה | 3fs תָה- ending (not ָה-) |
 | 4 | עָשׂוּ | III-ה | 3 | p | c | עשה | Final ה drops before וּ- |
 | 5 | עֲלִיתֶם | III-ה | 2 | p | m | עלה | Hireq-yod before 2mp תֶּם- |
-| 6 | מָצָא | III-א | 3 | s | m | מצא | Silent aleph; qamets before א |
+| 6 | מָצָא | III-א | 3 | s | m | מצא | Silent aleph; Qamets before א |
 | 7 | קָרְאָה | III-א | 3 | s | f | קרא | III-א 3fs: ָאָה- |
 | 8 | חָטָ֫אתִי | III-א | 1 | s | c | חטא | III-א 1cs; aleph quiesces |
 | 9 | מָצְאוּ | III-א | 3 | p | c | מצא | III-א 3cp: ָאוּ- |
 | 10 | מְצָאתֶם | III-א | 2 | p | m | מצא | III-א 2mp |
-| 11 | שָׁמַ֫עַ | III-gutt. | 3 | s | m | שמע | Patach furtive before ע |
-| 12 | שָׁלַ֫חַ | III-gutt. | 3 | s | m | שלח | Patach furtive before ח |
+| 11 | שָׁמַ֫עַ | III-gutt. | 3 | s | m | שמע | Pathach furtive before ע |
+| 12 | שָׁלַ֫חַ | III-gutt. | 3 | s | m | שלח | Pathach furtive before ח |
 | 13 | שָׁמַעְתִּי | III-gutt. | 1 | s | c | שמע | Closed syllable; no furtive |
 | 14 | שָׁמְעוּ | III-gutt. | 3 | p | c | שמע | 3cp; guttural in closed syllable |
 | 15 | שְׁלַחְתֶּם | III-gutt. | 2 | p | m | שלח | 2mp |
 | 16 | אָמַר | I-gutt. | 3 | s | m | אמר | I-gutt.; virtually like strong |
 | 17 | עָמַדְתָּ | I-gutt. | 2 | s | m | עמד | 2ms; regular |
 | 18 | אָמַרְתִּי | I-gutt. | 1 | s | c | אמר | 1cs; regular |
-| 19 | אֲמַרְתֶּם | I-gutt. | 2 | p | m | אמר | Chateph-patach under aleph in reduced form |
+| 19 | אֲמַרְתֶּם | I-gutt. | 2 | p | m | אמר | Chateph-Pathach under aleph in reduced form |
 | 20 | עָמְדוּ | I-gutt. | 3 | p | c | עמד | 3cp; R1 reduces |
 | 21 | נָתַן | I-נ | 3 | s | m | נתן | I-נ regular in Perfect |
 | 22 | נָֽתְנָה | I-נ | 3 | s | f | נתן | 3fs; I-נ regular |
 | 23 | יָלַדְתָּ | I-י | 2 | s | m | ילד | I-י regular in Perfect |
 | 24 | יָלְדוּ | I-י | 3 | p | c | ילד | 3cp |
 | 25 | יָדַ֗עְתִּי | I-י | 1 | s | c | ידע | I-י regular; 1cs |
-| 26 | קָם | Biconsonantal | 3 | s | m | קום | Short 3ms form; qamets |
+| 26 | קָם | Biconsonantal | 3 | s | m | קום | Short 3ms form; Qamets |
 | 27 | שָׁ֫בָה | Biconsonantal | 3 | s | f | שוב | 3fs |
 | 28 | בָּ֫אתָ | Biconsonantal | 2 | s | m | בוא | 2ms |
 | 29 | קָ֫מוּ | Biconsonantal | 3 | p | c | קום | 3cp |
@@ -161,8 +161,8 @@
 
 | # | Form | Weak Class | Person | Number | Gender | Root | Notes |
 |---|---|---|---|---|---|---|---|
-| 36 | הָיִ֫יתִי | III-ה | 1 | s | c | היה | 1cs of היה; hireq-yod + תִּי- |
+| 36 | הָיִ֫יתִי | III-ה | 1 | s | c | היה | 1cs of היה; Hireq-Yod + תִּי- |
 | 37 | נָ֫פְלָה | I-נ | 3 | s | f | נפל | I-נ regular in Perfect 3fs |
-| 38 | מָ֫ת | Biconsonantal | 3 | s | m | מות | Short 3ms of מות; tsere form |
+| 38 | מָ֫ת | Biconsonantal | 3 | s | m | מות | Short 3ms of מות; Tsere form |
 | 39 | בָּ֫אנוּ | Biconsonantal | 1 | p | c | בוא | 1cp of בוא |
-| 40 | שָׁמְעָה | III-gutt. | 3 | s | f | שמע | 3fs; no patach furtive in closed syllable |
+| 40 | שָׁמְעָה | III-gutt. | 3 | s | f | שמע | 3fs; no Pathach furtive in closed syllable |

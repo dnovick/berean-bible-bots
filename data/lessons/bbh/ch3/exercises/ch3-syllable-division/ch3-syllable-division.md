@@ -35,7 +35,7 @@
 
 2. Word 14 is מִשְׁפָּט. The dagesh in the פ is a Dagesh Forte, not a Dagesh Lene. How do you know? What does it tell you about the syllable boundary?
 
-3. Words 11 (אֲדֹנָי) and 12 (יִשְׂרָאֵל) both begin with a guttural or a consonant followed by a guttural. How does the presence of the guttural affect the shewa that appears in each word's first syllable?
+3. Words 11 (אֲדֹנָי) and 12 (יִשְׂרָאֵל) both begin with a guttural or a consonant followed by a guttural. How does the presence of the guttural affect the Shewa that appears in each word's first syllable?
 
 ---
 
@@ -43,35 +43,35 @@
 
 | # | Word | Syllable Division | Types (O/C) | Stress | Notes |
 |---|---|---|---|---|---|
-| 1 | אֱלֹהִים | אֱ-לֹ-הִים | O-O-C | הִים\* | Hateph seghol under aleph (guttural composite shewa); final mem closes syl. 3 |
-| 2 | בְּרֵאשִׁית | בְּ-רֵא-שִׁית | O-O-C | שִׁית\* | Vocal shewa under bet (word-initial); aleph is mater (silent) in syl. 2; yod is mater in syl. 3; final taw closes |
-| 3 | הָאָרֶץ | הָ-אָ-רֶץ | O-O-C | אָ\* | Segholate base אֶרֶץ retains penultimate stress after article: הָ-אָ-רֶץ; Alef (guttural) opens syl. 2; both qamets = long ā |
-| 4 | שָׁמַיִם | שָׁ-מַ-יִם | O-O-C | יִם\* | שָׁ open (long ā); מַ open (short patach, yod opens next syl.); יִם closed by final mem |
-| 5 | יְרוּשָׁלַיִם | יְ-רוּ-שָׁ-לַ-יִם | O-O-O-O-C | לַ\* | Vocal shewa under yod; five syllables; penultimate stress (milʿel) — unlike שָׁמַיִם, Jerusalem retains stress on the base-form syllable לַ |
-| 6 | דָּבָר | דָּ-בָר | O-O | בָר\* | Both syllables open; both qamets long ā; stress on ultima (milra) |
-| 7 | מֶלֶךְ | מֶ-לֶךְ | O-C | מֶ\* | Segholate noun — penultimate stress (milʿel) on syl. 1; syl. 2 closed by final Kaf (silent shewa) |
-| 8 | בְּרִית | בְּ-רִית | O-C | רִית\* | Vocal shewa (word-initial); yod is mater (long hireq); final taw closes |
+| 1 | אֱלֹהִים | אֱ-לֹ-הִים | O-O-C | הִים\* | Hateph Seghol under aleph (guttural composite Shewa); final mem closes syl. 3 |
+| 2 | בְּרֵאשִׁית | בְּ-רֵא-שִׁית | O-O-C | שִׁית\* | Vocal Shewa under bet (word-initial); aleph is mater (silent) in syl. 2; yod is mater in syl. 3; final taw closes |
+| 3 | הָאָרֶץ | הָ-אָ-רֶץ | O-O-C | אָ\* | Segholate base אֶרֶץ retains penultimate stress after article: הָ-אָ-רֶץ; Alef (guttural) opens syl. 2; both Qamets = long ā |
+| 4 | שָׁמַיִם | שָׁ-מַ-יִם | O-O-C | יִם\* | שָׁ open (long ā); מַ open (short Pathach, yod opens next syl.); יִם closed by final mem |
+| 5 | יְרוּשָׁלַיִם | יְ-רוּ-שָׁ-לַ-יִם | O-O-O-O-C | לַ\* | Vocal Shewa under yod; five syllables; penultimate stress (milʿel) — unlike שָׁמַיִם, Jerusalem retains stress on the base-form syllable לַ |
+| 6 | דָּבָר | דָּ-בָר | O-O | בָר\* | Both syllables open; both Qamets long ā; stress on ultima (milra) |
+| 7 | מֶלֶךְ | מֶ-לֶךְ | O-C | מֶ\* | Segholate noun — penultimate stress (milʿel) on syl. 1; syl. 2 closed by final Kaf (silent Shewa) |
+| 8 | בְּרִית | בְּ-רִית | O-C | רִית\* | Vocal Shewa (word-initial); yod is mater (long Hireq); final taw closes |
 | 9 | שָׁבַת | שָׁ-בַת | O-C | בַת\* | שָׁ open (long ā); בַת closed by final taw; stress on ultima |
 | 10 | נָבִיא | נָ-בִיא | O-O | בִיא\* | נָ open; yod is mater; aleph quiesces word-finally; ultima open (quiescent aleph) |
-| 11 | אֲדֹנָי | אֲ-דֹ-נָי | O-O-O | נָי\* | Hateph patach under aleph (guttural); all three syllables open; yod closes as semi-vowel/consonant in ultima |
-| 12 | יִשְׂרָאֵל | יִשׂ-רָ-אֵל | C-O-C | אֵל\* | Silent shewa under sin (closes syl. 1); רָ open; aleph begins syl. 3 (quiescent); tsere-aleph mater; final lamed closes |
-| 13 | כֹּהֵן | כֹּ-הֵן | O-C | הֵן\* | Holem on kaph; heh begins syl. 2 (open with tsere); final nun closes |
-| 14 | מִשְׁפָּט | מִשׁ-פָּט | C-C | פָּט\* | Silent shewa under shin (closes syl. 1); Dagesh Forte in pe (not Lene — pe follows closed syllable); qamets long ā (accented); final tet closes syl. 2 |
-| 15 | תּוֹרָה | תּוֹ-רָה | O-O | רָה\* | Waw is mater (long holem); הָ open (mappiq-less he = vowel letter at word end); both open |
-| 16 | שָׁלוֹם | שָׁ-לוֹם | O-C | לוֹם\* | שָׁ open (long ā); waw is mater (long holem); final mem closes |
-| 17 | חֶסֶד | חֶ-סֶד | O-C | חֶ\* | Segholate noun — penultimate stress (milʿel) on syl. 1; חֶ open (seghol); סֶד closed by Dalet |
-| 18 | קֹדֶשׁ | קֹ-דֶשׁ | O-C | קֹ\* | Segholate noun — penultimate stress (milʿel) on syl. 1; קֹ open (holem); דֶשׁ closed by final Shin |
+| 11 | אֲדֹנָי | אֲ-דֹ-נָי | O-O-O | נָי\* | Hateph Pathach under aleph (guttural); all three syllables open; yod closes as semi-vowel/consonant in ultima |
+| 12 | יִשְׂרָאֵל | יִשׂ-רָ-אֵל | C-O-C | אֵל\* | Silent Shewa under sin (closes syl. 1); רָ open; aleph begins syl. 3 (quiescent); Tsere-aleph mater; final lamed closes |
+| 13 | כֹּהֵן | כֹּ-הֵן | O-C | הֵן\* | Holem on kaph; heh begins syl. 2 (open with Tsere); final nun closes |
+| 14 | מִשְׁפָּט | מִשׁ-פָּט | C-C | פָּט\* | Silent Shewa under shin (closes syl. 1); Dagesh Forte in pe (not Lene — pe follows closed syllable); Qamets long ā (accented); final tet closes syl. 2 |
+| 15 | תּוֹרָה | תּוֹ-רָה | O-O | רָה\* | Waw is mater (long Holem); הָ open (mappiq-less he = vowel letter at word end); both open |
+| 16 | שָׁלוֹם | שָׁ-לוֹם | O-C | לוֹם\* | שָׁ open (long ā); waw is mater (long Holem); final mem closes |
+| 17 | חֶסֶד | חֶ-סֶד | O-C | חֶ\* | Segholate noun — penultimate stress (milʿel) on syl. 1; חֶ open (Seghol); סֶד closed by Dalet |
+| 18 | קֹדֶשׁ | קֹ-דֶשׁ | O-C | קֹ\* | Segholate noun — penultimate stress (milʿel) on syl. 1; קֹ open (Holem); דֶשׁ closed by final Shin |
 | 19 | אֶרֶץ | אֶ-רֶץ | O-C | אֶ\* | Segholate noun — penultimate stress (milʿel) on syl. 1; Alef (guttural) opens אֶ; רֶץ closed by final Tsade |
-| 20 | עַם | עַם | C | עַם\* | Single syllable; closed by final mem; short patach |
+| 20 | עַם | עַם | C | עַם\* | Single syllable; closed by final mem; short Pathach |
 
 ---
 
 ### Notes on Selected Items
 
-**Word 3 — הָאָרֶץ:** The definite article הָ is attached. Both the he and the aleph carry qamets. The he's qamets is in an open syllable → long ā. The aleph's qamets is also in an open syllable (the aleph opens syllable 2 since it is a guttural consonant) → also long ā.
+**Word 3 — הָאָרֶץ:** The definite article הָ is attached. Both the he and the aleph carry Qamets. The he's Qamets is in an open syllable → long ā. The aleph's Qamets is also in an open syllable (the aleph opens syllable 2 since it is a guttural consonant) → also long ā.
 
-**Word 11 — אֲדֹנָי:** The aleph takes a Hateph Patach (ֲ), not a simple vocal shewa, because aleph is a guttural. The syllable אֲ is still an open syllable (it ends in the super-short hateph vowel), so the principle "open syllable / vocal composite" holds.
+**Word 11 — אֲדֹנָי:** The aleph takes a Hateph Pathach (ֲ), not a simple vocal Shewa, because aleph is a guttural. The syllable אֲ is still an open syllable (it ends in the super-short hateph vowel), so the principle "open syllable / vocal composite" holds.
 
-**Word 12 — יִשְׂרָאֵל:** The sin (שׂ) has a silent shewa — note: this is a shewa after a short vowel (hireq) in a closed syllable, so it is silent. The division יִשׂ | רָ | אֵל gives: closed (C), open (O), closed (C). The final syllable's tsere is long (accented closed syllable with long vowel — the tsere-aleph combination is a historically long tsere).
+**Word 12 — יִשְׂרָאֵל:** The sin (שׂ) has a silent Shewa — note: this is a Shewa after a short vowel (Hireq) in a closed syllable, so it is silent. The division יִשׂ | רָ | אֵל gives: closed (C), open (O), closed (C). The final syllable's Tsere is long (accented closed syllable with long vowel — the Tsere-aleph combination is a historically long Tsere).
 
 **Word 14 — מִשְׁפָּט:** The Dagesh in פ is Forte (not Lene) because: (1) pe follows a closed syllable (מִשׁ), and the Dagesh Forte would be expected to show that the pe was doubled in the underlying form (*mishpapat → mishpāt with contraction). Actually more precisely: the word is from root שׁפט with prefix מִ; the Dagesh Forte in pe signals the syllable division מִשׁ-פָּט, where sin closes the first syllable.

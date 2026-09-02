@@ -77,16 +77,16 @@
 
 | # | Hebrew | Preposition | Base Form | Change / Reason | Object | Translation |
 |---|---|---|---|---|---|---|
-| 1 | בְּדָבָר | בְּ | בְּ | None — default shewa before normal consonant | דָּבָר | in a word / with a word |
-| 2 | לְמֶלֶךְ | לְ | לְ | None — default shewa before normal consonant | מֶלֶךְ | to a king / for a king |
-| 3 | כְּאִישׁ | כְּ | כְּ | None — default shewa before normal consonant (א is quiescent here) | אִישׁ | like a man |
-| 4 | בִּשְׁמוּאֵל | בִּ | בְּ | Shewa → hireq: שְׁ has a shewa; two consecutive shewas not permitted; first shewa upgrades to hireq | שְׁמוּאֵל | in/with Samuel |
-| 5 | לִשְׁלֹמֹה | לִ | לְ | Shewa → hireq: שְׁ has a shewa; two consecutive shewas not permitted | שְׁלֹמֹה | to Solomon |
-| 6 | בֶּאֱמֶת | בֶּ | בְּ | Composite shewa matching: אֱ has hateph seghol (ֱ); prep takes seghol (ֶ) to match vowel class | אֱמֶת | in truth |
-| 7 | לֵאלֹהִים | לֵ | לְ | Composite shewa matching: אֱ has hateph seghol under א of אֱלֹהִים; prep takes the matching seghol, then lengthens before א to tsere | אֱלֹהִים | to God |
-| 8 | כֶּחָכְמָה | כֶּ | כְּ | Composite shewa matching: ח has hateph patach in some forms; the prep takes patach (ַ) class; note: standard form before ח with vocal shewa may also give seghol by assimilation | חָכְמָה | like wisdom |
+| 1 | בְּדָבָר | בְּ | בְּ | None — default Shewa before normal consonant | דָּבָר | in a word / with a word |
+| 2 | לְמֶלֶךְ | לְ | לְ | None — default Shewa before normal consonant | מֶלֶךְ | to a king / for a king |
+| 3 | כְּאִישׁ | כְּ | כְּ | None — default Shewa before normal consonant (א is quiescent here) | אִישׁ | like a man |
+| 4 | בִּשְׁמוּאֵל | בִּ | בְּ | Shewa → Hireq: שְׁ has a Shewa; two consecutive shewas not permitted; first Shewa upgrades to Hireq | שְׁמוּאֵל | in/with Samuel |
+| 5 | לִשְׁלֹמֹה | לִ | לְ | Shewa → Hireq: שְׁ has a Shewa; two consecutive shewas not permitted | שְׁלֹמֹה | to Solomon |
+| 6 | בֶּאֱמֶת | בֶּ | בְּ | Composite Shewa matching: אֱ has hateph Seghol (ֱ); prep takes Seghol (ֶ) to match vowel class | אֱמֶת | in truth |
+| 7 | לֵאלֹהִים | לֵ | לְ | Composite Shewa matching: אֱ has hateph Seghol under א of אֱלֹהִים; prep takes the matching Seghol, then lengthens before א to Tsere | אֱלֹהִים | to God |
+| 8 | כֶּחָכְמָה | כֶּ | כְּ | Composite Shewa matching: ח has hateph Pathach in some forms; the prep takes Pathach (ַ) class; note: standard form before ח with vocal Shewa may also give Seghol by assimilation | חָכְמָה | like wisdom |
 
-> **Notes on items 6–8:** When the first consonant of the following word is a guttural bearing a **composite shewa (hateph vowel)**, the inseparable preposition takes the simple vowel that matches the class of that composite shewa: hateph patach → patach (ַ); hateph seghol → seghol (ֶ); hateph qamets → qamets (ָ).
+> **Notes on items 6–8:** When the first consonant of the following word is a guttural bearing a **composite Shewa (hateph vowel)**, the inseparable preposition takes the simple vowel that matches the class of that composite Shewa: hateph Pathach → Pathach (ַ); hateph Seghol → Seghol (ֶ); hateph Qamets → Qamets (ָ).
 
 ---
 
@@ -94,16 +94,16 @@
 
 | # | Hebrew | Preposition | Base Form | Change / Reason | Object | Translation |
 |---|---|---|---|---|---|---|
-| 9 | בַּמֶּלֶךְ | בַּ | בְּ | Article fusion: הַ of הַמֶּלֶךְ drops; its patach transfers to בְּ; dagesh forte in מ | מֶלֶךְ | in the king / with the king |
-| 10 | לַשָּׁמַיִם | לַ | לְ | Article fusion: הַ of הַשָּׁמַיִם drops; patach transfers to לְ; dagesh forte in שׁ | שָּׁמַיִם | to the heavens |
-| 11 | כַּיּוֹם | כַּ | כְּ | Article fusion: הַ of הַיּוֹם drops; patach transfers to כְּ; dagesh forte in י | יּוֹם | like the day / as today |
-| 12 | בַּבַּיִת | בַּ | בְּ | Article fusion: הַ of הַבַּיִת drops; patach transfers; dagesh forte in בּ (the article's dagesh and the dagesh lene merge) | בַּיִת | in the house |
-| 13 | לָהָר | לָ | לְ | Article fusion with guttural: הָ of הָהָר drops; ה is a guttural — cannot take dagesh forte; short patach lengthens compensatorily to qamets (ָ) | הָר | to the mountain |
-| 14 | בָּאָרֶץ | בָּ | בְּ | Article fusion with guttural: הָ of הָאָרֶץ drops; א is a guttural — no dagesh forte; patach lengthens to qamets (ָ) | אָרֶץ | in the earth / in the land |
-| 15 | לָעָם | לָ | לְ | Article fusion with guttural: הָ of הָעָם drops; ע is a guttural — no dagesh forte; patach lengthens to qamets (ָ) | עָם | to the people |
-| 16 | כָּהָאִישׁ | כָּ | כְּ | Article fusion with guttural: הָ of הָאִישׁ drops; א is a guttural — no dagesh forte; qamets under כָּ | אִישׁ | like the man |
+| 9 | בַּמֶּלֶךְ | בַּ | בְּ | Article fusion: הַ of הַמֶּלֶךְ drops; its Pathach transfers to בְּ; dagesh forte in מ | מֶלֶךְ | in the king / with the king |
+| 10 | לַשָּׁמַיִם | לַ | לְ | Article fusion: הַ of הַשָּׁמַיִם drops; Pathach transfers to לְ; dagesh forte in שׁ | שָּׁמַיִם | to the heavens |
+| 11 | כַּיּוֹם | כַּ | כְּ | Article fusion: הַ of הַיּוֹם drops; Pathach transfers to כְּ; dagesh forte in י | יּוֹם | like the day / as today |
+| 12 | בַּבַּיִת | בַּ | בְּ | Article fusion: הַ of הַבַּיִת drops; Pathach transfers; dagesh forte in בּ (the article's dagesh and the dagesh lene merge) | בַּיִת | in the house |
+| 13 | לָהָר | לָ | לְ | Article fusion with guttural: הָ of הָהָר drops; ה is a guttural — cannot take dagesh forte; short Pathach lengthens compensatorily to Qamets (ָ) | הָר | to the mountain |
+| 14 | בָּאָרֶץ | בָּ | בְּ | Article fusion with guttural: הָ of הָאָרֶץ drops; א is a guttural — no dagesh forte; Pathach lengthens to Qamets (ָ) | אָרֶץ | in the earth / in the land |
+| 15 | לָעָם | לָ | לְ | Article fusion with guttural: הָ of הָעָם drops; ע is a guttural — no dagesh forte; Pathach lengthens to Qamets (ָ) | עָם | to the people |
+| 16 | כָּהָאִישׁ | כָּ | כְּ | Article fusion with guttural: הָ of הָאִישׁ drops; א is a guttural — no dagesh forte; Qamets under כָּ | אִישׁ | like the man |
 
-> **Guttural article-fusion diagnostic:** If you see **בָּ לָ כָּ** (with qamets) rather than **בַּ לַ כַּ** (with patach + dagesh), the following noun begins with a guttural or ר that rejected the dagesh forte.
+> **Guttural article-fusion diagnostic:** If you see **בָּ לָ כָּ** (with Qamets) rather than **בַּ לַ כַּ** (with Pathach + dagesh), the following noun begins with a guttural or ר that rejected the dagesh forte.
 
 ---
 
@@ -114,8 +114,8 @@
 | 17 | מִן הַמֶּלֶךְ | מִן | מִן | No change — independent form before article | הַמֶּלֶךְ | from the king |
 | 18 | מִמֶּלֶךְ | מִ | מִן | Nun assimilates: נ disappears; dagesh forte in מ of מֶּלֶךְ marks the assimilation | מֶלֶךְ | from a king |
 | 19 | מִיַּד | מִ | מִן | Nun assimilates: dagesh forte in י of יַּד (יד = "hand") | יָד | from the hand |
-| 20 | מֵהָאָרֶץ | מֵ | מִן | Compensatory lengthening: ה is a guttural; rejects dagesh forte; hireq (ִ) → tsere (ֵ) as compensation | הָאָרֶץ | from the earth |
-| 21 | מֵאֱלֹהִים | מֵ | מִן | Compensatory lengthening: א is a guttural; rejects dagesh forte; hireq → tsere | אֱלֹהִים | from God |
+| 20 | מֵהָאָרֶץ | מֵ | מִן | Compensatory lengthening: ה is a guttural; rejects dagesh forte; Hireq (ִ) → Tsere (ֵ) as compensation | הָאָרֶץ | from the earth |
+| 21 | מֵאֱלֹהִים | מֵ | מִן | Compensatory lengthening: א is a guttural; rejects dagesh forte; Hireq → Tsere | אֱלֹהִים | from God |
 
 ---
 
@@ -134,6 +134,6 @@
 
 1. **Identifying article fusion:** You encounter the form **לַבַּיִת**. How do you know that the definite article is present even though the letter ה does not appear? What two clues tell you the article has been absorbed?
 
-2. **Guttural contrast:** Compare **בַּמֶּלֶךְ** (item 9) with **בָּהָר** (item 13). Both represent בְּ fused with the definite article. Why does one have patach + dagesh forte (בַּ) and the other has qamets without dagesh (בָּ)? What principle governs the difference?
+2. **Guttural contrast:** Compare **בַּמֶּלֶךְ** (item 9) with **בָּהָר** (item 13). Both represent בְּ fused with the definite article. Why does one have Pathach + dagesh forte (בַּ) and the other has Qamets without dagesh (בָּ)? What principle governs the difference?
 
 3. **מִן forms:** Explain the difference between **מִן הַמֶּלֶךְ**, **מִמֶּלֶךְ**, and **מֵאֱלֹהִים**. Why does each one look different, and what single underlying form (מִן) connects them all?

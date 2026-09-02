@@ -23,7 +23,7 @@ Write your answers in the blank columns.
 | Perfect 3ms | Qamets + ה (גָּלָה) | Dagesh R2 + Qamets + ה (גִּלָּה) | הִתְ prefix + Dagesh R2 + Qamets + ה |
 | Imperfect 3ms | Seghol + ה (יִגְלֶה) | Shewa prefix + Seghol + ה (יְגַלֶּה) | יִתְ prefix + Dagesh R2 + Seghol + ה |
 | Wayyiqtol 3ms | Apocopated: ה dropped (וַיִּגֶּל) | Apocopated: ה dropped (וַיְגַל) | Apocopated: ה dropped (וַיִּתְגַּל) |
-| Imperative 2ms | Seghol + ה (גְּלֵה) | Patakh + Dagesh R2 + Seghol + ה (גַּלֵּה) | הִתְ prefix + Dagesh R2 + Seghol + ה |
+| Imperative 2ms | Seghol + ה (גְּלֵה) | Pathach + Dagesh R2 + Seghol + ה (גַּלֵּה) | הִתְ prefix + Dagesh R2 + Seghol + ה |
 | Participle ms | Qamets-Holem + ה (גֹּלֶה) | Shewa prefix + Seghol + ה (מְגַלֶּה) | מִתְ prefix + Dagesh R2 + Seghol + ה |
 
 ---
@@ -106,12 +106,12 @@ Write your answers in the blank columns.
 - Hithpael וַיִּתְגַּל: וַ + יִתְ + גַּל (apocopated) → ה dropped
 
 **Items 19–21 (Imperative 2ms):**
-- Piel גַּלֵּה: Patakh under R1, Dagesh in R2, Seghol + ה → Piel imp.
+- Piel גַּלֵּה: Pathach under R1, Dagesh in R2, Seghol + ה → Piel imp.
 - Qal גְּלֵה: Shewa under R1, no Dagesh, Tsere + ה → Qal imp. (note: Tsere not Seghol)
 - Hithpael הִתְגַּלֵּה: הִתְ prefix, Dagesh in R2, Tsere + ה → Hithpael imp. (note: Tsere + ה, same as Qal here; the הִתְ prefix is the decisive marker)
 
 **Items 22–24 (Participle ms):**
-- Piel מְגַלֶּה: מְ prefix (Shewa), Patakh R1, Dagesh R2, Seghol + ה → Piel ptc.
+- Piel מְגַלֶּה: מְ prefix (Shewa), Pathach R1, Dagesh R2, Seghol + ה → Piel ptc.
 - Qal גֹּלֶה: Holem under R1 (Qal active ptc. pattern), no prefix → Qal
 - Hithpael מִתְגַּלֶּה: מִתְ prefix (Hireq + ת), Dagesh R2, Seghol + ה → Hithpael ptc.
 
