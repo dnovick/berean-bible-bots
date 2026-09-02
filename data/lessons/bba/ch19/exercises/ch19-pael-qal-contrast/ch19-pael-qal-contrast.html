@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 19 — Peal vs. Pael Contrast Drill</title>
 <style>
   body { font-family: Georgia, serif; max-width: 1100px; margin: 2em auto; padding: 0 1em; color: #222; }
@@ -49,499 +50,470 @@
 </style>
 </head>
 <body>
-
-
 <h1>Chapter 19 — Peal vs. Pael Contrast Drill</h1>
 <p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch19: Intensive/Causative Pael vs. Simple Peal</p>
-
 <h2>Instructions</h2>
-<p>For each numbered Aramaic verbal form from Daniel or Ezra, enter: <strong>Stem</strong> (Peal or Pael), <strong>Conjugation</strong> (Perfect / Imperfect / Participle), <strong>PGN</strong>, <strong>Root</strong>, and <strong>Translation</strong>. Click <strong>&#9654; Answer</strong> to reveal the answer row.</p>
-
+<p>For each numbered Aramaic verbal form from Daniel or Ezra, enter: <strong>Stem</strong> (Peal or Pael), <strong>Conjugation</strong> (Perfect / Imperfect / Participle), <strong>PGN</strong>, <strong>Root</strong>, and <strong>Translation</strong>. Click <strong>▶ Answer</strong> to reveal the answer row.</p>
 <div class="note">
-  <strong>Peal Perfect 3ms:</strong> CvCaC — Shewa under R1, Pathach under R2, no dagesh in R2 (e.g., <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">כְּתַב</span>).
-  &nbsp;&nbsp;
+<strong>Peal Perfect 3ms:</strong> CvCaC — Shewa under R1, Pathach under R2, no dagesh in R2 (e.g., <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">כְּתַב</span>).
+    
   <strong>Pael Perfect 3ms:</strong> CaCCēC — Pathach under R1, <em>dagesh forte in R2</em>, Tsere under R2 (e.g., <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">כַּתֵּב</span>).
-  &nbsp;&nbsp;
+    
   <strong>Pael Imperfect 3ms:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יְ‑</span> prefix + CaCCeC.
-  &nbsp;&nbsp;
+    
   <strong>Pael Participle ms:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">מְ‑</span> prefix + CaCCaC.
-  &nbsp;&nbsp;
+    
   <strong>Key:</strong> dagesh forte in R2 = Pael; absence = Peal.
 </div>
-
 <div class="controls">
-  <button class="ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+<button class="ctrl" onclick="showAll()">Show All Answers</button>
+<button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+<button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
-
 <table id="drill-table">
-  <thead>
-    <tr>
-      <th style="width:2.5em">#</th>
-      <th style="width:13%">Form</th>
-      <th style="width:12%">Stem (Peal/Pael)</th>
-      <th style="width:12%">Conjugation</th>
-      <th style="width:9%">PGN</th>
-      <th style="width:10%">Root</th>
-      <th style="width:28%">Translation</th>
-      <th style="width:5.5em"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <!-- 1 -->
-    <tr id="q1">
-      <td>1</td>
-      <td><div class="hebrew">כְּתַב</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a1">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>he wrote (no dagesh in R2; CvCaC pattern)</td>
-      <td></td>
-    </tr>
-
-    <!-- 2 -->
-    <tr id="q2">
-      <td>2</td>
-      <td><div class="hebrew">כַּתֵּב</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a2">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>he wrote (intensively) / he recorded (dagesh forte in tav = Pael)</td>
-      <td></td>
-    </tr>
-
-    <!-- 3 -->
-    <tr id="q3">
-      <td>3</td>
-      <td><div class="hebrew">אֲמַר</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a3">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">אמר</span></td>
-      <td>he said (I-aleph; Hateph Pathach; no dagesh in R2)</td>
-      <td></td>
-    </tr>
-
-    <!-- 4 -->
-    <tr id="q4">
-      <td>4</td>
-      <td><div class="hebrew">חַוִּי</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a4">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">חוה</span></td>
-      <td>he declared / he showed (III-he root; dagesh in waw = Pael)</td>
-      <td></td>
-    </tr>
-
-    <!-- 5 -->
-    <tr id="q5">
-      <td>5</td>
-      <td><div class="hebrew">עֲבַד</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a5">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">עבד</span></td>
-      <td>he made/did (guttural ע; no dagesh in R2)</td>
-      <td></td>
-    </tr>
-
-    <!-- 6 -->
-    <tr id="q6">
-      <td>6</td>
-      <td><div class="hebrew">בַּטִּיל</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a6">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">בטל</span></td>
-      <td>he caused to cease / he stopped it (factitive; dagesh forte in tet)</td>
-      <td></td>
-    </tr>
-
-    <!-- 7 -->
-    <tr id="q7">
-      <td>7</td>
-      <td><div class="hebrew">קְרָא</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a7">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">קרא</span></td>
-      <td>he called/read (III-aleph; no dagesh in R2)</td>
-      <td></td>
-    </tr>
-
-    <!-- 8 -->
-    <tr id="q8">
-      <td>8</td>
-      <td><div class="hebrew">קַדֵּשׁ</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a8">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">קדשׁ</span></td>
-      <td>he sanctified/hallowed (dagesh in dalet = Pael; factitive)</td>
-      <td></td>
-    </tr>
-
-    <!-- 9 -->
-    <tr id="q9">
-      <td>9</td>
-      <td><div class="hebrew">יְדַע</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a9">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">ידע</span></td>
-      <td>he knew (I-yod root; Shewa under yod; no dagesh in R2)</td>
-      <td></td>
-    </tr>
-
-    <!-- 10 -->
-    <tr id="q10">
-      <td>10</td>
-      <td><div class="hebrew">שׁוּ</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a10">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">שׁוה</span></td>
-      <td>he made equal / he set (hollow/III-he root שׁוה; contracted Pael form)</td>
-      <td></td>
-    </tr>
-
-    <!-- 11 -->
-    <tr id="q11">
-      <td>11</td>
-      <td><div class="hebrew">שְׁמַע</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a11">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">שׁמע</span></td>
-      <td>he heard (guttural ע at R3; no dagesh in mem)</td>
-      <td></td>
-    </tr>
-
-    <!-- 12 -->
-    <tr id="q12">
-      <td>12</td>
-      <td><div class="hebrew">רַבִּי</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a12">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">רבה</span></td>
-      <td>he made great / he magnified (III-he Pael; dagesh in bet; factitive)</td>
-      <td></td>
-    </tr>
-
-    <!-- 13 -->
-    <tr id="q13">
-      <td>13</td>
-      <td><div class="hebrew">נְפַל</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a13">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">נפל</span></td>
-      <td>he fell (I-nun root; no dagesh in R2 = Peal)</td>
-      <td></td>
-    </tr>
-
-    <!-- 14 -->
-    <tr id="q14">
-      <td>14</td>
-      <td><div class="hebrew">כַּבֵּד</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a14">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">כבד</span></td>
-      <td>he honored (dagesh in bet = Pael; factitive of "to be heavy")</td>
-      <td></td>
-    </tr>
-
-    <!-- 15 -->
-    <tr id="q15">
-      <td>15</td>
-      <td><div class="hebrew">יִקְטֻל</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a15',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a15">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Imperfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">קטל</span></td>
-      <td>he will kill (יִ‑ prefix; Qibbuts = Peal Impf 3ms)</td>
-      <td></td>
-    </tr>
-
-    <!-- 16 -->
-    <tr id="q16">
-      <td>16</td>
-      <td><div class="hebrew">יְבַטֵּל</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a16',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a16">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Imperfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">בטל</span></td>
-      <td>he will cause to cease (יְ‑ Shewa prefix + dagesh in tet = Pael Impf)</td>
-      <td></td>
-    </tr>
-
-    <!-- 17 -->
-    <tr id="q17">
-      <td>17</td>
-      <td><div class="hebrew">אֲמַרְנָא</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a17',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a17">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>1cp</td>
-      <td><span class="root-ans">אמר</span></td>
-      <td>we said (‑נָא = 1cp Perfect suffix; no dagesh in R2)</td>
-      <td></td>
-    </tr>
-
-    <!-- 18 -->
-    <tr id="q18">
-      <td>18</td>
-      <td><div class="hebrew">מְשַׁבַּח</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a18',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a18">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Participle</td>
-      <td>ms</td>
-      <td><span class="root-ans">שׁבח</span></td>
-      <td>praising / who praises (מְ‑ prefix + dagesh in bet = Pael Participle)</td>
-      <td></td>
-    </tr>
-
-    <!-- 19 -->
-    <tr id="q19">
-      <td>19</td>
-      <td><div class="hebrew">שְׁלַח</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a19',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a19">
-      <td></td>
-            <td></td>
-      <td>Peal</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">שׁלח</span></td>
-      <td>he sent (no dagesh in lamed; guttural ח at R3)</td>
-      <td></td>
-    </tr>
-
-    <!-- 20 -->
-    <tr id="q20">
-      <td>20</td>
-      <td><div class="hebrew">שַׁלַּח</div></td>
-      <td><input class="parse-field" placeholder="Peal/Pael…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a20',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a20">
-      <td></td>
-            <td></td>
-      <td>Pael</td>
-      <td>Perfect</td>
-      <td>3ms</td>
-      <td><span class="root-ans">שׁלח</span></td>
-      <td>he sent away / he let go (dagesh in lamed = Pael; causative/factitive nuance)</td>
-      <td></td>
-    </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.5em">#</th>
+<th style="width:13%">Form</th>
+<th style="width:12%">Stem (Peal/Pael)</th>
+<th style="width:12%">Conjugation</th>
+<th style="width:9%">PGN</th>
+<th style="width:10%">Root</th>
+<th style="width:28%">Translation</th>
+<th style="width:5.5em"></th>
+</tr>
+</thead>
+<tbody>
+<!-- 1 -->
+<tr id="q1">
+<td>1</td>
+<td><div class="hebrew">כְּתַב</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a1">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">כתב</span></td>
+<td>he wrote (no dagesh in R2; CvCaC pattern)</td>
+<td></td>
+</tr>
+<!-- 2 -->
+<tr id="q2">
+<td>2</td>
+<td><div class="hebrew">כַּתֵּב</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a2">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">כתב</span></td>
+<td>he wrote (intensively) / he recorded (dagesh forte in tav = Pael)</td>
+<td></td>
+</tr>
+<!-- 3 -->
+<tr id="q3">
+<td>3</td>
+<td><div class="hebrew">אֲמַר</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a3">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">אמר</span></td>
+<td>he said (I-aleph; Hateph Pathach; no dagesh in R2)</td>
+<td></td>
+</tr>
+<!-- 4 -->
+<tr id="q4">
+<td>4</td>
+<td><div class="hebrew">חַוִּי</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a4">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">חוה</span></td>
+<td>he declared / he showed (III-he root; dagesh in waw = Pael)</td>
+<td></td>
+</tr>
+<!-- 5 -->
+<tr id="q5">
+<td>5</td>
+<td><div class="hebrew">עֲבַד</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a5">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">עבד</span></td>
+<td>he made/did (guttural <span style="direction:rtl;unicode-bidi:embed;">ע</span>; no dagesh in R2)</td>
+<td></td>
+</tr>
+<!-- 6 -->
+<tr id="q6">
+<td>6</td>
+<td><div class="hebrew">בַּטִּיל</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a6">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">בטל</span></td>
+<td>he caused to cease / he stopped it (factitive; dagesh forte in tet)</td>
+<td></td>
+</tr>
+<!-- 7 -->
+<tr id="q7">
+<td>7</td>
+<td><div class="hebrew">קְרָא</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a7">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">קרא</span></td>
+<td>he called/read (III-aleph; no dagesh in R2)</td>
+<td></td>
+</tr>
+<!-- 8 -->
+<tr id="q8">
+<td>8</td>
+<td><div class="hebrew">קַדֵּשׁ</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a8">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">קדשׁ</span></td>
+<td>he sanctified/hallowed (dagesh in dalet = Pael; factitive)</td>
+<td></td>
+</tr>
+<!-- 9 -->
+<tr id="q9">
+<td>9</td>
+<td><div class="hebrew">יְדַע</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a9">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">ידע</span></td>
+<td>he knew (I-yod root; Shewa under yod; no dagesh in R2)</td>
+<td></td>
+</tr>
+<!-- 10 -->
+<tr id="q10">
+<td>10</td>
+<td><div class="hebrew">שׁוּ</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a10">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">שׁוה</span></td>
+<td>he made equal / he set (hollow/III-he root <span style="direction:rtl;unicode-bidi:embed;">שׁוה</span>; contracted Pael form)</td>
+<td></td>
+</tr>
+<!-- 11 -->
+<tr id="q11">
+<td>11</td>
+<td><div class="hebrew">שְׁמַע</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a11">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">שׁמע</span></td>
+<td>he heard (guttural <span style="direction:rtl;unicode-bidi:embed;">ע</span> at R3; no dagesh in mem)</td>
+<td></td>
+</tr>
+<!-- 12 -->
+<tr id="q12">
+<td>12</td>
+<td><div class="hebrew">רַבִּי</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a12',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a12">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">רבה</span></td>
+<td>he made great / he magnified (III-he Pael; dagesh in bet; factitive)</td>
+<td></td>
+</tr>
+<!-- 13 -->
+<tr id="q13">
+<td>13</td>
+<td><div class="hebrew">נְפַל</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a13',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a13">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">נפל</span></td>
+<td>he fell (I-nun root; no dagesh in R2 = Peal)</td>
+<td></td>
+</tr>
+<!-- 14 -->
+<tr id="q14">
+<td>14</td>
+<td><div class="hebrew">כַּבֵּד</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a14',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a14">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">כבד</span></td>
+<td>he honored (dagesh in bet = Pael; factitive of "to be heavy")</td>
+<td></td>
+</tr>
+<!-- 15 -->
+<tr id="q15">
+<td>15</td>
+<td><div class="hebrew">יִקְטֻל</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a15',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a15">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Imperfect</td>
+<td>3ms</td>
+<td><span class="root-ans">קטל</span></td>
+<td>he will kill (<span style="direction:rtl;unicode-bidi:embed;">יִ</span>‑ prefix; Qibbuts = Peal Impf 3ms)</td>
+<td></td>
+</tr>
+<!-- 16 -->
+<tr id="q16">
+<td>16</td>
+<td><div class="hebrew">יְבַטֵּל</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a16',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a16">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Imperfect</td>
+<td>3ms</td>
+<td><span class="root-ans">בטל</span></td>
+<td>he will cause to cease (<span style="direction:rtl;unicode-bidi:embed;">יְ</span>‑ Shewa prefix + dagesh in tet = Pael Impf)</td>
+<td></td>
+</tr>
+<!-- 17 -->
+<tr id="q17">
+<td>17</td>
+<td><div class="hebrew">אֲמַרְנָא</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a17',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a17">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>1cp</td>
+<td><span class="root-ans">אמר</span></td>
+<td>we said (‑<span style="direction:rtl;unicode-bidi:embed;">נָא</span> = 1cp Perfect suffix; no dagesh in R2)</td>
+<td></td>
+</tr>
+<!-- 18 -->
+<tr id="q18">
+<td>18</td>
+<td><div class="hebrew">מְשַׁבַּח</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a18',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a18">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Participle</td>
+<td>ms</td>
+<td><span class="root-ans">שׁבח</span></td>
+<td>praising / who praises (<span style="direction:rtl;unicode-bidi:embed;">מְ</span>‑ prefix + dagesh in bet = Pael Participle)</td>
+<td></td>
+</tr>
+<!-- 19 -->
+<tr id="q19">
+<td>19</td>
+<td><div class="hebrew">שְׁלַח</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a19',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a19">
+<td></td>
+<td></td>
+<td>Peal</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">שׁלח</span></td>
+<td>he sent (no dagesh in lamed; guttural <span style="direction:rtl;unicode-bidi:embed;">ח</span> at R3)</td>
+<td></td>
+</tr>
+<!-- 20 -->
+<tr id="q20">
+<td>20</td>
+<td><div class="hebrew">שַׁלַּח</div></td>
+<td><input class="parse-field" placeholder="Peal/Pael…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a20',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a20">
+<td></td>
+<td></td>
+<td>Pael</td>
+<td>Perfect</td>
+<td>3ms</td>
+<td><span class="root-ans">שׁלח</span></td>
+<td>he sent away / he let go (dagesh in lamed = Pael; causative/factitive nuance)</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <div class="reflection">
-  <h3>Discussion Questions</h3>
-  <ol>
-    <li>The Pael is often described as the Aramaic equivalent of the Hebrew Piel. The diagnostic feature is the same: dagesh forte in R2. Compare items 1/2 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">כְּתַב</span> vs. <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">כַּתֵּב</span>) and 19/20 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שְׁלַח</span> vs. <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שַׁלַּח</span>). In item 20, does the Pael add an intensive, factitive, or causative nuance? Explain.</li>
-    <li>Item 6 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">בַּטִּיל</span>) uses the root <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">בטל</span> ("to cease"). The Peal = intransitive "to cease"; the Pael = transitive "to cause to cease." This is the factitive function. Find two other Pael items in the list where the Pael is clearly causative/factitive rather than just intensive.</li>
-    <li>Item 18 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">מְשַׁבַּח</span>) is a Pael Participle. How do you distinguish a Pael Participle from a Pael Perfect 3ms? Write out the expected Pael Perfect 3ms of <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שׁבח</span> and compare.</li>
-  </ol>
+<h3>Discussion Questions</h3>
+<ol>
+<li>The Pael is often described as the Aramaic equivalent of the Hebrew Piel. The diagnostic feature is the same: dagesh forte in R2. Compare items 1/2 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">כְּתַב</span> vs. <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">כַּתֵּב</span>) and 19/20 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שְׁלַח</span> vs. <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שַׁלַּח</span>). In item 20, does the Pael add an intensive, factitive, or causative nuance? Explain.</li>
+<li>Item 6 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">בַּטִּיל</span>) uses the root <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">בטל</span> ("to cease"). The Peal = intransitive "to cease"; the Pael = transitive "to cause to cease." This is the factitive function. Find two other Pael items in the list where the Pael is clearly causative/factitive rather than just intensive.</li>
+<li>Item 18 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">מְשַׁבַּח</span>) is a Pael Participle. How do you distinguish a Pael Participle from a Pael Perfect 3ms? Write out the expected Pael Perfect 3ms of <span style="direction:rtl;unicode-bidi:embed;font-size:1.05em">שׁבח</span> and compare.</li>
+</ol>
 </div>
-
 <script>
 function toggle(id, btn) {
   var row = document.getElementById(id);
@@ -565,6 +537,5 @@ function clearAll() {
   document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
 }
 </script>
-
 </body>
 </html>

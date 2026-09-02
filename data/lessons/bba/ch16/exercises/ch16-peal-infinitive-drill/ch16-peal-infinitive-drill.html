@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 16 — Peal Infinitive Construct Drill</title>
 <style>
   body { font-family: Georgia, serif; max-width: 980px; margin: 2em auto; padding: 0 1em; color: #222; }
@@ -49,411 +50,382 @@
 </style>
 </head>
 <body>
-
-
 <h1>Chapter 16 — Peal Infinitive Construct Drill</h1>
 <p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch16: Peal Infinitive Construct</p>
-
 <h2>Instructions</h2>
-<p>For each numbered infinitive form, enter the <strong>Root</strong> (3 consonants, Peal perfect 3ms), the <strong>Prefix &amp; Meaning</strong> (לְ = purpose/complement; כְּ = temporal "when"; none = bare), and the <strong>Translation</strong>. Click <strong>&#9654; Answer</strong> to reveal the answer key row. Items 18–20 are Haphel infinitives (preview of Ch21).</p>
-
+<p>For each numbered infinitive form, enter the <strong>Root</strong> (3 consonants, Peal perfect 3ms), the <strong>Prefix &amp; Meaning</strong> (<span style="direction:rtl;unicode-bidi:embed;">לְ</span> = purpose/complement; <span style="direction:rtl;unicode-bidi:embed;">כְּ</span> = temporal "when"; none = bare), and the <strong>Translation</strong>. Click <strong>▶ Answer</strong> to reveal the answer key row. Items 18–20 are Haphel infinitives (preview of Ch21).</p>
 <div class="note">
-  <strong>Quick reference:</strong> Peal infinitive prefix = <strong>מִ-</strong> (Hireq). With לְ: <strong>לְמִ-</strong>. With כְּ: <strong>כְּמִ-</strong>. I-aleph/hollow: Tsere instead of Hireq → <strong>מֵ-</strong>. I-ayin: Seghol → <strong>מֶ-</strong>. Haphel infinitive: <strong>לְהַ-</strong>.
+<strong>Quick reference:</strong> Peal infinitive prefix = <strong><span style="direction:rtl;unicode-bidi:embed;">מִ</span>-</strong> (Hireq). With <span style="direction:rtl;unicode-bidi:embed;">לְ</span>: <strong><span style="direction:rtl;unicode-bidi:embed;">לְמִ</span>-</strong>. With <span style="direction:rtl;unicode-bidi:embed;">כְּ</span>: <strong><span style="direction:rtl;unicode-bidi:embed;">כְּמִ</span>-</strong>. I-aleph/hollow: Tsere instead of Hireq → <strong><span style="direction:rtl;unicode-bidi:embed;">מֵ</span>-</strong>. I-ayin: Seghol → <strong><span style="direction:rtl;unicode-bidi:embed;">מֶ</span>-</strong>. Haphel infinitive: <strong><span style="direction:rtl;unicode-bidi:embed;">לְהַ</span>-</strong>.
 </div>
-
 <div class="controls">
-  <button class="ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+<button class="ctrl" onclick="showAll()">Show All Answers</button>
+<button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+<button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
-
 <table id="drill-table">
-  <thead>
-    <tr>
-      <th style="width:2.5em">#</th>
-      <th style="width:16%">Form</th>
-      <th style="width:14%">Root</th>
-      <th style="width:28%">Prefix &amp; Meaning</th>
-      <th style="width:28%">Translation</th>
-      <th style="width:5.5em"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <!-- 1 -->
-    <tr id="q1">
-      <td>1</td>
-      <td><div class="hebrew">לְמִכְתַּב</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a1">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>לְ — purpose / complement ("to")</td>
-      <td>to write / in order to write</td>
-      <td></td>
-    </tr>
-
-    <!-- 2 -->
-    <tr id="q2">
-      <td>2</td>
-      <td><div class="hebrew">לְמֵאמַר</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a2">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">אמר</span></td>
-      <td>לְ — purpose / complement ("to"); מֵ = I-aleph lengthening</td>
-      <td>to say / in order to say</td>
-      <td></td>
-    </tr>
-
-    <!-- 3 -->
-    <tr id="q3">
-      <td>3</td>
-      <td><div class="hebrew">לְמֵיקַם</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a3">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">קום</span></td>
-      <td>לְ — purpose / complement ("to"); מֵי = hollow (II-waw) pattern</td>
-      <td>to arise / to stand up</td>
-      <td></td>
-    </tr>
-
-    <!-- 4 -->
-    <tr id="q4">
-      <td>4</td>
-      <td><div class="hebrew">לְמִנְפַּל</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a4">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">נפל</span></td>
-      <td>לְ — purpose / complement ("to"); nun retained (I-nun infinitive)</td>
-      <td>to fall (down)</td>
-      <td></td>
-    </tr>
-
-    <!-- 5 -->
-    <tr id="q5">
-      <td>5</td>
-      <td><div class="hebrew">כְּמִשְׁמַע</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a5">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">שׁמע</span></td>
-      <td>כְּ — temporal ("when / upon")</td>
-      <td>when hearing / upon hearing</td>
-      <td></td>
-    </tr>
-
-    <!-- 6 -->
-    <tr id="q6">
-      <td>6</td>
-      <td><div class="hebrew">לְמֶעְבַּד</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a6">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">עבד</span></td>
-      <td>לְ — purpose / complement ("to"); מֶ = Seghol (I-ayin guttural)</td>
-      <td>to do / to make / to serve</td>
-      <td></td>
-    </tr>
-
-    <!-- 7 -->
-    <tr id="q7">
-      <td>7</td>
-      <td><div class="hebrew">לְמִנְתַּן</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a7">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">נתן</span></td>
-      <td>לְ — purpose / complement ("to"); nun retained (I-nun infinitive)</td>
-      <td>to give</td>
-      <td></td>
-    </tr>
-
-    <!-- 8 -->
-    <tr id="q8">
-      <td>8</td>
-      <td><div class="hebrew">לְמִבְנֵא</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a8">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">בנה</span></td>
-      <td>לְ — purpose / complement ("to"); ֵא ending = III-he infinitive</td>
-      <td>to build</td>
-      <td></td>
-    </tr>
-
-    <!-- 9 -->
-    <tr id="q9">
-      <td>9</td>
-      <td><div class="hebrew">כְּמֵיקַם</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a9">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">קום</span></td>
-      <td>כְּ — temporal ("when / upon"); מֵי = hollow pattern</td>
-      <td>when arising / upon standing</td>
-      <td></td>
-    </tr>
-
-    <!-- 10 -->
-    <tr id="q10">
-      <td>10</td>
-      <td><div class="hebrew">לְמִסְגַּד</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a10">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">סגד</span></td>
-      <td>לְ — purpose / complement ("to")</td>
-      <td>to bow down / to worship</td>
-      <td></td>
-    </tr>
-
-    <!-- 11 -->
-    <tr id="q11">
-      <td>11</td>
-      <td><div class="hebrew">לְמִקְרַב</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a11">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">קרב</span></td>
-      <td>לְ — purpose / complement ("to")</td>
-      <td>to approach / to draw near</td>
-      <td></td>
-    </tr>
-
-    <!-- 12 -->
-    <tr id="q12">
-      <td>12</td>
-      <td><div class="hebrew">מִשְׁמַע</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a12">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">שׁמע</span></td>
-      <td>none — bare infinitive (subject or construct head)</td>
-      <td>hearing / the act of hearing</td>
-      <td></td>
-    </tr>
-
-    <!-- 13 -->
-    <tr id="q13">
-      <td>13</td>
-      <td><div class="hebrew">מִכְתַּב</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a13">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>none — bare infinitive (subject or construct head)</td>
-      <td>writing / the act of writing</td>
-      <td></td>
-    </tr>
-
-    <!-- 14 -->
-    <tr id="q14">
-      <td>14</td>
-      <td><div class="hebrew">לְמִשְׁלַח</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a14">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">שׁלח</span></td>
-      <td>לְ — purpose / complement ("to")</td>
-      <td>to send</td>
-      <td></td>
-    </tr>
-
-    <!-- 15 -->
-    <tr id="q15">
-      <td>15</td>
-      <td><div class="hebrew">כְּמִכְתַּב</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a15',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a15">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>כְּ — temporal ("when / upon")</td>
-      <td>when writing / upon writing</td>
-      <td></td>
-    </tr>
-
-    <!-- 16 -->
-    <tr id="q16">
-      <td>16</td>
-      <td><div class="hebrew">לְמִנְפַּל</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a16',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a16">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">נפל</span></td>
-      <td>לְ — purpose / complement ("to"); nun retained (I-nun infinitive)</td>
-      <td>to fall (down)</td>
-      <td></td>
-    </tr>
-
-    <!-- 17 -->
-    <tr id="q17">
-      <td>17</td>
-      <td><div class="hebrew">מֶעְבַּד</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a17',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a17">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">עבד</span></td>
-      <td>none — bare infinitive; מֶ = Seghol (I-ayin)</td>
-      <td>doing / making / the act of serving</td>
-      <td></td>
-    </tr>
-
-    <!-- 18 — Haphel preview -->
-    <tr id="q18">
-      <td>18</td>
-      <td><div class="hebrew">לְהַחֲוָיָה</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a18',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a18">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">חוה</span></td>
-      <td>לְ + הַ — Haphel infinitive ("to show / declare") — לְהַ- marks causative stem</td>
-      <td>to show / to declare (Haphel)</td>
-      <td></td>
-    </tr>
-
-    <!-- 19 — Haphel preview -->
-    <tr id="q19">
-      <td>19</td>
-      <td><div class="hebrew">לְהַשְׁנָיָה</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a19',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a19">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">שׁנה</span></td>
-      <td>לְ + הַ — Haphel infinitive ("to change / alter") — לְהַ- marks causative stem</td>
-      <td>to change / to alter (Haphel)</td>
-      <td></td>
-    </tr>
-
-    <!-- 20 — Haphel preview -->
-    <tr id="q20">
-      <td>20</td>
-      <td><div class="hebrew">לְהוֹדָעָה</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="prefix &amp; meaning…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a20',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a20">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">ידע</span></td>
-      <td>לְ + הוֹ — Haphel infinitive ("to make known") — לְהוֹ- variant of causative prefix</td>
-      <td>to make known / to inform (Haphel)</td>
-      <td></td>
-    </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.5em">#</th>
+<th style="width:16%">Form</th>
+<th style="width:14%">Root</th>
+<th style="width:28%">Prefix &amp; Meaning</th>
+<th style="width:28%">Translation</th>
+<th style="width:5.5em"></th>
+</tr>
+</thead>
+<tbody>
+<!-- 1 -->
+<tr id="q1">
+<td>1</td>
+<td><div class="hebrew">לְמִכְתַּב</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a1">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to")</td>
+<td>to write / in order to write</td>
+<td></td>
+</tr>
+<!-- 2 -->
+<tr id="q2">
+<td>2</td>
+<td><div class="hebrew">לְמֵאמַר</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a2">
+<td></td>
+<td></td>
+<td><span class="root-ans">אמר</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to"); <span style="direction:rtl;unicode-bidi:embed;">מֵ</span> = I-aleph lengthening</td>
+<td>to say / in order to say</td>
+<td></td>
+</tr>
+<!-- 3 -->
+<tr id="q3">
+<td>3</td>
+<td><div class="hebrew">לְמֵיקַם</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a3">
+<td></td>
+<td></td>
+<td><span class="root-ans">קום</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to"); <span style="direction:rtl;unicode-bidi:embed;">מֵי</span> = hollow (II-waw) pattern</td>
+<td>to arise / to stand up</td>
+<td></td>
+</tr>
+<!-- 4 -->
+<tr id="q4">
+<td>4</td>
+<td><div class="hebrew">לְמִנְפַּל</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a4">
+<td></td>
+<td></td>
+<td><span class="root-ans">נפל</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to"); nun retained (I-nun infinitive)</td>
+<td>to fall (down)</td>
+<td></td>
+</tr>
+<!-- 5 -->
+<tr id="q5">
+<td>5</td>
+<td><div class="hebrew">כְּמִשְׁמַע</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a5">
+<td></td>
+<td></td>
+<td><span class="root-ans">שׁמע</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">כְּ</span> — temporal ("when / upon")</td>
+<td>when hearing / upon hearing</td>
+<td></td>
+</tr>
+<!-- 6 -->
+<tr id="q6">
+<td>6</td>
+<td><div class="hebrew">לְמֶעְבַּד</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a6">
+<td></td>
+<td></td>
+<td><span class="root-ans">עבד</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to"); <span style="direction:rtl;unicode-bidi:embed;">מֶ</span> = Seghol (I-ayin guttural)</td>
+<td>to do / to make / to serve</td>
+<td></td>
+</tr>
+<!-- 7 -->
+<tr id="q7">
+<td>7</td>
+<td><div class="hebrew">לְמִנְתַּן</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a7">
+<td></td>
+<td></td>
+<td><span class="root-ans">נתן</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to"); nun retained (I-nun infinitive)</td>
+<td>to give</td>
+<td></td>
+</tr>
+<!-- 8 -->
+<tr id="q8">
+<td>8</td>
+<td><div class="hebrew">לְמִבְנֵא</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a8">
+<td></td>
+<td></td>
+<td><span class="root-ans">בנה</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to"); <span style="direction:rtl;unicode-bidi:embed;">ֵא</span> ending = III-he infinitive</td>
+<td>to build</td>
+<td></td>
+</tr>
+<!-- 9 -->
+<tr id="q9">
+<td>9</td>
+<td><div class="hebrew">כְּמֵיקַם</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a9">
+<td></td>
+<td></td>
+<td><span class="root-ans">קום</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">כְּ</span> — temporal ("when / upon"); <span style="direction:rtl;unicode-bidi:embed;">מֵי</span> = hollow pattern</td>
+<td>when arising / upon standing</td>
+<td></td>
+</tr>
+<!-- 10 -->
+<tr id="q10">
+<td>10</td>
+<td><div class="hebrew">לְמִסְגַּד</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a10">
+<td></td>
+<td></td>
+<td><span class="root-ans">סגד</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to")</td>
+<td>to bow down / to worship</td>
+<td></td>
+</tr>
+<!-- 11 -->
+<tr id="q11">
+<td>11</td>
+<td><div class="hebrew">לְמִקְרַב</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a11">
+<td></td>
+<td></td>
+<td><span class="root-ans">קרב</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to")</td>
+<td>to approach / to draw near</td>
+<td></td>
+</tr>
+<!-- 12 -->
+<tr id="q12">
+<td>12</td>
+<td><div class="hebrew">מִשְׁמַע</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a12',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a12">
+<td></td>
+<td></td>
+<td><span class="root-ans">שׁמע</span></td>
+<td>none — bare infinitive (subject or construct head)</td>
+<td>hearing / the act of hearing</td>
+<td></td>
+</tr>
+<!-- 13 -->
+<tr id="q13">
+<td>13</td>
+<td><div class="hebrew">מִכְתַּב</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a13',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a13">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td>none — bare infinitive (subject or construct head)</td>
+<td>writing / the act of writing</td>
+<td></td>
+</tr>
+<!-- 14 -->
+<tr id="q14">
+<td>14</td>
+<td><div class="hebrew">לְמִשְׁלַח</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a14',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a14">
+<td></td>
+<td></td>
+<td><span class="root-ans">שׁלח</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to")</td>
+<td>to send</td>
+<td></td>
+</tr>
+<!-- 15 -->
+<tr id="q15">
+<td>15</td>
+<td><div class="hebrew">כְּמִכְתַּב</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a15',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a15">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">כְּ</span> — temporal ("when / upon")</td>
+<td>when writing / upon writing</td>
+<td></td>
+</tr>
+<!-- 16 -->
+<tr id="q16">
+<td>16</td>
+<td><div class="hebrew">לְמִנְפַּל</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a16',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a16">
+<td></td>
+<td></td>
+<td><span class="root-ans">נפל</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> — purpose / complement ("to"); nun retained (I-nun infinitive)</td>
+<td>to fall (down)</td>
+<td></td>
+</tr>
+<!-- 17 -->
+<tr id="q17">
+<td>17</td>
+<td><div class="hebrew">מֶעְבַּד</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a17',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a17">
+<td></td>
+<td></td>
+<td><span class="root-ans">עבד</span></td>
+<td>none — bare infinitive; <span style="direction:rtl;unicode-bidi:embed;">מֶ</span> = Seghol (I-ayin)</td>
+<td>doing / making / the act of serving</td>
+<td></td>
+</tr>
+<!-- 18 — Haphel preview -->
+<tr id="q18">
+<td>18</td>
+<td><div class="hebrew">לְהַחֲוָיָה</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a18',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a18">
+<td></td>
+<td></td>
+<td><span class="root-ans">חוה</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> + <span style="direction:rtl;unicode-bidi:embed;">הַ</span> — Haphel infinitive ("to show / declare") — <span style="direction:rtl;unicode-bidi:embed;">לְהַ</span>- marks causative stem</td>
+<td>to show / to declare (Haphel)</td>
+<td></td>
+</tr>
+<!-- 19 — Haphel preview -->
+<tr id="q19">
+<td>19</td>
+<td><div class="hebrew">לְהַשְׁנָיָה</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a19',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a19">
+<td></td>
+<td></td>
+<td><span class="root-ans">שׁנה</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> + <span style="direction:rtl;unicode-bidi:embed;">הַ</span> — Haphel infinitive ("to change / alter") — <span style="direction:rtl;unicode-bidi:embed;">לְהַ</span>- marks causative stem</td>
+<td>to change / to alter (Haphel)</td>
+<td></td>
+</tr>
+<!-- 20 — Haphel preview -->
+<tr id="q20">
+<td>20</td>
+<td><div class="hebrew">לְהוֹדָעָה</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="prefix &amp; meaning…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a20',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a20">
+<td></td>
+<td></td>
+<td><span class="root-ans">ידע</span></td>
+<td><span style="direction:rtl;unicode-bidi:embed;">לְ</span> + <span style="direction:rtl;unicode-bidi:embed;">הוֹ</span> — Haphel infinitive ("to make known") — <span style="direction:rtl;unicode-bidi:embed;">לְהוֹ</span>- variant of causative prefix</td>
+<td>to make known / to inform (Haphel)</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <div class="reflection">
-  <h3>Reflection Questions</h3>
-  <ol>
-    <li>Items 2 (לְמֵאמַר) and 3 (לְמֵיקַם) both show Tsere (ֵ) under the mem of the מִ- prefix rather than the expected Hireq (ִ). Both involve weak roots. What causes the lengthening in each case — is the cause the same or different? How can you tell the two forms apart?</li>
-    <li>Items 4 (לְמִנְפַּל) and 7 (לְמִנְתַּן) retain their initial nun. In the Peal imperfect, I-nun roots assimilate their nun (e.g., יִפַּל). Why does the nun stay in the infinitive? What morphological feature of the מִקְטַל pattern prevents assimilation?</li>
-    <li>Item 8 (לְמִבְנֵא) ends in אֵ-. Item 6 (לְמֶעְבַּד) ends in a plain ד. Both are weak verbs. What root class is each, and how does each weak root class affect the shape of the infinitive?</li>
-    <li>Items 12 (מִשְׁמַע), 13 (מִכְתַּב), and 17 (מֶעְבַּד) appear without any prefix. What syntactic role(s) can a bare infinitive serve in Aramaic? What is the difference between a bare infinitive and one with לְ?</li>
-    <li>Items 18–20 are Haphel infinitives (לְהַ- / לְהוֹ- prefix) rather than Peal infinitives (לְמִ-). How does recognizing the הַ-/הוֹ- causative marker help you distinguish Haphel infinitives from Peal ones at first glance?</li>
-  </ol>
+<h3>Reflection Questions</h3>
+<ol>
+<li>Items 2 (<span style="direction:rtl;unicode-bidi:embed;">לְמֵאמַר</span>) and 3 (<span style="direction:rtl;unicode-bidi:embed;">לְמֵיקַם</span>) both show Tsere (<span style="direction:rtl;unicode-bidi:embed;">ֵ</span>) under the mem of the <span style="direction:rtl;unicode-bidi:embed;">מִ</span>- prefix rather than the expected Hireq (<span style="direction:rtl;unicode-bidi:embed;">ִ</span>). Both involve weak roots. What causes the lengthening in each case — is the cause the same or different? How can you tell the two forms apart?</li>
+<li>Items 4 (<span style="direction:rtl;unicode-bidi:embed;">לְמִנְפַּל</span>) and 7 (<span style="direction:rtl;unicode-bidi:embed;">לְמִנְתַּן</span>) retain their initial nun. In the Peal imperfect, I-nun roots assimilate their nun (e.g., <span style="direction:rtl;unicode-bidi:embed;">יִפַּל</span>). Why does the nun stay in the infinitive? What morphological feature of the <span style="direction:rtl;unicode-bidi:embed;">מִקְטַל</span> pattern prevents assimilation?</li>
+<li>Item 8 (<span style="direction:rtl;unicode-bidi:embed;">לְמִבְנֵא</span>) ends in <span style="direction:rtl;unicode-bidi:embed;">אֵ</span>-. Item 6 (<span style="direction:rtl;unicode-bidi:embed;">לְמֶעְבַּד</span>) ends in a plain <span style="direction:rtl;unicode-bidi:embed;">ד</span>. Both are weak verbs. What root class is each, and how does each weak root class affect the shape of the infinitive?</li>
+<li>Items 12 (<span style="direction:rtl;unicode-bidi:embed;">מִשְׁמַע</span>), 13 (<span style="direction:rtl;unicode-bidi:embed;">מִכְתַּב</span>), and 17 (<span style="direction:rtl;unicode-bidi:embed;">מֶעְבַּד</span>) appear without any prefix. What syntactic role(s) can a bare infinitive serve in Aramaic? What is the difference between a bare infinitive and one with <span style="direction:rtl;unicode-bidi:embed;">לְ</span>?</li>
+<li>Items 18–20 are Haphel infinitives (<span style="direction:rtl;unicode-bidi:embed;">לְהַ</span>- / <span style="direction:rtl;unicode-bidi:embed;">לְהוֹ</span>- prefix) rather than Peal infinitives (<span style="direction:rtl;unicode-bidi:embed;">לְמִ</span>-). How does recognizing the <span style="direction:rtl;unicode-bidi:embed;">הַ</span>-/<span style="direction:rtl;unicode-bidi:embed;">הוֹ</span>- causative marker help you distinguish Haphel infinitives from Peal ones at first glance?</li>
+</ol>
 </div>
-
 <script>
 function toggle(id, btn) {
   var row = document.getElementById(id);
@@ -477,6 +449,5 @@ function clearAll() {
   document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
 }
 </script>
-
 </body>
 </html>

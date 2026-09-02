@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 14 — Peal Imperfect Parsing Drill</title>
 <style>
   body { font-family: Georgia, serif; max-width: 980px; margin: 2em auto; padding: 0 1em; color: #222; }
@@ -48,407 +49,379 @@
 </style>
 </head>
 <body>
-
-
 <h1>Chapter 14 — Peal Imperfect Parsing Drill</h1>
 <p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch14: Peal Imperfect</p>
-
 <h2>Instructions</h2>
-<p>For each numbered verb form, enter the <strong>Root</strong> (3 consonants, Peal perfect 3ms), <strong>PGN</strong> (person / gender / number), and <strong>Translation</strong> in the input fields. Click <strong>&#9654; Answer</strong> to reveal the answer key row. All forms are Peal imperfect.</p>
-
+<p>For each numbered verb form, enter the <strong>Root</strong> (3 consonants, Peal perfect 3ms), <strong>PGN</strong> (person / gender / number), and <strong>Translation</strong> in the input fields. Click <strong>▶ Answer</strong> to reveal the answer key row. All forms are Peal imperfect.</p>
 <div class="controls">
-  <button class="ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+<button class="ctrl" onclick="showAll()">Show All Answers</button>
+<button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+<button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
-
 <table id="drill-table">
-  <thead>
-    <tr>
-      <th style="width:2.5em">#</th>
-      <th style="width:14%">Form</th>
-      <th style="width:18%">Root</th>
-      <th style="width:18%">PGN</th>
-      <th style="width:28%">Translation</th>
-      <th style="width:5.5em"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <!-- 1 -->
-    <tr id="q1">
-      <td>1</td>
-      <td><div class="hebrew">יִכְתֻּב</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a1">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>3ms</td>
-      <td>he will write</td>
-      <td></td>
-    </tr>
-
-    <!-- 2 -->
-    <tr id="q2">
-      <td>2</td>
-      <td><div class="hebrew">יֵאמַר</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a2">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">אמר</span></td>
-      <td>3ms</td>
-      <td>he will say</td>
-      <td></td>
-    </tr>
-
-    <!-- 3 -->
-    <tr id="q3">
-      <td>3</td>
-      <td><div class="hebrew">יְקוּם</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a3">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">קום</span></td>
-      <td>3ms</td>
-      <td>he will arise</td>
-      <td></td>
-    </tr>
-
-    <!-- 4 -->
-    <tr id="q4">
-      <td>4</td>
-      <td><div class="hebrew">יִפַּל</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a4">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">נפל</span></td>
-      <td>3ms</td>
-      <td>he will fall</td>
-      <td></td>
-    </tr>
-
-    <!-- 5 -->
-    <tr id="q5">
-      <td>5</td>
-      <td><div class="hebrew">יֶהֱוֵא</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a5">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">הוה</span></td>
-      <td>3ms</td>
-      <td>it will be / he will be</td>
-      <td></td>
-    </tr>
-
-    <!-- 6 -->
-    <tr id="q6">
-      <td>6</td>
-      <td><div class="hebrew">יִשְׁלַח</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a6">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">שׁלח</span></td>
-      <td>3ms</td>
-      <td>he will send</td>
-      <td></td>
-    </tr>
-
-    <!-- 7 -->
-    <tr id="q7">
-      <td>7</td>
-      <td><div class="hebrew">תִּקְטֻל</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a7">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">קטל</span></td>
-      <td>3fs / 2ms</td>
-      <td>she will kill / you (ms) will kill</td>
-      <td></td>
-    </tr>
-
-    <!-- 8 -->
-    <tr id="q8">
-      <td>8</td>
-      <td><div class="hebrew">יַעְבְּדוּן</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a8">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">עבד</span></td>
-      <td>3mp</td>
-      <td>they (m) will serve / do</td>
-      <td></td>
-    </tr>
-
-    <!-- 9 -->
-    <tr id="q9">
-      <td>9</td>
-      <td><div class="hebrew">תִּבְנֵא</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a9">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">בנה</span></td>
-      <td>3fs / 2ms</td>
-      <td>she/it will be built / you (ms) will build</td>
-      <td></td>
-    </tr>
-
-    <!-- 10 -->
-    <tr id="q10">
-      <td>10</td>
-      <td><div class="hebrew">יִסְגְּדוּן</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a10">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">סגד</span></td>
-      <td>3mp</td>
-      <td>they (m) will bow down</td>
-      <td></td>
-    </tr>
-
-    <!-- 11 -->
-    <tr id="q11">
-      <td>11</td>
-      <td><div class="hebrew">נִזְכֻּר</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a11">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">זכר</span></td>
-      <td>1cp</td>
-      <td>we will remember</td>
-      <td></td>
-    </tr>
-
-    <!-- 12 -->
-    <tr id="q12">
-      <td>12</td>
-      <td><div class="hebrew">יִנְתֵּן</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a12">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">יהב</span></td>
-      <td>3ms</td>
-      <td>he will give (suppletive imperfect of יהב)</td>
-      <td></td>
-    </tr>
-
-    <!-- 13 -->
-    <tr id="q13">
-      <td>13</td>
-      <td><div class="hebrew">יִקְטֻל</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a13">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">קטל</span></td>
-      <td>3ms</td>
-      <td>he will kill</td>
-      <td></td>
-    </tr>
-
-    <!-- 14 -->
-    <tr id="q14">
-      <td>14</td>
-      <td><div class="hebrew">יִשְׁמַע</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a14">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">שׁמע</span></td>
-      <td>3ms</td>
-      <td>he will hear</td>
-      <td></td>
-    </tr>
-
-    <!-- 15 -->
-    <tr id="q15">
-      <td>15</td>
-      <td><div class="hebrew">אֶכְתֻּב</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a15',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a15">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>1cs</td>
-      <td>I will write</td>
-      <td></td>
-    </tr>
-
-    <!-- 16 -->
-    <tr id="q16">
-      <td>16</td>
-      <td><div class="hebrew">תִּכְתְּבוּן</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a16',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a16">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>2mp</td>
-      <td>you (mp) will write</td>
-      <td></td>
-    </tr>
-
-    <!-- 17 -->
-    <tr id="q17">
-      <td>17</td>
-      <td><div class="hebrew">תִּכְתְּבִין</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a17',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a17">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>2fs</td>
-      <td>you (fs) will write</td>
-      <td></td>
-    </tr>
-
-    <!-- 18 -->
-    <tr id="q18">
-      <td>18</td>
-      <td><div class="hebrew">יִכְתְּבָן</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a18',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a18">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>3fp</td>
-      <td>they (f) will write</td>
-      <td></td>
-    </tr>
-
-    <!-- 19 -->
-    <tr id="q19">
-      <td>19</td>
-      <td><div class="hebrew">תֵּאמְרוּן</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a19',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a19">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">אמר</span></td>
-      <td>2mp</td>
-      <td>you (mp) will say</td>
-      <td></td>
-    </tr>
-
-    <!-- 20 -->
-    <tr id="q20">
-      <td>20</td>
-      <td><div class="hebrew">נֶהֱוֵא</div></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="PGN…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a20',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a20">
-      <td></td>
-            <td></td>
-      <td><span class="root-ans">הוה</span></td>
-      <td>1cp</td>
-      <td>we will be</td>
-      <td></td>
-    </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.5em">#</th>
+<th style="width:14%">Form</th>
+<th style="width:18%">Root</th>
+<th style="width:18%">PGN</th>
+<th style="width:28%">Translation</th>
+<th style="width:5.5em"></th>
+</tr>
+</thead>
+<tbody>
+<!-- 1 -->
+<tr id="q1">
+<td>1</td>
+<td><div class="hebrew">יִכְתֻּב</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a1">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td>3ms</td>
+<td>he will write</td>
+<td></td>
+</tr>
+<!-- 2 -->
+<tr id="q2">
+<td>2</td>
+<td><div class="hebrew">יֵאמַר</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a2">
+<td></td>
+<td></td>
+<td><span class="root-ans">אמר</span></td>
+<td>3ms</td>
+<td>he will say</td>
+<td></td>
+</tr>
+<!-- 3 -->
+<tr id="q3">
+<td>3</td>
+<td><div class="hebrew">יְקוּם</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a3">
+<td></td>
+<td></td>
+<td><span class="root-ans">קום</span></td>
+<td>3ms</td>
+<td>he will arise</td>
+<td></td>
+</tr>
+<!-- 4 -->
+<tr id="q4">
+<td>4</td>
+<td><div class="hebrew">יִפַּל</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a4">
+<td></td>
+<td></td>
+<td><span class="root-ans">נפל</span></td>
+<td>3ms</td>
+<td>he will fall</td>
+<td></td>
+</tr>
+<!-- 5 -->
+<tr id="q5">
+<td>5</td>
+<td><div class="hebrew">יֶהֱוֵא</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a5">
+<td></td>
+<td></td>
+<td><span class="root-ans">הוה</span></td>
+<td>3ms</td>
+<td>it will be / he will be</td>
+<td></td>
+</tr>
+<!-- 6 -->
+<tr id="q6">
+<td>6</td>
+<td><div class="hebrew">יִשְׁלַח</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a6">
+<td></td>
+<td></td>
+<td><span class="root-ans">שׁלח</span></td>
+<td>3ms</td>
+<td>he will send</td>
+<td></td>
+</tr>
+<!-- 7 -->
+<tr id="q7">
+<td>7</td>
+<td><div class="hebrew">תִּקְטֻל</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a7">
+<td></td>
+<td></td>
+<td><span class="root-ans">קטל</span></td>
+<td>3fs / 2ms</td>
+<td>she will kill / you (ms) will kill</td>
+<td></td>
+</tr>
+<!-- 8 -->
+<tr id="q8">
+<td>8</td>
+<td><div class="hebrew">יַעְבְּדוּן</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a8">
+<td></td>
+<td></td>
+<td><span class="root-ans">עבד</span></td>
+<td>3mp</td>
+<td>they (m) will serve / do</td>
+<td></td>
+</tr>
+<!-- 9 -->
+<tr id="q9">
+<td>9</td>
+<td><div class="hebrew">תִּבְנֵא</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a9">
+<td></td>
+<td></td>
+<td><span class="root-ans">בנה</span></td>
+<td>3fs / 2ms</td>
+<td>she/it will be built / you (ms) will build</td>
+<td></td>
+</tr>
+<!-- 10 -->
+<tr id="q10">
+<td>10</td>
+<td><div class="hebrew">יִסְגְּדוּן</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a10">
+<td></td>
+<td></td>
+<td><span class="root-ans">סגד</span></td>
+<td>3mp</td>
+<td>they (m) will bow down</td>
+<td></td>
+</tr>
+<!-- 11 -->
+<tr id="q11">
+<td>11</td>
+<td><div class="hebrew">נִזְכֻּר</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a11">
+<td></td>
+<td></td>
+<td><span class="root-ans">זכר</span></td>
+<td>1cp</td>
+<td>we will remember</td>
+<td></td>
+</tr>
+<!-- 12 -->
+<tr id="q12">
+<td>12</td>
+<td><div class="hebrew">יִנְתֵּן</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a12',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a12">
+<td></td>
+<td></td>
+<td><span class="root-ans">יהב</span></td>
+<td>3ms</td>
+<td>he will give (suppletive imperfect of <span style="direction:rtl;unicode-bidi:embed;">יהב</span>)</td>
+<td></td>
+</tr>
+<!-- 13 -->
+<tr id="q13">
+<td>13</td>
+<td><div class="hebrew">יִקְטֻל</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a13',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a13">
+<td></td>
+<td></td>
+<td><span class="root-ans">קטל</span></td>
+<td>3ms</td>
+<td>he will kill</td>
+<td></td>
+</tr>
+<!-- 14 -->
+<tr id="q14">
+<td>14</td>
+<td><div class="hebrew">יִשְׁמַע</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a14',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a14">
+<td></td>
+<td></td>
+<td><span class="root-ans">שׁמע</span></td>
+<td>3ms</td>
+<td>he will hear</td>
+<td></td>
+</tr>
+<!-- 15 -->
+<tr id="q15">
+<td>15</td>
+<td><div class="hebrew">אֶכְתֻּב</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a15',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a15">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td>1cs</td>
+<td>I will write</td>
+<td></td>
+</tr>
+<!-- 16 -->
+<tr id="q16">
+<td>16</td>
+<td><div class="hebrew">תִּכְתְּבוּן</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a16',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a16">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td>2mp</td>
+<td>you (mp) will write</td>
+<td></td>
+</tr>
+<!-- 17 -->
+<tr id="q17">
+<td>17</td>
+<td><div class="hebrew">תִּכְתְּבִין</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a17',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a17">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td>2fs</td>
+<td>you (fs) will write</td>
+<td></td>
+</tr>
+<!-- 18 -->
+<tr id="q18">
+<td>18</td>
+<td><div class="hebrew">יִכְתְּבָן</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a18',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a18">
+<td></td>
+<td></td>
+<td><span class="root-ans">כתב</span></td>
+<td>3fp</td>
+<td>they (f) will write</td>
+<td></td>
+</tr>
+<!-- 19 -->
+<tr id="q19">
+<td>19</td>
+<td><div class="hebrew">תֵּאמְרוּן</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a19',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a19">
+<td></td>
+<td></td>
+<td><span class="root-ans">אמר</span></td>
+<td>2mp</td>
+<td>you (mp) will say</td>
+<td></td>
+</tr>
+<!-- 20 -->
+<tr id="q20">
+<td>20</td>
+<td><div class="hebrew">נֶהֱוֵא</div></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="PGN…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a20',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a20">
+<td></td>
+<td></td>
+<td><span class="root-ans">הוה</span></td>
+<td>1cp</td>
+<td>we will be</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <div class="reflection">
-  <h3>Reflection Questions</h3>
-  <ol>
-    <li>Items 1 and 13 use the roots כתב and קטל (the abstract grammar root) for the same PGN. What tells you both are 3ms Peal imperfect, and how does the stem vowel differ from Hebrew?</li>
-    <li>Items 2 and 19 share root אמר. What PGN is each, and what caused the prefix vowel change from יִ-/תִּ- to יֵ-/תֵּ-?</li>
-    <li>Item 12 (יִנְתֵּן) is the Peal imperfect of יהב. Why doesn't it look like a normal imperfect of יהב? What phenomenon is at work?</li>
-    <li>Compare item 4 (יִפַּל) with the Peal perfect of the same root (נְפַל). What happened to the first root consonant? How does this parallel Hebrew יִפֹּל?</li>
-    <li>Items 16, 17, and 18 all come from root כתב but represent 2mp, 2fs, and 3fp. What suffix marks each, and how do these differ from the Hebrew Qal imperfect equivalents?</li>
-  </ol>
+<h3>Reflection Questions</h3>
+<ol>
+<li>Items 1 and 13 use the roots <span style="direction:rtl;unicode-bidi:embed;">כתב</span> and <span style="direction:rtl;unicode-bidi:embed;">קטל</span> (the abstract grammar root) for the same PGN. What tells you both are 3ms Peal imperfect, and how does the stem vowel differ from Hebrew?</li>
+<li>Items 2 and 19 share root <span style="direction:rtl;unicode-bidi:embed;">אמר</span>. What PGN is each, and what caused the prefix vowel change from <span style="direction:rtl;unicode-bidi:embed;">יִ</span>-/<span style="direction:rtl;unicode-bidi:embed;">תִּ</span>- to <span style="direction:rtl;unicode-bidi:embed;">יֵ</span>-/<span style="direction:rtl;unicode-bidi:embed;">תֵּ</span>-?</li>
+<li>Item 12 (<span style="direction:rtl;unicode-bidi:embed;">יִנְתֵּן</span>) is the Peal imperfect of <span style="direction:rtl;unicode-bidi:embed;">יהב</span>. Why doesn't it look like a normal imperfect of <span style="direction:rtl;unicode-bidi:embed;">יהב</span>? What phenomenon is at work?</li>
+<li>Compare item 4 (<span style="direction:rtl;unicode-bidi:embed;">יִפַּל</span>) with the Peal perfect of the same root (<span style="direction:rtl;unicode-bidi:embed;">נְפַל</span>). What happened to the first root consonant? How does this parallel Hebrew <span style="direction:rtl;unicode-bidi:embed;">יִפֹּל</span>?</li>
+<li>Items 16, 17, and 18 all come from root <span style="direction:rtl;unicode-bidi:embed;">כתב</span> but represent 2mp, 2fs, and 3fp. What suffix marks each, and how do these differ from the Hebrew Qal imperfect equivalents?</li>
+</ol>
 </div>
-
 <script>
 function toggle(id, btn) {
   var row = document.getElementById(id);
@@ -472,6 +445,5 @@ function clearAll() {
   document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
 }
 </script>
-
 </body>
 </html>
