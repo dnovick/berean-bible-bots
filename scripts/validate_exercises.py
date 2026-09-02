@@ -50,6 +50,10 @@ _ANS_ROW_INLINE_DISPLAY_RE = _re.compile(
 )
 _RBTN_PRE_OPEN_RE = _re.compile(r'class=["\']rbtn\s+on["\']', _re.IGNORECASE)
 _PLACEHOLDER_EG_RE = _re.compile(r'placeholder=["\'][^"\']*e\.g\.', _re.IGNORECASE)
+_PLACEHOLDER_OR_RE = _re.compile(
+    r'<input\b[^>]*placeholder=["\'](?=[^"\']{1,25}["\'])[^"\']*\bor\b[^"\']*["\']',
+    _re.IGNORECASE
+)
 
 
 @_register("ans-row-no-inline-display")
@@ -58,7 +62,8 @@ def check_ans_row_no_inline_display(
 ) -> None:
     """ans-row elements must not carry inline style="display:..." attributes,
     answer buttons must not be pre-labeled as open (class="rbtn on" / ▼ Hide),
-    and input placeholders must not use 'e.g.' (which reveals the answer).
+    input placeholders must not use 'e.g.' (reveals the answer), and inputs
+    must not use placeholder="A or B" (signals a small answer set — use select).
     """
     name = ex_dir.name
     html_file = ex_dir / f"{name}.html"
@@ -83,6 +88,13 @@ def check_ans_row_no_inline_display(
                 errors, ex_dir,
                 f"{html_file.name}:{lineno} — input has 'e.g.' placeholder"
                 " (reveals the answer); use a generic label like 'division' or 'types'"
+            )
+        if _PLACEHOLDER_OR_RE.search(line):
+            _err(
+                errors, ex_dir,
+                f"{html_file.name}:{lineno} — input placeholder enumerates choices with"
+                " 'or' (e.g. 'QH or —'); fields with a small answer set must use"
+                " <select> instead of <input>"
             )
 
 

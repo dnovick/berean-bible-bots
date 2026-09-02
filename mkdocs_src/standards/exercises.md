@@ -99,7 +99,12 @@ Fields with a constrained set of valid answers **must** use `<select>` dropdowns
 | PGN (3ms, 2fp …) | `<select>` |
 | Yes / No answers | `<select>` |
 | Function / Role labels | `<select>` |
+| Any field with fewer than 10 possible answers | `<select>` |
 | Free-text (root, translation, gloss) | `<input class="parse-field">` |
+
+**Rule:** Any column whose complete answer set is fewer than 10 values must use `<select>`. Do not use `placeholder="A or B"` to hint at a constrained set — that is a signal the field should be a dropdown. When a placeholder lists options separated by "or" (e.g. `placeholder="QH or —"`), replace the `<input>` with a `<select>`.
+
+Enforced by: `validate_exercises.py` → `check_ans_row_no_inline_display` (detects `placeholder="… or …"` patterns).
 
 For paradigm fill-in drills (`<select>`-based): present four options, all from the same root. Answer rows must include morphological notes (stem + conjugation + PGN label).
 
