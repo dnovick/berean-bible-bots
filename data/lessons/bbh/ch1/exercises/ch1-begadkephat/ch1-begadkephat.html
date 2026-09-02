@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 1 — Hebrew Begadkephat Letter Pronunciation</title>
 <style>
   body { font-family: Georgia, serif; max-width: 960px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
@@ -35,299 +36,281 @@
 </style>
 </head>
 <body>
-
 <h1>Chapter 1 — Hebrew Begadkephat Letter Pronunciation</h1>
 <p class="subtitle">BBH Chapter 1 · Hebrew Alphabet · 6 letters · 12 entries</p>
-
 <div class="instructions">
-  <strong>Instructions:</strong> The six begadkephat letters (ב ג ד כ פ ת) each have two pronunciations: hard (with dagesh lene ּ) and soft (without). For each letter shown, select the correct pronunciation from the dropdown.
+<strong>Instructions:</strong> The six begadkephat letters (<span style="direction:rtl;unicode-bidi:embed;">ב</span> <span style="direction:rtl;unicode-bidi:embed;">ג</span> <span style="direction:rtl;unicode-bidi:embed;">ד</span> <span style="direction:rtl;unicode-bidi:embed;">כ</span> <span style="direction:rtl;unicode-bidi:embed;">פ</span> <span style="direction:rtl;unicode-bidi:embed;">ת</span>) each have two pronunciations: hard (with dagesh lene <span style="direction:rtl;unicode-bidi:embed;">ּ</span>) and soft (without). For each letter shown, select the correct pronunciation from the dropdown.
 </div>
-
 <div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button class="clr" onclick="clearAll()">Clear All</button>
+<button onclick="showAll()">Show All Answers</button>
+<button onclick="hideAll()">Hide All Answers</button>
+<button class="clr" onclick="clearAll()">Clear All</button>
 </div>
-
 <table>
-  <thead>
-    <tr>
-      <th style="width:2.2rem">#</th>
-      <th style="width:3.5rem">Letter</th>
-      <th style="width:5rem">Name</th>
-      <th>Pronunciation</th>
-      <th style="width:5.5rem"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-  <!-- 1: פ — correct: "f as in fill" (1st) -->
-  <tr>
-    <td class="num">1</td>
-    <td class="heb">פ</td>
-    <td>Pe</td>
-    <td><select class="parse-field" id="sel-1">
-      <option value="">—</option>
-      <option>f as in fill</option>
-      <option>p as in pool</option>
-      <option>kh as in Bach</option>
-      <option>b as in boy</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-1">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">פ</td>
-    <td>Pe</td>
-    <td>f as in fill</td>
-    <td></td>
-  </tr>
-
-  <!-- 2: גּ — correct: "g as in good" (3rd) -->
-  <tr>
-    <td class="num">2</td>
-    <td class="heb">גּ</td>
-    <td>Gimel</td>
-    <td><select class="parse-field" id="sel-2">
-      <option value="">—</option>
-      <option>d as in door</option>
-      <option>k as in king</option>
-      <option>g as in good</option>
-      <option>t as in tall</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-2">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">גּ</td>
-    <td>Gimel</td>
-    <td>g as in good</td>
-    <td></td>
-  </tr>
-
-  <!-- 3: תּ — correct: "t as in tall" (2nd) -->
-  <tr>
-    <td class="num">3</td>
-    <td class="heb">תּ</td>
-    <td>Taw</td>
-    <td><select class="parse-field" id="sel-3">
-      <option value="">—</option>
-      <option>d as in door</option>
-      <option>t as in tall</option>
-      <option>k as in king</option>
-      <option>g as in good</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-3">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">תּ</td>
-    <td>Taw</td>
-    <td>t as in tall</td>
-    <td></td>
-  </tr>
-
-  <!-- 4: ב — correct: "v as in vine" (4th) -->
-  <tr>
-    <td class="num">4</td>
-    <td class="heb">ב</td>
-    <td>Bet</td>
-    <td><select class="parse-field" id="sel-4">
-      <option value="">—</option>
-      <option>b as in boy</option>
-      <option>f as in fill</option>
-      <option>kh as in Bach</option>
-      <option>v as in vine</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-4">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">ב</td>
-    <td>Bet</td>
-    <td>v as in vine</td>
-    <td></td>
-  </tr>
-
-  <!-- 5: כּ — correct: "k as in king" (1st) -->
-  <tr>
-    <td class="num">5</td>
-    <td class="heb">כּ</td>
-    <td>Kaf</td>
-    <td><select class="parse-field" id="sel-5">
-      <option value="">—</option>
-      <option>k as in king</option>
-      <option>kh as in Bach</option>
-      <option>g as in good</option>
-      <option>t as in tall</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-5">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">כּ</td>
-    <td>Kaf</td>
-    <td>k as in king</td>
-    <td></td>
-  </tr>
-
-  <!-- 6: ד — correct: "d as in door" (3rd) -->
-  <tr>
-    <td class="num">6</td>
-    <td class="heb">ד</td>
-    <td>Dalet</td>
-    <td><select class="parse-field" id="sel-6">
-      <option value="">—</option>
-      <option>t as in tall</option>
-      <option>g as in good</option>
-      <option>d as in door</option>
-      <option>k as in king</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-6">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">ד</td>
-    <td>Dalet</td>
-    <td>d as in door</td>
-    <td></td>
-  </tr>
-
-  <!-- 7: בּ — correct: "b as in boy" (2nd) -->
-  <tr>
-    <td class="num">7</td>
-    <td class="heb">בּ</td>
-    <td>Bet</td>
-    <td><select class="parse-field" id="sel-7">
-      <option value="">—</option>
-      <option>v as in vine</option>
-      <option>b as in boy</option>
-      <option>f as in fill</option>
-      <option>p as in pool</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-7">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">בּ</td>
-    <td>Bet</td>
-    <td>b as in boy</td>
-    <td></td>
-  </tr>
-
-  <!-- 8: ת — correct: "t as in tall" (4th) -->
-  <tr>
-    <td class="num">8</td>
-    <td class="heb">ת</td>
-    <td>Taw</td>
-    <td><select class="parse-field" id="sel-8">
-      <option value="">—</option>
-      <option>d as in door</option>
-      <option>k as in king</option>
-      <option>g as in good</option>
-      <option>t as in tall</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-8">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">ת</td>
-    <td>Taw</td>
-    <td>t as in tall</td>
-    <td></td>
-  </tr>
-
-  <!-- 9: כ — correct: "kh as in Bach" (1st) -->
-  <tr>
-    <td class="num">9</td>
-    <td class="heb">כ</td>
-    <td>Kaf</td>
-    <td><select class="parse-field" id="sel-9">
-      <option value="">—</option>
-      <option>kh as in Bach</option>
-      <option>k as in king</option>
-      <option>b as in boy</option>
-      <option>f as in fill</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-9">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">כ</td>
-    <td>Kaf</td>
-    <td>kh as in Bach</td>
-    <td></td>
-  </tr>
-
-  <!-- 10: דּ — correct: "d as in door" (3rd) -->
-  <tr>
-    <td class="num">10</td>
-    <td class="heb">דּ</td>
-    <td>Dalet</td>
-    <td><select class="parse-field" id="sel-10">
-      <option value="">—</option>
-      <option>t as in tall</option>
-      <option>k as in king</option>
-      <option>d as in door</option>
-      <option>g as in good</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-10">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">דּ</td>
-    <td>Dalet</td>
-    <td>d as in door</td>
-    <td></td>
-  </tr>
-
-  <!-- 11: ג — correct: "g as in good" (2nd) -->
-  <tr>
-    <td class="num">11</td>
-    <td class="heb">ג</td>
-    <td>Gimel</td>
-    <td><select class="parse-field" id="sel-11">
-      <option value="">—</option>
-      <option>d as in door</option>
-      <option>g as in good</option>
-      <option>k as in king</option>
-      <option>t as in tall</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-11">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">ג</td>
-    <td>Gimel</td>
-    <td>g as in good</td>
-    <td></td>
-  </tr>
-
-  <!-- 12: פּ — correct: "p as in pool" (4th) -->
-  <tr>
-    <td class="num">12</td>
-    <td class="heb">פּ</td>
-    <td>Pe</td>
-    <td><select class="parse-field" id="sel-12">
-      <option value="">—</option>
-      <option>f as in fill</option>
-      <option>kh as in Bach</option>
-      <option>b as in boy</option>
-      <option>p as in pool</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-12">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">פּ</td>
-    <td>Pe</td>
-    <td>p as in pool</td>
-    <td></td>
-  </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.2rem">#</th>
+<th style="width:3.5rem">Letter</th>
+<th style="width:5rem">Name</th>
+<th>Pronunciation</th>
+<th style="width:5.5rem"></th>
+</tr>
+</thead>
+<tbody>
+ 1: <span style="direction:rtl;unicode-bidi:embed;">פ</span> — correct: "f as in fill" (1st) 
+<tr>
+<td class="num">1</td>
+<td class="heb">פ</td>
+<td>Pe</td>
+<td><select class="parse-field" id="sel-1">
+<option value="">—</option>
+<option>f as in fill</option>
+<option>p as in pool</option>
+<option>kh as in Bach</option>
+<option>b as in boy</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">פ</td>
+<td>Pe</td>
+<td>f as in fill</td>
+<td></td>
+</tr>
+ 2: <span style="direction:rtl;unicode-bidi:embed;">גּ</span> — correct: "g as in good" (3rd) 
+<tr>
+<td class="num">2</td>
+<td class="heb">גּ</td>
+<td>Gimel</td>
+<td><select class="parse-field" id="sel-2">
+<option value="">—</option>
+<option>d as in door</option>
+<option>k as in king</option>
+<option>g as in good</option>
+<option>t as in tall</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">גּ</td>
+<td>Gimel</td>
+<td>g as in good</td>
+<td></td>
+</tr>
+ 3: <span style="direction:rtl;unicode-bidi:embed;">תּ</span> — correct: "t as in tall" (2nd) 
+<tr>
+<td class="num">3</td>
+<td class="heb">תּ</td>
+<td>Taw</td>
+<td><select class="parse-field" id="sel-3">
+<option value="">—</option>
+<option>d as in door</option>
+<option>t as in tall</option>
+<option>k as in king</option>
+<option>g as in good</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">תּ</td>
+<td>Taw</td>
+<td>t as in tall</td>
+<td></td>
+</tr>
+ 4: <span style="direction:rtl;unicode-bidi:embed;">ב</span> — correct: "v as in vine" (4th) 
+<tr>
+<td class="num">4</td>
+<td class="heb">ב</td>
+<td>Bet</td>
+<td><select class="parse-field" id="sel-4">
+<option value="">—</option>
+<option>b as in boy</option>
+<option>f as in fill</option>
+<option>kh as in Bach</option>
+<option>v as in vine</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-4">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">ב</td>
+<td>Bet</td>
+<td>v as in vine</td>
+<td></td>
+</tr>
+ 5: <span style="direction:rtl;unicode-bidi:embed;">כּ</span> — correct: "k as in king" (1st) 
+<tr>
+<td class="num">5</td>
+<td class="heb">כּ</td>
+<td>Kaf</td>
+<td><select class="parse-field" id="sel-5">
+<option value="">—</option>
+<option>k as in king</option>
+<option>kh as in Bach</option>
+<option>g as in good</option>
+<option>t as in tall</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-5">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">כּ</td>
+<td>Kaf</td>
+<td>k as in king</td>
+<td></td>
+</tr>
+ 6: <span style="direction:rtl;unicode-bidi:embed;">ד</span> — correct: "d as in door" (3rd) 
+<tr>
+<td class="num">6</td>
+<td class="heb">ד</td>
+<td>Dalet</td>
+<td><select class="parse-field" id="sel-6">
+<option value="">—</option>
+<option>t as in tall</option>
+<option>g as in good</option>
+<option>d as in door</option>
+<option>k as in king</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-6">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">ד</td>
+<td>Dalet</td>
+<td>d as in door</td>
+<td></td>
+</tr>
+ 7: <span style="direction:rtl;unicode-bidi:embed;">בּ</span> — correct: "b as in boy" (2nd) 
+<tr>
+<td class="num">7</td>
+<td class="heb">בּ</td>
+<td>Bet</td>
+<td><select class="parse-field" id="sel-7">
+<option value="">—</option>
+<option>v as in vine</option>
+<option>b as in boy</option>
+<option>f as in fill</option>
+<option>p as in pool</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-7">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">בּ</td>
+<td>Bet</td>
+<td>b as in boy</td>
+<td></td>
+</tr>
+ 8: <span style="direction:rtl;unicode-bidi:embed;">ת</span> — correct: "t as in tall" (4th) 
+<tr>
+<td class="num">8</td>
+<td class="heb">ת</td>
+<td>Taw</td>
+<td><select class="parse-field" id="sel-8">
+<option value="">—</option>
+<option>d as in door</option>
+<option>k as in king</option>
+<option>g as in good</option>
+<option>t as in tall</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-8">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">ת</td>
+<td>Taw</td>
+<td>t as in tall</td>
+<td></td>
+</tr>
+ 9: <span style="direction:rtl;unicode-bidi:embed;">כ</span> — correct: "kh as in Bach" (1st) 
+<tr>
+<td class="num">9</td>
+<td class="heb">כ</td>
+<td>Kaf</td>
+<td><select class="parse-field" id="sel-9">
+<option value="">—</option>
+<option>kh as in Bach</option>
+<option>k as in king</option>
+<option>b as in boy</option>
+<option>f as in fill</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-9">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">כ</td>
+<td>Kaf</td>
+<td>kh as in Bach</td>
+<td></td>
+</tr>
+ 10: <span style="direction:rtl;unicode-bidi:embed;">דּ</span> — correct: "d as in door" (3rd) 
+<tr>
+<td class="num">10</td>
+<td class="heb">דּ</td>
+<td>Dalet</td>
+<td><select class="parse-field" id="sel-10">
+<option value="">—</option>
+<option>t as in tall</option>
+<option>k as in king</option>
+<option>d as in door</option>
+<option>g as in good</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-10">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">דּ</td>
+<td>Dalet</td>
+<td>d as in door</td>
+<td></td>
+</tr>
+ 11: <span style="direction:rtl;unicode-bidi:embed;">ג</span> — correct: "g as in good" (2nd) 
+<tr>
+<td class="num">11</td>
+<td class="heb">ג</td>
+<td>Gimel</td>
+<td><select class="parse-field" id="sel-11">
+<option value="">—</option>
+<option>d as in door</option>
+<option>g as in good</option>
+<option>k as in king</option>
+<option>t as in tall</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-11">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">ג</td>
+<td>Gimel</td>
+<td>g as in good</td>
+<td></td>
+</tr>
+ 12: <span style="direction:rtl;unicode-bidi:embed;">פּ</span> — correct: "p as in pool" (4th) 
+<tr>
+<td class="num">12</td>
+<td class="heb">פּ</td>
+<td>Pe</td>
+<td><select class="parse-field" id="sel-12">
+<option value="">—</option>
+<option>f as in fill</option>
+<option>kh as in Bach</option>
+<option>b as in boy</option>
+<option>p as in pool</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-12">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">פּ</td>
+<td>Pe</td>
+<td>p as in pool</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <script>
   const ROWS = 12;
   function tog(n) {
@@ -354,6 +337,5 @@
     hideAll();
   }
 </script>
-
 </body>
 </html>
