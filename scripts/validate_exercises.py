@@ -5,6 +5,13 @@ Each check is a registered function — add new checks to _CHECKS to extend.
 
 Current checks:
   - three-format: every exercise directory has <name>.md, <name>.html, <name>.pdf
+  - ans-row-no-inline-display: ans-row elements have no inline display style,
+      answer buttons are not pre-labeled as open, inputs have no 'e.g.' placeholder,
+      inputs with a small answer set do not use placeholder="A or B"
+  - ans-row-no-colspan: ans-row <tr> elements must not contain colspan attributes
+  - verse-ref-hebrew-same-node: verse references and Hebrew text must not share a
+      short text node (RTL bidi reordering renders them in wrong order)
+  - readme-chapter-number: README.md must mention the chapter number from the path
 
 Exit 0 if clean (or warnings only without --strict), exit 1 on errors.
 
@@ -64,6 +71,7 @@ def check_ans_row_no_inline_display(
     answer buttons must not be pre-labeled as open (class="rbtn on" / ▼ Hide),
     input placeholders must not use 'e.g.' (reveals the answer), and inputs
     must not use placeholder="A or B" (signals a small answer set — use select).
+    colspan on ans-rows is checked separately by ans-row-no-colspan.
     """
     name = ex_dir.name
     html_file = ex_dir / f"{name}.html"
@@ -96,6 +104,97 @@ def check_ans_row_no_inline_display(
                 " 'or' (e.g. 'QH or —'); fields with a small answer set must use"
                 " <select> instead of <input>"
             )
+
+
+_ANS_BLOCK_RE = _re.compile(
+    r'<tr[^>]*class=["\'][^"\']*(?:ans-row|answer-row)[^"\']*["\'][^>]*>.*?</tr>',
+    _re.IGNORECASE | _re.DOTALL
+)
+_COLSPAN_RE = _re.compile(r'\bcolspan\b', _re.IGNORECASE)
+
+
+@_register("ans-row-no-colspan")
+def check_ans_row_no_colspan(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """ans-row <tr> elements must not contain colspan attributes.
+    Every <td> in an answer row must align cell-for-cell with the table headers.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    text = html_file.read_text(encoding="utf-8", errors="replace")
+    reported: set[int] = set()
+    for m in _ANS_BLOCK_RE.finditer(text):
+        block = m.group(0)
+        if _COLSPAN_RE.search(block):
+            lineno = text[:m.start()].count('\n') + 1
+            if lineno not in reported:
+                reported.add(lineno)
+                _err(
+                    errors, ex_dir,
+                    f"{html_file.name}:{lineno} — ans-row uses colspan;"
+                    " every <td> must align cell-for-cell with column headers"
+                    " (no colspan shortcuts)"
+                )
+
+
+_TEXT_NODE_RE = _re.compile(r'>([^<]+)<')
+_HEBREW_CHARS_RE = _re.compile(r'[ְ-ת]')
+_VERSE_REF_IN_NODE_RE = _re.compile(r'\b\d+:\d+')
+
+
+@_register("verse-ref-hebrew-same-node")
+def check_verse_ref_hebrew_same_node(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """Short text nodes (<=80 chars) must not contain both Hebrew characters and
+    a verse reference pattern (N:N). RTL bidi reordering renders them backwards.
+    Put the reference on its own line or in a separate LTR element.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    text = html_file.read_text(encoding="utf-8", errors="replace")
+    for lineno, line in enumerate(text.splitlines(), 1):
+        if "<td" not in line.lower():
+            continue
+        for m in _TEXT_NODE_RE.finditer(line):
+            node = m.group(1).strip()
+            if (len(node) <= 80
+                    and _HEBREW_CHARS_RE.search(node)
+                    and _VERSE_REF_IN_NODE_RE.search(node)):
+                _warn(
+                    warnings, ex_dir,
+                    f"{html_file.name}:{lineno} — verse reference and Hebrew text"
+                    " in the same text node (RTL reordering renders it backwards);"
+                    " put the reference on its own line or in a separate LTR element"
+                )
+
+
+_CH_DIR_RE = _re.compile(r'[\\/]ch(\d+)[\\/]exercises[\\/]')
+
+
+@_register("readme-chapter-number")
+def check_readme_chapter_number(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """README.md must mention the chapter number matching the directory path."""
+    readme = ex_dir / "README.md"
+    if not readme.exists():
+        return
+    m = _CH_DIR_RE.search(str(ex_dir))
+    if not m:
+        return
+    n = m.group(1)
+    text = readme.read_text(encoding="utf-8", errors="replace").lower()
+    if f"ch{n}" not in text and f"chapter {n}" not in text:
+        _warn(
+            warnings, ex_dir,
+            f"README.md does not mention ch{n} — chapter number may be wrong"
+        )
 
 
 @_register("three-format")
