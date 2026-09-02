@@ -99,8 +99,9 @@ def _fix_html_file(html_path: Path) -> bool:
         if len(parts) <= 1:
             continue  # no Hebrew found (shouldn't happen, but guard)
 
-        # Build replacement nodes inline (insert before, then remove original)
-        for part in reversed(parts):
+        # insert_before(text_node) accumulates nodes in insertion order before
+        # text_node, so iterate parts in forward order to preserve original order.
+        for part in parts:
             if not part:
                 continue
             if _HEBREW_CHAR_RE.search(part):
