@@ -118,6 +118,16 @@ Be specific about file paths when flagging issues.
    chapters 28 and above, verify the chapter number matches its topic:
    Ch28=Hophal Strong, Ch29=Hophal Weak, Ch30=Piel Strong, Ch31=Piel Weak,
    Ch32=Pual Strong, Ch33=Pual Weak, Ch34=Hithpael Strong, Ch35=Hithpael Weak.
+
+10. **Fabricated grammatical content**: Watch for invented terminology that has no basis in
+    standard Hebrew/Aramaic/Greek grammar — e.g. a named semantic sub-category, function label,
+    or morphological class that isn't attested in standard reference grammars (Pratico & Van
+    Pelt for BBH, Mounce for BBG, the standard BBA text) and reads as plausible-sounding but
+    made up. This is inherently a judgment call, not a mechanical check like rules 1-9 — you
+    have no ground-truth reference to consult, only your own knowledge of the language, so
+    false positives and false negatives are both expected. Flag anything you're genuinely
+    unsure about at `"severity": "warning"` (never `"blocking"`) so a human reviews it rather
+    than the PR being auto-rejected on a guess.
 """
 
 # Varies per PR/commit, but is byte-identical across retries of the same commit (e.g. a
