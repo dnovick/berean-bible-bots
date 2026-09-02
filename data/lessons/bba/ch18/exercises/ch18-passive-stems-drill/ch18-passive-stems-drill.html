@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 18 — Peil and Ithpeel Stem Drill</title>
 <style>
   body { font-family: Georgia, serif; max-width: 1020px; margin: 2em auto; padding: 0 1em; color: #222; }
@@ -49,462 +50,433 @@
 </style>
 </head>
 <body>
-
-
 <h1>Chapter 18 — Peil and Ithpeel Stem Drill</h1>
 <p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch18: The Peil, Hithpeel, and Ithpeel Stems</p>
-
 <h2>Instructions</h2>
-<p>For each numbered verb form from Daniel or Ezra, enter: <strong>Stem</strong> (Peil or Ithpeel), <strong>Conjugation</strong> (Perfect / Imperfect / Participle), <strong>Root</strong> (3 consonants, Peal perfect 3ms), and <strong>Translation</strong>. Click <strong>&#9654; Answer</strong> to reveal the answer key row.</p>
-
+<p>For each numbered verb form from Daniel or Ezra, enter: <strong>Stem</strong> (Peil or Ithpeel), <strong>Conjugation</strong> (Perfect / Imperfect / Participle), <strong>Root</strong> (3 consonants, Peal perfect 3ms), and <strong>Translation</strong>. Click <strong>▶ Answer</strong> to reveal the answer key row.</p>
 <div class="note">
-  <strong>Peil perfect:</strong> Hireq-Yod on R2 (e.g., <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">רְמִי</span>, <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">כְּתִיב</span>).
-  &nbsp;&nbsp;
+<strong>Peil perfect:</strong> Hireq-Yod on R2 (e.g., <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">רְמִי</span>, <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">כְּתִיב</span>).
+    
   <strong>Peil imperfect:</strong> Tsere on R2 after standard prefix (e.g., <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יִקְטֵל</span>).
-  &nbsp;&nbsp;
+    
   <strong>Ithpeel perfect:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">אִתְ-</span> or <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הִתְ-</span> prefix.
-  &nbsp;&nbsp;
+    
   <strong>Ithpeel imperfect:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יִתְ-</span> before R1.
-  &nbsp;&nbsp;
+    
   <strong>Ithpeel participle:</strong> <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">מִתְ-</span> prefix.
-  &nbsp;&nbsp;
+    
   <strong>Metathesis:</strong> sibilant R1 switches with tāw — look for <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">הִשְׁתַּ-</span> / <span style="direction:rtl;unicode-bidi:embed;font-size:1.1em;font-weight:bold;">יִשְׁתַּ-</span>.
 </div>
-
 <div class="controls">
-  <button class="ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+<button class="ctrl" onclick="showAll()">Show All Answers</button>
+<button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+<button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
-
 <table id="drill-table">
-  <thead>
-    <tr>
-      <th style="width:2.5em">#</th>
-      <th style="width:15%">Form</th>
-      <th style="width:11%">Stem</th>
-      <th style="width:14%">Conjugation</th>
-      <th style="width:10%">Root</th>
-      <th style="width:30%">Translation</th>
-      <th style="width:5.5em"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <!-- 1 -->
-    <tr id="q1">
-      <td>1</td>
-      <td><div class="hebrew">רְמִי</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a1">
-      <td></td>
-      <td></td>
-      <td>Peil</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">רמה</span></td>
-      <td>he was thrown / was cast (III-he: R3 he → yod)</td>
-      <td></td>
-    </tr>
-
-    <!-- 2 -->
-    <tr id="q2">
-      <td>2</td>
-      <td><div class="hebrew">אִתְכְּנִישׁ</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a2">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">כנשׁ</span></td>
-      <td>he was gathered / they gathered together (אִתְ- prefix)</td>
-      <td></td>
-    </tr>
-
-    <!-- 3 -->
-    <tr id="q3">
-      <td>3</td>
-      <td><div class="hebrew">יִתְנְסַח</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a3">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Imperfect 3ms</td>
-      <td><span class="root-ans">נסח</span></td>
-      <td>it will be torn out / uprooted (יִתְ- = Ithpeel imperfect marker)</td>
-      <td></td>
-    </tr>
-
-    <!-- 4 -->
-    <tr id="q4">
-      <td>4</td>
-      <td><div class="hebrew">שְׁבִיק</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a4">
-      <td></td>
-      <td></td>
-      <td>Peil</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">שׁבק</span></td>
-      <td>it was left / abandoned (qəṭīl pattern: Shewa + Hireq-Yod)</td>
-      <td></td>
-    </tr>
-
-    <!-- 5 -->
-    <tr id="q5">
-      <td>5</td>
-      <td><div class="hebrew">הִשְׁתְּכַח</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a5">
-      <td></td>
-      <td></td>
-      <td>Hithpeel</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">שׁכח</span></td>
-      <td>it was found (metathesis: הִתְ + שׁ → הִשְׁתְּ-; root = שׁכח)</td>
-      <td></td>
-    </tr>
-
-    <!-- 6 -->
-    <tr id="q6">
-      <td>6</td>
-      <td><div class="hebrew">כְּתִיב</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a6">
-      <td></td>
-      <td></td>
-      <td>Peil</td>
-      <td>Perfect 3ms (or Peal passive ptcp)</td>
-      <td><span class="root-ans">כתב</span></td>
-      <td>it is written / was written (formulaic: "it is written")</td>
-      <td></td>
-    </tr>
-
-    <!-- 7 -->
-    <tr id="q7">
-      <td>7</td>
-      <td><div class="hebrew">יִתְבְּנֵא</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a7">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Imperfect 3ms</td>
-      <td><span class="root-ans">בנה</span></td>
-      <td>it will be built (III-he root: final ‑ēʾ ending)</td>
-      <td></td>
-    </tr>
-
-    <!-- 8 -->
-    <tr id="q8">
-      <td>8</td>
-      <td><div class="hebrew">חֲבִיל</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a8">
-      <td></td>
-      <td></td>
-      <td>Peil</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">חבל</span></td>
-      <td>it was destroyed / ruined (guttural R1 ח takes Hateph Pathach: חֲ-)</td>
-      <td></td>
-    </tr>
-
-    <!-- 9 -->
-    <tr id="q9">
-      <td>9</td>
-      <td><div class="hebrew">הִשְׁתַּנִּי</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a9">
-      <td></td>
-      <td></td>
-      <td>Hithpeel</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">שׁנה</span></td>
-      <td>it was changed (metathesis + III-he; dagesh forte in nun)</td>
-      <td></td>
-    </tr>
-
-    <!-- 10 -->
-    <tr id="q10">
-      <td>10</td>
-      <td><div class="hebrew">אִתְמְלִי</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a10">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">מלא</span></td>
-      <td>it was filled / he was filled (III-aleph root; אִתְ- prefix)</td>
-      <td></td>
-    </tr>
-
-    <!-- 11 -->
-    <tr id="q11">
-      <td>11</td>
-      <td><div class="hebrew">יִשְׁתַּנֵּא</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a11">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Imperfect 3ms</td>
-      <td><span class="root-ans">שׁנה</span></td>
-      <td>it will be changed (metathesis: יִתְ + שׁ → יִשְׁתַּ-; <span style="direction:ltr;unicode-bidi:embed;">Dan. 7:25</span>)</td>
-      <td></td>
-    </tr>
-
-    <!-- 12 -->
-    <tr id="q12">
-      <td>12</td>
-      <td><div class="hebrew">סְגִיד</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a12">
-      <td></td>
-      <td></td>
-      <td>Peil</td>
-      <td>Perfect 3ms</td>
-      <td><span class="root-ans">סגד</span></td>
-      <td>he was worshiped / it was bowed down to (from סגד "to bow down/worship")</td>
-      <td></td>
-    </tr>
-
-    <!-- 13 -->
-    <tr id="q13">
-      <td>13</td>
-      <td><div class="hebrew">מִתְכַּנְּשִׁין</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a13">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Participle mp</td>
-      <td><span class="root-ans">כנשׁ</span></td>
-      <td>being gathered / gathering together (mp; מִתְ- = Ithpeel ptcp prefix)</td>
-      <td></td>
-    </tr>
-
-    <!-- 14 -->
-    <tr id="q14">
-      <td>14</td>
-      <td><div class="hebrew">יִתְמְחֵא</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a14">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Imperfect 3ms</td>
-      <td><span class="root-ans">מחא</span></td>
-      <td>it will be struck / smitten (יִתְ- prefix; III-aleph root: final -ēʾ)</td>
-      <td></td>
-    </tr>
-
-    <!-- 15 -->
-    <tr id="q15">
-      <td>15</td>
-      <td><div class="hebrew">קְטִילוּ</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a15',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a15">
-      <td></td>
-      <td></td>
-      <td>Peil</td>
-      <td>Perfect 3mp</td>
-      <td><span class="root-ans">קטל</span></td>
-      <td>they were killed (qəṭīl stem + 3mp -וּ ending)</td>
-      <td></td>
-    </tr>
-
-    <!-- 16 -->
-    <tr id="q16">
-      <td>16</td>
-      <td><div class="hebrew">אִתְקְטִלְנָא</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a16',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a16">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Perfect 1cp</td>
-      <td><span class="root-ans">קטל</span></td>
-      <td>we were killed / we killed ourselves (אִתְ- prefix + 1cp -נָא ending)</td>
-      <td></td>
-    </tr>
-
-    <!-- 17 -->
-    <tr id="q17">
-      <td>17</td>
-      <td><div class="hebrew">יִתְּבְנֵא</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a17',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a17">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Imperfect 3ms</td>
-      <td><span class="root-ans">בנה</span></td>
-      <td>it will be built (variant spelling of יִתְבְּנֵא; dagesh forte in tāw)</td>
-      <td></td>
-    </tr>
-
-    <!-- 18 -->
-    <tr id="q18">
-      <td>18</td>
-      <td><div class="hebrew">הִתְחַסְּנַת</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a18',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a18">
-      <td></td>
-      <td></td>
-      <td>Hithpeel</td>
-      <td>Perfect 3fs</td>
-      <td><span class="root-ans">חסן</span></td>
-      <td>she/it was strengthened / prevailed (הִתְ- prefix + 3fs -ַת ending)</td>
-      <td></td>
-    </tr>
-
-    <!-- 19 -->
-    <tr id="q19">
-      <td>19</td>
-      <td><div class="hebrew">יִתְחַסְּנוּן</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a19',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a19">
-      <td></td>
-      <td></td>
-      <td>Ithpeel</td>
-      <td>Imperfect 3mp</td>
-      <td><span class="root-ans">חסן</span></td>
-      <td>they will be strengthened / will prevail (יִתְ- prefix + 3mp -וּן ending)</td>
-      <td></td>
-    </tr>
-
-    <!-- 20 -->
-    <tr id="q20">
-      <td>20</td>
-      <td><div class="hebrew">הִשְׁתְּכַחַת</div></td>
-      <td><input class="parse-field" placeholder="Peil/Ithpeel…"></td>
-      <td><input class="parse-field" placeholder="conjugation…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="translation…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a20',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a20">
-      <td></td>
-      <td></td>
-      <td>Hithpeel</td>
-      <td>Perfect 2ms</td>
-      <td><span class="root-ans">שׁכח</span></td>
-      <td>you were found (Dan. 5:27: "you were found deficient"; metathesis; 2ms -ַת ending)</td>
-      <td></td>
-    </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.5em">#</th>
+<th style="width:15%">Form</th>
+<th style="width:11%">Stem</th>
+<th style="width:14%">Conjugation</th>
+<th style="width:10%">Root</th>
+<th style="width:30%">Translation</th>
+<th style="width:5.5em"></th>
+</tr>
+</thead>
+<tbody>
+<!-- 1 -->
+<tr id="q1">
+<td>1</td>
+<td><div class="hebrew">רְמִי</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a1">
+<td></td>
+<td></td>
+<td>Peil</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">רמה</span></td>
+<td>he was thrown / was cast (III-he: R3 he → yod)</td>
+<td></td>
+</tr>
+<!-- 2 -->
+<tr id="q2">
+<td>2</td>
+<td><div class="hebrew">אִתְכְּנִישׁ</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a2">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">כנשׁ</span></td>
+<td>he was gathered / they gathered together (<span style="direction:rtl;unicode-bidi:embed;">אִתְ</span>- prefix)</td>
+<td></td>
+</tr>
+<!-- 3 -->
+<tr id="q3">
+<td>3</td>
+<td><div class="hebrew">יִתְנְסַח</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a3">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Imperfect 3ms</td>
+<td><span class="root-ans">נסח</span></td>
+<td>it will be torn out / uprooted (<span style="direction:rtl;unicode-bidi:embed;">יִתְ</span>- = Ithpeel imperfect marker)</td>
+<td></td>
+</tr>
+<!-- 4 -->
+<tr id="q4">
+<td>4</td>
+<td><div class="hebrew">שְׁבִיק</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a4">
+<td></td>
+<td></td>
+<td>Peil</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">שׁבק</span></td>
+<td>it was left / abandoned (qəṭīl pattern: Shewa + Hireq-Yod)</td>
+<td></td>
+</tr>
+<!-- 5 -->
+<tr id="q5">
+<td>5</td>
+<td><div class="hebrew">הִשְׁתְּכַח</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a5">
+<td></td>
+<td></td>
+<td>Hithpeel</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">שׁכח</span></td>
+<td>it was found (metathesis: <span style="direction:rtl;unicode-bidi:embed;">הִתְ</span> + <span style="direction:rtl;unicode-bidi:embed;">שׁ</span> → <span style="direction:rtl;unicode-bidi:embed;">הִשְׁתְּ</span>-; root = <span style="direction:rtl;unicode-bidi:embed;">שׁכח</span>)</td>
+<td></td>
+</tr>
+<!-- 6 -->
+<tr id="q6">
+<td>6</td>
+<td><div class="hebrew">כְּתִיב</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a6">
+<td></td>
+<td></td>
+<td>Peil</td>
+<td>Perfect 3ms (or Peal passive ptcp)</td>
+<td><span class="root-ans">כתב</span></td>
+<td>it is written / was written (formulaic: "it is written")</td>
+<td></td>
+</tr>
+<!-- 7 -->
+<tr id="q7">
+<td>7</td>
+<td><div class="hebrew">יִתְבְּנֵא</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a7">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Imperfect 3ms</td>
+<td><span class="root-ans">בנה</span></td>
+<td>it will be built (III-he root: final ‑ēʾ ending)</td>
+<td></td>
+</tr>
+<!-- 8 -->
+<tr id="q8">
+<td>8</td>
+<td><div class="hebrew">חֲבִיל</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a8">
+<td></td>
+<td></td>
+<td>Peil</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">חבל</span></td>
+<td>it was destroyed / ruined (guttural R1 <span style="direction:rtl;unicode-bidi:embed;">ח</span> takes Hateph Pathach: <span style="direction:rtl;unicode-bidi:embed;">חֲ</span>-)</td>
+<td></td>
+</tr>
+<!-- 9 -->
+<tr id="q9">
+<td>9</td>
+<td><div class="hebrew">הִשְׁתַּנִּי</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a9">
+<td></td>
+<td></td>
+<td>Hithpeel</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">שׁנה</span></td>
+<td>it was changed (metathesis + III-he; dagesh forte in nun)</td>
+<td></td>
+</tr>
+<!-- 10 -->
+<tr id="q10">
+<td>10</td>
+<td><div class="hebrew">אִתְמְלִי</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a10">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">מלא</span></td>
+<td>it was filled / he was filled (III-aleph root; <span style="direction:rtl;unicode-bidi:embed;">אִתְ</span>- prefix)</td>
+<td></td>
+</tr>
+<!-- 11 -->
+<tr id="q11">
+<td>11</td>
+<td><div class="hebrew">יִשְׁתַּנֵּא</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a11">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Imperfect 3ms</td>
+<td><span class="root-ans">שׁנה</span></td>
+<td>it will be changed (metathesis: <span style="direction:rtl;unicode-bidi:embed;">יִתְ</span> + <span style="direction:rtl;unicode-bidi:embed;">שׁ</span> → <span style="direction:rtl;unicode-bidi:embed;">יִשְׁתַּ</span>-; <span style="direction:ltr;unicode-bidi:embed;">Dan. 7:25</span>)</td>
+<td></td>
+</tr>
+<!-- 12 -->
+<tr id="q12">
+<td>12</td>
+<td><div class="hebrew">סְגִיד</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a12',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a12">
+<td></td>
+<td></td>
+<td>Peil</td>
+<td>Perfect 3ms</td>
+<td><span class="root-ans">סגד</span></td>
+<td>he was worshiped / it was bowed down to (from <span style="direction:rtl;unicode-bidi:embed;">סגד</span> "to bow down/worship")</td>
+<td></td>
+</tr>
+<!-- 13 -->
+<tr id="q13">
+<td>13</td>
+<td><div class="hebrew">מִתְכַּנְּשִׁין</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a13',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a13">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Participle mp</td>
+<td><span class="root-ans">כנשׁ</span></td>
+<td>being gathered / gathering together (mp; <span style="direction:rtl;unicode-bidi:embed;">מִתְ</span>- = Ithpeel ptcp prefix)</td>
+<td></td>
+</tr>
+<!-- 14 -->
+<tr id="q14">
+<td>14</td>
+<td><div class="hebrew">יִתְמְחֵא</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a14',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a14">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Imperfect 3ms</td>
+<td><span class="root-ans">מחא</span></td>
+<td>it will be struck / smitten (<span style="direction:rtl;unicode-bidi:embed;">יִתְ</span>- prefix; III-aleph root: final -ēʾ)</td>
+<td></td>
+</tr>
+<!-- 15 -->
+<tr id="q15">
+<td>15</td>
+<td><div class="hebrew">קְטִילוּ</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a15',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a15">
+<td></td>
+<td></td>
+<td>Peil</td>
+<td>Perfect 3mp</td>
+<td><span class="root-ans">קטל</span></td>
+<td>they were killed (qəṭīl stem + 3mp -<span style="direction:rtl;unicode-bidi:embed;">וּ</span> ending)</td>
+<td></td>
+</tr>
+<!-- 16 -->
+<tr id="q16">
+<td>16</td>
+<td><div class="hebrew">אִתְקְטִלְנָא</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a16',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a16">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Perfect 1cp</td>
+<td><span class="root-ans">קטל</span></td>
+<td>we were killed / we killed ourselves (<span style="direction:rtl;unicode-bidi:embed;">אִתְ</span>- prefix + 1cp -<span style="direction:rtl;unicode-bidi:embed;">נָא</span> ending)</td>
+<td></td>
+</tr>
+<!-- 17 -->
+<tr id="q17">
+<td>17</td>
+<td><div class="hebrew">יִתְּבְנֵא</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a17',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a17">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Imperfect 3ms</td>
+<td><span class="root-ans">בנה</span></td>
+<td>it will be built (variant spelling of <span style="direction:rtl;unicode-bidi:embed;">יִתְבְּנֵא</span>; dagesh forte in tāw)</td>
+<td></td>
+</tr>
+<!-- 18 -->
+<tr id="q18">
+<td>18</td>
+<td><div class="hebrew">הִתְחַסְּנַת</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a18',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a18">
+<td></td>
+<td></td>
+<td>Hithpeel</td>
+<td>Perfect 3fs</td>
+<td><span class="root-ans">חסן</span></td>
+<td>she/it was strengthened / prevailed (<span style="direction:rtl;unicode-bidi:embed;">הִתְ</span>- prefix + 3fs -<span style="direction:rtl;unicode-bidi:embed;">ַת</span> ending)</td>
+<td></td>
+</tr>
+<!-- 19 -->
+<tr id="q19">
+<td>19</td>
+<td><div class="hebrew">יִתְחַסְּנוּן</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a19',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a19">
+<td></td>
+<td></td>
+<td>Ithpeel</td>
+<td>Imperfect 3mp</td>
+<td><span class="root-ans">חסן</span></td>
+<td>they will be strengthened / will prevail (<span style="direction:rtl;unicode-bidi:embed;">יִתְ</span>- prefix + 3mp -<span style="direction:rtl;unicode-bidi:embed;">וּן</span> ending)</td>
+<td></td>
+</tr>
+<!-- 20 -->
+<tr id="q20">
+<td>20</td>
+<td><div class="hebrew">הִשְׁתְּכַחַת</div></td>
+<td><input class="parse-field" placeholder="Peil/Ithpeel…"/></td>
+<td><input class="parse-field" placeholder="conjugation…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="translation…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a20',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a20">
+<td></td>
+<td></td>
+<td>Hithpeel</td>
+<td>Perfect 2ms</td>
+<td><span class="root-ans">שׁכח</span></td>
+<td>you were found (Dan. 5:27: "you were found deficient"; metathesis; 2ms -<span style="direction:rtl;unicode-bidi:embed;">ַת</span> ending)</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <div class="reflection">
-  <h3>Reflection Questions</h3>
-  <ol>
-    <li>Items 1 (רְמִי) and 9 (הִשְׁתַּנִּי) are both passive perfects but look completely different. What specific features identify each as a derived-stem passive form, and which stem does each belong to?</li>
-    <li>Items 5 (הִשְׁתְּכַח) and 11 (יִשְׁתַּנֵּא) both involve metathesis. For each: (a) identify the root, (b) explain which consonants switched, and (c) explain why metathesis occurred.</li>
-    <li>Item 13 (מִתְכַּנְּשִׁין) is an Ithpeel participle. What does the prefix מִתְ- tell you about the stem and verbal category? How would the same root appear in the Peal active participle?</li>
-    <li>Items 6 (כְּתִיב) and 15 (קְטִילוּ) both show the qəṭīl pattern. Item 6 could be either a Peil perfect 3ms or a Peal passive participle. What contextual clue would help you decide?</li>
-    <li>Items 3 (יִתְנְסַח) and 7 (יִתְבְּנֵא) are both Ithpeel imperfects. What shared feature identifies them as Ithpeel? How does the III-he root of item 7 affect the final form compared to item 3?</li>
-  </ol>
+<h3>Reflection Questions</h3>
+<ol>
+<li>Items 1 (<span style="direction:rtl;unicode-bidi:embed;">רְמִי</span>) and 9 (<span style="direction:rtl;unicode-bidi:embed;">הִשְׁתַּנִּי</span>) are both passive perfects but look completely different. What specific features identify each as a derived-stem passive form, and which stem does each belong to?</li>
+<li>Items 5 (<span style="direction:rtl;unicode-bidi:embed;">הִשְׁתְּכַח</span>) and 11 (<span style="direction:rtl;unicode-bidi:embed;">יִשְׁתַּנֵּא</span>) both involve metathesis. For each: (a) identify the root, (b) explain which consonants switched, and (c) explain why metathesis occurred.</li>
+<li>Item 13 (<span style="direction:rtl;unicode-bidi:embed;">מִתְכַּנְּשִׁין</span>) is an Ithpeel participle. What does the prefix <span style="direction:rtl;unicode-bidi:embed;">מִתְ</span>- tell you about the stem and verbal category? How would the same root appear in the Peal active participle?</li>
+<li>Items 6 (<span style="direction:rtl;unicode-bidi:embed;">כְּתִיב</span>) and 15 (<span style="direction:rtl;unicode-bidi:embed;">קְטִילוּ</span>) both show the qəṭīl pattern. Item 6 could be either a Peil perfect 3ms or a Peal passive participle. What contextual clue would help you decide?</li>
+<li>Items 3 (<span style="direction:rtl;unicode-bidi:embed;">יִתְנְסַח</span>) and 7 (<span style="direction:rtl;unicode-bidi:embed;">יִתְבְּנֵא</span>) are both Ithpeel imperfects. What shared feature identifies them as Ithpeel? How does the III-he root of item 7 affect the final form compared to item 3?</li>
+</ol>
 </div>
-
 <script>
 function toggle(id, btn) {
   var row = document.getElementById(id);
@@ -528,6 +500,5 @@ function clearAll() {
   document.querySelectorAll('input.parse-field').forEach(function(i) { i.value = ''; });
 }
 </script>
-
 </body>
 </html>

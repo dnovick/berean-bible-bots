@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 12 — Stem Identification Drill</title>
 <style>
   body { font-family: Georgia, serif; max-width: 960px; margin: 2em auto; padding: 0 1em; color: #222; }
@@ -48,354 +49,332 @@
 </style>
 </head>
 <body>
-
-
 <h1>Chapter 12 — Stem Identification Drill</h1>
 <p class="subtitle"><em>Basics of Biblical Aramaic</em>, Van Pelt — Ch12: Introduction to Aramaic Verbs</p>
-
 <h2>Instructions</h2>
-<p>For each numbered verb (shown in bold in the Aramaic clause), enter the <strong>Stem</strong>, <strong>Root</strong>, and <strong>Gloss</strong> in the input fields. Click <strong>&#9654; Answer</strong> to check your response. Use the controls below to show or hide all answers at once, or clear all inputs.</p>
-
+<p>For each numbered verb (shown in bold in the Aramaic clause), enter the <strong>Stem</strong>, <strong>Root</strong>, and <strong>Gloss</strong> in the input fields. Click <strong>▶ Answer</strong> to check your response. Use the controls below to show or hide all answers at once, or clear all inputs.</p>
 <div class="controls">
-  <button class="ctrl" onclick="showAll()">Show All Answers</button>
-  <button class="ctrl" onclick="hideAll()">Hide All Answers</button>
-  <button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
+<button class="ctrl" onclick="showAll()">Show All Answers</button>
+<button class="ctrl" onclick="hideAll()">Hide All Answers</button>
+<button class="ctrl" onclick="clearAll()">Clear All Inputs</button>
 </div>
-
 <table id="drill-table">
-  <thead>
-    <tr>
-      <th style="width:2.5em">#</th>
-      <th style="width:36%">Aramaic Clause</th>
-      <th style="width:6em">Ref</th>
-      <th style="width:13%">Stem</th>
-      <th style="width:10%">Root</th>
-      <th style="width:15%">Gloss</th>
-      <th style="width:5em"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-    <!-- 1 -->
-    <tr id="q1">
-      <td>1</td>
-      <td>
-        <div class="hebrew">אֱדַיִן דָּנִיֵּאל לְבֵיתֵהּ <strong>אֲזַל</strong></div>
-      </td>
-      <td class="ref">Dan 2:17</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a1',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a1">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal</td>
-      <td>אזל</td>
-      <td>he went</td>
-      <td></td>
-    </tr>
-
-    <!-- 2 -->
-    <tr id="q2">
-      <td>2</td>
-      <td>
-        <div class="hebrew">וּמִלְּתָא <strong>כְּתַב</strong> מַלְכָּא</div>
-      </td>
-      <td class="ref">Dan 6:26</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a2',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a2">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal</td>
-      <td>כתב</td>
-      <td>the king wrote</td>
-      <td></td>
-    </tr>
-
-    <!-- 3 -->
-    <tr id="q3">
-      <td>3</td>
-      <td>
-        <div class="hebrew">אֱדַיִן מַלְכָּא נְבוּכַדְנֶצַּר <strong>נְפַל</strong> עַל-אַנְפּוֹהִי</div>
-      </td>
-      <td class="ref">Dan 2:46</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a3',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a3">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal</td>
-      <td>נפל</td>
-      <td>he fell</td>
-      <td></td>
-    </tr>
-
-    <!-- 4 -->
-    <tr id="q4">
-      <td>4</td>
-      <td>
-        <div class="hebrew">אֱדַיִן <strong>אֲמַר</strong> מַלְכָּא לְאַרְיוֹךְ</div>
-      </td>
-      <td class="ref">Dan 2:24</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a4',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a4">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal</td>
-      <td>אמר</td>
-      <td>the king said</td>
-      <td></td>
-    </tr>
-
-    <!-- 5 -->
-    <tr id="q5">
-      <td>5</td>
-      <td>
-        <div class="hebrew">כְּדִי <strong>הֲוָה</strong> דָנִיֵּאל מִתְחַנַּן</div>
-      </td>
-      <td class="ref">Dan 6:12</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a5',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a5">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal</td>
-      <td>הוה</td>
-      <td>when Daniel was (doing/praying)</td>
-      <td></td>
-    </tr>
-
-    <!-- 6 -->
-    <tr id="q6">
-      <td>6</td>
-      <td>
-        <div class="hebrew">וּמַלְכָּא <strong>שְׁלַח</strong> כְּנֵמָא</div>
-      </td>
-      <td class="ref">Ezra 5:17</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a6',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a6">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal</td>
-      <td>שׁלח</td>
-      <td>the king sent</td>
-      <td></td>
-    </tr>
-
-    <!-- 7 -->
-    <tr id="q7">
-      <td>7</td>
-      <td>
-        <div class="hebrew"><strong>יְהַבְתְּ</strong> לִי חָכְמְתָא וּגְבוּרְתָא</div>
-      </td>
-      <td class="ref">Dan 2:23</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a7',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a7">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal (2ms perf)</td>
-      <td>יהב</td>
-      <td>you gave</td>
-      <td></td>
-    </tr>
-
-    <!-- 8 -->
-    <tr id="q8">
-      <td>8</td>
-      <td>
-        <div class="hebrew">דִּי כָל-עַמְמַיָּא ... <strong>יִפְּלוּן</strong></div>
-      </td>
-      <td class="ref">Dan 3:7</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a8',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a8">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal (3mp impf)</td>
-      <td>נפל</td>
-      <td>they will fall (note I-nun: nun assimilates)</td>
-      <td></td>
-    </tr>
-
-    <!-- 9 -->
-    <tr id="q9">
-      <td>9</td>
-      <td>
-        <div class="hebrew">וְדָנִיֵּאל <strong>עֲבַד</strong> קַרְצֵי לְשַׁדְרַךְ</div>
-      </td>
-      <td class="ref">Dan 3:12</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a9',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a9">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal</td>
-      <td>עבד</td>
-      <td>Daniel did / brought charges</td>
-      <td></td>
-    </tr>
-
-    <!-- 10 -->
-    <tr id="q10">
-      <td>10</td>
-      <td>
-        <div class="hebrew">מַלְכוּתָא עֲלָךְ <strong>קָמַת</strong></div>
-      </td>
-      <td class="ref">Dan 4:33</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a10',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a10">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Peal (3fs perf)</td>
-      <td>קום</td>
-      <td>the kingdom has stood / been restored</td>
-      <td></td>
-    </tr>
-
-    <!-- 11 -->
-    <tr id="q11">
-      <td>11</td>
-      <td>
-        <div class="hebrew">כְּעַן <strong>הוֹדַעְתַּנִי</strong> דִּי בְּעֵינָא מִנָּךְ</div>
-      </td>
-      <td class="ref">Dan 2:23</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a11',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a11">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Haphel (2ms perf + 1cs obj suffix)</td>
-      <td>ידע</td>
-      <td>you have made known to me</td>
-      <td></td>
-    </tr>
-
-    <!-- 12 -->
-    <tr id="q12">
-      <td>12</td>
-      <td>
-        <div class="hebrew">דִּי-יְהַב מַלְכָּא <strong>הֲקִים</strong></div>
-      </td>
-      <td class="ref">Dan 3:2</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a12',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a12">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Haphel (3ms perf)</td>
-      <td>קום</td>
-      <td>the king had set up / erected</td>
-      <td></td>
-    </tr>
-
-    <!-- 13 -->
-    <tr id="q13">
-      <td>13</td>
-      <td>
-        <div class="hebrew">בַּיְתָה דְּנָה <strong>הִתְבְּנִי</strong></div>
-      </td>
-      <td class="ref">Ezra 5:16</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a13',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a13">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Ithpeel (3ms perf)</td>
-      <td>בנה</td>
-      <td>this house was built</td>
-      <td></td>
-    </tr>
-
-    <!-- 14 -->
-    <tr id="q14">
-      <td>14</td>
-      <td>
-        <div class="hebrew">כָּל-חֲבוּל לָא <strong>הִשְׁתְּכַח</strong> בֵּהּ</div>
-      </td>
-      <td class="ref">Dan 6:23</td>
-      <td><input class="parse-field" placeholder="stem…"></td>
-      <td><input class="parse-field" placeholder="root…"></td>
-      <td><input class="parse-field" placeholder="gloss…"></td>
-      <td><button class="reveal-btn" onclick="toggle('a14',this)">&#9654; Answer</button></td>
-    </tr>
-    <tr class="answer-row" id="a14">
-      <td></td>
-            <td></td>
-      <td></td>
-      <td>Ithpeel (3ms perf)</td>
-      <td>שׁכח</td>
-      <td>no harm was found on him</td>
-      <td></td>
-    </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.5em">#</th>
+<th style="width:36%">Aramaic Clause</th>
+<th style="width:6em">Ref</th>
+<th style="width:13%">Stem</th>
+<th style="width:10%">Root</th>
+<th style="width:15%">Gloss</th>
+<th style="width:5em"></th>
+</tr>
+</thead>
+<tbody>
+<!-- 1 -->
+<tr id="q1">
+<td>1</td>
+<td>
+<div class="hebrew">אֱדַיִן דָּנִיֵּאל לְבֵיתֵהּ <strong>אֲזַל</strong></div>
+</td>
+<td class="ref">Dan 2:17</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a1',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a1">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">אזל</span></td>
+<td>he went</td>
+<td></td>
+</tr>
+<!-- 2 -->
+<tr id="q2">
+<td>2</td>
+<td>
+<div class="hebrew">וּמִלְּתָא <strong>כְּתַב</strong> מַלְכָּא</div>
+</td>
+<td class="ref">Dan 6:26</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a2',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a2">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">כתב</span></td>
+<td>the king wrote</td>
+<td></td>
+</tr>
+<!-- 3 -->
+<tr id="q3">
+<td>3</td>
+<td>
+<div class="hebrew">אֱדַיִן מַלְכָּא נְבוּכַדְנֶצַּר <strong>נְפַל</strong> עַל-אַנְפּוֹהִי</div>
+</td>
+<td class="ref">Dan 2:46</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a3',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a3">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">נפל</span></td>
+<td>he fell</td>
+<td></td>
+</tr>
+<!-- 4 -->
+<tr id="q4">
+<td>4</td>
+<td>
+<div class="hebrew">אֱדַיִן <strong>אֲמַר</strong> מַלְכָּא לְאַרְיוֹךְ</div>
+</td>
+<td class="ref">Dan 2:24</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a4',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a4">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">אמר</span></td>
+<td>the king said</td>
+<td></td>
+</tr>
+<!-- 5 -->
+<tr id="q5">
+<td>5</td>
+<td>
+<div class="hebrew">כְּדִי <strong>הֲוָה</strong> דָנִיֵּאל מִתְחַנַּן</div>
+</td>
+<td class="ref">Dan 6:12</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a5',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a5">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">הוה</span></td>
+<td>when Daniel was (doing/praying)</td>
+<td></td>
+</tr>
+<!-- 6 -->
+<tr id="q6">
+<td>6</td>
+<td>
+<div class="hebrew">וּמַלְכָּא <strong>שְׁלַח</strong> כְּנֵמָא</div>
+</td>
+<td class="ref">Ezra 5:17</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a6',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a6">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">שׁלח</span></td>
+<td>the king sent</td>
+<td></td>
+</tr>
+<!-- 7 -->
+<tr id="q7">
+<td>7</td>
+<td>
+<div class="hebrew"><strong>יְהַבְתְּ</strong> לִי חָכְמְתָא וּגְבוּרְתָא</div>
+</td>
+<td class="ref">Dan 2:23</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a7',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a7">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal (2ms perf)</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">יהב</span></td>
+<td>you gave</td>
+<td></td>
+</tr>
+<!-- 8 -->
+<tr id="q8">
+<td>8</td>
+<td>
+<div class="hebrew">דִּי כָל-עַמְמַיָּא ... <strong>יִפְּלוּן</strong></div>
+</td>
+<td class="ref">Dan 3:7</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a8',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a8">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal (3mp impf)</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">נפל</span></td>
+<td>they will fall (note I-nun: nun assimilates)</td>
+<td></td>
+</tr>
+<!-- 9 -->
+<tr id="q9">
+<td>9</td>
+<td>
+<div class="hebrew">וְדָנִיֵּאל <strong>עֲבַד</strong> קַרְצֵי לְשַׁדְרַךְ</div>
+</td>
+<td class="ref">Dan 3:12</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a9',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a9">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">עבד</span></td>
+<td>Daniel did / brought charges</td>
+<td></td>
+</tr>
+<!-- 10 -->
+<tr id="q10">
+<td>10</td>
+<td>
+<div class="hebrew">מַלְכוּתָא עֲלָךְ <strong>קָמַת</strong></div>
+</td>
+<td class="ref">Dan 4:33</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a10',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a10">
+<td></td>
+<td></td>
+<td></td>
+<td>Peal (3fs perf)</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">קום</span></td>
+<td>the kingdom has stood / been restored</td>
+<td></td>
+</tr>
+<!-- 11 -->
+<tr id="q11">
+<td>11</td>
+<td>
+<div class="hebrew">כְּעַן <strong>הוֹדַעְתַּנִי</strong> דִּי בְּעֵינָא מִנָּךְ</div>
+</td>
+<td class="ref">Dan 2:23</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a11',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a11">
+<td></td>
+<td></td>
+<td></td>
+<td>Haphel (2ms perf + 1cs obj suffix)</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">ידע</span></td>
+<td>you have made known to me</td>
+<td></td>
+</tr>
+<!-- 12 -->
+<tr id="q12">
+<td>12</td>
+<td>
+<div class="hebrew">דִּי-יְהַב מַלְכָּא <strong>הֲקִים</strong></div>
+</td>
+<td class="ref">Dan 3:2</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a12',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a12">
+<td></td>
+<td></td>
+<td></td>
+<td>Haphel (3ms perf)</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">קום</span></td>
+<td>the king had set up / erected</td>
+<td></td>
+</tr>
+<!-- 13 -->
+<tr id="q13">
+<td>13</td>
+<td>
+<div class="hebrew">בַּיְתָה דְּנָה <strong>הִתְבְּנִי</strong></div>
+</td>
+<td class="ref">Ezra 5:16</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a13',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a13">
+<td></td>
+<td></td>
+<td></td>
+<td>Ithpeel (3ms perf)</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">בנה</span></td>
+<td>this house was built</td>
+<td></td>
+</tr>
+<!-- 14 -->
+<tr id="q14">
+<td>14</td>
+<td>
+<div class="hebrew">כָּל-חֲבוּל לָא <strong>הִשְׁתְּכַח</strong> בֵּהּ</div>
+</td>
+<td class="ref">Dan 6:23</td>
+<td><input class="parse-field" placeholder="stem…"/></td>
+<td><input class="parse-field" placeholder="root…"/></td>
+<td><input class="parse-field" placeholder="gloss…"/></td>
+<td><button class="reveal-btn" onclick="toggle('a14',this)">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="a14">
+<td></td>
+<td></td>
+<td></td>
+<td>Ithpeel (3ms perf)</td>
+<td><span style="direction:rtl;unicode-bidi:embed;">שׁכח</span></td>
+<td>no harm was found on him</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <div class="reflection">
-  <h3>Reflection Questions</h3>
-  <ol>
-    <li>In items 1–10 (all Peal forms), what is the single most reliable way to identify a Peal verb when no diagnostic prefix is present? What information besides the stem marker helps you?</li>
-    <li>Items 11–12 are Haphel forms. Compare the prefix of each: הוֹדַע (item 11) uses a vowel-letter (Holem waw), while הֲקִים (item 12) uses Hateph Pathach. What causes this difference, and what does it tell you about the root type?</li>
-    <li>Items 13–14 are Ithpeel forms. A Hebrew student might initially confuse the הִתְ prefix of the Ithpeel with the הִתְ prefix of the Hebrew Hitpa'el. State in one sentence what the functional difference is between these two stems.</li>
-  </ol>
+<h3>Reflection Questions</h3>
+<ol>
+<li>In items 1–10 (all Peal forms), what is the single most reliable way to identify a Peal verb when no diagnostic prefix is present? What information besides the stem marker helps you?</li>
+<li>Items 11–12 are Haphel forms. Compare the prefix of each: <span style="direction:rtl;unicode-bidi:embed;">הוֹדַע</span> (item 11) uses a vowel-letter (Holem waw), while <span style="direction:rtl;unicode-bidi:embed;">הֲקִים</span> (item 12) uses Hateph Pathach. What causes this difference, and what does it tell you about the root type?</li>
+<li>Items 13–14 are Ithpeel forms. A Hebrew student might initially confuse the <span style="direction:rtl;unicode-bidi:embed;">הִתְ</span> prefix of the Ithpeel with the <span style="direction:rtl;unicode-bidi:embed;">הִתְ</span> prefix of the Hebrew Hitpa'el. State in one sentence what the functional difference is between these two stems.</li>
+</ol>
 </div>
-
 <script>
 function toggle(answerId, btn) {
   var row = document.getElementById(answerId);
@@ -432,6 +411,5 @@ function clearAll() {
   });
 }
 </script>
-
 </body>
 </html>
