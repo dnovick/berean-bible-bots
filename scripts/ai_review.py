@@ -205,6 +205,42 @@ def _post_review(pr_number: int, body: str, event: str, token: str) -> None:
 
 
 _DIFF_PATH_RE = _re.compile(r"^diff --git a/(\S+) b/\S+", _re.MULTILINE)
+_DIFF_FILE_BLOCK_RE = _re.compile(
+    r"^diff --git a/(\S+) b/\S+.*?(?=^diff --git |\Z)", _re.MULTILINE | _re.DOTALL
+)
+
+# Paths that are tracked in git but are mechanically generated mirrors of source
+# files already elsewhere in the same diff (see .gitignore's comment above the
+# mkdocs_src/ block) — reviewing them adds no signal, only token cost.
+_GENERATED_PATH_PREFIXES = ("mkdocs_src/courses/",)
+_GENERATED_EXACT_PATHS = {"mkdocs_nav.yml"}
+
+
+def _is_generated_path(path: str) -> bool:
+    return path in _GENERATED_EXACT_PATHS or path.startswith(_GENERATED_PATH_PREFIXES)
+
+
+def _filter_generated_files(diff: str) -> tuple[str, int, int]:
+    """Drop diff blocks for generated/mirrored files (mkdocs_src/courses/,
+    mkdocs_nav.yml) — they duplicate content already reviewable from their
+    data/ source in the same diff. Returns (filtered_diff, files_dropped, chars_dropped).
+    """
+    kept: list[str] = []
+    dropped_files = 0
+    dropped_chars = 0
+    last_end = 0
+    for m in _DIFF_FILE_BLOCK_RE.finditer(diff):
+        kept.append(diff[last_end:m.start()])  # anything between blocks (rare)
+        block = m.group(0)
+        path = m.group(1)
+        if _is_generated_path(path):
+            dropped_files += 1
+            dropped_chars += len(block)
+        else:
+            kept.append(block)
+        last_end = m.end()
+    kept.append(diff[last_end:])
+    return "".join(kept), dropped_files, dropped_chars
 
 
 def _get_validator_output(diff: str) -> str:
@@ -230,6 +266,10 @@ def _get_validator_output(diff: str) -> str:
 
 def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[str, Any]:
     client = anthropic.Anthropic()
+    diff, dropped_files, dropped_chars = _filter_generated_files(diff)
+    if dropped_files:
+        print(f"  Filtered: {dropped_files} generated file(s), {dropped_chars:,} chars"
+              " (mkdocs_src/courses/, mkdocs_nav.yml — mirrors of source already in the diff)")
     truncated = diff[:MAX_DIFF_CHARS]
     if len(diff) > MAX_DIFF_CHARS:
         truncated += f"\n\n[Diff truncated — showing first {MAX_DIFF_CHARS:,} chars]"
@@ -244,6 +284,9 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     # it's always a cache hit after the first; the PR block is only a cache hit when this
     # exact commit's diff is re-reviewed (retries), but still worth marking — a retry after
     # a transient error (billing, a script bug) re-sends the same ~200K-token diff otherwise.
+    # 1h TTL (not the 5m default): our own retry cycles this session — waiting on CI, reading
+    # findings, fixing and re-pushing — routinely ran longer than 5 minutes, so the default
+    # ephemeral cache was expiring before the next retry and silently eating the full cost again.
     message = client.messages.create(
         model=model,
         max_tokens=8192,
@@ -252,9 +295,9 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
             "role": "user",
             "content": [
                 {"type": "text", "text": REVIEW_PROMPT_RULES,
-                 "cache_control": {"type": "ephemeral"}},
+                 "cache_control": {"type": "ephemeral", "ttl": "1h"}},
                 {"type": "text", "text": pr_block,
-                 "cache_control": {"type": "ephemeral"}},
+                 "cache_control": {"type": "ephemeral", "ttl": "1h"}},
             ],
         }],
     )
