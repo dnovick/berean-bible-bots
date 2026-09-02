@@ -49,6 +49,7 @@ _ANS_ROW_INLINE_DISPLAY_RE = _re.compile(
     r'class=["\']ans-row["\'][^>]*style=["\'][^"\']*display\s*:', _re.IGNORECASE
 )
 _RBTN_PRE_OPEN_RE = _re.compile(r'class=["\']rbtn\s+on["\']', _re.IGNORECASE)
+_PLACEHOLDER_EG_RE = _re.compile(r'placeholder=["\'][^"\']*e\.g\.', _re.IGNORECASE)
 
 
 @_register("ans-row-no-inline-display")
@@ -56,9 +57,8 @@ def check_ans_row_no_inline_display(
     ex_dir: Path, errors: list[str], warnings: list[str]
 ) -> None:
     """ans-row elements must not carry inline style="display:..." attributes,
-    and answer buttons must not be pre-labeled as open (class="rbtn on" / ▼ Hide).
-
-    Both patterns make the answer appear open on page load.
+    answer buttons must not be pre-labeled as open (class="rbtn on" / ▼ Hide),
+    and input placeholders must not use 'e.g.' (which reveals the answer).
     """
     name = ex_dir.name
     html_file = ex_dir / f"{name}.html"
@@ -77,6 +77,12 @@ def check_ans_row_no_inline_display(
                 errors, ex_dir,
                 f"{html_file.name}:{lineno} — answer button pre-labeled as open"
                 " (class=\"rbtn on\"); use class=\"rbtn\" and ▶ Answer on page load"
+            )
+        if _PLACEHOLDER_EG_RE.search(line):
+            _err(
+                errors, ex_dir,
+                f"{html_file.name}:{lineno} — input has 'e.g.' placeholder"
+                " (reveals the answer); use a generic label like 'division' or 'types'"
             )
 
 
