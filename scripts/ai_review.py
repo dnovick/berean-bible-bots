@@ -30,7 +30,16 @@ REPO = "dnovick/berean-bible-bots"
 STATUS_CONTEXT = "claude-review"
 MAX_DIFF_CHARS = 500_000
 GITHUB_API = "https://api.github.com"
-DEFAULT_MODEL = "claude-opus-5"
+
+# Haiku is cheap but has a smaller context window (200K tokens) than Opus/Sonnet, and
+# fails hard (400 error) rather than degrading if a prompt exceeds it. Reviewer is
+# deliberately a different model from whichever model authored the PR (usually Claude
+# Code running as Sonnet), so Haiku here is independent either way. Escalate to Opus
+# pre-flight (via a free token count, not a failed generate call) for oversized diffs.
+DEFAULT_MODEL = "claude-haiku-4-5-20251001"
+ESCALATION_MODEL = "claude-opus-5"
+HAIKU_CONTEXT_LIMIT = 200_000
+HAIKU_SAFETY_MARGIN = 10_000  # headroom below the hard limit: max_tokens + counting slop
 
 # Static across every call — cached (prompt caching) so repeated runs (retries, or
 # reviewing multiple PRs in a session) don't repay the token cost of the rules text.
@@ -297,6 +306,29 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
         diff=truncated,
         validator_output=validator_output,
     )
+    content: Any = [
+        {"type": "text", "text": REVIEW_PROMPT_RULES,
+         "cache_control": {"type": "ephemeral", "ttl": "1h"}},
+        {"type": "text", "text": pr_block,
+         "cache_control": {"type": "ephemeral", "ttl": "1h"}},
+    ]
+    messages: Any = [{"role": "user", "content": content}]
+
+    # Pre-flight escalation: Haiku's 200K context window is smaller than Opus/Sonnet's,
+    # and it fails hard (400 error) rather than truncating gracefully. Rather than try
+    # Haiku and pay for a guaranteed failure on a large diff, count tokens first — the
+    # count_tokens endpoint doesn't bill like a generate call — and escalate to Opus
+    # before spending anything if it won't fit.
+    if model.startswith("claude-haiku"):
+        predicted = client.messages.count_tokens(
+            model=model, messages=messages,
+        ).input_tokens
+        if predicted + HAIKU_SAFETY_MARGIN > HAIKU_CONTEXT_LIMIT:
+            print(f"  Diff too large for {model} ({predicted:,} tokens > "
+                  f"{HAIKU_CONTEXT_LIMIT - HAIKU_SAFETY_MARGIN:,} safe limit) — "
+                  f"escalating to {ESCALATION_MODEL} before making any billed call.")
+            model = ESCALATION_MODEL
+
     # Two cache breakpoints: the rules block is identical on every call (any PR, any run) so
     # it's always a cache hit after the first; the PR block is only a cache hit when this
     # exact commit's diff is re-reviewed (retries), but still worth marking — a retry after
@@ -308,15 +340,7 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
         model=model,
         max_tokens=8192,
         thinking={"type": "disabled"},
-        messages=[{
-            "role": "user",
-            "content": [
-                {"type": "text", "text": REVIEW_PROMPT_RULES,
-                 "cache_control": {"type": "ephemeral", "ttl": "1h"}},
-                {"type": "text", "text": pr_block,
-                 "cache_control": {"type": "ephemeral", "ttl": "1h"}},
-            ],
-        }],
+        messages=messages,
     )
     usage = message.usage
     cache_read = getattr(usage, "cache_read_input_tokens", 0) or 0
