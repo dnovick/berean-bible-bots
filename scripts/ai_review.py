@@ -44,12 +44,17 @@ Be specific about file paths when flagging issues.
 ## Rules
 
 1. **Three-format rule**: Scope is `data/lessons/<course>/ch<N>/exercises/<name>/` directories
-   ONLY — book-content exercises tied to a lesson chapter. Every new or modified exercise
-   directory in that path must have all three files: `<name>.md`, `<name>.html`, and
-   `<name>.pdf`. This rule does NOT apply to course reading resources under
-   `data/courses/<course>/<instance>/common/` or `.../session-<N>/` (e.g. Psalm 119 acrostic
-   readings, sight-reading passages) — those are HTML-only by established project convention
-   and must never be flagged under this rule.
+   ONLY — book-content exercises tied to a lesson chapter. A NEW exercise directory must ship
+   all three files from the start: `<name>.md`, `<name>.html`, and `<name>.pdf` — flag that as
+   blocking. For an EXISTING exercise directory whose `.html`/`.md` is modified without a
+   corresponding `.pdf` change: this is NOT blocking on its own — PDF generation for existing
+   exercises is driven by an independent Python data structure (`src/bible_grammar/exercise_pdf/*.py`),
+   not derived from the `.html`/`.md`, so content-only fixes legitimately don't require a same-PR
+   PDF regen. Only flag it (as a warning, not blocking) if the PR description does not already
+   name a tracking issue for the resulting drift. This rule does NOT apply to course reading
+   resources under `data/courses/<course>/<instance>/common/` or `.../session-<N>/` (e.g. Psalm
+   119 acrostic readings, sight-reading passages) — those are HTML-only by established project
+   convention and must never be flagged under this rule.
 
 2. **No transliterations**: Tables, lesson pages, and flashcard decks must never include
    a transliteration column or inline transliteration for Hebrew, Aramaic, or Greek text.

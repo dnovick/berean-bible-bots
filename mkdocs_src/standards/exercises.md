@@ -26,6 +26,8 @@ Every exercise must ship in exactly three formats. **Never create an exercise wi
 
 The exercise directory also contains a `README.md` with a description, conjugation coverage table, and a files table linking all three formats.
 
+**A new exercise directory must ship all three formats from the start** — never create one without all three. For an *existing* exercise, PDF generation is driven by an independent Python data structure in `src/bible_grammar/exercise_pdf/*.py` (`SortEntry`/`VerbEntry` lists, not derived from the `.html`/`.md` source), so a content-only fix to `.html`/`.md` does not strictly require regenerating the PDF in the same PR — but the resulting drift must be tracked (a GitHub issue naming the specific exercise and what changed) rather than silently left to accumulate. See issue #625 for the ch34/ch35 backlog this created.
+
 Enforced by: `validate_exercises.py` → `check_three_formats`
 
 ---
