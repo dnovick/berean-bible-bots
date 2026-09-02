@@ -3,11 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Ch3 Daghesh and Shewa Exercise — BBH Chapter 3</title>
+<title>Ch3 Shewa: Vocal vs. Silent — BBH Chapter 3</title>
 <style>
-  body { font-family: Georgia, serif; max-width: 980px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  body { font-family: Georgia, serif; max-width: 860px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
   h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
-  h2 { font-size: 1.05rem; margin-top: 2rem; color: #333; border-bottom: 1px solid #ddd; padding-bottom: .2rem; }
   .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
   .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
   table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
@@ -15,8 +14,8 @@
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
   td.heb { direction: rtl; unicode-bidi: embed; font-size: 1.8em; font-weight: bold; width: 8rem; padding: .25rem .5rem; }
-  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
-  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  input.parse-field, select.parse-field { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.parse-field:focus, select.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
   .ans-row { display: none; background: #f0faf0; }
   .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
   .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
@@ -28,29 +27,25 @@
   .controls button:hover { background: #ddd; }
   .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
   .clr:hover { background: #ffd8d8 !important; }
-  hr.sec { border: none; border-top: 2px dashed #ccc; margin: 2rem 0; }
-  .reflection { background: #f4f4fc; border-left: 4px solid #88a; padding: .75rem 1rem; margin: 1.5rem 0; font-size: .91rem; }
-  .reflection ol { margin: .5rem 0 0 1.2rem; padding: 0; }
-  .reflection li { margin-bottom: .5rem; }
   @media print {
     .controls, button.rbtn { display: none; }
-    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    input.parse-field, select.parse-field { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
     .ans-row { display: none !important; }
   }
 </style>
 </head>
 <body>
 
-<h1>Ch3 Daghesh and Shewa Exercise — Syllabification and Pronunciation</h1>
-<p class="subtitle">BBH Chapter 3 · 15 words</p>
+<h1>Ch3 Shewa Exercise — Vocal vs. Silent</h1>
+<p class="subtitle">BBH Chapter 3 · 15 words · The answer to number 1 is given as an example.</p>
 
 <div class="instructions">
-  <strong>Instructions:</strong> For each Hebrew word, identify:
+  <strong>Instructions:</strong> For each Hebrew word, identify the Shewa:
   <ol style="margin:.4rem 0 0 1.2rem;padding:0;">
-    <li>The <strong>Daghesh</strong> — whether it is Forte or Lene and in which letter, or <em>none</em></li>
-    <li>The <strong>Shewa</strong> — whether it is Silent or Vocal and under which letter, or <em>none</em></li>
+    <li>Is it <strong>Vocal</strong> or <strong>Silent</strong>? (Select from dropdown.)</li>
+    <li>Under which letter does it appear? (Enter the Hebrew letter.)</li>
   </ol>
-  The answer to number 1 is given as an example.
+  <p style="margin:.5rem 0 0;">Write <strong>none</strong> in both columns if there is no Shewa.</p>
 </div>
 
 <div class="controls">
@@ -63,24 +58,24 @@
   <tr>
     <th>#</th>
     <th>Word</th>
-    <th>Daghesh</th>
-    <th>Shewa</th>
+    <th style="width:9rem;">Type</th>
+    <th>Under Which Letter</th>
     <th></th>
   </tr>
 
-  <!-- 1 — example, pre-filled -->
+  <!-- 1 — worked example -->
   <tr>
     <td class="num">1</td>
     <td class="heb">בְּרָכָה</td>
-    <td><input class="f" id="1-dag" value="Daghesh Lene in ב"></td>
-    <td><input class="f" id="1-shw" value="Vocal Shewa under ב"></td>
+    <td><select class="parse-field" id="1-typ"><option value=""></option><option value="Vocal" selected>Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="1-ltr" value="ב"></td>
     <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-1">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">בְּרָכָה</td>
-    <td>Daghesh Lene in ב</td>
-    <td>Vocal Shewa under ב</td>
+    <td>Vocal</td>
+    <td>ב — word-initial position; pronounced as a hurried vowel</td>
     <td></td>
   </tr>
 
@@ -88,15 +83,15 @@
   <tr>
     <td class="num">2</td>
     <td class="heb">אִשָּׁה</td>
-    <td><input class="f" id="2-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="2-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="2-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="2-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-2">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אִשָּׁה</td>
-    <td>Daghesh Forte in שׁ</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -104,15 +99,15 @@
   <tr>
     <td class="num">3</td>
     <td class="heb">חַטָּאת</td>
-    <td><input class="f" id="3-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="3-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="3-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="3-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-3">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">חַטָּאת</td>
-    <td>Daghesh Forte in ט</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -120,15 +115,15 @@
   <tr>
     <td class="num">4</td>
     <td class="heb">הַבְּהֵמָה</td>
-    <td><input class="f" id="4-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="4-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="4-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="4-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">הַבְּהֵמָה</td>
-    <td>Daghesh Forte in ב (follows article vowel)</td>
-    <td>Vocal Shewa under ב</td>
+    <td>Vocal</td>
+    <td>ב — word-medial, after the article; treated as Vocal (some grammarians call it Forte-associated)</td>
     <td></td>
   </tr>
 
@@ -136,15 +131,15 @@
   <tr>
     <td class="num">5</td>
     <td class="heb">אִתָּ֫נוּ</td>
-    <td><input class="f" id="5-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="5-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="5-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="5-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-5">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אִתָּ֫נוּ</td>
-    <td>Daghesh Forte in ת</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -152,15 +147,15 @@
   <tr>
     <td class="num">6</td>
     <td class="heb">חֻקָּה</td>
-    <td><input class="f" id="6-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="6-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="6-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="6-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-6">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">חֻקָּה</td>
-    <td>Daghesh Forte in ק</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -168,15 +163,15 @@
   <tr>
     <td class="num">7</td>
     <td class="heb">כִּסֵּה</td>
-    <td><input class="f" id="7-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="7-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="7-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="7-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-7">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">כִּסֵּה</td>
-    <td>Daghesh Lene in כּ (word-initial); Daghesh Forte in ס</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -184,15 +179,15 @@
   <tr>
     <td class="num">8</td>
     <td class="heb">מַלְכָּה</td>
-    <td><input class="f" id="8-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="8-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="8-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="8-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">מַלְכָּה</td>
-    <td>Daghesh Lene in כּ (follows Silent Shewa)</td>
-    <td>Silent Shewa under ל</td>
+    <td>Silent</td>
+    <td>ל — syllable-closing Shewa; the ל closes the first syllable</td>
     <td></td>
   </tr>
 
@@ -200,15 +195,15 @@
   <tr>
     <td class="num">9</td>
     <td class="heb">מִשְׁפָּט</td>
-    <td><input class="f" id="9-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="9-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="9-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="9-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-9">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">מִשְׁפָּט</td>
-    <td>Daghesh Lene in פּ (follows Silent Shewa)</td>
-    <td>Silent Shewa under שׁ</td>
+    <td>Silent</td>
+    <td>שׁ — syllable-closing Shewa; the שׁ closes the first syllable</td>
     <td></td>
   </tr>
 
@@ -216,15 +211,15 @@
   <tr>
     <td class="num">10</td>
     <td class="heb">אַתָּה</td>
-    <td><input class="f" id="10-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="10-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="10-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="10-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אַתָּה</td>
-    <td>Daghesh Forte in ת</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -232,15 +227,15 @@
   <tr>
     <td class="num">11</td>
     <td class="heb">דָּבָר</td>
-    <td><input class="f" id="11-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="11-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="11-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="11-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-11">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">דָּבָר</td>
-    <td>Daghesh Lene in דּ (word-initial)</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -248,15 +243,15 @@
   <tr>
     <td class="num">12</td>
     <td class="heb">אוּרִיָּה</td>
-    <td><input class="f" id="12-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="12-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="12-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="12-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-12">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אוּרִיָּה</td>
-    <td>Daghesh Forte in יּ</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -264,15 +259,15 @@
   <tr>
     <td class="num">13</td>
     <td class="heb">אַתֵּ֫נָה</td>
-    <td><input class="f" id="13-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="13-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="13-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="13-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-13">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">אַתֵּ֫נָה</td>
-    <td>Daghesh Forte in ת</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
@@ -280,15 +275,15 @@
   <tr>
     <td class="num">14</td>
     <td class="heb">קְטַנִּים</td>
-    <td><input class="f" id="14-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="14-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="14-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="14-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-14">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">קְטַנִּים</td>
-    <td>Daghesh Forte in נּ</td>
-    <td>Vocal Shewa under ק (word-initial)</td>
+    <td>Vocal</td>
+    <td>ק — word-initial position; pronounced as a hurried vowel</td>
     <td></td>
   </tr>
 
@@ -296,30 +291,19 @@
   <tr>
     <td class="num">15</td>
     <td class="heb">הִגִּיד</td>
-    <td><input class="f" id="15-dag" placeholder="Daghesh type and letter"></td>
-    <td><input class="f" id="15-shw" placeholder="Shewa type and letter (or none)"></td>
+    <td><select class="parse-field" id="15-typ"><option value=""></option><option value="Vocal">Vocal</option><option value="Silent">Silent</option><option value="none">none</option></select></td>
+    <td><input class="parse-field" id="15-ltr" placeholder="letter"></td>
     <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15">
     <td class="ans-lbl">✓</td>
     <td class="ans-heb">הִגִּיד</td>
-    <td>Daghesh Forte in גּ</td>
     <td>none</td>
+    <td>— (no Shewa present)</td>
     <td></td>
   </tr>
 
 </table>
-
-<hr class="sec">
-
-<div class="reflection">
-  <h2 style="border:none;margin-top:0;">Reflection Questions</h2>
-  <ol>
-    <li>Words 8 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">מַלְכָּה</span>) and 9 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">מִשְׁפָּט</span>) both have a Daghesh Lene in a Begadkephat letter that follows a Silent Shewa. Explain why the Shewa is Silent in each case.</li>
-    <li>Word 4 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">הַבְּהֵמָה</span>) has a Daghesh Forte in ב. Word 11 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">דָּבָר</span>) has a Daghesh Lene in דּ. Both are Begadkephat letters. What is the rule that distinguishes Forte from Lene in a Begadkephat?</li>
-    <li>Word 7 (<span style="direction:rtl;unicode-bidi:embed;font-size:1.2em;">כִּסֵּה</span>) has two Daghesh marks. Name each and explain the function of each.</li>
-  </ol>
-</div>
 
 <script>
   const ids = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15];
@@ -350,7 +334,9 @@
     });
   }
   function clearAll() {
-    document.querySelectorAll('input.f').forEach(e => e.value = '');
+    document.querySelectorAll('input.parse-field, select.parse-field').forEach(e => {
+      if (e.tagName === 'SELECT') e.selectedIndex = 0; else e.value = '';
+    });
   }
 </script>
 </body>

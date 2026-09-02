@@ -3480,57 +3480,56 @@ class Ch3SyllableDivisionExercise(ExercisePDF):
         self.add_instructions(
             'For each word: (1) divide into syllables using hyphens, '
             '(2) label each syllable O (open) or C (closed), '
-            '(3) mark the stressed syllable with an asterisk (*), '
-            '(4) note any Qamets Hatuf (write QH in that column, or — if none).'
+            '(3) mark the stressed syllable with an asterisk (*).'
         )
         rows = [
-            ['1', 'אֱלֹהִים', '', '', '', ''],
-            ['2', 'בְּרֵאשִׁית', '', '', '', ''],
-            ['3', 'הָאָרֶץ', '', '', '', ''],
-            ['4', 'שָׁמַיִם', '', '', '', ''],
-            ['5', 'יְרוּשָׁלַיִם', '', '', '', ''],
-            ['6', 'דָּבָר', '', '', '', ''],
-            ['7', 'מֶלֶךְ', '', '', '', ''],
-            ['8', 'בְּרִית', '', '', '', ''],
-            ['9', 'שָׁבַת', '', '', '', ''],
-            ['10', 'נָבִיא', '', '', '', ''],
-            ['11', 'אֲדֹנָי', '', '', '', ''],
-            ['12', 'יִשְׂרָאֵל', '', '', '', ''],
-            ['13', 'כֹּהֵן', '', '', '', ''],
-            ['14', 'מִשְׁפָּט', '', '', '', ''],
-            ['15', 'תּוֹרָה', '', '', '', ''],
-            ['16', 'שָׁלוֹם', '', '', '', ''],
-            ['17', 'חֶסֶד', '', '', '', ''],
-            ['18', 'קֹדֶשׁ', '', '', '', ''],
-            ['19', 'אֶרֶץ', '', '', '', ''],
-            ['20', 'עַם', '', '', '', ''],
+            ['1', 'אֱלֹהִים', '', '', ''],
+            ['2', 'בְּרֵאשִׁית', '', '', ''],
+            ['3', 'הָאָרֶץ', '', '', ''],
+            ['4', 'שָׁמַיִם', '', '', ''],
+            ['5', 'יְרוּשָׁלַיִם', '', '', ''],
+            ['6', 'דָּבָר', '', '', ''],
+            ['7', 'מֶלֶךְ', '', '', ''],
+            ['8', 'בְּרִית', '', '', ''],
+            ['9', 'שָׁבַת', '', '', ''],
+            ['10', 'נָבִיא', '', '', ''],
+            ['11', 'אֲדֹנָי', '', '', ''],
+            ['12', 'יִשְׂרָאֵל', '', '', ''],
+            ['13', 'כֹּהֵן', '', '', ''],
+            ['14', 'מִשְׁפָּט', '', '', ''],
+            ['15', 'תּוֹרָה', '', '', ''],
+            ['16', 'שָׁלוֹם', '', '', ''],
+            ['17', 'חֶסֶד', '', '', ''],
+            ['18', 'קֹדֶשׁ', '', '', ''],
+            ['19', 'אֶרֶץ', '', '', ''],
+            ['20', 'עַם', '', '', ''],
         ]
         ans = [
-            ['1', 'אֱלֹהִים', 'אֱ-לֹ-הִים', 'O-O-C', 'הִים*', '—'],
-            ['2', 'בְּרֵאשִׁית', 'בְּ-רֵא-שִׁית', 'O-O-C', 'שִׁית*', '—'],
-            ['3', 'הָאָרֶץ', 'הָ-אָ-רֶץ', 'O-O-C', 'רֶץ*', '—'],
-            ['4', 'שָׁמַיִם', 'שָׁ-מַ-יִם', 'O-O-C', 'יִם*', '—'],
-            ['5', 'יְרוּשָׁלַיִם', 'יְ-רוּ-שָׁ-לַ-יִם', 'O-O-O-O-C', 'יִם*', '—'],
-            ['6', 'דָּבָר', 'דָּ-בָר', 'O-O', 'בָר*', '—'],
-            ['7', 'מֶלֶךְ', 'מֶ-לֶךְ', 'O-C', 'לֶךְ*', '—'],
-            ['8', 'בְּרִית', 'בְּ-רִית', 'O-C', 'רִית*', '—'],
-            ['9', 'שָׁבַת', 'שָׁ-בַת', 'O-C', 'בַת*', '—'],
-            ['10', 'נָבִיא', 'נָ-בִיא', 'O-O', 'בִיא*', '—'],
-            ['11', 'אֲדֹנָי', 'אֲ-דֹ-נָי', 'O-O-O', 'נָי*', '—'],
-            ['12', 'יִשְׂרָאֵל', 'יִשׂ-רָ-אֵל', 'C-O-C', 'אֵל*', '—'],
-            ['13', 'כֹּהֵן', 'כֹּ-הֵן', 'O-C', 'הֵן*', '—'],
-            ['14', 'מִשְׁפָּט', 'מִשׁ-פָּט', 'C-C', 'פָּט*', '—'],
-            ['15', 'תּוֹרָה', 'תּוֹ-רָה', 'O-O', 'רָה*', '—'],
-            ['16', 'שָׁלוֹם', 'שָׁ-לוֹם', 'O-C', 'לוֹם*', '—'],
-            ['17', 'חֶסֶד', 'חֶ-סֶד', 'O-C', 'סֶד*', '—'],
-            ['18', 'קֹדֶשׁ', 'קֹ-דֶשׁ', 'O-C', 'דֶשׁ*', '—'],
-            ['19', 'אֶרֶץ', 'אֶ-רֶץ', 'O-C', 'רֶץ*', '—'],
-            ['20', 'עַם', 'עַם', 'C', 'עַם*', '—'],
+            ['1', 'אֱלֹהִים', 'אֱ-לֹ-הִים', 'O-O-C', 'הִים*'],
+            ['2', 'בְּרֵאשִׁית', 'בְּ-רֵא-שִׁית', 'O-O-C', 'שִׁית*'],
+            ['3', 'הָאָרֶץ', 'הָ-אָ-רֶץ', 'O-O-C', 'רֶץ*'],
+            ['4', 'שָׁמַיִם', 'שָׁ-מַ-יִם', 'O-O-C', 'יִם*'],
+            ['5', 'יְרוּשָׁלַיִם', 'יְ-רוּ-שָׁ-לַ-יִם', 'O-O-O-O-C', 'יִם*'],
+            ['6', 'דָּבָר', 'דָּ-בָר', 'O-O', 'בָר*'],
+            ['7', 'מֶלֶךְ', 'מֶ-לֶךְ', 'O-C', 'לֶךְ*'],
+            ['8', 'בְּרִית', 'בְּ-רִית', 'O-C', 'רִית*'],
+            ['9', 'שָׁבַת', 'שָׁ-בַת', 'O-C', 'בַת*'],
+            ['10', 'נָבִיא', 'נָ-בִיא', 'O-O', 'בִיא*'],
+            ['11', 'אֲדֹנָי', 'אֲ-דֹ-נָי', 'O-O-O', 'נָי*'],
+            ['12', 'יִשְׂרָאֵל', 'יִשׂ-רָ-אֵל', 'C-O-C', 'אֵל*'],
+            ['13', 'כֹּהֵן', 'כֹּ-הֵן', 'O-C', 'הֵן*'],
+            ['14', 'מִשְׁפָּט', 'מִשׁ-פָּט', 'C-C', 'פָּט*'],
+            ['15', 'תּוֹרָה', 'תּוֹ-רָה', 'O-O', 'רָה*'],
+            ['16', 'שָׁלוֹם', 'שָׁ-לוֹם', 'O-C', 'לוֹם*'],
+            ['17', 'חֶסֶד', 'חֶ-סֶד', 'O-C', 'סֶד*'],
+            ['18', 'קֹדֶשׁ', 'קֹ-דֶשׁ', 'O-C', 'דֶשׁ*'],
+            ['19', 'אֶרֶץ', 'אֶ-רֶץ', 'O-C', 'רֶץ*'],
+            ['20', 'עַם', 'עַם', 'C', 'עַם*'],
         ]
         self.add_generic_table(
-            headers=['#', 'Word', 'Syllable Division', 'Types (O/C)', 'Stress', 'Qamets Hatuf?'],
+            headers=['#', 'Word', 'Syllable Division', 'Types (O/C)', 'Stress'],
             rows=rows,
-            col_ratios=[0.05, 0.12, 0.20, 0.14, 0.10, 0.39],
+            col_ratios=[0.05, 0.12, 0.30, 0.20, 0.33],
             heb_cols=[1],
             show_answers=True,
             answer_rows=ans,
@@ -3541,20 +3540,31 @@ def build_ch3_syllable_division(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch3SyllableDivisionExercise,
         'Chapter 3 — Syllable Division Exercise',
-        'Hebrew Syllables — Open, Closed, Stress, Qamets Hatuf',
+        'Hebrew Syllables — Open, Closed, and Stressed',
         ['bbh', 'ch3', 'exercises', 'ch3-syllable-division'],
         'ch3-syllable-division.pdf',
         out_dir,
     )
 
 
-def build_ch3_daghesh_shewa(out_dir: Optional[str] = None) -> str:
+def build_ch3_dagesh_lene_forte(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
-        Ch3DagheshShewaExercise,
-        'Chapter 3 — Daghesh and Shewa Exercise',
-        'Hebrew Daghesh (Forte/Lene) and Shewa (Silent/Vocal) Identification',
-        ['bbh', 'ch3', 'exercises', 'ch3-daghesh-shewa'],
-        'ch3-daghesh-shewa.pdf',
+        Ch3DagheshLeneForteExercise,
+        'Chapter 3 — Daghesh: Lene vs. Forte Exercise',
+        'Hebrew Daghesh — Lene vs. Forte Identification',
+        ['bbh', 'ch3', 'exercises', 'ch3-dagesh-lene-forte'],
+        'ch3-dagesh-lene-forte.pdf',
+        out_dir,
+    )
+
+
+def build_ch3_shewa_vocal_silent(out_dir: Optional[str] = None) -> str:
+    return _build_exercise_pdf(
+        Ch3ShewaVocalSilentExercise,
+        'Chapter 3 — Shewa: Vocal vs. Silent Exercise',
+        'Hebrew Shewa — Vocal vs. Silent Identification',
+        ['bbh', 'ch3', 'exercises', 'ch3-shewa-vocal-silent'],
+        'ch3-shewa-vocal-silent.pdf',
         out_dir,
     )
 
@@ -3595,12 +3605,12 @@ def build_ch3_furtive_quiescent(out_dir: Optional[str] = None) -> str:
 # ---------------------------------------------------------------------------
 
 
-class Ch3DagheshShewaExercise(ExercisePDF):
+class Ch3DagheshLeneForteExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
-            'For each Hebrew word, identify: (1) the Daghesh — Forte or Lene, '
-            'and in which letter; (2) the Shewa — Silent or Vocal, and under '
-            'which letter. Write "none" if not present.'
+            'For each Hebrew word, identify the Daghesh: '
+            '(1) Is it Forte or Lene? (2) In which letter? '
+            'Write "none" if there is no Daghesh.'
         )
         rows = [
             ['1', 'בְּרָכָה', '', ''],
@@ -3620,26 +3630,77 @@ class Ch3DagheshShewaExercise(ExercisePDF):
             ['15', 'הִגִּיד', '', ''],
         ]
         ans = [
-            ['1', 'בְּרָכָה', 'Daghesh Lene in ב', 'Vocal Shewa under ב'],
-            ['2', 'אִשָּׁה', 'Daghesh Forte in שׁ', 'none'],
-            ['3', 'חַטָּאת', 'Daghesh Forte in ט', 'none'],
-            ['4', 'הַבְּהֵמָה', 'Daghesh Forte in ב (follows article vowel)', 'Vocal Shewa under ב'],
-            ['5', 'אִתָּ֫נוּ', 'Daghesh Forte in ת', 'none'],
-            ['6', 'חֻקָּה', 'Daghesh Forte in ק', 'none'],
-            ['7', 'כִּסֵּה', 'Lene in כ (word-initial); Forte in ס', 'none'],
-            ['8', 'מַלְכָּה', 'Daghesh Lene in כ (follows Silent Shewa)', 'Silent Shewa under ל'],
-            ['9', 'מִשְׁפָּט', 'Daghesh Lene in פ (follows Silent Shewa)', 'Silent Shewa under שׁ'],
-            ['10', 'אַתָּה', 'Daghesh Forte in ת', 'none'],
-            ['11', 'דָּבָר', 'Daghesh Lene in ד (word-initial)', 'none'],
-            ['12', 'אוּרִיָּה', 'Daghesh Forte in י', 'none'],
-            ['13', 'אַתֵּ֫נָה', 'Daghesh Forte in ת', 'none'],
-            ['14', 'קְטַנִּים', 'Daghesh Forte in נ', 'Vocal Shewa under ק (word-initial)'],
-            ['15', 'הִגִּיד', 'Daghesh Forte in ג', 'none'],
+            ['1', 'בְּרָכָה', 'Lene', 'ב'],
+            ['2', 'אִשָּׁה', 'Forte', 'שׁ'],
+            ['3', 'חַטָּאת', 'Forte', 'ט'],
+            ['4', 'הַבְּהֵמָה', 'Forte', 'ב (follows article vowel)'],
+            ['5', 'אִתָּ֫נוּ', 'Forte', 'ת'],
+            ['6', 'חֻקָּה', 'Forte', 'ק'],
+            ['7', 'כִּסֵּה', 'Both', 'Lene in כ; Forte in ס'],
+            ['8', 'מַלְכָּה', 'Lene', 'כ (follows Silent Shewa)'],
+            ['9', 'מִשְׁפָּט', 'Lene', 'פ (follows Silent Shewa)'],
+            ['10', 'אַתָּה', 'Forte', 'ת'],
+            ['11', 'דָּבָר', 'Lene', 'ד (word-initial)'],
+            ['12', 'אוּרִיָּה', 'Forte', 'י'],
+            ['13', 'אַתֵּ֫נָה', 'Forte', 'ת'],
+            ['14', 'קְטַנִּים', 'Forte', 'נ'],
+            ['15', 'הִגִּיד', 'Forte', 'ג'],
         ]
         self.add_generic_table(
-            headers=['#', 'Word', 'Daghesh', 'Shewa'],
+            headers=['#', 'Word', 'Type', 'In Which Letter'],
             rows=rows,
-            col_ratios=[0.05, 0.12, 0.49, 0.34],
+            col_ratios=[0.05, 0.12, 0.15, 0.68],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=ans,
+        )
+
+
+class Ch3ShewaVocalSilentExercise(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'For each Hebrew word, identify the Shewa: '
+            '(1) Is it Vocal or Silent? (2) Under which letter? '
+            'Write "none" if there is no Shewa.'
+        )
+        rows = [
+            ['1', 'בְּרָכָה', '', ''],
+            ['2', 'אִשָּׁה', '', ''],
+            ['3', 'חַטָּאת', '', ''],
+            ['4', 'הַבְּהֵמָה', '', ''],
+            ['5', 'אִתָּ֫נוּ', '', ''],
+            ['6', 'חֻקָּה', '', ''],
+            ['7', 'כִּסֵּה', '', ''],
+            ['8', 'מַלְכָּה', '', ''],
+            ['9', 'מִשְׁפָּט', '', ''],
+            ['10', 'אַתָּה', '', ''],
+            ['11', 'דָּבָר', '', ''],
+            ['12', 'אוּרִיָּה', '', ''],
+            ['13', 'אַתֵּ֫נָה', '', ''],
+            ['14', 'קְטַנִּים', '', ''],
+            ['15', 'הִגִּיד', '', ''],
+        ]
+        ans = [
+            ['1', 'בְּרָכָה', 'Vocal', 'ב'],
+            ['2', 'אִשָּׁה', 'none', '—'],
+            ['3', 'חַטָּאת', 'none', '—'],
+            ['4', 'הַבְּהֵמָה', 'Vocal', 'ב'],
+            ['5', 'אִתָּ֫נוּ', 'none', '—'],
+            ['6', 'חֻקָּה', 'none', '—'],
+            ['7', 'כִּסֵּה', 'none', '—'],
+            ['8', 'מַלְכָּה', 'Silent', 'ל'],
+            ['9', 'מִשְׁפָּט', 'Silent', 'שׁ'],
+            ['10', 'אַתָּה', 'none', '—'],
+            ['11', 'דָּבָר', 'none', '—'],
+            ['12', 'אוּרִיָּה', 'none', '—'],
+            ['13', 'אַתֵּ֫נָה', 'none', '—'],
+            ['14', 'קְטַנִּים', 'Vocal', 'ק (word-initial)'],
+            ['15', 'הִגִּיד', 'none', '—'],
+        ]
+        self.add_generic_table(
+            headers=['#', 'Word', 'Type', 'Under Which Letter'],
+            rows=rows,
+            col_ratios=[0.05, 0.12, 0.15, 0.68],
             heb_cols=[1],
             show_answers=True,
             answer_rows=ans,
