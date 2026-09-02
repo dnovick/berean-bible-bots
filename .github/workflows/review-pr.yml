@@ -81,6 +81,15 @@ jobs:
           $(tail -5 /tmp/links.txt)"
           fi
 
+          # validate_tables: warnings only (non-blocking); use --strict locally to fail
+          python scripts/validate_tables.py > /tmp/tables.txt 2>&1 || true
+          TABLES_WARNS=$(grep -c "^WARN" /tmp/tables.txt || true)
+          if [ "${TABLES_WARNS}" -gt 0 ]; then
+            BODY="${BODY}
+          ### validate_tables (informational — ${TABLES_WARNS} bold-summary-row warning(s))
+          $(cat /tmp/tables.txt)"
+          fi
+
           echo "failed=${FAILED}" >> "$GITHUB_OUTPUT"
           {
             echo "body<<REVIEW_BODY_EOF"
@@ -108,7 +117,7 @@ jobs:
         run: |
           gh pr review ${{ github.event.pull_request.number }} \
             --approve \
-            --body "All automated checks passed: flake8, mypy, validate_courses, validate_lessons, validate_exercises, validate_nav."
+            --body "All automated checks passed: flake8, mypy, validate_courses, validate_lessons, validate_exercises, validate_nav, validate_tables."
 
       - name: Request changes
         if: steps.checks.outputs.failed != '0'
