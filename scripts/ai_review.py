@@ -17,6 +17,7 @@ Requires:
 
 import argparse
 import json
+import re as _re
 import subprocess
 import sys
 from pathlib import Path
@@ -42,9 +43,13 @@ Be specific about file paths when flagging issues.
 
 ## Rules
 
-1. **Three-format rule**: Every new or modified exercise directory must have all three files:
-   `<name>.md`, `<name>.html`, and `<name>.pdf`. If the diff adds a new exercise directory
-   without all three, flag it as blocking.
+1. **Three-format rule**: Scope is `data/lessons/<course>/ch<N>/exercises/<name>/` directories
+   ONLY — book-content exercises tied to a lesson chapter. Every new or modified exercise
+   directory in that path must have all three files: `<name>.md`, `<name>.html`, and
+   `<name>.pdf`. This rule does NOT apply to course reading resources under
+   `data/courses/<course>/<instance>/common/` or `.../session-<N>/` (e.g. Psalm 119 acrostic
+   readings, sight-reading passages) — those are HTML-only by established project convention
+   and must never be flagged under this rule.
 
 2. **No transliterations**: Tables, lesson pages, and flashcard decks must never include
    a transliteration column or inline transliteration for Hebrew, Aramaic, or Greek text.
@@ -54,9 +59,21 @@ Be specific about file paths when flagging issues.
 
 4. **Dropdown fields**: In HTML exercises, Stem, Conjugation, PGN (Person/Gender/Number),
    Yes/No, and Function fields must use `<select>` elements, not `<input type="text">`.
+   `scripts/validate_exercises.py`'s `dropdown-required-fields` check already verifies this
+   precisely (exact header-keyword matching) — its output is included below. Trust that
+   output over your own reading of the diff: if a file has zero `dropdown-required-fields`
+   warnings there, do NOT flag a dropdown-fields issue for it yourself, even if a column name
+   (e.g. "Translation", "Weakness Effect", "Root") looks superficially Function-adjacent —
+   the validator already excludes free-text-appropriate columns like Root/Translation/Notes.
 
 5. **Answer row alignment**: Every `.answer-row td` must align cell-for-cell with table
    columns — no colspan shortcuts, no bunching all content into the first cell.
+   `scripts/validate_exercises.py`'s `answer-row-alignment` and `answer-row-empty` checks
+   already verify this precisely by parsing the actual DOM and counting `<td>` cells — its
+   output is included below. Counting table cells by reading a large text diff is unreliable;
+   trust the validator's output over your own cell-count reasoning. If a file has zero
+   `answer-row-alignment` / `answer-row-empty` warnings in the validator output, do NOT flag
+   an alignment issue for it yourself.
 
 6. **Lesson structure**: New lesson directories must contain a `README.md` as the lesson.
    A separate `<topic>.md` lesson file alongside a `README.md` is not allowed.
@@ -87,6 +104,17 @@ REVIEW_PROMPT_PR = """\
 
 ```
 {diff}
+```
+
+## Automated validator output (ground truth for rules 4 and 5)
+
+This is the actual output of `scripts/validate_exercises.py` run against this PR's checked-out
+tree, filtered to files touched by this diff. It parses the real DOM — trust it completely for
+answer-row-alignment, answer-row-empty, and dropdown-required-fields; do not second-guess it by
+re-counting cells yourself.
+
+```
+{validator_output}
 ```
 
 ## Response
@@ -171,15 +199,41 @@ def _post_review(pr_number: int, body: str, event: str, token: str) -> None:
     resp.raise_for_status()
 
 
+_DIFF_PATH_RE = _re.compile(r"^diff --git a/(\S+) b/\S+", _re.MULTILINE)
+
+
+def _get_validator_output(diff: str) -> str:
+    """Run validate_exercises.py against the local checked-out tree and filter its
+    output to just the files touched by this diff, so the model gets precise,
+    DOM-parsed ground truth for the alignment/dropdown checks instead of having to
+    (unreliably) count HTML table cells itself in a large text diff.
+    """
+    paths = _DIFF_PATH_RE.findall(diff)
+    if not paths:
+        return "(no exercise files in this diff)"
+    repo_root = Path(__file__).parent.parent
+    result = subprocess.run(
+        [sys.executable, str(repo_root / "scripts" / "validate_exercises.py")],
+        capture_output=True, text=True, cwd=repo_root,
+    )
+    lines = (result.stdout + result.stderr).splitlines()
+    relevant = [ln for ln in lines if any(p in ln for p in paths)]
+    if not relevant:
+        return "(validate_exercises.py reported no warnings or errors for any file in this diff)"
+    return "\n".join(relevant)
+
+
 def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[str, Any]:
     client = anthropic.Anthropic()
     truncated = diff[:MAX_DIFF_CHARS]
     if len(diff) > MAX_DIFF_CHARS:
         truncated += f"\n\n[Diff truncated — showing first {MAX_DIFF_CHARS:,} chars]"
+    validator_output = _get_validator_output(diff)
     pr_block = REVIEW_PROMPT_PR.format(
         title=title,
         description=description or "(no description provided)",
         diff=truncated,
+        validator_output=validator_output,
     )
     # Two cache breakpoints: the rules block is identical on every call (any PR, any run) so
     # it's always a cache hit after the first; the PR block is only a cache hit when this
@@ -219,7 +273,6 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
         )
     content = text_blocks[0].text
     # Strip markdown code fences if the model wrapped the JSON
-    import re as _re
     content = _re.sub(r"^```(?:json)?\s*", "", content.strip())
     content = _re.sub(r"\s*```$", "", content)
     try:
