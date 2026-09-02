@@ -41,8 +41,8 @@ This document is the **per-domain trust matrix** that the Foundry Operating Agre
 | 5 | **Branch creation** | 2 | `git checkout -b` + `git push -u` for the standard PR workflow | Deleting branches is Phase 1 |
 | 6 | **GitHub — issue creation** | 2 | `gh issue create --assignee dnovick` when identifying new work items during a session | Issue body must accurately describe the work; owner reviews in GitHub |
 | 7 | **GitHub — PR creation** | 1 | `gh pr create` via author bot | Owner initiates by asking Claude to open the PR; Claude creates it and reports back |
-| 8 | **GitHub — AI code review** | 1 | `python scripts/ai_review.py --pr N` | Owner triggers manually; posts review comment + `codex-review` commit status via reviewer bot |
-| 9 | **GitHub — PR merge** | 1 | `gh pr merge --squash` | Owner requests explicitly in session; both `review` and `codex-review` status checks must be green |
+| 8 | **GitHub — AI code review** | 1 | `python scripts/ai_review.py --pr N` | Owner triggers manually; posts review comment + `claude-review` commit status via reviewer bot |
+| 9 | **GitHub — PR merge** | 1 | `gh pr merge --squash` | Owner requests explicitly in session; both `review` and `claude-review` status checks must be green |
 | 10 | **Anthropic API (ai_review.py)** | 1 | Direct API calls via `scripts/ai_review.py` | Only triggered by owner via explicit `ai_review.py` invocation; uses SDK auto-discovery |
 
 ---
@@ -108,5 +108,5 @@ When a new Phase 2 action is approved (promotion criteria met — see above), ad
 ## Review Cadence
 
 - **Per-session:** Claude surfaces any Phase-1 actions needed and waits for explicit approval before proceeding.
-- **Per-PR:** Owner reviews the `git diff` before merge; both `review` and `codex-review` checks must pass.
+- **Per-PR:** Owner reviews the `git diff` before merge; both `review` and `claude-review` checks must pass.
 - **Policy review:** revisit this document when a new action type is introduced or after any demotion incident.
