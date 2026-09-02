@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 33 — Pual Function Sort (Weak Roots)</title>
 <style>
   body { font-family: Georgia, serif; max-width: 1050px; margin: 2em auto; padding: 0 1.5em; color: #222; }
@@ -31,187 +32,160 @@
 </style>
 </head>
 <body>
-
-
 <h1>Chapter 33 — Pual Function Sort (Weak Roots)</h1>
 <p class="subtitle">BBH Chapter 33 · Pual Weak Verbs</p>
-
 <p>The Pual is <strong>always</strong> the passive of the Piel. For each of the 18 weak-root Pual forms: (1) give the <strong>Piel active meaning</strong>; (2) translate the <strong>Pual passive form</strong>.</p>
-
 <div class="tip">
-  <strong>III-ה endings:</strong>
-  Perfect 3ms: <span class="heb">ָּה</span> (Qamets-heh, e.g., גֻּלָּה) ·
-  Imperfect 3ms: <span class="heb">ֶּה</span> (Tsere-heh, e.g., יְגֻלֶּה) ·
-  Participle ms: <span class="heb">ֶּה</span> (e.g., מְגֻלֶּה)<br>
-  <strong>ברך (R2 = ר):</strong> ר rejects dagesh forte → Qibbuts lengthens to Holem (בֹּרַךְ, יְבֹרַךְ, מְבֹרָךְ)
+<strong>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span> endings:</strong>
+  Perfect 3ms: <span class="heb">ָּה</span> (Qamets-heh, e.g., <span style="direction:rtl;unicode-bidi:embed;">גֻּלָּה</span>) ·
+  Imperfect 3ms: <span class="heb">ֶּה</span> (Tsere-heh, e.g., <span style="direction:rtl;unicode-bidi:embed;">יְגֻלֶּה</span>) ·
+  Participle ms: <span class="heb">ֶּה</span> (e.g., <span style="direction:rtl;unicode-bidi:embed;">מְגֻלֶּה</span>)<br/>
+<strong><span style="direction:rtl;unicode-bidi:embed;">ברך</span> (R2 = <span style="direction:rtl;unicode-bidi:embed;">ר</span>):</strong> <span style="direction:rtl;unicode-bidi:embed;">ר</span> rejects dagesh forte → Qibbuts lengthens to Holem (<span style="direction:rtl;unicode-bidi:embed;">בֹּרַךְ</span>, <span style="direction:rtl;unicode-bidi:embed;">יְבֹרַךְ</span>, <span style="direction:rtl;unicode-bidi:embed;">מְבֹרָךְ</span>)
 </div>
-
 <div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
+<button onclick="showAll()">Show All Answers</button>
+<button onclick="hideAll()">Hide All Answers</button>
+<button onclick="clearAll()">Clear All Inputs</button>
 </div>
-
 <table>
-  <tr>
-    <th>#</th><th>Form</th><th>Root</th><th>Weak Type</th><th>Conjugation</th><th>Piel Active Meaning</th><th>Pual Passive Translation</th><th></th>
-  </tr>
-
-  <tr>
-    <td>1</td><td><span class="heb">גֻּלָּה</span></td><td><span class="heb">גלה</span></td><td>III-ה</td><td>Perfect 3ms</td>
-    <td><input class="parse-field" id="i1a"></td>
-    <td><input class="parse-field" id="i1b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r1"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal / uncover</td><td><strong>Pual:</strong> it was revealed &nbsp;·&nbsp; <em>Qibbuts under ג + dagesh in ל + final ָּה (III-ה pattern)</em></td><td></td></tr>
-
-  <tr>
-    <td>2</td><td><span class="heb">כֻּלָּה</span></td><td><span class="heb">כלה</span></td><td>III-ה</td><td>Perfect 3ms</td>
-    <td><input class="parse-field" id="i2a"></td>
-    <td><input class="parse-field" id="i2b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r2"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> it was finished / consumed &nbsp;·&nbsp; <em>Qibbuts under כ + dagesh in ל + final ָּה</em></td><td></td></tr>
-
-  <tr>
-    <td>3</td><td><span class="heb">בֹּרַךְ</span></td><td><span class="heb">ברך</span></td><td>R2 = ר</td><td>Perfect 3ms</td>
-    <td><input class="parse-field" id="i3a"></td>
-    <td><input class="parse-field" id="i3b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r3"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> he was blessed &nbsp;·&nbsp; <em>Holem under ב (Qibbuts lengthened; ר rejects dagesh) + Pathach under ר</em></td><td></td></tr>
-
-  <tr>
-    <td>4</td><td><span class="heb">עֻנָּה</span></td><td><span class="heb">ענה</span></td><td>III-ה, I-gutt</td><td>Perfect 3ms</td>
-    <td><input class="parse-field" id="i4a"></td>
-    <td><input class="parse-field" id="i4b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r4"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to afflict / humble</td><td><strong>Pual:</strong> he was afflicted &nbsp;·&nbsp; <em>Qibbuts under ע (guttural accepts Qibbuts) + dagesh in ן + final ָּה</em></td><td></td></tr>
-
-  <tr>
-    <td>5</td><td><span class="heb">חֻיָּה</span></td><td><span class="heb">חיה</span></td><td>III-ה</td><td>Perfect 3ms</td>
-    <td><input class="parse-field" id="i5a"></td>
-    <td><input class="parse-field" id="i5b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r5"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to keep alive</td><td><strong>Pual:</strong> he was kept alive &nbsp;·&nbsp; <em>Qibbuts under ח + dagesh forte in י + final ָּה</em></td><td></td></tr>
-
-  <tr>
-    <td>6</td><td><span class="heb">יְגֻלֶּה</span></td><td><span class="heb">גלה</span></td><td>III-ה</td><td>Imperfect 3ms</td>
-    <td><input class="parse-field" id="i6a"></td>
-    <td><input class="parse-field" id="i6b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r6"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal</td><td><strong>Pual:</strong> it will be revealed &nbsp;·&nbsp; <em>Prefix יְ + Qibbuts under ג + dagesh in ל + final ֶּה (imperfect III-ה ending)</em></td><td></td></tr>
-
-  <tr>
-    <td>7</td><td><span class="heb">יְכֻלֶּה</span></td><td><span class="heb">כלה</span></td><td>III-ה</td><td>Imperfect 3ms</td>
-    <td><input class="parse-field" id="i7a"></td>
-    <td><input class="parse-field" id="i7b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r7"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> it will be finished &nbsp;·&nbsp; <em>Prefix יְ + Qibbuts under כ + dagesh in ל + final ֶּה</em></td><td></td></tr>
-
-  <tr>
-    <td>8</td><td><span class="heb">יְבֹרַךְ</span></td><td><span class="heb">ברך</span></td><td>R2 = ר</td><td>Imperfect 3ms</td>
-    <td><input class="parse-field" id="i8a"></td>
-    <td><input class="parse-field" id="i8b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r8"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> he will be blessed &nbsp;·&nbsp; <em>Prefix יְ + Holem under ב (ר rejects dagesh) + Pathach under ר</em></td><td></td></tr>
-
-  <tr>
-    <td>9</td><td><span class="heb">יְעֻנֶּה</span></td><td><span class="heb">ענה</span></td><td>III-ה, I-gutt</td><td>Imperfect 3ms</td>
-    <td><input class="parse-field" id="i9a"></td>
-    <td><input class="parse-field" id="i9b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r9"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to afflict</td><td><strong>Pual:</strong> he will be afflicted &nbsp;·&nbsp; <em>Prefix יְ + Qibbuts under ע + dagesh in ן + final ֶּה</em></td><td></td></tr>
-
-  <tr>
-    <td>10</td><td><span class="heb">יְחֻיֶּה</span></td><td><span class="heb">חיה</span></td><td>III-ה</td><td>Imperfect 3ms</td>
-    <td><input class="parse-field" id="i10a"></td>
-    <td><input class="parse-field" id="i10b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r10"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to keep alive</td><td><strong>Pual:</strong> he will be kept alive &nbsp;·&nbsp; <em>Prefix יְ + Qibbuts under ח + dagesh in י + final ֶּה</em></td><td></td></tr>
-
-  <tr>
-    <td>11</td><td><span class="heb">מְגֻלֶּה</span></td><td><span class="heb">גלה</span></td><td>III-ה</td><td>Participle ms</td>
-    <td><input class="parse-field" id="i11a"></td>
-    <td><input class="parse-field" id="i11b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r11"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal</td><td><strong>Pual:</strong> one being revealed &nbsp;·&nbsp; <em>Prefix מְ + Qibbuts under ג + dagesh in ל + final ֶּה (Pual participle III-ה)</em></td><td></td></tr>
-
-  <tr>
-    <td>12</td><td><span class="heb">מְכֻלֶּה</span></td><td><span class="heb">כלה</span></td><td>III-ה</td><td>Participle ms</td>
-    <td><input class="parse-field" id="i12a"></td>
-    <td><input class="parse-field" id="i12b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r12"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> one being consumed &nbsp;·&nbsp; <em>Prefix מְ + Qibbuts under כ + dagesh in ל + final ֶּה</em></td><td></td></tr>
-
-  <tr>
-    <td>13</td><td><span class="heb">מְבֹרָךְ</span></td><td><span class="heb">ברך</span></td><td>R2 = ר</td><td>Participle ms</td>
-    <td><input class="parse-field" id="i13a"></td>
-    <td><input class="parse-field" id="i13b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r13"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> one being blessed &nbsp;·&nbsp; <em>Prefix מְ + Holem under ב (ר rejects dagesh) + Qamets under ר (participle theme vowel)</em></td><td></td></tr>
-
-  <tr>
-    <td>14</td><td><span class="heb">גֻּלְתָּה</span></td><td><span class="heb">גלה</span></td><td>III-ה</td><td>Perfect 3fs</td>
-    <td><input class="parse-field" id="i14a"></td>
-    <td><input class="parse-field" id="i14b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r14"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal</td><td><strong>Pual:</strong> it was revealed (3fs) &nbsp;·&nbsp; <em>Qibbuts under ג + Shewa under ל + תָּה suffix (3fs replaces the ָּה of 3ms)</em></td><td></td></tr>
-
-  <tr>
-    <td>15</td><td><span class="heb">בֹּרֲכוּ</span></td><td><span class="heb">ברך</span></td><td>R2 = ר</td><td>Perfect 3cp</td>
-    <td><input class="parse-field" id="i15a"></td>
-    <td><input class="parse-field" id="i15b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r15"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> they were blessed &nbsp;·&nbsp; <em>Holem under ב + Hateph Pathach under ר (guttural reduced vowel before suffix) + וּ</em></td><td></td></tr>
-
-  <tr>
-    <td>16</td><td><span class="heb">כֻּלּוּ</span></td><td><span class="heb">כלה</span></td><td>III-ה</td><td>Perfect 3cp</td>
-    <td><input class="parse-field" id="i16a"></td>
-    <td><input class="parse-field" id="i16b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r16"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> they were consumed / finished &nbsp;·&nbsp; <em>Qibbuts under כ + dagesh forte in ל + וּ suffix (III-ה 3cp: ָּה → וּ)</em></td><td></td></tr>
-
-  <tr>
-    <td>17</td><td><span class="heb">צֻוָּה</span></td><td><span class="heb">צוה</span></td><td>III-ה</td><td>Perfect 3ms</td>
-    <td><input class="parse-field" id="i17a"></td>
-    <td><input class="parse-field" id="i17b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r17"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to command</td><td><strong>Pual:</strong> he was commanded &nbsp;·&nbsp; <em>Qibbuts under צ + dagesh forte in ו + final ָּה; III-ה Pual pattern with וו as R2</em></td><td></td></tr>
-
-  <tr>
-    <td>18</td><td><span class="heb">שֻׁנָּה</span></td><td><span class="heb">שׁנה</span></td><td>III-ה</td><td>Perfect 3ms</td>
-    <td><input class="parse-field" id="i18a"></td>
-    <td><input class="parse-field" id="i18b"></td>
-    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r18"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to change</td><td><strong>Pual:</strong> it was changed &nbsp;·&nbsp; <em>Qibbuts under שׁ + dagesh forte in ן + final ָּה; III-ה Pual perfect 3ms</em></td><td></td></tr>
-
+<tr>
+<th>#</th><th>Form</th><th>Root</th><th>Weak Type</th><th>Conjugation</th><th>Piel Active Meaning</th><th>Pual Passive Translation</th><th></th>
+</tr>
+<tr>
+<td>1</td><td><span class="heb">גֻּלָּה</span></td><td><span class="heb">גלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Perfect 3ms</td>
+<td><input class="parse-field" id="i1a"/></td>
+<td><input class="parse-field" id="i1b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r1"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal / uncover</td><td><strong>Pual:</strong> it was revealed  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ג</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ל</span> + final <span style="direction:rtl;unicode-bidi:embed;">ָּה</span> (III-<span style="direction:rtl;unicode-bidi:embed;">ה</span> pattern)</em></td><td></td></tr>
+<tr>
+<td>2</td><td><span class="heb">כֻּלָּה</span></td><td><span class="heb">כלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Perfect 3ms</td>
+<td><input class="parse-field" id="i2a"/></td>
+<td><input class="parse-field" id="i2b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r2"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> it was finished / consumed  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">כ</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ל</span> + final <span style="direction:rtl;unicode-bidi:embed;">ָּה</span></em></td><td></td></tr>
+<tr>
+<td>3</td><td><span class="heb">בֹּרַךְ</span></td><td><span class="heb">ברך</span></td><td>R2 = <span style="direction:rtl;unicode-bidi:embed;">ר</span></td><td>Perfect 3ms</td>
+<td><input class="parse-field" id="i3a"/></td>
+<td><input class="parse-field" id="i3b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r3"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> he was blessed  ·  <em>Holem under <span style="direction:rtl;unicode-bidi:embed;">ב</span> (Qibbuts lengthened; <span style="direction:rtl;unicode-bidi:embed;">ר</span> rejects dagesh) + Pathach under <span style="direction:rtl;unicode-bidi:embed;">ר</span></em></td><td></td></tr>
+<tr>
+<td>4</td><td><span class="heb">עֻנָּה</span></td><td><span class="heb">ענה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span>, I-gutt</td><td>Perfect 3ms</td>
+<td><input class="parse-field" id="i4a"/></td>
+<td><input class="parse-field" id="i4b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r4"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to afflict / humble</td><td><strong>Pual:</strong> he was afflicted  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ע</span> (guttural accepts Qibbuts) + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ן</span> + final <span style="direction:rtl;unicode-bidi:embed;">ָּה</span></em></td><td></td></tr>
+<tr>
+<td>5</td><td><span class="heb">חֻיָּה</span></td><td><span class="heb">חיה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Perfect 3ms</td>
+<td><input class="parse-field" id="i5a"/></td>
+<td><input class="parse-field" id="i5b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r5"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to keep alive</td><td><strong>Pual:</strong> he was kept alive  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ח</span> + dagesh forte in <span style="direction:rtl;unicode-bidi:embed;">י</span> + final <span style="direction:rtl;unicode-bidi:embed;">ָּה</span></em></td><td></td></tr>
+<tr>
+<td>6</td><td><span class="heb">יְגֻלֶּה</span></td><td><span class="heb">גלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Imperfect 3ms</td>
+<td><input class="parse-field" id="i6a"/></td>
+<td><input class="parse-field" id="i6b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r6"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal</td><td><strong>Pual:</strong> it will be revealed  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">יְ</span> + Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ג</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ל</span> + final <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span> (imperfect III-<span style="direction:rtl;unicode-bidi:embed;">ה</span> ending)</em></td><td></td></tr>
+<tr>
+<td>7</td><td><span class="heb">יְכֻלֶּה</span></td><td><span class="heb">כלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Imperfect 3ms</td>
+<td><input class="parse-field" id="i7a"/></td>
+<td><input class="parse-field" id="i7b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r7"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> it will be finished  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">יְ</span> + Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">כ</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ל</span> + final <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span></em></td><td></td></tr>
+<tr>
+<td>8</td><td><span class="heb">יְבֹרַךְ</span></td><td><span class="heb">ברך</span></td><td>R2 = <span style="direction:rtl;unicode-bidi:embed;">ר</span></td><td>Imperfect 3ms</td>
+<td><input class="parse-field" id="i8a"/></td>
+<td><input class="parse-field" id="i8b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r8"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> he will be blessed  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">יְ</span> + Holem under <span style="direction:rtl;unicode-bidi:embed;">ב</span> (<span style="direction:rtl;unicode-bidi:embed;">ר</span> rejects dagesh) + Pathach under <span style="direction:rtl;unicode-bidi:embed;">ר</span></em></td><td></td></tr>
+<tr>
+<td>9</td><td><span class="heb">יְעֻנֶּה</span></td><td><span class="heb">ענה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span>, I-gutt</td><td>Imperfect 3ms</td>
+<td><input class="parse-field" id="i9a"/></td>
+<td><input class="parse-field" id="i9b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r9"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to afflict</td><td><strong>Pual:</strong> he will be afflicted  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">יְ</span> + Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ע</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ן</span> + final <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span></em></td><td></td></tr>
+<tr>
+<td>10</td><td><span class="heb">יְחֻיֶּה</span></td><td><span class="heb">חיה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Imperfect 3ms</td>
+<td><input class="parse-field" id="i10a"/></td>
+<td><input class="parse-field" id="i10b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r10"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to keep alive</td><td><strong>Pual:</strong> he will be kept alive  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">יְ</span> + Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ח</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">י</span> + final <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span></em></td><td></td></tr>
+<tr>
+<td>11</td><td><span class="heb">מְגֻלֶּה</span></td><td><span class="heb">גלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Participle ms</td>
+<td><input class="parse-field" id="i11a"/></td>
+<td><input class="parse-field" id="i11b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r11"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal</td><td><strong>Pual:</strong> one being revealed  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">מְ</span> + Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ג</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ל</span> + final <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span> (Pual participle III-<span style="direction:rtl;unicode-bidi:embed;">ה</span>)</em></td><td></td></tr>
+<tr>
+<td>12</td><td><span class="heb">מְכֻלֶּה</span></td><td><span class="heb">כלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Participle ms</td>
+<td><input class="parse-field" id="i12a"/></td>
+<td><input class="parse-field" id="i12b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r12"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> one being consumed  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">מְ</span> + Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">כ</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ל</span> + final <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span></em></td><td></td></tr>
+<tr>
+<td>13</td><td><span class="heb">מְבֹרָךְ</span></td><td><span class="heb">ברך</span></td><td>R2 = <span style="direction:rtl;unicode-bidi:embed;">ר</span></td><td>Participle ms</td>
+<td><input class="parse-field" id="i13a"/></td>
+<td><input class="parse-field" id="i13b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r13"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> one being blessed  ·  <em>Prefix <span style="direction:rtl;unicode-bidi:embed;">מְ</span> + Holem under <span style="direction:rtl;unicode-bidi:embed;">ב</span> (<span style="direction:rtl;unicode-bidi:embed;">ר</span> rejects dagesh) + Qamets under <span style="direction:rtl;unicode-bidi:embed;">ר</span> (participle theme vowel)</em></td><td></td></tr>
+<tr>
+<td>14</td><td><span class="heb">גֻּלְתָּה</span></td><td><span class="heb">גלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Perfect 3fs</td>
+<td><input class="parse-field" id="i14a"/></td>
+<td><input class="parse-field" id="i14b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r14"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to reveal</td><td><strong>Pual:</strong> it was revealed (3fs)  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">ג</span> + Shewa under <span style="direction:rtl;unicode-bidi:embed;">ל</span> + <span style="direction:rtl;unicode-bidi:embed;">תָּה</span> suffix (3fs replaces the <span style="direction:rtl;unicode-bidi:embed;">ָּה</span> of 3ms)</em></td><td></td></tr>
+<tr>
+<td>15</td><td><span class="heb">בֹּרֲכוּ</span></td><td><span class="heb">ברך</span></td><td>R2 = <span style="direction:rtl;unicode-bidi:embed;">ר</span></td><td>Perfect 3cp</td>
+<td><input class="parse-field" id="i15a"/></td>
+<td><input class="parse-field" id="i15b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r15"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to bless</td><td><strong>Pual:</strong> they were blessed  ·  <em>Holem under <span style="direction:rtl;unicode-bidi:embed;">ב</span> + Hateph Pathach under <span style="direction:rtl;unicode-bidi:embed;">ר</span> (guttural reduced vowel before suffix) + <span style="direction:rtl;unicode-bidi:embed;">וּ</span></em></td><td></td></tr>
+<tr>
+<td>16</td><td><span class="heb">כֻּלּוּ</span></td><td><span class="heb">כלה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Perfect 3cp</td>
+<td><input class="parse-field" id="i16a"/></td>
+<td><input class="parse-field" id="i16b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r16"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to complete / destroy</td><td><strong>Pual:</strong> they were consumed / finished  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">כ</span> + dagesh forte in <span style="direction:rtl;unicode-bidi:embed;">ל</span> + <span style="direction:rtl;unicode-bidi:embed;">וּ</span> suffix (III-<span style="direction:rtl;unicode-bidi:embed;">ה</span> 3cp: <span style="direction:rtl;unicode-bidi:embed;">ָּה</span> → <span style="direction:rtl;unicode-bidi:embed;">וּ</span>)</em></td><td></td></tr>
+<tr>
+<td>17</td><td><span class="heb">צֻוָּה</span></td><td><span class="heb">צוה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Perfect 3ms</td>
+<td><input class="parse-field" id="i17a"/></td>
+<td><input class="parse-field" id="i17b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r17"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to command</td><td><strong>Pual:</strong> he was commanded  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">צ</span> + dagesh forte in <span style="direction:rtl;unicode-bidi:embed;">ו</span> + final <span style="direction:rtl;unicode-bidi:embed;">ָּה</span>; III-<span style="direction:rtl;unicode-bidi:embed;">ה</span> Pual pattern with <span style="direction:rtl;unicode-bidi:embed;">וו</span> as R2</em></td><td></td></tr>
+<tr>
+<td>18</td><td><span class="heb">שֻׁנָּה</span></td><td><span class="heb">שׁנה</span></td><td>III-<span style="direction:rtl;unicode-bidi:embed;">ה</span></td><td>Perfect 3ms</td>
+<td><input class="parse-field" id="i18a"/></td>
+<td><input class="parse-field" id="i18b"/></td>
+<td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r18"><td></td><td></td><td></td><td></td><td></td><td><strong>Piel:</strong> to change</td><td><strong>Pual:</strong> it was changed  ·  <em>Qibbuts under <span style="direction:rtl;unicode-bidi:embed;">שׁ</span> + dagesh forte in <span style="direction:rtl;unicode-bidi:embed;">ן</span> + final <span style="direction:rtl;unicode-bidi:embed;">ָּה</span>; III-<span style="direction:rtl;unicode-bidi:embed;">ה</span> Pual perfect 3ms</em></td><td></td></tr>
 </table>
-
 <div class="note">
-  <strong>Conjugation pattern review for III-ה Pual:</strong><br>
-  Perfect 3ms: <span class="heb">גֻּלָּה</span> (Qibbuts–R1 + dagesh–R2 + ָּה)<br>
-  Perfect 3fs: <span class="heb">גֻּלְתָּה</span> (Qibbuts–R1 + Shewa–R2 + תָּה)<br>
-  Perfect 3cp: <span class="heb">כֻּלּוּ</span> (Qibbuts–R1 + dagesh–R2 + וּ)<br>
-  Imperfect 3ms: <span class="heb">יְגֻלֶּה</span> (יְ + Qibbuts–R1 + dagesh–R2 + ֶּה)<br>
-  Participle ms: <span class="heb">מְגֻלֶּה</span> (מְ + Qibbuts–R1 + dagesh–R2 + ֶּה)
+<strong>Conjugation pattern review for III-<span style="direction:rtl;unicode-bidi:embed;">ה</span> Pual:</strong><br/>
+  Perfect 3ms: <span class="heb">גֻּלָּה</span> (Qibbuts–R1 + dagesh–R2 + <span style="direction:rtl;unicode-bidi:embed;">ָּה</span>)<br/>
+  Perfect 3fs: <span class="heb">גֻּלְתָּה</span> (Qibbuts–R1 + Shewa–R2 + <span style="direction:rtl;unicode-bidi:embed;">תָּה</span>)<br/>
+  Perfect 3cp: <span class="heb">כֻּלּוּ</span> (Qibbuts–R1 + dagesh–R2 + <span style="direction:rtl;unicode-bidi:embed;">וּ</span>)<br/>
+  Imperfect 3ms: <span class="heb">יְגֻלֶּה</span> (<span style="direction:rtl;unicode-bidi:embed;">יְ</span> + Qibbuts–R1 + dagesh–R2 + <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span>)<br/>
+  Participle ms: <span class="heb">מְגֻלֶּה</span> (<span style="direction:rtl;unicode-bidi:embed;">מְ</span> + Qibbuts–R1 + dagesh–R2 + <span style="direction:rtl;unicode-bidi:embed;">ֶּה</span>)
 </div>
-
 <script>
 function toggle(id) {
   var row = document.getElementById(id);
