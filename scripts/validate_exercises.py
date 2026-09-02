@@ -38,7 +38,7 @@ import sys
 from pathlib import Path
 from typing import Callable
 
-from bs4 import BeautifulSoup
+from bs4 import BeautifulSoup, Comment
 
 _REPO = Path(__file__).resolve().parent.parent
 _LESSONS_DIR = _REPO / "data" / "lessons"
@@ -435,9 +435,11 @@ def check_hebrew_no_rtl_wrapper(
             node = node.parent  # type: ignore[attr-defined]
         return False
 
-    _SKIP_ANCESTOR_TAGS = {"script", "style"}
+    _SKIP_ANCESTOR_TAGS = {"script", "style", "title", "head"}
     flagged_parents: set[int] = set()
     for text_node in soup.find_all(string=_HEBREW_CHAR_RE):
+        if isinstance(text_node, Comment):
+            continue
         parent = text_node.parent
         if parent is None or id(parent) in flagged_parents:
             continue
