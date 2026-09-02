@@ -145,7 +145,32 @@ The Hithpael Participle uses the מִתְ prefix.
 
 ---
 
-## 8. Summary Paradigm (§34.14)
+## 8. Metathesis (§34.12)
+
+When the ת of the Hithpael prefix or preformative precedes a verbal root beginning with a sibilant consonant (ס, צ, שׂ, or שׁ), the two consonants switch places.
+
+| Qal | | Hithpael | |
+|---|---|---|---|
+| שָׁמַר | he guarded | הִשְׁתַּמֵּר | he guarded himself |
+| שָׂכַר | he hired | הִשְׂתַּכֵּר | he hired himself (earned wages) |
+| סָתַר | he hid | הִסְתַּתֵּר | he hid himself |
+
+> The most important form to know: **הִשְׁתַּחֲוָה** (bow down, worship) from root שׁחה — the most frequent Hithpael form in the OT (~173 occurrences). See §10 for the full Hishtaphel treatment.
+
+---
+
+## 9. Assimilation of ת (§34.13)
+
+When the first consonant of a verbal root is ד, ז, ט, or ת, the ת of the Hithpael prefix assimilates into that consonant and becomes a Daghesh Forte.
+
+| Qal | | Hithpael | |
+|---|---|---|---|
+| דָּבַר | he spoke | הִדַּבֵּר | he spoke with |
+| טָמֵא | he was defiled | הִטַּמֵּא | he defiled himself |
+
+---
+
+## 10. Summary Paradigm (§34.14)
 
 In every Hithpael strong verb form: Pathach under R1, Daghesh Forte in R2. The prefix/preformative changes by conjugation.
 
@@ -160,31 +185,6 @@ In every Hithpael strong verb form: Pathach under R1, Daghesh Forte in R2. The p
 | 2mp | הִתְקַטַּלְתֶּם | תִּתְקַטְּלוּ | הִתְקַטֵּ֫לְנָה | | | |
 | 2fp | הִתְקַטַּלְתֶּן | תִּתְקַטֵּ֫לְנָה | | | | |
 | 1cp | הִתְקַטַּ֫לְנוּ | נִתְקַטֵּל | | | | |
-
----
-
-## 9. Metathesis (§34.12)
-
-When the ת of the Hithpael prefix or preformative precedes a verbal root beginning with a sibilant consonant (ס, צ, שׂ, or שׁ), the two consonants switch places.
-
-| Qal | | Hithpael | |
-|---|---|---|---|
-| שָׁמַר | he guarded | הִשְׁתַּמֵּר | he guarded himself |
-| שָׂכַר | he hired | הִשְׂתַּכֵּר | he hired himself (earned wages) |
-| סָתַר | he hid | הִסְתַּתֵּר | he hid himself |
-
-> The most important form to know: **הִשְׁתַּחֲוָה** (bow down, worship) from root שׁחה — the most frequent Hithpael form in the OT (~173 occurrences). See §11 for the full Hishtaphel treatment.
-
----
-
-## 10. Assimilation of ת (§34.13)
-
-When the first consonant of a verbal root is ד, ז, ט, or ת, the ת of the Hithpael prefix assimilates into that consonant and becomes a Daghesh Forte.
-
-| Qal | | Hithpael | |
-|---|---|---|---|
-| דָּבַר | he spoke | הִדַּבֵּר | he spoke with |
-| טָמֵא | he was defiled | הִטַּמֵּא | he defiled himself |
 
 ---
 
