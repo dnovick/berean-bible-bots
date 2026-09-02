@@ -1,7 +1,7 @@
 """AI code review for a GitHub PR using the Anthropic API.
 
 Posts a review comment and commit status via bbb-reviewer-01[bot].
-The commit status context is "codex-review" — required by branch protection
+The commit status context is "claude-review" — required by branch protection
 as a hard merge gate.
 
 Usage:
@@ -27,7 +27,7 @@ import anthropic
 import requests
 
 REPO = "dnovick/berean-bible-bots"
-STATUS_CONTEXT = "codex-review"
+STATUS_CONTEXT = "claude-review"
 MAX_DIFF_CHARS = 500_000
 GITHUB_API = "https://api.github.com"
 DEFAULT_MODEL = "claude-opus-5"

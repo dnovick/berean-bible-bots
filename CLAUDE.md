@@ -228,7 +228,7 @@ required-approval counts).
 
 **AI code review (manual):** Run `scripts/ai_review.py` against the PR before merging.
 It sends the diff to Claude Opus 5, checks nine project-specific rules, posts a review comment
-via `bbb-reviewer-01[bot]`, and posts a `codex-review` commit status (success or failure).
+via `bbb-reviewer-01[bot]`, and posts a `claude-review` commit status (success or failure).
 Branch protection requires this status to be green before merging.
 ```bash
 source .venv/bin/activate
@@ -237,7 +237,7 @@ env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n> --model claude-son
 ```
 Credentials: uses Anthropic SDK auto-discovery (Claude Code installation). Do NOT set `ANTHROPIC_API_KEY` if you have an identity-linked key — unset it with `env -u ANTHROPIC_API_KEY`.
 
-**Merging** (after both `review` and `codex-review` status checks pass):
+**Merging** (after both `review` and `claude-review` status checks pass):
 ```bash
 # When merging as an agent (squash commit shows as bbb-author-01[bot]):
 GH_TOKEN=$(python scripts/github_app_token.py --role author) \
