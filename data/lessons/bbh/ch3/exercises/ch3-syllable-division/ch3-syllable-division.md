@@ -45,11 +45,11 @@
 |---|---|---|---|---|---|
 | 1 | אֱלֹהִים | אֱ-לֹ-הִים | O-O-C | הִים\* | Hateph seghol under aleph (guttural composite shewa); final mem closes syl. 3 |
 | 2 | בְּרֵאשִׁית | בְּ-רֵא-שִׁית | O-O-C | שִׁית\* | Vocal shewa under bet (word-initial); aleph is mater (silent) in syl. 2; yod is mater in syl. 3; final taw closes |
-| 3 | הָאָרֶץ | הָ-אָ-רֶץ | O-O-C | רֶץ\* | Both qamets are long ā — open syllables (with article); aleph is guttural and begins syl. 2 |
+| 3 | הָאָרֶץ | הָ-אָ-רֶץ | O-O-C | אָ\* | Segholate base אֶ֫רֶץ retains penultimate stress after article: הָ-אָ֫-רֶץ; aleph (guttural) opens syl. 2; both qamets = long ā |
 | 4 | שָׁמַיִם | שָׁ-מַ-יִם | O-O-C | יִם\* | שָׁ open (long ā); מַ open (short patach, yod opens next syl.); יִם closed by final mem |
-| 5 | יְרוּשָׁלַיִם | יְ-רוּ-שָׁ-לַ-יִם | O-O-O-O-C | יִם\* | Vocal shewa under yod; five syllables; final יִם closed |
+| 5 | יְרוּשָׁלַיִם | יְ-רוּ-שָׁ-לַ-יִם | O-O-O-O-C | לַ\* | Vocal shewa under yod; five syllables; penultimate stress (milʿel) — unlike שָׁמַיִם, Jerusalem retains stress on the base-form syllable לַ |
 | 6 | דָּבָר | דָּ-בָר | O-O | בָר\* | Both syllables open; both qamets long ā; stress on ultima (milra) |
-| 7 | מֶלֶךְ | מֶ-לֶךְ | O-C | לֶךְ\* | Syl. 1 open (seghol, ends at lamed boundary); syl. 2 closed by final kaph (silent shewa) |
+| 7 | מֶלֶךְ | מֶ-לֶךְ | O-C | מֶ\* | Segholate noun (< *malk) — penultimate stress (milʿel) on syl. 1; syl. 2 closed by final kaph (silent shewa) |
 | 8 | בְּרִית | בְּ-רִית | O-C | רִית\* | Vocal shewa (word-initial); yod is mater (long hireq); final taw closes |
 | 9 | שָׁבַת | שָׁ-בַת | O-C | בַת\* | שָׁ open (long ā); בַת closed by final taw; stress on ultima |
 | 10 | נָבִיא | נָ-בִיא | O-O | בִיא\* | נָ open; yod is mater; aleph quiesces word-finally; ultima open (quiescent aleph) |
@@ -59,9 +59,9 @@
 | 14 | מִשְׁפָּט | מִשׁ-פָּט | C-C | פָּט\* | Silent shewa under shin (closes syl. 1); Dagesh Forte in pe (not Lene — pe follows closed syllable); qamets long ā (accented); final tet closes syl. 2 |
 | 15 | תּוֹרָה | תּוֹ-רָה | O-O | רָה\* | Waw is mater (long holem); הָ open (mappiq-less he = vowel letter at word end); both open |
 | 16 | שָׁלוֹם | שָׁ-לוֹם | O-C | לוֹם\* | שָׁ open (long ā); waw is mater (long holem); final mem closes |
-| 17 | חֶסֶד | חֶ-סֶד | O-C | סֶד\* | חֶ open (seghol); סֶד closed by dalet; stress on ultima |
-| 18 | קֹדֶשׁ | קֹ-דֶשׁ | O-C | דֶשׁ\* | Holem on qoph; דֶשׁ closed by final shin |
-| 19 | אֶרֶץ | אֶ-רֶץ | O-C | רֶץ\* | Aleph opens syl. 1 (seghol); רֶץ closed by final tsade |
+| 17 | חֶסֶד | חֶ-סֶד | O-C | חֶ\* | Segholate noun (< *ḥasd) — penultimate stress (milʿel) on syl. 1; חֶ open (seghol); סֶד closed by dalet |
+| 18 | קֹדֶשׁ | קֹ-דֶשׁ | O-C | קֹ\* | Segholate noun (< *quds) — penultimate stress (milʿel) on syl. 1; קֹ open (holem); דֶשׁ closed by final shin |
+| 19 | אֶרֶץ | אֶ-רֶץ | O-C | אֶ\* | Segholate noun (< *ʾarts) — penultimate stress (milʿel) on syl. 1; aleph (guttural) opens אֶ; רֶץ closed by final tsade |
 | 20 | עַם | עַם | C | עַם\* | Single syllable; closed by final mem; short patach |
 
 ---
