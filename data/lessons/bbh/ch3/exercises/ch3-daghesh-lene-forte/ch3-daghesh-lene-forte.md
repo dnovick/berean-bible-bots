@@ -1,6 +1,6 @@
 # Ch3 Exercise — Daghesh: Lene vs. Forte
 
-For each Hebrew word, identify the Daghesh: (1) Is it Forte or Lene? (2) In which letter? Write "none" if there is no Daghesh. The answer to number 1 is given as an example.
+For each Hebrew word, identify the Daghesh: (1) Is it Forte or Lene? (2) In which letter? Note: all 15 words contain a Daghesh. The answer to number 1 is given as an example.
 
 | # | Word | Type | In Which Letter |
 |---|---|---|---|

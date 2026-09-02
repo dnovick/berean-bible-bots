@@ -3547,13 +3547,13 @@ def build_ch3_syllable_division(out_dir: Optional[str] = None) -> str:
     )
 
 
-def build_ch3_dagesh_lene_forte(out_dir: Optional[str] = None) -> str:
+def build_ch3_daghesh_lene_forte(out_dir: Optional[str] = None) -> str:
     return _build_exercise_pdf(
         Ch3DagheshLeneForteExercise,
         'Chapter 3 — Daghesh: Lene vs. Forte Exercise',
         'Hebrew Daghesh — Lene vs. Forte Identification',
-        ['bbh', 'ch3', 'exercises', 'ch3-dagesh-lene-forte'],
-        'ch3-dagesh-lene-forte.pdf',
+        ['bbh', 'ch3', 'exercises', 'ch3-daghesh-lene-forte'],
+        'ch3-daghesh-lene-forte.pdf',
         out_dir,
     )
 
