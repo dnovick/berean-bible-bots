@@ -114,6 +114,8 @@ For paradigm fill-in drills (`<select>`-based): present four options, all from t
 
 Every `.answer-row` `<td>` must align **cell-for-cell** with the corresponding columns in the table header. Do not collapse multiple cells into `td[0]` or use `colspan` on answer rows.
 
+**An answer row must never be left empty.** `<tr class="answer-row"><td></td></tr>` is a hard content failure, not a formatting nit — clicking `▶ Answer` or `Show All Answers` reveals nothing, and the exercise is unusable. This reached production on `ch34-function-sort.html` (and, independently, on `ch24-function-sort.html` and `ch26-function-sort.html`) before it was caught. `scripts/validate_exercises.py`'s `answer-row-empty` check treats this as a **blocking error**, not a warning, unlike the general alignment check above — an exercise scaffolded with placeholder answer rows must have its answers filled in before the PR that adds it is merged, not left for a later pass.
+
 ```html
 <!-- Header row -->
 <tr>

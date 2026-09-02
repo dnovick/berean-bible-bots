@@ -8,6 +8,8 @@ Current checks:
     buttons, no answer-revealing or enumerated-choice placeholders
   - dropdown-required-fields: Stem/Conjugation/PGN/Function/Weak Class/"...?"
     columns must use <select>, not free-text <input>
+  - answer-row-empty (BLOCKING): an answer row must reveal actual text, not an
+    empty placeholder — clicking Answer/Show All must show something
   - answer-row-alignment: every answer row's <td> count matches its question
     row's <td> count (cell-for-cell alignment, no bunching)
   - three-format: every exercise directory has <name>.md, <name>.html, <name>.pdf
@@ -163,6 +165,36 @@ def check_dropdown_required_fields(
                         " <input>; fields naming Stem/Conjugation/PGN/Function/Weak"
                         " Class or a Yes-No '?' column must use <select>"
                     )
+
+
+@_register("answer-row-empty")
+def check_answer_row_empty(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """An answer row that reveals no text content at all is a hard content
+    failure (clicking Answer / Show All shows an empty row), not a cosmetic
+    alignment issue — this is a blocking error, unlike answer-row-alignment.
+    Caught in production on ch34-function-sort.html before this check existed.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    soup = BeautifulSoup(html_file.read_text(encoding="utf-8", errors="replace"), "html.parser")
+
+    for row in soup.find_all("tr"):
+        class_attr = row.get("class")
+        classes: list[str] = [class_attr] if isinstance(class_attr, str) else list(class_attr or [])
+        if "answer-row" not in classes and "ans-row" not in classes:
+            continue
+        if not row.get_text(strip=True):
+            row_id = row.get("id", "?")
+            _err(
+                errors, ex_dir,
+                f"{html_file.name} — answer row #{row_id} reveals no text content;"
+                " clicking ▶ Answer / Show All Answers shows an empty row. Every"
+                " answer row must contain the actual answer, not an empty placeholder"
+            )
 
 
 @_register("answer-row-alignment")
