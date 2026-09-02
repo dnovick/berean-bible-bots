@@ -10296,7 +10296,9 @@ class Ch35HithpaelWeakParadigmDrill(ExercisePDF):
         'Write the Hithpael Weak forms. '
         'Part A uses גלה (III-ה). '
         'Part B shows metathesis: when R1 is a sibilant (ז, צ, שׁ, שׂ), '
-        'the ת of הִתְ swaps with R1 (e.g., הִצְטַדֵּק from root צדק).'
+        'the ת of הִתְ swaps with R1 (e.g., הִצְטַדֵּק from root צדק). '
+        'Part C uses נחם (II-Guttural, Virtual Doubling). '
+        'Part D uses ברך (II-Guttural, Compensatory Lengthening).'
     )
 
     def _build(self) -> None:
@@ -10325,6 +10327,44 @@ class Ch35HithpaelWeakParadigmDrill(ExercisePDF):
         rows_b = [['15','Perfect 3ms (צדק — metathesis)',''], ['16','Imperfect 3ms (שמר — metathesis)',''],]
         ans_b  = [['15','Perfect 3ms (צדק — metathesis)','הִצְטַדֵּק'], ['16','Imperfect 3ms (שמר — metathesis)','יִשְׁתַּמֵּר'],]
 
+        rows_c = [
+            ['17','Perfect 3ms (נחם)',''], ['18','Perfect 3fs (נחם)',''],
+            ['19','Perfect 2ms (נחם)',''], ['20','Perfect 1cs (נחם)',''],
+            ['21','Perfect 3cp (נחם)',''], ['22','Imperfect 3ms (נחם)',''],
+            ['23','Imperfect 2ms (נחם)',''], ['24','Imperfect 3mp (נחם)',''],
+            ['25','Imperfect 1cp (נחם)',''], ['26','Imperative 2ms (נחם)',''],
+            ['27','Imperative 2fs (נחם)',''], ['28','Imperative 2mp (נחם)',''],
+            ['29','Participle ms (נחם)',''], ['30','Participle mp (נחם)',''],
+        ]
+        ans_c = [
+            ['17','Perfect 3ms (נחם)','הִתְנַחֵם'], ['18','Perfect 3fs (נחם)','הִתְנַחֲמָה'],
+            ['19','Perfect 2ms (נחם)','הִתְנַחַ֫מְתָּ'], ['20','Perfect 1cs (נחם)','הִתְנַחַ֫מְתִּי'],
+            ['21','Perfect 3cp (נחם)','הִתְנַחֲמוּ'], ['22','Imperfect 3ms (נחם)','יִתְנַחֵם'],
+            ['23','Imperfect 2ms (נחם)','תִּתְנַחֵם'], ['24','Imperfect 3mp (נחם)','יִתְנַחֲמוּ'],
+            ['25','Imperfect 1cp (נחם)','נִתְנַחֵם'], ['26','Imperative 2ms (נחם)','הִתְנַחֵם'],
+            ['27','Imperative 2fs (נחם)','הִתְנַחֲמִי'], ['28','Imperative 2mp (נחם)','הִתְנַחֲמוּ'],
+            ['29','Participle ms (נחם)','מִתְנַחֵם'], ['30','Participle mp (נחם)','מִתְנַחֲמִים'],
+        ]
+
+        rows_d = [
+            ['31','Perfect 3ms (ברך)',''], ['32','Perfect 3fs (ברך)',''],
+            ['33','Perfect 2ms (ברך)',''], ['34','Perfect 1cs (ברך)',''],
+            ['35','Perfect 3cp (ברך)',''], ['36','Imperfect 3ms (ברך)',''],
+            ['37','Imperfect 2ms (ברך)',''], ['38','Imperfect 3mp (ברך)',''],
+            ['39','Imperfect 1cp (ברך)',''], ['40','Imperative 2ms (ברך)',''],
+            ['41','Imperative 2fs (ברך)',''], ['42','Imperative 2mp (ברך)',''],
+            ['43','Participle ms (ברך)',''], ['44','Participle mp (ברך)',''],
+        ]
+        ans_d = [
+            ['31','Perfect 3ms (ברך)','הִתְבָּרֵךְ'], ['32','Perfect 3fs (ברך)','הִתְבָּֽרְכָה'],
+            ['33','Perfect 2ms (ברך)','הִתְבָּרַ֫כְתָּ'], ['34','Perfect 1cs (ברך)','הִתְבָּרַ֫כְתִּי'],
+            ['35','Perfect 3cp (ברך)','הִתְבָּֽרְכוּ'], ['36','Imperfect 3ms (ברך)','יִתְבָּרֵךְ'],
+            ['37','Imperfect 2ms (ברך)','תִּתְבָּרֵךְ'], ['38','Imperfect 3mp (ברך)','יִתְבָּֽרְכוּ'],
+            ['39','Imperfect 1cp (ברך)','נִתְבָּרֵךְ'], ['40','Imperative 2ms (ברך)','הִתְבָּרֵךְ'],
+            ['41','Imperative 2fs (ברך)','הִתְבָּֽרְכִי'], ['42','Imperative 2mp (ברך)','הִתְבָּֽרְכוּ'],
+            ['43','Participle ms (ברך)','מִתְבָּרֵךְ'], ['44','Participle mp (ברך)','מִתְבָּֽרְכִים'],
+        ]
+
         self.add_drill_with_answer_key(hdrs, rows_a, ans_a, col_ratios=cr,
                                        answer_heb_cols=[2],
                                        section_title='Part A — Hithpael Weak: גלה (III-ה)',
@@ -10333,6 +10373,14 @@ class Ch35HithpaelWeakParadigmDrill(ExercisePDF):
                                        answer_heb_cols=[2],
                                        section_title='Part B — Hithpael Metathesis Examples',
                                        answer_title='Part B — Answer Key')
+        self.add_drill_with_answer_key(hdrs, rows_c, ans_c, col_ratios=cr,
+                                       answer_heb_cols=[2],
+                                       section_title='Part C — Hithpael Weak: נחם (II-Guttural, Virtual Doubling)',
+                                       answer_title='Part C — Answer Key')
+        self.add_drill_with_answer_key(hdrs, rows_d, ans_d, col_ratios=cr,
+                                       answer_heb_cols=[2],
+                                       section_title='Part D — Hithpael Weak: ברך (II-Guttural, Compensatory Lengthening)',
+                                       answer_title='Part D — Answer Key')
 
 
 def build_ch35_hithpael_weak_paradigm_drill(out_dir: Optional[str] = None) -> str:

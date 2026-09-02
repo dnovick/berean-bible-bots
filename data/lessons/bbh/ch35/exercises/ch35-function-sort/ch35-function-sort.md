@@ -68,7 +68,7 @@ Write your answer (R / Re / I / SA) in the blank Function column.
 | 3 | הלל | geminate | **R** | Boasting = directing praise toward oneself; subject as its own object |
 | 4 | פלל | strong (Hithpael of פלל) | **SA** | Prayer became the fixed lexical meaning; the reflexive "plead one's own case" has lexicalized into a simple action |
 | 5 | ענה | III-ה | **R** | "We afflicted ourselves" — the subject enacts deprivation upon itself (fasting) |
-| 6 | גלה | III-ה imperfect: seghol + ה | **R** | Reflexive: the subject is both agent and recipient of the revealing |
+| 6 | גלה | III-ה imperfect: Seghol + ה | **R** | Reflexive: the subject is both agent and recipient of the revealing |
 | 7 | שׁחה | sibilant metathesis + III-ה | **R** | Bowing down — self-directed act of submission |
 | 8 | הלל | geminate | **R** | "Let him boast" — subject directs praise to itself |
 | 9 | פלל | strong | **SA** | Prayer as conventionalized Hithpael meaning |
@@ -76,7 +76,7 @@ Write your answer (R / Re / I / SA) in the blank Function column.
 | 11 | שׁחה | sibilant metathesis + III-ה wayyiqtol: apocopated | **R** | Self-directed prostration |
 | 12 | פלל | strong | **SA** | "Abraham prayed" — the lexicalized Simple Action meaning |
 | 13 | נבא | I-nun | **SA** | "He prophesied" — the Hithpael of נבא is the primary form for prophesying; no reflexive logic in the modern sense |
-| 14 | חזק | strong | **R** | Estimative-Reflexive: "take courage" = present yourself as strong / strengthen yourself |
+| 14 | חזק | strong | **R** | Reflexive: "take courage" = strengthen yourself (compare BBH ch34 items 23/25, same root) |
 | 15 | נחם | I-nun | **R** | "Was comforted" — the reflexive shades into a passive-like reading; subject receives the state from within |
 | 16 | ברך | strong | **R** | "Bless themselves" — nations enacting blessing for/upon themselves (the Abrahamic promise formula) |
 | 17 | צדק | sibilant צ with assimilation | **R** | "Justified himself" — subject claims or asserts righteousness for itself; often carries a negative connotation of self-justification |

@@ -26,6 +26,8 @@ Every exercise must ship in exactly three formats. **Never create an exercise wi
 
 The exercise directory also contains a `README.md` with a description, conjugation coverage table, and a files table linking all three formats.
 
+**A new exercise directory must ship all three formats from the start** — never create one without all three. For an *existing* exercise, PDF generation is driven by an independent Python data structure in `src/bible_grammar/exercise_pdf/*.py` (`SortEntry`/`VerbEntry` lists, not derived from the `.html`/`.md` source), so a content-only fix to `.html`/`.md` does not strictly require regenerating the PDF in the same PR — but the resulting drift must be tracked (a GitHub issue naming the specific exercise and what changed) rather than silently left to accumulate. See issue #625 for the ch34/ch35 backlog this created.
+
 Enforced by: `validate_exercises.py` → `check_three_formats`
 
 ---
@@ -113,6 +115,8 @@ For paradigm fill-in drills (`<select>`-based): present four options, all from t
 ## Answer Row Layout
 
 Every `.answer-row` `<td>` must align **cell-for-cell** with the corresponding columns in the table header. Do not collapse multiple cells into `td[0]` or use `colspan` on answer rows.
+
+**An answer row must never be left empty.** `<tr class="answer-row"><td></td></tr>` is a hard content failure, not a formatting nit — clicking `▶ Answer` or `Show All Answers` reveals nothing, and the exercise is unusable. This reached production on `ch34-function-sort.html` (and, independently, on `ch24-function-sort.html` and `ch26-function-sort.html`) before it was caught. `scripts/validate_exercises.py`'s `answer-row-empty` check treats this as a **blocking error**, not a warning, unlike the general alignment check above — an exercise scaffolded with placeholder answer rows must have its answers filled in before the PR that adds it is merged, not left for a later pass.
 
 ```html
 <!-- Header row -->

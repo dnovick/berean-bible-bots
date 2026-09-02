@@ -13,7 +13,7 @@ For each bolded verb, indicate:
 2. **Conjugation** (Perfect, Imperfect, Wayyiqtol, Weqatal, Imperative, Inf. Const., Inf. Abs., Participle)
 3. **PGN** (Person–Gender–Number, e.g., 3ms, 2mp, 1cs)
 4. **Root** (3-letter root, unvoweled)
-5. **Stem / Function** (if Hithpael: Reflexive / Iterative / Reciprocal / Estimative / Denominative; if not: name the stem)
+5. **Stem / Function** (if Hithpael: Reflexive / Iterative / Reciprocal / Simple Action; if not: name the stem)
 
 *Distractors include Pual and Hiphil forms — all stems you have already studied. Pual (passive, u-class under R1) is easily confused with Hithpael (reflexive, i-class prefix + dagesh in R2).*
 
@@ -153,7 +153,7 @@ For each bolded verb, indicate:
 
 ## Reflection Questions
 
-1. In Passage A, verbs 1–4 all come from the root פלל. Walk through each conjugation form and identify the diagnostic Hithpael marker in each (prefix for participle, imperfect, and perfect/imperative). Why is פלל considered a denominative Hithpael?
+1. In Passage A, verbs 1–4 all come from the root פלל. Walk through each conjugation form and identify the diagnostic Hithpael marker in each (prefix for participle, imperfect, and perfect/imperative). BBH §34.2.4 classifies פלל as Simple Action, not Reflexive — what does it mean for a Hithpael verb to lose its reflexive coloring and become the standard lexical form for a meaning?
 
 2. Verb 8 (קֻדַּשׁ) has Qibbuts under R1 and dagesh in R2 — it looks almost like a Piel. What single vowel under the prefix preformative most quickly distinguishes a Pual perfect from a Piel perfect? From a Hithpael perfect?
 
@@ -165,20 +165,20 @@ For each bolded verb, indicate:
 
 | # | Verb | Hithpael? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 1 | מִתְפַּלֵּל | Yes | Participle | ms | פלל | Hithpael — Denominative (from תְּפִלָּה / prayer) |
-| 2 | יִתְפַּלְּלוּ | Yes | Imperfect | 3mp | פלל | Hithpael — Denominative; יִתְ- prefix + dagesh in R2 |
-| 3 | יִתְפַּלֵּל | Yes | Imperfect | 3ms | פלל | Hithpael — Denominative; יִתְ- prefix + dagesh in R2 |
-| 4 | הִתְפַּלֵּל | Yes | Imperative | 2ms | פלל | Hithpael — Denominative; הִתְ- prefix imperative |
+| 1 | מִתְפַּלֵּל | Yes | Participle | ms | פלל | Hithpael — Simple Action (BBH §34.2.4 worked example) |
+| 2 | יִתְפַּלְּלוּ | Yes | Imperfect | 3mp | פלל | Hithpael — Simple Action; יִתְ- prefix + dagesh in R2 |
+| 3 | יִתְפַּלֵּל | Yes | Imperfect | 3ms | פלל | Hithpael — Simple Action; יִתְ- prefix + dagesh in R2 |
+| 4 | הִתְפַּלֵּל | Yes | Imperative | 2ms | פלל | Hithpael — Simple Action; הִתְ- prefix imperative |
 | 5 | וְטִהֲרוֹ | No | Weqatal | 3ms | טהר | NOT Hithpael — Piel: Factitive "he shall purify it"; i-class under R1 + dagesh in R2 but NO הִתְ prefix |
 | 6 | הִתְקַדְּשׁוּ | Yes | Imperative | 2mp | קדש | Hithpael — Reflexive "consecrate yourselves!"; הִתְ- prefix + dagesh in R2 (קּ) |
 | 7 | יִתְקַדָּשׁוּ | Yes | Imperfect | 3mp | קדש | Hithpael — Reflexive; יִתְ- prefix + Qamets under R2 (pause/long form) |
 | 8 | קֻדַּשׁ | No | Perfect | 3ms | קדש | NOT Hithpael — Pual: Passive "was consecrated"; Qibbuts under R1 (u-class), no הִתְ prefix |
-| 9 | וְהִתְבָּרֲכוּ | Yes | Weqatal | 3cp | ברך | Hithpael — Reflexive/Estimative "shall bless themselves / shall be blessed"; הִתְ- + R2=ר rejects dagesh |
+| 9 | וְהִתְבָּרֲכוּ | Yes | Weqatal | 3cp | ברך | Hithpael — Reflexive "shall bless themselves" (or "shall be blessed" — a passive-like reading also occurs); הִתְ- + R2=ר rejects dagesh |
 | 10 | וְנִתְחַזְּקָה | Yes | Cohortative | 1cp | חזק | Hithpael — Reflexive "let us strengthen ourselves"; נִתְ- (cohortative variant of נִ from נִ + יִתְ) + dagesh in R2 (זּ) |
 | 11 | הִצְדִּיק | No | Perfect | 3ms | צדק | NOT Hithpael — Hiphil: Declarative "declared righteous"; הִ- prefix (no תְ) + Hireq-Yod under R2 |
 
 > **Notes on distractors:**
-> - **#5 וְטִהֲרוֹ** is a Piel Weqatal of טהר. Key: patach under R1 + dagesh forte in R2 + no הִתְ prefix = Piel, not Hithpael.
+> - **#5 וְטִהֲרוֹ** is a Piel Weqatal of טהר. Key: Pathach under R1 + dagesh forte in R2 + no הִתְ prefix = Piel, not Hithpael.
 > - **#8 קֻדַּשׁ** is Pual perfect 3ms of קדש. Key: Qibbuts (u-class vowel) under the first root letter = Pual passive, not Hithpael reflexive.
 > - **#11 הִצְדִּיק** is Hiphil perfect 3ms of צדק. Key: הִ- (no תְ) + Hireq-Yod under R2 = Hiphil causative/declarative pattern.
 > - **#10 וְנִתְחַזְּקָה** — the cohortative form of the Hithpael 1cp shows נִתְ- rather than הִתְ-; this is the normal cohortative pattern (compare Niphal cohortative נִנָּצְלָה).

@@ -6,6 +6,9 @@ Checks:
   - lesson.md is present in every chapter directory
   - Every slug in flashcards: resolves to all three deck files
     (ch<N>-<slug>-deck.md, ch<N>-<slug>-deck.txt, ch<N>-<slug>-deck-fd.txt)
+  - Flashcard directories with real deck content not listed in flashcards:
+    are flagged as undeclared (build_lessons.py silently skips them —
+    this is how the ch34/ch35 morphology decks went unbuilt)
   - Every name in exercises: has a corresponding directory
   - Every exercise directory has exercise.yml with name and description
   - Every exercise directory has all three formats (.md, .html, .pdf)
@@ -125,6 +128,23 @@ def _check_chapter(
                 if not (slug_dir / filename).exists():
                     _err(errors, ch_yml_path,
                          f"flashcard slug {slug!r}: missing {filename}")
+
+    # Undeclared flashcard directories: a deck.yml + ch<N>-<slug>-deck.md
+    # sitting in flashcards/<slug>/ but never listed in flashcards: is silently
+    # skipped by build_lessons.py (declared-slugs mode ignores auto-discovery)
+    # — this is exactly how the ch34/ch35 morphology decks went unbuilt.
+    flashcards_dir = ch_dir / "flashcards"
+    if flashcards_dir.is_dir():
+        declared_slugs: set[str] = set(flashcard_slugs)
+        for slug_dir in sorted(d for d in flashcards_dir.iterdir() if d.is_dir()):
+            slug = slug_dir.name
+            if slug in declared_slugs:
+                continue
+            stem = f"ch{ch_num}-{slug}-deck"
+            if (slug_dir / f"{stem}.md").exists():
+                _warn(warnings, ch_yml_path,
+                      f"flashcard directory {slug!r} exists with deck content but is"
+                      " not listed in flashcards: — it will not appear on the built site")
 
     # ── Exercises ─────────────────────────────────────────────────────────────
     exercises_dir = ch_dir / "exercises"

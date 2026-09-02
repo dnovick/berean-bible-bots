@@ -77,9 +77,9 @@ Write your answers in the blank Stem and Function columns.
 
 | Stem | Prefix | R2 Feature | Characteristic Vowel | Function |
 |---|---|---|---|---|
-| Qal | none | none | Patakh/Tsere/Holem under R1 | Basic action / stative |
+| Qal | none | none | Pathach/Tsere/Holem under R1 | Basic action / stative |
 | Piel | none | Dagesh Forte | Tsere under R1 (perfect) | Factitive / intensive |
-| Hithpael | הִתְ– | Dagesh Forte | Patakh under R1 (perfect) | Reflexive / reciprocal |
+| Hithpael | הִתְ– | Dagesh Forte | Pathach under R1 (perfect) | Reflexive / reciprocal |
 
 ---
 
@@ -115,7 +115,7 @@ Write your answers in the blank Stem and Function columns.
 |---|---|---|---|---|
 | 10 | פָּלַל | **Qal** | Basic: subject judges / intervenes | "he judged / intervened" |
 | 11 | פִּלֵּל | **Piel** | Intensive: subject actively intercedes | "he judged / interceded" |
-| 12 | הִתְפַּלֵּל | **Hithpael** | Reflexive/Denominative: subject pleads its own case before God | "he prayed" *(reflexive: pleaded his case before God)* |
+| 12 | הִתְפַּלֵּל | **Hithpael** | Simple Action: BBH's own §34.2.4 worked example — no separate reflexive/reciprocal force | "he prayed" |
 
 ### Group 5 — Root: ברך
 
@@ -130,6 +130,6 @@ Write your answers in the blank Stem and Function columns.
 ## Discussion Questions
 
 1. The Piel and Hithpael of קדשׁ look very similar: קִדֵּשׁ vs. הִתְקַדֵּשׁ. What two visual markers distinguish the Hithpael from the Piel in every strong-root form?
-2. In Group 4, the Hithpael of פלל is commonly translated "to pray." How does the reflexive meaning ("to plead one's own case") illuminate the theology of prayer in the OT?
+2. In Group 4, the Hithpael of פלל is commonly translated "to pray," classified as Simple Action rather than Reflexive (compare BBH §34.2.4, which uses this exact verb as its worked example). What does it mean for a Hithpael verb to lose its reflexive coloring and become the standard lexical form for a meaning?
 3. The Hithpael of ברך (הִתְבָּרֵךְ) is sometimes translated passively: "be blessed." What does this tell us about the overlap between the Hithpael's reflexive and passive functions?
 4. Look at Groups 3 and note the metathesis form הִשְׁתַּמֵּר. Without the metathesis note, how would you have identified this as a Hithpael rather than a Hiphil or Niphal?

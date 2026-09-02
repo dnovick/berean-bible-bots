@@ -4,14 +4,24 @@
 Each check is a registered function — add new checks to _CHECKS to extend.
 
 Current checks:
-  - three-format: every exercise directory has <name>.md, <name>.html, <name>.pdf
   - ans-row-no-inline-display: ans-row elements have no inline display style,
       answer buttons are not pre-labeled as open, inputs have no 'e.g.' placeholder,
       inputs with a small answer set do not use placeholder="A or B"
+  - dropdown-required-fields: Stem/Conjugation/PGN/Function/Weak Class/"...?"
+    columns must use <select>, not free-text <input>
   - ans-row-no-colspan: ans-row <tr> elements must not contain colspan attributes
+  - answer-row-empty (BLOCKING): an answer row must reveal actual text, not an
+    empty placeholder — clicking Answer/Show All must show something
+  - answer-row-alignment: every answer row's <td> count matches its question
+    row's <td> count (cell-for-cell alignment, no bunching)
   - verse-ref-hebrew-same-node: verse references and Hebrew text must not share a
       short text node (RTL bidi reordering renders them in wrong order)
   - readme-chapter-number: README.md must mention the chapter number from the path
+  - bbh-spelling: Hebrew letter/vowel names must use exact BBH spellings (Pathach,
+      not Patah/patach/Patakh; Qamets, Tsere, etc. — see standards/language.md)
+  - hebrew-no-rtl-wrapper: any Hebrew text must have direction:rtl styling on
+      itself or an ancestor, not just verse-ref-adjacent Hebrew
+  - three-format: every exercise directory has <name>.md, <name>.html, <name>.pdf
 
 Exit 0 if clean (or warnings only without --strict), exit 1 on errors.
 
@@ -27,6 +37,8 @@ import re as _re
 import sys
 from pathlib import Path
 from typing import Callable
+
+from bs4 import BeautifulSoup
 
 _REPO = Path(__file__).resolve().parent.parent
 _LESSONS_DIR = _REPO / "data" / "lessons"
@@ -106,6 +118,65 @@ def check_ans_row_no_inline_display(
             )
 
 
+_DROPDOWN_REQUIRED_HEADERS = (
+    "stem", "conjugation", "pgn", "function", "weak class", "class",
+)
+
+
+def _header_requires_dropdown(header_text: str) -> bool:
+    text = header_text.strip().lower()
+    if not text:
+        return False
+    if text.endswith("?"):
+        return True
+    return any(keyword in text for keyword in _DROPDOWN_REQUIRED_HEADERS)
+
+
+@_register("dropdown-required-fields")
+def check_dropdown_required_fields(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """Columns headed Stem/Conjugation/PGN/Function/Weak Class/"...?" (Yes-No)
+    must use <select>, not free-text <input>, per the Input Field Types rule.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    soup = BeautifulSoup(html_file.read_text(encoding="utf-8", errors="replace"), "html.parser")
+
+    for table in soup.find_all("table"):
+        header_row = table.find("tr")
+        if header_row is None:
+            continue
+        headers = header_row.find_all(["th"])
+        if not headers:
+            continue
+        dropdown_cols = {
+            i for i, th in enumerate(headers) if _header_requires_dropdown(th.get_text())
+        }
+        if not dropdown_cols:
+            continue
+
+        data_rows = [
+            r for r in table.find_all("tr")[1:]
+            if r.find("input", class_="parse-field") or r.find("select", class_="parse-field")
+        ]
+        for row in data_rows:
+            cells = row.find_all("td")
+            for col in dropdown_cols:
+                if col >= len(cells):
+                    continue
+                if cells[col].find("input", class_="parse-field"):
+                    header_label = headers[col].get_text(strip=True)
+                    _warn(
+                        warnings, ex_dir,
+                        f"{html_file.name} — column '{header_label}' uses free-text"
+                        " <input>; fields naming Stem/Conjugation/PGN/Function/Weak"
+                        " Class or a Yes-No '?' column must use <select>"
+                    )
+
+
 _ANS_BLOCK_RE = _re.compile(
     r'<tr[^>]*class=["\'][^"\']*(?:ans-row|answer-row)[^"\']*["\'][^>]*>.*?</tr>',
     _re.IGNORECASE | _re.DOTALL
@@ -138,6 +209,69 @@ def check_ans_row_no_colspan(
                     " every <td> must align cell-for-cell with column headers"
                     " (no colspan shortcuts)"
                 )
+
+
+@_register("answer-row-empty")
+def check_answer_row_empty(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """An answer row that reveals no text content at all is a hard content
+    failure (clicking Answer / Show All shows an empty row), not a cosmetic
+    alignment issue — this is a blocking error, unlike answer-row-alignment.
+    Caught in production on ch34-function-sort.html before this check existed.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    soup = BeautifulSoup(html_file.read_text(encoding="utf-8", errors="replace"), "html.parser")
+
+    for row in soup.find_all("tr"):
+        class_attr = row.get("class")
+        classes: list[str] = [class_attr] if isinstance(class_attr, str) else list(class_attr or [])
+        if "answer-row" not in classes and "ans-row" not in classes:
+            continue
+        if not row.get_text(strip=True):
+            row_id = row.get("id", "?")
+            _err(
+                errors, ex_dir,
+                f"{html_file.name} — answer row #{row_id} reveals no text content;"
+                " clicking ▶ Answer / Show All Answers shows an empty row. Every"
+                " answer row must contain the actual answer, not an empty placeholder"
+            )
+
+
+@_register("answer-row-alignment")
+def check_answer_row_alignment(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """Every answer row's <td> count must match its question row's <td> count —
+    cell-for-cell alignment, no bunching content into fewer cells.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    soup = BeautifulSoup(html_file.read_text(encoding="utf-8", errors="replace"), "html.parser")
+
+    for row in soup.find_all("tr"):
+        class_attr = row.get("class")
+        classes: list[str] = [class_attr] if isinstance(class_attr, str) else list(class_attr or [])
+        if "answer-row" not in classes and "ans-row" not in classes:
+            continue
+        question_row = row.find_previous_sibling("tr")
+        if question_row is None:
+            continue
+        ans_tds = len(row.find_all("td"))
+        q_tds = len(question_row.find_all("td"))
+        if ans_tds != q_tds:
+            row_id = row.get("id", "?")
+            _warn(
+                warnings, ex_dir,
+                f"{html_file.name} — answer row #{row_id} has {ans_tds} <td> cells"
+                f" but its question row has {q_tds}; every answer-row <td> must"
+                " align cell-for-cell with the table columns (no bunching, no colspan)"
+            )
 
 
 _TEXT_NODE_RE = _re.compile(r'>([^<]+)<')
@@ -195,6 +329,131 @@ def check_readme_chapter_number(
             warnings, ex_dir,
             f"README.md does not mention ch{n} — chapter number may be wrong"
         )
+
+
+_BBH_WRONG_TERMS: dict[str, str] = {
+    # vowel names
+    r"\bpatach\b": "Pathach",
+    r"\bPatach\b": "Pathach",
+    r"\bpatakh\b": "Pathach",
+    r"\bPatakh\b": "Pathach",
+    r"\bpatah\b": "Pathach",
+    r"\bqamets\b": "Qamets",
+    r"\btsere\b": "Tsere",
+    r"\bseghol\b": "Seghol",
+    r"\bholem\b": "Holem",
+    r"\bhireq\b": "Hireq",
+    r"\bqibbuts\b": "Qibbuts",
+    r"\bshureq\b": "Shureq",
+    r"\bhireq-yod\b": "Hireq-Yod",
+    r"\bhateph-pathach\b": "Hateph Pathach",
+    r"\bhateph-patach\b": "Hateph Pathach",
+    r"\bhatef\b": "Hateph",
+    r"\bsheva\b": "Shewa",
+    r"\bshewa\b": "Shewa",
+    r"\bholem[\s-]vav\b": "Holem Waw",
+    # consonant names
+    r"\bAleph\b": "Alef",
+    r"\bBeth\b": "Bet",
+    r"\bChet\b": "Ḥet",
+    r"\bTeth\b": "Tet",
+    r"\bKaph\b": "Kaf",
+    r"\bSamekh\b": "Samek",
+    r"\bQoph\b": "Qof",
+    r"\bTav\b": "Taw",
+}
+_BBH_WRONG_TERM_RES = [(_re.compile(p), right) for p, right in _BBH_WRONG_TERMS.items()]
+
+
+@_register("bbh-spelling")
+def check_bbh_spelling(ex_dir: Path, errors: list[str], warnings: list[str]) -> None:
+    """Flag non-BBH spellings of Hebrew letter/vowel names (see
+    mkdocs_src/standards/language.md's "Key spelling changes" tables). Checks
+    <name>.html and <name>.md. Case-sensitive patterns catch the common wrong
+    capitalization too (e.g. lowercase "patach" is as wrong as "Patah").
+    """
+    name = ex_dir.name
+    for suffix in (".html", ".md"):
+        f = ex_dir / f"{name}{suffix}"
+        if not f.exists():
+            continue
+        text = f.read_text(encoding="utf-8", errors="replace")
+        seen: set[str] = set()
+        for pattern, right in _BBH_WRONG_TERM_RES:
+            for m in pattern.finditer(text):
+                wrong = m.group(0)
+                key = f"{wrong}->{right}"
+                if key in seen:
+                    continue
+                seen.add(key)
+                _warn(
+                    warnings, ex_dir,
+                    f"{f.name} — {wrong!r} is not a BBH spelling; use {right!r}"
+                )
+
+
+_HEBREW_CHAR_RE = _re.compile(r"[֐-׿]")
+_RTL_STYLE_RE = _re.compile(r"direction\s*:\s*rtl", _re.IGNORECASE)
+_CSS_RULE_RE = _re.compile(r"([^{}]+)\{([^{}]*)\}")
+_CSS_CLASS_RE = _re.compile(r"\.([\w-]+)")
+
+
+@_register("hebrew-no-rtl-wrapper")
+def check_hebrew_no_rtl_wrapper(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """Any element containing Hebrew characters must have RTL styling — either an
+    inline style="direction:rtl..." or a class defined with direction:rtl in a
+    <style> block — on itself or an ancestor. Bare Hebrew with no RTL styling can
+    render with garbled glyph/vowel-point ordering. Narrower than
+    verse-ref-hebrew-same-node, which only catches a verse reference sharing a
+    text node with Hebrew; this catches any unwrapped Hebrew at all.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    soup = BeautifulSoup(html_file.read_text(encoding="utf-8", errors="replace"), "html.parser")
+
+    rtl_classes: set[str] = set()
+    for style_tag in soup.find_all("style"):
+        for selector, body in _CSS_RULE_RE.findall(style_tag.get_text()):
+            if _RTL_STYLE_RE.search(body):
+                rtl_classes.update(_CSS_CLASS_RE.findall(selector))
+
+    def has_rtl_ancestor(el: object) -> bool:
+        node = el
+        while node is not None and getattr(node, "name", None) is not None:
+            style = node.get("style", "") or ""  # type: ignore[attr-defined]
+            if _RTL_STYLE_RE.search(style):
+                return True
+            classes = node.get("class", []) or []  # type: ignore[attr-defined]
+            if isinstance(classes, str):
+                classes = [classes]
+            if rtl_classes.intersection(classes):
+                return True
+            node = node.parent  # type: ignore[attr-defined]
+        return False
+
+    _SKIP_ANCESTOR_TAGS = {"script", "style"}
+    flagged_parents: set[int] = set()
+    for text_node in soup.find_all(string=_HEBREW_CHAR_RE):
+        parent = text_node.parent
+        if parent is None or id(parent) in flagged_parents:
+            continue
+        if any(a.name in _SKIP_ANCESTOR_TAGS for a in parent.parents if a.name):
+            continue
+        if parent.name in _SKIP_ANCESTOR_TAGS:
+            continue
+        if not has_rtl_ancestor(parent):
+            flagged_parents.add(id(parent))
+            snippet = str(text_node).strip()[:30]
+            _warn(
+                warnings, ex_dir,
+                f"{html_file.name} — Hebrew text {snippet!r} has no RTL styling"
+                " (no direction:rtl on itself or an ancestor); wrap it in an element"
+                " with direction:rtl; unicode-bidi:embed"
+            )
 
 
 @_register("three-format")

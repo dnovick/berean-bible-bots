@@ -28,12 +28,9 @@ Every chapter directory contains:
 |---|---|---|
 | `README.md` | Yes | The full lesson text (see below) |
 | `<stem>-paradigm.md` | Where applicable | e.g. `qal-perfect-paradigm.md` |
-| `ch<N>-morphology-deck.md` | Yes | Anki morphology deck (Markdown) |
-| `ch<N>-morphology-deck.txt` | Yes | Plain-text import format |
-| `ch<N>-morphology-deck-fd.txt` | Yes | FastDrill/filtered format |
-| `ch<N>-vocab-deck.md` | When vocab is available | Anki vocab deck (Markdown) |
-| `ch<N>-vocab-deck.txt` | When vocab is available | Plain-text import format |
-| `ch<N>-vocab-deck-fd.txt` | When vocab is available | FastDrill/filtered format |
+| `chapter.yml` | Yes | Must list every flashcard slug and exercise name actually present on disk — see below |
+| `flashcards/morphology/` | Yes | Anki morphology deck — `ch<N>-morphology-deck.{md,txt,-fd.txt}` + `deck.yml` |
+| `flashcards/vocab/` | When vocab is available | Anki vocab deck — `ch<N>-vocab-deck.{md,txt,-fd.txt}` + `deck.yml` |
 | `exercises/` | Yes | One subdirectory per exercise |
 
 ---
@@ -78,6 +75,12 @@ Cover vocabulary words assigned for the chapter. Each card front shows the word;
 | Markdown (readable) | `ch<N>-morphology-deck.md` / `ch<N>-vocab-deck.md` |
 | Plain text (Anki import) | `ch<N>-morphology-deck.txt` / `ch<N>-vocab-deck.txt` |
 | FastDrill format | `ch<N>-morphology-deck-fd.txt` / `ch<N>-vocab-deck-fd.txt` |
+
+### Registering a deck
+
+Every deck lives in `flashcards/<slug>/` (e.g. `flashcards/morphology/`, `flashcards/vocab/`), and **every slug present on disk must also appear in `chapter.yml`'s `flashcards:` list.** `build_lessons.py` only builds declared slugs — a `flashcards:` list with one entry (e.g. just `vocab`) silently skips any other deck directory that exists on disk, even a fully-authored one, and it never appears on the built site. This exact bug shipped to production for ch34 and ch35: both had a complete, correct morphology deck sitting unbuilt for over a week because only `vocab` was declared.
+
+`scripts/validate_lessons.py` warns when a `flashcards/<slug>/` directory has real deck content but isn't listed in `flashcards:` — treat that warning as a real bug, not noise. After adding or renaming a deck directory, always run `python scripts/validate_lessons.py` and confirm the deck actually appears under the built `mkdocs_src/lessons/<course>/ch<N>/flashcards/` before considering the work done.
 
 ---
 
