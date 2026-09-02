@@ -30,6 +30,14 @@ agenda:
     url: "/lessons/hebrew/ch35/"
     duration: "45 min"
 
+reading:
+  - name: "Psalm 119:25-32"
+    description: "The law of the LORD — an acrostic poem. Part ד."
+    passage: "Psalm 119:25-32"
+    file: "ps119-25-32.html"
+    scope: instance
+    duration: "20 min"
+
 sections:
 
 notes: ""
