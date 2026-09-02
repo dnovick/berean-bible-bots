@@ -10,6 +10,7 @@ This document specifies the required structure and conventions for all reports, 
 - [README Indexes](#readme-indexes)
 - [Long Report Structure](#long-report-structure)
 - [Overview Page Registration](#overview-page-registration)
+- [Table Summary Rows](#table-summary-rows)
 - [Notebooks](#notebooks)
 - [Code Quality in Build Scripts](#code-quality-in-build-scripts)
 
@@ -113,6 +114,28 @@ When adding a new report, register it in **all three** of the following places (
 3. **`mkdocs_src/reports/<corpus>/<category>/index.md`** — the category index table (e.g. `both/word_studies/index.md`)
 
 Also add an entry to `mkdocs_nav.yml` under the correct nav section.
+
+---
+
+## Table Summary Rows
+
+Tables on the site are sortable by column click. Rows whose first cell is bold and whose text matches the word "total" (case-insensitive) are treated as **summary rows** and are always pinned to the bottom, regardless of the sort order.
+
+**Convention — summary row format:**
+
+```markdown
+| **OT Total** | **408** | **305,094** | **1.34** | |
+| **NT Total** | **362** | **141,746** | **0.26%** |
+| **Total**    | **47**  | **100%** |
+```
+
+Rules:
+1. The first cell bold text **must** contain the word "total" (e.g. `**Total**`, `**OT Total**`, `**NT Total**`, `**Grand Total**`).
+2. All other cells in a summary row should also be bold for visual consistency.
+3. **Do not** bold the first-column cell of regular data rows solely to trigger summary-row pinning — use the "total" convention instead.
+4. Regular data rows may use bold in the first column for emphasis (e.g. bolded term names in glossary tables). They sort normally.
+
+The CI check `bold-summary-row` (`scripts/validate_tables.py`) warns when a table row has every cell bold but the first-cell text does not match "total" — which suggests the author intended a summary row but used the wrong convention.
 
 ---
 
