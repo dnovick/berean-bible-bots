@@ -31,7 +31,9 @@ MAX_DIFF_CHARS = 500_000
 GITHUB_API = "https://api.github.com"
 DEFAULT_MODEL = "claude-opus-5"
 
-REVIEW_PROMPT = """\
+# Static across every call — cached (prompt caching) so repeated runs (retries, or
+# reviewing multiple PRs in a session) don't repay the token cost of the rules text.
+REVIEW_PROMPT_RULES = """\
 You are a code reviewer for the berean-bible-bots project — a Biblical Hebrew/Greek/Aramaic \
 grammar statistics and lesson generation tool.
 
@@ -71,7 +73,12 @@ Be specific about file paths when flagging issues.
    chapters 28 and above, verify the chapter number matches its topic:
    Ch28=Hophal Strong, Ch29=Hophal Weak, Ch30=Piel Strong, Ch31=Piel Weak,
    Ch32=Pual Strong, Ch33=Pual Weak, Ch34=Hithpael Strong, Ch35=Hithpael Weak.
+"""
 
+# Varies per PR/commit, but is byte-identical across retries of the same commit (e.g. a
+# billing-error retry, or re-running after fixing an unrelated script bug) — cached too, so
+# same-commit retries are cheap even though cross-commit runs are always a fresh cache write.
+REVIEW_PROMPT_PR = """\
 ## PR: {title}
 
 {description}
@@ -169,17 +176,37 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     truncated = diff[:MAX_DIFF_CHARS]
     if len(diff) > MAX_DIFF_CHARS:
         truncated += f"\n\n[Diff truncated — showing first {MAX_DIFF_CHARS:,} chars]"
-    prompt = REVIEW_PROMPT.format(
+    pr_block = REVIEW_PROMPT_PR.format(
         title=title,
         description=description or "(no description provided)",
         diff=truncated,
     )
+    # Two cache breakpoints: the rules block is identical on every call (any PR, any run) so
+    # it's always a cache hit after the first; the PR block is only a cache hit when this
+    # exact commit's diff is re-reviewed (retries), but still worth marking — a retry after
+    # a transient error (billing, a script bug) re-sends the same ~200K-token diff otherwise.
     message = client.messages.create(
         model=model,
         max_tokens=8192,
         thinking={"type": "disabled"},
-        messages=[{"role": "user", "content": prompt}],
+        messages=[{
+            "role": "user",
+            "content": [
+                {"type": "text", "text": REVIEW_PROMPT_RULES,
+                 "cache_control": {"type": "ephemeral"}},
+                {"type": "text", "text": pr_block,
+                 "cache_control": {"type": "ephemeral"}},
+            ],
+        }],
     )
+    usage = message.usage
+    cache_read = getattr(usage, "cache_read_input_tokens", 0) or 0
+    cache_created = getattr(usage, "cache_creation_input_tokens", 0) or 0
+    print(
+        f"  Tokens: {usage.input_tokens:,} input, {usage.output_tokens:,} output"
+        f" ({cache_read:,} cache read, {cache_created:,} cache written)"
+    )
+
     text_blocks = [b for b in message.content if b.type == "text"]
     if not text_blocks:
         block_types = [b.type for b in message.content]
