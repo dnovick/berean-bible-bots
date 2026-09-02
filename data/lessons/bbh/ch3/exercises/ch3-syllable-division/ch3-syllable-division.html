@@ -15,8 +15,8 @@
   td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
   td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
   td.heb { direction: rtl; unicode-bidi: embed; font-size: 1.8em; font-weight: bold; width: 8rem; padding: .25rem .5rem; }
-  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
-  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  input.parse-field, select.parse-field { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.parse-field:focus, select.parse-field:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
   .ans-row { display: none; background: #f0faf0; }
   .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
   .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
@@ -80,7 +80,7 @@
     <td><input class="parse-field" id="1-div" placeholder="division"></td>
     <td><input class="parse-field" id="1-typ" placeholder="types"></td>
     <td><input class="parse-field" id="1-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="1-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="1-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-1">
@@ -100,7 +100,7 @@
     <td><input class="parse-field" id="2-div" placeholder="division"></td>
     <td><input class="parse-field" id="2-typ" placeholder="types"></td>
     <td><input class="parse-field" id="2-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="2-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="2-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-2">
@@ -120,7 +120,7 @@
     <td><input class="parse-field" id="3-div" placeholder="division"></td>
     <td><input class="parse-field" id="3-typ" placeholder="types"></td>
     <td><input class="parse-field" id="3-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="3-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="3-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-3">
@@ -140,7 +140,7 @@
     <td><input class="parse-field" id="4-div" placeholder="division"></td>
     <td><input class="parse-field" id="4-typ" placeholder="types"></td>
     <td><input class="parse-field" id="4-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="4-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="4-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-4">
@@ -160,7 +160,7 @@
     <td><input class="parse-field" id="5-div" placeholder="division"></td>
     <td><input class="parse-field" id="5-typ" placeholder="types"></td>
     <td><input class="parse-field" id="5-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="5-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="5-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-5">
@@ -180,7 +180,7 @@
     <td><input class="parse-field" id="6-div" placeholder="division"></td>
     <td><input class="parse-field" id="6-typ" placeholder="types"></td>
     <td><input class="parse-field" id="6-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="6-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="6-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-6">
@@ -200,7 +200,7 @@
     <td><input class="parse-field" id="7-div" placeholder="division"></td>
     <td><input class="parse-field" id="7-typ" placeholder="types"></td>
     <td><input class="parse-field" id="7-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="7-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="7-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-7">
@@ -220,7 +220,7 @@
     <td><input class="parse-field" id="8-div" placeholder="division"></td>
     <td><input class="parse-field" id="8-typ" placeholder="types"></td>
     <td><input class="parse-field" id="8-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="8-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="8-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-8">
@@ -240,7 +240,7 @@
     <td><input class="parse-field" id="9-div" placeholder="division"></td>
     <td><input class="parse-field" id="9-typ" placeholder="types"></td>
     <td><input class="parse-field" id="9-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="9-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="9-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-9">
@@ -260,7 +260,7 @@
     <td><input class="parse-field" id="10-div" placeholder="division"></td>
     <td><input class="parse-field" id="10-typ" placeholder="types"></td>
     <td><input class="parse-field" id="10-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="10-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="10-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-10">
@@ -280,7 +280,7 @@
     <td><input class="parse-field" id="11-div" placeholder="division"></td>
     <td><input class="parse-field" id="11-typ" placeholder="types"></td>
     <td><input class="parse-field" id="11-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="11-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="11-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-11">
@@ -300,7 +300,7 @@
     <td><input class="parse-field" id="12-div" placeholder="division"></td>
     <td><input class="parse-field" id="12-typ" placeholder="types"></td>
     <td><input class="parse-field" id="12-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="12-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="12-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-12">
@@ -320,7 +320,7 @@
     <td><input class="parse-field" id="13-div" placeholder="division"></td>
     <td><input class="parse-field" id="13-typ" placeholder="types"></td>
     <td><input class="parse-field" id="13-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="13-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="13-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-13">
@@ -340,7 +340,7 @@
     <td><input class="parse-field" id="14-div" placeholder="division"></td>
     <td><input class="parse-field" id="14-typ" placeholder="types"></td>
     <td><input class="parse-field" id="14-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="14-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="14-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-14">
@@ -360,7 +360,7 @@
     <td><input class="parse-field" id="15-div" placeholder="division"></td>
     <td><input class="parse-field" id="15-typ" placeholder="types"></td>
     <td><input class="parse-field" id="15-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="15-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="15-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-15">
@@ -380,7 +380,7 @@
     <td><input class="parse-field" id="16-div" placeholder="division"></td>
     <td><input class="parse-field" id="16-typ" placeholder="types"></td>
     <td><input class="parse-field" id="16-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="16-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="16-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-16">
@@ -400,7 +400,7 @@
     <td><input class="parse-field" id="17-div" placeholder="division"></td>
     <td><input class="parse-field" id="17-typ" placeholder="types"></td>
     <td><input class="parse-field" id="17-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="17-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="17-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-17">
@@ -420,7 +420,7 @@
     <td><input class="parse-field" id="18-div" placeholder="division"></td>
     <td><input class="parse-field" id="18-typ" placeholder="types"></td>
     <td><input class="parse-field" id="18-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="18-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="18-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-18">
@@ -440,7 +440,7 @@
     <td><input class="parse-field" id="19-div" placeholder="division"></td>
     <td><input class="parse-field" id="19-typ" placeholder="types"></td>
     <td><input class="parse-field" id="19-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="19-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="19-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-19">
@@ -460,7 +460,7 @@
     <td><input class="parse-field" id="20-div" placeholder="division"></td>
     <td><input class="parse-field" id="20-typ" placeholder="types"></td>
     <td><input class="parse-field" id="20-str" placeholder="stressed syl."></td>
-    <td><input class="parse-field" id="20-qh" placeholder="QH or —"></td>
+    <td><select class="parse-field" id="20-qh"><option value="">select</option><option>—</option><option>QH</option></select></td>
     <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
   </tr>
   <tr class="ans-row" id="ans-20">
@@ -515,7 +515,7 @@
     });
   }
   function clearAll() {
-    document.querySelectorAll('input.f').forEach(e => e.value = '');
+    document.querySelectorAll('input.parse-field, select.parse-field').forEach(e => { if (e.tagName === 'SELECT') e.selectedIndex = 0; else e.value = ''; });
   }
 </script>
 </body>
