@@ -350,6 +350,7 @@ _BBH_WRONG_TERMS: dict[str, str] = {
     r"\bhateph-patach\b": "Hateph Pathach",
     r"\bhatef\b": "Hateph",
     r"\bsheva\b": "Shewa",
+    r"\bshewa\b": "Shewa",
     r"\bholem[\s-]vav\b": "Holem Waw",
     # consonant names
     r"\bAleph\b": "Alef",

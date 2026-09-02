@@ -182,7 +182,7 @@ For each bolded verb, indicate:
 | 11 | הוּשַׁב | No | Perfect | 3ms | שוב | NOT Hithpael — Hophal: "was returned / was brought back"; הוּ- prefix (u-class vowel = Hophal mark); biconsonantal root שׁוּב |
 
 > **Notes on distractors:**
-> - **#5 נִבְרְכָה** — Qal cohortative of ברך ("let us kneel"). נִ here is the 1cp cohortative prefix נ + shewa, NOT the Hithpael הִתְ infix. No dagesh forte in R2.
+> - **#5 נִבְרְכָה** — Qal cohortative of ברך ("let us kneel"). נִ here is the 1cp cohortative prefix נ + Shewa, NOT the Hithpael הִתְ infix. No dagesh forte in R2.
 > - **#6 נִגְלוּ** — Niphal perfect 3cp of גלה. נִ- prefix = Niphal passive/reflexive. Compare: Niphal of גלה means "was revealed / revealed itself"; Hithpael הִתְגַּלָּה (not used here) would mean the same but is grammatically distinct.
 > - **#11 הוּשַׁב** — Hophal perfect 3ms of שׁוּב. הוּ- prefix (u-class = Hophal) + שַׁב. No הִתְ infix. Hophal passive-causative: "was returned/brought back."
 > - **Verb #9 metathesis detail:** Expected form before metathesis: הִתְצַדֵּק. The ת of the prefix and צ of the root swap → הִצְתַדֵּק, then ת voices to ט after the sibilant → הִצְטַדֵּק. With 1cp imperfect prefix נ: נִצְטַדָּק.
