@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Chapter 30 — Stem Identification Drill (Strong Roots)</title>
 <style>
   body { font-family: Georgia, serif; max-width: 1000px; margin: 2em auto; padding: 0 1.5em; color: #222; }
@@ -32,309 +33,275 @@
 </style>
 </head>
 <body>
-
-
 <h1>Chapter 30 — Stem Identification Drill (Strong Roots)</h1>
 <p class="subtitle">BBH Chapter 30 · Piel Strong Verbs</p>
-
 <p>For each form, identify the <strong>Stem</strong> (Qal / Niphal / Hiphil / Hophal / Piel), <strong>Conjugation</strong>, <strong>PGN</strong> (where applicable), and <strong>Root</strong>. Type your answers in the fields, then click <strong>▶ Answer</strong> to check.</p>
-
 <table class="ref-table">
-  <tr><th>Stem</th><th>Key Marker</th></tr>
-  <tr><td><strong>Qal</strong></td><td>No prefix; basic a–a perfect / i-vowel imperfect; no dagesh in R2</td></tr>
-  <tr><td><strong>Niphal</strong></td><td>נִ prefix (perfect); assimilated נ → dagesh in R1 (imperfect/wayyiqtol)</td></tr>
-  <tr><td><strong>Hiphil</strong></td><td>הִ prefix (perfect); יַ / תַ / נַ / אַ (imperfect); chirik + yod vowel chain</td></tr>
-  <tr><td><strong>Hophal</strong></td><td>הָ / הֻ prefix; no dagesh; o/u vowel pattern</td></tr>
-  <tr><td><strong>Piel</strong></td><td>Dagesh forte in R2 + ִ–ֵ (perfect) / Shewa–Pathach (imperfect)</td></tr>
+<tr><th>Stem</th><th>Key Marker</th></tr>
+<tr><td><strong>Qal</strong></td><td>No prefix; basic a–a perfect / i-vowel imperfect; no dagesh in R2</td></tr>
+<tr><td><strong>Niphal</strong></td><td><span style="direction:rtl;unicode-bidi:embed;">נִ</span> prefix (perfect); assimilated <span style="direction:rtl;unicode-bidi:embed;">נ</span> → dagesh in R1 (imperfect/wayyiqtol)</td></tr>
+<tr><td><strong>Hiphil</strong></td><td><span style="direction:rtl;unicode-bidi:embed;">הִ</span> prefix (perfect); <span style="direction:rtl;unicode-bidi:embed;">יַ</span> / <span style="direction:rtl;unicode-bidi:embed;">תַ</span> / <span style="direction:rtl;unicode-bidi:embed;">נַ</span> / <span style="direction:rtl;unicode-bidi:embed;">אַ</span> (imperfect); chirik + yod vowel chain</td></tr>
+<tr><td><strong>Hophal</strong></td><td><span style="direction:rtl;unicode-bidi:embed;">הָ</span> / <span style="direction:rtl;unicode-bidi:embed;">הֻ</span> prefix; no dagesh; o/u vowel pattern</td></tr>
+<tr><td><strong>Piel</strong></td><td>Dagesh forte in R2 + <span style="direction:rtl;unicode-bidi:embed;">ִ</span>–<span style="direction:rtl;unicode-bidi:embed;">ֵ</span> (perfect) / Shewa–Pathach (imperfect)</td></tr>
 </table>
-
 <div class="tip">
-  <strong>Quick check:</strong> See a dagesh in the <em>middle</em> consonant? → <strong>Piel</strong> (or Pual).
+<strong>Quick check:</strong> See a dagesh in the <em>middle</em> consonant? → <strong>Piel</strong> (or Pual).
   See <span class="heb">נִ</span> prefix or assimilated dagesh with Qamets-Tsere vowels? → <strong>Niphal</strong>.
   See <span class="heb">הִ</span> + chirik–yod chain? → <strong>Hiphil</strong>.
 </div>
-
 <div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button onclick="clearAll()">Clear All Inputs</button>
+<button onclick="showAll()">Show All Answers</button>
+<button onclick="hideAll()">Hide All Answers</button>
+<button onclick="clearAll()">Clear All Inputs</button>
 </div>
-
 <table>
-  <tr>
-    <th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th>
-  </tr>
-
-  <tr>
-    <td>1</td>
-    <td><span class="heb">קָטַל</span></td>
-    <td><select class="parse-field" id="s1"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c1"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p1"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r1i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r1"><td></td><td></td><td>Qal</td><td>Perfect</td><td>3ms</td><td>קטל — Basic a–a vowel pattern; no prefix, no dagesh in ט</td><td></td></tr>
-
-  <tr>
-    <td>2</td>
-    <td><span class="heb">קִטֵּל</span></td>
-    <td><select class="parse-field" id="s2"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c2"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p2"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r2i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r2"><td></td><td></td><td>Piel</td><td>Perfect</td><td>3ms</td><td>קטל — Dagesh forte in ט (R2) + chirik–Tsere vowels = Piel perfect marker</td><td></td></tr>
-
-  <tr>
-    <td>3</td>
-    <td><span class="heb">הִקְטִיל</span></td>
-    <td><select class="parse-field" id="s3"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c3"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p3"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r3i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r3"><td></td><td></td><td>Hiphil</td><td>Perfect</td><td>3ms</td><td>קטל — הִ prefix + chirik + yod (long ī vowel) = Hiphil perfect</td><td></td></tr>
-
-  <tr>
-    <td>4</td>
-    <td><span class="heb">נִקְטַל</span></td>
-    <td><select class="parse-field" id="s4"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c4"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p4"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r4i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r4"><td></td><td></td><td>Niphal</td><td>Perfect</td><td>3ms</td><td>קטל — נִ prefix visible in the 3ms perfect; the נ assimilates in imperfect/wayyiqtol forms</td><td></td></tr>
-
-  <tr>
-    <td>5</td>
-    <td><span class="heb">דִּבֶּר</span></td>
-    <td><select class="parse-field" id="s5"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c5"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p5"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r5i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r5"><td></td><td></td><td>Piel</td><td>Perfect</td><td>3ms</td><td>דבר — Dagesh in ב (R2) + chirik–segol; compare Qal #6 דָּבַר which has no dagesh</td><td></td></tr>
-
-  <tr>
-    <td>6</td>
-    <td><span class="heb">דָּבַר</span></td>
-    <td><select class="parse-field" id="s6"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c6"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p6"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r6i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r6"><td></td><td></td><td>Qal</td><td>Perfect</td><td>3ms</td><td>דבר — No dagesh in ב; Qamets–Pathach = standard Qal perfect</td><td></td></tr>
-
-  <tr>
-    <td>7</td>
-    <td><span class="heb">יְדַבֵּר</span></td>
-    <td><select class="parse-field" id="s7"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c7"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p7"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r7i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r7"><td></td><td></td><td>Piel</td><td>Imperfect</td><td>3ms</td><td>דבר — Shewa under prefix יְ + dagesh in ב + Tsere = Piel imperfect pattern</td><td></td></tr>
-
-  <tr>
-    <td>8</td>
-    <td><span class="heb">יִדְבַּר</span></td>
-    <td><select class="parse-field" id="s8"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c8"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p8"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r8i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r8"><td></td><td></td><td>Qal</td><td>Imperfect</td><td>3ms</td><td>דבר — Chirik under יִ; no dagesh in ב; Pathach under ב = Qal imperfect</td><td></td></tr>
-
-  <tr>
-    <td>9</td>
-    <td><span class="heb">יַדְבִּיר</span></td>
-    <td><select class="parse-field" id="s9"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c9"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p9"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r9i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r9"><td></td><td></td><td>Hiphil</td><td>Imperfect</td><td>3ms</td><td>דבר — Pathach under יַ (Hiphil imperfect prefix) + chirik + yod</td><td></td></tr>
-
-  <tr>
-    <td>10</td>
-    <td><span class="heb">יִדָּבֵר</span></td>
-    <td><select class="parse-field" id="s10"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c10"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p10"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r10i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r10"><td></td><td></td><td>Niphal</td><td>Imperfect</td><td>3ms</td><td>דבר — Dagesh in ד (assimilated נ) + Qamets–Tsere = Niphal imperfect pattern</td><td></td></tr>
-
-  <tr>
-    <td>11</td>
-    <td><span class="heb">וַיְדַבֵּר</span></td>
-    <td><select class="parse-field" id="s11"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c11"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p11"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r11i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r11"><td></td><td></td><td>Piel</td><td>Wayyiqtol</td><td>3ms</td><td>דבר — Waw-consecutive + Piel imperfect; note Shewa under יְ and dagesh in ב</td><td></td></tr>
-
-  <tr>
-    <td>12</td>
-    <td><span class="heb">וַיִּדְבַּר</span></td>
-    <td><select class="parse-field" id="s12"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c12"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p12"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r12i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r12"><td></td><td></td><td>Qal</td><td>Wayyiqtol</td><td>3ms</td><td>דבר — Dagesh in יּ (wayyiqtol marker) + Qal imperfect pattern (no dagesh in ב)</td><td></td></tr>
-
-  <tr>
-    <td>13</td>
-    <td><span class="heb">וַיַּדְבֵּר</span></td>
-    <td><select class="parse-field" id="s13"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c13"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p13"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r13i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r13"><td></td><td></td><td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td><td>דבר — Waw + Pathach under יַ (Hiphil prefix) + Tsere</td><td></td></tr>
-
-  <tr>
-    <td>14</td>
-    <td><span class="heb">וַיִּדָּבֵר</span></td>
-    <td><select class="parse-field" id="s14"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c14"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p14"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r14i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r14"><td></td><td></td><td>Niphal</td><td>Wayyiqtol</td><td>3ms</td><td>דבר — Waw + dagesh in ד (assimilated נ) + Qamets–Tsere</td><td></td></tr>
-
-  <tr>
-    <td>15</td>
-    <td><span class="heb">דַּבֵּר</span></td>
-    <td><select class="parse-field" id="s15"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c15"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p15"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r15i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r15"><td></td><td></td><td>Piel</td><td>Imperative</td><td>2ms</td><td>דבר — Pathach + dagesh in ב + Tsere; no prefix. <em>Note: identical to #19 (Piel Inf. Abs.); context distinguishes them.</em></td><td></td></tr>
-
-  <tr>
-    <td>16</td>
-    <td><span class="heb">דְּבַר</span></td>
-    <td><select class="parse-field" id="s16"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c16"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p16"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r16i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r16"><td></td><td></td><td>Qal</td><td>Imperative</td><td>2ms</td><td>דבר — Shewa under ד, Pathach under ב; no dagesh in ב; no prefix</td><td></td></tr>
-
-  <tr>
-    <td>17</td>
-    <td><span class="heb">הַדְבֵּר</span></td>
-    <td><select class="parse-field" id="s17"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c17"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p17"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r17i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r17"><td></td><td></td><td>Hiphil</td><td>Imperative</td><td>2ms</td><td>דבר — הַ prefix + Hiphil vowel chain (Tsere)</td><td></td></tr>
-
-  <tr>
-    <td>18</td>
-    <td><span class="heb">הִדָּבֵר</span></td>
-    <td><select class="parse-field" id="s18"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c18"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p18"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r18i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r18"><td></td><td></td><td>Niphal</td><td>Imperative</td><td>2ms</td><td>דבר — הִ + dagesh in ד (assimilated נ) + Qamets–Tsere = Niphal imperative</td><td></td></tr>
-
-  <tr>
-    <td>19</td>
-    <td><span class="heb">דַּבֵּר</span></td>
-    <td><select class="parse-field" id="s19"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c19"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p19"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r19i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r19"><td></td><td></td><td>Piel</td><td>Inf. Absolute</td><td>&#8212;</td><td>דבר — Identical to Piel Imperative 2ms (#15). Context determines function (Inf. Abs. intensifies a finite verb; Imperative issues a command).</td><td></td></tr>
-
-  <tr>
-    <td>20</td>
-    <td><span class="heb">דָּבוֹר</span></td>
-    <td><select class="parse-field" id="s20"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c20"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p20"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r20i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r20"><td></td><td></td><td>Qal</td><td>Inf. Absolute</td><td>&#8212;</td><td>דבר — Qamets + Holem-waw = standard Qal Inf. Abs. pattern</td><td></td></tr>
-
-  <tr>
-    <td>21</td>
-    <td><span class="heb">מְדַבֵּר</span></td>
-    <td><select class="parse-field" id="s21"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c21"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p21"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r21i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r21"><td></td><td></td><td>Piel</td><td>Participle</td><td>ms</td><td>דבר — מְ prefix + dagesh in ב + Tsere = Piel active participle</td><td></td></tr>
-
-  <tr>
-    <td>22</td>
-    <td><span class="heb">דֹּבֵר</span></td>
-    <td><select class="parse-field" id="s22"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c22"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p22"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r22i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r22"><td></td><td></td><td>Qal</td><td>Participle</td><td>ms</td><td>דבר — Holem + Tsere; no מ prefix; no dagesh in ב = Qal active participle</td><td></td></tr>
-
-  <tr>
-    <td>23</td>
-    <td><span class="heb">מַדְבִּיר</span></td>
-    <td><select class="parse-field" id="s23"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c23"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p23"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r23i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r23"><td></td><td></td><td>Hiphil</td><td>Participle</td><td>ms</td><td>דבר — מַ prefix + chirik + yod = Hiphil participle pattern</td><td></td></tr>
-
-  <tr>
-    <td>24</td>
-    <td><span class="heb">נִדְבָּר</span></td>
-    <td><select class="parse-field" id="s24"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
-    <td><select class="parse-field" id="c24"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
-    <td><select class="parse-field" id="p24"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>&#8212;</option></select></td>
-    <td><input class="parse-field" id="r24i" placeholder="root"></td>
-    <td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
-  </tr>
-  <tr class="answer-row" id="r24"><td></td><td></td><td>Niphal</td><td>Participle</td><td>ms</td><td>דבר — נִ prefix + Qamets = Niphal participle pattern</td><td></td></tr>
-
+<tr>
+<th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th>
+</tr>
+<tr>
+<td>1</td>
+<td><span class="heb">קָטַל</span></td>
+<td><select class="parse-field" id="s1"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c1"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p1"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r1i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r1')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r1"><td></td><td></td><td>Qal</td><td>Perfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">קטל</span> — Basic a–a vowel pattern; no prefix, no dagesh in <span style="direction:rtl;unicode-bidi:embed;">ט</span></td><td></td></tr>
+<tr>
+<td>2</td>
+<td><span class="heb">קִטֵּל</span></td>
+<td><select class="parse-field" id="s2"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c2"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p2"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r2i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r2')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r2"><td></td><td></td><td>Piel</td><td>Perfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">קטל</span> — Dagesh forte in <span style="direction:rtl;unicode-bidi:embed;">ט</span> (R2) + chirik–Tsere vowels = Piel perfect marker</td><td></td></tr>
+<tr>
+<td>3</td>
+<td><span class="heb">הִקְטִיל</span></td>
+<td><select class="parse-field" id="s3"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c3"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p3"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r3i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r3')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r3"><td></td><td></td><td>Hiphil</td><td>Perfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">קטל</span> — <span style="direction:rtl;unicode-bidi:embed;">הִ</span> prefix + chirik + yod (long ī vowel) = Hiphil perfect</td><td></td></tr>
+<tr>
+<td>4</td>
+<td><span class="heb">נִקְטַל</span></td>
+<td><select class="parse-field" id="s4"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c4"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p4"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r4i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r4')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r4"><td></td><td></td><td>Niphal</td><td>Perfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">קטל</span> — <span style="direction:rtl;unicode-bidi:embed;">נִ</span> prefix visible in the 3ms perfect; the <span style="direction:rtl;unicode-bidi:embed;">נ</span> assimilates in imperfect/wayyiqtol forms</td><td></td></tr>
+<tr>
+<td>5</td>
+<td><span class="heb">דִּבֶּר</span></td>
+<td><select class="parse-field" id="s5"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c5"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p5"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r5i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r5')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r5"><td></td><td></td><td>Piel</td><td>Perfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span> (R2) + chirik–segol; compare Qal #6 <span style="direction:rtl;unicode-bidi:embed;">דָּבַר</span> which has no dagesh</td><td></td></tr>
+<tr>
+<td>6</td>
+<td><span class="heb">דָּבַר</span></td>
+<td><select class="parse-field" id="s6"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c6"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p6"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r6i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r6')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r6"><td></td><td></td><td>Qal</td><td>Perfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — No dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span>; Qamets–Pathach = standard Qal perfect</td><td></td></tr>
+<tr>
+<td>7</td>
+<td><span class="heb">יְדַבֵּר</span></td>
+<td><select class="parse-field" id="s7"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c7"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p7"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r7i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r7')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r7"><td></td><td></td><td>Piel</td><td>Imperfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Shewa under prefix <span style="direction:rtl;unicode-bidi:embed;">יְ</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span> + Tsere = Piel imperfect pattern</td><td></td></tr>
+<tr>
+<td>8</td>
+<td><span class="heb">יִדְבַּר</span></td>
+<td><select class="parse-field" id="s8"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c8"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p8"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r8i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r8')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r8"><td></td><td></td><td>Qal</td><td>Imperfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Chirik under <span style="direction:rtl;unicode-bidi:embed;">יִ</span>; no dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span>; Pathach under <span style="direction:rtl;unicode-bidi:embed;">ב</span> = Qal imperfect</td><td></td></tr>
+<tr>
+<td>9</td>
+<td><span class="heb">יַדְבִּיר</span></td>
+<td><select class="parse-field" id="s9"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c9"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p9"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r9i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r9')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r9"><td></td><td></td><td>Hiphil</td><td>Imperfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Pathach under <span style="direction:rtl;unicode-bidi:embed;">יַ</span> (Hiphil imperfect prefix) + chirik + yod</td><td></td></tr>
+<tr>
+<td>10</td>
+<td><span class="heb">יִדָּבֵר</span></td>
+<td><select class="parse-field" id="s10"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c10"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p10"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r10i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r10')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r10"><td></td><td></td><td>Niphal</td><td>Imperfect</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Dagesh in <span style="direction:rtl;unicode-bidi:embed;">ד</span> (assimilated <span style="direction:rtl;unicode-bidi:embed;">נ</span>) + Qamets–Tsere = Niphal imperfect pattern</td><td></td></tr>
+<tr>
+<td>11</td>
+<td><span class="heb">וַיְדַבֵּר</span></td>
+<td><select class="parse-field" id="s11"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c11"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p11"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r11i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r11')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r11"><td></td><td></td><td>Piel</td><td>Wayyiqtol</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Waw-consecutive + Piel imperfect; note Shewa under <span style="direction:rtl;unicode-bidi:embed;">יְ</span> and dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span></td><td></td></tr>
+<tr>
+<td>12</td>
+<td><span class="heb">וַיִּדְבַּר</span></td>
+<td><select class="parse-field" id="s12"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c12"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p12"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r12i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r12')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r12"><td></td><td></td><td>Qal</td><td>Wayyiqtol</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Dagesh in <span style="direction:rtl;unicode-bidi:embed;">יּ</span> (wayyiqtol marker) + Qal imperfect pattern (no dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span>)</td><td></td></tr>
+<tr>
+<td>13</td>
+<td><span class="heb">וַיַּדְבֵּר</span></td>
+<td><select class="parse-field" id="s13"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c13"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p13"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r13i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r13')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r13"><td></td><td></td><td>Hiphil</td><td>Wayyiqtol</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Waw + Pathach under <span style="direction:rtl;unicode-bidi:embed;">יַ</span> (Hiphil prefix) + Tsere</td><td></td></tr>
+<tr>
+<td>14</td>
+<td><span class="heb">וַיִּדָּבֵר</span></td>
+<td><select class="parse-field" id="s14"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c14"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p14"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r14i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r14')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r14"><td></td><td></td><td>Niphal</td><td>Wayyiqtol</td><td>3ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Waw + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ד</span> (assimilated <span style="direction:rtl;unicode-bidi:embed;">נ</span>) + Qamets–Tsere</td><td></td></tr>
+<tr>
+<td>15</td>
+<td><span class="heb">דַּבֵּר</span></td>
+<td><select class="parse-field" id="s15"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c15"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p15"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r15i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r15')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r15"><td></td><td></td><td>Piel</td><td>Imperative</td><td>2ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Pathach + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span> + Tsere; no prefix. <em>Note: identical to #19 (Piel Inf. Abs.); context distinguishes them.</em></td><td></td></tr>
+<tr>
+<td>16</td>
+<td><span class="heb">דְּבַר</span></td>
+<td><select class="parse-field" id="s16"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c16"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p16"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r16i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r16')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r16"><td></td><td></td><td>Qal</td><td>Imperative</td><td>2ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Shewa under <span style="direction:rtl;unicode-bidi:embed;">ד</span>, Pathach under <span style="direction:rtl;unicode-bidi:embed;">ב</span>; no dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span>; no prefix</td><td></td></tr>
+<tr>
+<td>17</td>
+<td><span class="heb">הַדְבֵּר</span></td>
+<td><select class="parse-field" id="s17"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c17"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p17"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r17i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r17')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r17"><td></td><td></td><td>Hiphil</td><td>Imperative</td><td>2ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — <span style="direction:rtl;unicode-bidi:embed;">הַ</span> prefix + Hiphil vowel chain (Tsere)</td><td></td></tr>
+<tr>
+<td>18</td>
+<td><span class="heb">הִדָּבֵר</span></td>
+<td><select class="parse-field" id="s18"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c18"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p18"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r18i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r18')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r18"><td></td><td></td><td>Niphal</td><td>Imperative</td><td>2ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — <span style="direction:rtl;unicode-bidi:embed;">הִ</span> + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ד</span> (assimilated <span style="direction:rtl;unicode-bidi:embed;">נ</span>) + Qamets–Tsere = Niphal imperative</td><td></td></tr>
+<tr>
+<td>19</td>
+<td><span class="heb">דַּבֵּר</span></td>
+<td><select class="parse-field" id="s19"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c19"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p19"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r19i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r19')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r19"><td></td><td></td><td>Piel</td><td>Inf. Absolute</td><td>—</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Identical to Piel Imperative 2ms (#15). Context determines function (Inf. Abs. intensifies a finite verb; Imperative issues a command).</td><td></td></tr>
+<tr>
+<td>20</td>
+<td><span class="heb">דָּבוֹר</span></td>
+<td><select class="parse-field" id="s20"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c20"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p20"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r20i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r20')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r20"><td></td><td></td><td>Qal</td><td>Inf. Absolute</td><td>—</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Qamets + Holem-waw = standard Qal Inf. Abs. pattern</td><td></td></tr>
+<tr>
+<td>21</td>
+<td><span class="heb">מְדַבֵּר</span></td>
+<td><select class="parse-field" id="s21"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c21"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p21"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r21i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r21')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r21"><td></td><td></td><td>Piel</td><td>Participle</td><td>ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — <span style="direction:rtl;unicode-bidi:embed;">מְ</span> prefix + dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span> + Tsere = Piel active participle</td><td></td></tr>
+<tr>
+<td>22</td>
+<td><span class="heb">דֹּבֵר</span></td>
+<td><select class="parse-field" id="s22"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c22"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p22"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r22i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r22')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r22"><td></td><td></td><td>Qal</td><td>Participle</td><td>ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — Holem + Tsere; no <span style="direction:rtl;unicode-bidi:embed;">מ</span> prefix; no dagesh in <span style="direction:rtl;unicode-bidi:embed;">ב</span> = Qal active participle</td><td></td></tr>
+<tr>
+<td>23</td>
+<td><span class="heb">מַדְבִּיר</span></td>
+<td><select class="parse-field" id="s23"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c23"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p23"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r23i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r23')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r23"><td></td><td></td><td>Hiphil</td><td>Participle</td><td>ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — <span style="direction:rtl;unicode-bidi:embed;">מַ</span> prefix + chirik + yod = Hiphil participle pattern</td><td></td></tr>
+<tr>
+<td>24</td>
+<td><span class="heb">נִדְבָּר</span></td>
+<td><select class="parse-field" id="s24"><option value="">-- stem --</option><option>Qal</option><option>Niphal</option><option>Hiphil</option><option>Hophal</option><option>Piel</option></select></td>
+<td><select class="parse-field" id="c24"><option value="">-- conj --</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Weqatal</option><option>Imperative</option><option>Inf. Construct</option><option>Inf. Absolute</option><option>Participle</option></select></td>
+<td><select class="parse-field" id="p24"><option value="">-- PGN --</option><option>3ms</option><option>3fs</option><option>3mp</option><option>3fp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option><option>—</option></select></td>
+<td><input class="parse-field" id="r24i" placeholder="root"/></td>
+<td><button class="reveal-btn" onclick="toggle('r24')">▶ Answer</button></td>
+</tr>
+<tr class="answer-row" id="r24"><td></td><td></td><td>Niphal</td><td>Participle</td><td>ms</td><td><span style="direction:rtl;unicode-bidi:embed;">דבר</span> — <span style="direction:rtl;unicode-bidi:embed;">נִ</span> prefix + Qamets = Niphal participle pattern</td><td></td></tr>
 </table>
-
 <div class="note">
-  <strong>Note on items 15 and 19:</strong> <span class="heb">דַּבֵּר</span> is spelled identically whether it is the Piel Imperative 2ms ("Speak!") or the Piel Infinitive Absolute. For strong roots these two forms always share the same spelling. Context — whether the form commands an action or adverbially intensifies a finite verb — is the only distinguishing factor.
+<strong>Note on items 15 and 19:</strong> <span class="heb">דַּבֵּר</span> is spelled identically whether it is the Piel Imperative 2ms ("Speak!") or the Piel Infinitive Absolute. For strong roots these two forms always share the same spelling. Context — whether the form commands an action or adverbially intensifies a finite verb — is the only distinguishing factor.
 </div>
-
 <script>
 function toggle(id) {
   const row = document.getElementById(id);
@@ -359,6 +326,5 @@ function clearAll() {
   document.querySelectorAll('input.parse-field').forEach(i => i.value = '');
 }
 </script>
-
 </body>
 </html>

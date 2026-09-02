@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Ch3 Furtive Pathach and Quiescent Alef Exercise — BBH Chapter 3</title>
 <style>
   body { font-family: Georgia, serif; max-width: 980px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
@@ -35,245 +36,229 @@
 </style>
 </head>
 <body>
-
 <h1>Ch3 Furtive Pathach and Quiescent Alef Exercise — Syllabification and Pronunciation</h1>
 <p class="subtitle">BBH Chapter 3 · 10 words</p>
-
 <div class="instructions">
-  <strong>Instructions:</strong> For each Hebrew word, select whether it contains a Furtive Pathach, a Quiescent א, or neither.
+<strong>Instructions:</strong> For each Hebrew word, select whether it contains a Furtive Pathach, a Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span>, or neither.
 </div>
-
 <div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button class="clr" onclick="clearAll()">Clear All</button>
+<button onclick="showAll()">Show All Answers</button>
+<button onclick="hideAll()">Hide All Answers</button>
+<button class="clr" onclick="clearAll()">Clear All</button>
 </div>
-
 <table>
-  <thead>
-    <tr>
-      <th style="width:2.2rem">#</th>
-      <th style="width:7rem">Word</th>
-      <th style="width:9rem">Gloss</th>
-      <th>Classification</th>
-      <th style="width:5.5rem"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-  <!-- 1: בֹּרֵחַ — correct: Furtive Pathach -->
-  <tr>
-    <td class="num">1</td>
-    <td class="heb">בֹּרֵחַ</td>
-    <td>fleeing</td>
-    <td><select class="parse-field" id="sel-1">
-      <option value="">—</option>
-      <option>Furtive Pathach</option>
-      <option>Quiescent א</option>
-      <option>Neither</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-1">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">בֹּרֵחַ</td>
-    <td>fleeing</td>
-    <td>Furtive Pathach — under the final ח, pronounced before the guttural</td>
-    <td></td>
-  </tr>
-
-  <!-- 2: נֹטֵעַ — correct: Furtive Pathach -->
-  <tr>
-    <td class="num">2</td>
-    <td class="heb">נֹטֵעַ</td>
-    <td>planting</td>
-    <td><select class="parse-field" id="sel-2">
-      <option value="">—</option>
-      <option>Neither</option>
-      <option>Quiescent א</option>
-      <option>Furtive Pathach</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-2">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">נֹטֵעַ</td>
-    <td>planting</td>
-    <td>Furtive Pathach — under the final ע</td>
-    <td></td>
-  </tr>
-
-  <!-- 3: רָקִיעַ — correct: Furtive Pathach -->
-  <tr>
-    <td class="num">3</td>
-    <td class="heb">רָקִיעַ</td>
-    <td>expanse, firmament</td>
-    <td><select class="parse-field" id="sel-3">
-      <option value="">—</option>
-      <option>Quiescent א</option>
-      <option>Furtive Pathach</option>
-      <option>Neither</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-3">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">רָקִיעַ</td>
-    <td>expanse, firmament</td>
-    <td>Furtive Pathach — under the final ע</td>
-    <td></td>
-  </tr>
-
-  <!-- 4: רוּחַ — correct: Furtive Pathach -->
-  <tr>
-    <td class="num">4</td>
-    <td class="heb">רוּחַ</td>
-    <td>spirit, wind</td>
-    <td><select class="parse-field" id="sel-4">
-      <option value="">—</option>
-      <option>Furtive Pathach</option>
-      <option>Neither</option>
-      <option>Quiescent א</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-4">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">רוּחַ</td>
-    <td>spirit, wind</td>
-    <td>Furtive Pathach — under the final ח; the word is monosyllabic</td>
-    <td></td>
-  </tr>
-
-  <!-- 5: חַטָּאת — correct: Quiescent א -->
-  <tr>
-    <td class="num">5</td>
-    <td class="heb">חַטָּאת</td>
-    <td>sin</td>
-    <td><select class="parse-field" id="sel-5">
-      <option value="">—</option>
-      <option>Neither</option>
-      <option>Furtive Pathach</option>
-      <option>Quiescent א</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-5">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">חַטָּאת</td>
-    <td>sin</td>
-    <td>Quiescent א — the א has no vowel of its own and is not counted in syllabification (חַטְ׀טָאת)</td>
-    <td></td>
-  </tr>
-
-  <!-- 6: רֹאשׁ — correct: Quiescent א -->
-  <tr>
-    <td class="num">6</td>
-    <td class="heb">רֹאשׁ</td>
-    <td>head</td>
-    <td><select class="parse-field" id="sel-6">
-      <option value="">—</option>
-      <option>Furtive Pathach</option>
-      <option>Quiescent א</option>
-      <option>Neither</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-6">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">רֹאשׁ</td>
-    <td>head</td>
-    <td>Quiescent א — the א has no vowel of its own, between the Holem and the Shin</td>
-    <td></td>
-  </tr>
-
-  <!-- 7: מָצָא — correct: Neither -->
-  <tr>
-    <td class="num">7</td>
-    <td class="heb">מָצָא</td>
-    <td>he found</td>
-    <td><select class="parse-field" id="sel-7">
-      <option value="">—</option>
-      <option>Quiescent א</option>
-      <option>Neither</option>
-      <option>Furtive Pathach</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-7">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מָצָא</td>
-    <td>he found</td>
-    <td>Neither — the final א carries its own vowel (Qamets), so it is a full consonant, not quiescent</td>
-    <td></td>
-  </tr>
-
-  <!-- 8: דָּבָר — correct: Neither -->
-  <tr>
-    <td class="num">8</td>
-    <td class="heb">דָּבָר</td>
-    <td>word</td>
-    <td><select class="parse-field" id="sel-8">
-      <option value="">—</option>
-      <option>Furtive Pathach</option>
-      <option>Neither</option>
-      <option>Quiescent א</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-8">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">דָּבָר</td>
-    <td>word</td>
-    <td>Neither</td>
-    <td></td>
-  </tr>
-
-  <!-- 9: מֶ֫לֶךְ — correct: Neither -->
-  <tr>
-    <td class="num">9</td>
-    <td class="heb">מֶ֫לֶךְ</td>
-    <td>king</td>
-    <td><select class="parse-field" id="sel-9">
-      <option value="">—</option>
-      <option>Quiescent א</option>
-      <option>Furtive Pathach</option>
-      <option>Neither</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-9">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מֶ֫לֶךְ</td>
-    <td>king</td>
-    <td>Neither</td>
-    <td></td>
-  </tr>
-
-  <!-- 10: שָׁלוֹם — correct: Neither -->
-  <tr>
-    <td class="num">10</td>
-    <td class="heb">שָׁלוֹם</td>
-    <td>peace</td>
-    <td><select class="parse-field" id="sel-10">
-      <option value="">—</option>
-      <option>Neither</option>
-      <option>Furtive Pathach</option>
-      <option>Quiescent א</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-10">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">שָׁלוֹם</td>
-    <td>peace</td>
-    <td>Neither</td>
-    <td></td>
-  </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.2rem">#</th>
+<th style="width:7rem">Word</th>
+<th style="width:9rem">Gloss</th>
+<th>Classification</th>
+<th style="width:5.5rem"></th>
+</tr>
+</thead>
+<tbody>
+ 1: <span style="direction:rtl;unicode-bidi:embed;">בֹּרֵחַ</span> — correct: Furtive Pathach 
+<tr>
+<td class="num">1</td>
+<td class="heb">בֹּרֵחַ</td>
+<td>fleeing</td>
+<td><select class="parse-field" id="sel-1">
+<option value="">—</option>
+<option>Furtive Pathach</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+<option>Neither</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">בֹּרֵחַ</td>
+<td>fleeing</td>
+<td>Furtive Pathach — under the final <span style="direction:rtl;unicode-bidi:embed;">ח</span>, pronounced before the guttural</td>
+<td></td>
+</tr>
+ 2: <span style="direction:rtl;unicode-bidi:embed;">נֹטֵעַ</span> — correct: Furtive Pathach 
+<tr>
+<td class="num">2</td>
+<td class="heb">נֹטֵעַ</td>
+<td>planting</td>
+<td><select class="parse-field" id="sel-2">
+<option value="">—</option>
+<option>Neither</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+<option>Furtive Pathach</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">נֹטֵעַ</td>
+<td>planting</td>
+<td>Furtive Pathach — under the final <span style="direction:rtl;unicode-bidi:embed;">ע</span></td>
+<td></td>
+</tr>
+ 3: <span style="direction:rtl;unicode-bidi:embed;">רָקִיעַ</span> — correct: Furtive Pathach 
+<tr>
+<td class="num">3</td>
+<td class="heb">רָקִיעַ</td>
+<td>expanse, firmament</td>
+<td><select class="parse-field" id="sel-3">
+<option value="">—</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+<option>Furtive Pathach</option>
+<option>Neither</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">רָקִיעַ</td>
+<td>expanse, firmament</td>
+<td>Furtive Pathach — under the final <span style="direction:rtl;unicode-bidi:embed;">ע</span></td>
+<td></td>
+</tr>
+ 4: <span style="direction:rtl;unicode-bidi:embed;">רוּחַ</span> — correct: Furtive Pathach 
+<tr>
+<td class="num">4</td>
+<td class="heb">רוּחַ</td>
+<td>spirit, wind</td>
+<td><select class="parse-field" id="sel-4">
+<option value="">—</option>
+<option>Furtive Pathach</option>
+<option>Neither</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+</select></td>
+<td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-4">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">רוּחַ</td>
+<td>spirit, wind</td>
+<td>Furtive Pathach — under the final <span style="direction:rtl;unicode-bidi:embed;">ח</span>; the word is monosyllabic</td>
+<td></td>
+</tr>
+ 5: <span style="direction:rtl;unicode-bidi:embed;">חַטָּאת</span> — correct: Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span> 
+<tr>
+<td class="num">5</td>
+<td class="heb">חַטָּאת</td>
+<td>sin</td>
+<td><select class="parse-field" id="sel-5">
+<option value="">—</option>
+<option>Neither</option>
+<option>Furtive Pathach</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+</select></td>
+<td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-5">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">חַטָּאת</td>
+<td>sin</td>
+<td>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span> — the <span style="direction:rtl;unicode-bidi:embed;">א</span> has no vowel of its own and is not counted in syllabification (<span style="direction:rtl;unicode-bidi:embed;">חַטְ׀טָאת</span>)</td>
+<td></td>
+</tr>
+ 6: <span style="direction:rtl;unicode-bidi:embed;">רֹאשׁ</span> — correct: Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span> 
+<tr>
+<td class="num">6</td>
+<td class="heb">רֹאשׁ</td>
+<td>head</td>
+<td><select class="parse-field" id="sel-6">
+<option value="">—</option>
+<option>Furtive Pathach</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+<option>Neither</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-6">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">רֹאשׁ</td>
+<td>head</td>
+<td>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span> — the <span style="direction:rtl;unicode-bidi:embed;">א</span> has no vowel of its own, between the Holem and the Shin</td>
+<td></td>
+</tr>
+ 7: <span style="direction:rtl;unicode-bidi:embed;">מָצָא</span> — correct: Neither 
+<tr>
+<td class="num">7</td>
+<td class="heb">מָצָא</td>
+<td>he found</td>
+<td><select class="parse-field" id="sel-7">
+<option value="">—</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+<option>Neither</option>
+<option>Furtive Pathach</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-7">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">מָצָא</td>
+<td>he found</td>
+<td>Neither — the final <span style="direction:rtl;unicode-bidi:embed;">א</span> carries its own vowel (Qamets), so it is a full consonant, not quiescent</td>
+<td></td>
+</tr>
+ 8: <span style="direction:rtl;unicode-bidi:embed;">דָּבָר</span> — correct: Neither 
+<tr>
+<td class="num">8</td>
+<td class="heb">דָּבָר</td>
+<td>word</td>
+<td><select class="parse-field" id="sel-8">
+<option value="">—</option>
+<option>Furtive Pathach</option>
+<option>Neither</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+</select></td>
+<td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-8">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">דָּבָר</td>
+<td>word</td>
+<td>Neither</td>
+<td></td>
+</tr>
+ 9: <span style="direction:rtl;unicode-bidi:embed;">מֶ֫לֶךְ</span> — correct: Neither 
+<tr>
+<td class="num">9</td>
+<td class="heb">מֶ֫לֶךְ</td>
+<td>king</td>
+<td><select class="parse-field" id="sel-9">
+<option value="">—</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+<option>Furtive Pathach</option>
+<option>Neither</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-9">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">מֶ֫לֶךְ</td>
+<td>king</td>
+<td>Neither</td>
+<td></td>
+</tr>
+ 10: <span style="direction:rtl;unicode-bidi:embed;">שָׁלוֹם</span> — correct: Neither 
+<tr>
+<td class="num">10</td>
+<td class="heb">שָׁלוֹם</td>
+<td>peace</td>
+<td><select class="parse-field" id="sel-10">
+<option value="">—</option>
+<option>Neither</option>
+<option>Furtive Pathach</option>
+<option>Quiescent <span style="direction:rtl;unicode-bidi:embed;">א</span></option>
+</select></td>
+<td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-10">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">שָׁלוֹם</td>
+<td>peace</td>
+<td>Neither</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <script>
   const ROWS = 10;
   function tog(n) {
@@ -300,6 +285,5 @@
     hideAll();
   }
 </script>
-
 </body>
 </html>

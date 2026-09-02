@@ -1,8 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
 <title>Ch3 Qamets vs. Qamets Hatuf Exercise — BBH Chapter 3</title>
 <style>
   body { font-family: Georgia, serif; max-width: 980px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
@@ -36,235 +37,219 @@
 </style>
 </head>
 <body>
-
 <h1>Ch3 Qamets vs. Qamets Hatuf Exercise — Syllabification and Pronunciation</h1>
 <p class="subtitle">BBH Chapter 3 · 10 items</p>
-
 <div class="instructions">
-  <strong>Instructions:</strong> Qamets (long a) and Qamets Hatuf (short o) are written with the identical symbol (בָּ). For each item, select whether the marked vowel is Qamets or Qamets Hatuf. Remember: Qamets Hatuf occurs only in a closed, unaccented syllable — and a Metheg always confirms Qamets, even in that environment.
+<strong>Instructions:</strong> Qamets (long a) and Qamets Hatuf (short o) are written with the identical symbol (<span style="direction:rtl;unicode-bidi:embed;">בָּ</span>). For each item, select whether the marked vowel is Qamets or Qamets Hatuf. Remember: Qamets Hatuf occurs only in a closed, unaccented syllable — and a Metheg always confirms Qamets, even in that environment.
 </div>
-
 <div class="controls">
-  <button onclick="showAll()">Show All Answers</button>
-  <button onclick="hideAll()">Hide All Answers</button>
-  <button class="clr" onclick="clearAll()">Clear All</button>
+<button onclick="showAll()">Show All Answers</button>
+<button onclick="hideAll()">Hide All Answers</button>
+<button class="clr" onclick="clearAll()">Clear All</button>
 </div>
-
 <table>
-  <thead>
-    <tr>
-      <th style="width:2.2rem">#</th>
-      <th style="width:9rem">Word / Form</th>
-      <th>Target</th>
-      <th style="width:10rem">Classification</th>
-      <th style="width:5.5rem"></th>
-    </tr>
-  </thead>
-  <tbody>
-
-  <!-- 1: חָכְמָה — correct: Qamets Hatuf -->
-  <tr>
-    <td class="num">1</td>
-    <td class="heb">חָכְמָה</td>
-    <td>vowel under <span class="heb-inline">ח</span> (<em>wisdom</em>)</td>
-    <td><select class="parse-field" id="sel-1">
-      <option value="">—</option>
-      <option>Qamets (long a)</option>
-      <option>Qamets Hatuf (short o)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-1">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">חָכְמָה</td>
-    <td>vowel under <span class="heb-inline">ח</span></td>
-    <td>Qamets Hatuf — closed, unaccented syllable (חָכְ)</td>
-    <td></td>
-  </tr>
-
-  <!-- 2: קָדוֹשׁ — correct: Qamets -->
-  <tr>
-    <td class="num">2</td>
-    <td class="heb">קָדוֹשׁ</td>
-    <td>vowel under <span class="heb-inline">ק</span> (<em>holy</em>)</td>
-    <td><select class="parse-field" id="sel-2">
-      <option value="">—</option>
-      <option>Qamets Hatuf (short o)</option>
-      <option>Qamets (long a)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-2">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">קָדוֹשׁ</td>
-    <td>vowel under <span class="heb-inline">ק</span></td>
-    <td>Qamets — open, pretonic syllable</td>
-    <td></td>
-  </tr>
-
-  <!-- 3: דָּבָר — correct: Qamets -->
-  <tr>
-    <td class="num">3</td>
-    <td class="heb">דָּבָר</td>
-    <td>vowel under <span class="heb-inline">ב</span>, final syllable (<em>word</em>)</td>
-    <td><select class="parse-field" id="sel-3">
-      <option value="">—</option>
-      <option>Qamets (long a)</option>
-      <option>Qamets Hatuf (short o)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-3">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">דָּבָר</td>
-    <td>vowel under <span class="heb-inline">ב</span>, final syllable</td>
-    <td>Qamets — closed, accented syllable</td>
-    <td></td>
-  </tr>
-
-  <!-- 4: כָּל־ — correct: Qamets Hatuf -->
-  <tr>
-    <td class="num">4</td>
-    <td class="heb">כָּל־</td>
-    <td>vowel under <span class="heb-inline">כ</span> (<em>all of</em>, bound form)</td>
-    <td><select class="parse-field" id="sel-4">
-      <option value="">—</option>
-      <option>Qamets Hatuf (short o)</option>
-      <option>Qamets (long a)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-4">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">כָּל־</td>
-    <td>vowel under <span class="heb-inline">כ</span>, bound form</td>
-    <td>Qamets Hatuf — closed, unaccented (bound/proclitic to the next word)</td>
-    <td></td>
-  </tr>
-
-  <!-- 5: אָֽמְרָה — correct: Qamets -->
-  <tr>
-    <td class="num">5</td>
-    <td class="heb">אָֽמְרָה</td>
-    <td>vowel under <span class="heb-inline">א</span>, marked with Metheg (<em>she said</em>)</td>
-    <td><select class="parse-field" id="sel-5">
-      <option value="">—</option>
-      <option>Qamets Hatuf (short o)</option>
-      <option>Qamets (long a)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-5">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">אָֽמְרָה</td>
-    <td>vowel under <span class="heb-inline">א</span>, with Metheg</td>
-    <td>Qamets — the Metheg confirms Qamets even though the syllable is closed and unaccented</td>
-    <td></td>
-  </tr>
-
-  <!-- 6: מָ open pretonic — correct: Qamets -->
-  <tr>
-    <td class="num">6</td>
-    <td class="heb">מָ</td>
-    <td>open, pretonic syllable</td>
-    <td><select class="parse-field" id="sel-6">
-      <option value="">—</option>
-      <option>Qamets (long a)</option>
-      <option>Qamets Hatuf (short o)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-6">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מָ</td>
-    <td>open, pretonic syllable</td>
-    <td>Qamets — Qamets prefers open, pretonic syllables</td>
-    <td></td>
-  </tr>
-
-  <!-- 7: מָ closed unaccented — correct: Qamets Hatuf -->
-  <tr>
-    <td class="num">7</td>
-    <td class="heb">מָ</td>
-    <td>closed, unaccented syllable</td>
-    <td><select class="parse-field" id="sel-7">
-      <option value="">—</option>
-      <option>Qamets Hatuf (short o)</option>
-      <option>Qamets (long a)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-7">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מָ</td>
-    <td>closed, unaccented syllable</td>
-    <td>Qamets Hatuf — the one environment Qamets Hatuf requires</td>
-    <td></td>
-  </tr>
-
-  <!-- 8: מָ closed accented — correct: Qamets -->
-  <tr>
-    <td class="num">8</td>
-    <td class="heb">מָ</td>
-    <td>closed, accented syllable</td>
-    <td><select class="parse-field" id="sel-8">
-      <option value="">—</option>
-      <option>Qamets Hatuf (short o)</option>
-      <option>Qamets (long a)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-8">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מָ</td>
-    <td>closed, accented syllable</td>
-    <td>Qamets — Qamets prefers closed, accented syllables</td>
-    <td></td>
-  </tr>
-
-  <!-- 9: מָ open accented — correct: Qamets -->
-  <tr>
-    <td class="num">9</td>
-    <td class="heb">מָ</td>
-    <td>open, accented syllable</td>
-    <td><select class="parse-field" id="sel-9">
-      <option value="">—</option>
-      <option>Qamets (long a)</option>
-      <option>Qamets Hatuf (short o)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-9">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מָ</td>
-    <td>open, accented syllable</td>
-    <td>Qamets — Qamets Hatuf never occurs in an open syllable</td>
-    <td></td>
-  </tr>
-
-  <!-- 10: מָ closed unaccented with Metheg — correct: Qamets -->
-  <tr>
-    <td class="num">10</td>
-    <td class="heb">מָ</td>
-    <td>closed, unaccented syllable, with Metheg</td>
-    <td><select class="parse-field" id="sel-10">
-      <option value="">—</option>
-      <option>Qamets Hatuf (short o)</option>
-      <option>Qamets (long a)</option>
-    </select></td>
-    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
-  </tr>
-  <tr class="ans-row" id="ans-10">
-    <td class="ans-lbl">✓</td>
-    <td class="ans-heb">מָ</td>
-    <td>closed, unaccented syllable, with Metheg</td>
-    <td>Qamets — Metheg overrides the closed-unaccented environment</td>
-    <td></td>
-  </tr>
-
-  </tbody>
+<thead>
+<tr>
+<th style="width:2.2rem">#</th>
+<th style="width:9rem">Word / Form</th>
+<th>Target</th>
+<th style="width:10rem">Classification</th>
+<th style="width:5.5rem"></th>
+</tr>
+</thead>
+<tbody>
+ 1: <span style="direction:rtl;unicode-bidi:embed;">חָכְמָה</span> — correct: Qamets Hatuf 
+<tr>
+<td class="num">1</td>
+<td class="heb">חָכְמָה</td>
+<td>vowel under <span class="heb-inline">ח</span> (<em>wisdom</em>)</td>
+<td><select class="parse-field" id="sel-1">
+<option value="">—</option>
+<option>Qamets (long a)</option>
+<option>Qamets Hatuf (short o)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-1">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">חָכְמָה</td>
+<td>vowel under <span class="heb-inline">ח</span></td>
+<td>Qamets Hatuf — closed, unaccented syllable (<span style="direction:rtl;unicode-bidi:embed;">חָכְ</span>)</td>
+<td></td>
+</tr>
+ 2: <span style="direction:rtl;unicode-bidi:embed;">קָדוֹשׁ</span> — correct: Qamets 
+<tr>
+<td class="num">2</td>
+<td class="heb">קָדוֹשׁ</td>
+<td>vowel under <span class="heb-inline">ק</span> (<em>holy</em>)</td>
+<td><select class="parse-field" id="sel-2">
+<option value="">—</option>
+<option>Qamets Hatuf (short o)</option>
+<option>Qamets (long a)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-2">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">קָדוֹשׁ</td>
+<td>vowel under <span class="heb-inline">ק</span></td>
+<td>Qamets — open, pretonic syllable</td>
+<td></td>
+</tr>
+ 3: <span style="direction:rtl;unicode-bidi:embed;">דָּבָר</span> — correct: Qamets 
+<tr>
+<td class="num">3</td>
+<td class="heb">דָּבָר</td>
+<td>vowel under <span class="heb-inline">ב</span>, final syllable (<em>word</em>)</td>
+<td><select class="parse-field" id="sel-3">
+<option value="">—</option>
+<option>Qamets (long a)</option>
+<option>Qamets Hatuf (short o)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-3">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">דָּבָר</td>
+<td>vowel under <span class="heb-inline">ב</span>, final syllable</td>
+<td>Qamets — closed, accented syllable</td>
+<td></td>
+</tr>
+ 4: <span style="direction:rtl;unicode-bidi:embed;">כָּל־</span> — correct: Qamets Hatuf 
+<tr>
+<td class="num">4</td>
+<td class="heb">כָּל־</td>
+<td>vowel under <span class="heb-inline">כ</span> (<em>all of</em>, bound form)</td>
+<td><select class="parse-field" id="sel-4">
+<option value="">—</option>
+<option>Qamets Hatuf (short o)</option>
+<option>Qamets (long a)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-4">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">כָּל־</td>
+<td>vowel under <span class="heb-inline">כ</span>, bound form</td>
+<td>Qamets Hatuf — closed, unaccented (bound/proclitic to the next word)</td>
+<td></td>
+</tr>
+ 5: <span style="direction:rtl;unicode-bidi:embed;">אָֽמְרָה</span> — correct: Qamets 
+<tr>
+<td class="num">5</td>
+<td class="heb">אָֽמְרָה</td>
+<td>vowel under <span class="heb-inline">א</span>, marked with Metheg (<em>she said</em>)</td>
+<td><select class="parse-field" id="sel-5">
+<option value="">—</option>
+<option>Qamets Hatuf (short o)</option>
+<option>Qamets (long a)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-5">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">אָֽמְרָה</td>
+<td>vowel under <span class="heb-inline">א</span>, with Metheg</td>
+<td>Qamets — the Metheg confirms Qamets even though the syllable is closed and unaccented</td>
+<td></td>
+</tr>
+ 6: <span style="direction:rtl;unicode-bidi:embed;">מָ</span> open pretonic — correct: Qamets 
+<tr>
+<td class="num">6</td>
+<td class="heb">מָ</td>
+<td>open, pretonic syllable</td>
+<td><select class="parse-field" id="sel-6">
+<option value="">—</option>
+<option>Qamets (long a)</option>
+<option>Qamets Hatuf (short o)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-6">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">מָ</td>
+<td>open, pretonic syllable</td>
+<td>Qamets — Qamets prefers open, pretonic syllables</td>
+<td></td>
+</tr>
+ 7: <span style="direction:rtl;unicode-bidi:embed;">מָ</span> closed unaccented — correct: Qamets Hatuf 
+<tr>
+<td class="num">7</td>
+<td class="heb">מָ</td>
+<td>closed, unaccented syllable</td>
+<td><select class="parse-field" id="sel-7">
+<option value="">—</option>
+<option>Qamets Hatuf (short o)</option>
+<option>Qamets (long a)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-7">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">מָ</td>
+<td>closed, unaccented syllable</td>
+<td>Qamets Hatuf — the one environment Qamets Hatuf requires</td>
+<td></td>
+</tr>
+ 8: <span style="direction:rtl;unicode-bidi:embed;">מָ</span> closed accented — correct: Qamets 
+<tr>
+<td class="num">8</td>
+<td class="heb">מָ</td>
+<td>closed, accented syllable</td>
+<td><select class="parse-field" id="sel-8">
+<option value="">—</option>
+<option>Qamets Hatuf (short o)</option>
+<option>Qamets (long a)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-8">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">מָ</td>
+<td>closed, accented syllable</td>
+<td>Qamets — Qamets prefers closed, accented syllables</td>
+<td></td>
+</tr>
+ 9: <span style="direction:rtl;unicode-bidi:embed;">מָ</span> open accented — correct: Qamets 
+<tr>
+<td class="num">9</td>
+<td class="heb">מָ</td>
+<td>open, accented syllable</td>
+<td><select class="parse-field" id="sel-9">
+<option value="">—</option>
+<option>Qamets (long a)</option>
+<option>Qamets Hatuf (short o)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-9">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">מָ</td>
+<td>open, accented syllable</td>
+<td>Qamets — Qamets Hatuf never occurs in an open syllable</td>
+<td></td>
+</tr>
+ 10: <span style="direction:rtl;unicode-bidi:embed;">מָ</span> closed unaccented with Metheg — correct: Qamets 
+<tr>
+<td class="num">10</td>
+<td class="heb">מָ</td>
+<td>closed, unaccented syllable, with Metheg</td>
+<td><select class="parse-field" id="sel-10">
+<option value="">—</option>
+<option>Qamets Hatuf (short o)</option>
+<option>Qamets (long a)</option>
+</select></td>
+<td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+</tr>
+<tr class="ans-row" id="ans-10">
+<td class="ans-lbl">✓</td>
+<td class="ans-heb">מָ</td>
+<td>closed, unaccented syllable, with Metheg</td>
+<td>Qamets — Metheg overrides the closed-unaccented environment</td>
+<td></td>
+</tr>
+</tbody>
 </table>
-
 <script>
   const ROWS = 10;
   function tog(n) {
@@ -291,6 +276,5 @@
     hideAll();
   }
 </script>
-
 </body>
 </html>
