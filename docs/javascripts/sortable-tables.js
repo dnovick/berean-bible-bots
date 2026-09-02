@@ -6,6 +6,11 @@
 //   - Any <table data-no-sort> in the HTML
 //   - 2-column key-value tables where the second header is "Value" or "Description"
 //
+// Summary rows (pinned to bottom, not sorted):
+//   - First cell must contain <strong> text matching /\btotal\b/i
+//     e.g. "**OT Total**", "**NT Total**", "**Total**"
+//   - Bold first-column data rows that do NOT match "total" sort normally
+//
 // Sort types (auto-detected per column):
 //   - Book columns  → KJV canonical order (Genesis … Revelation)
 //   - Numeric       → numeric ascending/descending
@@ -142,11 +147,15 @@
         });
     }
 
-    // Rows whose first cell contains bold text (e.g. "**OT Total**") are summary
-    // rows — they should be pinned to the bottom rather than sorted.
+    // Rows whose first cell contains bold text matching the "total" pattern
+    // (e.g. "**OT Total**", "**Total**") are summary rows pinned to the bottom.
+    // Regular data rows may use bold for emphasis and still sort normally.
+    var _SUMMARY_RE = /\btotal\b/i;
     function isSummaryRow(row) {
         var first = row.cells[0];
-        return !!first && first.querySelector('strong') !== null;
+        if (!first) return false;
+        var strong = first.querySelector('strong');
+        return strong !== null && _SUMMARY_RE.test(strong.textContent);
     }
 
     // A 2-column table whose second header is "Value" or "Description" is a
