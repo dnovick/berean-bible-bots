@@ -9,6 +9,8 @@
 **Part A:** Forms are grouped by weak class (5 per class, 4 groups = 20 items total). For each, identify: conjugation, PGN, root.
 **Part B:** Forms are mixed. Identify: weak class first, then conjugation, PGN, root.
 
+BBH §35 itself teaches four weak classes — Geminate, III-ה, and II-Guttural (Virtual Doubling / Compensatory Lengthening). Groups 2–4 below review other weak-root phenomena you will meet in real Hithpael forms throughout the OT — guttural R1, sibilant/dental metathesis (Ch34 §34.12), and Pe-Nun retention — not new ch35 categories.
+
 The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqtol) plus Dagesh Forte in R2. Weak roots cause predictable modifications, and one phonological rule is unique to the Hithpael: **sibilant metathesis**.
 
 **Sibilant Metathesis Rule:** When R1 is a sibilant (שׁ / שׂ / ס / צ), the ת of the Hithpael prefix swaps position with R1:
@@ -20,18 +22,19 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 
 ## Weak Class Reference
 
-| Class | Key diagnostic signal |
-|---|---|
-| **III-he** | Qamets + ה (perfect 3ms); ה dropped in wayyiqtol/jussive (apocopation); seghol + ה (imperfect/participle) |
-| **I-guttural** | Hateph vowel under R1 in perfect/participle; composite shewa replaces simple shewa throughout |
-| **Sibilant Metathesis** | הִשְׁתַּ / וַיִּשְׁתַּ prefix instead of הִתְ / וַיִּתְ — the two consonants after the prefix are R1 and ת, in reversed order |
-| **I-nun** | Nun is retained in Hithpael (unlike Hiphil where nun assimilates); prefix pattern הִתְנַ is regular |
+| Class | Ch35 class? | Key diagnostic signal |
+|---|---|---|
+| **III-he** | Yes — §35.4-5 | Qamets + ה (perfect 3ms); ה dropped in wayyiqtol/jussive (apocopation); seghol + ה (imperfect/participle) |
+| **Geminate** | Yes — §35.2-3 | Contracted stem with long vowel (often holem-vav); dagesh forte may be absent due to geminate contraction |
+| **Guttural R1** | No — review | Hateph vowel under R1 in perfect/participle; composite shewa replaces simple shewa throughout. Not the same as ch35's own II-Guttural class (guttural in R2, §35.6-9) |
+| **Sibilant/Dental Metathesis** | No — Ch34 §34.12 review | הִשְׁתַּ / וַיִּשְׁתַּ prefix instead of הִתְ / וַיִּתְ — the two consonants after the prefix are R1 and ת, in reversed order |
+| **I-Nun (retained)** | No — review | Nun is retained in Hithpael (unlike Hiphil where nun assimilates); prefix pattern הִתְנַ is regular |
 
 ---
 
 ## Part A — By Class
 
-### Group 1: III-he
+### Group 1: III-he (ch35 class)
 
 | # | Form | Reference | Conjugation | PGN | Root |
 |---|---|---|---|---|---|
@@ -41,7 +44,7 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 | 4 | הִשְׁתַּחֲוָה | Gen 22:5 | | | |
 | 5 | וַתִּתְכַּסֶּה | Gen 24:65 | | | |
 
-### Group 2: I-guttural
+### Group 2: Guttural R1 (review, not a ch35 class)
 
 | # | Form | Reference | Conjugation | PGN | Root |
 |---|---|---|---|---|---|
@@ -51,7 +54,7 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 | 9 | הִתְעַנִּי | Gen 16:9 | | | |
 | 10 | מִתְחַזֵּק | Neh 3:20 | | | |
 
-### Group 3: Sibilant Metathesis
+### Group 3: Sibilant/Dental Metathesis (Ch34 §34.12 review)
 
 | # | Form | Reference | Conjugation | PGN | Root |
 |---|---|---|---|---|---|
@@ -61,7 +64,7 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 | 14 | הִשְׁתַּמֵּר | Deu 4:9 | | | |
 | 15 | וַיִּשְׁתּוֹמֵם | Dan 4:16 | | | |
 
-### Group 4: I-nun
+### Group 4: I-Nun Retention (review, not a ch35 class)
 
 | # | Form | Reference | Conjugation | PGN | Root |
 |---|---|---|---|---|---|
