@@ -30,7 +30,16 @@ REPO = "dnovick/berean-bible-bots"
 STATUS_CONTEXT = "claude-review"
 MAX_DIFF_CHARS = 500_000
 GITHUB_API = "https://api.github.com"
-DEFAULT_MODEL = "claude-opus-5"
+
+# Haiku is cheap but has a smaller context window (200K tokens) than Opus/Sonnet, and
+# fails hard (400 error) rather than degrading if a prompt exceeds it. Reviewer is
+# deliberately a different model from whichever model authored the PR (usually Claude
+# Code running as Sonnet), so Haiku here is independent either way. Escalate to Opus
+# pre-flight (via a free token count, not a failed generate call) for oversized diffs.
+DEFAULT_MODEL = "claude-haiku-4-5-20251001"
+ESCALATION_MODEL = "claude-opus-5"
+HAIKU_CONTEXT_LIMIT = 200_000
+HAIKU_SAFETY_MARGIN = 10_000  # headroom below the hard limit: max_tokens + counting slop
 
 # Static across every call — cached (prompt caching) so repeated runs (retries, or
 # reviewing multiple PRs in a session) don't repay the token cost of the rules text.
@@ -60,7 +69,16 @@ Be specific about file paths when flagging issues.
    a transliteration column or inline transliteration for Hebrew, Aramaic, or Greek text.
 
 3. **RTL display**: In HTML exercises, a verse reference (e.g. "Gen 1:1") and Hebrew text
-   must never appear on the same line. Hebrew must use `direction:rtl; unicode-bidi:embed`.
+   must never share a text node (a run of text with no tag between them) — RTL bidi reordering
+   renders the two in the wrong order in that case. Hebrew must have `direction:rtl;
+   unicode-bidi:embed` on itself or an ancestor. This is NOT about visual/table layout: a verse
+   number and Hebrew text in separate `<td>` cells of the same `<tr>` is the established,
+   correct pattern used throughout this project (e.g. the Psalm 119 reading pages) — do not
+   flag two cells in one row as "the same line." `scripts/validate_exercises.py`'s
+   `verse-ref-hebrew-same-node` and `hebrew-no-rtl-wrapper` checks already verify both concerns
+   precisely by parsing the actual DOM — their output is included below. Trust it completely;
+   if a file has zero warnings from either check, do NOT flag an RTL/display issue for it
+   yourself, regardless of how the markup looks in the raw diff text.
 
 4. **Dropdown fields**: In HTML exercises, Stem, Conjugation, PGN (Person/Gender/Number),
    Yes/No, and Function fields must use `<select>` elements, not `<input type="text">`.
@@ -86,7 +104,12 @@ Be specific about file paths when flagging issues.
 7. **BBH name conventions**: Must use BBH spellings — Alef (not Aleph), Bet (not Beth),
    Het (not Chet), Tet (not Teth), Kaf (not Kaph), Samek (not Samekh), Qof (not Qoph),
    Taw (not Tav), Shewa (not Sheva), Pathach (not Patah), Hateph (not Hatef),
-   Holem Waw (not Holem Vav).
+   Holem Waw (not Holem Vav). `scripts/validate_exercises.py`'s `bbh-spelling` check already
+   scans `.html`/`.md` files for every wrong spelling listed above (plus case variants like
+   lowercase "patach") — its output is included below. Trust it: if a file has zero
+   `bbh-spelling` warnings, do NOT flag a naming-convention issue for it yourself. This check
+   only covers Hebrew letter/vowel names specifically (not general prose or other languages),
+   so still use your own judgment for anything outside that scope.
 
 8. **No lint directives in output strings**: Never place `# noqa` or `# type: ignore`
    inside a string literal that gets written to a file or printed as output.
@@ -95,6 +118,16 @@ Be specific about file paths when flagging issues.
    chapters 28 and above, verify the chapter number matches its topic:
    Ch28=Hophal Strong, Ch29=Hophal Weak, Ch30=Piel Strong, Ch31=Piel Weak,
    Ch32=Pual Strong, Ch33=Pual Weak, Ch34=Hithpael Strong, Ch35=Hithpael Weak.
+
+10. **Fabricated grammatical content**: Watch for invented terminology that has no basis in
+    standard Hebrew/Aramaic/Greek grammar — e.g. a named semantic sub-category, function label,
+    or morphological class that isn't attested in standard reference grammars (Pratico & Van
+    Pelt for BBH, Mounce for BBG, the standard BBA text) and reads as plausible-sounding but
+    made up. This is inherently a judgment call, not a mechanical check like rules 1-9 — you
+    have no ground-truth reference to consult, only your own knowledge of the language, so
+    false positives and false negatives are both expected. Flag anything you're genuinely
+    unsure about at `"severity": "warning"` (never `"blocking"`) so a human reviews it rather
+    than the PR being auto-rejected on a guess.
 """
 
 # Varies per PR/commit, but is byte-identical across retries of the same commit (e.g. a
@@ -111,12 +144,15 @@ REVIEW_PROMPT_PR = """\
 {diff}
 ```
 
-## Automated validator output (ground truth for rules 4 and 5)
+## Automated validator output (ground truth for rules 3, 4, 5, and 7)
 
 This is the actual output of `scripts/validate_exercises.py` run against this PR's checked-out
-tree, filtered to files touched by this diff. It parses the real DOM — trust it completely for
-answer-row-alignment, answer-row-empty, and dropdown-required-fields; do not second-guess it by
-re-counting cells yourself.
+tree, filtered to files touched by this diff. It parses the real DOM and file text — trust it
+completely for answer-row-alignment, answer-row-empty, dropdown-required-fields,
+verse-ref-hebrew-same-node, hebrew-no-rtl-wrapper, and bbh-spelling. Do not re-derive any of
+these six checks' conclusions yourself by reading the raw diff (counting cells, judging bidi
+layout, or spot-checking spellings) — a file with zero warnings from the relevant check is
+clean for that rule, full stop.
 
 ```
 {validator_output}
@@ -205,6 +241,42 @@ def _post_review(pr_number: int, body: str, event: str, token: str) -> None:
 
 
 _DIFF_PATH_RE = _re.compile(r"^diff --git a/(\S+) b/\S+", _re.MULTILINE)
+_DIFF_FILE_BLOCK_RE = _re.compile(
+    r"^diff --git a/(\S+) b/\S+.*?(?=^diff --git |\Z)", _re.MULTILINE | _re.DOTALL
+)
+
+# Paths that are tracked in git but are mechanically generated mirrors of source
+# files already elsewhere in the same diff (see .gitignore's comment above the
+# mkdocs_src/ block) — reviewing them adds no signal, only token cost.
+_GENERATED_PATH_PREFIXES = ("mkdocs_src/courses/",)
+_GENERATED_EXACT_PATHS = {"mkdocs_nav.yml"}
+
+
+def _is_generated_path(path: str) -> bool:
+    return path in _GENERATED_EXACT_PATHS or path.startswith(_GENERATED_PATH_PREFIXES)
+
+
+def _filter_generated_files(diff: str) -> tuple[str, int, int]:
+    """Drop diff blocks for generated/mirrored files (mkdocs_src/courses/,
+    mkdocs_nav.yml) — they duplicate content already reviewable from their
+    data/ source in the same diff. Returns (filtered_diff, files_dropped, chars_dropped).
+    """
+    kept: list[str] = []
+    dropped_files = 0
+    dropped_chars = 0
+    last_end = 0
+    for m in _DIFF_FILE_BLOCK_RE.finditer(diff):
+        kept.append(diff[last_end:m.start()])  # anything between blocks (rare)
+        block = m.group(0)
+        path = m.group(1)
+        if _is_generated_path(path):
+            dropped_files += 1
+            dropped_chars += len(block)
+        else:
+            kept.append(block)
+        last_end = m.end()
+    kept.append(diff[last_end:])
+    return "".join(kept), dropped_files, dropped_chars
 
 
 def _get_validator_output(diff: str) -> str:
@@ -230,6 +302,10 @@ def _get_validator_output(diff: str) -> str:
 
 def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[str, Any]:
     client = anthropic.Anthropic()
+    diff, dropped_files, dropped_chars = _filter_generated_files(diff)
+    if dropped_files:
+        print(f"  Filtered: {dropped_files} generated file(s), {dropped_chars:,} chars"
+              " (mkdocs_src/courses/, mkdocs_nav.yml — mirrors of source already in the diff)")
     truncated = diff[:MAX_DIFF_CHARS]
     if len(diff) > MAX_DIFF_CHARS:
         truncated += f"\n\n[Diff truncated — showing first {MAX_DIFF_CHARS:,} chars]"
@@ -240,23 +316,41 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
         diff=truncated,
         validator_output=validator_output,
     )
+    content: Any = [
+        {"type": "text", "text": REVIEW_PROMPT_RULES,
+         "cache_control": {"type": "ephemeral", "ttl": "1h"}},
+        {"type": "text", "text": pr_block,
+         "cache_control": {"type": "ephemeral", "ttl": "1h"}},
+    ]
+    messages: Any = [{"role": "user", "content": content}]
+
+    # Pre-flight escalation: Haiku's 200K context window is smaller than Opus/Sonnet's,
+    # and it fails hard (400 error) rather than truncating gracefully. Rather than try
+    # Haiku and pay for a guaranteed failure on a large diff, count tokens first — the
+    # count_tokens endpoint doesn't bill like a generate call — and escalate to Opus
+    # before spending anything if it won't fit.
+    if model.startswith("claude-haiku"):
+        predicted = client.messages.count_tokens(
+            model=model, messages=messages,
+        ).input_tokens
+        if predicted + HAIKU_SAFETY_MARGIN > HAIKU_CONTEXT_LIMIT:
+            print(f"  Diff too large for {model} ({predicted:,} tokens > "
+                  f"{HAIKU_CONTEXT_LIMIT - HAIKU_SAFETY_MARGIN:,} safe limit) — "
+                  f"escalating to {ESCALATION_MODEL} before making any billed call.")
+            model = ESCALATION_MODEL
+
     # Two cache breakpoints: the rules block is identical on every call (any PR, any run) so
     # it's always a cache hit after the first; the PR block is only a cache hit when this
     # exact commit's diff is re-reviewed (retries), but still worth marking — a retry after
     # a transient error (billing, a script bug) re-sends the same ~200K-token diff otherwise.
+    # 1h TTL (not the 5m default): our own retry cycles this session — waiting on CI, reading
+    # findings, fixing and re-pushing — routinely ran longer than 5 minutes, so the default
+    # ephemeral cache was expiring before the next retry and silently eating the full cost again.
     message = client.messages.create(
         model=model,
         max_tokens=8192,
         thinking={"type": "disabled"},
-        messages=[{
-            "role": "user",
-            "content": [
-                {"type": "text", "text": REVIEW_PROMPT_RULES,
-                 "cache_control": {"type": "ephemeral"}},
-                {"type": "text", "text": pr_block,
-                 "cache_control": {"type": "ephemeral"}},
-            ],
-        }],
+        messages=messages,
     )
     usage = message.usage
     cache_read = getattr(usage, "cache_read_input_tokens", 0) or 0
