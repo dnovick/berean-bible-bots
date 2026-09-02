@@ -155,7 +155,7 @@ When the ת of the Hithpael prefix or preformative precedes a verbal root beginn
 | שָׂכַר | he hired | הִשְׂתַּכֵּר | he hired himself (earned wages) |
 | סָתַר | he hid | הִסְתַּתֵּר | he hid himself |
 
-> The most important form to know: **הִשְׁתַּחֲוָה** (bow down, worship) from root שׁחה — the most frequent Hithpael form in the OT (~173 occurrences). See §10 for the full Hishtaphel treatment.
+> The most important form to know: **הִשְׁתַּחֲוָה** (bow down, worship) from root שׁחה — the most frequent Hithpael form in the OT (~173 occurrences). See §11 for the full Hishtaphel treatment.
 
 ---
 
