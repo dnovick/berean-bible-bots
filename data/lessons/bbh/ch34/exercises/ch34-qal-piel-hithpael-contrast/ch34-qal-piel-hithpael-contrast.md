@@ -77,9 +77,9 @@ Write your answers in the blank Stem and Function columns.
 
 | Stem | Prefix | R2 Feature | Characteristic Vowel | Function |
 |---|---|---|---|---|
-| Qal | none | none | Patakh/Tsere/Holem under R1 | Basic action / stative |
+| Qal | none | none | Pathach/Tsere/Holem under R1 | Basic action / stative |
 | Piel | none | Dagesh Forte | Tsere under R1 (perfect) | Factitive / intensive |
-| Hithpael | הִתְ– | Dagesh Forte | Patakh under R1 (perfect) | Reflexive / reciprocal |
+| Hithpael | הִתְ– | Dagesh Forte | Pathach under R1 (perfect) | Reflexive / reciprocal |
 
 ---
 

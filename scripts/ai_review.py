@@ -27,7 +27,7 @@ import requests
 
 REPO = "dnovick/berean-bible-bots"
 STATUS_CONTEXT = "codex-review"
-MAX_DIFF_CHARS = 80_000
+MAX_DIFF_CHARS = 500_000
 GITHUB_API = "https://api.github.com"
 DEFAULT_MODEL = "claude-opus-5"
 
@@ -177,10 +177,20 @@ def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[
     message = client.messages.create(
         model=model,
         max_tokens=8192,
+        thinking={"type": "disabled"},
         messages=[{"role": "user", "content": prompt}],
     )
     text_blocks = [b for b in message.content if b.type == "text"]
-    content = text_blocks[0].text if text_blocks else "{}"
+    if not text_blocks:
+        block_types = [b.type for b in message.content]
+        raise SystemExit(
+            f"AI review returned no text content (stop_reason={message.stop_reason!r}, "
+            f"content block types={block_types!r}, output_tokens={message.usage.output_tokens}). "
+            "This previously happened silently (defaulting to an empty {} result, which reads "
+            "as a bogus 'REJECTED, 0 findings' review) when the model spent its whole max_tokens "
+            "budget on extended thinking with none left for the actual response."
+        )
+    content = text_blocks[0].text
     # Strip markdown code fences if the model wrapped the JSON
     import re as _re
     content = _re.sub(r"^```(?:json)?\s*", "", content.strip())

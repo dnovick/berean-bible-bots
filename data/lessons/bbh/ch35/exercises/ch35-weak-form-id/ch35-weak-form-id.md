@@ -102,10 +102,10 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 | 3 | וַיִּשְׁתַּחוּ | Wayyiqtol | 3ms | שָׁחָה | Metathesis (שׁ + ת swapped → וַיִּשְׁתַּ) + III-he apocopation; two weak classes combine |
 | 4 | הִשְׁתַּחֲוָה | Perfect | 3ms | שָׁחָה | Metathesis prefix הִשְׁתַּ + III-he ending וָה (historically expanded form of the root) |
 | 5 | וַתִּתְכַּסֶּה | Wayyiqtol | 3fs | כָּסָה | Prefix וַתִּתְ (3fs wayyiqtol) + III-he seghol-he ending; ה retained in wayyiqtol 3fs |
-| 6 | מִתְהַלֵּךְ | Participle | ms | הָלַךְ | Hateph-patach under ה (I-guttural composite shewa); mît- prefix; tsere under R2 |
-| 7 | וַיִּתְהַלֵּךְ | Wayyiqtol | 3ms | הָלַךְ | Hateph-patach under ה (composite shewa); prefix וַיִּתְ; tsere under R2 |
-| 8 | וַיִּתְחַבֵּא | Wayyiqtol | 3ms | חָבָא | Hateph-patach under ח (I-guttural); prefix וַיִּתְ; tsere under R2 |
-| 9 | הִתְעַנִּי | Imperative | 2fs | עָנָה | Hateph-patach under ע (I-guttural); dagesh forte in R2 (נ) doubled; ִי suffix = 2fs imperative; III-he root also present |
+| 6 | מִתְהַלֵּךְ | Participle | ms | הָלַךְ | Hateph Pathach under ה (I-guttural composite shewa); mît- prefix; tsere under R2 |
+| 7 | וַיִּתְהַלֵּךְ | Wayyiqtol | 3ms | הָלַךְ | Hateph Pathach under ה (composite shewa); prefix וַיִּתְ; tsere under R2 |
+| 8 | וַיִּתְחַבֵּא | Wayyiqtol | 3ms | חָבָא | Hateph Pathach under ח (I-guttural); prefix וַיִּתְ; tsere under R2 |
+| 9 | הִתְעַנִּי | Imperative | 2fs | עָנָה | Hateph Pathach under ע (I-guttural); dagesh forte in R2 (נ) doubled; ִי suffix = 2fs imperative; III-he root also present |
 | 10 | מִתְחַזֵּק | Participle | ms | חָזַק | Composite shewa under ח (I-guttural); mît- prefix; tsere under R2 |
 | 11 | וַיִּשְׁתַּחוּ | Wayyiqtol | 3ms | שָׁחָה | Sibilant metathesis: שׁ is R1 and swapped with ת → וַיִּשְׁתַּ; III-he apocopation (ה dropped) |
 | 12 | הִשְׁתַּחֲוָה | Perfect | 3ms | שָׁחָה | Metathesis prefix הִשְׁתַּ; III-he root; composite shewa under ח (I-guttural secondary effect) |
@@ -125,14 +125,14 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 | # | Form | Weak class | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|---|
 | 21 | וַיִּשְׁתַּחוּ | Sibilant Metathesis + III-he | Wayyiqtol | 3ms | שָׁחָה | Same form as #11 and #3; metathesis prefix + III-he apocopation; Abraham's servant bowing |
-| 22 | וַיִּתְאַבֵּל | I-guttural | Wayyiqtol | 3ms | אָבַל | Hateph-patach under א (I-guttural); prefix וַיִּתְ; tsere under R2 |
+| 22 | וַיִּתְאַבֵּל | I-guttural | Wayyiqtol | 3ms | אָבַל | Hateph Pathach under א (I-guttural); prefix וַיִּתְ; tsere under R2 |
 | 23 | הִתְרוֹמֵם | Geminate | Perfect | 3ms | רוּם | Hollow/Geminate: holem-vav in the contracted stem; הִתְרוֹ reflects the lengthened vowel from the collapsed R2-R3 |
 | 24 | הִתְקַדְּשׁוּ | Strong | Imperative | 2mp | קָדַשׁ | No weak class; standard Hithpael imperative 2mp; הִתְ prefix + dagesh in R2 (ד) + וּ suffix |
 | 25 | וַיִּתְפַּלֵּל | Strong | Wayyiqtol | 3ms | פָּלַל | Standard Hithpael wayyiqtol; no weak consonants; dagesh forte in R2 (ל) |
-| 26 | הִתְהַלֵּל | I-guttural | Perfect | 3ms | הָלַל | Hateph-patach under ה (I-guttural); also I-guttural root הָלַל (not to be confused with הָלַךְ) |
+| 26 | הִתְהַלֵּל | I-guttural | Perfect | 3ms | הָלַל | Hateph Pathach under ה (I-guttural); also I-guttural root הָלַל (not to be confused with הָלַךְ) |
 | 27 | מִתְחַזְּקִים | I-guttural | Participle | mp | חָזַק | Composite shewa under ח; mît- prefix; dagesh in R2 (ז); ִים plural |
 | 28 | וַיִּשְׁתּוֹמֵם | Sibilant Metathesis + Geminate | Wayyiqtol | 3ms | שָׁמֵם | Metathesis prefix; Geminate root שׁ-מ-מ; holem-vav in contracted stem |
-| 29 | הִתְעַשְּׂקוּ | I-guttural | Perfect | 3cp | עָשַׂק | Hateph-patach under ע (I-guttural); dagesh forte in R2 (שׂ); 3cp suffix וּ |
+| 29 | הִתְעַשְּׂקוּ | I-guttural | Perfect | 3cp | עָשַׂק | Hateph Pathach under ע (I-guttural); dagesh forte in R2 (שׂ); 3cp suffix וּ |
 | 30 | וַיִּתְגַּלְגַּל | Geminate (Pilpel-like) | Wayyiqtol | 3ms | גָּלַל | Quadriliteral/Geminate intensified: the root is reduplicated גלגל; no standard Hithpael dagesh because the stem itself doubles |
 
 ---
