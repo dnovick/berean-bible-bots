@@ -48,17 +48,17 @@ def _warn(warnings: list[str], path: Path, msg: str) -> None:
 _ANS_ROW_INLINE_DISPLAY_RE = _re.compile(
     r'class=["\']ans-row["\'][^>]*style=["\'][^"\']*display\s*:', _re.IGNORECASE
 )
+_RBTN_PRE_OPEN_RE = _re.compile(r'class=["\']rbtn\s+on["\']', _re.IGNORECASE)
 
 
 @_register("ans-row-no-inline-display")
 def check_ans_row_no_inline_display(
     ex_dir: Path, errors: list[str], warnings: list[str]
 ) -> None:
-    """ans-row elements must not carry inline style="display:..." attributes.
+    """ans-row elements must not carry inline style="display:..." attributes,
+    and answer buttons must not be pre-labeled as open (class="rbtn on" / ▼ Hide).
 
-    Visibility is controlled exclusively by the CSS rule and the toggle
-    script. A hardcoded display value overrides the CSS and makes the answer
-    visible on page load (or permanently hidden on print).
+    Both patterns make the answer appear open on page load.
     """
     name = ex_dir.name
     html_file = ex_dir / f"{name}.html"
@@ -71,6 +71,12 @@ def check_ans_row_no_inline_display(
                 errors, ex_dir,
                 f"{html_file.name}:{lineno} — ans-row has inline display style"
                 " (remove the style attribute; CSS handles visibility)"
+            )
+        if _RBTN_PRE_OPEN_RE.search(line):
+            _err(
+                errors, ex_dir,
+                f"{html_file.name}:{lineno} — answer button pre-labeled as open"
+                " (class=\"rbtn on\"); use class=\"rbtn\" and ▶ Answer on page load"
             )
 
 
