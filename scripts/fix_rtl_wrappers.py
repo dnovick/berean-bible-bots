@@ -23,7 +23,7 @@ import re
 import sys
 from pathlib import Path
 
-from bs4 import BeautifulSoup, NavigableString
+from bs4 import BeautifulSoup, Comment, NavigableString
 
 _REPO = Path(__file__).resolve().parent.parent
 _LESSONS_DIR = _REPO / "data" / "lessons"
@@ -41,7 +41,7 @@ _HEBREW_RUN_RE = re.compile(r"([֐-׿]+)")
 _RTL_STYLE_RE = re.compile(r"direction\s*:\s*rtl", re.IGNORECASE)
 _CSS_RULE_RE = re.compile(r"([^{}]+)\{([^{}]*)\}")
 _CSS_CLASS_RE = re.compile(r"\.([\w-]+)")
-_SKIP_TAGS = {"script", "style"}
+_SKIP_TAGS = {"script", "style", "title"}
 
 RTL_STYLE = "direction:rtl;unicode-bidi:embed;"
 
@@ -82,6 +82,8 @@ def _fix_html_file(html_path: Path) -> bool:
     to_fix: list[NavigableString] = []
     for text_node in soup.find_all(string=_HEBREW_CHAR_RE):
         if not isinstance(text_node, NavigableString):
+            continue
+        if isinstance(text_node, Comment):
             continue
         parent = text_node.parent
         if parent is None:

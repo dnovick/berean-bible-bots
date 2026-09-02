@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Chapter 1 — Hebrew Final (Sofit) Letter Forms</title>
 <style>
   body { font-family: Georgia, serif; max-width: 800px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
@@ -36,196 +35,216 @@
 </style>
 </head>
 <body>
+
 <h1>Chapter 1 — Hebrew Final (Sofit) Letter Forms</h1>
 <p class="subtitle">BBH Chapter 1 · Hebrew Alphabet · 5 letters · 2 parts</p>
+
 <div class="instructions">
-<strong>Instructions:</strong> Five Hebrew letters have a special final (sofit) form used only at the end of a word. For each letter shown, select its correct final form from the dropdown.
+  <strong>Instructions:</strong> Five Hebrew letters have a special final (sofit) form used only at the end of a word. For each letter shown, select its correct final form from the dropdown.
 </div>
+
 <div class="controls">
-<button onclick="showAll()">Show All Answers</button>
-<button onclick="hideAll()">Hide All Answers</button>
-<button class="clr" onclick="clearAll()">Clear All</button>
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All</button>
 </div>
+
 <table>
-<thead>
-<tr>
-<th style="width:2.2rem">#</th>
-<th style="width:3.5rem">Letter</th>
-<th>Name</th>
-<th>Final Form</th>
-<th style="width:5.5rem"></th>
-</tr>
-</thead>
-<tbody>
- 1: <span style="direction:rtl;unicode-bidi:embed;">כ</span> → <span style="direction:rtl;unicode-bidi:embed;">ך</span> 
-<tr>
-<td class="num">1</td>
-<td class="heb">כ</td>
-<td>Kaf (soft)</td>
-<td><select class="parse-field" id="1-sf"><option value="">—</option><option>ך</option><option>ן</option><option>ף</option><option>ץ</option></select></td>
-<td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-1">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">כ</td>
-<td>Kaf (soft)</td>
-<td class="ans-heb">ך</td>
-<td></td>
-</tr>
- 2: <span style="direction:rtl;unicode-bidi:embed;">מ</span> → <span style="direction:rtl;unicode-bidi:embed;">ם</span> 
-<tr>
-<td class="num">2</td>
-<td class="heb">מ</td>
-<td>Mem</td>
-<td><select class="parse-field" id="2-sf"><option value="">—</option><option>ס</option><option>ד</option><option>ם</option><option>ב</option></select></td>
-<td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-2">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">מ</td>
-<td>Mem</td>
-<td class="ans-heb">ם</td>
-<td></td>
-</tr>
- 3: <span style="direction:rtl;unicode-bidi:embed;">נ</span> → <span style="direction:rtl;unicode-bidi:embed;">ן</span> 
-<tr>
-<td class="num">3</td>
-<td class="heb">נ</td>
-<td>Nun</td>
-<td><select class="parse-field" id="3-sf"><option value="">—</option><option>ך</option><option>ף</option><option>ץ</option><option>ן</option></select></td>
-<td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-3">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">נ</td>
-<td>Nun</td>
-<td class="ans-heb">ן</td>
-<td></td>
-</tr>
- 4: <span style="direction:rtl;unicode-bidi:embed;">פ</span> → <span style="direction:rtl;unicode-bidi:embed;">ף</span> 
-<tr>
-<td class="num">4</td>
-<td class="heb">פ</td>
-<td>Pe (soft)</td>
-<td><select class="parse-field" id="4-sf"><option value="">—</option><option>ך</option><option>ף</option><option>ן</option><option>ץ</option></select></td>
-<td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-4">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">פ</td>
-<td>Pe (soft)</td>
-<td class="ans-heb">ף</td>
-<td></td>
-</tr>
- 5: <span style="direction:rtl;unicode-bidi:embed;">צ</span> → <span style="direction:rtl;unicode-bidi:embed;">ץ</span> 
-<tr>
-<td class="num">5</td>
-<td class="heb">צ</td>
-<td>Tsade</td>
-<td><select class="parse-field" id="5-sf"><option value="">—</option><option>ץ</option><option>ף</option><option>ך</option><option>ן</option></select></td>
-<td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-5">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">צ</td>
-<td>Tsade</td>
-<td class="ans-heb">ץ</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th style="width:2.2rem">#</th>
+      <th style="width:3.5rem">Letter</th>
+      <th>Name</th>
+      <th>Final Form</th>
+      <th style="width:5.5rem"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <!-- 1: כ → ך -->
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">כ</td>
+    <td>Kaf (soft)</td>
+    <td><select class="parse-field" id="1-sf"><option value="">—</option><option>ך</option><option>ן</option><option>ף</option><option>ץ</option></select></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כ</td>
+    <td>Kaf (soft)</td>
+    <td class="ans-heb">ך</td>
+    <td></td>
+  </tr>
+
+  <!-- 2: מ → ם -->
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">מ</td>
+    <td>Mem</td>
+    <td><select class="parse-field" id="2-sf"><option value="">—</option><option>ס</option><option>ד</option><option>ם</option><option>ב</option></select></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מ</td>
+    <td>Mem</td>
+    <td class="ans-heb">ם</td>
+    <td></td>
+  </tr>
+
+  <!-- 3: נ → ן -->
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">נ</td>
+    <td>Nun</td>
+    <td><select class="parse-field" id="3-sf"><option value="">—</option><option>ך</option><option>ף</option><option>ץ</option><option>ן</option></select></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">נ</td>
+    <td>Nun</td>
+    <td class="ans-heb">ן</td>
+    <td></td>
+  </tr>
+
+  <!-- 4: פ → ף -->
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">פ</td>
+    <td>Pe (soft)</td>
+    <td><select class="parse-field" id="4-sf"><option value="">—</option><option>ך</option><option>ף</option><option>ן</option><option>ץ</option></select></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">פ</td>
+    <td>Pe (soft)</td>
+    <td class="ans-heb">ף</td>
+    <td></td>
+  </tr>
+
+  <!-- 5: צ → ץ -->
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">צ</td>
+    <td>Tsade</td>
+    <td><select class="parse-field" id="5-sf"><option value="">—</option><option>ץ</option><option>ף</option><option>ך</option><option>ן</option></select></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">צ</td>
+    <td>Tsade</td>
+    <td class="ans-heb">ץ</td>
+    <td></td>
+  </tr>
+
+  </tbody>
 </table>
+
 <h2 style="margin-top:2rem; font-size:1.1rem; border-bottom:1px solid #aaa; padding-bottom:.3rem;">Part 2 — Given the final form, identify the standard form</h2>
+
 <div class="instructions">
-<strong>Instructions:</strong> For each final (sofit) letter shown, select the correct standard (non-final) form from the dropdown.
+  <strong>Instructions:</strong> For each final (sofit) letter shown, select the correct standard (non-final) form from the dropdown.
 </div>
+
 <table>
-<thead>
-<tr>
-<th style="width:2.2rem">#</th>
-<th style="width:3.5rem">Final Form</th>
-<th>Sofit Name</th>
-<th>Standard Form</th>
-<th style="width:5.5rem"></th>
-</tr>
-</thead>
-<tbody>
- P2-1: <span style="direction:rtl;unicode-bidi:embed;">ם</span> → <span style="direction:rtl;unicode-bidi:embed;">מ</span> (correct: 4th) 
-<tr>
-<td class="num">1</td>
-<td class="heb">ם</td>
-<td>Mem Sofit</td>
-<td><select class="parse-field" id="p2-1-sf"><option value="">—</option><option>מ</option><option>ס</option><option>ב</option><option>ט</option></select></td>
-<td><button class="rbtn" onclick="tog2(1)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans2-1">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">ם</td>
-<td>Mem Sofit</td>
-<td class="ans-heb">מ</td>
-<td></td>
-</tr>
- P2-2: <span style="direction:rtl;unicode-bidi:embed;">ך</span> → <span style="direction:rtl;unicode-bidi:embed;">כ</span> (correct: 3rd) 
-<tr>
-<td class="num">2</td>
-<td class="heb">ך</td>
-<td>Kaf Sofit</td>
-<td><select class="parse-field" id="p2-2-sf"><option value="">—</option><option>נ</option><option>ב</option><option>כ</option><option>פ</option></select></td>
-<td><button class="rbtn" onclick="tog2(2)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans2-2">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">ך</td>
-<td>Kaf Sofit</td>
-<td class="ans-heb">כ</td>
-<td></td>
-</tr>
- P2-3: <span style="direction:rtl;unicode-bidi:embed;">ץ</span> → <span style="direction:rtl;unicode-bidi:embed;">צ</span> (correct: 2nd) 
-<tr>
-<td class="num">3</td>
-<td class="heb">ץ</td>
-<td>Tsade Sofit</td>
-<td><select class="parse-field" id="p2-3-sf"><option value="">—</option><option>ע</option><option>צ</option><option>ש</option><option>ט</option></select></td>
-<td><button class="rbtn" onclick="tog2(3)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans2-3">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">ץ</td>
-<td>Tsade Sofit</td>
-<td class="ans-heb">צ</td>
-<td></td>
-</tr>
- P2-4: <span style="direction:rtl;unicode-bidi:embed;">ן</span> → <span style="direction:rtl;unicode-bidi:embed;">נ</span> (correct: 3rd) 
-<tr>
-<td class="num">4</td>
-<td class="heb">ן</td>
-<td>Nun Sofit</td>
-<td><select class="parse-field" id="p2-4-sf"><option value="">—</option><option>נ</option><option>ב</option><option>כ</option><option>מ</option></select></td>
-<td><button class="rbtn" onclick="tog2(4)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans2-4">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">ן</td>
-<td>Nun Sofit</td>
-<td class="ans-heb">נ</td>
-<td></td>
-</tr>
- P2-5: <span style="direction:rtl;unicode-bidi:embed;">ף</span> → <span style="direction:rtl;unicode-bidi:embed;">פ</span> (correct: 4th) 
-<tr>
-<td class="num">5</td>
-<td class="heb">ף</td>
-<td>Pe Sofit</td>
-<td><select class="parse-field" id="p2-5-sf"><option value="">—</option><option>כ</option><option>ב</option><option>נ</option><option>פ</option></select></td>
-<td><button class="rbtn" onclick="tog2(5)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans2-5">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">ף</td>
-<td>Pe Sofit</td>
-<td class="ans-heb">פ</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th style="width:2.2rem">#</th>
+      <th style="width:3.5rem">Final Form</th>
+      <th>Sofit Name</th>
+      <th>Standard Form</th>
+      <th style="width:5.5rem"></th>
+    </tr>
+  </thead>
+  <tbody>
+
+  <!-- P2-1: ם → מ (correct: 4th) -->
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">ם</td>
+    <td>Mem Sofit</td>
+    <td><select class="parse-field" id="p2-1-sf"><option value="">—</option><option>מ</option><option>ס</option><option>ב</option><option>ט</option></select></td>
+    <td><button class="rbtn" onclick="tog2(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans2-1">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ם</td>
+    <td>Mem Sofit</td>
+    <td class="ans-heb">מ</td>
+    <td></td>
+  </tr>
+
+  <!-- P2-2: ך → כ (correct: 3rd) -->
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">ך</td>
+    <td>Kaf Sofit</td>
+    <td><select class="parse-field" id="p2-2-sf"><option value="">—</option><option>נ</option><option>ב</option><option>כ</option><option>פ</option></select></td>
+    <td><button class="rbtn" onclick="tog2(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans2-2">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ך</td>
+    <td>Kaf Sofit</td>
+    <td class="ans-heb">כ</td>
+    <td></td>
+  </tr>
+
+  <!-- P2-3: ץ → צ (correct: 2nd) -->
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">ץ</td>
+    <td>Tsade Sofit</td>
+    <td><select class="parse-field" id="p2-3-sf"><option value="">—</option><option>ע</option><option>צ</option><option>ש</option><option>ט</option></select></td>
+    <td><button class="rbtn" onclick="tog2(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans2-3">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ץ</td>
+    <td>Tsade Sofit</td>
+    <td class="ans-heb">צ</td>
+    <td></td>
+  </tr>
+
+  <!-- P2-4: ן → נ (correct: 3rd) -->
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">ן</td>
+    <td>Nun Sofit</td>
+    <td><select class="parse-field" id="p2-4-sf"><option value="">—</option><option>נ</option><option>ב</option><option>כ</option><option>מ</option></select></td>
+    <td><button class="rbtn" onclick="tog2(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans2-4">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ן</td>
+    <td>Nun Sofit</td>
+    <td class="ans-heb">נ</td>
+    <td></td>
+  </tr>
+
+  <!-- P2-5: ף → פ (correct: 4th) -->
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">ף</td>
+    <td>Pe Sofit</td>
+    <td><select class="parse-field" id="p2-5-sf"><option value="">—</option><option>כ</option><option>ב</option><option>נ</option><option>פ</option></select></td>
+    <td><button class="rbtn" onclick="tog2(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans2-5">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">ף</td>
+    <td>Pe Sofit</td>
+    <td class="ans-heb">פ</td>
+    <td></td>
+  </tr>
+
+  </tbody>
 </table>
+
 <script>
   const ROWS = 5;
   function tog(n) {
@@ -263,5 +282,6 @@
     hideAll();
   }
 </script>
+
 </body>
 </html>
