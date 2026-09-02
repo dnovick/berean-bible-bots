@@ -8,19 +8,18 @@
 
 Below are 25 Hithpael verb forms drawn from the OT. Each item gives you the Hebrew form, its conjugation, root, reference, and a contextual gloss.
 
-**For each item, classify the Hithpael as one of the five semantic functions:**
+**For each item, classify the Hithpael as one of the four semantic functions from §34.2:**
 
 | Code | Function | Definition |
 |---|---|---|
-| **R** | Reflexive | Subject acts on or for itself; the subject is also the object |
+| **IR** | Intensive-Reflexive | Subject acts on or for itself; the subject is also the object — the most common Hithpael function |
 | **RC** | Reciprocal | Subjects act on one another mutually |
-| **IT** | Iterative/Frequentative | Action is repeated, habitual, or extended through time |
-| **ES** | Estimative/Declarative | Subject presents or considers itself as being in a state |
-| **DN** | Denominative | Derived from a noun; subject performs the noun's action |
+| **IT** | Iterative | Action is repeated or habitual |
+| **SA** | Simple Action | Translated like a plain Qal simple action, with no reflexive or reciprocal force |
 
-> **Tip:** Ask: Is the subject doing the action *to itself* (Reflexive)? *To one another* (Reciprocal)? *Repeatedly/continuously* (Iterative)? *Presenting itself as X* (Estimative)? *Performing a noun's characteristic action* (Denominative)?
+> **Tip:** Ask: Is the subject doing the action *to itself* (Intensive-Reflexive)? *To one another* (Reciprocal)? *Repeatedly/habitually* (Iterative)? *None of the above — reads like a Qal* (Simple Action)?
 
-Write your answer (R / RC / IT / ES / DN) in the blank column.
+Write your answer (IR / RC / IT / SA) in the blank column.
 
 ---
 
@@ -58,10 +57,10 @@ Write your answer (R / RC / IT / ES / DN) in the blank column.
 
 ## Discussion Questions
 
-1. The Hithpael of הָלַךְ appears five times (items 1, 3, 6, 8, 13). Why is this classified as Iterative rather than Reflexive? What does the "walking about" context add that a single walk would not?
-2. Item 12 (הִתְבָּרֲכוּ, Gen 22:18): this form can be translated "bless themselves" (Reflexive) or "be blessed" (passive-like). The same tension appears in Gen 12:3. What grammatical evidence would help decide between these interpretations?
-3. Items 15 (הִתְעַשְּׂקוּ, quarreled) and 17 (וַיִּתְנַכְּלוּ, plotted): both involve conflict between parties. What makes one Reciprocal and the other more Reflexive/Collective? Does the context of Gen 26:20 vs. Gen 37:18 help?
-4. Items 24–25 (Estimative): the ES function is the rarest Hithpael class. In what way does הִתְחַזֵּק ("present yourself as strong" → "be strong") differ from a plain Qal חָזַק ("be strong")? What does the Hithpael add pragmatically?
+1. The Hithpael of הָלַךְ appears five times (items 1, 3, 6, 8, 13). Why is this classified as Iterative rather than Intensive-Reflexive? What does the "walking about" context add that a single walk would not?
+2. Item 12 (הִתְבָרֲכוּ, Gen 22:18): this form can be translated "bless themselves" (Intensive-Reflexive) or "be blessed" (passive-like). The same tension appears in Gen 12:3. What grammatical evidence would help decide between these interpretations?
+3. Items 15 (הִתְעַשְּׂקוּ, quarreled) and 17 (וַיִּתְנַכְּלוּ, plotted): both involve conflict between parties. What makes one Reciprocal and the other Intensive-Reflexive rather than Reciprocal? Does the context of Gen 26:20 (mutual quarrel between two herdsmen) vs. Gen 37:18 (the brothers acting together against Joseph, not against one another) help?
+4. Items 23 and 25 both come from חָזַק, and item 24 from הָלַל. In what way does the Hithpael's reflexive coloring ("strengthen YOURSELF," "praise/exalt ONESELF") add nuance beyond a plain Qal or Piel form of the same root? Why might Joshua 1:6 reach for the Hithpael imperative rather than a simple command?
 
 ---
 
@@ -69,39 +68,38 @@ Write your answer (R / RC / IT / ES / DN) in the blank column.
 
 | # | Root | Function | Explanation |
 |---|---|---|---|
-| 1 | הָלַךְ | **IT** | Walking back and forth — ongoing, habitual movement (not a single walk) |
-| 2 | חָבָא | **R** | Adam hid himself — the subject performed the action on himself |
-| 3 | הָלַךְ | **IT** | Enoch walked with God habitually over his lifetime |
-| 4 | עָצַב | **R** | God's inner grief directed inward — subject in reflexive/internal state |
-| 5 | גָּלָה | **R** | Noah uncovered himself — acted upon his own body (III-he root: apocopated wayyiqtol) |
-| 6 | הָלַךְ | **IT** | Command to traverse the land repeatedly |
-| 7 | עָנָה | **R** | Return and humble yourself — subject submits herself |
-| 8 | הָלַךְ | **IT** | "Walk about before me" — ongoing conduct of life |
-| 9 | שָׁחָה | **R** | Prostrated himself — acted upon his own body in obeisance |
-| 10 | שָׁחָה | **R** | Same root; Lot bowed himself to the ground |
-| 11 | פָּלַל | **DN** | From intercession concept — performing the characteristic act of the go-between/intercessor |
-| 12 | בָּרַךְ | **R** | "Bless themselves" — nations enacting blessing for/upon themselves (reflexive reading of the Hithpael formula) |
-| 13 | הָלַךְ | **IT** | "I have walked" — a pattern of conduct over time |
-| 14 | שָׁחָה | **R** | Bowed himself down in gratitude |
-| 15 | עָשַׂק | **RC** | They quarreled with one another — mutual strife between two parties (Gen 26:20) |
-| 16 | נָחַם | **R** | Comforting himself — reflexive inner state |
-| 17 | נָכַל | **RC** | They plotted together against Joseph — conspiracy involves mutuality of action |
-| 18 | אָבַל | **R** | Jacob mourned — inward grief expressed outwardly; subject in a self-directed state |
-| 19 | כָּסָה | **R** | She covered herself — veiled herself at the approach of Isaac |
-| 20 | שָׁחָה | **R** | They bowed themselves down — each prostrating his own body |
-| 21 | נָהַל | **IT** | "I will journey along slowly" — gradual, ongoing movement at a measured pace |
-| 22 | קָדַשׁ | **R** | Consecrate yourselves — prepare/purify your own persons |
-| 23 | חָזַק | **R** | His heart strengthened itself — the heart is both agent and object |
-| 24 | הָלַל | **ES** | They present themselves as glorious/praiseworthy before idols — estimative display |
-| 25 | חָזַק | **ES** | Present yourself as strong = be strong; Hithpael adds the performative/volitional nuance absent from Qal |
+| 1 | הָלַךְ | **IT** | Same verb/pattern as BBH's own Iterative example (§34.2.3); "walking about" marks extended, repeated motion |
+| 2 | חָבָא | **IR** | Same root as BBH's own Intensive-Reflexive example (הִתְחַבְּאוּ, §34.2.1); the subject hides HIMSELF |
+| 3 | הָלַךְ | **IT** | Same root/pattern as item 1 — repeated walking about |
+| 4 | עָצַב | **IR** | Reflexive of emotion — the subject grieves himself internally |
+| 5 | גָּלָה | **IR** | "uncovered HIMSELF" — explicit reflexive object in the gloss |
+| 6 | הָלַךְ | **IT** | Same root/pattern as items 1 and 3 — repeated walking about |
+| 7 | עָנָה | **IR** | "humble YOURSELF" — explicit reflexive object in the gloss |
+| 8 | הָלַךְ | **IT** | Same root/pattern as items 1, 3, and 6 — repeated walking about |
+| 9 | שָׁחָה | **IR** | Bowing down is a reflexive posture — the subject bows HIMSELF down |
+| 10 | שָׁחָה | **IR** | Same verb/sense as item 9 |
+| 11 | פָּלַל | **SA** | Matches BBH's own Simple Action example (הִתְפַּלֵּל, §34.2.4); "pray" has no separate reflexive or reciprocal force |
+| 12 | בָּרַךְ | **IR** | "bless THEMSELVES" — explicit reflexive object in the gloss |
+| 13 | הָלַךְ | **IT** | Same root/pattern as items 1, 3, 6, and 8 — repeated walking about |
+| 14 | שָׁחָה | **IR** | Same verb/sense as items 9–10 |
+| 15 | עָשַׂק | **RC** | "They quarreled" — mutual conflict between the parties in Gen 26:20 (contrast item 17) |
+| 16 | נָחַם | **IR** | "is comforting HIMSELF" — explicit reflexive object in the gloss |
+| 17 | נָכַל | **IR** | The brothers act collectively/for themselves against Joseph, not mutually on one another — not Reciprocal like item 15 |
+| 18 | אָבַל | **IR** | Mourning rites (tearing garments, etc.) are self-directed practice — the subject makes himself a mourner |
+| 19 | כָּסָה | **IR** | "she covered HERSELF" — explicit reflexive object in the gloss |
+| 20 | שָׁחָה | **IR** | Same verb/sense as items 9–10 and 14 |
+| 21 | נָהַל | **IT** | "I will journey on slowly" — gradual, extended movement at a measured pace, paralleling the הָלַךְ Iterative cluster |
+| 22 | קָדַשׁ | **IR** | Same root as BBH's own Intensive-Reflexive example (הִתְקַדֵּשׁ, §34.2.1); "consecrate YOURSELVES" |
+| 23 | חָזַק | **IR** | "his heart was strengthened" — the heart strengthens ITSELF (reflexive) |
+| 24 | הָלַל | **IR** | Reflexive self-glorification/boasting — the subject praises/exalts ITSELF in idols |
+| 25 | חָזַק | **IR** | Same root as item 23 — "strengthen YOURSELVES," explicit reflexive object |
 
 ### Function summary
 
 | Function | Items | Count |
 |---|---|---|
-| Reflexive | 2, 5, 7, 9, 10, 12, 14, 16, 18, 19, 20, 22, 23 | 13 |
+| Intensive-Reflexive | 2, 4, 5, 7, 9, 10, 12, 14, 16, 17, 18, 19, 20, 22, 23, 24, 25 | 17 |
 | Iterative | 1, 3, 6, 8, 13, 21 | 6 |
-| Reciprocal | 15, 17 | 2 |
-| Estimative | 24, 25 | 2 |
-| Denominative | 11 | 1 |
+| Reciprocal | 15 | 1 |
+| Simple Action | 11 | 1 |
 | **Total** | | **25** |

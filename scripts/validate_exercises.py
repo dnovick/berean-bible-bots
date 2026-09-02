@@ -4,6 +4,12 @@
 Each check is a registered function — add new checks to _CHECKS to extend.
 
 Current checks:
+  - ans-row-no-inline-display: no inline display style, no pre-opened answer
+    buttons, no answer-revealing or enumerated-choice placeholders
+  - dropdown-required-fields: Stem/Conjugation/PGN/Function/Weak Class/"...?"
+    columns must use <select>, not free-text <input>
+  - answer-row-alignment: every answer row's <td> count matches its question
+    row's <td> count (cell-for-cell alignment, no bunching)
   - three-format: every exercise directory has <name>.md, <name>.html, <name>.pdf
 
 Exit 0 if clean (or warnings only without --strict), exit 1 on errors.
@@ -20,6 +26,8 @@ import re as _re
 import sys
 from pathlib import Path
 from typing import Callable
+
+from bs4 import BeautifulSoup
 
 _REPO = Path(__file__).resolve().parent.parent
 _LESSONS_DIR = _REPO / "data" / "lessons"
@@ -95,6 +103,98 @@ def check_ans_row_no_inline_display(
                 f"{html_file.name}:{lineno} — input placeholder enumerates choices with"
                 " 'or' (e.g. 'QH or —'); fields with a small answer set must use"
                 " <select> instead of <input>"
+            )
+
+
+_DROPDOWN_REQUIRED_HEADERS = (
+    "stem", "conjugation", "pgn", "function", "weak class", "class",
+)
+
+
+def _header_requires_dropdown(header_text: str) -> bool:
+    text = header_text.strip().lower()
+    if not text:
+        return False
+    if text.endswith("?"):
+        return True
+    return any(keyword in text for keyword in _DROPDOWN_REQUIRED_HEADERS)
+
+
+@_register("dropdown-required-fields")
+def check_dropdown_required_fields(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """Columns headed Stem/Conjugation/PGN/Function/Weak Class/"...?" (Yes-No)
+    must use <select>, not free-text <input>, per the Input Field Types rule.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    soup = BeautifulSoup(html_file.read_text(encoding="utf-8", errors="replace"), "html.parser")
+
+    for table in soup.find_all("table"):
+        header_row = table.find("tr")
+        if header_row is None:
+            continue
+        headers = header_row.find_all(["th"])
+        if not headers:
+            continue
+        dropdown_cols = {
+            i for i, th in enumerate(headers) if _header_requires_dropdown(th.get_text())
+        }
+        if not dropdown_cols:
+            continue
+
+        data_rows = [
+            r for r in table.find_all("tr")[1:]
+            if r.find("input", class_="parse-field") or r.find("select", class_="parse-field")
+        ]
+        for row in data_rows:
+            cells = row.find_all("td")
+            for col in dropdown_cols:
+                if col >= len(cells):
+                    continue
+                if cells[col].find("input", class_="parse-field"):
+                    header_label = headers[col].get_text(strip=True)
+                    _warn(
+                        warnings, ex_dir,
+                        f"{html_file.name} — column '{header_label}' uses free-text"
+                        " <input>; fields naming Stem/Conjugation/PGN/Function/Weak"
+                        " Class or a Yes-No '?' column must use <select>"
+                    )
+
+
+@_register("answer-row-alignment")
+def check_answer_row_alignment(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """Every answer row's <td> count must match its question row's <td> count —
+    cell-for-cell alignment, no bunching content into fewer cells.
+    """
+    name = ex_dir.name
+    html_file = ex_dir / f"{name}.html"
+    if not html_file.exists():
+        return
+    soup = BeautifulSoup(html_file.read_text(encoding="utf-8", errors="replace"), "html.parser")
+
+    for row in soup.find_all("tr"):
+        class_attr = row.get("class")
+        classes: list[str] = [class_attr] if isinstance(class_attr, str) else list(class_attr or [])
+        if "answer-row" not in classes and "ans-row" not in classes:
+            continue
+        question_row = row.find_previous_sibling("tr")
+        if question_row is None:
+            continue
+        ans_tds = len(row.find_all("td"))
+        q_tds = len(question_row.find_all("td"))
+        if ans_tds != q_tds:
+            row_id = row.get("id", "?")
+            _warn(
+                warnings, ex_dir,
+                f"{html_file.name} — answer row #{row_id} has {ans_tds} <td> cells"
+                f" but its question row has {q_tds}; every answer-row <td> must"
+                " align cell-for-cell with the table columns (no bunching, no colspan)"
             )
 
 
