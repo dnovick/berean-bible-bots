@@ -13,7 +13,7 @@ For each bolded verb, indicate:
 2. **Conjugation** (Perfect, Imperfect, Wayyiqtol, Weqatal, Imperative, Inf. Const., Inf. Abs., Participle)
 3. **PGN** (Person–Gender–Number, e.g., 3ms, 2mp, 1cs)
 4. **Root** (3-letter root, unvoweled)
-5. **Stem / Function** (if Hithpael: Reflexive / Iterative / Reciprocal / Estimative / Denominative, and note weak class; if not: name the stem)
+5. **Stem / Function** (if Hithpael: Reflexive / Iterative / Reciprocal / Simple Action, and note weak class; if not: name the stem)
 
 *Distractors include Niphal and Hophal forms — all stems you have already studied. Niphal (reflexive/passive) is easily confused with Hithpael (reflexive) since both can express reflexive or middle meanings.*
 
@@ -175,9 +175,9 @@ For each bolded verb, indicate:
 | 4 | תִשְׁתַּחְוֶה | Yes | Imperfect | 2ms | שחה | Hithpael — Reflexive; יִתְ → שְׁתַ (I-שׁ metathesis); III-ה imperfect ending |
 | 5 | נִבְרְכָה | No | Cohortative | 1cp | ברך | NOT Hithpael — Qal cohortative: "let us kneel/bless"; נִ- is NOT Hithpael prefix, no הִתְ |
 | 6 | נִגְלוּ | No | Perfect | 3cp | גלה | NOT Hithpael — Niphal: "revealed themselves / were revealed"; נִ- prefix = Niphal, not Hithpael הִתְ- |
-| 7 | וְהִתְנַבִּיתָ | Yes | Weqatal | 2ms | נבא | Hithpael — Denominative/Iterative; I-נ (no assimilation); הִתְ- + נַ + בִּי + 2ms suffix תָ; III-א |
-| 8 | וַיִּתְנַבְּאוּ | Yes | Wayyiqtol | 3mp | נבא | Hithpael — Denominative/Iterative; יִתְ- prefix; I-נ (no assimilation); III-א with 3mp אוּ ending |
-| 9 | נִצְטַדָּק | Yes | Imperfect | 1cp | צדק | Hithpael — Reflexive/Estimative; I-צ metathesis (הִתְ + צ → צְתַ → נִצְטַ with 1cp prefix נ) |
+| 7 | וְהִתְנַבִּיתָ | Yes | Weqatal | 2ms | נבא | Hithpael — Simple Action; I-נ (no assimilation); הִתְ- + נַ + בִּי + 2ms suffix תָ; III-א |
+| 8 | וַיִּתְנַבְּאוּ | Yes | Wayyiqtol | 3mp | נבא | Hithpael — Simple Action; יִתְ- prefix; I-נ (no assimilation); III-א with 3mp אוּ ending |
+| 9 | נִצְטַדָּק | Yes | Imperfect | 1cp | צדק | Hithpael — Reflexive; I-צ metathesis (הִתְ + צ → צְתַ → נִצְטַ with 1cp prefix נ) |
 | 10 | לְהִתְרַפֵּא | Yes | Inf. Construct | — | רפא | Hithpael — Reflexive "to be healed / to heal oneself"; הִתְ- prefix + III-א root; lamed-preposition marks infinitive construct |
 | 11 | הוּשַׁב | No | Perfect | 3ms | שוב | NOT Hithpael — Hophal: "was returned / was brought back"; הוּ- prefix (u-class vowel = Hophal mark); biconsonantal root שׁוּב |
 
