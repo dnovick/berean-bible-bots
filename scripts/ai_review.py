@@ -60,7 +60,16 @@ Be specific about file paths when flagging issues.
    a transliteration column or inline transliteration for Hebrew, Aramaic, or Greek text.
 
 3. **RTL display**: In HTML exercises, a verse reference (e.g. "Gen 1:1") and Hebrew text
-   must never appear on the same line. Hebrew must use `direction:rtl; unicode-bidi:embed`.
+   must never share a text node (a run of text with no tag between them) — RTL bidi reordering
+   renders the two in the wrong order in that case. Hebrew must have `direction:rtl;
+   unicode-bidi:embed` on itself or an ancestor. This is NOT about visual/table layout: a verse
+   number and Hebrew text in separate `<td>` cells of the same `<tr>` is the established,
+   correct pattern used throughout this project (e.g. the Psalm 119 reading pages) — do not
+   flag two cells in one row as "the same line." `scripts/validate_exercises.py`'s
+   `verse-ref-hebrew-same-node` and `hebrew-no-rtl-wrapper` checks already verify both concerns
+   precisely by parsing the actual DOM — their output is included below. Trust it completely;
+   if a file has zero warnings from either check, do NOT flag an RTL/display issue for it
+   yourself, regardless of how the markup looks in the raw diff text.
 
 4. **Dropdown fields**: In HTML exercises, Stem, Conjugation, PGN (Person/Gender/Number),
    Yes/No, and Function fields must use `<select>` elements, not `<input type="text">`.
@@ -86,7 +95,12 @@ Be specific about file paths when flagging issues.
 7. **BBH name conventions**: Must use BBH spellings — Alef (not Aleph), Bet (not Beth),
    Het (not Chet), Tet (not Teth), Kaf (not Kaph), Samek (not Samekh), Qof (not Qoph),
    Taw (not Tav), Shewa (not Sheva), Pathach (not Patah), Hateph (not Hatef),
-   Holem Waw (not Holem Vav).
+   Holem Waw (not Holem Vav). `scripts/validate_exercises.py`'s `bbh-spelling` check already
+   scans `.html`/`.md` files for every wrong spelling listed above (plus case variants like
+   lowercase "patach") — its output is included below. Trust it: if a file has zero
+   `bbh-spelling` warnings, do NOT flag a naming-convention issue for it yourself. This check
+   only covers Hebrew letter/vowel names specifically (not general prose or other languages),
+   so still use your own judgment for anything outside that scope.
 
 8. **No lint directives in output strings**: Never place `# noqa` or `# type: ignore`
    inside a string literal that gets written to a file or printed as output.
@@ -111,12 +125,15 @@ REVIEW_PROMPT_PR = """\
 {diff}
 ```
 
-## Automated validator output (ground truth for rules 4 and 5)
+## Automated validator output (ground truth for rules 3, 4, 5, and 7)
 
 This is the actual output of `scripts/validate_exercises.py` run against this PR's checked-out
-tree, filtered to files touched by this diff. It parses the real DOM — trust it completely for
-answer-row-alignment, answer-row-empty, and dropdown-required-fields; do not second-guess it by
-re-counting cells yourself.
+tree, filtered to files touched by this diff. It parses the real DOM and file text — trust it
+completely for answer-row-alignment, answer-row-empty, dropdown-required-fields,
+verse-ref-hebrew-same-node, hebrew-no-rtl-wrapper, and bbh-spelling. Do not re-derive any of
+these six checks' conclusions yourself by reading the raw diff (counting cells, judging bidi
+layout, or spot-checking spellings) — a file with zero warnings from the relevant check is
+clean for that rule, full stop.
 
 ```
 {validator_output}
