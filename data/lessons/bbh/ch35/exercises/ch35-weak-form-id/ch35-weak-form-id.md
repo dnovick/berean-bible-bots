@@ -24,8 +24,8 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 
 | Class | Ch35 class? | Key diagnostic signal |
 |---|---|---|
-| **III-he** | Yes — §35.4-5 | Qamets + ה (perfect 3ms); ה dropped in wayyiqtol/jussive (apocopation); seghol + ה (imperfect/participle) |
-| **Geminate** | Yes — §35.2-3 | Contracted stem with long vowel (often holem-vav); dagesh forte may be absent due to geminate contraction |
+| **III-he** | Yes — §35.4-5 | Qamets + ה (perfect 3ms); ה dropped in wayyiqtol/jussive (apocopation); Seghol + ה (imperfect/participle) |
+| **Geminate** | Yes — §35.2-3 | Contracted stem with long vowel (often Holem Waw); dagesh forte may be absent due to geminate contraction |
 | **Guttural R1** | No — review | Hateph vowel under R1 in perfect/participle; composite shewa replaces simple shewa throughout. Not the same as ch35's own II-Guttural class (guttural in R2, §35.6-9) |
 | **Sibilant/Dental Metathesis** | No — Ch34 §34.12 review | הִשְׁתַּ / וַיִּשְׁתַּ prefix instead of הִתְ / וַיִּתְ — the two consonants after the prefix are R1 and ת, in reversed order |
 | **I-Nun (retained)** | No — review | Nun is retained in Hithpael (unlike Hiphil where nun assimilates); prefix pattern הִתְנַ is regular |
@@ -97,21 +97,21 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 
 | # | Form | Conjugation | PGN | Root | Diagnostic |
 |---|---|---|---|---|---|
-| 1 | וַיִּתְגַּל | Wayyiqtol | 3ms | גָּלָה | Apocopated — III-he ה dropped; short patach under R2 (ג); prefix וַיִּתְ is standard Hithpael |
+| 1 | וַיִּתְגַּל | Wayyiqtol | 3ms | גָּלָה | Apocopated — III-he ה dropped; short Pathach under R2 (ג); prefix וַיִּתְ is standard Hithpael |
 | 2 | הִתְגַּלֹּתִי | Perfect | 1cs | גָּלָה | Qatal 1cs suffix תִּי; dagesh forte in R2; III-he root |
 | 3 | וַיִּשְׁתַּחוּ | Wayyiqtol | 3ms | שָׁחָה | Metathesis (שׁ + ת swapped → וַיִּשְׁתַּ) + III-he apocopation; two weak classes combine |
 | 4 | הִשְׁתַּחֲוָה | Perfect | 3ms | שָׁחָה | Metathesis prefix הִשְׁתַּ + III-he ending וָה (historically expanded form of the root) |
-| 5 | וַתִּתְכַּסֶּה | Wayyiqtol | 3fs | כָּסָה | Prefix וַתִּתְ (3fs wayyiqtol) + III-he seghol-he ending; ה retained in wayyiqtol 3fs |
-| 6 | מִתְהַלֵּךְ | Participle | ms | הָלַךְ | Hateph Pathach under ה (I-guttural composite shewa); mît- prefix; tsere under R2 |
-| 7 | וַיִּתְהַלֵּךְ | Wayyiqtol | 3ms | הָלַךְ | Hateph Pathach under ה (composite shewa); prefix וַיִּתְ; tsere under R2 |
-| 8 | וַיִּתְחַבֵּא | Wayyiqtol | 3ms | חָבָא | Hateph Pathach under ח (I-guttural); prefix וַיִּתְ; tsere under R2 |
+| 5 | וַתִּתְכַּסֶּה | Wayyiqtol | 3fs | כָּסָה | Prefix וַתִּתְ (3fs wayyiqtol) + III-he Seghol-he ending; ה retained in wayyiqtol 3fs |
+| 6 | מִתְהַלֵּךְ | Participle | ms | הָלַךְ | Hateph Pathach under ה (I-guttural composite shewa); mît- prefix; Tsere under R2 |
+| 7 | וַיִּתְהַלֵּךְ | Wayyiqtol | 3ms | הָלַךְ | Hateph Pathach under ה (composite shewa); prefix וַיִּתְ; Tsere under R2 |
+| 8 | וַיִּתְחַבֵּא | Wayyiqtol | 3ms | חָבָא | Hateph Pathach under ח (I-guttural); prefix וַיִּתְ; Tsere under R2 |
 | 9 | הִתְעַנִּי | Imperative | 2fs | עָנָה | Hateph Pathach under ע (I-guttural); dagesh forte in R2 (נ) doubled; ִי suffix = 2fs imperative; III-he root also present |
-| 10 | מִתְחַזֵּק | Participle | ms | חָזַק | Composite shewa under ח (I-guttural); mît- prefix; tsere under R2 |
+| 10 | מִתְחַזֵּק | Participle | ms | חָזַק | Composite shewa under ח (I-guttural); mît- prefix; Tsere under R2 |
 | 11 | וַיִּשְׁתַּחוּ | Wayyiqtol | 3ms | שָׁחָה | Sibilant metathesis: שׁ is R1 and swapped with ת → וַיִּשְׁתַּ; III-he apocopation (ה dropped) |
 | 12 | הִשְׁתַּחֲוָה | Perfect | 3ms | שָׁחָה | Metathesis prefix הִשְׁתַּ; III-he root; composite shewa under ח (I-guttural secondary effect) |
 | 13 | וַיִּשְׁתַּחֲווּ | Wayyiqtol | 3mp | שָׁחָה | Metathesis prefix; 3mp suffix וּ; III-he root retains וָה vowel letter before plural suffix |
-| 14 | הִשְׁתַּמֵּר | Imperative | 2ms | שָׁמַר | Sibilant metathesis: שׁ and ת swap → הִשְׁתַּ; dagesh forte in R2 (מ); tsere final |
-| 15 | וַיִּשְׁתּוֹמֵם | Wayyiqtol | 3ms | שָׁמֵם | Metathesis prefix וַיִּשְׁתּ; Geminate root: שׁ-מ-מ; holem-vav reflects lengthened vowel in contracted geminate stem |
+| 14 | הִשְׁתַּמֵּר | Imperative | 2ms | שָׁמַר | Sibilant metathesis: שׁ and ת swap → הִשְׁתַּ; dagesh forte in R2 (מ); Tsere final |
+| 15 | וַיִּשְׁתּוֹמֵם | Wayyiqtol | 3ms | שָׁמֵם | Metathesis prefix וַיִּשְׁתּ; Geminate root: שׁ-מ-מ; Holem Waw reflects lengthened vowel in contracted geminate stem |
 | 16 | מִתְנַחֵם | Participle | ms | נָחַם | Nun retained in Hithpael prefix מִתְנַ (contrast Hiphil where nun assimilates); composite shewa under ח (I-guttural interaction) |
 | 17 | וַיִּתְנַחֲמוּ | Wayyiqtol | 3mp | נָחַם | Prefix וַיִּתְנַ; nun retained; 3mp suffix וּ; composite shewa under ח |
 | 18 | וַיִּתְנַכְּלוּ | Wayyiqtol | 3mp | נָכַל | Prefix וַיִּתְנַ; nun retained; dagesh forte in R2 (כ); 3mp suffix |
@@ -125,13 +125,13 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 | # | Form | Weak class | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|---|
 | 21 | וַיִּשְׁתַּחוּ | Sibilant Metathesis + III-he | Wayyiqtol | 3ms | שָׁחָה | Same form as #11 and #3; metathesis prefix + III-he apocopation; Abraham's servant bowing |
-| 22 | וַיִּתְאַבֵּל | I-guttural | Wayyiqtol | 3ms | אָבַל | Hateph Pathach under א (I-guttural); prefix וַיִּתְ; tsere under R2 |
-| 23 | הִתְרוֹמֵם | Geminate | Perfect | 3ms | רוּם | Hollow/Geminate: holem-vav in the contracted stem; הִתְרוֹ reflects the lengthened vowel from the collapsed R2-R3 |
+| 22 | וַיִּתְאַבֵּל | I-guttural | Wayyiqtol | 3ms | אָבַל | Hateph Pathach under א (I-guttural); prefix וַיִּתְ; Tsere under R2 |
+| 23 | הִתְרוֹמֵם | Geminate | Perfect | 3ms | רוּם | Hollow/Geminate: Holem Waw in the contracted stem; הִתְרוֹ reflects the lengthened vowel from the collapsed R2-R3 |
 | 24 | הִתְקַדְּשׁוּ | Strong | Imperative | 2mp | קָדַשׁ | No weak class; standard Hithpael imperative 2mp; הִתְ prefix + dagesh in R2 (ד) + וּ suffix |
 | 25 | וַיִּתְפַּלֵּל | Strong | Wayyiqtol | 3ms | פָּלַל | Standard Hithpael wayyiqtol; no weak consonants; dagesh forte in R2 (ל) |
 | 26 | הִתְהַלֵּל | I-guttural | Perfect | 3ms | הָלַל | Hateph Pathach under ה (I-guttural); also I-guttural root הָלַל (not to be confused with הָלַךְ) |
 | 27 | מִתְחַזְּקִים | I-guttural | Participle | mp | חָזַק | Composite shewa under ח; mît- prefix; dagesh in R2 (ז); ִים plural |
-| 28 | וַיִּשְׁתּוֹמֵם | Sibilant Metathesis + Geminate | Wayyiqtol | 3ms | שָׁמֵם | Metathesis prefix; Geminate root שׁ-מ-מ; holem-vav in contracted stem |
+| 28 | וַיִּשְׁתּוֹמֵם | Sibilant Metathesis + Geminate | Wayyiqtol | 3ms | שָׁמֵם | Metathesis prefix; Geminate root שׁ-מ-מ; Holem Waw in contracted stem |
 | 29 | הִתְעַשְּׂקוּ | I-guttural | Perfect | 3cp | עָשַׂק | Hateph Pathach under ע (I-guttural); dagesh forte in R2 (שׂ); 3cp suffix וּ |
 | 30 | וַיִּתְגַּלְגַּל | Geminate (Pilpel-like) | Wayyiqtol | 3ms | גָּלַל | Quadriliteral/Geminate intensified: the root is reduplicated גלגל; no standard Hithpael dagesh because the stem itself doubles |
 
@@ -147,4 +147,4 @@ The Hithpael is identified by its הִתְ prefix (or וַיִּתְ in wayyiqto
 
 **4.** Item 20 (מִתְנַדְּבִים): the root is נָדַב (I-nun). In the Hithpael, the nun is NOT assimilated (compare: it IS assimilated in the Hiphil הִדְּיב). Explain why retention of the nun makes sense given the Hithpael prefix pattern הִתְנַ.
 
-**5.** Item 23 (הִתְרוֹמֵם) involves a hollow or geminate root. What does the Hithpael of a hollow/geminate root look like? How does the holem-vav arise, and why does the expected Dagesh Forte in R2 not appear as a visible dagesh?
+**5.** Item 23 (הִתְרוֹמֵם) involves a hollow or geminate root. What does the Hithpael of a hollow/geminate root look like? How does the Holem Waw arise, and why does the expected Dagesh Forte in R2 not appear as a visible dagesh?

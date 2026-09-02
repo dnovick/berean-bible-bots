@@ -178,7 +178,7 @@ For each bolded verb, indicate:
 | 11 | הִצְדִּיק | No | Perfect | 3ms | צדק | NOT Hithpael — Hiphil: Declarative "declared righteous"; הִ- prefix (no תְ) + Hireq-Yod under R2 |
 
 > **Notes on distractors:**
-> - **#5 וְטִהֲרוֹ** is a Piel Weqatal of טהר. Key: patach under R1 + dagesh forte in R2 + no הִתְ prefix = Piel, not Hithpael.
+> - **#5 וְטִהֲרוֹ** is a Piel Weqatal of טהר. Key: Pathach under R1 + dagesh forte in R2 + no הִתְ prefix = Piel, not Hithpael.
 > - **#8 קֻדַּשׁ** is Pual perfect 3ms of קדש. Key: Qibbuts (u-class vowel) under the first root letter = Pual passive, not Hithpael reflexive.
 > - **#11 הִצְדִּיק** is Hiphil perfect 3ms of צדק. Key: הִ- (no תְ) + Hireq-Yod under R2 = Hiphil causative/declarative pattern.
 > - **#10 וְנִתְחַזְּקָה** — the cohortative form of the Hithpael 1cp shows נִתְ- rather than הִתְ-; this is the normal cohortative pattern (compare Niphal cohortative נִנָּצְלָה).
