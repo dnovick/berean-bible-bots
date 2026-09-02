@@ -92,7 +92,7 @@
 | 4 | קַח | Imperative | 2nd | s | m | לקח | Direct Command | I-י short form; נָא adds urgency; "Take now your son" |
 | 5 | וְלֶךְ | Imperative | 2nd | s | m | הלך | Command Chain | וְ + Imperative (not Weqatal); continues the series of commands |
 | 6 | וְהַעֲלֵהוּ | Imperative | 2nd | s | m | עלה | Direct Command | Hiphil Imperative 2ms + 3ms suffix; "offer him up" — not Qal; Hiphil of עלה |
-| 7 | שְׁמַע | Imperative | 2nd | s | m | שמע | Direct Command | B-class; patach (gutt. R3); the Shema imperative — launches command chain |
+| 7 | שְׁמַע | Imperative | 2nd | s | m | שמע | Direct Command | B-class; Pathach (gutt. R3); the Shema imperative — launches command chain |
 | 8 | וְאָהַבְתָּ | Weqatal | 2nd | s | m | אהב | Command Chain | Weqatal continues the Shema; "and you shall love" |
 | 9 | וְשִׁנַּנְתָּם | Weqatal | 2nd | s | m | שנן | Command Chain | Piel Weqatal; "and you shall teach them diligently" |
 | 10 | וְדִבַּרְתָּ | Weqatal | 2nd | s | m | דבר | Command Chain | Piel Weqatal; "and you shall speak of them" |

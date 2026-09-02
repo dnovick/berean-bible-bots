@@ -125,7 +125,7 @@
 
 ---
 
-## Part F — III-ח/ע (Root: שׁלח) — Qibbuts prefix; Patach furtive before final ח
+## Part F — III-ח/ע (Root: שׁלח) — Qibbuts prefix; Pathach furtive before final ח
 
 | # | Root | PGN | Ref | Form |
 |---|---|---|---|---|
@@ -207,12 +207,12 @@
 | 6 | ילד | Participle fs | — | מוּלֶדֶת | מוּ prefix; Seghol + ת feminine ending |
 | 7 | ילד | Imperative ms | — | הוּלַד | **= Perfect 3ms in form** — context distinguishes command from statement |
 | 8 | ילד | Inf. Construct | — | הוּלַד | = Perfect 3ms form; also identical to Imperative ms; context determines function |
-| 9 | ילד | Perfect 3fs | — | הוּלְדָה | Shureq prefix (הוּ); Shewa under ל + ָה fem. ending; contrast 3ms הוּלַד (Patach) |
+| 9 | ילד | Perfect 3fs | — | הוּלְדָה | Shureq prefix (הוּ); Shewa under ל + ָה fem. ending; contrast 3ms הוּלַד (Pathach) |
 | 10 | ילד | Imperfect 3fs / 2ms | — | תּוּלַד | תּ prefix + Shureq (תּוּ); same form serves 3fs and 2ms; contrast 3ms יוּלַד (י prefix) |
 | 11 | ילד | Imperfect 1cs | — | אוּלַד | א prefix + Shureq (אוּ) for 1cs Imperfect; contrast 1cp נוּלַד (נ prefix) |
 | 12 | ילד | Imperfect 1cp | — | נוּלַד | נ prefix + Shureq (נוּ) for 1cp Imperfect; contrast 1cs אוּלַד (א prefix) |
-| 13 | ילד | Perfect 1cs | — | הוּלַדְתִּי | Shureq prefix (הוּ); Patach + תִּי suffix (1cs); contrast 1cp הוּלַדְנוּ (נוּ suffix) |
-| 14 | ילד | Perfect 1cp | — | הוּלַדְנוּ | Shureq prefix (הוּ); Patach + נוּ suffix (1cp); contrast 1cs הוּלַדְתִּי (תִּי suffix) |
+| 13 | ילד | Perfect 1cs | — | הוּלַדְתִּי | Shureq prefix (הוּ); Pathach + תִּי suffix (1cs); contrast 1cp הוּלַדְנוּ (נוּ suffix) |
+| 14 | ילד | Perfect 1cp | — | הוּלַדְנוּ | Shureq prefix (הוּ); Pathach + נוּ suffix (1cp); contrast 1cs הוּלַדְתִּי (תִּי suffix) |
 | 15 | ילד | Participle mp | — | מוּלָדִים | מוּ prefix (Shureq); Qamets under ד + ים plural; contrast ms מוּלָד, fs מוּלֶדֶת |
 
 ---
@@ -222,7 +222,7 @@
 | # | Root | PGN | Ref | Form | Notes |
 |---|---|---|---|---|---|
 | 1 | קום | Perfect 3ms | Exo 40:17 | הוּקַם | Shureq prefix; only R1 (ק) and R3 (מ) visible |
-| 2 | קום | Imperfect 3ms | Num 9:15 | יוּקַם | Shureq under יוּ; Patach under R2 |
+| 2 | קום | Imperfect 3ms | Num 9:15 | יוּקַם | Shureq under יוּ; Pathach under R2 |
 | 3 | קום | Participle ms | — | מוּקָם | מוּ prefix; Qamets under R2 |
 
 | 4 | קום | Perfect 3cp | — | הוּקְמוּ | Shureq prefix; hollow root ק-מ; וּ plural |
@@ -230,12 +230,12 @@
 | 6 | קום | Participle fs | — | מוּקֶמֶת | מוּ prefix; Seghol + ת feminine; hollow root |
 | 7 | קום | Imperative ms | — | הוּקַם | **= Perfect 3ms in form** — same vowels and consonants; context determines function |
 | 8 | קום | Inf. Construct | — | הוּקַם | = Perfect 3ms form; also identical to Imperative ms |
-| 9 | קום | Perfect 3fs | — | הוּקְמָה | Shureq prefix; Shewa under ק + מ + ָה fem. ending; contrast 3ms הוּקַם (Patach under מ) |
+| 9 | קום | Perfect 3fs | — | הוּקְמָה | Shureq prefix; Shewa under ק + מ + ָה fem. ending; contrast 3ms הוּקַם (Pathach under מ) |
 | 10 | קום | Imperfect 3fs / 2ms | — | תּוּקַם | תּ prefix + Shureq (תּוּ); 3fs and 2ms share this form; contrast 3ms יוּקַם (י prefix) |
 | 11 | קום | Imperfect 1cs | — | אוּקַם | א prefix + Shureq (אוּ); contrast 1cp נוּקַם (נ prefix) |
 | 12 | קום | Imperfect 1cp | — | נוּקַם | נ prefix + Shureq (נוּ); contrast 1cs אוּקַם (א prefix) |
-| 13 | קום | Perfect 1cs | — | הוּקַמְתִּי | Shureq prefix (הוּ); Patach + תִּי suffix; contrast 1cp הוּקַמְנוּ (נוּ suffix) |
-| 14 | קום | Perfect 1cp | — | הוּקַמְנוּ | Shureq prefix (הוּ); Patach + נוּ suffix; contrast 1cs הוּקַמְתִּי (תִּי suffix) |
+| 13 | קום | Perfect 1cs | — | הוּקַמְתִּי | Shureq prefix (הוּ); Pathach + תִּי suffix; contrast 1cp הוּקַמְנוּ (נוּ suffix) |
+| 14 | קום | Perfect 1cp | — | הוּקַמְנוּ | Shureq prefix (הוּ); Pathach + נוּ suffix; contrast 1cs הוּקַמְתִּי (תִּי suffix) |
 | 15 | קום | Participle mp | — | מוּקָמִים | מוּ prefix (Shureq); Qamets under מ + ים plural; hollow root visible as two consonants |
 
 ---
@@ -244,22 +244,22 @@
 
 | # | Root | PGN | Ref | Form | Notes |
 |---|---|---|---|---|---|
-| 1 | עמד | Perfect 3ms | — | הֶעֱמַד | **Seghol** under prefix הֶ before ע; hateph-seghol under ע |
-| 2 | עמד | Imperfect 3ms | — | יֻעֲמַד | **Qibbuts** under יֻ (normal in Imperfect); hateph-patach under ע |
-| 3 | עמד | Participle ms | — | מֻעֲמָד | מֻ prefix; hateph-patach under ע; Qamets under R2 |
+| 1 | עמד | Perfect 3ms | — | הֶעֱמַד | **Seghol** under prefix הֶ before ע; hateph-Seghol under ע |
+| 2 | עמד | Imperfect 3ms | — | יֻעֲמַד | **Qibbuts** under יֻ (normal in Imperfect); Hateph Pathach under ע |
+| 3 | עמד | Participle ms | — | מֻעֲמָד | מֻ prefix; Hateph Pathach under ע; Qamets under R2 |
 
-| 4 | עמד | Perfect 3cp | — | הֻעֲמְדוּ | **Qibbuts (הֻ), not Seghol** — only 3ms uses Seghol; hateph-patach under ע; וּ plural |
-| 5 | עמד | Imperfect 3mp | — | יֻעֲמְדוּ | Qibbuts under יֻ throughout Imperfect; hateph-patach under ע; וּ 3mp |
-| 6 | עמד | Participle fs | — | מֻעֲמֶדֶת | מֻ prefix; hateph-patach under ע; Seghol + ת feminine |
+| 4 | עמד | Perfect 3cp | — | הֻעֲמְדוּ | **Qibbuts (הֻ), not Seghol** — only 3ms uses Seghol; Hateph Pathach under ע; וּ plural |
+| 5 | עמד | Imperfect 3mp | — | יֻעֲמְדוּ | Qibbuts under יֻ throughout Imperfect; Hateph Pathach under ע; וּ 3mp |
+| 6 | עמד | Participle fs | — | מֻעֲמֶדֶת | מֻ prefix; Hateph Pathach under ע; Seghol + ת feminine |
 | 7 | עמד | Imperative ms | — | הֶעֱמַד | **= Perfect 3ms in form** (Seghol prefix הֶ before ע); same in both |
 | 8 | עמד | Inf. Construct | — | הֶעֱמַד | Seghol (הֶ) before ע in Inf. Constr. = Perfect 3ms = Imperative ms form |
-| 9 | עמד | Perfect 3fs | — | הֻעֲמְדָה | **Qibbuts (הֻ)** — not Seghol; only 3ms uses Seghol (הֶ); hateph-patach under ע; ָה ending |
-| 10 | עמד | Imperfect 3fs / 2ms | — | תֻּעֲמַד | תּ prefix + Qibbuts (תֻּ); hateph-patach under ע; ALL Imperfect forms use Qibbuts — no Seghol |
-| 11 | עמד | Imperfect 1cs | — | אֻעֲמַד | א prefix + Qibbuts (אֻ); hateph-patach under ע; 1cs Imperfect |
-| 12 | עמד | Imperfect 1cp | — | נֻעֲמַד | נ prefix + Qibbuts (נֻ); hateph-patach under ע; 1cp Imperfect |
-| 13 | עמד | Perfect 1cs | — | הֻעֲמַדְתִּי | **Qibbuts (הֻ)** — suffix forms always Qibbuts (Seghol = 3ms only); hateph-patach under ע; תִּי suffix |
-| 14 | עמד | Perfect 1cp | — | הֻעֲמַדְנוּ | Qibbuts (הֻ); hateph-patach under ע; נוּ suffix (1cp) |
-| 15 | עמד | Participle mp | — | מֻעֲמָדִים | מֻ prefix (Qibbuts); hateph-patach under ע; Qamets under מ + ים plural |
+| 9 | עמד | Perfect 3fs | — | הֻעֲמְדָה | **Qibbuts (הֻ)** — not Seghol; only 3ms uses Seghol (הֶ); Hateph Pathach under ע; ָה ending |
+| 10 | עמד | Imperfect 3fs / 2ms | — | תֻּעֲמַד | תּ prefix + Qibbuts (תֻּ); Hateph Pathach under ע; ALL Imperfect forms use Qibbuts — no Seghol |
+| 11 | עמד | Imperfect 1cs | — | אֻעֲמַד | א prefix + Qibbuts (אֻ); Hateph Pathach under ע; 1cs Imperfect |
+| 12 | עמד | Imperfect 1cp | — | נֻעֲמַד | נ prefix + Qibbuts (נֻ); Hateph Pathach under ע; 1cp Imperfect |
+| 13 | עמד | Perfect 1cs | — | הֻעֲמַדְתִּי | **Qibbuts (הֻ)** — suffix forms always Qibbuts (Seghol = 3ms only); Hateph Pathach under ע; תִּי suffix |
+| 14 | עמד | Perfect 1cp | — | הֻעֲמַדְנוּ | Qibbuts (הֻ); Hateph Pathach under ע; נוּ suffix (1cp) |
+| 15 | עמד | Participle mp | — | מֻעֲמָדִים | מֻ prefix (Qibbuts); Hateph Pathach under ע; Qamets under מ + ים plural |
 
 ---
 
@@ -313,21 +313,21 @@
 
 | # | Root | PGN | Ref | Form | Notes |
 |---|---|---|---|---|---|
-| 1 | שׁלח | Perfect 3ms | — | הֻשְׁלַח | Qibbuts prefix; Patach under R2; final ח |
-| 2 | שׁלח | Imperfect 3ms | Job 18:8 | יֻשְׁלַח | Qibbuts under יֻ; Patach furtive before final ח |
+| 1 | שׁלח | Perfect 3ms | — | הֻשְׁלַח | Qibbuts prefix; Pathach under R2; final ח |
+| 2 | שׁלח | Imperfect 3ms | Job 18:8 | יֻשְׁלַח | Qibbuts under יֻ; Pathach furtive before final ח |
 | 3 | שׁלח | Participle ms | Isa 27:10 | מֻשְׁלָח | מֻ prefix; Qamets under R2; final ח |
 
 | 4 | שׁלח | Perfect 3cp | — | הֻשְׁלְחוּ | Qibbuts prefix; Shewa under ל before ח; וּ plural |
-| 5 | שׁלח | Imperfect 3mp | — | יֻשְׁלְחוּ | Qibbuts under יֻ; Shewa under ל; וּ 3mp; no patach furtive in plural |
-| 6 | שׁלח | Participle fs | — | מֻשְׁלַחַת | מֻ prefix; Patach under R2 (ל); Patach furtive before ח; ת feminine |
-| 7 | שׁלח | Imperative ms | — | הֻשְׁלַח | **= Perfect 3ms in form** (הֻשְׁלַח); Qibbuts prefix; Patach before ח — same |
+| 5 | שׁלח | Imperfect 3mp | — | יֻשְׁלְחוּ | Qibbuts under יֻ; Shewa under ל; וּ 3mp; no Pathach furtive in plural |
+| 6 | שׁלח | Participle fs | — | מֻשְׁלַחַת | מֻ prefix; Pathach under R2 (ל); Pathach furtive before ח; ת feminine |
+| 7 | שׁלח | Imperative ms | — | הֻשְׁלַח | **= Perfect 3ms in form** (הֻשְׁלַח); Qibbuts prefix; Pathach before ח — same |
 | 8 | שׁלח | Inf. Construct | — | הֻשְׁלַח | = Perfect 3ms form; also identical to Imperative ms |
-| 9 | שׁלח | Perfect 3fs | — | הֻשְׁלְחָה | Qibbuts prefix; Shewa under ל + ח + ָה fem. ending; no patach furtive in 3fs (ח not word-final) |
-| 10 | שׁלח | Imperfect 3fs / 2ms | — | תֻּשְׁלַח | תּ prefix + Qibbuts (תֻּ); Patach furtive before final ח; 3fs and 2ms share this form |
-| 11 | שׁלח | Imperfect 1cs | — | אֻשְׁלַח | א prefix + Qibbuts (אֻ); Patach furtive before final ח |
-| 12 | שׁלח | Imperfect 1cp | — | נֻשְׁלַח | נ prefix + Qibbuts (נֻ); Patach furtive before final ח |
-| 13 | שׁלח | Perfect 1cs | — | הֻשְׁלַחְתִּי | Qibbuts prefix; Patach under ל; final ח retained; תִּי suffix |
-| 14 | שׁלח | Perfect 1cp | — | הֻשְׁלַחְנוּ | Qibbuts prefix; Patach under ל; final ח retained; נוּ suffix |
+| 9 | שׁלח | Perfect 3fs | — | הֻשְׁלְחָה | Qibbuts prefix; Shewa under ל + ח + ָה fem. ending; no Pathach furtive in 3fs (ח not word-final) |
+| 10 | שׁלח | Imperfect 3fs / 2ms | — | תֻּשְׁלַח | תּ prefix + Qibbuts (תֻּ); Pathach furtive before final ח; 3fs and 2ms share this form |
+| 11 | שׁלח | Imperfect 1cs | — | אֻשְׁלַח | א prefix + Qibbuts (אֻ); Pathach furtive before final ח |
+| 12 | שׁלח | Imperfect 1cp | — | נֻשְׁלַח | נ prefix + Qibbuts (נֻ); Pathach furtive before final ח |
+| 13 | שׁלח | Perfect 1cs | — | הֻשְׁלַחְתִּי | Qibbuts prefix; Pathach under ל; final ח retained; תִּי suffix |
+| 14 | שׁלח | Perfect 1cp | — | הֻשְׁלַחְנוּ | Qibbuts prefix; Pathach under ל; final ח retained; נוּ suffix |
 | 15 | שׁלח | Participle mp | — | מֻשְׁלָחִים | מֻ prefix (Qibbuts); Qamets under ל + ח + ים plural; contrast ms מֻשְׁלָח, fs מֻשְׁלַחַת |
 
 ---
@@ -336,7 +336,7 @@
 
 | # | Root | PGN | Ref | Form | Notes |
 |---|---|---|---|---|---|
-| 1 | מצא | Perfect 3ms | — | הֻמְצָא | Qibbuts prefix; **Qamets** (not Patach) before silent final א |
+| 1 | מצא | Perfect 3ms | — | הֻמְצָא | Qibbuts prefix; **Qamets** (not Pathach) before silent final א |
 | 2 | מצא | Imperfect 3ms | — | יֻמְצָא | Qibbuts under יֻ; Qamets before silent א |
 
 | 3 | מצא | Participle ms | — | מֻמְצָא | מֻ prefix; Qamets before silent final א (compensatory lengthening) |
@@ -359,7 +359,7 @@
 
 | # | Root | PGN | Ref | Form | Notes |
 |---|---|---|---|---|---|
-| 1 | קלל | Perfect 3ms | — | הֻקַּם | Qibbuts prefix; Dagesh forte in ק (R2); Patach under ק |
+| 1 | קלל | Perfect 3ms | — | הֻקַּם | Qibbuts prefix; Dagesh forte in ק (R2); Pathach under ק |
 | 2 | קלל | Imperfect 3ms | Gen 4:15 | יֻקַּם | Qibbuts under יֻ; Dagesh forte in ק; cf. יֻקַּם שִׁבְעָתַיִם |
 | 3 | קלל | Participle ms | — | מֻקָּם | מֻ prefix; Dagesh forte in ק; Qamets under ק |
 

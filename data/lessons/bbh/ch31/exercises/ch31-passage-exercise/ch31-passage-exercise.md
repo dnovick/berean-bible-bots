@@ -189,7 +189,7 @@ For each bolded verb, indicate:
 
 ## Reflection Questions
 
-1. All target-stem verbs in this exercise come from III-ה roots. In the Piel Perfect 3ms (verbs 7 and 10), the final ה appears as the long vowel pattern ָה (Qamets-He). In the Imperfect 3ms (verbs 5 and 9), the pattern ends in ֶּה (tsere-He, with dagesh in R2). What form-rule governs this alternation? How does the Piel pattern differ from the Qal for the same root classes?
+1. All target-stem verbs in this exercise come from III-ה roots. In the Piel Perfect 3ms (verbs 7 and 10), the final ה appears as the long vowel pattern ָה (Qamets-He). In the Imperfect 3ms (verbs 5 and 9), the pattern ends in ֶּה (Tsere-He, with dagesh in R2). What form-rule governs this alternation? How does the Piel pattern differ from the Qal for the same root classes?
 
 2. Verbs 2 and 3 are both forms of צוה (Piel Perf. 1cs + 2ms object suffix). How does the object suffix affect the form, and what rule about R2 (ו of III-ה roots) applies in the Piel Perfect? Can you spot where the vowel contraction occurs?
 
@@ -216,15 +216,15 @@ For each bolded verb, indicate:
 | 3 | צִוִּיתִיךָ | Yes | Perfect | 1cs + 2ms obj. | צוה | Piel — Denominative; same form as #2, repeated in different literary context |
 | 4 | לְהַחֲיוֹת | No | Inf. Construct | — | חיה | NOT Piel — Hiphil Inf. Const. of חיה (III-ה); לְהַ- prefix = Hiphil marker; "to keep alive" (causative) |
 | 5 | חִיָּה | Yes | Perfect | 3ms | חיה | Piel — Factitive; III-ה root: Piel Pf. 3ms = חִיָּה (Hireq under R1 + dagesh in R2 + ָה); "kept alive" |
-| 6 | יְצַוֶּה | Yes | Imperfect | 3ms | צוה | Piel — Denominative; III-ה Impf. 3ms: יְ prefix + patach under R1 + dagesh forte in צּ + tsere-He ending |
+| 6 | יְצַוֶּה | Yes | Imperfect | 3ms | צוה | Piel — Denominative; III-ה Impf. 3ms: יְ prefix + Pathach under R1 + dagesh forte in צּ + Tsere-He ending |
 | 7 | וַיְחַיּוּ | Yes | Wayyiqtol | 3mp | חיה | Piel — Factitive; III-ה Wayyiqtol 3mp: וַיְ + חַ + יּ (dagesh forte in yod) + וּ suffix; "they kept alive" |
 | 8 | עִנָּה | Yes | Perfect | 3ms | ענה | Piel — Factitive; III-ה root ענה; Hireq under ע + dagesh forte in נּ + ָה; "she afflicted/humbled" |
-| 9 | עַנֹּתְךָ | Yes | Inf. Construct | — + 2ms suffix | ענה | Piel — Factitive; III-ה Inf. Const. with 2ms suffix: לְעַנֹּתְךָ (patach under ע + dagesh in נּ); "to humble you" |
+| 9 | עַנֹּתְךָ | Yes | Inf. Construct | — + 2ms suffix | ענה | Piel — Factitive; III-ה Inf. Const. with 2ms suffix: לְעַנֹּתְךָ (Pathach under ע + dagesh in נּ); "to humble you" |
 | 10 | הוֹדִיעֲךָ | No | Inf. Construct | — + 2ms suffix | ידע | NOT Piel — Hiphil Inf. Const. of ידע (I-י); הוֹ- prefix = Hiphil marker; "to make known / to cause to know" |
-| 11 | יְעַנֶּה | Yes | Imperfect | 3ms | ענה | Piel — Factitive; III-ה Impf. 3ms: יְ prefix + patach under ע + dagesh forte in נּ + tsere-He; "will humble" |
+| 11 | יְעַנֶּה | Yes | Imperfect | 3ms | ענה | Piel — Factitive; III-ה Impf. 3ms: יְ prefix + Pathach under ע + dagesh forte in נּ + Tsere-He; "will humble" |
 | 12 | גִּלָּה | Yes | Perfect | 3ms | גלה | Piel — Declarative/Intensive; III-ה root גלה: Hireq under ג + dagesh forte in לּ + ָה; "revealed" |
 | 13 | וַיְצַוּוּ | Yes | Wayyiqtol | 3mp | צוה | Piel — Denominative; Wayyiqtol 3mp of צוה III-ה: וַיְ + צַ + וּ (3mp ending); "they commanded/sent word" |
-| 14 | מְצַוְּךָ | Yes | Participle | ms + 2ms obj. | צוה | Piel — Denominative; Piel Ptc. ms with 2ms suffix: מְ prefix + patach under צ + dagesh in וּ; "commanding you" |
+| 14 | מְצַוְּךָ | Yes | Participle | ms + 2ms obj. | צוה | Piel — Denominative; Piel Ptc. ms with 2ms suffix: מְ prefix + Pathach under צ + dagesh in וּ; "commanding you" |
 | 15 | הוּבָא | No | Perfect | 3ms | בוא | NOT Piel — Hophal Pf. 3ms of I-י root בוא; הוּ prefix (u-class) = Hophal; "was brought" |
 
 > **Notes on distractors:**

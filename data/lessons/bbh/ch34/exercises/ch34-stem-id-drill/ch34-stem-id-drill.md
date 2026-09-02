@@ -51,8 +51,8 @@ Write your answers in the blank columns.
 
 | Stem | Perfect marker | Imperfect prefix vowel | Participle prefix |
 |---|---|---|---|
-| Qal | Patakh under R1 | Shewa (יִ–) | נֹ– / קֹ– (active) |
-| Niphal | נִ prefix (perfect) / נָ (part.) | יִקָּ– (assimilation + qamets) | נִקְ– |
+| Qal | Pathach under R1 | Shewa (יִ–) | נֹ– / קֹ– (active) |
+| Niphal | נִ prefix (perfect) / נָ (part.) | יִקָּ– (assimilation + Qamets) | נִקְ– |
 | Piel | Dagesh in R2; Tsere/Hireq under R1 | יְ– | מְ– |
 | Pual | Dagesh in R2; Qibbuts/Shureq under R1 | יְ– + Qibbuts | מְ– + Qibbuts |
 | Hiphil | הִ prefix; Tsere/Hireq-Yod in stem | יַ–; Hireq under R2 | מַ–; Hireq under R2 |

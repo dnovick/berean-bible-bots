@@ -139,7 +139,7 @@
 
 | # | Form | Root | Class | Prep | Function | Gloss |
 |---|---|---|---|---|---|---|
-| 1 | לֵאמֹ֑ר | אמר | I-aleph | לְ | Quotative | "saying"; introduces God's direct speech; tsere under ל (ל + hateph-seghol = tsere) |
+| 1 | לֵאמֹ֑ר | אמר | I-aleph | לְ | Quotative | "saying"; introduces God's direct speech; Tsere under ל (ל + hateph-Seghol = Tsere) |
 
 ### Passage 2 — Gen 11:5
 
@@ -189,9 +189,9 @@
 
 | # | Form | Root | Class | Prep | Function | Gloss |
 |---|---|---|---|---|---|---|
-| 11 | לָלֶ֖דֶת | ילד | I-י | לְ | Epexegetical | "to bear/give birth"; I-י IC (seghol-dalet-taw); follows עֵת = "a time to…" |
-| 12 | לָמ֑וּת | מות | Biconsonantal | לְ | Epexegetical | "to die"; full shureq; לָ prefix before biconsonantal IC; follows עֵת |
-| 13 | לִנְטֹ֙עַ֙ | נטע | Strong B (gutt. R3) | לְ | Epexegetical | "to plant"; gutt. patach at R3 (ע); follows עֵת |
+| 11 | לָלֶ֖דֶת | ילד | I-י | לְ | Epexegetical | "to bear/give birth"; I-י IC (Seghol-dalet-taw); follows עֵת = "a time to…" |
+| 12 | לָמ֑וּת | מות | Biconsonantal | לְ | Epexegetical | "to die"; full Shureq; לָ prefix before biconsonantal IC; follows עֵת |
+| 13 | לִנְטֹ֙עַ֙ | נטע | Strong B (gutt. R3) | לְ | Epexegetical | "to plant"; gutt. Pathach at R3 (ע); follows עֵת |
 | 14 | לַעֲק֔וֹר | עקר | I-gutt. | לְ | Epexegetical | "to uproot"; chateph under ע; follows עֵת; all four IC forms in this verse share the same epexegetical function |
 
 ### Passage 10 — Gen 45:4–5

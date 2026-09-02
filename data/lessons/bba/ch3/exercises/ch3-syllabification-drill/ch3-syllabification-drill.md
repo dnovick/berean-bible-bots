@@ -63,19 +63,19 @@
 | # | Word | Division | Types | Stress | Special Features |
 |---|---|---|---|---|---|
 | 1 | מַלְכָּא | מַל | כָּא | C · C | ′כָּא (ultima) | Final א quiescent (det. state suffix) |
-| 2 | אֱלָהָא | אֱ | לָ | הָא | O · O · C | ′הָא (ultima) | Opening sheva = vocal; hateph seghol under aleph; final א quiescent |
+| 2 | אֱלָהָא | אֱ | לָ | הָא | O · O · C | ′הָא (ultima) | Opening Shewa = vocal; hateph Seghol under aleph; final א quiescent |
 | 3 | בֵּית | בֵּית | — | C | ′בֵּית (monosyllable) | Waw is mater for Tsere |
 | 4 | מַלְכִין | מַל | כִין | C · C | ′כִין (ultima) | Yod is mater for Hireq Gadol |
-| 5 | כְּתַב | כְּ | תַב | O · C | ′תַב (ultima) | Opening sheva = vocal |
-| 6 | אֲבוּהִי | אֲ | בוּ | הִי | O · O · O | ′הִי (ultima) | Hateph Patach under Aleph; Waw = Shuruq (ū); Yod = mater |
-| 7 | יְהוּד | יְ | הוּד | O · C | ′הוּד (ultima) | Opening sheva = vocal; Waw = Shuruq |
+| 5 | כְּתַב | כְּ | תַב | O · C | ′תַב (ultima) | Opening Shewa = vocal |
+| 6 | אֲבוּהִי | אֲ | בוּ | הִי | O · O · O | ′הִי (ultima) | Hateph Pathach under Alef; Waw = Shuruq (ū); Yod = mater |
+| 7 | יְהוּד | יְ | הוּד | O · C | ′הוּד (ultima) | Opening Shewa = vocal; Waw = Shuruq |
 | 8 | שְׁמַיָּא | שְׁ | מַי | יָא | O · C · C | ′יָא (ultima) | Dagesh Forte in Yod = doubled: מַיּ divides as מַי·יָא |
 
 ### Part B
 
 | # | Word | Division | Types | Stress | Special Features |
 |---|---|---|---|---|---|
-| 9 | שַׁבַּת | שַׁב | בַּת | C · C | ′בַּת (ultima) | Dagesh Forte in Beth = Beth is doubled |
+| 9 | שַׁבַּת | שַׁב | בַּת | C · C | ′בַּת (ultima) | Dagesh Forte in Bet = Bet is doubled |
 | 10 | כַּסְּדִים | כַּסּ | דִים | C · C | ′דִים (ultima) | Dagesh Forte in Samech |
 | 11 | הַדַּבְרִין | הַד | דַבְ | רִין | C · C · C | ′רִין (ultima) | Dagesh Forte in Dalet |
 | 12 | מִנַּי | מִנ | נַי | C · O | ′נַי (ultima) | Dagesh Forte in Nun; assimilated Nun |
@@ -84,16 +84,16 @@
 
 | # | Word | Division | Types | Stress | Special Features |
 |---|---|---|---|---|---|
-| 13 | אָמַר | אָ | מַר | O · C | ′מַר (ultima) | Long Qamets in open syllable; Aleph opens word |
-| 14 | חַכִּים | חַכּ | כִים | C · C | ′כִים (ultima) | Dagesh Forte in Kaph; Guttural (Cheth) takes Patach |
+| 13 | אָמַר | אָ | מַר | O · C | ′מַר (ultima) | Long Qamets in open syllable; Alef opens word |
+| 14 | חַכִּים | חַכּ | כִים | C · C | ′כִים (ultima) | Dagesh Forte in Kaf; Guttural (Cheth) takes Pathach |
 | 15 | עִם | עִם | — | C | ′עִם (monosyllable) | Ayin = guttural; short Hireq in closed syllable |
-| 16 | מַלְאַךְ | מַל | אַךְ | C · C | ′אַךְ (ultima) | Aleph in second syllable; not quiescent here (has vowel) |
+| 16 | מַלְאַךְ | מַל | אַךְ | C · C | ′אַךְ (ultima) | Alef in second syllable; not quiescent here (has vowel) |
 
 ### Part D
 
 | # | Word | Division | Types | Stress | Special Features |
 |---|---|---|---|---|---|
-| 17 | נְבוּכַדְנֶצַּר | נְ·בוּ·כַד·נֶצּ·צַר | O·O·C·C·C | ′צַר (ultima) | Opening vocal sheva; Dagesh Forte in Tsade; long word with propretonic reduction at נְ |
+| 17 | נְבוּכַדְנֶצַּר | נְ·בוּ·כַד·נֶצּ·צַר | O·O·C·C·C | ′צַר (ultima) | Opening vocal Shewa; Dagesh Forte in Tsade; long word with propretonic reduction at נְ |
 | 18 | מַלְכוּתָא | מַל·כוּ·תָא | C·O·C | ′תָא (ultima) | Three syllables; Waw = Shuruq; final א quiescent |
-| 19 | בְּיוֹם | בְּ·יוֹם | O·C | ′יוֹם (ultima) | Prefix בְּ = vocal sheva; Waw = Holem mater |
-| 20 | לְמַלְכָּא | לְ·מַל·כָּא | O·C·C | ′כָּא (ultima) | Prefix לְ = vocal sheva; propretonic מַ remains short |
+| 19 | בְּיוֹם | בְּ·יוֹם | O·C | ′יוֹם (ultima) | Prefix בְּ = vocal Shewa; Waw = Holem mater |
+| 20 | לְמַלְכָּא | לְ·מַל·כָּא | O·C·C | ′כָּא (ultima) | Prefix לְ = vocal Shewa; propretonic מַ remains short |

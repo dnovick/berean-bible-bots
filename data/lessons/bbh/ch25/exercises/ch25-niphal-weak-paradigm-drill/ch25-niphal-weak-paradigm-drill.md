@@ -78,13 +78,13 @@ Root: נפל — Qal meaning: to fall
 | Form | Answer | Notes |
 |---|---|---|
 | Perfect 3ms | נִפַּל | נִ prefix; dagesh forte in פּ (the root nun does NOT assimilate in perfect) |
-| Perfect 3fs | נִפְּלָה | 3fs ָה suffix; shewa under פ before suffix |
+| Perfect 3fs | נִפְּלָה | 3fs ָה suffix; Shewa under פ before suffix |
 | Perfect 3cp | נִפְּלוּ | 3cp ו suffix |
 | Imperfect 3ms | יִפָּל | Root nun assimilates: יִ + פָּ (dagesh forte) + ל |
 | Imperfect 3fs | תִּפָּל | Feminine prefix תּ |
-| Imperfect 3mp | יִפְּלוּ | 3mp ו suffix; shewa under פ |
+| Imperfect 3mp | יִפְּלוּ | 3mp ו suffix; Shewa under פ |
 | Imperative 2ms | הִפָּלֵל | הִ prefix + dagesh forte in פּ + ֵל ending |
-| Participle ms | נֹפֵל | Unusual: I-נ Niphal participle takes נֹ (holem) under first root letter |
+| Participle ms | נֹפֵל | Unusual: I-נ Niphal participle takes נֹ (Holem) under first root letter |
 
 ---
 
@@ -94,5 +94,5 @@ Root: נפל — Qal meaning: to fall
 |---|---|---|
 | Perfect 3ms | נִגְלָה (ָה ending) | נִפַּל (dagesh in R2) |
 | Imperfect 3ms | יִגָּלֶה (ֶה ending) | יִפָּל (root נ assimilates) |
-| Participle ms | נִגְלֶה (ֶה ending) | נֹפֵל (holem under נ) |
+| Participle ms | נִגְלֶה (ֶה ending) | נֹפֵל (Holem under נ) |
 | Imperative 2ms | הִגָּלֵה | הִפָּלֵל |

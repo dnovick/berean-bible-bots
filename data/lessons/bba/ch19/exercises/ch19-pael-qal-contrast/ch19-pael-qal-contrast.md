@@ -16,9 +16,9 @@ For each numbered Aramaic verbal form drawn from Daniel or Ezra, provide:
 
 **Quick diagnostics:**
 
-- **Peal Perfect 3ms**: CvCaC — shewa under R1, patach under R2; no dagesh in R2 (e.g., כְּתַב, אֲמַר)
-- **Pael Perfect 3ms**: CaCCēC — patach under R1, **dagesh forte in R2**, tsere under R2 (e.g., כַּתֵּב, שַׁלַּח); the dagesh in R2 is the key marker
-- **Pael Imperfect 3ms**: יְ‑ prefix (shewa) + CaCCeC pattern (e.g., יְבַטֵּל)
+- **Peal Perfect 3ms**: CvCaC — Shewa under R1, Pathach under R2; no dagesh in R2 (e.g., כְּתַב, אֲמַר)
+- **Pael Perfect 3ms**: CaCCēC — Pathach under R1, **dagesh forte in R2**, Tsere under R2 (e.g., כַּתֵּב, שַׁלַּח); the dagesh in R2 is the key marker
+- **Pael Imperfect 3ms**: יְ‑ prefix (Shewa) + CaCCeC pattern (e.g., יְבַטֵּל)
 - **Pael Participle ms**: מְ‑ prefix + CaCCeC (e.g., מְשַׁבַּח)
 - **Summary**: dagesh forte in R2 = Pael; no dagesh in R2 = Peal
 
@@ -95,4 +95,4 @@ For each numbered Aramaic verbal form drawn from Daniel or Ezra, provide:
 - **Item 12** (רַבִּי from רבה): The Peal of רבה would mean "to be/become great." The Pael is transitive and factitive: "he made great" or "he caused to be great / magnified." The subject causes the object to enter the state of greatness.
 - **Item 14** (כַּבֵּד from כבד): The Peal would mean "to be heavy/honored." The Pael is factitive: "he honored" — he caused the object to be in a state of honor. This is the classic factitive pattern: Pael causes the state expressed by the Peal stative.
 
-**3.** The **Pael Participle ms** pattern is מְCaCCaC: a מְ‑ prefix (with shewa) followed by the Pael stem vowels. For item 18 (מְשַׁבַּח): מְ‑ prefix + שַׁבַּח (patach under R1, dagesh in R2, patach under R2). The **Pael Perfect 3ms** of the same root שׁבח would be **שַׁבַּח** — identical to the stem portion of the participle but without the מְ‑ prefix. The only distinction is the מְ‑ prefix, which converts the Perfect form into a Participle. This is why the prefix מְ‑ is the critical marker: מְשַׁבַּח = Participle (ongoing action); שַׁבַּח = Perfect 3ms (completed action).
+**3.** The **Pael Participle ms** pattern is מְCaCCaC: a מְ‑ prefix (with Shewa) followed by the Pael stem vowels. For item 18 (מְשַׁבַּח): מְ‑ prefix + שַׁבַּח (Pathach under R1, dagesh in R2, Pathach under R2). The **Pael Perfect 3ms** of the same root שׁבח would be **שַׁבַּח** — identical to the stem portion of the participle but without the מְ‑ prefix. The only distinction is the מְ‑ prefix, which converts the Perfect form into a Participle. This is why the prefix מְ‑ is the critical marker: מְשַׁבַּח = Participle (ongoing action); שַׁבַּח = Perfect 3ms (completed action).

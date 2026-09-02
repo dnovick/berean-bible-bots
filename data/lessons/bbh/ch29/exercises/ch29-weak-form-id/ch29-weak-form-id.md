@@ -83,7 +83,7 @@
 | 54 | יֻשְׁלַח | (paradigmatic) | | | |
 | 55 | מֻשְׁלַחַת | (paradigmatic) | | | |
 
-### Group 8: III-א (Lamed-Aleph)
+### Group 8: III-א (Lamed-Alef)
 
 | # | Form | Reference | Conjugation | PGN | Root |
 |---|---|---|---|---|---|
@@ -136,31 +136,31 @@
 | 13 | יֻּכּוּ | Wayyiqtol | 3mp | נָכָה | קִבּוּץ prefix + dagesh in R2 (כּ) + וּ plural ending; I-nun; III-he |
 | 14 | יֻּתַּן | Imperfect | 3ms | נָתַן | קִבּוּץ prefix + dagesh in R2 (תּ) — I-nun; also I-nun of נָתַן causes R3 dagesh via geminate assimilation |
 | 15 | יֻּקַּם | Imperfect | 3ms | נָקַם | קִבּוּץ prefix + dagesh in R2 (קּ) — I-nun: נ of נָקַם has assimilated |
-| 16 | הֻגְלָה | Perfect | 3ms | גָּלָה | קִבּוּץ under הֻ + III-he ה ending (qamets + he) |
+| 16 | הֻגְלָה | Perfect | 3ms | גָּלָה | קִבּוּץ under הֻ + III-he ה ending (Qamets + he) |
 | 17 | הֻגְלוּ | Perfect | 3cp | גָּלָה | קִבּוּץ under הֻ + וּ plural ending (III-he 3cp Qatal pattern) |
 | 18 | מוּכָּה | Participle | fs | נָכָה | מוּ prefix; III-he: ה ending; also I-nun marker (dagesh in R2 כּ) |
-| 19 | יֻּכֶּה | Imperfect | 3ms | נָכָה | קִבּוּץ prefix + dagesh in R2 + III-he seghol-he ending |
+| 19 | יֻּכֶּה | Imperfect | 3ms | נָכָה | קִבּוּץ prefix + dagesh in R2 + III-he Seghol-he ending |
 | 20 | הֻלַּד | Perfect | 3ms | יָלַד | קִבּוּץ under הֻ + dagesh in R2 (לּ); I-yod (יָלַד) with assimilation of ל? No — root is יָלַד; the dagesh in ל results from the I-yod Hophal behavior treating the yod as quiescent; compare Hophal of יָלַד |
-| 21 | הוּחַל | Perfect | 3ms | חָלַל | הוּ prefix; I-guttural: ח takes compound shewa (or full vowel) — "it was begun/profaned" |
-| 22 | יָחֳרַם | Imperfect | 3ms | חָרַם | I-guttural: hateph-qamets under ח (יָ + חֳ); "it will be forfeited/devoted" |
-| 23 | הֻחְלָה | Perfect | 3fs | חָלָה | קִבּוּץ under הֻ + shewa under guttural + III-he ending (ה) |
-| 24 | הֻאֲמַן | Perfect | 3ms | אָמַן | קִבּוּץ under הֻ + hateph-patach under א (I-aleph guttural); "he was found faithful" |
-| 25 | יֶֽחֱטָא | Imperfect | 3ms | חָטָא | I-guttural: hateph-seghol under ח; III-aleph ending; "he will be pardoned/cleansed" |
+| 21 | הוּחַל | Perfect | 3ms | חָלַל | הוּ prefix; I-guttural: ח takes compound Shewa (or full vowel) — "it was begun/profaned" |
+| 22 | יָחֳרַם | Imperfect | 3ms | חָרַם | I-guttural: hateph-Qamets under ח (יָ + חֳ); "it will be forfeited/devoted" |
+| 23 | הֻחְלָה | Perfect | 3fs | חָלָה | קִבּוּץ under הֻ + Shewa under guttural + III-he ending (ה) |
+| 24 | הֻאֲמַן | Perfect | 3ms | אָמַן | קִבּוּץ under הֻ + Hateph Pathach under א (I-aleph guttural); "he was found faithful" |
+| 25 | יֶֽחֱטָא | Imperfect | 3ms | חָטָא | I-guttural: hateph-Seghol under ח; III-aleph ending; "he will be pardoned/cleansed" |
 | 26 | הוּסַב | Perfect | 3ms | סָבַב | הוּ prefix; geminate root ס-ב-ב (R2=R3); "it was turned/brought around" |
 | 27 | מוּסַבּוֹת | Participle | fp | סָבַב | מוּ prefix + dagesh in R3 (בּ) — geminate dagesh; feminine plural |
 | 28 | הֻסַּב | Perfect | 3ms | סָבַב | קִבּוּץ + dagesh in R2 (סּ) — geminate contraction form; alternate to הוּסַב |
 | 29 | יֻּתַּם | Imperfect | 3ms | תָּמַם | קִבּוּץ + dagesh in R2 — geminate root ת-מ-מ; "it will be completed/finished" |
 | 30 | יֻּכַּל | Imperfect | 3ms | כָּלַל | קִבּוּץ + dagesh in R2 (כּ) — geminate root כ-ל-ל; "it will be able/completed" |
-| 31 | וַתֻּקַּח | Wayyiqtol | 3fs | לָקַח | קִבּוּץ prefix; dagesh in R2 (ק) from ל-assimilation; R3 ח (lamed-guttural) refuses dagesh; patach under ח |
-| 32 | יֻקַּח | Imperfect | 3ms | לָקַח | קִבּוּץ prefix; ל of לָקַח assimilates (like I-nun) → dagesh in ק; R3 ח takes patach (cannot take dagesh) |
-| 33 | הֻמְלַחַתְּ | Perfect | 2fs | מָלַח | קִבּוּץ under הֻ; shewa under מ (R1); R3 ח refuses dagesh — patach furtive before ח; 2fs suffix תּ |
-| 34 | יֻשְׁלַח | Imperfect | 3ms | שָׁלַח | קִבּוּץ prefix + shewa under שׁ; R3 ח guttural refuses dagesh; patach under final ח; contrast strong יֻקְטַל |
-| 35 | מֻשְׁלַחַת | Participle | fs | שָׁלַח | מֻ prefix (Hophal Ptc); R3 ח: patach + patach furtive before final ח; feminine ת suffix; compare strong מֻקְטֶלֶת |
-| 36 | מוּצֵאת | Participle | fs | יָצָא | מוּ prefix (שׁוּרֶק) — I-yod root; R3 א quiesces after tsere (ֵ); feminine ת suffix |
-| 37 | הוּצָאָה | Perfect | 3fs | יָצָא | הוּ prefix (שׁוּרֶק) — I-yod root; R3 א quiesces after qamets (ָ); feminine 3fs suffix ָה |
-| 38 | מוּצָאוֹת | Participle | fp | יָצָא | מוּ prefix (Hophal Ptc); R3 א quiesces after qamets (ָ); feminine plural וֹת ending |
-| 39 | הֻמְצָא | Perfect | 3ms | מָצָא | קִבּוּץ under הֻ; shewa under מ (R1); R3 א quiesces silently after qamets (ָ) |
-| 40 | יֻמְצָא | Imperfect | 3ms | מָצָא | קִבּוּץ prefix (יֻ); shewa under מ (R1); R3 א quiesces after qamets — sole III-א diagnostic |
+| 31 | וַתֻּקַּח | Wayyiqtol | 3fs | לָקַח | קִבּוּץ prefix; dagesh in R2 (ק) from ל-assimilation; R3 ח (lamed-guttural) refuses dagesh; Pathach under ח |
+| 32 | יֻקַּח | Imperfect | 3ms | לָקַח | קִבּוּץ prefix; ל of לָקַח assimilates (like I-nun) → dagesh in ק; R3 ח takes Pathach (cannot take dagesh) |
+| 33 | הֻמְלַחַתְּ | Perfect | 2fs | מָלַח | קִבּוּץ under הֻ; Shewa under מ (R1); R3 ח refuses dagesh — Pathach furtive before ח; 2fs suffix תּ |
+| 34 | יֻשְׁלַח | Imperfect | 3ms | שָׁלַח | קִבּוּץ prefix + Shewa under שׁ; R3 ח guttural refuses dagesh; Pathach under final ח; contrast strong יֻקְטַל |
+| 35 | מֻשְׁלַחַת | Participle | fs | שָׁלַח | מֻ prefix (Hophal Ptc); R3 ח: Pathach + Pathach furtive before final ח; feminine ת suffix; compare strong מֻקְטֶלֶת |
+| 36 | מוּצֵאת | Participle | fs | יָצָא | מוּ prefix (שׁוּרֶק) — I-yod root; R3 א quiesces after Tsere (ֵ); feminine ת suffix |
+| 37 | הוּצָאָה | Perfect | 3fs | יָצָא | הוּ prefix (שׁוּרֶק) — I-yod root; R3 א quiesces after Qamets (ָ); feminine 3fs suffix ָה |
+| 38 | מוּצָאוֹת | Participle | fp | יָצָא | מוּ prefix (Hophal Ptc); R3 א quiesces after Qamets (ָ); feminine plural וֹת ending |
+| 39 | הֻמְצָא | Perfect | 3ms | מָצָא | קִבּוּץ under הֻ; Shewa under מ (R1); R3 א quiesces silently after Qamets (ָ) |
+| 40 | יֻמְצָא | Imperfect | 3ms | מָצָא | קִבּוּץ prefix (יֻ); Shewa under מ (R1); R3 א quiesces after Qamets — sole III-א diagnostic |
 
 ---
 
@@ -181,7 +181,7 @@
 | 51 | תּוּרַד | I-yod / I-vav | Imperfect | 2ms | יָרַד | תּוּ prefix = 2ms Hophal Impf; שׁוּרֶק marks I-yod/vav; R1 yod quiesces |
 | 52 | הוּמְתוּ | Biconsonantal | Perfect | 3cp | מוּת | הוּ prefix + 3cp ending וּ; contrast 3ms יוּמַת (item 7) |
 | 53 | הֻגַּדְתִּי | I-nun | Perfect | 1cs | נָגַד | קִבּוּץ under הֻ + dagesh in R2 (גּ, I-nun assimilation) + 1cs suffix תִּי |
-| 54 | הֻגְלֵיתֶם | III-he | Perfect | 2mp | גָּלָה | קִבּוּץ under הֻ + III-he: tsere-yod pattern before 2mp suffix תֶם |
+| 54 | הֻגְלֵיתֶם | III-he | Perfect | 2mp | גָּלָה | קִבּוּץ under הֻ + III-he: Tsere-yod pattern before 2mp suffix תֶם |
 | 55 | הוּרַדְנוּ | I-yod / I-vav | Perfect | 1cp | יָרַד | הוּ prefix (I-yod Hophal Pf) + 1cp suffix נוּ; R1 yod quiesces |
 
 ---

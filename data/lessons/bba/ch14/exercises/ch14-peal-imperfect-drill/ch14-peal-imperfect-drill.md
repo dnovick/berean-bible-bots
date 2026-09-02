@@ -84,17 +84,17 @@ All forms are Peal imperfect. Verb types include strong roots and several weak c
 
 ### Answers to Reflection Questions
 
-**1.** Both יִכְתֻּב and יִקְטֻל are 3ms because they carry the 3ms prefix יִ- (yod + hireq) and no suffix. The stem vowel is qibbuts (ֻ) under the third radical — the u-class pattern of the Aramaic Peal imperfect. The Hebrew Qal equivalent would use holem (ֹ): Hebrew יִכְתֹּב vs. Aramaic יִכְתֻּב. The shift from o to u is the primary phonological marker distinguishing Aramaic Peal imperfect from Hebrew Qal imperfect.
+**1.** Both יִכְתֻּב and יִקְטֻל are 3ms because they carry the 3ms prefix יִ- (yod + Hireq) and no suffix. The stem vowel is Qibbuts (ֻ) under the third radical — the u-class pattern of the Aramaic Peal imperfect. The Hebrew Qal equivalent would use Holem (ֹ): Hebrew יִכְתֹּב vs. Aramaic יִכְתֻּב. The shift from o to u is the primary phonological marker distinguishing Aramaic Peal imperfect from Hebrew Qal imperfect.
 
-**2.** Item 2 is יֵאמַר (3ms): prefix יֵ- (tsere, from lengthened hireq before quiescent aleph) + no suffix. Item 19 is תֵּאמְרוּן (2mp): prefix תֵּ- (tav + tsere) + suffix **-וּן** (shureq + nun). Both forms show the same compensatory lengthening: the I-aleph root causes the prefix hireq (יִ- / תִּ-) to lengthen to tsere (יֵ- / תֵּ-) because the initial aleph of the root quiesces and cannot carry its own vowel.
+**2.** Item 2 is יֵאמַר (3ms): prefix יֵ- (Tsere, from lengthened Hireq before quiescent aleph) + no suffix. Item 19 is תֵּאמְרוּן (2mp): prefix תֵּ- (tav + Tsere) + suffix **-וּן** (Shureq + nun). Both forms show the same compensatory lengthening: the I-aleph root causes the prefix Hireq (יִ- / תִּ-) to lengthen to Tsere (יֵ- / תֵּ-) because the initial aleph of the root quiesces and cannot carry its own vowel.
 
 **3.** The root יהב (to give) is a I-yod verb whose yod drops in the imperfect, leaving only two consonants — a pattern that would produce an unpronounceable or extremely sparse form. Biblical Aramaic uses a **suppletive form** from the related root נתן (cognate with Hebrew נָתַן "to give") for the imperfect. The form יִנְתֵּן follows the I-nun pattern: the initial nun assimilates into the following tav (the dagesh in תּ marks this assimilation), producing יִנְתֵּן rather than *יִנְנְתֵּן. This suppletive pair (יהב in the perfect / נתן-derived form in the imperfect) is lexically irregular and must be memorized.
 
-**4.** In the Peal perfect, the I-nun root נְפַל preserves its nun fully: נ-פ-ל. In the Peal imperfect (יִפַּל), the initial nun **assimilates** into the following consonant (peh), which is marked by a dagesh forte (פּ). The root consonant is still present — encoded in the dagesh — but is no longer written as a separate letter. This is identical to the Hebrew Qal imperfect of the same root: Hebrew יִפֹּל also shows the assimilated nun as dagesh forte in peh. The difference between the two is only the stem vowel: Hebrew holem (יִפֹּל) vs. Aramaic patach (יִפַּל).
+**4.** In the Peal perfect, the I-nun root נְפַל preserves its nun fully: נ-פ-ל. In the Peal imperfect (יִפַּל), the initial nun **assimilates** into the following consonant (peh), which is marked by a dagesh forte (פּ). The root consonant is still present — encoded in the dagesh — but is no longer written as a separate letter. This is identical to the Hebrew Qal imperfect of the same root: Hebrew יִפֹּל also shows the assimilated nun as dagesh forte in peh. The difference between the two is only the stem vowel: Hebrew Holem (יִפֹּל) vs. Aramaic Pathach (יִפַּל).
 
 **5.** All three forms share the prefix system and root consonants כ-ת-ב:
-- Item 16 (תִּכְתְּבוּן, 2mp): prefix תִּ- + suffix **-וּן** (shureq + nun). Hebrew 2mp equivalent: תִּכְתְּבוּ (no nun).
-- Item 17 (תִּכְתְּבִין, 2fs): prefix תִּ- + suffix **-ִין** (hireq + yod + nun). Hebrew 2fs equivalent: תִּכְתְּבִי (no nun, just yod).
-- Item 18 (יִכְתְּבָן, 3fp): prefix יִ- + suffix **-ָן** (qamets + nun). Hebrew 3fp equivalent: תִּכְתֹּבְנָה (different prefix tav and completely different suffix).
+- Item 16 (תִּכְתְּבוּן, 2mp): prefix תִּ- + suffix **-וּן** (Shureq + nun). Hebrew 2mp equivalent: תִּכְתְּבוּ (no nun).
+- Item 17 (תִּכְתְּבִין, 2fs): prefix תִּ- + suffix **-ִין** (Hireq + yod + nun). Hebrew 2fs equivalent: תִּכְתְּבִי (no nun, just yod).
+- Item 18 (יִכְתְּבָן, 3fp): prefix יִ- + suffix **-ָן** (Qamets + nun). Hebrew 3fp equivalent: תִּכְתֹּבְנָה (different prefix tav and completely different suffix).
 
 The pattern: Aramaic adds a final **nun** to the plural and 2fs suffixes where Hebrew either omits it (2mp, 2fs) or uses a different ending altogether (3fp). This "nun paragogicum" is one of the most reliable Aramaic diagnostics.

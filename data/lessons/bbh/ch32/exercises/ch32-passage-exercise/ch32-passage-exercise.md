@@ -141,14 +141,14 @@ For each bolded verb, indicate:
 
 | # | Verb | Pual? | Conjugation | PGN | Root | Stem / Function |
 |---|---|---|---|---|---|---|
-| 1 | תְּבָרֵךְ | No | Imperfect | 2ms | ברך | Piel — Intensive: "you bless" (R2=ר; Piel: tsere under R2) |
+| 1 | תְּבָרֵךְ | No | Imperfect | 2ms | ברך | Piel — Intensive: "you bless" (R2=ר; Piel: Tsere under R2) |
 | 2 | מְבֹרָךְ | Yes | Participle | ms | ברך | Pual — Passive: "blessed" (Qamets under R1 compensates for ר rejecting dagesh) |
 | 3 | יוּאָר | No | Imperfect | 3ms | ארר | Hophal — Passive: "shall be cursed" (יוּ prefix = u-class on preformative = Hophal marker; no dagesh in R2) |
 | 4 | תָאֹר | No | Imperfect | 2ms | ארר | Qal — "you shall curse" |
 | 5 | בָּרוּךְ | Yes | Participle | ms | ברך | Pual — Passive: "blessed" (substantival use; בָּ = Qamets for ר; same form as מְבֹרָךְ without מְ prefix) |
 | 6 | קַבֹּה | No | Inf. Absolute | — | קבב | Qal — Inf. Abs. in negated construction: "what God has not cursed" |
 | 7 | זָעַם | No | Perfect | 3ms | זעם | Qal — "has denounced/been indignant" |
-| 8 | בָרֵךְ | No | Inf. Absolute | — | ברך | Piel — Inf. Abs.: "to bless" (cognate construction with לָקַח; Piel Inf. Abs. of ברך; tsere under R2 confirms Piel) |
+| 8 | בָרֵךְ | No | Inf. Absolute | — | ברך | Piel — Inf. Abs.: "to bless" (cognate construction with לָקַח; Piel Inf. Abs. of ברך; Tsere under R2 confirms Piel) |
 | 9 | וַיָּמָת | No | Wayyiqtol | 3ms | מות | Qal — "and Abraham died" |
 | 10 | וַיֵּאָסֶף | No | Wayyiqtol | 3ms | אסף | Niphal — Passive: "was gathered to his people" |
 | 11 | וַיִּקְבְּרוּ | No | Wayyiqtol | 3mp | קבר | Qal — "and they buried him" (active) |

@@ -85,7 +85,7 @@
 | 7 | עָשִׂ֑ית | 2 | s | f | עשה | Simple Past | III-ה weak; 2fs suffix תְּ- |
 | 8 | יָדַ֖ע | 3 | s | m | ידע | Simple Past | I-י weak; 3ms form |
 | 9 | יָדַ֔עְתִּי | 1 | s | c | ידע | Perfect of Experience | Cain claims not to know; existential knowledge in question |
-| 10 | כָּבֵד | 3 | s | m | כבד | Stative | Type-B; tsere under R2; "is heavy/honored" |
+| 10 | כָּבֵד | 3 | s | m | כבד | Stative | Type-B; Tsere under R2; "is heavy/honored" |
 | 11 | שָׁמַ֥עְנוּ | 1 | p | c | שמע | Simple Past | 1cp suffix נוּ- |
 | 12 | קָטַלְתֶּם | 2 | p | m | קטל | Simple Past | 2mp suffix תֶּם- |
 | 13 | בָּרַ֖כְתָּ | 2 | s | m | ברך | Simple Past | 2ms suffix תָּ- |

@@ -258,4 +258,4 @@ For each bolded verb, indicate:
 > - **#3 הַשָּׁב**: Qal Participle ms of שׁוב with definite article הַ (dagesh in שׁ from article assimilation). The Hophal Participle ms with article = הַמּוּשָׁב — visible in Gen 43:12.
 > - **#7 הָקִים**: Hiphil Perfect 3ms of קום "he set up." Diagnostic: הָ- prefix + Hireq under ק = i-class (Hiphil). Contrast with Hophal הוּקַם (u-class).
 > - **#8 יִסְעוּ**: Qal Imperfect 3mp of I-נ root נסע. The יִ prefix (Hireq) is i-class = not Hophal.
-> - **#12 מְצָאָהּ**: Qal Perfect 3ms of מצא + 3fs obj. suffix. The מְ is Qal vowel pattern (shewa), not the Hophal Participle מוּ-.
+> - **#12 מְצָאָהּ**: Qal Perfect 3ms of מצא + 3fs obj. suffix. The מְ is Qal vowel pattern (Shewa), not the Hophal Participle מוּ-.

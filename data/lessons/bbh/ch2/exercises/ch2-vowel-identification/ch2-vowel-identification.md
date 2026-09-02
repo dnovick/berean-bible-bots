@@ -4,7 +4,7 @@
 
 ---
 
-**Instructions:** For each Hebrew form shown, identify: (1) Vowel Name, (2) Vowel Class (A / E / I / O / U / Reduced), (3) Quantity (Long / Short / Reduced), (4) Notes (e.g., mater lectionis present, composite shewa).
+**Instructions:** For each Hebrew form shown, identify: (1) Vowel Name, (2) Vowel Class (A / E / I / O / U / Reduced), (3) Quantity (Long / Short / Reduced), (4) Notes (e.g., mater lectionis present, composite Shewa).
 
 The letter מ (mem) serves as the carrier consonant for most items; א (aleph) is used for word-final ה items.
 
@@ -59,10 +59,10 @@ The letter מ (mem) serves as the carrier consonant for most items; א (aleph) i
 | 13 | מָ (closed, unaccented) | Qamets Hatuf | O | Short | Same shape as Qamets; O-class in closed unaccented syllable — context determines identity |
 | 14 | מֵי | Tsere Yod | E | Long | Tsere with yod mater lectionis; yod is quiescent |
 | 15 | כִּי | Hireq Yod | I | Long | Long I with yod mater; dagesh lene in kaph (begadkephat, word-initial); word = because/that/when |
-| 16 | מֲ | Hateph Pathach | A | Reduced | Composite shewa; A-class; used under gutturals (א ה ח ע) instead of vocal shewa; most common hatef |
-| 17 | מֱ | Hateph Seghol | E | Reduced | Composite shewa; E-class; used under gutturals; less common than Hateph Pathach |
-| 18 | מֳ | Hateph Qamets | O | Reduced | Composite shewa; O-class; rarest of the three hateph shewas; used under gutturals |
-| 19 | הֲ | Hateph Pathach | A | Reduced | Composite shewa under ה guttural; most common hateph shewa |
+| 16 | מֲ | Hateph Pathach | A | Reduced | Composite Shewa; A-class; used under gutturals (א ה ח ע) instead of vocal Shewa; most common Hateph |
+| 17 | מֱ | Hateph Seghol | E | Reduced | Composite Shewa; E-class; used under gutturals; less common than Hateph Pathach |
+| 18 | מֳ | Hateph Qamets | O | Reduced | Composite Shewa; O-class; rarest of the three hateph shewas; used under gutturals |
+| 19 | הֲ | Hateph Pathach | A | Reduced | Composite Shewa under ה guttural; most common hateph Shewa |
 | 20 | אָה | Qamets He | A | Long | Word-final ה as mater lectionis; ה is quiescent (no vowel); marks long A (e.g., תּוֹרָה) |
 | 21 | אֶה | Seghol He | E | Short | Word-final ה as mater lectionis; ה is quiescent; marks short E (e.g., שָׂדֶה) |
 | 22 | אֵה | Tsere He | E | Long | Word-final ה as mater lectionis; ה is quiescent; marks long E |
@@ -76,4 +76,4 @@ The letter מ (mem) serves as the carrier consonant for most items; א (aleph) i
 
 2. **Shewa identification:** The word יִקְטְלוּ contains two shewas — one after the qoph and one after the tet. Without looking ahead to Chapter 3, use the rules from Section 4 to determine which of these shewas is silent and which (if either) is vocal.
 
-3. **Mater lectionis vs. consonant:** In the word בֵּית ("house"), the yod (י) appears between two consonants with a tsere under the bet. Is the yod functioning as a consonant or as a mater lectionis? What feature of its pointing (or lack thereof) tells you which role it is playing?
+3. **Mater lectionis vs. consonant:** In the word בֵּית ("house"), the yod (י) appears between two consonants with a Tsere under the bet. Is the yod functioning as a consonant or as a mater lectionis? What feature of its pointing (or lack thereof) tells you which role it is playing?

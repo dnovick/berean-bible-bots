@@ -15,12 +15,12 @@ Use the **Diagnostic Signal** column as a hint when needed — cover it for a ha
 |---|---|
 | **III-א** | Silent final א; form looks almost like the strong root |
 | **III-ה** | Final ָה (perfect) / ֶה (imperfect/participle) / וֹת (inf. construct) / apocopated (wayyiqtol) |
-| **III-ח/ע** | *Patach furtive* before final ח/ע in open syllables (perfect/imperfect/participle); *patach* replaces *tsere* in short forms (wayyiqtol/imperative) |
+| **III-ח/ע** | *Pathach furtive* before final ח/ע in open syllables (perfect/imperfect/participle); *Pathach* replaces *Tsere* in short forms (wayyiqtol/imperative) |
 | **I-guttural** | נֶ prefix (perfect/participle); יֵ / הֵ prefix (imperfect/wayyiqtol/imperative/inf.); no dagesh in R1 |
 | **I-נ** | Dagesh forte in R2; root's own נ invisible throughout paradigm |
 | **I-י** | נוֹ prefix (perfect/weqatal/participle); יִוָּ / הִוָּ prefix (imperfect/wayyiqtol/imperative/inf.) |
-| **Biconsonantal** | נָ prefix (*qamets*) in perfect and participle ms; dagesh forte in R1 elsewhere |
-| **Geminate** | נָ prefix (*qamets*) in perfect/participle (same as Biconsonantal!); *dagesh forte* in R2/R3 elsewhere; perfect = participle |
+| **Biconsonantal** | נָ prefix (*Qamets*) in perfect and participle ms; dagesh forte in R1 elsewhere |
+| **Geminate** | נָ prefix (*Qamets*) in perfect/participle (same as Biconsonantal!); *dagesh forte* in R2/R3 elsewhere; perfect = participle |
 
 ---
 
@@ -31,7 +31,7 @@ Use the **Diagnostic Signal** column as a hint when needed — cover it for a ha
 | # | Form | Reference | Diagnostic Signal | Class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|---|
 | 1 | נִמְצָא | Gen 44:12 | silent final א; form identical to participle | | | | |
-| 2 | יִמָּצֵא | Gen 44:10 | final *tsere* + silent א | | | | |
+| 2 | יִמָּצֵא | Gen 44:10 | final *Tsere* + silent א | | | | |
 | 3 | וַיִּמָּצֵא | Gen 44:12 | wayyiqtol prefix + dagesh + silent final א | | | | |
 | 4 | הִמָּצֵא | Exo 22:3 | הִ prefix + dagesh + final silent א | | | | |
 | 5 | הַנִּמְצָא | Gen 47:14 | article + נִ prefix; final silent א | | | | |
@@ -41,7 +41,7 @@ Use the **Diagnostic Signal** column as a hint when needed — cover it for a ha
 | # | Form | Reference | Diagnostic Signal | Class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|---|
 | 6 | נִגְלָה | Isa 40:5 | final ָה (not a suffix — it is the root's ending) | | | | |
-| 7 | יִגָּלֶה | Isa 53:1 | final ֶה instead of *tsere* + consonant | | | | |
+| 7 | יִגָּלֶה | Isa 53:1 | final ֶה instead of *Tsere* + consonant | | | | |
 | 8 | וַיִּגָּל | Num 24:4 | apocopated wayyiqtol — the ה has been dropped | | | | |
 | 9 | לְהִגָּלוֹת | Isa 49:9 | הִ + dagesh + וֹת suffix (inf. construct of III-ה) | | | | |
 | 10 | וַיֵּרָא | Gen 12:7 | apocopated + compensatory lengthening for ר | | | | |
@@ -50,11 +50,11 @@ Use the **Diagnostic Signal** column as a hint when needed — cover it for a ha
 
 | # | Form | Reference | Diagnostic Signal | Class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|---|
-| 11 | נֶאֱמַר | Exo 5:13 | נֶ prefix + composite shewa under א | | | | |
+| 11 | נֶאֱמַר | Exo 5:13 | נֶ prefix + composite Shewa under א | | | | |
 | 12 | יֵאָמֵר | Num 21:14 | יֵ prefix (lengthened from יִ); no dagesh in א | | | | |
 | 13 | וַיֵּאָמֵר | Gen 10:9 | וַיֵּ (not וַיִּ); no dagesh in R1 | | | | |
 | 14 | הֵעָמֵד | Exo 9:16 | הֵ prefix (lengthened from הִ); no dagesh in ע | | | | |
-| 15 | נֶאֱמָן | Deu 7:9 | נֶ prefix + composite shewa; *qamets* under R2 | | | | |
+| 15 | נֶאֱמָן | Deu 7:9 | נֶ prefix + composite Shewa; *Qamets* under R2 | | | | |
 
 ### Group 4 — I-נ
 
@@ -63,34 +63,34 @@ Use the **Diagnostic Signal** column as a hint when needed — cover it for a ha
 | 16 | נִגַּשׁ | Gen 44:18 | נִ prefix; dagesh forte in ג (R2); נ of root invisible | | | | |
 | 17 | וַיִּגַּשׁ | Gen 44:18 | wayyiqtol + dagesh in R2; no dagesh expected in R1 | | | | |
 | 18 | נִצַּלְתֶּם | Exo 12:27 | נִ prefix; dagesh in צ (R2); 2mp suffix | | | | |
-| 19 | הִנָּצֵל | Prov 6:3 | הִ prefix; dagesh in נּ (R2 is נ of root); *tsere* | | | | |
+| 19 | הִנָּצֵל | Prov 6:3 | הִ prefix; dagesh in נּ (R2 is נ of root); *Tsere* | | | | |
 | 20 | וַיִּנָּצֵל | Gen 32:31 | wayyiqtol; dagesh in נּ (R2) | | | | |
 
 ### Group 5 — I-י
 
 | # | Form | Reference | Diagnostic Signal | Class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|---|
-| 21 | נוֹלַד | Gen 21:3 | נוֹ prefix + *patah* under R2 (perfect) | | | | |
+| 21 | נוֹלַד | Gen 21:3 | נוֹ prefix + *Pathach* under R2 (perfect) | | | | |
 | 22 | וַיִּוָּלֵד | Gen 4:18 | וַיִּוָּ cluster — the distinctive genealogical form | | | | |
-| 23 | יִוָּלֵד | Gen 17:17 | יִוָּ cluster; *tsere* under R2 | | | | |
+| 23 | יִוָּלֵד | Gen 17:17 | יִוָּ cluster; *Tsere* under R2 | | | | |
 | 24 | בְּהִוָּלֶד | Gen 21:5 | הִוָּ prefix + בְּ preposition; inf. construct | | | | |
-| 25 | נוֹלָד | 1 Kgs 13:2 | נוֹ prefix + *qamets* under R2 (participle vs. perfect) | | | | |
+| 25 | נוֹלָד | 1 Kgs 13:2 | נוֹ prefix + *Qamets* under R2 (participle vs. perfect) | | | | |
 
 ### Group 6 — III-ח/ע
 
 | # | Form | Reference | Diagnostic Signal | Class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|---|
-| 26 | נִשְׁמַע | Est 1:20 | *patach furtive* beneath final ע; open stressed syllable | | | | |
-| 27 | יִשָּׁמַע | Exo 28:35 | *patach* under R3 (not *tsere*); dagesh forte in שׁ (R1) | | | | |
-| 28 | וַיִּשָּׁמַע | Gen 45:2 | wayyiqtol + *patach* before final ע; no furtive | | | | |
-| 29 | הִשָּׁמַע | Deu 4:32 | הִ prefix + dagesh in שׁ + *patach* before final ע | | | | |
-| 30 | נִשְׁמָע | Ecc 12:13 | נִ prefix + *qamets* + *patach furtive* before ע | | | | |
+| 26 | נִשְׁמַע | Est 1:20 | *Pathach furtive* beneath final ע; open stressed syllable | | | | |
+| 27 | יִשָּׁמַע | Exo 28:35 | *Pathach* under R3 (not *Tsere*); dagesh forte in שׁ (R1) | | | | |
+| 28 | וַיִּשָּׁמַע | Gen 45:2 | wayyiqtol + *Pathach* before final ע; no furtive | | | | |
+| 29 | הִשָּׁמַע | Deu 4:32 | הִ prefix + dagesh in שׁ + *Pathach* before final ע | | | | |
+| 30 | נִשְׁמָע | Ecc 12:13 | נִ prefix + *Qamets* + *Pathach furtive* before ע | | | | |
 
 ### Group 7 — Biconsonantal
 
 | # | Form | Reference | Diagnostic Signal | Class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|---|
-| 31 | נָכוֹן | Gen 41:32 | **נָ prefix** (*qamets* under נ) + medial וֹ | | | | |
+| 31 | נָכוֹן | Gen 41:32 | **נָ prefix** (*Qamets* under נ) + medial וֹ | | | | |
 | 32 | יִכּוֹן | Psa 93:2 | dagesh forte in R1 (כּ); contracted root + וֹ | | | | |
 | 33 | נָכוֹן | Psa 57:8 | same form as perfect 3ms; participial use requires context | | | | |
 | 34 | וַיִּקּוֹם | (expected) | וַיִּ + dagesh forte in ק (R1); contracted root | | | | |
@@ -100,9 +100,9 @@ Use the **Diagnostic Signal** column as a hint when needed — cover it for a ha
 
 | # | Form | Reference | Diagnostic Signal | Class | Conjugation | PGN | Root |
 |---|---|---|---|---|---|---|---|
-| 36 | נָסַב | Josh 15:3 | *qamets* under נָ prefix — same signal as Biconsonantal; root is ס-ב-ב (not hollow) | | | | |
+| 36 | נָסַב | Josh 15:3 | *Qamets* under נָ prefix — same signal as Biconsonantal; root is ס-ב-ב (not hollow) | | | | |
 | 37 | וַיִּסֹּב | 1 Sam 7:16 | וַיִּ + *dagesh forte* in ב (R2=R3 doubled) | | | | |
-| 38 | יִסֹּב | Josh 19:34 | *dagesh forte* in ב; *holem* in contracted root | | | | |
+| 38 | יִסֹּב | Josh 19:34 | *dagesh forte* in ב; *Holem* in contracted root | | | | |
 | 39 | הִסֹּב | 2 Sam 18:30 | הִ prefix + *dagesh forte* in ב; same structure as Niphal imperative strong | | | | |
 | 40 | נָסַב | Psa 26:6 | same form as perfect 3ms — participial use requires context | | | | |
 
@@ -181,14 +181,14 @@ No diagnostic hints — identify the class first, then parse.
 | # | Class | Conjugation | PGN | Root | Note |
 |---|---|---|---|---|---|
 | 41 | III-ה | Imperfect/Jussive | 3fs | רָאָה | ר causes compensatory lengthening; final ֶה |
-| 42 | I-י | Wayyiqtol | 3ms | יָדַע | וַיִּוָּ cluster; *patach* under R2 (יָדַע class) |
-| 43 | I-guttural | Perfect | 3ms | עָמַד | נֶ prefix; composite shewa under ע |
+| 42 | I-י | Wayyiqtol | 3ms | יָדַע | וַיִּוָּ cluster; *Pathach* under R2 (יָדַע class) |
+| 43 | I-guttural | Perfect | 3ms | עָמַד | נֶ prefix; composite Shewa under ע |
 | 44 | III-א | Wayyiqtol | 3mp | מָצָא | 3mp ending; final silent א |
-| 45 | I-י | Perfect | 3ms | יָדַע | נוֹ prefix + *patach* under R2 |
+| 45 | I-י | Perfect | 3ms | יָדַע | נוֹ prefix + *Pathach* under R2 |
 | 46 | I-נ | Wayyiqtol | 3ms | נָגַשׁ | dagesh in ג (R2); root's נ assimilated |
 | 47 | III-ה | Imperative | 2ms | רָאָה | הֵ prefix (ר compensatory) + final ֵה |
-| 48 | III-ח/ע | Perfect | 3ms | שָׁלַח | נִ prefix + *patach furtive* before final ח |
-| 49 | Biconsonantal | Perfect | 3ms | כּוּן | נָ prefix (*qamets*) is the class marker |
+| 48 | III-ח/ע | Perfect | 3ms | שָׁלַח | נִ prefix + *Pathach furtive* before final ח |
+| 49 | Biconsonantal | Perfect | 3ms | כּוּן | נָ prefix (*Qamets*) is the class marker |
 | 50 | Geminate | Wayyiqtol | 3ms | סָבַב | וַיִּסֹּב — וַיִּ + *dagesh* in ב; root is ס-ב-ב (Geminate, not hollow) |
 | 51 | III-א | Perfect | 3cp | מָצָא | 3cp ending; final silent א |
 | 52 | I-guttural | Imperfect | 3mp | עָמַד | יֵ prefix + no dagesh in ע; 3mp ending |
@@ -203,10 +203,10 @@ No diagnostic hints — identify the class first, then parse.
 
 3. Items 10 (וַיֵּרָא, III-ה) and 13 (וַיֵּאָמֵר, I-guttural) both have the prefix וַיֵּ instead of the expected וַיִּ. Is this the same phonological rule producing the lengthening in both cases? Explain.
 
-4. Items 21 (נוֹלַד) and 25 (נוֹלָד) differ only in the vowel under R2 (*patach* vs. *qamets*). One is a perfect 3ms and the other is a participle ms. Which is which, and what grammatical behavior would each show in a clause?
+4. Items 21 (נוֹלַד) and 25 (נוֹלָד) differ only in the vowel under R2 (*Pathach* vs. *Qamets*). One is a perfect 3ms and the other is a participle ms. Which is which, and what grammatical behavior would each show in a clause?
 
-5. Items 26 (נִשְׁמַע, III-ח/ע perfect) and item 1 (נִמְצָא, III-א perfect) both begin with the Niphal נִ prefix. What distinguishes them visually, and what is the phonological reason the furtive *patach* appears before שָׁמַע but not before מָצָא?
+5. Items 26 (נִשְׁמַע, III-ח/ע perfect) and item 1 (נִמְצָא, III-א perfect) both begin with the Niphal נִ prefix. What distinguishes them visually, and what is the phonological reason the furtive *Pathach* appears before שָׁמַע but not before מָצָא?
 
 6. Items 31–33 all show the form נָכוֹן (Biconsonantal). Two are the same root (כּוּן) in two different conjugations. What is the only way to distinguish the perfect 3ms from the participle ms of a biconsonantal Niphal when their forms are identical, and how does this parallel the challenge of III-א discussed in question 1?
 
-7. Items 36 (נָסַב, Geminate perfect 3ms) and 40 (נָסַב, Geminate participle ms) are **identical** in form — the same problem as the Biconsonantal class (question 6). Both Geminate and Biconsonantal Niphal show נָ (*qamets*) in the perfect and participle. Given a form נָסַב, how do you even know whether the root is Geminate (ס-ב-ב) or Biconsonantal (some hollow root)? What information outside the vocalization must you use?
+7. Items 36 (נָסַב, Geminate perfect 3ms) and 40 (נָסַב, Geminate participle ms) are **identical** in form — the same problem as the Biconsonantal class (question 6). Both Geminate and Biconsonantal Niphal show נָ (*Qamets*) in the perfect and participle. Given a form נָסַב, how do you even know whether the root is Geminate (ס-ב-ב) or Biconsonantal (some hollow root)? What information outside the vocalization must you use?

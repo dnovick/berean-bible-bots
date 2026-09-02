@@ -81,10 +81,10 @@ For each Hebrew form below, identify:
 
 ### Key Patterns to Remember
 
-- **Niphal Perfect** — נִ prefix + patach under second root letter (נִקְטַל pattern)
-- **Niphal Imperfect** — יִ + dagesh forte in first root letter + tsere (יִשָּׁמֵר)
+- **Niphal Perfect** — נִ prefix + Pathach under second root letter (נִקְטַל pattern)
+- **Niphal Imperfect** — יִ + dagesh forte in first root letter + Tsere (יִשָּׁמֵר)
 - **Niphal Wayyiqtol** — וַיִּ + dagesh forte in first root letter (וַיִּשָּׁמֵר)
 - **Niphal Imperative / Inf. Absolute** — הִ prefix + dagesh forte in first root letter (הִשָּׁמֵר) — these two forms are identical
 - **Niphal Inf. Absolute** with נ roots — הִנָּתֵן (assimilation of נ)
 - **Qal Inf. Absolute** — internal ō vowel pattern (שָׁמוֹר, נָתוֹן)
-- **Niphal Participle** — נִ prefix, qamets under middle root letter (נִשְׁמָר)
+- **Niphal Participle** — נִ prefix, Qamets under middle root letter (נִשְׁמָר)

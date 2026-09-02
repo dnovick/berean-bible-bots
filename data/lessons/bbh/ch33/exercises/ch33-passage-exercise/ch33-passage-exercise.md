@@ -160,7 +160,7 @@ For each bolded verb, indicate:
 | 8 | נֻתְּנוּ | Yes | Perfect | 3cp | נתן | Pual — Passive: "were given" (I-נ root; Qibbuts under נֻ = R1 + Dagesh in תּ = R2 + plural suffix וּ) |
 | 9 | צֻוֵּיתִי | Yes | Perfect | 1cs | צוה | Pual — Passive: "I was commanded" (III-ה root; Qibbuts under צֻ = R1 + Dagesh in וּ = R2; III-ה Perfect 1cs uses יתִי suffix) |
 | 10 | צֻוֵּיתֶם | Yes | Perfect | 2mp | צוה | Pual — Passive: "you were commanded" (III-ה root; same Pual diagnostic; 2mp suffix יתֶם) |
-| 11 | תְּבָרֵךְ | No | Imperfect | 2ms | ברך | Piel — Intensive: "you bless" (R2=ר; Piel identified by tsere under R2; active not passive) |
+| 11 | תְּבָרֵךְ | No | Imperfect | 2ms | ברך | Piel — Intensive: "you bless" (R2=ר; Piel identified by Tsere under R2; active not passive) |
 | 12 | מְבֹרָךְ | Yes | Participle | ms | ברך | Pual — Passive: "blessed" (R2=ר rejects Dagesh; compensatory Qamets under R1; Pual Ptc. prefix מְ) |
 | 13 | יוּאָר | No | Imperfect | 3ms | ארר | Hophal — Passive: "shall be cursed" (יוּ prefix = u-class on preformative = Hophal Impf. marker; no Qibbuts under R1 + Dagesh R2) |
 | 14 | יְבֹרַךְ | Yes | Imperfect | 3ms | ברך | Pual — Passive: "may his name be blessed" (R2=ר rejects Dagesh; compensatory Qamets; יְ + Qamets under R1 = Pual Impf.) |

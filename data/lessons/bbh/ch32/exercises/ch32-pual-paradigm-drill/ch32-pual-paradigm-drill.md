@@ -2,7 +2,7 @@
 
 **Root:** קטל | **Stem:** Pual (passive of Piel)
 
-**Instructions:** Write the Pual (passive of Piel) paradigm for the root קטל. Key marker: qibbuts (ֻ) under R1 + dagesh forte in R2.
+**Instructions:** Write the Pual (passive of Piel) paradigm for the root קטל. Key marker: Qibbuts (ֻ) under R1 + dagesh forte in R2.
 
 > **Note:** No Imperative or Infinitive Absolute commonly cited for the Pual (passive stem).
 

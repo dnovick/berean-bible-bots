@@ -1,7 +1,7 @@
 # Ch13 Parsing Drill — Qal Perfect Strong Verbs
 
 *For each form, give: (a) Person, (b) Number, (c) Gender, (d) Root (3ms lexical form).*
-*Part C only: also identify the stative type (A = qamets/fientive, B = tsere, C = holem).*
+*Part C only: also identify the stative type (A = Qamets/fientive, B = Tsere, C = Holem).*
 
 ---
 
@@ -41,7 +41,7 @@
 
 ## Part C — Stative Roots
 
-*Give person/number/gender AND identify the stative type (B = tsere, C = holem).*
+*Give person/number/gender AND identify the stative type (B = Tsere, C = Holem).*
 *Give the 3ms dictionary/lexical form.*
 
 | # | Form | Person | Number | Gender | Root (3ms) | Stative Type |
@@ -75,23 +75,23 @@
 
 | # | Form | Person | Number | Gender | Root | Note |
 |---|---|---|---|---|---|---|
-| 11 | כָּתְבוּ | 3 | p | c | כתב | R1 qamets → shewa before vocalic suffix |
-| 12 | שְׁמַרְתֶּם | 2 | p | m | שמר | R1 qamets → shewa; R2 patach |
+| 11 | כָּתְבוּ | 3 | p | c | כתב | R1 Qamets → Shewa before vocalic suffix |
+| 12 | שְׁמַרְתֶּם | 2 | p | m | שמר | R1 Qamets → Shewa; R2 Pathach |
 | 13 | פָּקְדָה | 3 | s | f | פקד | R1 reduces before ָה- |
-| 14 | בָּחְרוּ | 3 | p | c | בחר | R1 qamets → shewa |
+| 14 | בָּחְרוּ | 3 | p | c | בחר | R1 Qamets → Shewa |
 | 15 | מְשַׁלְתֶּן | 2 | p | f | משל | Full vowel reduction under R1 |
 | 16 | זָכַר | 3 | s | m | זכר | 3ms = bare root; no suffix |
 | 17 | חָפְרָה | 3 | s | f | חפר | 3fs; R1 reduces |
 | 18 | לָמְדוּ | 3 | p | c | למד | 3cp; R1 reduces |
 | 19 | שְׁמַרְתֶּן | 2 | p | f | שמר | 2fp |
-| 20 | פָּקַדְתְּ | 2 | s | f | פקד | 2fs; shewa under tav |
+| 20 | פָּקַדְתְּ | 2 | s | f | פקד | 2fs; Shewa under tav |
 
 ### Part C
 
 | # | Form | Person | Number | Gender | Root (3ms) | Stative Type | Notes |
 |---|---|---|---|---|---|---|---|
-| 21 | כָּבַדְתָּ | 2 | s | m | כָּבֵד | B (tsere) | Tsere → patach before suffix |
-| 22 | גָּדְלָה | 3 | s | f | גָּדֵל | B (tsere) | R1 reduces; tsere lost |
-| 23 | יָכֹלְתִּי | 1 | s | c | יָכֹל | C (holem) | Holem retained before 1cs suffix |
-| 24 | זָקַנְתֶּם | 2 | p | m | זָקֵן | B (tsere) | Tsere → patach before 2mp suffix |
-| 25 | מָלְאָה | 3 | s | f | מָלֵא | B (tsere) / III-א | Also III-א weak; tsere in 3ms; aleph quiesces |
+| 21 | כָּבַדְתָּ | 2 | s | m | כָּבֵד | B (Tsere) | Tsere → Pathach before suffix |
+| 22 | גָּדְלָה | 3 | s | f | גָּדֵל | B (Tsere) | R1 reduces; Tsere lost |
+| 23 | יָכֹלְתִּי | 1 | s | c | יָכֹל | C (Holem) | Holem retained before 1cs suffix |
+| 24 | זָקַנְתֶּם | 2 | p | m | זָקֵן | B (Tsere) | Tsere → Pathach before 2mp suffix |
+| 25 | מָלְאָה | 3 | s | f | מָלֵא | B (Tsere) / III-א | Also III-א weak; Tsere in 3ms; aleph quiesces |

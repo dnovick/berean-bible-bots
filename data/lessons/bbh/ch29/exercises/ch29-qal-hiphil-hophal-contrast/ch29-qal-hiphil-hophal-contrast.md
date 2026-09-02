@@ -164,7 +164,7 @@ The answer key is at the bottom.
 1. Using root בוא (Part A), describe the subject's role in each stem: in the Qal, who is acting? In the Hiphil, who is causing whom to act? In the Hophal, who receives the causation?
 2. Compare the Hiphil Imperfect 3ms forms across all five roots. Hollow roots use יָ + chiriq-yod (יָבִיא, יָשִׁיב, יָקִים); I-י roots use יוֹ + chiriq-yod (יוֹרִיד, יוֹלִיד). What phonological principle explains the יוֹ prefix in I-י Hiphil Imperfect?
 3. Qal Participle ms forms of hollow roots (בָּא, שָׁב, קָם) are identical to the Perfect 3ms. Name two grammatical features in context that allow you to distinguish Participle from Perfect for these forms.
-4. Every Hophal Imperfect 3ms begins with יוּ and every Hophal Participle ms begins with מוּ. How is this single vowel pattern (shureq) a useful diagnostic for identifying Hophal in all weak-root classes?
+4. Every Hophal Imperfect 3ms begins with יוּ and every Hophal Participle ms begins with מוּ. How is this single vowel pattern (Shureq) a useful diagnostic for identifying Hophal in all weak-root classes?
 5. The root ילד yields הוּלַד "he was born" (Hophal Pf 3ms) and מוּלָד "one being born" (Hophal Ptc ms). Who is the implied agent? How does the Hophal (rather than Niphal) shape theological meaning in birth narratives?
 
 ---
@@ -227,7 +227,7 @@ The answer key is at the bottom.
 | 17 | מוֹרִיד | **Hiphil** | Participle | ms | one who brings down |
 | 18 | מוּרָד | **Hophal** | Participle | ms | one being brought down |
 
-*I-י root: Hiphil uses הוֹ-/יוֹ-/מוֹ- prefix (holem-waw) vs. Hophal הוּ-/יוּ-/מוּ- (shureq). Qal Ptc יֹרֵד is distinct from Pf 3ms יָרַד.*
+*I-י root: Hiphil uses הוֹ-/יוֹ-/מוֹ- prefix (Holem-waw) vs. Hophal הוּ-/יוּ-/מוּ- (Shureq). Qal Ptc יֹרֵד is distinct from Pf 3ms יָרַד.*
 
 ---
 
@@ -317,4 +317,4 @@ The answer key is at the bottom.
 | 44 | מוֹלִיד | **Hiphil** | Participle | ms | one who begets / begetting |
 | 45 | מוּלָד | **Hophal** | Participle | ms | one being born |
 
-*I-י root: Qal Ptc יֹלֵד is distinct from Pf 3ms יָלַד. Hiphil uses הוֹ-/יוֹ-/מוֹ- (holem-waw) across all three conjugations; Hophal uses הוּ-/יוּ-/מוּ- (shureq).*
+*I-י root: Qal Ptc יֹלֵד is distinct from Pf 3ms יָלַד. Hiphil uses הוֹ-/יוֹ-/מוֹ- (Holem-waw) across all three conjugations; Hophal uses הוּ-/יוּ-/מוּ- (Shureq).*

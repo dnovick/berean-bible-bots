@@ -18,9 +18,9 @@ The answer key is at the bottom.
 
 | Stem | Perfect 3ms | Imperfect 3ms | Participle ms |
 |---|---|---|---|
-| **Qal** | qamets–patach (דָּבַר) | hiriq + shewa (יִדְבַּר) | active qal pattern (דֹּבֵר) |
-| **Piel** | hiriq + dagesh in R2 (דִּבֶּר) | shewa prefix + dagesh (יְדַבֵּר) | מְ + dagesh in R2 (מְדַבֵּר) |
-| **Pual** | qibbuts + dagesh in R2 (דֻּבַּר) | shewa prefix + qibbuts + dagesh (יְדֻבַּר) | מְ + qibbuts + qamets (מְדֻבָּר) |
+| **Qal** | Qamets–Pathach (דָּבַר) | hiriq + Shewa (יִדְבַּר) | active qal pattern (דֹּבֵר) |
+| **Piel** | hiriq + dagesh in R2 (דִּבֶּר) | Shewa prefix + dagesh (יְדַבֵּר) | מְ + dagesh in R2 (מְדַבֵּר) |
+| **Pual** | Qibbuts + dagesh in R2 (דֻּבַּר) | Shewa prefix + Qibbuts + dagesh (יְדֻבַּר) | מְ + Qibbuts + Qamets (מְדֻבָּר) |
 
 ---
 
@@ -88,8 +88,8 @@ The answer key is at the bottom.
 
 ### Parsing Notes
 
-- **#10 vs #11:** יְדַבֵּר (Piel) vs יִדְבַּר (Qal) — note the prefix vowel: shewa + patach (Piel) vs hiriq + shewa (Qal). Also dagesh in ב for Piel.
+- **#10 vs #11:** יְדַבֵּר (Piel) vs יִדְבַּר (Qal) — note the prefix vowel: Shewa + Pathach (Piel) vs hiriq + Shewa (Qal). Also dagesh in ב for Piel.
 - **#16–18:** Wayyiqtol (waw-consecutive + imperfect) follows the same stem pattern as the imperfect.
-- **#19 Piel imperative:** The dagesh forte in ב and final tsere are characteristic Piel imperative markers.
-- **#22 Qal participle:** דֹּבֵר — holem under ד is the Qal active participle vowel pattern.
-- **#23 Pual participle:** מְדֻבָּר — prefix מְ + qibbuts under ד + qamets under ב (not patach as in Piel participle מְדַבֵּר).
+- **#19 Piel imperative:** The dagesh forte in ב and final Tsere are characteristic Piel imperative markers.
+- **#22 Qal participle:** דֹּבֵר — Holem under ד is the Qal active participle vowel pattern.
+- **#23 Pual participle:** מְדֻבָּר — prefix מְ + Qibbuts under ד + Qamets under ב (not Pathach as in Piel participle מְדַבֵּר).

@@ -66,8 +66,8 @@ All forms in this drill are in the **absolute state**. Every form is drawn from 
 | 10 | שָׁלְטָן | m. | s. | abs. | שָׁלְטָן | Masculine singular; no ending; *dominion* |
 | 11 | עִדָּנִין | m. | pl. | abs. | עִדָּן | Masculine plural ִין-; *times, moments*; frequently in Daniel |
 | 12 | גֹּב | m. | s. | abs. | גֹּב | Masculine singular; no ending; *pit, den* |
-| 13 | פְּשָׁרִין | m. | pl. | abs. | פְּשַׁר | Masculine plural ִין-; note stem vowel change: patach → qamets in open syllable |
-| 14 | חֲסַף | m. | s. | abs. | חֲסַף | Masculine singular; no ending; guttural ח takes hateph patach; *clay, pottery* |
+| 13 | פְּשָׁרִין | m. | pl. | abs. | פְּשַׁר | Masculine plural ִין-; note stem vowel change: Pathach → Qamets in open syllable |
+| 14 | חֲסַף | m. | s. | abs. | חֲסַף | Masculine singular; no ending; guttural ח takes hateph Pathach; *clay, pottery* |
 | 15 | זְמָנִין | m. | pl. | abs. | זְמָן | Masculine plural ִין-; *times* |
 | 16 | רָז | m. | s. | abs. | רָז | Masculine singular; no ending; *secret, mystery* |
 | 17 | גּוֹא | m. | s. | abs. | גּוֹא | Masculine singular; no ending; *midst, middle*; also spelled גּוֹ |
@@ -83,4 +83,4 @@ All forms in this drill are in the **absolute state**. Every form is drawn from 
 
 2. Every masculine singular absolute in this drill (items 1, 4, 5, 7, 9, 10, 12, 14, 16, 17, 19) has no ending. How do you determine that these forms are in the absolute state rather than the determined state? What will distinguish them from the determined state in Chapter 5?
 
-3. Compare items 5 and 13: פְּשַׁר (singular) and פְּשָׁרִין (plural). The second-syllable vowel changed from patach (ַ) to qamets (ָ). Using what you know about syllable structure and stress, explain why this vowel change occurs when the ִין- plural ending is added.
+3. Compare items 5 and 13: פְּשַׁר (singular) and פְּשָׁרִין (plural). The second-syllable vowel changed from Pathach (ַ) to Qamets (ָ). Using what you know about syllable structure and stress, explain why this vowel change occurs when the ִין- plural ending is added.

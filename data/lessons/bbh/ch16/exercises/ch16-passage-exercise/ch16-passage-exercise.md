@@ -76,18 +76,18 @@
 | # | Form | Pers. | Num. | Gen. | Root | Weak Class | Form Type | Usage Type | Notes |
 |---|---|---|---|---|---|---|---|---|---|
 | 1 | יְהִ֣י | 3 | s | m | הָיָה | III-ה | Jussive | Volitional | Short jussive of III-ה: final ה dropped, vowel shortens; "Let there be light" — divine fiat |
-| 2 | יַעֲשֶׂ֥ה | 3 | s | m | עָשָׂה | III-ה | Jussive | Volitional | III-ה jussive with seghol-he in long form; I-gutt. ע causes chateph; "Let the earth produce" |
+| 2 | יַעֲשֶׂ֥ה | 3 | s | m | עָשָׂה | III-ה | Jussive | Volitional | III-ה jussive with Seghol-he in long form; I-gutt. ע causes chateph; "Let the earth produce" |
 | 3 | יִהְי֣וּ | 3 | p | m | הָיָה | III-ה | Imperfect | Jussive/Volitional | 3mp of היה: the וּ- suffix replaces ה; "Let there be lights" |
-| 4 | תֹּאכְל֖וּ | 2 | p | m | אָכַל | I-guttural (א) | Imperfect | Prohibition (לֹא) | I-gutt. א: prefix takes holem (not hireq); "you shall not eat" — God's prohibition |
+| 4 | תֹּאכְל֖וּ | 2 | p | m | אָכַל | I-guttural (א) | Imperfect | Prohibition (לֹא) | I-gutt. א: prefix takes Holem (not Hireq); "you shall not eat" — God's prohibition |
 | 5 | יֹאמַ֥ר | 3 | s | m | אָמַר | I-guttural (א) | Imperfect | Simple Future | Holem prefix; one of the most frequent forms in the OT — must be memorized |
-| 6 | וַיִּשְׁמַ֥ע | 3 | s | m | שָׁמַע | III-guttural (ע) | Wayyiqtol | Sequential Past | Short form (no patach furtive in wayyiqtol); "and the LORD heard/heeded" |
-| 7 | תַּחְמֹד֙ | 2 | s | m | חָמַד | I-guttural (ח) | Imperfect | Prohibition (לֹא) | Chateph under ח causes patach prefix (not hireq); "you shall not covet" — Decalogue |
-| 8 | וַֽיַּעֲמֹ֥ד | 3 | s | m | עָמַד | I-guttural (ע) | Wayyiqtol | Sequential Past | Chateph-patach under ע; patach prefix: יַעֲ–; "and Moses stood before Pharaoh" |
-| 9 | וַיִּתֵּ֨ן | 3 | s | m | נָתַן | I-נ | Wayyiqtol | Sequential Past | Nun assimilated → dagesh forte in ת; tsere under what appears to be prefix + root |
-| 10 | וַיֵּ֤דַע | 3 | s | m | יָדַע | I-י | Wayyiqtol | Sequential Past | Tsere prefix (יֵ–) instead of hireq; yod at R1 contracts with prefix vowel |
-| 11 | יִתֵּ֥ן | 3 | s | m | נָתַן | I-נ | Imperfect | Simple Future | Same assimilation pattern as wayyiqtol; tsere lengthens in the root syllable |
+| 6 | וַיִּשְׁמַ֥ע | 3 | s | m | שָׁמַע | III-guttural (ע) | Wayyiqtol | Sequential Past | Short form (no Pathach furtive in wayyiqtol); "and the LORD heard/heeded" |
+| 7 | תַּחְמֹד֙ | 2 | s | m | חָמַד | I-guttural (ח) | Imperfect | Prohibition (לֹא) | Chateph under ח causes Pathach prefix (not Hireq); "you shall not covet" — Decalogue |
+| 8 | וַֽיַּעֲמֹ֥ד | 3 | s | m | עָמַד | I-guttural (ע) | Wayyiqtol | Sequential Past | Chateph-Pathach under ע; Pathach prefix: יַעֲ–; "and Moses stood before Pharaoh" |
+| 9 | וַיִּתֵּ֨ן | 3 | s | m | נָתַן | I-נ | Wayyiqtol | Sequential Past | Nun assimilated → dagesh forte in ת; Tsere under what appears to be prefix + root |
+| 10 | וַיֵּ֤דַע | 3 | s | m | יָדַע | I-י | Wayyiqtol | Sequential Past | Tsere prefix (יֵ–) instead of Hireq; yod at R1 contracts with prefix vowel |
+| 11 | יִתֵּ֥ן | 3 | s | m | נָתַן | I-נ | Imperfect | Simple Future | Same assimilation pattern as wayyiqtol; Tsere lengthens in the root syllable |
 | 12 | וַיֵּ֥צֵא | 3 | s | m | יָצָא | I-י | Wayyiqtol | Sequential Past | Tsere prefix; III-א also at play (aleph quiesces at R3) — compound weak class |
-| 13 | וַיָּבֹ֙אוּ֙ | 3 | p | m | בּוֹא | Biconsonantal | Wayyiqtol | Sequential Past | וַיָּ– prefix with qamets; 3mp -וּ suffix; biconsonantal middle-vowel root |
-| 14 | וַיָּ֣קׇם | 3 | s | m | קוּם | Biconsonantal | Wayyiqtol | Sequential Past | Qamets under prefix; short form (qamets hatuf in root); "and Abraham arose" |
-| 15 | יָשׁ֖וּב | 3 | s | m | שׁוּב | Biconsonantal | Imperfect | Simple Future | Qamets under prefix + vocalic ו (shureq) as middle vowel |
-| 16 | וַיָּ֤סׇּב | 3 | s | m | סָבַב | Geminate | Wayyiqtol | Sequential Past | Qamets under prefix + dagesh forte in the doubled root consonant (ב); holem |
+| 13 | וַיָּבֹ֙אוּ֙ | 3 | p | m | בּוֹא | Biconsonantal | Wayyiqtol | Sequential Past | וַיָּ– prefix with Qamets; 3mp -וּ suffix; biconsonantal middle-vowel root |
+| 14 | וַיָּ֣קׇם | 3 | s | m | קוּם | Biconsonantal | Wayyiqtol | Sequential Past | Qamets under prefix; short form (Qamets hatuf in root); "and Abraham arose" |
+| 15 | יָשׁ֖וּב | 3 | s | m | שׁוּב | Biconsonantal | Imperfect | Simple Future | Qamets under prefix + vocalic ו (Shureq) as middle vowel |
+| 16 | וַיָּ֤סׇּב | 3 | s | m | סָבַב | Geminate | Wayyiqtol | Sequential Past | Qamets under prefix + dagesh forte in the doubled root consonant (ב); Holem |

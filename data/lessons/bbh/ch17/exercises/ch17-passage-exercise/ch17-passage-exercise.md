@@ -78,16 +78,16 @@
 | 4 | וַיִּקְרָא | Wayyiqtol | 3 | s | m | קרא | Sequential Past | III-א weak; aleph quiesces; "and God called" |
 | 5 | וַיְהִי | Wayyiqtol | 3 | s | m | היה | Sequential Past | Opening formula for a new narrative episode; III-ה short form |
 | 6 | וַיַּשְׁכֵּם | Wayyiqtol | 3 | s | m | שכם | Sequential Past | "And Abraham rose early"; Piel-like vowel but Qal of שׁכם; dagesh forte in כּ |
-| 7 | וַיָּקׇם | Wayyiqtol | 3 | s | m | קום | Sequential Past | Biconsonantal short form; qamets hatuf in root; "and he arose" |
+| 7 | וַיָּקׇם | Wayyiqtol | 3 | s | m | קום | Sequential Past | Biconsonantal short form; Qamets hatuf in root; "and he arose" |
 | 8 | וַיַּרְא | Wayyiqtol | 3 | s | m | ראה | Sequential Past | III-ה short form; "and he saw the place from a distance" |
 | 9 | וְאָהַבְתָּ | Weqatal | 2 | s | m | אהב | Sequential Future | Follows שְׁמַע (imperative); stress on final -tā; "and you shall love" |
 | 10 | וְשִׁנַּנְתָּם | Weqatal | 2 | s | m | שנן | Sequential Future | Piel Weqatal; "and you shall teach them diligently"; continues Shema command chain |
 | 11 | וְדִבַּרְתָּ | Weqatal | 2 | s | m | דבר | Sequential Future | Piel Weqatal; "and you shall speak of them"; command chain Deu 6:7 |
-| 12 | וַיֵּלֶךְ | Wayyiqtol | 3 | s | m | הלך | Sequential Past | I-י: tsere prefix (יֵ–); ה at R1 absent; "and Moses went" |
+| 12 | וַיֵּלֶךְ | Wayyiqtol | 3 | s | m | הלך | Sequential Past | I-י: Tsere prefix (יֵ–); ה at R1 absent; "and Moses went" |
 | 13 | וַיַּרְא | Wayyiqtol | 3 | s | m | ראה | Sequential Past | III-ה short form; "and the angel of the LORD appeared" |
-| 14 | וַיֵּפֶן | Wayyiqtol | 3 | s | m | פנה | Sequential Past | III-ה short form: ה dropped, seghol under נ; "and Moses turned aside" |
+| 14 | וַיֵּפֶן | Wayyiqtol | 3 | s | m | פנה | Sequential Past | III-ה short form: ה dropped, Seghol under נ; "and Moses turned aside" |
 | 15 | וַיִּקְרָא | Wayyiqtol | 3 | s | m | קרא | Sequential Past | III-א; "and God called out to him" |
-| 16 | וַיֹּאמֶר | Wayyiqtol | 3 | s | m | אמר | Sequential Past | I-aleph; holem prefix; most frequent wayyiqtol in the Bible; "and he said" |
+| 16 | וַיֹּאמֶר | Wayyiqtol | 3 | s | m | אמר | Sequential Past | I-aleph; Holem prefix; most frequent wayyiqtol in the Bible; "and he said" |
 
 ---
 

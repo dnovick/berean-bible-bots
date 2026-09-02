@@ -70,23 +70,23 @@ The answer key is at the bottom.
 ### Notes on Weak-Root Pual Patterns
 
 **III-ה Perfect 3ms** (גֻּלָּה, כֻּלָּה, עֻנָּה, חֻיָּה, צֻוָּה, שֻׁנָּה):
-- Pattern: qibbuts under R1 + dagesh forte in R2 + final ָּה (qamets-heh)
+- Pattern: Qibbuts under R1 + dagesh forte in R2 + final ָּה (Qamets-heh)
 - The ה is a vowel letter (mater lectionis), not a consonant
 
 **III-ה Imperfect 3ms** (יְגֻלֶּה, יְכֻלֶּה, יְעֻנֶּה, יְחֻיֶּה):
-- Pattern: יְ prefix + qibbuts under R1 + dagesh forte in R2 + final ֶּה (tsere-heh)
+- Pattern: יְ prefix + Qibbuts under R1 + dagesh forte in R2 + final ֶּה (Tsere-heh)
 
 **III-ה Participle ms** (מְגֻלֶּה, מְכֻלֶּה):
-- Pattern: מְ prefix + qibbuts under R1 + dagesh forte in R2 + final ֶּה
+- Pattern: מְ prefix + Qibbuts under R1 + dagesh forte in R2 + final ֶּה
 
 **ברך forms** (R2 = ר rejects dagesh):
-- Perfect 3ms בֹּרַךְ: holem under ב (qibbuts + compensatory lengthening); patach under ר
-- Imperfect 3ms יְבֹרַךְ: יְ + holem under ב; no dagesh in ר
-- Participle ms מְבֹרָךְ: מְ + holem under ב + qamets under ר (participle theme vowel)
-- Perfect 3cp בֹּרֲכוּ: holem under ב + hateph-patach under ר (guttural receives reduced vowel before suffix)
+- Perfect 3ms בֹּרַךְ: Holem under ב (Qibbuts + compensatory lengthening); Pathach under ר
+- Imperfect 3ms יְבֹרַךְ: יְ + Holem under ב; no dagesh in ר
+- Participle ms מְבֹרָךְ: מְ + Holem under ב + Qamets under ר (participle theme vowel)
+- Perfect 3cp בֹּרֲכוּ: Holem under ב + Hateph Pathach under ר (guttural receives reduced vowel before suffix)
 
 **III-ה Perfect 3fs** (גֻּלְתָּה):
-- Pattern: qibbuts under R1 + shewa under R2 + תָּה suffix (3fs ending replaces the ה)
+- Pattern: Qibbuts under R1 + Shewa under R2 + תָּה suffix (3fs ending replaces the ה)
 
 **III-ה Perfect 3cp** (כֻּלּוּ):
-- Pattern: qibbuts under R1 + dagesh forte in R2 + וּ suffix (replaces the ָּה of 3ms)
+- Pattern: Qibbuts under R1 + dagesh forte in R2 + וּ suffix (replaces the ָּה of 3ms)

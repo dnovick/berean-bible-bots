@@ -88,9 +88,9 @@ the weak-class pattern and correct identification of the suffix.)*
 | # | Form | Pers. | Num. | Gen. | Root | Weak Class | Usage | Notes |
 |---|---|---|---|---|---|---|---|---|
 | 1 | הָיָ֤ה | 3 | s | m | היה | III-ה | Stative | "was" — stative description of the serpent |
-| 2 | אָמַ֣ר | 3 | s | m | אמר | I-gutt. | Simple Past | Perfect qamets unchanged; ר at R3 is guttural |
+| 2 | אָמַ֣ר | 3 | s | m | אמר | I-gutt. | Simple Past | Perfect Qamets unchanged; ר at R3 is guttural |
 | 3 | אָכַ֑לְנוּ | 1 | p | c | אכל | I-gutt. | Simple Past | 1cp suffix נוּ-; ע is I-gutt. but behaves nearly strong here |
-| 4 | עָשִׂ֑ית | 2 | s | f | עשה | III-ה | Simple Past | 2fs: hireq-yod + תְּ |
+| 4 | עָשִׂ֑ית | 2 | s | f | עשה | III-ה | Simple Past | 2fs: Hireq-Yod + תְּ |
 | 5 | הָיָ֖ה | 3 | s | m | היה | III-ה | Stative | Same root as #1 |
 | 6 | בָּ֣א | 3 | s | m | בוא | Biconsonantal | Simple Past | 3ms; only two consonants |
 | 7 | מָלְאָ֤ה | 3 | s | f | מלא | III-א | Simple Past | 3fs ָאָה- ending |
@@ -100,8 +100,8 @@ the weak-class pattern and correct identification of the suffix.)*
 | 11 | יָדַ֗עְתִּי | 1 | s | c | ידע | I-י | Perf. of Exp. | "Now I know" — knowledge acquired through event |
 | 12 | חָשַׂ֤כְתָּ | 2 | s | m | חשך | Strong (III-gutt.) | Simple Past | III-ח; "you have not withheld" |
 | 13 | עָשׂ֔וּ | 3 | p | c | עשה | III-ה | Simple Past | 3cp; final ה drops before וּ- |
-| 14 | עֲשִׂיתֶ֣ן | 2 | p | f | עשה | III-ה | Simple Past | 2fp; hireq-yod + תֶּן- |
-| 15 | שָׁמַ֥עְנוּ | 1 | p | c | שמע | III-gutt. | Simple Past | 1cp; no patach furtive in closed syllable |
+| 14 | עֲשִׂיתֶ֣ן | 2 | p | f | עשה | III-ה | Simple Past | 2fp; Hireq-Yod + תֶּן- |
+| 15 | שָׁמַ֥עְנוּ | 1 | p | c | שמע | III-gutt. | Simple Past | 1cp; no Pathach furtive in closed syllable |
 | 16 | בָּ֫אוּ | 3 | p | c | בוא | Biconsonantal | Simple Past | 3cp |
 | 17 | קָ֫מָה | 3 | s | f | קום | Biconsonantal | Simple Past | 3fs ָה- |
 | 18 | יָלְדוּ | 3 | p | c | ילד | I-י | Simple Past | 3cp; I-י regular in Perfect |

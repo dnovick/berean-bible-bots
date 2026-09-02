@@ -96,4 +96,4 @@ All 22 base consonants (including Sin שׂ), 5 sofit (final) forms, and 6 begadk
 
 2. **Guttural behavior preview:** Your textbook states that א and ע "cannot take Dagesh Forte." Based on what you know about the guttural letters, why do you think a guttural would resist doubling? How does this relate to their place of articulation?
 
-3. **Consonant vs. vowel letter:** The letter ו appears in the middle of a word with a *shureq* (וּ) vowel marker. Is ו functioning as a consonant or as a mater lectionis in this position? What clue does the vowel dot give you?
+3. **Consonant vs. vowel letter:** The letter ו appears in the middle of a word with a *Shureq* (וּ) vowel marker. Is ו functioning as a consonant or as a mater lectionis in this position? What clue does the vowel dot give you?

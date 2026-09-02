@@ -18,9 +18,9 @@ The answer key is at the bottom.
 
 | Stem | III-ה Perfect 3ms | III-ה Imperfect 3ms | Participle ms |
 |---|---|---|---|
-| **Qal** | qamets–ָה (גָּלָה) | yiqtol prefix + ֶה (יִגְלֶה) | active pattern (גֹּלֶה) |
-| **Piel** | hiriq + dagesh + ָּה (גִּלָּה) | שְׁ prefix + patach + ֶּה (יְגַלֶּה) | מְ + patach + dagesh + ֶּה (מְגַלֶּה) |
-| **Pual** | qibbuts + dagesh + ָּה (גֻּלָּה) | שְׁ prefix + qibbuts + dagesh + ֶּה (יְגֻלֶּה) | מְ + qibbuts + dagesh + ֶּה (מְגֻלֶּה) |
+| **Qal** | Qamets–ָה (גָּלָה) | yiqtol prefix + ֶה (יִגְלֶה) | active pattern (גֹּלֶה) |
+| **Piel** | hiriq + dagesh + ָּה (גִּלָּה) | שְׁ prefix + Pathach + ֶּה (יְגַלֶּה) | מְ + Pathach + dagesh + ֶּה (מְגַלֶּה) |
+| **Pual** | Qibbuts + dagesh + ָּה (גֻּלָּה) | שְׁ prefix + Qibbuts + dagesh + ֶּה (יְגֻלֶּה) | מְ + Qibbuts + dagesh + ֶּה (מְגֻלֶּה) |
 
 ---
 
@@ -88,9 +88,9 @@ The answer key is at the bottom.
 
 ### Parsing Notes
 
-- **#10 vs #11 (imperfect):** יְגַלֶּה (Piel) has patach under ג + dagesh in ל; יִגְלֶה (Qal) has hiriq under י + shewa under ג, no dagesh in ל.
-- **#13 vs #14 (ברך):** יְבָרֵךְ (Piel) has tsere under ב (Piel imperfect with compensatory lengthening for ר); יְבֹרַךְ (Pual) has holem under ב (Pual imperfect with ר rejecting dagesh).
+- **#10 vs #11 (imperfect):** יְגַלֶּה (Piel) has Pathach under ג + dagesh in ל; יִגְלֶה (Qal) has hiriq under י + Shewa under ג, no dagesh in ל.
+- **#13 vs #14 (ברך):** יְבָרֵךְ (Piel) has Tsere under ב (Piel imperfect with compensatory lengthening for ר); יְבֹרַךְ (Pual) has Holem under ב (Pual imperfect with ר rejecting dagesh).
 - **#16 וַיְגַל:** Wayyiqtol of Piel גלה — the III-ה root drops final ה before the wayyiqtol shortening.
 - **#17 וַיִּגֶּל:** Wayyiqtol of Qal גלה — dagesh forte in ג is the wayyiqtol I-nun assimilation marker (wait: ג is not I-nun). Correction: וַיִּגֶּל is the Qal wayyiqtol of גלה; the dagesh in ג is from the waw-consecutive assimilation with the prefix נ — actually ג has dagesh from the wayyiqtol יִ prefix.
 - **#18 וַיְצַו:** Wayyiqtol of Piel צוה; III-ה root with middle-weak waw; the ו quiesces.
-- **#24 צֻוָּה:** Pual perfect 3ms of צוה; qibbuts under צ + dagesh forte in ו + final ָּה. Extremely common form in the OT (Numbers, Deuteronomy, etc.).
+- **#24 צֻוָּה:** Pual perfect 3ms of צוה; Qibbuts under צ + dagesh forte in ו + final ָּה. Extremely common form in the OT (Numbers, Deuteronomy, etc.).

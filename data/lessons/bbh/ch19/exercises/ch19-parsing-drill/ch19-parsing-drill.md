@@ -65,8 +65,8 @@
 
 | # | Form | Base Conj. | Base PGN | Root | Suffix | Full Gloss | Notes |
 |---|---|---|---|---|---|---|---|
-| 1 | שְׁמָרַ֥נִי | Qal Perfect | 3ms | שמר | 1cs | "he kept me" | Connecting vowel qamets before נִי |
-| 2 | שְׁמָרוֹ | Qal Perfect | 3ms | שמר | 3ms | "he kept him" | Short form וֹ (holem-waw) |
+| 1 | שְׁמָרַ֥נִי | Qal Perfect | 3ms | שמר | 1cs | "he kept me" | Connecting vowel Qamets before נִי |
+| 2 | שְׁמָרוֹ | Qal Perfect | 3ms | שמר | 3ms | "he kept him" | Short form וֹ (Holem-waw) |
 | 3 | שְׁמָרָ֥נוּ | Qal Perfect | 3ms | שמר | 1cp | "he kept us" | Qamets connecting vowel before נוּ |
 | 4 | שְׁמַרְתַּ֥נִי | Qal Perfect | 2ms | שמר | 1cs | "you kept me" | 2ms perfect + 1cs suffix |
 | 5 | שְׁמַרְתִּ֥יהוּ | Qal Perfect | 1cs | שמר | 3ms | "I kept him" | 1cs perfect (תִּי) + 3ms suffix (הוּ) |
