@@ -41,7 +41,7 @@ _HEBREW_RUN_RE = re.compile(r"([֐-׿]+)")
 _RTL_STYLE_RE = re.compile(r"direction\s*:\s*rtl", re.IGNORECASE)
 _CSS_RULE_RE = re.compile(r"([^{}]+)\{([^{}]*)\}")
 _CSS_CLASS_RE = re.compile(r"\.([\w-]+)")
-_SKIP_TAGS = {"script", "style"}
+_SKIP_TAGS = {"script", "style", "title"}
 
 RTL_STYLE = "direction:rtl;unicode-bidi:embed;"
 
