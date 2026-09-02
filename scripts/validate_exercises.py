@@ -107,7 +107,7 @@ def check_ans_row_no_inline_display(
 
 
 _ANS_BLOCK_RE = _re.compile(
-    r'<tr[^>]*class=["\'][^"\']*ans-row[^"\']*["\'][^>]*>.*?</tr>',
+    r'<tr[^>]*class=["\'][^"\']*(?:ans-row|answer-row)[^"\']*["\'][^>]*>.*?</tr>',
     _re.IGNORECASE | _re.DOTALL
 )
 _COLSPAN_RE = _re.compile(r'\bcolspan\b', _re.IGNORECASE)
