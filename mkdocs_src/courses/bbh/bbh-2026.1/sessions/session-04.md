@@ -6,8 +6,9 @@
 
 ## Agenda
 
-1. [Lesson: BBH 3 - Syllabification and Pronunciation](/lessons/hebrew/ch3/)
-1. [Reading: The Shema](session-04/reading-deut-6-4.html)
+1. Housekeeping (10 min)
+1. [Lesson: BBH 3 - Syllabification and Pronunciation](/lessons/hebrew/ch3/) (100 min)
+1. [Reading: The Shema](session-04/reading-deut-6-4.html) (10 min)
 
 ## Downloads
 

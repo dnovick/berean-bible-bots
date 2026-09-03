@@ -29,16 +29,20 @@ chapter: 3
 instructor: Preston Brown
 
 agenda:
+  - title: "Housekeeping"
+    duration: "10 min"
 
 lesson:
   name: "BBH 3 - Syllabification and Pronunciation"
   url: "/lessons/hebrew/ch3/"
+  duration: "100 min"
 
 reading:
   - name: "The Shema"
     description: "Students read the full verse aloud. By now you can identify every letter and vowel point in Deut 6:4."
     passage: "Deut 6:4"
     file: "reading-deut-6-4.html"
+    duration: "10 min"
 
 sections:
 
