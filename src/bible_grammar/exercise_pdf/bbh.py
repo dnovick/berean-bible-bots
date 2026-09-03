@@ -2146,7 +2146,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"…and to the prayer that your servant is praying before you today."'))
         self.add_verb_table([
             VerbEntry('1', 'מִתְפַּלֵּל', 'Participle', 'ms', 'פלל',
-                      'Denominative — "praying"; מִתְ- prefix marks Hithpael participle; root פלל has no Qal in OT'),
+                      'Simple Action — "praying"; מִתְ- prefix marks Hithpael participle; BBH §34.2.4 own example; no separate reflexive or reciprocal force'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('8:30',
@@ -2154,7 +2154,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"…when they pray toward this place."'))
         self.add_verb_table([
             VerbEntry('2', 'יִתְפַּלְּלוּ', 'Imperfect', '3mp', 'פלל',
-                      'Denominative — "they pray"; יִתְ- prefix + dagesh forte in doubled ל ל (geminate root)'),
+                      'Simple Action — "they pray"; יִתְ- prefix + dagesh forte in doubled ל ל (geminate root)'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('20:7',
@@ -2162,7 +2162,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"…for he is a prophet, and he will pray for you."'))
         self.add_verb_table([
             VerbEntry('3', 'יִתְפַּלֵּל', 'Imperfect', '3ms', 'פלל',
-                      'Denominative — "he will pray"; יִתְ- prefix + pathach under R1 + dagesh forte in ל ל'),
+                      'Simple Action — "he will pray"; יִתְ- prefix + Pathach under R1 + dagesh forte in ל ל'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('20:7',
@@ -2170,7 +2170,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"Pray to the LORD."'))
         self.add_verb_table([
             VerbEntry('4', 'הִתְפַּלֵּל', 'Imperative', '2ms', 'פלל',
-                      'Denominative — "Pray!"; הִתְ- prefix + pathach under R1 + tsere + ל ל; same form as perfect 3ms in isolation'),
+                      'Simple Action — "Pray!"; הִתְ- prefix + Pathach under R1 + Tsere + ל ל; same form as perfect 3ms in isolation'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('Exo 29:36',
@@ -2220,7 +2220,7 @@ class Ch34HithpaelExercise(PassageExercise):
             '"…and in your offspring all the nations of the earth shall bless themselves."'))
         self.add_verb_table([
             VerbEntry('9', 'וְהִתְבָּרֲכוּ', 'Weqatal', '3cp', 'ברך',
-                      'Reflexive/Estimative — "shall bless themselves"; הִתְ- + R2=ר rejects dagesh (compensatory lengthening); 3cp suffix וּ'),
+                      'Reflexive — "shall bless themselves"; הִתְ- + R2=ר rejects dagesh (compensatory lengthening); 3cp suffix וּ'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('2 Sam 10:12',
@@ -2328,7 +2328,7 @@ class Ch35HithpaelWeakExercise(PassageExercise):
             '"…and you will prophesy with them and be turned into another man."'))
         self.add_verb_table([
             VerbEntry('7', 'וְהִתְנַבִּיתָ', 'Weqatal', '2ms', 'נבא',
-                      'Denominative/Iterative — "you will prophesy"; I-נ (no assimilation in Hithpael); הִתְ- + נַ + בִּי + 2ms suffix תָ; III-א'),
+                      'Simple Action — "you will prophesy"; נבא occurs only in Niphal and Hithpael — the Hithpael is the standard lexical form with no separate reflexive force; I-נ (no assimilation)'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('1 Sam 10:11',
@@ -2336,7 +2336,7 @@ class Ch35HithpaelWeakExercise(PassageExercise):
             '"And they prophesied until the offering of the evening sacrifice."'))
         self.add_verb_table([
             VerbEntry('8', 'וַיִּתְנַבְּאוּ', 'Wayyiqtol', '3mp', 'נבא',
-                      'Denominative/Iterative — "and they prophesied"; יִתְ- prefix; I-נ (no assimilation); III-א with 3mp suffix אוּ'),
+                      'Simple Action — "and they prophesied"; same root as #7; יִתְ- prefix; I-נ (no assimilation); III-א with 3mp suffix אוּ'),
         ], show_answers=show_answers)
 
         self.add_section_break()
@@ -2349,7 +2349,7 @@ class Ch35HithpaelWeakExercise(PassageExercise):
             '"What shall we say? What shall we speak? How can we justify ourselves?"'))
         self.add_verb_table([
             VerbEntry('9', 'נִצְטַדָּק', 'Imperfect', '1cp', 'צדק',
-                      'Reflexive/Estimative — "how can we justify ourselves?"; I-צ metathesis: הִתְצ → הִצְטַ (ת voices to ט); 1cp prefix נ'),
+                      'Reflexive — "how can we justify ourselves?"; I-צ metathesis: הִתְצ → הִצְטַ (ת voices to ט); 1cp prefix נ'),
         ], show_answers=show_answers)
 
         self.add_passage(PassageBlock('2 Kgs 8:29',
@@ -8123,53 +8123,61 @@ def build_ch33_weak_form_id_exercise(out_dir: Optional[str] = None) -> str:
 class Ch34FunctionSortExercise(ExercisePDF):
     _ENTRIES = [
         SortEntry('1',  'מִתְהַלֵּךְ',    'Participle ms',   'Gen 3:8',   '"walking about (in the garden)"',              'IT', 'הָלַךְ', 'Back-and-forth movement; not a single walk'),
-        SortEntry('2',  'יִּתְחַבֵּא',    'Wayyiqtol 3ms',   'Gen 3:8',   '"he hid himself"',                             'R',  'חָבָא',  'Subject acts on itself; concealment'),
+        SortEntry('2',  'יִּתְחַבֵּא',    'Wayyiqtol 3ms',   'Gen 3:8',   '"he hid himself"',                             'IR', 'חָבָא',  'Subject acts on itself; concealment'),
         SortEntry('3',  'יִּתְהַלֵּךְ',   'Wayyiqtol 3ms',   'Gen 5:22',  '"Enoch walked about (with God)"',              'IT', 'הָלַךְ', 'Habitual/continuous walking; same root as #1'),
-        SortEntry('4',  'יִּתְעַצֵּב',    'Wayyiqtol 3ms',   'Gen 6:6',   '"he was grieved (to his heart)"',              'R',  'עָצַב',  'Inward grief; the LORD\'s heart acts on itself'),
-        SortEntry('5',  'יִּתְגַּל',      'Wayyiqtol 3ms',   'Gen 9:21',  '"he uncovered himself"',                       'R',  'גָּלָה', 'Reflexive uncovering; subject = object'),
+        SortEntry('4',  'יִּתְעַצֵּב',    'Wayyiqtol 3ms',   'Gen 6:6',   '"he was grieved (to his heart)"',              'IR', 'עָצַב',  'Inward grief; the LORD\'s heart acts on itself'),
+        SortEntry('5',  'יִּתְגַּל',      'Wayyiqtol 3ms',   'Gen 9:21',  '"he uncovered himself"',                       'IR', 'גָּלָה', 'Reflexive uncovering; subject = object'),
         SortEntry('6',  'הִתְהַלֵּךְ',   'Imperative 2ms',  'Gen 13:17', '"walk about (through the land)!"',              'IT', 'הָלַךְ', 'Command to traverse repeatedly; same root'),
-        SortEntry('7',  'הִתְעַנִּי',     'Imperative 2fs',  'Gen 16:9',  '"humble yourself!"',                           'R',  'עָנָה',  'Reflexive self-humbling; subject acts on itself'),
+        SortEntry('7',  'הִתְעַנִּי',     'Imperative 2fs',  'Gen 16:9',  '"humble yourself!"',                           'IR', 'עָנָה',  'Reflexive self-humbling; subject acts on itself'),
         SortEntry('8',  'הִתְהַלֵּךְ',   'Imperative 2ms',  'Gen 17:1',  '"walk about before me!"',                      'IT', 'הָלַךְ', 'Continuous conduct before YHWH'),
-        SortEntry('9',  'יִּשְׁתַּחוּ',  'Wayyiqtol 3ms',   'Gen 18:2',  '"he prostrated himself"',                      'R',  'שָׁחָה', 'Reflexive prostration; III-he Hithpael'),
-        SortEntry('10', 'יִּשְׁתַּחוּ',  'Wayyiqtol 3ms',   'Gen 19:1',  '"Lot bowed down"',                             'R',  'שָׁחָה', 'Same form; Lot prostrates himself before the angels'),
-        SortEntry('11', 'יִּתְפַּלֵּל',  'Wayyiqtol 3ms',   'Gen 20:17', '"he prayed"',                                  'DN', 'פָּלַל', 'From פֶּלֶל "mediation/judgment"; to mediate/intercede'),
-        SortEntry('12', 'הִתְבָּרֲכוּ',  'Weqatal 3cp',     'Gen 22:18', '"they will bless themselves / be blessed"',    'R',  'בָּרַךְ', 'Reflexive blessing; can also be read as passive-like'),
+        SortEntry('9',  'יִּשְׁתַּחוּ',  'Wayyiqtol 3ms',   'Gen 18:2',  '"he prostrated himself"',                      'IR', 'שָׁחָה', 'Reflexive prostration; III-he Hithpael'),
+        SortEntry('10', 'יִּשְׁתַּחוּ',  'Wayyiqtol 3ms',   'Gen 19:1',  '"Lot bowed down"',                             'IR', 'שָׁחָה', 'Same form; Lot prostrates himself before the angels'),
+        SortEntry('11', 'יִּתְפַּלֵּל',  'Wayyiqtol 3ms',   'Gen 20:17', '"he prayed"',                                  'SA', 'פָּלַל', 'BBH §34.2.4 own Simple Action example; "pray" has no separate reflexive or reciprocal force'),
+        SortEntry('12', 'הִתְבָּרֲכוּ',  'Weqatal 3cp',     'Gen 22:18', '"they will bless themselves / be blessed"',    'IR', 'בָּרַךְ', 'Reflexive blessing; can also be read as passive-like'),
         SortEntry('13', 'הִתְהַלַּכְתִּי', 'Qatal 1cs',     'Gen 24:40', '"I have walked about (before the LORD)"',      'IT', 'הָלַךְ', 'Continuous habitual conduct'),
-        SortEntry('14', 'יִּשְׁתַּחוּ',  'Wayyiqtol 3ms',   'Gen 24:26', '"he bowed down and worshiped"',                'R',  'שָׁחָה', 'Same form; servant prostrates himself'),
+        SortEntry('14', 'יִּשְׁתַּחוּ',  'Wayyiqtol 3ms',   'Gen 24:26', '"he bowed down and worshiped"',                'IR', 'שָׁחָה', 'Same form; servant prostrates himself'),
         SortEntry('15', 'הִתְעַשְּׂקוּ', 'Qatal 3cp',       'Gen 26:20', '"they quarreled"',                             'RC', 'עָשַׂק',  'Mutual quarreling; the herdsmen act on one another'),
-        SortEntry('16', 'מִתְנַחֵם',     'Participle ms',   'Gen 27:42', '"is comforting himself"',                      'R',  'נָחַם',  'Esau comforting himself with the thought of revenge'),
-        SortEntry('17', 'יִּתְנַכְּלוּ', 'Wayyiqtol 3mp',   'Gen 37:18', '"they plotted against him"',                  'RC', 'נָכַל',  'Collective/mutual scheming against Joseph'),
-        SortEntry('18', 'וַיִּתְאַבֵּל', 'Wayyiqtol 3ms',   'Gen 37:34', '"he mourned"',                                 'R',  'אָבַל',  'Inward grief expressed outwardly; reflexive mourning'),
-        SortEntry('19', 'תִּתְכַּסֶּה',  'Wayyiqtol 3fs',   'Gen 24:65', '"she covered herself"',                        'R',  'כָּסָה', 'Rebekah covered herself with her veil'),
-        SortEntry('20', 'יִּשְׁתַּחֲווּ', 'Wayyiqtol 3mp',  'Gen 33:7',  '"they bowed down"',                            'R',  'שָׁחָה', 'Jacob\'s wives and children prostrate themselves'),
+        SortEntry('16', 'מִתְנַחֵם',     'Participle ms',   'Gen 27:42', '"is comforting himself"',                      'IR', 'נָחַם',  'Esau comforting himself with the thought of revenge'),
+        SortEntry('17', 'יִּתְנַכְּלוּ', 'Wayyiqtol 3mp',   'Gen 37:18', '"they plotted against him"',                  'IR', 'נָכַל',  'Brothers act collectively against Joseph — not mutual action on each other'),
+        SortEntry('18', 'וַיִּתְאַבֵּל', 'Wayyiqtol 3ms',   'Gen 37:34', '"he mourned"',                                 'IR', 'אָבַל',  'Inward grief expressed outwardly; reflexive mourning'),
+        SortEntry('19', 'תִּתְכַּסֶּה',  'Wayyiqtol 3fs',   'Gen 24:65', '"she covered herself"',                        'IR', 'כָּסָה', 'Rebekah covered herself with her veil'),
+        SortEntry('20', 'יִּשְׁתַּחֲווּ', 'Wayyiqtol 3mp',  'Gen 33:7',  '"they bowed down"',                            'IR', 'שָׁחָה', 'Jacob\'s wives and children prostrate themselves'),
         SortEntry('21', 'אֶתְנַהֲלָה',  'Cohortative 1cs', 'Gen 33:14', '"I will journey on slowly"',                   'IT', 'נָהַל',  'Iterative/continuous slow travel; guiding the flocks'),
-        SortEntry('22', 'הִתְקַדְּשׁוּ', 'Imperative 2mp',  'Exo 19:22', '"consecrate yourselves!"',                    'R',  'קָדַשׁ', 'The priests prepare themselves for the theophany'),
-        SortEntry('23', 'וַיִּתְחַזֵּק', 'Wayyiqtol 3ms',   'Exo 7:13',  '"and his heart was strengthened"',            'R',  'חָזַק',  'The heart strengthened itself / became stubborn'),
-        SortEntry('24', 'יִּתְהַלְּלוּ', 'Wayyiqtol 3mp',  'Ps 97:7',   '"they glory in idols"',                        'ES', 'הָלַל',  'Present themselves as glorious; boast in idols'),
-        SortEntry('25', 'הִתְחַזְּקוּ',  'Imperative 2mp',  'Jos 1:6',   '"be strong!"',                                 'ES', 'חָזַק',  'Present/conduct yourselves as strong; estimative force'),
+        SortEntry('22', 'הִתְקַדְּשׁוּ', 'Imperative 2mp',  'Exo 19:22', '"consecrate yourselves!"',                    'IR', 'קָדַשׁ', 'The priests prepare themselves for the theophany'),
+        SortEntry('23', 'וַיִּתְחַזֵּק', 'Wayyiqtol 3ms',   'Exo 7:13',  '"and his heart was strengthened"',            'IR', 'חָזַק',  'The heart strengthened itself / became stubborn'),
+        SortEntry('24', 'יִּתְהַלְּלוּ', 'Wayyiqtol 3mp',  'Ps 97:7',   '"they glory in idols"',                        'IR', 'הָלַל',  'Reflexive self-glorification; boasting in idols'),
+        SortEntry('25', 'הִתְחַזְּקוּ',  'Imperative 2mp',  'Jos 1:6',   '"be strong!"',                                 'IR', 'חָזַק',  'Command to strengthen themselves; "be courageous" = direct strength toward oneself'),
     ]
 
     def _build(self) -> None:
         self.add_instructions(
-            'Classify each Hithpael verb: R (Reflexive), RC (Reciprocal), '
-            'IT (Iterative/Frequentative), ES (Estimative/Declarative), or DN (Denominative). '
+            'Classify each Hithpael verb as IR (Intensive-Reflexive), RC (Reciprocal), '
+            'IT (Iterative), or SA (Simple Action) — the four Hithpael functions from §34.2. '
             'Answer key is on the last page.'
         )
         self.add_note(
-            'R = Reflexive (subject acts on itself)  |  '
+            'IR = Intensive-Reflexive (subject acts on itself)  |  '
             'RC = Reciprocal (subjects act on one another)  |  '
-            'IT = Iterative/Frequentative (repeated or habitual action)  |  '
-            'ES = Estimative (subject presents itself as being in a state)  |  '
-            'DN = Denominative (derived from a noun)'
+            'IT = Iterative (repeated or habitual action)  |  '
+            'SA = Simple Action (no reflexive/reciprocal/repetitive force — reads like a Qal)'
         )
         self.add_sort_table(self._ENTRIES, show_answers=False)
         self.add_reflection([
-            'הָלַךְ appears 5 times (items 1, 3, 6, 8, 13). Why is this Iterative rather than Reflexive? '
-            'What does "walking about" add that a single-step Qal walk does not?',
-            'Item 12 (הִתְבָּרֲכוּ, Gen 22:18) can be translated "bless themselves" (R) '
-            'or "be blessed" (passive). What would change if you read this as passive?',
-            'Items 24–25 are Estimative. What does the Hithpael add to הָלַל and חָזַק '
-            'that the Qal of the same root would not express?',
+            'The Hithpael of הָלַךְ appears five times (items 1, 3, 6, 8, 13). '
+            'Why is this classified as Iterative rather than Intensive-Reflexive? '
+            'What does the "walking about" context add that a single walk would not convey?',
+            'Item 12 (הִתְבָּרֲכוּ, Gen 22:18): this form can be translated '
+            '"bless themselves" (Intensive-Reflexive) or "be blessed" (passive-like). '
+            'The same tension appears in Gen 12:3. '
+            'What grammatical evidence in the verse helps decide which reading is better?',
+            'Items 15 (הִתְעַשְּׂקוּ, quarreled) and 17 (וַיִּתְנַכְּלוּ, plotted): '
+            'both involve conflict between parties. '
+            'What makes one Reciprocal and the other Intensive-Reflexive rather than Reciprocal? '
+            'Does the number of participants or the object of the action make the difference?',
+            'Items 23 and 25 both come from חָזַק, and item 24 from הָלַל. '
+            'In what way does the Hithpael\'s reflexive coloring '
+            '("strengthen YOURSELF," "praise/exalt ONESELF") '
+            'add nuance beyond a plain Qal or Piel for the same root?',
         ])
         self.add_answer_key_sort(self._ENTRIES)
 
@@ -11897,7 +11905,7 @@ class Ch35FunctionSortExercise(ExercisePDF):
     def _build(self) -> None:
         self.add_instructions(
             'For each weak-root Hithpael form, classify the semantic function: '
-            'R (Reflexive), Re (Reciprocal), I (Intensive/Iterative), SA (Simple Action). '
+            'R (Reflexive), I (Intensive/Iterative), or SA (Simple Action). '
             'Each item gives the Hebrew form, conjugation, root, reference, and gloss. '
             'Answer key at the bottom.'
         )
