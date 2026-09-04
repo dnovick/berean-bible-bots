@@ -3,7 +3,7 @@
 
 *Generated 2026-05-15*
 
-*Build scripts: [scripts/both/word_studies/fasting/build_fasting_charts.py](../../../../scripts/both/word_studies/fasting/build_fasting_charts.py) · [scripts/both/word_studies/fasting/build_fasting_report.py](../../../../scripts/both/word_studies/fasting/build_fasting_report.py)*
+*Build scripts: [scripts/both/word_studies/fasting/build_fasting_charts.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/word_studies/fasting/build_fasting_charts.py) · [scripts/both/word_studies/fasting/build_fasting_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/word_studies/fasting/build_fasting_report.py)*
 
 ---
 

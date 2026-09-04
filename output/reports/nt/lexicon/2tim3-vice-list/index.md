@@ -1,6 +1,6 @@
 # 2 Timothy 3:1–5 — Vice List Word Study
 
-*Build script: [scripts/nt/lexicon/2tim3-vice-list/build_2tim3_vice_list.py](../../../../../scripts/nt/lexicon/2tim3-vice-list/build_2tim3_vice_list.py)*
+*Build script: [scripts/nt/lexicon/2tim3-vice-list/build_2tim3_vice_list.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/lexicon/2tim3-vice-list/build_2tim3_vice_list.py)*
 
 ---
 

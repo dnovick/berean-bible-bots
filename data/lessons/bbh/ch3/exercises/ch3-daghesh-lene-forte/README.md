@@ -14,6 +14,6 @@ Identify the Daghesh type (Lene or Forte) in each of 15 Hebrew words and name th
 
 | File | Description |
 |---|---|
-| [ch3-dagesh-lene-forte.md](ch3-dagesh-lene-forte.md) | Static reference with answer key |
-| [ch3-dagesh-lene-forte.html](ch3-dagesh-lene-forte.html) | Interactive HTML exercise |
-| [ch3-dagesh-lene-forte.pdf](ch3-dagesh-lene-forte.pdf) | Fillable PDF |
+| [ch3-daghesh-lene-forte.md](ch3-daghesh-lene-forte.md) | Static reference with answer key |
+| [ch3-daghesh-lene-forte.html](ch3-daghesh-lene-forte.html) | Interactive HTML exercise |
+| [ch3-daghesh-lene-forte.pdf](ch3-daghesh-lene-forte.pdf) | Fillable PDF |

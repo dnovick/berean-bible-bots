@@ -1,6 +1,6 @@
 # 1 Peter 2:1 — The "Lay Aside" Vice List
 
-*Build script: [scripts/nt/lexicon/build_1pet2_vice_list.py](../../../../scripts/nt/lexicon/build_1pet2_vice_list.py)*
+*Build script: [scripts/nt/lexicon/build_1pet2_vice_list.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/lexicon/build_1pet2_vice_list.py)*
 
 ---
 

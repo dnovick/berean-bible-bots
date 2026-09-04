@@ -1,6 +1,6 @@
 # Syntactic Role Analysis: YHWH/Elohim [OT]
 
-*Build script: [scripts/ot/names/build_role_yhwh_elohim.py](../../../../scripts/ot/names/build_role_yhwh_elohim.py)*
+*Build script: [scripts/ot/names/build_role_yhwh_elohim.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/names/build_role_yhwh_elohim.py)*
 
 ---
 

@@ -3,7 +3,7 @@
 **Source:** STEPBible TAHOT  
 **Scope:** All verb tokens in Genesis
 
-*Build script: [scripts/ot/verbs/build_verb_stems.py](../../../../scripts/ot/verbs/build_verb_stems.py)*
+*Build script: [scripts/ot/verbs/build_verb_stems.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/verbs/build_verb_stems.py)*
 
 ---
 

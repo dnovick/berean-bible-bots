@@ -3,7 +3,7 @@
 **Source:** STEPBible TAHOT (Translators Amalgamated Hebrew OT)  
 **Scope:** All verb tokens across the entire Hebrew/Aramaic Old Testament
 
-*Build script: [scripts/ot/verbs/build_verb_stems.py](../../../../scripts/ot/verbs/build_verb_stems.py)*
+*Build script: [scripts/ot/verbs/build_verb_stems.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/verbs/build_verb_stems.py)*
 
 ---
 

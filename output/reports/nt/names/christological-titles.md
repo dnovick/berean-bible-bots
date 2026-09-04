@@ -1,6 +1,6 @@
 # Christological Titles: Jesus's Self-Designations in the Gospels
 
-*Build script: [scripts/nt/names/build_christological_titles.py](../../../../scripts/nt/names/build_christological_titles.py)*
+*Build script: [scripts/nt/names/build_christological_titles.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/names/build_christological_titles.py)*
 
 ---
 

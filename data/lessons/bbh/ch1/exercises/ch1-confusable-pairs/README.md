@@ -1,6 +1,6 @@
 # ch1-confusable-pairs — Hebrew Confusable Letter Pairs Drill
 
-[← Back to Chapter 1](../../README.md)
+[← Back to Chapter 1](../../lesson.md)
 
 ## Description
 

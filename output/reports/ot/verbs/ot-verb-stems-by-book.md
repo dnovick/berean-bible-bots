@@ -1,6 +1,6 @@
 # Hebrew OT — Verb Stems by Book
 
-*Build script: [scripts/ot/verbs/build_verb_morphology_by_book.py](../../../../scripts/ot/verbs/build_verb_morphology_by_book.py)*
+*Build script: [scripts/ot/verbs/build_verb_morphology_by_book.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/verbs/build_verb_morphology_by_book.py)*
 
 ← [Back to Verb Morphology overview](verb-morphology-by-book.md)
 

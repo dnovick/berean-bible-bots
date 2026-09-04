@@ -2,7 +2,7 @@
 
 **LXX + Greek NT Occurrence Analysis**
 
-*Build script: [scripts/both/phrase_studies/build_epi_to_auto.py](../../../../scripts/both/phrase_studies/build_epi_to_auto.py)*
+*Build script: [scripts/both/phrase_studies/build_epi_to_auto.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/phrase_studies/build_epi_to_auto.py)*
 
 ---
 

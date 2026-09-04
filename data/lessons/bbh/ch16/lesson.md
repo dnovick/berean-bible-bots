@@ -395,6 +395,6 @@ when the syllable structure allows it, and a distinctive vowel:
 
 | Resource | Description |
 |---|---|
-| [Morphology Flashcard Deck](ch16-morphology-deck.md) | ~40 cards across all eight weak classes in the Imperfect. |
+| [Morphology Flashcard Deck](flashcards/morphology/ch16-morphology-deck.md) | ~40 cards across all eight weak classes in the Imperfect. |
 | [Passage Exercise](exercises/ch16-passage-exercise/README.md) | Parse weak-root Qal Imperfect and Wayyiqtol forms from Genesis 1–22; includes Weak Class column. |
 | [Weak-Form ID Drill](exercises/ch16-weak-form-id/README.md) | 40 forms — identify class, PGN, and root; Part A by class, Part B mixed. |

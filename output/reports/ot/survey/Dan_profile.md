@@ -2,7 +2,7 @@
 
 **Old Testament** | Canonical order: 27 | Chapters: 12
 
-*Build script: [scripts/ot/survey/build_book_profiles.py](../../../../scripts/ot/survey/build_book_profiles.py)*
+*Build script: [scripts/ot/survey/build_book_profiles.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/survey/build_book_profiles.py)*
 
 ---
 

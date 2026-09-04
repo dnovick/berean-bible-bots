@@ -1,6 +1,6 @@
 # Hebrew vs. Aramaic Word Distribution in the OT
 
-*Build script: [scripts/ot/lexicon/build_ot_hebrew_aramaic.py](../../../../scripts/ot/lexicon/build_ot_hebrew_aramaic.py)*
+*Build script: [scripts/ot/lexicon/build_ot_hebrew_aramaic.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/lexicon/build_ot_hebrew_aramaic.py)*
 
 ---
 

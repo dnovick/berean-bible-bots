@@ -17,7 +17,7 @@ branch) labels are shown in gray; accent names appear in italics below each word
 
 | Book | Chapters | Verses |
 |---|---|---|
-| [Genesis](Gen/index.md) | 1 | 31 |
+| [Genesis](Gen/README.md) | 1 | 31 |
 
 ---
 

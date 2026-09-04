@@ -1,6 +1,6 @@
 # Hapax Legomena by Biblical Book
 
-*Build script: [scripts/both/lexicon/build_hapax_legomena.py](../../../../scripts/both/lexicon/build_hapax_legomena.py)*
+*Build script: [scripts/both/lexicon/build_hapax_legomena.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/lexicon/build_hapax_legomena.py)*
 
 ---
 
