@@ -72,12 +72,12 @@ jobs:
           $(cat /tmp/nav.txt)"
           fi
 
-          # validate_links: warnings only (non-blocking); use --strict locally to fail
-          python scripts/validate_links.py > /tmp/links.txt 2>&1 || true
-          LINKS_WARNS=$(grep -c "^WARN" /tmp/links.txt || true)
-          if [ "${LINKS_WARNS}" -gt 0 ]; then
+          # validate_links: --strict; zero broken links required to pass
+          if ! python scripts/validate_links.py --strict > /tmp/links.txt 2>&1; then
+            FAILED=1
+            LINKS_WARNS=$(grep -c "^WARN" /tmp/links.txt || true)
             BODY="${BODY}
-          ### validate_links (informational — ${LINKS_WARNS} broken link(s))
+          ### validate_links FAILED — ${LINKS_WARNS} broken link(s)
           $(tail -5 /tmp/links.txt)"
           fi
 
