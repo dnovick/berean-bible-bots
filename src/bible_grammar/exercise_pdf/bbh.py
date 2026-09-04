@@ -3767,11 +3767,7 @@ class Ch3QametsHatufExercise(ExercisePDF):
             ['3', 'דָּבָר', 'vowel under ב, final syllable (word)', ''],
             ['4', 'כָּל־', 'vowel under כ (all of, bound form)', ''],
             ['5', 'אָֽמְרָה', 'vowel under א, with Metheg (she said)', ''],
-            ['6', 'מָ', 'open, pretonic syllable', ''],
-            ['7', 'מָ', 'closed, unaccented syllable', ''],
-            ['8', 'מָ', 'closed, accented syllable', ''],
-            ['9', 'מָ', 'open, accented syllable', ''],
-            ['10', 'מָ', 'closed, unaccented syllable, with Metheg', ''],
+            ['6', 'בָּא', 'vowel under ב, only syllable (he came)', ''],
         ]
         ans = [
             ['1', 'חָכְמָה', 'vowel under ח', 'Qamets Hatuf (closed, unaccented)'],
@@ -3779,11 +3775,7 @@ class Ch3QametsHatufExercise(ExercisePDF):
             ['3', 'דָּבָר', 'vowel under ב', 'Qamets (closed, accented)'],
             ['4', 'כָּל־', 'vowel under כ', 'Qamets Hatuf (closed, unaccented, bound form)'],
             ['5', 'אָֽמְרָה', 'vowel under א', 'Qamets (Metheg confirms it)'],
-            ['6', 'מָ', 'open, pretonic', 'Qamets'],
-            ['7', 'מָ', 'closed, unaccented', 'Qamets Hatuf'],
-            ['8', 'מָ', 'closed, accented', 'Qamets'],
-            ['9', 'מָ', 'open, accented', 'Qamets'],
-            ['10', 'מָ', 'closed, unaccented, with Metheg', 'Qamets (Metheg overrides)'],
+            ['6', 'בָּא', 'vowel under ב', 'Qamets (open, accented — quiescent א does not close the syllable)'],
         ]
         self.add_generic_table(
             headers=['#', 'Word / Form', 'Target', 'Classification'],
