@@ -13,11 +13,7 @@
 | 3 | דָּבָר | vowel under ב, final syllable (*word*) | |
 | 4 | כָּל־ | vowel under כ (*all of*, bound form) | |
 | 5 | אָֽמְרָה | vowel under א, marked with Metheg (*she said*) | |
-| 6 | מָ (open, pretonic syllable) | — | |
-| 7 | מָ (closed, unaccented syllable) | — | |
-| 8 | מָ (closed, accented syllable) | — | |
-| 9 | מָ (open, accented syllable) | — | |
-| 10 | מָ (closed, unaccented syllable, with Metheg) | — | |
+| 6 | בָּא | vowel under ב, only syllable (*he came*) | |
 
 ---
 
@@ -30,8 +26,4 @@
 | 3 | דָּבָר | vowel under ב, final syllable (*word*) | Qamets — closed, accented syllable |
 | 4 | כָּל־ | vowel under כ (*all of*, bound form) | Qamets Hatuf — closed, unaccented (bound/proclitic to the next word) |
 | 5 | אָֽמְרָה | vowel under א, marked with Metheg (*she said*) | Qamets — the Metheg confirms Qamets even though the syllable is closed and unaccented |
-| 6 | מָ (open, pretonic syllable) | — | Qamets — Qamets prefers open, pretonic syllables |
-| 7 | מָ (closed, unaccented syllable) | — | Qamets Hatuf — the one environment Qamets Hatuf requires |
-| 8 | מָ (closed, accented syllable) | — | Qamets — Qamets prefers closed, accented syllables |
-| 9 | מָ (open, accented syllable) | — | Qamets — Qamets Hatuf never occurs in an open syllable |
-| 10 | מָ (closed, unaccented syllable, with Metheg) | — | Qamets — Metheg overrides the closed-unaccented environment |
+| 6 | בָּא | vowel under ב, only syllable (*he came*) | Qamets — open, accented syllable (the quiescent א does not close the syllable; a one-syllable word is always accented) |

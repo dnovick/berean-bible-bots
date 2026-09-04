@@ -38,7 +38,7 @@
 </head>
 <body>
 <h1>Ch3 Qamets vs. Qamets Hatuf Exercise — Syllabification and Pronunciation</h1>
-<p class="subtitle">BBH Chapter 3 · 10 items</p>
+<p class="subtitle">BBH Chapter 3 · 6 items</p>
 <div class="instructions">
 <strong>Instructions:</strong> Qamets (long a) and Qamets Hatuf (short o) are written with the identical symbol (<span style="direction:rtl;unicode-bidi:embed;">בָּ</span>). For each item, select whether the marked vowel is Qamets or Qamets Hatuf. Remember: Qamets Hatuf occurs only in a closed, unaccented syllable — and a Metheg always confirms Qamets, even in that environment.
 </div>
@@ -153,11 +153,11 @@
 <td>Qamets — the Metheg confirms Qamets even though the syllable is closed and unaccented</td>
 <td></td>
 </tr>
-<!-- 6: מָ open pretonic — correct: Qamets -->
+<!-- 6: בָּא open, accented — correct: Qamets -->
 <tr>
 <td class="num">6</td>
-<td class="heb">מָ</td>
-<td>open, pretonic syllable</td>
+<td class="heb">בָּא</td>
+<td>vowel under <span class="heb-inline">ב</span>, only syllable (<em>he came</em>)</td>
 <td><select class="parse-field" id="sel-6">
 <option value="">—</option>
 <option>Qamets (long a)</option>
@@ -167,91 +167,15 @@
 </tr>
 <tr class="ans-row" id="ans-6">
 <td class="ans-lbl">✓</td>
-<td class="ans-heb">מָ</td>
-<td>open, pretonic syllable</td>
-<td>Qamets — Qamets prefers open, pretonic syllables</td>
-<td></td>
-</tr>
-<!-- 7: מָ closed unaccented — correct: Qamets Hatuf -->
-<tr>
-<td class="num">7</td>
-<td class="heb">מָ</td>
-<td>closed, unaccented syllable</td>
-<td><select class="parse-field" id="sel-7">
-<option value="">—</option>
-<option>Qamets Hatuf (short o)</option>
-<option>Qamets (long a)</option>
-</select></td>
-<td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-7">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">מָ</td>
-<td>closed, unaccented syllable</td>
-<td>Qamets Hatuf — the one environment Qamets Hatuf requires</td>
-<td></td>
-</tr>
-<!-- 8: מָ closed accented — correct: Qamets -->
-<tr>
-<td class="num">8</td>
-<td class="heb">מָ</td>
-<td>closed, accented syllable</td>
-<td><select class="parse-field" id="sel-8">
-<option value="">—</option>
-<option>Qamets Hatuf (short o)</option>
-<option>Qamets (long a)</option>
-</select></td>
-<td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-8">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">מָ</td>
-<td>closed, accented syllable</td>
-<td>Qamets — Qamets prefers closed, accented syllables</td>
-<td></td>
-</tr>
-<!-- 9: מָ open accented — correct: Qamets -->
-<tr>
-<td class="num">9</td>
-<td class="heb">מָ</td>
-<td>open, accented syllable</td>
-<td><select class="parse-field" id="sel-9">
-<option value="">—</option>
-<option>Qamets (long a)</option>
-<option>Qamets Hatuf (short o)</option>
-</select></td>
-<td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-9">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">מָ</td>
-<td>open, accented syllable</td>
-<td>Qamets — Qamets Hatuf never occurs in an open syllable</td>
-<td></td>
-</tr>
-<!-- 10: מָ closed unaccented with Metheg — correct: Qamets -->
-<tr>
-<td class="num">10</td>
-<td class="heb">מָ</td>
-<td>closed, unaccented syllable, with Metheg</td>
-<td><select class="parse-field" id="sel-10">
-<option value="">—</option>
-<option>Qamets Hatuf (short o)</option>
-<option>Qamets (long a)</option>
-</select></td>
-<td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
-</tr>
-<tr class="ans-row" id="ans-10">
-<td class="ans-lbl">✓</td>
-<td class="ans-heb">מָ</td>
-<td>closed, unaccented syllable, with Metheg</td>
-<td>Qamets — Metheg overrides the closed-unaccented environment</td>
+<td class="ans-heb">בָּא</td>
+<td>vowel under <span class="heb-inline">ב</span>, only syllable</td>
+<td>Qamets — open, accented syllable (the quiescent <span class="heb-inline">א</span> does not close the syllable; a one-syllable word is always accented)</td>
 <td></td>
 </tr>
 </tbody>
 </table>
 <script>
-  const ROWS = 10;
+  const ROWS = 6;
   function tog(n) {
     const r = document.getElementById('ans-' + n);
     const btn = r.previousElementSibling.querySelector('button.rbtn');

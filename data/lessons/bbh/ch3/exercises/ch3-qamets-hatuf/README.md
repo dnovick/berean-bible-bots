@@ -1,12 +1,12 @@
 # Ch3 Qamets vs. Qamets Hatuf Exercise
 
-Distinguish Qamets (long a) from Qamets Hatuf (short o) — two vowels that look identical — across 10 items.
+Distinguish Qamets (long a) from Qamets Hatuf (short o) — two vowels that look identical — across 6 items.
 
 ## Exercise
 
 | Exercise | Description |
 |---|---|
-| Ch3 Qamets vs. Qamets Hatuf | For each item: classify the marked vowel as Qamets or Qamets Hatuf, applying the closed-and-unaccented rule and the Metheg override. 10 items with answer key. |
+| Ch3 Qamets vs. Qamets Hatuf | For each item: classify the marked vowel as Qamets or Qamets Hatuf, applying the closed-and-unaccented rule and the Metheg override. 6 items (all real BBH vocabulary) with answer key. |
 
 ## Files
 
