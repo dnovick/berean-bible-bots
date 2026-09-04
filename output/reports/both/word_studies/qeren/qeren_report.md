@@ -2,7 +2,7 @@
 
 **Hebrew noun H7161 + verb H7160 | LXX, Vulgate, and translation history**
 
-*Build script: [scripts/both/word_studies/qeren/build_qeren_report.py](../../../../scripts/both/word_studies/qeren/build_qeren_report.py)*
+*Build script: [scripts/both/word_studies/qeren/build_qeren_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/word_studies/qeren/build_qeren_report.py)*
 
 ---
 

@@ -1,6 +1,6 @@
 # ch1-sofit-forms — Hebrew Final (Sofit) Letter Forms Drill
 
-[← Back to Chapter 1](../../README.md)
+[← Back to Chapter 1](../../lesson.md)
 
 ## Description
 

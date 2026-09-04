@@ -2,7 +2,7 @@
 
 **Total occurrences: 13**
 
-*Build script: [scripts/ot/verbs/build_2fp_perfect.py](../../../../scripts/ot/verbs/build_2fp_perfect.py)*
+*Build script: [scripts/ot/verbs/build_2fp_perfect.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/verbs/build_2fp_perfect.py)*
 
 ---
 

@@ -373,6 +373,22 @@ def _build_exercise_page(
     return "\n".join(lines)
 
 
+def _rewrite_desc_links(desc: str, ex_name: str) -> str:
+    """Prefix bare filename links in desc with the exercise subdirectory.
+
+    exercise.yml descriptions often include download links like
+    [foo.md](foo.md) that are correct relative to the exercise's own
+    index page (exercises/<name>/) but land one level too shallow when
+    the same text appears in exercises.md (served at exercises/).
+    """
+    def _prefix(m: re.Match) -> str:
+        text, target = m.group(1), m.group(2)
+        if "/" in target or target.startswith(("#", "http")):
+            return m.group(0)
+        return f"[{text}]({ex_name}/{target})"
+    return re.sub(r"\[([^\]]*)\]\(([^)]+)\)", _prefix, desc)
+
+
 def _build_exercises_page(ch_num: int, ch_title: str, items: list[dict]) -> str:
     lines = [
         f"# Ch{ch_num} — {ch_title}: Exercises", "",
@@ -383,9 +399,13 @@ def _build_exercises_page(ch_num: int, ch_title: str, items: list[dict]) -> str:
     else:
         lines += ["| Exercise | Description |", "|---|---|"]
         for item in items:
+            desc = item.get("desc", "").replace(chr(10), " ")
+            ex_name = item["link"].split("/")[1] if "/" in item["link"] else ""
+            if ex_name:
+                desc = _rewrite_desc_links(desc, ex_name)
             lines.append(
                 f"| [{item['title']}]({item['link']}) "
-                f"| {item.get('desc', '').replace(chr(10), ' ')} |"
+                f"| {desc} |"
             )
         lines.append("")
     return "\n".join(lines)

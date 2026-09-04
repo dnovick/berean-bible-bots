@@ -3,7 +3,7 @@
 
 *Generated 2026-06-13*
 
-*Build script: [scripts/both/word_studies/fire/build_fire_report.py](../../../../scripts/both/word_studies/fire/build_fire_report.py)*
+*Build script: [scripts/both/word_studies/fire/build_fire_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/word_studies/fire/build_fire_report.py)*
 
 ---
 

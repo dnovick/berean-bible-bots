@@ -3,7 +3,7 @@
 **Corpus:** Greek New Testament (TAGNT)  
 **Method:** Strong's-based lemma grouping across 11 sin-vocabulary stems  
 **Two metrics:** (1) sin-vocabulary words as % of total words; (2) verses containing ≥1 sin-vocabulary word as % of total verses  
-**Build script:** [`scripts/nt/lexicon/build_sin_vocabulary_report.py`](../../../../scripts/nt/lexicon/build_sin_vocabulary_report.py)
+**Build script:** [`scripts/nt/lexicon/build_sin_vocabulary_report.py`](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/lexicon/build_sin_vocabulary_report.py)
 
 ---
 

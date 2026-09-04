@@ -1,6 +1,6 @@
 # Genre Comparison: Morphological Patterns Across Literary Sections
 
-*Build script: [scripts/both/genre/build_genre_comparison.py](../../../../scripts/both/genre/build_genre_comparison.py)*
+*Build script: [scripts/both/genre/build_genre_comparison.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/genre/build_genre_comparison.py)*
 
 ---
 

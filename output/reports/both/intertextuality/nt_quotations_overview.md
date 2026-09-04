@@ -1,6 +1,6 @@
 # NT Quotations of the OT — Overview
 
-*Build script: [scripts/both/intertextuality/build_nt_quotations_overview.py](../../../../scripts/both/intertextuality/build_nt_quotations_overview.py)*
+*Build script: [scripts/both/intertextuality/build_nt_quotations_overview.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/intertextuality/build_nt_quotations_overview.py)*
 
 ---
 

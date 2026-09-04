@@ -7,6 +7,7 @@ Output: output/studies/psalm-119/analysis/
 """
 
 import re
+import shutil
 import sys
 from pathlib import Path
 from typing import Any, Dict, List, Optional
@@ -534,6 +535,8 @@ chart_verb_torah_matrix()
 
 # ── CSV exports ────────────────────────────────────────────────────────────────
 
+MKDOCS_CSV = REPO / 'mkdocs_src' / 'studies' / 'psalm-119' / 'analysis'
+
 freq_df.to_csv(OUT / 'psalm-119-word-vocab.csv', index=False)
 petition_df.to_csv(OUT / 'psalm-119-petitions.csv', index=False)
 
@@ -568,6 +571,16 @@ for snum, letter, name, v_from, v_to in STANZAS:
         **{key: stanza_term_counts[snum][key] for key in term_keys},
     })
 pd.DataFrame(theme_rows).to_csv(OUT / 'psalm-119-themes-by-stanza.csv', index=False)
+
+# Mirror CSVs to mkdocs_src so the published analysis page can link to them
+MKDOCS_CSV.mkdir(parents=True, exist_ok=True)
+for csv_name in [
+    'psalm-119-word-vocab.csv',
+    'psalm-119-petitions.csv',
+    'psalm-119-non-petition-verbs.csv',
+    'psalm-119-themes-by-stanza.csv',
+]:
+    shutil.copy2(OUT / csv_name, MKDOCS_CSV / csv_name)
 
 # ── Helper functions for report text ──────────────────────────────────────────
 

@@ -244,7 +244,7 @@ prohibition — a categorical, ongoing prohibition, not a one-time command.
 
 | Resource | Description |
 |---|---|
-| [Morphology Flashcard Deck](ch15-morphology-deck.md) | Qal Imperfect forms across all 14 PGN cells for 3 high-frequency roots. |
+| [Morphology Flashcard Deck](flashcards/morphology/ch15-morphology-deck.md) | Qal Imperfect forms across all 14 PGN cells for 3 high-frequency roots. |
 | [Passage Exercise — Exodus 3–4](exercises/ch15-passage-exercise/README.md) | 15 Qal Imperfect verbs from the burning bush narrative to parse (PGN + root) and identify usage type. |
 | [Parsing Drill](exercises/ch15-parsing-drill/README.md) | 25 pointed forms — identify prefix, PGN, and root for each Qal Imperfect. |
 
@@ -255,4 +255,4 @@ prohibition — a categorical, ongoing prohibition, not a one-time command.
 | Resource | URL |
 |---|---|
 | Anki (free flashcard app — Windows, Mac, iOS, Android) | [apps.ankiweb.net](https://apps.ankiweb.net) |
-| Morphology import file for this chapter | [ch15-morphology-deck.txt](ch15-morphology-deck.txt) |
+| Morphology import file for this chapter | [ch15-morphology-deck.txt](flashcards/morphology/ch15-morphology-deck.txt) |

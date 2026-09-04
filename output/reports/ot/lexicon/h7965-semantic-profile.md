@@ -9,7 +9,7 @@
 
 ## Definition
 
-*Build script: [scripts/ot/lexicon/build_h7965_shalom.py](../../../../scripts/ot/lexicon/build_h7965_shalom.py)*
+*Build script: [scripts/ot/lexicon/build_h7965_shalom.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/lexicon/build_h7965_shalom.py)*
 
 ---
 

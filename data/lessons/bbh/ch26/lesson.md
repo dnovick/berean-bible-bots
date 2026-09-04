@@ -5,7 +5,7 @@
 *Basics of Biblical Hebrew, Pratico & Van Pelt*
 *Data: MACULA Hebrew WLC (9,409 OT Hiphil tokens)*
 
-> **Context:** The Hiphil is the second most productive derived stem in Biblical Hebrew (12.9% of all OT verb tokens). See [OT Verb Stems Overview](../../../../reports/ot/verbs/ot-verb-stems-pie.md) for how it compares to the Qal, Niphal, Piel, and other stems.
+> **Context:** The Hiphil is the second most productive derived stem in Biblical Hebrew (12.9% of all OT verb tokens). See [OT Verb Stems Overview](../../../../mkdocs_src/reports/ot/verbs/ot-verb-stems-pie.md) for how it compares to the Qal, Niphal, Piel, and other stems.
 
 ## 1. Function (BBH §26.2)
 

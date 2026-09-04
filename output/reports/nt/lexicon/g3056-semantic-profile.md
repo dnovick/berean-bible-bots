@@ -9,7 +9,7 @@
 
 ## Definition
 
-*Build script: [scripts/nt/lexicon/build_g3056_logos.py](../../../../scripts/nt/lexicon/build_g3056_logos.py)*
+*Build script: [scripts/nt/lexicon/build_g3056_logos.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/lexicon/build_g3056_logos.py)*
 
 ---
 

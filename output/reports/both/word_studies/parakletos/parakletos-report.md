@@ -1,6 +1,6 @@
 # Word Study: παράκλητος / παρακαλέω / παράκλησις
 
-*Build script: [scripts/both/word_studies/parakletos/build_parakletos_report.py](../../../../../scripts/both/word_studies/parakletos/build_parakletos_report.py)*
+*Build script: [scripts/both/word_studies/parakletos/build_parakletos_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/word_studies/parakletos/build_parakletos_report.py)*
 
 ---
 

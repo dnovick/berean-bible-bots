@@ -1,6 +1,6 @@
 # Cross-Testament Trajectory: H2617 חֶ֫סֶד "kindness"
 
-*Build script: [scripts/ot/lexicon/build_trajectory_h2617_hesed.py](../../../../scripts/ot/lexicon/build_trajectory_h2617_hesed.py)*
+*Build script: [scripts/ot/lexicon/build_trajectory_h2617_hesed.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/lexicon/build_trajectory_h2617_hesed.py)*
 
 ---
 

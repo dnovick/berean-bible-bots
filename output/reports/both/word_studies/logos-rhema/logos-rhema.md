@@ -1,6 +1,6 @@
 # Word Study: λόγος (G3056) and ῥῆμα (G4487)
 
-*Build script: [scripts/both/word_studies/logos-rhema/build_logos_rhema_report.py](../../../../../scripts/both/word_studies/logos-rhema/build_logos_rhema_report.py)*
+*Build script: [scripts/both/word_studies/logos-rhema/build_logos_rhema_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/word_studies/logos-rhema/build_logos_rhema_report.py)*
 
 ---
 

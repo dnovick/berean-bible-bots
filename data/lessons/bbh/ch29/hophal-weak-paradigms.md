@@ -5,7 +5,7 @@
 
 **Sources:** Attested forms are drawn from the Open Scriptures Hebrew Bible (OSHB). Unattested theoretical forms are derived from standard Hophal morphological rules (Pratico & Van Pelt §29; GKC §67) and are marked †. In paradigm study these theoretical forms represent the expected outputs of the documented phonological rules for each weak root class.
 
-← [Back to Ch29 lesson](index.md)
+← [Back to Ch29 lesson](lesson.md)
 
 ---
 

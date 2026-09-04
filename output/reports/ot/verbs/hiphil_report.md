@@ -1,6 +1,6 @@
 # Hiphil (הִפְעִיל) Verb Morphology — Biblical Hebrew
 
-*Build script: [scripts/ot/verbs/build_hiphil_report.py](../../../../scripts/ot/verbs/build_hiphil_report.py)*
+*Build script: [scripts/ot/verbs/build_hiphil_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/verbs/build_hiphil_report.py)*
 
 ---
 

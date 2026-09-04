@@ -1,6 +1,6 @@
 # καί Semantic Function Analysis
 
-*Build script: [scripts/nt/discourse/build_kai_report.py](../../../../scripts/nt/discourse/build_kai_report.py)*
+*Build script: [scripts/nt/discourse/build_kai_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/discourse/build_kai_report.py)*
 
 ## Contents
 

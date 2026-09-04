@@ -29,12 +29,21 @@ import sys
 from pathlib import Path
 
 _REPO = Path(__file__).resolve().parent.parent
+_MKDOCS_SRC = _REPO / "mkdocs_src"
+# output/reports/ is the committed source for reports; mkdocs_src/reports/ is
+# gitignored and regenerated from it, so scan the tracked source instead.
 _SCAN_ROOTS = [
     _REPO / "data" / "lessons",
-    _REPO / "mkdocs_src",
+    _REPO / "output" / "reports",
+    _MKDOCS_SRC / "courses",
+    _MKDOCS_SRC / "standards",
+    _MKDOCS_SRC / "policies",
+    _MKDOCS_SRC / "studies",
 ]
 
-_LINK_RE = re.compile(r"\[(?:[^\]]*)\]\(([^)]+)\)")
+# Match navigation links only; exclude image links (![alt](src)) — broken images
+# affect display but not site navigation, so they're out of scope here.
+_LINK_RE = re.compile(r"(?<!!)\[(?:[^\]]*)\]\(([^)]+)\)")
 
 
 def _is_skippable(target: str) -> bool:
@@ -69,6 +78,18 @@ def _check_file(
         resolved = (md_file.parent / path_part).resolve()
         if resolved.exists():
             continue
+
+        # mkdocs promotes foo/bar.md → foo/bar/index.html (directory URLs),
+        # so a link like ../x.txt in bar.md resolves to foo/x.txt on the
+        # published site even though the filesystem check above uses
+        # foo/ as the base. For non-index mkdocs_src files, also accept a
+        # link that resolves correctly from the directory-URL base
+        # (foo/bar/ → one level deeper than the .md file's directory).
+        if (md_file.is_relative_to(_MKDOCS_SRC)
+                and md_file.name not in ("index.md", "README.md")):
+            dir_url_resolved = (md_file.parent / md_file.stem / path_part).resolve()
+            if dir_url_resolved.exists():
+                continue
 
         rel_source = md_file.relative_to(_REPO)
         warnings.append(

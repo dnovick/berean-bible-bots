@@ -2,7 +2,7 @@
 
 ## Overview
 
-*Build script: [scripts/nt/lexicon/build_obey_word_study.py](../../../../scripts/nt/lexicon/build_obey_word_study.py)*
+*Build script: [scripts/nt/lexicon/build_obey_word_study.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/lexicon/build_obey_word_study.py)*
 
 ---
 

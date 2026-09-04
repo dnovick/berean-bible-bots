@@ -7,7 +7,7 @@
 
 ## Network Graph
 
-*Build script: [scripts/both/intertextuality/build_isa_intertextuality.py](../../../../scripts/both/intertextuality/build_isa_intertextuality.py)*
+*Build script: [scripts/both/intertextuality/build_isa_intertextuality.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/intertextuality/build_isa_intertextuality.py)*
 
 ---
 

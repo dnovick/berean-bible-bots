@@ -1,6 +1,6 @@
 # Word Study: Greek Prayer Vocabulary in 1 Timothy 2:1
 
-*Build script: [scripts/both/word_studies/prayer-vocabulary/build_prayer_vocabulary_report.py](../../../../../scripts/both/word_studies/prayer-vocabulary/build_prayer_vocabulary_report.py)*
+*Build script: [scripts/both/word_studies/prayer-vocabulary/build_prayer_vocabulary_report.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/word_studies/prayer-vocabulary/build_prayer_vocabulary_report.py)*
 
 ---
 

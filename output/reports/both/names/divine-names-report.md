@@ -1,6 +1,6 @@
 # Divine Names and Christological Titles
 
-*Build script: [scripts/both/names/build_divine_names.py](../../../../scripts/both/names/build_divine_names.py)*
+*Build script: [scripts/both/names/build_divine_names.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/names/build_divine_names.py)*
 
 ---
 

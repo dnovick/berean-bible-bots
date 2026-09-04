@@ -3,7 +3,7 @@
 **Source:** STEPBible TAGNT  
 **Scope:** All verb tokens in the 13 Pauline epistles  
 
-*Build script: [scripts/nt/verbs/build_tense_voice_heatmaps.py](../../../../scripts/nt/verbs/build_tense_voice_heatmaps.py)*
+*Build script: [scripts/nt/verbs/build_tense_voice_heatmaps.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/verbs/build_tense_voice_heatmaps.py)*
 
 ---
 

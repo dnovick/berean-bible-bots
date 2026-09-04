@@ -1,6 +1,6 @@
 # Greek NT Case Distribution by Book
 
-*Build script: [scripts/nt/lexicon/build_nt_case_distribution.py](../../../../scripts/nt/lexicon/build_nt_case_distribution.py)*
+*Build script: [scripts/nt/lexicon/build_nt_case_distribution.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/nt/lexicon/build_nt_case_distribution.py)*
 
 ---
 

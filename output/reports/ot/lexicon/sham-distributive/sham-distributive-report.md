@@ -3,7 +3,7 @@
 **Focus passage:** Isaiah 28:10, 13  
 **Corpus:** Hebrew Old Testament (OSHB)  
 **Topic:** The use of repeated שָׁם ("there") as a distributive idiom, and its broader pattern in Biblical Hebrew  
-**Build script:** [`scripts/ot/lexicon/build_sham_distributive_report.py`](../../../../scripts/ot/lexicon/build_sham_distributive_report.py)
+**Build script:** [`scripts/ot/lexicon/build_sham_distributive_report.py`](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/lexicon/build_sham_distributive_report.py)
 
 ---
 

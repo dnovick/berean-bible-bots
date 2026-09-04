@@ -9,7 +9,7 @@
 
 ## Definition
 
-*Build script: [scripts/ot/lexicon/build_h7307_ruach.py](../../../../scripts/ot/lexicon/build_h7307_ruach.py)*
+*Build script: [scripts/ot/lexicon/build_h7307_ruach.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/lexicon/build_h7307_ruach.py)*
 
 ---
 

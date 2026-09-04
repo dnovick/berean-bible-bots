@@ -1,6 +1,6 @@
 # Nouns by Gender, Per Book
 
-*Build script: [scripts/both/lexicon/build_nouns_by_gender.py](../../../../scripts/both/lexicon/build_nouns_by_gender.py)*
+*Build script: [scripts/both/lexicon/build_nouns_by_gender.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/both/lexicon/build_nouns_by_gender.py)*
 
 ---
 

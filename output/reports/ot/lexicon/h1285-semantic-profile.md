@@ -9,7 +9,7 @@
 
 ## Definition
 
-*Build script: [scripts/ot/lexicon/build_h1285_berit.py](../../../../scripts/ot/lexicon/build_h1285_berit.py)*
+*Build script: [scripts/ot/lexicon/build_h1285_berit.py](https://github.com/dnovick/berean-bible-bots/blob/main/scripts/ot/lexicon/build_h1285_berit.py)*
 
 ---
 
