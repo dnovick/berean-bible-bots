@@ -227,13 +227,14 @@ personal repos cannot be granted collaborator status, so their reviews do not co
 required-approval counts).
 
 **AI code review (manual):** Run `scripts/ai_review.py` against the PR before merging.
-It sends the diff to Claude Opus 5, checks nine project-specific rules, posts a review comment
-via `bbb-reviewer-01[bot]`, and posts a `claude-review` commit status (success or failure).
+It sends the diff to Claude Haiku (default, cheap) — escalates to Claude Opus 5 only for
+diffs >190K tokens. Checks ten project-specific rules, posts a review comment via
+`bbb-reviewer-01[bot]`, and posts a `claude-review` commit status (success or failure).
 Branch protection requires this status to be green before merging.
 ```bash
 source .venv/bin/activate
-env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n>                        # uses claude-opus-5 by default
-env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n> --model claude-sonnet-5  # use a different model
+env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n>                         # uses claude-haiku-4-5 by default
+env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n> --model claude-opus-5   # use Opus (rare; large diffs only)
 ```
 Credentials: uses Anthropic SDK auto-discovery (Claude Code installation). Do NOT set `ANTHROPIC_API_KEY` if you have an identity-linked key — unset it with `env -u ANTHROPIC_API_KEY`.
 
