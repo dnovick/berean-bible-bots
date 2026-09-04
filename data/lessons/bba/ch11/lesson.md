@@ -463,4 +463,4 @@ The exercise for this chapter asks you to identify adverbs and particles drawn f
 
 | Resource | Description |
 |---|---|
-| [Particle and Adverb Drill](exercises/ch11-particle-drill/README.md) | Particle and adverb identification drill from Daniel and Ezra |
+| [Particle and Adverb Drill](exercises/ch11-particle-drill/ch11-particle-drill.md) | Particle and adverb identification drill from Daniel and Ezra |

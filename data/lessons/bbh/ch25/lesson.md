@@ -382,5 +382,5 @@ Torah-frequency counts (Genesis–Deuteronomy) for the most common Niphal lemmas
 | Resource | Description |
 |---|---|
 | [Morphology Flashcard Deck](flashcards/morphology/ch25-morphology-deck.md) | 40 cards across all eight weak classes. Import the `.txt` file into Anki for spaced-repetition drilling. |
-| [Passage Exercise](exercises/ch25-passage-exercise/README.md) | "Spot the Niphal" — parsing exercise from Gen 3, 6, and 21 with weak-root emphasis. Includes weak-class identification column. |
-| [Weak-Form Identification Drill](exercises/ch25-weak-form-id/README.md) | 40 forms across all eight classes in two parts: by class, then mixed. |
+| [Passage Exercise](exercises/ch25-passage-exercise/ch25-passage-exercise.md) | "Spot the Niphal" — parsing exercise from Gen 3, 6, and 21 with weak-root emphasis. Includes weak-class identification column. |
+| [Weak-Form Identification Drill](exercises/ch25-weak-form-id/ch25-weak-form-id.md) | 40 forms across all eight classes in two parts: by class, then mixed. |

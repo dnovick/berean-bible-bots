@@ -418,4 +418,4 @@ The determined ending ָא is simply retained. The prefix is added before it. Th
 
 | Resource | Description |
 |---|---|
-| [Preposition Drill](exercises/ch7-preposition-drill/README.md) | 20-item drill — identify the preposition/conjunction and give its gloss, parse the noun phrase, and translate |
+| [Preposition Drill](exercises/ch7-preposition-drill/ch7-preposition-drill.md) | 20-item drill — identify the preposition/conjunction and give its gloss, parse the noun phrase, and translate |

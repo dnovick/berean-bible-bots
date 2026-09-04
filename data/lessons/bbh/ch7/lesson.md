@@ -239,4 +239,4 @@ Hebrew uses one of two constructions for the superlative:
 
 | Resource | Description |
 |---|---|
-| [Adjective Usage Drill](exercises/ch7-adjective-usage/README.md) | 25-item exercise — identify use type, parse agreement, translate. Covers all three uses plus comparative/superlative. |
+| [Adjective Usage Drill](exercises/ch7-adjective-usage/ch7-adjective-usage.md) | 25-item exercise — identify use type, parse agreement, translate. Covers all three uses plus comparative/superlative. |

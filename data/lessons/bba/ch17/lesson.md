@@ -527,4 +527,4 @@ The exercise for this chapter presents twenty Peal participle forms drawn from D
 
 | Resource | Description |
 |---|---|
-| [Peal Participle Drill](exercises/ch17-peal-participle-drill/README.md) | 20-item Peal participle identification drill — active/passive, root, G/N, translation |
+| [Peal Participle Drill](exercises/ch17-peal-participle-drill/ch17-peal-participle-drill.md) | 20-item Peal participle identification drill — active/passive, root, G/N, translation |

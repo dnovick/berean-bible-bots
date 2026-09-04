@@ -219,4 +219,4 @@ Prepositions are among the most frequent items in the Hebrew OT. The figures bel
 
 | Resource | Description |
 |---|---|
-| [Preposition Parsing Drill](exercises/ch6-preposition-parsing/README.md) | 25 Hebrew prepositional phrases — identify the preposition, base form, vowel change and reason, object, and translation. Answer key included. |
+| [Preposition Parsing Drill](exercises/ch6-preposition-parsing/ch6-preposition-parsing.md) | 25 Hebrew prepositional phrases — identify the preposition, base form, vowel change and reason, object, and translation. Answer key included. |

@@ -271,4 +271,4 @@ Daniel and Ezra freely mix construct chains and דִּי constructions, sometime
 
 | Resource | Description |
 |---|---|
-| [Construct Chain Drill](exercises/ch6-construct-chain-drill/README.md) | 20-item drill — given two nouns (or a construct + genitive pair), identify the construct form of the first noun and write the complete chain, covering all four gender/number patterns |
+| [Construct Chain Drill](exercises/ch6-construct-chain-drill/ch6-construct-chain-drill.md) | 20-item drill — given two nouns (or a construct + genitive pair), identify the construct form of the first noun and write the complete chain, covering all four gender/number patterns |

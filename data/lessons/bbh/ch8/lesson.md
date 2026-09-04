@@ -226,4 +226,4 @@ Both מִי and מָה can also function as **exclamations**:
 
 | Resource | Description |
 |---|---|
-| [Pronoun Identification Drill](exercises/ch8-pronoun-identification/README.md) | 25-item drill — classify pronoun type, parse PGN (where applicable), and translate. |
+| [Pronoun Identification Drill](exercises/ch8-pronoun-identification/ch8-pronoun-identification.md) | 25-item drill — classify pronoun type, parse PGN (where applicable), and translate. |

@@ -387,5 +387,5 @@ Geminate roots have **R2 = R3** (e.g., ס-ב-ב, ת-מ-מ). In the Qal Perfect:
 | Resource | Description |
 |---|---|
 | [Morphology Flashcard Deck](flashcards/morphology/ch14-morphology-deck.md) | ~40 cards across all eight weak classes; 1–2 roots per class. |
-| [Passage Exercise](exercises/ch14-passage-exercise/README.md) | Parse weak-root Qal Perfect verbs from a Torah passage; includes Weak Class column. |
-| [Weak-Form ID Drill](exercises/ch14-weak-form-id/README.md) | 40 forms across all eight classes — identify class, PGN, and root. |
+| [Passage Exercise](exercises/ch14-passage-exercise/ch14-passage-exercise.md) | Parse weak-root Qal Perfect verbs from a Torah passage; includes Weak Class column. |
+| [Weak-Form ID Drill](exercises/ch14-weak-form-id/ch14-weak-form-id.md) | 40 forms across all eight classes — identify class, PGN, and root. |
