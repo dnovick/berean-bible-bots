@@ -21,6 +21,8 @@ Current checks:
       not Patah/patach/Patakh; Qamets, Tsere, etc. — see standards/language.md)
   - hebrew-no-rtl-wrapper: any Hebrew text must have direction:rtl styling on
       itself or an ancestor, not just verse-ref-adjacent Hebrew
+  - correct-answer-clustering: classification exercises must not group all items of the
+      same answer class consecutively — longest run of ≥ 3 triggers a warning
   - three-format: every exercise directory has <name>.md, <name>.html, <name>.pdf
 
 Exit 0 if clean (or warnings only without --strict), exit 1 on errors.
@@ -456,6 +458,55 @@ def check_hebrew_no_rtl_wrapper(
                 " (no direction:rtl on itself or an ancestor); wrap it in an element"
                 " with direction:rtl; unicode-bidi:embed"
             )
+
+
+_CORRECT_COMMENT_RE = _re.compile(
+    r"<!--\s*\d+:[^—]*—\s*correct:\s*(.+?)\s*-->", _re.IGNORECASE
+)
+
+
+@_register("correct-answer-clustering")
+def check_correct_answer_clustering(
+    ex_dir: Path, errors: list[str], warnings: list[str]
+) -> None:
+    """Warn when a classification exercise groups ≥3 consecutive items with the same
+    correct answer.  Only fires for exercises that use the
+    '<!-- N: word — correct: LABEL -->' comment convention and have ≥6 items.
+    """
+    html_file = ex_dir / f"{ex_dir.name}.html"
+    if not html_file.exists():
+        return
+    try:
+        text = html_file.read_text(encoding="utf-8")
+    except Exception:
+        return
+    soup = BeautifulSoup(text, "html.parser")
+    labels = []
+    for node in soup.descendants:
+        if isinstance(node, Comment):
+            m = _CORRECT_COMMENT_RE.match(str(node).strip())
+            if m:
+                labels.append(m.group(1).strip())
+    if len(labels) < 6:
+        return
+    # Find longest run of the same label
+    max_run = 1
+    max_label = labels[0]
+    cur_run = 1
+    for i in range(1, len(labels)):
+        if labels[i] == labels[i - 1]:
+            cur_run += 1
+            if cur_run > max_run:
+                max_run = cur_run
+                max_label = labels[i]
+        else:
+            cur_run = 1
+    if max_run >= 3:
+        _warn(
+            warnings, ex_dir,
+            f"{html_file.name} — answer clustering: '{max_label}' appears in "
+            f"{max_run} consecutive rows — shuffle the item order"
+        )
 
 
 @_register("three-format")
