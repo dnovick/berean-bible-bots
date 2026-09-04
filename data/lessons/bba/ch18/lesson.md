@@ -509,4 +509,4 @@ The exercise for this chapter presents twenty verb forms from the Peil and Ithpe
 
 | Resource | Description |
 |---|---|
-| [Peil and Ithpeel Stem Drill](exercises/ch18-passive-stems-drill/README.md) | 20-item Peil and Ithpeel identification drill — stem, conjugation, root, translation |
+| [Peil and Ithpeel Stem Drill](exercises/ch18-passive-stems-drill/ch18-passive-stems-drill.md) | 20-item Peil and Ithpeel identification drill — stem, conjugation, root, translation |

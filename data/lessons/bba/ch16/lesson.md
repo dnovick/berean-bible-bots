@@ -422,4 +422,4 @@ The exercise for this chapter presents twenty infinitive construct forms drawn f
 
 | Resource | Description |
 |---|---|
-| [Peal Infinitive Construct Drill](exercises/ch16-peal-infinitive-drill/README.md) | 20-item infinitive identification drill — root, prefix analysis, translation |
+| [Peal Infinitive Construct Drill](exercises/ch16-peal-infinitive-drill/ch16-peal-infinitive-drill.md) | 20-item infinitive identification drill — root, prefix analysis, translation |

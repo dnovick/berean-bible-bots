@@ -479,4 +479,4 @@ The pronoun drill exercise presents forms drawn from Daniel and Ezra. For each i
 
 | Resource | Description |
 |---|---|
-| [Pronoun Drill](exercises/ch9-pronoun-drill/README.md) | Pronoun identification and translation drill from Daniel and Ezra |
+| [Pronoun Drill](exercises/ch9-pronoun-drill/ch9-pronoun-drill.md) | Pronoun identification and translation drill from Daniel and Ezra |

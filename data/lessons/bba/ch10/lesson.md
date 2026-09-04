@@ -428,4 +428,4 @@ The exercise for this chapter presents adjectives and numbers drawn from Daniel 
 
 | Resource | Description |
 |---|---|
-| [Adjective and Number Drill](exercises/ch10-adjective-number-drill/README.md) | Adjective identification and number parsing drill from Daniel and Ezra |
+| [Adjective and Number Drill](exercises/ch10-adjective-number-drill/ch10-adjective-number-drill.md) | Adjective identification and number parsing drill from Daniel and Ezra |

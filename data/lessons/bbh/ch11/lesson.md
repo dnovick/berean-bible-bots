@@ -179,4 +179,4 @@ Ordinals (first, second, etc.) are used for **first through tenth**. Beyond tent
 
 | Resource | Description |
 |---|---|
-| [Number Identification Drill](exercises/ch11-number-identification/README.md) | 20-item drill — identify number word, value, gender polarity situation, and translation for Hebrew number-noun phrases |
+| [Number Identification Drill](exercises/ch11-number-identification/ch11-number-identification.md) | 20-item drill — identify number word, value, gender polarity situation, and translation for Hebrew number-noun phrases |

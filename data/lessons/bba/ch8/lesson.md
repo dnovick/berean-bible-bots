@@ -415,4 +415,4 @@ Work through the suffix drill exercise, which presents suffixed nouns and prepos
 
 | Resource | Description |
 |---|---|
-| [Suffix Drill](exercises/ch8-suffix-drill/README.md) | Pronominal suffix identification and translation drill |
+| [Suffix Drill](exercises/ch8-suffix-drill/ch8-suffix-drill.md) | Pronominal suffix identification and translation drill |

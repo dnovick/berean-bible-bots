@@ -222,4 +222,4 @@ The definite article and the conjunction ו are the two most frequent "words" (s
 
 | Resource | Description |
 |---|---|
-| [Article and Vav Drill](exercises/ch5-article-and-vav/README.md) | 25 Hebrew phrases — identify article presence/form and conjunction presence/form; translate each phrase |
+| [Article and Vav Drill](exercises/ch5-article-and-vav/ch5-article-and-vav.md) | 25 Hebrew phrases — identify article presence/form and conjunction presence/form; translate each phrase |
