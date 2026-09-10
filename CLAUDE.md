@@ -233,10 +233,16 @@ diffs >190K tokens. Checks ten project-specific rules, posts a review comment vi
 Branch protection requires this status to be green before merging.
 ```bash
 source .venv/bin/activate
-env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n>                         # uses claude-haiku-4-5 by default
-env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n> --model claude-opus-5   # use Opus (rare; large diffs only)
+python scripts/ai_review.py --pr <n>                         # uses claude-haiku-4-5 by default
+python scripts/ai_review.py --pr <n> --model claude-opus-5   # use Opus (rare; large diffs only)
 ```
-Credentials: uses Anthropic SDK auto-discovery (Claude Code installation). Do NOT set `ANTHROPIC_API_KEY` if you have an identity-linked key — unset it with `env -u ANTHROPIC_API_KEY`.
+Credentials: reads a metered-API key from the `BBB_REVIEW_KEY` environment variable (set it in
+your shell profile — a workspace-scoped key, since an org-scoped key breaks once an account has
+more than one workspace). **Deliberately not `ANTHROPIC_API_KEY`**: Claude Code itself treats that
+name specially and will use it instead of your Pro/Max subscription for the whole interactive
+session if it's present anywhere in the environment (a shell profile, or a `settings.json` `env`
+block) — confirmed via Claude Code's own docs. `BBB_REVIEW_KEY` is a name Claude Code has no
+special handling for, so it can never affect subscription billing, regardless of where it's set.
 
 **Billing note (settled, do not re-investigate):** `ai_review.py`'s usage always bills against
 metered API/workspace credits, never against a Claude Pro/Max subscription — under any auth
