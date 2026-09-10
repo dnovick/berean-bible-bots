@@ -657,6 +657,47 @@ df = subject_objects(['H3068'], corpus='OT', books=['Isa'])
 
 ---
 
+## Verb Governance (Prepositions and Direct Object)
+
+`core/verb_governance.py` walks the MACULA Hebrew **lowfat constituency trees**
+directly (`macula-hebrew/WLC/lowfat/*.xml`) — not the flattened word table —
+so a preposition is only counted as governed by a verb when it is that verb's
+actual sibling argument within the same clause. This matters: a naive
+"what's the next preposition after this verb" scan is unreliable — it crosses
+clause boundaries (attributing an unrelated preposition from a *different*
+clause to the verb) and can't distinguish a verb's true complement from an
+unrelated adjunct (e.g. a reflexive dative ל sitting before the real
+complement, as in 2Ki 18:21's תִּבְטַח **לְ**ךָ **עַל**־מִצְרַיִם — trust
+*to yourself* upon Egypt — where only עַל governs the true complement).
+
+Answers: does a verb take a bare or אֵת-marked direct object, or a
+prepositional complement — and if the latter, which preposition(s), how
+often, and does that vary by stem (e.g. Qal בטח "trust **in**" vs. Hiphil
+בטח "cause **X** to trust", which shifts from PP-complement to direct object)?
+
+```python
+from bible_grammar import (verb_governance_summary, verb_preposition_distribution,
+                            verb_governance_examples, print_verb_governance)
+
+# Full governance breakdown for בטח (trust) — every preposition it takes,
+# plus direct-object and no-complement counts
+print_verb_governance('H0982')
+
+# Same, restricted to one stem — governance often shifts with the stem
+print_verb_governance('H0982', stem='hiphil')
+
+# Just the preposition table
+verb_preposition_distribution('H0982')
+
+# Sample verses for one complement type, to spot-check against the real text
+verb_governance_examples('H0982', category='בְּ', top_n=10)
+verb_governance_examples('H0982', category='none')   # occurrences with no complement in scope
+```
+
+**Slash command:** `/verb-prep H0982` or `/verb-prep H0982 hiphil`
+
+---
+
 ## LXX as a Queryable Corpus
 
 `lxx_query.py` exposes the full Septuagint (Rahlfs 1935, CenterBLC edition,

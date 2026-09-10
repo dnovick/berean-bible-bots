@@ -44,6 +44,7 @@ Jupyter notebooks runnable on Google Colab.
 - *How does Paul's use of Χριστός (Christ) compare to the Gospels?*
 - *How do verb conjugation patterns differ between narrative prose and wisdom poetry?*
 - *How does Targum Jonathan render Isaiah 53?*
+- *Does בטח (trust) mean something different when it takes בְּ vs. עַל vs. אֶל?*
 
 ---
 
@@ -140,6 +141,7 @@ See [docs/lesson-packages.md](docs/lesson-packages.md) for exercise formats and 
 - **Poetry analysis** — cola splitting, parallelism, chiasm, acrostic detection, meter
 - **Noun and number morphology** — state/gender/number profiles; gender-polarity rule for cardinals
 - **Predicate-argument structure** — PropBank A0/A1 semantic roles (~68k verb tokens)
+- **Verb governance** — which preposition (if any) governs a verb's complement vs. bare/marked direct object, extracted from the MACULA lowfat constituency trees (clause-scoped, not word-adjacency)
 - **Participant tracking** — 19 major figures tracked by subject/object/chapter
 - **Discourse structure** — narrative peak scoring, episode boundaries (Longacre model)
 - **Derived stem morphology** — Niphal, Piel, Pual, Hophal, Hithpael, Hiphil with full analysis suite
