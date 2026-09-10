@@ -238,6 +238,14 @@ env -u ANTHROPIC_API_KEY python scripts/ai_review.py --pr <n> --model claude-opu
 ```
 Credentials: uses Anthropic SDK auto-discovery (Claude Code installation). Do NOT set `ANTHROPIC_API_KEY` if you have an identity-linked key — unset it with `env -u ANTHROPIC_API_KEY`.
 
+**Billing note (settled, do not re-investigate):** `ai_review.py`'s usage always bills against
+metered API/workspace credits, never against a Claude Pro/Max subscription — under any auth
+method (static API key, OAuth user login, or otherwise). This is a deliberate Anthropic product
+boundary, not a configuration gap: the Claude API is metered-only for every auth path, the Claude
+Agent SDK explicitly prohibits third-party subscription billing, and even headless Claude Code
+(`claude -p`) bills separately from interactive subscription usage. No rearchitecture of this
+script can change that. See issue #649 (closed) for the full investigation and sources.
+
 **Merging** (after both `review` and `claude-review` status checks pass):
 ```bash
 # When merging as an agent (squash commit shows as bbb-author-01[bot]):
