@@ -178,3 +178,14 @@ jobs:
           gh pr review ${{ github.event.pull_request.number }} \
             --request-changes \
             --body "Automated checks failed. Fix the issues below and push a new commit.${REVIEW_BODY}"
+
+      # Runs last, after the review comment above is already posted, so that always
+      # happens regardless of outcome. Until this step existed, "failed=1" only ever
+      # affected which review comment got posted (informational, per CLAUDE.md) — the
+      # job itself always exited 0, so the required `review` status check was green
+      # unconditionally, no matter what flake8/mypy/pytest/validate_* actually found.
+      - name: Fail the job if any check failed
+        if: always() && steps.checks.outputs.failed != '0'
+        run: |
+          echo "One or more checks failed — see the posted PR review for details."
+          exit 1
