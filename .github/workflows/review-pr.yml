@@ -31,6 +31,26 @@ jobs:
         # installed in CI at all, so mypy --ignore-missing-imports silently skipped it).
         run: pip install pyyaml PyJWT cryptography requests flake8 mypy beautifulsoup4 pandas pyarrow "matplotlib<3.11" seaborn pytest
 
+      - name: Build generated reports content
+        # validate_links.py also scans mkdocs_src/reports/ — gitignored/generated
+        # from output/reports/ via build_mkdocs.py's build_reports(). Deliberately
+        # calling build_reports() directly rather than build_mkdocs.py's main():
+        # main() also clears mkdocs_nav.yml's generated Courses section, which is
+        # then only correctly refilled if build_courses.py runs right after it —
+        # order-dependent, and it also unconditionally wipes the HAND-MAINTAINED
+        # "Standards & Policies" nav section, which no build script knows how to
+        # regenerate. build_reports() alone only writes mkdocs_src/reports/ and
+        # never touches mkdocs_nav.yml at all — verified in an isolated git
+        # worktree (not this repo's real working tree) that it fixes the target
+        # validate_links warning with zero side effects on nav.yml.
+        run: |
+          python3 -c "
+          import sys
+          sys.path.insert(0, 'scripts')
+          from build_mkdocs import build_reports
+          build_reports()
+          "
+
       - name: Build generated studies content
         # validate_links.py scans mkdocs_src/studies/ (among other roots) for broken
         # links. Psalm 119's memorization section pages are deliberately gitignored
