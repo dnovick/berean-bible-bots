@@ -1,6 +1,6 @@
 {
-  "unit_min_percent": 9.8,
-  "full_min_percent": 20.64,
+  "unit_min_percent": 9.98,
+  "full_min_percent": 21.81,
   "updated": "2026-09-10",
-  "notes": "Raised by the nt/ subpackage test PR (issue #662, item 4, batch 2). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
+  "notes": "Raised by the ot/ subpackage test PR (issue #662, item 4, batch 3). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
 }
