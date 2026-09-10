@@ -677,11 +677,17 @@ often, and does that vary by stem (e.g. Qal בטח "trust **in**" vs. Hiphil
 
 ```python
 from bible_grammar import (verb_governance_summary, verb_preposition_distribution,
-                            verb_governance_examples, print_verb_governance)
+                            verb_governance_examples, print_verb_governance,
+                            resolve_strongs)
 
 # Full governance breakdown for בטח (trust) — every preposition it takes,
 # plus direct-object and no-complement counts
 print_verb_governance('H0982')
+
+# These functions take a Strong's number directly — resolve_strongs() converts
+# a Hebrew root (pointed or unpointed) to one first. The /verb-prep slash
+# command below does this same resolution for you automatically.
+print_verb_governance(resolve_strongs('בטח'))   # same call as above, by root
 
 # Same, restricted to one stem — governance often shifts with the stem
 print_verb_governance('H0982', stem='hiphil')
@@ -694,7 +700,8 @@ verb_governance_examples('H0982', category='בְּ', top_n=10)
 verb_governance_examples('H0982', category='none')   # occurrences with no complement in scope
 ```
 
-**Slash command:** `/verb-prep H0982` or `/verb-prep H0982 hiphil`
+**Slash command:** `/verb-prep H0982`, `/verb-prep בטח` (Hebrew root — no need to know the
+Strong's number), or `/verb-prep H0982 hiphil` / `/verb-prep בטח hiphil` (restrict to a stem)
 
 ---
 
