@@ -20,7 +20,12 @@ jobs:
           python-version: '3.12'
 
       - name: Install dependencies
-        run: pip install pyyaml PyJWT cryptography requests flake8 mypy beautifulsoup4
+        # pandas/pyarrow/matplotlib/seaborn: importing ANY bible_grammar submodule executes
+        # src/bible_grammar/__init__.py first (Python initializes parent packages before
+        # children) — that top-level __init__ imports reporting/charts.py at module level,
+        # which needs matplotlib+seaborn even for tests that never touch charting directly.
+        # Verified empirically against a from-scratch venv, not assumed.
+        run: pip install pyyaml PyJWT cryptography requests flake8 mypy beautifulsoup4 pandas pyarrow matplotlib seaborn pytest
 
       - name: Run content validators and lint
         id: checks
@@ -40,6 +45,16 @@ jobs:
             BODY="${BODY}
           ### mypy
           $(cat /tmp/mypy.txt)"
+          fi
+
+          # Fast unit tests only (-m "not integration"): integration/behavioral tests need
+          # data/processed/*.parquet, which this workflow doesn't build — they still require
+          # a manual `pytest` run locally. See docs/policies/capability-development.md.
+          if ! python -m pytest tests/ -m "not integration" -q > /tmp/pytest.txt 2>&1; then
+            FAILED=1
+            BODY="${BODY}
+          ### pytest (unit)
+          $(tail -40 /tmp/pytest.txt)"
           fi
 
           if ! python scripts/validate_courses.py > /tmp/courses.txt 2>&1; then
@@ -117,7 +132,7 @@ jobs:
         run: |
           gh pr review ${{ github.event.pull_request.number }} \
             --approve \
-            --body "All automated checks passed: flake8, mypy, validate_courses, validate_lessons, validate_exercises, validate_nav, validate_tables."
+            --body "All automated checks passed: flake8, mypy, pytest (unit), validate_courses, validate_lessons, validate_exercises, validate_nav, validate_tables."
 
       - name: Request changes
         if: steps.checks.outputs.failed != '0'
