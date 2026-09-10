@@ -788,4 +788,5 @@ nav:
     - Language &amp; Display: standards/language.md
   - Policies:
     - Autonomous Actions: policies/autonomous-actions.md
+    - Capability Development: policies/capability-development.md
 - API Reference: reference/index.md
