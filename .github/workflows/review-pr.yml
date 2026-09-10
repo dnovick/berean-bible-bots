@@ -25,7 +25,11 @@ jobs:
         # children) — that top-level __init__ imports reporting/charts.py at module level,
         # which needs matplotlib+seaborn even for tests that never touch charting directly.
         # Verified empirically against a from-scratch venv, not assumed.
-        run: pip install pyyaml PyJWT cryptography requests flake8 mypy beautifulsoup4 pandas pyarrow matplotlib seaborn pytest
+        # matplotlib<3.11: matches requirements.txt's pin — 3.11 removes plt.get_cmap(),
+        # which verb_forms.py/morph_chart.py still call; an unpinned install here made mypy
+        # fail on code that was never actually broken locally (matplotlib wasn't previously
+        # installed in CI at all, so mypy --ignore-missing-imports silently skipped it).
+        run: pip install pyyaml PyJWT cryptography requests flake8 mypy beautifulsoup4 pandas pyarrow "matplotlib<3.11" seaborn pytest
 
       - name: Run content validators and lint
         id: checks
