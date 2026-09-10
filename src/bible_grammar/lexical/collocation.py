@@ -35,6 +35,17 @@ _BOOK_ORDER = {b[0]: b[3] for b in BOOKS}
 _STOP_PREFIXES = {'H9', 'H5', 'H1'}  # H9xxx = grammatical particles in TAHOT
 
 
+def _strip_variant(strongs: str) -> str:
+    """Drop the trailing STEPBible homonym-disambiguation letter, e.g. 'H7965G' -> 'H7965'.
+
+    Nearly every TAHOT (and many TAGNT) strongs cell carries one of these
+    suffix letters, but users query by the plain base number — matching
+    must ignore the letter or it never matches real data (see wordstudy.py's
+    equivalent [A-Z]? wildcard).
+    """
+    return re.sub(r'[A-Z]$', '', strongs)
+
+
 def _extract_root(strongs_cell: str, is_hebrew: bool) -> str:
     """Extract the primary content strongs from a TAHOT strongs cell."""
     if not strongs_cell or pd.isna(strongs_cell):
@@ -45,14 +56,14 @@ def _extract_root(strongs_cell: str, is_hebrew: bool) -> str:
         braced = re.findall(r'\{([HG]\d+[A-Z]?)\}', s)
         for b in braced:
             if not re.match(r'H9\d+', b):
-                return _norm_strongs(b)
+                return _strip_variant(_norm_strongs(b))
         # fallback: bare token
         m = re.match(r'^([HG]\d+[A-Z]?)$', s.strip())
-        return _norm_strongs(m.group(1)) if m else ''
+        return _strip_variant(_norm_strongs(m.group(1))) if m else ''
     else:
         # Greek: plain strongs token
         m = re.match(r'^(G\d+[A-Z]?)\b', s.strip().upper())
-        return _norm_strongs(m.group(1)) if m else _norm_strongs(s)
+        return _strip_variant(_norm_strongs(m.group(1))) if m else _strip_variant(_norm_strongs(s))
 
 
 def _build_gpos(df: pd.DataFrame) -> pd.Series:
@@ -118,8 +129,9 @@ def collocations(
     if df.empty:
         return pd.DataFrame()
 
-    # Normalise target strongs
-    target_norm = _norm_strongs(target)
+    # Normalise target strongs (strip any homonym letter the user supplied —
+    # the 'root' column below is also letter-stripped, so this must match)
+    target_norm = _strip_variant(_norm_strongs(target))
 
     # Build root column
     df = df.copy()
