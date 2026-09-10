@@ -1,4 +1,6 @@
-"""Tests for bible_grammar.phrase — normalisation and token resolution (no I/O)."""
+"""Tests for bible_grammar.phrase — normalisation and token resolution (no I/O),
+plus behavioral tests for phrase_search() itself requiring real corpus data.
+"""
 
 import pytest
 import sys
@@ -7,7 +9,16 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.phrase import _norm_strongs, _query_strongs, _resolve_token
+from bible_grammar.lexical.phrase import _norm_strongs, _query_strongs, _resolve_token, phrase_search
+
+_WORDS_PARQUET = (
+    Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
+)
+
+
+def _skip_if_missing() -> None:
+    if not _WORDS_PARQUET.exists():
+        pytest.skip(f"Data file not found: {_WORDS_PARQUET}")
 
 
 class TestNormStrongs:
@@ -93,3 +104,21 @@ class TestResolveToken:
     def test_unsupported_type_raises(self) -> None:
         with pytest.raises(TypeError):
             _resolve_token(42)  # type: ignore[arg-type]
+
+
+@pytest.mark.integration
+class TestPhraseSearchBehavioral:
+    def test_word_of_the_lord_total_occurrences(self) -> None:
+        # דְּבַר יְהוָה "word of the LORD" (H1697 H3068): the paradigm
+        # prophetic-formula phrase. Observed: 252 occurrences OT-wide.
+        _skip_if_missing()
+        df = phrase_search(['H1697', 'H3068'])
+        assert len(df) == 252
+
+    def test_word_of_the_lord_jeremiah_subset(self) -> None:
+        # Observed: 58 occurrences restricted to Jeremiah, including the
+        # book's opening formula at Jer 1:2.
+        _skip_if_missing()
+        df = phrase_search(['H1697', 'H3068'], book='Jer')
+        assert len(df) == 58
+        assert 'Jer 1:2' in set(df['reference'])
