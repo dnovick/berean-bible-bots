@@ -98,7 +98,7 @@ class StemAnalysis:
     def _top_glosses(self, h: pd.DataFrame) -> pd.Series:
         return (
             h.groupby('_lem')['english']
-            .agg(lambda x: x.value_counts().index[0] if len(x) > 0 else '')
+            .agg(lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else ''))
         )
 
     def _ensure_chart_dir(self) -> Path:
@@ -275,7 +275,8 @@ class StemAnalysis:
         top_roots = h['_lem'].value_counts().head(5)
         print(f"  Top 5 {self.config.name} roots:")
         for root, cnt in top_roots.items():
-            gl = h[h['_lem'] == root]['english'].value_counts().index[0]
+            gl_vc = h[h['_lem'] == root]['english'].value_counts()
+            gl = gl_vc.index[0] if not gl_vc.empty else ''
             print(f"    {root:<8} {cnt:>4}  ({gl})")
         print()
 

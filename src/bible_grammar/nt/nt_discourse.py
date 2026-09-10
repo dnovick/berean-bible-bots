@@ -50,7 +50,7 @@ PARTICLE_REGISTRY: dict[str, tuple[str, str, str]] = {
     '2443': ('ἵνα',  'ἵνα',   'purpose / content'),
     '1063': ('γάρ',  'γάρ',   'explanatory / causal'),
     '3767': ('οὖν',  'οὖν',   'inferential / resumptive'),
-    '0235': ('ἀλλά', 'ἀλλά',  'adversative'),
+    '235':  ('ἀλλά', 'ἀλλά',  'adversative'),
     '3361': ('μή',   'μή',    'negative'),
     '3756': ('οὐ',   'οὐ',    'negative'),
     '1487': ('εἰ',   'εἰ',    'conditional'),

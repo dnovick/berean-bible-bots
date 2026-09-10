@@ -136,8 +136,8 @@ def nt_participle_top_lemmas(n: int = 20, book: str | None = None) -> pd.DataFra
     p = nt_participle_data(book)
     grp = p.groupby(['lemma', 'strong_g']).agg(
         count=('lemma', 'size'),
-        top_tense=('tense', lambda x: x.value_counts().index[0] if len(x) else ''),
-        top_gloss=('gloss', lambda x: x.value_counts().index[0] if len(x) else ''),
+        top_tense=('tense', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
+        top_gloss=('gloss', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
     ).reset_index().sort_values('count', ascending=False).head(n)
     total = grp['count'].sum()
     grp['pct'] = (grp['count'] / total * 100).round(1)

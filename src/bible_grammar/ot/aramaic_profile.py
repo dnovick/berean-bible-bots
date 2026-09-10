@@ -130,8 +130,8 @@ def aramaic_top_roots(n: int = 30, book: str | None = None) -> pd.DataFrame:
     v = aramaic_verb_data(book)
     grp = v.groupby('lemma').agg(
         count=('lemma', 'size'),
-        top_stem=('stem', lambda x: x.value_counts().index[0] if len(x) else ''),
-        top_gloss=('english', lambda x: x.value_counts().index[0] if len(x) else ''),
+        top_stem=('stem', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
+        top_gloss=('english', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
     ).reset_index().sort_values('count', ascending=False).head(n)
     total = grp['count'].sum()
     grp['pct'] = (grp['count'] / total * 100).round(1)
