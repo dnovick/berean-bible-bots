@@ -100,7 +100,7 @@ These rules prevent display problems when pasting into Messages or other SMS app
 ```python
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.db import load
+from bible_grammar.core.db import load
 import pandas as pd
 
 df = load()

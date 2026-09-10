@@ -31,7 +31,7 @@ Saves a Markdown report + PNG charts to `output/reports/`.
 ```python
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.divine_names import (print_divine_names, divine_names_chart,
+from bible_grammar import (print_divine_names, divine_names_chart,
                                          divine_names_report)
 
 arg = "$ARGUMENTS".strip().upper() or "ALL"

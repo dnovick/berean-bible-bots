@@ -146,7 +146,7 @@ The `morph` column prefix filter returns 0 results; the `stem` column is the cor
 import sys
 sys.path.insert(0, 'src')
 import pandas as pd
-from bible_grammar.hiphil import hiphil_data, hiphil_conjugation_profile
+from bible_grammar import hiphil_data, hiphil_conjugation_profile
 
 # All tokens for the target stem — adapt import and function name per stem:
 #   Hiphil:  from bible_grammar.hiphil import hiphil_data, hiphil_conjugation_profile

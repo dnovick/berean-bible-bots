@@ -23,7 +23,7 @@ words appearing nearby more often than chance predicts.
 import sys, re
 sys.path.insert(0, 'src')
 from bible_grammar import resolve_strongs
-from bible_grammar.collocation import print_collocations
+from bible_grammar import print_collocations
 
 raw = "$ARGUMENTS".strip()
 # Parse optional keyword args: window=N corpus=X

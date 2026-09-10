@@ -23,7 +23,7 @@ Natural language instructions like "find X in Y" or "search for A followed by B 
 ```python
 import sys, re
 sys.path.insert(0, 'src')
-from bible_grammar.phrase import phrase_search, print_phrase_results
+from bible_grammar import phrase_search, print_phrase_results
 
 args = "$ARGUMENTS".strip()
 

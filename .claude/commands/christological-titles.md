@@ -34,7 +34,7 @@ of the relevant Greek Strong's numbers.
 ```python
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.christological_titles import (
+from bible_grammar import (
     print_title_counts, title_chart, title_report
 )
 

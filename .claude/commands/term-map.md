@@ -19,7 +19,7 @@ Run the following, substituting `$ARGUMENTS` for the optional theme filter:
 ```python
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.termmap import print_term_map, term_map
+from bible_grammar import print_term_map, term_map
 
 theme_filter = "$ARGUMENTS".strip() or None
 df = term_map()
