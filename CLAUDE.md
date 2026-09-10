@@ -220,7 +220,11 @@ GH_TOKEN=$(python scripts/github_app_token.py --role author) \
 ```
 
 **Automated review:** The `.github/workflows/review-pr.yml` action runs automatically on every PR.
-It runs validate_courses and validate_lessons. If all pass, `bbb-reviewer-01[bot]`
+It runs `flake8`, `mypy`, `pytest tests/ -m "not integration"` (fast unit tests only —
+integration/behavioral tests need `data/processed/*.parquet`, which this workflow doesn't
+build, so those still require a manual `pytest` run locally), `validate_courses`,
+`validate_lessons`, `validate_exercises`, `validate_nav`, and `validate_links --strict`
+(`validate_tables` is informational-only). If all pass, `bbb-reviewer-01[bot]`
 approves the PR. If any fail, it requests changes with details. The reviewer bot's approval is
 informational — the actual merge gate is the **`review` required status check** (GitHub Apps on
 personal repos cannot be granted collaborator status, so their reviews do not count toward
