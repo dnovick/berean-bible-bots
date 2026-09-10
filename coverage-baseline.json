@@ -1,6 +1,6 @@
 {
-  "unit_min_percent": 9.0,
-  "full_min_percent": 19.04,
+  "unit_min_percent": 9.59,
+  "full_min_percent": 19.63,
   "updated": "2026-09-10",
-  "notes": "Raised by the validate_*.py + exercise_pdf/ test-backfill PR (issue #662, part 2). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase — see docs/policies/test-coverage.md."
+  "notes": "Raised by the ai_review.py test PR (issue #662, item 3). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase — see docs/policies/test-coverage.md."
 }
