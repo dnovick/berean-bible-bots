@@ -189,6 +189,7 @@ Agent session behavior is governed by `mkdocs_src/policies/autonomous-actions.md
 
 - **All changes go on a feature branch + PR.** Never push directly to main — branch protection is enabled.
 - **Before every commit:** run `python -m flake8 src/` and `python -m mypy src/ --ignore-missing-imports`. Fix all errors before committing.
+- **Before a substantial PR:** run `python scripts/check_coverage.py --full` locally (needs `data/processed/` built) — CI only enforces the unit-only coverage floor automatically. See `docs/policies/test-coverage.md`.
 - **After non-trivial changes:** commit and push automatically — do not ask first.
 - **GitHub issues:** always create with `--assignee dnovick`.
 
@@ -220,9 +221,11 @@ GH_TOKEN=$(python scripts/github_app_token.py --role author) \
 ```
 
 **Automated review:** The `.github/workflows/review-pr.yml` action runs automatically on every PR.
-It runs `flake8`, `mypy`, `pytest tests/ -m "not integration"` (fast unit tests only —
-integration/behavioral tests need `data/processed/*.parquet`, which this workflow doesn't
-build, so those still require a manual `pytest` run locally), `validate_courses`,
+It runs `flake8`, `mypy`, `scripts/check_coverage.py` (fast unit tests only, via
+`pytest tests/ -m "not integration"`, plus the coverage-must-not-decrease ratchet against
+`coverage-baseline.json` — integration/behavioral tests need `data/processed/*.parquet`, which
+this workflow doesn't build, so those still require a manual `pytest`/`check_coverage.py --full`
+run locally; see `docs/policies/test-coverage.md`), `validate_courses`,
 `validate_lessons`, `validate_exercises`, `validate_nav`, and `validate_links --strict`
 (`validate_tables` is informational-only). If all pass, `bbb-reviewer-01[bot]`
 approves the PR. If any fail, it requests changes with details. The reviewer bot's approval is

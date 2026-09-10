@@ -8,6 +8,11 @@ __pycache__/
 .venv/
 .env
 
+# Coverage (scripts/check_coverage.py) — coverage-baseline.json IS tracked
+.coverage
+coverage-unit.json
+coverage-full.json
+
 # Jupyter
 .ipynb_checkpoints/
 .cache/
