@@ -26,7 +26,7 @@ Each term may be a Strong's number or a Hebrew/Greek lemma.
 import sys
 sys.path.insert(0, 'src')
 from bible_grammar import resolve_strongs
-from bible_grammar.synonym import print_synonym_comparison
+from bible_grammar import print_synonym_comparison
 
 args = "$ARGUMENTS".strip().split()
 if len(args) < 2:

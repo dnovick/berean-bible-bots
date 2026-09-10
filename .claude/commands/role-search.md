@@ -27,7 +27,7 @@ resolved from the MACULA Hebrew/Greek `subjref` syntax tree links.
 ```python
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.role_search import print_role_summary, role_report
+from bible_grammar import print_role_summary, role_report
 
 raw = "$ARGUMENTS".strip().split()
 strongs_raw = raw[0] if raw else 'H3068,H0430'

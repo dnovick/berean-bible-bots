@@ -23,7 +23,7 @@ Measure how uniformly LXX translators render a given Hebrew root across books.
 import sys
 sys.path.insert(0, 'src')
 from bible_grammar import resolve_strongs
-from bible_grammar.lxx_consistency import print_lxx_consistency, consistency_heatmap
+from bible_grammar import print_lxx_consistency, consistency_heatmap
 
 args = "$ARGUMENTS".strip().split()
 if not args:

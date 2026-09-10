@@ -27,7 +27,7 @@ Export any analysis as a styled standalone HTML report and/or CSV data files.
 ```python
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.export import (export_word_study, export_semantic_profile,
+from bible_grammar import (export_word_study, export_semantic_profile,
                                    export_genre_compare, export_divine_names, export_all)
 
 parts = "$ARGUMENTS".strip().split()

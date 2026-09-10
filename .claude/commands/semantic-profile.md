@@ -30,7 +30,7 @@ Saves a Markdown report + PNG chart to `output/reports/`.
 import sys
 sys.path.insert(0, 'src')
 from bible_grammar import resolve_strongs
-from bible_grammar.semantic_profile import print_semantic_profile, save_semantic_profile
+from bible_grammar import print_semantic_profile, save_semantic_profile
 
 args = "$ARGUMENTS".strip().split()
 if not args:

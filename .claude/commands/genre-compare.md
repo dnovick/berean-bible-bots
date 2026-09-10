@@ -28,7 +28,7 @@ Saves a Markdown report + PNG heatmaps to `output/reports/`.
 ```python
 import sys
 sys.path.insert(0, 'src')
-from bible_grammar.genre_compare import (print_genre_compare, genre_heatmap,
+from bible_grammar import (print_genre_compare, genre_heatmap,
                                           genre_report)
 
 parts = "$ARGUMENTS".strip().split()

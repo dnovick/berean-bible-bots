@@ -32,7 +32,7 @@ Default min_votes: 20 (lower = more results, less certain; higher = fewer, very 
 ```python
 import sys, re
 sys.path.insert(0, 'src')
-from bible_grammar.intertextuality import (print_intertextuality,
+from bible_grammar import (print_intertextuality,
                                             intertextuality_graph,
                                             intertextuality_report)
 

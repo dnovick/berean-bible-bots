@@ -25,7 +25,7 @@ Show how a root's grammatical forms distribute across books — as a table and s
 import sys
 sys.path.insert(0, 'src')
 from bible_grammar import resolve_strongs
-from bible_grammar.morph_chart import print_morph_distribution, morph_chart
+from bible_grammar import print_morph_distribution, morph_chart
 
 args = "$ARGUMENTS".strip().split()
 if not args:
