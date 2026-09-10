@@ -146,8 +146,8 @@ def ot_noun_top_lemmas(n: int = 30, book: str | None = None) -> pd.DataFrame:
     nouns = ot_noun_data(book)
     grp = nouns.groupby('lemma').agg(
         count=('lemma', 'size'),
-        top_gloss=('english', lambda x: x.value_counts().index[0] if len(x) else ''),
-        top_state=('state', lambda x: x.value_counts().index[0] if len(x) else ''),
+        top_gloss=('english', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
+        top_state=('state', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
     ).reset_index().sort_values('count', ascending=False).head(n)
     total = grp['count'].sum()
     grp['pct'] = (grp['count'] / total * 100).round(1)
@@ -250,7 +250,7 @@ def ot_construct_top_lemmas(n: int = 20, book: str | None = None) -> pd.DataFram
     constr = nouns[nouns['state'].str.lower() == 'construct']
     grp = constr.groupby('lemma').agg(
         construct_count=('lemma', 'size'),
-        top_gloss=('english', lambda x: x.value_counts().index[0] if len(x) else ''),
+        top_gloss=('english', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
     ).reset_index().sort_values('construct_count', ascending=False).head(n)
     # Also get total count for % in construct
     total_by_lemma = nouns.groupby('lemma').size().rename('total_count')

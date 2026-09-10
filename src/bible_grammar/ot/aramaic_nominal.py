@@ -146,8 +146,8 @@ def aramaic_noun_top_lemmas(n: int = 20, book: str | None = None) -> pd.DataFram
     nouns = aramaic_noun_data(book)
     grp = nouns.groupby('lemma').agg(
         count=('lemma', 'size'),
-        top_gloss=('english', lambda x: x.value_counts().index[0] if len(x) else ''),
-        top_state=('state', lambda x: x.value_counts().index[0] if len(x) else ''),
+        top_gloss=('english', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
+        top_state=('state', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
     ).reset_index().sort_values('count', ascending=False).head(n)
     total = grp['count'].sum()
     grp['pct'] = (grp['count'] / total * 100).round(1)
@@ -179,7 +179,7 @@ def aramaic_prep_frequency(n: int = 15, book: str | None = None) -> pd.DataFrame
     preps = aramaic_prep_data(book)
     grp = preps.groupby('lemma').agg(
         count=('lemma', 'size'),
-        top_gloss=('english', lambda x: x.value_counts().index[0] if len(x) else ''),
+        top_gloss=('english', lambda x: (vc.index[0] if not (vc := x.value_counts()).empty else '')),
     ).reset_index().sort_values('count', ascending=False).head(n)
     total = grp['count'].sum()
     grp['pct'] = (grp['count'] / total * 100).round(1)
