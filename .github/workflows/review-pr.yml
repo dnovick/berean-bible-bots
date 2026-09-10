@@ -29,7 +29,7 @@ jobs:
         # which verb_forms.py/morph_chart.py still call; an unpinned install here made mypy
         # fail on code that was never actually broken locally (matplotlib wasn't previously
         # installed in CI at all, so mypy --ignore-missing-imports silently skipped it).
-        run: pip install pyyaml PyJWT cryptography requests flake8 mypy beautifulsoup4 pandas pyarrow "matplotlib<3.11" seaborn pytest
+        run: pip install pyyaml PyJWT cryptography requests flake8 mypy beautifulsoup4 pandas pyarrow "matplotlib<3.11" seaborn pytest pytest-cov
 
       - name: Build generated reports content
         # validate_links.py also scans mkdocs_src/reports/ — gitignored/generated
@@ -85,10 +85,13 @@ jobs:
           # Fast unit tests only (-m "not integration"): integration/behavioral tests need
           # data/processed/*.parquet, which this workflow doesn't build — they still require
           # a manual `pytest` run locally. See docs/policies/capability-development.md.
-          if ! python -m pytest tests/ -m "not integration" -q > /tmp/pytest.txt 2>&1; then
+          # check_coverage.py runs this same pytest invocation and additionally enforces
+          # the "coverage must not decrease" ratchet against coverage-baseline.json's
+          # unit_min_percent — see docs/policies/test-coverage.md.
+          if ! python scripts/check_coverage.py > /tmp/pytest.txt 2>&1; then
             FAILED=1
             BODY="${BODY}
-          ### pytest (unit)
+          ### pytest (unit) / coverage
           $(tail -40 /tmp/pytest.txt)"
           fi
 
@@ -167,7 +170,7 @@ jobs:
         run: |
           gh pr review ${{ github.event.pull_request.number }} \
             --approve \
-            --body "All automated checks passed: flake8, mypy, pytest (unit), validate_courses, validate_lessons, validate_exercises, validate_nav, validate_tables."
+            --body "All automated checks passed: flake8, mypy, pytest (unit) + coverage ratchet, validate_courses, validate_lessons, validate_exercises, validate_nav, validate_tables."
 
       - name: Request changes
         if: steps.checks.outputs.failed != '0'

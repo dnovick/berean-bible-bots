@@ -1,0 +1,6 @@
+{
+  "unit_min_percent": 7.77,
+  "full_min_percent": 13.54,
+  "updated": "2026-09-10",
+  "notes": "Initial baseline, measured against tests/ as of the coverage-tooling PR (issue #662). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase — see docs/policies/test-coverage.md."
+}

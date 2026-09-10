@@ -6,6 +6,7 @@ notebook>=7.0
 ipykernel>=6.0
 text-fabric[github]>=13.0
 beautifulsoup4>=4.12
+pytest-cov>=5.0
 
 # MCP research library (RAG server)
 openai>=1.0
