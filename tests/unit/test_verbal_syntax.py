@@ -12,6 +12,7 @@ from bible_grammar.verbal_syntax import (
     _strip_diacritics, VERB_FORM_ORDER, VERB_FORM_LABELS,
     verb_form_profile, wayyiqtol_chains,
 )
+from bible_grammar.verbal_syntax.verb_forms import stem_distribution
 
 _MACULA_OT_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "macula_syntax_ot.parquet"
@@ -119,3 +120,17 @@ class TestWayyiqtolChainsBehavioral:
         lemmas = [v['lemma'] for v in first['verbs']]
         assert 'רָאָה' in lemmas   # "he saw" (Gen 1:4)
         assert 'קָרָא' in lemmas   # "he called" (Gen 1:5)
+
+
+@pytest.mark.integration
+class TestStemDistributionBehavioral:
+    def test_gen_qal_dominates(self) -> None:
+        # Qal is the base/unmarked stem — dominant everywhere, but
+        # slightly higher in Genesis specifically than the Torah-wide
+        # average from genre_compare.py (72.4%, tests/integration/
+        # test_genre_compare.py). Observed: 76.5%.
+        _skip_if_missing()
+        df = stem_distribution('Gen')
+        top = df.iloc[0]
+        assert top['stem'] == 'qal'
+        assert top['pct'] >= 70.0
