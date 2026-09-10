@@ -7,9 +7,17 @@ as a hard merge gate.
 Usage:
     python scripts/ai_review.py --pr N [--model claude-opus-5]
 
-Credentials: the Anthropic SDK auto-discovers credentials from the Claude Code
-installation. Do not set ANTHROPIC_API_KEY if you have an identity-linked key
-(sk-ant-...) — unset it and let auto-discovery handle authentication.
+Credentials: reads a metered-API key from the BBB_REVIEW_KEY environment
+variable (set it in your shell profile). Deliberately NOT the standard
+ANTHROPIC_API_KEY name: Claude Code itself treats that variable specially —
+per its docs, "When set, this key is used instead of your Claude Pro, Max,
+Team, or Enterprise subscription even if you are logged in" — so setting it
+anywhere in the ambient environment (a shell profile, a settings.json env
+block) risks silently switching your *interactive* Claude Code sessions in
+this project from subscription-billed to metered-API-billed too. Passing
+api_key= explicitly to the SDK client (below) also sidesteps its OAuth
+auto-discovery chain entirely, so this script's behavior no longer depends
+on any ambient credential state (env vars, ~/.config/anthropic/ profiles).
 
 Requires:
     ~/.config/berean-bots/github-apps.json with reviewer credentials
@@ -17,6 +25,7 @@ Requires:
 
 import argparse
 import json
+import os
 import re as _re
 import subprocess
 import sys
@@ -32,6 +41,11 @@ STATUS_CONTEXT = "claude-review"
 MAX_DIFF_CHARS = 500_000
 GITHUB_API = "https://api.github.com"
 REVIEWER_LOGIN = "bbb-reviewer-01[bot]"
+
+# Deliberately not ANTHROPIC_API_KEY — see module docstring: that name is
+# special-cased by Claude Code itself and can override subscription billing
+# for the whole interactive session if it's present in the environment.
+API_KEY_ENV_VAR = "BBB_REVIEW_KEY"
 
 # Circuit breaker for repeated content rejections: if bbb-reviewer-01 has already
 # posted this many CHANGES_REQUESTED reviews on the PR, further rejections are very
@@ -372,7 +386,16 @@ def _call_with_retries(fn: Callable[[], _T], label: str) -> _T:
 
 
 def _run_ai_review(diff: str, title: str, description: str, model: str) -> dict[str, Any]:
-    client = anthropic.Anthropic()
+    api_key = os.environ.get(API_KEY_ENV_VAR)
+    if not api_key:
+        raise SystemExit(
+            f"{API_KEY_ENV_VAR} is not set. This script needs its own dedicated API key "
+            f"(not ANTHROPIC_API_KEY — see module docstring for why) in your shell profile:\n"
+            f'  export {API_KEY_ENV_VAR}="sk-ant-..."'
+        )
+    # Explicit api_key= bypasses the SDK's env-var/OAuth auto-discovery chain
+    # entirely — this call's credentials no longer depend on ambient state.
+    client = anthropic.Anthropic(api_key=api_key)
     diff, dropped_files, dropped_chars = _filter_generated_files(diff)
     if dropped_files:
         print(f"  Filtered: {dropped_files} generated file(s), {dropped_chars:,} chars"
