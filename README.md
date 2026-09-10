@@ -206,5 +206,6 @@ by `scripts/build_db.py` and is not committed to the repo.
 | [docs/getting-started.md](docs/getting-started.md) | Installation, prerequisites, first steps |
 | [docs/project-structure.md](docs/project-structure.md) | Directory tree and module descriptions |
 | [docs/features.md](docs/features.md) | Full API reference — all 50+ analysis features with code examples |
+| [docs/commands.md](docs/commands.md) | Slash command cheat sheet — one line per command, all 27, grouped by category |
 | [docs/lesson-packages.md](docs/lesson-packages.md) | BBH / BBG / BBA lesson packages, exercise formats, PDF generation |
 | [notebooks/README.md](notebooks/README.md) | Jupyter notebook index by corpus and topic |
