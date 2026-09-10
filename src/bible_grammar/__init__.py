@@ -15,6 +15,10 @@ from .ot.prepositions import (
     print_prep_collocates, print_compare_preps,
     MAJOR_PREPS, PREP_GLOSS, BOOK_GROUPS,
 )
+from .ot.verb_governance import (
+    verb_governance_summary, verb_preposition_distribution,
+    verb_governance_examples, print_verb_governance,
+)
 from .lexical.stats import freq_table
 from .core.alignment import translation_equivalents, hebrew_sources
 from .core.ibm_align import translation_equivalents_w, hebrew_sources_w
