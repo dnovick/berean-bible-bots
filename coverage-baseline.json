@@ -1,6 +1,6 @@
 {
-  "unit_min_percent": 9.61,
-  "full_min_percent": 34.58,
+  "unit_min_percent": 10.57,
+  "full_min_percent": 36.02,
   "updated": "2026-09-10",
-  "notes": "Raised by issue #676 Phase 2 batch 2a: tests for build_db.py/build_word_alignment.py (subprocess smoke tests + direct load_all()/load_translations()/load_lxx() ground truth) and pure-logic tests for github_app_token.py and build_research_page.py. unit_min_percent measured in an isolated venv matching CI's exact package list (no reportlab) \u2014 see the prior entry's note on why that matters. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
+  "notes": "Raised by issue #676 Phase 2 batch 2b: tests for build_courses.py, build_lessons.py, build_mkdocs.py (build_reports() + pure helpers), build_studies.py, and new_session.py. unit_min_percent measured in an isolated venv matching CI's exact package list (no reportlab). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
 }
