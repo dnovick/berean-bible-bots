@@ -76,6 +76,26 @@ code change of its own. Caught exactly this way once already (issue #676, `exerc
 full builder sweep PR) — fixed by re-measuring in an isolated venv built from CI's install
 line. `full_min_percent` doesn't have this problem since it's never CI-enforced.
 
+**The isolated venv must also match CI's Python version, and must NOT have
+`data/processed/` built.** Two more ways a local measurement can silently diverge from
+what CI can reach, both caught issue #676 Phase 3 batch 1's first PR attempt:
+
+- *Python version*: `review-pr.yml` pins `python-version: '3.12'`. Building the isolated
+  venv with `python3 -m venv` picks up whatever `python3` resolves to on `$PATH` — on a
+  dev machine with pyenv/Homebrew that can silently be a newer version, which measures a
+  different total statement count (branch/statement counting varies slightly across
+  interpreter versions). Build it explicitly with the pinned version, e.g.
+  `python3.12 -m venv ...` — check with `python --version` inside the venv before trusting
+  a measurement.
+- *`data/processed/`*: any unit-suite test (in `tests/unit/`, unmarked, so it isn't
+  excluded by `-m "not integration"`) that still needs real corpus data and uses the
+  `_skip_if_missing()` guard will silently pass locally (where `data/processed/` is
+  already built from prior work) but skip in CI (which never builds it) — contributing
+  real coverage locally that CI can never realize. Before trusting an isolated-venv
+  measurement, temporarily move `data/processed/` aside (`mv data/processed
+  data/processed.bak`, measure, then move it back) so the venv sees exactly what a fresh
+  CI checkout sees.
+
 **Measure `full_min_percent` in the regular, fully-provisioned dev venv, not the isolated
 CI-matching one.** The isolated venv is deliberately minimal (CI's unit-test-only install
 line) and is missing packages the integration suite needs — e.g. `text-fabric` (LXX
