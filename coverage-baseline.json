@@ -1,6 +1,6 @@
 {
-  "unit_min_percent": 9.34,
-  "full_min_percent": 33.62,
+  "unit_min_percent": 9.61,
+  "full_min_percent": 34.58,
   "updated": "2026-09-10",
-  "notes": "full_min_percent raised by the exercise_pdf/ full builder sweep (issue #676, Phase 1) \u2014 all 184 build_* functions across bbh/bbg/bba now exercised, taking exercise_pdf/ from ~20% to 94% coverage. unit_min_percent is unchanged: the sweep's tests are all @pytest.mark.integration, and CI's unit-mode run never has reportlab installed, so _all_builders() takes its no-import sentinel path there and contributes nothing to unit coverage \u2014 this must be measured in an environment matching CI's package list exactly (no reportlab), not whatever happens to be installed locally, or the baseline silently fails on the next real CI run. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
+  "notes": "Raised by issue #676 Phase 2 batch 2a: tests for build_db.py/build_word_alignment.py (subprocess smoke tests + direct load_all()/load_translations()/load_lxx() ground truth) and pure-logic tests for github_app_token.py and build_research_page.py. unit_min_percent measured in an isolated venv matching CI's exact package list (no reportlab) \u2014 see the prior entry's note on why that matters. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
 }
