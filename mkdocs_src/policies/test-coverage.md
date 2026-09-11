@@ -68,7 +68,7 @@ the ratchet defeats the policy.
 
 ## Branch coverage, not just line coverage
 
-As of 2026-09-11, `[coverage:run]` sets `branch = True`. Line coverage only asks whether a
+As of 2026-09-10, `[coverage:run]` sets `branch = True`. Line coverage only asks whether a
 line executed at all; branch coverage additionally asks whether *both* outcomes of every
 conditional were exercised (an `if` with only its true side ever hit is not fully covered).
 This is a stricter, more honest signal — a test suite can hit 100% line coverage while
@@ -89,7 +89,7 @@ different (stricter) number.
   `migrate_lessons_phase5.py`, `fix_rtl_wrappers.py`, `fix_collapsed_html_answers.py`,
   `fix_bbh_spelling.py`, `remove_readme_files_sections.py`, `convert_inputs_to_selects.py`,
   `inject_colab_setup.py` — see `[coverage:run]`'s `omit` list in `setup.cfg`). Owner decision
-  (2026-09-11, issue #676): writing tests to verify a migration nobody will run again isn't
+  (2026-09-10, issue #676): writing tests to verify a migration nobody will run again isn't
   worth it — better to be honest that this code isn't maintained than to inflate the number.
   If any of these scripts is ever run again, un-omit it and write a real test first.
 - This policy governs the ratchet mechanism only — it does not replace

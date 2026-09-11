@@ -1,6 +1,6 @@
 {
   "unit_min_percent": 11.8,
   "full_min_percent": 33.62,
-  "updated": "2026-09-11",
+  "updated": "2026-09-10",
   "notes": "Raised by the exercise_pdf/ full builder sweep (issue #676, Phase 1) — all 184 build_* functions across bbh/bbg/bba now exercised, taking exercise_pdf/ from ~20% to 94% coverage in a single test file. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase — see docs/policies/test-coverage.md."
 }
