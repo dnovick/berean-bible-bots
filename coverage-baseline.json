@@ -1,6 +1,6 @@
 {
-  "unit_min_percent": 12.03,
-  "full_min_percent": 38.16,
+  "unit_min_percent": 12.49,
+  "full_min_percent": 38.61,
   "updated": "2026-09-10",
-  "notes": "Raised by issue #676 Phase 2 batch 2c (Psalm 119 tooling, build_hebrew_roots_deck.py, build_bbh_decks.py, build_bbg_exercises.py, build_student_packs.py, build_cantillation_diagram.py). Also fixed 2 real CI-collection bugs found along the way: markdown was a genuinely missing CI/requirements.txt dependency (build_student_packs.py), and build_bbg_exercises.py's test needed the same reportlab collection-safety guard as test_exercise_pdf.py (it transitively imports bible_grammar.exercise_pdf). unit_min_percent measured in an isolated venv matching CI's exact package list. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
+  "notes": "Raised by issue #676 Phase 2 batch 2d: research-library tools (index_research_library.py, add_paper.py, fetch_targum_data.py) \u2014 pure/mocked-API logic, no real network or credentials needed. unit_min_percent measured in an isolated venv matching CI's exact package list. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
 }
