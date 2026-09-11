@@ -66,10 +66,32 @@ script actually measured. A PR that lowers a floor number must say why in its de
 (e.g. deliberate dead-code removal that dropped total statement count) — silently lowering
 the ratchet defeats the policy.
 
+## Branch coverage, not just line coverage
+
+As of 2026-09-11, `[coverage:run]` sets `branch = True`. Line coverage only asks whether a
+line executed at all; branch coverage additionally asks whether *both* outcomes of every
+conditional were exercised (an `if` with only its true side ever hit is not fully covered).
+This is a stricter, more honest signal — a test suite can hit 100% line coverage while
+never exercising a function's error paths or `else` branches at all. The tradeoff: branch
+coverage percentages are meaningfully lower than line-coverage percentages for the same
+test suite (measured at the point of this change: line/statement coverage was 24.39% full,
+10.71% unit; the combined branch+statement number `scripts/check_coverage.py` actually
+reports is lower — 23.15% full, 9.34% unit). `coverage-baseline.json` was re-measured under
+this metric when it was turned on — the ratchet still works the same way, just against a
+different (stricter) number.
+
 ## Scope
 
 - Tracks `src/bible_grammar/` and `scripts/` (see `[coverage:run]` in `setup.cfg`).
 - Does not track `tests/` itself, `mkdocs_src/`, or lesson/exercise content generation output.
+- **Excluded from the coverage target**: one-off migration/fixup scripts already run
+  historically against the repo and not part of the standing pipeline (`migrate_lessons_phase2.py`,
+  `migrate_lessons_phase5.py`, `fix_rtl_wrappers.py`, `fix_collapsed_html_answers.py`,
+  `fix_bbh_spelling.py`, `remove_readme_files_sections.py`, `convert_inputs_to_selects.py`,
+  `inject_colab_setup.py` — see `[coverage:run]`'s `omit` list in `setup.cfg`). Owner decision
+  (2026-09-11, issue #676): writing tests to verify a migration nobody will run again isn't
+  worth it — better to be honest that this code isn't maintained than to inflate the number.
+  If any of these scripts is ever run again, un-omit it and write a real test first.
 - This policy governs the ratchet mechanism only — it does not replace
   [Capability Development Policy](capability-development.md)'s behavioral-test requirement
   for the 27 slash-command capabilities. A capability can raise the coverage number without
@@ -78,18 +100,12 @@ the ratchet defeats the policy.
 
 ## Priority for closing the pre-existing gap
 
-Tracked in issue #662, which also covers testing gaps outside coverage tooling itself.
-Priority order (highest real-world stakes first, per that issue):
-
-1. **`exercise_pdf/`** — generates the actual PDF files students download; zero test
-   coverage of PDF generation logic today.
-2. **`scripts/validate_*.py`** — the actual CI-enforced quality gate for all lesson/exercise
-   content (1,522 lines across 6 files); nothing tests the validators themselves.
-3. **`scripts/ai_review.py`** — real branching logic (retry/backoff, the content-rejection
-   circuit breaker, the generated-file diff filter, pre-flight token-count escalation) with
-   zero coverage.
-4. Remaining ~53 non-capability `src/bible_grammar/` modules (internal/support modules not
-   exposed as their own slash command), including all 6 non-Hiphil stem modules.
+Issue #662 (the original gap — `exercise_pdf/`, all 6 `validate_*.py` scripts, `ai_review.py`,
+and a full sweep of the ~53 non-capability `src/bible_grammar/` modules) is closed. Coverage
+is now tracked toward an 80% target in **issue #676**, which has the current phased plan
+(the `exercise_pdf/` builder sweep, remaining `scripts/`, broadening already-tested
+capability modules to their `print_*`/`*_chart` functions, the `discourse/` subpackage
+missed by the original sweep, and the last few untested `core/` modules).
 
 ## Review Cadence
 

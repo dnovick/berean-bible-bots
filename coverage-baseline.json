@@ -1,6 +1,6 @@
 {
-  "unit_min_percent": 10.42,
-  "full_min_percent": 23.73,
-  "updated": "2026-09-10",
-  "notes": "Raised by the reporting/ + morphology_deck.py test PR (issue #662, item 4, batch 5 \u2014 final batch). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
+  "unit_min_percent": 9.34,
+  "full_min_percent": 23.15,
+  "updated": "2026-09-11",
+  "notes": "Re-baselined for the switch to branch coverage (branch = True in setup.cfg) and the exclusion of one-off migration scripts from the coverage target (issue #676). These numbers are not directly comparable to earlier entries in git history, which were measured under line/statement coverage only. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase — see docs/policies/test-coverage.md."
 }
