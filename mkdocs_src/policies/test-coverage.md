@@ -66,6 +66,16 @@ script actually measured. A PR that lowers a floor number must say why in its de
 (e.g. deliberate dead-code removal that dropped total statement count) — silently lowering
 the ratchet defeats the policy.
 
+**Update `unit_min_percent` in an environment matching CI's exact package list** (the
+install line in `review-pr.yml`), never just "wherever `pytest` happens to run." A local
+dev environment routinely has optional packages CI doesn't (e.g. `reportlab`, only
+installed locally for `exercise_pdf/` work) — any test whose statements only execute when
+such a package is importable will silently inflate a locally-measured `unit_min_percent`
+above what CI can ever reach, and the very next PR's real CI run fails the ratchet with no
+code change of its own. Caught exactly this way once already (issue #676, `exercise_pdf/`
+full builder sweep PR) — fixed by re-measuring in an isolated venv built from CI's install
+line. `full_min_percent` doesn't have this problem since it's never CI-enforced.
+
 ## Branch coverage, not just line coverage
 
 As of 2026-09-10, `[coverage:run]` sets `branch = True`. Line coverage only asks whether a
