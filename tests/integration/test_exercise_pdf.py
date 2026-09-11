@@ -76,6 +76,56 @@ class TestBBAExercisePDF:
         _assert_real_pdf(path)
 
 
+def _all_builders() -> list[tuple[str, str, object]]:
+    """Every build_* function across bbh/bbg/bba, as (module, name, fn) tuples.
+
+    Guarded on _REPORTLAB_AVAILABLE: bbh.py/bbg.py/bba.py import reportlab
+    unconditionally at module level (via _base.py), so importing them here
+    would break test COLLECTION (not just execution) in any environment
+    without reportlab — including CI's unit-only run, which still has to
+    collect (and therefore import) every test module before it can filter
+    by marker. Returning a single sentinel tuple when reportlab is missing
+    keeps collection safe; the test body's _skip_if_missing() then produces
+    a normal, single skip instead of a collection error.
+    """
+    if not _REPORTLAB_AVAILABLE:
+        return [("(skipped)", "reportlab not installed", None)]
+    from bible_grammar.exercise_pdf import bba, bbg, bbh
+
+    builders = []
+    for modname, mod in (("bbh", bbh), ("bbg", bbg), ("bba", bba)):
+        for name, obj in sorted(vars(mod).items()):
+            if name.startswith("build_") and callable(obj):
+                builders.append((modname, name, obj))
+    return builders
+
+
+_ALL_BUILDERS = _all_builders()
+
+
+class TestAllBuildersProduceValidPdfs:
+    """Every individual exercise/paradigm-drill builder across bbh (119),
+    bbg (38), and bba (27) — 184 total — instantiates a unique Exercise
+    subclass with its own layout logic; testing only one or two per course
+    (as the classes above do) leaves the large majority of _base.py's and
+    each course module's statements unexercised. This sweep calls every
+    single one against an isolated tmp_path and verifies a real, valid PDF.
+    """
+
+    @pytest.mark.parametrize(
+        "modname,name,fn", _ALL_BUILDERS,
+        ids=[f"{m}:{n}" for m, n, _ in _ALL_BUILDERS],
+    )
+    def test_builder_produces_valid_pdf(self, tmp_path, modname, name, fn) -> None:
+        _skip_if_missing()
+        if fn is None:
+            pytest.skip("reportlab not installed")
+        sub = tmp_path / modname / name
+        sub.mkdir(parents=True)
+        path = fn(out_dir=str(sub))
+        _assert_real_pdf(path)
+
+
 class TestForceRebuildBehavior:
     def test_skips_regeneration_when_file_exists(self, tmp_path, monkeypatch) -> None:
         # _build_exercise_pdf's documented behavior: skip regeneration if the
