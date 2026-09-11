@@ -132,7 +132,6 @@ def book_style_profile(book: str, *, lang: str = 'H') -> dict:
 
     if lang == 'H':
         type_col = 'type_' if 'type_' in df.columns else None
-        sp_col = 'sp' if 'sp' in df.columns else None
 
         wyy = (df['type_'] == 'wayyiqtol').sum() / total * 100 if type_col else 0.0
         inf_c = (df['type_'] == 'infinitive construct').sum() / total * 1000 if type_col else 0.0
@@ -140,9 +139,11 @@ def book_style_profile(book: str, *, lang: str = 'H') -> dict:
         particle = df['lemma'].isin(_HEB_PARTICLES).sum() / total * 1000
         verbal = (df['type_'].isin(_HEB_VERBAL_TYPES).sum() / total * 100
                   if type_col else 0.0)
-        # noun/adj proxy: sp contains 'subs' or 'adjv' in MACULA
-        if sp_col:
-            noun_pct = df['sp'].isin({'subs', 'noun', 'adjv', 'nmpr'}).sum() / total * 100
+        # noun proxy: this corpus's 'type_' column marks common/proper nouns
+        # directly (there is no 'sp' part-of-speech column, unlike the Greek
+        # side — verified against real data, issue #676 Phase 4).
+        if type_col:
+            noun_pct = df['type_'].isin({'common', 'proper'}).sum() / total * 100
         else:
             noun_pct = 0.0
 
@@ -173,12 +174,16 @@ def book_style_profile(book: str, *, lang: str = 'H') -> dict:
             ptc_ratio = opt = inf = 0.0
 
         hina = (df['lemma'] == 'ἵνα').sum() / total * 1000
-        sp_col = 'sp' if 'sp' in df.columns else None
-        if sp_col and mood_col:
-            verbal_pct = df['mood'].notna().sum() / total * 100
-            noun_pct = df['sp'].isin({'noun', 'det', 'pron'}).sum() / total * 100
+        # This corpus has no 'sp' part-of-speech column (unlike some MACULA
+        # exports) — 'mood' (non-null for every finite/nonfinite verb form)
+        # and 'class_' (part-of-speech class) are the real equivalents,
+        # verified against real data (issue #676 Phase 4).
+        class_col = 'class_' if 'class_' in df.columns else None
+        verbal_pct = df['mood'].notna().sum() / total * 100 if mood_col else 0.0
+        if class_col:
+            noun_pct = df['class_'].isin({'noun', 'det', 'pron'}).sum() / total * 100
         else:
-            verbal_pct = noun_pct = 0.0
+            noun_pct = 0.0
 
         return {
             'book': book,

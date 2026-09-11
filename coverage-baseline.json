@@ -1,6 +1,6 @@
 {
   "unit_min_percent": 12.49,
-  "full_min_percent": 38.61,
+  "full_min_percent": 39.49,
   "updated": "2026-09-10",
-  "notes": "Raised by issue #676 Phase 2 batch 2d: research-library tools (index_research_library.py, add_paper.py, fetch_targum_data.py) \u2014 pure/mocked-API logic, no real network or credentials needed. unit_min_percent measured in an isolated venv matching CI's exact package list. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
+  "notes": "Raised by issue #676 Phase 4: discourse/ subpackage (speech_acts.py, information_structure.py, formulaic.py, stylometrics.py) \u2014 behavioral tests against real corpus data, plus real bugs fixed (formulaic.py's HEBREW_FORMULAS had 7/10 broken lemma patterns; stylometrics.py's noun_pct/verbal_pct were hardcoded to 0.0 due to a non-existent 'sp' column check). unit_min_percent measured in an isolated venv matching CI's exact package list; full_min_percent measured in the regular fully-provisioned dev venv (the isolated CI-matching venv lacks optional integration-only packages like text-fabric/bidi and the editable bible_grammar install that full_min_percent's subprocess-based tests need \u2014 full_min_percent is never CI-enforced, so this doesn't affect CI). Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase \u2014 see docs/policies/test-coverage.md."
 }
