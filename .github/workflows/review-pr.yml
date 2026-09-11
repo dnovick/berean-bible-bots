@@ -37,7 +37,11 @@ jobs:
         # anthropic.RateLimitError, etc.) isn't written for. Verified in an isolated
         # from-scratch venv: unpinned installs anthropic 1.5.0 + httpx2 (test_ai_review.py's
         # `import httpx` then fails); anthropic<1.0 resolves to 0.125.0 + real httpx.
-        run: pip install pyyaml PyJWT cryptography requests "anthropic<1.0" flake8 mypy beautifulsoup4 pandas pyarrow "matplotlib<3.11" seaborn pytest pytest-cov
+        # markdown: build_student_packs.py imports it at module level (matches
+        # requirements.txt's own markdown>=3.5, added at the same time) — genuinely
+        # missing before, not deliberately excluded like reportlab; caught the same way
+        # as the anthropic gap, by an isolated-venv baseline re-measurement failing.
+        run: pip install pyyaml PyJWT cryptography requests "anthropic<1.0" flake8 mypy beautifulsoup4 pandas pyarrow "matplotlib<3.11" seaborn markdown pytest pytest-cov
 
       - name: Build generated reports content
         # validate_links.py also scans mkdocs_src/reports/ — gitignored/generated
