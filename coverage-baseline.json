@@ -1,6 +1,6 @@
 {
-  "unit_min_percent": 9.34,
-  "full_min_percent": 23.15,
+  "unit_min_percent": 11.8,
+  "full_min_percent": 33.62,
   "updated": "2026-09-11",
-  "notes": "Re-baselined for the switch to branch coverage (branch = True in setup.cfg) and the exclusion of one-off migration scripts from the coverage target (issue #676). These numbers are not directly comparable to earlier entries in git history, which were measured under line/statement coverage only. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase — see docs/policies/test-coverage.md."
+  "notes": "Raised by the exercise_pdf/ full builder sweep (issue #676, Phase 1) — all 184 build_* functions across bbh/bbg/bba now exercised, taking exercise_pdf/ from ~20% to 94% coverage in a single test file. Update only via `scripts/check_coverage.py --update-baseline`, in the same PR that earns the increase — see docs/policies/test-coverage.md."
 }
