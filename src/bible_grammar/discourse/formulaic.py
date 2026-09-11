@@ -62,27 +62,30 @@ _CHART_DIR = Path('output') / 'charts' / 'formulaic'
 
 # ── curated formula registries ────────────────────────────────────────────────
 
+# Patterns must match this corpus's lemma column exactly. YHWH's lemma is
+# stored unpointed ('יהוה', not 'יְהוָה') here — verified against real data,
+# not a stylistic choice — so every pattern below uses the unpointed form.
 HEBREW_FORMULAS: dict[str, dict] = {
     'ko_amar_yhwh': {
-        'pattern': ['כֹּה', 'אָמַר', 'יְהוָה'],
+        'pattern': ['כֹּה', 'אָמַר', 'יהוה'],
         'gloss': 'Thus says YHWH',
         'transliteration': 'kō ʾāmar YHWH',
         'function': 'prophetic',
     },
     'neum_yhwh': {
-        'pattern': ['נְאֻם', 'יְהוָה'],
+        'pattern': ['נְאֻם', 'יהוה'],
         'gloss': "Oracle of YHWH",
         'transliteration': "neʾum YHWH",
         'function': 'prophetic',
     },
     'devar_yhwh': {
-        'pattern': ['דָּבָר', 'יְהוָה'],
+        'pattern': ['דָּבָר', 'יהוה'],
         'gloss': 'Word of YHWH',
         'transliteration': 'dəvar YHWH',
         'function': 'prophetic',
     },
     'wayehi_devar_yhwh': {
-        'pattern': ['הָיָה', 'דָּבָר', 'יְהוָה'],
+        'pattern': ['הָיָה', 'דָּבָר', 'יהוה'],
         'gloss': 'The word of YHWH came',
         'transliteration': 'wayhî dəvar YHWH',
         'function': 'prophetic-narrative',
@@ -94,7 +97,13 @@ HEBREW_FORMULAS: dict[str, dict] = {
         'function': 'covenantal',
     },
     'barukh_yhwh': {
-        'pattern': ['בָּרוּךְ', 'יְהוָה'],
+        # 'בָּרוּךְ' is the passive-participle surface form — but it's also
+        # (coincidentally, same spelling) the personal name "Baruch"
+        # (Jeremiah's scribe, Neriah's son), and this corpus's lemma
+        # column always uses the Qal perfect 3ms citation form for verbs
+        # regardless of which form appears in the text (verified against
+        # Gen 24:27's real lemma sequence for this exact doxology).
+        'pattern': ['בָּרַךְ', 'יהוה'],
         'gloss': 'Blessed be YHWH',
         'transliteration': 'bārûk YHWH',
         'function': 'doxological',
@@ -106,19 +115,24 @@ HEBREW_FORMULAS: dict[str, dict] = {
         'function': 'doxological',
     },
     'arur': {
-        'pattern': ['אָרוּר'],
+        # 'אָרוּר' is the Qal passive participle (the inflected surface form
+        # that actually appears in "cursed [is/are]..." verses) — but this
+        # corpus's lemma column always uses the Qal perfect 3ms citation
+        # form for verbs (verified against Gen 3:14/3:17's real lemma
+        # values), so the pattern must use that citation form instead.
+        'pattern': ['אָרַר'],
         'gloss': 'Cursed (curse formula)',
         'transliteration': 'ʾārûr',
         'function': 'malediction',
     },
     'tsivah_yhwh': {
-        'pattern': ['צָוָה', 'יְהוָה'],
+        'pattern': ['צָוָה', 'יהוה'],
         'gloss': 'YHWH commanded',
         'transliteration': 'ṣiwwāh YHWH',
         'function': 'legal',
     },
     'hayah_yhwh_im': {
-        'pattern': ['הָיָה', 'יְהוָה', 'עִם'],
+        'pattern': ['הָיָה', 'יהוה', 'עִם'],
         'gloss': 'YHWH was with (X)',
         'transliteration': 'hāyāh YHWH ʿim',
         'function': 'divine-presence',

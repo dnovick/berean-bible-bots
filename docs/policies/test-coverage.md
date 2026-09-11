@@ -76,6 +76,16 @@ code change of its own. Caught exactly this way once already (issue #676, `exerc
 full builder sweep PR) — fixed by re-measuring in an isolated venv built from CI's install
 line. `full_min_percent` doesn't have this problem since it's never CI-enforced.
 
+**Measure `full_min_percent` in the regular, fully-provisioned dev venv, not the isolated
+CI-matching one.** The isolated venv is deliberately minimal (CI's unit-test-only install
+line) and is missing packages the integration suite needs — e.g. `text-fabric` (LXX
+support) and `bidi` (cantillation rendering) — plus it has no editable install of
+`bible_grammar`, which the subprocess-based `build_db.py`/`build_word_alignment.py` smoke
+tests import by name. Running `--full` there produces spurious failures and an
+artificially low number (observed: measured 24.54% in the isolated venv vs. the real
+39.49% in the dev venv, issue #676 Phase 4) — not a real regression, just an
+under-provisioned environment for a target that was never meant to be CI-portable.
+
 ## Branch coverage, not just line coverage
 
 As of 2026-09-10, `[coverage:run]` sets `branch = True`. Line coverage only asks whether a
