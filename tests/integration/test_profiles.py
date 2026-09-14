@@ -10,7 +10,12 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.reporting.profiles import book_profile
+from bible_grammar.reporting.profiles import (
+    book_profile,
+    print_profile,
+    save_profile_report,
+    batch_profiles,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -40,3 +45,35 @@ class TestBookProfile:
         assert p['hapax_count'] >= 750
         top_lemma = max(p['top_lemmas'], key=p['top_lemmas'].get)
         assert top_lemma == 'H0853'
+
+
+class TestPrintProfile:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_profile('Gen')
+        out = capsys.readouterr().out
+        assert 'Genesis' in out
+        assert 'Qal' in out  # Hebrew stem distribution section
+        assert len(out.strip()) > 200
+
+
+class TestSaveProfileReport:
+    def test_writes_a_real_markdown_report(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        out = save_profile_report('Gen', tmp_path / 'gen.md')
+        assert Path(out).exists()
+        text = Path(out).read_text(encoding='utf-8')
+        assert 'Genesis' in text
+        assert 'H0853' in text
+        assert len(text) > 1000
+
+
+class TestBatchProfiles:
+    def test_generates_one_report_per_book(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        paths = batch_profiles(book_ids=['Gen', 'Exo'], output_dir=tmp_path)
+        assert len(paths) == 2
+        names = {Path(p).name for p in paths}
+        assert names == {'Gen_profile.md', 'Exo_profile.md'}
+        for p in paths:
+            assert Path(p).stat().st_size > 0

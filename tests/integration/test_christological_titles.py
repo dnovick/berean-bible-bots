@@ -9,7 +9,13 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.names.christological_titles import title_counts
+from bible_grammar.names.christological_titles import (
+    title_counts,
+    print_title_counts,
+    title_chart,
+    title_verses,
+    title_report,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -43,3 +49,45 @@ class TestTitleCountsGospels:
         top = df.sort_values('Total', ascending=False).iloc[0]
         assert top['title'] == 'Lord (Kyrios)'
         assert top['Total'] >= 200
+
+
+class TestPrintTitleCounts:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_title_counts(scope='gospels')
+        out = capsys.readouterr().out
+        assert 'Son of Man' in out
+        assert len(out.strip()) > 100
+
+
+class TestTitleChart:
+    def test_produces_a_real_png(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        out = title_chart(scope='gospels', output_path=str(tmp_path / 'titles.png'))
+        assert Path(out).exists()
+        assert Path(out).stat().st_size > 0
+
+
+class TestTitleVerses:
+    def test_son_of_man_verses_match_kjv_text(self) -> None:
+        # Observed: 96 verses total across the Gospels, each with real KJV
+        # text attached (not just a bare reference).
+        _skip_if_missing()
+        df = title_verses('Son of Man')
+        assert len(df) >= 90
+        assert (df['kjv_text'].str.len() > 0).all()
+
+    def test_unknown_title_raises_value_error(self) -> None:
+        _skip_if_missing()
+        with pytest.raises(ValueError):
+            title_verses('Not A Real Title')
+
+
+class TestTitleReport:
+    def test_writes_a_real_markdown_report(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        out = title_report(output_dir=str(tmp_path))
+        assert Path(out).exists()
+        text = Path(out).read_text(encoding='utf-8')
+        assert 'Son of Man' in text
+        assert len(text) > 500

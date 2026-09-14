@@ -11,7 +11,13 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.reporting.theological_reports import theological_summary_table
+from bible_grammar.reporting.theological_reports import (
+    theological_summary_table,
+    run_theological_report,
+    run_all_theological_reports,
+    print_all_trajectories,
+    print_theological_summary,
+)
 
 _WORD_ALIGNMENT_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "word_alignment.parquet"
@@ -47,3 +53,51 @@ class TestTheologicalSummaryTable:
         df = theological_summary_table()
         row = df[df['strongs'] == 'H6664'].iloc[0]
         assert row['continuity'] == 'medium'
+
+
+class TestRunTheologicalReport:
+    def test_shalom_report_matches_trajectory_ground_truth(self, tmp_path: Path) -> None:
+        # Cross-verification with theological_summary_table's shalom row
+        # above: same underlying word_trajectory('H7965') call, so
+        # ot_total must match (237).
+        _skip_if_missing()
+        entry = run_theological_report('shalom', output_dir=str(tmp_path))
+        assert entry['strongs'] == 'H7965'
+        assert entry['trajectory']['ot_total'] == 237
+        assert Path(entry['report_path']).exists()
+
+    def test_unknown_term_key_raises_key_error(self) -> None:
+        _skip_if_missing()
+        with pytest.raises(KeyError):
+            run_theological_report('not_a_real_key')
+
+
+class TestRunAllTheologicalReports:
+    def test_generates_a_report_and_index_per_selected_term(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        paths = run_all_theological_reports(output_dir=str(tmp_path), keys=['shalom', 'ruach'])
+        assert len(paths) == 2
+        for p in paths:
+            assert Path(p).exists()
+            assert Path(p).stat().st_size > 0
+        assert (tmp_path / 'README.md').exists()
+
+
+class TestPrintAllTrajectories:
+    def test_prints_real_output_for_selected_term(self, capsys) -> None:
+        _skip_if_missing()
+        print_all_trajectories(keys=['shalom'])
+        out = capsys.readouterr().out
+        assert 'H7965' in out
+        assert 'HIGH' in out  # shalom's continuity rating
+        assert len(out.strip()) > 100
+
+
+class TestPrintTheologicalSummary:
+    def test_prints_a_row_per_term(self, capsys) -> None:
+        _skip_if_missing()
+        print_theological_summary()
+        out = capsys.readouterr().out
+        assert 'shalom' in out
+        assert 'tsedeq' in out
+        assert len(out.strip()) > 200

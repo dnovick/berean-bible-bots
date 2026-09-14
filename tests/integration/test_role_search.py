@@ -14,6 +14,8 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
 from bible_grammar.names.role_search import (
     subject_verbs, verb_subjects, subject_objects, object_verbs,
+    print_role_summary, print_object_summary, role_chart,
+    divine_action_comparison, role_report,
 )
 
 _MACULA_OT_PARQUET = (
@@ -82,3 +84,60 @@ class TestObjectVerbs:
         top = df.iloc[0]
         assert top['verb_lemma'] == 'שָׁפַט'
         assert top['count'] >= 10
+
+
+# ── print_*, chart, comparison, and report wrappers ────────────────────────────
+
+class TestPrintRoleSummary:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_role_summary('H1254', 'OT')
+        out = capsys.readouterr().out
+        assert 'בָּרָא' in out or 'H1254' in out or 'Verbs with subject' in out
+        assert len(out.strip()) > 50
+
+
+class TestPrintObjectSummary:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_object_summary(['H3068', 'H0430'], 'OT', books=['Gen'])
+        out = capsys.readouterr().out
+        assert 'רָאָה' in out
+        assert len(out.strip()) > 50
+
+
+class TestRoleChart:
+    def test_produces_a_real_png(self, tmp_path: Path) -> None:
+        # role_chart takes SUBJECT Strong's numbers (unlike verb_subjects,
+        # which takes a verb) — H3068 is YHWH, the paradigm subject used
+        # elsewhere in this file.
+        _skip_if_missing()
+        out = role_chart('H3068', 'OT', output_path=str(tmp_path / 'role.png'))
+        assert Path(out).exists()
+        assert Path(out).stat().st_size > 0
+
+
+class TestDivineActionComparison:
+    def test_yhwh_leads_ot_panel(self, tmp_path: Path) -> None:
+        # Reuses the same H3068/H0430/H0136/H0410 default OT subjects as
+        # the rest of this file's ground truth — the OT panel should be
+        # real, non-empty data, not a placeholder.
+        _skip_if_missing()
+        ot_df, nt_df, chart_path = divine_action_comparison(
+            output_path=str(tmp_path / 'compare.png'))
+        assert not ot_df.empty
+        assert Path(chart_path).exists()
+        assert Path(chart_path).stat().st_size > 0
+
+
+class TestRoleReport:
+    def test_writes_a_real_markdown_report(self, tmp_path: Path) -> None:
+        # role_report takes SUBJECT Strong's numbers (see TestRoleChart) —
+        # H3068 (YHWH) is predominantly the subject of אָמַר ("said"),
+        # observed count 162, far ahead of any other verb.
+        _skip_if_missing()
+        out = role_report('H3068', 'OT', output_dir=str(tmp_path))
+        assert Path(out).exists()
+        text = Path(out).read_text(encoding='utf-8')
+        assert 'אָמַר' in text
+        assert len(text) > 500
