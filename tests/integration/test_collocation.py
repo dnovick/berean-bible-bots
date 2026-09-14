@@ -17,7 +17,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.collocation import collocations
+from bible_grammar.lexical.collocation import (
+    collocations, print_collocations, collocation_network,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -60,3 +62,22 @@ class TestCollocationsGreekNT:
         assert not df.empty
         for col in ('strongs', 'lemma', 'gloss', 'co_count', 'pmi', 'log_likelihood'):
             assert col in df.columns
+
+
+class TestPrintCollocations:
+    def test_prints_real_output(self, capsys) -> None:
+        # Observed: top row is H559 (אָמַר), matching TestCollocationsHebrewOT.
+        _skip_if_missing()
+        print_collocations('H7965', corpus='OT', top_n=5)
+        out = capsys.readouterr().out
+        assert 'H559' in out
+        assert len(out.strip()) > 100
+
+
+class TestCollocationNetwork:
+    def test_produces_a_real_png(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        out_path = str(tmp_path / 'network.png')
+        collocation_network(['H7965', 'H3068'], corpus='OT', output_path=out_path)
+        assert Path(out_path).exists()
+        assert Path(out_path).stat().st_size > 0

@@ -11,7 +11,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.wordstudy import word_study
+from bible_grammar.lexical.wordstudy import (
+    word_study, resolve_strongs, print_word_study, word_study_table,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -68,3 +70,43 @@ class TestWordStudyTranslationEquivalents:
         assert unicodedata.normalize('NFC', top['lxx_lemma']) == unicodedata.normalize('NFC', 'εἰρήνη')
         assert top['lxx_strongs'] == 'G1515'
         assert top['pct'] >= 90.0
+
+
+class TestResolveStrongs:
+    def test_direct_strongs_number_passes_through(self) -> None:
+        _skip_if_missing()
+        assert resolve_strongs('H7965') == 'H7965'
+
+    def test_hebrew_lemma_resolves(self) -> None:
+        _skip_if_missing()
+        assert resolve_strongs('שָׁלוֹם') == 'H7965'
+
+    def test_greek_lemma_resolves(self) -> None:
+        _skip_if_missing()
+        assert resolve_strongs('εἰρήνη') == 'G1515'
+
+    def test_unknown_term_returns_none(self) -> None:
+        _skip_if_missing()
+        assert resolve_strongs('not_a_real_word_xyz') is None
+
+
+class TestPrintWordStudy:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_word_study('H7965')
+        out = capsys.readouterr().out
+        assert 'H7965' in out
+        assert '237' in out
+        assert len(out.strip()) > 200
+
+
+class TestWordStudyTable:
+    def test_returns_one_row_per_occurrence_with_context(self) -> None:
+        # Same total as TestWordStudyOverview (237), reshaped into one row
+        # per occurrence with KJV context text.
+        _skip_if_missing()
+        df = word_study_table('H7965')
+        assert len(df) == 237
+        for col in ('reference', 'book_id', 'word', 'context_text'):
+            assert col in df.columns
+        assert (df['book_id'] == 'Gen').sum() == 15

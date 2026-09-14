@@ -8,7 +8,19 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.stats import freq_table
+from bible_grammar.lexical.stats import (
+    freq_table, verb_stems_by_book, pos_distribution,
+    greek_verb_forms, niphal_perfects_by_book,
+)
+
+_WORDS_PARQUET = (
+    Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
+)
+
+
+def _skip_if_missing() -> None:
+    if not _WORDS_PARQUET.exists():
+        pytest.skip(f"Data file not found: {_WORDS_PARQUET}")
 
 
 class TestFreqTable:
@@ -67,3 +79,54 @@ class TestFreqTable:
         df = self._make_df()
         result = freq_table(df, "book_id")
         assert list(result.index) == list(range(len(result)))
+
+
+@pytest.mark.integration
+class TestVerbStemsByBook:
+    def test_genesis_qal_leads(self) -> None:
+        # Observed: Genesis has 3,612 Qal verb tokens, far more than any
+        # other stem (Hiphil second at 402).
+        _skip_if_missing()
+        df = verb_stems_by_book(book='Gen')
+        top = df.iloc[0]
+        assert top['stem'] == 'Qal'
+        assert top['count'] >= 3000
+
+
+@pytest.mark.integration
+class TestPosDistribution:
+    def test_noun_leads_ot_pos_distribution(self) -> None:
+        # Observed: Noun 124,877 tokens, the single largest OT part of
+        # speech, ahead of Verb (65,710).
+        _skip_if_missing()
+        df = pos_distribution()
+        top = df.iloc[0]
+        assert top['part_of_speech'] == 'Noun'
+        assert top['count'] >= 100000
+
+
+@pytest.mark.integration
+class TestGreekVerbForms:
+    def test_present_active_indicative_leads_romans(self) -> None:
+        # Observed: present/active/indicative 253 in Romans, the single
+        # largest tense/voice/mood combination.
+        _skip_if_missing()
+        df = greek_verb_forms(book='Rom')
+        top = df.iloc[0]
+        assert top['tense'] == 'Present'
+        assert top['voice'] == 'Active'
+        assert top['mood'] == 'Indicative'
+        assert top['count'] >= 200
+
+
+@pytest.mark.integration
+class TestNiphalPerfectsByBook:
+    def test_jeremiah_leads(self) -> None:
+        # The CLAUDE.md flagship example ("how many niphal perfect verbs
+        # are in a particular book"). Observed: Jeremiah leads with 290,
+        # ahead of Isaiah (259).
+        _skip_if_missing()
+        df = niphal_perfects_by_book()
+        top = df.iloc[0]
+        assert top['book_id'] == 'Jer'
+        assert top['count'] >= 250
