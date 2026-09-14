@@ -10,7 +10,11 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.domain_search import query_domain, top_domain_words, domain_profile
+from bible_grammar.lexical.domain_search import (
+    query_domain, top_domain_words, domain_profile,
+    domain_role_search, domain_comparison,
+    print_domain_summary, print_domain_role,
+)
 
 _SYNTAX_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "macula_syntax.parquet"
@@ -56,3 +60,47 @@ class TestDomainProfile:
         assert top['domain_num'] == 33
         assert top['domain_name'] == 'Communication'
         assert top['pct'] >= 7.0
+
+
+class TestDomainRoleSearch:
+    def test_jesus_as_subject_of_communication_verbs_is_lego(self) -> None:
+        # Jesus (G2424) as subject of Communication-domain (33) words:
+        # λέγω ("say") dominates every gloss variant. Observed: top row
+        # (gloss "I say") count 114.
+        _skip_if_missing()
+        df = domain_role_search(33, 'G2424', top_n=5)
+        top = df.iloc[0]
+        assert top['lemma'] == 'λέγω'
+        assert top['strong_g'] == 'G3004'
+        assert top['count'] >= 100
+
+
+class TestDomainComparison:
+    def test_communication_leads_both_romans_and_revelation(self) -> None:
+        # Cross-check against TestDomainProfile: Communication (33) is the
+        # top content-word domain in both Romans (11.5%) and Revelation
+        # (8.8%, matching the single-book test above).
+        _skip_if_missing()
+        df = domain_comparison(['Rom', 'Rev'], top_n=5)
+        top_label = df['Rom'].idxmax()
+        assert top_label == '33: Communication'
+        assert df.loc[top_label, 'Rom'] >= 10.0
+        assert df.loc[top_label, 'Rev'] >= 7.0
+
+
+class TestPrintDomainSummary:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_domain_summary(12, top_n=5)
+        out = capsys.readouterr().out
+        assert 'θεός' in out
+        assert len(out.strip()) > 100
+
+
+class TestPrintDomainRole:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_domain_role(33, 'G2424', top_n=5)
+        out = capsys.readouterr().out
+        assert 'λέγω' in out
+        assert len(out.strip()) > 100

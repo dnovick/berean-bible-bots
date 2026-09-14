@@ -9,7 +9,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.morph_chart import morph_distribution
+from bible_grammar.lexical.morph_chart import (
+    morph_distribution, print_morph_distribution, morph_chart,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -46,3 +48,27 @@ class TestMorphDistributionVerb:
         pivot = d['pivot']
         assert int(pivot.values.sum()) == 32
         assert int(pivot.loc['Isaiah', 'Qal Participle']) == 10
+
+
+class TestPrintMorphDistribution:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_morph_distribution('H1254')
+        out = capsys.readouterr().out
+        assert 'Genesis' in out
+        assert 'Isaiah' in out
+        assert len(out.strip()) > 100
+
+
+class TestMorphChart:
+    def test_stacked_bar_and_heatmap_produce_real_pngs(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        bar_path = str(tmp_path / 'bar.png')
+        morph_chart('H1254', output_path=bar_path)
+        assert Path(bar_path).exists()
+        assert Path(bar_path).stat().st_size > 0
+
+        heat_path = str(tmp_path / 'heat.png')
+        morph_chart('H1254', chart_type='heatmap', output_path=heat_path)
+        assert Path(heat_path).exists()
+        assert Path(heat_path).stat().st_size > 0

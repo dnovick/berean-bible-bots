@@ -9,7 +9,10 @@ from unittest.mock import patch
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.phrase import _norm_strongs, _query_strongs, _resolve_token, phrase_search
+from bible_grammar.lexical.phrase import (
+    _norm_strongs, _query_strongs, _resolve_token, phrase_search,
+    proximity_search, print_proximity_results, print_phrase_results,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -122,3 +125,34 @@ class TestPhraseSearchBehavioral:
         df = phrase_search(['H1697', 'H3068'], book='Jer')
         assert len(df) == 58
         assert 'Jer 1:2' in set(df['reference'])
+
+
+@pytest.mark.integration
+class TestProximitySearchBehavioral:
+    def test_emunah_chesed_within_5_words_is_mostly_psalms(self) -> None:
+        # אֱמוּנָה (faithfulness, H0530) and חֶסֶד (kindness, H2617) paired
+        # within 5 words — the classic OT hendiadys "faithfulness and
+        # lovingkindness". Observed: 13 matches, 12 in Psalms + 1 in Hosea.
+        _skip_if_missing()
+        df = proximity_search(['H0530', 'H2617'], within=5)
+        assert len(df) == 13
+        assert df['book_id_1'].value_counts()['Psa'] == 12
+
+
+@pytest.mark.integration
+class TestPrintFunctions:
+    def test_print_proximity_results_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        df = proximity_search(['H0530', 'H2617'], within=5)
+        print_proximity_results(df, max_rows=3)
+        out = capsys.readouterr().out
+        assert 'Psa' in out
+        assert len(out.strip()) > 50
+
+    def test_print_phrase_results_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        df = phrase_search(['H1697', 'H3068'], book='Jer')
+        print_phrase_results(df, max_rows=3)
+        out = capsys.readouterr().out
+        assert 'Jer 1:2' in out
+        assert len(out.strip()) > 50

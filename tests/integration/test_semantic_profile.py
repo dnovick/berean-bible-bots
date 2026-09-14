@@ -12,7 +12,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.semantic_profile import semantic_profile
+from bible_grammar.lexical.semantic_profile import (
+    semantic_profile, print_semantic_profile, save_semantic_profile,
+)
 
 _WORD_ALIGNMENT_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "word_alignment.parquet"
@@ -51,3 +53,29 @@ class TestSemanticProfile:
         _skip_if_missing()
         sp = semantic_profile('H7965')
         assert not sp['collocations'].empty
+
+
+class TestPrintSemanticProfile:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_semantic_profile('H7965')
+        out = capsys.readouterr().out
+        assert 'H7965' in out
+        assert 'peace' in out
+        assert len(out.strip()) > 200
+
+
+class TestSaveSemanticProfile:
+    def test_writes_a_real_markdown_report_with_chart(self, tmp_path: Path) -> None:
+        # save_semantic_profile defaults to output/reports/ (git-tracked) —
+        # always redirect via output_dir in tests.
+        _skip_if_missing()
+        out = save_semantic_profile('H7965', output_dir=str(tmp_path))
+        assert Path(out).exists()
+        text = Path(out).read_text(encoding='utf-8')
+        assert 'H7965' in text
+        assert len(text) > 1000
+        # A chart PNG should also have been written alongside the report.
+        pngs = list(tmp_path.glob('*.png'))
+        assert len(pngs) == 1
+        assert pngs[0].stat().st_size > 0

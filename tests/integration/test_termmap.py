@@ -10,7 +10,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.termmap import term_map, THEOLOGICAL_TERMS
+from bible_grammar.lexical.termmap import (
+    term_map, THEOLOGICAL_TERMS, print_term_map, term_map_table,
+)
 
 _WORD_ALIGNMENT_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "word_alignment.parquet"
@@ -45,3 +47,38 @@ class TestTermMapDefault:
         df = term_map()
         assert set(df['theme']) == set(THEOLOGICAL_TERMS.keys())
         assert len(df) >= 40
+
+
+class TestPrintTermMap:
+    def test_prints_real_output_for_single_root(self, capsys) -> None:
+        # print_term_map takes the DataFrame returned by term_map(), not a
+        # Strong's number directly.
+        _skip_if_missing()
+        df = term_map('H7965')
+        print_term_map(df)
+        out = capsys.readouterr().out
+        assert 'H7965' in out
+        assert '237' in out
+
+    def test_theme_filter_narrows_to_one_theme(self, capsys) -> None:
+        _skip_if_missing()
+        df = term_map()
+        print_term_map(df, theme='Peace')
+        out = capsys.readouterr().out
+        assert 'Peace' in out
+        assert 'H7965' in out
+        # Only the Peace theme's single root should appear.
+        assert 'H1285' not in out
+
+
+class TestTermMapTable:
+    def test_shalom_row_matches_term_map(self) -> None:
+        # Same underlying data as TestTermMapSingleRoot, reshaped into one
+        # row per (root, LXX equivalent) pair.
+        _skip_if_missing()
+        df = term_map_table('H7965')
+        row = df.iloc[0]
+        assert row['ot_count'] == 237
+        assert row['lxx_strongs'] == 'G1515'
+        assert row['lxx_pct'] == 100.0
+        assert row['nt_count'] >= 80

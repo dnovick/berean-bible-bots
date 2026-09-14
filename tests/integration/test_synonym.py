@@ -10,7 +10,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.lexical.synonym import compare_synonyms, synonym_table
+from bible_grammar.lexical.synonym import (
+    compare_synonyms, synonym_table, print_synonym_comparison,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -58,3 +60,15 @@ class TestCompareSynonyms:
         top = ahav['by_book'].iloc[0]
         assert top['book_id'] == 'Gen'
         assert top['count'] == 14
+
+
+class TestPrintSynonymComparison:
+    def test_prints_real_output(self, capsys) -> None:
+        # Observed: 211 occurrences for H0157, 11 for H2836, matching
+        # TestCompareSynonyms's ground truth.
+        _skip_if_missing()
+        print_synonym_comparison(['H0157', 'H2836'])
+        out = capsys.readouterr().out
+        assert 'H0157' in out
+        assert '211' in out
+        assert len(out.strip()) > 100
