@@ -10,7 +10,7 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.ot.cantillation import parse_verse
+from bible_grammar.ot.cantillation import parse_verse, render_verse, render_verse_park
 
 _MACULA_OT_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "macula_syntax_ot.parquet"
@@ -41,3 +41,30 @@ class TestParseVerse:
 
         ath_words = [w.text for w in ath_subtree.words]
         assert any('אֱלֹהִ' in w for w in ath_words)
+
+
+class TestRenderVerse:
+    def test_genesis_1_1_produces_a_real_png(self, tmp_path: Path) -> None:
+        # render_verse()'s no-argument default output_path is a relative
+        # 'reports/ot/cantillation/...' path, not this repo's git-tracked
+        # output/reports/ — but always pass an explicit tmp path anyway,
+        # matching the established convention for every chart/render
+        # function in this codebase.
+        _skip_if_missing()
+        out = render_verse('Gen', 1, 1, output_path=tmp_path / 'gen_1_1.png')
+        assert Path(out).exists()
+        assert Path(out).stat().st_size > 0
+
+
+class TestRenderVersePark:
+    def test_genesis_1_1_produces_a_real_png(self, tmp_path: Path) -> None:
+        # build_one() (in scripts/build_cantillation_diagram.py) hardcodes
+        # OUTPUT_ROOT = 'output/reports/ot/cantillation', which IS
+        # git-tracked — never call it directly in a test. render_verse_park
+        # itself takes an explicit output_path override, so call it
+        # directly instead (same pattern as
+        # tests/integration/test_build_cantillation_diagram.py).
+        _skip_if_missing()
+        out = render_verse_park('Gen', 1, 1, output_path=str(tmp_path / 'gen_1_1_park.png'))
+        assert Path(out).exists()
+        assert Path(out).stat().st_size > 0
