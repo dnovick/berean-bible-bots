@@ -9,7 +9,9 @@ import pytest
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
-from bible_grammar.discourse.genre_compare import genre_compare
+from bible_grammar.discourse.genre_compare import (
+    genre_compare, print_genre_compare, genre_heatmap, genre_report,
+)
 
 _WORDS_PARQUET = (
     Path(__file__).resolve().parents[2] / "data" / "processed" / "words.parquet"
@@ -45,3 +47,30 @@ class TestGenreCompareNT:
         df = genre_compare('NT', 'verb_tense')
         assert df.loc['Gospels & Acts', 'Aorist'] > df.loc['Pauline', 'Aorist']
         assert df.loc['Pauline', 'Present'] > df.loc['Gospels & Acts', 'Present']
+
+
+class TestPrintGenreCompare:
+    def test_prints_real_output(self, capsys) -> None:
+        _skip_if_missing()
+        print_genre_compare('OT', 'verb_stem')
+        out = capsys.readouterr().out
+        assert 'Torah' in out
+        assert len(out.strip()) > 100
+
+
+class TestGenreHeatmap:
+    def test_produces_a_real_png(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        out = genre_heatmap('OT', 'verb_stem', output_path=str(tmp_path / 'heatmap.png'))
+        assert Path(out).exists()
+        assert Path(out).stat().st_size > 0
+
+
+class TestGenreReport:
+    def test_writes_a_real_markdown_report(self, tmp_path: Path) -> None:
+        _skip_if_missing()
+        out = genre_report(output_dir=str(tmp_path))
+        assert Path(out).exists()
+        text = Path(out).read_text(encoding='utf-8')
+        assert 'Torah' in text
+        assert len(text) > 500

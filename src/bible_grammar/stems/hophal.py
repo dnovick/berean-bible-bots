@@ -214,7 +214,7 @@ def hophal_report(output_dir: str | None = None) -> Path:
     lines.append('| Root | Lemma | Hophal | Total | % | Gloss |\n|---|---|---|---|---|---|\n')
     for _, row in dom_df.iterrows():
         lines.append(
-            f"| {row['root']} | {row['lemma']} | {row['niphal_count']} | {row['total']} | {row['hif_pct']}% | {row['top_gloss']} |\n")
+            f"| {row['root']} | {row['lemma']} | {row['hophal_count']} | {row['total']} | {row['hif_pct']}% | {row['top_gloss']} |\n")
     lines.append('\n')
 
     lines.append('## 6. Semantic Function Categories\n\n')
