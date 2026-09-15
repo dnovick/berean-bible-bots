@@ -14,6 +14,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parents[2] / "src"))
 
 from bible_grammar.ot.verb_governance import (
     verb_governance_summary, verb_preposition_distribution, verb_governance_examples,
+    print_verb_governance,
 )
 
 _GOVERNANCE_PARQUET = (
@@ -100,3 +101,16 @@ class TestYareGovernance:
         categories = df['category'].tolist()
         assert any('direct object' in c for c in categories)
         assert any(c.startswith('מִן') for c in categories)
+
+
+# ── print_* wrapper ────────────────────────────────────────────────────────────
+
+class TestPrintVerbGovernance:
+    def test_prints_all_three_sections_for_batach(self, capsys) -> None:
+        _skip_if_missing()
+        print_verb_governance('H0982')
+        out = capsys.readouterr().out
+        assert 'Verb Governance: H0982' in out
+        assert 'Preposition distribution' in out
+        assert 'Sample verses' in out
+        assert 'בְּ' in out
