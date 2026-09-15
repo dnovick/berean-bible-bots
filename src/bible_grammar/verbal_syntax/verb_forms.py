@@ -16,13 +16,17 @@ _STEM_ORDER: list[str] = [
     'pael', 'aphel', 'haphel', 'shaph',
 ]
 
-# Pre-defined genre groupings for aspect_comparison convenience
+# Pre-defined genre groupings for aspect_comparison convenience.
+# Book codes must match this corpus's real book_id values exactly (verified
+# against load_ot_data()'s actual book_id column, issue #676 Phase 3) — not
+# the longer SBL-style abbreviations used here previously, which silently
+# matched zero verses for 17 of these 33 books.
 GENRE_SETS: dict[str, list[str]] = {
-    'narrative': ['Gen', 'Exod', 'Num', 'Josh', 'Judg', 'Rut', '1Sam', '2Sam',
-                  '1Kgs', '2Kgs', '1Chr', '2Chr', 'Ezra', 'Neh', 'Esth', 'Jonah'],
+    'narrative': ['Gen', 'Exo', 'Num', 'Jos', 'Jdg', 'Rut', '1Sa', '2Sa',
+                  '1Ki', '2Ki', '1Ch', '2Ch', 'Ezr', 'Neh', 'Est', 'Jon'],
     'law':       ['Lev', 'Deu'],
-    'prophecy':  ['Isa', 'Jer', 'Eze', 'Hos', 'Joel', 'Amos', 'Mic', 'Zeph',
-                  'Zech', 'Mal'],
+    'prophecy':  ['Isa', 'Jer', 'Ezk', 'Hos', 'Jol', 'Amo', 'Mic', 'Zep',
+                  'Zec', 'Mal'],
     'poetry':    ['Psa', 'Pro', 'Job', 'Sng', 'Lam'],
     'wisdom':    ['Pro', 'Job', 'Ecc'],
 }
