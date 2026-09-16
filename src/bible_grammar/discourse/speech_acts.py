@@ -69,7 +69,13 @@ _OT_DIRECTIVE_VERB_TYPES = {
     'infinitive absolute',  # imperatival inf. abs.
 }
 _OT_DIRECTIVE_LEMMAS = {'לֹא', 'אַל'}  # prohibition + jussive/imperfect
-_OT_ASSERTIVE_LEMMAS = {'אֲנִי', 'אָנֹכִי', 'יְהוָה', 'אֱלֹהִים'}  # "I am YHWH" etc.
+# YHWH's lemma is stored unpointed ('יהוה') in this corpus, not pointed
+# ('יְהוָה') — same root cause as the formulaic.py HEBREW_FORMULAS fix.
+# The pointed form matches only 1 stray token corpus-wide, so this cue was
+# silently missing for the ~1,795 verses that name YHWH but have no other
+# assertive-triggering lemma (verified against real data, no other change
+# to the classifier's design).
+_OT_ASSERTIVE_LEMMAS = {'אֲנִי', 'אָנֹכִי', 'יהוה', 'אֱלֹהִים'}  # "I am YHWH" etc.
 _OT_COMMISSIVE_MARKERS = {'שָׁבַע', 'נָדַר', 'כִּי'}  # oath, vow, כִּי-promise
 _OT_EXPRESSIVE_LEMMAS = {
     'הָלַל', 'יָדָה', 'שִׁיר', 'רָנַן', 'הַלְלוּיָהּ',
@@ -174,7 +180,8 @@ def ot_speech_act_data(
     OT verses classified by speech act type.
 
     Optionally filter by book and/or by speaker lemma
-    (e.g., speaker='יְהוָה' for YHWH's speech).
+    (e.g., speaker='יהוה' for YHWH's speech — unpointed, matching this
+    corpus's lemma column).
 
     Returns: ref, book, chapter, verse, speech_act_type — one row per verse.
     """
