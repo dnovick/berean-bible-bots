@@ -14,7 +14,9 @@ from bible_grammar.lexical.hapax import hapax_legomena, hapax_table, hapax_summa
 hapax_legomena(corpus='OT')
 
 # Hapaxes in a specific book
-hapax_legomena(book='Job')          # Job has the most OT hapaxes
+hapax_legomena(book='Job')          # Job's vocabulary register is famously rare/unusual,
+                                     # though 1 Chronicles has the most hapaxes by raw count
+                                     # (genealogical proper names, each occurring once)
 hapax_legomena(book='Rev')          # NT book
 
 # Hapaxes by POS
