@@ -1,0 +1,496 @@
+<title>Hithpael Root Frequencies</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@400;700;900&family=Noto+Sans:ital,wght@0,400;0,600;1,400&family=Noto+Serif+Hebrew:wght@400;600&display=swap">
+
+<style>
+  /* ── Palette ── violet-scholar, two themes */
+  :root {
+    --bg:      #EDEAF4;
+    --surface: #F7F5FC;
+    --ink:     #1B1826;
+    --ink-2:   #48435C;
+    --accent:  #5F3EA8;
+    --accent-l:#EAE5F7;
+    --muted:   #7A748F;
+    --rule:    #D0CADE;
+    --bar-bg:  #D4CDED;
+    --bar-fg:  #7B5ABF;
+    --rank-bg: #EAE5F7;
+    --rank-fg: #5F3EA8;
+    --search-bg: #F7F5FC;
+    --focus:   #5F3EA8;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg:      #110F1C;
+      --surface: #1C1929;
+      --ink:     #EAE7F8;
+      --ink-2:   #ABA6C4;
+      --accent:  #9B7ECC;
+      --accent-l:#2A2442;
+      --muted:   #7A7598;
+      --rule:    #2C2840;
+      --bar-bg:  #252140;
+      --bar-fg:  #8B6BBF;
+      --rank-bg: #2A2442;
+      --rank-fg: #B79EE0;
+      --search-bg: #1C1929;
+      --focus:   #9B7ECC;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg:      #110F1C;
+    --surface: #1C1929;
+    --ink:     #EAE7F8;
+    --ink-2:   #ABA6C4;
+    --accent:  #9B7ECC;
+    --accent-l:#2A2442;
+    --muted:   #7A7598;
+    --rule:    #2C2840;
+    --bar-bg:  #252140;
+    --bar-fg:  #8B6BBF;
+    --rank-bg: #2A2442;
+    --rank-fg: #B79EE0;
+    --search-bg: #1C1929;
+    --focus:   #9B7ECC;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  html, body {
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Noto Sans', system-ui, sans-serif;
+    font-size: 15px;
+    line-height: 1.55;
+  }
+
+  body {
+    padding-inline: max(16px, 5vw);
+    padding-block: 40px 60px;
+    max-width: 960px;
+    margin-inline: auto;
+  }
+
+  /* ── Header ── */
+  .page-header {
+    margin-block-end: 36px;
+  }
+
+  .stem-eyebrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin-block-end: 10px;
+  }
+
+  .stem-eyebrow::before {
+    content: '';
+    display: block;
+    width: 24px;
+    height: 2px;
+    background: var(--accent);
+    flex-shrink: 0;
+  }
+
+  h1 {
+    font-family: 'Frank Ruhl Libre', Georgia, serif;
+    font-size: clamp(28px, 5vw, 44px);
+    font-weight: 900;
+    line-height: 1.1;
+    text-wrap: balance;
+    color: var(--ink);
+    margin-block-end: 10px;
+  }
+
+  h1 .heb-display {
+    font-family: 'Noto Serif Hebrew', serif;
+    font-weight: 600;
+    font-size: 0.9em;
+    color: var(--accent);
+    margin-inline-start: 0.15em;
+  }
+
+  .subtitle {
+    font-size: 14px;
+    color: var(--ink-2);
+    max-width: 60ch;
+    line-height: 1.6;
+  }
+
+  /* ── Stats strip ── */
+  .stats-strip {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-block: 24px 28px;
+  }
+
+  .stat-pill {
+    background: var(--surface);
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+    padding: 8px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+  }
+
+  .stat-pill .val {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 22px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    line-height: 1;
+    color: var(--ink);
+  }
+
+  .stat-pill .lbl {
+    font-size: 11px;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--muted);
+    font-weight: 600;
+  }
+
+  /* ── Search ── */
+  .search-wrap {
+    position: relative;
+    margin-block-end: 20px;
+  }
+
+  .search-wrap svg {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted);
+    pointer-events: none;
+  }
+
+  #search {
+    width: 100%;
+    max-width: 340px;
+    padding: 9px 12px 9px 36px;
+    background: var(--search-bg);
+    border: 1.5px solid var(--rule);
+    border-radius: 8px;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 14px;
+    color: var(--ink);
+    outline: none;
+    transition: border-color 0.15s;
+  }
+
+  #search::placeholder { color: var(--muted); }
+  #search:focus { border-color: var(--focus); }
+
+  /* ── Table ── */
+  .table-wrap {
+    overflow-x: auto;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  thead th {
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--muted);
+    padding: 0 10px 10px;
+    text-align: left;
+    border-bottom: 2px solid var(--rule);
+    white-space: nowrap;
+  }
+
+  thead th:first-child { padding-inline-start: 4px; }
+
+  tbody tr {
+    border-bottom: 1px solid var(--rule);
+    transition: background 0.1s;
+  }
+
+  tbody tr:hover { background: var(--accent-l); }
+  tbody tr[hidden] { display: none; }
+
+  td {
+    padding: 10px 10px;
+    vertical-align: middle;
+  }
+
+  td:first-child { padding-inline-start: 4px; }
+
+  /* rank */
+  .rank {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--rank-fg);
+    background: var(--rank-bg);
+    border-radius: 4px;
+    padding: 2px 6px;
+    font-variant-numeric: tabular-nums;
+    white-space: nowrap;
+  }
+
+  /* Hebrew root + pointed */
+  .root-cell {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+    min-width: 90px;
+  }
+
+  .heb-root {
+    font-family: 'Noto Serif Hebrew', serif;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.1;
+    color: var(--ink);
+    direction: rtl;
+  }
+
+  .heb-pointed {
+    font-family: 'Noto Serif Hebrew', serif;
+    font-size: 14px;
+    color: var(--muted);
+    direction: rtl;
+    line-height: 1.3;
+  }
+
+  /* count */
+  .count {
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+    font-weight: 700;
+    font-variant-numeric: tabular-nums;
+    color: var(--ink);
+    white-space: nowrap;
+    min-width: 48px;
+  }
+
+  /* bar */
+  .bar-cell { min-width: 100px; }
+
+  .bar-track {
+    height: 6px;
+    background: var(--bar-bg);
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .bar-fill {
+    height: 100%;
+    background: var(--bar-fg);
+    border-radius: 3px;
+    transition: width 0.3s ease;
+  }
+
+  .pct-label {
+    font-size: 11px;
+    color: var(--muted);
+    margin-top: 3px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* gloss */
+  .gloss {
+    font-size: 14px;
+    color: var(--ink-2);
+    font-style: italic;
+  }
+
+  /* ── Empty state ── */
+  .no-results {
+    text-align: center;
+    padding: 32px;
+    color: var(--muted);
+    font-size: 14px;
+  }
+  .no-results[hidden] { display: none; }
+
+  /* ── Footer note ── */
+  .footnote {
+    margin-top: 28px;
+    font-size: 12px;
+    color: var(--muted);
+    border-top: 1px solid var(--rule);
+    padding-top: 16px;
+    line-height: 1.7;
+  }
+
+  /* ── Responsive ── */
+  @media (max-width: 540px) {
+    .stat-pill .val { font-size: 18px; }
+    .heb-root { font-size: 18px; }
+    .count { font-size: 15px; }
+    .bar-cell { min-width: 70px; }
+    thead th, td { padding-inline: 6px; }
+  }
+
+  @media (max-width: 400px) {
+    .bar-cell { display: none; }
+  }
+</style>
+
+<header class="page-header">
+  <div class="stem-eyebrow">Biblical Hebrew · Verbal Stem</div>
+  <h1>Hithpael <span class="heb-display">הִתְפַּעֵל</span></h1>
+  <p class="subtitle">
+    Top 50 verbal roots appearing in the Hithpael stem, ordered by frequency across the Hebrew Bible.
+    The Hithpael is the reflexive/reciprocal stem — these are the actions most often performed upon or for oneself.
+  </p>
+</header>
+
+<div class="stats-strip">
+  <div class="stat-pill">
+    <span class="val">727</span>
+    <span class="lbl">Total occurrences</span>
+  </div>
+  <div class="stat-pill">
+    <span class="val">50</span>
+    <span class="lbl">Roots shown</span>
+  </div>
+  <div class="stat-pill">
+    <span class="val">11.0%</span>
+    <span class="lbl">Top root (פלל)</span>
+  </div>
+</div>
+
+<div class="search-wrap">
+  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+  <input type="search" id="search" placeholder="Search roots or glosses…" aria-label="Filter roots">
+</div>
+
+<div class="table-wrap">
+  <table id="roots-table">
+    <thead>
+      <tr>
+        <th>#</th>
+        <th>Root</th>
+        <th>Count</th>
+        <th class="bar-cell">Frequency</th>
+        <th>Gloss</th>
+      </tr>
+    </thead>
+    <tbody id="roots-body">
+    </tbody>
+  </table>
+  <div class="no-results" id="no-results" hidden>No roots match your search.</div>
+</div>
+
+<p class="footnote">
+  Data source: berean-bible-bots corpus · Occurrences counted across all books of the Hebrew Bible ·
+  Top gloss reflects the most common contextual meaning in the Hithpael stem ·
+  Session 135, bbh-2024.1 · 2026-09-21
+</p>
+
+<script>
+const DATA = [
+  {root:"פלל",lemma:"פָּלַל",count:80,pct:11.0,gloss:"pray"},
+  {root:"חוה",lemma:"חוה",count:77,pct:10.6,gloss:"worship"},
+  {root:"הלך",lemma:"הָלַךְ",count:64,pct:8.8,gloss:"walk"},
+  {root:"יצב",lemma:"יָצַב",count:48,pct:6.6,gloss:"stand"},
+  {root:"נבא",lemma:"נָבָא",count:28,pct:3.9,gloss:"prophesy"},
+  {root:"חזק",lemma:"חָזַק",count:27,pct:3.7,gloss:"strengthen oneself"},
+  {root:"הלל",lemma:"הָלַל",count:25,pct:3.4,gloss:"boast"},
+  {root:"קדש",lemma:"קָדַשׁ",count:24,pct:3.3,gloss:"consecrate oneself"},
+  {root:"יחש",lemma:"יָחַשׂ",count:20,pct:2.8,gloss:"enroll by genealogy"},
+  {root:"טהר",lemma:"טָהֵר",count:20,pct:2.8,gloss:"cleanse oneself"},
+  {root:"אבל",lemma:"אָבַל",count:19,pct:2.6,gloss:"mourn"},
+  {root:"חנן",lemma:"חָנַן",count:17,pct:2.3,gloss:"plead for favor"},
+  {root:"אוה",lemma:"אָוָה",count:16,pct:2.2,gloss:"desire"},
+  {root:"טמא",lemma:"טָמֵא",count:15,pct:2.1,gloss:"defile oneself"},
+  {root:"נדב",lemma:"נָדַב",count:14,pct:1.9,gloss:"offer willingly"},
+  {root:"גרה",lemma:"גָּרָה",count:11,pct:1.5,gloss:"provoke"},
+  {root:"ידה",lemma:"יָדָה",count:11,pct:1.5,gloss:"confess"},
+  {root:"חתן",lemma:"חָתַן",count:11,pct:1.5,gloss:"become a son-in-law"},
+  {root:"חבא",lemma:"חָבָא",count:10,pct:1.4,gloss:"hide oneself"},
+  {root:"חטא",lemma:"חָטָא",count:9,pct:1.2,gloss:"purify oneself"},
+  {root:"ענג",lemma:"עָנֹג",count:9,pct:1.2,gloss:"delight oneself"},
+  {root:"נשא",lemma:"נָשָׂא",count:8,pct:1.1,gloss:"exalt oneself"},
+  {root:"קבץ",lemma:"קָבַץ",count:8,pct:1.1,gloss:"gather together"},
+  {root:"כסה",lemma:"כָּסָה",count:8,pct:1.1,gloss:"cover oneself"},
+  {root:"חפש",lemma:"חָפַשׂ",count:8,pct:1.1,gloss:"disguise oneself"},
+  {root:"עבר",lemma:"עָבַר",count:8,pct:1.1,gloss:"become angry"},
+  {root:"אפק",lemma:"אָפַק",count:7,pct:1.0,gloss:"restrain oneself"},
+  {root:"פאר",lemma:"פָּאַר",count:7,pct:1.0,gloss:"glorify oneself"},
+  {root:"עלל",lemma:"עָלַל",count:7,pct:1.0,gloss:"deal with"},
+  {root:"ערב",lemma:"עָרַב",count:7,pct:1.0,gloss:"associate with"},
+  {root:"נחם",lemma:"נָחַם",count:7,pct:1.0,gloss:"have compassion"},
+  {root:"נחל",lemma:"נָחַל",count:7,pct:1.0,gloss:"take as inheritance"},
+  {root:"ברך",lemma:"בָּרַךְ",count:7,pct:1.0,gloss:"bless oneself"},
+  {root:"עלם",lemma:"עָלַם",count:6,pct:0.8,gloss:"ignore"},
+  {root:"ענה",lemma:"עָנָה",count:6,pct:0.8,gloss:"humble oneself"},
+  {root:"עטף",lemma:"עָטַף",count:6,pct:0.8,gloss:"grow faint"},
+  {root:"אנף",lemma:"אָנַף",count:6,pct:0.8,gloss:"be angry"},
+  {root:"סתר",lemma:"סָתַר",count:5,pct:0.7,gloss:"hide oneself"},
+  {root:"ראה",lemma:"רָאָה",count:5,pct:0.7,gloss:"appear"},
+  {root:"געש",lemma:"גָּעַשׁ",count:5,pct:0.7,gloss:"quake"},
+  {root:"נקם",lemma:"נָקַם",count:5,pct:0.7,gloss:"avenge oneself"},
+  {root:"נפל",lemma:"נָפַל",count:5,pct:0.7,gloss:"prostrate oneself"},
+  {root:"פרד",lemma:"פָּרַד",count:4,pct:0.6,gloss:"scatter"},
+  {root:"רגז",lemma:"רָגַז",count:4,pct:0.6,gloss:"rage"},
+  {root:"מכר",lemma:"מָכַר",count:4,pct:0.6,gloss:"sell oneself"},
+  {root:"חרה",lemma:"חָרָה",count:4,pct:0.6,gloss:"fret"},
+  {root:"הפך",lemma:"הָפַךְ",count:4,pct:0.6,gloss:"turn oneself"},
+  {root:"פקד",lemma:"פָּקַד",count:4,pct:0.6,gloss:"muster"},
+  {root:"חבר",lemma:"חָבַר",count:4,pct:0.6,gloss:"join oneself"},
+  {root:"פלש",lemma:"פָּלַשׁ",count:4,pct:0.6,gloss:"roll in (grief)"},
+];
+
+const MAX = DATA[0].count;
+
+// Compute total for stats
+const total = DATA.reduce((s, d) => s + d.count, 0);
+document.querySelector('.stats-strip .stat-pill:first-child .val').textContent = total.toLocaleString();
+
+function buildRow(d, i) {
+  const barWidth = ((d.count / MAX) * 100).toFixed(1);
+  const tr = document.createElement('tr');
+  tr.dataset.root = d.root;
+  tr.dataset.gloss = d.gloss.toLowerCase();
+
+  tr.innerHTML = `
+    <td><span class="rank">${i + 1}</span></td>
+    <td>
+      <div class="root-cell">
+        <span class="heb-root">${d.root}</span>
+        <span class="heb-pointed">${d.lemma}</span>
+      </div>
+    </td>
+    <td><span class="count">${d.count}</span></td>
+    <td class="bar-cell">
+      <div class="bar-track"><div class="bar-fill" style="width:${barWidth}%"></div></div>
+      <div class="pct-label">${d.pct.toFixed(1)}%</div>
+    </td>
+    <td><span class="gloss">${d.gloss}</span></td>
+  `;
+  return tr;
+}
+
+const tbody = document.getElementById('roots-body');
+DATA.forEach((d, i) => tbody.appendChild(buildRow(d, i)));
+
+const searchInput = document.getElementById('search');
+const noResults = document.getElementById('no-results');
+
+searchInput.addEventListener('input', () => {
+  const q = searchInput.value.trim().toLowerCase();
+  let visible = 0;
+  tbody.querySelectorAll('tr').forEach(tr => {
+    const match = !q || tr.dataset.root.includes(q) || tr.dataset.gloss.includes(q);
+    tr.hidden = !match;
+    if (match) visible++;
+  });
+  noResults.hidden = visible > 0;
+});
+</script>
