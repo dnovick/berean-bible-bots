@@ -57,13 +57,13 @@ Standards:
 ### 2. Create the markdown wrapper
 
 Write `data/courses/.../session-<N>/<page-slug>.md` — a short description of the page and a
-button linking to the HTML file:
+button linking to the HTML file. The button uses a MkDocs Material button class:
 
-```markdown
-Brief description of what the page contains and why students should consult it.
+    Brief description of what the page contains and why students should consult it.
 
-[Open interactive table](page-slug.html){.md-button .md-button--primary}
-```
+    [Open interactive table](page-slug.html){.md-button .md-button--primary}
+
+Replace `page-slug.html` with the actual HTML filename (e.g., `hithpael-root-frequencies.html`).
 
 This `.md` file becomes the "## Additional Info" subpage that the session page links to.
 The HTML file is served alongside it.
