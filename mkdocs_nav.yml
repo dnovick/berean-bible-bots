@@ -789,5 +789,6 @@ nav:
   - Policies:
     - Autonomous Actions: policies/autonomous-actions.md
     - Capability Development: policies/capability-development.md
+    - Session Content Pages: policies/session-content-pages.md
     - Test Coverage: policies/test-coverage.md
 - API Reference: reference/index.md

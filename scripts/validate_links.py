@@ -54,6 +54,27 @@ def _is_skippable(target: str) -> bool:
     )
 
 
+_CODE_FENCE_RE = re.compile(r"^(`{3,}|~{3,}).*$", re.MULTILINE)
+_INDENTED_CODE_RE = re.compile(r"(?m)^(    |\t)[^\n]*$")
+_INLINE_CODE_RE = re.compile(r"`[^`\n]+`")
+
+
+def _strip_code_blocks(text: str) -> str:
+    """Remove fenced code blocks, indented code blocks, and inline code."""
+    # Remove fenced code blocks (``` ... ``` or ~~~ ... ~~~)
+    result = re.sub(
+        r"(`{3,}|~{3,})[^\n]*\n.*?\n\1",
+        lambda m: "\n" * m.group(0).count("\n"),
+        text,
+        flags=re.DOTALL,
+    )
+    # Remove indented code blocks (4-space or tab-indented paragraphs)
+    result = re.sub(r"(?m)^(    |\t)[^\n]*$", "", result)
+    # Remove inline code spans
+    result = re.sub(r"`[^`\n]+`", "", result)
+    return result
+
+
 def _check_file(
     md_file: Path,
     errors: list[str],
@@ -64,6 +85,8 @@ def _check_file(
     except Exception as exc:
         warnings.append(f"WARN   {md_file.relative_to(_REPO)}  —  could not read: {exc}")
         return
+
+    text = _strip_code_blocks(text)
 
     for match in _LINK_RE.finditer(text):
         target = match.group(1).strip()
