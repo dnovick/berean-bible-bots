@@ -982,7 +982,12 @@ def main() -> None:
                 # Collect all session-level files that need copying:
                 # - files: download attachments
                 # - reading: HTML exercise files
+                # - assets: static files referenced by sections (copy-only, no rendering)
                 sess_files = session.get("files") or []
+                sess_assets = [
+                    {"file": a} if isinstance(a, str) else a
+                    for a in (session.get("assets") or [])
+                ]
                 readings_raw = session.get("reading") or []
                 reading_list = (
                     [readings_raw] if isinstance(readings_raw, dict)
@@ -993,7 +998,7 @@ def main() -> None:
                     for r in reading_list
                     if r.get("file")
                 ]
-                all_copy_files = sess_files + reading_files
+                all_copy_files = sess_files + sess_assets + reading_files
                 if all_copy_files:
                     files_out_dir.mkdir(parents=True, exist_ok=True)
                     for f in all_copy_files:
