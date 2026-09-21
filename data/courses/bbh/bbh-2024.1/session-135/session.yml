@@ -42,7 +42,5 @@ sections:
   - heading: "Hithpael Root Frequencies"
     file: "hithpael-root-frequencies.md"
 
-assets:
-  - file: "hithpael-root-frequencies.html"
 
 notes: ""
