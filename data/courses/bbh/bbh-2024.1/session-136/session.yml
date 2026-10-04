@@ -21,7 +21,20 @@
 date: "2026-10-05"
 focus: "Review"
 instructor: "David Novick"
+
 agenda:
+  - title: "Stem Identification Drill"
+    duration: "20 min"
+  - title: "Full Parsing — Psalm 119 and Pentateuch"
+    duration: "30 min"
+
+exercises:
+  - name: "Stem Identification Drill"
+    slug: "session136-stem-id-drill"
+    desc: "Identify the stem, conjugation, PGN, and root for 25 verb forms spanning all seven Hebrew stems."
+  - name: "Full Parsing — Psalm 119 and Pentateuch"
+    slug: "session136-full-parsing"
+    desc: "Parse 25 verb forms from Psalm 119 and the Pentateuch: stem, conjugation, PGN, root, and translation."
 
 sections:
 
