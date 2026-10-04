@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 136 — All-Stems Identification Drill</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@400;600&display=swap">
+<style>
+  body { font-family: Georgia, serif; max-width: 960px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  .ref-table-wrap { margin: 1rem 0 1.5rem; overflow-x: auto; }
+  .ref-table { border-collapse: collapse; font-size: .84rem; }
+  .ref-table th { background: #e0e8f0; padding: .35rem .6rem; border: 1px solid #bbb; text-align: left; font-size: .82rem; }
+  .ref-table td { padding: .28rem .55rem; border: 1px solid #ddd; vertical-align: middle; }
+  .ref-table td:first-child { font-weight: bold; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2.2rem; }
+  td.heb { font-family: 'Noto Serif Hebrew', 'SBL Hebrew', 'Times New Roman', serif; direction: rtl; unicode-bidi: embed; font-size: 1.7em; font-weight: 600; width: 9rem; text-align: right; padding: .25rem .5rem; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2.2rem; text-align: center; }
+  .ans-heb { font-family: 'Noto Serif Hebrew', 'SBL Hebrew', 'Times New Roman', serif; direction: rtl; unicode-bidi: embed; font-size: 1.5em; font-weight: 600; width: 9rem; text-align: right; padding: .25rem .5rem; }
+  .ans-note { font-style: italic; color: #3a7e3a; font-size: .85rem; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    select.f { border: none; border-bottom: 1px solid #aaa; appearance: none; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Session 136 — All-Stems Identification Drill</h1>
+<p class="subtitle">BBH 2024.1 · Review · 25 items · All Seven Stems</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> For each Hebrew form, identify the stem, conjugation, PGN, and root. Forms are drawn from all seven stems learned in BBH Ch12–35. Items are presented in random order. Select your answers, then click ▶ Answer to check.
+</div>
+
+<div class="ref-table-wrap">
+<table class="ref-table">
+  <tr><th>Stem</th><th>Perfect marker</th><th>Imperf. prefix vowel</th><th>Participle prefix</th></tr>
+  <tr><td>Qal</td><td>Pathach under R1</td><td>Hiriq (יִ–)</td><td>מַ–/מֹ–/שֹׁ–</td></tr>
+  <tr><td>Niphal</td><td>נִ– prefix</td><td>יִקָּ– (assimilation)</td><td>נִקְ–</td></tr>
+  <tr><td>Piel</td><td>Dagesh R2; Tsere R1</td><td>יְ–</td><td>מְ–</td></tr>
+  <tr><td>Pual</td><td>Dagesh R2; Qibbuts R1</td><td>יְ– + Qibbuts</td><td>מְ– + Qibbuts</td></tr>
+  <tr><td>Hiphil</td><td>הִ– prefix; Hireq-Yod</td><td>יַ–; Hireq R2</td><td>מַ–; Hireq-Yod</td></tr>
+  <tr><td>Hophal</td><td>הָ/הֻ– prefix</td><td>יָ/יֻ–</td><td>מָ/מֻ–</td></tr>
+  <tr><td>Hithpael</td><td>הִתְ– + Dagesh R2</td><td>יִתְ– + Dagesh R2</td><td>מִתְ–</td></tr>
+</table>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr><th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Root</th><th></th></tr>
+
+  <tr>
+    <td class="num">1</td>
+    <td class="heb">יִשְׁמֹר</td>
+    <td><select class="f" id="1-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="1-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="1-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="1-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-1">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יִשְׁמֹר</td>
+    <td><strong>Qal</strong></td>
+    <td>Imperfect</td>
+    <td>3ms</td>
+    <td class="ans-note">שׁמר — יִ– prefix + Holem under R2 → Qal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">2</td>
+    <td class="heb">קִדֵּשׁ</td>
+    <td><select class="f" id="2-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="2-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="2-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="2-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-2">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">קִדֵּשׁ</td>
+    <td><strong>Piel</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">קדשׁ — Dagesh R2 (דּ), Hireq R1 → Piel</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">3</td>
+    <td class="heb">הִקְדִּישׁ</td>
+    <td><select class="f" id="3-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="3-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="3-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="3-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-3">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">הִקְדִּישׁ</td>
+    <td><strong>Hiphil</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">קדשׁ — הִ– prefix + Hireq-Yod (ִישׁ) → Hiphil</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">4</td>
+    <td class="heb">נִשְׁמַר</td>
+    <td><select class="f" id="4-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="4-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="4-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="4-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-4">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">נִשְׁמַר</td>
+    <td><strong>Niphal</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">שׁמר — נִ– prefix → Niphal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">5</td>
+    <td class="heb">הִתְפַּלֵּל</td>
+    <td><select class="f" id="5-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="5-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="5-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="5-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-5">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">הִתְפַּלֵּל</td>
+    <td><strong>Hithpael</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">פלל — הִתְ– prefix + Dagesh R2 → Hithpael</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">6</td>
+    <td class="heb">קֻדַּשׁ</td>
+    <td><select class="f" id="6-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="6-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="6-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="6-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-6">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">קֻדַּשׁ</td>
+    <td><strong>Pual</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">קדשׁ — Qibbuts R1 + Dagesh R2 → Pual</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">7</td>
+    <td class="heb">יִכָּתֵב</td>
+    <td><select class="f" id="7-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="7-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="7-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="7-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-7">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יִכָּתֵב</td>
+    <td><strong>Niphal</strong></td>
+    <td>Imperfect</td>
+    <td>3ms</td>
+    <td class="ans-note">כתב — יִ– + Dagesh in R1 (assimilation of Nun) → Niphal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">8</td>
+    <td class="heb">כָּתַב</td>
+    <td><select class="f" id="8-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="8-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="8-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="8-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-8">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כָּתַב</td>
+    <td><strong>Qal</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">כתב — Pathach R1, no prefix → Qal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">9</td>
+    <td class="heb">יְדַבֵּר</td>
+    <td><select class="f" id="9-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="9-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="9-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="9-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-9">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יְדַבֵּר</td>
+    <td><strong>Piel</strong></td>
+    <td>Imperfect</td>
+    <td>3ms</td>
+    <td class="ans-note">דבר — יְ– prefix + Dagesh R2 → Piel</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">10</td>
+    <td class="heb">הֻשְׁלַךְ</td>
+    <td><select class="f" id="10-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="10-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="10-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="10-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-10">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">הֻשְׁלַךְ</td>
+    <td><strong>Hophal</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">שׁלך — הֻ– prefix (Qibbuts) → Hophal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">11</td>
+    <td class="heb">מְדַבֵּר</td>
+    <td><select class="f" id="11-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="11-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="11-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="11-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-11">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מְדַבֵּר</td>
+    <td><strong>Piel</strong></td>
+    <td>Participle</td>
+    <td>ms</td>
+    <td class="ans-note">דבר — מְ– prefix + Dagesh R2 + Tsere → Piel</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">12</td>
+    <td class="heb">יַגְדִּיל</td>
+    <td><select class="f" id="12-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="12-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="12-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="12-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-12">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יַגְדִּיל</td>
+    <td><strong>Hiphil</strong></td>
+    <td>Imperfect</td>
+    <td>3ms</td>
+    <td class="ans-note">גדל — יַ– prefix + Hireq-Yod (ִיל) → Hiphil</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">13</td>
+    <td class="heb">שֹׁמֵר</td>
+    <td><select class="f" id="13-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="13-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="13-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="13-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-13">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">שֹׁמֵר</td>
+    <td><strong>Qal</strong></td>
+    <td>Participle</td>
+    <td>ms</td>
+    <td class="ans-note">שׁמר — Holem under R1, Tsere under R2 → Qal participle</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">14</td>
+    <td class="heb">נִכְתָּב</td>
+    <td><select class="f" id="14-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="14-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="14-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="14-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-14">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">נִכְתָּב</td>
+    <td><strong>Niphal</strong></td>
+    <td>Participle</td>
+    <td>ms</td>
+    <td class="ans-note">כתב — נִ– prefix → Niphal participle</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">15</td>
+    <td class="heb">יִתְפַּלֵּל</td>
+    <td><select class="f" id="15-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="15-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="15-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="15-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-15">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יִתְפַּלֵּל</td>
+    <td><strong>Hithpael</strong></td>
+    <td>Imperfect</td>
+    <td>3ms</td>
+    <td class="ans-note">פלל — יִתְ– prefix + Dagesh R2 → Hithpael</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">16</td>
+    <td class="heb">יְדֻבַּר</td>
+    <td><select class="f" id="16-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="16-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="16-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="16-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-16">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יְדֻבַּר</td>
+    <td><strong>Pual</strong></td>
+    <td>Imperfect</td>
+    <td>3ms</td>
+    <td class="ans-note">דבר — יְ– + Qibbuts R1 + Dagesh R2 → Pual</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">17</td>
+    <td class="heb">הִגְדִּיל</td>
+    <td><select class="f" id="17-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="17-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="17-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="17-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-17">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">הִגְדִּיל</td>
+    <td><strong>Hiphil</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">גדל — הִ– prefix + Hireq-Yod (ִיל) → Hiphil</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">18</td>
+    <td class="heb">מַגְדִּיל</td>
+    <td><select class="f" id="18-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="18-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="18-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="18-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-18">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מַגְדִּיל</td>
+    <td><strong>Hiphil</strong></td>
+    <td>Participle</td>
+    <td>ms</td>
+    <td class="ans-note">גדל — מַ– prefix + Hireq-Yod → Hiphil participle</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">19</td>
+    <td class="heb">וַיִּכְתֹּב</td>
+    <td><select class="f" id="19-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="19-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="19-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="19-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-19">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">וַיִּכְתֹּב</td>
+    <td><strong>Qal</strong></td>
+    <td>Wayyiqtol</td>
+    <td>3ms</td>
+    <td class="ans-note">כתב — Waw + Dagesh-Yiqtol, no stem prefix → Qal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">20</td>
+    <td class="heb">מִתְפַּלֵּל</td>
+    <td><select class="f" id="20-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="20-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="20-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="20-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-20">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מִתְפַּלֵּל</td>
+    <td><strong>Hithpael</strong></td>
+    <td>Participle</td>
+    <td>ms</td>
+    <td class="ans-note">פלל — מִתְ– prefix + Dagesh R2 → Hithpael participle</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">21</td>
+    <td class="heb">יֻשְׁלַךְ</td>
+    <td><select class="f" id="21-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="21-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="21-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="21-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(21)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-21">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">יֻשְׁלַךְ</td>
+    <td><strong>Hophal</strong></td>
+    <td>Imperfect</td>
+    <td>3ms</td>
+    <td class="ans-note">שׁלך — יֻ– prefix (Qibbuts) → Hophal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">22</td>
+    <td class="heb">נִקְדַּשׁ</td>
+    <td><select class="f" id="22-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="22-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="22-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="22-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(22)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-22">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">נִקְדַּשׁ</td>
+    <td><strong>Niphal</strong></td>
+    <td>Perfect</td>
+    <td>3ms</td>
+    <td class="ans-note">קדשׁ — נִ– prefix + Dagesh R1 → Niphal</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">23</td>
+    <td class="heb">מְדֻבָּר</td>
+    <td><select class="f" id="23-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="23-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="23-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="23-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(23)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-23">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מְדֻבָּר</td>
+    <td><strong>Pual</strong></td>
+    <td>Participle</td>
+    <td>ms</td>
+    <td class="ans-note">דבר — מְ– + Qibbuts R1 + Dagesh R2 → Pual</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">24</td>
+    <td class="heb">מֻשְׁלָךְ</td>
+    <td><select class="f" id="24-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="24-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="24-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="24-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(24)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-24">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">מֻשְׁלָךְ</td>
+    <td><strong>Hophal</strong></td>
+    <td>Participle</td>
+    <td>ms</td>
+    <td class="ans-note">שׁלך — מֻ– prefix (Qibbuts) → Hophal participle</td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td class="num">25</td>
+    <td class="heb">כָּתְבָה</td>
+    <td><select class="f" id="25-stem"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f" id="25-conj"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f" id="25-pgn"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><input class="f" id="25-root" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(25)">▶ Answer</button></td>
+  </tr>
+  <tr class="ans-row" id="ans-25">
+    <td class="ans-lbl">✓</td>
+    <td class="ans-heb">כָּתְבָה</td>
+    <td><strong>Qal</strong></td>
+    <td>Perfect</td>
+    <td>3fs</td>
+    <td class="ans-note">כתב — Pathach R1 + ָה suffix → Qal 3fs</td>
+    <td></td>
+  </tr>
+
+</table>
+
+<script>
+function tog(n) {
+  var row = document.getElementById('ans-' + n);
+  var btn = document.querySelectorAll('button.rbtn')[n - 1];
+  if (row.style.display === 'table-row') {
+    row.style.display = 'none';
+    btn.textContent = '▶ Answer';
+    btn.classList.remove('on');
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+    btn.classList.add('on');
+  }
+}
+function showAll() {
+  document.querySelectorAll('.ans-row').forEach(function(r) { r.style.display = 'table-row'; });
+  document.querySelectorAll('button.rbtn').forEach(function(b) { b.textContent = '▼ Hide'; b.classList.add('on'); });
+}
+function hideAll() {
+  document.querySelectorAll('.ans-row').forEach(function(r) { r.style.display = 'none'; });
+  document.querySelectorAll('button.rbtn').forEach(function(b) { b.textContent = '▶ Answer'; b.classList.remove('on'); });
+}
+function clearAll() {
+  document.querySelectorAll('input.f').forEach(function(i) { i.value = ''; });
+  document.querySelectorAll('select.f').forEach(function(s) { s.selectedIndex = 0; });
+}
+</script>
+
+</body>
+</html>
