@@ -6,6 +6,6 @@
 
 ## Agenda
 
-1. Prov 12:9 — Follow Up (15 min)
+1. Prov 12:9 — Follow Up (5 min)
 1. [Exercises](session-136/exercises.md) (90 min)
 1. [BBH Ch36 — Introduction to the Hebrew Bible](session-136/intro-to-hb.md) (30 min)
