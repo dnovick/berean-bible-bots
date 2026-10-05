@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 136 — Weak Root Pattern Identification</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@400;600&display=swap">
+<style>
+  body { font-family: Georgia, serif; max-width: 1000px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  .ref-table-wrap { margin: 1rem 0 1.5rem; }
+  .ref-table-wrap summary { cursor: pointer; font-weight: bold; color: #444; font-size: .92rem; }
+  .ref-table { border-collapse: collapse; width: 100%; font-size: .88rem; margin-top: .5rem; }
+  .ref-table th { background: #e8eef8; padding: .35rem .55rem; border: 1px solid #bbb; text-align: left; }
+  .ref-table td { padding: .3rem .55rem; border: 1px solid #ddd; vertical-align: top; }
+  .ref-table tr:nth-child(even) td { background: #f8f8ff; }
+  table.ex { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .91rem; }
+  th { background: #e0e8f0; padding: .4rem .55rem; border: 1px solid #bbb; text-align: left; font-size: .84rem; }
+  td { padding: .3rem .45rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 2rem; }
+  td.heb { font-family: 'Noto Serif Hebrew', 'SBL Hebrew', 'Times New Roman', serif; direction: rtl; unicode-bidi: embed; font-size: 1.5em; width: 7rem; text-align: right; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .4rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .22rem .3rem; font-family: Georgia, serif; font-size: .87rem; background: #fafff8; }
+  select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .87rem; color: #2a6e2a; padding: .28rem .45rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 2rem; text-align: center; }
+  .ans-heb { font-family: 'Noto Serif Hebrew', 'SBL Hebrew', 'Times New Roman', serif; direction: rtl; unicode-bidi: embed; font-size: 1.3em; width: 7rem; text-align: right; }
+  button.rbtn { font-size: .76rem; padding: .14rem .48rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  @media print {
+    .controls, button.rbtn, .ref-table-wrap summary { display: none; }
+    details.ref-table-wrap { display: block; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    select.f { border: none; border-bottom: 1px solid #aaa; appearance: none; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Session 136 — Weak Root Pattern Identification</h1>
+<p class="subtitle">BBH 2024.1 · Review · 20 items · All Major Weak Root Classes</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> Each form below is derived from a weak root. Identify the stem, conjugation, PGN, the weak root class that explains the form, and write the underlying three-letter root.
+</div>
+
+<details class="ref-table-wrap" open>
+  <summary>Quick Reference — Weak Root Diagnostics</summary>
+  <table class="ref-table">
+    <tr><th>Pattern</th><th>Key diagnostic</th></tr>
+    <tr><td>I-Guttural</td><td>No Dagesh in R1; Ḥateph or Pathaḥ instead of Shewa</td></tr>
+    <tr><td>II-Guttural</td><td>No Dagesh in R2; virtual doubling or compensatory lengthening</td></tr>
+    <tr><td>III-Aleph</td><td>Final א quiesces; preceding vowel lengthens</td></tr>
+    <tr><td>III-He</td><td>Final ה in perfect; He maps to other vowels in non-perfect</td></tr>
+    <tr><td>I-Nun</td><td>Dagesh Forte in prefix consonant (Nun assimilated)</td></tr>
+    <tr><td>I-Yod/Vav</td><td>Tsere (יֵ–) prefix in Qal Impf; Yod drops</td></tr>
+    <tr><td>Hollow (II-Vav/Yod)</td><td>No middle consonant; long stem vowel</td></tr>
+    <tr><td>Geminate</td><td>R2 = R3; contracted forms</td></tr>
+    <tr><td>I-Tet (Hithpael)</td><td>Tet and Taw of הִתְ assimilate: הִטַּ–</td></tr>
+    <tr><td>Sibilant Metathesis</td><td>Sibilant + הִתְ → הִשְׁתַּ / הִזְדַּ / etc.</td></tr>
+  </table>
+</details>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table class="ex">
+  <tr><th>#</th><th>Hebrew</th><th>Stem</th><th>Conjugation</th><th>PGN</th><th>Weak Pattern</th><th>Root</th><th></th></tr>
+
+  <tr><td class="num">1</td><td class="heb">יֵשֵׁב</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="ans-heb">יֵשֵׁב</td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td><td>I-Yod/Vav</td><td>ישׁב — Tsere prefix (יֵ–) = I-Yod; Yod drops</td><td></td></tr>
+
+  <tr><td class="num">2</td><td class="heb">בָּנָה</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="ans-heb">בָּנָה</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>III-He</td><td>בנה — Final ה = III-He root</td><td></td></tr>
+
+  <tr><td class="num">3</td><td class="heb">יִפֹּל</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="ans-heb">יִפֹּל</td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td><td>I-Nun</td><td>נפל — Dagesh in פ = assimilated Nun</td><td></td></tr>
+
+  <tr><td class="num">4</td><td class="heb">קָם</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">קָם</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>Hollow</td><td>קום — No middle consonant; Qamets holds place of Vav</td><td></td></tr>
+
+  <tr><td class="num">5</td><td class="heb">מָצָא</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">מָצָא</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>III-Aleph</td><td>מצא — Final א quiesces; vowel preserved</td><td></td></tr>
+
+  <tr><td class="num">6</td><td class="heb">עָמַד</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="ans-heb">עָמַד</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>I-Guttural</td><td>עמד — ע as R1 resists Dagesh; Ḥateph vowels in some forms</td><td></td></tr>
+
+  <tr><td class="num">7</td><td class="heb">הִטַּהֵר</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="ans-heb">הִטַּהֵר</td><td><strong>Hithpael</strong></td><td>Perfect</td><td>3ms</td><td>I-Tet (Hithpael)</td><td>טהר — הִתְ + ט → Taw assimilates to Tet: הִטַּ</td><td></td></tr>
+
+  <tr><td class="num">8</td><td class="heb">סָבַב</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">סָבַב</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>Geminate</td><td>סבב — R2 = R3 (both ב); Dagesh Forte in final letter</td><td></td></tr>
+
+  <tr><td class="num">9</td><td class="heb">בֵּרֵךְ</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="ans-heb">בֵּרֵךְ</td><td><strong>Piel</strong></td><td>Perfect</td><td>3ms</td><td>II-Guttural</td><td>ברך — ר (R2) resists Dagesh; virtual doubling → long Tsere</td><td></td></tr>
+
+  <tr><td class="num">10</td><td class="heb">הִגִּיד</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">הִגִּיד</td><td><strong>Hiphil</strong></td><td>Perfect</td><td>3ms</td><td>I-Nun</td><td>נגד — Dagesh in ג = Nun assimilated; Hireq-Yod = Hiphil</td><td></td></tr>
+
+  <tr><td class="num">11</td><td class="heb">יָשִׂים</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">יָשִׂים</td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td><td>Hollow</td><td>שׂים — No middle consonant; Shureq stem vowel in imperfect</td><td></td></tr>
+
+  <tr><td class="num">12</td><td class="heb">גָּלָה</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">גָּלָה</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>III-He</td><td>גלה — Final ה = III-He; Qamets-He ending</td><td></td></tr>
+
+  <tr><td class="num">13</td><td class="heb">יֵדַע</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(13)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-13"><td class="ans-lbl">✓</td><td class="ans-heb">יֵדַע</td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td><td>I-Yod/Vav</td><td>ידע — Tsere prefix (יֵ–) = I-Yod</td><td></td></tr>
+
+  <tr><td class="num">14</td><td class="heb">הִשְׁתַּחֲוָה</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(14)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-14"><td class="ans-lbl">✓</td><td class="ans-heb">הִשְׁתַּחֲוָה</td><td><strong>Hithpael</strong></td><td>Perfect</td><td>3ms</td><td>Sibilant Metathesis</td><td>שׁחה — הִתְ + שׁ → Shin and Taw switch: הִשְׁתַּ</td><td></td></tr>
+
+  <tr><td class="num">15</td><td class="heb">יִתֵּן</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(15)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-15"><td class="ans-lbl">✓</td><td class="ans-heb">יִתֵּן</td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td><td>I-Nun</td><td>נתן — Dagesh in ת = assimilated Nun (I-Nun doubly weak)</td><td></td></tr>
+
+  <tr><td class="num">16</td><td class="heb">קָרָא</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(16)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-16"><td class="ans-lbl">✓</td><td class="ans-heb">קָרָא</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>III-Aleph</td><td>קרא — Final א quiesces; Qamets-Aleph pattern</td><td></td></tr>
+
+  <tr><td class="num">17</td><td class="heb">הֶחֱזִיק</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(17)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-17"><td class="ans-lbl">✓</td><td class="ans-heb">הֶחֱזִיק</td><td><strong>Hiphil</strong></td><td>Perfect</td><td>3ms</td><td>I-Guttural</td><td>חזק — ח (R1): Hiphil prefix takes Seghol before guttural; Ḥateph Seghol under ח</td><td></td></tr>
+
+  <tr><td class="num">18</td><td class="heb">יָסֹב</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(18)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-18"><td class="ans-lbl">✓</td><td class="ans-heb">יָסֹב</td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td><td>Geminate</td><td>סבב — Geminate Qal Impf: contracted form; Qamets + Holem</td><td></td></tr>
+
+  <tr><td class="num">19</td><td class="heb">יִבְנֶה</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(19)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-19"><td class="ans-lbl">✓</td><td class="ans-heb">יִבְנֶה</td><td><strong>Qal</strong></td><td>Imperfect</td><td>3ms</td><td>III-He</td><td>בנה — Final ה root; Seghol ending in impf 3ms</td><td></td></tr>
+
+  <tr><td class="num">20</td><td class="heb">אָהַב</td>
+    <td><select class="f"><option value="">—</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Imperative</option><option>Participle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>I-Guttural</option><option>II-Guttural</option><option>III-Aleph</option><option>III-He</option><option>I-Nun</option><option>I-Yod/Vav</option><option>Hollow</option><option>Geminate</option><option>I-Tet (Hithpael)</option><option>Sibilant Metathesis</option></select></td>
+    <td><input class="f" placeholder="root"></td>
+    <td><button class="rbtn" onclick="tog(20)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-20"><td class="ans-lbl">✓</td><td class="ans-heb">אָהַב</td><td><strong>Qal</strong></td><td>Perfect</td><td>3ms</td><td>I-Guttural</td><td>אהב — א (R1) guttural; Pathaḥ under R1; quiescent in some forms</td><td></td></tr>
+
+</table>
+
+<script>
+function tog(n) {
+  var row = document.getElementById('ans-' + n);
+  var btn = row.previousElementSibling.cells[row.previousElementSibling.cells.length - 1].querySelector('button');
+  if (row.style.display === 'table-row') {
+    row.style.display = '';
+    btn.textContent = '▶ Answer';
+    btn.classList.remove('on');
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+    btn.classList.add('on');
+  }
+}
+function showAll() {
+  for (var i = 1; i <= 20; i++) {
+    var row = document.getElementById('ans-' + i);
+    if (row) {
+      row.style.display = 'table-row';
+      var btn = row.previousElementSibling.cells[row.previousElementSibling.cells.length - 1].querySelector('button');
+      if (btn) { btn.textContent = '▼ Hide'; btn.classList.add('on'); }
+    }
+  }
+}
+function hideAll() {
+  for (var i = 1; i <= 20; i++) {
+    var row = document.getElementById('ans-' + i);
+    if (row) {
+      row.style.display = '';
+      var btn = row.previousElementSibling.cells[row.previousElementSibling.cells.length - 1].querySelector('button');
+      if (btn) { btn.textContent = '▶ Answer'; btn.classList.remove('on'); }
+    }
+  }
+}
+function clearAll() {
+  document.querySelectorAll('input.f').forEach(function(el) { el.value = ''; });
+  document.querySelectorAll('select.f').forEach(function(el) { el.selectedIndex = 0; });
+}
+</script>
+</body>
+</html>

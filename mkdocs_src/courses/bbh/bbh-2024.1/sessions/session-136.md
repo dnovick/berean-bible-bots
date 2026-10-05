@@ -6,4 +6,4 @@
 
 ## Agenda
 
-1. [Exercises](session-136/exercises.md) (50 min)
+1. [Exercises](session-136/exercises.md) (90 min)
