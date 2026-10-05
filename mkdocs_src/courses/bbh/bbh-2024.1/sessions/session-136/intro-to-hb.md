@@ -45,6 +45,12 @@ The most important perpetual Kethiv-Qere:
 |---|---|---|
 | יהוה | אֲדֹנָי | Not pronounced out of reverence; vowels of אֲדֹנָי placed under יהוה → יְהוָה |
 
+### Example: Genesis 8:17 in BHS
+
+The yellow box marks the Kethiv form in the main text; the arrow points to the corresponding Qere reading in the outer margin.
+
+![BHS page showing Kethiv-Qere in Gen 8:17](../../../../../images/bhs-gen-0817-annotated.jpeg)
+
 ---
 
 ## Textual Apparatus
