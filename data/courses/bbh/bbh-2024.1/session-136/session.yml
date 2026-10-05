@@ -23,10 +23,8 @@ focus: "Review"
 instructor: "David Novick"
 
 agenda:
-  - title: "Stem Identification Drill"
-    duration: "20 min"
-  - title: "Full Parsing — Psalm 119 and Pentateuch"
-    duration: "30 min"
+  - title: "Exercises"
+    duration: "50 min"
 
 exercises:
   - name: "Stem Identification Drill"

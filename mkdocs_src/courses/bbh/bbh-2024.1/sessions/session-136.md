@@ -6,5 +6,4 @@
 
 ## Agenda
 
-1. Stem Identification Drill (20 min)
-1. Full Parsing — Psalm 119 and Pentateuch (30 min)
+1. [Exercises](session-136/exercises.md) (50 min)
