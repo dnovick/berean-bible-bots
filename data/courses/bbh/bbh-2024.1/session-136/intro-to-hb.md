@@ -1,0 +1,68 @@
+# BBH Ch36 — Introduction to the Hebrew Bible
+
+A brief orientation to reading the Hebrew Bible: the Masoretic apparatus, pausal forms, Kethiv-Qere, and the textual apparatus of BHS.
+
+---
+
+## Pausal Forms
+
+*Placeholder — to be filled in during session.*
+
+Words occurring at the major points of verse division (under the Athnach or Silluq accent) are said to be "in pause." Common spelling changes in pausal position:
+
+| Pausal change | Example |
+|---|---|
+| Pathach → Qamets | עַם → עָם |
+| Seghol → Qamets (Segholate nouns) | אֶ֫רֶץ → אָ֫רֶץ |
+| 2ms suffix Shewa → Seghol | סוּסְךָ → סוּסֶ֫ךָ |
+| Accent shift: Vocal Shewa → Qamets | כָּֽתְבָה → כָּתָ֫בָה |
+
+---
+
+## Masorah
+
+*Placeholder — to be filled in during session.*
+
+The Masoretes (6th–10th c. AD) added three layers of annotation to the consonantal text:
+
+| Layer | Location | Content |
+|---|---|---|
+| Masorah parva (Mp) | Outer side margins | Word-use statistics; Kethiv-Qere signals |
+| Masorah magna (Mm) | Top and bottom margins | Expanded Mp entries (register in BHS) |
+| Final Masorah | End of books/sections | Verse/word/letter counts; midpoint data |
+
+---
+
+## Kethiv-Qere
+
+*Placeholder — to be filled in during session.*
+
+The **Kethiv** (כְּתִיב, "what is written") is the consonantal text as it stands. The **Qere** (קְרֵי, "what is to be read") is the Masoretic correction, signaled by a small circle in the text and the Qere consonants in the margin (marked ק֗).
+
+The most important perpetual Kethiv-Qere:
+
+| Kethiv | Qere | Notes |
+|---|---|---|
+| יהוה | אֲדֹנָי | Not pronounced out of reverence; vowels of אֲדֹנָי placed under יהוה → יְהוָה |
+
+---
+
+## Textual Apparatus
+
+*Placeholder — to be filled in during session.*
+
+The textual apparatus appears at the bottom of each BHS page. It contains:
+- Significant textual variants from other ancient manuscripts (LXX, Peshitta, Vulgate, Targums)
+- Conjectural emendations by the BHS editors
+- Notes on full/defective spelling
+
+**Key categories of textual error:**
+
+| Type | Description |
+|---|---|
+| Unintentional | Letter confusion, haplography, dittography, word division errors |
+| Intentional | Theological euphemisms, anti-anthropomorphisms, glosses |
+
+**Purpose of textual criticism:**
+1. Reconstruct the text as close to the autograph as the evidence allows
+2. Document the history of textual transmission

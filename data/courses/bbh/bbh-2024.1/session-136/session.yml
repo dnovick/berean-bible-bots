@@ -25,6 +25,8 @@ instructor: "David Novick"
 agenda:
   - title: "Exercises"
     duration: "90 min"
+  - title: "BBH Ch36 — Introduction to the Hebrew Bible"
+    duration: "30 min"
 
 exercises:
   - name: "Stem Identification Drill"
@@ -41,5 +43,7 @@ exercises:
     desc: "Parse 12 content words from Genesis 1:1–3 by word type, stem, inflection, gender/number, state, and root."
 
 sections:
+  - heading: "BBH Ch36 — Introduction to the Hebrew Bible"
+    file: "intro-to-hb.md"
 
 notes: ""
