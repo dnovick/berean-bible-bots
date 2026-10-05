@@ -196,6 +196,142 @@ class FullParsingPDF(ExercisePDF):
 
 
 # ---------------------------------------------------------------------------
+# Exercise 3 — Weak Root Pattern ID (20 items)
+# ---------------------------------------------------------------------------
+
+WEAK_ROOT_ROWS = [
+    ['1',  'יֵשֵׁב',        '', '', '', '', ''],
+    ['2',  'בָּנָה',         '', '', '', '', ''],
+    ['3',  'יִפֹּל',         '', '', '', '', ''],
+    ['4',  'קָם',            '', '', '', '', ''],
+    ['5',  'מָצָא',          '', '', '', '', ''],
+    ['6',  'עָמַד',          '', '', '', '', ''],
+    ['7',  'הִטַּהֵר',       '', '', '', '', ''],
+    ['8',  'סָבַב',          '', '', '', '', ''],
+    ['9',  'בֵּרֵךְ',        '', '', '', '', ''],
+    ['10', 'הִגִּיד',        '', '', '', '', ''],
+    ['11', 'יָשִׂים',        '', '', '', '', ''],
+    ['12', 'גָּלָה',         '', '', '', '', ''],
+    ['13', 'יֵדַע',          '', '', '', '', ''],
+    ['14', 'הִשְׁתַּחֲוָה',  '', '', '', '', ''],
+    ['15', 'יִתֵּן',         '', '', '', '', ''],
+    ['16', 'קָרָא',          '', '', '', '', ''],
+    ['17', 'הֶחֱזִיק',       '', '', '', '', ''],
+    ['18', 'יָסֹב',          '', '', '', '', ''],
+    ['19', 'יִבְנֶה',        '', '', '', '', ''],
+    ['20', 'אָהַב',          '', '', '', '', ''],
+]
+
+WEAK_ROOT_ANSWERS = [
+    ['1',  'יֵשֵׁב',        'Qal',      'Imperfect', '3ms', 'I-Yod/Vav',         'ישׁב'],
+    ['2',  'בָּנָה',         'Qal',      'Perfect',   '3ms', 'III-He',             'בנה'],
+    ['3',  'יִפֹּל',         'Qal',      'Imperfect', '3ms', 'I-Nun',              'נפל'],
+    ['4',  'קָם',            'Qal',      'Perfect',   '3ms', 'Hollow',             'קום'],
+    ['5',  'מָצָא',          'Qal',      'Perfect',   '3ms', 'III-Aleph',          'מצא'],
+    ['6',  'עָמַד',          'Qal',      'Perfect',   '3ms', 'I-Guttural',         'עמד'],
+    ['7',  'הִטַּהֵר',       'Hithpael', 'Perfect',   '3ms', 'I-Tet (Hithpael)',   'טהר'],
+    ['8',  'סָבַב',          'Qal',      'Perfect',   '3ms', 'Geminate',           'סבב'],
+    ['9',  'בֵּרֵךְ',        'Piel',     'Perfect',   '3ms', 'II-Guttural',        'ברך'],
+    ['10', 'הִגִּיד',        'Hiphil',   'Perfect',   '3ms', 'I-Nun',              'נגד'],
+    ['11', 'יָשִׂים',        'Qal',      'Imperfect', '3ms', 'Hollow',             'שׂים'],
+    ['12', 'גָּלָה',         'Qal',      'Perfect',   '3ms', 'III-He',             'גלה'],
+    ['13', 'יֵדַע',          'Qal',      'Imperfect', '3ms', 'I-Yod/Vav',         'ידע'],
+    ['14', 'הִשְׁתַּחֲוָה',  'Hithpael', 'Perfect',   '3ms', 'Sibilant Metathesis', 'שׁחה'],
+    ['15', 'יִתֵּן',         'Qal',      'Imperfect', '3ms', 'I-Nun',              'נתן'],
+    ['16', 'קָרָא',          'Qal',      'Perfect',   '3ms', 'III-Aleph',          'קרא'],
+    ['17', 'הֶחֱזִיק',       'Hiphil',   'Perfect',   '3ms', 'I-Guttural',         'חזק'],
+    ['18', 'יָסֹב',          'Qal',      'Imperfect', '3ms', 'Geminate',           'סבב'],
+    ['19', 'יִבְנֶה',        'Qal',      'Imperfect', '3ms', 'III-He',             'בנה'],
+    ['20', 'אָהַב',          'Qal',      'Perfect',   '3ms', 'I-Guttural',         'אהב'],
+]
+
+
+class WeakRootIdPDF(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'Each form is derived from a weak root. Identify the stem, conjugation, PGN, '
+            'weak root class, and write the underlying three-letter root.'
+        )
+        self.add_section_heading('Exercise — 20 items')
+        self.add_generic_table(
+            headers=['#', 'Hebrew', 'Stem', 'Conj.', 'PGN', 'Weak Pattern', 'Root'],
+            rows=WEAK_ROOT_ROWS,
+            col_ratios=[0.04, 0.14, 0.10, 0.14, 0.09, 0.22, 0.27],
+            heb_cols=[1],
+            show_answers=False,
+        )
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(
+            headers=['#', 'Hebrew', 'Stem', 'Conj.', 'PGN', 'Weak Pattern', 'Root'],
+            rows=WEAK_ROOT_ANSWERS,
+            col_ratios=[0.04, 0.14, 0.10, 0.14, 0.09, 0.22, 0.27],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=WEAK_ROOT_ANSWERS,
+        )
+
+
+# ---------------------------------------------------------------------------
+# Exercise 4 — Mixed Parsing: Genesis 1:1–3 (12 items)
+# ---------------------------------------------------------------------------
+
+MIXED_PARSING_ROWS = [
+    ['1',  'בְּרֵאשִׁית',   '', '', '', '', '', '', ''],
+    ['2',  'בָּרָא',         '', '', '', '', '', '', ''],
+    ['3',  'אֱלֹהִים',       '', '', '', '', '', '', ''],
+    ['4',  'הַשָּׁמַיִם',    '', '', '', '', '', '', ''],
+    ['5',  'הָאָרֶץ',        '', '', '', '', '', '', ''],
+    ['6',  'הָיְתָה',        '', '', '', '', '', '', ''],
+    ['7',  'תֹהוּ',          '', '', '', '', '', '', ''],
+    ['8',  'חֹשֶׁךְ',        '', '', '', '', '', '', ''],
+    ['9',  'פְּנֵי',         '', '', '', '', '', '', ''],
+    ['10', 'רוּחַ',          '', '', '', '', '', '', ''],
+    ['11', 'מְרַחֶפֶת',      '', '', '', '', '', '', ''],
+    ['12', 'וַיֹּאמֶר',      '', '', '', '', '', '', ''],
+]
+
+MIXED_PARSING_ANSWERS = [
+    ['1',  'בְּרֵאשִׁית',   'Noun',       'N/A',  'Construct',  'fs',  'Construct', 'ראשׁ',   'in the beginning'],
+    ['2',  'בָּרָא',         'Verb',       'Qal',  'Perfect',    '3ms', 'N/A',       'ברא',    'created'],
+    ['3',  'אֱלֹהִים',       'Noun',       'N/A',  'Absolute',   'mp',  'Absolute',  'אֱלֹהִים', 'God'],
+    ['4',  'הַשָּׁמַיִם',    'Noun',       'N/A',  'Absolute',   'mp',  'Absolute',  'שָׁמַיִם', 'the heavens'],
+    ['5',  'הָאָרֶץ',        'Noun',       'N/A',  'Absolute',   'fs',  'Absolute',  'אֶרֶץ',  'the earth'],
+    ['6',  'הָיְתָה',        'Verb',       'Qal',  'Perfect',    '3fs', 'N/A',       'היה',    'was'],
+    ['7',  'תֹהוּ',          'Noun',       'N/A',  'Absolute',   'ms',  'Absolute',  'תֹּהוּ', 'formlessness'],
+    ['8',  'חֹשֶׁךְ',        'Noun',       'N/A',  'Absolute',   'ms',  'Absolute',  'חשׁך',   'darkness'],
+    ['9',  'פְּנֵי',         'Noun',       'N/A',  'Construct',  'mp',  'Construct', 'פָּנִים', 'face of'],
+    ['10', 'רוּחַ',          'Noun',       'N/A',  'Absolute',   'fs',  'Absolute',  'רוּחַ',  'spirit/wind'],
+    ['11', 'מְרַחֶפֶת',      'Participle', 'Piel', 'Participle', 'fs',  'N/A',       'רחף',    'hovering'],
+    ['12', 'וַיֹּאמֶר',      'Verb',       'Qal',  'Wayyiqtol',  '3ms', 'N/A',       'אמר',    'and he said'],
+]
+
+
+class MixedParsingPDF(ExercisePDF):
+    def _build(self) -> None:
+        self.add_instructions(
+            'Parse each word from Genesis 1:1–3: word type, stem, conjugation/inflection, '
+            'PGN/GN, state, root/lemma, and gloss.'
+        )
+        self.add_section_heading('Exercise — 12 items')
+        self.add_generic_table(
+            headers=['#', 'Hebrew', 'Type', 'Stem', 'Conj/Infl', 'PGN/GN', 'State', 'Root', 'Gloss'],
+            rows=MIXED_PARSING_ROWS,
+            col_ratios=[0.04, 0.12, 0.10, 0.08, 0.12, 0.09, 0.10, 0.12, 0.23],
+            heb_cols=[1],
+            show_answers=False,
+        )
+        self.add_section_heading('Answer Key')
+        self.add_generic_table(
+            headers=['#', 'Hebrew', 'Type', 'Stem', 'Conj/Infl', 'PGN/GN', 'State', 'Root', 'Gloss'],
+            rows=MIXED_PARSING_ANSWERS,
+            col_ratios=[0.04, 0.12, 0.10, 0.08, 0.12, 0.09, 0.10, 0.12, 0.23],
+            heb_cols=[1],
+            show_answers=True,
+            answer_rows=MIXED_PARSING_ANSWERS,
+        )
+
+
+# ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
@@ -215,6 +351,14 @@ def main() -> None:
          'Session 136 — Full Parsing: Psalm 119 and Pentateuch',
          'BBH 2024.1 · Review · 25 items · All Seven Stems',
          'session136-full-parsing'),
+        (WeakRootIdPDF,
+         'Session 136 — Weak Root Pattern Identification',
+         'BBH 2024.1 · Review · 20 items · All Major Weak Root Classes',
+         'session136-weak-root-id'),
+        (MixedParsingPDF,
+         'Session 136 — Mixed Parsing: Genesis 1:1–3',
+         'BBH 2024.1 · Review · 12 items · Nouns, Verbs, Participle',
+         'session136-mixed-parsing'),
     ]
 
     for klass, title, subtitle, name in exercises:

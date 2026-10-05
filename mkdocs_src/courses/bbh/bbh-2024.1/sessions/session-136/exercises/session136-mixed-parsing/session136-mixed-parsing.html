@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Session 136 — Mixed Parsing: Genesis 1:1–3</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Hebrew:wght@400;600&display=swap">
+<style>
+  body { font-family: Georgia, serif; max-width: 1100px; margin: 2rem auto; padding: 0 1.5rem; color: #222; line-height: 1.6; }
+  h1 { font-size: 1.45rem; border-bottom: 2px solid #555; padding-bottom: .4rem; }
+  .subtitle { color: #666; font-style: italic; margin-top: -.4rem; }
+  .instructions { background: #f8f8f0; border-left: 4px solid #bbb; padding: .75rem 1rem; margin: 1rem 0; font-size: .92rem; }
+  .passage { background: #fdf8ef; border: 1px solid #d4c89a; border-radius: 4px; padding: 1rem 1.4rem; margin: 1rem 0 1.5rem; }
+  .passage p { font-family: 'Noto Serif Hebrew', 'SBL Hebrew', 'Times New Roman', serif; direction: rtl; unicode-bidi: embed; font-size: 1.25rem; line-height: 2; text-align: right; margin: 0; }
+  .passage .ref { font-family: Georgia, serif; direction: ltr; font-size: .82rem; color: #888; text-align: left; margin-top: .3rem; }
+  table { border-collapse: collapse; width: 100%; margin: .4rem 0; font-size: .88rem; }
+  th { background: #e0e8f0; padding: .4rem .5rem; border: 1px solid #bbb; text-align: left; font-size: .82rem; }
+  td { padding: .28rem .4rem; border: 1px solid #ddd; vertical-align: middle; }
+  td.num { text-align: center; font-weight: bold; color: #666; width: 1.8rem; }
+  td.heb { font-family: 'Noto Serif Hebrew', 'SBL Hebrew', 'Times New Roman', serif; direction: rtl; unicode-bidi: embed; font-size: 1.4em; width: 7.5rem; text-align: right; }
+  input.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .2rem .35rem; font-family: Georgia, serif; font-size: .86rem; background: #fafff8; }
+  input.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  select.f { width: 100%; box-sizing: border-box; border: 1px solid #bbb; border-radius: 3px; padding: .2rem .28rem; font-family: Georgia, serif; font-size: .86rem; background: #fafff8; }
+  select.f:focus { outline: none; border-color: #5a9; box-shadow: 0 0 0 2px #c8ecd4; }
+  .ans-row { display: none; background: #f0faf0; }
+  .ans-row td { font-size: .86rem; color: #2a6e2a; padding: .26rem .4rem; }
+  .ans-lbl { font-weight: bold; color: #1a5c1a; width: 1.8rem; text-align: center; }
+  .ans-heb { font-family: 'Noto Serif Hebrew', 'SBL Hebrew', 'Times New Roman', serif; direction: rtl; unicode-bidi: embed; font-size: 1.3em; width: 7.5rem; text-align: right; }
+  button.rbtn { font-size: .75rem; padding: .12rem .44rem; cursor: pointer; background: #e8f4ec; border: 1px solid #7bba8f; border-radius: 3px; color: #2a6e2a; white-space: nowrap; }
+  button.rbtn:hover, button.rbtn.on { background: #c8ecd4; }
+  .controls { display: flex; gap: .7rem; flex-wrap: wrap; margin: 1rem 0 1.5rem; }
+  .controls button { padding: .38rem .85rem; cursor: pointer; border-radius: 4px; font-size: .88rem; border: 1px solid #999; background: #f0f0f0; color: #333; }
+  .controls button:hover { background: #ddd; }
+  .clr { border-color: #c06060 !important; color: #8b0000 !important; background: #fff0f0 !important; }
+  .clr:hover { background: #ffd8d8 !important; }
+  @media print {
+    .controls, button.rbtn { display: none; }
+    input.f { border: none; border-bottom: 1px solid #aaa; border-radius: 0; background: transparent; }
+    select.f { border: none; border-bottom: 1px solid #aaa; appearance: none; }
+    .ans-row { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<h1>Session 136 — Mixed Parsing: Genesis 1:1–3</h1>
+<p class="subtitle">BBH 2024.1 · Review · 12 items · Nouns, Verbs, Participle</p>
+
+<div class="instructions">
+  <strong>Instructions:</strong> The passage Genesis 1:1–3 is printed below. Parse each highlighted word: identify its word type, stem (for verbs/participles), conjugation or inflection, gender/number, state (for nouns), and give the root or lemma and a brief gloss.
+</div>
+
+<div class="passage">
+  <p>בְּרֵאשִׁית בָּרָא אֱלֹהִים אֵת הַשָּׁמַיִם וְאֵת הָאָרֶץ׃</p>
+  <p>וְהָאָרֶץ הָיְתָה תֹהוּ וָבֹהוּ וְחֹשֶׁךְ עַל־פְּנֵי תְהוֹם</p>
+  <p>וְרוּחַ אֱלֹהִים מְרַחֶפֶת עַל־פְּנֵי הַמָּיִם׃</p>
+  <p>וַיֹּאמֶר אֱלֹהִים יְהִי אוֹר וַיְהִי אוֹר׃</p>
+  <div class="ref">Genesis 1:1–3</div>
+</div>
+
+<div class="controls">
+  <button onclick="showAll()">Show All Answers</button>
+  <button onclick="hideAll()">Hide All Answers</button>
+  <button class="clr" onclick="clearAll()">Clear All Inputs</button>
+</div>
+
+<table>
+  <tr><th>#</th><th>Hebrew</th><th>Word Type</th><th>Stem</th><th>Conj./Inflection</th><th>PGN/GN</th><th>State</th><th>Root/Lemma</th><th>Gloss</th><th></th></tr>
+
+  <tr><td class="num">1</td><td class="heb">בְּרֵאשִׁית</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(1)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-1"><td class="ans-lbl">✓</td><td class="ans-heb">בְּרֵאשִׁית</td><td><strong>Noun</strong></td><td>N/A</td><td>Construct</td><td>fs</td><td>Construct</td><td>ראשׁ</td><td>in the beginning — בְּ prep + noun in construct</td><td></td></tr>
+
+  <tr><td class="num">2</td><td class="heb">בָּרָא</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(2)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-2"><td class="ans-lbl">✓</td><td class="ans-heb">בָּרָא</td><td><strong>Verb</strong></td><td>Qal</td><td>Perfect</td><td>3ms</td><td>N/A</td><td>ברא</td><td>created</td><td></td></tr>
+
+  <tr><td class="num">3</td><td class="heb">אֱלֹהִים</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(3)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-3"><td class="ans-lbl">✓</td><td class="ans-heb">אֱלֹהִים</td><td><strong>Noun</strong></td><td>N/A</td><td>Absolute</td><td>mp</td><td>Absolute</td><td>אֱלֹהִים</td><td>God — plural of majesty</td><td></td></tr>
+
+  <tr><td class="num">4</td><td class="heb">הַשָּׁמַיִם</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(4)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-4"><td class="ans-lbl">✓</td><td class="ans-heb">הַשָּׁמַיִם</td><td><strong>Noun</strong></td><td>N/A</td><td>Absolute</td><td>mp</td><td>Absolute</td><td>שָׁמַיִם</td><td>the heavens — definite article הַ + Dagesh in שׁ</td><td></td></tr>
+
+  <tr><td class="num">5</td><td class="heb">הָאָרֶץ</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(5)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-5"><td class="ans-lbl">✓</td><td class="ans-heb">הָאָרֶץ</td><td><strong>Noun</strong></td><td>N/A</td><td>Absolute</td><td>fs</td><td>Absolute</td><td>אֶרֶץ</td><td>the earth — הָ article before aleph (guttural, no Dagesh)</td><td></td></tr>
+
+  <tr><td class="num">6</td><td class="heb">הָיְתָה</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(6)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-6"><td class="ans-lbl">✓</td><td class="ans-heb">הָיְתָה</td><td><strong>Verb</strong></td><td>Qal</td><td>Perfect</td><td>3fs</td><td>N/A</td><td>היה</td><td>was — III-He root; feminine ָה suffix</td><td></td></tr>
+
+  <tr><td class="num">7</td><td class="heb">תֹהוּ</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(7)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-7"><td class="ans-lbl">✓</td><td class="ans-heb">תֹהוּ</td><td><strong>Noun</strong></td><td>N/A</td><td>Absolute</td><td>ms</td><td>Absolute</td><td>תֹּהוּ</td><td>formlessness/waste — part of the phrase תֹהוּ וָבֹהוּ</td><td></td></tr>
+
+  <tr><td class="num">8</td><td class="heb">חֹשֶׁךְ</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(8)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-8"><td class="ans-lbl">✓</td><td class="ans-heb">חֹשֶׁךְ</td><td><strong>Noun</strong></td><td>N/A</td><td>Absolute</td><td>ms</td><td>Absolute</td><td>חשׁך</td><td>darkness</td><td></td></tr>
+
+  <tr><td class="num">9</td><td class="heb">פְּנֵי</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(9)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-9"><td class="ans-lbl">✓</td><td class="ans-heb">פְּנֵי</td><td><strong>Noun</strong></td><td>N/A</td><td>Construct</td><td>mp</td><td>Construct</td><td>פָּנִים</td><td>face of — plurale tantum in construct; Tsere-Yod = construct mp</td><td></td></tr>
+
+  <tr><td class="num">10</td><td class="heb">רוּחַ</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(10)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-10"><td class="ans-lbl">✓</td><td class="ans-heb">רוּחַ</td><td><strong>Noun</strong></td><td>N/A</td><td>Absolute</td><td>fs</td><td>Absolute</td><td>רוּחַ</td><td>spirit/wind — III-guttural (ח); can be ms or fs</td><td></td></tr>
+
+  <tr><td class="num">11</td><td class="heb">מְרַחֶפֶת</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(11)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-11"><td class="ans-lbl">✓</td><td class="ans-heb">מְרַחֶפֶת</td><td><strong>Participle</strong></td><td>Piel</td><td>Participle</td><td>fs</td><td>N/A</td><td>רחף</td><td>hovering — מְ prefix + Pathaḥ R1 + II-guttural (ח); fs ending ֶפֶת</td><td></td></tr>
+
+  <tr><td class="num">12</td><td class="heb">וַיֹּאמֶר</td>
+    <td><select class="f"><option value="">—</option><option>Verb</option><option>Noun</option><option>Adjective</option><option>Participle</option><option>Pronoun</option><option>Conjunction</option><option>Preposition</option><option>Particle</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Qal</option><option>Niphal</option><option>Piel</option><option>Pual</option><option>Hiphil</option><option>Hophal</option><option>Hithpael</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Perfect</option><option>Imperfect</option><option>Wayyiqtol</option><option>Participle</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>3ms</option><option>3fs</option><option>3cp</option><option>2ms</option><option>2fs</option><option>2mp</option><option>2fp</option><option>1cs</option><option>1cp</option><option>ms</option><option>fs</option><option>mp</option><option>fp</option></select></td>
+    <td><select class="f"><option value="">—</option><option>N/A</option><option>Absolute</option><option>Construct</option><option>with-Suffix</option></select></td>
+    <td><input class="f" placeholder="root/lemma"></td>
+    <td><input class="f" placeholder="gloss"></td>
+    <td><button class="rbtn" onclick="tog(12)">▶ Answer</button></td></tr>
+  <tr class="ans-row" id="ans-12"><td class="ans-lbl">✓</td><td class="ans-heb">וַיֹּאמֶר</td><td><strong>Verb</strong></td><td>Qal</td><td>Wayyiqtol</td><td>3ms</td><td>N/A</td><td>אמר</td><td>and he said — I-aleph quiesces; Holem on Yod</td><td></td></tr>
+
+</table>
+
+<script>
+function tog(n) {
+  var row = document.getElementById('ans-' + n);
+  var btn = row.previousElementSibling.cells[row.previousElementSibling.cells.length - 1].querySelector('button');
+  if (row.style.display === 'table-row') {
+    row.style.display = '';
+    btn.textContent = '▶ Answer';
+    btn.classList.remove('on');
+  } else {
+    row.style.display = 'table-row';
+    btn.textContent = '▼ Hide';
+    btn.classList.add('on');
+  }
+}
+function showAll() {
+  for (var i = 1; i <= 12; i++) {
+    var row = document.getElementById('ans-' + i);
+    if (row) {
+      row.style.display = 'table-row';
+      var btn = row.previousElementSibling.cells[row.previousElementSibling.cells.length - 1].querySelector('button');
+      if (btn) { btn.textContent = '▼ Hide'; btn.classList.add('on'); }
+    }
+  }
+}
+function hideAll() {
+  for (var i = 1; i <= 12; i++) {
+    var row = document.getElementById('ans-' + i);
+    if (row) {
+      row.style.display = '';
+      var btn = row.previousElementSibling.cells[row.previousElementSibling.cells.length - 1].querySelector('button');
+      if (btn) { btn.textContent = '▶ Answer'; btn.classList.remove('on'); }
+    }
+  }
+}
+function clearAll() {
+  document.querySelectorAll('input.f').forEach(function(el) { el.value = ''; });
+  document.querySelectorAll('select.f').forEach(function(el) { el.selectedIndex = 0; });
+}
+</script>
+</body>
+</html>
