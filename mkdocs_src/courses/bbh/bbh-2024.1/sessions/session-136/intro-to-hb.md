@@ -8,12 +8,12 @@ A brief orientation to reading the Hebrew Bible: the Masoretic apparatus, pausal
 
 Words occurring at the major points of verse division (under the Athnach or Silluq accent) are said to be "in pause." Common spelling changes in pausal position:
 
-| Pausal change | Example |
-|---|---|
-| Pathach → Qamets | עַם → עָם |
-| Seghol → Qamets (Segholate nouns) | אֶ֫רֶץ → אָ֫רֶץ |
-| 2ms suffix Shewa → Seghol | סוּסְךָ → סוּסֶ֫ךָ |
-| Accent shift: Vocal Shewa → Qamets | כָּֽתְבָה → כָּתָ֫בָה |
+| Pausal change | Example | References |
+|---|---|---|
+| Pathach → Qamets | עַם → עָם | Ps 23:1 (אֶחְסָֽר, Silluq); Isa 40:28 (יִיגָ֑ע, Athnach) |
+| Seghol → Qamets (Segholate nouns) | אֶ֫רֶץ → אָ֫רֶץ | Gen 1:1 (הָאָ֑רֶץ, Silluq); Ps 33:5 (הָאָ֑רֶץ, Athnach) |
+| 2ms suffix Shewa → Seghol | סוּסְךָ → סוּסֶ֫ךָ | Ps 23:4 (מִשְׁעַנְתֶּ֑ךָ, Athnach); Deut 6:5 (מְאֹדֶֽךָ, Silluq) |
+| Accent shift: Vocal Shewa → Qamets | כָּֽתְבָה → כָּתָ֫בָה | Ps 45:2 (רָחַ֣שׁ, Athnach); Lam 1:1 (יָשְׁבָ֣ה, Tiphcha) |
 
 ---
 
