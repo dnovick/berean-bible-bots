@@ -45,6 +45,19 @@ The yellow box marks the Kethiv form in the main text; the arrow points to the c
 
 ![BHS page showing Kethiv-Qere in Gen 8:17](../../../../../images/bhs-gen-0817-annotated.jpeg)
 
+### Other Notable Kethiv-Qere Occurrences
+
+1. **יהוה → אֲדֹנָי** (throughout the OT) — The defining perpetual Qere. Consonants of the divine name remain in the text; the vowels and reading of אֲדֹנָי replace them. Where יהוה follows אֲדֹנָי in the text, the Qere is אֱלֹהִים instead.
+2. **הוּא → הִיא** (~100× in the Pentateuch; e.g., Gen 3:20; Exod 2:2) — Perpetual Qere: the 3fs pronoun is spelled with masculine consonants throughout the Torah, reflecting an archaic spelling convention.
+3. **Isa 9:2** — Kethiv לוֹ ("to him") / Qere לֹא ("not"). The reversal fundamentally changes the verse's sense: "the joy thou hast multiplied *to him*" vs. "thou hast *not* increased the joy."
+4. **Ps 100:3** — Kethiv לֹא ("not") / Qere לוֹ ("his"). The same lō/lô ambiguity runs in the opposite direction: "we are *not* his" vs. "we are *his*."
+5. **1 Sam 3:13** — Kethiv לוֹ ("for him") / Qere לָהֶם ("for themselves"). Changes who incurs the guilt of Eli's sons' behavior.
+6. **2 Sam 12:14** — Kethiv: David "despised YHWH"; Qere adds אֹיְבֵי — "despised the *enemies of* YHWH." One of the 18 *Tiqqune Sopherim* (scribal corrections) that protect the divine name from association with blasphemy.
+7. **Ezek 8:17** — Kethiv: "branch to *my* nose" (אַפִּי); Qere: "to *their* nose" (אַפָּם). Another *Tiqqun Sopherim*, removing an anthropomorphism that places offense directly against God.
+8. **Deut 33:2** — Kethiv: אֵשְׁדָּת (one word, perhaps "fiery law"); Qere: אֵשׁ דָּת (two words, "fire of law"). Word-division uncertainty.
+9. **Jer 3:1** — Kethiv includes a solitary לֵ; Qere supplies the full word לֵאמֹר. Illustrates how the Masoretes could fill in an abbreviated or damaged text.
+10. **Ps 22:17** — Kethiv: כָּאֲרִי ("like a lion"); some manuscripts and ancient versions read כָּרוּ ("they pierced"). BHS notes the variant; the difference is exegetically significant and debated across Jewish and Christian interpretation.
+
 ---
 
 ## Textual Apparatus
