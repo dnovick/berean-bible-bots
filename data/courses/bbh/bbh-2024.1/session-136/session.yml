@@ -48,4 +48,7 @@ sections:
   - heading: "BBH Ch36 — Introduction to the Hebrew Bible"
     file: "intro-to-hb.md"
 
+assets:
+  - file: "bhs-gen-0817-annotated.jpeg"
+
 notes: ""

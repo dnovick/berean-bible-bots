@@ -43,7 +43,7 @@ The most important perpetual Kethiv-Qere:
 
 The yellow box marks the Kethiv form in the main text; the arrow points to the corresponding Qere reading in the outer margin.
 
-![BHS page showing Kethiv-Qere in Gen 8:17](../../../../../images/bhs-gen-0817-annotated.jpeg)
+![BHS page showing Kethiv-Qere in Gen 8:17](bhs-gen-0817-annotated.jpeg)
 
 ### Other Notable Kethiv-Qere Occurrences
 
