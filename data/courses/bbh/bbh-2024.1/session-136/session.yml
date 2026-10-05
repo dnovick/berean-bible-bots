@@ -23,6 +23,8 @@ focus: "Review"
 instructor: "David Novick"
 
 agenda:
+  - title: "Prov 12:9 — Follow Up"
+    duration: "5 min"
   - title: "Exercises"
     duration: "90 min"
   - title: "BBH Ch36 — Introduction to the Hebrew Bible"
@@ -45,5 +47,8 @@ exercises:
 sections:
   - heading: "BBH Ch36 — Introduction to the Hebrew Bible"
     file: "intro-to-hb.md"
+
+assets:
+  - file: "bhs-gen-0817-annotated.jpeg"
 
 notes: ""
