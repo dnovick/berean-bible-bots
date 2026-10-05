@@ -6,8 +6,6 @@ A brief orientation to reading the Hebrew Bible: the Masoretic apparatus, pausal
 
 ## Pausal Forms
 
-*Placeholder — to be filled in during session.*
-
 Words occurring at the major points of verse division (under the Athnach or Silluq accent) are said to be "in pause." Common spelling changes in pausal position:
 
 | Pausal change | Example |
@@ -21,8 +19,6 @@ Words occurring at the major points of verse division (under the Athnach or Sill
 
 ## Masorah
 
-*Placeholder — to be filled in during session.*
-
 The Masoretes (6th–10th c. AD) added three layers of annotation to the consonantal text:
 
 | Layer | Location | Content |
@@ -34,8 +30,6 @@ The Masoretes (6th–10th c. AD) added three layers of annotation to the consona
 ---
 
 ## Kethiv-Qere
-
-*Placeholder — to be filled in during session.*
 
 The **Kethiv** (כְּתִיב, "what is written") is the consonantal text as it stands. The **Qere** (קְרֵי, "what is to be read") is the Masoretic correction, signaled by a small circle in the text and the Qere consonants in the margin (marked ק֗).
 
@@ -54,8 +48,6 @@ The yellow box marks the Kethiv form in the main text; the arrow points to the c
 ---
 
 ## Textual Apparatus
-
-*Placeholder — to be filled in during session.*
 
 The textual apparatus appears at the bottom of each BHS page. It contains:
 - Significant textual variants from other ancient manuscripts (LXX, Peshitta, Vulgate, Targums)
