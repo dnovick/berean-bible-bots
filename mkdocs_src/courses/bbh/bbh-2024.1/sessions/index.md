@@ -49,4 +49,4 @@
 | [133 — Piel Weak Verbs](session-133.md) | Aug 10, 2026 | [Watch](https://drive.google.com/file/d/1gpSAxIsIYbZj1wmOPgRlGHA-It0X0ape/view) |
 | [134 — Pual Verbs](session-134.md) | Aug 24, 2026 | [Watch](https://drive.google.com/file/d/1GY0FyrVbEjVL7fk7NrVo15qttgRekxwH/view) |
 | [135 — Hithpael Verbs](session-135.md) | Sep 21, 2026 |  |
-| [136 — Review](session-136.md) | Oct 5, 2026 |  |
+| [136 — Review](session-136.md) | Oct 5, 2026 | [Watch](https://drive.google.com/file/d/1JJ74VEoL5rxNyhDsaZ_5dtUFbMBjgbP2/view) |
