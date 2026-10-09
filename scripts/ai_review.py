@@ -69,8 +69,8 @@ _RETRYABLE_ERRORS = (
 # deliberately a different model from whichever model authored the PR (usually Claude
 # Code running as Sonnet), so Haiku here is independent either way. Escalate to Opus
 # pre-flight (via a free token count, not a failed generate call) for oversized diffs.
-DEFAULT_MODEL = "claude-haiku-4-5-20251001"
-ESCALATION_MODEL = "claude-opus-5"
+DEFAULT_MODEL = "claude-haiku-5-5"
+ESCALATION_MODEL = "claude-opus-5-5"
 HAIKU_CONTEXT_LIMIT = 200_000
 HAIKU_SAFETY_MARGIN = 10_000  # headroom below the hard limit: max_tokens + counting slop
 
